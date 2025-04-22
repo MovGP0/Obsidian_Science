@@ -1,4 +1,4 @@
-The metric tensor of the Universe is given by
+The **metric tensor of the Universe** is given by
 
 $$g_{00} = -c^2$$
 $$g_{ij} = {a(t)}^2\ \delta_{ij}$$

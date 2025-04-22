@@ -61,16 +61,33 @@ ds'^2 &= -c^2\,dt^2 + (1 + 2\,H\,dt)\left(d\mathbf{x}^2 + v^2 dt^2 - 2(\mathbf{v
 The term $H\,dt$ can be ignored for human timescales, because of the relatively large age of the universe. Therefore we get:
 
 $$ds'^2 = -c^2\,\left( 1-\frac{v^2}{c^2} \right)\,dt^2 - 2\,v\,dt + dx^2$$
-The [[Metric Tensor of the Universe]] under Galilean Transformation represents **Time Dilation**:
+The [[Metric Tensor of the Universe]] under **Galilean Transformation** $GT(v)$ represents **Time Dilation**:
 
 $$g = \begin{pmatrix}
 -c^2 & 0 \\
 0 & 1 \\
 \end{pmatrix}
-\ \Rightarrow\ 
+\ \xrightarrow{GT(v)}\ 
 g' = \begin{pmatrix}
 -c^2\,\left( 1-\frac{v^2}{c^2} \right) & -\frac{v}{c} \\
 -\frac{v}{c} & 1 \\
 \end{pmatrix}
 $$
 
+- The metric factor $g_{00} = -\left(1-\frac{v^2}{c^2}\right)$ determines the behavior of moving glocks.
+- The **gravitomagnetic potential**, represented by the term $g_{10} = g_{01} = -\frac{v}{c}$, represents the laws of motion, the origin of inertia, and the intertial forces, as well as effects involving the [[Spin Angular Momentum]].
+
+In rotating frames, effects caused by the gravitomagnetic potential are determined by the curl of the relativistic potential, acting as a cosmic gravitomagnetic field:
+$$B_{g_{U}} = -\nabla \times v = -2\Omega$$
+Where $\Omega$ is the angular velocity of a reference frame, which rotates in the matter-filled universe.
+
+**Note**: This is similar to the magnetic field in electro-magnetism, generated from a current, as the curl of the vector potential.
+
+With
+$$\nabla \times A_{g} = B_{g}$$
+$$A_{g} = -\frac{v}{c}$$
+we get
+$$\nabla \times A_{g} = B_{g} = -2 \Omega$$
+The [[Gravitational potential]] of the universe $\Phi_{U}$ changes to
+$$\Phi_{U}' = \gamma\, \Phi_{U} = \frac{1}{\sqrt{1-\frac{v^2}{c^2}}} \, \Phi_{U}$$
+in a moving frame.

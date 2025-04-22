@@ -1,0 +1,5 @@
+- **GT** Galilean Transformation
+- **LT** Lorentz Transformation
+- **STR** Special Theory of Relativity
+- **GTR** General Theory of Relativity
+- **CMBR**: [[Cosmic Background Microwave Radiation]]
