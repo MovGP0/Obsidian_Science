@@ -1,0 +1,162 @@
+{
+  "main": {
+    "id": "e96ae9195de7253f",
+    "type": "split",
+    "children": [
+      {
+        "id": "0f45661a6cedf741",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "26f2108959cf0274",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "575e04a5c9931b3a",
+    "type": "split",
+    "children": [
+      {
+        "id": "6ea30bdc47dffaf9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0532ea71f8302973",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "33e7677435d0be20",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "Vector Database",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "22853c4984460cde",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 429.5
+  },
+  "right": {
+    "id": "73a64b91218644df",
+    "type": "split",
+    "children": [
+      {
+        "id": "6f34765a448bcc8a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9c56fb5d104a466e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "4f074d5df734f542",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
+            }
+          },
+          {
+            "id": "971ed59bb51bcd47",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "740fbe6ddb2108d6",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {},
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "switcher:Open quick switcher": false,
+      "command-palette:Open command palette": false,
+      "markdown-importer:Open format converter": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "0532ea71f8302973",
+  "lastOpenFiles": [
+    "Electronics/Acronyms.md",
+    "AI Tools/Awesome AI Tools.md",
+    "Machine Learning/Model Context Protocol (MCP).md",
+    "Machine Learning/Agent2Agent Protocol (A2A).md",
+    "Physics/Schwarzschild Metric.md"
+  ]
+}

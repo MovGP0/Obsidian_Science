@@ -1,0 +1,134 @@
+{
+  "main": {
+    "id": "e96ae9195de7253f",
+    "type": "split",
+    "children": [
+      {
+        "id": "c6f8375d60f30fe6",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Business Central 365/Business Central 365.md",
+            "mode": "source",
+            "source": true
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "575e04a5c9931b3a",
+    "type": "split",
+    "children": [
+      {
+        "id": "6ea30bdc47dffaf9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0532ea71f8302973",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "33e7677435d0be20",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 264.5
+  },
+  "right": {
+    "id": "73a64b91218644df",
+    "type": "split",
+    "children": [
+      {
+        "id": "6f34765a448bcc8a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9c56fb5d104a466e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Business Central 365/Business Central 365.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "4f074d5df734f542",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          },
+          {
+            "id": "971ed59bb51bcd47",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Business Central 365/Business Central 365.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "740fbe6ddb2108d6",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Business Central 365/Business Central 365.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "c6f8375d60f30fe6",
+  "lastOpenFiles": [
+    "PowerShell/Powershell DSC/PowerShell DSC Local Configuration Manager.md",
+    "PowerShell/Powershell DSC/PowerShell DSC.md",
+    "PowerShell/Powershell DSC/PowerShell DSC Resources.md",
+    "PowerShell.md",
+    "Apollo21/Academy/Basic Principles/Latin Basic Actions.md",
+    "Apollo21/Academy/Academy.md",
+    "Business Central 365/Application Language DataTypes and Fields.md",
+    "Business Central 365/Application Language Table.md",
+    "Business Central 365/Application Language Report.md",
+    "Apollo21/StandardFormation/Wolf-Gang.md"
+  ]
+}
