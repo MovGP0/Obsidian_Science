@@ -11,10 +11,10 @@ $$\phi^n_k(t) = 2^{n/2}\,\phi(2^n t - k)$$
 
 This forms an ideal low-pass (band-limited) scaling basis
 
-## Mother wavelet $\Psi(\omega)$
+## Mother wavelet $\psi(\omega)$
 
 $$
-\Psi(\omega)
+\psi(\omega)
   = \frac{1}{2\pi} e^{-i\omega}\left[
       \Pi\!\left(\frac{\omega}{\pi} - \tfrac{3}{2}\right)
       + \Pi\!\left(\frac{\omega}{\pi} + \tfrac{3}{2}\right)

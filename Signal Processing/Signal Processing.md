@@ -210,3 +210,25 @@ If doing **communications** → channel estimation & matched filters.
 | **Audio effects**           | FIR/IIR, STFT, FIR filters, convolution reverb, perceptual coding       |
 | **Radar/Sonar**             | Matched filters, Doppler processing, CFAR detection                     |
 | **Telecom**                 | OFDM, QAM, error correction, symbol timing recovery                     |
+## Books
+
+### Beginner
+
+- **Understanding Digital Signal Processing** by Richard G. Lyons
+- **The Scientist and Engineer’s Guide to Digital Signal Processing** by Steven W. Smith
+- **Signals and Systems** by Alan V. Oppenheim, Alan S. Willsky
+
+### Intermediate
+
+- **Discrete-Time Signal Processing** by Alan V. Oppenheim, Ronald W. Schafer
+- **Signal Processing and Linear Systems** by B.P. Lathi
+- **Digital Signal Processing: Principles, Algorithms, and Applications** by John G. Proakis, Dimitris Manolakis
+- **Wavelet Methods for Time Series Analysis** by Donald B. Percival, Andrew T. Walden
+
+### Advanced
+
+- **Fourier Analysis and Its Applications** by Gerald B. Folland
+- **Time–Frequency Analysis** by Leon Cohen
+- **Wavelets and Filter Banks** by Gilbert Strang, Truong Nguyen
+- **Statistical Digital Signal Processing and Modeling** by Monson H. Hayes
+- **Adaptive Signal Processing** by Bernard Widrow, Samuel D. Stearns

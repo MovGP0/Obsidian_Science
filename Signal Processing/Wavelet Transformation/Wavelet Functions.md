@@ -1,3 +1,5 @@
+## Father and Mother Wavelets
+
 ## Overview of Wavelet Functions
 
 | Wavelet Family           | Alternative Names | Example                               | Type       | Construction method               | Support / Analytic Form                                                      | Orthogonal / Biorthogonal        | Vanishing Moments                           | Typical Use                                   | Closed‑form ψ(t)? |
