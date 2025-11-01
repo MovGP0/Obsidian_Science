@@ -84,10 +84,10 @@ $$G = \begin{bmatrix}
 = \begin{bmatrix} \frac{1}{√{2}} & -\frac{1}{√{2}}\\ \frac{1}{√{2}} & \frac{1}{√{2}} \end{bmatrix}
 = \frac{1}{\sqrt{2}} \begin{bmatrix} 1 & -1 \\ 1 & 1 \end{bmatrix}$$
 For rotating back into the original coordinate system, we need the inverse matrix, which rotates by -45° and is constructed in the same way:
-$$G^T = \frac{1}{\sqrt{2}} \begin{bmatrix} 1 & 1 \\ -1 & 1 \end{bmatrix}$$
+$$G^{-1} = \frac{1}{\sqrt{2}} \begin{bmatrix} 1 & 1 \\ -1 & 1 \end{bmatrix}$$
 Now we can apply the transformation by first, rotate into the coordinate system of the waveplate using $G$, apply the waveplate transformation $Q$, and rotate back to the original coordinate system using $G^T$:
 
-$$Q' = G^T {\color{purple} Q} {\color{brown} G}$$
+$$Q' = G^{-1} {\color{purple} Q} {\color{brown} G}$$
 $$=\frac{1}{\sqrt{2}} \begin{bmatrix} 1 & 1 \\ -1 & 1 \end{bmatrix}
 {\color{purple} \begin{bmatrix} 1 & 0 \\ 0 & i \end{bmatrix}}
 {\color{brown} \frac{1}{\sqrt{2}} \begin{bmatrix} 1 & -1 \\ 1 & 1 \end{bmatrix}}$$
@@ -124,7 +124,7 @@ $$Q' R = H$$
 
 When rotating the Waveplate by an arbitrary angle $θ$, we can change how much we transform the wave in the polarization space:
 
-$$Q' = G_{θ}^T {\color{purple} Q} {\color{brown} G_{θ}}$$
+$$Q' = G_{θ}^{-1} {\color{purple} Q} {\color{brown} G_{θ}}$$
 $$= \begin{bmatrix}
 \cos θ & \sin θ \\
 -\sin θ & \cos θ
@@ -139,4 +139,3 @@ $$= \begin{bmatrix}
 (\cos{θ})^2 + i (\sin θ)^2 & (i-1) \cos{θ} \sin{θ} \\
 (i-1) \cos{θ} \sin{θ} & (\sin{θ})^2 + i (\cos{θ})^2
 \end{bmatrix}$$
-

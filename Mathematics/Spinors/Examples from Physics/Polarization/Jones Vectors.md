@@ -38,20 +38,12 @@ The *phase* $φ$ will shift the wave along the travelling direction
 A phase of $φ = \frac{π}{2}$ shifts the wave by $\frac{1}{4}$ of a cycle, which is the equivalent of transforming the cosine-wave into a sine-wave:
 $$\sin(θ) = \cos\left(θ - \frac{π}{2}\right)$$
 
-## Euler's Formula
-
-Using Euler's Formula
- $$e^{iθ} = \cosθ + i\sinθ$$
- 
- We get the relation:
- $$e^{iθ} e^{iφ} = e^{iθ + iφ} = e^{i(θ + φ)} = \cos(θ + φ) + i \sin(θ + φ)$$
-
 ## Complex Representation of the Electric Field
 
 While the electric field only has real components, we can assume it to be complex, with a complex value of zero:
 $$E = A \cos(ω t - k z + φ) + iA \sin(ω t - k z + φ)$$
 
-This allows us to represent the wave in a simplified manner:
+[[Euler's Formula]] allows us to represent the wave in a simplified manner:
 $$E = A e^{i(ω t - k z + φ)}$$
 $$E = A e^{i(ω t - k z) + i φ}$$
 $$E = A e^{i(ω t - k z)} e^{i φ}$$

@@ -16,13 +16,33 @@ The inverse of the rotation matrix is the transpose of the matrix:
 
 $$R^{-1} = R^T$$
 $$R\,R^T = R^T\,R = 1$$
-Also, a rotation matrix has a determinant equal to 1, meaning that it does not scale the rotated objects:
-$$\det{R} = 1$$
+Also, a rotation matrix has a determinant equal to 1, meaning that it does not scale the rotated objects.
+
+> [!check] 
+> When we take the [[Determinant]] of $$R^T\,R = 1$$ we get
+> $$\det(R^T R) = \det{I}$$
+> with $\det(AB) = \det(A) \det(B)$ and $\det{I} = 1$ we get
+> $$\det(R^T) \det(R) = 1$$
+> because of $\det{R^T} = \det{R}$ we get
+> $$\det(R) \det(R) = 1$$
+> $$(\det(R))^2 = 1$$
+> $$\det{R} = \pm 1$$
+
+> [!note]
+> $\det{R} = +1$ indicates that there may be a change the direction, but not the area or volume; representing **rotations**.
+> $\det{R} = -1$ indicates that there is a mirroring in the area and/or volume; representing a **reflection**.
+
 When a matrix has this properties, the rotation matrix in 2d-space is considered to be a **Special Orthogonal 2x2 Matrix** or $SO(2)$-Matrix.
 
-- **Orthogonal** means matrices that represent rotation and/or reflections
-- **Special** means matrices that represent rotations only (without reflections)
+- **Orthogonal** means matrices that represent rotation and/or reflections ($\det{R} = \pm 1$)
+- **Special** means matrices that represent rotations only (without reflections; $\det{R} = +1$)
 
+| Group   | Name                                     | Description                                                                                              |
+| ------- | ---------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| $O(2)$  | Orthogonal Group of 2x2 Matrices         | - contains Rotations and Reflections in 2D space<br>- no change in the length of the rotated vectors     |
+| $O(3)$  | Orthogonal Group of 3x3 Matrices         | - contains Rotations and Reflections in 3D space<br>- no change in the length of the rotated vectors     |
+| $SO(2)$ | Special Orthogonal Group of 2x2 Matrices | - contains Rotations in 2D space<br>- no reflections<br>- no change in the length of the rotated vectors |
+| $SO(3)$ | Special Orthogonal Group of 3x3 Matrices | - contains Rotations in 3D space<br>- no reflections<br>- no change in the length of the rotated vectors |
 ## Scaling matrices
 
 If the matrix is modified, such that the [[Determinant]] is no longer equal to 1 (rotation + scaling of the vector field), it is no longer considered to be an $SO(2)$ matrix and therefore not considered to be a *rotation matrix*.

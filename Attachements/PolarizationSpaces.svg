@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="30mm"
+   height="30mm"
+   viewBox="0 0 30 30"
+   id="SVGRoot"
+   version="1.1"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   sodipodi:docname="PolarizationSpaces.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <title
+     id="title7">Polarization Spaces</title>
+  <sodipodi:namedview
+     inkscape:document-units="mm"
+     inkscape:zoom="8"
+     inkscape:cx="21.0625"
+     inkscape:cy="53.5625"
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="true"
+     inkscape:window-width="2560"
+     inkscape:window-height="1369"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <inkscape:grid
+       id="grid7"
+       units="mm"
+       originx="-0.93296397"
+       originy="-0.69040215"
+       spacingx="1"
+       spacingy="1"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="5"
+       enabled="true"
+       visible="true" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-0.93296403,-0.69040217)">
+    <g
+       id="g7"
+       transform="translate(-20.146884,-8.5767331)">
+      <path
+         style="fill:none;stroke:#37abc8;stroke-width:0.25004"
+         id="path1"
+         sodipodi:type="arc"
+         sodipodi:cx="35.886082"
+         sodipodi:cy="23.936794"
+         sodipodi:rx="4.6027069"
+         sodipodi:ry="10.730855"
+         sodipodi:start="4.673101"
+         sodipodi:end="1.5934781"
+         sodipodi:open="true"
+         sodipodi:arc-type="arc"
+         d="m 35.705297,13.21422 a 4.6027069,10.730855 0 0 1 4.123279,5.184943 4.6027069,10.730855 0 0 1 0.0389,10.921868 4.6027069,10.730855 0 0 1 -4.085781,5.343858" />
+      <path
+         style="fill:none;stroke:#2c89a0;stroke-width:0.25004;stroke-dasharray:0.50008, 1.00016;stroke-dashoffset:0"
+         id="path1-8"
+         sodipodi:type="arc"
+         sodipodi:cx="35.882416"
+         sodipodi:cy="23.952749"
+         sodipodi:rx="4.6027069"
+         sodipodi:ry="10.730855"
+         sodipodi:start="1.6032471"
+         sodipodi:end="4.7137867"
+         sodipodi:open="true"
+         sodipodi:arc-type="arc"
+         d="M 35.733081,34.677955 A 4.6027069,10.730855 0 0 1 31.280368,23.771146 4.6027069,10.730855 0 0 1 35.888849,13.221905" />
+      <path
+         style="fill:none;stroke:#008066;stroke-width:0.248429;stroke-dasharray:0.496858, 0.993716;stroke-dashoffset:0"
+         id="path2"
+         sodipodi:type="arc"
+         sodipodi:cx="35.798676"
+         sodipodi:cy="24.573683"
+         sodipodi:rx="10.284952"
+         sodipodi:ry="2.8133118"
+         sodipodi:start="3.1152051"
+         sodipodi:end="0.032275322"
+         sodipodi:open="true"
+         sodipodi:arc-type="arc"
+         d="m 25.517304,24.647911 a 10.284952,2.8133118 0 0 1 5.078152,-2.500959 10.284952,2.8133118 0 0 1 10.458583,0.0084 10.284952,2.8133118 0 0 1 5.024232,2.509094" />
+      <path
+         style="fill:none;stroke:#00d4aa;stroke-width:0.248429"
+         id="path2-5"
+         sodipodi:type="arc"
+         sodipodi:cx="35.776093"
+         sodipodi:cy="24.600286"
+         sodipodi:rx="10.284952"
+         sodipodi:ry="2.8133118"
+         sodipodi:start="0.013743939"
+         sodipodi:end="3.1415927"
+         sodipodi:arc-type="arc"
+         d="M 46.060073,24.638951 A 10.284952,2.8133118 0 0 1 35.705415,27.413532 10.284952,2.8133118 0 0 1 25.49114,24.600286"
+         sodipodi:open="true" />
+      <ellipse
+         style="fill:none;stroke:#403fc0;stroke-width:0.248429"
+         id="path3"
+         cx="35.778275"
+         cy="23.900578"
+         rx="10.342279"
+         ry="10.765688" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:none;stroke:#00d4aa;stroke-width:0.264583;stroke-dasharray:none;stroke-dashoffset:0"
+         x="34.528126"
+         y="12.633855"
+         id="text3"><tspan
+           sodipodi:role="line"
+           id="tspan3"
+           style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+           x="34.528126"
+           y="12.633855">H</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:none;stroke:#00d4aa;stroke-width:0.264583;stroke-dasharray:none;stroke-dashoffset:0"
+         x="46.918064"
+         y="25.327137"
+         id="text3-1"><tspan
+           sodipodi:role="line"
+           id="tspan3-1"
+           style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+           x="46.918064"
+           y="25.327137">L</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-dasharray:none;stroke-dashoffset:0"
+         x="22.886457"
+         y="25.763802"
+         id="text4"><tspan
+           sodipodi:role="line"
+           id="tspan4"
+           style="stroke-width:0.264583"
+           x="22.886457"
+           y="25.763802">R</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-dasharray:none;stroke-dashoffset:0"
+         x="28.773438"
+         y="21.828125"
+         id="text5"><tspan
+           sodipodi:role="line"
+           id="tspan5"
+           style="stroke-width:0.264583"
+           x="28.773438"
+           y="21.828125">D</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-dasharray:none;stroke-dashoffset:0"
+         x="37.835415"
+         y="26.722918"
+         id="text6"><tspan
+           sodipodi:role="line"
+           id="tspan6"
+           style="stroke-width:0.264583"
+           x="37.835415"
+           y="26.722918">A</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:3.175px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-dasharray:none;stroke-dashoffset:0"
+         x="34.528126"
+         y="37.339325"
+         id="text7"><tspan
+           sodipodi:role="line"
+           id="tspan7"
+           style="stroke-width:0.264583"
+           x="34.528126"
+           y="37.339325">V</tspan></text>
+    </g>
+  </g>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>Polarization Spaces</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>
