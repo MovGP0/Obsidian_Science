@@ -1,10 +1,10 @@
 ## Approaches
 
-- Substitution
-- Energy Conservation
-- Series Expansion
-- Laplace Transform
-- Hamiltonian Flow
+- [[#Substitution]]
+- [[#Energy Conservation]]
+- [[#Series Expansion]]
+- [[#Laplace Transform]]
+- [[#Hamiltonian Flow]]
 
 **Example:** Simple Harmonic Oscillator
 
@@ -14,48 +14,36 @@ $F = m \frac{\mathrm{d}^2\,x}{\mathrm{d}\,t^2} = -k\,x$
 
 The idea is to guess the function and substitute.
 
-**Ansatz:** Assume that the solution can be described by this function:
-
-$x(t) = A \cos \left( Ω\,t \right)$
-
-| Term | Description           | Phyical Unit |
-| ---- | --------------------- | ------------ |
-| x    | Position              | [m]          |
-| A    | Some constant         | [m]          |
-| Ω    | Oscillation Frequency | [rad/s]      |
-| t    | Time                  | [s]          |
-
-**Substitute**
-
-$\frac{\mathrm{d}^2\,x}{\mathrm{d}\,t^2} = (-k\,m^{-1})\,x$
-
-**Calculate 2nd derivative**
-
-$x(t) = A\cos(Ωt) + B\sin(Ωt)$ => Apply chain rule
-$\frac{\mathrm{d}\,x}{\mathrm{d}\,t^2} = −AΩ\sin(Ωt)+BΩ\cos(Ωt)$ => Apply chain rule
-$\frac{\mathrm{d}^2\,x}{\mathrm{d}\,t^2} = -Ω^2 A\cos(Ωt)-Ω^2B\sin(Ωt)$
-
-**Substitute**
-
-$\frac{\mathrm{d}^2\,x^2}{\mathrm{d}\,t^2} = \left(-k\,m^{-1}\right)\,x = -Ω^2 \left(A\cos(Ωt) + B\sin(Ωt) \right)$
-
-- A and B represent the initial condition of the system.
-
+> [!Example]
+> [Substitution example](Substitution%20Example.md)
 ## Energy Conservation
 
-$$E = \frac{1}{2} m \left( \frac{\mathrm{d}\,x}{\mathrm{d}\,t} \right)^2 + \frac{1}{2} k\,x^2$$
+The Idea is to use the constant total energy to recover the amplitude and phase.
 
+$$E = \frac{1}{2} m \left( \frac{\mathrm{d}\,x}{\mathrm{d}\,t} \right)^2 + \frac{1}{2} k\,x^2$$
+> [!example]
+> [Energy conservation example](Energy%20Conservation%20Example.md)
 ## Series Expansion
 
+The idea is to derive the recurrence for Taylor coefficients and re-sum to the standard solution.
 $$x(t) = \sum_{n=0}^\infty a_n\,t^n$$
-
+> [!example]
+> - [Series expansion example](Series%20Expansion%20Example.md)
 ## Laplace Transform
 
+The idea is to incorporate the initial conditions via Laplace transforms and invert to time domain.
 $$\hat{x}(s) = \int_0^\infty \mathrm{d}\,t\,e^{-s\,t}\, x(t)$$
+
+> [!example]
+> [Laplace transform example](Laplace%20Transform%20Example.md)
 
 ## Hamiltonian Flow
 
+The idea is to evolve the canonical vector with the matrix exponential and read off $x(t)$.
 $$\frac{\mathrm{d}}{\mathrm{d}\,t} \begin{pmatrix} x \\ p \end{pmatrix} = \begin{pmatrix} p\, m^{-1} \\ -k\,x \end{pmatrix}$$
+
+> [!example]
+> [[Hamiltonian Flow Example]]
 
 ## Sources
 
