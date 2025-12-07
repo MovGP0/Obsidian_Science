@@ -1,0 +1,2 @@
+- The space in which the task of the robot is expressed.
+- The space that is needed to perform a given task

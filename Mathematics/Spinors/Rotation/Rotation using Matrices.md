@@ -39,10 +39,25 @@ When a matrix has this properties, the rotation matrix in 2d-space is considered
 
 | Group   | Name                                     | Description                                                                                              |
 | ------- | ---------------------------------------- | -------------------------------------------------------------------------------------------------------- |
-| $O(2)$  | Orthogonal Group of 2x2 Matrices         | - contains Rotations and Reflections in 2D space<br>- no change in the length of the rotated vectors     |
-| $O(3)$  | Orthogonal Group of 3x3 Matrices         | - contains Rotations and Reflections in 3D space<br>- no change in the length of the rotated vectors     |
-| $SO(2)$ | Special Orthogonal Group of 2x2 Matrices | - contains Rotations in 2D space<br>- no reflections<br>- no change in the length of the rotated vectors |
-| $SO(3)$ | Special Orthogonal Group of 3x3 Matrices | - contains Rotations in 3D space<br>- no reflections<br>- no change in the length of the rotated vectors |
+| $O(2)$  | Orthogonal Group of 2×2 Matrices         | - contains Rotations and Reflections in 2D space<br>- no change in the length of the rotated vectors     |
+| $O(3)$  | Orthogonal Group of 3×3 Matrices         | - contains Rotations and Reflections in 3D space<br>- no change in the length of the rotated vectors     |
+| $SO(2)$ | Special Orthogonal Group of 2×2 Matrices | - contains Rotations in 2D space<br>- no reflections<br>- no change in the length of the rotated vectors |
+| $SO(3)$ | Special Orthogonal Group of 3×3 Matrices | - contains Rotations in 3D space<br>- no reflections<br>- no change in the length of the rotated vectors |
+An **Orthogonal Group** is defined by:
+$$O(n)={R∈ℝ^{n×n}∣R^TR=I}.$$
+which means that the transpose of an matrix $R$ is also it's inverse:
+$$R^{-1} = R^T$$ 
+The **Special Orthogonal Group** is further restricted by the [[Determinant]]:
+$$SO(n)={R∈O(n)∣\text{det}R=1}.$$
+> [!note] 
+> - $\det R = +1$ indicates proper rotations (orientation-preserving).
+> - $\det R = -1$ indicates reflections or rotoreflections (orientation-reversing).
+
+> [!note]
+> In other metrics (e.g. Lorentzian instead of Euclidean), then the orthogonality condition becomes something like
+> $$Λ^T η Λ = η$$
+> for a metric tensor $η$ instead of the identity matrix.
+
 ## Scaling matrices
 
 If the matrix is modified, such that the [[Determinant]] is no longer equal to 1 (rotation + scaling of the vector field), it is no longer considered to be an $SO(2)$ matrix and therefore not considered to be a *rotation matrix*.
@@ -83,12 +98,12 @@ $SU(2)$ is a generalization of $SO(2)$ using [[Complex Numbers]]:
 |                           $SO(2)$                            |                           $SU(2)$                           |
 | :----------------------------------------------------------: | :---------------------------------------------------------: |
 |     $R = \begin{bmatrix} a & -b \\ b & a \end{bmatrix}$      | $U = \begin{bmatrix} α & -β^{*} \\ β & α^{*} \end{bmatrix}$ |
-|                          $a,b\inℝ$                           |                          $α,β\inℂ$                          |
+|                          $a,b∈ℝ$                           |                          $α,β∈ℂ$                          |
 |                         $a^2+b^2=1$                          |                   $\|α\|^2 + \|β\|^2 = 1$                   |
 |                    $\det{R}=1$ (Special)                     |                   $\det{U} = 1$ (Special)                   |
 |                 $R^{-1} = R^T$ (Orthogonal)                  |              $U^{-1} = U^{\dagger}$ (Unitary)               |
 |                    $\vec{v}' = R\vec{v}$                     |                           $s'=Us$                           |
-| $\vec{v} = \begin{bmatrix}v_{1}\\v_{2}\end{bmatrix} \in ℝ^2$ |    $s=\begin{bmatrix}s_{1}\\s_{2}\end{bmatrix} \in ℂ^2$     |
+| $\vec{v} = \begin{bmatrix}v_{1}\\v_{2}\end{bmatrix} ∈ ℝ^2$ |    $s=\begin{bmatrix}s_{1}\\s_{2}\end{bmatrix} ∈ ℂ^2$     |
 The value $s$ is the [[Spinors|Spinor]].
 
 The **magnitude** of the spinor $s$ is calculated using the [Pythagorean theorem](https://en.wikipedia.org/wiki/Pythagorean_theorem)
@@ -114,3 +129,24 @@ Because $SO(3)$ is fully contained in $SU(2)$, we can use $SU(2)$ to represent r
 > [!warning]
 > $SO(3)$ representation has the potential issue of [Gimbal Lock](https://en.wikipedia.org/wiki/Gimbal_lock).
 > Use $SU(2)$ where Gimbal Lock might be an issue.
+
+## Closure
+
+When multiplying two rotation matrices in a given group, the result must be part of the same group.
+
+$$R_1 ∈ SO(2), R_2∈ SO(2): R = (R_1 R_2) | R∈ SO(2)$$
+
+## Associative
+
+Rotation matrices must be associative:
+$$(R_{1} R_{2}) R_{3} = R_{1} (R_{2} R_{3})$$
+## Not Commutative
+
+Rotation matrices are not commutative:
+
+$$R_{1}R_{2} \ne R_{2}R_{1}$$
+## Length Preservation
+
+Rotation matrices may not change the length of a vector:
+
+$$x∈ℝ^n, R∈SO(n): \Vert Rx \Vert = \Vert x \Vert$$
