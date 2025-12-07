@@ -1,5 +1,8 @@
-$$e = (1, i, j, k)$$
+---
+title: ℍ Quaternions
+---
 
+$$e = (1, i, j, k)$$
 ## Properties of i, j, k
 
 $$i \times j = k$$
@@ -17,7 +20,6 @@ $$k \times i = j$$
 $$i^2 = -1$$
 $$j^2 = -1$$
 $$k^2 = -1$$
-
 ## Pauli Matrices
 
 Pauli matrices are 2x2 Hermitian matrices used in quantum mechanics to represent spin operators.

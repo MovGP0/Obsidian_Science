@@ -1,5 +1,17 @@
 
-The **Determinant** describes the scaling of a vector field when the matrix is applied.
+The **Determinant** describes the type of scaling of a vector field when the matrix is applied.
+
+> [!note]
+> $\det{A} = 1$ indicates that there may be a change the direction, but not the area or volume; representing **rotations**.
+> $\det{A} = -1$ indicates that there is a mirroring in the area and/or volume; representing a **reflection**
+> $\det{A} \notin \{0, 1, -1\}$ indicates **scaling** or **skewing**
+> $\det{A} = 0$ indicates a collapse in dimension/volume
+
+> [!note]
+> For rotation matrices $R$ we find that 
+> - $\det R = +1$ indicates proper rotations (orientation-preserving). $R∈SO(n)$
+> - $\det R = -1$ indicates reflections or rotoreflections (orientation-reversing). $R∈O(n)$
+> - $\det R \notin \{ 1, -1 \}$ indicates that the matrix is not a rotation matrix.
 
 ## Determinant of an 2x2 Matrix
 

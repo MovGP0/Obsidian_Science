@@ -28,10 +28,6 @@ Also, a rotation matrix has a determinant equal to 1, meaning that it does not s
 > $$(\det(R))^2 = 1$$
 > $$\det{R} = \pm 1$$
 
-> [!note]
-> $\det{R} = +1$ indicates that there may be a change the direction, but not the area or volume; representing **rotations**.
-> $\det{R} = -1$ indicates that there is a mirroring in the area and/or volume; representing a **reflection**.
-
 When a matrix has this properties, the rotation matrix in 2d-space is considered to be a **Special Orthogonal 2x2 Matrix** or $SO(2)$-Matrix.
 
 - **Orthogonal** means matrices that represent rotation and/or reflections ($\det{R} = \pm 1$)
@@ -49,9 +45,6 @@ which means that the transpose of an matrix $R$ is also it's inverse:
 $$R^{-1} = R^T$$ 
 The **Special Orthogonal Group** is further restricted by the [[Determinant]]:
 $$SO(n)={R∈O(n)∣\text{det}R=1}.$$
-> [!note] 
-> - $\det R = +1$ indicates proper rotations (orientation-preserving).
-> - $\det R = -1$ indicates reflections or rotoreflections (orientation-reversing).
 
 > [!note]
 > In other metrics (e.g. Lorentzian instead of Euclidean), then the orthogonality condition becomes something like
@@ -150,3 +143,16 @@ $$R_{1}R_{2} \ne R_{2}R_{1}$$
 Rotation matrices may not change the length of a vector:
 
 $$x∈ℝ^n, R∈SO(n): \Vert Rx \Vert = \Vert x \Vert$$
+## Usages
+
+Rotation matrices can be used to
+- represent an orientation in a given Reference Frame
+- change between Reference Frames
+- Rotation of a vector field or frame
+
+## Product rule
+
+Given a rotation matrix $R_{AB}$ that transforms a vector field from reference frame A to reference frame B, and another rotation matrix $R_{BC}$ that transforms a vector from reference frame B to C, than the product of those rotations is the rotation that transforms a vector from reference frame A to C:
+$$R_{AB} \cdot R_{BC} = R_{AC}$$
+Note that inversing matrices of the orthogonal group O(n) inverses the order of indices:
+$$R_{AB}^{-1} = R_{AB}^T= R_{BA}$$
