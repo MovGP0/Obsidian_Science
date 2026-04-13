@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "613d0ded65f7fc0f",
+        "id": "14c18f51dca091eb",
         "type": "tabs",
         "children": [
           {
-            "id": "bf55ccac7ae1ab3c",
+            "id": "2843ca355216ae01",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -135,7 +135,8 @@
               "title": "Outline"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -152,7 +153,85 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "bf55ccac7ae1ab3c",
+  "floating": {
+    "id": "a88d93f7128f3b2a",
+    "type": "floating",
+    "children": [
+      {
+        "id": "42b1d7109c5550b4",
+        "type": "window",
+        "children": [
+          {
+            "id": "596ff83314d7f6b8",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "53d97f3114b94379",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Mechanics/Newtonian Mechanics/Newton's Three Laws.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Newton's Three Laws"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": 1820,
+        "y": 627,
+        "width": 2086,
+        "height": 1352,
+        "maximize": true,
+        "zoom": 0
+      }
+    ]
+  },
+  "active": "2843ca355216ae01",
   "lastOpenFiles": [
+    "Mechanics/Angular Momentum/Relativistic formulation of Agular Momentum.md",
+    "Mechanics/Angular Momentum/Lagrangian formulation of Angular Momentum.md",
+    "Mechanics/Angular Momentum/Hamiltonian formulation of Angular Momentum.md",
+    "Attachements/Pasted image 20251207115034.png",
+    "Attachements/Pasted image 20251207114915.png",
+    "Attachements/Pasted image 20260413185110.png",
+    "Attachements/Pasted image 20260413201827.png",
+    "Attachements/PrincipleOfLeastAction1.svg",
+    "Attachements/shannon wavelet.png",
+    "Attachements/PolarizationSpaces.svg",
+    "Attachements/Pasted image 20260413185044.png",
+    "Attachements/Pasted image 20251207110304.png",
+    "Mechanics/Conservation Laws/Conservation of Angular Momentum.md",
+    "Mechanics/Angular Momentum",
+    "Mechanics/Conservation Laws/Conservation of Energy.md",
+    "Mechanics/Conservation Laws/Conservation of Linear Momentum.md",
+    "Mechanics/Conservation Laws.md",
+    "Mechanics/Conservation Laws/Conservation of Color Charge.md",
+    "Mechanics/Newtonian Mechanics/System of Particles.md",
+    "Mechanics/Newtonian Mechanics/Basic Concepts/Internal forces and external forces.md",
+    "Mechanics/Newtonian Mechanics/Newton's Three Laws.md",
+    "Mechanics/Newtonian Mechanics/N-body Problem.md",
+    "Mechanics/Newtonian Mechanics/Basic Concepts/Velocity and Speed.md",
+    "Mechanics/Newtonian Mechanics/Basic Concepts/Trajectory.md",
+    "Mechanics/Newtonian Mechanics/Basic Concepts/Position.md",
+    "Mechanics/Newtonian Mechanics/Basic Concepts/Phase Space.md",
+    "Mechanics/Newtonian Mechanics/Basic Concepts/Momentum.md",
+    "Mechanics/Newtonian Mechanics/Basic Concepts/Inertial reference frame.md",
+    "Mechanics/Newtonian Mechanics/Basic Concepts/Inertia and Mass.md",
+    "Mechanics/Newtonian Mechanics/Basic Concepts/Equations of Motion.md",
+    "Mechanics/Newtonian Mechanics/Basic Concepts/Dynamic Systems.md",
+    "Mechanics/Newtonian Mechanics/Basic Concepts/Coordinate Systems and Configuration Space.md",
+    "Mechanics/Newtonian Mechanics/Basic Concepts/Acceleration.md",
+    "Mechanics/Newtonian Mechanics/Newtons Laws/Newton’s First Law.md",
+    "Mechanics/Newtonian Mechanics/Newtons Laws/Newton’s Second Law.md",
+    "Mechanics/Newtonian Mechanics/Phase Space",
+    "Mechanics/Newtonian Mechanics/Newtons Laws",
+    "Mechanics/Newtonian Mechanics/Basic Concepts",
+    "Mechanics/Newtonian Mechanics"
   ]
 }
