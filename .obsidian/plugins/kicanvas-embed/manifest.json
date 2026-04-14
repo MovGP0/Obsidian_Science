@@ -1,0 +1,9 @@
+{
+  "id": "kicanvas-embed",
+  "name": "KiCanvas Embed",
+  "version": "0.1.0",
+  "minAppVersion": "1.5.0",
+  "description": "Render KiCad documents inside Obsidian notes using a local KiCanvas bundle.",
+  "author": "Johann Dirry",
+  "isDesktopOnly": false
+}
