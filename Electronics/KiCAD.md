@@ -1,6 +1,6 @@
 - [KiCAD](https://www.kicad.org/)
 ```powershell
-install --id 'KiCad.KiCad' --exact
+winget install --id 'KiCad.KiCad' --exact
 ```
 
 - [GitHub: CircuitSnips](https://github.com/MichaelAyles/kicad-library)
