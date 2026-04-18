@@ -1,0 +1,1284 @@
+# Inhaltsverzeichnis
+
+## Übersicht
+
+### Teil I. Grundlagen
+
+- 1. Diode
+- 2. Bipolartransistor
+- 3. Feldeffekttransistor
+- 4. Verstärker
+- 5. Operationsverstärker
+- 6. Digitaltechnik Grundlagen
+- 7. Schaltnetze (Kombinatorische Logik)
+- 8. Schaltwerke (Sequentielle Logik)
+- 9. Halbleiterspeicher
+### Teil II. Anwendungen
+
+- 10. Analogrechenschaltungen
+- 11. Gesteuerte Quellen und Impedanzkonverter
+- 12. Aktive Filter
+- 13. Regler
+- 14. Signalgeneratoren
+- 15. Leistungsverstärker
+- 16. Stromversorgung
+- 17. DA- und AD-Umsetzer
+- 18. Messschaltungen
+- 19. Sensorik
+- 20. Optoelektronische Bauelemente
+### Teil III. Schaltungen der Nachrichtentechnik
+
+- 21. Grundlagen
+- 22. Sender und Empfänger
+- 23. Passive Komponenten
+- 24. Hochfrequenz-Verstärker
+- 25. Mischer
+- 26. Oszillatoren
+- 27. Phasenregelschleife (PLL)
+- 28. Anhang
+- Literaturverzeichnis
+- Sachverzeichnis
+
+## Teil I. Grundlagen
+
+### 1. Diode
+
+- 1.1 Verhalten einer Diode
+  - 1.1.1 Kennlinie
+  - 1.1.2 Beschreibung durch Gleichungen
+  - 1.1.3 Schaltverhalten
+    - 1.1.3.1 Schaltverhalten bei ohmscher Last
+    - 1.1.3.2 Schaltverhalten bei ohmsch-induktiver Last
+  - 1.1.4 Kleinsignalverhalten
+  - 1.1.5 Grenzdaten und Sperrströme
+    - 1.1.5.1 Grenzspannungen
+    - 1.1.5.2 Grenzströme
+    - 1.1.5.3 Sperrstrom
+    - 1.1.5.4 Maximale Verlustleistung
+  - 1.1.6 Thermisches Verhalten
+  - 1.1.7 Temperaturabhängigkeit der Diodenparameter
+- 1.2 Aufbau einer Diode
+  - 1.2.1 Einzeldi[od]e
+    - 1.2.1.1 Innerer Aufbau
+    - 1.2.1.2 Gehäuse
+  - 1.2.2 Integrierte Diode
+    - 1.2.2.1 Innerer Aufbau
+    - 1.2.2.2 Substrat-Diode
+    - 1.2.2.3 Unterschiede zwischen integrierten pn- und Schottky-Dioden
+- 1.3 Modell für eine Diode
+  - 1.3.1 Statisches Verhalten
+    - 1.3.1.1 Bereich mittlerer Durchlassströme
+    - 1.3.1.2 Weitere Effekte
+    - 1.3.1.3 Bahnwiderstand
+  - 1.3.2 Dynamisches Verhalten
+    - 1.3.2.1 Sperrschichtkapazität
+    - 1.3.2.2 Diffusionskapazität
+  - 1.3.3 Vollständiges Modell einer Diode
+  - 1.3.4 Kleinsignalmodell
+    - 1.3.4.1 Statisches Kleinsignalmodell
+    - 1.3.4.2 Dynamisches Kleinsignalmodell
+- 1.4 Spezielle Dioden und ihre Anwendung
+  - 1.4.1 Z-Diode
+    - 1.4.1.1 Kennlinie im Durchbruchbereich
+    - 1.4.1.2 Spannungsstabilisierung mit Z-Diode
+    - 1.4.1.3 Spannungsbegrenzung mit Z-Dioden
+  - 1.4.2 pin-Diode
+  - 1.4.3 Kapazitätsdiode
+  - 1.4.4 Brückengleichrichter
+  - 1.4.5 Mischer
+### 2. Bipolartransistor
+
+- 2.1 Verhalten eines Bipolartransistors
+  - 2.1.1 Kennlinien
+    - 2.1.1.1 Ausgangskennlinienfeld
+    - 2.1.1.2 Übertragungskennlinienfeld
+    - 2.1.1.3 Eingangskennlinienfeld
+    - 2.1.1.4 Stromverstärkung
+  - 2.1.2 Beschreibung durch Gleichungen
+    - 2.1.2.1 Early-Effekt
+    - 2.1.2.2 Basisstrom und Stromverstärkung
+    - 2.1.2.3 Großsignalgleichungen
+  - 2.1.3 Verlauf der Stromverstärkung
+    - 2.1.3.1 Gummel-Plot
+    - 2.1.3.2 Darstellung des Verlaufs
+    - 2.1.3.3 Bestimmung der Werte
+  - 2.1.4 Arbeitspunkt und Kleinsignalverhalten
+    - 2.1.4.1 Bestimmung des Arbeitspunkts
+    - 2.1.4.2 Kleinsignalgleichungen und Kleinsignalparameter
+    - 2.1.4.3 Kleinsignalersatzschaltbild
+    - 2.1.4.4 Vierpol-Matrizen
+    - 2.1.4.5 Gültigkeitsbereich der Kleinsignalbetrachtung
+  - 2.1.5 Grenzdaten und Sperrströme
+    - 2.1.5.1 Durchbruchsspannungen
+    - 2.1.5.2 Durchbruch 2. Art
+    - 2.1.5.3 Grenzströme
+    - 2.1.5.4 Sperrströme
+    - 2.1.5.5 Maximale Verlustleistung
+    - 2.1.5.6 Zulässiger Betriebsbereich
+  - 2.1.6 Thermisches Verhalten
+    - 2.1.6.1 Thermisches Ersatzschaltbild
+    - 2.1.6.2 Thermisches Verhalten bei statischem Betrieb
+    - 2.1.6.3 Thermisches Verhalten bei Pulsbetrieb
+  - 2.1.7 Temperaturabhängigkeit der Transistorparameter
+- 2.2 Aufbau eines Bipolartransistors
+  - 2.2.1 Einzeltransistoren
+    - 2.2.1.1 Innerer Aufbau
+    - 2.2.1.2 Gehäuse
+    - 2.2.1.3 Komplementäre Transistoren
+  - 2.2.2 Integrierte Transistoren
+    - 2.2.2.1 Innerer Aufbau
+- 2.3 Modelle für den Bipolartransistor
+  - 2.3.1 Statisches Verhalten
+    - 2.3.1.1 Das Ebers-Moll-Modell
+    - 2.3.1.2 Das Transportmodell
+    - 2.3.1.3 Weitere Effekte
+    - 2.3.1.4 Stromverstärkung bei Normalbetrieb
+    - 2.3.1.5 Substrat-Dioden
+    - 2.3.1.6 Bahnwiderstände
+  - 2.3.2 Dynamisches Verhalten
+    - 2.3.2.1 Sperrschichtkapazitäten
+    - 2.3.2.2 Diffusionskapazitäten
+    - 2.3.2.3 Gummel-Poon-Modell
+  - 2.3.3 Kleinsignalmodell
+    - 2.3.3.1 Statisches Kleinsignalmodell
+    - 2.3.3.2 Dynamisches Kleinsignalmodell
+    - 2.3.3.3 Grenzfrequenzen bei Kleinsignalbetrieb
+    - 2.3.3.4 Zusammenfassung der Kleinsignalparameter
+  - 2.3.4 Rauschen
+    - 2.3.4.1 Rauschdichten
+    - 2.3.4.2 Rauschquellen eines Bipolartransistors
+    - 2.3.4.3 Äquivalente Rauschquellen
+    - 2.3.4.4 Ersatzrauschquelle und Rauschzahl
+    - 2.3.4.5 Rauschzahl eines Bipolartransistors
+    - 2.3.4.6 Bestimmung des Basisbahnwiderstands
+- 2.4 Grundschaltungen
+  - 2.4.1 Emitterschaltung
+    - 2.4.1.1 Übertragungskennlinie der Emitterschaltung
+    - 2.4.1.2 Kleinsignalverhalten der Emitterschaltung
+    - 2.4.1.3 Nichtlinearität
+    - 2.4.1.4 Temperaturabhängigkeit
+    - 2.4.1.5 Emitterschaltung mit Stromgegenkopplung
+    - 2.4.1.6 Emitterschaltung mit Spannungsgegenkopplung
+    - 2.4.1.7 Arbeitspunkteinstellung
+    - 2.4.1.8 Frequenzgang und obere Grenzfrequenz
+    - 2.4.1.9 Zusammenfassung
+  - 2.4.2 Kollektorschaltung
+    - 2.4.2.1 Übertragungskennlinie der Kollektorschaltung
+    - 2.4.2.2 Kleinsignalverhalten der Kollektorschaltung
+    - 2.4.2.3 Nichtlinearität
+    - 2.4.2.4 Temperaturabhängigkeit
+    - 2.4.2.5 Arbeitspunkteinstellung
+    - 2.4.2.6 Frequenzgang und obere Grenzfrequenz
+    - 2.4.2.7 Impedanztransformation mit der Kollektorschaltung
+  - 2.4.3 Basisschaltung
+    - 2.4.3.1 Übertragungskennlinie der Basisschaltung
+    - 2.4.3.2 Kleinsignalverhalten der Basisschaltung
+    - 2.4.3.3 Nichtlinearität
+    - 2.4.3.4 Temperaturabhängigkeit
+    - 2.4.3.5 Arbeitspunkteinstellung
+    - 2.4.3.6 Frequenzgang und obere Grenzfrequenz
+  - 2.4.4 Darlington-Schaltung
+    - 2.4.4.1 Kennlinien eines Darlington-Transistors
+    - 2.4.4.2 Beschreibung durch Gleichungen
+    - 2.4.4.3 Verlauf der Stromverstärkung
+    - 2.4.4.4 Kleinsignalverhalten
+    - 2.4.4.5 Schaltverhalten
+### 3. Feldeffekttransistor
+
+- 3.1 Verhalten eines Feldeffekttransistors
+  - 3.1.1 Kennlinien
+    - 3.1.1.1 Ausgangskennlinienfeld
+    - 3.1.1.2 Abschnürbereich
+    - 3.1.1.3 Übertragungskennlinienfeld
+    - 3.1.1.4 Eingangskennlinien
+  - 3.1.2 Beschreibung durch Gleichungen
+    - 3.1.2.1 Verlauf der Kennlinien
+    - 3.1.2.2 Steilheitskoeffizient
+    - 3.1.2.3 Alternative Darstellung
+    - 3.1.2.4 Kanallängenmodulation
+  - 3.1.3 Feldeffekttransistor als steuerbarer Widerstand
+  - 3.1.4 Arbeitspunkt und Kleinsignalverhalten
+    - 3.1.4.1 Arbeitspunkt
+    - 3.1.4.2 Kleinsignalgleichungen und Kleinsignalparameter
+    - 3.1.4.3 Kleinsignalersatzschaltbild
+    - 3.1.4.4 Vierpol-Matrizen
+    - 3.1.4.5 Gültigkeitsbereich der Kleinsignalbetrachtung
+  - 3.1.5 Grenzdaten und Sperrströme
+    - 3.1.5.1 Durchbruchsspannungen
+    - 3.1.5.2 Grenzströme
+    - 3.1.5.3 Sperrströme
+    - 3.1.5.4 Maximale Verlustleistung
+    - 3.1.5.5 Zulässiger Betriebsbereich
+  - 3.1.6 Thermisches Verhalten
+  - 3.1.7 Temperaturabhängigkeit der Fet-Parameter
+    - 3.1.7.1 Mosfet
+    - 3.1.7.2 Sperrschicht-Fet
+- 3.2 Aufbau eines Feldeffekttransistors
+  - 3.2.1 Integrierte Mosfets
+    - 3.2.1.1 Aufbau
+    - 3.2.1.2 CMOS
+    - 3.2.1.3 Bulk-Dioden
+    - 3.2.1.4 Latch-up
+    - 3.2.1.5 Mosfets für höhere Spannungen
+  - 3.2.2 Einzel-Mosfets
+    - 3.2.2.1 Aufbau
+    - 3.2.2.2 Parasitäre Elemente
+    - 3.2.2.3 Kennlinien von vertikalen Leistungs-Mosfets
+  - 3.2.3 Sperrschicht-Fets
+  - 3.2.4 Gehäuse
+- 3.3 Modelle für den Feldeffekttransistor
+  - 3.3.1 Statisches Verhalten
+    - 3.3.1.1 Level-1-Mosfet-Modell
+    - 3.3.1.2 Bahnwiderstände
+    - 3.3.1.3 Vertikale Leistungs-Mosfets
+    - 3.3.1.4 Sperrschicht-Fets
+  - 3.3.2 Dynamisches Verhalten
+    - 3.3.2.1 Kanalkapazitäten
+    - 3.3.2.2 Überlappungskapazitäten
+    - 3.3.2.3 Sperrschichtkapazitäten
+    - 3.3.2.4 Level-1-Mosfet-Modell
+    - 3.3.2.5 Einzel-Mosfets
+    - 3.3.2.6 Sperrschicht-Fet-Modell
+  - 3.3.3 Kleinsignalmodell
+    - 3.3.3.1 Statisches Kleinsignalmodell im Abschnürbereich
+    - 3.3.3.2 Dynamisches Kleinsignalmodell im Abschnürbereich
+    - 3.3.3.3 Grenzfrequenzen bei Kleinsignalbetrieb
+    - 3.3.3.4 Zusammenfassung der Kleinsignalparameter
+  - 3.3.4 Rauschen
+    - 3.3.4.1 Rauschquellen eines Feldeffekttransistors
+    - 3.3.4.2 Äquivalente Rauschquellen
+    - 3.3.4.3 Ersatzrauschquelle und Rauschzahl
+    - 3.3.4.4 Rauschzahl eines Fets
+    - 3.3.4.5 Vergleich der Rauschzahlen von Fet und Bipolartransistor
+- 3.4 Grundschaltungen
+  - 3.4.1 Sourceschaltung
+    - 3.4.1.1 Übertragungskennlinie der Sourceschaltung
+    - 3.4.1.2 Kleinsignalverhalten der Sourceschaltung
+    - 3.4.1.3 Nichtlinearität
+    - 3.4.1.4 Temperaturabhängigkeit
+    - 3.4.1.5 Sourceschaltung mit Stromgegenkopplung
+    - 3.4.1.6 Sourceschaltung mit Spannungsgegenkopplung
+    - 3.4.1.7 Arbeitspunkteinstellung
+    - 3.4.1.8 Frequenzgang und Grenzfrequenz
+    - 3.4.1.9 Zusammenfassung
+  - 3.4.2 Drainschaltung
+    - 3.4.2.1 Übertragungskennlinie der Drainschaltung
+    - 3.4.2.2 Kleinsignalverhalten der Drainschaltung
+    - 3.4.2.3 Nichtlinearität
+    - 3.4.2.4 Temperaturabhängigkeit
+    - 3.4.2.5 Arbeitspunkteinstellung
+    - 3.4.2.6 Frequenzgang und Grenzfrequenz
+  - 3.4.3 Gateschaltung
+    - 3.4.3.1 Übertragungskennlinie der Gateschaltung
+    - 3.4.3.2 Kleinsignalverhalten der Gateschaltung
+    - 3.4.3.3 Nichtlinearität
+    - 3.4.3.4 Temperaturabhängigkeit
+    - 3.4.3.5 Arbeitspunkteinstellung
+    - 3.4.3.6 Frequenzgang und Grenzfrequenz
+### 4. Verstärker
+
+- 4.1 Schaltungen
+  - 4.1.1 Grundlagen
+    - 4.1.1.1 Kennlinien der Transistoren
+    - 4.1.1.2 Skalierung
+    - 4.1.1.3 Normierung
+    - 4.1.1.4 Komplementäre Transistoren
+    - 4.1.1.5 Auswirkung fertigungsbedingter Toleranzen
+    - 4.1.1.6 Dioden
+  - 4.1.2 Stromquellen und Stromspiegel
+    - 4.1.2.1 Prinzip einer Stromquelle
+    - 4.1.2.2 Einfache Stromquellen für diskrete Schaltungen
+    - 4.1.2.3 Einfacher Stromspiegel
+    - 4.1.2.4 Stromspiegel mit Kaskode
+    - 4.1.2.5 Kaskode-Stromspiegel
+    - 4.1.2.6 Wilson-Stromspiegel
+    - 4.1.2.7 Dynamisches Verhalten
+    - 4.1.2.8 Weitere Stromspiegel und Stromquellen
+    - 4.1.2.9 Stromspiegel für diskrete Schaltungen
+  - 4.1.3 Kaskodeschaltung
+    - 4.1.3.1 Kleinsignalverhalten der Kaskodeschaltung
+    - 4.1.3.2 Frequenzgang und Grenzfrequenz der Kaskodeschaltung
+  - 4.1.4 Differenzverstärker
+    - 4.1.4.1 Grundschaltung
+    - 4.1.4.2 Gleichtakt- und Differenzverstärkung
+    - 4.1.4.3 Eigenschaften des Differenzverstärkers
+    - 4.1.4.4 Unsymmetrischer Betrieb
+    - 4.1.4.5 Übertragungskennlinien des npn-Differenzverstärkers
+    - 4.1.4.6 Übertragungskennlinien des n-Kanal-Differenzver- stärkers
+    - 4.1.4.7 Differenzverstärker mit aktiver Last
+    - 4.1.4.8 Offsetspannung eines Differenzverstärkers
+    - 4.1.4.9 Kleinsignalverhalten des Differenzverstärkers
+    - 4.1.4.10 Nichtlinearität
+    - 4.1.4.11 Arbeitspunkteinstellung
+    - 4.1.4.12 Frequenzgänge und Grenzfrequenzen des Differenzverstärkers
+    - 4.1.4.13 Zusammenfassung
+  - 4.1.5 Impedanzwandler
+    - 4.1.5.1 Einstufige Impedanzwandler
+    - 4.1.5.2 Mehrstufige Impedanzwandler
+    - 4.1.5.3 Komplementäre Impedanzwandler
+  - 4.1.6 Schaltungen zur Arbeitspunkteinstellung
+    - 4.1.6.1 UBE-Referenzstromquelle
+    - 4.1.6.2 PTAT-Referenzstromquelle
+    - 4.1.6.3 Temperaturunabhängige Referenzstromquelle
+    - 4.1.6.4 Referenzstromquellen in MOS-Schaltungen
+    - 4.1.6.5 Arbeitspunkteinstellung in integrierten Verstärkerschaltungen
+- 4.2 Eigenschaften und Kenngrößen
+  - 4.2.1 Kennlinien
+  - 4.2.2 Kleinsignal-Kenngrößen
+    - 4.2.2.1 Arbeitspunkt
+    - 4.2.2.2 Kleinsignalgrößen
+    - 4.2.2.3 Linearisierung
+    - 4.2.2.4 Kleinsignal-Kenngrößen
+    - 4.2.2.5 Kleinsignalersatzschaltbild eines Verstärkers
+    - 4.2.2.6 Verstärker mit Rückwirkung
+    - 4.2.2.7 Berechnung mit Hilfe des Kleinsignalersatzschalt- bilds der Schaltung
+    - 4.2.2.8 Reihenschaltung von Verstärkern
+  - 4.2.3 Nichtlineare Kenngrößen
+    - 4.2.3.1 Reihenentwicklung der Kennlinie im Arbeitspunkt
+    - 4.2.3.2 Gültigkeitsbereich der Reihenentwicklung
+    - 4.2.3.3 Ausgangssignal bei sinusförmiger Ansteuerung
+    - 4.2.3.4 Klirrfaktor
+    - 4.2.3.5 Kompressionspunkt
+    - 4.2.3.6 Intermodulation und Intercept-Punkte
+    - 4.2.3.7 Reihenschaltung von Verstärkern
+    - 4.2.3.8 Betriebsfälle bei der Ermittlung der nichtlinearen Kenngrößen
+    - 4.2.3.9 Messung der nichtlinearen Kenngrößen
+  - 4.2.4 Rauschen
+    - 4.2.4.1 Rauschquellen und Rauschdichten eines Verstärkers
+    - 4.2.4.2 Ersatzrauschquelle und spektrale Rauschzahl
+    - 4.2.4.3 Optimale Rauschzahl und optimaler Quellenwiderstand
+    - 4.2.4.4 Rauschzahl einer Reihenschaltung von Verstärkern
+    - 4.2.4.5 Signal-Rausch-Abstand und mittlere Rauschzahl
+    - 4.2.4.6 Optimierung der Rauschzahl
+    - 4.2.4.7 Rauschanpassung
+    - 4.2.4.8 Äquivalente Rauschquellen der Grundschaltungen
+### 5. Operationsverstärker
+
+- 5.1 Übersicht
+  - 5.1.1 Operationsverstärker Grundlagen
+  - 5.1.2 Operationsverstärker-Typen
+- 5.2 Der normale Operationsverstärker (VV-OPV)
+  - 5.2.1 Prinzip der Gegenkopplung
+    - 5.2.1.1 Der nichtinvertierende Verstärker
+    - 5.2.1.2 Der invertierende Verstärker
+  - 5.2.2 Einfache Spannungsverstärkung
+    - 5.2.2.1 Einfache Verstärker
+    - 5.2.2.2 Endstufen für Operationsverstärker
+    - 5.2.2.3 Verstärker mit Kaskodeschaltung
+  - 5.2.3 Zweifache Spannungsverstärkung
+    - 5.2.3.1 Gebräuchliche Schaltungstechnik
+    - 5.2.3.2 Single-Supply-Verstärker
+  - 5.2.4 Breitband-Operationsverstärker
+  - 5.2.5 Niedrige Betriebsspannungen
+    - 5.2.5.1 Betrieb mit einer einzigen Betriebsspannungsquelle
+    - 5.2.5.2 Rail-to-Rail-Verstärker
+  - 5.2.6 Verstärker mit internem Offsetabgleich
+  - 5.2.7 Verstärker mit symmetrischen Ausgängen
+- 5.3 Spannungsfolger, Buffer
+  - 5.3.1 Open-Loop-Buffer
+  - 5.3.2 Closed-Loop-Buffer
+- 5.4 Frequenzgang-Korrektur
+  - 5.4.1 Grundlagen
+  - 5.4.2 Eine Verstärkerstufe
+  - 5.4.3 Zwei Verstärkerstufen
+  - 5.4.4 Universelle Frequenzgang-Korrektur
+  - 5.4.5 Angepasste Frequenzgangkorrektur
+  - 5.4.6 Slew-Rate
+  - 5.4.7 Kapazitive Last
+- 5.5 Parameter von Operationsverstärkern
+  - 5.5.1 Differenz- und Gleichtaktverstärkung
+  - 5.5.2 Offsetspannung
+  - 5.5.3 Eingangsströme
+  - 5.5.4 Eingangswiderstände
+  - 5.5.5 Ausgangswiderstand
+  - 5.5.6 Beispiel für statische Fehler
+  - 5.5.7 Bandbreite
+  - 5.5.8 Rauschen
+- 5.6 Der Transimpedanzverstärker (CV-OPV)
+  - 5.6.1 Innerer Aufbau
+  - 5.6.2 Vergleich von VV- und CV-Operationsverstärkern
+  - 5.6.3 Typische Anwendungen
+- 5.7 Der Transkonduktanz-Verstärker (VC-OPV)
+  - 5.7.1 Innerer Aufbau
+  - 5.7.2 Typische Anwendung
+- 5.8 Der Strom-Verstärker (CC-OPV)
+  - 5.8.1 Innerer Aufbau
+  - 5.8.2 Typische Anwendung
+    - 5.8.2.1 Anwendungen mit Stromgegenkopplung
+    - 5.8.2.2 Anwendungen mit Spannungsgegenkopplung
+- 5.9 Einsatz von Operationsverstärkern
+  - 5.9.1 Praktischer Einsatz
+    - 5.9.1.1 Abblocken der Betriebsspannungen
+    - 5.9.1.2 Schwingneigung
+    - 5.9.1.3 Dämpfung
+    - 5.9.1.4 Gegenkopplungswiderstände
+    - 5.9.1.5 Verlustleistung
+    - 5.9.1.6 Kühlung
+    - 5.9.1.7 Übersteuerung
+    - 5.9.1.8 Eingangsschutz
+- 5.10 Vergleich
+### 6. Digitaltechnik Grundlagen
+
+- 6.1 Die logischen Grundfunktionen
+- 6.2 Aufstellung logischer Funktionen
+  - 6.2.1 Das Karnaugh-Diagramm
+- 6.3 Abgeleitete Grundfunktionen
+- 6.4 Schaltungstechnische Realisierung der Grundfunktionen
+  - 6.4.1 Statische und dynamische Daten
+  - 6.4.2 Transistor-Transistor-Logik (TTL)
+    - 6.4.2.1 Open-Collector-Ausgänge
+    - 6.4.2.2 Tristate-Ausgänge
+  - 6.4.3 Komplementäre MOS-Logik (CMOS)
+    - 6.4.3.1 CMOS-Inverter
+    - 6.4.3.2 Offene Eingänge
+    - 6.4.3.3 Statische Ladungen
+    - 6.4.3.4 CMOS-Gatter
+    - 6.4.3.5 Transmission-Gate
+  - 6.4.4 Emittergekoppelte Logik (ECL)
+    - 6.4.4.1 PECL-Gatter
+    - 6.4.4.2 NECL-Gatter
+    - 6.4.4.3 Wired-OR-Verknüpfung
+    - 6.4.4.4 Schaltzeiten
+    - 6.4.4.5 Verlustleistung
+  - 6.4.5 Current Mode Logik (CML)
+    - 6.4.5.1 CML-Gatter
+    - 6.4.5.2 CML-Flip-Flop
+  - 6.4.6 Low Voltage Differential Signaling (LVDS)
+  - 6.4.7 Vergleich der Logikfamilien
+- 6.5 Verbindungsleitungen
+- 6.6 Hazards
+- 6.7 Kopplung von Logikfamilien
+- 6.8 Betriebsspannungen
+### 7. Schaltnetze (Kombinatorische Logik)
+
+- 7.1 Multiplexer
+  - 7.1.1 1-aus-n-Decoder
+  - 7.1.2 Demultiplexer
+  - 7.1.3 Multiplexer
+- 7.2 Schiebelogik (Barrel Shifter)
+- 7.3 Prioritätsdecoder
+- 7.4 Kombinatorischer Zähler
+- 7.5 Paritätsgenerator
+- 7.6 Komparatoren
+- 7.7 Zahlendarstellung
+  - 7.7.1 Positive ganze Zahlen im Dualcode
+    - 7.7.1.1 Oktalcode
+    - 7.7.1.2 Hexadezimalcode
+  - 7.7.2 BCD-Code
+  - 7.7.3 Ganze Dualzahlen mit beliebigem Vorzeichen
+    - 7.7.3.1 Darstellung nach Betrag und Vorzeichen
+    - 7.7.3.2 Darstellung im Zweierkomplement (Two’s Complement)
+    - 7.7.3.3 Vorzeichenergänzung (Sign Extension)
+    - 7.7.3.4 Offset-Dual-Darstellung (Offset Binary)
+  - 7.7.4 Festkomma-Dualzahlen
+  - 7.7.5 Gleitkomma-Dualzahlen
+- 7.8 Addierer
+  - 7.8.1 Halbaddierer
+  - 7.8.2 Volladdierer
+  - 7.8.3 Parallele Übertragslogik
+  - 7.8.4 Subtraktion
+  - 7.8.5 Zweierkomplement-Überlauf
+  - 7.8.6 Addition und Subtraktion von Gleitkomma-Zahlen
+- 7.9 Multiplizierer
+  - 7.9.1 Multiplikation von Festkomma-Zahlen
+  - 7.9.2 Multiplikation von Gleitkomma-Zahlen
+### 8. Schaltwerke (Sequentielle Logik)
+
+- 8.1 Flip-Flops
+  - 8.1.1 Transparente Flip-Flops
+    - 8.1.1.1 Flip-Flop Grundschaltung
+    - 8.1.1.2 Taktzustandgesteuerte RS-Flip-Flops
+    - 8.1.1.3 Taktzustandgesteuerte D-Flip-Flops
+  - 8.1.2 Flip-Flops mit Zwischenspeicherung
+    - 8.1.2.1 JK Master-Slave Flip-Flops
+    - 8.1.2.2 D Master-Slave Flip-Flops
+  - 8.1.3 Zeitverhalten von Flip-Flops
+    - 8.1.3.1 Vergleich JK- und D-Flip-Flops
+    - 8.1.3.2 Metastabilität
+  - 8.1.4 Flip-Flops für Zähler
+- 8.2 Dualzähler
+  - 8.2.1 Asynchroner Dualzähler
+  - 8.2.2 Synchrone Dualzähler
+  - 8.2.3 Vorwärts-Rückwärts-Zähler
+    - 8.2.3.1 Zähler mit umschaltbarer Zählrichtung
+    - 8.2.3.2 Zähler mit Vorwärts- und Rückwärts-Eingängen
+- 8.3 Synchrone BCD-Zähler
+- 8.4 Vorwahlzähler
+- 8.5 Schieberegister
+  - 8.5.1 Grundschaltung
+  - 8.5.2 Schieberegister mit Paralleleingabe
+  - 8.5.3 Erzeugung von Pseudozufallsfolgen
+- 8.6 Aufbereitung asynchroner Signale
+  - 8.6.1 Entprellung mechanischer Kontakte
+  - 8.6.2 Flankengetriggertes RS-Flip-Flop
+  - 8.6.3 Synchronisation von asynchronen Daten
+  - 8.6.4 Synchroner Zeitschalter
+  - 8.6.5 Synchroner Änderungsdetektor
+  - 8.6.6 Synchroner Taktschalter
+- 8.7 Systematischer Entwurf von Schaltwerken
+  - 8.7.1 Zustandsdiagramm
+  - 8.7.2 Entwurfsbeispiel für einen Dualzähler
+  - 8.7.3 Entwurfsbeispiel für einen umschaltbaren Zähler
+### 9. Halbleiterspeicher
+
+- 9.1 Programmierbare Logik
+  - 9.1.1 Programmierbare Logische Bauelemente (PLDs)
+  - 9.1.2 Anwender-programmierbare Gate-Arrays
+  - 9.1.3 Computer-gestützter PLD-Entwurf
+- 9.2 Datenspeicher
+  - 9.2.1 Statische RAMs
+    - 9.2.1.1 Zeitbedingungen
+  - 9.2.2 Dynamische RAMs
+  - 9.2.3 Flash Speicher
+- 9.3 Fehler-Erkennung und -Korrektur
+  - 9.3.1 Paritätsbit
+  - 9.3.2 Hamming-Code
+- 9.4 First-In-First-Out Memories (FIFO)
+  - 9.4.1 Prinzip
+  - 9.4.2 Standart FIFOs
+  - 9.4.3 FIFO-Realisierung mit Standard-RAMs
+
+## Teil II. Anwendungen
+
+### 10. Analogrechenschaltungen
+
+- 10.1 Addierer
+- 10.2 Subtrahierer
+  - 10.2.1 Rückführung auf die Addition
+  - 10.2.2 Subtrahierer mit einem Operationsverstärker
+- 10.3 Bipolares Koeffizientenglied
+- 10.4 Integratoren
+  - 10.4.1 Invertierender Integrator
+  - 10.4.2 Anfangsbedingung
+  - 10.4.3 Summationsintegrator
+  - 10.4.4 Nicht invertierender Integrator
+  - 10.4.5 Integrator für hohe Frequenzen
+- 10.5 Differentiatoren
+  - 10.5.1 Prinzipschaltung
+  - 10.5.2 Praktische Realisierung
+  - 10.5.3 Differentiator mit hohem Eingangswiderstand
+- 10.6 Lösung von Differentialgleichungen
+- 10.7 Funktionsnetzwerke
+  - 10.7.1 Logarithmus
+  - 10.7.2 Exponentialfunktion
+  - 10.7.3 Bildung von Potenzfunktionen über Logarithmen
+- 10.8 Analog-Multiplizierer
+  - 10.8.1 Multiplizierer mit logarithmierenden Funktionsgeneratoren
+  - 10.8.2 Steilheitsmultiplizierer
+### 11. Gesteuerte Quellen und Impedanzkonverter
+
+- 11.1 Spannungsgesteuerte Spannungsquellen
+  - 11.1.1 Ideale Spannungsquelle
+  - 11.1.2 Spannungsquelle mit negativem Ausgangswiderstand
+- 11.2 Stromgesteuerte Spannungsquellen
+- 11.3 Spannungsgesteuerte Stromquellen
+  - 11.3.1 Stromquellen für potentialfreie Verbraucher
+  - 11.3.2 Stromquellen für geerdete Verbraucher
+  - 11.3.3 Transistor-Präzisionsstromquellen
+    - 11.3.3.1 Transistor-Stromquellen für bipolare Ausgangsströme
+  - 11.3.4 Schwimmende Stromquellen
+- 11.4 Stromgesteuerte Stromquellen
+- 11.5 Der NIC (Negative Impedance Converter)
+- 11.6 Der Gyrator
+  - 11.6.1 Transformation von Zweipolen
+  - 11.6.2 Transformation von Vierpolen
+- 11.7 Der Zirkulator
+### 12. Aktive Filter
+
+- 12.1 Theoretische Grundlagen von Tiefpassfiltern
+  - 12.1.1 Passive Tiefpässe 1. Ordnung
+    - 12.1.1.1 Beschreibung im Frequenzbereich
+    - 12.1.1.2 Beschreibung im Zeitbereich
+  - 12.1.2 Vergleich von Tiefpassfiltern
+  - 12.1.3 Filter mit kritischer Dämpfung
+  - 12.1.4 Butterworth-Tiefpässe
+  - 12.1.5 Tschebyscheff-Tiefpässe
+  - 12.1.6 Bessel-Tiefpässe
+  - 12.1.7 Zusammenfassung der Theorie
+- 12.2 Simulation von Filtern
+- 12.3 Tiefpass-Hochpass-Transformation
+- 12.4 Realisierung von Tief- und Hochpassfiltern 1. Ordnung
+- 12.5 Realisierung von Tief- und Hochpassfiltern 2. Ordnung
+  - 12.5.1 LRC-Filter
+  - 12.5.2 Filter mit Mehrfachgegenkopplung
+  - 12.5.3 Tiefpassfilter mit Einfachmitkopplung
+  - 12.5.4 Hochpassfilter mit Einfachmitkopplung
+- 12.6 Realisierung von Tiefpassfiltern höherer Ordnung
+- 12.7 Tiefpass-Bandpass-Transformation
+  - 12.7.1 Bandpassfilter 2. Ordnung
+  - 12.7.2 Bandpassfilter 4. Ordnung
+- 12.8 Realisierung von Bandpassfiltern 2. Ordnung
+  - 12.8.1 RC-Filter
+  - 12.8.2 LRC-Filter
+  - 12.8.3 Bandpass mit Mehrfachgegenkopplung
+  - 12.8.4 Bandpass mit Einfachmitkopplung
+- 12.9 Tiefpass-Bandsperren-Transformation
+- 12.10 Realisierung von Bandsperren 2. Ordnung
+  - 12.10.1 LRC-Sperrfilter
+  - 12.10.2 Bandsperre aus Hoch- und Tiefpass
+  - 12.10.3 Bandsperre mit Bandpass
+  - 12.10.4 Bandsperre als inverser Bandpass
+- 12.11 Allpässe
+  - 12.11.1 Grundlagen
+  - 12.11.2 Realisierung von Allpässen 1. Ordnung
+  - 12.11.3 Realisierung von Allpässen 2. Ordnung
+- 12.12 Integratorfilter
+  - 12.12.1 Grundschaltung
+  - 12.12.2 Integratorfilter mit zusätzlichem Hochpass-Ausgang
+  - 12.12.3 Integratorfilter mit zusätzlichem Bandsperren-Ausgang
+  - 12.12.4 Elektronische Steuerung der Filterparameter
+  - 12.12.5 Filter mit einstellbaren Koeffizienten
+  - 12.12.6 Integratorfilter mit VC- und CC-Operationsverstärkern
+- 12.13 Switched-Capacitor-Filter
+  - 12.13.1 Grundprinzip
+  - 12.13.2 Der SC-Integrator
+  - 12.13.3 SC-Filter 1. Ordnung
+  - 12.13.4 SC-Filter 2. Ordnung
+  - 12.13.5 Allgemeine Gesichtspunkte beim Einsatz von SC-Filtern
+- 12.14 Vergleich der Übertragungsfunktionen
+### 13. Regler
+
+- 13.1 Grundlagen
+  - 13.1.1 Komponenten eines Regelkreises
+  - 13.1.2 Beispielstrecke
+- 13.2 Regler-Typen
+  - 13.2.1 P-Regler
+  - 13.2.2 PI-Regler
+  - 13.2.3 PID-Regler
+  - 13.2.4 Kompensator
+  - 13.2.5 Realisierung der Regler
+- 13.3 Regelung nichtlinearer Strecken
+  - 13.3.1 Statische Nichtlinearität
+  - 13.3.2 Dynamische Nichtlinearität
+### 14. Signalgeneratoren
+
+- 14.1 Rechteckformung
+  - 14.1.1 Komparator
+    - 14.1.1.1 Fensterkomparator
+  - 14.1.2 Schmitt-Trigger
+- 14.2 Impulserzeugung
+  - 14.2.1 Erzeugung kurzer Impulse
+  - 14.2.2 Erzeugung längerer Impulse
+- 14.3 Rechteckgeneratoren
+  - 14.3.1 Funktionsgeneratoren
+  - 14.3.2 Einfache Rechteckgeneratoren
+    - 14.3.2.1 Timer als Schmitt-Trigger
+    - 14.3.2.2 Operationsverstärker als Schmitt-Trigger
+    - 14.3.2.3 Gatter als Schmitt-Trigger
+  - 14.3.3 Rechteckgeneratoren mit hoher Frequenzgenauigkeit
+- 14.4 Sinusschwingungen
+  - 14.4.1 Generator für beliebige Signale
+  - 14.4.2 Direkte Digitale Synthese
+### 15. Leistungsverstärker
+
+- 15.1 Emitterfolger als Leistungsverstärker
+- 15.2 Komplementäre Emitterfolger
+  - 15.2.1 Komplementäre Emitterfolger in B-Betrieb
+  - 15.2.2 Komplementäre Emitterfolger
+- 15.3 Komplementäre Darlington-Schaltungen
+- 15.4 Komplementäre Drainschaltungen
+- 15.5 Komplementäre Sourceschaltungen
+- 15.6 Strombegrenzung
+    - 15.6.0.1 Spannungsabhängige Strombegrenzung
+- 15.7 Vier-Quadranten-Betrieb
+- 15.8 Dimensionierung einer Leistungsendstufe
+- 15.9 Ansteuerschaltungen mit Spannungsverstärkung
+  - 15.9.1 Breitband-Ansteuerschaltung
+- 15.10 Erhöhung der Ausgangsleistung integrierter Operationsverstärker
+- 15.11 Eine Betriebsspannung
+  - 15.11.1 Wechselspannungskopplung
+  - 15.11.2 Brückenschaltung
+- 15.12 Getaktete Leistungsverstärker
+### 16. Stromversorgung
+
+- 16.1 Eigenschaften von Netztransformatoren
+- 16.2 Netzgleichrichter
+  - 16.2.1 Einweggleichrichter
+  - 16.2.2 Brückengleichrichter
+  - 16.2.3 Mittelpunkt-Schaltung
+    - 16.2.3.1 Grundschaltung
+    - 16.2.3.2 Doppelte Mittelpunktsschaltung
+- 16.3 Lineare Spannungsregler
+  - 16.3.1 Prinzipien
+  - 16.3.2 Praktische Ausführung
+  - 16.3.3 Einstellung der Ausgangsspannung
+  - 16.3.4 Spannungsregler mit geringem Spannungsverlust
+  - 16.3.5 Spannungsregler für negative Spannungen
+  - 16.3.6 Labornetzgeräte
+- 16.4 Erzeugung der Referenzspannung
+  - 16.4.1 Referenzspannungsquellen mit Dioden
+  - 16.4.2 Bandabstands-Referenz
+- 16.5 Schaltregler ohne Potentialtrennung
+  - 16.5.1 Der Abwärtswandler
+    - 16.5.1.1 Prinzip
+    - 16.5.1.2 Ausführungsbeispiel
+    - 16.5.1.3 Leistungsschalter
+    - 16.5.1.4 Pulsbreitenmodulation
+    - 16.5.1.5 Pulsfrequenzmodulation
+  - 16.5.2 Aufwärts-Wandler
+  - 16.5.3 Invertierender Wandler
+  - 16.5.4 Aufwärts- Abwärtswandler
+  - 16.5.5 Sepic Konverter
+  - 16.5.6 Spannungswandler mit Ladungspumpe
+- 16.6 Schaltregler mit Potentialtrennung
+  - 16.6.1 Eintakt-Wandler
+    - 16.6.1.1 Eintakt-Sperrwandler
+    - 16.6.1.2 Eintakt-Durchflusswandler
+  - 16.6.2 Gegentakt-Wandler
+    - 16.6.2.1 Gegentakt-Wandler mit Parallelspeisung
+    - 16.6.2.2 Gegentakt-Wandler in Halbbrückenschaltung
+    - 16.6.2.3 Gegentakt-Wandler in Brückenschaltung
+  - 16.6.3 Resonanzumrichter
+  - 16.6.4 Aktive Gleichrichtung
+  - 16.6.5 Leistungsschalter
+    - 16.6.5.1 Leistungstransistoren
+    - 16.6.5.2 Gatetreiber ohne Potentialtrennung
+    - 16.6.5.3 Gatetreiber mit Potentialtrennung
+  - 16.6.6 Hochfrequenztransformatoren
+  - 16.6.7 Verlustanalyse
+- 16.7 Leistungsfaktorkorrektur
+- 16.8 Solarwechselrichter
+- 16.9 Unterbrechungsfreie Stromversorgung
+- 16.10 Stromversorgung mit Akkus
+  - 16.10.1 Akkutechnologien
+  - 16.10.2 Entladung
+  - 16.10.3 Ladung
+  - 16.10.4 Ladegerät
+### 17. DA- und AD-Umsetzer
+
+- 17.1 Systemtheoretische Grundlagen
+  - 17.1.1 Quantisierung der Zeit
+    - 17.1.1.1 Abtasttheorem
+    - 17.1.1.2 Rückgewinnung des Analogsignals
+    - 17.1.1.3 Praktische Gesichtspunkte
+  - 17.1.2 Quantisierung der Amplitude
+  - 17.1.3 Spannungseinheit
+- 17.2 Digital-Analog Umsetzung
+  - 17.2.1 Grundprinzipien der DA-Umsetzung
+  - 17.2.2 Wägeverfahren mit geschalteten Spannungen
+    - 17.2.2.1 Einsatz von Wechselschaltern
+    - 17.2.2.2 Leiternetzwerk
+    - 17.2.2.3 Inversbetrieb eines Leiternetzwerks
+  - 17.2.3 Wägeverfahren mit geschalteten Strömen
+  - 17.2.4 DA-Umsetzer für spezielle Anwendungen
+    - 17.2.4.1 Verarbeitung vorzeichenbehafteter Zahlen
+    - 17.2.4.2 Multiplizierende DA-Umsetzer
+    - 17.2.4.3 Dividierende DA-Umsetzer
+  - 17.2.5 Genauigkeit von DA-Umsetzern
+    - 17.2.5.1 Statische Kenngrößen
+    - 17.2.5.2 Glitche
+- 17.3 Analog-Digital Umsetzer
+  - 17.3.1 Parallelverfahren
+  - 17.3.2 Pipelineumsetzer
+  - 17.3.3 Wägeverfahren
+  - 17.3.4 Zählverfahren
+    - 17.3.4.1 Modifiziertes Wägeverfahren
+    - 17.3.4.2 Dual-Slope-Verfahren
+  - 17.3.5 Überabtastung
+  - 17.3.6 Delta-Sigma-Verfahren
+  - 17.3.7 Genauigkeit von AD-Umsetzern
+    - 17.3.7.1 Statische Fehler
+    - 17.3.7.2 Dynamische Fehler
+    - 17.3.7.3 Vergleich der Verfahren
+- 17.4 Abtast-Halte-Glieder
+  - 17.4.1 Grundlagen
+  - 17.4.2 Transmission-Gate als Schalter
+  - 17.4.3 Dioden-Brücke als Schalter
+### 18. Messschaltungen
+
+- 18.1 Spannungsmessung
+  - 18.1.1 Impedanzwandler
+    - 18.1.1.1 Vergrößerung der Spannungsaussteuerbarkeit
+  - 18.1.2 Messung von Potentialdifferenzen
+    - 18.1.2.1 Subtrahierer mit beschalteten Operationsverstärkern
+    - 18.1.2.2 Subtrahierer für hohe Spannungen
+    - 18.1.2.3 Subtrahierer mit gegengekoppelten Differenzverstärkern
+    - 18.1.2.4 Subtrahierer in SC-Technik
+  - 18.1.3 Trennverstärker (Isolation Amplifier)
+- 18.2 Strommessung
+  - 18.2.1 Strommessung mit Shunts
+  - 18.2.2 Potentialfreies Amperemeter mit niedrigem Spannungsabfall
+  - 18.2.3 Strommessung auf hohem Potential
+  - 18.2.4 Strommessung über das Magnetfeld
+- 18.3 Messgleichrichter (AC/DC-Converter)
+  - 18.3.1 Messung des Betragsmittelwertes
+    - 18.3.1.1 Vollweggleichrichter mit Signalausgang
+    - 18.3.1.2 Gleichrichtung durch Umschalten des Vorzeichens
+    - 18.3.1.3 Breitband-Vollweggleichrichter
+  - 18.3.2 Messung des Effektivwertes
+    - 18.3.2.1 Echte Effektivwertmessung (True RMS)
+    - 18.3.2.2 Leistungsmesser
+  - 18.3.3 Messung des Scheitelwertes
+    - 18.3.3.1 Momentane Scheitelwertmessung
+  - 18.3.4 Synchrongleichrichter
+### 19. Sensorik
+
+- 19.1 Temperaturmessung
+  - 19.1.1 Kaltleiter auf Silizium-Basis, PTC-Sensoren
+  - 19.1.2 Metalle als Kaltleiter, PTC-Sensoren
+  - 19.1.3 Heißleiter, NTC-Sensoren
+  - 19.1.4 Transistor als Temperatursensor
+  - 19.1.5 Das Thermoelement
+- 19.2 Druckmessung
+  - 19.2.1 Aufbau von Drucksensoren
+  - 19.2.2 Betrieb temperaturkompensierter Drucksensoren
+  - 19.2.3 Temperaturkompensation von Drucksensoren
+- 19.3 Feuchtemessung
+  - 19.3.1 Feuchtesensoren
+  - 19.3.2 Betriebsschaltungen für kapazitive Feuchtesensoren
+- 19.4 Drehwinkelkodierer
+- 19.5 Übertragung von Sensorsignalen
+  - 19.5.1 Galvanisch gekoppelte Signalübertragung
+  - 19.5.2 Galvanisch getrennte Signalübertragung
+- 19.6 Kalibrierung von Sensorsignalen
+  - 19.6.1 Kalibrierung des Analogsignals
+  - 19.6.2 Computer-gestützte Kalibrierung
+### 20. Optoelektronische Bauelemente
+
+- 20.1 Fotometrische Grundbegriffe
+- 20.2 Leuchtdioden
+- 20.3 Fotodiode
+  - 20.3.1 Fotozellen als Empfänger
+  - 20.3.2 Fotozellen zur Energiegewinnung
+- 20.4 Fototransistor
+- 20.5 Optokoppler
+- 20.6 Optische Anzeige
+  - 20.6.1 Flüssigkristallanzeigen
+  - 20.6.2 Binär-Anzeige
+  - 20.6.3 Analog-Anzeige
+  - 20.6.4 Numerische Anzeige
+  - 20.6.5 Multiplex Anzeige
+  - 20.6.6 Alpha-Numerische Anzeige
+    - 20.6.6.1 16-Segment-Anzeigen
+    - 20.6.6.2 35-Punktmatrix-Anzeigen
+
+## Teil III. Schaltungen der Nachrichtentechnik
+
+### 21. Grundlagen
+
+- 21.1 Nachrichtentechnische Systeme
+- 21.2 Übertragungskanäle
+  - 21.2.1 Leitung
+    - 21.2.1.1 Feldwellenwiderstand und Ausbreitungsgeschwin- digkeit
+    - 21.2.1.2 Leitungswellenwiderstand
+    - 21.2.1.3 Leitungsgleichung
+    - 21.2.1.4 Dämpfung
+    - 21.2.1.5 Kenngrößen einer Leitung
+    - 21.2.1.6 Vierpoldarstellung einer Leitung
+    - 21.2.1.7 Leitung mit Abschluss
+    - 21.2.1.8 Streifenleitung
+  - 21.2.2 Drahtlose Verbindung
+    - 21.2.2.1 Antennen
+    - 21.2.2.2 Leistungsübertragung über eine drahtlose Verbindung
+    - 21.2.2.3 Frequenzbereiche
+  - 21.2.3 Faseroptische Verbindung
+    - 21.2.3.1 Lichtwellenleiter
+    - 21.2.3.2 Wellenlängenbereiche
+  - 21.2.4 Vergleich der Übertragungskanäle
+- 21.3 Reflexionsfaktor und S-Parameter
+  - 21.3.1 Wellengrößen
+    - 21.3.1.1 Darstellung mit Hilfe von Spannung und Strom
+  - 21.3.2 Reflexionsfaktor
+    - 21.3.2.1 Reflexionsfaktor-Ebene (*r*-Ebene)
+    - 21.3.2.2 Einfluss einer Leitung auf den Reflexionsfaktor
+    - 21.3.2.3 Stehwellenverhältnis
+  - 21.3.3 Wellenquelle
+    - 21.3.3.1 Unabhängige Welle einer Wellenquelle
+    - 21.3.3.2 Verfügbare Leistung
+  - 21.3.4 S-Parameter
+    - 21.3.4.1 S-Matrix
+    - 21.3.4.2 Messung der S-Parameter
+    - 21.3.4.3 Zusammenhang mit den Y-Parametern
+    - 21.3.4.4 S-Parameter eines Transistors
+    - 21.3.4.5 Ortskurven
+- 21.4 Modulationsverfahren
+  - 21.4.1 Amplitudenmodulation
+    - 21.4.1.1 Darstellung im Zeitbereich
+    - 21.4.1.2 Darstellung im Frequenzbereich
+    - 21.4.1.3 Modulation
+    - 21.4.1.4 Demodulation
+  - 21.4.2 Frequenzmodulation
+    - 21.4.2.1 Darstellung im Zeitbereich
+    - 21.4.2.2 Darstellung im Frequenzbereich
+    - 21.4.2.3 Modulation
+    - 21.4.2.4 Demodulation
+  - 21.4.3 Digitale Modulationsverfahren
+    - 21.4.3.1 Einfache Tastverfahren
+    - 21.4.3.2 I/Q-Darstellung digitaler Modulationsverfahren
+    - 21.4.3.3 Impulsformung
+    - 21.4.3.4 Ein einfacher QPSK-Modulator
+- 21.5 Mehrfachnutzung und Gruppierung von Kanälen
+  - 21.5.1 Multiplex-Verfahren
+    - 21.5.1.1 Frequenzmultiplex
+    - 21.5.1.2 Zeitmultiplex
+    - 21.5.1.3 Codemultiplex
+  - 21.5.2 Duplex-Verfahren
+    - 21.5.2.1 Frequenzduplex
+    - 21.5.2.2 Zeitduplex
+### 22. Sender und Empfänger
+
+- 22.1 Sender
+  - 22.1.1 Sender mit analoger Modulation
+    - 22.1.1.1 Sender mit direkter Modulation
+    - 22.1.1.2 Sender mit einer Zwischenfrequenz
+    - 22.1.1.3 Sender mit zwei Zwischenfrequenzen
+    - 22.1.1.4 Sender mit variabler Sendefrequenz
+  - 22.1.2 Sender mit digitaler Modulation
+  - 22.1.3 Erzeugung der Lokaloszillatorfrequenzen
+- 22.2 Empfänger
+  - 22.2.1 Geradeausempfänger
+  - 22.2.2 Überlagerungsempfänger
+    - 22.2.2.1 HF-Filter
+    - 22.2.2.2 Vorverstärker
+    - 22.2.2.3 Vorselektion
+    - 22.2.2.4 ZF-Filter
+    - 22.2.2.5 Überlagerungsempfänger mit zwei Zwischenfrequenzen
+    - 22.2.2.6 Erzeugung der Lokaloszillatorfrequenzen
+  - 22.2.3 Verstärkungsregelung
+    - 22.2.3.1 Regelverhalten
+    - 22.2.3.2 Regelbarer Verstärker (VGA)
+    - 22.2.3.3 Anordnung der Verstärkungsregelung im Empfänger
+    - 22.2.3.4 Pegeldetektion
+    - 22.2.3.5 Digitale Verstärkungsregelung
+  - 22.2.4 Dynamikbereich eines Empfängers
+    - 22.2.4.1 Rauschzahl des Empfängers
+    - 22.2.4.2 Minimaler Empfangspegel
+    - 22.2.4.3 Maximaler Empfangspegel
+    - 22.2.4.4 Dynamikbereich
+  - 22.2.5 Empfänger für digitale Modulationsverfahren
+    - 22.2.5.1 Empfänger mit digitalen Kanalfiltern
+    - 22.2.5.2 Empfänger mit ZF-Abtastung und digitalen Kanalfiltern
+    - 22.2.5.3 Vergleich der Empfänger für digitale Modulationsverfahren
+    - 22.2.5.4 Direktumsetzender Empfänger
+### 23. Passive Komponenten
+
+- 23.1 Hochfrequenz-Ersatzschaltbilder
+  - 23.1.1 Widerstand
+  - 23.1.2 Spule
+  - 23.1.3 Kondensator
+- 23.2 Filter
+  - 23.2.1 LC-Filter
+    - 23.2.1.1 Zweikreisiges Bandfilter
+    - 23.2.1.2 Filter mit Leitungen
+  - 23.2.2 Dielektrische Filter
+  - 23.2.3 SAW-Filter
+- 23.3 Schaltungen zur Impedanztransformation
+  - 23.3.1 Anpassung
+    - 23.3.1.1 Anpassnetzwerke mit zwei Elementen
+    - 23.3.1.2 Collins-Filter
+    - 23.3.1.3 Anpassung mit Streifenleitungen
+  - 23.3.2 Ankopplung
+    - 23.3.2.1 Ankopplung mit kapazitivem Spannungsteiler
+    - 23.3.2.2 Ankopplung mit induktivem Spannungsteiler
+    - 23.3.2.3 Ankopplung mit festgekoppeltem induktivem Spannungsteiler
+- 23.4 Leistungsteiler und Hybride
+  - 23.4.1 Leistungsteiler
+    - 23.4.1.1 Verlustbehaftete Leistungsteiler mit Widerständen
+    - 23.4.1.2 Wilkinson-Teiler
+  - 23.4.2 Hybride
+    - 23.4.2.1 S-Parameter eines Hybrids
+    - 23.4.2.2 Hybride mit Spulen und Kondensatoren
+    - 23.4.2.3 Hybride mit Leitungen
+### 24. Hochfrequenz-Verstärker
+
+- 24.1 Integrierte Hochfrequenz-Verstärker
+  - 24.1.1 Anpassung
+    - 24.1.1.1 Eingangsseitige Anpassung
+    - 24.1.1.2 Ausgangsseitige Anpassung
+  - 24.1.2 Rauschzahl
+  - 24.1.3 Entwurf rauscharmer integrierter HF-Verstärker (LNA)
+    - 24.1.3.1 Ohmsche Gegenkopplung bei niedrigen Frequenzen .
+    - 24.1.3.2 Gegenkopplung bei hohen Frequenzen
+- 24.2 HF-Verstärker mit Einzeltransistoren
+  - 24.2.1 Verallgemeinerter Einzeltransistor
+  - 24.2.2 Arbeitspunkteinstellung
+    - 24.2.2.1 Gleichstromgegenkopplung
+    - 24.2.2.2 Gleichspannungsgegenkopplung
+    - 24.2.2.3 Arbeitspunktregelung
+  - 24.2.3 Anpassung einstufiger Verstärker
+    - 24.2.3.1 Bedingungen für die Anpassung
+    - 24.2.3.2 Reflexionsfaktoren des Transistors
+    - 24.2.3.3 Berechnung der Anpassung
+    - 24.2.3.4 Stabilität bei der Betriebsfrequenz
+    - 24.2.3.5 Berechnung der Anpassnetzwerke
+    - 24.2.3.6 Stabilität im ganzen Frequenzbereich
+    - 24.2.3.7 Leistungsverstärkung
+  - 24.2.4 Anpassung mehrstufiger Verstärker
+    - 24.2.4.1 Anpassung mit Serien-Induktivität
+  - 24.2.5 Neutralisation
+    - 24.2.5.1 Schaltungen zur Neutralisation
+    - 24.2.5.2 Leistungsverstärkung bei Neutralisation
+  - 24.2.6 Besondere Schaltungen zur Verbesserung der Anpassung
+    - 24.2.6.1 Anpassung mit Zirkulatoren
+    - 24.2.6.2 Anpassung mit Hybriden
+  - 24.2.7 Rauschen
+    - 24.2.7.1 Rauschparameter und Rauschzahl
+    - 24.2.7.2 Entwurf eines rauscharmen Verstärkers
+- 24.3 Breitband-Verstärker
+  - 24.3.1 Prinzip eines Breitband-Verstärkers
+  - 24.3.2 Ausführung eines Breitband-Verstärkers
+- 24.4 Kenngrößen von Hochfrequenz-Verstärkern
+  - 24.4.1 Leistungsverstärkung
+    - 24.4.1.1 Klemmenleistungsgewinn
+    - 24.4.1.2 Einfügungsgewinn
+    - 24.4.1.3 Übertragungsgewinn
+    - 24.4.1.4 Verfügbarer Leistungsgewinn
+    - 24.4.1.5 Vergleich der Gewinn-Definitionen
+    - 24.4.1.6 Gewinn bei beidseitiger Anpassung
+    - 24.4.1.7 Maximaler Leistungsgewinn bei Transistoren
+  - 24.4.2 Nichtlineare Kenngrößen
+    - 24.4.2.1 Betriebsbedingungen
+    - 24.4.2.2 Kennlinien eines Hochfrequenz-Verstärkers
+    - 24.4.2.3 Kleinsignalverstärkung
+    - 24.4.2.4 Kompressionspunkt
+    - 24.4.2.5 Intermodulation
+### 25. Mischer
+
+- 25.1 Funktionsprinzip eines idealen Mischers
+  - 25.1.1 Aufwärtsmischer
+  - 25.1.2 Abwärtsmischer
+  - 25.1.3 Mischer mit Spiegelfrequenz-Unterdrückung
+- 25.2 Funktionsprinzipen bei praktischen Mischern
+  - 25.2.1 Additive Mischung
+    - 25.2.1.1 Gleichungsmäßige Beschreibung
+    - 25.2.1.2 Nichtlinearität
+    - 25.2.1.3 Praktische Ausführung
+    - 25.2.1.4 Einsatz additiver Mischer
+  - 25.2.2 Multiplikative Mischung
+    - 25.2.2.1 Gleichungsmäßige Beschreibung
+    - 25.2.2.2 Schaltverhalten der Schalter
+    - 25.2.2.3 Nichtlinearität
+    - 25.2.2.4 Praktische Ausführung
+- 25.3 Mischer mit Dioden
+  - 25.3.1 Eintaktmischer
+    - 25.3.1.1 LO-Kreis
+    - 25.3.1.2 Kleinsignalersatzschaltbild
+    - 25.3.1.3 Kleinsignalverhalten
+    - 25.3.1.4 Mischverstärkung
+    - 25.3.1.5 Mischgewinn
+    - 25.3.1.6 Vergleich mit idealem Schalter
+    - 25.3.1.7 Nachteile des Eintaktmischers
+  - 25.3.2 Gegentaktmischer
+    - 25.3.2.1 LO-Kreis
+    - 25.3.2.2 Kleinsignalersatzschaltbild und Kleinsignalverhalten
+    - 25.3.2.3 Vor- und Nachteile des Gegentaktmischers
+  - 25.3.3 Ringmischer
+    - 25.3.3.1 LO-Kreis
+    - 25.3.3.2 Kleinsignalersatzschaltbild und Kleinsignalverhalten
+  - 25.3.4 Breitbandiger Betrieb
+    - 25.3.4.1 Kleinsignalverhalten
+    - 25.3.4.2 Anpassung
+    - 25.3.4.3 Mischgewinn
+    - 25.3.4.4 Allgemeiner Fall
+    - 25.3.4.5 Vergleich von Schmalband- und Breitbandbetrieb
+  - 25.3.5 Kenngrößen
+  - 25.3.6 Rauschen
+    - 25.3.6.1 Verfahren zur Berechnung der Rauschzahl
+    - 25.3.6.2 Näherungen für Schmalband- und Breitbandbetrieb
+  - 25.3.7 Praktische Diodenmischer
+- 25.4 Passive Mischer mit Feldeffekttransistoren
+  - 25.4.1 Eintaktmischer
+    - 25.4.1.1 LO-Kreis
+    - 25.4.1.2 Kleinsignalersatzschaltbild und Kleinsignalverhalten
+    - 25.4.1.3 Nachteile des Eintaktmischers
+  - 25.4.2 Gegentaktmischer
+  - 25.4.3 Ringmischer
+  - 25.4.4 Integrierte Fet-Mischer
+  - 25.4.5 Eigenschaften von passiven Fet-Mischern
+    - 25.4.5.1 Frequenzbereich
+    - 25.4.5.2 LO-Leistung
+    - 25.4.5.3 Nichtlinearität
+    - 25.4.5.4 Rauschen
+- 25.5 Aktive Mischer mit Transistoren
+  - 25.5.1 Gegentaktmischer
+    - 25.5.1.1 Berechnung des Übertragungsverhaltens
+    - 25.5.1.2 Rechteckförmige LO-Spannung
+    - 25.5.1.3 Sinusförmige LO-Spannung
+    - 25.5.1.4 Kleinsignalverhalten
+    - 25.5.1.5 Mischverstärkung
+    - 25.5.1.6 Bandbreite
+    - 25.5.1.7 Anpassung
+    - 25.5.1.8 Mischgewinn
+    - 25.5.1.9 Praktische Ausführung
+    - 25.5.1.10 Gegentaktmischer mit Übertragern
+    - 25.5.1.11 Nachteil des Gegentaktmischers mit Transistoren
+  - 25.5.2 Doppel-Gegentaktmischer (Gilbert-Mischer)
+    - 25.5.2.1 Berechnung des Übertragungsverhaltens
+    - 25.5.2.2 Kleinsignalverhalten
+    - 25.5.2.3 Mischverstärkung
+    - 25.5.2.4 Bandbreite
+    - 25.5.2.5 Doppel-Gegentaktmischer in integrierten Schaltungen
+    - 25.5.2.6 Anpassung
+    - 25.5.2.7 Mischgewinn
+    - 25.5.2.8 I/Q-Mischer mit Doppel-Gegentaktmischern
+  - 25.5.3 Kenngrößen
+  - 25.5.4 Rauschen
+- 25.6 Vergleich aktiver und passiver Mischer
+  - 25.6.1 Rauschzahl, Intercept-Punkt und Dynamikbereich
+  - 25.6.2 Bandbreite
+  - 25.6.3 LO-Leistung
+- 25.7 Mischer mit Spiegelfrequenz-Unterdrückung
+  - 25.7.1 Phasenschieber
+    - 25.7.1.1 RC-Phasenschieber
+    - 25.7.1.2 RC-Polyphasen-Filter
+    - 25.7.1.3 Hybride als Phasenschieber
+  - 25.7.2 Spiegelfrequenz-Unterdrückung
+### 26. Oszillatoren
+
+- 26.1 LC-Oszillatoren
+  - 26.1.1 LC-Resonanzkreise
+  - 26.1.2 Verstärker mit selektiver Mitkopplung
+    - 26.1.2.1 Mitkopplung mit Parallelschwingkreis
+    - 26.1.2.2 Mitkopplung mit Serienschwingkreis
+    - 26.1.2.3 Vergleich der Schaltungen
+  - 26.1.3 Schleifenverstärkung
+    - 26.1.3.1 Berechnung bei Verstärkern ohne Rückwirkung
+    - 26.1.3.2 Berechnung bei Verstärkern mit Rückwirkung
+    - 26.1.3.3 Güte der Schleifenverstärkung
+    - 26.1.3.4 Übertragungsfunktion und Zeitsignale
+    - 26.1.3.5 Schleifenverstärkung bei Übersteuerung
+    - 26.1.3.6 Negative Widerstände
+  - 26.1.4 LC-Oszillatoren mit zweistufigen Verstärkern
+    - 26.1.4.1 Zweistufiger LC-Oszillator mit Parallelschwingkreis
+    - 26.1.4.2 Zweistufiger Oszillator mit Serienschwingkreis
+    - 26.1.4.3 Zusammenfassung der wichtigen Punkte
+  - 26.1.5 LC-Oszillatoren mit einstufigen Verstärkern
+    - 26.1.5.1 Colpitts-Oszillator in Basisschaltung
+    - 26.1.5.2 Colpitts-Oszillator in Kollektorschaltung
+    - 26.1.5.3 Colpitts-Oszillator in Emitterschaltung
+    - 26.1.5.4 Colpitts-Oszillator mit CMOS-Inverter
+    - 26.1.5.5 Colpitts-Oszillator mit Differenzverstärker
+    - 26.1.5.6 Eigenschaften integrierter und diskreter Colpitts-Oszillatoren
+    - 26.1.5.7 Hartley-Oszillatoren
+    - 26.1.5.8 Gegentaktoszillatoren
+    - 26.1.5.9 Weitere Oszillatoren
+- 26.2 Oszillatoren mit Leitungen
+  - 26.2.1 Leitungsresonatoren
+    - 26.2.1.1 Ersatzschaltbild
+    - 26.2.1.2 Betriebsbedingungen
+    - 26.2.1.3 Berechnung der Elemente
+    - 26.2.1.4 Praktische Leitungsresonatoren
+    - 26.2.1.5 Leitungsparameter
+  - 26.2.2 Schaltungen
+    - 26.2.2.1 Oszillatoren mit Leitungsresonatoren
+    - 26.2.2.2 Oszillatoren mit dielektrischen Resonatoren
+- 26.3 Quarz-Oszillatoren
+  - 26.3.1 Quarz-Resonatoren
+    - 26.3.1.1 Ersatzschaltbild
+    - 26.3.1.2 Impedanz und Resonanzfrequenzen
+    - 26.3.1.3 Frequenzabgleich
+    - 26.3.1.4 Verlustleistung
+    - 26.3.1.5 Temperaturverhalten
+  - 26.3.2 Schaltungen
+    - 26.3.2.1 Taktoszillatoren
+    - 26.3.2.2 Referenzoszillatoren
+  - 26.3.3 Alternative Resonatoren
+    - 26.3.3.1 Keramische Resonatoren
+    - 26.3.3.2 Oberflächenwellen-Resonatoren
+- 26.4 Frequenzabstimmung
+  - 26.4.1 Varaktoren
+    - 26.4.1.1 Bipolare Varaktoren
+    - 26.4.1.2 MOS-Varaktoren
+    - 26.4.1.3 Kleinsignalmodell
+  - 26.4.2 Abstimmung
+    - 26.4.2.1 Abstimmung eines Parallelschwingkreises
+    - 26.4.2.2 Kennlinie
+    - 26.4.2.3 Abstimmung eines Serienschwingkreises
+    - 26.4.2.4 Breitband-Abstimmung
+    - 26.4.2.5 Aussteuerung
+    - 26.4.2.6 Modulation
+- 26.5 Amplitudenregelung
+  - 26.5.1 Regelung und Begrenzung
+  - 26.5.2 Regelmechanismen
+    - 26.5.2.1 Regelung über den Ruhestrom
+    - 26.5.2.2 Regelung mit Stromteiler
+  - 26.5.3 Amplitudenmessung
+- 26.6 Phasenrauschen
+  - 26.6.1 Darstellung im Zeit- und im Frequenzbereich
+    - 26.6.1.1 Zeitbereich
+    - 26.6.1.2 Frequenzbereich
+  - 26.6.2 Entstehung
+    - 26.6.2.1 Linearer Anteil
+    - 26.6.2.2 Modulations- und Konversionsanteil
+  - 26.6.3 Frequenzteilung und Frequenzvervielfachung
+  - 26.6.4 Betrieb mit einer Phasenregelschleife
+  - 26.6.5 Vergleich verschiedener Oszillatoren
+### 27. Phasenregelschleife (PLL)
+
+- 27.1 Anwendungen
+  - 27.1.1 Frequenzsynthese (Synthesizer)
+  - 27.1.2 Träger-/Takt-Regeneration (Synchronizer)
+  - 27.1.3 Phasen-/Frequenz-Demodulation (Demodulator)
+- 27.2 Analoge PLL
+  - 27.2.1 Komponenten
+  - 27.2.2 Kennlinie des Mischers als Phasendetektor
+  - 27.2.3 Phasendetektor-Konstante des Mischers
+  - 27.2.4 Arbeitspunkt des Mischers
+  - 27.2.5 Kennlinie des VCOs
+  - 27.2.6 VCO-Konstante
+  - 27.2.7 Arbeitspunkt der PLL
+  - 27.2.8 Regelungstechnisches Kleinsignalersatzschaltbild
+  - 27.2.9 Übertragungsfunktionen
+  - 27.2.10 Schleifenbandbreite
+  - 27.2.11 Wahl der Schleifenbandbreite
+  - 27.2.12 Dimensionierung der Beispielschaltung
+  - 27.2.13 Verhalten der PLL
+  - 27.2.14 Phasenregelung
+  - 27.2.15 Übertragungsfunktionen mit PI-Regler
+  - 27.2.16 Dimensionierung mit PI-Regler
+  - 27.2.17 Verhalten der analogen PLL mit PI-Regler
+  - 27.2.18 Zusammenfassung
+- 27.3 Digitale PLL
+  - 27.3.1 Digitale PLL mit EXOR-Phasendetektor
+  - 27.3.2 EXOR-/EXNOR-Phasendetektor mit Stromausgang
+  - 27.3.3 EXOR-/EXNOR-Phasendetektor mit Spannungsausgang
+  - 27.3.4 Sequentielle Phasendetektoren
+    - 27.3.4.1 Flankengetriggerter Phasendetektor
+    - 27.3.4.2 Phasen-Frequenz-Detektor
+  - 27.3.5 Störtöne
+  - 27.3.6 Beispiel für eine digitale PLL mit Phasen-Frequenz-Detektor
+    - 27.3.6.1 Kennlinien und Konstanten
+    - 27.3.6.2 Dimensionierung des Schleifenfilters
+    - 27.3.6.3 Verhalten
+  - 27.3.7 Digitale PLL mit Frequenzteilern
+    - 27.3.7.1 Blockschaltbild und Kleinsignalersatzschaltbild
+    - 27.3.7.2 Kanalwahl und Teilerfaktorsteuerung
+    - 27.3.7.3 Momentanwerte und Mittelwerte
+  - 27.3.8 Integer-N-PLL
+  - 27.3.9 Fractional-N-PLL
+    - 27.3.9.1 Steuerbare Frequenzteiler
+    - 27.3.9.2 Teilerfaktorsteuerung
+- 27.4 Rauschen
+  - 27.4.1 Rauschsignale
+  - 27.4.2 Übertragungsfunktionen
+  - 27.4.3 Referenzoszillator und VCO
+  - 27.4.4 Frequenzteiler
+  - 27.4.5 Phasendetektor
+  - 27.4.6 Schleifenfilter
+  - 27.4.7 Minimierung des Phasenrauschens
+### 28. Anhang
+
+- 28.1 PSpice-Kurzanleitung
+  - 28.1.1 Grundsätzliches
+  - 28.1.2 Programme und Dateien
+    - 28.1.2.1 Spice
+    - 28.1.2.2 PSpice
+  - 28.1.3 Ein einfaches Beispiel
+    - 28.1.3.1 Eingabe des Schaltplans
+    - 28.1.3.2 Simulationsanweisungen eingeben
+    - 28.1.3.3 Simulation starten
+    - 28.1.3.4 Anzeigen der Ergebnisse
+    - 28.1.3.5 Arbeitspunkt anzeigen
+    - 28.1.3.6 Netzliste und Ausgabedatei
+  - 28.1.4 Weitere Simulationsbeispiele
+    - 28.1.4.1 Kennlinien eines Transistors
+    - 28.1.4.2 Verwendung von Parametern
+  - 28.1.5 Einbinden weiterer Bibliotheken
+  - 28.1.6 Einige typische Fehler
+- 28.2 Erklärung der verwendeten Größen
+- 28.3 Typen der 7400-Logik-Familien
+- 28.4 Normwert-Reihen
+- 28.5 Farbcode
+### Literaturverzeichnis
+
+### Sachverzeichnis
