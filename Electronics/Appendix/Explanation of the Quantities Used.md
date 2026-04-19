@@ -1,10 +1,3 @@
-# Explanation of the Quantities Used
-
-<!-- page-import:1767:start -->
-1730 28. Anhang
-
-## 28.2 Erklärung der verwendeten Größen
-
 Um Unklarheiten zu vermeiden, wollen wir die Bezeichnung der wichtigsten Größen kurz zusammenstellen.
 
 **Spannung**
@@ -46,10 +39,6 @@ Der Strom wird durch einen Strompfeil $I$ in der Leitung gekennzeichnet. Es ist 
 **Widerstand**
 
 Ist ein Widerstand spannungs- oder stromabhängig, kann man entweder den *statischen Widerstand* $R = U/I$ oder den *differentiellen Widerstand* $r = \partial U/\partial I \simeq \Delta U/\Delta I$ angeben. Dies gilt bei gleicher Richtung von Strom- und Spannungspfeil. Bei entgegengesetzter Richtung ist wie in Abb. 28.2.1 ein Minuszeichen einzusetzen.
-<!-- page-import:1767:end -->
-
-<!-- page-import:1768:start -->
-28.2 Erklärung der verwendeten Größen 1731
 
 $R=\dfrac{U}{I}$
 
@@ -91,10 +80,6 @@ Ersatzschaltbild für eine reale Spannungsquelle
 
 **Abb. 28.2.3.**  
 Ersatzschaltbild für eine reale Stromquelle
-<!-- page-import:1768:end -->
-
-<!-- page-import:1769:start -->
-1732 28. Anhang
 
 **Abb. 28.2.4.**  
 Beispiel für die Anwendung der Knotenregel
@@ -140,15 +125,7 @@ $$
 
 Wenn sich eine Schaltung durch eine Gleichspannungs-Übertragungsgleichung der Form $U_a=f(U_e)$ beschreiben lässt, gilt dieser Zusammenhang auch für beliebig zeitabhängige Spannungen, solange die Änderung der Eingangsspannung quasistationär, d.h. nicht zu schnell erfolgt. Zeitabhängige Größen bezeichnen wir mit Kleinbuchstaben und geben die Anhängigkeit von der Zeit $t$ explizit an. Im vorliegenden Fall schreiben wir demnach $u_a(t)=f[u_e(t)]$.
 
-Es gibt jedoch häufig Fälle, in denen eine Übertragungsgleichung nur für Wechselspannungen ohne Gleichspannungsanteil gültig ist. Aus diesem Grund ist es sinnvoll, solche
-<!-- page-import:1769:end -->
-
-<!-- page-import:1770:start -->
-## 28.2 Erklärung der verwendeten Größen
-
-1733
-
-Wechselspannungen besonders zu kennzeichnen. Wir verwenden für ihren Momentanwert den Kleinbuchstaben $u$.
+Es gibt jedoch häufig Fälle, in denen eine Übertragungsgleichung nur für Wechselspannungen ohne Gleichspannungsanteil gültig ist. Aus diesem Grund ist es sinnvoll, solche Wechselspannungen besonders zu kennzeichnen. Wir verwenden für ihren Momentanwert den Kleinbuchstaben $u$.
 
 Ein besonders wichtiger Spezialfall sind solche Wechselspannungen, die cosinusförmig von der Zeit abhängen:
 
@@ -207,10 +184,6 @@ $$
 Auch Wechselspannungen und Wechselströme werden durch Pfeile in den Schaltplänen gekennzeichnet. Die Pfeilrichtung sagt dann natürlich nichts mehr über die Polarität aus, sondern gibt lediglich an, mit welchem Vorzeichen man die Größen in die Rechnung einsetzen muss. Dabei gilt genau dieselbe Regel, wie sie in Abb. 28.2.2 für Gleichspannungen dargestellt ist.
 
 Entsprechend zum Gleichstromkreis definiert man einen komplexen Widerstand, den man als Impedanz $\underline Z$ bezeichnet:
-<!-- page-import:1770:end -->
-
-<!-- page-import:1771:start -->
-1734  28. Anhang
 
 $$
 \underline{Z} = \frac{\underline{U}}{\underline{I}} = \frac{\hat U\,e^{j\varphi_u}}{\hat I\,e^{j\varphi_i}} = \frac{\hat U}{\hat I}\,e^{j(\varphi_u-\varphi_i)} = |\underline{Z}|\,e^{j\varphi} = |\underline{Z}|\,(\cos\varphi + j\,\sin\varphi)
@@ -282,12 +255,6 @@ $$
 $$
 = \frac{1}{2}\,\hat U\,\hat I\,\sin(\varphi_u-\varphi_i) = U_{eff}\;I_{eff}\;\sin(\varphi_u-\varphi_i)
 $$
-<!-- page-import:1771:end -->
-
-<!-- page-import:1772:start -->
-## 28.2 Erklärung der verwendeten Größen
-
-1735
 
 | Größe | Allgemein | Sinus |
 |---|---|---|
@@ -341,10 +308,6 @@ $$
 in Übereinstimmung mit (28.9).
 
 Eine Übersicht der verschiedenen Leistungsgrößen ist in Abb. 28.2.6 gegeben. Dort sind zusätzlich auch die Zusammenhänge für beliebige Zeitsignale aufgenommen. Wenn man in diese allgemeinen Beziehungen cosinusförmige Signale einsetzt, ergeben sich die bekannten Beziehungen.
-<!-- page-import:1772:end -->
-
-<!-- page-import:1773:start -->
-1736  28. Anhang
 
 | Spannungsverhältnis |  |
 |---|---|
@@ -421,12 +384,6 @@ $$
 $$
 
 (28.14)
-<!-- page-import:1773:end -->
-
-<!-- page-import:1774:start -->
-## 28.2 Erklärung der verwendeten Größen
-
-1737
 
 Die Kreisfrequenz $\omega = 2 \pi f$ besitzt die Einheit:
 
@@ -447,4 +404,3 @@ $$
 $$
 
 Das Rechenzeichen $\sim$ bedeutet proportional, das Rechenzeichen $\approx$ bedeutet ungefähr gleich. Das Zeichen $\parallel$ bedeutet parallel. Wir verwenden es, um eine Parallelschaltung von Widerständen abgekürzt darzustellen: $R_1 \parallel R_2 = R_1 \cdot R_2/(R_1 + R_2)$
-<!-- page-import:1774:end -->

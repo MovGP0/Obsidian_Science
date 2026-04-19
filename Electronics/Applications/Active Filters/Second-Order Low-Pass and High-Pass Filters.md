@@ -59,6 +59,41 @@ A(s_n) = \frac{1}{1 + (L/R)\omega_g s_n + LC\,\omega_g^2 s_n^2}
 $$
 <!-- page-import:0854:end -->
 
+<!-- page-import:0855:start -->
+818  12. Aktive Filter
+
+$$
+A(s_n) = -\frac{R_2/R_1}{1 + \omega_g C_1 \left(R_2 + R_3 + \frac{R_2R_3}{R_1}\right)s_n + \omega_g^2 C_1 C_2 R_2 R_3 s_n^2}
+$$
+
+**Abb. 12.38.** Aktives Tiefpassfilter 2. Ordnung mit Mehrfachgegenkopplung.  
+Beispiel für ein Besselfilter mit einer Grenzfrequenz von 1 kHz
+
+Zur Dimensionierung kann man z.B. die Widerstände $R_1$ und $R_3$ vorgeben und aus den Dimensionierungsgleichungen $R_2$, $C_1$ und $C_2$ berechnen. Wie man sieht, ist eine Dimensionierung für alle positiven Werte von $a_1$ und $b_1$ möglich. Man kann also jeden gewünschten Filtertyp realisieren. Die Gleichspannungsverstärkung $A_0$ ist negativ. Das Filter bewirkt bei tiefen Frequenzen demnach eine Signalinvertierung.
+
+Um wirklich die gewünschten Frequenzgänge zu erhalten, müssen die Bauelemente enge Toleranzen besitzen. Diese Forderung ist für Widerstände leicht zu erfüllen, da sie in der Normreihe E96 mit Toleranz von 1% lagermäßig geführt werden. Aber auch die Kondensatoren sollten einprozentige Toleranz besitzen; sie sind jedoch meist nur in der Normreihe E6 (Abb. 28.4.1 auf Seite 1745) erhältlich. Daher ist es vorteilhaft, bei der Dimensionierung von Filtern die Kondensatoren vorzugeben und die Widerstandswerte zu berechnen. Dazu lösen wir die Dimensionierungsgleichungen nach den Widerständen auf und erhalten:
+
+$$
+R_2 = \frac{a_1 C_2 - \sqrt{a_1^2 C_2^2 - 4C_1C_2b_1(1 - A_0)}}{4\pi f_g C_1 C_2}
+$$
+
+$$
+R_1 = \frac{R_2}{-A_0}
+$$
+
+$$
+R_3 = \frac{b_1}{4\pi^2 f_g^2 C_1 C_2 R_2}
+$$
+
+Damit sich für $R_2$ ein reeller Wert ergibt, muss die Bedingung
+
+$$
+\frac{C_2}{C_1} \ge \frac{4b_1(1 - A_0)}{a_1^2}
+$$
+
+erfüllt sein. Die günstigste Dimensionierung ergibt sich, wenn man $C_1$ vorgibt und für $C_2$ den nächst größeren Normwert wählt. Zur Erläuterung der Dimensionierung soll hier wieder das vorhergehende Beispiel, also ein Bessel-Tiefpass mit einer Grenzfrequenz von 1 kHz dienen, hier mit einer Verstärkung von $A_0 = -1$. Wir wählen $C_1 = 1\,\mathrm{nF}$ und erhalten mit der Bedingung $C_2 > 4\,\mathrm{nF}$ den Wert $C_2 = 4{,}7\,\mathrm{nF}$. Damit ergeben sich die Widerstände $R_1 = R_2 = 77{,}3\,\mathrm{k}\Omega$ und $R_3 = 43{,}0\,\mathrm{k}\Omega$. Im Vergleich zu dem LRC-Filter in Abb. 12.37 werden die Vorteile des aktiven Filters besonders deutlich.
+<!-- page-import:0855:end -->
+
 <!-- page-import:0856:start -->
 12.5 Realisierung von Tief- und Hochpassfiltern 2. Ordnung 819
 
