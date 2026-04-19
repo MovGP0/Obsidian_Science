@@ -1,0 +1,5 @@
+﻿---
+title: Fundamentals
+aliases:
+  - Grundlagen
+---

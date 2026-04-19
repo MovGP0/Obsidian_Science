@@ -1,0 +1,5 @@
+﻿---
+title: Sensors
+aliases:
+  - Sensorik
+---
