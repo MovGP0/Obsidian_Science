@@ -47,10 +47,10 @@
       ]
     },
     "continuation": {
-      "begin": "^(\\s*)(\\+)",
+      "begin": "^(\\s*)(\\+)(?=\\s|$)",
       "beginCaptures": {
         "2": {
-          "name": "punctuation.separator.continuation.spice"
+          "name": "keyword.operator.continuation.spice"
         }
       },
       "end": "$",
