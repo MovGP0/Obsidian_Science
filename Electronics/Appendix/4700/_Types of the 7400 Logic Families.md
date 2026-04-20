@@ -80,27 +80,27 @@ The tables below group common 74xx functions by what the IC does. The function n
 
 | Type | NAND Gate                          | Output | Pins |
 | ---- | ---------------------------------- | ------ | ---- |
-| [00](7400.md)     | Quad 2-input NAND                  | TP | 14 |
-| [01](7401.md)     | Quad 2-input NAND                  | OC | 14 |
-| [03](7403.md)     | Quad 2-input NAND                  | OC | 14 |
-| [10](7410.md)     | Triple 3-input NAND                | TP | 14 |
-| [12](7412.md)     | Triple 3-input NAND                | OC | 14 |
-| [13](7413.md)     | Dual 4-input NAND, Schmitt trigger | TP | 14 |
-| [18](7418.md)     | Dual 4-input NAND, Schmitt trigger | TP | 14 |
-| [20](7420.md)     | Dual 4-input NAND                  | TP | 14 |
-| [22](7422.md)     | Dual 4-input NAND                  | OC | 14 |
-| [24](7424.md)     | Quad 2-input NAND, Schmitt trigger | TP | 14 |
-| [26](7426.md)     | Quad 2-input NAND gate, 15 V output | OC | 14 |
-| [30](7430.md)     | 8-input NAND                       | TP | 14 |
-| [37](7437.md)     | Quad 2-input NAND buffer           | TP | 14 |
-| [38](7438.md)     | Quad 2-input NAND buffer           | OC | 14 |
-| [40](7440.md)     | Dual 4-input NAND buffer           | TP | 14 |
-| [132](74132.md)   | Quad 2-input NAND, Schmitt trigger | TP | 14 |
-| [133](74133.md)   | 13-input NAND                      | TP | 16 |
-| [1000](741000.md) | Buffer for '00' gate               | TP | 14 |
-| [1003](741003.md) | Buffer for '03' gate               | OC | 14 |
-| [1010](741010.md) | Buffer for '10' gate               | TP | 14 |
-| [1020](741020.md) | Buffer for '20' gate               | TP | 14 |
+| [[7400\|00]]     | Quad 2-input NAND                  | TP | 14 |
+| [[7401\|01]]     | Quad 2-input NAND                  | OC | 14 |
+| [[7403\|03]]     | Quad 2-input NAND                  | OC | 14 |
+| [[7410\|10]]     | Triple 3-input NAND                | TP | 14 |
+| [[7412\|12]]     | Triple 3-input NAND                | OC | 14 |
+| [[7413\|13]]     | Dual 4-input NAND, Schmitt trigger | TP | 14 |
+| [[7418\|18]]     | Dual 4-input NAND, Schmitt trigger | TP | 14 |
+| [[7420\|20]]     | Dual 4-input NAND                  | TP | 14 |
+| [[7422\|22]]     | Dual 4-input NAND                  | OC | 14 |
+| [[7424\|24]]     | Quad 2-input NAND, Schmitt trigger | TP | 14 |
+| [[7426\|26]]     | Quad 2-input NAND gate, 15 V output | OC | 14 |
+| [[7430\|30]]     | 8-input NAND                       | TP | 14 |
+| [[7437\|37]]     | Quad 2-input NAND buffer           | TP | 14 |
+| [[7438\|38]]     | Quad 2-input NAND buffer           | OC | 14 |
+| [[7440\|40]]     | Dual 4-input NAND buffer           | TP | 14 |
+| [[74132\|132]]   | Quad 2-input NAND, Schmitt trigger | TP | 14 |
+| [[74133\|133]]   | 13-input NAND                      | TP | 16 |
+| [[741000\|1000]] | Buffer for '00' gate               | TP | 14 |
+| [[741003\|1003]] | Buffer for '03' gate               | OC | 14 |
+| [[741010\|1010]] | Buffer for '10' gate               | TP | 14 |
+| [[741020\|1020]] | Buffer for '20' gate               | TP | 14 |
 
 ### NOR Gates
 
@@ -109,14 +109,14 @@ The tables below group common 74xx functions by what the IC does. The function n
 
 | Type | NOR Gate                                  | Output | Pins |
 | ---- | ----------------------------------------- | ------ | ---- |
-| 02   | Quad 2-input NOR                          | TP     | 14   |
-| 23   | Dual 4-input strobe-expandable input NOR  | TP     | 16   |
-| 25   | Dual 4-input strobe NOR                   | TP     | 14   |
-| 27   | Triple 3-input NOR                        | TP     | 14   |
-| 28   | Quad 2-input NOR buffer                   | TP     | 14   |
-| 33   | Quad 2-input NOR buffer                   | OC     | 14   |
-| 36   | Quad 2-input NOR                          | TP     | 14   |
-| 1002 | Buffer for '02' gate                      | TP     | 14   |
+| [[7402\|02]]      | Quad 2-input NOR                          | TP | 14 |
+| 23               | Dual 4-input strobe-expandable input NOR  | TP | 16 |
+| 25               | Dual 4-input strobe NOR                   | TP | 14 |
+| [[7427\|27]]      | Triple 3-input NOR                        | TP | 14 |
+| [[7428\|28]]      | Quad 2-input NOR buffer                   | TP | 14 |
+| [[7433\|33]]      | Quad 2-input NOR buffer                   | OC | 14 |
+| [[7436\|36]]      | Quad 2-input NOR                          | TP | 14 |
+| [[741002\|1002]]  | Buffer for '02' gate                      | TP | 14 |
 
 ### AND Gates
 
@@ -125,12 +125,12 @@ The tables below group common 74xx functions by what the IC does. The function n
 
 | Type | AND Gate            | Output | Pins |
 | ---- | ------------------- | ------ | ---- |
-| 08   | Quad 2-input AND    | TP     | 14   |
-| 09   | Quad 2-input AND    | OC     | 14   |
-| 11   | Triple 3-input AND  | TP     | 14   |
-| 15   | Triple 3-input AND  | OC     | 14   |
-| 21   | Dual 4-input AND    | TP     | 14   |
-| 1008 | Buffer for '08' gate | OC    | 14   |
+| [[7408\|08]]      | Quad 2-input AND     | TP | 14 |
+| [[7409\|09]]      | Quad 2-input AND     | OC | 14 |
+| [[7411\|11]]      | Triple 3-input AND   | TP | 14 |
+| [[7415\|15]]      | Triple 3-input AND   | OC | 14 |
+| [[7421\|21]]      | Dual 4-input AND     | TP | 14 |
+| [[741008\|1008]]  | Buffer for '08' gate | OC | 14 |
 
 ### OR Gates
 
@@ -139,10 +139,10 @@ The tables below group common 74xx functions by what the IC does. The function n
 
 | Type | OR Gate                     | Output | Pins |
 | ---- | --------------------------- | ------ | ---- |
-| 32   | Quad 2-input OR             | TP     | 14   |
-| 802  | Triple 4-input OR/NOR       | TP     |      |
-| 832  | Hex 2-input buffer          | TP     | 20   |
-| 1032 | Buffer for '32' gate        | TP     | 14   |
+| [[7432\|32]]      | Quad 2-input OR      | TP | 14 |
+| 802              | Triple 4-input OR/NOR | TP |    |
+| 832              | Hex 2-input buffer    | TP | 20 |
+| [[741032\|1032]]  | Buffer for '32' gate | TP | 14 |
 
 ### AND-OR Gates
 
@@ -162,11 +162,11 @@ The tables below group common 74xx functions by what the IC does. The function n
 
 | Type | XOR Gate                     | Output | Pins |
 | ---- | ---------------------------- | ------ | ---- |
-| 86   | Quad exclusive OR            | TP     | 14   |
-| 136  | Quad exclusive OR            | OC     | 14   |
-| 266  | Quad 2-input exclusive NOR   | OC     | 16   |
-| 386  | Quad exclusive OR            | TP     | 14   |
-| 7266 | '266' with totem-pole output | TP     | 16   |
+| [[7486\|86]]       | Quad exclusive OR            | TP | 14 |
+| [[74136\|136]]     | Quad exclusive OR            | OC | 14 |
+| [[74266\|266]]     | Quad 2-input exclusive NOR   | OC | 16 |
+| [[74386\|386]]     | Quad exclusive OR            | TP | 14 |
+| [[747266\|7266]]   | '266' with totem-pole output | TP | 16 |
 
 ### Inverters
 
@@ -175,12 +175,12 @@ The tables below group common 74xx functions by what the IC does. The function n
 
 | Type | Inverter                          | Output | Pins |
 | ---- | --------------------------------- | ------ | ---- |
-| 04   | Hex inverter                      | TP     | 14   |
-| 05   | Hex inverter                      | OC     | 14   |
-| 14   | Hex inverter, Schmitt trigger     | TP     | 14   |
-| 19   | Hex inverter, Schmitt trigger     | TP     | 14   |
-| 1004 | Buffer for '04' gate              | TP     | 14   |
-| 1005 | Buffer for '05' gate              | OC     | 14   |
+| [[7404\|04]]      | Hex inverter                  | TP | 14 |
+| [[7405\|05]]      | Hex inverter                  | OC | 14 |
+| [[7414\|14]]      | Hex inverter, Schmitt trigger | TP | 14 |
+| [[7419\|19]]      | Hex inverter, Schmitt trigger | TP | 14 |
+| [[741004\|1004]]  | Buffer for '04' gate          | TP | 14 |
+| [[741005\|1005]]  | Buffer for '05' gate          | OC | 14 |
 
 ### Drivers
 
@@ -529,16 +529,16 @@ The tables below group common 74xx functions by what the IC does. The function n
 > [!info]
 > **Adders and ALUs** perform arithmetic and logic operations such as addition, subtraction, masking, and comparison support.
 
-| Type      | Adder and Arithmetic Logic Unit (ALU)         | Output | Pins |
-| --------- | --------------------------------------------- | ------ | ---- |
-| 83        | 4-bit binary full adder                       | TP     | 16   |
-| [[74181]] | 4-bit arithmetic logic unit                   | TP     | 24   |
-| 182       | Carry look-ahead unit for 4 adders            | TP     | 16   |
-| 183       | Dual carry-save full adder                    | TP     | 14   |
-| 283       | 4-bit binary full adder                       | TP     | 16   |
-| 385       | Quad serial adder/subtractor                  | TP     | 20   |
-| 583       | 4-bit BCD adder                               | TP     | 16   |
-| 881       | 4-bit arithmetic logic unit with status check | TP     | 24   |
+| Type           | Adder and Arithmetic Logic Unit (ALU)         | Output | Pins |
+| -------------- | --------------------------------------------- | ------ | ---- |
+| 83             | 4-bit binary full adder                       | TP     | 16   |
+| [[74181\|181]] | 4-bit arithmetic logic unit                   | TP     | 24   |
+| 182            | Carry look-ahead unit for 4 adders            | TP     | 16   |
+| 183            | Dual carry-save full adder                    | TP     | 14   |
+| 283            | 4-bit binary full adder                       | TP     | 16   |
+| 385            | Quad serial adder/subtractor                  | TP     | 20   |
+| 583            | 4-bit BCD adder                               | TP     | 16   |
+| 881            | 4-bit arithmetic logic unit with status check | TP     | 24   |
 
 ### Parity Generators
 
