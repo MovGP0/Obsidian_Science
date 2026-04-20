@@ -159,7 +159,7 @@
       "begin": "^(\\s*)([A-Za-z][A-Za-z0-9_.$-]*)\\b",
       "beginCaptures": {
         "2": {
-          "name": "entity.name.instance.spice"
+          "name": "entity.name.function.spice"
         }
       },
       "end": "$",
