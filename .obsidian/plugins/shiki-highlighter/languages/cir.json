@@ -156,12 +156,9 @@
       ]
     },
     "component": {
-      "begin": "^(\\s*)([A-Za-z])([A-Za-z0-9_.$-]*)\\b",
+      "begin": "^(\\s*)([A-Za-z][A-Za-z0-9_.$-]*)\\b",
       "beginCaptures": {
         "2": {
-          "name": "entity.name.type.spice"
-        },
-        "3": {
           "name": "entity.name.instance.spice"
         }
       },
