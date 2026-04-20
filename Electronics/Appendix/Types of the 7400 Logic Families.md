@@ -1,6 +1,62 @@
-The importance of simple logic circuits has declined since digital circuits can be implemented with CPLDs and FPGAs. As a result, the number of manufacturers has also decreased.
+The 7400 series started as a family of TTL logic ICs from Texas Instruments and later expanded into many compatible subfamilies made in TTL, CMOS, and BiCMOS technologies. The appeal of the series is that the functional number usually stays the same across families, so a `7400`, `74LS00`, `74HC00`, and `74HCT00` all describe a quad 2-input NAND gate even though their electrical behavior differs.
 
-Texas Instruments was the first manufacturer of 7400-family circuits. They were first produced in TTL technology; later many types were also offered as CMOS circuits.
+This note covers both meanings commonly associated with the "7400 family":
+
+- the **logic family suffixes** such as `LS`, `HC`, or `AHCT`
+- the **functional device numbers** such as `00`, `138`, `161`, or `245`
+
+## How to Read a 74xx Part Number
+
+Most parts follow this pattern:
+
+`manufacturer prefix` + `temperature grade` + `family` + `function number` + `package suffix`
+
+Examples:
+
+- `SN7400`: commercial-temperature, original TTL, quad 2-input NAND
+- `SN54LS00`: military-temperature, low-power Schottky TTL, quad 2-input NAND
+- `74HCT245`: commercial-temperature, high-speed CMOS with TTL-compatible inputs, octal bus transceiver
+
+Common prefixes and grades:
+
+- `54`: military temperature range, typically `-55 C` to `+125 C`
+- `74`: commercial temperature range, historically `0 C` to `+70 C`
+- `64` and `84`: rarer TI industrial ranges used on some older parts
+
+## What the Family Letters Mean
+
+The family code matters more than the function number when choosing a replacement part, because it determines supply voltage, input thresholds, speed, noise margin, and power consumption. The exact limits vary by vendor and device, so the datasheet always wins.
+
+| Family | Technology | Typical Supply | Notes |
+| ------ | ---------- | -------------- | ----- |
+| `74xx` / `54xx` | Standard TTL | 5 V | Original bipolar TTL family. |
+| `74L` | Low-power TTL | 5 V | Lower power than standard TTL, but slower; now mostly historical. |
+| `74H` | High-speed TTL | 5 V | Faster than standard TTL, but higher power; now mostly historical. |
+| `74S` | Schottky TTL | 5 V | Higher speed bipolar TTL using Schottky clamps. |
+| `74LS` | Low-power Schottky TTL | 5 V | Classic general-purpose TTL family used in many older designs. |
+| `74ALS` | Advanced low-power Schottky TTL | 5 V | Better speed-power tradeoff than `74LS`. |
+| `74AS` | Advanced Schottky TTL | 5 V | Faster than `74LS` / `74ALS`, with higher power. |
+| `74F` | Fast TTL | 5 V | High-speed bipolar family, often used for performance-critical 5 V logic. |
+| `74C` | CMOS | Vendor-dependent | Early CMOS version of 74xx functions; not always a drop-in TTL replacement. |
+| `74HC` | High-speed CMOS | Usually 2 V to 6 V | CMOS thresholds, very low static power, often used in new 5 V or lower-voltage designs. |
+| `74HCT` | High-speed CMOS, TTL-compatible inputs | Usually 4.5 V to 5.5 V | Intended for easy interfacing with TTL output levels. |
+| `74AC` | Advanced CMOS | Usually 2 V to 6 V | Faster and stronger-drive CMOS than `74HC`. |
+| `74ACT` | Advanced CMOS, TTL-compatible inputs | Usually 4.5 V to 5.5 V | `74AC` performance with TTL-compatible inputs. |
+| `74AHC` | Advanced high-speed CMOS | Usually 2 V to 5.5 V | Faster than `74HC` without the large power penalty of fast bipolar families. |
+| `74AHCT` | Advanced high-speed CMOS, TTL-compatible inputs | Usually 4.5 V to 5.5 V | `74AHC` speed with TTL-compatible inputs. |
+| `74LVC` | Low-voltage CMOS | Usually 1.65 V to 3.6 V | Modern low-voltage family; many devices have 5 V-tolerant inputs. |
+| `74BCT` / `74ABT` / `74FCT` / `74LVT` | BiCMOS derivatives | Usually 3.3 V or 5 V | Later bus-oriented families for higher drive, lower voltage, or both. |
+
+## Practical Compatibility Notes
+
+- The same function number does **not** guarantee a safe drop-in replacement. Check supply voltage, thresholds, timing, output current, output type, and package pinout.
+- `HC`, `AHC`, and `AC` devices use CMOS input thresholds. A TTL output that only guarantees `2.4 V` for HIGH may not reliably drive them at `5 V`.
+- `HCT`, `AHCT`, and `ACT` devices were created specifically to accept TTL-compatible input thresholds while keeping CMOS-style low input current.
+- TTL families are fundamentally `5 V` logic. Modern CMOS families often work over wider supply ranges and usually consume far less static power.
+- Do not leave CMOS inputs floating. Older TTL inputs often float HIGH, but that is poor design practice and should not be relied on.
+- Open-collector (`OC`) parts need an external pull-up. Tri-state (`TS`) parts can disconnect their outputs and are intended for shared buses.
+
+## Output Abbreviations
 
 | Type | Description     |
 | ---- | --------------- |
@@ -9,6 +65,10 @@ Texas Instruments was the first manufacturer of 7400-family circuits. They were 
 | TS   | Tri-state       |
 | PI   | Parallel input  |
 | PO   | Parallel output |
+
+## Functional Device Catalog
+
+The tables below group common 74xx functions by what the IC does. The function number usually remains recognizable across multiple families, but not every function exists in every family.
 
 ### NAND Gates
 
@@ -486,3 +546,12 @@ Texas Instruments was the first manufacturer of 7400-family circuits. They were 
 | ---- | ----------------------------- | ------ | ---- |
 | 180  | 8-bit parity generator        | TP     | 14   |
 | 280  | 9-bit parity generator/checker | TP    | 14   |
+
+## References
+
+- [Texas Instruments Logic Guide](https://www.ti.com/lit/pdf/sdyu001)
+- [Texas Instruments Logic and Voltage Translation overview](https://www.ti.com/logic-voltage-translation/overview.html)
+- [Nexperia Logic Application Handbook](https://www.nexperia.com/dam/jcr%3A851f7c27-b0e9-4627-84b9-13b132388708/Nexperia_LOGIC_Handbook.pdf)
+- [onsemi / Fairchild AN-368: An Introduction to and Comparison of 74HCT TTL Compatible CMOS Logic](https://www.onsemi.com/pub/Collateral/AN-368.pdf)
+- [Wikipedia: 7400-series integrated circuits](https://en.wikipedia.org/wiki/7400-series_integrated_circuits)
+- [Wikipedia: List of 7400-series integrated circuits](https://en.wikipedia.org/wiki/List_of_7400-series_integrated_circuits)
