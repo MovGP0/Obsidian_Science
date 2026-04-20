@@ -78,59 +78,59 @@ The tables below group common 74xx functions by what the IC does. The function n
 > [!info]
 > **NAND gates** implement the NOT-AND function: the output goes LOW only when all inputs are HIGH.
 
-| Type | NAND Gate                          | Output | Pins |
-| ---- | ---------------------------------- | ------ | ---- |
-| [[7400\|00]]     | Quad 2-input NAND                  | TP | 14 |
-| [[7401\|01]]     | Quad 2-input NAND                  | OC | 14 |
-| [[7403\|03]]     | Quad 2-input NAND                  | OC | 14 |
-| [[7410\|10]]     | Triple 3-input NAND                | TP | 14 |
-| [[7412\|12]]     | Triple 3-input NAND                | OC | 14 |
-| [[7413\|13]]     | Dual 4-input NAND, Schmitt trigger | TP | 14 |
-| [[7418\|18]]     | Dual 4-input NAND, Schmitt trigger | TP | 14 |
-| [[7420\|20]]     | Dual 4-input NAND                  | TP | 14 |
-| [[7422\|22]]     | Dual 4-input NAND                  | OC | 14 |
-| [[7424\|24]]     | Quad 2-input NAND, Schmitt trigger | TP | 14 |
-| [[7426\|26]]     | Quad 2-input NAND gate, 15 V output | OC | 14 |
-| [[7430\|30]]     | 8-input NAND                       | TP | 14 |
-| [[7437\|37]]     | Quad 2-input NAND buffer           | TP | 14 |
-| [[7438\|38]]     | Quad 2-input NAND buffer           | OC | 14 |
-| [[7440\|40]]     | Dual 4-input NAND buffer           | TP | 14 |
-| [[74132\|132]]   | Quad 2-input NAND, Schmitt trigger | TP | 14 |
-| [[74133\|133]]   | 13-input NAND                      | TP | 16 |
-| [[741000\|1000]] | Buffer for '00' gate               | TP | 14 |
-| [[741003\|1003]] | Buffer for '03' gate               | OC | 14 |
-| [[741010\|1010]] | Buffer for '10' gate               | TP | 14 |
-| [[741020\|1020]] | Buffer for '20' gate               | TP | 14 |
+| Type             | NAND Gate                           | Output | Pins |
+| ---------------- | ----------------------------------- | ------ | ---- |
+| [[7400\|00]]     | Quad 2-input NAND                   | TP     | 14   |
+| [[7401\|01]]     | Quad 2-input NAND                   | OC     | 14   |
+| [[7403\|03]]     | Quad 2-input NAND                   | OC     | 14   |
+| [[7410\|10]]     | Triple 3-input NAND                 | TP     | 14   |
+| [[7412\|12]]     | Triple 3-input NAND                 | OC     | 14   |
+| [[7413\|13]]     | Dual 4-input NAND, Schmitt trigger  | TP     | 14   |
+| [[7418\|18]]     | Dual 4-input NAND, Schmitt trigger  | TP     | 14   |
+| [[7420\|20]]     | Dual 4-input NAND                   | TP     | 14   |
+| [[7422\|22]]     | Dual 4-input NAND                   | OC     | 14   |
+| [[7424\|24]]     | Quad 2-input NAND, Schmitt trigger  | TP     | 14   |
+| [[7426\|26]]     | Quad 2-input NAND gate, 15 V output | OC     | 14   |
+| [[7430\|30]]     | 8-input NAND                        | TP     | 14   |
+| [[7437\|37]]     | Quad 2-input NAND buffer            | TP     | 14   |
+| [[7438\|38]]     | Quad 2-input NAND buffer            | OC     | 14   |
+| [[7440\|40]]     | Dual 4-input NAND buffer            | TP     | 14   |
+| [[74132\|132]]   | Quad 2-input NAND, Schmitt trigger  | TP     | 14   |
+| [[74133\|133]]   | 13-input NAND                       | TP     | 16   |
+| [[741000\|1000]] | Buffer for '00' gate                | TP     | 14   |
+| [[741003\|1003]] | Buffer for '03' gate                | OC     | 14   |
+| [[741010\|1010]] | Buffer for '10' gate                | TP     | 14   |
+| [[741020\|1020]] | Buffer for '20' gate                | TP     | 14   |
 
 ### NOR Gates
 
 > [!info]
 > **NOR gates** implement the NOT-OR function: the output goes HIGH only when all inputs are LOW.
 
-| Type | NOR Gate                                  | Output | Pins |
-| ---- | ----------------------------------------- | ------ | ---- |
-| [[7402\|02]]      | Quad 2-input NOR                          | TP | 14 |
-| 23               | Dual 4-input strobe-expandable input NOR  | TP | 16 |
-| 25               | Dual 4-input strobe NOR                   | TP | 14 |
-| [[7427\|27]]      | Triple 3-input NOR                        | TP | 14 |
-| [[7428\|28]]      | Quad 2-input NOR buffer                   | TP | 14 |
-| [[7433\|33]]      | Quad 2-input NOR buffer                   | OC | 14 |
-| [[7436\|36]]      | Quad 2-input NOR                          | TP | 14 |
-| [[741002\|1002]]  | Buffer for '02' gate                      | TP | 14 |
+| Type             | NOR Gate                                 | Output | Pins |
+| ---------------- | ---------------------------------------- | ------ | ---- |
+| [[7402\|02]]     | Quad 2-input NOR                         | TP     | 14   |
+| 23               | Dual 4-input strobe-expandable input NOR | TP     | 16   |
+| 25               | Dual 4-input strobe NOR                  | TP     | 14   |
+| [[7427\|27]]     | Triple 3-input NOR                       | TP     | 14   |
+| [[7428\|28]]     | Quad 2-input NOR buffer                  | TP     | 14   |
+| [[7433\|33]]     | Quad 2-input NOR buffer                  | OC     | 14   |
+| [[7436\|36]]     | Quad 2-input NOR                         | TP     | 14   |
+| [[741002\|1002]] | Buffer for '02' gate                     | TP     | 14   |
 
 ### AND Gates
 
 > [!info]
 > **AND gates** output HIGH only when all required inputs are HIGH.
 
-| Type | AND Gate            | Output | Pins |
-| ---- | ------------------- | ------ | ---- |
-| [[7408\|08]]      | Quad 2-input AND     | TP | 14 |
-| [[7409\|09]]      | Quad 2-input AND     | OC | 14 |
-| [[7411\|11]]      | Triple 3-input AND   | TP | 14 |
-| [[7415\|15]]      | Triple 3-input AND   | OC | 14 |
-| [[7421\|21]]      | Dual 4-input AND     | TP | 14 |
-| [[741008\|1008]]  | Buffer for '08' gate | OC | 14 |
+| Type             | AND Gate             | Output | Pins |
+| ---------------- | -------------------- | ------ | ---- |
+| [[7408\|08]]     | Quad 2-input AND     | TP     | 14   |
+| [[7409\|09]]     | Quad 2-input AND     | OC     | 14   |
+| [[7411\|11]]     | Triple 3-input AND   | TP     | 14   |
+| [[7415\|15]]     | Triple 3-input AND   | OC     | 14   |
+| [[7421\|21]]     | Dual 4-input AND     | TP     | 14   |
+| [[741008\|1008]] | Buffer for '08' gate | OC     | 14   |
 
 ### OR Gates
 
@@ -160,27 +160,27 @@ The tables below group common 74xx functions by what the IC does. The function n
 > [!info]
 > **XOR gates** output HIGH when the inputs differ; they are commonly used for comparison, parity, and arithmetic.
 
-| Type | XOR Gate                     | Output | Pins |
-| ---- | ---------------------------- | ------ | ---- |
-| [[7486\|86]]       | Quad exclusive OR            | TP | 14 |
-| [[74136\|136]]     | Quad exclusive OR            | OC | 14 |
-| [[74266\|266]]     | Quad 2-input exclusive NOR   | OC | 16 |
-| [[74386\|386]]     | Quad exclusive OR            | TP | 14 |
-| [[747266\|7266]]   | '266' with totem-pole output | TP | 16 |
+| Type             | XOR Gate                     | Output | Pins |
+| ---------------- | ---------------------------- | ------ | ---- |
+| [[7486\|86]]     | Quad exclusive OR            | TP     | 14   |
+| [[74136\|136]]   | Quad exclusive OR            | OC     | 14   |
+| [[74266\|266]]   | Quad 2-input exclusive NOR   | OC     | 16   |
+| [[74386\|386]]   | Quad exclusive OR            | TP     | 14   |
+| [[747266\|7266]] | '266' with totem-pole output | TP     | 16   |
 
 ### Inverters
 
 > [!info]
 > **Inverters** reverse a logic level: HIGH becomes LOW and LOW becomes HIGH.
 
-| Type | Inverter                          | Output | Pins |
-| ---- | --------------------------------- | ------ | ---- |
-| [[7404\|04]]      | Hex inverter                  | TP | 14 |
-| [[7405\|05]]      | Hex inverter                  | OC | 14 |
-| [[7414\|14]]      | Hex inverter, Schmitt trigger | TP | 14 |
-| [[7419\|19]]      | Hex inverter, Schmitt trigger | TP | 14 |
-| [[741004\|1004]]  | Buffer for '04' gate          | TP | 14 |
-| [[741005\|1005]]  | Buffer for '05' gate          | OC | 14 |
+| Type             | Inverter                      | Output | Pins |
+| ---------------- | ----------------------------- | ------ | ---- |
+| [[7404\|04]]     | Hex inverter                  | TP     | 14   |
+| [[7405\|05]]     | Hex inverter                  | OC     | 14   |
+| [[7414\|14]]     | Hex inverter, Schmitt trigger | TP     | 14   |
+| [[7419\|19]]     | Hex inverter, Schmitt trigger | TP     | 14   |
+| [[741004\|1004]] | Buffer for '04' gate          | TP     | 14   |
+| [[741005\|1005]] | Buffer for '05' gate          | OC     | 14   |
 
 ### Drivers
 
