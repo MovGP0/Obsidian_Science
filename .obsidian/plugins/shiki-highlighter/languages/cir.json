@@ -1,0 +1,279 @@
+{
+  "name": "cir",
+  "displayName": "PSpice Netlist",
+  "scopeName": "source.spice",
+  "aliases": [
+    "spice",
+    "pspice"
+  ],
+  "fileTypes": [
+    "cir",
+    "sp",
+    "spice",
+    "ckt",
+    "lib",
+    "inc"
+  ],
+  "patterns": [
+    {
+      "include": "#comments"
+    },
+    {
+      "include": "#continuation"
+    },
+    {
+      "include": "#subcktDirective"
+    },
+    {
+      "include": "#modelDirective"
+    },
+    {
+      "include": "#includeDirective"
+    },
+    {
+      "include": "#directive"
+    },
+    {
+      "include": "#component"
+    }
+  ],
+  "repository": {
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.line.asterisk.spice",
+          "match": "^\\s*\\*.*$"
+        }
+      ]
+    },
+    "continuation": {
+      "begin": "^(\\s*)(\\+)",
+      "beginCaptures": {
+        "2": {
+          "name": "punctuation.separator.continuation.spice"
+        }
+      },
+      "end": "$",
+      "patterns": [
+        {
+          "include": "#lineBody"
+        }
+      ]
+    },
+    "subcktDirective": {
+      "begin": "^(\\s*)(\\.)(?i:(SUBCKT))\\b",
+      "beginCaptures": {
+        "2": {
+          "name": "punctuation.definition.directive.spice"
+        },
+        "3": {
+          "name": "keyword.control.directive.spice"
+        }
+      },
+      "end": "$",
+      "patterns": [
+        {
+          "match": "\\G\\s*([A-Za-z_][A-Za-z0-9_.$-]*)\\b",
+          "captures": {
+            "1": {
+              "name": "entity.name.type.subckt.spice"
+            }
+          }
+        },
+        {
+          "include": "#lineBody"
+        }
+      ]
+    },
+    "modelDirective": {
+      "begin": "^(\\s*)(\\.)(?i:(MODEL))\\b",
+      "beginCaptures": {
+        "2": {
+          "name": "punctuation.definition.directive.spice"
+        },
+        "3": {
+          "name": "keyword.control.directive.spice"
+        }
+      },
+      "end": "$",
+      "patterns": [
+        {
+          "match": "\\G\\s*([A-Za-z_][A-Za-z0-9_.$-]*)\\b",
+          "captures": {
+            "1": {
+              "name": "entity.name.type.model.spice"
+            }
+          }
+        },
+        {
+          "match": "\\G\\s*([A-Za-z][A-Za-z0-9_]*)\\b",
+          "captures": {
+            "1": {
+              "name": "storage.type.model.spice"
+            }
+          }
+        },
+        {
+          "include": "#lineBody"
+        }
+      ]
+    },
+    "includeDirective": {
+      "begin": "^(\\s*)(\\.)(?i:(INCLUDE|INC|LIB))\\b",
+      "beginCaptures": {
+        "2": {
+          "name": "punctuation.definition.directive.spice"
+        },
+        "3": {
+          "name": "keyword.control.directive.spice"
+        }
+      },
+      "end": "$",
+      "patterns": [
+        {
+          "include": "#strings"
+        },
+        {
+          "include": "#lineBody"
+        }
+      ]
+    },
+    "directive": {
+      "begin": "^(\\s*)(\\.)(?i:(AC|DC|TRAN|OP|TF|NOISE|FOUR|ENDS|END|PARAM|STEP|MEAS|MEASURE|PROBE|OPTIONS|IC|NODESET|PRINT|PLOT|TEMP|TITLE|ALTER|SAVE|FUNC|LIBRARY|PROTECT|UNPROTECT|GLOBAL|CONNECT|WIDTH|HEIGHT))\\b",
+      "beginCaptures": {
+        "2": {
+          "name": "punctuation.definition.directive.spice"
+        },
+        "3": {
+          "name": "keyword.control.directive.spice"
+        }
+      },
+      "end": "$",
+      "patterns": [
+        {
+          "include": "#lineBody"
+        }
+      ]
+    },
+    "component": {
+      "begin": "^(\\s*)([A-Za-z])([A-Za-z0-9_.$-]*)\\b",
+      "beginCaptures": {
+        "2": {
+          "name": "entity.name.type.spice"
+        },
+        "3": {
+          "name": "entity.name.instance.spice"
+        }
+      },
+      "end": "$",
+      "patterns": [
+        {
+          "include": "#lineBody"
+        }
+      ]
+    },
+    "lineBody": {
+      "patterns": [
+        {
+          "include": "#strings"
+        },
+        {
+          "include": "#parameters"
+        },
+        {
+          "include": "#numbers"
+        },
+        {
+          "include": "#operators"
+        },
+        {
+          "include": "#nodes"
+        },
+        {
+          "include": "#inlineComments"
+        }
+      ]
+    },
+    "strings": {
+      "patterns": [
+        {
+          "name": "string.quoted.double.spice",
+          "begin": "\"",
+          "end": "\"",
+          "patterns": [
+            {
+              "name": "constant.character.escape.spice",
+              "match": "\\\\."
+            }
+          ]
+        },
+        {
+          "name": "string.quoted.single.spice",
+          "begin": "'",
+          "end": "'",
+          "patterns": [
+            {
+              "name": "constant.character.escape.spice",
+              "match": "\\\\."
+            }
+          ]
+        }
+      ]
+    },
+    "parameters": {
+      "patterns": [
+        {
+          "match": "\\b([A-Za-z_][A-Za-z0-9_.$-]*)(\\s*=)",
+          "captures": {
+            "1": {
+              "name": "variable.parameter.key.spice"
+            },
+            "2": {
+              "name": "keyword.operator.assignment.spice"
+            }
+          }
+        }
+      ]
+    },
+    "numbers": {
+      "patterns": [
+        {
+          "name": "constant.numeric.spice",
+          "match": "(?<![A-Za-z0-9_.$-])[-+]?(?:\\d+\\.\\d*|\\.\\d+|\\d+)(?:[eE][-+]?\\d+)?(?i:(?:T|G|MEG|K|M|U|N|P|F|MIL))?\\b"
+        }
+      ]
+    },
+    "operators": {
+      "patterns": [
+        {
+          "name": "keyword.operator.assignment.spice",
+          "match": "="
+        },
+        {
+          "name": "keyword.operator.arithmetic.spice",
+          "match": "[()+\\-*/,]"
+        }
+      ]
+    },
+    "nodes": {
+      "patterns": [
+        {
+          "name": "constant.language.ground.spice",
+          "match": "\\b0\\b"
+        },
+        {
+          "name": "variable.node.spice",
+          "match": "\\b[A-Za-z_][A-Za-z0-9_.$-]*\\b"
+        }
+      ]
+    },
+    "inlineComments": {
+      "patterns": [
+        {
+          "name": "comment.line.semicolon.spice",
+          "match": ";.*$"
+        }
+      ]
+    }
+  }
+}
