@@ -547,8 +547,8 @@ The tables below group common 74xx functions by what the IC does. The function n
 
 | Type | Parity Generator              | Output | Pins |
 | ---- | ----------------------------- | ------ | ---- |
-| 180  | 8-bit parity generator        | TP     | 14   |
-| 280  | 9-bit parity generator/checker | TP    | 14   |
+| [[74180\|180]] | 8-bit parity generator        | TP     | 14   |
+| [[74280\|280]] | 9-bit parity generator/checker | TP    | 14   |
 
 ## References
 
