@@ -488,9 +488,9 @@ The tables below group common 74xx functions by what the IC does. The function n
 
 | Type | Display Decoder              | Output | Pins |
 | ---- | ---------------------------- | ------ | ---- |
-| 47   | BCD to seven-segment for LEDs | OC    | 16   |
-| 49   | BCD to seven-segment for LEDs | OC    | 16   |
-| 247  | BCD to seven-segment for LEDs | OC    | 16   |
+| [[7447\|47]]   | BCD to seven-segment for LEDs | OC    | 16   |
+| [[7449\|49]]   | BCD to seven-segment for LEDs | OC    | 16   |
+| [[74247\|247]] | BCD to seven-segment for LEDs | OC    | 16   |
 
 ### Monostable Multivibrators
 
