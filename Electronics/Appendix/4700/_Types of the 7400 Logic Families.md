@@ -110,8 +110,8 @@ The tables below group common 74xx functions by what the IC does. The function n
 | Type             | NOR Gate                                 | Output | Pins |
 | ---------------- | ---------------------------------------- | ------ | ---- |
 | [[7402\|02]]     | Quad 2-input NOR                         | TP     | 14   |
-| 23               | Dual 4-input strobe-expandable input NOR | TP     | 16   |
-| 25               | Dual 4-input strobe NOR                  | TP     | 14   |
+| [[7423\|23]]     | Dual 4-input strobe-expandable input NOR | TP     | 16   |
+| [[7425\|25]]     | Dual 4-input strobe NOR                  | TP     | 14   |
 | [[7427\|27]]     | Triple 3-input NOR                       | TP     | 14   |
 | [[7428\|28]]     | Quad 2-input NOR buffer                  | TP     | 14   |
 | [[7433\|33]]     | Quad 2-input NOR buffer                  | OC     | 14   |
@@ -140,8 +140,8 @@ The tables below group common 74xx functions by what the IC does. The function n
 | Type | OR Gate                     | Output | Pins |
 | ---- | --------------------------- | ------ | ---- |
 | [[7432\|32]]      | Quad 2-input OR      | TP | 14 |
-| 802              | Triple 4-input OR/NOR | TP |    |
-| 832              | Hex 2-input buffer    | TP | 20 |
+| [[74802\|802]]   | Triple 4-input OR/NOR | TP |    |
+| [[74832\|832]]   | Hex 2-input buffer    | TP | 20 |
 | [[741032\|1032]]  | Buffer for '32' gate | TP | 14 |
 
 ### AND-OR Gates
@@ -151,9 +151,9 @@ The tables below group common 74xx functions by what the IC does. The function n
 
 | Type | AND-OR Gate                     | Output | Pins |
 | ---- | ------------------------------- | ------ | ---- |
-| 51   | Dual 2-wide-input AND-OR-Invert | TP     | 14   |
-| 54   | 4-wide 2-input AND-OR-Invert    | TP     | 14   |
-| 64   | 4-2-3-2-input AND-OR-Invert     | TP     | 14   |
+| [[7451\|51]] | Dual 2-wide-input AND-OR-Invert | TP     | 14   |
+| [[7454\|54]] | 4-wide 2-input AND-OR-Invert    | TP     | 14   |
+| [[7464\|64]] | 4-2-3-2-input AND-OR-Invert     | TP     | 14   |
 
 ### XOR Gates
 
@@ -206,7 +206,7 @@ The tables below group common 74xx functions by what the IC does. The function n
 | 804  | Hex 2-input NAND line driver | TP     | 20   |
 | 805  | Hex 2-input NOR line driver  | TP     | 20   |
 | 808  | Hex 2-input AND line driver  | TP     | 20   |
-| 832  | Hex 2-input OR line driver   | TP     | 20   |
+| [[74832\|832]]  | Hex 2-input OR line driver   | TP     | 20   |
 
 ### Flip-Flops (Transparent)
 
