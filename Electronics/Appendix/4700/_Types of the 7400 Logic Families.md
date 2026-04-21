@@ -531,14 +531,14 @@ The tables below group common 74xx functions by what the IC does. The function n
 
 | Type           | Adder and Arithmetic Logic Unit (ALU)         | Output | Pins |
 | -------------- | --------------------------------------------- | ------ | ---- |
-| 83             | 4-bit binary full adder                       | TP     | 16   |
+| [[7483\|83]]   | 4-bit binary full adder                       | TP     | 16   |
 | [[74181\|181]] | 4-bit arithmetic logic unit                   | TP     | 24   |
-| 182            | Carry look-ahead unit for 4 adders            | TP     | 16   |
-| 183            | Dual carry-save full adder                    | TP     | 14   |
-| 283            | 4-bit binary full adder                       | TP     | 16   |
-| 385            | Quad serial adder/subtractor                  | TP     | 20   |
-| 583            | 4-bit BCD adder                               | TP     | 16   |
-| 881            | 4-bit arithmetic logic unit with status check | TP     | 24   |
+| [[74182\|182]] | Carry look-ahead unit for 4 adders            | TP     | 16   |
+| [[74183\|183]] | Dual carry-save full adder                    | TP     | 14   |
+| [[74283\|283]] | 4-bit binary full adder                       | TP     | 16   |
+| [[74385\|385]] | Quad serial adder/subtractor                  | TP     | 20   |
+| [[74583\|583]] | 4-bit BCD adder                               | TP     | 16   |
+| [[74881\|881]] | 4-bit arithmetic logic unit with status check | TP     | 24   |
 
 ### Parity Generators
 
