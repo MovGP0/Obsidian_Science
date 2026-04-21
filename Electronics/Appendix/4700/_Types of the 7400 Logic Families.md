@@ -420,14 +420,14 @@ The tables below group common 74xx functions by what the IC does. The function n
 
 | Type | Comparator                      | Output | Pins |
 | ---- | ------------------------------- | ------ | ---- |
-| 85   | 4-bit magnitude comparator      | TP     | 16   |
-| 518  | 8-bit identity comparator       | OC     | 20   |
-| 520  | 8-bit identity comparator       | TP     | 20   |
-| 521  | 8-bit identity comparator       | TP     | 20   |
-| 679  | 12-bit address comparator       | TP     | 20   |
-| 682  | 8-bit magnitude comparator      | TP     | 20   |
-| 684  | 8-bit magnitude comparator      | TP     | 20   |
-| 688  | 8-bit identity comparator with enable | TP | 20   |
+| [[7485\|85]]   | 4-bit magnitude comparator      | TP     | 16   |
+| [[74518\|518]] | 8-bit identity comparator       | OC     | 20   |
+| [[74520\|520]] | 8-bit identity comparator       | TP     | 20   |
+| [[74521\|521]] | 8-bit identity comparator       | TP     | 20   |
+| [[74679\|679]] | 12-bit address comparator       | TP     | 20   |
+| [[74682\|682]] | 8-bit magnitude comparator      | TP     | 20   |
+| [[74684\|684]] | 8-bit magnitude comparator      | TP     | 20   |
+| [[74688\|688]] | 8-bit identity comparator with enable | TP | 20   |
 
 ### Decoders, Demultiplexers
 
