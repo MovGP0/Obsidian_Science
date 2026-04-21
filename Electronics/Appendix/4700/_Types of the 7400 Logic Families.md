@@ -189,12 +189,12 @@ The tables below group common 74xx functions by what the IC does. The function n
 
 | Type | Driver              | Output | Pins |
 | ---- | ------------------- | ------ | ---- |
-| 34   | Hex buffer          | TP     | 14   |
-| 35   | Hex buffer          | OC     | 14   |
-| 125  | Quad 3-state buffer | TS     | 14   |
-| 126  | Quad 3-state buffer | TS     | 14   |
-| 1034 | Hex buffer          | TP     | 14   |
-| 1035 | Hex buffer          | OC     | 14   |
+| [[7434\|34]]   | Hex buffer          | TP     | 14   |
+| [[7435\|35]]   | Hex buffer          | OC     | 14   |
+| [[74125\|125]] | Quad 3-state buffer | TS     | 14   |
+| [[74126\|126]] | Quad 3-state buffer | TS     | 14   |
+| [[741034\|1034]] | Hex buffer        | TP     | 14   |
+| [[741035\|1035]] | Hex buffer        | OC     | 14   |
 
 ### Line Drivers
 
@@ -203,9 +203,9 @@ The tables below group common 74xx functions by what the IC does. The function n
 
 | Type | Line Driver                  | Output | Pins |
 | ---- | ---------------------------- | ------ | ---- |
-| 804  | Hex 2-input NAND line driver | TP     | 20   |
-| 805  | Hex 2-input NOR line driver  | TP     | 20   |
-| 808  | Hex 2-input AND line driver  | TP     | 20   |
+| [[74804\|804]]  | Hex 2-input NAND line driver | TP     | 20   |
+| [[74805\|805]]  | Hex 2-input NOR line driver  | TP     | 20   |
+| [[74808\|808]]  | Hex 2-input AND line driver  | TP     | 20   |
 | [[74832\|832]]  | Hex 2-input OR line driver   | TP     | 20   |
 
 ### Flip-Flops (Transparent)
