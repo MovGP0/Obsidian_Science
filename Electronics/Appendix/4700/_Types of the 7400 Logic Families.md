@@ -215,10 +215,10 @@ The tables below group common 74xx functions by what the IC does. The function n
 
 | Type | Transparent Flip-Flop | Output | Pins |
 | ---- | --------------------- | ------ | ---- |
-| 75   | Quad D latch          | TP     | 16   |
-| 77   | Quad D latch          | TP     | 16   |
-| 279  | Hex SR flip-flop      | TP     | 16   |
-| 375  | Quad D latch          | TP     | 16   |
+| [[7475\|75]]   | Quad D latch          | TP     | 16   |
+| [[7477\|77]]   | Quad D latch          | TP     | 16   |
+| [[74279\|279]] | Hex SR flip-flop      | TP     | 16   |
+| [[74375\|375]] | Quad D latch          | TP     | 16   |
 
 ### Flip-Flops (Master-Slave)
 
@@ -227,20 +227,20 @@ The tables below group common 74xx functions by what the IC does. The function n
 
 | Type  | Master-Slave Flip-Flop          | Output | Pins |
 | ----- | ------------------------------- | ------ | ---- |
-| 73    | Dual JK flip-flop, preset, clear | TP    | 14   |
-| 74    | Dual D flip-flop, preset, clear  | TP    | 14   |
-| 76    | Dual JK flip-flop, preset, clear | TP    | 16   |
-| 78    | Dual JK flip-flop, preset, clear | TP    | 14   |
-| 107   | Dual JK flip-flop, clear         | TP    | 14   |
-| 109   | Dual JK flip-flop, preset, clear | TP    | 16   |
-| 112   | Dual JK flip-flop, preset, clear | TP    | 16   |
-| 113   | Dual JK flip-flop, preset        | TP    | 14   |
-| 114   | Dual JK flip-flop, preset, clear | TP    | 14   |
-| 171   | Quad D flip-flop, clear          | TP    | 16   |
-| 173   | Quad D flip-flop, clear, enable  | TS    | 16   |
-| 174   | Hex D flip-flop, clear           | TP    | 16   |
-| 175   | Quad D flip-flop, clear          | TP    | 16   |
-| 11478 | Quad metastable-resistant        | TP    | 24   |
+| [[7473\|73]]    | Dual JK flip-flop, preset, clear | TP    | 14   |
+| [[7474\|74]]    | Dual D flip-flop, preset, clear  | TP    | 14   |
+| [[7476\|76]]    | Dual JK flip-flop, preset, clear | TP    | 16   |
+| [[7478\|78]]    | Dual JK flip-flop, preset, clear | TP    | 14   |
+| [[74107\|107]]  | Dual JK flip-flop, clear         | TP    | 14   |
+| [[74109\|109]]  | Dual JK flip-flop, preset, clear | TP    | 16   |
+| [[74112\|112]]  | Dual JK flip-flop, preset, clear | TP    | 16   |
+| [[74113\|113]]  | Dual JK flip-flop, preset        | TP    | 14   |
+| [[74114\|114]]  | Dual JK flip-flop, preset, clear | TP    | 14   |
+| [[74171\|171]]  | Quad D flip-flop, clear          | TP    | 16   |
+| [[74173\|173]]  | Quad D flip-flop, clear, enable  | TS    | 16   |
+| [[74174\|174]]  | Hex D flip-flop, clear           | TP    | 16   |
+| [[74175\|175]]  | Quad D flip-flop, clear          | TP    | 16   |
+| [[7411478\|11478]] | Quad metastable-resistant     | TP    | 24   |
 
 ### Shift Registers
 
