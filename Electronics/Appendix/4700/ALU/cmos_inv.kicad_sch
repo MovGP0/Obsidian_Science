@@ -8,147 +8,6 @@
 		(title "CMOS_INV")
 	)
 	(lib_symbols
-		(symbol "Connector:Conn_01x01_Socket"
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "J"
-				(at 0 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Conn_01x01_Socket"
-				(at 0 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Generic connector, single row, 01x01, script generated"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "connector"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Conn_01x01_Socket_1_1"
-				(polyline
-					(pts
-						(xy -1.27 0) (xy -0.508 0)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -0.508)
-					(mid -0.5058 0)
-					(end 0 0.508)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 3.81)
-					(name "Pin_1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Simulation_SPICE:NMOS"
 			(pin_numbers
 				(hide yes)
@@ -1188,96 +1047,27 @@
 		)
 		(uuid "c972833b-0952-48db-a739-c0b8506e7236")
 	)
-	(symbol
-		(lib_id "Connector:Conn_01x01_Socket")
-		(at 158.75 76.2 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "46682259-c797-4787-97ac-20b9f8386b41")
-		(property "Reference" "OUT2"
-			(at 160.02 74.9299 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
+	(hierarchical_label "INV_OUT"
+		(shape input)
+		(at 153.67 76.2 0)
+		(effects
+			(font
+				(size 1.27 1.27)
 			)
+			(justify left)
 		)
-		(property "Value" ""
-			(at 160.02 77.4699 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
+		(uuid "d5e569e5-5d8a-4dfd-8f17-5092b59d247d")
+	)
+	(hierarchical_label "INV_IN"
+		(shape input)
+		(at 123.19 76.2 180)
+		(effects
+			(font
+				(size 1.27 1.27)
 			)
+			(justify right)
 		)
-		(property "Footprint" ""
-			(at 158.75 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 158.75 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x01, script generated"
-			(at 158.75 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "7aad20ff-379c-4fe1-b016-746bd3b23e9d")
-		)
-		(instances
-			(project "Test"
-				(path "/0a7a9431-a390-42ce-aae4-32a0355adbaa"
-					(reference "OUT1")
-					(unit 1)
-				)
-			)
-			(project "cmos_inv"
-				(path "/6cce6f8f-6df3-4cbb-becc-12ed677d66be"
-					(reference "OUT1")
-					(unit 1)
-				)
-			)
-			(project "cmos_xnor2"
-				(path "/fd146099-cfa7-464c-817b-4439fed62346/cc31ddaf-13b5-42b1-ab3e-d1a54ede226c"
-					(reference "OUT2")
-					(unit 1)
-				)
-			)
-		)
+		(uuid "e3da9b33-75fe-49ba-9a5e-daff28bbcac1")
 	)
 	(symbol
 		(lib_id "power:+3.3V")
@@ -1358,98 +1148,6 @@
 			(project "cmos_xnor2"
 				(path "/fd146099-cfa7-464c-817b-4439fed62346/cc31ddaf-13b5-42b1-ab3e-d1a54ede226c"
 					(reference "#PWR01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x01_Socket")
-		(at 118.11 76.2 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "aceef313-b3e3-424d-94f5-a960b3756802")
-		(property "Reference" "X1"
-			(at 116.84 74.9299 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Conn_01x01_Socket"
-			(at 116.84 77.4699 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 118.11 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 118.11 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x01, script generated"
-			(at 118.11 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "57bd174d-4561-40d7-9557-08053fbfc4c0")
-		)
-		(instances
-			(project "Test"
-				(path "/0a7a9431-a390-42ce-aae4-32a0355adbaa"
-					(reference "X1")
-					(unit 1)
-				)
-			)
-			(project "cmos_inv"
-				(path "/6cce6f8f-6df3-4cbb-becc-12ed677d66be"
-					(reference "X1")
-					(unit 1)
-				)
-			)
-			(project "cmos_xnor2"
-				(path "/fd146099-cfa7-464c-817b-4439fed62346/cc31ddaf-13b5-42b1-ab3e-d1a54ede226c"
-					(reference "X1")
 					(unit 1)
 				)
 			)
@@ -1557,7 +1255,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d5b79ae1-637f-44b3-82be-57161e567a51")
-		(property "Reference" "T1"
+		(property "Reference" "T2"
 			(at 144.78 83.8199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1687,7 +1385,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "dd52fbd1-4b41-4975-9998-32b8e627d4c2")
-		(property "Reference" "T1'1"
+		(property "Reference" "T1"
 			(at 145.034 65.786 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1805,4 +1503,10 @@
 			)
 		)
 	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
 )
