@@ -1,0 +1,109 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "fd146099-cfa7-464c-817b-4439fed62346")
+	(paper "A4")
+	(title_block
+		(title "CMOS_XNOR2")
+	)
+	(lib_symbols)
+	(sheet
+		(at 55.88 59.69)
+		(size 43.18 45.72)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "50744071-aac8-4982-82ea-c6004b6f1c82")
+		(property "Sheetname" "CMOS_XOR2"
+			(at 55.88 58.9784 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "cmos_xor2.kicad_sch"
+			(at 55.88 105.9946 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "cmos_xnor2"
+				(path "/fd146099-cfa7-464c-817b-4439fed62346"
+					(page "1")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 119.38 64.77)
+		(size 39.37 33.02)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "cc31ddaf-13b5-42b1-ab3e-d1a54ede226c")
+		(property "Sheetname" "CMOS_INV"
+			(at 119.38 64.0584 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "cmos_inv.kicad_sch"
+			(at 119.38 98.3746 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "cmos_xnor2"
+				(path "/fd146099-cfa7-464c-817b-4439fed62346"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "5")
+		)
+	)
+	(embedded_fonts no)
+)

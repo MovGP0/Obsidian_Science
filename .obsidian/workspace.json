@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "589fdc59ffb9ca1e",
+        "id": "c40ae99ccea06a87",
         "type": "tabs",
         "children": [
           {
-            "id": "1c7eec56eb67b3f5",
+            "id": "99d0c9dfaa91f833",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Electronics/KiCAD/kicad_sch.md",
+                "mode": "preview",
+                "source": true
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "kicad_sch"
             }
           }
         ]
@@ -49,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "page-import 0854",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 429.5
+    "width": 455.5
   },
   "right": {
     "id": "73a64b91218644df",
@@ -153,50 +157,53 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1c7eec56eb67b3f5",
+  "active": "99d0c9dfaa91f833",
   "lastOpenFiles": [
-    "Electronics/KiCad 1.md",
-    "Electronics/KiCAD.md",
-    "Electronics/dex0000_mains_filter.kicad_sch",
-    "Electronics/dex0000_mains_filter.kicad_sch.txt",
-    "Electronics/halbleiter-schaltungstechnik-16-9783662485538.pdf",
-    "Mechanics/Newtonian Mechanics/Newtons Laws/Newton’s 2nd Law.md",
-    "Mechanics/Newtonian Mechanics/Newtons Laws/Newton’s 1st Law.md",
-    "Mechanics/Newtonian Mechanics/Newtons Laws/Newton's 4th Law.md",
-    "Mechanics/Newtonian Mechanics/Newton's Laws.md",
-    "Mechanics/Newtons laws.md",
-    "Mechanics/Newtonian Mechanics/Newtons Laws/Newton’s 3rd Law.md",
-    "Mechanics/Material Properties.md",
-    "Mechanics/Basic Concepts/Brachistochrone vs Geodesic.md",
-    "Mechanics/Conservation Laws.md",
-    "Mechanics/Angular Momentum/Relativistic formulation of Agular Momentum.md",
-    "Mechanics/Angular Momentum/Lagrangian formulation of Angular Momentum.md",
-    "Mechanics/Angular Momentum/Hamiltonian formulation of Angular Momentum.md",
-    "Attachements/Pasted image 20251207115034.png",
-    "Attachements/Pasted image 20251207114915.png",
-    "Attachements/Pasted image 20260413185110.png",
-    "Attachements/Pasted image 20260413201827.png",
-    "Attachements/PrincipleOfLeastAction1.svg",
-    "Attachements/shannon wavelet.png",
-    "Attachements/PolarizationSpaces.svg",
-    "Attachements/Pasted image 20260413185044.png",
-    "Attachements/Pasted image 20251207110304.png",
-    "Mechanics/Conservation Laws/Conservation of Angular Momentum.md",
-    "Mechanics/Angular Momentum",
-    "Mechanics/Conservation Laws/Conservation of Energy.md",
-    "Mechanics/Conservation Laws/Conservation of Linear Momentum.md",
-    "Mechanics/Conservation Laws/Conservation of Color Charge.md",
-    "Mechanics/Newtonian Mechanics/System of Particles.md",
-    "Mechanics/Newtonian Mechanics/Basic Concepts/Internal forces and external forces.md",
-    "Mechanics/Newtonian Mechanics/N-body Problem.md",
-    "Mechanics/Basic Concepts/Velocity and Speed.md",
-    "Mechanics/Basic Concepts/Trajectory.md",
-    "Mechanics/Basic Concepts/Position.md",
-    "Mechanics/Basic Concepts/Phase Space.md",
-    "Mechanics/Basic Concepts/Momentum.md",
-    "Mechanics/Newtonian Mechanics/Phase Space",
-    "Mechanics/Newtonian Mechanics/Newtons Laws",
-    "Mechanics/Basic Concepts",
-    "Mechanics/Newtonian Mechanics"
+    "Electronics/Appendix/4700/ALU/~cmos_nand2.kicad_pro.lck",
+    "Electronics/Appendix/4700/ALU/~cmos_nand2.kicad_sch.lck",
+    "Electronics/Appendix/4700/ALU/~cmos_inv.kicad_pro.lck",
+    "Electronics/Appendix/4700/ALU/~cmos_inv.kicad_sch.lck",
+    "Electronics/KiCAD/KiCAD.md",
+    "Electronics/KiCAD/kicad_sch.md",
+    "Electronics/KiCAD",
+    "Electronics/Appendix/4700/ALU/74181.md",
+    "Electronics/Appendix/4700/ALU/~cmos_add4.kicad_pro.lck",
+    "Electronics/Appendix/4700/ALU/~cmos_add4.kicad_sch.lck",
+    "Electronics/Appendix/4700/ALU/cmos_xor2.kicad_sch",
+    "Electronics/Appendix/4700/ALU/cmos_xnor2.kicad_sch",
+    "Electronics/Appendix/4700/ALU/cmos_or2.kicad_sch",
+    "Electronics/Appendix/4700/ALU/cmos_nor2.kicad_sch",
+    "Electronics/Acronyms.md",
+    "Electronics/Literature.md",
+    "Electronics/Appendix/4700/_Types of the 7400 Logic Families.md",
+    "Electronics/Appendix/4700/ALU/74881.md",
+    "Electronics/Appendix/4700/ALU/74583.md",
+    "Electronics/Appendix/4700/ALU/74385.md",
+    "Electronics/Appendix/4700/ALU/74283.md",
+    "Electronics/Appendix/4700/ALU/74183.md",
+    "Electronics/Appendix/4700/ALU/74182.md",
+    "Electronics/Appendix/4700/ALU/7483.md",
+    "Electronics/Appendix/4700/Parity Generators/74280.md",
+    "Electronics/Appendix/4700/Parity Generators/74180.md",
+    "Electronics/Appendix/4700/Display Decoders/74247.md",
+    "Electronics/Appendix/4700/Display Decoders/7449.md",
+    "Electronics/Appendix/4700/Display Decoders/7447.md",
+    "Electronics/Appendix/4700/Comparators/74688.md",
+    "Electronics/Appendix/4700/Comparators/74684.md",
+    "Electronics/Appendix/4700/Comparators/74682.md",
+    "Electronics/Appendix/4700/Comparators/74679.md",
+    "Electronics/Appendix/4700/Comparators/74521.md",
+    "Electronics/Appendix/4700/Comparators/74520.md",
+    "Electronics/Appendix/4700/Comparators/74518.md",
+    "Attachements/Pasted image 20260419190457.png",
+    "Electronics/halbleiter-schaltungstechnik-16-9783662485538/images/halbleiter-schaltungstechnik-16-9783662485538-1814.png",
+    "Electronics/halbleiter-schaltungstechnik-16-9783662485538/images/halbleiter-schaltungstechnik-16-9783662485538-1822.png",
+    "Electronics/halbleiter-schaltungstechnik-16-9783662485538/images/halbleiter-schaltungstechnik-16-9783662485538-1830.png",
+    "Electronics/halbleiter-schaltungstechnik-16-9783662485538/images/halbleiter-schaltungstechnik-16-9783662485538-1831.png",
+    "Electronics/halbleiter-schaltungstechnik-16-9783662485538/images/halbleiter-schaltungstechnik-16-9783662485538-1829.png",
+    "Electronics/halbleiter-schaltungstechnik-16-9783662485538/images/halbleiter-schaltungstechnik-16-9783662485538-0001.png",
+    "Electronics/halbleiter-schaltungstechnik-16-9783662485538/images/halbleiter-schaltungstechnik-16-9783662485538-0005.png",
+    "Electronics/halbleiter-schaltungstechnik-16-9783662485538/images/halbleiter-schaltungstechnik-16-9783662485538-0006.png",
+    "Electronics/halbleiter-schaltungstechnik-16-9783662485538/images/halbleiter-schaltungstechnik-16-9783662485538-0002.png"
   ]
 }
