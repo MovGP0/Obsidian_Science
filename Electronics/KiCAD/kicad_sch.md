@@ -1,4 +1,4 @@
-﻿# KiCad `.kicad_sch` Notes
+# KiCad `.kicad_sch` Notes
 
 ## Format
 
