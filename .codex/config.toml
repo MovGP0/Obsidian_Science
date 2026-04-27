@@ -1,12 +1,3 @@
 ﻿[agents]
 max_threads = 42
 max_depth = 1
-
-[mcp_servers.kicad]
-command = "node"
-args = ['D:\GitHub\KiCAD-MCP-Server\dist\index.js']
-
-[mcp_servers.kicad.env]
-LOG_LEVEL = "info"
-NODE_ENV = "production"
-PYTHONPATH = 'C:\Users\Johann.Dirry\AppData\Local\Programs\KiCad\10.0\lib\python3\dist-packages'

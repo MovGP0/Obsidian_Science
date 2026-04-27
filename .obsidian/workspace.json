@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "c40ae99ccea06a87",
+        "id": "c46ea6dd97536599",
         "type": "tabs",
         "children": [
           {
-            "id": "99d0c9dfaa91f833",
+            "id": "0f92d2c7da9f9a65",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Electronics/KiCAD/kicad_sch.md",
-                "mode": "preview",
-                "source": true
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "kicad_sch"
+              "title": "New tab"
             }
           }
         ]
@@ -157,14 +153,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "99d0c9dfaa91f833",
+  "active": "0532ea71f8302973",
   "lastOpenFiles": [
+    "Electronics/KiCAD/NGSpice.md",
+    "Electronics/KiCAD/kicad_sch.md",
+    "Electronics/KiCAD/KiCAD MCP.md",
+    "Electronics/KiCAD/KiCAD.md",
     "Electronics/Appendix/4700/ALU/~cmos_nand2.kicad_pro.lck",
     "Electronics/Appendix/4700/ALU/~cmos_nand2.kicad_sch.lck",
     "Electronics/Appendix/4700/ALU/~cmos_inv.kicad_pro.lck",
     "Electronics/Appendix/4700/ALU/~cmos_inv.kicad_sch.lck",
-    "Electronics/KiCAD/KiCAD.md",
-    "Electronics/KiCAD/kicad_sch.md",
     "Electronics/KiCAD",
     "Electronics/Appendix/4700/ALU/74181.md",
     "Electronics/Appendix/4700/ALU/~cmos_add4.kicad_pro.lck",
@@ -172,7 +170,6 @@
     "Electronics/Appendix/4700/ALU/cmos_xor2.kicad_sch",
     "Electronics/Appendix/4700/ALU/cmos_xnor2.kicad_sch",
     "Electronics/Appendix/4700/ALU/cmos_or2.kicad_sch",
-    "Electronics/Appendix/4700/ALU/cmos_nor2.kicad_sch",
     "Electronics/Acronyms.md",
     "Electronics/Literature.md",
     "Electronics/Appendix/4700/_Types of the 7400 Logic Families.md",
@@ -194,7 +191,6 @@
     "Electronics/Appendix/4700/Comparators/74679.md",
     "Electronics/Appendix/4700/Comparators/74521.md",
     "Electronics/Appendix/4700/Comparators/74520.md",
-    "Electronics/Appendix/4700/Comparators/74518.md",
     "Attachements/Pasted image 20260419190457.png",
     "Electronics/halbleiter-schaltungstechnik-16-9783662485538/images/halbleiter-schaltungstechnik-16-9783662485538-1814.png",
     "Electronics/halbleiter-schaltungstechnik-16-9783662485538/images/halbleiter-schaltungstechnik-16-9783662485538-1822.png",

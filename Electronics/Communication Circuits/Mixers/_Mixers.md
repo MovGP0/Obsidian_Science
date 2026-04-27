@@ -1,5 +1,0 @@
-﻿---
-title: Mixers
-aliases:
-  - Mischer
----

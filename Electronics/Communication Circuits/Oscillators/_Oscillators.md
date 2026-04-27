@@ -1,5 +1,0 @@
-﻿---
-title: Oscillators
-aliases:
-  - Oszillatoren
----

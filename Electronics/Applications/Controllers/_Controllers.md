@@ -1,5 +1,0 @@
-﻿---
-title: Controllers
-aliases:
-  - Regler
----
