@@ -55,7 +55,7 @@
 		)
 	)
 	(sheet
-		(at 119.38 64.77)
+		(at 142.24 68.58)
 		(size 39.37 33.02)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -71,7 +71,7 @@
 		)
 		(uuid "cc31ddaf-13b5-42b1-ab3e-d1a54ede226c")
 		(property "Sheetname" "CMOS_INV"
-			(at 119.38 64.0584 0)
+			(at 142.24 67.8684 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -82,7 +82,7 @@
 			)
 		)
 		(property "Sheetfile" "cmos_inv.kicad_sch"
-			(at 119.38 98.3746 0)
+			(at 142.24 102.1846 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects

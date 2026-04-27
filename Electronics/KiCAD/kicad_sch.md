@@ -14,6 +14,29 @@
 - The `lib_symbols` section embeds the schematic's symbol definitions, making the schematic more portable than older KiCad formats that depended on a separate cache library.
 - KiCad's public file format docs currently describe the S-expression schematic format for KiCad 6.0 and newer; this repository contains KiCad 10 files with `(version 20260306)` and `(generator_version "10.0")` in files saved by Eeschema.
 
+## Hierarchical Sheets and Labels
+
+- A hierarchical sheet is stored as a `(sheet ...)` object in the parent schematic. It has `(at X Y [ANGLE])`, `(size WIDTH HEIGHT)`, drawing style, a `uuid`, mandatory `Sheetname` and `Sheetfile` properties, optional sheet pins, and an `instances` block.
+- `Sheetname` is the visible logical name of the sheet instance. `Sheetfile` is the referenced child schematic file, for example `cmos_xor2.kicad_sch` or `cmos_inv.kicad_sch`.
+- A sheet can reference the same `Sheetfile` as another sheet instance. KiCad distinguishes instances by UUID path, not only by file name.
+- A sheet pin is stored inside the parent sheet object as `(pin "NAME" TYPE (at X Y ANGLE) ...)`. Valid pin types are `input`, `output`, `bidirectional`, `tri_state`, and `passive`.
+- Each sheet pin must match a `(hierarchical_label "NAME" ...)` inside the referenced child schematic. The name is the connection contract between the parent sheet pin and the child schematic label.
+- In the child schematic, use `hierarchical_label` for ports that are meant to be connected from a parent sheet. For example, a reusable `CMOS_XOR2` child should expose hierarchical labels such as `A`, `B`, `Y`, `VDD`, and `VSS` if those are to be connected by parent sheets.
+- In the parent schematic, wires connect to the sheet pins, not directly to objects inside the child schematic. The child internals are connected only through matching hierarchical labels.
+- For a hierarchical `CMOS_XNOR2`, the parent sheet should contain one `CMOS_XOR2` sheet and one `CMOS_INV` sheet. Wire `A` and `B` to the XOR sheet inputs, wire the XOR sheet `Y` pin to the inverter sheet `A` pin, wire the inverter sheet `Y` pin to the XNOR output, and connect both sheets to the same `VDD` and `VSS` nets.
+- A root schematic uses `(sheet_instances (path "/" (page "...")))`. Each child sheet has its own `instances` block with project/path/page information. The path uses the root schematic UUID plus sheet UUIDs to identify the exact hierarchy instance.
+
+## Labels
+
+- A local label is stored as `(label "TEXT" ...)`. It connects only within the current schematic sheet.
+- A global label is stored as `(global_label "TEXT" (shape TYPE) ...)`. It is visible across all schematics in a design and is useful for shared nets such as `VDD`, `VSS`, `GND`, clocks, or other intentional design-wide nets.
+- A hierarchical label is stored as `(hierarchical_label "TEXT" (shape TYPE) ...)`. It defines a child schematic port and must correspond to a same-named sheet pin in the parent sheet object.
+- Sheet pins and labels use the same shape/type vocabulary: `input`, `output`, `bidirectional`, `tri_state`, and `passive`.
+- Use hierarchical labels for subcircuit interfaces. Use global labels only when the net is intentionally global across the project. Do not use global labels as a shortcut for ordinary point-to-point hierarchy wiring, because that hides the parent-child contract.
+- For CMOS subcircuits, prefer explicit hierarchical labels for signal ports (`A`, `B`, `Y`, `S`, etc.). For supply ports, either expose `VDD` and `VSS` as hierarchical labels/sheet pins or use intentionally named global labels consistently across every sheet.
+- Labels and sheet pins still require physical wire contact at their anchor point. Place label anchors, sheet pins, and wire endpoints on the same schematic grid so KiCad recognizes the connection.
+- The shape/type is not just cosmetic. Use `input` for consumed signals, `output` for driven outputs, `bidirectional` where both directions are possible, and `passive` for supply pins or ambiguous/pass-through nets when that better matches ERC expectations.
+
 ## Grid Alignment
 
 - KiCad schematic coordinates are stored in millimeters, not in screen pixels or arbitrary integer grid units.
