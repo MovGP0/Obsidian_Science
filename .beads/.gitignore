@@ -9,9 +9,32 @@
 daemon.lock
 daemon.log
 daemon.pid
+daemon.*
 bd.sock
+bd.sock.startlock
 sync-state.json
 last-touched
+dolt-server.pid
+dolt-server.log
+dolt-server.lock
+dolt-server.port
+dolt-server.activity
+*.gate.lock*
+*.lock
+
+# Dolt runtime and recovery files
+.env
+dolt/
+embeddeddolt/
+proxieddb/
+backup/
+export-state/
+export-state.json
+last_pull
+ephemeral.sqlite3
+.beads-credential-key
+proxied_server_client_info.json
+*.corrupt.backup/
 
 # Local version tracking (prevents upgrade notification spam after git ops)
 .local_version
