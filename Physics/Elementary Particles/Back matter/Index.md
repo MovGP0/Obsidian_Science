@@ -1,0 +1,1007 @@
+﻿---
+title: "Index"
+source_pdf: "D:\\GitHub\\books\\Griffiths Introduction to Elementary Particles.pdf"
+source_page: "384"
+pdf_page: 392
+bead: "Obsidian_Electronics-bl48.116"
+---
+
+> [!TLDR]
+> This index lists the book's subjects, names, cross-references, and original printed page numbers.
+
+<!-- PDF page 392; printed page 384 -->
+
+- A: *see* Conservation laws; Baryon number
+- ABC theory, 201–213
+- Abelian, 106, 354
+  - *See also* Gauge invariance; Groups
+- Accelerator, 4
+- Adjoint, 223, 228
+- Allowed energies, 148
+- α: *see* Fine structure constant
+- αₛ, 61, 77, 165, 279, 294
+- α𝑤, 76, 302, 309
+- α particle: *see* Particles
+- Amplitude, 119, 189, 194–195, 200–201, 229, 231
+- Anderson, C. D., 18, 20, 29
+- Angular momentum, 103
+  - addition, 109–113
+  - eigenfunctions: *see* Spherical harmonics
+  - eigenvalues, 146
+  - matrices: *see* Spin matrices
+  - orbital, 107–109, 153, 252
+  - spin, 103, 107–109, 116, 252
+- Annihilation: *see* Pair annihilation
+- Anomalous magnetic moment
+  - electron, 17, 153, 156, 232
+  - proton, 156–157
+- Anticommutator, 139, 216
+- Antielectron: *see* Positron
+- Antineutrino, 24, 26–28, 124–125
+- Antineutron, 21
+- Antiparticle, 3, 18–22, 36–37, 135, 217, 220–221
+- Antiproton, 21, 30–31, 96–97
+- Antisymmetric state, 112, 118, 174–180
+- Antisymmetric tensor, 100, 224
+- Antisymmetrization, 231
+- Associated Laguerre polynomial, 149
+- Associated Legendre function, 147
+- Associated production, 32–33
+- Asymptotic freedom 62–64, 164–165, 209, 279, 292–295
+- Axial vector, 126–127, 224, 302–303, 324
+
+- B: *see* Beauty
+- B meson, 44, 79, 167
+- b quark, 44, 122
+- Bare: *see* Charge; Coupling constant; Mass
+- Barn, 200
+- Baryon, 17, 29, 34, 36
+  - decuplet, 34–36, 38, 111, 179
+  - magnetic moment, 180–182
+  - mass, 182–184
+  - number: *see* Conservation laws
+  - octet, 33, 39, 111, 179–180
+- Beautiful baryon, 44
+- Beautiful meson, 44
+- Beauty, 44, 47
+- Beta decay, 22–24, 27, 46, 52, 56, 301, 309–314
+- β particle: *see* Electron
+- Bethe, H. A., 155, 159, 208
+- Bevatron, 21, 96
+- Bhabha scattering, 57–59, 78, 232, 234
+- Bilinear covariants, 222–225
+- Bispinor: *see* Dirac spinor
+- Bjorken, J. D., 42, 269
+- Bjorken scaling, 269–273, 294–295
+- Bohr, N., 13, 23, 149, 151
+- Bohr energies, 148, 186
+- Bohr magneton, 153
+
+<!-- PDF page 393; printed page 385 -->
+
+- Bohr model, 13
+- Bohr radius, 149
+- Bohr theory, 149–151
+- Boson, 109, 175
+- Bottom: *see* Beauty
+- Bottomonium, 143–144, 167–168
+  - *See also* Υ meson
+- Bound state, 2, 39, 42, 52, 143–188
+- Branching ratio, 72, 190, 316
+- Brookhaven, 32, 42, 132
+- Breit frame, 102
+- Brick wall frame: *see* Breit frame
+- Broken symmetry, 336
+  - *See also* Gauge invariance
+- Bubble chamber, 35
+
+- C: *see* Charm; Charge, conjugation
+- c quark, 42–44, 122
+- Cabibbo, N., 70, 317
+- Cabibbo angle, 301, 314, 317–321
+- Cabibbo theory, 317–322
+- Callan–Gross relation, 270–273
+- Casimir's trick, 236–238, 253
+- Center of momentum, 96–98
+- Central potential, 146
+- Centrifugal barrier, 147, 159
+- CERN, 6, 40, 44, 46, 67, 323–325, 327
+- Chadwick, J., 14
+- Charge
+  - bare, 63, 249
+  - conjugation, 103, 128–130, 134–135, 162, 222, 252
+  - conservation: *see* Conservation laws
+  - effective, 63, 249
+  - electric, 47, 60, 118
+  - independence, 117
+  - renormalization, 246–250
+  - weak, 65
+  - *See also* Coupling constant
+- Charged weak interactions, 301–304
+- Charm, 42–44, 47, 165
+- Charmed baryons, 43–45
+- Charmed mesons, 43–44
+- Charmonium, 44, 143–144, 162–169
+  - *See also* ψ meson
+- Chiral states, 330–333
+- Chromodynamics, 55–56, 355–357
+  - *See also* Quantum chromodynamics
+- Clebsch–Gordan coefficients, 111–112
+- Cloud chamber, 7, 20
+- CM: *see* Center of momentum
+- Coleman–Glashow formula, 53
+- Colliding beams, 6, 46, 98–99
+- Collisions, 91–93
+- Color, 41–42, 60–61, 64, 74, 261–262, 279
+  - factor, 164, 285–289, 291
+  - octet, 280, 285–286
+  - sextet, 288
+  - singlet, 178, 188, 280–281, 284–286, 289, 291, 298
+  - SU(3), 178, 281, 355–356
+  - triplet, 287–288
+- Colorless particle, 41, 64–65, 280–281
+  - *See also* Color, singlet
+- Commutator, 139
+- Completeness, 217, 221, 229, 237
+- Compton, A. H., 15
+- Compton
+  - scattering, 15–16, 58, 78, 102, 232, 235–236
+  - wavelength, 15, 63
+- Confinement, 40, 42, 64–65, 286, 289, 295–296
+- Conservation laws, 72–76, 79, 103, 105
+  - angular momentum, 105
+  - baryon number, 29–31, 72–74, 77, 118
+  - charge, 32, 72–73, 105, 128, 226, 313
+  - color, 74
+  - electron number, 27, 47, 74, 317
+  - energy, 51–52, 60, 91–92, 105, 203, 230
+  - flavor, 67, 74–75
+  - isospin, 117–120
+  - lepton number, 26–27, 31
+  - mass, 91–92
+  - momentum, 91–92, 105, 203, 230
+  - muon number, 27, 74, 317
+  - parity, 125–128
+  - quark number, 74
+  - strangeness, 32–34, 74–75, 118
+  - tau number, 47, 74, 317
+- Conserved current, 313
+- Continuity equation, 226, 347
+- Contraction of indices, 87
+- Contraction theorems, 239
+- Contravariant four-vector, 85, 214
+- Cosmic rays, 4, 18–20, 29, 100
+- Coulomb force, 57
+- Coulomb gauge, 227–229, 281, 302
+- Coulomb potential, 148, 164, 194, 285, 287
+- Coupling constant, 61, 202
+  - bare, 249
+  - dimensions, 230
+  - effective, 63, 209–210
+  - electromagnetic, 62–63, 230, 336, 359
+  - renormalized, 247–248, 292
+  - running, 67, 77, 209–210, 249, 292, 294–295
+  - strong, 61, 77, 279, 359
+  - weak, 77, 302, 309, 324, 335–337
+  - *See also* Charge
+- Covariant derivative, 349, 352, 356, 365
+- Covariant four-vector, 85–86, 214, 251
+- Cowan, C. L., 26
+- CP violation, 130–134, 321
+- Cronin, J. W., 132–133, 135
+- Crossing symmetry, 21–22, 58
+- Cross section, 119, 189–194, 378
+  - *See also* Golden rule, for scattering
+  - A + A → B + B, 204–206
+  - hard sphere, 193
+  - Mott, 241
+  - nucleon–nucleon, 119
+
+<!-- PDF page 394; printed page 386 -->
+
+- Cross section (*Continued*)
+  - pair annihilation (QCD), 292
+  - pair annihilation (QED), 164, 187, 245, 261
+  - pion–nucleon, 119–120, 140
+  - Rutherford, 194, 241
+  - two-body, 199–201
+- Current
+  - charged weak, 332
+  - color, 357
+  - conserved, 226, 313
+  - electromagnetic, 225–227, 333, 335–336, 349
+  - weak hypercharge, 334–335
+  - weak isospin, 334–335
+  - Yang–Mills, 354
+- Cutoff, 208, 247
+- CVC hypothesis, 313
+- Cyclotron formula, 7
+
+- D meson, 44, 76, 79, 166
+- Dₛ meson: *see* F meson
+- d quark, 37, 122
+- D'Alembertian, 227
+- Davis, R., 26
+- De Broglie wavelength, 6
+- Decay rate, 189–190, 195–198, 377
+  - kaon, 318
+  - muon, 304–309
+  - neutron, 311–312
+  - pion, 316
+  - positronium, 164, 245–246
+  - quarkonium, 292
+  - two-body, 197–198
+- Decays, 2, 3, 72–76, 93–94, 241
+- Decuplet: *see* Baryon, decuplet
+- Deep inelastic scattering, 40, 48, 257–258, 266–273
+- Degeneracy, 149
+- Delbrück scattering, 78
+- Δ, 31, 34, 69, 120
+- Delta function: *see* Dirac delta function
+- Density of states, 194
+  - *See also* Phase space
+- DESY, 67
+- Detailed balance, 21–22, 134
+- Detectors, 7
+- Deuteron, 118, 143
+- Differential cross section, 192, 200, 245
+- Differential decay rate, 195
+- Dimensions
+  - amplitudes, 200–201
+  - coupling constants, 202, 230
+  - fields, 347
+- Dipole function, 267
+- Dipole moments: *see* Electric dipole moment; Magnetic moment
+- Diquarks, 289
+- Dirac, P. A. M., 18, 208–209, 214–215
+- Dirac delta function, 157, 195–196, 203, 230–231, 373–376
+- Dirac equation, 18, 213–222
+  - momentum space, 218, 228
+- Dirac matrices, 215, 380
+  - *See also* Gamma matrices
+- Dirac sea, 18–21, 217
+- Dirac spinor, 216, 226
+- Disconnected diagram, 207
+- Discrete symmetry, 103
+- Dot product, 86
+- Down quark: *see* d quark
+- Downness, 47
+- Drell–Yan process, 295
+- Dresden, M., 201
+
+- Effective charge: *see* Charge
+- Effective mass: *see* Mass
+- Eigenfunction, 146
+- Eigenvalue, 114, 146
+- Eigenvector, 114
+- Eight-baryon problem, 121
+- Eightfold Way, 33–39, 107, 121–122
+- Einstein, A., 14–15, 76
+- Einstein summation convention, 64
+- Elastic collision, 91–92
+- Electric dipole moment, 135
+- Electric form factor, 267
+- Electrodynamics, 55–56, 225–228
+  - *See also* Quantum electrodynamics
+- Electromagnetic current: *see* Current
+- Electromagnetic decay, 241
+- Electromagnetic field, 225
+- Electromagnetic force, 55–56
+- Electromagnetic potential, 226
+- Electron, 4, 11–12, 230
+- Electron number: *see* Conservation laws
+- Electron–deuteron scattering, 278
+- Electron–electron scattering: *see* Møller scattering
+- Electron–muon scattering, 232–233, 238–240
+- Electron–neutron scattering, 276, 278
+- Electron–positron scattering
+  - elastic: *see* Bhabha scattering
+  - inelastic, 257–262, 327–330
+- Electron–positron annihilation: *see* Pair annihilation
+- Electron–proton scattering
+  - elastic, 262–267, 269
+  - inelastic, 266–269
+- Electroweak force, 3, 46, 56, 322, 330–337
+  - *See also* GWS theory
+- Electroweak interference, 326, 330
+- Elementary particles, 1
+  - *See also* Particles
+- Energy
+  - conservation: *see* Conservation laws
+  - kinetic, 90–92, 152
+  - operator, 145; *see also* Hamiltonian
+  - relativistic, 87–91, 152
+  - rest, 90
+- Energy-momentum four-vector, 89
+- η meson, 38–39, 170
+
+<!-- PDF page 395; printed page 387 -->
+
+- η′ meson, 38–39, 170, 172, 188
+- Euler–Lagrange equation, 344–345
+- Exchange of particles, 16, 57, 61
+  - *See also* Mediator
+- Exclusion principle: *see* Pauli
+- Exotic atom, 159
+- Exotic particle, 53
+- Expectation value, 151–152, 186
+- External line, 58–60, 229–231, 282–283
+
+- F meson, 44 (now called Dₛ)
+- Faddeev–Popov ghost, 282
+- Family: *see* Generation
+- Fermi, E., 23, 56, 120
+- Fermi constant (Gꜰ), 307–309
+- Fermi's Golden Rule: *see* Golden Rule
+- Fermi theory of beta decay, 23–24, 44, 46, 56, 307–308
+- Fermion, 109, 175
+- Feynman, R. P., 3, 21, 27, 56, 155, 203, 208
+- Feynman calculus, 59, 189–212, 361–362
+- Feynman diagram, 55, 57, 59, 189, 194, 201, 203
+- Feynman rules, 3, 59, 194, 213, 357–360, 381–384
+  - ABC theory, 201–204
+  - GWS, 336–337
+  - QCD, 279–284
+  - QED, 213, 228–231, 255
+  - weak interactions, 302, 317–318, 322
+- Feynman–Stückelberg interpretation, 21
+- Field strength tensor, 225
+- Fifth force, 296
+- Fine structure, 151–155
+- Fine structure constant, 9, 59, 148, 152, 230, 249, 294, 309
+- Flavor, 41–44, 47, 53, 64, 116–122, 279, 280
+- Flavordynamics, 55–56, 67
+- Form factor, 266–269, 312, 315
+- Four-momentum, 89
+- Four-vector, 84–87
+- Four-velocity: *see* Proper velocity
+- ft-value, 312
+- Fundamental representation, 121, 171
+
+- G: *see* G-parity
+- Gꜰ: *see* Fermi constant
+- Gamma matrices, 216, 224, 238–239, 380
+- Gamma rays: *see* Photon
+- Gauge fields, 348–349, 352, 356
+- Gauge invariance, 253, 298
+  - abelian, 354
+  - broken, 362–365
+  - global, 348, 350, 352, 354
+  - local 348–350, 352, 354, 365–367
+  - nonabelian, 354–355
+- Gauge theory, 210, 343–371
+- Gauge transformation, 105, 226–227, 348–349
+- Gell-Mann, M., 32–34, 36–37, 56, 131–132
+- Gell-Mann matrices 282, 355
+- Gell-Mann–Nishijima formula, 118, 140, 334
+- Gell-Mann–Okubo mass formula, 52
+- Generation, 47–48, 317, 321–322
+- Ghost particle, 228, 282, 367
+- GIM mechanism, 44, 70–71, 301, 319–320, 322
+- Glashow, S. L., 42–44, 56, 70, 322–323, 330
+- Global gauge transformation, 348, 352, 354
+- Glueball, 48, 61
+- Gluon, 48, 55–56, 60–61, 260, 275, 279–281
+  - octet, 280
+- Gluon–gluon coupling, 61, 282–284, 291, 299, 359–360
+- Golden Rule, 189, 194–201, 305
+  - for decays, 195, 305
+  - for scattering, 198–199
+- Goldstone boson, 364, 366–367
+- Goldstone's theorem, 364, 371
+- G-parity, 129–30
+- Grand Unification, 31, 76–77
+- Gravitational force, 55
+- Graviton, 16, 48, 55–56
+- Greenberg, O. W., 41
+- Ground state
+  - baryon, 176
+  - hydrogen, 186
+  - *See also* Vacuum
+- Group theory, 103, 106
+- Groups, 106
+  - abelian, 106
+  - continuous, 106
+  - finite, 106
+  - infinite, 106
+  - O(n), 106, 137
+  - SO(3), 107
+  - SO(n), 106–107, 137
+  - SU(2), 107, 121, 352
+    - *See also* Isospin
+  - SU(2) × U(1), 334–337, 355
+  - SU(3), 103, 107, 121
+    - *See also* Eightfold Way; Color, SU(3)
+  - SU(6), 103, 121
+  - SU(n), 106, 137
+  - U(n), 106
+- GUTs; *see* Grand Unification
+- GWS (Glashow/Weinberg/Salam) theory, 3, 46, 48, 56, 66, 76, 210, 301, 322–325, 330–337
+- Gyromagnetic ratio, 153, 156
+
+- Hadron, 28, 33, 143
+  - *See also* Baryon; Meson
+- Hadron production, 257–262
+- Half-life, 72, 211, 312
+- Hamiltonian, 146, 151–153, 158, 160, 252
+- Hard-sphere scattering, 191–193
+- Heaviside–Lorentz units, 9, 230, 249, 347
+- Heavy lepton, 44
+- Heavy quark, 165, 172
+- Helicity, 27, 124, 221, 330–333, 339
+
+<!-- PDF page 396; printed page 388 -->
+
+- Heisenberg, W., 116
+  - *See also* Uncertainty principle
+- Hermitian conjugate, 220, 223
+- Hermitian matrix, 351, 355
+- Hidden symmetry, 364
+- Higgs mechanism, 76, 330, 343, 354, 360, 365–368
+- Higgs particle, 48, 367
+- Higher-order processes, 58, 63, 202, 206–210, 246–250, 281, 292–294
+- Hole theory, 20–21
+- t'Hooft, G., 210, 323, 360
+- Hydrogen, 143, 148–159
+- Hypercharge, 34, 334–335
+  - *See also* Weak hypercharge
+- Hyperfine splitting
+  - in baryons, 182–184
+  - in hydrogen, 156–159
+  - in mesons, 172
+  - in positronium, 161
+
+- Identical particles, 1, 41, 175–176
+- Impact parameter, 191
+- Inclusive cross section, 267–269
+- Indistinguishable particles, 1
+- Inertial frame, 81
+- Infinite momentum frame, 272
+- Intermediate vector boson, 46, 56, 335
+  - *See also* W; Z
+- Internal line, 58–60, 202, 229
+- Internal momenta, 203, 231
+- Internal quantum number, 128
+- Internal symmetries, 103, 105, 116–120
+- Intrinsic angular momentum: *see* Angular momentum, spin
+- Intrinsic parity: *see* Parity
+- Intrinsic strength of weak force, 76, 309
+- Intersecting storage rings, 6
+- Invariance, 105
+  - *See also* Symmetry
+- Invariant, 85, 88–89, 94, 97, 281
+- Inverse beta decay, 26, 303
+- Inversion, 125–126
+- Ionization, 7
+- Irreducible representation, 107
+- Isospin, 103, 116–120, 335
+  - *See also* Weak isospin
+
+- J/ψ: *see* ψ meson
+- Jets, 48, 258–260
+
+- K meson, 29–38, 128, 131–133, 318
+- Kaon: *see* K meson
+- Ket, 3, 109
+- Klein–Gordon equation, 213–215, 227
+- KM matrix: *see* Kobayashi–Maskawa matrix
+- Kobayashi–Maskawa matrix, 70–71, 133, 301, 321–322, 325
+- Kronecker delta, 139
+- Lagrangian, 343–347
+  - classical, 343–344
+  - Dirac, 345–346
+  - Higgs, 367
+  - Klein–Gordon, 345
+  - Maxwell, 347
+  - Proca, 346–347
+  - QCD, 357
+  - QED, 350
+  - Yang–Mills, 354
+  - Yukawa, 371
+- Lagrangian density, 344, 347
+  - *See also* Lagrangian
+- Lamb, W. E., 32, 154
+- Lamb shift, 17, 154–156, 161, 209, 249, 294
+- Λ (scale parameter in QCD), 295
+- Λ baryon, 29, 32–35, 70
+- λ matrices: *see* Gell-Mann matrices
+- Laplacian, 146
+- Lederman, L. M., 28, 132
+- Lee, T. D., 56, 122, 128
+- Left-handed doublet, 334–335
+- Left-handed state, 27, 124, 330–334
+- Lepton number, 26–27
+  - *See also* Conservation laws
+- Leptonic decay, 318
+- Leptons, 17–18, 28, 65–67
+  - families, 47
+  - table, 28, 47
+  - weak interactions, 301–304, 317
+  - *See also* Electron; Muon; Neutrino; Tau
+- Levi–Civita symbol, 139, 239, 254, 303
+- Lifetime, 42, 52, 72–73, 75–76, 132, 189–190
+  - A particle, 204
+  - muon, 307
+  - neutron, 312–314
+  - pion, 316
+  - positronium, 164, 187, 246
+  - *See also* Decay rate
+- Light quark baryons, 172–184
+- Light quark mesons, 143, 168–172
+- Lightlike four-vector, 86
+- Linear-plus-coulomb potential, 165–167
+- Local gauge invariance, 3, 343, 348–350, 352, 360
+- Local gauge transformations, 348, 365
+- Logarithmic divergence, 208, 247
+- Longitudinal polarization, 301
+- Loop diagram, 207–210, 231, 246, 255, 281–282, 292–294
+- Lorentz condition, 226–229, 281, 301–302
+- Lorentz contraction, 83
+- Lorentz invariance, 85–86, 97
+- Lorentz transformations, 81–84
+- Lowering operator, 140
+- Luminosity, 194, 245–246
+
+- Magnetic form factor, 267
+- Magnetic moment, 153
+  - anomalous: *see* Anomalous magnetic moment
+
+<!-- PDF page 397; printed page 389 -->
+
+  - baryons, 180–182
+  - electron, 17, 153, 156
+  - proton, 156–157
+- Mandelstam variables, 102
+- Marshak, R. E., 18
+- Mass formulas
+  - baryons, 182–184
+  - Coleman–Glashow, 53
+  - Gell-Mann–Okubo, 52
+  - mesons, 172
+  - pion, 51
+  - quarkonium, 165
+  - W and Z, 325
+- Mass
+  - bare, 122
+  - constituent, 122
+  - current, 122
+  - effective, 121–122, 209–210
+  - matrix, 351, 371
+  - neutral kaon, 132, 135
+  - origin, 368
+  - physical, 209
+  - relativistic, 90, 92
+  - renormalized, 209, 247
+  - running, 209
+  - shell, 60
+  - term, 360–362
+- Massless particle, 90
+- Matrix element, 194
+  - *See also* Amplitude
+- Matter–antimatter asymmetry, 22, 134
+- Maximal parity violation, 123, 133, 303
+- Maxwell, J. C., 56, 76
+- Maxwell Lagrangian, 347
+- Maxwell's equations, 225–228
+- Mechanics, 2
+- Mediator, 16, 47–48, 55–57, 61, 301, 308–309
+  - *See also* Gluon; Graviton; Intermediate vector boson; Photon; Pion; W; Z
+- Meson, 17–18, 29, 31, 33–34, 36, 38–39, 128, 168–72
+  - mass, 171–172
+  - nonet, 36, 38–39, 128, 169
+  - octet, 34
+- Metric, 85, 216
+- Millikan, R. A., 15, 39
+- Minkowski metric: *see* Metric
+- Minimal coupling, 350
+- Mixing
+  - Cabibbo, 70–71, 74, 317–322
+  - Kobayashi–Maskawa, 70–71, 321–322, 325
+  - neutral kaons, 130–134
+  - neutral mesons, 170–171
+- Møller scattering, 57–58, 232–233
+- Momentum
+  - conservation: *see* Conservation laws
+  - four-vector, 89
+  - operator, 144, 214
+  - relativistic, 87–91
+  - space, 218, 228–229, 358
+- Mott scattering, 232–233, 240–241, 265, 270, 309, 313
+- Multiplets, 117–118
+- Multiplicative quantum number, 127, 129
+- Muon, 4, 18–19, 24–25, 27, 66, 100, 304–309
+- Muon number, 27, 47
+  - *See also* Conservation laws
+- Muonium, 159–160, 168
+
+- N: *see* Nucleon
+- n: *see* Neutron
+- Neddermeyer, S., 18
+- Ne'eman, Y., 33
+- Negative energy states, 18, 217–218, 221
+- Neutral weak interactions, 65–67, 322–324, 326
+- Neutrino, 14, 19, 22–28, 124–125
+- Neutrino–electron scattering, 303, 323–327
+- Neutrino–nucleon scattering, 323–324
+- Neutron, 14, 24, 27, 68, 116, 135, 309–315
+- Ninth gluon, 280–281, 296, 356
+- Noether's theorem, 103, 105, 117, 370
+- Nonabelian gauge, 354–355
+- Nonet: *see* Meson, nonet
+- Nonleptonic decay, 318–319
+- Normalization
+  - Dirac spinor, 218, 220–221, 225, 229
+  - Pauli spinor, 113
+  - polarization vector, 229
+  - wave function, 145
+- November Revolution, 41–45, 166
+- Nucleon, 116
+  - *See also* Neutron; Proton
+- Nucleon–nucleon scattering, 118–119
+- Nucleus, 12–14
+
+- O(n): *see* Groups
+- Octet, 35
+  - *See also* Baryon, octet; Color, octet; Gluon, octet; Meson, octet
+- Ω⁻, 34–36, 52–53, 70
+- ω, 170, 172
+- Orthogonal matrix, 107
+- Orthogonal polarization vectors, 229
+- Orthogonal spinors, 228, 251
+- OZI rule, 75–76, 79, 166–167, 294
+
+- P: *see* Parity, operator
+- Pair annihilation, 58, 161–162, 215, 232, 241–245, 257–262, 289–292
+- Pair production, 58, 215, 232
+- Pais, A., 32, 131–132
+- Parity, 103, 122–128, 130–131, 134, 223–224
+  - baryon, 127
+  - conservation, 125, 127–128
+  - intrinsic, 127
+  - invariance, 122–123
+  - meson, 127–128
+  - operator, 125–127, 224
+  - particle and antiparticle, 127, 252
+  - photon, 127
+
+<!-- PDF page 398; printed page 390 -->
+
+- Parity (*Continued*)
+  - quarks, 127
+  - violation, 123, 131
+- Particle Data Booklet, 50, 111
+- Particles
+  - α, 12–13, 141
+  - antineutrino, 24, 26–28, 124–125
+  - antineutron, 21
+  - antiproton, 21, 30–31, 96–97
+  - B meson, 44, 79, 167
+  - b (beauty or bottom) quark, 44, 122
+  - β: *see* Electron
+  - c (charm) quark, 42–44, 122
+  - D meson, 44, 76, 79, 166
+  - d (down) quark, 37, 122
+  - Δ, 31, 34, 69, 120
+  - deuteron, 118, 143
+  - electron, 4, 11–12, 230
+  - η, 38–39, 170
+  - η′, 38–39, 170, 172, 188
+  - F meson, 44 (now called Dₛ)
+  - γ: *see* Photon
+  - gluon, 48, 55–56, 60–61, 260, 275, 279–281
+  - graviton, 16, 48, 55–56
+  - J or J/ψ meson: *see* ψ meson
+  - K meson
+    - charged, 29, 31–38, 128, 318
+    - neutral, 29–30, 32–38, 131–133
+  - kaon: *see* K meson
+  - Λ, 29, 32–35, 70
+  - Λ𝑐, 44–45
+  - muon, 4, 18–19, 24–25, 27, 66, 100, 304–309
+  - neutrino, 14, 19, 22–28, 124–125
+  - neutron, 14, 24, 27, 68, 116, 135, 309–314
+  - nucleon, 116
+  - Ω⁻, 34–36, 52–53, 70
+  - ω meson, 170, 172
+  - φ meson, 75, 170, 172, 262–263
+  - photon, 14–17, 47, 55–57, 225–230
+  - π meson: *see* Pion
+  - pion, 18–19, 24–25, 27, 51, 68, 124–125, 211, 314–317
+  - positron, 14, 20–21, 217, 230
+  - proton, 4, 13, 29–34, 39–40, 77, 116, 262–275
+  - ψ meson, 42, 44, 75, 144, 262–263; *see also* Charmonium
+  - ρ meson, 170, 172
+  - s (strange) quark, 37, 122
+  - Σ, 31–33, 182–184
+  - t (top or truth) quark, 44, 47, 122
+  - τ lepton, 44, 47, 261
+  - u (up) quark, 37, 122
+  - Υ meson, 44, 79, 144, 167–169, 262–263
+  - W, 44–47, 55–56, 301
+  - Ξ, 31, 33, 35, 78, 182–184
+  - Z, 6, 46–47, 55–56, 301, 340
+- Parton model, 269–273
+- Partons, 42, 270
+  - *See also* Gluon; Quark
+- Pauli, W., 23, 125, 208, 215
+- Pauli matrices, 115, 139, 216, 334, 351, 379
+- Pauli principle, 1, 3, 18, 41, 174–176
+- PCAC hypothesis, 313, 319
+- Perturbation theory, 59
+  - nonrelativistic, 143, 151
+  - relativistic: *see* Feynman calculus
+- Perturbative QCD, 279, 295
+- Phase transformation: *see* Gauge transformation
+- Phase space, 194–195
+- φ meson, 75, 170, 172, 262–263
+- Photoelectric effect, 15
+- Photon, 14–17, 47, 55–57, 225–230
+- Pion, 18–19, 24–25, 27, 51, 68, 124–125, 211, 314–317
+- Pion decay constant, 315–316
+- Planck, M., 14
+- Planck formula, 14, 90, 149
+- Planck's constant, 14, 108
+- Plane waves, 218, 227
+- Polar vector, 126–127
+- Polarization, 62–63, 227–229
+- Polarization vector, 227–229
+- Positron, 14, 20–21, 217, 230
+- Positronium, 143, 159–64, 245–246
+- Potential
+  - Coulomb, 148, 164, 194, 285, 287
+  - four-vector, 226–228
+  - interquark, 165–167, 279, 284–289
+  - linear-plus-coulomb, 165–167
+  - scalar, 226
+  - vector, 226–228
+- Potential energy term, 361, 363
+- Powell, C. F., 18–19, 24–25, 29, 31
+- Primitive vertex: *see* Vertex
+- Proca equation, 213, 346
+- Projection matrix, 339
+- Propagator, 203, 357
+  - electron, 230
+  - gluon, 283
+  - modified, 247
+  - photon, 230
+  - quark, 283
+  - spin zero, 203, 358
+  - spin one-half, 203, 358
+  - spin one, massive, 302, 358
+  - spin one, massless, 230, 359
+  - unstable particle, 329
+  - W and Z, 302, 325, 329
+- Proper time, 87
+- Proper velocity, 88
+- Proton, 4, 13, 29–34, 39–40, 77, 116, 262–275
+- Pseudoscalar, 126–127, 223–224
+- Pseudoscalar mesons, 34, 110, 169–172
+- Pseudovector: *see* Axial vector
+- ψ meson, 42, 44, 75, 144, 262, 263
+  - *See also* Charmonium
+
+- Q: *see* Charge, electric
+- Quantum chromodynamics (QCD), 3, 55–56, 60–65, 164, 279–299, 355–357
+
+<!-- PDF page 399; printed page 391 -->
+
+- Quantum electrodynamics (QED), 3, 18, 55–60, 63, 153, 155, 213–255
+- Quantum field theory, 2, 3, 10, 16, 21, 135, 175, 189, 213, 343, 357
+- Quantum mechanics, 2, 3, 143–148, 189
+- Quark
+  - confinement: *see* Confinement
+  - distribution functions, 273–276
+  - masses, 53, 122
+  - model, 37–44
+  - number, 74
+  - search, 39–40
+  - table, 47, 122
+  - weak interactions, 317–322
+  - *See also* particles
+- Quark–quark interaction, 284–289
+- Quarkonium, 160, 162–169
+  - *See also* Bottomonium; Charmonium
+- Quasi-bound state, 162–163, 166
+
+- R, 261–263
+- Rabi, I. I., 29, 149
+- Radial equation, 147
+- Radiative corrections, 155
+- Raising operator, 140
+- Range, 17, 51–52
+- Reactor, 4, 26
+- Real particle, 59–60
+- Reduced mass, 160
+- Reflection, 125–126
+- Regularization, 208
+- Relativistic correction, 151–152
+- Relativistic mechanics, 2, 87–99
+- Relativity, 3, 81–82
+- Reines, F., 26
+- Renormalization, 156, 209–210, 246–250, 360
+- Representation, 107, 116
+- Resonance, 120, 140, 191, 262–263
+- ρ meson, 170, 172
+- Richter, B., 42
+- Right-handed state, 27, 124, 331–333
+- Rochester, G. D., 29–30
+- Rosenbluth formula, 266, 268–269
+- Rotation, 105–106
+- Rotation group, 107
+  - *See also* Groups
+- Rotation matrix, 115, 137, 139
+- Rubbia, C., 46, 327
+- Running coupling constant: *see* Coupling constant
+- Rutherford, E., 12–13, 249
+- Rutherford scattering, 12–13, 40, 193–194, 232–233, 240–241, 309, 313
+- Rydberg formula, 151
+
+- S: *see* Strangeness
+- s (strange) quark, 37, 122
+- Salam, A., 56, 323, 330
+- Scalar, 87, 224
+  - *See also* Invariant
+- Scalar product, 86
+- Scaling: *see* Bjorken scaling
+- Scattering, 2
+  - *See also* Bhabha scattering; Collisions: Compton; Cross sections; Electron–muon scattering; Electron–positron scattering; Electron–proton scattering; Golden Rule; Møller scattering; Mott scattering; Neutrino–electron scattering; Rutherford scattering
+- Scattering amplitude, 119
+  - *See also* Amplitude
+- Scattering angle, 191–192
+- Schrodinger equation, 143–148, 213–214, 217
+- Schwinger, J. S., 56, 153, 155, 208
+- Screening, 62–64, 249, 294
+- Sea: *see* Dirac sea
+- Sea quarks, 275–276
+- Semileptonic decay, 67, 318–319
+- Separation of variables, 145–146
+- Sextet, 288
+- Σ, 31–33, 182–184
+- Simultaneity, 82
+- Singlet, 112, 118, 158–159
+  - *See also* Color, singlet
+- SLAC, 5, 8, 40, 258, 273, 327
+- Slash notation, 235–236, 238
+- SO(n): *see* Groups
+- Solar neutrinos, 26
+- Spacelike four-vector, 86
+- Spectator quark, 68, 70
+- Spectrum, 148, 150–151, 155, 162–163, 167
+- Spherical harmonics, 147–148, 186
+- Spin: *see* Angular momentum
+- Spin ½, 113–116
+- Spin matrices, 113–115, 139, 221
+- Spin and statistics, 175
+- Spin-averaged amplitude, 236
+- Spin–orbit coupling, 151, 153–154, 157
+- Spin–spin coupling: *see* Hyperfine structure
+- Spinor, 113–115
+  - *See also* Dirac spinor
+- Spontaneous symmetry-breaking, 323, 343, 360, 362–365
+- Stable particle, 72–73
+- Standard Model, 3, 46–48, 121–122, 322, 325, 350, 367–368
+- State, 3
+- Statistical factor, 195
+- Stevenson, E. C., 18
+- Storage rings, 5
+- Strange particles, 28–33
+- Strangeness, 32–34, 37–39, 47, 118
+- Street, J. C., 18
+- Strength, 55, 76, 78
+- Strong force, 17, 32–33, 55–56, 279
+- Structure constants, 282, 297
+- Structure functions, 264–276
+  - *See also* Quark, distribution functions; Form factor
+- Stückelberg, E. C. G., 21, 29
+- Subparticles, 48, 53
+
+<!-- PDF page 400; printed page 392 -->
+
+- Sum rules, 276, 278
+- Supermultiplet, 36, 43, 121, 171–80
+  - *See also* Baryon, decuplet; Baryon, octet; Meson, nonet
+- Su(n): *see* Groups
+- Symmetric state, 112, 118, 174
+- Symmetric tensor, 100
+- Symmetry, 103–141
+  - *See also* Gauge invariance; Groups; Invariance
+
+- T: *see* Time reversal
+- t quark, 44, 47, 122
+- τ lepton, 44, 47, 261
+- τ number, 47
+  - *See also* Conservation laws
+- τ–θ puzzle, 128
+- TCP theorem, 3, 135
+- Tensor, 86–87
+- θ𝑐: *see* Cabibbo angle
+- θ𝑤: *see* Weak mixing angle
+- Thomas precession, 153
+- Thomson, J. J., 11–12
+- Three-jet event, 258–260
+- Threshold, 22, 96–97, 101, 261–263
+- Time dilation, 83
+- Time reversal, 103, 134–135
+- Timelike four-vector, 86
+- Ting, C. C., 42
+- Top, 44, 47
+- Top quark: *see* t quark
+- Toponium, 167
+- Total cross section, 193
+- Trace, 237–239
+- Trace theorems, 238–239, 380
+- Transformation
+  - Dirac spinor, 222–223
+  - four-vector: *see* Lorentz transformations
+  - tensor, 86–87
+  - *See also* Charge, conjugation; Parity; Time reversal
+- Transition probability, 3
+- Translation, 105
+- Transverse gauge: *see* Coulomb gauge
+- Transverse polarization, 228
+- Tree-level diagram, 206, 249, 282
+- Triangle function, 101
+- Triplet, 112, 118, 158–159
+- Truth, 44, 47
+- Two-jet event, 258–259
+- Two-neutrino hypothesis, 27–28
+
+- u quark, 37, 122
+- U(n): *see* Groups
+- Uncertainty principle, 51–52, 73
+- Unification, 31, 76–78, 330–337
+  - *See also:* Electroweak force; Grand Unification; GWS theory
+- Unitary matrix, 106, 351
+- Units, 8, 9, 200–201, 230, 347
+- Up quark: *see* u quark
+- Upness, 47
+- Υ meson, 44, 79, 144, 167–169, 262–263
+
+- V–A interaction, 303, 324, 330
+- V-events, 29
+- Vacuum, 362–364
+- Vacuum polarization, 63, 156, 246, 293
+- Valence quarks, 275–276
+- Vector, 224
+- Vector interaction, 302–303, 309, 313, 324, 330, 332
+- Vector meson, 110, 169–172
+- Vector potential, 226–228
+- Velocity addition rule, 83, 88
+- Vertex, 73
+  - ABC, 201
+  - QCD, 60–61, 280, 282–283, 359
+  - QED, 56–57, 230, 359
+  - weak, 65–67, 69–71, 302, 317, 322, 336–337
+- Vertex factor: *see* Feynman rules; Vertex
+- Virial theorem, 144
+- Virtual particle, 58–60, 78, 257–258
+
+- W boson, 46–47, 48, 55–56, 301
+- Ward identity, 250
+- Wave function, 3, 145, 176, 214, 347
+- Weak force, 32, 55–56, 123, 301–341
+- Weak hypercharge, 333–335
+- Weak interaction, 65–72
+  - charged, 65, 67, 301–304, 317–322
+  - neutral, 66, 69, 322–330
+- Weak isospin, 333–335
+- Weak mixing angle, 324, 336
+- Weinberg, S., 56, 323, 330
+- Weinberg angle: *see* Weak mixing angle
+- Weyl, H., 125, 350, 354, 356
+- Work function, 15
+- Wu, C. S., 123
+
+- Ξ, 31, 33, 35, 78, 182–184
+
+- Yang, C. N., 56, 122, 128, 350
+- Yang–Mills theory, 350–355
+- Yukawa, H., 17–18, 47, 56
+- Yukawa coupling, 368
+- Yukawa meson, 14, 17–18, 47, 51, 65
+  - *See also* Pion
+
+- Z boson, 6, 46–47, 55–56, 301, 340
+- Zweig, G., 37
+
+<!-- PDF page 401; blank page after the index -->

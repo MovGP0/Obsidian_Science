@@ -1,0 +1,31 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="660" height="440" viewBox="0 0 660 440">
+  <rect width="660" height="440" fill="white"/>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0 0 L8 4 L0 8 Z" fill="black"/>
+    </marker>
+  </defs>
+  <g fill="none" stroke="black" stroke-width="2">
+    <path d="M200 390 Q205 220 295 70"/>
+    <path d="M420 400 Q415 245 500 85"/>
+    <g stroke-dasharray="6 6">
+      <path d="M250 390 Q255 220 345 70"/>
+      <path d="M310 395 Q315 225 405 75"/>
+      <path d="M365 397 Q370 230 460 80"/>
+      <path d="M125 190 Q335 85 570 140"/>
+      <path d="M120 265 Q330 163 565 218"/>
+      <path d="M110 370 Q315 255 560 320"/>
+    </g>
+    <path d="M211 290 L222 180" marker-end="url(#arrow)"/>
+    <path d="M337 299 L502 270" marker-end="url(#arrow)"/>
+  </g>
+  <circle cx="211" cy="290" r="4"/><circle cx="337" cy="299" r="4"/>
+  <g font-family="Georgia,serif" font-size="26" font-style="italic">
+    <text x="201" y="169">u<tspan baseline-shift="super" font-size="17">α</tspan></text>
+    <text x="484" y="254">ξ<tspan baseline-shift="super" font-size="17">α</tspan></text>
+    <text x="270" y="61">t</text><text x="477" y="77">t</text>
+    <text x="580" y="139">s</text><text x="576" y="218">s</text><text x="568" y="320">s</text>
+    <text x="187" y="425">γ<tspan baseline-shift="sub" font-size="17">0</tspan></text>
+    <text x="410" y="425">γ<tspan baseline-shift="sub" font-size="17">1</tspan></text>
+  </g>
+</svg>

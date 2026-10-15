@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="320" viewBox="0 0 840 320">
+<rect width="840" height="320" fill="white"/>
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 Z" fill="#444444"/></marker></defs>
+<path d="M100 115 L235 115" stroke="#444444" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<circle cx="100" cy="115" r="8" fill="white" stroke="#444444" stroke-width="2"/>
+<path d="M295 220 L238 160" stroke="#444444" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<circle cx="295" cy="220" r="8" fill="white" stroke="#444444" stroke-width="2"/>
+<path d="M600 100 L692 42" stroke="#444444" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<circle cx="600" cy="100" r="8" fill="white" stroke="#444444" stroke-width="2"/>
+<path d="M600 185 L701 260" stroke="#444444" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<circle cx="600" cy="185" r="8" fill="white" stroke="#444444" stroke-width="2"/>
+<g font-family="Georgia, Times New Roman, serif" font-size="25" font-style="italic" fill="#444444">
+<text x="93" y="154">A</text>
+<text x="288" y="256">B</text>
+<text x="562" y="109">C</text>
+<text x="562" y="194">D</text>
+</g><g font-family="Arial, sans-serif" font-size="22" fill="#222222" text-anchor="middle"><text x="210" y="303">Before</text><text x="649" y="303">After</text></g></svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="880" viewBox="0 0 680 880">
+<title>Relevant tracks in the omega-minus discovery bubble-chamber event</title>
+<rect width="680" height="880" fill="white"/>
+<g stroke="#222" stroke-width="2" fill="none">
+<path d="M120 850 Q130 790 133 718"/>
+<path d="M133 718 Q340 600 650 714"/>
+<path d="M146 684 Q165 425 205 52"/>
+<path d="M146 684 Q161 400 166 50"/>
+<path d="M139 703 Q158 563 154 445"/>
+<path d="M154 445 Q126 298 171 88"/>
+<path d="M154 445 Q129 328 92 50"/>
+<path d="M139 703 L104 534" stroke-dasharray="10 7"/>
+<path d="M146 684 L160 555" stroke-dasharray="10 7"/>
+<path d="M160 555 L174 365" stroke-dasharray="10 7"/>
+<path d="M160 555 L443 421" stroke-dasharray="10 7"/>
+<path d="M174 365 Q153 210 118 216 C38 178 29 306 111 299 C171 292 135 215 96 227"/>
+<path d="M174 365 Q177 218 236 62"/>
+<path d="M443 421 Q542 351 641 247"/>
+<path d="M443 421 Q545 385 645 432"/>
+</g>
+<g font-family="Times New Roman, serif" font-size="24" font-style="italic" fill="#222">
+<text x="145" y="867">K⁻</text><text x="148" y="735">Ω⁻</text>
+<text x="90" y="627">K⁰</text><text x="178" y="630">Ξ⁰</text>
+<text x="350" y="701">π⁻</text><text x="198" y="484">Λ⁰</text>
+<text x="135" y="390">γ</text><text x="337" y="501">γ</text>
+<text x="122" y="467">K⁺</text><text x="204" y="165">p</text><text x="135" y="64">π⁻</text>
+</g></svg>

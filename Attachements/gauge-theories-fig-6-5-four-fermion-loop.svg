@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="420" viewBox="0 0 400 420">
+  <title>Second-order four-fermion contribution to neutrino–electron scattering</title>
+  <desc>Two contact vertices are connected by an electron line and a neutrino line, forming a loop with momentum k.</desc>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 L 3 5 Z" fill="#222"/></marker></defs>
+  <rect width="400" height="420" fill="white"/>
+  <g fill="none" stroke="#222" stroke-width="2.5">
+    <path d="M 200 120 L 115 35 M 200 120 L 285 35 M 115 385 L 200 300 L 285 385"/>
+    <path d="M 200 120 C 140 185 140 235 200 300 M 200 120 C 260 185 260 235 200 300"/>
+    <path d="M 164 84 L 150 70" marker-end="url(#arrow)"/>
+    <path d="M 236 84 L 250 70" marker-end="url(#arrow)"/>
+    <path d="M 150 350 L 164 336" marker-end="url(#arrow)"/>
+    <path d="M 250 350 L 236 336" marker-end="url(#arrow)"/>
+    <path d="M 155 222 L 154 202" marker-end="url(#arrow)"/>
+    <path d="M 245 222 L 246 202" marker-end="url(#arrow)"/>
+  </g>
+  <g fill="#222"><circle cx="200" cy="120" r="5"/><circle cx="200" cy="300" r="5"/></g>
+  <g font-family="Arial, sans-serif" font-size="24" fill="#222" text-anchor="middle">
+    <text x="142" y="41">ν<tspan baseline-shift="sub" font-size="16">e</tspan></text>
+    <text x="259" y="41">e</text>
+    <text x="141" y="410">ν<tspan baseline-shift="sub" font-size="16">e</tspan></text>
+    <text x="258" y="410">e</text>
+    <text x="138" y="204">e</text>
+    <text x="265" y="204">ν<tspan baseline-shift="sub" font-size="16">e</tspan></text>
+    <text x="217" y="247">k</text>
+  </g>
+</svg>

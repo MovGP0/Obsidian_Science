@@ -1,0 +1,18 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="650" height="370" viewBox="0 0 650 370">
+<rect width="100%" height="100%" fill="white"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="black"/></marker></defs>
+
+<g fill="none" stroke="black" stroke-width="2">
+  <path d="M155 335 Q260 135 510 100"/>
+  <path d="M230 230 L250 85" marker-end="url(#arrow)"/>
+  <path d="M400 130 L345 30" marker-end="url(#arrow)"/>
+</g>
+<circle cx="230" cy="230" r="4"/><circle cx="400" cy="130" r="4"/>
+<g font-family="Georgia,serif" font-size="26" font-style="italic">
+  <text x="177" y="310">γ</text>
+  <text x="245" y="250">P : x<tspan baseline-shift="super" font-size="17">α</tspan></text>
+  <text x="407" y="156">Q : x<tspan baseline-shift="super" font-size="17">α</tspan> + dx<tspan baseline-shift="super" font-size="17">α</tspan></text>
+  <text x="178" y="75">A<tspan baseline-shift="super" font-size="17">α</tspan>(P)</text>
+  <text x="320" y="26">A<tspan baseline-shift="super" font-size="17">α</tspan>(Q)</text>
+</g>
+</svg>

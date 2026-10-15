@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="300" viewBox="0 0 800 300">
+  <title>ππ scattering in the sigma model</title>
+  <desc>The first diagram has two pion-pion-sigma vertices with a sigma exchange line. The second diagram has a four-pion contact vertex.</desc>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 L 3 5 Z" fill="#222"/></marker></defs>
+  <rect width="800" height="300" fill="white"/>
+  <g fill="none" stroke="#222" stroke-width="2.5" stroke-dasharray="8 5">
+    <path d="M 65 35 L 155 145 L 65 255 M 340 35 L 250 145 L 340 255"/>
+    <path d="M 470 35 L 565 145 L 470 255 M 660 35 L 565 145 L 660 255"/>
+  </g>
+  <g fill="none" stroke="#222" stroke-width="2">
+    <path d="M 155 145 H 250" stroke-dasharray="2 5"/>
+    <path d="M 190 145 H 215" marker-end="url(#arrow)"/>
+    <path d="M 112 199 L 124 184 M 125 108 L 112 93 M 293 199 L 280 184 M 280 108 L 293 93" marker-end="url(#arrow)"/>
+    <path d="M 515 203 L 530 186 M 530 105 L 515 88 M 615 203 L 600 186 M 600 105 L 615 88" marker-end="url(#arrow)"/>
+  </g>
+  <g fill="#222"><circle cx="155" cy="145" r="5"/><circle cx="250" cy="145" r="5"/><circle cx="565" cy="145" r="5"/></g>
+  <g font-family="Arial, sans-serif" font-size="23" fill="#222" text-anchor="middle">
+    <text x="201" y="124">σ</text><text x="201" y="177">q</text>
+    <text x="59" y="79">p′₊</text><text x="107" y="48">π⁺</text>
+    <text x="61" y="232">p₊</text><text x="107" y="262">π⁺</text>
+    <text x="344" y="79">p′₀</text><text x="293" y="48">π⁰</text>
+    <text x="345" y="232">p₀</text><text x="293" y="262">π⁰</text>
+    <text x="464" y="79">p′₊</text><text x="509" y="48">π⁺</text>
+    <text x="465" y="232">p₊</text><text x="509" y="262">π⁺</text>
+    <text x="665" y="79">p′₀</text><text x="620" y="48">π⁰</text>
+    <text x="665" y="232">p₀</text><text x="620" y="262">π⁰</text>
+  </g>
+</svg>

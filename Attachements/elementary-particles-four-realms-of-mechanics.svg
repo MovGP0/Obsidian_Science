@@ -1,0 +1,18 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="650" height="310" viewBox="0 0 650 310">
+<rect width="100%" height="100%" fill="white"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="black"/></marker></defs>
+
+<g fill="none" stroke="black" stroke-width="2">
+  <rect x="130" y="65" width="480" height="210"/>
+  <path d="M370 65 V275 M130 170 H610"/>
+  <path d="M390 30 H440" marker-end="url(#arrow)"/>
+  <path d="M75 135 V185" marker-end="url(#arrow)"/>
+</g>
+<g font-family="Georgia,serif" font-size="26" fill="black" text-anchor="middle">
+  <text x="330" y="38">Small</text><text x="44" y="152">Fast</text>
+  <text x="250" y="110">Classical</text><text x="250" y="142">mechanics</text>
+  <text x="490" y="110">Quantum</text><text x="490" y="142">mechanics</text>
+  <text x="250" y="213">Relativistic</text><text x="250" y="245">mechanics</text>
+  <text x="490" y="213">Quantum</text><text x="490" y="245">field theory</text>
+</g>
+</svg>

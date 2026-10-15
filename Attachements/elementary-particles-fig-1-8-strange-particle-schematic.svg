@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="500" viewBox="0 0 680 500">
+<title>Interpretive schematic below the Rochester cloud-chamber photograph</title>
+<defs>
+<pattern id="lead" width="8" height="8" patternUnits="userSpaceOnUse"><path d="M0 8 L8 0" stroke="#444" stroke-width="1"/></pattern>
+<clipPath id="chamber"><circle cx="320" cy="270" r="165"/></clipPath>
+<marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10 L3 5 Z" fill="#222"/></marker>
+</defs>
+<rect width="680" height="500" fill="white"/>
+<g stroke="#222" stroke-width="2" fill="none">
+<circle cx="320" cy="270" r="165"/>
+<rect x="155" y="247" width="330" height="47" fill="url(#lead)" clip-path="url(#chamber)"/>
+<g stroke-dasharray="9 7">
+<path d="M245 119 L270 247 M258 116 L290 247 M274 112 L310 247"/>
+<path d="M269 294 Q240 340 294 347 Q331 330 300 294"/>
+<path d="M285 294 L304 434 M314 294 L347 432 M330 294 L373 426"/>
+<path d="M385 300 Q422 319 481 324"/>
+<path d="M385 300 Q410 354 414 402"/>
+</g>
+<path d="M228 55 L252 95" marker-end="url(#arrow)"/>
+<path d="M188 420 Q190 438 230 443 L265 450 Q273 458 286 450 L325 456 Q365 461 380 450"/>
+<path d="M487 321 Q507 327 496 351 L477 381 Q474 389 477 395 L457 419 Q449 435 423 447"/>
+</g>
+<g font-family="Arial, sans-serif" font-size="20" fill="#222">
+<text x="260" y="46">Incident cosmic ray</text><text x="305" y="70">shower</text>
+<text x="92" y="269" fill="#8B4513">3 cm</text><text x="83" y="294">of lead</text>
+<text x="508" y="323" font-family="Times New Roman, serif" font-style="italic">p</text>
+<text x="414" y="430" font-family="Times New Roman, serif" font-style="italic">π⁻</text>
+<text x="490" y="414">“Unusual</text><text x="510" y="440">fork”</text>
+<text x="251" y="488">Debris</text>
+</g></svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="300" viewBox="0 0 1100 300">
+<rect width="1100" height="300" fill="white"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#444444"/></marker></defs>
+<circle cx="310" cy="105" r="7" fill="#444444"/>
+<path d="M310 105 L90 105" fill="none" stroke="#444444" stroke-width="2.2" marker-end="url(#arrow)"/>
+<text x="345" y="112" font-family="Georgia, Times New Roman, serif" font-size="24" font-style="italic" text-anchor="middle" fill="#444444">μ⁻</text>
+<path d="M191 122 C178 166 223 182 235 129 C258 45 209 17 198 68" fill="none" stroke="#444444" stroke-width="2.2" marker-end="url(#arrow)"/>
+<path d="M270 210 L145 210" fill="none" stroke="#444444" stroke-width="2.2" marker-end="url(#arrow)"/>
+<text x="215" y="250" font-family="Georgia, Times New Roman, serif" font-size="24" font-style="italic" text-anchor="middle" fill="#444444">s</text>
+<circle cx="790" cy="105" r="7" fill="#444444"/>
+<path d="M790 105 L1010 105" fill="none" stroke="#444444" stroke-width="2.2" marker-end="url(#arrow)"/>
+<text x="755" y="112" font-family="Georgia, Times New Roman, serif" font-size="24" font-style="italic" text-anchor="middle" fill="#444444">ν̄<tspan baseline-shift="sub" font-size="70%">μ</tspan></text>
+<path d="M872 65 C899 15 928 110 899 152 C874 188 853 141 862 122" fill="none" stroke="#444444" stroke-width="2.2" marker-end="url(#arrow)"/>
+<path d="M830 210 L955 210" fill="none" stroke="#444444" stroke-width="2.2" marker-end="url(#arrow)"/>
+<text x="885" y="250" font-family="Georgia, Times New Roman, serif" font-size="24" font-style="italic" text-anchor="middle" fill="#444444">s</text>
+<circle cx="550" cy="105" r="7" fill="#444444"/>
+<text x="550" y="142" font-family="Georgia, Times New Roman, serif" font-size="24" font-style="italic" text-anchor="middle" fill="#444444">π⁻</text>
+</svg>

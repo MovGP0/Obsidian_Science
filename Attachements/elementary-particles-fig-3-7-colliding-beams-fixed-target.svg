@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1060" height="210" viewBox="0 0 1060 210">
+<rect width="1060" height="210" fill="white"/>
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 Z" fill="#444444"/></marker></defs>
+<path d="M100 84 L210 84" stroke="#444444" stroke-width="2.2" marker-end="url(#arrow)"/>
+<circle cx="100" cy="84" r="8" stroke="#444444" stroke-width="2" fill="white"/>
+<path d="M385 84 L275 84" stroke="#444444" stroke-width="2.2" marker-end="url(#arrow)"/>
+<circle cx="385" cy="84" r="8" stroke="#444444" stroke-width="2" fill="white"/>
+<text x="69" y="93" font-family="Georgia, Times New Roman, serif" font-size="25" font-style="italic" fill="#444444" text-anchor="middle">A</text>
+<text x="416" y="93" font-family="Georgia, Times New Roman, serif" font-size="25" font-style="italic" fill="#444444" text-anchor="middle">B</text>
+<path d="M639 84 L819 84" stroke="#444444" stroke-width="2.2" marker-end="url(#arrow)"/>
+<circle cx="639" cy="84" r="8" stroke="#444444" stroke-width="2" fill="white"/>
+<circle cx="952" cy="84" r="8" stroke="#444444" stroke-width="2" fill="white"/>
+<text x="608" y="93" font-family="Georgia, Times New Roman, serif" font-size="25" font-style="italic" fill="#444444" text-anchor="middle">A</text>
+<text x="983" y="93" font-family="Georgia, Times New Roman, serif" font-size="25" font-style="italic" fill="#444444" text-anchor="middle">B</text>
+<text x="242" y="181" font-family="Georgia, Times New Roman, serif" font-size="25" font-style="normal" fill="#444444" text-anchor="middle">(a)</text>
+<text x="795" y="181" font-family="Georgia, Times New Roman, serif" font-size="25" font-style="normal" fill="#444444" text-anchor="middle">(b)</text>
+</svg>

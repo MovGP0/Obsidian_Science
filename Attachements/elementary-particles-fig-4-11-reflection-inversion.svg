@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1030" height="940" viewBox="0 0 1030 940">
+<rect width="1030" height="940" fill="white"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#444444"/></marker></defs>
+<path d="M200 235 H750" fill="none" stroke="#444444" stroke-width="2.2" marker-end="url(#arrow)"/>
+<path d="M500 370 V50" fill="none" stroke="#444444" stroke-width="2.2" marker-end="url(#arrow)"/>
+<path d="M625 115 L380 360" fill="none" stroke="#444444" stroke-width="2.2" marker-end="url(#arrow)"/>
+<text x="775" y="240" font-family="Georgia, Times New Roman, serif" font-size="24" font-style="italic" text-anchor="middle" fill="#444444">y</text>
+<text x="478" y="51" font-family="Georgia, Times New Roman, serif" font-size="24" font-style="italic" text-anchor="middle" fill="#444444">z</text>
+<text x="360" y="372" font-family="Georgia, Times New Roman, serif" font-size="24" font-style="italic" text-anchor="middle" fill="#444444">x</text>
+<circle cx="320" cy="235" r="5" fill="#444444"/>
+<circle cx="680" cy="235" r="5" fill="#444444"/>
+<g transform="translate(736,138) scale(-1,1)">
+<path d="M-22 90 C-22 75 -34 64 -42 54 L-96 24 C-124 6 -122 -8 -100 -3 L-55 9 L-43 0 L-39 -60 C-38 -82 -16 -83 -12 -63 L-4 -71 C3 -91 24 -83 24 -63 L33 -66 C49 -78 60 -64 58 -47 C78 -53 87 -41 81 -24 L81 44 C82 67 66 80 65 93 M-39 -60 L-31 -28 C-24 -15 -12 -17 -10 -31 L-12 -63 M-4 -71 L0 -26 C6 -12 21 -13 24 -27 L24 -63 M33 -66 L34 -22 C40 -7 54 -12 57 -25 L58 -47 M68 -35 L66 -18 C70 -6 81 -12 81 -24" fill="none" stroke="#444444" stroke-width="2.2"/>
+</g>
+<g transform="translate(258,138) scale(1,1)">
+<path d="M-22 90 C-22 75 -34 64 -42 54 L-96 24 C-124 6 -122 -8 -100 -3 L-55 9 L-43 0 L-39 -60 C-38 -82 -16 -83 -12 -63 L-4 -71 C3 -91 24 -83 24 -63 L33 -66 C49 -78 60 -64 58 -47 C78 -53 87 -41 81 -24 L81 44 C82 67 66 80 65 93 M-39 -60 L-31 -28 C-24 -15 -12 -17 -10 -31 L-12 -63 M-4 -71 L0 -26 C6 -12 21 -13 24 -27 L24 -63 M33 -66 L34 -22 C40 -7 54 -12 57 -25 L58 -47 M68 -35 L66 -18 C70 -6 81 -12 81 -24" fill="none" stroke="#444444" stroke-width="2.2"/>
+</g>
+<circle cx="345" cy="137" r="5" fill="#444444"/>
+<path d="M345 137 V305" fill="none" stroke="#444444" stroke-width="2.2" stroke-dasharray="8 6"/>
+<circle cx="645" cy="137" r="5" fill="#444444"/>
+<path d="M645 137 V305" fill="none" stroke="#444444" stroke-width="2.2" stroke-dasharray="8 6"/>
+<path d="M645 137 H345" fill="none" stroke="#444444" stroke-width="2.2" marker-end="url(#arrow)" stroke-dasharray="8 6"/>
+<path d="M345 305 L420 235 M645 305 L720 235" fill="none" stroke="#444444" stroke-width="2.2" stroke-dasharray="8 6"/>
+<text x="644" y="110" font-family="Georgia, Times New Roman, serif" font-size="24" font-style="italic" text-anchor="middle" fill="#444444">A</text>
+<text x="375" y="110" font-family="Georgia, Times New Roman, serif" font-size="24" font-style="italic" text-anchor="middle" fill="#444444">A</text>
+<text x="500" y="411" font-family="Georgia, Times New Roman, serif" font-size="24" font-style="normal" text-anchor="middle" fill="#444444">(a) Reflection (in the x–z plane)</text>
+<text x="500" y="443" font-family="Georgia, Times New Roman, serif" font-size="24" font-style="normal" text-anchor="middle" fill="#444444">(x, y, z) → (x, −y, z)</text>
+<path d="M200 650 H750" fill="none" stroke="#444444" stroke-width="2.2" marker-end="url(#arrow)"/>
+<path d="M500 785 V465" fill="none" stroke="#444444" stroke-width="2.2" marker-end="url(#arrow)"/>
+<path d="M625 530 L380 775" fill="none" stroke="#444444" stroke-width="2.2" marker-end="url(#arrow)"/>
+<text x="775" y="655" font-family="Georgia, Times New Roman, serif" font-size="24" font-style="italic" text-anchor="middle" fill="#444444">y</text>
+<text x="478" y="466" font-family="Georgia, Times New Roman, serif" font-size="24" font-style="italic" text-anchor="middle" fill="#444444">z</text>
+<text x="360" y="787" font-family="Georgia, Times New Roman, serif" font-size="24" font-style="italic" text-anchor="middle" fill="#444444">x</text>
+<circle cx="320" cy="650" r="5" fill="#444444"/>
+<circle cx="680" cy="650" r="5" fill="#444444"/>
+<g transform="translate(736,553) scale(-1,1)">
+<path d="M-22 90 C-22 75 -34 64 -42 54 L-96 24 C-124 6 -122 -8 -100 -3 L-55 9 L-43 0 L-39 -60 C-38 -82 -16 -83 -12 -63 L-4 -71 C3 -91 24 -83 24 -63 L33 -66 C49 -78 60 -64 58 -47 C78 -53 87 -41 81 -24 L81 44 C82 67 66 80 65 93 M-39 -60 L-31 -28 C-24 -15 -12 -17 -10 -31 L-12 -63 M-4 -71 L0 -26 C6 -12 21 -13 24 -27 L24 -63 M33 -66 L34 -22 C40 -7 54 -12 57 -25 L58 -47 M68 -35 L66 -18 C70 -6 81 -12 81 -24" fill="none" stroke="#444444" stroke-width="2.2"/>
+</g>
+<g transform="translate(264,756) scale(1,-1)">
+<path d="M-22 90 C-22 75 -34 64 -42 54 L-96 24 C-124 6 -122 -8 -100 -3 L-55 9 L-43 0 L-39 -60 C-38 -82 -16 -83 -12 -63 L-4 -71 C3 -91 24 -83 24 -63 L33 -66 C49 -78 60 -64 58 -47 C78 -53 87 -41 81 -24 L81 44 C82 67 66 80 65 93 M-39 -60 L-31 -28 C-24 -15 -12 -17 -10 -31 L-12 -63 M-4 -71 L0 -26 C6 -12 21 -13 24 -27 L24 -63 M33 -66 L34 -22 C40 -7 54 -12 57 -25 L58 -47 M68 -35 L66 -18 C70 -6 81 -12 81 -24" fill="none" stroke="#444444" stroke-width="2.2"/>
+</g>
+<circle cx="645" cy="552" r="5" fill="#444444"/>
+<circle cx="355" cy="748" r="5" fill="#444444"/>
+<path d="M645 552 L355 748" fill="none" stroke="#444444" stroke-width="2.2" marker-end="url(#arrow)" stroke-dasharray="8 6"/>
+<path d="M645 552 V720 L720 650 M355 748 V580 L280 650" fill="none" stroke="#444444" stroke-width="2.2" stroke-dasharray="8 6"/>
+<text x="641" y="524" font-family="Georgia, Times New Roman, serif" font-size="24" font-style="italic" text-anchor="middle" fill="#444444">A</text>
+<text x="323" y="745" font-family="Georgia, Times New Roman, serif" font-size="24" font-style="italic" text-anchor="middle" fill="#444444">A′</text>
+<text x="500" y="910" font-family="Georgia, Times New Roman, serif" font-size="24" font-style="normal" text-anchor="middle" fill="#444444">(b) Inversion (x, y, z) → (−x, −y, −z)</text>
+</svg>

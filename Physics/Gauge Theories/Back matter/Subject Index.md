@@ -1,0 +1,713 @@
+﻿---
+title: "Subject Index"
+source_pdf: "D:\\GitHub\\books\\dokumen.pub_gauge-theories-of-the-strong-weak-and-electromagnetic-interactions-second-edition-secondnbsped-9781400848225.pdf"
+source_page: "475"
+pdf_page: 489
+bead: "Obsidian_Electronics-l4vx.118"
+---
+
+> [!TLDR]
+> This index locates the source topics and their subtopics; bold pages mark principal treatments and italic pages mark supplementary readings.
+
+<!-- PDF page 489; printed page 475 -->
+
+**Bold-face** page numbers refer to principal treatments of a topic. Numbers set in *italics* denote pages on which supplementary readings appear.
+
+- $1/N$ expansion, **345**, *379*
+- $a+b\to c+$ anything
+  - in parton model, 223, 224
+- $a+b\to W^\pm+$ anything, 226
+  - decay angular distribution, 227, 228
+- $a+b\to Z^0+$ anything, 228
+- Abelian Higgs model, **79**, *91, 166*
+- Accelerated expansion of universe, 246
+- AdS/CFT correspondence, 357, *379*
+- Aharonov–Bohm effect, 44–46, *53, 54*
+- $\electric{\alpha}$
+  - evolution in QED, 289
+  - evolution in $\mathrm{SU}(5)$, 406
+  - in electroweak theory, 126
+- $\alpha_s$, 303
+  - evolution in QCD, 301
+  - evolution in $\mathrm{SU}(5)$, 422
+  - evolution in supersymmetric $\mathrm{SU}(5)$, 422
+  - $\mechanical{m}_t$ dependence in $\mathrm{SU}(5)$, 422
+- Altarelli–Parisi equations, 322
+- Anomalies, **167**, *183*
+- Antiscreening, 301
+- Asymptotic freedom, 2, **301**, *371*
+  - in $\mathrm{SO}(3)$, *362*
+- Automated evaluation of amplitudes, *454*
+- Avogadro’s number, 408
+- Axion, 356
+- $b$-quark, weak isospin, 252
+- Baryogenesis, electroweak, 414, *426*
+- Baryon number
+  - gauged, *53*
+  - of universe, **410**, *426*
+  - sum rule, 218
+- Baryon spectrum, 8
+- BCS theory, 88, 341
+- $\beta\beta_{0\nu}$ decay, *182*
+- Bjorken scaling, 278, 317, 319
+- Boost invariance, 34
+- Bound states
+  - color-triplet scalars, 19
+  - quark-antiquark, 18
+- Cabibbo hypothesis, 17, 190
+- Callan–Gross relation, 321
+- Charge independence of nuclear forces, 35
+- Charge quantization, 390, 394
+- Charge renormalization
+  - in electrodynamics, **281**
+  - in QED, **282**, 361
+  - in scalar electrodynamics, **290**, 361
+- Charge screening in QED, *371*
+- Charged current
+  - right-handed, *177*
+- Charged current, leptonic, 6
+- Charged weak current, 16
+- Charmed particles, *258*
+- Charmed quark, 18, 191
+- Charmonium, 10
+- Chiral quark model, *363*
+- Chiral symmetry breaking
+  - and electroweak symmetry, 343–345
+  - in QCD, 340–341
+- CKM matrix, *see* Quark-mixing matrix
+- Color, 4, 11, 22, 269, 270
+  - evidence for, 11–15
+- Color algebra, **440**
+  - Fierz identity, 361
+  - in double-line notation, 346–351, 362, 443–444
+- Color Casimir operator, 274
+  - for $qq$ and $q\bar q$, 358
+- Color hyperfine interaction, 358
+- Colorspin, 360
+- Confinement, 15, 336, *375*
+  - and deconfinement, *376*
+  - bag model, *376*
+  - dielectric analogy, 336, *376*
+
+<!-- PDF page 490; printed page 476 -->
+
+- Confusion theorem
+  - for charged current, 104
+  - for neutral current, 137
+- Conservation laws, **25, 30**, *36*
+  - and spontaneous symmetry breaking, *91*
+  - baryon number, 408
+  - $B-L$, 410
+  - for space-time symmetries, 34
+  - four-momentum, 32
+- Conserved current
+  - complex scalar field, 47–50
+  - Dirac fermion, 48
+  - isospin, 61
+- Cooper pairs, 88
+- Copernicus, N., 389
+- Cosmic microwave background, 410
+- Cosmological constant problem, 246, *262*
+- Cosmology, *425*
+- Coupling constant evolution
+  - QCD, $\mathrm{SU}(3)_c$, 402
+  - weak-hypercharge $\mathrm{U}(1)_Y$, 403
+  - weak-isospin $\mathrm{SU}(2)_L$, 403
+- Coupling constant unification, **402**
+  - in idealized $\mathrm{SU}(5)$, 405–406
+  - in $\mathrm{SU}(5)$, 420, 421
+  - multiple Higgs doublets, 421
+  - in supersymmetric $\mathrm{SU}(5)$, 421
+- CP violation, 194, 231, *258*
+  - leptonic, *183*
+  - Jarlskog invariant, 251
+  - spontaneous, 388
+- Critical density (universe), 157
+- Current algebra and chiral symmetry, *377*
+- Current, electromagnetic, 16
+  - proton, 52
+- Custodial symmetry, *179*, 233, 344
+- Dark energy, 247
+- Dark matter, 248
+- Decoupling theorem, 402
+- Deeply inelastic scattering, **205**, *373*
+  - in QCD, 308
+  - kinematics, 207
+  - longitudinal cross section, 320
+  - neutral-current, 320
+  - nonsinglet distribution, 320
+- Dilepton production in hadron collisions, 225
+- Dirac equation, 29, **437**
+- Dirac matrices, **434**
+- Dirac spinors, 437
+- Double-beta decay, *182*
+- Dynamical symmetry breaking, *262*
+  - and hierarchy problem, 245
+- *Eichinvarianz*, 38
+- Einstein, E., 389
+- Electrodynamics
+  - of massive vector, 67
+- Electromagnetism
+  - as gauge theory, *55*
+  - classical, *53*
+- $e^+e^-\to e^+e^-\ell^+\ell^-$, 328
+- $e^+e^-\to e^+e^-X$, 328
+- $e^+e^-\to f\bar f$, 198
+  - cross section, 198, 199
+  - forward-backward asymmetry, 202–204, 252
+  - peak cross section, 200
+  - polarization, 204–205
+- $e^+e^-\to\gamma\gamma$, 172
+- $e^+e^-\to$ hadrons, 201, 304–308
+- $e^+e^-\to$ Higgs boson, 149, 171
+- $e^+e^-\to HZ^0$, 151, 241
+- $e^+e^-\to\ell^+\ell^-$, 138, 142
+- $e^+e^-\to\mu^+\mu^-$, 19, 198
+- $e^+e^-\to\nu_e\bar\nu_e$, 251
+- $e^+e^-\to\nu_\mu\bar\nu_\mu$, 171
+- $e^+e^-\to q\bar q$, 198, 251
+- $e^+e^-\to\sigma^+\sigma^-$, 19
+- $e^+e^-\to\tau^+\tau^-$
+  - polarization, 252
+- $e^+e^-\to$ three jets, 16, 306
+- $e^+e^-\to$ two jets, 11, 19
+- $e^+e^-\to W^+W^-$, 133, 134, 151, *172*
+- $e^+e^-$ flavor factories, *258*
+- $ep\to ep$, 52, 209, 210
+- $e^\mp p\to e^\mp+$ anything, 253
+  - at ultrahigh energies, 222, 223
+  - in parton model, 220
+  - parity violation, 221, 222
+  - polarized, 221
+- $e^\mp p\to\nu+$ anything
+  - and right-handed currents, 222, 224
+  - at ultrahigh energies, 222, 223
+- $e^+N\to e^++$ anything, 214
+- $eq\to eq$, 210
+- $e^-\sigma^\pm\to e^-\sigma^\pm$, 52
+- Electroweak interactions
+  - of leptons, 95
+  - of quarks, 187
+- Electroweak symmetry breaking
+  - dynamical, beyond QCD, 345, *379*
+  - dynamical, by QCD, 341
+
+<!-- PDF page 491; printed page 477 -->
+
+- Electroweak theory, 2, 16, **95**, *178*
+  - antecedents, *177*
+  - beta decay, 177
+  - gauge symmetry, 16
+  - global symmetries, 259
+  - incompleteness, 241
+  - metastable vacuum, 244
+  - precision tests, 251, 260
+  - prospectus, 247
+  - quantum corrections, 231, 261
+    - and top-quark mass, 232
+  - renormalizability, 166
+  - $S$-matrix construction, 119, *179*
+  - self-consistency, 257, 262
+  - strongly interacting gauge sector, *180*
+- Elementarity, 4
+- Elementary scalars, *262*
+- Emergent behavior, 357, *378*
+- Eötvös experiment, *53*
+- Equivalent-photon approximation, 328
+- Euler–Lagrange equations, 26–27, 33
+- Exotic fermions
+  - in $E_6$, 422
+- Exotic quarks, 345
+- Extra spacetime dimensions, 245, *262*
+- $F_2^{en}(x)/F_2^{ep}(x)$, 214, 215
+- Faddeev–Popov ghosts, 297, 361
+- Fermion masses, 414, 415
+  - and electroweak gauge invariance, 122
+  - and Yukawa couplings, 125, 136, 189, 414
+  - in electroweak theory, 236
+  - in $\mathrm{SU}(5)$, 401–402, 414, 422
+  - running, 415–416
+  - scale on which generated, 237
+- Feynman integrals, **450**
+  - evaluation, *454*
+- Feynman rules
+  - and observables, **447**
+  - electrodynamics, 50, **453**
+  - electroweak gauge bosons, 131, 132
+  - electroweak theory, for loops, *261*
+  - for Higgs sector, 173
+  - generalities, **448**
+  - Higgs and gauge bosons, 148
+  - Higgs–fermion couplings, 146
+  - lepton interactions, 129
+  - loops, 449
+  - propagators, 449
+  - QCD, 273, 294
+  - quark interactions, 194
+- Fiber bundles, *55*
+- Field-strength tensor
+  - electromagnetic, 41
+  - QCD, 272
+  - weak hypercharge, 121
+  - weak isospin, 121
+  - Yang–Mills theory, 61–63
+- Fierz transformation, 171, **440**
+- $f_{ijk}$ for $\mathrm{SU}(3)$, 273
+- Flavor asymmetry in light-quark sea, 362
+- Flavor symmetry, 15
+- Flavor-changing neutral currents, 190, 229, *260*
+- $\mathrm{SU}(6)$, *70*
+- Forward-backward asymmetry
+  - in $e^+e^-\to\ell^+\ell^-$, 144
+- Fundamental interactions, 15
+- $\gamma\gamma\to\gamma\gamma$, 52
+- $\gamma\gamma\to H$, 366
+- $\gamma^5$, 435
+- Gauge bosons
+  - beyond standard model, 252, 391, 395, *424*
+  - in electroweak theory, 122, **194**
+  - pair production, 260
+- Gauge cancellation
+  - in $e^+e^-\to W^+W^-$, 134, 135
+- Gauge-covariant derivative, 43, 58
+- Gauge fixing, 167, 294–296
+- Gauge hierarchies, *425*
+- Gauge invariance, 38, *54*
+  - and current conservation, *54*
+  - and mass, 93
+  - and Meissner effect, 93
+  - in classical electrodynamics, **40**
+- Gauge theories, *22*
+  - alternatives, *258*
+  - general gauge groups, *69*
+  - integral formulation, *55*
+  - non-Abelian, **57**, *69*
+  - of strong interactions, *69*
+  - quantization, *371*
+  - spontaneously broken, *91*
+- Gauge transformation
+  - non-Abelian, 59–61, 67
+- Gell-Mann–Nishijima formula, 11
+- Geometric phase, *55*
+- $gg\to H$, 366
+- GIM mechanism, 18, 191
+  - generalized, 191
+
+<!-- PDF page 492; printed page 478 -->
+
+- Ginzburg–Landau theory, 90, 91, 341
+- Gluons, 15, 269
+- Goldberger–Treiman relation, 84
+- Goldstone theorem, 78
+- Gottfried sum rule, 362
+- Group theory, *69*
+  - for unified model building, *424*
+- Gyromagnetic ratio of leptons, 19
+- Hadron structure, asymptotic, **322**
+- Hamilton’s principle, **26**, *36*
+- Han–Nambu model, 367
+- Heavy-ion collisions, *379*
+- Heavy-quark effective theory, 352, *380*
+- Heisenberg ferromagnet, 71, 73–74
+- Helicity amplitudes, *455*
+- Hierarchy problem, **244**, 389
+- Higgs boson, 1, 3, 81, 87, **146**, *180*
+  - and asymptotic behavior, 151
+  - as pseudo-Nambu–Goldstone boson, 246
+  - branching fractions, 149
+  - decay, *180*
+    - to $\gamma\gamma$, 257
+    - to fermion pairs, 146
+    - to gauge bosons, 147, 171, 172
+  - discovery (probable), 239
+  - in superconductors, 93
+  - mass, 180
+    - and hierarchy problem, 244
+    - constraints from standard-model fits, 234
+    - fine-tuning problem, 254
+    - self-consistency constraints, 243
+  - production, 366
+  - production in $p^\pm p$ collisions, 239, 240
+  - production in hadron collisions, *180*
+  - searches, **237**
+  - supersymmetric, 241
+  - total width, 150
+- Higgs mechanism, 81
+- Higgs potential
+  - quantum corrections, 242, *262*
+- Human scale not privileged, 389
+- Infrared divergences, *372*
+- Infrared slavery, 2
+- Instantons, *377*
+- Interaction energies
+  - for multiquark systems, 275, 360
+  - for $qq$ and $q\bar q$, 358
+  - for $q\bar q$, 362
+  - for $q\bar q$ in $\mathrm{SU}(N)$, 358
+- Interactions
+  - in Yang–Mills theory, 63
+  - nucleon–antinucleon, 67
+  - quark–quark, 273–275
+- Intermediate bosons, 110, *259*
+- Invariance
+  - under phase rotation, 39
+  - under scale change, 38
+- Ising model, 88
+- Isospin current, 33
+- Isospin symmetry, 32, 37, 57, 352
+- Jets in $e^+e^-$ annihilations, *373*
+- Jets in hadron-hadron collisions, 325, 364, *374*
+  - angular distributions, 364
+- Klein–Gordon equation, 28, 42, 47
+- Lagrangian
+  - Dirac, 29, 34, 48
+  - effective, for weak charged current, **96**
+  - electromagnetic field, 29
+  - electroweak theory, 121
+  - free complex scalar, 47
+  - free particle, 34
+  - free scalar, 28
+  - harmonic oscillator, 34
+  - massive vector, 30
+  - QCD, 271
+  - QED, 48
+  - Yang–Mills, 63, 66
+- Lagrangian density, 27
+- Lagrangian formalism, **25**
+  - classical mechanics and electrodynamics, *35*
+  - quantum field theory, *35*
+- $\lambda$ matrices of $\mathrm{SU}(3)$, 272–273
+- Large-$N$ expansion in quantum mechanics, 368
+- Lattice QCD, 70, 339, *376*
+- Left-right symmetric models, 388
+- Leptogenesis, 414, *426*
+- Lepton flavor violation, *183*
+- Leptons, 4, **6**, 156
+- Leptoquark bosons, 395
+- Levi-Cività tensor, **435**
+- LHC, 1, 5
+- Light-hadron spectrum
+  - from lattice QCD, 339
+
+<!-- PDF page 493; printed page 479 -->
+
+- Linear potential between color sources, 278
+- Lorenz gauge, 42
+- Magnetic moment, nucleon, 68
+- Majorana fermions, *182*
+- Majorana neutrinos, 164, *182*, 388, 414
+- Mass scales
+  - in unified theories, *423*
+- Matter excess in universe, 411
+- Maximally attractive channel, 275, 358
+- Maxwell’s equations, 40–42
+  - with magnetic monopoles, 52
+- Meson nonet, 7
+- Meson properties, in large-$N$ QCD, 349
+- Mesons, beyond $q\bar q$, 356
+- Minimal flavor violation, 229
+- Momentum sum rule, 215, 323
+  - gluon momentum fraction, 216
+  - strange contribution, 252
+- Monopoles, magnetic, *427*
+- $\mu^\mp e$ polarized scattering, 175
+- $\mu^+\mu^-\to$ Higgs boson, 151, 253
+- $\mu^+\mu^-\to Z'$, 252
+- Muon collider, 253
+- Nambu–Goldstone boson, 78, 81, 84, 87, 88, 343
+- Neutral current, 17, *179*
+  - “model-independent” analysis, 141
+  - and atomic parity violation, 174, 175
+  - hadronic, 18
+    - flavor-changing, 18
+  - leptonic, 17, **135**
+  - low-energy tests, *179*
+  - neutrinic, diagonal, 176
+- Neutrino
+  - as dark matter, 161, 162, 248
+  - cosmology, *183*
+  - decay, 161
+  - helicity, 120, 156
+  - hierarchy, 161
+  - history, *180*
+  - mass, **156**, *181*
+    - cosmological constraints, 157
+  - mixing, **156**, 163
+  - mixing matrix, 160
+  - number of species, 201, 202
+  - relics, 156
+  - right-handed, 392
+  - spectrum, 162
+  - sterile, 163, *182*
+- Neutrino oscillations, **157**, 176, *181*
+  - matter effect, 176
+  - MSW effect, *181*
+- Neutron-antineutron oscillations, 388
+- Noether’s theorem, **30**, *36*
+- Nonleptonic enhancement, 259
+- Notations and conventions, **433**
+- $\nu_e e\to\nu_e e$, **96**, 139, 171
+- $\bar\nu_e e\to\bar\nu_\mu\mu$, 112
+- $\bar\nu_e e\to\bar\nu_e e$, **96**, 139, 171
+- $\bar\nu_e e\to W^-$, 175
+- $\nu_e\bar\nu_e\to W^+W^-$, 116, 131
+- $\nu_\mu e\to\mu\nu_e$, **106**, 111
+- $\nu_\mu e\to\nu_\mu e$, 136
+- $\nu_\mu e\to\nu_\mu e$, 171
+  - at ultrahigh energies, 171
+- $\bar\nu_\mu e\to\bar\nu_\mu e$, 136
+- $\nu_\mu N$ deeply inelastic scattering, 216, 253
+  - angular distribution, 217
+  - cross section, 217
+  - in parton model, 219
+  - interaction length, 253
+  - neutral-current
+    - in parton model, 219
+  - neutral-current to charged-current ratio, 219
+  - parity violation, 216
+- Nucleon decay modes
+  - in $\mathrm{SU}(5)$, 409–410
+- Nucleon doublet, 34
+- Nucleon instability, 408, *425*
+- Nucleon wave functions
+  - in flavor-spin $\mathrm{SU}(4)$, 68
+- Okubo–Zweig–Iizuka rule, 349
+- Operator product expansion, *260*
+- Paraleptons, 118
+- Parity violation
+  - in $\,{}^{60}\mathrm{Co}$ $\beta$-decay, 5
+- Parton distributions, *373*
+  - evolution, 321
+- Parton model, 22, **205**, *260*
+  - generalizations, 324
+  - hadron-hadron interactions, 223
+  - impulse approximation, 212
+  - infinite-momentum frame, 211, 212
+  - sum rules, 214
+- Path integrals, *36*
+- Pauli matrices, 7, **434**
+- Pauli principle, 11
+
+<!-- PDF page 494; printed page 480 -->
+
+- Phase invariance
+  - in field theory, **46**
+  - in quantum mechanics, **42**
+- Phase-space formulas, **447**
+  - cross sections, 448
+  - decays, 447
+- Photon absorption
+  - by spin-$\frac12$ quark, 19
+- Photon mass, 49, *55*
+- Photon structure function, 328, *375*
+  - hadronic component, *375*
+  - in parton model, 332, 367
+- Physical constants, 457
+- $\pi^0$ meson
+  - $\pi^0\to\gamma\gamma$, 14
+- $\pi^\pm$ leptonic decays, 89
+- Planck mass, 405
+- Potential, between color charges, 339
+- Potentials
+  - in quantum theory, 44
+- Proca equation, 30
+- Proton decay
+  - in $\mathrm{SU}(5)$, 399
+  - in supersymmetric $\mathrm{SU}(5)$, 410
+- Proton lifetime, 398, 410
+  - in unified theories, 410
+- Proton structure
+  - in parton model, 278
+  - in QCD, 278
+- Pseudorapidity (kinematic variable), 326, *363*
+- $q\bar q\to gg$, 361
+- $q\bar q\to HZ$, 254
+- QCD, 2, 15, 23, 66, **269**
+  - holographic, 357
+  - in large-$N_c$ limit, 345
+  - origins, *370*
+- QCD amplitudes, efficient evaluation, *374*
+- QED, 3
+- Quark masses and mixings, **193**, 249
+- Quark model, 2, *21*
+- Quark–diquark picture of baryons, 278
+- Quark-mixing matrix, 192, 249, *259*
+  - ternary plot, 192
+  - unitarity test, 230
+- Quark-parton model, 2
+- Quarks, 4, 7
+  - abundance, 22
+  - as color triplets, 11–15
+  - spin, 10–11
+- Radiation zeroes, *256*
+- Rapidity (kinematic variable), 326
+  - asymmetry in $\bar pp\to W^\pm+$ anything, *365*
+- $R\equiv\mechanical{\sigma}(e^+e^-\to\text{hadrons})/\mechanical{\sigma}(e^+e^-\to\mu^+\mu^-)$, 12–13
+- Regge phenomenology, *370*
+- Regge trajectories, 276
+- Regularization, **452**
+  - dimensional, 291, 452
+  - Pauli–Villars, 284, 452
+- Regularization and renormalization, *454*
+- Renormalization
+  - of spontaneously broken gauge theories, *183*
+- Renormalization group, *372*
+- $\rho$ parameter, 233
+  - and Higgs sector, 173, 174
+  - and Higgs-boson mass, 234
+  - and top-quark mass, 233
+  - quantum corrections, 233
+- Right-handed coupling
+  - $u\to b$, and $\lvert V_{ub}\rvert$, 254
+  - $u\to b$, and $\bar\nu N$ scattering, 255
+- Rosenbluth formula, 209
+- Running coupling
+  - in electrodynamics, 281
+  - in QCD, **294**
+  - in QED, 288
+- Running couplings
+  - in $\mathrm{SU}(5)$, 404
+  - in supersymmetric $\mathrm{SU}(5)$, 404
+- Rutherford cross section, 212
+- Sakharov conditions, 412
+- Schrödinger equation, 42
+- $\sigma$ model, 81, *94*
+  - chiral symmetry, 89
+  - $\mathrm{SU}(2)_{V,A}$ rotations, 89
+- $\mechanical{\sigma}_S/\mechanical{\sigma}_T$, 211–213
+- Single-top production, *260*
+- $\mathrm{SO}(3)$ color gauge theory, 271
+- $\mathrm{SO}(10)$ unification, 418–419, *423*
+  - interactions, 420
+- Spin tensor, 435
+- Splitting functions
+  - in QCD, **313**, *362*
+  - in QED, 312, *362*
+- Spontaneous symmetry breaking, **72**
+  - beyond particle physics, *92*
+  - continuous symmetry, 76
+  - for $\mathrm{O}(n)$ scalars, 90
+
+  <!-- PDF page 495; printed page 481 -->
+
+  - gauge symmetry, 78
+  - history, *92, 94*
+  - in electroweak theory, **122**
+  - in particle physics, *93*
+  - in $\mathrm{SU}(5)$, 398–401
+  - isospin, for scalar isovector, 89
+  - non-Abelian symmetry, 86
+  - parity, 74
+- Standard cosmological model, 411
+- String picture of hadrons, 276
+- Strong CP problem, 354–356, *380*
+- Strong interactions, 269
+- Structure function, 209
+  - evolution of moments
+    - in QCD, 316, *362*
+    - in QED, 312
+  - in parton model, 212
+  - photon, 312
+- Structure functions
+  - in electrodynamics, 308
+- $\mathrm{SU}(3)$ color symmetry, 271
+- $\mathrm{SU}(3)$ flavor symmetry, 7, *21*
+- $\mathrm{SU}(5)$ unification, 387, **391**
+  - anomaly freedom, 394
+  - flipped, 419
+  - gauge bosons, 395–396
+  - interactions, 396–397, 419
+  - representations, 393–394
+  - spontaneous symmetry breaking, 420
+- Super-Kamiokande, 409
+- Supersymmetry, *424*
+  - and hierarchy problem, 245
+  - and $\mathrm{SU}(5)$ unification, 423
+- Symmetries, **30**, *36*
+  - and electroweak interactions, *180*
+  - and the spectrum, *91*
+  - approximate, 72–73
+  - chiral, 82
+  - hidden, 23, **71**
+  - strong-interaction, **352**
+- $\tau$ lepton
+  - leptonic decay, 12, 171
+- Technicolor, 345
+- TeV scale, 151, 155, *261*
+- $\theta$-vacuum, 355
+- Three-neutrino experiment, 21
+- Trace theorems, **436**
+- Tritium $\beta$-decay, 156
+- Triviality of scalar field theory, 241
+- Two Higgs-doublet models, *262*
+- Two-component spinors, *455*
+  - for unified theories, 392–393
+- Two-neutrino experiment, 21
+- Two-nucleon systems, 64–65
+- Two-photon processes, 328, *375*
+- $\mathrm{U}(1)$ problem, 353, *377*
+- $\mathrm{U}(3)$ color gauge theory, 271
+- $ud\to ud$ cross section, 363
+  - and Rutherford scattering, 364
+- Uehling term, in atomic potential, 288, 361, *371*
+- Unification scale, $u$, 405
+- Unification, partial, *424*
+- Unified theories, **387**, *423*
+  - assessment, **416**
+- Unitarity bound
+  - for $\nu_\mu e\to\mu\nu_e$, 109, 112
+  - on Higgs-boson mass, 152, 173
+  - on scale of fermion-mass generation, 237
+- Unitarity triangle, 230, 250, 251, *259*
+  - and new physics, 231
+- Unitary gauge, 81, 94, 124
+- Universality
+  - charged current, 106
+  - electroweak, 390
+- Vacuum energy problem, **246**, *262*, 389
+- Vacuum expectation value (Higgs field), 126
+- Variational principles, *37*
+- Vector meson
+  - leptonic decay, 20
+- $W^\mp$
+  - C violation, 115
+  - leptonic decay, 113
+  - mass, in electroweak theory, 127, 130
+  - polarization, in top decay, 254
+  - width, 256
+- $W^\mp\to\ell\nu$, 128
+- $W^\mp\to q\bar q'$, 195
+- $W^\mp$
+  - width, 196
+- Wave equation
+  - for electromagnetic field, 34
+- Weak hypercharge, 120, 188
+- Weak isospin, 120, 188
+- Weak mixing parameter
+  - defined, 126
+
+<!-- PDF page 496; printed page 482 -->
+
+- Weak mixing parameter (*Continued*)
+  - evolution, in electroweak theory, 235, 236
+  - in idealized $\mathrm{SU}(5)$, 406–407
+  - in $\mathrm{SU}(5)$, 397, 421, 422
+  - in supersymmetric $\mathrm{SU}(5)$, 421
+- Weizsäcker–Williams approximation, 328
+- Weyl–van der Waerden fermions, **444**
+- Wigner supermultiplets, 67
+- $W^+W^-$ scattering, **153**
+- $W'$, sequential, 227
+- $x$, Bjorken scaling variable, 210
+- $y$, inelasticity parameter, 213
+- Yang–Mills theory, **57**, 86
+  - shortcomings, 65
+- Yukawa couplings, 125
+- $Z^0$
+  - mass, in electroweak theory, 127, 130
+  - width, 197
+- $Z^0\to q\bar q$, 196, 228
+- $Z^0\to e^+e^-$, 129, 171
+- $Z^0\to H\mu^+\mu^-$, 173
+- $Z^0\to\nu\bar\nu$, 128
+- $Z'$, sequential, 229, 252

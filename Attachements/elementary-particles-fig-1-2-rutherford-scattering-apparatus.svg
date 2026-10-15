@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="600" viewBox="0 0 850 600">
+<title>Rutherford scattering apparatus: source, collimated alpha beam, gold foil, fluorescent screen, microscope, and vacuum pump</title>
+<defs>
+<pattern id="wall" width="6" height="6" patternUnits="userSpaceOnUse"><path d="M0 6 L6 0" stroke="#999" stroke-width=".7"/></pattern>
+<marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10 L3 5 Z" fill="#222"/></marker>
+</defs>
+<rect width="850" height="600" fill="white"/>
+<g stroke="#222" stroke-width="2" fill="none" stroke-linejoin="round">
+<path d="M160 135 H665 V365 H530 V500 H330 V365 H160 Z" fill="url(#wall)"/>
+<path d="M183 158 H642 V342 H507 V478 H353 V342 H183 Z" fill="white"/>
+<rect x="60" y="247" width="150" height="48" fill="white"/>
+<rect x="50" y="235" width="10" height="72" fill="white"/>
+<path d="M210 247 L227 257 H258 L280 267 V275 L258 285 H227 L210 295 Z" fill="white"/>
+<path d="M227 257 V285 M239 257 V285 M253 258 V284 M263 261 V281"/>
+<rect x="495" y="224" width="85" height="94" fill="white"/>
+<path d="M495 265 H485 V276 H495"/>
+<rect x="530" y="260" width="14" height="24" fill="url(#wall)"/>
+<path d="M537 264 V280" stroke-width="4"/>
+<path d="M530 271 H379" stroke-dasharray="6 5" marker-end="url(#arrow)"/>
+<path d="M371 211 V318" stroke-width="3"/>
+<path d="M311 245 V296" stroke-width="3"/>
+<path d="M371 271 H280" stroke-dasharray="5 5"/>
+<path d="M371 271 L311 252" stroke-dasharray="4 5"/>
+<path d="M420 345 V475 Q420 510 455 510 H720 M443 345 V468 Q443 487 462 487 H720"/>
+<path d="M725 500 H790" marker-end="url(#arrow)"/>
+<path d="M105 225 L135 250" marker-end="url(#arrow)"/>
+</g>
+<g fill="#222" font-family="Arial, sans-serif" font-size="20" text-anchor="middle">
+<text x="82" y="210">Microscope</text>
+<text x="267" y="47">Zinc sulfide</text><text x="267" y="72">screen</text>
+<text x="383" y="62">Gold foil</text>
+<text x="546" y="62">Collimated beam</text><text x="546" y="87">of α-particles</text>
+<text x="746" y="238">Source of</text><text x="746" y="263">α-particles</text>
+<text x="759" y="465">Vacuum</text><text x="759" y="489">pump</text>
+</g>
+<g stroke="#222" stroke-width="1.5" fill="none" marker-end="url(#arrow)">
+<path d="M278 95 L310 236"/>
+<path d="M383 77 L373 205"/>
+<path d="M535 99 L418 258"/>
+<path d="M703 257 L550 269"/>
+</g>
+</svg>

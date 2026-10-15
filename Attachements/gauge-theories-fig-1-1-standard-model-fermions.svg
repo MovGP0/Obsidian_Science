@@ -1,0 +1,84 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="860" height="510" viewBox="0 0 860 510">
+<rect width="100%" height="100%" fill="white"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="black"/></marker></defs>
+<g font-family="Arial,sans-serif" font-size="20">
+<polygon points="245,90 269,76 557,76 533,90" fill="white" stroke="black"/>
+<polygon points="533,90 557,76 557,124 533,138" fill="white" stroke="black"/>
+<path d="M245 90 l24 -14" fill="none" stroke="black"/>
+<rect x="245" y="90" width="48" height="48" fill="white" stroke="black"/>
+<text x="269.0" y="121" text-anchor="middle">N₁</text>
+<path d="M293 90 l24 -14" fill="none" stroke="black"/>
+<rect x="293" y="90" width="48" height="48" fill="white" stroke="black"/>
+<text x="317.0" y="121" text-anchor="middle">e<tspan baseline-shift="sub" font-size="13">R</tspan></text>
+<path d="M341 90 l24 -14" fill="none" stroke="black"/>
+<rect x="341" y="90" width="48" height="48" fill="white" stroke="black"/>
+<text x="365.0" y="121" text-anchor="middle">N₂</text>
+<path d="M389 90 l24 -14" fill="none" stroke="black"/>
+<rect x="389" y="90" width="48" height="48" fill="white" stroke="black"/>
+<text x="413.0" y="121" text-anchor="middle">μ<tspan baseline-shift="sub" font-size="13">R</tspan></text>
+<path d="M437 90 l24 -14" fill="none" stroke="black"/>
+<rect x="437" y="90" width="48" height="48" fill="white" stroke="black"/>
+<text x="461.0" y="121" text-anchor="middle">N₃</text>
+<path d="M485 90 l24 -14" fill="none" stroke="black"/>
+<rect x="485" y="90" width="48" height="48" fill="white" stroke="black"/>
+<text x="509.0" y="121" text-anchor="middle">τ<tspan baseline-shift="sub" font-size="13">R</tspan></text>
+<polygon points="460,220 532,178 820,178 748,220" fill="#bbb" stroke="black"/>
+<polygon points="748,220 820,178 820,226 748,268" fill="#bbb" stroke="black"/>
+<path d="M484 206 h288" fill="none" stroke="black"/>
+<path d="M508 192 h288" fill="none" stroke="black"/>
+<path d="M460 220 l72 -42" fill="none" stroke="black"/>
+<rect x="460" y="220" width="48" height="48" fill="#bbb" stroke="black"/>
+<text x="484.0" y="251" text-anchor="middle">u<tspan baseline-shift="sub" font-size="13">R</tspan></text>
+<path d="M508 220 l72 -42" fill="none" stroke="black"/>
+<rect x="508" y="220" width="48" height="48" fill="#bbb" stroke="black"/>
+<text x="532.0" y="251" text-anchor="middle">d<tspan baseline-shift="sub" font-size="13">R</tspan></text>
+<path d="M556 220 l72 -42" fill="none" stroke="black"/>
+<rect x="556" y="220" width="48" height="48" fill="#bbb" stroke="black"/>
+<text x="580.0" y="251" text-anchor="middle">c<tspan baseline-shift="sub" font-size="13">R</tspan></text>
+<path d="M604 220 l72 -42" fill="none" stroke="black"/>
+<rect x="604" y="220" width="48" height="48" fill="#bbb" stroke="black"/>
+<text x="628.0" y="251" text-anchor="middle">s<tspan baseline-shift="sub" font-size="13">R</tspan></text>
+<path d="M652 220 l72 -42" fill="none" stroke="black"/>
+<rect x="652" y="220" width="48" height="48" fill="#bbb" stroke="black"/>
+<text x="676.0" y="251" text-anchor="middle">t<tspan baseline-shift="sub" font-size="13">R</tspan></text>
+<path d="M700 220 l72 -42" fill="none" stroke="black"/>
+<rect x="700" y="220" width="48" height="48" fill="#bbb" stroke="black"/>
+<text x="724.0" y="251" text-anchor="middle">b<tspan baseline-shift="sub" font-size="13">R</tspan></text>
+<polygon points="100,255 124,241 268,241 244,255" fill="white" stroke="black"/>
+<polygon points="244,255 268,241 268,337 244,351" fill="white" stroke="black"/>
+<path d="M100 255 l24 -14" fill="none" stroke="black"/>
+<rect x="100" y="255" width="48" height="48" fill="white" stroke="black"/>
+<text x="124.0" y="286" text-anchor="middle">ν₁</text>
+<rect x="100" y="303" width="48" height="48" fill="white" stroke="black"/>
+<text x="124.0" y="334" text-anchor="middle">e<tspan baseline-shift="sub" font-size="13">L</tspan></text>
+<path d="M148 255 l24 -14" fill="none" stroke="black"/>
+<rect x="148" y="255" width="48" height="48" fill="white" stroke="black"/>
+<text x="172.0" y="286" text-anchor="middle">ν₂</text>
+<rect x="148" y="303" width="48" height="48" fill="white" stroke="black"/>
+<text x="172.0" y="334" text-anchor="middle">μ<tspan baseline-shift="sub" font-size="13">L</tspan></text>
+<path d="M196 255 l24 -14" fill="none" stroke="black"/>
+<rect x="196" y="255" width="48" height="48" fill="white" stroke="black"/>
+<text x="220.0" y="286" text-anchor="middle">ν₃</text>
+<rect x="196" y="303" width="48" height="48" fill="white" stroke="black"/>
+<text x="220.0" y="334" text-anchor="middle">τ<tspan baseline-shift="sub" font-size="13">L</tspan></text>
+<polygon points="295,375 367,333 511,333 439,375" fill="#bbb" stroke="black"/>
+<polygon points="439,375 511,333 511,429 439,471" fill="#bbb" stroke="black"/>
+<path d="M319 361 h144" fill="none" stroke="black"/>
+<path d="M343 347 h144" fill="none" stroke="black"/>
+<path d="M295 375 l72 -42" fill="none" stroke="black"/>
+<rect x="295" y="375" width="48" height="48" fill="#bbb" stroke="black"/>
+<text x="319.0" y="406" text-anchor="middle">u<tspan baseline-shift="sub" font-size="13">L</tspan></text>
+<rect x="295" y="423" width="48" height="48" fill="#bbb" stroke="black"/>
+<text x="319.0" y="454" text-anchor="middle">d<tspan baseline-shift="sub" font-size="13">L</tspan></text>
+<path d="M343 375 l72 -42" fill="none" stroke="black"/>
+<rect x="343" y="375" width="48" height="48" fill="#bbb" stroke="black"/>
+<text x="367.0" y="406" text-anchor="middle">c<tspan baseline-shift="sub" font-size="13">L</tspan></text>
+<rect x="343" y="423" width="48" height="48" fill="#bbb" stroke="black"/>
+<text x="367.0" y="454" text-anchor="middle">s<tspan baseline-shift="sub" font-size="13">L</tspan></text>
+<path d="M391 375 l72 -42" fill="none" stroke="black"/>
+<rect x="391" y="375" width="48" height="48" fill="#bbb" stroke="black"/>
+<text x="415.0" y="406" text-anchor="middle">t<tspan baseline-shift="sub" font-size="13">L</tspan></text>
+<rect x="391" y="423" width="48" height="48" fill="#bbb" stroke="black"/>
+<text x="415.0" y="454" text-anchor="middle">b<tspan baseline-shift="sub" font-size="13">L</tspan></text>
+</g>
+</svg>

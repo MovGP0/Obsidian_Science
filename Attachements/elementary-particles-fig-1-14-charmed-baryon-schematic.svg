@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="940" viewBox="0 0 720 940">
+<title>Interpretation of the charmed-baryon bubble-chamber event</title>
+<rect width="720" height="940" fill="white"/>
+<g stroke="#222" stroke-width="1.9" fill="none">
+<path d="M77 802 Q220 782 265 760"/>
+<path d="M265 760 L250 50"/>
+<path d="M265 760 L498 30"/>
+<path d="M265 760 L540 28"/>
+<path d="M265 760 Q370 536 615 55"/>
+<path d="M265 760 Q593 633 578 306 Q551 171 407 298 Q304 399 345 461"/>
+<path d="M265 760 Q372 737 482 762 L548 837"/>
+<path d="M482 762 L494 748"/>
+<path d="M221 915 L265 760 L335 616" stroke-dasharray="10 7"/>
+<path d="M150 526 C161 526 154 540 166 540 S173 557 185 557 S191 573 204 574 S211 591 224 591 S231 607 243 608 S249 624 262 624 L306 646"/>
+<path d="M116 297 C174 276 92 223 107 264 C176 353 187 274 137 302 C87 349 211 432 186 354 C178 320 121 381 193 423 C250 479 247 394 211 421 C168 454 213 506 257 459 Q326 425 345 461"/>
+</g>
+<g font-family="Times New Roman, serif" font-style="italic" font-size="23" fill="#222">
+<text x="275" y="178">π⁻</text><text x="439" y="182">π⁺</text>
+<text x="492" y="202">μ⁻</text><text x="476" y="340">p</text>
+<text x="326" y="475">π⁺</text><text x="488" y="475">π⁻</text>
+<text x="176" y="320">e⁻</text><text x="175" y="601">e⁻</text>
+<text x="331" y="671">Λ⁰</text><text x="246" y="878">ν</text>
+<text x="369" y="747">π⁺</text><text x="496" y="744">p</text><text x="549" y="821">π⁺</text>
+</g></svg>

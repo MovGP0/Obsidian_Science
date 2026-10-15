@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="660" viewBox="0 0 1080 660">
+<rect width="1080" height="660" fill="white"/>
+<path d="M150 215 L150 85" stroke="#222222" stroke-width="2.4" fill="none"/>
+<polygon points="150.0,142.0 145.0,158.0 155.0,158.0" fill="#222222"/>
+<path d="M385 85 L385 215" stroke="#222222" stroke-width="2.4" fill="none"/>
+<polygon points="385.0,158.0 390.0,142.0 380.0,142.0" fill="#222222"/>
+<path d="M150 575 L150 440" stroke="#222222" stroke-width="2.4" fill="none"/>
+<polygon points="150.0,499.5 145.0,515.5 155.0,515.5" fill="#222222"/>
+<path d="M385 440 L385 575" stroke="#222222" stroke-width="2.4" fill="none"/>
+<polygon points="385.0,515.5 390.0,499.5 380.0,499.5" fill="#222222"/>
+<circle cx="150" cy="440" r="6.5" fill="#222222"/>
+<circle cx="150" cy="215" r="6.5" fill="#222222"/>
+<circle cx="385" cy="440" r="6.5" fill="#222222"/>
+<circle cx="385" cy="215" r="6.5" fill="#222222"/>
+<text x="124" y="148" font-family="Georgia, Times New Roman, serif" font-size="26" font-style="italic" text-anchor="middle">s</text>
+<text x="411" y="148" font-family="Georgia, Times New Roman, serif" font-size="26" font-style="italic" text-anchor="middle">d</text>
+<text x="124" y="533" font-family="Georgia, Times New Roman, serif" font-size="26" font-style="italic" text-anchor="middle">d</text>
+<text x="411" y="533" font-family="Georgia, Times New Roman, serif" font-size="26" font-style="italic" text-anchor="middle">s</text>
+<path d="M150 440 L150 215" stroke="#222222" stroke-width="2.4" fill="none"/>
+<polygon points="150.0,319.5 145.0,335.5 155.0,335.5" fill="#222222"/>
+<path d="M385 215 L385 440" stroke="#222222" stroke-width="2.4" fill="none"/>
+<polygon points="385.0,335.5 390.0,319.5 380.0,319.5" fill="#222222"/>
+<path d="M385 215 L150 215" stroke="#222222" stroke-width="2.4" fill="none" stroke-dasharray="13 9"/>
+<polygon points="259.5,215.0 275.5,220.0 275.5,210.0" fill="#222222"/>
+<path d="M150 440 L385 440" stroke="#222222" stroke-width="2.4" fill="none" stroke-dasharray="13 9"/>
+<polygon points="275.5,440.0 259.5,435.0 259.5,445.0" fill="#222222"/>
+<text x="123" y="337" font-family="Georgia, Times New Roman, serif" font-size="26" font-style="italic" text-anchor="middle">u</text>
+<text x="412" y="337" font-family="Georgia, Times New Roman, serif" font-size="26" font-style="italic" text-anchor="middle">u</text>
+<text x="267.5" y="192" font-family="Georgia, Times New Roman, serif" font-size="26" font-style="italic" text-anchor="middle">W⁻</text>
+<text x="267.5" y="421" font-family="Georgia, Times New Roman, serif" font-size="26" font-style="italic" text-anchor="middle">W⁻</text>
+<path d="M165 77 C175 54 235 70 267.5 53 C300 70 360 54 370 77" stroke="#222222" stroke-width="2" fill="none"/>
+<path d="M165 583 C175 606 235 590 267.5 607 C300 590 360 606 370 583" stroke="#222222" stroke-width="2" fill="none"/>
+<path d="M255.5 15 H272.5" stroke="#222222" stroke-width="1.7"/>
+<text x="267.5" y="40" font-family="Georgia, Times New Roman, serif" font-size="26" font-style="italic" text-anchor="middle">K⁰</text>
+<text x="267.5" y="643" font-family="Georgia, Times New Roman, serif" font-size="26" font-style="italic" text-anchor="middle">K⁰</text>
+<path d="M690 215 L690 85" stroke="#222222" stroke-width="2.4" fill="none"/>
+<polygon points="690.0,142.0 685.0,158.0 695.0,158.0" fill="#222222"/>
+<path d="M925 85 L925 215" stroke="#222222" stroke-width="2.4" fill="none"/>
+<polygon points="925.0,158.0 930.0,142.0 920.0,142.0" fill="#222222"/>
+<path d="M690 575 L690 440" stroke="#222222" stroke-width="2.4" fill="none"/>
+<polygon points="690.0,499.5 685.0,515.5 695.0,515.5" fill="#222222"/>
+<path d="M925 440 L925 575" stroke="#222222" stroke-width="2.4" fill="none"/>
+<polygon points="925.0,515.5 930.0,499.5 920.0,499.5" fill="#222222"/>
+<circle cx="690" cy="440" r="6.5" fill="#222222"/>
+<circle cx="690" cy="215" r="6.5" fill="#222222"/>
+<circle cx="925" cy="440" r="6.5" fill="#222222"/>
+<circle cx="925" cy="215" r="6.5" fill="#222222"/>
+<text x="664" y="148" font-family="Georgia, Times New Roman, serif" font-size="26" font-style="italic" text-anchor="middle">s</text>
+<text x="951" y="148" font-family="Georgia, Times New Roman, serif" font-size="26" font-style="italic" text-anchor="middle">d</text>
+<text x="664" y="533" font-family="Georgia, Times New Roman, serif" font-size="26" font-style="italic" text-anchor="middle">d</text>
+<text x="951" y="533" font-family="Georgia, Times New Roman, serif" font-size="26" font-style="italic" text-anchor="middle">s</text>
+<path d="M690 440 L690 215" stroke="#222222" stroke-width="2.4" fill="none" stroke-dasharray="13 9"/>
+<polygon points="690.0,319.5 685.0,335.5 695.0,335.5" fill="#222222"/>
+<path d="M925 215 L925 440" stroke="#222222" stroke-width="2.4" fill="none" stroke-dasharray="13 9"/>
+<polygon points="925.0,335.5 930.0,319.5 920.0,319.5" fill="#222222"/>
+<path d="M925 215 L690 215" stroke="#222222" stroke-width="2.4" fill="none"/>
+<polygon points="799.5,215.0 815.5,220.0 815.5,210.0" fill="#222222"/>
+<path d="M690 440 L925 440" stroke="#222222" stroke-width="2.4" fill="none"/>
+<polygon points="815.5,440.0 799.5,435.0 799.5,445.0" fill="#222222"/>
+<text x="656" y="337" font-family="Georgia, Times New Roman, serif" font-size="26" font-style="italic" text-anchor="middle">W⁻</text>
+<text x="959" y="337" font-family="Georgia, Times New Roman, serif" font-size="26" font-style="italic" text-anchor="middle">W⁻</text>
+<text x="807.5" y="254" font-family="Georgia, Times New Roman, serif" font-size="26" font-style="italic" text-anchor="middle">u</text>
+<text x="807.5" y="421" font-family="Georgia, Times New Roman, serif" font-size="26" font-style="italic" text-anchor="middle">u</text>
+<path d="M705 77 C715 54 775 70 807.5 53 C840 70 900 54 910 77" stroke="#222222" stroke-width="2" fill="none"/>
+<path d="M705 583 C715 606 775 590 807.5 607 C840 590 900 606 910 583" stroke="#222222" stroke-width="2" fill="none"/>
+<path d="M795.5 15 H812.5" stroke="#222222" stroke-width="1.7"/>
+<text x="807.5" y="40" font-family="Georgia, Times New Roman, serif" font-size="26" font-style="italic" text-anchor="middle">K⁰</text>
+<text x="807.5" y="643" font-family="Georgia, Times New Roman, serif" font-size="26" font-style="italic" text-anchor="middle">K⁰</text>
+</svg>

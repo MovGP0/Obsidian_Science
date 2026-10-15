@@ -1,0 +1,14 @@
+% Keep color commands inside the annotations. Extended MathJax can then load
+% its color extension when an annotation is rendered instead of while this
+% preamble is being evaluated.
+\newcommand{\electric}[1]{{\color[RGB]{178,34,34}#1}}
+\newcommand{\magnetic}[1]{{\color[RGB]{31,78,140}#1}}
+\newcommand{\circuit}[1]{{\color[RGB]{37,109,61}#1}}
+\newcommand{\energy}[1]{{\color[RGB]{106,61,154}#1}}
+\newcommand{\signal}[1]{{\color[RGB]{0,109,119}#1}}
+\newcommand{\thermal}[1]{{\color[RGB]{180,83,9}#1}}
+\newcommand{\mechanical}[1]{{\color[RGB]{75,85,99}#1}}
+\newcommand{\semiconductor}[1]{{\color[RGB]{102,112,0}#1}}
+
+\newcommand{\unit}[1]{{\color[RGB]{122,78,0}\mathrm{#1}}}
+\newcommand{\quantity}[2]{#1\,\unit{#2}}

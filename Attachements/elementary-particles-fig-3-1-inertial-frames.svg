@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="740" height="500" viewBox="0 0 740 500">
+<rect width="740" height="500" fill="white"/>
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 Z" fill="#444444"/></marker></defs>
+<g stroke="#444444" stroke-width="2.2" fill="none" marker-end="url(#arrow)">
+<path d="M190 350 L190 75"/>
+<path d="M190 350 L625 350"/>
+<path d="M190 350 L70 470"/>
+<path d="M315 340 L315 75"/>
+<path d="M315 340 L630 340"/>
+<path d="M300 357 L193 464"/>
+</g><path d="M315 212 L364 212 L364 203 L389 217 L364 231 L364 222 L315 222" stroke="#444444" stroke-width="2.2" fill="white"/>
+<g font-family="Georgia, Times New Roman, serif" font-size="25" font-style="italic" fill="#444444">
+<text x="182" y="47">S</text>
+<text x="305" y="47">S′</text>
+<text x="162" y="92">y</text>
+<text x="279" y="92">y′</text>
+<text x="605" y="381">x</text>
+<text x="622" y="318">x′</text>
+<text x="45" y="478">z</text>
+<text x="167" y="478">z′</text>
+<text x="405" y="227">v</text>
+</g></svg>

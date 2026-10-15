@@ -1,0 +1,1256 @@
+﻿---
+title: "Author Index"
+source_pdf: "D:\\GitHub\\books\\dokumen.pub_gauge-theories-of-the-strong-weak-and-electromagnetic-interactions-second-edition-secondnbsped-9781400848225.pdf"
+source_page: "459"
+pdf_page: 473
+bead: "Obsidian_Electronics-l4vx.117"
+---
+
+> [!TLDR]
+> This index lists authors and collaborations with page numbers, full-citation pages in italics, and reference numbers in parentheses.
+
+<!-- PDF page 473; printed page 459 -->
+
+Numbers set in *italics* denote pages on which full citations appear. Numbers in parentheses denote reference numbers.
+
+- Abbott, L., *262*
+- AbdusSalam, S. S., 241(95), *267*
+- Abers, E. S., *36, 55, 69, 91, 371*
+- Abramowitz, H., 213(22), *264*
+- Accardi, A., 214(23), *264*
+- Adler, S. L., *183, 376–378*
+- Aharonov, Y., 44(8), *53, 56*
+- Aharony, O., *379*
+- Aitchison, I. J. R., *35, 55, 69, 91, 424*
+- Ajzenberg-Selove, F., *37*
+- Akhmedov, E. K., *181*
+- Albrecht, M., 416(35), *429*
+- Albrow, M. G., 329(66), *384*
+- ALEPH Collaboration, 120(11), 142(20), 156(11), *184*, 201(10), 202(10), 204(10), 205(10), 205(12), 205(17), 205(18), 251(10), *263*, 405(20), *428*
+- Ali, A., *373*
+- Alkofer, R., *376*
+- Allen, R. C., 142(21), *184*
+- Alles, W., 134(12), *184*
+- Altarelli, G., *178, 181*, 200(9), *259, 263*, 270(6), 313(6), 322(55), 325(6), *381, 383*
+- Altmannshofer, W., 416(35), *429*
+- Álvarez-Gaumé, L., *35*
+- Alwall, J., *455*
+- Amaldi, E., *427*
+- Amaldi, U., *421*
+- AMS-02 Collaboration, 412(32), *429*
+- Andersen, J. R., *379*
+- Anderson, H. L., *177*
+- Anderson, P. W., 81(5), *92–94, 378*
+- Anselmino, M., 278(15), 325(15), *381*
+- Antonelli, F., 233(74), *266*
+- Antonelli, M., 357(125), *386*
+- Antoniadis, I., 245(105), *267*, 402(18), *428*
+- Aoki, K. I., *261*
+- Aoki, S., 66(4), *70*
+- Aoki, Y., 409(25), *428*
+- Appelquist, T., *173*, 237(81), *266*, 306(32), *373, 382*, 402(17), *428*
+- Arbuzov, A. B., *261*
+- Arkani-Hamed, N., 245(105), *267*
+- Artuso, M., *258*
+- Asztalos, S. J., *380*
+- ATLAS Collaboration, 135(17), *184*, 227(43), 229(46), 229(54), 229(57), 229(58), 239(88), 239(89), *265, 267, 364, 366*
+- Aubert, B., 135(19), *184*
+- Aubert, J. J., 18(18), *24*
+- Augustin, J.-E., 18(18), *24*
+- Avignone, F. T., *182*
+- BABAR Collaboration, 229(50), *265*, 329(68), *384*
+- Babu, K. S., 416(35), *429*
+- Badelek, B., 325(60), *383*
+- Baer, H., *424*
+- Bär, O., *270*
+- Bagger, J., *424*
+- Bahcall, J. N., 160(45), *185*
+- Bailin, D., *362*
+- Baillie, N., 215(24), *264*
+- Baker, C. A., 355(120), *386*
+- Baldo-Ceolin, M., *427*
+- Bali, G. S., 340(80), *384*
+- Balian, R., *178*
+- Bander, M., *375*
+- Banks, J., 394(12), *427*
+- Banks, T., *371*
+- Barbieri, R., *254*
+- Bardeen, J., 88(11), *94*, 341(87), *385*
+- Bardeen, W. A., *183*, 244(104), *267*, 303(28), 335(74), 345(95), *375, 382, 384, 385*
+- Bardin, D. Y., *261*
+- Bardon, M., 120(11), 156(11), *184*
+
+<!-- PDF page 474; printed page 460 -->
+
+- Barger, V. D., *172*
+- Barish, B. C., 135(19), *184*
+- Barish, S. J., 135(19), *184*
+- Barnett, R. M., *256*
+- Barr, S. M., *419*
+- Barwick, B., 46(9), *56*
+- Bass, S. D., 320(53), *383*
+- Basu, S., 160(45), *185*
+- Batelaan, H., 46(9), *54, 56*
+- Bauer, C. W., 357(124), *386*
+- Bauer, T. H., *375*
+- Bazavov, A., 339(81), 340(84), 341(81), 342(84), *384*
+- BCDMS Collaboration, 213(22), *264*
+- Beacom, J. F., 161(53), *186*
+- Becchi, C., *183*
+- Beck, M., *177*
+- Bég, M. A. B., *70*
+- Bélanger, G., *455*
+- Belavin, A. A., *377*
+- Belitsky, A. V., 325(58), *383*
+- Bell, N. F., 161(53), *186*
+- Belle Collaboration, 229(49), 229(50), *265*, 329(68), *384*
+- Beloy, K., *175*
+- Beltrán, B., *380*
+- Bennett, S. C., *175*
+- Benvenuti, A., 135(18), *184*
+- Berends, F. A., *374*
+- Berestetskii, V. B., *171, 371*
+- Berger, C. F., 328(63), *374, 383*
+- Berger, Ch., 16(13), *24*
+- Berger, E. L., *366*
+- Berman, S. M., *260*
+- Bern, Z., *374*
+- Bernardi, G., 238(86), *266*
+- Bernstein, J., *91, 94*
+- Berry, M. V., *55*
+- Bertone, G., 248(115), *268*
+- Bethke, S., 302(25), 303(25), 345(25), *382*
+- Bettini, A., *21*
+- Bezrukov, F., *267*
+- Bhagwat, M. S., 340(85), 342(85), *384*
+- Bhattacharyya, G., *262*
+- Bhatti, A., *374*
+- Bigi, I. I., *254, 258, 380*, 388(7), *427*
+- Bjørken, B. J., 18(17), *24*
+- Bjorken, J. D., *67, 173*, 213(20), *258–260, 263*, 358(129), *372, 386, 424*
+- Bloch, F., *372*
+- Bloom, E. D., 319(50), *383*
+- Blucher, E., *266*
+- Bludman, S., 78(2), *94, 178*
+- BMW Collaboration, 339(81), 341(81), *384*
+- Bodek, A., 214(23), *264*
+- Böhm, A., *55*
+- Bogoliubov, N. N., *36, 372*
+- Bohm, D., 44(8), *53, 56*
+- Bohm, M., *455*
+- Bohr, A., *37*, 66(3), *70*
+- Borexino Collaboration, 159(43), *185*
+- Borie, E. T., *371*
+- Born, M., *54*
+- Bouchiat, C., 170(63), *179, 186*, 402(18), *428*
+- Bouchiat, M.-A., *179*
+- Boyarsky, A., *182*
+- Boyer, C., 134(12), *184*
+- Boyer, T. H., *54*
+- Branco, G. C., *183, 258, 262*
+- Braun, V. M., 409(25), *428*
+- Breidenbach, M., *383*
+- Brodsky, S. J., *256, 375*
+- Brout, R., *93*, 269(4), *381*
+- Browder, T. E., 230(63), *266*
+- Brown, R. W., *256*
+- Buchmüller, W., *426*
+- Buckley, A., *373*
+- Bucksbaum, P. H., *89, 179*
+- Budnev, V. M., *375*
+- Bugg, D. V., 83(7), *94*
+- Buras, A. J., 134(12), *184*, 229(55), 229(60), 231(67), *255, 265, 266*, 303(28), 346(101), 351(101), *373, 375, 382, 385*, 400(15), *402, 416*, 416(35), *420, 424, 428, 429*
+- Burdman, G., 229(48), *254, 265*, 345(96), *385*
+- Burgess, C. P., *92*
+- Burkhardt, H., 289(19), *381*
+- Byers, N., *36*
+- Byrne, J. C., *55*
+- Cabibbo, N., *17, 24*, 190(2), *259, 263*, 390(9), *427*
+- Cahn, R. N., *21, 69, 181*, 200(9), 221(29), 239(92), *258, 263, 264, 267, 424*
+- Callan, C. G., 321(54), *372, 380, 383*
+- Campbell, J. M., 135(16), *184, 374*
+- Caprez, A., 46(9), *56*
+- Carazzone, J., *373*, 402(17), *428*
+- Carena, M. S., 238(86), *266, 424*
+- Carlucci, M. V., 229(55), *265*
+
+<!-- PDF page 475; printed page 461 -->
+
+- Carone, C. D., *53*
+- Carosi, G., *380*
+- Carruthers, P., *21*
+- Casalderrey-Solana, J., *379*
+- Casas, J. A., 242(100), 243(100), *267*
+- Case, K. M., 445(12)
+- Cashmore, R., *260*
+- Caswell, W. E., 352(111), *385*
+- Cazzoli, E. G., 18(19), *24*
+- CDF Collaboration, 135(15), *184*, 229(52), 229(54), 231(65), 233(72), 238(85), *256, 265, 266*, 327(62), 329(66), *383, 384*
+- CDHS Collaboration, 318(45), *383*
+- Ceccucci, A., *250, 259*
+- Celmaster, W., 306(33), *382*
+- Chacko, Z., 246(110), *268*
+- Chambers, R. G., 46(9), *56*
+- Chandrasekharan, K., *54*
+- Chang, L., 340(85), 342(85), *384*
+- Chanowitz, M. S., *173, 180*, 231(66), 237(81), *266, 368*
+- Charchula, K., 325(60), *383*
+- CHARM Collaboration, 219(27), *264*
+- CHARM-II Collaboration, 107(5), 142(21), *184*, 233(73), *266*
+- Chau, L.-L., *249*
+- Chen, J. P., 320(53), *383*
+- Chen, M.-C., 165(61), *186, 260*, 388(4), 416(35), *426, 427, 429*
+- Cheng, H.-C., 246(109), *268*
+- Cheng, M., 340(84), 342(84), *384*
+- Cheng, T. P., *22, 54, 371*
+- Chetyrkin, K. G., 305(29), 306(33), *382*
+- Chibisov, G. V., *55*
+- Chivukula, S., *379*
+- Chodos, A., *376*
+- Christensen, N. D., *454*
+- Cirigliano, V., 229(60), *265*
+- Ciuchini, M., *258*
+- CKMfitter Group, 230(64), *259, 266*
+- CLEO Collaboration, 329(68), *384*
+- Cleveland, B. T., 159(44), *185*
+- Cline, J. M., *426*
+- Cloet, I. C., 340(85), 342(85), *384*
+- Close, F. E., *22, 178, 260, 368*
+- CMS Collaboration, 135(17), *184*, 226(39), 227(43), 229(46), 229(54), 239(88), 239(90), *264, 265, 267, 364, 366*
+- Cohen, A. G., *181*
+- Cohen, T. D., *379*
+- Coleman, P., *378*
+- Coleman, S., 16(14), *21, 24, 35, 91, 178, 262*, 346(99), *372, 377, 378, 379, 385*, 394(11), *427*
+- Collins, J. C., 326(61), *370, 372, 383*
+- Collins, P. D. B., *370*
+- Combley, F., *20*
+- Commins, E. D., *89, 177, 179*
+- CompHEP Collaboration, *455*
+- Consoli, M., 233(74), *266*
+- Cooney, P., 410(27), *428*
+- Cooper, L. N., 88(11), *94*, 341(87), *385*
+- Cooper-Sarkar, A., *260, 373*
+- Coppi, P., 412(32), *429*
+- Corbò, G., 233(74), *266*
+- Cornet, F., 334(75), 335(75), *384*
+- Cornwall, J. M., 152(27), *185*
+- Cowsik, R., 157(33), *185*
+- CP-PACS Collaboration, 340(82), 350(105), *385*
+- Crivellin, A., *255*
+- Cronin, J. W., *258*
+- Csaki, C., *262*
+- Curci, G., 322(55), *383*
+- Cvitanovic, P., 440(5)
+- Czarnecki, A., *179*
+- D0 Collaboration, *23*, 135(14), *184*, 228(45), 233(72), 236(45), 238(85), *256, 265, 266*, 327(62), *383*
+- Daleo, A., *424*
+- Dalitz, R. H., *22*
+- D’Ambrosio, G., 229(60), *265*
+- Danby, J., *21*
+- Da Roid, L., 345(96), *385*
+- Das, S. R., *379*
+- Dashen, R. F., 343(88), *377, 380, 385*
+- Davidson, S., *426*
+- Davis, R., 159(44), *181, 185*
+- Dawson, C., 409(25), *428*
+- Dawson, S., *178, 180*, 239(92), *267*
+- Daya Bay Collaboration, 161(49), *185*
+- De Boer, W., *421*
+- de Bruyn, K., *265*
+- de Gouvêa, A., 165(61), *179, 183, 186*
+- DeGrand, T. A., 307(35), *376, 382*
+- Dehmelt, H. G., *20*
+- DELPHI Collaboration, *20*, 142(20), *184*, 201(10), 202(10), 204(10), 205(10), 205(13), 205(17), 205(18), 251(10), *252, 263*, 312(40), *382*, 405(20), *428*
+- Denner, A., *455*
+
+<!-- PDF page 476; printed page 462 -->
+
+- Dennis, M., *54*
+- Derevianko, A., *175*
+- Derman, E., *176*, 221(29), *260, 264*
+- De Roeck, A., *373*
+- Derrick, M., *172*
+- De Rújula, A., *360, 376, 377*
+- DeTar, C. E., *376*
+- Devenish, R., *260, 373*
+- de Wit, B., *371*
+- DeWitt, B., *37*
+- DeWitt, R. J., 332(73), *384*
+- D’Hoker, E., *379*
+- Diaconu, C., *373*
+- Diakonov, D., *373*
+- Dicke, R. H., *53*, 410(30), *428*
+- Dicus, D. A., 155(28), *185*, 237(81), *266*
+- Diehl, M., 325(58), *383*
+- Dimopoulos, S., 245(105), *267*, 345(94), *385*, 410(28), *421, 423, 428*
+- Dine, M., 306(33), *380, 382*
+- Dirac, P. A. M., 26(3), *37, 55*
+- Dissertori, G., *369*
+- Dittmaier, S., *455*
+- Di Vecchia, P., *378*
+- Dix, F. W., 408(23), *428*
+- Dixon, L. J., *93, 374, 455*
+- Djouadi, A., *180*, 245(108), *262, 268*
+- Dobrescu, B. A., 165(61), *186, 260*, 388(4), *424, 427*
+- Dodelson, S., *425*
+- Dokshitzer, Yu. L., 270(6), 313(6), 325(6), *370, 373, 381*, 440(5), *445*
+- Dolgov, A. D., *53, 183*
+- Dolgov, O. V., *371*
+- Donoghue, J. F., 14(12), *24, 89, 94, 183, 376*
+- DONuT Collaboration, *21*
+- Double-CHOOZ Collaboration, 161(49), *185*
+- Drake, G. W. F., *35*
+- Drees, M., *424*
+- Dreiner, H. K., 445(11), *445, 456*
+- Drell, S. D., *67*, 225(37), *264*, 433(1), 437(1), *445*
+- Dresden, M., *93*
+- Dubbers, D., 388(6), *427*
+- Duhr, C., *454*
+- Duke, D. W., 303(28), *382*
+- Dunbar, D. C., *374*
+- Dunietz, I., *259*
+- Durham HEPData Project, *373*
+- Dvali, G. R., 245(105), *267*
+- Dylla, H. F., 390(10), *427*
+- E761 Collaboration, *20*
+- E949 Collaboration, 190(4), *263*
+- von Eötvös, R., *53*
+- Eboli, O., 345(96), *385*
+- Eguchi, T., *56*
+- Ehrenberg, W., 44(8), *56*
+- Eichten, E., *254*, 340(79), 345(94), *363, 365, 380, 384, 385*
+- Einhorn, M. B., 244(102), *267, 373*, 404(19), *428*
+- Elias-Miro, J., 244(103), *267*
+- Elliott, S. R., *182*
+- Ellis, J., 307(35), *382*, 400(15), *402, 416, 420, 428*
+- Ellis, R. K., 135(16), *184*, 306(30), *366, 367, 369, 374, 382, 454*
+- Engel, J., *182*
+- Englert, F., *92, 93*, 269(4), *381*
+- Erler, J., *179*, 235(78), 236(77), 236(78), 238(78), *266, 421*
+- Espinosa, J. R., 242(100), 243(100), *267*
+- EXO Collaboration, *182*
+- Faccini, R., 230(63), *266*
+- Faddeev, L. D., *371*
+- Fadin, V. S., 200(9), *263, 370*
+- Farhi, E., *93, 262*
+- Farley, F. J. M., *20*
+- Fazzini, T., *177*
+- Fermi, E., 96(2), *184*, 313(41), 328(41), *382*
+- Feruglio, F., *181*
+- Feteke, E., *53*
+- Feynman, R. P., *22, 23*, 26(3), *36, 37, 177, 260*, 306(32), *358, 371, 382*, 388(8), *427*, 450(1), *456*
+- Fierz, M., 440(4), *445*
+- Fileviez Perez, P., *425*
+- Fischbach, E., 104(3), *184*
+- Fitch, V. L., *258*
+- Flambaum, V. V., 134(12), *184*
+- Flerov, G. N., 408(23), *428*
+- Fock, V., 39(2), *56*
+- Fodor, Z., 242(99), *267, 376*
+- Fogwell, S., *20*
+- Fogwell Hoogerheide, S., 232(69), *266*
+- Forde, D., *374*
+- Forero, D. V., 161(51), *186*
+- Formaggio, J. A., *425*
+
+<!-- PDF page 477; printed page 463 -->
+
+- Forster, D., *92*
+- Frankfurt, L., 325(60), *383*
+- Franklin, A., *180*
+- Franzini, P., 120(11), 156(11), *184*
+- Frautschi, S. C., *372*
+- Freedman, D. Z., *379*
+- Frenkel, J., *372*
+- Friedman, J. I., 213(21), *263*
+- Frieman, J., 246(111), *268*
+- Fritzsch, H., *91*, 271(8), *370, 381, 418*
+- Frixione, S., 135(16), *184*
+- Froggatt, C. D., 244(102), *267*
+- Fujii, Y., *69*
+- Fujikawa, K., *261*
+- Fukuda, Y., 409(24)
+- Fukugita, M., 414(33), *429*
+- Furman, M. A., *180*
+- Furmanski, W., 322(55), *383*
+- Furry, W. H., *182*
+- Fürstenau, H., *421*
+- Gabrielse, G., *20*, 232(69), 232(70), *266*
+- Gaemers, K., 134(12), *184*
+- Gagliardi, C. A., 388(4), *427*
+- Gaillard, M. K., *180, 258, 259*, 307(35), *382*, 400(15), *402, 416, 420, 428*
+- Galison, P., *179*
+- GALLEX Collaboration, 159(44), *185*
+- Gandhi, R., *171, 175, 253*
+- Garvey, G. T., 104(3), *184*
+- Gasiorowicz, S., *22*
+- Gasser, J., 343(90), *385*
+- Gattringer, C., *376*
+- Gell-Mann, M., 7, 11(9), *21, 23, 24, 69*, 82(6), *94*, 116(8), 165(59), *177, 184, 186*, 271(8), 272(9), *370, 372, 377, 381*
+- Gemmler, K., *255*
+- Georgi, H., *23, 36, 94*, 118(9), 170(63), *180, 184, 186*, 237(82), *266*, 306(32), 353(114), *360*, 363(114), *367, 373, 376, 377, 380, 382, 385*, 387(1), 394(12), 402(16), *418, 419, 424, 425, 427, 428*
+- Gerhold, P., 242(99), *267*
+- Gershon, T., 230(61), *266*
+- Gershtein, S. S., 157(33), *177, 185*
+- Gfitter Collaboration, 238(87), 254(87), *261, 267*
+- Giele, W. T., 328(63), *374, 383*
+- Gilbert, W., 78(2), *94*
+- Gildener, E., *262, 425*
+- Giles, R. C., *376*
+- Gilkey, P. B., *56*
+- Gillies, G. T., *55*
+- Gilman, F. J., 14(11), *24*, 221(29), *264*, 329(67), *384*
+- Ginzburg, I. F., *375*
+- Ginzburg, V. L., *90*, 341(86), *385*
+- Giudice, G. F., *180*, 229(60), *265*
+- Giunti, C., *176, 181*
+- Glashow, S. L., 16(14), 18, 18(17), *22–24, 69*, 95(1), 118(9), 170(63), *178, 181, 183, 184, 186*, 191(5), 229(5), *263, 360, 377*, 387(1), *419, 427*
+- Glück, M., *362, 365*
+- Godbole, R. M., *424*
+- Goddard, P., *427*
+- Goeppert-Mayer, M., *182*
+- Goh, H.-S., 246(110), *268*
+- Goldberger, M. L., 84(9), *94*
+- Golden, M., *180*
+- Goldhaber, A. S., *55*, 120(11), 156(11), *184*
+- Goldhaber, G., 18(19), *21, 24, 181, 258*
+- Goldhaber, M., 120(11), 156(11), *177, 184, 425*
+- Goldman, J. T., *377*
+- Goldstein, H., *35*
+- Goldstone, J., 76(1), 78(2), *94*
+- Golowich, E., 14(12), *24, 89, 94, 183*, 229(48), *265*
+- Gomez-Cadenas, J. J., *182*
+- Gonsalves, R. J., 306(33), *382*
+- González Felipe, R., *183*
+- Gori, S., 229(55), *265*
+- Gorishny, S. G., 306(33), *382*
+- Gottfried, K., *91*, 340(79), *363, 384*
+- Gounaris, G., 134(12), *184*
+- Gourdin, M., *21*
+- Grammer, G., *372*
+- Greenberg, O. W., 11(10), *22, 24, 70*, 271(8), *381*
+- Greensite, J., *376*
+- Greiner, W., *370*
+- Gribov, L. V., 325(59), *383*
+- Gribov, V. N., 270(6), 313(6), 325(6), 355(119), *370, 381, 386*
+- Griffiths, D. J., *21, 53*
+- Grimus, W., *181*
+- Grinstein, B., 229(60), *265, 380*
+- Grivaz, J.-F., *424*
+- Grodzins, L., 120(11), 156(11), *177, 184*
+- Gross, D. J., 170(63), *186*, 301(23), 321(54), *371–373, 377, 380, 382, 383*
+- Grupen, C., 205(12), *263*
+
+<!-- PDF page 478; printed page 464 -->
+
+- Guadagnoli, D., 416(35), *429*
+- Guéna, J., *179*
+- Gunion, J. F., *180*
+- Gupta, S. N., 452(3), *456*
+- Guralnik, G. S., *91, 92, 94*
+- Gürsey, F., *70, 423*
+- Guth, A., *425*
+- H1 Collaboration, 213(22), 222(30), 222(31), 222(32), 222(36), 223(33), 223(35), 224(36), *264*, 320(47), 322(56), *383*
+- Haas, T., *373*
+- Haber, H. E., *180, 424*, 445(11), *445, 456*
+- Hagen, C. R., *91, 94*
+- Hagiwara, K., 5(3), *23*
+- Hagler, P., 357(126), *386*
+- Hagmann, C., 355(121), *380, 386*
+- Hahn, T., *455*
+- Haidt, D., *179*
+- HAL QCD Collaboration, 66(4), *70, 378*
+- Hambye, T., 242(100), 243(100), *267*
+- Han, M. Y., 11(8), *24, 367*
+- Hanneke, D., *20*, 232(69), *266*
+- Hannestad, S., 157(34), *185*
+- Hanson, A. J., *56*
+- Hanson, G. J., *19*
+- Harmer, D. S., 159(44), *185*
+- Harnik, R., 246(110), *268*
+- Harris, B. D., 412(32), *429*
+- Harrison, P. F., 229(53), *258, 265*
+- Hasan, H. H., *35*
+- Hasert, F. J., 135(18), *184*
+- Haxton, W. C., *179*
+- He, H.-J., 237(81), *266*
+- Heavy Flavor Averaging Group, 229(47), 229(51), *265*
+- Heinemeyer, S., 241(94), *267*
+- Heinson, A., 229(59), *260, 265*
+- Heitler, W., *23*
+- Hendry, A. W., *22*
+- Hermannsfelt, W. B., *177*
+- Herquet, M., *455*
+- Hertz, H., 2, *23*
+- Hewett, J. L., 229(48), *265, 424*
+- Hey, A. J. G., *35, 55, 69, 91*
+- Hibbs, A. R., *36*
+- Higashijima, K., 194(8), *263*
+- Higgs, P. W., 79(3), *91–94*
+- Hikasa, K., 5(3), *23*
+- Hill, B., *380*
+- Hill, C. T., *36, 262*, 345(95), *379, 385*
+- Hill, E. L., *36*
+- Hinchliffe, I., *180, 254, 363, 365*
+- Hobbs, J. D., *261*
+- Hoddeson, L., *93*
+- Höcker, A., 230(63), *266*
+- Hoelbling, C., *376*
+- Hoffman, K. C., 159(44), *185*
+- Holdom, B., 202(11), *263*
+- Holland, K., 242(99), *267*
+- Hollik, W., 241(94), *267*
+- Holstein, B. R., 14(12), *24, 89, 94, 183*
+- ’t Hooft, G., *22, 23, 69*, 166(62), *171, 178, 183, 186*, 269(5), 291(20), 297(20), 301(23), 346(97), 346(98), 353(116), *369, 372, 377–382, 385*, 408(22), *414, 428*, 450(2), 452(4), *454, 456*
+- Hooper, D., 248(115), *268*
+- Hughes, I., 205(12), *263*
+- Hughes, T. L., *182*
+- Hung, P. Q., *258, 259, 424*
+- Huston, J. W., *374*
+- Huterer, D., 246(111), *268*
+- Hyper-Kamiokande Experiment, *425*
+- Iizuka, J., 349(104), *385*
+- Iliopoulos, J., *18, 24*, 170(63), *186*, 191(5), 229(5), *263*, 402(18), *428*
+- Impeduglia, G., *177*
+- Ioffe, B. L., *370*
+- Irving, A. C., *370*
+- Isgur, N., 352(110), 380(110), *385*
+- Isidori, G., 229(55), 229(60), 244(102), *255, 265, 267*
+- Ising, E., *89*
+- Itzykson, C., *36, 69, 91, 371, 454*
+- Jackiw, R., *93*, 170(63), *183, 186, 262, 377, 380*
+- Jackson, J. D., *35*, 42(6), *54–56*
+- Jacob, M., *455*
+- JADE Collaboration, 307(36), 330(70), *382, 384*
+- Jaffe, A., 276(12), *381*
+- Jaffe, R. L., 274(10), *361, 376, 381*
+- Jankowski, P., 334(75), 335(75), *384*
+- Jansen, K., 242(99), *267*
+- Jarlskog, C., *251, 259*
+- Jauch, J. M., 450(2), *456*
+- Jegerlehner, F., 405(21), *428*
+- Jenkins, E., *379*
+- Jenkins, J., *179*
+- Ji, X., 325(58), *383*
+
+<!-- PDF page 479; printed page 465 -->
+
+- JLQCD Collaboration, 340(82), *377, 384*
+- Joaquim, F. R., *183*
+- Joglekar, S., 119(10), *184*
+- Johnson, K. A., *376*
+- Jona-Lasinio, G., *93*, 353(113), *385*
+- Jones, D. R. T., 239(92), 244(102), *267*, 404(19), *428*
+- Jones, L. M., 332(73), *384*
+- Jost, R., 306(31), *382*
+- Jungmann, K., *179*
+- Junk, T. R., 229(59), 238(86), *260, 265, 266*
+- K2K Collaboration, 158(38), *185*
+- Kabir, P. K., *177*
+- Kado, M. M., 238(83), *266*
+- Kaidalov, A. B., *370*
+- Kalinowski, J., *180*
+- Kalmykov, M. Y., *267*
+- Kamiokande-II Collaboration, 158(36), *185*
+- KamLAND Collaboration, 159(42), 161(49), *185*
+- KamLAND-Zen Collaboration, *182*
+- Kane, G. L., *180*
+- Kang, J., *426*
+- Kastler, D., 78(2), *94*
+- Kataev, A. L., 306(33), *382*
+- KATRIN Experiment, 156(29), *185*
+- Katz, E., *377*
+- Kawamoto, N., 14(11), *24*
+- Kayser, B., 104(3), *184*
+- Kendall, H. W., 213(21), *263*
+- Kennedy, D. C., *261*
+- Kenyon, I. R., 226(38), *264*
+- Keung, W.-Y., *249*
+- Khoze, V. A., *370*
+- Khriplovich, I. B., 134(12), *184*, 301(23), *382*
+- Kibble, T. W. B., *91, 92, 94*
+- Kim, C. W., *181*
+- Kim, J. E., *380*
+- King, G., 390(10), *427*
+- Kingsley, R. L., 332(72), *384*
+- Kinoshita, T., 306(34), 340(79), *375, 382, 384*
+- Kirkby, D., 230(63), *266*
+- Kirzhnits, D. A., *371*
+- Klapdor-Kleingrothaus, H. V., *182*
+- Klebanov, I. R., 351(107), *379, 385*
+- Klein, A., 78(2), *94*
+- Klein, O., *178*
+- Kleiss, R., 200(9), *263*
+- Klochkov, D. S., 408(23), *428*
+- Kluberg-Stern, H., *373*
+- Kniehl, B. A., *267*
+- Knowles, I. G., *369*
+- Kobayashi, M., 192(10), 194(7), *249, 258, 263*
+- Kobzarev, I. Yu., *55*
+- Koenig, M., *55*
+- Kogut, J. B., 241(98), *260, 267, 376*
+- Kokkedee, J. J. J., *21*
+- Kolb, E. W., *425, 426*
+- Konopinski, E. J., *177*
+- Konstandin, T., *426*
+- Kopp, J., *181, 182*
+- Koshiba, M., *181*
+- Kosmann-Schwarzbach, Y., *36*
+- Kosower, D. A., *374*
+- Kramer, G., *373*
+- Krawczyk, M., 325(60), 334(75), 334(77), 335(75), *375, 383, 384*
+- Kribs, G. D., 241(97), *267*
+- Krivosheina, I. V., *182*
+- Kronfeld, A. S., *23*, 302(27), *369, 376, 382*
+- Krotkov, R., *53*
+- Kühn, J. H., 305(29), *382*
+- Kuhn, S. E., 320(53), *383*
+- Kumano, S., 320(52), *383*
+- Kuno, Y., *183*
+- Kunszt, Z., *374, 454*
+- Kuraev, E. A., 200(9), *263*
+- Kurylov, A., *179*
+- Kusenko, A., *182*
+- Kuster, M., *380*
+- Kuti, J., 242(99), *267*
+- Kuzmin, V. A., 408(22), *414, 428*
+- Kwiatkowski, A., 305(29), *382*
+- Kwiecinski, J., 325(60), *383*
+- L3 Collaboration, 142(20), 145(23), *184*, 201(10), 202(10), *204*, 205(10), 205(14), 205(17), 205(18), 251(10), *263*, 312(40), *382*, 405(20), *428*
+- Lai, C. H., *178, 423*
+- Lai, H. L., 320(48), *383*
+- Laiho, J., 187(1), *263*
+- Lamb, Jr., W. E., *92*
+- Landau, L. D., *34, 35, 90*, 329(65), 337(78), 341(86), *371, 383–385*
+- Lane, K. D., *254, 262*, 340(79), 345(94), *365, 379, 384, 385*
+- Lang, C. B., *376*
+
+<!-- PDF page 480; printed page 466 -->
+
+- Langacker, P., *178, 179*, 235(78), 236(78), 238(78), *260, 266, 423–426*
+- Larin, S. A., 302(26), 306(33), *382*
+- Laughlin, R. B., *378*
+- Laveder, M., *176*
+- Lavoura, L., *258, 423*
+- Leader, E., 320(53), *383*
+- Lederman, L. M., *21, 36*
+- Lee, B. W., *36, 55, 69, 70*, 86(10), *91, 94*, 155(28), 160(48), *173, 178, 183, 185, 258, 259, 261, 371, 377*
+- Lee, E. R., *22*, 276(13), *381*
+- Lee, J., 120(11), 156(11), *184*
+- Lee, T. D., *53*, 109(7), *184*, 306(34), *376, 382*
+- LEP Electroweak Working Group, 134(13), 135(13), 142(20), *184*, 201(10), 202(10), 204(10), 205(10), 205(17), 205(18), 234(75), 235(75), 238(75), 251(10), 254(75), *263, 266*, 405(20), *428*
+- LEP Triple Gauge Couplings Working Group, *263*
+- LEP Working Group for Higgs boson searches, 235(76), 238(76), 246(76), *266*
+- Lepage, G. P., *70*, 352(111), *385*
+- Lesgourgues, J., *183*
+- Leutwyler, H., 271(8), 343(90), *370, 377, 381, 385*
+- Levin, D. N., 152(27), *185*
+- Levin, E. M., 325(59), 325(60), *383*
+- Lévy, M., 82(6), *94*
+- LHC Higgs Cross Section Working Group, 149(25), *180, 185*, 239(93), 240(91), *267, 366*
+- LHCb Collaboration, 229(52), 229(54), *265*
+- Li, L.-F., *22, 54, 371, 425, 454*
+- Li, T.-j., *426*
+- Lichtenberg, D. B., *21, 22*
+- Liddle, A. R., *425*
+- Lifshitz, E. M., *34, 35, 171*, 329(65), 337(78), *383, 384*, 437(3), *445*
+- Ligeti, Z., *181*, 230(63), *250, 259, 266*
+- Lin, C. J., *260*
+- Lincoln, D., *374*
+- Linde, A. D., *91*, 243(101), 246(112), *267, 268*
+- Lindner, M., 345(95), *385*
+- Lindsay, R. B., 26(2), *37*
+- Lintz, M., *179*
+- Lipatov, L. N., 270(6), 313(6), 325(6), 325(60), *370, 381, 383*
+- Lipkin, H. J., *21, 22, 70*, 271(8), *381*
+- Littlewood, P. B., *93*
+- Liu, T., *426*
+- Llewellyn Smith, C. H., 119(10), *179, 184, 375*
+- London, D., *423*
+- London, F., 39(3), *56, 90*
+- London, H., *90*
+- Long Baseline Neutrino Experiment Science Collaboration, 410(29), 411, *428*
+- Loomba, D., *22*, 276(13), *381*
+- Lopez, R. E., 156(31), *185*
+- Love, A., *362*
+- Low, F. E., 328(64), *372, 383*
+- Low, I., 246(109), *268*
+- LSND Collaboration, 163(54), *186*
+- Lunghi, E., 187(1), 231(68), *263, 266*
+- Luttinger, J. M., 306(31), *382*
+- Lynch, J., 205(12), *263*
+- Lynn, B. W., *261*
+- Lynton, E. A., *92*
+- Lyons, L., *22*, 276(13), *381*
+- Lyth, D. H., *425*
+- Mahantappa, K. T., 416(35), *429*
+- Maiani, L., *18, 24*, 191(5), 229(5), *259, 260, 263*
+- Majorana, E., 164(58), *186*, 444(8), *445*
+- Maki, Z., *181*
+- Maksimov, E. G., *371*
+- Maldacena, J. M., 357(127), *379, 386*
+- Maltoni, F., 237(81), *266, 455*
+- Maltoni, M., *182*
+- Mandelstam, S., *55*
+- Mandl, F., *36*
+- Mangano, M. L., *374*, 444(6), *445*
+- Manohar, A. V., 353(114), 363(114), *380, 385*, 415(34), *429*
+- Marciano, W. J., *176, 179, 183*, 221(29), 230(61), *257, 260, 264, 266*, 345(92), *385*
+- Marder, M. P., *91*
+- Margenau, H., 26(2), *37*
+- Mark J Collaboration, 307(36), *382*
+- Marshak, R. E., *177*
+- Martin, A. D., 321(51), 325(51), *374, 383*
+- Martin, S. P., 241(96), 245(96), *267, 424*, 444(9), 445(11), *445, 456*
+- Martinelli, G., 322(55), *383*
+
+<!-- PDF page 481; printed page 467 -->
+
+- Martoff, C. J., *425*
+- Marx, G., 157(33), *185*
+- Maskawa, T., 192(10), 194(7), *249, 258, 263*
+- Matheus, R. D’E., 345(96), *385*
+- Mathur, V. S., 155(28), *185*
+- Mattelaer, O., *455*
+- Mattis, D. C., *92*
+- Mazenko, G. F., *92*
+- McClelland, J., 157(33), *185*
+- McCoy, B. M., *89*
+- McGaughey, P. L., 320(52), *383*
+- McKay, W., *425*
+- Meadows, B., *258*
+- Medinnis, M., *373*
+- Mele, S., 289(18), *381, 420*
+- Meledin, G. V., *375*
+- Melnikov, K., *374, 454*
+- Menon, A., *426*
+- Mention, G., 163(57), *186*
+- Mertig, R., *455*
+- Mess, K. H., 307(36), *382*
+- Meyer, P., 170(63), *186*
+- Migdal, A. A., *94*
+- Mikaelian, K. O., *256*
+- Mikheev, S. P., *181*
+- Miller, D. H., 14(11), *24*
+- Mills, R. L., *54*, 57(1), *58, 70*, 269(1), *381*
+- Milstead, D., *427*
+- Milton, K. A., *427*
+- MiniBooNE Collaboration, 163(55), 163(56), *186*
+- Minkowski, P., *91*, 165(59), *186, 418*
+- MINOS Collaboration, 158(39), 161(49), *185*
+- Miransky, V. A., 345(95), *385*
+- Mirizzi, A., 161(52), *186*
+- Mlodinow, L. D., *369, 379*
+- Mnich, J., 144(22), *184*
+- Moch, S., 322(55), *375, 383*
+- Mohanty, S., *181*
+- Mohapatra, R. N., 165(59), *178, 181, 186*, 388(3), 388(6), *423, 427*, 445(12), *445*
+- Mohr, P. J., *35, 457, 458*
+- Montagna, G., *261*
+- Montanino, D., 161(52), *186*
+- Mori, T., *183*
+- Morrissey, D. E., *426*
+- Morton, D. C., *35*
+- Moss, J. M., 320(52), *383*
+- Mottelson, B. R., *37*, 66(3), *70*
+- Mourik, V., *182*
+- Muehlleitner, M. C., *180*
+- Mueller, A. H., 325(59), *370, 383*
+- Müller, B., 354(117), *386*
+- Muon g − 2 Collaboration, *20*
+- Murayama, H., *53*
+- Musolf, M. J., *see* Ramsey-Musolf, M. J.
+- Muta, T., 303(28), 306(30), *370, 382*
+- Nachtmann, O., 318(46), *383*
+- Nadolsky, P. M., 324(57), *383*
+- Nakagawa, M., *181*
+- Nakamura, K., 157(35), 177(35), *185*
+- Nakamura, M., 158(40), *185*
+- Nakano, T., 11(9), *24*
+- Nambu, Y., 11(8), *23, 24, 92, 93*, 271(7), 275(11), 277(14), 343(89), 345(95), 352(108), 353(113), *367, 369, 370, 375, 381, 385*
+- Nanopoulos, D. V., 400(15), *402, 416, 420, 428*
+- Narain, M., *379*
+- Nardi, E., *426*
+- Nason, P., 444(6), *445*
+- Nath, P., *425*
+- Nauenberg, M., 306(34), *382*
+- Naviliat-Cuncic, O., *177*
+- Ne’eman, Y., *21, 69*, 269(3), *381*
+- Nelson, C. A., *22*
+- Neubauer, M. S., *260, 261*
+- Neubert, M., *380*
+- New Muon Collaboration, 213(22), *264, 363*
+- Newell, D. B., *35, 457, 458*
+- Newman, H., 16(13), *24*
+- Ng, Y. J., 307(35), *382*
+- Nicolaidis, A., 332(73), *384*
+- Nicrosini, O., *261*
+- Niczyporuk, J. M., 237(81), *266*
+- Nielsen, H. B., 244(102), *267, 376*
+- Nieto, M. M., *55*
+- Nir, Y., 230(63), *266*, 388(7), *426, 427*
+- Nishijima, K., 11(9), *24*
+- Nisius, R., *375*
+- Noaki, J., 409(25), *428*
+- Nobel Foundation, *371*
+- Noether, E., 30(4), *37*
+- Nogradi, D., 242(99), *267*
+- Nordsieck, A., *372*
+- Novikov, V. A., 241(97), *261, 267*
+- Nunokawa, H., 161(50), *186*
+- Nussinov, S., *377*
+
+<!-- PDF page 482; printed page 468 -->
+
+- NuTeV Collaboration, 108(6), *184*, 220(28), *264*, 320(49), *383*
+- O’Raifeartaigh, L., *54*, 57(2), *70, 91, 178*
+- Oakes, R. J., *377*
+- Okada, Y., *183*
+- Okubo, S., 349(102), *385*, 394(12), *427*
+- Okun, L. B., 39(2), *53–56, 177, 261, 377*
+- Olive, D., *427*
+- OPAL Collaboration, 142(20), *184*, 201(10), 202(10), 204(10), 205(10), 205(15), 205(17), 205(18), 251(10), *263*, 312(40), 334(76), *382, 384*, 405(20), *428*
+- OPERA Collaboration, 158(40), *185*
+- Orito, S., 16(13), *24*
+- Owens, J. F., *365*
+- Özer, A. D., *423*
+- PACS-CS Collaboration, 339(81), 341(81), *384*
+- Pagels, H., *377*
+- Pais, A., *21*
+- Pakvasa, S., 229(48), *265*
+- Pal, P. B., 445(12), *445*
+- Papanicolaou, N., *369, 379*
+- Parisi, G., 270(6), 313(6), 325(6), *381*
+- Parke, S. J., 161(50), *186, 374*
+- Parsa, Z., *179*
+- Particle Data Group, 4(2), 13(2), *23, 69*, 105(4), 120(4), 130(4), 156(4), 157(35), 163(4), 177(35), *184, 185*, 190–192(3), 195–197(3), 217(3), 218(26), 222(3), 230(3), 235(3), 236(3), 238(3), 250(3), 259(3), 260(3), *263*, 264(3), 266(3), 302(24), 305(24), 314(43), 325(24), 334(77), 344(84), *363, 382–384*, 388(5), *424, 425, 427, 457*
+- Paschos, E. A., *253, 260*
+- Passarino, G., *261*
+- Pastor, S., *183*
+- Patera, J., 360(131), *386, 424, 425*
+- Pati, J. C., 387(2), 388(3), 416(35), *420, 423, 427, 429*
+- Patkós, A., *376*
+- Paul, S., 230(62), *266*
+- Pauli, W., 39(5), *56*, 284(16), *381*, 452(3), *456*
+- PDF4LHC Working Group, *373*
+- Peacock, J. A., *425*
+- Peccei, R. D., 355(122), *380, 386, 426*
+- Peebles, P. J. E., 246(112), *268*, 410(30), *428*
+- Peierls, R. E., *37*
+- Pekar, D., *53*
+- Peng, J. C., 320(52), *383*
+- Penzias, A. A., 410(30), *428*
+- Perelomov, A. M., 394(12), *428*
+- Perelstein, M., 246(109), *268*
+- Perl, M. L., *22*, 276(13), *381*
+- Perlmutter, S., 246(113), *268*
+- Peruzzi, I., 18(19), *24*
+- Peshkin, M., *54*
+- Peskin, M. E., *35, 261, 371, 374, 454*
+- Petcov, S. T., 157(35), 177(35), *185*, 239(92), *267*
+- Peterman, A., *372*
+- Peterson, C., 332(73), *384*
+- Petronzio, R., 322(55), *383*
+- Petrov, A. A., 229(48), *258, 265*
+- PHENIX Collaboration, 227(42), *265*
+- Picasso, E., *20*
+- Piccinini, F., *261*
+- Pich, A., 390(9), *427*
+- Pietrzyk, B., 289(19), *381*
+- Pietschmann, H., *21*
+- Pines, A., *55*
+- Pines, D., *378*
+- Pipkin, F. M., *375*
+- Pitaevski, L. P., *171*, 437(3), *445*
+- Plehn, T., 241(97), *267*
+- PLUTO Collaboration, 307(36), *382*
+- Pokorski, S., *454*
+- Policastro, G., 358(130), *386*
+- Politzer, H. D., 301(23), *371, 373, 382*
+- Polyakov, A. M., *94, 377*
+- Pondrom, L., *20*
+- Pontecorvo, B., *180, 181*
+- Poole, C. P., *35*
+- Popescu, S., *54*
+- Popov, V. S., 394(12), *428*
+- Porsev, S. G., *175*
+- Possoz, A., 120(11), 156(11), *184*
+- Prescott, C., 221(29), *264*
+- Prokopec, T., *426*
+- Przybycien, M., 330(70), *375, 384*
+- Qiu, J.-W., 325(59), *383*
+- Quigg, C., *21–23*, 86(10), *94*, 155(28), *171, 173, 175, 178, 185*, 232(71), *253, 254, 259, 261, 266*, 302(27), 340(83), *358, 363, 365, 366, 369, 379, 382, 384, 419, 422*
+
+<!-- PDF page 483; printed page 469 -->
+
+- Quinn, H. R., 229(53), *258, 265*, 355(122), *380, 386*, 402(16), *426, 428*
+- Quirós, M., *242*, 243(100), *267*
+- Qweak Collaboration, *179*
+- Raby, S., 402(18), 410(28), 410(29), 411, *421, 423, 428*
+- Radicati, L. A., *70*
+- Radyushkin, A. V., 325(59), *383*
+- Raffelt, G., 161(52), *186, 380*
+- Rajantie, A., *92*
+- Ramond, P., *36*, 165(59), *186, 261, 424, 454*
+- Ramsey, N. F., *20*
+- Ramsey-Musolf, M. J., *179*, 236(77), *260, 266, 421*
+- Randall, L., 245(106), *267*
+- Ratra, B., 246(112), *268*
+- Ratz, M., 402(18), *428*
+- RBC–UKQCD Collaboration, 409(25), *428*
+- Rebbi, C., *23, 70, 376, 380*
+- Renner, B., *377*
+- Renner, D. B., 357(126), *386*
+- Reno, M. H., *171, 175, 253*
+- RENO Collaboration, 161(49), *185*
+- Revol, J. P., *260*
+- Reya, E., 313(42), *362, 365, 371, 382*
+- Riazuddin, *177*
+- Rich, A., *20*
+- Ridolfi, G., 244(102), *267*
+- Riess, A. G., 157(32), *185*, 246(113), *268*
+- Riesselmann, K., 242(100), 243(100), *267*
+- Rinker, G. A., *371*
+- Riordan, M., *22, 93*
+- Riotto, A., *426*
+- Rith, K., *373*
+- Rizzo, T. G., *424*
+- Roberts, C. D., 340(85), 342(85), *378, 384*
+- Roberts, R. G., *373, 374*
+- Robinett, R., *423, 424*
+- Robinson, D. W., 78(2), *94*
+- Rodejohann, W., *182*
+- Roesch, L. Ph., 120(11), 156(11), *184*
+- Rohrlich, F., *35*, 450(2), *456*
+- Roll, P. G., *53*, 410(30), *428*
+- Roney, J. M., *183*
+- Rosen, S. P., 104(3), *184*
+- Rosenberg, L. J., *380*
+- Rosner, J. L., *22*, 191(6), *258, 261, 263*, 274(10), *381, 423, 424*
+- Ross, D. A., *174, 183*, 402(18), *428*
+- Ross, G. G., 307(35), *382, 423*
+- Rossi, B., 310(39), *382*
+- Roth, M., *373*
+- Rothe, H. J., *376*
+- Rouet, A., *183*
+- Rowson, P. C., 205(16), *263*
+- Roy, P., *424*
+- Rozanov, A. N., 241(97), *261, 267*
+- Rubakov, V. A., *35*, 408(22), *414, 428*
+- Rubbia, C., *259*
+- Ruchayskiy, O., *182*
+- Ryan, C. P., *177*
+- Ryder, L. H., *35*
+- Ryskin, M. G., 325(59), *383*
+- Ryutov, D. D., 49(11), *56*
+- Sachrajda, C. T., 415(34), *429*
+- SAGE Collaboration, 159(44), *185*
+- Sahdev, D., *256*
+- Sakai, N., 410(28), *428*
+- Sakai, T., 357(128), *386*
+- Sakai, Y., *250, 259*
+- Sakata, S., *181*
+- Sakharov, A. D., *426*
+- Sakita, B., *70*
+- Sakurai, J. J., *36, 69, 177, 258*, 269(2), *375, 381*
+- Salam, A., 16(14), *22, 24*, 78(2), *94*, 95(1), *178, 183*, 387(2), *420, 427*
+- Salam, G. P., 308(38), *374, 382*
+- Samuel, M. A., *256*, 306(33), *382*
+- Sanda, A. I., 14(11), *24, 258, 261*, 388(7), *427*
+- Sankoff, D., 360(131), *386, 424*
+- Sannino, F., *379*
+- Sapirstein, J. R., 306(33), *382*
+- Sarcevic, I., *171, 175, 253*
+- Sargent III, M., *92*
+- Sarkar, S., 412(32), *429*
+- Schachinger, L., *20*
+- Schaile, D., *252*
+- Schechter, J., 165(59), *182, 186*
+- Schellekens, A. N., 245(107), *267*, 440(5), *445*
+- Schlamminger, S., *53*
+- Schlatter, W. D., 238(84), *266*
+- Schmaltz, M., 246(109), *268*
+- Schmelling, M., *369*
+- Schmidt, B. P., *268*
+- Schmidt, M. G., *426*
+- Schmidt-Hoberg, K., 402(18), *428*
+- Schonfeld, J. F., *93*
+
+<!-- PDF page 484; printed page 470 -->
+
+- Schopper, H., *260*
+- Schramm, S., *370*
+- Schrieffer, J. R., 88(11), *92, 94*, 341(87), *385*
+- Schroeder, C., 242(99), *267*
+- Schroeder, D. V., *35, 371, 454*
+- Schwartz, A. S., *377*
+- Schwartz, M., *21*
+- Schwartz, M. D., *377*
+- Schwetz, T., *182*
+- Schwinberg, P. B., *20*
+- Schwinger, J., *37, 93, 178*
+- Schwitters, R. F., *19*
+- Scully, M. O., *92*
+- Seco, M., *426*
+- Sefko, J. L., *35*
+- Seiberg, N., *379*
+- Seiden, A., *21*
+- Selem, A., 278(15), 325(15), *381*
+- Semenov, A. V., *454*
+- Senjanovic, G., 165(59), *186*, 388(3), 410(29), 411, *427, 428*
+- Serbo, V. G., *375*
+- Serenelli, A. M., 160(45), *185*
+- Serpico, P. D., 161(52), *186*
+- SESAM Collaboration, 275(11), *381*
+- Settles, R., 205(12), *263*
+- Severijns, N., *177*
+- Shapere, A., *55*
+- Shaposhnikov, M. E., *182, 267*, 408(22), *414, 428*
+- Shaw, G., *36*
+- Shaw, G. L., *377*
+- Shaw, R., 57(2), *70*
+- Shifman, M. A., *259*, 352(109), *377, 378, 380, 385*
+- Shirkov, D. V., *36, 372*
+- Shizuya, K., *373*
+- Shrock, R., 160(48), *185, 377, 379*
+- Shuryak, E. V., 352(109), *385*
+- Siday, R. E., 44(8), *56*
+- Sikivie, P., *179, 380, 423*
+- Silk, J., 248(115), *268*, 411(31), *429*
+- Silva, J. P., *258*
+- Simmons, E. H., *262, 379*
+- Singer, I. M., *55*
+- Singh, S., 411(31), *429*
+- Sirlin, A., 233(74), *261, 266*
+- Skobkin, V. S., 408(23), *428*
+- SLAC E158 Collaboration, *179*, 235(79), *266*
+- SLAC–MIT Collaboration, 213(22), *264*
+- Slansky, R., 165(59), *186, 377, 425*
+- Slavnov, A. A., *183, 371*
+- SLD Collaboration, 120(11), 142(20), 156(11), *184*, 201(10), 202(10), 204(10), 205(10), 205(16), 251(10), *263*, 405(20), *428*
+- SLD Electroweak and Heavy Flavour Groups, 142(20), *184*, 201(10), 202(10), 204(10), 205(10), 251(10), *263*
+- Sloan, T., 216(25), *264*
+- Smadja, G., 216(25), *264*
+- Smirnov, A. Y., 158(41), 165(60), 177(41), *181, 185, 186*
+- Smith, J., *371*
+- Smith, P. F., *22*, 276(13), *381*
+- SNO Collaboration, 160(47), *185*, 398(14), *428*
+- Snow, W. M., 388(6), *427*
+- Söding, P., *373*
+- Son, D. T., 358(130), *386*
+- Soni, A., 231(68), *266*, 409(25), *428*
+- Soper, D. E., *35*, 326(61), *383*
+- Spannowsky, N., 241(97), *267*
+- Spira, M., *180, 257*
+- Spital, R. D., *375*
+- Srednicki, M., *371*, 444(10), *445*
+- STAR Collaboration, 227(42), *265*
+- Starinets, A. O., 358(130), *386*
+- Staszel, M., 334(77), *375, 384*
+- Steigman, G., 156(30), *185*, 412(32), *429*
+- Stein, E., *370*
+- Steinberger, J., *21*
+- Steinhardt, P. J., *425*
+- Stelzer, T., *455*
+- Sterman, G. F., 307(37), 326(61), *370, 382, 383*
+- Stirling, W. J., 306(30), 321(51), 325(51), *366, 369, 374, 382, 383*
+- Stocchi, A., *258*
+- Stockinger, P., *181*
+- Stone, S., 229(54), *265*
+- Stora, R., *183, 259*
+- Straub, D. M., 416(35), *429*
+- Straumann, N., *54, 262*
+- Streater, R. F., 78(2), *94*
+- Strikman, M., 325(60), *383*
+- Strocchi, F., *93*
+- Strumia, A., *181*, 229(60), 244(102), *254, 265, 267*
+- Stuart, R. G., *261*
+- Stueckelberg, E. C. G., *372*
+- Styer, D. F., *36*
+
+<!-- PDF page 485; printed page 471 -->
+
+- Su, D., 205(16), *263*
+- Sudarshan, E. C. G., *177*
+- Sugimoto, S., 357(128), *386*
+- Sullivan, J. D., 332(73), *384*
+- Sullivan, M., 246(113), *268*
+- Sundrum, R., 245(106), *267*
+- Sunyar, A. W., 120(11), 156(11), *177, 184*
+- Super-Kamiokande, 158(37), 160(46), *185*, 388(6), 398(13), *427, 428*
+- Surguladze, L. R., 306(33), *382*
+- Sushkov, O. P., 134(12), *184*
+- Susskind, L., *179, 262*, 345(93), 345(94), *376, 385, 425*
+- Suura, H., *372*
+- Swallow, E. C., *259*, 390(9), *427*
+- Swieca, A., 78(2), *94*
+- Symanzik, K., *372*
+- Szalay, A. S., 157(33), *185*
+- T2K Collaboration, 161(49), *185*
+- Tait, T. M. P., 241(97), *267, 424*
+- Takanishi, Y., 244(102), *267*
+- Takeuchi, T., *261*
+- Tanabashi, M., 5(3), *23*, 345(95), *385*
+- TASSO Collaboration, 307(36), 330(70), *382, 384*
+- Tata, X., *424*
+- Taylor, B. N., *35, 458*
+- Taylor, J. C., *70, 91, 183, 372*
+- Taylor, T. R., *374*
+- Tenchini, R., *260*
+- Terazawa, H., *375*
+- Terent’ev, V. V., 408(23), *428*
+- Terning, J., *424*
+- Tevatron Electroweak Working Group, 233(72), *266*
+- Tevatron New Phenomena and Higgs Working Group, 238(85), *266*
+- TEXONO Collaboration, 142(21), *184*
+- Thacker, H. B., 86(10), *94*, 155(28), *173, 185*
+- Thirring, W., *21*
+- Thomas, A. W., *378*
+- Thorn, C. B., *376*
+- Thorne, R. S., 321(51), 325(51), *373, 374, 383*
+- Thouless, D. J., *55*
+- Tiktopoulos, G., 152(27), *185*
+- Tilley, D. R., *35*
+- Tinkham, M., *92*
+- Tkachov, F. V., 306(33), *382*
+- Tonomura, A., 46(9), *54, 56*
+- Tortola, M., 161(51), *186*
+- Toussaint, D., *426*
+- Treiman, S. B., 84(9), *94*, 322(55), *377, 383, 426*
+- Tribble, R. E., 388(4), *427*
+- Trippe, T. G., *260*
+- Trodden, M., *426*
+- Troyan, S. I., *370, 373*
+- Trueman, T. L., *455*
+- Tsigutkin, K., *179*
+- Tu, L. C., *55*
+- Tuchin, K., 325(60), *383*
+- Tucker-Smith, D., 246(109), *268*
+- Tully, C. G., 238(83), *266*
+- Tung, W.-K., *70, 424*
+- Turner, M. S., 246(111), *268, 425*
+- TWIST Collaboration, *177*, 388(4), *427*
+- Tye, S. H. H., 307(35), *373*
+- Tyupkin, Y. S., *377*
+- UA1 Collaboration, 227(40), 228(41), 228(44), *265*
+- UA2 Collaboration, 227(40), 228(44), *265*
+- Uehling, E. A., 288(17), 361(17), *381*
+- Uraltsev, N., *380*
+- UTfit Collaboration, *259*
+- Utiyama, R., *69*
+- Vázquez-Mozo, M. Á., *35*
+- Vaidman, L., *54*
+- Vainshtein, A. I., *259*
+- Valle, J. W. F., 161(50), 161(51), 165(59), *182, 186*
+- van Bibber, K., *380*
+- Van de Water, R. S., 187(1), *263*
+- van der Meer, S., *259*
+- van der Waerden, B. L., 444(7), *445*
+- Van Dyck, Jr., R. S., *20*
+- van Ritbergen, T., 302(26), *382*, 440(5), *445*
+- Van Royen, R., *21*
+- Varma, C. M., *93*
+- Veltman, M., 16(14), *24*, 25(1), *37, 174, 177, 178, 180, 183*, 233(74), 236(80), 246(112), *261, 266, 268*, 291(20), 297(20), *381*, 433(2), *445*, 450(2), 452(4), *454, 456*
+- Veneziano, G., *378*
+- Vermaseren, J. A. M., 302(26), 322(55), *375, 382*, 440(5), *445, 454*
+- Vermaseren, J.A.M., *383*
+
+<!-- PDF page 486; printed page 472 -->
+
+- Verzegnassi, C., 200(9), *260, 263*
+- Villars, F., 284(16), *381*, 452(3), *456*
+- Vissani, F., *181*
+- Vogel, P., *182*
+- Vogelsang, W., 320(53), *383*
+- Vogt, A., 322(55), *375, 383*
+- Voloshin, M. B., *179*, 352(109), *385*
+- Voss, R., 216(25), *264*
+- Vysotsky, M. I., 241(97), *261, 267*
+- Wagner, A., *373*
+- Wagner, C. E. M., *426*
+- Walsh, T. F., 332(72), 332(73), *375, 384*
+- Ward, J. C., 95(1), *178, 183*
+- Watson, A., *23, 369*
+- Watt, G., 321(51), 325(51), *383*
+- Webber, B. R., 135(16), *184*, 306(30), *366, 369, 382*
+- Weber, A. M., 241(94), *267*
+- Weeks, B. G., *373*
+- Weiglein, G., 241(94), *267*
+- Weinberg, E. J., *262, 427*
+- Weinberg, S., 16(14), *21–24, 35*, 78(2), *91, 94*, 95(1), *178, 180, 183*, 243(101), 245(107), 245(108), 246(111), *262, 267, 268*, 307(37), 345(93), 352(112), 353(115), 354(118), *370, 371, 377, 378, 380, 382, 385, 386*, 402(16), 410(26), 410(28), 411(31), *424–426, 428, 429*
+- Weingarten, D. H., *23, 70*, 350(106), *376, 385*
+- Weinstein, M., *179*, 345(91), *385*
+- Weinzierl, S., *454*
+- Weise, W., *378*
+- Weiss, C., 325(60), *383*
+- Weisskopf, V. F., *21, 371, 376*
+- von Weizsäcker, C. F., 313(41), 328(41), 362(41), *382*
+- Weller, H. R., *35*
+- Wentzel, G., *52*
+- Wesley, J., *20*
+- Wess, J., *424*
+- Weyl, H., *36*, 38(1), 39(4), *56*, 444(7), *445*
+- Whalley, M. R., *373*
+- Whitaker, E. T., *54*
+- Whitlow, L. W., 213(22), *264*
+- Wick, G. C., *455*
+- Wieman, C. E., *175, 179*
+- Wiese, U. J., *270*
+- Wigner, E. P., *54, 67, 91*
+- Wiik, B. H., 307(36), *373, 382*
+- Wilczek, F., *22, 35, 55, 182*, 278(15), 301(23), 322(55), 325(15), 340(83), 356(123), *369, 371, 373, 380–384, 386*, 410(26), 410(28), 416(35), *418, 421, 423, 426, 428, 429*
+- Wilkinson, D. T., 410(30), *428*
+- Willen, D. E., 332(73), *384*
+- Willenbrock, S., 237(81), *257, 259, 261, 266, 421*
+- Williams, C., 135(16), *184*
+- Williams, E. J., 313(41), 328(41), 329(65), 362(41), *382, 383*
+- Williams, N. J., 388(4), *427*
+- Willocq, S., 205(16), *263*
+- Wilson, K. G., 241(98), *260, 262, 267, 372, 376*
+- Wilson, R. W., 410(30), *428*
+- Wingerter, A., 242(100), 243(100), *267*
+- Winston, R., *259*, 390(9), *427*
+- Wise, M. B., 229(60), *265*, 352(110), 380(110), *380, 385*
+- Witten, E., 276(12), 331(71), 346(100), 351(100), *374, 375, 377–379, 381, 384, 385*
+- WMAP Collaboration, 246(114), *268*
+- Wohl, C. G., *69*
+- Wolf, E., *54*
+- Wolf, G., 16(13), *24, 373*
+- Wolfenstein, L., *181, 250, 253, 260, 423*
+- Wolfram, S., *378, 426*
+- Womersley, J., *379*
+- Worden, R. P., *370*
+- Wu, C. S., 5, *23*, 109(7), *184*
+- Wu, Q., *35*
+- Wu, S. L., *373*
+- Wu, T. T., *55, 89*
+- Wyld, H. W., 332(73), *384*
+- Xing, Z.-z, 415(34), *429*
+- Yaffe, L. G., *379*
+- Yamawaki, K., 345(95), *385*
+- Yan, T.-M., *91*, 225(37), *264*, 340(79), *384*
+- Yanagida, T., 165(59), *186*, 410(28), 414(33), *426, 428, 429*
+- Yang, C. N., *53–55*, 57(1), *58, 70*, 269(1), *381*
+- Yang, U. K., 214(23), *264*
+- Yennie, D. R., *372, 375*
+- Ynduráin, F. J., 317(44), *370, 383*
+- Yoshimura, M., *426*
+
+<!-- PDF page 487; printed page 473 -->
+
+- Zakharov, V. I., *179, 259*
+- Zanderighi, G., 328(63), *374, 383, 454*
+- Zee, A., *36*, 306(32), 322(55), *371, 372, 382, 383*, 410(26), *418, 426, 428, 454*
+- Zel’dovich, Y. B., 157(33), *177, 185, 262*
+- Zembrzuski, A., 334(77), *375, 384*
+- Zerwas, P. M., 238(84), *252, 266*, 332(72), 332(73), *384*
+- ZEUS Collaboration, 213(22), 222(30), 222(31), 222(32), 222(36), 223(34), 223(35), 224(36), 229(56), *264, 265*, 320(47), 322(56), *383*
+- Zhang, C., *257*
+- Zhang, H., 415(34), *429*
+- Zhou, S., 415(34), *429*
+- Zinn-Justin, J., *94, 178, 183, 371*
+- Zioutas, K., *380*
+- Zuber, J.-B., *36, 69, 91, 371, 454*
+- Zwanziger, D., 271(8), *381*
+- Zwanziger, J. W., *55*
+- Zweig, G., 7, *23*, 349(103), *385*

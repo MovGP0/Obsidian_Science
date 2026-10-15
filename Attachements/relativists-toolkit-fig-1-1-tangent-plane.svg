@@ -1,0 +1,15 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="680" height="420" viewBox="0 0 680 420">
+<rect width="100%" height="100%" fill="white"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="black"/></marker></defs>
+
+<g fill="none" stroke="black" stroke-width="2">
+  <path d="M110 300 Q260 110 475 95 Q555 125 580 220 Q390 265 300 385 Q210 325 110 300 Z"/>
+  <path d="M285 335 C293 341 299 308 305 275 C311 242 370 170 435 155"/>
+  <path d="M305 275 L340 83" marker-end="url(#arrow)"/>
+</g>
+<circle cx="305" cy="275" r="4"/>
+<g font-family="Georgia,serif" font-size="28" font-style="italic">
+  <text x="314" y="273">P</text><text x="397" y="179">γ</text>
+  <text x="345" y="75">u<tspan baseline-shift="super" font-size="18">α</tspan></text>
+</g>
+</svg>

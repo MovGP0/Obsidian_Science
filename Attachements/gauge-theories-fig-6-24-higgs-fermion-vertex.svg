@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="365" height="280" viewBox="0 0 365 280">
+<title>Higgs–fermion interaction vertex; its factor is transcribed beside the figure</title>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M 0 0 L 10 5 L 0 10 L 3 5 Z" fill="#222"/></marker></defs>
+<rect width="365" height="280" fill="white"/>
+<g fill="none" stroke="#222" stroke-width="2.2" stroke-linecap="round"><path d="M 130 130 L 65 35"/><path d="M 130 130 L 65 225"/><path d="M 130 130 L 285 130" stroke-dasharray="8 7"/><circle cx="130" cy="130" r="4" fill="#222"/><path d="M 102 89 L 89 69" marker-end="url(#arrow)"/><path d="M 89 192 L 102 172" marker-end="url(#arrow)"/><text x="70" y="31" fill="#222" stroke="none" text-anchor="middle" font-family="Arial, sans-serif" font-size="22">f</text><text x="70" y="255" fill="#222" stroke="none" text-anchor="middle" font-family="Arial, sans-serif" font-size="22">f</text><text x="310" y="136" fill="#222" stroke="none" text-anchor="middle" font-family="Arial, sans-serif" font-size="22">H</text></g></svg>
