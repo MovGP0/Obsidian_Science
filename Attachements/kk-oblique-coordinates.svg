@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 650" width="1100" height="650" role="img" aria-labelledby="kk-oblique-title">
+  <title id="kk-oblique-title">An oblique step has two Cartesian projections</title>
+  <desc>Editable vector explanation. All labels are SVG text; no raster images are embedded.</desc>
+  <defs>
+    <marker id="kk-oblique-ink" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#263445" />
+    </marker>
+    <marker id="kk-oblique-teal" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#006d77" />
+    </marker>
+    <marker id="kk-oblique-red" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#b22222" />
+    </marker>
+    <marker id="kk-oblique-purple" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#6a3d9a" />
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1100" height="650" fill="#ffffff" rx="14" />
+  <text x="550.0" y="49" fill="#263445" font-size="31" font-family="Segoe UI, Arial, sans-serif" font-weight="600" text-anchor="middle">
+    <tspan x="550.0" dy="0">
+      <tspan>An oblique step has two Cartesian projections</tspan>
+    </tspan>
+  </text>
+  <line x1="165" y1="465" x2="990" y2="465" stroke="#263445" stroke-width="2" fill="none" marker-end="url(#kk-oblique-ink)" />
+  <line x1="165" y1="465" x2="165" y2="100" stroke="#263445" stroke-width="2" fill="none" marker-end="url(#kk-oblique-ink)" />
+  <text x="1000" y="475" fill="#263445" font-size="26" font-family="Segoe UI, Arial, sans-serif" font-weight="400" text-anchor="start">
+    <tspan x="1000" dy="0">
+      <tspan>x, x′</tspan>
+    </tspan>
+  </text>
+  <text x="150" y="85" fill="#263445" font-size="26" font-family="Segoe UI, Arial, sans-serif" font-weight="400" text-anchor="start">
+    <tspan x="150" dy="0">
+      <tspan>y</tspan>
+    </tspan>
+  </text>
+  <line x1="165" y1="465" x2="375.0" y2="101.26933041053576" stroke="#006d77" stroke-width="2" fill="none" marker-end="url(#kk-oblique-teal)" />
+  <text x="390" y="90" fill="#006d77" font-size="27" font-family="Segoe UI, Arial, sans-serif" font-weight="400" text-anchor="start">
+    <tspan x="390" dy="0">
+      <tspan>y′</tspan>
+    </tspan>
+  </text>
+  <line x1="165" y1="465" x2="515" y2="465" stroke="#006d77" stroke-width="5" fill="none" marker-end="url(#kk-oblique-teal)" />
+  <line x1="165" y1="465" x2="315.0" y2="205.1923788646684" stroke="#006d77" stroke-width="5" fill="none" marker-end="url(#kk-oblique-teal)" />
+  <line x1="315.0" y1="205.1923788646684" x2="665.0" y2="205.1923788646684" stroke="#b8c5d1" stroke-width="2" fill="none" stroke-dasharray="8 7" />
+  <line x1="515" y1="465" x2="665.0" y2="205.1923788646684" stroke="#006d77" stroke-width="3" fill="none" />
+  <line x1="165" y1="465" x2="665.0" y2="205.1923788646684" stroke="#6a3d9a" stroke-width="4" fill="none" />
+  <line x1="665.0" y1="205.1923788646684" x2="665.0" y2="465" stroke="#b22222" stroke-width="3" fill="none" stroke-dasharray="8 7" />
+  <line x1="515" y1="465" x2="665.0" y2="465" stroke="#b22222" stroke-width="5" fill="none" />
+  <path d="M165.00,380.00 L166.53,380.01 L168.07,380.06 L169.60,380.12 L171.13,380.22 L172.66,380.35 L174.19,380.50 L175.71,380.68 L177.23,380.89 L178.75,381.12 L180.26,381.38 L181.77,381.67 L183.27,381.99 L184.77,382.33 L186.26,382.70 L187.74,383.10 L189.21,383.52 L190.68,383.97 L192.14,384.45 L193.59,384.95 L195.03,385.48 L196.46,386.04 L197.88,386.62 L199.29,387.22 L200.69,387.86 L202.08,388.51 L203.45,389.19 L204.81,389.90 L206.16,390.63 L207.50,391.39" fill="none" stroke="#b45309" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+  <text x="183" y="359" fill="#b45309" font-size="26" font-family="Segoe UI, Arial, sans-serif" font-weight="400" text-anchor="start">
+    <tspan x="183" dy="0">
+      <tspan>γ</tspan>
+    </tspan>
+  </text>
+  <text x="300" y="505" fill="#006d77" font-size="27" font-family="Segoe UI, Arial, sans-serif" font-weight="400" text-anchor="start">
+    <tspan x="300" dy="0">
+      <tspan>dx′</tspan>
+    </tspan>
+  </text>
+  <text x="205" y="300" fill="#006d77" font-size="27" font-family="Segoe UI, Arial, sans-serif" font-weight="400" text-anchor="start">
+    <tspan x="205" dy="0">
+      <tspan>dy′</tspan>
+    </tspan>
+  </text>
+  <text x="405" y="280" fill="#6a3d9a" font-size="29" font-family="Segoe UI, Arial, sans-serif" font-weight="400" text-anchor="start">
+    <tspan x="405" dy="0">
+      <tspan>ds</tspan>
+    </tspan>
+  </text>
+  <text x="530" y="505" fill="#b22222" font-size="24" font-family="Segoe UI, Arial, sans-serif" font-weight="400" text-anchor="start">
+    <tspan x="530" dy="0">
+      <tspan>sin γ · dy′</tspan>
+    </tspan>
+  </text>
+  <text x="690" y="335" fill="#b22222" font-size="24" font-family="Segoe UI, Arial, sans-serif" font-weight="400" text-anchor="start">
+    <tspan x="690" dy="0">
+      <tspan>cos γ · dy′</tspan>
+    </tspan>
+  </text>
+  <text x="550" y="575" fill="#263445" font-size="29" font-family="Segoe UI, Arial, sans-serif" font-weight="400" text-anchor="middle">
+    <tspan x="550" dy="0">
+      <tspan>dx = dx′ + sin γ · dy′</tspan>
+    </tspan>
+  </text>
+  <text x="550" y="620" fill="#263445" font-size="29" font-family="Segoe UI, Arial, sans-serif" font-weight="400" text-anchor="middle">
+    <tspan x="550" dy="0">
+      <tspan>dy = cos γ · dy′</tspan>
+    </tspan>
+  </text>
+</svg>

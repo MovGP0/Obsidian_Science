@@ -1,5 +1,5 @@
 ﻿---
-title: "B.2 Cross Sections"
+title: "Cross Sections"
 ---
 
 > [!TLDR]

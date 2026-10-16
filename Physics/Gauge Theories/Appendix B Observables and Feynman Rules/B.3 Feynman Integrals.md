@@ -1,9 +1,8 @@
 ﻿---
-title: "B.3 Feynman Integrals"
+title: "Feynman Integrals"
 source_pdf: "D:\\GitHub\\books\\dokumen.pub_gauge-theories-of-the-strong-weak-and-electromagnetic-interactions-second-edition-secondnbsped-9781400848225.pdf"
 source_page: "450"
 pdf_page: 464
-bead: "Obsidian_Electronics-l4vx.109"
 ---
 
 > [!TLDR]

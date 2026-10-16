@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 660" width="1100" height="660" role="img" aria-labelledby="kk-ladder-title">
+  <title id="kk-ladder-title">One mass level has two opposite winding directions</title>
+  <desc>Editable vector explanation. All labels are SVG text; no raster images are embedded.</desc>
+  <defs>
+    <marker id="kk-ladder-ink" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#263445" />
+    </marker>
+    <marker id="kk-ladder-teal" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#006d77" />
+    </marker>
+    <marker id="kk-ladder-red" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#b22222" />
+    </marker>
+    <marker id="kk-ladder-purple" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#6a3d9a" />
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1100" height="660" fill="#ffffff" rx="14" />
+  <text x="550.0" y="49" fill="#263445" font-size="31" font-family="Segoe UI, Arial, sans-serif" font-weight="600" text-anchor="middle">
+    <tspan x="550.0" dy="0">
+      <tspan>One mass level has two opposite winding directions</tspan>
+    </tspan>
+  </text>
+  <text x="150" y="115" fill="#263445" font-size="27" font-family="Segoe UI, Arial, sans-serif" font-weight="400" text-anchor="middle">
+    <tspan x="150" dy="0">
+      <tspan>Mass</tspan>
+    </tspan>
+  </text>
+  <text x="375" y="115" fill="#1f4e8c" font-size="27" font-family="Segoe UI, Arial, sans-serif" font-weight="400" text-anchor="middle">
+    <tspan x="375" dy="0">
+      <tspan>Negative winding</tspan>
+    </tspan>
+  </text>
+  <text x="850" y="115" fill="#b22222" font-size="27" font-family="Segoe UI, Arial, sans-serif" font-weight="400" text-anchor="middle">
+    <tspan x="850" dy="0">
+      <tspan>Positive winding</tspan>
+    </tspan>
+  </text>
+  <line x1="235" y1="535" x2="1000" y2="535" stroke="#b8c5d1" stroke-width="2" fill="none" />
+  <text x="150" y="544" fill="#263445" font-size="28" font-family="Segoe UI, Arial, sans-serif" font-weight="400" text-anchor="middle">
+    <tspan x="150" dy="0">
+      <tspan>0</tspan>
+    </tspan>
+  </text>
+  <circle cx="610" cy="535" r="13" fill="#006d77" stroke="#006d77" stroke-width="3" />
+  <text x="610" y="580" fill="#263445" font-size="24" font-family="Segoe UI, Arial, sans-serif" font-weight="400" text-anchor="middle">
+    <tspan x="610" dy="0">
+      <tspan>n = 0, q = 0</tspan>
+    </tspan>
+  </text>
+  <line x1="235" y1="420" x2="1000" y2="420" stroke="#b8c5d1" stroke-width="2" fill="none" />
+  <text x="150" y="429" fill="#263445" font-size="28" font-family="Segoe UI, Arial, sans-serif" font-weight="400" text-anchor="middle">
+    <tspan x="150" dy="0">
+      <tspan>1/r</tspan>
+    </tspan>
+  </text>
+  <circle cx="375" cy="420" r="13" fill="#1f4e8c" stroke="#1f4e8c" stroke-width="3" />
+  <text x="375" y="462" fill="#1f4e8c" font-size="23" font-family="Segoe UI, Arial, sans-serif" font-weight="400" text-anchor="middle">
+    <tspan x="375" dy="0">
+      <tspan>n = −1,  q = −1κ/r</tspan>
+    </tspan>
+  </text>
+  <circle cx="850" cy="420" r="13" fill="#b22222" stroke="#b22222" stroke-width="3" />
+  <text x="850" y="462" fill="#b22222" font-size="23" font-family="Segoe UI, Arial, sans-serif" font-weight="400" text-anchor="middle">
+    <tspan x="850" dy="0">
+      <tspan>n = +1,  q = +1κ/r</tspan>
+    </tspan>
+  </text>
+  <line x1="235" y1="305" x2="1000" y2="305" stroke="#b8c5d1" stroke-width="2" fill="none" />
+  <text x="150" y="314" fill="#263445" font-size="28" font-family="Segoe UI, Arial, sans-serif" font-weight="400" text-anchor="middle">
+    <tspan x="150" dy="0">
+      <tspan>2/r</tspan>
+    </tspan>
+  </text>
+  <circle cx="375" cy="305" r="13" fill="#1f4e8c" stroke="#1f4e8c" stroke-width="3" />
+  <text x="375" y="347" fill="#1f4e8c" font-size="23" font-family="Segoe UI, Arial, sans-serif" font-weight="400" text-anchor="middle">
+    <tspan x="375" dy="0">
+      <tspan>n = −2,  q = −2κ/r</tspan>
+    </tspan>
+  </text>
+  <circle cx="850" cy="305" r="13" fill="#b22222" stroke="#b22222" stroke-width="3" />
+  <text x="850" y="347" fill="#b22222" font-size="23" font-family="Segoe UI, Arial, sans-serif" font-weight="400" text-anchor="middle">
+    <tspan x="850" dy="0">
+      <tspan>n = +2,  q = +2κ/r</tspan>
+    </tspan>
+  </text>
+  <line x1="235" y1="190" x2="1000" y2="190" stroke="#b8c5d1" stroke-width="2" fill="none" />
+  <text x="150" y="199" fill="#263445" font-size="28" font-family="Segoe UI, Arial, sans-serif" font-weight="400" text-anchor="middle">
+    <tspan x="150" dy="0">
+      <tspan>3/r</tspan>
+    </tspan>
+  </text>
+  <circle cx="375" cy="190" r="13" fill="#1f4e8c" stroke="#1f4e8c" stroke-width="3" />
+  <text x="375" y="232" fill="#1f4e8c" font-size="23" font-family="Segoe UI, Arial, sans-serif" font-weight="400" text-anchor="middle">
+    <tspan x="375" dy="0">
+      <tspan>n = −3,  q = −3κ/r</tspan>
+    </tspan>
+  </text>
+  <circle cx="850" cy="190" r="13" fill="#b22222" stroke="#b22222" stroke-width="3" />
+  <text x="850" y="232" fill="#b22222" font-size="23" font-family="Segoe UI, Arial, sans-serif" font-weight="400" text-anchor="middle">
+    <tspan x="850" dy="0">
+      <tspan>n = +3,  q = +3κ/r</tspan>
+    </tspan>
+  </text>
+  <text x="550" y="635" fill="#263445" font-size="28" font-family="Segoe UI, Arial, sans-serif" font-weight="400" text-anchor="middle">
+    <tspan x="550" dy="0">
+      <tspan>For every nonzero mode: |qₙ|/mₙ = κ</tspan>
+    </tspan>
+  </text>
+</svg>

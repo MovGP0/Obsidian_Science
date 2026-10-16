@@ -3,7 +3,6 @@ title: "Preface"
 source_pdf: "D:\\GitHub\\books\\Griffiths Introduction to Elementary Particles.pdf"
 source_page: "vii"
 pdf_page: 7
-bead: "Obsidian_Electronics-bl48.115"
 ---
 
 > [!TLDR]

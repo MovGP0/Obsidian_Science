@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 620" width="1100" height="620" role="img" aria-labelledby="kk-momentum-title">
+  <title id="kk-momentum-title">Circular momentum appears as rest mass in fewer dimensions</title>
+  <desc>Editable vector explanation. All labels are SVG text; no raster images are embedded.</desc>
+  <defs>
+    <marker id="kk-momentum-ink" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#263445" />
+    </marker>
+    <marker id="kk-momentum-teal" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#006d77" />
+    </marker>
+    <marker id="kk-momentum-red" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#b22222" />
+    </marker>
+    <marker id="kk-momentum-purple" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#6a3d9a" />
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1100" height="620" fill="#ffffff" rx="14" />
+  <text x="550.0" y="49" fill="#263445" font-size="31" font-family="Segoe UI, Arial, sans-serif" font-weight="600" text-anchor="middle">
+    <tspan x="550.0" dy="0">
+      <tspan>Circular momentum appears as rest mass in fewer dimensions</tspan>
+    </tspan>
+  </text>
+  <line x1="100" y1="440" x2="440" y2="440" stroke="#263445" stroke-width="4" fill="none" marker-end="url(#kk-momentum-ink)" />
+  <line x1="440" y1="440" x2="440" y2="170" stroke="#006d77" stroke-width="4" fill="none" marker-end="url(#kk-momentum-teal)" />
+  <line x1="100" y1="440" x2="440" y2="170" stroke="#6a3d9a" stroke-width="5" fill="none" />
+  <text x="265" y="485" fill="#263445" font-size="29" font-family="Segoe UI, Arial, sans-serif" font-weight="400" text-anchor="middle">
+    <tspan x="265" dy="0">
+      <tspan>p</tspan>
+      <tspan baseline-shift="sub" font-size="70%">x</tspan>
+      <tspan />
+    </tspan>
+  </text>
+  <text x="455" y="300" fill="#006d77" font-size="25" font-family="Segoe UI, Arial, sans-serif" font-weight="400" text-anchor="start">
+    <tspan x="455" dy="0">
+      <tspan>p</tspan>
+      <tspan baseline-shift="sub" font-size="70%">θ</tspan>
+      <tspan> = n/r</tspan>
+    </tspan>
+  </text>
+  <text x="135" y="270" fill="#6a3d9a" font-size="25" font-family="Segoe UI, Arial, sans-serif" font-weight="400" text-anchor="start">
+    <tspan x="135" dy="0">
+      <tspan>E = |p</tspan>
+      <tspan baseline-shift="sub" font-size="70%">full</tspan>
+      <tspan>|</tspan>
+    </tspan>
+  </text>
+  <text x="295" y="555" fill="#263445" font-size="28" font-family="Segoe UI, Arial, sans-serif" font-weight="400" text-anchor="middle">
+    <tspan x="295" dy="0">
+      <tspan>E² = p</tspan>
+      <tspan baseline-shift="sub" font-size="70%">x</tspan>
+      <tspan>² + (n/r)²</tspan>
+    </tspan>
+  </text>
+  <rect x="650" y="190" width="380" height="260" rx="15" fill="#f1f5f8" stroke="#263445" stroke-width="2" />
+  <text x="840.0" y="260.4" fill="#263445" font-size="26" font-family="Segoe UI, Arial, sans-serif" font-weight="400" text-anchor="middle">
+    <tspan x="840.0" dy="0">
+      <tspan>Ordinary-space observer</tspan>
+    </tspan>
+    <tspan x="840.0" dy="35.1">
+      <tspan>measures E and p</tspan>
+      <tspan baseline-shift="sub" font-size="70%">x</tspan>
+      <tspan />
+    </tspan>
+    <tspan x="840.0" dy="35.1">
+      <tspan />
+    </tspan>
+    <tspan x="840.0" dy="35.1">
+      <tspan>inferred m² = E² − p</tspan>
+      <tspan baseline-shift="sub" font-size="70%">x</tspan>
+      <tspan>²</tspan>
+    </tspan>
+    <tspan x="840.0" dy="35.1">
+      <tspan>mₙ = |n|/r</tspan>
+    </tspan>
+  </text>
+  <text x="550" y="120" fill="#536477" font-size="23" font-family="Segoe UI, Arial, sans-serif" font-weight="400" text-anchor="middle">
+    <tspan x="550" dy="0">
+      <tspan>Full-space starting mass = 0; one ordinary momentum direction is shown.</tspan>
+    </tspan>
+  </text>
+</svg>

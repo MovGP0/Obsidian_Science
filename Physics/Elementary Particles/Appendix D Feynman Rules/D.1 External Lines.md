@@ -1,5 +1,5 @@
 ﻿---
-title: "D.1 External Lines"
+title: "External Lines"
 ---
 
 > [!TLDR]

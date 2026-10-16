@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 620" width="1100" height="620" role="img" aria-labelledby="kk-gauge-title">
+  <title id="kk-gauge-title">One coordinate freedom gives two matching transformations</title>
+  <desc>Editable vector explanation. All labels are SVG text; no raster images are embedded.</desc>
+  <defs>
+    <marker id="kk-gauge-ink" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#263445" />
+    </marker>
+    <marker id="kk-gauge-teal" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#006d77" />
+    </marker>
+    <marker id="kk-gauge-red" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#b22222" />
+    </marker>
+    <marker id="kk-gauge-purple" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#6a3d9a" />
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1100" height="620" fill="#ffffff" rx="14" />
+  <text x="550.0" y="49" fill="#263445" font-size="31" font-family="Segoe UI, Arial, sans-serif" font-weight="600" text-anchor="middle">
+    <tspan x="550.0" dy="0">
+      <tspan>One coordinate freedom gives two matching transformations</tspan>
+    </tspan>
+  </text>
+  <rect x="285" y="95" width="530" height="120" rx="15" fill="#f1f5f8" stroke="#006d77" stroke-width="2" />
+  <text x="550.0" y="144.15" fill="#006d77" font-size="29" font-family="Segoe UI, Arial, sans-serif" font-weight="400" text-anchor="middle">
+    <tspan x="550.0" dy="0">
+      <tspan>Circular coordinate</tspan>
+    </tspan>
+    <tspan x="550.0" dy="39.150000000000006">
+      <tspan>θ′ = θ + ξε(x)</tspan>
+    </tspan>
+  </text>
+  <line x1="440" y1="215" x2="275" y2="355" stroke="#006d77" stroke-width="3" fill="none" marker-end="url(#kk-gauge-teal)" />
+  <line x1="660" y1="215" x2="825" y2="355" stroke="#006d77" stroke-width="3" fill="none" marker-end="url(#kk-gauge-teal)" />
+  <rect x="55" y="365" width="440" height="125" rx="15" fill="#f1f5f8" stroke="#6a3d9a" stroke-width="2" />
+  <text x="275.0" y="417.3" fill="#6a3d9a" font-size="28" font-family="Segoe UI, Arial, sans-serif" font-weight="400" text-anchor="middle">
+    <tspan x="275.0" dy="0">
+      <tspan>Matter mode</tspan>
+    </tspan>
+    <tspan x="275.0" dy="37.800000000000004">
+      <tspan>ψ′ₙ = exp(−inξε) ψₙ</tspan>
+    </tspan>
+  </text>
+  <rect x="605" y="365" width="440" height="125" rx="15" fill="#f1f5f8" stroke="#b22222" stroke-width="2" />
+  <text x="825.0" y="417.3" fill="#b22222" font-size="28" font-family="Segoe UI, Arial, sans-serif" font-weight="400" text-anchor="middle">
+    <tspan x="825.0" dy="0">
+      <tspan>Four-potential</tspan>
+    </tspan>
+    <tspan x="825.0" dy="37.800000000000004">
+      <tspan>A′</tspan>
+      <tspan baseline-shift="sub" font-size="70%">μ</tspan>
+      <tspan> = A</tspan>
+      <tspan baseline-shift="sub" font-size="70%">μ</tspan>
+      <tspan> + ∂</tspan>
+      <tspan baseline-shift="sub" font-size="70%">με</tspan>
+      <tspan />
+    </tspan>
+  </text>
+  <line x1="495" y1="425" x2="605" y2="425" stroke="#263445" stroke-width="3" fill="none" />
+  <text x="550" y="555" fill="#263445" font-size="29" font-family="Segoe UI, Arial, sans-serif" font-weight="400" text-anchor="middle">
+    <tspan x="550" dy="0">
+      <tspan>Together: local U(1) gauge symmetry</tspan>
+    </tspan>
+  </text>
+</svg>

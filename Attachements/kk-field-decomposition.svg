@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 620" width="1100" height="620" role="img" aria-labelledby="kk-decomposition-title">
+  <title id="kk-decomposition-title">A single metric contains three kinds of component</title>
+  <desc>Editable vector explanation. All labels are SVG text; no raster images are embedded.</desc>
+  <defs>
+    <marker id="kk-decomposition-ink" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#263445" />
+    </marker>
+    <marker id="kk-decomposition-teal" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#006d77" />
+    </marker>
+    <marker id="kk-decomposition-red" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#b22222" />
+    </marker>
+    <marker id="kk-decomposition-purple" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#6a3d9a" />
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1100" height="620" fill="#ffffff" rx="14" />
+  <text x="550.0" y="49" fill="#263445" font-size="31" font-family="Segoe UI, Arial, sans-serif" font-weight="600" text-anchor="middle">
+    <tspan x="550.0" dy="0">
+      <tspan>A single metric contains three kinds of component</tspan>
+    </tspan>
+  </text>
+  <rect x="350" y="100" width="400" height="110" rx="15" fill="#f1f5f8" stroke="#263445" stroke-width="2" />
+  <text x="550.0" y="144.15" fill="#263445" font-size="29" font-family="Segoe UI, Arial, sans-serif" font-weight="400" text-anchor="middle">
+    <tspan x="550.0" dy="0">
+      <tspan>Five-dimensional metric</tspan>
+    </tspan>
+    <tspan x="550.0" dy="39.150000000000006">
+      <tspan>g̃</tspan>
+      <tspan baseline-shift="sub" font-size="70%">AB</tspan>
+      <tspan />
+    </tspan>
+  </text>
+  <line x1="550" y1="210" x2="190" y2="335" stroke="#263445" stroke-width="3" fill="none" marker-end="url(#kk-decomposition-ink)" />
+  <rect x="40" y="340" width="300" height="120" rx="15" fill="#f1f5f8" stroke="#263445" stroke-width="2" />
+  <text x="190.0" y="392.4" fill="#263445" font-size="24" font-family="Segoe UI, Arial, sans-serif" font-weight="400" text-anchor="middle">
+    <tspan x="190.0" dy="0">
+      <tspan>Base metric g</tspan>
+      <tspan baseline-shift="sub" font-size="70%">μν</tspan>
+      <tspan />
+    </tspan>
+    <tspan x="190.0" dy="32.400000000000006">
+      <tspan>10 component functions</tspan>
+    </tspan>
+  </text>
+  <line x1="550" y1="210" x2="550" y2="335" stroke="#b22222" stroke-width="3" fill="none" marker-end="url(#kk-decomposition-red)" />
+  <rect x="400" y="340" width="300" height="120" rx="15" fill="#f1f5f8" stroke="#b22222" stroke-width="2" />
+  <text x="550.0" y="392.4" fill="#b22222" font-size="24" font-family="Segoe UI, Arial, sans-serif" font-weight="400" text-anchor="middle">
+    <tspan x="550.0" dy="0">
+      <tspan>Mixed vector A</tspan>
+      <tspan baseline-shift="sub" font-size="70%">μ</tspan>
+      <tspan />
+    </tspan>
+    <tspan x="550.0" dy="32.400000000000006">
+      <tspan>4 component functions</tspan>
+    </tspan>
+  </text>
+  <line x1="550" y1="210" x2="910" y2="335" stroke="#006d77" stroke-width="3" fill="none" marker-end="url(#kk-decomposition-teal)" />
+  <rect x="760" y="340" width="300" height="120" rx="15" fill="#f1f5f8" stroke="#006d77" stroke-width="2" />
+  <text x="910.0" y="392.4" fill="#006d77" font-size="24" font-family="Segoe UI, Arial, sans-serif" font-weight="400" text-anchor="middle">
+    <tspan x="910.0" dy="0">
+      <tspan>Radius sector Φ</tspan>
+    </tspan>
+    <tspan x="910.0" dy="32.400000000000006">
+      <tspan>1 component function</tspan>
+    </tspan>
+  </text>
+  <text x="550" y="525" fill="#263445" font-size="30" font-family="Segoe UI, Arial, sans-serif" font-weight="400" text-anchor="middle">
+    <tspan x="550" dy="0">
+      <tspan>15 = 10 + 4 + 1</tspan>
+    </tspan>
+  </text>
+  <text x="550" y="575" fill="#536477" font-size="23" font-family="Segoe UI, Arial, sans-serif" font-weight="400" text-anchor="middle">
+    <tspan x="550" dy="0">
+      <tspan>Fixing the radius holds one function constant; these are not polarization counts.</tspan>
+    </tspan>
+  </text>
+</svg>

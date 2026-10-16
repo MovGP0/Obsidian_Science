@@ -3,7 +3,6 @@ title: "Appendix A.0 The Dirac Delta Function"
 source_pdf: "D:\\GitHub\\books\\Griffiths Introduction to Elementary Particles.pdf"
 source_page: "372"
 pdf_page: 380
-bead: "Obsidian_Electronics-bl48.111"
 ---
 
 > [!TLDR]

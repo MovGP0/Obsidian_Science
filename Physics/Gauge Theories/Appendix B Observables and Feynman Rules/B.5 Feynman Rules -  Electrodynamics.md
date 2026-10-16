@@ -1,9 +1,8 @@
 ﻿---
-title: "B.5 Feynman Rules: Electrodynamics"
+title: "Feynman Rules: Electrodynamics"
 source_pdf: "D:\\GitHub\\books\\dokumen.pub_gauge-theories-of-the-strong-weak-and-electromagnetic-interactions-second-edition-secondnbsped-9781400848225.pdf"
 source_page: "453"
 pdf_page: 467
-bead: "Obsidian_Electronics-l4vx.111"
 ---
 
 > [!TLDR]

@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 680" width="1100" height="680" role="img" aria-labelledby="kk-action-title">
+  <title id="kk-action-title">The restricted action reduces in two distinct steps</title>
+  <desc>Editable vector explanation. All labels are SVG text; no raster images are embedded.</desc>
+  <defs>
+    <marker id="kk-action-ink" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#263445" />
+    </marker>
+    <marker id="kk-action-teal" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#006d77" />
+    </marker>
+    <marker id="kk-action-red" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#b22222" />
+    </marker>
+    <marker id="kk-action-purple" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#6a3d9a" />
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1100" height="680" fill="#ffffff" rx="14" />
+  <text x="550.0" y="49" fill="#263445" font-size="31" font-family="Segoe UI, Arial, sans-serif" font-weight="600" text-anchor="middle">
+    <tspan x="550.0" dy="0">
+      <tspan>The restricted action reduces in two distinct steps</tspan>
+    </tspan>
+  </text>
+  <rect x="325" y="90" width="450" height="100" rx="15" fill="#f1f5f8" stroke="#263445" stroke-width="2" />
+  <text x="550.0" y="148.0" fill="#263445" font-size="25" font-family="Segoe UI, Arial, sans-serif" font-weight="400" text-anchor="middle">
+    <tspan x="550.0" dy="0">
+      <tspan>Five-dimensional Einstein–Hilbert action</tspan>
+    </tspan>
+  </text>
+  <line x1="550" y1="190" x2="195" y2="270" stroke="#263445" stroke-width="2" fill="none" />
+  <rect x="45" y="275" width="300" height="105" rx="15" fill="#f1f5f8" stroke="#006d77" stroke-width="2" />
+  <text x="195.0" y="319.9" fill="#006d77" font-size="24" font-family="Segoe UI, Arial, sans-serif" font-weight="400" text-anchor="middle">
+    <tspan x="195.0" dy="0">
+      <tspan>Circle independence</tspan>
+    </tspan>
+    <tspan x="195.0" dy="32.400000000000006">
+      <tspan>∂</tspan>
+      <tspan baseline-shift="sub" font-size="70%">θ</tspan>
+      <tspan> g̃</tspan>
+      <tspan baseline-shift="sub" font-size="70%">AB</tspan>
+      <tspan> = 0</tspan>
+    </tspan>
+  </text>
+  <line x1="550" y1="190" x2="550" y2="270" stroke="#263445" stroke-width="2" fill="none" />
+  <rect x="400" y="275" width="300" height="105" rx="15" fill="#f1f5f8" stroke="#006d77" stroke-width="2" />
+  <text x="550.0" y="319.9" fill="#006d77" font-size="24" font-family="Segoe UI, Arial, sans-serif" font-weight="400" text-anchor="middle">
+    <tspan x="550.0" dy="0">
+      <tspan>Fixed physical radius</tspan>
+    </tspan>
+    <tspan x="550.0" dy="32.400000000000006">
+      <tspan>Φ</tspan>
+      <tspan baseline-shift="sub" font-size="70%">ang</tspan>
+      <tspan> = r²</tspan>
+    </tspan>
+  </text>
+  <line x1="550" y1="190" x2="905" y2="270" stroke="#263445" stroke-width="2" fill="none" />
+  <rect x="755" y="275" width="300" height="105" rx="15" fill="#f1f5f8" stroke="#006d77" stroke-width="2" />
+  <text x="905.0" y="319.9" fill="#006d77" font-size="24" font-family="Segoe UI, Arial, sans-serif" font-weight="400" text-anchor="middle">
+    <tspan x="905.0" dy="0">
+      <tspan>Angular volume</tspan>
+    </tspan>
+    <tspan x="905.0" dy="32.400000000000006">
+      <tspan>√|g̃| = r √|g|</tspan>
+    </tspan>
+  </text>
+  <text x="550" y="435" fill="#263445" font-size="29" font-family="Segoe UI, Arial, sans-serif" font-weight="400" text-anchor="middle">
+    <tspan x="550" dy="0">
+      <tspan>R̃ = R + (ξ²r² / 4) F</tspan>
+      <tspan baseline-shift="sub" font-size="70%">μν</tspan>
+      <tspan> F</tspan>
+      <tspan baseline-shift="super" font-size="70%">μν</tspan>
+      <tspan />
+    </tspan>
+  </text>
+  <line x1="550" y1="455" x2="290" y2="525" stroke="#263445" stroke-width="3" fill="none" marker-end="url(#kk-action-ink)" />
+  <line x1="550" y1="455" x2="810" y2="525" stroke="#b22222" stroke-width="3" fill="none" marker-end="url(#kk-action-red)" />
+  <rect x="85" y="535" width="410" height="100" rx="15" fill="#f1f5f8" stroke="#263445" stroke-width="2" />
+  <text x="290.0" y="593.0" fill="#263445" font-size="27" font-family="Segoe UI, Arial, sans-serif" font-weight="400" text-anchor="middle">
+    <tspan x="290.0" dy="0">
+      <tspan>4D Einstein–Hilbert term</tspan>
+    </tspan>
+  </text>
+  <rect x="605" y="535" width="410" height="100" rx="15" fill="#f1f5f8" stroke="#b22222" stroke-width="2" />
+  <text x="810.0" y="593.0" fill="#b22222" font-size="27" font-family="Segoe UI, Arial, sans-serif" font-weight="400" text-anchor="middle">
+    <tspan x="810.0" dy="0">
+      <tspan>4D Maxwell term</tspan>
+    </tspan>
+  </text>
+</svg>

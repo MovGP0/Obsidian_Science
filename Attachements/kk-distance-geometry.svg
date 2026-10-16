@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 620" width="1100" height="620" role="img" aria-labelledby="kk-distance-title">
+  <title id="kk-distance-title">Distances determine the metric coefficients</title>
+  <desc>Editable vector explanation. All labels are SVG text; no raster images are embedded.</desc>
+  <defs>
+    <marker id="kk-distance-ink" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#263445" />
+    </marker>
+    <marker id="kk-distance-teal" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#006d77" />
+    </marker>
+    <marker id="kk-distance-red" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#b22222" />
+    </marker>
+    <marker id="kk-distance-purple" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#6a3d9a" />
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1100" height="620" fill="#ffffff" rx="14" />
+  <text x="550.0" y="49" fill="#263445" font-size="31" font-family="Segoe UI, Arial, sans-serif" font-weight="600" text-anchor="middle">
+    <tspan x="550.0" dy="0">
+      <tspan>Distances determine the metric coefficients</tspan>
+    </tspan>
+  </text>
+  <text x="270" y="110" fill="#263445" font-size="26" font-family="Segoe UI, Arial, sans-serif" font-weight="400" text-anchor="middle">
+    <tspan x="270" dy="0">
+      <tspan>Three perpendicular directions</tspan>
+    </tspan>
+  </text>
+  <line x1="85" y1="420" x2="85" y2="245" stroke="#b8c5d1" stroke-width="2" fill="none" stroke-dasharray="8 7" />
+  <line x1="190" y1="330" x2="190" y2="155" stroke="#b8c5d1" stroke-width="2" fill="none" stroke-dasharray="8 7" />
+  <line x1="320" y1="420" x2="320" y2="245" stroke="#b8c5d1" stroke-width="2" fill="none" stroke-dasharray="8 7" />
+  <line x1="425" y1="330" x2="425" y2="155" stroke="#b8c5d1" stroke-width="2" fill="none" stroke-dasharray="8 7" />
+  <line x1="85" y1="420" x2="320" y2="420" stroke="#b8c5d1" stroke-width="2" fill="none" />
+  <line x1="85" y1="245" x2="320" y2="245" stroke="#b8c5d1" stroke-width="2" fill="none" />
+  <line x1="190" y1="330" x2="425" y2="330" stroke="#b8c5d1" stroke-width="2" fill="none" />
+  <line x1="190" y1="155" x2="425" y2="155" stroke="#b8c5d1" stroke-width="2" fill="none" />
+  <line x1="85" y1="420" x2="190" y2="330" stroke="#b8c5d1" stroke-width="2" fill="none" />
+  <line x1="85" y1="245" x2="190" y2="155" stroke="#b8c5d1" stroke-width="2" fill="none" />
+  <line x1="320" y1="420" x2="425" y2="330" stroke="#b8c5d1" stroke-width="2" fill="none" />
+  <line x1="320" y1="245" x2="425" y2="155" stroke="#b8c5d1" stroke-width="2" fill="none" />
+  <line x1="85" y1="420" x2="85" y2="245" stroke="#b8c5d1" stroke-width="2" fill="none" />
+  <line x1="190" y1="330" x2="190" y2="155" stroke="#b8c5d1" stroke-width="2" fill="none" />
+  <line x1="320" y1="420" x2="320" y2="245" stroke="#b8c5d1" stroke-width="2" fill="none" />
+  <line x1="425" y1="330" x2="425" y2="155" stroke="#b8c5d1" stroke-width="2" fill="none" />
+  <line x1="85" y1="420" x2="425" y2="155" stroke="#6a3d9a" stroke-width="5" fill="none" />
+  <text x="210" y="275" fill="#6a3d9a" font-size="29" font-family="Segoe UI, Arial, sans-serif" font-weight="400" text-anchor="start">
+    <tspan x="210" dy="0">
+      <tspan>d</tspan>
+    </tspan>
+  </text>
+  <text x="190" y="458" fill="#263445" font-size="27" font-family="Segoe UI, Arial, sans-serif" font-weight="400" text-anchor="start">
+    <tspan x="190" dy="0">
+      <tspan>Δx</tspan>
+    </tspan>
+  </text>
+  <text x="390" y="395" fill="#263445" font-size="27" font-family="Segoe UI, Arial, sans-serif" font-weight="400" text-anchor="start">
+    <tspan x="390" dy="0">
+      <tspan>Δy</tspan>
+    </tspan>
+  </text>
+  <text x="450" y="250" fill="#263445" font-size="27" font-family="Segoe UI, Arial, sans-serif" font-weight="400" text-anchor="start">
+    <tspan x="450" dy="0">
+      <tspan>Δz</tspan>
+    </tspan>
+  </text>
+  <text x="270" y="535" fill="#263445" font-size="25" font-family="Segoe UI, Arial, sans-serif" font-weight="400" text-anchor="middle">
+    <tspan x="270" dy="0">
+      <tspan>d² = Δx² + Δy² + Δz²</tspan>
+    </tspan>
+  </text>
+  <line x1="550" y1="95" x2="550" y2="565" stroke="#b8c5d1" stroke-width="2" fill="none" />
+  <text x="820" y="110" fill="#263445" font-size="26" font-family="Segoe UI, Arial, sans-serif" font-weight="400" text-anchor="middle">
+    <tspan x="820" dy="0">
+      <tspan>Unrolled cylinder surface</tspan>
+    </tspan>
+  </text>
+  <rect x="620" y="165" width="390" height="290" fill="#f1f8f8" stroke="#006d77" stroke-width="2" />
+  <line x1="650" y1="420" x2="935" y2="225" stroke="#6a3d9a" stroke-width="5" fill="none" />
+  <line x1="650" y1="420" x2="935" y2="420" stroke="#006d77" stroke-width="3" fill="none" />
+  <line x1="935" y1="420" x2="935" y2="225" stroke="#006d77" stroke-width="3" fill="none" />
+  <text x="770" y="390" fill="#6a3d9a" font-size="29" font-family="Segoe UI, Arial, sans-serif" font-weight="400" text-anchor="start">
+    <tspan x="770" dy="0">
+      <tspan>d</tspan>
+    </tspan>
+  </text>
+  <text x="760" y="448" fill="#006d77" font-size="25" font-family="Segoe UI, Arial, sans-serif" font-weight="400" text-anchor="start">
+    <tspan x="760" dy="0">
+      <tspan>r Δθ</tspan>
+    </tspan>
+  </text>
+  <text x="950" y="335" fill="#006d77" font-size="25" font-family="Segoe UI, Arial, sans-serif" font-weight="400" text-anchor="start">
+    <tspan x="950" dy="0">
+      <tspan>Δh</tspan>
+    </tspan>
+  </text>
+  <text x="815" y="155" fill="#263445" font-size="23" font-family="Segoe UI, Arial, sans-serif" font-weight="400" text-anchor="middle">
+    <tspan x="815" dy="0">
+      <tspan>Full strip width = 2πr</tspan>
+    </tspan>
+  </text>
+  <text x="820" y="535" fill="#263445" font-size="25" font-family="Segoe UI, Arial, sans-serif" font-weight="400" text-anchor="middle">
+    <tspan x="820" dy="0">
+      <tspan>d² = Δh² + r²Δθ²</tspan>
+    </tspan>
+  </text>
+</svg>

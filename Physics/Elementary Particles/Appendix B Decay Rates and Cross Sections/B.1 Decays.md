@@ -1,5 +1,5 @@
 ﻿---
-title: "B.1 Decays"
+title: "Decays"
 ---
 
 > [!TLDR]

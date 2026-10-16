@@ -3,7 +3,6 @@ title: "Index"
 source_pdf: "D:\\GitHub\\books\\Griffiths Introduction to Elementary Particles.pdf"
 source_page: "384"
 pdf_page: 392
-bead: "Obsidian_Electronics-bl48.116"
 ---
 
 > [!TLDR]

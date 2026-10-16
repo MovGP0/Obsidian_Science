@@ -3,7 +3,6 @@ title: "Appendix B.0 Decay Rates and Cross Sections"
 source_pdf: "D:\\GitHub\\books\\Griffiths Introduction to Elementary Particles.pdf"
 source_page: "376"
 pdf_page: 384
-bead: "Obsidian_Electronics-bl48.112"
 ---
 
 > [!TLDR]

@@ -3,7 +3,6 @@ title: "References"
 source_pdf: "D:\\GitHub\\books\\poisson-arelativits-toolkit.pdf"
 source_page: "224"
 pdf_page: 240
-bead: "Obsidian_Electronics-zj6v.183"
 ---
 
 > [!TLDR]

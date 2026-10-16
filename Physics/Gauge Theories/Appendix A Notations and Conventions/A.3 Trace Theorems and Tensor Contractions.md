@@ -1,9 +1,8 @@
 ﻿---
-title: "A.3 Trace Theorems and Tensor Contractions"
+title: "Trace Theorems and Tensor Contractions"
 source_pdf: "D:\\GitHub\\books\\dokumen.pub_gauge-theories-of-the-strong-weak-and-electromagnetic-interactions-second-edition-secondnbsped-9781400848225.pdf"
 source_page: "436"
 pdf_page: 450
-bead: "Obsidian_Electronics-l4vx.102"
 ---
 
 > [!TLDR]
