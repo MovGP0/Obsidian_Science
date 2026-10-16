@@ -3,7 +3,6 @@ title: "Preface"
 source_pdf: "D:\\GitHub\\books\\dokumen.pub_gauge-theories-of-the-strong-weak-and-electromagnetic-interactions-second-edition-secondnbsped-9781400848225.pdf"
 source_page: "xi"
 pdf_page: 11
-bead: "Obsidian_Electronics-l4vx.116"
 ---
 
 > [!TLDR]

@@ -1,5 +1,5 @@
 ﻿---
-title: "D.2 Propagators"
+title: "Propagators"
 ---
 
 > [!TLDR]

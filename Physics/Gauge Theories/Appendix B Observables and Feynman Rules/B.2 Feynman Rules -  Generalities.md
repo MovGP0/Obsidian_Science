@@ -1,9 +1,8 @@
 ﻿---
-title: "B.2 Feynman Rules: Generalities"
+title: "Feynman Rules: Generalities"
 source_pdf: "D:\\GitHub\\books\\dokumen.pub_gauge-theories-of-the-strong-weak-and-electromagnetic-interactions-second-edition-secondnbsped-9781400848225.pdf"
 source_page: "448"
 pdf_page: 462
-bead: "Obsidian_Electronics-l4vx.108"
 ---
 
 > [!TLDR]

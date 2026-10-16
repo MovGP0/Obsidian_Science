@@ -3,7 +3,6 @@ title: "Epilogue.0 Epilogue"
 source_pdf: "D:\\GitHub\\books\\dokumen.pub_gauge-theories-of-the-strong-weak-and-electromagnetic-interactions-second-edition-secondnbsped-9781400848225.pdf"
 source_page: "430"
 pdf_page: 444
-bead: "Obsidian_Electronics-l4vx.99"
 ---
 
 > [!TLDR]

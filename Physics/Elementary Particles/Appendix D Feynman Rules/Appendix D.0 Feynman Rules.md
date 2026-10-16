@@ -3,7 +3,6 @@ title: "Appendix D.0 Feynman Rules (Tree Level)"
 source_pdf: "D:\\GitHub\\books\\Griffiths Introduction to Elementary Particles.pdf"
 source_page: "380"
 pdf_page: 388
-bead: "Obsidian_Electronics-bl48.114"
 ---
 
 > [!TLDR]

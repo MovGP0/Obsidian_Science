@@ -1,9 +1,8 @@
 ﻿---
-title: "B.1 Phase-Space Formulas: Decay Rates and Cross Sections"
+title: "Phase-Space Formulas: Decay Rates and Cross Sections"
 source_pdf: "D:\\GitHub\\books\\dokumen.pub_gauge-theories-of-the-strong-weak-and-electromagnetic-interactions-second-edition-secondnbsped-9781400848225.pdf"
 source_page: "447"
 pdf_page: 461
-bead: "Obsidian_Electronics-l4vx.107"
 ---
 
 > [!TLDR]

@@ -1,9 +1,8 @@
 ﻿---
-title: "A.4 Dirac Equation and Dirac Spinors"
+title: "Dirac Equation and Dirac Spinors"
 source_pdf: "D:\\GitHub\\books\\dokumen.pub_gauge-theories-of-the-strong-weak-and-electromagnetic-interactions-second-edition-secondnbsped-9781400848225.pdf"
 source_page: "437"
 pdf_page: 451
-bead: "Obsidian_Electronics-l4vx.103"
 ---
 
 > [!TLDR]

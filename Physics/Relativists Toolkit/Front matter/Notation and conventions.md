@@ -3,7 +3,6 @@ title: "Notation and conventions"
 source_pdf: "D:\\GitHub\\books\\poisson-arelativits-toolkit.pdf"
 source_page: "xvi"
 pdf_page: 16
-bead: "Obsidian_Electronics-zj6v.182"
 ---
 
 > [!TLDR]

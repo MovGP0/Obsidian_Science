@@ -1,5 +1,5 @@
 ﻿---
-title: "D.3 Vertex Factors"
+title: "Vertex Factors"
 ---
 
 > [!TLDR]

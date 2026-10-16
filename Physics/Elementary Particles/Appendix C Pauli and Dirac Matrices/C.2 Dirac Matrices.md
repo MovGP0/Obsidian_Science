@@ -1,5 +1,5 @@
 ﻿---
-title: "C.2 Dirac Matrices"
+title: "Dirac Matrices"
 ---
 
 > [!TLDR]

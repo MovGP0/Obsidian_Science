@@ -3,7 +3,6 @@ title: "Index"
 source_pdf: "D:\\GitHub\\books\\poisson-arelativits-toolkit.pdf"
 source_page: "229"
 pdf_page: 245
-bead: "Obsidian_Electronics-zj6v.184"
 ---
 
 > [!TLDR]

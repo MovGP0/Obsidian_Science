@@ -3,7 +3,6 @@ title: "Preface"
 source_pdf: "D:\\GitHub\\books\\poisson-arelativits-toolkit.pdf"
 source_page: "xi"
 pdf_page: 11
-bead: "Obsidian_Electronics-zj6v.181"
 ---
 
 > [!TLDR]

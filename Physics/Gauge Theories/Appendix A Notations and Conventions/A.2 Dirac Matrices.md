@@ -1,9 +1,8 @@
 ﻿---
-title: "A.2 Dirac Matrices"
+title: "Dirac Matrices"
 source_pdf: "D:\\GitHub\\books\\dokumen.pub_gauge-theories-of-the-strong-weak-and-electromagnetic-interactions-second-edition-secondnbsped-9781400848225.pdf"
 source_page: "434"
 pdf_page: 448
-bead: "Obsidian_Electronics-l4vx.101"
 ---
 
 > [!TLDR]

@@ -1,9 +1,8 @@
 ﻿---
-title: "A.6 Weyl–van der Waerden Spinors"
+title: "Weyl–van der Waerden Spinors"
 source_pdf: "D:\\GitHub\\books\\dokumen.pub_gauge-theories-of-the-strong-weak-and-electromagnetic-interactions-second-edition-secondnbsped-9781400848225.pdf"
 source_page: "444"
 pdf_page: 458
-bead: "Obsidian_Electronics-l4vx.105"
 ---
 
 > [!TLDR]

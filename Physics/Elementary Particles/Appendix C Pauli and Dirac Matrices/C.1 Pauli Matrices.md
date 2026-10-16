@@ -1,5 +1,5 @@
 ﻿---
-title: "C.1 Pauli Matrices"
+title: "Pauli Matrices"
 ---
 
 > [!TLDR]
