@@ -16,15 +16,15 @@ Use definitions and logical statements from [[Mathematical notation and reasonin
 
 ## Topics to cover
 
-- Group axioms: composition, closure, associativity, identity, inverses, and Abelian versus non-Abelian examples.
-- Subgroups and homomorphisms: preserve group operations, identify kernels, and distinguish an isomorphism from a choice of representation.
-- Group actions: define how a group transforms a set or vector space and identify invariant objects.
-- Matrix groups: work with invertible, orthogonal, and unitary matrices as concrete transformation groups.
-- Lie groups: combine smooth parameter dependence with group operations and distinguish local parameters from a global coordinate system.
-- Generators and Lie algebras: differentiate transformations near the identity and use brackets or matrix commutators.
-- Exponential maps: connect generators to one-parameter transformations and state the local limits of this description.
-- The circle group U(1): unit complex numbers, phase addition, periodic parameters, and its one-dimensional Abelian Lie algebra.
-- Representations: act on vectors or complex functions and explain how distinct representations can describe the same abstract group.
+- [[25.01 Group axioms|Group axioms]]: composition, closure, associativity, identity, inverses, and Abelian versus non-Abelian examples.
+- [[25.02 Subgroups and homomorphisms|Subgroups and homomorphisms]]: preserve group operations, identify kernels, and distinguish an isomorphism from a choice of representation.
+- [[25.03 Group actions|Group actions]]: define how a group transforms a set or vector space and identify invariant objects.
+- [[25.04 Matrix groups|Matrix groups]]: work with invertible, orthogonal, and unitary matrices as concrete transformation groups.
+- [[25.05 Lie groups|Lie groups]]: combine smooth parameter dependence with group operations and distinguish local parameters from a global coordinate system.
+- [[25.06 Generators and Lie algebras|Generators and Lie algebras]]: differentiate transformations near the identity and use brackets or matrix commutators.
+- [[25.07 Exponential maps|Exponential maps]]: connect generators to one-parameter transformations and state the local limits of this description.
+- [[25.08 The circle group U(1)|The circle group U(1)]]: unit complex numbers, phase addition, periodic parameters, and its one-dimensional Abelian Lie algebra.
+- [[25.09 Representations|Representations]]: act on vectors or complex functions and explain how distinct representations can describe the same abstract group.
 
 ## Learning outcomes
 

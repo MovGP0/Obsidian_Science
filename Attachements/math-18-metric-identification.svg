@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="620" viewBox="0 0 1100 620">
+<rect width="1100" height="620" fill="#ffffff"/>
+<style>text {font-family:Arial, sans-serif;fill:#172033;font-size:20px} .title {font-size:27px;font-weight:bold} .small {font-size:17px} .blue {fill:#2455a4} .green {fill:#16745a}</style>
+<defs><marker id="arrow" markerWidth="10" markerHeight="8" refX="8" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#172033"/></marker></defs>
+<text x="35" y="48" class="title">A metric identifies two different spaces</text>
+<text x="35" y="91">G = diag(4, 1)</text>
+<rect x="30" y="120" width="400" height="420" rx="14" fill="#f3f7fc"/>
+<text x="60" y="158">Metric unit set: 4x² + y² = 1</text>
+<line x1="70" y1="335" x2="395" y2="335" stroke="#172033" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="230" y1="505" x2="230" y2="175" stroke="#172033" stroke-width="2" marker-end="url(#arrow)"/>
+<ellipse cx="230" cy="335" rx="70" ry="140" fill="#cbdcf5" stroke="#2455a4" stroke-width="3"/>
+<line x1="230" y1="335" x2="300" y2="335" stroke="#172033" stroke-width="2"/>
+<line x1="230" y1="335" x2="230" y2="195" stroke="#172033" stroke-width="2"/>
+<text x="398" y="342">x</text><text x="240" y="187">y</text>
+<text x="289" y="365" class="small">½</text><text x="207" y="202" class="small">1</text>
+<text x="60" y="523" class="small">Equal coordinate scale on both axes</text>
+<rect x="480" y="170" width="225" height="140" rx="14" fill="#edf6f1" stroke="#16745a" stroke-width="2"/>
+<text x="505" y="205" class="title">Vector space V</text>
+<text x="505" y="254">v = (1, 2)</text>
+<text x="505" y="284" class="small">Contravariant components</text>
+<rect x="825" y="170" width="245" height="140" rx="14" fill="#eef3fc" stroke="#2455a4" stroke-width="2"/>
+<text x="850" y="205" class="title">Dual space V*</text>
+<text x="850" y="254">α = (4, 2)</text>
+<text x="850" y="284" class="small">Covariant components</text>
+<path d="M705 220 L815 220" stroke="#172033" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<text x="724" y="198">G</text>
+<path d="M945 318 L945 365 L595 365 L595 320" stroke="#172033" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<text x="740" y="351">G⁻¹</text>
+<text x="480" y="435">α(w) = g(v, w) = 4w¹ + 2w²</text>
+<text x="480" y="479">α(v) = 4 · 1 + 2 · 2 = 8</text>
+<text x="35" y="582" class="small">Invertibility gives a one-to-one map; the metric supplies the choice of identification.</text>
+</svg>

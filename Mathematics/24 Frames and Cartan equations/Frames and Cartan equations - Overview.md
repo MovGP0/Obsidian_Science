@@ -16,15 +16,15 @@ Use metric pairings from [[Metric geometry - Overview]], connections from [[Conn
 
 ## Topics to cover
 
-- Frames and coframes: duality, local bases, and the conversion between coordinate and frame components.
-- Orthonormal frames: reduce the metric components to a constant diagonal form while retaining the chosen signature.
-- Non-coordinate frames: commutators of frame vectors and the relation to exterior derivatives of coframe elements.
-- Connection one-forms: package the connection coefficients as a matrix of forms and impose metric compatibility.
-- Cartan’s first structure equation: define torsion and solve for a torsion-free connection from a specified coframe.
-- Cartan’s second structure equation: combine exterior derivatives with matrix-valued wedge products to compute curvature two-forms.
-- Reading components: recover Riemann tensor components from curvature forms and account for the factor from antisymmetric index pairs.
-- Contractions: obtain Ricci and scalar curvature in a frame and compare the result with a coordinate calculation.
-- Frame changes: track how the connection and curvature change and distinguish frame-dependent coefficients from tensorial results.
+- [[24.01 Frames and coframes|Frames and coframes]]: duality, local bases, and the conversion between coordinate and frame components.
+- [[24.02 Orthonormal frames|Orthonormal frames]]: reduce the metric components to a constant diagonal form while retaining the chosen signature.
+- [[24.03 Non-coordinate frames|Non-coordinate frames]]: commutators of frame vectors and the relation to exterior derivatives of coframe elements.
+- [[24.04 Connection one-forms|Connection one-forms]]: package the connection coefficients as a matrix of forms and impose metric compatibility.
+- [[24.05 Cartan’s first structure equation|Cartan’s first structure equation]]: define torsion and solve for a torsion-free connection from a specified coframe.
+- [[24.06 Cartan’s second structure equation|Cartan’s second structure equation]]: combine exterior derivatives with matrix-valued wedge products to compute curvature two-forms.
+- [[24.07 Reading components|Reading components]]: recover Riemann tensor components from curvature forms and account for the factor from antisymmetric index pairs.
+- [[24.08 Contractions|Contractions]]: obtain Ricci and scalar curvature in a frame and compare the result with a coordinate calculation.
+- [[24.09 Frame changes|Frame changes]]: track how the connection and curvature change and distinguish frame-dependent coefficients from tensorial results.
 
 ## Learning outcomes
 

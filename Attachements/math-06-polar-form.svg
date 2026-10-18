@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="650" viewBox="0 0 900 650" role="img" aria-label="Rectangular and polar form describe the same point">
+<defs><marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,5 L0,10 Z" fill="#202c3c"/></marker></defs>
+<rect width="900" height="650" fill="#ffffff"/>
+<g font-family="Arial, sans-serif" font-size="20" fill="#202c3c">
+<text x="40" y="42" font-size="27" font-weight="bold">Rectangular and polar form describe the same point</text>
+<text x="40" y="76" font-size="19">z = x + iy = r(cos θ + i sin θ)    with r &gt; 0</text>
+<line x1="100" y1="490" x2="730" y2="490" stroke="#202c3c" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="170" y1="550" x2="170" y2="130" stroke="#202c3c" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="745" y="497" fill="#202c3c" font-size="20" text-anchor="start">Re</text>
+<text x="187" y="135" fill="#202c3c" font-size="20" text-anchor="start">Im</text>
+<text x="150" y="518" fill="#202c3c" font-size="20" text-anchor="start">0</text>
+<line x1="470" y1="490" x2="470" y2="290" stroke="#aab4c2" stroke-width="2" stroke-dasharray="7 6"/>
+<line x1="170" y1="290" x2="470" y2="290" stroke="#aab4c2" stroke-width="2" stroke-dasharray="7 6"/>
+<line x1="170" y1="490" x2="470" y2="290" stroke="#2459a6" stroke-width="4" marker-end="url(#arrow)"/>
+<circle cx="470" cy="290" r="5" fill="#2459a6"/>
+<text x="491" y="282" fill="#2459a6" font-size="23" text-anchor="start">z = 3 + 2i</text>
+<text x="470" y="525" fill="#202c3c" font-size="20" text-anchor="middle">x = 3</text>
+<text x="150" y="296" fill="#202c3c" font-size="20" text-anchor="end">y = 2</text>
+<text x="260" y="350" fill="#2459a6" font-size="21" text-anchor="start">r = √13</text>
+<path d="M260,490 A90,90 0 0 0 244.88452649040593,440.0769823397294" fill="none" stroke="#bb5a18" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="280" y="465" fill="#bb5a18" font-size="24" text-anchor="start">θ</text>
+<line x1="452" y1="490" x2="452" y2="472" stroke="#aab4c2" stroke-width="2"/>
+<line x1="452" y1="472" x2="470" y2="472" stroke="#aab4c2" stroke-width="2"/>
+<text x="530" y="372" fill="#202c3c" font-size="20" text-anchor="start">x = r cos θ</text>
+<text x="530" y="410" fill="#202c3c" font-size="20" text-anchor="start">y = r sin θ</text>
+<text x="155" y="604" fill="#202c3c" font-size="20" text-anchor="start">θ = arctan(2/3) ≈ 0.588 rad; adding 2π gives the same point.</text>
+</g></svg>

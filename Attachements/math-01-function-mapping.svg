@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="460" viewBox="0 0 820 460" role="img" aria-labelledby="title desc">
+  <title id="title">A function with distinct image and codomain</title>
+  <desc id="desc">The domain is one, two, three. One maps to one, and two and three both map to four. The codomain is one, four, nine; nine is unused. The image contains only one and four.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#2563eb"/>
+    </marker>
+  </defs>
+  <rect width="820" height="460" fill="#ffffff"/>
+  <g font-family="Segoe UI, Arial, sans-serif" fill="#172033" text-anchor="middle">
+    <text x="410" y="35" font-size="24" font-weight="600">A function assigns one output to each input</text>
+    <text x="190" y="82" font-size="21">Domain A = {1, 2, 3}</text>
+    <text x="620" y="82" font-size="21">Codomain B = {1, 4, 9}</text>
+    <ellipse cx="190" cy="245" rx="105" ry="140" fill="#eff6ff" stroke="#475569" stroke-width="2"/>
+    <ellipse cx="620" cy="245" rx="110" ry="140" fill="#f8fafc" stroke="#475569" stroke-width="2"/>
+    <rect x="572" y="134" width="96" height="154" rx="45" fill="#dcfce7" stroke="#16a34a" stroke-width="2" stroke-dasharray="6 4"/>
+    <g fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow)">
+      <path d="M 211 165 L 592 165"/>
+      <path d="M 211 245 L 592 245"/>
+      <path d="M 211 325 Q 415 325 592 251"/>
+    </g>
+    <g font-size="24">
+      <text x="190" y="173">1</text>
+      <text x="190" y="253">2</text>
+      <text x="190" y="333">3</text>
+      <text x="620" y="173">1</text>
+      <text x="620" y="253">4</text>
+      <text x="620" y="333">9</text>
+    </g>
+    <text x="402" y="143" font-size="19" fill="#1d4ed8">f</text>
+    <text x="191" y="419" font-size="18">Exactly one arrow from each input</text>
+    <text x="620" y="419" font-size="18" fill="#166534">Image f(A) = {1, 4}</text>
+    <text x="620" y="445" font-size="17">9 has no preimage</text>
+  </g>
+</svg>

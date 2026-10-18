@@ -16,16 +16,16 @@ Use charts and smooth maps from [[Manifolds and coordinate charts - Overview]], 
 
 ## Topics to cover
 
-- Topological language: open sets, neighbourhoods, continuity, homeomorphisms, and connectedness.
-- Compactness: distinguish compact from noncompact spaces and separate compactness from connectedness and the presence of a boundary.
-- Identifications: construct a circle by identifying endpoints and distinguish a periodic coordinate from an ordinary real coordinate.
-- Loops and homotopies: deform paths with fixed endpoint conditions, test contractibility, and introduce the fundamental-group idea.
-- Winding numbers: count signed turns around a circle and explain invariance under an allowed continuous deformation.
-- Bundle structure: base space, total space, fibres, projection, local trivializations, and sections.
-- Transition functions: join descriptions on overlapping patches and state their compatibility condition on multiple overlaps.
-- Bundle types: distinguish product bundles, vector bundles, and principal bundles at an introductory level.
-- Connections and holonomy: compare transport around contractible and noncontractible loops and separate local curvature from global transport information.
-- Local and global potentials: explain how topology can obstruct a global potential or global choice of frame even when local descriptions exist.
+- [[27.01 Topological language|Topological language]]: open sets, neighbourhoods, continuity, homeomorphisms, and connectedness.
+- [[27.02 Compactness|Compactness]]: distinguish compact from noncompact spaces and separate compactness from connectedness and the presence of a boundary.
+- [[27.03 Identifications|Identifications]]: construct a circle by identifying endpoints and distinguish a periodic coordinate from an ordinary real coordinate.
+- [[27.04 Loops and homotopies|Loops and homotopies]]: deform paths with fixed endpoint conditions, test contractibility, and introduce the fundamental-group idea.
+- [[27.05 Winding numbers|Winding numbers]]: count signed turns around a circle and explain invariance under an allowed continuous deformation.
+- [[27.06 Bundle structure|Bundle structure]]: base space, total space, fibres, projection, local trivializations, and sections.
+- [[27.07 Transition functions|Transition functions]]: join descriptions on overlapping patches and state their compatibility condition on multiple overlaps.
+- [[27.08 Bundle types|Bundle types]]: distinguish product bundles, vector bundles, and principal bundles at an introductory level.
+- [[27.09 Connections and holonomy|Connections and holonomy]]: compare transport around contractible and noncontractible loops and separate local curvature from global transport information.
+- [[27.10 Local and global potentials|Local and global potentials]]: explain how topology can obstruct a global potential or global choice of frame even when local descriptions exist.
 
 ## Learning outcomes
 

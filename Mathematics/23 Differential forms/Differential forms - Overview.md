@@ -16,15 +16,15 @@ Use integration and partial derivatives from [[Integral calculus - Overview]] an
 
 ## Topics to cover
 
-- Alternating tensors: covectors, forms of each degree, antisymmetry, and independent component counting.
-- Wedge products: alternating multiplication, degree, distributivity, and the sign from interchanging forms.
-- Exterior derivatives: differentiate functions and forms, apply the graded product rule, and establish that applying the derivative twice gives zero.
-- Coordinate expressions: translate between component formulas and wedge notation, including antisymmetry factors.
-- Pullbacks: transform forms under smooth maps and explain why pullbacks commute with the exterior derivative.
-- Integration: parameterize an oriented region, pull back the integrand, and keep orientation signs consistent.
-- Stokes’ theorem: relate the integral of an exterior derivative to the integral on the oriented boundary.
-- Closed and exact forms: distinguish a derivative test from the existence of a global potential and introduce the local Poincaré lemma.
-- Classical operations: identify the relations to gradient, curl, and divergence in an oriented Euclidean space with a chosen metric.
+- [[23.01 Alternating tensors|Alternating tensors]]: covectors, forms of each degree, antisymmetry, and independent component counting.
+- [[23.02 Wedge products|Wedge products]]: alternating multiplication, degree, distributivity, and the sign from interchanging forms.
+- [[23.03 Exterior derivatives|Exterior derivatives]]: differentiate functions and forms, apply the graded product rule, and establish that applying the derivative twice gives zero.
+- [[23.04 Coordinate expressions|Coordinate expressions]]: translate between component formulas and wedge notation, including antisymmetry factors.
+- [[23.05 Pullbacks|Pullbacks]]: transform forms under smooth maps and explain why pullbacks commute with the exterior derivative.
+- [[23.06 Integration|Integration]]: parameterize an oriented region, pull back the integrand, and keep orientation signs consistent.
+- [[23.07 Stokes’ theorem|Stokes’ theorem]]: relate the integral of an exterior derivative to the integral on the oriented boundary.
+- [[23.08 Closed and exact forms|Closed and exact forms]]: distinguish a derivative test from the existence of a global potential and introduce the local Poincaré lemma.
+- [[23.09 Classical operations|Classical operations]]: identify the relations to gradient, curl, and divergence in an oriented Euclidean space with a chosen metric.
 
 ## Learning outcomes
 

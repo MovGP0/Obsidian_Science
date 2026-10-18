@@ -16,15 +16,15 @@ Use smooth maps and Jacobians from [[Multivariable calculus - Overview]] and vec
 
 ## Topics to cover
 
-- Local models: dimension, open neighbourhoods, and the meaning of being locally Euclidean.
-- Charts and atlases: coordinate maps, chart domains, overlapping charts, and the failure of some familiar coordinates at selected points.
-- Transition maps: change coordinates on overlaps and state the differentiability needed for a smooth structure.
-- Examples: lines, circles, spheres, products, and regular level sets, with explicit local descriptions.
-- Tangent vectors: define them through curve velocities or directional derivations and relate the two descriptions.
-- Tangent and cotangent spaces: local bases, dual bases, and the distinction between spaces at different points.
-- Smooth maps: derivatives as maps between tangent spaces, pushforwards, and the pullback of covectors.
-- Vector and tensor fields: assign a suitable object smoothly to each point without confusing the assignment with its components.
-- Local and global statements: distinguish a coordinate singularity from a failure of the underlying manifold to be smooth.
+- [[19.01 Local models|Local models]]: dimension, open neighbourhoods, and the meaning of being locally Euclidean.
+- [[19.02 Charts and atlases|Charts and atlases]]: coordinate maps, chart domains, overlapping charts, and the failure of some familiar coordinates at selected points.
+- [[19.03 Transition maps|Transition maps]]: change coordinates on overlaps and state the differentiability needed for a smooth structure.
+- [[19.04 Examples|Examples]]: lines, circles, spheres, products, and regular level sets, with explicit local descriptions.
+- [[19.05 Tangent vectors|Tangent vectors]]: define them through curve velocities or directional derivations and relate the two descriptions.
+- [[19.06 Tangent and cotangent spaces|Tangent and cotangent spaces]]: local bases, dual bases, and the distinction between spaces at different points.
+- [[19.07 Smooth maps|Smooth maps]]: derivatives as maps between tangent spaces, pushforwards, and the pullback of covectors.
+- [[19.08 Vector and tensor fields|Vector and tensor fields]]: assign a suitable object smoothly to each point without confusing the assignment with its components.
+- [[19.09 Local and global statements|Local and global statements]]: distinguish a coordinate singularity from a failure of the underlying manifold to be smooth.
 
 ## Learning outcomes
 

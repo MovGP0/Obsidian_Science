@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="650" viewBox="0 0 900 650" role="img" aria-label="The sixth roots of unity">
+<defs><marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,5 L0,10 Z" fill="#202c3c"/></marker></defs>
+<rect width="900" height="650" fill="#ffffff"/>
+<g font-family="Arial, sans-serif" font-size="20" fill="#202c3c">
+<text x="40" y="42" font-size="27" font-weight="bold">The sixth roots of unity</text>
+<text x="40" y="76" font-size="19">Each point satisfies w⁶ = 1; adjacent arguments differ by π/3.</text>
+<line x1="145" y1="355" x2="755" y2="355" stroke="#202c3c" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="440" y1="610" x2="440" y2="108" stroke="#202c3c" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="768" y="362" fill="#202c3c" font-size="20" text-anchor="start">Re</text>
+<text x="455" y="118" fill="#202c3c" font-size="20" text-anchor="start">Im</text>
+<circle cx="440" cy="355" r="205" fill="none" stroke="#b7c3d2" stroke-width="2"/>
+<polygon points="645.0,355.0 542.5,177.4647922241901 337.50000000000006,177.46479222419006 235.0,355.0 337.4999999999999,532.5352077758099 542.5,532.5352077758099" fill="#e9f0fa" fill-opacity="0.6" stroke="#7192bb" stroke-width="2"/>
+<line x1="440" y1="355" x2="645.0" y2="355.0" stroke="#b7c3d2" stroke-width="1.5" stroke-dasharray="7 6"/>
+<circle cx="645.0" cy="355.0" r="5" fill="#2459a6"/>
+<text x="670" y="346" fill="#2459a6" font-size="20" text-anchor="start">1</text>
+<line x1="440" y1="355" x2="542.5" y2="177.4647922241901" stroke="#b7c3d2" stroke-width="1.5" stroke-dasharray="7 6"/>
+<circle cx="542.5" cy="177.4647922241901" r="5" fill="#2459a6"/>
+<text x="557" y="148" fill="#2459a6" font-size="20" text-anchor="start">½ + i√3/2</text>
+<line x1="440" y1="355" x2="337.50000000000006" y2="177.46479222419006" stroke="#b7c3d2" stroke-width="1.5" stroke-dasharray="7 6"/>
+<circle cx="337.50000000000006" cy="177.46479222419006" r="5" fill="#2459a6"/>
+<text x="155" y="148" fill="#2459a6" font-size="20" text-anchor="start">−½ + i√3/2</text>
+<line x1="440" y1="355" x2="235.0" y2="355.0" stroke="#b7c3d2" stroke-width="1.5" stroke-dasharray="7 6"/>
+<circle cx="235.0" cy="355.0" r="5" fill="#2459a6"/>
+<text x="188" y="346" fill="#2459a6" font-size="20" text-anchor="start">−1</text>
+<line x1="440" y1="355" x2="337.4999999999999" y2="532.5352077758099" stroke="#b7c3d2" stroke-width="1.5" stroke-dasharray="7 6"/>
+<circle cx="337.4999999999999" cy="532.5352077758099" r="5" fill="#2459a6"/>
+<text x="153" y="570" fill="#2459a6" font-size="20" text-anchor="start">−½ − i√3/2</text>
+<line x1="440" y1="355" x2="542.5" y2="532.5352077758099" stroke="#b7c3d2" stroke-width="1.5" stroke-dasharray="7 6"/>
+<circle cx="542.5" cy="532.5352077758099" r="5" fill="#2459a6"/>
+<text x="557" y="570" fill="#2459a6" font-size="20" text-anchor="start">½ − i√3/2</text>
+<path d="M506,355 A66,66 0 0 0 473.0,297.84232335022705" fill="none" stroke="#bb5a18" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="502" y="311" fill="#bb5a18" font-size="21" text-anchor="start">π/3</text>
+<text x="421" y="382" fill="#202c3c" font-size="17" text-anchor="start">0</text>
+</g></svg>

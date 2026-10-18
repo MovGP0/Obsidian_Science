@@ -16,15 +16,15 @@ Use partial derivatives from [[Multivariable calculus - Overview]], tensor trans
 
 ## Topics to cover
 
-- The differentiation problem: show explicitly how differentiating a coordinate-dependent basis adds terms to a component derivative.
-- Affine connections: linearity properties, the product rule, and the derivative of one vector field along another.
-- Connection coefficients: express a connection in a coordinate basis and derive the vector covariant derivative.
-- Covectors and tensors: determine the sign of each connection contribution by preserving scalar contractions.
-- Transformation behaviour: explain why connection coefficients are not tensor components, although a covariant derivative is a tensor.
-- Levi-Civita connection: metric compatibility, vanishing torsion, uniqueness, and the resulting Christoffel formula.
-- Parallel transport: define transport along a curve and formulate its ordinary differential equation.
-- Geodesics: derive the parallel-tangent condition, its coordinate equation, and the role of an affine parameter.
-- Coordinate examples: calculate a nonzero connection in flat polar coordinates and distinguish that result from curvature.
+- [[21.01 The differentiation problem|The differentiation problem]]: show explicitly how differentiating a coordinate-dependent basis adds terms to a component derivative.
+- [[21.02 Affine connections|Affine connections]]: linearity properties, the product rule, and the derivative of one vector field along another.
+- [[21.03 Connection coefficients|Connection coefficients]]: express a connection in a coordinate basis and derive the vector covariant derivative.
+- [[21.04 Covectors and tensors|Covectors and tensors]]: determine the sign of each connection contribution by preserving scalar contractions.
+- [[21.05 Transformation behaviour|Transformation behaviour]]: explain why connection coefficients are not tensor components, although a covariant derivative is a tensor.
+- [[21.06 Levi-Civita connection|Levi-Civita connection]]: metric compatibility, vanishing torsion, uniqueness, and the resulting Christoffel formula.
+- [[21.07 Parallel transport|Parallel transport]]: define transport along a curve and formulate its ordinary differential equation.
+- [[21.08 Geodesics|Geodesics]]: derive the parallel-tangent condition, its coordinate equation, and the role of an affine parameter.
+- [[21.09 Coordinate examples|Coordinate examples]]: calculate a nonzero connection in flat polar coordinates and distinguish that result from curvature.
 
 ## Learning outcomes
 

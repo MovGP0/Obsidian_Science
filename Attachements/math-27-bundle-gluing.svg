@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="530" viewBox="0 0 1100 530" role="img" aria-labelledby="title desc">
+<title id="title">Product and Möbius line gluing</title><desc id="desc">Two rectangles represent local real fibre coordinates over a cut circle. Same-direction seam arrows identify equal coordinates. Reversed arrows identify v with minus v and force a displayed section through zero.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#334155"/></marker><marker id="blue-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2563a8"/></marker></defs>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<g font-family="Arial, sans-serif" font-size="21" fill="#172b44">
+<text x="50" y="46" font-size="27" font-weight="bold">Two ways to join the fibre coordinates</text>
+<text x="275" y="100" text-anchor="middle" font-size="24">Product line bundle</text>
+<text x="825" y="100" text-anchor="middle" font-size="24">Möbius line bundle</text>
+<rect x="85" y="155" width="380" height="190" fill="#eef5fb" stroke="#a4b4c6" stroke-width="2"/>
+<rect x="635" y="155" width="380" height="190" fill="#f6eff8" stroke="#bca4c7" stroke-width="2"/>
+<line x1="85" y1="250" x2="465" y2="250" stroke="#7d8b9b" stroke-width="2" stroke-dasharray="7 6"/>
+<line x1="635" y1="250" x2="1015" y2="250" stroke="#7d8b9b" stroke-width="2" stroke-dasharray="7 6"/>
+<line x1="85" y1="330" x2="85" y2="170" stroke="#334155" stroke-width="4" marker-end="url(#arrow)"/>
+<line x1="465" y1="330" x2="465" y2="170" stroke="#334155" stroke-width="4" marker-end="url(#arrow)"/>
+<line x1="635" y1="330" x2="635" y2="170" stroke="#334155" stroke-width="4" marker-end="url(#arrow)"/>
+<line x1="1015" y1="170" x2="1015" y2="330" stroke="#334155" stroke-width="4" marker-end="url(#arrow)"/>
+<line x1="85" y1="200" x2="465" y2="200" stroke="#13877c" stroke-width="5"/>
+<line x1="635" y1="200" x2="1015" y2="300" stroke="#8b3c93" stroke-width="5"/>
+<circle cx="825" cy="250" r="7" fill="#8b3c93"/>
+<text x="275" y="185" text-anchor="middle" font-size="18" fill="#0c6d64">A nonzero constant section</text>
+<text x="825" y="379" text-anchor="middle" font-size="18" fill="#763180">Every section has a zero</text>
+<text x="66" y="256" text-anchor="end" font-size="18">0</text>
+<text x="616" y="256" text-anchor="end" font-size="18">0</text>
+<text x="85" y="377" text-anchor="middle" font-size="18">t = 0</text>
+<text x="465" y="377" text-anchor="middle" font-size="18">t = 1</text>
+<text x="635" y="410" text-anchor="middle" font-size="18">t = 0</text>
+<text x="1015" y="410" text-anchor="middle" font-size="18">t = 1</text>
+<text x="275" y="435" text-anchor="middle">(0, v) ∼ (1, v)</text>
+<text x="825" y="455" text-anchor="middle">(0, v) ∼ (1, −v)</text>
+<text x="550" y="505" text-anchor="middle" font-size="18">Only a bounded part of each real line fibre is shown. The dashed line is v = 0.</text>
+</g></svg>

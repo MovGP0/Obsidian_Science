@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="420" viewBox="0 0 1080 420" role="img" aria-labelledby="title desc">
+  <title id="title">Three set operations on the same two finite sets</title>
+  <desc id="desc">The union shades both circles, the intersection shades only their overlap, and A minus B shades the part of A outside B. Each rectangle is the same universe of integers from one to eight.</desc>
+  <defs>
+    <clipPath id="overlap">
+      <circle cx="130" cy="220" r="82"/>
+    </clipPath>
+    <mask id="difference" maskUnits="userSpaceOnUse" x="0" y="100" width="350" height="240">
+      <rect x="0" y="100" width="350" height="240" fill="white"/>
+      <circle cx="220" cy="220" r="82" fill="black"/>
+    </mask>
+    <g id="outlines" fill="none" stroke="#475569" stroke-width="2">
+      <rect x="14" y="100" width="330" height="240" rx="8"/>
+      <circle cx="130" cy="220" r="82"/>
+      <circle cx="220" cy="220" r="82"/>
+    </g>
+    <g id="labels" fill="#172033" font-family="Segoe UI, Arial, sans-serif" font-size="19" text-anchor="middle">
+      <text x="85" y="127">A</text>
+      <text x="263" y="127">B</text>
+      <text x="320" y="125">U</text>
+      <text x="92" y="227">1, 8</text>
+      <text x="175" y="227">2, 4</text>
+      <text x="260" y="227">3, 6</text>
+      <text x="297" y="321">5, 7</text>
+    </g>
+  </defs>
+  <rect width="1080" height="420" fill="#ffffff"/>
+  <g font-family="Segoe UI, Arial, sans-serif" fill="#172033" text-anchor="middle">
+    <text x="540" y="32" font-size="23" font-weight="600">One pair of sets, three membership rules</text>
+    <g>
+      <text x="175" y="75" font-size="23">Union: A ∪ B</text>
+      <circle cx="130" cy="220" r="82" fill="#bfdbfe"/>
+      <circle cx="220" cy="220" r="82" fill="#bfdbfe"/>
+      <use href="#outlines"/>
+      <use href="#labels"/>
+      <text x="175" y="378" font-size="18">In A or B (or both)</text>
+    </g>
+    <g transform="translate(360 0)">
+      <text x="175" y="75" font-size="23">Intersection: A ∩ B</text>
+      <circle cx="220" cy="220" r="82" fill="#c4b5fd" clip-path="url(#overlap)"/>
+      <use href="#outlines"/>
+      <use href="#labels"/>
+      <text x="175" y="378" font-size="18">In both A and B</text>
+    </g>
+    <g transform="translate(720 0)">
+      <text x="175" y="75" font-size="23">Difference: A ∖ B</text>
+      <circle cx="130" cy="220" r="82" fill="#bbf7d0" mask="url(#difference)"/>
+      <use href="#outlines"/>
+      <use href="#labels"/>
+      <text x="175" y="378" font-size="18">In A and outside B</text>
+    </g>
+  </g>
+</svg>

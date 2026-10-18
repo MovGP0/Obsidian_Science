@@ -1,4 +1,4 @@
----
+﻿---
 title: "Linear algebra — overview"
 document_type: "Mathematics topic overview"
 ---
@@ -16,16 +16,16 @@ Use equation solving from [[Algebra - Overview]] and components, bases, and inde
 
 ## Topics to cover
 
-- Vector spaces: scalars, vector-space axioms, subspaces, span, independence, basis, and dimension.
-- Linear maps: linearity, kernel, image, rank, nullity, and composition.
-- Matrices: represent a map in chosen input and output bases and interpret matrix multiplication as composition.
-- Linear systems: row reduction, solution sets, consistency, and the distinction between a unique solution and a family of solutions.
-- Inverses: invertibility conditions, inverse matrices, and the relation between injectivity, surjectivity, and rank in finite dimensions.
-- Determinants and trace: calculate them, track row operations, and explain their behaviour under a basis change.
-- Eigenvalues and eigenvectors: characteristic equations, eigenspaces, multiplicity, and invariant directions.
-- Diagonalization: determine when an eigenbasis exists and explain why some matrices cannot be diagonalized.
-- Real and complex matrices: transpose, conjugate transpose, symmetric and Hermitian matrices, and orthogonal and unitary maps.
-- Block matrices: partition a map, multiply blocks, and use elimination to find a block inverse or determinant.
+- [[10.01 Vector spaces|Vector spaces]]: scalars, vector-space axioms, subspaces, span, independence, basis, and dimension.
+- [[10.02 Linear maps|Linear maps]]: linearity, kernel, image, rank, nullity, and composition.
+- [[10.03 Matrices|Matrices]]: represent a map in chosen input and output bases and interpret matrix multiplication as composition.
+- [[10.04 Linear systems|Linear systems]]: row reduction, solution sets, consistency, and the distinction between a unique solution and a family of solutions.
+- [[10.05 Inverses|Inverses]]: invertibility conditions, inverse matrices, and the relation between injectivity, surjectivity, and rank in finite dimensions.
+- [[10.06 Determinants and trace|Determinants and trace]]: calculate them, track row operations, and explain their behaviour under a basis change.
+- [[10.07 Eigenvalues and eigenvectors|Eigenvalues and eigenvectors]]: characteristic equations, eigenspaces, multiplicity, and invariant directions.
+- [[10.08 Diagonalization|Diagonalization]]: determine when an eigenbasis exists and explain why some matrices cannot be diagonalized.
+- [[10.09 Real and complex matrices|Real and complex matrices]]: transpose, conjugate transpose, symmetric and Hermitian matrices, and orthogonal and unitary maps.
+- [[10.10 Block matrices|Block matrices]]: partition a map, multiply blocks, and use elimination to find a block inverse or determinant.
 
 ## Learning outcomes
 

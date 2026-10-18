@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="700" viewBox="0 0 1100 700" role="img">
+<defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="context-stroke"/></marker>
+</defs>
+<rect width="1100" height="700" rx="16" fill="#f8fafc"/>
+<g font-family="Segoe UI, Arial, sans-serif" font-size="21" fill="#172033">
+
+<text x="50" y="54" font-size="29" font-weight="700">A small coordinate loop measures curvature</text>
+<text x="50" y="90" fill="#475569">Follow +X, +Y, −X, −Y; apply transport maps in path order.</text>
+<rect x="40" y="120" width="490" height="430" rx="12" fill="white" stroke="#cbd5e1"/>
+<text x="65" y="158" font-weight="600">Oriented coordinate rectangle</text>
+<path d="M105 465 H470 M125 490 V200" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<text x="465" y="496">x</text><text x="94" y="210">y</text>
+<path d="M125 450 H420 V235 H125 Z" fill="#e0f2fe" stroke="none"/>
+<path d="M135 450 H410" stroke="#0369a1" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+<path d="M420 440 V245" stroke="#0369a1" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+<path d="M410 235 H135" stroke="#0369a1" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+<path d="M125 245 V438" stroke="#0369a1" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+<circle cx="125" cy="450" r="6" fill="#172033"/>
+<text x="89" y="438">p</text>
+<text x="243" y="486">① +X, side s</text>
+<text x="437" y="340">②</text>
+<text x="335" y="375">+Y</text><text x="335" y="404">side t</text>
+<text x="215" y="216">③ −X</text>
+<text x="67" y="345">④</text><text x="66" y="375">−Y</text>
+<text x="204" y="333" font-size="25">area = st</text>
+<text x="66" y="526" font-size="18" fill="#475569">X and Y commute in this coordinate chart.</text>
+
+<rect x="555" y="120" width="505" height="430" rx="12" fill="white" stroke="#cbd5e1"/>
+<text x="580" y="158" font-weight="600">Compare vectors back at p</text>
+<text x="580" y="194" font-size="18" fill="#475569">Constant-matrix example: R(X,Y)e₁ = e₁</text>
+<path d="M610 310 H995" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M610 310 H965" stroke="#2563eb" stroke-width="7" marker-end="url(#arrow)"/>
+<text x="890" y="277" fill="#2563eb">v = e₁</text>
+<path d="M610 370 H880" stroke="#059669" stroke-width="7" marker-end="url(#arrow)"/>
+<path d="M610 310 V378" stroke="#94a3b8" stroke-dasharray="5 5"/>
+<text x="615" y="415" fill="#047857">P□v = (1 − st)e₁ + higher terms</text>
+<path d="M965 455 H880" stroke="#b45309" stroke-width="4" marker-end="url(#arrow)"/>
+<text x="622" y="497" fill="#92400e">Change: −st R(X,Y)v</text>
+<text x="580" y="526" font-size="18" fill="#475569">Vectors are shifted vertically for comparison.</text>
+
+<rect x="40" y="578" width="1020" height="88" rx="12" fill="#e2e8f0"/>
+<text x="64" y="612" font-size="22">P□ = I − st R(X,Y) + O(s²t + st²)</text>
+<text x="64" y="646" font-size="19">Reverse the path: the leading curvature term changes sign. Arrow lengths are schematic.</text>
+</g></svg>

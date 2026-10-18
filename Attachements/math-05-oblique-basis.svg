@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="500" viewBox="0 0 760 500">
+<defs>
+<marker id="blue" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#2457a7"/></marker>
+<marker id="green" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#087f70"/></marker>
+<marker id="purple" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#813f98"/></marker>
+<marker id="gray" markerWidth="7" markerHeight="7" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6" fill="#7b8491"/></marker>
+</defs>
+<rect width="760" height="500" fill="#ffffff"/>
+<g font-family="Arial, sans-serif" font-size="20" fill="#182536">
+<text x="32" y="37" font-size="25" font-weight="bold">One vector, two component lists</text>
+<path d="M65 370 L600 370 M110 420 L110 75" stroke="#a6adb7" stroke-width="1.5" fill="none" marker-end="url(#gray)"/>
+<text x="610" y="378">x</text><text x="100" y="68">y</text><text x="86" y="397">O</text>
+<path d="M110 370 L310 370 L510 170 L310 170 Z" fill="#f1f6fa" stroke="none"/>
+<path d="M110 370 L310 370" stroke="#2457a7" stroke-width="4" fill="none" marker-end="url(#blue)"/>
+<path d="M110 370 L210 270" stroke="#087f70" stroke-width="4" fill="none" marker-end="url(#green)"/>
+<path d="M310 370 L510 170" stroke="#087f70" stroke-width="3" stroke-dasharray="8 6" fill="none" marker-end="url(#green)"/>
+<circle cx="410" cy="270" r="4" fill="#087f70"/>
+<path d="M110 370 L510 170" stroke="#813f98" stroke-width="4.5" fill="none" marker-end="url(#purple)"/>
+<path d="M510 170 L510 370 M110 170 L510 170" stroke="#a6adb7" stroke-dasharray="5 5" stroke-width="1.5" fill="none"/>
+<text x="190" y="406" fill="#2457a7">b₁ = (2, 0)</text>
+<text x="112" y="255" fill="#087f70">b₂ = (1, 1)</text>
+<text x="430" y="310" fill="#087f70">2b₂</text>
+<text x="240" y="215" fill="#813f98" font-weight="bold">v = b₁ + 2b₂</text>
+<text x="526" y="163" fill="#813f98">v = (4, 2)</text>
+<text x="497" y="400">4</text><text x="83" y="177">2</text>
+<text x="32" y="465" font-size="18">Standard components: (4, 2). Components in the ordered basis (b₁, b₂): (1, 2).</text>
+</g>
+</svg>

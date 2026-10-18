@@ -1,4 +1,4 @@
----
+﻿---
 title: "Ordinary differential equations — overview"
 document_type: "Mathematics topic overview"
 ---
@@ -16,14 +16,14 @@ Use derivatives and integrals from [[Differential calculus - Overview]] and [[In
 
 ## Topics to cover
 
-- Equation types: order, linearity, homogeneous and inhomogeneous equations, and autonomous systems.
-- Solutions and data: general and particular solutions, initial conditions, boundary conditions, and elementary existence and uniqueness requirements.
-- First-order methods: separation of variables and integrating factors for linear equations.
-- Constant-coefficient equations: characteristic polynomials, repeated roots, and real forms of complex-exponential solutions.
-- Harmonic equations: oscillation, damping, forcing, resonance, and the interpretation of the independent constants.
-- Linear systems: matrix form, eigenvectors, matrix exponentials, and decomposition into independent modes.
-- Equilibria and stability: linearize a system near an equilibrium and interpret the eigenvalue signs and real parts.
-- Verification and approximation: substitute a solution, check its initial data, and distinguish an exact solution from a numerical approximation.
+- [[14.01 Equation types|Equation types]]: order, linearity, homogeneous and inhomogeneous equations, and autonomous systems.
+- [[14.02 Solutions and data|Solutions and data]]: general and particular solutions, initial conditions, boundary conditions, and elementary existence and uniqueness requirements.
+- [[14.03 First-order methods|First-order methods]]: separation of variables and integrating factors for linear equations.
+- [[14.04 Constant-coefficient equations|Constant-coefficient equations]]: characteristic polynomials, repeated roots, and real forms of complex-exponential solutions.
+- [[14.05 Harmonic equations|Harmonic equations]]: oscillation, damping, forcing, resonance, and the interpretation of the independent constants.
+- [[14.06 Linear systems|Linear systems]]: matrix form, eigenvectors, matrix exponentials, and decomposition into independent modes.
+- [[14.07 Equilibria and stability|Equilibria and stability]]: linearize a system near an equilibrium and interpret the eigenvalue signs and real parts.
+- [[14.08 Verification and approximation|Verification and approximation]]: substitute a solution, check its initial data, and distinguish an exact solution from a numerical approximation.
 
 ## Learning outcomes
 

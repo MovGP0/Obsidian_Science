@@ -16,15 +16,15 @@ Use connection coefficients, parallel transport, and covariant differentiation f
 
 ## Topics to cover
 
-- Curvature definitions: compare the commutator of covariant derivatives with transport around a small loop.
-- Coordinate expressions: derive the Riemann tensor from derivatives and products of connection coefficients.
-- Conventions: specify the order of derivatives, the definition of the curvature operator, and the resulting sign and index order.
-- Tensor symmetries: antisymmetries, pair interchange for a metric connection, and their assumptions.
-- Bianchi identities: introduce the algebraic and differential identities and explain the consistency relations they impose.
-- Contractions: derive the Ricci tensor and scalar curvature using the inverse metric.
-- The Einstein tensor: define the Ricci combination and explain its covariant-divergence identity as a mathematical consequence of the Bianchi identities.
-- Examples: compare a plane in curvilinear coordinates with a curved surface, including a sphere.
-- Local flatness and information loss: distinguish vanishing coefficients at one point, vanishing full curvature, and vanishing selected contractions.
+- [[22.01 Curvature definitions|Curvature definitions]]: compare the commutator of covariant derivatives with transport around a small loop.
+- [[22.02 Coordinate expressions|Coordinate expressions]]: derive the Riemann tensor from derivatives and products of connection coefficients.
+- [[22.03 Conventions|Conventions]]: specify the order of derivatives, the definition of the curvature operator, and the resulting sign and index order.
+- [[22.04 Tensor symmetries|Tensor symmetries]]: antisymmetries, pair interchange for a metric connection, and their assumptions.
+- [[22.05 Bianchi identities|Bianchi identities]]: introduce the algebraic and differential identities and explain the consistency relations they impose.
+- [[22.06 Contractions|Contractions]]: derive the Ricci tensor and scalar curvature using the inverse metric.
+- [[22.07 The Einstein tensor|The Einstein tensor]]: define the Ricci combination and explain its covariant-divergence identity as a mathematical consequence of the Bianchi identities.
+- [[22.08 Examples|Examples]]: compare a plane in curvilinear coordinates with a curved surface, including a sphere.
+- [[22.09 Local flatness and information loss|Local flatness and information loss]]: distinguish vanishing coefficients at one point, vanishing full curvature, and vanishing selected contractions.
 
 ## Learning outcomes
 

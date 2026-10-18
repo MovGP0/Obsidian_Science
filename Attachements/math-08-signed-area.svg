@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="550" viewBox="0 0 900 550" role="img" aria-labelledby="title desc">
+<title id="title">Signed area for y = x − 1</title><desc id="desc">A negative triangle contributes minus one half on zero to one. A positive triangle contributes two on one to three. The signed sum is three halves.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#536173"/></marker></defs>
+<rect width="900" height="550" fill="#ffffff"/>
+<g font-family="Arial, sans-serif">
+<text x="450" y="40" font-size="26" text-anchor="middle" fill="#182536">A definite integral adds signed areas</text>
+<polygon points="150,330 150,440 340,330" fill="#f9c7ba" stroke="#b33e2e" stroke-width="2"/>
+<polygon points="340,330 720,330 720,110" fill="#b9dbf3" stroke="#276997" stroke-width="2"/>
+<line x1="105" y1="330" x2="835" y2="330" stroke="#536173" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="150" y1="475" x2="150" y2="65" stroke="#536173" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="150" y1="440" x2="720" y2="110" stroke="#243e58" stroke-width="4" />
+<line x1="150" y1="324" x2="150" y2="336" stroke="#536173" stroke-width="2" />
+<text x="150" y="360" font-size="18" text-anchor="middle" fill="#182536">0</text>
+<line x1="340" y1="324" x2="340" y2="336" stroke="#536173" stroke-width="2" />
+<text x="340" y="360" font-size="18" text-anchor="middle" fill="#182536">1</text>
+<line x1="530" y1="324" x2="530" y2="336" stroke="#536173" stroke-width="2" />
+<text x="530" y="360" font-size="18" text-anchor="middle" fill="#182536">2</text>
+<line x1="720" y1="324" x2="720" y2="336" stroke="#536173" stroke-width="2" />
+<text x="720" y="360" font-size="18" text-anchor="middle" fill="#182536">3</text>
+<line x1="144" y1="440" x2="156" y2="440" stroke="#536173" stroke-width="2" />
+<text x="130" y="446" font-size="18" text-anchor="end" fill="#182536">-1</text>
+<line x1="144" y1="220" x2="156" y2="220" stroke="#536173" stroke-width="2" />
+<text x="130" y="226" font-size="18" text-anchor="end" fill="#182536">1</text>
+<line x1="144" y1="110" x2="156" y2="110" stroke="#536173" stroke-width="2" />
+<text x="130" y="116" font-size="18" text-anchor="end" fill="#182536">2</text>
+<text x="855" y="338" font-size="22" text-anchor="middle" fill="#182536">x</text>
+<text x="150" y="59" font-size="22" text-anchor="middle" fill="#182536">y</text>
+<text x="600" y="124" font-size="23" text-anchor="middle" fill="#182536">y = x − 1</text>
+<text x="208" y="376" font-size="24" text-anchor="middle" fill="#923628">−1/2</text>
+<text x="590" y="281" font-size="28" text-anchor="middle" fill="#205c86">+2</text>
+<line x1="720" y1="110" x2="720" y2="330" stroke="#276997" stroke-width="1.5" stroke-dasharray="5 5"/>
+<text x="450" y="505" font-size="24" text-anchor="middle" fill="#182536">Signed integral:  −1/2 + 2 = 3/2</text>
+</g></svg>

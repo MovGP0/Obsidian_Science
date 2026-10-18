@@ -1,4 +1,4 @@
----
+﻿---
 title: "Algebra — overview"
 document_type: "Mathematics topic overview"
 ---
@@ -16,14 +16,14 @@ Use arithmetic with fractions and the distinction between an expression and a st
 
 ## Topics to cover
 
-- Arithmetic rules: order of operations, signs, fractions, powers, roots, and the laws of exponents.
-- Equivalent expressions: expand products, collect terms, factor polynomials, and identify common factors.
-- Rational expressions: simplify fractions while retaining restrictions on zero denominators.
-- Equations and inequalities: solve linear and quadratic cases and track changes caused by multiplication or division.
-- Simultaneous equations: solve small linear systems by substitution and elimination.
-- Rearranging formulas: isolate a selected variable and state conditions under which division or inversion is allowed.
-- Completing the square: derive the quadratic formula and identify the centre and constant part of a quadratic expression.
-- Checking solutions: substitute results, identify extraneous roots, and distinguish an identity from a conditional equation.
+- [[02.01 Arithmetic rules|Arithmetic rules]]: order of operations, signs, fractions, powers, roots, and the laws of exponents.
+- [[02.02 Equivalent expressions|Equivalent expressions]]: expand products, collect terms, factor polynomials, and identify common factors.
+- [[02.03 Rational expressions|Rational expressions]]: simplify fractions while retaining restrictions on zero denominators.
+- [[02.04 Equations and inequalities|Equations and inequalities]]: solve linear and quadratic cases and track changes caused by multiplication or division.
+- [[02.05 Simultaneous equations|Simultaneous equations]]: solve small linear systems by substitution and elimination.
+- [[02.06 Rearranging formulas|Rearranging formulas]]: isolate a selected variable and state conditions under which division or inversion is allowed.
+- [[02.07 Completing the square|Completing the square]]: derive the quadratic formula and identify the centre and constant part of a quadratic expression.
+- [[02.08 Checking solutions|Checking solutions]]: substitute results, identify extraneous roots, and distinguish an identity from a conditional equation.
 
 ## Learning outcomes
 

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="440" viewBox="0 0 1000 440">
+<defs>
+  <marker id="arrow-blue" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,4 L0,8 Z" fill="#175a9b"/></marker>
+  <marker id="arrow-red" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,4 L0,8 Z" fill="#a33e28"/></marker>
+  <marker id="arrow-gray" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L7,4 L0,8 Z" fill="#4d5965"/></marker>
+</defs>
+<rect width="1000" height="440" fill="#fff"/>
+<g font-family="Arial, sans-serif" font-size="21" fill="#172b3a">
+
+<text x="250" y="42" text-anchor="middle" font-weight="bold">Ordered pair (u, v)</text>
+<text x="750" y="42" text-anchor="middle" font-weight="bold">Ordered pair (v, u)</text>
+<polygon points="80,305 300,275 370,105 150,135" fill="#d9ecfa" stroke="#829aad" stroke-width="2"/>
+<polygon points="580,305 800,275 870,105 650,135" fill="#fae1db" stroke="#b9958a" stroke-width="2"/>
+<path d="M80,305 L300,275" fill="none" stroke="#175a9b" stroke-width="3.5" marker-end="url(#arrow-blue)"/>
+<path d="M80,305 L150,135" fill="none" stroke="#175a9b" stroke-width="3.5" marker-end="url(#arrow-blue)"/>
+<path d="M580,305 L800,275" fill="none" stroke="#a33e28" stroke-width="3.5" marker-end="url(#arrow-red)"/>
+<path d="M580,305 L650,135" fill="none" stroke="#a33e28" stroke-width="3.5" marker-end="url(#arrow-red)"/>
+<circle cx="80" cy="305" r="4" fill="#172b3a"/><circle cx="580" cy="305" r="4" fill="#172b3a"/>
+<text x="57" y="333">0</text><text x="557" y="333">0</text>
+<text x="200" y="327" fill="#175a9b">u: first</text>
+<text x="58" y="200" fill="#175a9b">v: second</text>
+<text x="710" y="327" fill="#a33e28">u: second</text>
+<text x="560" y="200" fill="#a33e28">v: first</text>
+<path d="M165,289 Q165,252 119,217" stroke="#175a9b" stroke-width="2" fill="none" marker-end="url(#arrow-blue)"/>
+<path d="M620,216 Q668,253 665,287" stroke="#a33e28" stroke-width="2" fill="none" marker-end="url(#arrow-red)"/>
+<text x="250" y="378" text-anchor="middle">(dx ∧ dy)(u, v) = det(u, v) &gt; 0</text>
+<text x="750" y="378" text-anchor="middle">(dx ∧ dy)(v, u) = −det(u, v) &lt; 0</text>
+<text x="500" y="420" text-anchor="middle" font-size="19">Same parallelogram, opposite argument order, opposite oriented area.</text>
+</g></svg>

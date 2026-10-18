@@ -1,4 +1,4 @@
----
+﻿---
 title: "Geometry and trigonometry — overview"
 document_type: "Mathematics topic overview"
 ---
@@ -16,14 +16,14 @@ Use equation solving from [[Algebra - Overview]] and elementary graphs from [[Fu
 
 ## Topics to cover
 
-- Coordinates: points, coordinate axes, displacement, distance, and midpoint formulas.
-- Lines and planes: slopes, equations, intersections, and parallel and perpendicular directions.
-- Triangles: similarity, congruence, the Pythagorean theorem, and the sine and cosine rules.
-- Angular measure: degrees, radians, orientation, and conversion between angle and circular arc length.
-- The unit circle: define sine and cosine geometrically, including signs and periodicity.
-- Trigonometric identities: derive and use the Pythagorean and angle-addition identities.
-- Projections: resolve a segment along perpendicular directions and distinguish the included angle from its complement.
-- Circular and cylindrical coordinates: describe points and local displacements using an angle and a radius.
+- [[04.01 Coordinates|Coordinates]]: points, coordinate axes, displacement, distance, and midpoint formulas.
+- [[04.02 Lines and planes|Lines and planes]]: slopes, equations, intersections, and parallel and perpendicular directions.
+- [[04.03 Triangles|Triangles]]: similarity, congruence, the Pythagorean theorem, and the sine and cosine rules.
+- [[04.04 Angular measure|Angular measure]]: degrees, radians, orientation, and conversion between angle and circular arc length.
+- [[04.05 The unit circle|The unit circle]]: define sine and cosine geometrically, including signs and periodicity.
+- [[04.06 Trigonometric identities|Trigonometric identities]]: derive and use the Pythagorean and angle-addition identities.
+- [[04.07 Projections|Projections]]: resolve a segment along perpendicular directions and distinguish the included angle from its complement.
+- [[04.08 Circular and cylindrical coordinates|Circular and cylindrical coordinates]]: describe points and local displacements using an angle and a radius.
 
 ## Learning outcomes
 

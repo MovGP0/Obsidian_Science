@@ -1,4 +1,4 @@
----
+﻿---
 title: "Differential calculus — overview"
 document_type: "Mathematics topic overview"
 ---
@@ -16,14 +16,14 @@ Use elementary functions, composition, and graphs from [[Functions - Overview]] 
 
 ## Topics to cover
 
-- Limits: finite limits, one-sided limits, infinite behaviour, and the meaning of approaching a value.
-- Continuity: distinguish a function value, a limit, and a continuous extension.
-- The derivative: difference quotients, tangent slopes, and the definition as a limit.
-- Differentiation rules: sums, products, quotients, and the chain rule for composed functions.
-- Elementary derivatives: powers, exponentials, logarithms, and trigonometric functions, including their domains.
-- Higher derivatives: repeated differentiation, concavity, stationary points, and local extrema.
-- Implicit and inverse differentiation: differentiate a relation or an inverse without first solving every expression explicitly.
-- Linear approximation: differentials, first-order error, and the range in which a tangent approximation is useful.
+- [[07.01 Limits|Limits]]: finite limits, one-sided limits, infinite behaviour, and the meaning of approaching a value.
+- [[07.02 Continuity|Continuity]]: distinguish a function value, a limit, and a continuous extension.
+- [[07.03 The derivative|The derivative]]: difference quotients, tangent slopes, and the definition as a limit.
+- [[07.04 Differentiation rules|Differentiation rules]]: sums, products, quotients, and the chain rule for composed functions.
+- [[07.05 Elementary derivatives|Elementary derivatives]]: powers, exponentials, logarithms, and trigonometric functions, including their domains.
+- [[07.06 Higher derivatives|Higher derivatives]]: repeated differentiation, concavity, stationary points, and local extrema.
+- [[07.07 Implicit and inverse differentiation|Implicit and inverse differentiation]]: differentiate a relation or an inverse without first solving every expression explicitly.
+- [[07.08 Linear approximation|Linear approximation]]: differentials, first-order error, and the range in which a tangent approximation is useful.
 
 ## Learning outcomes
 

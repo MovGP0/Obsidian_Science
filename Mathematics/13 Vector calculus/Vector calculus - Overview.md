@@ -1,4 +1,4 @@
----
+﻿---
 title: "Vector calculus — overview"
 document_type: "Mathematics topic overview"
 ---
@@ -16,15 +16,15 @@ Use vector products and projections from [[Vectors - Overview]], integration fro
 
 ## Topics to cover
 
-- Fields and domains: scalar fields, vector fields, smoothness, and the role of excluded points or holes.
-- Gradient: directional change, level sets, and reconstruction of a scalar differential from an inner product.
-- Divergence: local signed flux and its component expression.
-- Curl: local circulation, orientation, and the cross product in three dimensions.
-- Parameterized curves and surfaces: tangent vectors, normals, arc-length elements, and area elements.
-- Line and surface integrals: scalar accumulation, circulation, flux, and consistent orientation choices.
-- Integral theorems: the gradient theorem, Green’s theorem, the divergence theorem, and Stokes’ theorem with their hypotheses.
-- Potentials and path independence: exact gradients, closed-loop integrals, and why a condition on a domain can matter.
-- Coordinate expressions: account for scale and volume factors when using non-Cartesian coordinates.
+- [[13.01 Fields and domains|Fields and domains]]: scalar fields, vector fields, smoothness, and the role of excluded points or holes.
+- [[13.02 Gradient|Gradient]]: directional change, level sets, and reconstruction of a scalar differential from an inner product.
+- [[13.03 Divergence|Divergence]]: local signed flux and its component expression.
+- [[13.04 Curl|Curl]]: local circulation, orientation, and the cross product in three dimensions.
+- [[13.05 Parameterized curves and surfaces|Parameterized curves and surfaces]]: tangent vectors, normals, arc-length elements, and area elements.
+- [[13.06 Line and surface integrals|Line and surface integrals]]: scalar accumulation, circulation, flux, and consistent orientation choices.
+- [[13.07 Integral theorems|Integral theorems]]: the gradient theorem, Green’s theorem, the divergence theorem, and Stokes’ theorem with their hypotheses.
+- [[13.08 Potentials and path independence|Potentials and path independence]]: exact gradients, closed-loop integrals, and why a condition on a domain can matter.
+- [[13.09 Coordinate expressions|Coordinate expressions]]: account for scale and volume factors when using non-Cartesian coordinates.
 
 ## Learning outcomes
 

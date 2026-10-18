@@ -1,4 +1,4 @@
----
+﻿---
 title: "Complex numbers — overview"
 document_type: "Mathematics topic overview"
 ---
@@ -16,14 +16,14 @@ Use powers and quadratic equations from [[Algebra - Overview]], function composi
 
 ## Topics to cover
 
-- Complex arithmetic: the imaginary unit, real and imaginary parts, addition, multiplication, and division.
-- The complex plane: points, vectors, distances, and the geometric meaning of addition.
-- Conjugation and modulus: calculate magnitudes, reciprocals, and products using conjugates.
-- Polar representation: magnitude, argument, and the non-uniqueness of phase modulo a full turn.
-- Euler’s formula: connect the complex exponential to sine and cosine.
-- Rotations and products: add phases and multiply magnitudes, including the geometry of powers.
-- Roots: find all roots of a nonzero complex number and describe the roots of unity.
-- Complex-valued functions: distinguish their real part, imaginary part, magnitude, and phase as separate functions.
+- [[06.01 Complex arithmetic|Complex arithmetic]]: the imaginary unit, real and imaginary parts, addition, multiplication, and division.
+- [[06.02 The complex plane|The complex plane]]: points, vectors, distances, and the geometric meaning of addition.
+- [[06.03 Conjugation and modulus|Conjugation and modulus]]: calculate magnitudes, reciprocals, and products using conjugates.
+- [[06.04 Polar representation|Polar representation]]: magnitude, argument, and the non-uniqueness of phase modulo a full turn.
+- [[06.05 Euler’s formula|Euler’s formula]]: connect the complex exponential to sine and cosine.
+- [[06.06 Rotations and products|Rotations and products]]: add phases and multiply magnitudes, including the geometry of powers.
+- [[06.07 Roots|Roots]]: find all roots of a nonzero complex number and describe the roots of unity.
+- [[06.08 Complex-valued functions|Complex-valued functions]]: distinguish their real part, imaginary part, magnitude, and phase as separate functions.
 
 ## Learning outcomes
 

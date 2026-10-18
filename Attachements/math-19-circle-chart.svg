@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="940" height="560" viewBox="0 0 940 560">
+<rect width="940" height="560" fill="#ffffff"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#374151"/></marker></defs>
+<g font-family="Arial, sans-serif" fill="#172033" font-size="21">
+<text x="42" y="42" font-size="27" font-weight="bold">One circle chart: projection from the north point</text>
+<line x1="70" y1="300" x2="670" y2="300" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="300" y1="510" x2="300" y2="70" stroke="#cbd5e1" stroke-width="2"/>
+<circle cx="300" cy="300" r="185" fill="none" stroke="#2563eb" stroke-width="4"/>
+<line x1="300" y1="115" x2="485" y2="485" stroke="#b45309" stroke-width="3"/>
+<circle cx="300" cy="115" r="7" fill="white" stroke="#dc2626" stroke-width="3"/>
+<circle cx="448" cy="411" r="7" fill="#2563eb"/>
+<circle cx="392.5" cy="300" r="7" fill="#b45309"/>
+<text x="317" y="105">N = (0, 1)</text>
+<text x="460" y="418">P = (0.8, −0.6)</text>
+<text x="405" y="285" fill="#92400e">u = 0.5</text>
+<text x="277" y="327">0</text>
+<text x="492" y="328">1</text>
+<text x="89" y="328">−1</text>
+<text x="675" y="308">coordinate line</text>
+<rect x="610" y="110" width="290" height="135" rx="12" fill="#f8fafc" stroke="#cbd5e1"/>
+<text x="630" y="146">u = x / (1 − y)</text>
+<text x="630" y="183">0.8 / (1 + 0.6) = 0.5</text>
+<text x="630" y="221">N has no finite u value.</text>
+<text x="70" y="540" font-size="19">The chart covers S¹ minus N. A second chart supplies coordinates at N.</text>
+</g></svg>

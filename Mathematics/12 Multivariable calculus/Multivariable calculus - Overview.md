@@ -1,4 +1,4 @@
----
+﻿---
 title: "Multivariable calculus — overview"
 document_type: "Mathematics topic overview"
 ---
@@ -16,15 +16,15 @@ Use single-variable derivatives and integrals from [[Differential calculus - Ove
 
 ## Topics to cover
 
-- Functions of several variables: domains, level sets, graphs, and scalar- and vector-valued maps.
-- Partial derivatives: hold selected inputs fixed and distinguish partial derivatives from a total differential.
-- Total derivatives: Jacobian matrices, directional derivatives, and the linear approximation to a map.
-- Multivariable chain rules: differentiate compositions and coordinate transformations, retaining all dependencies.
-- Second derivatives: mixed partials, conditions for interchanging them, Hessians, and multivariable Taylor approximation.
-- Gradients and extrema: use an inner product to represent a derivative, classify stationary points, and introduce constrained extrema.
-- Multiple integrals: iterated integration, changing integration order, and descriptions of integration regions.
-- Coordinate substitution: Jacobian determinants, orientation signs, absolute volume factors, and polar and cylindrical examples.
-- Local inversion: interpret a nonsingular Jacobian and state the local nature of the inverse-function conclusion.
+- [[12.01 Functions of several variables|Functions of several variables]]: domains, level sets, graphs, and scalar- and vector-valued maps.
+- [[12.02 Partial derivatives|Partial derivatives]]: hold selected inputs fixed and distinguish partial derivatives from a total differential.
+- [[12.03 Total derivatives|Total derivatives]]: Jacobian matrices, directional derivatives, and the linear approximation to a map.
+- [[12.04 Multivariable chain rules|Multivariable chain rules]]: differentiate compositions and coordinate transformations, retaining all dependencies.
+- [[12.05 Second derivatives|Second derivatives]]: mixed partials, conditions for interchanging them, Hessians, and multivariable Taylor approximation.
+- [[12.06 Gradients and extrema|Gradients and extrema]]: use an inner product to represent a derivative, classify stationary points, and introduce constrained extrema.
+- [[12.07 Multiple integrals|Multiple integrals]]: iterated integration, changing integration order, and descriptions of integration regions.
+- [[12.08 Coordinate substitution|Coordinate substitution]]: Jacobian determinants, orientation signs, absolute volume factors, and polar and cylindrical examples.
+- [[12.09 Local inversion|Local inversion]]: interpret a nonsingular Jacobian and state the local nature of the inverse-function conclusion.
 
 ## Learning outcomes
 

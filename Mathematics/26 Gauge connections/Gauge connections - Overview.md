@@ -1,4 +1,4 @@
----
+﻿---
 title: "Gauge connections — overview"
 document_type: "Mathematics topic overview"
 ---
@@ -16,15 +16,15 @@ Use complex phases from [[Complex numbers - Overview]], connection ideas from [[
 
 ## Topics to cover
 
-- Sections and local frames: describe a vector-valued or complex-valued section in a chosen local basis.
-- Local gauge transformations: change that basis smoothly from point to point and distinguish this operation from changing base coordinates.
-- The derivative problem: expand the ordinary derivative of transformed components and identify the additional derivative of the frame change.
-- Covariant derivatives: introduce a connection one-form and derive its transformation from the required covariance of the derivative.
-- Abelian phase connections: carry out the cancellation explicitly for U(1) with a stated sign convention.
-- Curvature or field strength: compute the curvature two-form and distinguish the Abelian exterior derivative from the additional product term for matrix-valued connections.
-- Covariance and invariants: separate quantities that transform by a representation from scalar combinations that remain unchanged.
-- Parallel transport: compare sections along a path using the connection and examine transport around a loop.
-- Pure gauge and global limits: distinguish a removable local connection from a globally trivial connection and state the need for information about the domain.
+- [[26.01 Sections and local frames|Sections and local frames]]: describe a vector-valued or complex-valued section in a chosen local basis.
+- [[26.02 Local gauge transformations|Local gauge transformations]]: change that basis smoothly from point to point and distinguish this operation from changing base coordinates.
+- [[26.03 The derivative problem|The derivative problem]]: expand the ordinary derivative of transformed components and identify the additional derivative of the frame change.
+- [[26.04 Covariant derivatives|Covariant derivatives]]: introduce a connection one-form and derive its transformation from the required covariance of the derivative.
+- [[26.05 Abelian phase connections|Abelian phase connections]]: carry out the cancellation explicitly for U(1) with a stated sign convention.
+- [[26.06 Curvature or field strength|Curvature or field strength]]: compute the curvature two-form and distinguish the Abelian exterior derivative from the additional product term for matrix-valued connections.
+- [[26.07 Covariance and invariants|Covariance and invariants]]: separate quantities that transform by a representation from scalar combinations that remain unchanged.
+- [[26.08 Parallel transport|Parallel transport]]: compare sections along a path using the connection and examine transport around a loop.
+- [[26.09 Pure gauge and global limits|Pure gauge and global limits]]: distinguish a removable local connection from a globally trivial connection and state the need for information about the domain.
 
 ## Learning outcomes
 

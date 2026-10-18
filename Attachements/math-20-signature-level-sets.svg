@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="500" viewBox="0 0 1100 500" role="img" aria-labelledby="title desc">
+<title id="title">Signature and level sets</title><desc id="desc">Three quadratic forms on a two dimensional vector space. The circle has positive definite form, hyperbolas have indefinite form with two null lines, and parallel lines have a degenerate form with a vertical kernel.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0,0 L8,4 L0,8 Z" fill="#536273"/></marker>
+<marker id="blueArrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0,0 L8,4 L0,8 Z" fill="#167a93"/></marker></defs>
+<rect width="1100" height="500" fill="#ffffff"/>
+<g font-family="Segoe UI, Arial, sans-serif">
+<text x="550" y="35" fill="#243247" font-size="25" text-anchor="middle" font-weight="600">Quadratic forms on a two-dimensional vector space</text>
+<rect x="25" y="64" width="320" height="365" rx="12" fill="#f7f9fc" stroke="#d4dce5"/>
+<text x="185" y="95" fill="#243247" font-size="21" text-anchor="middle" font-weight="600">Positive definite</text>
+<text x="185" y="124" fill="#243247" font-size="20" text-anchor="middle" font-weight="normal">Q = x² + y²</text>
+<line x1="55" y1="275" x2="320" y2="275" stroke="#536273" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="185" y1="400" x2="185" y2="145" stroke="#536273" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="323" y="299" fill="#243247" font-size="17" text-anchor="middle" font-weight="normal">x</text>
+<text x="170" y="153" fill="#243247" font-size="17" text-anchor="middle" font-weight="normal">y</text>
+<text x="173" y="295" fill="#243247" font-size="14" text-anchor="middle" font-weight="normal">0</text>
+<rect x="390" y="64" width="320" height="365" rx="12" fill="#f7f9fc" stroke="#d4dce5"/>
+<text x="550" y="95" fill="#243247" font-size="21" text-anchor="middle" font-weight="600">Indefinite</text>
+<text x="550" y="124" fill="#243247" font-size="20" text-anchor="middle" font-weight="normal">Q = x² − y²</text>
+<line x1="420" y1="275" x2="685" y2="275" stroke="#536273" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="550" y1="400" x2="550" y2="145" stroke="#536273" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="688" y="299" fill="#243247" font-size="17" text-anchor="middle" font-weight="normal">x</text>
+<text x="535" y="153" fill="#243247" font-size="17" text-anchor="middle" font-weight="normal">y</text>
+<text x="538" y="295" fill="#243247" font-size="14" text-anchor="middle" font-weight="normal">0</text>
+<rect x="755" y="64" width="320" height="365" rx="12" fill="#f7f9fc" stroke="#d4dce5"/>
+<text x="915" y="95" fill="#243247" font-size="21" text-anchor="middle" font-weight="600">Degenerate</text>
+<text x="915" y="124" fill="#243247" font-size="20" text-anchor="middle" font-weight="normal">Q = x²</text>
+<line x1="785" y1="275" x2="1050" y2="275" stroke="#536273" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="915" y1="400" x2="915" y2="145" stroke="#536273" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="1053" y="299" fill="#243247" font-size="17" text-anchor="middle" font-weight="normal">x</text>
+<text x="900" y="153" fill="#243247" font-size="17" text-anchor="middle" font-weight="normal">y</text>
+<text x="903" y="295" fill="#243247" font-size="14" text-anchor="middle" font-weight="normal">0</text>
+<circle cx="185" cy="275" r="80" fill="#d5f0f3" fill-opacity="0.5" stroke="#167a93" stroke-width="3"/>
+<text x="260" y="194" fill="#167a93" font-size="16" text-anchor="middle" font-weight="normal">Q = 1</text>
+<text x="185" y="458" fill="#167a93" font-size="20" text-anchor="middle" font-weight="600">Signature (2, 0)</text>
+<path d="M 409.86,390.06 L 412.50,386.84 L 415.05,383.68 L 417.54,380.58 L 419.95,377.53 L 422.30,374.54 L 424.57,371.60 L 426.78,368.72 L 428.92,365.89 L 431.00,363.10 L 433.01,360.36 L 434.96,357.67 L 436.84,355.03 L 438.67,352.42 L 440.44,349.86 L 442.14,347.34 L 443.79,344.85 L 445.39,342.41 L 446.92,340.00 L 448.40,337.63 L 449.83,335.29 L 451.20,332.98 L 452.52,330.70 L 453.78,328.45 L 455.00,326.24 L 456.16,324.05 L 457.28,321.88 L 458.34,319.74 L 459.35,317.63 L 460.32,315.54 L 461.23,313.47 L 462.10,311.42 L 462.92,309.39 L 463.70,307.38 L 464.42,305.38 L 465.11,303.41 L 465.74,301.44 L 466.33,299.50 L 466.88,297.56 L 467.38,295.64 L 467.84,293.73 L 468.25,291.83 L 468.62,289.93 L 468.94,288.05 L 469.22,286.17 L 469.46,284.30 L 469.66,282.43 L 469.81,280.57 L 469.91,278.71 L 469.98,276.86 L 470.00,275.00 L 469.98,273.14 L 469.91,271.29 L 469.81,269.43 L 469.66,267.57 L 469.46,265.70 L 469.22,263.83 L 468.94,261.95 L 468.62,260.07 L 468.25,258.17 L 467.84,256.27 L 467.38,254.36 L 466.88,252.44 L 466.33,250.50 L 465.74,248.56 L 465.11,246.59 L 464.42,244.62 L 463.70,242.62 L 462.92,240.61 L 462.10,238.58 L 461.23,236.53 L 460.32,234.46 L 459.35,232.37 L 458.34,230.26 L 457.28,228.12 L 456.16,225.95 L 455.00,223.76 L 453.78,221.55 L 452.52,219.30 L 451.20,217.02 L 449.83,214.71 L 448.40,212.37 L 446.92,210.00 L 445.39,207.59 L 443.79,205.15 L 442.14,202.66 L 440.44,200.14 L 438.67,197.58 L 436.84,194.97 L 434.96,192.33 L 433.01,189.64 L 431.00,186.90 L 428.92,184.11 L 426.78,181.28 L 424.57,178.40 L 422.30,175.46 L 419.95,172.47 L 417.54,169.42 L 415.05,166.32 L 412.50,163.16 L 409.86,159.94" fill="none" stroke="#ba5f15" stroke-width="3" stroke-dasharray=""/>
+<path d="M 690.14,390.06 L 687.50,386.84 L 684.95,383.68 L 682.46,380.58 L 680.05,377.53 L 677.70,374.54 L 675.43,371.60 L 673.22,368.72 L 671.08,365.89 L 669.00,363.10 L 666.99,360.36 L 665.04,357.67 L 663.16,355.03 L 661.33,352.42 L 659.56,349.86 L 657.86,347.34 L 656.21,344.85 L 654.61,342.41 L 653.08,340.00 L 651.60,337.63 L 650.17,335.29 L 648.80,332.98 L 647.48,330.70 L 646.22,328.45 L 645.00,326.24 L 643.84,324.05 L 642.72,321.88 L 641.66,319.74 L 640.65,317.63 L 639.68,315.54 L 638.77,313.47 L 637.90,311.42 L 637.08,309.39 L 636.30,307.38 L 635.58,305.38 L 634.89,303.41 L 634.26,301.44 L 633.67,299.50 L 633.12,297.56 L 632.62,295.64 L 632.16,293.73 L 631.75,291.83 L 631.38,289.93 L 631.06,288.05 L 630.78,286.17 L 630.54,284.30 L 630.34,282.43 L 630.19,280.57 L 630.09,278.71 L 630.02,276.86 L 630.00,275.00 L 630.02,273.14 L 630.09,271.29 L 630.19,269.43 L 630.34,267.57 L 630.54,265.70 L 630.78,263.83 L 631.06,261.95 L 631.38,260.07 L 631.75,258.17 L 632.16,256.27 L 632.62,254.36 L 633.12,252.44 L 633.67,250.50 L 634.26,248.56 L 634.89,246.59 L 635.58,244.62 L 636.30,242.62 L 637.08,240.61 L 637.90,238.58 L 638.77,236.53 L 639.68,234.46 L 640.65,232.37 L 641.66,230.26 L 642.72,228.12 L 643.84,225.95 L 645.00,223.76 L 646.22,221.55 L 647.48,219.30 L 648.80,217.02 L 650.17,214.71 L 651.60,212.37 L 653.08,210.00 L 654.61,207.59 L 656.21,205.15 L 657.86,202.66 L 659.56,200.14 L 661.33,197.58 L 663.16,194.97 L 665.04,192.33 L 666.99,189.64 L 669.00,186.90 L 671.08,184.11 L 673.22,181.28 L 675.43,178.40 L 677.70,175.46 L 680.05,172.47 L 682.46,169.42 L 684.95,166.32 L 687.50,163.16 L 690.14,159.94" fill="none" stroke="#ba5f15" stroke-width="3" stroke-dasharray=""/>
+<path d="M 425.00,400.00 L 675.00,150.00" fill="none" stroke="#6b7788" stroke-width="2" stroke-dasharray="7 5"/>
+<path d="M 425.00,150.00 L 675.00,400.00" fill="none" stroke="#6b7788" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="590" y="184" fill="#ba5f15" font-size="16" text-anchor="middle" font-weight="normal">Q &lt; 0</text>
+<text x="590" y="365" fill="#ba5f15" font-size="16" text-anchor="middle" font-weight="normal">Q &lt; 0</text>
+<text x="656" y="261" fill="#ba5f15" font-size="14" text-anchor="middle" font-weight="normal">Q &gt; 0</text>
+<text x="550" y="417" fill="#536273" font-size="14" text-anchor="middle" font-weight="normal">Solid: Q = 1; dashed: Q = 0</text>
+<text x="550" y="458" fill="#ba5f15" font-size="20" text-anchor="middle" font-weight="600">Signature (1, 1)</text>
+<path d="M 835.00,157.00 L 835.00,400.00" fill="none" stroke="#7852a5" stroke-width="3" stroke-dasharray=""/>
+<path d="M 995.00,157.00 L 995.00,400.00" fill="none" stroke="#7852a5" stroke-width="3" stroke-dasharray=""/>
+<path d="M 915.00,157.00 L 915.00,400.00" fill="none" stroke="#7852a5" stroke-width="3" stroke-dasharray="7 5"/>
+<text x="810" y="181" fill="#7852a5" font-size="15" text-anchor="middle" font-weight="normal">Q = 1</text>
+<text x="1020" y="181" fill="#7852a5" font-size="15" text-anchor="middle" font-weight="normal">Q = 1</text>
+<text x="915" y="417" fill="#7852a5" font-size="15" text-anchor="middle" font-weight="normal">Dashed: kernel x = 0</text>
+<text x="915" y="458" fill="#7852a5" font-size="20" text-anchor="middle" font-weight="600">Inertia (1, 0, 1)</text>
+<text x="550" y="487" fill="#243247" font-size="17" text-anchor="middle" font-weight="normal">Null: g(v, v) = 0.   Kernel: g(v, w) = 0 for every w.</text>
+</g></svg>

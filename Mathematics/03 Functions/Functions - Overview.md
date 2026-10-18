@@ -1,4 +1,4 @@
----
+﻿---
 title: "Functions — overview"
 document_type: "Mathematics topic overview"
 ---
@@ -16,14 +16,14 @@ Use the equation-solving and expression rules in [[Algebra - Overview]] and the 
 
 ## Topics to cover
 
-- Function definitions: domain, codomain, range, evaluation, and piecewise rules.
-- Graphs: intercepts, signs, increasing and decreasing intervals, symmetry, and qualitative end behaviour.
-- Polynomial and rational functions: zeros, multiplicity, poles, and domain restrictions.
-- Exponential and logarithmic functions: growth, inverse relations, logarithm laws, and the effect of changing the base.
-- Trigonometric functions: periodicity, amplitude, phase shift, and their domains and ranges.
-- Function transformations: translations, rescalings, reflections, and their effect on a graph.
-- Composition and inverse functions: order of composition, one-to-one behaviour, and domain restrictions needed for inversion.
-- Representations: move between a verbal rule, a formula, a table, and a graph without changing the function.
+- [[03.01 Function definitions|Function definitions]]: domain, codomain, range, evaluation, and piecewise rules.
+- [[03.02 Graphs|Graphs]]: intercepts, signs, increasing and decreasing intervals, symmetry, and qualitative end behaviour.
+- [[03.03 Polynomial and rational functions|Polynomial and rational functions]]: zeros, multiplicity, poles, and domain restrictions.
+- [[03.04 Exponential and logarithmic functions|Exponential and logarithmic functions]]: growth, inverse relations, logarithm laws, and the effect of changing the base.
+- [[03.05 Trigonometric functions|Trigonometric functions]]: periodicity, amplitude, phase shift, and their domains and ranges.
+- [[03.06 Function transformations|Function transformations]]: translations, rescalings, reflections, and their effect on a graph.
+- [[03.07 Composition and inverse functions|Composition and inverse functions]]: order of composition, one-to-one behaviour, and domain restrictions needed for inversion.
+- [[03.08 Representations|Representations]]: move between a verbal rule, a formula, a table, and a graph without changing the function.
 
 ## Learning outcomes
 

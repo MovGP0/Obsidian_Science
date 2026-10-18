@@ -1,4 +1,4 @@
----
+﻿---
 title: "Vectors — overview"
 document_type: "Mathematics topic overview"
 ---
@@ -16,14 +16,14 @@ Use coordinate geometry and projections from [[Geometry and trigonometry - Overv
 
 ## Topics to cover
 
-- Geometric vectors: directed displacements, equality, the zero vector, and the distinction between a point and a vector.
-- Vector operations: addition, subtraction, scalar multiplication, and their geometric and component rules.
-- Components and bases: express one vector in different bases and reconstruct it from its components.
-- Magnitude and unit vectors: norms, normalization, and the conditions under which a unit vector exists.
-- Dot products: calculate angles, orthogonality, projections, and lengths from components in an orthonormal basis.
-- General bases: explain why a component dot product needs additional coefficients when the basis is not orthonormal.
-- Linear combinations: span, dependence, independence, and decomposition along selected directions.
-- Lines and planes: use vector equations to describe their points and intersections.
+- [[05.01 Geometric vectors|Geometric vectors]]: directed displacements, equality, the zero vector, and the distinction between a point and a vector.
+- [[05.02 Vector operations|Vector operations]]: addition, subtraction, scalar multiplication, and their geometric and component rules.
+- [[05.03 Components and bases|Components and bases]]: express one vector in different bases and reconstruct it from its components.
+- [[05.04 Magnitude and unit vectors|Magnitude and unit vectors]]: norms, normalization, and the conditions under which a unit vector exists.
+- [[05.05 Dot products|Dot products]]: calculate angles, orthogonality, projections, and lengths from components in an orthonormal basis.
+- [[05.06 General bases|General bases]]: explain why a component dot product needs additional coefficients when the basis is not orthonormal.
+- [[05.07 Linear combinations|Linear combinations]]: span, dependence, independence, and decomposition along selected directions.
+- [[05.08 Lines and planes|Lines and planes]]: use vector equations to describe their points and intersections.
 
 ## Learning outcomes
 

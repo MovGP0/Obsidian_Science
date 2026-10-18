@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="720" viewBox="0 0 1000 720">
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M 0 0 L 9 4.5 L 0 9 Z" fill="#334155"/></marker></defs>
+<rect width="1000" height="720" fill="#ffffff"/>
+<g font-family="Segoe UI, Arial, sans-serif" font-size="24" fill="#172554" stroke-linecap="round" stroke-linejoin="round">
+
+<text x="60" y="50" font-size="30" font-weight="600">Displacement, distance, and midpoint</text>
+<g stroke="#e2e8f0" stroke-width="1">
+<path d="M 150 90 V 625 M 210 90 V 625 M 270 90 V 625 M 330 90 V 625 M 390 90 V 625 M 450 90 V 625 M 510 90 V 625 M 570 90 V 625 M 630 90 V 625 M 690 90 V 625 M 750 90 V 625"/>
+<path d="M 130 135 H 800 M 130 195 H 800 M 130 255 H 800 M 130 315 H 800 M 130 375 H 800 M 130 435 H 800 M 130 495 H 800 M 130 555 H 800 M 130 615 H 800"/>
+</g>
+<g stroke="#334155" stroke-width="2.5" marker-end="url(#arrow)"><path d="M 115 435 H 820"/><path d="M 330 640 V 80"/></g>
+<text x="837" y="445">x</text><text x="350" y="95">y</text><text x="305" y="462">0</text>
+<g stroke="#0f766e" stroke-width="3" stroke-dasharray="9 7" fill="none"><path d="M 210 615 H 570 V 135"/></g>
+<path d="M 550 615 V 595 H 570" fill="none" stroke="#0f766e" stroke-width="2"/>
+<path d="M 210 615 L 570 135" stroke="#1d4ed8" stroke-width="5" fill="none"/>
+<g fill="#1d4ed8"><circle cx="210" cy="615" r="7"/><circle cx="570" cy="135" r="7"/></g>
+<circle cx="390" cy="375" r="8" fill="#b45309"/>
+<text x="100" y="670">A = (−2, −3)</text><text x="590" y="125">B = (4, 5)</text>
+<text x="415" y="370" fill="#b45309">M = (1, 1)</text>
+<text x="356" y="650" fill="#0f766e">Δx = 6</text><text x="593" y="480" fill="#0f766e">Δy = 8</text>
+<text x="145" y="340" fill="#1d4ed8">AB = 10</text>
+<text x="650" y="260" font-size="22">A → M: (3, 4)</text><text x="650" y="300" font-size="22">M → B: (3, 4)</text>
+</g></svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="500" viewBox="0 0 760 500">
+<defs>
+<marker id="blue" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#2457a7"/></marker>
+<marker id="green" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#087f70"/></marker>
+<marker id="purple" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#813f98"/></marker>
+<marker id="gray" markerWidth="7" markerHeight="7" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6" fill="#7b8491"/></marker>
+</defs>
+<rect width="760" height="500" fill="#ffffff"/>
+<g font-family="Arial, sans-serif" font-size="20" fill="#182536">
+<text x="32" y="37" font-size="25" font-weight="bold">Vector addition in the plane</text>
+<path d="M65 370 L510 370 M175 420 L175 65" stroke="#a6adb7" stroke-width="1.5" fill="none" marker-end="url(#gray)"/>
+<text x="518" y="378">x</text><text x="165" y="58">y</text><text x="150" y="397">O</text>
+<path d="M175 370 L445 280 L355 100 L85 190 Z" fill="#f4f1fa" stroke="none"/>
+<path d="M85 190 L355 100" stroke="#2457a7" stroke-width="2.5" stroke-dasharray="7 6" fill="none" marker-end="url(#blue)"/>
+<path d="M175 370 L445 280" stroke="#2457a7" stroke-width="4" fill="none" marker-end="url(#blue)"/>
+<path d="M175 370 L85 190" stroke="#087f70" stroke-width="4" fill="none" marker-end="url(#green)"/>
+<path d="M445 280 L355 100" stroke="#087f70" stroke-width="4" fill="none" marker-end="url(#green)"/>
+<path d="M175 370 L355 100" stroke="#813f98" stroke-width="4.5" fill="none" marker-end="url(#purple)"/>
+<text x="315" y="350" fill="#2457a7">u = (3, 1)</text>
+<text x="28" y="275" fill="#087f70">v = (−1, 2)</text>
+<text x="422" y="185" fill="#087f70">translated v</text>
+<text x="205" y="80" fill="#2457a7">translated u</text>
+<text x="285" y="245" fill="#813f98" font-weight="bold">u + v</text>
+<text x="375" y="94" fill="#813f98">(2, 3)</text>
+<text x="32" y="465" font-size="18">Either order reaches the same endpoint: (3, 1) + (−1, 2) = (2, 3).</text>
+</g>
+</svg>

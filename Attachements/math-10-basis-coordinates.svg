@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="590" viewBox="0 0 1000 590"><style>
+text { font-family: 'Segoe UI', Arial, sans-serif; fill: #202d40; font-size: 18px; }
+.title { font-size: 25px; font-weight: 650; }
+.small { font-size: 16px; }
+.muted { fill: #526075; }
+.blue { fill: #2264a8; }
+.red { fill: #af3d4b; }
+.green { fill: #18785e; }
+</style><defs>
+<marker id="axis" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#6e7b8b"/></marker>
+<marker id="blue" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 Z" fill="#2264a8"/></marker>
+<marker id="red" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 Z" fill="#af3d4b"/></marker>
+<marker id="green" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 Z" fill="#18785e"/></marker>
+</defs>
+<rect width="1000" height="590" rx="18" fill="#f7f9fc"/>
+<text x="42" y="47" class="title" >One vector, two coordinate descriptions</text>
+<text x="42" y="78" class="muted" >Basis B = (u, v), with u = (2, 0) and v = (1, 2)</text>
+<line x1="95.00" y1="130.00" x2="95.00" y2="490.00" stroke="#dce3ed" stroke-width="1" />
+<line x1="200.00" y1="130.00" x2="200.00" y2="490.00" stroke="#dce3ed" stroke-width="1" />
+<text x="195" y="515" class="small muted" >1</text>
+<line x1="305.00" y1="130.00" x2="305.00" y2="490.00" stroke="#dce3ed" stroke-width="1" />
+<text x="300" y="515" class="small muted" >2</text>
+<line x1="410.00" y1="130.00" x2="410.00" y2="490.00" stroke="#dce3ed" stroke-width="1" />
+<text x="405" y="515" class="small muted" >3</text>
+<line x1="515.00" y1="130.00" x2="515.00" y2="490.00" stroke="#dce3ed" stroke-width="1" />
+<text x="510" y="515" class="small muted" >4</text>
+<line x1="65.00" y1="470.00" x2="550.00" y2="470.00" stroke="#dce3ed" stroke-width="1" />
+<line x1="65.00" y1="365.00" x2="550.00" y2="365.00" stroke="#dce3ed" stroke-width="1" />
+<text x="66" y="371" class="small muted" >1</text>
+<line x1="65.00" y1="260.00" x2="550.00" y2="260.00" stroke="#dce3ed" stroke-width="1" />
+<text x="66" y="266" class="small muted" >2</text>
+<line x1="65.00" y1="155.00" x2="550.00" y2="155.00" stroke="#dce3ed" stroke-width="1" />
+<text x="66" y="161" class="small muted" >3</text>
+<line x1="65.00" y1="470.00" x2="560.00" y2="470.00" stroke="#6e7b8b" stroke-width="2" marker-end="url(#axis)"/>
+<line x1="95.00" y1="490.00" x2="95.00" y2="120.00" stroke="#6e7b8b" stroke-width="2" marker-end="url(#axis)"/>
+<text x="566" y="475" class="" >x</text>
+<text x="89" y="111" class="" >y</text>
+<text x="75" y="493" class="small muted" >0</text>
+<polygon points="95,470 305,470 410,260 200,260" fill="#18785e" fill-opacity="0.08"/>
+<line x1="305.00" y1="470.00" x2="410.00" y2="260.00" stroke="#af3d4b" stroke-width="2" stroke-dasharray="7 6"/>
+<line x1="200.00" y1="260.00" x2="410.00" y2="260.00" stroke="#2264a8" stroke-width="2" stroke-dasharray="7 6"/>
+<line x1="95.00" y1="470.00" x2="305.00" y2="470.00" stroke="#2264a8" stroke-width="4" marker-end="url(#blue)"/>
+<line x1="95.00" y1="470.00" x2="200.00" y2="260.00" stroke="#af3d4b" stroke-width="4" marker-end="url(#red)"/>
+<line x1="95.00" y1="470.00" x2="410.00" y2="260.00" stroke="#18785e" stroke-width="4" marker-end="url(#green)"/>
+<text x="224" y="459" class="blue" >u</text>
+<text x="118" y="335" class="red" >v</text>
+<text x="268" y="348" class="green" >w = u + v</text>
+<circle cx="410" cy="260" r="5" fill="#18785e"/>
+<text x="425" y="248" class="green" >w = (3, 2)</text>
+<text x="356" y="369" class="red" >+ v</text>
+<text x="278" y="245" class="blue" >+ u</text>
+<rect x="610" y="149" width="340" height="332" rx="15" fill="white" stroke="#dce3ed"/>
+<text x="637" y="187" class="muted" >Standard coordinates</text>
+<text x="637" y="225" class="title" >w = 3e₁ + 2e₂</text>
+<text x="637" y="272" class="muted" >Coordinates in B</text>
+<text x="637" y="310" class="title" >[w]B = (1, 1)</text>
+<text x="637" y="361" class="" >Both describe the same vector.</text>
+<text x="637" y="405" class="small" >det[u  v] = 4 ≠ 0</text>
+<text x="637" y="434" class="small muted" >The basis vectors are independent.</text>
+<text x="42" y="558" class="muted" >The dashed edges complete the parallelogram for vector addition.</text>
+</svg>

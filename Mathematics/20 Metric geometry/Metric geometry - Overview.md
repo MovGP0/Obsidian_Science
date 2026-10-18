@@ -16,15 +16,15 @@ Use classification of forms from [[Bilinear and quadratic forms - Overview]], te
 
 ## Topics to cover
 
-- Metric definitions: smooth symmetric bilinear forms, nondegeneracy, and the distinction between Riemannian and pseudo-Riemannian metrics.
-- Coordinate components: write a local line element, read its coefficients, and keep both symmetric contributions to a cross term.
-- Coordinate changes: derive the metric transformation law and preserve its value on a pair of vectors.
-- Inverse metrics: raise and lower indices and explain why this requires a nondegenerate pairing.
-- Signature: count positive and negative directions, identify Lorentzian signatures, and distinguish indefinite forms from degenerate ones.
-- Lengths and angles: define them for positive-definite metrics and state the limitations introduced by null directions in indefinite metrics.
-- Curves: calculate metric length from a parameterized curve and distinguish a finite integral from an infinitesimal line element.
-- Volume: determinant factors, absolute values, orientation, and coordinate-invariant volume densities.
-- Examples and limits: compute Euclidean metrics in non-Cartesian coordinates and explain why variable components alone do not establish curvature.
+- [[20.01 Metric definitions|Metric definitions]]: smooth symmetric bilinear forms, nondegeneracy, and the distinction between Riemannian and pseudo-Riemannian metrics.
+- [[20.02 Coordinate components|Coordinate components]]: write a local line element, read its coefficients, and keep both symmetric contributions to a cross term.
+- [[20.03 Coordinate changes|Coordinate changes]]: derive the metric transformation law and preserve its value on a pair of vectors.
+- [[20.04 Inverse metrics|Inverse metrics]]: raise and lower indices and explain why this requires a nondegenerate pairing.
+- [[20.05 Signature|Signature]]: count positive and negative directions, identify Lorentzian signatures, and distinguish indefinite forms from degenerate ones.
+- [[20.06 Lengths and angles|Lengths and angles]]: define them for positive-definite metrics and state the limitations introduced by null directions in indefinite metrics.
+- [[20.07 Curves|Curves]]: calculate metric length from a parameterized curve and distinguish a finite integral from an infinitesimal line element.
+- [[20.08 Volume|Volume]]: determinant factors, absolute values, orientation, and coordinate-invariant volume densities.
+- [[20.09 Examples and limits|Examples and limits]]: compute Euclidean metrics in non-Cartesian coordinates and explain why variable components alone do not establish curvature.
 
 ## Learning outcomes
 

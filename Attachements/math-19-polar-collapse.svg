@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="940" height="560" viewBox="0 0 940 560">
+<rect width="940" height="560" fill="#ffffff"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#374151"/></marker></defs>
+<g font-family="Arial, sans-serif" fill="#172033" font-size="21">
+<text x="40" y="42" font-size="27" font-weight="bold">Polar coordinates: angle labels meet at the origin</text>
+<line x1="85" y1="300" x2="600" y2="300" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="335" y1="520" x2="335" y2="77" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+<circle cx="335" cy="300" r="180" fill="none" stroke="#93c5fd" stroke-width="3"/>
+<circle cx="335" cy="300" r="120" fill="none" stroke="#60a5fa" stroke-width="3"/>
+<circle cx="335" cy="300" r="60" fill="none" stroke="#2563eb" stroke-width="3"/>
+<line x1="335" y1="300" x2="515" y2="300" stroke="#b45309" stroke-width="4"/>
+<line x1="335" y1="300" x2="425" y2="144.115" stroke="#059669" stroke-width="4"/>
+<line x1="335" y1="300" x2="179.115" y2="210" stroke="#7c3aed" stroke-width="4"/>
+<circle cx="335" cy="300" r="7" fill="#172033"/>
+<text x="522" y="289" fill="#92400e">θ = 0</text>
+<text x="430" y="130" fill="#047857">θ = π/3</text>
+<text x="87" y="192" fill="#6d28d9">θ = 5π/6</text>
+<text x="353" y="331">r = 0</text>
+<text x="373" y="355" font-size="17">1</text>
+<text x="417" y="399" font-size="17">2</text>
+<text x="463" y="443" font-size="17">3</text>
+<text x="605" y="308">x</text><text x="348" y="91">y</text>
+<rect x="630" y="165" width="275" height="215" rx="12" fill="#f8fafc" stroke="#cbd5e1"/>
+<text x="650" y="202">x = r cos θ</text>
+<text x="650" y="239">y = r sin θ</text>
+<text x="650" y="284">At r = 0:</text>
+<text x="650" y="322">every θ gives (0, 0).</text>
+<text x="650" y="358" font-size="19">The plane is still smooth.</text>
+<text x="78" y="540" font-size="19">Circles: r = 1, 2, 3. Coloured segments: fixed angles with 0 ≤ r ≤ 3.</text>
+</g></svg>

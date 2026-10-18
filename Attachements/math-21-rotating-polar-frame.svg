@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="620" viewBox="0 0 1040 620" role="img" aria-labelledby="title desc">
+<title id="title">A constant vector in rotating polar frames</title><desc id="desc">Two points on a circle have different radial and angular unit bases. At both points the vector V points in the positive Cartesian x direction.</desc>
+<defs>
+<marker id="blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#2563eb"/></marker>
+<marker id="green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#15803d"/></marker>
+<marker id="black" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#172033"/></marker>
+<marker id="grey" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#64748b"/></marker>
+</defs>
+<rect width="1040" height="620" rx="16" fill="#fff"/>
+<g font-family="Segoe UI, Arial, sans-serif">
+<text x="38.00" y="46.00" font-size="28" fill="#172033" text-anchor="start" font-weight="bold">A constant vector in rotating polar frames</text>
+<text x="38.00" y="80.00" font-size="20" fill="#475569" text-anchor="start" font-weight="normal">The frame turns; the Cartesian vector stays fixed.</text>
+<line x1="55.00" y1="365.00" x2="535.00" y2="365.00" stroke="#64748b" stroke-width="2" marker-end="url(#grey)"/>
+<line x1="235.00" y1="550.00" x2="235.00" y2="120.00" stroke="#64748b" stroke-width="2" marker-end="url(#grey)"/>
+<text x="540.00" y="372.00" font-size="20" fill="#172033" text-anchor="start" font-weight="normal">x</text>
+<text x="247.00" y="123.00" font-size="20" fill="#172033" text-anchor="start" font-weight="normal">y</text>
+<circle cx="235" cy="365" r="145" fill="none" stroke="#cbd5e1" stroke-width="2"/>
+<line x1="235.00" y1="365.00" x2="371.26" y2="315.41" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="5 5"/>
+<circle cx="371.2554300139567" cy="315.407079217778" r="4" fill="#64748b"/>
+<line x1="371.26" y1="315.41" x2="451.13" y2="286.34" stroke="#2563eb" stroke-width="3" marker-end="url(#blue)"/>
+<line x1="371.26" y1="315.41" x2="342.18" y2="235.53" stroke="#15803d" stroke-width="3" marker-end="url(#green)"/>
+<line x1="371.26" y1="315.41" x2="481.26" y2="315.41" stroke="#172033" stroke-width="3" marker-end="url(#black)"/>
+<text x="459.13" y="284.34" font-size="22" fill="#2563eb" text-anchor="start" font-weight="normal">eᵣ</text>
+<text x="352.18" y="261.53" font-size="22" fill="#15803d" text-anchor="start" font-weight="normal">eθ</text>
+<text x="490.26" y="321.41" font-size="22" fill="#172033" text-anchor="start" font-weight="normal">V</text>
+<text x="366.26" y="344.41" font-size="18" fill="#475569" text-anchor="start" font-weight="normal">θ = 20°</text>
+<line x1="235.00" y1="365.00" x2="260.18" y2="222.20" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="5 5"/>
+<circle cx="260.1789857617049" cy="222.20287581322984" r="4" fill="#64748b"/>
+<line x1="260.18" y1="222.20" x2="274.94" y2="138.49" stroke="#2563eb" stroke-width="3" marker-end="url(#blue)"/>
+<line x1="260.18" y1="222.20" x2="176.47" y2="207.44" stroke="#15803d" stroke-width="3" marker-end="url(#green)"/>
+<line x1="260.18" y1="222.20" x2="370.18" y2="222.20" stroke="#172033" stroke-width="3" marker-end="url(#black)"/>
+<text x="282.94" y="136.49" font-size="22" fill="#2563eb" text-anchor="start" font-weight="normal">eᵣ</text>
+<text x="164.47" y="197.44" font-size="22" fill="#15803d" text-anchor="start" font-weight="normal">eθ</text>
+<text x="379.18" y="228.20" font-size="22" fill="#172033" text-anchor="start" font-weight="normal">V</text>
+<text x="255.18" y="251.20" font-size="18" fill="#475569" text-anchor="start" font-weight="normal">θ = 80°</text>
+<text x="211.00" y="390.00" font-size="20" fill="#172033" text-anchor="start" font-weight="normal">O</text>
+<text x="110.00" y="535.00" font-size="19" fill="#64748b" text-anchor="start" font-weight="normal">Circle r = 1</text>
+<rect x="605" y="130" width="395" height="410" rx="16" fill="#f1f5f9"/>
+<text x="630.00" y="171.00" font-size="23" fill="#172033" text-anchor="start" font-weight="bold">At either point</text>
+<text x="630.00" y="216.00" font-size="23" fill="#172033" text-anchor="start" font-weight="normal">V = eₓ</text>
+<text x="630.00" y="262.00" font-size="23" fill="#172033" text-anchor="start" font-weight="normal">V = cos θ eᵣ − sin θ eθ</text>
+<text x="630.00" y="318.00" font-size="21" fill="#172033" text-anchor="start" font-weight="bold">As θ increases:</text>
+<text x="630.00" y="362.00" font-size="23" fill="#2563eb" text-anchor="start" font-weight="normal">d eᵣ / dθ = eθ</text>
+<text x="630.00" y="405.00" font-size="23" fill="#15803d" text-anchor="start" font-weight="normal">d eθ / dθ = −eᵣ</text>
+<text x="630.00" y="465.00" font-size="20" fill="#475569" text-anchor="start" font-weight="normal">Basis terms cancel the</text>
+<text x="630.00" y="495.00" font-size="20" fill="#475569" text-anchor="start" font-weight="normal">component derivatives.</text>
+<text x="38.00" y="588.00" font-size="19" fill="#475569" text-anchor="start" font-weight="normal">Arrows at separate points are compared by the standard Euclidean connection.</text>
+</g></svg>

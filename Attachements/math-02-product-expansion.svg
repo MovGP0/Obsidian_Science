@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="700" viewBox="0 0 1040 700" role="img" aria-labelledby="title desc">
+  <title id="title">Expansion of (x + 3)(x + 2)</title>
+  <desc id="desc">A rectangle divided into four regions has side lengths x and 3 horizontally, and x and 2 vertically. The areas are x squared, 3x, 2x, and 6.</desc>
+  <rect width="1040" height="700" fill="#ffffff"/>
+  <g font-family="Arial, sans-serif" fill="#182637">
+    <text x="44" y="48" font-size="27" font-weight="bold">Expand a product by adding its subareas</text>
+    <text x="44" y="81" font-size="18" fill="#536272">For the area model, x &gt; 0. The identity is valid for every real x.</text>
+    <rect x="130" y="150" width="320" height="320" fill="#dceafb"/>
+    <rect x="450" y="150" width="192" height="320" fill="#e0f1e8"/>
+    <rect x="130" y="470" width="320" height="128" fill="#fff0d1"/>
+    <rect x="450" y="470" width="192" height="128" fill="#eee3f6"/>
+    <g stroke="#334a61" stroke-width="2.5" fill="none">
+      <rect x="130" y="150" width="512" height="448"/>
+      <path d="M450 150V598 M130 470H642"/>
+    </g>
+    <g font-size="24" text-anchor="middle">
+      <text x="290" y="134">x</text>
+      <text x="546" y="134">3</text>
+      <text x="105" y="318">x</text>
+      <text x="105" y="542">2</text>
+    </g>
+    <g font-size="34" text-anchor="middle">
+      <text x="290" y="323">x²</text>
+      <text x="546" y="323">3x</text>
+      <text x="290" y="547">2x</text>
+      <text x="546" y="547">6</text>
+    </g>
+    <g font-size="23">
+      <text x="695" y="239" font-weight="bold">Whole rectangle</text>
+      <text x="695" y="281">(x + 3)(x + 2)</text>
+      <text x="695" y="355" font-weight="bold">Sum of four areas</text>
+      <text x="695" y="397">x² + 3x + 2x + 6</text>
+      <text x="695" y="439">= x² + 5x + 6</text>
+    </g>
+    <text x="130" y="650" font-size="21">Every term in the first bracket multiplies every term in the second.</text>
+  </g>
+</svg>
