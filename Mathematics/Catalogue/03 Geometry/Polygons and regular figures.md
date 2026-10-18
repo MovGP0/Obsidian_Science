@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Polygons and regular figures"
 catalogue_ids:
   - "3.1.5"

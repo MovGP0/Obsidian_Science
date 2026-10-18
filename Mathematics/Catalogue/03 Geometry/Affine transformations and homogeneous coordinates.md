@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Affine transformations and homogeneous coordinates"
 catalogue_ids:
   - "3.5.4"

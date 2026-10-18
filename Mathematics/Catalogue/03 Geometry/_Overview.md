@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Geometry: a learning route"
 catalogue_ids:
   - "3"

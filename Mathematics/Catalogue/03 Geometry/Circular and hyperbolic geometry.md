@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Circular and hyperbolic geometry"
 catalogue_ids:
   - "3.1.2"

@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Continuous functions on regions"
 catalogue_ids:
   - "2.18.5"

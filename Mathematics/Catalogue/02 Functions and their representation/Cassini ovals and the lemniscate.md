@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Cassini ovals and the lemniscate"
 catalogue_ids:
   - "2.12.5"

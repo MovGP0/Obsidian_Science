@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Conchoids and limacons"
 catalogue_ids:
   - "2.12"

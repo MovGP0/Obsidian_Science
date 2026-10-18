@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Points, lines, and angles"
 catalogue_ids:
   - "3.1"

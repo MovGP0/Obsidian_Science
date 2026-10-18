@@ -36,13 +36,13 @@ Learning route: [[Catalogue/_Overview|Mathematics study route]].
 
 ## 1. Arithmetic
 
-Learning guide: [[00 Arithmetic/_Overview]]. Every entry below links to its learning article or section.
+Learning guide[[Mathematics/Catalogue/01 Arithmetic/_Overview]]]]. Every entry below links to its learning article or section.
 
 Existing starting points: [[Algebra - Overview]], [[Complex numbers - Overview]].
 
 | Source ID | English topic | Learning article |
 | --- | --- | --- |
-| 1.1 | **Elementary rules of calculation** | [[00 Arithmetic/_Overview#Elementary rules of calculation\|Overview]] |
+| 1.1 | **Elementary rules of calculation** [[Mathematics/Catalogue/01 Arithmetic/_Overview#Elementary rules of calculation\|Overview]]]] |
 | 1.1.1 | **Numbers** | [[Number sets and the real line\|Number sets and the real line]] |
 | 1.1.1.1 | Natural numbers, integers, and rational numbers | [[Number sets and the real line#Natural numbers, integers, and rational numbers\|Number sets and the real line]] |
 | 1.1.1.2 | Irrational and transcendental numbers | [[Irrational and transcendental numbers\|Irrational and transcendental numbers]] |

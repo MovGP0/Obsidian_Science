@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Choosing and rectifying empirical curves"
 catalogue_ids:
   - "2.16"

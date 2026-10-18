@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Continuity and its consequences"
 catalogue_ids:
   - "2.1.5"

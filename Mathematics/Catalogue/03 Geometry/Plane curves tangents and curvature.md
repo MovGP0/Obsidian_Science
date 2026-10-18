@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Plane curves tangents and curvature"
 catalogue_ids:
   - "3.6"

@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Catenary and tractrix"
 catalogue_ids:
   - "2.15"

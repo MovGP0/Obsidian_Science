@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Circles, sectors, and annuli"
 catalogue_ids:
   - "3.1.6"

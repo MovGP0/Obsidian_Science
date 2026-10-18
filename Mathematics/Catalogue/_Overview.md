@@ -10,7 +10,7 @@ document_type: "learning_guide"
 
 This route starts at secondary-school arithmetic and algebra. Each chapter guide explains its purpose and prerequisites. The lesson index in each guide lists all articles in that chapter, and the detailed source catalogue links each topic to the section that teaches it.
 
-Start with [[00 Arithmetic/_Overview|the Arithmetic learning guide]]. Use [[Planned Topics|Planned mathematics topics]] to find an exact source ID or topic title.
+Start wit[[Mathematics/Catalogue/01 Arithmetic/_Overview|the Arithmetic learning guide]]]]. Use [[Planned Topics|Planned mathematics topics]] to find an exact source ID or topic title.
 
 Read definitions before formulas. Work through an example, attempt the practice questions, and compare your reasoning with the worked answers. A stated theorem can require a proof beyond a first lesson; its assumptions still apply.
 
@@ -62,7 +62,7 @@ The tables support calculation. Check domains, conventions, and error limits in 
 
 | Source chapter | Learning guide |
 | --- | --- |
-| 1 | [[00 Arithmetic/_Overview\|Arithmetic]] |
+| 1 [[Mathematics/Catalogue/01 Arithmetic/_Overview\|Arithmetic]]]] |
 | 2 | [[02 Functions and their representation/_Overview\|Functions and their representation]] |
 | 3 | [[03 Geometry/_Overview\|Geometry]] |
 | 4 | [[04 Linear algebra/_Overview\|Linear algebra]] |

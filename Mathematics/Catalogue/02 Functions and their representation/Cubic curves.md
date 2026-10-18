@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Cubic curves"
 catalogue_ids:
   - "2.11"

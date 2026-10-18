@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Quadric surfaces and their classification"
 catalogue_ids:
   - "3.5.3.13"
