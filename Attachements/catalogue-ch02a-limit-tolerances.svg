@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="620" viewBox="0 0 1000 620">
+<title>limit tolerances</title>
+<defs><marker id="arrow" markerUnits="userSpaceOnUse" markerWidth="18" markerHeight="14" refX="17" refY="7" orient="auto"><path d="M0 0 L18 7 L0 14 Z" fill="#334155"/></marker></defs>
+<rect width="1000" height="620" fill="white"/>
+<g font-family="Arial, sans-serif" font-size="25" fill="#172554" stroke-linejoin="round" stroke-linecap="round">
+
+<text x="500" y="44" text-anchor="middle" font-size="31">Input tolerance δ meets output tolerance ε</text>
+<rect x="120" y="130" width="700" height="240" fill="#dbeafe"/>
+<rect x="350" y="80" width="200" height="420" fill="#dcfce7" opacity="0.75"/>
+<path d="M100 500 L860 500 M120 525 L120 75" fill="none" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M120 130 L820 130 M120 370 L820 370 M350 80 L350 500 M550 80 L550 500" fill="none" stroke="#64748b" stroke-width="2" stroke-dasharray="7 7"/>
+<path d="M280 454 L610 58" stroke="#1d4ed8" stroke-width="4" fill="none"/>
+<path d="M450 250 L450 500 M120 250 L450 250" stroke="#94a3b8" stroke-width="2" stroke-dasharray="5 6" fill="none"/>
+<circle cx="450" cy="250" r="8" fill="white" stroke="#1d4ed8" stroke-width="3"/>
+<text x="93" y="139" text-anchor="end">L + ε</text><text x="93" y="259" text-anchor="end">L</text><text x="93" y="379" text-anchor="end">L − ε</text>
+<text x="350" y="540" text-anchor="middle">a − δ</text><text x="450" y="540" text-anchor="middle">a</text><text x="550" y="540" text-anchor="middle">a + δ</text>
+<text x="885" y="508">x</text><text x="100" y="75" text-anchor="end">f(x)</text>
+<text x="625" y="195" fill="#1d4ed8">Nearby outputs</text><text x="625" y="229" fill="#1d4ed8">stay inside the band.</text>
+<text x="500" y="590" text-anchor="middle">The point x = a is not part of the punctured limit test.</text>
+
+</g></svg>

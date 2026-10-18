@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" role="img" aria-label="Signed area under y equals x">
+<title>Signed area under y equals x</title>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#334155"/></marker></defs>
+<rect width="1000" height="600" fill="white"/>
+<g font-family="Arial, sans-serif" font-size="24" fill="#172554" stroke-linejoin="round" stroke-linecap="round">
+<text x="55" y="52" font-size="30" font-weight="bold">Signed accumulation differs from total area</text>
+<path d="M220 300 L490 300 L220 480 Z" fill="#ffedd5" stroke="#c2410c" stroke-width="2"/>
+<path d="M490 300 L760 300 L760 120 Z" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+<path d="M130 300 H850 M490 510 V85" fill="none" stroke="#334155" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M220 480 L760 120" fill="none" stroke="#1d4ed8" stroke-width="4"/>
+<text x="850" y="335">x</text><text x="510" y="100">y</text>
+<text x="207" y="284">−1</text><text x="465" y="330">0</text><text x="755" y="330">1</text>
+<text x="600" y="175" fill="#1d4ed8">y = x</text>
+<text x="255" y="325" fill="#9a3412">signed area −1/2</text>
+<text x="545" y="290" fill="#166534">signed area +1/2</text>
+<text x="100" y="555">Integral of x: 0</text><text x="540" y="555">Integral of |x|: 1</text></g></svg>

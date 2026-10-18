@@ -1,0 +1,19 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="510" viewBox="0 0 1000 510" role="img" aria-labelledby="title desc">
+<title id="title">Union and intersection of two sets</title>
+<desc id="desc">The left panel shades both overlapping circles for their union. The right panel shades only their lens-shaped intersection.</desc>
+<defs><clipPath id="rightB"><circle cx="795" cy="260" r="135"/></clipPath></defs>
+<rect width="1000" height="510" fill="white"/>
+<g font-family="Arial, sans-serif" fill="#172431" font-size="25">
+<text x="250" y="60" text-anchor="middle" font-size="32" font-weight="bold">Union A ∪ B</text>
+<text x="750" y="60" text-anchor="middle" font-size="32" font-weight="bold">Intersection A ∩ B</text>
+<rect x="25" y="95" width="450" height="345" rx="12" fill="#f5f7fa" stroke="#74808c" stroke-width="2"/>
+<rect x="525" y="95" width="450" height="345" rx="12" fill="#f5f7fa" stroke="#74808c" stroke-width="2"/>
+<circle cx="205" cy="260" r="135" fill="#c1e6d3"/>
+<circle cx="295" cy="260" r="135" fill="#c1e6d3"/>
+<circle cx="705" cy="260" r="135" fill="#0f876b" clip-path="url(#rightB)"/>
+<g fill="none" stroke="#243b53" stroke-width="3"><circle cx="205" cy="260" r="135"/><circle cx="295" cy="260" r="135"/><circle cx="705" cy="260" r="135"/><circle cx="795" cy="260" r="135"/></g>
+<text x="120" y="270">A</text><text x="360" y="270">B</text>
+<text x="620" y="270">A</text><text x="860" y="270">B</text>
+<text x="250" y="480" text-anchor="middle">In A or B, including both</text>
+<text x="750" y="480" text-anchor="middle">In both A and B</text>
+</g></svg>

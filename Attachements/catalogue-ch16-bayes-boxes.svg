@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="530" viewBox="0 0 1000 530">
+<rect width="1000" height="530" fill="white"/>
+<style>text { font-family: Arial, sans-serif; fill: #172b45; font-size: 23px; } .title { font-size: 29px; font-weight: bold; } .small { font-size: 21px; } .edge { stroke: #536b85; stroke-width: 3; fill: none; } .node { fill: #edf4fa; stroke: #2c587c; stroke-width: 2; }</style>
+<text x="45" y="48" class="title">Conditioning selects the blue probability units</text>
+<text x="45" y="85">Twelve equal units represent the full two-stage experiment.</text>
+<text x="45" y="151">Box I: 4 units</text><text x="45" y="185" class="small">Prior probability 1/3</text>
+<text x="45" y="286">Box II: 8 units</text><text x="45" y="320" class="small">Prior probability 2/3</text>
+<text x="700" y="151">Given blue:</text><text x="700" y="190">5 units remain</text>
+<text x="700" y="370">3 from box I</text><text x="700" y="408">P(I | blue) = 3/5</text>
+<rect x="265" y="112" width="355" height="104" rx="9" fill="#f3f6f9" stroke="#536b85"/>
+<rect x="265" y="245" width="355" height="182" rx="9" fill="#f3f6f9" stroke="#536b85"/>
+<circle cx="310" cy="164" r="29" fill="#246a9c"/><text x="310" y="172" text-anchor="middle" style="fill:white">B</text>
+<circle cx="395" cy="164" r="29" fill="#246a9c"/><text x="395" y="172" text-anchor="middle" style="fill:white">B</text>
+<circle cx="480" cy="164" r="29" fill="#246a9c"/><text x="480" y="172" text-anchor="middle" style="fill:white">B</text>
+<circle cx="565" cy="164" r="29" fill="#b64537"/><text x="565" y="172" text-anchor="middle" style="fill:white">R</text>
+<circle cx="310" cy="296" r="29" fill="#246a9c"/><text x="310" y="304" text-anchor="middle" style="fill:white">B</text>
+<circle cx="395" cy="296" r="29" fill="#246a9c"/><text x="395" y="304" text-anchor="middle" style="fill:white">B</text>
+<circle cx="480" cy="296" r="29" fill="#b64537"/><text x="480" y="304" text-anchor="middle" style="fill:white">R</text>
+<circle cx="565" cy="296" r="29" fill="#b64537"/><text x="565" y="304" text-anchor="middle" style="fill:white">R</text>
+<circle cx="310" cy="378" r="29" fill="#b64537"/><text x="310" y="386" text-anchor="middle" style="fill:white">R</text>
+<circle cx="395" cy="378" r="29" fill="#b64537"/><text x="395" y="386" text-anchor="middle" style="fill:white">R</text>
+<circle cx="480" cy="378" r="29" fill="#b64537"/><text x="480" y="386" text-anchor="middle" style="fill:white">R</text>
+<circle cx="565" cy="378" r="29" fill="#b64537"/><text x="565" y="386" text-anchor="middle" style="fill:white">R</text>
+<circle cx="730" cy="250" r="29" fill="#246a9c"/><text x="730" y="258" text-anchor="middle" style="fill:white">I</text>
+<circle cx="815" cy="250" r="29" fill="#246a9c"/><text x="815" y="258" text-anchor="middle" style="fill:white">I</text>
+<circle cx="900" cy="250" r="29" fill="#246a9c"/><text x="900" y="258" text-anchor="middle" style="fill:white">I</text>
+<circle cx="772" cy="315" r="29" fill="#246a9c"/><text x="772" y="323" text-anchor="middle" style="fill:white">II</text>
+<circle cx="857" cy="315" r="29" fill="#246a9c"/><text x="857" y="323" text-anchor="middle" style="fill:white">II</text>
+<text x="45" y="485" class="small">Within each box, its cards are drawn uniformly. B = blue; R = red.</text>
+</svg>

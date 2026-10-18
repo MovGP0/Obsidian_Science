@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" role="img" aria-label="A tilted patch, its projection and its normal">
+<title>A tilted patch, its projection and its normal</title>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#334155"/></marker></defs>
+<rect width="1000" height="600" fill="white"/>
+<g font-family="Arial, sans-serif" font-size="24" fill="#172554" stroke-linejoin="round" stroke-linecap="round">
+<text x="55" y="50" font-size="30" font-weight="bold">True area and oriented projected area</text>
+<path d="M135 440 L470 440 L650 335 L315 335 Z" fill="#f1f5f9" stroke="#64748b" stroke-width="2"/>
+<path d="M135 315 L470 245 L650 140 L315 210 Z" fill="#dbeafe" stroke="#1d4ed8" stroke-width="3"/>
+<path d="M135 315 V440 M470 245 V440 M650 140 V335 M315 210 V335" fill="none" stroke="#94a3b8" stroke-width="2" stroke-dasharray="7 6"/>
+<path d="M390 225 L320 115" stroke="#334155" stroke-width="4" marker-end="url(#arrow)"/>
+<path d="M390 225 L430 288" stroke="#64748b" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="224" y="110">chosen n</text><text x="437" y="302">−n</text>
+<text x="70" y="225" fill="#1d4ed8">area dS</text>
+<text x="205" y="398">horizontal projection</text>
+<text x="720" y="175">First kind</text><text x="720" y="215">uses dS ≥ 0</text>
+<text x="720" y="310">Second kind</text><text x="720" y="350">uses nₓ, nᵧ, n_z</text>
+<text x="720" y="390">to give a sign</text>
+<rect x="75" y="490" width="850" height="72" rx="10" fill="#eff6ff"/>
+<text x="110" y="535">Signed horizontal projection: dx dy = n_z dS</text></g></svg>

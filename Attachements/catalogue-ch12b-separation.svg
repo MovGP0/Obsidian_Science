@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="480" viewBox="0 0 1000 480" role="img"><rect width="1000" height="480" fill="white"/><g font-family="Arial, sans-serif" font-size="24" fill="#152238">
+<text x="50" y="45" font-size="30" font-weight="bold">Separate a closed convex set from an outside point</text>
+<circle cx="320" cy="260" r="145" fill="#e3efff" stroke="#2463a5" stroke-width="3"/>
+<path d="M105 260H865 M320 440V410 M320 115V80" stroke="#596574" stroke-width="2"/>
+<path d="M537.5 90V427" stroke="#b24a1d" stroke-width="4" stroke-dasharray="10 7"/>
+<circle cx="610" cy="260" r="8" fill="#b0273d"/>
+<text x="320" y="225" text-anchor="middle">Closed unit disk</text>
+<text x="320" y="295" text-anchor="middle">x² + y² ≤ 1</text>
+<text x="610" y="300" text-anchor="middle">(2, 0)</text>
+<text x="548" y="110" fill="#9c3c17">x = 1.5</text>
+<text x="875" y="267" >x</text>
+<text x="330" y="88" >y</text>
+<text x="465" y="290" text-anchor="middle">1</text>
+<text x="100" y="465" font-size="23">Disk: x ≤ 1</text>
+<text x="430" y="465" font-size="23">Separating line</text>
+<text x="760" y="465" font-size="23">Point: x = 2</text>
+</g></svg>

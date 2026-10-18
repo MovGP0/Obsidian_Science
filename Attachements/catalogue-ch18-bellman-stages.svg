@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="650" viewBox="0 0 1000 650" role="img" aria-labelledby="title">
+<title id="title">A two-stage Bellman calculation distinguishes cheap edges from cheap complete routes</title>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="context-stroke"/></marker></defs>
+<rect width="1000" height="650" fill="white"/>
+<g font-family="Arial, sans-serif" font-size="24" fill="#18242e">
+
+<text x="60" y="48" font-size="30" font-weight="bold">Compare immediate cost plus remaining cost</text>
+<text x="80" y="110">Stage 0</text><text x="430" y="110">Stage 1</text><text x="790" y="110">Stage 2</text>
+<line x1="182" y1="303" x2="438" y2="204" stroke="#196a45" stroke-width="5" marker-end="url(#arrow)"/>
+<line x1="182" y1="337" x2="438" y2="436" stroke="#70808b" stroke-width="4" marker-end="url(#arrow)"/>
+<line x1="522" y1="204" x2="798" y2="303" stroke="#196a45" stroke-width="5" marker-end="url(#arrow)"/>
+<line x1="522" y1="436" x2="798" y2="337" stroke="#70808b" stroke-width="4" marker-end="url(#arrow)"/>
+<circle cx="140" cy="320" r="45" fill="#ecf6ef" stroke="#196a45" stroke-width="3"/>
+<circle cx="480" cy="190" r="45" fill="#ecf6ef" stroke="#196a45" stroke-width="3"/>
+<circle cx="480" cy="450" r="45" fill="#f0f3f5" stroke="#70808b" stroke-width="3"/>
+<circle cx="840" cy="320" r="45" fill="#ecf6ef" stroke="#196a45" stroke-width="3"/>
+<text x="130" y="329" font-size="30">S</text><text x="470" y="199" font-size="30">A</text>
+<text x="470" y="459" font-size="30">B</text><text x="830" y="329" font-size="30">T</text>
+<text x="300" y="232" font-weight="bold">2</text><text x="310" y="432">1</text>
+<text x="660" y="232" font-weight="bold">2</text><text x="670" y="432">5</text>
+<text x="399" y="265" fill="#196a45">V₁(A) = 2</text>
+<text x="399" y="530">V₁(B) = 5</text>
+<text x="770" y="405">V₂(T) = 0</text>
+<text x="70" y="405" fill="#196a45">V₀(S) = 4</text>
+<rect x="130" y="570" width="740" height="55" rx="12" fill="#ecf6ef" stroke="#196a45" stroke-width="2"/>
+<text x="165" y="606">V₀(S) = min(2 + 2, 1 + 5) = 4  →  choose A</text>
+
+</g></svg>

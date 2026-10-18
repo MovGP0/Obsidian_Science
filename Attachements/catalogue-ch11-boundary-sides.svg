@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="610" viewBox="0 0 1000 610" role="img">
+<rect width="1000" height="610" fill="white"/>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10Z" fill="#1e293b"/></marker></defs>
+<g font-family="Segoe UI, Arial, sans-serif" font-size="24" fill="#172033">
+<title>Plus and minus boundary sides of a counterclockwise circle</title>
+<text x="500" y="55" text-anchor="middle" font-size="29" font-weight="bold">One curve, two boundary limits</text>
+<circle cx="470" cy="295" r="170" fill="#dbeafe" stroke="#1d4ed8" stroke-width="3"/>
+<path d="M640 295A170 170 0 0 0 470 125" fill="none" stroke="#1e293b" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="465" y="103" text-anchor="middle">counterclockwise orientation</text>
+<text x="455" y="260" text-anchor="middle" font-weight="bold">Plus region</text>
+<text x="455" y="298" text-anchor="middle">inside the curve</text>
+<text x="810" y="220" text-anchor="middle" font-weight="bold">Minus region</text>
+<text x="810" y="255" text-anchor="middle">outside the curve</text>
+<path d="M520 340L620 310" fill="none" stroke="#1e293b" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="475" y="380">F⁺</text>
+<path d="M795 340L662 310" fill="none" stroke="#1e293b" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="800" y="385">F⁻</text>
+<circle cx="640" cy="295" r="6" fill="#dc2626"/>
+<text x="674" y="300" fill="#b91c1c">t</text>
+<text x="470" y="515" text-anchor="middle" font-size="29">F⁺(t) − F⁻(t) = φ(t)</text>
+<text x="500" y="565" text-anchor="middle" fill="#475569">For F = Cφ, the jump equals the density φ.</text>
+</g></svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="615" viewBox="0 0 1000 615">
+<rect width="1000" height="615" fill="white"/>
+<style>text { font-family: Arial, sans-serif; fill: #172b45; font-size: 23px; } .title { font-size: 29px; font-weight: bold; } .small { font-size: 21px; } .edge { stroke: #536b85; stroke-width: 3; fill: none; } .node { fill: #edf4fa; stroke: #2c587c; stroke-width: 2; }</style>
+<text x="45" y="48" class="title">The interval varies; the parameter is fixed</text>
+<text x="45" y="85">Each row represents a new sample and its calculated interval.</text>
+<line x1="560" y1="123" x2="560" y2="525" stroke="#172b45" stroke-width="3" stroke-dasharray="9 7"/>
+<text x="575" y="125" class="small">Fixed μ</text>
+<text x="45" y="168" class="small">Sample 1</text><path d="M400 151 V169 M400 160 H690 M690 151 V169" fill="none" stroke="#246a9c" stroke-width="4"/><circle cx="545.0" cy="160" r="5" fill="#246a9c"/><text x="870" y="168" class="small">covers μ</text>
+<text x="45" y="215" class="small">Sample 2</text><path d="M450 198 V216 M450 207 H730 M730 198 V216" fill="none" stroke="#246a9c" stroke-width="4"/><circle cx="590.0" cy="207" r="5" fill="#246a9c"/><text x="870" y="215" class="small">covers μ</text>
+<text x="45" y="262" class="small">Sample 3</text><path d="M310 245 V263 M310 254 H600 M600 245 V263" fill="none" stroke="#246a9c" stroke-width="4"/><circle cx="455.0" cy="254" r="5" fill="#246a9c"/><text x="870" y="262" class="small">covers μ</text>
+<text x="45" y="309" class="small">Sample 4</text><path d="M600 292 V310 M600 301 H850 M850 292 V310" fill="none" stroke="#b64537" stroke-width="4"/><circle cx="725.0" cy="301" r="5" fill="#b64537"/><text x="870" y="309" class="small">misses μ</text>
+<text x="45" y="356" class="small">Sample 5</text><path d="M370 339 V357 M370 348 H640 M640 339 V357" fill="none" stroke="#246a9c" stroke-width="4"/><circle cx="505.0" cy="348" r="5" fill="#246a9c"/><text x="870" y="356" class="small">covers μ</text>
+<text x="45" y="403" class="small">Sample 6</text><path d="M455 386 V404 M455 395 H760 M760 386 V404" fill="none" stroke="#246a9c" stroke-width="4"/><circle cx="607.5" cy="395" r="5" fill="#246a9c"/><text x="870" y="403" class="small">covers μ</text>
+<text x="45" y="450" class="small">Sample 7</text><path d="M320 433 V451 M320 442 H540 M540 433 V451" fill="none" stroke="#b64537" stroke-width="4"/><circle cx="430.0" cy="442" r="5" fill="#b64537"/><text x="870" y="450" class="small">misses μ</text>
+<text x="45" y="497" class="small">Sample 8</text><path d="M485 480 V498 M485 489 H780 M780 480 V498" fill="none" stroke="#246a9c" stroke-width="4"/><circle cx="632.5" cy="489" r="5" fill="#246a9c"/><text x="870" y="497" class="small">covers μ</text>
+<text x="45" y="570" class="small">Schematic only: these eight rows do not estimate a coverage percentage.</text>
+</svg>

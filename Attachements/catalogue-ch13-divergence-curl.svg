@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="620" viewBox="0 0 1000 620" role="img" aria-label="Compare divergence and curl using expanding and rotating vector fields">
+<defs><marker id="blue" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L8,3 z" fill="#1f4e8c"/></marker><marker id="red" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L8,3 z" fill="#b22222"/></marker></defs>
+<rect width="1000" height="620" fill="white"/>
+<style>text{font-family:Arial,sans-serif;fill:#14243b;font-size:23px} .title{font-size:29px;font-weight:700} .small{font-size:21px}</style>
+<text x="500" y="46" text-anchor="middle" class="title">Outward balance and circulation are different</text>
+<text x="250" y="96" text-anchor="middle" class="">F = (x, y)</text>
+<rect x="170" y="235" width="160" height="160" fill="#f1f5f9" stroke="#64748b" stroke-width="2" stroke-dasharray="7 5"/>
+<line x1="137.00" y1="428.00" x2="103.00" y2="462.00" stroke="#b22222" stroke-width="3" marker-end="url(#red)"/>
+<line x1="137.00" y1="371.50" x2="103.00" y2="388.50" stroke="#b22222" stroke-width="3" marker-end="url(#red)"/>
+<line x1="137.00" y1="315.00" x2="103.00" y2="315.00" stroke="#b22222" stroke-width="3" marker-end="url(#red)"/>
+<line x1="137.00" y1="258.50" x2="103.00" y2="241.50" stroke="#b22222" stroke-width="3" marker-end="url(#red)"/>
+<line x1="137.00" y1="202.00" x2="103.00" y2="168.00" stroke="#b22222" stroke-width="3" marker-end="url(#red)"/>
+<line x1="193.50" y1="428.00" x2="176.50" y2="462.00" stroke="#b22222" stroke-width="3" marker-end="url(#red)"/>
+<line x1="193.50" y1="371.50" x2="176.50" y2="388.50" stroke="#b22222" stroke-width="3" marker-end="url(#red)"/>
+<line x1="193.50" y1="315.00" x2="176.50" y2="315.00" stroke="#b22222" stroke-width="3" marker-end="url(#red)"/>
+<line x1="193.50" y1="258.50" x2="176.50" y2="241.50" stroke="#b22222" stroke-width="3" marker-end="url(#red)"/>
+<line x1="193.50" y1="202.00" x2="176.50" y2="168.00" stroke="#b22222" stroke-width="3" marker-end="url(#red)"/>
+<line x1="250.00" y1="428.00" x2="250.00" y2="462.00" stroke="#b22222" stroke-width="3" marker-end="url(#red)"/>
+<line x1="250.00" y1="371.50" x2="250.00" y2="388.50" stroke="#b22222" stroke-width="3" marker-end="url(#red)"/>
+<line x1="250.00" y1="258.50" x2="250.00" y2="241.50" stroke="#b22222" stroke-width="3" marker-end="url(#red)"/>
+<line x1="250.00" y1="202.00" x2="250.00" y2="168.00" stroke="#b22222" stroke-width="3" marker-end="url(#red)"/>
+<line x1="306.50" y1="428.00" x2="323.50" y2="462.00" stroke="#b22222" stroke-width="3" marker-end="url(#red)"/>
+<line x1="306.50" y1="371.50" x2="323.50" y2="388.50" stroke="#b22222" stroke-width="3" marker-end="url(#red)"/>
+<line x1="306.50" y1="315.00" x2="323.50" y2="315.00" stroke="#b22222" stroke-width="3" marker-end="url(#red)"/>
+<line x1="306.50" y1="258.50" x2="323.50" y2="241.50" stroke="#b22222" stroke-width="3" marker-end="url(#red)"/>
+<line x1="306.50" y1="202.00" x2="323.50" y2="168.00" stroke="#b22222" stroke-width="3" marker-end="url(#red)"/>
+<line x1="363.00" y1="428.00" x2="397.00" y2="462.00" stroke="#b22222" stroke-width="3" marker-end="url(#red)"/>
+<line x1="363.00" y1="371.50" x2="397.00" y2="388.50" stroke="#b22222" stroke-width="3" marker-end="url(#red)"/>
+<line x1="363.00" y1="315.00" x2="397.00" y2="315.00" stroke="#b22222" stroke-width="3" marker-end="url(#red)"/>
+<line x1="363.00" y1="258.50" x2="397.00" y2="241.50" stroke="#b22222" stroke-width="3" marker-end="url(#red)"/>
+<line x1="363.00" y1="202.00" x2="397.00" y2="168.00" stroke="#b22222" stroke-width="3" marker-end="url(#red)"/>
+<text x="750" y="96" text-anchor="middle" class="">G = (−y, x)</text>
+<rect x="670" y="235" width="160" height="160" fill="#f1f5f9" stroke="#64748b" stroke-width="2" stroke-dasharray="7 5"/>
+<line x1="603.00" y1="428.00" x2="637.00" y2="462.00" stroke="#1f4e8c" stroke-width="3" marker-end="url(#blue)"/>
+<line x1="611.50" y1="363.00" x2="628.50" y2="397.00" stroke="#1f4e8c" stroke-width="3" marker-end="url(#blue)"/>
+<line x1="620.00" y1="298.00" x2="620.00" y2="332.00" stroke="#1f4e8c" stroke-width="3" marker-end="url(#blue)"/>
+<line x1="628.50" y1="233.00" x2="611.50" y2="267.00" stroke="#1f4e8c" stroke-width="3" marker-end="url(#blue)"/>
+<line x1="637.00" y1="168.00" x2="603.00" y2="202.00" stroke="#1f4e8c" stroke-width="3" marker-end="url(#blue)"/>
+<line x1="668.00" y1="436.50" x2="702.00" y2="453.50" stroke="#1f4e8c" stroke-width="3" marker-end="url(#blue)"/>
+<line x1="676.50" y1="371.50" x2="693.50" y2="388.50" stroke="#1f4e8c" stroke-width="3" marker-end="url(#blue)"/>
+<line x1="685.00" y1="306.50" x2="685.00" y2="323.50" stroke="#1f4e8c" stroke-width="3" marker-end="url(#blue)"/>
+<line x1="693.50" y1="241.50" x2="676.50" y2="258.50" stroke="#1f4e8c" stroke-width="3" marker-end="url(#blue)"/>
+<line x1="702.00" y1="176.50" x2="668.00" y2="193.50" stroke="#1f4e8c" stroke-width="3" marker-end="url(#blue)"/>
+<line x1="733.00" y1="445.00" x2="767.00" y2="445.00" stroke="#1f4e8c" stroke-width="3" marker-end="url(#blue)"/>
+<line x1="741.50" y1="380.00" x2="758.50" y2="380.00" stroke="#1f4e8c" stroke-width="3" marker-end="url(#blue)"/>
+<line x1="758.50" y1="250.00" x2="741.50" y2="250.00" stroke="#1f4e8c" stroke-width="3" marker-end="url(#blue)"/>
+<line x1="767.00" y1="185.00" x2="733.00" y2="185.00" stroke="#1f4e8c" stroke-width="3" marker-end="url(#blue)"/>
+<line x1="798.00" y1="453.50" x2="832.00" y2="436.50" stroke="#1f4e8c" stroke-width="3" marker-end="url(#blue)"/>
+<line x1="806.50" y1="388.50" x2="823.50" y2="371.50" stroke="#1f4e8c" stroke-width="3" marker-end="url(#blue)"/>
+<line x1="815.00" y1="323.50" x2="815.00" y2="306.50" stroke="#1f4e8c" stroke-width="3" marker-end="url(#blue)"/>
+<line x1="823.50" y1="258.50" x2="806.50" y2="241.50" stroke="#1f4e8c" stroke-width="3" marker-end="url(#blue)"/>
+<line x1="832.00" y1="193.50" x2="798.00" y2="176.50" stroke="#1f4e8c" stroke-width="3" marker-end="url(#blue)"/>
+<line x1="863.00" y1="462.00" x2="897.00" y2="428.00" stroke="#1f4e8c" stroke-width="3" marker-end="url(#blue)"/>
+<line x1="871.50" y1="397.00" x2="888.50" y2="363.00" stroke="#1f4e8c" stroke-width="3" marker-end="url(#blue)"/>
+<line x1="880.00" y1="332.00" x2="880.00" y2="298.00" stroke="#1f4e8c" stroke-width="3" marker-end="url(#blue)"/>
+<line x1="888.50" y1="267.00" x2="871.50" y2="233.00" stroke="#1f4e8c" stroke-width="3" marker-end="url(#blue)"/>
+<line x1="897.00" y1="202.00" x2="863.00" y2="168.00" stroke="#1f4e8c" stroke-width="3" marker-end="url(#blue)"/>
+<text x="250" y="526" text-anchor="middle" class="">div F = 2; planar curl F = 0</text>
+<text x="750" y="526" text-anchor="middle" class="">div G = 0; planar curl G = 2</text>
+<text x="500" y="581" text-anchor="middle" class="small">Dashed squares mark small regions; all arrows use one common scale.</text>
+</svg>

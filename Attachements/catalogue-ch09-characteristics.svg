@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="500" viewBox="0 0 1000 500" role="img" aria-labelledby="title desc">
+<title id="title">Parallel and converging characteristics</title><desc id="desc">Two coordinate diagrams compare constant-coefficient transport rays with nonlinear rays that converge at t equals one.</desc>
+<rect width="1000" height="500" fill="white"/>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#334155"/></marker></defs>
+<g font-family="Arial, sans-serif" fill="#172033" font-size="23">
+<text x="250" y="43" text-anchor="middle" font-size="27" font-weight="bold">Linear transport</text>
+<text x="750" y="43" text-anchor="middle" font-size="27" font-weight="bold">Nonlinear convergence</text>
+<text x="250" y="81" text-anchor="middle">uₜ + 2uₓ = 0</text><text x="750" y="81" text-anchor="middle">uₜ + u uₓ = 0</text>
+<path d="M55 365H460 M65 375V110" fill="none" stroke="#334155" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M555 365H955 M565 375V110" fill="none" stroke="#334155" stroke-width="2.5" marker-end="url(#arrow)"/>
+<g fill="none" stroke="#1d4ed8" stroke-width="4"><path d="M105 360L205 125"/><path d="M205 360L305 125"/><path d="M305 360L405 125"/></g>
+<g fill="none" stroke="#c2410c" stroke-width="4"><path d="M595 360L755 125"/><path d="M675 360L755 125"/><path d="M755 360L755 125"/><path d="M835 360L755 125"/><path d="M915 360L755 125"/></g>
+<circle cx="755" cy="125" r="7" fill="#9a3412"/>
+<text x="455" y="399">x</text><text x="949" y="399">x</text><text x="33" y="120">t</text><text x="533" y="120">t</text>
+<text x="105" y="401" text-anchor="middle">ξ₁</text><text x="205" y="401" text-anchor="middle">ξ₂</text><text x="305" y="401" text-anchor="middle">ξ₃</text>
+<text x="590" y="401">t = 0</text><text x="785" y="129">t = 1</text>
+<text x="250" y="448" text-anchor="middle">Distinct rays stay separate.</text>
+<text x="750" y="448" text-anchor="middle">For g(ξ) = −ξ: x = (1 − t)ξ.</text>
+<text x="750" y="480" text-anchor="middle">A smooth graph fails at the meeting point.</text>
+</g></svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="660" viewBox="0 0 1000 660">
+<rect width="1000" height="660" fill="white"/>
+<g font-family="Arial, sans-serif" font-size="24" fill="#17212b">
+<text x="500" y="43" text-anchor="middle" font-size="29">Alignment nomogram: t = u / (u + v)</text>
+<text x="500" y="80" text-anchor="middle">Join the two input marks; read the crossing on t.</text>
+<path d="M180 110V565 M820 110V565 M180 390H820" stroke="#303030" stroke-width="3" fill="none"/>
+<text x="115" y="128" text-anchor="middle">u</text><text x="886" y="128" text-anchor="middle">v</text>
+<text x="500" y="457" text-anchor="middle">third scale t</text>
+<g stroke="#303030" stroke-width="2">
+<path d="M172 150H188 M172 230H188 M172 310H188 M172 390H188 M812 390H828 M812 470H828 M812 550H828 M340 382V398 M500 382V398 M660 382V398"/>
+</g>
+<text x="156" y="158" text-anchor="end">3</text><text x="156" y="238" text-anchor="end">2</text>
+<text x="156" y="318" text-anchor="end">1</text><text x="156" y="398" text-anchor="end">0</text>
+<text x="844" y="398">0</text><text x="844" y="478">1</text><text x="844" y="558">2</text>
+<text x="340" y="425" text-anchor="middle">0.25</text><text x="500" y="425" text-anchor="middle">0.50</text>
+<text x="660" y="425" text-anchor="middle">0.75</text>
+<path d="M180 150L820 470" stroke="#185ba8" stroke-width="5"/>
+<g fill="#a53920"><circle cx="180" cy="150" r="8"/><circle cx="820" cy="470" r="8"/><circle cx="660" cy="390" r="8"/></g>
+<text x="225" y="145" fill="#185ba8">u = 3</text><text x="691" y="512" fill="#185ba8">v = 1</text>
+<text x="500" y="609" text-anchor="middle" font-size="27">Reading: t = 0.75 = 3 / (3 + 1)</text>
+</g></svg>

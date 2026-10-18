@@ -1,9 +1,6 @@
----
+﻿---
 title: "Arithmetic — learning guide"
 document_type: "Mathematics learning guide"
-catalogue_ids:
-  - "1"
-  - "1.1"
 ---
 
 > [!TLDR]

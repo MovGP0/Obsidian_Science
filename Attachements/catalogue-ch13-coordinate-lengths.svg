@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="620" viewBox="0 0 1000 620" role="img" aria-label="Cylindrical angular scale factor from two circular arcs">
+<defs><marker id="blue" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L8,3 z" fill="#1f4e8c"/></marker><marker id="red" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L8,3 z" fill="#b22222"/></marker></defs>
+<rect width="1000" height="620" fill="white"/>
+<style>text{font-family:Arial,sans-serif;fill:#14243b;font-size:23px} .title{font-size:29px;font-weight:700} .small{font-size:21px}</style>
+<text x="500" y="47" text-anchor="middle" class="title">An angle increment is not a length increment</text>
+<path d="M390,465 A145,145 0 0 0 245,320" fill="none" stroke="#cbd5e1" stroke-width="2"/>
+<path d="M535,465 A290,290 0 0 0 245,175" fill="none" stroke="#cbd5e1" stroke-width="2"/>
+<line x1="245.00" y1="465.00" x2="568.59" y2="378.30" stroke="#475569" stroke-width="2"/>
+<line x1="245.00" y1="465.00" x2="437.15" y2="190.58" stroke="#475569" stroke-width="2"/>
+<path d="M385.05924481191494,427.4712384601345 A145,145 0 0 0 328.16858327090165,346.22295357809617" fill="none" stroke="#1f4e8c" stroke-width="8"/>
+<path d="M525.1184896238299,389.942476920269 A290,290 0 0 0 411.33716654180336,227.4459071561924" fill="none" stroke="#b22222" stroke-width="8"/>
+<circle cx="245" cy="465" r="5" stroke="#475569" fill="#475569" stroke-width="2"/>
+<text x="223" y="504" text-anchor="middle" class="">axis</text>
+<text x="368" y="450" text-anchor="middle" class="">ρ</text>
+<text x="503" y="423" text-anchor="middle" class="">2ρ</text>
+<text x="312" y="418" text-anchor="middle" class="">Δφ</text>
+<text x="755" y="215" text-anchor="middle" class="">Same angle on both circles</text>
+<text x="755" y="286" text-anchor="middle" class="">Inner arc length: ρ Δφ</text>
+<text x="755" y="348" text-anchor="middle" class="">Outer arc length: 2ρ Δφ</text>
+<text x="755" y="424" text-anchor="middle" class="">Angular scale factor: hφ = ρ</text>
+<text x="500" y="582" text-anchor="middle" class="small">For a scalar f: the azimuthal gradient component is (1/ρ) ∂f/∂φ.</text>
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="550" viewBox="0 0 1000 550" role="img" aria-labelledby="title desc">
+<title id="title">Shortest segment to a terminal line</title>
+<desc id="desc">A is at the origin and B is at one comma one on the line X plus Y equals two. The shortest segment AB meets this line at a right angle.</desc>
+<rect width="1000" height="550" fill="white"/>
+<g font-family="Arial, sans-serif" fill="#17202a">
+<text x="55" y="55" font-size="30" font-weight="bold">A free endpoint can move along a prescribed line</text>
+<path d="M 130 430 L 130 95 M 130 430 L 535 430" stroke="#59636e" stroke-width="2" fill="none"/>
+<text x="103" y="98" font-size="25">Y</text><text x="549" y="437" font-size="25">X</text>
+<path d="M 130 110 L 450 430" stroke="#bd5b00" stroke-width="5"/>
+<path d="M 130 430 L 290 270" stroke="#205cb2" stroke-width="6"/>
+<path d="M 130 430 L 370 350" stroke="#778493" stroke-width="3" stroke-dasharray="9 7"/>
+<path d="M 274 286 L 290 302 L 306 286" stroke="#205cb2" stroke-width="2" fill="none"/>
+<circle cx="130" cy="430" r="7" fill="#17202a"/><circle cx="290" cy="270" r="7" fill="#205cb2"/><circle cx="370" cy="350" r="6" fill="#778493"/>
+<text x="65" y="470" font-size="25">A = (0, 0)</text><text x="305" y="253" font-size="25" fill="#205cb2">B = (1, 1)</text>
+<text x="150" y="133" font-size="24" fill="#9b4b00">Y = 2 − X</text>
+<rect x="570" y="145" width="375" height="267" rx="12" fill="#eef2f6"/>
+<text x="595" y="186" font-size="25" font-weight="bold">Ordinary length</text>
+<text x="595" y="235" font-size="24">Segment slope: 1</text><text x="595" y="276" font-size="24">Terminal-line slope: −1</text>
+<text x="595" y="325" font-size="24">Product: −1</text><text x="595" y="371" font-size="24" fill="#205cb2">The meeting angle is 90°.</text>
+<text x="55" y="520" font-size="21" fill="#59636e">Perpendicularity holds for ordinary length; general integrands give other conditions.</text>
+</g></svg>

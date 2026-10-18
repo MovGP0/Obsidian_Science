@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="520" viewBox="0 0 1000 520" role="img" aria-labelledby="title desc">
+<title id="title">Initial and boundary data for partial differential equations</title><desc id="desc">The left panel marks the initial edge and side boundaries of a space and evolution-variable rectangle. The right panel marks data on all four boundaries of an elliptic square.</desc>
+<rect width="1000" height="520" fill="white"/>
+<g font-family="Arial, sans-serif" fill="#172033" font-size="23">
+<text x="275" y="45" text-anchor="middle" font-size="27" font-weight="bold">Evolution problem</text>
+<text x="790" y="45" text-anchor="middle" font-size="27" font-weight="bold">Elliptic problem</text>
+<rect x="135" y="130" width="280" height="250" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+<path d="M135 130V380 M415 130V380" fill="none" stroke="#c2410c" stroke-width="7"/>
+<path d="M135 380H415" stroke="#1d4ed8" stroke-width="7"/>
+<text x="275" y="240" text-anchor="middle">PDE in the interior</text>
+<text x="275" y="279" text-anchor="middle">t increases upward ↑</text>
+<text x="18" y="213" fill="#9a3412">u(0, t)</text><text x="18" y="246" fill="#9a3412">or other</text><text x="18" y="279" fill="#9a3412">side data</text>
+<text x="432" y="213" fill="#9a3412">u(L, t)</text><text x="432" y="246" fill="#9a3412">or other</text><text x="432" y="279" fill="#9a3412">side data</text>
+<text x="275" y="428" text-anchor="middle" fill="#1d4ed8">Initial function u(x, 0) = f(x)</text>
+<text x="275" y="466" text-anchor="middle">Wave equation also needs uₜ(x, 0).</text>
+<rect x="650" y="130" width="280" height="250" fill="#f0fdf4" stroke="#15803d" stroke-width="7"/>
+<text x="790" y="232" text-anchor="middle" font-size="28">Δu = 0</text><text x="790" y="274" text-anchor="middle">No initial edge</text>
+<text x="790" y="428" text-anchor="middle" fill="#166534">Data on the whole boundary</text>
+<text x="790" y="466" text-anchor="middle">Example: prescribed values.</text>
+<text x="500" y="505" text-anchor="middle">Data must agree at corners for a continuous classical solution.</text>
+</g></svg>

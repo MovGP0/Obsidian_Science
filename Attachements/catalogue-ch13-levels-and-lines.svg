@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="620" viewBox="0 0 1000 620" role="img" aria-label="Scalar level curves, gradients, and tangent field lines">
+<defs><marker id="blue" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L8,3 z" fill="#1f4e8c"/></marker><marker id="red" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L8,3 z" fill="#b22222"/></marker></defs>
+<rect width="1000" height="620" fill="white"/>
+<style>text{font-family:Arial,sans-serif;fill:#14243b;font-size:23px} .title{font-size:29px;font-weight:700} .small{font-size:21px}</style>
+<text x="500" y="46" text-anchor="middle" class="title">Level curves and two different vector directions</text>
+<text x="250" y="92" text-anchor="middle" class="">Gradient of f = x² + y²</text>
+<text x="750" y="92" text-anchor="middle" class="">Field F = (−y, x)</text>
+<circle cx="250" cy="315" r="52" stroke="#94a3b8" fill="none" stroke-width="2"/>
+<circle cx="250" cy="315" r="104" stroke="#94a3b8" fill="none" stroke-width="2"/>
+<circle cx="250" cy="315" r="156" stroke="#94a3b8" fill="none" stroke-width="2"/>
+<line x1="67.00" y1="315.00" x2="433.00" y2="315.00" stroke="#cbd5e1" stroke-width="1"/>
+<line x1="250.00" y1="498.00" x2="250.00" y2="132.00" stroke="#cbd5e1" stroke-width="1"/>
+<circle cx="250" cy="315" r="4" stroke="#475569" fill="#475569" stroke-width="2"/>
+<circle cx="750" cy="315" r="52" stroke="#94a3b8" fill="none" stroke-width="2"/>
+<circle cx="750" cy="315" r="104" stroke="#94a3b8" fill="none" stroke-width="2"/>
+<circle cx="750" cy="315" r="156" stroke="#94a3b8" fill="none" stroke-width="2"/>
+<line x1="567.00" y1="315.00" x2="933.00" y2="315.00" stroke="#cbd5e1" stroke-width="1"/>
+<line x1="750.00" y1="498.00" x2="750.00" y2="132.00" stroke="#cbd5e1" stroke-width="1"/>
+<circle cx="750" cy="315" r="4" stroke="#475569" fill="#475569" stroke-width="2"/>
+<line x1="340.00" y1="315.00" x2="387.00" y2="315.00" stroke="#b22222" stroke-width="3" marker-end="url(#red)"/>
+<line x1="854.00" y1="315.00" x2="854.00" y2="276.00" stroke="#1f4e8c" stroke-width="3" marker-end="url(#blue)"/>
+<line x1="313.64" y1="251.36" x2="346.87" y2="218.13" stroke="#b22222" stroke-width="3" marker-end="url(#red)"/>
+<line x1="823.54" y1="241.46" x2="795.96" y2="213.88" stroke="#1f4e8c" stroke-width="3" marker-end="url(#blue)"/>
+<line x1="250.00" y1="225.00" x2="250.00" y2="178.00" stroke="#b22222" stroke-width="3" marker-end="url(#red)"/>
+<line x1="750.00" y1="211.00" x2="711.00" y2="211.00" stroke="#1f4e8c" stroke-width="3" marker-end="url(#blue)"/>
+<line x1="186.36" y1="251.36" x2="153.13" y2="218.13" stroke="#b22222" stroke-width="3" marker-end="url(#red)"/>
+<line x1="676.46" y1="241.46" x2="648.88" y2="269.04" stroke="#1f4e8c" stroke-width="3" marker-end="url(#blue)"/>
+<line x1="160.00" y1="315.00" x2="113.00" y2="315.00" stroke="#b22222" stroke-width="3" marker-end="url(#red)"/>
+<line x1="646.00" y1="315.00" x2="646.00" y2="354.00" stroke="#1f4e8c" stroke-width="3" marker-end="url(#blue)"/>
+<line x1="186.36" y1="378.64" x2="153.13" y2="411.87" stroke="#b22222" stroke-width="3" marker-end="url(#red)"/>
+<line x1="676.46" y1="388.54" x2="704.04" y2="416.12" stroke="#1f4e8c" stroke-width="3" marker-end="url(#blue)"/>
+<line x1="250.00" y1="405.00" x2="250.00" y2="452.00" stroke="#b22222" stroke-width="3" marker-end="url(#red)"/>
+<line x1="750.00" y1="419.00" x2="789.00" y2="419.00" stroke="#1f4e8c" stroke-width="3" marker-end="url(#blue)"/>
+<line x1="313.64" y1="378.64" x2="346.87" y2="411.87" stroke="#b22222" stroke-width="3" marker-end="url(#red)"/>
+<line x1="823.54" y1="388.54" x2="851.12" y2="360.96" stroke="#1f4e8c" stroke-width="3" marker-end="url(#blue)"/>
+<text x="250" y="533" text-anchor="middle" class="">Gradient points across level curves</text>
+<text x="750" y="533" text-anchor="middle" class="">Field points along level curves</text>
+<text x="500" y="583" text-anchor="middle" class="small">At each regular point: (2x, 2y) · (−y, x) = 0</text>
+</svg>

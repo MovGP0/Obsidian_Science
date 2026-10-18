@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="640" viewBox="0 0 1040 640">
+<rect width="1040" height="640" fill="white"/>
+<g font-family="Arial, sans-serif" fill="#172033">
+<text x="520" y="48" font-size="30" font-weight="bold" text-anchor="middle">One tail and two tails use different quantiles</text>
+<text x="70" y="110" font-size="25" font-weight="bold">One-sided 95th percentile</text>
+<rect x="70" y="140" width="855" height="85" fill="#dbeafe"/>
+<rect x="925" y="140" width="45" height="85" fill="#f8b4a5"/>
+<rect x="70" y="140" width="900" height="85" fill="none" stroke="#334155" stroke-width="2"/>
+<text x="460" y="192" font-size="27" text-anchor="middle">95% to the left</text>
+<path d="M947 182 L995 182 L995 120" fill="none" stroke="#9a3412" stroke-width="2"/>
+<text x="990" y="108" font-size="22" text-anchor="end">5% tail</text>
+<path d="M925 225 V250" stroke="#334155" stroke-width="2"/>
+<text x="925" y="280" font-size="24" text-anchor="middle">z₀.₉₅ ≈ 1.645</text>
+<text x="70" y="350" font-size="25" font-weight="bold">Central 95% interval</text>
+<rect x="70" y="380" width="22.5" height="85" fill="#f8b4a5"/>
+<rect x="92.5" y="380" width="855" height="85" fill="#dbeafe"/>
+<rect x="947.5" y="380" width="22.5" height="85" fill="#f8b4a5"/>
+<rect x="70" y="380" width="900" height="85" fill="none" stroke="#334155" stroke-width="2"/>
+<text x="520" y="431" font-size="27" text-anchor="middle">95% in the central interval</text>
+<path d="M81 420 H40 V490 H70" fill="none" stroke="#9a3412" stroke-width="2"/>
+<path d="M959 420 H1000 V490 H970" fill="none" stroke="#9a3412" stroke-width="2"/>
+<text x="130" y="520" font-size="22">2.5% tail</text>
+<text x="910" y="520" font-size="22" text-anchor="end">2.5% tail</text>
+<path d="M92.5 465 V545 H220" fill="none" stroke="#334155" stroke-width="2"/>
+<path d="M947.5 465 V545 H820" fill="none" stroke="#334155" stroke-width="2"/>
+<text x="240" y="583" font-size="24" text-anchor="middle">z₀.₀₂₅ ≈ −1.960</text>
+<text x="800" y="583" font-size="24" text-anchor="middle">z₀.₉₇₅ ≈ 1.960</text>
+<text x="520" y="625" font-size="21" text-anchor="middle">Strip widths show probabilities, not distances on the z-axis.</text>
+</g></svg>

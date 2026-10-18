@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="420" viewBox="0 0 1000 420" role="img">
+<rect width="1000" height="420" fill="white"/>
+<g font-family="Arial, sans-serif" font-size="24" fill="#172033">
+<text x="55" y="48" font-size="28" font-weight="bold">Identical samples can hide different harmonics</text>
+<text x="55" y="95">Sample inputs: xⱼ = 2πj/4, for j = 0, 1, 2, 3</text>
+<line x1="280" y1="175" x2="940" y2="175" stroke="#cbd5e1" stroke-width="2"/>
+<text x="75" y="160">Input x</text>
+<text x="350" y="160" text-anchor="middle">0</text>
+<text x="535" y="160" text-anchor="middle">π/2</text>
+<text x="720" y="160" text-anchor="middle">π</text>
+<text x="905" y="160" text-anchor="middle">3π/2</text>
+<rect x="280" y="185" width="660" height="145" rx="10" fill="#e6f1fb"/>
+<text x="75" y="225" fill="#2456a6">cos x</text>
+<text x="75" y="300" fill="#b45309">cos 5x</text>
+<text x="350" y="225" text-anchor="middle">1</text><text x="535" y="225" text-anchor="middle">0</text><text x="720" y="225" text-anchor="middle">−1</text><text x="905" y="225" text-anchor="middle">0</text>
+<text x="350" y="300" text-anchor="middle">1</text><text x="535" y="300" text-anchor="middle">0</text><text x="720" y="300" text-anchor="middle">−1</text><text x="905" y="300" text-anchor="middle">0</text>
+<text x="55" y="385">The index difference 5 − 1 = 4 equals the sample count.</text>
+</g></svg>

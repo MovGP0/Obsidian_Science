@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" role="img" aria-labelledby="title description">
+<title id="title">Positive boundary orientation of an annulus</title><desc id="description">The outer circle is counterclockwise and the inner circle is clockwise, with the annular region always on the left.</desc>
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="context-stroke"/></marker></defs>
+<rect width="1000" height="600" fill="white"/>
+<g font-family="Arial, sans-serif" font-size="23" fill="#17212b">
+<text x="50" y="48" font-size="29" font-weight="bold">Positive boundary orientation of an annulus</text>
+<circle cx="310" cy="305" r="195" fill="#e4f1f9" stroke="#174e88" stroke-width="4"/>
+<circle cx="310" cy="305" r="85" fill="white" stroke="#ae3c31" stroke-width="4"/>
+<path d="M 505 305 A 195 195 0 0 0 310 110" stroke="#174e88" stroke-width="5" fill="none" marker-end="url(#arrow)"/>
+<path d="M 395 305 A 85 85 0 0 1 310 390" stroke="#ae3c31" stroke-width="5" fill="none" marker-end="url(#arrow)"/>
+<text x="273" y="314" >Hole</text>
+<text x="181" y="440" >Region</text>
+<text x="570" y="160" fill="#174e88" font-size="27" font-weight="bold">Outer boundary</text>
+<text x="570" y="200" >Counterclockwise</text>
+<text x="570" y="280" fill="#ae3c31" font-size="27" font-weight="bold">Inner boundary</text>
+<text x="570" y="320" >Clockwise</text>
+<text x="570" y="410" >The region stays on the left.</text>
+<text x="570" y="455" >For f(z) = 1/z:</text>
+<text x="570" y="492" >outer integral = 2πi</text>
+<text x="570" y="529" >inner integral = −2πi</text>
+</g></svg>

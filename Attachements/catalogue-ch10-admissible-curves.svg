@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="550" viewBox="0 0 1100 550" role="img" aria-labelledby="title desc">
+<title id="title">Admissible curves with fixed endpoints</title>
+<desc id="desc">Three curves share the fixed endpoints A and B. The interior curve can change while its endpoints stay fixed.</desc>
+<rect width="1100" height="550" fill="white"/>
+<g font-family="Arial, sans-serif" fill="#17202a">
+<text x="60" y="55" font-size="30" font-weight="bold">A variation changes the shape, not the fixed endpoints</text>
+<path d="M 100 450 L 100 100 M 100 450 L 760 450" fill="none" stroke="#59636e" stroke-width="2"/>
+<text x="775" y="458" font-size="25">x</text><text x="75" y="98" font-size="25">y</text>
+<path d="M 150 390 C 330 370 500 190 720 160" fill="none" stroke="#205cb2" stroke-width="5"/>
+<path d="M 150 390 C 330 210 500 110 720 160" fill="none" stroke="#bd5b00" stroke-width="4" stroke-dasharray="10 7"/>
+<path d="M 150 390 C 330 530 500 270 720 160" fill="none" stroke="#397c43" stroke-width="4" stroke-dasharray="4 7"/>
+<circle cx="150" cy="390" r="7" fill="#17202a"/><circle cx="720" cy="160" r="7" fill="#17202a"/>
+<text x="125" y="427" font-size="25">A</text><text x="730" y="150" font-size="25">B</text>
+<path d="M 150 390 L 150 450 M 720 160 L 720 450" stroke="#a3aab2" stroke-width="2" stroke-dasharray="6 6"/>
+<text x="140" y="485" font-size="25">a</text><text x="710" y="485" font-size="25">b</text>
+<path d="M 815 190 L 875 190" stroke="#bd5b00" stroke-width="4" stroke-dasharray="10 7"/><text x="890" y="198" font-size="24">y + εη</text>
+<path d="M 815 255 L 875 255" stroke="#205cb2" stroke-width="5"/><text x="890" y="263" font-size="24">y</text>
+<path d="M 815 320 L 875 320" stroke="#397c43" stroke-width="4" stroke-dasharray="4 7"/><text x="890" y="328" font-size="24">y − εη</text>
+<rect x="795" y="375" width="255" height="96" rx="10" fill="#eef2f6"/>
+<text x="815" y="412" font-size="24">η(a) = η(b) = 0</text><text x="815" y="447" font-size="21">Interior values can vary.</text>
+<text x="60" y="528" font-size="21" fill="#59636e">Schematic curves: the admissible family is not limited to these three shapes.</text>
+</g></svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" role="img" aria-labelledby="title description">
+<title id="title">A branch cut for the principal logarithm</title><desc id="description">The nonpositive real axis is removed. Approaching a negative input from above gives imaginary part pi; approaching from below gives minus pi.</desc>
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="context-stroke"/></marker></defs>
+<rect width="1000" height="600" fill="white"/>
+<g font-family="Arial, sans-serif" font-size="23" fill="#17212b">
+<text x="50" y="48" font-size="29" font-weight="bold">A branch cut for the principal logarithm</text>
+<line x1="65.00" y1="305.00" x2="620.00" y2="305.00" stroke="#7c8791" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="430.00" y1="515.00" x2="430.00" y2="100.00" stroke="#7c8791" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="65.00" y1="305.00" x2="430.00" y2="305.00" stroke="#ae3c31" stroke-width="7" />
+<circle cx="430" cy="305" r="6" fill="#ae3c31"/>
+<text x="604" y="340" >Re z</text>
+<text x="455" y="111" >Im z</text>
+<text x="445" y="337" >0</text>
+<path d="M350,155 Q205,150 170,275" stroke="#174e88" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+<path d="M350,460 Q205,465 170,335" stroke="#08766c" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+<text x="65" y="125" fill="#174e88">Above the cut:</text>
+<text x="65" y="163" fill="#174e88">Arg z → π</text>
+<text x="65" y="477" fill="#08766c">Below the cut:</text>
+<text x="65" y="515" fill="#08766c">Arg z → −π</text>
+<text x="245" y="345" fill="#ae3c31">Removed ray</text>
+<text x="660" y="190" >For r &gt; 0:</text>
+<text x="660" y="237" >Log(−r + i0)</text>
+<text x="660" y="274" fill="#174e88">= ln r + iπ</text>
+<text x="660" y="355" >Log(−r − i0)</text>
+<text x="660" y="392" fill="#08766c">= ln r − iπ</text>
+<text x="660" y="480" >The boundary jump is 2πi.</text>
+</g></svg>

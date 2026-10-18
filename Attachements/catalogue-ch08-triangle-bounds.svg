@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" role="img" aria-label="Two strip choices for the unit right triangle">
+<title>Two strip choices for the unit right triangle</title>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#334155"/></marker></defs>
+<rect width="1000" height="600" fill="white"/>
+<g font-family="Arial, sans-serif" font-size="24" fill="#172554" stroke-linejoin="round" stroke-linecap="round">
+<text x="50" y="48" font-size="30" font-weight="bold">The domain determines the nested bounds</text>
+<text x="130" y="105" font-weight="bold">Vertical strip: integrate y first</text>
+<text x="600" y="105" font-weight="bold">Horizontal strip: integrate x first</text>
+<path d="M100 420 L410 420 L100 150 Z" fill="#eff6ff" stroke="#1d4ed8" stroke-width="3"/>
+<path d="M590 420 L900 420 L590 150 Z" fill="#eff6ff" stroke="#1d4ed8" stroke-width="3"/>
+<path d="M220 420 L242 420 L242 274 L220 293 Z" fill="#fbbf24" stroke="#92400e" stroke-width="2"/>
+<path d="M590 300 L728 300 L751 280 L590 280 Z" fill="#fbbf24" stroke="#92400e" stroke-width="2"/>
+<path d="M75 420 H450 M100 445 V130 M565 420 H940 M590 445 V130" fill="none" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="450" y="452">x</text><text x="74" y="135">y</text><text x="940" y="452">x</text><text x="562" y="135">y</text>
+<text x="76" y="452">0</text><text x="402" y="452">1</text><text x="69" y="157">1</text>
+<text x="563" y="452">0</text><text x="895" y="452">1</text><text x="560" y="157">1</text>
+<text x="278" y="236">y = 1 − x</text><text x="744" y="236">x = 1 − y</text>
+<text x="245" y="368">fixed x</text><text x="610" y="267">fixed y</text>
+<text x="90" y="505">0 ≤ x ≤ 1</text><text x="90" y="550">0 ≤ y ≤ 1 − x</text>
+<text x="580" y="505">0 ≤ y ≤ 1</text><text x="580" y="550">0 ≤ x ≤ 1 − y</text></g></svg>

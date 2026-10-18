@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="680" viewBox="0 0 1000 680">
+<title>phase vectors</title>
+<defs><marker id="arrow" markerUnits="userSpaceOnUse" markerWidth="18" markerHeight="14" refX="17" refY="7" orient="auto"><path d="M0 0 L18 7 L0 14 Z" fill="#334155"/></marker></defs>
+<rect width="1000" height="680" fill="white"/>
+<g font-family="Arial, sans-serif" font-size="25" fill="#172554" stroke-linejoin="round" stroke-linecap="round">
+
+<text x="500" y="43" text-anchor="middle" font-size="31">A common frequency allows fixed-vector addition</text>
+<path d="M150 550 L860 550 M180 590 L180 95" stroke="#94a3b8" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<path d="M180 550 L480 550" stroke="#2563eb" stroke-width="5" fill="none" marker-end="url(#arrow)"/>
+<path d="M480 550 L480 150" stroke="#15803d" stroke-width="5" fill="none" marker-end="url(#arrow)"/>
+<path d="M180 550 L480 150" stroke="#7c3aed" stroke-width="5" fill="none" marker-end="url(#arrow)"/>
+<path d="M180 150 L480 150 M180 550 L180 150" stroke="#64748b" stroke-width="2" stroke-dasharray="7 7" fill="none"/>
+<path d="M260 550 A80 80 0 0 0 228 486" fill="none" stroke="#92400e" stroke-width="3"/>
+<text x="330" y="590" text-anchor="middle" fill="#1d4ed8">first vector: 3</text>
+<text x="515" y="420" fill="#166534">second vector: 4</text>
+<text x="280" y="335" fill="#6d28d9" transform="rotate(-53.13 280 335)">resultant: 5</text>
+<text x="265" y="507" fill="#92400e">θ</text><text x="525" y="140">(3, 4)</text>
+<text x="670" y="235">R = √(3² + 4²)</text><text x="670" y="277">R = 5</text>
+<text x="670" y="330">cos θ = 3/5</text><text x="670" y="372">sin θ = 4/5</text>
+<text x="500" y="646" text-anchor="middle">Combine amplitudes by coordinates, with the phase sign kept consistent.</text>
+
+</g></svg>

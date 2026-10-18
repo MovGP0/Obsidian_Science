@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="710" viewBox="0 0 1080 710">
+  <title>Orthogonal projection is the closest point in a subspace</title>
+  <desc>Vector x equals three comma four, its projection p equals three comma zero, and another candidate q equals one comma zero. The residual is vertical and perpendicular to the horizontal subspace.</desc>
+  <rect width="1080" height="710" fill="white"/>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#245c9f"/></marker></defs>
+  <g font-family="Arial, sans-serif" fill="#17212b" font-size="24">
+    <text x="540" y="44" text-anchor="middle" font-size="30" font-weight="bold">Projection minimizes squared distance</text>
+    <path d="M70 540H730" stroke="#535f69" stroke-width="4"/>
+    <path d="M130 575V90" stroke="#87929a" stroke-width="2"/>
+    <text x="635" y="582">Subspace M</text>
+    <path d="M130 540L430 140" stroke="#245c9f" stroke-width="5" marker-end="url(#arrow)"/>
+    <path d="M430 540V140" stroke="#247446" stroke-width="5"/>
+    <path d="M230 540L430 140" stroke="#a85b13" stroke-width="4" stroke-dasharray="10 7"/>
+    <path d="M407 540V517H430" fill="none" stroke="#247446" stroke-width="3"/>
+    <g fill="#17212b"><circle cx="130" cy="540" r="5"/><circle cx="230" cy="540" r="6"/><circle cx="430" cy="540" r="6"/><circle cx="430" cy="140" r="6"/></g>
+    <text x="112" y="577">0</text>
+    <text x="156" y="583">q = (1, 0)</text>
+    <text x="354" y="626">p = (3, 0)</text>
+    <text x="447" y="131" fill="#245c9f">x = (3, 4)</text>
+    <text x="448" y="309" fill="#247446">Residual x − p</text>
+    <text x="448" y="343" fill="#247446">is perpendicular to M</text>
+    <text x="786" y="200" text-anchor="middle" font-size="26">Squared errors</text>
+    <text x="786" y="246" text-anchor="middle">‖x − p‖² = 16</text>
+    <text x="786" y="402" text-anchor="middle">‖x − q‖² = 16 + 4</text>
+    <text x="540" y="680" text-anchor="middle" font-size="26">‖x − q‖² = ‖x − p‖² + ‖p − q‖²</text>
+  </g>
+</svg>

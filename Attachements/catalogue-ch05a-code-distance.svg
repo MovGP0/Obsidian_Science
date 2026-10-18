@@ -1,0 +1,18 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="540" viewBox="0 0 1000 540" role="img" aria-labelledby="title desc">
+<title id="title">One-error decoding of the three-bit repetition code</title>
+<desc id="desc">000 has nearest words 001, 010, and 100. The other codeword 111 has nearest words 110, 101, and 011. The two decoding sets are disjoint.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8Z" fill="#52616f"/></marker></defs>
+<rect width="1000" height="540" fill="white"/>
+<g font-family="Arial, sans-serif" text-anchor="middle" font-size="26" fill="#172431">
+<text x="500" y="48" font-size="32" font-weight="bold">One flipped bit still has a unique nearest codeword</text>
+<rect x="35" y="85" width="440" height="350" rx="35" fill="#e8f4ed" stroke="#25805e" stroke-width="3"/>
+<rect x="525" y="85" width="440" height="350" rx="35" fill="#e7effa" stroke="#3265a0" stroke-width="3"/>
+<text x="255" y="130" font-weight="bold">Decode to 000</text><text x="745" y="130" font-weight="bold">Decode to 111</text>
+<g stroke="#52616f" stroke-width="2" marker-end="url(#arrow)"><path d="M130 305 L220 245"/><path d="M255 350 L255 260"/><path d="M380 305 L290 245"/><path d="M620 305 L710 245"/><path d="M745 350 L745 260"/><path d="M870 305 L780 245"/></g>
+<rect x="190" y="180" width="130" height="75" rx="12" fill="#25805e"/><rect x="680" y="180" width="130" height="75" rx="12" fill="#3265a0"/>
+<g fill="white" font-weight="bold" font-size="36"><text x="255" y="230">000</text><text x="745" y="230">111</text></g>
+<text x="120" y="330">001</text><text x="255" y="388">010</text><text x="390" y="330">100</text>
+<text x="610" y="330">110</text><text x="745" y="388">101</text><text x="880" y="330">011</text>
+<text x="500" y="485">Minimum distance between codewords: 3</text>
+<text x="500" y="520">Correction guarantee: at most 1 error</text>
+</g></svg>

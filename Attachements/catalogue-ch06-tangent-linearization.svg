@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="620" viewBox="0 0 1000 620">
+<rect width="1000" height="620" fill="white"/>
+<style>text { font-family: Arial, sans-serif; font-size: 24px; fill: #17212b; } .small { font-size: 21px; } .title { font-size: 30px; font-weight: bold; }</style>
+<defs><marker id="arrow" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto-start-reverse"><path d="M0,0 L12,6 L0,12 Z" fill="#374151"/></marker></defs>
+
+<text x="50" y="52" class="title">From secant slope to a local linear rule</text>
+<line x1="70" y1="530" x2="565" y2="530" stroke="#374151" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="70" y1="530" x2="70" y2="90" stroke="#374151" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="558" y="568">x</text><text x="38" y="104">y</text>
+<text x="50" y="558">0</text>
+<line x1="290" y1="524" x2="290" y2="536" stroke="#374151" stroke-width="2"/>
+<text x="284" y="563">1</text>
+<line x1="64" y1="420" x2="76" y2="420" stroke="#374151" stroke-width="2"/>
+<text x="39" y="428">1</text>
+<path d="M70.00,530.00 L73.67,529.97 L77.33,529.88 L81.00,529.73 L84.67,529.51 L88.33,529.24 L92.00,528.90 L95.67,528.50 L99.33,528.04 L103.00,527.52 L106.67,526.94 L110.33,526.30 L114.00,525.60 L117.67,524.84 L121.33,524.01 L125.00,523.12 L128.67,522.18 L132.33,521.17 L136.00,520.10 L139.67,518.97 L143.33,517.78 L147.00,516.52 L150.67,515.21 L154.33,513.84 L158.00,512.40 L161.67,510.90 L165.33,509.34 L169.00,507.73 L172.67,506.04 L176.33,504.30 L180.00,502.50 L183.67,500.64 L187.33,498.71 L191.00,496.73 L194.67,494.68 L198.33,492.57 L202.00,490.40 L205.67,488.17 L209.33,485.88 L213.00,483.52 L216.67,481.11 L220.33,478.64 L224.00,476.10 L227.67,473.50 L231.33,470.84 L235.00,468.12 L238.67,465.34 L242.33,462.50 L246.00,459.60 L249.67,456.64 L253.33,453.61 L257.00,450.52 L260.67,447.38 L264.33,444.17 L268.00,440.90 L271.67,437.57 L275.33,434.18 L279.00,430.73 L282.67,427.21 L286.33,423.64 L290.00,420.00 L293.67,416.30 L297.33,412.54 L301.00,408.73 L304.67,404.84 L308.33,400.90 L312.00,396.90 L315.67,392.84 L319.33,388.71 L323.00,384.53 L326.67,380.28 L330.33,375.97 L334.00,371.60 L337.67,367.17 L341.33,362.68 L345.00,358.12 L348.67,353.51 L352.33,348.84 L356.00,344.10 L359.67,339.30 L363.33,334.44 L367.00,329.52 L370.67,324.54 L374.33,319.50 L378.00,314.40 L381.67,309.24 L385.33,304.01 L389.00,298.73 L392.67,293.38 L396.33,287.97 L400.00,282.50 L403.67,276.97 L407.33,271.38 L411.00,265.72 L414.67,260.01 L418.33,254.24 L422.00,248.40 L425.67,242.50 L429.33,236.54 L433.00,230.53 L436.67,224.44 L440.33,218.30 L444.00,212.10 L447.67,205.84 L451.33,199.51 L455.00,193.12 L458.67,186.68 L462.33,180.17 L466.00,173.60 L469.67,166.97 L473.33,160.28 L477.00,153.52 L480.67,146.71 L484.33,139.84 L488.00,132.90 L491.67,125.90 L495.33,118.84 L499.00,111.73 L502.67,104.54 L506.33,97.30 L510.00,90.00" fill="none" stroke="#2458a6" stroke-width="4"/>
+<line x1="191.0" y1="519.0" x2="510" y2="200" stroke="#167347" stroke-width="4"/>
+<line x1="217.4" y1="518.01" x2="499.0" y2="137.84999999999997" stroke="#a65315" stroke-width="3" stroke-dasharray="11 7"/>
+<line x1="290" y1="420" x2="444.0" y2="420" stroke="#8a929b" stroke-width="2" stroke-dasharray="6 6"/>
+<line x1="444.0" y1="420" x2="444.0" y2="212.09999999999997" stroke="#8a929b" stroke-width="2" stroke-dasharray="6 6"/>
+<circle cx="290" cy="420" r="6" fill="#17212b"/>
+<circle cx="444.0" cy="212.09999999999997" r="6" fill="#2458a6"/>
+<circle cx="444.0" cy="266.0" r="5" fill="#167347"/>
+<line x1="461.0" y1="212.09999999999997" x2="461.0" y2="266.0" stroke="#9a2450" stroke-width="3"/>
+<text x="354" y="452">h</text>
+<text x="175" y="385" class="small">(1, 1)</text>
+<line x1="235" y1="390" x2="282" y2="412" stroke="#78818c" stroke-width="1.5"/>
+<text x="479" y="247" class="small">h²</text>
+<rect x="615" y="110" width="340" height="410" rx="12" fill="#f5f7fa" stroke="#d7dce2"/>
+<line x1="640" y1="150" x2="690" y2="150" stroke="#2458a6" stroke-width="4"/><text x="710" y="158">Curve: y = x²</text>
+<line x1="640" y1="205" x2="690" y2="205" stroke="#167347" stroke-width="4"/><text x="710" y="213">Tangent</text>
+<line x1="640" y1="260" x2="690" y2="260" stroke="#a65315" stroke-width="3" stroke-dasharray="9 5"/><text x="710" y="268">Secant</text>
+<text x="640" y="327">Secant slope: 2 + h</text>
+<text x="640" y="372">Tangent slope: 2</text>
+<text x="640" y="417">Exact change: 2h + h²</text>
+<text x="640" y="462">Linear change: 2h</text>
+<text x="72" y="600" class="small">The example uses h = 0.7. As h → 0, the secant slope tends to 2.</text>
+</svg>

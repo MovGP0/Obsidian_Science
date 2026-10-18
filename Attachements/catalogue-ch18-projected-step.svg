@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="650" viewBox="0 0 1000 650" role="img" aria-labelledby="title">
+<title id="title">A feasible direction and a projected gradient step on a triangle</title>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="context-stroke"/></marker></defs>
+<rect width="1000" height="650" fill="white"/>
+<g font-family="Arial, sans-serif" font-size="24" fill="#18242e">
+
+<text x="50" y="48" font-size="30" font-weight="bold">A boundary can block unconstrained descent</text>
+<polygon points="100,520 500,520 100,120" fill="#e1f0fa" stroke="#165f8c" stroke-width="3"/>
+<line x1="100" y1="520" x2="570" y2="520" stroke="#263238" stroke-width="3" marker-end="url(#arrow)"/>
+<line x1="100" y1="520" x2="100" y2="95" stroke="#263238" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="576" y="528">x</text><text x="87" y="80">y</text>
+<text x="70" y="554">0</text><text x="286" y="554">1</text><text x="486" y="554">2</text>
+<text x="67" y="328">1</text><text x="67" y="128">2</text>
+<text x="130" y="232">x + y ≤ 2</text>
+<text x="130" y="270">x, y ≥ 0</text>
+<line x1="300" y1="320" x2="495" y2="320" stroke="#ab4b00" stroke-width="4" marker-end="url(#arrow)"/>
+<line x1="300" y1="320" x2="394" y2="414" stroke="#155c9c" stroke-width="5" marker-end="url(#arrow)"/>
+<line x1="500" y1="320" x2="405" y2="415" stroke="#ab4b00" stroke-width="3" stroke-dasharray="8 7" marker-end="url(#arrow)"/>
+<circle cx="300" cy="320" r="7" fill="#18242e"/><circle cx="500" cy="320" r="7" fill="#ab4b00"/><circle cx="400" cy="420" r="7" fill="#155c9c"/>
+<text x="310" y="294">Start (1, 1)</text>
+<text x="425" y="463">(1.5, 0.5)</text>
+<text x="505" y="300">(2, 1)</text>
+<rect x="650" y="155" width="300" height="335" rx="15" fill="#f6f8fa" stroke="#778590" stroke-width="2"/>
+<text x="675" y="198" font-weight="bold">Objective</text>
+<text x="675" y="238">(x − 2)² + (y − 1)²</text>
+<text x="675" y="291" fill="#ab4b00">Orange: outside step</text>
+<text x="675" y="337" fill="#ab4b00">Dashed: projection</text>
+<text x="675" y="383" fill="#155c9c">Blue: feasible direction</text>
+<text x="675" y="440">Boundary optimum:</text>
+<text x="675" y="473">f(1.5, 0.5) = 0.5</text>
+<text x="130" y="610">Projection chooses the nearest feasible point to the outside proposal.</text>
+
+</g></svg>

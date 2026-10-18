@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" role="img" aria-label="A curve and its reversed orientation">
+<title>A curve and its reversed orientation</title>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#334155"/></marker></defs>
+<rect width="1000" height="600" fill="white"/>
+<g font-family="Arial, sans-serif" font-size="24" fill="#172554" stroke-linejoin="round" stroke-linecap="round">
+<text x="55" y="50" font-size="30" font-weight="bold">Length stays positive; displacement reverses</text>
+<text x="165" y="108" font-weight="bold">Forward tracing</text>
+<text x="655" y="108" font-weight="bold">Reverse tracing</text>
+<path d="M90 390 Q180 350 240 270 Q300 190 410 165" fill="none" stroke="#1d4ed8" stroke-width="4"/>
+<path d="M590 390 Q680 350 740 270 Q800 190 910 165" fill="none" stroke="#1d4ed8" stroke-width="4"/>
+<circle cx="90" cy="390" r="6" fill="#1d4ed8"/><circle cx="410" cy="165" r="6" fill="#1d4ed8"/>
+<circle cx="590" cy="390" r="6" fill="#1d4ed8"/><circle cx="910" cy="165" r="6" fill="#1d4ed8"/>
+<text x="60" y="425">A</text><text x="420" y="165">B</text><text x="560" y="425">A</text><text x="920" y="165">B</text>
+<path d="M205 310 L280 225" stroke="#334155" stroke-width="4" marker-end="url(#arrow)"/>
+<path d="M780 225 L705 310" stroke="#334155" stroke-width="4" marker-end="url(#arrow)"/>
+<path d="M205 310 H280 V225" fill="none" stroke="#94a3b8" stroke-width="2" stroke-dasharray="6 5"/>
+<path d="M780 225 H705 V310" fill="none" stroke="#94a3b8" stroke-width="2" stroke-dasharray="6 5"/>
+<text x="215" y="345">dx &gt; 0</text><text x="294" y="285">dy &gt; 0</text>
+<text x="690" y="200">dx &lt; 0</text><text x="790" y="280">dy &lt; 0</text>
+<text x="115" y="470">ds = length of the small segment</text>
+<text x="615" y="470">Same ds; opposite d𝐫</text>
+<rect x="70" y="505" width="860" height="60" rx="10" fill="#eff6ff"/>
+<text x="105" y="545">Scalar length integral: unchanged</text>
+<text x="555" y="545">Directed integral: opposite sign</text></g></svg>

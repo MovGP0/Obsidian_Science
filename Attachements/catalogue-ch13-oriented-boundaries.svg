@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="620" viewBox="0 0 1000 620" role="img" aria-label="Positive orientations of an annulus outer and inner boundaries">
+<defs><marker id="blue" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L8,3 z" fill="#1f4e8c"/></marker><marker id="red" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L8,3 z" fill="#b22222"/></marker></defs>
+<rect width="1000" height="620" fill="white"/>
+<style>text{font-family:Arial,sans-serif;fill:#14243b;font-size:23px} .title{font-size:29px;font-weight:700} .small{font-size:21px}</style>
+<text x="500" y="46" text-anchor="middle" class="title">A surface with a hole has two boundary curves</text>
+<circle cx="330" cy="320" r="185" stroke="#1f4e8c" fill="#e9f2fb" stroke-width="3"/>
+<circle cx="330" cy="320" r="87" stroke="#1f4e8c" fill="white" stroke-width="3"/>
+<line x1="515.00" y1="339.00" x2="515.00" y2="301.00" stroke="#1f4e8c" stroke-width="4" marker-end="url(#blue)"/>
+<line x1="145.00" y1="301.00" x2="145.00" y2="339.00" stroke="#1f4e8c" stroke-width="4" marker-end="url(#blue)"/>
+<line x1="311.00" y1="233.00" x2="349.00" y2="233.00" stroke="#1f4e8c" stroke-width="4" marker-end="url(#blue)"/>
+<line x1="349.00" y1="407.00" x2="311.00" y2="407.00" stroke="#1f4e8c" stroke-width="4" marker-end="url(#blue)"/>
+<circle cx="580" cy="480" r="17" stroke="#475569" fill="white" stroke-width="2"/>
+<circle cx="580" cy="480" r="4" stroke="#475569" fill="#475569" stroke-width="2"/>
+<text x="744" y="488" text-anchor="middle" class="small">n toward viewer</text>
+<text x="744" y="217" text-anchor="middle" class="">Outer boundary: counterclockwise</text>
+<text x="744" y="290" text-anchor="middle" class="">Inner boundary: clockwise</text>
+<text x="744" y="381" text-anchor="middle" class="">Keep the surface on your left</text>
+<text x="744" y="416" text-anchor="middle" class="">while following either arrow</text>
+<text x="500" y="577" text-anchor="middle" class="small">The hole is excluded. Stokes uses both boundary curves with these signs.</text>
+</svg>

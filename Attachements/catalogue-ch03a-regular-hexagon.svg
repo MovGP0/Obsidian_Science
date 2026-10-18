@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="620" viewBox="0 0 1000 620" role="img" aria-label="Regular hexagon triangulation">
+<rect width="1000" height="620" fill="white"/>
+<style>text { font-family: Arial, sans-serif; font-size: 23px; fill: #172b3a; } .title {font-size:28px;font-weight:bold} .axis {stroke:#64748b;stroke-width:2} .curve {fill:none;stroke:#175b91;stroke-width:4} .guide {fill:none;stroke:#64748b;stroke-width:2;stroke-dasharray:7 5}</style>
+
+<text x="55" y="55" class="title">Regular polygon: use one center triangle</text>
+<path d="M530.000,310.000 L430.000,136.795 L230.000,136.795 L130.000,310.000 L230.000,483.205 L430.000,483.205 Z" fill="#f8fafc" stroke="#175b91" stroke-width="4"/>
+<line x1="330" y1="310" x2="530.000" y2="310.000" stroke="#94a3b8" stroke-width="2"/><line x1="330" y1="310" x2="430.000" y2="136.795" stroke="#94a3b8" stroke-width="2"/><line x1="330" y1="310" x2="230.000" y2="136.795" stroke="#94a3b8" stroke-width="2"/><line x1="330" y1="310" x2="130.000" y2="310.000" stroke="#94a3b8" stroke-width="2"/><line x1="330" y1="310" x2="230.000" y2="483.205" stroke="#94a3b8" stroke-width="2"/><line x1="330" y1="310" x2="430.000" y2="483.205" stroke="#94a3b8" stroke-width="2"/>
+<path d="M330.000,310.000 L530.000,310.000 L480.000,223.397 Z" fill="#fef3c7" stroke="#9a5a0a" stroke-width="2"/>
+<line x1="330" y1="310" x2="480.000" y2="223.397" stroke="#9a5a0a" stroke-width="4"/>
+<path d="M465.278,231.897 L473.778,246.619 L488.500,238.119" fill="none" stroke="#172b3a" stroke-width="2"/>
+<text x="300" y="340">O</text><text x="423" y="340">R</text><text x="383" y="245">r</text><text x="497" y="220">s/2</text>
+<text x="630" y="190">R: center to vertex</text><text x="630" y="245">r: center to side</text><text x="630" y="300">central angle = 2π/n</text>
+<text x="630" y="375">half-angle = π/n</text><text x="630" y="430">area = perimeter × r/2</text>
+<text x="55" y="590">Here n = 6. The shaded half-triangle has perpendicular legs r and s/2.</text>
+
+</svg>

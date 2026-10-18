@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="520" viewBox="0 0 1080 520">
+  <title>Three norm unit balls in the same coordinate plane</title>
+  <desc>A diamond for the one norm, circle for the Euclidean norm, and square for the maximum norm, all centered at the origin with coordinate intercepts one.</desc>
+  <rect width="1080" height="520" fill="white"/>
+  <g font-family="Arial, sans-serif" font-size="24" fill="#17212b" text-anchor="middle">
+    <text x="540" y="42" font-size="30" font-weight="bold">Same vectors, different unit balls</text>
+    <g stroke="#77838d" stroke-width="2">
+      <path d="M45 275H315M180 140V410M405 275H675M540 140V410M765 275H1035M900 140V410"/>
+    </g>
+    <path d="M180 165L290 275L180 385L70 275Z" fill="#dcecff" stroke="#245c9f" stroke-width="4"/>
+    <circle cx="540" cy="275" r="110" fill="#dff0e5" stroke="#247446" stroke-width="4"/>
+    <rect x="790" y="165" width="220" height="220" fill="#ffead6" stroke="#a85b13" stroke-width="4"/>
+    <g stroke="#77838d" stroke-width="1.5" stroke-dasharray="5 5">
+      <path d="M45 275H315M180 140V410M405 275H675M540 140V410M765 275H1035M900 140V410"/>
+    </g>
+    <g fill="#17212b"><circle cx="180" cy="275" r="4"/><circle cx="540" cy="275" r="4"/><circle cx="900" cy="275" r="4"/></g>
+    <text x="180" y="101" font-size="27" fill="#245c9f">1-norm</text>
+    <text x="540" y="101" font-size="27" fill="#247446">2-norm</text>
+    <text x="900" y="101" font-size="27" fill="#a85b13">Maximum norm</text>
+    <text x="180" y="465">|x| + |y| = 1</text>
+    <text x="540" y="465">x² + y² = 1</text>
+    <text x="900" y="465">max(|x|, |y|) = 1</text>
+    <text x="298" y="311" font-size="21">1</text><text x="658" y="311" font-size="21">1</text><text x="1018" y="311" font-size="21">1</text>
+    <text x="155" y="157" font-size="21">1</text><text x="515" y="157" font-size="21">1</text><text x="875" y="157" font-size="21">1</text>
+    <text x="203" y="307" font-size="20">0</text><text x="563" y="307" font-size="20">0</text><text x="923" y="307" font-size="20">0</text>
+  </g>
+</svg>

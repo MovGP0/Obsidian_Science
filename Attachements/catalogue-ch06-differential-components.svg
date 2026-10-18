@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="620" viewBox="0 0 1000 620">
+<rect width="1000" height="620" fill="white"/>
+<style>text { font-family: Arial, sans-serif; font-size: 24px; fill: #17212b; } .small { font-size: 21px; } .title { font-size: 30px; font-weight: bold; }</style>
+<defs><marker id="arrow" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto-start-reverse"><path d="M0,0 L12,6 L0,12 Z" fill="#374151"/></marker></defs>
+
+<text x="50" y="52" class="title">A total differential adds partial contributions</text>
+<rect x="40" y="95" width="430" height="420" rx="12" fill="#f7fafc" stroke="#d7dce2"/>
+<text x="65" y="132">Input displacement plane</text>
+<line x1="95" y1="220" x2="435" y2="220" stroke="#374151" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="95" y1="440" x2="95" y2="175" stroke="#374151" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="425" y="257">x</text><text x="65" y="184">y</text>
+<line x1="95" y1="220" x2="385" y2="220" stroke="#167347" stroke-width="5" marker-end="url(#arrow)"/>
+<line x1="385" y1="220" x2="385" y2="420" stroke="#246a89" stroke-width="5" marker-end="url(#arrow)"/>
+<line x1="95" y1="220" x2="385" y2="420" stroke="#70509b" stroke-width="5" marker-end="url(#arrow)"/>
+<circle cx="95" cy="220" r="6" fill="#17212b"/>
+<text x="225" y="200">h &gt; 0</text>
+<text x="400" y="325">k &lt; 0</text>
+<text x="185" y="345">(h, k)</text>
+<text x="65" y="490" class="small">Base point: (2, 1)</text>
+<text x="280" y="455" class="small">New input</text>
+<line x1="485" y1="305" x2="535" y2="305" stroke="#374151" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="550" y="125" width="400" height="390" rx="12" fill="#f5f7fa" stroke="#d7dce2"/>
+<text x="575" y="168">Linear output rule</text>
+<text x="575" y="221">df = 5h + 2k</text>
+<text x="575" y="274" class="small">h = 0.02 gives 5h = 0.10</text>
+<text x="575" y="319" class="small">k = −0.01 gives 2k = −0.02</text>
+<line x1="575" y1="345" x2="920" y2="345" stroke="#a8afb7" stroke-width="2"/>
+<text x="575" y="389">Sum: df = 0.08</text>
+<text x="575" y="442" class="small">Exact change: 0.0802</text>
+<text x="575" y="478" class="small">Remainder: h² + hk</text>
+<text x="50" y="566" class="small">For f(x, y) = x² + xy at (2, 1), the partial slopes are 5 and 2.</text>
+<text x="50" y="600" class="small">A positive h and a negative k make output contributions of opposite signs.</text>
+</svg>
