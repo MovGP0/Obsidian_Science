@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="620" viewBox="0 0 1000 620" role="img" aria-labelledby="title desc">
+<rect width="1000" height="620" fill="white"/>
+<style>text{font-family:Arial,sans-serif;fill:#182332;font-size:22px}.title{font-size:28px;font-weight:bold}.small{font-size:20px}.blue{fill:#205e9b}.orange{fill:#a84d00}</style>
+<title id="title">Ordinary annuity: measure all deposits at the same time</title>
+<desc id="desc">Three annual deposits of 100 euros at times one, two, and three grow to 121, 110, and 100 euros at time three with ten percent yearly interest.</desc>
+<text class="title" x="45" y="45">Three end-of-year deposits at 10% yearly interest</text>
+<text x="45" y="82">Each deposit starts earning interest after its payment time.</text>
+<line x1="110" y1="165" x2="895" y2="165" stroke="#182332" stroke-width="3"/>
+<path d="M 895 165 l -14 -8 m 14 8 l -14 8" stroke="#182332" fill="none" stroke-width="3"/>
+<g stroke="#182332" stroke-width="3"><path d="M130 154 v22 M370 154 v22 M610 154 v22 M850 154 v22"/></g>
+<g text-anchor="middle"><text x="130" y="139">0</text><text x="370" y="139">1</text><text x="610" y="139">2</text><text x="850" y="139">3</text>
+<text class="small" x="130" y="207">Now</text><text class="blue" x="370" y="207">+ €100</text><text class="blue" x="610" y="207">+ €100</text><text class="blue" x="850" y="207">+ €100</text></g>
+<text x="45" y="280">Deposit at year 1</text><line x1="370" y1="272" x2="850" y2="272" stroke="#205e9b" stroke-width="5"/><circle cx="370" cy="272" r="6" fill="#205e9b"/><circle cx="850" cy="272" r="6" fill="#205e9b"/>
+<text class="small" text-anchor="middle" x="610" y="257">2 growth periods</text>
+<text x="45" y="357">Deposit at year 2</text><line x1="610" y1="349" x2="850" y2="349" stroke="#205e9b" stroke-width="5"/><circle cx="610" cy="349" r="6" fill="#205e9b"/><circle cx="850" cy="349" r="6" fill="#205e9b"/>
+<text class="small" text-anchor="middle" x="730" y="334">1 growth period</text>
+<text x="45" y="430">Deposit at year 3</text><circle cx="850" cy="422" r="7" fill="#205e9b"/>
+<text class="small" text-anchor="end" x="817" y="430">0 growth periods</text>
+<rect x="45" y="479" width="910" height="102" rx="9" fill="#eef4fa" stroke="#205e9b"/>
+<text text-anchor="middle" x="500" y="518">Value just after the third deposit</text>
+<text text-anchor="middle" x="500" y="554">€100 × 1.1² + €100 × 1.1 + €100 = €121 + €110 + €100 = €331</text>
+</svg>

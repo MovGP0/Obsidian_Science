@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" role="img">
+<title>Quadratic sign chart with roots minus one and three</title>
+<desc>The factor x plus one is negative before minus one and positive after. The factor x minus three is negative before three and positive after. Their product is negative between the roots and positive outside.</desc>
+<rect width="1000" height="600" fill="white"/>
+<g font-family="Arial, sans-serif" fill="#17202a">
+  <text x="50" y="55" font-size="28" font-weight="bold">Signs of f(x) = (x + 1)(x − 3)</text>
+  <text x="50" y="95" font-size="22">The product is negative where the factor signs differ.</text>
+  <rect x="360" y="165" width="360" height="345" fill="#e5f1eb"/>
+  <g fill="#f3f6fa"><rect x="220" y="165" width="140" height="345"/><rect x="720" y="165" width="230" height="345"/></g>
+  <g stroke="#17202a" stroke-width="2">
+    <path d="M 210 185 H 955"/><path d="M 360 170 V 190 M 360 225 V 470 M 360 505 V 510" stroke-dasharray="6 5"/><path d="M 720 170 V 190 M 720 225 V 470 M 720 505 V 510" stroke-dasharray="6 5"/>
+    <path d="M 210 270 H 950" stroke="#c1c8cf"/><path d="M 210 365 H 950" stroke="#c1c8cf"/><path d="M 210 460 H 950" stroke="#c1c8cf"/>
+  </g>
+  <g font-size="24" text-anchor="middle">
+    <text x="290" y="150">x &lt; −1</text><text x="540" y="150">−1 &lt; x &lt; 3</text><text x="835" y="150">x &gt; 3</text>
+    <text x="360" y="215" font-weight="bold">−1</text><text x="720" y="215" font-weight="bold">3</text>
+  </g>
+  <g font-size="24"><text x="55" y="255">x + 1</text><text x="55" y="350">x − 3</text><text x="55" y="445" font-weight="bold">f(x)</text></g>
+  <g font-size="32" font-weight="bold" text-anchor="middle">
+    <text x="290" y="255">−</text><text x="540" y="255">+</text><text x="835" y="255">+</text>
+    <text x="290" y="350">−</text><text x="540" y="350">−</text><text x="835" y="350">+</text>
+    <text x="290" y="445" fill="#184e8c">+</text><text x="540" y="445" fill="#1e6645">−</text><text x="835" y="445" fill="#184e8c">+</text>
+  </g>
+  <g font-size="22" text-anchor="middle"><text x="360" y="495">f = 0</text><text x="720" y="495">f = 0</text></g>
+  <text x="50" y="555" font-size="24">f(x) &lt; 0: −1 &lt; x &lt; 3. For f(x) ≤ 0, also include both roots.</text>
+</g></svg>

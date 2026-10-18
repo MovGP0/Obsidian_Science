@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" role="img" aria-labelledby="title desc">
+  <title id="title">The base case and induction step</title>
+  <desc id="desc">Proving the first case P(n zero) starts a chain. A separately proved implication for every integer k from the starting index carries each case to its next case.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#24558a"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="600" fill="#ffffff"/>
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="24" fill="#17212b">
+    <text x="45" y="50" font-size="32" font-weight="700">Mathematical induction needs both parts</text>
+    <text x="45" y="98">1. Prove the base case.</text>
+    <rect x="45" y="135" width="205" height="105" rx="12" fill="#e0efdf" stroke="#286140" stroke-width="3"/>
+    <text x="147" y="178" text-anchor="middle" font-size="29" font-weight="700">P(n₀)</text>
+    <text x="147" y="215" text-anchor="middle" font-size="22">proved directly</text>
+    <rect x="335" y="135" width="205" height="105" rx="12" fill="#e5edf8" stroke="#24558a" stroke-width="3"/>
+    <text x="437" y="196" text-anchor="middle" font-size="29">P(n₀ + 1)</text>
+    <rect x="625" y="135" width="205" height="105" rx="12" fill="#e5edf8" stroke="#24558a" stroke-width="3"/>
+    <text x="727" y="196" text-anchor="middle" font-size="29">P(n₀ + 2)</text>
+    <g stroke="#24558a" stroke-width="3" marker-end="url(#arrow)">
+      <line x1="260" y1="188" x2="323" y2="188"/>
+      <line x1="550" y1="188" x2="613" y2="188"/>
+      <line x1="840" y1="188" x2="900" y2="188"/>
+    </g>
+    <text x="925" y="196" font-size="34">…</text>
+    <text x="45" y="294">Each arrow applies the same general rule proved below.</text>
+    <text x="45" y="355">2. Prove the induction step for an arbitrary integer k ≥ n₀.</text>
+    <rect x="130" y="390" width="740" height="120" rx="12" fill="#fff7e6" stroke="#8a6110" stroke-width="3"/>
+    <text x="270" y="442" text-anchor="middle" font-size="29" font-weight="700">P(k)</text>
+    <text x="270" y="482" text-anchor="middle" font-size="22">temporary hypothesis</text>
+    <line x1="435" y1="445" x2="565" y2="445" stroke="#24558a" stroke-width="3" marker-end="url(#arrow)"/>
+    <text x="720" y="442" text-anchor="middle" font-size="29" font-weight="700">P(k + 1)</text>
+    <text x="720" y="482" text-anchor="middle" font-size="22">derived conclusion</text>
+    <text x="45" y="565" font-size="23">The step is conditional. The base case makes the first condition true.</text>
+  </g>
+</svg>

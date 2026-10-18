@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="590" viewBox="0 0 1000 590" role="img" aria-labelledby="title desc">
+<title id="title">Finite sums and products use the same indexed list</title>
+<desc id="desc">The index k runs from one to three through entries four, seven, and two. Addition gives thirteen; multiplication gives fifty-six.</desc>
+<rect width="1000" height="590" fill="white"/>
+<g font-family="Arial, sans-serif" fill="#17212b" text-anchor="middle">
+<text x="500" y="48" font-size="29" font-weight="bold">One list, two operations</text>
+<text x="500" y="88" font-size="22">The index k selects each entry once.</text>
+<g fill="#eff4f8" stroke="#526b80" stroke-width="2">
+<rect x="280" y="119" width="130" height="105" rx="9"/><rect x="435" y="119" width="130" height="105" rx="9"/><rect x="590" y="119" width="130" height="105" rx="9"/>
+</g>
+<text x="345" y="153" font-size="22">k = 1</text><text x="500" y="153" font-size="22">k = 2</text><text x="655" y="153" font-size="22">k = 3</text>
+<text x="345" y="199" font-size="30">a₁ = 4</text><text x="500" y="199" font-size="30">a₂ = 7</text><text x="655" y="199" font-size="30">a₃ = 2</text>
+<rect x="45" y="266" width="910" height="114" rx="10" fill="#eaf2fc" stroke="#225a95" stroke-width="2"/>
+<text x="130" y="310" font-size="23" font-weight="bold">ADD</text><text x="130" y="346" font-size="22">sum</text>
+<text x="300" y="298" font-size="20">3</text><text x="300" y="340" font-size="47">Σ</text><text x="300" y="365" font-size="20">k = 1</text>
+<text x="363" y="337" font-size="28">aₖ</text><text x="627" y="337" font-size="30">= 4 + 7 + 2 = 13</text>
+<rect x="45" y="411" width="910" height="114" rx="10" fill="#f0f5ec" stroke="#456d30" stroke-width="2"/>
+<text x="130" y="455" font-size="23" font-weight="bold">MULTIPLY</text><text x="130" y="491" font-size="22">product</text>
+<text x="300" y="443" font-size="20">3</text><text x="300" y="485" font-size="47">Π</text><text x="300" y="510" font-size="20">k = 1</text>
+<text x="363" y="482" font-size="28">aₖ</text><text x="627" y="482" font-size="30">= 4 × 7 × 2 = 56</text>
+<text x="500" y="564" font-size="22">Both bounds are included: 3 − 1 + 1 = 3 entries.</text>
+</g></svg>

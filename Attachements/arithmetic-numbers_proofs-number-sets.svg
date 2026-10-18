@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" role="img" aria-labelledby="title desc">
+  <title id="title">Nested real number sets</title>
+  <desc id="desc">The natural numbers are contained in the integers, which are contained in the rational numbers, which are contained in the real numbers. Irrational numbers are real numbers outside the rational set.</desc>
+  <rect width="1000" height="600" fill="#ffffff"/>
+  <g font-family="Segoe UI, Arial, sans-serif" fill="#17212b" font-size="24">
+    <text x="40" y="42" font-size="30" font-weight="700">Number sets: every inner region belongs to the outer set</text>
+    <rect x="35" y="70" width="930" height="460" rx="18" fill="#f4f7fa" stroke="#36485c" stroke-width="3"/>
+    <text x="60" y="112" font-weight="700">ℝ  Real numbers</text>
+    <rect x="65" y="140" width="605" height="360" rx="14" fill="#e5edf8" stroke="#24558a" stroke-width="3"/>
+    <text x="85" y="182" font-weight="700">ℚ  Rational numbers</text>
+    <rect x="95" y="215" width="455" height="255" rx="12" fill="#d7eadc" stroke="#286140" stroke-width="3"/>
+    <text x="115" y="255" font-weight="700">ℤ  Integers</text>
+    <rect x="125" y="310" width="305" height="130" rx="10" fill="#fff1cf" stroke="#8a6110" stroke-width="3"/>
+    <text x="145" y="350" font-weight="700">ℕ  Natural numbers</text>
+    <text x="145" y="399">0, 1, 2, 3, …</text>
+    <text x="455" y="303">−2</text>
+    <text x="455" y="353">−1</text>
+    <text x="575" y="276">1/2</text>
+    <text x="575" y="326">−3/4</text>
+    <text x="705" y="185" font-weight="700">Irrational numbers</text>
+    <text x="705" y="228">Real, but not rational</text>
+    <text x="735" y="302" font-size="32">√2</text>
+    <text x="835" y="302" font-size="32">π</text>
+    <text x="705" y="383">√2 is algebraic.</text>
+    <text x="705" y="425">π is transcendental.</text>
+    <text x="40" y="570" font-size="22">The regions show membership. Their areas do not compare the sizes of these infinite sets.</text>
+  </g>
+</svg>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" role="img">
+<title>Triangle inequality: total travel and final distance</title>
+<desc>A first step from zero to five, then a reverse step to two. The total travel is eight, but the final distance from zero is two.</desc>
+<rect width="1000" height="600" fill="white"/>
+<defs>
+  <marker id="blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#184e8c"/></marker>
+  <marker id="orange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#a3480d"/></marker>
+  <marker id="green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#1e6645"/></marker>
+</defs>
+<g font-family="Arial, sans-serif" fill="#17202a">
+  <text x="50" y="55" font-size="28" font-weight="bold">Two steps can partly cancel</text>
+  <text x="50" y="95" font-size="22">Start at 0. Move +5, then move −3. Finish at 2.</text>
+  <g stroke="#c9cdd2" stroke-width="2" stroke-dasharray="6 6">
+    <path d="M 160 145 V 395"/><path d="M 400 230 V 395"/><path d="M 760 145 V 395"/>
+  </g>
+  <path d="M 160 180 H 760" stroke="#184e8c" stroke-width="6" marker-end="url(#blue)"/>
+  <text x="460" y="155" text-anchor="middle" font-size="24" fill="#184e8c">First step: +5</text>
+  <path d="M 760 255 H 400" stroke="#a3480d" stroke-width="6" marker-end="url(#orange)"/>
+  <text x="580" y="298" text-anchor="middle" font-size="24" fill="#a3480d">Second step: −3</text>
+  <path d="M 160 360 H 400" stroke="#1e6645" stroke-width="6" marker-end="url(#green)"/>
+  <text x="470" y="365" font-size="23" fill="#1e6645">Final displacement: +2</text>
+  <path d="M 100 405 H 870" stroke="#17202a" stroke-width="2"/>
+  <g stroke="#17202a" stroke-width="2"><path d="M 160 396 V 414"/><path d="M 400 396 V 414"/><path d="M 760 396 V 414"/></g>
+  <g font-size="23" text-anchor="middle"><text x="160" y="442">0</text><text x="400" y="442">2</text><text x="760" y="442">5</text></g>
+  <rect x="80" y="475" width="840" height="85" rx="12" fill="#f0f5fa" stroke="#c9d5e0"/>
+  <text x="110" y="510" font-size="23">Total travel: |5| + |−3| = 8</text>
+  <text x="110" y="545" font-size="23">Distance from the start: |5 + (−3)| = 2 ≤ 8</text>
+</g></svg>

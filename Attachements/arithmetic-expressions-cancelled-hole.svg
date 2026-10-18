@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="640" viewBox="0 0 1000 640" role="img" aria-labelledby="title desc">
+<title id="title">Canceled factor leaves a missing input</title>
+<desc id="desc">The graph of (x squared minus one) divided by (x minus one) is the line y equals x plus one with an open circle at x equals one and y equals two.</desc>
+<rect width="1000" height="640" fill="white"/>
+<g font-family="Arial, sans-serif" fill="#111" font-size="22">
+<text x="500" y="40" text-anchor="middle" font-size="28">Cancellation preserves the original exclusion</text>
+<text x="500" y="78" text-anchor="middle">(x² − 1)/(x − 1) = x + 1, for x ≠ 1</text>
+<g stroke="#d1d5db" stroke-width="1">
+<path d="M130 110 V530 M274 110 V530 M418 110 V530 M562 110 V530 M706 110 V530 M850 110 V530"/>
+<path d="M130 110 H850 M130 194 H850 M130 278 H850 M130 362 H850 M130 446 H850 M130 530 H850"/>
+</g>
+<path d="M110 446 H900 M418 550 V100" stroke="#111" stroke-width="2" fill="none"/>
+<path d="M900 446 l-12 -6 v12 Z M418 100 l-6 12 h12 Z" fill="#111"/>
+<path d="M130 530 L850 110" stroke="#111" stroke-width="4" fill="none"/>
+<path d="M562 446 V278 H418" stroke="#444" stroke-width="2" stroke-dasharray="7 6" fill="none"/>
+<circle cx="562" cy="278" r="10" fill="white" stroke="#111" stroke-width="3"/>
+<text x="130" y="475" text-anchor="middle">−2</text>
+<text x="274" y="475" text-anchor="middle">−1</text>
+<text x="399" y="475" text-anchor="middle">0</text>
+<text x="562" y="475" text-anchor="middle">1</text>
+<text x="706" y="475" text-anchor="middle">2</text>
+<text x="850" y="475" text-anchor="middle">3</text>
+<text x="395" y="537" text-anchor="end">−1</text>
+<text x="395" y="369" text-anchor="end">1</text>
+<text x="395" y="285" text-anchor="end">2</text>
+<text x="395" y="201" text-anchor="end">3</text>
+<text x="395" y="117" text-anchor="end">4</text>
+<text x="920" y="453">x</text>
+<text x="440" y="110">y</text>
+<path d="M663 323 L576 286" stroke="#111" stroke-width="2" fill="none"/>
+<text x="665" y="325">Missing point (1, 2)</text>
+<text x="665" y="358">Original denominator:</text>
+<text x="665" y="390">1 − 1 = 0</text>
+<text x="500" y="602" text-anchor="middle">An open circle means the function has no value at that point.</text>
+</g></svg>

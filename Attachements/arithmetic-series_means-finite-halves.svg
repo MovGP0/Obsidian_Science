@@ -1,0 +1,24 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" role="img" aria-labelledby="title">
+<title id="title">Four geometric terms fill fifteen sixteenths of a bar</title>
+<rect width="1000" height="600" fill="white"/>
+<g font-family="Arial, sans-serif" fill="#172534">
+<text x="500" y="48" text-anchor="middle" font-size="28" font-weight="bold">A finite geometric sum leaves a finite remainder</text>
+<text x="500" y="98" text-anchor="middle" font-size="24">1/2 + 1/4 + 1/8 + 1/16 = 15/16</text>
+<rect x="80" y="165" width="400.0" height="140" fill="#d9eafd" stroke="#33475b" stroke-width="2"/>
+<text x="280.0" y="245" text-anchor="middle" font-size="24">1/2</text>
+<rect x="480.0" y="165" width="200.0" height="140" fill="#d9f0df" stroke="#33475b" stroke-width="2"/>
+<text x="580.0" y="245" text-anchor="middle" font-size="24">1/4</text>
+<rect x="680.0" y="165" width="100.0" height="140" fill="#ffe0af" stroke="#33475b" stroke-width="2"/>
+<text x="730.0" y="245" text-anchor="middle" font-size="24">1/8</text>
+<rect x="780.0" y="165" width="50.0" height="140" fill="#edddfa" stroke="#33475b" stroke-width="2"/>
+<rect x="830.0" y="165" width="50.0" height="140" fill="#ffffff" stroke="#33475b" stroke-width="2"/>
+<path d="M 805.0 310 L 805.0 350 L 550 350 L 550 383" fill="none" stroke="#33475b" stroke-width="2"/>
+<text x="550" y="416" text-anchor="middle" font-size="22">Fourth term: 1/16</text>
+<path d="M 855.0 310 L 855.0 350 L 820 350 L 820 383" fill="none" stroke="#33475b" stroke-width="2"/>
+<text x="820" y="416" text-anchor="middle" font-size="22">Remainder: 1/16</text>
+<path d="M 80 145 L 880 145 M 80 137 L 80 153 M 880 137 L 880 153" stroke="#33475b" stroke-width="2" fill="none"/>
+<text x="480" y="135" text-anchor="middle" font-size="21">Whole bar = 1</text>
+<text x="80" y="485" font-size="23">First term a = 1/2; common ratio r = 1/2; number of terms n = 4.</text>
+<text x="80" y="535" font-size="23">Stop after four pieces. The white piece is not included in the sum.</text>
+</g>
+</svg>

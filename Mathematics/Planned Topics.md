@@ -1,3 +1,10 @@
+---
+title: "Planned mathematics topics"
+---
+
+> [!TLDR]
+> This catalogue lists mathematics topics by source chapter; the Arithmetic entries link to completed learning articles.
+
 ## Chapter catalogue
 
 | Source chapter | English title | Distinct entries |
@@ -25,127 +32,129 @@
 
 ## 1. Arithmetic
 
+Learning guide: [[_Overview]]. Every entry below links to its learning article or section.
+
 Existing starting points: [[Algebra - Overview]], [[Complex numbers - Overview]].
 
-| Source ID | English topic |
-| --- | --- |
-| 1.1 | **Elementary rules of calculation** |
-| 1.1.1 | **Numbers** |
-| 1.1.1.1 | Natural numbers, integers, and rational numbers |
-| 1.1.1.2 | Irrational and transcendental numbers |
-| 1.1.1.3 | Real numbers |
-| 1.1.1.4 | Continued fractions |
-| 1.1.1.5 | Commensurability |
-| 1.1.2 | **Methods of proof** |
-| 1.1.2.1 | Direct proof |
-| 1.1.2.2 | Indirect proof or proof by contradiction |
-| 1.1.2.3 | Mathematical induction |
-| 1.1.2.4 | Constructive proof |
-| 1.1.3 | **Sums and products** |
-| 1.1.3.1 | Sums |
-| 1.1.3.2 | Products |
-| 1.1.4 | **Powers, roots, and logarithms** |
-| 1.1.4.1 | Powers |
-| 1.1.4.2 | Roots |
-| 1.1.4.3 | Logarithms |
-| 1.1.4.4 | Special logarithms |
-| 1.1.5 | **Algebraic expressions** |
-| 1.1.5.1 | Definitions |
-| 1.1.5.2 | Classification of algebraic expressions |
-| 1.1.6 | **Polynomial expressions** |
-| 1.1.6.1 | Representation as a polynomial |
-| 1.1.6.2 | Factorization of a polynomial |
-| 1.1.6.3 | Special formulas |
-| 1.1.6.4 | Binomial theorem |
-| 1.1.6.5 | Determination of the greatest common divisor of two polynomials |
-| 1.1.7 | **Rational expressions** |
-| 1.1.7.1 | Reduction to simplest form |
-| 1.1.7.2 | Determination of the polynomial part |
-| 1.1.7.3 | Partial fraction decomposition |
-| 1.1.7.4 | Transformation of proportions |
-| 1.1.8 | Irrational expressions |
-| 1.2 | **Finite series** |
-| 1.2.1 | Definition of a finite series |
-| 1.2.2 | Arithmetic series |
-| 1.2.3 | Geometric series |
-| 1.2.4 | Special finite series |
-| 1.2.5 | **Means** |
-| 1.2.5.1 | Arithmetic mean |
-| 1.2.5.2 | Geometric mean |
-| 1.2.5.3 | Harmonic mean |
-| 1.2.5.4 | Quadratic mean |
-| 1.2.5.5 | Comparison of means for two positive quantities a and b |
-| 1.3 | **Financial mathematics** |
-| 1.3.1 | Percentage calculations |
-| 1.3.2 | Compound interest calculations |
-| 1.3.3 | **Loan repayment calculations** |
-| 1.3.3.1 | Repayment |
-| 1.3.3.2 | Equal principal repayments |
-| 1.3.3.3 | Equal annuity payments |
-| 1.3.4 | **Annuity calculations** |
-| 1.3.4.1 | Annuity |
-| 1.3.4.2 | Constant ordinary annuity |
-| 1.3.4.3 | Account balance after n annuity payments |
-| 1.3.5 | Depreciation |
-| 1.4 | **Inequalities** |
-| 1.4.1 | **Pure inequalities** |
-| 1.4.1.1 | Definitions |
-| 1.4.1.2 | Properties of type I and type II inequalities |
-| 1.4.2 | **Special inequalities** |
-| 1.4.2.1 | Triangle inequality |
-| 1.4.2.2 | Inequalities for the absolute value of the difference of two numbers |
-| 1.4.2.3 | Inequality for the arithmetic and geometric means |
-| 1.4.2.4 | Inequality for the arithmetic and quadratic means |
-| 1.4.2.5 | Inequalities for different means of two real numbers |
-| 1.4.2.6 | Bernoulli's inequality |
-| 1.4.2.7 | Binomial inequality |
-| 1.4.2.8 | Cauchy–Schwarz inequality |
-| 1.4.2.9 | Chebyshev's inequality |
-| 1.4.2.10 | Generalized Chebyshev inequality |
-| 1.4.2.11 | Hölder's inequality |
-| 1.4.2.12 | Minkowski's inequality |
-| 1.4.3 | **Solution of first- and second-degree inequalities** |
-| 1.4.3.1 | General principles |
-| 1.4.3.2 | First-degree inequalities |
-| 1.4.3.3 | Second-degree inequalities |
-| 1.4.3.4 | General case of a second-degree inequality |
-| 1.5 | **Complex numbers** |
-| 1.5.1 | **Imaginary and complex numbers** |
-| 1.5.1.1 | Imaginary unit |
-| 1.5.1.2 | Complex numbers |
-| 1.5.2 | **Geometric representation** |
-| 1.5.2.1 | Vector representation |
-| 1.5.2.2 | Equality of complex numbers |
-| 1.5.2.3 | Trigonometric form of complex numbers |
-| 1.5.2.4 | Exponential form of a complex number |
-| 1.5.2.5 | Complex conjugates |
-| 1.5.3 | **Calculations with complex numbers** |
-| 1.5.3.1 | Addition and subtraction |
-| 1.5.3.2 | Multiplication |
-| 1.5.3.3 | Division |
-| 1.5.3.4 | General rules for the four basic arithmetic operations |
-| 1.5.3.5 | Raising a complex number to a power |
-| 1.5.3.6 | Root extraction or taking the nth root of a complex number |
-| 1.6 | **Algebraic and transcendental equations** |
-| 1.6.1 | **Transformation of algebraic equations into normal form** |
-| 1.6.1.1 | Definitions |
-| 1.6.1.2 | Systems of n algebraic equations |
-| 1.6.1.3 | Extraneous roots |
-| 1.6.2 | **Equations of first to fourth degree** |
-| 1.6.2.1 | First-degree equations (linear equations) |
-| 1.6.2.2 | Second-degree equations (quadratic equations) |
-| 1.6.2.3 | Third-degree equations (cubic equations) |
-| 1.6.2.4 | Fourth-degree equations |
-| 1.6.2.5 | Equations of fifth and higher degree |
-| 1.6.3 | **Equations of nth degree** |
-| 1.6.3.1 | General properties of algebraic equations |
-| 1.6.3.2 | Equations with real coefficients |
-| 1.6.4 | **Reduction of transcendental equations to algebraic equations** |
-| 1.6.4.1 | Definition |
-| 1.6.4.2 | Exponential equations |
-| 1.6.4.3 | Logarithmic equations |
-| 1.6.4.4 | Trigonometric equations |
-| 1.6.4.5 | Equations with hyperbolic functions |
+| Source ID | English topic | Learning article |
+| --- | --- | --- |
+| 1.1 | **Elementary rules of calculation** | [[_Overview#Elementary rules of calculation\|Overview]] |
+| 1.1.1 | **Numbers** | [[Number sets and the real line\|Number sets and the real line]] |
+| 1.1.1.1 | Natural numbers, integers, and rational numbers | [[Number sets and the real line#Natural numbers, integers, and rational numbers\|Number sets and the real line]] |
+| 1.1.1.2 | Irrational and transcendental numbers | [[Irrational and transcendental numbers\|Irrational and transcendental numbers]] |
+| 1.1.1.3 | Real numbers | [[Number sets and the real line#Real numbers\|Number sets and the real line]] |
+| 1.1.1.4 | Continued fractions | [[Continued fractions\|Continued fractions]] |
+| 1.1.1.5 | Commensurability | [[Commensurability\|Commensurability]] |
+| 1.1.2 | **Methods of proof** | [[Direct and constructive proofs\|Direct and constructive proofs]] |
+| 1.1.2.1 | Direct proof | [[Direct and constructive proofs#Direct proof\|Direct and constructive proofs]] |
+| 1.1.2.2 | Indirect proof or proof by contradiction | [[Proof by contradiction\|Proof by contradiction]] |
+| 1.1.2.3 | Mathematical induction | [[Mathematical induction\|Mathematical induction]] |
+| 1.1.2.4 | Constructive proof | [[Direct and constructive proofs#Constructive proof\|Direct and constructive proofs]] |
+| 1.1.3 | **Sums and products** | [[Finite sums and products#Sums and products\|Finite sums and products]] |
+| 1.1.3.1 | Sums | [[Finite sums and products#Sums\|Finite sums and products]] |
+| 1.1.3.2 | Products | [[Finite sums and products#Products\|Finite sums and products]] |
+| 1.1.4 | **Powers, roots, and logarithms** | [[Powers and exponent rules#Powers, roots, and logarithms\|Powers and exponent rules]] |
+| 1.1.4.1 | Powers | [[Powers and exponent rules#Positive integer exponents\|Powers and exponent rules]] |
+| 1.1.4.2 | Roots | [[Roots and principal values\|Roots and principal values]] |
+| 1.1.4.3 | Logarithms | [[Logarithms and their bases#Recover an exponent\|Logarithms and their bases]] |
+| 1.1.4.4 | Special logarithms | [[Logarithms and their bases#Special logarithms\|Logarithms and their bases]] |
+| 1.1.5 | **Algebraic expressions** | [[Algebraic expressions and their types\|Algebraic expressions and their types]] |
+| 1.1.5.1 | Definitions | [[Algebraic expressions and their types#Definitions\|Algebraic expressions and their types]] |
+| 1.1.5.2 | Classification of algebraic expressions | [[Algebraic expressions and their types#Classification of algebraic expressions\|Algebraic expressions and their types]] |
+| 1.1.6 | **Polynomial expressions** | [[Polynomials and identities#What a polynomial represents\|Polynomials and identities]] |
+| 1.1.6.1 | Representation as a polynomial | [[Polynomials and identities#Representation as a polynomial\|Polynomials and identities]] |
+| 1.1.6.2 | Factorization of a polynomial | [[Factoring polynomials\|Factoring polynomials]] |
+| 1.1.6.3 | Special formulas | [[Polynomials and identities#Special formulas\|Polynomials and identities]] |
+| 1.1.6.4 | Binomial theorem | [[The binomial theorem\|The binomial theorem]] |
+| 1.1.6.5 | Determination of the greatest common divisor of two polynomials | [[Greatest common divisors of polynomials\|Greatest common divisors of polynomials]] |
+| 1.1.7 | **Rational expressions** | [[Rational expressions and polynomial division#Rational expressions and their domains\|Rational expressions and polynomial division]] |
+| 1.1.7.1 | Reduction to simplest form | [[Rational expressions and polynomial division#Reduction to simplest form\|Rational expressions and polynomial division]] |
+| 1.1.7.2 | Determination of the polynomial part | [[Rational expressions and polynomial division#Determination of the polynomial part\|Rational expressions and polynomial division]] |
+| 1.1.7.3 | Partial fraction decomposition | [[Partial fractions\|Partial fractions]] |
+| 1.1.7.4 | Transformation of proportions | [[Ratios and transformations of proportions\|Ratios and transformations of proportions]] |
+| 1.1.8 | Irrational expressions | [[Radical expressions\|Radical expressions]] |
+| 1.2 | **Finite series** | [[Finite sums and series\|Finite sums and series]] |
+| 1.2.1 | Definition of a finite series | [[Finite sums and series\|Finite sums and series]] |
+| 1.2.2 | Arithmetic series | [[Arithmetic series\|Arithmetic series]] |
+| 1.2.3 | Geometric series | [[Geometric series\|Geometric series]] |
+| 1.2.4 | Special finite series | [[Special finite series\|Special finite series]] |
+| 1.2.5 | **Means** | [[Arithmetic geometric harmonic and quadratic means\|Arithmetic geometric harmonic and quadratic means]] |
+| 1.2.5.1 | Arithmetic mean | [[Arithmetic geometric harmonic and quadratic means#Arithmetic mean\|Arithmetic geometric harmonic and quadratic means]] |
+| 1.2.5.2 | Geometric mean | [[Arithmetic geometric harmonic and quadratic means#Geometric mean\|Arithmetic geometric harmonic and quadratic means]] |
+| 1.2.5.3 | Harmonic mean | [[Arithmetic geometric harmonic and quadratic means#Harmonic mean\|Arithmetic geometric harmonic and quadratic means]] |
+| 1.2.5.4 | Quadratic mean | [[Arithmetic geometric harmonic and quadratic means#Quadratic mean\|Arithmetic geometric harmonic and quadratic means]] |
+| 1.2.5.5 | Comparison of means for two positive quantities a and b | [[Comparing means of two positive numbers\|Comparing means of two positive numbers]] |
+| 1.3 | **Financial mathematics** | [[Percentages#Financial mathematics\|Percentages]] |
+| 1.3.1 | Percentage calculations | [[Percentages#Percentage calculations\|Percentages]] |
+| 1.3.2 | Compound interest calculations | [[Compound interest\|Compound interest]] |
+| 1.3.3 | **Loan repayment calculations** | [[Loan repayment\|Loan repayment]] |
+| 1.3.3.1 | Repayment | [[Loan repayment#Repayment\|Loan repayment]] |
+| 1.3.3.2 | Equal principal repayments | [[Loan repayment#Equal principal repayments\|Loan repayment]] |
+| 1.3.3.3 | Equal annuity payments | [[Loan repayment#Equal annuity payments\|Loan repayment]] |
+| 1.3.4 | **Annuity calculations** | [[Annuities\|Annuities]] |
+| 1.3.4.1 | Annuity | [[Annuities#Annuity\|Annuities]] |
+| 1.3.4.2 | Constant ordinary annuity | [[Annuities#Constant ordinary annuity\|Annuities]] |
+| 1.3.4.3 | Account balance after n annuity payments | [[Annuities#Account balance after n annuity payments\|Annuities]] |
+| 1.3.5 | Depreciation | [[Depreciation\|Depreciation]] |
+| 1.4 | **Inequalities** | [[Inequality definitions and rules\|Inequality definitions and rules]] |
+| 1.4.1 | **Pure inequalities** | [[Inequality definitions and rules\|Inequality definitions and rules]] |
+| 1.4.1.1 | Definitions | [[Inequality definitions and rules#Definitions\|Inequality definitions and rules]] |
+| 1.4.1.2 | Properties of type I and type II inequalities | [[Inequality definitions and rules#Source-specific type I and type II labels\|Inequality definitions and rules]] |
+| 1.4.2 | **Special inequalities** | [[Absolute values and triangle bounds\|Absolute values and triangle bounds]] |
+| 1.4.2.1 | Triangle inequality | [[Absolute values and triangle bounds#Triangle inequality\|Absolute values and triangle bounds]] |
+| 1.4.2.2 | Inequalities for the absolute value of the difference of two numbers | [[Absolute values and triangle bounds#Bounds for a difference\|Absolute values and triangle bounds]] |
+| 1.4.2.3 | Inequality for the arithmetic and geometric means | [[Inequalities between means#Arithmetic and geometric means\|Inequalities between means]] |
+| 1.4.2.4 | Inequality for the arithmetic and quadratic means | [[Inequalities between means#Arithmetic and quadratic means\|Inequalities between means]] |
+| 1.4.2.5 | Inequalities for different means of two real numbers | [[Inequalities between means#Four means of two positive numbers\|Inequalities between means]] |
+| 1.4.2.6 | Bernoulli's inequality | [[Bernoulli and binomial inequalities#Bernoulli's inequality\|Bernoulli and binomial inequalities]] |
+| 1.4.2.7 | Binomial inequality | [[Bernoulli and binomial inequalities#Binomial inequality\|Bernoulli and binomial inequalities]] |
+| 1.4.2.8 | Cauchy–Schwarz inequality | [[Cauchy-Schwarz inequality\|Cauchy-Schwarz inequality]] |
+| 1.4.2.9 | Chebyshev's inequality | [[Chebyshev sum inequalities#Order and corresponding products\|Chebyshev sum inequalities]] |
+| 1.4.2.10 | Generalized Chebyshev inequality | [[Chebyshev sum inequalities#Generalized Chebyshev inequality with power means\|Chebyshev sum inequalities]] |
+| 1.4.2.11 | Hölder's inequality | [[Holder and Minkowski inequalities#Hölder's inequality\|Holder and Minkowski inequalities]] |
+| 1.4.2.12 | Minkowski's inequality | [[Holder and Minkowski inequalities#Minkowski's inequality\|Holder and Minkowski inequalities]] |
+| 1.4.3 | **Solution of first- and second-degree inequalities** | [[Solving linear and quadratic inequalities\|Solving linear and quadratic inequalities]] |
+| 1.4.3.1 | General principles | [[Solving linear and quadratic inequalities#General principles\|Solving linear and quadratic inequalities]] |
+| 1.4.3.2 | First-degree inequalities | [[Solving linear and quadratic inequalities#First-degree inequalities\|Solving linear and quadratic inequalities]] |
+| 1.4.3.3 | Second-degree inequalities | [[Solving linear and quadratic inequalities#Second-degree inequalities of the form x² compared with m\|Solving linear and quadratic inequalities]] |
+| 1.4.3.4 | General case of a second-degree inequality | [[Solving linear and quadratic inequalities#General quadratic case\|Solving linear and quadratic inequalities]] |
+| 1.5 | **Complex numbers** | [[Complex numbers and the plane\|Complex numbers and the plane]] |
+| 1.5.1 | **Imaginary and complex numbers** | [[Complex numbers and the plane\|Complex numbers and the plane]] |
+| 1.5.1.1 | Imaginary unit | [[Complex numbers and the plane\|Complex numbers and the plane]] |
+| 1.5.1.2 | Complex numbers | [[Complex numbers and the plane\|Complex numbers and the plane]] |
+| 1.5.2 | **Geometric representation** | [[Complex numbers and the plane\|Complex numbers and the plane]] |
+| 1.5.2.1 | Vector representation | [[Complex numbers and the plane\|Complex numbers and the plane]] |
+| 1.5.2.2 | Equality of complex numbers | [[Complex numbers and the plane\|Complex numbers and the plane]] |
+| 1.5.2.3 | Trigonometric form of complex numbers | [[Polar form of complex numbers\|Polar form of complex numbers]] |
+| 1.5.2.4 | Exponential form of a complex number | [[Exponential form of complex numbers\|Exponential form of complex numbers]] |
+| 1.5.2.5 | Complex conjugates | [[Complex arithmetic and conjugates\|Complex arithmetic and conjugates]] |
+| 1.5.3 | **Calculations with complex numbers** | [[Complex arithmetic and conjugates\|Complex arithmetic and conjugates]] |
+| 1.5.3.1 | Addition and subtraction | [[Complex arithmetic and conjugates\|Complex arithmetic and conjugates]] |
+| 1.5.3.2 | Multiplication | [[Complex arithmetic and conjugates\|Complex arithmetic and conjugates]] |
+| 1.5.3.3 | Division | [[Complex arithmetic and conjugates\|Complex arithmetic and conjugates]] |
+| 1.5.3.4 | General rules for the four basic arithmetic operations | [[Complex arithmetic and conjugates\|Complex arithmetic and conjugates]] |
+| 1.5.3.5 | Raising a complex number to a power | [[Integer powers of complex numbers\|Integer powers of complex numbers]] |
+| 1.5.3.6 | Root extraction or taking the nth root of a complex number | [[All roots of complex numbers\|All roots of complex numbers]] |
+| 1.6 | **Algebraic and transcendental equations** | [[Equation forms and safe transformations#Algebraic and transcendental equations\|Equation forms and safe transformations]] |
+| 1.6.1 | **Transformation of algebraic equations into normal form** | [[Equation forms and safe transformations#Normal form and domain\|Equation forms and safe transformations]] |
+| 1.6.1.1 | Definitions | [[Equation forms and safe transformations#Algebraic and transcendental equations\|Equation forms and safe transformations]] |
+| 1.6.1.2 | Systems of n algebraic equations | [[Equation forms and safe transformations#Systems of n algebraic equations\|Equation forms and safe transformations]] |
+| 1.6.1.3 | Extraneous roots | [[Equation forms and safe transformations#Equivalent steps and extraneous roots\|Equation forms and safe transformations]] |
+| 1.6.2 | **Equations of first to fourth degree** | [[Linear and quadratic equations#Equations of first to fourth degree\|Linear and quadratic equations]] |
+| 1.6.2.1 | First-degree equations (linear equations) | [[Linear and quadratic equations#First-degree equations and exceptional cases\|Linear and quadratic equations]] |
+| 1.6.2.2 | Second-degree equations (quadratic equations) | [[Linear and quadratic equations#Factor a quadratic\|Linear and quadratic equations]] |
+| 1.6.2.3 | Third-degree equations (cubic equations) | [[Cubic equations\|Cubic equations]] |
+| 1.6.2.4 | Fourth-degree equations | [[Quartic equations\|Quartic equations]] |
+| 1.6.2.5 | Equations of fifth and higher degree | [[Polynomial roots and higher degrees#Fifth and higher degree: methods and limits\|Polynomial roots and higher degrees]] |
+| 1.6.3 | **Equations of nth degree** | [[Polynomial roots and higher degrees#Equations of nth degree\|Polynomial roots and higher degrees]] |
+| 1.6.3.1 | General properties of algebraic equations | [[Polynomial roots and higher degrees#Multiplicity and general properties\|Polynomial roots and higher degrees]] |
+| 1.6.3.2 | Equations with real coefficients | [[Polynomial roots and higher degrees#Equations with real coefficients\|Polynomial roots and higher degrees]] |
+| 1.6.4 | **Reduction of transcendental equations to algebraic equations** | [[Exponential and logarithmic equations#Reduction of transcendental equations\|Exponential and logarithmic equations]] |
+| 1.6.4.1 | Definition | [[Exponential and logarithmic equations#Reduction of transcendental equations\|Exponential and logarithmic equations]] |
+| 1.6.4.2 | Exponential equations | [[Exponential and logarithmic equations#Exponentials and their inverses\|Exponential and logarithmic equations]] |
+| 1.6.4.3 | Logarithmic equations | [[Exponential and logarithmic equations#Logarithmic equations and domain restrictions\|Exponential and logarithmic equations]] |
+| 1.6.4.4 | Trigonometric equations | [[Trigonometric equations\|Trigonometric equations]] |
+| 1.6.4.5 | Equations with hyperbolic functions | [[Hyperbolic equations\|Hyperbolic equations]] |
 
 ## 2. Functions and their representation
 

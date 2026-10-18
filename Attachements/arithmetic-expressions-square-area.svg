@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="640" viewBox="0 0 1000 640" role="img" aria-labelledby="title desc">
+<title id="title">Area model of the square of a sum</title>
+<desc id="desc">A square of side a plus b has four regions: a squared, two rectangles of area ab, and b squared. The length model assumes positive a and b.</desc>
+<rect width="1000" height="640" fill="white"/>
+<g font-family="Arial, sans-serif" fill="#111" font-size="24">
+<text x="500" y="40" text-anchor="middle" font-size="28">Why (a + b)² = a² + 2ab + b²</text>
+<rect x="140" y="110" width="280" height="280" fill="#dbeafe" stroke="#111" stroke-width="2"/>
+<rect x="420" y="110" width="160" height="280" fill="#dcfce7" stroke="#111" stroke-width="2"/>
+<rect x="140" y="390" width="280" height="160" fill="#dcfce7" stroke="#111" stroke-width="2"/>
+<rect x="420" y="390" width="160" height="160" fill="#fef3c7" stroke="#111" stroke-width="2"/>
+<text x="280" y="260" text-anchor="middle" font-size="32">a²</text>
+<text x="500" y="260" text-anchor="middle" font-size="32">ab</text>
+<text x="280" y="480" text-anchor="middle" font-size="32">ab</text>
+<text x="500" y="480" text-anchor="middle" font-size="32">b²</text>
+<path d="M140 100 V72 H420 V100 M420 72 H580 V100" fill="none" stroke="#111" stroke-width="2"/>
+<text x="280" y="65" text-anchor="middle">a</text>
+<text x="500" y="65" text-anchor="middle">b</text>
+<path d="M130 110 H103 V390 H130 M103 390 V550 H130" fill="none" stroke="#111" stroke-width="2"/>
+<text x="82" y="258" text-anchor="middle">a</text>
+<text x="82" y="478" text-anchor="middle">b</text>
+<text x="640" y="185" font-size="26">Whole square</text>
+<text x="640" y="225">Side length: a + b</text>
+<text x="640" y="265">Area: (a + b)²</text>
+<text x="640" y="335" font-size="26">Four regions</text>
+<text x="640" y="375">a² + ab + ab + b²</text>
+<text x="640" y="415">= a² + 2ab + b²</text>
+<text x="640" y="500" font-size="22">The diagram uses a, b &gt; 0.</text>
+<text x="500" y="610" text-anchor="middle">Two rectangles supply the middle term 2ab.</text>
+</g></svg>
