@@ -4,7 +4,7 @@ document_type: "Self-contained study chapter"
 ---
 
 > [!TLDR]
-> A small compact dimension can be hidden at low energy while still changing the fields and particle modes seen in four dimensions.
+> A small compact dimension can be hidden at low energy while still changing the fields seen in four dimensions. Standard Model symmetry groups do not require extra coordinates, but a geometric Kaluza–Klein construction can give eleven spacetime dimensions.
 
 %% source: "https://www.youtube.com/watch?v=hcL3yJ03jQQ"; video_chapter: "Video Intro"; video_start: "00:00:00"; video_end: "00:12:45" %%
 
@@ -67,7 +67,7 @@ Local appearance does not determine global geometry. A small region of Earth can
 
 ## What you should learn
 
-Explain the difference between an extra coordinate, a compact dimension, and an embedding diagram. Separate a mathematical unification from an experimental claim.
+Explain the difference between an extra coordinate, a compact dimension, and an embedding diagram. Distinguish spacetime dimensions, symmetry-group dimensions, and field components. Explain how a compact-space construction gives eleven dimensions, and separate a mathematical unification from an experimental claim.
 
 ## Local dimension and global shape
 
@@ -110,6 +110,146 @@ Three claims must remain separate:
 3. Nature is described by this particular model.
 
 The first two are mathematical statements that can be tested by calculation. The third requires agreement with observations. The simplest model does not reproduce the observed relation between particle masses and electric charges.
+
+## Spacetime, symmetry groups, and field components
+
+The word *dimension* has three different meanings in this discussion:
+
+| Meaning | What is counted | Example |
+| --- | --- | --- |
+| Spacetime dimension | Independent local coordinates that locate an event. | Ordinary spacetime has one time coordinate and three spatial coordinates. |
+| Lie-group dimension | Independent continuous transformation parameters, or generators. | $SU(3)$ has eight generators. |
+| Representation dimension | Components on which a group acts in a specified representation. | An $SU(2)$ doublet has two complex components. |
+
+An internal gauge transformation changes the field description at a fixed spacetime point. It does not move that point along an extra coordinate. The Standard Model can therefore use its internal gauge groups in four-dimensional spacetime. Extra coordinates require an additional physical assumption.
+
+### Spacetime and proper time
+
+Ordinary spacetime has coordinates $(\mechanical{t},\mechanical{x},\mechanical{y},\mechanical{z})$ in the natural units used here. Its Lorentz symmetry is $O(1,3)$, not $SU(4)$. The connected subgroup $SO^+(1,3)$ describes rotations and boosts that preserve spatial orientation and time orientation. The two common signature conventions use opposite signs for the same Lorentzian geometry.
+
+Proper time is the time measured by an ideal clock along a timelike path. It is one time quantity associated with that path, not the name of the four-coordinate set. In general relativity, the metric can vary with position, and coordinate changes are described by diffeomorphisms. Gravity is not part of the Standard Model's internal gauge group. See [[Spacetime Coordinates]] and [[Spacetime Interval]] for the spacetime description.
+
+### Standard Model gauge groups
+
+The Standard Model gauge group is conventionally written as
+
+$$
+G_{\mathrm{SM}}=SU(3)_{\mathrm C}\times SU(2)_{\mathrm L}\times U(1)_{\mathrm Y}.
+$$
+
+| Interaction or sector | Group | Meaning | Number of generators |
+| --- | --- | --- | ---: |
+| Strong interaction | $SU(3)_{\mathrm C}$ | Transformations of colour charge. | 8 |
+| Weak interaction | $SU(2)_{\mathrm L}$ | Transformations of weak isospin; the weak gauge coupling acts on left-handed fermion doublets. | 3 |
+| Weak hypercharge | $U(1)_{\mathrm Y}$ | Phase transformations associated with weak hypercharge. | 1 |
+| Electromagnetism after electroweak symmetry breaking | $U(1)_{\mathrm{EM}}$ | Phase transformations associated with electric charge. | 1 |
+
+The electromagnetic row is the surviving subgroup after electroweak symmetry breaking. It is not an additional independent factor in the first three rows. The Higgs vacuum leaves
+
+$$
+SU(2)_{\mathrm L}\times U(1)_{\mathrm Y}
+\longrightarrow U(1)_{\mathrm{EM}}.
+$$
+
+The three weak gauge fields and the hypercharge gauge field combine into the massive $W^+$, $W^-$, and $Z$ bosons and the massless photon. The electric-charge generator is a combination of a weak-isospin generator and the hypercharge generator.
+
+The Higgs field transforms as an $SU(2)_{\mathrm L}$ doublet and also carries hypercharge. Its two complex components contain four real field components at each spacetime point. After symmetry breaking, three supply the longitudinal modes of the massive weak bosons, and one remains as the physical Higgs scalar. These field components do not add spacetime coordinates. See [[11.9 The Higgs Mechanism|the Higgs mechanism]].
+
+Electromagnetism uses $U(1)$, not $SU(1)$. Elements of $U(1)$ are complex phases. The determinant-one condition leaves $SU(1)$ with only the identity, so it cannot describe the continuous electromagnetic gauge symmetry. These group assignments and field representations are described in [the University of Jena Standard Model lecture](https://www.tpi.uni-jena.de/~floerchinger/qft2/lecture16/).
+
+### Counting group dimensions
+
+The group $U(n)$ consists of unitary complex $n\times n$ matrices. The subgroup $SU(n)$ also requires determinant one. In the defining representation, these matrices act on $n$ complex components. This matrix size is different from the real dimension of the group:
+
+$$
+\dim_{\mathbb R}U(n)=n^2,
+\qquad
+\dim_{\mathbb R}SU(n)=n^2-1.
+$$
+
+Thus,
+
+$$
+\dim_{\mathbb R}G_{\mathrm{SM}}=8+3+1=12.
+$$
+
+These twelve generators correspond to eight gluon gauge fields and four electroweak gauge fields. They do not give twelve spatial directions. Similarly, $SU(4)$ has fifteen generators; its label does not mean four spacetime dimensions. [David Tong's Lorentz-symmetry notes](https://www.damtp.cam.ac.uk/user/tong/qft/qfthtml/S4.html) explain the separate spacetime symmetry.
+
+## How a Kaluza–Klein construction gives eleven dimensions
+
+To connect the gauge groups to extra coordinates, make a further assumption: the four-dimensional gauge fields arise from the metric of a higher-dimensional spacetime. In this Kaluza–Klein construction, continuous isometries of a compact internal space produce gauge symmetries. An isometry is a transformation that preserves the metric.
+
+For the introductory circle model, the internal space is $S^1$. Its continuous rotation symmetry gives a $U(1)$ gauge field, and its one coordinate gives a total of five spacetime dimensions. To include the Standard Model gauge algebra through the same metric mechanism, a larger compact space is needed.
+
+### A seven-dimensional internal space
+
+An illustrative choice is
+
+$$
+K=\mathbb{CP}^{2}\times S^{2}\times S^{1}.
+$$
+
+Here $\mathbb{CP}^{2}$ is the complex projective plane, $S^2$ is a two-dimensional sphere, and $S^1$ is a circle. The superscript in $\mathbb{CP}^{2}$ counts complex dimensions, so its real dimension is four.
+
+| Compact factor | Connected isometry group for the standard metric | Associated gauge algebra | Real coordinate dimensions |
+| --- | --- | --- | ---: |
+| Complex projective plane $\mathbb{CP}^{2}$ | $SU(3)/\mathbb Z_3$ | $\mathfrak{su}(3)$ | 4 |
+| Sphere $S^{2}$ | $SO(3)\simeq SU(2)/\mathbb Z_2$ | $\mathfrak{su}(2)$ | 2 |
+| Circle $S^{1}$ | $U(1)$ | $\mathfrak{u}(1)$ | 1 |
+
+The finite quotients do not change the local Lie algebras or their dimensions. They do affect the global groups and which matter representations are allowed. This example gives the Standard Model gauge algebra; it does not by itself fix the complete global gauge group or the particle content.
+
+The internal coordinate count is
+
+$$
+\dim_{\mathbb R}K=4+2+1=7.
+$$
+
+With four ordinary spacetime dimensions, the total is
+
+$$
+\boxed{
+D=\underbrace{4}_{\text{ordinary spacetime}}
++\underbrace{4+2+1}_{\text{compact spatial dimensions}}
+=11.
+}
+$$
+
+Thus, this construction has ten spatial dimensions and one time dimension. The seven extra dimensions are spatial.
+
+### Why the group and space dimensions differ
+
+A group can have more transformation parameters than the space has coordinates. For example, a sphere is two-dimensional, but its rotations have three independent parameters. Rotations about an axis through a chosen point leave that point fixed.
+
+For a homogeneous space $G/H$, the subgroup $H$ contains the transformations that leave a chosen point fixed. Its dimension is
+
+$$
+\dim(G/H)=\dim G-\dim H.
+$$
+
+In the present example,
+
+$$
+\begin{aligned}
+\mathbb{CP}^{2}&\simeq SU(3)/U(2),
+&\dim_{\mathbb R}\mathbb{CP}^{2}&=8-4=4,\\
+S^{2}&\simeq SU(2)/U(1),
+&\dim_{\mathbb R}S^{2}&=3-1=2.
+\end{aligned}
+$$
+
+The notation $U(2)$ in the first quotient denotes its usual embedded subgroup in $SU(3)$. These quotients explain why the compact-space count is $4+2+1$, while the gauge-group count is $8+3+1$.
+
+In the conventional smooth compact-space construction, where the gauge algebra comes from metric isometries, seven internal dimensions are the minimum for this Standard Model symmetry. Witten developed this argument in [*Search for a realistic Kaluza–Klein theory* (1981), pp. 33–34 in this reprint](https://api.pageplace.de/preview/DT0400.9781482268737_A38492133/preview-9781482268737_A38492133.pdf#page=45). The paper also explains why obtaining the correct light fermions is a separate problem.
+
+> [!note]
+> The Standard Model does not require eleven spacetime dimensions. The count above depends on the added assumption that its gauge fields come from compact-space geometry. A space with the required symmetry is not yet a full physical model: its field equations, matter spectrum, Higgs sector, and agreement with observations must also be checked.
+
+### Relation to M-theory
+
+M-theory also uses eleven spacetime dimensions, with ten spatial directions and one time direction. Its motivation comes from string dualities and eleven-dimensional supergravity. In particular, the strongly coupled ten-dimensional Type IIA string has an eleven-dimensional description, as discussed in [Witten's *String Theory Dynamics in Various Dimensions* (1995)](https://arxiv.org/abs/hep-th/9503124).
+
+This is a different argument from the compact-space count above. The shared number eleven does not make the simple circle model a derivation of M-theory, and neither argument is experimental evidence for extra dimensions.
 
 ## Worked estimate
 

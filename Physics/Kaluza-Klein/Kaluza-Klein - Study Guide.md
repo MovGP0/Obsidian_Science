@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Kaluza–Klein: self-study guide"
 document_type: "Self-contained study collection"
 ---

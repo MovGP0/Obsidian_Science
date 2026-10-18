@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Electromagnetism as a fifth dimension (Kaluza–Klein)"
 document_type: "Self-contained overview"
 tags:
