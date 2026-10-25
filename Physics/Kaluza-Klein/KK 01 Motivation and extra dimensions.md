@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Motivation and extra dimensions"
 document_type: "Self-contained study chapter"
 ---
