@@ -1,4 +1,4 @@
-﻿# Obsidian Science instructions
+# Obsidian Science instructions
 
 ## Obsidian notes
 
