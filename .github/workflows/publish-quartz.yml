@@ -32,23 +32,23 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out vault
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           path: vault
           fetch-depth: 0 # full history for the git-based created/modified dates
           lfs: true
 
       - name: Check out Quartz
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           repository: jackyzha0/quartz
           ref: ${{ inputs.quartz-version }}
           path: quartz
 
       - name: Set up Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
-          node-version: 22
+          node-version: 24
           cache: npm
           cache-dependency-path: quartz/package-lock.json
 
@@ -66,7 +66,7 @@ jobs:
 
       - name: Configure GitHub Pages
         id: pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
 
       - name: Build Quartz
         working-directory: quartz
@@ -78,7 +78,7 @@ jobs:
           npx quartz build --directory "$OBSIDIAN_VAULT" --output public
 
       - name: Upload site
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           path: quartz/public
 
@@ -91,4 +91,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
