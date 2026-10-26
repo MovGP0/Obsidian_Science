@@ -1,7 +1,7 @@
-﻿---
+---
 name: obsidian
 description: Create, translate, edit, and validate Obsidian Markdown notes in this repository. Use for English prose, frontmatter titles, LaTeX, wiki links, tables, and Graphs plots.
-version: 1.5.1
+version: 1.5.2
 tags:
   - obsidian
   - markdown
@@ -90,7 +90,30 @@ Apply the following conventions whenever creating or editing a note. Inspect the
 - Add an alias only when the surrounding sentence needs different display text: `[[Article filename|display text]]`.
 - Inside Markdown tables, escape the alias separator in wiki links: `[[Target\|Display text]]`.
 - Keep edits narrow. Do not normalize or rewrite unrelated notes or unrelated workspace changes.
-- Store Markdown files as UTF-8 with BOM and CRLF line endings.
+- Store Markdown notes as UTF-8 without BOM and with LF line endings, matching files saved by Obsidian.
+
+### Encoding and line endings
+
+- Use UTF-8 without a byte-order mark (BOM) and LF (`\n`) line endings for new and edited Markdown notes.
+- Preserve the format that Obsidian writes. Do not add a BOM or convert LF to CRLF after Obsidian saves a note.
+- This note-specific rule replaces the former BOM/CRLF requirement. General PowerShell file-writing examples that use BOM/CRLF do not apply to vault Markdown notes.
+- Use [Set-ObsidianNoteFormat.ps1](scripts/Set-ObsidianNoteFormat.ps1) to check or enforce the format on explicit file or folder targets. Run it from the vault root:
+
+  ```powershell
+  # Check a changed note without writing it.
+  pwsh.exe -NoProfile -NoLogo -File .agents/skills/obsidian/scripts/Set-ObsidianNoteFormat.ps1 -LiteralPath 'Physics/My note.md' -Check
+
+  # Preview changes within a selected chapter.
+  pwsh.exe -NoProfile -NoLogo -File .agents/skills/obsidian/scripts/Set-ObsidianNoteFormat.ps1 -LiteralPath 'Physics/My chapter' -WhatIf
+
+  # Apply the format to a selected note.
+  pwsh.exe -NoProfile -NoLogo -File .agents/skills/obsidian/scripts/Set-ObsidianNoteFormat.ps1 -LiteralPath 'Physics/My note.md'
+  ```
+
+- `-Check` returns exit code `0` when all selected notes comply, or `1` when formatting changes are needed. Invalid input or an execution error also returns a nonzero exit code and reports the error.
+- Folder targets include Markdown files in subfolders. Traversal skips dot-prefixed folders, symbolic links, and junctions. Select an infrastructure Markdown file explicitly if it must be formatted.
+- The formatter rejects invalid UTF-8 before it changes any selected file. It preserves all text except the leading UTF-8 BOM and line-ending characters. It also preserves the presence or absence of a final newline and does not rewrite compliant files.
+- Check the notes changed by the current task. Do not format the whole vault unless the user requests that scope.
 
 ### Notes and callouts
 
@@ -255,7 +278,7 @@ Before finishing a note edit:
 - Confirm that an article which defines physical quantities has exactly one `## Physical quantities` section at its absolute end. Confirm that an article without physical quantities does not have this section.
 - Confirm that every physical-quantity table row has exactly four non-empty cells and that its LaTeX delimiters are balanced.
 - Confirm that the table covers the article's physical quantities without adding mathematical labels that are not physical quantities.
-- Check UTF-8 BOM and CRLF formatting without applying repository-wide normalization.
+- Check UTF-8 without BOM and LF formatting with the formatter's `-Check` mode. Do not apply repository-wide normalization.
 - Review the focused diff and preserve unrelated staged and unstaged changes.
 
 ## Output

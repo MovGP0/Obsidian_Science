@@ -5,7 +5,7 @@
 - Before creating, translating, editing, or reviewing vault notes, read and follow [the Obsidian skill](.agents/skills/obsidian/SKILL.md).
 - Use the same semantic quantity groups and macros as the Electronics vault. The definitions are in the vault-root [preamble.sty](preamble.sty).
 - Select each macro from the quantity's meaning in the current equation. A letter alone does not determine its group. Keep mathematical operators, indices, and helper symbols uncolored.
-- Preserve the skill's rules for quoted Unicode frontmatter titles, TLDR summaries, physical-quantity tables, captions, links, UTF-8 BOM, and CRLF.
+- Preserve the skill's rules for quoted Unicode frontmatter titles, TLDR summaries, physical-quantity tables, captions, links, UTF-8 without BOM, and LF line endings. Keep the format that Obsidian writes; use the formatter linked in the skill for explicit note targets.
 
 ## Mathematical figures
 
