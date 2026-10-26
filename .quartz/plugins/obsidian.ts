@@ -3,9 +3,9 @@
  *
  * - `readPreambleMacros` turns the vault-root `preamble.sty` (Extended MathJax plugin) into
  *   MathJax macros so that the semantic quantity macros render at build time.
- * - `loadShikiLanguages` loads the custom grammars of the Shiki Highlighter plugin.
+ * - `ObsidianMarkdownCompat` fixes differences between Obsidian's and Quartz's Markdown parsing.
  * - `ObsidianPluginBlocks` keeps code blocks that belong to an Obsidian plugin (e.g. `graph`,
- *   `graph3d`, `kicanvas`) unhighlighted so that the plugin can render them in the browser.
+ *   `graph3d`) unhighlighted so that the plugin can render them in the browser.
  * - `ObsidianPluginRuntime` publishes the enabled render plugins (their unmodified `main.js`,
  *   `styles.css`, `data.json`, and bundled assets) together with a small Obsidian API shim
  *   that runs them on every page.
@@ -15,7 +15,6 @@ import path from "path"
 import { visit } from "unist-util-visit"
 import { Root, Code, Image } from "mdast"
 import { findAndReplace } from "mdast-util-find-and-replace"
-import { getSingletonHighlighter } from "shiki"
 import { QuartzEmitterPlugin, QuartzTransformerPlugin } from "../types"
 import { FilePath, FullSlug, joinSegments, QUARTZ, slugifyFilePath } from "../../util/path"
 import { glob } from "../../util/glob"
@@ -89,43 +88,6 @@ export function readPreambleMacros(preamblePath: string): MathJaxMacros {
   }
 
   return macros
-}
-
-/** Loads the TextMate grammars configured in the Shiki Highlighter plugin of the vault. */
-export function loadShikiLanguages(vaultDir: string): object[] {
-  const settingsPath = path.join(vaultDir, ".obsidian/plugins/shiki-highlighter/data.json")
-  if (!fs.existsSync(settingsPath)) {
-    return []
-  }
-
-  const settings = JSON.parse(fs.readFileSync(settingsPath, "utf8").replace(/^\uFEFF/, ""))
-  const folder = settings.customLanguageFolder
-  if (!folder) {
-    return []
-  }
-
-  const languageDir = path.join(vaultDir, folder)
-  if (!fs.existsSync(languageDir)) {
-    return []
-  }
-
-  return fs
-    .readdirSync(languageDir)
-    .filter((name) => name.endsWith(".json"))
-    .map((name) =>
-      JSON.parse(fs.readFileSync(path.join(languageDir, name), "utf8").replace(/^\uFEFF/, "")),
-    )
-}
-
-/** rehype-pretty-code highlighter factory that adds the vault's custom grammars. */
-export function highlighterWithLanguages(languages: object[]) {
-  return async (options: Parameters<typeof getSingletonHighlighter>[0]) => {
-    const highlighter = await getSingletonHighlighter(options)
-    if (languages.length > 0) {
-      await highlighter.loadLanguage(...(languages as any[]))
-    }
-    return highlighter
-  }
 }
 
 /** Applies `transform` to the parts of a Markdown document outside fenced code blocks. */

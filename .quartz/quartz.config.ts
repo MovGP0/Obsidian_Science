@@ -5,8 +5,6 @@ import {
   ObsidianMarkdownCompat,
   ObsidianPluginBlocks,
   ObsidianPluginRuntime,
-  highlighterWithLanguages,
-  loadShikiLanguages,
   readPreambleMacros,
 } from "./quartz/plugins/vault/obsidian"
 
@@ -27,13 +25,9 @@ const vaultDir = path.resolve(process.env.OBSIDIAN_VAULT ?? "content")
 // - Extended MathJax: `preamble.sty` is loaded as MathJax macros (see Latex below).
 // - Front Matter Title: Quartz uses the `title` property natively.
 // - Admonition: Quartz renders `> [!type]` callouts natively.
-// - Shiki Highlighter: custom grammars are loaded into Quartz's Shiki highlighter.
-const renderPlugins = ["graphs", "image-captions", "kicanvas-embed"]
+const renderPlugins = ["graphs", "image-captions"]
 
 const macros = readPreambleMacros(path.join(vaultDir, "preamble.sty"))
-
-// Passed through to rehype-pretty-code; adds the grammars of the Shiki Highlighter plugin.
-const shikiOptions = { getHighlighter: highlighterWithLanguages(loadShikiLanguages(vaultDir)) }
 
 const config: QuartzConfig = {
   configuration: {
@@ -101,21 +95,22 @@ const config: QuartzConfig = {
         priority: ["frontmatter", "git", "filesystem"],
       }),
       ObsidianPluginBlocks({ vaultDir, plugins: renderPlugins }),
+      // MathJax matches Obsidian's renderer (\color[RGB]{...}, mhchem, ...). It runs before syntax
+      // highlighting, which would otherwise strip a trailing `{:k}` from inline math as a
+      // language hint (e.g. `$A_{:k}$`).
+      Plugin.Latex({ renderEngine: "mathjax", mathJaxOptions: { tex: { macros } as object } }),
       Plugin.SyntaxHighlighting({
         theme: {
           light: "github-light",
           dark: "github-dark",
         },
         keepBackground: false,
-        ...shikiOptions,
       }),
       Plugin.ObsidianFlavoredMarkdown({ enableInHtmlEmbed: false }),
       Plugin.GitHubFlavoredMarkdown(),
       Plugin.TableOfContents(),
       Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
       Plugin.Description(),
-      // MathJax matches Obsidian's renderer (\color[RGB]{...}, mhchem, ...).
-      Plugin.Latex({ renderEngine: "mathjax", mathJaxOptions: { tex: { macros } as object } }),
     ],
     filters: [Plugin.RemoveDrafts()],
     emitters: [

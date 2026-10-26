@@ -5,7 +5,7 @@
 #
 # Quartz is checked out at a pinned version, and the overlay in `.quartz/` is applied on top of it:
 # - quartz.config.ts      site configuration
-# - plugins/              Obsidian compatibility (render plugins, preamble.sty, Shiki grammars)
+# - plugins/              Obsidian compatibility (render plugins, preamble.sty, Markdown fixes)
 # - styles/custom.scss    Obsidian theme variables used by the plugins
 
 name: Publish Quartz site
