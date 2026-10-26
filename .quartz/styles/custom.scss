@@ -1,0 +1,102 @@
+@use "./base.scss";
+
+// Obsidian theme variables used by the vault's plugins (Graphs, Image Captions, KiCanvas),
+// mapped onto the Quartz palette. Values follow Obsidian's default theme.
+:root {
+  --font-text: var(--bodyFont);
+  --font-monospace: var(--codeFont);
+  --border-width: 1px;
+  --radius-s: 4px;
+  --radius-m: 8px;
+  --radius-l: 12px;
+  --dialog-width: 560px;
+
+  --background-primary: var(--light);
+  --background-secondary: var(--light);
+  --background-modifier-border: var(--lightgray);
+  --background-modifier-border-focus: var(--gray);
+  --text-normal: var(--darkgray);
+  --text-muted: var(--gray);
+  --text-faint: var(--gray);
+  --text-accent: var(--secondary);
+  --interactive-accent: var(--secondary);
+  --interactive-accent-hover: var(--tertiary);
+
+  --color-red: #e93147;
+  --color-orange: #ec7500;
+  --color-yellow: #e0ac00;
+  --color-green: #08b94e;
+  --color-cyan: #00bfbc;
+  --color-blue: #086ddd;
+  --color-purple: #7852ee;
+  --color-pink: #d53984;
+
+  --color-base-00: #ffffff;
+  --color-base-05: #fcfcfc;
+  --color-base-10: #fafafa;
+  --color-base-20: #f6f6f6;
+  --color-base-25: #e3e3e3;
+  --color-base-30: #e0e0e0;
+  --color-base-35: #d4d4d4;
+  --color-base-40: #bdbdbd;
+  --color-base-50: #ababab;
+  --color-base-60: #707070;
+  --color-base-70: #5a5a5a;
+  --color-base-100: #222222;
+}
+
+:root[saved-theme="dark"] {
+  --color-red: #fb464c;
+  --color-orange: #e9973f;
+  --color-yellow: #e0de71;
+  --color-green: #44cf6e;
+  --color-cyan: #53dfdd;
+  --color-blue: #027aff;
+  --color-purple: #a882ff;
+  --color-pink: #fa99cd;
+
+  --color-base-00: #1e1e1e;
+  --color-base-05: #212121;
+  --color-base-10: #242424;
+  --color-base-20: #262626;
+  --color-base-25: #2a2a2a;
+  --color-base-30: #363636;
+  --color-base-35: #3f3f3f;
+  --color-base-40: #555555;
+  --color-base-50: #666666;
+  --color-base-60: #999999;
+  --color-base-70: #b3b3b3;
+  --color-base-100: #dadada;
+}
+
+// Placeholder for a code block that an Obsidian plugin renders in the browser.
+.obsidian-plugin-block {
+  margin: 1rem 0;
+}
+
+// Image Captions plugin output.
+figure.image-captions-figure {
+  margin: 1rem 0;
+  text-align: center;
+
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  figcaption {
+    margin-top: 0.5rem;
+    color: var(--darkgray);
+    font-size: 0.9em;
+
+    p {
+      margin: 0;
+    }
+  }
+}
+
+// Wide MathJax output scrolls instead of overflowing the page.
+mjx-container[display="true"] {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
