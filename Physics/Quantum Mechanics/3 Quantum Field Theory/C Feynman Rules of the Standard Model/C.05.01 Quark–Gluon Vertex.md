@@ -1,0 +1,3 @@
+---
+title: "Quark–Gluon Vertex"
+---
