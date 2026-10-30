@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="510" viewBox="0 0 920 510" role="img" aria-labelledby="title desc">
+<title id="title">Linear and quadratic constants along a geodesic</title>
+<desc id="desc">The upper row combines a Killing vector with one momentum. The lower row combines a Killing tensor with two momenta. Each scalar remains constant along a geodesic.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#64748b"/></marker></defs>
+<rect width="920" height="510" rx="16" fill="#f8fafc"/>
+<g font-family="Segoe UI,Arial,sans-serif" fill="#1e293b">
+<text x="35" y="44" font-size="24" font-weight="600">Two ways to form a geodesic constant</text>
+<text x="35" y="76" font-size="17">The geometry and momentum can change. Their contraction stays fixed.</text>
+<rect x="35" y="104" width="850" height="150" rx="12" fill="#e5f4f3" stroke="#82b9b5"/>
+<rect x="35" y="275" width="850" height="150" rx="12" fill="#f0eafa" stroke="#b4a0d4"/>
+<text x="60" y="139" font-size="19" font-weight="600" fill="#006d77">Killing vector</text>
+<text x="60" y="179" font-size="24">ξ with one p factor</text>
+<text x="60" y="220" font-size="16">Linear in momentum</text>
+<path d="M 305 180 L 357 180" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="378" y="181" font-size="26">Cξ = ξ · p</text>
+<text x="378" y="218" font-size="16">Contract one index pair</text>
+<path d="M 606 180 L 658 180" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="683" y="177" font-size="22" font-weight="600">Constant</text>
+<text x="683" y="207" font-size="16">along the geodesic</text>
+<text x="60" y="310" font-size="19" font-weight="600" fill="#6a3d9a">Killing tensor (rank 2)</text>
+<text x="60" y="350" font-size="24">K with two p factors</text>
+<text x="60" y="391" font-size="16">Quadratic in momentum</text>
+<path d="M 305 351 L 357 351" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="378" y="352" font-size="26">Cₖ = K(p, p)</text>
+<text x="378" y="389" font-size="16">Contract two index pairs</text>
+<path d="M 606 351 L 658 351" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="683" y="348" font-size="22" font-weight="600">Constant</text>
+<text x="683" y="378" font-size="16">along the geodesic</text>
+<text x="35" y="468" font-size="17">Condition: affine geodesic motion and the corresponding Killing equation.</text>
+</g></svg>
