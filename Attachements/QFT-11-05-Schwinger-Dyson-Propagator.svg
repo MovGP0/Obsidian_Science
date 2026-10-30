@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 145" width="900" height="145" role="img" aria-label="Exact scalar propagator as a sum of free propagators with zero, one, two, and further self-energy insertions">
+  <rect width="900" height="145" fill="white"/>
+  <g stroke="#222" fill="none" stroke-linecap="round">
+    <path d="M35 85H115" stroke-width="5"/>
+    <path d="M200 85H280 M360 85H520 M600 85H810" stroke-width="2"/>
+    <circle cx="425" cy="85" r="22" fill="white" stroke-width="2"/>
+    <path d="M403 85H425" stroke-width="2"/>
+    <circle cx="660" cy="85" r="22" fill="white" stroke-width="2"/>
+    <circle cx="745" cy="85" r="22" fill="white" stroke-width="2"/>
+    <path d="M638 85H660 M723 85H745" stroke-width="2"/>
+  </g>
+  <g fill="#222">
+    <circle cx="35" cy="85" r="5"/><circle cx="115" cy="85" r="5"/>
+    <circle cx="200" cy="85" r="5"/><circle cx="280" cy="85" r="5"/>
+    <circle cx="360" cy="85" r="5"/><circle cx="520" cy="85" r="5"/>
+    <circle cx="600" cy="85" r="5"/><circle cx="810" cy="85" r="5"/>
+  </g>
+  <g fill="#222" font-family="Georgia,serif" font-size="25" text-anchor="middle">
+    <text x="75" y="55">exact</text><text x="240" y="55">free</text>
+    <text x="155" y="93">=</text><text x="320" y="93">+</text><text x="560" y="93">+</text>
+    <text x="425" y="38">Σ</text><text x="850" y="93">+ ⋯</text>
+  </g>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="270" viewBox="0 0 880 270">
+  <defs><marker id="a" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7Z" fill="#222"/></marker></defs>
+  <rect width="880" height="270" fill="white"/>
+  <g stroke="#222" stroke-width="1.6" fill="none">
+    <path d="M100 50L220 95L340 50M100 205L220 160L340 205M540 50L660 95L780 50M540 205L660 160L780 205"/>
+    <path d="M220 95q-8 5 0 10t0 10t0 10t0 10t0 10t0 10t0 5M660 95q-8 5 0 10t0 10t0 10t0 10t0 10t0 10t0 5"/>
+    <path d="M140 65L160 73" marker-end="url(#a)"/>
+    <path d="M268 77L288 69" marker-end="url(#a)"/>
+    <path d="M140 190L160 182" marker-end="url(#a)"/>
+    <path d="M268 178L288 186" marker-end="url(#a)"/>
+    <path d="M580 65L600 73" marker-end="url(#a)"/>
+    <path d="M708 77L728 69" marker-end="url(#a)"/>
+    <path d="M580 190L600 182" marker-end="url(#a)"/>
+    <path d="M708 178L728 186" marker-end="url(#a)"/>
+  </g>
+  <g font-family="Georgia,serif" font-size="22" fill="#222" text-anchor="middle">
+    <text x="80" y="36">e⁻(p₁)</text><text x="360" y="36">e⁻(k₁)</text>
+    <text x="80" y="233">e⁻(p₂)</text><text x="360" y="233">e⁻(k₂)</text>
+    <text x="520" y="36">e⁻(p₁)</text><text x="800" y="36">e⁻(k₂)</text>
+    <text x="520" y="233">e⁻(p₂)</text><text x="800" y="233">e⁻(k₁)</text>
+    <text x="240" y="132" font-style="italic">t</text><text x="680" y="132" font-style="italic">u</text>
+    <text x="220" y="260">(a) t channel</text><text x="660" y="260">(b) u channel</text>
+  </g>
+</svg>

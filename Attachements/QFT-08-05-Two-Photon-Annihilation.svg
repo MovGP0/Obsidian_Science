@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="280" viewBox="0 0 920 280">
+  <defs><marker id="a" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7Z" fill="#222"/></marker></defs>
+  <rect width="920" height="280" fill="white"/>
+  <g stroke="#222" stroke-width="1.6" fill="none">
+    <path d="M100 55L210 100V170L100 215M560 55L670 100V170L560 215"/>
+    <path d="M210 100q3 -8 8 -4t8 -4t8 -4t8 -4t8 -4t8 -4t8 -4t8 -4t8 -4t8 -4t8 -4t8 -4t8 -4t8 -4t8 -4t8 -4t8 -4t8 -4t8 -4"/>
+    <path d="M210 170q3 8 8 4t8 4t8 4t8 4t8 4t8 4t8 4t8 4t8 4t8 4t8 4t8 4t8 4t8 4t8 4t8 4t8 4t8 4t8 4"/>
+    <path d="M670 100q3 -8 8 -4t8 -4t8 -4t8 -4t8 -4t8 -4t8 -4t8 -4t8 -4t8 -4t8 -4t8 -4t8 -4t8 -4t8 -4t8 -4t8 -4t8 -4t8 -4"/>
+    <path d="M670 170q3 8 8 4t8 4t8 4t8 4t8 4t8 4t8 4t8 4t8 4t8 4t8 4t8 4t8 4t8 4t8 4t8 4t8 4t8 4t8 4"/>
+    <path d="M142 72L165 82" marker-end="url(#a)"/>
+    <path d="M210 120V146" marker-end="url(#a)"/>
+    <path d="M171 186L148 196" marker-end="url(#a)"/>
+    <path d="M602 72L625 82" marker-end="url(#a)"/>
+    <path d="M670 120V146" marker-end="url(#a)"/>
+    <path d="M631 186L608 196" marker-end="url(#a)"/>
+  </g>
+  <g font-family="Georgia,serif" font-size="22" fill="#222" text-anchor="middle">
+    <text x="80" y="41">e⁻(p)</text><text x="80" y="240">e⁺(p̄)</text>
+    <text x="540" y="41">e⁻(p)</text><text x="540" y="240">e⁺(p̄)</text>
+    <text x="400" y="28">γ(k₁)</text><text x="400" y="257">γ(k₂)</text>
+    <text x="860" y="28">γ(k₂)</text><text x="860" y="257">γ(k₁)</text>
+    <text x="262" y="140" font-style="italic">p − k₁</text>
+    <text x="722" y="140" font-style="italic">p − k₂</text>
+    <text x="240" y="272">(a) t channel</text><text x="700" y="272">(b) u channel</text>
+  </g>
+</svg>

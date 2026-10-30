@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" width="500" height="150" role="img" aria-label="Ghost propagator with a rightward momentum guide">
+<defs><marker id="arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#222"/></marker></defs>
+<rect width="500" height="150" fill="white"/>
+<g stroke="#222" fill="none"><path d="M100 100H400" stroke-width="1.8" stroke-dasharray="1 7"/><path d="M135 65H365" stroke-width="1.1" marker-end="url(#arrow)"/></g>
+<g font-family="Georgia,serif" font-size="25" font-style="italic" fill="#222" text-anchor="middle"><text x="65" y="108">a</text><text x="440" y="108">b</text><text x="250" y="48">k</text></g>
+</svg>

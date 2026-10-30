@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="310" viewBox="0 0 1000 310">
+  <defs><marker id="a" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7Z" fill="#222"/></marker></defs>
+  <rect width="1000" height="310" fill="white"/>
+  <g fill="none" stroke="#222" stroke-width="1.6">
+    <path d="M90 80L195 145L90 210M390 80L285 145L390 210M610 65L750 110L890 65M610 225L750 180L890 225"/>
+    <path d="M195 145q5 -9 10 0t10 0t10 0t10 0t10 0t10 0t10 0t10 0t10 0"/>
+    <path d="M750 110q-9 5 0 10t0 10t0 10t0 10t0 10t0 10t0 10"/>
+    <path d="M130 105L150 117" marker-end="url(#a)"/>
+    <path d="M165 164L145 176" marker-end="url(#a)"/>
+    <path d="M319 124L339 112" marker-end="url(#a)"/>
+    <path d="M355 188L335 176" marker-end="url(#a)"/>
+    <path d="M654 79L680 88" marker-end="url(#a)"/>
+    <path d="M800 94L826 85" marker-end="url(#a)"/>
+    <path d="M700 196L674 205" marker-end="url(#a)"/>
+    <path d="M850 212L824 203" marker-end="url(#a)"/>
+  </g>
+  <g fill="none" stroke="#777" stroke-width="1">
+    <path d="M108 57L165 92" marker-end="url(#a)"/>
+    <path d="M108 233L165 198" marker-end="url(#a)"/>
+    <path d="M320 92L377 57" marker-end="url(#a)"/>
+    <path d="M320 198L377 233" marker-end="url(#a)"/>
+    <path d="M625 43L696 66" marker-end="url(#a)"/>
+    <path d="M625 247L696 224" marker-end="url(#a)"/>
+    <path d="M805 66L876 43" marker-end="url(#a)"/>
+    <path d="M805 224L876 247" marker-end="url(#a)"/>
+  </g>
+  <g font-family="Georgia,serif" font-size="22" fill="#222" text-anchor="middle">
+    <text x="65" y="79">e⁻</text><text x="65" y="220">e⁺</text>
+    <text x="420" y="79">e⁻</text><text x="420" y="220">e⁺</text>
+    <text x="585" y="65">e⁻</text><text x="585" y="235">e⁺</text>
+    <text x="920" y="65">e⁻</text><text x="920" y="235">e⁺</text>
+    <text x="240" y="128">qₛ</text><text x="784" y="151">γ*(qₜ)</text>
+    <text x="150" y="53">p</text><text x="150" y="253">p̄</text>
+    <text x="346" y="53">k</text><text x="346" y="253">k̄</text>
+    <text x="670" y="40">p</text><text x="670" y="269">p̄</text>
+    <text x="846" y="40">k</text><text x="846" y="269">k̄</text>
+    <text x="245" y="295">(a) s channel: qₛ² = s</text>
+    <text x="750" y="295">(b) t channel: qₜ² = t</text>
+  </g>
+</svg>

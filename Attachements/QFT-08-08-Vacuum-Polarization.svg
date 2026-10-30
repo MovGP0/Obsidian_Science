@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="650" height="220" viewBox="0 0 650 220">
+  <defs><marker id="a" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7Z" fill="#222"/></marker></defs>
+  <rect width="650" height="220" fill="white"/>
+  <g stroke="#222" stroke-width="1.6" fill="none">
+    <ellipse cx="325" cy="110" rx="70" ry="60"/>
+    <path d="M105 110q5 -8 10 0t10 0t10 0t10 0t10 0t10 0t10 0t10 0t10 0t10 0t10 0t10 0t10 0t10 0t10 0"/>
+    <path d="M395 110q5 -8 10 0t10 0t10 0t10 0t10 0t10 0t10 0t10 0t10 0t10 0t10 0t10 0t10 0t10 0t10 0"/>
+    <path d="M311 51Q325 49 339 51" marker-end="url(#a)"/>
+    <path d="M339 169Q325 171 311 169" marker-end="url(#a)"/>
+  </g>
+  <text x="325" y="31" font-family="Georgia,serif" font-size="23" font-style="italic" text-anchor="middle">e⁻</text>
+</svg>

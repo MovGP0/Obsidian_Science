@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="300" viewBox="0 0 700 300">
+  <defs><marker id="a" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7Z" fill="#222"/></marker></defs>
+  <rect width="700" height="300" fill="white"/>
+  <g stroke="#222" stroke-width="1.6" fill="none">
+    <ellipse cx="350" cy="150" rx="70" ry="60"/>
+    <path d="M180 150q5 -8 10 0t10 0t10 0t10 0t10 0t10 0t10 0t10 0t10 0t10 0"/>
+    <path d="M420 150q5 -8 10 0t10 0t10 0t10 0t10 0t10 0t10 0t10 0t10 0t10 0"/>
+    <path d="M336 91Q350 89 364 91" marker-end="url(#a)"/>
+    <path d="M364 209Q350 211 336 209" marker-end="url(#a)"/>
+  </g>
+  <g stroke="#777" stroke-width="1" fill="none">
+    <path d="M190 130H260" marker-end="url(#a)"/>
+    <path d="M440 130H510" marker-end="url(#a)"/>
+    <path d="M270 103Q350 17 430 103" marker-end="url(#a)"/>
+    <path d="M430 197Q350 283 270 197" marker-end="url(#a)"/>
+  </g>
+  <g font-family="Georgia,serif" font-size="23" font-style="italic" text-anchor="middle" fill="#222">
+    <text x="225" y="117">q</text><text x="475" y="117">q</text>
+    <text x="350" y="42">k</text><text x="350" y="269">k + q</text>
+  </g>
+</svg>

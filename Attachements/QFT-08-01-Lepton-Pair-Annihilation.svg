@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="240" viewBox="0 0 760 240">
+  <defs><marker id="arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7Z" fill="#222"/></marker></defs>
+  <rect width="760" height="240" fill="white"/>
+  <g stroke="#222" stroke-width="1.6" fill="none">
+    <path d="M130 45L260 120L130 195M630 45L500 120L630 195"/>
+    <path d="M260 120q5 -10 10 0t10 0t10 0t10 0t10 0t10 0t10 0t10 0t10 0t10 0t10 0t10 0t10 0t10 0t10 0t10 0t10 0t10 0t10 0t10 0t10 0t10 0t10 0t10 0"/>
+    <path d="M173 70L196 83" marker-end="url(#arrow)"/>
+    <path d="M215 146L192 159" marker-end="url(#arrow)"/>
+    <path d="M544 95L567 82" marker-end="url(#arrow)"/>
+    <path d="M590 172L567 159" marker-end="url(#arrow)"/>
+  </g>
+  <g stroke="#777" stroke-width="1" fill="none">
+    <path d="M155 25L220 62" marker-end="url(#arrow)"/>
+    <path d="M155 215L220 178" marker-end="url(#arrow)"/>
+    <path d="M540 62L605 25" marker-end="url(#arrow)"/>
+    <path d="M540 178L605 215" marker-end="url(#arrow)"/>
+  </g>
+  <g font-family="Georgia,serif" font-size="23" fill="#222" font-style="italic" text-anchor="middle">
+    <text x="98" y="47">e⁻</text><text x="98" y="205">e⁺</text>
+    <text x="665" y="47">μ⁻</text><text x="665" y="205">μ⁺</text>
+    <text x="202" y="27">p</text><text x="202" y="230">p̄</text>
+    <text x="566" y="27">k</text><text x="566" y="230">k̄</text>
+    <text x="380" y="101">γ*(q)</text>
+  </g>
+</svg>

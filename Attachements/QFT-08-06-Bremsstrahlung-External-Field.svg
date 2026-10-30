@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="300" viewBox="0 0 960 300">
+  <defs><marker id="a" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7Z" fill="#222"/></marker></defs>
+  <rect width="960" height="300" fill="white"/>
+  <g stroke="#222" stroke-width="1.6" fill="none">
+    <path d="M70 140H300L415 90M550 140H780L895 90"/>
+    <path d="M180 140q3 -12 10 -10t10 -10t10 -10t10 -10t10 -10t10 -10t10 -10t10 -10"/>
+    <path d="M300 140q-8 5 0 10t0 10t0 10t0 10t0 10t0 10t0 10t0 10t0 10"/>
+    <path d="M660 140q-8 5 0 10t0 10t0 10t0 10t0 10t0 10t0 10t0 10t0 10"/>
+    <path d="M780 140q-8 -5 0 -10t0 -10t0 -10t0 -10t0 -10t0 -10t0 -10t0 -10t0 -10"/>
+    <path d="M108 140H135" marker-end="url(#a)"/>
+    <path d="M220 140H247" marker-end="url(#a)"/>
+    <path d="M342 122L369 110" marker-end="url(#a)"/>
+    <path d="M588 140H615" marker-end="url(#a)"/>
+    <path d="M700 140H727" marker-end="url(#a)"/>
+    <path d="M822 122L849 110" marker-end="url(#a)"/>
+  </g>
+  <g font-family="Georgia,serif" font-size="22" fill="#222" text-anchor="middle">
+    <text x="49" y="130">e⁻(p)</text><text x="433" y="80">e⁻(p′)</text>
+    <text x="529" y="130">e⁻(p)</text><text x="913" y="80">e⁻(p′)</text>
+    <text x="270" y="42">γ(k)</text><text x="780" y="37">γ(k)</text>
+    <text x="340" y="222">A<tspan baseline-shift="super" font-size="15">μ</tspan><tspan baseline-shift="sub" font-size="15">ext</tspan></text>
+    <text x="700" y="222">A<tspan baseline-shift="super" font-size="15">μ</tspan><tspan baseline-shift="sub" font-size="15">ext</tspan></text>
+    <text x="240" y="280">(a) Emission before scattering</text>
+    <text x="720" y="280">(b) Emission after scattering</text>
+  </g>
+</svg>
