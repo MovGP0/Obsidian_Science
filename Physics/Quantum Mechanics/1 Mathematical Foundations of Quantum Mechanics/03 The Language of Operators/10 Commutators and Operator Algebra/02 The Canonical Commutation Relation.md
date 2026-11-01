@@ -1,9 +1,13 @@
-﻿---
+---
 title: "The Canonical Commutation Relation"
 ---
 
 > [!TLDR]
 > Position and momentum satisfy the canonical commutation relation. The product rules extend it to powers and suitable functions of these operators, and recover the mean position–momentum relation.
+
+The canonical relation is a statement about a representation of position and momentum, including its domain. On the real line, smooth rapidly decreasing wavefunctions provide a common invariant test domain for multiplication and differentiation. Applying both sides to such a vector proves equality there. It does not make either unbounded operator defined on every square-integrable function.
+
+There is also a useful obstruction to copying this relation into a finite matrix model. The trace of a finite matrix commutator is zero, because the trace is cyclic. The trace of a nonzero scalar times the identity is not zero in positive dimension. Thus no pair of finite matrices obeys the exact canonical relation. A truncated numerical model can approximate selected matrix elements, but must change the commutator somewhere. This explains why a finite spin space and the particle position space require different algebras.
 
 > [!theorem] Theorem 10.1 | Canonical commutation relation
 > For the position operator, multiplication by $\mechanical{x}$, and the momentum operator $\hat p=-i\mechanical{\hbar}\partial_{\mechanical{x}}$,

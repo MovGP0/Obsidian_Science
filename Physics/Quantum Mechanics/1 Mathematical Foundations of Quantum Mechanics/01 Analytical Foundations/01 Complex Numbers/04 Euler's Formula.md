@@ -99,3 +99,17 @@ $$
 $$
 
 Thus, $\mathrm{e}^{\mathrm{i}\pi}+1=0$. This identity connects five fundamental mathematical constants: $\mathrm{e}$, $\mathrm{i}$, $\pi$, $1$, and $0$. It follows directly from Euler's formula.
+
+## Conditions behind the series proof
+
+In this proof, define the complex exponential by its power series. The ratio of successive absolute terms is $|\theta|/(n+1)$, which tends to zero. The series therefore converges absolutely for every real $\theta$. This is the reason we can separate its even and odd terms without changing its sum. Substitution into a formula stated only for real inputs would not, by itself, justify a complex extension.
+
+The choice of even and odd powers is useful because even powers of $\mathrm{i}$ are real and odd powers are imaginary. They produce the cosine and sine series directly. The argument establishes an exact identity, not a small-angle approximation.
+
+Conjugating the identity gives $\mathrm{e}^{-\mathrm{i}\theta}=\cos\theta-\mathrm{i}\sin\theta$, so
+
+$$
+|\mathrm{e}^{\mathrm{i}\theta}|^2=\cos^2\theta+\sin^2\theta=1.
+$$
+
+Thus an imaginary exponential changes angle without changing magnitude. Check $\theta=0$ and $\theta=\pi/2$: the values are $1$ and $\mathrm{i}$. To reuse the method, derive the sine addition formula from the imaginary parts of $\mathrm{e}^{\mathrm{i}(\alpha+\beta)}=\mathrm{e}^{\mathrm{i}\alpha}\mathrm{e}^{\mathrm{i}\beta}$. The exponential product law follows independently from the absolutely convergent series, so it need not assume the trigonometric addition formulas being derived.

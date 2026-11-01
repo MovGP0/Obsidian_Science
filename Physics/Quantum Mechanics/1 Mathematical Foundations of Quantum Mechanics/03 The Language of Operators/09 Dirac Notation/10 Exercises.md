@@ -1,9 +1,13 @@
-﻿---
+---
 title: "Exercises"
 ---
 
 > [!TLDR]
 > Use the worked exercises to practise bras, projectors, completeness, basis changes, and two-state measurement and evolution.
+
+Use the basic exercises to check which object each product returns: bra, scalar, or ket. Exercise 3 supplies the normalization check that should then accompany every basis calculation. In Exercises 4 and 5, choose a basis that simplifies the operator before expanding coefficients. Exercise 6 explains the positivity argument behind nonnegative variances.
+
+The two challenges ask different questions about coherence. Exercise 7 compares preparations that share one outcome distribution. Exercise 8 converts relative energy phases into time-dependent transition probabilities. Before reading either solution, state which measurement can reveal a relative phase. An overall phase cannot change any projector probability, but a relative phase can affect probabilities in another basis. Use that distinction to decide what a calculation must retain.
 
 Each exercise contains the full question, an expanded worked solution, and the final answer. All subparts remain together.
 

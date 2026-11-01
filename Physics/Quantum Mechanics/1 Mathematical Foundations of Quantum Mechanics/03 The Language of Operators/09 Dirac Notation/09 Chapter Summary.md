@@ -1,9 +1,15 @@
-﻿---
+---
 title: "Chapter Summary"
 ---
 
 > [!TLDR]
 > Dirac notation joins state vectors, dual functionals, operators, and measurement rules in one algebra. Completeness converts abstract expressions into basis calculations.
+
+To reconstruct the chapter, start with one normalized ket and one complete orthonormal basis. Form its bra by conjugating coefficients. Insert the identity to recover its basis expansion, then use the same expansion to verify that its squared coefficients sum to one. Applying a rank-one projector selects one of those terms.
+
+This chain separates an algebraic result from a physical assumption: the squared projected norm is a nonnegative number bounded by one; the Born postulate identifies it with a specified outcome probability. A basis change preserves this number when the state and projector are both represented in the new basis.
+
+For a boundary test, omit one basis vector. The sum of the retained outer products is then a projector, not the full identity. Which state would reveal the omission immediately? Any nonzero state in the omitted direction does so.
 
 - **Ket and bra:** $|\psi\rangle\in\mathcal H$ is a state vector. Its bra $\langle\psi|$ is the corresponding continuous linear functional.
 - **Inner product:** $\langle\psi|\phi\rangle\in\mathbb C$ is conjugate symmetric and linear in the ket.

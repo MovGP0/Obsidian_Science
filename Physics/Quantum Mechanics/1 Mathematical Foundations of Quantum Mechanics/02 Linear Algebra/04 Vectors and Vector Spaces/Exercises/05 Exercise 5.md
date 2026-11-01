@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Gram–Schmidt in a two-dimensional complex space"
 ---
 
@@ -84,6 +84,12 @@ $$
 $$
 
 These four results are exactly $\langle e_i,e_j\rangle=\delta_{ij}$.
+
+## Boundary and reuse
+
+The nonzero residual is the important existence check. If the second input were $2v_1$, projection subtraction would give zero, and division by its norm would be undefined. That would reveal redundant input rather than a failure of the orthogonalization idea. Here the residual is nonzero, so the two outputs span the same two-dimensional space as the inputs.
+
+For a coordinate check, $v_2=(e_1+e_2)/\sqrt2$. Its squared coefficient magnitudes sum to $1$, in agreement with $\|v_2\|^2=1$. This is the form needed when an orthonormal basis is used to describe normalized state amplitudes.
 
 ## Answer
 

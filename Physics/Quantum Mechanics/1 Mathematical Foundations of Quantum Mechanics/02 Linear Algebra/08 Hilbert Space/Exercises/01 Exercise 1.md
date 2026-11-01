@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Square integrability on finite and infinite domains"
 ---
 
@@ -110,6 +110,12 @@ $$
 $$
 
 Thus $\ell\in L^2([-L,L])$ for finite $L>0$. The same function would fail the L² test on the full real line because its squared magnitude does not decay. Here $x$, $k$, and $L$ are mathematical variables and parameters, with no physical units assigned.
+
+## Generalize the endpoint tests
+
+For $x^{-a}$ near zero, the squared-integrability test is $\int_0^1x^{-2a}dx<\infty$, so the threshold is $a<1/2$. At $a=1/2$, the logarithm diverges. At infinity, the same power on $[1,\infty)$ instead needs $a>1/2$. No single pure power satisfies both conditions on the whole positive half-line.
+
+These tests explain why a local singularity and a long tail must be checked separately when constructing a normalizable quantum wave packet. Boundedness alone is neither the criterion nor a replacement for the domain: part (a) is unbounded yet square integrable, while a constant on an infinite interval is bounded but fails.
 
 ## Answer
 

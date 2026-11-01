@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Completeness and the norm of a state"
 ---
 
@@ -39,6 +39,10 @@ $$
 $$
 
 For an infinite orthonormal basis, completeness means that the basis expansion converges in the Hilbert-space norm. The equality is Parseval’s identity. For a normalized quantum state the left side is $1$, so the squared basis amplitudes sum to $1$.
+
+The useful move is to insert the identity, rather than expand the norm by guessing coefficients. This preserves every state component and makes each summand a product of conjugate numbers.
+
+Completeness is essential for equality. If only an orthonormal subset is used, its squared coefficients sum to the squared norm of the projected state, which is at most the full norm. In a two-state space, keeping only the up ket and choosing the down ket as the state gives a coefficient sum of zero although the state norm is one. This boundary example distinguishes Parseval equality from the inequality for an incomplete orthonormal set.
 
 ## Answer
 

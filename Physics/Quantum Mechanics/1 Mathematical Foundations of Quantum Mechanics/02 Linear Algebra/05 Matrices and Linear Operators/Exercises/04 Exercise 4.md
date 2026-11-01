@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Squares of the Pauli matrices"
 ---
 
@@ -39,6 +39,12 @@ $$
 \sigma_z^2=\begin{pmatrix}1&0\\0&-1\end{pmatrix}^2
 =\begin{pmatrix}1^2&0\\0&(-1)^2\end{pmatrix}=I.
 $$
+
+## Consequences and limits
+
+If $\sigma_i v=\lambda v$ with $v\ne0$, applying the square gives $v=\lambda^2v$, hence $\lambda=\pm1$. This explains why the dimensionless spin-component matrices have these two possible outcomes. Their Hermiticity, established separately, makes their square relation also a unitarity check.
+
+The square relation by itself does not imply Hermiticity. For example, $M=\begin{pmatrix}1&1\\0&-1\end{pmatrix}$ has $M^2=I$ but $M^\dagger\ne M$. Check the upper-right entry of $M^2$: it is $1-1=0$. This prevents treating every matrix that is its own inverse as a Hermitian observable.
 
 ## Answer
 

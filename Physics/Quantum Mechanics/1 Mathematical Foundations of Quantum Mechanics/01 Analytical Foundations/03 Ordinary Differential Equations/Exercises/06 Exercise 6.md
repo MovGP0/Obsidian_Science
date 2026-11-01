@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Rabi oscillations from coupled equations"
 ---
 
@@ -94,6 +94,12 @@ $$
 $$
 
 Probability moves between the two basis states while their total probability remains one.
+
+### Interpret the half-angle and the conserved probability
+
+For positive time and nonzero coupling, the down-state probability first reaches one when $|\signal{\omega}|\signal{t}=\pi$. Its period is $2\pi/|\signal{\omega}|$. The amplitudes contain half this angular frequency: after one probability period both amplitudes have acquired a common minus sign. That global phase does not change the two basis probabilities.
+
+For short times, $|\signal{\beta}|^2\approx\signal{\omega}^2\signal{t}^2/4$. The initial transfer probability is quadratic, not linear, even though the amplitude begins with a term linear in time. The product of angular frequency and time is dimensionless. Normalization follows from the Hermitian two-state Hamiltonian, so this is coherent transfer within a closed model, rather than decay out of the state space. Detuning or coupling to other states would change the specified equations and needs a separate model.
 
 ## Answer
 

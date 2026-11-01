@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Product and chain rules for wave functions"
 ---
 
@@ -122,6 +122,12 @@ $$
 &=-\signal{k}^2\sin(\signal{k}\mechanical{x})\mathrm{e}^{-\mathrm{i}\signal{\omega}\signal{t}}.
 \end{aligned}
 $$
+
+### Use symmetry, units, and a zero-parameter check
+
+The Gaussian in (c) is even in position, so its derivative must be odd and zero at the origin. Its factor $-\mechanical{x}/\mechanical{\sigma}^2$ has unit inverse length, as a spatial derivative of a dimensionless function requires. For positive position, the derivative is negative, consistent with decay away from the central maximum.
+
+In (b) and (e), setting the wave number to zero gives a spatially constant function and therefore zero spatial derivatives. In (d), zero angular frequency gives no time change. These checks catch missing factors but do not replace the chain-rule derivation. For transfer, let the Gaussian width depend on time: a time derivative must then act on that width as well. The current answers assume all stated parameters are constant.
 
 ## Answer
 

@@ -19,7 +19,15 @@ Cardano's solution formula produced square roots of negative numbers during the 
 
 Rafael Bombelli was the first to take these objects seriously, in 1572. He did not ask whether they existed. He asked which algebraic rules they obeyed. He found that everything worked if those rules were applied consistently.
 
-Three centuries later, quantum mechanics would show that these unusual objects were not temporary scaffolding. They form a permanent structure of physical reality.
+In the usual formulation of quantum mechanics, complex numbers describe state amplitudes and their phases. This mathematical role does not by itself establish what objects exist in physical reality.
+
+## How to study this chapter
+
+The central question is how to keep both size and phase when quantities are added. Real numbers can record a sign, but a point in the complex plane can record any angle. This chapter develops the arithmetic first; the quantum interpretation requires an additional physical rule.
+
+Start with Cartesian form for sums and conjugation. Then use the complex plane to interpret the same operations. Euler's formula connects this geometry to exponential form, which is more useful for products, powers, and roots. Work through the phasor example only after you can convert between these forms.
+
+Before the quantum application, check that you can explain why two complex numbers of modulus one can add to zero. The example $1+(-1)=0$ shows why adding magnitudes loses phase information. In quantum mechanics, amplitudes are combined before the squared magnitude is used for a probability. That probability rule is physical input; it does not follow from the definition of a complex number.
 
 ## Chapter sections
 

@@ -93,3 +93,11 @@ $$
 \{\gamma_E^\mu,\gamma_E^\nu\}=2\delta^{\mu\nu}\mathbf1.
 \tag{B.29}
 $$
+
+## Reading the table and checking the matrices
+
+The explicit matrices provide checks that do not require interpreting the source's type labels. In (B.26), the squares are $+\mathbf1,-\mathbf1,-\mathbf1$; anticommutators of distinct matrices vanish. Their product is $-i\mathbf1$, so its trace is $-2i$. This also checks the odd-dimensional exception to (B.17).
+
+In four dimensions, the Dirac and Weyl bases describe the same complex Clifford module. A change of basis changes the components and matrices together; it does not change traces or the number of independent components. The Weyl basis makes the two eigenvalues of $\gamma^5$ visible. A single two-component Weyl space is preserved by Lorentz generators, but not by all four gamma matrices, which exchange the two chiral spaces.
+
+Consequently, the table's $N_s$ must not be read as the size of matrices satisfying the full Clifford relation. To interpret a real-spinor label, use the signature-dependent classification in [Van Proeyen, §3.2 and Table 2](https://arxiv.org/pdf/hep-th/9910030#page=20). The source table is retained as reported, rather than converted into an unqualified classification.

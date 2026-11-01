@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Spin probabilities, moments, and maximum uncertainty"
 ---
 
@@ -91,6 +91,12 @@ $$
 The absolute value is necessary because a standard deviation cannot be negative. The largest value of $|\sin\signal{\theta}|$ is one. For unrestricted real angles, the maximum occurs at $\signal{\theta}=\pi/2+k\pi$, where $k\in\mathbb Z$. In the usual polar-angle range $0\le\signal{\theta}\le\pi$, the answer is $\signal{\theta}=\pi/2$.
 
 At that angle, $P_+=P_-=1/2$ and $|\psi\rangle=|+x\rangle$. The mean is zero, but each individual outcome has magnitude $\mechanical{\hbar}/2$. This explains the nonzero maximum uncertainty. At $\signal{\theta}=0$ or $\pi$, the state is an $\hat S_z$ eigenstate, and the uncertainty is zero.
+
+## A probability-only cross-check
+
+For a two-outcome variable with values $\pm\mechanical{\hbar}/2$, the variance can also be written as $\mechanical{\hbar}^2P_+P_-$. Substituting the two probabilities gives $\mechanical{\hbar}^2\sin^2\signal{\theta}/4$, which agrees with the operator calculation. It vanishes when one outcome is certain and is largest when the two probabilities are equal.
+
+This uncertainty describes the spread across repeated preparations in the same state. It is not an error bar of a particular measuring device. The calculation assumes an ideal measurement of the stated spin component and does not include apparatus noise or imperfect state preparation.
 
 ## Answer
 

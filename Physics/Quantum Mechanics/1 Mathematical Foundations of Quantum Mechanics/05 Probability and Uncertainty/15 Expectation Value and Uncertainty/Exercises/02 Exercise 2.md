@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Position uncertainty in a box"
 ---
 
@@ -92,6 +92,8 @@ $$
 \langle\hat x^2\rangle_n
 =\frac{\mechanical{L}^2}{3}-\frac{\mechanical{L}^2}{2n^2\pi^2}.
 $$
+
+The sign of the correction predicts that every finite-$n$ variance is below the uniform value. Its magnitude decreases as $1/n^2$, so the variance increases toward that limit. At $n=1$ the bracket is already positive because $\pi^2>6$; no imaginary uncertainty appears. If the box length is doubled at fixed $n$, the dimensionless density shape is unchanged, the second moment and variance multiply by four, and the standard deviation doubles.
 
 ### (c) Uncertainty and the large-index limit
 

@@ -29,6 +29,20 @@ $$
 \qquad\signal{\psi}(0)=\signal{\psi}(\mechanical{L})=0.
 $$
 
+## Establish the sign of the energy first
+
+Assume positive mass and well length, and a sufficiently regular nonzero state satisfying the zero endpoint conditions. Multiply the eigenvalue equation by the conjugate state and integrate. Integration by parts gives
+
+$$
+\energy{E}\int_0^{\mechanical{L}}|\signal{\psi}|^2\,\mathrm{d}\mechanical{x}
+=\frac{\energy{\hbar}^2}{2\mechanical{m}}
+\int_0^{\mechanical{L}}|\signal{\psi}'|^2\,\mathrm{d}\mechanical{x}>0.
+$$
+
+The boundary term vanishes. A zero derivative norm would make the state constant, and the endpoint conditions would then make it zero. Thus a nonzero eigenstate has positive energy, which justifies using a real positive wave number in the sine solution. Negative or zero trial energies cannot supply a missing state.
+
+Negative integer labels give the same sine states up to sign, so positive integers list each eigenspace once. If the endpoint conditions were periodic instead of zero, the constant function would be allowed and a zero-energy mode would exist. The same second-derivative expression therefore does not specify the spectrum without its domain. In Fig. 3.1, the vertical offsets indicate energies, while the curve displacements have arbitrary scale; they are not energy-valued wavefunctions.
+
 The equation
 
 $$

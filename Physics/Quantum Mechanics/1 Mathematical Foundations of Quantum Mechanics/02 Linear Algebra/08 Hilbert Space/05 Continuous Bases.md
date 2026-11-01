@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Continuous Bases"
 ---
 
@@ -41,6 +41,12 @@ $$
 
 > [!note]
 > The generalized states $|\mechanical{x}\rangle$ are distributional objects, not vectors in $L^2(\mathbb R)$. A rigorous setting for them is a **rigged Hilbert space**, also called a **Gelfand triple**. For these notes, the formal continuous-basis notation is sufficient, with the understanding that its operations require this mathematical justification.
+
+## How to use the formal notation
+
+The continuous coefficient is an amplitude density, so its squared magnitude must be integrated over a position interval to obtain a probability. It is not the probability of one exact coordinate. For a normalizable $L^2$ state, a single point has zero position probability, even when a representative wavefunction is nonzero there. This is consistent with identifying functions that differ on a set of measure zero.
+
+The delta normalization is checked only after integration: inserting the kernel into an overlap must recover the original test function or wavefunction in the appropriate sense. Substituting equal labels and treating the result as an ordinary finite norm is invalid. The generalized position kets remain useful for this integral reconstruction, rather than as preparations of exactly localized normalizable states.
 
 ## Physical quantities
 

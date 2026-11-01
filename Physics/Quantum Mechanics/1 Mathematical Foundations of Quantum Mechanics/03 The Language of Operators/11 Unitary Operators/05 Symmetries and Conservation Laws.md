@@ -1,9 +1,15 @@
-﻿---
+---
 title: "Symmetries and Conservation Laws"
 ---
 
 > [!TLDR]
 > A continuous unitary symmetry has a generator that is conserved when it commutes with the Hamiltonian and has no explicit time dependence. Discrete symmetries, such as parity, also impose conservation conditions but require a separate interpretation.
+
+A symmetry must be tested against the dynamics, not inferred from the name of a transformation. In finite dimensions, invariance under the whole one-parameter group allows differentiation at the identity and hence gives commutation with its generator. Invariance under one isolated group element is weaker and need not imply generator conservation.
+
+For example, the identity transformation always commutes with the Hamiltonian, but that fact says nothing about whether a proposed nontrivial generator commutes with it. Continuous translation symmetry must therefore hold for every displacement, not only for one period. A periodic potential can retain one discrete translation without conserving ordinary momentum.
+
+The table uses physical generators with different units. Each parameter must supply the reciprocal unit needed to make the exponent dimensionless. This check fixes the normalization but does not establish a symmetry. For unbounded generators, invariance must also preserve the Hamiltonian domain; a formal commutator is not the whole test.
 
 | Symmetry | Unitary operator | Conserved quantity or generator |
 | --- | --- | --- |

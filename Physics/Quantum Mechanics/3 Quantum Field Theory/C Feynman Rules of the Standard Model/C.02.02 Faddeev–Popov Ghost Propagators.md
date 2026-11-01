@@ -8,6 +8,10 @@ title: "Faddeev–Popov Ghost Propagators"
 Each gauge generator has a scalar Grassmann ghost field.
 In $R_\xi$ gauge, the ghost masses depend on $\xi$ and agree with the corresponding Goldstone-boson masses.
 
+A ghost line contracts a ghost with an antighost; keep this orientation when connecting vertices. The scalar denominator does not make a ghost an ordinary scalar particle: Grassmann statistics produce a minus sign for a closed ghost loop. Ghosts compensate unphysical gauge contributions in covariant perturbation theory and are not allowed as physical external states. These distinctions follow from the ghost action; see [Romão and Silva, sections 2.7 and 5.11](https://arxiv.org/html/1209.6213v2#S2.SS7).
+
+The photon ghost in this electroweak list must not be confused with a free ghost in isolated Abelian QED. The full broken electroweak ghost sector can contain interactions even though the photon ghost has a massless propagator.
+
 The photon ghost propagator is
 $$
 \signal{\Delta}_{c_\gamma}(\mechanical{p})
@@ -35,6 +39,8 @@ $$
 
 > [!note] Correction to the source
 > The source attaches $\delta^{ab}$ and color indices to the photon ghost in (C.6). A single electromagnetic gauge generator has no QCD color index, so these indices are omitted here. They remain in the gluon ghost propagator.
+
+At $\xi=1$, the W and Z ghost poles coincide with their corresponding vector masses; at $\xi=0$, their mass terms vanish. This is a gauge-choice check, not a prediction of observable ghost masses. Each numerator is dimensionless and each denominator has energy-squared units. The absence of a color delta for the photon, and its presence for the gluon, checks which gauge generator space the propagator acts on.
 
 ## Physical quantities
 

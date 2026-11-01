@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Energy moments and measurement collapse"
 ---
 
@@ -89,6 +89,10 @@ $$
 $$
 
 If $\signal{\omega}=0$, the two energy values coincide. An energy measurement alone then cannot distinguish the two basis states; its outcome is zero with probability $1$, and the ideal energy projection preserves the original state.
+
+A second check avoids repeating the moment subtraction. For two outcomes, the variance equals the product of the two probabilities times the squared separation of the outcomes. Here the probability product is $3/16$, and the separation has magnitude $|\mechanical{\hbar}\signal{\omega}|$. This reproduces the variance in part (a) and explains why the common energy origin would not affect the uncertainty.
+
+The mean energy need not itself be an allowed outcome: for nonzero frequency it lies strictly between the two eigenvalues. The state update in part (c) concerns a selected ideal outcome, not a replacement of the initial state by its mean energy. At zero frequency the separation vanishes, so the variance check also predicts the degeneracy discussed below.
 
 ## Answer
 

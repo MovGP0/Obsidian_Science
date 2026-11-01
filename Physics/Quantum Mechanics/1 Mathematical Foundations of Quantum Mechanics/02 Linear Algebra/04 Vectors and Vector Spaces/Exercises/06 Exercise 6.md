@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Cauchy–Schwarz from a nonnegative squared norm"
 ---
 
@@ -86,6 +86,12 @@ $$
 $$
 
 Equality holds exactly when $\langle w,w\rangle=0$, hence when $w=0$. For $u\ne0$, this means $v=cu$. Thus equality describes linearly dependent vectors, including the case where one is zero.
+
+## Meaning and test cases
+
+The proof separates $v$ into a component along $u$ and an orthogonal residual. The inequality says that the parallel part cannot have more squared norm than the whole vector. No finite-dimensional assumption is used: the argument needs only two vectors in an inner-product space, not completeness or an infinite expansion.
+
+For $u=(1,0)^T$ and $v=(a,b)^T$, the inequality reduces to $|a|^2\le |a|^2+|b|^2$. Equality requires $b=0$, exactly the absence of an orthogonal residual. Applied to normalized state vectors, it bounds the magnitude of an overlap by one; the probability interpretation is an additional quantum rule.
 
 ## Answer
 

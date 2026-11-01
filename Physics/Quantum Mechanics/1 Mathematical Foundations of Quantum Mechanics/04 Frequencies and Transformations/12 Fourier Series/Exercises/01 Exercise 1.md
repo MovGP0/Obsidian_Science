@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Fourier coefficients of the absolute cosine"
 ---
 
@@ -50,6 +50,16 @@ $$
 $$
 
 The coefficients decrease as $k^{-2}$. Thus the series is absolutely and uniformly convergent, and it represents this continuous periodic function at every point.
+
+## Check at a zero and at a maximum
+
+At $x=\pi/2$, the reconstructed value must be zero. Since $\cos(2k\pi/2)=(-1)^k$, the series reduces to
+
+$$
+\sum_{k=1}^{\infty}\frac1{4k^2-1}=\frac12.
+$$
+
+This follows independently from $1/(4k^2-1)=\tfrac12[(2k-1)^{-1}-(2k+1)^{-1}]$, whose partial sums telescope. At $x=0$, the original function is one; this checks the alternating signs in the coefficients. The cusp at $\pi/2$ does not obstruct uniform convergence of the function series, but it does prevent a continuous derivative there.
 
 ## Answer
 

@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Partial Derivatives"
 ---
 
@@ -93,6 +93,20 @@ $$
 $$
 
 This is the nonrelativistic dispersion relation for a free particle.
+
+## Partial change is different from change along a path
+
+The limit in Definition 2.2 must exist and be finite. Holding the second coordinate fixed is part of the definition. For a differentiable mathematical function evaluated on a path $x=x(s)$, $t=t(s)$, the chain rule instead gives
+
+$$
+\frac{\mathrm{d}}{\mathrm{d}s}f(x(s),t(s))
+=\frac{\partial f}{\partial x}\frac{\mathrm{d}x}{\mathrm{d}s}
++\frac{\partial f}{\partial t}\frac{\mathrm{d}t}{\mathrm{d}s}.
+$$
+
+Here $s$ is a path parameter, and the partial derivatives are evaluated on the path. A path derivative can change both inputs; it must not replace the fixed-position time derivative in the Schrödinger equation.
+
+For the wave example, take a nonzero constant amplitude, real constant wave number and frequency, and positive mass. Then cancellation of the wavefunction is legitimate because this exponential never vanishes. The equation constrains the frequency: a trial plane wave with an arbitrary frequency is not necessarily a solution. Reversing the wave number reverses momentum but leaves its square, and therefore the free-particle energy, unchanged. This checks the distinction between a directed momentum and a nonnegative kinetic energy.
 
 ## Physical quantities
 

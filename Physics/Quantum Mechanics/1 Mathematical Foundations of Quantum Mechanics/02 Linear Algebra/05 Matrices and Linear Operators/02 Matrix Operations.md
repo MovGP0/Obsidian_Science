@@ -35,6 +35,8 @@ $$
 
 Thus, $AB\ne BA$. In quantum mechanics, this fact leads to the Heisenberg uncertainty relation (Chapter 10).
 
+For the example, applying the products to $e_1=(1,0)^T$ gives $(2,0)^T$ and $(1,1)^T$. This checks that the order difference affects the output vector, not only a notation rule. Noncommutation enters quantum uncertainty relations together with the observable and state assumptions; noncommuting arbitrary matrices alone are not a complete uncertainty statement.
+
 ## Conjugate transpose — The adjoint matrix
 
 The **adjoint matrix**, or **conjugate transpose**, of $A$ is $A^\dagger$, with entries

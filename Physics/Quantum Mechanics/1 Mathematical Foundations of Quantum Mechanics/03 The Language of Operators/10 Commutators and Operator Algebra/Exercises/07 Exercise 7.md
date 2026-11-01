@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Coherent states and minimum uncertainty"
 ---
 
@@ -173,6 +173,10 @@ $$
 $$
 
 The Heisenberg inequality requires a product at least $\mechanical{\hbar}/2$. Equality holds for every coherent-state amplitude.
+
+The factorial coefficients do two jobs: they normalize the series for every finite amplitude, and they keep the state inside the domain required for the lowering operation. In particular, the number-weighted squared coefficients have a finite sum: the exponential series gives $\langle\hat a^\dagger\hat a\rangle=|\signal{\alpha}|^2$. Thus applying the unbounded annihilation operator is justified by a finite squared norm, not by termwise notation alone.
+
+At zero amplitude the series reduces to the vacuum, and the uncertainties reduce to the ground-state values. A nonzero amplitude changes the means but leaves both variances unchanged. Minimum uncertainty does not imply zero uncertainty. Nor does it characterize only coherent states: other Gaussian states can have unequal position and momentum widths while retaining the same minimum product. The coherent-state family here has the specific oscillator widths derived in part (d).
 
 ## Answer
 

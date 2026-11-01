@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Exercises"
 ---
 
@@ -8,6 +8,10 @@ title: "Exercises"
 Chapter 14: [[14 Probability and Distributions/00 Probability and Distributions|Probability and Distributions]].
 
 Choose an exercise below. The original exercise anchors are retained for existing links.
+
+Use Exercises 1 and 2 to compare exact tail probabilities with a general bound: select the outcomes or integration region before calculating. In Exercise 3, the same weighted-moment method applies to two quantum outcomes. Exercises 4 and 5 require choosing symmetry and the correct support before integration.
+
+Exercise 6 tests a different distinction: matching energy probabilities does not make a pure state a thermal mixture. Exercise 7 separates an optimization over probability densities from an optimization over quantum states with phases. After each solution, identify which part used probability theory and which part used the physical state or observable.
 
 ## Basic level
 

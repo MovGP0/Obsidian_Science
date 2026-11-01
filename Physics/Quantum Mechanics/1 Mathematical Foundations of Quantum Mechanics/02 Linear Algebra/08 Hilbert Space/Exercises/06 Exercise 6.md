@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Normalization and expansion of a parabolic box state"
 ---
 
@@ -158,6 +158,12 @@ As an exact check, the full odd reciprocal-power sum is $\sum_{k=0}^{\infty}(2k+
 
 > [!note]
 > The supplied solution gives the loose estimate $0.9999$. Direct evaluation of the first ten indexed terms gives $0.999999048$; this is the value used here. The first ten indices contain five nonzero odd terms, not ten nonzero terms.
+
+## Interpret the numerical truncation
+
+The displayed partial sum is the squared norm of the unnormalized projection onto the first ten indexed states. Its missing probability is also the squared norm of the omitted orthogonal tail. Thus the state-vector norm error is the square root of that missing probability, about $9.76\times10^{-4}$. It is larger than the omitted probability itself. These two error measures must not be confused.
+
+Renormalizing the projected vector would divide each retained probability by the partial sum. That produces a normalized approximation, not the exact original state. The rapid decay here follows from this smooth parabolic profile and its endpoint zeros; a constant initial profile has slower sine coefficients, so the same cutoff need not have the same accuracy.
 
 ## Answer
 

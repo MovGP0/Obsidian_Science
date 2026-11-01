@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Unitary similarity preserves Hermiticity and eigenvalues"
 ---
 
@@ -51,6 +51,12 @@ $$
 $$
 
 because $\det(U)\det(U^\dagger)=\det(UU^\dagger)=1$.
+
+## Which assumption does each proof use?
+
+The eigenvalue argument needs an invertible similarity transformation; unitarity is stronger than necessary for that part. Hermiticity preservation uses the adjoint relation and does need the unitary structure in this general statement. For example, take $A=\sigma_x$ and $S=\operatorname{diag}(2,1)$. The similar matrix $SAS^{-1}=\begin{pmatrix}0&2\\1/2&0\end{pmatrix}$ still has eigenvalues $\pm1$, but is not Hermitian in the standard inner product.
+
+This separates unchanged spectral values from preserved inner-product geometry. In a passive quantum basis change, state coordinates must be transformed with the same convention as the operator matrix.
 
 ## Answer
 

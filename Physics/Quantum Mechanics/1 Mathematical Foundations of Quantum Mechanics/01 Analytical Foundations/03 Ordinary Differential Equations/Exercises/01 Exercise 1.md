@@ -69,6 +69,12 @@ It exists for every real $x$, and $y'=x/\sqrt{1+x^2}=x/y$.
 > [!note]
 > The question uses $x$ in part (c) and leaves the independent variable implicit in parts (a) and (b). This solution uses $x$ throughout. The source key uses $t$ in parts (a) and (b); a change of variable name gives the same result.
 
+### Compare uniqueness with the maximal interval
+
+In (b), the right-hand side is smooth, so the initial-value solution is locally unique. Its finite pole does not contradict that theorem. A solution must be finite and differentiable throughout its interval; the formulas on opposite sides of the pole cannot be joined through infinity. A physical model with this divergence would need its assumptions checked before that endpoint.
+
+In (c), the equation is undefined at zero dependent-variable value, but the chosen positive branch stays at least one and never reaches that singular set. The negative square root solves the equation too, yet fails the given initial condition. In (a) and (b), the zero equilibrium was lost during division but is irrelevant to the stated nonzero initial data. These examples show why the original equation, initial value, and solution interval must all be checked after separation.
+
 ## Answer
 
 **(a)** $y=5\mathrm{e}^{-3x}$ for $x\in\mathbb R$.

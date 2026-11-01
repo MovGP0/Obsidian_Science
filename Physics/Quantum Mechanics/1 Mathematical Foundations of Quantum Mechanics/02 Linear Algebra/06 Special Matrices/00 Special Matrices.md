@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Special Matrices"
 ---
 
@@ -23,6 +23,10 @@ The main families of $n\times n$ matrices over $\mathbb{C}$ are summarized below
 | Orthogonal | $A^TA=I$, $A\in M_n(\mathbb{R})$ | $\det A=\pm1$. |
 | Upper triangular | $A_{ij}=0$ for $i>j$ | The diagonal entries are the eigenvalues. |
 | Diagonal | $A_{ij}=0$ for $i\ne j$ | Operations act component by component. |
+
+Use the chapter to choose a tool for a question. A projector isolates a state subspace; rank and kernel identify which inputs are lost. SVD resolves stretching even when eigenvector diagonalization fails. Polar decomposition separates that stretching from a norm-preserving part. Invariants then check that the answer does not depend on the basis, while density matrices describe statistical state information.
+
+For a boundary check, $\begin{pmatrix}0&1\\0&0\end{pmatrix}$ has only zero eigenvalues but rank one. Eigenvalues alone do not describe the action of a general matrix. The table and decompositions concern finite complex matrices; infinite operators require extra domain and convergence statements.
 
 ## Chapter sections
 

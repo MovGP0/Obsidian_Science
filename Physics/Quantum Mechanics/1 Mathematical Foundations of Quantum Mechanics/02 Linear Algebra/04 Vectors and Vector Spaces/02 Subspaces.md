@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Subspaces"
 ---
 
@@ -12,7 +12,9 @@ title: "Subspaces"
 > 2. $u,v\in W\Longrightarrow u+v\in W$.
 > 3. $v\in W$, $\alpha\in\mathbb{C}\Longrightarrow\alpha v\in W$.
 
-A subspace is itself a vector space with the operations inherited from $V$.
+A subspace is itself a vector space with the operations inherited from $V$. The other vector-space axioms already hold in $V$; closure keeps those operations inside $W$. In particular, multiplication by $-1$ supplies additive inverses. This is why the test needs only three conditions rather than a second list of eight axioms.
+
+In quantum mechanics, a subspace can describe states restricted to a chosen collection of levels. Arbitrary superpositions stay in that subspace, but unit normalization is a separate condition. For an infinite-dimensional Hilbert space, a subspace need not be closed under limits; that extra condition must be checked when limits of states are used.
 
 ## Example — Subspaces of ℂ³
 

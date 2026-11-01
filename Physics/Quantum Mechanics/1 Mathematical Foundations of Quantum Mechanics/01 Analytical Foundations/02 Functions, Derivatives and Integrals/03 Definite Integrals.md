@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Definite Integrals"
 ---
 
@@ -25,14 +25,14 @@ The function $F$ is an **antiderivative** of $f$.
 
 ## Integrals over unbounded domains
 
-In quantum mechanics, almost all integrals are over the whole real line:
+Many one-dimensional position-space calculations use integrals over the whole real line:
 
 $$
 \int_{-\infty}^{+\infty}f(x)\,\mathrm{d}x
 =\lim_{\substack{A\to-\infty\\B\to+\infty}}\int_A^B f(x)\,\mathrm{d}x.
 $$
 
-These integrals do not always converge. For example, $\int_{-\infty}^{+\infty}1\,\mathrm{d}x$ diverges. We assume that physical wavefunctions tend to zero sufficiently fast at infinity.
+These integrals do not always converge. For example, $\int_{-\infty}^{+\infty}1\,\mathrm{d}x$ diverges. For a normalizable state, require convergence of the integral of the squared magnitude. Decay to zero alone is not sufficient; for example, the square of a tail proportional to $1/\sqrt{|x|}$ has a divergent logarithmic integral.
 
 ## Example — The basic Gaussian integral
 
@@ -73,6 +73,14 @@ $$
 $$
 
 Thus, $I^2=2\pi\cdot1/(2a)=\pi/a$. Since $I$ is positive, $I=\sqrt{\pi/a}$. $\square$
+
+## Why the integral operations are allowed
+
+For the stated form of the fundamental theorem, it is sufficient to take $f$ continuous on the finite interval and $F'=f$. For an improper integral on the real line, both tails must converge independently. Symmetric cancellation alone is insufficient: $\int_{-R}^{R}x\,\mathrm{d}x=0$ for every $R$, but the separate positive and negative tails diverge. That symmetric limit is a principal value, not the ordinary improper integral.
+
+The Gaussian has no such cancellation problem. For $a>0$ it is nonnegative and integrable; its tails can be bounded by decaying exponentials. Squaring it is useful because the two-dimensional integrand depends only on $x^2+y^2$. Polar coordinates turn that symmetry into a radial integral, and the Jacobian supplies the factor $r$ needed for the substitution $u=ar^2$. Positivity permits the nonnegative double-integral calculation and selects the positive square root at the end.
+
+Differentiation with respect to $a$ also needs a condition. In a neighborhood of any fixed $a_0>0$, the derivative integrand is bounded in magnitude by $x^2\mathrm{e}^{-a_0x^2/2}$, an integrable function. This supplies a local domination check. At $a=0$, the integral diverges and this argument fails. The result's scale $a^{-1/2}$ also follows directly from $u=\sqrt a\,x$.
 
 ## Useful variants
 

@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Matrix exponential when A² is a scalar matrix"
 ---
 
@@ -95,6 +95,12 @@ $$
 $$
 
 At $\signal{\theta}=0$, the zero-parameter limit gives $I$, which is also the value of the final expression.
+
+## Verify the result without its series
+
+Write the proposed exponential as $F(t)=c(t)I+s(t)A$. Its coefficients satisfy $c'=\alpha s$ and $s'=c$, including $c=1,s=t$ at $\alpha=0$. Hence $F'=AF$ and $F(0)=I$. These two conditions give an independent check that the expression is the finite-matrix exponential. The relation $A^2=\alpha I$ is what closes the two-coefficient system.
+
+For the nonzero nilpotent example $A=\begin{pmatrix}0&1\\0&0\end{pmatrix}$, the answer is $I+tA$, not $I$. Thus $\alpha=0$ does not mean that the generator vanishes. The Pauli application instead gives a unitary operation for real phase.
 
 ## Answer
 

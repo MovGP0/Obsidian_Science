@@ -1,9 +1,11 @@
-﻿---
+---
 title: "Vector Spaces over ℂ"
 ---
 
 > [!TLDR]
 > A complex vector space is closed under addition and complex scalar multiplication. Eight axioms specify the rules of these operations.
+
+The definition answers a practical question: when can two candidate state descriptions be combined without leaving the mathematical model? Closure ensures that each allowed linear combination is still a vector. It does not ensure that it is normalized or that it represents a distinct physical state.
 
 > [!definition] Definition 4.1 — Vector space
 > A **vector space over $\mathbb{C}$** is a set $V$ with two operations:

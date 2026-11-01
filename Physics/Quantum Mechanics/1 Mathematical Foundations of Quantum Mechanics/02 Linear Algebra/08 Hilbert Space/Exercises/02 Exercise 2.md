@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Parseval’s identity for a sine basis state"
 ---
 
@@ -68,6 +68,12 @@ $$
 $$
 
 This verifies Parseval’s identity directly. The function already equals one basis vector, so no other basis component is needed. The interval and functions in this question are mathematical objects; no physical units are assigned.
+
+## What this verification does and does not prove
+
+This calculation checks normalization and orthogonality for the selected basis vector. It does not prove that the whole sine family is complete for every $L^2$ function. Even an incomplete orthonormal family gives the correct norm for any vector already in its span.
+
+For a transfer test, use $f=(\phi_1+\mathrm{i}\phi_2)/\sqrt2$. Its two nonzero coefficients are $1/\sqrt2$ and $\mathrm{i}/\sqrt2$, so the squared coefficient sum is one. Replacing the plus sign by a minus sign leaves that sum unchanged. This illustrates why norm checks alone do not determine relative phases of quantum amplitudes. The interval variables remain mathematical parameters in this exercise.
 
 ## Answer
 

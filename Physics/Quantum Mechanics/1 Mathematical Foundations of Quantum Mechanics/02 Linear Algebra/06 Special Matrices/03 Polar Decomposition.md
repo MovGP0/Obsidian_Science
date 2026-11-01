@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Polar Decomposition"
 ---
 
@@ -20,6 +20,10 @@ In general, $U$ and $P$ do not commute. The order matters: $A=UP$ and the left p
 
 > [!note]
 > The left polar form is $A=QU$, where $Q=UPU^\dagger$. In general, $Q$ differs from $P$; do not move the same two factors past each other. The theorem above assumes invertibility, as the source states.
+
+To reconstruct the factors, first form $P=(A^\dagger A)^{1/2}$ and then set $U=AP^{-1}$. Invertibility makes $P^{-1}$ exist. The calculation $U^\dagger U=P^{-1}A^\dagger AP^{-1}=I$ proves unitarity. Conversely, any factorization of the stated type gives $A^\dagger A=P^2$, so the unique positive square root fixes $P$ and then $U$.
+
+For $A=\operatorname{diag}(2\mathrm{i},3)$, the factors are $P=\operatorname{diag}(2,3)$ and $U=\operatorname{diag}(\mathrm{i},1)$. A zero diagonal entry would make $P^{-1}$ undefined, showing exactly where this invertible-matrix proof stops.
 
 ## Application in quantum mechanics
 

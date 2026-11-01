@@ -1,9 +1,13 @@
-﻿---
+---
 title: "Exercises"
 ---
 
 > [!TLDR]
 > These ten exercises cover matrix operations and their use in quantum mechanics. Each linked note contains the complete question and a worked solution.
+
+Choose the proof tool before doing arithmetic. Exercises 1–4 test products, adjoints and Pauli identities. In Exercise 5, the key move is to reverse the order under the adjoint. Exercises 6 and 9 reduce an infinite power series to two scalar series. Exercise 8 transports eigenvectors through an invertible map instead of solving another characteristic polynomial.
+
+Exercises 7 and 10 connect representation to physical interpretation. Check normalization for the Bloch-vector calculation, and distinguish the oscillator's finite matrix block from an invariant finite state space. A three-row display alone cannot justify discarding all higher oscillator states.
 
 ## Basic level
 

@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Exponential forms and arguments"
 ---
 
@@ -61,6 +61,12 @@ r=\sqrt{3+1}=2,\qquad
 $$
 
 The reference angle is $\pi/6$. The real component is negative and the imaginary component is positive, so $\theta=\pi-\pi/6=5\pi/6$.
+
+### Check by reconstruction, not by tangent alone
+
+Reconstruct part (e): $2\cos(5\pi/6)=-\sqrt3$ and $2\sin(5\pi/6)=1$. Both components agree with the input. The angle $-\pi/6$ has the same tangent but would reverse both signs, so it fails this check.
+
+Changing the selected interval would change the written representatives, not the numbers. For example, part (e) could also use $-7\pi/6$ if negative angles were allowed. Zero is excluded by the requirement $r>0$: it has no defined argument. This distinction between a complex value and an angle representative prevents branch errors when relative phases are compared.
 
 ## Answer
 

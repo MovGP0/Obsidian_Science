@@ -34,6 +34,10 @@ $$
 
 which need not equal $\signal{\psi}^2$.
 
+A useful test for Error 4 is a constant phase change. Replacing $\psi$ by $i\psi$ leaves $|\psi|^2$ unchanged, but replaces $\psi^2$ by $-\psi^2$. A probability cannot depend on this global phase. This test diagnoses the error before an integral is calculated.
+
+For Error 1, shift the variable by its mean. The shifted variable has zero mean and the same variance, but its second moment changes. Thus the second moment depends on the coordinate origin while the variance describes spread about the center.
+
 ## Quantum mechanics — Born’s rule
 
 **Born’s rule**, introduced by Max Born in 1926, gives the position probability density:

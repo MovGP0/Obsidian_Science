@@ -27,6 +27,10 @@ $$
 $$
 On the right, $\mechanical{k}_E$ denotes the radial momentum magnitude.
 
+Here the subscript counts ambient Euclidean dimensions: the sphere itself has dimension $d-1$. Thus the three-dimensional angular factor is the area of a two-dimensional unit sphere. The unit sphere is dimensionless; momentum dimensions enter through the radial differential and its power.
+
+To reconstruct (A.92), integrate a unit-width Gaussian in Cartesian coordinates, giving $\pi^{d/2}$, and in radial coordinates, giving $\Omega_d\Gamma(d/2)/2$. Equating the two results fixes the angular factor. For $d=1$ it gives two, the two directions on a line. The reduction in (A.93) requires a radial integrand; with a fixed external vector, directional dependence must first be treated explicitly. For noninteger dimension the gamma-function expression is an analytic continuation, not the literal surface of a noninteger-dimensional geometric sphere.
+
 ## Physical quantities
 
 | Symbol | Unit | Quantity | Description |

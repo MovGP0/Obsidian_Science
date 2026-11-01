@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Momentum uncertainty in a box"
 ---
 
@@ -82,6 +82,10 @@ $$
 \end{aligned}
 $$
 
+Integration by parts supplies a useful independent positivity check. The wavefunction vanishes at the walls, so the boundary term in the second-moment integral is zero. The result is $\langle\hat p^2\rangle=\mechanical{\hbar}^2\int_0^{\mechanical{L}}|\signal{\psi_n}'|^2\,d\mechanical{x}\ge0$. This is consistent with kinetic energy and rules out a missed minus sign.
+
+The two momentum directions explain the zero mean, but do not imply a distribution supported on just two exact momenta. The zero-extended finite-interval wavefunction has a continuous full-line Fourier distribution. Use the moments here together with the domain qualification below, rather than assigning two delta-function momentum outcomes.
+
 ### Check against the position uncertainty
 
 The position result from [[15 Expectation Value and Uncertainty/Exercises/02 Exercise 2|Exercise 2]] gives
@@ -104,7 +108,7 @@ $$
 \mechanical{\Delta p_n}=\frac{n\pi\mechanical{\hbar}}{\mechanical{L}}.}
 $$
 
-The position-momentum uncertainty product is $\mechanical{\hbar}\sqrt{n^2\pi^2/12-1/2}\geq0.568\mechanical{\hbar}>\mechanical{\hbar}/2$.
+The position-momentum uncertainty product satisfies $\mechanical{\hbar}\sqrt{n^2\pi^2/12-1/2}\geq\mechanical{\hbar}\sqrt{\pi^2/12-1/2}>\mechanical{\hbar}/2$. The exact minimum is approximately $0.568\mechanical{\hbar}$; the rounded number is not a strict lower bound.
 
 ## Physical quantities
 

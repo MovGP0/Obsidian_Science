@@ -1,4 +1,4 @@
-﻿---
+---
 title: "The Dirac Delta Distribution"
 ---
 
@@ -20,6 +20,18 @@ $$
 \delta(x)=\lim_{\sigma\to0^+}\frac1{\sigma\sqrt{2\pi}}
 e^{-x^2/(2\sigma^2)}.
 $$
+
+To see what the Gaussian limit means, apply it to a test function $\varphi$. Substitution $x=\sigma u$ gives
+
+$$
+\int_{\mathbb R}\frac{e^{-x^2/(2\sigma^2)}}{\sigma\sqrt{2\pi}}\varphi(x)\,dx
+=\frac1{\sqrt{2\pi}}\int_{\mathbb R}e^{-u^2/2}\varphi(\sigma u)\,du
+\longrightarrow\varphi(0).
+$$
+
+For a smooth compactly supported test function, boundedness and the integrable Gaussian justify passing to the limit. The Gaussian's area is one at every width. Its pointwise limit is zero away from zero and unbounded at zero, so pointwise limits cannot explain the surviving unit area.
+
+The same test-function method checks scaling. In $\int\delta(ax)\varphi(x)\,dx$, changing variables to $u=ax$ contributes $1/|a|$. The absolute value is necessary even for negative $a$; a delta measure cannot acquire a negative mass from reversing orientation.
 
 Useful identities are
 

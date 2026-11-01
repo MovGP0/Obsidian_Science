@@ -11,7 +11,15 @@ title: "Chapter Summary"
 - The exponential form is $z=r\mathrm{e}^{\mathrm{i}\theta}$. Euler's formula is $\mathrm{e}^{\mathrm{i}\theta}=\cos\theta+\mathrm{i}\sin\theta$.
 - In exponential form, $z_1z_2=r_1r_2\mathrm{e}^{\mathrm{i}(\theta_1+\theta_2)}$. Multiply the absolute values and add the arguments.
 - A nonzero complex number has $n$ distinct $n$th roots. They are equally spaced on a circle.
-- In quantum mechanics, $\signal{\psi}$ is complex for structural reasons. The squared absolute value $|\signal{\psi}|^2$ is the probability density.
+- In the usual quantum formulation, $\signal{\psi}$ is a complex state amplitude. The Born rule assigns the position probability density $|\signal{\psi}|^2$ to a normalized position-space state.
+
+## Choose a representation for the task
+
+For a sum, Cartesian components reveal cancellation. For a product or integer power, polar form reveals the change in magnitude and angle. For a quotient, check the denominator before using its conjugate. For roots, list all phase representatives that produce distinct values and state any chosen branch.
+
+Reconstruct these ideas with one number: for $z=1+\mathrm{i}$, find $z^*$, $|z|^2$, and $z^2$ without a calculator. They are $1-\mathrm{i}$, $2$, and $2\mathrm{i}$. The square has argument $\pi/2$, while its modulus is $2$. Squaring a complex value therefore differs from taking its squared magnitude.
+
+Keep this distinction when reading quantum theory. Complex arithmetic provides amplitudes and relative phases; the physical probability rule supplies the connection from a normalized state to outcomes. A common overall phase leaves all its squared coefficient magnitudes unchanged. Relative phases can affect the squared magnitude of a sum, so the arithmetic must retain them.
 
 ## Physical quantities
 

@@ -1,9 +1,15 @@
-﻿---
+---
 title: "Creation and Annihilation Operators"
 ---
 
 > [!TLDR]
 > Ladder operators turn the harmonic-oscillator problem into operator algebra. Their canonical commutator, together with the oscillator Hamiltonian and physical state conditions, gives equally spaced energy levels.
+
+The construction assumes a positive mass and a positive oscillator frequency. The two coefficients convert the position and momentum operators to dimensionless terms, so their sum can define a dimensionless ladder operator. The commutator is computed on a common oscillator domain; neither ladder operator is bounded on the full Hilbert space.
+
+The spectral strategy is to factor the positive part of the Hamiltonian. Writing it as a constant times $\hat a^\dagger\hat a$ exposes a squared norm, which cannot have a negative expectation. The ladder commutators then move number eigenvalues in unit steps. A normalizable vacuum terminates lowering, while raising generates the higher states. The half-unit term remains when the lowering norm is zero, which explains the nonzero ground energy.
+
+The zero-frequency limit is not obtained by substituting zero into the ladder definitions: their coefficients become singular and the confining oscillator changes into a different spectral problem.
 
 A powerful application of commutators is the algebraic solution of the quantum harmonic oscillator, without solving a differential equation.
 

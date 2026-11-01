@@ -5,6 +5,10 @@ title: "Dirac Notation"
 > [!TLDR]
 > Dirac notation expresses states, inner products, and operators without choosing a representation. It uses the same algebra for discrete bases and generalized continuous bases.
 
+A useful first question is: which parts of a calculation change when we change basis? The state vector and the operator describe the same preparation and transformation. Their coordinate columns and matrices change together. An inner product, and hence a projection probability, must stay the same.
+
+Read the ket-and-bra section first to distinguish vectors from functionals. Then use projectors and completeness to turn abstract products into calculations. The representation section applies this method to wavefunctions; the postulates section separates the mathematical language from the physical measurement assumptions. As a check on this distinction, a complex inner product is an amplitude, not a probability. Only its squared magnitude has the probability interpretation, with normalized states and the specified projection measurement.
+
 Paul Dirac introduced this notation in 1930 in an influential book on theoretical physics. The basic idea is simple: instead of working only with a wavefunction $\signal{\psi}(\mechanical{x})$ and an integral such as
 
 $$

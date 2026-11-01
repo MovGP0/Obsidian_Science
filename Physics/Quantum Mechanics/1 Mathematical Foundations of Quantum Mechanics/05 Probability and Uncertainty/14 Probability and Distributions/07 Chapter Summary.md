@@ -12,6 +12,10 @@ title: "Chapter Summary"
 - **Quantum probabilities:** $\signal{\rho}(\mechanical{x})=|\signal{\psi}(\mechanical{x})|^2$ by Born’s rule. The uncertainty $\Delta A$ is the standard deviation of measurement outcomes.
 - **Definite values:** For a normalized pure state with finite variance, $\Delta A=0$ means that it lies in one eigenspace of the observable. In a discrete eigenbasis, positive variance requires components at different eigenvalues.
 
+To reconstruct a calculation, first specify the outcome set and normalized weights. Then ask whether the first and second moments exist before using a mean or variance. A normalized law need not have either moment. Finally, identify whether the problem asks for an exact probability, a shape-dependent Gaussian estimate, or a shape-independent Chebyshev bound.
+
+Check the distinction with a distribution concentrated equally at $-1$ and $1$. Its mean is zero and its variance is one, but it has no probability at its mean and is not Gaussian. A mean and variance alone therefore do not specify a distribution.
+
 > [!note]
 > The source’s final bullet equates positive variance with a superposition. That statement assumes a pure state and distinguishes different eigenvalues, not merely different basis vectors within one degenerate eigenspace. Statistical mixtures can also have positive variance.
 

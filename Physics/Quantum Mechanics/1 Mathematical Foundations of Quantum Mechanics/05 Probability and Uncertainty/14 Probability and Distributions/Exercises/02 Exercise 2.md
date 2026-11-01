@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Exponential moments and Chebyshev’s inequality"
 ---
 
@@ -68,6 +68,8 @@ $$
 \sigma_X^2=\frac2{\lambda^2}-\left(\frac1\lambda\right)^2
 =\frac1{\lambda^2},\qquad \sigma_X=\frac1\lambda.
 $$
+
+The rate $\lambda$ changes the scale but not the shape of this family. Set $Y=\lambda X$. Its normalized density is $e^{-y}$ for $y\ge0$, its mean is one, and its standard deviation is one. Consequently the probability of a deviation measured in standard deviations is independent of $\lambda$. Use this to predict, before integration, that the answer to part (c) must be a pure number.
 
 ### (c) Exact tail and Chebyshev’s bound
 

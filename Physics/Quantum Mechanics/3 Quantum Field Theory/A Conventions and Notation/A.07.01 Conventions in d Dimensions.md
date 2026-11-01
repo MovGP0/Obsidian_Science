@@ -24,6 +24,10 @@ $$
 \tag{A.65}
 $$
 
+For (A.63)–(A.64) as spatial transforms, the dot product is Euclidean. The same signs and normalization extend to a spacetime transform when the dot product is the Lorentzian contraction and $d$ counts spacetime dimensions. In (A.65), the momentum is a spacetime four-momentum and its square uses the mostly-minus metric. This is a change of application, not an identification of a spatial momentum square with the Lorentzian square.
+
+Substituting (A.63) into (A.64) gives the delta function in [[A.07.02 Dirac Delta Function]] and returns the original function, for example for a smooth rapidly decreasing function. The propagator is a distributional boundary value: its infinitesimal positive imaginary denominator specifies the time-ordering poles. It is not an ordinary function at a pole. Its mass dimension is minus two, which follows immediately from its denominator.
+
 ## Physical quantities
 
 | Symbol | Unit | Quantity | Description |

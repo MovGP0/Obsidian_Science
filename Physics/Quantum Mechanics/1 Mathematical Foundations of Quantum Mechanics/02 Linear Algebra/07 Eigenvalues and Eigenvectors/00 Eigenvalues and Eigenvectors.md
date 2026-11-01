@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Eigenvalues, Eigenvectors, and Diagonalization"
 ---
 
@@ -17,6 +17,10 @@ The answer depends on the operator. These special vectors, when they exist, are 
 > The geometric description of stretching and compression is direct for real eigenvalues. A negative eigenvalue also reverses direction. A complex eigenvalue can change the phase of a complex vector. In each case, the one-dimensional complex span of the eigenvector is preserved.
 
 In quantum mechanics, the eigenvectors and eigenvalues of the Hamiltonian $\hat H$ give the stationary states and the possible energies of the system.
+
+The chapter follows three questions. First, which nonzero vectors satisfy the eigenvalue equation? Next, what extra conclusions follow from Hermiticity? Finally, how can a full orthonormal eigenbasis simplify functions of an operator and measurement calculations? Keep finding eigenvalues separate from proving that enough eigenvectors exist.
+
+For example, $\begin{pmatrix}0&1\\0&0\end{pmatrix}$ has eigenvalue zero but only one independent eigenvector in $\mathbb C^2$. It cannot be diagonalized. Hermitian matrices avoid this defect. The finite-matrix results do not imply that every infinite-dimensional Hamiltonian has normalizable energy eigenvectors; a continuous spectrum requires a different spectral formulation.
 
 ## Chapter sections
 

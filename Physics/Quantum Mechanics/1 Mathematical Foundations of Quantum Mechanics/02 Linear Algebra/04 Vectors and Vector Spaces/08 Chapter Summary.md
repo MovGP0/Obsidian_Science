@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Chapter Summary"
 ---
 
@@ -13,6 +13,12 @@ title: "Chapter Summary"
 - For an orthonormal basis, $\langle e_i,e_j\rangle=\delta_{ij}$, and the coordinates are $c_i=\langle e_i,v\rangle$.
 - Gram–Schmidt constructs an orthonormal basis from any basis.
 - In quantum mechanics, states are represented by vectors and probability amplitudes are coordinates. In an orthonormal state basis, the basis-state probabilities are $|\signal{c}_n|^2$.
+
+## Reconstruct the chapter
+
+Given a proposed state expansion, first ask whether its vectors span the required space. Next test independence to establish unique coordinates. Only then ask whether the basis is orthonormal, which permits direct coefficient extraction by inner products. These are separate assumptions.
+
+For a check, $(1,0)^T$ and $(1,1)^T$ span $\mathbb{C}^2$ independently, but their inner product is $1$. Gram–Schmidt removes the shared component and produces the standard orthonormal directions. Explain why simply normalizing the original two vectors would leave a nonzero overlap. The finite procedure does not by itself prove convergence of infinite state expansions.
 
 ## Physical quantities
 

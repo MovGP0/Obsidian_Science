@@ -29,6 +29,10 @@ $$
 =\sqrt{\lvert\mechanical{\mathbf p}\rvert^2+\mechanical{m}^2}.
 $$
 
+This is the free field with constant real mass and no external potential. Both spinor labels in (A.48) use future-directed on-shell momentum. The opposite Fourier phases explain the different algebraic equations for the particle and antiparticle spinors; see [[A.05.03 Equations of Motion for the Spinors u and v]]. The daggered coefficient creates an antiparticle after quantization; it is not a negative observed energy.
+
+The factor of twice the mode energy is tied to covariant normalization. Changing the measure requires corresponding changes to the mode operators and their anticommutators. A useful differential check is that applying $i\partial_\mu$ to the negative-phase mode gives plus the momentum component, while the positive-phase mode gives minus it. In both cases the on-shell relation is required for a nonzero free solution. Interacting fields do not obey this free-mode equation without additional terms.
+
 ## Physical quantities
 
 | Symbol | Unit | Quantity | Description |

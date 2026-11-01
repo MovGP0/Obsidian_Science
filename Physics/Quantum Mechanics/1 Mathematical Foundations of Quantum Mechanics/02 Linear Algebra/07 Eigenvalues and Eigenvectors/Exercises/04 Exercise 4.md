@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Diagonalize a coupled two-level Hamiltonian"
 ---
 
@@ -74,6 +74,12 @@ $$
 $$
 
 At $\energy{\Delta}=0$, the Hamiltonian is $\energy{E_0}I$. The eigenvalue $\energy{E_0}$ has multiplicity two, and every nonzero vector is an eigenvector. The two states above remain one valid orthonormal eigenbasis. A nonzero coupling removes this degeneracy.
+
+## Why these eigenvectors can be predicted
+
+Write $H=\energy{E_0}I+\energy{\Delta}\sigma_x$. The identity changes every eigenvalue equally and cannot change an eigendirection. The remaining term exchanges the two basis states, so symmetric and antisymmetric combinations diagonalize it immediately. This route explains the vectors before determinant arithmetic.
+
+The molecular or double-well application is an effective two-state model: it retains two equivalent uncoupled configurations and a real mixing term. Extra states or unequal diagonal energies require an extended matrix. Shifting $\energy{E_0}$ changes the energy origin but leaves the gap unchanged, a useful check before calculating the population-transfer dynamics in the next exercise.
 
 ## Answer
 

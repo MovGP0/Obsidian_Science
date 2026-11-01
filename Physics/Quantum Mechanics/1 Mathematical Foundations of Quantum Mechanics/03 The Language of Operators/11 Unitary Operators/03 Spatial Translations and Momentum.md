@@ -1,9 +1,13 @@
-﻿---
+---
 title: "Spatial Translations and Momentum"
 ---
 
 > [!TLDR]
 > Momentum generates spatial translations. The translation operator shifts a position wavefunction, and continuous translation symmetry gives momentum conservation.
+
+The minus sign in the shifted argument is consistent with an active displacement to the right. If the original density is peaked at zero, the translated density is peaked where $\mechanical{x}-\mechanical{a}=0$, namely at $\mechanical{x}=\mechanical{a}$. A variable substitution in the norm integral shows that the translation preserves total probability on the full real line.
+
+This full-line assumption matters. A wavefunction on a fixed interval with walls cannot generally be shifted by an arbitrary distance while preserving the same allowed domain and boundary conditions. Moving the state and keeping the apparatus fixed is also different from merely relabelling coordinates. Finally, the existence of a translation operator does not by itself imply translation symmetry: the Hamiltonian must be invariant. A localized potential can admit translated states without giving them the same dynamical behavior or energy.
 
 The operator for a translation by $\mechanical{a}$ along the $x$ axis is
 

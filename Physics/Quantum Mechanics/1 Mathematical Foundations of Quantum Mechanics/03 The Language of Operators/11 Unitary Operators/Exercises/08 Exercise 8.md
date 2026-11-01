@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Spin-one-half generators of SU(2)"
 ---
 
@@ -122,6 +122,10 @@ $$
 $$
 
 The value agrees with the general eigenvalue $j(j+1)\mechanical{\hbar}^2$ for $j=1/2$. The same total-spin value holds for both z-basis states and every superposition of them. The generators do not commute, in contrast with the spatial translations in Exercise 2.
+
+The finite spin ladder differs from the oscillator ladder. It has both a highest and a lowest state, and its raising/lowering commutator is proportional to $\hat J_z$, not the identity. At the upper state raising vanishes; at the lower state lowering vanishes. This state-dependent commutator permits a finite representation without contradicting the trace obstruction for an identity commutator.
+
+The value of $\hat J^2$ is fixed in this representation, but it is not the square of the length of the mean spin vector. In the up state, the squared length of the mean is $\mechanical{\hbar}^2/4$, while the mean total square is $3\mechanical{\hbar}^2/4$. The difference is the sum of transverse variances. This explains how a fixed total-spin quantum number coexists with component uncertainty.
 
 ## Answer
 

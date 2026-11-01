@@ -114,6 +114,14 @@ As $\signal{t}\to\infty$, $N(\signal{t})\to K$, the **carrying capacity**. This 
 > [!note]
 > The logarithms as written assume $0<N<K$. Use absolute values for other non-equilibrium ranges. The saturation interpretation uses $\signal{r}>0$, $K>0$, and a positive initial population. The equilibrium solutions $N=0$ and $N=K$ must also be retained.
 
+## Local uniqueness, physical decay, and unitary phase
+
+The local uniqueness theorem does not promise a solution for all time. For example, $y'=y^2$ is locally Lipschitz in $y$, but $y(0)=1$ gives $y=1/(1-x)$, which diverges at $x=1$. The theorem selects a unique solution on a neighborhood; it does not remove later singularities.
+
+For the decay example, the differential law assumes a constant decay rate per surviving nucleus and no source that adds nuclei. The smooth function $N$ represents the expected population, or a large-population approximation. An individual finite sample loses nuclei in random discrete events. Thus the exponential is a model prediction for a mean, not an exact trajectory of the integer count in one sample.
+
+The quantum energy-eigenstate exponential has an imaginary exponent for a real energy. Its magnitude is constant, whereas the real negative exponent in the decay model reduces the population. The shared solution technique does not make closed-system phase evolution a decay process. Check both at zero time and at zero rate: the initial value is recovered, and evolution stops. In the logistic model, division also excludes the equilibria zero and $K$; test them directly in the original equation.
+
 ## Physical quantities
 
 | Symbol | Unit | Quantity | Description |

@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Explicit Schmidt decomposition of a two-qubit state"
 ---
 
@@ -185,6 +185,12 @@ $$
 $$
 
 A pure bipartite state is a product state exactly when its reduced density matrix is pure. Here the global state is pure, but $\rho_A$ is mixed. Thus the state is entangled. Its Schmidt rank of two gives the same result. Since $C$ is real and symmetric, the other reduced state is also $\rho_B=C^T\overline C=\rho_A$.
+
+## Two short checks of the longer calculation
+
+The determinant $\det C=-1/3$ is nonzero, so the $2\times2$ coefficient matrix has rank two before any eigenvectors are found. Also $\lambda_++\lambda_-=1$ and $\lambda_+\lambda_-=1/9$. Therefore the reduced purity is $(\lambda_++\lambda_-)^2-2\lambda_+\lambda_-=7/9$, independently checking the matrix-square calculation.
+
+This state is entangled but is not maximally entangled: its reduced eigenvalues are unequal, and its reduced purity exceeds the two-level minimum $1/2$. The mixed-reduction criterion used above assumes a globally pure state. A mixed global state can have mixed reductions even when it is a mixture of product states, so the same inference would then be invalid.
 
 ## Answer
 

@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Complex inner products and Hermitian symmetry"
 ---
 
@@ -73,6 +73,12 @@ $$
 $$
 
 Both direct calculations confirm Hermitian symmetry.
+
+## Independent check
+
+Cauchy–Schwarz gives a second check on (b). The squared norms are $14$ and $11$, while $|9+3\mathrm{i}|^2=90\le154$. This check would detect some arithmetic errors, but it cannot by itself verify the sign of the imaginary part; Hermitian symmetry supplies that separate check.
+
+In (a), orthogonality comes from cancellation of complex contributions, not from disjoint nonzero components. This is the same algebra that makes interference possible in state overlaps. To test your convention, replace $u$ by $\mathrm{i}u$: the product must acquire $-\mathrm{i}$, not $+\mathrm{i}$.
 
 ## Answer
 

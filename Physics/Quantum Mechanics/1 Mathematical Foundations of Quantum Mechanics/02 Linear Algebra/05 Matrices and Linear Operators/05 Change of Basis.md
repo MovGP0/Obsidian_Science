@@ -17,6 +17,8 @@ $$
 A'=U^\dagger AU.
 $$
 
+To derive the order of factors, let $c$ and $c'$ be old and new coordinate columns of the same vector. The column definition gives $c=Uc'$. If the old output is $Ac$, its new coordinates are $U^\dagger Ac=U^\dagger AUc'$. This proves the formula and fixes which side each factor belongs on.
+
 This is a **unitary transformation** of $A$. Trace and determinant are invariant under unitary transformations.
 
 ## Example — Matrix of σ_z in the eigenbasis of σ_x

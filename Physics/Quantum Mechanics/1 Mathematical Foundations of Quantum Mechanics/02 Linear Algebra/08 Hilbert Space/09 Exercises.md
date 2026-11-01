@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Exercises"
 ---
 
@@ -6,6 +6,10 @@ title: "Exercises"
 > Use these eight exercises to test square integrability, basis expansions, quantum probabilities, and the meaning of Hilbert-space completeness.
 
 Each note contains the complete question, a worked solution, and the final answer.
+
+Start with domains in Exercise 1: the same formula can pass on a finite interval and fail on the full line. Exercises 2–4 then separate a one-mode check, normalized state probabilities, and a genuinely infinite expansion. In the constant-function example, endpoint values must not be used to reject an $L^2$ identity.
+
+Exercises 5 and 7 use kernels. Read their delta identities after integration, not as pointwise numerical formulas. Exercise 6 supplies a quantitative truncation check, while Exercise 8 explains why square-summable coefficients define a vector at all. Before each solution, state whether you need integrability, orthogonality, basis completeness, or completeness of the space.
 
 ## Basic level
 

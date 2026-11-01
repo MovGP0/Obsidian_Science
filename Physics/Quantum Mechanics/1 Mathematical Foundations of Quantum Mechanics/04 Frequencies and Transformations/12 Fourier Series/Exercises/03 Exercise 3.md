@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Orthogonality of complex Fourier modes"
 ---
 
@@ -38,6 +38,12 @@ I_{mn}
 $$
 
 The zero follows because the phase makes an integer number of cycles over the interval. Both cases combine as $I_{mn}=2L\delta_{mn}$. Division of each mode by $\sqrt{2L}$ would give an orthonormal basis under the unscaled integral inner product. Here $x$ and $L$ are mathematical interval coordinates; no physical length unit is specified.
+
+## Why integer labels and a full period matter
+
+Replace $m-n$ by an arbitrary real difference $r$. The same integral becomes $2L\sin(\pi r)/(\pi r)$, with continuous value $2L$ at $r=0$. It need not vanish for noninteger $r$. Thus the zero overlap is a property of the specified harmonic grid and interval, rather than of all exponentials.
+
+The interval can start at any point if its length remains $2L$: the extra phase multiplies a zero overlap by a phase and leaves equal-label overlaps unchanged. Cutting the interval short generally destroys orthogonality. This explains why a finite observation window need not separate arbitrary nearby frequencies exactly.
 
 ## Answer
 

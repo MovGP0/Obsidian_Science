@@ -23,3 +23,16 @@ $$
 g(t)=\exp(tX)\in G.
 \tag{B.38}
 $$
+
+## How the tangent space obtains a bracket
+
+For a matrix Lie group, a tangent vector is the derivative at $t=0$ of a smooth curve through the identity. Left translation moves it to a left-invariant vector field on the group. The commutator of two such vector fields is again left invariant and defines the bracket at the identity. In the matrix realization this is $[X,Y]=XY-YX$.
+
+The group commutator makes its meaning visible:
+$$
+e^{tX}e^{sY}e^{-tX}e^{-sY}
+=\mathbf1+ts[X,Y]+O(t^2s,ts^2).
+$$
+Thus the bracket measures the leading failure of small transformations to commute. The exponential in (B.38) is the unique one-parameter subgroup with initial tangent $X$; it is not an arbitrary parametrized curve.
+
+For $U(n)$, the tangent matrices are anti-Hermitian. Physicists often write $X=-iT$ with $T$ Hermitian, explaining the extra $i$ in the next note. The exponential is a local coordinate map near the identity, but a general Lie group need not have every element equal to a single exponential. In particular, no exponential from the tangent algebra reaches a different connected component.

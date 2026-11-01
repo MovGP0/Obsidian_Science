@@ -1,4 +1,4 @@
-﻿---
+---
 title: "The free-particle propagator and Gaussian evolution"
 ---
 
@@ -141,6 +141,12 @@ $$
 $$
 
 Its squared modulus is a normalized Gaussian with mean $\mechanical{p}_0\signal{t}/\mechanical{m}$ and variance $\mechanical{\sigma}^2(1+\tau^2)$. This agrees with the complete momentum-space calculation in Exercise 6, including the phase and normalization, not only the width.
+
+## Check composition and units
+
+For two successive free time intervals, momentum-space evolution multiplies the two phase factors. Their exponents add, giving the phase for the total elapsed time. Therefore the corresponding kernels compose by integration over the intermediate position. This checks that the propagator represents one consistent time-evolution operator, rather than only a solution of the differential equation.
+
+The kernel has units $\unit{m^{-1}}$. In the propagation integral, its product with an initial wavefunction and $d\mechanical{x}'$ has units $\unit{m^{-1/2}}$, as required for the evolved wavefunction. The constant magnitude of the kernel does not violate probability conservation: conservation follows after coherent integration of amplitudes, or directly from the unit-modulus momentum multiplier. It does not follow by integrating $|K|^2$ as a probability density.
 
 ## Answer
 

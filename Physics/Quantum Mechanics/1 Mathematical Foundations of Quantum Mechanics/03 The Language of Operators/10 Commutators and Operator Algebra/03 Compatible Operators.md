@@ -1,9 +1,13 @@
-﻿---
+---
 title: "Compatible Operators"
 ---
 
 > [!TLDR]
 > Compatible observables commute and admit a common eigenbasis in the finite-dimensional setting. Noncommuting observables can still share individual eigenstates, but not a complete common eigenbasis.
+
+The finite-dimensional theorem can be proved without guessing a common basis. If two Hermitian matrices commute, the second matrix maps each eigenspace of the first into itself: applying the first matrix before or after the second gives the same eigenvalue on that subspace. Diagonalize the second Hermitian matrix separately inside each such eigenspace. The resulting orthonormal vectors diagonalize both matrices. Conversely, diagonal matrices in one common basis commute.
+
+Degeneracy is the reason for the extra step. An arbitrary eigenbasis of the first matrix need not already diagonalize the second. Even the identity commutes with every matrix, yet its eigenvectors can be chosen in any basis. In the free-particle example, momentum fixes energy, but energy does not fix the sign of momentum: opposite wavenumbers have the same energy. Compatibility does not mean that the two observables contain the same information.
 
 > [!definition] Definition 10.2 | Compatible operators
 > Two observables $\hat A$ and $\hat B$ are **compatible** if $[\hat A,\hat B]=0$.

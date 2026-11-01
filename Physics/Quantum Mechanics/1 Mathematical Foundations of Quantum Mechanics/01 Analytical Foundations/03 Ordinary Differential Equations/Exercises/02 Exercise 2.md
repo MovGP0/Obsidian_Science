@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Second-order equations and a repeated root"
 ---
 
@@ -79,6 +79,19 @@ y=(C_1+C_2x)\mathrm{e}^{-x}.
 $$
 
 No initial conditions are specified for part (c), so both constants remain free. The repeated real root is the critical-damping case: there is no sine or cosine factor.
+
+### Verify independence at the repeated root
+
+For the two candidate functions in (c), the Wronskian is
+
+$$
+W(x)=\begin{vmatrix}\mathrm{e}^{-x}&x\mathrm{e}^{-x}\\-\mathrm{e}^{-x}&(1-x)\mathrm{e}^{-x}\end{vmatrix}
+=\mathrm{e}^{-2x}\ne0.
+$$
+
+Thus they are independent on the real line. This confirms that the two remaining constants specify a full two-dimensional solution space. Two identical exponentials would instead give zero determinant.
+
+In (a), the initial derivative vanishes because the two modal derivatives cancel. It does not mean both growing modes have zero coefficients. In (b), the zero initial value removes the cosine, while the specified derivative fixes the sine coefficient. For transfer, determine which initial data would select only $\mathrm{e}^{-x}$ in (c): the derivative at zero must be minus the value at zero. Initial data can remove the extra mode even though the general solution must retain it.
 
 ## Answer
 

@@ -17,11 +17,13 @@ $$
 =n\ln n-n+\frac12\ln(2\pi n)+O(1/n).
 $$
 
-Equivalently,
+The leading multiplicative form is
 
 $$
 n!\sim\sqrt{2\pi n}\left(\frac ne\right)^n.
 $$
+
+Here $n$ is a positive integer, and the asymptotic limit holds as $n$ grows. The symbol $\sim$ means that the ratio of the two factorial expressions tends to one. It does not mean equality for finite $n$. For entropy, the logarithm is usually the useful quantity because independent state counts multiply while their logarithms add.
 
 ## Derivation by the saddle-point method
 
@@ -45,6 +47,8 @@ $$
 f(u)\approx-1-\frac12(u-1)^2.
 $$
 
+The curvature term shows that the important values satisfy $|u-1|$ of order $n^{-1/2}$. Set $s=\sqrt n(u-1)$: the lower endpoint $u=0$ becomes $s=-\sqrt n$, far from the peak at $s=0$. This explains both the width factor and the extension of the interval. Terms beyond the quadratic control the correction. This argument gives the leading saddle-point approximation; it is not an error-bound proof of the stated $O(1/n)$ remainder.
+
 For large $n$, the narrow peak permits extension of the integration interval:
 
 $$
@@ -62,6 +66,8 @@ Taking the logarithm gives $n\ln n-n+\frac12\ln(2\pi n)$.
 > [!note] Remark A.2
 > Statistical mechanics often uses only the leading approximation $\ln n!\approx n\ln n-n$. The term $\frac12\ln(2\pi n)$ has a vanishing contribution per particle, since $n^{-1}\ln n!\sim\ln n-1$. It remains relevant when calculating corrections.
 
+For example, at $n=1$ the leading factorial approximation is $\sqrt{2\pi}/e$, not $1$; the large-argument condition matters. A useful check is to compare successive approximations with an exact small factorial before using the formula for a finite-size correction.
+
 The full asymptotic Stirling series is
 
 $$
@@ -70,5 +76,7 @@ $$
 +\frac1{12z}-\frac1{360z^3}+\cdots,
 \qquad z\to\infty.
 $$
+
+For this article, read the last expansion along the positive real axis. It is an asymptotic series: retain a finite number of terms for the required large-argument accuracy, rather than assume convergence after adding arbitrarily many terms. The expansion and remainder bounds are given in [NIST DLMF §5.11](https://dlmf.nist.gov/5.11). The first omitted logarithmic term after $\tfrac12\ln(2\pi n)$ is $1/(12n)$, consistent with the theorem's $O(1/n)$ remainder.
 
 See [[B.03 Application - Stirling Formula]] for the saddle-point correction.

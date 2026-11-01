@@ -20,6 +20,14 @@ title: "Chapter Summary"
 
 - The Schrödinger equation $\hat H\signal{\psi}=\energy{E}\signal{\psi}$ is an eigenvalue problem. Its energy values are the eigenvalues.
 
+## Choose the method, then apply the conditions
+
+For a first-order separable equation, identify equilibrium solutions before dividing by the dependent-variable factor. For a scalar second-order equation, use characteristic roots only when the coefficients are constant and the highest-derivative coefficient is nonzero. At a repeated root, construct the second independent solution rather than repeating the first. For a constant matrix system, use the matrix exponential; diagonalization is a computational option rather than an existence condition.
+
+Keep initial-value evolution distinct from an eigenvalue boundary problem. Initial conditions select constants at a fixed model parameter. Boundary conditions in the box instead select energies at which a nonzero solution exists. Check normalization only after this spectral selection.
+
+Predict the effect of doubling the box length. The allowed wave number halves and every energy at a fixed positive integer label falls by a factor of four. The eigenfunction amplitude falls by $1/\sqrt2$ so that its norm stays one over the longer interval. These linked checks connect the ODE, geometry, energy scale, and normalization.
+
 ## Physical quantities
 
 | Symbol | Unit | Quantity | Description |

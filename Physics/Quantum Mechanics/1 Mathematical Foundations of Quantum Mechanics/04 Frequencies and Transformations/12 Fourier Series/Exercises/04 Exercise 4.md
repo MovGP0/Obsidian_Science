@@ -1,4 +1,4 @@
-﻿---
+---
 title: "A quadratic Fourier series and the fourth-power sum"
 ---
 
@@ -59,6 +59,12 @@ $$
 $$
 
 Equating this to $16\sum_{n\geq1}n^{-4}$ gives the result below. The $n^{-2}$ coefficients also imply uniform convergence of the Fourier series of $f$.
+
+## Why remove the mean?
+
+The subtracted constant occupies only the zero Fourier mode. It does not alter the nonzero coefficients, but it removes its separate contribution to Parseval. Without the subtraction, the squared norm of $x^2$ would also contain $a_0^2/2$; dropping that term would give a wrong fourth-power sum.
+
+As a check on the final number, $1<\sum_{n\geq1}n^{-4}<1+\int_1^\infty s^{-4}ds=4/3$. The result $\pi^4/90\approx1.08232$ lies in this range. The Fourier series also agrees at both endpoints because the periodic extension of this quadratic has equal endpoint values.
 
 ## Answer
 

@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Rigid translation of a Gaussian wave packet"
 ---
 
@@ -73,6 +73,10 @@ $$
 $$
 
 The distinction is physical: a translation alone does not add the momentum phase of a Galilean boost. For the given real Gaussian up to a constant phase, the mean momentum stays zero, even though the density center moves under the linear-momentum Hamiltonian. Its velocity operator is $(i/\mechanical{\hbar})[\mechanical{v}\hat p,\hat x]=\mechanical{v}\hat I$.
+
+The imposed velocity is a parameter of the evolution, not a value inferred from the initial momentum distribution. The dispersion relation for this generator is linear in momentum. Different momentum components therefore have the same velocity, so the packet translates without dispersing. The quadratic free-particle dispersion instead gives different component velocities and allows the width to grow.
+
+Two boundary checks distinguish these models. At zero imposed velocity the translated packet is fixed. At zero time it returns the original Gaussian with its original norm and width. Increasing the mass does not change this prescribed translation, while it changes the free-particle spreading scale. The linear Hamiltonian is self-adjoint on the momentum domain for real constant velocity, but its full-line spectrum is not bounded below for nonzero velocity. It should not be identified with ordinary nonrelativistic kinetic energy.
 
 ## Answer
 

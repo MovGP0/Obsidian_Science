@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Pauli-z expectation for a general spin state"
 ---
 
@@ -85,6 +85,12 @@ $$
 $$
 
 The observable here is the Pauli operator with dimensionless eigenvalues. No angular-momentum factor is part of the specified calculation.
+
+## Interpret the mean
+
+Check three limiting states: the up state gives $+1$, the down state gives $-1$, and equal squared amplitudes give zero. A zero mean does not mean that a measurement returns zero; the specified operator has only the outcomes $+1$ and $-1$. It means that these outcomes have equal probabilities in repeated preparations.
+
+The relative phase does not appear in this mean because the operator is diagonal in the selected basis. Consequently, this single expectation cannot reconstruct a general spin state. As a transfer test, explain why changing the phase of the down amplitude leaves each line of the diagonal calculation unchanged.
 
 ## Answer
 

@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Orthonormal expansion and the Parseval identity"
 ---
 
@@ -72,6 +72,12 @@ $$
 $$
 
 Thus an orthonormal coordinate expansion preserves the squared norm. The basis assumption ensures that no component of $v$ lies outside the span.
+
+## Why completeness matters
+
+An orthonormal family alone is insufficient for the two equalities. In $\mathbb{C}^2$, use only $e_1=(1,0)^T$ and take $v=(0,1)^T$. The displayed coefficient sum is zero, while $v$ has norm one. The missing basis direction is the missing norm contribution. For an incomplete orthonormal family, the sum gives the projection onto its span instead of the whole vector.
+
+This example explains the quantum requirement that a complete measurement basis account for total probability. The proof here uses finite sums; an infinite version also needs norm convergence, which cannot be justified by formal rearrangement alone.
 
 ## Answer
 

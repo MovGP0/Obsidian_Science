@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Basic Physical Constants"
 ---
 
@@ -63,6 +63,26 @@ $$
 $$
 
 Here, $\mechanical{\hbar}$ is the reduced Planck constant, $\mechanical{m_e}$ is the electron mass, $\electric{e}$ is the elementary charge, $\thermal{k_B}$ is the Boltzmann constant, $\signal{c}$ is the speed of light in vacuum, and $\electric{\varepsilon_0}$ is the vacuum permittivity.
+
+## Use and consistency checks
+
+Use the SI formulas as a complete set: the Coulomb factor $4\pi\electric{\varepsilon_0}$ must remain present. Formulas in Gaussian units distribute this factor differently. Also, $\electric{e}>0$ is a charge magnitude; the electron charge is $-\electric{e}$. Its sign matters in an interaction even though the atomic scales above contain even powers.
+
+Substitution of the fine-structure constant gives two useful checks on the atomic scales:
+
+$$
+\mechanical{a_0}=\frac{\mechanical{\hbar}}
+{\mechanical{m_e}\signal{c}\electric{\alpha}},
+\qquad
+\energy{E_h}=\electric{\alpha}^2\mechanical{m_e}\signal{c}^2
+=\frac{\electric{e}^2}{4\pi\electric{\varepsilon_0}\mechanical{a_0}}.
+$$
+
+The first ratio has units of length; each expression for the Hartree has units of energy. These equivalent definitions also appear in the [NIST CODATA constants table](https://physics.nist.gov/cuu/pdf/wall_2022.pdf). This link checks the definitions; the rounded source values on this page are retained.
+
+For the nonrelativistic hydrogen problem with an infinitely heavy point nucleus, the ground-state energy is $-\energy{E_h}/2$. Thus the positive Hartree is an energy unit, not the signed energy of that bound state, and the Bohr radius is a length scale rather than the radius of a classical orbit. Finite nuclear mass changes the hydrogen scales through the reduced mass, as in the [NIST DLMF Coulomb equation](https://dlmf.nist.gov/33.22.i); relativistic and radiative corrections require additional physics.
+
+Keep units consistent before inserting numbers. In particular, the displayed Hartree value is in electronvolts, whereas the fundamental constants above are in SI units. Rounding at the start can make two equivalent formulas differ in their last digits; such a difference alone does not show a physical discrepancy.
 
 ## Physical quantities
 

@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Exercises"
 ---
 
@@ -6,6 +6,10 @@ title: "Exercises"
 > These ten worked exercises cover subspaces, complex inner products, orthonormal bases, spin probabilities, and norm inequalities.
 
 Each note contains the full question, a worked solution, and a final answer. The exercise numbers and anchors match the original question page.
+
+Before opening a solution, choose the test that the question needs. Exercises 1 and 3 concern closure or independence; lengths do not decide those questions. Exercises 2 and 10 test the role of complex conjugation. In Exercises 5–7 and 9, identify which nonnegative squared norm or orthogonal component makes the proof work.
+
+Use Exercises 4 and 8 to connect the algebra to spin-state predictions. Check normalization before interpreting squared coefficients as probabilities. As a transfer test, ask which parts of each solution would survive in a nonorthonormal basis; the closure and independence tests survive, but direct coefficient-to-probability rules require more care.
 
 ## Basic level
 

@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Density matrix and purity of an equal superposition"
 ---
 
@@ -51,6 +51,12 @@ $$
 $$
 
 Therefore $\operatorname{Tr}(\rho^2)=1$. This unit purity is the criterion for a pure density matrix. The nonzero off-diagonal entries distinguish this coherent superposition from an equal statistical mixture.
+
+## Distinguish coherence from population
+
+Compare this result with $I/2$. Both have diagonal entries $1/2$, so the same up/down probabilities cannot distinguish them. However, the current state gives $\operatorname{Tr}(\rho\sigma_x)=1$, while $I/2$ gives zero. The off-diagonal entries therefore affect predictions in another measurement basis. These are model predictions, not measurement data supplied by the exercise.
+
+The word coherence is basis-dependent: in the basis containing $|\psi\rangle$, the same pure density matrix is $\operatorname{diag}(1,0)$. Purity is invariant under this change of basis. A nonzero off-diagonal entry in one basis is useful here, but it is not a basis-independent definition of purity.
 
 ## Answer
 

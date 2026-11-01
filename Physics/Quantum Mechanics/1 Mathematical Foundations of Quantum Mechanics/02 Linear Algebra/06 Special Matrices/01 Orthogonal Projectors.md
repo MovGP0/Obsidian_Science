@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Orthogonal Projectors"
 ---
 
@@ -20,6 +20,10 @@ P_W=\sum_{j=1}^{k}w_jw_j^\dagger
 $$
 
 The complement $P_{W^\perp}=I-P_W$ projects onto the subspace orthogonal to $W$.
+
+The two matrix conditions have different jobs. Idempotence means that a component already extracted is left unchanged. Hermiticity makes the discarded component orthogonal: $\langle Pu,(I-P)u\rangle=u^\dagger P(I-P)u=0$. Hence the squared norms of these components add to $\|u\|^2$. For a normalized quantum vector, $\|Pu\|^2$ is the probability assigned to this projective outcome.
+
+Idempotence alone is insufficient. The matrix $\begin{pmatrix}1&1\\0&0\end{pmatrix}$ squares to itself, but sends $(0,1)^T$ to $(1,0)^T$ along a direction that is not orthogonal to its image. It is an oblique projector, not an orthogonal one.
 
 ## Example — Projector onto a vector in ℂ³
 

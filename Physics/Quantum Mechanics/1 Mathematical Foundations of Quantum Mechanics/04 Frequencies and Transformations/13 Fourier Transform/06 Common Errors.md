@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Common Errors"
 ---
 
@@ -80,6 +80,12 @@ $$
 These are generalized energy eigenstates, not normalizable momentum wavefunctions. The two branches have the classical relation between free-particle energy and momentum; an energy eigenstate can be a superposition of the two momentum directions.
 
 The transform is a change between the generalized position basis $\{|x\rangle\}$ and momentum basis $\{|p\rangle\}$. Its algebraic role is the same as a basis change between other eigenstate representations.
+
+## A stationary equation is not an ordinary probability distribution
+
+For positive energy, multiplication by $\mechanical{p}^2/(2\mechanical{m})-\energy{E}$ can annihilate a distribution concentrated at either of its two real zeros. It cannot annihilate a nonzero $L^2$ function supported only at those two points: a finite set has zero measure. Thus the whole-line free particle has no normalized positive-energy eigenfunction of the displayed stationary equation.
+
+A physical normalized packet instead occupies a nonzero momentum range. Each momentum component evolves by its own unit-modulus phase, so its momentum probabilities remain constant even when the position profile spreads. This resolves the apparent conflict between a simple algebraic momentum equation for an energy eigenstate and nontrivial time evolution for a localized state.
 
 ## Physical quantities
 

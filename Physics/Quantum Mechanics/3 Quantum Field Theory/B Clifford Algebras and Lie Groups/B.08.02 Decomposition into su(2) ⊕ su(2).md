@@ -55,3 +55,13 @@ $$
 
 > [!note] Spin content in the last row
 > The source lists only spin $3/2$ for the twelve-component representation. Under spatial rotations, it also contains spin-$1/2$ components before additional field constraints are imposed. A full four-vector times Dirac spinor has sixteen components; the twelve-component sector is obtained after removing its gamma trace. The table describes representation content, not by itself the on-shell particle states.
+
+## Recovering dimensions and rotation content
+
+Insert (B.82)–(B.84) into the definitions of $A^i,B^i$. The minus sign of the boost bracket cancels the $i^2$ from the two boost terms, while the mixed terms cancel in $[A^i,B^j]$. This is the step that makes the two commuting complex algebras appear.
+
+A representation $(j_L,j_R)$ is the tensor product of the two modules, so its complex dimension is $(2j_L+1)(2j_R+1)$. Under spatial rotations $J^i=A^i+B^i$, use ordinary angular-momentum addition: the spins range from $|j_L-j_R|$ to $j_L+j_R$ in unit steps. For a four-vector, $\tfrac12\otimes\tfrac12=0\oplus1$, giving $1+3=4$. For $(1,\tfrac12)$ the spins are $\tfrac12,\tfrac32$, giving $2+4=6$.
+
+These checks explain the entries without counting particles. For a massive field, field equations and constraints may select a particular on-shell spin. For a massless field, helicity and gauge redundancy require a further analysis. Also, the labels “self-dual” and “anti-self-dual” for Lorentzian two-forms refer to complex eigenspaces; their assignment depends on the orientation and Hodge-star convention.
+
+Use the rotation rule to reconstruct the Dirac row without a gamma matrix. Each summand has one spin-$1/2$ rotation multiplet, so the direct sum has two such multiplets and dimension four. Explain why this calculation alone cannot decide which particle and antiparticle states a field equation will retain.

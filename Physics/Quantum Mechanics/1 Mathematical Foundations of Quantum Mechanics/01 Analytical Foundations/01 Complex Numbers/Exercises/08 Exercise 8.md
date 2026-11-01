@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Proof of the complex triangle inequality"
 ---
 
@@ -50,6 +50,12 @@ Both sides to be compared are nonnegative. The square-root function preserves or
 
 > [!note]
 > Equality holds when either number is zero or when both nonzero numbers have the same argument. In that case their vectors point in the same direction, and their lengths add directly.
+
+### Locate the only possible strict inequality
+
+The expansion and factorization are equalities. The only possible loss occurs when $\operatorname{Re}(z_1z_2^*)$ is replaced by $|z_1z_2^*|$. For nonzero inputs this is equality precisely when $z_1z_2^*$ is positive real, which means the two arguments agree modulo $2\pi$. This explains the equality condition from the proof rather than from the drawing alone.
+
+With $z_1=1$ and $z_2=-1$, the real cross term is negative and cancellation is complete. With $z_2=\mathrm{i}$ it is zero and the resultant modulus is $\sqrt2$, strictly less than two. These cases show why the theorem is an upper bound, not an instruction to add magnitudes. In amplitude calculations, phase can reduce the magnitude of a sum even when neither contribution is small.
 
 ## Answer
 

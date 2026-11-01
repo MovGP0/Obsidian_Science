@@ -1,9 +1,15 @@
-﻿---
+---
 title: "Hermitian and Unitary Operators"
 ---
 
 > [!TLDR]
 > Exponentiating a Hermitian generator gives a unitary family. Pauli-matrix exponentials reduce to sine and cosine and describe spin rotations with a consistent sign convention.
+
+The generator describes the first-order change near the identity, while its exponential combines those small changes into a finite transformation. For the plus-sign convention in the theorem, differentiating at zero gives $U'(0)=i\hat G$. Differentiating the identity $U^\dagger U=I$ makes $U'(0)$ anti-Hermitian, which explains why the corresponding generator is Hermitian in the matrix setting.
+
+The group assumption is essential in the converse. A general smooth unitary path can have a changing local generator; it need not be the exponential of one fixed matrix times the parameter. In infinite dimensions the appropriate fixed generator is self-adjoint, rather than merely symmetric on a test domain.
+
+In the Pauli examples, the half-angle is what produces the full-turn minus sign. Check the zero-angle limit first: the matrix becomes the identity and its first derivative retains the chosen plus sign.
 
 > [!theorem] Theorem 11.1 | Hermitian generators and unitary operators
 > If $\hat G^\dagger=\hat G$, then, for every real parameter $\theta$,

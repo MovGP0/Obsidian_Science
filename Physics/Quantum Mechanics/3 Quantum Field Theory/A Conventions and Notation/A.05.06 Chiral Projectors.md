@@ -29,6 +29,10 @@ $$
 \signal{\psi}_L=P_L\signal{\psi}.
 $$
 
+Idempotence follows from the chirality matrix squaring to the identity. Orthogonality follows from multiplying the two opposite factors. In the Weyl basis these operations simply select the lower or upper two components, respectively, which checks the right/left assignment without solving an equation of motion.
+
+Anticommutation with each gamma matrix gives $P_L\gamma^\mu=\gamma^\mu P_R$ and $P_R\gamma^\mu=\gamma^\mu P_L$. This is useful when moving projectors through a vertex or a Dirac operator; a projector changes side and chirality label together. The free mass term couples the two chiral components, whereas the massless free equations separate them. Chirality is not generally helicity for a massive state. Compare the massless discussion in [Tong, section 4.4](https://www.damtp.cam.ac.uk/user/tong/qft/qfthtml/S4.html#S4.SS4), which uses the opposite sign for the chirality matrix; use this appendix's definitions when assigning its eigenvalue labels.
+
 ## Physical quantities
 
 | Symbol | Unit | Quantity | Description |

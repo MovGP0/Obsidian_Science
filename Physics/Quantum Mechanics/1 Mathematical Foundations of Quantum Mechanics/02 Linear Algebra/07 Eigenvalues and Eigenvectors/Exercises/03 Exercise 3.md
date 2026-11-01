@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Trace and determinant of the Pauli matrices"
 ---
 
@@ -56,6 +56,12 @@ $$
 $$
 
 These agree with the trace and determinant. This agreement also follows from diagonalization: trace and determinant do not change when the basis changes.
+
+## What the shared invariants do not imply
+
+The three Pauli matrices have the same spectrum but different eigenvectors in the chosen basis. Thus the same trace and determinant do not mean the same measurement direction. For example, $(1,0)^T$ is a $\sigma_z$ eigenvector, while $\sigma_x$ sends it to $(0,1)^T$.
+
+In two dimensions, trace zero and determinant $-1$ fix the characteristic polynomial $\lambda^2-1$, but they still do not fix the matrix. Even Hermiticity does not follow from these two numbers alone: $\begin{pmatrix}1&1\\0&-1\end{pmatrix}$ shares them and is not Hermitian. Use the adjoint test separately before assigning an observable interpretation.
 
 ## Answer
 

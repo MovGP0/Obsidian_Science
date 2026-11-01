@@ -1,4 +1,4 @@
-﻿---
+---
 title: "The Ehrenfest theorem"
 ---
 
@@ -61,6 +61,10 @@ The commutator therefore measures the change of the mean caused by state evoluti
 
 > [!note]
 > The state must be differentiable, and the products $\hat H\hat A|\psi\rangle$ and $\hat A\hat H|\psi\rangle$ must be defined with sufficient regularity to differentiate the expectation value. For an explicitly time-dependent observable, add $\langle\partial\hat A/\partial\signal{t}\rangle$ to the right side.
+
+The proof works by differentiating both sides of the inner product. Using only the ket equation would miss the bra contribution and would not form a commutator. The opposite signs also ensure that setting the observable to the identity gives a zero derivative of the norm.
+
+A constant mean for one state is weaker than an operator conservation law. For example, an energy eigenstate of a time-independent Hamiltonian changes only by a common phase, so every time-independent observable with an existing expectation has a constant mean in that state, even if it does not commute with the Hamiltonian. To establish conservation for all preparations, check the commutator and the evolution/domain assumptions, rather than one special state's derivative.
 
 ## Answer
 

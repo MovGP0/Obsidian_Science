@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Chapter Summary"
 ---
 
@@ -27,6 +27,14 @@ title: "Chapter Summary"
 
 > [!note]
 > In the integration-by-parts shorthand, the integrals use the same variable and limits as the boundary term. The expectation-value formula assumes a normalized state and a suitable operator domain. The exact Ehrenfest force is the mean force; its equality with the force at the mean position needs the conditions stated in [[02 Functions, Derivatives and Integrals/06 Common Errors|the quantum-mechanics box]].
+
+## Reconstruct the calculation in the right order
+
+Given a proposed state, first identify its independent variables and the domain of integration. Calculate the squared magnitude before normalizing; an imaginary phase and a real decay factor have different effects on it. Choose a substitution or symmetry that makes the integral simple, and keep units consistent through its Jacobian.
+
+For a differential observable, apply the operator to the whole state before integrating. The product rule must act on an envelope as well as a phase. If a derivative is moved to another factor, display the boundary term and state why it vanishes. Only after these steps should the integral be called an expectation value.
+
+As a self-check, compare a smooth Gaussian with the exponential cusp. Both have finite norm and position moments. The Gaussian supports the repeated ordinary derivatives used in its momentum calculation; the cusp needs a weak derivative and a separate second-derivative domain analysis. Which step of an energy calculation first distinguishes the two? It is the action of the second derivative, not normalization.
 
 ## Physical quantities
 

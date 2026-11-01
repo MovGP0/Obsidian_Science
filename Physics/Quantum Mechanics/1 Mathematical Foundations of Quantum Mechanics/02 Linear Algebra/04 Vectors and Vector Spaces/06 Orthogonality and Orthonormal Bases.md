@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Orthogonality and Orthonormal Bases"
 ---
 
@@ -27,6 +27,8 @@ The norm has the simple form
 $$
 \|v\|^2=\sum_i|c_i|^2.
 $$
+
+To see why the coordinate formula works, insert $v=\sum_j c_je_j$ into $\langle e_i,v\rangle$. Linearity in the second argument and $\langle e_i,e_j\rangle=\delta_{ij}$ leave only $c_i$. This removes the need to solve a new linear system for each state. The norm formula then ensures that normalized quantum amplitudes have squared magnitudes that sum to one.
 
 ## The Gram–Schmidt procedure
 

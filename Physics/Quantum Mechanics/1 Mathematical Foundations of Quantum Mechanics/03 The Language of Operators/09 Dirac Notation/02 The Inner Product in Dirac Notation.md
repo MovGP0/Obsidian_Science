@@ -1,9 +1,15 @@
-﻿---
+---
 title: "The Inner Product in Dirac Notation"
 ---
 
 > [!TLDR]
 > The Dirac inner product is conjugate symmetric, linear in the ket, and positive definite. For normalized states, the squared magnitude of their overlap is a projection probability.
+
+The overlap answers a geometric question before it answers a measurement question: how much of one vector lies along another? The inner-product axioms define this geometry. The Born rule supplies the further physical interpretation for a specified projective measurement.
+
+Normalization is essential in that interpretation. For nonzero vectors the projection probability is the squared overlap divided by the product of their squared norms. Cauchy–Schwarz bounds this ratio by one. In the normalized example below, no such denominator is needed. The result $1/2$ is therefore consistent with both normalization and the probability bound.
+
+To test the phase convention, multiply either normalized ket by $i$. The overlap changes phase, but its squared magnitude stays fixed. Reversing the two arguments instead conjugates the overlap. These are different operations with the same consequence for this projection probability.
 
 The inner-product properties take the compact form
 

@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Two-level energies and coherent transitions"
 ---
 
@@ -155,6 +155,10 @@ $$
 $$
 
 The factor of two follows from the squared sine. The argument frequency $|\energy{\Delta}|/\mechanical{\hbar}$ in the amplitude is half the population angular frequency. If $\energy{\Delta}=0$, the transition probability is always zero and there is no finite oscillation period.
+
+The energy basis is useful because time evolution there changes only phases. The arrow basis is useful because it labels the preparation and the final measurement. The calculation therefore changes basis to evolve, then combines the phase contributions to predict a transition. The identity part of the Hamiltonian produces only a common phase; the energy splitting produces the relative phase responsible for the oscillation.
+
+At short times the down amplitude is proportional to time, so its probability starts quadratically, with coefficient $(\energy{\Delta}/\mechanical{\hbar})^2$. Its initial time derivative is zero. This is a stronger check than normalization alone, because a sign or frequency error can leave the norm unchanged. The model assumes an isolated pair of levels and a constant real coupling; leakage to other states or decoherence is outside this Hamiltonian.
 
 ## Answer
 

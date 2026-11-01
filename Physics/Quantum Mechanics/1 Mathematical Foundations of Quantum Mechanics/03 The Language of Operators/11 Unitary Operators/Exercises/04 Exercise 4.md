@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Larmor precession of a two-level state"
 ---
 
@@ -88,6 +88,10 @@ $$
 $$
 
 The vector starts at the positive x axis and stays on the equator of the Bloch sphere. For $\signal{\omega_0}>0$, it turns from positive x toward positive y about the positive z axis. Its period is $\signal{T}=2\pi/|\signal{\omega_0}|$ for nonzero frequency. A negative frequency reverses the direction; zero frequency gives a fixed vector. The Pauli components are dimensionless; the physical spin means are $\mechanical{\hbar}/2$ times these components.
+
+The sign of precession can be checked without re-expanding the state. At the initial positive-x preparation, the Ehrenfest equation for $\sigma_y$ uses $[\sigma_z,\sigma_y]=-2i\sigma_x$. With the Hamiltonian in the question, it gives initial derivative $+\signal{\omega_0}$ for the y mean. This agrees with the positive sine in part (c).
+
+The Bloch vector has returned after one stated precession period, although the spinor has gained a global minus sign. Two periods return the spinor itself exactly. A fixed-axis measurement cannot detect that common minus sign. Also, the Hamiltonian specifies the signed precession parameter; assigning a direction from a magnetic field requires the sign of the physical magnetic coupling, which the abstract two-level Hamiltonian has already absorbed.
 
 ## Answer
 

@@ -97,6 +97,12 @@ $$
 \tag{A.74}
 $$
 
+One route to (A.68) represents the denominator power as a gamma-weighted integral over a positive auxiliary parameter. The momentum integral is then a product of one-dimensional Gaussians. Performing it leaves the gamma function with argument $n-d/2$. This method explains both the convergence condition and the poles after continuation.
+
+For a numerator of degree two or four, ordinary ultraviolet convergence requires $\operatorname{Re}n>d/2+1$ or $\operatorname{Re}n>d/2+2$, respectively. Euclidean rotation symmetry replaces a rank-two moment by the Kronecker tensor times the scalar second moment divided by $d$; the rank-four factor is $d(d+2)$. Contracting (A.70) and (A.71) checks these coefficients and the retained source correction. Both sides of (A.68) have mass dimension $d-2n$, since the denominator parameter has dimension two.
+
+For (A.72)–(A.74), the contour rotation must be allowed by the Feynman prescription and the absence of crossed singularities; the time differential supplies the factor $i$, and each denominator supplies its sign. The displayed $(-1)^n$ form is unambiguous for integer propagator powers. Noninteger powers require a consistent complex branch. Do not take a zero-parameter limit as an ordinary convergent integral without checking the infrared endpoint.
+
 ## Physical quantities
 
 | Symbol | Unit | Quantity | Description |

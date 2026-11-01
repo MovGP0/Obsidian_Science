@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Chapter Summary"
 ---
 
@@ -12,6 +12,12 @@ title: "Chapter Summary"
 - Trace and determinant are basis invariants. They equal the sum and product of the eigenvalues, counted with multiplicity.
 - A density matrix $\rho$ is Hermitian, has $\operatorname{Tr}(\rho)=1$, and satisfies $\rho\ge0$. A pure state has $\operatorname{Tr}(\rho^2)=1$.
 - The general expectation-value formula $\langle\hat A\rangle=\operatorname{Tr}(\rho\hat A)$ also applies to mixed states.
+
+## Reconstruct the main distinctions
+
+Compare $\rho_1=\operatorname{diag}(1,0)$ with $\rho_2=I/2$. Both are positive Hermitian matrices of trace one. The first has rank one, purity one, and is an orthogonal projector. The second has rank two, purity one half, and is not idempotent. Thus density-matrix conditions alone do not imply a pure state.
+
+For a method-selection check, ask why an SVD is available for a rectangular matrix whereas its ordinary eigenvector diagonalization is not. SVD uses separate orthonormal input and output bases. Keep that distinction when applying a coefficient-matrix SVD to a bipartite quantum state.
 
 ## Physical quantities
 

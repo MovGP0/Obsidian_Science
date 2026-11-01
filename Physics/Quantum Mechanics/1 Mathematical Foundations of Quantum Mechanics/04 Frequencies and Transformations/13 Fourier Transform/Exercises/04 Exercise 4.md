@@ -1,4 +1,4 @@
-﻿---
+---
 title: "A decaying Green function from a Fourier transform"
 ---
 
@@ -62,6 +62,12 @@ $$
 The function is continuous, so its second distributional derivative contains no $\delta'$ term. Its derivative has a jump of $-1$, which produces $-\delta(x)$. Away from zero, $f''=k_0^2f$. These two facts verify the entire equation.
 
 For uniqueness, subtract two decaying solutions. Their difference solves the homogeneous equation on the whole line, including zero, and has the form $Ae^{k_0x}+Be^{-k_0x}$. Decay at both ends forces $A=B=0$. No physical units are assigned to these mathematical variables.
+
+## Test the source strength without a transform
+
+Integrate the equation over $[-\varepsilon,\varepsilon]$. The integral of $f''$ is $f'(\varepsilon)-f'(-\varepsilon)$; the integral of the bounded term $k_0^2f$ tends to zero. The source therefore requires a derivative jump of $-1$, exactly as found above. This small-interval balance fixes the factor $1/(2k_0)$ independently of the transform convention.
+
+The limit $k_0\to0^+$ is singular: the decay length grows and the value at the origin diverges. There is no solution of $f''=-\delta$ that decays at both infinities, because its derivative must jump while each exterior decaying linear solution would be zero. The positive parameter is therefore part of the existence statement.
 
 ## Answer
 

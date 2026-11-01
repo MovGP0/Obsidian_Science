@@ -24,6 +24,10 @@ The normal distribution is especially important in physics:
 > [!note]
 > A Gaussian position density alone does not guarantee a minimum uncertainty product. The wavefunction phase also matters; a quadratic phase can increase momentum uncertainty without changing the position density.
 
+Standardization isolates the location and scale: $Z=(X-\mu)/\sigma$ has density $e^{-z^2/2}/\sqrt{2\pi}$. The factor $1/\sigma$ in the original density is needed because $dx=\sigma\,dz$. Increasing $\sigma$ widens the curve and lowers its height by the same factor, so its area remains one.
+
+The condition $\sigma>0$ is essential. As $\sigma$ tends to zero, the distributions concentrate at $\mu$, but the density formula has no value at $\sigma=0$. The limiting distribution is a point mass, not an ordinary density. Predict the mean and variance of $Y=2X+1$: they are $2\mu+1$ and $4\sigma^2$, because a translation changes the center while a scale factor is squared in the variance.
+
 ## Example — Verify normalization
 
 Consider

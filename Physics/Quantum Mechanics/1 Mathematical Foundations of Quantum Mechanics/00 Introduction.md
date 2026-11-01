@@ -1,6 +1,7 @@
 ---
-title: Introduction
+title: "Introduction"
 ---
+
 > [!TLDR]
 > This book develops the mathematical structure of quantum mechanics step by step. It connects analysis, linear algebra, operator notation, Fourier analysis, and probability in one consistent framework.
 
@@ -25,6 +26,21 @@ The “QM Box” sections have the heading “Quantum Mechanics”. They connect
 The challenge exercises need more effort. Some can require tools that go slightly beyond the material presented in the text. It is not necessary to solve them all. They are for readers who want to study the subject in more depth and develop a sound, independent understanding of the material.
 
 The text assumes a basic knowledge of elementary trigonometry, differential and integral calculus, and $2 \times 2$ systems of linear equations.
+
+## A route from calculation to quantum states
+
+The guiding question is: how can one state give different measurement probabilities when we change the measurement basis? Complex amplitudes, inner products, and operators provide the mathematical language for this question. The Born rule supplies the physical connection to measurement probabilities. It is a postulate of the quantum model, not a theorem of linear algebra.
+
+Use the chapter numbers in the note folders for the following route:
+
+- If complex conjugation or differential equations are unfamiliar, start with [[00 Complex Numbers]] and [[00 Ordinary Differential Equations]]. These tools are needed before wavefunctions and time evolution.
+- For the structure of states and observables, follow [[00 Vectors and Vector Spaces]], [[00 Matrices and Linear Operators]], [[00 Eigenvalues and Eigenvectors]], and [[00 Hilbert Space]]. Finite matrices give useful test cases, but they do not remove the domain and convergence questions of infinite-dimensional spaces.
+- To connect the structure to calculations, continue with [[00 Dirac Notation]], [[00 Commutators and Operator Algebra]], and [[00 Unitary Operators]]. Then use [[00 Fourier Series]] and [[00 Fourier Transform]] to study changes of representation.
+- Finish with [[00 Probability and Distributions]] and [[00 Expectation Value and Uncertainty]]. They connect amplitudes to distributions and distinguish a mean from the spread of individual outcomes.
+
+At each stage, check both the result and its conditions. A change of orthonormal basis must preserve the norm of a state. An eigenvector equation must hold after substitution. A normalized probability distribution must have total probability one. These are consistency checks of a calculation; experimental support for quantum mechanics requires comparison with measurements.
+
+Use [[08 Exercise Solutions]] for practice and [[09 Glossary of Terms]] to distinguish terms that look similar. Before reading a solution, state which mathematical object is being used and which assumption makes the main step valid.
 
 > [!note]
 > The chapter ranges above follow the supplied introduction. They differ from the supplied table of contents. The table of contents lists Part II as Chapters 4–8, Part III as Chapters 9–11, Part IV as Chapters 12–13, and Part V as Chapters 14–15. The note folders follow the table of contents.

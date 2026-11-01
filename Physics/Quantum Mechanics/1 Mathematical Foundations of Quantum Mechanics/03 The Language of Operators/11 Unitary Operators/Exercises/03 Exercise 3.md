@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Energy phases and stationary probabilities"
 ---
 
@@ -75,13 +75,17 @@ $$
 
 Both probabilities stay constant. The relative phase still changes, so the mean of another observable that couples the two levels can depend on time.
 
+The state is not generally stationary even though both energy probabilities are constant. To see what evolves, use the normalized test ket $(|1\rangle+|2\rangle)/\sqrt2$ as a projection direction. Its probability in this preparation is $1/2+(\sqrt3/4)\cos(\signal{\omega}\signal{t})$, obtained by adding the two energy amplitudes before taking the squared magnitude. It stays between zero and one, but changes with the relative phase.
+
+This check separates conserved energy populations from fixed probabilities for all observables. It also exposes a degenerate boundary: if $\signal{\omega}=0$, the two stated energies coincide. The probabilities $3/4$ and $1/4$ still label the basis components, but an energy-only measurement has one zero-energy outcome with probability one. It cannot distinguish the two labels.
+
 ## Answer
 
 **(a)** $|\psi(\signal{t})\rangle=\frac{\sqrt3}{2}e^{-i\signal{\omega}\signal{t}}|1\rangle+\frac12e^{-2i\signal{\omega}\signal{t}}|2\rangle$.
 
 **(b)** $\langle\hat H\rangle=5\mechanical{\hbar}\signal{\omega}/4$ is constant.
 
-**(c)** $P(\energy{E_1},\signal{t})=3/4$ and $P(\energy{E_2},\signal{t})=1/4$ are constant.
+**(c)** For distinct energies, $P(\energy{E_1},\signal{t})=3/4$ and $P(\energy{E_2},\signal{t})=1/4$ are constant. If $\signal{\omega}=0$, an energy-only measurement instead has one zero-energy outcome with probability one.
 
 ## Physical quantities
 

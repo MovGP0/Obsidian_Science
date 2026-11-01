@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Basic Properties"
 ---
 
@@ -17,7 +17,13 @@ title: "Basic Properties"
 
 The convolution convention is $(f*g)(x)=\int_{-\infty}^{+\infty}f(y)g(x-y)\,dy$. The formulas require suitable integrability and regularity conditions; distributional extensions are used where appropriate.
 
-The derivative property turns differential equations into algebraic expressions in the transform variable. For a free particle, it converts the position-space Schrödinger equation into an algebraic energy equation in momentum space.
+The derivative property turns differential equations into algebraic expressions in the transform variable. For a free particle, it converts the stationary position-space Schrödinger equation into an algebraic energy equation in momentum space.
+
+For a safe common starting domain, take $f$ and $g$ to be Schwartz functions: they and all their derivatives decrease rapidly. The displayed integral manipulations then have no boundary or integrability obstruction. Extending a result to other domains requires the conditions specific to that operation; norm preservation does not give unrestricted differentiation.
+
+Translation and modulation can be checked without integration. Translating the input changes the origin of its profile and must leave its spectral magnitude unchanged. Modulation adds a constant to each local phase frequency and must shift the spectrum. These predictions fix the direction of the argument shift and are useful sign checks.
+
+For convolution, substitute the inverse transforms into the defining integral and account for both $1/\sqrt{2\pi}$ factors. The integral over the shared coordinate produces a delta with factor $2\pi$. This leaves the stated $\sqrt{2\pi}$ factor. It is tied to the transform convention, not to the physical system.
 
 ## Example — Proof of the derivative property
 

@@ -8,6 +8,19 @@ title: "Glossary of Terms"
 > [!note] Scope of the definitions
 > Brief qualifications state the conditions for normalized states, degenerate outcomes, time-independent Hamiltonians, and operator domains where the compact source formulas require them.
 
+## How to use related terms
+
+Read a definition with its conditions before using its formula. The same symbol can denote different objects in different entries. In particular, the density matrix $\rho$ is an operator, while the position probability density $\signal{\rho}(\mechanical{x})$ is a function. The context and the argument distinguish them.
+
+Use these comparisons when a calculation is unclear:
+
+- **State, ket, and wavefunction:** a ket represents a pure state; a wavefunction gives its components in a chosen representation. A change of representation changes the components, without changing the physical state.
+- **Amplitude and probability:** amplitudes are complex and can interfere. Their squared magnitudes give probabilities in the stated measurement basis. Adding amplitudes and adding probabilities describe different preparations or measurement conditions.
+- **Superposition and mixture:** an equal coherent superposition of two orthonormal kets and an equal statistical mixture of those kets give the same probabilities in that basis. They can give different probabilities in another basis. One set of basis probabilities does not determine every property of a state.
+- **Uncertainty and measurement error:** uncertainty here means the standard deviation predicted for repeated measurements on identically prepared systems. It is not, by definition, an instrument error or the uncertainty of an estimated mean.
+
+The spectral theorem is a mathematical result about operators. The Born rule and the ideal measurement update state how the quantum model uses those operators for measurements. Proving the spectral theorem does not prove these physical postulates.
+
 ## Adjoint
 
 The operator $\hat A^{\dagger}$ defined by

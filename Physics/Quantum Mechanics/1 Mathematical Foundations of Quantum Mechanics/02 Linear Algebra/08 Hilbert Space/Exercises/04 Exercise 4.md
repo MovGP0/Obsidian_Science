@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Sine expansion of a constant function"
 ---
 
@@ -95,6 +95,12 @@ L
 $$
 
 Divide by the positive factor $8L/\pi^2$ to get the required sum. The coefficients here expand an unnormalized mathematical function, so their squared magnitudes are not quantum probabilities.
+
+## Quantify a finite approximation
+
+For the first mode alone, the retained squared norm is $|c_1|^2=8L/\pi^2$. Its fraction of the full squared norm is $8/\pi^2$, about $0.811$. The missing fraction is positive and tends to zero only as more odd modes are included. This checks why the first coefficient can be large without exhausting the expansion.
+
+The coefficient formula scales as $\sqrt L$, while the normalized basis functions scale as $1/\sqrt L$; their product has the scale of the constant function. Endpoint mismatch does not obstruct norm convergence, but it would obstruct uniform convergence to the representative that equals one at both endpoints. Different convergence claims require different tests.
 
 ## Answer
 

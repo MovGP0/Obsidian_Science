@@ -5,6 +5,8 @@ title: "Electroweak Interaction Vertices"
 > [!TLDR]
 > Electroweak vertices use chiral projectors, the weak mixing angle, and the Higgs vacuum scale to relate gauge and mass couplings.
 
+The charged current selects the left-chiral weak doublet, while the neutral current also couples to right-chiral charged fermions through hypercharge. Chiral projectors select field components. For massless on-shell states, chirality determines helicity with different particle and antiparticle assignments. Massive states do not have that identification. Thus a massive external fermion must be treated with its full spinor even when its vertex contains a chiral projector.
+
 Use the standard chiral projectors
 $$
 P_L=\frac{1-\gamma^5}{2},
@@ -27,6 +29,10 @@ Here $\signal{v}$ is the Higgs-doublet vacuum scale.
 
 > [!note]
 > The mass relation is the tree-level relation. Precision input values require consistent renormalization conventions and radiative corrections.
+
+Read [[C.04.01 Charged Currents (W–Fermion–Fermion Vertex)]] and [[C.04.02 Neutral Current (Z–Fermion–Fermion Vertex)]] for fermion currents, then [[C.04.04 Triple Gauge Vertices (TGC)]] and [[C.04.05 Quartic Gauge Vertices (QGC)]] for gauge self-interactions. The Higgs vertices in this section use the same broken-vacuum mass and coupling definitions.
+
+The projector relations $P_L^2=P_L$, $P_R^2=P_R$, and $P_LP_R=0$ check that the chiral pieces neither overlap nor count a component twice. The two gauge couplings and mixing angle are dimensionless; the vacuum scale has one energy dimension, as required by the W mass relation. These are tree-level parameter relations, not independent precision constraints to impose on mixed renormalization schemes.
 
 ## Physical quantities
 

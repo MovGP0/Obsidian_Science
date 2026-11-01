@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Full SVD of a rectangular diagonal matrix"
 ---
 
@@ -55,6 +55,12 @@ V^\dagger=\begin{pmatrix}1&0\\0&1\end{pmatrix}.
 $$
 
 Both $U$ and $V$ are unitary. Direct multiplication gives $U\Sigma V^\dagger=I_3\Sigma I_2=A$, which checks the decomposition.
+
+## Domain and output checks
+
+The map takes two input coordinates into a three-dimensional output space, but its image has dimension two. There is no input kernel: both singular values are nonzero. The extra zero row therefore records an unused output direction, not a third zero singular value associated with a third input direction. Indeed, $AA^\dagger=\operatorname{diag}(9,4,0)$ while $A^\dagger A=\operatorname{diag}(9,4)$.
+
+This distinction prevents an incorrect rank count in rectangular state-coefficient calculations. For a transfer check, change the lower-right nonzero entry from $2$ to $-2$. The singular values remain $3,2$, but a sign must move into a unitary factor; singular values are nonnegative lengths.
 
 ## Answer
 

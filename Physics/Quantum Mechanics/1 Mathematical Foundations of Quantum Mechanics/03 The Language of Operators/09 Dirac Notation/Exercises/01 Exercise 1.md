@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Bras, complex conjugation, and overlaps"
 ---
 
@@ -87,6 +87,10 @@ $$
 
 > [!note] Basis labels
 > If numeric labels replace the arrows, first identify $|1\rangle=|\uparrow\rangle$ and $|2\rangle=|\downarrow\rangle$. Coefficients from different bases cannot determine an overlap without the relation between those bases.
+
+The real overlap in this question is a special result, not a reason to omit conjugation. As a transfer check, multiply the second ket by $i$. The forward overlap becomes $i/\sqrt{10}$ and the reverse becomes $-i/\sqrt{10}$. Both squared magnitudes remain $1/10$.
+
+This check changes only a global phase of one preparation, so it leaves its physical state unchanged. It tests the algebraic distinction between amplitudes and probabilities while retaining exactly the same projection experiment. In part (c), the bra rule remains valid even for a nonorthogonal pair; only the simple coefficient test for normalization then needs the overlap cross terms.
 
 ## Answer
 

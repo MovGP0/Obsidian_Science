@@ -22,6 +22,10 @@ $$
 
 The $j$th column of $A$ is the image of the $j$th basis vector, expressed in the coordinates of that basis.
 
+Why are columns sufficient? Expand $v=\sum_j c_je_j$ and use linearity: $\hat A v=\sum_j c_j\hat A e_j$. Expanding each image gives output coordinate $\sum_j A_{ij}c_j$. Thus the action on basis vectors determines the action on every vector. This is a finite-dimensional reconstruction argument, not a separate assumption about matrices.
+
+The orthonormal hypothesis makes each coordinate a simple inner product. In a general basis, the columns are still the coordinates of the images, but those coordinates are not given by the displayed overlap formula. This distinction matters when translating a state-space operator into a numerical representation.
+
 ## Example — Matrix of a map
 
 Let $\hat A:\mathbb{C}^2\to\mathbb{C}^2$ be defined by

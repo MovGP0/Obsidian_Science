@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Position matrix in the harmonic oscillator basis"
 ---
 
@@ -73,6 +73,12 @@ $$
 The real symmetric block is consistent with the Hermiticity of position. It is the matrix of $P\hat xP$ on the three-state subspace, where $P=\sum_{n=0}^{2}|n\rangle\langle n|$. It does not contain the complete action of $\hat x$: the $|2\rangle$ state also couples to $|3\rangle$. The subspace is therefore not invariant under the full operator.
 
 The oscillator eigenstates used here are in the position operator's domain. The calculation does not require the unbounded operator to act on every element of $L^2(\mathbb R)$.
+
+## A truncation check
+
+The position scale has length units: $[\mechanical{\hbar}/(\mechanical{M}\signal{\omega})]=\unit{m^2}$. Every nonzero matrix entry therefore has the required position unit.
+
+Truncation also changes products. In the state $|2\rangle$, the full $\langle2|\hat x^2|2\rangle$ is $5\mechanical{x_0}^2$, because both transitions to $|1\rangle$ and $|3\rangle$ contribute squared coefficients $2$ and $3$. Squaring the displayed three-state block retains only the first path and gives $2\mechanical{x_0}^2$. Thus the square of a compressed operator is not generally the compression of its square. This is a useful warning before using a finite oscillator matrix for numerical predictions.
 
 ## Answer
 

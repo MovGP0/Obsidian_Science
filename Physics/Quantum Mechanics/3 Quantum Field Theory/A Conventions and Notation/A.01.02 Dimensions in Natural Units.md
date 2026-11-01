@@ -28,6 +28,10 @@ The common dimensions are collected below.
 > [!note]
 > The listed field dimensions apply to canonically normalized fields in four spacetime dimensions. A derivative is an operator with mass dimension one, rather than a separate physical quantity.
 
+The field entries follow from requiring the action to be dimensionless in natural units. In four dimensions, the coordinate integration has mass dimension minus four, so the Lagrangian density must have dimension four. A scalar kinetic term contains two derivatives and two scalar fields. Its dimension then fixes each scalar field to dimension one. A fermion kinetic term contains one derivative and two spinor fields, which fixes each spinor field to dimension three halves.
+
+This gives a quick interaction check: four scalar factors have dimension four, so a quartic scalar coupling is dimensionless in four dimensions. In $d$ dimensions the same reasoning gives scalar and vector field dimensions $(d-2)/2$ and spinor field dimension $(d-1)/2$. These are canonical dimensions; interactions can produce anomalous scaling dimensions. Use the canonical values for power counting, and do not identify them with all quantum scaling exponents.
+
 ## Physical quantities
 
 | Symbol | Unit | Quantity | Description |

@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Conjugation preserves modulus and reverses argument"
 ---
 
@@ -42,6 +42,12 @@ The new angle is therefore $-\theta$, with multiples of $2\pi$ allowed. Geometri
 
 > [!note]
 > The argument of zero is undefined. A principal argument must also remain in its selected interval. For example, if the interval is $[0,2\pi)$, the conjugate of a number with angle $\pi/3$ has principal angle $5\pi/3$, which equals $-\pi/3$ modulo $2\pi$.
+
+### Why the two proof methods have different scope
+
+The Cartesian modulus proof includes zero without a special choice of angle. The polar argument proof cannot include zero, because its first step requires a positive radius. Choosing each representation for the part where it is defined keeps this restriction explicit.
+
+Test the branch boundary with $z=-1$. In the principal interval $(-\pi,\pi]$, both $z$ and $z^*$ have angle $\pi$. Their principal angles are equal, even though $-\pi$ is the negative of the original angle. Thus the unqualified real-number equality of principal arguments would be false; the modulo-$2\pi$ statement remains true. Conjugation preserves a quantum amplitude's magnitude but need not preserve its phase relative to other amplitudes.
 
 ## Answer
 

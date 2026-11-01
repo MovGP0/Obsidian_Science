@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Verification of infinite-well eigenstates"
 ---
 
@@ -94,6 +94,12 @@ $$
 $$
 
 This verifies the equation and the stated energy. The infinite walls enter through the boundary conditions; the interior equation does not apply across an infinite potential jump.
+
+### The three tests have separate jobs
+
+Multiplying an eigenfunction by a nonzero constant leaves its differential equation and homogeneous endpoint conditions unchanged. It usually changes its norm. Thus solving the first and third parts would not, by themselves, verify the second. Conversely, a normalized smooth function with the correct endpoint zeros need not have a second derivative proportional to itself.
+
+The energy scale has unit $\unit{J}$ because $\mechanical{\hbar}^2/(\mechanical{m}\mechanical{L}^2)$ has the unit of energy. Increasing the positive integer label increases curvature and energy as its square. Reversing its sign would only reverse the sine function and would not produce a new level. The state is defined on the well's interval with the stated domain; extending it by zero is not a reason to apply the free second-derivative equation across the infinite walls.
 
 ## Answer
 

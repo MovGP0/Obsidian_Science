@@ -51,3 +51,16 @@ T(A)&=N,
 \end{aligned}
 \tag{B.51}
 $$
+
+## Completeness is a projection onto traceless matrices
+
+Take an integer $N\ge2$. For any complex $N\times N$ matrix $M$, the identity and the $N^2-1$ generators give the expansion
+$$
+M=\frac{\operatorname{Tr}M}{N}\mathbf1
++2\sum_a T^a\operatorname{Tr}(T^aM).
+$$
+The coefficient two follows from $T_F=1/2$. Equating matrix entries gives (B.49). The subtraction term removes the identity component, so it is essential for $SU(N)$ rather than $U(N)$.
+
+Setting the two middle indices equal and summing in (B.49) gives $\sum_aT^aT^a=(N^2-1)\mathbf1/(2N)$. This proves the fundamental Casimir in (B.51). Splitting $T^aT^b$ into commutator and anticommutator then gives the three-generator trace in (B.50); its imaginary part has the sign set by (B.39).
+
+For $N=2$, Pauli anticommutators leave no traceless symmetric part, so $d^{abc}=0$. For $N=3$, the fundamental Casimir becomes $4/3$. These are representation and normalization checks, not values of a gauge coupling. Other representations require their own trace index and do not satisfy this same two-index completeness formula.

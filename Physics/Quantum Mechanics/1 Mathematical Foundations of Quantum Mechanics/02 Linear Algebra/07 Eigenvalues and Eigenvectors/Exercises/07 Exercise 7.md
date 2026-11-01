@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Derive the harmonic-oscillator spectrum with ladder operators"
 ---
 
@@ -181,6 +181,12 @@ $$
 $$
 
 Their sum is $\energy{E_0}$. The zero-point energy is therefore the total ground-state energy, with equal kinetic and potential parts.
+
+## Why this proof selects the oscillator spectrum
+
+The proof uses two distinct ingredients: the commutator shifts a candidate eigenvalue by one, while positivity forbids the sequence from crossing below zero. Without the norm calculation, the shift rule would leave open fractional or negative ladders. The assumed oscillator vacuum and representation then supply existence of the whole nonnegative ladder.
+
+A finite matrix model cannot satisfy $[a,a^\dagger]=I$ exactly: in finite dimension the trace of a commutator is zero, whereas the trace of $I$ is the positive dimension. This checks why a truncated oscillator matrix must alter the relation at its upper boundary. Finally, the adjacent energy gap is $\mechanical{\hbar}\signal{\omega}$, with energy units, while the ground energy is half that gap.
 
 ## Answer
 

@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Trace, determinant, rank, and kernel of a diagonal matrix"
 ---
 
@@ -48,6 +48,12 @@ $$
 $$
 
 Therefore the kernel contains only the zero vector. The nonzero determinant confirms that $A$ is invertible. The rank-nullity relation also checks the result: $2+0=2$.
+
+## Distinguish the invariants
+
+The negative eigenvalue does not reduce rank: rank counts independent output directions, not positive entries. This Hermitian matrix is invertible but is not positive semidefinite, since the second basis vector has expectation $-1$. It therefore cannot be a density matrix.
+
+As a transfer check, replace $-1$ by zero. The trace becomes $3$, the determinant becomes zero, rank drops to one, and the second coordinate direction becomes the kernel. This shows how determinant, rank and kernel detect loss of invertibility together, whereas the trace alone does not.
 
 ## Answer
 

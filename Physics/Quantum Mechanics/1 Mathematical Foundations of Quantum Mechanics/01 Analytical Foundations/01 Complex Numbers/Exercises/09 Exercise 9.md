@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Addition of two symmetric phasors"
 ---
 
@@ -50,6 +50,12 @@ $$
 This is also the identity $5(\mathrm{e}^{\mathrm{i}\pi/6}+\mathrm{e}^{-\mathrm{i}\pi/6})=10\cos(\pi/6)$.
 
 Geometrically, the two vectors have length 5 and phases $+30^\circ$ and $-30^\circ$. They are reflections in the real axis. The vertical components cancel, and the horizontal components add along the positive real axis. The resultant amplitude is less than 10 because the vectors do not point in the same direction.
+
+### Predict the effect of changing the phase separation
+
+The two phasors must use the same time-frequency convention for their constant sum to describe one sinusoid. Their symmetric phases make them conjugates, so their sum is real. It is positive here because $\cos(\pi/6)>0$.
+
+For a nearby case, replace the phases $\pm\pi/6$ with $\pm\pi/2$. The two phasors then cancel and the resultant has no defined phase. At phases $\pm\pi$, they instead add on the negative real axis. Thus reflection symmetry guarantees a real result, but does not guarantee a positive result. The present value $5\sqrt3$ is consistent with the triangle bound of ten, and the imaginary cancellation can be checked before any arithmetic.
 
 ## Answer
 

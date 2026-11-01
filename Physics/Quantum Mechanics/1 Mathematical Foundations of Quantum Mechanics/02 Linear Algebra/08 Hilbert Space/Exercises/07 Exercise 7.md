@@ -1,4 +1,4 @@
-﻿---
+---
 title: "The box completeness kernel and its diagonal"
 ---
 
@@ -112,6 +112,12 @@ $$
 This grows without bound. At $x=0$ and $x=L$, every sine is zero, so $K_N(x,x)=0$ for every $N$. These endpoint values do not change the L² identity because sets of measure zero do not change an L² class.
 
 The diagonal divergence describes the growth of the finite kernels. It does not assign a numerical value to $\delta(0)$. The symbols $x$, $x'$, and $L$ are mathematical coordinates and interval parameters in this question; no physical units are assigned.
+
+## Why diagonal growth is only a consistency check
+
+The defining check is the integrated action on a test function, not the value along the diagonal. A kernel that grows everywhere could also diverge on the diagonal while failing to reproduce the function. Here orthogonal projection and basis completeness provide the required reconstruction argument.
+
+For a particularly direct test, use one basis function $f=\phi_m$. The finite kernel integral returns $\phi_m$ exactly when $N\ge m$ and zero when $N<m$. This checks both the coefficient normalization and the finite cutoff. The diagonal divergence then describes how the reconstruction kernel becomes concentrated; it is not a norm assigned to an ordinary position eigenvector.
 
 ## Answer
 

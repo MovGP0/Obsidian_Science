@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Basis and Dimension"
 ---
 
@@ -21,7 +21,9 @@ $$
 v=\sum_{i=1}^{n}c_ie_i.
 $$
 
-The coefficients $c_i$ are the **coordinates** of $v$ in the basis $\mathcal{B}$.
+The coefficients $c_i$ are the **coordinates** of $v$ in the basis $\mathcal{B}$. Spanning gives existence of this expansion. To prove uniqueness, subtract two expansions: $\sum_i(c_i-d_i)e_i=0$. Independence then gives $c_i=d_i$ for every $i$. Each part of the basis definition has a separate job.
+
+These statements concern a finite-dimensional complex space. For an infinite orthonormal basis, convergence of the partial sums must also be specified. A change of basis changes the coordinate list, not the vector represented by that list.
 
 ## Example — Coordinates in the standard basis of ℂ³
 

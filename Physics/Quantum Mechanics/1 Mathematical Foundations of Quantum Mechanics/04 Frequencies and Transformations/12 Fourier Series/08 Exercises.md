@@ -1,9 +1,15 @@
-﻿---
+---
 title: "Exercises"
 ---
 
 > [!TLDR]
 > Practice Fourier coefficients, Parseval sums, box-state probabilities, and convergence with complete worked solutions.
+
+Use Exercises 1–3 to check the projection convention before calculating infinite sums. In Exercises 1 and 2, predict the nonzero harmonics from symmetry first, then compare their decay with the smoothness of the periodic extension.
+
+Exercises 4 and 6 use different interval forms of Parseval; write the integration range beside its prefactor before substitution. Exercise 5 then tests the change from Fourier coefficients to normalized quantum amplitudes. In Exercise 7, identify the missing classical initial data before using a quantum analogy. Finish with Exercise 8 to distinguish integrated error from the largest local error near a jump.
+
+For each solution, make one independent check before reading the answer: a vanishing coefficient, a constant mode, a probability sum, or a boundary value. A numerical partial sum tests a formula but does not replace the argument for its infinite limit.
 
 ## Basic level
 

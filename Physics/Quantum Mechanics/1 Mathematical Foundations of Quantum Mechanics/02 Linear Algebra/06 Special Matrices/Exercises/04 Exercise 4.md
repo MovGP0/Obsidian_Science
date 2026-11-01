@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Purity and Pauli-z expectation of a mixed state"
 ---
 
@@ -63,6 +63,12 @@ $$
 $$
 
 The expectation value is zero because the two measurement outcomes $+1$ and $-1$ have equal probabilities.
+
+## Why zero mean is not a purity test
+
+The coherent vector $(|\uparrow\rangle+|\downarrow\rangle)/\sqrt2$ also has zero Pauli-z mean, but its purity is one. A single zero expectation cannot establish that a state is mixed. Here the full density matrix, not that one mean, establishes the distinction.
+
+The maximally mixed matrix is unchanged by every unitary basis change: $U(I/2)U^\dagger=I/2$. Therefore no preferred spin direction appears in this state. More generally, two eigenvalues $q$ and $1-q$ give purity $q^2+(1-q)^2=1/2+2(q-1/2)^2$, which proves the minimum $1/2$ and its unique equal-weight condition.
 
 ## Answer
 

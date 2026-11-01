@@ -31,6 +31,10 @@ title: "Continuous Probability"
 
 Assume the stated moments are finite. A density is one way to describe a distribution; not every probability distribution has an ordinary density.
 
+For a distribution with this density, $P(X=x)=0$ for each single point, because a point has zero integration width. This does not make an observed value impossible. Recorded measurements have finite resolution and correspond to intervals. Also, $\rho(x)$ can exceed one: the uniform density on $[0,1/2]$ is 2, while its total area is still one.
+
+The cumulative distribution $F(b)=P(X\le b)$ describes interval probabilities even when an ordinary density does not exist. Where a density exists, $F(b)=\int_{-\infty}^{b}\rho(x)\,dx$. A point mass instead gives a jump in $F$. This distinction is needed when moving between discrete and continuous measurement outcomes.
+
 ## Example — Uniform distribution on [a, b]
 
 Let $a<b$. The density is $\rho(x)=1/(b-a)$ on $[a,b]$ and zero elsewhere.

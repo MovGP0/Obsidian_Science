@@ -11,6 +11,14 @@ In quantum mechanics, probability is part of the measurement structure. Even com
 
 This chapter develops the required tools: random variables, distributions, expectation values, and variances. We study them with Born’s interpretation of $|\signal{\psi}|^2$ in mind.
 
+## Reading route
+
+Start with the distinction between an outcome and its probability. In the discrete section, a sum of probability masses equals one. In the continuous section, an integral of a density equals one; a density value is not a point probability. Use the uniform distribution to check that both descriptions give a mean inside the range of outcomes.
+
+Then compare two types of statements about spread. The normal distribution gives a complete model for the density. Chebyshev’s inequality gives a bound for every distribution with finite variance, even when its shape is unknown. Finally, study conditioning to see how selecting an event changes the normalized weights.
+
+For the quantum application, keep the mathematical rule and the physical postulate separate. Probability theory determines how weights combine. Born’s rule specifies which weights a quantum state assigns to the outcomes of a chosen measurement. A different observable can give a different distribution for the same state.
+
 ## Chapter sections
 
 - [[01 Discrete Probability|Discrete probability]]

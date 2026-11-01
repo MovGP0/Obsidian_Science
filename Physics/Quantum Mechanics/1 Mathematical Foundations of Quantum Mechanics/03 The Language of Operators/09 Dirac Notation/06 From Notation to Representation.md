@@ -1,9 +1,15 @@
-﻿---
+---
 title: "From Notation to Representation"
 ---
 
 > [!TLDR]
 > Dirac equations are independent of representation. Choosing position, momentum, or a discrete basis turns the same abstract equation into a differential equation or a matrix equation.
+
+A basis is a calculation choice, not an additional state-preparation operation. The coefficients in two complete orthonormal bases differ, but their squared norms agree. This is a useful check when converting the same eigenvalue problem between representations.
+
+The Hamiltonian must also be transformed with the state. Keeping an old matrix while changing only the coefficient column generally describes a different equation. In the discrete formulas, insert completeness between the Hamiltonian and the state: its component with label $m$ is the sum of $H_{mn}c_n$ over $n$. This is the reason matrix multiplication appears.
+
+The differential expressions below are not complete operator specifications by themselves. Their domains include regularity and boundary conditions. A representation change must carry those conditions with it; otherwise identical-looking expressions can have different spectra.
 
 A common source of confusion is that Dirac notation is **representation independent**. The equation
 

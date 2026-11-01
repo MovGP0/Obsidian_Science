@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Bound states in a finite potential well"
 ---
 
@@ -135,6 +135,14 @@ z\tan z=\sqrt{z_0^2-z^2}
 $$
 
 The unknown occurs inside trigonometric functions and outside them, so these are transcendental equations. Their allowed roots give discrete bound-state energies through $\energy{E}=\mechanical{\hbar}^2z^2/(2\mechanical{m}\mechanical{a}^2)-\energy{V}_0$. A graphical or numerical root search usually finds the energies.
+
+### Check the matching equations at the edge of their range
+
+Both $\signal{k}\mechanical{a}$ and $\signal{\kappa}\mechanical{a}$ are dimensionless, so the tangent and cotangent equations compare inverse lengths consistently. Parity is useful because the potential is unchanged by reflection. Even and odd combinations reduce the unknown coefficients before the energy search; they do not impose a second unrelated physical assumption.
+
+As the negative bound-state energy approaches zero from below, $\signal{\kappa}$ tends to zero and the exterior decay length $1/\signal{\kappa}$ grows. At zero energy the exterior solutions are linear or constant, and no nonzero such tail is square-integrable. Thus the strict energy interval matters: a root at an endpoint must not automatically be counted as a bound state.
+
+For numerical work, search on continuous branches of tangent or cotangent. A sign change across a trigonometric pole is not evidence for a root. Substitute each candidate energy into the original matching equations and confirm decay on both sides; this checks a physical state rather than a feature of a rearranged equation.
 
 ## Answer
 

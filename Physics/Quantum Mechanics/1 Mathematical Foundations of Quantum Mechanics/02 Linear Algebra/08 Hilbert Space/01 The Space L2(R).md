@@ -1,4 +1,4 @@
-﻿---
+---
 title: "The Space L²(ℝ)"
 ---
 
@@ -73,6 +73,12 @@ Example (c) is physically significant. A plane wave is not a vector in $L^2(\mat
 $$
 \int_{-\infty}^{+\infty}|\signal{\psi}(\mechanical{x})|^2\,d\mechanical{x}<\infty.
 $$
+
+## Membership is not normalization
+
+A nonzero function with finite squared norm can be normalized by dividing by its norm. The Gaussian above therefore has amplitude magnitude $(\mechanical{\sigma}\sqrt{2\pi})^{-1/2}$. Its unit is inverse square root of length, so integrating its squared magnitude over position gives a dimensionless total probability. A phase multiplying this amplitude does not change the norm.
+
+The domain is part of the membership question. A constant function fails on $\mathbb R$ but belongs to $L^2$ on every finite interval. Likewise, an ideal plane wave can be normalized on a finite interval, but that does not turn it into a normalizable state on the full line. Taking an infinite-volume limit requires a separate construction.
 
 ## Physical quantities
 

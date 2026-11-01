@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Fourier series of the periodic sign function"
 ---
 
@@ -40,6 +40,12 @@ $$
 At a continuity point the series gives the function value. At a jump it gives the mean of the two one-sided limits. At zero these limits are $-1$ and $1$, so the sum is zero. The periodic extension has left limit $1$ and right limit $-1$ at $\pi$, so its sum is also zero there. Each sine term is itself zero at both points, which gives a direct check.
 
 This is exactly the sign-function example on $(-\pi,\pi)$. Periodic continuation adds jumps at all integer multiples of $\pi$. An assigned value at a jump does not change any Fourier coefficient.
+
+## A coefficient and norm check
+
+The first sine coefficient is positive: its integral is $2\pi^{-1}\int_0^\pi\sin x\,dx=4/\pi$. A negative sign here would reconstruct the opposite step. The half-period relation $f(x+\pi)=-f(x)$ also requires all even harmonics to vanish, independently of the integral calculation.
+
+Parseval in the real-series convention gives $2=\sum_{n\geq1}b_n^2$, because $\pi^{-1}\int_{-\pi}^{\pi}|f|^2dx=2$. Thus the odd reciprocal-square sum must be $\pi^2/8$. This checks the factor $4/\pi$ without assigning any special value at a jump.
 
 ## Answer
 

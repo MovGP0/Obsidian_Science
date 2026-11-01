@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Normalization and position uncertainty of a Gaussian packet"
 ---
 
@@ -118,6 +118,12 @@ $$
 $$
 
 The final equality uses the positive width assumption.
+
+### Read the width from the density, not the amplitude
+
+The amplitude exponent contains $4\mechanical{\sigma}^2$, while its squared magnitude contains $2\mechanical{\sigma}^2$. The latter is the probability distribution whose standard deviation is calculated. Confusing these exponents changes the stated width by a factor of $\sqrt2$.
+
+The amplitude scales as $\mechanical{\sigma}^{-1/2}$, so narrowing the packet raises its central height while preserving unit total probability. The limit of zero width is singular; it is not another normalized ordinary Gaussian at width zero. The zero mean also does not mean zero uncertainty: the density is symmetric but spread over positions on both sides of the origin. As a transfer check, shift the whole density by a constant distance. Its mean moves by that distance, while its standard deviation remains the same because variance is measured about the mean.
 
 ## Answer
 

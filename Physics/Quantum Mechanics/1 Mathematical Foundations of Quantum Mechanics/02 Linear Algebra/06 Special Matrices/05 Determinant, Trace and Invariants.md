@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Determinant, Trace and Invariants"
 ---
 
@@ -23,6 +23,10 @@ These quantities are **invariant under a change of basis**. If $B=UAU^\dagger$ w
 
 > [!note]
 > Count eigenvalues with algebraic multiplicity in these formulas. The identities do not require diagonalizability. A basis invariant can describe a representation-independent physical quantity, but invariance alone does not make every matrix expression an observable.
+
+Similarity preserves the characteristic polynomial because $\lambda I-SAS^{-1}=S(\lambda I-A)S^{-1}$ and the determinant factors of $S$ and $S^{-1}$ cancel. This proves more than the separate trace and determinant checks. Those two scalars alone do not usually determine all matrix properties: $I$ and $\begin{pmatrix}1&1\\0&1\end{pmatrix}$ both have trace $2$ and determinant $1$, but only the first is diagonalizable.
+
+In the thermal example below, the sum must define a normalizable state: in finite dimension it is finite, while an infinite level sum requires a finite partition function. A finite partition function alone does not guarantee a finite energy mean; the energy-weighted sum must also converge absolutely. In the energy eigenbasis, taking the trace reduces the expectation to the probability-weighted sum of energies.
 
 ## Example — Trace as the expectation value of an energy distribution
 

@@ -117,3 +117,11 @@ The main $SU(3)$ representations are collected in Table B.4.
 
 > [!note]
 > The source calls this a table of fundamental representations. Only $\mathbf3$ is the defining fundamental representation; the table also contains other irreducible representations.
+
+## Small matrix checks and representation labels
+
+The first three generators close on the upper $2\times2$ block. Direct multiplication gives $[T^1,T^2]=iT^3$, checking $f^{123}=1$. Also $\{T^1,T^1\}=\operatorname{diag}(1/2,1/2,0)$. Its decomposition is $\mathbf1_3/3+T^8/\sqrt3$, which checks $d^{118}=1/\sqrt3$ and the normalization of $T^8$.
+
+The commuting diagonal matrices $T^3,T^8$ give rank two, while all eight generators are needed for dimension eight. A useful check on Table B.4 is $T(r)8=C_2(r)\dim r$. For $\mathbf6$, it reads $(5/2)8=(10/3)6=20$. For the singlet all generators and both invariants vanish.
+
+The conjugate $\bar{\mathbf3}$ has generators $-(T^a)^*$ and the same quadratic invariants as $\mathbf3$, but it is an inequivalent complex representation. Equal Casimirs do not imply equivalent representations. The physical labels in the table indicate uses in QCD; a representation can also label a composite multiplet. Its dimension alone does not establish that it is an elementary particle or an observable isolated color state.

@@ -1,4 +1,4 @@
-﻿---
+---
 title: "The Complex Form"
 ---
 
@@ -17,6 +17,10 @@ title: "The Complex Form"
 > $$
 > c_n=\frac1{2L}\int_{-L}^L f(x)e^{-in\pi x/L}\,dx.
 > $$
+
+The coefficient formula follows by multiplying a finite partial sum by $e^{-im\pi x/L}$ and integrating over one period. Orthogonality removes all terms except $n=m$; the surviving integral is $2L$. This explains both the minus sign and the denominator. For a general $L^2$ function, define the coefficients directly by orthogonal projection. Continuity of each projection and norm convergence then justify the basis expansion; the finite-sum argument does not assume that an arbitrary infinite series can be integrated term by term.
+
+Here $L>0$, and the inner product is $\langle g,f\rangle=\int_{-L}^Lg(x)^*f(x)\,dx$. The endpoints are identified for the periodic extension. Their assigned values do not affect an $L^2$ coefficient, because changing finitely many values does not change an integral.
 
 The functions
 

@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Positivity of a squared Hermitian operator"
 ---
 
@@ -76,6 +76,12 @@ Equivalently, a vector has zero norm only when it is the zero vector. The revers
 
 > [!note] Correct vector in the proof
 > The vanishing components are those of $\hat A|\psi\rangle$, expanded in the complete basis $\{|n\rangle\}$. The argument does not show that $\hat A|n\rangle=0$ for every basis ket, or that $\hat A$ is the zero operator.
+
+The main idea is to recognize a squared norm. Once Hermiticity converts the two matrix elements into conjugates, positivity follows from Hilbert-space geometry; no diagonalization of the operator is needed. This proof also identifies exactly what vanishes when equality holds.
+
+For an unbounded operator, the basis proof as written also assumes that every basis ket belongs to $D(\hat A)$, so the factors $\langle\psi|\hat A|n\rangle$ are defined. The condition on the state alone does not supply this basis-domain condition. Alternatively, expand the vector $\hat A|\psi\rangle$ by Parseval's identity and use its squared coefficients. That norm argument needs no action of $\hat A$ on the chosen basis kets.
+
+For a matrix with diagonal entries $0$ and $1$, the first basis vector gives zero expectation of the square, although the operator is not zero. The equality condition identifies a state in the kernel, not all states. For an unbounded operator, taking the state in $D(\hat A^2)$ suffices for the displayed operator-square expectation. The norm $\lVert\hat A\psi\rVert^2$ itself needs only $\psi\in D(\hat A)$; this weaker quadratic-form statement should not be confused with the existence of $\hat A^2\psi$.
 
 ## Answer
 

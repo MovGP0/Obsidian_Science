@@ -1,4 +1,4 @@
-﻿---
+---
 title: "String modes and a two-state quantum superposition"
 ---
 
@@ -129,6 +129,12 @@ $$
 $$
 
 In quantum mechanics $|c_n|^2$ is a measurement probability. In the string it describes the normalized initial profile weight, while the mode energy also contains $\signal{\omega}_n^2$, mass density, and displacement scale. The classical coefficients therefore do not define quantum probabilities by themselves. The shared structure is linear superposition with an orthogonal basis, together with conserved total energy.
+
+## What the shared basis does not determine
+
+With zero initial velocity, the string has zero kinetic energy at time zero, while its elastic energy equals the conserved total. At later times the two contributions exchange. This is a useful check on the displayed sine-squared and cosine-squared factors.
+
+A quantum two-state superposition instead keeps its integrated norm equal to one. A string profile made from two cosine time factors generally does not keep its spatial squared norm constant. For example, with $c_1=1$ and $c_2=0$, that norm is $\cos^2(\signal{\omega}_1\signal{t})$. Thus the common spatial basis does not make the classical profile evolution a unitary quantum evolution. The distinction follows from the second-order classical time equation and the first-order Schrödinger equation.
 
 ## Answer
 

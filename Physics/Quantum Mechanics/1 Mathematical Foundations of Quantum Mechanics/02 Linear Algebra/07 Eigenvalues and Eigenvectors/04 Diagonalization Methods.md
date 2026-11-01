@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Diagonalization Methods"
 ---
 
@@ -12,6 +12,10 @@ To diagonalize a Hermitian matrix $A$:
 3. For each eigenvalue $\lambda_k$, solve $(A-\lambda_k I)v=0$ to find its eigenvectors.
 4. Use Gram–Schmidt within each degenerate eigenspace. Normalize all eigenvectors.
 5. Form $U$ with the orthonormal eigenvectors as columns. Then $A=UDU^\dagger$, where $D$ contains the corresponding eigenvalues on its diagonal.
+
+Check the computed result through $AU=UD$ and $U^\dagger U=I$. The first identity tests each eigenpair with the chosen column order; the second tests normalization and orthogonality. Checking the characteristic roots alone would miss an incorrect eigenvector or a mismatch between columns and diagonal entries.
+
+For a degenerate eigenvalue, orthogonalize only within its eigenspace. Combining vectors from different eigenvalues generally destroys the eigenvector property. For example, $(1,0)^T+(0,1)^T$ is not an eigenvector of $\operatorname{diag}(1,2)$. This restriction makes the matrix-function construction valid.
 
 ## Energy-level splitting in a two-level system
 

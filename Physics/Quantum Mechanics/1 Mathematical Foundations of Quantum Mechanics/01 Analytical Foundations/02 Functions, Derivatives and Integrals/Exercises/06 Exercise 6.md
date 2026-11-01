@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Integration by parts and a real mean momentum"
 ---
 
@@ -69,6 +69,12 @@ The second line uses the boundary identity. A complex number equal to its conjug
 
 > [!note]
 > This calculation establishes the required identity and real expectation value for the stated functions and boundary behavior. A full proof that a momentum operator is self-adjoint also requires its operator domain.
+
+### Two minus signs with different origins
+
+Let $I=\int_{\mathbb R}\signal{\psi}^*\signal{\psi}'\,\mathrm{d}\mechanical{x}$ be a helper integral. The boundary calculation says $I=-I^*$, so $I$ is purely imaginary, including the possible value zero. Multiplication by $-\mathrm{i}\mechanical{\hbar}$ then gives a real momentum expectation. One sign comes from integration by parts; the other comes from conjugating $\mathrm{i}$. Treating the derivative integral itself as real would reverse the conclusion.
+
+For a real, decaying normalized state, $I=\tfrac12[\signal{\psi}^2]_{-\infty}^{\infty}=0$, so the mean momentum is zero. This does not make the state a momentum eigenstate. A varying real envelope can have nonzero momentum spread even when its mean vanishes. The proof establishes reality for the stated domain; it does not assert a definite momentum in each trial.
 
 ## Answer
 

@@ -1,9 +1,15 @@
-﻿---
+---
 title: "Projectors"
 ---
 
 > [!TLDR]
 > The outer product of a normalized ket with its bra is an orthogonal projector. Its expectation value gives the probability of the corresponding projective measurement outcome.
+
+Projection separates a state into a retained component and a rejected component. The normalization assumption on $|n\rangle$ is exactly what makes the retained component unchanged on a second projection. Indeed, for an arbitrary nonzero $|u\rangle$, squaring $|u\rangle\langle u|$ multiplies it by $\langle u|u\rangle$. The orthogonal projector onto that line is therefore $|u\rangle\langle u|/\langle u|u\rangle$.
+
+Idempotence alone does not imply orthogonality. For example, the matrix with rows $(1,1)$ and $(0,0)$ squares to itself but is not Hermitian. The two conditions in (9.4) and (9.5) together identify an orthogonal projector.
+
+For a normalized input, the squared norm of the projected vector equals the projector expectation value. This proves the algebraic equality in the probability formula below. Interpreting that value as the probability of an ideal measurement outcome is the Born postulate, not a consequence of idempotence alone.
 
 > [!definition] Definition 9.3 | Projector
 > For a normalized ket $|n\rangle$, the projector onto its direction is

@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Square-box eigenstates and degeneracy"
 ---
 
@@ -119,6 +119,12 @@ For this range it is enough to check indices $1$ through $4$: any index $5$ give
 For $n\ne m$, exchange of the two indices leaves the energy unchanged but gives a different spatial state. The two states are orthogonal, since at least one separated sine integral has unequal integer indices and is zero. They are therefore independent states at the same energy, not two names for one state. Any normalized linear combination in the same eigenspace also has that energy.
 
 If “first six” instead means the first six **individual states**, with multiplicity, the energy list is $2,5,5,8,10,10$ in units of $\energy{E}_*$. This alternative stops after the two states at the fourth distinct level. Higher sums can have degeneracies beyond simple index exchange; none is needed in the first six distinct levels.
+
+### What the product ansatz includes
+
+Separation finds a convenient product basis of eigenfunctions. It does not imply that every stationary state must itself be one product. A linear combination of two independent product states at the same energy is also an eigenstate and can fail to factor into one function of each coordinate. The degeneracy in part (b) therefore has a consequence for the possible shapes of stationary states.
+
+The normalization factor has unit inverse length in two dimensions. Its squared magnitude times an area is dimensionless, unlike the inverse-square-root-length factor of a one-dimensional state. Doubling the common side length lowers every fixed-label energy by a factor of four. If the two side lengths are changed unequally, exchanging the two labels generally no longer preserves the energy. The square's coordinate-exchange symmetry explains the paired degeneracies listed here, while higher coincident sums can require an additional arithmetic check.
 
 ## Answer
 

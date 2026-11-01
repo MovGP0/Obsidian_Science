@@ -1,4 +1,4 @@
-﻿---
+---
 title: "An exponential cusp and the energy operator domain"
 ---
 
@@ -131,6 +131,12 @@ A regular potential cannot cancel this delta term. The result is not an ordinary
 > $$
 >
 > This finite quadratic-form value is distinct from membership in the kinetic-energy operator domain. The second derivative has a delta term, so it is not in $L^2(\mathbb R)$. Omitting that term would give an incorrect operator calculation.
+
+### Why a point of nonsmoothness cannot be ignored here
+
+A value at one point does not change an ordinary integral, but a jump in a first derivative changes its distributional derivative. Integrating $\signal{\psi}''$ across a small interval around zero must reproduce the derivative jump. The delta term supplies that finite jump; the integral of the regular term tends to zero with the interval width. This checks both the sign and coefficient of the singular term.
+
+Ignoring the cusp and using only $\signal{\psi}''=\signal{\psi}/\mechanical{a}^2$ would assign a negative kinetic term to a localized free state. The positive first-derivative form exposes that mistake. The finite form scales as inverse decay length squared, so tighter localization raises it. Thus there are two different questions: is a finite kinetic-energy form defined, and is the Hamiltonian's action an ordinary square-integrable function? This state answers yes to the first and no to the second for the usual regular-potential domain.
 
 ## Answer
 

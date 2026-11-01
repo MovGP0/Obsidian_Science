@@ -1,9 +1,15 @@
-﻿---
+---
 title: "The Postulates of Quantum Mechanics"
 ---
 
 > [!TLDR]
 > The six postulates specify states, observables, outcomes, probabilities, state changes after measurement, and time evolution. The formulas below describe pure states and ideal projective measurements.
+
+These rules distinguish three tasks: specify the preparation, predict outcome frequencies for that preparation, and specify the state conditioned on an outcome. The probability rule alone does not determine the state update. The update written in P5 is the ideal projection rule used in this chapter.
+
+A consistency test is available before solving any dynamics. For a complete set of mutually orthogonal outcome projectors, their sum is the identity. Summing P4 therefore gives the state norm, which is one by P1. After a nonzero-probability outcome, the denominator in P5 makes the conditional state normalized. An outcome of zero probability cannot be used in this conditional formula.
+
+P6 assumes the system has a Hamiltonian description with unitary evolution between the ideal measurement operations. If the chosen state describes only part of an interacting system, its reduced dynamics generally needs a mixed-state treatment. The postulates are physical starting assumptions here; the Hilbert-space identities check their consistency but do not prove them from mathematics alone.
 
 ## P1 — State
 

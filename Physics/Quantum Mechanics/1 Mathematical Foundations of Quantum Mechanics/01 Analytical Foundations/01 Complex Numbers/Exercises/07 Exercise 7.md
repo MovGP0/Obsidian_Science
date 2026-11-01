@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Trigonometric identities from Euler’s formula"
 ---
 
@@ -71,6 +71,12 @@ $$
 =\frac{2\mathrm{i}\sin(3\theta)-6\mathrm{i}\sin\theta}{-8\mathrm{i}}
 =\frac{3\sin\theta-\sin(3\theta)}4.
 $$
+
+### Checks and the role of the representation
+
+The proof uses real angles and the complex exponential product law. Taking real parts is useful in (a) because it selects cosine; taking the imaginary part would produce the sine addition formula from the same product. In (b), grouping opposite exponential powers reveals sine terms that would be hidden in a direct cubic expansion of trigonometric identities.
+
+Check (a) at $\beta=0$ and at $\beta=-\alpha$: it reduces to $\cos\alpha=\cos\alpha$ and $1=\cos^2\alpha+\sin^2\alpha$. Check (b) at $\theta=\pi/2$: both sides are one. These examples test signs and factors; the algebra supplies the proof for all real angles. The cubic identity also separates a fundamental harmonic from a third harmonic, which is useful when interpreting powers of oscillating signals.
 
 ## Answer
 

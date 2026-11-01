@@ -1,4 +1,4 @@
-﻿---
+---
 title: "The Completeness Relation"
 ---
 
@@ -22,6 +22,10 @@ $$
 $$
 
 Thus, the completeness relation recovers the basis expansion. In infinite dimensions, the partial sums converge to $|f\rangle$ in norm for each vector. This is strong operator convergence, not generally convergence in operator norm.
+
+The mode of convergence is essential. If $P_N$ projects onto the first $N$ vectors of an infinite basis, then $(I-P_N)\phi_{N+1}=\phi_{N+1}$. Hence $\|I-P_N\|=1$ for every $N$, although $P_Nf\to f$ for each fixed $f$. The worst-case test vector changes with $N$. This explains why strong convergence does not imply operator-norm convergence.
+
+In a calculation, inserting the full identity preserves the state. Inserting a finite $P_N$ instead gives a projection approximation whose error depends on that state's omitted coefficients. Completeness justifies the limiting operation; it does not make every finite truncation exact.
 
 In the position representation, the same relation is written as
 

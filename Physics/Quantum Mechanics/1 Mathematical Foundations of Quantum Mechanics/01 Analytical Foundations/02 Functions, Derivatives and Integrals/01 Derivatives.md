@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Derivatives"
 ---
 
@@ -87,6 +87,14 @@ f'(x)&=2x\mathrm{e}^{-x^2}+x^2\cdot(-2x\mathrm{e}^{-x^2})\\
 $$
 
 The critical points, where $f'=0$, are $x=0$ and $x=\pm1$. The function is nonnegative and has maxima at $x=\pm1$.
+
+## What differentiability does and does not guarantee
+
+The independent variable in Definition 2.1 is real, even when the output is complex. If $f=u+\mathrm{i}v$ with real-valued $u,v$, the difference quotient converges exactly when both real component quotients converge, and $f'=u'+\mathrm{i}v'$. This is not a definition of a complex derivative with a complex increment.
+
+Continuity alone is weaker. For $f(x)=|x|$, the difference quotient at zero is $h/|h|$. Its right-hand value is one and its left-hand value is minus one, so there is no derivative there. The cusp exercise later uses precisely this distinction.
+
+In the plane-wave example, assume constant amplitude and real, constant wave number. A position derivative changes the wavefunction's unit by one inverse length, and the second derivative adds a second inverse length. The sign $-\signal{k}^2$ follows from $\mathrm{i}^2=-1$, not from decay. At $\signal{k}=0$ both derivatives vanish. The nonzero plane wave on the real line is a formal momentum eigenfunction, not a unit-normalized square-integrable state.
 
 ## Physical quantities
 

@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Exercises"
 ---
 
@@ -6,6 +6,10 @@ title: "Exercises"
 > These nine exercises include complete worked solutions for projectors, matrix invariants, SVD, density matrices, and two-qubit entanglement.
 
 Each linked note contains the original question, a worked solution, and the answer.
+
+Work in two passes. First, use Exercises 1–4 to distinguish outer products, invariants, and statistical mixtures. Compare the equal superposition in Exercise 3 with the equal mixture in Exercise 4: their diagonal populations agree, but their purity does not. Then use Exercises 5–7 to identify which matrix structures control singular values, determinant phases, and positivity.
+
+Exercises 8 and 9 introduce two subsystems. Before calculating, write the product-basis order and identify which index belongs to each subsystem. Check that squared Schmidt coefficients sum to one. A mixed reduced state certifies entanglement by this route only when the global bipartite state is known to be pure.
 
 ## Basic level
 

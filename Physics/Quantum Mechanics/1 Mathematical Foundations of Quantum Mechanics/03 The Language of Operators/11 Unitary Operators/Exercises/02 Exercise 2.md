@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Composition of spatial translations"
 ---
 
@@ -49,6 +49,10 @@ e^{-i\mechanical{a}\hat p/\mechanical{\hbar}}e^{-i\mechanical{b}\hat p/\mechanic
 $$
 
 The exponents commute because they are multiples of the same generator. Physically, a displacement by $\mechanical{b}$ followed by one by $\mechanical{a}$ gives the total displacement $\mechanical{a}+\mechanical{b}$. Reversing their order gives the same final state. These spatial translations form an Abelian group, with identity $\hat T(0)=\hat I$ and inverse $\hat T(-\mechanical{a})$.
+
+The direct shift proof establishes the group law without assuming that every wavefunction has a convergent Taylor series. On the full real line, translation is defined for every square-integrable state, so the argument is stronger than a formal differential expansion.
+
+Set the second displacement to the negative of the first to check the inverse. The packet returns exactly to its original vector, with no state-dependent phase. This commutative composition law does not imply that every Hamiltonian is translation invariant. A fixed external potential may distinguish the original and translated preparations even though the translation maps themselves still compose by addition. The law concerns how transformations combine; symmetry concerns how the Hamiltonian responds to them.
 
 ## Answer
 

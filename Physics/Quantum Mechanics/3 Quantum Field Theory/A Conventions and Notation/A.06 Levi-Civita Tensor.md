@@ -54,3 +54,7 @@ $$
 =\frac12\epsilon^{\mu\nu\rho\sigma}F_{\rho\sigma}.
 \tag{A.62}
 $$
+
+All components with a repeated index vanish; an odd permutation changes the sign. For (A.58), each of the $4!$ nonzero upper/lower products is minus one, giving minus twenty-four. For (A.59) with both free indices zero, the remaining $3!$ products give minus six. These checks fix the Lorentzian sign before using a contraction identity.
+
+The epsilon object is a pseudotensor: its transformation under an orientation reversal differs by a sign from that of an ordinary tensor. Keep the orientation convention fixed when comparing parity or duality formulas. Applying (A.60) to an antisymmetric tensor shows that taking the dual twice gives minus the original tensor. The factor one half in (A.62) prevents double counting of the two orders of each antisymmetric index pair. This result is specific to the stated four-dimensional Lorentzian convention; the Euclidean double-dual sign differs.

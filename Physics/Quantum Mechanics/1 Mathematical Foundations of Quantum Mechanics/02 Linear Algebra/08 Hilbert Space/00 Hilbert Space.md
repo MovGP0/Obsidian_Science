@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Hilbert Space"
 ---
 
@@ -27,6 +27,10 @@ The move from finite to infinite dimensions introduces a complication: an infini
 
 > [!note]
 > Completeness does not make every infinite series converge. The partial sums must be Cauchy. For an orthonormal system, square-summable coefficients, $\sum_n|c_n|^2<\infty$, give this condition. Pointwise convergence is a separate question.
+
+Use the chapter in two stages. First establish which functions belong to the state space and why Cauchy limits stay there. Then distinguish a countable orthonormal basis of normalizable vectors from formal position kets with delta normalization. These are different constructions even when both use the word basis.
+
+For a quick convergence test, coefficients $1/n$ for $n\ge1$ are square summable, whereas coefficients all equal to one are not. Only the first choice can define a vector through an infinite orthonormal expansion. The membership and convergence tests are mathematical conditions; interpreting a unit-norm vector as a quantum state is a further part of the physical description.
 
 ## Chapter sections
 

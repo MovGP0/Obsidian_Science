@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Normalization and tails of an exponential wavefunction"
 ---
 
@@ -86,6 +86,8 @@ $$
 =\sqrt{\langle\hat x^2\rangle-\langle\hat x\rangle^2}
 =\frac{\mechanical{a}}{\sqrt2}.
 $$
+
+Keep the wavefunction decay length distinct from the density decay length. Squaring the amplitude doubles the exponent, so the density falls by a factor $e^{-1}$ over distance $\mechanical{a}/2$. At a threshold $b\mechanical{a}$ with dimensionless $b\ge0$, the same integration gives $P(|\mechanical{x}|>b\mechanical{a})=e^{-2b}$. At $b=0$ this is one, and as $b\to\infty$ it tends to zero. These limits check both the factor of two and the two tails.
 
 ### (c) Probability outside one decay length
 

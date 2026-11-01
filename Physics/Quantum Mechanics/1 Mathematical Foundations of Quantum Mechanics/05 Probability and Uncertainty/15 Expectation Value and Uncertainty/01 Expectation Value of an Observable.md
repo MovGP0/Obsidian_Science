@@ -33,6 +33,10 @@ The expectation is the mean of the eigenvalues weighted by their measurement pro
 
 These sums use a complete discrete orthonormal eigenbasis. Degenerate outcome probabilities add over the corresponding eigenspace; continuous spectral parts require integrals. The relevant expectations must exist.
 
+There are two calculation routes here. If the eigenvalues and coefficients are known, use the weighted sum. If a representation of the state and operator is simpler, use the operator expression. They agree because inserting the identity in the eigenbasis resolves the state into mutually exclusive outcomes. In either route the state must be normalized; for a nonzero unnormalized vector, divide the matrix element by its squared norm.
+
+For a finite outcome set, nonnegative weights summing to one place the mean between the smallest and largest eigenvalues. The example below must therefore give a value between its two energy levels, but it need not give either level. Changing the relative phase of the two coefficients preserves this energy mean; it can change another observable whose off-diagonal matrix elements do not vanish.
+
 ## Example — Mean energy of a superposition
 
 Let

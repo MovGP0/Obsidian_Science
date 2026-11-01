@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Complete analysis of the quantum harmonic oscillator"
 ---
 
@@ -158,6 +158,10 @@ $$
 $$
 
 Since $n\geq0$, the minimum within the number states is $\mechanical{\hbar}/2$ at $n=0$. This saturates the uncertainty bound. This statement does not exclude other states, such as coherent states, which also saturate the bound.
+
+The moment results also divide the mean energy into equal kinetic and potential contributions. The kinetic contribution follows from the second momentum moment divided by twice the mass; the potential contribution follows from the second position moment times half the mass and squared frequency. Each is half the stated energy eigenvalue. This is a check on both prefactors and on the extra one supplied by the ladder-operator commutator.
+
+At fixed $n$ and mass, increasing the frequency reduces the position spread and increases the momentum spread by reciprocal square-root factors. Their product stays fixed. A smaller position width therefore does not imply a smaller product or a more classical state.
 
 ### (d) Mean motion of the two-state superposition
 

@@ -1,9 +1,13 @@
-﻿---
+---
 title: "Examples of Fourier Series"
 ---
 
 > [!TLDR]
 > Parity and integration by parts give the Fourier series of the sign function, x, and x². Evaluating these series or applying Parseval’s identity yields familiar infinite sums.
+
+These examples use dimensionless $x$ and a $2\pi$-periodic extension. Choose parity before integration, then inspect how the endpoint values fit together. That endpoint test predicts an important difference: the periodic extensions of $\operatorname{sgn}(x)$ and $x$ jump, whereas the extension of $x^2$ is continuous and has a derivative jump.
+
+The calculations below reflect that difference. The first two have coefficients of order $1/n$; the quadratic has coefficients of order $1/n^2$. The faster decay makes the quadratic series absolutely and uniformly convergent. Do not differentiate its series and assume the same convergence survives: differentiation multiplies the $n$th coefficient by $n$.
 
 ## Example — The sign function
 

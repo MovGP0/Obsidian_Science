@@ -92,3 +92,22 @@ $$
 
 > [!note]
 > Complex division requires $z_2\ne0$.
+
+## Why the conjugate is the useful multiplier
+
+For a nonzero denominator $z_2=a+\mathrm{i}b$, the number $a^2+b^2$ is strictly positive. The conjugate therefore converts a division problem into division by a nonzero real number:
+
+$$
+\frac1{z_2}=\frac{z_2^*}{|z_2|^2}.
+$$
+
+Multiplication by an unrelated complex number would usually leave a complex denominator. The conjugate is chosen because its mixed imaginary terms cancel. At $a=b=0$, this method fails for the correct reason: zero has no multiplicative inverse.
+
+Conjugation also separates phase from magnitude. For a mathematical coefficient $c$ and a real angle $\theta$,
+
+$$
+|\mathrm{e}^{\mathrm{i}\theta}c|^2
+=\mathrm{e}^{-\mathrm{i}\theta}c^*\mathrm{e}^{\mathrm{i}\theta}c=|c|^2.
+$$
+
+Here the coefficient is an abstract complex number. When a normalized quantum-state coefficient represents an amplitude, its squared magnitude supplies a basis probability by the Born rule. The identity explains why an overall phase leaves that probability unchanged. It does not imply that relative phases between different coefficients can be discarded before addition.

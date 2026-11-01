@@ -27,6 +27,10 @@ $$
 u^{(r)\dagger}u^{(s)}=2\energy{E}_{\mathbf p}\,\delta^{rs}.
 $$
 
+These are same-momentum bilinears with a common orthonormal spin basis. They do not assert orthogonality of spinors at arbitrary unequal momenta. The negative sign in (A.52) is due to the Dirac adjoint's indefinite scalar form; it is not a negative Hilbert-space probability. In the rest frame, the lower-component antiparticle subspace has exactly this sign.
+
+The ordinary Hermitian norm is positive and uses the mode energy, while the covariant scalar norm uses the mass. In the massless limit the scalar norms vanish even for nonzero spinors, so they cannot alone fix the normalization. Retain the energy normalization and define the massless spinors by a consistent limit or helicity basis. The scale chosen here fixes the factors in [[A.05.05 Completeness Relations]].
+
 ## Physical quantities
 
 | Symbol | Unit | Quantity | Description |

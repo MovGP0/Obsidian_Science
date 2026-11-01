@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Polynomial commutators and the Hamiltonian"
 ---
 
@@ -107,6 +107,10 @@ Here $v_n$ are expansion coefficients. The same identity applies to a sufficient
 
 > [!note]
 > Position and momentum are unbounded operators. These algebraic identities are statements on a common invariant domain, such as suitable smooth, rapidly decreasing wavefunctions. They do not assert equality of unrestricted operator products.
+
+Part (c) has a built-in adjoint check. The sum $\hat x\hat p+\hat p\hat x$ is symmetric on the common test domain, so multiplication by $2i\mechanical{\hbar}$ has the required anti-symmetric adjoint behavior for this commutator. Replacing that sum by $2\hat x\hat p$ would lose the operator-order information.
+
+Part (d) also has a physical sign check. Multiplying its commutator expectation by $i/\mechanical{\hbar}$ in the Ehrenfest equation gives the negative mean potential-energy gradient, as required for the force from a position-dependent potential. A constant potential has zero derivative and therefore conserves momentum. These checks use the Hamiltonian in the question; a momentum-dependent interaction would require a new calculation.
 
 ## Answer
 

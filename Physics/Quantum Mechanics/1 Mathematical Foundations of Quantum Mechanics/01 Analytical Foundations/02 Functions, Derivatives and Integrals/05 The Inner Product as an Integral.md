@@ -1,4 +1,4 @@
-﻿---
+---
 title: "The Inner Product as an Integral"
 ---
 
@@ -99,6 +99,24 @@ $$
 
 > [!note]
 > The box-function example assumes $n,m\in\{1,2,3,\ldots\}$ and $\mechanical{L}>0$. These conditions ensure $m+n\ne0$. To use the whole-line definition above, extend the functions by zero outside the box.
+
+## Why square-integrability is the right hypothesis
+
+The definition uses $f,g\in L^2(\mathbb R)$, rather than arbitrary complex-valued functions. The pointwise inequality $2|f^*g|\le |f|^2+|g|^2$ shows that their product is integrable. Thus the inner product exists even when the functions themselves are not integrable without the square.
+
+Conjugation makes the first argument conjugate-linear:
+
+$$
+\langle\alpha f,g\rangle=\alpha^*\langle f,g\rangle.
+$$
+
+This is compatible with linearity in the second argument, not a competing rule. For normalized $f$ and $g$, set $c=\langle f,g\rangle$. Expanding the nonnegative norm gives
+
+$$
+0\le\|g-cf\|^2=1-|c|^2.
+$$
+
+Hence $|c|^2\le1$. In a quantum-state application, this is the range required for the probability associated with projection onto a normalized state. Orthogonality means zero overlap; it does not require disjoint position support. The box functions share the same interval but their signed contributions cancel. The separate $m=n$ calculation is necessary because the antiderivative with denominator $m-n$ is not defined in that case.
 
 ## Physical quantities
 

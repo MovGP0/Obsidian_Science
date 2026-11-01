@@ -1,4 +1,4 @@
-﻿---
+---
 title: "The four roots of z⁴ = −16"
 ---
 
@@ -75,6 +75,12 @@ elements: [
 **Fig. 1.6.1** The four roots of $z^4=-16$ form a square centered at the origin. Each root has modulus 2.
 
 As a direct check, $[\sqrt2(1+\mathrm{i})]^2=4\mathrm{i}$ and $(4\mathrm{i})^2=-16$. The other roots differ by factors of $\mathrm{i}$, whose fourth power is one, so they satisfy the same equation.
+
+### Check completeness as well as individual roots
+
+Substitution checks a candidate, but does not show that all solutions have been found. Here the modulus condition fixes the radius at two, and the angle equation fixes one of four values modulo a full turn. This rules out any additional radius or angle. The graph illustrates those exact conditions; its decimal coordinates are only drawing approximations to the exact roots in the table.
+
+To test the method, replace $-16$ with $16$. The radius remains two, but the initial angle changes from $\pi/4$ to zero, so the square rotates by $-\pi/4$. The resulting roots lie on the coordinate axes. This shows how the phase of a target value controls all of its roots together.
 
 ## Answer
 

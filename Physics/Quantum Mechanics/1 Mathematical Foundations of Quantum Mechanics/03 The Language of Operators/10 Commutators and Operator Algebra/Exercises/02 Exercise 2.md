@@ -1,4 +1,4 @@
-﻿---
+---
 title: "The Pauli matrix commutator"
 ---
 
@@ -64,6 +64,10 @@ $$
 2i\sigma_y=\begin{pmatrix}0&2i(-i)\\2i(i)&0\end{pmatrix}
 =\begin{pmatrix}0&2\\-2&0\end{pmatrix}.
 $$
+
+There are two useful checks that do not require repeating every matrix entry. The resulting matrix must be anti-Hermitian, since both input matrices are Hermitian. It must also have zero trace, as every finite matrix commutator does. The displayed answer passes both tests.
+
+For a direct action check, apply each product to the up column. In the first order, the x matrix flips it and the z matrix changes the sign of the resulting down column. In the reverse order, the z matrix first leaves it unchanged and the x matrix then flips it. Their difference is minus twice the down column, which agrees with the action of $2i\sigma_y$. This check fixes the cyclic-order sign without relying on a memorized rule.
 
 ## Answer
 

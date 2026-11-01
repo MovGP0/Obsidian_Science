@@ -1,9 +1,11 @@
-﻿---
+---
 title: "Common Errors"
 ---
 
 > [!TLDR]
 > Distinguish vectors from scalars, and remember conjugation in the first inner-product argument. A basis is not unique, and linear independence does not imply orthogonality.
+
+Use the errors below as separate tests: an algebraic test for dependence, an inner-product test for orthogonality, and a normalization test before a probability calculation. One test cannot replace another. For example, $(1,0)^T$ and $(1,1)^T$ form a basis, but the coefficients $(0,1)$ of the second vector do not give its squared norm, which is $2$. The sum-of-squares coordinate rule needs an orthonormal basis.
 
 ## Error 1 — Confuse vectors and scalars in αv = 0
 

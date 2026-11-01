@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Position uncertainty in a stationary box state"
 ---
 
@@ -89,6 +89,8 @@ $$
 \langle\hat x^2\rangle_n
 =\mechanical{L}^2\left(\frac13-\frac1{2n^2\pi^2}\right).
 $$
+
+Why is the comparison distribution uniform? In the classical infinite box, free motion has constant speed between ideal reflections, so equal position intervals take equal traversal times. Uniform sampling in time therefore gives equal probability per unit length. This comparison assumes that time-sampling rule; it does not follow from a stationary quantum state alone.
 
 ### (b) Uncertainty and the classical limit
 

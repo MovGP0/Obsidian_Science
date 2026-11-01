@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Spin uncertainties in the up state"
 ---
 
@@ -78,6 +78,10 @@ $$
 $$
 
 The vertical spin component is definite in this state. The transverse components have nonzero uncertainties and attain equality in the bound.
+
+The equal transverse uncertainties can be understood directly from the outcomes. In the up preparation, an x-component measurement gives the two spin eigenvalues with equal probabilities. Its mean is zero, but each squared outcome is $\mechanical{\hbar}^2/4$, so the standard deviation is $\mechanical{\hbar}/2$. The y distribution has the same form. The z outcome is fixed, which gives zero variance there.
+
+As a transfer check, prepare the positive-x eigenstate instead. The x spread then vanishes and the z mean is zero, so the Robertson bound for x and y has a zero right-hand side. The nonzero operator commutator is unchanged. It is the prepared state that changes the numerical bound, not the operator algebra.
 
 ## Answer
 

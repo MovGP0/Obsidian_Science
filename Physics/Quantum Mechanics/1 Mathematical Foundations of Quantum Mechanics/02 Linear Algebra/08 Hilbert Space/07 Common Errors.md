@@ -1,9 +1,13 @@
-﻿---
+---
 title: "Common Errors"
 ---
 
 > [!TLDR]
 > Keep norm convergence separate from pointwise convergence, and completeness separate from orthonormality. Generalized states and unbounded operators require care even though the Hilbert space itself is well defined.
+
+A domain check gives a concrete example of Error 4. The mathematical function $f(x)=(1+x^2)^{-1/2}$ is in $L^2(\mathbb R)$ because its squared norm is $\pi$. But $xf(x)$ is not in $L^2$: its squared magnitude $x^2/(1+x^2)$ tends to one. Thus $f$ is a valid Hilbert-space vector outside the multiplication operator's domain. It can be normalized without repairing that domain failure. Here $x$ is a mathematical variable.
+
+This separates three checks: state-space membership, unit normalization, and membership in an observable's domain. State-space membership and normalization do not guarantee membership in an unbounded observable's domain. Domain membership does not guarantee unit normalization; the operator domain is a subset of the Hilbert space. The physical operator and evolution examples below must retain their stated domain and spectral assumptions.
 
 ## Error 1 — Confuse pointwise convergence with norm convergence
 

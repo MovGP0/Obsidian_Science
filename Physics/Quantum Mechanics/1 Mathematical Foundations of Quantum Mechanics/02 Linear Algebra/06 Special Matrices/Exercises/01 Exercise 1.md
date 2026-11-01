@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Projector from a complex unit vector"
 ---
 
@@ -58,6 +58,12 @@ P^\dagger
 $$
 
 These checks also follow from $v^\dagger v=(1+1)/2=1$: applying $P$ twice gives $vv^\dagger vv^\dagger=v(v^\dagger v)v^\dagger=P$. The matrix projects onto the one-dimensional subspace spanned by $v$.
+
+## Geometric checks
+
+The vector $w=(1,-\mathrm{i})^T/\sqrt2$ is orthogonal to $v$: $v^\dagger w=(1+(-\mathrm{i})^2)/2=0$. Thus $Pv=v$ and $Pw=0$, which checks both possible projector eigenvalues by action on a basis. The kernel is the span of $w$, while the image is the span of $v$.
+
+If an unnormalized nonzero vector $a$ is supplied, $aa^\dagger$ is not generally idempotent. The orthogonal projector is $aa^\dagger/(a^\dagger a)$. This denominator cancels the extra squared norm on the second application. In a projective state calculation, that distinction separates a direction from a normalized state representative.
 
 ## Answer
 

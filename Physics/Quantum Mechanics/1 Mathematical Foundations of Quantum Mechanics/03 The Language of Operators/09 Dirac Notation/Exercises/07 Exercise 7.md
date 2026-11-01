@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Schrödinger’s cat: coherence and measurement"
 ---
 
@@ -108,6 +108,10 @@ $$
 Both give the same alive/dead probabilities, but only the pure state has the off-diagonal coherence terms. In this ideal two-state model, the observable $\hat X=|\mathrm{alive}\rangle\langle\mathrm{dead}|+|\mathrm{dead}\rangle\langle\mathrm{alive}|$ exchanges the two kets. Hence $\hat X|\psi\rangle=|\psi\rangle$ and its pure-state expectation is $1$. Each diagonal state has zero expectation of $\hat X$, so the mixture gives $0$. This identifies a measurement that distinguishes the states in the model.
 
 As a further check, $\rho_{\mathrm{pure}}^2=\rho_{\mathrm{pure}}$ gives purity $\operatorname{Tr}(\rho_{\mathrm{pure}}^2)=1$. Orthogonality gives $\rho_{\mathrm{mix}}^2=(|\mathrm{alive}\rangle\langle\mathrm{alive}|+|\mathrm{dead}\rangle\langle\mathrm{dead}|)/4$, with purity $1/2$.
+
+The coherence test is a statement about this ideal two-dimensional model. It assumes the two labelled kets are orthonormal and that the proposed exchange observable can be measured. It does not establish a laboratory procedure for measuring a coherent macroscopic cat state.
+
+To test why a second observable is needed, first discard the measurement record after an alive/dead measurement. The resulting ensemble has the same two diagonal probabilities as the original preparation, but it no longer has the cross terms needed for a nonzero exchange expectation. Conditioning on the alive record is a different operation: it selects the pure alive state. Both operations differ from retaining the original coherent preparation. Keep these three preparations distinct when comparing repeated measurements.
 
 ## Answer
 

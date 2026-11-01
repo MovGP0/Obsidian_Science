@@ -41,3 +41,16 @@ f^{abc}\operatorname{Tr}(T^cT^dT^e)
 \tag{B.73}
 $$
 Repeated color and fundamental indices are summed.
+
+## Derive the generator sandwich from completeness
+
+With $N\ge2$ and the fundamental normalization, insert an arbitrary $N\times N$ matrix $M$ between the two generators in (B.49). Contract its entries to obtain
+$$
+\sum_aT^aMT^a
+=\frac12\operatorname{Tr}(M)\mathbf1-\frac1{2N}M.
+$$
+For $M=\mathbf1$ this gives (B.68). For $M=T^b$, tracelessness removes the first term and proves (B.72). This route explains why the sandwich is negative although the quadratic Casimir is positive: the inserted traceless matrix is not the identity.
+
+For $N=2$, use $T^a=\sigma^a/2$. The sandwich gives $-T^b/4$, consistent with the summed Pauli identity (B.57). At the same value of $N$, (B.71) vanishes, as it must because the symmetric tensor $d^{abc}$ is zero for $SU(2)$. At $N=3$, the sandwich coefficient is $-1/6$.
+
+Keep the summation labels distinct when applying these identities. For example, the three-generator trace in (B.73) has a contracted $c$ and free labels $a,b,d,e$; it is not a scalar color sum until those labels are also contracted.

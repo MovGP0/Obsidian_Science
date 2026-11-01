@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Common Errors"
 ---
 
@@ -101,6 +101,14 @@ $$
 $$
 
 Both systems use the same second spatial derivative with the same boundary conditions, but their time-evolution equations differ.
+
+## Two checks before using the box expansion
+
+Insert a single normalized box mode as the initial state. Projection must give one coefficient equal to one and all others zero. Its time factor has unit magnitude, so the probability density is stationary. This checks the coefficient normalization and the sign-independent conservation of norm.
+
+For several modes, orthogonality gives $\int_0^{\mechanical{L}}|\signal{\psi}|^2\,d\mechanical{x}=\sum_n|c_n|^2$ at every time. The local density can still vary because cross terms need not vanish before spatial integration. Energy probabilities remain fixed under this time-independent Hamiltonian.
+
+Norm convergence is weaker than finite mean energy. Since the displayed energies grow as $n^2$, finite mean energy requires $\sum_n n^2|c_n|^2<\infty$. Thus a normalized coefficient sequence can define a state without defining a finite-energy preparation. Boundary conditions and the energy domain remain part of the physical model.
 
 ## Physical quantities
 

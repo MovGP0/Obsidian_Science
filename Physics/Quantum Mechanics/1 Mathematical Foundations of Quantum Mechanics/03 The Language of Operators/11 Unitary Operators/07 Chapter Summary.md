@@ -1,9 +1,15 @@
-﻿---
+---
 title: "Chapter Summary"
 ---
 
 > [!TLDR]
 > Unitary transformations preserve state geometry and give reversible dynamics. Continuous symmetries connect their self-adjoint generators with conservation laws.
+
+To reconstruct the chapter, start with the identity $U^\dagger U=I$ and use it to preserve an overlap. Next differentiate a one-parameter group at the identity to identify its generator. Finally test whether the full group leaves the Hamiltonian invariant; only this last step supplies a conserved generator under the stated conditions.
+
+A fixed-observable check keeps this chain honest. A spin rotation can preserve the state norm while changing the probability of spin up along a fixed axis. If the measurement axis is rotated as well, the corresponding overlap probability is unchanged. These are different questions.
+
+When passing to infinite dimensions, carry domains with conjugated observables, distinguish a unitary map from a non-surjective isometry, and use spectral evolution for a self-adjoint generator. Formal power-series manipulations alone do not settle these points.
 
 - **Unitarity:** $\hat U^\dagger\hat U=\hat U\hat U^\dagger=\hat I$. Norms and inner products are preserved. Unitary conjugation preserves operator eigenvalues.
 - **Generator exponential:** For a Hermitian matrix $\hat G$, $e^{i\theta\hat G}$ is unitary. Calculate it by diagonalization or by separating even and odd series terms when $\hat G^2=c\hat I$.

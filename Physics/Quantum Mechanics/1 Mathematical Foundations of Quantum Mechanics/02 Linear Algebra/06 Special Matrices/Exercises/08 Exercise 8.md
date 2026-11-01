@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Tensor product and the two-spin Ising coupling"
 ---
 
@@ -54,6 +54,12 @@ H=\energy{J}(\sigma_z\otimes\sigma_z).
 $$
 
 This is an Ising coupling along $z$. For the stated sign convention, the two parallel states have energy $\energy{E}_{\parallel}=\energy{J}$ and the two antiparallel states have energy $\energy{E}_{\mathrm{anti}}=-\energy{J}$. Thus $\energy{J}>0$ favors antiparallel alignment, while $\energy{J}<0$ favors parallel alignment. No numerical energy can be assigned without a value of $\energy{J}$.
+
+## Limits and degeneracy
+
+At zero coupling, all four energies coincide at zero; the interaction alone selects no alignment. For nonzero coupling, each of the two energy values is twofold degenerate. Any superposition within one of those eigenspaces is still an energy eigenstate, so an energy measurement alone does not determine both individual spins.
+
+The stated model includes only the $z$ coupling. It contains no separate magnetic-field term or transverse interaction. Thus its preferred alignment follows from the sign convention in this Hamiltonian, not from a universal rule that positive coupling always favors parallel spins. A basis check is to act on $|\uparrow\downarrow\rangle$: the two one-spin signs multiply to $-1$.
 
 ## Answer
 

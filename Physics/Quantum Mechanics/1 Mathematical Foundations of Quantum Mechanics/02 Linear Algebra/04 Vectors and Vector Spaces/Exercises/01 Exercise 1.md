@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Subspace tests in ℂ³"
 ---
 
@@ -55,6 +55,12 @@ a(z,z,z)+b(w,w,w)=(az+bw,az+bw,az+bw).
 $$
 
 All three components still agree. The result belongs to the set, so the set is a subspace. It is the span of $(1,1,1)$.
+
+## Interpretation and transfer
+
+The successful sets also give a dimension check. In (a), $(z_1,z_2,z_3)=(z,-z,w)$, so $(1,-1,0)$ and $(0,0,1)$ give two independent directions. In (d), only one direction remains. These can model restricted state spaces before normalization. Set (c) is the normalized sphere inside a state space; its failure to be a subspace does not make its vectors unusable as state representatives.
+
+For a transfer test, replace $z_1+z_2=0$ in (a) by $z_1+z_2=1$. The zero test now fails, even though the equation is still linear in the coordinates. Homogeneity is the necessary feature here.
 
 ## Answer
 

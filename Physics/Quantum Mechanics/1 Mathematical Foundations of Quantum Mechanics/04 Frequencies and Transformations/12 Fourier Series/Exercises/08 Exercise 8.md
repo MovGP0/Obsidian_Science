@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Mean-square convergence and the Gibbs phenomenon"
 ---
 
@@ -105,6 +105,12 @@ f_N(x_N)
 $$
 
 The limit uses $\sin w/w\to1$; the integrands are bounded on this fixed integration interval, so the limit can pass under the integral. The excess $0.17898$ is about $8.949\%$ of the jump height two. Its location tends to zero and its width shrinks. The persistent height prevents uniform convergence, while the shrinking region is consistent with vanishing integrated squared error. The points $x_N$ move with $N$, so this does not contradict pointwise convergence at each fixed nonzero point.
+
+## Check the cutoff and the meaning of the error
+
+At $N=0$, only $4\sin x/\pi$ is retained, and the squared error is $2-16/\pi^2>0$. Each added odd mode reduces the squared error by exactly its squared coefficient. This checks the lower summation limit and shows why the integrated error decreases even if a local peak remains.
+
+For a chosen tolerance $\varepsilon>0$ on the norm, the upper bound in part (b) gives the sufficient condition $8/[\pi^2(2N+1)]\leq\varepsilon^2$. The square on $\varepsilon$ is essential because the estimate bounds the squared norm. It does not provide a uniform-error tolerance at the jump.
 
 ## Answer
 

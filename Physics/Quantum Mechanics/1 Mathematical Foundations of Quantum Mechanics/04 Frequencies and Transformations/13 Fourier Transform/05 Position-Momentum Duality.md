@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Position–Momentum Duality"
 ---
 
@@ -30,6 +30,10 @@ $$
 \qquad
 \signal{\rho_p}(\mechanical{p})=|\signal{\widetilde\psi}(\mechanical{p})|^2.
 $$
+
+For a normalized state, $\int\signal{\rho_x}\,d\mechanical{x}=\int\signal{\rho_p}\,d\mechanical{p}=1$. A density is defined relative to its integration variable. Since $d\mechanical{p}=\mechanical{\hbar}\,d\signal{k}$, the wavenumber and momentum densities must differ by the inverse Jacobian. Their numerical values need not be equal at corresponding coordinates, even though they give the same probability for corresponding intervals.
+
+A useful preparation check is to shift the packet in position. The momentum amplitude gains a phase, while its density and mean momentum remain unchanged. Adding a linear position-dependent phase instead shifts the mean momentum. Therefore a position probability density does not specify a quantum state by itself; the relative phase information is essential.
 
 ## Operators in the two representations
 

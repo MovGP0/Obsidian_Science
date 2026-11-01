@@ -5,6 +5,8 @@ title: "Discrete Probability"
 > [!TLDR]
 > A discrete random variable assigns probabilities to countable outcomes. Its expectation is a weighted mean, and its variance is the second moment minus the squared mean.
 
+The possible values of $X$ need not be the elementary outcomes. For a die roll, the sample space is $\{1,\ldots,6\}$, but the variable “is the result even?” takes only the values zero and one. Its probability at one is the sum of the probabilities of outcomes 2, 4, and 6. Thus a random variable maps outcomes to numbers; its distribution collects outcomes with the same value.
+
 > [!definition] Definition 14.1 | Discrete random variable
 > A discrete random variable $X$ takes values $\{x_1,x_2,\ldots\}$ with probabilities $\{P_1,P_2,\ldots\}$, where $P_i\ge0$ and $\sum_iP_i=1$.
 
@@ -65,3 +67,5 @@ $$
 $$
 
 Thus $\sigma_X\approx1.708$.
+
+The die example also shows that an expectation need not be a possible outcome: no roll gives 3.5. It is a weighted center, not a prediction of the next roll. Before calculating a variance for an infinite set of values, check that $\sum_i x_i^2P_i$ is finite; normalization alone does not imply finite moments.

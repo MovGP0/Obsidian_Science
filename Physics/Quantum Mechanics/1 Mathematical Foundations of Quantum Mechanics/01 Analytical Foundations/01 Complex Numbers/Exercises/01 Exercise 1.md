@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Complex arithmetic in Cartesian form"
 ---
 
@@ -83,6 +83,12 @@ $$
 $$
 
 Thus the square is $\mathrm{i}^2=-1$.
+
+### Check the operation before expanding more terms
+
+Part (d) is a useful case where simplifying the quotient first reduces the calculation. The numerator and denominator have the same modulus, so their quotient must have modulus one. Their arguments differ by $\pi/2$, giving $\mathrm{i}$; its square must be $-1$. This independently checks the Cartesian calculation.
+
+For part (c), multiply the answer by $1+\mathrm{i}$. The result must be one. If the result is imaginary or has the wrong sign, check which denominator was conjugated. These checks use the original equation rather than repetition of the same expansion. Such division and phase checks also apply when comparing complex coefficients in a quantum-state calculation.
 
 ## Answer
 

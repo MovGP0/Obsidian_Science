@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Exercises"
 ---
 
@@ -6,6 +6,14 @@ title: "Exercises"
 > These eleven exercises cover complex arithmetic, polar form, roots, trigonometric identities, phasors, and wavefunction normalization. Each linked note contains the complete question and a worked solution.
 
 Chapter 1 — Complex Numbers. Select an exercise below. The exercise numbers and difficulty groups match the original exercise set.
+
+## Suggested practice route
+
+Use Exercises 1–2 to check component arithmetic before selecting arguments in Exercises 3–4. Exercises 5–6 then test whether polar form reduces the work; explain why the root problem needs several angles while the integer-power problem does not. Exercise 7 uses the same exponential representation to prove identities rather than just calculate values.
+
+Attempt the triangle-inequality proof in Exercise 8 before the phasor problem in Exercise 9. Predict whether the resultant can equal the sum of the two magnitudes, and use the equality condition to explain the answer. Exercise 10 then separates a quantum state's decaying envelope from its phase: normalization alone does not specify momentum. Finish with Exercise 11 to see how equally spaced phases cancel in a finite sum.
+
+For self-study, hide each worked solution until you have chosen a representation and written one check. A wrong quadrant, an omitted root, and a wrong normalization factor require different repairs; use the linked solution to identify which decision failed.
 
 ## Basic level
 

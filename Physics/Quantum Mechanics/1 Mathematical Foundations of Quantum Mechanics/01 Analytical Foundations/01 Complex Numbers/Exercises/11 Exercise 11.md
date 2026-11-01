@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Roots of unity and their sum"
 ---
 
@@ -79,6 +79,17 @@ $$
 $$
 
 Geometrically, the roots are equally spaced on the unit circle. Their vectors balance around the origin. The condition $n\ge2$ is necessary: for $n=1$, the only root and its sum are both one.
+
+### The cancellation is a discrete orthogonality rule
+
+The same geometric-series argument applies to integer powers of the root. For an integer $\ell$,
+
+$$
+\sum_{k=0}^{n-1}\mathrm{e}^{2\pi\mathrm{i}\ell k/n}
+=\begin{cases}n,&n\text{ divides }\ell,\\0,&n\text{ does not divide }\ell.\end{cases}
+$$
+
+If $n$ divides $\ell$, every term equals one, so the denominator used in the geometric-series quotient would be zero and that quotient must not be used. Otherwise its ratio is not one, but its $n$th power is one, so the preceding proof applies. This is a useful transfer of the proof, not a new empirical statement. It explains why distinct finite Fourier phase patterns have zero overlap, a structure that also occurs when a finite set of quantum basis states is changed by a discrete Fourier transform.
 
 ## Answer
 

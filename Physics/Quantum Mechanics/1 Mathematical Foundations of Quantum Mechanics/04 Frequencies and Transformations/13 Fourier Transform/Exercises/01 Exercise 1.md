@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Transforms of exponential and modulated Gaussian functions"
 ---
 
@@ -77,6 +77,14 @@ Each exponential shifts the spectral argument because $e^{ik_0x}e^{-ikx}=e^{-i(k
 $$
 \hat h(k)=\frac12\left[e^{-(k-k_0)^2/2}+e^{-(k+k_0)^2/2}\right].
 $$
+
+## Three quick checks
+
+At $k=0$, part (a) gives $\sqrt{2/\pi}/a$, the area $2/a$ divided by $\sqrt{2\pi}$. Its $k^{-2}$ tail is consistent with a cusp in the input, and differs from Gaussian decay.
+
+Part (b) is imaginary and odd. This follows independently because the input is real and odd: the cosine integral vanishes, and the sine integral contributes the factor $-i$. At $k=0$ it must be zero.
+
+In part (c), set $k_0=0$. The two half-weighted shifted Gaussians coincide and recover the original Gaussian transform. For nonzero $k_0$, the two spectral contributions can overlap; they are amplitudes to add before taking an absolute square, rather than two exclusive probabilities.
 
 ## Answer
 

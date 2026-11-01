@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Exponential of the Pauli z matrix"
 ---
 
@@ -41,6 +41,12 @@ $$
 =\begin{pmatrix}\cos\signal{\theta}+\mathrm{i}\sin\signal{\theta}&0\\0&\cos\signal{\theta}-\mathrm{i}\sin\signal{\theta}\end{pmatrix}
 =\begin{pmatrix}\mathrm{e}^{\mathrm{i}\signal{\theta}}&0\\0&\mathrm{e}^{-\mathrm{i}\signal{\theta}}\end{pmatrix}.
 $$
+
+## Checks and state action
+
+At $\signal{\theta}=0$ the result is $I$; at $\signal{\theta}=\pi/2$ it is $\mathrm{i}\sigma_z$. For real phase, the adjoint changes the sine term's sign, and multiplication gives $(\cos^2\signal{\theta}+\sin^2\signal{\theta})I=I$. This checks norm preservation without expanding the exponential again.
+
+Acting on an up/down superposition multiplies its components by opposite phases. The individual up/down probabilities remain unchanged, but the relative phase changes. This is why a unitary phase operation can alter a state without changing the probabilities in the basis in which the operation is diagonal.
 
 ## Answer
 

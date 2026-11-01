@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Thermal energy from a geometric partition function"
 ---
 
@@ -106,6 +106,8 @@ $$
 $$
 
 One can also differentiate the geometric series with respect to $r$: $\sum_{n=0}^\infty nr^n=r/(1-r)^2$. Multiplication by $(1-r)\mechanical{\hbar}\signal{\omega}$ gives the same result. The stated spectrum starts at zero; no zero-point energy should be added to this answer.
+
+There is also a low-temperature check. As $\thermal{T}\to0^+$, $r\to0$, so $P_0\to1$, $\thermal{Z}\to1$, and the mean energy tends to the stated ground energy zero. This tests the energy origin as well as the sign of the exponential. To distinguish the pure state from the mixture, an observable with an off-diagonal matrix element between two energy levels is needed; another function of the Hamiltonian gives the same probabilities in both.
 
 ### (c) High-temperature limit
 

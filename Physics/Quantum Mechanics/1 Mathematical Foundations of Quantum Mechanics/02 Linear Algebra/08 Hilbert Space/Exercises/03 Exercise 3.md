@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Normalization and the second energy level"
 ---
 
@@ -57,6 +57,12 @@ P_2=|\langle2|\psi\rangle|^2=\frac13.
 $$
 
 The three outcomes have equal probabilities, and their sum is one. The level labels $1$, $2$, and $3$ are indices, not numerical energy values.
+
+## Scope of the energy statement
+
+No numerical energy mean can be obtained from the labels $1,2,3$ alone; those labels are not energies. The probability $1/3$ identifies the projection onto the stated second level. If a measured energy were shared by several of these basis vectors, the probability for that energy value would be the sum over its whole eigenspace. Thus identifying one basis label with one distinct measured energy requires the intended nondegenerate-level interpretation.
+
+As a transfer check, multiply the third coefficient by $\mathrm{i}$. Orthogonality leaves the normalization and all three energy-basis probabilities unchanged, although the state vector changes by more than a common phase. A probability list in one basis does not determine the full state.
 
 ## Answer
 

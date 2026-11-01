@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Commuting observables and conserved means"
 ---
 
@@ -50,6 +50,10 @@ $$
 $$
 
 This proof uses no special choice of state. Thus the result holds for every evolving state for which the derivatives and products exist on the required domain. The commutator is zero as an operator on that domain, rather than only having zero mean in one chosen state. If the Hamiltonian depends explicitly on time, the same proof holds provided $[\hat A,\hat H(\signal{t})]=0$ at every time.
+
+Two assumptions do separate work. Commutation removes the change caused by state evolution. Absence of explicit operator time dependence removes the other term in the total derivative. For example, a scalar time-dependent multiple of the identity commutes with every Hamiltonian, yet its expectation follows that scalar function and need not be constant.
+
+The conclusion here applies to all admissible initial preparations, rather than one stationary state. In finite dimensions, a stronger description follows: commutation with a time-independent Hamiltonian also makes the observable's spectral projectors commute with the evolution, so the full outcome distribution is preserved. The mean proof in the question is enough for its claim; the stronger statement needs the corresponding spectral/domain treatment in infinite dimensions.
 
 ## Answer
 

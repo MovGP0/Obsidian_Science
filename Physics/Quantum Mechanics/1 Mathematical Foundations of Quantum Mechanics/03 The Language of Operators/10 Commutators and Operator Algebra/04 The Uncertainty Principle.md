@@ -1,9 +1,15 @@
-﻿---
+---
 title: "The Uncertainty Principle"
 ---
 
 > [!TLDR]
 > The Robertson inequality bounds the product of two observable standard deviations by their commutator expectation. For position and momentum, it gives the state uncertainty bound ℏ/2.
+
+The proof centers the observables because uncertainty concerns fluctuations about the mean, not the size of the mean itself. Cauchy–Schwarz then bounds the overlap of the two fluctuation vectors. Keeping only the imaginary part of that overlap produces the commutator bound; any real correlation that was discarded can make the full constraint stronger.
+
+A sufficient hypothesis for the displayed proof is that the normalized state belongs to the domains of both operator squares and of both mixed products. In finite dimensions these domain requirements are automatic. In infinite dimensions they are part of the theorem, not a property supplied by the brackets.
+
+The bound concerns separate outcome distributions for identically prepared systems. It does not describe the resolution of an apparatus or a joint error–disturbance experiment. The spin examples below also show that noncommuting operators can give a zero right-hand side in a particular state. Such a bound supplies no positive numerical lower limit for that state.
 
 > [!theorem] Theorem 10.3 | Robertson inequality
 > For two Hermitian observables in a normalized state,
@@ -37,7 +43,10 @@ $$
 =\frac12\{\hat a,\hat b\}+\frac12[\hat a,\hat b].
 $$
 
-The anticommutator $\{\hat a,\hat b\}=\hat a\hat b+\hat b\hat a$ is Hermitian, so its expectation is real. The commutator is anti-Hermitian, so its expectation is purely imaginary:
+> [!note] Scope of the adjoint identities
+> The following operator-adjoint equalities apply to matrices and bounded operators on the full Hilbert space. For unbounded operators, defined products on the chosen state do not establish equality of the full adjoint domains. In that setting, the proof needs only scalar pairings: if $z=\langle\hat a\psi|\hat b\psi\rangle$, symmetry on the stated product domains gives $\langle\psi|\hat a\hat b|\psi\rangle=z$ and $\langle\psi|\hat b\hat a|\psi\rangle=z^*$. Their sum is real and their difference is purely imaginary. This proves the required expectation identities without claiming that the products are self-adjoint. See [Teschl, Theorem 8.2](https://www.mat.univie.ac.at/~gerald/ftp/book-schroe/schroe.pdf#page=186) and [Problem 2.3](https://www.mat.univie.ac.at/~gerald/ftp/book-schroe/schroe.pdf#page=79).
+
+In the matrix or bounded-operator setting, the anticommutator $\{\hat a,\hat b\}=\hat a\hat b+\hat b\hat a$ is Hermitian, so its expectation is real. The commutator is anti-Hermitian, so its expectation is purely imaginary:
 
 $$
 [\hat A,\hat B]^\dagger

@@ -1,4 +1,4 @@
-﻿---
+---
 title: "From Discrete to Continuous"
 ---
 
@@ -24,6 +24,16 @@ $$
 f(x)=\int_{-\infty}^{+\infty}\sqrt{2\pi}\,\hat f(k)e^{ikx}\frac{dk}{2\pi}
 =\frac1{\sqrt{2\pi}}\int_{-\infty}^{+\infty}\hat f(k)e^{ikx}\,dk.
 $$
+
+For a rapidly decreasing smooth function, the restriction to $[-L,L]$ makes the coefficient integral approach the whole-line integral. The important factor is the spectral spacing: an individual $c_n$ tends to zero as the interval grows, while the number of modes in a fixed spectral range grows. Their weighted sum can have a nonzero limit.
+
+The normalized discrete coefficient $d_n=\sqrt{2L}\,c_n$ is related formally to the continuous amplitude by
+
+$$
+d_n\approx\sqrt{\Delta k}\,\hat f(k_n).
+$$
+
+Consequently $\sum_n|d_n|^2\approx\sum_n|\hat f(k_n)|^2\Delta k$. This is the bridge between a sum of mode weights and an integral of spectral density. The factor $\sqrt{\Delta k}$ explains why a continuum amplitude is not a discrete coefficient with its integer label replaced by a real number.
 
 > [!definition] Definition 13.1 | Fourier transform
 > In the symmetric convention, the Fourier transform is

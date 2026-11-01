@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Normalization of a sine state in a box"
 ---
 
@@ -46,6 +46,12 @@ $$
 $$
 
 The sine vanishes at both boundaries. The prefactor therefore makes the total probability one.
+
+### Check normalization against a measurable interval probability
+
+The wavefunction has unit inverse square root of length. Its squared magnitude has unit inverse length, so integrating over position gives a dimensionless probability. The endpoint zeros are compatible with a box state, but endpoint zeros alone would not fix its amplitude; the integral does that.
+
+Reflection about the midpoint leaves the density unchanged. Thus the probability in $[0,\mechanical{L}/2]$ equals that in $[\mechanical{L}/2,\mechanical{L}]$, and each is $1/2$. This is a useful interpretation of the normalized function rather than another normalization convention. Multiplying the state by a constant phase leaves both probabilities unchanged. Replacing the phase by a real scale factor would instead change the total norm unless its magnitude were one.
 
 ## Answer
 

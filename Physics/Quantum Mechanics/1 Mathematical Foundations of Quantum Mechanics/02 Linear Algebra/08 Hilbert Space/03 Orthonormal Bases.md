@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Orthonormal Bases"
 ---
 
@@ -31,6 +31,10 @@ $$
 $$
 
 The probabilities add to one.
+
+For a finite partial sum $f_N=\sum_{n=0}^N c_n\phi_n$, orthogonality makes the residual perpendicular to that sum. Thus $\|f\|^2=\sum_{n=0}^N|c_n|^2+\|f-f_N\|^2$. Completeness makes the last term tend to zero, giving Parseval. This proof separates orthonormality, which gives the finite identity, from completeness, which removes the limiting residual.
+
+Removing one vector from a basis leaves an orthonormal system but fails this last step for that missing vector: all retained coefficients are zero while its norm is one. In a quantum expansion this would omit an allowed state direction and its probability.
 
 ## Example — Fourier basis in L²([−π, π])
 

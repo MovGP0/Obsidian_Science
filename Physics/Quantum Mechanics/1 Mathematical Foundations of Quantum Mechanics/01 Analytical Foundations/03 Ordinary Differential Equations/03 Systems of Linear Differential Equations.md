@@ -78,6 +78,22 @@ $$
 
 These are **Rabi oscillations**.
 
+## Derive the two-level propagator without diagonalization
+
+The matrix exponential is defined by its convergent power series. For a constant matrix, differentiating the series gives $\frac{\mathrm{d}}{\mathrm{d}t}\mathrm{e}^{At}=A\mathrm{e}^{At}$ and $\mathrm{e}^{A0}=I$, which checks the differential equation and its initial value. It exists even when the matrix is not diagonalizable.
+
+For the two-level example, $\hat\sigma_x^2=I$. Separate even and odd powers in its exponential:
+
+$$
+U(\signal{t})=\mathrm{e}^{-\mathrm{i}\signal{\omega}\signal{t}\hat\sigma_x/2}
+=I\cos\left(\frac{\signal{\omega}\signal{t}}2\right)
+-\mathrm{i}\hat\sigma_x\sin\left(\frac{\signal{\omega}\signal{t}}2\right).
+$$
+
+Multiplying by the initial column gives the displayed amplitudes. For real constant coupling, $U^\dagger U=I$, so the total probability is conserved for any normalized initial column. At zero coupling $U=I$. Starting in the up state, complete transfer occurs when $|\signal{\omega}|\signal{t}=\pi$, for positive time and nonzero coupling.
+
+This model assumes an orthonormal two-state basis and the stated constant Hermitian Hamiltonian. It includes no detuning, leakage to other states, or decoherence. A general time-dependent matrix cannot be solved by simply replacing $At$ with its time integral; matrices at different times need not commute.
+
 ## Physical quantities
 
 | Symbol | Unit | Quantity | Description |

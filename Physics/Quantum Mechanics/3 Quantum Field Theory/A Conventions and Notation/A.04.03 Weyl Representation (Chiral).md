@@ -35,3 +35,7 @@ $$
 \end{pmatrix}.
 \tag{A.15}
 $$
+
+The bar on $\bar\sigma^\mu$ is part of this matrix notation; it is not a Dirac adjoint of a spinor. When contracting with a lower-index vector, include the metric signs as usual. The off-diagonal form makes the two coupled two-component equations visible, which is useful for studying massless fields and chiral interactions.
+
+Multiplication of the four gamma matrices in the stated order gives the diagonal chirality matrix in [[A.04.04 The Matrix γ⁵]]. Its upper two entries have eigenvalue minus one and its lower two entries have eigenvalue plus one. Thus the upper two components are left-chiral in this convention. Do not transfer a component ordering from another representation without also transforming the spinor and projectors.

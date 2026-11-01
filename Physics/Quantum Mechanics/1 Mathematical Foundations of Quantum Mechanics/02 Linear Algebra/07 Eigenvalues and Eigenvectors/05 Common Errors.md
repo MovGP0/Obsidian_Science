@@ -1,9 +1,13 @@
-﻿---
+---
 title: "Common Errors"
 ---
 
 > [!TLDR]
 > Normalize eigenvectors after finding their directions, and keep eigenvalues separate from eigenstates. Degeneracy permits an orthonormal eigenbasis for Hermitian matrices, while measurement probabilities follow from projection onto that basis.
+
+A residual check makes the first error concrete. For $A=\operatorname{diag}(1,2)$, the normalized vector $(1,1)^T/\sqrt2$ has unit norm but is not an eigenvector: no scalar makes $(1,2)^T$ proportional to $(1,1)^T$. Test $Av-\lambda v=0$ before interpreting a normalized candidate as a sharp-outcome state.
+
+The spectral theorem supplies the available eigenspaces; the Born probabilities and the ideal conditional-state rule below are additional physical postulates. Their validity as a measurement model is not proved by diagonalizing a matrix. Nonideal measurements require a further model of the measurement process.
 
 ## Error 1 — Normalize before finding the direction
 

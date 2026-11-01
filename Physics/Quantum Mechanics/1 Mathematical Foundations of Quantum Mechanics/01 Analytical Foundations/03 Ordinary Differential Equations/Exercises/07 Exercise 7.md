@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Rectangular-barrier transmission and tunnelling"
 ---
 
@@ -158,6 +158,14 @@ $$
 Thus a wider barrier or a larger energy deficit suppresses transmission exponentially. The deficit enters through its square root. This explains why small changes in barrier width can produce large changes in tunnelling current.
 
 Technology uses tunnelling in tunnel diodes, scanning tunnelling microscopes, and electron transfer through insulating layers in flash-memory programming and erasure. The exact rectangular-barrier formula is an idealized model; real device barriers can have other shapes.
+
+### Flux, limiting cases, and the meaning of exponential decay
+
+The transmission coefficient is a ratio of probability currents. It equals the squared amplitude ratio here because the exterior potentials, mass, and wave numbers are equal. With unequal exterior wave numbers, their velocity factors would also be needed. A stationary scattering wave on the whole line is not unit-normalized like a bound state; the incident amplitude sets the flux scale.
+
+The exact expression gives $0<T\le1$. In the zero-width limit, its hyperbolic sine tends to zero and $T$ tends to one, as removal of the barrier requires. At fixed positive width and fixed $0<\energy{E}<\energy{V}_0$, increasing the width suppresses transmission. The thick-barrier approximation requires a large decay coefficient times width; it must not be used in the zero-width limit.
+
+A single real decaying exponential inside the barrier carries no current by itself. The full finite-barrier solution retains both exponential branches with complex coefficients, and their combination can carry the transmitted current. Thus decay of the spatial envelope does not mean absorption or loss of total probability. The real, time-independent potential describes elastic scattering; tunnelling changes the fraction transmitted without changing the stationary energy.
 
 ## Answer
 

@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Exponential conjugation and the momentum shift"
 ---
 
@@ -109,6 +109,10 @@ The scalar product $(-i)(-i)=-1$ confirms the minus sign. Reversing the exponent
 
 > [!note] Operator domains
 > The series proof is immediate for bounded operators. For unbounded operators, it is a formal algebraic proof unless convergence and common domains are specified. In the position representation, real $\signal{k}$ preserves the Schwartz domain, where the direct momentum calculation is valid.
+
+The terminating correction is caused by centrality: once the first commutator is a scalar identity, commuting it again gives zero. If the first commutator is not central, dropping all higher nested commutators is not valid.
+
+Keep active state changes separate from operator conjugation when interpreting the sign. Multiplying a wavefunction by $e^{i\signal{k}\mechanical{x}}$ adds $\mechanical{\hbar}\signal{k}$ to its momentum mean, when that mean exists. The transformed mean is calculated with $e^{-i\signal{k}\hat x}\hat p e^{i\signal{k}\hat x}$, which has the reverse exponential order from part (c). Thus the minus sign in part (c) is consistent with the plus shift of the actively phase-multiplied state. The exponent is dimensionless, and the shift has momentum units.
 
 ## Answer
 

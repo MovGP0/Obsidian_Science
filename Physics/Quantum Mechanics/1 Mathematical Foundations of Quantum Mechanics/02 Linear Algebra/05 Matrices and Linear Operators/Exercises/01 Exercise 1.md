@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Matrix products and the adjoint of a product"
 ---
 
@@ -62,6 +62,12 @@ B^\dagger A^\dagger
 =\begin{pmatrix}2-\mathrm{i}&2\\\mathrm{i}(-\mathrm{i})&2\mathrm{i}\end{pmatrix}
 =\begin{pmatrix}2-\mathrm{i}&2\\1&2\mathrm{i}\end{pmatrix}.
 $$
+
+## Check through composition
+
+Apply each product to $e_1=(1,0)^T$. The first columns give $ABe_1=(2+\mathrm{i},2)^T$ and $BAe_1=(2,1)^T$. This independent check explains the unequal matrices as unequal sequential actions. For operators on a quantum state, the rightmost factor acts first.
+
+The adjoint identity is universal for compatible finite matrices; this example checks it but does not prove it for all matrices. Its structural reason is the inner-product rule $\langle u,ABv\rangle=\langle A^\dagger u,Bv\rangle=\langle B^\dagger A^\dagger u,v\rangle$. Each transfer to the first slot reverses one operation.
 
 ## Answer
 

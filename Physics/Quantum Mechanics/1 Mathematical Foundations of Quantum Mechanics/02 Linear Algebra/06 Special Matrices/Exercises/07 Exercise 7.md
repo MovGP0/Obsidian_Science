@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Bloch representation and purity of a two-level state"
 ---
 
@@ -117,6 +117,12 @@ $$
 $$
 
 The upper bound is reached exactly when $|\mathbf r|=1$. Then the eigenvalues are $1,0$, so the state is pure. The lower bound is reached exactly when $\mathbf r=0$, where $\rho=I/2$ is maximally mixed. This states both possible bound equalities and resolves the source's unspecified equality question.
+
+## Test the boundary of the state set
+
+Take $\mathbf r=(0,0,2)$. The formula still produces a Hermitian matrix of trace one, but its eigenvalues are $3/2$ and $-1/2$. It is not a density matrix. Its formal squared trace is $5/2$, which shows that the purity bound relies on positivity, not just the Pauli expansion.
+
+For the valid state $\mathbf r=(0,0,1/2)$, the populations are $3/4$ and $1/4$, and the purity is $5/8$. This checks the formula against a direct diagonal calculation. The three-coordinate ball describes two-level states; higher-dimensional density matrices require more parameters and have a different positivity region.
 
 ## Answer
 

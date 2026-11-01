@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Verify the spectral decomposition of σₓ"
 ---
 
@@ -53,6 +53,12 @@ $$
 $$
 
 As a separate completeness check, the sum of the two projectors is $I$. Thus these projectors cover the full two-dimensional space.
+
+## A reconstruction by action
+
+The two projectors have zero product, so the proposed difference acts as $+1$ on $|+x\rangle$ and $-1$ on $|-x\rangle$. Since these vectors form a basis, this action also proves equality with $\sigma_x$ without comparing every entry. Replacing either eigenket by a global phase leaves its projector unchanged because the phase cancels against its conjugate.
+
+As a transfer check, replace the minus sign between the projectors by a plus sign. The result becomes $I$, not another expression for $\sigma_x$. The signs encode eigenvalues; the projectors encode directions. Keeping these roles separate is necessary in quantum observable decompositions.
 
 ## Answer
 

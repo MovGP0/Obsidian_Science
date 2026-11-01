@@ -36,3 +36,11 @@ $$
 T(A)=C_2(A).
 $$
 The adjoint trace is related, up to normalization and the basis sign convention, to the Killing form.
+
+## A sign and normalization test
+
+Cartan's nondegeneracy criterion here concerns finite-dimensional Lie algebras over $\mathbb R$ or $\mathbb C$, in characteristic zero. For an Abelian algebra, every adjoint matrix vanishes, so its Killing form is zero. This is a useful boundary case: a positive inner product chosen by hand does not make an Abelian algebra semisimple.
+
+For $\mathfrak{su}(2)$ with $f^{abc}=\epsilon^{abc}$, direct summation gives $f^{acd}f^{bcd}=2\delta^{ab}$. With the real anti-Hermitian basis, the intrinsic form instead gives $-2\delta^{ab}$. This checks both the factor and the sign warning above. Rescaling to make the positive form a unit matrix also changes the structure constants; do not then retain $T(F)=1/2$ without checking its normalization again.
+
+The Dynkin index is a representation trace, not a physical coupling. Under $T^a\mapsto cT^a$, it scales by $c^2$. For the fundamental $SU(2)$ matrices, $\operatorname{Tr}(T^aT^b)=\delta^{ab}/2$ verifies the standard convention used in the color identities.

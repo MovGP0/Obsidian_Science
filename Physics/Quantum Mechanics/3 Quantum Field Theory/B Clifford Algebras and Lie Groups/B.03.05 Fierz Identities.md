@@ -56,6 +56,18 @@ $$
 >
 > The distinction between matrix identities and anticommuting fields, including the chiral-current sign in (B.35), follows the completeness derivation in [C. C. Nishi, *Simple derivation of general Fierz-type identities*, Eqs. (31)–(35)](https://arxiv.org/pdf/hep-ph/0412245).
 
+## How to derive rather than memorize a rearrangement
+
+Choose sixteen independent matrices $E_A$ and a trace-dual basis $E^A$ with $\operatorname{tr}(E^AE_B)=4\delta^A{}_B$. Every complex $4\times4$ matrix then obeys
+$$
+M=\frac14\sum_A E_A\operatorname{tr}(E^AM).
+$$
+Apply this expansion to a rank-one outer product and then contract the remaining two spinors. This changes the pairing of spinor indices and gives the Fierz coefficients as traces. The dual tensor basis must account for antisymmetric index pairs; summing all ordered pairs counts each independent pair twice. This explains the tensor factor in (B.36). [Nishi, §§III–IV](https://arxiv.org/pdf/hep-ph/0412245#page=5) develops this matrix-completeness construction.
+
+Only after the matrix identity is established should Grassmann components be inserted and reordered. This separates a trace sign from a statistics sign. As a check on a proposed coefficient set, use each matrix unit $M_{ij}=\delta_{ir}\delta_{js}$ in the expansion; these sixteen tests establish a linear matrix identity. A single chosen set of spinors can disprove an incorrect identity but cannot establish all its coefficients.
+
+To choose an efficient basis, consider four left-chiral currents. Which matrices in the full Clifford basis survive multiplication by the chiral projectors on the required sides? Apply the projector relations before taking traces. The eliminated terms explain why (B.35) is much shorter than the scalar completeness expansion.
+
 ## Physical quantities
 
 | Symbol | Unit | Quantity | Description |

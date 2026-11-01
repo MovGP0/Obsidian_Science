@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Interference in a box"
 ---
 
@@ -115,6 +115,8 @@ $$
 $$
 
 This formula keeps the negative cross matrix element explicit. If the convention is $\mechanical{L}/2+\mechanical{A}\cos(\signal{\Omega}\signal{t}+\signal{\delta})$ with positive amplitude, then $\signal{\delta}=\pi-\signal{\varphi}$ modulo $2\pi$. If either coefficient is zero, the oscillation amplitude is zero and its phase is undefined. A common overall phase on both coefficients does not change the result.
+
+The phase convention of the basis can change the displayed coefficients and cross matrix element separately. Their combination $c_1^*c_2\langle1|\hat x|2\rangle$ is unchanged by rephasing either basis vector, so the predicted mean is unchanged. This is why a phase formula must be read together with the stated real-eigenfunction convention. As another check, add the same constant to both energy levels: their difference and the interference motion remain unchanged.
 
 ### (c) Largest amplitude
 

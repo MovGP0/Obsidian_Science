@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Normalization of the Gaussian momentum amplitude"
 ---
 
@@ -72,6 +72,12 @@ $$
 $$
 
 The factor $\mechanical{\hbar}^{-1/2}$ cancels the change in measure. It cannot be omitted when a wavenumber transform is written as a momentum amplitude.
+
+## Check the measure and the width separately
+
+The square of a momentum amplitude has units of inverse momentum. Its integral is dimensionless only after multiplication by $d\mechanical{p}$. This is a quick way to detect a missing factor in the change from wavenumber to momentum.
+
+If $\mechanical{\sigma}$ doubles, the peak of the momentum density doubles and its width halves. Its area remains one. This checks the prefactor and exponent together: changing only the width would violate normalization. A spatial translation or a constant global phase would leave this momentum normalization unchanged, although the momentum amplitude could acquire a phase.
 
 ## Answer
 

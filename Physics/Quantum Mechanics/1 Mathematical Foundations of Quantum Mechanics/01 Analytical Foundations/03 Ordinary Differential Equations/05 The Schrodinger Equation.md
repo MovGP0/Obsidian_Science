@@ -84,6 +84,16 @@ $$
 
 The energy levels have equal spacing.
 
+## What is assumed, and what the eigenvalue problem proves
+
+The nonrelativistic Schrödinger equation is physical input here. For a spinless particle with constant positive mass and the specified real potential, the Hamiltonian includes kinetic energy and potential energy. Its operator domain and boundary conditions must also be supplied. Once that model is chosen, solving the eigenvalue problem is a mathematical task; it does not independently prove that the model applies to a particular experiment.
+
+For a time-independent Hamiltonian, a single energy eigenstate acquires only the displayed phase, so its position density is time independent. A superposition of different energies generally has changing relative phases and can have a time-dependent density. Orthonormality keeps the norm of the complete expansion equal to the sum of the squared coefficient magnitudes. The coefficients must therefore have unit total squared magnitude for a normalized state.
+
+For the oscillator, take positive frequency. The coordinate substitution uses the length scale $\sqrt{\energy{\hbar}/(\mechanical{m}\signal{\omega})}$. It makes the equation dimensionless but does not automatically rescale the wavefunction's normalization measure. If the same function values are written in the new coordinate, the original position measure contributes that length as a Jacobian.
+
+To check the quoted ground-state energy, use the mathematical trial shape $f(\mechanical{\xi})=\mathrm{e}^{-\mechanical{\xi}^2/2}$. Then $f''=(\mechanical{\xi}^2-1)f$, and the dimensionless left side equals $f/2$. The shape is square-integrable and gives $\energy{E}_0=\energy{\hbar}\signal{\omega}/2$. This verifies the lowest candidate; the full integer spectrum quoted above requires the later power-series or ladder-operator argument and is not derived by this one substitution.
+
 ## Physical quantities
 
 | Symbol | Unit | Quantity | Description |

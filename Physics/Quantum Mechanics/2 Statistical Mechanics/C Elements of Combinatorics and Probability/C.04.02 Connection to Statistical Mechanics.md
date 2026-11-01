@@ -8,6 +8,8 @@ source_page: 486
 > [!TLDR]
 > Gibbs entropy is Boltzmann's constant times Shannon entropy, and constrained maximization selects equilibrium distributions.
 
+The events here are distinguishable microstates of a specified physical system, not arbitrary measurement bins. A level with several microstates must include their degeneracy when probabilities are summed. The ensemble fixes which microstates are allowed and what information is held fixed. The Gibbs formula and its microcanonical and canonical forms are discussed in [Tong's statistical-physics notes, Section 1.3.3](https://www.damtp.cam.ac.uk/user/tong/statphys/statmechhtml/S1.html).
+
 Thermodynamic Boltzmann–Gibbs entropy is closely related to Shannon entropy. For state probabilities $\{p_i\}$, Gibbs entropy is
 
 $$
@@ -35,6 +37,10 @@ $$
 p_i\propto
 e^{-\thermal{\beta}(\energy{E}_i-\energy{\mu}N_i)}.
 $$
+
+The microcanonical restriction is a restriction of the sample space itself, usually to a narrow energy shell. A fixed *mean* energy permits individual states of different energies. These constraints answer different physical questions. Entropy maximization is an inference procedure for the chosen information; it is not a dynamical proof that an isolated system relaxes. Identifying its energy multiplier with inverse thermal energy uses the equilibrium thermodynamic interpretation, as for a system in weak contact with a heat bath.
+
+The sums below must converge. In particular, the canonical partition function must be finite. For finite spectra this condition holds at every finite multiplier; for unbounded spectra the allowed multiplier range depends on the spectrum. The usual thermal-bath case here has positive absolute temperature.
 
 ## Example C.2: Deriving the canonical distribution
 
@@ -75,6 +81,12 @@ $$
 
 the Boltzmann distribution.
 
+## Interpreting the weights
+
+The normalization multiplier fixes the total probability; the energy multiplier sets ratios of weights. For two microstates, their probability ratio depends only on their energy difference. At positive temperature, the higher-energy microstate is less probable. Equal-energy microstates have equal weights. As temperature increases without bound in a finite state space, the weights become uniform.
+
+Adding the same constant to all microstate energies multiplies both the numerator and partition function by the same factor, so no probability changes. This checks the choice of energy zero. Also, $\thermal{\beta}\energy{E}_i$ is dimensionless, and the grand-canonical exponent has the same property because chemical potential is energy per particle count. At finite temperature, a measured departure from these weights can indicate that the assumed equilibrium ensemble or the chosen state description is insufficient.
+
 ## Physical quantities
 
 | Symbol | Unit | Quantity | Description |
@@ -85,8 +97,9 @@ the Boltzmann distribution.
 | $\thermal{\beta}$ | $\unit{J^{-1}}$ | Inverse temperature | One divided by the thermal energy. |
 | $\thermal{k}_{\mathrm B}$ | $\unit{J\,K^{-1}}$ | Boltzmann constant | The constant that converts temperature to energy. |
 | $\thermal{S}_{\mathrm{Gibbs}}$ | $\unit{J\,K^{-1}}$ | Gibbs entropy | The thermodynamic entropy of the statistical state. |
+| $\thermal{S}_{\mathrm{Boltzmann}}$ | $\unit{J\,K^{-1}}$ | Boltzmann entropy | The logarithm of the compatible microstate count times Boltzmann's constant. |
 | $\thermal{T}$ | $\unit{K}$ | Temperature | The absolute temperature. |
-| $N$ | $1$ | Particle count | The number of particles in the system. |
+| $N,\ N_i,\ \bar N$ | $1$ | Particle counts | The particle count in a microstate and its constrained ensemble mean. |
 | $p_i$ | $1$ | State probability | The probability that the system occupies microstate i. |
 | $W$ | $1$ | Accessible microstate count | The number of microstates compatible with the microcanonical constraints. |
 | $Z(\thermal{\beta})$ | $1$ | Canonical partition function | The normalization of the canonical Boltzmann distribution. |

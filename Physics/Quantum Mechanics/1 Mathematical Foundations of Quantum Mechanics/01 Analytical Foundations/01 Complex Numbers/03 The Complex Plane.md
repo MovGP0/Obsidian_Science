@@ -63,3 +63,11 @@ z_1z_2=r_1r_2\bigl(\cos(\theta_1+\theta_2)+\mathrm{i}\sin(\theta_1+\theta_2)\big
 $$
 
 *To multiply two complex numbers, multiply their absolute values and add their arguments.* Geometrically, this is a rotation combined with scaling.
+
+## Angles, zero, and the meaning of the plane
+
+For $z\ne0$, the argument is defined only up to a whole turn: $\theta$ and $\theta+2\pi k$, with integer $k$, give the same point. A principal-argument interval selects one representative. At $z=0$, the radius is zero and no direction is defined, so the argument is undefined.
+
+Use both components to select a quadrant. For example, $1+\mathrm{i}$ and $-1-\mathrm{i}$ have the same ratio $b/a=1$, but their arguments differ by $\pi$. A single value of $\arctan(b/a)$ cannot distinguish them. The polar coordinates must satisfy both $a=r\cos\theta$ and $b=r\sin\theta$.
+
+As a check of the multiplication rule, multiplication by $\mathrm{i}$ sends $1$ to $\mathrm{i}$, then to $-1$, then to $-\mathrm{i}$, and finally back to $1$. The radius stays fixed while each step adds $\pi/2$. This is geometry in a plane of complex values. When the value is a quantum amplitude, its two axes are amplitude components; they are not two physical directions in the particle's position space.

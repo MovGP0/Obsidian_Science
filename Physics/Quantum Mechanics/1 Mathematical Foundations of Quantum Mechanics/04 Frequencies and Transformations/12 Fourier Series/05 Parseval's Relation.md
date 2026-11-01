@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Parseval’s Relation"
 ---
 
@@ -27,5 +27,16 @@ $$
 \phi_n(x)=\frac1{\sqrt{2L}}e^{in\pi x/L},
 \qquad\langle\phi_n,f\rangle=\sqrt{2L}\,c_n.
 $$
+
+For $f\in L^2([-L,L])$, define $S_Nf=\sum_{|n|\leq N}c_ne^{in\pi x/L}$. Orthogonality gives the finite identity
+
+$$
+\frac1{2L}\|f-S_Nf\|^2
+=\frac1{2L}\|f\|^2-\sum_{|n|\leq N}|c_n|^2.
+$$
+
+The remainder is orthogonal to every retained mode. Consequently, no other choice of coefficients for these same modes gives a smaller squared error. Completeness makes the remainder tend to zero and gives Parseval's infinite identity. Orthogonality alone would give only an inequality for an incomplete family.
+
+As a normalization check, a constant $f=A$ has $c_0=A$ and all other coefficients zero. Both sides of Parseval are then $|A|^2$. The coefficient sum measures the mean squared magnitude in this convention; it is not automatically a sum of quantum probabilities.
 
 This is the Parseval identity from Chapter 8 applied to the Fourier basis.

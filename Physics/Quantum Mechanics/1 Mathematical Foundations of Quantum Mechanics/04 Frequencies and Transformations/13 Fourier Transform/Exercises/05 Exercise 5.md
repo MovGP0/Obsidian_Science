@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Momentum moments and minimum Gaussian uncertainty"
 ---
 
@@ -84,6 +84,12 @@ $$
 $$
 
 It has mean zero and standard deviation $\mechanical{\Delta x}=\mechanical{\sigma}$. The exponent in the amplitude contains $4\mechanical{\sigma}^2$, whereas the density exponent contains $2\mechanical{\sigma}^2$. This distinction prevents a factor-of-two error.
+
+## Separate motion of the center from uncertainty
+
+Increasing $\mechanical{p}_0$ shifts the distribution but leaves its variance unchanged. In particular, a large second moment does not by itself imply a large uncertainty: the squared mean must be subtracted. Setting $\mechanical{p}_0=0$ checks that the second moment then equals the variance.
+
+The equality in part (c) concerns this Gaussian with a linear phase. A quadratic position-dependent phase leaves its initial position density unchanged but introduces position–momentum correlation and can increase the momentum spread. Thus the density shape alone is not enough to conclude that the ordinary uncertainty product is minimal.
 
 ## Answer
 

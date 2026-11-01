@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Normalization and spin measurement probabilities"
 ---
 
@@ -71,6 +71,12 @@ P(\downarrow)=\left|\frac{\mathrm i}{\sqrt5}\right|^2
 $$
 
 Both probabilities are nonnegative and their sum is one. The factor $\mathrm i$ changes the relative phase, but not this measurement probability.
+
+## Scope of the prediction
+
+These probabilities refer to the stated up/down measurement basis. They do not determine the full state, because the relative phase is absent from the two squared magnitudes. For example, replacing $\mathrm{i}$ by $1$ leaves both probabilities unchanged but changes the state vector beyond an overall phase. The ratio of the down amplitude to the up amplitude changes from $\mathrm{i}/2$ to $1/2$.
+
+As a normalization check before using the Born rule, remove the factor $1/\sqrt5$. The squared norm becomes $5$, so the raw squared coefficients $4$ and $1$ cannot be probabilities. Dividing by the squared norm restores the result.
 
 ## Answer
 

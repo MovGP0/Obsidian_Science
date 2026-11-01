@@ -1,9 +1,13 @@
-﻿---
+---
 title: "Common Errors"
 ---
 
 > [!TLDR]
 > Distinguish matrix definitions from calculation methods, and check the assumptions behind determinant and purity claims. SVD factors have phase and basis freedom even though the singular values are unique.
+
+To check the purity claim, use the density matrix's eigenvalues $q_i$. Positivity and trace one give $0\le q_i\le1$ and $\sum_iq_i=1$. Hence $\sum_iq_i^2\le1$. Equality forces every $q_i(1-q_i)$ to vanish, so exactly one eigenvalue is one and the rest are zero. This proves the projector conclusion using the hypotheses that a trace calculation alone would hide.
+
+As a failure test, $A=\operatorname{diag}(-1,0)$ has $\operatorname{Tr}(A^2)=1$ but $A^2\ne A$. It is not a density matrix. Always establish positivity and normalization before applying a density-matrix shortcut.
 
 ## Error 1 — Treat Gaussian elimination as the definition of rank
 

@@ -53,6 +53,14 @@ Here $\signal{g}$ denotes the strong gauge coupling.
 > [!note]
 > The source suppresses the momentum, Lorentz, and phase factors. In the full four-gluon vertex, the three products of structure constants multiply different Lorentz tensors. Their unweighted sum in (B.78) is a schematic list of color channels, not the complete vertex.
 
+## Color exchange is not spinor exchange
+
+Equation (B.74) resolves the full matrix space into its singlet identity and its traceless part. It acts on fundamental color indices, not on the four spinor components. To obtain (B.75), replace the two generators by the Kronecker deltas and rename the contracted color labels. No fermion fields need to pass through each other in this step, so it adds no Grassmann sign. A later spinor Fierz rearrangement is a separate operation with its own ordering convention.
+
+As a check, contract (B.74) with $\delta_{ji}$. The left side vanishes because each generator is traceless. The two right-side terms cancel exactly; dropping the $1/N$ subtraction would fail this check.
+
+The quark-field units in the table assume four spacetime dimensions, a canonical kinetic term, and natural units. With those conventions a color current has mass dimension three and the product in (B.75) has dimension six on both sides. The listed vertex color factors still require their separate momentum and Lorentz tensors. They cannot be squared as complete scattering amplitudes.
+
 ## Physical quantities
 
 | Symbol | Unit | Quantity | Description |

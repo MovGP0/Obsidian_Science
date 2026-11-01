@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Variance and Quantum Uncertainty"
 ---
 
@@ -14,6 +14,10 @@ title: "Variance and Quantum Uncertainty"
 > $$
 
 The key property is $\Delta A=0$ if and only if $|\psi\rangle$ is an eigenstate of $\hat A$.
+
+To see why zero variance is a sharp statement, center the observable before applying it to the state. The resulting vector measures how far the state fails to satisfy an eigenvalue equation. Its squared norm cannot be negative, and it vanishes only when the vector itself is zero. This is the proof strategy below.
+
+For an unbounded self-adjoint observable, the finite second spectral moment ensures that $\hat A|\psi\rangle$ exists. The variance can then be written as the squared norm below. Reading $\langle\hat A^2\rangle$ as the literal operator matrix element additionally requires the domain of $\hat A^2$; the spectral-moment or norm form avoids that extra requirement.
 
 **Proof.** Set $\mu=\langle\hat A\rangle$:
 

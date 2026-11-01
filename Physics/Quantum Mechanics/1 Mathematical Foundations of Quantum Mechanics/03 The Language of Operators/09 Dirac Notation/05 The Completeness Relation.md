@@ -1,9 +1,13 @@
-﻿---
+---
 title: "The Completeness Relation"
 ---
 
 > [!TLDR]
 > Insert the resolution of the identity to expand an abstract expression in a basis. This gives moment formulas, changes of basis, and measurement amplitudes.
+
+Completeness answers the question: have we kept every direction of the state? For an orthonormal set that is not complete, the same sum is only a projector onto its closed span. A component perpendicular to that span is lost. For example, retaining only the up ket in a two-state space maps the down ket to zero, whereas the identity must return it unchanged.
+
+The proof method below inserts the identity at a place where each resulting factor can be evaluated. Between two copies of an observable, it exposes a sum of squared amplitudes. Next to a ket, it exposes the coordinates of that ket. In an infinite discrete basis, these expansions converge in Hilbert-space norm; they are not finite algebraic sums. In the unbounded second-moment example, taking the state in the domain of the squared operator is a sufficient assumption for all the displayed operator products.
 
 The **completeness relation** is
 

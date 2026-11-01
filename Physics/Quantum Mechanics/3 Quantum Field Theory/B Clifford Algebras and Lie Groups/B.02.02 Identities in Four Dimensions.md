@@ -43,3 +43,11 @@ $$
 \tag{B.24}
 $$
 with $\epsilon^{0123}=+1$.
+
+## A sign check before using the traces
+
+These formulas use a four-component complex Dirac representation, the mostly-minus metric, and $\gamma^5=i\gamma^0\gamma^1\gamma^2\gamma^3$. They are algebraic identities; $a,b,c$ can be any commuting four-vectors with the slash convention stated above. Their units depend on what those vectors represent.
+
+For (B.20), set $b=a$. The Clifford relation gives $\not a\not a=a^2\mathbf1$, so both sides become $4a^2\mathbf1$. This includes a null vector, whose slash can be nonzero even though its square vanishes.
+
+Check the sign of (B.24) with the ordered indices $0123$. Write $P=\gamma^0\gamma^1\gamma^2\gamma^3$. Its square is $-\mathbf1$, so $\operatorname{tr}(\gamma^5P)=i\operatorname{tr}(P^2)=-4i$. Permuting the four distinct indices changes the sign. Repeated indices give zero after antisymmetrization. This fixes the sign relative to the stated orientation; a different $\gamma^5$ definition requires a corresponding change.

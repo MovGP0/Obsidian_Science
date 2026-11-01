@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Spin projection and measurement probability"
 ---
 
@@ -68,6 +68,10 @@ $$
 $$
 
 Once the vector lies in the spin-up subspace, another projection does not change it.
+
+Check the result with the complementary projector before interpreting it. The rejected down component has squared norm $16/25$, so the retained and rejected probabilities sum to one. The projection in part (a) contains probability information in its norm; normalization after conditioning removes that information from the selected ket.
+
+For an immediate repeat of the same ideal measurement, the normalized up state gives the up result with probability one. This does not make the original up probability equal to one. The first probability refers to the initial preparation; the second refers to a new conditional preparation. No intervening evolution is allowed in this repeatability check.
 
 ## Answer
 

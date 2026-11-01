@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Integration by Parts"
 ---
 
@@ -60,6 +60,14 @@ The crucial step is the boundary condition. For physically suitable wavefunction
 > The integrals with omitted limits in the worked proof are over the whole real line. The functions and their derivatives must have suitable regularity and integrability, and the boundary product must vanish. Normalizability alone does not prove these conditions.
 >
 > This integration-by-parts calculation proves symmetry on a suitable operator domain. To establish self-adjointness for an unbounded operator, its domain must also be specified and compared with the adjoint's domain. The source uses “Hermitian” for the displayed symmetry relation.
+
+## The boundary term is part of the operator
+
+On a finite interval, continuously differentiable factors are sufficient for the elementary integration-by-parts identity. On the whole line, take a finite interval first and then check that both integrals converge and the endpoint products have the stated limits. A square-integrable wavefunction alone is not a substitute for these checks.
+
+The sign in the momentum proof has two sources. Moving the derivative supplies a minus sign, while conjugating the factor $-\mathrm{i}$ supplies the opposite sign. These signs cancel in the symmetry relation. If the conjugation is omitted, this cancellation fails.
+
+The boundary product, rather than the differential expression alone, decides whether symmetry holds on a proposed domain. On a finite interval it can vanish through zero endpoint values or cancel through matching periodic endpoint values. These are different domain choices. Before dropping the product, ask which functions the operator is allowed to act on. A valid symmetry calculation does not yet prove that the operator and its adjoint have the same domain.
 
 ## Physical quantities
 

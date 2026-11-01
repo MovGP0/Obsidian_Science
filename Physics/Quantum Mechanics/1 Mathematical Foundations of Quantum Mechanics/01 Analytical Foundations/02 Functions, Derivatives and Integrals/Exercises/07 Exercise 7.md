@@ -1,4 +1,4 @@
-﻿---
+---
 title: "A Gaussian packet at the uncertainty bound"
 ---
 
@@ -151,6 +151,20 @@ $$
 $$
 
 The Heisenberg lower bound is attained. The phase shifts the mean momentum without changing either uncertainty.
+
+### Check the result without redoing the second derivative
+
+For this smooth, decaying packet, integration by parts also gives $\langle\hat p^2\rangle=\|\hat p\signal{\psi}\|^2$. The coefficient in part (b) has a real constant term and a purely imaginary term proportional to position. Its squared magnitude is the sum of their squares, so
+
+$$
+\|\hat p\signal{\psi}\|^2
+=\mechanical{p}_0^2+\frac{\mechanical{\hbar}^2}{4\mechanical{\sigma}^4}\langle\hat x^2\rangle
+=\mechanical{p}_0^2+\frac{\mechanical{\hbar}^2}{4\mechanical{\sigma}^2}.
+$$
+
+This independently checks the sign and the product-rule term in part (c). It also makes positivity manifest.
+
+The uncertainty product has unit action, consistent with $\mechanical{\hbar}$. Reducing the positive width reduces position uncertainty and increases momentum uncertainty by the reciprocal factor. Equality is established here for the displayed Gaussian with a linear spatial phase. It does not follow merely from a Gaussian-looking position density: a position-dependent phase with curvature can change momentum spread. The result concerns standard deviations in a prepared state, rather than an error caused by a particular measuring device.
 
 ## Answer
 

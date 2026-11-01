@@ -8,7 +8,7 @@ source_page: 467
 > [!TLDR]
 > The volume and surface area of an N-dimensional ball follow from Gaussian integration and the gamma function.
 
-The unit-ball volume combines Gaussian integrals with the gamma function.
+How can a radial energy bound be converted into a state-space volume without computing every angle? Evaluate the same rotationally invariant Gaussian in Cartesian and radial coordinates. The Cartesian product is known; comparison determines the unknown angular factor. Here $N\geq1$ is an integer and $R\geq0$. All coordinates use the same radial metric and scale.
 
 **Proposition A.2.** The volume of a ball with radius $R$ in $N$ dimensions is
 
@@ -31,7 +31,7 @@ $$
 d^Nx=S_{N-1}r^{N-1}\,dr,
 $$
 
-where $S_{N-1}$ is the area of the unit $(N-1)$-sphere. Thus, using (A.7) with $\nu=N/2$ and $a=1$,
+where $S_{N-1}$ is the area of the unit $(N-1)$-sphere. The factor $r^{N-1}$ comes from the radial Jacobian: a shell's volume per unit radial interval scales as radius to power $N-1$. This is the measure after angle integration, not the full unintegrated coordinate differential. Thus, using (A.7) with $\nu=N/2$ and $a=1$,
 
 $$
 \pi^{N/2}
@@ -59,6 +59,8 @@ Since $N\Gamma(N/2)=2\Gamma(N/2+1)$, this becomes the stated formula.
 - $N=2$: $\Gamma(2)=1$, so $V_2(R)=\pi R^2$, the area of a disk.
 - $N=3$: $\Gamma(5/2)=\frac32\frac12\Gamma(1/2)=3\sqrt\pi/4$, so $V_3(R)=4\pi R^3/3$, the volume of a ball.
 
+The boundary area at radius $R>0$ is $dV_N/dR=S_{N-1}R^{N-1}$, while $V_N$ is the enclosed volume. Confusing these quantities loses a factor of radius and changes the units. For momentum coordinates, the volume has momentum units to power $N$; a phase-space state count still needs the appropriate position measure and quantum cell factor, as in [[A.08.01 Density of States of the Ideal Gas]].
+
 ## Large dimension
 
 Stirling's formula gives
@@ -77,7 +79,9 @@ V_N(R)\approx
 \xrightarrow{N\to\infty}0.
 $$
 
-In particular, the unit-ball volume tends to zero as dimension increases. This is a counterintuitive but important result in high-dimensional geometry.
+In particular, the unit-ball volume tends to zero as dimension increases. This is a counterintuitive but important result in high-dimensional geometry. The comparison uses a fixed numerical radius in fixed coordinate units. It is not a claim that physical volumes with different dimensions have the same unit.
+
+The fixed-radius condition is essential. If the radius grows with dimension, its $R^N$ factor competes with the gamma function and the displayed limit need not apply. As a reconstruction check, derive the fraction of a ball inside radius $cR$, with $R>0$ and $0<c<1$. It is $c^N$, so the fraction inside that smaller ball tends to zero even while the fixed unit-ball volume tends to zero.
 
 ## Physical quantities
 

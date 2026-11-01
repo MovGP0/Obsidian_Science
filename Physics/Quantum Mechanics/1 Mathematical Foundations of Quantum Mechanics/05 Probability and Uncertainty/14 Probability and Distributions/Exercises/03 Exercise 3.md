@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Spin probabilities and angular uncertainty"
 ---
 
@@ -74,6 +74,8 @@ $$
 $$
 
 The absolute value is necessary because a standard deviation cannot be negative.
+
+For a two-outcome distribution with results separated by $\mechanical{\hbar}$, direct expansion of the variance gives $\mechanical{\hbar}^2P_+P_-$. Since $P_-=1-P_+$, the product is at most $1/4$. This gives the same maximum without trigonometry and shows its meaning: equal probabilities maximize the spread of these fixed outcomes. A zero mean at that maximum does not mean that a single measurement can give zero.
 
 ### (c) Maximum uncertainty
 

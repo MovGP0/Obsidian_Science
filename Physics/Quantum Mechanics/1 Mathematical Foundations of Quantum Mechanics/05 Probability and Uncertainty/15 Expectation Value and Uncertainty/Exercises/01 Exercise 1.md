@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Energy statistics of a superposition"
 ---
 
@@ -65,6 +65,8 @@ $$
 $$
 
 For the positive frequency scale $\signal{\omega}>0$, this gives $\energy{\Delta H}=\sqrt3\mechanical{\hbar}\signal{\omega}/4$. For a signed frequency parameter, its modulus is required in the uncertainty.
+
+An independent two-level check avoids the second moment: for two energy outcomes, the variance is the product of their probabilities times the squared level separation. Here $P_1P_2=3/16$ and the separation is $\mechanical{\hbar}\signal{\omega}$, which reproduces the variance above. The positive spread is consistent with a conserved distribution; conservation does not mean that repeated energy measurements on newly prepared systems all give the same value.
 
 ### (b) Time evolution
 

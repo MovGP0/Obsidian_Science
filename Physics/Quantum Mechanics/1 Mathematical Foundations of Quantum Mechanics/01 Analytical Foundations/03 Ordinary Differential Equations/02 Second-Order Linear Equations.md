@@ -115,6 +115,14 @@ $$
 
 Both forms are valid. The exponential form is more useful in quantum mechanics because $\mathrm{e}^{\mathrm{i}\signal{k}\mechanical{x}}$ is a momentum eigenfunction with eigenvalue $\energy{\hbar}\signal{k}$.
 
+## Why exponentials give a complete basis here
+
+For constant coefficients, differentiation maps an exponential to a multiple of itself. This makes it a useful trial function. Distinct characteristic roots give independent exponentials. At a repeated root $r$, two copies of $\mathrm{e}^{rx}$ are not independent. Substitute $y=u(x)\mathrm{e}^{rx}$ instead. The characteristic relation cancels the $u$ term, and the repeated-root relation $2ar+b=0$ cancels the $u'$ term. The equation reduces to $au''=0$, giving $u=C_1+C_2x$. This explains the extra factor of $x$.
+
+For suitable initial data, these two independent solutions span the solution space of the second-order linear equation. The coefficients are fixed by both the value and the first derivative. Boundary-value data can behave differently: some boundary choices allow only the zero solution at a given parameter value.
+
+In the oscillator, the positive damping coefficient models loss of classical oscillation amplitude. It must not be inserted into a closed quantum Hamiltonian by analogy alone. The undamped limit restores the natural frequency and constant amplitude. Critical damping has the fastest asymptotic generic decay among the nonoscillating cases at fixed natural frequency; particular initial conditions can suppress a mode, so this is not a universal comparison of every trajectory or first crossing time.
+
 ## Physical quantities
 
 | Symbol | Unit | Quantity | Description |

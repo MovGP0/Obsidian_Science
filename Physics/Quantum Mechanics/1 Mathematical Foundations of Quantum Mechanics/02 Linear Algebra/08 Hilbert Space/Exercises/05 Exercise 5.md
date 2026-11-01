@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Position matrix elements from completeness"
 ---
 
@@ -90,6 +90,12 @@ This shows why the position operator acts by multiplication in the position repr
 
 > [!note]
 > The matrix element requires a suitable operator domain. One sufficient condition is that $|\psi\rangle$ is in the Hilbert space and $|\phi\rangle$ is in the domain of $\hat x$, so $\int \mechanical{x}^2|\signal{\phi}(\mechanical{x})|^2\,d\mechanical{x}<\infty$. Cauchy–Schwarz then makes the final matrix-element integral finite.
+
+## Check units and a symmetric case
+
+For normalized one-dimensional wavefunctions, the product of the two amplitudes has inverse-length units. Multiplication by position and integration over position leave length units for the matrix element, as required. The complex conjugation belongs to the bra wavefunction; omitting it would generally violate the inner-product convention.
+
+For equal real, even wavefunctions centered at the origin and in the position domain, the integrand is odd, so the mean position is zero. That is a symmetry prediction, not a statement that the particle has an exact position of zero. The domain condition also matters: square-integrable wavefunctions need not remain square integrable after multiplication by position.
 
 ## Answer
 

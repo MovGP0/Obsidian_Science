@@ -62,3 +62,17 @@ $$
 
 > [!note] Scope of the source's trace rule
 > The source states (B.17) for general $d$. In an irreducible odd-dimensional representation, a product containing all distinct gamma matrices can instead have nonzero trace. The vanishing rule applies in even dimensions, or in a suitable doubled odd-dimensional representation. Equation (B.14) also assumes traceless generators; a one-dimensional irreducible representation is an exception.
+
+## Reconstructing a contraction
+
+All lowered gamma indices use the inverse of the same nondegenerate metric as (B.1). To prove (B.10), move the leftmost generator past $\gamma^\nu$ before contracting:
+$$
+\gamma^\mu\gamma^\nu\gamma_\mu
+=2g^{\mu\nu}\gamma_\mu-\gamma^\nu\gamma^\mu\gamma_\mu
+=(2-d)\gamma^\nu.
+$$
+This method also proves (B.11) and (B.12): each interchange produces a metric term and a shorter product. It is safer than commuting gamma matrices as if they were scalars.
+
+For the trace rules, cyclicity and the anticommutator give twice the two-gamma trace equal to $2g^{\mu\nu}\operatorname{tr}\mathbf1$. In even dimension, conjugation by the invertible chirality element changes the sign of an odd product and preserves its trace. The trace must therefore vanish. This proof identifies the hypothesis behind (B.17).
+
+The odd-dimensional boundary is concrete: the three Euclidean Pauli matrices obey the Clifford relation but $\operatorname{tr}(\sigma_1\sigma_2\sigma_3)=2i$. Thus a rule about an odd number of factors cannot be transferred to every dimension.

@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Riesz–Fischer and quantum probability amplitudes"
 ---
 
@@ -96,6 +96,12 @@ give probabilities $1/2$ and $1/2$ in the original basis, but they are orthogona
 > Normalization does not guarantee that every unbounded observable has a finite expectation value, or that the vector is in its operator domain. Those questions require additional conditions on the coefficients and the observable. Riesz–Fischer supplies the Hilbert-space vector; it does not supply these additional moment conditions.
 
 The coordinates $c_n$ also depend on the selected basis. The physical state does not depend on that choice. Without completeness, the coefficient list determines only the component in the closed span of the specified orthonormal set.
+
+## A constructive infinite example
+
+Take $c_n=\sqrt3/2^n$ for $n=1,2,\ldots$. The geometric sum gives $\sum_n|c_n|^2=3\sum_n4^{-n}=1$. The theorem therefore supplies a unit vector for the chosen orthonormal basis. The omitted squared norm after $N$ terms is $3\sum_{n>N}4^{-n}=4^{-N}$, so the norm error is $2^{-N}$. This gives a quantitative reconstruction, not only an existence statement.
+
+An orthonormal family need not be complete for existence of that series in its closed span; completeness of the family is needed to ensure uniqueness from coefficients among all vectors in the ambient space. A vector perpendicular to an incomplete family's span could otherwise be added without changing any listed coefficient.
 
 ## Answer
 

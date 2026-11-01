@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Triangle inequality from Cauchy–Schwarz"
 ---
 
@@ -59,6 +59,12 @@ $$
 $$
 
 Both $\|u+v\|$ and $\|u\|+\|v\|$ are nonnegative. The square-root function preserves order on nonnegative real numbers, so taking square roots proves the required result. This argument also covers either vector being zero.
+
+## When is the bound sharp?
+
+For nonzero vectors, equality requires equality in both bounds: the vectors must be dependent and $\langle u,v\rangle$ must be nonnegative real. Thus $v$ must be a nonnegative real multiple of $u$. Dependence alone is insufficient. Take $v=-u\ne0$: the left side is zero, while the right side is $2\|u\|$. Take $v=\mathrm{i}u$: the left side is $\sqrt2\|u\|$, also below $2\|u\|$.
+
+This matters for superpositions: their lengths depend on relative phase, even when the separate vectors have fixed lengths. The inequality bounds the sum; it does not normalize it.
 
 ## Answer
 

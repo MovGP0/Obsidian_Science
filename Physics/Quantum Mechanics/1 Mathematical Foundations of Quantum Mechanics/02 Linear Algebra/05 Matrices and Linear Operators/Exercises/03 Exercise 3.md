@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Pauli products and cyclic traces"
 ---
 
@@ -41,6 +41,12 @@ $$
 $$
 
 The individual entries are complex numbers, which commute. The finite sums can therefore be exchanged even when the matrices do not commute.
+
+## What the trace discards
+
+A trace is one scalar invariant, so it cannot reconstruct a matrix or its action on a state. Here the commutator is $2\mathrm{i}\sigma_z$, which is nonzero but has trace zero. Thus taking a trace can hide noncommutation rather than remove it.
+
+For a transfer test, multiply both products by $\sigma_z$ on the right before taking the trace. Their traces become $2\mathrm{i}$ and $-2\mathrm{i}$. There is no conflict with cyclicity: exchanging the first two of three factors is not a cyclic rearrangement. All arguments here use finite matrices, where the sums are finite.
 
 ## Answer
 

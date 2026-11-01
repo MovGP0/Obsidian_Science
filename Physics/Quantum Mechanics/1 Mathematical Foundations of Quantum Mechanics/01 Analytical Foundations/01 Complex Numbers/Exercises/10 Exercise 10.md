@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Normalization and mean momentum of an exponential wavefunction"
 ---
 
@@ -117,6 +117,12 @@ $$
 The boundary term is zero because the envelope decays at both ends. At the cusp, use the two integrals on $(-\infty,0)$ and $(0,\infty)$. Their boundary terms at zero cancel because $f$ is continuous. A value of the derivative at one point does not change the integral.
 
 Thus $\mechanical{p}_0$ is the mean momentum. It is not a definite momentum eigenvalue: the derivative also acts on the nonconstant envelope. Multiplication by the plane-wave phase shifts the momentum distribution by $\mechanical{p}_0$ while leaving the position density fixed.
+
+### Separate localization from a definite momentum
+
+Both exponents must be dimensionless: $\mechanical{x}/\mechanical{a}$ is a ratio of lengths, and $\mechanical{p}_0\mechanical{x}/\mechanical{\hbar}$ is action divided by action. Normalization gives an amplitude with unit $\unit{m^{-1/2}}$, so the density times a length is dimensionless, as a probability must be.
+
+For a concrete interval check, integrate the normalized density between $-\mechanical{a}$ and $\mechanical{a}$. The result is $1-\mathrm{e}^{-2}$, independent of $\mechanical{p}_0$. At $\mechanical{p}_0=0$ the mean momentum is zero, but the envelope is still nonconstant, so the state is not a zero-momentum eigenstate. As $\mechanical{a}$ increases the state spreads; an infinite-width limit is not a normalized constant wavefunction on the real line. The cusp also means that second derivatives need separate domain checks before this state is used in an energy calculation.
 
 ## Answer
 

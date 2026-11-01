@@ -1,9 +1,15 @@
-﻿---
+---
 title: "Time Evolution"
 ---
 
 > [!TLDR]
 > A time-independent self-adjoint Hamiltonian generates unitary time evolution. Energy eigenstates acquire a global phase, while superpositions can show oscillating measurement probabilities and expectation values.
+
+The exponential does two jobs: it solves the time-independent evolution equation and preserves state normalization. On the Hamiltonian domain, differentiation gives the Schrödinger equation and the zero-time value is the identity. The spectral definition also acts on every Hilbert-space vector, although a state outside that domain need not have a norm-differentiable time orbit.
+
+For the two-level example, detuning changes both the oscillation rate and the maximum transition probability. At zero coupling there is no transfer; far from resonance the prefactor is small even though the oscillation frequency is larger. At zero detuning and nonzero coupling, complete transfer becomes possible. If both parameters vanish, the Hamiltonian is zero and the state stays fixed; use this direct limit rather than the displayed ratio with a zero denominator.
+
+The rotating-frame Hamiltonian is the starting effective model here. Its formula alone does not specify losses, drive noise, or the derivation and validity range of an atomic approximation.
 
 For a time-independent Hamiltonian, the formal solution of the Schrödinger equation is
 

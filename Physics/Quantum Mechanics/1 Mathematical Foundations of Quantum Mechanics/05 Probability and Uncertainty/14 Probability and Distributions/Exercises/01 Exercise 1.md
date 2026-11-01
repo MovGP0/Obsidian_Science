@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Moments and deviations of a discrete distribution"
 ---
 
@@ -18,6 +18,8 @@ Consider the discrete distribution $P(0)=1/4$, $P(1)=1/2$, and $P(2)=1/4$.
 **(b)** What is the probability that $X$ differs from its mean by **more than** $\sigma_X$?
 
 ## Worked solution
+
+Before the sums, note that the probabilities total one and are symmetric about 1. Symmetry predicts the mean, while normalization makes these weights a probability distribution. A quick independent variance check is to center first: the squared deviations are 1, 0, and 1, whose weighted sum is $1/4+1/4=1/2$. This avoids subtracting two moments and checks the calculation below.
 
 ### (a) Weighted moments and standard deviation
 

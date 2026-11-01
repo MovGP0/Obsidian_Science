@@ -41,3 +41,7 @@ $$
 {[xA+(1-x)B]^{m+n}}.
 \tag{A.78}
 $$
+
+The integral identities hold directly for positive real denominators and positive real parts of the exponents. For propagator denominators, continue from this domain with a common causal prescription and consistent branches; arbitrary real denominators of opposite signs can make the parameter integral singular. See [CERN lecture notes, section 3.1, p. 33](https://cds.cern.ch/record/458488/files/open-2000-292.pdf) for the positive-denominator starting point.
+
+The parameters are nonnegative weights constrained to sum to one. In (A.76), the weights are $y$, $x-y$, and $1-x$; the triangular integration domain ensures all three are nonnegative. If all three denominators are equal, its area is one half, which cancels the prefactor two and recovers their inverse cube. For (A.78), set the two denominators equal: the remaining beta integral cancels the gamma prefactor. In a loop calculation, combining denominators permits completion of the momentum square before using the Gaussian formulas.

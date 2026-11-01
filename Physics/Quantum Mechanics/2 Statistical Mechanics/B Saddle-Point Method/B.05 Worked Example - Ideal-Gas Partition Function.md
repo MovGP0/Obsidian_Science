@@ -10,6 +10,8 @@ source_page: 477
 
 **Example B.1.** Calculate the grand partition function of a classical monatomic ideal gas and derive its equation of state by the saddle-point method.
 
+Use identical, noninteracting particles in three dimensions with only nonrelativistic translational energy. The gas is in thermal and particle contact with a reservoir, so $\thermal{T}$ and $\energy{\mu}$ are fixed while $N$ fluctuates. The continuum Maxwell–Boltzmann description requires a dilute gas, $\bar N\signal{\lambda}_{\mathrm{th}}^3/\mechanical{V}\ll1$, and enough thermally accessible spatial states to replace their sum by a phase-space integral. These model conditions are separate from the large-mean-count condition needed for the saddle approximation. See [Tong, Statistical Physics §§2.1–2.2](https://www.damtp.cam.ac.uk/user/tong/statphys/statmechhtml/S2.html).
+
 ## Canonical partition function
 
 $$
@@ -21,6 +23,8 @@ Z_N
 \right)^{3N/2}
 \equiv\frac{\xi^N}{N!}.
 $$
+
+The position integral contributes one volume factor per particle. Each of the three momentum components gives a Gaussian factor, and division by $\signal{h}^{3N}$ makes the phase-space count dimensionless. The factor $1/N!$ counts permutations of identical particles once in this dilute classical description. It is essential for the correct particle-number weights.
 
 The one-particle factor is
 
@@ -44,6 +48,8 @@ $$
 \ln\mathcal Z=z\xi.
 $$
 
+This sum is exact within the stated classical ideal-gas model. In particular, it remains useful when the mean count is too small for a Gaussian approximation.
+
 ## Particle-number saddle
 
 The saddle method illustrates the approximation without using the exact sum. The exponent is
@@ -62,6 +68,16 @@ $$
 $$
 
 The leading saddle equals the exact mean particle count.
+
+Here $\bar N$ in the saddle equation is the stationary value obtained after the leading Stirling approximation. Its equality with the exact mean follows from the exact sum; it does not make every saddle estimate exact. For instance, retaining the next Stirling term in the exponent gives
+
+$$
+\thermal{\beta}\energy{\mu}N+\ln Z_N
+\simeq N\left[\ln\left(\frac{z\xi}{N}\right)+1\right]
+-\frac12\ln(2\pi N).
+$$
+
+Near the leading saddle $N=z\xi$, the leading curvature is $-1/\bar N$. The Gaussian sum therefore supplies a factor $\sqrt{2\pi\bar N}$, which cancels the Stirling prefactor $1/\sqrt{2\pi\bar N}$ at leading order. This recovers $\mathcal Z\simeq e^{\bar N}$. Keeping the Gaussian factor while dropping the Stirling prefactor would introduce a false factor of order $\sqrt{\bar N}$.
 
 ## Thermodynamic properties
 
@@ -110,6 +126,17 @@ $$
 $$
 
 Thus the relative width is $1/\sqrt{\bar N}$ and vanishes in the thermodynamic limit.
+
+Normalize each term of the exact sum to obtain a stronger check:
+
+$$
+\Pr(N)=e^{-\bar N}\frac{\bar N^N}{N!},
+\qquad N=0,1,2,\ldots.
+$$
+
+This is a Poisson distribution, with exact mean and variance $\bar N$. It explains both the Gaussian width for $\bar N\gg1$ and its failure near the boundary at $N=0$ for small mean count. For example, at $\bar N=1$, $\Pr(0)=e^{-1}$ is substantial and a continuous symmetric Gaussian does not describe the full distribution well.
+
+The units provide independent checks: $\xi$ and $z$ are dimensionless, and both $\mechanical{P}\mechanical{V}$ and $\bar N\thermal{k}_{\mathrm B}\thermal{T}$ have units of energy. When the diluteness condition fails, quantum exchange changes the particle-number weights; interactions also change the equation of state. Increasing volume at fixed density makes the saddle sharper but does not, by itself, restore the classical dilute limit.
 
 ## Physical quantities
 

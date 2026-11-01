@@ -11,6 +11,14 @@ A differential equation asks a different question: Which **function** $y(x)$ sat
 
 The search for functions instead of numbers lets us describe change with time. Newton's law $\mechanical{F}=\mechanical{m}\mechanical{a}$ is a differential equation. Given the force, we seek the trajectory. The Schrödinger equation is also a differential equation. Given the Hamiltonian operator, we seek the wavefunction.
 
+## Which unknown does the equation determine?
+
+Begin by identifying the independent variable. A classical trajectory evolves in time. A stationary wavefunction in a one-dimensional potential solves a second-order equation in position. A finite-dimensional quantum state instead evolves through coupled first-order equations in time. The full position-space time-dependent Schrödinger equation contains both position and time derivatives and is a partial differential equation; the ODE methods here apply after the appropriate reduction.
+
+Study first-order equations to see how one initial value selects a local solution. Next use constant-coefficient second-order equations to distinguish oscillation from exponential growth or decay. Matrix systems then show how several amplitudes evolve together. Finally, add spatial boundary conditions to see why a nonzero stationary solution exists only at selected energies in the box example.
+
+For every worked solution, check three things: substitution into the equation, satisfaction of the given conditions, and the interval on which it exists. A formula that passes only the first check need not solve the stated physical problem.
+
 ## Chapter sections
 
 - [[01 First-Order Equations|First-order equations]]

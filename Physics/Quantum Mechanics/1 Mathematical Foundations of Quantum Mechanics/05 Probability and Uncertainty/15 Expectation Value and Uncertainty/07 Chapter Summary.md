@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Chapter Summary"
 ---
 
@@ -55,6 +55,10 @@ title: "Chapter Summary"
   The characteristic time is defined for a nonzero rate of change of an observable with no explicit time dependence.
 
 - **The complete framework:** the [[15 Expectation Value and Uncertainty/06 Common Errors#Quantum mechanics — The formalism in eight points|eight-point overview]] collects the basic nonrelativistic quantum formalism. Specific systems require specific Hamiltonians.
+
+A useful final reconstruction is to explain how a conserved energy distribution can coexist with changing mean position. For a time-independent Hamiltonian, energy coefficients acquire phases but keep their magnitudes. Energy probabilities therefore stay fixed. A position operator can connect different energy components, so their changing relative phases can affect its expectation. This is a change in interference, not a change in the energy probabilities.
+
+As a boundary check, replace the superposition by one energy eigenstate. Every expectation of a time-independent observable is then constant when defined, even if that observable does not commute with the Hamiltonian.
 
 ## Physical quantities
 

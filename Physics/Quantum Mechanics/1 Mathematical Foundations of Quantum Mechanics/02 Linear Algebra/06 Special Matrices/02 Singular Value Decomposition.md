@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Singular Value Decomposition"
 ---
 
@@ -22,6 +22,10 @@ These are singular vectors, not eigenvectors of $A$. The source states that eige
 
 > [!note]
 > A square complex matrix can have eigenvectors without being diagonalizable. Diagonalizability requires a complete eigenbasis. For a rectangular matrix, the usual eigenvalue equation does not act within one vector space. In the rectangular SVD, retain the required singular values and zero entries with the appropriate matrix sizes.
+
+A construction explains why the decomposition exists. Diagonalize the positive matrix $A^\dagger A$ to obtain orthonormal right vectors $v_i$. For each positive singular value, set $u_i=Av_i/\sigma_i$. Then $\langle u_i,u_j\rangle=\langle v_i,A^\dagger Av_j\rangle/(\sigma_i\sigma_j)=\delta_{ij}$. Extend these vectors to orthonormal bases; zero singular values record the directions that $A$ annihilates.
+
+For example, $A=\operatorname{diag}(-2,1)$ has singular values $2,1$, not $-2,1$. One SVD puts the minus sign in $U=\operatorname{diag}(-1,1)$, with $V=I$. Singular values measure lengths; eigenvalues can also encode signs and phases. For normalized bipartite coefficients, the squared singular values sum to one, which checks state normalization.
 
 ## Why it is useful in physics
 

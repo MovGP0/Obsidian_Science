@@ -25,6 +25,10 @@ The following reference relations give the conversion between natural units and 
 > [!note]
 > The source labels the middle column “SI value”, but it also uses high-energy units such as $\unit{MeV}$, $\unit{fm}$, and $\unit{mb}$. The heading here states that the units are explicit. The factors containing $\energy{\hbar}\mechanical{c}$ relate dimensions before the natural-unit convention is applied.
 
+Choose the conversion factor from the dimension of the calculated result. An inverse-energy length uses one power of the tabulated product of constants; a cross section uses its square. Thus a cross section calculated as $2\,\unit{GeV^{-2}}$ is $0.778\,758\,\unit{mb}$ with the quoted factors. Do not multiply an area by the length factor only once.
+
+The length entries give a reciprocal check: $0.197\,327\times5.068\simeq1$ at the displayed precision. Also, $1\,\unit{mb}=0.1\,\unit{fm^2}$, so squaring the inverse-energy length conversion reproduces the area conversion. The charge formula assumes rationalized electromagnetic units; the fine-structure constant is dimensionless, but a charge in coulombs is not obtained by assigning the same number to the natural-unit charge. These checks retain the source values rather than update their precision.
+
 ## Physical quantities
 
 | Symbol | Unit | Quantity | Description |
@@ -33,3 +37,4 @@ The following reference relations give the conversion between natural units and 
 | $\mechanical{c}$ | $\unit{m\,s^{-1}}$ | Speed of light | The conversion between mass-energy and length-time units. |
 | $\mechanical{m}_p,\mechanical{m}_e$ | $\unit{MeV}$ | Particle masses | The proton and electron masses after setting the speed of light to one. |
 | $\electric{\alpha},\electric{e}$ | $1$ | Electromagnetic couplings | The fine-structure constant and elementary charge in natural units. |
+| — | $\unit{mb}$ | Cross section | The worked area conversion from inverse squared energy units. |

@@ -5,6 +5,10 @@ title: "Common Errors"
 > [!TLDR]
 > Reverse the order when taking the adjoint of a product, and distinguish cyclic trace rearrangement from arbitrary permutation. Complex symmetry differs from Hermiticity, and matrix-entry formulas depend on the basis convention.
 
+A quick test can reveal an invalid simplification before a long calculation. With the Pauli matrices, $\operatorname{Tr}(\sigma_x\sigma_y\sigma_z)=2\mathrm{i}$, while $\operatorname{Tr}(\sigma_y\sigma_x\sigma_z)=-2\mathrm{i}$. Interchanging just two factors changes the trace, although a cyclic move would preserve it. Both products reduce to a scalar multiple of $I$, so the sign can be checked without calculating every entry.
+
+These tests concern finite matrices. The later operator examples introduce additional domain requirements; formal finite-matrix identities cannot automatically be used for arbitrary unbounded products.
+
 ## Error 1 — Assume (AB)† = A†B†
 
 This is false. The order is reversed:

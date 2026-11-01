@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Definition and Calculation"
 ---
 
@@ -30,6 +30,10 @@ This is the **characteristic equation**. The determinant is a polynomial of degr
 
 > [!note]
 > This chapter uses $\det(A-\lambda I)$, as in the source. Chapter 6 uses $\det(\lambda I-A)$. These polynomials differ by the factor $(-1)^n$ and have the same roots.
+
+The determinant step eliminates the unknown vector to find candidate scalars. Solving the kernel then restores the missing directions. A repeated root does not by itself give several independent eigenvectors: their number is the dimension of $\ker(A-\lambda I)$, which must be checked separately. Only after this step can an eigenbasis be claimed.
+
+Zero is allowed as an eigenvalue, but zero is excluded as an eigenvector. For $A=\operatorname{diag}(0,2)$, $(1,0)^T$ is a valid zero-eigenvalue vector. Its normalized length is one. This check prevents discarding a physical zero-level state merely because its measurement value vanishes.
 
 ## Example — Eigenvalues and eigenvectors of σ_y
 

@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Important Transform Pairs"
 ---
 
@@ -94,6 +94,10 @@ elements: [
 ```
 
 **Fig. 13.1** Position–frequency duality of the Fourier transform. A narrow Gaussian in position has a broad Gaussian transform in wavenumber, with reciprocal amplitude scales. The illustrated mathematical pair uses $\sigma_x=0.7$, $\sigma_k=1/0.7$ in reciprocal coordinate units and retains the transform’s amplitude prefactor. After state normalization, its probability standard deviations obey $\mechanical{\Delta x}\mechanical{\Delta p}=\mechanical{\hbar}/2$. The right coordinate is wavenumber; momentum follows from $\mechanical{p}=\mechanical{\hbar}\signal{k}$.
+
+The Gaussian prefactor can be checked without contour integration. At $k=0$, the transform is its total area divided by $\sqrt{2\pi}$, namely $1/\sqrt a$. Parseval gives a second check: both squared norms are $\sqrt{\pi/a}$. Omitting the prefactor would pass the width test but fail this norm test.
+
+The reciprocal-width statement concerns this unchirped Gaussian pair. Multiplying a Gaussian by a quadratic phase leaves its position density unchanged but can broaden its Fourier density. Thus Gaussian shape in position alone does not establish equality in the uncertainty product; the phase matters as well.
 
 ## Example — Transform of a rectangular window
 

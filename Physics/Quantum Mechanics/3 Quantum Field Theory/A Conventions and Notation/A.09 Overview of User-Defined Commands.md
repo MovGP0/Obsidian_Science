@@ -25,6 +25,10 @@ The following list records the user-defined LaTeX macros used by the source.
 > [!note]
 > These are the source document's command names. The examples show their intended notation; the literal commands are not required for the vault's MathJax definitions.
 
+Use this table to read the source notation, rather than paste its command names into a vault equation. The actual vault definitions are in `preamble.sty`; the semantic quantity macros there select a color by physical meaning. A shorthand for a Lagrangian or a bold vector does not by itself specify a physical dimension, a vector's transformation rule, or an operator ordering.
+
+For example, `\dslash{p}` denotes contraction with a lowered momentum index, as defined in [[A.04.01 Clifford Algebra]], not a quotient by the momentum. The two trace commands differ typographically here, not by a new trace operation. Expanding `\comm{A}{B}` gives $AB-BA$, whereas expanding `\acomm{A}{B}` gives $AB+BA$; the order of the factors must remain fixed for matrices. This small check distinguishes notation replacement from an algebraic simplification.
+
 ## Physical quantities
 
 | Symbol | Unit | Quantity | Description |

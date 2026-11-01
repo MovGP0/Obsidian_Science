@@ -52,3 +52,7 @@ The last relation reduces the trace of any even number of gamma matrices recursi
 
 > [!note]
 > The chirality-matrix identities use the four-dimensional definition of $\gamma^5$ and the stated Levi-Civita convention. Their use in dimensional regularization requires a specified $\gamma^5$ prescription; they cannot all be continued unchanged to general $d$.
+
+These formulas convert spin sums in squared amplitudes into Lorentz scalar contractions; combine them with [[A.05.05 Completeness Relations]]. Matrix order matters. Cyclic permutations leave a trace unchanged, but arbitrary swaps require the Clifford algebra. The alternating signs in (A.37) record these swaps.
+
+A quick check sets all four indices in (A.37) to zero: its right side is four, as is the trace of the fourth power of the time gamma matrix. For the chirality sign, choose $(\mu,\nu,\rho,\sigma)=(0,1,2,3)$ in (A.40). Definition (A.16) makes the product inside the trace equal to $-i\mathbf1_4$, giving $-4i$. This checks the epsilon convention independently of a remembered trace sign. In (A.41), each pairing of the first index with a later index alternates sign; the terminal trace is four, including the empty product.

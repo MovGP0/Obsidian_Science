@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Gaussian entropy and minimum quantum uncertainty"
 ---
 
@@ -99,6 +99,8 @@ $$
 $$
 
 Thus the fixed variance gives $\lambda_2=1/(2\sigma^2)$. Normalization gives $e^{-1-\lambda_0}=1/\sqrt{2\pi\sigma^2}$. The stationary density is exactly $\mathcal N(\mu,\sigma^2)$.
+
+The constraint on variance is linear in the density only because the mean is fixed. With that mean held at $\mu$, it is the constraint $\int(x-\mu)^2\rho\,dx=\sigma^2$. This is why the concavity argument below applies to a convex feasible set. If the variance constraint were removed, wider Gaussians would give arbitrarily large differential entropy, so there would be no maximizing density on the full line.
 
 ### Prove that the stationary point is the global maximum
 

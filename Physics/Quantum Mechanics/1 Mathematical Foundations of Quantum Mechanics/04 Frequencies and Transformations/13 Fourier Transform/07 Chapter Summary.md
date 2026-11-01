@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Chapter Summary"
 ---
 
@@ -12,6 +12,14 @@ title: "Chapter Summary"
 - **Gaussian widths:** $\signal{\sigma_k}=1/\mechanical{\sigma_x}$, so $\mechanical{\sigma_x}\signal{\sigma_k}=1$. For the normalized Gaussian probability densities, $\mechanical{\Delta x}\signal{\Delta k}=1/2$.
 - **Dirac delta:** $\delta(x)=\tfrac1{2\pi}\int e^{ikx}\,dk$ is a distributional identity. Position eigenstates are generalized states rather than ordinary normalizable vectors.
 - **Quantum representations:** $\signal{\psi}(\mechanical{x})$ and $\signal{\widetilde\psi}(\mechanical{p})$ represent the same state. The operator $\hat p=-i\mechanical{\hbar}\partial_{\mechanical{x}}$ becomes multiplication by $\mechanical{p}$ in momentum space.
+
+## Choose the setting before the formula
+
+Use a Fourier series for a periodic interval and a whole-line transform for a continuous spectral coordinate. For the latter, an $L^1$ function gives an ordinary absolutely convergent forward integral, while a general $L^2$ function uses the norm extension. Constants, deltas, and plane waves require distributional formulas. These settings can share notation without sharing all pointwise operations.
+
+As a reconstruction test, explain how a normalized discrete mode weight becomes a continuous probability density. The mode spacing enters the squared amplitude, and replacing wavenumber by momentum introduces a second change of measure. Keeping both steps explicit prevents a missing $2\pi$ or $\mechanical{\hbar}$ factor.
+
+Finally, say which width is being used before applying uncertainty. First-zero widths describe spectral lobes; finite standard deviations describe the uncertainty product. The sharp rectangular profile separates these concepts because it has a finite first-zero scale but an infinite spectral second moment.
 
 ## Physical quantities
 

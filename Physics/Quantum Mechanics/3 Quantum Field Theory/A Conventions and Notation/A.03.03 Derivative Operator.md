@@ -21,6 +21,10 @@ $$
 \tag{A.8}
 $$
 
+The lower index on the coordinate derivative follows from the chain rule: a derivative with respect to an upper-index coordinate transforms oppositely to that coordinate. This explains why the lower-index derivative has positive spatial derivative components, although the lower-index coordinate has negative spatial components.
+
+For a function of time alone, (A.8) reduces to the second time derivative. For a time-independent function it reduces to minus the spatial Laplacian. These checks prevent a common sign error in the Klein–Gordon equation. In curvilinear coordinates or curved spacetime, the displayed Cartesian form of the wave operator must be replaced by the appropriate covariant expression; changing coordinates does not preserve this component formula term by term.
+
 ## Physical quantities
 
 | Symbol | Unit | Quantity | Description |

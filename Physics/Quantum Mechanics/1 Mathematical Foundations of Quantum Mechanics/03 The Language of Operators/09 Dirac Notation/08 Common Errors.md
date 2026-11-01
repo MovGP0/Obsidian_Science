@@ -1,9 +1,15 @@
-﻿---
+---
 title: "Common Errors"
 ---
 
 > [!TLDR]
 > Keep bras, kets, scalars, and operators distinct, and conjugate matrix elements correctly. Normalize projected states after measurement; projector idempotence is a separate property.
+
+A useful way to detect these errors is to check the type of each intermediate result before calculating its value. A bra followed by a ket gives a scalar. A ket followed by a bra gives an operator. An operator followed by a ket gives a ket. These rules also determine which products can be reassociated.
+
+Conjugation needs a genuinely complex test: a real overlap can hide its omission. For example, take the first ket to have coordinates $(1,0)^T$ and the second to have $(i,1)^T/\sqrt2$. Their overlap is $i/\sqrt2$, while the reverse overlap is $-i/\sqrt2$. The two projection probabilities still agree. This gives a direct counterexample to equality of the amplitudes without conjugation.
+
+In an infinite-dimensional problem, add a domain check to this type check. A formally valid arrangement of brackets does not establish that every displayed operator product acts on the chosen state.
 
 ## Error 1 — Equate a bra with a ket
 

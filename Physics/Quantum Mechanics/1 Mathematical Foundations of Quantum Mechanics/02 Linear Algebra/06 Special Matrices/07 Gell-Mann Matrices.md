@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Gell-Mann Matrices"
 ---
 
@@ -27,6 +27,12 @@ $$
 $$
 
 encodes the Lie algebra of $SU(2)$. The spin quantum numbers follow from this algebra.
+
+## Check the normalization and representation
+
+A traceless Hermitian $3\times3$ matrix has eight real degrees of freedom: two independent real diagonal entries and three complex off-diagonal pairs. This explains why eight independent matrices are needed. In the common convention $T_a=\lambda_a/2$, the trace normalization becomes $\operatorname{Tr}(T_aT_b)=\delta_{ab}/2$ and the commutator is $[T_a,T_b]=\mathrm{i}f_{abc}T_c$. Keep the convention fixed when comparing formulas. See [Schwinn, section 4.1.1, pp. 52–54](https://www.tep.physik.uni-freiburg.de/lectures/archive/QCD-WS-14/qcd#page=53).
+
+For a direct test, $\lambda_3=\operatorname{diag}(1,-1,0)$ is Hermitian and traceless, and $\operatorname{Tr}(\lambda_3^2)=2$. It does not square to the three-dimensional identity. Thus the Pauli rule $\sigma_i^2=I$ must not be transferred to all Gell-Mann matrices. These matrices give the fundamental three-dimensional representation; choosing their algebra does not by itself derive a quantum dynamics.
 
 > [!note]
 > The final expression uses summation over the repeated index $k$. All $\lambda_a$, $\sigma_i$, and structure constants here are mathematical matrix or algebra symbols; they are not wavelengths or physical spin-component values.

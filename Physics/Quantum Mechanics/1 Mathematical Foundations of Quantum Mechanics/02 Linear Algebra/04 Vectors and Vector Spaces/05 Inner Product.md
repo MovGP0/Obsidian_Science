@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Inner Product"
 ---
 
@@ -27,6 +27,10 @@ On $L^2(\mathbb{R})$,
 $$
 \langle f,g\rangle=\int_{-\infty}^{+\infty}f^*(x)g(x)\,\mathrm{d}x.
 $$
+
+The conjugation is required for a positive length. For $v=(\mathrm{i},0)^T$, the standard product gives $\langle v,v\rangle=(-\mathrm{i})\mathrm{i}=1$; omitting conjugation would give $-1$. Hermitian symmetry also implies $\langle \alpha u,v\rangle=\alpha^*\langle u,v\rangle$. Thus the two arguments have different scalar rules.
+
+For normalized quantum state vectors, this inner product gives an overlap amplitude. Normalization and probability interpretation are additional physical requirements; the inner-product axioms alone are mathematical statements. On $L^2$, functions are identified when they agree almost everywhere, so positive definiteness refers to those equivalence classes.
 
 ## Example — Inner product in ℂ²
 

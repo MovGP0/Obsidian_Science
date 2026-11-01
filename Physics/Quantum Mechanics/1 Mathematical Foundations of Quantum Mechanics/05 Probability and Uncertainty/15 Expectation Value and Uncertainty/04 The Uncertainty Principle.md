@@ -1,4 +1,4 @@
-﻿---
+---
 title: "The Uncertainty Principle"
 ---
 
@@ -16,6 +16,20 @@ The uncertainty principle connects operator algebra to the statistical spread of
 > $$
 
 The state must have finite second moments, and the operator products in the formula must be defined on that state. The spreads refer to distributions of results for repeated measurements on identically prepared systems.
+
+## Why the commutator bounds the spreads
+
+For the following proof, assume the stated operator products exist. Form the centered vectors $|u\rangle=(\hat A-\langle\hat A\rangle\hat I)|\psi\rangle$ and $|v\rangle=(\hat B-\langle\hat B\rangle\hat I)|\psi\rangle$. Their norms are $\Delta A$ and $\Delta B$. Cauchy–Schwarz gives $\Delta A\,\Delta B\ge|\langle u|v\rangle|$, which is at least the absolute value of its imaginary part. Self-adjointness gives
+
+$$
+2i\operatorname{Im}\langle u|v\rangle
+=\langle u|v\rangle-\langle v|u\rangle
+=\langle[\hat A,\hat B]\rangle.
+$$
+
+Taking absolute values proves the bound. Centering removes the means, while the imaginary part selects the commutator. This derivation is also given in [MIT Quantum Theory I, Lecture 4](https://ocw.mit.edu/courses/8-321-quantum-theory-i-fall-2017/ac00139191d2945975969fd58e335c09_MIT8_321F17_lec4.pdf).
+
+A nonzero operator commutator need not have a nonzero expectation in every state. A zero right-hand side in one state therefore gives only a trivial lower bound; it does not prove that either spread vanishes or that the observables commute.
 
 ## Example — Energy–time uncertainty
 

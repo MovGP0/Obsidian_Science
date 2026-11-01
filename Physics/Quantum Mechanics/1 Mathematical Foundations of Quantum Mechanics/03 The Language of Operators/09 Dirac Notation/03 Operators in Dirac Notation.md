@@ -1,9 +1,15 @@
-﻿---
+---
 title: "Operators in Dirac Notation"
 ---
 
 > [!TLDR]
 > Operators map kets to kets, while matrix elements and expectation values are complex numbers. The adjoint reverses the order of the states and conjugates the matrix element.
+
+Why use an operator instead of a scalar? A scalar changes all components by the same factor. An operator can mix components or change their relative signs, as $\sigma_z$ does below. A matrix element selects one output component of that action; an expectation value combines the action with the prepared state.
+
+For matrices and bounded operators defined on the full Hilbert space, the adjoint relation below holds for all vectors. For an unbounded operator, specify a dense domain: $\hat A|\psi\rangle$ requires $|\psi\rangle\in D(\hat A)$. Its adjoint has its own domain. Equality with the adjoint as an operator requires equal domains as well as equal actions. Agreement of matrix elements on a test domain alone establishes symmetry there, not self-adjointness.
+
+In the spin example, $\sigma_z$ is dimensionless and its mean lies between $-1$ and $1$. A zero mean at equal weights does not mean that zero is a possible outcome: the two outcomes remain $+1$ and $-1$.
 
 An operator $\hat A$ acts on a ket from the left. The result $\hat A|\psi\rangle$ is another ket, provided the state is in the operator’s domain.
 

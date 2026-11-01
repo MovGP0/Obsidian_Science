@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Linear Independence and Spanning Sets"
 ---
 
@@ -31,6 +31,10 @@ title: "Linear Independence and Spanning Sets"
 > $$
 >
 > They are **linearly dependent** if at least one can be written as a linear combination of the others.
+
+Independence and spanning solve different problems. Spanning asks whether the chosen vectors can describe every vector of interest. Independence asks whether that description is redundant. For example, $(1,0)^T,(0,1)^T,(1,1)^T$ span $\mathbb{C}^2$, but the third vector is the sum of the first two. A state then has more than one coefficient list.
+
+The definitions here use finite linear combinations. In an infinite-dimensional Hilbert space, a norm-convergent infinite expansion is an additional concept, not an algebraic linear combination.
 
 ## Example — Test linear independence
 

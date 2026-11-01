@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Hermitian and unitary matrix tests"
 ---
 
@@ -119,6 +119,12 @@ $$
 
 > [!note] Source correction — Unitary condition
 > Part (d) of the supplied key prints $UU=I$. The unitary condition is $U^\dagger U=I$. For this phase matrix, $U^2=I$ holds only when $\signal{\theta}\in\pi\mathbb Z$.
+
+## Interpret the classification
+
+Hermiticity and unitarity answer different questions: does the matrix equal its adjoint, and does it preserve inner products? Part (a) separates them by changing lengths; part (c) separates them in the other direction. Part (b) satisfies both because a Hermitian matrix with square $I$ has its adjoint as its inverse.
+
+Check part (d) at phase zero and at phase $\pi/2$. The first gives $I$, which has both properties. The second gives diagonal entries $\mathrm{i},-\mathrm{i}$, which have unit magnitude but are not real. This confirms why real phase values alone do not imply Hermiticity. The source-discrepancy results remain separate as stated above.
 
 ## Answer
 

@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Linear independence does not imply orthogonality"
 ---
 
@@ -38,6 +38,12 @@ $$
 $$
 
 Orthogonality requires zero, so these vectors are not orthogonal. Linear independence excludes scalar dependence; it does not require a right angle in the inner-product sense.
+
+## What the distinction permits
+
+The two independent vectors form a basis of $\mathbb{C}^2$, so every vector has a unique expansion in them. However, the coefficients are not obtained by taking the two simple overlaps. For example, $v_2$ has basis coefficients $(0,1)$ but $\langle v_1,v_2\rangle=1$. The overlap is not its first coordinate. This is why quantum calculations usually use orthonormal state bases.
+
+Try subtracting $v_1$ from $v_2$. The residual is $(0,\mathrm{i})^T$, which is orthogonal to $v_1$ and has unit norm. The subtraction changes the basis while preserving its span.
 
 ## Answer
 

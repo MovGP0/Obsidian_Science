@@ -67,3 +67,11 @@ In this compact-group notation, it is also written $USp(2n)$ or $Sp(n)$.
 
 > [!note]
 > The classical series require the usual rank restrictions and have low-rank isomorphisms. A standard nonredundant listing uses $A_n$ for $n\ge1$, $B_n$ for $n\ge2$, $C_n$ for $n\ge3$, and $D_n$ for $n\ge4$, with $B_2\cong C_2$. In particular, $\mathfrak{so}(4)$ is not simple. The symbol $Sp(2n)$ in this table denotes the compact form.
+
+## Count constraints near the identity
+
+For $n\ge1$, invertibility is an open condition, so it removes no local parameters from all real or complex matrices. The determinant-one condition removes one real parameter over $\mathbb R$ and one complex parameter over $\mathbb C$. These counts concern local dimension, not the number of connected components.
+
+For a real orthogonal matrix, set $R=\mathbf1+tX+O(t^2)$. The constraint $R^TR=\mathbf1$ gives $X^T+X=0$, leaving $n(n-1)/2$ independent entries. The determinant restriction distinguishes components of $O(n)$ and does not further reduce this dimension. In indefinite signature the equation becomes $X^Tg+gX=0$ and gives the same count for $n=p+q$.
+
+For a unitary matrix the corresponding equation is $X^\dagger=-X$. There are $n$ imaginary diagonal entries and $n(n-1)$ real off-diagonal parameters. Setting the trace to zero removes one, giving $n^2-1$ for $SU(n)$. Check $n=1$: $U(1)$ is one dimensional and $SU(1)$ is trivial. Equal dimension does not imply equal group: compact rotations and noncompact Lorentz transformations have different geometry.

@@ -13,6 +13,12 @@ h\bar f f:\qquad
 \tag{C.18}
 $$
 
+This scalar vertex comes from expanding the same Yukawa term that generates the fermion mass about the Higgs vacuum. It multiplies the identity in spinor space, rather than a vector gamma matrix. In the minimal single-doublet model it is diagonal in the fermion mass basis. For quarks a color identity is implicit, and the Higgs is electrically neutral.
+
+The ratio $\mechanical{m}_f/\signal{v}$ is dimensionless and vanishes when that fermion's Yukawa coupling, and hence its mass at fixed vacuum scale, vanishes. This differs from the photon rule, whose coupling need not vanish for a massless charged fermion. No extra factor of two is needed for the distinct fermion and antifermion legs.
+
+A vertex permits an amplitude but does not by itself permit an on-shell decay. The two-body decay to a fermion–antifermion pair also needs a Higgs mass above twice the fermion mass. Below that threshold the same rule can occur with virtual lines. Massive-neutrino applications need a specified mass model; (C.18) alone does not supply a general Majorana-neutrino coupling rule.
+
 ## Physical quantities
 
 | Symbol | Unit | Quantity | Description |

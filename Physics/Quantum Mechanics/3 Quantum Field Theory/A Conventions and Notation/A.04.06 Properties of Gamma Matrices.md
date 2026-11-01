@@ -74,3 +74,7 @@ $$
 +(4-d)\not{a}\not{b}\not{c}.
 \tag{A.34}
 $$
+
+Use (A.24) for the standard Dirac–Pauli or Weyl matrices and spinor bases with the same Hermitian-conjugation convention. An arbitrary nonunitary similarity transformation need not preserve these component adjoint relations. In (A.27), lowering the spatial gamma index supplies a minus sign, which cancels its negative square; all four terms therefore contribute plus the identity.
+
+To reconstruct (A.32), anticommute the leftmost contracted gamma matrix through the slash. The metric term contributes twice the slash, while the remaining contracted pair contributes minus $d$ times the slash. This also explains why replacing $d$ by four early can lose regulator terms. Equations (A.31)–(A.34) use formal continued Clifford algebra, not literal noninteger-size matrices; they do not prescribe traces containing a chirality matrix. Setting $d=4$ recovers (A.27)–(A.30).

@@ -8,6 +8,8 @@ source_page: 489
 > [!TLDR]
 > An ideal polymer behaves as a random walk, with square-root size growth and an entropic restoring force.
 
+The question is how many chain configurations are compatible with an imposed end-to-end vector. Model a freely jointed ideal chain: links have no preferred direction, successive links are independent, and self-intersections are allowed. These are assumptions about conformations. They do not imply that a real chain endpoint makes independent jumps in time.
+
 ## Step-length conventions
 
 In $d$ dimensions, take $N$ independent isotropic steps of fixed length $\mechanical{\ell}$, with uniformly distributed directions on the unit sphere $S^{d-1}$. Then
@@ -18,6 +20,8 @@ $$
 $$
 
 independent of $d$. The same holds for a walk on a cubic lattice with $2d$ nearest neighbours and one length-$\mechanical{\ell}$ jump per time step.
+
+To see why the total variance has no factor of $d$ in the first convention, expand the squared length of the sum of the step vectors. Each diagonal term contributes $\mechanical{\ell}^2$. For distinct steps, independence and zero mean make their average scalar product zero. Isotropy divides the resulting total equally among the $d$ coordinate variances. For one step, the total squared displacement is exactly $\mechanical{\ell}^2$, which checks the convention without a large-$N$ approximation.
 
 If every coordinate instead changes independently by $\pm\mechanical{\ell}$ per step, the full step length is $\sqrt d\,\mechanical{\ell}$. Then
 
@@ -47,6 +51,8 @@ P(\mechanical{\mathbf r})
 \propto\exp\left(-\frac{3\mechanical{r}^2}{2N\mechanical{\ell}^2}\right).
 $$
 
+Here $P(\mechanical{\mathbf r})$ is a density per unit endpoint *volume*. It is not the density of the scalar length alone. To obtain a radial density in three dimensions, multiply it by the shell area $4\pi\mechanical{r}^2$. The radial density therefore vanishes at zero length, even though the vector density is largest at the zero vector. The fixed-endpoint entropy and force below use the vector density. Using the radial shell count would describe a different constraint.
+
 Thus the number of configurations with specified endpoints has the same exponential dependence, and
 
 $$
@@ -71,6 +77,10 @@ $$
 > [!note] Source sign convention
 > The source writes $F=-T\,\partial S/\partial r$ and obtains a positive value. That is the magnitude of the external force needed to hold the extension. The polymer's restoring force has the negative radial sign shown above.
 
+The force is entropic because the ideal model takes the internal energy to be independent of endpoint extension. At fixed temperature, reducing the number of compatible conformations raises the constrained free energy. The negative sign is the force exerted by the chain; a holding force has the opposite sign. The coefficient has force-per-length units and grows with temperature at fixed link parameters. [The Yale polymer lecture notes, Section 2](https://www.eng.yale.edu/polymers/docs/classes/polyphys/lecture_notes/3/handout3_wse2.html) derive the same Gaussian spring law and restrict it to extensions small compared with contour length.
+
+In particular, require $\mechanical{r}/(N\mechanical{\ell})\ll1$. A finite chain cannot extend beyond its contour length, whereas a Gaussian assigns nonzero weight beyond it. Excluded-volume effects and directional correlations also change the ideal-chain model. Thus the linear law must not be extrapolated to full extension.
+
 > [!note] Remark C.2
 > Random walks are related to Euclidean quantum mechanics by the Wick rotation $\mechanical{t}\to-i\mechanical{\tau}$. The real-time propagator
 >
@@ -89,6 +99,8 @@ $$
 > $$
 >
 > The Feynman path integral becomes a sum over Euclidean-time random paths.
+
+The Wick-rotation remark is a relation between evolution kernels, not an identification of quantum amplitudes with measured classical probabilities. A free-particle imaginary-time kernel has the Gaussian diffusion form. A scalar potential introduces path-dependent weights, and the kernel is not generally normalized as a free random-walk transition density. This distinction is developed in [Tong's kinetic-theory notes, Section 3.2.4](https://www.damtp.cam.ac.uk/user/tong/kintheory/kintheory.pdf).
 
 ## Physical quantities
 

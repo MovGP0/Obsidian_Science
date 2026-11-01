@@ -55,6 +55,18 @@ The **first** argument is conjugated. If you write $\int\signal{\psi}\signal{\ph
 > [!note]
 > A correct inner product between two different states can also be complex. Conjugation ensures that the self-inner-product $\langle\signal{\psi},\signal{\psi}\rangle$ is real and nonnegative. The source's final statement needs this distinction.
 
+## Diagnose an error with a small test
+
+Use $z=\mathrm{i}$ to test the difference between a square and a squared magnitude. Then $z^2=-1$, whereas $z^*z=1$. If a proposed norm assigns a negative value to this input, it cannot be a norm. Likewise, $z_1=1$ and $z_2=-1$ give $|z_1+z_2|=0$ but $|z_1|+|z_2|=2$: opposite directions do not satisfy the equality case of the triangle inequality.
+
+For a general sum, the missing phase information is the cross term:
+
+$$
+|z_1+z_2|^2=|z_1|^2+|z_2|^2+2\operatorname{Re}(z_1^*z_2).
+$$
+
+Check it with $z_1=1$ and $z_2=\mathrm{i}$: the cross term is zero and the squared magnitude is two. In a quantum application, first determine whether two amplitudes contribute to the same outcome. If they do, this is the algebra needed before taking a probability. Adding their separate squared magnitudes would discard interference.
+
 ## Physical quantities
 
 | Symbol | Unit | Quantity | Description |

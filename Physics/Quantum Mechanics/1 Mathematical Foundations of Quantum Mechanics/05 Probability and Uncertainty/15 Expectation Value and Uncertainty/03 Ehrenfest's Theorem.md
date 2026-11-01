@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Ehrenfest’s Theorem"
 ---
 
@@ -77,6 +77,10 @@ $$
 $$
 
 For potentials of at most quadratic degree, the force is linear and the mean-motion equations close exactly in Newtonian form. More general potentials can admit a localized-packet approximation. Ideal hard walls require separate care with operator domains and boundary forces.
+
+The classical-looking equations are statements about averages, not trajectories of individual particles. In a nonlinear force field, averaging the force need not equal evaluating it at the average position. A localized packet can justify that replacement only while the force varies little over its width. A quadratic potential is special because its force is linear, so averaging and evaluating at the mean agree exactly. For the quadratic-Hamiltonian distinction, see [Bonet-Luz and Tronci’s analysis of Ehrenfest expectation values](https://arxiv.org/html/1507.02607v3#S1).
+
+In the box example, energy probabilities remain constant while position interference changes with time. Before calculating, predict two checks: the mean must stay inside the box, and eliminating either energy component must remove the oscillating cross term.
 
 ## Example — Oscillating mean position in a box
 

@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Normalization and probabilities of a parabolic box state"
 ---
 
@@ -99,6 +99,12 @@ P(\energy{E}_1)=\frac{960}{\pi^6}\approx0.998555,
 \qquad
 P(\energy{E}_3)=\frac{960}{3^6\pi^6}\approx0.00136976.
 $$
+
+## Scale and symmetry checks
+
+The factor $\signal{A}\propto\mechanical{L}^{-5/2}$ combines with the quadratic profile to give a wavefunction of unit $\unit{m^{-1/2}}$. After the change to $y$, all powers of the box length cancel from $c_n$. Changing the box length while keeping this scaled shape therefore changes the energy outcomes, but not their probabilities.
+
+Reflection about the midpoint gives $\signal{\phi}_n(\mechanical{L}-\mechanical{x})=(-1)^{n+1}\signal{\phi}_n(\mechanical{x})$. The initial state is unchanged by this reflection, so only the reflection-even modes, with odd labels, can occur. This is midpoint parity, rather than oddness about the left wall. As a further check, $P(\energy{E}_3)/P(\energy{E}_1)=3^{-6}$, independently of normalization.
 
 ## Answer
 

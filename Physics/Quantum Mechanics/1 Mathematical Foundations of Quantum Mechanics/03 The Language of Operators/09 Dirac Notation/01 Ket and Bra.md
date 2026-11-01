@@ -5,6 +5,12 @@ title: "Ket and Bra"
 > [!TLDR]
 > A ket is a Hilbert-space vector, and its bra is the corresponding continuous linear functional. The map from a ket to its bra conjugates scalar coefficients.
 
+The distinction between a ket and a bra is needed because a vector and a rule that evaluates vectors have different inputs and outputs. Here the inner product is linear in its second argument. This convention makes a bra linear as a functional, although the map from the ket to that bra is antilinear.
+
+For example, the ket with coordinates $(1,i)^T/\sqrt2$ has bra $(1,-i)/\sqrt2$. Their product is one. If we omit the conjugation, the same calculation gives zero and cannot be a norm. This example explains why conjugation is part of the definition rather than a notation choice that can be dropped.
+
+The position ket $|\mechanical{x}\rangle$ used below is a generalized ket. It is not a normalized vector in $L^2(\mathbb R)$. Thus the Riesz correspondence for Hilbert-space vectors applies to $|\psi\rangle$, while point evaluation in the position formulas requires the generalized-state interpretation.
+
 > [!definition] Definition 9.1 | Ket
 > A **ket** $|\psi\rangle$ is a vector in a Hilbert space $\mathcal H$. A state ket represents the physical state of the system.
 

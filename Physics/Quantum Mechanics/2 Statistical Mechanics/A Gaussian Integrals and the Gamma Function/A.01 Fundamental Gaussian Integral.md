@@ -8,6 +8,8 @@ source_page: 461
 > [!TLDR]
 > Squaring the Gaussian integral and changing to polar coordinates gives its value as the square root of π.
 
+A Boltzmann weight for a stable quadratic energy has a Gaussian shape. Its integral fixes the normalization. Here $x$ is a real mathematical variable; no physical unit is assigned. Direct integration has no elementary antiderivative. Squaring the integral instead makes rotational symmetry available.
+
 **Definition A.1.** The fundamental Gaussian integral is
 
 $$
@@ -20,7 +22,7 @@ $$
 I_0=\sqrt\pi.
 $$
 
-**Proof.** Square the integral and change to polar coordinates in the plane $\mathbb R^2$:
+**Proof.** The integral converges: on each tail with $|x|\geq1$, $e^{-x^2}\leq e^{-|x|}$. The nonnegative, integrable product permits the iterated integral to be written as a plane integral. Square the integral and change to polar coordinates in the plane $\mathbb R^2$:
 
 $$
 I_0^2
@@ -37,7 +39,7 @@ I_0^2
 =2\pi\left(\frac12\right)=\pi.
 $$
 
-Since $I_0>0$, this proves $I_0=\sqrt\pi$.
+The factor $r$ in the measure is essential: it turns $r e^{-r^2}$ into a derivative. The angular integral counts all directions once; the coordinate ambiguity at the origin has zero area. Since $I_0>0$, this proves $I_0=\sqrt\pi$.
 
 The form used most often in physics introduces a positive parameter $a$:
 
@@ -47,9 +49,15 @@ $$
 \tag{A.1}
 $$
 
-It follows by rescaling the integration variable by $1/\sqrt a$. Completing the square gives a linear-source variant, valid for $a>0$ and $b\in\mathbb C$:
+Set $u=\sqrt a\,x$, so $dx=du/\sqrt a$. Thus a larger positive $a$ narrows the Gaussian and reduces its integral. At $a=0$ the integral diverges, and for real $a<0$ its tails grow. Positivity is a convergence condition, not a convention.
+
+Completing the square gives a linear-source variant, valid for $a>0$ and $b\in\mathbb C$:
 
 $$
 \int_{-\infty}^{+\infty}e^{-ax^2+bx}\,dx
 =\sqrt{\frac\pi a}\,e^{b^2/(4a)}.
 $$
+
+For real $b$, write $-ax^2+bx=-a(x-b/(2a))^2+b^2/(4a)$ and shift the real variable. For complex $b$, a real-variable shift alone is not a proof. Instead, differentiate the convergent integral $J(b)$ under the integral sign. Integration by parts in $x$ gives $2aJ'(b)=bJ(b)$; the boundary term vanishes because the quadratic decay dominates the linear term. With $J(0)=\sqrt{\pi/a}$ this differential equation gives the stated formula for every complex $b$.
+
+As a check, $b=0$ recovers (A.1). Replacing $a$ by $4a$ must halve the integral; this tests the width factor without repeating the polar-coordinate proof.

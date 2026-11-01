@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Free evolution and spreading of a Gaussian packet"
 ---
 
@@ -93,6 +93,12 @@ $$
 $$
 
 Equality in the usual position–momentum uncertainty bound holds at the initial time. The later state has a quadratic position-dependent phase and nonzero position–momentum covariance. It remains a pure Gaussian but has a larger product of marginal standard deviations.
+
+## Interpret the spreading scale
+
+The dimensionless parameter $\tau$ compares elapsed time with $2\mechanical{m}\mechanical{\sigma}^2/\mechanical{\hbar}$. At $|\tau|=1$, the position standard deviation has grown by $\sqrt2$. Larger mass or a wider initial packet delays substantial spreading; changing only the mean momentum changes the center motion without changing the width law.
+
+An independent check comes from free Heisenberg evolution, $\hat x(\signal{t})=\hat x(0)+\hat p(0)\signal{t}/\mechanical{m}$. The initial unchirped Gaussian has zero symmetrized position–momentum covariance, so its variance is the initial position variance plus $(\signal{t}/\mechanical{m})^2$ times the momentum variance. This reproduces the displayed width. A packet with nonzero initial covariance would also have a term linear in time and can initially contract; monotonic growth from time zero is a property of the specified initial packet.
 
 ## Answer
 

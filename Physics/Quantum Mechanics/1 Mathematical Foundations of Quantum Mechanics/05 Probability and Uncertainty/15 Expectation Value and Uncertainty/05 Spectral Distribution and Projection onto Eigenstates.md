@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Spectral Distribution and Projection onto Eigenstates"
 ---
 
@@ -38,6 +38,8 @@ $$
 \bigl(1-(-1)^n\bigr).
 $$
 
+The symmetry is reflection about the box center. The parabola is unchanged under $\mechanical{x}\mapsto\mechanical{L}-\mechanical{x}$. The box eigenfunction changes by the factor $(-1)^{n+1}$. For even $n$, their product is odd about the center, so its integral over the symmetric interval is zero. This predicts the missing levels before integration and explains why the selection follows from parity, not from a small numerical overlap.
+
 The even terms vanish by symmetry. For odd $n$, the factor $1-(-1)^n$ is $2$, so
 
 $$
@@ -67,6 +69,8 @@ $$
 $$
 
 About $99.86\%$ of the probability belongs to the ground-state energy $\energy{E_1}$.
+
+Check the full normalization rather than only the dominant coefficient. The identity $\sum_{k=0}^{\infty}(2k+1)^{-6}=\pi^6/960$ gives $\sum_n|c_n|^2=1$. This is also required by completeness of the orthonormal energy basis. A large ground-state coefficient does not permit dropping the remaining levels when calculating higher moments: powers of energy increase their relative weight.
 
 This large probability agrees with the shapes of the functions. The parabolic shape $\mechanical{x}(\mechanical{L}-\mechanical{x})$ resembles the ground-state shape $\sin(\pi\mechanical{x}/\mechanical{L})$. Both are positive inside the interval, vanish at the walls, and have their maximum at the center.
 

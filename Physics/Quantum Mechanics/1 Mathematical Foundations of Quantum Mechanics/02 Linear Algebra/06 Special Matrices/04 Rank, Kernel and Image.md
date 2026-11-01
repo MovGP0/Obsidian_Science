@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Rank, Kernel and Image"
 ---
 
@@ -18,6 +18,10 @@ title: "Rank, Kernel and Image"
 > $$
 
 In quantum mechanics, suppose $\hat A$ is a Hermitian operator on $\mathbb{C}^n$ with some zero eigenvalues. Its eigenvectors for eigenvalue zero, together with the zero vector, form the kernel. Its rank is the number of nonzero eigenvalues, counted with multiplicity.
+
+The rank–nullity proof counts independent information. Choose a basis of $\ker A$ and extend it to a basis of the input space. The images of the added vectors span $\operatorname{Im}A$. They are independent: a relation among those images would put their input combination in the kernel, contradicting independence of the extended input basis. The number of added vectors is therefore the rank.
+
+For $A=\begin{pmatrix}0&1\\0&0\end{pmatrix}$, the kernel and image both equal the span of $(1,0)^T$, so rank plus nullity is $1+1=2$. Its two eigenvalues are zero. Thus the later eigenvalue counting rule uses Hermiticity, or more generally diagonalizability; it is not valid for every matrix.
 
 ## Example — Rank of a projector
 

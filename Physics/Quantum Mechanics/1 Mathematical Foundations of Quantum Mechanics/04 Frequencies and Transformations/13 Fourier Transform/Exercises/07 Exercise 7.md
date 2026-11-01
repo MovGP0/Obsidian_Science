@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Sampling interpolation and the duration–bandwidth relation"
 ---
 
@@ -80,6 +80,19 @@ Thus the series converges in $L^2$ and uniformly to the continuous representativ
 
 The spacing is $\pi/b$. With angular-frequency notation the ordinary maximum frequency is $b/(2\pi)$, so the sample density $b/\pi$ is twice that frequency. The $L^2$ assumption excludes nondecaying pure sinusoids at a band edge, which can otherwise cause endpoint qualifications at the critical spacing.
 
+### Check what the samples determine
+
+Parseval for the spectral Fourier series gives the useful identity
+
+$$
+\|f\|_2^2=\|\hat f\|_2^2=\sum_n|c_n|^2
+=\frac\pi b\sum_n|f(x_n)|^2.
+$$
+
+The spacing factor $\pi/b$ is necessary: a sample value is not an interval probability or an unscaled coefficient. It also checks the normalization in the interpolation formula.
+
+Exact band limitation is essential to uniqueness from these samples. If it is removed, a nonzero function such as $e^{-x^2}\sin(bx)$ is square integrable and vanishes at every $x_n=n\pi/b$. Adding it to an input preserves every sample while changing the function. Thus sample agreement alone cannot prove reconstruction without the spectral assumption.
+
 ### (b) Separate standard-deviation bounds from support estimates
 
 For a normalized temporal signal with finite second moments, let $\Delta\signal{t}$ and $\Delta\signal{\omega}$ be standard deviations of its squared amplitudes in the two representations. The Fourier uncertainty theorem gives
@@ -88,7 +101,7 @@ $$
 \Delta\signal{t}\,\Delta\signal{\omega}\geq\frac12.
 $$
 
-It follows by applying Cauchy–Schwarz to $(\signal{t}-\langle\signal{t}\rangle)f$ and the centered derivative, whose commutator is one. Parseval identifies the derivative norm with the frequency variance. Thus a smaller duration width requires a larger frequency width, under fixed width definitions.
+It follows by applying Cauchy–Schwarz to $(\signal{t}-\langle\signal{t}\rangle)f$ and the centered derivative, with the ordered commutator $[d/d\signal{t},\signal{t}]=I$. Parseval identifies the derivative norm with the frequency variance. Thus a smaller duration width requires a larger frequency width, under fixed width definitions.
 
 To understand the source's $2\pi/\signal{T}$ scale, use a rectangular pulse of duration $\signal{T}$ and amplitude $A$. Direct integration gives
 

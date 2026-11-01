@@ -14,6 +14,10 @@ Immediate consequences:
 - All eigenvalues of $A$ are real. We will prove this in Chapter 7.
 - $A$ is unitarily diagonalizable.
 
+The finite-dimensional assumption is essential to the terminology here: for matrices, Hermitian and self-adjoint are equivalent. For an unbounded operator, the domain must also agree with the adjoint's domain. A real-looking differential expression alone is not sufficient.
+
+Hermiticity makes every state expectation real, because $(v^\dagger Av)^*=v^\dagger A^\dagger v=v^\dagger Av$. It does not require positivity: $\sigma_z$ has expectations $+1$ and $-1$ on the standard basis vectors. Thus a Hermitian observable can have negative outcomes.
+
 ## Example — The Pauli matrices
 
 The three Pauli matrices are

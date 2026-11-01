@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Translation as a Fourier phase"
 ---
 
@@ -27,6 +27,12 @@ $$
 $$
 
 The negative sign follows from the forward-transform kernel. A translation changes phase but does not change $|\hat f(k)|^2$. These coordinates are mathematical variables with no assigned physical units.
+
+## Recover the displacement
+
+The inverse transform of $e^{-k^2/2}$ is $e^{-x^2/2}$ in this convention. Multiplication by $e^{-3ik}$ therefore puts the peak at $x=3$, rather than at $x=-3$. This checks the direction of the translation as well as its phase sign.
+
+The transformed density is still $e^{-k^2}$. Thus a magnitude-only spectrum cannot distinguish this shifted profile from the centered one. It can distinguish a modulated profile, whose spectral peak moves. To reverse the displacement, multiply the transform by $e^{+3ik}$ and recover the original input.
 
 ## Answer
 

@@ -1,9 +1,13 @@
-﻿---
+---
 title: "Exercises — Unitary operators and symmetries"
 ---
 
 > [!TLDR]
 > Use these worked exercises to calculate unitary transformations, conserved means, spin precession, and time-reversal symmetry.
+
+Start with Exercise 1 to check the exponential sign by its action on basis columns. Exercise 2 uses a single generator, so its composition law is simpler than the noncommuting rotations in Exercise 8. Exercises 3 and 4 then show that constant energy probabilities can coexist with changing relative phases and transverse spin means.
+
+Before Exercise 5, distinguish a commutator that vanishes as an operator from one whose expectation happens to vanish in a special state. Before Exercise 6, identify the Hamiltonian that generates the stated displacement; a shape-preserving shift is not automatically free-particle motion. Exercise 7 tests the linearity assumption itself through time reversal. These choices of method are more useful than treating every unitary formula as an interchangeable matrix exponential.
 
 Chapter: [[11 Unitary Operators/00 Unitary Operators|Chapter 11 — Unitary Operators]]. Each exercise note contains the full question, all subparts, a worked solution, and the answer.
 

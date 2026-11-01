@@ -24,6 +24,10 @@ $$
 \electric{F}^{ij}=-\epsilon^{ijk}\magnetic{B}_k.
 $$
 
+Here the scalar potential is the time component in natural units. The spatial vector potential is grouped with the electromagnetic potential; the magnetic field itself uses the magnetic quantity group. The spatial Levi-Civita symbol has $\epsilon^{123}=+1$, and its spatial labels in the magnetic-field formula use Euclidean three-vector components.
+
+To check the electric sign, expand the definition with $\partial^i=-\partial_i$: it gives $\electric{F}^{0i}=\partial_t\electric{A}^i+\partial_i\electric{\phi}$, the negative of the usual electric field. Antisymmetry then gives $\electric{F}^{i0}=+\electric{E}^i$. The continuity equation $\partial_\mu\electric{j}^\mu=0$ becomes the time derivative of the charge density plus the divergence of the spatial current. It expresses local charge conservation; it is an additional physical statement, not a consequence of merely defining a four-current.
+
 ## Physical quantities
 
 | Symbol | Unit | Quantity | Description |

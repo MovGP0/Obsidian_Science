@@ -67,3 +67,7 @@ $$
 =\frac1\varepsilon-\gamma_E+\mathcal O(\varepsilon).
 \tag{A.87}
 $$
+
+Integration by parts proves the recurrence in the initial half-plane: the boundary term vanishes because the exponential controls infinity and the positive real part controls the origin. The recurrence then continues the function beyond that half-plane, except at its poles. The reflection identity is read away from its integer poles. The gamma function has no zeros; see [NIST DLMF, section 5.2(i)](https://dlmf.nist.gov/5.2#i).
+
+For a regulator check, the recurrence gives $\Gamma(-1+\varepsilon)=\Gamma(\varepsilon)/(\varepsilon-1)$. Using (A.85) produces $-1/\varepsilon+\gamma_E-1+\mathcal O(\varepsilon)$, in agreement with (A.84) for $n=1$. In loop integrals, a gamma-function pole identifies a singular continuation; it does not by itself distinguish an ultraviolet divergence from an infrared divergence. Inspect the original integral's endpoints before giving the pole a physical interpretation.

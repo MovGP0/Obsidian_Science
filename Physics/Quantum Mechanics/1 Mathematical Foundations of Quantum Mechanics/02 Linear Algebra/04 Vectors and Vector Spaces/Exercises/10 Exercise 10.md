@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Why a complex inner product needs conjugation"
 ---
 
@@ -84,6 +84,12 @@ $$
 $$
 
 with equality only when every component vanishes.
+
+## Why restriction to real vectors hides the problem
+
+If all coordinates and all allowed scalars are real, the proposed expression is the usual Euclidean inner product. The failure occurs when complex scalar multiplication is allowed. Multiplication by $\mathrm{i}$ would change the proposed squared length by $\mathrm{i}^2=-1$, whereas a genuine norm must satisfy $\|\mathrm{i}v\|=|\mathrm{i}|\|v\|=\|v\|$.
+
+This phase-invariance check is especially useful for quantum vectors: changing an overall phase must not change normalization. The algebraic requirement of conjugation supports that check; it is not an experimental proof of the inner-product axioms.
 
 ## Answer
 

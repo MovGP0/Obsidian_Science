@@ -63,6 +63,10 @@ Each denominator below has the Feynman prescription. The pole and finite terms a
 | $\displaystyle\int_k\frac{\mechanical{k}^\mu\mechanical{k}^\nu}{(\mechanical{k}^2-\mechanical{\Delta})^3}$ | $\displaystyle\frac{i\,g^{\mu\nu}}{4(4\pi)^2}\left(\frac1{\hat{\varepsilon}}-L\right)$ |
 | $\displaystyle\int_k\frac1{\mechanical{k}^2-\mechanical{\Delta}}$ | $\displaystyle\frac{i\mechanical{\Delta}}{(4\pi)^2}\left(\frac1{\hat{\varepsilon}}-L+1\right)$ |
 
+The expansion assumes a positive denominator parameter, so the logarithm shown is real before the overall Minkowski factor. A continuation across a physical threshold needs the prescribed complex logarithm, not a logarithm of an absolute value. Its argument must remain dimensionless. Setting the parameter equal to the squared reference scale makes the finite logarithm vanish, but leaves the regulated pole until subtraction.
+
+Retain the dimension in tensor reduction until after multiplying pole terms. For example, contracting the fourth row of Table A.3 gives a factor $d/4=1-\varepsilon/2$. Multiplication by the pole supplies the finite minus-one-half term in the third row. Setting $d=4$ before expansion would lose it. Also, differentiating the first row with respect to the denominator parameter and dividing by two gives the second row, including its negative sign. These are useful consistency checks on the table; they do not change the source's subtraction convention.
+
 ## Physical quantities
 
 | Symbol | Unit | Quantity | Description |

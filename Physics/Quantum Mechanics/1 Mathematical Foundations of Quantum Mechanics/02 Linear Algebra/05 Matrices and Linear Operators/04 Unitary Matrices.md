@@ -18,6 +18,10 @@ $$
 
 In particular, $\|Uv\|=\|v\|$. Unitary matrices are isometries.
 
+The converse follows by testing basis vectors: if a square matrix preserves all inner products, then $e_i^\dagger(U^\dagger U-I)e_j=0$ for every pair $i,j$, so every entry of $U^\dagger U-I$ is zero. In finite equal dimensions, this also implies invertibility and $UU^\dagger=I$. An isometric embedding into a larger space need not be onto, so it does not have this two-sided inverse.
+
+In quantum calculations, norm preservation keeps normalized state vectors normalized. A unitary matrix can describe either an active operation on a state or a passive coordinate change; the interpretation must be specified.
+
 ## Example — The Hadamard matrix
 
 The **Hadamard matrix**, or **Hadamard gate** in quantum computing, is

@@ -38,6 +38,10 @@ $$
 \tag{A.45}
 $$
 
+Charge conjugation needs both complex conjugation of the field and the matrix which restores the spinor transformation law. The transpose in (A.42) is not a Hermitian conjugate. In the displayed representation, the real matrix has $C^2=-\mathbf1_4$ and $C^T=-C$, hence $C^{-1}=-C$ and $C^\dagger C=\mathbf1_4$. These are direct checks of (A.43)–(A.44).
+
+A common overall phase of $C$ is a convention and leaves (A.42) unchanged. Use that phase consistently when comparing charge-conjugated spinors. Applying (A.45) twice gives the original field with these conventions; it does not produce a new independent field on the second application. For a charged field, charge conjugation also reverses its electromagnetic coupling in the equation of motion; it is not just a relabeling of matrix components.
+
 ## Physical quantities
 
 | Symbol | Unit | Quantity | Description |

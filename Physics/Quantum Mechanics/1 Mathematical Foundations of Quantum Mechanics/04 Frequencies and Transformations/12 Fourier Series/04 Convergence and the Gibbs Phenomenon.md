@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Convergence and the Gibbs Phenomenon"
 ---
 
@@ -12,6 +12,16 @@ title: "Convergence and the Gibbs Phenomenon"
 > - To $\tfrac12(f(x^-)+f(x^+))$ at jump discontinuities.
 
 At the endpoints of $[-L,L]$, use the one-sided limits of the **periodic extension**. The stated piecewise regularity is a sufficient condition.
+
+For comparison, let $S_Nf$ retain the complex modes with $|n|\leq N$. Norm convergence means
+
+$$
+\int_{-L}^L|S_Nf(x)-f(x)|^2\,dx\longrightarrow0.
+$$
+
+This controls an integrated error, rather than the largest error at any point. Changing a single value of $f$ leaves this statement and all Fourier coefficients unchanged. Convergence to $f$ at a specified point depends on its assigned value; the Fourier coefficients and their series limit do not. The theorem specifies the mean of the one-sided limits at a jump.
+
+To test the distinction, assign $f(0)=7$ to the periodic sign function. Every sine partial sum is still zero at zero, and the norm error still tends to zero. Thus norm convergence alone cannot determine the value at a specified point.
 
 ## The Gibbs phenomenon
 

@@ -1,9 +1,9 @@
-﻿---
+---
 title: "Antiunitary time reversal and Kramers pairs"
 ---
 
 > [!TLDR]
-> Time reversal conjugates complex coefficients, reverses momentum, and gives Kramers pairs when its square is minus the identity.
+> Time reversal conjugates complex coefficients and reverses momentum. For a time-reversal-invariant Hamiltonian, it gives Kramers pairs when its square is minus the identity.
 
 Chapter: [[11 Unitary Operators/00 Unitary Operators|Chapter 11 — Unitary Operators]]. Exercise 7. Difficulty: **Challenge**.
 
@@ -117,6 +117,10 @@ $$
 Since $\hat T^2=-\hat I$, the left side is $-\langle\hat T\psi|\psi\rangle$. Hence this overlap is zero. Every discrete energy eigenspace is at least two dimensional under these assumptions.
 
 For a system of $N$ spin-one-half particles with the usual time-reversal action, $\hat T^2=(-1)^N\hat I$. An odd number gives the Kramers condition; an even number does not guarantee a pair by this argument. More generally, the condition belongs to the full system's time-reversal operator. The presence of one half-integer-spin constituent alone does not prove degeneracy. A fixed external magnetic field generally breaks time-reversal invariance, so the square $-\hat I$ alone does not guarantee energy degeneracy.
+
+The orthogonality proof uses two assumptions at different steps. Time-reversal invariance of the Hamiltonian supplies an equal-energy partner. The square $-I$, together with antiunitary inner-product preservation, forces that partner to be orthogonal. If either condition is absent, the pairing conclusion does not follow.
+
+Check the boundary with a real diagonal two-level Hamiltonian having unequal entries. Complex conjugation alone is an antiunitary symmetry of that matrix and squares to the identity, but there is no required degeneracy. Conversely, the spin-one-half time-reversal map still squares to minus the identity when a nonzero z-splitting Hamiltonian is chosen, but that Hamiltonian is not invariant under the map. The two examples show why neither antiunitarity alone nor its square alone is sufficient.
 
 ## Answer
 

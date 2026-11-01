@@ -1,9 +1,13 @@
-﻿---
+---
 title: "Definition and Algebraic Properties"
 ---
 
 > [!TLDR]
 > The commutator is antisymmetric and linear in both arguments. Its product rules let you calculate commutators without expanding every operator product.
+
+For matrices, every product below is defined on the full vector space. For unbounded operators, a useful sufficient working assumption for these algebraic manipulations is a common dense invariant domain: applying any of the participating operators keeps a test vector in that domain. Mere membership in the separate domains does not ensure that a product is defined.
+
+The product rule is useful because it reduces a long commutator to already known shorter ones. Add and subtract the intermediate product without exchanging any factors. This is why the second term in (10.3) starts with the original left factor of the product. As a sign check, the commutator of two Hermitian matrices must be anti-Hermitian. The result $2i\sigma_z$ below has precisely this property; $2\sigma_z$ would fail it.
 
 > [!definition] Definition 10.1 | Commutator
 > The **commutator** of two operators is

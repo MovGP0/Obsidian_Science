@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Parseval and the Basel and Leibniz sums"
 ---
 
@@ -81,6 +81,12 @@ $$
 $$
 
 Division by two gives the Leibniz formula. The alternating-series test confirms convergence of this numerical series.
+
+## Two different uses of an infinite series
+
+Part (a) uses convergence in the integral norm, so it is unaffected by the endpoint values assigned to the periodic ramp. Part (b) evaluates at one specified point and therefore needs pointwise convergence there. The ramp is continuous at $\pi/2$, which supplies that condition. These are separate justifications.
+
+For a finite Leibniz sum through $k=M$, the alternating-series remainder has magnitude at most $1/(2M+3)$. This explains its slow numerical convergence even though the exact identity is simple. The reciprocal-square series in part (a) has a positive tail bounded above by $1/M$ after label $M$. State the truncation rule before comparing numerical estimates from the two methods.
 
 ## Answer
 

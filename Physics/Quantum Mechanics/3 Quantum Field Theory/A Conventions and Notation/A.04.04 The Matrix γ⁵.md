@@ -49,3 +49,7 @@ $$
 [\gamma^5,\sigma^{\mu\nu}]=0.
 \tag{A.22}
 $$
+
+The superscript five is a name, not a fifth spacetime component or a fifth power. The definition fixes its sign only after the gamma-matrix order and Levi-Civita convention are fixed. It allows [[A.05.06 Chiral Projectors]] to separate the two chirality eigenspaces.
+
+To reconstruct (A.21), move one gamma matrix through the product defining the chirality matrix and use the Clifford algebra. The minus sign implies that the chirality matrix commutes with a product of two gamma matrices, which explains (A.22). In either displayed representation, squaring its block matrix gives the identity and its trace is zero, so the two eigenspaces each have dimension two. These statements use four spacetime dimensions; they must not be imposed unchanged on all dimensionally continued gamma algebra.

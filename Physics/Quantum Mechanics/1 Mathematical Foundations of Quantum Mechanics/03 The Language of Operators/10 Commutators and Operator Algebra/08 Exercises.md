@@ -1,9 +1,13 @@
-﻿---
+---
 title: "Exercises"
 ---
 
 > [!TLDR]
 > These eight worked exercises develop commutator rules, spin uncertainties, oscillator ladder states, coherent states, and exponential conjugation.
+
+Exercises 1 and 4 build the reduction method: use product rules until only the canonical commutator remains. Exercise 2 gives an independent matrix check on signs and factors. Use Exercise 3 to distinguish an eigenstate uncertainty from a transverse uncertainty, then use Exercise 5 to connect commutators to changing means.
+
+The ladder and coherent-state exercises require more than formal rearrangement. Check whether the generated vector is nonzero, whether its norm is finite, and which state domain permits repeated application of the ladder maps. In Exercise 8, predict the conjugation sign before expanding the exponential, then check it by differentiation in position space. Agreement of these independent methods is useful evidence for the algebra; it is not an experimental test of the quantum postulates.
 
 Chapter 10 — [[10 Commutators and Operator Algebra/00 Commutators and Operator Algebra|Commutators and Operator Algebra]]. Each note contains the full question and its worked solution.
 

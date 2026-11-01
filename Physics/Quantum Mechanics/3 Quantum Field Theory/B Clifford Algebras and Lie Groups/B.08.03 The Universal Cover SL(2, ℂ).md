@@ -67,6 +67,14 @@ $$
 \bar\sigma^\mu=(\mathbf1,-\boldsymbol\sigma).
 $$
 
+## Constructing the covering map
+
+Encode four real numbers $a^\mu$ in the Hermitian matrix $H=a^0\mathbf1+a^i\sigma_i$. Direct evaluation gives $\det H=(a^0)^2-\sum_i(a^i)^2$. For $S\in SL(2,\mathbb C)$, $H\mapsto SHS^\dagger$ preserves Hermiticity and this determinant, so it gives a real Lorentz transformation. The kernel consists of $S=\pm\mathbf1$, which act identically on every $H$.
+
+The construction reaches the identity component. Its derivative has all six Lorentz directions, so its image is an open subgroup of that connected component and hence is the whole component. Polar decomposition writes $S=UP$ with $U\in SU(2)$ and positive Hermitian $P$ of determinant one. Writing $P=e^{b^i\sigma_i}$ identifies this factor with $\mathbb R^3$; $SU(2)$ is a three-sphere. This also shows why the covering space is simply connected. See [Tanedo, §2, discussion of the Lorentz double cover and polar decomposition](https://www.classe.cornell.edu/~pt267/files/notes/FlipSUSY.pdf).
+
+In (B.93), equality between the sigma and bar-sigma forms includes the raising and lowering of both spinor indices with epsilon symbols. They are not equal as raw numerical matrices with unchanged index positions. This is essential because, for a spatial index, $\bar\sigma^i=-\sigma^i$.
+
 ## Physical quantities
 
 | Symbol | Unit | Quantity | Description |

@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Common Errors"
 ---
 
@@ -46,7 +46,7 @@ $$
 =\frac{\partial^2f}{\partial t\partial x}.
 $$
 
-All functions used in this course are sufficiently regular. But this equality is not automatic for every function.
+For smooth examples this condition is satisfied. Cusp and singular examples need a separate check; the equality is not automatic for every function.
 
 > [!info] Quantum mechanics — The expectation value
 > In a normalized state $\signal{\psi}(\mechanical{x})$, with $\int|\signal{\psi}|^2\,\mathrm{d}\mechanical{x}=1$, the expectation value of the observable $\hat A$ is
@@ -90,6 +90,14 @@ All functions used in this course are sufficiently regular. But this equality is
 
 > [!note]
 > The claims about real momentum expectation values require the regularity, boundary, and operator-domain conditions discussed in [[04 Integration by Parts]]. A normalized state must also lie in a suitable domain for the stated expectation value to exist.
+
+## Repair a calculation by checking its hypotheses
+
+For the Gaussian parameter derivative, fix $a_0>0$ and restrict $a\ge a_0/2$ nearby. The magnitude $x^2\mathrm{e}^{-ax^2}$ is then bounded by the integrable function $x^2\mathrm{e}^{-a_0x^2/2}$. This gives a concrete reason to interchange the derivative and integral. The phrase “the integrand is smooth” alone would not control its tails on an unbounded interval.
+
+For mixed derivatives, a sufficient local condition is that both second partial derivatives are continuous in a neighborhood. A formula valid away from a cusp does not automatically supply that regularity at the cusp. For an expectation value, first check normalization, then that the stated operator acts on the state with the required domain and integrability conditions. These are three separate checks.
+
+The Ehrenfest equations are a final example of this discipline: an exact mean-force equation does not justify replacing a mean of a nonlinear function with that function of the mean. Predict first whether the force is linear in position; only then decide whether the classical-looking equation closes on the mean position.
 
 ## Physical quantities
 

@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Eigenvalues and normalized eigenvectors of three matrices"
 ---
 
@@ -126,6 +126,12 @@ $$
 \sigma_z\begin{pmatrix}0\\1\end{pmatrix}
 =-\begin{pmatrix}0\\1\end{pmatrix}.
 $$
+
+## Checks before interpreting the eigenstates
+
+For (a), the eigenvalue sum $2+4=6$ and product $2\cdot4=8$ agree with the matrix trace and determinant. For (b), the sum is zero and product is $-2$, again matching the entries. These checks test the roots, while the direct substitutions above separately test their eigenvectors. Neither check should replace the other.
+
+The eigenvectors in all three examples are nondegenerate, so each direction is fixed up to a nonzero scalar; unit normalization leaves phase freedom. If a matrix were proportional to $I$, every direction would instead be an eigendirection. This degenerate boundary explains why a normalized eigenvector is not always unique up to phase.
 
 ## Answer
 

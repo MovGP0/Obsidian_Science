@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Functions, Derivatives and Integrals"
 ---
 
@@ -8,6 +8,14 @@ title: "Functions, Derivatives and Integrals"
 Physical laws use the language of derivatives and integrals. Newton's equation $\mechanical{F}=\mechanical{m}\mechanical{a}$, Maxwell's equations for the electromagnetic field, and the Schrödinger equation all contain derivatives.
 
 We select the tools that we will use systematically: ordinary and partial derivatives, definite integrals over unbounded domains, and the inner product as an integral.
+
+## A route from functions to observables
+
+The chapter answers two different questions: how a state changes locally, and how a whole function supplies a norm or an average. Begin with ordinary derivatives to learn the product and chain rules. Partial derivatives then separate changes in position from changes in time. Do not treat these as independent physical laws: they are operations used to express a chosen law.
+
+Next study definite integrals and normalization. The Gaussian example shows why a useful state can have support on an unbounded interval while its total probability remains finite. Integration by parts then connects derivatives with inner products through a boundary term. Keep that boundary term until the relevant conditions have been checked.
+
+Finish by comparing the sine and Gaussian exercises with the exponential cusp. All can be normalized, but normalization alone does not put a state in the domain of every differential operator. This distinction is needed before an integral is interpreted as an observable's expectation value.
 
 ## Chapter sections
 

@@ -16,6 +16,12 @@ Dimensional regularization, Feynman parametrization, and loop integrals are coll
 
 The source states that its physical-constant values agree with those used in Chapters 8, 10, and 13 and with PDG 2024. These are the source's reference values.
 
+## How to use the reference
+
+These are momentum-space perturbation rules, not probabilities. Choose a process and perturbative order, draw every allowed diagram, and combine their amplitudes before taking an absolute square. An internal line carries the momentum fixed by the vertices; it need not satisfy the physical mass-shell condition. External lines instead require the appropriate spinor or polarization vector and the state normalization from Appendix A.
+
+Natural units are used. Masses and four-momentum components have units of GeV. The rule's overall sign is meaningful only with the same field, metric, and interaction conventions throughout a calculation. See the convention comparison in [Romão and Silva, section 3](https://arxiv.org/html/1209.6213v2#S3).
+
 ## Gauge convention
 
 Unless another choice is stated, the rules use the $R_\xi$ gauge.
@@ -45,10 +51,14 @@ $$
 $$
 at each vertex.
 
+For a scattering process, reverse the sign of the momentum of each outgoing leg before inserting it into an all-incoming rule. This changes the momentum argument, not the particle's electric charge or the direction of fermion-number flow. Check both momentum and charge conservation independently.
+
 ## Symmetry factor
 
 Associate a factor $1/S$ with each diagram.
 Here $S$ is the order of the graph's automorphism group: the permutations of vertices and lines that preserve the diagram, including its external labels.
+
+The vertex factors already include the permutations of identical fields in a single interaction term. Do not multiply a four-field rule by another factorial. The diagram symmetry factor counts remaining equivalent contractions of the complete graph.
 
 ## Closed fermion loops
 
@@ -73,6 +83,8 @@ See [[A.08.01 Gaussian Integrals in d Euclidean Dimensions]] for the master inte
 
 Each propagator includes its factor of $i$, with the appropriate sign and numerator.
 Obtain each vertex from $i$ times the corresponding interaction term in the Lagrangian density, including field combinatorial factors and any momentum factors from derivatives.
+
+A useful final check is to set one interaction coupling to zero. Every diagram that requires that interaction must vanish. Gauge-parameter cancellation is a check on a complete physical amplitude at a consistent order; an isolated propagator or diagram can depend on the gauge parameter. The list below is a reference subset: a calculation that contains Goldstone or electroweak ghost interactions also needs their vertices.
 
 ## Physical quantities
 

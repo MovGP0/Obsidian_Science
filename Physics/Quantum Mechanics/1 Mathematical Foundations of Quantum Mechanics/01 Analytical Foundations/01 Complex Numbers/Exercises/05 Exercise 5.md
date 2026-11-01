@@ -1,4 +1,4 @@
-﻿---
+---
 title: "An eighth power from polar form"
 ---
 
@@ -33,6 +33,12 @@ $$
 $$
 
 The angle completes one full turn, so the result is positive and real. This avoids expansion of eight factors.
+
+### An independent algebraic check
+
+Repeated squaring gives $(1+\mathrm{i})^2=2\mathrm{i}$, $(1+\mathrm{i})^4=-4$, and $(1+\mathrm{i})^8=16$. This uses three products and confirms the phase calculation without a binomial expansion.
+
+For transfer, predict $(1+\mathrm{i})^4$ before calculating it. Its angle is four times $\pi/4$, so it lies on the negative real axis, with modulus $(\sqrt2)^4=4$. The sign is fixed by the accumulated phase, not by the positivity of the initial real component. This is the same reason a sequence of phase factors in a quantum calculation must be multiplied before its final phase is interpreted.
 
 ## Answer
 

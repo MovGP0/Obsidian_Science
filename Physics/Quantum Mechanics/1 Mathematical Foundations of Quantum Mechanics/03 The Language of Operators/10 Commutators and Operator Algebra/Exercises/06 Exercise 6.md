@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Ladder operators and the number spectrum"
 ---
 
@@ -94,6 +94,10 @@ $$
 $$
 
 All products are understood on the oscillator-state domain. The vacuum and normalizable oscillator representation are part of the physical assumptions, as stated in the question note.
+
+The argument has two logically distinct parts. Positivity and repeated lowering exclude noninteger number eigenvalues. Existence of a normalizable vacuum and nonzero raising steps then supplies all the allowed integer values. The second part is needed: excluding other numbers does not by itself prove that every permitted number occurs.
+
+An instructive boundary test is a finite ladder truncated at a highest state. Raising must vanish there, but the full oscillator relation would require a squared raising norm one unit larger than its positive number eigenvalue. The truncated pair therefore cannot obey the exact identity commutator on every state. This is the same obstruction seen by taking the trace of a finite commutator; numerical truncations must retain that boundary correction.
 
 ## Answer
 

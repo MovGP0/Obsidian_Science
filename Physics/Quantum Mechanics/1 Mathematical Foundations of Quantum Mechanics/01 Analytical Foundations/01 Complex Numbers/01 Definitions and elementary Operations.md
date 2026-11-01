@@ -66,3 +66,17 @@ $$
 $$
 
 The second method is more reliable because it does not depend on memorization.
+
+## What the ordered-pair definition supplies
+
+Equality means equality of both real components: $a+\mathrm{i}b=c+\mathrm{i}d$ if and only if $a=c$ and $b=d$. Identify the real number $a$ with $(a,0)$ and the imaginary unit with $(0,1)$. The multiplication rule then gives $(0,1)(0,1)=(-1,0)$. Thus the pair construction implements the relation $\mathrm{i}^2=-1$ without requiring a real square root of $-1$.
+
+For a useful check, multiplication by $\mathrm{i}$ gives
+
+$$
+\mathrm{i}(a+\mathrm{i}b)=-b+\mathrm{i}a.
+$$
+
+It changes the pair $(a,b)$ to $(-b,a)$. Applying the operation twice gives $(-a,-b)$, as multiplication by $-1$ must. Later this becomes a quarter-turn in the complex plane. This is why ordinary componentwise multiplication of pairs would not give complex multiplication.
+
+Try to find a nonzero complex number whose square is zero. Writing its square in components requires $a^2-b^2=0$ and $2ab=0$, which together force $a=b=0$. This check rules out an error in which the imaginary component is treated as a separate real axis with an independent multiplication rule.

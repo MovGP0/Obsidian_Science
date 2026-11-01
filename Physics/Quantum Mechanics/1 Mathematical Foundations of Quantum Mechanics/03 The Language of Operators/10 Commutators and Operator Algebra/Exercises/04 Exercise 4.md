@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Commutators of powers by induction"
 ---
 
@@ -80,6 +80,10 @@ This proves the second formula, because $g'(\mechanical{x})=n\mechanical{x}^{n-1
 
 > [!note]
 > The proof concerns nonnegative integer powers on a common invariant operator domain. Linearity also proves the formulas for polynomials. Extension to a general function requires additional regularity and domain conditions.
+
+Induction is effective because the product rule turns the next power into the previous power plus one canonical commutator. The proof uses a special feature: the basic commutator is a scalar identity and therefore commutes with every remaining factor.
+
+For general operators this simplification can fail. The product rule gives a sum with the basic commutator in different positions; those terms need not be equal. Thus one cannot replace that sum by a derivative-like multiple without checking commutation. The base case of the zeroth power is also separate: it gives the zero commutator with the identity and does not require an inverse operator. These two checks explain both the power rule and its boundary of use.
 
 ## Answer
 

@@ -119,6 +119,14 @@ Without complex numbers, this calculation would require trigonometric angle-addi
 >
 > The source also uses $\mathrm{i}\signal{\omega}\signal{\psi}=\partial_{xx}\signal{\psi}$ as a schematic statement. The argument about real solutions follows directly from the time-dependent Schrödinger equation above: if $\signal{\psi}$ is real for all positions and times, its imaginary part requires $\partial\signal{\psi}/\partial\signal{t}=0$.
 
+## Scope of the complex representation
+
+The phasor addition above factors out one common time dependence. It assumes that both oscillations have the same constant angular frequency. If their frequencies differ, their relative phase changes with time, and one constant resultant phasor does not represent the full sum. For a linear differential equation with real coefficients, the real part of a complex solution is a real solution. This is the reason the representation works for the usual sinusoidal steady-state calculation; a nonlinear operation generally cannot be moved through the real-part operation.
+
+Quantum mechanics uses a different interpretation. The complex state is not merely a convenient real signal with an imaginary part to discard. The Schrödinger equation and the Born probability rule are starting physical assumptions here. The displayed algebra describes their consequences. For a nonzero free-particle plane wave, substitution also requires $\energy{E}=\mechanical{p}^2/(2\mechanical{m})$; frequency and wave number cannot be chosen independently.
+
+Check the phasor result at $\signal{t}=0$: its value is three, and its initial time derivative is $-4\signal{\omega}$. The original two cosines give the same values. These two checks test both the resultant amplitude and the sign of its phase.
+
 ## Physical quantities
 
 | Symbol | Unit | Quantity | Description |

@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Exponential, Gaussian, and trigonometric integrals"
 ---
 
@@ -108,6 +108,12 @@ $$
 
 > [!note] Transcription repair
 > The original exercise image shows the integrand $x\mathrm{e}^{-x^2}$ in part (d). The factor $x$ and the exponent $-x^2$ are restored here from that image. The solution key gives the same odd integral and the result zero.
+
+### Predict the result's scale and sign
+
+The integrands in (a)–(c) are nonnegative, so their nonzero answers must be positive. In (c), the change of variable $u=\mechanical{x}/\mechanical{L}$ factors out one length. The remaining dimensionless integral is $1/2$, which explains why doubling the interval length doubles the result even though the sine still completes only half a cycle.
+
+The zero result in (d) uses convergence as well as parity. An odd integrand such as $x$ has a zero symmetric cutoff integral but no convergent whole-line improper integral. Here Gaussian decay makes both tails finite, so their cancellation is valid. In a quantum normalization or moment calculation, check convergence before applying the same symmetry shortcut.
 
 ## Answer
 

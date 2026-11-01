@@ -88,3 +88,17 @@ $$
 \,\lvert j_1,m_1\rangle\otimes\lvert j_2,m_2\rangle.
 \tag{B.62}
 $$
+
+## Normalization and the end of a ladder
+
+The $J^i$ in (B.58)–(B.60) are dimensionless representation generators. If they describe physical spin, the angular momentum operators are $\hbar J^i$ and the squared angular momentum is $\hbar^2j(j+1)$. No factor of $\hbar$ belongs in the Pauli commutator as written here.
+
+The ladder coefficient follows from $J^-J^+=J^2-(J^3)^2-J^3$ and the norm of $J^+|j,m\rangle$. A finite-dimensional unitary representation has a highest and a lowest weight. Their vanishing ladder norms fix the endpoint labels and force $2j$ to be a nonnegative integer. This supplies the logic behind the allowed values rather than treating the list as arbitrary.
+
+For $\tfrac12\otimes\tfrac12=0\oplus1$, the dimension check is $2\cdot2=1+3$. The spin-zero state is the antisymmetric combination of the two weight-zero product states; the spin-one sector is symmetric. Finally, (B.57) needs the sum over $a$: for fixed $a=b$, the product is $\sigma^b$, whereas summing gives $-\sigma^b$.
+
+## Physical quantities
+
+| Symbol | Unit | Quantity | Description |
+| --- | --- | --- | --- |
+| $\hbar$ | $\unit{J\,s}$ | Reduced Planck constant | The scale that converts dimensionless rotation generators to physical angular momentum. |

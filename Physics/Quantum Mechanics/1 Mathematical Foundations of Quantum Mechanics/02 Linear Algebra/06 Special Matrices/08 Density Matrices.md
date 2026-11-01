@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Density Matrices"
 ---
 
@@ -17,6 +17,10 @@ title: "Density Matrices"
 > $$
 > \rho=\sum_i p_i|\psi_i\rangle\langle\psi_i|.
 > $$
+
+The purpose is to predict outcomes when one state vector does not describe all available state information. A statistical mixture adds projectors with probabilities; a coherent superposition instead adds vectors before taking the outer product. These operations generally give different matrices.
+
+For example, the equal up/down mixture is $I/2$, with purity $1/2$. The equal coherent superposition has matrix $\tfrac12\begin{pmatrix}1&1\\1&1\end{pmatrix}$ and purity one. Their up/down populations agree, but the off-diagonal coherences differ. A diagonal matrix is not automatically mixed: a basis-state projector is diagonal and pure.
 
 Properties of a density matrix:
 

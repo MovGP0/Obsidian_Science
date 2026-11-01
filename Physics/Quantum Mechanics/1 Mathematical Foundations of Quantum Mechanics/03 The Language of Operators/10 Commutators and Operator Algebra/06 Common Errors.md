@@ -1,9 +1,13 @@
-﻿---
+---
 title: "Common Errors"
 ---
 
 > [!TLDR]
 > Commuting products need not vanish, and the adjoint of a commutator reverses its sign for Hermitian arguments. Uncertainty describes state statistics rather than the precision of one measurement.
+
+Use three different checks for three different mistakes. First, retain factor order until a commutator has been evaluated. Second, take an adjoint: a commutator of Hermitian matrices must change sign. Third, ask whether a claim concerns all states or only one expectation value.
+
+For example, a zero mean derivative in one preparation does not prove that the observable commutes with the Hamiltonian. The commutator expectation can vanish in that preparation while the operator remains nonzero. Conservation as an operator statement is a stronger condition and applies across the permitted states, with the required domain control. Likewise, a zero uncertainty lower bound in one state does not imply compatibility. These distinctions prevent a correct scalar calculation from being promoted to an unjustified operator conclusion.
 
 ## Error 1 — Commutation means that the product is zero
 
@@ -20,6 +24,9 @@ $$
 is correct. The commutator is linear in both arguments. The common error is to calculate an expression such as $[\hat H,\hat x]$ directly without first separating the sum of terms.
 
 ## Error 3 — Take the adjoint without reversing the order
+
+> [!note] Bounded and unbounded adjoints
+> The operator-adjoint equalities in this subsection concern matrices and bounded operators defined on the whole Hilbert space. For unbounded products, taking an adjoint generally gives a domain inclusion rather than this unrestricted equality. On the product domains needed for a chosen state, symmetry still gives conjugate scalar pairings in the two orders, so the commutator expectation is purely imaginary. That expectation statement does not prove that the full commutator operator is skew-adjoint. See [Teschl, Problem 2.3](https://www.mat.univie.ac.at/~gerald/ftp/book-schroe/schroe.pdf#page=79) and [Theorem 8.2](https://www.mat.univie.ac.at/~gerald/ftp/book-schroe/schroe.pdf#page=186).
 
 In general, $[\hat A,\hat B]^\dagger\ne[\hat A^\dagger,\hat B^\dagger]$. Instead,
 

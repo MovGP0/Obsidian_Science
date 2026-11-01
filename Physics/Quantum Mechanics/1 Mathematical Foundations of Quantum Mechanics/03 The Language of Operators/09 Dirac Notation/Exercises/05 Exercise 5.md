@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Change from the spin-z basis to the spin-x basis"
 ---
 
@@ -76,6 +76,10 @@ $$
 
 The imaginary relative phase in the original basis affects the new amplitudes. It must be retained until the squared magnitudes are calculated.
 
+A relative phase can be invisible in one basis and visible in another. Replace $i$ in the initial ket by $e^{i\signal{\alpha}}$, where $\signal{\alpha}$ is a dimensionless relative phase. The positive-x amplitude is then $(1+e^{i\signal{\alpha}})/2$, whose squared magnitude is $(1+\cos\signal{\alpha})/2$. The exercise is the case $\signal{\alpha}=\pi/2$.
+
+This gives a useful boundary check: at zero relative phase the state is the positive-x eigenstate, so its positive-x probability is one; at phase $\pi$ that probability is zero. Both states still have equal up/down probabilities. Thus equal probabilities in the original basis do not determine the probabilities in every other basis.
+
 ## Answer
 
 (a) $|\uparrow\rangle=(|+x\rangle+|-x\rangle)/\sqrt2$ and $|\downarrow\rangle=(|+x\rangle-|-x\rangle)/\sqrt2$. (b) $|\psi\rangle=((1+i)/2)|+x\rangle+((1-i)/2)|-x\rangle$. (c) $P(+x)=1/2$.
@@ -86,3 +90,4 @@ The imaginary relative phase in the original basis affects the new amplitudes. I
 | --- | --- | --- | --- |
 | $\langle+x\vert\psi\rangle$ | $1$ | Positive-x amplitude | The coefficient for the positive-x eigenstate. |
 | $P(+x)$ | $1$ | Positive-x probability | The probability of obtaining the eigenvalue $+1$. |
+| $\signal{\alpha}$ | $1$ | Relative phase | The phase between the two original spin components in the transfer check. |

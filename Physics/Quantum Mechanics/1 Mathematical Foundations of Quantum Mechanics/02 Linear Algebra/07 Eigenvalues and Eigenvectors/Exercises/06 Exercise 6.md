@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Time evolution and population transfer in a two-level system"
 ---
 
@@ -95,6 +95,12 @@ At half this period, the transition probability is one. If $\energy{\Delta}=0$, 
 
 > [!note] Source correction — Rabi frequency
 > The source calls $\energy{\Delta}/\mechanical{\hbar}$ the oscillation frequency. It is the coefficient inside the sine. The population oscillation has angular frequency $2|\energy{\Delta}|/\mechanical{\hbar}$, since $\sin^2u=(1-\cos2u)/2$.
+
+## A spectral explanation of the transfer
+
+The initial up state is an equal sum of the symmetric and antisymmetric energy eigenstates. Their energy difference is $2\energy{\Delta}$, so their relative phase changes at that gap divided by $\mechanical{\hbar}$. Recombining the two contributions produces the sine-squared transfer probability. A common shift of both energies changes only the global phase and cannot change the population.
+
+At short times the prediction is $P\approx(\energy{\Delta}\signal{t}/\mechanical{\hbar})^2$, so its initial slope is zero. Complete transfer relies on the two equivalent uncoupled levels, constant coupling, and closed unitary model used here. Detuning or environmental effects require a revised Hamiltonian or state-evolution model.
 
 ## Answer
 

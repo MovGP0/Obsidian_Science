@@ -64,3 +64,11 @@ $$
 $$
 
 In the complex plane, these roots form an equilateral triangle inscribed in a circle of radius $2$.
+
+## Why these are all the roots
+
+Take $z\ne0$ and a positive integer $n$. If $w^n=z$, write $w=s\mathrm{e}^{\mathrm{i}\varphi}$ with $s>0$. Equality requires $s^n=r$ and $n\varphi=\theta+2\pi k$. The positive real root fixes $s=r^{1/n}$, and the angle condition gives precisely the listed values. Two values repeat exactly when their indices differ by a multiple of $n$. This proves both that the formula gives roots and that none are missing.
+
+The power formula holds for nonnegative integers without division. For negative integers, require $z\ne0$. General noninteger powers need a logarithm branch; they cannot be used with integer power rules without further checks. For example, using principal square roots, $\sqrt{(-1)(-1)}=1$ while $\sqrt{-1}\sqrt{-1}=-1$.
+
+As a transfer check, replace the argument $\pi$ of $-8$ with $3\pi$ in the cube-root example. The roots are permuted, not changed. This is useful when phase representatives are changed in quantum calculations: the complex values, rather than the written angle representatives, determine the result.

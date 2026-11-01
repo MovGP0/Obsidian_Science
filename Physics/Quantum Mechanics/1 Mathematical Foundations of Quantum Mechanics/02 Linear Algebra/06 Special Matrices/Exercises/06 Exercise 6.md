@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Determinant of a unitary matrix"
 ---
 
@@ -38,6 +38,12 @@ $$
 $$
 
 The modulus is nonnegative, so $|\det(U)|=1$. Every complex number of unit modulus is on the unit circle and has a polar form $\mathrm{e}^{\mathrm{i}\phi}$ for a real argument $\phi$. The phase is defined modulo $2\pi$.
+
+## A necessary condition, not a complete test
+
+The converse is false. The matrix $M=\operatorname{diag}(2,1/2)$ has determinant one, yet $M^\dagger M=\operatorname{diag}(4,1/4)\ne I$. Its stretching in one direction cancels its contraction in the determinant. Unitarity requires preservation of every inner product, not only one scalar product of eigenvalues.
+
+For a positive check, $U=\operatorname{diag}(\mathrm{e}^{\mathrm{i}a},\mathrm{e}^{\mathrm{i}b})$ with real $a,b$ is unitary and has determinant $\mathrm{e}^{\mathrm{i}(a+b)}$. Thus a unitary quantum transformation need not have determinant exactly one. That extra restriction defines the special-unitary subgroup.
 
 ## Answer
 

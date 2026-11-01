@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Pauli exponential and a half-turn about y"
 ---
 
@@ -44,6 +44,10 @@ $$
 $$
 
 The plus sign in the given exponential matters. With the convention $R_y(\signal{\theta})=e^{-i\signal{\theta}\sigma_y/2}$, the given operator is $R_y(-\signal{\theta})$. Both half-turns exchange the two spin directions, but their displayed phases differ. Each basis state has an unobservable overall phase; relative phases must still be kept for a superposition.
+
+The basis-column calculation fixes the entire matrix, so its signs must also be retained when transforming a superposition. At a half-turn the symmetric up/down superposition becomes the difference of up and down, up to the displayed normalization. Replacing both output columns by positive basis vectors would instead give the wrong relative phase.
+
+As an independent check, square the half-turn matrix. It gives minus the identity, in agreement with a full spin-one-half turn. Its transpose times itself is the identity because this particular unitary matrix is real. At zero angle it is the identity, and reversing the angle gives its inverse. These checks test the phase pattern as well as probability normalization.
 
 ## Answer
 

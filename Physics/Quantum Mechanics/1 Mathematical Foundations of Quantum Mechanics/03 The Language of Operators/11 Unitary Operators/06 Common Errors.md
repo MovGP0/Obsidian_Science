@@ -1,9 +1,15 @@
-﻿---
+---
 title: "Common Errors"
 ---
 
 > [!TLDR]
 > Do not factor operator exponentials without checking commutators, or confuse relative phases with global phases. Unitary evolution preserves information in the complete closed-system description, while different observable probabilities can still change.
+
+The safest small-parameter check on an exponential product keeps its second-order terms. The difference between $e^{s\hat A}e^{s\hat B}$ and $e^{s(\hat A+\hat B)}$ begins with $s^2[\hat A,\hat B]/2$ for matrices, where $s$ is a mathematical expansion parameter. Thus an erroneous factorization may pass a first-order check and still fail at the next order.
+
+Probability preservation must also name what is transformed. Applying the same unitary to two states preserves their overlap. Applying it only to the prepared state generally changes the probabilities for a fixed measurement basis. Changing both the state and the observable is the corresponding representation change.
+
+The closed-system qualification in the information discussion is necessary. Tracing out an environment discards correlations available to the full description; the reduced state need not undergo a reversible unitary map. This distinction does not require resolving the source's separate black-hole example.
 
 ## Error 1 — Assume that operator exponentials always factor
 

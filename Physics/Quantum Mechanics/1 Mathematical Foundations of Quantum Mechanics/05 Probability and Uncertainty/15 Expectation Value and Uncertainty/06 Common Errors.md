@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Common Errors"
 ---
 
@@ -41,6 +41,8 @@ If $[\hat H,\hat A]=0$, the expectation is conserved for every state on the appl
 
 > [!note] A state-specific qualification
 > The source states the conservation condition as an operator commutation condition. For one particular evolving state, it is enough that the expectation of the commutator vanishes at all times. The operator itself need not vanish. If the observable has explicit time dependence, the additional term $\langle\partial\hat A/\partial\signal{t}\rangle$ must also be included.
+
+A constant expectation in one state does not establish an operator conservation law. For a time-independent Hamiltonian, any energy eigenstate evolves only by a global phase, so every time-independent observable has a constant expectation in that state whenever it exists. That observable can still fail to commute with the Hamiltonian and have time-dependent expectations in superpositions. Test a proposed conservation claim on the state class that it actually quantifies over.
 
 ## Error 4 — Confusing the two averages in a numerical example
 

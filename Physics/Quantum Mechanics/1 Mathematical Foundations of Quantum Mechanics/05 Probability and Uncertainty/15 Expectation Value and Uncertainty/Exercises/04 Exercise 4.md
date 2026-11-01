@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Spin evolution and the Bloch vector"
 ---
 
@@ -98,6 +98,8 @@ $$
 $$
 
 These agree with the direct derivatives in part (b). In particular, the factor $i^2=-1$ fixes the sign of the first equation.
+
+At the initial time, the calculated vector is $(1,0,0)$ and its derivative points along positive $y$ for positive $\signal{\omega}$. This local check fixes the rotation direction without relying on a drawing. At $\signal{\omega}\signal{t}=2\pi$, the state vector has changed by an overall minus sign while the Bloch vector has returned to its initial value. The sign is a global phase and leaves all probabilities unchanged. Reversing the sign of the Hamiltonian reverses the rotation.
 
 ### (d) Geometry of the motion
 

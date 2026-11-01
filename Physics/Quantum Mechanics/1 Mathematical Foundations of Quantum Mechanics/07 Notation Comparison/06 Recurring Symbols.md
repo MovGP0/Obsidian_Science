@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Recurring Symbols"
 ---
 
@@ -33,6 +33,14 @@ title: "Recurring Symbols"
 
 > [!note] Symbols with more than one meaning
 > The Euler number $e$ in an exponential is not the elementary charge $\electric{e}$. Similarly, a density matrix $\rho$ is an operator, whereas a probability density $\signal{\rho}(\mechanical{x})$ is a nonnegative scalar function. The formula $\hat P_n=|n\rangle\langle n|$ applies to a one-dimensional eigenspace; a degenerate eigenspace requires a sum over an orthonormal basis of that space.
+
+Use the object and its action to resolve notation. The map $|\psi\rangle\mapsto\langle\psi|$ is conjugate-linear, although the resulting bra is a linear functional of the ket on which it acts. Thus $(i|\psi\rangle)^{\dagger}=-i\langle\psi|$. Likewise, the star on a scalar conjugates it; the star on an operator can denote an adjoint. A hat can mark a Fourier transform in a different context, so it does not always mark an operator.
+
+A density operator is positive and has trace one. Its matrix entries require a chosen basis; the operator itself does not. A finite identity matrix has trace equal to its dimension. On a countably infinite orthonormal basis, the formal sum of its diagonal entries is $\sum_n1$, so the identity has no finite trace and is not a density operator. This is one reason that finite matrix formulas require care in infinite dimensions.
+
+**Check the type and normalization:** For a nonzero vector $|u\rangle$, the operator $Q=|u\rangle\langle u|$ satisfies $Q^2=\langle u|u\rangle Q$. It is an orthogonal projector only when $u$ is normalized. For example, $u=(1,1)^T$ gives $Q^2=2Q$; dividing $Q$ by $2$ gives a rank-one projector and a pure-state density operator. Reconstruct this example before using a ket–bra expression as a projector.
+
+Finally, $\delta_{ij}$ belongs in a discrete sum, while $\delta(x-y)$ belongs in an integral with a specified measure. Their roles are analogous: $\sum_j\delta_{ij}v_j=v_i$ and $\int\delta(x-y)f(y)\,dy=f(x)$ for suitable test functions. Their normalization and mathematical type differ. Similarly, $\otimes$ constructs a product space or product operator; it does not denote ordinary composition $AB$.
 
 ## Physical quantities
 

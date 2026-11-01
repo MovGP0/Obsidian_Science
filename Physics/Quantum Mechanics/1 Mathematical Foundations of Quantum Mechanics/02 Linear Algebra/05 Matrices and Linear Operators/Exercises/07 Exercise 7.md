@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Pauli expectation values and the Bloch vector"
 ---
 
@@ -79,6 +79,12 @@ $$
 $$
 
 Thus its norm is one, as required for this normalized pure state.
+
+## Check the phase convention
+
+At phase zero the Bloch vector is $(1,0,0)$, the positive $x$ direction. At phase $\pi/2$ it is $(0,1,0)$, which checks the sign of the $y$ component. Conjugating the ket phase without changing the stated question would reverse this $y$ component. The up/down probabilities remain $1/2$ in both cases, so they alone cannot detect this sign error.
+
+The example describes pure states with equal up/down weights, so it covers the equator rather than every pure spin state. A unit Bloch-vector norm here is a consistency check on that model, not a proof about arbitrary mixed-state preparations.
 
 ## Answer
 

@@ -26,3 +26,13 @@ g^{\mu\nu}
 \underbrace{+1,\ldots,+1}_{p},
 \underbrace{-1,\ldots,-1}_{q}).
 $$
+
+## What the relation fixes
+
+Here take $\mathbb F=\mathbb R$ or $\mathbb C$; more generally, characteristic two must be excluded for the usual symmetric/antisymmetric split. The bilinear form and its quadratic function are related by $Q(v,v)$. For a vector $v=v_\mu\gamma^\mu$, the relation implies $v^2=Q(v,v)\mathbf1$. Thus a nonzero null vector in indefinite signature has square zero. It need not be the zero element of the algebra.
+
+The abstract algebra is defined before a matrix representation is selected. A representation sends its unit to the identity matrix and preserves multiplication. Matrices of larger size, or several copies of the same representation, can satisfy the same relation; the relation alone does not select a minimal spinor space.
+
+For a direct check in two Euclidean dimensions, use $\gamma^1=\sigma_1$ and $\gamma^2=\sigma_2$. Each square is $\mathbf1$, while their anticommutator is zero. Replacing $\gamma^2$ by $i\sigma_2$ changes its square to $-\mathbf1$ and changes the real signature. This is why an inserted factor of $i$ can change the metric convention rather than merely rename a generator.
+
+Try the null case: in signature $(1,1)$, expand $(\gamma^0+\gamma^1)^2$. The two squares cancel and the mixed terms vanish by anticommutation. This gives a nonzero nilpotent element and shows why Euclidean intuition about a vanishing square fails here.
