@@ -8,5 +8,6 @@
   "obsidian-front-matter-title-plugin",
   "graphs",
   "image-captions",
-  "obsidian-latex"
+  "obsidian-latex",
+  "manim-renderer"
 ]

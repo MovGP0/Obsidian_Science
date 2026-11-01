@@ -1,0 +1,10 @@
+{
+  "id": "manim-renderer",
+  "name": "Manim Renderer",
+  "version": "0.1.0",
+  "minAppVersion": "1.5.0",
+  "description": "Render manim-web animations from fenced manim blocks.",
+  "author": "Johann Dirry",
+  "isDesktopOnly": false
+}
+

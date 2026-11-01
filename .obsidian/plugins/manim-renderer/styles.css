@@ -1,0 +1,55 @@
+.manim-web-block {
+  overflow: hidden;
+  margin: 1rem 0;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-m);
+  background: #1c1c1c;
+}
+
+.manim-web-viewport {
+  display: flex;
+  width: 100%;
+  min-height: 240px;
+  aspect-ratio: 16 / 9;
+  align-items: center;
+  justify-content: center;
+}
+
+.manim-web-viewport canvas {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.manim-web-placeholder {
+  padding: 1.5rem;
+  color: #d7d7d7;
+  text-align: center;
+}
+
+.manim-web-controls {
+  display: flex;
+  min-height: 2.75rem;
+  padding: 0.5rem 0.75rem;
+  align-items: center;
+  gap: 0.75rem;
+  border-top: 1px solid var(--background-modifier-border);
+  background: var(--background-secondary);
+}
+
+.manim-web-status {
+  min-width: 0;
+  flex: 1;
+  overflow-wrap: anywhere;
+  color: var(--text-muted);
+  font-size: var(--font-ui-smaller);
+}
+
+.manim-web-status.is-error {
+  color: var(--text-error);
+}
+
+.manim-web-run-button {
+  flex: 0 0 auto;
+}
+
