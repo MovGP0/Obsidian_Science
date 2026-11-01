@@ -1,4 +1,5 @@
 @use "./base.scss";
+@use "./variables.scss" as *;
 
 // Obsidian theme variables used by the vault's plugins (Graphs, Image Captions),
 // mapped onto the Quartz palette. Values follow Obsidian's default theme.
@@ -99,4 +100,19 @@ figure.image-captions-figure {
 mjx-container[display="true"] {
   overflow-x: auto;
   overflow-y: hidden;
+}
+
+// Backport Quartz PR #2283: nested lists must pass touch scroll to the Explorer.
+.explorer-content ul:not(.explorer-ul) {
+  overscroll-behavior: auto;
+}
+
+@media all and ($mobile) {
+  .mobile-no-scroll {
+    overscroll-behavior: auto;
+
+    .explorer-content > .explorer-ul {
+      overscroll-behavior: contain;
+    }
+  }
 }

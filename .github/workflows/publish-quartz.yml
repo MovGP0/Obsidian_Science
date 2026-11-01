@@ -5,6 +5,7 @@
 #
 # Quartz is checked out at a pinned version, and the overlay in `.quartz/` is applied on top of it:
 # - quartz.config.ts      site configuration
+# - quartz.layout.ts      Explorer file name order
 # - plugins/              Obsidian compatibility (render plugins, preamble.sty, Markdown fixes)
 # - styles/custom.scss    Obsidian theme variables used by the plugins
 
@@ -59,6 +60,7 @@ jobs:
       - name: Apply vault overlay
         run: |
           cp vault/.quartz/quartz.config.ts quartz/quartz.config.ts
+          cp vault/.quartz/quartz.layout.ts quartz/quartz.layout.ts
           mkdir -p quartz/quartz/plugins/vault
           cp vault/.quartz/plugins/* quartz/quartz/plugins/vault/
           cp vault/.quartz/styles/custom.scss quartz/quartz/styles/custom.scss
