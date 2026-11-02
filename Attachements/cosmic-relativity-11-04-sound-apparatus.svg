@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="590" viewBox="0 0 1000 590" role="img" aria-labelledby="title desc">
+  <title id="title">Sound propagation apparatus and timing principle</title>
+  <desc id="desc">A rectangular PVC pipe loop carries sound from a moving buzzer to a microphone fixed on the opposite side of the same circuit board. Both move along a slot. An explanatory oscilloscope trace shows emission and the first return after about 26 milliseconds.</desc>
+  <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#263238"/></marker></defs>
+  <rect width="1000" height="590" fill="white"/>
+  <g font-family="Arial, sans-serif" font-size="22" fill="#18242b">
+    <text x="35" y="35" font-weight="bold">Rectangular acoustic loop: L = 8.6 m</text>
+    <rect x="75" y="80" width="835" height="220" rx="32" fill="none" stroke="#cfd8dc" stroke-width="38"/>
+    <rect x="75" y="80" width="835" height="220" rx="32" fill="none" stroke="#607d8b" stroke-width="2"/>
+    <path d="M250 80 H550" fill="none" stroke="#263238" stroke-width="3" marker-end="url(#arrow)"/><text x="600" y="60">Sound path</text>
+    <rect x="275" y="283" width="335" height="34" fill="white" stroke="#607d8b" stroke-width="2"/>
+    <text x="442" y="352" text-anchor="middle">50 cm slot in 50 mm pipe</text>
+    <rect x="416" y="267" width="10" height="66" fill="#81c784" stroke="#263238" stroke-width="2"/>
+    <circle cx="407" cy="300" r="13" fill="#ffcc80" stroke="#263238" stroke-width="2"/><circle cx="437" cy="300" r="9" fill="#90caf9" stroke="#263238" stroke-width="2"/>
+    <path d="M390 267 H490" fill="none" stroke="#263238" stroke-width="2" marker-end="url(#arrow)"/><text x="500" y="274">v &lt; 1 m/s</text>
+    <text x="65" y="391">Buzzer + microphone on one moving PCB; preamplifier and pulse generator</text>
+    <rect x="75" y="423" width="835" height="112" rx="5" fill="#182b24"/>
+    <path d="M95 510 H130 L134 449 L139 519 L146 484 L152 514 L160 498 L168 510 H690 L696 465 L704 518 L710 490 L717 514 L724 501 L731 510 H890" fill="none" stroke="#81e6a6" stroke-width="3"/>
+    <text x="175" y="456" fill="#e0f2e9" font-size="20">Emission</text><text x="733" y="456" fill="#e0f2e9" font-size="20">First return</text>
+    <text x="492" y="570" text-anchor="middle">Timing illustration: about 26 ms for one circuit; trace is not measured data.</text>
+  </g>
+</svg>

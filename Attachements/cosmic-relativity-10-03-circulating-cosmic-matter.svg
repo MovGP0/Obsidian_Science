@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="640" viewBox="0 0 800 640" role="img" aria-labelledby="title desc">
+  <title id="title">Cosmic matter current in a rotating frame</title>
+  <desc id="desc">Concentric circular paths around a central observer represent the cosmic matter current seen in a rotating frame. Stars and curved arrows replace the source star-trail photograph. A moving particle and transverse force illustrate the current interaction.</desc>
+  <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8Z" fill="#537c9c"/></marker><marker id="force" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8Z" fill="#a55d48"/></marker><g id="star"><path d="M0 -8 L2 -2 L8 0 L2 2 L0 8 L-2 2 L-8 0 L-2 -2Z" fill="#537c9c"/></g></defs>
+  <rect width="800" height="640" fill="white"/>
+  <g fill="none" stroke="#9db5c6" stroke-width="2"><circle cx="400" cy="300" r="85"/><circle cx="400" cy="300" r="145"/><circle cx="400" cy="300" r="205"/><circle cx="400" cy="300" r="265"/></g>
+  <g fill="none" stroke="#537c9c" stroke-width="3" marker-end="url(#arrow)"><path d="M400 35 A265 265 0 0 1 665 300 M195 300 A205 205 0 0 1 400 95 M400 445 A145 145 0 0 1 255 300 M485 300 A85 85 0 0 1 400 385"/></g>
+  <use href="#star" x="400" y="35"/><use href="#star" x="195" y="300"/><use href="#star" x="400" y="445"/><use href="#star" x="485" y="300"/><use href="#star" x="591" y="108"/>
+  <circle cx="400" cy="300" r="12" fill="#253544"/>
+  <circle cx="429" cy="244" r="7" fill="#a55d48"/>
+  <path d="M429 244 H502" fill="none" stroke="#537c9c" stroke-width="3" marker-end="url(#arrow)"/><path d="M429 244 V179" fill="none" stroke="#a55d48" stroke-width="3" marker-end="url(#force)"/>
+  <g font-family="Arial, sans-serif" fill="#253544" font-size="22"><text x="196" y="29" font-weight="bold">Rotating-frame cosmic current</text><text x="345" y="335">Observer</text><text x="508" y="250">u</text><text x="443" y="198" fill="#a55d48">Transverse force</text><text x="139" y="608" font-size="18">Schematic circular matter flow; not an observed sky photograph.</text></g>
+</svg>

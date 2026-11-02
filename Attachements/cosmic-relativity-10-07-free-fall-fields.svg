@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="560" viewBox="0 0 1100 560" role="img" aria-labelledby="title desc">
+  <title id="title">Two gravitational fields in the author's free-fall account</title>
+  <desc id="desc">A falling box contains a downward local field and an upward uniform induced cosmic field. A detailed panel shows cancellation only at the reference point because local gravity varies with height.</desc>
+  <defs><marker id="local" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8Z" fill="#334c60"/></marker><marker id="cosmic" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8Z" fill="#5b8ca8"/></marker></defs>
+  <rect width="1100" height="560" fill="white"/>
+  <rect x="25" y="75" width="475" height="365" rx="15" fill="#eef3ef"/>
+  <path d="M75 433 Q263 340 450 433" fill="#bdc69e" stroke="#7b8b69" stroke-width="2"/>
+  <rect x="150" y="135" width="215" height="160" fill="none" stroke="#334c60" stroke-width="3"/>
+  <g fill="none" stroke-width="3"><path d="M190 270 V158 M257 270 V158 M324 270 V158" stroke="#5b8ca8" marker-end="url(#cosmic)"/><path d="M204 158 V270 M271 158 V270 M338 158 V270 M397 139 V284" stroke="#334c60" marker-end="url(#local)"/></g>
+  <rect x="557" y="75" width="518" height="365" rx="15" fill="#f5f8fa" stroke="#acbeca"/>
+  <g fill="none" stroke-width="3"><path d="M650 171 V99 M650 287 V215 M650 411 V339" stroke="#5b8ca8" marker-end="url(#cosmic)"/><path d="M674 99 V140 M674 215 V287 M674 321 V423" stroke="#334c60" marker-end="url(#local)"/></g>
+  <circle cx="674" cy="250" r="7" fill="#b2a15c"/>
+  <g font-family="Arial, sans-serif" fill="#253544" font-size="21"><text x="69" y="34" font-weight="bold">Freely falling box in cosmic matter</text><text x="625" y="34" font-weight="bold">Cancellation is strictly local</text><text x="408" y="219">a = g</text><text x="193" y="474">Local field: g = −∇φ</text><text x="720" y="132">Above: induced field dominates</text><text x="720" y="253">Reference point: fields balance</text><text x="720" y="385">Below: local field dominates</text><text x="124" y="527" font-size="18">Blue: uniform induced cosmic field · Dark: local field with tidal gradients</text></g>
+</svg>

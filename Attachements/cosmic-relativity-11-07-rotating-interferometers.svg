@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="650" viewBox="0 0 1180 650" role="img" aria-labelledby="title desc">
+  <title id="title">Sagnac and Michelson–Gale interferometer layouts</title>
+  <desc id="desc">The left panel has a four-mirror closed light path on a rotating disc. The right panel has a large evacuated rectangular loop, 613 by 339 metres, and a small fiducial reference loop. Oppositely directed beams recombine to form fringes.</desc>
+  <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#263238"/></marker><marker id="gold" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#9b8d36"/></marker></defs>
+  <rect width="1180" height="650" fill="white"/>
+  <g font-family="Arial, sans-serif" font-size="22" fill="#18242b">
+    <text x="245" y="42" text-anchor="middle" font-weight="bold">Sagnac: rotating interferometer</text>
+    <circle cx="245" cy="322" r="205" fill="#eceff1" stroke="#263238" stroke-width="2"/>
+    <path d="M140 424 L124 219 L332 212 L352 420 Z" fill="none" stroke="#263238" stroke-width="3"/>
+    <path d="M143 418 L131 224 L325 218 L345 414 Z" fill="none" stroke="#9b8d36" stroke-width="2"/>
+    <path d="M131 224 L243 221 M345 296 L347 361 M245 418 H169 M136 346 L132 278" fill="none" stroke="#9b8d36" stroke-width="2" marker-end="url(#gold)"/>
+    <path d="M332 212 L223 216 M135 305 L140 397 M198 423 L311 421" fill="none" stroke="#263238" stroke-width="2" marker-end="url(#arrow)"/>
+    <g stroke="#607d8b" stroke-width="9"><path d="M111 235 L138 202 M316 198 L347 225 M335 438 L367 404 M123 441 L155 406"/></g>
+    <path d="M360 151 Q335 114 299 102" fill="none" stroke="#263238" stroke-width="2.5" marker-end="url(#arrow)"/><text x="369" y="134">ω</text>
+    <path d="M89 424 H140 V474" fill="none" stroke="#263238" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="125" y="476" width="30" height="28" fill="#90a4ae" stroke="#263238"/><text x="245" y="571" text-anchor="middle">A = 0.086 m²</text><text x="245" y="607" text-anchor="middle">Counterpropagating beams</text>
+    <text x="835" y="42" text-anchor="middle" font-weight="bold">Michelson–Gale: Earth rotation</text>
+    <rect x="563" y="155" width="540" height="350" fill="none" stroke="#cfd8dc" stroke-width="24"/>
+    <path d="M640 155 V505" fill="none" stroke="#cfd8dc" stroke-width="24"/>
+    <g fill="none" stroke="#263238" stroke-width="2"><rect x="563" y="155" width="540" height="350"/><path d="M640 155 V505"/><path d="M570 162 H1096 V498 H570 Z" stroke-dasharray="6 5"/></g>
+    <g stroke="#607d8b" stroke-width="8"><path d="M551 170 L575 141 M1091 141 L1115 170 M1091 519 L1115 491 M551 519 L575 491 M628 170 L652 141 M628 519 L652 491"/></g>
+    <path d="M563 112 H1103 M1141 155 V505" fill="none" stroke="#263238" stroke-width="2" marker-end="url(#arrow)"/><text x="833" y="97" text-anchor="middle">613 m</text><text x="1157" y="328" text-anchor="middle" transform="rotate(90 1157 328)">339 m</text>
+    <text x="606" y="330" text-anchor="middle" transform="rotate(-90 606 330)">Small fiducial reference area</text>
+    <path d="M901 354 A52 52 0 1 0 821 306" fill="none" stroke="#263238" stroke-width="2.5" marker-end="url(#arrow)"/><text x="857" y="339" text-anchor="middle">Ω sin φ</text>
+    <text x="835" y="571" text-anchor="middle">A ≈ 207800 m²</text><text x="835" y="607" text-anchor="middle">Evacuated large-area optical loop</text>
+  </g>
+</svg>

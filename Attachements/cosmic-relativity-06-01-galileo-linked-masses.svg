@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="510" viewBox="0 0 1200 510" role="img" aria-labelledby="title desc">
+  <title id="title">Galileo's linked-masses thought experiment</title>
+  <desc id="desc">Panel a assumes a heavier mass falls faster than a lighter mass. Panel b connects the masses and treats the lighter mass as retarding the heavier one. Panel c treats the same linked pair as a single heavier body and predicts faster fall under the initial assumption. The source presents this contradiction and later questions the assumptions.</desc>
+  <defs>
+    <marker id="down" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#34465e"/></marker>
+    <marker id="up" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#1f4e8c"/></marker>
+  </defs>
+  <rect width="1200" height="510" rx="16" fill="#fff"/>
+  <g font-family="Arial, sans-serif" fill="#172033">
+    <g text-anchor="middle" font-size="23" font-weight="bold"><text x="200" y="42">a — Assume heavier falls faster</text><text x="580" y="42">b — Light mass retards heavy</text><text x="1000" y="42">c — Combined mass falls faster?</text></g>
+    <g fill="#e6a460" stroke="#8a4d2b" stroke-width="2.5"><rect x="95" y="220" width="75" height="100"/><rect x="545" y="220" width="75" height="100"/><rect x="835" y="220" width="75" height="100"/><rect x="1030" y="220" width="75" height="100"/></g>
+    <g fill="#8ebadb" stroke="#1f4e8c" stroke-width="2.5"><rect x="245" y="140" width="75" height="43"/><rect x="545" y="140" width="75" height="43"/><rect x="835" y="140" width="75" height="43"/><rect x="1030" y="177" width="75" height="43"/></g>
+    <g stroke="#8a4d2b" stroke-width="5"><line x1="582.5" y1="183" x2="582.5" y2="220"/><line x1="872.5" y1="183" x2="872.5" y2="220"/></g>
+    <g fill="none" stroke="#34465e" stroke-width="3" marker-end="url(#down)"><path d="M 132 335 V 460 M 282 200 V 275 M 640 175 V 265 M 520 255 V 365 M 1135 210 V 435"/></g>
+    <path d="M 520 280 V 215" fill="none" stroke="#1f4e8c" stroke-width="3" marker-end="url(#up)"/>
+    <text x="965" y="257" text-anchor="middle" font-size="42">=</text>
+    <text x="132" y="205" text-anchor="middle" font-size="20">Heavy</text><text x="282" y="120" text-anchor="middle" font-size="20">Light</text>
+    <text x="580" y="412" text-anchor="middle" font-size="20">Prediction: slower than heavy alone</text>
+    <text x="1000" y="465" text-anchor="middle" font-size="20">Prediction: faster than heavy alone</text>
+  </g>
+</svg>

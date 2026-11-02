@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="510" viewBox="0 0 1100 510" role="img" aria-labelledby="title desc">
+  <title id="title">Milne expansion and observer-independent linear recession</title>
+  <desc id="desc">Concentric shells show distance proportional to speed after free expansion. A triangle of separation vectors and velocity differences shows the same proportionality from another observer.</desc>
+  <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8Z" fill="#294a66"/></marker></defs>
+  <rect width="1100" height="510" fill="white"/>
+  <g fill="none" stroke="#d49a36" stroke-width="15"><circle cx="250" cy="269" r="95"/><circle cx="250" cy="269" r="140"/><circle cx="250" cy="269" r="185"/></g>
+  <circle cx="250" cy="269" r="13" fill="#d9b94c"/>
+  <g fill="none" stroke="#294a66" stroke-width="2" marker-end="url(#arrow)"><path d="M250 269 L333 224 M250 269 V131 M250 269 L88 186 M541 362 H899 M541 362 L777 168 M777 168 L899 362"/></g>
+  <g fill="none" stroke="#a84c43" stroke-width="3" marker-end="url(#arrow)"><path d="M899 362 H1048 M777 168 L871 92 M777 168 L714 70"/></g>
+  <path d="M714 70 H871" fill="none" stroke="#294a66" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#arrow)"/>
+  <g fill="#d9a75a" stroke="#955f34" stroke-width="2"><circle cx="541" cy="362" r="12"/><rect x="767" y="158" width="20" height="20"/><rect x="889" y="352" width="20" height="20"/></g>
+  <g font-family="Arial, sans-serif" fill="#253544" font-size="25">
+    <text x="106" y="38">r₁ : r₂ : r₃ = v₁ : v₂ : v₃</text>
+    <text x="291" y="220">r₁, v₁</text><text x="263" y="154">r₂, v₂</text><text x="101" y="178">r₃, v₃</text>
+    <text x="701" y="396">r</text><text x="628" y="255">r′</text><text x="863" y="259">r″</text><text x="972" y="348">v</text><text x="848" y="141">v′</text><text x="696" y="130">v″</text>
+    <text x="118" y="489" font-size="22">Free expansion: r = vt</text><text x="609" y="454" font-size="22">v/r = v′/r′ = v″/r″ = 1/t = H</text>
+  </g>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="510" viewBox="0 0 1100 510" role="img" aria-labelledby="title desc">
+  <title id="title">Eastward and westward atomic-clock journeys</title>
+  <desc id="desc">Two different round-the-world paths start and finish in Washington. Eastward and westward directions are shown, with Rome and Guam as the latitude examples given in the text. This is an explanatory diagram, not a complete airport itinerary or geographic map.</desc>
+  <defs><marker id="east" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8Z" fill="#aa5147"/></marker><marker id="west" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8Z" fill="#3c6f98"/></marker></defs>
+  <rect width="1100" height="510" fill="white"/>
+  <g font-family="Arial, sans-serif" fill="#253544" font-size="22">
+    <text x="182" y="34" font-weight="bold">Two circumnavigations, with slightly different intermediate stops</text>
+    <rect x="75" y="77" width="950" height="302" rx="25" fill="#ecf3f6" stroke="#acbcc7"/>
+    <path d="M115 232 C264 103 359 143 455 203 S683 347 766 276 S924 140 985 232" fill="none" stroke="#aa5147" stroke-width="3" marker-end="url(#east)"/>
+    <path d="M985 272 C846 154 769 157 670 233 S432 342 343 278 S195 181 115 272" fill="none" stroke="#3c6f98" stroke-width="3" marker-end="url(#west)"/>
+    <path d="M95 223 H1005" stroke="#939fa8" stroke-dasharray="7 6"/>
+    <circle cx="115" cy="250" r="8" fill="#253544"/><circle cx="985" cy="250" r="8" fill="#253544"/>
+    <circle cx="324" cy="153" r="6" fill="#aa5147"/><circle cx="733" cy="295" r="6" fill="#aa5147"/>
+    <text x="78" y="411">Washington</text><text x="919" y="411">Washington</text><text x="275" y="120">Rome: 42° N</text><text x="704" y="348">Guam: 13° N</text>
+    <text x="516" y="121" fill="#aa5147">Eastward →</text><text x="458" y="351" fill="#3c6f98">← Westward</text>
+    <text x="809" y="214" font-size="18">Mean latitude ≈ 32° N</text>
+    <text x="194" y="468" font-size="18">Schematic directions and latitude examples; not a complete geographic itinerary.</text>
+  </g>
+</svg>

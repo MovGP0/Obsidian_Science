@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="570" viewBox="0 0 1200 570" role="img" aria-labelledby="title desc">
+  <title id="title">Kinematic and cosmic-current accounts of the Coriolis force</title>
+  <desc id="desc">A straight trajectory sampled at equal times, its curved appearance on a rotating disc, and the author's real-force interpretation through circulating cosmic matter are compared.</desc>
+  <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8Z" fill="#294a66"/></marker><g id="point"><path d="M0 -10 L3 -3 L10 0 L3 3 L0 10 L-3 3 L-10 0 L-3 -3Z" fill="#a99c58" stroke="#294a66"/></g></defs>
+  <rect width="1200" height="570" fill="white"/>
+  <g fill="none" stroke="#294a66" stroke-width="2">
+    <path d="M65 405 V93" marker-end="url(#arrow)"/>
+    <circle cx="380" cy="270" r="192"/>
+    <path d="M380 270 V78 M380 270 L330 85 M380 270 L284 104 M380 270 L244 134"/>
+    <path d="M438 59 Q381 32 331 62" marker-end="url(#arrow)"/>
+    <path d="M412 373 C395 336 380 299 380 270 S393 194 477 135" stroke-dasharray="6 5" marker-end="url(#arrow)"/>
+    <circle cx="916" cy="269" r="177"/><circle cx="916" cy="269" r="161"/><circle cx="916" cy="269" r="145"/>
+    <path d="M916 92 A177 177 0 0 1 1093 269 M916 108 A161 161 0 0 1 1077 269 M916 124 A145 145 0 0 1 1061 269" marker-end="url(#arrow)"/>
+    <path d="M881 327 Q881 239 947 215 H974" marker-end="url(#arrow)"/>
+    <path d="M839 218 L915 260 M879 277 L959 319" stroke-dasharray="7 6" marker-end="url(#arrow)"/>
+  </g>
+  <g><use href="#point" x="65" y="350"/><use href="#point" x="65" y="285"/><use href="#point" x="65" y="220"/><use href="#point" x="65" y="155"/><use href="#point" x="380" y="270"/><use href="#point" x="388" y="218"/><use href="#point" x="421" y="173"/><use href="#point" x="469" y="140"/><use href="#point" x="412" y="373"/><use href="#point" x="881" y="327"/><use href="#point" x="902" y="255"/><use href="#point" x="947" y="215"/></g>
+  <g font-family="Arial, sans-serif" fill="#253544" font-size="22">
+    <text x="28" y="37" font-weight="bold">(a) Straight motion</text><text x="274" y="37" font-weight="bold">(b) Rotating coordinates</text><text x="759" y="37" font-weight="bold">(c) Cosmic-current interaction</text>
+    <text x="84" y="356">1</text><text x="84" y="291">2</text><text x="84" y="226">3</text><text x="84" y="161">4</text><text x="27" y="257" font-style="italic">u</text>
+    <text x="375" y="69">1</text><text x="317" y="78">2</text><text x="268" y="96">3</text><text x="225" y="126">4</text><text x="412" y="310" font-size="19">Apparent curvature</text>
+    <text x="779" y="91">ρv</text><text x="911" y="231">u</text><text x="974" y="295" font-size="19">Real force</text>
+    <text x="264" y="520" font-size="19">The source distinguishes coordinate deflection from a physical current–current force.</text>
+  </g>
+</svg>

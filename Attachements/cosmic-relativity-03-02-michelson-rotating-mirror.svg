@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="600" viewBox="0 0 1100 600" role="img" aria-labelledby="title desc">
+  <title id="title">Michelson's rotating polygon mirror measurement</title>
+  <desc id="desc">A source and lens send light to a rotating octagonal reflector, then to a distant mirror and back. The octagon rotates by 45 degrees during the round trip so the next facet replaces the first. The paths and dimensions are schematic.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#34465e"/>
+    </marker>
+  </defs>
+  <rect width="1100" height="600" rx="16" fill="#fff"/>
+  <g font-family="Arial, sans-serif" fill="#172033">
+    <text x="550" y="40" text-anchor="middle" font-size="25" font-weight="bold">Light return matched to polygon rotation</text>
+    <polygon points="150,105 240,105 305,170 305,260 240,325 150,325 85,260 85,170" fill="#f1f4f7" stroke="#34465e" stroke-width="3"/>
+    <circle cx="195" cy="215" r="14" fill="#bcc5cf" stroke="#526780" stroke-width="2"/>
+    <path d="M 171 246 A 40 40 0 1 1 230 196" fill="none" stroke="#34465e" stroke-width="2" marker-end="url(#arrow)"/>
+    <line x1="249" y1="316" x2="298" y2="267" stroke="#b22222" stroke-width="6"/>
+    <line x1="296" y1="180" x2="296" y2="245" stroke="#6a3d9a" stroke-width="6"/>
+    <text x="235" y="283" font-size="23">1</text>
+    <text x="268" y="208" font-size="23">2</text>
+    <path d="M 1040 245 Q 1070 320 1040 395" fill="none" stroke="#526780" stroke-width="6"/>
+    <g stroke="#34465e" stroke-width="2" fill="none">
+      <path d="M 270 520 L 253 435 L 270 305 L 1055 320"/>
+      <path d="M 1055 320 L 285 330 L 287 435 L 270 520"/>
+      <line x1="480" y1="309" x2="590" y2="311" marker-end="url(#arrow)"/>
+      <line x1="820" y1="323" x2="710" y2="325" marker-end="url(#arrow)"/>
+    </g>
+    <path d="M 220 435 Q 270 460 320 435 Z" fill="#dceaf6" stroke="#526780" stroke-width="2"/>
+    <circle cx="270" cy="520" r="4" fill="#34465e"/>
+    <text x="288" y="530" font-size="24">S</text>
+    <text x="350" y="435" font-size="20">Lens</text>
+    <text x="690" y="270" text-anchor="middle" font-size="24">One-way distance L &gt; 10 km</text>
+    <text x="690" y="425" text-anchor="middle" font-size="23">Round-trip time T = 2L/c</text>
+    <text x="690" y="470" text-anchor="middle" font-size="23">Facet replacement: θ = ωT = 45°</text>
+    <text x="550" y="575" text-anchor="middle" font-size="17" fill="#566174">Successive facet positions are indicated schematically; optical path and sizes are not to scale.</text>
+  </g>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="520" viewBox="0 0 1000 520" role="img" aria-labelledby="title desc">
+  <title id="title">Gravitomagnetic effects of mass currents</title>
+  <desc id="desc">Parallel mass currents are shown repelling. Two spheres rotating in the same sense have opposing facing currents and show gravitomagnetic attraction, as described in the source.</desc>
+  <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8Z" fill="#386c91"/></marker></defs>
+  <rect width="1000" height="520" fill="white"/>
+  <g font-family="Arial, sans-serif" fill="#253544" font-size="23">
+    <text x="235" y="35">Parallel mass currents: repulsion</text>
+    <path d="M260 112 Q480 112 737 63 M260 153 Q480 153 737 203" fill="none" stroke="#386c91" stroke-width="3" marker-end="url(#arrow)"/>
+    <circle cx="348" cy="109" r="13" fill="#4a92b8"/><circle cx="348" cy="156" r="13" fill="#aa6357"/>
+    <circle cx="322" cy="338" r="110" fill="#9dbcc8" stroke="#5b879a" stroke-width="2"/>
+    <circle cx="731" cy="338" r="76" fill="#b9bdc1" stroke="#747e87" stroke-width="2"/>
+    <text x="289" y="346">Body 1</text><text x="697" y="346">Body 2</text>
+    <path d="M290 204 C391 187 389 225 294 220 M701 245 C781 231 782 260 703 265" fill="none" stroke="#386c91" stroke-width="3" marker-end="url(#arrow)"/>
+    <path d="M434 282 C494 301 494 378 437 400 M650 399 C595 376 595 301 650 280" fill="none" stroke="#386c91" stroke-width="4" marker-end="url(#arrow)"/>
+    <path d="M463 338 H521 M602 338 H545" fill="none" stroke="#386c91" stroke-width="3" marker-end="url(#arrow)"/>
+    <text x="340" y="487">Facing antiparallel currents: attraction</text>
+  </g>
+</svg>

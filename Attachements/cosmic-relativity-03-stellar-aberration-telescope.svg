@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="720" viewBox="0 0 700 720" role="img" aria-labelledby="title desc">
+  <title id="title">Telescope inclination in stellar aberration</title>
+  <desc id="desc">A telescope of length L moves horizontally with velocity v. Solid and dashed telescope and sight-line positions lead to stellar directions labelled phi and theta. Their small angular difference is exaggerated.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#34465e"/>
+    </marker>
+  </defs>
+  <rect width="700" height="720" rx="16" fill="#fff"/>
+  <g font-family="Arial, sans-serif" fill="#172033">
+    <rect x="150" y="630" width="300" height="25" fill="#d5dce3" stroke="#526780" stroke-width="2"/>
+    <g transform="rotate(18 280 630)">
+      <rect x="248" y="310" width="64" height="320" fill="#f6d3b5" fill-opacity="0.45" stroke="#b22222" stroke-width="2" stroke-dasharray="7 4"/>
+    </g>
+    <g transform="rotate(25 280 630)">
+      <rect x="248" y="310" width="64" height="320" fill="#e9a86e" fill-opacity="0.55" stroke="#b22222" stroke-width="2"/>
+    </g>
+    <line x1="280" y1="630" x2="450" y2="70" stroke="#1f4e8c" stroke-width="2" stroke-dasharray="7 5"/>
+    <line x1="280" y1="630" x2="530" y2="70" stroke="#1f4e8c" stroke-width="2"/>
+    <g fill="#91b9dc" stroke="#1f4e8c" stroke-width="2">
+      <path d="M 450 45 L 455 60 L 470 65 L 455 70 L 450 85 L 445 70 L 430 65 L 445 60 Z"/>
+      <path d="M 530 45 L 535 60 L 550 65 L 535 70 L 530 85 L 525 70 L 510 65 L 525 60 Z"/>
+    </g>
+    <line x1="402" y1="225" x2="450" y2="225" stroke="#526780" stroke-width="2"/>
+    <line x1="445" y1="260" x2="495" y2="260" stroke="#526780" stroke-width="2"/>
+    <text x="416" y="210" font-size="29">θ</text>
+    <text x="465" y="245" font-size="29">φ</text>
+    <text x="230" y="465" font-size="29">L</text>
+    <line x1="420" y1="595" x2="550" y2="595" stroke="#34465e" stroke-width="3" marker-end="url(#arrow)"/>
+    <text x="480" y="575" text-anchor="middle" font-size="29">v</text>
+    <text x="350" y="695" text-anchor="middle" font-size="18" fill="#566174">Schematic inclination and directions; angular difference exaggerated.</text>
+  </g>
+</svg>

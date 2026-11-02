@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="800" viewBox="0 0 850 800" role="img" aria-labelledby="title desc">
+  <title id="title">The source's cosmic-current interpretation of cyclone deflection</title>
+  <desc id="desc">Four radial flows toward a low-pressure eye are bent by the author's cosmic gravitomagnetic interaction. Solid lines are rotating-frame paths, dashed lines are external inertial-frame views, and concentric outer arrows represent cosmic matter current.</desc>
+  <defs><marker id="dark" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8Z" fill="#334c60"/></marker><marker id="red" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8Z" fill="#a7524b"/></marker><g id="flow"><path d="M0 -250 V-20" fill="none" stroke="#a9b4bd" stroke-width="1.5"/><path d="M0 -250 C-7 -160 -63 -78 -51 -38 Q-34 -3 -9 -10" fill="none" stroke="#a7524b" stroke-width="2.5" marker-end="url(#red)"/><path d="M-94 -185 C-91 -106 -70 -53 -51 -38 Q-34 -3 -9 -10" fill="none" stroke="#a7524b" stroke-width="2" stroke-dasharray="7 5"/><path d="M-63 -76 L-104 -90" fill="none" stroke="#334c60" stroke-width="2" marker-end="url(#dark)"/></g></defs>
+  <rect width="850" height="800" fill="white"/>
+  <g fill="none" stroke="#334c60" stroke-width="2" marker-end="url(#dark)"><path d="M425 52 A330 330 0 1 1 95 382 M425 67 A315 315 0 1 1 110 382 M425 82 A300 300 0 1 1 125 382"/></g>
+  <circle cx="425" cy="382" r="255" fill="#f5f8fa" stroke="#7194ad" stroke-width="2"/>
+  <use href="#flow" x="425" y="382"/><use href="#flow" transform="translate(425 382) rotate(90)"/><use href="#flow" transform="translate(425 382) rotate(180)"/><use href="#flow" transform="translate(425 382) rotate(270)"/>
+  <circle cx="425" cy="382" r="12" fill="white" stroke="#a7524b" stroke-width="2"/>
+  <g font-family="Arial, sans-serif" fill="#253544" font-size="21">
+    <text x="192" y="29" font-weight="bold">Cosmic current and radial wind inflow</text><text x="457" y="239" fill="#a7524b">View-i: external inertial frame</text><text x="494" y="342" fill="#a7524b">View-r: Earth frame</text><text x="278" y="563">Flow-0: radial reference</text><text x="442" y="419">Low-pressure eye</text>
+    <text x="113" y="740" font-size="18">Solid: curved Earth-frame path · Dashed: inertial-frame view</text><text x="132" y="773" font-size="18">Outer circles: relative cosmic matter current (schematic)</text>
+  </g>
+</svg>

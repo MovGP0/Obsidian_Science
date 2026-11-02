@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="650" viewBox="0 0 800 650" role="img" aria-labelledby="title desc">
+  <title id="title">Coordinate choices in Einstein's hole argument</title>
+  <desc id="desc">A matter-filled region surrounds an empty circular hole. Blue and red coordinate grids coincide outside the hole but differ inside it.</desc>
+  <rect width="800" height="650" fill="white"/>
+  <rect x="70" y="65" width="660" height="500" rx="30" fill="#e5ecf1"/>
+  <circle cx="400" cy="315" r="135" fill="white" stroke="#8b99a4" stroke-width="2"/>
+  <g fill="none" stroke="#3d7098" stroke-width="4">
+    <path d="M110 155 H690 M110 235 H690 M110 315 H690 M110 395 H690 M110 475 H690 M160 100 V530 M240 100 V530 M320 100 V530 M400 100 V530 M480 100 V530 M560 100 V530 M640 100 V530"/>
+  </g>
+  <g fill="none" stroke="#b96c37" stroke-width="2">
+    <path d="M110 155 H690 M110 235 H290 C350 235 340 265 400 265 S475 235 510 235 H690 M110 315 H265 C325 315 340 351 400 351 S480 315 535 315 H690 M110 395 H290 C350 395 350 420 400 420 S470 395 510 395 H690 M110 475 H690 M160 100 V530 M240 100 V530 M320 100 V206 C320 265 351 285 351 330 S320 393 320 424 V530 M400 100 V180 C400 240 435 260 435 315 S400 400 400 450 V530 M480 100 V206 C480 265 500 285 500 330 S480 393 480 424 V530 M560 100 V530 M640 100 V530"/>
+  </g>
+  <g font-family="Arial, sans-serif" fill="#253544" font-size="22">
+    <text x="153" y="40">Same coordinates outside; different choices inside</text>
+    <rect x="327" y="297" width="149" height="36" fill="white" fill-opacity="0.92"/>
+    <text x="345" y="323">Empty hole</text>
+    <text x="118" y="605">Surrounding region: the same matter distribution</text>
+  </g>
+</svg>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" role="img" aria-labelledby="title desc">
+  <title id="title">Straight and looped one-way propagation paths</title>
+  <desc id="desc">A long straight path needs separated endpoint clocks. Bending it into a rectangular loop brings emission and reception near one another without retracing the path. The entire apparatus translates during propagation.</desc>
+  <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#263238"/></marker><g id="clock"><circle r="23" fill="#e3f2fd" stroke="#263238" stroke-width="2"/><path d="M0 -16 V0 L12 8" fill="none" stroke="#263238" stroke-width="2"/></g></defs>
+  <rect width="1000" height="600" fill="white"/>
+  <g font-family="Arial, sans-serif" font-size="22" fill="#18242b">
+    <text x="35" y="38" font-weight="bold">1  Straight path</text>
+    <path d="M95 110 H850" fill="none" stroke="#263238" stroke-width="5"/>
+    <path d="M850 110 H920" fill="none" stroke="#607d8b" stroke-width="5" stroke-dasharray="7 5"/>
+    <path d="M115 73 H830" fill="none" stroke="#263238" stroke-width="2" marker-end="url(#arrow)"/><text x="475" y="65" text-anchor="middle">L</text>
+    <text x="91" y="97">A</text><text x="838" y="97">B</text><use href="#clock" x="95" y="150"/><use href="#clock" x="850" y="150"/>
+    <g opacity="0.45"><text x="161" y="97">A</text><text x="908" y="97">B</text><use href="#clock" x="165" y="150"/><use href="#clock" x="920" y="150"/></g>
+    <path d="M165 193 H235" fill="none" stroke="#263238" stroke-width="2" marker-end="url(#arrow)"/><text x="253" y="201">v Δt</text>
+    <text x="35" y="263" font-weight="bold">2  Loop at emission</text>
+    <path d="M257 389 H435 V319 H65 V389 H243" fill="none" stroke="#263238" stroke-width="5"/>
+    <text x="251" y="308" text-anchor="middle">2l</text><text x="445" y="360">h</text>
+    <text x="48" y="413">a</text><text x="439" y="413">b</text><text x="439" y="308">c</text><text x="48" y="308">d</text>
+    <text x="255" y="376">A</text><text x="225" y="376">B</text><use href="#clock" x="267" y="435"/><use href="#clock" x="219" y="435"/>
+    <path d="M285 389 H338" fill="none" stroke="#263238" stroke-width="2" marker-end="url(#arrow)"/><text x="348" y="421">l</text>
+    <text x="535" y="263" font-weight="bold">3  Loop at reception</text>
+    <path d="M550 319 H920 V389 H550 Z" fill="none" stroke="#b0bec5" stroke-width="2" stroke-dasharray="6 5"/>
+    <path d="M807 389 H985 V319 H615 V389 H793" fill="none" stroke="#263238" stroke-width="5"/>
+    <text x="805" y="376">A</text><text x="775" y="376">B</text><use href="#clock" x="817" y="435"/><use href="#clock" x="769" y="435"/>
+    <path d="M631 476 H696" fill="none" stroke="#263238" stroke-width="2" marker-end="url(#arrow)"/><text x="710" y="485">v Δt</text>
+    <text x="500" y="545" text-anchor="middle">A and B move together; the one-way path keeps its physical length L.</text>
+    <text x="500" y="575" text-anchor="middle">Looping brings the endpoint clocks close enough to use one clock.</text>
+  </g>
+</svg>

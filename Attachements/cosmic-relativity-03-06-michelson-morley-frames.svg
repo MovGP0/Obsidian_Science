@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1140" height="430" viewBox="0 0 1140 430" role="img" aria-labelledby="title desc">
+  <title id="title">Michelson-Morley interferometer in three descriptions</title>
+  <desc id="desc">Panel a shows orthogonal arms from a beam splitter to two mirrors, with interference at the output. Panel b shows the apparatus translating in an external frame. Panel c labels the source's Galilean relative speeds: c minus v outward, c plus v on return, and c times square root of one minus v squared over c squared in the transverse arm.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#1f4e8c"/>
+    </marker>
+  </defs>
+  <rect width="1140" height="430" rx="16" fill="#fff"/>
+  <g font-family="Arial, sans-serif" fill="#172033">
+    <g fill="#fff" stroke="#9aaabd" stroke-width="2">
+      <rect x="15" y="60" width="350" height="315" rx="22"/>
+      <rect x="395" y="60" width="350" height="315" rx="22"/>
+      <rect x="775" y="60" width="350" height="315" rx="22"/>
+    </g>
+    <g text-anchor="middle" font-size="22" font-weight="bold">
+      <text x="190" y="35">a — Apparatus</text>
+      <text x="570" y="35">b — External frame</text>
+      <text x="950" y="35">c — Moving frame</text>
+    </g>
+    <g fill="#5e8ab8" stroke="#1f4e8c" stroke-width="2">
+      <rect x="88" y="95" width="44" height="9"/>
+      <rect x="315" y="235" width="9" height="44"/>
+      <rect x="478" y="95" width="44" height="9"/>
+      <rect x="695" y="235" width="9" height="44"/>
+      <rect x="848" y="95" width="44" height="9"/>
+      <rect x="1075" y="235" width="9" height="44"/>
+    </g>
+    <g fill="#c6dfd4" stroke="#526780" stroke-width="2">
+      <path d="M 92 273 L 124 241 L 133 250 L 101 282 Z"/>
+      <path d="M 482 273 L 514 241 L 523 250 L 491 282 Z"/>
+      <path d="M 852 273 L 884 241 L 893 250 L 861 282 Z"/>
+    </g>
+    <g fill="none" stroke="#1f4e8c" stroke-width="2" marker-end="url(#arrow)">
+      <path d="M 35 262 H 110 V 108"/>
+      <path d="M 110 108 V 262 H 312"/>
+      <path d="M 312 268 H 116 V 330"/>
+      <path d="M 415 262 H 475 L 500 108 L 510 262 H 692"/>
+      <path d="M 692 270 H 510 V 330"/>
+      <path d="M 795 262 H 870 V 108"/>
+      <path d="M 870 108 V 262 H 1072"/>
+      <path d="M 1072 270 H 876 V 330"/>
+      <path d="M 570 180 H 650"/>
+    </g>
+    <g fill="none" stroke="#9aaabd" stroke-width="2" stroke-dasharray="6 4">
+      <path d="M 452 273 L 484 241 L 493 250 L 461 282 Z"/>
+      <rect x="448" y="95" width="44" height="9"/>
+      <rect x="665" y="235" width="9" height="44"/>
+    </g>
+    <g font-size="22">
+      <text x="70" y="185">L′</text>
+      <text x="210" y="247">L</text>
+      <text x="136" y="235">BS</text>
+      <text x="141" y="104">M</text>
+      <text x="325" y="226">M</text>
+      <text x="610" y="164">v</text>
+      <text x="895" y="180">c√(1 − v²/c²)</text>
+      <text x="950" y="247" fill="#b22222">c − v</text>
+      <text x="950" y="303">c + v</text>
+      <text x="180" y="339">ΔT = 2L/c</text>
+    </g>
+    <g fill="#222">
+      <rect x="75" y="332" width="7" height="24"/>
+      <rect x="89" y="332" width="7" height="24"/>
+      <rect x="103" y="332" width="7" height="24"/>
+      <rect x="117" y="332" width="7" height="24"/>
+    </g>
+    <text x="570" y="411" text-anchor="middle" font-size="17" fill="#566174">Schematic geometry and source relative-speed model; mirror displacement in b is exaggerated.</text>
+  </g>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="620" viewBox="0 0 1000 620" role="img" aria-labelledby="title desc">
+  <title id="title">A standard angular ruler in three spatial geometries</title>
+  <desc id="desc">An object of fixed intrinsic size is seen at the same distance in flat, positively curved, and negatively curved space. Dashed apparent outlines are larger for positive curvature and smaller for negative curvature.</desc>
+  <defs><marker id="arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0 L7 3.5 L0 7Z" fill="#294a66"/></marker><marker id="both" markerWidth="7" markerHeight="7" refX="1" refY="3.5" orient="auto"><path d="M7 0 L0 3.5 L7 7Z" fill="#294a66"/></marker></defs>
+  <rect width="1000" height="620" fill="white"/>
+  <g fill="none" stroke="#294a66" stroke-width="2">
+    <circle cx="170" cy="135" r="55"/><circle cx="500" cy="135" r="55"/><circle cx="830" cy="135" r="55"/>
+    <path d="M115 135 L170 498 L225 135 M445 135 L500 498 L555 135 M775 135 L830 498 L885 135"/>
+    <path d="M170 480 V147 M500 480 V147 M830 480 V147" marker-end="url(#arrow)"/>
+    <circle cx="500" cy="135" r="86" stroke-dasharray="7 5"/><path d="M414 135 L500 498 L586 135" stroke-dasharray="7 5"/>
+    <circle cx="830" cy="135" r="31" stroke-dasharray="7 5"/><path d="M799 135 L830 498 L861 135" stroke-dasharray="7 5"/>
+    <path d="M120 135 H220 M419 135 H581 M803 135 H857" marker-start="url(#both)" marker-end="url(#arrow)"/>
+  </g>
+  <g font-family="Arial, sans-serif" fill="#253544" font-size="23">
+    <text x="72" y="35" font-weight="bold">(a) Flat, k = 0</text><text x="386" y="35" font-weight="bold">(b) Positive, k = +1</text><text x="716" y="35" font-weight="bold">(c) Negative, k = −1</text>
+    <text x="161" y="117" font-style="italic">l</text><text x="489" y="117" font-style="italic">l′</text><text x="843" y="280" font-style="italic">d</text><text x="513" y="280" font-style="italic">d</text><text x="183" y="280" font-style="italic">d</text>
+    <text x="182" y="512">O</text><text x="513" y="512">O</text><text x="843" y="512">O</text>
+    <text x="106" y="564">θ = l/d</text><text x="406" y="564">Appears larger</text><text x="725" y="564">Appears smaller</text>
+  </g>
+</svg>

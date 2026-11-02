@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="520" viewBox="0 0 1000 520" role="img" aria-labelledby="title desc">
+  <title id="title">Gravitational potential contributions near Earth</title>
+  <desc id="desc">A schematic comparison of the magnitudes of the gravitational potentials of Earth, the Sun, and the Milky Way at Earth. The source gives orders of magnitude of ten to the eight, ten to the nine, and ten to the eleven square metres per square second. Distances and sizes are not to scale.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#4b5563"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="520" rx="16" fill="#fff"/>
+  <g font-family="Arial, sans-serif" fill="#172033">
+    <text x="500" y="40" text-anchor="middle" font-size="25" font-weight="bold">Gravitational potential at Earth</text>
+    <ellipse cx="500" cy="275" rx="455" ry="177" fill="#f0ede1" stroke="#9c998b" stroke-width="3"/>
+    <text x="500" y="95" text-anchor="middle" font-size="22">Milky Way: |Φ_G| ≈ GM_G/R_G ≈ 10¹¹ m²/s²</text>
+    <text x="650" y="385" text-anchor="middle" font-size="24" font-weight="bold">Distant masses dominate</text>
+    <circle cx="265" cy="315" r="24" fill="#f8d64e" stroke="#b97816" stroke-width="2"/>
+    <text x="265" y="265" text-anchor="middle" font-size="20">Sun</text>
+    <circle cx="390" cy="315" r="12" fill="#7ba6d1" stroke="#31557d" stroke-width="2"/>
+    <text x="410" y="300" font-size="19">Earth</text>
+    <line x1="289" y1="315" x2="376" y2="315" stroke="#4b5563" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="220" y="430" font-size="21">|Φ_S| ≈ GM☉/r_(E−S) ≈ 10⁹ m²/s²</text>
+    <path d="M 390 302 L 550 215" fill="none" stroke="#4b5563" stroke-width="2" stroke-dasharray="7 5"/>
+    <rect x="525" y="135" width="390" height="110" rx="10" fill="#fff" stroke="#31557d" stroke-width="2"/>
+    <text x="720" y="169" text-anchor="middle" font-size="20">Local potential at Earth's surface</text>
+    <text x="720" y="210" text-anchor="middle" font-size="22">|Φ_E| ≈ GM_E/R_E ≈ 10⁸ m²/s²</text>
+    <text x="500" y="495" text-anchor="middle" font-size="17" fill="#566174">Source orders of magnitude; potential magnitudes shown; schematic, not to scale.</text>
+  </g>
+</svg>

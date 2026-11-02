@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="470" viewBox="0 0 1000 470" role="img" aria-labelledby="title desc">
+  <title id="title">Milky Way and Magellanic Clouds</title>
+  <desc id="desc">A schematic sky view identifies the Milky Way band, the Large Magellanic Cloud, and the Small Magellanic Cloud. It replaces the source photograph and does not give precise sky coordinates or angular sizes.</desc>
+  <rect width="1000" height="470" fill="#142335"/>
+  <path d="M35 290 Q490 -85 965 260 L965 335 Q500 50 35 370Z" fill="#69758c" opacity="0.65"/>
+  <path d="M35 322 Q490 -35 965 293" fill="none" stroke="#b9b6c6" stroke-width="34" opacity="0.45"/>
+  <path d="M35 320 Q490 -25 965 292" fill="none" stroke="#263547" stroke-width="13" opacity="0.8"/>
+  <ellipse cx="525" cy="335" rx="35" ry="19" transform="rotate(-22 525 335)" fill="#b8c9db" opacity="0.8"/>
+  <ellipse cx="665" cy="302" rx="21" ry="13" transform="rotate(-25 665 302)" fill="#b8c9db" opacity="0.75"/>
+  <g fill="#e0e7ee"><circle cx="75" cy="74" r="2"/><circle cx="213" cy="144" r="2"/><circle cx="332" cy="72" r="2"/><circle cx="478" cy="222" r="2"/><circle cx="607" cy="75" r="2"/><circle cx="834" cy="150" r="2"/><circle cx="926" cy="68" r="2"/><circle cx="183" cy="341" r="2"/><circle cx="781" cy="363" r="2"/><circle cx="896" cy="395" r="2"/></g>
+  <g font-family="Arial, sans-serif" fill="#f2f5f8" font-size="23">
+    <text x="371" y="63">Milky Way band</text><text x="430" y="383">Large Magellanic Cloud</text><text x="642" y="267">Small Magellanic Cloud</text>
+    <text x="180" y="443" font-size="18">Explanatory sky schematic; positions and sizes are not to scale.</text>
+  </g>
+</svg>

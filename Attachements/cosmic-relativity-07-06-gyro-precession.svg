@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="540" viewBox="0 0 1100 540" role="img" aria-labelledby="title desc">
+  <title id="title">Magnetic and gravitomagnetic gyroscope precession</title>
+  <desc id="desc">A tilted magnetic moment precesses in a uniform magnetic field. An orbiting gyroscope similarly precesses in the dipolar gravitomagnetic field of rotating Earth.</desc>
+  <defs><marker id="blue" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0 L7 3.5 L0 7Z" fill="#426c91"/></marker><marker id="red" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0 L7 3.5 L0 7Z" fill="#b94b4b"/></marker></defs>
+  <rect width="1100" height="540" fill="white"/>
+  <g fill="none" stroke="#426c91" stroke-width="2" marker-end="url(#blue)">
+    <path d="M60 363 V150 M105 363 V150 M150 363 V150 M195 363 V150 M240 363 V150"/>
+    <path d="M684 177 C570 -80 358 15 437 363 C494 580 657 496 684 363 M698 177 C609 11 484 86 525 341 C559 498 668 445 698 363 M713 177 C662 77 570 128 608 326 C630 426 687 412 713 363 M771 177 C884 -80 1095 15 1016 363 C960 580 797 496 771 363 M756 177 C844 11 970 86 929 341 C895 498 786 445 756 363 M741 177 C792 77 884 128 846 326 C824 426 767 412 741 363"/>
+  </g>
+  <circle cx="728" cy="270" r="95" fill="#c3d1b0" stroke="#6a858f" stroke-width="2"/>
+  <circle cx="538" cy="174" r="18" fill="#c86a65"/><circle cx="152" cy="296" r="19" fill="#c86a65"/>
+  <g fill="none" stroke="#b94b4b" stroke-width="3" marker-end="url(#red)">
+    <path d="M168 323 L123 238 M117 224 C216 196 235 250 148 251 M513 158 C477 98 590 93 591 152 M825 277 C887 247 891 310 828 319"/>
+  </g>
+  <g font-family="Arial, sans-serif" fill="#253544" font-size="22">
+    <text x="35" y="35" font-weight="bold">(a) Magnetic moment</text><text x="615" y="35" font-weight="bold">(b) Orbiting gyroscope</text>
+    <text x="257" y="167">B</text><text x="95" y="219">μ</text><text x="700" y="277">Earth</text>
+    <text x="34" y="461" font-size="19">A tilted moment precesses in the field.</text><text x="480" y="501" font-size="19">Gyroscope precession probes Earth’s gravitomagnetic field.</text>
+  </g>
+</svg>

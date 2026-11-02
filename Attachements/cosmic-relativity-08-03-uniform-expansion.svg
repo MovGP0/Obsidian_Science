@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="520" viewBox="0 0 1100 520" role="img" aria-labelledby="title desc">
+  <title id="title">Uniform expansion and a linear velocity–distance law</title>
+  <desc id="desc">A small comoving cube and its spherical region expand uniformly between two epochs. Galaxy separation doubles while velocities at twice the distance are twice as large at each epoch.</desc>
+  <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8Z" fill="#294a66"/></marker></defs>
+  <rect width="1100" height="520" fill="white"/>
+  <g fill="none" stroke="#6f7f8c" stroke-width="2">
+    <path d="M55 200 H305 V420 H55Z M55 200 L120 144 H370 V364 L305 420 M305 200 L370 144 M120 144 V364 H370 M55 420 L120 364"/>
+    <path d="M580 130 H910 V420 H580Z M580 130 L690 55 H1020 V345 L910 420 M910 130 L1020 55 M690 55 V345 H1020 M580 420 L690 345"/>
+  </g>
+  <circle cx="217" cy="271" r="76" fill="#bccbd3" fill-opacity="0.65" stroke="#8799a4"/><circle cx="800" cy="226" r="126" fill="#bccbd3" fill-opacity="0.65" stroke="#8799a4"/>
+  <g stroke="#768c9a" stroke-width="1.5"><path d="M146 175 V350 M195 175 V350 M244 175 V350 M293 175 V350 M659 94 V361 M734 94 V361 M809 94 V361 M884 94 V361"/></g>
+  <g fill="#294a66"><circle cx="141" cy="374" r="5"/><circle cx="194" cy="374" r="5"/><circle cx="247" cy="374" r="5"/><circle cx="141" cy="330" r="5"/><circle cx="194" cy="330" r="5"/><circle cx="247" cy="330" r="5"/><circle cx="661" cy="366" r="6"/><circle cx="742" cy="366" r="6"/><circle cx="823" cy="366" r="6"/><circle cx="661" cy="300" r="6"/><circle cx="742" cy="300" r="6"/><circle cx="823" cy="300" r="6"/></g>
+  <g fill="none" stroke="#294a66" stroke-width="2" marker-end="url(#arrow)"><path d="M145 385 H195 M145 348 H245 M665 382 H744 M665 321 H823 M414 275 H509"/></g>
+  <g font-family="Arial, sans-serif" fill="#253544" font-size="22">
+    <text x="75" y="55" font-weight="bold">Earlier epoch</text><text x="750" y="32" font-weight="bold">Later epoch</text>
+    <text x="145" y="451">v(d) = Hd</text><text x="117" y="479">v(2d) = 2Hd</text>
+    <text x="697" y="451">v(d) = H₀d</text><text x="682" y="479">v(2d) = 2H₀d</text><text x="405" y="329">H &gt; H₀</text>
+  </g>
+</svg>

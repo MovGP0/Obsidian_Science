@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1110" height="540" viewBox="0 0 1110 540" role="img" aria-labelledby="title desc">
+  <title id="title">Rotating conductor and magnet in unipolar induction</title>
+  <desc id="desc">Three top-view schematics distinguish a rotating conductor above a stationary magnet, a rotating magnet below a stationary conductor, and common rotation. Only conductor rotation gives a radial electromotive force in the author's account.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#263238"/></marker>
+    <marker id="red-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#b71c1c"/></marker>
+    <g id="disc"><circle cx="175" cy="230" r="137" fill="#eceff1" stroke="#263238" stroke-width="3"/><circle cx="175" cy="230" r="128" fill="none" stroke="#607d8b" stroke-width="2"/></g>
+    <g id="current"><path d="M124 112 A128 128 0 0 1 208 106 M226 348 A128 128 0 0 1 142 354" fill="none" stroke="#263238" stroke-width="3" marker-end="url(#arrow)"/><text x="162" y="145">Iₘ</text></g>
+    <g id="rod"><path d="M175 230 L280 138" stroke="#263238" stroke-width="7"/><circle cx="233" cy="179" r="10" fill="white" stroke="#263238" stroke-width="2"/><text x="233" y="186" text-anchor="middle">−</text></g>
+    <g id="emf"><path d="M194 213 L251 161" stroke="#b71c1c" stroke-width="3" stroke-dasharray="6 4" marker-end="url(#red-arrow)"/><text x="178" y="184" fill="#b71c1c">EMF</text></g>
+    <g id="rotate"><path d="M306 119 A173 173 0 0 1 348 220" fill="none" stroke="#263238" stroke-width="3" marker-end="url(#arrow)"/><text x="323" y="142">ω</text></g>
+  </defs>
+  <rect width="1110" height="540" fill="white"/>
+  <g font-family="Arial, sans-serif" font-size="20" fill="#18242b">
+    <g transform="translate(10 0)">
+      <text x="15" y="33" font-weight="bold">a  Only conductor rotates</text>
+      <text x="15" y="63">Magnet stationary</text>
+      <use href="#disc"/><use href="#current"/><use href="#rod"/><use href="#emf"/><use href="#rotate"/>
+      <path d="M241 194 L260 233" fill="none" stroke="#263238" stroke-width="3" marker-end="url(#arrow)"/><text x="266" y="219">qv</text>
+      <text x="175" y="421" text-anchor="middle">Moving charge interacts</text>
+      <text x="175" y="450" text-anchor="middle">with magnet current.</text>
+      <text x="175" y="488" text-anchor="middle" font-weight="bold" fill="#b71c1c">Radial EMF</text>
+    </g>
+    <g transform="translate(380 0)">
+      <text x="15" y="33" font-weight="bold">b  Only magnet rotates</text>
+      <text x="15" y="63">Conductor stationary</text>
+      <use href="#disc"/><use href="#rod"/><use href="#rotate"/>
+      <g font-size="27"><text x="164" y="120">+</text><text x="264" y="170">+</text><text x="288" y="242">+</text><text x="245" y="323">+</text><text x="164" y="357">+</text><text x="76" y="323">+</text><text x="48" y="242">+</text><text x="75" y="170">+</text></g>
+      <text x="175" y="268" text-anchor="middle">Uniform potential</text><text x="175" y="296" text-anchor="middle">inside boundary</text>
+      <text x="175" y="421" text-anchor="middle">Uniform boundary charge</text>
+      <text x="175" y="450" text-anchor="middle">gives no interior field.</text>
+      <text x="175" y="488" text-anchor="middle" font-weight="bold">No EMF</text>
+    </g>
+    <g transform="translate(750 0)">
+      <text x="15" y="33" font-weight="bold">c  Both rotate together</text>
+      <text x="15" y="63">No relative rotation</text>
+      <use href="#disc"/><use href="#current"/><use href="#rod"/><use href="#emf"/><use href="#rotate"/>
+      <g font-size="27"><text x="70" y="161">−</text><text x="49" y="245">−</text><text x="77" y="322">−</text><text x="264" y="313">−</text><text x="290" y="245">−</text></g>
+      <text x="175" y="280" text-anchor="middle">No electric field</text><text x="175" y="309" text-anchor="middle">from boundary charge</text>
+      <text x="175" y="421" text-anchor="middle">Current interaction remains;</text>
+      <text x="175" y="450" text-anchor="middle">no opposing electric force.</text>
+      <text x="175" y="488" text-anchor="middle" font-weight="bold" fill="#b71c1c">Radial EMF remains</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="390" viewBox="0 0 1100 390" role="img" aria-labelledby="title desc">
+  <title id="title">A straight moving frame mapped onto a rotating loop</title>
+  <desc id="desc">Two clocks at the ends of a moving linear frame become a single identified clock when the length is wrapped into a circular path.</desc>
+  <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8Z" fill="#253544"/></marker><g id="clock"><circle r="22" fill="white" stroke="#253544" stroke-width="2"/><path d="M0 -17 V-13 M17 0 H13 M0 17 V13 M-17 0 H-13 M0 0 V-12 M0 0 L10 6" stroke="#253544" stroke-width="2"/></g></defs>
+  <rect width="1100" height="390" fill="white"/>
+  <g font-family="Arial, sans-serif" fill="#253544" font-size="23">
+    <text x="30" y="38" font-weight="bold">(1) Moving linear frame</text>
+    <path d="M60 175 H593 V204 H60Z" fill="#eef2f6" stroke="#48638a" stroke-width="3"/>
+    <use href="#clock" x="60" y="175"/><use href="#clock" x="593" y="175"/>
+    <text x="50" y="247">A</text><text x="584" y="247">B</text><text x="318" y="157" font-style="italic">L</text>
+    <path d="M380 233 H490" stroke="#253544" stroke-width="2" marker-end="url(#arrow)"/><text x="433" y="268" font-style="italic">v</text>
+    <text x="735" y="38" font-weight="bold">(2) Frame looped around</text>
+    <circle cx="879" cy="199" r="139" fill="none" stroke="#253544" stroke-width="2"/><circle cx="879" cy="199" r="110" fill="none" stroke="#253544" stroke-width="2"/>
+    <use href="#clock" x="770" y="286"/>
+    <path d="M879 199 L753 225 M784 266 L811 302" stroke="#253544" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="806" y="190" font-style="italic">r</text><text x="679" y="133" font-style="italic">L = 2πr</text><text x="810" y="268" font-style="italic">v = rω</text><text x="724" y="317">A ≡ B</text>
+  </g>
+</svg>

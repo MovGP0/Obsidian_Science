@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620" role="img" aria-labelledby="title desc">
+  <title id="title">The cosmic gravitational paradigm</title>
+  <desc id="desc">The same clocks, falling bodies, light signals, rotating apparatus, pendulum, and electromagnetic experiment are shown on an empty background and on a cosmic-matter background. The comparison illustrates the author's proposed change of physical foundation.</desc>
+  <defs>
+    <g id="earth"><circle r="72" fill="#abc6d3" stroke="#597d91" stroke-width="2"/><path d="M-35 -49 L-5 -61 L21 -39 L11 -12 L34 5 L4 36 L-21 28 L-37 0Z" fill="#a4b783"/></g>
+    <g id="clock"><circle r="26" fill="white" stroke="#425c70" stroke-width="2"/><path d="M0 -19 V-15 M19 0 H15 M0 19 V15 M-19 0 H-15 M0 0 V-15 M0 0 L12 9" stroke="#425c70" stroke-width="2" fill="none"/></g>
+    <g id="experiments">
+      <use href="#earth" x="280" y="305"/>
+      <use href="#clock" x="107" y="358"/>
+      <circle cx="259" cy="151" r="10" fill="#627e99"/><circle cx="292" cy="151" r="10" fill="#bb7463"/>
+      <path d="M259 165 V207 M292 165 V207 M254 199 L259 207 L264 199 M287 199 L292 207 L297 199" fill="none" stroke="#425c70" stroke-width="2"/>
+      <path d="M352 171 L453 133" stroke="#d0a044" stroke-width="3"/><use href="#clock" x="352" y="171"/><use href="#clock" x="453" y="133"/>
+      <path d="M464 223 L491 303" stroke="#a74e4e" stroke-width="3"/><circle cx="491" cy="303" r="13" fill="#789bb0"/><path d="M456 315 Q485 337 520 309" fill="none" stroke="#789bb0" stroke-width="2" stroke-dasharray="5 5"/>
+      <circle cx="429" cy="396" r="53" fill="#e8edf0" stroke="#6d8798"/><path d="M400 367 H458 V425 H400Z" fill="none" stroke="#a79957" stroke-width="3"/>
+      <path d="M64 217 H183 L199 236 H80Z" fill="#c5cdd2" stroke="#4e6678"/><path d="M94 211 V187 M131 211 V187 M167 211 V187" stroke="#4e6678" stroke-width="2"/>
+    </g>
+  </defs>
+  <rect width="1200" height="620" fill="white"/>
+  <rect x="20" y="58" width="560" height="470" rx="15" fill="#ffffff" stroke="#b4c1cb"/><rect x="620" y="58" width="560" height="470" rx="15" fill="#e4ece5" stroke="#b4c1cb"/>
+  <g fill="#8da68c" opacity="0.5"><circle cx="660" cy="102" r="4"/><circle cx="764" cy="208" r="4"/><circle cx="1065" cy="113" r="4"/><circle cx="1141" cy="343" r="4"/><circle cx="698" cy="449" r="4"/><circle cx="913" cy="484" r="4"/><circle cx="1104" cy="480" r="4"/></g>
+  <use href="#experiments" x="0" y="0"/><use href="#experiments" x="600" y="0"/>
+  <g font-family="Arial, sans-serif" fill="#253544" font-size="22">
+    <text x="80" y="34" font-weight="bold">(a) Empty-background description</text><text x="682" y="34" font-weight="bold">(b) Cosmic-matter background</text>
+    <text x="55" y="480" font-size="18">Clocks · free fall · light · rotation · electrodynamics</text><text x="655" y="480" font-size="18">The same phenomena within cosmic gravity</text>
+    <text x="87" y="565">No preferred frame or universal time</text><text x="653" y="565">The author’s absolute frame and cosmic time</text>
+    <text x="253" y="604" font-size="18">Explanatory experiment icons replace the source photographs and composite imagery.</text>
+  </g>
+</svg>

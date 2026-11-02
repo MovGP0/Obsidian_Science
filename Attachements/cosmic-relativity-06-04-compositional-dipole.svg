@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="620" viewBox="0 0 1000 620" role="img" aria-labelledby="title desc">
+  <title id="title">Deep torsion-balance installation and compositional dipole</title>
+  <desc id="desc">An explanatory replacement for source photographs shows a torsion pendulum 25 metres below a surface building. Its ring has lead and copper halves and a uniform overall mass distribution.</desc>
+  <rect width="1000" height="620" fill="white"/>
+  <g font-family="Arial, sans-serif" fill="#253544" font-size="22">
+    <text x="35" y="38" font-weight="bold">Underground installation (schematic)</text>
+    <path d="M65 185 H480 V585 H65Z" fill="#eee7dc"/>
+    <path d="M30 185 H490" stroke="#68755a" stroke-width="5"/>
+    <path d="M132 183 V88 L190 55 H286 L338 88 V183Z" fill="#c99c80" stroke="#795d4b" stroke-width="2"/>
+    <path d="M190 185 V560 H290 V185" fill="white" stroke="#7c7d81" stroke-width="3"/>
+    <rect x="209" y="480" width="62" height="69" fill="#e6edf3" stroke="#5b6974"/>
+    <path d="M240 489 V527 M218 531 H262" stroke="#253544" stroke-width="2"/>
+    <path d="M366 194 V547 M359 202 L366 194 L373 202 M359 539 L366 547 L373 539" fill="none" stroke="#253544" stroke-width="2"/>
+    <text x="383" y="378">25 m</text>
+    <text x="570" y="38" font-weight="bold">Suspended compositional dipole</text>
+    <path d="M763 74 V241" stroke="#253544" stroke-width="2"/>
+    <ellipse cx="763" cy="323" rx="150" ry="89" fill="none" stroke="#576986" stroke-width="25"/>
+    <path d="M613 323 A150 89 0 0 0 913 323" fill="none" stroke="#b76348" stroke-width="25"/>
+    <path d="M763 241 L641 327 M763 241 L885 327" fill="none" stroke="#78838d" stroke-width="2"/>
+    <text x="746" y="279">Pb</text><text x="746" y="389">Cu</text>
+    <text x="580" y="464">Different composition in the two halves;</text>
+    <text x="580" y="497">a nearly uniform mass distribution.</text>
+    <text x="580" y="544" font-size="18">Explanatory drawing in place of photographs.</text>
+  </g>
+</svg>

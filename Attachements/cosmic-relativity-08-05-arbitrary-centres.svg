@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="630" viewBox="0 0 850 630" role="img" aria-labelledby="title desc">
+  <title id="title">Arbitrary spherical centres in a homogeneous medium</title>
+  <desc id="desc">A test point lies on several overlapping spheres drawn in a uniform medium. Selecting different sphere centres gives differently directed radial arrows, illustrating the author's objection to a centre-based net-force explanation.</desc>
+  <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8Z" fill="#33465a"/></marker></defs>
+  <rect width="850" height="630" fill="white"/>
+  <path d="M84 170 Q190 45 340 76 Q476 28 657 110 Q805 178 759 361 Q790 517 638 550 Q450 605 313 546 Q107 583 82 436 Q40 302 84 170Z" fill="#e1e5e7"/>
+  <g fill="none" stroke="#aaa57a" stroke-width="2"><circle cx="312" cy="250" r="136"/><circle cx="505" cy="217" r="136"/><circle cx="565" cy="385" r="136"/></g>
+  <circle cx="372" cy="418" r="136" fill="none" stroke="#33465a" stroke-width="2"/>
+  <g fill="none" stroke="#33465a" stroke-width="2" marker-end="url(#arrow)"><path d="M432 331 L372 418"/><path d="M432 331 L312 250 M432 331 L505 217 M432 331 L565 385" stroke-dasharray="7 6"/></g>
+  <circle cx="432" cy="331" r="7" fill="white" stroke="#33465a" stroke-width="2"/>
+  <g font-family="Arial, sans-serif" fill="#253544" font-size="22"><text x="275" y="38">Uniform matter; no preferred centre</text><text x="375" y="379" font-style="italic">a</text><text x="186" y="603">Different chosen spheres suggest different radial directions.</text></g>
+</svg>

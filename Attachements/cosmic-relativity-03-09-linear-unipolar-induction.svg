@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1140" height="360" viewBox="0 0 1140 360" role="img" aria-labelledby="title desc">
+  <title id="title">Linear unipolar induction cases</title>
+  <desc id="desc">Three panels compare a conductor moving over a stationary bar magnet, a magnet moving under a stationary conductor, and both moving together. The first two cases produce an emf; common translation produces none.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#34465e"/></marker>
+    <g id="magnet">
+      <path d="M 35 145 L 75 105 H 335 L 300 145 Z" fill="#e0e5eb" stroke="#526780" stroke-width="2"/>
+      <path d="M 35 145 H 300 V 220 H 35 Z" fill="#bec9d5" stroke="#526780" stroke-width="2"/>
+      <path d="M 300 145 L 335 105 V 180 L 300 220 Z" fill="#9faebf" stroke="#526780" stroke-width="2"/>
+      <line x1="35" y1="184" x2="300" y2="184" stroke="#526780" stroke-width="2"/>
+      <text x="110" y="135" font-size="23">N</text><text x="110" y="250" font-size="23">S</text>
+      <line x1="165" y1="175" x2="245" y2="80" stroke="#222" stroke-width="4"/>
+    </g>
+  </defs>
+  <rect width="1140" height="360" rx="16" fill="#fff"/>
+  <g font-family="Arial, sans-serif" fill="#172033">
+    <g transform="translate(0 20)">
+      <use href="#magnet"/>
+      <text x="190" y="25" text-anchor="middle" font-size="23">v_C ≠ 0, v_M = 0, E ≠ 0</text>
+      <path d="M 250 80 H 305" fill="none" stroke="#34465e" stroke-width="3" marker-end="url(#arrow)"/>
+      <text x="190" y="305" text-anchor="middle" font-size="21">a — Conductor moves</text>
+    </g>
+    <g transform="translate(380 20)">
+      <use href="#magnet"/>
+      <text x="190" y="25" text-anchor="middle" font-size="23">v_M ≠ 0, v_C = 0, E ≠ 0</text>
+      <path d="M 245 260 H 185" fill="none" stroke="#34465e" stroke-width="3" marker-end="url(#arrow)"/>
+      <text x="190" y="305" text-anchor="middle" font-size="21">b — Magnet moves</text>
+    </g>
+    <g transform="translate(760 20)">
+      <use href="#magnet"/>
+      <text x="190" y="25" text-anchor="middle" font-size="23">v_C = v_M, E = 0</text>
+      <path d="M 250 80 H 305 M 205 260 H 265" fill="none" stroke="#34465e" stroke-width="3" marker-end="url(#arrow)"/>
+      <text x="190" y="305" text-anchor="middle" font-size="21">c — Both move together</text>
+    </g>
+  </g>
+</svg>

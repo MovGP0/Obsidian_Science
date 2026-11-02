@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="650" viewBox="0 0 1100 650" role="img" aria-labelledby="title desc">
+  <title id="title">Roemer's method using Io's eclipses</title>
+  <desc id="desc">Earth's orbit and Jupiter's orbit are shown with a radius ratio of about one to 5.2. A line joins Earth near quadrature to Jupiter. An explanatory timing panel replaces the historical handwritten ledger: eclipse arrivals are closer together as Earth approaches Jupiter and farther apart as Earth recedes. The timing differences are exaggerated.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#34465e"/>
+    </marker>
+  </defs>
+  <rect width="1100" height="650" rx="16" fill="#fff"/>
+  <g font-family="Arial, sans-serif" fill="#172033">
+    <text x="275" y="38" text-anchor="middle" font-size="24" font-weight="bold">Orbital geometry</text>
+    <circle cx="275" cy="330" r="240" fill="none" stroke="#526780" stroke-width="2"/>
+    <circle cx="275" cy="330" r="46.15" fill="none" stroke="#526780" stroke-width="2"/>
+    <circle cx="275" cy="330" r="10" fill="#f8d64e" stroke="#b97816" stroke-width="2"/>
+    <text x="248" y="321" font-size="20">S</text>
+    <circle cx="275" cy="90" r="8" fill="#b22222"/>
+    <text x="290" y="85" font-size="21">J + Io</text>
+    <circle cx="321.15" cy="330" r="6" fill="#b22222"/>
+    <text x="335" y="340" font-size="20">E1</text>
+    <line x1="275" y1="90" x2="321.15" y2="330" stroke="#9ba3ad" stroke-width="5"/>
+    <line x1="321" y1="317" x2="315" y2="294" stroke="#34465e" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="366" y="425" text-anchor="middle" font-size="18">Earth moves toward Jupiter</text>
+    <text x="275" y="605" text-anchor="middle" font-size="17">Orbit radii approximately to scale; planet sizes enlarged.</text>
+    <text x="815" y="38" text-anchor="middle" font-size="24" font-weight="bold">Eclipse arrival intervals</text>
+    <g stroke="#a4afba" stroke-width="2">
+      <line x1="590" y1="170" x2="1060" y2="170"/>
+      <line x1="590" y1="320" x2="1060" y2="320"/>
+      <line x1="590" y1="470" x2="1060" y2="470"/>
+    </g>
+    <g stroke="#1f4e8c" stroke-width="4">
+      <path d="M 620 170 V 130 M 720 170 V 130 M 820 170 V 130 M 920 170 V 130 M 1020 170 V 130"/>
+      <path d="M 620 320 V 280 M 700 320 V 280 M 780 320 V 280 M 860 320 V 280 M 940 320 V 280"/>
+      <path d="M 620 470 V 430 M 730 470 V 430 M 840 470 V 430 M 950 470 V 430"/>
+    </g>
+    <text x="815" y="110" text-anchor="middle" font-size="22">Intrinsic period: T</text>
+    <text x="815" y="260" text-anchor="middle" font-size="22">Approaching: T − vT/c</text>
+    <text x="815" y="410" text-anchor="middle" font-size="22">Receding: T + vT/c</text>
+    <text x="815" y="550" text-anchor="middle" font-size="23">Difference: ΔT = 2vT/c</text>
+    <text x="815" y="605" text-anchor="middle" font-size="17">Schematic timing; differences exaggerated, not historical data.</text>
+  </g>
+</svg>

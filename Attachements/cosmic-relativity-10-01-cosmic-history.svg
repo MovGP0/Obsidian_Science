@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1150" height="620" viewBox="0 0 1150 620" role="img" aria-labelledby="title desc">
+  <title id="title">Nonlinear schematic of cosmic history</title>
+  <desc id="desc">A schematic expanding envelope marks inflation, the first hundred seconds, free-streaming CMB radiation at 380000 years, star formation at 300 million years, galaxy clustering, and today at 13.8 billion years. Human civilisation occupies a tiny final interval. Horizontal spacing is deliberately nonlinear.</desc>
+  <rect width="1150" height="620" fill="white"/>
+  <path d="M85 345 C128 345 132 230 194 225 L520 208 Q814 191 1050 153 L1050 511 Q814 462 520 457 L194 443 C132 438 128 345 85 345Z" fill="#eef2f5"/>
+  <path d="M85 345 C128 345 132 230 194 225 L520 208 Q814 191 1050 153 M85 345 C128 345 132 438 194 443 L520 457 Q814 462 1050 511" fill="none" stroke="#a4534b" stroke-width="3"/>
+  <rect x="112" y="230" width="27" height="213" fill="#edcc4a" fill-opacity="0.8"/>
+  <rect x="307" y="216" width="21" height="235" fill="#81b5c5"/>
+  <rect x="838" y="180" width="68" height="300" fill="#a5c5dc" fill-opacity="0.7"/>
+  <path d="M206 206 V461 M1006 136 V528" stroke="#3e5364" stroke-width="2"/>
+  <path d="M508 210 V455" stroke="#667c8e" stroke-width="3"/>
+  <g fill="#697f93"><path d="M508 249 L512 261 L524 265 L512 269 L508 281 L504 269 L492 265 L504 261Z"/><path d="M508 321 L512 333 L524 337 L512 341 L508 353 L504 341 L492 337 L504 333Z"/><path d="M508 390 L512 402 L524 406 L512 410 L508 422 L504 410 L492 406 L504 402Z"/></g>
+  <path d="M518 83 H1027 V116 H518Z" fill="none" stroke="#647a8b" stroke-width="2"/><path d="M1016 69 V127" stroke="#a4534b" stroke-width="3"/>
+  <g font-family="Arial, sans-serif" fill="#253544" font-size="21">
+    <text x="36" y="52" font-weight="bold">Schematic cosmic evolution — nonlinear time spacing</text>
+    <text x="624" y="107">About 13 billion years</text><text x="785" y="53">10,000 years of civilisation →</text>
+    <text x="28" y="321">T = 0</text><text x="26" y="380">Big bang</text><text x="92" y="490">10⁻³² s</text><text x="164" y="187">100 s</text>
+    <text x="156" y="399" transform="rotate(-90 156 399)">Inflation</text>
+    <text x="288" y="511">380,000 years</text><text x="305" y="540">z = 1000</text><text x="355" y="400" transform="rotate(-90 355 400)">Free-streaming CMBR</text>
+    <text x="434" y="178">300 million years</text><text x="473" y="540">z = 10</text><text x="547" y="403" transform="rotate(-90 547 403)">Star formation</text>
+    <text x="882" y="401" transform="rotate(-90 882 401)">Galaxy clustering</text><text x="809" y="548">12 billion years; z = 1</text>
+    <text x="928" y="133">13.8 billion years</text><text x="1020" y="346">Today</text><text x="949" y="224">a/a₀</text>
+    <text x="172" y="592" font-size="18">Epoch labels reproduce the source; envelope width and horizontal spacing are not quantitative scales.</text>
+  </g>
+</svg>

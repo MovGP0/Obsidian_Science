@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="360" viewBox="0 0 1000 360" role="img" aria-labelledby="title desc">
+  <title id="title">Separated events compared at one local clock</title>
+  <desc id="desc">Signals from events A and B reach the same clock location. A single local clock compares their arrival times.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#34465e"/></marker>
+  </defs>
+  <rect width="1000" height="360" rx="16" fill="#fff"/>
+  <g font-family="Arial, sans-serif" fill="#172033">
+    <path d="M 110 90 L 120 117 L 150 117 L 126 135 L 135 165 L 110 147 L 85 165 L 94 135 L 70 117 L 100 117 Z" fill="#f8d64e" stroke="#b22222" stroke-width="2"/>
+    <path d="M 880 40 L 890 67 L 920 67 L 896 85 L 905 115 L 880 97 L 855 115 L 864 85 L 840 67 L 870 67 Z" fill="#f8d64e" stroke="#b22222" stroke-width="2"/>
+    <text x="110" y="65" text-anchor="middle" font-size="28">A</text>
+    <text x="880" y="145" text-anchor="middle" font-size="28">B</text>
+    <line x1="155" y1="143" x2="600" y2="280" stroke="#34465e" stroke-width="3" marker-end="url(#arrow)"/>
+    <line x1="855" y1="115" x2="635" y2="280" stroke="#34465e" stroke-width="3" marker-end="url(#arrow)"/>
+    <circle cx="620" cy="230" r="48" fill="#f5f7fa" stroke="#34465e" stroke-width="3"/>
+    <g text-anchor="middle" font-size="16">
+      <text x="620" y="199">12</text><text x="654" y="236">3</text><text x="620" y="267">6</text><text x="587" y="236">9</text>
+    </g>
+    <path d="M 620 230 L 620 208 M 620 230 L 644 215" fill="none" stroke="#34465e" stroke-width="3"/>
+    <text x="620" y="328" text-anchor="middle" font-size="21">One local clock compares both arrivals</text>
+  </g>
+</svg>

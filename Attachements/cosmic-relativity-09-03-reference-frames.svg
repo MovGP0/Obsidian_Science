@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="520" viewBox="0 0 1100 520" role="img" aria-labelledby="title desc">
+  <title id="title">Earth-fixed and star-fixed reference descriptions</title>
+  <desc id="desc">In an Earth-fixed frame, Earth and laboratory clocks are stationary while stars appear to rotate. In a nonrotating stellar frame, the stars are fixed and Earth and its laboratory clocks rotate.</desc>
+  <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8Z" fill="#53758e"/></marker><g id="star"><path d="M0 -8 L2 -2 L8 0 L2 2 L0 8 L-2 2 L-8 0 L-2 -2Z" fill="#d7e5ef"/></g></defs>
+  <rect width="1100" height="520" fill="white"/>
+  <rect x="25" y="65" width="510" height="340" rx="15" fill="#1b2b3e"/><rect x="565" y="65" width="510" height="340" rx="15" fill="#1b2b3e"/>
+  <g fill="none" stroke="#8dabbc" stroke-width="2" marker-end="url(#arrow)"><path d="M115 244 A158 116 0 1 1 392 320 M155 244 A118 77 0 1 1 357 298"/></g>
+  <g><use href="#star" x="646" y="115"/><use href="#star" x="736" y="182"/><use href="#star" x="861" y="102"/><use href="#star" x="1001" y="156"/><use href="#star" x="642" y="282"/><use href="#star" x="1008" y="330"/></g>
+  <circle cx="280" cy="347" r="95" fill="#9bbccb" stroke="#597b8e" stroke-width="2"/><circle cx="820" cy="347" r="95" fill="#9bbccb" stroke="#597b8e" stroke-width="2"/>
+  <path d="M225 294 L263 273 L298 289 L284 319 L305 340 L280 374 L251 368 L235 329Z M765 294 L803 273 L838 289 L824 319 L845 340 L820 374 L791 368 L775 329Z" fill="#9cae79"/>
+  <path d="M740 373 C693 324 948 299 921 360" fill="none" stroke="#53758e" stroke-width="4" marker-end="url(#arrow)"/>
+  <g font-family="Arial, sans-serif" fill="#253544" font-size="22">
+    <text x="67" y="35" font-weight="bold">(a) Earth-fixed laboratory frame</text><text x="609" y="35" font-weight="bold">(b) Nonrotating stellar frame</text>
+    <text x="178" y="476">Reference clocks at rest</text><text x="695" y="476">Reference clocks move with Earth</text>
+    <text x="128" y="96" fill="#e1eaf1" font-size="18">Stars rotate in this description</text><text x="698" y="96" fill="#e1eaf1" font-size="18">Stars fixed in this description</text>
+  </g>
+</svg>

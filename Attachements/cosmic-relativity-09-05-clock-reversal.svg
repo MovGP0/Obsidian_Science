@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="340" viewBox="0 0 1000 340" role="img" aria-labelledby="title desc">
+  <title id="title">Brief clock reversal and the equivalent gravitational field</title>
+  <desc id="desc">Clock A remains at the initial position. Clock B travels a distance L, accelerates briefly to reverse velocity, and returns. The source associates the acceleration with an equivalent gravitational field.</desc>
+  <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8Z" fill="#a34e47"/></marker></defs>
+  <rect width="1000" height="340" fill="white"/>
+  <g fill="none" stroke-width="3"><rect x="90" y="135" width="90" height="65" rx="12" stroke="#a34e47"/><rect x="90" y="215" width="90" height="65" rx="12" stroke="#294a66"/><rect x="807" y="135" width="90" height="65" rx="12" stroke="#a34e47" stroke-dasharray="7 5"/><path d="M200 162 H793 M793 194 H200" stroke="#a34e47" marker-end="url(#arrow)"/><path d="M198 229 H790" stroke="#6c7f8d" stroke-dasharray="6 5"/><path d="M897 155 C971 105 976 216 900 189" stroke="#a34e47" marker-end="url(#arrow)"/></g>
+  <g font-family="Arial, sans-serif" fill="#253544" font-size="24"><text x="76" y="56" font-weight="bold">(2) B reverses through brief acceleration</text><text x="120" y="178">B</text><text x="120" y="257">A</text><text x="837" y="177">B</text><text x="415" y="134">L = vT/2</text><text x="796" y="102" fill="#a34e47">at = −2v</text><text x="390" y="287">Equivalent field: g = −a</text></g>
+</svg>

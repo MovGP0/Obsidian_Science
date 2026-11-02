@@ -1,8 +1,13 @@
 ---
-title: Acronyms
+title: "Acronyms"
 ---
+
 > [!TLDR]
 > This table lists the acronyms used in the Cosmic Relativity notes and their meanings.
+
+## Using the terminology
+
+Use this list to expand terms while reading the linked lecture chapters. An acronym names a theory, model, experiment, or principle; it does not state that its assumptions are satisfied. The supplied expansions and wiki-link display text are preserved below.
 
 | Acronym | Meaning |
 | --- | --- |
@@ -35,3 +40,7 @@ title: Acronyms
 | STR | Special Theory of Relativity |
 | UFF | Universality of Free Fall |
 | WEP | Weak Equivalence Principle |
+
+## Distinctions to keep in view
+
+Use the equivalence-principle chapter to distinguish UFF, WEP, EEP, and SEP. Use the simultaneity chapter to distinguish a coordinate transformation from a clock-synchronisation procedure. In the quantum Hall chapter, distinguish an LL state count from the occupation of that level and from an effective CF description. In the entanglement chapter, distinguish an LHVT from the broader no-signalling property. These distinctions prevent a shared abbreviation or word from replacing a physical argument.

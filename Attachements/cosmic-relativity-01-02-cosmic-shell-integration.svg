@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="600" viewBox="0 0 840 600" role="img" aria-labelledby="title desc">
+  <title id="title">Spherical shells used to estimate cosmic gravitational potential</title>
+  <desc id="desc">Cross-section of a uniform sphere of cosmic matter with density rho u. A shell at radius r has thickness dr. The outer causal radius is approximately c times the age of the Universe, or c divided by the Hubble constant.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#34465e"/>
+    </marker>
+  </defs>
+  <rect width="840" height="600" rx="16" fill="#fff"/>
+  <g font-family="Arial, sans-serif" fill="#172033">
+    <text x="420" y="35" text-anchor="middle" font-size="24" font-weight="bold">Uniform cosmic matter: spherical-shell model</text>
+    <circle cx="340" cy="305" r="225" fill="#edf1f6" stroke="#526780" stroke-width="3"/>
+    <circle cx="340" cy="305" r="150" fill="none" stroke="#76a7d3" stroke-width="22"/>
+    <circle cx="340" cy="305" r="139" fill="none" stroke="#426f9a" stroke-width="1.5"/>
+    <circle cx="340" cy="305" r="161" fill="none" stroke="#426f9a" stroke-width="1.5"/>
+    <circle cx="340" cy="305" r="4" fill="#34465e"/>
+    <line x1="340" y1="305" x2="267" y2="185" stroke="#34465e" stroke-width="3" marker-end="url(#arrow)"/>
+    <text x="283" y="252" font-size="25">r</text>
+    <line x1="340" y1="305" x2="452" y2="110" stroke="#34465e" stroke-width="3" marker-end="url(#arrow)"/>
+    <text x="482" y="108" font-size="25">R ≈ cT_u ≈ c/H₀</text>
+    <text x="332" y="355" font-size="28">ρ_u</text>
+    <line x1="480" y1="295" x2="501" y2="295" stroke="#34465e" stroke-width="2" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+    <path d="M 492 285 L 590 240" fill="none" stroke="#34465e" stroke-width="2"/>
+    <text x="598" y="242" font-size="23">Shell thickness dr</text>
+    <text x="585" y="330" font-size="22">dM = 4πρ_u r² dr</text>
+    <text x="585" y="375" font-size="22">dΦ = G dM/r</text>
+    <text x="420" y="575" text-anchor="middle" font-size="18" fill="#566174">Schematic cross-section; the shells are spherical in three dimensions.</text>
+  </g>
+</svg>

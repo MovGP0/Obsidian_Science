@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="310" viewBox="0 0 960 310">
+<rect width="960" height="310" fill="white"/>
+<defs><marker id="arrow" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto"><path d="M0 0L9 3.5L0 7Z" fill="#234775"/></marker></defs>
+<g fill="none" stroke="#234775" stroke-width="3">
+<circle cx="160" cy="155" r="98" fill="#d6eaf5"/><ellipse cx="160" cy="155" rx="42" ry="98"/><ellipse cx="160" cy="155" rx="98" ry="34"/><path d="M160 45V265" stroke-dasharray="5 5"/><path d="M85 70C65 20 240 20 228 66" marker-end="url(#arrow)"/>
+<path d="M430 116L524 96L561 150L468 176Z" fill="#9ac4e0"/><path d="M468 176L481 235L497 168" fill="#a6d4e9"/><path d="M495 62L481 235" stroke-dasharray="5 5"/><path d="M450 81C432 42 552 34 547 76" marker-end="url(#arrow)"/>
+<path d="M725 103V224C725 253 875 253 875 224V103" fill="#9bb9de"/><path d="M725 103V164C725 190 875 190 875 164V103" fill="#e8a6a1"/><ellipse cx="800" cy="103" rx="75" ry="23" fill="#f2c9c6"/>
+</g><g font-family="Arial,sans-serif" text-anchor="middle" fill="#172d43" font-size="23"><text x="160" y="295">(a) Earth</text><text x="495" y="295">(b) Spinning top</text><text x="800" y="295">(c) Magnet</text><text x="800" y="151">N</text><text x="800" y="221">S</text></g></svg>

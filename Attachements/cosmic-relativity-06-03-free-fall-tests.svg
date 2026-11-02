@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="440" viewBox="0 0 1100 440" role="img" aria-labelledby="title desc">
+  <title id="title">Two tests of universal free fall</title>
+  <desc id="desc">Direct free fall measures separation of unlike bodies. A torsion balance measures a periodic torque if unlike bodies respond differently to the Sun's gravity.</desc>
+  <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8Z" fill="#253544"/></marker></defs>
+  <rect width="1100" height="440" fill="white"/>
+  <g font-family="Arial, sans-serif" fill="#253544" font-size="21">
+    <text x="35" y="40" font-weight="bold">(a) Direct free fall</text>
+    <path d="M30 350 Q220 317 410 350 L385 390 H60Z" fill="#c89d76"/>
+    <circle cx="130" cy="100" r="19" fill="#327ead"/><circle cx="205" cy="100" r="19" fill="#db7639"/>
+    <path d="M130 126 V327 M205 126 V294" stroke="#253544" stroke-width="2" marker-end="url(#arrow)"/>
+    <path d="M215 299 H278 M140 331 H278 M267 299 V331" fill="none" stroke="#253544"/>
+    <text x="280" y="322" font-size="23">δx = (δa)t²/2</text>
+    <text x="45" y="420" font-size="18">Different accelerations produce a separation.</text>
+    <text x="555" y="40" font-weight="bold">(b) Torsion balance in the solar field</text>
+    <path d="M713 65 V213 M644 247 L788 193" stroke="#253544" stroke-width="3"/>
+    <rect x="704" y="207" width="18" height="30" fill="#d5b688"/>
+    <circle cx="644" cy="247" r="20" fill="#327ead"/><circle cx="788" cy="193" r="20" fill="#db7639"/>
+    <circle cx="1005" cy="276" r="45" fill="#ffd347" stroke="#e7aa20" stroke-width="3"/>
+    <text x="987" y="348">Sun</text>
+    <path d="M669 250 L903 269 M811 200 L917 246" stroke="#253544" stroke-width="2" marker-end="url(#arrow)"/>
+    <path d="M650 299 C625 347 794 358 810 298" fill="none" stroke="#4e6291" stroke-width="3" marker-end="url(#arrow)"/>
+    <text x="589" y="383" font-size="19">A rotating source direction gives a periodic</text>
+    <text x="589" y="410" font-size="19">torque if the equivalence principle is violated.</text>
+  </g>
+</svg>

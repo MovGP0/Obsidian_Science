@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="710" viewBox="0 0 1100 710" role="img" aria-labelledby="title desc">
+  <title id="title">Ensemble states and correlated measurement outcomes</title>
+  <desc id="desc">Panel a shows individual particles taking either of two paths while both action amplitudes remain in the ensemble description. Panel b pairs path one only with apparatus outcome one and path two only with outcome two. Crossed outcome pairs are excluded by the measurement design.</desc>
+  <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#263238"/></marker><g id="slits"><path d="M0 -47 V-27 M0 -12 V12 M0 27 V47" stroke="#263238" stroke-width="5"/><text x="-36" y="-15">x₁</text><text x="-36" y="29">x₂</text></g></defs>
+  <rect width="1100" height="710" fill="white"/>
+  <path d="M545 40 V675" stroke="#90a4ae" stroke-width="2" stroke-dasharray="7 6"/>
+  <g font-family="Arial, sans-serif" font-size="22" fill="#18242b">
+    <text x="30" y="38" font-weight="bold">a  Two-path ensemble</text><text x="575" y="38" font-weight="bold">b  Correlated apparatus states</text>
+    <text x="35" y="91">Each particle uses one path.</text><text x="35" y="121">Both action amplitudes are present.</text>
+    <g transform="translate(165 216)"><use href="#slits"/></g><g transform="translate(165 366)"><use href="#slits"/></g>
+    <path d="M50 216 H115 M50 366 H115" fill="none" stroke="#263238" stroke-width="2" marker-end="url(#arrow)"/><text x="55" y="196">S</text><text x="55" y="346">S</text>
+    <circle cx="193" cy="196" r="10" fill="#64a5d1"/><circle cx="193" cy="386" r="10" fill="#64a5d1"/>
+    <text x="230" y="201">e<tspan baseline-shift="super" font-size="16">iS₁/ℏ</tspan><tspan baseline-shift="baseline"> / √2</tspan></text><text x="230" y="248">e<tspan baseline-shift="super" font-size="16">iS₂/ℏ</tspan><tspan baseline-shift="baseline"> / √2</tspan></text>
+    <text x="230" y="351">e<tspan baseline-shift="super" font-size="16">iS₁/ℏ</tspan><tspan baseline-shift="baseline"> / √2</tspan></text><text x="230" y="398">e<tspan baseline-shift="super" font-size="16">iS₂/ℏ</tspan><tspan baseline-shift="baseline"> / √2</tspan></text>
+    <rect x="32" y="460" width="475" height="99" rx="9" fill="#f5f7f8" stroke="#90a4ae"/>
+    <text x="270" y="499" text-anchor="middle">|ψ(s)⟩ = (|x₁⟩ + |x₂⟩) / √2</text><text x="270" y="535" text-anchor="middle">An ensemble relation in the source's account</text>
+    <text x="35" y="614">An individual result does not alter</text><text x="35" y="645">the ensemble probability description.</text>
+    <text x="575" y="91">Measurement design permits only</text><text x="575" y="121">the matching path–apparatus pairs.</text>
+    <text x="830" y="177" text-anchor="middle">A₁</text><text x="990" y="177" text-anchor="middle">A₂</text><text x="661" y="248">x₁</text><text x="661" y="358">x₂</text>
+    <g stroke="#90a4ae" stroke-width="2"><rect x="745" y="195" width="160" height="110" fill="#e3f2fd"/><rect x="905" y="195" width="160" height="110" fill="#fafafa"/><rect x="745" y="305" width="160" height="110" fill="#fafafa"/><rect x="905" y="305" width="160" height="110" fill="#fbe5df"/></g>
+    <text x="825" y="258" text-anchor="middle">|x₁⟩|A₁⟩</text><text x="985" y="368" text-anchor="middle">|x₂⟩|A₂⟩</text><text x="985" y="258" text-anchor="middle">Excluded</text><text x="825" y="368" text-anchor="middle">Excluded</text>
+    <rect x="575" y="460" width="500" height="99" rx="9" fill="#f5f7f8" stroke="#90a4ae"/>
+    <text x="825" y="499" text-anchor="middle" font-size="18">|ψⱼ(s,A)⟩ = (|x₁⟩|A₁⟩ + |x₂⟩|A₂⟩) / √2</text><text x="825" y="535" text-anchor="middle">Joint ensemble probability description</text>
+    <text x="575" y="614">One observation selects a matching pair.</text><text x="575" y="645">It does not change the whole ensemble.</text>
+  </g>
+</svg>

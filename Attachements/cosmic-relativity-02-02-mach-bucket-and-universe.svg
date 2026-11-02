@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="650" viewBox="0 0 850 650" role="img" aria-labelledby="title desc">
+  <title id="title">Mach's question about rotating water and cosmic matter</title>
+  <desc id="desc">A bucket of rotating water is surrounded by a schematic distribution of cosmic matter. Arrows show relative rotation between the water and the surrounding matter, illustrating Mach's question about the origin of inertial forces.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#34465e"/>
+    </marker>
+    <pattern id="matter" width="50" height="46" patternUnits="userSpaceOnUse">
+      <rect width="50" height="46" fill="#edf1f6"/>
+      <circle cx="11" cy="12" r="4" fill="#526780"/>
+      <circle cx="37" cy="34" r="3" fill="#7f94ad"/>
+    </pattern>
+  </defs>
+  <rect width="850" height="650" rx="16" fill="#fff"/>
+  <g font-family="Arial, sans-serif" fill="#172033">
+    <text x="425" y="40" text-anchor="middle" font-size="24" font-weight="bold">Rotation relative to the matter in the Universe</text>
+    <path d="M 65 360 A 360 285 0 0 1 785 360 L 660 360 A 235 175 0 0 0 190 360 Z" fill="url(#matter)" stroke="#9aaabd" stroke-width="2"/>
+    <path d="M 190 210 A 280 210 0 0 1 655 210" fill="none" stroke="#34465e" stroke-width="3" marker-end="url(#arrow)"/>
+    <text x="425" y="110" text-anchor="middle" font-size="22">Cosmic matter</text>
+    <line x1="425" y1="150" x2="425" y2="340" stroke="#526780" stroke-width="3"/>
+    <path d="M 295 420 Q 425 260 555 420" fill="none" stroke="#34465e" stroke-width="3"/>
+    <path d="M 295 420 L 320 565 Q 425 592 530 565 L 555 420" fill="#f3f8fc" stroke="#34465e" stroke-width="3"/>
+    <ellipse cx="425" cy="420" rx="130" ry="25" fill="#fff" stroke="#34465e" stroke-width="3"/>
+    <path d="M 305 466 Q 425 550 545 466 L 530 565 Q 425 592 320 565 Z" fill="#d8e9f6"/>
+    <ellipse cx="425" cy="466" rx="120" ry="16" fill="none" stroke="#9db5c9" stroke-width="2"/>
+    <path d="M 305 466 Q 425 550 545 466" fill="none" stroke="#526780" stroke-width="3"/>
+    <path d="M 465 550 A 55 12 0 1 1 397 546" fill="none" stroke="#34465e" stroke-width="3" marker-end="url(#arrow)"/>
+    <text x="425" y="630" text-anchor="middle" font-size="19">Can rotating the surrounding matter produce the same inertial effects?</text>
+  </g>
+</svg>

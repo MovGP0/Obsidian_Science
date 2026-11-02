@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1140" height="410" viewBox="0 0 1140 410" role="img" aria-labelledby="title desc">
+  <title id="title">The source's train and platform comparison</title>
+  <desc id="desc">Two panels reproduce the source's proposed corrected analysis. In panel one the train observer is at rest and receives both signals at speed c. In panel two the platform observer is at rest and receives both signals at speed c. Relative-motion arrows reverse between the panels. This is the author's argument, not an independent validation of it.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#34465e"/></marker>
+    <g id="scene">
+      <rect x="40" y="205" width="490" height="115" rx="10" fill="#eef1f5" stroke="#526780" stroke-width="2"/>
+      <path d="M 50 165 L 110 125 H 465 L 520 165 V 205 H 50 Z" fill="#fff" stroke="#526780" stroke-width="2"/>
+      <g fill="#d0d7df" stroke="#526780" stroke-width="2"><circle cx="120" cy="205" r="13"/><circle cx="285" cy="205" r="13"/><circle cx="450" cy="205" r="13"/></g>
+      <circle cx="285" cy="146" r="10" fill="#c0c9d3" stroke="#34465e" stroke-width="2"/>
+      <path d="M 280 157 L 272 187 H 298 L 290 157 Z" fill="#c0c9d3" stroke="#34465e" stroke-width="2"/>
+      <circle cx="285" cy="260" r="10" fill="#b7ad77" stroke="#34465e" stroke-width="2"/>
+      <path d="M 280 271 L 272 301 H 298 L 290 271 Z" fill="#b7ad77" stroke="#34465e" stroke-width="2"/>
+      <path d="M 45 188 L 55 211 H 46 L 57 238 L 35 209 H 44 L 35 188 Z M 515 188 L 525 211 H 516 L 527 238 L 505 209 H 514 L 505 188 Z" fill="#f8d64e" stroke="#b22222" stroke-width="1.5"/>
+      <g font-size="22"><text x="20" y="190">A</text><text x="525" y="190">B</text><text x="280" y="110">M</text><text x="302" y="162">O′</text><text x="302" y="285">O</text></g>
+    </g>
+  </defs>
+  <rect width="1140" height="410" rx="16" fill="#fff"/>
+  <g font-family="Arial, sans-serif" fill="#172033">
+    <use href="#scene"/>
+    <use href="#scene" transform="translate(570 0)"/>
+    <g font-size="23" font-weight="bold" text-anchor="middle"><text x="285" y="42">1 — Train observer at rest</text><text x="855" y="42">2 — Platform observer at rest</text></g>
+    <g fill="none" stroke="#34465e" stroke-width="2.5" marker-end="url(#arrow)">
+      <path d="M 65 177 H 262 M 505 177 H 308 M 35 242 H 90 M 480 242 H 535 M 255 235 H 310"/>
+      <path d="M 635 278 H 832 M 1075 278 H 878 M 665 98 H 610 M 1110 98 H 1055 M 890 195 H 835"/>
+    </g>
+    <g font-size="22" text-anchor="middle"><text x="175" y="165">c</text><text x="410" y="165">c</text><text x="750" y="265">c</text><text x="985" y="265">c</text><text x="60" y="268">v</text><text x="510" y="268">v</text><text x="640" y="85">v</text><text x="1080" y="85">v</text></g>
+    <text x="570" y="380" text-anchor="middle" font-size="18" fill="#566174">Source argument: the observers coincide at M when the events occur; equal speeds are assigned in each rest frame.</text>
+  </g>
+</svg>

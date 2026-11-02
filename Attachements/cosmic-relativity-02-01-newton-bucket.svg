@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" role="img" aria-labelledby="title desc">
+  <title id="title">Newton's rotating bucket experiment</title>
+  <desc id="desc">Panel a shows a rotating bucket before the water spins up; the water surface is flat. Panel b shows water rotating together with the bucket; the surface is concave despite negligible relative motion between water and bucket.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#34465e"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="600" rx="16" fill="#fff"/>
+  <g font-family="Arial, sans-serif" fill="#172033" stroke="#34465e" stroke-width="3">
+    <g fill="none">
+      <path d="M 250 45 C 242 75 258 95 250 120 C 242 145 258 170 250 200"/>
+      <path d="M 750 45 L 750 200"/>
+      <path d="M 110 300 Q 250 120 390 300"/>
+      <path d="M 610 300 Q 750 120 890 300"/>
+    </g>
+    <path d="M 110 300 L 140 490 Q 250 520 360 490 L 390 300" fill="#f5f9fc"/>
+    <path d="M 610 300 L 640 490 Q 750 520 860 490 L 890 300" fill="#f5f9fc"/>
+    <ellipse cx="250" cy="300" rx="140" ry="28" fill="#fff"/>
+    <ellipse cx="750" cy="300" rx="140" ry="28" fill="#fff"/>
+    <path d="M 122 370 L 140 490 Q 250 520 360 490 L 378 370" fill="#d8e9f6" stroke="none"/>
+    <ellipse cx="250" cy="370" rx="128" ry="19" fill="#b8d5eb" stroke="#526780" stroke-width="2"/>
+    <path d="M 622 352 Q 750 465 878 352 L 860 490 Q 750 520 640 490 Z" fill="#d8e9f6" stroke="none"/>
+    <ellipse cx="750" cy="352" rx="128" ry="19" fill="none" stroke="#9db5c9" stroke-width="2"/>
+    <path d="M 622 352 Q 750 465 878 352" fill="none" stroke="#526780" stroke-width="3"/>
+    <path d="M 287 251 A 52 14 0 1 1 221 246" fill="none" marker-end="url(#arrow)"/>
+    <path d="M 787 251 A 52 14 0 1 1 721 246" fill="none" marker-end="url(#arrow)"/>
+    <path d="M 791 454 A 56 14 0 1 1 722 450" fill="none" marker-end="url(#arrow)"/>
+    <g stroke="none" text-anchor="middle">
+      <text x="250" y="545" font-size="22" font-weight="bold">a — Bucket rotates; water has not spun up</text>
+      <text x="250" y="575" font-size="19">Relative motion; flat water surface</text>
+      <text x="750" y="545" font-size="22" font-weight="bold">b — Bucket and water rotate together</text>
+      <text x="750" y="575" font-size="19">No relative motion; concave water surface</text>
+    </g>
+  </g>
+</svg>

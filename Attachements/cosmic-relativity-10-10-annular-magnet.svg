@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="515" viewBox="0 0 1000 515" role="img" aria-labelledby="title desc">
+  <title id="title">Annular magnet currents and proposed rotation-induced charge</title>
+  <desc id="desc">An annular magnet has opposite effective currents at its inner and outer boundaries. Rotation is proposed to create opposite symmetric charge excesses there, with a nonzero electric field in the annular region.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#263238"/></marker>
+    <g id="annulus"><circle cx="240" cy="238" r="175" fill="#eceff1" stroke="#263238" stroke-width="3"/><circle cx="240" cy="238" r="105" fill="white" stroke="#263238" stroke-width="3"/><circle cx="240" cy="238" r="167" fill="none" stroke="#607d8b" stroke-width="2"/><circle cx="240" cy="238" r="113" fill="none" stroke="#607d8b" stroke-width="2"/><path d="M187 80 A167 167 0 0 1 275 75 M293 396 A167 167 0 0 1 205 401 M275 131 A113 113 0 0 0 205 131 M205 345 A113 113 0 0 0 275 345" fill="none" stroke="#263238" stroke-width="3" marker-end="url(#arrow)"/></g>
+  </defs>
+  <rect width="1000" height="515" fill="white"/>
+  <g font-family="Arial, sans-serif" font-size="21" fill="#18242b">
+    <g transform="translate(10 0)">
+      <text x="30" y="33" font-weight="bold">a  Effective internal currents</text><use href="#annulus"/>
+      <text x="240" y="230" text-anchor="middle">Central hole</text><text x="240" y="260" text-anchor="middle">No boundary charge</text>
+      <text x="240" y="458" text-anchor="middle">Opposite current directions</text><text x="240" y="487" text-anchor="middle">at outer and inner boundaries</text>
+    </g>
+    <g transform="translate(510 0)">
+      <text x="30" y="33" font-weight="bold">b  Magnet rotates</text><use href="#annulus"/>
+      <g font-size="29" text-anchor="middle"><text x="240" y="107">+</text><text x="343" y="145">+</text><text x="387" y="247">+</text><text x="343" y="351">+</text><text x="240" y="393">+</text><text x="137" y="351">+</text><text x="93" y="247">+</text><text x="137" y="145">+</text><text x="240" y="127">−</text><text x="324" y="163">−</text><text x="360" y="247">−</text><text x="324" y="331">−</text><text x="240" y="367">−</text><text x="156" y="331">−</text><text x="120" y="247">−</text><text x="156" y="163">−</text></g>
+      <path d="M285 234 A45 45 0 1 0 248 282" fill="none" stroke="#263238" stroke-width="3" marker-end="url(#arrow)"/><text x="236" y="244" text-anchor="middle" font-size="29">ω</text>
+      <text x="240" y="458" text-anchor="middle">Opposite boundary charge excesses</text><text x="240" y="487" text-anchor="middle">produce a field in the annular region.</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="470" viewBox="0 0 1100 470" role="img" aria-labelledby="title desc">
+  <title id="title">Equivalence-principle derivation of redshift and clock-rate differences</title>
+  <desc id="desc">Light sent upward in an accelerating box reaches a receiver moving faster than at emission. The equivalent gravitational situation has lower-frequency light and a faster clock higher in the potential.</desc>
+  <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8Z" fill="#253544"/></marker><g id="clock"><circle r="36" fill="white" stroke="#253544" stroke-width="3"/><path d="M0 -28 V-23 M28 0 H23 M0 28 V23 M-28 0 H-23 M0 0 V-21 M0 0 L18 10" fill="none" stroke="#253544" stroke-width="2"/></g></defs>
+  <rect width="1100" height="470" fill="white"/>
+  <g font-family="Arial, sans-serif" fill="#253544" font-size="21">
+    <text x="30" y="35" font-weight="bold">(a) Accelerating frame</text><text x="650" y="35" font-weight="bold">(b) Gravitational field</text>
+    <rect x="102" y="70" width="160" height="260" rx="22" fill="none" stroke="#8a959e" stroke-width="2" stroke-dasharray="8 7"/>
+    <rect x="102" y="132" width="160" height="260" rx="22" fill="none" stroke="#253544" stroke-width="3"/>
+    <path d="M78 290 V187 M182 330 V171" stroke="#253544" stroke-width="3" marker-end="url(#arrow)"/>
+    <text x="49" y="245" font-style="italic">a</text><text x="210" y="351">S₁</text><text x="210" y="115">S₂</text>
+    <path d="M142 342 H195 M142 355 H195 M142 368 H195 M142 381 H195" stroke="#2d8cb7" stroke-width="5"/>
+    <path d="M142 82 H195 M142 99 H195 M142 116 H195" stroke="#c44949" stroke-width="5"/>
+    <rect x="355" y="132" width="160" height="260" rx="22" fill="none" stroke="#253544" stroke-width="3"/>
+    <path d="M379 205 V298" stroke="#253544" stroke-width="3" marker-end="url(#arrow)"/>
+    <text x="398" y="257" font-style="italic">g = −a</text>
+    <path d="M410 342 H463 M410 355 H463 M410 368 H463 M410 381 H463" stroke="#2d8cb7" stroke-width="5"/>
+    <path d="M410 149 H463 M410 167 H463 M410 185 H463" stroke="#c44949" stroke-width="5"/>
+    <path d="M652 390 Q848 322 1042 390" fill="#b2b48a" stroke="#75785b" stroke-width="2"/>
+    <use href="#clock" x="900" y="334"/><use href="#clock" x="900" y="118"/>
+    <path d="M800 78 H850 M800 97 H850 M800 116 H850" stroke="#c44949" stroke-width="5"/>
+    <path d="M800 314 H850 M800 327 H850 M800 340 H850 M800 353 H850" stroke="#2d8cb7" stroke-width="5"/>
+    <path d="M779 174 V261" stroke="#253544" stroke-width="3" marker-end="url(#arrow)"/>
+    <text x="794" y="221" font-style="italic">g</text>
+    <text x="690" y="440" font-size="19">Clock rates depend on gravitational potential.</text>
+  </g>
+</svg>

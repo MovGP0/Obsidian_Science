@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1140" height="480" viewBox="0 0 1140 480" role="img" aria-labelledby="title desc">
+  <title id="title">Outbound light pulses in the moving-room example</title>
+  <desc id="desc">Panel one shows opposite light pulses leaving the room midpoint when observers O and O prime coincide. Panel two shows pulses at the walls. The source discusses different claims about remote arrival times for relatively moving observers.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#34465e"/></marker>
+    <g id="room">
+      <rect x="35" y="95" width="490" height="180" rx="25" fill="#f7f9fb" stroke="#526780" stroke-width="2.5"/>
+      <text x="55" y="135" font-size="27">A</text><text x="495" y="135" font-size="27">B</text>
+      <circle cx="285" cy="162" r="16" fill="#c0c9d3" stroke="#34465e" stroke-width="2"/>
+      <path d="M 279 180 L 267 233 H 303 L 291 180 Z" fill="#c0c9d3" stroke="#34465e" stroke-width="2"/>
+      <text x="310" y="180" font-size="26">O</text>
+      <circle cx="285" cy="333" r="16" fill="#b7ad77" stroke="#34465e" stroke-width="2"/>
+      <path d="M 279 351 L 267 404 H 303 L 291 351 Z" fill="#b7ad77" stroke="#34465e" stroke-width="2"/>
+      <text x="310" y="352" font-size="26">O′</text>
+      <path d="M 310 250 H 250 M 255 295 H 315" fill="none" stroke="#34465e" stroke-width="2.5" marker-end="url(#arrow)"/>
+    </g>
+  </defs>
+  <rect width="1140" height="480" rx="16" fill="#fff"/>
+  <g font-family="Arial, sans-serif" fill="#172033">
+    <use href="#room"/><use href="#room" transform="translate(570 0)"/>
+    <g font-size="24" font-weight="bold" text-anchor="middle"><text x="285" y="45">1 — Opposite pulses emitted</text><text x="855" y="45">2 — Claims about wall arrivals</text></g>
+    <g fill="none" stroke="#34465e" stroke-width="3" marker-end="url(#arrow)">
+      <path d="M 255 195 H 215 M 315 195 H 355 M 255 365 H 215 M 315 365 H 355"/>
+      <path d="M 630 195 H 590 M 1080 195 H 1120 M 630 365 H 590 M 1080 365 H 1120"/>
+    </g>
+    <g stroke="#526780" stroke-width="2" stroke-dasharray="7 5"><line x1="610" y1="215" x2="610" y2="350"/><line x1="1095" y1="215" x2="1095" y2="350"/></g>
+    <g font-size="24" text-anchor="middle"><text x="225" y="180">c</text><text x="345" y="180">c</text><text x="225" y="395">c</text><text x="345" y="395">c</text><text x="610" y="175">c</text><text x="1100" y="175">c</text><text x="610" y="395">c</text><text x="1100" y="395">c</text></g>
+    <text x="570" y="455" text-anchor="middle" font-size="18" fill="#566174">Source comparison of separated wall events; the room and velocity arrows are schematic.</text>
+  </g>
+</svg>

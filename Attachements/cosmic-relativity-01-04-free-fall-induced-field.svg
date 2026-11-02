@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="560" viewBox="0 0 800 560" role="img" aria-labelledby="title desc">
+  <title id="title">Source model of a freely falling frame</title>
+  <desc id="desc">A box falls toward Earth with acceleration a equals g. Upward arrows inside the box show the induced cosmic field, labelled minus dv over dt times Phi u over c squared. Downward arrows outside show the local gravitational field minus gradient phi. The source attributes local cancellation to these fields.</desc>
+  <defs>
+    <marker id="down" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#34465e"/>
+    </marker>
+    <marker id="up" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#6a3d9a"/>
+    </marker>
+    <marker id="acceleration" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#b22222"/>
+    </marker>
+  </defs>
+  <rect width="800" height="560" rx="16" fill="#fff"/>
+  <g font-family="Arial, sans-serif" fill="#172033">
+    <text x="400" y="38" text-anchor="middle" font-size="24" font-weight="bold">A freely falling frame in the source's model</text>
+    <path d="M 100 500 Q 400 190 700 500" fill="#e5eff7" stroke="#34465e" stroke-width="3"/>
+    <text x="400" y="455" text-anchor="middle" font-size="23">Earth</text>
+    <rect x="295" y="85" width="210" height="175" fill="#faf8fd" stroke="#34465e" stroke-width="3"/>
+    <g stroke="#6a3d9a" stroke-width="4" marker-end="url(#up)">
+      <line x1="320" y1="235" x2="320" y2="115"/>
+      <line x1="480" y1="235" x2="480" y2="115"/>
+    </g>
+    <text x="400" y="161" text-anchor="middle" font-size="21">−(dv/dt) Φ_u/c²</text>
+    <text x="400" y="200" text-anchor="middle" font-size="17">Induced field</text>
+    <line x1="550" y1="150" x2="550" y2="280" stroke="#b22222" stroke-width="4" marker-end="url(#acceleration)"/>
+    <text x="570" y="220" font-size="25">a = g</text>
+    <g stroke="#34465e" stroke-width="3" marker-end="url(#down)">
+      <line x1="320" y1="290" x2="335" y2="365"/>
+      <line x1="400" y1="290" x2="400" y2="350"/>
+      <line x1="480" y1="290" x2="465" y2="365"/>
+    </g>
+    <text x="535" y="345" font-size="24">g = −∇φ</text>
+    <text x="400" y="535" text-anchor="middle" font-size="17" fill="#566174">Schematic local cancellation; source signs and potential convention are retained.</text>
+  </g>
+</svg>

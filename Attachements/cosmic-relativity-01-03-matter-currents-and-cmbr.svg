@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="540" viewBox="0 0 1120 540" role="img" aria-labelledby="title desc">
+  <title id="title">Matter distribution and currents in three reference frames</title>
+  <desc id="desc">Schematic replacement of the source photographs. At rest, matter and the microwave background are isotropic. A moving frame has a directed matter current and a microwave dipole. A rotating frame has circular matter currents. The diagrams represent the source's interpretation.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#d35436"/>
+    </marker>
+    <pattern id="matter" x="0" y="0" width="48" height="42" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="10" r="3" fill="#526780"/>
+      <circle cx="36" cy="31" r="3" fill="#526780"/>
+    </pattern>
+    <linearGradient id="dipole">
+      <stop offset="0" stop-color="#345cb2"/>
+      <stop offset="0.5" stop-color="#8bc56e"/>
+      <stop offset="1" stop-color="#d65336"/>
+    </linearGradient>
+  </defs>
+  <rect width="1120" height="540" rx="16" fill="#fff"/>
+  <g font-family="Arial, sans-serif" fill="#172033">
+    <text x="190" y="38" text-anchor="middle" font-size="22" font-weight="bold">1 — Frame at rest</text>
+    <text x="560" y="38" text-anchor="middle" font-size="22" font-weight="bold">2 — Moving frame</text>
+    <text x="930" y="38" text-anchor="middle" font-size="22" font-weight="bold">3 — Rotating frame</text>
+    <rect x="30" y="65" width="320" height="230" rx="8" fill="url(#matter)" stroke="#a4afba"/>
+    <rect x="400" y="65" width="320" height="230" rx="8" fill="url(#matter)" stroke="#a4afba"/>
+    <g stroke="#d35436" stroke-width="3" marker-end="url(#arrow)">
+      <line x1="690" y1="108" x2="435" y2="108"/>
+      <line x1="690" y1="178" x2="435" y2="178"/>
+      <line x1="690" y1="248" x2="435" y2="248"/>
+    </g>
+    <text x="560" y="321" text-anchor="middle" font-size="18">Matter current opposite to v(t)</text>
+    <rect x="770" y="65" width="320" height="230" rx="8" fill="#edf1f6" stroke="#a4afba"/>
+    <g fill="none" stroke="#526780" stroke-width="2">
+      <circle cx="930" cy="180" r="35"/>
+      <circle cx="930" cy="180" r="68"/>
+      <circle cx="930" cy="180" r="100"/>
+    </g>
+    <g fill="none" stroke="#d35436" stroke-width="3" marker-end="url(#arrow)">
+      <path d="M 930 145 A 35 35 0 0 1 965 180"/>
+      <path d="M 930 112 A 68 68 0 0 1 998 180"/>
+      <path d="M 930 80 A 100 100 0 0 1 1030 180"/>
+    </g>
+    <text x="930" y="321" text-anchor="middle" font-size="18">Circular matter currents</text>
+    <ellipse cx="190" cy="405" rx="145" ry="65" fill="#8bc56e" stroke="#526780" stroke-width="2"/>
+    <text x="190" y="410" text-anchor="middle" font-size="20">Isotropic CMBR</text>
+    <ellipse cx="560" cy="405" rx="145" ry="65" fill="url(#dipole)" stroke="#526780" stroke-width="2"/>
+    <text x="560" y="410" text-anchor="middle" font-size="20">CMBR dipole</text>
+    <text x="930" y="405" text-anchor="middle" font-size="20">Cylindrical symmetry</text>
+    <text x="560" y="515" text-anchor="middle" font-size="17" fill="#566174">Schematic matter currents and background temperature patterns; no observational map is reproduced.</text>
+  </g>
+</svg>

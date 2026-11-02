@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="440" viewBox="0 0 1100 440" role="img" aria-labelledby="title desc">
+  <title id="title">Moving-source interferometric light experiment</title>
+  <desc id="desc">Four fixed mirrors form a loop. A translating stage carries fibre input, beam splitter, local turning mirror, and photodetector. Oppositely directed red and blue beams traverse the same loop and recombine at the detector.</desc>
+  <defs><marker id="red" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#c62828"/></marker><marker id="blue" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#245b9e"/></marker><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#263238"/></marker></defs>
+  <rect width="1100" height="440" fill="white"/>
+  <rect x="415" y="184" width="305" height="160" rx="20" fill="#efeee0" stroke="#546e7a" stroke-width="2"/>
+  <g fill="none" stroke-width="2.5">
+    <path d="M553 289 H100 V85 H1000 V215 H557 V289 H659" stroke="#c62828" marker-end="url(#red)"/>
+    <path d="M550 283 V221 H994 V91 H106 V283 H659" stroke="#245b9e" marker-end="url(#blue)"/>
+    <path d="M553 380 V292" stroke="#c62828" stroke-width="4" marker-end="url(#red)"/>
+  </g>
+  <g stroke="#263238" stroke-width="5"><path d="M79 107 L121 65 M79 264 L121 306 M979 64 L1021 106 M979 237 L1021 195 M534 234 L576 192"/><path d="M532 266 L574 308" stroke-width="2"/></g>
+  <rect x="532" y="266" width="42" height="42" fill="none" stroke="#263238" stroke-width="2"/>
+  <rect x="659" y="268" width="51" height="38" rx="4" fill="#b8b58d" stroke="#263238" stroke-width="2"/>
+  <g font-family="Arial, sans-serif" font-size="23" fill="#18242b">
+    <text x="135" y="55">Four fixed mirrors</text><text x="430" y="327">Moving stage</text><text x="733" y="293">Photodetector</text>
+    <text x="359" y="409">Fibre-coupled light input</text>
+    <path d="M485 154 H646" fill="none" stroke="#263238" stroke-width="3" marker-end="url(#arrow)"/><text x="567" y="142" text-anchor="middle">v</text>
+    <path d="M250 85 H180" stroke="#c62828" stroke-width="2.5" marker-end="url(#red)"/><path d="M818 91 H888" stroke="#245b9e" stroke-width="2.5" marker-end="url(#blue)"/>
+  </g>
+</svg>

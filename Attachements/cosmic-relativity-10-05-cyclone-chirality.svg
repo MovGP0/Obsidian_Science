@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="590" viewBox="0 0 1100 590" role="img" aria-labelledby="title desc">
+  <title id="title">Cyclone chirality around India and across hemispheres</title>
+  <desc id="desc">Schematics of Luban west of India and Titli east of India show northern-hemisphere counterclockwise circulation. A separate comparison shows clockwise southern-hemisphere circulation. This is an explanatory replacement for satellite photographs.</desc>
+  <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8Z" fill="#426b8b"/></marker><g id="cyclone"><path d="M75 0 C70 -73 -30 -94 -69 -35 C-110 27 -23 98 35 54 C90 12 20 -53 -16 -18 C-44 9 -1 49 20 20" fill="none" stroke="#7898ae" stroke-width="11"/><path d="M45 57 A72 72 0 1 0 61 -38" fill="none" stroke="#426b8b" stroke-width="2" marker-end="url(#arrow)"/><circle r="9" fill="white" stroke="#426b8b" stroke-width="2"/></g></defs>
+  <rect width="1100" height="590" fill="white"/>
+  <rect x="25" y="71" width="700" height="421" rx="18" fill="#eaf2f6"/>
+  <path d="M340 130 L409 116 L451 167 L430 218 L407 250 L395 316 L370 392 L350 346 L332 280 L313 236 L297 204 L324 176Z" fill="#cbd3b1" stroke="#7c8d6e" stroke-width="2"/>
+  <use href="#cyclone" x="193" y="315"/><use href="#cyclone" x="562" y="259"/>
+  <use href="#cyclone" x="906" y="298" transform="translate(1812 0) scale(-1 1)"/>
+  <g font-family="Arial, sans-serif" fill="#253544" font-size="22">
+    <text x="58" y="37" font-weight="bold">Northern Hemisphere: counterclockwise circulation</text>
+    <text x="331" y="237">India</text><text x="146" y="423">Luban</text><text x="542" y="367">Titli</text>
+    <text x="768" y="154" font-weight="bold">Southern Hemisphere</text><text x="848" y="445">Clockwise</text>
+    <text x="84" y="530" font-size="19">Luban and Titli (2018) are identified in the source; shapes and positions here are schematic.</text>
+    <text x="200" y="565" font-size="18">Explanatory circulation diagrams replace the source satellite photographs.</text>
+  </g>
+</svg>

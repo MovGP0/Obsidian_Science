@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="280" viewBox="0 0 1000 280" role="img" aria-labelledby="title desc">
+  <title id="title">Twin-clock journeys viewed from either rest frame</title>
+  <desc id="desc">With A chosen at rest, B travels out and back. With B chosen at rest, A travels out and back. The schematic represents the source's reciprocal rest-frame comparison.</desc>
+  <defs><marker id="red" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8Z" fill="#a94e47"/></marker><marker id="dark" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8Z" fill="#294a66"/></marker></defs>
+  <rect width="1000" height="280" fill="white"/>
+  <g fill="none" stroke-width="3"><rect x="195" y="45" width="55" height="43" rx="7" stroke="#a94e47"/><rect x="195" y="96" width="55" height="43" rx="7" stroke="#294a66"/><path d="M269 56 H911 Q949 56 949 79 Q949 102 911 102 H269" stroke="#a94e47" marker-end="url(#red)"/><rect x="735" y="174" width="55" height="43" rx="7" stroke="#a94e47"/><rect x="735" y="225" width="55" height="43" rx="7" stroke="#294a66"/><path d="M716 257 H98 Q60 257 60 234 Q60 211 98 211 H716" stroke="#294a66" marker-end="url(#dark)"/></g>
+  <g font-family="Arial, sans-serif" fill="#253544" font-size="24"><text x="44" y="123">A at rest</text><text x="211" y="75">B</text><text x="211" y="127">A</text><text x="814" y="202">B at rest</text><text x="751" y="205">B</text><text x="751" y="256">A</text></g>
+</svg>

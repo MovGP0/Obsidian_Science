@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="570" viewBox="0 0 1000 570" role="img" aria-labelledby="title desc">
+  <title id="title">Satellite test with nested bodies of different materials</title>
+  <desc id="desc">A satellite follows an orbit around Earth. Nested test cylinders of two materials can move relative to one another. Their differential displacement is measured along their common axis.</desc>
+  <defs><g id="craft"><rect x="-30" y="-37" width="60" height="74" rx="9" fill="#f5f8fa" stroke="#557689" stroke-width="2"/><path d="M-21 -23 H21 V-10 H-21Z M-21 10 H21 V23 H-21Z" fill="#4687b5"/><rect x="-16" y="-8" width="32" height="16" fill="#aa5c30"/></g></defs>
+  <rect width="1000" height="570" fill="white"/>
+  <g font-family="Arial, sans-serif" fill="#253544" font-size="22">
+    <text x="30" y="38" font-weight="bold">(a) Long-duration free fall in orbit</text>
+    <circle cx="283" cy="296" r="207" fill="none" stroke="#253544" stroke-width="2"/>
+    <circle cx="283" cy="296" r="83" fill="#71b4d2" stroke="#4d849c" stroke-width="2"/>
+    <path d="M234 249 L272 226 L303 243 L288 271 L314 293 L299 325 L277 318 L250 345 L235 313 L251 283Z" fill="#9eaf67"/>
+    <text x="256" y="393">Earth</text>
+    <use href="#craft" x="76" y="296"/><use href="#craft" x="283" y="89"/><use href="#craft" x="490" y="296"/><use href="#craft" x="283" y="503"/>
+    <text x="123" y="303">a</text><text x="274" y="151">b</text><text x="438" y="304">c</text><text x="274" y="451">d</text>
+    <text x="597" y="38" font-weight="bold">(b) Nested test cylinders</text>
+    <rect x="653" y="160" width="240" height="225" fill="#f6f9fc" stroke="#8fa8b7" stroke-width="2"/>
+    <path d="M653 160 H893 V213 H653Z M653 332 H893 V385 H653Z" fill="#4687b5"/>
+    <rect x="667" y="245" width="176" height="58" fill="#aa5c30"/>
+    <path d="M755 120 V430 M775 120 V430" stroke-width="2" stroke="#b65050"/>
+    <text x="810" y="197" fill="white">M2</text><text x="719" y="282" fill="white">M1</text><text x="810" y="369" fill="white">M2</text>
+    <text x="744" y="104">Δs</text>
+    <text x="588" y="475" font-size="19">A violation of universal free fall produces</text>
+    <text x="588" y="505" font-size="19">a differential displacement at the orbital period.</text>
+  </g>
+</svg>
