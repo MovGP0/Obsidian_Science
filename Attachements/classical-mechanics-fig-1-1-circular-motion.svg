@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="310" height="290" viewBox="0 0 310 290" role="img" aria-labelledby="title description">
+  <title id="title">Uniform circular motion</title>
+  <desc id="description">A particle on a circle has a tangent velocity vector and a centripetal acceleration vector directed toward the center.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L7 4 L1 7" fill="none" stroke="#334155" stroke-width="1.3"/>
+    </marker>
+    <marker id="velocity-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L7 4 L1 7" fill="none" stroke="#036991" stroke-width="1.5"/>
+    </marker>
+    <marker id="acceleration-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L7 4 L1 7" fill="none" stroke="#a22836" stroke-width="1.5"/>
+    </marker>
+  </defs>
+  <rect width="310" height="290" rx="8" fill="#fff"/>
+  <circle cx="145" cy="150" r="100" fill="none" stroke="#b9c2cf"/>
+  <g stroke="#334155" stroke-width="1.4" marker-end="url(#arrow)">
+    <path d="M22 150 H269"/>
+    <path d="M145 274 V26"/>
+  </g>
+  <g fill="none" stroke="#64748b">
+    <path d="M145 150 L215.7 79.3" stroke-dasharray="4 4"/>
+    <path d="M166 150 A21 21 0 0 0 159.8 135.2"/>
+  </g>
+  <path d="M215.7 79.3 L180.7 44.3" stroke="#036991" stroke-width="2" marker-end="url(#velocity-arrow)"/>
+  <path d="M215.7 79.3 L180.7 114.3" stroke="#a22836" stroke-width="2" marker-end="url(#acceleration-arrow)"/>
+  <circle cx="215.7" cy="79.3" r="3.6" fill="#0f172a"/>
+  <g font-family="Georgia, serif" font-size="17" font-style="italic" fill="#334155">
+    <text x="275" y="155">x</text>
+    <text x="141" y="20">y</text>
+    <text x="171" y="146">θ</text>
+    <text x="188" y="41" fill="#036991">v</text>
+    <text x="158" y="126" fill="#a22836">a<tspan baseline-shift="sub" font-size="11">c</tspan></text>
+  </g>
+  <path d="M188 30 H198 L195.5 28" fill="none" stroke="#036991"/>
+  <path d="M158 115 H168 L165.5 113" fill="none" stroke="#a22836"/>
+</svg>

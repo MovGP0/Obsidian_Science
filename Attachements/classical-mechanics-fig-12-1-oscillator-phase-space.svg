@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="350" height="290" viewBox="0 0 350 290" role="img" aria-labelledby="title description">
+  <title id="title">Harmonic oscillator phase space</title>
+  <desc id="description">Three concentric elliptical trajectories in the position and momentum plane. Larger ellipses correspond to higher energy. An arrow on the outer ellipse indicates clockwise motion.</desc>
+  <defs>
+    <marker id="axis-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L7 4 L1 7" fill="none" stroke="#475569" stroke-width="1.3"/>
+    </marker>
+  </defs>
+  <rect width="350" height="290" rx="8" fill="#fff"/>
+  <g stroke="#475569" stroke-width="1.2" marker-end="url(#axis-arrow)">
+    <path d="M30 145 H316"/>
+    <path d="M173 267 V23"/>
+  </g>
+  <g fill="none" stroke="#036991" stroke-width="1.7">
+    <ellipse cx="173" cy="145" rx="43" ry="28"/>
+    <ellipse cx="173" cy="145" rx="78" ry="51"/>
+    <ellipse cx="173" cy="145" rx="113" ry="74"/>
+  </g>
+  <path d="M252 87 L253 94 L246 94" fill="none" stroke="#0f172a" stroke-width="1.6"/>
+  <g font-family="Georgia, serif" font-style="italic" font-size="17" fill="#334155">
+    <text x="324" y="150">q</text>
+    <text x="169" y="16">p</text>
+    <text x="202" y="113">E<tspan baseline-shift="sub" font-size="11">1</tspan></text>
+    <text x="222" y="95">E<tspan baseline-shift="sub" font-size="11">2</tspan></text>
+    <text x="239" y="74">E<tspan baseline-shift="sub" font-size="11">3</tspan></text>
+  </g>
+</svg>
