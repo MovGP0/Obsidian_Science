@@ -18,21 +18,6 @@ PERFORMANCE OF THIS SOFTWARE.
 ***************************************************************************** */
 /* global Reflect, Promise */
 
-var extendStatics = function(d, b) {
-    extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
-    return extendStatics(d, b);
-};
-
-function __extends(d, b) {
-    if (typeof b !== "function" && b !== null)
-        throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
-    extendStatics(d, b);
-    function __() { this.constructor = d; }
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-}
-
 function __awaiter(thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -75,12 +60,15 @@ var DEFAULT_SETTINGS = {
     preamblePath: "preamble.sty",
 };
 var JaxPlugin = /** @class */ (function (_super) {
-    __extends(JaxPlugin, _super);
-    function JaxPlugin(app, manifest) {
-        var _this = _super.call(this, app, manifest) || this;
-        _this.app = app;
-        _this.settings = DEFAULT_SETTINGS;
-        return _this;
+    // Obsidian 1.15 uses native base classes, which require super().
+    class JaxPlugin extends _super
+    {
+        constructor(app, manifest)
+        {
+            super(app, manifest);
+            this.app = app;
+            this.settings = DEFAULT_SETTINGS;
+        }
     }
     JaxPlugin.prototype.loadPreamble = function () {
         return __awaiter(this, void 0, void 0, function () {
@@ -167,11 +155,13 @@ var JaxPlugin = /** @class */ (function (_super) {
     return JaxPlugin;
 }(obsidian.Plugin));
 var JaxPluginSettingTab = /** @class */ (function (_super) {
-    __extends(JaxPluginSettingTab, _super);
-    function JaxPluginSettingTab(app, plugin) {
-        var _this = _super.call(this, app, plugin) || this;
-        _this.plugin = plugin;
-        return _this;
+    class JaxPluginSettingTab extends _super
+    {
+        constructor(app, plugin)
+        {
+            super(app, plugin);
+            this.plugin = plugin;
+        }
     }
     JaxPluginSettingTab.prototype.display = function () {
         var _this = this;
