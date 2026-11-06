@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="495" height="230" viewBox="0 0 495 230" role="img" aria-labelledby="title description">
+  <title id="title">Born-rule projection</title>
+  <desc id="description">A state branches to one of three eigenstates. Each arrow is labeled with the squared magnitude of the corresponding probability amplitude.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0 1 L9 5 L0 9 Z" fill="#166289"/>
+    </marker>
+  </defs>
+  <rect width="495" height="230" rx="8" fill="#fff"/>
+  <path d="M44 199 H432" fill="none" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="3 4"/>
+  <g stroke="#166289" fill="none" stroke-width="2.2" marker-end="url(#arrow)">
+    <path d="M242 46 V69"/>
+    <path d="M242 78 L80 168"/>
+    <path d="M242 78 V168"/>
+    <path d="M242 78 L403 168"/>
+  </g>
+  <circle cx="242" cy="78" r="4" fill="#166289"/>
+  <g fill="#334155" font-family="Georgia, serif" font-size="18" text-anchor="middle">
+    <text x="242" y="32">|ψ⟩</text>
+    <text x="133" y="113">|c₁|²</text>
+    <text x="268" y="131">|c₂|²</text>
+    <text x="354" y="113">|c₃|²</text>
+    <text x="80" y="190">|a₁⟩</text>
+    <text x="242" y="190">|a₂⟩</text>
+    <text x="403" y="190">|a₃⟩</text>
+    <text x="463" y="204" font-size="15">Basis</text>
+  </g>
+</svg>

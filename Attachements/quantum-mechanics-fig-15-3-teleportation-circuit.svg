@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="734" height="226" viewBox="0 0 734 226" role="img" aria-labelledby="title desc">
+  <title id="title">Quantum teleportation circuit</title>
+  <desc id="desc">The circuit prepares a Bell pair on A and B. Alice measures C and A after a CNOT and Hadamard gate. The two measurement bits control Bob's X and Z corrections.</desc>
+  <g fill="none" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="6 5">
+    <path d="M54 141H679"/>
+    <rect x="92" y="89" width="150" height="108" rx="6"/>
+  </g>
+  <g fill="none" stroke="#334155" stroke-width="2.1">
+    <path d="M60 60H399 M60 115H399 M60 171H674 M209 115V171 M294 60V115"/>
+    <path d="M455 58H616V169 M455 62H612V169 M455 113H552V169 M455 117H548V169" stroke="#925122" stroke-dasharray="6 3"/>
+  </g>
+  <g fill="#f8fafc" stroke="#334155" stroke-width="2">
+    <rect x="125" y="97" width="36" height="36" rx="3"/>
+    <rect x="341" y="42" width="36" height="36" rx="3"/>
+    <rect x="399" y="42" width="56" height="36" rx="3"/>
+    <rect x="399" y="97" width="56" height="36" rx="3"/>
+    <rect x="528" y="153" width="44" height="36" rx="3"/>
+    <rect x="592" y="153" width="44" height="36" rx="3"/>
+    <circle cx="209" cy="171" r="12"/>
+    <circle cx="294" cy="115" r="12"/>
+  </g>
+  <g fill="#334155">
+    <circle cx="209" cy="115" r="5"/>
+    <circle cx="294" cy="60" r="5"/>
+  </g>
+  <g fill="none" stroke="#334155" stroke-width="2">
+    <path d="M197 171H221 M209 159V183 M282 115H306 M294 103V127"/>
+    <path d="M408 70A19 15 0 0 1 446 70 M427 70L441 51 M408 125A19 15 0 0 1 446 125 M427 125L441 106"/>
+  </g>
+  <g fill="#0f172a" font-family="system-ui, sans-serif" font-size="17" text-anchor="middle">
+    <text x="32" y="66">|ψ⟩<tspan baseline-shift="sub" font-size="11">C</tspan></text>
+    <text x="32" y="121">|0⟩<tspan baseline-shift="sub" font-size="11">A</tspan></text>
+    <text x="32" y="177">|0⟩<tspan baseline-shift="sub" font-size="11">B</tspan></text>
+    <text x="703" y="177">|ψ⟩<tspan baseline-shift="sub" font-size="11">B</tspan></text>
+    <text x="143" y="121">H</text>
+    <text x="359" y="66">H</text>
+    <text x="550" y="177">Xᵇ</text>
+    <text x="614" y="177">Zᵃ</text>
+    <text x="481" y="50">a</text>
+    <text x="481" y="105">b</text>
+    <text x="87" y="35">Alice</text>
+    <text x="71" y="214">Bob</text>
+    <text x="167" y="214">Bell pair</text>
+  </g>
+</svg>

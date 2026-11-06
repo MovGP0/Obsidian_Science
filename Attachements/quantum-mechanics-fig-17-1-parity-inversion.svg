@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="712" height="268" viewBox="0 0 712 268" role="img" aria-labelledby="title desc">
+  <title id="title">Spatial parity inversion</title>
+  <desc id="desc">The left coordinate frame shows a position vector. The right frame shows the opposite vector. Both coordinate frames have the same orientation.</desc>
+  <defs>
+    <marker id="axis" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 0L10 5L0 10z" fill="#64748b"/>
+    </marker>
+    <marker id="vector" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 0L10 5L0 10z" fill="#166289"/>
+    </marker>
+  </defs>
+  <g fill="none" stroke="#64748b" stroke-width="1.4" marker-end="url(#axis)">
+    <path d="M50 147H272"/>
+    <path d="M137 226V40"/>
+    <path d="M137 147L66 176"/>
+    <path d="M440 147H662"/>
+    <path d="M527 226V40"/>
+    <path d="M527 147L456 176"/>
+  </g>
+  <g fill="none" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="5 4">
+    <path d="M137 71H225V147"/>
+    <path d="M527 223H439V147"/>
+  </g>
+  <g fill="none" stroke="#166289" stroke-width="2.8" marker-end="url(#vector)">
+    <path d="M137 147L225 71"/>
+    <path d="M527 147L439 223"/>
+    <path d="M310 132H400"/>
+  </g>
+  <g fill="#334155">
+    <circle cx="137" cy="147" r="3"/>
+    <circle cx="527" cy="147" r="3"/>
+  </g>
+  <g fill="#0f172a" font-family="system-ui, sans-serif" font-size="17" text-anchor="middle">
+    <text x="284" y="153">x</text><text x="137" y="29">y</text><text x="53" y="187">z</text>
+    <text x="674" y="153">x</text><text x="527" y="29">y</text><text x="443" y="187">z</text>
+    <text x="235" y="64">r</text><text x="432" y="246">−r</text>
+    <text x="355" y="119">Π̂</text><text x="355" y="156">r ↦ −r</text>
+  </g>
+</svg>

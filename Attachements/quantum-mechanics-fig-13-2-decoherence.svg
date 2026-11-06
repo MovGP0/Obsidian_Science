@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="232" viewBox="0 0 720 232" role="img" aria-labelledby="title desc">
+  <title id="title">Decay of off-diagonal density matrix elements</title>
+  <desc id="desc">Three matrices from initial superposition through partial decoherence to an effective mixture. The diagonal elements stay fixed and the off-diagonal elements decay to zero.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#52667a"/>
+    </marker>
+  </defs>
+  <rect width="720" height="232" rx="10" fill="#f8fafc"/>
+  <g font-family="system-ui, sans-serif" font-size="17" fill="#253245" text-anchor="middle">
+  <g transform="translate(28,0)">
+    <text x="72" y="35" font-weight="600">t = 0</text>
+    <path d="M 0 67 H 144 V 167 H 0 Z M 72 67 V 167 M 0 117 H 144" fill="none" stroke="#52667a" stroke-width="1.65"/>
+    <rect x="1" y="68" width="70" height="48" fill="#dbeaf2"/>
+    <rect x="73" y="118" width="70" height="48" fill="#dbeaf2"/>
+    <text x="36" y="98">|c₀|²</text>
+    <text x="108" y="148">|c₁|²</text>
+    <g fill="#925122" opacity="1" font-size="14">
+      <text x="108" y="98">c₀c₁*</text>
+      <text x="36" y="148">c₁c₀*</text>
+    </g>
+    <text x="72" y="202" font-size="15">Coherent superposition</text>
+  </g>
+  <g transform="translate(288,0)">
+    <text x="72" y="35" font-weight="600">t ≈ τ<tspan baseline-shift="sub" font-size="11">d</tspan></text>
+    <path d="M 0 67 H 144 V 167 H 0 Z M 72 67 V 167 M 0 117 H 144" fill="none" stroke="#52667a" stroke-width="1.65"/>
+    <rect x="1" y="68" width="70" height="48" fill="#dbeaf2"/>
+    <rect x="73" y="118" width="70" height="48" fill="#dbeaf2"/>
+    <text x="36" y="98">|c₀|²</text>
+    <text x="108" y="148">|c₁|²</text>
+    <g fill="#925122" opacity="0.75" font-size="14">
+      <text x="108" y="98">c₀c₁* e<tspan baseline-shift="super" font-size="10">−t/τ<tspan baseline-shift="sub" font-size="8">d</tspan></tspan></text>
+      <text x="36" y="148">c₁c₀* e<tspan baseline-shift="super" font-size="10">−t/τ<tspan baseline-shift="sub" font-size="8">d</tspan></tspan></text>
+    </g>
+    <text x="72" y="202" font-size="15">Partial decoherence</text>
+  </g>
+  <g transform="translate(548,0)">
+    <text x="72" y="35" font-weight="600">t ≫ τ<tspan baseline-shift="sub" font-size="11">d</tspan></text>
+    <path d="M 0 67 H 144 V 167 H 0 Z M 72 67 V 167 M 0 117 H 144" fill="none" stroke="#52667a" stroke-width="1.65"/>
+    <rect x="1" y="68" width="70" height="48" fill="#dbeaf2"/>
+    <rect x="73" y="118" width="70" height="48" fill="#dbeaf2"/>
+    <text x="36" y="98">|c₀|²</text>
+    <text x="108" y="148">|c₁|²</text>
+    <g fill="#925122" opacity="0.62" font-size="14">
+      <text x="108" y="98">≈ 0</text>
+      <text x="36" y="148">≈ 0</text>
+    </g>
+    <text x="72" y="202" font-size="15">Effective mixture</text>
+  </g>
+    <g fill="none" stroke="#52667a" stroke-width="2.3" marker-end="url(#arrow)">
+      <path d="M 188 117 H 270"/>
+      <path d="M 448 117 H 530"/>
+    </g>
+    <text x="229" y="101" font-size="13">Time</text>
+    <text x="229" y="143" font-size="13">⟨E₁|E₀⟩ → 0</text>
+  </g>
+</svg>

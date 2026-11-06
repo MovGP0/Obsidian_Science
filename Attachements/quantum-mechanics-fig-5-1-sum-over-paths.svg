@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="330" viewBox="0 0 680 330" role="img" aria-labelledby="title desc">
+  <title id="title">Sum over paths between fixed endpoints</title>
+  <desc id="desc">A solid classical path and three dashed or dotted paths connect the same initial and final positions and times.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#253245"/>
+    </marker>
+  </defs>
+  <rect width="680" height="330" rx="10" fill="#f8fafc"/>
+  <g fill="none" stroke="#253245" stroke-width="1.7">
+    <path d="M 61 192 H 622" marker-end="url(#arrow)"/>
+    <path d="M 105 300 V 38" marker-end="url(#arrow)"/>
+    <path d="M 100 86 H 110 M 100 260 H 110 M 153 187 V 197 M 551 187 V 197"/>
+  </g>
+  <g fill="none" stroke="#64748b" stroke-width="1.8" stroke-linecap="round">
+    <path d="M 153 260 C 235 175 303 69 373 96 S 488 78 551 86" stroke-dasharray="6 5"/>
+    <path d="M 153 260 C 240 137 286 230 377 158 S 507 113 551 86" stroke-dasharray="9 4 2 4"/>
+    <path d="M 153 260 C 246 287 284 146 357 182 S 438 135 486 63 C 504 40 522 68 551 86" stroke-dasharray="1 4"/>
+  </g>
+  <path d="M 153 260 C 273 221 396 117 551 86" fill="none" stroke="#174f78" stroke-width="3"/>
+  <g fill="#174f78">
+    <circle cx="153" cy="260" r="4"/>
+    <circle cx="551" cy="86" r="4"/>
+  </g>
+  <g font-family="system-ui, sans-serif" font-size="17" fill="#253245">
+    <text x="96" y="32" font-style="italic">x</text>
+    <text x="633" y="198" font-style="italic">t</text>
+    <text x="91" y="91" text-anchor="end">x<tspan baseline-shift="sub" font-size="12">f</tspan></text>
+    <text x="91" y="265" text-anchor="end">x<tspan baseline-shift="sub" font-size="12">i</tspan></text>
+    <text x="153" y="215" text-anchor="middle">t<tspan baseline-shift="sub" font-size="12">i</tspan></text>
+    <text x="551" y="215" text-anchor="middle">t<tspan baseline-shift="sub" font-size="12">f</tspan></text>
+    <text x="124" y="285">(x<tspan baseline-shift="sub" font-size="12">i</tspan>, t<tspan baseline-shift="sub" font-size="12">i</tspan>)</text>
+    <text x="562" y="79">(x<tspan baseline-shift="sub" font-size="12">f</tspan>, t<tspan baseline-shift="sub" font-size="12">f</tspan>)</text>
+    <text x="212" y="88" fill="#475569">Other paths</text>
+    <text x="358" y="222" fill="#174f78">Classical path</text>
+  </g>
+</svg>

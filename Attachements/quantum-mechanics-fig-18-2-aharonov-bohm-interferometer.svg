@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="250" viewBox="0 0 720 250" role="img" aria-labelledby="title desc">
+  <title id="title">Magnetic Aharonov–Bohm interferometer</title>
+  <desc id="desc">Electrons travel from a source through a double slit. The two paths pass on opposite sides of a solenoid with field out of the page and overlap at the screen.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 0L10 5L0 10z" fill="#166289"/>
+    </marker>
+  </defs>
+  <g fill="none" stroke="#334155" stroke-width="2.3">
+    <path d="M192 39V92 M192 105V145 M192 158V211 M602 32V220"/>
+    <circle cx="387" cy="125" r="22" fill="#f8fafc"/>
+    <circle cx="387" cy="125" r="8"/>
+  </g>
+  <circle cx="387" cy="125" r="3.2" fill="#334155"/>
+  <circle cx="111" cy="125" r="4.6" fill="#334155"/>
+  <g fill="none" stroke="#166289" stroke-width="2.4">
+    <path d="M124 125H178" marker-end="url(#arrow)"/>
+    <path d="M192 98C262 38 353 47 387 53C447 59 484 99 591 84"/>
+    <path d="M192 152C262 212 353 203 387 197C447 191 484 151 591 166"/>
+  </g>
+  <g fill="#166289">
+    <path d="M-9-7L10 0-9 7Z" transform="translate(300.85 51.03) rotate(-7.66)"/>
+    <path d="M-9-7L10 0-9 7Z" transform="translate(300.85 198.97) rotate(7.66)"/>
+  </g>
+  <g stroke="#925122" stroke-width="2">
+    <path d="M602 48H613 M602 70H628 M602 92H619 M602 114H639 M602 136H624 M602 158H634 M602 180H618 M602 202H628"/>
+  </g>
+  <g fill="#0f172a" font-family="system-ui, sans-serif" font-size="17" text-anchor="middle">
+    <text x="65" y="131">Source</text>
+    <text x="192" y="28">Double slit</text>
+    <text x="306" y="41">Γ₁</text>
+    <text x="306" y="224">Γ₂</text>
+    <text x="387" y="170">B</text>
+    <text x="602" y="22">Screen</text>
+    <text x="668" y="130">I(y)</text>
+  </g>
+</svg>

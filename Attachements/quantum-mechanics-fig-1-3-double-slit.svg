@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="540" height="247" viewBox="0 0 540 247" role="img" aria-labelledby="title description">
+  <title id="title">Double-slit experiment</title>
+  <desc id="description">A source sends quanta toward two slits in a wall. Paths from both slits reach a detector with a fringe distribution.</desc>
+  <rect width="540" height="247" rx="8" fill="#fff"/>
+  <g fill="#8493a2">
+    <path d="M187 29 H202 V98 H187 Z M187 110 H202 V137 H187 Z M187 149 H202 V218 H187 Z"/>
+  </g>
+  <g fill="none" stroke="#9aa7b5" stroke-width="1.2" stroke-dasharray="3 4">
+    <path d="M45 124 L195 104 L415 42 M195 104 L415 207 M45 124 L195 143 L415 42 M195 143 L415 207"/>
+  </g>
+  <circle cx="45" cy="124" r="4" fill="#334155"/>
+  <path d="M415 26 V222" stroke="#334155" stroke-width="2"/>
+  <path d="M415 38 C430 48 445 52 445 65 S415 83 415 94 C415 105 471 108 471 124 S415 145 415 155 C415 166 445 170 445 183 S430 200 415 210" fill="none" stroke="#166289" stroke-width="2.5"/>
+  <g fill="#334155" font-family="Georgia, serif" font-size="16">
+    <text x="22" y="129" font-style="italic">S</text>
+    <text x="194" y="239" text-anchor="middle">Wall</text>
+    <text x="211" y="108">1</text>
+    <text x="211" y="148">2</text>
+    <text x="415" y="239" text-anchor="middle">Detector</text>
+    <text x="459" y="40">Fringes</text>
+  </g>
+</svg>

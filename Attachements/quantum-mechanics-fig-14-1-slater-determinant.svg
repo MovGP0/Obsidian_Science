@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="710" height="283" viewBox="0 0 710 283" role="img" aria-labelledby="title desc">
+  <title id="title">Pauli exclusion from the Slater determinant</title>
+  <desc id="desc">A two-particle Slater determinant is expanded as a difference of two products. If the orbitals are equal, the rows coincide and the determinant is zero.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#52667a"/>
+    </marker>
+  </defs>
+  <rect width="710" height="283" rx="10" fill="#f8fafc"/>
+  <g fill="none" stroke="#52667a" stroke-width="1.8">
+    <path d="M 162 24 H 150 V 104 H 162 M 298 24 H 310 V 104 H 298"/>
+    <path d="M 303 186 H 291 V 252 H 303 M 433 186 H 445 V 252 H 433"/>
+    <path d="M 368 115 V 147" marker-end="url(#arrow)"/>
+  </g>
+  <g fill="#253245" font-family="system-ui, sans-serif" font-size="19">
+    <text x="16" y="69" font-size="16">Ψ = (1/√2) det</text>
+    <text x="179" y="55">ϕ₁(1)</text>
+    <text x="246" y="55">ϕ₁(2)</text>
+    <text x="179" y="86">ϕ₂(1)</text>
+    <text x="246" y="86">ϕ₂(2)</text>
+    <text x="328" y="69">= [ϕ₁(1)ϕ₂(2) − ϕ₁(2)ϕ₂(1)] / √2</text>
+    <text x="368" y="170" text-anchor="middle" font-size="17">If ϕ₁ = ϕ₂</text>
+    <text x="251" y="223">det</text>
+    <text x="316" y="213" fill="#166289">ϕ₁(1)</text>
+    <text x="380" y="213" fill="#166289">ϕ₁(2)</text>
+    <text x="316" y="238" fill="#166289">ϕ₁(1)</text>
+    <text x="380" y="238" fill="#166289">ϕ₁(2)</text>
+    <text x="468" y="223">= 0</text>
+    <text x="467" y="250" font-size="15">Equal rows</text>
+  </g>
+</svg>

@@ -1,7 +1,6 @@
 ---
 title: "Quantum Mechanics"
 ---
-
 > [!TLDR]
 > Choose a route through the mathematical language of quantum states, statistical models of many particles, or relativistic quantum fields.
 
@@ -20,5 +19,5 @@ The collection numbers organize this index; they are not a claim that every note
 1. [[Physics/Quantum Mechanics/1 Mathematical Foundations of Quantum Mechanics/00 Introduction|Mathematical Foundations of Quantum Mechanics]]
 2. [[00.00 Statistical Mechanics|Statistical Mechanics]]
 3. [[00.00 Quantum Field Theory|Quantum Field Theory]]
-4. Classical Mechanics
-5. Quantum Mechanics
+4. [[00.00 Classical Mechanics|Classical Mechanics]]
+5. [[00.00 Quantum Mechanics|Quantum Mechanics]]

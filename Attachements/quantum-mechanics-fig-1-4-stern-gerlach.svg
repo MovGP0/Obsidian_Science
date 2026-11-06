@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="545" height="205" viewBox="0 0 545 205" role="img" aria-labelledby="title description">
+  <title id="title">Stern–Gerlach experiment</title>
+  <desc id="description">A source sends a beam of atoms between a wedge-shaped north pole and a flat south pole. The two components deflect to different points on a detector.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0 1 L9 5 L0 9 Z" fill="#166289"/>
+    </marker>
+  </defs>
+  <rect width="545" height="205" rx="8" fill="#fff"/>
+  <g stroke="#334155" stroke-width="1.5">
+    <rect x="25" y="94" width="48" height="24" fill="#e2e8f0"/>
+    <path d="M192 24 H368 V76 H192 Z M209 76 H351 L280 95 Z" fill="#cbd5e1"/>
+    <rect x="192" y="133" width="176" height="50" fill="#e2e8f0"/>
+    <path d="M513 40 V173" fill="none"/>
+  </g>
+  <g fill="none" stroke="#166289" stroke-width="2.4" marker-end="url(#arrow)">
+    <path d="M73 106 H185"/>
+    <path d="M369 103 C412 100 456 75 500 64"/>
+    <path d="M369 109 C412 112 456 137 500 148"/>
+  </g>
+  <g fill="#334155">
+    <circle cx="513" cy="64" r="4"/>
+    <circle cx="513" cy="148" r="4"/>
+  </g>
+  <g fill="#334155" font-family="Georgia, serif" font-size="16" text-anchor="middle">
+    <text x="49" y="143">Source</text>
+    <text x="130" y="94">Beam</text>
+    <text x="280" y="55">N</text>
+    <text x="280" y="162">S</text>
+    <text x="529" y="69">+</text>
+    <text x="529" y="153">−</text>
+    <text x="503" y="194">Detector</text>
+  </g>
+</svg>
