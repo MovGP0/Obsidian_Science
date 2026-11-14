@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Direct linear system methods"
 catalogue_ids:
   - "19.2"

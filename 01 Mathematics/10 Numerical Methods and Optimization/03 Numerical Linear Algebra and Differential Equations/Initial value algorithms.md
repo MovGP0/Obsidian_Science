@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Initial value algorithms"
 catalogue_ids:
   - "19.4"

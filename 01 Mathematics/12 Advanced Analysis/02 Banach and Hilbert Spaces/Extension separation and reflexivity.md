@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Extension, separation, and reflexivity"
 catalogue_ids:
   - "12.5.5"

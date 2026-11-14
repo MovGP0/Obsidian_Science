@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Fixed points, positive maps, and monotonicity"
 catalogue_ids:
   - "12.8.4"
