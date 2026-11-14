@@ -1,0 +1,3 @@
+---
+title: ℤ Integers
+---

@@ -1,0 +1,3 @@
+---
+title: ℕ Natural Numbers
+---

@@ -8,5 +8,6 @@
   "enabledCssSnippets": [
     "bold-color"
   ],
-  "theme": "moonstone"
+  "theme": "moonstone",
+  "showRibbon": true
 }

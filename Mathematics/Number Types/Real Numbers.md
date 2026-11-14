@@ -1,3 +1,0 @@
----
-title: ℝ Real Numbers
----

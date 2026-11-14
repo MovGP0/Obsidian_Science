@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "c46ea6dd97536599",
+        "id": "a7cbc94f6df14795",
         "type": "tabs",
         "children": [
           {
-            "id": "0f92d2c7da9f9a65",
+            "id": "c2da7e29fd4f61e8",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -37,7 +37,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -152,53 +154,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "0532ea71f8302973",
+  "active": "c2da7e29fd4f61e8",
   "lastOpenFiles": [
-    "Electronics/KiCAD/NGSpice.md",
-    "Electronics/KiCAD/kicad_sch.md",
-    "Electronics/KiCAD/KiCAD MCP.md",
-    "Electronics/KiCAD/KiCAD.md",
-    "Electronics/Appendix/4700/ALU/~cmos_nand2.kicad_pro.lck",
-    "Electronics/Appendix/4700/ALU/~cmos_nand2.kicad_sch.lck",
-    "Electronics/Appendix/4700/ALU/~cmos_inv.kicad_pro.lck",
-    "Electronics/Appendix/4700/ALU/~cmos_inv.kicad_sch.lck",
-    "Electronics/KiCAD",
-    "Electronics/Appendix/4700/ALU/74181.md",
-    "Electronics/Appendix/4700/ALU/~cmos_add4.kicad_pro.lck",
-    "Electronics/Appendix/4700/ALU/~cmos_add4.kicad_sch.lck",
-    "Electronics/Appendix/4700/ALU/cmos_xor2.kicad_sch",
-    "Electronics/Appendix/4700/ALU/cmos_xnor2.kicad_sch",
-    "Electronics/Appendix/4700/ALU/cmos_or2.kicad_sch",
-    "Electronics/Acronyms.md",
-    "Electronics/Literature.md",
-    "Electronics/Appendix/4700/_Types of the 7400 Logic Families.md",
-    "Electronics/Appendix/4700/ALU/74881.md",
-    "Electronics/Appendix/4700/ALU/74583.md",
-    "Electronics/Appendix/4700/ALU/74385.md",
-    "Electronics/Appendix/4700/ALU/74283.md",
-    "Electronics/Appendix/4700/ALU/74183.md",
-    "Electronics/Appendix/4700/ALU/74182.md",
-    "Electronics/Appendix/4700/ALU/7483.md",
-    "Electronics/Appendix/4700/Parity Generators/74280.md",
-    "Electronics/Appendix/4700/Parity Generators/74180.md",
-    "Electronics/Appendix/4700/Display Decoders/74247.md",
-    "Electronics/Appendix/4700/Display Decoders/7449.md",
-    "Electronics/Appendix/4700/Display Decoders/7447.md",
-    "Electronics/Appendix/4700/Comparators/74688.md",
-    "Electronics/Appendix/4700/Comparators/74684.md",
-    "Electronics/Appendix/4700/Comparators/74682.md",
-    "Electronics/Appendix/4700/Comparators/74679.md",
-    "Electronics/Appendix/4700/Comparators/74521.md",
-    "Electronics/Appendix/4700/Comparators/74520.md",
-    "Attachements/Pasted image 20260419190457.png",
-    "Electronics/halbleiter-schaltungstechnik-16-9783662485538/images/halbleiter-schaltungstechnik-16-9783662485538-1814.png",
-    "Electronics/halbleiter-schaltungstechnik-16-9783662485538/images/halbleiter-schaltungstechnik-16-9783662485538-1822.png",
-    "Electronics/halbleiter-schaltungstechnik-16-9783662485538/images/halbleiter-schaltungstechnik-16-9783662485538-1830.png",
-    "Electronics/halbleiter-schaltungstechnik-16-9783662485538/images/halbleiter-schaltungstechnik-16-9783662485538-1831.png",
-    "Electronics/halbleiter-schaltungstechnik-16-9783662485538/images/halbleiter-schaltungstechnik-16-9783662485538-1829.png",
-    "Electronics/halbleiter-schaltungstechnik-16-9783662485538/images/halbleiter-schaltungstechnik-16-9783662485538-0001.png",
-    "Electronics/halbleiter-schaltungstechnik-16-9783662485538/images/halbleiter-schaltungstechnik-16-9783662485538-0005.png",
-    "Electronics/halbleiter-schaltungstechnik-16-9783662485538/images/halbleiter-schaltungstechnik-16-9783662485538-0006.png",
-    "Electronics/halbleiter-schaltungstechnik-16-9783662485538/images/halbleiter-schaltungstechnik-16-9783662485538-0002.png"
   ]
 }
