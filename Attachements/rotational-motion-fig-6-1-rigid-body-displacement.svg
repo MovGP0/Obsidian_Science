@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="510" height="405" viewBox="0 0 460 370" role="img" aria-labelledby="title description">
+  <title id="title">Displacement of a point on a rigid body under a torque</title>
+  <desc id="description">A horizontal force at P produces a counterclockwise rotation about O. The radial direction changes by d theta, and P moves a short distance dS.</desc>
+  <defs>
+    <path id="body" d="M166 20 C205 16 240 63 258 113 C281 174 290 238 272 276 C255 316 206 337 153 339 C102 342 51 326 38 302 C23 278 53 246 78 216 C107 181 119 146 113 117 C106 81 111 51 134 32 C144 24 153 21 166 20Z"/>
+    <marker id="force-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#9a431f"/></marker>
+    <marker id="vector-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#186b99"/></marker>
+    <marker id="angle-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#344b61"/></marker>
+  </defs>
+  <use href="#body" fill="#d9e4ec" stroke="#344b61" stroke-width="2"/>
+  <use href="#body" transform="rotate(-24 159 78)" fill="none" stroke="#61798d" stroke-width="1.65" stroke-dasharray="7 6"/>
+  <path d="M159 78L236 264" fill="none" stroke="#186b99" stroke-width="2.7" marker-end="url(#vector-arrow)"/>
+  <path d="M159 78L305 217" fill="none" stroke="#61798d" stroke-width="1.7" stroke-dasharray="4 4"/>
+  <path d="M236 264H353" fill="none" stroke="#9a431f" stroke-width="2.8" marker-end="url(#force-arrow)"/>
+  <path d="M236 264L305 217" fill="none" stroke="#186b99" stroke-width="2.65" marker-end="url(#vector-arrow)"/>
+  <path d="M173.2 112.4A37 37 0 0 0 186 103.6" fill="none" stroke="#344b61" stroke-width="1.8" marker-end="url(#angle-arrow)"/>
+  <g fill="#344b61"><circle cx="236" cy="264" r="3.9"/><circle cx="305" cy="217" r="3.7"/><circle cx="159" cy="78" r="2.9"/></g>
+  <circle cx="159" cy="78" r="7" fill="none" stroke="#344b61" stroke-width="1.6"/>
+  <g fill="#344b61" font-family="Segoe UI, Arial, sans-serif" font-size="20">
+    <text x="142" y="103">O</text><text x="130" y="64">dθ</text><text x="183" y="133">dθ</text>
+    <text x="219" y="285">P</text><text x="312" y="222">P′</text>
+    <text x="178" y="179" fill="#186b99">r</text><text x="275" y="248" fill="#186b99">dS</text>
+    <text x="322" y="290" fill="#9a431f">F</text>
+  </g>
+</svg>

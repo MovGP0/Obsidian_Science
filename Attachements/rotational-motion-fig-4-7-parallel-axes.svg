@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="438" viewBox="0 0 390 438" role="img" aria-labelledby="title description">
+  <title id="title">Parallel axes through and beside the center of mass</title>
+  <desc id="description">The mass element in this illustration lies on the line joining the two axes in a transverse plane. The lengths from the element to the axes are r and r prime, and the axes are separated by d.</desc>
+  <defs>
+    <linearGradient id="body" x1="0" y1="0.5" x2="1" y2="0.1">
+      <stop stop-color="#8ba4b5" />
+      <stop offset="1" stop-color="#d9e5ed" />
+    </linearGradient>
+    <marker id="axis" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 0L10 5 0 10Z" fill="#344b61" />
+    </marker>
+    <marker id="dim" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M0 0L10 5 0 10Z" fill="#186b99" />
+    </marker>
+  </defs>
+  <path d="M203 71C244 62 297 116 323 187C353 270 346 352 280 382C211 412 109 394 89 364C72 334 119 280 140 248C164 214 164 187 163 154C163 112 180 82 203 71Z" fill="url(#body)" stroke="#859bad" stroke-width="1.5"/>
+  <g fill="none" stroke="#344b61" stroke-width="2.2" marker-end="url(#axis)">
+    <path d="M128 409V30"/>
+    <path d="M221 409V30"/>
+  </g>
+  <g fill="none" stroke="#186b99" stroke-width="1.9" marker-start="url(#dim)" marker-end="url(#dim)">
+    <path d="M132 60H217"/>
+    <path d="M225 217H292"/>
+    <path d="M132 255H292"/>
+  </g>
+  <path d="M295 219V257" stroke="#6b8296" stroke-dasharray="3 3" />
+  <circle cx="221" cy="309" r="4.3" fill="#344b61"/>
+  <g fill="#b67a5b" stroke="#733d27" stroke-width="1.4">
+    <path d="M294 213l13 4 10-6-13-4z" fill="#d6a38c"/>
+    <path d="M294 213v13l13 4v-13z"/>
+    <path d="M307 217l10-6v13l-10 6z" fill="#a66c52"/>
+  </g>
+  <g fill="#344b61" font-family="Arial, sans-serif" font-size="20">
+    <text x="138" y="31">z′</text><text x="232" y="31">z</text>
+    <text x="175" y="326">CM</text><text x="299" y="202">dm</text>
+  </g>
+  <g fill="#186b99" font-family="Arial, sans-serif" font-style="italic" font-size="19">
+    <text x="166" y="82">d</text><text x="251" y="239">r</text><text x="188" y="249">r′</text>
+  </g>
+</svg>
