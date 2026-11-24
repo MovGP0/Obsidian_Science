@@ -17,9 +17,9 @@ We can also consider the particle’s momentum.
 
 We know that it’s going to be within certain values and that there’s going to be a maximum, a minimum and a sort of average momentum.
 
-If we make a plot of $x$-dimensional momentum on the vertical axis versus $x$-dimensional position on the horizontal we are going to end up with a region, a patch, where all the actual values of both $p_x$ and $x_x$ are contained.
+If we make a plot of $x$-dimensional momentum on the vertical axis versus $x$-dimensional position on the horizontal we are going to end up with a region, a patch, where all the possible values of both $p_x$ and $x$ are contained.
 
-This two-dimensional patch is called a **phase plane** and, for our one-dimensional particle on a line, it contains all the configurations of position and possible values of momentum for that dimension.
+The two-dimensional plane of $x$ and $p_x$ is called a **phase plane**. For our one-dimensional particle on a line, it contains all the combinations of position and momentum for that dimension. The state of the particle at one instant is a single point in this plane. The patch shows the range of possible states when we do not know the state exactly.
 
 For motion in one dimension the phase plane is a two-dimensional space and we can talk of ‘the area of the phase plane the system occupies’ as it traces out trajectories.
 
@@ -37,7 +37,7 @@ The state of the system is described not only by its position but also by its mo
 
 ### General case
 
-The state of a system of $n$ degrees of freedom is described by a volume in $2n$-dimensional phase space, a degree of freedom being $x, y, z$, etc.
+The state of a system of $n$ degrees of freedom is described by a point in $2n$-dimensional phase space, a degree of freedom being $x, y, z$, etc. A region (volume) of phase space describes an ensemble of systems or uncertain initial conditions.
 
 Because we can’t draw such a diagram for more than one dimension, we can use bold symbolled characters to represent all the dimensions into a two-dimensional representation; and then plot that two-dimensional plane against a time axis to represent time evolution.
 

@@ -141,7 +141,7 @@ where $\mechanical{M}=\pi\mechanical{R}\mechanical{\lambda}$. The final approxim
 
 Assume negligible air resistance, constant gravitational acceleration with height, and a constant fuel burn rate $\mathrm d\mechanical{m}/\mathrm dt=-\mechanical{\alpha}$. The force sketch shows thrust upward and weight $\mechanical{m}\mechanical{g}$ downward. The handwritten expression above the semicircle appears to give the changing weight, $(\mechanical{m}_0-\mechanical{\alpha}t)\mechanical{g}$.
 
-The discussion proposes evaluating the impulse over $\mathrm dt$ by comparing momentum at $t+\mathrm dt$ and $t$. In the handwritten working, the product rule is applied to the rocket momentum alone, giving $\mathrm d(\mechanical{m}\mechanical{v})/\mathrm dt=\mechanical{m}\mechanical{\dot v}-\mechanical{\alpha}\mechanical{v}$. The sketch’s thrust already accounts for the exhaust momentum. To use that thrust, include the momentum of expelled fuel in the balance as on [[#Collisions|the section on Collisions]], with external impulse $-\mechanical{m}\mechanical{g}\,\mathrm dt$.
+The discussion proposes evaluating the impulse over $\mathrm dt$ by comparing momentum at $t+\mathrm dt$ and $t$. In the handwritten working, the product rule is applied to the rocket momentum alone, giving $\mathrm d(\mechanical{m}\mechanical{v})/\mathrm dt=\mechanical{m}\mechanical{\dot v}-\mechanical{\alpha}\mechanical{v}$. The sketch’s thrust already accounts for the exhaust momentum. To use that thrust, include the momentum of expelled fuel in the balance as on [[#Rocket momentum balance|the section on Rocket momentum balance]], with external impulse $-\mechanical{m}\mechanical{g}\,\mathrm dt$.
 
 $$
 \mechanical{m}\mechanical{\dot v}
@@ -151,7 +151,7 @@ $$
 
 ##### Momentum carried by rocket exhaust
 
-The handwritten attempt equates $\mathrm d(\mechanical{m}\mechanical{v})/\mathrm dt$ for the rocket alone to $-\mechanical{m}\mechanical{g}$. Applying the product rule with $\mechanical{\dot m}=-\mechanical{\alpha}$ leads in the notes to $\mechanical{m}\mechanical{\dot v}=\mechanical{\alpha}\mechanical{v}-\mechanical{m}\mechanical{g}$, followed by an unfinished separation of variables. This attempt omits the momentum of the emitted mass. In the momentum balance for rocket and exhaust, the term $\mechanical{\alpha}\mechanical{v}$ is replaced by $\mechanical{\alpha}\mechanical{v}_{\mathrm{ex}}$ as on [[#Center of mass of a semicircular wire|the section on Center of mass of a semicircular wire]].
+The handwritten attempt equates $\mathrm d(\mechanical{m}\mechanical{v})/\mathrm dt$ for the rocket alone to $-\mechanical{m}\mechanical{g}$. Applying the product rule with $\mechanical{\dot m}=-\mechanical{\alpha}$ leads in the notes to $\mechanical{m}\mechanical{\dot v}=\mechanical{\alpha}\mechanical{v}-\mechanical{m}\mechanical{g}$, followed by an unfinished separation of variables. This attempt omits the momentum of the emitted mass. In the momentum balance for rocket and exhaust, the term $\mechanical{\alpha}\mechanical{v}$ is replaced by $\mechanical{\alpha}\mechanical{v}_{\mathrm{ex}}$ as on [[#Rocket momentum balance|the section on Rocket momentum balance]].
 
 ##### Center of mass of a solid cone
 
@@ -225,7 +225,7 @@ Thus the rate of sweeping area is constant.
 
 ##### Swept area and angular momentum of a system
 
-The orbit sketch refers to the equal-area result on [[#Evaluating the center-of-mass integral|the section on Evaluating the center-of-mass integral]].
+The orbit sketch refers to the equal-area result on [[#Central gravity and equal areas|the section on Central gravity and equal areas]].
 
 ![[Kyle Kabasares - Classical Mechanics - Equal areas in equal times.png|**Fig. 2** Two sectors along an orbit illustrate equal areas swept in equal time intervals.]]
 
@@ -257,7 +257,7 @@ T&\simeq\frac{2\mechanical{v}_{0y}}{\mechanical{g}}
 \end{aligned}
 $$
 
-In the second factor of the range, $\mechanical{k}T$ already contains one factor of $\mechanical{k}$, so only the drag-free part of $T$ contributes at first order. Thus the product reduces to the result given on [[Projectile motion with linear and quadratic drag#Momentum of a system|the section on Momentum of a system]]. The expansion at the bottom of the scan trails off and contains dropped factors of $\mechanical{g}$.
+In the second factor of the range, $\mechanical{k}T$ already contains one factor of $\mechanical{k}$, so only the drag-free part of $T$ contributes at first order. Thus the product reduces to the result given on [[Projectile motion with linear and quadratic drag#Range with weak linear drag|the section on Range with weak linear drag]]. The expansion at the bottom of the scan trails off and contains dropped factors of $\mechanical{g}$.
 
 ##### Second attempt at the weak-drag range
 
@@ -290,9 +290,9 @@ $$
 \end{aligned}
 $$
 
-in agreement with the lecture result on [[Projectile motion with linear and quadratic drag#Momentum of a system|the section on Momentum of a system]].
+in agreement with the lecture result on [[Projectile motion with linear and quadratic drag#Range with weak linear drag|the section on Range with weak linear drag]].
 
-The first three lines continue the alternate algebra on [[#Second attempt at the weak-drag range|the section on Second attempt at the weak-drag range]]. They carry the expression with the incorrect plus sign and combine terms of incompatible units, for example $3-2\mechanical{v}_{0y}$. The consistent first-order range is the one on [[Projectile motion with linear and quadratic drag#Momentum of a system|the section on Momentum of a system]] and 27.
+The first three lines continue the alternate algebra on [[#Second attempt at the weak-drag range|the section on Second attempt at the weak-drag range]]. They carry the expression with the incorrect plus sign and combine terms of incompatible units, for example $3-2\mechanical{v}_{0y}$. The consistent first-order range is the one on [[Projectile motion with linear and quadratic drag#Range with weak linear drag|the section on Range with weak linear drag]].
 
 ##### Angular momentum review
 
@@ -377,14 +377,14 @@ for a discrete or continuous mass distribution, respectively. In the planar case
 
 ##### Torque about the rotation axis
 
-The sketch resolves the force on mass $i$ into its tangential component. The torque component about the axis is the sum of the tangential forces times their lever arms. Each tangential acceleration is $\mechanical{a}_{i,\mathrm{tan}}=\mechanical{R}_i\mechanical{\alpha}$ for the common angular acceleration $\mechanical{\alpha}$.
+The sketch resolves the force on mass $i$ into its tangential component. The torque component about the axis is the sum of the tangential forces times their lever arms. Each tangential acceleration is $\mechanical{a}_{i,\mathrm{tan}}=\mechanical{R}_i\mechanical{\dot\omega}$ for the common angular acceleration $\mechanical{\dot\omega}$.
 
 $$
 \mechanical{\tau}_z
 =\sum_i\mechanical{R}_i\mechanical{F}_{i,\mathrm{tan}}
 =\sum_i\mechanical{R}_i\mechanical{m}_i\mechanical{a}_{i,\mathrm{tan}}
-=\mechanical{\alpha}\sum_i\mechanical{m}_i\mechanical{R}_i^2
-=\mechanical{I}\mechanical{\alpha}.
+=\mechanical{\dot\omega}\sum_i\mechanical{m}_i\mechanical{R}_i^2
+=\mechanical{I}\mechanical{\dot\omega}.
 $$
 
 ##### Comparing the range formula with scratch work
@@ -439,7 +439,7 @@ Kyle Kabasares, *Classical Mechanics (Physics 105, UC Merced 2015)*.
 | $\mechanical{\vec\ell}$, $\mechanical{\vec L}$ | $\unit{kg\,m^2\,s^{-1}}$ | Angular momentum | Moment of the linear momentum about the chosen origin. |
 | $\mechanical{G}$ | $\unit{N\,m^2\,kg^{-2}}$ | Gravitational constant | Coefficient in Newton’s inverse-square law of gravitation. |
 | $\mechanical{I}$ | $\unit{kg\,m^2}$ | Moment of inertia | Sum or integral of mass weighted by squared distance from the rotation axis. |
-| $\mechanical{\alpha}$, $\ddot\phi$, $\ddot\theta$ | $\unit{rad\,s^{-2}}$ | Angular acceleration | Rate of change of angular velocity about the rotation axis. |
+| $\mechanical{\dot\omega}$, $\ddot\phi$, $\ddot\theta$ | $\unit{rad\,s^{-2}}$ | Angular acceleration | Rate of change of angular velocity about the rotation axis. |
 | $\mechanical{k}$ | $\unit{N\,m^{-1}}$ | Spring constant | Force magnitude per unit extension or compression, or the local curvature of a position potential. |
 | $\mechanical{\sigma}$ | $\unit{m}$ | Particle diameter | Length scale for separation in the pair-potential sketch. |
 | $C$, $C_1$, $C_2$ | $\unit{m}$ | Complex displacement coefficients | Coefficients of the complex exponentials used to represent a real oscillation. |

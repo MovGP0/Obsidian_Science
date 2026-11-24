@@ -16,6 +16,9 @@ Their meaning is:
 - $\mathbf{R}$ is position and $\mathbf{P}$ is linear momentum
 - $\boldsymbol{\theta}$ describes orientation and $\mathbf{L}$ is angular momentum
 
+> [!note]
+> Only $(\mathbf{R}, \mathbf{P})$ is a canonical pair. The components of $\mathbf{L}$ are not canonical momenta, because $\{L_i, L_j\} = \epsilon_{ijk} L_k \neq 0$. Canonical pairs for the orientation are the Euler angles $(\phi, \theta, \psi)$ with their conjugate momenta $(p_\phi, p_\theta, p_\psi)$. The components of $\mathbf{L}$ are non-canonical (Lie–Poisson) variables.
+
 So the Hamiltonian picture places linear motion and rotational motion next to each other from the start.
 
 The total energy is described by the Hamiltonian
@@ -53,6 +56,9 @@ $$
 $$
 
 This is the important mixed relation. It says that angular momentum acts on linear momentum by rotating it.
+
+> [!note]
+> This mixed relation holds for the total angular momentum $\mathbf{J} = \mathbf{R} \times \mathbf{P} + \mathbf{S}$, where $\mathbf{S}$ is the spin about the center of mass. The rotational term $\tfrac12 \mathbf{L}^T \mathbf{I}^{-1} \mathbf{L}$ in $H$ uses the spin $\mathbf{S}$, and $\{S_i, P_j\} = 0$.
 
 ## Critical observation
 

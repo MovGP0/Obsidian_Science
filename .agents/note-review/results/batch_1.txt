@@ -1,0 +1,429 @@
+=== 02 Physics/01 Classical Mechanics/00.00 Classical Mechanics.md
+priority: low
+graph: no
+manim: no
+summary: Clean, complete table-of-contents hub; it serves its navigation purpose well.
+- [Links] The two transcribed problem notes in Chapter 1 ("Kinematics, projectiles, and circular motion problems", "Vector kinematics and moving polar bases") and the two in Chapter 2 ("Newton’s laws, friction, and drag problems", "Projectile motion with linear and quadratic drag") are not reachable from the hub; add a short "Supplementary worked problems" line under each chapter so they are not orphaned.
+- [Structure] Exercise links are labelled inconsistently ("Exercises" in Parts I–V vs "11.15 Exercises", "12.14 Exercises" later); pick one style.
+
+=== 02 Physics/01 Classical Mechanics/00.01 Introduction.md
+priority: low
+graph: no
+manim: no
+summary: Clear, well-organised preface describing scope, prerequisites, and the seven parts.
+- [Intuition] Add one or two sentences on why a single subject has three formulations (vector, Lagrangian, Hamiltonian), e.g. "same physics, different bookkeeping: forces vs energies vs phase-space flow", so a first-year reader understands the book's arc before reading the part list.
+- [Links] Link each Part heading to its chapter hub (e.g. Part I to [[01.00 Point Particle Kinematics]]) so the overview doubles as navigation.
+
+=== 02 Physics/01 Classical Mechanics/01 Point Particle Kinematics/01.00 Point Particle Kinematics.md
+priority: low
+graph: no
+manim: no
+summary: Concise chapter hub with an accurate formula summary and a consistent quantities table.
+- [Structure] The summary skips 1.7, 1.8 and 1.10; add one bullet each: $\mechanical{\vec a}=\mechanical{\dot v}\hat\tau+(\mechanical{v}^2/\mechanical{R})\hat n$, the polar acceleration $(\mechanical{\ddot r}-\mechanical{r}\mechanical{\dot\theta}^2)\hat e_r+(\mechanical{r}\mechanical{\ddot\theta}+2\mechanical{\dot r}\mechanical{\dot\theta})\hat e_\theta$, and the rotating-frame acceleration with Coriolis/centrifugal/Euler terms.
+- [Intuition] Add one sentence on when the point-particle model is valid (body size small compared with the path scale, rotation irrelevant), e.g. Earth around the Sun vs a spinning top.
+
+=== 02 Physics/01 Classical Mechanics/01 Point Particle Kinematics/01.01 Historical Background.md
+priority: low
+graph: no
+manim: no
+summary: Short, accurate historical sketch; adequate for its role.
+- [Intuition] Name the concrete reason the inclined plane mattered (it "dilutes" gravity so that times become measurable with water clocks, and the distance-proportional-to-$t^2$ law can be checked), which turns the history into physics insight.
+- [Links] Link "speeds near the speed of light" to the relativity section if one exists in the vault, and state the quantitative criterion $\mechanical{v}/c\ll1$ (e.g. $\gamma-1<10^{-8}$ for orbital speeds).
+
+=== 02 Physics/01 Classical Mechanics/01 Point Particle Kinematics/01.02 Reference Frames and Coordinates.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct but list-like; the coordinate systems are defined without any picture or guidance on the spherical angle convention.
+- [Graph] Add a graph3d figure showing a point $P$ with its Cartesian projections and the spherical angles $\mechanical{\theta}$ (from $+z$) and $\mechanical{\phi}$ (from $+x$ in the $xy$ plane), plus a 2D graph for planar polar $(\mechanical{r},\mechanical{\theta})$; the same symbol $\mechanical{\theta}$ means different angles in polar and spherical coordinates, and a figure removes that ambiguity.
+- [Simplify] State explicitly that planar $\mechanical{\theta}$ and spherical $\mechanical{\theta}$ are different angles (the table already lists both); consider renaming the planar one $\mechanical{\varphi}$ or adding a warning callout.
+- [Example] Add a one-line worked conversion, e.g. the point $(1,1,\sqrt2)$ in spherical coordinates gives $\mechanical{r}=2$, $\mechanical{\theta}=45^\circ$, $\mechanical{\phi}=45^\circ$, to make the formulas operational.
+- [Intuition] Explain the role of the clock (simultaneity and a common time parameter $t$ shared by all frames in Newtonian mechanics), since the definition lists it but never uses it.
+
+=== 02 Physics/01 Classical Mechanics/01 Point Particle Kinematics/01.03 Position, Velocity, and Acceleration.md
+priority: medium
+graph: yes
+manim: yes
+summary: Correct and compact, but the step from average to instantaneous velocity is stated rather than shown.
+- [Graph] Plot $\mechanical{x}(t)=\tfrac12\mechanical{g}t^2$ (free-fall example, $t\in[0,2]\,\unit{s}$) with a secant between $t_1$ and $t_2$ and the tangent at $t_1$, to show average vs instantaneous velocity as slopes.
+- [Manim] Animate the secant line on $\mechanical{x}(t)$ rotating into the tangent as $\Delta t\to0$ while a readout shows $\Delta\mechanical{x}/\Delta t$ converging to $\mechanical{\dot x}(t_1)$.
+- [Intuition] Add a short paragraph distinguishing speed vs velocity and average speed vs magnitude of average velocity (a round trip has zero average velocity but nonzero average speed).
+- [Example] Extend the free-fall example with numbers, e.g. $\mechanical{h}=\quantity{20}{m}$ gives $t_c\approx\quantity{2.0}{s}$ and impact speed $\mechanical{g}t_c\approx\quantity{19.8}{m\,s^{-1}}$, and a check that the units of $\sqrt{2\mechanical{h}/\mechanical{g}}$ are seconds.
+
+=== 02 Physics/01 Classical Mechanics/01 Point Particle Kinematics/01.04 Motion with Constant Acceleration in One Dimension.md
+priority: medium
+graph: yes
+manim: no
+summary: Derivations are correct and complete but lack graphs and a worked numerical example.
+- [Graph] Add stacked plots of $\mechanical{a}(t)=\mechanical{a}_0$, $\mechanical{v}(t)=\mechanical{v}_0+\mechanical{a}_0t$, and $\mechanical{x}(t)$ for e.g. $\mechanical{v}_0=\quantity{10}{m\,s^{-1}}$, $\mechanical{a}_0=\quantity{-2}{m\,s^{-2}}$, $t\in[0,10]\,\unit{s}$, highlighting that the area under $\mechanical{v}(t)$ is the displacement and the turning point at $t=5\,\unit{s}$.
+- [Intuition] Give the area interpretation of $\mechanical{x}-\mechanical{x}_0=\mechanical{v}_0t+\tfrac12\mechanical{a}_0t^2$ (rectangle plus triangle under the $v$-$t$ line), and the equivalent average-velocity form $\Delta\mechanical{x}=\tfrac12(\mechanical{v}_0+\mechanical{v})t$.
+- [Example] Add a worked braking or vertical-throw example that uses the sign convention in the Physics I callout (e.g. throw up at $\quantity{15}{m\,s^{-1}}$: apex height $\quantity{11.5}{m}$, return time $\quantity{3.06}{s}$).
+- [Simplify] Mention a "choose the equation by the missing variable" rule (no $t$ → third equation; no $\mechanical{x}$ → first), which is the practical skill this note teaches.
+
+=== 02 Physics/01 Classical Mechanics/01 Point Particle Kinematics/01.05 Motion in Two and Three Dimensions.md
+priority: high
+graph: yes
+manim: yes
+summary: Correct results, but the parabola is asserted rather than derived and there is no trajectory figure or discussion of the 45° optimum.
+- [Simplify] Derive the trajectory equation explicitly by eliminating $t$: $\mechanical{y}=\mechanical{x}\tan\mechanical{\alpha}-\dfrac{\mechanical{g}\mechanical{x}^2}{2\mechanical{v}_0^2\cos^2\mechanical{\alpha}}$, which justifies "the path is a parabola".
+- [Graph] Plot trajectories $\mechanical{y}(\mechanical{x})$ for $\mechanical{v}_0=\quantity{20}{m\,s^{-1}}$, $\mechanical{g}=\quantity{9.81}{m\,s^{-2}}$ and $\mechanical{\alpha}=15^\circ,30^\circ,45^\circ,60^\circ,75^\circ$ on $x\in[0,42]$ m, showing that complementary angles share the same range and $45^\circ$ is maximal.
+- [Intuition] Explain why $\sin(2\mechanical{\alpha})$ peaks at $45^\circ$ (trade-off between flight time $\propto\sin\mechanical{\alpha}$ and horizontal speed $\propto\cos\mechanical{\alpha}$), and add the limiting cases $\mechanical{\alpha}\to0$ and $\mechanical{\alpha}\to90^\circ$.
+- [Manim] Animate a projectile tracing its parabola while its velocity vector and the separate $\mechanical{v}_x$ (constant) and $\mechanical{v}_y$ (linearly decreasing) component arrows update, showing independence of horizontal and vertical motion.
+- [Correctness] State the validity limits: uniform $\mechanical{g}$ and no drag; link to the drag note ("Projectile motion with linear and quadratic drag") to show how real ranges fall short.
+
+=== 02 Physics/01 Classical Mechanics/01 Point Particle Kinematics/01.06 Circular Motion.md
+priority: medium
+graph: no
+manim: yes
+summary: Clear derivation with a figure and a good satellite example; the only gap is intuition for why the acceleration points inward.
+- [Intuition] Add the geometric argument for centripetal acceleration: over $\Delta t$ the velocity vector rotates by $\Delta\mechanical{\theta}$, so $\lvert\Delta\mechanical{\vec v}\rvert\approx\mechanical{v}\Delta\mechanical{\theta}$ and points toward the centre, giving $\mechanical{a}=\mechanical{v}\mechanical{\omega}=\mechanical{v}^2/\mechanical{R}$ without calculus.
+- [Manim] Animate a point moving on the circle with tangent velocity arrow, then copy successive velocity arrows tail-to-tail into a "velocity circle" (hodograph) so the viewer sees $\Delta\mechanical{\vec v}$ pointing toward the centre; optionally add nonzero $\mechanical{\alpha}$ to show the tangential component appearing.
+- [Structure] The symbol $\mechanical{\alpha}$ is angular acceleration here but launch angle in 1.5 and the chapter summary; add a short notation remark or use a different symbol to avoid confusion when reading consecutively.
+- [Example] Add a second, everyday example (e.g. a car at $\quantity{20}{m\,s^{-1}}$ on a $\quantity{50}{m}$ curve: $\mechanical{a}_c=\quantity{8}{m\,s^{-2}}\approx0.8\mechanical{g}$) to give scale.
+
+=== 02 Physics/01 Classical Mechanics/01 Point Particle Kinematics/01.07 Tangential and Normal Acceleration.md
+priority: medium
+graph: yes
+manim: yes
+summary: Correct and well structured, but the key step $d\hat\tau/d\mechanical{s}=\hat n/\mechanical{R}$ is stated without justification.
+- [Simplify] Justify $d\hat\tau/d\mechanical{s}=\hat n/\mechanical{R}$: $\hat\tau$ has unit length so its derivative is perpendicular to it, and along an osculating circle of radius $\mechanical{R}$ the tangent turns by $d\mechanical{s}/\mechanical{R}$.
+- [Graph] Plot a curve such as $y=x^2$ on $x\in[-1.5,1.5]$ with the osculating circle at $x=0$ (radius $1/2$) and at $x=1$ (radius $5^{3/2}/2\approx5.59$), with $\hat\tau$ and $\hat n$ drawn at each point.
+- [Manim] Animate a car moving along a curve with variable speed, showing $\mechanical{a}_\tau\hat\tau$ and $\mechanical{a}_n\hat n$ arrows changing, and the osculating circle sliding along with the car.
+- [Example] Extend the car example by giving the acceleration after $\quantity{2}{s}$ ($\mechanical{v}=\quantity{24}{m\,s^{-1}}$, $\mechanical{a}_n=\quantity{5.76}{m\,s^{-2}}$) to show the normal component growing with speed squared.
+
+=== 02 Physics/01 Classical Mechanics/01 Point Particle Kinematics/01.08 Motion in Polar Coordinates.md
+priority: high
+graph: yes
+manim: yes
+summary: Correct but dense; the basis-vector derivatives and the second differentiation are stated without the intermediate algebra or geometric picture.
+- [Simplify] Show the derivation of $\dot{\hat e}_r=\mechanical{\dot\theta}\hat e_\theta$ from $\hat e_r=(\cos\mechanical{\theta},\sin\mechanical{\theta})$, and write out the product-rule step for $\mechanical{\vec a}$ (four terms before collecting), as the companion note "Vector kinematics and moving polar bases" already does.
+- [Intuition] Explain the $2\mechanical{\dot r}\mechanical{\dot\theta}$ term physically: half comes from the radial velocity being rotated, half from $\mechanical{r}\mechanical{\dot\theta}$ increasing as $\mechanical{r}$ grows (e.g. walking outward on a merry-go-round). Calling it "kinematic Coriolis term" without this explanation is confusing before rotating frames are introduced.
+- [Manim] Animate a point moving on the Archimedean spiral with the local $\hat e_r,\hat e_\theta$ arrows rotating with it, and show the acceleration vector split into its radial and transverse components.
+- [Graph] Plot the spiral $\mechanical{r}=\mechanical{c}\mechanical{\theta}$ for $\mechanical{\theta}\in[0,4\pi]$ (curve type polar/parametric $x=c\theta\cos\theta$, $y=c\theta\sin\theta$) with velocity vectors at a few points.
+- [Example] Add a limiting-case check: $\mechanical{r}=\mathrm{const}$ recovers the circular-motion result of 1.6 ($-\mechanical{R}\mechanical{\omega}^2\hat e_r+\mechanical{R}\mechanical{\alpha}\hat e_\theta$).
+
+=== 02 Physics/01 Classical Mechanics/01 Point Particle Kinematics/01.09 Relative Motion and Addition of Velocities.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct and short; the source-wording callout is helpful but the main text should state the condition directly.
+- [Simplify] Replace the acceleration sentence and the "Source wording" callout with the general relation $\mechanical{\vec a}=\mechanical{\vec A}+\mechanical{\vec a}\,'$ (with $\mechanical{\vec A}=\mechanical{\ddot{\vec R}}$) and then the special case $\mechanical{\vec A}=\vec0$.
+- [Graph] Add a 2D vector diagram for the river example: $\mechanical{\vec V}$, $\mechanical{\vec v}\,'$ and their sum, plus the boat's actual straight-line path across a river of width $\mechanical{L}$ (e.g. $\mechanical{V}=1.5$, $\mechanical{v}'=2.0\,\unit{m\,s^{-1}}$, $\mechanical{L}=\quantity{100}{m}$).
+- [Example] Add the complementary question: which heading gives a path straight across ($\sin\varphi=\mechanical{V}/\mechanical{v}'$) and how long it takes, which is the classic follow-up and highlights the vector nature.
+- [Intuition] Mention the validity limit: Galilean addition fails as speeds approach $c$, linking to relativity.
+
+=== 02 Physics/01 Classical Mechanics/01 Point Particle Kinematics/01.10 Kinematics in Rotating Reference Frames.md
+priority: high
+graph: no
+manim: yes
+summary: Correct formulas, but the transport theorem is stated without derivation and the Coriolis term lacks intuition.
+- [Simplify] Derive the transport theorem in two lines: write $\vec A=\sum A_i'\hat e_i'$, differentiate, and use $\dot{\hat e}_i'=\mechanical{\vec\omega}\times\hat e_i'$; also show where the factor 2 in the Coriolis term comes from (one $\mechanical{\vec\omega}\times\mechanical{\vec v}\,'$ from each application of the theorem).
+- [Manim] Animate a ball rolling straight outward on a rotating turntable: in the inertial view its path is straight, in the co-rotating view it curves; show both side by side with the Coriolis acceleration arrow in the rotating view.
+- [Intuition] Give a number for the Coriolis acceleration at Earth's surface (e.g. $2\mechanical{\omega}_T\mechanical{v}\approx\quantity{1.5\times10^{-3}}{m\,s^{-2}}$ for $\mechanical{v}=\quantity{10}{m\,s^{-1}}$) to complement the centrifugal estimate.
+- [Simplify] Fold the "Source wording" callout into the example: say directly that rotation accounts for about $\quantity{0.034}{m\,s^{-2}}$ of the $\approx\quantity{0.05}{m\,s^{-2}}$ equator–pole difference and Earth's oblateness for the rest.
+
+=== 02 Physics/01 Classical Mechanics/01 Point Particle Kinematics/01.11 Kinematics Exercises.md
+priority: low
+graph: no
+manim: no
+summary: Well-graded exercise list with results; numerical answers I checked are correct.
+- [Structure] Exercise 7 and Exercise 15 have no stated result while all others do; add the result line (Ex. 15: angle $=\arctan(1/a)$ is already in the text, move it to a **Result** line) for consistency.
+- [Structure] Ordering mixes levels (Ex. 11–12 Intermediate after Challenge 9–10, Ex. 13 Basic at the end); consider sorting Basic → Intermediate → Challenge.
+
+=== 02 Physics/01 Classical Mechanics/01 Point Particle Kinematics/Kinematics, projectiles, and circular motion problems.md
+priority: high
+graph: yes
+manim: no
+summary: A faithful transcription of handwritten course notes; arithmetic is mostly correct, but it is disorganised, contains course-admin and personal details, and its quantities table belongs to a different note.
+- [Correctness] The Physical quantities table defines $\mechanical{R}$ as "Volume flow rate, $\unit{m^3/s}$", but in this note $\mechanical{R}$ is the projectile range (4.38) and the resultant vector; the table also lists symbols that never occur here ($\mechanical{f}_s,\mechanical{f}_k,\mechanical{\mu}$, $\energy{U}_s$, $\mechanical{\vec r}_{\mathrm{CM}}$, $\mechanical{\lambda}$, $\mechanical{\sigma}$, wave number $\signal{k}$, pressure $\mechanical{P}$). Rebuild the table from the symbols actually used.
+- [Correctness] Window problem: the roots of $0=-5+\sqrt3\,\Delta x-0.049(\Delta x)^2$ are $\Delta x=(\sqrt3\mp\sqrt{1.02})/0.098\approx3.2\,\unit{m}$ and $32.2\,\unit{m}$, not "3.1 m" and "32.1 m".
+- [Structure] Remove the opening course-admin paragraph (instructor name and email, grading weights); it is personal data and not physics. Also remove fragments such as the scientific-notation arithmetic and the unit-conversion homework (1.23–1.54) or move them to a separate "units" note.
+- [Structure] Regroup into topic sections (1D kinematics, free fall, vectors, projectiles, circular motion) with each homework problem stated before its solution; problem 4.44 stops at the setup and its solution parts (a)–(c) appear at the top of "Newton’s laws, friction, and drag problems", so move them back here.
+- [Graph] Replace or supplement the scanned figures for the window problem with a native plot of $y(x)=\sqrt3x-0.049x^2$ for $x\in[0,36]$ m and the horizontal line $y=5$ m, marking the two intersections.
+- [Simplify] Use consistent units notation ($\unit{m\,s^{-1}}$ as in the numbered chapters instead of $\unit{m/s}$) and apply semantic macros to symbols that are currently plain ($v_0$, $a$, $t$ in the derivation of $v^2=v_0^2+2a\Delta x$ and in 4.40, 4.44).
+
+=== 02 Physics/01 Classical Mechanics/01 Point Particle Kinematics/Vector kinematics and moving polar bases.md
+priority: high
+graph: yes
+manim: yes
+summary: Correct mathematics (cross-product example and polar acceleration verified), but it is a loosely ordered transcription that mixes vector algebra, work-energy, momentum and polar kinematics, with many references to sketches that are not shown.
+- [Correctness] The Physical quantities table contains rows for symbols that do not appear in this note: flight time $T$, travel time $T$ (Fermat/brachistochrone), cycloid scale $\mechanical{a}$, and "$C,C_1,C_2$ complex displacement coefficients, $\unit{m}$", whereas the only $C$ here is the integration constant in $\mechanical{\dot x}=(\mechanical{F}_0/\mechanical{m})t+C$, which has units of velocity. Remove or correct these rows.
+- [Structure] Reorder to match the title: vector algebra (components, dot, cross, $\epsilon_{ijk}$, triple products) → vector derivatives → planar polar basis and acceleration; move the work-energy, incline, and momentum fragments to the Chapter 2/3 problem notes. The "Dot and cross products", "Vector products" and "Expanding vector products" sections repeat each other and can be merged.
+- [Simplify] Delete sentences that describe unseen handwriting or sketches ("The lower sketches contrast another spherical-coordinate labeling...", "The handwriting mixes these two expressions...") or replace them with the actual figure.
+- [Manim] Animate the polar basis: a point moves on a curve, $\hat r$ and $\hat\phi$ rotate with it, and the small change $\Delta\hat r\approx\Delta\phi\,\hat\phi$ is drawn as the angle advances, illustrating $d\hat r/dt=\dot\phi\,\hat\phi$ and $d\hat\phi/dt=-\dot\phi\,\hat r$.
+- [Graph] Add a graph3d figure for the cross-product example $\vec A=(1,2,3)$, $\vec B=(4,5,6)$, $\vec A\times\vec B=(-3,6,-3)$ showing that the result is perpendicular to both.
+- [Structure] Angles $\theta,\phi,\psi$ and $\dot\phi$ are left uncolored here while the numbered notes write $\mechanical{\theta}$ and $\mechanical{\dot\theta}$; apply the macros consistently.
+
+=== 02 Physics/01 Classical Mechanics/02 Newton's Three Laws/02.00 Newton's Three Laws.md
+priority: low
+graph: no
+manim: no
+summary: Clear chapter hub with an accurate summary.
+- [Structure] Add summary bullets for 2.6 (friction law $\lVert\mechanical{\vec f}_s\rVert\le\mechanical{\mu}_s\mechanical{N}$), 2.10 (terminal velocity $\mechanical{v}_\infty=\mechanical{m}\mechanical{g}/\mechanical{b}$), 2.12 (impulse–momentum) and 2.13 (pendulum $\signal{\omega}=\sqrt{\mechanical{g}/\mechanical{\ell}}$), which are currently missing from the summary.
+
+=== 02 Physics/01 Classical Mechanics/02 Newton's Three Laws/02.01 Origins of Newton's Laws.md
+priority: low
+graph: no
+manim: no
+summary: Short, accurate historical context; appropriate as is.
+- [Intuition] Optionally add the Moon test as the concrete payoff: the Moon's centripetal acceleration $\approx\quantity{2.7\times10^{-3}}{m\,s^{-2}}\approx\mechanical{g}/60^2$ at 60 Earth radii, which made "the same theory on Earth and in the sky" a quantitative claim.
+
+=== 02 Physics/01 Classical Mechanics/02 Newton's Three Laws/02.02 Principle of Inertia.md
+priority: medium
+graph: no
+manim: yes
+summary: Correct and concise, but the first law is presented abstractly without the motivating contrast to Aristotelian intuition.
+- [Intuition] Add Galileo's double-inclined-plane thought experiment (ball rolls up to the same height; as the second plane flattens it rolls forever), which motivates why constant velocity, not rest, is the natural state.
+- [Manim] Animate the double-incline thought experiment: the ball released on the left reaches the same height on the right as the right slope is lowered step by step, until on a horizontal plane it never stops.
+- [Simplify] Clarify why the first law is not just a special case of the second: it defines the frames in which $\mechanical{\vec F}=\mechanical{m}\mechanical{\vec a}$ holds; show a counterexample (a ball on the floor of an accelerating bus appears to accelerate with no force).
+- [Example] Add a numerical Galilean-transformation example (a ball thrown forward at $\quantity{5}{m\,s^{-1}}$ in a train moving at $\quantity{20}{m\,s^{-1}}$) showing that accelerations agree in both frames.
+
+=== 02 Physics/01 Classical Mechanics/02 Newton's Three Laws/02.03 Second Law – F = ma.md
+priority: medium
+graph: no
+manim: no
+summary: Correct and well caveated; it needs a worked example where the vector character and net-force summation matter.
+- [Example] Add a 2D example with two or more forces (e.g. a puck with $\mechanical{\vec F}_1=(10,0)\,\unit{N}$ and $\mechanical{\vec F}_2=(0,5)\,\unit{N}$, $\mechanical{m}=\quantity{0.3}{kg}$), emphasising that $\mechanical{\vec F}$ is the vector sum and $\mechanical{\vec a}$ is parallel to it.
+- [Intuition] Explain operationally what force and mass mean (mass ratios from equal-force accelerations, force as $\mechanical{m}\mechanical{\vec a}$ on a reference mass) so the law is not read as a pure definition.
+- [Correctness] Update the equivalence-principle figure: the source's $\approx10^{-13}$ corresponds to torsion-balance tests; the MICROSCOPE satellite (final results 2022) constrains the Eötvös parameter to about $10^{-15}$. Cite the bound as "better than $10^{-13}$" if the source figure is kept.
+- [Simplify] The "Source wording" callout about variable mass can be shortened to a direct statement in the main text: $\mechanical{\vec F}=d\mechanical{\vec p}/dt$ holds for a fixed set of particles; for open systems use the rocket-equation momentum balance.
+
+=== 02 Physics/01 Classical Mechanics/02 Newton's Three Laws/02.04 Third Law – Action and Reaction.md
+priority: medium
+graph: no
+manim: no
+summary: Correct statement; it lacks the classic misconception discussion that makes the third law useful in practice.
+- [Intuition] Add the horse-and-cart (or book-on-table) example to separate third-law pairs (forces on different bodies) from balanced forces on one body (weight and normal force are not a third-law pair).
+- [Example] Make the cord example quantitative by connecting it to Atwood/Two-block results in 2.8 and 2.11, or show a pushing example (two blocks in contact: $\mechanical{F}_c=\mechanical{m}_2\mechanical{F}/(\mechanical{m}_1+\mechanical{m}_2)$) where the contact pair is explicit.
+- [Correctness] The sentence "In the form used here, the action and reaction forces have the same line of action" is the strong form; add that magnetic forces between moving charges can violate it, where field momentum restores momentum conservation.
+
+=== 02 Physics/01 Classical Mechanics/02 Newton's Three Laws/02.05 Fundamental Forces and Contact Forces.md
+priority: low
+graph: no
+manim: no
+summary: Accurate overview; brief by design.
+- [Intuition] Add one quantitative comparison showing why electromagnetism dominates contact forces (electric/gravitational force ratio between two protons $\approx10^{36}$) and why gravity still dominates at astronomical scales (neutrality of matter).
+- [Links] Link "Drag" to [[02.10 Viscous Drag and Terminal Velocity]], "friction" and "tension" to [[02.06 Tension, Friction, and Constraints]], and the spring force to [[02.09 Elastic Forces and Elastic Cords]].
+
+=== 02 Physics/01 Classical Mechanics/02 Newton's Three Laws/02.06 Tension, Friction, and Constraints.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct content, but friction is stated as formulas without the static-to-kinetic picture and the hanging-cord result lacks a derivation.
+- [Graph] Plot friction magnitude versus applied horizontal force: a line $\mechanical{f}=\mechanical{F}$ up to $\mechanical{\mu}_s\mechanical{N}$, then a drop to the constant $\mechanical{\mu}_d\mechanical{N}$ (e.g. $\mechanical{N}=\quantity{49}{N}$, $\mechanical{\mu}_s=0.7$, $\mechanical{\mu}_d=0.5$).
+- [Simplify] Derive the incline threshold $\tan\mechanical{\alpha}\le\mechanical{\mu}_s$ in two lines from $\mechanical{m}\mechanical{g}\sin\mechanical{\alpha}\le\mechanical{\mu}_s\mechanical{m}\mechanical{g}\cos\mechanical{\alpha}$ and note it is mass-independent (a practical way to measure $\mechanical{\mu}_s$).
+- [Simplify] For the heavy cord, show $d\mechanical{T}=\mechanical{\lambda}\mechanical{g}\,d\mechanical{s}$ from a free-body diagram of an element and integrate to $\mechanical{T}(\mechanical{s})=\mechanical{\lambda}\mechanical{g}\mechanical{s}$; use $d/d\mechanical{s}$ rather than $\partial/\partial\mechanical{s}$ for this one-variable static case.
+- [Structure] The vault uses $\mechanical{\mu}_d$ here but $\mechanical{\mu}_k$ in the transcribed problem notes; choose one subscript convention throughout.
+
+=== 02 Physics/01 Classical Mechanics/02 Newton's Three Laws/02.07 Noninertial Reference Frames.md
+priority: high
+graph: no
+manim: yes
+summary: Correct but brief; centrifugal and Coriolis forces are listed without a simple worked example or intuition, and the Foucault example jumps to the result.
+- [Example] Add a translating-frame example (pendulum hanging in an accelerating car tilts at $\tan\varphi=\mechanical{A}/\mechanical{g}$; apparent weight in an elevator) before the rotating case.
+- [Intuition] Explain the direction of the Coriolis force with a concrete case (northern hemisphere: moving objects deflect to the right; magnitude estimate for a projectile) and why the centrifugal force points away from the axis.
+- [Manim] Animate the Foucault pendulum seen from above: the swing plane fixed in the inertial frame while the floor rotates at $\mechanical{\omega}_T\sin\mechanical{\lambda}$, then switch to the floor's frame where the plane precesses.
+- [Simplify] State the general equation including the frame-origin acceleration and the Euler term, $-\mechanical{m}\mechanical{\vec A}-\mechanical{m}\mechanical{\dot{\vec\omega}}\times\mechanical{\vec r}\,'$, then specialise, so it matches 1.10.
+
+=== 02 Physics/01 Classical Mechanics/02 Newton's Three Laws/02.08 Worked Examples in Dynamics.md
+priority: medium
+graph: yes
+manim: no
+summary: Good examples with correct numbers and limiting cases; the banked-curve example would benefit from a friction extension and a figure.
+- [Graph] Add a 2D force diagram for the banked curve (normal force resolved into $\mechanical{N}\sin\mechanical{\beta}$ and $\mechanical{N}\cos\mechanical{\beta}$, weight, centre direction), drawn with graph lines and arrows.
+- [Example] Extend the banked curve with static friction to give the speed range $\mechanical{v}^2_{\min/\max}=\mechanical{g}\mechanical{R}\dfrac{\sin\mechanical{\beta}\mp\mechanical{\mu}_s\cos\mechanical{\beta}}{\cos\mechanical{\beta}\pm\mechanical{\mu}_s\sin\mechanical{\beta}}$, which shows why the frictionless speed is special.
+- [Simplify] In the two-block example, show the elimination step (add the two equations so $\mechanical{T}$ cancels) rather than only giving the solution.
+- [Structure] The last sentence "Race tracks are designed for typical race speeds" is vague; replace it with a numeric comparison (e.g. Daytona's 31° banking and $\mechanical{R}\approx\quantity{300}{m}$ give $\approx\quantity{42}{m\,s^{-1}}$).
+
+=== 02 Physics/01 Classical Mechanics/02 Newton's Three Laws/02.09 Elastic Forces and Elastic Cords.md
+priority: medium
+graph: yes
+manim: yes
+summary: Correct but terse; series/parallel spring results are stated without derivation and the title promises elastic cords that are not discussed.
+- [Simplify] Derive both combination rules in one line each: parallel springs share the displacement (forces add), series springs share the force (extensions add).
+- [Structure] The title mentions "elastic cords" but the note only treats springs; add a paragraph on cords that resist only extension ($\mechanical{F}=0$ when slack), e.g. a bungee cord, or rename the note.
+- [Graph] Plot $\mechanical{F}(\mechanical{x})=-\mechanical{k}\mechanical{x}$ and $\energy{U}(\mechanical{x})=\tfrac12\mechanical{k}\mechanical{x}^2$ on the same $\mechanical{x}$ axis, plus the vertical-spring potential $\tfrac12\mechanical{k}\mechanical{z}^2+\mechanical{m}\mechanical{g}\mechanical{z}$ showing its minimum shifted to $\mechanical{z}_0=-\mechanical{m}\mechanical{g}/\mechanical{k}$.
+- [Manim] Animate a mass on a vertical spring: first the static stretch to $\mechanical{z}_0$, then oscillation about $\mechanical{z}_0$ with the same period as the horizontal case, showing that gravity only shifts equilibrium.
+- [Simplify] Integrate the "Source wording" callout into the main text by stating the origin choice once.
+
+=== 02 Physics/01 Classical Mechanics/02 Newton's Three Laws/02.10 Viscous Drag and Terminal Velocity.md
+priority: high
+graph: yes
+manim: no
+summary: Correct and physically honest (it flags that Stokes drag fails for raindrops), but the $\mechanical{v}(t)$ solution is underived and the regime criterion (Reynolds number) is missing.
+- [Simplify] Show the separation-of-variables derivation of $\mechanical{v}(t)=\mechanical{v}_\infty(1-e^{-t/\tau})$ and verify the limits $t\ll\tau$ ($\mechanical{v}\approx\mechanical{g}t$, free fall) and $t\gg\tau$.
+- [Graph] Plot $\mechanical{v}(t)/\mechanical{v}_\infty$ versus $t/\tau$ on $[0,5]$ for linear drag $1-e^{-t/\tau}$ and for quadratic drag $\tanh(t/\tau_q)$, plus the drag-free line $\mechanical{v}=\mechanical{g}t$, to show the approach to terminal velocity.
+- [Intuition] Introduce the Reynolds number $Re=\mechanical{\rho}_f\mechanical{v}\,2\mechanical{R}/\mechanical{\eta}$ as the criterion for choosing between the two drag laws; for the raindrop $Re\approx10^3$ at $\quantity{6.5}{m\,s^{-1}}$, explaining why the Stokes estimate of $\quantity{121}{m\,s^{-1}}$ fails.
+- [Example] Complete the raindrop example with the quadratic law: $\mechanical{v}_\infty=\sqrt{2\mechanical{m}\mechanical{g}/(\mechanical{\rho}_{\mathrm{air}}\mechanical{C}_d\mechanical{A})}$ with $\mechanical{C}_d\approx0.5$ gives $\approx\quantity{6.6}{m\,s^{-1}}$, close to the measured value.
+- [Structure] The water density is written $\mechanical{\rho}_a$, which reads as "air"; use $\mechanical{\rho}_w$, and give the fluid density in the quadratic law its own subscript.
+
+=== 02 Physics/01 Classical Mechanics/02 Newton's Three Laws/02.11 Free-Body Diagram.md
+priority: medium
+graph: yes
+manim: no
+summary: Clear procedure and a correct Atwood example, but a note about free-body diagrams contains no diagram.
+- [Graph] Add a native 2D figure of the Atwood machine with separate free-body diagrams for $\mechanical{m}_1$ and $\mechanical{m}_2$ (tension up, weights down, acceleration arrows).
+- [Example] Add limiting-case checks: $\mechanical{m}_1=\mechanical{m}_2$ gives $\mechanical{a}=0$, $\mechanical{T}=\mechanical{m}\mechanical{g}$; $\mechanical{m}_1\to0$ gives $\mechanical{a}\to\mechanical{g}$, $\mechanical{T}\to0$; and note $\mechanical{m}_1\mechanical{g}<\mechanical{T}<\mechanical{m}_2\mechanical{g}$.
+- [Simplify] Add a step "choose axes and sign conventions per body (positive in the direction of motion)" and a "common mistakes" line (no "force of motion", no centripetal force as a separate force).
+
+=== 02 Physics/01 Classical Mechanics/02 Newton's Three Laws/02.12 Momentum and the Impulse–Momentum Theorem.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct and compact; impulse as area under $\mechanical{F}(t)$ is the key visual idea and is missing.
+- [Graph] Plot a realistic contact force pulse $\mechanical{F}(t)$ (e.g. half-sine of peak $\approx\quantity{251}{N}$ over $\quantity{0.01}{s}$, matching the ball example) together with the rectangle of the average force $\quantity{160}{N}$, both enclosing area $\lvert\mechanical{J}\rvert=\quantity{1.6}{N\,s}$.
+- [Intuition] Add the airbag or bent-knees landing example: same $\Delta\mechanical{p}$, longer $\Delta t$, smaller average force.
+- [Example] Note that the ball loses kinetic energy ($\quantity{2.5}{J}\to\quantity{0.9}{J}$) even though the impulse calculation does not need it, linking to the coefficient of restitution note.
+
+=== 02 Physics/01 Classical Mechanics/02 Newton's Three Laws/02.13 Dynamics of the Simple Pendulum.md
+priority: medium
+graph: yes
+manim: yes
+summary: Correct derivation; it stops before giving the period, the validity of the small-angle approximation, or a picture.
+- [Example] State the period $\signal{T}=2\pi\sqrt{\mechanical{\ell}/\mechanical{g}}$ and a number ($\mechanical{\ell}=\quantity{1}{m}$ gives $\approx\quantity{2.0}{s}$), and add the first anharmonic correction $\signal{T}\approx\signal{T}_0(1+\mechanical{\theta}_0^2/16)$ to quantify when the approximation fails.
+- [Graph] Plot $\sin\mechanical{\theta}$ and $\mechanical{\theta}$ on $[0,\pi/2]$ (showing the error is below 1% up to about $14^\circ$), or the exact period ratio $\signal{T}/\signal{T}_0$ versus amplitude $\mechanical{\theta}_0\in[0,170^\circ]$.
+- [Manim] Animate two pendulums released at $10^\circ$ and $60^\circ$ side by side with a small-angle model ghost, showing the large-amplitude one falling behind, plus the tension arrow varying through the swing.
+- [Intuition] Interpret the tension formula: at the bottom $\mechanical{T}>\mechanical{m}\mechanical{g}$ by $\mechanical{m}\mechanical{v}^2/\mechanical{\ell}$; at the turning points $\mechanical{T}=\mechanical{m}\mechanical{g}\cos\mechanical{\theta}_0$.
+
+=== 02 Physics/01 Classical Mechanics/02 Newton's Three Laws/02.14 Newtonian Dynamics Exercises.md
+priority: low
+graph: no
+manim: no
+summary: Good exercise set; all results I checked (including Coriolis deflection and drag height) are correct.
+- [Structure] Order by level (Basic → Intermediate → Challenge); Challenge Ex. 9–10 currently precede Intermediate Ex. 11–14, and Ex. 15 is Challenge again.
+- [Simplify] Ex. 10 result could add the explicit solution $\mechanical{x}(t)=\mechanical{x}_0\cosh(\sqrt{\mechanical{g}/\mechanical{L}}\,t)$ for release from rest, valid until $\mechanical{x}=\mechanical{L}$.
+
+=== 02 Physics/01 Classical Mechanics/02 Newton's Three Laws/Newton’s laws, friction, and drag problems.md
+priority: high
+graph: yes
+manim: no
+summary: Long transcription with mostly correct worked problems, but broken headings, orphaned fragments from other problems, and missing problem statements make it hard to follow.
+- [Structure] Fix malformed headings ("##### )", "**)**", "##### ) — Week 4 worksheet 1", "##### ) — Block released from rest", "##### ) — Drag force", "##### ) — Dot product") and remove non-content fragments (the "5.7" and "6.13" stubs, the remark about Euler's identity).
+- [Structure] The opening "(b) Apex / (a) Cliff height / (c) Velocity at the cliff" solution belongs to problem 4.44 whose statement is in "Kinematics, projectiles, and circular motion problems"; move it there, together with the projectile problems 4.45–4.79 and the worksheet projectiles, so this note covers only forces, friction, drag and circular dynamics as its title says.
+- [Correctness] Worksheet 2(b)/(d) round the flight time to $2.9\,\unit{s}$ although the computed root is $2.95\,\unit{s}$; with $2.95\,\unit{s}$ the range is $\approx54.3\,\unit{m}$ (not $53.4\,\unit{m}$) and $v_{fy}\approx-15.1\,\unit{m/s}$. Discussion 4(e) states $b=mg/v^2=13.6\,\unit{kg/m}$ without the speed used (it implies $v\approx6\,\unit{m/s}$); state the input.
+- [Example] Finish the dot-product example with the angle: $\cos\theta=-47/\sqrt{83\cdot29}\approx-0.958$, so $\theta\approx163^\circ$.
+- [Graph] Replace the scanned "Approach to terminal speed" sketch with a native plot of $v(t)=v_t\tanh(gt/v_t)$ for $v_t=\quantity{40.4}{m\,s^{-1}}$ (problem 4) over $t\in[0,15]\,\unit{s}$, and the static-to-kinetic friction plot with a native graph.
+- [Simplify] Apply semantic macros to the many plain symbols ($T$, $m$, $g$, $F_N$, $\mu_k$ in the equations) and keep macro arguments to the symbol only ($\mechanical{v}_x$, not $\mechanical{v_x}$ as in problem 4.79).
+
+=== 02 Physics/01 Classical Mechanics/02 Newton's Three Laws/Projectile motion with linear and quadratic drag.md
+priority: high
+graph: yes
+manim: yes
+summary: The linear-drag derivation and weak-drag expansions are correct, but the note repeats the same integration three times, includes unrelated sections, and has a corrupted quantities table.
+- [Correctness] The Physical quantities table assigns conflicting meanings: $\mechanical{k}$ as drag rate ($\unit{s^{-1}}$), spring constant ($\unit{N\,m^{-1}}$) and "polar length integral constant" ($\unit{m}$); $\mechanical{c}$ as quadratic drag coefficient and speed of light; $\mechanical{b}$ as drag coefficient and cube half-width; $\mechanical{R}$ as range, radius and radial scale; plus $C$, travel time $T$ and $\mechanical{\alpha}$ rows that do not occur. Keep only the drag-problem symbols.
+- [Structure] Merge the three overlapping sections ("Adding linear air resistance", "Projectile motion with linear drag", "Integrating the linear-drag equations") into one clean derivation of $\mechanical{x}(t)$ and $\mechanical{y}(t)$; move "Sliding in a circular track" to the pendulum note and "Momentum of a system" to Chapter 5.
+- [Graph] Plot the trajectory $\mechanical{y}(\mechanical{x})$ with and without linear drag for the same launch (e.g. $\mechanical{v}_0=\quantity{30}{m\,s^{-1}}$, $\theta=45^\circ$, $\mechanical{k}=0,0.1,0.3\,\unit{s^{-1}}$) using the parametric forms $\mechanical{x}(t)$, $\mechanical{y}(t)$ given in the note, showing the shortened, asymmetric path and the vertical asymptote at $\mechanical{x}=\mechanical{v}_{0x}/\mechanical{k}$.
+- [Manim] Animate two projectiles launched together, one drag-free and one with linear drag, with velocity arrows; the drag projectile's horizontal velocity decays exponentially and it lands earlier and shorter, matching $\mechanical{R}'\approx\mechanical{R}(1-4\mechanical{k}\mechanical{v}_{0y}/(3\mechanical{g}))$.
+- [Intuition] Interpret the weak-drag result: the factor $\mechanical{k}\mechanical{v}_{0y}/\mechanical{g}=\mechanical{v}_{0y}/\mechanical{v}_{\mathrm{ter}}$ compares the launch speed with terminal speed, giving a clear validity criterion; also note that the $\quantity{201.6}{km}$ drag-free example is far outside this regime.
+- [Simplify] Remove sentences about the scan ("The height formula at the edge of the scan is partly clipped", "The horizontal line on the scan appears to omit the minus sign") once the equations are verified, and color $\phi$, $\theta$ with the mechanical macro for consistency.
+
+=== 02 Physics/01 Classical Mechanics/03 Work, Energy, and Conservation/03.00 Work, Energy, and Conservation.md
+priority: low
+graph: no
+manim: no
+summary: Clear chapter hub with an accurate summary.
+- [Structure] Add summary bullets for 3.9–3.13 (closed-path test, $\Delta\energy{E}_{\mathrm{mech}}=\energy{W}_{\mathrm{nc}}$, effective potential $\energy{U}_{\mathrm{eff}}=\energy{U}+\mechanical{L}^2/(2\mechanical{m}\mechanical{r}^2)$), which are currently not summarised.
+
+=== 02 Physics/01 Classical Mechanics/03 Work, Energy, and Conservation/03.01 Origins of the Concept of Energy.md
+priority: low
+graph: no
+manim: no
+summary: Accurate concise history; appropriate as is.
+- [Intuition] Add one sentence on why the vis-viva dispute was resolved (momentum $\mechanical{m}\mechanical{v}$ and $\mechanical{m}\mechanical{v}^2$ are both conserved in elastic collisions, but measure different things: force integrated over time vs over distance), which links directly to 2.12 and 3.3.
+
+=== 02 Physics/01 Classical Mechanics/03 Work, Energy, and Conservation/03.02 Work Done by a Force.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct definition, but the line integral is introduced without the geometric picture or an example where the path matters.
+- [Graph] Plot $\mechanical{F}_x(\mechanical{x})$ for a spring ($-\mechanical{k}\mechanical{x}$) on $[0,\mechanical{x}_B]$ with the shaded area equal to the work, illustrating $\energy{W}=\int\mechanical{F}_x\,dx$ as signed area.
+- [Intuition] Explain the sign via $\mechanical{\vec F}\cdot d\mechanical{\vec r}=\lVert\mechanical{\vec F}\rVert\cos\varphi\,ds$, with the zero-work case of a force perpendicular to motion (normal force, centripetal force in uniform circular motion).
+- [Example] Add a numerical example with an angled pull (e.g. $\quantity{50}{N}$ at $30^\circ$ over $\quantity{10}{m}$ gives $\quantity{433}{J}$), and a path-dependent counterexample (friction along two different paths) to prepare 3.4.
+
+=== 02 Physics/01 Classical Mechanics/03 Work, Energy, and Conservation/03.03 Kinetic Energy and the Work–Energy Theorem.md
+priority: medium
+graph: no
+manim: no
+summary: Clean definition and proof; it needs a worked example and physical interpretation of why $\tfrac12\mechanical{m}\mechanical{v}^2$ appears.
+- [Example] Add a worked example, e.g. stopping distance from $\mechanical{v}_0$ with friction: $-\mechanical{\mu}_d\mechanical{m}\mechanical{g}\mechanical{d}=-\tfrac12\mechanical{m}\mechanical{v}_0^2$ gives $\mechanical{d}=\mechanical{v}_0^2/(2\mechanical{\mu}_d\mechanical{g})$, and note that doubling the speed quadruples the distance.
+- [Simplify] In the proof, state explicitly the substitution $d\mechanical{\vec r}=\mechanical{\vec v}\,dt$ before the second equality; it is the only non-obvious step.
+- [Intuition] Contrast with the impulse–momentum theorem (force integrated over time vs over displacement) to show the two theorems are complementary.
+
+=== 02 Physics/01 Classical Mechanics/03 Work, Energy, and Conservation/03.04 Conservative Forces and Potential Energy.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct and carefully worded, but the relation $\mechanical{\vec F}=-\nabla\energy{U}$ is given without the 1D intuition or a picture.
+- [Intuition] Start from 1D: $\mechanical{F}_x=-d\energy{U}/d\mechanical{x}$, i.e. force points downhill on the potential curve; then generalise to the gradient.
+- [Graph] Plot $\energy{U}(\mechanical{x})=\tfrac12\mechanical{k}\mechanical{x}^2$ and $\mechanical{F}(\mechanical{x})=-\mechanical{k}\mechanical{x}$ together (or a 2D contour plot of $\energy{U}=\mechanical{m}\mechanical{g}\mechanical{y}$ with force arrows perpendicular to the equipotentials).
+- [Example] Show how to recover $\energy{U}$ from $\mechanical{\vec F}$ for the gravitational force by integrating from infinity, making the "additive constant" concrete.
+- [Simplify] The "Source wording" callout is subtle; shorten it to one sentence in the main text ("Friction does negative work relative to the surface; what is frame-independent is the dissipation").
+
+=== 02 Physics/01 Classical Mechanics/03 Work, Energy, and Conservation/03.05 Conservation of Mechanical Energy.md
+priority: medium
+graph: yes
+manim: yes
+summary: Correct; the friction example stops at an expression and the energy exchange is not visualised.
+- [Example] Finish the friction example with the final speed: $\mechanical{v}=\sqrt{2\mechanical{g}\mechanical{L}(\sin\mechanical{\alpha}-\mechanical{\mu}_d\cos\mechanical{\alpha})}$, with numbers (e.g. $\mechanical{L}=\quantity{5}{m}$, $\mechanical{\alpha}=30^\circ$, $\mechanical{\mu}_d=0.2$).
+- [Graph] Plot $\energy{K}$, $\energy{U}$ and $\energy{E}$ versus position along the incline for the frictionless and frictional cases, showing the constant total line and the linearly decreasing one.
+- [Manim] Animate a bead sliding on a curved frictionless track alongside live energy bars for $\energy{K}$ and $\energy{U}$ that trade off while their sum stays constant.
+- [Correctness] The smooth-incline result $\mechanical{v}=\sqrt{2\mechanical{g}\mechanical{h}}$ holds for sliding; add that a rolling solid ball reaches only $\sqrt{10\mechanical{g}\mechanical{h}/7}$, which addresses the source-wording callout directly.
+
+=== 02 Physics/01 Classical Mechanics/03 Work, Energy, and Conservation/03.06 Power.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and short; one realistic example would make it useful.
+- [Example] Add a car example with numbers: drag $\tfrac12\mechanical{\rho}\mechanical{C}_d\mechanical{A}\mechanical{v}^2$ with $\mechanical{C}_d\mechanical{A}\approx\quantity{0.7}{m^2}$ and $\mechanical{\rho}=\quantity{1.2}{kg\,m^{-3}}$ at $\quantity{30}{m\,s^{-1}}$ needs $\approx\quantity{11}{kW}$, and $\approx\quantity{38}{kW}$ at $\quantity{45}{m\,s^{-1}}$.
+- [Graph] Plot required power versus speed for constant rolling resistance ($\propto\mechanical{v}$) and aerodynamic drag ($\propto\mechanical{v}^3$) on $\mechanical{v}\in[0,50]\,\unit{m\,s^{-1}}$, showing where drag dominates.
+
+=== 02 Physics/01 Classical Mechanics/03 Work, Energy, and Conservation/03.07 Worked Examples in Energy Methods.md
+priority: medium
+graph: yes
+manim: yes
+summary: Good, correct examples; the pendulum example ends without a result and the loop example assumes a sliding point particle without saying so.
+- [Correctness] In the loop example, state that the ball is treated as a sliding point particle; a ball rolling without slipping needs $\mechanical{h}\ge27\mechanical{R}/10$ (neglecting its own radius).
+- [Manim] Animate the loop: release from $\mechanical{h}<5\mechanical{R}/2$ (ball leaves the track and falls inward) versus $\mechanical{h}=5\mechanical{R}/2$ (just completes), with the normal-force arrow shrinking to zero at the top.
+- [Example] Give the pendulum example a concrete drop height (e.g. break point $\quantity{1}{m}$ above the floor, $\mechanical{\ell}=\quantity{1}{m}$, $\mechanical{\theta}_0=60^\circ$: $\mechanical{v}\approx\quantity{3.13}{m\,s^{-1}}$, range $\approx\quantity{1.41}{m}$) and fold the source-wording callout into the text.
+- [Graph] Plot the normal force at the top, $\mechanical{N}/(\mechanical{m}\mechanical{g})=2\mechanical{h}/\mechanical{R}-5$, versus $\mechanical{h}/\mechanical{R}\in[2,4]$, showing the threshold at $2.5$.
+- [Simplify] In the pulley example, explain why friction work uses $\mechanical{h}$ (block 2 slides the same distance as block 1 descends).
+
+=== 02 Physics/01 Classical Mechanics/03 Work, Energy, and Conservation/03.08 Energy Diagrams and Qualitative Analysis of Motion.md
+priority: medium
+graph: no
+manim: yes
+summary: Clear, correct, and already illustrated with a good native double-well plot; mainly lacks a dynamic picture and the link to phase space.
+- [Manim] Animate a ball moving in the double-well $\energy{U}(\mechanical{x})$ of Fig. 3.1 at two energies: below $\energy{U}_{\max}$ it oscillates between $T_1,T_2$ in one well; above it travels across both wells; show the kinetic energy as the gap between the $\energy{E}$ line and the curve.
+- [Intuition] Explain the unstable case with the inverted-oscillator equation $\mechanical{m}\ddot\xi=\lvert\energy{U}''\rvert\xi$, giving $e^{\pm\kappa t}$ with $\kappa=\sqrt{\lvert\energy{U}''\rvert/\mechanical{m}}$, so "grows exponentially" is justified.
+- [Example] Add a derivation of $\signal{\omega}=\sqrt{\energy{U}''(\mechanical{x}_0)/\mechanical{m}}$ by Taylor-expanding $\energy{U}$ to second order, and apply it to the double-well (minimum at $\mechanical{x}=\pm1$).
+- [Links] Link to the phase-space note [[04.05 Phase Space of the Harmonic Oscillator]], since each horizontal energy line corresponds to a closed or open phase-space orbit.
+
+=== 02 Physics/01 Classical Mechanics/03 Work, Energy, and Conservation/03.09 Work Along Closed Paths and Potential Energy.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct and well chosen examples; the curl test is not motivated and the swirling field cries out for a picture.
+- [Graph] Plot the vector field $(-\mechanical{y},\mechanical{x})$ on $[-2,2]^2$ with the circle of radius $\mechanical{R}=1.5$, showing the field everywhere tangent to the path (hence positive work all the way round), and next to it a conservative field such as $(-\mechanical{x},-\mechanical{y})$.
+- [Simplify] Compute the circle integral explicitly with $\mechanical{x}=\mechanical{R}\cos t$, $\mechanical{y}=\mechanical{R}\sin t$, and check it against Stokes' theorem ($\text{curl}\cdot\text{area}=2\cdot\pi\mechanical{R}^2$).
+- [Intuition] Mention the classic counterexample for the simply-connected condition, $\mechanical{\vec F}=(-\mechanical{y},\mechanical{x})/(\mechanical{x}^2+\mechanical{y}^2)$ (curl zero but circulation $2\pi$ around the origin), to explain why the topological condition matters.
+- [Example] For the central-force example, show that the potential is obtained explicitly for gravity, $\mechanical{F}=-\mechanical{G}\mechanical{m}\mechanical{M}/\mechanical{r}^2$ → $\energy{U}=-\mechanical{G}\mechanical{m}\mechanical{M}/\mechanical{r}$.
+
+=== 02 Physics/01 Classical Mechanics/03 Work, Energy, and Conservation/03.10 Work Done by Nonconservative Forces.md
+priority: medium
+graph: no
+manim: no
+summary: Correct statement; the diver example is a rough estimate whose own caveat undermines it.
+- [Example] Redo the diver example properly: during water penetration to depth $\mechanical{d}$, $\energy{W}_{\mathrm{visc}}=-\mechanical{m}\mechanical{g}(\mechanical{h}+\mechanical{d})+\energy{W}_{\mathrm{buoy}}$; with buoyancy roughly cancelling weight underwater, the estimate $-\mechanical{m}\mechanical{g}\mechanical{h}$ is reasonable, and give the average drag force for e.g. $\mechanical{d}=\quantity{3}{m}$ ($\approx\quantity{2.3}{kN}$).
+- [Intuition] Derive $\Delta\energy{E}_{\mathrm{mech}}=\energy{W}_{\mathrm{nc}}$ in one line from $\energy{W}_{\mathrm{net}}=\energy{W}_c+\energy{W}_{\mathrm{nc}}=\Delta\energy{K}$ and $\energy{W}_c=-\Delta\energy{U}$.
+- [Links] Link to [[03.05 Conservation of Mechanical Energy]] and to the friction example there, and to [[03.12 Nonmechanical Forms of Energy]] for where the dissipated energy goes.
+
+=== 02 Physics/01 Classical Mechanics/03 Work, Energy, and Conservation/03.11 Central Forces and Effective Potential.md
+priority: high
+graph: yes
+manim: yes
+summary: Correct but very compressed; the effective potential is introduced without derivation, example, or the plot that is its whole point.
+- [Simplify] Derive $\energy{U}_{\mathrm{eff}}$: write $\energy{E}=\tfrac12\mechanical{m}(\mechanical{\dot r}^2+\mechanical{r}^2\mechanical{\dot\phi}^2)+\energy{U}$ using the polar velocity from 1.8, then substitute $\mechanical{\dot\phi}=\mechanical{L}/(\mechanical{m}\mechanical{r}^2)$.
+- [Graph] Plot for the Kepler case $\energy{U}=-\mechanical{k}/\mechanical{r}$ (scaled units $\mechanical{k}=\mechanical{L}=\mechanical{m}=1$, $\mechanical{r}\in[0.2,6]$): $\energy{U}$, the barrier $1/(2\mechanical{r}^2)$, their sum $\energy{U}_{\mathrm{eff}}$ with minimum at $\mechanical{r}=1$, and horizontal lines for a bound ($\energy{E}<0$), circular ($\energy{E}=-1/2$) and unbound ($\energy{E}>0$) orbit with turning points marked.
+- [Manim] Animate an elliptical orbit in the plane side by side with a dot moving back and forth between the turning points in the $\energy{U}_{\mathrm{eff}}(\mechanical{r})$ well, synchronised so the radial oscillation corresponds to perihelion/aphelion.
+- [Correctness] The sentence "If the central potential diverges to $-\infty$ more slowly than $1/\mechanical{r}^2$, the barrier still prevents the particle from reaching the origin" is correct, but add the converse (for $\energy{U}\propto-1/\mechanical{r}^n$ with $n>2$ the particle can fall in), so the condition is understood as a threshold.
+- [Intuition] Explain the barrier physically: as $\mechanical{r}$ shrinks at fixed $\mechanical{L}$, the angular speed and hence the tangential kinetic energy grow like $1/\mechanical{r}^2$, which is why it acts as a repulsive potential in the radial equation.

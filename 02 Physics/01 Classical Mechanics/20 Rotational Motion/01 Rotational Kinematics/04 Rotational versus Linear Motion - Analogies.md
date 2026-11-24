@@ -121,13 +121,13 @@ $$
 As shown in Figure 1.12, these two are perpendicular to each other, so the magnitude of the total acceleration will be:
 
 $$
-\mechanical{a}_{\text{tot}} = \sqrt{\mechanical{a}_t^2 + \mechanical{a}_c^2} = \sqrt{(7.0 \, \unit{m/s}^2)^2 + (162 \, \unit{m/s}^2)^2} = 162.15 \, \unit{m/s}^2, \tag{1.42}
+\mechanical{a}_{\text{tot}} = \sqrt{\mechanical{a}_t^2 + \mechanical{a}_c^2} = \sqrt{(7.0 \, \unit{m/s}^2)^2 + (162 \, \unit{m/s}^2)^2} \approx 1.6 \times 10^2 \, \unit{m/s}^2, \tag{1.42}
 $$
 
-while the direction can be found via the equation:
+Because $\mechanical{a}_c \gg \mechanical{a}_t$, the total acceleration is almost purely centripetal. The direction is given by the angle $\mechanical{\beta}$, measured from the centripetal (inward radial) direction toward the tangential direction:
 
 $$
-\tan \mechanical{\theta} = \frac{\mechanical{a}_t}{\mechanical{a}_c} = \frac{7.0 \, \unit{m/s}^2}{162 \, \unit{m/s}^2} = 0.043 \Rightarrow \mechanical{\theta} = 0.04 \, \unit{rad}. \tag{1.43}
+\tan \mechanical{\beta} = \frac{\mechanical{a}_t}{\mechanical{a}_c} = \frac{7.0 \, \unit{m/s}^2}{162 \, \unit{m/s}^2} = 0.043 \Rightarrow \mechanical{\beta} \approx 0.043 \, \unit{rad} \approx 2.5^\circ. \tag{1.43}
 $$
 
 ## Exercises
@@ -160,7 +160,8 @@ $$
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
 | $\mechanical{\vec{\alpha}}$ | $\unit{rad\,s^{-2}}$ | Angular acceleration | Rate of change of angular velocity. |
-| $\mechanical{\vec{\theta}}$ | $\unit{rad}$ | Angular position | Angle measured from the reference direction. |
+| $\mechanical{\theta}$ | $\unit{rad}$ | Angular position | Angle measured from the reference direction. For fixed-axis rotation, the displacement $\Delta\mechanical{\vec{\theta}}$ is treated as a vector. |
+| $\mechanical{\beta}$ | $\unit{rad}$ | Angle | Angle between the centripetal and total acceleration. |
 | $\mechanical{\vec{\omega}}$ | $\unit{rad\,s^{-1}}$ | Angular velocity or speed | Rate of rotation about the indicated axis. |
 | $\mechanical{\vec{a}}$ | $\unit{m\,s^{-2}}$ | Linear acceleration | Rate of change of linear velocity. |
 | $\mechanical{\vec{v}}$ | $\unit{m\,s^{-1}}$ | Linear velocity or speed | Velocity or speed of the indicated point. |

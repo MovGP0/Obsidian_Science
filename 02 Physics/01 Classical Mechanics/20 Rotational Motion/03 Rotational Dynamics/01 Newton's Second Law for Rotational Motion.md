@@ -50,7 +50,7 @@ $$
 \Sigma \mechanical{\vec {\tau}} = \mechanical{I} \mechanical{\vec {\alpha}} , \tag{3.5}
 $$
 
-for a constant $\mechanical I$. Recovering the vector Equation (3.5) from the magnitude Equation (3.4) is straightforward, since in this case the moment of inertia $\mechanical I$ is a positive scalar.[^inertia-tensor] So, just like with Newton’s Second Law for translational motion, the direction of the net torque determines the direction of the angular acceleration. In other words, just as we know that forces cause linear accelerations with the net force and the linear acceleration having the same direction, in rotational motion we see that torques cause angular accelerations with the net torque and angular acceleration having the same direction. This is Newton’s Second Law for rotational motion. A more mathematical way of obtaining Equation (3.5) is left as an exercise at the end of this chapter (a third way will also be given when we study angular momentum).
+for a constant $\mechanical I$. This vector form follows here because the point mass moves in a plane perpendicular to the fixed axis, so both $\mechanical{\vec\tau}$ and $\mechanical{\vec\alpha}$ lie along the axis. For a general rigid body about a fixed axis, only the axial component holds, $\Sigma\mechanical{\tau}_z=\mechanical I_z\mechanical{\alpha}_z$, because the bearings can supply torque perpendicular to the axis. Recovering the vector Equation (3.5) from the magnitude Equation (3.4) is straightforward, since in this case the moment of inertia $\mechanical I$ is a positive scalar.[^inertia-tensor] So, just like with Newton’s Second Law for translational motion, the direction of the net torque determines the direction of the angular acceleration. In other words, just as we know that forces cause linear accelerations with the net force and the linear acceleration having the same direction, in rotational motion we see that torques cause angular accelerations with the net torque and angular acceleration having the same direction. This is Newton’s Second Law for rotational motion. A more mathematical way of obtaining Equation (3.5) is left as an exercise at the end of this chapter (a third way will also be given when we study angular momentum).
 
 ## 3.1.1 Notes on Newton’s Second Law for Rotational Motion
 
@@ -155,7 +155,7 @@ $$
 \tag{3.7}
 $$
 
-(b) The magnitude $\sum\mechanical{\tau}=\mechanical r\sum\mechanical F\sin\mechanical\phi$ stays constant because the force, radius, and angle are constant. The direction of $\sum\mechanical{\vec\tau}$ also stays constant by the right-hand rule. The angular acceleration $\mechanical{\vec\alpha}$ is therefore constant, so the equations from Chapter 1 apply.
+(b) The magnitude $\mechanical{\tau}_F=\mechanical R\mechanical F\sin\mechanical\phi$ stays constant because the force, radius, and angle are constant. The direction of $\sum\mechanical{\vec\tau}$ also stays constant by the right-hand rule. The angular acceleration $\mechanical{\vec\alpha}$ is therefore constant, so the equations from Chapter 1 apply.
 
 $$
 \Delta \mechanical{\theta} = \mechanical{\omega}_{0} \Delta t + \frac {1} {2} \mechanical{\alpha} \Delta t^{2} , \tag{3.8}

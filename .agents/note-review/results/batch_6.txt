@@ -1,0 +1,340 @@
+=== 02 Physics/01 Classical Mechanics/14 Small Oscillations and Normal Modes/14.07 Overview of Nonlinear Systems and Chaos.md
+priority: high
+graph: yes
+manim: yes
+summary: A correct but list-like survey that states results (elliptic period, KAM, Lyapunov growth, Feigenbaum) without derivation, intuition, or any picture.
+- [Intuition] Under "Nonlinear pendulum", explain why the period grows with amplitude: $\sin\theta<\theta$ gives a weaker restoring torque than the linear model, so the bob lingers near the turning points; then give $\signal{T}\simeq\signal{T}_0(1+\theta_0^2/16+\dots)$ and the limit $\signal{T}\to\infty$ as $\theta_0\to\pi$.
+- [Graph] Plot $\signal{T}(\theta_0)/\signal{T}_0=(2/\pi)K(\sin(\theta_0/2))$ for $\theta_0\in[0,0.95\pi]$ together with the approximation $1+\theta_0^2/16$, so readers see where the small-angle model fails.
+- [Graph] Add a 2D phase portrait of $\energy{H}=p_\theta^2/(2\mechanical{m}\mechanical{\ell}^2)-\mechanical{m}\mechanical{g}\mechanical{\ell}\cos\theta$ (level curves for $\theta\in[-2\pi,2\pi]$) with the separatrix $\energy{E}=\mechanical{m}\mechanical{g}\mechanical{\ell}$ highlighted, to make libration versus rotation concrete.
+- [Graph] For "Logistic map", add a bifurcation diagram ($r\in[2.8,4]$, $x$ after transients) marking $r_1=3$, $r_2\simeq3.449$, $r_3\simeq3.544$ so the period-doubling cascade and $\delta$ have a visual referent.
+- [Manim] Animate two overlaid double pendulums started $10^{-3}\,\mathrm{rad}$ apart, with a live plot of $\ln\lvert\Delta\vec x(t)\rvert$ rising roughly linearly with slope $\lambda$ before saturating.
+- [Simplify] The KAM paragraph is too abstract for this level; add one plain sentence on what an invariant torus is (quasi-periodic motion on a doughnut-shaped surface in phase space) and link to exercise 9 in 14.16.
+=== 02 Physics/01 Classical Mechanics/14 Small Oscillations and Normal Modes/14.08 Worked Examples of Coupled Systems.md
+priority: medium
+graph: yes
+manim: yes
+summary: A clear application list, but the "worked examples" give results without worked steps and the coupled-pendulum section lacks the governing formulas.
+- [Example] In "Coupled pendulums and beats", work the example: give $\signal{\omega}_+=\sqrt{\mechanical{g}/\mechanical{\ell}}$, $\signal{\omega}_-=\sqrt{\mechanical{g}/\mechanical{\ell}+2\mechanical{k}/\mechanical{m}}$ and $\theta_1(t)=\theta_0\cos\bigl(\tfrac{\signal{\omega}_-+\signal{\omega}_+}{2}t\bigr)\cos\bigl(\tfrac{\signal{\omega}_--\signal{\omega}_+}{2}t\bigr)$, then explain why the energy-exchange rate is $\signal{\omega}_--\signal{\omega}_+$ (energy follows the squared envelope).
+- [Structure] The labels are counterintuitive: $\signal{\omega}_+$ is the lower, symmetric frequency and $\signal{\omega}_-$ the higher one; rename to $\signal{\omega}_s,\signal{\omega}_a$ or state the convention explicitly.
+- [Graph] Plot $\theta_1(t)$ and $\theta_2(t)$ for weak coupling ($\signal{\omega}_-/\signal{\omega}_+=1.05$, $t$ over two beat periods) to show the beat envelopes in antiphase.
+- [Manim] Animate two pendulums joined by a spring: first show the two normal modes side by side, then start with only the left pendulum displaced and show the amplitude migrating to the right pendulum and back.
+- [Example] For the building, show the $N=1$ check ($2\sqrt{\mechanical{k}/\mechanical{m}}\sin(\pi/6)=\sqrt{\mechanical{k}/\mechanical{m}}$) and the large-$N$ estimate $\signal{\omega}_1\approx\pi\sqrt{\mechanical{k}/\mechanical{m}}/(2N+1)$ to make "tall buildings have low fundamentals" quantitative.
+- [Intuition] For CO2, describe the three motions (or add a small diagram) and why the symmetric stretch is infrared-inactive (no change of dipole moment), since the table gives only names.
+=== 02 Physics/01 Classical Mechanics/14 Small Oscillations and Normal Modes/14.09 Oscillator Chains and Waves.md
+priority: high
+graph: yes
+manim: yes
+summary: A compact, correct derivation that omits the allowed wavenumbers, gives no picture of the dispersion curve, and asserts the continuum limit without showing it.
+- [Structure] With periodic boundary conditions the allowed wavenumbers are $\signal{q}=2\pi j/(N\mechanical{a})$, $j=0,\dots,N-1$ (as 16.12 states); add this so the count of $N$ modes and the link to exercise 2 in 14.16 are explicit.
+- [Graph] Plot $\signal{\omega}(\signal{q})/\sqrt{\mechanical{k}/\mechanical{m}}=2\lvert\sin(\signal{q}\mechanical{a}/2)\rvert$ for $\signal{q}\mechanical{a}\in[-\pi,\pi]$ with the dashed tangent $\lvert\signal{q}\rvert\mechanical{a}$ near the origin and the discrete points for $N=8$, marking the zone edges.
+- [Intuition] Explain the zone-edge mode physically: at $\signal{q}=\pi/\mechanical{a}$ neighbors move in exact antiphase, every spring is maximally stretched, so the frequency is maximal and the group velocity $d\signal{\omega}/d\signal{q}$ vanishes (a standing wave).
+- [Simplify] In "Continuum limit", show the Taylor step $\eta_{n\pm1}\simeq\eta\pm\mechanical{a}\,\partial_x\eta+\tfrac12\mechanical{a}^2\partial_x^2\eta$ so the reader sees where $\mechanical{a}^2\mechanical{k}/\mechanical{m}$ comes from, and note that $\mechanical{k}\mechanical{a}$ and $\mechanical{m}/\mechanical{a}$ (linear density) stay finite.
+- [Manim] Animate a chain of about 16 masses carrying a long-wavelength travelling mode, then a mode near $\signal{q}=\pi/\mechanical{a}$, with a phase marker that slows to zero as the pattern becomes a standing antiphase wave.
+=== 02 Physics/01 Classical Mechanics/14 Small Oscillations and Normal Modes/14.10 Simultaneous Diagonalization of M and V.md
+priority: medium
+graph: no
+manim: yes
+summary: A correct but terse algorithm with no motivation for the two-step procedure and no worked example.
+- [Intuition] Before step 1, explain why one cannot simply diagonalize $V$: an orthogonal rotation does not keep a non-identity $M$ diagonal, so one first rescales coordinates so the kinetic energy is $\tfrac12\lvert\dot{\vec\xi}\rvert^2$, after which any rotation preserves it.
+- [Example] Add a 2x2 worked example, e.g. the equal double pendulum from 15.14 ($M=\mechanical{m}\mechanical{\ell}^2\bigl(\begin{smallmatrix}2&1\\1&1\end{smallmatrix}\bigr)$, $V=\mechanical{m}\mechanical{g}\mechanical{\ell}\,\mathrm{diag}(2,1)$), carrying out both steps and recovering $\signal{\omega}_\pm^2=(\mechanical{g}/\mechanical{\ell})(2\pm\sqrt2)$.
+- [Simplify] Mention the practical shortcut, solving $\det(V-\signal{\omega}^2M)=0$ directly, and state that the two-step construction is the proof that real nonnegative $\signal{\omega}^2$ and $M$-orthogonal modes exist.
+- [Manim] Show the kinetic ellipse $\dot{\vec\eta}^TM\dot{\vec\eta}=1$ and potential ellipse $\vec\eta^TV\vec\eta=1$ in 2D; animate the stretch $B^{1/2}O^T$ turning the first into a circle, then the rotation aligning the second ellipse with the axes.
+- [Structure] The table gives $\vec u_\alpha$ as dimensionless while 14.12 gives mass-normalized vectors the unit $\unit{kg^{-1/2}}$; make the two notes consistent.
+=== 02 Physics/01 Classical Mechanics/14 Small Oscillations and Normal Modes/14.11 Systems with Infinitely Many Degrees of Freedom.md
+priority: medium
+graph: yes
+manim: yes
+summary: Correct string and membrane results, but separation of variables is only named and the "operator replaces matrix" idea is not made concrete.
+- [Simplify] Make the analogy explicit: $V\vec u=\signal{\omega}^2M\vec u$ becomes $-\mechanical{T}u''(\mechanical{x})=\signal{\omega}^2\mechanical{\lambda}u(\mechanical{x})$ with $u(0)=u(\mechanical{L})=0$, whose eigenvectors are $\sin(n\pi\mechanical{x}/\mechanical{L})$; link back to the continuum limit in 14.09.
+- [Example] For a square membrane, give $\signal{\omega}_{nm}/\signal{\omega}_{11}=\sqrt{(n^2+m^2)/2}$, i.e. $1,1.58,2,2.24,\dots$, showing the inharmonic spectrum and the degeneracy $\signal{\omega}_{12}=\signal{\omega}_{21}$.
+- [Graph] Add a 3D surface plot of $\eta_{21}(\mechanical{x},\mechanical{y})$ on the unit square (optionally also $\eta_{11}$), with the nodal line at $\mechanical{x}=\mechanical{L}_x/2$ visible.
+- [Manim] Animate the $(1,1)$, $(2,1)$, and $(2,2)$ membrane modes oscillating as 3D surfaces, highlighting the stationary nodal lines.
+- [Intuition] In "Electromagnetic waves", add why the spectrum is continuous (no boundaries quantize $\signal{\vec k}$) and contrast with a cavity, where the modes become discrete like the membrane.
+=== 02 Physics/01 Classical Mechanics/14 Small Oscillations and Normal Modes/14.12 Normal Modes in Constrained Systems.md
+priority: low
+graph: no
+manim: yes
+summary: A clean, correct worked example that only lacks the eigenvalue step and the general lesson about zero modes.
+- [Example] Show the characteristic polynomial $\det(V-\lambda I)=-\lambda(\lambda-\mechanical{k})(\lambda-3\mechanical{k})$ so the eigenvalues are derived rather than listed.
+- [Intuition] State the general rule: an unconstrained continuous symmetry (here free translation) produces a $\signal{\omega}=0$ mode, which disappears in the center-of-mass frame; mention the $3N-5$ count for linear molecules as the 3D analogue.
+- [Manim] Animate the three masses performing each mode in turn (common translation, outer masses in antiphase with the center fixed, center against the outer pair), with the springs stretching.
+- [Structure] The title promises constrained systems but the example has free ends; retitle (e.g. "Zero-Frequency Modes") or add a contrast with the ends fixed to walls, which removes the zero mode.
+=== 02 Physics/01 Classical Mechanics/14 Small Oscillations and Normal Modes/14.13 Acoustic Spectrum of a Vibrating String.md
+priority: medium
+graph: yes
+manim: yes
+summary: Correct with a good numeric example, but the general solution, the link between plucking point and timbre, and the energy derivation are missing, and an unrelated callout is included.
+- [Structure] The "Analytical mechanics" callout about nonlinear dynamics is unrelated to the string spectrum; move it to 14.07 or remove it here.
+- [Example] Add the general solution as a sum of modes and a plucked-string case (pluck at $\mechanical{x}_0$) whose amplitudes scale as $\sin(n\pi\mechanical{x}_0/\mechanical{L})/n^2$, showing why plucking position changes timbre (harmonics with a node at $\mechanical{x}_0$ vanish).
+- [Simplify] Derive the mode energy in one line from the maximum kinetic energy $\int_0^{\mechanical{L}}\tfrac12\mechanical{\lambda}(\signal{\omega}_n\mechanical{A}_n)^2\sin^2(n\pi\mechanical{x}/\mechanical{L})\,d\mechanical{x}=\tfrac14\mechanical{\lambda}\mechanical{L}\signal{\omega}_n^2\mechanical{A}_n^2$, and note that orthogonality makes the mode energies add.
+- [Graph] Plot the first four mode shapes $\sin(n\pi\mechanical{x}/\mechanical{L})$ on $[0,\mechanical{L}]$, plus a stem plot of relative amplitudes for a string plucked at $\mechanical{L}/5$.
+- [Manim] Animate a plucked triangular string as the sum of its first ten modes evolving in time, showing the kink splitting into two travelling kinks.
+=== 02 Physics/01 Classical Mechanics/14 Small Oscillations and Normal Modes/14.14 Normal Modes of Rigid-Body Systems.md
+priority: medium
+graph: no
+manim: yes
+summary: The torsion-oscillator and three-pendulum results are correct, but the note mixes a Cavendish digression with an example that is not a rigid-body system, and derivation steps are missing.
+- [Structure] The three-pendulum example uses point bobs, not rigid bodies; replace or supplement it with a genuine rigid-body case (e.g. a rod supported by two springs with translation and rocking modes), or retitle the section.
+- [Simplify] Show how $V$ follows from $\energy{U}=\sum_i\mechanical{m}\mechanical{g}\mechanical{\ell}(1-\cos\theta_i)+\tfrac12\mechanical{k}\mechanical{\ell}^2[(\theta_1-\theta_2)^2+(\theta_2-\theta_3)^2]$ and note that the spring part is the matrix of 14.12, so the eigenvectors are the same and each $\signal{\omega}^2$ shifts by $\mechanical{g}/\mechanical{\ell}$; link [[14.12 Normal Modes in Constrained Systems]].
+- [Intuition] Tie the Cavendish paragraph to the normal-mode theme: the measured torsion period gives $\mechanical{\kappa}=\mechanical{I}\signal{\omega}^2$, which calibrates the tiny gravitational torque from the deflection angle.
+- [Manim] Animate the three coupled pendulums in each mode, then a superposition starting with one displaced pendulum.
+=== 02 Physics/01 Classical Mechanics/14 Small Oscillations and Normal Modes/14.15 Resonance in Multimode Systems.md
+priority: high
+graph: yes
+manim: no
+summary: Qualitatively correct but formula-free, so modal participation and per-mode resonance width are asserted rather than shown.
+- [Simplify] Add the modal equations of the driven, damped system: $\ddot Q_\alpha+2\signal{\gamma}_\alpha\dot Q_\alpha+\signal{\omega}_\alpha^2Q_\alpha=\vec u_\alpha^T\vec F_0\cos(\signal{\Omega}t)$, so each mode responds like one driven oscillator weighted by the overlap $\vec u_\alpha^T\vec F_0$; this turns "mode selection" into a formula.
+- [Example] Work the two-mass, three-spring chain: drive mass 1 and both peaks appear; drive both masses equally and the antisymmetric peak disappears because $\vec u_2^T\vec F_0=0$.
+- [Graph] Plot $\lvert\eta_1(\signal{\Omega})\rvert$ for that chain over $\signal{\Omega}\in[0,2.5]\sqrt{\mechanical{k}/\mechanical{m}}$ for two damping values, showing peaks at $1$ and $\sqrt3$ with widths of about $2\signal{\gamma}$.
+- [Structure] Once formulas are added, extend the physical-quantities table, which lists only $\signal{\omega}_\alpha$, with $\signal{\gamma}_\alpha$, $\signal{\Omega}$, $\vec F_0$, and $Q_\alpha$.
+=== 02 Physics/01 Classical Mechanics/14 Small Oscillations and Normal Modes/14.16 Small Oscillations and Normal Modes Exercises.md
+priority: low
+graph: no
+manim: no
+summary: A well-graded exercise list with correct short answers; only minor clarifications would help.
+- [Structure] The exercise 11 result uses $\sin^2(\signal{q}\mechanical{a})$, which is right because $\mechanical{a}$ is the nearest-neighbor spacing (unit cell $2\mechanical{a}$); state this in the exercise, since many textbooks write $\sin^2(\signal{q}\mechanical{a}/2)$ with $\mechanical{a}$ the cell length.
+- [Structure] In exercise 2, the "four natural frequencies" include a degenerate pair ($j=1,3$); say "four mode frequencies, three distinct".
+=== 02 Physics/01 Classical Mechanics/15 Complete Solutions to the Exercises/15.00 Complete Solutions to the Exercises.md
+priority: low
+graph: no
+manim: no
+summary: A minimal hub note that does its job.
+- [Links] Add links to 15.01 through 15.14 so the hub is navigable on its own.
+=== 02 Physics/01 Classical Mechanics/15 Complete Solutions to the Exercises/15.01 Solutions for Point Particle Kinematics.md
+priority: low
+graph: yes
+manim: no
+summary: Correct, concise solutions with verified numbers; a few would benefit from limit checks and one trajectory figure.
+- [Graph] For exercises 2 and 9, plot $\mechanical{y}(\mechanical{x})$ for $\mechanical{v}_0=\quantity{20}{m\,s^{-1}}$, $\alpha=30^\circ$ from $\mechanical{h}_0=0$ and $\mechanical{h}_0=\quantity{10}{m}$, marking range and apex.
+- [Intuition] In exercise 9, add the check that $\mechanical{h}_0\to0$ recovers $\mechanical{v}_0^2\sin2\alpha/\mechanical{g}$ from exercise 2.
+- [Simplify] In exercise 7, the closing sentence about average position is unexplained and off-topic; remove it or justify it.
+- [Graph] For exercise 12, a small plot of the circle of radius $\mechanical{R}/2$ centered at $(\mechanical{R}/2,0)$ makes the result immediate.
+=== 02 Physics/01 Classical Mechanics/15 Complete Solutions to the Exercises/15.02 Solutions for Newton's Three Laws.md
+priority: low
+graph: yes
+manim: no
+summary: Correct solutions with sound numerics (including the Coriolis and drag derivations); mainly lacking free-body descriptions and limiting checks.
+- [Intuition] In exercise 9, add a one-line physical reason for the westward deflection (the Coriolis acceleration $-2\mechanical{\omega}\cos\lambda\,\mechanical{\dot z}$ points west on the way up and east on the way down, but the westward velocity gained during ascent persists) and note that $\cos\lambda$ makes it vanish at the poles.
+- [Example] In exercise 14, add the limit $\mechanical{v}_\infty\to\infty$: $\ln(1+u)\simeq u-u^2/2$ recovers $\mechanical{v}_0^2/(2\mechanical{g})$.
+- [Graph] Plot $\mechanical{v}(t)$ for linear drag (exercises 6 and 14) against the drag-free line, showing the approach to $-\mechanical{v}_\infty$.
+- [Structure] Exercises 1, 2, 7, and 13 would benefit from a one-sentence list of forces and axes before the equation, as exercise 11 does.
+=== 02 Physics/01 Classical Mechanics/15 Complete Solutions to the Exercises/15.03 Solutions for Work, Energy, and Conservation.md
+priority: low
+graph: yes
+manim: no
+summary: Correct, compact energy solutions; the potential-energy exercises would gain from plotted curves.
+- [Graph] For exercises 4, 9, and 10, plot $\energy{U}=\mechanical{x}^4-4\mechanical{x}^2$, the Morse curve $\energy{U}_0(1-e^{-\mechanical{x}/\mechanical{a}})^2$, and $-A/\mechanical{x}+B/\mechanical{x}^2$, each with an energy line marking turning points and bound versus unbound motion.
+- [Intuition] In exercise 11, note that friction also acts during the $\quantity{0.05}{m}$ of spring expansion, so $\mechanical{d}=\quantity{1.70}{m}$ is the total path measured from release.
+- [Simplify] In exercise 13, show $\energy{U}_{\mathrm{eff}}''(\mechanical{r}_0)$ or refer to exercise 10 (same function with $A=\alpha$, $B=\beta'$) to avoid an unexplained jump.
+=== 02 Physics/01 Classical Mechanics/15 Complete Solutions to the Exercises/15.04 Solutions for Oscillations.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and consistent with the $2\signal{\gamma}$ damping convention; a couple of plots would anchor the resonance and beats answers.
+- [Graph] For exercise 15, plot $\mechanical{x}_1(t)$ and $\mechanical{x}_2(t)$ with $\mechanical{k}/\mechanical{m}=1$ over several modulation periods; note that $\signal{\omega}_2/\signal{\omega}_1=\sqrt3$ is far from 1, so the beats are coarse compared with weak coupling.
+- [Graph] For exercises 8 and 13, plot $\mechanical{A}(\signal{\Omega})$ with $\signal{\omega}_0=5$, $\signal{\gamma}=0.1$ and mark the half-power width $2\signal{\gamma}$.
+- [Simplify] In exercise 5, show the series step $K(k)\simeq(\pi/2)(1+k^2/4)$ with $k\simeq\theta_0/2$ instead of only "expanding to second order".
+- [Structure] State the damping convention $\mechanical{\ddot x}+2\signal{\gamma}\mechanical{\dot x}+\signal{\omega}_0^2\mechanical{x}=\dots$ once at the top, since exercises 4, 8, 9, 11, and 13 depend on it.
+=== 02 Physics/01 Classical Mechanics/15 Complete Solutions to the Exercises/15.05 Solutions for Particle Systems, Collisions, and Momentum.md
+priority: low
+graph: no
+manim: no
+summary: Correct, clear solutions; only a notational ambiguity and the unexplained elastic formulas stand out.
+- [Structure] In exercise 11, $e^{2n}$ reads like the exponential function; write $(e^2)^n$ or rename the restitution coefficient (e.g. $\varepsilon_r$).
+- [Simplify] In exercise 2, add where the elastic formulas come from (momentum conservation plus reversal of relative velocity, $\mechanical{v}'_2-\mechanical{v}'_1=\mechanical{v}_1$), since exercise 13 reuses them.
+- [Intuition] In exercise 5, add the geometric picture: the three momenta form a right triangle by Pythagoras.
+=== 02 Physics/01 Classical Mechanics/15 Complete Solutions to the Exercises/15.06 Solutions for Gravitation and Motion Under Central Forces.md
+priority: low
+graph: yes
+manim: yes
+summary: Correct numerics throughout (binding energy, escape speed, geostationary radius, Hohmann transfer); the Hohmann solution skips the intermediate formulas.
+- [Simplify] In exercise 11, write the formulas used: $\mechanical{v}_p=\mechanical{v}_1\sqrt{2\mechanical{r}_2/(\mechanical{r}_1+\mechanical{r}_2)}$, $\mechanical{v}_a=\mechanical{v}_2\sqrt{2\mechanical{r}_1/(\mechanical{r}_1+\mechanical{r}_2)}\simeq\quantity{21.48}{km\,s^{-1}}$, and $t_H=\tfrac12(\mechanical{a}/\quantity{1}{au})^{3/2}\,\unit{yr}$.
+- [Graph] Plot the Earth and Mars circular orbits with the Hohmann half-ellipse ($\mechanical{a}=1.262$ au, $e\simeq0.208$) and the two burn points.
+- [Manim] Animate a spacecraft leaving Earth at the transfer perihelion and arriving at aphelion as Mars arrives, showing why departure requires Mars to lead Earth by about $44^\circ$.
+- [Structure] Exercise 9 is titled "Bertrand's theorem" but proves only closure of Kepler orbits; retitle or add the apsidal-angle argument briefly.
+=== 02 Physics/01 Classical Mechanics/15 Complete Solutions to the Exercises/15.07 Solutions for Rigid Bodies.md
+priority: low
+graph: no
+manim: yes
+summary: Correct solutions (free-rod impact, intermediate-axis instability, Chandler period all check out); a few derivations are compressed.
+- [Simplify] In exercise 7, add the effective-mass shortcut: the rod end acts like a point mass $\mechanical{M}/4$ because $1/\mechanical{M}_{\mathrm{eff}}=1/\mechanical{M}+(\mechanical{L}/2)^2/(\mechanical{M}\mechanical{L}^2/12)$, which makes $\mechanical{v}'=(4\mechanical{m}-\mechanical{M})\mechanical{v}_0/(4\mechanical{m}+\mechanical{M})$ immediate.
+- [Manim] For exercise 9, animate a T-handle spinning about its smallest, intermediate, and largest principal axes, with the intermediate case flipping periodically (Dzhanibekov effect).
+- [Intuition] In exercise 11, explain the ranking: the fraction of energy in rotation is $\beta/(1+\beta)$, largest for the ring.
+- [Simplify] In exercise 9, state the ordering assumption ($\mechanical{I}_1<\mechanical{I}_2<\mechanical{I}_3$ or reversed) next to $k$ so the sign claim is self-contained.
+=== 02 Physics/01 Classical Mechanics/15 Complete Solutions to the Exercises/15.08 Solutions for Fundamentals of Fluid Mechanics.md
+priority: low
+graph: no
+manim: no
+summary: Correct and concise; one input value is missing and the Boltzmann-constant notation differs from the constants appendix.
+- [Structure] In exercise 6, state the molecular mass used ($\mechanical{m}\simeq29\,\mathrm{u}\simeq\quantity{4.8\times10^{-26}}{kg}$ for air) so $\mechanical{H}\simeq\quantity{7990}{m}$ can be reproduced.
+- [Structure] $k_B$ is uncolored here but written $\thermal{k}_B$ in 17.01; align the macro usage.
+- [Intuition] In exercise 13, add the check that the draining time is twice the time needed at the constant initial outflow rate.
+=== 02 Physics/01 Classical Mechanics/15 Complete Solutions to the Exercises/15.09 Solutions for Constraints, Virtual Work, and d’Alembert’s Principle.md
+priority: low
+graph: no
+manim: no
+summary: Correct and clear; the nonholonomic argument and two dynamics answers could show slightly more reasoning.
+- [Simplify] In exercise 3, show why the sphere constraint is nonintegrable: rolling the sphere around a closed loop returns the center to its start but changes the orientation, so no position-only relation can encode the constraint.
+- [Example] In exercise 9, show the step $\mechanical{g}\cos\theta=2\mechanical{g}(1-\cos\theta)\Rightarrow\cos\theta=2/3$ and note the independence from $\mechanical{m}$ and $\mechanical{R}$.
+- [Intuition] In exercise 10, use energy conservation for release from rest at $\theta_0$ to get $\mechanical{T}=\mechanical{m}\mechanical{g}(3\cos\theta-2\cos\theta_0)$, which shows rather than asserts that the tension peaks at the lowest point.
+=== 02 Physics/01 Classical Mechanics/15 Complete Solutions to the Exercises/15.10 Solutions for Euler–Lagrange Equations.md
+priority: low
+graph: yes
+manim: yes
+summary: Correct Lagrangians and equations; the kinetic-energy symbol is inconsistent and the rotating-hoop bifurcation deserves a figure.
+- [Structure] Kinetic energy is $\energy{T}$ in most exercises but $\energy{K}$ in exercise 13 (and in other chapters); use one symbol.
+- [Graph] For exercise 10, plot the equilibrium angles against $\mechanical{\omega}^2\mechanical{R}/\mechanical{g}\in[0,4]$: $\theta=0$ solid up to 1 and dashed beyond, plus the branches $\theta=\pm\arccos(\mechanical{g}/(\mechanical{R}\mechanical{\omega}^2))$, as a pitchfork diagram.
+- [Manim] Animate the bead on the rotating hoop while $\mechanical{\omega}$ slowly increases through $\sqrt{\mechanical{g}/\mechanical{R}}$, showing the bead leaving the bottom and settling at the off-axis equilibrium.
+- [Simplify] In exercise 3, also give the equation $\ddot\theta=\mechanical{\omega}^2\sin\theta\cos\theta-(\mechanical{g}/\mechanical{\ell})\sin\theta$ and note it is the same physics as exercise 10.
+=== 02 Physics/01 Classical Mechanics/15 Complete Solutions to the Exercises/15.11 Solutions for Hamilton's Principle and Symmetries.md
+priority: low
+graph: no
+manim: no
+summary: Correct Noether-type solutions; the Galilean-boost and quadratic-Lagrangian arguments are too compressed.
+- [Simplify] In exercise 6, show the Noether step $Q=\mechanical{\vec p}\cdot\mechanical{\vec V}t-\mechanical{m}\mechanical{\vec r}\cdot\mechanical{\vec V}=-\mechanical{\vec V}\cdot(\mechanical{m}\mechanical{\vec r}-\mechanical{\vec P}t)$, which explains the "equivalent choice of sign".
+- [Simplify] Rewrite exercise 12 in the standard form: isotropy gives $\energy{L}=\energy{L}(\mechanical{v}^2)$; a small boost changes it by $2(\partial\energy{L}/\partial\mechanical{v}^2)\mechanical{\vec v}\cdot\delta\mechanical{\vec V}$, which is a total time derivative only if $\partial\energy{L}/\partial\mechanical{v}^2$ is constant.
+- [Intuition] In exercise 11, interpret $\energy{h}$ as the energy in the rotating frame including the centrifugal potential $-\tfrac12\mechanical{m}\mechanical{r}^2\mechanical{\omega}^2$; it differs from the kinetic energy because the rail does work on the bead.
+=== 02 Physics/01 Classical Mechanics/15 Complete Solutions to the Exercises/15.12 Solutions for the Hamiltonian Formulation.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and compact; the phase-space statements would benefit from one portrait.
+- [Graph] For exercises 7 and 13, plot oscillator ellipses in $(q,p)$ for three energies next to the corresponding circles in $(q,u)$, with arrows showing the clockwise flow.
+- [Simplify] In exercise 3, show the bracket computation with $\mechanical{L}_x=\mechanical{y}\mechanical{p}_z-\mechanical{z}\mechanical{p}_y$ and $\mechanical{L}_y=\mechanical{z}\mechanical{p}_x-\mechanical{x}\mechanical{p}_z$ rather than only the result.
+- [Structure] In exercise 10, state the assumption $\partial f/\partial t=\partial g/\partial t=0$ before the first argument, then give the time-dependent generalization.
+=== 02 Physics/01 Classical Mechanics/15 Complete Solutions to the Exercises/15.13 Solutions for Canonical Transformations.md
+priority: low
+graph: no
+manim: no
+summary: Correct solutions (actions, Kepler energy, complex oscillator variables all check); a few answers are pointers rather than solutions.
+- [Example] Exercise 9 only points elsewhere; add at least the separated radial equation $(\energy{W}_r')^2+\mechanical{L}^2/\mechanical{r}^2=2\mechanical{\mu}(\energy{E}+\alpha/\mechanical{r})$.
+- [Simplify] In exercise 8, add the next term $J\simeq\energy{E}/\signal{\omega}_0+\energy{E}^2/(16\mechanical{m}\mechanical{g}\mechanical{\ell}\signal{\omega}_0)$, which reproduces the $\theta_0^2/16$ period correction used in 15.04 and 15.14.
+- [Structure] The table gives $\alpha$ both as a rotation angle and as the Kepler strength (J m) with unit "—"; use different symbols or list both units.
+=== 02 Physics/01 Classical Mechanics/15 Complete Solutions to the Exercises/15.14 Solutions for Small Oscillations and Normal Modes.md
+priority: low
+graph: yes
+manim: no
+summary: Correct solutions (double-pendulum matrices, diatomic dispersion, Feigenbaum values verified); a couple of figures would help.
+- [Graph] For exercise 11, plot both branches $\signal{\omega}(\signal{q})$ for $\mechanical{M}/\mechanical{m}=2$ over $\signal{q}\mechanical{a}\in[0,\pi/2]$, marking the gap between $\sqrt{2\mechanical{k}/\mechanical{M}}$ and $\sqrt{2\mechanical{k}/\mechanical{m}}$ at the zone edge.
+- [Example] In exercise 13, give the two spacing ratios numerically ($\approx4.75$ and $\approx4.66$) and reuse the logistic bifurcation diagram suggested for 14.07.
+- [Example] In exercise 3, show where the matrices come from: $\energy{T}=\tfrac12\mechanical{m}\mechanical{\ell}^2(2\dot\theta_1^2+2\dot\theta_1\dot\theta_2+\dot\theta_2^2)$ and $\energy{U}\simeq\tfrac12\mechanical{m}\mechanical{g}\mechanical{\ell}(2\theta_1^2+\theta_2^2)$ up to a constant.
+=== 02 Physics/01 Classical Mechanics/16 Basic Formula Reference/16.00 Basic Formula Reference.md
+priority: low
+graph: no
+manim: no
+summary: A minimal hub note that is adequate.
+- [Links] List direct links to 16.01 through 16.16 so the hub works without returning to the main index.
+=== 02 Physics/01 Classical Mechanics/16 Basic Formula Reference/16.01 Kinematics.md
+priority: low
+graph: no
+manim: no
+summary: A correct, compact formula sheet.
+- [Structure] Add the polar acceleration $(\mechanical{\ddot r}-\mechanical{r}\dot\theta^2)\hat e_r+(\mechanical{r}\ddot\theta+2\mechanical{\dot r}\dot\theta)\hat e_\theta$ and the tangential/normal split, which the 15.01 solutions use.
+=== 02 Physics/01 Classical Mechanics/16 Basic Formula Reference/16.02 Newtonian Dynamics.md
+priority: low
+graph: no
+manim: no
+summary: A correct formula sheet with appropriate validity notes.
+- [Structure] Add linear drag with terminal speed $\mechanical{m}\mechanical{g}/\mechanical{b}$ and Stokes drag $6\pi\mechanical{\eta}\mechanical{R}\mechanical{v}$, both used in 15.02.
+=== 02 Physics/01 Classical Mechanics/16 Basic Formula Reference/16.03 Work and Energy.md
+priority: low
+graph: no
+manim: no
+summary: A correct, minimal formula sheet.
+- [Structure] Add the curl test $\nabla\times\mechanical{\vec F}=0$ on a simply connected domain and $\Delta\energy{E}=\energy{W}_{\mathrm{nc}}$ for nonconservative forces, both used in 15.03.
+=== 02 Physics/01 Classical Mechanics/16 Basic Formula Reference/16.04 Oscillations.md
+priority: low
+graph: no
+manim: no
+summary: Correct formulas consistent with the $2\signal{\gamma}$ damping convention used elsewhere.
+- [Structure] Add $Q=\signal{\omega}_0/(2\signal{\gamma})$, the damped frequency $\sqrt{\signal{\omega}_0^2-\signal{\gamma}^2}$, the phase $\tan\delta=2\signal{\gamma}\signal{\Omega}/(\signal{\omega}_0^2-\signal{\Omega}^2)$, and $\signal{T}\simeq\signal{T}_0(1+\theta_0^2/16)$, all used in 15.04.
+=== 02 Physics/01 Classical Mechanics/16 Basic Formula Reference/16.05 Systems and Collisions.md
+priority: low
+graph: no
+manim: no
+summary: A correct formula sheet, but the elastic-collision entry gives only one of the two outgoing velocities.
+- [Structure] Add $\mechanical{v}'_2=[(\mechanical{m}_2-\mechanical{m}_1)\mechanical{v}_2+2\mechanical{m}_1\mechanical{v}_1]/(\mechanical{m}_1+\mechanical{m}_2)$ and König's theorem $\energy{K}=\tfrac12\mechanical{M}\mechanical{V}^2+\energy{K}_{\mathrm{rel}}$.
+=== 02 Physics/01 Classical Mechanics/16 Basic Formula Reference/16.06 Gravitation and Motion Under Central Forces.md
+priority: low
+graph: no
+manim: no
+summary: A correct formula sheet, including a properly general virial theorem.
+- [Structure] Add the vis-viva equation $\mechanical{v}^2=\mechanical{G}\mechanical{M}(2/\mechanical{r}-1/\mechanical{a})$, the orbital energy $-\mechanical{G}\mechanical{M}\mechanical{m}/(2\mechanical{a})$, and the apsides $\mechanical{a}(1\mp e)$, all used in 15.06.
+=== 02 Physics/01 Classical Mechanics/16 Basic Formula Reference/16.07 Rigid Bodies.md
+priority: low
+graph: no
+manim: no
+summary: A correct formula sheet.
+- [Structure] Add Euler's equations $\mechanical{I}_1\dot{\mechanical{\omega}}_1=(\mechanical{I}_2-\mechanical{I}_3)\mechanical{\omega}_2\mechanical{\omega}_3$ (and cyclic) and the rolling speed $\sqrt{2\mechanical{g}\mechanical{h}/(1+\beta)}$, which recur in 15.07.
+=== 02 Physics/01 Classical Mechanics/16 Basic Formula Reference/16.08 Fluids.md
+priority: low
+graph: no
+manim: no
+summary: A correct formula sheet with clear validity conditions.
+- [Structure] Add Torricelli's law, the Reynolds number, and Stokes drag, which the 15.08 solutions use.
+=== 02 Physics/01 Classical Mechanics/16 Basic Formula Reference/16.09 Lagrangian Mechanics.md
+priority: low
+graph: no
+manim: no
+summary: A correct formula sheet; kinetic energy is $\energy{T}$ here but $\energy{K}$ in 16.03.
+- [Structure] Use one kinetic-energy symbol across 16.03 and 16.09, and add the Noether charge $Q=\sum_kp_k\eta_k-f$ and the energy function $\energy{h}=\sum_k\dot q_kp_k-\energy{L}$.
+=== 02 Physics/01 Classical Mechanics/16 Basic Formula Reference/16.10 Hamiltonian Mechanics.md
+priority: low
+graph: no
+manim: no
+summary: A correct formula sheet that is complete for its scope.
+- [Structure] No change needed.
+=== 02 Physics/01 Classical Mechanics/16 Basic Formula Reference/16.11 Canonical Transformations and Hamilton–Jacobi Theory.md
+priority: low
+graph: no
+manim: no
+summary: Correct, but the generating-function entry names the four types without giving any relations.
+- [Structure] Add at least the type-2 relations $p=\partial F_2/\partial q$, $Q=\partial F_2/\partial P$, $\energy{K}=\energy{H}+\partial F_2/\partial t$, ideally all four types in a small table, since that is what a reader looks up.
+=== 02 Physics/01 Classical Mechanics/16 Basic Formula Reference/16.12 Small Oscillations.md
+priority: low
+graph: no
+manim: no
+summary: A correct formula sheet consistent with chapter 14.
+- [Structure] Add the secular equation $\det(V-\signal{\omega}^2M)=0$ and the normalization $\vec u_\alpha^TM\vec u_\beta=\delta_{\alpha\beta}$.
+=== 02 Physics/01 Classical Mechanics/16 Basic Formula Reference/16.13 Conserved Quantities and Symmetries.md
+priority: low
+graph: no
+manim: no
+summary: A correct, compact symmetry table.
+- [Links] Link the Noether sentence to the chapter note where the theorem is proved.
+=== 02 Physics/01 Classical Mechanics/16 Basic Formula Reference/16.14 Hamiltonians of Selected Systems.md
+priority: low
+graph: no
+manim: no
+summary: A correct reference table.
+- [Structure] For central motion, note that $\mechanical{m}$ becomes the reduced mass $\mechanical{\mu}$ for a two-body problem, matching 16.06.
+=== 02 Physics/01 Classical Mechanics/16 Basic Formula Reference/16.15 Selected Hamilton–Jacobi Equations.md
+priority: low
+graph: no
+manim: no
+summary: Correct reference formulas; the oscillator principal function checks out.
+- [Structure] No change needed.
+=== 02 Physics/01 Classical Mechanics/16 Basic Formula Reference/16.16 Useful Identities.md
+priority: low
+graph: no
+manim: no
+summary: Correct identities.
+- [Structure] Consider adding $\nabla\times(\nabla\times\vec A)=\nabla(\nabla\cdot\vec A)-\nabla^2\vec A$ and $\int_{-\infty}^\infty x^2e^{-ax^2}dx=\tfrac12\sqrt{\pi/a^3}$.
+=== 02 Physics/01 Classical Mechanics/17 Constants, Units, and Conversions/17.00 Constants, Units, and Conversions.md
+priority: low
+graph: no
+manim: no
+summary: A minimal hub note that is adequate.
+- [Links] List direct links to 17.01 through 17.08.
+=== 02 Physics/01 Classical Mechanics/17 Constants, Units, and Conversions/17.01 Fundamental Constants.md
+priority: low
+graph: no
+manim: no
+summary: Correct rounded constants.
+- [Structure] Note that $c$, $h$, $\electric{e}$, $\thermal{k}_B$, and $N_A$ have exact SI values since 2019, and align the $k_B$ macro with 15.08, which leaves it uncolored.
+=== 02 Physics/01 Classical Mechanics/17 Constants, Units, and Conversions/17.02 Astronomical Data.md
+priority: low
+graph: no
+manim: no
+summary: Correct rounded data.
+- [Structure] Say which year is meant: $\quantity{3.156\times10^7}{s}$ is the Julian year, and $365.25$ d is close to the sidereal period ($365.256$ d); one sentence avoids confusion with the tropical year.

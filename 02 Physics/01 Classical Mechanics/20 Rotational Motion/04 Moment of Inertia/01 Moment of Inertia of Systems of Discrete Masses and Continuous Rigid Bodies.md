@@ -157,13 +157,13 @@ To see why $d\mechanical A=2\pi\mechanical r\,d\mechanical r$, cut one strip acr
 ![[rotational-motion-fig-4-4.svg|**Fig. 4.4** (a) Two annular strips at different radii on a uniform disk. Each has width $d\mechanical r$, area $d\mechanical A$, and mass $d\mechanical m$. (b) One strip of radius $\mechanical r$ unrolls to a rectangle of length $2\pi\mechanical r$ and width $d\mechanical r$ in the infinitesimal limit.|475]]
 
 $$
-\mechanical{I}_{O} = \int \mechanical{r}^{2} d \mechanical{m} = \int_{0}^{R} \mechanical{r}^{2} \mechanical{\sigma} 2 \pi \mechanical{r} d \mechanical{r} = \int_{0}^{R} \mechanical{r}^{3} \mechanical{\sigma} 2 \pi d \mechanical{r} . \tag{4.13}
+\mechanical{I}_{O} = \int \mechanical{r}^{2} d \mechanical{m} = \int_{0}^{\mechanical{R}} \mechanical{r}^{2} \mechanical{\sigma} 2 \pi \mechanical{r} d \mechanical{r} = \int_{0}^{\mechanical{R}} \mechanical{r}^{3} \mechanical{\sigma} 2 \pi d \mechanical{r} . \tag{4.13}
 $$
 
 The disk is uniform, so $\mechanical\sigma$ is constant and the factor $2\pi\mechanical\sigma$ can come out of the integral.
 
 $$
-\mechanical{I}_{O} = 2 \pi \mechanical{\sigma} \int_{0}^{R} \mechanical{r}^{3} d \mechanical{r} = 2 \pi \mechanical{\sigma} \frac {\mechanical{R}^{4}} {4} . \tag{4.14}
+\mechanical{I}_{O} = 2 \pi \mechanical{\sigma} \int_{0}^{\mechanical{R}} \mechanical{r}^{3} d \mechanical{r} = 2 \pi \mechanical{\sigma} \frac {\mechanical{R}^{4}} {4} . \tag{4.14}
 $$
 
 The disk has total area $\mechanical A=\pi\mechanical R^2$, so $\mechanical\sigma=\mechanical M/(\pi\mechanical R^2)$. Substituting this density gives

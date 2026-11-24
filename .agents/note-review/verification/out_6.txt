@@ -1,0 +1,41 @@
+=== 02 Physics/01 Classical Mechanics/20 Rotational Motion/02 Torque and Static Equilibrium/01 Torque.md
+- FIXED | Example 3 force "at all points" integrated over dθ gives N rad | Restated load as force per unit rim length λ(θ)=2.0−sinθ N/m, added dF=λR dθ, Eq. 2.18 now R²∫λ dθ = (1.0 m)²(4π) N/m = 4π N m; added λ to table
+- FIXED | Example 2 cosine added to a length; Section 1.1 reference; colored xy plane labels | Inserted amplitude A (m) in coordinates and Eqs. 2.10-2.16, result τ(0)=mAy₀ω₁²k̂; "Section 1.1" -> "Section 2.1.1"; uncolored $xy$ plane in note (iii) and after Eq. 2.16; added A to table
+
+=== 02 Physics/01 Classical Mechanics/20 Rotational Motion/02 Torque and Static Equilibrium/02 Static Equilibrium of a Rigid Body.md
+- PARTLY | Normal force "below the CM" fails when a pushed box has a couple; book-on-wall caveat; redraw Fig. 2.10a | Physics confirmed (offset x=hF/n about the point below CM); added the restriction, the hF/n shift toward the leading edge and tipping threshold, a caveat for Fig. 2.9c, and an h table row; Fig. 2.10a graph NOT redrawn (n arrow still drawn under the CM)
+- FIXED | Fig. 2.8 credits rope-end forces to Newton's third law; vector Σ F_x; missing macros | Caption now says the equal and opposite end forces follow from the massless rope and are not third-law pairs; Σ\vec F_x/y/z -> scalar ΣF_x/y/z in Eqs. 2.19, 2.24, 2.25, 2.29, 2.30 and the z-sentence; wrapped n_br and n_A+n_B in \mechanical
+
+=== 02 Physics/01 Classical Mechanics/20 Rotational Motion/02 Torque and Static Equilibrium/03 Some Cool Theorems.md
+- FIXED | Couple torque depends on perpendicular distance between lines of action, not distance between points | Note 1 now says force directions and perpendicular distance d between the lines of action must not change
+- FIXED | Wheel radius written as α; axis-only x,y,z table rows | Wheel radius renamed to $\mechanical{a}$ in Exercise (v), Fig. 2.21 caption and table; removed y and z rows, kept x with a specific description
+
+=== 02 Physics/01 Classical Mechanics/20 Rotational Motion/03 Rotational Dynamics/01 Newton's Second Law for Rotational Motion.md
+- FIXED | Eq. 3.5 vector form only valid for the point-mass case; Example 1(b) torque expression | Kept Eq. 3.5 (valid for the derived point-mass case) but added that only the axial form Στ_z=I_zα_z holds for a general rigid body because bearings supply off-axis torque; (b) now τ_F=R F sinφ
+
+=== 02 Physics/01 Classical Mechanics/20 Rotational Motion/03 Rotational Dynamics/02 Systems of Objects Combining Translational and Rotational Motion.md
+- FIXED | R used for axle force and for outer pulley radius | Renamed axle reaction to $\mechanical{\vec F}_{\text{axle}}$ in text, Eqs. 3.33 and 3.45 and the table; Fig. 3.6 SVG (path-only labels) could not be checked and may still label the force R
+
+=== 02 Physics/01 Classical Mechanics/20 Rotational Motion/04 Moment of Inertia/01 Moment of Inertia of Systems of Discrete Masses and Continuous Rigid Bodies.md
+- FIXED | Upper limit R uncolored in Eqs. 4.13-4.14 | Wrapped the three upper limits as \mechanical{R}
+
+=== 02 Physics/01 Classical Mechanics/20 Rotational Motion/05 Angular Momentum/03 Angular Momentum of Systems of Discrete Masses and Continuous Rigid Bodies.md
+- PARTLY | Eq. 5.9 r_i should be labeled perpendicular | The text right above Eq. 5.9 already defines r_i as the perpendicular vector from the axis, so the equation is correct; only updated the table description to "Perpendicular displacement from the rotation axis to the mass element"
+
+=== 02 Physics/01 Classical Mechanics/20 Rotational Motion/05 Angular Momentum/06 Notes on Angular Momentum and Newton's Second Law.md
+- FIXED | Example 2 cosine added to a length | Inserted amplitude A (m) in Eqs. 5.24-5.28; result L(0)=mAω₂(x₀+A)k̂; sign sentence updated; added A and x,y,x₀,y₀ rows to table
+- FIXED | Mixed î/ı̂ hats, ΔL without z subscript, plain-text r(t), v(t) | Unified hats to \hat{\imath},\hat{\jmath}; Eq. 5.21 now ΔL_z (kept I₁, I₂ as valid general step before setting both to I_z); put x, y, r(t), v(t), t=0 in math
+
+=== 02 Physics/01 Classical Mechanics/20 Rotational Motion/07 Combining Translation and Rotation - A First Look/01 General Motion of a Rigid Body - Chasles' Theorem.md
+- REJECTED | Chasles' theorem proper is the screw form | Many standard texts (e.g. Goldstein) name the translation-of-a-point-plus-rotation decomposition Chasles' theorem; the note states it correctly for a chosen point, no physics error
+
+=== 02 Physics/01 Classical Mechanics/20 Rotational Motion/07 Combining Translation and Rotation - A First Look/02 The Kinematics of Rolling Motion.md
+- FIXED | Eq. 7.12 sign inconsistent with Fig. 7.6 and 7.3.2 | Fig. 7.6 shows rope leaving the groove below-right of O with clockwise ω, so the pull torque is counterclockwise and the rope winds up; changed Eqs. 7.12-7.14 to (cosφ − r/R), rotational term −ωr, Eq. 7.15 text "winds up", dx_A = dS cosφ − dl, caption "leaves the bottom of the groove"; consistent with Eq. 7.20 by power balance; the ωr arrow in the Fig. 7.6 SVG still points along +rope and was not redrawn; 7.3.2 says "unwinds" but is not in scope
+
+=== 02 Physics/01 Classical Mechanics/20 Rotational Motion/08 Garden of Delights/01 Gyroscopic Precession.md
+- FIXED | "therefore" non sequitur; L_z conservation requires a dip of the spin axis | Replaced the sentence: torque has no z component, L_z=0 initially, so the axle dips slightly and the −z spin component balances the orbital +z part, starting the nutation
+
+=== 02 Physics/01 Classical Mechanics/Gravitational potential.md
+- FIXED | Φ=Gm/r sign and mass | Now Φ=−GM/r with zero at infinity; stated that table values are magnitudes |Φ|
+- FIXED | "decreases linearly with r" | Now "|Φ| decreases as 1/r"
+- FIXED | Missing r in integrand; Φ/φ and g-/G-Potential naming | Integrand now 4πGρ r dr (gives 2πGρc²T_U²≈4e16 m²/s², consistent with table); unified to |Φ| and "G-Potential"

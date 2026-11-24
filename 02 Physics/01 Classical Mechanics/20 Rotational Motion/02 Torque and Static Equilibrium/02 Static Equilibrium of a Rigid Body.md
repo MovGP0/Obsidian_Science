@@ -14,9 +14,9 @@ Since we now have two types of motion to consider, translational and rotational,
 $$
 \Sigma \mechanical{\vec{F}} = 0 \Rightarrow
 \begin{cases}
-\Sigma \mechanical{\vec{F}}_x = 0 \\
-\Sigma \mechanical{\vec{F}}_y = 0 \\
-\Sigma \mechanical{\vec{F}}_z = 0.
+\Sigma \mechanical{F}_x = 0 \\
+\Sigma \mechanical{F}_y = 0 \\
+\Sigma \mechanical{F}_z = 0.
 \end{cases} \tag{2.19}
 $$
 
@@ -34,7 +34,7 @@ There is an important point that needs to be made here. If an object is stationa
 
 When drawing forces, it is important to consider the exact location of an object at which each force is exerted. Based on the definition of torque, the point of application of the force will determine the vector $\mechanical{\vec{r}}$ and, therefore, the value of the torque. In this section, we focus on the direction and point of application of the following forces: The gravitational force, the force due to tension, the spring force, the reaction force from a supporting surface, the static friction force, the kinetic friction force, and the reaction force from a junction. We expect you to know the magnitudes of forces such as the gravitational force, the spring force, and the frictional forces.[^drawing-forces]
 
-![[rotational-motion-fig-2-8.svg|**Fig. 2.8** The system consists of two objects, the rod and the sphere, each supported by an inelastic rope. Rope 1 connects the sphere to the rod and rope 2 connects the rod to a wall. The sphere experiences the force due to tension $\mechanical{\vec{F}}_{T1}$ while the rod experiences the forces due to tension of $\mechanical{\vec{F}}'_{T1}$ and $\mechanical{\vec{F}}_{T2}$. From Newton’s Third law, $\mechanical{\vec{F}}_{T1} = -\mechanical{\vec{F}}'_{T1}$ and $\mechanical{\vec{F}}_{T2} = -\mechanical{\vec{F}}'_{T2}$.|370]]
+![[rotational-motion-fig-2-8.svg|**Fig. 2.8** The system consists of two objects, the rod and the sphere, each supported by an inelastic rope. Rope 1 connects the sphere to the rod and rope 2 connects the rod to a wall. The sphere experiences the force due to tension $\mechanical{\vec{F}}_{T1}$ while the rod experiences the forces due to tension of $\mechanical{\vec{F}}'_{T1}$ and $\mechanical{\vec{F}}_{T2}$. Because each rope is massless, the forces at its two ends are equal and opposite: $\mechanical{\vec{F}}_{T1} = -\mechanical{\vec{F}}'_{T1}$ and $\mechanical{\vec{F}}_{T2} = -\mechanical{\vec{F}}'_{T2}$. These pairs act on different bodies through the rope and are not Newton’s third-law pairs.|370]]
 
 - **The gravitational force $\mechanical{\vec{F}}_{g}$**: The gravitational force $\mechanical{\vec{F}}_{g}$ is exerted at the center of gravity of the object. The center of gravity coincides with the CM when the object is inside a uniform gravitational field, which is the case when close to the Earth’s surface. Consequently, if an object is rotating about an axis that goes through its CM, $\mechanical{\vec{r}} = 0$ and there is no torque due to $\mechanical{\vec{F}}_{g}$. In fact, one can find the location of the CM of an extended object by computing the location about which the torque due to the gravitational force is zero. This is the focus of the first two exercises at the end of this chapter.
 
@@ -120,7 +120,7 @@ elements: [
 
 **Fig. 2.9** The normal force acts perpendicular to the surface. (a) A wheel touches the floor at one point. (b) The resultant normal force on the box acts below its center of mass in the case shown. (c) The wall’s normal force acts opposite the applied force at the same height.
 
-- **The reaction force from a supporting surface $\mechanical{\vec{n}}$**: The reaction force $\mechanical{\vec{n}}$ between an object and a surface is exerted on the point of the object that is in direct contact with the surface. For example, the reaction force on a wheel by a horizontal surface (Figure 2.9a) is exerted at the point of the wheel that is in contact with the surface. If there are more points between the two surfaces that are in contact (e.g., a box sliding on a table, as in Figure 2.9b), then the reaction force is exerted at the point of contact that is below the object’s CM. This is because, as we just discussed, the gravitational force of an object acts at its CM. Therefore, if we consider all the mass to be concentrated at that single point, it is as if that point is in contact with the surface. Similarly, if we push a book against a wall (Figure 2.9c), the reaction force will be exerted at the point of contact with the wall that is at the same height as the point at which we exert the force. In summary, the reaction force “reacts” to oppose the force that wants to push the two surfaces together.
+- **The reaction force from a supporting surface $\mechanical{\vec{n}}$**: The reaction force $\mechanical{\vec{n}}$ between an object and a surface is exerted on the point of the object that is in direct contact with the surface. For example, the reaction force on a wheel by a horizontal surface (Figure 2.9a) is exerted at the point of the wheel that is in contact with the surface. If there are more points between the two surfaces that are in contact (e.g., a box sliding on a table, as in Figure 2.9b), then the reaction force is exerted at the point of contact that is below the object’s CM. This is because, as we just discussed, the gravitational force of an object acts at its CM. Therefore, if we consider all the mass to be concentrated at that single point, it is as if that point is in contact with the surface. This rule holds only when no other force exerts a torque about that point. If a horizontal force $\mechanical{\vec{F}}$ pushes the box at a height $\mechanical{h}$ above the surface (Figure 2.10a), $\mechanical{\vec{F}}$ and the static friction at the surface form a couple. The effective point of application of $\mechanical{\vec{n}}$ then moves toward the leading edge by $\mechanical{h}\mechanical{F}/\mechanical{n}$, and it reaches that edge at the tipping threshold. Similarly, if we push a book against a wall (Figure 2.9c), the reaction force will be exerted at the point of contact with the wall that is at the same height as the point at which we exert the force. This is also an idealization: the book's weight and the wall's friction force also exert torques, so the effective point of application of the wall's reaction force can shift from this height. In summary, the reaction force “reacts” to oppose the force that wants to push the two surfaces together.
 
 - **The static friction force $\mechanical{\vec{f}}_s$**: In Figure 2.10a, we apply a force $\mechanical{\vec{F}}$ on a box at rest on a rough surface. This external force attempts to move the box to the right. A force of static friction $\mechanical{\vec{f}}_s$ will appear when the box and the rough surface attempt to slide against each other. The direction of this force is parallel to the two surfaces and against the intended direction of motion of each surface. Thus, in Figure 2.10a the static friction on the box will be pointing to the left. We take its point of application to be the same as that of the reaction force $\mechanical{\vec{n}}$. In summary, two forces are exerted on the box at the point of contact between the two surfaces: One is the reaction force $\mechanical{\vec{n}}$ and the other is the static friction $\mechanical{\vec{f}}_s$. The net force exerted by the surface on the box will be the vector sum of these two perpendicular forces.
 
@@ -300,13 +300,13 @@ This result, though simple, is very subtle. It is common practice (even in many 
 We are now ready to study the rod. Again we start from the equilibrium Equations (2.19) and (2.20), keeping in mind that there are no force components along the x and z axes.
 
 $$
-\Sigma \mechanical{\vec{F}}_y = 0 \Rightarrow \mechanical{n}_A - \mechanical{n}_{br} - \mechanical{F}_{g,\text{rod}} + \mechanical{n}_B = 0. \tag{2.24}
+\Sigma \mechanical{F}_y = 0 \Rightarrow \mechanical{n}_A - \mechanical{n}_{br} - \mechanical{F}_{g,\text{rod}} + \mechanical{n}_B = 0. \tag{2.24}
 $$
 
-But, as we have just discussed, $n_{br} = \mechanical{F}_{g,\text{ball}} = 2.0 \times 10^2\,\unit{N}$. Therefore, the above equation becomes:
+But, as we have just discussed, $\mechanical{n}_{br} = \mechanical{F}_{g,\text{ball}} = 2.0 \times 10^2\,\unit{N}$. Therefore, the above equation becomes:
 
 $$
-\Sigma \mechanical{\vec{F}}_y = 0 \Rightarrow \mechanical{n}_A - \mechanical{F}_{g,\text{ball}} - \mechanical{F}_{g,\text{rod}} + \mechanical{n}_B = 0. \tag{2.25}
+\Sigma \mechanical{F}_y = 0 \Rightarrow \mechanical{n}_A - \mechanical{F}_{g,\text{ball}} - \mechanical{F}_{g,\text{rod}} + \mechanical{n}_B = 0. \tag{2.25}
 $$
 
 Rearranging and plugging the known values into Equation (2.25) gives:
@@ -346,7 +346,7 @@ $$
 \end{aligned} \tag{2.28}
 $$
 
-Since we had found that $n_A + n_B = 1.2 \times 10^3 \, \unit{N}$, we see that $n_A = 6.5 \times 10^2 \, \unit{N}$.
+Since we had found that $\mechanical{n}_A + \mechanical{n}_B = 1.2 \times 10^3 \, \unit{N}$, we see that $n_A = 6.5 \times 10^2 \, \unit{N}$.
 
 Because $\mechanical{\vec{n}}_B$ is also unknown, one could have just as cleverly picked the axis of rotation to go through point $B$. In that case, $\mechanical{\vec{\tau}}_{n_B} = 0$ because $\mechanical{\vec{r}}_{n_B} = 0$ and we could solve Equation (2.27) for $n_A$ instead. We should point out that we could also pick an axis of rotation that goes through the rod’s midpoint or any other point. For example, had we picked the midpoint, where $\mechanical{\vec{F}}_{g,\text{rod}}$ is exerted, $\mechanical{\vec{\tau}}_{F_{g,\text{rod}}} = 0$ and there would be two unknowns $\mechanical{\vec{\tau}}_{n_A}$ and $\mechanical{\vec{\tau}}_{n_B}$ in Equation (2.27). We would still be able to solve for $n_A$ and $n_B$ in this case, by combining Equations (2.26) and (2.27), but the algebra would be a little more cumbersome. In many cases, the choice of the axis about which to compute the net torque will not prevent you from finding the solution – it will only help you by simplifying the algebra if you make a “smart” choice by picking the axis to go through a point where one of the unknown forces is exerted.
 
@@ -454,7 +454,7 @@ Starting from Equations (2.19) and (2.20), we obtain Equations (2.29), (2.30), a
 
 $$
 \begin{aligned}
-\sum \mechanical{\vec F}_x &= 0 \\
+\sum \mechanical F_x &= 0 \\
 \Rightarrow \mechanical R_x-\mechanical F_{Tx} &= 0 \\
 \Rightarrow \mechanical R_x &= \mechanical F_T\cos(\pi/3)=\frac{\mechanical F_T}{2},
 \end{aligned} \tag{2.29}
@@ -464,14 +464,14 @@ and
 
 $$
 \begin{aligned}
-\sum \mechanical{\vec F}_y &= 0 \\
+\sum \mechanical F_y &= 0 \\
 \Rightarrow \mechanical R_y-\mechanical F_g+\mechanical F_{Ty} &= 0 \\
 \Rightarrow \mechanical F_g &= \mechanical R_y+\mechanical F_T\sin(\pi/3)
 =\mechanical R_y+\frac{\sqrt{3}}{2}\mechanical F_T.
 \end{aligned} \tag{2.30}
 $$
 
-There are no force components along the $z$ axis, so $\Sigma \mechanical{\vec{F}}_z = 0$ is automatically satisfied.
+There are no force components along the $z$ axis, so $\Sigma \mechanical{F}_z = 0$ is automatically satisfied.
 
 For the rotational equilibrium, we pick our axis of rotation to be perpendicular to the plane of the page and go through point $A$. We pick point $A$ since the unknown force $\mechanical{\vec{R}}$ is exerted at that point. Based on our discussion in Example 4, another convenient choice would be an axis of rotation that goes through point $B$, since the force of tension is also unknown. We assume that $\mechanical{l}$ is the length of the rod, and thus for the net torque about an axis through point $A$ we have:
 
@@ -536,6 +536,7 @@ Of course, there is a second solution to Equation (2.35): $\mechanical{\theta} =
 | $\mechanical{\vec{F}}$ | $\unit{N}$ | Force | Force acting on the indicated body. |
 | $\mechanical{\vec{f}}$ | $\unit{N}$ | Friction force | Tangential contact force from friction. |
 | $\mechanical{g}$ | $\unit{m\,s^{-2}}$ | Gravitational acceleration | Acceleration due to gravity. |
+| $\mechanical{h}$ | $\unit{m}$ | Height | Height above the surface at which the applied force acts on the box. |
 | $\mechanical{L}$ | $\unit{m}$ | Length | Length of the indicated body or part. |
 | $\mechanical{l}$ | $\unit{m}$ | Length | Length of the indicated part or lever arm. |
 | $\mechanical{\vec{v}}$ | $\unit{m\,s^{-1}}$ | Linear velocity or speed | Velocity or speed of the indicated point. |

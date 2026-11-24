@@ -18,10 +18,12 @@ $$S = \int_{t} \left( { {\color{brown}E_{kin}} - E_{pot} } \right) dt$$
 > The **Principle of Least Action** is related to the **Principle of Least Time** for the propagation of light in Optics and the **Principle of Least Distance**
 
 > [!example] Examples
-> Examples for minimizing action:
-> - Running on a beach vs. swimming in water to reach a goal.
-> - The *Catenary line* minimizes the energy of a chain or rope.
-> - Refaction of light with a medium where the speed of light is reduced.
+> Examples of analogous variational principles (these are not instances of $\delta S = 0$):
+> - Running on a beach vs. swimming in water to reach a goal (least time, as in Fermat's principle).
+> - The *Catenary line* minimizes the static potential energy of a chain or rope.
+> - Refaction of light with a medium where the speed of light is reduced (Fermat's principle of least time).
+>
+> The action of a physical path is stationary ($\delta S = 0$), but it is not necessarily a minimum.
 
 > [!note]
 > - the **Kinetic Energy** $T$ is a function of **velocities**
@@ -34,7 +36,7 @@ Assuming we have the function of the path $g$ over time $t$ as the sum of the pa
 $$g = \hat{g} + {\color{brown}α} f$$
 ![350](PrincipleOfLeastAction1.svg)
 > [!note]
-> in Physics, the time axis of a plot is usually the vertical one, while in Mathematics the independent variable is usually the horizontal axis.
+> in spacetime diagrams in Physics, the time axis is usually the vertical one, while in Mathematics the independent variable is usually the horizontal axis.
 
 When we differentiate by $α$, the only part that changes is the function $f$: 
 

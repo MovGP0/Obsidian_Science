@@ -15,7 +15,7 @@ $$
 \vec{p} = m \vec{v}
 $$
 
-If we take the time derivative of both sides we obtain
+If we take the time derivative of both sides and the mass $m$ is constant, we obtain
 
 $$
 \frac{d}{dt} \vec{p} = m \frac{d}{dt} \vec{v}
@@ -26,5 +26,7 @@ We can therefore rewrite Newton’s second law by saying *force is the rate of c
 $$
 \vec{p} = m \dot{\vec{r}}, \quad \vec{F} = \dot{\vec{p}}
 $$
+The form $\vec{F} = \dot{\vec{p}}$ does not need a constant mass. It is the more general statement, and it also applies to the total momentum of a system of particles.
+
 > [!note]
 > Knowing the position and momentum provides us with complete **Laplacian determinism** of the system, provided we know the equations of motion and have chosen initial conditions.

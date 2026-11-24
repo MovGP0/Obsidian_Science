@@ -1,0 +1,383 @@
+=== 02 Physics/01 Classical Mechanics/03 Work, Energy, and Conservation/03.12 Nonmechanical Forms of Energy.md
+priority: medium
+graph: no
+manim: no
+summary: Short and correct, but the energy balance is stated without motivation and the braking example stops before using it.
+- [Intuition] Before the balance equation, add one sentence on why friction "loses" mechanical energy: the work goes into random microscopic motion (internal energy), so the total is still conserved.
+- [Example] Finish the braking example with the balance: choose the car plus brakes as the system, set $\thermal{Q}\approx0$ and $\energy{W}_{\mathrm{ext}}\approx0$ during the stop, conclude $\Delta\energy{E}_{\mathrm{int}}=+\quantity{675}{kJ}$, then estimate the disc temperature rise with $\Delta T=\Delta\energy{E}_{\mathrm{int}}/(m_{\mathrm{disc}}c)$ for an assumed disc mass, so the reported $200\unit{{}^\circ C}$ means something.
+- [Simplify] Say directly that the result depends on the system boundary: friction between the car and the road is internal if the road is in the system and external if it is not. Readers often get stuck on this.
+- [Structure] Remove the table row with "—" for brake temperature, or give it a symbol such as $\thermal{T}_{\mathrm{disc}}$.
+=== 02 Physics/01 Classical Mechanics/03 Work, Energy, and Conservation/03.13 Gravitational Forces and Potential.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct and compact, but it gives $U=-GMm/r$ without the work integral and has no picture of the potential well.
+- [Simplify] Derive $\energy{U}(\mechanical{r})$ in two lines from $\energy{U}(\mechanical{r})=-\int_\infty^{\mechanical{r}}\mechanical{\vec F}\cdot\mathrm d\mechanical{\vec r}$, so the negative sign follows from the $\energy{U}(\infty)=0$ convention instead of being stated.
+- [Graph] Plot $\energy{U}(r)/(GMm/R)=-R/r$ for $r/R\in[1,6]$, with horizontal lines at $E<0$ (bound, with turning point marked), $E=0$ (escape threshold) and $E>0$, to show binding energy and escape speed visually.
+- [Intuition] Add the limiting case: for $r=R+h$ with $h\ll R$, expanding $-GMm/(R+h)$ gives $\mathrm{const}+mgh$, which links to the uniform-field result.
+- [Example] Plug in Earth's values ($GM_E\approx3.99\times10^{14}\unit{m^3\,s^{-2}}$, $R_E\approx6.37\times10^6\unit{m}$) to get the $11.2\unit{km\,s^{-1}}$, and note that $v_{\mathrm{esc}}$ does not depend on $m$ or on launch direction.
+=== 02 Physics/01 Classical Mechanics/03 Work, Energy, and Conservation/03.14 Work and Energy Exercises.md
+priority: low
+graph: no
+manim: no
+summary: A clean exercise list with correct results; only the notation and some missing answers need work.
+- [Correctness] $\mechanical{L}$ is used both for angular momentum (Exercise 13) and for rod length (Exercise 14), and the table lists it twice. Rename the rod length, for example to $\mechanical{\ell}$.
+- [Structure] Exercises 10 and 15 have no **Result**. Add short results, for example Exercise 10: $x_0=2B/A$, and bounded oscillation between two turning points for $-A^2/(4B)<E<0$.
+- [Simplify] Exercise 3 says "ball" on a smooth incline. State that it slides without rolling, because a rolling ball gives $v=\sqrt{10gh/7}\approx\quantity{5.29}{m\,s^{-1}}$.
+=== 02 Physics/01 Classical Mechanics/03 Work, Energy, and Conservation/Conservative forces, work integrals, and potential.md
+priority: high
+graph: yes
+manim: yes
+summary: An accurate but scattered lecture transcription that mixes summation notation, vector identities, rocket and polar-velocity review into the conservative-force story, and contains several broken internal links.
+- [Correctness] Several internal links point to the wrong sections. "Comparing both sides of the vector triple product" cites [[#Work along path a]] but means the BAC–CAB section. "Work along path b" cites [[#Work and change in kinetic energy]] for its integral. "Rocket momentum problem" cites the semicircular-wire section of the rocket note for the momentum balance; the correct target is "Rocket momentum balance".
+- [Correctness] The Stokes restatement $\int_S(\nabla\times\vec A)\cdot\mathrm d\mechanical{\vec A}$ uses $A$ for both the vector field and the area element. Rename the field (for example $\vec G$) or the area element ($\mathrm d\vec S$).
+- [Structure] Move the summation, BAC–CAB, Levi-Civita, rocket, and polar-velocity sections to the vector-math and rocket notes, or into a clearly labelled appendix. Reorder the rest as: work–energy theorem → path a/b example → path dependence → potential → $\vec F=-\nabla U$ → curl test → 1D potentials and turning points.
+- [Intuition] After computing $\energy{W}_a=2$ and $\energy{W}_b=3/2$, say explicitly that the field $(\mechanical{y},2\mechanical{x})$ is not conservative because $\partial F_y/\partial x-\partial F_x/\partial y=1\ne0$. This is the payoff of the example, and the curl section should refer back to it.
+- [Graph] Add a native 2D vector-field plot of $\vec F=(y,2x)$ on $[0,1.2]^2$, with path a (through $Q=(1,0)$), path b (diagonal) and path c ($y=x^2$) overlaid. Label each path with its work: 2, 3/2, and $\int_0^1(x^2+4x^2)\,dx=5/3$.
+- [Manim] Move a particle along paths a, b and c in turn, drawing the local $\vec F\cdot\mathrm d\vec r$ arrow and a running work counter, so the reader sees the three totals diverge.
+=== 02 Physics/01 Classical Mechanics/03 Work, Energy, and Conservation/Work, energy, and mechanical power problems.md
+priority: high
+graph: yes
+manim: no
+summary: Numerically sound worked problems, but the note is a long chronological dump with broken headings, missing given data, and much unrelated kinematics and force material.
+- [Structure] Fix the broken headings "##### )" and "##### ) — Hooke's law". Move the projectile ("Week 2 worksheet", "Chapter 4") and pure force-balance material ("Chapter 6", "Chapter 8") to the Newton's-laws or kinematics notes, so this note covers work, energy and power only.
+- [Correctness] The box-on-incline problem never gives the initial speed, yet records $\Delta x=2.03\unit{m}$. That value implies $v_0=\quantity{5}{m\,s^{-1}}$, so state it. Problem 47 (sled at 30°) likewise reports $\mu_k=0.117$ without the tension and mass used.
+- [Simplify] Use one notation throughout. Many symbols are uncoloured ($F$, $v$, $m$, $K$, $U$) next to macro-coloured ones; apply \mechanical{} and \energy{} consistently, and use one symbol for kinetic friction ($F_{\mathrm k}$ and $f_{\mathrm k}$ are both used).
+- [Graph] Replace the "Work as area under force curve" image with a native plot of the spring force $F=kx$ for $x\in[0,0.03]\unit{m}$ with $k=500\unit{N/m}$, shading the triangle whose area is $0.225\unit{J}$, to tie together the area picture and the next example.
+- [Intuition] In "Work by a nonconservative force", add one sentence explaining why $W_{\mathrm{nc}}=\Delta K+\Delta U$: the conservative work is already counted as $-\Delta U$. Then add a one-line flowchart: identify forces → conservative ones go into $U$ → the rest go into $W_{\mathrm{nc}}$.
+- [Example] The email problem should end with the explicit result $v_f=\sqrt{2g\Delta s(m_2\sin\theta-m_1-\mu_k m_2\cos\theta)/(m_1+m_2)}$ and a check that $v_f$ is real only when $m_2\sin\theta>m_1+\mu_k m_2\cos\theta$.
+=== 02 Physics/01 Classical Mechanics/04 Oscillations/04.00 Oscillations.md
+priority: low
+graph: no
+manim: no
+summary: A clear chapter hub with accurate summary formulas.
+- [Links] Add the missing chapter notes to the summary list (04.03 energy balance, 04.05 phase space, 04.11 Q factor, 04.13 nonlinear, 04.14–04.16 coupled), so every section is reachable from the hub.
+=== 02 Physics/01 Classical Mechanics/04 Oscillations/04.01 Oscillations Across Physical Systems.md
+priority: low
+graph: yes
+manim: no
+summary: Correct motivational overview; the Taylor argument is short and lacks a concrete picture.
+- [Graph] Plot the pendulum potential $1-\cos q$ and its harmonic approximation $q^2/2$ for $q\in[-\pi,\pi]$, and optionally a Morse potential with its parabola. This shows where the harmonic approximation holds and where it fails.
+- [Simplify] Say why the linear term is missing ($\energy{U}'(q_0)=0$ at equilibrium) and that the force $-\energy{U}''(q_0)(q-q_0)$ is therefore Hooke's law with $k_{\mathrm{eff}}=\energy{U}''(q_0)$.
+- [Intuition] For the "waves on strings, membranes, fluids" item, say that these reduce to a collection of independent harmonic oscillators (normal modes), not to a single oscillator. Link 04.16.
+=== 02 Physics/01 Classical Mechanics/04 Oscillations/04.02 Simple Harmonic Oscillator.md
+priority: medium
+graph: yes
+manim: yes
+summary: Correct and well organized, but the step from the complex roots to the real cosine solution is skipped and there is no numerical example.
+- [Simplify] Show the step from $C_1e^{i\omega t}+C_2e^{-i\omega t}$ with $C_2=C_1^*$ to $A\cos(\omega t+\varphi)$, or link [[Small oscillations and complex amplitudes#Complex amplitudes]]. Also note that the quadrant of $\varphi$ follows from the sign of $x(0)$.
+- [Graph] Plot $x(t)=A\cos(\omega t+\varphi)$, $\dot x/\omega$ and $\ddot x/\omega^2$ on shared axes for two periods. This shows the quarter-period phase shifts and that acceleration is opposite to displacement.
+- [Manim] Animate a point moving uniformly on a circle of radius $A$ next to a horizontal mass–spring system. The mass position equals the point's horizontal projection, and the trace of $x(t)$ unrolls to the right.
+- [Example] Add a numerical case, for example $m=\quantity{0.5}{kg}$, $k=\quantity{200}{N/m}$, $x(0)=\quantity{0.03}{m}$, $\dot x(0)=\quantity{0.8}{m/s}$, and compute $A$, $\varphi$, $T$ and $E$.
+=== 02 Physics/01 Classical Mechanics/04 Oscillations/04.03 Energy Balance of the Simple Oscillator.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct; the averages and the classical probability density come without the averaging step or the normalization.
+- [Simplify] Show $\langle\sin^2\rangle=\langle\cos^2\rangle=1/2$ (they sum to 1 and are equal by symmetry). Derive $P(x)$ explicitly from $v=\omega\sqrt{A^2-x^2}$ and the normalization over a half-period, $\int_{-A}^{A}dx/(\pi\sqrt{A^2-x^2})=1$.
+- [Graph] Panel 1: plot $K(t)/E=\sin^2\omega t$ and $U(t)/E=\cos^2\omega t$ over one period, with a dashed line at $1/2$. Panel 2: plot $P(x)A$ against $x/A\in(-1,1)$ to show the divergence at the turning points.
+- [Correctness] The phase is written $\signal{\phi}$ here but $\signal{\varphi}$ in 04.02. Use one symbol across the chapter.
+- [Intuition] Add one sentence on why $P(x)$ matters later: it is the classical limit that the quantum ground state does not resemble but highly excited states approach.
+=== 02 Physics/01 Classical Mechanics/04 Oscillations/04.04 Harmonic Approximation for Small Oscillations.md
+priority: medium
+graph: yes
+manim: no
+summary: Accurate and concise; the anharmonic period series appears without explanation and there is no non-pendulum example.
+- [Graph] Panel 1: plot $1-\cos\theta$ against $\theta^2/2$ for $\theta\in[-\pi,\pi]$. Panel 2: plot $T(\theta_0)/T_0$ (exact elliptic value against the two-term series) for $\theta_0\in[0,170^\circ]$, so the reader sees how far "small angle" goes. The 10% error is near $\theta_0\approx65^\circ$.
+- [Example] Add a non-mechanical-spring example of $\omega=\sqrt{U''(x_0)/m}$, for example the Morse potential ($\omega=\sqrt{2U_0/(ma^2)}$, cross-link 03.14 Exercise 9) or a mass between two stretched strings.
+- [Simplify] For the amplitude series, say where it comes from (expand the elliptic-integral period, see 04.13) and give a number: at $\theta_0=30^\circ$ the correction is about $1.7\%$.
+- [Intuition] Say what happens when $U''(x_0)=0$ (quartic minimum, period depends on amplitude) and when $U''<0$ (exponential runaway, 04.08 inverted pendulum).
+=== 02 Physics/01 Classical Mechanics/04 Oscillations/04.05 Phase Space of the Harmonic Oscillator.md
+priority: medium
+graph: yes
+manim: yes
+summary: Mathematically sound but jumps quickly to action–angle language; the Liouville remark is imprecise.
+- [Correctness] "The area of the ellipse stays constant under Hamiltonian flow" mixes up two facts. Each ellipse is invariant because energy is conserved. Liouville's theorem concerns the area of an arbitrary region of initial conditions. Rephrase, for example as "a patch of initial conditions rotates and keeps its area".
+- [Graph] Plot the phase portrait in scaled variables $(x,\,p/(m\omega))$ with three energy levels $E,2E,3E$. Add direction arrows (clockwise) and a marked initial point.
+- [Manim] Animate a cloud of about 30 initial points in a small square moving under the flow. In scaled coordinates it rotates rigidly, so its area is visibly preserved. Show one point's projection onto the $x$ axis as the time series $x(t)$.
+- [Simplify] Before action–angle variables, add one sentence of motivation: $J$ is the ellipse area divided by $2\pi$, and it is the quantity that stays fixed under slow (adiabatic) parameter changes.
+=== 02 Physics/01 Classical Mechanics/04 Oscillations/04.06 Damped Oscillator.md
+priority: medium
+graph: yes
+manim: no
+summary: The physics is correct and clear, but the existing graph compares curves with different initial conditions, and the regimes lack an intuitive explanation.
+- [Correctness] Fig. 4.1 is misleading. The curves start at different amplitudes (1, 1, 0.55) with different initial slopes, and the "overdamped" curve is a single exponential. Redraw all three with the same $\omega_0$ and the same initial conditions $x(0)=1$, $\dot x(0)=0$. For example, with $\omega_0=1$ use $\gamma=0.2$, $\gamma=1$ ($(1+t)e^{-t}$) and $\gamma=2$ (the full two-exponential solution).
+- [Graph] Overlay the envelope $\pm e^{-\gamma t}$ on the underdamped curve, and add a second plot of energy $E(t)/E_0$ on a log scale to show the decay rate $2\gamma$.
+- [Intuition] Explain the three regimes physically by comparing two timescales, the decay time $1/\gamma$ and the oscillation period $2\pi/\omega_0$. Underdamping means many oscillations fit inside one decay time.
+- [Simplify] Give the general critically and overdamped solutions with constants set by $x(0)$ and $\dot x(0)$. Note that this chapter uses $\gamma=b/(2m)$ while [[Free, damped, and driven oscillator calculations]] uses $\gamma=b/m$, and put a warning callout in both notes.
+=== 02 Physics/01 Classical Mechanics/04 Oscillations/04.07 Driven Oscillator and Resonance.md
+priority: medium
+graph: yes
+manim: yes
+summary: Correct and fairly complete, but the steady-state amplitude and phase are stated rather than derived, and resonance has no curve.
+- [Simplify] Derive $A(\Omega)$ and $\tan\delta$ in a few lines with the complex trial solution $\tilde x=\tilde A e^{i\Omega t}$, so that $\tilde A=(F_0/m)/(\omega_0^2-\Omega^2+2i\gamma\Omega)$. Modulus and argument give both results at once.
+- [Graph] Plot $A(\Omega)k/F_0$ against $\Omega/\omega_0\in[0,2]$ for $Q=1,3,10$, and the phase $\delta(\Omega)$ in a second panel. Mark $\Omega_r$ and the $\pi/2$ crossing at $\omega_0$.
+- [Manim] Animate the start-up: plot $x(t)$ (transient plus steady state) for drive at $\Omega=\omega_0$ and at $\Omega=1.3\,\omega_0$. A rotating phasor diagram shows the displacement phasor settling at $\delta=\pi/2$ or near $\pi$ behind the force phasor.
+- [Intuition] Explain the three limits: $\Omega\ll\omega_0$ (stiffness-controlled, $A\approx F_0/k$, in phase), $\Omega=\omega_0$ (damping-controlled), and $\Omega\gg\omega_0$ (inertia-controlled, $A\approx F_0/(m\Omega^2)$, antiphase).
+- [Structure] The final section repeats material from earlier in the note. Merge it into the transient paragraph, and give the zero-damping resonant solution $x=(F_0t/(2m\omega_0))\sin\omega_0t$ explicitly.
+=== 02 Physics/01 Classical Mechanics/04 Oscillations/04.08 Advanced Examples of Oscillators.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct, but the Cavendish section is purely descriptive, without the equation that turns the measurement into $G$.
+- [Example] Add the Cavendish relations. The torsion constant is $\kappa=4\pi^2I/T^2$ from the period, and torque balance gives $\kappa\theta=2\,GMm\,(L/2)/r^2$, so $G=2\pi^2 L r^2\theta/(MT^2)$ with $I=2m(L/2)^2$. Include typical numbers to show how small $\theta$ is.
+- [Graph] Plot $\theta(t)$ for the inverted pendulum with $\theta(0)=0.01$, $\dot\theta(0)=0$ ($\theta=0.01\cosh(t/\tau)$), next to the stable pendulum $\theta=0.01\cos(t/\tau)$, on $t/\tau\in[0,5]$.
+- [Intuition] Explain that $\tau$ for the inverted rod has the same form as the period scale of the hanging rod, with the sign of the restoring torque reversed. Mention the practical consequence (balancing a broom needs reaction time $\lesssim\tau\approx0.3\unit{s}$ for $L=\quantity{1}{m}$).
+=== 02 Physics/01 Classical Mechanics/04 Oscillations/04.09 Simple and Compound Pendulums.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct but very terse; it lacks a worked compound-pendulum example and the reduced-length idea is not developed.
+- [Example] Work the uniform rod pivoted at one end: $I=ML^2/3$, $d=L/2$, $T=2\pi\sqrt{2L/(3g)}$, $\ell_{\mathrm{red}}=2L/3$. Compare it with a simple pendulum of the same length.
+- [Graph] Using the parallel-axis theorem $I=I_G+Md^2$, plot $T(d)/(2\pi\sqrt{k_G/g})$ against $d/k_G$ for $d\in(0,4k_G]$. The plot shows the minimum at $d=k_G$ and that two pivot distances give the same period (Kater's reversible pendulum).
+- [Simplify] Derive the compound-pendulum equation in one line from $\tau=-Mgd\sin\theta$ about the pivot, and say that the simple pendulum is the special case $I=Md^2$.
+=== 02 Physics/01 Classical Mechanics/04 Oscillations/04.10 Superposition of Oscillations.md
+priority: medium
+graph: yes
+manim: yes
+summary: Correct formulas without derivations or pictures; the beat-period statement is hard to follow as written.
+- [Simplify] Derive the same-frequency sum with phasors: two vectors of lengths $A_1$ and $A_2$ at angle $\varphi$ add by the law of cosines. This makes both $A$ and $\psi$ obvious.
+- [Simplify] Rephrase the beats sentence plainly: the loudness pulses at the beat frequency $f_{\mathrm{beat}}=|f_1-f_2|$. Add an example: $440\unit{Hz}$ and $444\unit{Hz}$ give 4 beats per second.
+- [Graph] Plot $\cos(\omega_1t)+\cos(\omega_2t)$ with $\omega_1=10$ and $\omega_2=11$ for $t\in[0,4\pi]$, with the dashed envelope $\pm2|\cos(t/2)|$.
+- [Manim] Trace Lissajous figures for $x=\cos t$, $y=\cos(rt+\varphi)$ with $r=1$ (ellipse whose shape changes as $\varphi$ sweeps from 0 to $\pi$), $r=2$ and $r=3/2$. Show the figure closing for rational $r$.
+=== 02 Physics/01 Classical Mechanics/04 Oscillations/04.11 Frequency Response and Quality Factor.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct, but the bullet definitions of $Q$ are dense, and the bandwidth result is stated without derivation or a figure.
+- [Simplify] Lead with the most intuitive definition, $Q\approx2\pi\times$(stored energy)/(energy lost per cycle), or "the number of oscillations in one amplitude decay time divided by $\pi$". Then give the bandwidth form.
+- [Graph] Plot the normalized amplitude $A(\Omega)k/F_0$ against $\Omega/\omega_0\in[0.5,1.5]$ for $Q=5,20,100$, with the half-power level $A_{\max}/\sqrt2$ marked and the bandwidth $\Delta\Omega=\omega_0/Q$ annotated.
+- [Example] Add one numerical example: a $440\unit{Hz}$ tuning fork with $Q=10^3$ has a bandwidth of about $0.44\unit{Hz}$ and rings for about $Q/\pi\approx300$ cycles, roughly 0.7 s, before its amplitude falls by $1/e$.
+- [Structure] Move the phase paragraph next to the phase panel of the 04.07 graph, or link it there, to avoid repeating that note.
+=== 02 Physics/01 Classical Mechanics/04 Oscillations/04.12 Energy Balance of the Driven Oscillator.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct; the power formula and the Lorentzian approximation appear without intermediate steps.
+- [Simplify] Show both forms of the power. $\langle F\dot x\rangle=\tfrac12F_0\Omega A\sin\delta$ follows from averaging $\cos\Omega t\sin(\Omega t-\delta)$, and $\langle b\dot x^2\rangle=m\gamma\Omega^2A^2$ comes from damping. Then show that they agree using $\sin\delta=2\gamma\Omega A m/F_0$.
+- [Graph] Plot $\langle P\rangle/P_{\max}$ against $\Omega/\omega_0\in[0.8,1.2]$ for $\gamma/\omega_0=0.02$ and $0.05$. Overlay the Lorentzian approximation $\gamma^2/((\Omega-\omega_0)^2+\gamma^2)$ and mark the FWHM of $2\gamma$.
+- [Example] Make the building example quantitative: with $Q\approx30$, a ground acceleration amplitude of $0.05g$ at 1 Hz gives a static deflection $a/\omega_0^2\approx\quantity{1.2}{mm}$ and a resonant deflection of about $\quantity{3.7}{cm}$.
+=== 02 Physics/01 Classical Mechanics/04 Oscillations/04.13 Overview of Nonlinear Oscillators.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct and well chosen, but the claims about the Duffing period are not supported by any picture, and the elliptic-integral result has no motivation.
+- [Graph] Panel 1: plot the Duffing potential $\tfrac12x^2+\tfrac14\beta x^4$ for $\beta=-0.5,0,+0.5$ on $x\in[-2,2]$. Panel 2: plot $T(\theta_0)/T_0=2K(\sin(\theta_0/2))/\pi$ for $\theta_0\in[0,175^\circ]$ against the series $1+\theta_0^2/16$, with the 60° example marked at 1.073.
+- [Simplify] Show where the elliptic integral comes from: energy conservation gives $T=4\int_0^{\theta_0}d\theta/\dot\theta$, and the substitution $\sin(\theta/2)=k\sin u$ turns it into $K(k)$. Three lines are enough.
+- [Intuition] Explain the stiffening and softening result: a stiffer spring at large $x$ produces a larger restoring force, so the mass returns sooner and the period is shorter.
+- [Links] Link the Duffing first-order frequency shift $\omega\approx\omega_0+3\beta A^2/(8\omega_0)$, either by adding it here or by linking to perturbation-theory notes if they exist.
+=== 02 Physics/01 Classical Mechanics/04 Oscillations/04.14 Introduction to Coupled Oscillations.md
+priority: high
+graph: yes
+manim: yes
+summary: The normal modes are stated without derivation, and the beat behaviour, the most physical part, is only described in words.
+- [Simplify] Derive the modes by adding and subtracting the two equations. This gives $\ddot q_\pm+\omega_\pm^2q_\pm=0$ for $q_\pm=x_1\pm x_2$ directly and shows why the coordinates decouple.
+- [Example] Give the explicit solution for $x_1(0)=a$, $x_2(0)=0$, both at rest: $x_1=a\cos(\Delta t)\cos(\bar\omega t)$ and $x_2=a\sin(\Delta t)\sin(\bar\omega t)$, with $\bar\omega=(\omega_++\omega_-)/2$ and $\Delta=(\omega_--\omega_+)/2$. The energy swaps completely after $t=\pi/(2\Delta)$.
+- [Graph] Plot $x_1(t)$ and $x_2(t)$ for $k'/k=0.1$ over two full exchange cycles, with their envelopes.
+- [Manim] Animate two masses between three springs, the middle spring drawn thinner. Start with only mass 1 displaced, and let the motion pass back and forth while bar meters show $E_1$ and $E_2$.
+- [Intuition] Explain why the symmetric mode has frequency $\sqrt{k/m}$ (the middle spring is never stretched) and the antisymmetric mode is stiffer (the middle spring is stretched by twice the displacement on each side).
+=== 02 Physics/01 Classical Mechanics/04 Oscillations/04.15 Oscillators in Multiple Dimensions.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct; the trajectory classification is stated without showing how the phase difference shapes the ellipse.
+- [Graph] Plot the isotropic trajectories with $A_x=1$, $A_y=0.6$ and phase difference $\phi_y-\phi_x=0,\pi/4,\pi/2,3\pi/4$ on one set of axes.
+- [Simplify] Name the "further conserved quantities": the Fradkin tensor $A_{ij}=(p_ip_j+m^2\omega^2x_ix_j)/(2m)$, or simply the separate energies $E_x$ and $E_y$. Explain why they fix the ellipse orientation.
+- [Intuition] Contrast with Kepler. Both potentials give closed ellipses, but here the force centre is at the ellipse centre rather than at a focus. Link to Bertrand's theorem if a note exists.
+- [Links] The anisotropic Lissajous paragraph duplicates 04.10. Link there instead of restating it.
+=== 02 Physics/01 Classical Mechanics/04 Oscillations/04.16 Coupled Oscillators with Multiple Degrees of Freedom.md
+priority: medium
+graph: yes
+manim: yes
+summary: Correct eigenvalues and continuum limit, but the opening claim about energy transfer is wrong and the dispersion relation is missing.
+- [Correctness] "Three or more coupled oscillators exhibit energy transfer between modes" is wrong for this linear chain. The energy in each normal mode is separately conserved. Energy moves between masses, not between modes. Mode-to-mode transfer needs nonlinearity, as in Fermi–Pasta–Ulam.
+- [Simplify] Derive the chain dispersion relation $\omega(q)=2\sqrt{k/m}\,|\sin(qa/2)|$ from the trial solution $\eta_n\propto\sin(nqa)e^{i\omega t}$. Show that the three-mass eigenvalues are this relation sampled at $qa=j\pi/4$. This justifies the word "dispersion" in the TLDR.
+- [Graph] Panel 1: plot $\omega/\sqrt{k/m}$ against $qa\in[0,\pi]$, with the three allowed points of the three-mass chain marked and the linear long-wavelength asymptote $\omega=cq$. Panel 2: plot the mode shapes $\sin(jn\pi/4)$ as stem plots for $j=1,2,3$.
+- [Manim] Animate the three normal modes of the three-mass chain side by side, each at its own frequency, and then a general superposition that looks irregular.
+- [Simplify] Specify the continuum limit: $N\to\infty$ and $a\to0$ with the length $L=(N+1)a$ fixed and the tension $ka$ and density $m/a$ held finite.
+=== 02 Physics/01 Classical Mechanics/04 Oscillations/04.17 Oscillations Exercises.md
+priority: low
+graph: no
+manim: no
+summary: A well-graded exercise list; all checked results are correct.
+- [Structure] Add short results or hints for Exercises 5, 10 and 15, for example the Mathieu instability condition for Exercise 10, and normal modes at $\sqrt{k/m}$ and $\sqrt{3k/m}$ for Exercise 15.
+=== 02 Physics/01 Classical Mechanics/04 Oscillations/Free, damped, and driven oscillator calculations.md
+priority: high
+graph: yes
+manim: no
+summary: The algebra is correct, but the notation keeps switching and a damping convention conflicts with the chapter notes, which makes this lecture transcription hard to use.
+- [Correctness] The damping rate is defined as $\signal{\gamma}=\mechanical{b}/\mechanical{m}$, while 04.06, 04.07 and 04.11 use $\gamma=b/(2m)$. Every formula ($\omega=\sqrt{\omega_0^2-\gamma^2/4}$, $\omega_m=\sqrt{\omega_0^2-\gamma^2/2}$, $e^{-\gamma t/2}$) differs by that factor. Add a prominent callout, or convert to the chapter convention.
+- [Simplify] The complex frequency is first written $\signal{p}=\signal{\delta}+j\signal{\eta}$, renamed to $\signal{s}+j\signal{n}$, and $\signal{\delta}$ later becomes the phase lag. Use a single pair, for example $p=\omega_d+i\gamma/2$, from the start.
+- [Correctness] Time is written $\mechanical{t}$ in this note but plain $t$ in every other oscillation note. Wave speed is $\mechanical{c}$ here and $\signal{c}$ in 04.16. Align the macros with the semantic-group convention and keep $t$ uncoloured.
+- [Structure] Drop the transcription asides (the date discrepancy, the margin note about $c=\lambda f$ and $4\unit{m/s}$), and remove the self-link in "Response when the force is switched on".
+- [Graph] Replace the scanned "Resonant buildup" and "Slow modulation and beats" images with native plots. Plot $x_T=C[\cos\omega t-\cos\omega_0t]$ for $\omega=0.9\omega_0$, and $A\sin(\omega_0t)(1-e^{-\gamma t/2})$ for $\gamma=0.1\omega_0$, each with its envelope.
+=== 02 Physics/01 Classical Mechanics/04 Oscillations/Small oscillations and complex amplitudes.md
+priority: high
+graph: yes
+manim: no
+summary: Correct calculations buried among unrelated electromagnetism and coordinate-curl scratch work, with several broken internal links and a stability example that never states its conclusion.
+- [Correctness] Several internal links point to the wrong sections. "Simple harmonic motion" cites [[#Stability and the quadratic approximation]] for the cube potential; the target should be "Small tilt of the cube". "Complex amplitudes" and "Oscillator representations and energy" cite [[#Initial conditions for the oscillator]] for the amplitude triangle and for the $B_1,B_2$ definitions; those are in "Amplitude and phase form" and "Simple harmonic motion".
+- [Correctness] The amplitude is written $\signal{A}$ here but $\mechanical{A}$ in every chapter note (04.02, 04.03). Choose one semantic group for the amplitude.
+- [Example] Finish the cube-on-cylinder example. $U''(0)=mg(r-b)$, so the upright cube is stable only if $r>b$, that is, if the cylinder radius exceeds half the cube side. This is the physical result, and the note never says it.
+- [Structure] Move "Curl in cylindrical coordinates", "Electric circulation and induced emf", "Circular loop and changing flux", "Expanding the cylindrical basis", "Differentiating a vector field in cylindrical coordinates" and "Virtual work and the shortest path" to electromagnetism, vector-calculus or variational notes. Clean the Physical quantities table, which lists $\mechanical{k}$, $\mechanical{b}$, $\mechanical{R}$ and $T$ several times with different meanings and includes projectile and brachistochrone entries.
+- [Graph] Plot $U(\theta)/(mg)=(r+b)\cos\theta+r\theta\sin\theta$ for $\theta\in[-1,1]$, with $b=0.5$ and $r=1$ (minimum) against $r=0.3$ (maximum), to show the stability criterion.
+=== 02 Physics/01 Classical Mechanics/05 Particle Systems, Collisions, and Momentum/05.00 Particle Systems, Collisions, and Momentum.md
+priority: low
+graph: no
+manim: no
+summary: A clear chapter hub with correct summary formulas.
+- [Links] Add links for 05.09 (restitution), 05.10 (König), 05.11 (lab-frame scattering) and 05.12 (full rocket derivation) to the summary list.
+=== 02 Physics/01 Classical Mechanics/05 Particle Systems, Collisions, and Momentum/05.01 Motivation for Studying Particle Systems.md
+priority: low
+graph: no
+manim: no
+summary: A short, correct motivational note.
+- [Example] Add one concrete illustration of the CM/internal split, for example a spinning thrown wrench whose CM follows a parabola while the wrench rotates about it. Link to 05.02 for the explosion example.
+=== 02 Physics/01 Classical Mechanics/05 Particle Systems, Collisions, and Momentum/05.02 Center of Mass of a System.md
+priority: medium
+graph: yes
+manim: yes
+summary: Correct; the internal-force cancellation is asserted rather than shown, and there is no numerical example of a centre of mass.
+- [Simplify] Show the cancellation explicitly: $\sum_i\sum_{j\ne i}\vec F_{ij}=\sum_{i<j}(\vec F_{ij}+\vec F_{ji})=\vec 0$ by Newton's third law.
+- [Example] Add a discrete example (cross-link 05.13 Exercise 1) and one continuous one, such as a uniform rod or a semicircular wire with $y_{\mathrm{cm}}=2R/\pi$. Point out that the CM can lie outside the body.
+- [Graph] Plot the explosion example: the original parabola $y=x\tan\alpha-gx^2/(2v_0^2\cos^2\alpha)$ with two fragment parabolas starting at the burst point and the mass-weighted midpoint marked at several times, lying on the original curve.
+- [Manim] Animate the projectile flying, bursting into two unequal fragments that separate along different parabolas, and a CM dot that continues smoothly along the original trajectory.
+=== 02 Physics/01 Classical Mechanics/05 Particle Systems, Collisions, and Momentum/05.03 Total Momentum.md
+priority: medium
+graph: no
+manim: no
+summary: Correct but brief; the rifle example has no numbers and impulse is never mentioned.
+- [Example] Add numbers to the rifle example, for example $m=\quantity{10}{g}$, $v=\quantity{800}{m/s}$, $M=\quantity{4}{kg}$ giving $V=\quantity{2}{m/s}$. Compare the kinetic energies ($3.2\unit{kJ}$ against $8\unit{J}$) to show that equal momenta do not mean equal energies.
+- [Intuition] Introduce impulse $\vec J=\int\vec F_{\mathrm{ext}}dt=\Delta\vec P$, and say why momentum is approximately conserved in short collisions even with external forces: the external impulse scales with $\Delta t$.
+- [Simplify] The proof assumes constant total mass. Add a one-line pointer that variable-mass systems need the treatment in 05.08 and 05.12.
+=== 02 Physics/01 Classical Mechanics/05 Particle Systems, Collisions, and Momentum/05.04 Elastic and Inelastic Collisions in One Dimension.md
+priority: medium
+graph: yes
+manim: no
+summary: Clear and correct, with good limiting cases; the derivation of the kinetic-energy loss is skipped.
+- [Simplify] Derive $\Delta K_{\mathrm{loss}}=\tfrac12\mu(v_1-v_2)^2$ via König's theorem (link 05.10): the CM kinetic energy survives, and all the relative kinetic energy is lost.
+- [Graph] Plot $v_1'/v_1$ and $v_2'/v_1$ against $m_2/m_1$ on a log axis from 0.01 to 100 for a stationary target, with the equal-mass exchange point and the wall and light-target limits marked.
+- [Example] Add a numerical ballistic-pendulum case (or link 05.06), and note what fraction of the bullet's kinetic energy survives, $m/(m+M)$, which is about 1%.
+- [Structure] Merge the trailing "lighter body can rebound" section into the limiting cases or into a worked-example subsection with a heading in the same style.
+=== 02 Physics/01 Classical Mechanics/05 Particle Systems, Collisions, and Momentum/05.05 Collisions in Two Dimensions and the Center-of-Mass Frame.md
+priority: high
+graph: yes
+manim: yes
+summary: Too terse. It states the CM-frame results and the equal-mass right-angle result without derivation or a diagram, so the most visual topic in the chapter has no picture.
+- [Simplify] Derive the CM momenta: $\vec v_1^{\mathrm{CM}}=\vec v_1-\vec V=(m_2/M)\vec v_{\mathrm{rel}}$, so $\vec p_1^{\mathrm{CM}}=\mu\vec v_{\mathrm{rel}}$. Then show the equal-mass right-angle result from $v_1^2=v_1'^2+v_2'^2+2\vec v_1'\cdot\vec v_2'$.
+- [Graph] Draw the velocity-space construction: the vector $\vec V$, a circle of radius $|\vec u_1|=(m_2/M)v_1$ centred at the tip of $\vec V$, and outgoing lab velocities for a chosen $\theta^*$. Repeat for $m_1<m_2$ and $m_1>m_2$ to show the maximum lab angle.
+- [Manim] Animate the same elastic collision twice side by side. In the lab frame, the target is at rest and the balls leave at different angles. In the CM frame, the balls approach head-on and leave back-to-back rotated by $\theta^*$. A final overlay shows that adding $\vec V$ maps one picture onto the other.
+- [Example] Work one numerical case, for example $m_1=m_2$, $v_1=\quantity{2}{m/s}$, $\theta^*=60^\circ$, giving lab angles of $30^\circ$ and $-60^\circ$ and speeds of $\sqrt3$ and $1\unit{m/s}$.
+=== 02 Physics/01 Classical Mechanics/05 Particle Systems, Collisions, and Momentum/05.06 Worked Examples of Collisions.md
+priority: medium
+graph: no
+manim: no
+summary: Correct worked examples; the Newton's cradle explanation oversimplifies the conditions.
+- [Intuition] The Newton's-cradle claim that the result "follows from applying the equal-mass elastic collision equations to successive pairs, assuming short contact times" is only an idealization. It assumes separate, sequential binary collisions (tiny gaps between the balls). Touching balls need a wave or dispersion model, and real cradles show small residual motion.
+- [Example] Give the explosion example numbers, for example $M=\quantity{2}{kg}$ at $\quantity{20}{m/s}$ at the top of its arc. Compute the explosion energy released, $\Delta K=\tfrac12(M/2)(2v)^2-\tfrac12Mv^2=\tfrac12Mv^2$, to show that internal forces add kinetic energy without changing the momentum.
+- [Simplify] In the ballistic pendulum, add a line on why the two stages must be separated: momentum, not energy, is conserved during impact, and energy, not momentum, during the swing, because the string tension and gravity give an external impulse.
+=== 02 Physics/01 Classical Mechanics/05 Particle Systems, Collisions, and Momentum/05.07 Angular Momentum.md
+priority: medium
+graph: no
+manim: no
+summary: Correct; the derivative step is skipped, and the system-level theorem does not explain why internal torques cancel.
+- [Simplify] Show $\dot{\vec L}=\dot{\vec r}\times\vec p+\vec r\times\dot{\vec p}=\vec r\times\vec F$, since $\vec v\times m\vec v=0$. For systems, add the condition that internal torques cancel only for central pair forces (strong third law), and link the internal-torque section of the rocket note.
+- [Example] Make the skater quantitative: arms out $I=\quantity{3.5}{kg\,m^2}$, $\omega=\quantity{2}{rad/s}$; arms in $I=\quantity{1.0}{kg\,m^2}$ gives $\omega=\quantity{7}{rad/s}$. Show that the kinetic energy rises by the factor 3.5 and that the extra energy comes from the work done by the arms.
+- [Intuition] Point out that $\vec L$ depends on the reference point, even for straight-line motion, where $|\vec L|=mvd$ with impact parameter $d$. This removes the common confusion that only rotating bodies have angular momentum.
+=== 02 Physics/01 Classical Mechanics/05 Particle Systems, Collisions, and Momentum/05.08 Variable-Mass Systems and the Rocket Equation.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct and concise; it relies on 05.12 for the derivation without linking it and has no picture of the logarithmic penalty.
+- [Links] Link [[05.12 Full Derivation of the Rocket Equation]] at "The momentum balance … gives", and say that $u$ here equals $v_{\mathrm{ex}}$ in the lecture notes.
+- [Graph] Plot $\Delta v/u=\ln(m_0/m_f)$ for $m_0/m_f\in[1,30]$, with horizontal reference lines at the LEO requirement ($\approx9.4\unit{km/s}$ divided by $u=3$ and by $4.5\unit{km/s}$) to show why staging is needed.
+- [Intuition] Explain why $F=\mathrm d(mv)/\mathrm dt$ applied naively to the rocket alone is wrong: the system boundary moves, and the exhaust carries momentum away.
+- [Example] Add a two-stage comparison (link 05.13 Exercise 14) to show numerically how staging beats a single stage with the same overall mass ratio.
+=== 02 Physics/01 Classical Mechanics/05 Particle Systems, Collisions, and Momentum/05.09 Coefficient of Restitution.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct; the energy-loss formula and the total bounce time are given without derivation.
+- [Simplify] Derive $\Delta K=-\tfrac12\mu(v_1-v_2)^2(1-e^2)$ from König's theorem: the relative speed is scaled by $e$, so the relative kinetic energy is scaled by $e^2$.
+- [Simplify] Show the bounce-time series: $T=t_0+2t_0(e+e^2+\cdots)=t_0(1+e)/(1-e)$ with $t_0=\sqrt{2h_0/g}$.
+- [Graph] Plot the bouncing-ball height $y(t)$ for $e=0.8$ and $h_0=\quantity{1}{m}$ through about 12 bounces, with the accumulation time $T_{\mathrm{tot}}=9\,t_0\approx\quantity{4.06}{s}$ marked.
+- [Example] Measure $e$ from rebound heights, $e=\sqrt{h_1/h_0}$, and give typical values: a basketball has $e\approx0.8$ and a steel ball on steel $e\approx0.9$.
+=== 02 Physics/01 Classical Mechanics/05 Particle Systems, Collisions, and Momentum/05.10 Kinetic Energy in the Center-of-Mass Frame.md
+priority: medium
+graph: no
+manim: no
+summary: Correct; the proof is given in words only and there is no example.
+- [Simplify] Write out the expansion: $\tfrac12\sum m_i|\vec V+\vec v_i'|^2=\tfrac12MV^2+\vec V\cdot\sum m_i\vec v_i'+\tfrac12\sum m_iv_i'^2$, where the middle term is zero by the definition of the CM.
+- [Example] Two-body case: $K_{\mathrm{rel}}=\tfrac12\mu v_{\mathrm{rel}}^2$. Use it to rederive the perfectly inelastic loss in one line (link 05.04 and 05.09), and to show why colliders use head-on beams: a fixed target wastes CM energy.
+- [Intuition] Give a rolling-wheel example: $K=\tfrac12Mv^2+\tfrac12I_{\mathrm{cm}}\omega^2$ is König's theorem for a rigid body. Link the rigid-body chapter.
+=== 02 Physics/01 Classical Mechanics/05 Particle Systems, Collisions, and Momentum/05.11 Collisions with a Stationary Target in the Laboratory Frame.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct formulas, but $\tan\theta_{\mathrm{lab}}$ and the recoil energy are stated without derivation and without the key consequence of a maximum scattering angle.
+- [Simplify] Derive $\tan\theta_{\mathrm{lab}}$ from the components $\vec v_1'=\vec V+\vec u_1'$ in two lines. Derive $K_2'$ from $|\vec v_2'|=2|\vec u_2|\sin(\theta_{\mathrm{CM}}/2)$ (isosceles triangle).
+- [Graph] Plot $\theta_{\mathrm{lab}}$ against $\theta_{\mathrm{CM}}\in[0,\pi]$ for $m_1/m_2=0.5,1,2$. For $m_1>m_2$ the curve has a maximum at $\sin\theta_{\max}=m_2/m_1$; for equal masses $\theta_{\mathrm{lab}}=\theta_{\mathrm{CM}}/2$.
+- [Example] For the moderator, estimate the number of head-on-average collisions needed to go from $2\unit{MeV}$ to $0.025\unit{eV}$. With the average logarithmic energy loss $\xi\approx1$ for hydrogen and $0.16$ for carbon, this is about 18 and 115 collisions.
+=== 02 Physics/01 Classical Mechanics/05 Particle Systems, Collisions, and Momentum/05.12 Full Derivation of the Rocket Equation.md
+priority: medium
+graph: yes
+manim: no
+summary: A careful, correct derivation; the gravity-loss result needs a picture and an explicit burnout condition.
+- [Graph] Plot $v(t)$ for the constant-burn rocket with $u=\quantity{2.6}{km/s}$, $m_0=2.97\times10^6\unit{kg}$, $\dot m_0=1.3\times10^4\unit{kg/s}$ up to burnout ($m=7.5\times10^5\unit{kg}$, $t\approx170\unit{s}$), with and without the $-gt$ term, to visualize the gravity loss.
+- [Intuition] Add the lift-off condition $u\dot m_0>m_0g$: thrust must exceed the initial weight, or the rocket does not leave the pad. This is implicit in the formula and worth stating.
+- [Simplify] Shorten the "Source sign" callout to one sentence: "with $\vec u$ pointing backward, $\vec u\,\dot m$ points forward because $\dot m<0$".
+=== 02 Physics/01 Classical Mechanics/05 Particle Systems, Collisions, and Momentum/05.13 Particle Systems and Collisions Exercises.md
+priority: low
+graph: no
+manim: no
+summary: A well-structured exercise list; all checked results are correct.
+- [Structure] Add brief results or hints for Exercises 5, 9 and 15, for example: Exercise 9, $\vec L_{\mathrm{rel}}=\mu\vec r\times\dot{\vec r}$ is constant, so $\vec r\perp\vec L$.
+=== 02 Physics/01 Classical Mechanics/05 Particle Systems, Collisions, and Momentum/Momentum, impulse, and collision calculations.md
+priority: high
+graph: yes
+manim: no
+summary: Correct numerical work, but the title says momentum while the note opens with circular-motion energy problems and ends with rotational kinematics and moment of inertia, and it has broken headings.
+- [Structure] Move "Chapter 10" (peg pendulum, hill crest), "Sled at constant speed", "Energy" (spring and loop), "Rotational kinematics", "Rotational kinematics examples" and "Moment of inertia" to the energy and rotation notes. Fix the "##### )" heading, and merge the duplicated inelastic-collision example, which appears twice.
+- [Graph] Under "Impulse–momentum theorem", add a native plot of a realistic impact force $F(t)$ (for example a half-sine pulse of $0.2\unit{s}$ for the airbag case), with a rectangle of height $F_{\mathrm{avg}}=4000\unit{N}$ of equal area. This shows what "average force" means.
+- [Intuition] For the airbag example, say why a longer stopping time helps: the same $\Delta p=\quantity{800}{kg\,m/s}$ spread over more time gives a smaller force. Compare with a $0.01\unit{s}$ stop on concrete, which gives $80{,}000\unit{N}$. Also note that the force from the bag is $F_{\mathrm{avg}}+mg$.
+- [Example] Finish the homework recoil sketch, or remove it. As written it gives no numbers and no result.
+- [Simplify] Apply \mechanical{} macros consistently. Most symbols in this note ($m$, $v$, $p$, $J$, $x_{\mathrm{CM}}$) are uncoloured, while a few are wrapped.
+=== 02 Physics/01 Classical Mechanics/05 Particle Systems, Collisions, and Momentum/Rocket momentum, centers of mass, and internal torque.md
+priority: high
+graph: no
+manim: no
+summary: The derivations are correct, but the note interleaves rocket, centre-of-mass, angular-momentum and projectile-drag scratch work, and many internal links point to the wrong sections.
+- [Correctness] Several internal links point to the wrong sections. "Rocket in gravity" sends the momentum balance to [[#Collisions]]; it should go to "Rocket momentum balance". "Momentum carried by rocket exhaust" cites [[#Center of mass of a semicircular wire]] for the $\alpha v_{\mathrm{ex}}$ term. "Swept area…" cites [[#Evaluating the center-of-mass integral]] for the equal-area result; it should cite "Central gravity and equal areas". The three links to [[Projectile motion with linear and quadratic drag#Momentum of a system]] for the range result should point to "#Range with weak linear drag".
+- [Correctness] The dangling text "…on the section on Momentum of a system and 27." is a transcription remnant. Also, $\mechanical{\alpha}$ is used both for the mass-loss rate and for angular acceleration in the same note. Rename one of them.
+- [Structure] Move the two weak-drag range sections and "Comparing the range formula with scratch work" to the projectile-drag note. Order the rest as: rocket balance → rocket in gravity → CM definition → rod, wire and cone → angular momentum → internal torques → moment of inertia.
+- [Simplify] In the semicircular-wire section, drop the misleading "$\simeq2R/3$". Instead give $2R/\pi\approx0.64R$, and contrast it with the semicircular lamina, $4R/(3\pi)\approx0.42R$, which the sketch actually introduces with $\sigma$.
+- [Intuition] Under "Cancellation of internal torques", add one sentence noting that the cancellation requires the strong form of the third law (forces along the line joining the particles). Magnetic forces between moving charges are a counterexample.
+=== 02 Physics/01 Classical Mechanics/06 Gravitation and Motion Under Central Forces/06.00 Gravitation and Motion Under Central Forces.md
+priority: low
+graph: no
+manim: no
+summary: A clear chapter hub with correct summary formulas.
+- [Links] Link 06.03 (field and potential) and the other chapter notes not listed in the summary, so that every section is reachable from the hub.
+=== 02 Physics/01 Classical Mechanics/06 Gravitation and Motion Under Central Forces/06.01 From Kepler to Newton.md
+priority: low
+graph: no
+manim: no
+summary: An accurate, readable historical overview.
+- [Intuition] Add Newton's Moon test as the quantitative core of the "unification" paragraph: $g(R_E/r_{\mathrm{Moon}})^2\approx9.8/60^2\approx\quantity{2.7\times10^{-3}}{m/s^2}$ matches the Moon's centripetal acceleration $4\pi^2r/T^2$.
+=== 02 Physics/01 Classical Mechanics/06 Gravitation and Motion Under Central Forces/06.02 Law of Gravitation.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct but bare; the shell theorem is stated without justification or consequences, and there is no example.
+- [Graph] Plot $|g(r)|/g_{\mathrm{surface}}$ for a uniform sphere: linear $r/R$ inside and $(R/r)^2$ outside, for $r/R\in[0,4]$. Optionally overlay a realistic dense-core profile to show that the interior result depends on the density.
+- [Simplify] Call the statement the shell theorem. Mention that it follows from Gauss's law $\oint\vec g\cdot d\vec A=-4\pi GM_{\mathrm{enc}}$ or from direct integration, and that it holds only for spherically symmetric distributions.
+- [Example] Add numbers: the force between two $\quantity{1}{kg}$ masses $\quantity{1}{m}$ apart is $6.7\times10^{-11}\unit{N}$. Derive $g=9.81\unit{m/s^2}$ from $M_E$ and $R_E$, and show how $g$ falls with altitude at the ISS ($h=400\unit{km}$, about $0.89g$).
+- [Simplify] Explain that $-mg\hat\jmath$ is the local flat-Earth version of $-GMm\hat r/r^2$ with $\hat r\approx\hat\jmath$ (vertical up).
+=== 02 Physics/01 Classical Mechanics/06 Gravitation and Motion Under Central Forces/06.03 Gravitational Field and Gravitational Potential.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct but minimal; it defines field and potential without showing the gradient relation, superposition, or a picture.
+- [Simplify] Verify $\vec g=-\nabla\Phi$ in one line: $-\partial_r(-GM/r)\hat r=-GM\hat r/r^2$. Add that potentials add as scalars for several masses, which is the main practical reason to use $\Phi$.
+- [Graph] Make a 2D contour plot of $\Phi(x,y)=-GM_1/|\vec r-\vec r_1|-GM_2/|\vec r-\vec r_2|$ for an Earth–Moon-like mass ratio (81:1) on a plane through both bodies, with the field direction arrows overlaid. Optionally add a radial 1D plot of $\Phi(r)$ for a single uniform sphere (parabolic inside, $-1/r$ outside).
+- [Intuition] Connect to 03.13: the potential energy is $U=m\Phi$, and the escape condition is $\tfrac12v^2+\Phi=0$, so $v_{\mathrm{esc}}=\sqrt{-2\Phi}$ does not depend on the test mass.

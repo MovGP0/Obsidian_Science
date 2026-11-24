@@ -24,7 +24,7 @@ Communication in any language requires the proper use of its vocabulary. Thus, t
   $$
 
 - **Rigid body.** A solid object in which the intermolecular forces are so strong that when external forces are exerted, the deformation is small enough to be neglected. For a rigid body, therefore, the distance between any two points of the object will not change over time. Our focus in this book will be on the rotational motion of rigid bodies.
-- **Rotational motion about a fixed axis of rotation.** This is a type of motion in which an object moves about an axis that does not change its orientation (direction) in space. Even if the axis of rotation moves linearly, it is considered fixed with respect to rotational motion as long as its orientation is not changing. There are two types of rotational motion: (1) orbital rotational motion and (2) spin rotational motion. It is possible for an object to exhibit both orbital and spin rotational motion as is the case of the Earth, for example, which executes orbital motion around the sun while also spinning about its own axis every 24 hours, on average. Rotational motion can be periodic but does not have to be. Rotational motion can also be executed by point masses, which we assume have infinitely small dimensions, as well as extended solid bodies whose dimensions cannot be neglected.
+- **Rotational motion about a fixed axis of rotation.** This is a type of motion in which an object moves about an axis that does not change its orientation (direction) in space. Even if the axis of rotation moves linearly, it is considered fixed with respect to rotational motion as long as its orientation is not changing. There are two types of rotational motion: (1) orbital rotational motion and (2) spin rotational motion. It is possible for an object to exhibit both orbital and spin rotational motion as is the case of the Earth, for example, which executes orbital motion around the sun while also spinning about its own axis once per sidereal day (about 23 h 56 min). Rotational motion can be periodic but does not have to be. Rotational motion can also be executed by point masses, which we assume have infinitely small dimensions, as well as extended solid bodies whose dimensions cannot be neglected.
 
 As we will see shortly, rotational motion cannot be quantified without specifying a rotation axis – the axis of rotation provides a reference for the physical quantities of rotational motion, both for extended rigid bodies and point masses. Just like in translational motion where one can pick any coordinate system with respect to which the motion can be analyzed, in rotational motion, one can pick any axis of rotation. However, once we choose an axis of rotation, we must stick to that choice for our calculations to be consistent. In this book, when an object is executing spin rotational motion, we will choose for the axis of rotation the straight line through all fixed points of the body around which all other points of the body move in circles (i.e., rotate around). Why? Because this will greatly simplify our calculations. As an example of this choice of axis of rotation, think about a spinning disk that is constrained to rotate about its center as shown in Figure 1.1a (e.g., a vinyl record rotating on a record player). As this disk is spinning, the center of the disk is fixed, while all the other points of the disk move in circles. Thus, the axis of rotation we choose in this case, as shown in Figure 1.1a, will be the line that goes through the center of the disk and is perpendicular to the plane of the disk.
 
@@ -66,7 +66,7 @@ elements: [
 ]
 ```
 
-**Fig. 1.1a** A disk spins about an axis perpendicular to its plane through its fixed center O. Points A and B follow circular paths with radii $r_A$ and $r_B$. Drag to rotate the plot.
+**Fig. 1.1a** A disk spins about an axis perpendicular to its plane through its fixed center O. Points A and B follow circular paths with radii $\mechanical{r}_A$ and $\mechanical{r}_B$. Drag to rotate the plot.
 
 ```graph3d
 bounds: [-1.52, 0.9, 1.52, -0.9]
@@ -112,4 +112,4 @@ As mentioned in the preface, in this book, we focus on rotation about a *fixed a
 | $\signal{f}$ | $\unit{Hz}$ | Frequency | Number of repetitions per unit time. |
 | $\Delta t$ | $\unit{s}$ | Time interval | Duration over which the repetitions are counted. |
 | $N$ | 1 | Number of repetitions | Count of repetitions within the time interval. |
-| $r_A, r_B$ | $\unit{m}$ | Orbital radii | Distances of points A and B from the axis of rotation in Fig. 1.1. |
+| $\mechanical{r}_A, \mechanical{r}_B$ | $\unit{m}$ | Orbital radii | Distances of points A and B from the axis of rotation in Fig. 1.1. |

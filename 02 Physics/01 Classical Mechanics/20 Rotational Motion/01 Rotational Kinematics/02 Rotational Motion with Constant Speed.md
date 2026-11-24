@@ -344,7 +344,7 @@ elements: [
 
 ### Angular Velocity: Cross Products and the Right-Hand Rule
 
-Let’s now be a little more mathematically rigorous. The fact that we have to use the right-hand rule when finding the direction of $\mechanical{\vec{\omega}}$ implies that there is a cross product of two vectors somewhere. Since we can describe the speed of an object undergoing rotational motion using either the angular velocity or *both* the linear velocity and the radius of the circle this object traverses, it is reasonable to assume there is a conversion between the velocities. Let’s examine a point on a rotating disk, such as point $P$ in Figure 1.8a, and define the position vector $\mechanical{\vec{r}}$ to be the vector that goes from the axis of rotation to the point. Then the magnitude of $\mechanical{\vec{r}}$ is the radius of the circle that this point transcribes. The angular velocity vector can be defined as:
+Let’s now be a little more mathematically rigorous. The fact that we have to use the right-hand rule when finding the direction of $\mechanical{\vec{\omega}}$ implies that there is a cross product of two vectors somewhere. Since we can describe the speed of an object undergoing rotational motion using either the angular velocity or *both* the linear velocity and the radius of the circle this object traverses, it is reasonable to assume there is a conversion between the velocities. Let’s examine a point on a rotating disk, such as point $P$ in Figure 1.8a, and define the position vector $\mechanical{\vec{r}}$ to be the vector that goes from the axis of rotation to the point. Then the magnitude of $\mechanical{\vec{r}}$ is the radius of the circle that this point transcribes. The linear velocity of the point is related to the angular velocity by:
 
 $$
 \mechanical{\vec{v}} = \mechanical{\vec{\omega}} \times \mechanical{\vec{r}}. \tag{1.14}
@@ -374,10 +374,10 @@ $$
 \mechanical{v} = \mechanical{\omega} \mechanical{r} \sin \mechanical{\phi} = \mechanical{\omega} \mechanical{r} \sin \left( \frac{\pi}{2} \right) = \mechanical{\omega} \mechanical{r}. \tag{1.16}
 $$
 
-In a similar way, $d\mechanical{\vec{\theta}}$ is perpendicular to $\mechanical{\vec{r}}$. Then, starting from Equation (1.15), we get for the magnitude $d\mechanical{s}$:
+In a similar way, $d\mechanical{\vec{\theta}}$ is perpendicular to $\mechanical{\vec{r}}$. Then, starting from Equation (1.15), we get for the magnitude $d\mechanical{S}$:
 
 $$
-d\mechanical{s} = \mechanical{r} d\mechanical{\theta} \sin \mechanical{\phi} = \mechanical{r} d\mechanical{\theta} \sin \left( \frac{\pi}{2} \right) = \mechanical{r} d\mechanical{\theta}. \tag{1.17}
+d\mechanical{S} = \mechanical{r} d\mechanical{\theta} \sin \mechanical{\phi} = \mechanical{r} d\mechanical{\theta} \sin \left( \frac{\pi}{2} \right) = \mechanical{r} d\mechanical{\theta}. \tag{1.17}
 $$
 
 Lastly, it is worth noting that Equation (1.16) can also be obtained by combining the relations $\mechanical{v} = \frac{2\pi \mechanical{r}}{\signal{T}}$ and $\mechanical{\omega} = \frac{2\pi}{\signal{T}}$. Now, let’s do an example that will help us clarify some of these definitions.
@@ -443,15 +443,13 @@ $$
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
 | $\mechanical{\phi}$ | $\unit{rad}$ | Angle | Angle between the indicated directions. |
-| $\mechanical{\vec{\theta}}$ | $\unit{rad}$ | Angular position | Angle measured from the reference direction. |
+| $\mechanical{\theta}$, $d\mechanical{\vec{\theta}}$ | $\unit{rad}$ | Angular position, infinitesimal rotation | Angle measured from the reference direction; only the infinitesimal rotation $d\mechanical{\vec{\theta}}$ is a vector. |
 | $\mechanical{\vec{\omega}}$ | $\unit{rad\,s^{-1}}$ | Angular velocity or speed | Rate of rotation about the indicated axis. |
-| $\mechanical{\vec{S}}$ | $\unit{m}$ | Arc length | Distance measured along the circular path. |
+| $\mechanical{S}$, $d\mechanical{\vec{S}}$ | $\unit{m}$ | Arc length | Distance measured along the circular path; $d\mechanical{\vec{S}}$ is the infinitesimal displacement along the path. |
 | $\signal{f}$ | $\unit{Hz}$ | Frequency | Number of revolutions per second. |
 | $\mechanical{\vec{v}}$ | $\unit{m\,s^{-1}}$ | Linear velocity or speed | Velocity or speed of the indicated point. |
-| $\mechanical{s}$ | $\unit{m}$ | Path length | Distance measured along the path. |
 | $\signal{T}$ | $\unit{s}$ | Period | Time for one revolution. |
 | $\mechanical{\vec{x}}$ | $\unit{m}$ | Position coordinate | Position along the indicated axis. |
-| $\mechanical{y}$ | $\unit{m}$ | Position coordinate | Position along the indicated axis. |
 | $\mechanical{\vec{r}}$ | $\unit{m}$ | Radius or position | Distance or position relative to the reference point or axis. |
 | $N$ | 1 | Number of revolutions | The count of completed turns. |
 | $t,\Delta t$ | $\unit{s}$ | Time and time interval | The instant and duration of the motion. |

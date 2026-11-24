@@ -253,9 +253,9 @@ t=\frac{-13.8\pm\sqrt{13.8^2-4(-4.9)(2)}}{2(-4.9)}
 t\approx -0.13\,\unit{s}\ \text{or}\ 2.95\,\unit{s}.
 $$
 
-The flight time is about $2.9\,\unit{s}$.
+The flight time is about $2.95\,\unit{s}$.
 
-2(b). The range is $x=v_xt=(18.4\,\unit{m/s})(2.9\,\unit{s})=53.4\,\unit{m}$.
+2(b). The range is $x=v_xt=(18.4\,\unit{m/s})(2.95\,\unit{s})=54.3\,\unit{m}$.
 
 2(c). At maximum height, $v_{fy}=0$. Starting at $y_0=2\,\unit{m}$ with $v_{0y}=13.8\,\unit{m/s}$ and $a_y=-9.8\,\unit{m/s^2}$ gives
 
@@ -270,7 +270,7 @@ y_f=y_0+v_{0y}t+\tfrac12a_yt^2
 =[2+(13.8)(1.4)-(4.9)(1.4)^2]\,\unit{m}=11.7\,\unit{m}.
 $$
 
-2(d). At impact, $v_x=18.4\,\unit{m/s}$ and $v_{fy}=v_{0y}+a_yt=[13.8+(-9.8)(2.9)]\,\unit{m/s}=-14.6\,\unit{m/s}$.
+2(d). At impact, $v_x=18.4\,\unit{m/s}$ and $v_{fy}=v_{0y}+a_yt=[13.8+(-9.8)(2.95)]\,\unit{m/s}=-15.1\,\unit{m/s}$.
 
 3. Newton's laws
 
@@ -598,7 +598,7 @@ $$
 
 ![[Kyle Kabasares - Newtonian Mechanics - Approach to Terminal Speed.png|**Fig. 74** Qualitative speed and acceleration sketches for a falling body with drag.]]
 
-4(e). Solve the terminal-speed condition for $b$. The page records $b=mg/v^2=13.6\,\unit{kg/m}$.
+4(e). Solve the terminal-speed condition for $b$. The page records $b=mg/v^2=13.6\,\unit{kg/m}$. The page does not state the speed used. With $m=50\,\unit{kg}$, this value corresponds to $v\approx6.0\,\unit{m/s}$.
 
 5. A block $M$ on an incline is attached over a pulley to a hanging mass $m$. For $M$, the component equations are $T-Mg\sin\theta=Ma$ along the incline and $N-Mg\cos\theta=0$ perpendicular to it. The hanging mass has upward tension and downward weight.
 

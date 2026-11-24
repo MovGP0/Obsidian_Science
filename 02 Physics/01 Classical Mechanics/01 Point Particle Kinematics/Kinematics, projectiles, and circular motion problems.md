@@ -314,7 +314,7 @@ $$
 \frac{a_y}{2v_0^2\cos^2\theta}(\Delta x)^2.
 $$
 
-For $a_y=-9.8\,\unit{m/s^2}$, the numerical equation is $0=-5+\sqrt3\,\Delta x-0.049(\Delta x)^2$ in SI units. Apply the quadratic formula $(-b\pm\sqrt{b^2-4ac})/(2a)$. The two horizontal distances are approximately $3.1\,\unit{m}$ on the ascent and $32.1\,\unit{m}$ on the descent.
+For $a_y=-9.8\,\unit{m/s^2}$, the numerical equation is $0=-5+\sqrt3\,\Delta x-0.049(\Delta x)^2$ in SI units. Apply the quadratic formula $(-b\pm\sqrt{b^2-4ac})/(2a)$. The two horizontal distances are approximately $3.2\,\unit{m}$ on the ascent and $32.2\,\unit{m}$ on the descent.
 
 For the equal-height projectile sketch, the flight time is $t=\Delta x/v_{0x}$ using the constant horizontal component.
 
@@ -402,14 +402,6 @@ Kyle Kabasares, *Newtonian Mechanics (Physics 8, UC Merced 2013)*.
 | $\Delta t$ | $\unit{s}$ | Elapsed time | Duration of the motion being measured. |
 | $\mechanical{g}$ | $\unit{m/s^2}$ | Gravitational acceleration | Local acceleration of free fall. |
 | $\magnetic{\vec B}$ | $\unit{T}$ | Magnetic flux density | Vector used in the component exercise. |
-| $\mechanical{R}$ | $\unit{m^3/s}$ | Volume flow rate | Volume passing through a cross section per unit time. |
+| $\mechanical{R}$ | $\unit{m}$ | Range | Horizontal distance of a projectile that returns to its launch height. |
 | $\mechanical{a}_t$ | $\unit{m/s^2}$ | Tangential acceleration | Component along the path that changes speed. |
 | $\mechanical{a}_c$ | $\unit{m/s^2}$ | Centripetal acceleration | Inward component that changes the direction of velocity. |
-| $\mechanical{f}_{\mathrm{s}},\mechanical{f}_{\mathrm{k}}$ | $\unit{N}$ | Static and kinetic friction | Contact force parallel to the surfaces. |
-| $\mechanical{\mu}_{\mathrm{s}},\mechanical{\mu}_{\mathrm{k}}$ | $1$ | Friction coefficients | Material-dependent ratios for maximum static and kinetic friction. |
-| $\energy{U}_{\mathrm{s}}$ | $\unit{J}$ | Elastic potential energy | Energy stored in the spring at displacement $x$. |
-| $\mechanical{\vec r}_{\mathrm{CM}}$ | $\unit{m}$ | Center-of-mass position | Mass-weighted average position of the system. |
-| $\mechanical{\lambda}$ | $\unit{kg/m}$ | Linear mass density | Mass per unit length. |
-| $\mechanical{\sigma}$ | $\unit{kg/m^2}$ | Surface mass density | Mass per unit area. |
-| $\signal{k}$ | $\unit{m^{-1}}$ | Wave number | Spatial phase change per unit distance, $2\pi/\lambda$. |
-| $\mechanical{P}$ | $\unit{Pa}$ | Pressure | Normal force per unit area. |

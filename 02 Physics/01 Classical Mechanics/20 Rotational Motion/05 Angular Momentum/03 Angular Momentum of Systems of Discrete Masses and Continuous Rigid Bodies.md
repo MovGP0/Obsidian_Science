@@ -109,7 +109,7 @@ For one point mass, this gives $\mechanical{\vec L}_{\parallel}=\mechanical m\me
 | $\mechanical m$ | $\unit{kg}$ | Mass | Mass of the body or particle. |
 | $\mechanical{\vec v}$ | $\unit{m\,s^{-1}}$ | Velocity | Rate of change of the position vector. |
 | $\mechanical{\vec p}$ | $\unit{kg\,m\,s^{-1}}$ | Linear momentum | Product of mass and velocity. |
-| $\mechanical{\vec r}$ | $\unit m$ | Position vector | Displacement from the specified reference point. |
+| $\mechanical{\vec r}$ | $\unit m$ | Position vector | Perpendicular displacement from the rotation axis to the mass element. |
 | $\mechanical{\vec L}$ | $\unit{kg\,m^2\,s^{-1}}$ | Angular momentum | Rotational momentum about the specified point or axis. |
 | $\mechanical{\vec\omega}$ | $\unit{rad\,s^{-1}}$ | Angular velocity | Rotation rate and axial direction. |
 | $\mechanical I$ | $\unit{kg\,m^2}$ | Moment of inertia | Rotational inertia about the chosen axis. |

@@ -309,7 +309,7 @@ $$
 \Delta x=\frac{v_0^2}{2g(\sin\theta+\mu_{\mathrm{k}}\cos\theta)}.
 $$
 
-The page records $2.03\,\unit{m}$ and drops $\mu_{\mathrm{k}}$ from the last written denominator. The preceding line retains it.
+The page records $2.03\,\unit{m}$ and drops $\mu_{\mathrm{k}}$ from the last written denominator. The preceding line retains it. The page does not state the initial speed. The recorded distance corresponds to $v_0\approx5\,\unit{m/s}$ with $\mu_{\mathrm{k}}$ retained.
 
 ##### Work done by gravity during lifting
 

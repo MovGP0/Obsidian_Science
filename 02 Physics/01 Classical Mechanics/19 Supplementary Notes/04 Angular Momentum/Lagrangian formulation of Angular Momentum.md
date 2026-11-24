@@ -11,7 +11,7 @@ We choose two kinds of coordinates:
 The basic Lagrangian is
 
 $$
-L = T - V
+\mathcal{L} = T - V
 $$
 
 This means:
@@ -39,7 +39,7 @@ From the Lagrangian we can define the corresponding momenta.
 Linear momentum is
 
 $$
-\mathbf{P} = \frac{\partial L}{\partial \dot{\mathbf{R}}} = M \dot{\mathbf{R}}
+\mathbf{P} = \frac{\partial \mathcal{L}}{\partial \dot{\mathbf{R}}} = M \dot{\mathbf{R}}
 $$
 
 This is the usual formula mass times velocity.
@@ -47,8 +47,11 @@ This is the usual formula mass times velocity.
 Angular momentum is
 
 $$
-\mathbf{L} = \frac{\partial L}{\partial \boldsymbol{\omega}} = \mathbf{I}\boldsymbol{\omega}
+\mathbf{L} = \frac{\partial \mathcal{L}}{\partial \boldsymbol{\omega}} = \mathbf{I}\boldsymbol{\omega}
 $$
+
+> [!note]
+> $\boldsymbol{\omega}$ is not the time derivative of any coordinate; it is a quasi-velocity. To get the equations of motion, write $\boldsymbol{\omega}$ in terms of Euler angles and their rates, or use the Euler–Poincaré form of the equations.
 
 This says that angular momentum plays for rotation the same role that ordinary momentum plays for straight-line motion.
 

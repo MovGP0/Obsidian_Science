@@ -86,7 +86,7 @@ $$
 
 where we have used the facts that $\mechanical{d}_1 = \mechanical{r}_1 \sin \mechanical{\phi}_1$ and $\mechanical{d}_2 = \mechanical{r}_2 \sin \mechanical{\phi}_2$ are the moment arms, with $\mechanical{d} = \mechanical{d}_1 + \mechanical{d}_2$, and that $\mechanical{F}_1 = \mechanical{F}_2$. Of course, had the forces caused clockwise rotation, the net torque would be negative in our coordinate system. Consequently, the net torque due to a force couple has magnitude equal to $\Sigma \mechanical{\tau}_z = \mechanical{F}_1 \mechanical{d} = \mechanical{F}_2 \mechanical{d}$ (since $\mechanical{F}_1 = \mechanical{F}_2$) and direction perpendicular to the plane formed by the force couple and determined by the right-hand rule.
 
-**Note 1**: For the axis shown, $\mechanical{d}_1 + \mechanical{d}_2 = \mechanical{d}$. Shifting to another parallel axis changes the net torque by a term proportional to the net force, which is zero for a couple. The torque is therefore the same about any axis perpendicular to the plane of the couple. Equivalently, the points of application of the forces do not matter, as long as the distance $\mechanical{d}$ between them does not change.
+**Note 1**: For the axis shown, $\mechanical{d}_1 + \mechanical{d}_2 = \mechanical{d}$. Shifting to another parallel axis changes the net torque by a term proportional to the net force, which is zero for a couple. The torque is therefore the same about any axis perpendicular to the plane of the couple. Equivalently, the points of application of the forces do not matter, as long as the force directions and the perpendicular distance $\mechanical{d}$ between their lines of action do not change.
 
 **Note 2**: By the definition of a force couple:
 
@@ -195,16 +195,16 @@ Lastly, it is important to remember that Theorems 2 and 3 are applicable only if
 
 ![[rotational-motion-fig-2-20.svg|**Fig. 2.20** A rod is kept balanced via a junction and a massless, horizontal rope. The gravitational force on the rod is given as two separate vectors, $\mechanical{\vec{F}}_{g1}$ and $\mechanical{\vec{F}}_{g2}$.|370]]
 
-(v) A uniform wheel with radius $\mechanical{\alpha}$ is on a horizontal surface in contact with a step of height $\mechanical{h}$ as shown in Figure 2.21. The gravitational force $\mechanical{\vec{F}}_g$ is exerted at the wheel’s center $O$. A force $\mechanical{\vec{F}}$ is exerted at point $Z$, which is at a height $\mechanical{H}$ above the horizontal surface, and causes the wheel to roll up the step. (a) Draw all the forces exerted on the wheel before it rolls up the step. What happens to the ground’s reaction force $\mechanical{\vec{n}}_A$ on the wheel at point $A$ when the wheel starts rolling up the step and loses contact with the ground? (b) Find the minimum magnitude of $\mechanical{\vec{F}}$ needed for the wheel to roll up the step. (c) Find the direction of the step’s reaction force $\mechanical{\vec{R}}$ on the wheel at point $B$ in two different ways: (i) using Newton’s Laws and (ii) using geometry and Theorem 3.
+(v) A uniform wheel with radius $\mechanical{a}$ is on a horizontal surface in contact with a step of height $\mechanical{h}$ as shown in Figure 2.21. The gravitational force $\mechanical{\vec{F}}_g$ is exerted at the wheel’s center $O$. A force $\mechanical{\vec{F}}$ is exerted at point $Z$, which is at a height $\mechanical{H}$ above the horizontal surface, and causes the wheel to roll up the step. (a) Draw all the forces exerted on the wheel before it rolls up the step. What happens to the ground’s reaction force $\mechanical{\vec{n}}_A$ on the wheel at point $A$ when the wheel starts rolling up the step and loses contact with the ground? (b) Find the minimum magnitude of $\mechanical{\vec{F}}$ needed for the wheel to roll up the step. (c) Find the direction of the step’s reaction force $\mechanical{\vec{R}}$ on the wheel at point $B$ in two different ways: (i) using Newton’s Laws and (ii) using geometry and Theorem 3.
 
-![[rotational-motion-fig-2-21.svg|**Fig. 2.21** We exert a horizontal force $\mechanical{\vec{F}}$ on a uniform wheel of radius $\mechanical{\alpha}$ to roll it up a step of height $\mechanical{h}$.|370]]
+![[rotational-motion-fig-2-21.svg|**Fig. 2.21** We exert a horizontal force $\mechanical{\vec{F}}$ on a uniform wheel of radius $\mechanical{a}$ to roll it up a step of height $\mechanical{h}$.|370]]
 
 ## Physical quantities
 
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
 | $\mechanical{\phi}$ | $\unit{rad}$ | Angle | Angle between the indicated directions. |
-| $\mechanical{\alpha}$ | $\unit{m}$ | Wheel radius | Distance from the axle to the rim. |
+| $\mechanical{a}$ | $\unit{m}$ | Wheel radius | Distance from the axle to the rim. |
 | $\mechanical{d}$ | $\unit{m}$ | Distance | Separation between the indicated points or axes. |
 | $\mechanical{\vec{F}}$ | $\unit{N}$ | Force | Force acting on the indicated body. |
 | $\mechanical{H}$ | $\unit{m}$ | Height of applied force | Height of point $Z$ above the floor. |
@@ -213,9 +213,7 @@ Lastly, it is important to remember that Theorems 2 and 3 are applicable only if
 | $\mechanical{M}$ | $\unit{kg}$ | Mass | Mass of the body or system. |
 | $\mechanical{m}$ | $\unit{kg}$ | Mass | Mass of the indicated particle or body. |
 | $\mechanical{\vec{n}}$ | $\unit{N}$ | Normal force | Contact force perpendicular to the surface. |
-| $\mechanical{z}$ | $\unit{m}$ | Position coordinate | Position along the indicated axis. |
-| $\mechanical{y}$ | $\unit{m}$ | Position coordinate | Position along the indicated axis. |
-| $\mechanical{x}$ | $\unit{m}$ | Position coordinate | Position along the indicated axis. |
+| $\mechanical{x}$ | $\unit{m}$ | Position coordinate | Position of a mass element or distance of the CM from the rod end. |
 | $\mechanical{\vec{R}}$ | $\unit{N}$ | Reaction force | Force exerted by a junction or the step. |
 | $\mechanical{r}$ | $\unit{m}$ | Radius or position | Distance or position relative to the reference point or axis. |
 | $\mechanical{\vec{\tau}}$ | $\unit{N\,m}$ | Torque | Moment of force about the indicated point or axis. |

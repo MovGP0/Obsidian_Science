@@ -255,10 +255,7 @@ $$
 \end{gathered} \tag{1.30}
 $$
 
-> [!note]
-> The second line of Equation (1.30) uses the angular velocity $\mechanical{\vec\omega}$, consistent with the definition of angular acceleration in Equation (1.29).
-
-Lastly, we can find the relationship between the magnitude of an object’s angular acceleration $\mechanical{\alpha}$ and the magnitude of its tangential acceleration $\mechanical{a}_t$ based on what we have discussed so far. Since we know from the definition of linear acceleration that $\mechanical{a} = \frac{d\mechanical{v}}{dt}$, from Equation (1.16) ($\mechanical{v} = \mechanical{\omega} \mechanical{r}$) we find:
+Lastly, we can find the relationship between the magnitude of an object’s angular acceleration $\mechanical{\alpha}$ and the magnitude of its tangential acceleration $\mechanical{a}_t$ based on what we have discussed so far. Since the tangential acceleration is the rate of change of speed, $\mechanical{a}_t = \frac{d\mechanical{v}}{dt}$, from Equation (1.16) ($\mechanical{v} = \mechanical{\omega} \mechanical{r}$) we find:
 
 $$
 \mechanical{a}_t = \frac{d\mechanical{v}}{dt} = \frac{d(\mechanical{\omega} \mechanical{r})}{dt} = \frac{d\mechanical{\omega}}{dt} \mechanical{r} + \underbrace{\mechanical{\omega} \frac{d\mechanical{r}}{dt}}_{0} = \mechanical{\alpha} \mechanical{r}. \tag{1.31}
@@ -279,10 +276,10 @@ $$
 while the direction can be found via the equation:
 
 $$
-\tan \mechanical{\theta} = \frac{\mechanical{a}_t}{\mechanical{a}_c}. \tag{1.33}
+\tan \mechanical{\beta} = \frac{\mechanical{a}_t}{\mechanical{a}_c}. \tag{1.33}
 $$
 
-Note that to these two accelerations $\mechanical{\vec{a}}_t$ and $\mechanical{\vec{a}}_c$, we cannot also add the angular acceleration $\mechanical{\vec{\alpha}}$, since it has different units! We can only add the linear accelerations together. But more importantly, as we mentioned in Section 3.2, you do not need to worry – the tangential acceleration accounts for the angular acceleration. Therefore, we have already accounted for the angular acceleration in the sum of the two linear accelerations.
+Note that to these two accelerations $\mechanical{\vec{a}}_t$ and $\mechanical{\vec{a}}_c$, we cannot also add the angular acceleration $\mechanical{\vec{\alpha}}$, since it has different units! We can only add the linear accelerations together. But more importantly, as we mentioned in Section 1.3.2, you do not need to worry – the tangential acceleration accounts for the angular acceleration. Therefore, we have already accounted for the angular acceleration in the sum of the two linear accelerations.
 
 ```graph
 bounds: [-1.65, 1.45, 1.74, -1.75]
@@ -306,7 +303,7 @@ elements: [
   {"type":"text","def":[0.3394,-1.5604,"aₜ"],"att":{"fixed":true,"highlight":false,"fontSize":16,"useMathJax":false,"strokeColor":"#9a431f","anchorX":"left"}},
   {"type":"text","def":[0.7447,-0.5685,"aₜₒₜ"],"att":{"fixed":true,"highlight":false,"fontSize":16,"useMathJax":false,"strokeColor":"#287a55","anchorX":"left"}},
   {"type":"curve","def":[[-0.1849,-0.1902,-0.1959,-0.2021,-0.2087,-0.2157,-0.2231,-0.2309,-0.239,-0.2476,-0.2564,-0.2656,-0.2751,-0.2849,-0.295,-0.3053,-0.3159,-0.3267,-0.3377],[-0.9692,-0.9585,-0.9479,-0.9376,-0.9276,-0.9178,-0.9084,-0.8992,-0.8904,-0.8819,-0.8738,-0.8661,-0.8587,-0.8518,-0.8453,-0.8391,-0.8335,-0.8282,-0.8234]],"att":{"fixed":true,"highlight":false,"strokeWidth":1.65,"strokeColor":"#344b61"}},
-  {"type":"text","def":[-0.1378,-0.8717,"θ"],"att":{"fixed":true,"highlight":false,"fontSize":16,"useMathJax":false,"strokeColor":"#344b61","anchorX":"left"}}
+  {"type":"text","def":[-0.1378,-0.8717,"β"],"att":{"fixed":true,"highlight":false,"fontSize":16,"useMathJax":false,"strokeColor":"#344b61","anchorX":"left"}}
 ]
 ```
 
@@ -317,10 +314,9 @@ elements: [
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
 | $\mechanical{\vec{\alpha}}$ | $\unit{rad\,s^{-2}}$ | Angular acceleration | Rate of change of angular velocity. |
-| $\mechanical{\theta}$ | $\unit{rad}$ | Angle | Angle between indicated directions, including between the centripetal and total acceleration in Fig. 1.12. |
+| $\mechanical{\beta}$ | $\unit{rad}$ | Angle | Angle between the centripetal and total acceleration in Fig. 1.12. |
 | $\mechanical{\vec{\omega}}$ | $\unit{rad\,s^{-1}}$ | Angular velocity or speed | Rate of rotation about the indicated axis. |
 | $\mechanical{S}$ | $\unit{m}$ | Arc length | Distance measured along the circular path. |
-| $\mechanical{d}$ | $\unit{m}$ | Distance | Separation between the indicated points or axes. |
 | $\mechanical{\vec{F}}$ | $\unit{N}$ | Force | Force acting on the indicated body. |
 | $\mechanical{\vec{a}}$ | $\unit{m\,s^{-2}}$ | Linear acceleration | Rate of change of linear velocity. |
 | $\mechanical{\vec{v}}$ | $\unit{m\,s^{-1}}$ | Linear velocity or speed | Velocity or speed of the indicated point. |

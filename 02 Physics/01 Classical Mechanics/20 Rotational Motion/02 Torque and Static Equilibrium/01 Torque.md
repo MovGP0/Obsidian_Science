@@ -166,7 +166,7 @@ $$
 
 Also, note that the angles $\mechanical{\phi}$ and $\mechanical{\phi}'$ in Figure 2.3a are supplementary; that is, $\mechanical{\phi}' = \pi - \mechanical{\phi}$, and thus $\sin\mechanical{\phi}' = \sin\mechanical{\phi}$. As a result, one can compute the torque using either the angle between the vectors $\mechanical{\vec{r}}$ and $\mechanical{\vec{F}}$, or its supplementary angle.
 
-From this discussion and the one in the previous section (Section 1.1) we can see that $\sin\mechanical{\phi}$, when combined with the applied force $\mechanical{\vec{F}}$, shows the component of the force that causes rotation. However, when combined with the position vector $\mechanical{\vec{r}}$, $\sin\mechanical{\phi}$ shows the moment arm. In other words, $\sin\mechanical{\phi}$ can help us focus our attention either on the applied force or on the position vector, depending on the problem.
+From this discussion and the one in the previous section (Section 2.1.1) we can see that $\sin\mechanical{\phi}$, when combined with the applied force $\mechanical{\vec{F}}$, shows the component of the force that causes rotation. However, when combined with the position vector $\mechanical{\vec{r}}$, $\sin\mechanical{\phi}$ shows the moment arm. In other words, $\sin\mechanical{\phi}$ can help us focus our attention either on the applied force or on the position vector, depending on the problem.
 
 At this point you may notice that the SI unit for torque is the same as the SI unit for work, ($\unit{N\,m}$). Recall that work is defined as the integral of the dot product of a force along an infinitesimal displacement:
 
@@ -230,7 +230,7 @@ elements: [
 
 **Fig. 2.4** Decompose $\mechanical{\vec F}$ into the in-plane component $\mechanical{\vec F}_{xy}$ and the axial component $\mechanical{\vec F}_z$. Only the part of $\mechanical{\vec F}_{xy}$ perpendicular to $\mechanical{\vec r}$ contributes to the torque about $z$. Its magnitude is $\mechanical{F}\cos\mechanical{\theta}\sin\mechanical{\phi}$. Drag to rotate the plot.
 
-(iii) If we define the $+z$ axis to be upward along the axis of rotation (as is shown in Figure 2.4), then based on the right-hand rule, any force that tends to rotate the object counterclockwise (as viewed from above) will result in a torque in the $+z$ direction. This results in the convention we will be using in this book: When a rotation is viewed from above the $\mechanical{x}\mechanical{y}$ plane (i.e., such that $z > 0$), counterclockwise rotation is positive (just like the torque that causes it) while clockwise rotation is negative. For this reason, sometimes instead of showing the $+z$ axis in our figures, we will be showing the equivalent definition: That counterclockwise rotation is positive while clockwise rotation is negative. This convention is consistent with the right-hand rule. Of course, one could define the opposite convention.
+(iii) If we define the $+z$ axis to be upward along the axis of rotation (as is shown in Figure 2.4), then based on the right-hand rule, any force that tends to rotate the object counterclockwise (as viewed from above) will result in a torque in the $+z$ direction. This results in the convention we will be using in this book: When a rotation is viewed from above the $xy$ plane (i.e., such that $z > 0$), counterclockwise rotation is positive (just like the torque that causes it) while clockwise rotation is negative. For this reason, sometimes instead of showing the $+z$ axis in our figures, we will be showing the equivalent definition: That counterclockwise rotation is positive while clockwise rotation is negative. This convention is consistent with the right-hand rule. Of course, one could define the opposite convention.
 
 (iv) In the same way we defined angular velocity and angular acceleration to point along the axis of rotation in Chapter 1, here by having all the torques be along the axis of rotation we are consistent with the ideas that the rotational motion can be fully described by vectors normal to the plane of rotation and that we are reducing the two-dimensional rotational motion to a one-dimensional problem. If we define the axis of rotation to be the $z$ axis, some torques will be pointing in the $+z$ direction, while others in the $-z$ direction. This means that we can find the net torque in the same way we found the net force along an axis. That is, we consider the torques that point along the $+z$ axis positive (i.e., tending to cause counterclockwise (ccw) rotation) and those that point along the $-z$ axis negative (i.e., tending to cause clockwise (cw) rotation), and we are then able to add them algebraically. For example, for $n$ torques:
 
@@ -456,36 +456,36 @@ $$
 
 The positive sign means the net torque points along $+z$ and tends to rotate the rod counterclockwise.
 
-**Example 2: Torque on a moving particle.** A particle of mass $\mechanical{m}$ is moving along a trajectory in the $xy$ plane and its coordinates at any time $t$ are given by $(\mechanical{x}, \mechanical{y}) = (\mechanical{x}_0 + \cos(\signal{\omega}_1 t), \mechanical{y}_0 + \sin(\signal{\omega}_2 t))$, where $\mechanical{x}_0, \mechanical{y}_0, \signal{\omega}_1$, and $\signal{\omega}_2$ are constants. What is the torque on the particle about the origin at time $t = 0$ ?
+**Example 2: Torque on a moving particle.** A particle of mass $\mechanical{m}$ is moving along a trajectory in the $xy$ plane and its coordinates at any time $t$ are given by $(\mechanical{x}, \mechanical{y}) = (\mechanical{x}_0 + \mechanical{A}\cos(\signal{\omega}_1 t), \mechanical{y}_0 + \mechanical{A}\sin(\signal{\omega}_2 t))$, where $\mechanical{x}_0, \mechanical{y}_0, \mechanical{A}, \signal{\omega}_1$, and $\signal{\omega}_2$ are constants. What is the torque on the particle about the origin at time $t = 0$ ?
 
 Based on the $\mechanical{x}$ and $\mechanical{y}$ coordinates, the position $\mechanical{\vec{r}}(t)$, velocity $\mechanical{\vec{v}}(t)$, and acceleration $\mechanical{\vec{a}}(t)$ of the particle are given by
 
 $$
-\mechanical{\vec{r}}(t) = (\mechanical{x}_0 + \cos(\signal{\omega}_1 t)) \hat{i} + (\mechanical{y}_0 + \sin(\signal{\omega}_2 t)) \hat{j}, \tag{2.10}
+\mechanical{\vec{r}}(t) = (\mechanical{x}_0 + \mechanical{A}\cos(\signal{\omega}_1 t)) \hat{i} + (\mechanical{y}_0 + \mechanical{A}\sin(\signal{\omega}_2 t)) \hat{j}, \tag{2.10}
 $$
 
 $$
-\mechanical{\vec{v}}(t) = \frac{d\mechanical{\vec{r}}(t)}{dt} = -\signal{\omega}_1 \sin(\signal{\omega}_1 t) \hat{i} + \signal{\omega}_2 \cos(\signal{\omega}_2 t) \hat{j}, \tag{2.11}
+\mechanical{\vec{v}}(t) = \frac{d\mechanical{\vec{r}}(t)}{dt} = -\mechanical{A}\signal{\omega}_1 \sin(\signal{\omega}_1 t) \hat{i} + \mechanical{A}\signal{\omega}_2 \cos(\signal{\omega}_2 t) \hat{j}, \tag{2.11}
 $$
 
 and
 
 $$
-\mechanical{\vec{a}}(t) = \frac{d\mechanical{\vec{v}}(t)}{dt} = -\signal{\omega}_1^2 \cos(\signal{\omega}_1 t) \hat{i} - \signal{\omega}_2^2 \sin(\signal{\omega}_2 t) \hat{j}. \tag{2.12}
+\mechanical{\vec{a}}(t) = \frac{d\mechanical{\vec{v}}(t)}{dt} = -\mechanical{A}\signal{\omega}_1^2 \cos(\signal{\omega}_1 t) \hat{i} - \mechanical{A}\signal{\omega}_2^2 \sin(\signal{\omega}_2 t) \hat{j}. \tag{2.12}
 $$
 
 At time $t = 0$, the above equations give that
 
 $$
-\mechanical{\vec{r}}(0) = (\mechanical{x}_0 + 1) \hat{i} + \mechanical{y}_0 \hat{j}, \tag{2.13}
+\mechanical{\vec{r}}(0) = (\mechanical{x}_0 + \mechanical{A}) \hat{i} + \mechanical{y}_0 \hat{j}, \tag{2.13}
 $$
 
 $$
-\mechanical{\vec{v}}(0) = \signal{\omega}_2 \hat{j}, \tag{2.14}
+\mechanical{\vec{v}}(0) = \mechanical{A}\signal{\omega}_2 \hat{j}, \tag{2.14}
 $$
 
 $$
-\mechanical{\vec{a}}(0) = -\signal{\omega}_1^2 \hat{i}. \tag{2.15}
+\mechanical{\vec{a}}(0) = -\mechanical{A}\signal{\omega}_1^2 \hat{i}. \tag{2.15}
 $$
 
 Since by Newton’s Second Law $\Sigma \mechanical{\vec{F}} = \mechanical{m} \mechanical{\vec{a}}$ and by definition $\mechanical{\vec{\tau}} = \mechanical{\vec{r}} \times \mechanical{\vec{F}}$, we have
@@ -495,20 +495,20 @@ $$
 \mechanical{\vec\tau}(0)
 &=\mechanical{\vec r}(0)\times\mechanical{\vec F}(0)\\
 &=\mechanical{m}\bigl(\mechanical{\vec r}(0)\times\mechanical{\vec a}(0)\bigr)\\
-&=\mechanical{m}\bigl[(\mechanical{x}_0+1)\hat{\mathbf i}+\mechanical{y}_0\hat{\mathbf j}\bigr]
-  \times\bigl(-\signal{\omega}_1^2\hat{\mathbf i}\bigr)\\
-&=\mechanical{m}(\mechanical{x}_0+1)(-\signal{\omega}_1^2)
+&=\mechanical{m}\bigl[(\mechanical{x}_0+\mechanical{A})\hat{\mathbf i}+\mechanical{y}_0\hat{\mathbf j}\bigr]
+  \times\bigl(-\mechanical{A}\signal{\omega}_1^2\hat{\mathbf i}\bigr)\\
+&=\mechanical{m}(\mechanical{x}_0+\mechanical{A})(-\mechanical{A}\signal{\omega}_1^2)
   \underbrace{\hat{\mathbf i}\times\hat{\mathbf i}}_0
- +\mechanical{m}\mechanical{y}_0(-\signal{\omega}_1^2)
+ +\mechanical{m}\mechanical{y}_0(-\mechanical{A}\signal{\omega}_1^2)
   \underbrace{\hat{\mathbf j}\times\hat{\mathbf i}}_{-\hat{\mathbf k}}\\
-&=\mechanical{m}\mechanical{y}_0\signal{\omega}_1^2\hat{\mathbf k}.
+&=\mechanical{m}\mechanical{A}\mechanical{y}_0\signal{\omega}_1^2\hat{\mathbf k}.
 \end{aligned}
 \tag{2.16}
 $$
 
-Our result makes sense. At all times the position vector is in the $\mechanical{x}\mechanical{y}$ plane. The force vector, as seen from the acceleration, is also in the $\mechanical{x}\mechanical{y}$ plane. The torque has to be perpendicular to each of these vectors and the plane formed by them. Thus, the torque is along the $z$ axis. Its signed component in Equation (2.16) is positive when $\mechanical{y}_0>0$, negative when $\mechanical{y}_0<0$, and zero when $\mechanical{y}_0=0$.
+Our result makes sense. At all times the position vector is in the $xy$ plane. The force vector, as seen from the acceleration, is also in the $xy$ plane. The torque has to be perpendicular to each of these vectors and the plane formed by them. Thus, the torque is along the $z$ axis. Its signed component in Equation (2.16) is positive when $\mechanical{y}_0>0$, negative when $\mechanical{y}_0<0$, and zero when $\mechanical{y}_0=0$.
 
-**Example 3: Torque due to a continuous force.** A horizontal wheel of radius $\mechanical{R} = 1.0\,\unit{m}$ has forces exerted at all points of its circumference. The forces are tangent to the circumference and act in the plane of the wheel, but the magnitudes of the forces vary as a function of the position, as shown in Figure 2.7. Starting from the point where the rim intersects the $+\mechanical{x}$ axis and moving counterclockwise, the magnitude of the force is given as $\mechanical{F}(\mechanical{\theta}) = 2.0 - \sin \mechanical{\theta}$ (N). Of course, $\mechanical{\theta}$ can take values from 0 to $2\pi$. Find the net torque about an axis that goes through the center of the wheel $O$ and is perpendicular to its plane (the $z$ axis).
+**Example 3: Torque due to a continuous force.** A horizontal wheel of radius $\mechanical{R} = 1.0\,\unit{m}$ has forces distributed along its whole circumference. The forces are tangent to the circumference and act in the plane of the wheel, but their magnitude per unit rim length varies as a function of the position, as shown in Figure 2.7. Starting from the point where the rim intersects the $+\mechanical{x}$ axis and moving counterclockwise, the force per unit rim length is given as $\mechanical{\lambda}(\mechanical{\theta}) = 2.0 - \sin \mechanical{\theta}$ ($\unit{N/m}$). Of course, $\mechanical{\theta}$ can take values from 0 to $2\pi$. Find the net torque about an axis that goes through the center of the wheel $O$ and is perpendicular to its plane (the $z$ axis).
 
 For this problem, we will be using the concepts of torque and finding the net torque, Equations (2.2) and (2.6), respectively. We notice that for all forces, the magnitude of the position vector $\mechanical{r}$ is equal to the radius $\mechanical{R}$ and the angle between the position vector and the force is always $\mechanical{\phi} = \pi/2$. Furthermore, all forces will produce counterclockwise rotation when viewed from above, so all the torques are positive. As a result, the net torque is given by:
 
@@ -574,14 +574,14 @@ $$
 \tag{2.17}
 $$
 
-It is clear at this point that we need to find the sum of all the forces’ magnitudes. However, since the magnitude changes continuously with the position $\mechanical{\theta}$ on the wheel, the sum becomes an integral where $\mechanical{\theta}$ is the variable of integration. Therefore, the net torque is:
+It is clear at this point that we need to find the sum of all the forces’ magnitudes. However, since the magnitude changes continuously with the position $\mechanical{\theta}$ on the wheel, the sum becomes an integral where $\mechanical{\theta}$ is the variable of integration. A rim element of length $\mechanical{R}\,d\mechanical{\theta}$ carries the force $d\mechanical{F}=\mechanical{\lambda}\mechanical{R}\,d\mechanical{\theta}$. Therefore, the net torque is:
 
 $$
 \begin{aligned}
 \sum_i\mechanical{\tau}_{i,z}
- &=\mechanical{R}\int_0^{2\pi}(2-\sin\mechanical{\theta})\,d\mechanical{\theta}\\
- &=\mechanical{R}\bigl[2\mechanical{\theta}+\cos\mechanical{\theta}\bigr]_0^{2\pi}\\
- &=(1.0\,\unit{m})(4\pi+1-1)\,\unit{N}=4\pi\,\unit{N\,m}.
+ &=\mechanical{R}\int_0^{2\pi}\mechanical{\lambda}(\mechanical{\theta})\,\mechanical{R}\,d\mechanical{\theta}=\mechanical{R}^2\int_0^{2\pi}(2-\sin\mechanical{\theta})\,d\mechanical{\theta}\\
+ &=\mechanical{R}^2\bigl[2\mechanical{\theta}+\cos\mechanical{\theta}\bigr]_0^{2\pi}\\
+ &=(1.0\,\unit{m})^2(4\pi+1-1)\,\unit{N/m}=4\pi\,\unit{N\,m}.
 \end{aligned}
 \tag{2.18}
 $$
@@ -600,6 +600,8 @@ The torque points along $+z$.
 | $\mechanical{\phi},\mechanical{\theta}$ | $\unit{rad}$ | Angle | The angle between vectors or the indicated orientation of the force or wheel. |
 | $\mechanical{l}$ | $\unit{m}$ | Length | The length of the rod. |
 | $\mechanical{R}$ | $\unit{m}$ | Radius | The distance from the center of the wheel to its rim. |
+| $\mechanical{\lambda}$ | $\unit{N\,m^{-1}}$ | Force per unit length | The tangential force per unit rim length on the wheel. |
+| $\mechanical{A}$ | $\unit{m}$ | Amplitude | The amplitude of the particle’s sinusoidal coordinate functions. |
 | $\mechanical{x},\mechanical{y},\mechanical{\vec x}$ | $\unit{m}$ | Position | The particle’s coordinates or the position in the work integral. |
 | $\mechanical{\vec v}$ | $\unit{m\,s^{-1}}$ | Velocity | The first time derivative of the particle’s position. |
 | $\mechanical{\vec a}$ | $\unit{m\,s^{-2}}$ | Acceleration | The time derivative of the particle’s velocity. |

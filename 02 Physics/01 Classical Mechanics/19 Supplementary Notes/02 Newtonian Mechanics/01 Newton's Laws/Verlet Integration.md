@@ -47,7 +47,13 @@ $$
 r_x(t) = r_x(0) + \dot{r}_x(0)t + \frac{1}{2} \ddot{r}_x t^2
 $$
 
-This result is the [Verlet Integration Algorithm](https://en.wikipedia.org/wiki/Verlet_integration), which is the basic way to integrate an equation of motion.
+This result is the exact solution for a constant force. The [Verlet Integration Algorithm](https://en.wikipedia.org/wiki/Verlet_integration) extends this idea to a general force with a time step $\Delta t$. When we add the Taylor expansions of $x(t + \Delta t)$ and $x(t - \Delta t)$, the odd-order terms cancel:
+
+$$
+x_{n+1} = 2x_n - x_{n-1} + a(x_n)\,\Delta t^2 + O(\Delta t^4)
+$$
+
+For a constant force, this step reproduces the result above exactly.
 
 Under Newton’s formalism, we get — in principle — full predictability: by knowing the parameters of our system, we can predict exactly what will happen under a known applied force. 
 

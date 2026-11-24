@@ -1,0 +1,379 @@
+=== 02 Physics/01 Classical Mechanics/08 Fundamentals of Fluid Mechanics/Buoyancy, continuity, and Bernoulli problems.md
+priority: high
+graph: yes
+manim: yes
+summary: The arithmetic checks out, but the note is a loose lecture transcription: it mixes in unrelated topics (gravitation, Doppler), includes meta-commentary about the source pages, and has a broken heading.
+- [Structure] Fix the malformed heading "##### ) — Archimedes' principle". Move "Fluid statics" (pressure, density, the nail example) to the top, because buoyancy depends on it. Move or link out the "Newton's law of universal gravitation" and "Doppler effect" sections, which do not belong in a fluids note.
+- [Simplify] Remove source-referencing sentences such as "The page labels the densities $\rho_1$ and $\rho_2$…", "Find the exit speed $v_2$ for the pipe on the preceding page", "The notes call this the Bernoulli effect", and "The example is titled 'hot air balloon'…". State the physics directly.
+- [Example] Finish the balloon example: give $m_c=\tfrac43\pi r^3(\rho_{\mathrm{air}}-\rho_{\mathrm{He}})-m_b$ and a numerical case (e.g. $r=5\,\mathrm{m}$) instead of stopping at "Solve this equation for $m_c$". In "Displacement and buoyancy", add the one-line inequality $m/\rho_w > m/\rho_{\mathrm{metal}}$ that explains why the water level falls.
+- [Intuition] In the Bernoulli section, say that $P+\tfrac12\rho v^2+\rho gy$ is mechanical energy per unit volume (work done by pressure plus kinetic plus potential energy). Add a one-line caveat to the wing paragraph: Bernoulli describes the pressure difference but does not by itself explain why the upper flow is faster.
+- [Graph] Add a 2D plot for the narrowing pipe at fixed flow rate $R$: $v(A)=R/A$ and $P(A)=P_1+\tfrac12\rho R^2(1/A_1^2-1/A^2)$ against $A$. Alternatively, plot the Torricelli speed $v_1=\sqrt{2g(y_2-y_1)}$ against water depth from 0 to 2 m.
+- [Manim] Animate fluid parcels (dots) moving through a pipe that narrows and then widens. The parcels should speed up in the narrow section while a pressure bar above each section drops, showing $A_1v_1=A_2v_2$ and the Bernoulli pressure drop together.
+- [Structure] The physical-quantities table lists $\mechanical{\rho}$ twice and omits $P$, $v$, $A$, $V_f$, $R$ and $f$. Merge the duplicate row and add the missing symbols.
+=== 02 Physics/01 Classical Mechanics/09 Constraints, Virtual Work, and d’Alembert’s Principle/09.00 Constraints, Virtual Work, and d’Alembert’s Principle.md
+priority: low
+graph: no
+manim: no
+summary: A clear chapter hub with an accurate summary and working links.
+- [Links] The summary skips 09.01 and 09.08–09.13 (Lagrange multipliers, unilateral and rheonomic constraints, worked examples). Add one bullet per missing note so the hub links the whole chapter.
+=== 02 Physics/01 Classical Mechanics/09 Constraints, Virtual Work, and d’Alembert’s Principle/09.01 Motivation and Overview of Constrained Systems.md
+priority: medium
+graph: no
+manim: no
+summary: Motivation stated in the abstract; there is no concrete example of why Newtonian constraint handling becomes painful.
+- [Example] Add a concrete contrast. The planar pendulum in Cartesian form needs $x,y$, the tension $T$ and the constraint $x^2+y^2=\ell^2$ (three unknowns). With $\theta$ it reduces to one equation, $\ddot\theta+(g/\ell)\sin\theta=0$, and $T$ never appears.
+- [Intuition] Add a picture-level sentence: constraint forces only keep the system on its allowed surface. They act perpendicular to every allowed motion, so they do no work, and that is why they can be dropped.
+- [Links] Link each listed concept (degrees of freedom, virtual displacements, virtual work, d'Alembert) to its note 09.02–09.06, and link forward to 10.03.
+=== 02 Physics/01 Classical Mechanics/09 Constraints, Virtual Work, and d’Alembert’s Principle/09.02 Holonomic and Nonholonomic Constraints.md
+priority: medium
+graph: no
+manim: yes
+summary: The definitions are correct, but the nonholonomic case is only asserted; the note never shows why rolling cannot be integrated.
+- [Example] Add the standard vertical rolling disk (coin) on a plane: $\dot x=R\dot\phi\cos\theta$, $\dot y=R\dot\phi\sin\theta$. Show that these cannot be integrated to $f(x,y,\theta,\phi)=0$: any configuration is reachable, yet velocities are restricted.
+- [Intuition] Contrast with the disk rolling on a straight line, where $\dot x=R\dot\phi$ integrates to $x=R\phi+c$ (holonomic). This makes "integrable" concrete.
+- [Manim] Animate a coin that rolls forward, turns, rolls back and turns again (parallel parking). It returns to the same $(x,y)$ with a different $\phi$ or heading, showing visually that velocity constraints do not restrict reachable configurations.
+- [Structure] Introduce the scleronomic/rheonomic terminology before the moving-sphere example, which already uses "rheonomic".
+=== 02 Physics/01 Classical Mechanics/09 Constraints, Virtual Work, and d’Alembert’s Principle/09.03 Generalized Coordinates and Degrees of Freedom.md
+priority: low
+graph: no
+manim: no
+summary: A clear, correct note with good examples; only small gaps remain.
+- [Example] Add the 3D double pendulum ($N=2$, $K=2$, $n=4$) and a rigid dumbbell ($N=2$, $K=1$, $n=5$) to show how counting changes with dimension and constraint type.
+- [Intuition] Explain why a free rigid body has 6 degrees of freedom by counting: 3 non-collinear points give 9 coordinates minus 3 fixed distances, or $3N-K$ with rigid-distance constraints.
+- [Simplify] In "Choice of coordinates", explain why $x=\ell\sin\theta$ works only locally: it is double-valued between the lower and upper half of the circle.
+=== 02 Physics/01 Classical Mechanics/09 Constraints, Virtual Work, and d’Alembert’s Principle/09.04 Virtual Displacements.md
+priority: high
+graph: yes
+manim: yes
+summary: The definition is correct, but the key distinction between virtual and actual displacement (frozen time) is stated without intuition and illustrated only for a scleronomic case, where the two coincide.
+- [Example] Add a rheonomic example where virtual and actual displacements differ. For a bead on a rotating rod or a pendulum with a moving pivot, $d\vec r$ contains $(\partial\vec r/\partial t)dt$, while $\delta\vec r$ stays tangent to the frozen constraint.
+- [Intuition] Explain the freezing of time: "imagine stopping the clock, then nudging the system along the constraint as it is at that instant". This explains why ideal reactions are perpendicular to $\delta\vec r$ but not necessarily to $d\vec r$.
+- [Graph] Add a 2D figure of the pendulum circle $x^2+y^2=\ell^2$ with the bob at $\theta=30^\circ$, the tangent vector $\partial\vec r/\partial\theta=(\ell\cos\theta,\ell\sin\theta)$, and the radial cord, showing $\delta\vec r\perp$ cord.
+- [Manim] Animate an expanding ring $|\vec r|=a(t)$ with a bead on it. Show the actual displacement over $dt$ (an outward-tilted arrow) next to the virtual displacement at frozen $t$ (tangent arrow). The ring radius then advances, and the comparison repeats.
+=== 02 Physics/01 Classical Mechanics/09 Constraints, Virtual Work, and d’Alembert’s Principle/09.05 Principle of Virtual Work.md
+priority: medium
+graph: no
+manim: no
+summary: The theorem and examples are correct. The "ideal constraints" paragraph is dense, and the examples are so simple that the method's advantage over force balance does not show.
+- [Simplify] Split the "Ideal constraints" paragraph into a short bulleted list: frictionless surface (normal reaction ⟂ $\delta\vec r$), rigid link (internal forces cancel), rolling without slipping (contact point has $\delta\vec r=0$), and sliding friction (not ideal).
+- [Example] Add an example where virtual work beats force balance, such as a frictionless ladder or a pantograph/scissor linkage with weight $P$ and horizontal force $F$. Writing $\delta y_P$ and $\delta x_F$ in terms of $\delta\theta$ gives $F=\tfrac12P\cot\theta$-type results without any internal forces.
+- [Intuition] In the lever example, add one sentence on the "golden rule of mechanics": force times displacement is conserved, so $F_1\delta s_1=F_2\delta s_2$.
+- [Links] Link the incline example to 09.07: the cord tension is the generalized force along $s$, and equilibrium is $Q_s=0$.
+=== 02 Physics/01 Classical Mechanics/09 Constraints, Virtual Work, and d’Alembert’s Principle/09.06 d’Alembert’s Equation in Symbolic Form.md
+priority: medium
+graph: no
+manim: no
+summary: A correct, very short statement with no derivation from Newton's law and no example.
+- [Simplify] Add a three-line derivation: $m_i\vec a_i=\vec F_i^{\mathrm{act}}+\vec\Phi_i$. Dot with $\delta\vec r_i$ and sum, then use $\sum_i\vec\Phi_i\cdot\delta\vec r_i=0$ to obtain the theorem. This shows exactly where the ideal-constraint assumption enters.
+- [Example] Add a minimal example, such as a block on a frictionless incline: $(-mg\sin\alpha-m\ddot s)\delta s=0$ gives $\ddot s=-g\sin\alpha$ without the normal force. Alternatively, point explicitly to the worked example in 09.13.
+- [Intuition] Explain the "inertial force" reading: in the instantaneously co-accelerating frame, $-m\vec a$ acts like an extra applied force, so dynamics becomes statics.
+=== 02 Physics/01 Classical Mechanics/09 Constraints, Virtual Work, and d’Alembert’s Principle/09.07 Generalized Forces.md
+priority: low
+graph: no
+manim: no
+summary: Clear and correct, with a good pendulum example; the note could clarify units and the meaning of a generalized force.
+- [Intuition] State that $Q_k$ is "the force component along the direction in which $q_k$ moves the system, times the lever factor". For an angle $Q$ is a torque; for a length it is a force. The table gives units, but the text does not.
+- [Example] Add a second example with two coordinates, such as a bead on a rotating hoop or the double pendulum (exercise 6 in 09.14 asks for exactly $Q_{\theta_1},Q_{\theta_2}$), so the sum over particles is visible.
+- [Structure] The table gives $Q_k$ the unit "—" but $Q_\theta$ the unit N m. Use "J/[q_k]" or similar for consistency.
+=== 02 Physics/01 Classical Mechanics/09 Constraints, Virtual Work, and d’Alembert’s Principle/09.08 Holonomic Constraints in Differential Form.md
+priority: medium
+graph: yes
+manim: no
+summary: Terse. The note never writes the full differential of $f$, overloads $\vec a_i$ (already used for acceleration), and ends with an unrelated callout.
+- [Simplify] Start from the full differential $df=\sum_i(\partial f/\partial\vec r_i)\cdot d\vec r_i+(\partial f/\partial t)dt=0$. Then show that freezing time ($dt=0$) drops the last term to give the virtual-displacement condition. This motivates the title.
+- [Correctness] The coefficients $\vec a_i$ in $\sum_i\vec a_i\cdot d\vec r_i+a_t\,dt=0$ clash with the acceleration $\mechanical{\vec a}_i$ used in 09.06 and 09.13. Rename them (e.g. $\vec c_i$, $c_t$) to avoid confusion.
+- [Intuition] Explain why $\vec\Phi_i=\lambda\,\partial f/\partial\vec r_i$: the gradient is normal to the constraint surface, so it is the only direction that does zero work on every admissible $\delta\vec r$.
+- [Graph] Add a 2D plot of the circle $f=x^2+y^2-\ell^2=0$ with the gradient arrow $(2x,2y)$ and the tangent virtual displacement at one point.
+- [Structure] The closing "Analytical Mechanics" callout about choosing generalized coordinates is unrelated to differential constraints. Move it to 09.03 or remove it.
+=== 02 Physics/01 Classical Mechanics/09 Constraints, Virtual Work, and d’Alembert’s Principle/09.09 Lagrange Multipliers.md
+priority: medium
+graph: yes
+manim: no
+summary: The method and the pendulum result are correct, but the key algebra ("Solving with the constraint gives λ") is skipped.
+- [Simplify] Show the skipped step. Multiply the $x$ equation by $x$ and the $y$ equation by $y$ and add: $m(x\ddot x+y\ddot y)=2\lambda\ell^2-mgy$. Then use $x\ddot x+y\ddot y=-(\dot x^2+\dot y^2)=-\ell^2\dot\theta^2$ (from differentiating the constraint twice) and $y=-\ell\cos\theta$.
+- [Intuition] Explain the meaning of $\lambda$: the reaction is $\lambda\nabla f$, so $\lambda$ times $|\nabla f|=2\ell$ is the tension magnitude. The sign $\lambda<0$ means the force points inward.
+- [Example] Add the energy substitution $v^2=2g\ell(\cos\theta-\cos\theta_0)$ to give $T(\theta)=mg(3\cos\theta-2\cos\theta_0)$, a closed form ready to plot.
+- [Graph] Plot $T/(mg)=3\cos\theta-2\cos\theta_0$ for $\theta\in[-\theta_0,\theta_0]$ with $\theta_0=30^\circ,90^\circ,180^\circ$. This shows the maximum at the bottom and where tension would turn negative.
+- [Structure] State the coordinate convention explicitly: the pivot is at the origin and $y=-\ell\cos\theta$.
+=== 02 Physics/01 Classical Mechanics/09 Constraints, Virtual Work, and d’Alembert’s Principle/09.10 Unilateral Constraints and Inequalities.md
+priority: medium
+graph: yes
+manim: yes
+summary: Correct and fairly clear, but the 2/3 result is quoted without the one-line algebra, and the sign logic for contact loss could be more explicit.
+- [Simplify] Show the algebra: substitute $v^2$ into the radial equation to get $N=mg(3\cos\theta-2)$. Then $N=0$ gives $\cos\theta=2/3$.
+- [Intuition] State the general rule plainly: solve as if the constraint were bilateral, monitor the reaction, and switch to free motion when the required reaction changes sign. Note that the result is independent of $m$, $g$ and $R$.
+- [Graph] Plot $N/(mg)=3\cos\theta-2$ against $\theta\in[0,90^\circ]$. Mark the zero crossing at $48.2^\circ$ and dash the unphysical negative branch.
+- [Manim] Animate a bead sliding over a quarter-circle cap with a shrinking normal-force arrow. At $\theta\approx48.2^\circ$ the arrow vanishes and the bead continues on a parabolic projectile path that clears the surface.
+=== 02 Physics/01 Classical Mechanics/09 Constraints, Virtual Work, and d’Alembert’s Principle/09.11 Systems with Rheonomic Constraints.md
+priority: medium
+graph: yes
+manim: yes
+summary: The result is correct, but the note introduces the Hamiltonian and $T_1,T_0$ before chapter 10 defines them and does not show $H$ conserved while $E$ is not.
+- [Simplify] Show $H=p_r\dot r-L$ explicitly with $p_r=m\dot r$, giving $H=\tfrac12m\dot r^2-\tfrac12m\omega^2r^2$. Name the terms: $T_2$ is the radial part and $T_0$ is $\tfrac12m\omega^2r^2$, while $T_1=0$ here.
+- [Intuition] State the punchline: $H$ is conserved because $L$ has no explicit $t$. $E=T$ is not conserved, because the motor driving the guide does work on the bead through the normal force. Solve $\ddot r=\omega^2r$ to show the exponential escape $r=r_0\cosh\omega t$.
+- [Links] Link forward to 10.02 for $T_2+T_1+T_0$ and to the Hamiltonian/energy-function notes (10.07 and 11.08), since these concepts appear here first.
+- [Graph] Plot $r(t)=r_0\cosh(\omega t)$ together with $E(t)=\tfrac12m(\dot r^2+\omega^2r^2)$ (growing) and $H$ (constant) for $t\in[0,3/\omega]$.
+- [Manim] Animate a rotating rod with a bead sliding outward along it. Show a top-down view with the bead's spiral trajectory traced in the lab frame.
+=== 02 Physics/01 Classical Mechanics/09 Constraints, Virtual Work, and d’Alembert’s Principle/09.12 Worked Examples of Constrained Systems.md
+priority: medium
+graph: yes
+manim: yes
+summary: The equations are correct, but the note uses the Lagrangian and cyclic coordinates before chapter 10 introduces them, and the surface example stops before the equations of motion.
+- [Structure] Either state that the examples preview chapter 10 (link 10.04 and 10.07) or move the spherical pendulum to 10.06, which already contains the same system as "Particle on a Sphere" (duplicate content).
+- [Example] Finish the surface example with $f=\tfrac12\kappa(x^2+y^2)$ (a paraboloid bowl). Write the resulting Euler–Lagrange equations and the small-oscillation frequency $\omega=\sqrt{g\kappa}$.
+- [Intuition] For the conical pendulum, explain $\dot\phi^2=g/(\ell\cos\theta)$ physically (tension components balance gravity and supply the centripetal force) and check the limit $\theta\to0$, where $\dot\phi\to\sqrt{g/\ell}$.
+- [Graph] Add a 3D plot of a spherical-pendulum trajectory on the sphere of radius $\ell$ (numerically integrated, $\theta_0=60^\circ$, small $\dot\phi_0$). It shows the precessing rosette between two latitude circles.
+- [Manim] Animate the spherical pendulum bob precessing in 3D between turning latitudes $\theta_{\min}$ and $\theta_{\max}$, with its trace accumulating.
+=== 02 Physics/01 Classical Mechanics/09 Constraints, Virtual Work, and d’Alembert’s Principle/09.13 d’Alembert’s Equation in Practice.md
+priority: low
+graph: no
+manim: no
+summary: A correct and clear example; it skips the expanded virtual-work sum and keeps a source-notation callout.
+- [Simplify] Show the expanded line before the result: $[-m_1g\sin\alpha-m_1\ddot s]\delta s+[m_2g-m_2\ddot s]\delta s=0$. Readers then see each term's origin.
+- [Example] Add limiting checks: $\alpha=90^\circ$ gives the ordinary Atwood machine, and $m_2=m_1\sin\alpha$ gives equilibrium.
+- [Structure] Remove the "Source notation" callout, which describes a typo in the source rather than physics. The main text is already correct.
+=== 02 Physics/01 Classical Mechanics/09 Constraints, Virtual Work, and d’Alembert’s Principle/09.14 Constraints and Virtual Work Exercises.md
+priority: low
+graph: no
+manim: no
+summary: A good exercise list with correct results; several exercises lack answers.
+- [Structure] Add results for Exercise 6 ($Q_{\theta_1}=-(m_1+m_2)g\ell_1\sin\theta_1$, $Q_{\theta_2}=-m_2g\ell_2\sin\theta_2$) and a short hint for Exercise 8 ($\delta W=\sum_kQ_k\delta q_k=-\sum_k(\partial U/\partial q_k)\delta q_k$ with independent $\delta q_k$).
+- [Links] Link exercises to their source notes (Ex 9 to 09.10, Ex 10 to 09.09, Ex 2 to 09.05) so readers can check the method.
+=== 02 Physics/01 Classical Mechanics/10 Euler–Lagrange Equations/10.00 Euler–Lagrange Equations.md
+priority: low
+graph: no
+manim: no
+summary: A clear chapter hub with accurate formulas.
+- [Links] The summary links only 10.02, 10.04, 10.07 and 10.08. Add one-line bullets for 10.03 (derivation), 10.11 (inertial forces), 10.12 (Rayleigh dissipation) and 10.13–10.16.
+=== 02 Physics/01 Classical Mechanics/10 Euler–Lagrange Equations/10.01 History of Analytical Mechanics.md
+priority: low
+graph: no
+manim: no
+summary: A short, accurate historical overview, adequate for its purpose.
+- [Links] Link to 11.01 (History of the Principle of Least Action), which covers overlapping material in more detail, and consider merging or cross-referencing to avoid duplication.
+=== 02 Physics/01 Classical Mechanics/10 Euler–Lagrange Equations/10.02 Kinetic Energy in Generalized Coordinates.md
+priority: medium
+graph: no
+manim: no
+summary: The decomposition is correct, but the coefficients $a_{kl}$ and $b_k$ are never given and no example shows the three pieces.
+- [Simplify] Give the explicit coefficients: $a_{kl}=\sum_im_i\,\partial_{q_k}\vec r_i\cdot\partial_{q_l}\vec r_i$, $b_k=\sum_im_i\,\partial_{q_k}\vec r_i\cdot\partial_t\vec r_i$, and $T_0=\tfrac12\sum_im_i|\partial_t\vec r_i|^2$.
+- [Example] Add a short example showing all three terms, such as a bead on a rod rotating at $\omega$ ($T_2=\tfrac12m\dot r^2$, $T_1=0$, $T_0=\tfrac12m\omega^2r^2$) or a pendulum with a horizontally moving pivot (where $T_1\ne0$).
+- [Intuition] Add one sentence on why $a_{kl}$ is a "mass metric": it is positive definite, which guarantees that the Euler–Lagrange equations can be solved for $\ddot q$.
+=== 02 Physics/01 Classical Mechanics/10 Euler–Lagrange Equations/10.03 Derivation of Lagrange's Equations.md
+priority: high
+graph: no
+manim: no
+summary: The derivation structure is correct, but the central identity is only asserted ("The proof uses …"), and that identity is the conceptual core of the note.
+- [Simplify] Write out the identity proof in 3–4 lines: $m\vec a\cdot\partial_k\vec r=\tfrac{d}{dt}(m\vec v\cdot\partial_k\vec r)-m\vec v\cdot\tfrac{d}{dt}\partial_k\vec r$. Then substitute the two lemmas to obtain $\tfrac{d}{dt}\partial_{\dot q_k}T-\partial_{q_k}T$. The lecture note "Generalized coordinates and the Hamiltonian" already contains this; reuse it.
+- [Simplify] Show the one-line proof of each lemma: $\vec v=\sum_j\partial_j\vec r\,\dot q_j+\partial_t\vec r$, so $\partial\vec v/\partial\dot q_k=\partial\vec r/\partial q_k$ ("cancellation of dots").
+- [Correctness] Notation is inconsistent with 09.06: here d'Alembert's equation uses $\mechanical{\vec F}_i$, while 09.06 uses $\mechanical{\vec F}_i^{\,\mathrm{act}}$. Use the "act" superscript so that $Q_k$ visibly excludes ideal reactions.
+- [Example] End with a one-coordinate check (e.g. the pendulum with $T=\tfrac12m\ell^2\dot\theta^2$ and $Q_\theta=-mg\ell\sin\theta$) to show that the result reproduces the known equation.
+=== 02 Physics/01 Classical Mechanics/10 Euler–Lagrange Equations/10.04 Lagrangian.md
+priority: medium
+graph: no
+manim: no
+summary: Correct and compact, but it lacks the one-line step from $Q_k=-\partial U/\partial q_k$ to $L=T-U$ and any intuition for why $T-U$.
+- [Simplify] Show the step: because $U$ does not depend on $\dot q$, $\partial L/\partial\dot q_k=\partial T/\partial\dot q_k$. Substituting $Q_k=-\partial U/\partial q_k$ into 10.03 then gives the theorem.
+- [Example] Add the 1D check $L=\tfrac12m\dot x^2-U(x)$, which gives $m\ddot x=-U'(x)$, confirming that the formalism reproduces Newton.
+- [Intuition] Note that $L$ is not unique (link 10.08) and is not an energy. The minus sign makes the trade-off between kinetic and potential energy stationary along the true path (link 11.04).
+- [Links] Name the velocity-dependent-potential generalization (link 10.11 Lorentz force) as the case not covered by "$U(q,t)$".
+=== 02 Physics/01 Classical Mechanics/10 Euler–Lagrange Equations/10.05 Representative Examples of Lagrangian Mechanics.md
+priority: medium
+graph: yes
+manim: yes
+summary: The examples are correct, but the double pendulum stops before its equations of motion, and the note never shows the chaotic behavior that makes it worth studying.
+- [Example] Write out the two double-pendulum Euler–Lagrange equations, or at least their small-angle linearization. Give the normal-mode frequencies for $m_1=m_2$, $\ell_1=\ell_2$: $\omega^2=(2\mp\sqrt2)g/\ell$.
+- [Intuition] For central motion, interpret $-mr\dot\phi^2$ on the left as the centrifugal term and point out that the $\phi$ equation is Kepler's second law.
+- [Graph] Plot $\theta_2(t)$ for two double-pendulum runs whose initial angles differ by $10^{-3}$ rad ($\theta_1=\theta_2=120^\circ$, $t\in[0,20]$ s). The divergence shows sensitivity to initial conditions.
+- [Manim] Animate the double pendulum from a large initial angle, with the lower bob leaving a fading trace. Optionally run a second, slightly perturbed copy in another color to show divergence.
+=== 02 Physics/01 Classical Mechanics/10 Euler–Lagrange Equations/10.06 Worked Examples of Lagrangians.md
+priority: medium
+graph: yes
+manim: yes
+summary: The pivot and Kapitza results are correct, but the double-Atwood example is only described, and "Particle on a Sphere" duplicates the spherical pendulum in 09.12.
+- [Example] Complete the double Atwood machine: write $T(\dot q_1,\dot q_2)$ and $U$ explicitly and give $\ddot q_1,\ddot q_2$. "Gives $\ddot q$ in terms of gravity and the mass ratios" is not a worked example.
+- [Correctness] The oscillating-pivot example mixes coordinate names: it says "Take the $z$ axis upward" but writes the vertical bob coordinate as $\mechanical{y}=\mechanical{z}_0-\mechanical{\ell}\cos\mechanical{\theta}$ with pivot height $z_0$. Use one vertical coordinate name. The "Take the $z$ axis upward" sentence also sits in the sphere example after the energies that already use it.
+- [Intuition] Explain the effective-gravity reading of $\ell\ddot\theta+(g+\ddot z_0)\sin\theta=0$: an accelerating pivot behaves like modified gravity $g_{\mathrm{eff}}(t)$. Mention the averaged effective potential behind Kapitza's condition $A^2\Omega^2>2g\ell$.
+- [Graph] Plot the Kapitza effective potential $U_{\mathrm{eff}}(\theta)=mg\ell\cos\theta+\tfrac{m A^2\Omega^2}{4}\sin^2\theta$ (inverted convention) for $A^2\Omega^2/(g\ell)=1,2,4$. This shows the minimum appearing at $\theta=0$ once the ratio exceeds 2.
+- [Manim] Animate an inverted pendulum on a rapidly vibrating pivot next to an identical one with a fixed pivot. The driven one stays upright while the undriven one falls.
+- [Structure] Merge "Particle on a Sphere" with the spherical pendulum in 09.12, or cross-link them, to remove the duplication.
+=== 02 Physics/01 Classical Mechanics/10 Euler–Lagrange Equations/10.07 Cyclic Coordinates and Conjugate Momenta.md
+priority: low
+graph: yes
+manim: no
+summary: Clear and correct; it would benefit from showing the reduction to an effective 1D problem and from noting that conjugate momentum is not always mechanical momentum.
+- [Simplify] Show the one-line proof: the Euler–Lagrange equation with $\partial L/\partial q_k=0$ gives $dp_k/dt=0$.
+- [Intuition] Note that $p_k$ need not equal $m\dot q$. It can be an angular momentum, or include $q\vec A$ in a magnetic field (link 10.11). Its units depend on $q_k$.
+- [Graph] Plot the central-motion effective potential $U_{\mathrm{eff}}(r)=-k/r+p_\phi^2/(2mr^2)$ with an energy line $E<0$ that marks the turning points. This illustrates "reduces to one-dimensional motion in $r$".
+=== 02 Physics/01 Classical Mechanics/10 Euler–Lagrange Equations/10.08 Equivalent Lagrangians.md
+priority: low
+graph: no
+manim: no
+summary: Correct and concise; one concrete example would help.
+- [Example] Add a direct check: for $L'=L+\tfrac{d}{dt}f(q,t)$, show $\tfrac{d}{dt}\partial_{\dot q}(\dot f)-\partial_q\dot f=0$. Give a concrete case such as $L'=\tfrac12m\dot x^2+m g\dot x\,t$ compared with $L=\tfrac12m\dot x^2-mgx$ (they differ by $\tfrac{d}{dt}(mgxt)$).
+- [Links] Link to 10.14 and 11.09, where Galilean boosts give exactly such a total-derivative change.
+=== 02 Physics/01 Classical Mechanics/10 Euler–Lagrange Equations/10.09 Advantages of the Lagrangian Formulation.md
+priority: low
+graph: no
+manim: no
+summary: A short, accurate summary list; it works as a reference note.
+- [Structure] Remove or reword the redundant "Analytical Mechanics" callout, which repeats the coordinate-change bullet. Consider adding a "Limitations" bullet: nonholonomic constraints need multipliers, and dissipation needs a Rayleigh function (link 10.12).
+=== 02 Physics/01 Classical Mechanics/10 Euler–Lagrange Equations/10.10 Lagrangian of a Rigid Body.md
+priority: medium
+graph: no
+manim: yes
+summary: The Euler-angle formulas are correct, but the note stops at "reduce to an equation in θ" without giving the conserved momenta or the effective potential, and it never says which way θ is measured.
+- [Correctness] State that $\theta$ is measured from the upward vertical. With $U=+Mgd\cos\theta$, $L=T_{\mathrm{rot}}-Mgd\cos\theta$ is only correct for that convention; elsewhere in the chapter $\theta$ is measured from the downward vertical.
+- [Example] Write $p_\psi=I_3(\dot\psi+\dot\phi\cos\theta)$ and $p_\phi=I_1\dot\phi\sin^2\theta+p_\psi\cos\theta$. Then write the effective 1D energy $E'=\tfrac12I_1\dot\theta^2+U_{\mathrm{eff}}(\theta)$, and mention steady precession and nutation.
+- [Simplify] Explain the Euler-angle sequence with a labeled 3-step figure or list. The z–x–z convention is hard to visualize from the text alone.
+- [Manim] Animate the Euler-angle composition on a 3D body frame: rotate by $\phi$ about $\hat z$, then by $\theta$ about the line of nodes, then by $\psi$ about the body axis. Then show a heavy top precessing and nodding.
+=== 02 Physics/01 Classical Mechanics/10 Euler–Lagrange Equations/10.11 Inertial Forces in the Lagrangian Formulation.md
+priority: medium
+graph: no
+manim: yes
+summary: The radial equation and its decomposition are correct, but the note omits the angular equation, which carries the transverse Coriolis force, and asserts the Lorentz-force result without derivation.
+- [Example] Add the $\phi$ equation: $\tfrac{d}{dt}[m\rho^2(\dot\phi+\Omega)]=0$, i.e. $\rho\ddot\phi=-2\dot\rho(\dot\phi+\Omega)$. Its term $-2\dot\rho\Omega$ is the familiar sideways Coriolis deflection.
+- [Simplify] For the electromagnetic Lagrangian, sketch the $x$-component derivation: $p_x=m\dot x+qA_x$. Then $\tfrac{d}{dt}(qA_x)$ produces $\partial_tA_x+(\vec v\cdot\nabla)A_x$, which combines into $(\vec v\times\vec B)_x$. Alternatively, link a note where this is done.
+- [Intuition] Emphasize that the particle is free in the lab: the "forces" arise only because the coordinates rotate. Contrast with the lab-frame Lagrangian, where they are absent.
+- [Manim] Animate a free particle moving in a straight line in the lab frame next to the same motion seen in a co-rotating frame (curved path). Label the centrifugal and Coriolis arrows in the rotating view.
+=== 02 Physics/01 Classical Mechanics/10 Euler–Lagrange Equations/10.12 Dissipative Forces and the Rayleigh Dissipation Function.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and readable; it lacks the physical meaning of $\mathcal R$ (half the dissipated power) and mixes Cartesian and generalized notation.
+- [Intuition] State that $2\mathcal R=\sum b\,\dot q^2$ is the rate at which friction dissipates energy, so $dE/dt=-2\mathcal R$ for a quadratic $\mathcal R$. This explains its units (W).
+- [Simplify] The sentence "linear friction $\vec F_r=-b\vec v$ in Cartesian coordinates, use $\mathcal R=\tfrac12\sum_ib_i\dot q_i^2$" mixes Cartesian particles and generalized coordinates. Write $\mathcal R=\tfrac12\sum_ib_i|\vec v_i|^2$ first, then express it in $q$.
+- [Graph] Plot $x(t)$ for the damped oscillator with $\omega_0=1$ and $\zeta=0.1,1,2$ (under-, critically and overdamped), $t\in[0,20]$, together with the decaying energy $E(t)$ for $\zeta=0.1$.
+=== 02 Physics/01 Classical Mechanics/10 Euler–Lagrange Equations/10.13 Lagrangian for Systems of Multiple Particles.md
+priority: low
+graph: no
+manim: yes
+summary: Correct, but the center-of-mass separation is stated without the substitution step.
+- [Simplify] Show $\vec r_1=\vec R+(m_2/M)\vec r$ and $\vec r_2=\vec R-(m_1/M)\vec r$. Substituting these makes the cross terms cancel, giving $\tfrac12M\dot R^2+\tfrac12\mu\dot r^2$.
+- [Intuition] Give limiting cases: $m_2\gg m_1$ gives $\mu\to m_1$ (a fixed Sun), and $m_1=m_2$ gives $\mu=m/2$. Note that "constant velocity" of the CM requires no external forces.
+- [Manim] Animate two bodies orbiting their common center of mass on ellipses. Then switch to the equivalent single body of mass $\mu$ orbiting a fixed center on the relative-orbit ellipse.
+=== 02 Physics/01 Classical Mechanics/10 Euler–Lagrange Equations/10.14 Lagrangian and the Galilean Principle of Relativity.md
+priority: high
+graph: no
+manim: no
+summary: Landau's argument is compressed into a few sentences that skip the key assumptions (homogeneity, isotropy, so that $L=L(v^2)$) and the logical step that forces $\partial L/\partial v^2$ to be constant.
+- [Simplify] Restructure in steps. (1) Homogeneity of space and time means $L$ cannot depend on $\vec r$ or $t$. (2) Isotropy then means $L=L(v^2)$. (3) A boost by $\vec V$ gives $\delta L=2(\partial L/\partial v^2)\vec v\cdot\vec V$. (4) This is a total derivative of a function of $(\vec r,t)$ only if $\partial L/\partial v^2$ is constant, so $L=\tfrac12mv^2$.
+- [Correctness] The sentence "the velocity derivative of $L$ is therefore linear in velocity up to a constant" misplaces the argument. Rotational symmetry must be used before the boost step, not after, to reach $L=\tfrac12mv^2$. Restate it in the order above.
+- [Intuition] Explain "positive for stability" more precisely: $m>0$ is needed for the action to have a minimum (Landau), equivalently for kinetic energy to be bounded below.
+- [Example] Close the loop with a check: for $L=\tfrac12mv^2$, the boost gives $\delta L=m\vec v\cdot\vec V+\tfrac12mV^2=\tfrac{d}{dt}(m\vec r\cdot\vec V+\tfrac12mV^2t)$. Link 11.09.
+=== 02 Physics/01 Classical Mechanics/10 Euler–Lagrange Equations/10.15 Lagrangian and Symmetries.md
+priority: low
+graph: yes
+manim: no
+summary: A clear and correct overview; it overlaps with 10.07, 10.10 and 11.08.
+- [Structure] Trim the repeated central-motion and symmetric-top paragraphs (already in 10.07, 10.10 and 10.05) to one line each with links. Keep this note as the symmetry-to-conservation overview.
+- [Graph] If the central-motion paragraph stays, add the $U_{\mathrm{eff}}(r)=-k/r+L_z^2/(2mr^2)$ plot with bound and unbound energy levels, shared with 10.07.
+=== 02 Physics/01 Classical Mechanics/10 Euler–Lagrange Equations/10.16 Advanced Examples of Lagrangians for Constrained Systems.md
+priority: medium
+graph: yes
+manim: yes
+summary: All three results are correct, but the interpretation stops at the equation of motion; equilibria and resonance behavior, the physically interesting parts, are missing.
+- [Example] For the rotating inclined guide, give the equilibrium $s^*=g\sin\alpha/(\Omega^2\cos^2\alpha)$. State that it is unstable, since the linearized equation has a positive restoring coefficient $+\Omega^2\cos^2\alpha$.
+- [Example] For the horizontally driven pendulum, solve the small-angle driven oscillator: $\ddot X=-A\Omega^2\sin\Omega t$ gives steady state $\theta=\frac{A\Omega^2/\ell}{\omega_0^2-\Omega^2}\sin\Omega t$, with resonance at $\Omega=\sqrt{g/\ell}$.
+- [Intuition] For the Atwood machine, add limiting checks ($m_2=0$ gives free fall, $m_1=m_2$ gives no acceleration) and note that tension never appears.
+- [Graph] Plot the steady-state amplitude $|\theta_{\max}|/(A/\ell)=\Omega^2/|\omega_0^2-\Omega^2|$ against $\Omega/\omega_0\in[0,3]$, with the resonance asymptote dashed.
+- [Manim] Animate the pendulum with a horizontally oscillating pivot near resonance, with the amplitude growing. Optionally add a second panel driven far below resonance, where the bob follows the pivot.
+=== 02 Physics/01 Classical Mechanics/10 Euler–Lagrange Equations/10.17 Euler–Lagrange Exercises.md
+priority: low
+graph: no
+manim: no
+summary: A good exercise set with correct results; a few results are missing, and the oscillator-frequency macros are inconsistent.
+- [Structure] Add results for Exercises 2, 8 and 9. For Ex 9 give the Lagrangian $L=\tfrac12I_1(\dot\theta^2+\dot\phi^2\sin^2\theta)+\tfrac12I_3(\dot\psi+\dot\phi\cos\theta)^2-Mgd\cos\theta$, with cyclic $\phi$ and $\psi$. For Ex 5 give the Lagrangian (link 10.05) rather than only "no cyclic coordinates".
+- [Correctness] Exercise 4 writes the natural frequency as $\mechanical{\omega}$, while Exercise 12 uses $\signal{\omega}$ for the same kind of quantity. Pick one semantic group for oscillator angular frequency across the note (Ex 3 and Ex 10 correctly use $\mechanical{\omega}$ for an imposed rotation rate).
+=== 02 Physics/01 Classical Mechanics/10 Euler–Lagrange Equations/Generalized coordinates and the Hamiltonian.md
+priority: high
+graph: yes
+manim: yes
+summary: The mathematics is correct, but the note is a raw lecture transcription: personal margin notes, handwriting commentary, duplicated Hamiltonian derivations, uncolored θ, and $\mathcal L$/$\mathcal H$ notation inconsistent with the rest of the chapter.
+- [Structure] Delete transcription artifacts: "A margin reminder says to ask Fana for Friday’s notes", "The margin shows a rotating object with a rate of 22.0 rev/min…", "The handwritten one-dimensional line omits this minus sign…", "The handwriting repeats the $z$ denominator…", and "The notes call the second identity…".
+- [Structure] The sections "Hamiltonian and conservation of energy", "Time derivative of the Lagrangian" and "Hamilton’s equations" each re-derive $dH/dt=-\partial L/\partial t$. Merge them into one derivation followed by the canonical equations.
+- [Correctness] Macro usage is inconsistent. The angle $\theta$ and $\dot\theta$ are left uncolored in the elastic pendulum and cylindrical sections, while $\mechanical{\ell}$ and $\mechanical{x}$ are colored. The note also uses $\energy{\mathcal L}$ and $\energy{\mathcal H}$, while chapters 9–11 use $\energy{L}$ and $\energy{H}$. Use $\mechanical{\theta}$ and the chapter's $L/H$ symbols.
+- [Example] Extend the free-particle Hamiltonian example to the harmonic oscillator, $H=p^2/2m+\tfrac12kx^2$. Show Hamilton's equations reproducing $m\ddot x=-kx$.
+- [Graph] Add a phase-space plot of harmonic-oscillator trajectories $H(x,p)=E$ for $E=0.5,1,2$ (ellipses, $m=k=1$) as level curves, with flow arrows from $\dot x=p/m$, $\dot p=-kx$.
+- [Manim] Animate the elastic pendulum swinging and stretching, linked to a moving point on its $(x,\theta)$ trajectory. This shows the energy exchange between the radial and angular modes.
+=== 02 Physics/01 Classical Mechanics/11 Hamilton's Principle and Symmetries/11.00 Hamilton's Principle and Symmetries.md
+priority: low
+graph: no
+manim: no
+summary: A clear chapter hub with an accurate summary.
+- [Links] Link each summary bullet to its note (11.02 action, 11.04 stationary action, 11.06 symmetry, 11.07 Noether, 11.08 conserved charges, 11.09 boosts), as the 09.00 and 10.00 hubs do.
+=== 02 Physics/01 Classical Mechanics/11 Hamilton's Principle and Symmetries/11.01 History of the Principle of Least Action.md
+priority: low
+graph: yes
+manim: no
+summary: An accurate, readable history; one visual would ground the optics analogy.
+- [Graph] Add a 2D figure of Heron's reflection: source $A=(-1,1)$, observer $B=(1,1)$, mirror $y=0$. Plot path length $L(x)=\sqrt{(x+1)^2+1}+\sqrt{(1-x)^2+1}$ against the reflection point $x\in[-2,2]$, with its minimum at $x=0$ (equal angles).
+- [Links] Cross-link 10.01 (overlapping history) and the Fermat/Snell derivation, if one exists in the optics notes.
+=== 02 Physics/01 Classical Mechanics/11 Hamilton's Principle and Symmetries/11.02 Action Functional.md
+priority: medium
+graph: yes
+manim: yes
+summary: The definition is correct but bare; it lacks a concrete evaluation of $S$ for different paths, which is what makes "functional" meaningful.
+- [Example] Compute $S$ for a free particle or for a ball in gravity going from $(0,0)$ to $(T,0)$. Use the trial paths $x(t)=at(T-t)$ and show that $S(a)$ is a parabola in $a$, minimized at the physical value $a=g/2$.
+- [Graph] Plot $S(a)$ against $a$ for that family ($m=1$, $g=9.8$, $T=1$). Optionally show the trial paths $x(t)$ for several $a$ in a second panel.
+- [Manim] Animate a family of trial paths between fixed endpoints morphing continuously. A live readout shows $S$ decreasing to its minimum at the true parabola.
+- [Correctness] Notation is inconsistent: here $S$ is uncolored, while the hub 11.00 writes $\energy{S}$. Use one form across the chapter.
+=== 02 Physics/01 Classical Mechanics/11 Hamilton's Principle and Symmetries/11.03 Detailed Example of the Brachistochrone.md
+priority: high
+graph: yes
+manim: yes
+summary: The cycloid result and slope parametrization are correct, but the key step from Beltrami to the cycloid is skipped, and the brachistochrone is the classic case where a visual comparison of paths teaches the most.
+- [Simplify] Show the Beltrami step explicitly. With depth $h=y_A-y$, $F=\sqrt{1+h'^2}/\sqrt{2gh}$ gives $h(1+h'^2)=2R$ (constant). Then substitute $h=R(1-\cos\theta)$ to recover the parametric cycloid.
+- [Correctness] The travel time is written $T$, which clashes with kinetic energy $\energy{T}$ used throughout chapters 10–11. Rename it $t_{AB}$ or $\tau$, and use $\mathrm{d}\mechanical{x}$ consistently: the integral ends in uncolored $dx$.
+- [Graph] Plot the straight line, a circular arc and the cycloid from $A=(0,0)$ to $B=(\pi R,-2R)$ with $R=1$. Annotate each with its numerically computed descent time.
+- [Manim] Animate three beads released together on a straight ramp, a circular arc and a cycloid between the same endpoints. The cycloid bead arrives first. Then show the tautochrone: beads released at different heights on the cycloid arrive at the bottom simultaneously.
+- [Structure] The section "Fixed endpoints and the choice of coordinate" is abstract. Either give the depth-as-independent-variable calculation explicitly or shorten it to one sentence with the link.
+=== 02 Physics/01 Classical Mechanics/11 Hamilton's Principle and Symmetries/11.04 Stationary Action Principle.md
+priority: medium
+graph: yes
+manim: no
+summary: A clean, correct derivation; it lacks intuition for "stationary" and an example of a path that is a saddle rather than a minimum.
+- [Intuition] Explain the fundamental lemma in words: if $\int g(t)\delta q(t)dt=0$ for every bump $\delta q$ vanishing at the ends, then $g\equiv0$. A bump localized where $g\ne0$ would give a nonzero integral.
+- [Example] Illustrate "minimum only for short intervals" with the harmonic oscillator. For $T<\pi/\omega$ the action is a true minimum. Beyond half a period it becomes a saddle, because the variation $\delta x=\epsilon\sin(\pi t/T)$ gives $\delta^2S\propto(\pi^2/T^2-\omega^2)$.
+- [Graph] Plot $\delta^2S/\epsilon^2=\tfrac{mT}{4}(\pi^2/T^2-\omega^2)$ against $T\omega\in[0,2\pi]$. The sign change at $T=\pi/\omega$ shows where "least" fails.
+=== 02 Physics/01 Classical Mechanics/11 Hamilton's Principle and Symmetries/11.05 Variational Equations and Calculus of Variations.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct but extremely brief; it names geodesics and minimal surfaces without solving even the simplest one.
+- [Example] Work the shortest path in the plane: $F=\sqrt{1+y'^2}$ gives $y'=$ const, a straight line. Optionally add the Beltrami identity for $F$ without explicit $x$, linking 11.03.
+- [Graph] Plot the straight line between $(0,0)$ and $(1,1)$ against perturbed curves $y=x+\epsilon\sin(\pi x)$ for $\epsilon=\pm0.2$, with their arc lengths annotated.
+- [Links] Link 11.03 (brachistochrone) and the math notes on calculus of variations ("Variational modeling of paths and surfaces").
+=== 02 Physics/01 Classical Mechanics/11 Hamilton's Principle and Symmetries/11.06 Symmetry Transformations.md
+priority: medium
+graph: no
+manim: no
+summary: The definition is correct, but the examples are restatements ("symmetry when L is invariant") rather than checks, and the time-translation example does not fit the $q\to q'$ definition.
+- [Example] Replace the circular examples with explicit checks. For two particles with $U(|\vec r_1-\vec r_2|)$, the shift $\vec r_i\to\vec r_i+\varepsilon\hat n$ leaves both $T$ and $U$ unchanged. For a rotation, $|\vec v|$ and $|\vec r_1-\vec r_2|$ are invariant.
+- [Correctness] Time translation $t\to t+\varepsilon$ is not of the form $q\to q'(\varepsilon)$ used in Definition 11.2. Recast it as $q(t)\to q(t+\varepsilon)$, i.e. $\eta=\dot q$ with $\delta L=\varepsilon\,dL/dt$ ($f=L$) when $\partial L/\partial t=0$, so that it fits the definition.
+- [Example] Add a non-example: the uniform gravity potential $mgz$ breaks vertical translation symmetry. This links to 11.08's example.
+=== 02 Physics/01 Classical Mechanics/11 Hamilton's Principle and Symmetries/11.07 Noether's Theorem.md
+priority: high
+graph: no
+manim: no
+summary: The statement is correct, but the proof sketch is hard to follow without equations, and the note has no example of computing a charge.
+- [Simplify] Write the proof in equations: $\delta L=\sum_k(\partial_{q_k}L\,\eta_k+\partial_{\dot q_k}L\,\dot\eta_k)\varepsilon$. Use the Euler–Lagrange equations to rewrite this as $\varepsilon\tfrac{d}{dt}\sum_kp_k\eta_k$, then set it equal to $\varepsilon\dot f$ to get $\dot Q=0$.
+- [Example] Add one short example inline, such as a free particle under translation $\eta=\hat n$ with $f=0$, giving $Q=\vec p\cdot\hat n$. Point to 11.08 for the others.
+- [Intuition] Add a one-sentence takeaway: "If shifting the system along a direction costs nothing, the momentum along that direction never changes". Note also that the theorem needs a continuous symmetry; a discrete one like parity gives no conserved charge of this kind.
+=== 02 Physics/01 Classical Mechanics/11 Hamilton's Principle and Symmetries/11.08 Energy, Momentum, and Angular Momentum as Conserved Charges.md
+priority: medium
+graph: no
+manim: no
+summary: The momentum and angular-momentum derivations are correct. The energy case is hand-waved ("changes the integration limits") instead of derived with the Noether formula.
+- [Simplify] Derive energy with the same Noether formula. For $\partial L/\partial t=0$, the shift $q(t)\to q(t+\varepsilon)$ has $\eta_k=\dot q_k$ and $\delta L=\varepsilon\,dL/dt$, so $f=L$ and $Q=\sum_kp_k\dot q_k-L=E$. This replaces "changes the integration limits".
+- [Simplify] For angular momentum, show the one-line vector identity $\vec p_i\cdot(\hat n\times\vec r_i)=\hat n\cdot(\vec r_i\times\vec p_i)$ that gives $\hat n\cdot\vec L$.
+- [Example] In the gravity example, explain why $L_x,L_y$ are not conserved: tilting the horizontal axis changes $mgz$. Add a case where $E\ne T+U$ but $E$ is still conserved, such as the rotating guide in 09.11.
+=== 02 Physics/01 Classical Mechanics/11 Hamilton's Principle and Symmetries/11.09 Equivalent Lagrangians from Symmetry.md
+priority: medium
+graph: yes
+manim: no
+summary: The boost calculation and the charge $\vec G=m\vec r-\vec Pt$ are correct, but the note skips applying the Noether formula, and the closing field-theory callout is vague.
+- [Simplify] Show the Noether formula step: with $\eta=\vec Vt$ and $f=m\vec r\cdot\vec V$, $Q=m\dot{\vec r}\cdot\vec Vt-m\vec r\cdot\vec V=-\vec V\cdot(m\vec r-\vec pt)$. This explains "up to sign".
+- [Intuition] Interpret $\vec G$ as "initial position of the center of mass": $\vec G/M=\vec R(t)-\vec Vt$ is constant. For many particles, sum to obtain $M\vec R-\vec Pt$.
+- [Graph] Plot $x(t)$ for a free particle together with the constant $G_x=mx-p_xt$ ($m=1$, $x_0=1$, $v=2$, $t\in[0,3]$) to show visibly what is conserved.
+- [Structure] The "Analytical Mechanics" callout ends with "The source refers to the electromagnetic Lagrangian density in this example", which is meta-commentary. Remove it, or state the U(1) Noether current $j^\mu$ briefly with a link.

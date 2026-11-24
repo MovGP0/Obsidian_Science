@@ -156,7 +156,7 @@ $$
 
 ##### Comparing both sides of the vector triple product
 
-For the planar vectors on [[#Work along path a|the section on Work along path a]],
+For the planar vectors on [[#BAC–CAB rule|the section on BAC–CAB rule]],
 
 $$
 \vec A\cdot\vec C=A_xC_x+A_yC_y,
@@ -217,7 +217,7 @@ $$
 
 ##### Rocket momentum problem
 
-The rocket sketch again shows exhaust leaving downward at relative speed $\mechanical{v}_{\mathrm{ex}}$. The margin repeats the starting expressions from the discussion, $\mechanical{F}_{\mathrm{ext}}=-\mechanical{m}\mechanical{g}$ and $\mathrm d\mechanical{m}/\mathrm dt=-\mechanical{\alpha}$. The momentum derivative equated to gravity must account for rocket and emitted fuel, as in the balance on [[Rocket momentum, centers of mass, and internal torque#Center of mass of a semicircular wire|the section on Center of mass of a semicircular wire]].
+The rocket sketch again shows exhaust leaving downward at relative speed $\mechanical{v}_{\mathrm{ex}}$. The margin repeats the starting expressions from the discussion, $\mechanical{F}_{\mathrm{ext}}=-\mechanical{m}\mechanical{g}$ and $\mathrm d\mechanical{m}/\mathrm dt=-\mechanical{\alpha}$. The momentum derivative equated to gravity must account for rocket and emitted fuel, as in the balance on [[Rocket momentum, centers of mass, and internal torque#Rocket momentum balance|the section on Rocket momentum balance]].
 
 ##### Integrating the rocket equation in gravity
 
@@ -459,11 +459,11 @@ $$
 =\frac{\partial\energy{U}}{\partial t}.
 $$
 
-The notes mark this lecture “absent” and give March 20 for Midterm 2. They review $\mathrm d\energy{T}=\mechanical{\vec F}\cdot\mathrm d\mechanical{\vec r}$, the path-independent work of a conservative position-dependent force, and the choice $\energy{U}(\mechanical{\vec r}_0)=0$. Stokes’s theorem is restated for a general vector field $\vec A$.
+The notes mark this lecture “absent” and give March 20 for Midterm 2. They review $\mathrm d\energy{T}=\mechanical{\vec F}\cdot\mathrm d\mechanical{\vec r}$, the path-independent work of a conservative position-dependent force, and the choice $\energy{U}(\mechanical{\vec r}_0)=0$. Stokes’s theorem is restated for a general vector field $\vec G$.
 
 $$
-\int_S(\nabla\times\vec A)\cdot\mathrm d\mechanical{\vec A}
-=\oint_{\partial S}\vec A\cdot\mathrm d\mechanical{\vec r}.
+\int_S(\nabla\times\vec G)\cdot\mathrm d\mechanical{\vec A}
+=\oint_{\partial S}\vec G\cdot\mathrm d\mechanical{\vec r}.
 $$
 
 ##### Closed paths and the curl

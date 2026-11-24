@@ -1,0 +1,33 @@
+=== 02 Physics/01 Classical Mechanics/19 Supplementary Notes/05 Lagrangian Mechanics/D'Alembert's principle.md
+- FIXED | Inertial force written as F=ma; principle should be sum (F_a - m a)·δr = 0 | Rewrote first sentence: inertial force F_I = -m a, added sum_i (F_i^(a) - m_i a_i)·δr_i = 0 and the statement that ideal constraint forces do no virtual work (no Glossary entry exists to align with)
+=== 02 Physics/01 Classical Mechanics/19 Supplementary Notes/05 Lagrangian Mechanics/Double pendulum.md
+- FIXED | Wrong ∂L/∂θ̇1 and ∂L/∂θ1 | Re-derived from L; set ∂L/∂θ̇1 = (m1+m2)l1²θ̇1 + m2 l1 l2 θ̇2 cos(θ1-θ2) and ∂L/∂θ1 = -m2 l1 l2 θ̇1θ̇2 sin(θ1-θ2) - (m1+m2) g l1 sinθ1; also corrected the dependent d/dt(∂L/∂θ̇1) entry
+- FIXED | Wrong ∂L/∂θ2, d/dt ∂L/∂θ̇2 and row header | Set ∂L/∂θ2 = +m2 l1 l2 θ̇1θ̇2 sin(θ1-θ2) - m2 g l2 sinθ2; d/dt term now includes m2 l1 l2 θ̈1 cos(θ1-θ2) - m2 l1 l2 θ̇1(θ̇1-θ̇2) sin(θ1-θ2); row header changed to ∂L/∂θ̇_i
+=== 02 Physics/01 Classical Mechanics/19 Supplementary Notes/05 Lagrangian Mechanics/Principle of Least Action.md
+- FIXED | Examples are least-time / minimum-energy principles, not action; action is stationary | Relabelled the list as analogous variational principles (Fermat least time, static potential energy for catenary) and added that the action is stationary, not necessarily minimal (file is CRLF; line endings preserved)
+- FIXED | Time axis vertical only in spacetime diagrams | Restricted the note to spacetime diagrams in physics
+=== 02 Physics/01 Classical Mechanics/19 Supplementary Notes/06 Hamiltonian Mechanics/Hamiltonian Equation.md
+- FIXED | H = T + V only a special case | Added H = sum_k p_k q̇_k - L as definition and stated H = T + V for T quadratic in velocities with time-independent constraints and potential
+=== 02 Physics/01 Classical Mechanics/19 Supplementary Notes/07 Glossary/Action.md
+- FIXED | EM field action has units J·m with d^4x = d(ct)d^3x | Added 1/c to both terms and the note d^4x = d(ct) d^3x so [S] = J s (consistent with Einstein–Hilbert row)
+- FIXED | ds is not the proper-time element | Changed to "ds = c dτ is the line element (dτ the proper time)"
+=== 02 Physics/01 Classical Mechanics/19 Supplementary Notes/07 Glossary/Energy.md
+- FIXED | Work–energy theorem relates net work to kinetic energy | Formula now ΔK = W_net = ∫F_net·dx, quantities and note updated (mechanical energy changes only by non-conservative work)
+=== 02 Physics/01 Classical Mechanics/19 Supplementary Notes/07 Glossary/Impulse.md
+- FIXED | Radiation pressure impulse per area has pressure on right side and missing 1/A | Formula now J/A = Δp/A = 2E_inc/(cA)
+- FIXED | Kick operator sign gives -Δp | Changed to exp(+i Δp·x̂/ħ), since U†p̂U = p̂ + Δp
+=== 02 Physics/01 Classical Mechanics/19 Supplementary Notes/07 Glossary/Momentum.md
+- FIXED | Radiation pressure row dimensionally wrong | Now P_rad = 2I/c ⇒ Δp = (2IAΔt/c) n̂ = (2E_inc/c) n̂ (renamed pressure symbol to P_rad to avoid clash with momentum p)
+- FIXED | Equation with viscous stress is Cauchy/Navier–Stokes, not Euler | Relabelled to "Cauchy form" and added note that the Euler equation is the inviscid case τ = 0
+=== 02 Physics/01 Classical Mechanics/20 Rotational Motion/01 Rotational Kinematics/01 Preliminary Definitions.md
+- FIXED | Earth rotation period is sidereal day ~23 h 56 min | Changed to "once per sidereal day (about 23 h 56 min)"
+- PARTLY | Radii should use \mechanical; figure lacks radius labels | Applied \mechanical{r}_A, \mechanical{r}_B in caption and table; figure labels left unchanged (caption describes radii, adding plot labels is out of scope)
+=== 02 Physics/01 Classical Mechanics/20 Rotational Motion/01 Rotational Kinematics/02 Rotational Motion with Constant Speed.md
+- FIXED | Misworded lead-in to Eq. 1.14; table θ⃗/S⃗; ds vs S; unused y row | Lead-in now "The linear velocity of the point is related to the angular velocity by"; table lists θ with dθ⃗ and S with dS⃗; Eq. 1.17 and text use dS; removed "Path length s" and unused y rows
+=== 02 Physics/01 Classical Mechanics/20 Rotational Motion/01 Rotational Kinematics/03 Acceleration in Rotational Motion.md
+- FIXED | a = dv/dt only tangential; wrong section ref; editorial callout | Text now "the tangential acceleration is the rate of change of speed, a_t = dv/dt"; "Section 3.2" to "Section 1.3.2"; removed the editorial callout after Eq. 1.30
+- FIXED | θ reused in Eq. 1.33; unused d row | Renamed to β in Eq. 1.33, Fig. 1.12 label and table; removed the unused d row
+=== 02 Physics/01 Classical Mechanics/20 Rotational Motion/01 Rotational Kinematics/04 Rotational versus Linear Motion - Analogies.md
+- FIXED | θ reused for total-acceleration direction | Renamed to β in Eq. 1.43 and stated it is measured from the centripetal (inward radial) direction toward the tangential direction; added β row to table
+- FIXED | 162.15 m/s² overprecise; 0.04 rad | Eq. 1.42 now ≈ 1.6×10² m/s² with note a_c ≫ a_t (almost purely centripetal); Eq. 1.43 now β ≈ 0.043 rad ≈ 2.5° (checked: sqrt(26293) = 162.15, atan(0.0432) = 0.0432 rad = 2.47°)
+- FIXED | Table lists angular position as vector | Table row now scalar θ, with note that Δθ⃗ is treated as a vector for fixed-axis rotation (matches Table 1.1)

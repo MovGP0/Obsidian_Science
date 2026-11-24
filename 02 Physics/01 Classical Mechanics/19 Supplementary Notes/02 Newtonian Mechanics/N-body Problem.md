@@ -7,8 +7,10 @@ Looking at a system of $N$ particles that have a central force $\vec{F}$ acting 
 The force has constant coefficients $\kappa_{ij}$ such that
 
 $$
-\vec{F}_{ji} = -\kappa_{ij} \frac{\vec{r}_i - \vec{r}_j}{\left|\vec{r}_i - \vec{r}_j\right|^n}, \quad j \neq i
+\vec{F}_{ij} = -\kappa_{ij} \frac{\vec{r}_i - \vec{r}_j}{\left|\vec{r}_i - \vec{r}_j\right|^n}, \quad j \neq i
 $$
+
+where $\vec{F}_{ij}$ is the force on $i$ due to $j$ (see [[System of Particles]]). A coefficient $\kappa_{ij} > 0$ gives attraction. For gravity, $\kappa_{ij} = G m_i m_j$ and $n = 3$.
 
 The equations of motion are formed from [[Newton’s 2nd Law]] and can be written as a system of $N$-coupled equations with $i \neq k$:
 
@@ -22,7 +24,7 @@ $$
 This is known as the **N-body problem** for a set of initial positions and velocities.
 
 > [!info]
-> Motivated by Newton’s [Principia Mathematica](https://en.wikipedia.org/wiki/Principia_Mathematica), the solution to the problem was the subject of a prize in honor of the 60th birthday of [King Oscar II of Sweden](https://en.wikipedia.org/wiki/Oscar_II) in 1889.
+> Motivated by Newton’s [Philosophiæ Naturalis Principia Mathematica](https://en.wikipedia.org/wiki/Philosophi%C3%A6_Naturalis_Principia_Mathematica), the solution to the problem was the subject of a prize in honor of the 60th birthday of [King Oscar II of Sweden](https://en.wikipedia.org/wiki/Oscar_II) in 1889.
 > Although never solved in the general case even to this day, the prize was awarded to [Henri Poincaré](https://en.wikipedia.org/wiki/Henri_Poincar%C3%A9).
 > This system has $6N$ variables $(x_i, y_i, z_i, \dot{x}_i, \dot{y}_i, \dot{z}_i)$ for each particle, and using the [Cauchy-Lipschitz theorem](https://en.wikipedia.org/wiki/Picard%E2%80%93Lindel%C3%B6f_theorem), it is known that there does exist a unique solution.
 
@@ -36,12 +38,12 @@ For the N-body system there are
 
 These integrals reduce the problem to a dimension of $6N - 10$.
 
-A further two integrals can be found, as shown by [Jacobi](https://en.wikipedia.org/wiki/Jacobi_integral).
+A further reduction by two dimensions is possible with the elimination of the nodes, as shown by [Jacobi](https://en.wikipedia.org/wiki/Carl_Gustav_Jacob_Jacobi).
 
 - In the case that $N = 1, 2$ the N-body problem can be solved analytically as we have enough integrals of motion to reduce the system sufficiently.
 - In the case that $N = 3$ there is still a six-dimensional system of equations.
 
-Poincaré proved that the system contains no further integrals of the motion other than those above. This means that the system cannot be solved using the method of first integrals.
+Bruns (1887) proved that the system contains no further algebraic integrals of the motion other than those above, and Poincaré extended this result to analytic integrals. This means that the system cannot be solved using the method of first integrals.
 
 > [!note]
 > Due to this problem new analytical methods were developed, most notably [perturbation theory](https://en.wikipedia.org/wiki/Perturbation_theory), while the [KAM theory](https://en.wikipedia.org/wiki/Kolmogorov%E2%80%93Arnold%E2%80%93Moser_theorem) is about the stability of perturbative solutions.

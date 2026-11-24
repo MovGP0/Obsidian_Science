@@ -1,0 +1,36 @@
+=== 02 Physics/01 Classical Mechanics/04 Oscillations/Small oscillations and complex amplitudes.md
+- FIXED | Wrong internal section links (cube potential, amplitude triangle, B1/B2 definitions) | Pointed the links to #Small tilt of the cube, #Amplitude and phase form, and #Simple harmonic motion.
+- FIXED | Amplitude written \signal{A} instead of chapter-wide \mechanical{A} | Replaced all 17 \signal{A} with \mechanical{A} (body and amplitude table row); the table's generic area row also uses \mechanical{A} but area does not occur in the body.
+=== 02 Physics/01 Classical Mechanics/05 Particle Systems, Collisions, and Momentum/Rocket momentum, centers of mass, and internal torque.md
+- FIXED | Wrong internal and cross-note section links | Rocket-in-gravity and exhaust-momentum links now go to #Rocket momentum balance, swept-area link to #Central gravity and equal areas, three range links to Projectile motion with linear and quadratic drag#Range with weak linear drag.
+- FIXED | Dangling "and 27." remnant; alpha used for mass-loss rate and angular acceleration | Removed "and 27."; renamed angular acceleration to \mechanical{\dot\omega} in the torque section and its table row, kept \mechanical{\alpha} as mass-loss rate.
+=== 02 Physics/01 Classical Mechanics/06 Gravitation and Motion Under Central Forces/06.06 Keplerian Orbits.md
+- REJECTED | Eccentricity e clashes with elementary charge \electric{e} | Standard textbook notation; the two are visually distinct (uncolored e vs \electric{e}), the charge appears once, and both have separate table rows.
+=== 02 Physics/01 Classical Mechanics/07 Rigid Bodies/07.15 Rigid-Body Exercises.md
+- FIXED | Exercise 15 should note rigid-Earth period (~305 d) differs from observed Chandler wobble (~433 d) | Added two sentences stating the ~305 d rigid prediction, the ~433 d observed period due to Earth's non-rigidity, and that the identification is approximate.
+=== 02 Physics/01 Classical Mechanics/08 Fundamentals of Fluid Mechanics/08.07 Viscosity and Laminar Flow.md
+- FIXED | \mechanical{L} used for pipe length and Reynolds characteristic length | Reynolds number now uses characteristic length \mechanical{\ell}, with pipe form Re=\rho v D/\eta and D=2R; table split into pipe length L and characteristic length/diameter rows.
+=== 02 Physics/01 Classical Mechanics/08 Fundamentals of Fluid Mechanics/08.10 Worked Examples in Fluid Mechanics.md
+- FIXED | \mechanical{L} used for dam width (m) and lift (N) | Renamed lift to \mechanical{F}_L in the formula and table; dam force value 2.45e9 N rechecked and correct.
+=== 02 Physics/01 Classical Mechanics/09 Constraints, Virtual Work, and d’Alembert’s Principle/09.08 Holonomic Constraints in Differential Form.md
+- FIXED | Constraint coefficients \vec a_i, a_t clash with acceleration \mechanical{\vec a}_i of d'Alembert's equation | Renamed coefficients to \vec c_i and c_t in both expressions.
+=== 02 Physics/01 Classical Mechanics/10 Euler–Lagrange Equations/10.03 Derivation of Lagrange's Equations.md
+- FIXED | d'Alembert's equation uses \mechanical{\vec F}_i instead of 09.06's \mechanical{\vec F}_i^{\,\mathrm{act}} | Added the act superscript in the equation and the table row, and noted in the table that ideal reactions are excluded.
+=== 02 Physics/01 Classical Mechanics/10 Euler–Lagrange Equations/10.06 Worked Examples of Lagrangians.md
+- FIXED | Oscillating-pivot example mixes y with pivot height z0; "Take the z axis upward" misplaced in sphere example | Bob vertical coordinate renamed y->z (both pendulum cases and table), pivot section now states z upward, and the sphere sentence moved before its energies; equations rechecked and correct.
+=== 02 Physics/01 Classical Mechanics/10 Euler–Lagrange Equations/10.10 Lagrangian of a Rigid Body.md
+- FIXED | Must state theta is measured from the upward vertical for U=+Mgd cos theta | Added that the laboratory z axis is vertically upward so theta is the tilt of the symmetry axis from the upward vertical.
+=== 02 Physics/01 Classical Mechanics/10 Euler–Lagrange Equations/10.14 Lagrangian and the Galilean Principle of Relativity.md
+- REJECTED | Rotational symmetry must be used before the boost step | Boost invariance alone makes dL/dv affine in v (L = quadratic form + linear term + const); the linear term is a total derivative and isotropy then makes the form m|v|^2/2, so the note's order is valid.
+=== 02 Physics/01 Classical Mechanics/10 Euler–Lagrange Equations/10.17 Euler–Lagrange Exercises.md
+- FIXED | Ex 4 natural frequency uses \mechanical{\omega} while oscillator frequency is \signal{\omega} | Changed Ex 4 omega to \signal{\omega}; table row for \mechanical{\omega} now describes only the imposed rotation rate.
+=== 02 Physics/01 Classical Mechanics/10 Euler–Lagrange Equations/Generalized coordinates and the Hamiltonian.md
+- REJECTED | Uncolored theta and \mathcal L/\mathcal H inconsistent with chapter notes | Style convention of the Kabasares transcription notes (uncolored angles and \mathcal L/\mathcal H listed in its own table, same as sibling transcriptions); not a physics error, and changing ~70 symbols would be a style rewrite.
+=== 02 Physics/01 Classical Mechanics/11 Hamilton's Principle and Symmetries/11.02 Action Functional.md
+- FIXED | Action S uncolored while hub writes \energy{S} | Changed S to \energy{S} in the definition and table row.
+=== 02 Physics/01 Classical Mechanics/11 Hamilton's Principle and Symmetries/11.03 Detailed Example of the Brachistochrone.md
+- FIXED | Travel time T clashes with kinetic energy; integral ends in uncolored dx | Renamed travel time to t_{AB} in the integral and table, and changed dx to d\mechanical{x}; cycloid slope -cot(theta/2) rechecked and correct.
+=== 02 Physics/01 Classical Mechanics/11 Hamilton's Principle and Symmetries/11.06 Symmetry Transformations.md
+- PARTLY | Time translation t->t+epsilon does not fit Definition 11.2 | Right that it does not fit q->q'(epsilon) with f(q,t); but f=L depends on qdot, so it fits only infinitesimally; recast bullet as q(t)->q(t+epsilon), eta=qdot, delta L=epsilon dL/dt, f=L, with that caveat.
+=== 02 Physics/01 Classical Mechanics/11 Hamilton's Principle and Symmetries/11.12 Limits of Analytical Mechanics.md
+- FIXED | Body uses uncolored \vec x while table lists \mechanical{\vec x} | Changed \phi(\vec x,t) to \phi(\mechanical{\vec x},t) in the body.

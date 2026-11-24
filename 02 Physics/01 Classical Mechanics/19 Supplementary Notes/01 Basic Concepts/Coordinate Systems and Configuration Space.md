@@ -5,7 +5,7 @@ aliases:
 tags:
   - ClassicalMechanics
 ---
-We can use a **coordinate system** to give the location of a single particle in a **configuration space** by specifying three Cartesian coordinates $(x, y, z)$: the parameters that describe the location of the particle (coordinates) in the three-dimensional space (configuration space) are its positions (time-dependent vectors) along each axis. Specifying a configuration for a system of particles is specifying their positions at an instant. 
+We can use a **coordinate system** to give the location of a single particle in a **configuration space** by specifying three Cartesian coordinates $(x, y, z)$: the parameters that describe the location of the particle (coordinates) in the three-dimensional space (configuration space) are the scalar components of its position along each axis. The configuration is the point $(x, y, z)$, and the motion is a curve $(x(t), y(t), z(t))$ in configuration space. Specifying a configuration for a system of particles is specifying their positions at an instant. 
 
 - For 2 free particles in an 3-dimensional cartesian space, the configuration space is 6-dimensional
 - for $N$ free particles, a point in the $3N$-dimensional configuration space fully describes the system’s positions, as there is a single dimension for each dimension in which the system is free to move.

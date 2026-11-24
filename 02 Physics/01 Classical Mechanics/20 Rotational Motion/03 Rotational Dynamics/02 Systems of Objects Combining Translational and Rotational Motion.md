@@ -9,14 +9,14 @@ When a system contains objects that can move independently, analyze them separat
 
 **Example 4. Mass–pulley system.** A uniform pulley has radius $\mechanical r$, mass $\mechanical M$, and moment of inertia $\mechanical I$. It rotates without friction about a horizontal axle through its center $O$, perpendicular to the pulley. An inelastic, massless rope is wound around the rim and suspends a mass $\mechanical m$ from its free end. The system starts from rest at $t_0$. Find (a) the pulley’s angular acceleration, (b) the hanging mass’s linear acceleration, (c) the rope tension, (d) the force $\mechanical{\vec R}$ exerted by the axle on the pulley, (e) the centripetal acceleration of a point on the rim at time $t$, and (f) the displacement of the mass from $t_0$ to $t$. The rope does not slip and $\mechanical g$ is given.
 
-Draw and label the forces and axes as in Fig. 3.6. The forces on the pulley are its weight $\mechanical{\vec F}_g$, the axle reaction $\mechanical{\vec R}$, and the rope’s force $\mechanical{\vec F}_T$. The hanging mass experiences its weight $\mechanical{\vec F}_{gm}$ and the rope’s force $\mechanical{\vec F}'_T$.
+Draw and label the forces and axes as in Fig. 3.6. The forces on the pulley are its weight $\mechanical{\vec F}_g$, the axle reaction $\mechanical{\vec F}_{\text{axle}}$, and the rope’s force $\mechanical{\vec F}_T$. The hanging mass experiences its weight $\mechanical{\vec F}_{gm}$ and the rope’s force $\mechanical{\vec F}'_T$.
 
 ![[rotational-motion-fig-3-6.svg|**Fig. 3.6** A uniform pulley is free to rotate about a horizontal axle that goes through its center O and is perpendicular to the plane of the pulley. A massless and inelastic rope is wound around the pulley at its circumference and a mass is hanging from the rope’s free end.|370]]
 
 **For the pulley $\mechanical M$.** There are no horizontal forces. The axle fixes the vertical position of the pulley’s center, so the net vertical force is zero.
 
 $$
-\Sigma \mechanical{\vec {F}}_{y} = 0 \Rightarrow \mechanical{R} - \mechanical{F}_{g} - \mechanical{F}_{T} = 0 \Rightarrow \mechanical{R} = \mechanical{F}_{g} + \mechanical{F}_{T} . \tag{3.33}
+\Sigma \mechanical{\vec {F}}_{y} = 0 \Rightarrow \mechanical{F}_{\text{axle}} - \mechanical{F}_{g} - \mechanical{F}_{T} = 0 \Rightarrow \mechanical{F}_{\text{axle}} = \mechanical{F}_{g} + \mechanical{F}_{T} . \tag{3.33}
 $$
 
 The pulley rotates as $\mechanical m$ descends. Apply Newton’s second law for rotational motion about the axis through $O$ perpendicular to the page.
@@ -32,7 +32,7 @@ $$
 \tag{3.34}
 $$
 
-The weight $\mechanical{\vec F}_g$ and axle force $\mechanical{\vec R}$ act at the axis and produce zero torque about it. The rope’s tension supplies the net torque. The force is constant and the rotation axis is fixed, so the angular acceleration $\mechanical{\vec\alpha}$ is constant. The pulley starts from rest, with $\mechanical\omega_0=0$.
+The weight $\mechanical{\vec F}_g$ and axle force $\mechanical{\vec F}_{\text{axle}}$ act at the axis and produce zero torque about it. The rope’s tension supplies the net torque. The force is constant and the rotation axis is fixed, so the angular acceleration $\mechanical{\vec\alpha}$ is constant. The pulley starts from rest, with $\mechanical\omega_0=0$.
 
 $$
 \Delta \mechanical{\theta} = \underbrace {\mechanical{\omega}_{0}}_{0} \Delta t + \frac {1} {2} \mechanical{\alpha} \Delta t^{2} = \frac {1} {2} \mechanical{\alpha} \Delta t^{2} , \tag{3.35}
@@ -103,10 +103,10 @@ $$
 \mechanical{a} = \mechanical{\alpha} \mechanical{r} = \frac {\mechanical{m} \mechanical{g} \mechanical{r}^{2}} {\mechanical{m} \mechanical{r}^{2} + \mechanical{I}} \tag{3.44}
 $$
 
-(d) Now we can plug the result of part (c) in Equation (3.33) to find $\mechanical R$.
+(d) Now we can plug the result of part (c) in Equation (3.33) to find $\mechanical F_{\text{axle}}$.
 
 $$
-\mechanical{R} = \mechanical{F}_{g} + \mechanical{F}_{T} = \mechanical{M} \mechanical{g} + \mechanical{F}_{T} = \mechanical{g} \left ( \mechanical{M} + \frac {\mechanical{m}} {\frac {\mechanical{m} \mechanical{r}^{2}} {\mechanical{I}} + 1} \right ) . \tag{3.45}
+\mechanical{F}_{\text{axle}} = \mechanical{F}_{g} + \mechanical{F}_{T} = \mechanical{M} \mechanical{g} + \mechanical{F}_{T} = \mechanical{g} \left ( \mechanical{M} + \frac {\mechanical{m}} {\frac {\mechanical{m} \mechanical{r}^{2}} {\mechanical{I}} + 1} \right ) . \tag{3.45}
 $$
 
 (e) At time $t$, Equation (3.39) gives
@@ -164,7 +164,7 @@ $$
 | $\mechanical{M}$ | $\unit{kg}$ | Mass | Mass of the body or system. |
 | $\mechanical{I}$ | $\unit{kg\,m^2}$ | Moment of inertia | Rotational inertia about the specified axis. |
 | $\mechanical{y}$ | $\unit{m}$ | Position coordinate | Position along the indicated axis. |
-| $\mechanical{\vec R}$ | $\unit N$ | Axle reaction force | Force exerted by the fixed axle on the pulley. |
+| $\mechanical{\vec F}_{\text{axle}}$ | $\unit N$ | Axle reaction force | Force exerted by the fixed axle on the pulley. |
 | $\mechanical R$ | $\unit m$ | Outer pulley radius | Distance from the axis to the rim of the larger pulley. |
 | $\mechanical{r}$ | $\unit{m}$ | Radius or position | Distance or position relative to the reference point or axis. |
 | $t$ | $\unit{s}$ | Time | Time of the motion. |

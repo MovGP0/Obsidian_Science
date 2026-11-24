@@ -17,7 +17,7 @@ Define
 * total energy: $E = T + V$.
 
 > [!note]
-> In **Analytical Mechanics** we use $T$ (for the latin *travail*; work) for the kinetic energy and $V$ is historically used for potentials (like voltage).
+> In **Analytical Mechanics** we use $T$ (often said to come from the French *travail*; work) for the kinetic energy and $V$ for potentials.
 
 ## Proof for the Conservation of Energy
 

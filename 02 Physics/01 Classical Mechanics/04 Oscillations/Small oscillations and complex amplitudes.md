@@ -246,7 +246,7 @@ $$
 
 ##### Simple harmonic motion
 
-The cube potential from [[#Stability and the quadratic approximation|the section on Stability and the quadratic approximation]] is a constant plus $\tfrac12\mechanical{k}_{\theta}\theta^2$ to second order, with $\mechanical{k}_{\theta}=\mechanical{m}\mechanical{g}(\mechanical{r}-\mechanical{b})$. The notes then turn to the translational spring with $\mechanical{F}_x=-\mechanical{k}\mechanical{x}$. Its second-order equation is
+The cube potential from [[#Small tilt of the cube|the section on Small tilt of the cube]] is a constant plus $\tfrac12\mechanical{k}_{\theta}\theta^2$ to second order, with $\mechanical{k}_{\theta}=\mechanical{m}\mechanical{g}(\mechanical{r}-\mechanical{b})$. The notes then turn to the translational spring with $\mechanical{F}_x=-\mechanical{k}\mechanical{x}$. Its second-order equation is
 
 $$
 \mechanical{\ddot x}=-\frac{\mechanical{k}}{\mechanical{m}}\mechanical{x}
@@ -290,15 +290,15 @@ The shadow of a rotating arm illustrates sinusoidal motion as a projection of un
 
 ##### Amplitude and phase form
 
-The right triangle in the notes has legs $B_1,B_2$, hypotenuse $\signal{A}$, and angle $\signal{\delta}$. Define $\signal{A}=\sqrt{B_1^2+B_2^2}$, with $\cos\signal{\delta}=B_1/\signal{A}$ and $\sin\signal{\delta}=B_2/\signal{A}$ for nonzero amplitude.
+The right triangle in the notes has legs $B_1,B_2$, hypotenuse $\mechanical{A}$, and angle $\signal{\delta}$. Define $\mechanical{A}=\sqrt{B_1^2+B_2^2}$, with $\cos\signal{\delta}=B_1/\mechanical{A}$ and $\sin\signal{\delta}=B_2/\mechanical{A}$ for nonzero amplitude.
 
 $$
 \begin{aligned}
 \mechanical{x}(t)
 &=B_1\cos(\signal{\omega}t)+B_2\sin(\signal{\omega}t)\\
-&=\signal{A}[\cos\signal{\delta}\cos(\signal{\omega}t)
+&=\mechanical{A}[\cos\signal{\delta}\cos(\signal{\omega}t)
 +\sin\signal{\delta}\sin(\signal{\omega}t)]\\
-&=\signal{A}\cos(\signal{\omega}t-\signal{\delta}).
+&=\mechanical{A}\cos(\signal{\omega}t-\signal{\delta}).
 \end{aligned}
 $$
 
@@ -314,7 +314,7 @@ $$
 
 For real $B_1,B_2$ these coefficients are complex conjugates. For a general $z=x+iy$, $z^*=x-iy$ and $z+z^*=2\operatorname{Re}z$. The handwritten product $zz^*$ is the squared magnitude $\lvert z\rvert^2$.
 
-In the oscillator, the two exponential terms are conjugates, so the displacement is twice the real part of one. Define $C=2C_1=B_1-iB_2=\signal{A}\exp(-i\signal{\delta})$ using the amplitude triangle from [[#Initial conditions for the oscillator|the section on Initial conditions for the oscillator]].
+In the oscillator, the two exponential terms are conjugates, so the displacement is twice the real part of one. Define $C=2C_1=B_1-iB_2=\mechanical{A}\exp(-i\signal{\delta})$ using the amplitude triangle from [[#Amplitude and phase form|the section on Amplitude and phase form]].
 
 $$
 \begin{aligned}
@@ -322,34 +322,34 @@ $$
 &=C_1\exp(i\signal{\omega}t)+C_1^*\exp(-i\signal{\omega}t)\\
 &=2\operatorname{Re}[C_1\exp(i\signal{\omega}t)]
 =\operatorname{Re}[C\exp(i\signal{\omega}t)]\\
-&=\operatorname{Re}\left[\signal{A}\exp(i(\signal{\omega}t-\signal{\delta}))\right]
-=\signal{A}\cos(\signal{\omega}t-\signal{\delta}).
+&=\operatorname{Re}\left[\mechanical{A}\exp(i(\signal{\omega}t-\signal{\delta}))\right]
+=\mechanical{A}\cos(\signal{\omega}t-\signal{\delta}).
 \end{aligned}
 $$
 
 ##### Oscillator representations and energy
 
-On the complex plane, $\exp(i\theta)=\cos\theta+i\sin\theta$ lies on the unit circle. Its product with its conjugate is $1$. The second circle sketch scales the radius to $\signal{A}$ and shows that the horizontal projection is $\mechanical{x}(t)=\signal{A}\cos(\signal{\omega}t-\signal{\delta})$. The notes collect the equivalent forms
+On the complex plane, $\exp(i\theta)=\cos\theta+i\sin\theta$ lies on the unit circle. Its product with its conjugate is $1$. The second circle sketch scales the radius to $\mechanical{A}$ and shows that the horizontal projection is $\mechanical{x}(t)=\mechanical{A}\cos(\signal{\omega}t-\signal{\delta})$. The notes collect the equivalent forms
 
 $$
 \begin{aligned}
 \mechanical{x}(t)
 &=C_1\exp(i\signal{\omega}t)+C_2\exp(-i\signal{\omega}t)\\
 &=B_1\cos(\signal{\omega}t)+B_2\sin(\signal{\omega}t)\\
-&=\signal{A}\cos(\signal{\omega}t-\signal{\delta})
+&=\mechanical{A}\cos(\signal{\omega}t-\signal{\delta})
 =\operatorname{Re}[C\exp(i\signal{\omega}t)].
 \end{aligned}
 $$
 
-The amplitude triangle on this page interchanges the labels $B_1$ and $B_2$ relative to the adjacent formula. The cosine and sine coefficients follow the definitions on [[#Initial conditions for the oscillator|the section on Initial conditions for the oscillator]].
+The amplitude triangle on this page interchanges the labels $B_1$ and $B_2$ relative to the adjacent formula. The cosine and sine coefficients follow the definitions on [[#Simple harmonic motion|the section on Simple harmonic motion]].
 
 $$
 \begin{aligned}
-\energy{U}&=\tfrac12\mechanical{k}\signal{A}^2\cos^2(\signal{\omega}t-\signal{\delta}),\\
-\mechanical{v}(t)&=-\signal{A}\signal{\omega}\sin(\signal{\omega}t-\signal{\delta}),\\
-\energy{T}&=\tfrac12\mechanical{m}\signal{A}^2\signal{\omega}^2
+\energy{U}&=\tfrac12\mechanical{k}\mechanical{A}^2\cos^2(\signal{\omega}t-\signal{\delta}),\\
+\mechanical{v}(t)&=-\mechanical{A}\signal{\omega}\sin(\signal{\omega}t-\signal{\delta}),\\
+\energy{T}&=\tfrac12\mechanical{m}\mechanical{A}^2\signal{\omega}^2
 \sin^2(\signal{\omega}t-\signal{\delta}),\\
-\energy{T}+\energy{U}&=\tfrac12\mechanical{k}\signal{A}^2.
+\energy{T}+\energy{U}&=\tfrac12\mechanical{k}\mechanical{A}^2.
 \end{aligned}
 $$
 
@@ -413,7 +413,7 @@ Kyle Kabasares, *Classical Mechanics (Physics 105, UC Merced 2015)*.
 | $\magnetic{\mu}_0$ | $\unit{N\,A^{-2}}$ | Vacuum permeability | Coefficient in Ampère’s law. |
 | $\electric{I}_{\mathrm{enc}}$ | $\unit{A}$ | Enclosed current | Net steady current through the surface. |
 | $\mechanical{k}_{\theta}$ | $\unit{J\,rad^{-2}}$ | Angular potential curvature | Second derivative of the cube’s potential energy at zero tilt. |
-| $\signal{A}$ | $\unit{m}$ | Oscillation amplitude | Peak displacement of the harmonic oscillator. |
+| $\mechanical{A}$ | $\unit{m}$ | Oscillation amplitude | Peak displacement of the harmonic oscillator. |
 | $B_1$, $B_2$ | $\unit{m}$ | Quadrature coefficients | Coefficients of the cosine and sine components of the harmonic oscillator. |
 | $\signal{\delta}$ | $\unit{rad}$ | Oscillation phase constant | Phase offset determined by the two coefficients. |
 | $C$, $C_1$, $C_2$ | $\unit{m}$ | Complex displacement coefficients | Coefficients of the complex exponentials used to represent a real oscillation. |

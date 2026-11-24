@@ -155,28 +155,28 @@ $$
 \begin{aligned}
 \frac{\partial f}{\partial\mechanical{r}'}
 &=\frac{\mechanical{r}'}{\sqrt{(\mechanical{r}')^2+\mechanical{r}^2}},\\
-\mechanical{k}
+\mechanical{b}
 &=\sqrt{(\mechanical{r}')^2+\mechanical{r}^2}
 -\frac{(\mechanical{r}')^2}{\sqrt{(\mechanical{r}')^2+\mechanical{r}^2}}
 =\frac{\mechanical{r}^2}{\sqrt{(\mechanical{r}')^2+\mechanical{r}^2}}.
 \end{aligned}
 $$
 
-Squaring gives $\mechanical{r}^4=\mechanical{k}^2[(\mechanical{r}')^2+\mechanical{r}^2]$, hence
+Squaring gives $\mechanical{r}^4=\mechanical{b}^2[(\mechanical{r}')^2+\mechanical{r}^2]$, hence
 
 $$
-(\mechanical{r}')^2=\frac{\mechanical{r}^2(\mechanical{r}^2-\mechanical{k}^2)}
-{\mechanical{k}^2}.
+(\mechanical{r}')^2=\frac{\mechanical{r}^2(\mechanical{r}^2-\mechanical{b}^2)}
+{\mechanical{b}^2}.
 $$
 
 On the branch with increasing radius, the polar length equation separates as
 
 $$
 \frac{\mathrm d\mechanical{r}}{\mathrm d\theta}
-=\frac{\mechanical{r}\sqrt{\mechanical{r}^2-\mechanical{k}^2}}{\mechanical{k}},
+=\frac{\mechanical{r}\sqrt{\mechanical{r}^2-\mechanical{b}^2}}{\mechanical{b}},
 \qquad
-\theta=\int\frac{\mechanical{k}\,\mathrm d\mechanical{r}}
-{\mechanical{r}\sqrt{\mechanical{r}^2-\mechanical{k}^2}}.
+\theta=\int\frac{\mechanical{b}\,\mathrm d\mechanical{r}}
+{\mechanical{r}\sqrt{\mechanical{r}^2-\mechanical{b}^2}}.
 $$
 
 The last handwritten radical appears to switch to a plus sign. The separated differential in the preceding line fixes the minus sign.
@@ -215,15 +215,12 @@ Kyle Kabasares, *Classical Mechanics (Physics 105, UC Merced 2015)*.
 | $\energy{K}$, $\energy{T}$ | $\unit{J}$ | Kinetic energy | The energy associated with motion. |
 | $\energy{U}$ | $\unit{J}$ | Potential energy | Energy defined from the work of a conservative force. |
 | $\energy{E}$, $\energy{E}_{\mathrm T}$ | $\unit{J}$ | Total mechanical energy | The sum of kinetic and potential energy. |
-| $\mechanical{c}$ | $\unit{N\,s^2\,m^{-2}}$ | Quadratic drag coefficient | Multiplier of speed squared in the quadratic drag term. |
-| $\mechanical{k}$ | $\unit{s^{-1}}$ | Linear drag rate | Linear drag coefficient divided by the projectile mass. |
-| $T$ | $\unit{s}$ | Flight time | Positive time when the projectile returns to launch height. |
-| $\mechanical{L}$ | $\unit{m}$ | Length | Length of the uniform rod or total length of a candidate path. |
-| $\mechanical{k}$ | $\unit{N\,m^{-1}}$ | Spring constant | Force magnitude per unit extension or compression, or the local curvature of a position potential. |
+| $\mechanical{L}$ | $\unit{m}$ | Length | Total length of a candidate path. |
+| $\mechanical{k}$ | $\unit{N\,m^{-1}}$ | Spring constant | Force magnitude per unit extension or compression, in the one-dimensional spring. |
 | $\signal{n}$ | 1 | Refractive index | Ratio of the vacuum speed of light to the speed in the medium. |
 | $\mechanical{c}$ | $\unit{m\,s^{-1}}$ | Speed of light in vacuum | Reference speed in the travel-time functional. |
 | $T$ | $\unit{s}$ | Travel time | Time along a candidate path in Fermat’s principle or the brachistochrone problem. |
 | $\mechanical{a}$ | $\unit{m}$ | Cycloid scale | Length parameter in the brachistochrone solution. |
-| $\mechanical{k}$ | $\unit{m}$ | Polar length integral constant | Constant from the absence of explicit azimuth dependence in the arc-length integrand. |
+| $\mechanical{b}$ | $\unit{m}$ | Polar length integral constant | Constant from the absence of explicit azimuth dependence in the arc-length integrand. |
 | $\energy{\mathcal L}$ | $\unit{J}$ | Lagrangian | Kinetic energy minus potential energy for the systems considered here. |
 | $\energy{S}$ | $\unit{J\,s}$ | Action | Time integral of the Lagrangian along a candidate trajectory. |

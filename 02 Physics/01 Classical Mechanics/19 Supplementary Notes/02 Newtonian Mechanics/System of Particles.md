@@ -65,18 +65,24 @@ $$
 
 This is the sum of internal and external forces, where $\vec{F}_i^{(e)}$ is the external force acting on particle $i$, and $\sum_j \vec{F}_{ij}$ is the total internal force.
 
-Using the third law and summing over all $i$ particles we can write an expression for the total rate of change of momentum of the system as follows:
+Summing over all $i$ particles we can write an expression for the total rate of change of momentum of the system as follows:
 
 The left-hand side is written in equation above, but note that $F_{ii}=0$:
 
 $$
-\sum_i \sum_{j} \vec{F}_{ij} + \sum_i \vec{F}_i^{(e)} = \vec{F}_{\text{total}}^{(e)}
+\sum_i \sum_{j} \vec{F}_{ij} + \sum_i \vec{F}_i^{(e)} = \sum_i \dot{\vec{p}}_i
 $$
 
 Since we know by the third law that
 
 $$
 \sum_i \sum_{j} \vec{F}_{ij} = 0
+$$
+
+only the external forces remain:
+
+$$
+\sum_i \vec{F}_i^{(e)} = \vec{F}_{\text{total}}^{(e)} = \sum_i \dot{\vec{p}}_i
 $$
 
 and assuming the mass is constant, we can sum over the right-hand side:
@@ -91,7 +97,7 @@ $$
 
 For a system with a distribution of mass we can define a point where the *weighted position of the mass all added up is equal to zero*; it is a sort of mass balance point if you like.
 
-For $N$ identical particles with coordinates $\vec{r}_i$ where the center of mass relative to the origin of the coordinate system is given by $\vec{R}$:
+For $N$ particles with coordinates $\vec{r}_i$ where the center of mass relative to the origin of the coordinate system is given by $\vec{R}$:
 
 $$
 \vec{R} = \frac{\sum_i m_i \vec{r}_i}{\sum_i m_i} = \frac{\sum_i m_i \vec{r}_i}{M}
@@ -144,5 +150,5 @@ $$
 In general, when **constraints** are present we may not fully understand the form of the external forces.
 
 > [!note]
-> There is no other way in Newtonian mechanics to find conservation laws than brute calculations.
-> This is not the case in **Lagrangian mechanics**.
+> Newtonian mechanics has no systematic procedure that links symmetries to conservation laws; we find them by direct calculation.
+> **Lagrangian mechanics** provides such a procedure (Noether's theorem).

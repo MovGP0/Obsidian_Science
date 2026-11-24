@@ -1,0 +1,42 @@
+=== 02 Physics/01 Classical Mechanics/19 Supplementary Notes/02 Newtonian Mechanics/01 Newton's Laws/Newton’s 2nd Law.md
+- FIXED | Zero net force means only translational equilibrium | Replaced the last line: translational equilibrium (CM at rest or constant velocity); full equilibrium of an extended body also needs zero net torque.
+- FIXED | F = d(mv)/dt needs a caveat for variable mass | Added one callout line: for a body that gains or loses mass, include the momentum of the added or ejected mass, with a link to [[05.08 Variable-Mass Systems and the Rocket Equation]].
+
+=== 02 Physics/01 Classical Mechanics/19 Supplementary Notes/02 Newtonian Mechanics/01 Newton's Laws/Newton’s 3rd Law.md
+- FIXED | "Ignore forces that do not conserve momentum" is wrong | Rewrote the line: internal forces cancel in pairs, so the total momentum of an isolated system is conserved; linked [[Conservation of Linear Momentum]].
+
+=== 02 Physics/01 Classical Mechanics/19 Supplementary Notes/02 Newtonian Mechanics/01 Newton's Laws/Verlet Integration.md
+- FIXED | Constant-force solution mislabelled as the Verlet algorithm | Reworded: the result is the exact constant-force solution; added the Verlet step x_{n+1}=2x_n-x_{n-1}+a(x_n)Δt²+O(Δt⁴) from the summed Taylor expansions, and noted that it reproduces the constant-force result exactly (no full derivation section added).
+
+=== 02 Physics/01 Classical Mechanics/19 Supplementary Notes/02 Newtonian Mechanics/N-body Problem.md
+- FIXED | Force index F_ji should be F_ij; state the sign convention | Changed F_ji to F_ij, added a sentence: F_ij is the force on i due to j, κ>0 means attraction, and gravity has κ=G m_i m_j, n=3.
+- FIXED | Wrong Principia link; Jacobi integral and Poincaré attributions | Principia link now goes to Philosophiæ Naturalis Principia Mathematica; Jacobi line now says the elimination of the nodes (link to Jacobi's biography); non-existence of further integrals is now attributed to Bruns (1887, algebraic) and extended by Poincaré.
+
+=== 02 Physics/01 Classical Mechanics/19 Supplementary Notes/02 Newtonian Mechanics/System of Particles.md
+- FIXED | "identical particles" contradicts m_i; equation uses the cancellation before the third law | Removed "identical"; the summed equation now equals Σṗ_i, and after the third-law cancellation a new line gives ΣF_i^(e) = F_total^(e) = Σṗ_i (dropped the premature "Using the third law" wording).
+- FIXED | "No other way than brute calculations" is overstated | Softened the callout: Newtonian mechanics has no systematic symmetry-to-conservation procedure; Lagrangian mechanics (Noether's theorem) provides one.
+
+=== 02 Physics/01 Classical Mechanics/19 Supplementary Notes/03 Conservation Laws/Conservation Laws.md
+- FIXED | Majorana neutrinos "very likely" overstates the evidence | Replaced "(very likely)" with "(not yet known; under active experimental test, e.g. neutrinoless double-beta decay)".
+
+=== 02 Physics/01 Classical Mechanics/19 Supplementary Notes/03 Conservation Laws/Conservation of Angular Momentum.md
+- FIXED | "No fundamental distinction" between linear and angular momentum is misleading | Rephrased: they are distinct conserved quantities (translation vs rotation symmetry) that are connected through one symmetry group; linked [[Hamiltonian formulation of Angular Momentum]].
+
+=== 02 Physics/01 Classical Mechanics/19 Supplementary Notes/03 Conservation Laws/Conservation of Energy.md
+- PARTLY | travail is French, not Latin; V-from-voltage unsupported | Correct that travail is French, fixed it and hedged it as "often said to come from"; the note only gave voltage as an example of a potential, not as an etymology, but I removed "(like voltage)" to avoid that reading.
+
+=== 02 Physics/01 Classical Mechanics/19 Supplementary Notes/03 Conservation Laws/Conservation of Linear Momentum.md
+- FIXED | F_ij = -F_ij should be F_ij = -F_ji; zero-width characters | Rewrote the equation as \vec{F}_{ij} = -\vec{F}_{ji} \quad \forall i,j with ASCII minus and no U+200B characters.
+- FIXED | Partial derivative ∂/∂t should be total d/dt | Changed both equations to F = dP/dt and F = d/dt p.
+
+=== 02 Physics/01 Classical Mechanics/19 Supplementary Notes/04 Angular Momentum/Hamiltonian formulation of Angular Momentum.md
+- FIXED | (θ, L) is not a canonical pair | Added a note callout: only (R, P) is canonical; L components have {L_i,L_j}≠0 and are Lie–Poisson variables; canonical orientation pairs are Euler angles with p_φ, p_θ, p_ψ.
+- FIXED | {L_i,P_j}=ε_ijk P_k holds for total, not spin, angular momentum | Added a note callout: the mixed bracket holds for J = R×P + S; the rotational term in H uses the spin S, with {S_i,P_j}=0.
+
+=== 02 Physics/01 Classical Mechanics/19 Supplementary Notes/04 Angular Momentum/Lagrangian formulation of Angular Momentum.md
+- FIXED | L used for both Lagrangian and angular momentum; ω is a quasi-velocity | Renamed the Lagrangian to \mathcal{L} in its three uses; added a note callout that ω is a quasi-velocity, so the equations of motion need Euler angles or the Euler–Poincaré form.
+
+=== 02 Physics/01 Classical Mechanics/19 Supplementary Notes/05 Lagrangian Mechanics/Atwood machine.md
+- FIXED | Constraint should give ẋ2 = -ẋ1 | Changed the constraint line to \dot{x}_2 = -\dot{x}_1.
+- FIXED | Sign error in V term makes the heavier mass rise | The rearranged L now has -(m_1-m_2)g x_1 (both cases), ∂L/∂x_1 = -(m_1-m_2)g, the EL equations have +(m_1-m_2)g, and the results are ẍ1=(m_2-m_1)g/(m_1+m_2) and ẍ1=(m_2-m_1)g/(m_1+m_2+I/r²).
+- FIXED | Mislabels: Lagrangian vs Lagrange equation; ∂L/∂ẋ1 is momentum, not acceleration | Changed "Lagrange equation:" to "Lagrangian:" and "(acceleration of m_1)" to "(generalized momentum of m_1)".

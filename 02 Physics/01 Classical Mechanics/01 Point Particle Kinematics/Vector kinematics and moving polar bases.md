@@ -479,8 +479,6 @@ Kyle Kabasares, *Classical Mechanics (Physics 105, UC Merced 2015)*.
 | $\mechanical{\mu}_k$ | 1 | Coefficient of kinetic friction | Ratio of the sliding friction magnitude to the normal force. |
 | $\mechanical{\vec P}$ | $\unit{kg\,m\,s^{-1}}$ | Total linear momentum | Vector sum of the individual particle momenta. |
 | $\mechanical{\vec\omega}$, $\mechanical{\omega}$, $\dot\phi$, $\dot\theta$ | $\unit{rad\,s^{-1}}$ | Angular velocity | Rate of rotation of the position vector in the plane. |
-| $T$ | $\unit{s}$ | Flight time | Positive time when the projectile returns to launch height. |
 | $\mechanical{\alpha}$, $\ddot\phi$, $\ddot\theta$ | $\unit{rad\,s^{-2}}$ | Angular acceleration | Rate of change of angular velocity about the rotation axis. |
-| $C$, $C_1$, $C_2$ | $\unit{m}$ | Complex displacement coefficients | Coefficients of the complex exponentials used to represent a real oscillation. |
-| $T$ | $\unit{s}$ | Travel time | Time along a candidate path in Fermat’s principle or the brachistochrone problem. |
-| $\mechanical{a}$ | $\unit{m}$ | Cycloid scale | Length parameter in the brachistochrone solution. |
+| $C$ | $\unit{m\,s^{-1}}$ | Integration constant | Constant of integration in the velocity under a constant force, fixed by $C=\mechanical{v}_0$. |
+| $\mechanical{a}$ | $\unit{m\,s^{-2}}$ | Constant acceleration | Magnitude of the constant acceleration in the one-dimensional equations of motion. |

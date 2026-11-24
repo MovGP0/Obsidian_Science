@@ -1,17 +1,17 @@
 The **[Gravitational potential](https://en.wikipedia.org/wiki/Gravitational_potential)** or **G-Potential** is given by:
 
-$$\Phi = \frac{Gm}{r}$$
+$$\Phi = -\frac{GM}{r}$$
 
-Note that the potential decreases linearly with the radius $r$.
+Here $M$ is the mass of the source, and $\Phi$ is zero at infinity. Note that the magnitude $|\Phi|$ decreases as $1/r$ with the radius $r$. The specific values below are magnitudes $|\Phi|$.
 
 ## Specific values
 
 | Value                                                      | Description                                |
 | ---------------------------------------------------------- | ------------------------------------------ |
 | $\Phi_E \approx 10^8 \frac{\mathrm{m}^2}{\mathrm{s}^2}$    | G-Potential of earth on the surface        |
-| $\Phi_S \approx 10^9 \frac{\mathrm{m}^2}{\mathrm{s}^2}$    | g-Potential of the Sun at Earth's position |
-| $\Phi_M \approx 10^{11} \frac{\mathrm{m}^2}{\mathrm{s}^2}$ | g-Potential of the Milky Way on earth      |
-| $\Phi_U \approx 10^{17} \frac{\mathrm{m}^2}{\mathrm{s}^2}$ | g-Potential of the matter in the universe  |
+| $\Phi_S \approx 10^9 \frac{\mathrm{m}^2}{\mathrm{s}^2}$    | G-Potential of the Sun at Earth's position |
+| $\Phi_M \approx 10^{11} \frac{\mathrm{m}^2}{\mathrm{s}^2}$ | G-Potential of the Milky Way on earth      |
+| $\Phi_U \approx 10^{17} \frac{\mathrm{m}^2}{\mathrm{s}^2}$ | G-Potential of the matter in the universe  |
 
 ## Calculating the G-Potential
 
@@ -27,9 +27,9 @@ $$d = c\ T_U$$
 
 Average density of the universe
 $$\rho = 10^{-26}\ \frac{\mathrm{kg}}{\mathrm{m}^3}$$
-Magnitude of the G-Potential $\phi$ using the volume within a distance of $d$ is given by:
+Magnitude of the G-Potential $|\Phi|$ using the volume within a distance of $d$ is given by:
 
-$$\mathrm{d} \phi = \frac{\left( 4\pi r^2 \mathrm{d}r \times G\rho \right)}{r}$$
+$$\mathrm{d} |\Phi| = \frac{\left( 4\pi r^2 \mathrm{d}r \times G\rho \right)}{r}$$
 Integrating over the volume gives:
-$$\phi_U = \int_{0}^{c\ T_U} 4\pi\ G\ \rho\ \mathrm{d} r = 2\pi\ G\ \rho\ c^2\ T_U^2$$
-Note that $\phi_U \approx c^2$ might suggest an elementary connection.
+$$|\Phi_U| = \int_{0}^{c\ T_U} 4\pi\ G\ \rho\ r\ \mathrm{d} r = 2\pi\ G\ \rho\ c^2\ T_U^2$$
+Note that $|\Phi_U| \approx c^2$ might suggest an elementary connection.

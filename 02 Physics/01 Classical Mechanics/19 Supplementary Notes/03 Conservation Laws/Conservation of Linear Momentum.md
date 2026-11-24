@@ -1,6 +1,6 @@
 
 Newton's Second Law
-$$\mathbf{F} = \frac{\partial \mathbf{P}}{\partial t}$$
+$$\mathbf{F} = \frac{d\mathbf{P}}{dt}$$
 
 Using the Lagrange Equation
 $$L = T - V$$
@@ -12,10 +12,10 @@ $$\frac{\partial L}{\partial x} = 0$$
 > Newton assumes instant forces (not limited by *speed of light* $c$)
 
 A force is defined as a change in momentum:
-$$F = \frac{\partial}{\partial t} p$$
+$$F = \frac{d}{dt} p$$
 **Action–reaction**
 Each action has an equal reaction. That is for a given force on particle $i$ by particle $j$, there is an equal force on particle $j$ on by particle $i$ with opposite direction:
-$$\vec{F}_{ij}​=−\vec{F}_{ij} \quad ​∀i,j.$$
+$$\vec{F}_{ij} = -\vec{F}_{ji} \quad \forall i,j.$$
 or in matrix notation:
 $$F^α=−(F^α)^T$$
 **No self-force**

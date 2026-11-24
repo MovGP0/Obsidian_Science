@@ -1,0 +1,39 @@
+=== 02 Physics/01 Classical Mechanics/11 Hamilton's Principle and Symmetries/11.13 Variations with Free Endpoints.md
+- FIXED | Scope: formula holds only for free endpoint values at fixed times | Opening sentence now says the endpoint values q(t1), q(t2) vary while t1, t2 stay fixed
+=== 02 Physics/01 Classical Mechanics/11 Hamilton's Principle and Symmetries/11.14 Representative Examples of Noether's Theorem.md
+- FIXED | Unit of T^{0i} undefined ("—", "units used in this example") | Text now states SI convention T^{0i} = c x momentum density (J m^-3), momentum = integral of T^{0i}/c; table unit set to J m^-3 and row for c added
+=== 02 Physics/01 Classical Mechanics/11 Hamilton's Principle and Symmetries/Variational paths and the brachistochrone.md
+- FIXED | Copied generic table with c, k, T clashes and irrelevant drag/flight/rod rows | Removed quadratic-drag, linear-drag-rate and flight-time rows, rod removed from L row; renamed polar integration constant k to \mechanical{b} in the polar section and table; spring-constant row description narrowed
+=== 02 Physics/01 Classical Mechanics/12 Hamiltonian Formulation/12.08 Worked Examples of Hamiltonian Problems.md
+- FIXED | p_phi uncolored while p_rho, p_z use \mechanical{} | All p_\phi occurrences (Hamiltonian, text, note, table) now \mechanical{p}_\phi
+=== 02 Physics/01 Classical Mechanics/12 Hamiltonian Formulation/12.11 Applications of Hamiltonian Mechanics.md
+- FIXED | p_phi, p_theta uncolored while p_r uses \mechanical{} | All p_\phi, p_\theta and \dot p_\theta now \mechanical{p}_\phi, \mechanical{p}_\theta, \mechanical{\dot p}_\theta (equations, text, table)
+=== 02 Physics/01 Classical Mechanics/13 Canonical Transformations and Hamilton–Jacobi Theory/13.00 Canonical Transformations and Hamilton–Jacobi Theory.md
+- FIXED | HJ equation called "classical starting point for canonical quantization" | Replaced with: HJ equation is the classical limit of the Schrödinger equation and the basis of semiclassical (WKB) quantization
+=== 02 Physics/01 Classical Mechanics/13 Canonical Transformations and Hamilton–Jacobi Theory/13.02 Canonical Transformations.md
+- FIXED | "If and only if" bracket criterion holds only for restricted transformations | Characterization restricted to transformations without a scale factor; added sentence on Q=λq, P=μp with K=λμH and {Q,P}=λμ (verified)
+=== 02 Physics/01 Classical Mechanics/13 Canonical Transformations and Hamilton–Jacobi Theory/13.04 Examples of Useful Canonical Transformations.md
+- FIXED | Lagrange points L1–L5 clash with angular momentum L_z | Lagrange points typeset as \mathrm{L}_1 ... \mathrm{L}_5
+=== 02 Physics/01 Classical Mechanics/13 Canonical Transformations and Hamilton–Jacobi Theory/13.06 Separation of Variables.md
+- REJECTED | Phase \signal{\varphi} vs uncolored \phi in 13.07 should be unified | Different roles: 13.06 φ is the constant phase offset (=ωβ), 13.07 φ is the running integration angle; no error inside 13.06 and 13.07 is outside scope
+=== 02 Physics/01 Classical Mechanics/13 Canonical Transformations and Hamilton–Jacobi Theory/13.09 Application to the Kepler Problem.md
+- FIXED | α used for potential strength and for separation constants α_θ, α_φ | Renamed α_θ to \mechanical{L} and α_φ to \mechanical{L}_z in separated equations and table; also colored p_θ, p_φ with \mechanical{} (issue noted in the 12.08 claim)
+=== 02 Physics/01 Classical Mechanics/13 Canonical Transformations and Hamilton–Jacobi Theory/13.12 WKB Approximation.md
+- FIXED | Phase called S(q) then equation said to be for W(q) | Sentence now states the stationary phase S(q) is the characteristic function W(q), full phase W−Et
+=== 02 Physics/01 Classical Mechanics/14 Small Oscillations and Normal Modes/14.02 Linearization About an Equilibrium.md
+- FIXED | a_kl used without definition | Added T=½Σ a_kl(q) q̇_k q̇_l (time-independent constraints) and that a_kl is frozen at q0 since corrections are cubic in small quantities
+=== 02 Physics/01 Classical Mechanics/19 Supplementary Notes/01 Basic Concepts/Brachistochrone vs Geodesic.md
+- FIXED | Geodesic defined as shortest path | Now: curve with stationary length, locally shortest; long great-circle arc (> half circle) is a geodesic but not shortest
+=== 02 Physics/01 Classical Mechanics/19 Supplementary Notes/01 Basic Concepts/Coordinate Systems and Configuration Space.md
+- FIXED | Coordinates called "time-dependent vectors along each axis" | Now scalar position components; configuration is the point (x,y,z), motion is a curve (x(t),y(t),z(t)) in configuration space
+=== 02 Physics/01 Classical Mechanics/19 Supplementary Notes/01 Basic Concepts/Dynamic Systems.md
+- FIXED | Instants t1, t2 called boundary conditions | Now: motion between instants t1 and t2, with state fixed at t1 (initial-value problem) or positions fixed at both ends (boundary-value problem, action principle)
+=== 02 Physics/01 Classical Mechanics/19 Supplementary Notes/01 Basic Concepts/Material Properties.md
+- FIXED | Poisson bullet gives strain definition; ν_x=−ε_x/ε_y hides load axis | First bullet now describes ν as transverse/axial strain ratio (strain formula kept as auxiliary); ν = −ε_quer/ε_axial = −ε_y/ε_x for load along x (kept in German, the note's language)
+- FIXED | Hooke's law mixes E_i with single ν; ⊂ instead of ∈; range only for isotropic | Replaced with isotropic form ε_x=[σ_x−ν(σ_y+σ_z)]/E; range written ν ∈ [−1, 0.5] for isotropic materials
+- FIXED | Elastomer/ceramic line implies high E for elastomers | Now states elastomers have very small E (about 1–100 MPa) and ceramics very large E (about 100–400 GPa)
+=== 02 Physics/01 Classical Mechanics/19 Supplementary Notes/01 Basic Concepts/Momentum.md
+- FIXED | dp/dt = m dv/dt silently assumes constant m | Added "and the mass m is constant"; added sentence that F = dp/dt is the more general statement, also for systems of particles
+=== 02 Physics/01 Classical Mechanics/19 Supplementary Notes/01 Basic Concepts/Phase Space.md
+- FIXED | State described by a volume, contradicts "each point is a state" | General case now says a state is a point and a region describes an ensemble or uncertain initial conditions; 1D paragraph now calls the whole x–p_x plane the phase plane, state is a point, patch is the range of possible states
+- FIXED | Typo x_x | Changed to x

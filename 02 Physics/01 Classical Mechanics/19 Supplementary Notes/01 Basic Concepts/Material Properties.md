@@ -2,14 +2,14 @@
 
 - Beschreibt das Verhalten eines Materials im elastischen Bereich: $$ \sigma = E\,\epsilon $$
 - Kann in bestimmten Materialien richtungsabhängig sein (zB. Holz und Verbundwerkstoffe)
-- Höhere Elastizität in Elastomeren; gering in Keramik
+- Elastomere sind sehr nachgiebig und haben ein sehr kleines $E$ (ca. 1–100 MPa); Keramik hat ein sehr großes $E$ (ca. 100–400 GPa)
 
 ## [Poisson's ratio](https://en.wikipedia.org/wiki/Poisson%27s_ratio) (ν)
 
-- Beschreibt die Längen-Verformung eines Materials im elastischen Bereich: $$ \epsilon_x = \frac{ \Delta l_x }{ l_x } $$
-- Material dehnt sich unter Kompression seitlich aus; wird schmäler unter Zug $$ \nu_x = \frac{ -\epsilon_x }{ \epsilon_y } $$
-- Wert liegt zwischen ν ⊂ \[-1, 0.5\]; meisten Materialien ν >= 0
-- Allgemeines Hooksches Gesetz: $$ \epsilon_x = \frac{ \sigma_x } { E_x } - \nu \frac{ \sigma_y } { E_y } - \nu \frac{ \sigma_z } { E_z }$$
+- Beschreibt das Verhältnis von Querdehnung zu Längsdehnung im elastischen Bereich. Dehnung entlang einer Achse: $$ \epsilon_x = \frac{ \Delta l_x }{ l_x } $$
+- Material dehnt sich unter Kompression seitlich aus; wird schmäler unter Zug. Für eine Last entlang $x$: $$ \nu = -\frac{ \epsilon_{\mathrm{quer}} }{ \epsilon_{\mathrm{axial}} } = -\frac{ \epsilon_y }{ \epsilon_x } $$
+- Wert liegt für isotrope Materialien bei ν ∈ \[-1, 0.5\]; meisten Materialien ν >= 0
+- Allgemeines Hooksches Gesetz (isotropes Material): $$ \epsilon_x = \frac{1}{E}\left[ \sigma_x - \nu \left( \sigma_y + \sigma_z \right) \right] $$
 
 ## References
 

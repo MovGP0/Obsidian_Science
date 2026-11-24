@@ -1,0 +1,56 @@
+=== 02 Physics/01 Classical Mechanics/01 Point Particle Kinematics/01.05 Motion in Two and Three Dimensions.md
+- PARTLY | State validity limits (uniform g, no drag) and link drag note | Uniform g was already stated; added "without air resistance" plus a link to [[Projectile motion with linear and quadratic drag]] in the opening sentence.
+
+=== 02 Physics/01 Classical Mechanics/01 Point Particle Kinematics/Kinematics, projectiles, and circular motion problems.md
+- FIXED | Table: R listed as volume flow rate; rows for unused symbols | Changed the R row to range (m); removed the unused rows f_s/f_k, mu_s/mu_k, U_s, r_CM, lambda, sigma, k (wave number), P.
+- FIXED | Window roots are 3.2 m and 32.2 m, not 3.1 and 32.1 | Recomputed 3.171 m and 32.177 m; changed the text to 3.2 m and 32.2 m.
+
+=== 02 Physics/01 Classical Mechanics/01 Point Particle Kinematics/Vector kinematics and moving polar bases.md
+- FIXED | Table rows for unused T, T, a (cycloid), C (complex, m) | Removed both T rows; replaced the C row with "integration constant, m/s"; replaced the a row with "constant acceleration, m/s^2" (that is how a is used in the note).
+
+=== 02 Physics/01 Classical Mechanics/02 Newton's Three Laws/02.03 Second Law – F = ma.md
+- FIXED | Equivalence-principle bound 1e-13 is outdated (MICROSCOPE ~1e-15) | Kept the source figure, said it comes from torsion-balance tests, and added the MICROSCOPE (2022) bound of about 1e-15.
+
+=== 02 Physics/01 Classical Mechanics/02 Newton's Three Laws/02.04 Third Law – Action and Reaction.md
+- REJECTED | Add magnetic-force violation of the strong form | The sentence already says "In the form used here", so it is correct as written. Adding the caveat would be an extension, not a correction.
+
+=== 02 Physics/01 Classical Mechanics/02 Newton's Three Laws/Newton’s laws, friction, and drag problems.md
+- FIXED | Flight time 2.95 s rounded to 2.9 s gives wrong range and v_fy; 4(e) speed not stated | Used 2.95 s: range 54.3 m and v_fy = -15.1 m/s. In 4(e), stated that the page gives no speed and that b = 13.6 kg/m corresponds to v ≈ 6.0 m/s for m = 50 kg.
+
+=== 02 Physics/01 Classical Mechanics/02 Newton's Three Laws/Projectile motion with linear and quadratic drag.md
+- FIXED | Table has conflicting k, c, b, R meanings and unused C, T, alpha rows | Removed the rows for radius R, radial scale R, spring constant k, polar constant k, cube half-width b, speed of light c, and travel time T. Replaced the complex-C row with integration constants (units depend on use). Dropped alpha from the angular-acceleration row and kept ddot phi (used for the pendulum). Kept the flight-time T row because T is used.
+
+=== 02 Physics/01 Classical Mechanics/03 Work, Energy, and Conservation/03.05 Conservation of Mechanical Energy.md
+- REJECTED | Add rolling-ball result sqrt(10gh/7) | The example is explicitly titled and computed as sliding, and a callout already addresses the source's rolling wording. The result is correct as stated.
+
+=== 02 Physics/01 Classical Mechanics/03 Work, Energy, and Conservation/03.07 Worked Examples in Energy Methods.md
+- FIXED | Loop result assumes a sliding point particle; rolling ball needs h >= 27R/10 | Checked gh = 2gR + (7/10)gR, which gives 2.7R. Added a sentence after h >= 5R/2 that states the sliding-point assumption and gives the rolling result 27R/10.
+
+=== 02 Physics/01 Classical Mechanics/03 Work, Energy, and Conservation/03.11 Central Forces and Effective Potential.md
+- REJECTED | Add converse for U ∝ -1/r^n with n > 2 | The claim itself says the statement is correct. Adding the converse would be an extension, not an error fix.
+
+=== 02 Physics/01 Classical Mechanics/03 Work, Energy, and Conservation/03.14 Work and Energy Exercises.md
+- FIXED | L used for angular momentum and rod length | Renamed the rod length to \mechanical{\ell} in Exercise 14 (statement and result) and in its table row.
+
+=== 02 Physics/01 Classical Mechanics/03 Work, Energy, and Conservation/Conservative forces, work integrals, and potential.md
+- PARTLY | Three wrong internal links | Retargeted the triple-product link to #BAC–CAB rule and the rocket link to #Rocket momentum balance (the heading exists in the rocket note). Left the path-b link to #Work and change in kinetic energy unchanged, because that section defines the work integral W = ∫F·dr, so the reference is plausible.
+- FIXED | Stokes restatement uses A for field and area element | Renamed the general field to \vec G in the sentence and in the equation; kept d\mechanical{\vec A} as the area element, matching the table.
+
+=== 02 Physics/01 Classical Mechanics/03 Work, Energy, and Conservation/Work, energy, and mechanical power problems.md
+- PARTLY | Box incline lacks v0 (2.03 m implies 5 m/s); Problem 47 lacks T and m | Confirmed that v0 = 5 m/s with mu_k retained gives 2.02–2.03 m, and added that the page gives no initial speed and that the value corresponds to v0 ≈ 5 m/s. Problem 47 cannot be reconstructed (one equation, two unknowns T and m), so left it unchanged.
+
+=== 02 Physics/01 Classical Mechanics/04 Oscillations/04.03 Energy Balance of the Simple Oscillator.md
+- FIXED | Phase written phi here but varphi in 04.02 | Changed all \signal{\phi} to \signal{\varphi} (text, equations, table).
+
+=== 02 Physics/01 Classical Mechanics/04 Oscillations/04.05 Phase Space of the Harmonic Oscillator.md
+- FIXED | Ellipse-area statement confuses energy invariance with Liouville | Rewrote it: each ellipse maps onto itself because energy is conserved, and a patch of initial conditions rotates and keeps its area (Liouville).
+
+=== 02 Physics/01 Classical Mechanics/04 Oscillations/04.06 Damped Oscillator.md
+- FIXED | Fig. 4.1 curves use different amplitudes and initial slopes; overdamped is a single exponential | Redrew with omega0 = 1, x(0) = 1, xdot(0) = 0: gamma = 0.2 underdamped, (1+t)e^-t critical, and the full two-exponential gamma = 2 solution (ODE and initial conditions checked numerically). Added the parameters to the caption. Not checked in Obsidian reading mode.
+
+=== 02 Physics/01 Classical Mechanics/04 Oscillations/04.16 Coupled Oscillators with Multiple Degrees of Freedom.md
+- FIXED | Linear chain does not transfer energy between modes | Changed it to energy transfer between masses, and added that normal-mode energies are constant in a linear chain and that mode-to-mode transfer needs nonlinear coupling.
+
+=== 02 Physics/01 Classical Mechanics/04 Oscillations/Free, damped, and driven oscillator calculations.md
+- PARTLY | gamma = b/m vs b/(2m) in the chapter | The note's formulas are internally correct for gamma = b/m (omega and omega_m rechecked), so this is a convention difference, not an error. Added a sentence at the definition that names the b/(2m) convention of 04.06.
+- FIXED | t written \mechanical{t}; wave speed \mechanical{c} vs \signal{c} | Replaced all \mechanical{t} with plain t (including the table row) and \mechanical{c} with \signal{c} (wave-speed relation and table row).

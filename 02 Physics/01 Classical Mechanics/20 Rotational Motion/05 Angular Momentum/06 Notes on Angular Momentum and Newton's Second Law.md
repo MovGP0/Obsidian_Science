@@ -108,7 +108,7 @@ elements: [
 
 $$
 \begin{aligned}
-\Delta \mechanical{\vec {L}} & = \mechanical{\vec {L}}_{2} - \mechanical{\vec {L}}_{1} \\ \Rightarrow \Delta \mechanical{L} & = - \mechanical{L}_{2} - ( + \mechanical{L}_{1} ) = - \mechanical{I}_{2} \mechanical{\omega}_{2} - \mechanical{I}_{1} \mechanical{\omega}_{1} .
+\Delta \mechanical{\vec {L}} & = \mechanical{\vec {L}}_{2} - \mechanical{\vec {L}}_{1} \\ \Rightarrow \Delta \mechanical{L}_z & = - \mechanical{L}_{2} - ( + \mechanical{L}_{1} ) = - \mechanical{I}_{2} \mechanical{\omega}_{2} - \mechanical{I}_{1} \mechanical{\omega}_{1} .
 \end{aligned} \tag{5.21}
 $$
 
@@ -131,28 +131,28 @@ $$
 \left|\sum\mechanical{\vec\tau}\right|=\frac{|\Delta\mechanical L_z|}{\Delta t}=\frac{20\,\unit{kg\,m^2\,s^{-1}}}{5.0\,\unit{s}}=4.0\,\unit{N\,m}. \tag{5.23}
 $$
 
-**Example 2. Angular momentum of a moving particle.** A particle of mass $\mechanical m$ moves in the $xy$ plane with coordinates $(\mechanical x,\mechanical y)=(\mechanical x_0+\cos(\signal\omega_1t),\mechanical y_0+\sin(\signal\omega_2t))$, where $\mechanical x_0$, $\mechanical y_0$, $\signal\omega_1$ and $\signal\omega_2$ are constants. Find its angular momentum about the $z$ axis at $t=0$.
+**Example 2. Angular momentum of a moving particle.** A particle of mass $\mechanical m$ moves in the $xy$ plane with coordinates $(\mechanical x,\mechanical y)=(\mechanical x_0+\mechanical A\cos(\signal\omega_1t),\mechanical y_0+\mechanical A\sin(\signal\omega_2t))$, where $\mechanical x_0$, $\mechanical y_0$, $\mechanical A$, $\signal\omega_1$ and $\signal\omega_2$ are constants. Find its angular momentum about the $z$ axis at $t=0$.
 
-Based on the x and y coordinates, the position r(t) and velocity v(t) are given by
+Based on the $\mechanical x$ and $\mechanical y$ coordinates, the position $\mechanical{\vec r}(t)$ and velocity $\mechanical{\vec v}(t)$ are given by
 
 $$
-\mechanical{\vec {r}} ( t ) = ( \mechanical{x}_{0} + \cos \left ( \signal\omega_1 t \right ) ) \hat {i} + ( \mechanical{y}_{0} + \sin \left ( \signal\omega_2 t \right ) ) \hat {j} , \tag{5.24}
+\mechanical{\vec {r}} ( t ) = ( \mechanical{x}_{0} + \mechanical{A} \cos \left ( \signal\omega_1 t \right ) ) \hat {\imath} + ( \mechanical{y}_{0} + \mechanical{A} \sin \left ( \signal\omega_2 t \right ) ) \hat {\jmath} , \tag{5.24}
 $$
 
 and
 
 $$
-\mechanical{\vec {v}} ( t ) = \frac {d \mechanical{\vec {r}} ( t )} {d t} = - \signal\omega_1 \sin \left ( \signal\omega_1 t \right ) \hat {i} + \signal\omega_2 \cos \left ( \signal\omega_2 t \right ) \hat {j} . \tag{5.25}
+\mechanical{\vec {v}} ( t ) = \frac {d \mechanical{\vec {r}} ( t )} {d t} = - \mechanical{A} \signal\omega_1 \sin \left ( \signal\omega_1 t \right ) \hat {\imath} + \mechanical{A} \signal\omega_2 \cos \left ( \signal\omega_2 t \right ) \hat {\jmath} . \tag{5.25}
 $$
 
-At time t = 0, the above equations give that
+At time $t = 0$, the above equations give that
 
 $$
-\mechanical{\vec {r}} ( 0 ) = ( \mechanical{x}_{0} + 1 ) \hat {i} + \mechanical{y}_{0} \hat {j} , \tag{5.26}
+\mechanical{\vec {r}} ( 0 ) = ( \mechanical{x}_{0} + \mechanical{A} ) \hat {\imath} + \mechanical{y}_{0} \hat {\jmath} , \tag{5.26}
 $$
 
 $$
-\mechanical{\vec {v}} ( 0 ) = \signal\omega_2 \hat {j} . \tag{5.27}
+\mechanical{\vec {v}} ( 0 ) = \mechanical{A} \signal\omega_2 \hat {\jmath} . \tag{5.27}
 $$
 
 By definition, the angular momentum is thus given by
@@ -162,17 +162,17 @@ $$
 \mechanical{\vec L}(0)
 &=\mechanical{\vec r}(0)\times\mechanical{\vec p}(0)
 =\mechanical m\big(\mechanical{\vec r}(0)\times\mechanical{\vec v}(0)\big) \\
-&=\mechanical m\big[(\mechanical x_0+1)\hat{\imath}+\mechanical y_0\hat{\jmath}\big]
-\times(\signal\omega_2\hat{\jmath}) \\
-&=\mechanical m(\mechanical x_0+1)\signal\omega_2
+&=\mechanical m\big[(\mechanical x_0+\mechanical A)\hat{\imath}+\mechanical y_0\hat{\jmath}\big]
+\times(\mechanical A\signal\omega_2\hat{\jmath}) \\
+&=\mechanical m(\mechanical x_0+\mechanical A)\mechanical A\signal\omega_2
 \underbrace{(\hat{\imath}\times\hat{\jmath})}_{\hat{k}}
-+\mechanical m\mechanical y_0\signal\omega_2
++\mechanical m\mechanical y_0\mechanical A\signal\omega_2
 \underbrace{(\hat{\jmath}\times\hat{\jmath})}_0 \\
-&=\mechanical m\signal\omega_2(\mechanical x_0+1)\hat{k}.
+&=\mechanical m\mechanical A\signal\omega_2(\mechanical x_0+\mechanical A)\hat{k}.
 \end{aligned} \tag{5.28}
 $$
 
-The angular momentum is along the $z$ axis because $\mechanical{\vec r}(t)$ and $\mechanical{\vec v}(t)$ are in the $xy$ plane. Its sign at $t=0$ is the sign of $\signal\omega_2(\mechanical x_0+1)$.
+The angular momentum is along the $z$ axis because $\mechanical{\vec r}(t)$ and $\mechanical{\vec v}(t)$ are in the $xy$ plane. Its sign at $t=0$ is the sign of $\signal\omega_2(\mechanical x_0+\mechanical A)$ for $\mechanical A>0$.
 
 ## Physical quantities
 
@@ -181,6 +181,8 @@ The angular momentum is along the $z$ axis because $\mechanical{\vec r}(t)$ and 
 | $\mechanical m$ | $\unit{kg}$ | Mass | Mass of the body or particle. |
 | $\mechanical{\vec v}$ | $\unit{m\,s^{-1}}$ | Velocity | Rate of change of the position vector. |
 | $\mechanical{\vec r}$ | $\unit m$ | Position vector | Displacement from the specified reference point. |
+| $\mechanical x,\mechanical y,\mechanical x_0,\mechanical y_0$ | $\unit m$ | Coordinates | Particle coordinates and the constant offsets of the trajectory. |
+| $\mechanical A$ | $\unit m$ | Amplitude | Amplitude of the sinusoidal terms in the trajectory. |
 | $\mechanical{\vec L}$ | $\unit{kg\,m^2\,s^{-1}}$ | Angular momentum | Rotational momentum about the specified point or axis. |
 | $\mechanical{\vec\tau}$ | $\unit{N\,m}$ | Torque | Moment of a force about the chosen point. |
 | $\mechanical{\vec\omega}$ | $\unit{rad\,s^{-1}}$ | Angular velocity | Rotation rate and axial direction. |

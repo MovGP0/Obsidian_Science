@@ -216,7 +216,7 @@ $$
 \tag{8.2}
 $$
 
-The small impulse changes the direction of the spin angular momentum. As the wheel precesses, the torque continues to turn with the axle. In the idealized nearly horizontal motion, the torque stays perpendicular to the spin angular momentum and changes its direction while leaving its magnitude approximately constant. The center of mass also moves around the rope and has orbital angular momentum along $+z$. The spin axis therefore changes orientation even while the precession axis stays fixed.
+The small impulse changes the direction of the spin angular momentum. As the wheel precesses, the torque continues to turn with the axle. In the idealized nearly horizontal motion, the torque stays perpendicular to the spin angular momentum and changes its direction while leaving its magnitude approximately constant. The center of mass also moves around the rope and has orbital angular momentum along $+z$. The gravitational torque has no $z$ component, and the wheel starts with $\mechanical L_z=0$. The axle therefore dips slightly below the horizontal, so that the $-z$ component of the spin angular momentum balances the orbital part. This initial dip starts the nutation described below.
 
 In the fast-spin regime, the precession speed $\mechanical\omega_P$ is much smaller than the spin speed $\mechanical\omega$. For the same wheel and setup, $\mechanical\omega_P$ is then inversely proportional to $\mechanical\omega$. The axle can also bob as it precesses, especially when spin is slower or the initial conditions differ from steady precession. This wobble is called *nutation*. A spinning top also precesses under the torque of its weight about the support point.
 

@@ -18,13 +18,13 @@ $$
 For small displacement $\mechanical{x}$, keep only the linear term $\mechanical{F}=-\mechanical{k}\mechanical{x}$. Newton's second law becomes
 
 $$
-\mechanical{m}\frac{d^2\mechanical{x}}{d\mechanical{t}^2}+\mechanical{k}\mechanical{x}=0.
+\mechanical{m}\frac{d^2\mechanical{x}}{dt^2}+\mechanical{k}\mechanical{x}=0.
 $$
 
 A solution is
 
 $$
-\mechanical{x}(\mechanical{t})=\mechanical{A}\sin(\signal{\omega}\mechanical{t}+\signal{\phi}),
+\mechanical{x}(t)=\mechanical{A}\sin(\signal{\omega}t+\signal{\phi}),
 \qquad
 \signal{\omega}=\sqrt{\frac{\mechanical{k}}{\mechanical{m}}}.
 $$
@@ -33,7 +33,7 @@ The system sets the angular frequency $\signal{\omega}$, while the initial condi
 
 ![[Kyle Kabasares - Vibrations and Waves - Sinusoidal displacement.png|**Fig. 1** Displacement versus time for simple harmonic motion, with the amplitude marked from equilibrium to a crest.]]
 
-At $\mechanical{t}=0$, the displacement and its time derivative are
+At $t=0$, the displacement and its time derivative are
 
 $$
 \mechanical{x}_0=\mechanical{A}\sin\signal{\phi},
@@ -69,11 +69,11 @@ $$
 
 Euler's formula gives $e^{j\pi}=-1$, $e^{j\pi/2}=j$, and $e^{j2\pi}=1$. Equality of complex numbers requires equality of both components. For example, $A+jB=3+j8$ gives $A=3$ and $B=8$, while $A+jB=10$ gives $A=10$ and $B=0$.
 
-Replace the real displacement by a complex extension $z$ satisfying $\mechanical{m}\ddot z+\mechanical{k}z=0$. Take $z=\mechanical{A}e^{j(\signal{\omega}\mechanical{t}+\signal{\phi})}$, so that $\dot z=j\signal{\omega}z$ and $\ddot z=-\signal{\omega}^2z$. Substitution gives $(\mechanical{k}-\mechanical{m}\signal{\omega}^2)z=0$. For $\signal{\omega}^2=\mechanical{k}/\mechanical{m}$ the real part is
+Replace the real displacement by a complex extension $z$ satisfying $\mechanical{m}\ddot z+\mechanical{k}z=0$. Take $z=\mechanical{A}e^{j(\signal{\omega}t+\signal{\phi})}$, so that $\dot z=j\signal{\omega}z$ and $\ddot z=-\signal{\omega}^2z$. Substitution gives $(\mechanical{k}-\mechanical{m}\signal{\omega}^2)z=0$. For $\signal{\omega}^2=\mechanical{k}/\mechanical{m}$ the real part is
 
 $$
-\mechanical{x}(\mechanical{t})=\operatorname{Re}z
-=\mechanical{A}\cos(\signal{\omega}\mechanical{t}+\signal{\phi}).
+\mechanical{x}(t)=\operatorname{Re}z
+=\mechanical{A}\cos(\signal{\omega}t+\signal{\phi}).
 $$
 
 This uses a cosine phase convention, shifted from the sine convention on [[#Review of periodic motion|the section on Review of periodic motion]].
@@ -83,8 +83,8 @@ This uses a cosine phase convention, shifted from the sine convention on [[#Revi
 With a drag force proportional to velocity, the equation of motion is
 
 $$
-\mechanical{m}\frac{d^2\mechanical{x}}{d\mechanical{t}^2}
-+\mechanical{b}\frac{d\mechanical{x}}{d\mechanical{t}}
+\mechanical{m}\frac{d^2\mechanical{x}}{dt^2}
++\mechanical{b}\frac{d\mechanical{x}}{dt}
 +\mechanical{k}\mechanical{x}=0.
 $$
 
@@ -92,13 +92,13 @@ In the oscillatory case the amplitude varies with time while the angular frequen
 
 ![[Kyle Kabasares - Vibrations and Waves - Damped displacement.png|**Fig. 3** The peaks of an oscillatory displacement shrink as the motion is damped.]]
 
-Set $z=\mechanical{A}e^{j(\signal{p}\mechanical{t}+\signal{\alpha})}$ with complex angular frequency $\signal{p}=\signal{\delta}+j\signal{\eta}$. Now $\dot z=j\signal{p}z$ and $\ddot z=-\signal{p}^2z$, giving the characteristic equation
+Set $z=\mechanical{A}e^{j(\signal{p}t+\signal{\alpha})}$ with complex angular frequency $\signal{p}=\signal{\delta}+j\signal{\eta}$. Now $\dot z=j\signal{p}z$ and $\ddot z=-\signal{p}^2z$, giving the characteristic equation
 
 $$
 -\mechanical{m}\signal{p}^2+j\mechanical{b}\signal{p}+\mechanical{k}=0.
 $$
 
-Define the damping rate $\signal{\gamma}=\mechanical{b}/\mechanical{m}$ and the undamped angular frequency $\signal{\omega}_0=\sqrt{\mechanical{k}/\mechanical{m}}$. In this derivation the components of the complex frequency are written $\signal{s}$ and $\signal{n}$, so $\signal{p}=\signal{s}+j\signal{n}$. Dividing the characteristic equation by $\mechanical{m}$ and separating real and imaginary parts gives
+Define the damping rate $\signal{\gamma}=\mechanical{b}/\mechanical{m}$ and the undamped angular frequency $\signal{\omega}_0=\sqrt{\mechanical{k}/\mechanical{m}}$. This note uses $\signal{\gamma}=\mechanical{b}/\mechanical{m}$ throughout. [[04.06 Damped Oscillator]] and the related chapter notes use $\signal{\gamma}=\mechanical{b}/(2\mechanical{m})$, so the factors of $2$ in the formulas differ. In this derivation the components of the complex frequency are written $\signal{s}$ and $\signal{n}$, so $\signal{p}=\signal{s}+j\signal{n}$. Dividing the characteristic equation by $\mechanical{m}$ and separating real and imaginary parts gives
 
 $$
 \begin{aligned}
@@ -111,17 +111,17 @@ For oscillatory motion $\signal{s}\ne0$, so $\signal{n}=\signal{\gamma}/2$ and $
 
 $$
 \begin{aligned}
-z(\mechanical{t})&=\mechanical{A}_0e^{-\signal{\gamma}\mechanical{t}/2}e^{j(\signal{\omega}\mechanical{t}+\signal{\alpha})},\\
-\mechanical{x}(\mechanical{t})&=\mechanical{A}_0e^{-\signal{\gamma}\mechanical{t}/2}\cos(\signal{\omega}\mechanical{t}+\signal{\alpha}),\\
+z(t)&=\mechanical{A}_0e^{-\signal{\gamma}t/2}e^{j(\signal{\omega}t+\signal{\alpha})},\\
+\mechanical{x}(t)&=\mechanical{A}_0e^{-\signal{\gamma}t/2}\cos(\signal{\omega}t+\signal{\alpha}),\\
 \signal{\omega}&=\sqrt{\signal{\omega}_0^2-\signal{\gamma}^2/4}.
 \end{aligned}
 $$
 
-The amplitude envelope is $\mechanical{A}(\mechanical{t})=\mechanical{A}_0e^{-\mechanical{t}/\signal{\tau}}$, with $\signal{\tau}=2/\signal{\gamma}$. It falls from $\mechanical{A}_0$ to $\mechanical{A}_0/e$ in one time constant. The notes estimate the energy from the amplitude envelope:
+The amplitude envelope is $\mechanical{A}(t)=\mechanical{A}_0e^{-t/\signal{\tau}}$, with $\signal{\tau}=2/\signal{\gamma}$. It falls from $\mechanical{A}_0$ to $\mechanical{A}_0/e$ in one time constant. The notes estimate the energy from the amplitude envelope:
 
 $$
-\energy{E}_{\mathrm{env}}(\mechanical{t})
-=\tfrac12\mechanical{k}\mechanical{A}_0^2e^{-\signal{\gamma}\mechanical{t}}.
+\energy{E}_{\mathrm{env}}(t)
+=\tfrac12\mechanical{k}\mechanical{A}_0^2e^{-\signal{\gamma}t}.
 $$
 
 This describes the energy decay scale. The instantaneous mechanical energy is $\tfrac12\mechanical{m}\dot{\mechanical{x}}^2+\tfrac12\mechanical{k}\mechanical{x}^2$.
@@ -139,9 +139,9 @@ For $\signal{\gamma}=\mechanical{b}/\mechanical{m}$, the sign of $\signal{\omega
 - **Overdamped.** For $\signal{\gamma}/2>\signal{\omega}_0$, set $\signal{\beta}=\sqrt{\signal{\gamma}^2/4-\signal{\omega}_0^2}$. The characteristic frequencies are imaginary and the two modes decay exponentially:
 
 $$
-\mechanical{x}(\mechanical{t})
-=C_+e^{-(\signal{\gamma}/2+\signal{\beta})\mechanical{t}}
-+C_-e^{-(\signal{\gamma}/2-\signal{\beta})\mechanical{t}}.
+\mechanical{x}(t)
+=C_+e^{-(\signal{\gamma}/2+\signal{\beta})t}
++C_-e^{-(\signal{\gamma}/2-\signal{\beta})t}.
 $$
 
 The notes write the faster mode, whose time constant is $1/(\signal{\gamma}/2+\signal{\beta})$.
@@ -151,12 +151,12 @@ The notes write the faster mode, whose time constant is $1/(\signal{\gamma}/2+\s
 - **Critically damped.** At $\signal{\omega}_0=\signal{\gamma}/2$, the two roots coincide and the oscillation frequency vanishes. The page displays the pure exponential solution with time constant $2/\signal{\gamma}$. Including the second solution for the repeated root gives
 
 $$
-\mechanical{x}(\mechanical{t})=(C_1+C_2\mechanical{t})e^{-\signal{\gamma}\mechanical{t}/2}.
+\mechanical{x}(t)=(C_1+C_2t)e^{-\signal{\gamma}t/2}.
 $$
 
 ##### Resonance without damping
 
-Drive the spring–mass oscillator with $\mechanical{F}_{\mathrm{ext}}=\mechanical{F}_0\cos(\signal{\omega}\mechanical{t})$, where $\signal{\omega}$ is the driving frequency and $\signal{\omega}_0=\sqrt{\mechanical{k}/\mechanical{m}}$ is the natural frequency.
+Drive the spring–mass oscillator with $\mechanical{F}_{\mathrm{ext}}=\mechanical{F}_0\cos(\signal{\omega}t)$, where $\signal{\omega}$ is the driving frequency and $\signal{\omega}_0=\sqrt{\mechanical{k}/\mechanical{m}}$ is the natural frequency.
 
 ![[Kyle Kabasares - Vibrations and Waves - Driven mass and spring.png|**Fig. 6** A mass attached to a spring fixed at one end.]]
 
@@ -165,9 +165,9 @@ The early response generally contains both frequencies. With damping, the natura
 Use the complex equation and trial solution
 
 $$
-\mechanical{m}\ddot z+\mechanical{k}z=\mechanical{F}_0e^{j\signal{\omega}\mechanical{t}},
+\mechanical{m}\ddot z+\mechanical{k}z=\mechanical{F}_0e^{j\signal{\omega}t},
 \qquad
-z=\mechanical{A}e^{j(\signal{\omega}\mechanical{t}+\signal{\alpha})}.
+z=\mechanical{A}e^{j(\signal{\omega}t+\signal{\alpha})}.
 $$
 
 Substituting $\ddot z=-\signal{\omega}^2z$ gives
@@ -200,10 +200,10 @@ The driven term by itself would give $\mechanical{x}(0)=C$, where $C=(\mechanica
 $$
 \begin{aligned}
 \ddot{\mechanical{x}}_1+\signal{\omega}_0^2\mechanical{x}_1&=0,
-&\mechanical{x}_1(\mechanical{t})&=\mechanical{B}\cos(\signal{\omega}_0\mechanical{t}+\signal{\beta}),\\
+&\mechanical{x}_1(t)&=\mechanical{B}\cos(\signal{\omega}_0t+\signal{\beta}),\\
 \ddot{\mechanical{x}}_2+\signal{\omega}_0^2\mechanical{x}_2
-&=\frac{\mechanical{F}_0}{\mechanical{m}}\cos(\signal{\omega}\mechanical{t}),
-&\mechanical{x}_2(\mechanical{t})&=C\cos(\signal{\omega}\mechanical{t}).
+&=\frac{\mechanical{F}_0}{\mechanical{m}}\cos(\signal{\omega}t),
+&\mechanical{x}_2(t)&=C\cos(\signal{\omega}t).
 \end{aligned}
 $$
 
@@ -212,19 +212,19 @@ The total displacement is $\mechanical{x}_T=\mechanical{x}_1+\mechanical{x}_2$, 
 The zero initial velocity gives $-\signal{\omega}_0\mechanical{B}\sin\signal{\beta}=0$. The zero initial displacement gives $C+\mechanical{B}\cos\signal{\beta}=0$, where $C$ is the signed driven coefficient from [[#Response when the force is switched on|the section on Response when the force is switched on]]. Combining them yields
 
 $$
-\mechanical{x}_T(\mechanical{t})
-=C\left[\cos(\signal{\omega}\mechanical{t})-\cos(\signal{\omega}_0\mechanical{t})\right].
+\mechanical{x}_T(t)
+=C\left[\cos(\signal{\omega}t)-\cos(\signal{\omega}_0t)\right].
 $$
 
 Without damping, both terms persist.
 
 ##### Driven oscillator review
 
-The undamped oscillator obeys $\mechanical{m}\ddot{\mechanical{x}}+\mechanical{k}\mechanical{x}=\mechanical{F}_0\cos(\signal{\omega}\mechanical{t})$. The driven response is in phase below resonance and shifted by $\pi$ above resonance if the amplitude is taken positive.
+The undamped oscillator obeys $\mechanical{m}\ddot{\mechanical{x}}+\mechanical{k}\mechanical{x}=\mechanical{F}_0\cos(\signal{\omega}t)$. The driven response is in phase below resonance and shifted by $\pi$ above resonance if the amplitude is taken positive.
 
 ![[Kyle Kabasares - Vibrations and Waves - Undamped resonance review.png|**Fig. 8** The driven amplitude rises toward the natural frequency and falls beyond it.]]
 
-For small $\mechanical{t}$, both $\signal{\omega}\mechanical{t}$ and $\signal{\omega}_0\mechanical{t}$ are small. Use
+For small $t$, both $\signal{\omega}t$ and $\signal{\omega}_0t$ are small. Use
 
 $$
 \cos\theta=1-\frac{\theta^2}{2!}+\frac{\theta^4}{4!}+\cdots,\qquad
@@ -234,19 +234,19 @@ $$
 The constant terms in the difference of cosines cancel, leaving the quadratic term as the first nonzero contribution:
 
 $$
-\mechanical{x}_T(\mechanical{t})
-\simeq C\left[-\frac{(\signal{\omega}\mechanical{t})^2}{2}
-+\frac{(\signal{\omega}_0\mechanical{t})^2}{2}\right].
+\mechanical{x}_T(t)
+\simeq C\left[-\frac{(\signal{\omega}t)^2}{2}
++\frac{(\signal{\omega}_0t)^2}{2}\right].
 $$
 
 Substitute the driven coefficient into the small-time expansion:
 
 $$
-\mechanical{x}_T(\mechanical{t})
+\mechanical{x}_T(t)
 \simeq
 \frac{\mechanical{F}_0/\mechanical{m}}{\signal{\omega}_0^2-\signal{\omega}^2}
-\frac{(\signal{\omega}_0^2-\signal{\omega}^2)\mechanical{t}^2}{2}
-=\frac{\mechanical{F}_0\mechanical{t}^2}{2\mechanical{m}}.
+\frac{(\signal{\omega}_0^2-\signal{\omega}^2)t^2}{2}
+=\frac{\mechanical{F}_0t^2}{2\mechanical{m}}.
 $$
 
 At first the motion is approximately that of a body accelerating from rest under the initial force $\mechanical{F}_0$.
@@ -254,10 +254,10 @@ At first the motion is approximately that of a body accelerating from rest under
 At longer times, rewrite the difference of cosines using $\cos\theta-\cos\phi=-2\sin[(\theta+\phi)/2]\sin[(\theta-\phi)/2]$:
 
 $$
-\mechanical{x}_T(\mechanical{t})
+\mechanical{x}_T(t)
 =2C
-\sin\left(\frac{\signal{\omega}_0-\signal{\omega}}{2}\mechanical{t}\right)
-\sin\left(\frac{\signal{\omega}+\signal{\omega}_0}{2}\mechanical{t}\right).
+\sin\left(\frac{\signal{\omega}_0-\signal{\omega}}{2}t\right)
+\sin\left(\frac{\signal{\omega}+\signal{\omega}_0}{2}t\right).
 $$
 
 When the two frequencies are close, the first sine varies slowly and modulates the rapidly oscillating second sine. The resulting amplitude modulation produces beats.
@@ -272,10 +272,10 @@ $$
 \mechanical{m}\ddot{\mechanical{x}}
 +\mechanical{b}\dot{\mechanical{x}}
 +\mechanical{k}\mechanical{x}
-=\mechanical{F}_0\cos(\signal{\omega}\mechanical{t}).
+=\mechanical{F}_0\cos(\signal{\omega}t).
 $$
 
-For the complex extension, use $\ddot z+\signal{\gamma}\dot z+\signal{\omega}_0^2z=(\mechanical{F}_0/\mechanical{m})e^{j\signal{\omega}\mechanical{t}}$. The steady solution has the form $z=\mechanical{A}e^{j(\signal{\omega}\mechanical{t}-\signal{\delta})}$, with $\signal{\delta}$ the phase lag. Since $\ddot z=-\signal{\omega}^2z$, factoring out the common time dependence gives
+For the complex extension, use $\ddot z+\signal{\gamma}\dot z+\signal{\omega}_0^2z=(\mechanical{F}_0/\mechanical{m})e^{j\signal{\omega}t}$. The steady solution has the form $z=\mechanical{A}e^{j(\signal{\omega}t-\signal{\delta})}$, with $\signal{\delta}$ the phase lag. Since $\ddot z=-\signal{\omega}^2z$, factoring out the common time dependence gives
 
 $$
 (\signal{\omega}_0^2-\signal{\omega}^2+j\signal{\gamma}\signal{\omega})\mechanical{A}
@@ -322,19 +322,19 @@ $$
 Compare the undamped response, with a persistent free term, to the underdamped response
 
 $$
-\mechanical{x}(\mechanical{t})
-=\mechanical{B}e^{-\signal{\gamma}\mechanical{t}/2}
-\cos(\signal{\omega}_1\mechanical{t}+\signal{\alpha})
-+\mechanical{A}\cos(\signal{\omega}\mechanical{t}-\signal{\delta}),
+\mechanical{x}(t)
+=\mechanical{B}e^{-\signal{\gamma}t/2}
+\cos(\signal{\omega}_1t+\signal{\alpha})
++\mechanical{A}\cos(\signal{\omega}t-\signal{\delta}),
 \qquad
 \signal{\omega}_1=\sqrt{\signal{\omega}_0^2-\frac{\signal{\gamma}^2}{4}}.
 $$
 
-For weak damping, $\signal{\omega}_1\simeq\signal{\omega}_0$. Set the drive to $\signal{\omega}=\signal{\omega}_0$ so that the driven term is $\mechanical{A}\sin(\signal{\omega}_0\mechanical{t})$. This fixes the sign of the phase shift from the cosine convention on the same page. For zero initial position and velocity, the initial position equation is $\mechanical{B}\cos\signal{\alpha}=0$. Take $\signal{\alpha}=\pi/2$ and use the velocity to determine $\mechanical{B}$.
+For weak damping, $\signal{\omega}_1\simeq\signal{\omega}_0$. Set the drive to $\signal{\omega}=\signal{\omega}_0$ so that the driven term is $\mechanical{A}\sin(\signal{\omega}_0t)$. This fixes the sign of the phase shift from the cosine convention on the same page. For zero initial position and velocity, the initial position equation is $\mechanical{B}\cos\signal{\alpha}=0$. Take $\signal{\alpha}=\pi/2$ and use the velocity to determine $\mechanical{B}$.
 
-A margin note gives the wave-speed relation $\mechanical{c}=\signal{\lambda}\signal{f}$, with wavelength $\signal{\lambda}=\mechanical{c}/\signal{f}$, and records a speed of $4\,\unit{m\,s^{-1}}$.
+A margin note gives the wave-speed relation $\signal{c}=\signal{\lambda}\signal{f}$, with wavelength $\signal{\lambda}=\signal{c}/\signal{f}$, and records a speed of $4\,\unit{m\,s^{-1}}$.
 
-Returning to the weakly damped oscillator driven at $\signal{\omega}_0$, differentiate the free and driven terms at $\mechanical{t}=0$:
+Returning to the weakly damped oscillator driven at $\signal{\omega}_0$, differentiate the free and driven terms at $t=0$:
 
 $$
 \mechanical{v}(0)
@@ -346,16 +346,16 @@ $$
 With $\signal{\alpha}=\pi/2$, this yields $\mechanical{B}=\mechanical{A}$ in the approximation $\signal{\omega}_1\simeq\signal{\omega}_0$. The response grows toward its steady amplitude:
 
 $$
-\mechanical{x}(\mechanical{t})
-\simeq\mechanical{A}\sin(\signal{\omega}_0\mechanical{t})
-\left(1-e^{-\signal{\gamma}\mechanical{t}/2}\right).
+\mechanical{x}(t)
+\simeq\mechanical{A}\sin(\signal{\omega}_0t)
+\left(1-e^{-\signal{\gamma}t/2}\right).
 $$
 
 ![[Kyle Kabasares - Vibrations and Waves - Resonant buildup.png|**Fig. 11** A driven oscillation builds up after the force is switched on.]]
 
 ##### Oscillator relations
 
-For $\mechanical{x}=\mechanical{A}\cos(2\pi\mechanical{t}/\signal{T})$, the phase is $\signal{\phi}=\signal{\omega}\mechanical{t}$ and $\signal{\omega}=d\signal{\phi}/d\mechanical{t}=2\pi\signal{f}=2\pi/\signal{T}$. For a spring–mass oscillator,
+For $\mechanical{x}=\mechanical{A}\cos(2\pit/\signal{T})$, the phase is $\signal{\phi}=\signal{\omega}t$ and $\signal{\omega}=d\signal{\phi}/dt=2\pi\signal{f}=2\pi/\signal{T}$. For a spring–mass oscillator,
 
 $$
 \signal{\omega}=\sqrt{\frac{\mechanical{k}}{\mechanical{m}}},
@@ -392,7 +392,7 @@ Kyle Kabasares, *Vibrations and Waves (Physics 122, UC Merced 2015)*.
 | $\mechanical{F}$ | $\unit{N}$ | Restoring force | Force that vanishes at equilibrium. |
 | $\mechanical{k}_2$ | $\unit{N\,m^{-2}}$ | Quadratic force coefficient | Coefficient of the squared displacement in the expansion of the restoring force. |
 | $\mechanical{m}$ | $\unit{kg}$ | Mass | Inertial parameter in the equation of motion. |
-| $\mechanical{t}$ | $\unit{s}$ | Time | Independent variable for the motion. |
+| $t$ | $\unit{s}$ | Time | Independent variable for the motion. |
 | $\signal{\omega}$ | $\unit{rad\,s^{-1}}$ | Angular frequency | Rate of phase accumulation. |
 | $\signal{\phi}$ | $\unit{rad}$ | Phase constant | Phase at the initial time. |
 | $\mechanical{v}_0$ | $\unit{m\,s^{-1}}$ | Initial velocity | Time derivative of the displacement at the initial time. |
@@ -404,7 +404,7 @@ Kyle Kabasares, *Vibrations and Waves (Physics 122, UC Merced 2015)*.
 | $\signal{\beta}$ | $\unit{s^{-1}}$ | Overdamped rate offset | Difference between either exponential decay rate and the critical rate $\signal{\gamma}/2$ in magnitude. |
 | $\signal{\alpha}$ | $\unit{rad}$ | Response phase | Phase of the displacement relative to the driving cosine. |
 | $\signal{\delta}$ | $\unit{rad}$ | Phase lag | Angle by which the steady displacement lags the applied force. |
-| $\mechanical{c}$ | $\unit{m\,s^{-1}}$ | Wave speed | Product of wavelength and frequency. |
+| $\signal{c}$ | $\unit{m\,s^{-1}}$ | Wave speed | Product of wavelength and frequency. |
 | $\signal{\lambda}$ | $\unit{m}$ | Wavelength | Spatial distance over one wave cycle. |
 | $\mechanical{b}$ | $\unit{m}$ | Pulse height and half-width | Peak displacement and distance from the peak to a half-height point in this example. |
 | $d$ | $\unit{m^4\,s^{-2}}$ | String dispersion coefficient | Multiplies the squared angular wave number in the phase speed squared. |

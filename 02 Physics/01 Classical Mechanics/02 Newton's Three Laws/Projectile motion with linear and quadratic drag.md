@@ -315,12 +315,5 @@ Kyle Kabasares, *Classical Mechanics (Physics 105, UC Merced 2015)*.
 | $\mechanical{k}$ | $\unit{s^{-1}}$ | Linear drag rate | Linear drag coefficient divided by the projectile mass. |
 | $\mechanical{h}$ | $\unit{m}$ | Initial height | Vertical coordinate at launch in the drag calculation. |
 | $T$ | $\unit{s}$ | Flight time | Positive time when the projectile returns to launch height. |
-| $\mechanical{R}$ | $\unit{m}$ | Radius | Radius of a wire arc or cone, or the perpendicular distance to a rotation axis. |
-| $\mechanical{\alpha}$, $\ddot\phi$, $\ddot\theta$ | $\unit{rad\,s^{-2}}$ | Angular acceleration | Rate of change of angular velocity about the rotation axis. |
-| $\mechanical{k}$ | $\unit{N\,m^{-1}}$ | Spring constant | Force magnitude per unit extension or compression, or the local curvature of a position potential. |
-| $\mechanical{b}$ | $\unit{m}$ | Cube half-width | Half the length of an edge of the cube. |
-| $C$, $C_1$, $C_2$ | $\unit{m}$ | Complex displacement coefficients | Coefficients of the complex exponentials used to represent a real oscillation. |
-| $\mechanical{R}$ | $\unit{m}$ | Radial scale | Reference length in the radial potential. |
-| $\mechanical{c}$ | $\unit{m\,s^{-1}}$ | Speed of light in vacuum | Reference speed in the travel-time functional. |
-| $T$ | $\unit{s}$ | Travel time | Time along a candidate path in Fermat’s principle or the brachistochrone problem. |
-| $\mechanical{k}$ | $\unit{m}$ | Polar length integral constant | Constant from the absence of explicit azimuth dependence in the arc-length integrand. |
+| $\ddot\phi$ | $\unit{rad\,s^{-2}}$ | Angular acceleration | Second time derivative of the pendulum angle. |
+| $C$ | depends on use | Integration constants | Constants fixed by the initial conditions; their units follow the integrated equation. |
