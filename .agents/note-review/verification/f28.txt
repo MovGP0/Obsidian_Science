@@ -1,0 +1,52 @@
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/08 Strong Interactions among Quarks/8.P Problems.md
+- FIXED | Problem 8.4 potentials printed as alpha_s r instead of alpha_s/r | Replaced alpha_s r by alpha_s/r in all four potentials.
+- FIXED | Problem 8.5 table: single box is the 6, pair images swapped | Set dimension of single box to 6 (Casimir 35/12 checks); swapped embeds so the 21 uses horizontal-pair.svg and the 15 uses vertical-pair.svg (SVG content checked; Casimirs 20/3 and 14/3 check).
+- FIXED | Problem 8.22 gg to qqbar ratio 21/320 is 0.066, not 0.66 | Changed 0.66 to 0.066 (7/48 divided by 20/9 = 21/320 checked).
+- FIXED | Problem 8.10 cites figure 8.10 for ghost rules | Changed to figure 8.17 (Fig. 8.17 is the gluon-ghost-ghost vertex in 8.3; Fig. 8.10 is the dielectric figure in 8.2).
+- FIXED | Problem 8.27(c) sum e_i^4 = 2/9, Han-Nambu citation | Wrote 3 sum e_i^4 = 2/3 (color factor) and changed citation to Phys. Rev. 139, B1006 (1965).
+- FIXED | Problem 8.9 contact term missing alpha_R power and sign | Changed to -(4/15) alpha_R^2/m^2 delta^3(x) (Fourier transform of -4 pi alpha/q^2 times 1+alpha q^2/(15 pi m^2)).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/08 Strong Interactions among Quarks/8.R For Further Reading.md
+- FIXED | Eichten-Hill second paper is Phys. Lett. B243 | Changed Phys. Rev. to Phys. Lett. for B243, 427 (1990).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/09 Unified Theories/9.2 The SU(5) Model.md
+- FIXED | (9.2.19) hypercharge coefficient must be sqrt(3/5) | Changed -(g5/2)(3/5) to -(g5/2) sqrt(3/5), consistent with (9.2.21).
+- FIXED | Outdated proton-decay bounds and Higgs mass status | Kept source values; added an Update-to-the-source-values note after (9.2.29) with Super-K 2020 bounds (2.4e34 and 1.6e34 yr) and SNO+ invisible bound of order 1e30 yr; added M_H about 125 GeV (2012) to the Higgs sentence.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/09 Unified Theories/9.3 Coupling-Constant Unification.md
+- FIXED | (9.3.9) traces must be of (Y/2)^2 with Q = I3 + Y/2 | Replaced tr(Y_L^2), tr(Y_R^2) by tr(Y_L/2)^2, tr(Y_R/2)^2 (recomputed: 20/3 with Y, 5/3 with Y/2 per generation).
+- FIXED | (9.3.15) u is 1.45e15 GeV, not 1.44e15 | Changed to 1.45e15 GeV (recomputed log10 u = 15.161).
+- FIXED | Dated inputs alpha_s, M_Z, M_W | Kept source values; added an Update-to-the-source-values note after (9.3.22): alpha_s = 0.1180, M_Z = 91.1876 GeV give u about 1.42e15 GeV and x_W about 0.203; M_W about 80.37 GeV gives x_W(os) about 0.2232 (recomputed).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/09 Unified Theories/9.4 Nucleon Decay.md
+- FIXED | Super-K 32,000 m^3 is inner volume, not fiducial | Changed to inner-detector volume 32,000 m^3 with standard fiducial volume 22,500 m^3.
+- FIXED | 8.2e33 yr bound superseded by Super-K 2020 | Kept source sentence; added an Update-to-the-source-values note: 2.4e34 yr, more than 100 times (9.4.14), Hyper-Kamiokande and DUNE under construction.
+- FIXED | Table uses B for baryon number and branching fraction | Renamed branching fraction to mathcal{B} in the table rows (B and tau/B); the Fig. 9.5 caption does not contain the symbol, so no caption change.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/09 Unified Theories/9.5 The Baryon Number of the Universe.md
+- FIXED | (9.5.10) sum of S(a to i) S*(a to i) is (S^dagger S)_aa | Changed (SS^dagger)_aa to (S^dagger S)_aa; the rest stands by unitarity.
+- FIXED | (9.5.1) outdated baryon-to-photon ratio | Added a parenthetical after the source range: Planck CMB and BBN give about 6.1e-10 with approximately 1% uncertainty.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/09 Unified Theories/9.6 The Problem of Fermion Masses.md
+- FIXED | (9.6.5) alpha_1 term sign must be + | Changed -3/(2n_f) to +3/(2n_f) (3/20 + 27/20 = 3/2; plus sign gives m_b/m_tau = 2.91 as in (9.6.6), minus gives 3.70).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/91 Appendix A Notations and Conventions/A.1 Four-Vectors and Scalar Product.md
+- FIXED | x is four-vector and spatial component, x^2 invariant vs component | Added one clarifying sentence after (A.1.4) on the two meanings of x and x^2 (source notation kept).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/91 Appendix A Notations and Conventions/A.4 Dirac Equation and Dirac Spinors.md
+- FIXED | lambda clash with Fierz matrix, mu helicity vs Lorentz index | Renamed helicity mu to lambda' in (A.4.7)-(A.4.9) and Fierz lambda_ij to C_ij in (A.4.29)-(A.4.30); added lambda' to the helicity table row.
+- FIXED | Table lists s twice | Merged the spin-state row into the polarization-vector row.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/91 Appendix A Notations and Conventions/A.5 Color Algebra.md
+- FIXED | (A.5.19) i f^{abc} T^b T^c = -N/2 T^a | Changed left side to -i f^{abc}(T^b T^c) so the stated C_A/2 T^a result and the figure factor 1/2 stay correct.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/92 Appendix B Observables and Feynman Rules/B.1 Phase-Space Formulas -  Decay Rates and Cross Sections.md
+- FIXED | (B.1.4) needs m_alpha^3 | Changed m_alpha^2 to m_alpha^3 (S12 = 2 m |p|, so result equals |M|^2 |p|/(32 pi^2 m^2)).
+- REJECTED | S vs S_12, S_34 symbol clash | The kinematic factors always carry pair subscripts and are colored, S never does, and the table defines both; renaming the source notation is not needed.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/92 Appendix B Observables and Feynman Rules/B.2 Feynman Rules -  Generalities.md
+- FIXED | epsilon used for polarization and +i epsilon | Replaced the four +i epsilon propagator terms by +i0^+.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/92 Appendix B Observables and Feynman Rules/B.3 Feynman Integrals.md
+- FIXED | (B.3.12) missing sign factor (-1)^(n-m+1) | Added the factor (Wick rotation recomputed; m=2,n=3 gives -i/(32 pi^2 a^2) as before).
+- PARTLY | m is mass and power index; lambda Schwinger parameter | Renamed the power index m to r in (B.3.12), its condition, and (B.3.17); lambda has only the Schwinger meaning inside this note, so no change.

@@ -81,12 +81,12 @@ The operator exponential is diagonal in the energy basis, with diagonal entries 
 A thermal average is
 
 $$
-\langle A\rangle
-=\frac{\sum_i e^{-\thermal{\beta}\energy{E}_i}\langle\psi_i|A|\psi_i\rangle}{Z}
-=\operatorname{Tr}(\hat\rho A).
+\langle\hat O\rangle
+=\frac{\sum_i e^{-\thermal{\beta}\energy{E}_i}\langle\psi_i|\hat O|\psi_i\rangle}{Z}
+=\operatorname{Tr}(\hat\rho\hat O).
 $$
 
-Taking $A=\energy{\hat H}$ gives $\langle\energy{E}\rangle=-\partial\ln Z/\partial\thermal{\beta}$.
+Taking $\hat O=\energy{\hat H}$ gives $\langle\energy{E}\rangle=-\partial\ln Z/\partial\thermal{\beta}$.
 
 ##### Energy fluctuations
 
@@ -202,7 +202,7 @@ $$
 
 The second derivative determines $\thermal{C}_V$. The normalized operator $\hat\rho=e^{-\thermal{\beta}\energy{\hat H}}/Z$ gives $\langle\energy{E}\rangle=\operatorname{Tr}(\hat\rho\energy{\hat H})$. The unnormalized operator $\hat\rho_u=e^{-\thermal{\beta}\energy{\hat H}}$ solves $-\partial\hat\rho_u/\partial\thermal{\beta}=\energy{\hat H}\hat\rho_u$. Under $t=-i\tau$, this is the imaginary-time form of the Schrödinger evolution equation. The margin refers to Baym for the kernels.
 
-The free-particle equation and its Gaussian solution are on [[#Entropy from the canonical density matrix|the section on Entropy from the canonical density matrix]]. The repeated handwritten kernel here drops $\thermal{\beta}$ from the square-root denominator and puts $\pi$ in the exponent denominator. The diagonal trace below is consistent with the kernel on [[#Entropy from the canonical density matrix|the section on Entropy from the canonical density matrix]].
+The imaginary-time equation is in [[#Position representation and imaginary time|the section on Position representation and imaginary time]], and its free-particle Gaussian solution is in [[#Free particle kernel|the section on Free particle kernel]]. The repeated handwritten kernel here drops $\thermal{\beta}$ from the square-root denominator and puts $\pi$ in the exponent denominator. The diagonal trace below is consistent with the kernel in [[#Free particle kernel|the section on Free particle kernel]].
 
 For one free particle on a line of length $\mechanical{L}$ in the large-box approximation,
 
@@ -236,18 +236,18 @@ The notes compare the statistical sum over configurations, $Z(\thermal{\beta})=\
 
 ##### Harmonic oscillator partition function
 
-To trace the oscillator kernel, set $\mechanical{x}'=\mechanical{x}$. With $f=\thermal{\beta}\energy{\hbar}\mechanical{\omega}/2$, the resulting Gaussian is $A e^{-B\mechanical{x}^2}$, with
+To trace the oscillator kernel, set $\mechanical{x}'=\mechanical{x}$. With $f=\thermal{\beta}\energy{\hbar}\mechanical{\omega}/2$, the resulting Gaussian is $\mathcal N e^{-B\mechanical{x}^2}$, with
 
 $$
-A=\sqrt{\frac{\mechanical{m}\mechanical{\omega}}{2\pi\energy{\hbar}\sinh(2f)}},\qquad
+\mathcal N=\sqrt{\frac{\mechanical{m}\mechanical{\omega}}{2\pi\energy{\hbar}\sinh(2f)}},\qquad
 B=\frac{\mechanical{m}\mechanical{\omega}}{\energy{\hbar}}\tanh f.
 $$
 
-The kernel from [[#Canonical ensemble kernels|the section on · Canonical ensemble kernels]] fixes the square root in $A$ and the square on $\mechanical{x}$. The Gaussian trace is
+The kernel from [[#One-dimensional quantum harmonic oscillator|the section on One-dimensional quantum harmonic oscillator]] fixes the square root in $\mathcal N$ and the square on $\mechanical{x}$. The Gaussian trace is
 
 $$
 Z=\int_{-\infty}^{\infty}\rho_u(\mechanical{x},\mechanical{x};\thermal{\beta})\,d\mechanical{x}
-=A\sqrt{\frac{\pi}{B}}=\frac{1}{2\sinh f}.
+=\mathcal N\sqrt{\frac{\pi}{B}}=\frac{1}{2\sinh f}.
 $$
 
 The handwritten box appears to put an extra factor of $1/2$ in the argument of $\sinh$. The subsequent free energy uses $f$ as defined above.
@@ -302,18 +302,16 @@ Kyle Kabasares, *Thermodynamics and Statistical Mechanics (Chem 232A - Physics 2
 | $\thermal{S}$ | $\unit{J\,K^{-1}}$ | Entropy | State function whose change along a reversible path is the integral of reversible heat divided by temperature. |
 | $\mechanical{\vec p}$ | $\unit{kg\,m\,s^{-1}}$ | Momentum | Particle momentum, which changes sign under time reversal. |
 | $\mechanical{V}$ | $\unit{m^3}$ | Volume | Spatial extent of a simple system. |
-| $\mechanical{x}$, $\mechanical{h}$ | $\unit{m}$ | Position and height | Coordinate along the displacement and elevation reached in the lifting example. |
-| $\mechanical{P}$, $\mechanical{P}_{\mathrm{int}}$, $\mechanical{P}_{\mathrm{ext}}$ | $\unit{Pa}$ | Pressure | Force per unit area, including the internal and applied external pressure at the piston. |
-| $n$ | $\unit{mol}$ | Amount of substance | Number of moles in the gas. |
+| $\mechanical{x}$, $\mechanical{x}'$ | $\unit{m}$ | Position | Position arguments of the one-dimensional kernels. |
+| $\mechanical{P}$ | $\unit{Pa}$ | Pressure | Thermal average of the pressure operator. |
 | $\thermal{C}_V$ | $\unit{J\,K^{-1}}$ | Heat capacity at constant volume | Temperature derivative of internal energy at fixed volume and composition. |
-| $\energy{H}$ | $\unit{J}$ | Enthalpy or Hamiltonian | Internal energy plus the pressure–volume product in thermodynamics. In mechanics and ensemble weights, the Hamiltonian. |
+| $\energy{H}$ | $\unit{J}$ | Hamiltonian | Classical energy function in the ensemble weights. |
 | $\energy{E}$ | $\unit{J}$ | Energy | Microscopic energy that enters the Boltzmann weight. |
 | $\thermal{\beta}$ | $\unit{J^{-1}}$ | Inverse thermal energy | Reciprocal of Boltzmann's constant times the absolute temperature. |
 | $\mechanical{q}_i$, $\mechanical{p}_i$ | — | Generalized coordinates and momenta | Conjugate variables that specify a phase-space point. Their units depend on the coordinates. |
 | $\energy{F}$, $\energy{A}$ | $\unit{J}$ | Helmholtz free energy | Canonical thermodynamic potential obtained from the partition function. |
 | $Z$ | 1 | Partition function | Sum of the Boltzmann weights of the accessible states. |
-| $n$ | $\unit{m^{-3}}$ | Number density | Particle count per unit volume. |
-| $\Omega$ | 1 | Multiplicity | Number of accessible microstates, including the cumulative count in the ideal-gas calculation. |
+| $\Omega$ | 1 | Multiplicity | Number of accessible microstates in an energy shell. |
 | $\mechanical{L}$ | $\unit{m}$ | Box length | Side length of the cubic box. |
 | $\Sigma$ | 1 | Cumulative state count | Number of states below the specified energy cutoff. |
 | $\mechanical{\omega}$ | $\unit{rad\,s^{-1}}$ | Angular frequency | Oscillation frequency in the harmonic Hamiltonian. |
@@ -323,7 +321,3 @@ Kyle Kabasares, *Thermodynamics and Statistical Mechanics (Chem 232A - Physics 2
 | $g(\energy{E})$ | $\unit{J^{-1}}$ | Density of states | Number of states per unit energy in the continuum approximation. |
 | $\rho(\mechanical{x},\mechanical{x}')$, $\rho_u(\mechanical{x},\mechanical{x}';\thermal{\beta})$ | $\unit{m^{-1}}$ in one dimension | Position-space density kernels | Matrix elements of the normalized state or the unnormalized thermal operator. |
 | $\mathcal{S}_{\mathrm{path}}$ | $\unit{J\,s}$ | Action | Integral of the Lagrangian along a path in the quantum amplitude. |
-| $\mechanical{\theta}$, $\phi$ | $\unit{rad}$ | Orientation angles | Polar and azimuthal angles of a moment relative to the field axis. |
-| $g$ | 1 | Landé factor | Proportionality factor relating angular momentum and magnetic moment. |
-| $g$ | 1 | Internal degeneracy | Number of internal states per momentum state. |
-| $q$ | $1$ | Coordination number | Number of neighboring lattice sites. |

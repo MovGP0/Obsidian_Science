@@ -6,19 +6,17 @@ A Category ($C$) is a structure consisting of:
 
 ## Objects
 
-Objects are Elements in a Set.
+Objects are abstract. They do not have to be sets, and they do not have to contain elements. The collection of all objects does not have to be a set (for example, all sets in $\mathbf{Set}$ do not form a set).
 
-The order is not relevant:
-
-$$\{ 1, 2, 3 \} = \{ 3, 2, 1 \}$$
-
-Repetition of an object is not relevant:
-
-$$\{ 1, 1, 1 \} = \{ 1 \}$$
+Examples:
+- $\mathbf{Set}$: the objects are sets, and the morphisms are functions.
+- $\mathbf{Grp}$: the objects are groups, and the morphisms are group homomorphisms.
+- $\mathbf{Vect}$: the objects are vector spaces, and the morphisms are linear maps.
+- A partially ordered set $(P, \le)$: the objects are the elements of $P$, and there is exactly one morphism $a \rightarrow b$ when $a \le b$.
 
 ## Morphisms
 
-A morphism is a relationship (transformation functions) between Set A to Set B.
+A morphism $f : A \rightarrow B$ is an arrow from an object $A$ to an object $B$. A morphism does not have to be a function between sets.
 A morphism might be one-way.
 
 Morphisms can be visualized using a **commutative diagram**:
@@ -30,7 +28,7 @@ Morphisms can be visualized using a **commutative diagram**:
 
 Morphisms can be combined.
 
-If there is a morphism $f : A \rightarrow B$ and a morphism $g : B \rightarrow C$ then there must be a morphism $$h = f ∘ g$$ $$h : A \rightarrow C$$
+If there is a morphism $f : A \rightarrow B$ and a morphism $g : B \rightarrow C$ then there must be a morphism $$h = g ∘ f$$ $$h : A \rightarrow C$$
 
 ## Identities
 
@@ -39,9 +37,9 @@ The Identity-Morphism is required.
 
 ## Rules
 
-Identity morphisms must follow **Identity-Law**, such that combining an Element with it's Element-Morphism returns the same Element:
+Identity morphisms must follow **Identity-Law**, such that composing a morphism $f : A \rightarrow B$ with an identity morphism returns the same morphism:
 
-$$I_e(e) = e$$
+$$f ∘ \mathrm{id}_A = f = \mathrm{id}_B ∘ f$$
 
 Morphisms must follow **Associativity-Law**:
 

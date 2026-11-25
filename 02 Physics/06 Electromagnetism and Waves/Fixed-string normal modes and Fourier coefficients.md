@@ -132,9 +132,11 @@ $$
 \sin(0.2n\pi)=0 \quad\Longrightarrow\quad n=5q,\qquad q=1,2,\ldots.
 $$
 
+These are only the full-length modes that survive. The clamp divides the string into two independent strings of lengths $2.0\,\unit{m}$ and $0.5\,\unit{m}$. Each segment has its own modes, $\signal{\omega}=m\pi\mechanical{v}/\mechanical{\ell}_i$ with $m=1,2,\ldots$. The two new fundamentals are $\pi\mechanical{v}/(2.0\,\unit{m})$ and $\pi\mechanical{v}/(0.5\,\unit{m})$. The full-length modes with $n=5q$ are the motions in which both segments vibrate at a common frequency.
+
 ![[Kyle Kabasares - Vibrations and Waves - Clamp at one fifth of the length.png|**Fig. 17** The first clamp position is one fifth of the string length from the left endpoint.]]
 
-Moving the clamp to $1\,\unit{m}$ instead gives $\sin(0.4n\pi)=0$. This requires $n=5q/2$ with $q$ even because $n$ is an integer. The full-length modes that survive again have $n=5,10,15,\ldots$.
+Moving the clamp to $1\,\unit{m}$ instead gives $\sin(0.4n\pi)=0$. This requires $n=5q/2$ with $q$ even because $n$ is an integer. The full-length modes that survive again have $n=5,10,15,\ldots$. The segments now have lengths $1\,\unit{m}$ and $1.5\,\unit{m}$, and each segment can also vibrate alone in its own modes.
 
 ![[Kyle Kabasares - Vibrations and Waves - Clamp at two fifths of the length.png|**Fig. 18** The second clamp position is two fifths of the string length from the left endpoint.]]
 
@@ -203,7 +205,7 @@ $$
 \sin\left(\frac{m\pi\mechanical{x}}{\mechanical{L}}\right)d\mechanical{x}.
 $$
 
-For example, take the ramp $\mechanical{y}(\mechanical{x})=k\mechanical{x}$ on $0<\mechanical{x}<\mechanical{L}$, where $k$ is the slope. The notebook sketches an extension that repeats every $\mechanical{L}$. The half-range sine series computed below instead extends the ramp as an odd, $2\mechanical{L}$-periodic function.
+For example, take the ramp $\mechanical{y}(\mechanical{x})=\beta\mechanical{x}$ on $0<\mechanical{x}<\mechanical{L}$, where $\beta$ is the slope. The notebook sketches an extension that repeats every $\mechanical{L}$. The half-range sine series computed below instead extends the ramp as an odd, $2\mechanical{L}$-periodic function.
 
 ![[Kyle Kabasares - Vibrations and Waves - Ramp example.png|**Fig. 21** The notebook sketches a ramp segment and its repetition.]]
 
@@ -212,25 +214,25 @@ Integrate by parts with $u=\mechanical{x}$ and $dv=\sin(n\pi\mechanical{x}/\mech
 $$
 \begin{aligned}
 \mechanical{B}_n
-&=\frac{2k}{\mechanical{L}}\int_0^{\mechanical{L}}\mechanical{x}\sin\left(\frac{n\pi\mechanical{x}}{\mechanical{L}}\right)d\mechanical{x}\\
-&=\frac{2k}{\mechanical{L}}\left[
+&=\frac{2\beta}{\mechanical{L}}\int_0^{\mechanical{L}}\mechanical{x}\sin\left(\frac{n\pi\mechanical{x}}{\mechanical{L}}\right)d\mechanical{x}\\
+&=\frac{2\beta}{\mechanical{L}}\left[
 -\frac{\mechanical{x}\mechanical{L}}{n\pi}\cos\left(\frac{n\pi\mechanical{x}}{\mechanical{L}}\right)
 \right]_0^{\mechanical{L}}
-=-\frac{2k\mechanical{L}}{n\pi}\cos(n\pi).
+=-\frac{2\beta\mechanical{L}}{n\pi}\cos(n\pi).
 \end{aligned}
 $$
 
 The remaining cosine integral vanishes. On the open interval the series is
 
 $$
-k\mechanical{x}
-=\frac{2k\mechanical{L}}{\pi}\left[
+\beta\mechanical{x}
+=\frac{2\beta\mechanical{L}}{\pi}\left[
 \sin\frac{\pi\mechanical{x}}{\mechanical{L}}
 -\frac12\sin\frac{2\pi\mechanical{x}}{\mechanical{L}}
 +\frac13\sin\frac{3\pi\mechanical{x}}{\mechanical{L}}-\cdots\right].
 $$
 
-Every sine term is zero at $\mechanical{x}=\mechanical{L}$, where the ramp itself takes the value $k\mechanical{L}$.
+Every sine term is zero at $\mechanical{x}=\mechanical{L}$, where the ramp itself takes the value $\beta\mechanical{L}$.
 
 ##### Fourier sine examples
 
@@ -363,20 +365,30 @@ Kyle Kabasares, *Vibrations and Waves (Physics 122, UC Merced 2015)*.
 
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
-| $\mechanical{F}$ | $\unit{N}$ | Restoring force | Force that vanishes at equilibrium. |
-| $\mechanical{m}$ | $\unit{kg}$ | Mass | Inertial parameter in the equation of motion. |
-| $\mechanical{t}$ | $\unit{s}$ | Time | Independent variable for the motion. |
-| $\signal{\omega}$ | $\unit{rad\,s^{-1}}$ | Angular frequency | Rate of phase accumulation. |
-| $\signal{\phi}$ | $\unit{rad}$ | Phase constant | Phase at the initial time. |
-| $\mechanical{b}$ | $\unit{kg\,s^{-1}}$ | Damping coefficient | Proportionality constant between drag and velocity. |
-| $\signal{\gamma}$ | $\unit{s^{-1}}$ | Damping rate | Ratio of the velocity drag coefficient to mass. |
-| $\signal{\omega}_0$ | $\unit{rad\,s^{-1}}$ | Undamped natural angular frequency | Angular frequency in the absence of drag. |
-| $\signal{\alpha}$ | $\unit{rad}$ | Response phase | Phase of the displacement relative to the driving cosine. |
-| $\signal{\lambda}$ | $\unit{m}$ | Wavelength | Spatial distance over one wave cycle. |
-| $\mechanical{y}$ | $\unit{m}$ | Transverse displacement | Deflection of a string element from equilibrium. |
-| $\mechanical{\mu}$ | $\unit{kg\,m^{-1}}$ | Linear mass density | Mass per unit length of the string. |
-| $\mechanical{T}$ | $\unit{N}$ | String tension | Magnitude of the force along the string, distinct from the period $\signal{T}$. |
-| $\mechanical{\theta}$ | $\unit{rad}$ | Local tangent angle | Angle between the string and the equilibrium direction. |
-| $\signal{\omega}_n$ | $\unit{rad\,s^{-1}}$ | String mode angular frequency | Discrete angular frequency selected by the fixed endpoints. |
-| $\mechanical{b}$ | $\unit{m}$ | Pulse height and half-width | Peak displacement and distance from the peak to a half-height point in this example. |
-| $d$ | $\unit{m^4\,s^{-2}}$ | String dispersion coefficient | Multiplies the squared angular wave number in the phase speed squared. |
+| $\mechanical{F}_x$, $\mechanical{F}_y$ | $\unit{N}$ | Net force components | The horizontal and vertical net tension force on a string segment. |
+| $\mechanical{m}$ | $\unit{kg}$ | Mass | The mass of the string or of the damped oscillator. |
+| $\mechanical{t}$, $\mechanical{t}_0$, $\Delta\mechanical{t}$ | $\unit{s}$ | Time | The time variable, a fixed snapshot time, and a time interval. |
+| $\mechanical{x}$, $\Delta\mechanical{x}$ | $\unit{m}$ | Position along the string | The coordinate along the equilibrium string and a short interval of it. |
+| $\mechanical{L}$ | $\unit{m}$ | String length | The distance between the fixed endpoints. |
+| $\mechanical{\ell}_i$ | $\unit{m}$ | Segment length | The length of one of the two segments that the clamp makes. |
+| $\mechanical{y}$, $\mechanical{y}_n$, $\mechanical{y}_1$, $\mechanical{y}_2$ | $\unit{m}$ | Transverse displacement | The deflection of a string element from equilibrium, in total or for one mode or wave. |
+| $\mechanical{v}_y$ | $\unit{m\,s^{-1}}$ | Transverse velocity | The velocity of a string element perpendicular to the string. |
+| $\mechanical{v}$ | $\unit{m\,s^{-1}}$ | Wave speed | The speed at which a disturbance travels along the string. |
+| $\mechanical{\mu}$ | $\unit{kg\,m^{-1}}$ | Linear mass density | The mass per unit length of the string. |
+| $\mechanical{T}$ | $\unit{N}$ | String tension | The magnitude of the force along the string, distinct from the period $\signal{T}$. |
+| $\mechanical{\theta}$, $\Delta\mechanical{\theta}$ | $\unit{rad}$ | Local tangent angle | The angle between the string and the equilibrium direction, and its change across the segment. |
+| $\signal{\omega}$, $\signal{\omega}_n$ | $\unit{rad\,s^{-1}}$ | Angular frequency | The angular frequency of a mode or of the damped oscillator. |
+| $\signal{\nu}_1$ | $\unit{Hz}$ | Fundamental frequency | The ordinary frequency of the lowest string mode. |
+| $\signal{\phi}$, $\signal{\phi}_n$ | $\unit{rad}$ | Temporal phase | The phase of the time factor of a mode. |
+| $\signal{\alpha}$ | $\unit{rad}$ | Spatial phase | The phase constant in the spatial factor $f(\mechanical{x})$. |
+| $\mechanical{A}$, $\mechanical{A}_n$ | $\unit{m}$ | Amplitude | The amplitude of a profile, a wave, or the normal mode $n$. |
+| $\mechanical{B}_n$, $\mechanical{B}_m$, $\mechanical{B}_{2m}$ | $\unit{m}$ | Fourier sine coefficient | The coefficient of the mode $n$ in the profile at a fixed time. |
+| $\beta$ | 1 | Ramp slope | The slope of the ramp profile $\beta\mechanical{x}$. |
+| $\energy{E}_n$ | $\unit{J}$ | Mode energy | The total vibration energy of the normal mode $n$. |
+| $\energy{K}$ | $\unit{J}$ | Kinetic energy | The kinetic energy of the string elements. |
+| $\signal{\lambda}$, $\signal{\lambda}_n$, $\signal{\lambda}_1$, $\signal{\lambda}_2$ | $\unit{m}$ | Wavelength | The spatial period of a traveling or standing wave. |
+| $\mechanical{b}$ | $\unit{kg\,s^{-1}}$ | Damping coefficient | The proportionality constant between drag and velocity. |
+| $\mechanical{k}$ | $\unit{N\,m^{-1}}$ | Spring constant | The stiffness of the oscillator in Exercise 3-14. |
+| $\signal{\gamma}$ | $\unit{s^{-1}}$ | Damping rate | The ratio of the drag coefficient to the mass. |
+| $\signal{\omega}_0$ | $\unit{rad\,s^{-1}}$ | Undamped natural angular frequency | The angular frequency in the absence of drag. |
+| $\signal{T}$ | $\unit{s}$ | Period | The period of the damped oscillation. |

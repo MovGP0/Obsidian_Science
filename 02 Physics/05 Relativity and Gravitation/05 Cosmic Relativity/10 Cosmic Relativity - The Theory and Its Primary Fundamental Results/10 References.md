@@ -15,7 +15,7 @@ Use this list to trace the chapter's treatment of the cosmic-potential mechanism
 4. C. S. Unnikrishnan, Experimental evidence for the gravitational basis for Relativity and dynamics, in *The Physical Universe*, ed. by S. M. Wagh, S. D. Maharaj, G. Chon (Central India Research Institute, Nagpur, India, 2018), pp. 183–202.
 5. A. Einstein, On the ether, Schweizerische Naturforschende Gesellschaft, Verhandlungen II. Wissenschaftlicher Teil **105**, 85–93 (1924). Translated in *The Collected Papers of Albert Einstein*, vol. 14, Doc. 332 (Princeton University Press).
 6. C. S. Unnikrishnan, G. T. Gillies, The electrical neutrality of atoms and of bulk matter. *Metrologia* **41**, S125–S135 (2004).
-7. R. A. Littleton, H. Bondi, Physical consequences of a general excess of charge. *Proc. Phys. Soc.* **252**, 313–333 (1959).
+7. R. A. Lyttleton, H. Bondi, Physical consequences of a general excess of charge. *Proc. R. Soc. Lond. A* **252**, 313–333 (1959).
 8. C. S. Unnikrishnan, On Einstein's resolution of the twin clock paradox. *Curr. Sci.* **89**, 2009–2015 (2005).
 9. C. S. Unnikrishnan, *Gravity's Time* (Jenny Stanford Publishing, Singapore, 2022).
 10. C. S. Unnikrishnan, Precision measurement of the one-way speed of light and implications to the theory of relativity, in *Physical Interpretations of Relativity Theory: Proceedings, London 2006*, ed. by M. C. Duffy, V. O. Gladyshev, A. Morozov, P. Rowlands (Bauman Moscow State Technical University, 2011), pp. 505–511.

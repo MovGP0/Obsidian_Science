@@ -323,7 +323,7 @@ In a population model, $y_n$ can count individuals in generation $n$.
 
 ##### Linear difference equations
 
-For $y_n=\alpha y_{n-1}$ and $y_0=A$, the solution is $y_n=\alpha^nA$. The Fibonacci sequence instead satisfies $x_n=x_{n-1}+x_{n-2}$, with $x_0=0$ and $x_1=1$. Its next terms are $x_2=1$, $x_3=2$, and $x_4=3$.
+For $y_n=\kappa y_{n-1}$ and $y_0=A$, the solution is $y_n=\kappa^nA$. The Fibonacci sequence instead satisfies $x_n=x_{n-1}+x_{n-2}$, with $x_0=0$ and $x_1=1$. Its next terms are $x_2=1$, $x_3=2$, and $x_4=3$.
 
 The notes write a general homogeneous recurrence of order $k$ as
 
@@ -413,17 +413,17 @@ y_n
 \end{aligned}
 $$
 
-Let $\beta=1+\alpha\Delta t$ and $x_n=\alpha\Delta t\,y_n/(1+\alpha\Delta t)$. The handwritten factoring and change of variables omit $\Delta t$ from the numerator of this coefficient. Expanding the Euler step gives the coefficient above, which includes $\Delta t$. For a nonzero step and positive $\alpha$, substitution gives the logistic map
+Let $\mu=1+\alpha\Delta t$ and $x_n=\alpha\Delta t\,y_n/(1+\alpha\Delta t)$. The handwritten factoring and change of variables omit $\Delta t$ from the numerator of this coefficient. Expanding the Euler step gives the coefficient above, which includes $\Delta t$. For a nonzero step and positive $\alpha$, substitution gives the logistic map
 
 $$
-x_n=\beta x_{n-1}(1-x_{n-1}).
+x_n=\mu x_{n-1}(1-x_{n-1}).
 $$
 
-The notes then study this map at $\beta=1$, starting from $x_0=1/2$. The first iterates are $x_1=1/4$, $x_2=3/16$, and $x_3=39/256$. The last handwritten denominator appears to be $216$. The recurrence gives $x_3=(3/16)(13/16)=39/256$.
+The notes then study this map at $\mu=1$, starting from $x_0=1/2$. The first iterates are $x_1=1/4$, $x_2=3/16$, and $x_3=39/256$. The last handwritten denominator appears to be $216$. The recurrence gives $x_3=(3/16)(13/16)=39/256$.
 
-![[Kyle Kabasares - Mathematical Modeling - Logistic map iterates at parameter one.png|**Fig. 75** The iterates decrease toward zero in the example with $\beta=1$.]]
+![[Kyle Kabasares - Mathematical Modeling - Logistic map iterates at parameter one.png|**Fig. 75** The iterates decrease toward zero in the example with $\mu=1$.]]
 
-If the sequence converges to $x^*$, continuity gives the fixed-point equation $x^*=\beta x^*(1-x^*)$.
+If the sequence converges to $x^*$, continuity gives the fixed-point equation $x^*=\mu x^*(1-x^*)$.
 
 ## Source
 
@@ -433,19 +433,20 @@ Kyle Kabasares, *Mathematical Modeling (Math 150, UC Merced 2017)*.
 
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
-| $R$ | 1 | Population | Number of animals in the isolated system. |
-| $t$, $1/\alpha$ | $\unit{s}$ | Elapsed time | Time in the population model and time for one factor of $e$ of exponential growth, expressed in the chosen time unit. |
-| $\alpha$ | $\unit{s^{-1}}$ | Population growth rate | Fractional rate of increase, expressed in the inverse of the chosen time unit. |
-| $\beta$ | $\unit{s^{-1}}$ | Crowding coefficient | Coefficient of the quadratic reduction in growth when population is counted as a dimensionless number. |
-| $W$ | 1 | Wolf population | Number of predators in the rabbit and wolf model. |
-| $\delta$ | $\unit{s^{-1}}$ | Wolf decline rate | Fractional rate of decline in the absence of prey. |
+| $R$, $R_{\mathrm e}$ | 1 | Rabbit population | Number of prey animals, and its value at an equilibrium. |
+| $W$, $W_{\mathrm e}$ | 1 | Wolf population | Number of predators in the rabbit and wolf model, and its value at an equilibrium. |
+| $t$ | $\unit{s}$ | Elapsed time | Time in the population models, expressed in the chosen time unit. |
+| $\alpha$ | $\unit{s^{-1}}$ | Growth rate | Fractional rate of increase of the rabbits, and the rate in the logistic equation $dy/dt=\alpha y(1-y)$. |
 | $\beta$ | 1 | Predator effect coefficient | Reciprocal of the wolf count at which the rabbit growth term vanishes. |
 | $\gamma$ | 1 | Prey effect coefficient | Reciprocal of the rabbit count at which the wolf growth term vanishes. |
+| $\delta$ | $\unit{s^{-1}}$ | Wolf decline rate | Fractional rate of decline in the absence of prey. |
+| $\lambda$ | $\unit{s^{-1}}$ | Eigenvalue | Eigenvalue of the Jacobian or of the linear system, which gives the exponential rate of each mode. |
 | $\bar R$, $\bar W$ | 1 | Relative populations | Rabbit and wolf populations divided by their respective nonzero equilibrium values. |
 | $\bar t$ | 1 | Rescaled time | Elapsed time multiplied by the rabbit growth rate. |
 | $\epsilon$ | 1 | Rate ratio | Ratio of the wolf decline rate to the rabbit growth rate. |
-| $T$ | $\unit{s}$ | Sampling period | Time between successive measurements at the same phase. |
-| $\lambda$ | $\unit{s^{-1}}$ | Lyapunov exponent | Exponential rate of growth or decay of a perturbation in time. |
-| $x$, $y$ | $\unit{oz}$ | Ingredient amounts | Onion soup and chicken stock per serving, respectively. |
-| $s$ | $\unit{g}$ | Protein surplus | Protein above the minimum required per serving. |
-| $t$ | — | Iron surplus | Iron above the minimum required per serving, in the unspecified iron units of the exercise. |
+| $x_i$ | 1 | Age-group population | Number of individuals in age group $i$ of the population model. |
+| $h$, $\Delta t$ | $\unit{s}$ | Time step | Step size of the Runge–Kutta and Euler methods. |
+| $y$, $y_n$ | 1 | Population | Population in the logistic equation, and the population in generation or step $n$. |
+| $\kappa$ | 1 | Growth multiplier | Constant factor in the linear recurrence $y_n=\kappa y_{n-1}$. |
+| $x_n$ | 1 | Scaled population | Rescaled variable of the logistic map. |
+| $\mu$ | 1 | Logistic-map parameter | Multiplier $\mu=1+\alpha\Delta t$ in the logistic map. |

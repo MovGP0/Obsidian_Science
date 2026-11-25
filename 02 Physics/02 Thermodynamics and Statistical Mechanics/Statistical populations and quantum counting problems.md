@@ -94,10 +94,10 @@ $$
 
 ![[Kyle Kabasares - Modern Physics - Fermi level occupations.png|**Fig. 62** Filled low-energy levels and empty higher levels at zero temperature.]]
 
-Model the particles in a three-dimensional infinite well of side $L$. In one dimension, $\energy{E}_n=\energy{E}_1n^2$ with $\energy{E}_1=h^2/(8\mechanical{m}L^2)$. In three dimensions,
+Model the particles in a three-dimensional infinite well of side $L$. In one dimension, $\energy{E}_n=\energy{E}_{\mathrm{box}}n^2$ with $\energy{E}_{\mathrm{box}}=h^2/(8\mechanical{m}L^2)$. In three dimensions,
 
 $$
-\energy{E}_{n_xn_yn_z}=\energy{E}_1(n_x^2+n_y^2+n_z^2),\qquad n_x,n_y,n_z=1,2,3,\ldots.
+\energy{E}_{n_xn_yn_z}=\energy{E}_{\mathrm{box}}(n_x^2+n_y^2+n_z^2),\qquad n_x,n_y,n_z=1,2,3,\ldots.
 $$
 
 ![[Kyle Kabasares - Modern Physics - Cubical infinite well.png|**Fig. 63** Three-dimensional box of side $L$.]]
@@ -110,10 +110,10 @@ $$
 
 ![[Kyle Kabasares - Modern Physics - Fermi sphere octant.png|**Fig. 64** Quantum numbers in the positive octant of a sphere of radius $r$.]]
 
-Since $\energy{E}=\energy{E}_1r^2$, the cumulative state count is $N_r=(\pi/3)(\energy{E}/\energy{E}_1)^{3/2}$. At $\thermal{T}=0$, substitute $\energy{E}_F$ and set the count equal to the total number of fermions $N$.
+Since $\energy{E}=\energy{E}_{\mathrm{box}}r^2$, the cumulative state count is $N_r=(\pi/3)(\energy{E}/\energy{E}_{\mathrm{box}})^{3/2}$. At $\thermal{T}=0$, substitute $\energy{E}_F$ and set the count equal to the total number of fermions $N$.
 
 $$
-\energy{E}_F=\energy{E}_1\left(\frac{3N}{\pi}\right)^{2/3}
+\energy{E}_F=\energy{E}_{\mathrm{box}}\left(\frac{3N}{\pi}\right)^{2/3}
 =\frac{h^2}{8\mechanical{m}}\left(\frac{3N}{\pi L^3}\right)^{2/3}.
 $$
 
@@ -215,9 +215,17 @@ Kyle Kabasares, *Modern Physics (Physics 10, UC Merced 2014)*.
 
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
-| $\thermal{T}$ | $\unit{K}$ | Absolute temperature | Determines the blackbody spectrum. |
-| $h$ | $\unit{J\,s}$ | Planck constant | Relates the energy of one quantum to its frequency. |
-| $\energy{E}_n$ | $\unit{eV}$ | Bound-state energy | Energy of the $n$th level relative to ionization. |
+| $\thermal{T}$ | $\unit{K}$ | Absolute temperature | Sets the thermal occupation factors and the speed distribution. |
+| $h$ | $\unit{J\,s}$ | Planck constant | Sets the infinite-well energy scale. |
+| $k_B$ | $\unit{J/K}$ | Boltzmann constant | Converts temperature to thermal energy in the occupation factors. |
+| $\energy{E}_1,\energy{E}_2$ | $\unit{eV}$ | Hydrogen level energies | Energies of the hydrogen ground level and first excited level in the population example. |
+| $\energy{E}_n$ | $\unit{eV}$ | Infinite-well level energy | Energy of the $n$th level in the infinite well, $\energy{E}_{\mathrm{box}}n^2$. |
+| $\energy{E}_{\mathrm{box}}$ | $\unit{eV}$ | Infinite-well ground energy | Lowest level energy in a one-dimensional infinite well of side $L$. |
+| $\mechanical{m}$ | $\unit{kg}$ | Particle mass | Mass of one particle in the gas or in the well. |
+| $N$ | $1$ | Particle count | Total number of particles or fermions. |
+| $g(E)$ | $\unit{J^{-1}}$ | Density of states | Number of states per energy interval; for discrete levels, the degeneracy. |
+| $n(E)$ | $\unit{J^{-1}}$ | Number distribution | Number of particles per energy interval. |
+| $f$ | $1$ | Occupation factor | Mean occupation of one state for the given statistics. |
 | $\hat H$ | $\unit{J}$ | Hamiltonian | Operator for the total energy. |
 | $\energy{V}$ | $\unit{J}$ | Potential energy | Position-dependent multiplication term in the Hamiltonian. |
 | $\energy{E}_F$ | $\unit{eV}$ | Fermi energy | Energy of the highest occupied level at absolute zero. |

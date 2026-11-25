@@ -784,11 +784,15 @@ A symmetric potential admits even and odd states. The infinite-well examples ill
 
 **Physics 137 — Midterm 2 review**
 
-The Hilbert space for the specified interval consists of square-integrable functions, with functions that agree almost everywhere identified. Its inner product is
+The Hilbert space for the specified interval consists of square-integrable functions, with functions that agree almost everywhere identified. A function $f$ is square-integrable if
 
 $$
-\int_a^b\lvert f(x)\rvert^2\,dx<\infty,
-\qquad
+\int_a^b\lvert f(x)\rvert^2\,dx<\infty.
+$$
+
+The inner product of two functions in this space is
+
+$$
 \langle f\mid g\rangle=\int_a^b f(x)^*g(x)\,dx.
 $$
 
@@ -829,8 +833,11 @@ Kyle Kabasares, *Quantum Mechanics (Physics 137, UC Merced 2015)*.
 | $\signal{\lambda}$ | $\unit{m}$ | Wavelength | Distance through which a sinusoidal wave repeats. |
 | $\signal{k}$ | $\unit{m^{-1}}$ | Wave number | Spatial phase change per unit distance. |
 | $\signal{\omega}$ | $\unit{rad/s}$ | Angular frequency | Temporal phase change per unit time. |
-| $J_x$ | $\unit{s^{-1}}$ | Probability flux | Signed one-dimensional probability current. |
-| $R$, $T$ | $1$ | Reflection and transmission coefficients | Ratios of reflected and transmitted flux magnitudes to the incident flux magnitude. |
+| $\hat J_x$, $\hat J_y$, $\hat J_z$, $\hat J^2$ | $\unit{J\,s}$, $\unit{J^2\,s^2}$ | Generalized angular momentum | Components and squared magnitude of the general angular momentum, which can be orbital, spin, or a combination. |
+| $m$ | $\unit{kg}$ | Mass | Mass of the particle on the ring or sphere. |
+| $r$ | $\unit{m}$ | Radius | Radius of the ring or sphere, or the radial coordinate. |
+| $\ell$, $m_\ell$ | $1$ | Orbital quantum numbers | Quantum numbers of $\hat L^2$ and $\hat L_z$. The eigenvalues are $\ell(\ell+1)\hbar^2$ and $m_\ell\hbar$. |
+| $j$, $m_j$ | $1$ | Angular momentum quantum numbers | Quantum numbers of $\hat J^2$ and $\hat J_z$. |
 | $\mechanical{k}$ | $\unit{N/m}$ | Spring constant | Proportionality between restoring force and displacement. |
 | $\mechanical{I}$ | $\unit{kg\,m^2}$ | Moment of inertia | Equals $mr^2$ for the particle on a ring. |
 | $\mechanical{\mathbf L}$, $\mechanical{\boldsymbol\ell}$ | $\unit{J\,s}$ | Angular momentum | Classical orbital value $\mathbf r\times\mechanical{\mathbf p}$. |

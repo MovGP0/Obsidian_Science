@@ -15,10 +15,10 @@ $$
 
 ##### Approximating derivatives
 
-Numerical derivatives help solve differential equations when a closed form is unavailable. As motivation, suppose the position $\mechanical{f}(x)$ of a particle moving along a line is known at several times $x$. Estimate the signed velocity at $x=1.2$ from the two recorded positions. The speed is the magnitude of that velocity.
+Numerical derivatives help solve differential equations when a closed form is unavailable. As motivation, suppose the position $\mechanical{s}(t)$ of a particle moving along a line is known at several times $t$. Estimate the signed velocity at $t=1.2$ from the two recorded positions. The speed is the magnitude of that velocity.
 
 $$
-\mechanical{f}'(1.2)\approx\frac{\mechanical{f}(1.2)-\mechanical{f}(1.1)}{1.2-1.1}.
+\mechanical{s}'(1.2)\approx\frac{\mechanical{s}(1.2)-\mechanical{s}(1.1)}{1.2-1.1}.
 $$
 
 The notes give no units for these sample times or positions.
@@ -48,7 +48,7 @@ $$
 \left|f'(a)-\frac{f(a+h)-f(a)}{h}\right|=\frac{|h|}{2}|f''(\xi)|.
 $$
 
-For the position example, $a=1.2$ and $h=-0.1$, so the backward difference has first-order error, with magnitude bounded by $0.1$ times half a bound on the second derivative.
+For the position example, $f=\mechanical{s}$, $a=1.2$ and $h=-0.1$, so the backward difference has first-order error, with magnitude bounded by $0.1$ times half a bound on the second derivative.
 
 For a better approximation, take the centered difference. Expand $f(a+h)$ and $f(a-h)$ about $a$, with $\xi_+$ and $\xi_-$ in the respective intervals. Subtraction cancels the constant and quadratic terms.
 
@@ -238,5 +238,5 @@ Kyle Kabasares, *Numerical Analysis (Math 130, UC Merced 2016)*.
 
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
-| $x$ | $\unit{s}$ | Time | Independent variable in the particle example. The recorded values have no specified unit. |
-| $\mechanical{f}(x)$ | $\unit{m}$ | Position | Signed position along the particle's line of motion. |
+| $t$ | $\unit{s}$ | Time | Independent variable in the particle example. The recorded values have no specified unit. |
+| $\mechanical{s}(t)$ | $\unit{m}$ | Position | Signed position along the particle's line of motion. |

@@ -46,7 +46,7 @@ $$
 =2+x\log\frac{1-x}{1+x},\qquad -1<x<1.
 $$
 
-At $x=0$, the integral is $2$, not zero: the pole cancels from the original integrand and leaves $1$. The answer diverges near some endpoints, although it exists at every interior point. Endpoint behavior and interior existence are different questions.
+At $x=0$, the integral is $2$, not zero: the pole cancels from the original integrand and leaves $1$. The answer diverges logarithmically to $-\infty$ near both endpoints, although it exists at every interior point. Endpoint behavior and interior existence are different questions.
 
 ## Properties of the Cauchy integral
 

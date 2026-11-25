@@ -140,14 +140,18 @@ $$
 \approx\left(\frac{12\mechanical{R}^3}{\thermal{\Gamma}_1\mechanical{G}\mechanical{M}}\right)^{1/2}.
 $$
 
-For $\thermal{\Gamma}_1\sim 1$, the notes estimate
+With $\mechanical{R}^3/(\mechanical{G}\mechanical{M})=3/(4\pi\mechanical{G}\langle\mechanical{\rho}\rangle)$ and $\thermal{\Gamma}_1\sim 1$,
 
 $$
 \signal{\Pi}\approx
-\frac{\sqrt{12}}{\sqrt{\mechanical{G}\langle\mechanical{\rho}\rangle}}
-\approx \frac{0.04\,\unit{day}}
+\left(\frac{9}{\pi\thermal{\Gamma}_1\mechanical{G}\langle\mechanical{\rho}\rangle}\right)^{1/2}
+\approx\frac{1.69}{\sqrt{\thermal{\Gamma}_1\mechanical{G}\langle\mechanical{\rho}\rangle}}
+\approx \frac{0.064\,\unit{day}}
 {\left(\langle\mechanical{\rho}\rangle/\langle\mechanical{\rho}_\odot\rangle\right)^{1/2}}.
 $$
+
+> [!note]
+> The notes write the coefficient as $\sqrt{12}$ and give $0.04\,\unit{day}$ for the Sun. The value $0.04\,\unit{day}$ corresponds to a coefficient of $1$.
 
 The notes add a factor $(3\thermal{\Gamma}_1-4)^{1/2}$ in the denominator if the star is relativistic.
 
@@ -503,11 +507,11 @@ The diffusion equation at the top of the page is written
 $$
 \energy{L}_r
 =-\frac{(4\pi\mechanical{r}^2)^2c}{3\kappa}
-  \frac{\mathrm{d}(a\thermal{T}^4)}{\mathrm{d}\mechanical{r}}.
+  \frac{\mathrm{d}(a\thermal{T}^4)}{\mathrm{d}\mechanical{M}_r}.
 $$
 
 > [!note]
-> The squared area factor and the absence of $\mechanical{\rho}$ in the denominator follow from changing the derivative on [[#Homologous stars|the section on Homologous stars]] to $\mathrm{d}/\mathrm{d}\mechanical{M}_r$. The handwriting still shows $\mathrm{d}/\mathrm{d}\mechanical{r}$.
+> The squared area factor and the absence of $\mechanical{\rho}$ in the denominator follow from changing the derivative in the radiative luminosity of [[#Energy transport|the section on Energy transport]] to $\mathrm{d}/\mathrm{d}\mechanical{M}_r$. The handwriting shows $\mathrm{d}/\mathrm{d}\mechanical{r}$.
 
 The notes write the scaling exponents and their example values as follows.
 
@@ -616,13 +620,15 @@ The mass and photon energy relation uses units with $c=1$. Beside the reference 
 
 They also list a UV wavelength range of $\quantity{25}{nm}$ to $\quantity{40}{nm}$ and mention the diffuse He I and He II spectrum.
 
-The notes associate $\sigma_8$ with a scale of $\quantity{8}{Mpc}$ and write
+The notes associate $\sigma_8$ with a scale of $\quantity{8}{Mpc}$. The variance smoothed with a window of radius $\mechanical{R}_8=8\,h^{-1}\,\unit{Mpc}$ is
 
 $$
-\sigma_8^2=\int P(\signal{k})\,W^2(\signal{k}_r)\,\mathrm{d}\signal{k},
+\sigma_8^2=\frac{1}{2\pi^2}\int P(\signal{k})\,W^2(\signal{k}\mechanical{R}_8)\,\signal{k}^2\,\mathrm{d}\signal{k},
 \qquad
 \sum\mechanical{m}_\nu=\quantity{0.3}{eV}.
 $$
+
+The handwritten integral omits the factor $\signal{k}^2/(2\pi^2)$, which makes it dimensionally wrong.
 
 The sketch below the integral shows a smooth bump on a fluctuating curve. Vertical ticks mark the ends of the interval. A rectangular window beneath the curve is labeled $\quantity{8}{Mpc}$.
 
@@ -727,44 +733,38 @@ Kyle Kabasares, *Stellar Astrophysics (Physics 241B, UC Irvine 2019)*.
 
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
-| $\mechanical{r}$ | $\unit{cm}$ | Radial distance | The distance from the center of the star. |
-| $\mechanical{G}$ | $\unit{m^3\,kg^{-1}\,s^{-2}}$ | Gravitational constant | The proportionality constant in Newton's law of gravitation. |
-| $\mechanical{M}_r$ | $\unit{kg}$ | Enclosed mass | The stellar mass within radius $\mechanical{r}$. |
-| $\mechanical{M}_\odot$ | $\unit{kg}$ | Solar mass | The mass of the Sun. |
-| $\energy{L}_\odot$ | $\unit{W}$ | Solar luminosity | The power radiated by the Sun. |
-| $\mechanical{R}_\odot$ | $\unit{km}$ | Solar radius | The radius of the Sun. |
-| $\mechanical{\rho}$ | $\unit{g\,cm^{-3}}$ | Mass density | The mass per unit volume at the given radius. |
-| $\mathrm{d}\mechanical{M}_r$ | $\unit{g}$ | Mass element | The mass of the thin shell or the patch, according to context. |
-| $\mechanical{V}$ | $\unit{cm^3}$ | Volume | The volume occupied by the shell or patch. |
-| $\mechanical{M}$ | $\unit{g}$ | Mass | The enclosed mass in the expression beside the force sketch. |
-| $\mechanical{P}$ | $\unit{dyn\,cm^{-2}}$ | Pressure | The local force per unit area exerted by the stellar material. |
-| $\energy{\Omega}$ | $\unit{erg}$ | Gravitational potential energy | The potential energy of the assembled star. |
-| $\energy{W}$ | $\unit{erg}$ | Work | The energy transferred by a force acting through a displacement. |
-| $\mechanical{m}$ | $\unit{g}$ | Mass | The mass acted on by the force. |
-| $\mechanical{M}$ | $\unit{g}$ | Total stellar mass | The upper limit of the integral over the stellar mass. |
-| $\mechanical{R}$ | $\unit{cm}$ | Stellar radius | The radius of the star used in the energy scale. |
-| $\energy{E}$ | $\unit{erg\,g^{-1}}$ | Specific internal energy | The internal energy per unit mass. |
-| $\energy{U}$ | $\unit{erg}$ | Internal energy | The integral of specific internal energy over stellar mass. |
 | $\energy{W}$ | $\unit{erg}$ | Total energy | The sum of internal and gravitational potential energy. |
-| $\thermal{T}$ | $\unit{K}$ | Temperature | The local thermodynamic temperature. |
-| $t$ | $\unit{s}$ | Time | The independent variable in the virial calculation. |
-| $\mechanical{I}$ | $\unit{g\,cm^2}$ | Scalar moment of inertia | The sum of particle masses times their squared distances from the origin. |
+| $\energy{\Omega}$ | $\unit{erg}$ | Gravitational potential energy | The potential energy of the assembled star. |
+| $\energy{U}$ | $\unit{erg}$ | Internal energy | The total internal energy of the star. |
+| $\mechanical{G}$ | $\unit{cm^3\,g^{-1}\,s^{-2}}$ | Gravitational constant | The proportionality constant in Newton's law of gravitation. |
+| $\mechanical{M}$ | $\unit{g}$ | Stellar mass | The total mass of the star. |
+| $\mechanical{R}$ | $\unit{cm}$ | Stellar radius | The radius of the star. |
 | $\thermal{\gamma}$ | 1 | Adiabatic index | The index that relates pressure and energy density in the gas model. |
-| $\energy{L}$ | $\unit{erg\,s^{-1}}$ | Stellar luminosity | The rate of energy loss from the contracting star. |
-| $t_{\mathrm{KH}}$ | $\unit{yr}$ | Kelvin–Helmholtz time scale | The time over which contraction can supply the luminosity. |
+| $\mechanical{I}$ | $\unit{g\,cm^2}$ | Scalar moment of inertia | The sum of masses times their squared distances from the center. |
+| $t$ | $\unit{s}$ | Time | The independent variable in the virial and streaming calculations. |
 | $\tau_{\mathrm{dyn}}$ | $\unit{s}$ | Dynamical time scale | The characteristic time for a dynamical response to gravity. |
+| $t_{\mathrm{KH}}$ | $\unit{yr}$ | Kelvin–Helmholtz time scale | The time over which contraction can supply the luminosity. |
 | $\langle\mechanical{\rho}\rangle$ | $\unit{g\,cm^{-3}}$ | Mean mass density | The mass of the star divided by its volume. |
+| $\langle\mechanical{\rho}_\odot\rangle$ | $\unit{g\,cm^{-3}}$ | Mean solar density | The mean density of the Sun used to scale the sound crossing period. |
 | $\energy{E}$ | $\unit{erg\,cm^{-3}}$ | Thermal energy density | The gas energy per unit volume in the temperature estimate. |
 | $n$ | $\unit{cm^{-3}}$ | Particle number density | The number of gas particles per unit volume. |
 | $\thermal{k}$ | $\unit{erg\,K^{-1}}$ | Boltzmann constant | The conversion factor between temperature and energy per particle. |
+| $\thermal{T}$ | $\unit{K}$ | Temperature | The local thermodynamic temperature. |
+| $\mechanical{\rho}$ | $\unit{g\,cm^{-3}}$ | Mass density | The mass per unit volume at the given radius. |
 | $N_A$ | $\unit{mol^{-1}}$ | Avogadro constant | The number of particles per mole. |
-| $\mu$ | $\unit{g\,mol^{-1}}$ | Mean molar mass | The mass per mole of gas particles, as used in the density conversion. |
+| $\mu$ | $\unit{g\,mol^{-1}}$ | Mean molar mass | The mass per mole of gas particles. The notes also use it for the ion and electron means. |
+| $\mechanical{P}$ | $\unit{dyn\,cm^{-2}}$ | Pressure | The local force per unit area exerted by the stellar material. |
+| $\mechanical{V}$ | $\unit{cm^3}$ | Volume | The volume of the uniform star. |
+| $\mechanical{M}_\odot$ | $\unit{g}$ | Solar mass | The mass of the Sun. |
+| $\mechanical{R}_\odot$ | $\unit{cm}$ | Solar radius | The radius of the Sun. |
 | $\signal{\Pi}$ | $\unit{s}$ | Sound crossing period | The time for a sound wave to cross the stellar diameter. |
 | $\signal{v}_s$ | $\unit{cm\,s^{-1}}$ | Sound speed | The speed of an adiabatic pressure wave through the stellar gas. |
 | $\thermal{\Gamma}_1$ | 1 | First adiabatic exponent | The logarithmic derivative of pressure with respect to density at constant entropy. |
-| $\langle\mechanical{\rho}_\odot\rangle$ | $\unit{g\,cm^{-3}}$ | Mean solar density | The mean density of the Sun used to scale the sound crossing period. |
+| $\mechanical{r}$ | $\unit{cm}$ | Radial distance | The distance from the center of the star. |
+| $\mechanical{M}_r$ | $\unit{g}$ | Enclosed mass | The stellar mass within radius $\mechanical{r}$. |
 | $\mechanical{\rho}_c$ | $\unit{g\,cm^{-3}}$ | Central mass density | The density at the center, equal to the density throughout the uniform model. |
 | $\mechanical{P}_c$ | $\unit{dyn\,cm^{-2}}$ | Central pressure | The pressure at the center of the star. |
+| $\thermal{T}_c$ | $\unit{K}$ | Central temperature | The temperature corresponding to the central pressure and density. |
 | $Z_i$ | 1 | Nuclear charge number | The number of protons in a nucleus of species $i$. |
 | $A_i$ | 1 | Mass number | The number of nucleons in a nucleus of species $i$. |
 | $X_i$ | 1 | Mass fraction | The fraction of the gas mass contributed by species $i$. |
@@ -777,19 +777,18 @@ Kyle Kabasares, *Stellar Astrophysics (Physics 241B, UC Irvine 2019)*.
 | $\mu_e$ | $\unit{g\,mol^{-1}}$ | Mean mass per mole of electrons | The total gas mass divided by the amount of free electrons. |
 | $\mechanical{\rho}_I$ | $\unit{g\,cm^{-3}}$ | Ion mass density | The mass of the ions per unit volume. |
 | $\mechanical{\rho}_e$ | $\unit{g\,cm^{-3}}$ | Density associated with the electron contribution | The density denoted by $\mu_e n_e/N_A$ in the source. |
-| $X$ | 1 | Hydrogen mass fraction | The fraction of stellar mass in hydrogen. |
-| $Y$ | 1 | Helium mass fraction | The fraction of stellar mass in helium. |
-| $Z$ | 1 | Metallicity | The fraction of stellar mass in elements heavier than helium. |
+| $X,\,Y,\,Z$ | 1 | Stellar mass fractions | The fractions of stellar mass in hydrogen, helium, and heavier elements. |
 | $Y_p$ | 1 | Primordial helium mass fraction | The helium mass fraction produced after the Big Bang. |
-| $\thermal{T}_c$ | $\unit{K}$ | Central temperature | The temperature corresponding to the central pressure and density. |
 | $\energy{L}_r$ | $\unit{erg\,s^{-1}}$ | Luminosity at radius $\mechanical{r}$ | The power that passes through the sphere of radius $\mechanical{r}$. |
 | $\energy{F}$ | $\unit{erg\,cm^{-2}\,s^{-1}}$ | Energy flux | The power through a unit area normal to the outward direction. |
-| $\energy{\epsilon}$ | $\unit{erg\,g^{-1}\,s^{-1}}$ | Specific energy production rate | The power generated per unit mass of stellar material. |
+| $\energy{\epsilon}$ | $\unit{erg\,g^{-1}\,s^{-1}}$ | Specific energy production rate | The net power generated per unit mass of stellar material. |
 | $\energy{\epsilon}_0$ | — | Energy production coefficient | The coefficient of the density and temperature power law. Its units depend on the exponents. |
+| $\lambda$, $\nu$ | 1 | Energy production exponents | The density and temperature exponents of the energy production rate. |
 | $D$ | $\unit{cm^2\,s^{-1}}$ | Radiative diffusion coefficient | The proportionality factor between energy flux and the radiation energy density gradient. |
 | $a$ | $\unit{erg\,cm^{-3}\,K^{-4}}$ | Radiation constant | The constant in the radiation energy density $a\thermal{T}^4$. |
 | $\kappa$ | $\unit{cm^2\,g^{-1}}$ | Mass opacity | The attenuation cross section per unit mass in the radiative transport model. |
 | $\kappa_0$ | — | Opacity coefficient | The coefficient of the opacity power law. Its units depend on the exponents. |
+| $n$, $s$ | 1 | Opacity exponents | The density and temperature exponents of the opacity law. |
 | $c$ | $\unit{cm\,s^{-1}}$ | Speed of light | The speed of light in the radiative diffusion relation. |
 | $\mechanical{r}_0$ | $\unit{cm}$ | Reference radial distance | The radial coordinate in the reference star. |
 | $\mechanical{R}_0$ | $\unit{cm}$ | Reference stellar radius | The radius of the reference star. |
@@ -797,19 +796,24 @@ Kyle Kabasares, *Stellar Astrophysics (Physics 241B, UC Irvine 2019)*.
 | $\mechanical{M}_{r,0}$ | $\unit{g}$ | Reference enclosed mass | The mass enclosed within the corresponding radius of the reference star. |
 | $\mechanical{\rho}_0$ | $\unit{g\,cm^{-3}}$ | Reference density | The density at the corresponding position in the reference star. |
 | $\mechanical{P}_0$ | — | Pressure coefficient | The coefficient in the equation of state, with units that depend on the exponents. |
+| $\chi_\rho$, $\chi_T$ | 1 | Equation-of-state exponents | The density and temperature exponents of the power-law equation of state. |
+| $\alpha_R$, $\alpha_\rho$, $\alpha_T$, $\alpha_L$ | 1 | Homology exponents | The exponents of the radius, density, temperature, and luminosity scaling with mass. |
+| $\energy{L}$ | $\unit{erg\,s^{-1}}$ | Stellar luminosity | The power radiated by the star. |
+| $\energy{L}_\odot$ | $\unit{erg\,s^{-1}}$ | Solar luminosity | The power radiated by the Sun. |
 | $\thermal{T}_{\mathrm{eff}}$ | $\unit{K}$ | Effective temperature | The blackbody temperature that gives the star's radiated flux. |
 | $\thermal{T}_{\mathrm{eff},\odot}$ | $\unit{K}$ | Effective solar temperature | The effective temperature of the Sun. |
-| $\thermal{\sigma}$ | $\unit{W\,m^{-2}\,K^{-4}}$ | Stefan–Boltzmann constant | The factor relating blackbody flux to the fourth power of temperature. |
+| $\thermal{\sigma}$ | $\unit{erg\,s^{-1}\,cm^{-2}\,K^{-4}}$ | Stefan–Boltzmann constant | The factor relating blackbody flux to the fourth power of temperature. |
 | $\energy{\epsilon}_{\mathrm{nuc}}$ | $\unit{erg\,g^{-1}\,s^{-1}}$ | Specific nuclear energy production rate | The energy released by nuclear reactions per unit mass per unit time. |
 | $\energy{E}_\gamma$ | $\unit{eV}$ | Photon energy | The energy of the photon in the decay sketch. |
 | $\mechanical{m}_s$, $\mechanical{m}_{\mathrm{sterile}}$ | $\unit{eV\,c^{-2}}$ | Sterile neutrino mass | The mass parameter in the photon energy relation. |
 | $\theta$ | 1 | Mixing angle | The angle in the neutrino mixing expression. |
 | — | $\unit{nm}$ | UV wavelength | The wavelength range listed for the ultraviolet spectrum. |
-| $\sigma_8$ | 1 | Density fluctuation amplitude | The root-mean-square amplitude on the smoothing scale denoted by the subscript. |
-| — | $\unit{Mpc}$ | Smoothing scale | The size of the window sketched next to the variance. |
+| $\sigma_8$ | 1 | Density fluctuation amplitude | The root-mean-square density fluctuation smoothed on the scale $\mechanical{R}_8$. |
+| $\mechanical{R}_8$ | $\unit{Mpc}$ | Smoothing radius | The window radius $8\,h^{-1}\,\unit{Mpc}$. |
+| $h$ | 1 | Dimensionless Hubble parameter | The Hubble constant in units of $\quantity{100}{km\,s^{-1}\,Mpc^{-1}}$. |
 | $\signal{k}$ | $\unit{Mpc^{-1}}$ | Wavenumber | The integration variable in the variance expression. |
-| $P(\signal{k})$ | — | Power spectrum | The power as a function of wavenumber. Its units depend on the convention used for the integral. |
-| $W(\signal{k}_r)$ | 1 | Window function | The smoothing function in the variance expression. |
+| $P(\signal{k})$ | $\unit{Mpc^3}$ | Power spectrum | The matter power spectrum as a function of wavenumber. |
+| $W$ | 1 | Window function | The smoothing function in the variance expression. |
 | $\sum\mechanical{m}_\nu$ | $\unit{eV\,c^{-2}}$ | Sum of neutrino masses | The sum written next to the smoothing sketch. |
 | $\signal{\lambda}_{\mathrm{fs}}$ | $\unit{Mpc}$ | Mean free-streaming scale | The distance scale given by the time integral of particle speed. |
 | $t_{\mathrm{nr}}$ | $\unit{s}$ | Time at the nonrelativistic transition | The upper time limit in the streaming estimate. |
@@ -819,30 +823,3 @@ Kyle Kabasares, *Stellar Astrophysics (Physics 241B, UC Irvine 2019)*.
 | $\energy{\epsilon}_X$ | $\unit{erg\,g^{-1}\,s^{-1}}$ | Additional specific energy loss rate | The extra loss term in the net energy equation. |
 | $\delta_X$ | 1 | Fractional energy loss | The fraction of the nuclear production rate removed by the parameterized loss. |
 | $y$ | 1 | Radius scale factor | The ratio of the rescaled radius to the original radius. |
-| $\tau$ | $\unit{yr}$ | Stellar time scale | The time scale whose fractional change is estimated from the additional loss. |
-| — | $\unit{yr}$ | Age of the universe | The approximate comparison time given in the lecture. |
-| $V$ | 1 | Visual magnitude | The vertical coordinate in the Hertzsprung-gap sketch. |
-| — | 1 | Number of stars in a globular cluster | The range of star counts given alongside the Hertzsprung-gap sketch. |
-| $N$ | 1 | Particle count | The number of particles in the gas volume. |
-| $\energy{E}$ | $\unit{MeV}$ | Electron energy | The energy plotted in the collapse sketch. |
-| $f$ | — | Electron distribution | The distribution sketched against electron energy, with no stated normalization. |
-| $Z$ | 1 | Proton number | The number of protons in the nucleus in the neutron-drip diagram. |
-| $N$ | 1 | Neutron number | The number of neutrons in the nucleus in the neutron-drip diagram. |
-| $\mechanical{P}_0$ | $\unit{dyn\,cm^{-2}}$ | Reference stellar pressure | The pressure of the initial model used in the homologous ratio. |
-| $\tau$ | $\unit{s}$ | Total lifetime | The reciprocal of the sum of the channel rates. |
-| $\mechanical{R}$ | $\unit{m}$ | Nuclear radius scale | The length scale given with the nuclear density. |
-| $\mechanical{v}$ | $\unit{cm\,s^{-1}}$ | Projectile speed | The speed entering the incident flux and rate. |
-| $\energy{\epsilon}$ | $\unit{MeV}$ | Collision energy | The integration variable in the reaction rate average. |
-| $\mechanical{m}$ | $\unit{kg}$ | Reduced mass | The reduced mass of the projectile–target pair. |
-| $\mu$ | 1 | Reduced mass in atomic mass units | The numerical mass in the cross-section conversion to barns. |
-| $s$ | $\unit{m}$ | Impact parameter | The transverse offset of the incoming trajectory from the target. |
-| $h$ | $\unit{J\,s}$ | Planck constant | The action constant written in the equilibrium prefactor. |
-| $\energy{\epsilon}_0$ | $\unit{keV}$ | Characteristic collision energy | The energy scale written in keV on the second line of the helium-burning estimate. |
-| — | $\unit{day}$ | Neutrino emission time | The two-day duration written beside the luminosity. |
-| $a$ | $\unit{m}$ | Confinement length | The characteristic electron spacing estimated from position uncertainty. |
-| $K$ | $\unit{dyn\,cm^3\,g^{-5/3}}$ | Polytropic constant | The coefficient of the density power law for the nonrelativistic gas. |
-| $\mu$, $\mu_0$, $\mu_e$ | 1 | Mass per particle, nucleus, or electron in atomic mass units | The numerical mass factors in the three equivalent density expressions. |
-| $n$ | $\unit{cm^{-3}}$ | Nucleus number density | The nucleus count per volume in the compact-object composition formula. |
-| $\mu$ | $\unit{kg}$ | Particle mass scale | The mass in the speed condition on [[Advanced stellar burning, polytropes, and compact stars#Relativistic stars\|the section on Relativistic stars]]. |
-| $n$ | 1 | Polytropic index | The index that determines the density profile and the equation-of-state exponent. |
-| $a$ | $\unit{m}$ | Polytropic length scale | The factor that converts the normalized coordinate to radius. |

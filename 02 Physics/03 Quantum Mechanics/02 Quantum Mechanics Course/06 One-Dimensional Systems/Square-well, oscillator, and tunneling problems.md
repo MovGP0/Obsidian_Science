@@ -143,7 +143,7 @@ Stronger confinement spreads the energy levels farther apart. In the classically
 $$
 \psi(x)=\psi_{\mathrm{edge}}e^{-(x-\mechanical{L})/\eta},
 \qquad
-\eta=\frac1\alpha=\frac{\hbar}{\sqrt{2\mechanical{m}(\energy{V}-\energy{E})}}.
+\eta=\frac1\kappa=\frac{\hbar}{\sqrt{2\mechanical{m}(\energy{V}-\energy{E})}}.
 $$
 
 The handwritten exponent places $\eta$ in the numerator. The displayed definition makes $\eta$ a length and therefore puts it in the denominator. At the finite wall, $\psi_{\mathrm{II}}(\mechanical{L})=\psi_{\mathrm{III}}(\mechanical{L})$ and $\psi'_{\mathrm{II}}(\mechanical{L})=\psi'_{\mathrm{III}}(\mechanical{L})$. At an infinitely high wall, $\psi$ goes to zero at the boundary, and its derivative can jump there.
@@ -205,7 +205,7 @@ The free-particle solution for $x<0$ is $\psi_{\mathrm I}=Ae^{i\signal{k}_1x}+Be
 
 Rearrange the stationary Schrödinger equation to read $\psi''=2\mechanical{m}(\energy{V}-\energy{E})\psi/\hbar^2$. In regions I and III, $\energy{V}=0$ and the coefficient is negative for $\energy{E}>0$. The wave numbers $\signal{k}_1$ and $\signal{k}_3$ are real and the solutions oscillate. In region II with $\energy{V}>\energy{E}$ the coefficient is positive, and $\signal{k}_2=i\kappa$ is imaginary, with $\kappa=\sqrt{2\mechanical{m}(\energy{V}-\energy{E})}/\hbar$.
 
-The term $Ce^{i\signal{k}_2 x}=Ce^{-\kappa x}$ decays. The source keeps only this term in the barrier. The general solution for matching a barrier of finite width includes both $e^{-\kappa x}$ and $e^{+\kappa x}$. In region III write $\psi_{\mathrm{III}}=De^{i\signal{k}_3 x}+Fe^{-i\signal{k}_3 x}$. Here $F=0$ because no particle is incident from the right.
+The term $Ce^{i\signal{k}_2 x}=Ce^{-\kappa x}$ decays. The source keeps only this term in the barrier. The general solution for matching a barrier of finite width includes both $e^{-\kappa x}$ and $e^{+\kappa x}$. In region III write $\psi_{\mathrm{III}}=Fe^{i\signal{k}_3 x}+Ge^{-i\signal{k}_3 x}$. Here $G=0$ because no particle is incident from the right.
 
 ##### Tunneling and expectation values
 
@@ -259,7 +259,16 @@ Kyle Kabasares, *Modern Physics (Physics 10, UC Merced 2014)*.
 
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
-| $\energy{E}_n$ | $\unit{eV}$ | Bound-state energy | Energy of the $n$th level relative to ionization. |
+| $\energy{E}_n$ | $\unit{J}$ | Bound-state energy | Energy of the $n$th level of the infinite well, measured from the well floor. |
 | $\hat H$ | $\unit{J}$ | Hamiltonian | Operator for the total energy. |
 | $\energy{V}$ | $\unit{J}$ | Potential energy | Position-dependent multiplication term in the Hamiltonian. |
-| $R$ | $\unit{Bq}$ | Activity | Number of radioactive decays per unit time. |
+| $\energy{E}$ | $\unit{J}$ | Total energy | Total energy of the particle. |
+| $\energy{V_0}$ | $\unit{J}$ | Barrier height | Potential energy in region II of the barrier. |
+| $\mechanical{m}$ | $\unit{kg}$ | Mass | Mass of the particle. |
+| $\mechanical{L}$ | $\unit{m}$ | Well or barrier width | Width of the square well or of the rectangular barrier. |
+| $\psi$ | $\unit{m^{-1/2}}$ | Wave function | Normalized one-dimensional position-space wave function. |
+| $\signal{k}$ | $\unit{m^{-1}}$ | Wave number | Wave number in a region where the energy is larger than the potential. |
+| $\kappa$ | $\unit{m^{-1}}$ | Decay constant | Decay constant in a region where the potential is larger than the energy. |
+| $\eta$ | $\unit{m}$ | Penetration depth | Decay length of the wave function in the forbidden region, $\eta=1/\kappa$. |
+| $R$ | $1$ | Reflection coefficient | Ratio of the reflected to the incident probability flux. |
+| $T$ | $1$ | Transmission coefficient | Ratio of the transmitted to the incident probability flux. |

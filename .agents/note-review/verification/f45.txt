@@ -1,0 +1,46 @@
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/Internal molecular modes and the ideal quantum gas.md
+- FIXED | Symbol clashes mu, V, n, P in the diatomic section | Renamed reduced mass to m_r, bond potential to U(r) and U_eff, vibrational quantum number to v, P_cm to p_cm; added table rows for m_r, U, p_cm and p_rel
+- FIXED | Quantity table has wrong or unused rows | Removed Stellar mass, n in mol, Omega Multiplicity, Lande g, theta/phi rows; reduced pressure row to P
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.06.03 Thermal Conductivity and the Lorenz Number.md
+- FIXED | Label (e) coloured as elementary charge | Changed c_V^{(\electric{e})} to plain c_V^{(e)}
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.07.03 Ultrarelativistic Regime and the Chandrasekhar Mass.md
+- FIXED | Coloured A' clashes with mass number A | Renamed the energy coefficient to the uncoloured helper a' in all six places; B unchanged
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/Degenerate Fermi gases and the Sommerfeld expansion.md
+- FIXED | x used for integration variable and kT/E_F | Renamed the second use to t=k_BT/E_F from the chemical-potential result through the entropy result (expansions re-checked)
+- FIXED | Table rows wrong or unused | Removed n in mol, Omega Multiplicity, Lande g, fugacity z rows; pressure row reduced to P; g row now spin degeneracy g=2s+1
+- FIXED | 0.024 eV vs 0.026 eV room-temperature kT | kT at 300 K is 0.0259 eV; kept the notebook value and added the correct value in parentheses
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/08.03.01 Internal Energy.md
+- FIXED | n is both occupation and number density; table lists unused n_alpha | Occupation renamed to f(epsilon) in the energy integral; table row replaced by f(epsilon) mean occupation number
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/Bose condensation, photon gases, and phonons.md
+- FIXED | Table lists unused or wrong symbols | Removed Lande g, j, n in mol, Omega Multiplicity, F, P_int/P_ext, nu; number-density row replaced by occupation n(epsilon); T_c description limited to Bose condensation
+- FIXED | London date 1928 and lambda point 2.19 K | Added a source-clarification callout: London 1938, lambda point 2.17 K, 2.19 K is the notebook value (both sections)
+- FIXED | Fig. 15 maximum near x=2.822 | Root of 3(1-e^-x)=x is 2.8214; caption now x approx 2.821
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.02.03 van der Waals Equation.md
+- FIXED | He critical pressure 2.27 atm | 0.2275 MPa = 2.24 atm; changed cell to 2.24 and noted that the source 2.27 is the value in bar
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/10 Phase Transitions/10.04.01 Triple Point and Critical Point.md
+- FIXED | P_t=611.73 Pa outdated | Changed to the IAPWS value 611.657 Pa
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/10 Phase Transitions/10.06.04 Specific Heat near the Lambda Transition.md
+- FIXED | Fig. 10.4 amplitudes give larger C above T_lambda | Data confirmed A_-=1.5 > A_+=1.2; regenerated curves with A_-=1.2, A_+=1.5, swapped the two branch-label heights, and updated the caption; not checked in Obsidian reading mode
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/10 Phase Transitions/10.07.02 Scaling Relations.md
+- FIXED | Fisher relation year 1969 | Changed heading year to 1964 (no links point to the old heading)
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/10 Phase Transitions/10.07.03 Universality and Universality Classes.md
+- FIXED | XY and Heisenberg rows use old estimates | Kept the source table and added a note marking the rows as dated, with current XY (alpha -0.015, delta 4.78) and Heisenberg estimates
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/10 Phase Transitions/99 Exercises/10.01 Water Phase Diagram.md
+- FIXED | P_t=611.73 Pa outdated | Changed to 611.657 Pa; approx 6.12 mbar unchanged
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/11 Ising Model/11.03.04 Critical Mean-Field Exponents.md
+- FIXED | Exponent beta clashes with thermal beta | Added the disambiguation sentence after the exponent table, as in 11.04.03
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/11 Ising Model/11.04.04 Spontaneous Magnetization - Yang's Result.md
+- FIXED | Fig. 11.5 caption says reduced temperature | Caption now says versus T/T_c
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/11 Ising Model/11.07 Worked Examples.md
+- FIXED | m_0 used for iterate and spontaneous magnetization | Renamed iterates to m^(0), m^(1), m^(2), m^(3), m^(infinity); updated the table description
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/11 Ising Model/99 Exercises/11.04 Mean-Field Susceptibility above and below the Critical Temperature.md
+- FIXED | Table lists unused m_0 and m_s | Reduced the row to m
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/11 Ising Model/Ising mean field and transfer-matrix calculations.md
+- FIXED | Mean-field T_c factor 1/2, heat-capacity jump, susceptibility prefactor | Re-derived: k_BT_c=qJ, jump (3/2)Nk_B, prefactor N mu^2/(Jq); stated the correct mean-field equation and kept the notebook convention as a remark
+- FIXED | Table lists unused or clashing rows | Removed Planck h, Lande g, j, internal degeneracy g, F; T_c description now Ising ordering; removed the Planck note from the h row
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/12 Landau Theory and the Renormalization Group/12.05.01 Parameter Space and RG Flow.md
+- FIXED | Disordered phase label lies on ordered side of K1+K2=4 | Moved label from (1.1, 4.35) to (1.75, 0.85), below the line and clear of the grey arrows; not checked in Obsidian reading mode
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/13 Exercise Solutions/13.01 Chapter 3 - Microcanonical Ensemble.md
+- FIXED | mu chemical potential vs magnetic moment; n=N ball dimension | Renamed magnetic moment to mu_m (24 places and table); replaced "with dimension n=N" by "in N dimensions"
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/13 Exercise Solutions/13.02 Chapter 4 - Canonical Ensemble.md
+- FIXED | p is pressure and momentum; sigma symmetry number clashes | Pressure renamed to P in Ex. 4.4 and table; symmetry number renamed to sigma_sym in callout and table

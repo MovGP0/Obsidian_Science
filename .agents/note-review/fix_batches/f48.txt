@@ -1,0 +1,66 @@
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/00 Introduction.md
+- [Correctness] The part list says Part II = Chapters 4–7, Part III = 8–10, Part IV = 11–12, Part V = 13–14, but the vault folders are 04–08 (Linear Algebra incl. "06 Special Matrices" and "08 Hilbert Space"), 09–11, 12–13, 14–15; update the ranges (and add special matrices to the Part II description) to match the folders.
+
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/01 Analytical Foundations/01 Complex Numbers/07 Applications to Oscillations and Signals.md
+- [Correctness] The physical-quantity table lists $\signal{A}$ twice with different meanings and units (signal amplitude, unit of the signal; wavefunction amplitude, $\unit{m^{-1/2}}$); rename the plane-wave prefactor (e.g. $\signal{C}$ or $\signal{\psi}_0$) in the QM box and table.
+
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/01 Analytical Foundations/03 Ordinary Differential Equations/02 Second-Order Linear Equations.md
+- [Correctness] Symbol clash: $\signal{A}$ is the damped-oscillation amplitude, while plain $A,B$ are the cosine and sine coefficients in the free-particle solution $\psi=A\cos kx+B\sin kx$; rename the second pair (for example $D_1,D_2$) or list both in the table.
+
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/01 Analytical Foundations/03 Ordinary Differential Equations/99 Exercises/05 Exercise 5.md
+- [Correctness] Symbol clash: $m$ is both the integer label in $\psi_{n,m}$ and the mass $\mechanical{m}$ in the same formulas (only colour distinguishes them, as the note admits); rename the labels to $n_x,n_y$.
+
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/04 Vectors and Vector Spaces/03 Linear Independence and Spanning Sets.md
+- [Correctness] Definition 4.3 says the set of all linear combinations is called the "spanning set, or linear span"; the set of all linear combinations is the span, while a spanning set is a family whose span is $V$. Fix the definition and delete the "the source uses them as if they were the same" note.
+
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/06 Special Matrices/02 Singular Value Decomposition.md
+- [Correctness] Remove the sentence "The source states that eigenvectors exist only for square, diagonalizable matrices."; it asserts a false claim (non-diagonalizable square matrices have eigenvectors), which the following note then has to contradict; keep only the corrected statement.
+
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/06 Special Matrices/08 Density Matrices.md
+- [Correctness] Remove the stray text3d label '50' at $(0.34,0.16,0.82)$ in Fig. 6.2 together with the note that apologises for it; it has no meaning and suggests an angle that is not defined.
+
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/07 Eigenvalues and Eigenvectors/99 Exercises/01 Exercise 1.md
+- [Correctness] Symbol clash: in (a) $v_2$ and $v_4$ denote the normalized eigenvectors for $\lambda=2,4$, while the same section writes "the first row gives $v_1+v_2=0$" and (b) uses "$(1-i)v_2=\lambda v_1$" with $v_1,v_2$ as components; rename the eigenvectors (e.g. $u_2,u_4$) and keep $v_1,v_2$ for components.
+
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/09 Dirac Notation/00 Dirac Notation.md
+- [Correctness] "Paul Dirac introduced this notation in 1930 in an influential book": the 1930 first edition of The Principles of Quantum Mechanics did not use bra–ket notation; Dirac introduced it in his 1939 paper "A new notation for quantum mechanics" (Proc. Cambridge Phil. Soc. 35, 416), and the book adopted it in the 1947 third edition.
+
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/09 Dirac Notation/03 Operators in Dirac Notation.md
+- [Correctness] Symbol clash: $\phi$ labels the ket in $\langle\phi|\hat A|\psi\rangle$ and the adjoint relation, and $\signal{\phi}$ is the relative phase in the Bloch-state example; rename the phase (e.g. $\signal{\varphi}$) or the ket (e.g. $|\chi\rangle$) and update the table.
+
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/04 Frequencies and Transformations/12 Fourier Series/06 Common Errors.md
+- [Correctness] Symbol clash within the note: the box section's $\phi_n=\sqrt{2/L}\sin(n\pi x/L)$ on $[0,L]$ and $c_n$ (box amplitude) collide with $\phi_n^*=e^{-in\pi x/L}/\sqrt{2L}$ and $c_n$ (complex Fourier coefficient) in Errors 1 and 4; rename the box amplitudes or basis (e.g. $\beta_n$, $\chi_n$) rather than relying on the closing callout.
+- [Correctness] Macro inconsistency: $\phi_n$ is uncoloured although the table groups it with $\signal{\psi}$ (and Exercise 5 uses \signal{\phi}_n), and $\psi(0)$ in $c_n=\langle\phi_n|\psi(0)\rangle$ is uncoloured; colour them consistently.
+
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/04 Frequencies and Transformations/12 Fourier Series/99 Exercises/07 Exercise 7.md
+- [Correctness] Symbol clash: $\signal{\delta}_n$ (mode phase, question and table) and $\delta_{mn}$ (Kronecker delta, part (a) and the derivative orthogonality) share the letter; rename the phase (e.g. $\varphi_n$), which is never used after the question anyway.
+- [Correctness] Notation inconsistency: part (b) writes $c_1\phi_1(\mechanical{x})+c_2\phi_2(\mechanical{x})$ with uncoloured $\phi$ while the rest uses \signal{\phi}_n, and $\energy{E}$ denotes the classical string total while $\langle\energy{E}\rangle$, $\energy{E}_n$ in part (c) are quantum energies; colour $\phi$ consistently and label the classical energy distinctly (e.g. $\energy{E}_{\text{string}}$).
+
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/05 Probability and Uncertainty/14 Probability and Distributions/06 Common Errors.md
+- [Correctness] Error 1 says "The mean-square term vanishes only when $\langle X\rangle=0$"; the mean square is $\langle X^2\rangle$, so the vanishing term should be called the squared mean $\langle X\rangle^2$.
+
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/09 Glossary of Terms.md
+- [Correctness] Symbol clash in the physical-quantities table and entries: $a$ is simultaneously the potential offset $\energy{a}$ (Ehrenfest entry, unit J), the translation distance $\mechanical{a}$ (Momentum entry, unit m), and an observable eigenvalue $a$ (Projector entry); rename the potential coefficients (e.g. $V_0+F_1x+\tfrac12\kappa x^2$) or the translation (e.g. $\mechanical{s}$) so each symbol has one meaning in the note.
+- [Correctness] In "Pure and mixed states", the displayed mixture $\rho=\sum_ip_i|\psi_i\rangle\langle\psi_i|$ is stated to satisfy $\operatorname{Tr}(\rho^2)<1$ unconditionally, but a mixture of identical states (or a single $p_i=1$) is pure; add "with at least two distinct states and nonzero weights" or reuse the Density matrix entry's "genuinely mixed" qualifier.
+
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/Functions of operators, continuous bases, and Gaussian packets.md
+- [Correctness] The physical-quantities table lists $R$, $T$ (reflection and transmission coefficients) and $a_0$ (Bohr radius), none of which appear in this note; $a_0$ here is the identity coefficient in the Pauli expansion $X=a_0I+\boldsymbol\sigma\cdot\mathbf a$. Replace the table with the quantities actually used ($x$, $k$, $a$, $\Delta$, $\psi$, $A$) or drop it for the purely mathematical parts.
+- [Correctness] Symbol clashes: $X$ denotes both the position operator and the arbitrary $2\times2$ matrix in "Sakurai 1.2"; $\Delta$ denotes both the averaging-interval length in the plane-wave limit and the Gaussian width parameter (while $\Delta X$ is the uncertainty); $L$ is both the interval length $[0,L]$ and the lower limit of the averaging integral. Rename the Sakurai matrix (e.g. $M$) and the averaging length (e.g. $\Lambda$).
+
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/01 The Crisis of Classical Physics/01.02 Photoelectric Effect.md
+- [Correctness] Both source links target the heading `#Blackbody radiation`, which is the wrong section for this note; point them to `Quantization, light, and early atomic models#Photoelectric apparatus` (or `#Quantization of charge, light, and energy`) and `Matter waves, diffraction, and early quantum problems#The photoelectric effect`.
+
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/01 The Crisis of Classical Physics/Matter waves, diffraction, and early quantum problems.md
+- [Correctness] The Physical quantities table lists a decay constant $\lambda$ (clashing with wavelength $\lambda$), activity $R$, and mean lifetime $\tau$, none of which the note uses. It also describes $\rho$ as "nuclear mass per unit volume", although the note uses gold's bulk density 19.3 g/cm³. Remove or correct these rows and add the symbols actually used ($K$, $D$, $d$, $n$, $f$, $t$).
+- [Correctness] "Interference of neutrons": the Zeilinger–Gähler double-slit experiment used very cold neutrons with $\lambda\approx1.85$ nm, that is $v\approx200$ m/s, not about 2 km/s (2.2 km/s is the thermal-neutron speed).
+- [Correctness] Symbol clashes: $t$ is a time ($10^4$ s) and a foil thickness ($10^{-6}$ m); $T$ is temperature and wave period; $P$ is power and probability density; $\phi$ is a phase shift, the time factor $\phi(t)$, the Davisson–Germer angle, and the Compton recoil angle. The scattered wavelength is called both $\lambda'$ and $\lambda_{\mathrm f}$.
+
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/01 The Crisis of Classical Physics/Quantization, light, and early atomic models.md
+- [Correctness] The Physical quantities table lists a decay constant $\lambda$, activity $R$, and "nuclear mass per unit volume" $\rho$, which are not used as described. $\sigma$ denotes both the Stefan–Boltzmann constant and the cross section $\pi b^2$. $R$ denotes both radiant exitance and the Rydberg constant in $1/\lambda=R(1/m^2-1/n^2)$. Rename the clashing symbols and fix the table.
+- [Correctness] "Quantization of charge, light, and energy" quotes $c=2.9989\times10^8$ m/s; the correct value is $2.9979\times10^8$ m/s.
+- [Correctness] Stefan–Boltzmann: $R=\int_0^\infty I(\lambda,T)\,d\lambda$ uses the symbol that the next equation defines as the Rayleigh–Jeans exitance $2\pi ck_BT/\lambda^4$, whose integral diverges. The integrand must be the Planck exitance $2\pi hc^2\lambda^{-5}/(e^{hc/\lambda k_BT}-1)=(c/4)u(\lambda)$. Also note that $\varepsilon=1$ for a blackbody.
+- [Correctness] "Rutherford scattering example 2" never states the angle. The boxed $N/N_i=3.2\times10^{-7}\,\mathrm{mm^{-2}}$ corresponds to $\theta=45^\circ$. With the $90^\circ$ of example 1, the inputs give $2.7\times10^{-8}\,\mathrm{mm^{-2}}$. State $\theta=45^\circ$.
+
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/02 Postulates of Quantum Mechanics/02.01 The Quantum State.md
+- [Correctness] Symbol clash: $\alpha$ is the real global phase in $e^{i\alpha}$ and also a complex superposition coefficient in $\alpha\lvert\psi_1\rangle+\beta\lvert\psi_2\rangle$. Rename the coefficients, for example $c_1,c_2$.
+

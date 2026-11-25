@@ -15,7 +15,7 @@ A string of length $\mechanical{L}$ is fixed at both ends. Its normalized mode p
 
 $$
 \signal{u}_n(\mechanical{x},\signal{t})
-=\signal{\phi}_n(\mechanical{x})\cos(\signal{\omega}_n\signal{t}+\signal{\delta}_n),
+=\signal{\phi}_n(\mechanical{x})\cos(\signal{\omega}_n\signal{t}+\signal{\varphi}_n),
 $$
 
 where
@@ -32,7 +32,7 @@ $$
 **(b)** The initial profile is
 
 $$
-\signal{u}(\mechanical{x},0)=c_1\phi_1(\mechanical{x})+c_2\phi_2(\mechanical{x}),
+\signal{u}(\mechanical{x},0)=c_1\signal{\phi}_1(\mechanical{x})+c_2\signal{\phi}_2(\mechanical{x}),
 \qquad|c_1|^2+|c_2|^2=1.
 $$
 
@@ -108,13 +108,13 @@ $$
 \begin{aligned}
 \energy{K}&=\frac{\mechanical{\mu}}2\sum_{n=1}^2\signal{\omega}_n^2q_n^2\sin^2(\signal{\omega}_n\signal{t}),\\
 \energy{V}&=\frac{\mechanical{\mu}}2\sum_{n=1}^2\signal{\omega}_n^2q_n^2\cos^2(\signal{\omega}_n\signal{t}),\\
-\energy{E}&=\energy{K}+\energy{V}
+\energy{E}_{\text{string}}&=\energy{K}+\energy{V}
 =\frac{\mechanical{\mu}\signal{D}^2}{2}
 \left(\signal{\omega}_1^2|c_1|^2+\signal{\omega}_2^2|c_2|^2\right).
 \end{aligned}
 $$
 
-The total energy is constant, so its time average equals this same expression. Each separate kinetic and elastic time average is $\energy{E}/2$. Since $\signal{\omega}_2=2\signal{\omega}_1$, the total is also $\mechanical{\mu}\signal{D}^2\signal{\omega}_1^2(|c_1|^2+4|c_2|^2)/2$. No numerical energy follows without the missing physical parameters.
+The total energy is constant, so its time average equals this same expression. Each separate kinetic and elastic time average is $\energy{E}_{\text{string}}/2$. Since $\signal{\omega}_2=2\signal{\omega}_1$, the total is also $\mechanical{\mu}\signal{D}^2\signal{\omega}_1^2(|c_1|^2+4|c_2|^2)/2$. No numerical energy follows without the missing physical parameters.
 
 ### (c) State the quantum analogy and its limit
 
@@ -143,7 +143,7 @@ A quantum two-state superposition instead keeps its integrated norm equal to one
 **(b)** With zero initial velocity, each initial mode acquires $\cos(\signal{\omega}_n\signal{t})$. With real physical displacement coefficients $q_n=\signal{D}c_n$, the constant total and mean energy is
 
 $$
-\overline{\energy{E}}=\frac{\mechanical{\mu}\signal{D}^2}{2}
+\overline{\energy{E}}_{\text{string}}=\frac{\mechanical{\mu}\signal{D}^2}{2}
 \left(\signal{\omega}_1^2|c_1|^2+\signal{\omega}_2^2|c_2|^2\right).
 $$
 
@@ -161,12 +161,13 @@ $$
 | $c_n$, $c_1$, $c_2$ | $1$ | Mode amplitude | The normalized initial profile or quantum amplitude. |
 | $g_n$ | $\unit{s^{-1}}$ | Profile velocity coefficient | The coefficient of the initial profile time derivative. |
 | $\signal{\omega}_n$ | $\unit{s^{-1}}$ | Angular frequency | The angular frequency of the nth string mode. |
-| $\signal{\delta}_n$ | $1$ | Mode phase | The phase in the given string mode. |
+| $\signal{\varphi}_n$ | $1$ | Mode phase | The phase in the given string mode. |
 | $\mechanical{v}$ | $\unit{m\,s^{-1}}$ | Wave speed | The wave propagation speed on the string. |
 | $\signal{D}$ | $\unit{m^{3/2}}$ | Displacement scale | The factor converting a normalized profile to displacement. |
 | $q_n$ | $\unit{m^{3/2}}$ | Displacement coefficient | The physical coefficient of a normalized spatial mode. |
 | $\mechanical{y}$ | $\unit{m}$ | Transverse displacement | The real physical displacement of the string. |
 | $\mechanical{\mu}$ | $\unit{kg\,m^{-1}}$ | Linear mass density | The string mass per unit length. |
 | $\mechanical{T}$ | $\unit{N}$ | Tension | The tensile force in the string. |
-| $\energy{K}$, $\energy{V}$, $\energy{E}$, $\energy{E}_n$ | $\unit{J}$ | Energy | The kinetic, elastic, total, or quantum mode energy. |
+| $\energy{K}$, $\energy{V}$, $\energy{E}_{\text{string}}$ | $\unit{J}$ | String energy | The kinetic, elastic, or total classical string energy. |
+| $\energy{E}_n$, $\langle\energy{E}\rangle$ | $\unit{J}$ | Quantum energy | The quantum mode energy or the mean quantum energy. |
 | $\mechanical{\hbar}$ | $\unit{J\,s}$ | Reduced Planck constant | The action constant in quantum time evolution. |

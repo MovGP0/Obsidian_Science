@@ -174,14 +174,39 @@ Kyle Kabasares, *Radiative Transfer in Astrophysics (Physics 240C, UC Irvine 201
 
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
-| $\energy{L}$ | $\unit{erg\cdot s^{-1}}$ | Luminosity | Total radiant energy emitted per unit time. |
-| $\energy{E}$ | $\unit{erg}$ | Radiant energy | Energy emitted by the source. |
-| $\energy{F}$ | $\unit{erg\cdot s^{-1}\cdot cm^{-2}}$ | Radiative flux | Energy crossing a surface per unit time and area. |
-| $\energy{I}_{\signal{\nu}}$ | $\unit{erg\cdot s^{-1}\cdot cm^{-2}\cdot sr^{-1}\cdot Hz^{-1}}$ | Specific intensity | Radiated power per unit projected area, solid angle, and frequency. |
-| $\energy{I}$ | $\unit{erg\cdot s^{-1}\cdot cm^{-2}\cdot sr^{-1}}$ | Frequency-integrated intensity | Specific intensity integrated over frequency. |
-| $\mechanical{n}$ | $\unit{cm^{-3}}$ | Number density | Number of absorbers per unit volume. |
-| $\alpha$ | $1$ | Fine-structure constant | Dimensionless electromagnetic coupling constant. |
+| $\energy{E}_\gamma$, $\energy{E}_\gamma^i$, $\energy{E}_\gamma^f$ | $\unit{erg}$ | Photon energy | Photon energy, and its values before and after scattering. |
+| $\gamma$ | $1$ | Lorentz factor | Relativistic factor of the scattering electron. |
+| $\mechanical{v}$ | $\unit{cm\cdot s^{-1}}$ | Electron speed | Speed of the scattering electron. |
+| $\mechanical{m}_e$ | $\unit{g}$ | Electron mass | Rest mass of the electron. |
+| $c$ | $\unit{cm\cdot s^{-1}}$ | Speed of light | Speed of light in vacuum. |
+| $k_{\mathrm B}$ | $\unit{erg\cdot K^{-1}}$ | Boltzmann constant | Relates temperature to energy. |
+| $h$ | $\unit{erg\cdot s}$ | Planck constant | Relates photon energy to frequency. |
+| $\signal{\nu}$, $\signal{\nu}_\gamma$ | $\unit{Hz}$ | Frequency | Frequency of the radiation or of a photon. |
+| $\thermal{T}_e$, $\langle\thermal{T}_e\rangle_m$ | $\unit{K}$ | Electron temperature | Temperature of the hot electron gas, and its density-weighted mean. |
+| $\energy{\tau}$ | $1$ | Thomson optical depth | Scattering optical depth along the line of sight. |
+| $\langle N_{\mathrm{scat}}\rangle$ | $1$ | Mean number of scatterings | Average number of scatterings of a photon in the medium. |
+| $y_{\mathrm{SZ}}$ | $1$ | Compton parameter | Line-of-sight Compton parameter of the thermal SZ effect. |
+| $\mechanical{n}_e$ | $\unit{cm^{-3}}$ | Electron number density | Number of free electrons per unit volume. |
+| $\mechanical{\ell}$ | $\unit{cm}$ | Line-of-sight distance | Path length through the cluster gas. |
 | $\mechanical{\sigma}_{\mathrm{T}}$ | $\unit{cm^2}$ | Thomson cross section | Ratio of total scattered power to incident energy flux. |
-| $y$ | $1$ | Compton parameter | Mean fractional energy change per scattering times the mean scattering count, using the convention in this section. |
-| $\thermal{T}$ | $\unit{K}$ | Brightness temperature | Temperature inferred from the intensity in the Rayleigh–Jeans limit in this section. |
+| $\thermal{T}_{\mathrm{CMB}}$, $\Delta\thermal{T}_{\mathrm{CMB}}$ | $\unit{K}$ | CMB temperature and SZ shift | CMB temperature and its change caused by the SZ effect. |
+| $\thermal{T}$, $\thermal{T}_{\mathrm{SZ}}$, $\thermal{T}_{\mathrm{true}}$ | $\unit{K}$ | Brightness temperature | Temperature inferred from the intensity in the Rayleigh–Jeans limit. |
+| $\energy{I}_{\signal{\nu}}$ | $\unit{erg\cdot s^{-1}\cdot cm^{-2}\cdot sr^{-1}\cdot Hz^{-1}}$ | Specific intensity | Radiated power per unit projected area, solid angle, and frequency. |
+| $C(\thermal{T})$ | $\unit{erg\cdot s\cdot cm^{-2}\cdot sr^{-1}}$ | Rayleigh–Jeans coefficient | Coefficient of $\signal{\nu}^2$ in the Rayleigh–Jeans intensity. |
+| $\mechanical{M}_{\mathrm{tot}}$, $\mechanical{M}_{\mathrm{gas}}$ | $\unit{g}$ | Cluster masses | Total mass and gas mass of the cluster. |
+| $\mechanical{M}_\odot$ | $\unit{g}$ | Solar mass | Mass of the Sun. |
+| $\mechanical{R}$ | $\unit{cm}$ | Cluster size | Characteristic radius of the cluster. |
+| $\energy{L}_{\mathrm X}$ | $\unit{erg\cdot s^{-1}}$ | X-ray luminosity | Thermal bremsstrahlung power of the intracluster medium. |
+| $\energy{F}_{\mathrm X}$ | $\unit{erg\cdot s^{-1}\cdot cm^{-2}}$ | X-ray flux | Observed X-ray energy flux of the cluster. |
+| $\Theta$ | $\unit{rad}$ | Angular size | Observed angular size of the cluster. |
+| $\mechanical{D}$ | $\unit{cm}$ | Cluster distance | Distance to the cluster in the Hubble-constant method. |
+| $H_0$ | $\unit{km\cdot s^{-1}\cdot Mpc^{-1}}$ | Hubble constant | Present expansion rate. |
+| $\mechanical{m}$ | $\unit{g}$ | Mass threshold | Lower mass limit in the cluster count $N(>\mechanical{m})$. |
+| $N(>\mechanical{m})$ | $1$ | Cluster count | Number of clusters above the mass threshold. |
+| $z$ | $1$ | Redshift | Redshift of the cluster. |
+| $\mechanical{d}_A$ | $\unit{cm}$ | Angular diameter distance | Distance that relates physical area to solid angle. |
+| $\Omega$ | $\unit{sr}$ | Solid angle | Apparent solid angle of the cluster. |
+| $\mechanical{A}$, $\mechanical{V}$ | $\unit{cm^2}$, $\unit{cm^3}$ | Area and volume | Projected area and volume of the cluster. |
 | $Y_{\mathrm{SZ}}$ | $\unit{sr}$ | Integrated SZ Compton parameter | Line-of-sight Compton parameter integrated over the cluster's apparent solid angle. |
+| $f_{\mathrm{gas}}$ | $1$ | Gas fraction | Ratio of gas mass to total mass. |
+| $\alpha$ | $1$ | Temperature–mass exponent | Exponent in the scaling $\langle\thermal{T}_e\rangle_m\propto\mechanical{M}_{\mathrm{tot}}^{\alpha}$. |

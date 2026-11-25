@@ -101,7 +101,7 @@ $$
 =\frac{3\thermal{T}}{\quantity{1}{GeV}}\,\eta_B^{-1}.
 $$
 
-Photons therefore dominate over baryons in energy density during nucleosynthesis. The manuscript separately lists $\energy{B}_{{}^4\mathrm{He}}=\quantity{22}{MeV}$ without specifying the reaction or threshold. The neutron number fraction among free nucleons is $X_n=n_n/(n_n+n_p)$.
+Photons therefore dominate over baryons in energy density during nucleosynthesis. The manuscript separately lists $\energy{B}_{{}^4\mathrm{He}}=\quantity{22}{MeV}$ without specifying the reaction or threshold. This value is not the binding energy of helium-4, which is $\quantity{28.3}{MeV}$. The nearby value $\quantity{23.8}{MeV}$ is the energy released in $\mathrm{D}+\mathrm{D}\to{}^4\mathrm{He}+\gamma$. The neutron number fraction among free nucleons is $X_n=n_n/(n_n+n_p)$.
 
 In units with $\mechanical{c}=1$, the spatial contraction of the Ricci tensor is
 

@@ -70,7 +70,7 @@ The star leaves the main sequence and enters the subgiant phase.
 
 ##### After the red giant branch
 
-At a core temperature of about $\quantity{10^8}{K}$, helium begins to fuse in the core. In the low-mass case this begins with a helium flash. The source says about half the helium in the core is burned quickly. The star moves down to the horizontal branch on the luminosity–temperature diagram.
+At a core temperature of about $\quantity{10^8}{K}$, helium begins to fuse in the core. In the low-mass case this begins with a helium flash. The source says about half the helium in the core is burned quickly. In fact, only a few percent of the core helium burns in the flash. The rest burns quiescently on the horizontal branch over about $\quantity{10^8}{yr}$. The star moves down to the horizontal branch on the luminosity–temperature diagram.
 
 ![[Kyle Kabasares - Intro to Astrophysics - Horizontal branch evolutionary track.png|**Fig. 51** A luminosity–temperature diagram with the main sequence in black and the giant and horizontal branch path in red.]]
 
@@ -170,7 +170,7 @@ RR Lyrae stars are distance indicators within the Local Group. The lecture gives
 
 ##### Supernova classification
 
-The notes attribute the original classification to Fritz Zwicky. Type I spectra lack hydrogen lines. Type Ia has a strong characteristic silicon feature. Types Ib and Ic were distinguished later, in the 1980s and 1990s. Type II spectra show hydrogen lines. The notes also list historical Types III–IV.
+The notes attribute the original classification to Fritz Zwicky. Rudolph Minkowski introduced the Type I and Type II split in 1941, and Zwicky later added Types III–V. Type I spectra lack hydrogen lines. Type Ia has a strong characteristic silicon feature. Types Ib and Ic were distinguished later, in the 1980s and 1990s. Type II spectra show hydrogen lines. The notes also list these later historical types.
 
 ## Source
 
@@ -180,18 +180,14 @@ Kyle Kabasares, *Intro to Astrophysics (Physics 240A, UC Irvine 2018)*.
 
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
-| $\mechanical{M}_{\odot}$ | $\unit{\mathrm{g}}$ | Solar mass | Mass of the Sun. |
-| $\energy{L}$ | $\unit{erg\cdot s^{-1}}$ | Luminosity | Total radiant power. |
-| $A$ | 1 | Extinction | Increase in apparent magnitude caused by attenuation. |
-| $n$ | $\unit{cm^{-3}}$ | Grain number density | Number of dust grains per unit volume. |
-| $\delta$ | $\unit{deg}$ | Declination | Angular distance north or south of the celestial equator. |
+| $\mechanical{M}_{\odot}$ | $\unit{g}$ | Solar mass | Mass of the Sun. |
 | $\mechanical{M}$ | $\unit{g}$ | Stellar mass | Mass in the main-sequence scaling relations. |
-| $P$ | 1 | Geometric transit probability | Probability that a randomly oriented orbit produces a transit. |
-| $e$ | 1 | Orbital eccentricity | Deviation of the orbit from a circle. |
-| $X$ | 1 | Airmass | Relative path length through the atmosphere. |
+| $\energy{L}$ | $\unit{erg\cdot s^{-1}}$ | Luminosity | Total radiant power. |
+| $\thermal{T}$ | $\unit{K}$ | Core temperature | Temperature in the stellar core during core collapse. |
+| $M_V$ | $\unit{mag}$ | Absolute visual magnitude | Absolute magnitude of RR Lyrae stars in the visual band. |
+| — | $\unit{MeV}$ | Energy release | Energy released per helium-4 nucleus produced in the proton–proton chain. |
 | — | $\unit{Gyr}$ | Main-sequence lifetime | Time spent burning hydrogen in the stellar core. |
+| — | $\unit{yr}$ | Burning timescale | Duration of a nuclear burning stage or of the planetary-nebula phase. |
 | — | $\unit{g\cdot cm^{-3}}$ | White-dwarf density | Mass per unit volume of the compact remnant. |
-| $n$ | $\unit{pc^{-3}}$ | Stellar number density | Number of stars per unit volume. |
-| $A$ | $\unit{km\cdot s^{-1}\cdot kpc^{-1}}$ | First Oort constant | Local rotational shear inferred from the longitude dependence of radial velocities. |
-| $B$ | $\unit{km\cdot s^{-1}\cdot kpc^{-1}}$ | Second Oort constant | Offset in the nearby tangential velocity per unit distance. |
-| $p$ | 1 | Metal yield | Newly synthesized metal mass returned to the gas per unit mass locked into stars and remnants. |
+| — | $\unit{km}$ | White-dwarf radius | Radius of a typical white dwarf. |
+| — | $\unit{s}$ | Period | Rotation period of the Crab pulsar, or pulsation period of an RR Lyrae star. |

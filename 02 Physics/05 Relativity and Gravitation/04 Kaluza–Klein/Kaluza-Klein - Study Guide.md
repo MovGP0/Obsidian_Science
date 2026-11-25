@@ -48,7 +48,7 @@ The collection uses two explicitly identified coordinate conventions to explain 
 
 ## Notation and units
 
-The collection uses a mostly-plus metric, with one negative time direction and four positive spatial directions. The compact direction is spacelike. The circular coordinate is length-valued unless a note explicitly introduces an angle. Its coordinate period is one circumference. The reference radius is separate from the radion, which multiplies the physical circle size.
+The collection uses two metric signatures. The worked length-coordinate derivations use a mostly-plus metric, with one negative time direction and four positive spatial directions. The angular calculation in the first section of a chapter uses a mostly-minus metric, as stated below. The compact direction is spacelike. The circular coordinate is length-valued unless a note explicitly introduces an angle. Its coordinate period is one circumference. The reference radius is separate from the radion, which multiplies the physical circle size.
 
 Natural units set the speed of light and reduced Planck constant to one. Energy, momentum, and mass can then all be measured in GeV; length and time use inverse GeV. Explicit SI conversions restore the constants. Charge uses Heaviside–Lorentz normalization, so the fine-structure constant equals elementary charge squared divided by four pi.
 

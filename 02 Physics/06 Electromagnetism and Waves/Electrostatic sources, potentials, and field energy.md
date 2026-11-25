@@ -62,12 +62,12 @@ $$
 
 ![[Kyle Kabasares - Electrodynamics - Electric flux through a closed surface.png|**Fig. 1** The normal $\hat n$ points outward from the closed surface $S$. The normal component of the electric field contributes to the flux.]]
 
-For a charge $\electric{Q}$ at the center of a sphere of radius $\mechanical{R}$, the electric field at the surface is radial, with $\electric{\vec E}=\electric{Q}\hat r/(4\pi\electric{\varepsilon}_0\mechanical{R}^2)$. Since $\hat n=\hat r$ and $dA=\mechanical{R}^2\sin\theta\,d\theta\,d\phi$,
+For a charge $\electric{Q}$ at the center of a sphere of radius $\mechanical{R}$, the electric field at the surface is radial, with $\electric{\vec E}=\electric{Q}\hat r/(4\pi\electric{\varepsilon}_0\mechanical{R}^2)$. Since $\hat n=\hat r$ and $dA=\mechanical{R}^2\sin\theta\,d\theta\,d\varphi$,
 
 $$
 \oint_S\electric{\vec E}\cdot\hat n\,dA
 =\frac{\electric{Q}}{4\pi\electric{\varepsilon}_0}
-\int_0^{2\pi}\!\int_0^\pi\sin\theta\,d\theta\,d\phi
+\int_0^{2\pi}\!\int_0^\pi\sin\theta\,d\theta\,d\varphi
 =\frac{\electric{Q}}{\electric{\varepsilon}_0}.
 $$
 
@@ -184,7 +184,7 @@ The field determines potential differences. The lecture often sets the reference
 
 ##### Potential of a uniformly charged sphere
 
-First find the field for a sphere of radius $\mechanical{R}$ and constant density $\electric{\rho}$. An exterior Gaussian surface encloses all the charge and gives $\electric{E}_r=\electric{\rho}\mechanical{R}^3/(3\electric{\varepsilon}_0\mechanical{r}^2)$. An interior surface encloses charge only up to $\mechanical{r}$ and gives $\electric{E}_r=\electric{\rho}\mechanical{r}/(3\electric{\varepsilon}_0)$.
+First find the field for a sphere of radius $\mechanical{R}$ and constant density $\electric{\rho}_0$. An exterior Gaussian surface encloses all the charge and gives $\electric{E}_r=\electric{\rho}_0\mechanical{R}^3/(3\electric{\varepsilon}_0\mechanical{r}^2)$. An interior surface encloses charge only up to $\mechanical{r}$ and gives $\electric{E}_r=\electric{\rho}_0\mechanical{r}/(3\electric{\varepsilon}_0)$.
 
 ![[Kyle Kabasares - Electrodynamics - Exterior Gaussian surface for a charged sphere.png|**Fig. 11** A Gaussian surface outside the shaded sphere encloses the entire charge.]]
 
@@ -337,12 +337,12 @@ This determines the free-space potential with the reference at infinity when the
 
 ##### Charge density in spherical and cylindrical coordinates
 
-Inside a sphere of radius $\mechanical{R}$, take $\electric{\rho}(\mechanical{\vec x}')=\electric{\rho}_0\sqrt{\sin\theta'}$. With $\hat r(\theta,\phi)=(\sin\theta\cos\phi,\sin\theta\sin\phi,\cos\theta)$, the field and source positions are $\mechanical{\vec x}=\mechanical{r}\hat r(\theta,\phi)$ and $\mechanical{\vec x}'=\mechanical{r}'\hat r(\theta',\phi')$. The denominator is the Euclidean norm of the difference of these three components. Substituting the spherical volume element gives
+Inside a sphere of radius $\mechanical{R}$, take $\electric{\rho}(\mechanical{\vec x}')=\electric{\rho}_0\sqrt{\sin\theta'}$. With $\hat r(\theta,\varphi)=(\sin\theta\cos\varphi,\sin\theta\sin\varphi,\cos\theta)$, the field and source positions are $\mechanical{\vec x}=\mechanical{r}\hat r(\theta,\varphi)$ and $\mechanical{\vec x}'=\mechanical{r}'\hat r(\theta',\varphi')$. The denominator is the Euclidean norm of the difference of these three components. Substituting the spherical volume element gives
 
 $$
 \electric{\phi}(\mechanical{\vec x})
 =\frac{\electric{\rho}_0}{4\pi\electric{\varepsilon}_0}
-\int_0^{2\pi}d\phi'\int_0^\pi\sin\theta'\,d\theta'
+\int_0^{2\pi}d\varphi'\int_0^\pi\sin\theta'\,d\theta'
 \int_0^{\mechanical{R}}
 \frac{\sqrt{\sin\theta'}\,\mechanical{r}'^2\,d\mechanical{r}'}
 {\lvert\mechanical{\vec x}-\mechanical{\vec x}'\rvert}.
@@ -350,7 +350,7 @@ $$
 
 The discussion leaves the result as a definite integral.
 
-For a ring of radius $\mechanical{R}$ in the $xy$ plane with uniformly distributed total charge $\electric{Q}$, use cylindrical coordinates $(\mechanical{s},\phi,\mechanical{z})$, writing $s$ for the cylindrical radius to distinguish it from charge density. Then $\mechanical{\vec x}=(\mechanical{s}\cos\phi,\mechanical{s}\sin\phi,\mechanical{z})$, with the same formula in primed coordinates for the source, and $d^3\mechanical{x}'=\mechanical{s}'\,d\mechanical{s}'\,d\phi'\,d\mechanical{z}'$. The density must be supported on $\mechanical{s}'=\mechanical{R}$ and $\mechanical{z}'=0$.
+For a ring of radius $\mechanical{R}$ in the $xy$ plane with uniformly distributed total charge $\electric{Q}$, use cylindrical coordinates $(\mechanical{s},\varphi,\mechanical{z})$, writing $s$ for the cylindrical radius to distinguish it from charge density. Then $\mechanical{\vec x}=(\mechanical{s}\cos\varphi,\mechanical{s}\sin\varphi,\mechanical{z})$, with the same formula in primed coordinates for the source, and $d^3\mechanical{x}'=\mechanical{s}'\,d\mechanical{s}'\,d\varphi'\,d\mechanical{z}'$. The density must be supported on $\mechanical{s}'=\mechanical{R}$ and $\mechanical{z}'=0$.
 
 ![[Kyle Kabasares - Electrodynamics - Circular ring of charge.png|**Fig. 20** The ring lies in the $xy$ plane and carries uniformly distributed charge.]]
 
@@ -362,9 +362,9 @@ $$
 \delta(\mechanical{s}'-\mechanical{R})\delta(\mechanical{z}').
 $$
 
-Use this density in the free-space potential integral with $\mechanical{z}'\in\mathbb R$, $\mechanical{s}'\geq0$, and $0\leq\phi'<2\pi$. Both delta factors localize the integral, leaving the ring azimuth as the only integration variable.
+Use this density in the free-space potential integral with $\mechanical{z}'\in\mathbb R$, $\mechanical{s}'\geq0$, and $0\leq\varphi'<2\pi$. Both delta factors localize the integral, leaving the ring azimuth as the only integration variable.
 
-The same ring is at $\mechanical{r}'=\mechanical{R}$ and $\theta'=\pi/2$ in spherical coordinates. The source position on the ring is $\mechanical{\vec x}'=(\mechanical{R}\cos\phi',\mechanical{R}\sin\phi',0)$.
+The same ring is at $\mechanical{r}'=\mechanical{R}$ and $\theta'=\pi/2$ in spherical coordinates. The source position on the ring is $\mechanical{\vec x}'=(\mechanical{R}\cos\varphi',\mechanical{R}\sin\varphi',0)$.
 
 ![[Kyle Kabasares - Electrodynamics - Charged ring and symmetry axis.png|**Fig. 21** The ring lies in the equatorial plane. The dashed line marks its symmetry axis.]]
 
@@ -382,12 +382,12 @@ $$
 \electric{\phi}(\mechanical{\vec x})
 =\frac{\electric{Q}}{8\pi^2\electric{\varepsilon}_0}
 \int_0^{2\pi}
-\frac{d\phi'}{\sqrt{
+\frac{d\varphi'}{\sqrt{
 \mechanical{r}^2+\mechanical{R}^2
--2\mechanical{r}\mechanical{R}\sin\theta\cos(\phi-\phi')}}.
+-2\mechanical{r}\mechanical{R}\sin\theta\cos(\varphi-\varphi')}}.
 $$
 
-The denominator is the distance from the field point $(\mechanical{r},\theta,\phi)$ to the source point on the ring.
+The denominator is the distance from the field point $(\mechanical{r},\theta,\varphi)$ to the source point on the ring.
 
 The instructor confirms the spherical ring normalization. For a trial density $c\,\delta(\mechanical{r}'-\mechanical{R})\delta(\theta'-\pi/2)$, the volume integral gives $\electric{Q}=2\pi\mechanical{R}^2c$. The notes use primes to distinguish source coordinates from field coordinates. In the Coulomb kernel the squared distance is the sum of the squared differences between the three Cartesian components of the spherical coordinate vectors.
 
@@ -455,7 +455,7 @@ $$
 =-4\pi\delta^3(\mechanical{\vec x}-\mechanical{\vec x}').
 $$
 
-The delta is necessary for the point-charge potential to satisfy Poisson's equation at its source. The next example asks for the charge density that produces $\electric{\phi}(\mechanical{r})=\electric{V}_0e^{-a\mechanical{r}}/\mechanical{r}$. The page starts by applying $-\electric{\varepsilon}_0\nabla^2$ in Cartesian coordinates.
+The delta is necessary for the point-charge potential to satisfy Poisson's equation at its source. The next example asks for the charge density that produces $\electric{\phi}(\mechanical{r})=\electric{V}_0e^{-\kappa\mechanical{r}}/\mechanical{r}$. The page starts by applying $-\electric{\varepsilon}_0\nabla^2$ in Cartesian coordinates.
 
 The Cartesian attempt starts with $\partial\mechanical{r}/\partial\mechanical{x}=\mechanical{x}/\mechanical{r}$. The instructor switches to spherical coordinates, where the Laplacian is
 
@@ -465,7 +465,7 @@ $$
 \left(\mechanical{r}^2\frac{\partial}{\partial\mechanical{r}}\right)
 +\frac{1}{\mechanical{r}^2\sin\theta}
 \frac{\partial}{\partial\theta}\left(\sin\theta\frac{\partial}{\partial\theta}\right)
-+\frac{1}{\mechanical{r}^2\sin^2\theta}\frac{\partial^2}{\partial\phi^2}.
++\frac{1}{\mechanical{r}^2\sin^2\theta}\frac{\partial^2}{\partial\varphi^2}.
 $$
 
 The angular derivatives vanish on a radial potential. At $\mechanical{r}>0$, the radial operator gives
@@ -474,10 +474,10 @@ $$
 \nabla^2\electric{\phi}
 =\frac{1}{\mechanical{r}}
 \frac{d^2}{d\mechanical{r}^2}\bigl(\mechanical{r}\electric{\phi}\bigr)
-=\electric{V}_0 a^2\frac{e^{-a\mechanical{r}}}{\mechanical{r}}.
+=\electric{V}_0 \kappa^2\frac{e^{-\kappa\mechanical{r}}}{\mechanical{r}}.
 $$
 
-Equivalently, differentiating $\mechanical{r}^2d(e^{-a\mechanical{r}}/\mechanical{r})/d\mechanical{r}=-(a\mechanical{r}+1)e^{-a\mechanical{r}}$ gives $a^2\mechanical{r}e^{-a\mechanical{r}}$. This product-rule step resolves the discrepancy between the two handwritten calculations. The instructor's expression for the charge density away from the origin is $-\electric{\varepsilon}_0\electric{V}_0a^2e^{-a\mechanical{r}}/\mechanical{r}$. A delta term is also needed because the potential has a $1/\mechanical{r}$ singularity.
+Equivalently, differentiating $\mechanical{r}^2d(e^{-\kappa\mechanical{r}}/\mechanical{r})/d\mechanical{r}=-(\kappa\mechanical{r}+1)e^{-\kappa\mechanical{r}}$ gives $\kappa^2\mechanical{r}e^{-\kappa\mechanical{r}}$. This product-rule step resolves the discrepancy between the two handwritten calculations. The instructor's expression for the charge density away from the origin is $-\electric{\varepsilon}_0\electric{V}_0\kappa^2e^{-\kappa\mechanical{r}}/\mechanical{r}$. A delta term is also needed because the potential has a $1/\mechanical{r}$ singularity.
 
 ## Source
 
@@ -487,22 +487,33 @@ Kyle Kabasares, *Electrodynamics (Physics 213A, UC Irvine 2018)*.
 
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
-| $\electric{q}_i$ | $\unit{C}$ | Electric charge | Signed charge of the point source labeled $i$. |
-| $\electric{\varepsilon}_0$ | $\unit{F\,m^{-1}}$ | Vacuum permittivity | Constant in the SI form of Coulomb's law. |
-| $\mechanical{\vec F}$ | $\unit{N}$ | Force | Mechanical force on the charge. |
-| $\electric{\vec E}$ | $\unit{N\,C^{-1}}$ | Electric field | Force per unit positive test charge. |
-| $\mechanical{\vec r}$, $\mechanical{\vec r}_i$ | $\unit{m}$ | Field and source positions | Position vectors of the observation point and source charge. |
-| $\electric{\rho}$ | $\unit{C\,m^{-3}}$ | Volume charge density | Charge per unit volume. |
-| $\electric{Q}_{\mathrm{enc}}$ | $\unit{C}$ | Enclosed charge | Integral of the volume charge density within the Gaussian surface. |
-| $\electric{\rho}_0$ | $\unit{C\,m^{-3}}$ | Uniform volume charge density | Constant density inside the charged sphere or cylinder. |
-| $\electric{\sigma}$ | $\unit{C\,m^{-2}}$ | Surface charge density | Charge per unit area of the infinite plane. |
-| $\circuit{C}$ | $\unit{F}$ | Capacitance | Magnitude of the charge on either conductor divided by their potential difference. |
-| $G(\mechanical{\vec x},\mechanical{\vec x}')$ | $\unit{m^{-1}}$ | Electrostatic Green's function | Free-space kernel normalized to a source of $-4\pi$ times the three-dimensional delta. |
-| $\mechanical{s}$ | $\unit{m}$ | Cylindrical radius | Perpendicular distance from the symmetry axis. |
-| $\electric{\lambda}$ | $\unit{C\,m^{-1}}$ | Linear charge density | Charge per unit arc length of the rod. |
-| $a$ | $\unit{m^{-1}}$ | Screening parameter | Inverse length in the radial exponential. |
-| $\electric{\vec p}$ | $\unit{C\,m}$ | Electric dipole moment | For a charge pair, the positive charge times the displacement from negative to positive charge. |
-| $\electric{\rho}_0$ | $\unit{C\,m^{-3}}$ | Volume charge density amplitude | Coefficient of $\cos\theta$ in the charged sphere. |
-| $\electric{\varepsilon}$ | $\unit{F\,m^{-1}}$ | Material permittivity | Ratio of electric displacement to electric field in a linear isotropic medium. |
-| $c$ | $\unit{m\,s^{-1}}$ | Vacuum speed of light | Propagation speed of electromagnetic disturbances in vacuum. |
-| $n$ | $1$ | Refractive index | Ratio of the vacuum light speed to the phase speed in a lossless medium. |
+| $\electric{q}$, $\electric{q}_i$, $\electric{q}_1$, $\electric{q}_2$ | $\unit{C}$ | Electric charge | The signed charge of a point source, or the net charge of the conducting shell. |
+| $\electric{Q}$ | $\unit{C}$ | Total charge | The charge of the point source, the sphere, a capacitor surface, the ring, or the rod. |
+| $\electric{Q}_{\mathrm{enc}}$ | $\unit{C}$ | Enclosed charge | The integral of the volume charge density within the Gaussian surface. |
+| $\electric{\varepsilon}_0$ | $\unit{F\,m^{-1}}$ | Vacuum permittivity | The constant in the SI form of Coulomb's law. |
+| $\mechanical{\vec F}$, $\mechanical{\vec F}_j$ | $\unit{N}$ | Force | The electric force on a charge. |
+| $\energy{U}$ | $\unit{J}$ | Potential energy | The Coulomb interaction energy of two point charges. |
+| $\energy{W}$, $\energy{W}_{\mathrm{int}}$ | $\unit{J}$ | Electrostatic energy | The energy of a continuous distribution or the pairwise interaction energy of point charges. |
+| $\electric{\vec E}$, $\electric{E}$, $\electric{E}_r$ | $\unit{N\,C^{-1}}$ | Electric field | The force per unit positive test charge, its magnitude, and its radial component. |
+| $f(\mechanical{r})$ | $\unit{N\,C^{-1}}$ | Radial field component | The radial component of a spherically or cylindrically symmetric field. |
+| $\electric{\phi}$, $\Delta\electric{\phi}$ | $\unit{V}$ | Electrostatic potential | The potential and the potential difference between two surfaces. |
+| $\electric{V}_0$ | $\unit{V\,m}$ | Screened-potential coefficient | The coefficient of $e^{-\kappa\mechanical{r}}/\mechanical{r}$ in the singular-potential example. |
+| $\kappa$ | $\unit{m^{-1}}$ | Screening parameter | The inverse length in the radial exponential. |
+| $\mechanical{\vec r}$, $\mechanical{\vec r}_i$, $\mechanical{\vec x}$, $\mechanical{\vec x}'$, $\mechanical{\vec x}_0$ | $\unit{m}$ | Field and source positions | The position vectors of the observation point and the source charges. |
+| $\mechanical{r}$, $\mechanical{r}'$ | $\unit{m}$ | Radial distance | The distance from the center or axis to the field or source point. |
+| $\mechanical{x}$, $\mechanical{z}$, $\mechanical{z}'$ | $\unit{m}$ | Cartesian coordinates | The coordinates of the field or source point. |
+| $\mechanical{s}$, $\mechanical{s}'$ | $\unit{m}$ | Cylindrical radius | The perpendicular distance from the symmetry axis. |
+| $\mechanical{R}$ | $\unit{m}$ | Radius | The radius of the Gaussian sphere, the charged sphere or cylinder, or the ring. |
+| $\mechanical{a}$, $\mechanical{b}$ | $\unit{m}$ | Inner and outer radii | The radii of the spherical capacitor or of the conducting shell. |
+| $\mechanical{d}$ | $\unit{m}$ | Plate separation | The distance between the parallel planes. |
+| $\mechanical{L}$ | $\unit{m}$ | Gaussian cylinder length | The length of the coaxial Gaussian cylinder. |
+| $A$ | $\unit{m^2}$ | Area | The end-face area of the Gaussian box or the plate area. |
+| $\mechanical{V}$ | $\unit{m^3}$ | Volume | The volume enclosed by the closed surface $S$. |
+| $\mechanical{\vec\ell}$, $\mechanical{\ell}$ | $\unit{m}$ | Line element and arc length | The tangent element of the loop or the arc length along the rod. |
+| $\electric{\rho}$ | $\unit{C\,m^{-3}}$ | Volume charge density | The charge per unit volume. |
+| $\electric{\rho}_0$ | $\unit{C\,m^{-3}}$ | Density amplitude | The constant density in the sphere or cylinder, or the amplitude of $\sqrt{\sin\theta'}$. |
+| $\electric{\sigma}$ | $\unit{C\,m^{-2}}$ | Surface charge density | The charge per unit area of a plane. |
+| $\electric{\lambda}$ | $\unit{C\,m^{-1}}$ | Linear charge density | The charge per unit arc length of the rod. |
+| $c$ | $\unit{C\,m^{-2}}$ | Trial density coefficient | The coefficient of the two delta factors in the ring density. |
+| $\circuit{C}$ | $\unit{F}$ | Capacitance | The magnitude of the charge on either conductor divided by their potential difference. |
+| $G(\mechanical{\vec x},\mechanical{\vec x}')$ | $\unit{m^{-1}}$ | Electrostatic Green's function | The free-space kernel normalized to a source of $-4\pi$ times the three-dimensional delta. |

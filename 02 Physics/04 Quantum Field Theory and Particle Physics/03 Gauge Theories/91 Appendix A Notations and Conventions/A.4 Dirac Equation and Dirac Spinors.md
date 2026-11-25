@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Dirac Equation and Dirac Spinors"
 source_pdf: "D:\\GitHub\\books\\dokumen.pub_gauge-theories-of-the-strong-weak-and-electromagnetic-interactions-second-edition-secondnbsped-9781400848225.pdf"
 source_page: "437"
@@ -51,16 +51,16 @@ $$
 It is frequently a convenience to work in a helicity basis in which the spinors $u_\lambda(\mechanical{p})$ are eigenstates of the operator $\gamma_5\not{\mechanical{s}}$ (defined for convenience as twice the helicity), with eigenvalues $\lambda=\pm1$ for spin aligned parallel or antiparallel to the direction of motion. The spinors are normalized such that
 
 $$
-\bar u_\lambda(\mechanical{p})u_\mu(\mechanical{p})=2\mechanical{m}\delta_{\lambda,\mu}, \tag{A.4.7}
+\bar u_\lambda(\mechanical{p})u_{\lambda'}(\mechanical{p})=2\mechanical{m}\delta_{\lambda,\lambda'}, \tag{A.4.7}
 $$
 
 $$
-\bar v_\lambda(\mechanical{p})v_\mu(\mechanical{p})=-2\mechanical{m}\delta_{\lambda,\mu}, \tag{A.4.8}
+\bar v_\lambda(\mechanical{p})v_{\lambda'}(\mechanical{p})=-2\mechanical{m}\delta_{\lambda,\lambda'}, \tag{A.4.8}
 $$
 
 $$
-\bar u_\lambda(\mechanical{p})v_\mu(\mechanical{p})=0=
-\bar v_\lambda(\mechanical{p})u_\mu(\mechanical{p}). \tag{A.4.9}
+\bar u_\lambda(\mechanical{p})v_{\lambda'}(\mechanical{p})=0=
+\bar v_\lambda(\mechanical{p})u_{\lambda'}(\mechanical{p}). \tag{A.4.9}
 $$
 
 The projection operators $\Lambda$ that occur in the evaluation of matrix elements are then
@@ -208,13 +208,13 @@ The Fierz reordering transformation [4] is of value in computing amplitudes repr
 
 $$
 \bar u_3\mathcal{O}_iu_2\bar u_1\mathcal{O}_iu_4
-=\sum_{j=1}^5\lambda_{ij}\bar u_1\mathcal{O}_ju_2\bar u_3\mathcal{O}_ju_4, \tag{A.4.29}
+=\sum_{j=1}^5C_{ij}\bar u_1\mathcal{O}_ju_2\bar u_3\mathcal{O}_ju_4, \tag{A.4.29}
 $$
 
 where
 
 $$
-\lambda_{ij}=\frac14
+C_{ij}=\frac14
 \begin{pmatrix}
 1&1&1&1&1\\
 4&-2&0&2&-4\\
@@ -238,9 +238,8 @@ $$
 | $\mechanical{m}$ | $\unit{\mathrm{GeV}}$ | Particle mass | The mass in the Dirac equation, with natural units. |
 | $\mechanical{p},\mechanical{\mathbf p},\lvert\mechanical{\mathbf p}\rvert$ | $\unit{\mathrm{GeV}}$ | Momentum | The four-momentum, spatial momentum, and its magnitude. |
 | $\energy{E}$ | $\unit{\mathrm{GeV}}$ | Particle energy | The positive energy used to normalize the spinors. |
-| $\mechanical{s}$ | $1$ | Spin state | The spin state used to label a particle spinor. |
-| $\mechanical{s}^{\mu},\mechanical{s},\mechanical{\hat{\mathbf s}}$ | $1$ | Polarization vector | The unit spin direction and its covariant four-vector. |
-| $\lambda,\lambda/2$ | $1$ | Helicity | The helicity eigenvalue is twice the particle helicity. |
+| $\mechanical{s}^{\mu},\mechanical{s},\mechanical{\hat{\mathbf s}}$ | $1$ | Polarization vector | The spin label of a particle spinor: the unit spin direction and its covariant four-vector. |
+| $\lambda,\lambda',\lambda/2$ | $1$ | Helicity | The helicity eigenvalue is twice the particle helicity. |
 | $u,\bar u,v,\bar v$ | $\unit{\mathrm{GeV}^{1/2}}$ | Free-particle spinor | The particle and antiparticle spinors with the stated mass normalization. |
 | $\chi_\lambda,\chi_\pm$ | $1$ | Spin wavefunction | The normalized two-component spin basis. |
 | $\mechanical{\theta}$ | $\unit{\mathrm{rad}}$ | Momentum angle | The angle between the momentum direction and the positive z-axis. |

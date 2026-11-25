@@ -7,12 +7,12 @@ title: "Hermitian operators and uncertainty derivations"
 
 ## Worked lecture material
 
-Let $a(x)$ and $b(x)$ be square-integrable on the interval and set $c(x)=a(x)+b(x)$. Expanding the norm of the sum gives
+Let $u(x)$ and $v(x)$ be square-integrable on the interval and set $w(x)=u(x)+v(x)$. Expanding the norm of the sum gives
 
 $$
-\int\lvert c(x)\rvert^2\,dx
-=\int\lvert a(x)\rvert^2\,dx+\int\lvert b(x)\rvert^2\,dx
-+2\operatorname{Re}\int a(x)^*b(x)\,dx.
+\int\lvert w(x)\rvert^2\,dx
+=\int\lvert u(x)\rvert^2\,dx+\int\lvert v(x)\rvert^2\,dx
++2\operatorname{Re}\int u(x)^*v(x)\,dx.
 $$
 
 The square terms converge by assumption. The cross term converges by the Schwarz inequality,
@@ -217,4 +217,9 @@ Kyle Kabasares, *Quantum Mechanics (Physics 137, UC Merced 2015)*.
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
 | $\hbar$ | $\unit{J\,s}$ | Reduced Planck constant | Planck constant divided by $2\pi$. |
-| $\Psi$ | $\unit{m^{-3/2}}$ in three dimensions | Position-space wavefunction | Probability amplitude for one particle. Its squared magnitude is a probability density. |
+| $\Psi$ | $\unit{m^{-1/2}}$ | Position-space wavefunction | Probability amplitude $\Psi(x,t)$ for one particle in one dimension. Its squared magnitude is a probability density. |
+| $x$ | $\unit{m}$ | Position | Position of the particle in one dimension. |
+| $\mechanical{p}$ | $\unit{kg\,m/s}$ | Momentum | Momentum of the particle. The operator is $\hat p=(\hbar/i)\,d/dx$. |
+| $q$ | — | Eigenvalue | Value of the observable $Q$ in a determinate state. Its unit is the unit of $Q$. |
+| $\sigma_Q$ | — | Standard deviation | Spread of the measured values of $Q$. Its unit is the unit of $Q$. |
+| $c_n$ | $1$ | Expansion coefficient | Amplitude of the eigenfunction $f_n$ in $\Psi$. $\lvert c_n\rvert^2$ is the probability of the outcome $q_n$. |

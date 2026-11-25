@@ -183,7 +183,7 @@ Masses $\mechanical{m}_A$ and $\mechanical{m}_B$ are attached to the walls by sp
 ![[Kyle Kabasares - Vibrations and Waves - Two masses coupled by springs.png|**Fig. 43** Two outer springs connect the masses to the walls, and a middle spring couples their motion.]]
 
 - **Very large $\mechanical{m}_A$.** In the infinite-mass limit one frequency tends to zero. With $A$ effectively fixed, $B$ oscillates at $\signal{\omega}_B=\sqrt{(\mechanical{k}+\mechanical{k}')/\mechanical{m}_B}$.
-- **No outer springs.** For $\mechanical{k}=0$ the center of mass has a zero-frequency translation mode. In the center-of-mass frame, $\mechanical{m}_A\mechanical{x}_A=-\mechanical{m}_B\mechanical{x}_B$ and $\mechanical{m}_A\ddot{\mechanical{x}}_A=-\mechanical{k}'(\mechanical{x}_A-\mechanical{x}_B)$. The nonzero frequency is $\sqrt{\mechanical{k}'/\mechanical{M}}$, with reduced mass $\mechanical{M}=\mechanical{m}_A\mechanical{m}_B/(\mechanical{m}_A+\mechanical{m}_B)$.
+- **No outer springs.** For $\mechanical{k}=0$ the center of mass has a zero-frequency translation mode. In the center-of-mass frame, $\mechanical{m}_A\mechanical{x}_A=-\mechanical{m}_B\mechanical{x}_B$ and $\mechanical{m}_A\ddot{\mechanical{x}}_A=-\mechanical{k}'(\mechanical{x}_A-\mechanical{x}_B)$. The nonzero frequency is $\sqrt{\mechanical{k}'/\mechanical{m}_{\mathrm{red}}}$, with reduced mass $\mechanical{m}_{\mathrm{red}}=\mechanical{m}_A\mechanical{m}_B/(\mechanical{m}_A+\mechanical{m}_B)$.
 - **No coupling spring.** For $\mechanical{k}'=0$, the independent frequencies are $\sqrt{\mechanical{k}/\mechanical{m}_A}$ and $\sqrt{\mechanical{k}/\mechanical{m}_B}$.
 
 For the general case,
@@ -224,14 +224,14 @@ The two squared frequencies are the roots of this quadratic in $\signal{\omega}^
 
 A mass of $0.2\,\unit{kg}$ hangs from a spring with stiffness $80\,\unit{N\,m^{-1}}$. The resistive force is $-\mechanical{b}\mechanical{v}$, with $\mechanical{b}=4\,\unit{N\,s\,m^{-1}}$. Part (a) asks for the free equation and its period. A crossed-out part (b) specifies a drive $\mechanical{F}_0\sin(\signal{\omega}\mechanical{t})$ with amplitude $2\,\unit{N}$ and writes the frequency as $30\,\unit{Hz}$. It asks for the steady amplitude.
 
-Measured from the hanging equilibrium, the free equation is $\ddot{\mechanical{x}}+(\mechanical{b}/\mechanical{m})\dot{\mechanical{x}}+(\mechanical{k}/\mechanical{m})\mechanical{x}=0$. The squared damped frequency is $\signal{\omega}_0^2-\signal{\gamma}^2/4=300\,\unit{s^{-2}}$, giving $\signal{T}=2\pi/\signal{\omega}\simeq0.36\,\unit{s}$. This grouping of the factor $1/4$ gives the period boxed in the notes.
+Measured from the hanging equilibrium, the free equation is $\ddot{\mechanical{x}}+(\mechanical{b}/\mechanical{m})\dot{\mechanical{x}}+(\mechanical{k}/\mechanical{m})\mechanical{x}=0$. The squared damped frequency is $\signal{\omega}_0^2-\signal{\gamma}^2/4=300\,\unit{s^{-2}}$, giving $\signal{T}=2\pi/\signal{\omega}_d\simeq0.36\,\unit{s}$. This grouping of the factor $1/4$ gives the period boxed in the notes.
 
 ##### Driven-oscillator formula review
 
 - **Undamped particular solution.** $\mechanical{x}=C\cos(\signal{\omega}\mechanical{t})$, with $C=(\mechanical{F}_0/\mechanical{m})/(\signal{\omega}_0^2-\signal{\omega}^2)$. With a positive amplitude $\lvert C\rvert$, use phase $0$ below $\signal{\omega}_0$ and $\pi$ above it.
 - **Damped steady state.** $\mechanical{x}=\mechanical{A}\cos(\signal{\omega}\mechanical{t}-\signal{\delta})$, with the amplitude and phase lag on [[#Forced oscillations with velocity damping|the section on Forced oscillations with velocity damping]].
 - **Undamped response from rest at equilibrium.** $\mechanical{x}=C[\cos(\signal{\omega}\mechanical{t})-\cos(\signal{\omega}_0\mechanical{t})]$.
-- **Underdamped response with a transient.** $\mechanical{x}=\mechanical{B}e^{-\signal{\gamma}\mechanical{t}/2}\cos(\signal{\omega}_1\mechanical{t}+\signal{\beta})+\mechanical{A}\cos(\signal{\omega}\mechanical{t}-\signal{\delta})$. The free angular frequency is $\signal{\omega}_1=\sqrt{\signal{\omega}_0^2-\signal{\gamma}^2/4}$, with the square root supplied by the earlier derivation.
+- **Underdamped response with a transient.** $\mechanical{x}=\mechanical{B}e^{-\signal{\gamma}\mechanical{t}/2}\cos(\signal{\omega}_d\mechanical{t}+\signal{\beta})+\mechanical{A}\cos(\signal{\omega}\mechanical{t}-\signal{\delta})$. The free damped angular frequency is $\signal{\omega}_d=\sqrt{\signal{\omega}_0^2-\signal{\gamma}^2/4}$, with the square root supplied by the earlier derivation.
 
 ##### Transverse waves and string dynamics
 
@@ -299,29 +299,29 @@ $$
 \mechanical{y}(\mechanical{x})\sin\left(\frac{n\pi\mechanical{x}}{\mechanical{L}}\right)d\mechanical{x}.
 $$
 
-The page recalls the ramp $\mechanical{y}=k\mechanical{x}$ with endpoint values $0$ and $k\mechanical{L}$. It also writes a general periodic expansion with both sines and cosines. The ramp's half-range sine coefficients are calculated on [[Fixed-string normal modes and Fourier coefficients#Fourier series of the string profile|the section on Fourier series of the string profile]].
+The page recalls the ramp $\mechanical{y}=\kappa\mechanical{x}$ with endpoint values $0$ and $\kappa\mechanical{L}$. It also writes a general periodic expansion with both sines and cosines. The ramp's half-range sine coefficients are calculated on [[Fixed-string normal modes and Fourier coefficients#Fourier series of the string profile|the section on Fourier series of the string profile]].
 
 ##### Fourier sine series of a ramp
 
-For $\mechanical{y}(\mechanical{x})=k\mechanical{x}$ on $0<\mechanical{x}<\mechanical{L}$, put $u=\mechanical{x}$ and $dv=\sin(n\pi\mechanical{x}/\mechanical{L})\,d\mechanical{x}$ in integration by parts. Then
+For $\mechanical{y}(\mechanical{x})=\kappa\mechanical{x}$ on $0<\mechanical{x}<\mechanical{L}$, put $u=\mechanical{x}$ and $dv=\sin(n\pi\mechanical{x}/\mechanical{L})\,d\mechanical{x}$ in integration by parts. Then
 
 $$
 \begin{aligned}
 \mechanical{B}_n
-&=\frac{2k}{\mechanical{L}}\int_0^{\mechanical{L}}\mechanical{x}\sin\left(\frac{n\pi\mechanical{x}}{\mechanical{L}}\right)d\mechanical{x}\\
-&=\frac{2k}{\mechanical{L}}\left\{
+&=\frac{2\kappa}{\mechanical{L}}\int_0^{\mechanical{L}}\mechanical{x}\sin\left(\frac{n\pi\mechanical{x}}{\mechanical{L}}\right)d\mechanical{x}\\
+&=\frac{2\kappa}{\mechanical{L}}\left\{
 \left[-\frac{\mechanical{x}\mechanical{L}}{n\pi}\cos\left(\frac{n\pi\mechanical{x}}{\mechanical{L}}\right)\right]_0^{\mechanical{L}}
 +\frac{\mechanical{L}}{n\pi}\int_0^{\mechanical{L}}\cos\left(\frac{n\pi\mechanical{x}}{\mechanical{L}}\right)d\mechanical{x}
 \right\}.
 \end{aligned}
 $$
 
-In the last integral, $s=n\pi\mechanical{x}/\mechanical{L}$ gives $d\mechanical{x}=(\mechanical{L}/n\pi)\,ds$. The integral is proportional to $\sin(n\pi)-\sin 0=0$. The boundary term gives $\mechanical{B}_n=-2k\mechanical{L}\cos(n\pi)/(n\pi)$, so
+In the last integral, $s=n\pi\mechanical{x}/\mechanical{L}$ gives $d\mechanical{x}=(\mechanical{L}/n\pi)\,ds$. The integral is proportional to $\sin(n\pi)-\sin 0=0$. The boundary term gives $\mechanical{B}_n=-2\kappa\mechanical{L}\cos(n\pi)/(n\pi)$, so
 
 $$
-k\mechanical{x}
+\kappa\mechanical{x}
 =\sum_{n=1}^\infty
--\frac{2k\mechanical{L}}{n\pi}\cos(n\pi)
+-\frac{2\kappa\mechanical{L}}{n\pi}\cos(n\pi)
 \sin\left(\frac{n\pi\mechanical{x}}{\mechanical{L}}\right),
 \qquad 0<\mechanical{x}<\mechanical{L}.
 $$
@@ -420,15 +420,29 @@ Kyle Kabasares, *Vibrations and Waves (Physics 122, UC Merced 2015)*.
 
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
-| $\mechanical{F}$ | $\unit{N}$ | Restoring force | Force that vanishes at equilibrium. |
+| $\mechanical{F}_0$ | $\unit{N}$ | Drive amplitude | The amplitude of the sinusoidal driving force. |
+| $\mechanical{F}_x$, $\mechanical{F}_y$ | $\unit{N}$ | Force components | The net force components on a short string element. |
 | $\mechanical{m}$ | $\unit{kg}$ | Mass | Inertial parameter in the equation of motion. |
+| $\mechanical{m}_A$, $\mechanical{m}_B$ | $\unit{kg}$ | Coupled masses | The two masses of the coupled oscillator. |
+| $\mechanical{k}$ | $\unit{N\,m^{-1}}$ | Spring stiffness | Spring constant of the oscillator, or of each outer spring. |
+| $\mechanical{x}$, $\mechanical{x}_A$, $\mechanical{x}_B$ | $\unit{m}$ | Displacement or position | The oscillator displacement, the displacements of the coupled masses, or the position along the string. |
+| $\mechanical{A}$, $\mechanical{B}$, $C$ | $\unit{m}$ | Oscillation amplitudes | The steady or normal-mode amplitudes, the transient amplitude, and the signed cosine coefficient. |
+| $\mechanical{L}$ | $\unit{m}$ | String length | The distance between the fixed ends of the string. |
+| $\mechanical{M}$ | $\unit{kg}$ | String mass | The total mass of the string. |
+| $\mechanical{v}$ | $\unit{m\,s^{-1}}$ | Wave speed | The propagation speed $\sqrt{\mechanical{T}/\mechanical{\mu}}$ on the string. |
+| $\mechanical{A}_n$, $\mechanical{B}_n$ | $\unit{m}$ | Mode amplitudes | The amplitude of mode $n$ and its sine coefficient at a fixed time. |
+| $\energy{E}_n$, $\energy{E}_{\mathrm{tot}}$ | $\unit{J}$ | Mode energy | The energy of mode $n$ and the total energy of the superposition. |
+| $\kappa$ | 1 | Ramp slope | The slope of the ramp profile $\mechanical{y}=\kappa\mechanical{x}$. |
+| $\signal{T}$ | $\unit{s}$ | Period | The period of the free damped oscillation. |
+| $\signal{f}$, $\signal{f}_1$ | $\unit{Hz}$ | Frequency | The number of cycles per second, also for the fundamental string mode. |
 | $\mechanical{t}$ | $\unit{s}$ | Time | Independent variable for the motion. |
 | $\signal{\omega}$ | $\unit{rad\,s^{-1}}$ | Angular frequency | Rate of phase accumulation. |
 | $\signal{\phi}$ | $\unit{rad}$ | Phase constant | Phase at the initial time. |
 | $\mechanical{b}$ | $\unit{kg\,s^{-1}}$ | Damping coefficient | Proportionality constant between drag and velocity. |
 | $\signal{\gamma}$ | $\unit{s^{-1}}$ | Damping rate | Ratio of the velocity drag coefficient to mass. |
 | $\signal{\omega}_0$ | $\unit{rad\,s^{-1}}$ | Undamped natural angular frequency | Angular frequency in the absence of drag. |
-| $\signal{\beta}$ | $\unit{s^{-1}}$ | Overdamped rate offset | Difference between either exponential decay rate and the critical rate $\signal{\gamma}/2$ in magnitude. |
+| $\signal{\omega}_d$ | $\unit{rad\,s^{-1}}$ | Damped angular frequency | Angular frequency $\sqrt{\signal{\omega}_0^2-\signal{\gamma}^2/4}$ of the free damped motion. |
+| $\signal{\beta}$ | $\unit{rad}$ | Transient phase | Phase constant of the decaying free oscillation. |
 | $\signal{\alpha}$ | $\unit{rad}$ | Response phase | Phase of the displacement relative to the driving cosine. |
 | $\signal{\delta}$ | $\unit{rad}$ | Phase lag | Angle by which the steady displacement lags the applied force. |
 | $\signal{\lambda}$ | $\unit{m}$ | Wavelength | Spatial distance over one wave cycle. |
@@ -437,7 +451,5 @@ Kyle Kabasares, *Vibrations and Waves (Physics 122, UC Merced 2015)*.
 | $\mechanical{T}$ | $\unit{N}$ | String tension | Magnitude of the force along the string, distinct from the period $\signal{T}$. |
 | $\mechanical{\theta}$ | $\unit{rad}$ | Local tangent angle | Angle between the string and the equilibrium direction. |
 | $\signal{\omega}_n$ | $\unit{rad\,s^{-1}}$ | String mode angular frequency | Discrete angular frequency selected by the fixed endpoints. |
-| $\mechanical{b}$ | $\unit{m}$ | Pulse height and half-width | Peak displacement and distance from the peak to a half-height point in this example. |
-| $d$ | $\unit{m^4\,s^{-2}}$ | String dispersion coefficient | Multiplies the squared angular wave number in the phase speed squared. |
 | $\mechanical{k}'$ | $\unit{N\,m^{-1}}$ | Coupling stiffness | Spring constant of the middle spring. |
-| $\mechanical{M}$ | $\unit{kg}$ | Reduced mass | Effective mass for relative motion of the isolated pair. |
+| $\mechanical{m}_{\mathrm{red}}$ | $\unit{kg}$ | Reduced mass | Effective mass for the relative motion of the two coupled masses. |

@@ -207,18 +207,17 @@ Kyle Kabasares, *Extragalactic Astrophysics (Physics 241C, UC Irvine 2018)*.
 
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
-| $V$ | $\unit{m^3}$ | Gas volume | Volume used to convert emissivity to luminosity. |
-| $\mechanical{R}$, $\mechanical{R}_{\mathrm e}$ | $\unit{kpc}$ | Projected and effective radius | The profile coordinate is the isophote's semimajor axis. The effective radius encloses half the component's projected light. |
-| $n$ | $1$ | Sérsic index | Shape parameter of the profile, with $n=4$ for the de Vaucouleurs law. |
-| $\energy{L}$ | $\unit{W}$ | Total luminosity | Integral of the surface luminosity density over projected area. |
+| $\mechanical{V}$ | $\unit{m^3}$ | Galaxy volume | Volume of the spherical model galaxy. |
+| $\mechanical{R}$ | $\unit{kpc}$ | Galaxy radius | Radius of the spherical model galaxy. |
+| $\energy{L}$ | $\unit{W}$ | Galaxy luminosity | Luminosity assumed proportional to halo mass in Schechter's model. |
+| $\mechanical{M}$ | $\unit{kg}$ | Halo mass | Mass variable of the halo mass function. |
 | $\mechanical{v}_{\mathrm c}$ | $\unit{m\,s^{-1}}$ | Circular speed | Speed on a circular orbit at the specified radius. |
-| $\mechanical{r}$ | $\unit{m}$ | Spherical radius | Three-dimensional distance from the center. |
-| $\Delta$ | $1$ | Overdensity threshold | Convention for defining an outer halo radius. |
-| $c$ | $1$ | Halo concentration | Ratio of the outer halo reference radius to the scale radius. |
-| $\alpha$ | $1$ | Tully–Fisher slope | Power-law exponent relating luminosity to maximum rotation speed. |
-| $p$ | $1$ | Inner deprojection slope | Exponent of the prefactor in the approximate spatial density. |
-| $\alpha$ | $1$ | Schechter faint-end slope | Power-law index at luminosities small compared with $\energy{L}_*$. |
-| $C$ | $\unit{kg^{-1}}$ | Exponential cutoff coefficient | Reciprocal of the mass scale in the special-case halo mass function. |
+| $\mechanical{r}$ | $\unit{m}$ | Stellar separation | Distance between the incident star and the target star. |
+| $\mechanical{m}$ | $\unit{kg}$ | Stellar mass | Common mass of the two stars in the encounter. |
+| $\mechanical{v}$ | $\unit{m\,s^{-1}}$ | Stellar speed | Characteristic speed of the stars and speed of the incident star. |
+| $\mechanical{x}$ | $\unit{m}$ | Position along the trajectory | Distance from the point of closest approach along the straight path. |
+| $\theta$ | $\unit{rad}$ | Encounter angle | Angle between the line joining the stars and the perpendicular at closest approach. |
+| $\alpha$ | $1$ | Schechter faint-end slope | Adjustable exponent that replaces the fixed halo-mass-function exponent. |
 | $\mechanical{R}_*$ | $\unit{m}$ | Stellar radius | Common radius of the stars in the collision estimate. |
 | $\mechanical{\sigma}_{\mathrm{direct}}$ | $\unit{m^2}$ | Direct-collision cross section | Geometric target area used in the lecture. |
 | $N$ | $1$ | Number of stars | Total stellar population of the model galaxy. |
@@ -238,6 +237,3 @@ Kyle Kabasares, *Extragalactic Astrophysics (Physics 241C, UC Irvine 2018)*.
 | $\ln\Lambda$ | $1$ | Coulomb logarithm | Logarithm of the ratio of the upper and lower impact-parameter cutoffs. |
 | $N_{\mathrm{relax}}$ | $1$ | Number of crossings for relaxation | Crossing count needed for the accumulated mean-square velocity change to reach the typical squared speed. |
 | $\mechanical{t}_{\mathrm{relax}}$ | $\unit{s}$ | Two-body relaxation time | Time for accumulated stellar encounters to change a typical orbit substantially. |
-| $\mechanical{\sigma}$ | $\unit{m\,s^{-1}}$ | Isothermal velocity dispersion | Constant one-dimensional velocity dispersion. |
-| $\delta$ | $1$ | Global velocity anisotropy | One minus the ratio of integrated vertical to equatorial random-motion stress. |
-| $a$, $b$ | $1$ | Fundamental-plane coefficients | Logarithmic slopes with respect to velocity dispersion and effective intensity. |

@@ -248,13 +248,36 @@ Kyle Kabasares, *Radiative Transfer in Astrophysics (Physics 240C, UC Irvine 201
 
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
-| $\energy{L}$ | $\unit{erg\cdot s^{-1}}$ | Luminosity | Total radiant energy emitted per unit time. |
-| $\energy{E}$ | $\unit{erg}$ | Radiant energy | Energy emitted by the source. |
-| $t$ | $\unit{s}$ | Time | Elapsed time used to define the emission rate. |
-| $\alpha$ | $1$ | Fine-structure constant | Dimensionless electromagnetic coupling constant. |
-| $\energy{S}$ | $\unit{erg\cdot s^{-1}\cdot cm^{-2}}$ | Incident energy flux | Electromagnetic energy incident per unit time and area. |
-| $\phi(\signal{\nu})$ | $\unit{Hz^{-1}}$ | Normalized line profile | Frequency distribution of a line, normalized to unit integral. |
+| $\vec{\mechanical{r}}$, $\vec{\mechanical{r}}_0$ | $\unit{cm}$ | Electron displacement | Displacement of the bound electron and its initial amplitude. |
+| $\vec{\mechanical{v}}$ | $\unit{cm\,s^{-1}}$ | Electron velocity | Velocity of the oscillating electron. |
+| $\vec{\mechanical{a}}$ | $\unit{cm\,s^{-2}}$ | Electron acceleration | Acceleration that enters Larmor's formula. |
+| $\vec{\mechanical{F}}_{\mathrm{rad}}$ | $\unit{dyn}$ | Radiation reaction force | Abraham–Lorentz force on the radiating electron. |
+| $\mechanical{m}_e$ | $\unit{g}$ | Electron mass | Mass of the bound electron. |
+| $\electric{e}$ | $\unit{statC}$ | Elementary charge | Charge of the electron in Gaussian units. |
+| $c$ | $\unit{cm\,s^{-1}}$ | Speed of light | Speed of light in vacuum. |
+| $\signal{\omega}_0$, $\signal{\nu}_0$ | $\unit{s^{-1}}$, $\unit{Hz}$ | Resonance frequency | Natural angular frequency and frequency of the oscillator. |
+| $\signal{\omega}$, $\signal{\nu}$ | $\unit{s^{-1}}$, $\unit{Hz}$ | Driving frequency | Angular frequency and frequency of the incident radiation. |
+| $\signal{\lambda}_0$ | $\unit{\mathring{A}}$ | Line wavelength | Rest wavelength of the transition. |
+| $T_0$ | $\unit{s}$ | Oscillation period | Duration of one cycle of the oscillator. |
+| $t$ | $\unit{s}$ | Time | Time coordinate of the motion. |
 | $\Gamma$ | $\unit{s^{-1}}$ | Radiative damping rate | Energy decay rate in the weakly damped classical oscillator model. |
-| $f_{\ell\to u}$ | — | Absorption oscillator strength | Scales the integrated classical cross section for a transition from the lower to the upper level. |
-| $f_{u\to\ell}$ | — | Emission oscillator strength | Signed oscillator strength for stimulated emission. |
-| $b$ | $\unit{cm\,s^{-1}}$ | Doppler parameter | Thermal speed scale for the line profile. |
+| $\energy{L}$ | $\unit{erg\cdot s^{-1}}$ | Radiated power | Power radiated by the accelerated electron. |
+| $\vec{\electric{E}}_0$, $\vec{\electric{E}}_{\mathrm{rad}}$ | $\unit{statV\,cm^{-1}}$ | Electric field | Amplitude of the incident field and the radiated field. |
+| $\energy{S}$ | $\unit{erg\cdot s^{-1}\cdot cm^{-2}}$ | Incident energy flux | Time-averaged Poynting flux of the incident wave. |
+| $\mechanical{\sigma}$ | $\unit{cm^2}$ | Absorption cross section | Ratio of mean radiated power to incident energy flux. |
+| $\mechanical{\sigma}_{\mathrm{classical}}$, $\mechanical{\sigma}_{\ell\to u}$, $\mechanical{\sigma}_{u\to\ell}$ | $\unit{cm^2\,Hz}$ | Integrated cross section | Frequency-integrated cross section of the classical oscillator or of a transition. |
+| $x$ | 1 | Normalized frequency offset | Frequency offset from resonance in units of $\Gamma/(4\pi)$. |
+| $f_{\ell\to u}$ | 1 | Absorption oscillator strength | Scales the integrated classical cross section for a transition from the lower to the upper level. |
+| $f_{u\to\ell}$ | 1 | Emission oscillator strength | Signed oscillator strength for stimulated emission. |
+| $\signal{\alpha}_{\signal{\nu}}$ | $\unit{cm^{-1}}$ | Absorption coefficient | Photoabsorption or stimulated-emission contribution per unit path length. |
+| $n_\ell$, $n_u$ | $\unit{cm^{-3}}$ | Level populations | Number densities of atoms in the lower and upper levels. |
+| $\phi(\signal{\nu})$ | $\unit{Hz^{-1}}$ | Normalized line profile | Frequency distribution of a line, normalized to unit integral. |
+| $\signal{\nu}_{\ell u}$ | $\unit{Hz}$ | Transition frequency | Frequency of the line between the two levels. |
+| $h$ | $\unit{erg\,s}$ | Planck constant | Relates photon energy to frequency. |
+| $B_{\ell\to u}$, $B_{u\to\ell}$ | $\unit{cm^2\,erg^{-1}\,s^{-1}\,sr\,Hz}$ | Einstein $B$ coefficients | Coefficients for absorption and stimulated emission. |
+| $A_{u\to\ell}$ | $\unit{s^{-1}}$ | Einstein $A$ coefficient | Rate of spontaneous emission from the upper level. |
+| $g_\ell$, $g_u$ | 1 | Statistical weights | Degeneracies of the lower and upper levels. |
+| $\energy{E}_\ell$, $\energy{E}_u$ | $\unit{erg}$ | Level energies | Energies of the lower and upper levels. |
+| $\electric{\boldsymbol{d}}$ | $\unit{statC\,cm}$ | Electric dipole moment | Dipole operator of the atomic electrons. |
+| $n_\ell$, $n_u$ | 1 | Principal quantum numbers | Principal quantum numbers of the lower and upper levels in Kramers' formula. |
+| $g_{\mathrm{I}}$ | 1 | Gaunt factor | Quantum correction factor in Kramers' approximation. |

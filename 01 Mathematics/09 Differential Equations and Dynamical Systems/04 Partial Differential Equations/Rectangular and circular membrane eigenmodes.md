@@ -968,11 +968,10 @@ Kyle Kabasares, *Partial Differential Equations (Math 126, UC Merced 2017)*.
 
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
-| $\mechanical{u}$ | $\unit{Pa}$ | Pressure | Unknown pressure in the divergence-form example. |
+| $\mechanical{u}$ | $\unit{m}$ | Membrane displacement | Transverse displacement of the membrane as a function of position and time. |
 | $\thermal{u}$ | $\unit{K}$ | Temperature | Temperature in the rod as a function of position and time. |
 | $\thermal{k}$ | $\unit{m^2/s}$ | Thermal diffusivity | Ratio of conductivity to volumetric heat capacity. |
-| $\mechanical{c}$, $\mechanical{v}$ | $\unit{m\,s^{-1}}$ | Wave speed | Constant propagation speed in the scalar or vector wave equation. |
-| $\mechanical{\beta}$ | $\unit{s^{-1}}$ | Velocity damping coefficient | Coefficient of the transverse velocity in the damped wave equation. |
+| $\mechanical{c}$ | $\unit{m\,s^{-1}}$ | Wave speed | Constant propagation speed in the membrane wave equation. |
 | $L$, $H$ | $\unit{m}$ | Rectangular membrane dimensions | Length in the $x$ direction and height in the $y$ direction. |
 | $\mechanical{\alpha}(x,y)$ | $\unit{m}$ | Initial membrane displacement | Transverse displacement of the membrane at $t=0$. |
 | $\mechanical{\beta}(x,y)$ | $\unit{m\,s^{-1}}$ | Initial membrane velocity | Transverse velocity of the membrane at $t=0$. |

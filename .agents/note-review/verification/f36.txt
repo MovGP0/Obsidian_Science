@@ -1,0 +1,43 @@
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/03 Electrodynamics, light and relativity/03.06 Experiments Designed to Detect the Stationary Ether.md
+- FIXED | Undefined frames F, F′ in length-contraction paragraph after Eq. (3.27) | Replaced F′ and F with O′ and O in that paragraph
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/03 Electrodynamics, light and relativity/03.07 The Trouton-Noble Experiment.md
+- FIXED | FitzGerald proposed length contraction in 1889, not 1892 | Changed 1892 to 1889
+- FIXED | Energy "remains the same" while C rises by γ and volume shrinks is inconsistent | Rewrote sentence: at fixed charge Q the longitudinal field is unchanged, volume shrinks by 1/γ, so Q²/2C falls by 1/γ; added Q to table
+- FIXED | Torque sign T=+dE/dθ and sin θ vs sin² θ in E_m | E_m now uses sin²θ and T=-dE_m/dθ (agrees with printed RHS of Eq. 3.29); updated source-convention callout
+- FIXED | V used for both volume (caption) and voltage (body) | Renamed integration volume to dτ in caption text and table row
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/03 Electrodynamics, light and relativity/03.09 Experiments on the Unipolar Induction.md
+- UNSURE | E used for both field vector and emf in Figs. 3.9–3.10 | Clash is real but the emf symbol E exists only as text labels inside the SVG attachments (outside batch scope); note text never uses scalar emf E, so renaming only the table row would mismatch the figures; needs an SVG label change to ℰ
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/04 The special theory of relativity and its empirical foundations/04.01 Einstein's Motivations for a Theory of Relativity.md
+- FIXED | Double-star evidence placed inside the 1905 account | Marked it as later writings (1916 popular monograph) and stated that the 1905 paper does not cite it and De Sitter's argument dates from 1913
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/04 The special theory of relativity and its empirical foundations/04.02 The Lorentz Transformations.md
+- FIXED | Clock offset at fixed t is γvx/c², not vx/c² | Changed amount to γvx/c² at the same time t of frame O, from Eq. (4.7)
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/04 The special theory of relativity and its empirical foundations/04.03.01 The Doppler Effect in the STR.md
+- FIXED | "All the experiments use a moving source" is false (Mössbauer rotor, moving absorber) | Restricted statement to canal-ray experiments and added the rotor experiments (Hay et al. 1960, Kündig 1963) with moving receiver agreeing with STR
+- PARTLY | Eq. (4.21) and (4.22) are different geometries, so no contradiction; Ives–Stilwell measured forward/backward lines | Core point right, but claim swaps frames: Eq. (4.21) is 90° in source frame and Eq. (4.22) is reception at 90° in observer frame; replaced "directly contradicts" with "appears to contradict" plus that geometry explanation and the Ives–Stilwell remark
+- FIXED | φ=0 comparison of Eqs. (4.18) and (4.20) hides opposite sign conventions | Added the sign convention of v in each equation and that the same sense of motion gives the same result
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/04 The special theory of relativity and its empirical foundations/04.03.02 The Unipolar Phenomena and the STR.md
+- FIXED | v in E=v×B is the conductor velocity in the frame where B is static, not relative velocity | Replaced "instantaneous relative velocity" with velocity of the charge in the lab frame where B is static, noting co-rotation; updated table row
+- FIXED | Typo "hidden under a several rug" | Changed to "swept under the rug"
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/04 The special theory of relativity and its empirical foundations/04.03.04 The Empirical Status of the Light Hypothesis.md
+- FIXED | vδt=vx/c² has a unit mismatch | Changed text to (v/c)δt=vx/c² and updated the callout to say the text uses the corrected duration
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/05 Simultaneity and the synchronisation of time/05.01 Introduction.md
+- FIXED | CMB uniformity "a part in a million" is wrong | Changed to about a part in 10⁵ after removal of the observer dipole of about 10⁻³
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/05 Simultaneity and the synchronisation of time/05.03 Einstein's Discussion of Simultaneity in the STR.md
+- FIXED | STR does not predict simultaneous arrival at O′; B flash arrives first | Source argument retained as the author's thesis; added a "Prediction of the STR" note callout giving the γvL/c² emission difference and that O′ receives B first; added γ to table
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/05 Simultaneity and the synchronisation of time/05.04 Einstein's Fallacy on the Relativity of Simultaneity.md
+- FIXED | Boxed note states the refuted "light hypothesis is inconsistent" as fact | Relabelled the box as "Source claim" and appended the Lorentz-transformation rebuttal (train-frame emission difference γvL/c², B earlier); added L and γ to table
+- FIXED | Distant wall arrivals are not "untestable" | Added to Interpretation and checks that local detectors and clocks record each arrival and only the time order of spacelike events is frame-dependent
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/05 Simultaneity and the synchronisation of time/05.05 H. Bergson's Critique of Einstein's Relativity of Simultaneity.md
+- FIXED | No written rebuttal of Bergson is false | Replaced the sentence with the Becquerel and Metz rebuttals (1922–1924) and Bergson's 1923 second-edition appendices; attributed the "flawless" judgment to the source
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/05 Simultaneity and the synchronisation of time/05.06 The Synchronisation of Time.md
+- FIXED | t_A0=(t_A2-t_A1)/2 is half the delay, not a midpoint time | Renamed to τ described as half of the two-way delay in text and table
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/06 The Equivalence Principles/06.01 The Universality of Free Fall.md
+- FIXED | UFF precision 10⁻¹³–10⁻¹⁴ is outdated | Updated to about 10⁻¹⁵ with MICROSCOPE 2022 η(Ti,Pt)=(-1.5±2.7)×10⁻¹⁵; updated table row and added η
+- FIXED | Active vs passive gravitational mass conflated | Distinguished m_a and m_p, stated that WEP and UFF concern m_p, linked 06.07.04, and made the WEP sentence say passive mass; added table row
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/06 The Equivalence Principles/06.02 The Equivalence of Inertia and Mass - The Weak Equivalence Principle.md
+- FIXED | WEP does not imply energy sources gravity (that is active = passive mass) | Rewrote the parenthesis: WEP equates m_i with passive mass; energy as a source needs active = passive equality, tested by Kreuzer [21] and lunar laser ranging
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/06 The Equivalence Principles/06.03 Galileo's Thought Experiment Proof of the UFF.md
+- FIXED | "Nobody seems to have found any defect" ignores literature | Replaced with a sentence citing analyses by J. R. Brown (1991), J. D. Norton (1996) and T. Gendler (1998)
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/06 The Equivalence Principles/06.04 Einstein's Equivalence Principle.md
+- FIXED | Inertial force is opposite to the frame's acceleration, not to its motion | Changed "direction of motion" to "direction of the frame's acceleration"
+- PARTLY | g′ in table is never used | Text does not use it, but Fig. 6.2 labels g′ = −a; kept the row and changed its description to reference the Fig. 6.2 label

@@ -1,0 +1,43 @@
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/01 The paradigm of Cosmic Relativity and its evidence/01 References.md
+- FIXED | Ref. 10 is Lyttleton and Bondi, Proc. R. Soc. Lond. A | Corrected author spelling, title ("On the physical consequences ..."), and journal to Proc. R. Soc. Lond. A 252.
+- FIXED | Ref. 4 Collected Papers vol. 13 published 2012, not 1922 | Changed publication year to 2012 and noted the original 1922 comment date.
+- FIXED | Ref. 16 year 2919 is impossible | Changed to 2019 (Physics News vol. 49) and replaced the callout with a note on the typo.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/01 The paradigm of Cosmic Relativity and its evidence/01.05 The Cosmic Gravitational Metric and the Potentials.md
+- FIXED | Eqs. (1.4)-(1.6) transform in the wrong direction; comoving clock shows no dilation | Added to the source callout the correct moving-frame metric with cross term +v and the comoving-clock consequence of the printed Eq. (1.6).
+- FIXED | curl of A_g=-v/c is -2Omega/c, not -2Omega | Added this dimensional inconsistency to the source callout.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/01 The paradigm of Cosmic Relativity and its evidence/01.06 A Phenomenological Assertion.md
+- FIXED | sqrt(1-v^2/Phi_U) called Lorentz factor; it is the reciprocal | Added a source-terminology callout stating gamma=1/sqrt(1-v^2/c^2) and that the root is the reciprocal Lorentz (time-dilation) factor.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/01 The paradigm of Cosmic Relativity and its evidence/01.07 Summary of the Primary Results of Cosmic Relativity.md
+- FIXED | Eq. (1.17) sign (inward vs outward) and missing factor c | Added a source callout showing -m v x Omega = -m Omega^2 r (inward) and the missing factor c in m_g dA/dt.
+- FIXED | Coriolis force sign opposite to standard | Added to the same callout that m_g u x B_g = +2m Omega x u versus standard -2m Omega x u.
+- FIXED | Outer third has 19/8 (about 2.4) times the matter, not 4 | Added to the callout the volume ratio 19/8 and the potential share 5/9.
+- FIXED | Eq. (1.19) omits Maslov phase; standard resolution | Added to Interpretation the condition Phi/Phi_0=n+1/2 with the Maslov phase and the Zeeman pi giving spin-split levels.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/01 The paradigm of Cosmic Relativity and its evidence/01.08 The Universal Clock of Cosmic Relativity.md
+- FIXED | CMB isotropy overstated as better than 1e-6 | Added a callout with dipole about 1.2e-3 and intrinsic anisotropies about 1e-5.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/02 Space and time of our fundamental theories/02 References.md
+- FIXED | Ref. 3 book title scrambled and Einstein misspelled | Changed to *Einstein, Tagore and the Nature of Reality*, ed. P. Ghose, with the Routledge series named after the title.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/02 Space and time of our fundamental theories/02.01 Newton's Space and Time.md
+- FIXED | Scholium follows the Definitions and precedes the Axioms, outside Book 1 | Reworded the sentence to place the Scholium after the definitions, before the axioms and before Book 1.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/02 Space and time of our fundamental theories/02.04 Space and Time in Einstein's Relativity.md
+- FIXED | Interval invariance does not follow from light connecting any two events | Added to Interpretation that spacelike events cannot be joined by light and null-cone invariance gives ds'^2=lambda ds^2; lambda=1 needs isotropy and group property; added lambda to the table.
+- FIXED | Local-time term vx/c^2 is a synchronisation offset, not a rate | Added to Interpretation that it is relativity of simultaneity and the rate effect is gamma; added gamma to the table.
+- FIXED | Barnett quotation: "are wont to look at", "logically founded" | Corrected both words in the quotation.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/02 Space and time of our fundamental theories/02.06 Space and Time in the Factual Universe.md
+- FIXED | CMB fluctuations are about 1e-5, not a part in a million | Added a callout with Delta T/T about 1e-5 and the dipole about 1e-3.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/02 Space and time of our fundamental theories/02.08 Space, Time, and the Principle of Relativity.md
+- FIXED | Quotation must read "every other system K′" | Changed K to K′ in the quotation.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/03 Electrodynamics, light and relativity/03.00 Electrodynamics, Light and Relativity.md
+- FIXED | "Kohlrauch" should be Kohlrausch | Corrected the spelling in the Maxwell quotation.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/03 Electrodynamics, light and relativity/03.01.01 Roemer's Method.md
+- FIXED | 30 s with c=vT/30 s gives 1.5e8 m/s; as Delta T it gives about 3.1e8 m/s | Stated that 30 s is the receding-approaching difference Delta T, used c=2vT/Delta T (about 3.1e8 m/s), and noted the one-sided shift is about 15 s.
+- FIXED | "average maximum delay" is the one-sided shift vT/c, not Delta T | Renamed it the maximum shift of one observed period, vT/c.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/03 Electrodynamics, light and relativity/03.03 Stellar Aberration.md
+- FIXED | Fresnel partial drag proposed in 1818, not 1815 | Changed the year to 1818.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/03 Electrodynamics, light and relativity/03.04 The Speed of Light in Moving Media - Fresnel Drag.md
+- FIXED | Complete-drag shift is 4Ln^2v/(lambda c), Fresnel 4L(n^2-1)v/(lambda c) | Corrected the caption and the following sentence; defined L as each tube length and Delta N in the table.
+- FIXED | Observed effect is not second order in n | Caption now says the observed shift is the fraction 1-1/n^2 (about 0.44) of complete drag, first order in v/c.
+- FIXED | 1/100 fringe at 5 m/s is wrong | Replaced with about 0.3 fringe for complete drag (L about 1.5 m, lambda about 0.53 um) and Fizeau's observed 0.23 fringe on reversing 7 m/s; updated the table row.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/03 Electrodynamics, light and relativity/03.05 The Doppler Effect.md
+- FIXED | Transverse shift for a moving receiver was measured (Hay 1960, Kündig 1963) | Added a callout stating the Mössbauer rotor results that agree with special relativity.
+- FIXED | Eqs. (3.13)-(3.14) mix u_s and v | Used u_s in both forms of Eq. (3.13) and u_o in both forms of Eq. (3.14); updated the source callout.
+- FIXED | Ives-Stilwell did not observe at 90 degrees | Added to the new callout that they compared forward and backward lines and the mean shift gives sqrt(1-u^2/c^2).

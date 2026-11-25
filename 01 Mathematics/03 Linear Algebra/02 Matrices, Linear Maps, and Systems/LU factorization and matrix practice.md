@@ -215,7 +215,7 @@ $$
 
 The sign is positive for an even number of exchanges and negative for an odd number.
 
-Expansion along any row $i$ gives $\det A=\sum_j a_{ij}C_{ij}$. Here $C_{ij}=(-1)^{i+j}\det M_{ij}$, using $M_{ij}$ for the submatrix with row $i$ and column $j$ deleted. On [[Linear maps, inverses, and determinants#Determinants by elimination|the section on Determinants by elimination]] the same symbol denotes the determinant of that submatrix.
+Expansion along any row $i$ gives $\det A=\sum_j a_{ij}C_{ij}$. Here $C_{ij}=(-1)^{i+j}\det M_{ij}$, using $M_{ij}$ for the submatrix with row $i$ and column $j$ deleted. In [[Linear maps, inverses, and determinants#Cofactors|the section on Cofactors]] the same symbol denotes the determinant of that submatrix.
 
 ##### Applications of determinants
 

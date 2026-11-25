@@ -90,12 +90,12 @@ At equilibrium $a=0$ and the speed is $\omega A$. At either turning point $v=0$ 
 
 ##### Torsional oscillation
 
-The rotational counterpart of Hooke's law is $\tau=-k\theta$, with $k$ here the torsion constant. Since $\tau=I\alpha$,
+The rotational counterpart of Hooke's law is $\tau=-\kappa\theta$, with $\kappa$ the torsion constant. Since $\tau=I\alpha$,
 
 $$
-I\frac{\mathrm{d}^2\theta}{\mathrm{d}t^2}=-k\theta,
+I\frac{\mathrm{d}^2\theta}{\mathrm{d}t^2}=-\kappa\theta,
 \qquad
-\omega=\sqrt{\frac{k}{I}},
+\omega=\sqrt{\frac{\kappa}{I}},
 \qquad
 \theta=A\cos(\omega t).
 $$
@@ -262,5 +262,42 @@ Kyle Kabasares, *Newtonian Mechanics (Physics 8, UC Merced 2013)*.
 
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
-| $\energy{P}$ | $\unit{W}$ | Power | Work done per unit time. |
-| $\signal{I}$ | $\unit{W/m^2}$ | Wave intensity | Power transmitted per unit area. |
+| $x$ | $\unit{m}$ | Displacement or position | The displacement from equilibrium, or the position along the rod or the wave axis. |
+| $x_{\mathrm{CM}}$ | $\unit{m}$ | Center of mass | The center-of-mass position of the rod. |
+| $y$ | $\unit{m}$ | Wave displacement | The transverse displacement of the wave. |
+| $v$, $v_i$ | $\unit{m\,s^{-1}}$ | Velocity | The velocity of the oscillating block, or its initial velocity at equilibrium. |
+| $v$ | $\unit{m\,s^{-1}}$ | Wave speed | The propagation speed of a wave or of sound. |
+| $v_o$, $v_s$ | $\unit{m\,s^{-1}}$ | Observer and source speeds | The speeds of the observer and the source relative to the medium. |
+| $a$ | $\unit{m\,s^{-2}}$ | Acceleration | The acceleration of the block or of the hanging mass. |
+| $m$, $M$ | $\unit{kg}$ | Mass | The mass of the block, the rod, the pulley, or the pendulum body. |
+| $k$ | $\unit{N\,m^{-1}}$ | Spring constant | The stiffness of the spring. |
+| $k$ | $\unit{m^{-1}}$ | Wave number | The phase change per unit length, equal to $2\pi/\lambda$. |
+| $\kappa$ | $\unit{N\,m\,rad^{-1}}$ | Torsion constant | The restoring torque per unit angular displacement. |
+| $\omega$, $\omega_d$ | $\unit{rad\,s^{-1}}$ | Angular frequency | The angular frequency of the oscillation or wave, and the damped angular frequency. |
+| $f$, $f'$ | $\unit{Hz}$ | Frequency | The number of oscillations per second, or the emitted and observed sound frequencies. |
+| $T$, $T_{\mathrm{sphere}}$, $T_{\mathrm{point}}$ | $\unit{s}$ | Period | The time for one oscillation. |
+| $T_1$, $T_2$ | $\unit{N}$ | Rope tensions | The tensions on the two sides of the pulley. |
+| $A$ | $\unit{m}$ | Amplitude | The maximum displacement of the oscillation or wave. |
+| $A$ | $\unit{rad}$ | Angular amplitude | The maximum angle of the torsional oscillator or pendulum. |
+| $\phi$ | $\unit{rad}$ | Phase constant | The phase of the oscillation at $t=0$. |
+| $b$ | $\unit{kg\,s^{-1}}$ | Damping coefficient | The ratio of the drag force to the velocity. |
+| $b$ | $\unit{kg\,m^{-3}}$ | Density coefficient | The coefficient in the rod density $bx^2$. |
+| $\lambda$ | $\unit{kg\,m^{-1}}$ | Rod linear density | The mass per unit length of the rod. |
+| $\lambda$ | $\unit{m}$ | Wavelength | The distance between successive points in the same phase. |
+| $\mu$ | $\unit{kg\,m^{-1}}$ | Linear mass density | The mass per unit length of the rope. |
+| $F$, $F_d$ | $\unit{N}$ | Force | The spring force, the rope tension, or the damping force. |
+| $L$ | $\unit{m}$ | Length | The rod length, or the distance from the pivot to the center of mass. |
+| $R$ | $\unit{m}$ | Radius | The radius of the pulley or of the sphere. |
+| $d$ | $\unit{m}$ | Equilibrium shift | The downward shift of the equilibrium of the vertical spring. |
+| $I$, $I_{\mathrm{CM}}$ | $\unit{kg\,m^2}$ | Moment of inertia | The rotational inertia about the pivot or about the center of mass. |
+| $\tau$, $\tau_{\mathrm{net}}$ | $\unit{N\,m}$ | Torque | The restoring torque or the net torque on the pulley. |
+| $\theta$ | $\unit{rad}$ | Angular displacement | The angle of the torsional oscillator or pendulum from equilibrium. |
+| $\alpha$ | $\unit{rad\,s^{-2}}$ | Angular acceleration | The second time derivative of the angle. |
+| $g$ | $\unit{m\,s^{-2}}$ | Gravitational acceleration | The acceleration due to gravity. |
+| $U$ | $\unit{J}$ | Potential energy | The elastic energy stored in the spring. |
+| $K$ | $\unit{J}$ | Kinetic energy | The kinetic energy of the block. |
+| $E_{\mathrm{tot}}$ | $\unit{J}$ | Total energy | The sum of kinetic and potential energy. |
+| $t$ | $\unit{s}$ | Time | The time variable. |
+| $r$ | $\unit{m}$ | Distance | The distance from the point source. |
+| $\energy{P}$ | $\unit{W}$ | Power | The power that the source radiates. |
+| $\signal{I}$ | $\unit{W/m^2}$ | Wave intensity | The power transmitted per unit area. |

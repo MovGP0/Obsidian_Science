@@ -265,7 +265,7 @@ $$
 \end{aligned}
 $$
 
-The transcription uses the angular limit $\pi/2$ throughout the substitution, as in the final evaluation in the handwritten notes. The substitution angle is complementary to the angle labeled $\theta$ in the sketch.
+The transcription uses the angular limit $\pi/2$ throughout the substitution, as in the final evaluation in the handwritten notes. The angle in the sketch is not the substitution angle. Call the sketch angle $\varphi$ (the sketch writes it as $\theta$). It is measured from the $x$-axis, so $x=a\cos\varphi$ and $\varphi=\pi/2-\theta$.
 
 **Example.** Evaluate $\displaystyle\int\frac{dx}{x^2\sqrt{x^2+4}}$. Substitute $x=2\tan\theta$, so $dx=2\sec^2\theta\,d\theta$. Choose $-\pi/2<\theta<\pi/2$ so $\sec\theta>0$.
 

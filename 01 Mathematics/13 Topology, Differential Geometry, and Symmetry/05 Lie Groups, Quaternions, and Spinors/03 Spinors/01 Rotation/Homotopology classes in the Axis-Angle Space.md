@@ -1,10 +1,10 @@
 There are multiple ways how an object can be oriented by subsequent turns back to its original orientation.
 
-Every possible combination of rotations that orient the object back into its original orientation can be represented as a loop. Those loops may have a *winding number* greater than 0, forming different [[Homotopology#Homotopic classes|Homotopic classes]].
+Every possible combination of rotations that orient the object back into its original orientation can be represented as a loop. These loops do not have an integer *winding number*. The fundamental group of $SO(3)$ is $\mathbb Z_2$, so the loops form exactly two different [[Homotopology#Homotopic classes|Homotopic classes]].
 
 [[Vector|Vectors]] are not sensitive to different *Homotopic classes*, while [[Spinors]] are.
 
-When a loop around a spherical space is represented as a circle, the crossings of a loop around the sphere lead to a "teleport" of the loop in the circle representation.
+The axis-angle space is the solid ball of radius $\pi$, with antipodal points on its boundary identified. This space is $\mathbb{RP}^3$. When a loop reaches the boundary, it continues from the antipodal boundary point. This jump is a "teleport" of the loop in the ball representation.
 
 Every loop with an odd number of teleports (1, 3, 5, …) can be transformed in an *homotopic* way into a loop with another odd number of teleports. Every loop with an even number of teleports (0, 2, 4, …)  can be transformed in an *homotopic* way into a loop with another even number of teleports. Therefore, we have two homotopic classes:
 

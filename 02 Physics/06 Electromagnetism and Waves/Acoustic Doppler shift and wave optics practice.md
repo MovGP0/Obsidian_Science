@@ -51,22 +51,22 @@ $$
 =\frac{\signal{f}_s}{1-(\mechanical{u}/\mechanical{v})\cos\mechanical{\theta}}.
 $$
 
-For a source approaching a fixed observer at speed $\mechanical{v}_s$, the factor is $1/(1-\mechanical{v}_s/\mechanical{v})$. For an observer approaching a fixed source at speed $\mechanical{v}_o$, it is $1+\mechanical{v}_o/\mechanical{v}$. Equating the two shifts gives
+For a source approaching a fixed observer at speed $\mechanical{u}_s$, the factor is $1/(1-\mechanical{u}_s/\mechanical{v})$. For an observer approaching a fixed source at speed $\mechanical{u}_o$, it is $1+\mechanical{u}_o/\mechanical{v}$. Equating the two shifts gives
 
 $$
-1=(1+\mechanical{v}_o/\mechanical{v})(1-\mechanical{v}_s/\mechanical{v}),
+1=(1+\mechanical{u}_o/\mechanical{v})(1-\mechanical{u}_s/\mechanical{v}),
 \qquad
-\mechanical{v}(\mechanical{v}_o-\mechanical{v}_s)=\mechanical{v}_o\mechanical{v}_s.
+\mechanical{v}(\mechanical{u}_o-\mechanical{u}_s)=\mechanical{u}_o\mechanical{u}_s.
 $$
 
-Thus $\mechanical{v}=\mechanical{v}_o\mechanical{v}_s/(\mechanical{v}_o-\mechanical{v}_s)$ for distinct speeds. Expanding the product fixes the sign of the final handwritten expression.
+Thus $\mechanical{v}=\mechanical{u}_o\mechanical{u}_s/(\mechanical{u}_o-\mechanical{u}_s)$ for distinct speeds. Expanding the product fixes the sign of the final handwritten expression.
 
-The ratio $\mechanical{u}/\mechanical{v}$ is the Mach number. If the source is at rest and the observer approaches at speed $\mechanical{v}_o$, then
+The ratio $\mechanical{u}/\mechanical{v}$ is the Mach number. If the source is at rest and the observer approaches at speed $\mechanical{u}_o$, then
 
 $$
-\signal{f}_o=\signal{f}_s(1+\mechanical{v}_o/\mechanical{v}),
+\signal{f}_o=\signal{f}_s(1+\mechanical{u}_o/\mechanical{v}),
 \qquad
-\signal{f}_s=\frac{\signal{f}_o}{1+\mechanical{v}_o/\mechanical{v}}.
+\signal{f}_s=\frac{\signal{f}_o}{1+\mechanical{u}_o/\mechanical{v}}.
 $$
 
 A car emitting a $440\,\unit{Hz}$ tone moves toward a truck at $20\,\unit{m\,s^{-1}}$. The truck moves toward the car at $15\,\unit{m\,s^{-1}}$, and the speed of sound is $340\,\unit{m\,s^{-1}}$.
@@ -96,22 +96,22 @@ A stationary source emits equally spaced crests. Their separation is $\signal{\l
 
 ![[Kyle Kabasares - Vibrations and Waves - Wave crests and moving observer.png|**Fig. 64** A moving observer crosses the circular crests at a different rate from a stationary observer.]]
 
-If the listener moves toward the speaker at speed $\mechanical{u}$, the crests approach the listener at $\mechanical{v}+\mechanical{u}$. The wavelength in the medium is $\mechanical{v}/\signal{f}$, giving
+If the listener moves toward the speaker at speed $\mechanical{u}_o$, the crests approach the listener at $\mechanical{v}+\mechanical{u}_o$. The wavelength in the medium is $\mechanical{v}/\signal{f}$, giving
 
 $$
-\signal{f}'=\frac{\mechanical{v}+\mechanical{u}}{\signal{\lambda}}
-=\left(1+\frac{\mechanical{u}}{\mechanical{v}}\right)\signal{f}.
+\signal{f}'=\frac{\mechanical{v}+\mechanical{u}_o}{\signal{\lambda}}
+=\left(1+\frac{\mechanical{u}_o}{\mechanical{v}}\right)\signal{f}.
 $$
 
 ![[Kyle Kabasares - Vibrations and Waves - Observer approaching a speaker.png|**Fig. 65** The listener moves toward the oncoming crests.]]
 
-If the listener moves away, the relative crest speed is $\mechanical{v}-\mechanical{u}$ and
+If the listener moves away, the relative crest speed is $\mechanical{v}-\mechanical{u}_o$ and
 
 $$
-\signal{f}'=\left(1-\frac{\mechanical{u}}{\mechanical{v}}\right)\signal{f}.
+\signal{f}'=\left(1-\frac{\mechanical{u}_o}{\mechanical{v}}\right)\signal{f}.
 $$
 
-At $\mechanical{u}=\mechanical{v}$ the receding observer stays at a fixed phase, so the observed frequency is zero.
+At $\mechanical{u}_o=\mechanical{v}$ the receding observer stays at a fixed phase, so the observed frequency is zero.
 
 ![[Kyle Kabasares - Vibrations and Waves - Observer receding from a speaker.png|**Fig. 66** The listener moves in the same direction as the wavefronts.]]
 
@@ -201,7 +201,7 @@ At the free end, represented by a sliding ring, the incident pulse raises the ri
 
 **Exercise 8-8**
 
-A source emitting $2000\,\unit{Hz}$ moves away from a stationary listener at $60$ miles per hour, taken as about $26.6\,\unit{m\,s^{-1}}$ in the notes. With sound speed $334\,\unit{m\,s^{-1}}$,
+A source emitting $2000\,\unit{Hz}$ moves away from a stationary listener at $60$ miles per hour. This speed is $26.8\,\unit{m\,s^{-1}}$; the notes round it to $26.6\,\unit{m\,s^{-1}}$, which changes the result by about $1\,\unit{Hz}$. With sound speed $334\,\unit{m\,s^{-1}}$,
 
 $$
 \signal{f}_o
@@ -266,9 +266,9 @@ The wire is $0.75\,\unit{m}$ long with diameter $0.46\,\unit{mm}$ and linear den
 
 ![[Kyle Kabasares - Vibrations and Waves - Wire dimensions.png|**Fig. 85** The wire's length and circular cross section set the geometry for the tensile calculation.]]
 
-For wave speed $250\,\unit{m\,s^{-1}}$ and frequency $196\,\unit{Hz}$, the wavelength is $250/196\simeq1.27\,\unit{m}$. The tension is $\mechanical{T}=\mechanical{\mu}\mechanical{v}^2=81.25\,\unit{N}$. The tensile stress $\mechanical{F}/\mechanical{A}$ is related to strain by $\mechanical{F}/\mechanical{A}=\mechanical{Y}\Delta\mechanical{L}/\mechanical{L}$, with Young's modulus $\mechanical{Y}=20\times10^{10}\,\unit{N\,m^{-2}}$.
+For wave speed $250\,\unit{m\,s^{-1}}$ and frequency $196\,\unit{Hz}$, the wavelength is $250/196\simeq1.27\,\unit{m}$. The tension is $\mechanical{T}=\mechanical{\mu}\mechanical{v}^2=81.25\,\unit{N}$. The tensile stress $\mechanical{F}/\mechanical{S}$ is related to strain by $\mechanical{F}/\mechanical{S}=\mechanical{Y}\Delta\mechanical{L}/\mechanical{L}$, with Young's modulus $\mechanical{Y}=20\times10^{10}\,\unit{N\,m^{-2}}$.
 
-For the wire in exercise 78, the cross-sectional area is $\mechanical{A}=\pi\mechanical{r}^2$, with $\mechanical{r}=0.23\,\unit{mm}$. Taking the applied force as the tension, the elongation is
+For the wire in exercise 78, the cross-sectional area is $\mechanical{S}=\pi\mechanical{r}^2$, with $\mechanical{r}=0.23\,\unit{mm}$. Taking the applied force as the tension, the elongation is
 
 $$
 \Delta\mechanical{L}
@@ -342,7 +342,7 @@ Write $z=a+jb=Ae^{j\theta}$. Euler's identity gives $a=A\cos\theta$ and $b=A\sin
 
 ##### Quiz 2 — mass between springs
 
-A mass $\mechanical{m}=100\,\unit{g}$ lies between two springs of stiffness $\mechanical{k}=0.1\,\unit{N\,m^{-1}}$ each. Initially $\mechanical{x}=0$ and $\mechanical{v}=0.2\,\unit{m\,s^{-1}}$.
+A mass $\mechanical{m}=100\,\unit{g}$ lies between two springs of stiffness $\mechanical{k}=0.1\,\unit{N\,m^{-1}}$ each. Initially $\mechanical{x}=0$ and $\dot{\mechanical{x}}=0.2\,\unit{m\,s^{-1}}$.
 
 ![[Kyle Kabasares - Vibrations and Waves - Mass between identical springs.png|**Fig. 92** Two identical springs both contribute to the restoring force on the mass.]]
 
@@ -368,7 +368,7 @@ The standing-wave condition is $\signal{\lambda}_n=2\mechanical{L}/n$. Using $\m
 
 ##### Two coherent sources
 
-The sources are separated by $1\,\unit{m}$. Each wave has amplitude $\mechanical{A}=0.1\,\unit{mm}$ and frequency $500\,\unit{Hz}$, and the source phase difference in the written sum is $\pi/2$. The observation point lies $2\,\unit{m}$ in front of $S_1$ and $3\,\unit{m}$ from $S_2$.
+The sources are separated by $1\,\unit{m}$. Each wave has amplitude $\mechanical{A}=0.1\,\unit{mm}$ and frequency $500\,\unit{Hz}$, and the source phase difference in the written sum is $\pi/2$. The observation point lies $2\,\unit{m}$ in front of $S_1$ and $3\,\unit{m}$ from $S_2$. These two distances are consistent only if the point lies on the line through both sources. For a point $2\,\unit{m}$ from $S_1$ perpendicular to the source line, the distance to $S_2$ is $\sqrt5\,\unit{m}\simeq2.24\,\unit{m}$.
 
 ![[Kyle Kabasares - Vibrations and Waves - Two coherent sources.png|**Fig. 95** The two sources are separated by one metre.]]
 
@@ -391,22 +391,36 @@ Kyle Kabasares, *Vibrations and Waves (Physics 122, UC Merced 2015)*.
 
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
-| $\mechanical{F}$ | $\unit{N}$ | Restoring force | Force that vanishes at equilibrium. |
-| $\mechanical{m}$ | $\unit{kg}$ | Mass | Inertial parameter in the equation of motion. |
-| $\mechanical{t}$ | $\unit{s}$ | Time | Independent variable for the motion. |
-| $\signal{\omega}$ | $\unit{rad\,s^{-1}}$ | Angular frequency | Rate of phase accumulation. |
-| $\signal{\phi}$ | $\unit{rad}$ | Phase constant | Phase at the initial time. |
-| $\signal{\tau}$ | $\unit{s}$ | Amplitude decay time | Time for the envelope to fall by a factor of $e$. |
-| $\signal{\lambda}$ | $\unit{m}$ | Wavelength | Spatial distance over one wave cycle. |
-| $\mechanical{y}$ | $\unit{m}$ | Transverse displacement | Deflection of a string element from equilibrium. |
-| $\mechanical{\mu}$ | $\unit{kg\,m^{-1}}$ | Linear mass density | Mass per unit length of the string. |
-| $\mechanical{T}$ | $\unit{N}$ | String tension | Magnitude of the force along the string, distinct from the period $\signal{T}$. |
-| $\mechanical{\theta}$ | $\unit{rad}$ | Local tangent angle | Angle between the string and the equilibrium direction. |
-| $\signal{k}$ | $\unit{rad\,m^{-1}}$ | Angular wave number | Phase change per unit distance, equal to $2\pi/\signal{\lambda}$. |
-| $d$ | $\unit{m^4\,s^{-2}}$ | String dispersion coefficient | Multiplies the squared angular wave number in the phase speed squared. |
-| $\mechanical{M}$ | $\unit{kg}$ | Reduced mass | Effective mass for relative motion of the isolated pair. |
-| $\mechanical{\theta}_c$ | $\unit{rad}$ | Critical angle | Angle of incidence at which the refracted ray becomes grazing. |
-| $\mechanical{u}$ | $\unit{m\,s^{-1}}$ | Source speed | Speed of the emitter relative to the medium in the Doppler derivation. |
-| $\signal{f}_{\mathrm{source}}$ | $\unit{Hz}$ | Emitted frequency | Rate at which the moving source emits wavefronts. |
-| $\signal{f}_o$ | $\unit{Hz}$ | Observed frequency | Arrival rate of wavefronts at the observer. |
-| $\mechanical{Y}$ | $\unit{Pa}$ | Young's modulus | Ratio of tensile stress to fractional elongation in the linear regime. |
+| $\mechanical{R}$, $\mechanical{D}$ | $\unit{m}$ | Escape-region radius and diameter | The radius and diameter of the circle on the water surface through which light escapes. |
+| $n$, $n_1$, $n_2$ | 1 | Refractive index | The ratio of the vacuum light speed to the light speed in the medium. |
+| $\mechanical{\theta}_c$ | $\unit{rad}$ | Critical angle | The angle of incidence at which the refracted ray becomes grazing. |
+| $\mechanical{\theta}$ | $\unit{rad}$ | Doppler direction angle | The angle between the source motion and the ray to the observer. |
+| $\mechanical{\theta}_1$, $\mechanical{\theta}_2$, $\mechanical{\theta}_3$, $\mechanical{\theta}_{\mathrm{red}}$ | $\unit{rad}$ | Ray angles | The angles of the incident, refracted, and internal rays to the normal. |
+| $\mechanical{\phi}$ | $\unit{rad}$ | Deviation angle | The angle between the incident and refracted rays in the glass slab. |
+| $\mechanical{u}$, $\mechanical{u}_s$ | $\unit{m\,s^{-1}}$ | Source speed | The speed of the emitter relative to the medium. |
+| $\mechanical{u}_o$ | $\unit{m\,s^{-1}}$ | Observer speed | The speed of the listener relative to the medium. |
+| $\mechanical{v}$, $\mechanical{v}_1$, $\mechanical{v}_2$ | $\unit{m\,s^{-1}}$ | Wave speed | The speed of the wavefronts relative to the medium. |
+| $\signal{\tau}$, $\signal{T}$ | $\unit{s}$ | Period | The source emission period or the time between successive crests. |
+| $\signal{f}$, $\signal{f}_s$, $\signal{f}_{\mathrm{source}}$ | $\unit{Hz}$ | Emitted frequency | The rate at which the source emits wavefronts. |
+| $\signal{f}_o$, $\signal{f}'$, $\signal{f}_{\mathrm{truck}}$ | $\unit{Hz}$ | Observed frequency | The arrival rate of wavefronts at the observer. |
+| $\mechanical{t}$, $\mechanical{t}_n$, $\mechanical{t}_p$ | $\unit{s}$ | Time | The time coordinate, the emission time of front $n$, and the arrival time at $P$. |
+| $\mechanical{x}$, $\mechanical{x}_n$, $\mechanical{x}_{\mathrm{peak}}$ | $\unit{m}$ | Position | The position along the propagation axis, the source displacement, or the crest position. |
+| $\mechanical{r}_0$, $\mechanical{r}_n$ | $\unit{m}$ | Source-to-observer distance | The distance from the source positions $S_0$ and $S_n$ to the point $P$. |
+| $\signal{\lambda}$, $\signal{\lambda}_s$, $\signal{\lambda}'$ | $\unit{m}$ | Wavelength | The distance between successive crests. |
+| $\signal{k}$ | $\unit{rad\,m^{-1}}$ | Angular wave number | The phase change per unit distance, equal to $2\pi/\signal{\lambda}$. |
+| $\signal{\omega}$ | $\unit{rad\,s^{-1}}$ | Angular frequency | The rate of phase accumulation. |
+| $\signal{\phi}$ | $\unit{rad}$ | Phase constant | The phase of the oscillation at the initial time. |
+| $\mechanical{y}$ | $\unit{m}$ | Transverse displacement | The deflection of the rope or mass from equilibrium. |
+| $\mechanical{A}$ | $\unit{m}$ | Amplitude | The maximum displacement of the wave or oscillation. |
+| $\mechanical{\mu}$ | $\unit{kg\,m^{-1}}$ | Linear mass density | The mass per unit length of the rope or wire. |
+| $\mechanical{M}$ | $\unit{kg}$ | Rope or wire mass | The total mass of the rope or wire. |
+| $\mechanical{m}$ | $\unit{kg}$ | Mass | The mass of a rope segment or of the oscillating body. |
+| $\mechanical{L}$, $\Delta\mechanical{L}$ | $\unit{m}$ | Length and elongation | The length of the rope, wire, or string and the elongation of the wire. |
+| $\mechanical{F}_T$, $\mechanical{T}$, $\mechanical{F}$ | $\unit{N}$ | Tension | The force along the rope, wire, or string, distinct from the period $\signal{T}$. |
+| $\mechanical{S}$ | $\unit{m^2}$ | Cross-sectional area | The area of the circular cross section of the wire. |
+| $\mechanical{r}$ | $\unit{m}$ | Wire radius | The radius of the wire cross section. |
+| $\mechanical{Y}$ | $\unit{Pa}$ | Young's modulus | The ratio of tensile stress to fractional elongation in the linear regime. |
+| $\mechanical{t}_{\mathrm{slab}}$ | $\unit{m}$ | Slab thickness | The thickness of the glass slab. |
+| $\mechanical{\ell}$ | $\unit{m}$ | Path length in glass | The distance that the ray travels inside the slab. |
+| $\mechanical{d}$ | $\unit{m}$ | Lateral offset | The perpendicular distance between the incident and emerging rays. |
+| $\mechanical{k}$ | $\unit{N\,m^{-1}}$ | Spring stiffness | The stiffness of each spring in Quiz 2. |

@@ -1,0 +1,49 @@
+=== 01 Mathematics/02 Geometry and Trigonometry/01 Plane and Solid Geometry/Geometry - Catalogue Guide.md
+- [Correctness] The link [[Planned Topics#3. Geometry|the detailed catalogue]] points to a note that exists only under `.temp/catalogue-authoring/.../backups/`, not in the vault proper, so it is broken; restore the note or remove the sentence (the same link appears in the other chapter catalogue guides).
+
+=== 01 Mathematics/02 Geometry and Trigonometry/02 Trigonometry/Solve spherical triangles.md
+- [Correctness] In "Spherical curves and distances from coordinates", "apply the spherical cosine rule to their polar triangle" misuses the term defined in [[Geometry on a sphere]]; it should say "to the triangle formed by the north pole and the two points", whose sides are the colatitudes $\pi/2-\varphi_1$, $\pi/2-\varphi_2$ with included angle $\Delta\lambda$.
+
+=== 01 Mathematics/02 Geometry and Trigonometry/04 Polar and Parametric Curves/Quadrics and motion along space curves.md
+- [Correctness] The physical-quantities table describes $\mechanical{\theta}$ also as "horizontal direction of the initial velocity measured from the positive $x$-axis", a meaning never used in the note; the cylindrical/spherical azimuth $\theta$ is written uncolored, so the row should describe only the rolling-circle rotation angle.
+- [Correctness] Symbol clash: in "Arc length and kinematics" $s$ is the integration variable in $\int_0^{t}\mechanical{\mathbf v}(s)\,ds$, while the next section and the cycloid use $s$ as arc length; rename the dummy variable to $\tau$ as the arc-length section already does.
+- [Correctness] Macro misuse: the helix example writes $\mechanical{\mathbf r}(t)=\langle\cos t,t,\sin t\rangle$ "in numerical coordinates" with an uncolored dimensionless $t$; either drop the mechanical macros there or give the example units and a colored time.
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/03 Algebra and Equations/Quadratic Formula.md
+- [Correctness] The equation is written "$2\,a\,x^2+b^2\,x^1+c\,x^0 = 0$"; the quadratic whose roots are given by the formula is $ax^2+bx+c=0$ (no factor 2 on $a$, and $b$ not squared).
+- [Correctness] The alternative form "$\frac{2c}{-b \pm \sqrt{b^2-4ac}}$" pairs the signs wrongly: with the same choice of sign, $\frac{-b\pm\sqrt D}{2a}=\frac{2c}{-b\mp\sqrt D}$ (use $\mp$), and it requires $c\ne0$.
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/04 Functions and Graphs/Functions and their representation - Catalogue Guide.md
+- [Correctness] The link [[Planned Topics#2. Functions and their representation|the detailed catalogue]] is broken: no "Planned Topics" note exists in the vault (only a backup under `.temp`); remove the sentence or point it to an existing catalogue note.
+
+=== 01 Mathematics/11 Discrete Mathematics and Abstract Algebra/03 Groups, Rings, Fields, and Representations/Algebra and discrete mathematics - Catalogue Guide.md
+- [Correctness] The index link [[Planned Topics#5. Algebra and discrete mathematics|the detailed catalogue]] has no target in the vault: the only "Planned Topics.md" is a backup inside the hidden `.temp/catalogue-authoring/...` folder, so the link is broken in Obsidian; restore the note or remove the link.
+
+=== 01 Mathematics/11 Discrete Mathematics and Abstract Algebra/03 Groups, Rings, Fields, and Representations/Group.md
+- [Correctness] "Group homomorphisms ... given a morphism $f$ on the group $(G,·)$ we can define $f(a\cdot b)=f(a)\cdot f(b)$" is wrong as stated: a homomorphism is a map between two groups, $f:(G,\cdot)\to(H,\ast)$ with $f(a\cdot b)=f(a)\ast f(b)$, and it is not a rule "derived from the rules of groups" as the section's first sentence claims.
+- [Correctness] The axiom list omits closure and never says that $\cdot$ is a binary operation $G\times G\to G$, so "a special set with additional rules" does not define a group; add closure or define the operation as a map into $G$.
+
+=== 01 Mathematics/08 Fourier Analysis and Transforms/02 Fourier, Laplace, and Z-Transforms/Fourier integrals and transform rules.md
+- [Correctness] In the "Calculation rules" table, the row for $f(at)$ shows $\widehat f(k/a)/|a|$ split by the pipe characters inside the math, producing stray columns "a" and "$"; write $\widehat f(k/a)/\lvert a\rvert$ and delete the two empty header columns.
+
+=== 01 Mathematics/08 Fourier Analysis and Transforms/02 Fourier, Laplace, and Z-Transforms/Integral transforms - Catalogue Guide.md
+- [Correctness] The link [[Planned Topics#15. Integral transforms|the detailed catalogue]] is broken: "Planned Topics.md" exists only in the hidden `.temp` backup folder, which Obsidian does not index; retarget it or remove the sentence.
+
+=== 01 Mathematics/08 Fourier Analysis and Transforms/02 Fourier, Laplace, and Z-Transforms/Periodic forcing and Laplace-transform problems.md
+- [Correctness] The "Physical quantities" table describes content absent from this note: $\mechanical{m}$ "slice of the conducting rod", $\mechanical{x}$ "distance along the wave and heat models", $\signal{t}$ "vibration and heat models"; restrict the descriptions to the forced oscillator.
+
+=== 01 Mathematics/12 Advanced Analysis/02 Banach and Hilbert Spaces/Lp spaces and integral norms.md
+- [Correctness] Worked answer 1 writes $\|f\|_2=\sqrt2$ for $t^{-1/4}$, but $f$ already denotes $t^{-1/3}$ in this note; name the new function (e.g. $g(t)=t^{-1/4}$, $\|g\|_2=\sqrt2$).
+
+=== 01 Mathematics/12 Advanced Analysis/04 Integral Equations, Distributions, and Sobolev Spaces/Cauchy integrals and boundary jumps.md
+- [Correctness] In "Worked example on an interval", "The answer diverges near some endpoints" is imprecise: $2+x\log[(1-x)/(1+x)]\to-\infty$ logarithmically at both $x\to1^-$ and $x\to-1^+$; say "near both endpoints".
+
+=== 01 Mathematics/99 Reference/01 Formula and Transform Tables/Definite integral tables.md
+- [Correctness] In "Definite integrals and improper limits", "At $0<p<1$, the power grows without bound" is misleading because the integrand $x^{-p}$ decays; it is the partial integral $(R^{1-p}-1)/(1-p)$ that grows without bound as $R\to\infty$.
+
+=== 01 Mathematics/99 Reference/01 Formula and Transform Tables/Elliptic integral tables.md
+- [Correctness] In "Worked example and a convention trap", $8E(0.5)\approx11.739696$ comes from multiplying the rounded table entry; the six-place value is $8E(0.5)=11.739698$.
+
+=== 04 Reference/03 Color Standards/RAL Design Colors.md
+- [Correctness] `RAL 270 90 05` (Bleached white) and `RAL 280 90 05` (Mauve white) both list `#E0E3E8`; the two hue angles must give different colours (the note's own conversion script gives about `#DEE3EC` and `#E0E2EC`), so one of the two rows is probably a copy error and should be checked against the source.
+

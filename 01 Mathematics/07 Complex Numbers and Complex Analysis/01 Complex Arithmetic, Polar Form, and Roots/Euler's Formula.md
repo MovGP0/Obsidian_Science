@@ -2,7 +2,7 @@
 
 Using **Euler's Formula** we get an alternative notation for [[Complex Numbers]]:
 $$e^{iθ} = \cosθ + i\sinθ$$
-[![obsidian|300](https://upload.wikimedia.org/wikipedia/commons/7/71/Euler%27s_formula.svg)]
+![Euler's formula on the unit circle|300](https://upload.wikimedia.org/wikipedia/commons/7/71/Euler%27s_formula.svg)
 
 ## Multiplication of Complex Numbers using Exponential notation
  
@@ -30,4 +30,4 @@ Rotation by 360°
 $$e^{i2\pi} = 1$$
 
 > [!note]
-> The +/- depends on the chosen coordinate system.
+> These values follow from Euler's formula and do not depend on a convention. Only the drawing orientation is a convention: a positive angle turns counterclockwise.

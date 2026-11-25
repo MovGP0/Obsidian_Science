@@ -1,0 +1,42 @@
+=== 01 Mathematics/03 Linear Algebra/01 Vectors and Bases/05.08 Lines and planes.md
+- FIXED | Link to 05.07 Linear combinations does not discuss translated copies | Retargeted the link to [[10.01 Vector spaces]], which discusses translated lines and affine sets
+=== 01 Mathematics/03 Linear Algebra/01 Vectors and Bases/Basis change.md
+- FIXED | Undefined a_i in covector basis change | Changed ${e'}_j = B^i_j\ a_i$ to ${e'}_j = B^i_j\ e_i$
+=== 01 Mathematics/03 Linear Algebra/01 Vectors and Bases/Cross product.md
+- FIXED | Index form c_i = eps_ijk a_i b_j is wrong | Changed to $c_i = ε_{ijk}\,a_j\,b_k$
+- FIXED | "Determinant of two 3D vectors" is not valid | Reworded as formal determinant with rows (e_x, e_y, e_z), a, b whose components are 2x2 minors
+=== 01 Mathematics/03 Linear Algebra/01 Vectors and Bases/Scalar Product.md
+- FIXED | c_i = a_i b_i is a component-wise product and c = a b clashes with geometric product | Changed to $c = a\cdot b$ and $c = a_i b_i = \sum_i a_i b_i$; used a\cdot b in the angle formulas
+- FIXED | Angle formula restricted to R^2 and missing a,b nonzero | Generalized to R^n (orthonormal basis) and added a,b nonzero to the cos formula
+=== 01 Mathematics/03 Linear Algebra/01 Vectors and Bases/Vector product.md
+- FIXED | "xy = -xy and xx = 1" is wrong | Changed to $e_xe_y = -e_ye_x$ (distinct basis vectors) and $e_xe_x = 1$
+- FIXED | Bivector basis lines assert X = -X | Changed to $e_ze_x = -e_xe_z = j$ and $e_ye_z = -e_ze_y = k$
+- FIXED | Overbrace labels the bivector part "cross product" | Relabeled it "wedge product a wedge b" and added one line on the Hodge dual a wedge b = I (a x b) with I = e_xe_ye_z (verified I e_x = e_ye_z)
+=== 01 Mathematics/03 Linear Algebra/02 Matrices, Linear Maps, and Systems/LU factorization and matrix practice.md
+- FIXED | Link to Determinants by elimination for M_ij is the wrong heading | Retargeted to [[Linear maps, inverses, and determinants#Cofactors]], where the minor M_ij is defined
+=== 01 Mathematics/03 Linear Algebra/02 Matrices, Linear Maps, and Systems/Linear algebra - Catalogue Guide.md
+- FIXED | [[Planned Topics#4. Linear algebra]] is broken | No Planned Topics note exists in the vault (only a backup in .temp); removed the sentence with the broken link (same broken link exists in other Catalogue Guides outside this batch)
+=== 01 Mathematics/03 Linear Algebra/02 Matrices, Linear Maps, and Systems/Row reduction and the four fundamental subspaces.md
+- FIXED | Wrong internal anchors for portfolio vectors, Homework 2 matrix and matrix B | Retargeted to #Span and dependence, #Homogeneous systems (now a link), and #Rectangular matrix (three places)
+=== 01 Mathematics/03 Linear Algebra/02 Matrices, Linear Maps, and Systems/Scaling Matrices.md
+- FIXED | Determinant not equal to 1 does not define a scaling matrix | Defined a scaling matrix as diag(s_x, s_y, ...), stated abs(det) as volume factor with the diag(2,1/2) counterexample
+- PARTLY | R^n sections show homogeneous (n+1)x(n+1) matrices | Note already mentioned homogeneous coordinates; added the 2x2 linear matrix in R^2 and diag forms for R^3 and R^4, and labeled the existing matrices as homogeneous-coordinate forms
+=== 01 Mathematics/03 Linear Algebra/02 Matrices, Linear Maps, and Systems/Subspaces, eigenvectors, and orthogonal projections.md
+- FIXED | Wrong anchors for injectivity conditions, transpose matrix and inner-product preservation | Retargeted to #The four fundamental subspaces, Coordinate matrices and diagonalization#Coordinate representation of a matrix, and #Orthonormal sets
+=== 01 Mathematics/03 Linear Algebra/02 Matrices, Linear Maps, and Systems/Symmetrization and Antisymmetrization.md
+- FIXED | A_ii used instead of A_ij | Changed both occurrences to A_ij
+- FIXED | General symmetrization uses square brackets | Changed to round brackets A_(i_1 ... i_n)
+- FIXED | omega_ij = eps_ijk,omega^k has stray comma and wrong framing | Wrote omega_ij = eps_ijk omega^k with inverse omega^k = 1/2 eps^kij omega_ij and stated it identifies 3D antisymmetric matrices with axial vectors
+=== 01 Mathematics/03 Linear Algebra/02 Matrices, Linear Maps, and Systems/Vectors, projections, lines, and planes.md
+- FIXED | Physical quantities table lists v as speed though v is a generic vector | Removed the Physical quantities section (only mechanical macro use in the note)
+=== 01 Mathematics/03 Linear Algebra/03 Determinants and Eigenvalues/Determinant of a Matrix.md
+- FIXED | 3x3 formula is wrong | Changed to Sarrus form aei + bfg + cdh - ceg - bdi - afh
+- FIXED | Cofactor expansion wrong and misnamed | Changed to det A = sum_j (-1)^(1+j) a_1j det M_1j and renamed to Laplace expansion
+- FIXED | det = 1 means rotation and det not in {0,1,-1} means scaling are wrong | Rewrote callout as signed volume factor (det 1 includes rotations, shears, diag(2,1/2)); changed "rotation matrices" to "orthogonal matrices"
+- FIXED | Volume uses a formal basis row and says positive | Replaced with abs(det) of the n x n component matrix and changed "positive" to "nonzero"
+- FIXED | Orientation uses an n x (n+1) determinant | Rewrote as the sign of the n x n determinant of the basis relative to a reference basis
+=== 01 Mathematics/03 Linear Algebra/03 Determinants and Eigenvalues/Eigenvectors and Eigenvalues.md
+- FIXED | "imaginary" eigenvalues statement is imprecise | Changed to non-real complex eigenvalues (example (1 +- i)/sqrt2 for 45 degree rotation) and no nonzero real vector stays on its own line
+=== 01 Mathematics/03 Linear Algebra/04 Inner Products, Quadratic Forms, and Factorizations/Hermitian Conjungate.md
+- FIXED | norm(J)^2 = J^dagger J = J J^dagger is wrong | Removed = J J^dagger and added that J J^dagger is an n x n matrix (projector onto J when norm(J) = 1)
+- FIXED | "inverse of the vector" is the wrong concept | Changed to squared norm and explained J^T J can be zero or complex, example J = (1, i)^T

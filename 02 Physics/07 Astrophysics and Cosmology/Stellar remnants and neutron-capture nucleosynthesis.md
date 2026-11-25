@@ -20,7 +20,7 @@ The notes mention OH maser formation, then the aside “Outreach! Prevent Google
 - Emission lines appear in the stellar spectrum.
 - The notes identify forbidden lines of oxygen, nitrogen, and carbon, and distinguish them from ordinary allowed atomic transitions.
 
-The oxygen sketch marks three groups read as $^3\mathrm{P}$, $^1\mathrm{S}$, and $^1\mathrm{D}$, from left to right. The lines drop into and rise out of the marked groups. The notes attribute the population of these states to collisions between atoms.
+The oxygen sketch marks three groups read as $^3\mathrm{P}$, $^1\mathrm{S}$, and $^1\mathrm{D}$, from left to right. The lines drop into and rise out of the marked groups. The notes attribute the population of these states to collisions between atoms. In planetary nebulae, collisions with free electrons excite these states.
 
 The notes give a white dwarf remnant mass of $0.55$ to $1.3\mechanical{M}_\odot$ and describe electron degeneracy. The listed compositions are helium in binaries, carbon–oxygen, and oxygen–neon–magnesium.
 
@@ -43,7 +43,7 @@ The sketch compares initial and final mass. It marks M4 near a final mass of $0.
 
 ![[Kyle Kabasares - Stellar Astrophysics - initial and final white dwarf masses.png|**Fig. 15** Initial and final white dwarf masses for M4 and the halo sample, with age marks]]
 
-##### Late stages below the 6–10 solar mass range
+##### Late stages above the 6–10 solar mass range
 
 The two shorthand lines read “90% H → He” and “H → Fe.”
 
@@ -68,7 +68,7 @@ $$
 {}^{23}\mathrm{Na}(p,\gamma){}^{24}\mathrm{Mg}.
 $$
 
-The next line reads “carbon-12, all the way to Zn, Ga.” The bottleneck line shows two silicon-28 nuclei leading to nickel-56 and then to iron-56, with the second arrow labeled “double beta decay.” The source strikes out the first arrow and adds “Doesn't happen.”
+The next line reads “carbon-12, all the way to Zn, Ga.” The bottleneck line shows two silicon-28 nuclei leading to nickel-56 and then to iron-56, with the second arrow labeled “double beta decay.” The source strikes out the first arrow and adds “Doesn't happen.” The step from nickel-56 to iron-56 is not a double beta decay. It is two successive electron-capture or $\beta^+$ decays: nickel-56 to cobalt-56 (half-life $\quantity{6.1}{d}$), then cobalt-56 to iron-56 (half-life $\quantity{77}{d}$). These decays power supernova light curves.
 
 The notes attribute the bottleneck to the Coulomb force. They give an alpha-capture sequence starting from silicon-28 and helium-4.
 
@@ -136,7 +136,7 @@ $$
 \sim\text{seconds}.
 $$
 
-This is the time scale for core collapse in the notes. They give a Chandrasekhar mass of $1.4\mechanical{M}_\odot$ and put $5$ to $6$ solar masses beside “$n$-degeneracy” and $\mechanical{m}_e\to\mechanical{m}_n$. The next line emphasizes general relativity. The final estimate converts the equivalent of $0.1\mechanical{M}_\odot$ into energy.
+For $\mechanical{\rho}\sim10^9$ to $\quantity{10^{10}}{g\,cm^{-3}}$, this gives $\tau_{\mathrm{dyn}}\approx0.04$ to $\quantity{0.1}{s}$. This is the time scale for core collapse in the notes. They give a Chandrasekhar mass of $1.4\mechanical{M}_\odot$ and put $5$ to $6$ solar masses beside “$n$-degeneracy” and $\mechanical{m}_e\to\mechanical{m}_n$. The next line emphasizes general relativity. The final estimate converts the equivalent of $0.1\mechanical{M}_\odot$ into energy.
 
 A note headed “Black hole question answer” includes $e^-\to\text{BH phase}$. The accompanying plot shows flux against time. Four points with error bars lie on the early plateau and the start of the decline. An arrow labeled “Black hole forming” points to the steep drop toward zero.
 
@@ -161,11 +161,11 @@ The sketch for elements with $Z\geq30$ plots abundance relative to hydrogen agai
 | Hydrogen and helium | Big Bang nucleosynthesis |
 | Lithium, beryllium, and boron | Cosmic-ray spallation. Lithium-7 is also boxed and labeled BBN. |
 | Carbon-12 and oxygen-16 | Helium burning |
-| Carbon-13, nitrogen-14, the nuclei labeled “17 C” and “18 C,” and fluorine | CNO cycle and its high-temperature extension |
+| Carbon-13, nitrogen-14, oxygen-17 and oxygen-18 (labeled “17 C” and “18 C”), and fluorine-19 | CNO cycle and its high-temperature extension |
 | Neon through the iron peak | Carbon, neon, oxygen, and silicon burning |
 | $Z\geq30$ | The $s$-, $p$-, and $r$-processes |
 
-A brace on the right links the cosmic-ray note to C, N, and O. The two handwritten labels read as carbon-17 and carbon-18. The surrounding CNO context leaves the element letter uncertain.
+A brace on the right links the cosmic-ray note to C, N, and O. The two handwritten labels read as carbon-17 and carbon-18. These are almost certainly oxygen-17 and oxygen-18, which the CNO cycle and its high-temperature extension produce.
 
 ##### Slow neutron capture
 
@@ -187,53 +187,29 @@ Kyle Kabasares, *Stellar Astrophysics (Physics 241B, UC Irvine 2019)*.
 
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
-| $\mechanical{G}$ | $\unit{m^3\,kg^{-1}\,s^{-2}}$ | Gravitational constant | The proportionality constant in Newton's law of gravitation. |
-| $\mechanical{M}_r$ | $\unit{kg}$ | Enclosed mass | The stellar mass within radius $\mechanical{r}$. |
-| $\mechanical{M}_\odot$ | $\unit{kg}$ | Solar mass | The mass of the Sun. |
-| $\energy{L}_\odot$ | $\unit{W}$ | Solar luminosity | The power radiated by the Sun. |
-| $\mechanical{R}_\odot$ | $\unit{km}$ | Solar radius | The radius of the Sun. |
-| $\mechanical{\rho}$ | $\unit{g\,cm^{-3}}$ | Mass density | The mass per unit volume at the given radius. |
-| $\mechanical{M}$ | $\unit{g}$ | Mass | The enclosed mass in the expression beside the force sketch. |
-| $\mechanical{m}$ | $\unit{g}$ | Mass | The mass acted on by the force. |
-| $\mechanical{M}$ | $\unit{g}$ | Total stellar mass | The upper limit of the integral over the stellar mass. |
-| $\mechanical{R}$ | $\unit{cm}$ | Stellar radius | The radius of the star used in the energy scale. |
-| $\energy{E}$ | $\unit{erg\,g^{-1}}$ | Specific internal energy | The internal energy per unit mass. |
-| $\thermal{T}$ | $\unit{K}$ | Temperature | The local thermodynamic temperature. |
-| $\thermal{S}$ | $\unit{erg\,g^{-1}\,K^{-1}}$ | Specific entropy | The entropy per unit mass. |
-| $t$ | $\unit{s}$ | Time | The independent variable in the virial calculation. |
-| $\mechanical{\vec{p}}$ | $\unit{g\,cm\,s^{-1}}$ | Momentum | The momentum variable in the pressure integral. |
-| $\energy{L}$ | $\unit{erg\,s^{-1}}$ | Stellar luminosity | The rate of energy loss from the contracting star. |
-| $\tau_{\mathrm{dyn}}$ | $\unit{s}$ | Dynamical time scale | The characteristic time for a dynamical response to gravity. |
-| $\langle\mechanical{\rho}\rangle$ | $\unit{g\,cm^{-3}}$ | Mean mass density | The mass of the star divided by its volume. |
-| $\energy{E}$ | $\unit{erg\,cm^{-3}}$ | Thermal energy density | The gas energy per unit volume in the temperature estimate. |
-| $n$ | $\unit{cm^{-3}}$ | Particle number density | The number of gas particles per unit volume. |
-| $\thermal{k}$ | $\unit{erg\,K^{-1}}$ | Boltzmann constant | The conversion factor between temperature and energy per particle. |
-| $\mechanical{\rho}_c$ | $\unit{g\,cm^{-3}}$ | Central mass density | The density at the center, equal to the density throughout the uniform model. |
-| $X_i$ | 1 | Mass fraction | The fraction of the gas mass contributed by species $i$. |
-| $X$ | 1 | Hydrogen mass fraction | The fraction of stellar mass in hydrogen. |
-| $Y$ | 1 | Helium mass fraction | The fraction of stellar mass in helium. |
-| $Z$ | 1 | Metallicity | The fraction of stellar mass in elements heavier than helium. |
-| $\thermal{T}_c$ | $\unit{K}$ | Central temperature | The temperature corresponding to the central pressure and density. |
-| $D$ | $\unit{cm^2\,s^{-1}}$ | Radiative diffusion coefficient | The proportionality factor between energy flux and the radiation energy density gradient. |
-| $a$ | $\unit{erg\,cm^{-3}\,K^{-4}}$ | Radiation constant | The constant in the radiation energy density $a\thermal{T}^4$. |
-| $c$ | $\unit{cm\,s^{-1}}$ | Speed of light | The speed of light in the radiative diffusion relation. |
-| $\tau$ | $\unit{yr}$ | Stellar time scale | The time scale whose fractional change is estimated from the additional loss. |
-| $N$ | 1 | Particle count | The number of particles in the gas volume. |
+| $\mechanical{M}_\odot$ | $\unit{g}$ | Solar mass | The mass of the Sun. |
+| $\mechanical{R}$ | $\unit{cm}$ | White dwarf radius | The radius of a white dwarf. |
+| $\mechanical{R}_\odot$ | $\unit{cm}$ | Solar radius | The radius of the Sun. |
+| $\mechanical{\rho}$ | $\unit{g\,cm^{-3}}$ | Mass density | The mass per unit volume of the white dwarf or of the stellar core. |
 | $\Phi$ | $\unit{pc^{-3}\,mag^{-1}}$ | White dwarf luminosity function | The number density of white dwarfs per bolometric magnitude. |
-| $\energy{E}$ | $\unit{MeV}$ | Electron energy | The energy plotted in the collapse sketch. |
+| $\energy{L}$ | $\unit{erg\,s^{-1}}$ | Luminosity | The luminosity of a white dwarf. |
+| $\energy{L}_\odot$ | $\unit{erg\,s^{-1}}$ | Solar luminosity | The power radiated by the Sun. |
+| $\thermal{T}$ | $\unit{K}$ | Temperature | The temperature of a white dwarf or of the stellar core. |
+| $A$ | 1 | Mass number | The number of nucleons in a nucleus. |
+| $X_i$ | 1 | Mass fraction | The fraction of the gas mass contributed by species $i$. |
+| $\mechanical{M}_r$ | $\unit{g}$ | Enclosed mass | The stellar mass within radius $\mechanical{r}$. |
+| $\mechanical{\vec{p}}$ | $\unit{g\,cm\,s^{-1}}$ | Electron momentum | The momentum of the electrons in the dense core. |
+| $\energy{E}$ | $\unit{MeV}$ | Electron energy | The energy of the electrons, plotted in the collapse sketch. |
 | $f$ | — | Electron distribution | The distribution sketched against electron energy, with no stated normalization. |
 | $\delta\mechanical{m}_{np}$ | $\unit{MeV\,c^{-2}}$ | Neutron–proton mass difference | The mass-difference scale marked near the end of the energy distribution. |
 | $\thermal{S}_\gamma$ | $\unit{erg\,K^{-1}}$ | Radiation entropy | The entropy scale in the plot, expressed in units of the Boltzmann constant. |
-| $\mechanical{m}_e$ | $\unit{kg}$ | Electron mass | The particle mass on the electron side of the degeneracy comparison. |
-| $\mechanical{m}_n$, $\mechanical{M}_n$ | $\unit{kg}$ | Neutron mass | The particle mass on the neutron side of the degeneracy comparison. |
-| $Z$ | 1 | Proton number | The number of protons in the nucleus in the neutron-drip diagram. |
+| $\thermal{k}$ | $\unit{erg\,K^{-1}}$ | Boltzmann constant | The conversion factor between temperature and energy per particle. |
+| $\mechanical{\rho}_c$ | $\unit{g\,cm^{-3}}$ | Central mass density | The density at the center of the core before collapse. |
+| $\thermal{T}_c$ | $\unit{K}$ | Central temperature | The temperature at the center of the core before collapse. |
+| $\tau_{\mathrm{dyn}}$ | $\unit{s}$ | Dynamical time scale | The characteristic time for core collapse under gravity. |
+| $\mechanical{G}$ | $\unit{cm^3\,g^{-1}\,s^{-2}}$ | Gravitational constant | The proportionality constant in Newton's law of gravitation. |
+| $\langle\mechanical{\rho}\rangle$ | $\unit{g\,cm^{-3}}$ | Mean mass density | The mean density of the collapsing core. |
+| $\mechanical{m}_e$ | $\unit{g}$ | Electron mass | The particle mass on the electron side of the degeneracy comparison. |
+| $\mechanical{m}_n$ | $\unit{g}$ | Neutron mass | The particle mass on the neutron side of the degeneracy comparison. |
+| $Z$ | 1 | Proton number | The number of protons in the nucleus. |
 | $N$ | 1 | Neutron number | The number of neutrons in the nucleus in the neutron-drip diagram. |
-| $\tau$ | $\unit{s}$ | Total lifetime | The reciprocal of the sum of the channel rates. |
-| $\mechanical{R}$ | $\unit{m}$ | Nuclear radius scale | The length scale given with the nuclear density. |
-| $\mechanical{m}$ | $\unit{kg}$ | Reduced mass | The reduced mass of the projectile–target pair. |
-| $s$ | $\unit{m}$ | Impact parameter | The transverse offset of the incoming trajectory from the target. |
-| $a$ | $\unit{m}$ | Confinement length | The characteristic electron spacing estimated from position uncertainty. |
-| $K$ | $\unit{dyn\,cm^3\,g^{-5/3}}$ | Polytropic constant | The coefficient of the density power law for the nonrelativistic gas. |
-| $n$ | $\unit{cm^{-3}}$ | Nucleus number density | The nucleus count per volume in the compact-object composition formula. |
-| $n$ | 1 | Polytropic index | The index that determines the density profile and the equation-of-state exponent. |
-| $a$ | $\unit{m}$ | Polytropic length scale | The factor that converts the normalized coordinate to radius. |

@@ -1,0 +1,12 @@
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/07 Category Theory/Category.md
+- FIXED | Composite of f:A→B and g:B→C is g∘f, not f∘g | Changed h = f∘g to h = g∘f, consistent with the associativity law
+- FIXED | Identity law I_e(e)=e applies a morphism to an element | Replaced with f∘id_A = f = id_B∘f for f:A→B and reworded the sentence
+- FIXED | Objects are not elements of a set; morphisms need not be functions | Replaced the set-order and repetition examples with an abstract description and Set, Grp, Vect, poset examples; reworded the morphism definition
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/07 Category Theory/Equivalence.md
+- FIXED | "Two groups" should be two categories with functors F, G and G∘F≅1_C, F∘G≅1_D | Changed to two categories with functors F:C→D and G:D→C whose compositions are naturally isomorphic to the identity functors
+- FIXED | Natural-transformation paragraph omits naturality condition | Added the component family ν_X and the condition G(f)∘ν_X = ν_Y∘F(f); stated natural isomorphism as all ν_X invertible with inverse ν⁻¹:G⇒F
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/07 Category Theory/Functor.md
+- FIXED | "A Functor is a map between two sets" is wrong | Deleted the first sentence
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/07 Category Theory/Isomorphism.md
+- FIXED | The equations are called isomorphisms instead of the morphism f | Rewrote definition: f is an isomorphism if some g satisfies g∘f=id_A and f∘g=id_B; g is unique and written f⁻¹
+- FIXED | "between two sets" should be between two objects; add examples, title, TLDR | Changed to objects of a category; added Set/Grp/Top examples, quoted title and TLDR; converted CRLF to LF

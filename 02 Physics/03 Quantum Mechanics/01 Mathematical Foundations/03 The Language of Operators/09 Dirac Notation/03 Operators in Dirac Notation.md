@@ -54,7 +54,7 @@ Let
 $$
 |\psi\rangle
 =\cos(\signal{\theta}/2)|\uparrow\rangle
-+e^{i\signal{\phi}}\sin(\signal{\theta}/2)|\downarrow\rangle.
++e^{i\signal{\varphi}}\sin(\signal{\theta}/2)|\downarrow\rangle.
 $$
 
 This is the usual Bloch-sphere parametrization. We want to calculate $\langle\sigma_z\rangle=\langle\psi|\sigma_z|\psi\rangle$.
@@ -64,7 +64,7 @@ Since $\sigma_z|\uparrow\rangle=|\uparrow\rangle$ and $\sigma_z|\downarrow\rangl
 $$
 \sigma_z|\psi\rangle
 =\cos(\signal{\theta}/2)|\uparrow\rangle
--e^{i\signal{\phi}}\sin(\signal{\theta}/2)|\downarrow\rangle.
+-e^{i\signal{\varphi}}\sin(\signal{\theta}/2)|\downarrow\rangle.
 $$
 
 Therefore,
@@ -73,9 +73,9 @@ $$
 \begin{aligned}
 \langle\psi|\sigma_z|\psi\rangle
 &=\left(\cos\frac{\signal{\theta}}2\langle\uparrow|
-+e^{-i\signal{\phi}}\sin\frac{\signal{\theta}}2\langle\downarrow|\right)\\
++e^{-i\signal{\varphi}}\sin\frac{\signal{\theta}}2\langle\downarrow|\right)\\
 &\quad\cdot\left(\cos\frac{\signal{\theta}}2|\uparrow\rangle
--e^{i\signal{\phi}}\sin\frac{\signal{\theta}}2|\downarrow\rangle\right)\\
+-e^{i\signal{\varphi}}\sin\frac{\signal{\theta}}2|\downarrow\rangle\right)\\
 &=\cos^2\frac{\signal{\theta}}2-\sin^2\frac{\signal{\theta}}2
 =\cos\signal{\theta}.
 \end{aligned}
@@ -91,5 +91,5 @@ $$
 | --- | --- | --- | --- |
 | $\langle\hat A\rangle_\psi$ | — | Expectation value | The mean result of an observable; its unit depends on that observable. |
 | $\signal{\theta}$ | $1$ | Polar angle | The angle that sets the relative spin-state weights. |
-| $\signal{\phi}$ | $1$ | Relative phase | The phase between the two spin components. |
+| $\signal{\varphi}$ | $1$ | Relative phase | The phase between the two spin components. |
 | $\langle\sigma_z\rangle$ | $1$ | Pauli expectation value | The dimensionless mean of a measurement of the Pauli $z$ observable. |

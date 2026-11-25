@@ -184,7 +184,7 @@ $$
 \left(\mechanical{\mathbf L}+g\mechanical{\mathbf S}\right).
 $$
 
-Here $g$ is the spin $g$-factor. For an electron, $\electric{q}=-\electric{e}$ and $g\approx2$. The notes mention that the electron's magnetic moment has been measured to about ten significant figures. The handwritten estimate for $g-2$ is $(\alpha/4\pi)^2$. The leading correction is $g-2=\alpha/\pi+O(\alpha^2)$, where $\alpha$ is the fine-structure constant. [Schwinger's original calculation](https://journals.aps.org/pr/abstract/10.1103/PhysRev.73.416)
+Here $g$ is the spin $g$-factor. For an electron, $\electric{q}=-\electric{e}$ and $g\approx2$. The notes mention that the electron's magnetic moment is measured to very high precision. A 2023 measurement gives $g/2=1.00115965218059(13)$, a relative uncertainty of $0.13$ parts per trillion, or about 14 significant figures. The handwritten estimate for $g-2$ is $(\alpha/4\pi)^2$. The leading correction is $g-2=\alpha/\pi+O(\alpha^2)$, where $\alpha$ is the fine-structure constant. [Schwinger's original calculation](https://journals.aps.org/pr/abstract/10.1103/PhysRev.73.416)
 
 The magnetic interaction is
 
@@ -201,10 +201,10 @@ For hydrogen in a uniform external magnetic field, choose $\magnetic{\mathbf A}=
 
 $$
 H=
-\frac{1}{2\mechanical{m}}
+\frac{1}{2\mechanical{m}_e}
 \left(\mechanical{\mathbf p}-\frac{\electric{q}}{\mechanical{c}}\magnetic{\mathbf A}\right)^2
 -\frac{\electric{e}^2}{\mechanical{r}}
--\frac{\electric{q}}{\mechanical{m}\mechanical{c}}
+-\frac{\electric{q}}{\mechanical{m}_e\mechanical{c}}
 \mechanical{\mathbf S}\cdot\magnetic{\mathbf B}.
 $$
 
@@ -212,9 +212,9 @@ Expanding about the field-free Hamiltonian $H_0$ gives
 
 $$
 H=H_0
--\frac{\electric{q}}{2\mechanical{m}\mechanical{c}}
+-\frac{\electric{q}}{2\mechanical{m}_e\mechanical{c}}
 \left(\mechanical{\mathbf p}\cdot\magnetic{\mathbf A}+\magnetic{\mathbf A}\cdot\mechanical{\mathbf p}\right)
--\frac{\electric{q}}{\mechanical{m}\mechanical{c}}\mechanical{\mathbf S}\cdot\magnetic{\mathbf B}
+-\frac{\electric{q}}{\mechanical{m}_e\mechanical{c}}\mechanical{\mathbf S}\cdot\magnetic{\mathbf B}
 +O(\magnetic{\mathbf A}^2).
 $$
 
@@ -311,16 +311,16 @@ $$
 =\frac{\mechanical{\mathbf r}}{\mechanical{r}}\frac{dV}{d\mechanical{r}}.
 $$
 
-Combining the spin coupling to the transformed magnetic field with the Thomas factor of $1/2$ gives the spin–orbit term. Replace $\mechanical{\mathbf v}$ by $\mechanical{\mathbf p}/\mechanical{m}$ at this order:
+Combining the spin coupling to the transformed magnetic field with the Thomas factor of $1/2$ gives the spin–orbit term. Replace $\mechanical{\mathbf v}$ by $\mechanical{\mathbf p}/\mechanical{m}_e$ at this order:
 
 $$
 \begin{aligned}
 \Delta H
-&=-\frac{1}{2\mechanical{m}^2\mechanical{c}^2}
+&=-\frac{1}{2\mechanical{m}_e^2\mechanical{c}^2}
 \mechanical{\mathbf S}\cdot(\mechanical{\mathbf p}\times\nabla V)\\
-&=\frac{1}{2\mechanical{m}^2\mechanical{c}^2}
+&=\frac{1}{2\mechanical{m}_e^2\mechanical{c}^2}
 (\nabla V\times\mechanical{\mathbf p})\cdot\mechanical{\mathbf S}\\
-&=\frac{1}{2\mechanical{m}^2\mechanical{c}^2}
+&=\frac{1}{2\mechanical{m}_e^2\mechanical{c}^2}
 \frac{1}{\mechanical{r}}\frac{dV}{d\mechanical{r}}\,
 \mechanical{\mathbf L}\cdot\mechanical{\mathbf S}.
 \end{aligned}
@@ -450,23 +450,28 @@ Kyle Kabasares, *Quantum Mechanics II (Physics 215B, UC Irvine 2018)*.
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
 | $\hbar$ | $\unit{J\,s}$ | Reduced Planck constant | Planck constant divided by $2\pi$. |
-| $\mechanical{m}$ | $\unit{kg}$ | Mass | Particle mass. |
-| $\mechanical{x}$ | $\unit{m}$ | Position | Displacement along the oscillator axis. |
-| $\energy{E}$, $\energy{E}_0$ | $\unit{J}$ | Energy eigenvalue | Energy of an eigenstate, including the common energy of a degenerate subspace. |
-| $\mechanical{z}$, $\mechanical{r}$ | $\unit{m}$ | Vertical position and radius | Position along the drive direction and distance from the origin. |
-| $E$ | $\unit{N}$ | Linear perturbation coefficient | Electric field strength multiplied by the signed charge, with the sign set by the potential convention. |
-| $\Delta\energy{E}$, $\delta\energy{E}$ | $\unit{J}$ | Energy scales | Width over which the continuum factors change and spacing of individual final levels. |
-| $\mechanical{L}$ | $\unit{m}$ | Box side length | Periodic normalization length in each coordinate. |
-| $\mechanical{\mathbf p}$, $\mechanical{\mathbf p}'$ | $\unit{kg\,m\,s^{-1}}$ | Momentum vectors | Momentum before and after scattering. |
-| $\eta$ | $\unit{s^{-1}}$ | Switching rate | Parameter setting the speed of the smooth switch-on. |
-| $\electric{\phi}$ | $\unit{V}$ | Scalar electric potential | Time component of the four-potential multiplied by the speed of light. |
-| $\magnetic{\mathbf A}$ | $\unit{T\,m}$ | Magnetic vector potential | Spatial part of the electromagnetic four-potential. |
-| $c$ | $\unit{m\,s^{-1}}$ | Speed of light | Vacuum light speed used in the time coordinate and Maxwell equations. |
+| $\mechanical{m}$, $\mechanical{m}_e$ | $\unit{kg}$ | Mass | Mass of a general charged particle and electron mass. |
+| $\mechanical{x}$, $\mechanical{y}$, $\mechanical{z}$ | $\unit{m}$ | Cartesian coordinates | Components of the position vector in $\mechanical{\mathbf r}\cdot\boldsymbol\sigma$. |
+| $\mechanical{\mathbf r}$, $\mechanical{r}$, $\mechanical{r}_{12}$ | $\unit{m}$ | Position and distances | Position vector, distance from the nucleus, and distance between the two electrons. |
+| $\mechanical{\mathbf p}$ | $\unit{kg\,m\,s^{-1}}$ | Momentum | Canonical momentum operator of the electron. |
+| $\mechanical{\mathbf v}$ | $\unit{m\,s^{-1}}$ | Velocity | Velocity of the particle in the laboratory frame. |
+| $\mechanical{\mathbf F}$ | $\unit{N}$ | Force | Force on the electron in the central potential. |
+| $V$ | $\unit{J}$ | Potential energy | Central potential energy of the electron. |
+| $H$, $H_0$, $H'$, $\Delta H$ | $\unit{J}$ | Hamiltonians | Full, field-free, first-order magnetic, and spin–orbit Hamiltonians. |
+| $\Delta\energy{E}^{(1)}$ | $\unit{J}$ | First-order Zeeman shift | Energy shift of a hydrogen level in a uniform magnetic field. |
+| $A$ | $\unit{J^{-1}\,s^{-2}}$ | Spin–spin coupling constant | Coefficient of $\mechanical{\mathbf S}_1\cdot\mechanical{\mathbf S}_2$ in the practice problem. |
+| $\electric{\phi}$ | $\unit{V}$ | Scalar electric potential | External scalar potential, set to zero for the uniform magnetic field. |
+| $\magnetic{\mathbf A}$ | $\unit{T\,m}$ | Magnetic vector potential | Vector potential of the uniform magnetic field. |
+| $\magnetic{\mathbf B}$, $\magnetic{B}$, $\magnetic{\mathbf B}'$ | $\unit{T}$ | Magnetic flux density | Laboratory field and the field in the particle rest frame. |
+| $\electric{\mathbf E}$ | $\unit{V\,m^{-1}}$ | Electric field strength | Laboratory electric field. |
+| $\mechanical{c}$ | $\unit{m\,s^{-1}}$ | Speed of light | Vacuum light speed in the Gaussian-unit expressions. |
 | $\electric{q}$ | $\unit{C}$ | Electric charge | Signed charge of the particle, with the value expressed in the unit system used for the potentials. |
 | $\electric{e}$ | $\unit{C}$ | Elementary charge magnitude | Positive magnitude of the proton or electron charge. |
-| $A$, $B$ | $\unit{s^{-1}}$ | Mode emission and absorption coefficients | Spontaneous rate and induced transition rate per photon for a single resonant mode. |
+| $g$ | $1$ | Spin g-factor | Ratio between the spin magnetic moment and the classical value for the same angular momentum. |
+| $\alpha$ | $1$ | Fine-structure constant | Coupling constant in the leading correction to $g-2$. |
 | $\mechanical{\mathbf L}$, $\mechanical{L}_z$ | $\unit{J\,s}$ | Orbital angular momentum | Total orbital angular momentum and its projection on the $z$-axis. |
 | $\mechanical{\mathbf S}$, $\mechanical{S}_i$ | $\unit{J\,s}$ | Spin angular momentum | Intrinsic angular momentum and its Cartesian components. |
 | $\mechanical{\mathbf J}$, $\mechanical{J}_i$ | $\unit{J\,s}$ | Total angular momentum | Sum of orbital and spin angular momentum or of two subsystems' angular momenta. |
+| $j$, $m$, $\ell$, $m_s$ | $1$ | Angular momentum quantum numbers | Total, magnetic, orbital, and spin projection quantum numbers. |
 | $\magnetic{\boldsymbol{\mu}},\magnetic{\mu}_B$ | $\unit{erg/G}$ | Magnetic dipole moment and Bohr magneton | The orbital and spin contributions couple to a magnetic field. |
 | $\electric{\mathbf d}$ | $\unit{statC}\cdot\unit{cm}$ | Electric dipole moment | Effective electric moment of a moving magnetic dipole in Gaussian units. |

@@ -1,0 +1,5 @@
+=== 02 Physics/03 Quantum Mechanics/Hamiltonian of the Hydrogen Atom.md
+- [Correctness] Relativistic correction: $\hat H_{\mathrm{rel}}=-\frac{\hbar^2}{8\mu^2c^2}\nabla^4$ has the wrong dimension; the correct form is $\hat H_{\mathrm{rel}}=-\hat p^4/(8m^3c^2)=-\frac{\hbar^4}{8m^3c^2}\nabla^4$.
+- [Correctness] Spin–orbit term: $\frac{e\hbar}{2\mu c^2r}\mathbf L\cdot\mathbf S$ is not an energy; the SI form is $\hat H_{\mathrm{so}}=\frac{e^2}{8\pi\varepsilon_0m^2c^2r^3}\hat{\mathbf L}\cdot\hat{\mathbf S}$ (including the Thomas factor 1/2).
+- [Correctness] Darwin term: $\frac{e^2\hbar^2}{8\mu c^2\epsilon_0}\delta(\mathbf r)$ is missing a mass factor; the correct form is $\hat H_D=\frac{e^2\hbar^2}{8\varepsilon_0m^2c^2}\delta^3(\mathbf r)$. Also $e$ is the elementary charge (a magnitude), not "the charge of the electron".
+

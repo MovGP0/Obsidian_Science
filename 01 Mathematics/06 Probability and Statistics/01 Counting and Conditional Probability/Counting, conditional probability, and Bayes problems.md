@@ -149,7 +149,7 @@ For two independent fair flips, each of the four joint outcomes has probability 
 
 Two events $A$ and $B$ are **independent** if $P(A\cap B)=P(A)P(B)$.
 
-In five independent flips, exactly one head has probability $5p(1-p)^4$. Exactly two heads have probability $\binom52p^2(1-p)^3=10p^2(1-p)^3$, since $\binom52=5!/(3!2!)=20/2=10$.
+In five independent flips, exactly one head has probability $5p(1-p)^4$. Exactly two heads have probability $\binom52p^2(1-p)^3=10p^2(1-p)^3$, since $\binom52=5!/(3!\,2!)=(5\cdot4)/2=10$.
 
 ##### An infinite sample space
 

@@ -1,0 +1,27 @@
+=== 03 Engineering/01 Robotics/Configuration Space.md
+- [Correctness] The opening bullet "Defines the number of possible configurations" is wrong: the C-space is the set (manifold) of all configurations, and its dimension equals the [[Degrees of Freedom]]; rewrite both bullets to say this.
+- [Correctness] Torus row "$(φ₁, φ₂) ∈ S²$" and 3-torus row "$(φ₁, φ₂, φ₃) ∈ S³$" clash with the sphere row, where $S^2$ means the 2-sphere; write $S^1\times S^1 = T^2$ and $S^1\times S^1\times S^1=T^3$, and rename $S$ to $S^1$ throughout.
+- [Correctness] The callout "$S = [0,2π)$" gives an interval, which is not topologically a circle; state that $S^1$ is $[0,2\pi]$ with $0$ and $2\pi$ identified. The sphere row "$(θ, φ) ∈ [0,π)×S$" leaves out the pole at $θ=\pi$ and is only a chart, not the sphere itself; say $S^2$ is parametrized by $θ\in[0,\pi]$, $φ\in S^1$ with singular poles.
+- [Correctness] "Sphere Surface – Constant-radius orientation manifold" and "Helical Space $(x,y,z,φ)$ – Screw motion" are misleading: orientations of a rigid body form $SO(3)$, not $S^2$, and a screw (helical) joint has a 1-D C-space because translation is tied to rotation, while $(x,y,z,φ)$ is $\mathbb{R}^3\times S^1$; fix or remove these rows.
+
+=== 03 Engineering/01 Robotics/Degrees of Freedom.md
+- [Correctness] "If geometric or kinematic dependencies exist ... Grübler’s result overestimates mobility" is backwards: dependent constraints are counted as if independent, so Grübler subtracts too many and gives a lower bound; actual DoF $\ge$ Grübler.
+- [Correctness] The second image under "Examples for dependence of constraints" has 5 bodies (ground, 3 parallel links, coupler) and 6 revolute joints, not "6 linkages"; Grübler gives $3(5-1-6)+6=0$, but it moves with 1 DoF because the third parallel link adds a redundant constraint. State this calculation explicitly, since it is the real dependence example.
+- [Correctness] The four-bar is not an example of dependent constraints: $3(4-1-4)+4=1$ agrees with the actual mobility. Move it to a separate "worked Grübler example" subsection, and show the Stewart platform count $6(14-1-18)+(6\cdot2+6\cdot1+6\cdot3)=6$ for the third example.
+- [Correctness] The definition "required to describe the stationary state of a system" is wrong: DoF is the minimum number of real coordinates needed to specify the configuration (velocities not included); "stationary" should go. Also fix the "Wikpedia" typo in See also.
+
+=== 03 Engineering/01 Robotics/Holonomic and Pfaffian constraints.md
+- [Correctness] The displayed matrix uses entries $\partial g_i/\partial\theta_j$, which is the Jacobian of position constraints $g(\theta)=0$, i.e. exactly an integrable (holonomic) constraint; the text then calls this "the defining feature of Pfaffian (non-integrable) constraints". Write the general form with arbitrary rows $A_{ij}(\theta)$ and present the Jacobian case as the holonomic special case.
+- [Correctness] "Pfaffian (non-integrable)" and the closing bullet equate Pfaffian with nonholonomic; Pfaffian only means linear in velocities, $A(\theta)\dot\theta=0$, and it is holonomic iff integrable (Frobenius). Rewrite the note callout to say this.
+
+=== 03 Engineering/01 Robotics/Unicycle Model.md
+- [Correctness] The expansion under "Pfaffian Form" reads "$A(q)\dot{q} 0\cdot\dot\phi - \sin\phi , \dot x - \cos\phi , \dot y = 0$": it is missing "=", has the wrong sign on $\sin\phi\,\dot x$, and uses "," instead of "\,"; it should be $A(q)\dot q = 0\cdot\dot\phi + \sin\phi\,\dot x - \cos\phi\,\dot y = 0$.
+- [Correctness] The column vector $\dot q$ uses "\ " instead of "\\" as row separators, so it renders as a single row; also line 91 "aligned with (\phi)" is not in math delimiters.
+- [Correctness] The unicycle has no steering angle: its inputs are $v$ and $\omega=\dot\phi$. Add the missing equation $\dot\phi=\omega$, and either restate "Relation to the Steering Angle" in terms of curvature $\kappa=\omega/v$ or link to the kinematic bicycle (car) model, where $\dot\phi=(v/L)\tan\delta$. Remove the references to "the paths on the right" and "the slide", which point to a figure that is not in the note.
+
+=== 04 Reference/02 Units and Constants/SI Base Units.md
+- [Correctness] The unit relations leave out the defining numerical values: "$1\,\mathrm m=c\cdot1\,\mathrm s$" gives 299 792 458 m; it should be $1\,\mathrm m=\frac{c}{299\,792\,458}\cdot1\,\mathrm s$. Similarly $1\,\mathrm{kg}=\frac{h}{6.626\,070\,15\times10^{-34}}\,\mathrm{m^{-2}\,s}$, $1\,\mathrm A=\frac{e}{1.602\,176\,634\times10^{-19}}\,\mathrm{s^{-1}}$, $1\,\mathrm K=\frac{1.380\,649\times10^{-23}}{k}\,\mathrm J$; the note's "$\frac{h}{c^2}\cdot1\,\mathrm{Hz}$", "$e\cdot1\,\mathrm{Hz}$" and "$\frac hk\cdot1\,\mathrm{Hz}$" are off by those factors.
+- [Correctness] "$1\mathrm{mol}=N_A\cdot1\,\mathrm{Hz}$" is dimensionally wrong (mol vs Hz/mol); it should be $1\,\mathrm{mol}=\frac{6.022\,140\,76\times10^{23}}{N_A}$.
+- [Correctness] "$ℏ=\frac{2\pi}{h}$" is inverted; it is $\hbar=\frac{h}{2\pi}$.
+- [Correctness] The table omits the candela (7th base unit) and the defining constants $\Delta\nu_{\mathrm{Cs}}=9\,192\,631\,770\,\mathrm{Hz}$ (needed for the empty "s" row), $e=1.602\,176\,634\times10^{-19}\,\mathrm C$ (used for the ampere but not listed) and $K_{\mathrm{cd}}=683\,\mathrm{lm/W}$; also fix "Avogrado" → Avogadro.
+

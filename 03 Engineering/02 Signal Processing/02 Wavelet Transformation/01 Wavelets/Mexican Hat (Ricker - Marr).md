@@ -4,7 +4,7 @@
 A real, symmetric wavelet obtained as the (negative) second derivative of a unit-variance Gaussian:
 $$
 \psi(t)
-   = -\frac{d^{2}}{dt^{2}}\bigl[e^{-t^{2}/2}\bigr]
+   = \frac{2}{\sqrt{3}\,\pi^{1/4}}\,\Bigl(-\frac{d^{2}}{dt^{2}}\bigl[e^{-t^{2}/2}\bigr]\Bigr)
    = \frac{2}{\sqrt{3}\,\pi^{1/4}}\,
      \bigl(1-t^{2}\bigr)\,e^{-t^{2}/2}.
 $$
@@ -27,7 +27,7 @@ $$
      \pi^{1/4}\,\omega^{2}\,e^{-\omega^{2}/2},
 $$
 
-i.e. a band-pass (zero at ω=0\omega=0 and Gaussian decay for large ∣ω∣|\omega|) whose peak energy is centered around
+i.e. a band-pass (zero at $\omega=0$ and Gaussian decay for large $|\omega|$) whose peak energy is centered around
 
 $$
 |\omega|\approx\sqrt{2}
@@ -54,7 +54,8 @@ hence the CWT admits an exact inversion with
 $$
 C_\psi
   = \int_{0}^{\infty}\frac{|\widehat{\psi}(\omega)|^{2}}{\omega}\,d\omega
-  \approx 0.3761.
+  = \frac{4\sqrt{\pi}}{3}
+  \approx 2.363.
 $$
 
 
@@ -108,11 +109,11 @@ $$
 | Symmetry          | Even                                                                           |
 | Regularity        | $C^{\infty}$ (all derivatives exist and decay like Gaussians)                  |
 | Vanishing moments | $m=2$                                                                          |
-| Main lobe FWHM    | $\approx2.3548$ in time; $\approx\!1.177$ in frequency                         |
+| Main lobe FWHM    | $\approx1.252$ in time (central lobe); $\approx1.633$ in frequency (peak of $\lvert\widehat{\psi}(\omega)\rvert$) |
 | Best uses         | Detecting sharp, blob-like structures; edge curvature; seismic trace modelling |
 ### Relation to other wavelet families
 
-- **Derivative-of-Gaussian (DoG n_n)**: the Mexican-Hat is $\text{DoG}_2$. Higher-order DoG wavelets increase the number of vanishing moments.
+- **Derivative-of-Gaussian (DoG$_n$)**: the Mexican-Hat is $\text{DoG}_2$. Higher-order DoG wavelets increase the number of vanishing moments.
 - **Laplacian of Gaussian (LoG)** in 2-D image analysis is the direct 2-D analogue—again the negative Laplacian of a Gaussian.
 - **Approximation by Difference-of-Gaussians** (DoG filter bank) offers a separable, fast-convolution surrogate in computer vision pipelines.
 
@@ -122,4 +123,4 @@ $$
 > Because the tails are Gaussian, a span of ±5 σ already captures > 99 % of the $L^{2}$ energy.
 
 > [!note] Numerics
-> Most CWT libraries (e.g. **PyWavelets**: wavelet tag `mexh`, **SciPy**: `signal.ricker`) implement the unit-norm form above by default
+> Most CWT libraries (e.g. **PyWavelets**: wavelet tag `mexh`, **SciPy**: `signal.ricker`, deprecated in SciPy 1.12 and removed in 1.15) implement the unit-norm form above by default

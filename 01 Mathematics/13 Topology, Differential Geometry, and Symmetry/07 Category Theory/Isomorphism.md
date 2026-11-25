@@ -1,4 +1,16 @@
-If there is a morphism $f : A \rightarrow B$ and another morphism $f^{-1} : B \rightarrow A$, than $f ∘ f^{-1} = I_B$ and $f^{-1} ∘ f = I_A$ are **Isomorphisms**.
+---
+title: "Isomorphism"
+---
 
-If there isomorphisms between two sets $A$ and $B$ exists, then the sets are isomorph (indicated using the operator $\cong$):
+> [!TLDR]
+> An isomorphism is a morphism that has an inverse morphism. Isomorphic objects have the same structure in their category.
+
+A morphism $f : A \rightarrow B$ is an **isomorphism**, when there is a morphism $g : B \rightarrow A$, such that $g ∘ f = \mathrm{id}_A$ and $f ∘ g = \mathrm{id}_B$. Then $g$ is unique, and it is written $f^{-1}$.
+
+If an isomorphism between two objects $A$ and $B$ of a category exists, then the objects are isomorphic (indicated using the operator $\cong$):
 $$A \cong B$$
+
+Examples:
+- In $\mathbf{Set}$, the isomorphisms are the bijections.
+- In $\mathbf{Grp}$, the isomorphisms are the group isomorphisms.
+- In $\mathbf{Top}$, the isomorphisms are the homeomorphisms.

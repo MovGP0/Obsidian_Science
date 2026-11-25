@@ -4,13 +4,19 @@ The scale transformation is **uniform** when all axes are scaled by the same fac
 
 ## Definition
 
-A matrix $M$ is *scaling a vector field*, if it's [[Determinant of a Matrix|Determinant]] is not equal to 1.
+A **scaling matrix** is a diagonal matrix $S=\operatorname{diag}(s_x, s_y, \ldots)$. Each diagonal entry is the scale factor along one axis.
+
+The absolute value of its [[Determinant of a Matrix|Determinant]], $|\det S| = |s_x\,s_y\cdots|$, is the volume factor. The determinant alone does not identify a scaling matrix: $\operatorname{diag}(2, 1/2)$ scales both axes and has determinant 1.
 
 When the Determinant is negative, it is also **reflecting** (mirroring) the vector field.
 
 ## Scaling Matrix in $ℝ^2$
 
-A **2D scaling transformation** scales an object along the x-axis and y-axis. The transformation matrix is:
+A **2D scaling transformation** scales an object along the x-axis and y-axis. The linear transformation matrix is:
+
+$$S = \begin{bmatrix} s_x & 0 \\ 0 & s_y \end{bmatrix}$$
+
+In homogeneous coordinates, the matrix is $3\times3$:
 
 $$S_{2D} = \begin{bmatrix} s_x & 0 & 0 \\ 0 & s_y & 0 \\ 0 & 0 & 1 \end{bmatrix}$$
 
@@ -26,7 +32,7 @@ $$P' = \begin{bmatrix} s_x & 0 & 0 \\ 0 & s_y & 0 \\ 0 & 0 & 1 \end{bmatrix} \be
 
 ## Scaling Matrix in $ℝ^3$
 
-A **3D scaling transformation** extends the 2D scaling to include the z-axis:
+A **3D scaling transformation** extends the 2D scaling to include the z-axis. The linear matrix is $\operatorname{diag}(s_x, s_y, s_z)$. In homogeneous coordinates, the matrix is $4\times4$:
 
 $$S_{3D} = \begin{bmatrix} s_x & 0 & 0 & 0 \\ 0 & s_y & 0 & 0 \\ 0 & 0 & s_z & 0 \\ 0 & 0 & 0 & 1 \end{bmatrix}$$
 
@@ -44,7 +50,7 @@ $$P' = \begin{bmatrix} s_x & 0 & 0 & 0 \\ 0 & s_y & 0 & 0 \\ 0 & 0 & s_z & 0 \\ 
 
 Scaling can also be extended to **4D space**, which is useful in physics (relativity), game engines, and computer graphics for transformations in higher dimensions.
 
-The **4D scaling transformation** matrix is:
+The linear **4D scaling transformation** matrix is $\operatorname{diag}(s_x, s_y, s_z, s_w)$. In homogeneous coordinates, the matrix is $5\times5$:
 
 $$S_{4D} = \begin{bmatrix} s_x & 0 & 0 & 0 & 0 \\ 0 & s_y & 0 & 0 & 0 \\ 0 & 0 & s_z & 0 & 0 \\ 0 & 0 & 0 & s_w & 0 \\ 0 & 0 & 0 & 0 & 1 \end{bmatrix}$$
 

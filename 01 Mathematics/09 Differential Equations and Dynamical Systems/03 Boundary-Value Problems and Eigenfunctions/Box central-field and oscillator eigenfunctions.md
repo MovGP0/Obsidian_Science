@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Box, central-field, and oscillator eigenfunctions"
 catalogue_ids:
   - "9.2.4.5"
@@ -76,7 +76,7 @@ Two integrations by parts give the integral $1/4$. This verifies an eigenfunctio
 
 ## The linear harmonic oscillator
 
-On the real line take $H=-d^2/dx^2+x^2$. The adjective “linear” describes its dependence on the unknown function, although $V=x^2$ is quadratic in the independent variable. Seek square-integrable solutions of $-\phi''+x^2\phi=\varepsilon\phi$.
+On the real line take $H=-d^2/dx^2+x^2$. The adjective “linear” refers to the one-dimensional oscillator whose restoring force is linear in the displacement, so the potential $V=x^2$ is quadratic in $x$. Seek square-integrable solutions of $-\phi''+x^2\phi=\varepsilon\phi$.
 
 The Gaussian $\phi_0=\pi^{-1/4}e^{-x^2/2}$ works because $\phi_0''=(x^2-1)\phi_0$, giving $\varepsilon_0=1$. Its normalization uses $\int_{-\infty}^{\infty}e^{-x^2}dx=\sqrt\pi$. The familiar Gaussian integral can be derived by squaring it and using polar coordinates.
 

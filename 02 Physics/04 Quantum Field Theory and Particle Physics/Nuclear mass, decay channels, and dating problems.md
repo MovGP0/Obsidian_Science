@@ -70,7 +70,7 @@ The scattering sketch shows deflection by a nucleus. The Coulomb potential energ
 
 ![[Kyle Kabasares - Modern Physics - Alpha scattering and nuclear radius.png|**Fig. 57** Deflection of an alpha particle near a nucleus.]]
 
-The second sketch shows polonium-210 alpha particles hitting beryllium, producing penetrating radiation that passes through lead and ejects protons from paraffin. The handwritten proton energy is labeled $5.7\,\unit{keV}$.
+The second sketch shows polonium-210 alpha particles hitting beryllium, producing penetrating radiation that passes through lead and ejects protons from paraffin. The handwritten proton energy is labeled $5.7\,\unit{keV}$. This label is a slip: the recoil protons had energies up to about $5.7\,\unit{MeV}$.
 
 ![[Kyle Kabasares - Modern Physics - Neutron discovery sketch.png|**Fig. 58** Beryllium, lead, and paraffin in the neutron-discovery sketch.]]
 
@@ -151,10 +151,10 @@ The potential sketches compare long-range Coulomb attraction for an electron and
 
 ![[Kyle Kabasares - Modern Physics - Coulomb and nuclear potentials.png|**Fig. 59** Coulomb and nuclear potential sketches and neutron–proton scattering.]]
 
-A nucleus is energetically stable against a breakup into $R$ and $S$ when its mass is smaller than the combined product mass.
+A nucleus is energetically stable against a breakup into $P_1$ and $P_2$ when its mass is smaller than the combined product mass.
 
 $$
-\energy{B}_{R+S}=[\mechanical{M}(R)+\mechanical{M}(S)-\mechanical{M}(\,{}_Z^AX)]c^2.
+\energy{B}_{P_1+P_2}=[\mechanical{M}(P_1)+\mechanical{M}(P_2)-\mechanical{M}(\,{}_Z^AX)]c^2.
 $$
 
 A positive value means the breakup requires energy. A negative value makes that channel energetically possible. The starred remark allows for persistence despite a negative value, as may occur when a decay is strongly inhibited.
@@ -174,7 +174,7 @@ $$
 
 For $\,{}^8\mathrm{Be}\to2\alpha$, compare $2\mechanical{M}(\,{}^4\mathrm{He})$ with $\mechanical{M}(\,{}^8\mathrm{Be})$.
 
-For $\,{}^8\mathrm{Be}\to2\alpha$, the mass difference in the order products minus parent is $[2(4.002603)-8.005305]\,\unit{u}$. Multiplying by $c^2$ gives approximately $-0.093\,\unit{MeV}$, so the breakup is energetically allowed.
+For $\,{}^8\mathrm{Be}\to2\alpha$, the mass difference in the order products minus parent is $[2(4.002603)-8.005305]\,\unit{u}$. Multiplying by $c^2$ gives approximately $-0.0922\,\unit{MeV}$, so the breakup is energetically allowed.
 
 For radioactive decay, $R=\lambda N(t)$ and $N(t)=N_0e^{-\lambda t}$. The half-life and mean lifetime are
 
@@ -255,8 +255,14 @@ Kyle Kabasares, *Modern Physics (Physics 10, UC Merced 2014)*.
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
 | $\electric{e}$ | $\unit{C}$ | Elementary charge | Magnitude of the electron charge. |
-| $\varepsilon$ | $1$ | Emissivity | Ratio of emitted power to that of a blackbody at the same temperature. |
-| $\energy{V}$ | $\unit{J}$ | Potential energy | Position-dependent multiplication term in the Hamiltonian. |
+| $\electric{\varepsilon_0}$ | $\unit{F/m}$ | Vacuum permittivity | Electric constant in the Coulomb potential energy. |
+| $\energy{V}$ | $\unit{J}$ | Potential energy | Coulomb potential energy of two unit positive charges. |
+| $A$ | $1$ | Mass number | Total number of protons and neutrons in a nucleus. |
+| $Z$ | $1$ | Atomic number | Number of protons in a nucleus. |
+| $N$ | $1$ | Neutron number | Number of neutrons in a nucleus. |
+| $N(t)$, $N_0$ | $1$ | Number of radioactive nuclei | Number of undecayed nuclei at time $t$ and at $t=0$. |
+| $\mechanical{R}$, $R_0$ | $\unit{fm}$ | Nuclear radius | Radius $\mechanical{R}=R_0A^{1/3}$ of a nucleus. |
+| $\mechanical{M}$ | $\unit{u}$ | Atomic mass | Mass of a neutral atom or of a product. |
 | $\magnetic{\mu}_B$ | $\unit{J/T}$ | Bohr magneton | Scale of the electron orbital magnetic moment. |
 | $\lambda$ | $\unit{s^{-1}}$ | Decay constant | Probability rate for the decay of an individual nucleus. |
 | $R$ | $\unit{Bq}$ | Activity | Number of radioactive decays per unit time. |

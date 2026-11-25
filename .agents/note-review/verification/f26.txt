@@ -1,0 +1,39 @@
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/07 Electroweak Interactions of Quarks/7.1 The Standard Electroweak Theory -  Preliminaries.md
+- FIXED | Photon vertex factor misses the coupling e | Vertex now -ie Q_q gamma_mu; added an e (elementary charge) row to the quantities table that separates it from the electron field e
+- FIXED | (7.1.33) mass matrix misses v/sqrt2 and the "with f=u,d" fragment is misplaced | (7.1.33) now M^f = (v/sqrt2) V_L zeta V_R^dagger; moved the "with f=u,d ... (7.1.34) ... (7.1.27)" text to directly after (7.1.33)
+- FIXED | Color-index sentence is logically inverted | Changed "Whenever it is necessary to retain" to "Except where it is necessary to retain"
+- FIXED | Dated cos theta_C and K+ -> pi+ nu nubar values | Kept source values; added dated note callouts after (7.1.12) (PDG 2024 |V_ud| = 0.97367 +- 0.00032, also refers to (7.1.28)) and after (7.1.17) (NA62 2024 value)
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/07 Electroweak Interactions of Quarks/7.11 The Hierarchy Problem.md
+- FIXED | Planck mass (hbar c/G_N)^(1/2) given in GeV mixes units | Value now 1.2e19 GeV/c^2; table unit changed to GeV/c^2 with a remark that it is an energy in GeV when c = 1
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/07 Electroweak Interactions of Quarks/7.12 The Vacuum Energy Problem.md
+- FIXED | Gravity/electrostatic ratio for e-p is not 41 orders of magnitude | Recomputed ratio 4.4e-40; text now says about 40 orders of magnitude and gives the ratio
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/07 Electroweak Interactions of Quarks/7.2 Electroweak Gauge Bosons.md
+- FIXED | (7.2.11) first line uses widths and double-counts color | First line now 3[2(L_u^2+R_u^2)+3(L_d^2+R_d^2)], consistent with the second line and (7.2.10)
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/07 Electroweak Interactions of Quarks/7.3 Electron-Positron Annihilations.md
+- FIXED | (7.3.10) 32x_W^2/3 should be 32x_W^2/9 | Changed to 32x_W^2/9 (= L_u^2+R_u^2), as in (7.2.11) and (7.3.19b)
+- FIXED | (R_i-L_i) = tau_3 has the wrong sign | Checked R_e-L_e = +1 with tau_3(e) = -1; text now (R_i-L_i) = -tau_3^(i), consistent with (7.3.14)
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/07 Electroweak Interactions of Quarks/7.4 Deeply Inelastic Lepton-Hadron Scattering.md
+- FIXED | (7.4.70) prefactor E'E should be E'/E | Checked dimensions (GeV^-5) and the Jacobian 2ME^2y to (7.4.71); prefactor now (G_F^2/2pi)(E'/E)
+- FIXED | (7.4.97) misses the unit | Recomputed 7.19e-5 GeV^-2; added GeV^-2
+- FIXED | N clash, Gamma_2^2(q^2), and missing absolute value in (7.4.47) | Table row for N now says N is also the target-nucleon label in reactions; Gamma_2^2(q^2) changed to Gamma_2^2(Q^2); (7.4.47) now 1/|dh/dx|
+- FIXED | Outdated M_W world average and "most precise to date"/"recent" wording | Added a dated note callout after the paragraph: wording refers to 2012; PDG 2024 M_W = 80.369 +- 0.013 GeV
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/07 Electroweak Interactions of Quarks/7.5 Hadron-Hadron Interactions.md
+- FIXED | (7.5.9) Jacobian needs the square root | Checked d(x,tau)/d(x_a,x_b) = x_a+x_b and the integration to (7.5.11); denominator now (x^2+4tau)^(1/2)
+- FIXED | 1.96 GeV should be 1.96 TeV; CMS is Compact Muon Solenoid | Changed both
+- FIXED | Outdated LHC energies, M_W, W' and Z' limits | Added a dated note callout before the quantities table (13 and 13.6 TeV, PDG 2024 M_W, CDF 2022, W' about 6 TeV, Z' about 5 TeV)
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/07 Electroweak Interactions of Quarks/7.6 Further Tests of the Electroweak Theory.md
+- FIXED | B_s -> mu mu SM value written as a bound with "<" | Changed to "=" (SM value) and stated the bound separately as about 4.2e-9 (1.2 x 3.5e-9); observation added in the update callout
+- FIXED | "CMK paradigm" typo | Changed to CKM
+- FIXED | Outdated S_u, charm CPV, top FCNC, fourth generation | Added a dated note callout (S_u about 0.998, Cabibbo-angle anomaly, LHCb 2019 charm CPV, top FCNC 1e-5 to 1e-4, fourth generation excluded by Higgs rate, B_s -> mu mu observed)
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/07 Electroweak Interactions of Quarks/7.7 A Brief Look at Quantum Corrections.md
+- FIXED | Superseded g/2, m_t, Higgs fit values | Added a dated note callout after the Higgs-fit paragraph (2023 electron g/2, QED to (alpha/pi)^5, PDG 2024 m_t and M_H, consistency with 92+34-26 GeV at about 1 sigma)
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/07 Electroweak Interactions of Quarks/7.8 The Scale of Fermion Masses.md
+- FIXED | Last paragraph on Higgs-fermion couplings is outdated | Added a dated note callout: couplings to t, b, tau observed, evidence for mu (not yet a 5 sigma observation), proportional to mass, He-ebar coupling not established
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/07 Electroweak Interactions of Quarks/7.9 Search for the Higgs Boson.md
+- FIXED | Missing update on Higgs mass, spin-parity, decays, fourth generation | Added a dated note callout before the quantities table; H -> mu mu stated as evidence, not observation
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/07 Electroweak Interactions of Quarks/7.P Problems.md
+- FIXED | Problem 7.3(a) V_ub = A lambda^2 should be V_cb | Changed to V_cb = A lambda^2
+- FIXED | Problem 7.4 condition i != j should be i != k | Changed to i != k
+- FIXED | Problem 7.19 duplicate (b) and missing comma | Second (b) relabelled (c); added the comma after e+e-
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/08 Strong Interactions among Quarks/8.1 A Color Gauge Theory.md
+- FIXED | (8.1.20) T^(i).T^(i) should be T^(i).T^(j) | Changed the left side to sum_{i<j} <T^(i).T^(j)>

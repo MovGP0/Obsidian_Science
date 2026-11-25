@@ -1,0 +1,44 @@
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/12 Hydrogen Atom/Atomic spectra and wave mechanics review problems.md
+- FIXED | Infinite well E1 is 37.6 eV, not 37.7 eV | Changed E1 to 37.6 eV and E2, E3, E4 to 150.4, 338.4, 601.6 eV (recomputed: 6.02e-18 J = 37.60 eV)
+- FIXED | Problem 6-16 gives L = 0.795 nm, not 0.791 nm | Changed result to 0.795 nm (sqrt(3 h lambda/(8 m_e c)) = 0.7948 nm)
+- FIXED | 11.4(a) item 4 transition unstated and sign of Delta E wrong | Stated that 2.55 eV matches emission n_i=4 to n_f=2 and wrote the positive photon energy as abs(Delta E) = E_i - E_f = 13.6 eV (1/n_f^2 - 1/n_i^2)
+- FIXED | Table has unused radioactive-decay rows lambda, R, tau and lacks used symbols | Replaced the three decay rows with k, kappa, eta, vec L, L_z, m_ell, j, m_j, psi
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/12 Hydrogen Atom/Hydrogen, spin, and the structure of the periodic table.md
+- FIXED | Helium 1s2p 3P ordering: multiplet is inverted, 3P0 is not lowest | Kept the Hund-rule exercise statement, added that only triplet-below-singlet is valid here and that measured 2 3P has 3P2 lowest and 3P0 highest, about 30 GHz above 3P1
+- FIXED | Table has unused emissivity, decay constant, activity, lifetime rows | Replaced epsilon by epsilon_0 and the decay rows by R(r), vec tau, vec L, L_z, g_s, vec B
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/12 Hydrogen Atom/Three-dimensional wells and hydrogen wavefunctions.md
+- FIXED | Table lists R,T as reflection/transmission and Z as atomic number | Replaced with R (spatial/radial function), T (time factor), removed Z, added mu, u, ell, m, Y_ell^m, P_ell^m, j_ell, n_ell, beta_nl, a
+- FIXED | m is both mass and magnetic quantum number, Y both Cartesian factor and angular function | Renamed the particle mass to mu throughout the note and the Cartesian factors X,Y,Z to f(x)g(y)h(z)
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/14 Many-Particle Systems and Identical Particles/14.08 Many-Particle Systems and Identical Particles Exercises.md
+- FIXED | Psi_pm well states clash with Bell states Psi^pm | Renamed the well states to Psi_S (symmetric) and Psi_A (antisymmetric) in Exercises 4, 6, 7, 8 and the table; did not use Phi because Phi^pm are also Bell states
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/16 Perturbation Theory/Degenerate perturbation theory and oscillator transitions.md
+- FIXED | Table lists absent symbols (E in N, Delta E/delta E, c, V_0/V, A/B) and misses used ones | Removed those rows, added H/H_0/V, C_ii', epsilon, alpha, a_x/a_y, K_ij, U, Theta, and corrected the E_0 description
+- PARTLY | C_ii' vs C_ij clash, and lambda used for quartic coupling, lambda_j shifts, lambda_n coupling | Renamed the quadratic-form matrix to K_ij and the frequency shifts to kappa_j; kept lambda and lambda_n because both are potential couplings of the same kind distinguished by the subscript
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/16 Perturbation Theory/Einstein coefficients and electric dipole transition rates.md
+- PARTLY | Table contradicts note and lists unused symbols including Gamma | Rebuilt the table from used symbols (L box length, R well radius, N states, E in N, p/p', omega_j, t_0, Delta t removed; E_0, N fixed; P_i, alpha, A(k,s), phi, r, H_0, dP/dOmega, X, Y added); Gamma is used (Gamma_n->i^ind), so kept it as the induced emission rate
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/16 Perturbation Theory/Heisenberg and interaction pictures in perturbation calculations.md
+- FIXED | Table lists unused P,V gas, V_0, A,B, c, omega_j, degenerate E_0 | Removed those rows, fixed omega and E rows, added H/H_0/V, V_mn, U/U_0/U_I, V_I, O_S/O_H/O_I, c_n, script T, Theta (kept F, x_0, E in N, z, r, which this note does use)
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/16 Perturbation Theory/Light–matter coupling, absorption, and induced emission.md
+- FIXED | Table lists unused or wrong symbols (omega_j, t_0, Delta t, E in N, duplicate script E in N, p', N states, A,B Einstein, molar v, E_0) | Removed unused rows, replaced A,B by mode amplitude A(k,s), N by photon number, p/p' by p_e/p_p, fixed omega, k, Gamma, Omega and E_0 descriptions
+- FIXED | Crossing length ell clashes with partial-wave ell | Renamed the crossing length to d in the text and the table
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/16 Perturbation Theory/Time-dependent transition rates and the golden rule.md
+- FIXED | Delta E is both E_n - E_0 and the smoothness energy scale | Renamed the smoothness scale to W in the validity window and split the table row into Delta E and W, delta E
+- FIXED | F described as negative of applied force though H contains -F x; unused rows | Described F as the applied force (driving term -F x, consistent with x_0 = F/(m omega^2)); removed omega_j, F_0, z, E in N, c, V_0, A/B, dP_rad/dOmega, Delta t; added V and V_n0
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/18 Geometric Phases/18.07 Generalizations and Outlook.md
+- FIXED | Link claims chapter 19 applies Berry curvature, but no chapter 19 note mentions it | Rephrased as an outlook beyond the course and kept the link only as the place where crystal bands are introduced
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/21 Complete Solutions to the Exercises/21.01 Solutions for the Crisis of Classical Physics.md
+- FIXED | a means acceleration and slit width; table misses a, r_e, P, v | Renamed the Exercise 7 acceleration to a_c and added rows a, a_c, v, r_e, P; converted CRLF to LF
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/21 Complete Solutions to the Exercises/21.09 Solutions for Orbital Angular Momentum.md
+- FIXED | R is sphere radius and radial function; M, omega, R missing from table | Renamed the Exercise 10 radial function to script R(r) and added m, M, R, omega, script R rows; converted CRLF to LF
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/21 Complete Solutions to the Exercises/21.13 Solutions for the Density Matrix and Decoherence.md
+- FIXED | gamma is gyromagnetic ratio and dephasing rate | Renamed the Exercise 11 dephasing parameter to Gamma (L = sqrt(Gamma) sigma_z, T_phi = 1/(2 Gamma)) and updated the table; converted CRLF to LF
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/21 Complete Solutions to the Exercises/21.14 Solutions for Identical Particles.md
+- FIXED | L is well width and orbital term label | Renamed the well width to w in Exercises 3, 4, 6, 7 and the table (a was not used because a, b already label orbitals in Exercises 6 and 7); converted CRLF to LF
+- REJECTED | n is orbital index and number density | The orbital index n=1 is a label, not a physical quantity, and n=N/V is the notation of the exercise statement in 14.08, so no ambiguity in a table or equation
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/21 Complete Solutions to the Exercises/21.17 Solutions for Symmetries and Conservation Laws.md
+- FIXED | Table lists Gamma but no Gamma appears | Introduced Gamma_2p and Gamma_3p for the quoted rates and the ratio (3.75 checked) and updated the table row; converted CRLF to LF
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/21 Complete Solutions to the Exercises/21.20 Solutions for Variational Methods, WKB, and Scattering.md
+- FIXED | V_0 is an energy in Exercise 6 but energy times length in Exercise 9 | Renamed the Yukawa strength to g (unit J m) throughout Exercise 9 and added it to the table; converted CRLF to LF
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/Quantum rotations, unitarity, and course review calculations.md
+- FIXED | Table copied from another note with wrong meanings | Rebuilt the table with hbar, m, x/x_0, psi, E, U, p(x), C coefficients, a/b, F = -U'(a) as the force, z/y/rho, t/epsilon, U(t), H, L/lambda_i, alpha_i
+- PARTLY | Contour helpers rho, varphi, y and epsilon colored; hbar uncolored | Uncolored the contour angle varphi; kept rho and y (lengths) and epsilon (a time step) mechanical, and kept hbar plain because the sibling QM II notes from the same source use plain hbar

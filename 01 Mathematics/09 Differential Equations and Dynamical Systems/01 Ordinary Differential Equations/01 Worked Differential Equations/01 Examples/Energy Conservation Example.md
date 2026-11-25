@@ -23,8 +23,8 @@ Choosing the sign consistent with $\dot{x}(0) = v_0$ recovers the same form as t
 
 **Step 4: Express amplitude and phase via the initial data.**  
 Matching energy at $t=0$ to the initial conditions yields
-$$A = \sqrt{x_0^2 + \left(\frac{v_0}{\omega}\right)^2},\qquad \varphi_0 = \arctan\left(\frac{x_0 \omega}{v_0}\right)$$
-(or solve directly from $x_0$ and $v_0$)
+$$A = \sqrt{x_0^2 + \left(\frac{v_0}{\omega}\right)^2},\qquad \varphi_0 = \operatorname{atan2}\left(x_0 \omega,\,v_0\right)$$
+for the form $x(t)=A\sin(\omega t+\varphi_0)$. This phase satisfies $\sin\varphi_0 = x_0/A$ and $\cos\varphi_0 = v_0/(\omega A)$, so it is correct for all signs of $v_0$, also for $v_0=0$.
 
 > [!note]
 > The energy approach delivers a mechanical interpretation: 

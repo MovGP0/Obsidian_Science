@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Integral calculus: a learning route"
 catalogue_ids:
   - "8"
@@ -59,7 +59,7 @@ For example, $0\le x^2\le1$ on $[0,1]$ implies $0\le\int_0^1x^2\,dx\le1$. The co
 <!-- catalogue-complete-lesson-index:start -->
 ## Complete lesson index
 
-Read the prerequisite route above before the advanced lessons. The source topic links are in [[Planned Topics#8. Integral calculus|the detailed catalogue]].
+Read the prerequisite route above before the advanced lessons.
 
 - [[Antiderivatives and integration rules|Antiderivatives and integration rules]] — 8.1.1, 8.1.1.1, 8.1.1.2, 8.1.2.
 - [[Rational integrands and partial fractions|Rational integrands and partial fractions]] — 8.1.3, 8.1.3.1, 8.1.3.2, 8.1.3.3.

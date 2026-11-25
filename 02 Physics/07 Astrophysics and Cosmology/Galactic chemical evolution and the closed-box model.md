@@ -38,7 +38,7 @@ The lecture describes Type II core-collapse supernova spectra as fairly standard
 
 ##### Origin of the elements
 
-The primordial hydrogen and helium mass fractions are $X=0.76$ and $Y=0.24$. The solar metallicity is about $Z_\odot=0.02$ by mass. The notes append an extra $Z$ to the numerical value.
+The primordial hydrogen and helium mass fractions are $X=0.76$ and $Y=0.24$. The solar metallicity is about $Z_\odot=0.02$ by mass. The notes append an extra $Z$ to the numerical value. The value $Z_\odot=0.02$ is the classical value, and the G-dwarf example below uses it. Modern solar abundances give $Z_\odot\approx0.013\text{–}0.014$ (Asplund et al. 2009), and the primordial helium mass fraction is $Y_p\approx0.245$.
 
 Alpha elements can form by successive addition of alpha particles. Binding energy per nucleon peaks in the iron group. Fission of heavy nuclei releases energy. Gluon exchange mediates the strong interaction. The notes mention cosmic-ray spallation in connection with lithium.
 
@@ -156,22 +156,20 @@ Kyle Kabasares, *Intro to Astrophysics (Physics 240A, UC Irvine 2018)*.
 
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
-| $h$ | $\unit{erg\cdot s}$ | Planck constant | Relates photon energy to frequency. |
-| $\sigma$ | $\unit{erg\cdot s^{-1}\cdot cm^{-2}\cdot K^{-4}}$ | Stefan–Boltzmann constant | Relates blackbody flux to the fourth power of temperature. |
-| $Z$ | $\unit{rad}$ | Zenith angle | Angle between the line of sight and the local vertical. |
-| $A$ | 1 | Extinction | Increase in apparent magnitude caused by attenuation. |
-| $n$ | $\unit{cm^{-3}}$ | Grain number density | Number of dust grains per unit volume. |
 | $G$ | $\unit{cm^3\cdot g^{-1}\cdot s^{-2}}$ | Gravitational constant | Constant in Newton’s law of gravitation. |
-| $\mechanical{M}$ | $\unit{g}$ | Stellar mass | Mass in the main-sequence scaling relations. |
-| $X$ | 1 | Airmass | Relative path length through the atmosphere. |
-| $n$ | $\unit{pc^{-3}}$ | Stellar number density | Number of stars per unit volume. |
-| $\sigma$ | 1 | Absolute-magnitude dispersion | Standard deviation of the Gaussian magnitude distribution. |
-| $\mechanical{\sigma}$ | $\unit{km\cdot s^{-1}}$ | Velocity dispersion | Standard deviation of velocities along the chosen direction. |
-| $\mechanical{\sigma}_z$ | $\unit{km\cdot s^{-1}}$ | Vertical velocity dispersion | Spread of stellar velocities perpendicular to the disk. |
-| $A$ | $\unit{km\cdot s^{-1}\cdot kpc^{-1}}$ | First Oort constant | Local rotational shear inferred from the longitude dependence of radial velocities. |
 | $\mechanical{\Sigma}(<\mechanical{z})$ | $\unit{M_{\odot}\cdot pc^{-2}}$ | Surface mass density | Mass per unit area between the two stated heights about the disk midplane. |
+| $\mechanical{z}$ | $\unit{kpc}$ | Height | Height above the disk midplane. |
+| $n$ | $\unit{pc^{-3}}$ | Stellar number density | Number of tracer stars per unit volume. |
+| $\mechanical{\sigma}_z$ | $\unit{km\cdot s^{-1}}$ | Vertical velocity dispersion | Spread of stellar velocities perpendicular to the disk. |
+| $X$, $Y$ | 1 | Hydrogen and helium mass fractions | Primordial mass fractions of hydrogen and helium. |
 | $Z_\odot$ | 1 | Solar metallicity | Solar mass fraction in elements heavier than helium. |
 | $[\mathrm O/\mathrm{Fe}]$ | 1 | Oxygen-to-iron abundance index | Base-ten logarithm of the oxygen-to-iron number ratio relative to the Sun. |
+| $N_{\mathrm O}$, $N_{\mathrm{Fe}}$ | 1 | Element number abundances | Numbers of oxygen and iron atoms in the star or in the Sun. |
+| $\mechanical{M}_{\mathrm g}$ | $\unit{M_{\odot}}$ | Gas mass | Total mass of gas in the box. |
+| $\mechanical{M}_{\mathrm h}$ | $\unit{M_{\odot}}$ | Gas-phase heavy-element mass | Mass of metals contained in the gas. |
+| $\mechanical{M}_\star$, $\Delta\mechanical{M}_\star$ | $\unit{M_{\odot}}$ | Stellar mass | Mass in long-lived stars and remnants, and the mass formed in one burst. |
+| $t$ | $\unit{Gyr}$ | Time | Time since the start of the closed-box evolution. |
 | $Z(t)$ | 1 | Gas-phase metallicity | Mass fraction of metals in the gas. |
-| $p$ | 1 | Metal yield | Newly synthesized metal mass returned to the gas per unit mass locked into stars and remnants. |
 | $Z_0$ | 1 | Initial gas metallicity | Metal mass fraction of the gas at the start of the closed-box model. |
+| $Z_\star$ | 1 | Reference stellar metallicity | Metallicity used as the reference in the G-dwarf fraction. |
+| $p$ | 1 | Metal yield | Newly synthesized metal mass returned to the gas per unit mass locked into stars and remnants. |

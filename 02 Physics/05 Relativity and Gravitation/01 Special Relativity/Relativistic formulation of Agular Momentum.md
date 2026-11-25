@@ -41,12 +41,12 @@ $$
 L^i = \epsilon^{ijk} x^j p^k
 $$
 
-This is the relativistic version of the familiar classical expression $\mathbf{L} = \mathbf{r} \times \mathbf{p}$.
+This is the same expression as the familiar classical $\mathbf{L} = \mathbf{r} \times \mathbf{p}$. It is the purely spatial part of the tensor: $L^i = \tfrac12\epsilon^{ijk} M^{jk}$.
 
 Another part is
 
 $$
-K^i = x^i E/c - t p^i
+K^i = M^{i0} = x^i E/c - ct\, p^i
 $$
 
 This quantity is related to the motion of the center of mass and to Lorentz boosts.
@@ -114,6 +114,8 @@ The conservation law is written as
 $$
 \partial_\alpha M^{\mu\nu\alpha} = 0
 $$
+
+Here $M^{\mu\nu\alpha} = x^\mu T^{\nu\alpha} - x^\nu T^{\mu\alpha}$ is the angular-momentum current, and $T^{\mu\nu}$ is the symmetric energy-momentum tensor. Because $\partial_\alpha T^{\nu\alpha} = 0$ and $T^{\mu\nu} = T^{\nu\mu}$, the divergence is zero. Integrate the time component over all space to get the total tensor $M^{\mu\nu} = \frac{1}{c}\int M^{\mu\nu 0}\, d^3x$. For an isolated system the surface terms vanish, so $dM^{\mu\nu}/dt = 0$.
 
 This compact formula means that the total spacetime angular momentum is conserved.
 

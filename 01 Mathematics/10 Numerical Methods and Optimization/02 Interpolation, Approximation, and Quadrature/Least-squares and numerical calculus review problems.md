@@ -293,4 +293,5 @@ Kyle Kabasares, *Numerical Analysis (Math 130, UC Merced 2016)*.
 
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
-| $x$ | $\unit{s}$ | Time | Independent variable in the particle example. The recorded values have no specified unit. |
+| $\mechanical{x}$ | $\unit{m}$ | Height | Predictor variable in the PatrickJMT regression example. The data give no unit. |
+| $\mechanical{y}$, $\mechanical{\widehat y}$ | $\unit{N}$ | Weight | Observed and fitted response in the PatrickJMT regression example, taken as a force. The data give no unit. |

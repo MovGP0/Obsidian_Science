@@ -215,4 +215,23 @@ Kyle Kabasares, *Electrodynamics (Physics 213A, UC Irvine 2018)*.
 | --- | --- | --- | --- |
 | $\energy{U}$ | $\unit{J}$ | Electrostatic potential energy | Work required to bring the charges to their separation from infinity. |
 | $\circuit{I}_{\mathrm{enc}}$ | $\unit{A}$ | Enclosed current | Net current through a surface spanning the Ampèrian contour. |
-| $\magnetic{\mathbf m}$ | $\unit{A\,m^2}$ | Magnetic dipole moment | First moment of a localized steady current. |
+| $\magnetic{\mathbf m}$ | $\unit{A\,m^2}$ | Magnetic dipole moment | The moment $\tfrac12\int\mechanical{\mathbf r}'\times\circuit{\mathbf J}\,d^3\mechanical{r}'$ of a localized steady current. |
+| $\magnetic{\mathbf B}$, $\magnetic{B}_\varphi$ | $\unit{T}$ | Magnetic flux density | The magnetic field of the steady current and its azimuthal component. |
+| $\magnetic{\mathbf A}$, $\magnetic{A}_x$ | $\unit{T\,m}$ | Magnetic vector potential | The potential whose curl gives $\magnetic{\mathbf B}$, and its $\mechanical{x}$ component. |
+| $\chi$ | $\unit{T\,m^2}$ | Gauge function | The scalar function whose gradient shifts $\magnetic{\mathbf A}$ without a change in $\magnetic{\mathbf B}$. |
+| $\circuit{\mathbf J}$, $\circuit{J}_\varphi$ | $\unit{A\,m^{-2}}$ | Current density | The current per unit area perpendicular to the flow, and its azimuthal component. |
+| $\circuit{I}$ | $\unit{A}$ | Electric current | The current in the loop or in the wire. |
+| $\magnetic{\mu}_0$ | $\unit{H\,m^{-1}}$ | Vacuum permeability | The magnetic constant. |
+| $\electric{\varepsilon}_0$ | $\unit{F\,m^{-1}}$ | Vacuum permittivity | The electric constant. |
+| $\mechanical{\mathbf r}$, $\mechanical{\mathbf r}'$, $\mechanical{r}$, $\mechanical{r}'$ | $\unit{m}$ | Position and radial distance | The observation point, the source point, and their distances from the origin. |
+| $\mechanical{x}$, $\mechanical{y}$, $\mechanical{z}$ | $\unit{m}$ | Cartesian coordinates | The coordinates of the observation point. |
+| $\mechanical{R}$ | $\unit{m}$ | Loop radius | The radius of the circular current loop. |
+| $\mechanical{\rho}$, $\mechanical{\rho}'$ | $\unit{m}$ | Cylindrical radius | The distance from the $\mechanical{z}$ axis, not the charge density $\electric{\rho}$. |
+| $\mechanical{\rho}_0$ | $\unit{m}$ | Reference radius | The radius at which the vector potential of the wire is zero. |
+| $s$ | $\unit{m}$ | Source distance | The distance from the source point to the observation point. |
+| $N$ | $\unit{m^{-1}}$ | Normalization factor | The factor that makes the loop current density integrate to $\circuit{I}$. |
+| $\electric{\phi}$ | $\unit{V}$ | Electric potential | The potential of the localized charge configuration. |
+| $\electric{\rho}$ | $\unit{C\,m^{-3}}$ | Charge density | The source in the Poisson equation for $\electric{\phi}$. |
+| $\electric{q}$, $\electric{q}'$ | $\unit{C}$ | Total charge | The total charge of the first and of the second configuration. |
+| $\electric{\mathbf p}$, $\electric{\mathbf p}'$ | $\unit{C\,m}$ | Electric dipole moment | The dipole moments of the first and of the second configuration. |
+| $\electric{\mathbf E}$ | $\unit{V\,m^{-1}}$ | Electric field | The field of the first configuration. |

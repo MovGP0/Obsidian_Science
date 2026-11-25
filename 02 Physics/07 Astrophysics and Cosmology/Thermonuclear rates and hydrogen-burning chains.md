@@ -17,7 +17,7 @@ The shell sketch gives $\energy{\epsilon}\,\Delta\mechanical{M}_r=\Delta\energy{
 
 $$
 \frac{\mathrm{d}\thermal{Q}}{\mathrm{d}t}
-=\frac{\partial\energy{E}}{\partial t}
+=\frac{\partial\energy{u}}{\partial t}
 +\mechanical{P}\frac{\partial}{\partial t}\left(\frac1{\mechanical{\rho}}\right)
 =\energy{\epsilon}-\frac{\partial\energy{L}_r}{\partial\mechanical{M}_r}.
 $$
@@ -162,7 +162,7 @@ $$
 Averaging over the energies gives
 
 $$
-r_{\alpha\beta}=n_\alpha n_\beta\langle\sigma\mechanical{v}\rangle_{\alpha\beta}
+r_{\alpha\beta}=n_\alpha n_X\langle\sigma\mechanical{v}\rangle_{\alpha\beta}
 \qquad (\unit{cm^{-3}\,s^{-1}}).
 $$
 
@@ -170,9 +170,9 @@ The handwritten aside beside the unit reads “DON'T NEED UNITS??”
 
 $$
 \langle\sigma\mechanical{v}\rangle_{\alpha\beta}
-=\frac{\displaystyle\int_0^\infty\psi(\energy{\epsilon})\,
-   \sigma_{\alpha\beta}\mechanical{v}\,\mathrm{d}\energy{\epsilon}}
-{\displaystyle\int_0^\infty\psi(\energy{\epsilon})\,\mathrm{d}\energy{\epsilon}}.
+=\frac{\displaystyle\int_0^\infty\psi(\energy{E})\,
+   \sigma_{\alpha\beta}\mechanical{v}\,\mathrm{d}\energy{E}}
+{\displaystyle\int_0^\infty\psi(\energy{E})\,\mathrm{d}\energy{E}}.
 $$
 
 The thermal average of the rate coefficient is
@@ -182,9 +182,9 @@ $$
 =\left(\frac8{\pi\mechanical{m}}\right)^{1/2}
 (\thermal{k}\thermal{T})^{-3/2}
 \int_0^\infty
-\sigma_{\alpha\beta}(\energy{\epsilon})\,
-e^{-\energy{\epsilon}/(\thermal{k}\thermal{T})}\,
-\energy{\epsilon}\,\mathrm{d}\energy{\epsilon},
+\sigma_{\alpha\beta}(\energy{E})\,
+e^{-\energy{E}/(\thermal{k}\thermal{T})}\,
+\energy{E}\,\mathrm{d}\energy{E},
 \qquad
 \mechanical{m}=\frac{\mechanical{m}_\alpha\mechanical{m}_X}
 {\mechanical{m}_\alpha+\mechanical{m}_X}.
@@ -193,18 +193,18 @@ $$
 The notes write the cross section as
 
 $$
-\sigma_{\alpha\beta}(\energy{\epsilon})
+\sigma_{\alpha\beta}(\energy{E})
 =\pi\signal{\bar{\lambda}}^{\,2}g(2\ell+1)
 \frac{\energy{\Gamma}_\alpha\energy{\Gamma}_\beta}{\energy{\Gamma}^2}
-f(\energy{\epsilon}).
+f(\energy{E}).
 $$
 
-They mark the ratio of widths as a joint probability and call $f(\energy{\epsilon})$ the shape factor. The vector $\mechanical{\vec{L}}$ is the entrance-channel angular momentum.
+They mark the ratio of widths as a joint probability and call $f(\energy{E})$ the shape factor. The vector $\mechanical{\vec{L}}$ is the entrance-channel angular momentum.
 
 $$
 \pi\signal{\bar{\lambda}}^{\,2}
-=\frac{\pi\hbar^2}{2\energy{\epsilon}\mechanical{m}}
-=\frac{0.657}{[\energy{\epsilon}/\unit{MeV}]\mu}\,\unit{barn},
+=\frac{\pi\hbar^2}{2\energy{E}\mechanical{m}}
+=\frac{0.657}{[\energy{E}/\unit{MeV}]\mu}\,\unit{barn},
 \qquad
 1\,\unit{barn}=10^{-24}\,\unit{cm^2}.
 $$
@@ -219,19 +219,19 @@ $$
 =\pi\signal{\bar{\lambda}}^{\,2}(2\ell+1).
 $$
 
-The notes say that $f(\energy{\epsilon})$ accounts for the other physics. Near a resonance,
+The notes say that $f(\energy{E})$ accounts for the other physics. Near a resonance,
 
 $$
-f(\energy{\epsilon})
+f(\energy{E})
 =\frac{\energy{\Gamma}^2}
- {(\energy{\epsilon}-\energy{\epsilon}_r)^2+(\energy{\Gamma}/2)^2}.
+ {(\energy{E}-\energy{E}_r)^2+(\energy{\Gamma}/2)^2}.
 $$
 
 The square on the energy difference follows the Breit–Wigner formula farther down the page. It is omitted in the first handwritten denominator. The resonance energy satisfies
 
 $$
-\mechanical{m}_{Z^*}c^2+\energy{\epsilon}^*
-=\mechanical{m}_\alpha c^2+\mechanical{m}_Xc^2+\energy{\epsilon}_r.
+\mechanical{m}_{Z^*}c^2+\energy{E}^*
+=\mechanical{m}_\alpha c^2+\mechanical{m}_Xc^2+\energy{E}_r.
 $$
 
 ##### Breit–Wigner cross section
@@ -240,14 +240,14 @@ $$
 \sigma_{\alpha\beta}
 =\pi\signal{\bar{\lambda}}^{\,2}g(2\ell+1)
 \frac{\energy{\Gamma}_\alpha\energy{\Gamma}_\beta}
- {(\energy{\epsilon}-\energy{\epsilon}_r)^2+(\energy{\Gamma}/2)^2}.
+ {(\energy{E}-\energy{E}_r)^2+(\energy{\Gamma}/2)^2}.
 $$
 
 The handwritten $(2\ell+1)$ sits above the baseline beside $g$. The product follows the expression on [[#Nuclear reaction rates|the section on Nuclear reaction rates]]. The next line reads “Texas accent lol.”
 
 ##### Nonresonant stellar energy sources
 
-Far from resonance, $f(\energy{\epsilon})$ is constant or varies slowly. The example is $p+p$.
+Far from resonance, $f(\energy{E})$ is constant or varies slowly. The example is $p+p$.
 
 The barrier penetration probability is proportional to $\mathrm{e}^{-2\pi\eta}$. In the source's electrostatic unit convention,
 
@@ -255,14 +255,14 @@ $$
 \eta
 =\frac{Z_\alpha Z_X\electric{e}^2}{\hbar\mechanical{v}}
 =0.1574\,Z_\alpha Z_X
- \left(\frac{\mu}{\energy{\epsilon}/\unit{MeV}}\right)^{1/2}.
+ \left(\frac{\mu}{\energy{E}/\unit{MeV}}\right)^{1/2}.
 $$
 
 The nonresonant cross section is
 
 $$
-\sigma_{\alpha\beta}(\energy{\epsilon})
-=\frac{S(\energy{\epsilon})}{\energy{\epsilon}}\,
+\sigma_{\alpha\beta}(\energy{E})
+=\frac{S(\energy{E})}{\energy{E}}\,
   \mathrm{e}^{-2\pi\eta}.
 $$
 
@@ -273,14 +273,14 @@ $$
 \langle\sigma\mechanical{v}\rangle_{\alpha\beta}
 &=\left(\frac8{\pi\mechanical{m}}\right)^{1/2}
 (\thermal{k}\thermal{T})^{-3/2}
-\int\sigma_{\alpha\beta}(\energy{\epsilon})
-  \mathrm{e}^{-\energy{\epsilon}/(\thermal{k}\thermal{T})}
-  \energy{\epsilon}\,\mathrm{d}\energy{\epsilon},\\
+\int\sigma_{\alpha\beta}(\energy{E})
+  \mathrm{e}^{-\energy{E}/(\thermal{k}\thermal{T})}
+  \energy{E}\,\mathrm{d}\energy{E},\\
 r_{\alpha\beta}&=n_\alpha n_X\langle\sigma\mechanical{v}\rangle_{\alpha\beta},\\
-\sigma_{\alpha\beta}(\energy{\epsilon})
+\sigma_{\alpha\beta}(\energy{E})
 &=\pi\signal{\bar{\lambda}}^{\,2}g(2\ell+1)
   \frac{\energy{\Gamma}_\alpha\energy{\Gamma}_\beta}{\energy{\Gamma}^2}
-  f(\energy{\epsilon}).
+  f(\energy{E}).
 \end{aligned}
 $$
 
@@ -289,14 +289,15 @@ The exponential factor in the nonresonant formula is labeled “Gamow penetrabil
 $$
 \langle\sigma\mechanical{v}\rangle_{\alpha\beta}
 =\frac{1.6\times10^{-15}\,\unit{cm^3\,s^{-1}}}
- {\mu(\thermal{k}\thermal{T})^{3/2}}
+ {\mu^{1/2}(\thermal{k}\thermal{T})^{3/2}}
+\,S
 \int_0^\infty
- \mathrm{e}^{-\left(\energy{\epsilon}/(\thermal{k}\thermal{T})+
-                    b/\energy{\epsilon}^{1/2}\right)}
- \,\mathrm{d}\energy{\epsilon}.
+ \mathrm{e}^{-\left(\energy{E}/(\thermal{k}\thermal{T})+
+                    b/\energy{E}^{1/2}\right)}
+ \,\mathrm{d}\energy{E}.
 $$
 
-The handwritten numerical prefactor has no stated convention for the units of the energies or $S(\energy{\epsilon})$. The example is carbon-12 proton capture to nitrogen-13. The sketch shows a larger integrand peak for $\thermal{T}_6=22$ and a smaller peak for $\thermal{T}_6=20$, with a reference line near the larger peak. The subscript is read as $6$ from the stellar temperature scale. The notes give $\energy{\epsilon}\simeq30\,\unit{keV}$ and $\langle\sigma\mechanical{v}\rangle\sim\thermal{T}^{17}$.
+Here $S$ is taken as constant and is in $\unit{MeV\,barn}$, the energies are in $\unit{MeV}$, and $\mu$ is the reduced mass in atomic mass units. These conventions give the prefactor from $(8/(\pi\mechanical{m}))^{1/2}$. The handwritten line has $\mu$ in place of $\mu^{1/2}$ and does not show the factor $S$. The example is carbon-12 proton capture to nitrogen-13. The sketch shows a larger integrand peak for $\thermal{T}_6=22$ and a smaller peak for $\thermal{T}_6=20$, with a reference line near the larger peak. The subscript is read as $6$ from the stellar temperature scale. The notes give $\energy{E}\simeq30\,\unit{keV}$ and $\langle\sigma\mechanical{v}\rangle\sim\thermal{T}^{17}$.
 
 The margin asks why nuclear physics is “dying” if funding is adequate, answers “It's sociological!”, and adds “Californium” and “Communism.”
 
@@ -304,7 +305,7 @@ The resonant cross section follows the energy dependence
 
 $$
 \sigma_{\alpha\beta}\sim
-\left[(\energy{\epsilon}-\energy{\epsilon}_r)^2+
+\left[(\energy{E}-\energy{E}_r)^2+
       (\energy{\Gamma}/2)^2\right]^{-1}.
 $$
 
@@ -406,11 +407,15 @@ $$
 {}^{13}\mathrm{C}+{}^{1}\mathrm{H}
 &\longrightarrow{}^{14}\mathrm{N}+\gamma,\\
 {}^{14}\mathrm{N}+{}^{1}\mathrm{H}
-&\longrightarrow{}^{14}\mathrm{N}+\gamma.
+&\longrightarrow{}^{15}\mathrm{O}+\gamma,\\
+{}^{15}\mathrm{O}
+&\longrightarrow{}^{15}\mathrm{N}+e^++\nu_e,\\
+{}^{15}\mathrm{N}+{}^{1}\mathrm{H}
+&\longrightarrow{}^{12}\mathrm{C}+{}^{4}\mathrm{He}.
 \end{aligned}
 $$
 
-The last line repeats nitrogen-14 as the product in the handwriting.
+The handwriting repeats nitrogen-14 as the product of the fourth reaction. The correct product is oxygen-15. The last two reactions close the cycle and return the carbon-12 nucleus. The notes do not write them.
 
 ## Source
 
@@ -420,92 +425,63 @@ Kyle Kabasares, *Stellar Astrophysics (Physics 241B, UC Irvine 2019)*.
 
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
-| $\mechanical{M}_r$ | $\unit{kg}$ | Enclosed mass | The stellar mass within radius $\mechanical{r}$. |
-| $\mechanical{\rho}$ | $\unit{g\,cm^{-3}}$ | Mass density | The mass per unit volume at the given radius. |
-| $\mathrm{d}\mechanical{M}_r$ | $\unit{g}$ | Mass element | The mass of the thin shell or the patch, according to context. |
-| $\mechanical{M}$ | $\unit{g}$ | Mass | The enclosed mass in the expression beside the force sketch. |
-| $\mechanical{P}$ | $\unit{dyn\,cm^{-2}}$ | Pressure | The local force per unit area exerted by the stellar material. |
-| $\mechanical{m}$ | $\unit{g}$ | Mass | The mass acted on by the force. |
-| $\mechanical{M}$ | $\unit{g}$ | Total stellar mass | The upper limit of the integral over the stellar mass. |
-| $\mechanical{R}$ | $\unit{cm}$ | Stellar radius | The radius of the star used in the energy scale. |
-| $\energy{E}$ | $\unit{erg\,g^{-1}}$ | Specific internal energy | The internal energy per unit mass. |
-| $\thermal{T}$ | $\unit{K}$ | Temperature | The local thermodynamic temperature. |
-| $\thermal{Q}$ | $\unit{erg\,g^{-1}}$ | Specific heat transfer | The heat transferred per unit mass. |
-| $t$ | $\unit{s}$ | Time | The independent variable in the virial calculation. |
-| $\energy{L}$ | $\unit{erg\,s^{-1}}$ | Stellar luminosity | The rate of energy loss from the contracting star. |
-| $\energy{E}$ | $\unit{erg\,cm^{-3}}$ | Thermal energy density | The gas energy per unit volume in the temperature estimate. |
-| $n$ | $\unit{cm^{-3}}$ | Particle number density | The number of gas particles per unit volume. |
-| $\thermal{k}$ | $\unit{erg\,K^{-1}}$ | Boltzmann constant | The conversion factor between temperature and energy per particle. |
-| $N_A$ | $\unit{mol^{-1}}$ | Avogadro constant | The number of particles per mole. |
-| $\mu$ | $\unit{g\,mol^{-1}}$ | Mean molar mass | The mass per mole of gas particles, as used in the density conversion. |
-| $\thermal{\Gamma}_1$ | 1 | First adiabatic exponent | The logarithmic derivative of pressure with respect to density at constant entropy. |
-| $X$ | 1 | Hydrogen mass fraction | The fraction of stellar mass in hydrogen. |
-| $Y$ | 1 | Helium mass fraction | The fraction of stellar mass in helium. |
-| $Z$ | 1 | Metallicity | The fraction of stellar mass in elements heavier than helium. |
+| $\mechanical{M}_r$, $\mathrm{d}\mechanical{M}_r$ | $\unit{g}$ | Enclosed mass and mass element | The stellar mass within radius $\mechanical{r}$, and the mass of a thin shell. |
+| $\mechanical{M}$ | $\unit{g}$ | Total stellar mass | The range of the integral over the stellar mass. |
 | $\energy{L}_r$ | $\unit{erg\,s^{-1}}$ | Luminosity at radius $\mechanical{r}$ | The power that passes through the sphere of radius $\mechanical{r}$. |
+| $\energy{L}$ | $\unit{erg\,s^{-1}}$ | Stellar luminosity | The rate of energy loss from the contracting star. |
 | $\energy{\epsilon}$ | $\unit{erg\,g^{-1}\,s^{-1}}$ | Specific energy production rate | The power generated per unit mass of stellar material. |
-| $a$ | $\unit{erg\,cm^{-3}\,K^{-4}}$ | Radiation constant | The constant in the radiation energy density $a\thermal{T}^4$. |
-| $c$ | $\unit{cm\,s^{-1}}$ | Speed of light | The speed of light in the radiative diffusion relation. |
-| $\mechanical{R}_0$ | $\unit{cm}$ | Reference stellar radius | The radius of the reference star. |
-| $\mechanical{\rho}_0$ | $\unit{g\,cm^{-3}}$ | Reference density | The density at the corresponding position in the reference star. |
-| $\mechanical{P}_0$ | — | Pressure coefficient | The coefficient in the equation of state, with units that depend on the exponents. |
-| $\mechanical{v}$ | $\unit{cm\,s^{-1}}$ | Streaming speed | The speed used in the free-streaming distance integral. |
-| $\energy{\epsilon}_{\mathrm{grav}}$ | $\unit{erg\,g^{-1}\,s^{-1}}$ | Specific gravitational energy contribution | The contribution to net energy production from gravitational processes. |
-| $\tau$ | $\unit{yr}$ | Stellar time scale | The time scale whose fractional change is estimated from the additional loss. |
-| $\hbar$ | $\unit{J\,s}$ | Reduced Planck constant | The quantum of action in the uncertainty relation. |
-| $N$ | 1 | Particle count | The number of particles in the gas volume. |
-| — | $\unit{s}$ | Two-nucleus contact time | The time written beside the two helium nuclei in the triple-alpha sketch. |
-| $\energy{E}$ | $\unit{MeV}$ | Electron energy | The energy plotted in the collapse sketch. |
-| $f$ | — | Electron distribution | The distribution sketched against electron energy, with no stated normalization. |
-| $\mechanical{m}_n$, $\mechanical{M}_n$ | $\unit{kg}$ | Neutron mass | The particle mass on the neutron side of the degeneracy comparison. |
-| $Z$ | 1 | Proton number | The number of protons in the nucleus in the neutron-drip diagram. |
-| $N$ | 1 | Neutron number | The number of neutrons in the nucleus in the neutron-drip diagram. |
-| $\thermal{\Gamma}_2$ | 1 | Second adiabatic exponent | The exponent defined through the pressure derivative with respect to temperature. |
-| $\thermal{\Gamma}_3$ | 1 | Third adiabatic exponent | The exponent defined through the temperature derivative with respect to density. |
-| $\mechanical{P}_0$ | $\unit{dyn\,cm^{-2}}$ | Reference stellar pressure | The pressure of the initial model used in the homologous ratio. |
-| $\energy{\Gamma}_i$, $\energy{\Gamma}_\alpha$, $\energy{\Gamma}_\beta$ | $\unit{MeV}$ | Partial decay width | The energy width associated with decay through channel $i$. |
+| $\energy{\epsilon}_{\mathrm{grav}}$ | $\unit{erg\,g^{-1}\,s^{-1}}$ | Specific gravitational energy contribution | The contribution to net energy production from contraction or expansion. |
+| $\thermal{Q}$ | $\unit{erg\,g^{-1}}$ | Specific heat transfer | The heat transferred per unit mass. |
+| $\energy{u}$ | $\unit{erg\,g^{-1}}$ | Specific internal energy | The internal energy per unit mass. |
+| $\mechanical{P}$ | $\unit{dyn\,cm^{-2}}$ | Pressure | The local force per unit area exerted by the stellar material. |
+| $\mechanical{\rho}$ | $\unit{g\,cm^{-3}}$ | Mass density | The mass per unit volume at the given position. |
+| $\thermal{T}$ | $\unit{K}$ | Temperature | The local thermodynamic temperature. |
+| $t$ | $\unit{s}$ | Time | The independent variable in the energy balance. |
+| $\thermal{\Gamma}_1$, $\thermal{\Gamma}_2$, $\thermal{\Gamma}_3$ | $1$ | Adiabatic exponents | The logarithmic derivatives of pressure, density, and temperature at constant entropy. |
+| $\delta$ | $1$ | Exponent shift | The departure of the pressure–density exponent from $\thermal{\Gamma}_1$. |
+| $\mechanical{R}$, $\mechanical{R}_0$ | $\unit{cm}$ | Stellar radius and reference radius | The radius of the star during the homologous change and at the reference time. |
+| $\mechanical{\rho}_0$ | $\unit{g\,cm^{-3}}$ | Reference density | The density of the reference model in the homologous ratio. |
+| $\mechanical{P}_0$ | $\unit{dyn\,cm^{-2}}$ | Reference pressure | The pressure of the reference model in the homologous ratio. |
+| $\energy{\Gamma}_i$, $\energy{\Gamma}_\alpha$, $\energy{\Gamma}_\beta$ | $\unit{MeV}$ | Partial decay width | The energy width associated with decay through one channel. |
 | $\energy{\Gamma}$ | $\unit{MeV}$ | Total decay width | The sum of the partial widths of the available channels. |
-| $\tau_i$ | $\unit{s}$ | Partial lifetime | The reciprocal of the rate for channel $i$. |
-| $\tau$ | $\unit{s}$ | Total lifetime | The reciprocal of the sum of the channel rates. |
-| $P_i$ | 1 | Branching probability | The fraction of decays through channel $i$. |
-| $\energy{B}_e$ | $\unit{MeV}$ | Nuclear binding energy | The energy corresponding to the mass defect of the nucleus. |
+| $\tau_i$, $\tau$ | $\unit{s}$ | Partial and total lifetime | The reciprocal of the rate for channel $i$, and of the sum of the channel rates. |
+| $P_i$ | $1$ | Branching probability | The fraction of decays through channel $i$. |
+| $\hbar$ | $\unit{erg\,s}$ | Reduced Planck constant | The quantum of action in the width–lifetime relation. |
+| $c$ | $\unit{cm\,s^{-1}}$ | Speed of light | The factor that converts mass to energy. |
+| $\energy{B}_e$ | $\unit{MeV}$ | Nuclear binding energy | The energy that corresponds to the mass defect of the nucleus. |
 | $\mechanical{R}$ | $\unit{m}$ | Nuclear radius scale | The length scale given with the nuclear density. |
 | $\mechanical{\rho}_{\mathrm{nuc}}$ | $\unit{g\,cm^{-3}}$ | Nuclear mass density | The mass per unit volume of nuclear matter. |
-| $\mechanical{m}_p$, $\mechanical{M}_p$ | $\unit{MeV\,c^{-2}}$ | Proton mass | The proton mass in the nucleon-mass estimate. |
+| $\mechanical{M}_n$, $\mechanical{M}_p$ | $\unit{MeV\,c^{-2}}$ | Neutron and proton mass | The nucleon masses in the nuclear-scale estimate. |
 | $\sigma_{\alpha\beta}$ | $\unit{cm^2}$ | Reaction cross section | The effective area for the specified reaction. |
-| $\mechanical{v}$ | $\unit{cm\,s^{-1}}$ | Projectile speed | The speed entering the incident flux and rate. |
-| $n_\alpha$, $n_X$, $n_\beta$ | $\unit{cm^{-3}}$ | Projectile and target number densities | The number of particles per unit volume for the incident and target species. |
+| $\mechanical{v}$ | $\unit{cm\,s^{-1}}$ | Relative speed | The speed in the incident flux and the rate. |
+| $n_\alpha$, $n_X$ | $\unit{cm^{-3}}$ | Projectile and target number densities | The numbers of incident and target particles per unit volume. |
 | $r_{\alpha\beta}$ | $\unit{cm^{-3}\,s^{-1}}$ | Reaction rate density | The number of reactions per unit volume per unit time. |
 | $\langle\sigma\mechanical{v}\rangle_{\alpha\beta}$ | $\unit{cm^3\,s^{-1}}$ | Reaction rate coefficient | The energy-distribution average of cross section times speed. |
-| $\energy{\epsilon}$ | $\unit{MeV}$ | Collision energy | The integration variable in the reaction rate average. |
-| $\psi(\energy{\epsilon})$ | — | Energy distribution weight | The weight used to average over collision energies. |
-| $\mechanical{m}$ | $\unit{kg}$ | Reduced mass | The reduced mass of the projectile–target pair. |
-| $\mechanical{m}_\alpha$, $\mechanical{m}_X$ | $\unit{kg}$ | Projectile and target masses | The two masses used in the reduced mass. |
-| $\signal{\bar{\lambda}}$ | $\unit{m}$ | Reduced de Broglie wavelength | The wavelength divided by $2\pi$ for the relative motion. |
-| $\mu$ | 1 | Reduced mass in atomic mass units | The numerical mass in the cross-section conversion to barns. |
-| $\mechanical{\vec{L}}$ | $\unit{J\,s}$ | Entrance-channel angular momentum | The orbital angular momentum of the incoming pair. |
-| $s$ | $\unit{m}$ | Impact parameter | The transverse offset of the incoming trajectory from the target. |
-| $\mechanical{p}$ | $\unit{kg\,m\,s^{-1}}$ | Relative momentum | The momentum used with the impact parameter to obtain the angular momentum. |
-| $\sigma_{\ell,\ell+1}$ | $\unit{cm^2}$ | Partial cross section | The area between adjacent impact parameter values. |
-| $\energy{\epsilon}_r$ | $\unit{MeV}$ | Resonance energy | The collision energy at the center of the resonance. |
-| $\energy{\epsilon}^*$ | $\unit{MeV}$ | Excitation energy | The excitation term on the compound-nucleus side of the energy balance. |
-| $\mechanical{m}_{Z^*}$ | $\unit{kg}$ | Compound nucleus mass | The mass term of the intermediate nucleus in the resonance condition. |
-| $f(\energy{\epsilon})$ | 1 | Shape factor | The energy-dependent factor multiplying the reaction cross section. |
-| $\eta$ | 1 | Coulomb penetration parameter | The parameter in the Gamow exponential. |
-| $\electric{e}$ | $\unit{statC}$ | Elementary charge | The charge magnitude in the source's electrostatic unit convention. |
-| $S(\energy{\epsilon})$ | $\unit{MeV\,barn}$ | Astrophysical S-factor | The factor remaining after separation of the leading energy dependence and barrier penetrability. |
-| $b$ | $\unit{MeV^{1/2}}$ | Gamow exponent coefficient | The coefficient of inverse square root of energy in the exponential. |
-| $\thermal{T}_6$ | 1 | Temperature in millions of kelvins | The numerical temperature that labels the integrand curves. |
-| $\energy{E}_p$ | $\unit{MeV}$ | Laboratory proton energy | The energy of the incident proton measured in the laboratory frame. |
-| $\thermal{T}_9$ | 1 | Temperature in billions of kelvins | The numerical temperature used for the rate plot. |
-| $N_A\langle\sigma\mechanical{v}\rangle$ | $\unit{cm^3\,mol^{-1}\,s^{-1}}$ | Molar reaction rate coefficient | The thermal rate coefficient multiplied by the Avogadro constant. |
-| $n_A$, $n_{A-1}$ | $\unit{cm^{-3}}$ | Nuclear number densities | The number densities at adjacent mass numbers in the neutron-capture chain. |
+| $\energy{E}$ | $\unit{MeV}$ | Collision energy | The center-of-mass kinetic energy of the projectile–target pair. |
+| $\psi(\energy{E})$ | — | Energy distribution weight | The weight used to average over collision energies. |
+| $\thermal{k}$ | $\unit{erg\,K^{-1}}$ | Boltzmann constant | The conversion factor between temperature and energy per particle. |
+| $\mechanical{m}$ | $\unit{g}$ | Reduced mass | The reduced mass of the projectile–target pair. |
+| $\mechanical{m}_\alpha$, $\mechanical{m}_X$ | $\unit{g}$ | Projectile and target masses | The two masses used in the reduced mass. |
+| $\mu$ | $1$ | Reduced mass in atomic mass units | The numerical reduced mass in the barn conversion, the Coulomb parameter, and the rate prefactor. |
+| $\signal{\bar{\lambda}}$ | $\unit{cm}$ | Reduced de Broglie wavelength | The wavelength divided by $2\pi$ for the relative motion. |
+| $g$ | $1$ | Statistical factor | The spin-weight factor in the cross section. |
+| $\mechanical{\vec{L}}$ | $\unit{erg\,s}$ | Entrance-channel angular momentum | The orbital angular momentum of the incoming pair. |
+| $s$, $s_\ell$ | $\unit{cm}$ | Impact parameter | The transverse offset of the incoming trajectory from the target. |
+| $\mechanical{p}$ | $\unit{g\,cm\,s^{-1}}$ | Relative momentum | The momentum used with the impact parameter to obtain the angular momentum. |
+| $\sigma_{\ell,\ell+1}$ | $\unit{cm^2}$ | Partial cross section | The area between adjacent impact-parameter values. |
+| $f(\energy{E})$ | $1$ | Shape factor | The energy-dependent factor in the reaction cross section. |
+| $\energy{E}_r$ | $\unit{MeV}$ | Resonance energy | The collision energy at the center of the resonance. |
+| $\energy{E}^*$ | $\unit{MeV}$ | Excitation energy | The excitation term on the compound-nucleus side of the energy balance. |
+| $\mechanical{m}_{Z^*}$ | $\unit{g}$ | Compound nucleus mass | The mass of the intermediate nucleus in the resonance condition. |
+| $\eta$ | $1$ | Coulomb penetration parameter | The parameter in the Gamow exponential. |
+| $Z_\alpha$, $Z_X$ | $1$ | Charge numbers | The charge numbers of the projectile and the target. |
+| $\electric{e}$ | $\unit{statC}$ | Elementary charge | The charge magnitude in the electrostatic unit convention of the source. |
+| $S$ | $\unit{MeV\,barn}$ | Astrophysical S-factor | The factor that remains after the leading energy dependence and the barrier penetrability are removed. |
+| $b$ | $\unit{MeV^{1/2}}$ | Gamow exponent coefficient | The coefficient of the inverse square root of energy in the exponential. |
+| $\thermal{T}_6$, $\thermal{T}_9$ | $1$ | Scaled temperature | The temperature in units of $10^6\,\unit{K}$ or $10^9\,\unit{K}$. |
+| $\energy{E}_p$ | $\unit{MeV}$ | Laboratory proton energy | The energy of the incident proton in the laboratory frame. |
+| $N_A$ | $\unit{mol^{-1}}$ | Avogadro constant | The factor that converts the rate coefficient to a molar rate. |
 | $n_n$ | $\unit{cm^{-3}}$ | Neutron number density | The number of free neutrons per unit volume. |
+| $n_A$, $n_{A-1}$ | $\unit{cm^{-3}}$ | Nuclear number densities | The number densities at adjacent mass numbers in the neutron-capture chain. |
+| $A$, $Z$ | $1$ | Mass number and proton number | The nucleon count and the proton count of a nucleus. |
 | $\energy{Q}_{\mathrm{eff,pp}}$ | $\unit{MeV}$ | Effective pp energy | The energy scale given after the proton–proton branch chart. |
-| $\energy{Q}$ | $\unit{keV}$ | Reaction energy | The energy change of the first helium-burning step. |
-| $a$ | $\unit{m}$ | Confinement length | The characteristic electron spacing estimated from position uncertainty. |
-| $\mu$, $\mu_0$, $\mu_e$ | 1 | Mass per particle, nucleus, or electron in atomic mass units | The numerical mass factors in the three equivalent density expressions. |
-| $n$ | $\unit{cm^{-3}}$ | Nucleus number density | The nucleus count per volume in the compact-object composition formula. |
-| $\mu$ | $\unit{kg}$ | Particle mass scale | The mass in the speed condition on [[Advanced stellar burning, polytropes, and compact stars#Relativistic stars\|the section on Relativistic stars]]. |
-| $n$ | 1 | Polytropic index | The index that determines the density profile and the equation-of-state exponent. |
-| $a$ | $\unit{m}$ | Polytropic length scale | The factor that converts the normalized coordinate to radius. |

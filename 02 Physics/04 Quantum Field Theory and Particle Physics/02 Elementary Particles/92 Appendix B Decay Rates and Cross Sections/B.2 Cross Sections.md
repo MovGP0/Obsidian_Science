@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Cross Sections"
 ---
 
@@ -47,11 +47,11 @@ $$
 \frac{d\mechanical{\sigma}}{d\mechanical{\Omega}}
 =\left(\frac{\energy{\hbar}\mechanical{c}}{8\pi}\right)^2
 \frac{S|\signal{\mathcal M}|^2}{(\energy{E}_1+\energy{E}_2)^2}
-\frac{|\mechanical{\mathbf p}_f|}{|\mechanical{\mathbf p}_i|}
+\frac{|\mechanical{\mathbf p}_{\mathrm{out}}|}{|\mechanical{\mathbf p}_{\mathrm{in}}|}
 \tag{B.7}
 $$
 
-where $|\mechanical{\mathbf p}_i|$ is the magnitude of either incoming momentum, and $|\mechanical{\mathbf p}_f|$ is the magnitude of either outgoing momentum. In particular, for *elastic* scattering $(A+B\to A+B)$, $|\mechanical{\mathbf p}_i|=|\mechanical{\mathbf p}_f|$, so [letting $\energy{E}=(\energy{E}_1+\energy{E}_2)/2$]:
+where $|\mechanical{\mathbf p}_{\mathrm{in}}|$ is the magnitude of either incoming momentum, and $|\mechanical{\mathbf p}_{\mathrm{out}}|$ is the magnitude of either outgoing momentum. In particular, for *elastic* scattering $(A+B\to A+B)$, $|\mechanical{\mathbf p}_{\mathrm{in}}|=|\mechanical{\mathbf p}_{\mathrm{out}}|$, so [letting $\energy{E}=(\energy{E}_1+\energy{E}_2)/2$]:
 
 $$
 \frac{d\mechanical{\sigma}}{d\mechanical{\Omega}}
@@ -117,6 +117,7 @@ $$
 | $\energy{\hbar}$ | $\unit{\mathrm{erg\,s}}$ | Reduced Planck constant | The quantum constant in the cross-section formula. |
 | $\mechanical{m}_i$ | $\unit{\mathrm{g}}$ | Particle mass | The mass of each initial or final particle. |
 | $\energy{E}_i,\energy{E}$ | $\unit{\mathrm{erg}}$ | Particle energy | A particle energy or the mean initial energy in the center-of-momentum frame. |
-| $\mechanical{p}_i,\mechanical{\mathbf p}_i,\mechanical{\mathbf p}_f$ | $\unit{\mathrm{g\,cm/s}}$ | Momentum | The four-momentum or spatial momentum of an initial or final particle. |
+| $\mechanical{p}_i,\mechanical{\mathbf p}_i$ | $\unit{\mathrm{g\,cm/s}}$ | Momentum | The four-momentum or spatial momentum of particle $i$ (for example $\mechanical{\mathbf p}_1$ or $\mechanical{\mathbf p}_3$). |
+| $\mechanical{\mathbf p}_{\mathrm{in}},\mechanical{\mathbf p}_{\mathrm{out}}$ | $\unit{\mathrm{g\,cm/s}}$ | CM momentum magnitudes | The momentum of either incoming or either outgoing particle in the center-of-momentum frame. |
 | $\mechanical{c}$ | $\unit{\mathrm{cm/s}}$ | Speed of light | The conversion factor between energy and momentum. |
 | $\mechanical{\theta}$ | $\unit{\mathrm{rad}}$ | Scattering angle | The angle of the outgoing particle in the lab frame. |

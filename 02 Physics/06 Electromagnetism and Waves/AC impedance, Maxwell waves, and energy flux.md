@@ -62,7 +62,7 @@ $$
 
 ##### Inductor in an AC circuit
 
-The sketch connects a sinusoidal source across an inductor. The induced emf is $\electric{\mathcal{E}}_L=-\circuit{L}\,\mathrm{d}\electric{I}/\mathrm{d}t$. For the voltage across the element and its current,
+The sketch connects a sinusoidal source across an inductor. The induced emf is $\electric{\mathcal{E}}_L=-\circuit{L}\,\mathrm{d}\electric{i}_L/\mathrm{d}t$. For the voltage across the element and its current,
 
 $$
 \begin{aligned}
@@ -144,13 +144,13 @@ $$
 \end{aligned}
 $$
 
-Here $\electric{\rho}$ is the charge density and $\electric{\vec J}$ is the current density. Divergence measures the local source or sink strength of a vector field $\vec A$.
+Here $\electric{\rho}$ is the charge density and $\electric{\vec J}$ is the current density. Divergence measures the local source or sink strength of a vector field $\vec F$.
 
 $$
-\nabla\cdot\vec A
+\nabla\cdot\vec F
 =\left(\hat{\imath}\frac{\partial}{\partial x}
 +\hat{\jmath}\frac{\partial}{\partial y}
-+\hat{k}\frac{\partial}{\partial z}\right)\cdot\vec A.
++\hat{k}\frac{\partial}{\partial z}\right)\cdot\vec F.
 $$
 
 ##### Maxwell’s equations in a source-free region
@@ -200,8 +200,8 @@ $$
 The notes give the vector triple-product identity to prepare for simplifying the double curl.
 
 $$
-\vec A\times(\vec B\times\vec C)
-=\vec B(\vec A\cdot\vec C)-\vec C(\vec A\cdot\vec B).
+\vec u\times(\vec v\times\vec w)
+=\vec v(\vec u\cdot\vec w)-\vec w(\vec u\cdot\vec v).
 $$
 
 ##### Electromagnetic wave speed
@@ -228,7 +228,7 @@ $$
 &=\frac{1}{\sqrt{\magnetic{\mu}_0\electric{\varepsilon}_0}}
 =\frac{1}{\sqrt{(4\pi\times10^{-7}\,\unit{T\,m\,A^{-1}})
 (8.854\times10^{-12}\,\unit{C^2\,N^{-1}\,m^{-2}})}}
-\approx 2.99\times10^8\,\unit{m\,s^{-1}}.
+\approx 3.00\times10^8\,\unit{m\,s^{-1}}.
 \end{aligned}
 $$
 
@@ -341,7 +341,7 @@ $$
 At normal incidence, fully absorbed light transfers momentum $\Delta\mechanical{p}=\energy{E}_{\mathrm{abs}}/\mechanical{c}$. Force is momentum transferred per time, so pressure is
 
 $$
-\mechanical{p}_{\mathrm{rad}}
+\mechanical{P}_{\mathrm{rad}}
 =\frac{\mechanical{F}}{\mechanical{A}}
 =\frac{\Delta\mechanical{p}}{\Delta\signal{t}\,\mechanical{A}}
 =\frac{\energy{E}_{\mathrm{abs}}}{\mechanical{c}\Delta\signal{t}\,\mechanical{A}}
@@ -359,25 +359,25 @@ Kyle Kabasares, *Electricity and Magnetism (Physics 9H, UC Merced 2014)*.
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
 | $\electric{\vec E}$ | $\unit{V\,m^{-1}}$ | Electric field | The electric force per unit test charge. |
-| $\electric{V}$ | $\unit{V}$ | Electric potential | The potential energy per unit test charge. |
-| $\electric{q}$, $\electric{q}_1$, $\electric{q}_2$ | $\unit{C}$ | Electric charge | The test or source charge in the electrostatic relations. |
+| $\electric{V}_{\mathrm{source}}$ | $\unit{V}$ | Source voltage amplitude | The peak voltage of the sinusoidal source that drives the resistor. |
 | $\mechanical{r}$ | $\unit{m}$ | Radial distance | The distance from a source, axis, or center. |
 | $\electric{\varepsilon}_0$ | $\unit{F\,m^{-1}}$ | Vacuum permittivity | The constant that sets the strength of the electric interaction in vacuum. |
-| $\electric{Q}$ | $\unit{C}$ | Total charge | The charge distributed along the semicircular arc. |
-| $\mechanical{A}$ | $\unit{m^2}$ | Area | The area over which the surface charge is distributed. |
+| $\electric{Q}_{\mathrm{enc}}$ | $\unit{C}$ | Enclosed charge | The net charge inside the closed Gaussian surface. |
+| $\mechanical{A}$ | $\unit{m^2}$ | Area | The illuminated area that receives the radiation pressure. |
 | $\electric{\rho}$ | $\unit{C\,m^{-3}}$ | Volume charge density | The charge per unit volume. |
-| $\electric{\Phi}$, $\electric{\Phi}_{E,\mathrm{net}}$ | $\unit{N\,m^2\,C^{-1}}$ | Electric flux | The surface integral of the normal electric field. |
+| $\electric{\Phi}_{\mathrm E}$ | $\unit{N\,m^2\,C^{-1}}$ | Electric flux | The surface integral of the normal electric field. |
+| $\magnetic{\Phi}_{\mathrm m}$ | $\unit{Wb}$ | Magnetic flux | The surface integral of the normal magnetic field. |
 | $\mechanical{\vec A}$ | $\unit{m^2}$ | Area vector | A vector normal to the surface with magnitude equal to the area. |
-| $\electric{I}$, $\electric{I}_2$–$\electric{I}_6$ | $\unit{A}$ | Circuit currents | The current in the feed and each bridge branch. |
+| $\electric{I}_{\mathrm{through}}$ | $\unit{A}$ | Conduction current | The conduction current through the surface that the Ampère loop bounds. |
+| $\electric{\vec J}$ | $\unit{A\,m^{-2}}$ | Current density | The conduction current per unit area. |
 | $\circuit{C}$ | $\unit{F}$ | Capacitance | The charge magnitude per unit voltage across a capacitor. |
 | $\electric{\varepsilon}$ | $\unit{F\,m^{-1}}$ | Permittivity | The electric response parameter of a dielectric or transparent medium. |
 | $t$, $\signal{t}$, $\Delta\signal{t}$ | $\unit{s}$ | Time and elapsed time | The time coordinate or the duration of a process. |
-| $\energy{P}$ | $\unit{W}$ | Electrical power | The rate of electrical energy transfer in the resistive element. |
-| $\electric{\mathcal{E}}$ | $\unit{V}$ | Electromotive force | The source voltage in the charging loop. |
+| $\energy{P}$ | $\unit{W}$ | Source power | The total power that the isotropic source radiates. |
+| $\electric{\mathcal{E}}$, $\electric{\mathcal{E}}_0$, $\electric{\mathcal{E}}_L$ | $\unit{V}$ | Electromotive force | The emf around a closed curve, the source amplitude, and the induced emf of the inductor. |
 | $\magnetic{\vec B}$ | $\unit{T}$ | Magnetic flux density | The magnetic field that determines the flux through a surface. |
 | $\mechanical{v}$ | $\unit{m\,s^{-1}}$ | Speed | The speed of a particle or of a wave in the medium. |
 | $\magnetic{\mu}_0$ | $\unit{T\,m\,A^{-1}}$ | Vacuum permeability | The magnetic constant in the current-element and moving-charge formulas. |
-| $N$ | 1 | Turn count | The number of loops contributing to the coil field. |
 | $\circuit{L}$ | $\unit{H}$ | Inductance | The linked magnetic flux per unit current. |
 | $\signal{f}$ | $\unit{Hz}$ | Oscillation frequency | The number of cycles per second in a circuit or wave. |
 | $\signal{\omega}$ | $\unit{rad\,s^{-1}}$ | Angular frequency | The phase advance per second in an oscillation. |
@@ -403,6 +403,7 @@ Kyle Kabasares, *Electricity and Magnetism (Physics 9H, UC Merced 2014)*.
 | $\signal{\phi}_0$ | $\unit{rad}$ | Phase constant | Phase of the traveling wave at the reference position and time. |
 | $\energy{\vec S}$ | $\unit{W\,m^{-2}}$ | Poynting vector | Energy flux of the electromagnetic field. |
 | $\energy{I}$ | $\unit{W\,m^{-2}}$ | Intensity | Time-averaged energy flux magnitude. |
+| $\mechanical{F}$ | $\unit{N}$ | Force | The force that the absorbed light applies to the surface. |
 | $\mechanical{p}$ | $\unit{kg\,m\,s^{-1}}$ | Momentum | Radiation transfers momentum when absorbed or reflected. |
-| $\mechanical{p}_{\mathrm{rad}}$ | $\unit{Pa}$ | Radiation pressure | Force per unit area exerted by incident light. |
+| $\mechanical{P}_{\mathrm{rad}}$ | $\unit{Pa}$ | Radiation pressure | Force per unit area exerted by incident light. |
 | $\energy{E}_{\mathrm{abs}}$ | $\unit{J}$ | Absorbed energy | Energy transferred to the surface by the incident light. |

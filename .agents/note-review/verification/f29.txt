@@ -1,0 +1,14 @@
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/Nuclear and quantum statistics review calculations.md
+- FIXED | Physical-quantities table lists unused symbols (Faraday F, activity R, decay constant lambda, blackbody T) | Rebuilt the table from the symbols the note uses (A, Z, N, N_tot, masses, L, m_l, E, T, k_B, f, g(E), n(E), F(v), C_F, lambda as exponent coefficient, P, V, R_21, a_0, C_V molar, U, N_A, R gas constant, B, nuclear radius/range R, d, F_G, F_C, e, G, k_e)
+- FIXED | Symbol clashes A (mass number vs normalization) and N (neutron number vs particle count) | Renamed f_MB normalization to C_MB, F(v) normalization to C_F, and the gas particle count to N_tot in the pressure relation and the mean-energy sentence
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/Nuclear mass, decay channels, and dating problems.md
+- FIXED | Neutron-discovery recoil protons were about 5.7 MeV, not 5.7 keV | Kept the handwritten label and added a sentence that it is a slip and the recoil protons had energies up to about 5.7 MeV
+- PARTLY | Table lists emissivity epsilon; R and N clashes | Replaced emissivity row with vacuum permittivity epsilon_0, renamed breakup products R and S to P_1 and P_2, added rows for A, Z, N, N(t) and N_0, nuclear radius R and R_0, and M; R as activity is correct (R=-dN/dt is used) so kept, and N(t) vs neutron number is kept as standard notation with separate table rows
+- FIXED | Be-8 two-alpha value is -0.0922 MeV, not -0.093 MeV | Changed -0.093 MeV to -0.0922 MeV (recomputed: -0.09222 MeV)
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/Standard Model.md
+- FIXED | SU(2) covariant-derivative term needs tau^i/2 | Changed -ig tau^i W^i_mu to -ig (tau^i/2) W^i_mu, consistent with m_W = g v/2
+- FIXED | VEV for mu^2<0 is sqrt(-mu^2/lambda) | Changed v = sqrt(mu^2/lambda) to v = sqrt(-mu^2/lambda)
+- FIXED | Yukawa -h.c. makes Lagrangian anti-Hermitian; Compact Form signs inconsistent | Wrote L_Yukawa = -(Qbar Y_d phi d_R + Qbar Y_u phitilde u_R + Lbar Y_e phi e_R + h.c.) and changed the inner minus signs in the Compact Form to plus
+- FIXED | Missing \\ in column vectors, ,v typo, Unicode phi superscripts, chirality vs helicity, right-handed Z coupling | Added \\ in Q_L, L_L and VEV vectors, changed ,v to \,v in m_Z, replaced Unicode with \phi^+ and \phi^0, rewrote the table text to say left-handed means chirality and only left-chiral fields couple to W, and right-handed singlets couple to Z and photon via hypercharge

@@ -1,0 +1,22 @@
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/13 Exercise Solutions/13.03 Chapter 5 - Grand Canonical Ensemble.md
+- FIXED | TLDR promises subsystem energy shifts and omits adsorption problems | Reworded TLDR to list ideal-gas grand potential and entropy, Langmuir fixed-μ energy response, vdW number fluctuations, and BET isotherm.
+- PARTLY | Table lists unused Z and omits several used symbols | Replaced Z row by Z_N; added rows for ε, κ_T^(0), P_s, P_0, x, z_s, and n_c (in the n row); T_c was already covered by the T row description.
+- FIXED | Exercise 5.2 weight leaves ε and μ uncolored | Wrote e^{-β(\energy{ε}-\energy{μ}N)}.
+
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/13 Exercise Solutions/13.04 Chapter 6 - Ideal Quantum Gas.md
+- FIXED | n means density and occupation; g means density of states and Bose function | Wrote the enhancement factor as 1+\bar n in 6.6 text and note box; added a sentence in 6.3 that g_{5/2} is the Bose function and f_{5/2} the Fermi function, not the density of states g.
+- PARTLY | Table omits g_{5/2}, f_{5/2}, Γ, ζ, U_0, P_0, Ξ_α, Θ, φ; N row says electromagnetic modes only | Added U_0, P_0, Ξ_α rows and generalized the N row to photon modes or ultrarelativistic particle states; Γ, ζ, Θ, φ, g_{5/2}, f_{5/2} are mathematical functions that the skill excludes from the table.
+
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/13 Exercise Solutions/13.05 Chapter 8 - Bose Gas and Condensation.md
+- FIXED | Wien sentence reads as if Planck's law is from 1896 | Changed to "Wien's approximation (1896) predates Planck's law (1900)".
+
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/13 Exercise Solutions/13.06 Chapter 9 - Real Gases and Interactions.md
+- FIXED | 4.129e5 Pa is 4.075 atm, not 4.077 atm | Stated the value as ≈4.075 atm and noted that the source prints 4.077 atm (checked: 4.1292e5/101325 = 4.0752).
+- FIXED | ε row describes a level energy; table omits γ, P_c, V_c, P_0 | Rewrote ε row as square-well depth of Exercise 9.2; added rows for γ, P_0, P_c, V_c.
+
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/93 C Elements of Combinatorics and Probability/C.05.03 Random Walk in d Dimensions and Polymers.md
+- FIXED | τ is step interval and imaginary time | Renamed the imaginary time in Remark C.2 to \mechanical{τ}_{\mathrm E} (Wick rotation and kernel) and split the table row into t, τ, τ_E; t is real time in both uses, so it was kept.
+
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/Statistical populations and quantum counting problems.md
+- FIXED | E_1 is a hydrogen level and also the infinite-well ground energy | Renamed the infinite-well ground energy to \energy{E}_{\mathrm{box}} in all four lines of the infinite-well section.
+- PARTLY | Table T and E_n descriptions are wrong; m, N, g(E), n(E), f missing; k_B and h uncolored | Corrected T and E_n descriptions, added E_1/E_2, E_box, m, N, g(E), n(E), f and k_B rows; did not add macros to k_B and h because they are uncolored throughout the body and a note-wide recoloring exceeds a narrow fix.

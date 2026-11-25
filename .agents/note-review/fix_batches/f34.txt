@@ -1,0 +1,66 @@
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.5.1 Preliminaries.md
+- [Correctness] "$\xi_\alpha e^\alpha_A=0=\xi^\alpha e^A_\alpha$": the object $e^A_\alpha$ is never defined; the conditions needed for the completeness relation are $\xi_\alpha e^\alpha_A=0$, $N_\alpha e^\alpha_A=0$, $N_\alpha N^\alpha=0$ and $N_\alpha\xi^\alpha=-1$ (and $\xi_\alpha\xi^\alpha=0$); state these explicitly after introducing $N^\alpha$.
+- [Correctness] Symbol clash: $\theta^A$ labels the generators while $\theta$ (mechanical colour) is the expansion in Eq. (5.97); rename the generator labels (e.g. $\vartheta^A$ or $y^A$) or add an explicit warning.
+
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.5.6 Third law.md
+- [Correctness] The weak energy condition is $T_{\alpha\beta}u^\alpha u^\beta\ge0$, not "$>0$"; correspondingly it requires $\rho\ge0$, so Eq. (5.115) should read $\ge0$ and the conclusion becomes $m(v_0)\dot\Delta(v_0)\ge0$; note that the argument is heuristic (Israel's theorem needs more than this).
+
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.7 Problems.md
+- [Correctness] Problem 7(a) enumerates the properties as "(i) … (ii) … (iii) … and (vi)"; the last item should be (iv).
+- [Correctness] Problem 3(b) calls $l_\alpha=-\partial_\alpha v$ "the four-velocity"; it is a null tangent vector, not a (timelike, normalized) four-velocity.
+
+=== 02 Physics/05 Relativity and Gravitation/04 Kaluza–Klein/KK 01 Motivation and extra dimensions.md
+- [Correctness] Symbol clash: $y$ is the compact coordinate in "$y\sim y+2\pi r$" but an ordinary spatial coordinate in $(t,x,y,z,\theta)$ and $(t,x,y,z)$ in the same note; use $y$ for only one of them (e.g. keep $\theta$ or $y_5$ for the circle).
+- [Correctness] The physical-quantities table describes symbols and uses not present in the note ("spherical-coordinate inset" for $\theta$, "wave energy, or first-mode rest energy" for $E_{\mathrm{KK}}$, "unnormalized expansion" for $\psi_n$, "embedding" coordinates); trim descriptions to what this note uses.
+
+=== 02 Physics/05 Relativity and Gravitation/04 Kaluza–Klein/KK 02 Study route and source books.md
+- [Correctness] The physical-quantities table lists meanings not used in this note: $r$ as "radial coordinate in the explicitly identified spherical inset", $\theta$ "spherical-coordinate inset", $q$ as "Test charge acted on by the Lorentz force", and $g_{ab}$; remove or correct these rows.
+
+=== 02 Physics/05 Relativity and Gravitation/04 Kaluza–Klein/KK 03 From distance to the metric tensor.md
+- [Correctness] Symbol clash: $y$ is an ordinary Cartesian coordinate in $\mathrm dx^\mu=(\mathrm dt,\mathrm dx,\mathrm dy,\mathrm dz)$ and the compact length coordinate $y=r\theta$ in "Add a flat circle"; likewise $r,\theta$ are spherical/Schwarzschild coordinates and the circle radius/angle; rename one set (e.g. $\rho_{\mathrm{sph}},\vartheta$ for the spherical inset).
+- [Correctness] The physical-quantities table lists $g_{\mu\nu}$ twice with conflicting units ($1$ and —) and includes a "Rest mass in the angular Klein–Gordon equation" $m$ that this note never uses; merge and remove.
+
+=== 02 Physics/05 Relativity and Gravitation/04 Kaluza–Klein/KK 04 Comparing four- and five-dimensional metrics.md
+- [Correctness] The physical-quantities table lists $\widetilde g_{AB}$ with unit $1$ and again with unit —, and $g_{\mu\nu}$ twice; merge into one consistent row each.
+
+=== 02 Physics/05 Relativity and Gravitation/04 Kaluza–Klein/KK 05 Cylinder condition and radion assumptions.md
+- [Correctness] Symbol clash: $\widetilde g_{AB}(t,x,y,z,\theta)$ uses $y$ as an ordinary spatial coordinate, while Eq. (5.1) $\partial_y\widetilde g_{AB}=0$ uses $y$ as the circular coordinate; rename one of them.
+- [Correctness] The table lists $\widetilde g_{AB}$ twice with conflicting units ($1$ and —); merge.
+
+=== 02 Physics/05 Relativity and Gravitation/04 Kaluza–Klein/KK 06 Algebraic decomposition of the metric.md
+- [Correctness] $B_\mu$ is defined as $\widetilde g_{\mu4}/\Phi_{\mathrm{ang}}$ (units GeV, angular convention) in the first half and as $C_\mu/D$ (dimensionless, length convention) in Eq. (6.2); the table lists only the dimensionless one; use different symbols or state the relation $B^{\mathrm{len}}_\mu=-r\,B^{\mathrm{ang}}_\mu$ at fixed radius.
+- [Correctness] Symbol clash: $B_\mu(t,x,y,z)$ uses $y$ as an ordinary coordinate, while Eq. (6.1) uses $y$ for the circle.
+
+=== 02 Physics/05 Relativity and Gravitation/04 Kaluza–Klein/KK 11 Full coordinate transformation calculation.md
+- [Correctness] The sentence "Thus the adjusted base metric is unchanged: $g\prime_{\mu …u}=g_{\mu …u}$" contains a literal line break inside `\nu` (the `\n` was turned into a newline), so it renders incorrectly; replace with $g'_{\mu\nu}=g_{\mu\nu}$.
+
+=== 02 Physics/05 Relativity and Gravitation/04 Kaluza–Klein/KK 14 Reducing the Einstein-Hilbert action.md
+- [Correctness] "Worked normalization check": if the coefficient multiplying the squared potential in the metric ($\kappa^2\Phi^2$) is doubled, the Maxwell coefficient doubles, not quadruples; the factor four applies if $\kappa$ itself is doubled; reword accordingly.
+
+=== 02 Physics/05 Relativity and Gravitation/04 Kaluza–Klein/KK 15 Deriving the curvature split.md
+- [Correctness] The text "Ricci curvature is symmetric in this setting…" is placed on the same line as the closing `$$` of the preceding aligned block; move it to its own paragraph so the display math renders.
+- [Correctness] A stray period ends the $F_{\mu\nu}F^{\mu\nu}=2(|\mathbf B|^2-|\mathbf E|^2)$ display before "in a local inertial frame", splitting one sentence; remove it.
+
+=== 02 Physics/05 Relativity and Gravitation/04 Kaluza–Klein/KK 16 Fourier modes and periodicity.md
+- [Correctness] Physical quantities: the $\mechanical{\theta}$ row refers to a "spherical-coordinate inset" that does not exist in this note, and $\signal{k}_5$ is described generically as "Angular frequency and wave vector" although only the compact wave number is used; make the rows describe this note's quantities.
+
+=== 02 Physics/05 Relativity and Gravitation/04 Kaluza–Klein/KK 17 Klein-Gordon equation and dispersion.md
+- [Correctness] Physical quantities lists $\signal{\psi}$ twice with conflicting units (GeV and —), lists $\signal{\psi}_n$ and an "unnormalized expansion" that this note never uses, and lists both $\mechanical{\mathbf x}$ and $\mechanical{x}$ as coordinates; remove the duplicates.
+
+=== 02 Physics/05 Relativity and Gravitation/04 Kaluza–Klein/KK 18 Deriving the Kaluza-Klein mass tower.md
+- [Correctness] Physical quantities: $\signal{\psi}_n$ appears twice with conflicting units (GeV and —), and the $\mechanical{\theta}$ row mentions a nonexistent "spherical-coordinate inset"; clean up the duplicates.
+
+=== 02 Physics/05 Relativity and Gravitation/04 Kaluza–Klein/KK 19 Deriving charge from phase winding.md
+- [Correctness] "Each mass eigenmode is also a charge eigenmode" is false: modes $\pm n$ are mass-degenerate, so a combination such as $\cos(n\theta)$ is a mass eigenmode with no definite charge; say instead that each Fourier mode $e^{in\theta}$ is simultaneously a mass and a charge eigenmode.
+- [Correctness] Physical quantities: the $\mechanical{\theta}$ row mentions a nonexistent "spherical-coordinate inset", and $\signal{\psi}_n$ is listed twice with conflicting units.
+
+=== 02 Physics/05 Relativity and Gravitation/04 Kaluza–Klein/KK 20 General covariance and gauge symmetry.md
+- [Correctness] Physical quantities: the $\mechanical{\theta}$ row mentions a "spherical-coordinate inset" that is not in this note.
+
+=== 02 Physics/05 Relativity and Gravitation/04 Kaluza–Klein/KK 21 Visualizing local phase choices.md
+- [Correctness] Symbol clash: $\mechanical{y}$ is an ordinary spatial coordinate in the plane example and in the table, but the note's own length-coordinate paragraph defines $y$ as the compact coordinate; rename one of them in this note.
+- [Correctness] Physical quantities: $\mechanical{m}$ is listed although it is never used, and the $\mechanical{r}$ and $\mechanical{\theta}$ rows refer to a nonexistent "spherical inset".
+
+=== 02 Physics/05 Relativity and Gravitation/04 Kaluza–Klein/Kaluza-Klein - Study Guide.md
+- [Correctness] "Notation and units" opens with "The collection uses a mostly-plus metric", but the next section and the first section of every chapter from KK 16 to KK 24 use a mostly-minus angular calculation; say the collection uses two signatures, as stated later.
+

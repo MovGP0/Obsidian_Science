@@ -2,14 +2,14 @@
 - **Skew-symmetrization** or **Antisymmetrization** can be noted using *square* brackets in the indices of the matrix/tensor. 
 ## Matrix decomposition
 
-Any real square matrix $A_{ii}$ admits a **unique decomposition** into a symmetric and an antisymmetric (skew-symmetric) part:
+Any real square matrix $A_{ij}$ admits a **unique decomposition** into a symmetric and an antisymmetric (skew-symmetric) part:
 
 $$
 A = \underbrace{\tfrac{1}{2}(A + A^{T})}_{\text{symmetric } S}
 \;+\;
 \underbrace{\tfrac{1}{2}(A - A^{T})}_{\text{antisymmetric } K}
 $$
-$$A_{ii}= A_{(ij)} + A_{[ij]}$$
+$$A_{ij}= A_{(ij)} + A_{[ij]}$$
 
 ## Symmetrization
 
@@ -27,7 +27,7 @@ A_{ijk}
 
 **General Definition**
 $$
-A_{[i_1 i_2 \dots i_n]}
+A_{(i_1 i_2 \dots i_n)}
 = \frac{1}{n!}
 \sum_{\sigma\in S_n}
 A_{i_{\sigma(1)},i_{\sigma(2)}\dots i_{\sigma(n)}}.
@@ -49,8 +49,8 @@ $$A_{[i_1 i_2 \dots i_n]} \equiv \frac{1}{n!}
 A_{i_{\sigma(1)}, i_{\sigma(2)}\dots i_{\sigma(n)}}$$
 ### Definition using the Levi–Civita tensor
 
-Antisymmetrization can be expressed using the Levi–Civita tensor:
-$$\omega_{ij} = \epsilon_{ijk},\omega^k.$$
+In 3D, the Levi–Civita tensor identifies an antisymmetric matrix $\omega_{ij}$ with an axial vector $\omega^k$:
+$$\omega_{ij} = \epsilon_{ijk}\,\omega^k, \qquad \omega^k = \tfrac{1}{2}\,\epsilon^{kij}\,\omega_{ij}.$$
 ## Example
 
 ℹ️ Let A

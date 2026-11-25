@@ -133,10 +133,10 @@ The handwritten R expression is `dpois(k, lambda = mu)`. The second probability 
 The lecture starts with an image-smoothing model. Let $x_{ij}$ denote a candidate image and $y_{ij}$ the observed image. A cost function combines a data fidelity term and a weighted roughness term $R(x)$.
 
 $$
-f(x)=\sum_{i,j}(x_{ij}-y_{ij})^2+\lambda R(x).
+J(x)=\sum_{i,j}(x_{ij}-y_{ij})^2+\kappa R(x).
 $$
 
-The notes say that the constant $\lambda$ can be chosen based on observations of smooth images. A probability density for the candidate image has the form $g(x)\propto e^{-f(x)}$. In the continuous models considered here, a probability density function describes the distribution.
+The notes say that the constant $\kappa$ can be chosen based on observations of smooth images. A probability density for the candidate image has the form $g(x)\propto e^{-J(x)}$. In the continuous models considered here, a probability density function describes the distribution.
 
 ##### Probability density and cumulative distribution
 

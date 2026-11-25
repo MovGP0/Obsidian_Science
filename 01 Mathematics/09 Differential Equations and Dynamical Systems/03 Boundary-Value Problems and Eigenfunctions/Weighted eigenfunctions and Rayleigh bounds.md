@@ -409,10 +409,10 @@ $$
 \end{cases}
 $$
 
-Set $\mechanical{u}(x,t)=\phi(x)T(t)$. The separated problems are
+Set $\mechanical{u}(x,t)=\phi(x)h(t)$. The separated problems are
 
 $$
-T''=-\lambda T,\qquad
+h''=-\lambda h,\qquad
 \mechanical{T}_0\phi''+\lambda\mechanical{\rho}(x)\phi=0,
 \qquad \phi(0)=\phi(L)=0.
 $$
@@ -535,32 +535,32 @@ $$
 \mechanical{\rho}_0(x)\mechanical{u}_{tt}
 =\mechanical{T}_0\mechanical{u}_{xx}+\mechanical{Q},
 \qquad
-\mechanical{Q}=\alpha_{\mathrm{line}}(x)\mechanical{u}.
+\mechanical{Q}=\alpha(x)\mechanical{u}.
 $$
 
-Set $\mechanical{u}(x,t)=X(x)T(t)$ to obtain
+Set $\mechanical{u}(x,t)=X(x)h(t)$ to obtain
 
 $$
-\mechanical{\rho}_0(x)X(x)T''(t)
-=\mechanical{T}_0 X''(x)T(t)+\alpha_{\mathrm{line}}(x)X(x)T(t).
+\mechanical{\rho}_0(x)X(x)h''(t)
+=\mechanical{T}_0 X''(x)h(t)+\alpha(x)X(x)h(t).
 $$
 
-Write $\alpha(x)=\alpha_{\mathrm{line}}(x)/\mechanical{\rho}_0(x)$ for the coefficient after division by the density. Then
+Divide by $\mechanical{\rho}_0(x)X(x)h(t)$. Then
 
 $$
-\frac{T''(t)}{T(t)}
-=\frac{\mechanical{T}_0}{\mechanical{\rho}_0(x)}\frac{X''(x)}{X(x)}+\alpha(x)
+\frac{h''(t)}{h(t)}
+=\frac{\mechanical{T}_0}{\mechanical{\rho}_0(x)}\frac{X''(x)}{X(x)}+\frac{\alpha(x)}{\mechanical{\rho}_0(x)}
 =-\lambda.
 $$
 
-The temporal equation is $T''=-\lambda T$. Multiplying the spatial equation by $\mechanical{\rho}_0(x)X(x)$ gives
+The temporal equation is $h''=-\lambda h$. Multiplying the spatial equation by $\mechanical{\rho}_0(x)X(x)$ gives
 
 $$
-\mechanical{T}_0 X''(x)+\mechanical{\rho}_0(x)\alpha(x)X(x)
+\mechanical{T}_0 X''(x)+\alpha(x)X(x)
 +\lambda\mechanical{\rho}_0(x)X(x)=0.
 $$
 
-This is a Sturm–Liouville equation with $p=\mechanical{T}_0$, $q=\mechanical{\rho}_0(x)\alpha(x)$, and $\sigma=\mechanical{\rho}_0(x)$. The handwriting uses $\alpha$ both before and after division by the density. The subscript $\mathrm{line}$ distinguishes the first use and retains the stated final coefficient $q$.
+This is a Sturm–Liouville equation with $p=\mechanical{T}_0$, $q=\alpha(x)$, and $\sigma=\mechanical{\rho}_0(x)$. The handwriting uses $\alpha$ both before and after division by the density and writes $q=\mechanical{\rho}_0\alpha$ with the divided coefficient. This note uses $\alpha$ only for the coefficient before division, so $q=\alpha$ as in the opening string equation.
 
 Find upper and lower bounds for the lowest natural angular frequency of a nonuniform string fixed at $x=0$ and $x=1$, with
 
@@ -645,18 +645,17 @@ Kyle Kabasares, *Partial Differential Equations (Math 126, UC Merced 2017)*.
 
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
-| $\mechanical{u}$ | $\unit{Pa}$ | Pressure | Unknown pressure in the divergence-form example. |
-| $\thermal{c}$ | $\unit{J/(kg\,K)}$ | Specific heat capacity | Thermal energy per unit mass per unit temperature rise. |
+| $\thermal{c}$ | $\unit{J/(kg\,K)}$ | Specific heat capacity | Thermal energy per unit mass per unit temperature rise in the nonuniform rod. |
 | $\mechanical{\rho}$ | $\unit{kg/m^3}$ | Mass density | Mass per unit volume of the rod. |
 | $\thermal{k}_0$ | $\unit{W/(m\,K)}$ | Thermal conductivity | Material coefficient in Fourier's law. |
-| $\thermal{k}$ | $\unit{m^2/s}$ | Thermal diffusivity | Ratio of conductivity to volumetric heat capacity. |
+| $\alpha$ | $\unit{N\,m^{-2}}$ | Load coefficient | Coefficient $q$ of the displacement-proportional load in the string equation and in Exercise 4.4.2. |
+| $\alpha$ | $\unit{W/(m^3\,K)}$ | Heat-source coefficient | Coefficient $q$ in the heat equation for the nonuniform rod. |
 | $\mechanical{u}(x,t)$ | $\unit{m}$ | Wave displacement | Scalar displacement at position $x$ and time $t$ in the one-dimensional wave model. |
-| $\mechanical{c}$, $\mechanical{v}$ | $\unit{m\,s^{-1}}$ | Wave speed | Constant propagation speed in the scalar or vector wave equation. |
+| $\mechanical{c}$ | $\unit{m\,s^{-1}}$ | Wave speed | Local propagation speed in the wave equation of the nonuniform string. |
 | $\mechanical{\rho}_0(x)$ | $\unit{kg\,m^{-1}}$ | Linear mass density | Mass per unit length of the string near $x$. |
-| $\mechanical{T}(x,t)$, $\mechanical{T}_0$ | $\unit{N}$ | String tension | Tangential force and its constant value in the idealized model. |
+| $\mechanical{T}_0$ | $\unit{N}$ | String tension | Constant tension in the idealized model. |
 | $\mechanical{f}(x)$ | $\unit{m}$ | Initial string displacement | Transverse displacement at $t=0$. |
 | $\mechanical{g}(x)$ | $\unit{m\,s^{-1}}$ | Initial string velocity | Transverse velocity at $t=0$. |
 | $\mechanical{\rho}(x)$, $\mechanical{\rho}_{\min}$, $\mechanical{\rho}_{\max}$ | $\unit{kg\,m^{-1}}$ | Nonuniform string density and its bounds | Mass per unit length and the lower and upper bounds used in the Rayleigh quotient. |
-| $\mechanical{Q}$ in Exercise 4.4.2 | $\unit{N\,m^{-1}}$ | Load per unit length | Displacement-proportional load added directly to the string equation on [[#Theorems for regular Sturm–Liouville problems with separated boundary conditions\|the section on Theorems for regular Sturm–Liouville problems with separated boundary conditions]]. |
-| $L$, $H$ | $\unit{m}$ | Rectangular membrane dimensions | Length in the $x$ direction and height in the $y$ direction. |
-| $r$, $a$ | $\unit{m}$ | Radial distance and membrane radius | Distance from the center and its value at the fixed rim. |
+| $\mechanical{Q}$ | $\unit{N\,m^{-1}}$ | Load per unit length | Displacement-proportional load added directly to the string equation in Exercise 4.4.2 on [[#Theorems for regular Sturm–Liouville problems with separated boundary conditions\|the section on Theorems for regular Sturm–Liouville problems with separated boundary conditions]]. |
+| $L$ | $\unit{m}$ | String length | Length of the interval $0\le x\le L$ between the fixed ends. |

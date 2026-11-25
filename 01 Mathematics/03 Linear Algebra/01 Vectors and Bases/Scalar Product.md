@@ -4,9 +4,9 @@ aliases:
   - Dot Product
 ---
 Scalar product
-$$ c = a\,b $$
-$$ c_i = a_i\,b_i $$
+$$ c = a\cdot b $$
+$$ c = a_i\,b_i = \sum_i a_i\,b_i $$
 
-Magnitude and Angle of 2D vector
-$$ \forall a,b\in\mathbb{R}^2: a\,b = |a|\,|b|\,\cos\gamma $$
-$$ \cos\gamma = \frac{a\,b}{|a|\,|b|} $$
+Magnitude and angle of vectors (components in an orthonormal basis)
+$$ \forall a,b\in\mathbb{R}^n: a\cdot b = |a|\,|b|\,\cos\gamma $$
+$$ \cos\gamma = \frac{a\cdot b}{|a|\,|b|}, \quad a,b\neq0 $$

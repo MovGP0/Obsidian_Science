@@ -11,15 +11,9 @@ $$\phi^n_k(t) = 2^{n/2}\,\phi(2^n t - k)$$
 
 This forms an ideal low-pass (band-limited) scaling basis
 
-## Mother wavelet $\psi(\omega)$
+## Mother wavelet $\psi(t)$
 
-$$
-\psi(\omega)
-  = \frac{1}{2\pi} e^{-i\omega}\left[
-      \Pi\!\left(\frac{\omega}{\pi} - \tfrac{3}{2}\right)
-      + \Pi\!\left(\frac{\omega}{\pi} + \tfrac{3}{2}\right)
-    \right]
-$$
+$$\psi(t) = 2\;\mathrm{sinc}\bigl(2(t-1)\bigr)\;-\;\mathrm{sinc}(t-1)$$
 This time-domain form arises from band-pass filtering the scaling function to keep the frequency support between π and 2π (and symmetrically over negatives)
 
 ## Scaled and shifted wavelets
@@ -42,7 +36,7 @@ $$
 
 transforms to
 
-$$\psi(t) = 2\;\mathrm{sinc}(2t)\;-\;\mathrm{sinc}(t)$$
+$$\psi(t) = 2\;\mathrm{sinc}\bigl(2(t-1)\bigr)\;-\;\mathrm{sinc}(t-1)$$
 
 where
 
@@ -53,3 +47,5 @@ $$
 0, & \text{otherwise}
 \end{cases}
 $$
+
+This uses the Fourier convention $\Psi(\omega) = \frac{1}{2\pi}\int_{-\infty}^{\infty}\psi(t)\,e^{-i\omega t}\,dt$ and $\psi(t) = \int_{-\infty}^{\infty}\Psi(\omega)\,e^{i\omega t}\,d\omega$. The phase factor $e^{-i\omega}$ shifts the wavelet by $1$. Without it, $\psi(t) = 2\,\mathrm{sinc}(2t) - \mathrm{sinc}(t)$, which also gives an orthonormal wavelet basis.

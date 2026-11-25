@@ -27,7 +27,7 @@ For positive charge the field points away from the disk. The potential is even i
 
 ## Sources
 
-Source material from Kyle Kabasares’s UC Merced notes. [[Superposition, electric flux, and Gauss’s law problems#Dipole in an electric field|Physics 9H]], [[Field superposition and Gauss-law review#Concave mirror|Physics 9H]].
+Source material from Kyle Kabasares’s UC Merced notes. [[Electric potential, capacitors, and Kirchhoff calculations#Potential on the axis of a charged disk|Physics 9H]], [[Superposition, electric flux, and Gauss’s law problems#A plane of charge|Physics 9H]].
 
 ## Physical quantities
 

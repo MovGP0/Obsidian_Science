@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Study route and prerequisites"
 document_type: "Self-contained study chapter"
 ---
@@ -136,12 +136,11 @@ Keep a distinction between assumptions, identities, and predictions. For example
 | $\mechanical{x}$ | $\unit{GeV^{-1}}$ | Base coordinate | Ordinary length-valued base coordinate; a four-coordinate argument where stated. |
 | $\mechanical{y}$ | $\unit{GeV^{-1}}$ | Spatial coordinate | Ordinary spatial coordinate in the stated example. |
 | $\mechanical{z}$ | $\unit{GeV^{-1}}$ | Spatial coordinate | Third ordinary spatial coordinate. |
-| $\mechanical{r}$ | $\unit{GeV^{-1}}$ | Radius | Physical circle radius; radial coordinate in the explicitly identified spherical inset. |
-| $\mechanical{\theta}$ | $1$ | Circular angle | Compact circular angle; the spherical-coordinate inset identifies its separate polar-angle use. |
+| $\mechanical{r}$ | $\unit{GeV^{-1}}$ | Radius | Physical circle radius. |
+| $\mechanical{\theta}$ | $1$ | Circular angle | Compact circular angle with period two pi. |
 | $\mechanical{\Phi}_{\mathrm{ang}}$ | $\unit{GeV^{-2}}$ | Angular squared radius | Squared physical radius; distinct from the dimensionless radius ratio in the length-coordinate formulation. |
 | $\electric{A}_\mu$ | $\unit{GeV}$ | Angular-convention potential | Electromagnetic potential with the angular formulation’s positive-gradient gauge law. |
 | $\electric{F}_{\mu\nu}$ | $\unit{GeV^2}$ | Field strength | Antisymmetric derivative of the angular potential. |
-| $\electric{q}$ | $1$ | Test charge | Charge acted on by the Lorentz force. |
 | $\mechanical{\xi}$ | $1$ | Angular normalization | Dimensionless factor relating the mixed vector to the four-potential. |
 | $\mechanical{\kappa}$ | $\unit{GeV^{-1}}$ | Angular charge-to-mass scale | Length-valued coupling equal to radius times xi. |
 | $\mechanical{G}$ | $\unit{GeV^{-2}}$ | Gravitational constant | Four-dimensional Newton coupling in the reduced action. |
@@ -150,5 +149,5 @@ Keep a distinction between assumptions, identities, and predictions. For example
 | $\electric{q}_n$ | $1$ | Mode charge | Signed mode charge in natural Heaviside–Lorentz units. |
 | $\signal{\psi},\signal{\psi}_n$ | — | Scalar waves | Scalar field and Fourier coefficients in the unnormalized expansion; amplitude units depend on the chosen normalization. |
 | $\widetilde g_{AB}$ | — | Five-dimensional metric | Component units depend on the length-valued base coordinates and dimensionless angular coordinate. |
-| $g_{\mu\nu},g_{ab}$ | $1$ | Angular base metric | Metric examples in this chapter; angular-coordinate entries carry the required length factors. |
+| $g_{\mu\nu}$ | $1$ | Angular base metric | Four-dimensional metric block in the angular decomposition. |
 | $R,\widetilde R$ | $\unit{GeV^2}$ | Scalar curvature | Four- and five-dimensional scalar curvatures in the angular convention. |

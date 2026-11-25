@@ -1,0 +1,58 @@
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/01 Review of Thermodynamics/Thermodynamic equilibrium, work, and the fundamental postulates.md
+- [Correctness] Postulate II margin: "$\Delta G=H-T\Delta S$" should be $\Delta G=\Delta H-T\Delta S$ (constant $T$), and "$\Delta G_{\mathrm{univ}}>0$" is wrong as a spontaneity criterion; state instead that at fixed $T,P$ a spontaneous process has $\Delta G_{\mathrm{sys}}<0$, equivalent to $\Delta S_{\mathrm{univ}}=-\Delta G/T>0$, or drop the margin line.
+- [Correctness] Physical-quantities table lists symbols the note never uses and that clash with used ones: $\thermal{T}_c$ as "Curie temperature" (the note uses $T_c$ for the cold reservoir), $n$ as "number density" (the note uses $n$ in mol), $\energy{E}$ Boltzmann-weight energy, Landé $g$, degeneracy $g$, fugacity $z$, fine-structure $\alpha$ (the note's $\alpha$ is a power-rule exponent), and $\mechanical{\vec x}$; remove these and add the used $\thermal{T}_h$, $\thermal{T}_0$, $\thermal{T}_{\mathrm f}$, $\mechanical{P}_0$, $\mechanical{V}_0$, $\mechanical{F}_{\mathrm{int}}$, $\mechanical{F}_{\mathrm{ext}}$.
+- [Correctness] Symbol clashes: $W$ is work and multiplicity ($S=k_B\ln W$ in "Isothermal and adiabatic compression"), and $x$ is the piston coordinate in metres and the dimensionless $x=V/V_0$; use $\Omega$ for multiplicity and e.g. $\xi=V/V_0$ for the substitution.
+
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/02 Foundations of Statistical Mechanics/02.03.03 Geometric Interpretation - Incompressibility.md
+- [Correctness] The caption and text call the mapping in Fig. 2.2 a "shear", but the drawn map (edge vectors $(1,0.2)$ and $(0.25,1.05)$) is a general area-preserving linear map, not a shear; call it an "area-preserving deformation" or redraw it as a true shear $(q,p)\to(q+ap,p)$.
+
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/02 Foundations of Statistical Mechanics/02.08.03 Example 3 - Two-Level System and Negative Temperature.md
+- [Correctness] The Physical quantities table describes ${\mechanical{N}}$ as "Particle or oscillator count" and ${\energy{E}}$ with "ΔE is an energy interval", but this note has no oscillators and no $\Delta E$; restrict the rows to the spin count and the spin-system energy.
+
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/03 Microcanonical Ensemble/03.01.02 Ergodic Hypothesis and Microcanonical Density.md
+- [Correctness] The Physical quantities table lists ${\signal{t}}$ (time), but no time symbol appears in this note; remove the row.
+
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/03 Microcanonical Ensemble/03.08 Worked Examples.md
+- [Correctness] Example 3.4 uses ${\energy{h}}_i$ for the single-molecule Hamiltonian, while ${\energy{h}}^{5N}$ in $\Phi_{\mathrm{di}}$ is Planck's constant in the same example; rename the Hamiltonian $\mathcal H_i$ or $\varepsilon_i$. Also colour the angles consistently: $\theta$ is uncoloured while ${\mechanical{\phi}}$ uses \mechanical.
+
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/03 Microcanonical Ensemble/Phase-space counting, ideal gases, and Liouville’s theorem.md
+- [Correctness] The physical-quantities table lists wrong meanings and symbols the note never uses. $j$ is a summation index here, not an "internal partition function"; ${\energy{h}}$ appears a second time as an "Ising field parameter"; $z$ (fugacity), $q$ (coordination number), $P_i$, $W$, $\thermal{Q}_{\mathrm{rev}}$, $\mechanical{P}_{\mathrm{int}}$, $\mechanical{P}_{\mathrm{ext}}$, $\mechanical{\vec r}$ and $\mechanical{v}$ (molar volume) never appear. $\energy{u}$ is described as internal energy per amount but is used as a spectral energy density in $du=\rho(\nu)d\nu$. $\Omega$ is said to include the cumulative count, which the note calls $\Sigma$, and $\Omega_D$ (unit-sphere area) is missing.
+- [Correctness] Symbol clashes and macros: $n$ stands for number density, amount in moles, number of blocks, the quantum numbers $n_x$ and the Stirling variable. The sentence "it denotes the amount in moles in the earlier ideal gas calculation" is wrong, because the moles usage ($PV=nRT$) comes later. The oscillator section uses \mechanical{\omega} while the table and the rest of the chapter use \signal{\omega}, and $N$ is uncoloured although the chapter uses \mechanical{N}.
+- [Correctness] In the Gibbs bullet, the "potential $\Omega(\thermal{T},\mechanical{V},N)$" should be the grand potential $\Omega(T,V,\mu)$. It also clashes with the multiplicity $\Omega$ used throughout; rename one of them (for example $\Omega_G$).
+- [Correctness] Historical and reference details: the Boltzmann transport equation and H-theorem date from 1872, not 1876, and Pauli's spin–statistics proof is from 1940. The reading-list name read as "Carder" is almost certainly Kardar (*Statistical Physics of Particles*), the usual companion to Pathria.
+
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/04 Canonical Ensemble/04.01.02 Derivation of the Canonical Distribution.md
+- [Correctness] The Physical quantities table describes ${\energy{\varepsilon}}$ as "The level spacing or characteristic energy per particle", but in this note it is the bath-energy argument of $\Omega_{\mathcal B}(\varepsilon)$; correct the description.
+
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/04 Canonical Ensemble/04.05.01 Formal Proof.md
+- [Correctness] "$U({\thermal{T}})$" in the sentence after the saddle condition is written without the energy macro; use ${\energy{U}}({\thermal{T}})$ as in the table.
+
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/04 Canonical Ensemble/04.07.02 Quantum Oscillator.md
+- [Correctness] Symbol clash: "Limiting cases" sets $x=\beta\hbar\omega$, while the Fig. 4.4 axis uses $x=k_{\mathrm B}T/(\hbar\omega)$, its reciprocal; rename one (for example $\tau=k_{\mathrm B}T/(\hbar\omega)$ on the axis).
+
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/04 Canonical Ensemble/Canonical density matrices and imaginary-time kernels.md
+- [Correctness] The sentence "The free-particle equation and its Gaussian solution are on [[#Entropy from the canonical density matrix|...]]" (twice in the section "Canonical ensemble kernels") points to the wrong heading; the free-particle kernel is in "Free particle kernel", and the imaginary-time equation is in "Position representation and imaginary time".
+- [Correctness] In "Harmonic oscillator partition function", "The kernel from [[#Canonical ensemble kernels|the section on · Canonical ensemble kernels]]" points to the wrong heading (the oscillator kernel is in "One-dimensional quantum harmonic oscillator") and the display text contains a stray "·".
+- [Correctness] Symbol clash: $A$ denotes the observable in $\langle A\rangle=\operatorname{Tr}(\hat\rho A)$, $\energy{A}$ the Helmholtz free energy, and $A$ the Gaussian prefactor in $Ae^{-Bx^2}$; rename the prefactor (e.g. $\mathcal N$) and the observable (e.g. $\hat O$).
+- [Correctness] The physical-quantity table lists symbols the note never uses or with wrong meanings: $\mechanical{x},\mechanical{h}$ "lifting example", $P_{\mathrm{int}},P_{\mathrm{ext}}$ "piston", $n$ twice (moles and density), $\theta,\phi$ orientation angles, $g$ Landé factor and internal degeneracy, $q$ coordination number, and $\energy{H}$ as enthalpy; trim it to the symbols used.
+
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/04 Canonical Ensemble/Classical canonical gases and spin magnetization.md
+- [Correctness] Symbol clash: $\energy{H}$ is the Hamiltonian and $\magnetic{H}$ the applied field in the same equations ($\energy{H}=-\sum\vec\mu_i\cdot\magnetic{\vec H}$); rename the field to $\magnetic{B}$ as in 04.09, keeping a note about the notebook's $H$.
+- [Correctness] Quantity table errors: $\mechanical{v}$ is listed as "volume per unit amount" but the note uses it as particle speed in $T\propto\langle v^2\rangle$; $j$ is listed as "internal partition function" but is the angular-momentum quantum number; $z$ (fugacity), $n$ (twice), $P_{\mathrm{int}},P_{\mathrm{ext}}$, $q_i,p_i$ and "internal degeneracy" $g$ are unused, and $\mechanical{c}$ is described via a "photon spectrum formula" that does not appear.
+- [Correctness] Historical paragraph: Amontons' own extrapolation of the pressure–temperature line gave roughly $-240\,{}^\circ\mathrm C$, not $-273\,{}^\circ\mathrm C$; state that the $-273$ value comes from later, more precise gas data.
+
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/05 Grand Canonical Ensemble/05.01.03 Physical Interpretation.md
+- [Correctness] Fig. 5.1 labels "Tᵦ, Pᵦ, μᵦ", "Nᵦ particles" and the equilibrium line use U+1D66 (Greek subscript beta), not a Latin B; this reads as $T_\beta$ and clashes with the inverse temperature $\beta$; use Latin "B" labels (e.g. MathJax $T_B$).
+
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/05 Grand Canonical Ensemble/05.07 Solved Examples.md
+- [Correctness] Symbol clash: $z$ is the fugacity while $z_{\mathrm{rot}}$, $z_{\mathrm{osc}}$, $z_{\mathrm{int}}$ are single-particle partition functions, and they appear together in products such as $zVz_{\mathrm{rot}}/\lambda_T^3$ and $zz_{\mathrm{osc}}^3$; rename the partition functions (e.g. $q_{\mathrm{rot}},q_{\mathrm{osc}},q_{\mathrm{int}}$).
+- [Correctness] The same site occupation is $N_{\mathrm{site}}$ in Example 5.5 but $n_{\mathrm{site}}$ in Example 5.7, and the table row for $\Delta$ lists "Signed chemical-potential offset", a meaning never used in this note; unify the occupation symbol and fix the table row.
+
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/05 Grand Canonical Ensemble/05.09 Summary.md
+- [Correctness] The quantity table lists entropy ${\thermal{S}}$, which the summary never uses; remove the row or add the entropy result $S=-(\partial\Phi/\partial T)_{V,\mu}$ to item 3.
+
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/05 Grand Canonical Ensemble/Grand potentials, exchange symmetry, and occupation numbers.md
+- [Correctness] Dates: Fermi's statistics paper is from 1926 (not 1925), and Pauli's spin–statistics theorem was published in 1940 (Phys. Rev. 58, 716), not 1941 or 1944; state the correct dates instead of only reporting the notebook values.
+- [Correctness] Symbol clashes: $\Omega$ (state count) and $\energy{\Omega}$ (grand potential) appear in the same note, $\energy{H}$ (Hamiltonian) and $\magnetic{H}$ (field) appear in the spin section, and $\alpha$ is the exchange phase while the table calls it the fine-structure constant; use $\Phi_G$ or $\Phi$ for the grand potential (as in 05.09) and $B$ for the field.
+- [Correctness] Quantity table lists symbols the note never uses or with wrong meanings: $\alpha$ "fine-structure constant", $\mechanical{M}$ twice including "stellar mass", $j$ "internal partition function", $g$ twice, $P_{\mathrm{int}},P_{\mathrm{ext}}$ "piston", $n$ twice (moles, density), $q_i,p_i$, and $\mechanical{c}$ described through a "photon spectrum formula"; trim it to the symbols used.
+

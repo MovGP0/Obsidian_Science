@@ -1,0 +1,22 @@
+=== 03 Engineering/01 Robotics/Configuration Space.md
+- FIXED | Opening bullets call C-space the number of configurations | Rewrote both bullets: C-space is the set (manifold) of all configurations and its dimension equals the DoF.
+- FIXED | Torus rows use S² and S³, clashing with the sphere S² | Renamed S to S^1 throughout the table and wrote the tori as S^1 × S^1 (T²) and S^1 × S^1 × S^1 (T³).
+- FIXED | S = [0,2π) is an interval and the sphere chart [0,π)×S misses a pole | Callout now says S^1 = [0,2π] with 0 and 2π identified; sphere row now θ ∈ [0,π], φ ∈ S^1 with singular poles.
+- FIXED | Sphere-surface "orientation manifold" and "Helical space" rows are misleading | Sphere-surface row now says point on a sphere (implicit S²); helical row replaced by (x,y,z,φ) ∈ ℝ³ × S^1, 3D translation + rotation about one axis.
+=== 03 Engineering/01 Robotics/Degrees of Freedom.md
+- FIXED | Dependent constraints make Grübler overestimate mobility (backwards) | Changed to underestimate: Grübler subtracts too many and gives a lower bound, actual DoF ≥ Grübler.
+- FIXED | Second image has 5 bodies and 6 joints, not 6 linkages | Checked the image; bullet now gives N=5, J=6, 3(5-1-6)+6=0 but actual 1 DoF due to the redundant third parallel link.
+- FIXED | Four-bar is not a dependence example; add Stewart count | Renamed heading to "Examples" (no new section), added four-bar count 3(4-1-4)+4=1 (independent) and Stewart count 6(14-1-18)+36=6.
+- FIXED | Definition says stationary state; Wikpedia typo | Definition now says count of numbers needed to specify the configuration (velocities not included); fixed Wikipedia typo.
+=== 03 Engineering/01 Robotics/Holonomic and Pfaffian constraints.md
+- FIXED | Matrix of ∂g_i/∂θ_j is the holonomic Jacobian, yet called non-integrable | Matrix now has general entries A_ij(θ), "constraint Jacobian" changed to "constraint matrix", added the Jacobian form as the holonomic special case.
+- FIXED | Pfaffian equated with nonholonomic | Rewrote the note callout: Pfaffian means linear in velocities; holonomic if integrable (Frobenius), else nonholonomic; removed "(non-integrable)" from the closing bullet.
+=== 03 Engineering/01 Robotics/Unicycle Model.md
+- FIXED | Pfaffian expansion missing "=", wrong sign on sin φ ẋ, uses "," | Now A(q)q̇ = 0·φ̇ + sin φ \, ẋ − cos φ \, ẏ = 0.
+- FIXED | q̇ column vector uses "\ " row separators; (\phi) not in math | Replaced "\ " with "\\" row separators and wrote $\phi$.
+- FIXED | Unicycle has no steering angle; missing φ̇ = ω; references to absent figure | Added φ̇ = ω and the inputs v, ω; renamed section to "Relation to the Path Curvature" with κ = ω/v and the bicycle-model relation φ̇ = (v/L)tan δ; removed the "on the right"/"slide" references.
+=== 04 Reference/02 Units and Constants/SI Base Units.md
+- FIXED | Unit relations lack defining numerical values | m, kg, A, K rows now use c/299 792 458, h/6.626 070 15e-34, e/1.602 176 634e-19, 1.380 649e-23/k with correct units (dimension-checked).
+- FIXED | 1 mol = N_A·1 Hz is dimensionally wrong | Now 1 mol = 6.022 140 76e23 / N_A.
+- FIXED | ℏ = 2π/h is inverted | Now ℏ = h/(2π); also replaced the Unicode minus in the exponent of h.
+- FIXED | Candela and ΔνCs, e, Kcd missing; Avogrado typo | Added cd row and s derivation via ΔνCs; added ΔνCs, e and Kcd constant rows; fixed Avogadro spelling.

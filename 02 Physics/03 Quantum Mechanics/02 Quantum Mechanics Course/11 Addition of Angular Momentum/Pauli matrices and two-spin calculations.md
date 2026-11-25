@@ -235,5 +235,7 @@ Kyle Kabasares, *Quantum Mechanics (Physics 137, UC Merced 2015)*.
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
 | $\hbar$ | $\unit{J\,s}$ | Reduced Planck constant | Planck constant divided by $2\pi$. |
-| $J_x$ | $\unit{s^{-1}}$ | Probability flux | Signed one-dimensional probability current. |
-| $R$, $T$ | $1$ | Reflection and transmission coefficients | Ratios of reflected and transmitted flux magnitudes to the incident flux magnitude. |
+| $\hat{\mathbf S}$, $\hat S_i$ | $\unit{J\,s}$ | Spin angular momentum | Spin operator and its Cartesian components. For spin one-half, $\hat S_i=(\hbar/2)\sigma_i$. |
+| $\hat{\mathbf L}$ | $\unit{J\,s}$ | Orbital angular momentum | Orbital angular momentum operator. |
+| $\hat{\mathbf J}$, $\hat J_x$ | $\unit{J\,s}$ | General angular momentum | General angular momentum operator and its $x$ component, for one particle or for the combined system. |
+| $s$, $m_s$ | $1$ | Spin quantum numbers | Spin quantum number and its projection on the $z$-axis. |

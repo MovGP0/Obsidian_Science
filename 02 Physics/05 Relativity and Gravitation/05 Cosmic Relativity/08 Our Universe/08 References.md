@@ -16,11 +16,11 @@ Use this list to trace the chapter's treatment of expansion, CMB observations, c
 5. A. Friedmann, On the curvature of space. *Zeitschrift für Physik* **10**, 377–386 (1922). Translation in *General Relativity and Gravitation* **31**, 1991–2000 (1999).
 6. F. Hoyle, G. Burbidge, J. V. Narlikar, *A Different Approach to Cosmology: From a Static Universe Through the Big Bang Towards Reality* (Cambridge University Press, 2000).
 7. C. S. Unnikrishnan, *The Darker Sides of Our Universe* (2023), forthcoming.
-8. G. Lemaître, A homogeneous universe of constant mass and increasing radius accounting for the radial velocity of extra-galactic nebulae, translated from the original French paper of 1927. *MNRAS* **90**, 483–490 (1931).
-9. A. Eddington, On the Instability of Einstein’s Spherical World. *MNRAS* **90**, 668–678 (1931).
+8. G. Lemaître, A homogeneous universe of constant mass and increasing radius accounting for the radial velocity of extra-galactic nebulae, translated from the original French paper of 1927. *MNRAS* **91**, 483–490 (1931).
+9. A. Eddington, On the Instability of Einstein’s Spherical World. *MNRAS* **90**, 668–678 (1930).
 10. H. P. Robertson, On relativistic cosmology. *Lond. Edinburgh Dublin Philos. Mag. J. Sci.* **5**, 835–848 (1928).
 11. E. Hubble, M. L. Humason, The velocity-distance relation among extra-galactic nebulae. *Astrophys. J.* **74**, 43–80 (1931).
-12. A. Sandage, Current problems in the extragalactic distance scale. *Astrophys. J.* **127**, 513–526 (1948).
+12. A. Sandage, Current problems in the extragalactic distance scale. *Astrophys. J.* **127**, 513–526 (1958).
 13. W. L. Freedman, B. F. Madore, The Hubble constant. *Annu. Rev. Astron. Astrophys.* **48**, 673–710 (2010).
 14. E. A. Milne, A Newtonian expanding universe. *Q. J. Math.* **os-5**, 64–72 (1934).
 15. E. A. Milne, *Relativity, Gravitation and World-Structure* (Clarendon Press, Oxford, 1935).

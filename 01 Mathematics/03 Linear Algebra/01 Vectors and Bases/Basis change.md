@@ -10,7 +10,7 @@ $${e'}^j = (B^{-1})^j_i\ e^i$$
 $$v'^j = (B^{-1})^j_i\ v^i$$
 
 ### Basis change on Covector
-$${e'}_j = B^i_j\ a_i$$
+$${e'}_j = B^i_j\ e_i$$
 $${\alpha'}_j = B^i_j\ \alpha_i$$
 
 ### Inverse basis change on Covector

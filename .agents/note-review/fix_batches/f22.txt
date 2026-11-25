@@ -1,0 +1,58 @@
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/07 Quantum Electrodynamics/7.P Problems.md
+- [Correctness] Problem 7.34 hint: the interference term must have denominator $4(p_1-p_3)^2(p_1-p_4)^2$, because $\mathcal M_2$ in (7.105) carries $1/(p_1-p_4)^2$; the written $(p_2-p_4)^2$ equals $(p_1-p_3)^2$ and would repeat the first propagator instead.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/08 Electrodynamics of Quarks and Hadrons/8.2 Hadron Production in e⁺e⁻ Scattering.md
+- [Correctness] Eq. (8.2): the second trace is written $\operatorname{Tr}[\gamma^\mu(\not p_4-Mc)\gamma^\nu(\not p_3+Mc)]$ with upper indices, so the two traces are not contracted; it must be $\operatorname{Tr}[\gamma_\mu(\not p_4-Mc)\gamma_\nu(\not p_3+Mc)]$ (compare eq. 7.124).
+- [Correctness] In the paragraph after eq. (8.11): "an underestimate in the region above $1784\,\mathrm{GeV}$" must be $1784\,\mathrm{MeV}$ (the tau threshold, as stated correctly earlier in the note and in the footnote).
+- [Correctness] Outdated statements presented as current: "By 1987 the Linear Collider at SLAC should be operating" and "evidently its [top] mass exceeds $18\,\mathrm{GeV}/c^2$"; add a callout that SLC/LEP ran from 1989, the top was discovered in 1995 with $m_t\approx172.6\,\mathrm{GeV}/c^2$ (PDG), so the $R=5$ step lies above $2E\approx345\,\mathrm{GeV}$ and was never seen in $e^+e^-\to$ hadrons, and that near $2E\approx91\,\mathrm{GeV}$ $Z^0$ exchange dominates.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/08 Electrodynamics of Quarks and Hadrons/8.3 Elastic Electron-Proton Scattering.md
+- [Correctness] Eq. (8.16) reads $q_\mu K^{\mu\nu}=1$; it must be $q_\mu K^{\mu\nu}=0$ (current conservation; Problem 8.4's hint and eq. 8.30 use 0, and eq. 8.17 follows only from 0).
+- [Correctness] Footnote ep-8-3-regimes cites "The Mott formula (7.127)"; in the vault eq. (7.127) is the amplitude and the Mott formula is eq. (7.128) (as Problem 8.10 correctly cites).
+- [Correctness] Symbol clash: bare $K$ (proton anomalous magnetic moment, factor $1+K$ in the Fig. 8.4 caption and table) shares its letter with the form factors $K_1,K_2,K_4,K_5$ and the tensor $K^{\mu\nu}$; rename it $\kappa_p$ (value 1.7928) here and in 8.B.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/08 Electrodynamics of Quarks and Hadrons/8.4 Inelastic Electron-Proton Scattering.md
+- [Correctness] Symbol clash: $W$ is used for the missing mass in the Fig. 8.5 caption and table ($W=\sqrt{p_{\mathrm{tot}}^2}/c$) and also for the structure functions $W_1,W_2,W_4,W_5$ and the tensor $W^{\mu\nu}$; rename the missing mass (for example $M_X$) or add an explicit warning in the table.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/08 Electrodynamics of Quarks and Hadrons/8.5 The Parton Model and Bjorken Scaling.md
+- [Correctness] Eq. (8.40): $W_2^i=-\frac{2m_ic\,Q_i^2}{q^2}\delta(x_i-1)$ is missing a factor $c$; from (8.35) and (8.36) with $M\to m_i$ it is $W_2^i=-\frac{2m_ic^2Q_i^2}{q^2}\delta(x_i-1)$ (needed for units $\mathrm{g^{-1}}$ and for eq. 8.45, which correctly has $c^2$).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/09 Quantum Chromodynamics/9.1 Feynman Rules for Chromodynamics.md
+- [Correctness] Symbol clash: $\signal{c}$ is the quark color vector (9.3, 9.12, 9.13) while $\mechanical{c}$ is the speed of light in the propagator (9.15) and the table; rename the color vector (for example $\signal{\xi}$) or add an explicit warning next to (9.15).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/09 Quantum Chromodynamics/9.2 The Quark-Quark Interaction.md
+- [Correctness] In the triplet list (9.34) the second state reads "bg-gb)/\sqrt2" with a missing opening parenthesis; it should be $(bg-gb)/\sqrt2$.
+- [Correctness] In Example 9.4 the first display has a minus sign before the fourth term $[(0\,1\,0)\lambda^\alpha(0\,1\,0)^T][(1\,0\,0)\lambda^\alpha(1\,0\,0)^T]$; expanding $(rb-br)\otimes(rb-br)$ gives $+\lambda^\alpha_{22}\lambda^\alpha_{11}$ (as the next line correctly has), so the sign must be $+$.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/09 Quantum Chromodynamics/9.3 Pair Annihilation in QCD.md
+- [Correctness] Symbol clash: $\signal{c}$, $\signal{c_1}$, $\signal{c_2}$ are color vectors while $\mechanical{c}$ is the speed of light in the same equations (9.40)-(9.66); rename the color vectors or warn explicitly.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/09 Quantum Chromodynamics/9.4 Asymptotic Freedom.md
+- [Correctness] Eq. (9.72) "100 MeV < $\Lambda c$ < 500 MeV" is outdated; add current values, e.g. $\alpha_s(M_Z)=0.1180\pm0.0009$ (PDG 2024), $\Lambda^{(5)}_{\overline{MS}}\approx 210$ MeV, $\Lambda^{(3)}\approx 340$ MeV, and note that $\Lambda$ depends on the scheme and the number of active flavors.
+- [Correctness] "$f$ is the number of flavors (6, in the Standard Model)" is misleading for (9.69): $f$ must be the number of active flavors with $m_q c\lesssim|q|$ (e.g. $f=5$ between $m_b$ and $m_t$), and $\Lambda$ changes at each threshold.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/09 Quantum Chromodynamics/9.5 Applications of QCD.md
+- [Correctness] "Why don't we now calculate the neutron-proton mass difference ... or the binding energy of the deuteron?" and "embarrassingly meager" are outdated: lattice QCD+QED has computed the neutron-proton mass difference (Borsanyi et al., Science 347, 1452 (2015)) and the light hadron spectrum to about 1%; add a dated callout with the current status.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/09 Quantum Chromodynamics/9.B References and Notes.md
+- [Correctness] Ref. 6 lists Politzer's review as "*Phys. Rev.* **14C**, 130 (1974)"; the source PDF (and the actual publication) has *Phys. Rep.* **14C**, so it should read *Phys. Rep.*; also remove the UTF-8 BOM.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/09 Quantum Chromodynamics/9.P Problems.md
+- [Correctness] Problem 9.5(a) answer "$\frac{7\cdot6}{3\cdot2\cdot1}=56$" is wrong arithmetic (it equals 7); it should be $\binom83=\frac{8\cdot7\cdot6}{3\cdot2\cdot1}=56$.
+- [Correctness] Problem 9.2: with $\signal{c'}=U\signal{c}$ and the given $U$, red $(1,0,0)^T$ maps to $(0,0,1)^T$ (green), so this $U$ takes $r\to g$, $b\to r$, $g\to b$, not "$r\to b$, $b\to g$, $g\to r$"; either use $U=\begin{pmatrix}0&0&1\\1&0&0\\0&1&0\end{pmatrix}$ or correct the stated mapping.
+- [Correctness] Problems 9.6(b), 9.6(c) and 9.8 write the states as "$(r\bar r-b\bar b)\sqrt2$", "$(r\bar r+b\bar b-2g\bar g)\sqrt6$", "$(rb+br)\sqrt2$"; the normalized states are divided by $\sqrt2$, $\sqrt6$, $\sqrt2$ (cf. (9.4), (9.35)).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/10 Weak Interactions/10.1 Charged Leptonic Weak Interactions.md
+- [Correctness] Eq. (10.1) quotes $M_W=82\pm2$ and $M_Z=92\pm2\,\mathrm{GeV}/c^2$; give current values ($M_W\approx80.37$, $M_Z\approx91.19\,\mathrm{GeV}/c^2$) in a short note. "By far the heaviest elementary particles yet detected" is no longer true, because the top quark (~173 GeV) and the Higgs boson (~125 GeV) are heavier.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/10 Weak Interactions/10.2 Decay of the Muon.md
+- [Correctness] Eq. (10.39) writes $G$ while the note defines $G_F$ in (10.38) and uses $G_F$ elsewhere; write $G_F^2$ in (10.39) and drop the table's remark that the equation "prints the symbol G".
+- [Correctness] "New machines are presently under construction that will run at energies close to $M_Wc^2$" is outdated (LEP2, Tevatron, and LHC have run there). Update it or mark it as historical. $g_w=0.66$ is consistent with the current $M_W$ ($g_w\approx0.653$).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/10 Weak Interactions/10.3 Decay of the Neutron.md
+- [Correctness] The experimental lifetime "$898\pm16$ sec" is outdated (PDG: $878.4\pm0.5$ s), and $c_A=1.26\pm0.02$ is now $g_A\approx1.2754$. The claim that 914 s "is now within the error bars" and the footnote's "within 6%" no longer hold (963 s is ~10% above 878 s; even against 898 s the gap was 7%). Add an updated remark.
+- [Correctness] The Cabibbo angle $13.1^\circ$ in (10.70) is close to the current $\approx13.0^\circ$ ($|V_{ud}|=0.9737$); state the modern $|V_{ud}|$ in a note, since it enters (10.71) directly.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/10 Weak Interactions/10.4 Decay of the Pion.md
+- [Correctness] "If the electron were truly massless, then (like the neutrino) it would only exist as a left-handed particle" is wrong. A massless electron would still have both helicities (the photon couples to both); only the $(1-\gamma^5)$ weak vertex selects the left-handed one. Rephrase so that the "More precisely" sentence is the main statement.
+

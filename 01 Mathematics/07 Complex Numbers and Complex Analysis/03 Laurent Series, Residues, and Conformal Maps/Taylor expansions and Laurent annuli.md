@@ -515,7 +515,7 @@ $$
 -\frac1{z-2}=\frac1{2-z}=\frac12\sum_{n=0}^{\infty}\left(\frac z2\right)^n.
 $$
 
-On $1<|z|<2$, combine it with the inverse-power expansion from [[#Region $D_1$|the section on Region $D_1$]].
+On $1<|z|<2$, combine it with the inverse-power expansion of $1/(z-1)$ above.
 
 $$
 f(z)=\frac1z\sum_{n=0}^{\infty}\left(\frac1z\right)^n+

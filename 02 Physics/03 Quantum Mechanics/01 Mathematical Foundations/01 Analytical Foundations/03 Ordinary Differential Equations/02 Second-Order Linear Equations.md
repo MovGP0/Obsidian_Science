@@ -110,7 +110,7 @@ The characteristic equation is $r^2+\signal{k}^2=0$, with roots $r=\pm\mathrm{i}
 $$
 \signal{\psi}(\mechanical{x})
 =C_1\mathrm{e}^{\mathrm{i}\signal{k}\mechanical{x}}+C_2\mathrm{e}^{-\mathrm{i}\signal{k}\mechanical{x}}
-=A\cos(\signal{k}\mechanical{x})+B\sin(\signal{k}\mechanical{x}).
+=D_1\cos(\signal{k}\mechanical{x})+D_2\sin(\signal{k}\mechanical{x}).
 $$
 
 Both forms are valid. The exponential form is more useful in quantum mechanics because $\mathrm{e}^{\mathrm{i}\signal{k}\mechanical{x}}$ is a momentum eigenfunction with eigenvalue $\energy{\hbar}\signal{k}$.

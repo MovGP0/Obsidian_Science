@@ -98,10 +98,10 @@ $$
 The delta is supported at $x=0$ and has unit integral over the real line. Away from the endpoints of an interval,
 
 $$
-\int_a^b f(x)\delta(x-k)\,\mathrm{d}x=
+\int_a^b f(x)\delta(x-x_0)\,\mathrm{d}x=
 \begin{cases}
-f(k),&a<k<b,\\
-0,&k<a\ \text{or}\ k>b.
+f(x_0),&a<x_0<b,\\
+0,&x_0<a\ \text{or}\ x_0>b.
 \end{cases}
 $$
 
@@ -129,14 +129,14 @@ The entries $x$ and $p_x$ indicate multiplication by the corresponding variable.
 
 ##### Hamiltonian and commutators
 
-The Hamiltonian is kinetic plus potential energy, $H=K+V=T+V$. For a stationary state,
+The Hamiltonian is kinetic plus potential energy, $H=K+V$. For a stationary state,
 
 $$
 \hat H\psi=-\frac{\hbar^2}{2m}\frac{\partial^2\psi}{\partial x^2}
 +V(x)\psi=E\psi.
 $$
 
-For the oscillator, $V(x)=\tfrac12kx^2$.
+For the oscillator, $V(x)=\tfrac12k_{\mathrm s}x^2$, where $k_{\mathrm s}$ is the spring constant.
 
 The commutator of matrices or operators is $[A,B]=AB-BA$. Acting on $f$, this is $A(Bf)-B(Af)$. For multiplication by $x$ and differentiation, the product rule gives
 
@@ -229,7 +229,7 @@ $$
 
 The eigenvalue is then the expectation value.
 
-Recall $H=T+V$ and $\hat H=-\tfrac{\hbar^2}{2m}\partial_x^2+V(x)$. A state satisfying $\hat H\psi=E\psi$ may fail to be an eigenfunction of another operator $\hat\Omega$. In a complete eigenbasis of $\hat\Omega$, expand the full wavefunction as $\psi=\sum_n c_n\psi_n$, where the $\psi_n$ are the individual eigenfunctions of $\hat\Omega$.
+Recall $H=K+V$ and $\hat H=-\tfrac{\hbar^2}{2m}\partial_x^2+V(x)$. A state satisfying $\hat H\psi=E\psi$ may fail to be an eigenfunction of another operator $\hat\Omega$. In a complete eigenbasis of $\hat\Omega$, expand the full wavefunction as $\psi=\sum_n c_n\psi_n$, where the $\psi_n$ are the individual eigenfunctions of $\hat\Omega$.
 
 ##### Expectation value in an eigenbasis
 
@@ -399,7 +399,7 @@ y(x,t)=f(x-vt)=A\sin\left[\frac{2\pi}{\lambda}(x-vt)\right]
 =A\sin(kx-\omega t).
 $$
 
-Here $k=2\pi/\lambda$ is the wave number and $\omega=2\pi/T$. The phase velocity is $v=\lambda/T=\omega/k$.
+Here $k=2\pi/\lambda$ is the wave number and $\omega=2\pi/T_{\mathrm w}$, where $T_{\mathrm w}$ is the wave period. The phase velocity is $v=\lambda/T_{\mathrm w}=\omega/k$.
 
 **)**
 
@@ -419,5 +419,20 @@ Kyle Kabasares, *Quantum Mechanics (Physics 137, UC Merced 2015)*.
 | $\energy{V}$ | $\unit{J}$ | Potential energy | Position-dependent energy term in the Hamiltonian. |
 | $\energy{E}$ | $\unit{J}$ | Energy eigenvalue | Energy associated with a stationary state. |
 | $\Psi$ | $\unit{m^{-3/2}}$ in three dimensions | Position-space wavefunction | Probability amplitude for one particle. Its squared magnitude is a probability density. |
-| $R$, $T$ | $1$ | Reflection and transmission coefficients | Ratios of reflected and transmitted flux magnitudes to the incident flux magnitude. |
 | $\mechanical{p}_x$ | $\unit{kg\,m/s}$ | Momentum along x | Canonical momentum in the classical Hamiltonian equations. |
+| $m$ | $\unit{kg}$ | Mass | Mass of the particle. |
+| $x$ | $\unit{m}$ | Position | Position coordinate of the particle, the rock, or the wave profile. |
+| $K$ | $\unit{J}$ | Kinetic energy | Kinetic part of the Hamiltonian, $K=p^2/(2m)$. |
+| $L$ | $\unit{m}$ | Box length | Width of the one-dimensional box. |
+| $k$ | $\unit{m^{-1}}$ | Wave number | Wave number of the box eigenfunction ($k=\pi/L$) and of the sinusoidal wave ($k=2\pi/\lambda$). |
+| $k_{\mathrm s}$ | $\unit{N/m}$ | Spring constant | Stiffness in the oscillator potential. |
+| $\sigma_x$ | $\unit{m}$ | Position standard deviation | Root mean square deviation of the position from its mean. |
+| $p(x)$ | $\unit{m^{-1}}$ | Probability density | Probability per unit length to find the rock or the particle at $x$. |
+| $\tau(t)$ | $\unit{s^{-1}}$ | Time probability density | Probability per unit time for a randomly selected frame. |
+| $g$ | $\unit{m/s^2}$ | Gravitational acceleration | Acceleration of the falling rock. |
+| $h$ | $\unit{m}$ | Fall height | Distance that the rock falls. |
+| $T$ | $\unit{s}$ | Fall time | Time that the rock needs to fall the distance $h$. |
+| $v$ | $\unit{m/s}$ | Wave speed | Propagation speed of the wave profile. |
+| $\lambda$ | $\unit{m}$ | Wavelength | Spatial period of the sinusoidal wave. |
+| $T_{\mathrm w}$ | $\unit{s}$ | Wave period | Time period of the sinusoidal wave. |
+| $\omega$ | $\unit{rad/s}$ | Angular frequency | Angular frequency of the sinusoidal wave. |

@@ -1,9 +1,9 @@
 ---
 title: Cross product a×b
 ---
-Determinant of two 3D vectors. Returns a **pseudo-vector**.
+Formal determinant with the rows $(e_x, e_y, e_z)$, $a$, and $b$. Its components are the $2\times2$ minors of $a$ and $b$. Returns a **pseudo-vector**.
 
-$$ c_i = ε_{ijk} \, a_i \, b_j $$
+$$ c_i = ε_{ijk} \, a_j \, b_k $$
 
 Alternative syntax:
 

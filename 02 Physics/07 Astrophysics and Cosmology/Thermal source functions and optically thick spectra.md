@@ -165,14 +165,17 @@ Kyle Kabasares, *Radiative Transfer in Astrophysics (Physics 240C, UC Irvine 201
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
 | $\energy{I}_{\signal{\nu}}$ | $\unit{erg\cdot s^{-1}\cdot cm^{-2}\cdot sr^{-1}\cdot Hz^{-1}}$ | Specific intensity | Radiated power per unit projected area, solid angle, and frequency. |
-| $\energy{I}$ | $\unit{erg\cdot s^{-1}\cdot cm^{-2}\cdot sr^{-1}}$ | Frequency-integrated intensity | Specific intensity integrated over frequency. |
 | $\energy{j}_{\signal{\nu}}$ | $\unit{erg\cdot s^{-1}\cdot Hz^{-1}\cdot sr^{-1}\cdot cm^{-3}}$ | Emission coefficient | Specific intensity added by spontaneous emission per unit path length. |
-| $\mechanical{n}$ | $\unit{cm^{-3}}$ | Number density | Number of absorbers per unit volume. |
+| $\mechanical{n}$ | $\unit{cm^{-3}}$ | Number density | Particle number density of the plasma at fixed composition. |
 | $\energy{\alpha}_{\signal{\nu}}$ | $\unit{cm^{-1}}$ | Absorption coefficient | Fractional loss of specific intensity per unit path length. |
 | $\energy{\tau}_{\signal{\nu}}$ | $1$ | Optical depth | Absorption coefficient integrated along a path. |
-| $\alpha$ | $1$ | Fine-structure constant | Dimensionless electromagnetic coupling constant. |
-| $\energy{S}$ | $\unit{erg\cdot s^{-1}\cdot cm^{-2}}$ | Incident energy flux | Electromagnetic energy incident per unit time and area. |
-| $\thermal{T}$ | $\unit{K}$ | Brightness temperature | Temperature inferred from the intensity in the Rayleigh–Jeans limit in this section. |
+| $\thermal{T}$, $\thermal{T}'$ | $\unit{K}$ | Temperature | Temperature of the cavity walls, the material, or the plasma. |
 | $\energy{\epsilon}_{\signal{\nu}}$ | $\unit{erg\cdot s^{-1}\cdot cm^{-3}\cdot Hz^{-1}}$ | Volume emissivity | Radiated power per unit volume and frequency, integrated over direction. |
 | $\energy{S}_{\signal{\nu}}$ | $\unit{erg\cdot s^{-1}\cdot cm^{-2}\cdot sr^{-1}\cdot Hz^{-1}}$ | Source function | Ratio of the emission coefficient to the absorption coefficient. |
 | $\energy{B}_{\signal{\nu}}(\thermal{T})$ | $\unit{erg\cdot s^{-1}\cdot cm^{-2}\cdot sr^{-1}\cdot Hz^{-1}}$ | Planck function | Specific intensity of equilibrium blackbody radiation. |
+| $\mechanical{s}$, $\mechanical{L}$ | $\unit{cm}$ | Path length | Distance along the ray, and the total length of a uniform medium. |
+| $\mechanical{n}_e$, $\mechanical{n}_i$ | $\unit{cm^{-3}}$ | Electron and ion number densities | Numbers of electrons and ions per unit volume. |
+| $Z$ | $1$ | Ion charge number | Ion charge in units of the elementary charge. |
+| $\bar{g}_{\mathrm{ff}}$ | $1$ | Velocity-averaged free–free Gaunt factor | Quantum-mechanical correction factor of order unity. |
+| $\delta\energy{Q}$, $\delta\energy{Q}'$ | $\unit{erg}$ | Heat | Small heat transfer into the first or the second cavity. |
+| $\thermal{S}$, $\thermal{S}'$, $\thermal{S}_{\mathrm{tot}}$ | $\unit{erg\cdot K^{-1}}$ | Entropy | Entropy of each cavity and of the isolated pair. It is different from the source function $\energy{S}_{\signal{\nu}}$. |

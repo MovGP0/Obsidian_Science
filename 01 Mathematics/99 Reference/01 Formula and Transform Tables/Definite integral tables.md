@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Definite integral tables and convergence"
 catalogue_ids:
   - "21.8"
@@ -15,7 +15,7 @@ catalogue_ids:
 
 For a continuous function on $[a,b]$, $\int_a^bf(x)\,dx$ is its signed accumulated area. If $F'=f$, the fundamental theorem gives $F(b)-F(a)$. An integral with an infinite endpoint or an unbounded integrand is **improper** and is defined by a limit. Review [[08.03 The fundamental theorem]] and [[08.07 Improper integrals]].
 
-For example, $\int_1^\infty x^{-p}dx$ means $\lim_{R\to\infty}\int_1^R x^{-p}dx$. The limit exists exactly when $p>1$, giving $1/(p-1)$. At $p=1$, the logarithm diverges. At $0<p<1$, the power grows without bound. At a singular endpoint near zero, the criterion reverses: $\int_0^1x^{-p}dx$ converges exactly when $p<1$.
+For example, $\int_1^\infty x^{-p}dx$ means $\lim_{R\to\infty}\int_1^R x^{-p}dx$. The limit exists exactly when $p>1$, giving $1/(p-1)$. At $p=1$, the logarithm diverges. At $0<p<1$, the partial integral $(R^{1-p}-1)/(1-p)$ grows without bound as $R\to\infty$. At a singular endpoint near zero, the criterion reverses: $\int_0^1x^{-p}dx$ converges exactly when $p<1$.
 
 The two sides of an interior pole must converge separately. Symmetric cancellation is a different notion called a principal value. Thus $\int_{-1}^1dx/x$ is not a convergent improper integral, even though symmetric cutoffs cancel. A table of principal values must identify itself explicitly.
 

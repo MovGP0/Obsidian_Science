@@ -1,0 +1,24 @@
+=== 02 Physics/07 Astrophysics and Cosmology/The collisionless Boltzmann equation and Jeans moments.md
+- [Correctness] The Physical quantities table conflicts with the note. It uses $\mu$ for both surface brightness and mean particle mass, $n$ for both Sérsic index and number density, and $\beta$ for both the velocity anisotropy and an "isothermal beta-model exponent". It describes $\rho_0$ as a deprojection normalization and lists unused $V$, $q$, $\epsilon$, $e$, $p$, $\delta$, $a$ and $b$. Prune it.
+
+=== 02 Physics/07 Astrophysics and Cosmology/The fundamental plane of elliptical galaxies.md
+- [Correctness] The $D_n$–σ normalization is missing a factor: Schneider eq. 3.35 reads $D_n/(h^{-1}\,\mathrm{kpc})=2.05\,(\sigma_0/100\,\mathrm{km\,s^{-1}})^{1.33}$. Restore the $h^{-1}$.
+- [Correctness] With $1/\gamma\approx0.83$ and $b$ between $-0.85$ and $-0.75$, the residual exponent $b+1/\gamma$ lies between $-0.02$ and $+0.08$, not between $\pm0.05$. In the table, $r_g$ is listed both as gravitational radius and as gyroradius, and $V$, $n$, $q$/$\epsilon$/$e$ and $p$ are unused.
+
+=== 02 Physics/07 Astrophysics and Cosmology/Thermal bremsstrahlung and cluster hydrostatic equilibrium.md
+- [Correctness] In "Free–free cooling function and Gaunt factor", matching the impulse-approximation result to R&L eq. 5.14a leaves a factor of $\sqrt3/4\approx0.43$, not $3\pi/(2\sqrt3)\approx2.72$. Check: $32\pi^3(2\pi)^{-3/2}m_e^{-3/2}\big/\left[32\pi m_e^{-1}(2\pi/(3m_e))^{1/2}\right]=\sqrt3/4$. Correct the bracketed factor.
+- [Correctness] The Physical quantities table lists $b$ as the Doppler parameter, but the note uses $b$ as the impact parameter. The Compton $y$, $\energy{U}$ radiation energy density and "brightness" $T$ are unused or wrong here. Add $n_e$, $n_i$, $Z$, $v_0$, $\ell_e$, $r_g$, $t_{\mathrm{eq}}$, $P$, $\rho$, $\Phi$, $\mu$, $m_a$ and $\bar g_{\mathrm{ff}}$.
+
+=== 02 Physics/07 Astrophysics and Cosmology/Thermal source functions and optically thick spectra.md
+- [Correctness] The table lists $\alpha$ fine-structure constant, $\energy{S}$ incident flux and $\energy{I}$, which are unused, and calls $\thermal{T}$ brightness temperature, though here it is the wall or plasma temperature. It omits $L$ (path length), $Z$, $n_e$, $n_i$, $\bar g_{\mathrm{ff}}$, $\delta Q$ and the entropy $\thermal{S}$, which also visually clashes with the source function $\energy{S}_\nu$; rename the entropy (e.g. $S_{\mathrm{ent}}$).
+
+=== 02 Physics/07 Astrophysics and Cosmology/Thermonuclear rates and hydrogen-burning chains.md
+- [Correctness] In "CNO cycles", the fourth reaction must be $^{14}$N + p → $^{15}$O + γ. The cycle then needs $^{15}$O → $^{15}$N + e⁺ + ν and $^{15}$N + p → $^{12}$C + α to close; write out the full chain.
+- [Correctness] Nonresonant rate prefactor: $(8/\pi m)^{1/2}(kT)^{-3/2}$, with $S$ in MeV b and energies in MeV, gives $1.6\times10^{-15}\,\mathrm{cm^3\,s^{-1}}\,S/[\mu^{1/2}(kT)^{3/2}]$. The power is $\mu^{1/2}$, not $\mu$, and $S$ (taken as constant) must multiply the integral.
+- [Correctness] $r_{\alpha\beta}=n_\alpha n_\beta\langle\sigma v\rangle_{\alpha\beta}$ should use the target density $n_X$, as in the line before it, because $\beta$ labels the outgoing particle.
+- [Correctness] Symbol clashes: $\energy{\epsilon}$ is the energy-generation rate at the top and the collision energy later; $\Gamma$ denotes both the adiabatic exponents and the resonance widths; $\mu$ is both mean molar mass and reduced mass in amu; $P_i$ sits next to pressure $P$. Rename, for example collision energy $E$. The table also carries many unused entries ($a$, $c$, streaming $v$, neutron-drip $Z$/$N$, polytropic $K$/$n$).
+
+=== 02 Physics/07 Astrophysics and Cosmology/Variable stars and stellar pulsation.md
+- [Correctness] The table gives Mira periods as 100–300 days. Mira variables span about 80–1000 d, and Mira itself has $P\approx332$ d, so the opening "one to two years" for Mira is also too long.
+- [Correctness] β Cephei stars pulsate mainly in low-order p (and mixed) modes driven by the iron-opacity κ mechanism; only γ Doradus stars are g-mode pulsators. ZZ Ceti stars are specifically hydrogen-atmosphere (DAV) white dwarfs; helium- and C/O-atmosphere pulsators are the DBV (V777 Her) and GW Vir classes.
+

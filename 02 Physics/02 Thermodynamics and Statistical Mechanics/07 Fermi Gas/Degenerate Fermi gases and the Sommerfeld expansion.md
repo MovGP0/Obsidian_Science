@@ -114,10 +114,10 @@ $$
 
 Multiply by $g\mechanical{V}(2\mechanical{m})^{3/2}/(4\pi^2\energy{\hbar}^3)$ to recover $N$. The page points next to expansions for energy and pressure.
 
-At fixed $N$ and $\mechanical{V}$, invert the low-temperature particle-count expression. To quadratic order, replace $\energy{\mu}$ in the correction by its leading value $\energy{E}_{\mathrm F}$. With $x=\thermal{k}_{\mathrm B}\thermal{T}/\energy{E}_{\mathrm F}$,
+At fixed $N$ and $\mechanical{V}$, invert the low-temperature particle-count expression. To quadratic order, replace $\energy{\mu}$ in the correction by its leading value $\energy{E}_{\mathrm F}$. With $t=\thermal{k}_{\mathrm B}\thermal{T}/\energy{E}_{\mathrm F}$,
 
 $$
-\energy{\mu}=\energy{E}_{\mathrm F}\left[1-\frac{\pi^2}{12}x^2+O(x^4)\right].
+\energy{\mu}=\energy{E}_{\mathrm F}\left[1-\frac{\pi^2}{12}t^2+O(t^4)\right].
 $$
 
 The prefactor $\energy{E}_{\mathrm F}=\frac{\energy{\hbar}^2}{2\mechanical{m}}(6\pi^2n/g)^{2/3}$ depends on density. For the energy integral take $f(\energy{\epsilon})=\energy{\epsilon}^{3/2}$.
@@ -138,31 +138,31 @@ Eliminating $\energy{\mu}$ with the fixed-density expansion gives
 
 $$
 \langle\energy{E}\rangle=\frac35N\energy{E}_{\mathrm F}
-\left[1+\frac{5\pi^2}{12}x^2+O(x^4)\right].
+\left[1+\frac{5\pi^2}{12}t^2+O(t^4)\right].
 $$
 
 The prefactor is the zero-temperature energy. Using $\energy{\Omega}=-\mechanical{P}\mechanical{V}=-(2/3)\langle\energy{E}\rangle$, the low-temperature degeneracy pressure is
 
 $$
 \mechanical{P}=\frac25n\energy{E}_{\mathrm F}
-\left[1+\frac{5\pi^2}{12}x^2+O(x^4)\right].
+\left[1+\frac{5\pi^2}{12}t^2+O(t^4)\right].
 $$
 
-The notebook gives $\thermal{k}_{\mathrm B}\thermal{T}\approx0.024\;\unit{eV}$ at room temperature and asks for the Fermi energy of copper. At fixed $N,\mechanical{V}$, differentiating the energy yields
+The notebook gives $\thermal{k}_{\mathrm B}\thermal{T}\approx0.024\;\unit{eV}$ at room temperature (at $300\;\unit{K}$ the value is $0.0259\;\unit{eV}$, as used under Metals) and asks for the Fermi energy of copper. At fixed $N,\mechanical{V}$, differentiating the energy yields
 
 $$
-\thermal{C}_V=N\thermal{k}_{\mathrm B}\left[\frac{\pi^2}{2}x+O(x^3)\right],
+\thermal{C}_V=N\thermal{k}_{\mathrm B}\left[\frac{\pi^2}{2}t+O(t^3)\right],
 $$
 
 so the low-temperature electronic heat capacity is linear in temperature.
 
-Let $x=\thermal{k}_{\mathrm B}\thermal{T}/\energy{E}_{\mathrm F}$ as on the preceding page. The low-temperature Helmholtz free energy and entropy are
+Let $t=\thermal{k}_{\mathrm B}\thermal{T}/\energy{E}_{\mathrm F}$ as on the preceding page. The low-temperature Helmholtz free energy and entropy are
 
 $$
 \begin{aligned}
-\energy{A}&=\frac35N\energy{E}_{\mathrm F}-\frac{\pi^2}{4}N\energy{E}_{\mathrm F}x^2+\cdots,\\
+\energy{A}&=\frac35N\energy{E}_{\mathrm F}-\frac{\pi^2}{4}N\energy{E}_{\mathrm F}t^2+\cdots,\\
 \thermal{S}&=\frac{\langle\energy{E}\rangle-\energy{A}}{\thermal{T}}
-=\frac{\pi^2}{2}N\thermal{k}_{\mathrm B}x+\cdots.
+=\frac{\pi^2}{2}N\thermal{k}_{\mathrm B}t+\cdots.
 \end{aligned}
 $$
 
@@ -235,19 +235,15 @@ Kyle Kabasares, *Thermodynamics and Statistical Mechanics (Chem 232A - Physics 2
 | $\thermal{S}$ | $\unit{J\,K^{-1}}$ | Entropy | State function whose change along a reversible path is the integral of reversible heat divided by temperature. |
 | $\mechanical{\vec p}$ | $\unit{kg\,m\,s^{-1}}$ | Momentum | Particle momentum, which changes sign under time reversal. |
 | $\mechanical{V}$ | $\unit{m^3}$ | Volume | Spatial extent of a simple system. |
-| $\mechanical{P}$, $\mechanical{P}_{\mathrm{int}}$, $\mechanical{P}_{\mathrm{ext}}$ | $\unit{Pa}$ | Pressure | Force per unit area, including the internal and applied external pressure at the piston. |
-| $n$ | $\unit{mol}$ | Amount of substance | Number of moles in the gas. |
+| $\mechanical{P}$ | $\unit{Pa}$ | Pressure | Force per unit area of the gas, including the degeneracy pressure. |
 | $\thermal{C}_V$ | $\unit{J\,K^{-1}}$ | Heat capacity at constant volume | Temperature derivative of internal energy at fixed volume and composition. |
 | $\energy{E}$ | $\unit{J}$ | Energy | Microscopic energy that enters the Boltzmann weight. |
 | $\thermal{\beta}$ | $\unit{J^{-1}}$ | Inverse thermal energy | Reciprocal of Boltzmann's constant times the absolute temperature. |
 | $\energy{F}$, $\energy{A}$ | $\unit{J}$ | Helmholtz free energy | Canonical thermodynamic potential obtained from the partition function. |
 | $n$ | $\unit{m^{-3}}$ | Number density | Particle count per unit volume. |
 | $\energy{\mu}$ | $\unit{J}$ per particle | Chemical potential | Intensive energy variable conjugate to particle number. |
-| $\Omega$ | 1 | Multiplicity | Number of accessible microstates, including the cumulative count in the ideal-gas calculation. |
 | $\mechanical{c}$ | $\unit{m\,s^{-1}}$ | Speed of light | Propagation speed in the photon spectrum formula. |
-| $g$ | 1 | Landé factor | Proportionality factor relating angular momentum and magnetic moment. |
 | $\energy{\Omega}$ | $\unit{J}$ | Grand potential | Legendre transform of Helmholtz free energy with respect to particle number. |
-| $z$ | 1 | Fugacity | Exponential of the chemical potential divided by the thermal energy. |
 | $\energy{E}_{\mathrm F}$ | $\unit{J}$ or $\unit{eV}$ | Fermi energy | Zero-temperature energy at the edge of the filled one-particle states. |
-| $g$ | 1 | Internal degeneracy | Number of internal states per momentum state. |
+| $g$ | 1 | Spin degeneracy | Number of spin states per momentum state, $g=2s+1$. |
 | $\mechanical{p}_{\mathrm F}$ | $\unit{kg\,m\,s^{-1}}$ | Fermi momentum | Momentum magnitude at the boundary of the occupied states at zero temperature. |

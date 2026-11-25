@@ -1,0 +1,52 @@
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/08 Our Universe/08.04 The Reason Behind the Expansion of the Universe.md
+- [Correctness] Eq. (8.23) with $\Lambda>0$ (the sign Einstein and de Sitter used, and the sign in (8.3) and (8.21)) gives oscillating $\phi$, not exponential growth; the exponent $\sqrt{-\Lambda c^2}$ is real only for $\Lambda<0$. De Sitter's result is $H=\sqrt{\Lambda c^2/3}$ with $\Lambda>0$, so "$H=\sqrt{-\Lambda c^2}$" has both the wrong sign and a missing factor 3.
+- [Correctness] Eq. (8.24) uses $\ddot a/a=\ddot\phi/\phi$, which is not derived anywhere (no relation between $a$ and $\phi$ is given), and writes $-\Lambda/(\sqrt\Lambda)^2$ although (8.23) gives $\ddot\phi/\phi=-\Lambda c^2$ and $H^2=-\Lambda c^2$; state the assumed relation $a\propto\phi$ or drop the equation.
+- [Correctness] Fix the printed expressions in the text instead of retaining them with callouts: the caption relations need $G$ ($F/m=-(4\pi G/3)\rho a$, $\ddot a/a=-4\pi G\rho/3$) and the static potential is $\phi=-4\pi G\rho/\Lambda$.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/08 Our Universe/08.05 The Cosmic Microwave Background Radiation.md
+- [Correctness] CMB energy density is $aT^4=7.566\times10^{-16}\times2.7255^4\approx4.2\times10^{-14}\,\mathrm{J/m^3}$, i.e. $4.6\times10^{-31}\,\mathrm{kg/m^3}$, not $5\times10^{-30}\,\mathrm{kg/m^3}$; it is comparable to the starlight value quoted in the first sentence, not larger.
+- [Correctness] Write the dipole speed as $v=1.234\times10^{-3}c\approx370\,\mathrm{km/s}$ in the text itself instead of keeping "$370\,\mathrm{m/s}$" with a callout.
+- [Correctness] Fig. 8.6(b): CMB temperature anisotropies after dipole removal are not "below $50\,\mu\mathrm{K}$"; Planck maps span roughly $\pm300\,\mu\mathrm{K}$ with an rms near $100\,\mu\mathrm{K}$ ($\Delta T/T\sim10^{-5}$ on large scales); correct the band or label it as a typical large-scale amplitude.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/08 Our Universe/08.06 The Large Scale Distribution of Matter.md
+- [Correctness] "nearly isotropic and homogeneous on scales below ten per cent of the Universe's size" should be "on scales above about $100\,\mathrm{Mpc}$" (a few per cent of the Hubble radius); below that scale the distribution is filamentary, as 08.02.01 says.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/08 Our Universe/08.06.01 The Dark Matter.md
+- [Correctness] The 21 cm line comes from cold neutral atomic hydrogen, not "hot-gas radiation"; correct the sentence.
+- [Correctness] "A galaxy typically has a central bulge containing most of its mass": in spirals the visible mass is often dominated by the disc, the total mass by the dark halo, and the example M33 is almost bulgeless; rephrase.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/08 Our Universe/08.06.03 The Dark Energy.md
+- [Correctness] Fix $p=\epsilon/(3c)$ to $p=\epsilon/3$ in the text, and write the dark-matter bound as $p_{\mathrm{dm}}<10^{-3}\rho_{\mathrm{dm}}c^2$, instead of retaining the printed forms with callouts.
+- [Correctness] "The source gives the diagonal metric entries as $(-1,-1,-1,-1)$" is not a valid Lorentzian metric; the relevant signature is $(+1,-1,-1,-1)$ (or $(-1,1,1,1)$), and with $T_{\mu\nu}=\rho_\Lambda c^2\,\mathrm{diag}(1,-1,-1,-1)$ in the first convention one reads off $p=-\rho_\Lambda c^2$.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/08 Our Universe/08.06.04 The Dark Energy and the Quantum Vacuum.md
+- [Correctness] "Zero-point energy is quantum energy present even at zero kinetic energy" is wrong: the ground state of an oscillator has nonzero kinetic energy ($\langle T\rangle=\hbar\omega/4$); say "present even at zero temperature, in the lowest-energy state". Also write $p\approx-\rho c^2$ in the text instead of keeping the callout.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/08 Our Universe/08.06.05 An Interpretation of the Critical Density.md
+- [Correctness] Write the energy balance as $\tfrac12m\dot r^2=\tfrac{4\pi}{3}Gm\rho r^2$ in the text instead of keeping the missing $m$ with a callout.
+- [Correctness] The Newtonian estimate does not give exactly $\Phi_u=-c^2$: for a uniform sphere of critical density and radius $c/H_0$ the potential is $-\tfrac12c^2$ at the surface and $-\tfrac34c^2$ at the centre ($2\pi G\rho_cR^2$); state that $-c^2$ is an order-of-magnitude identification, or show the calculation that gives it exactly.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/08 Our Universe/08.07 The Interpretation of the Expansion of the Universe.md
+- [Correctness] Write $\delta\ll d$ (not $d\ll\delta$) and $\delta E=p\,\delta p/m=(1-a_e/a_r)p^2/m$ in the text instead of retaining the printed forms with callouts.
+- [Correctness] The dust-cloud collapse time is $t_{\mathrm{ff}}=\sqrt{3\pi/(32G\rho_0)}\approx0.54/\sqrt{G\rho_0}$ (Oppenheimer–Snyder), not $1/\sqrt{G\rho_0}$; call the latter an order-of-magnitude estimate or give the exact value.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/08 Our Universe/08.08 The Absolute Features of Our Universe.md
+- [Correctness] Item 3: neutrinos alone contribute at least about 0.1% of critical density ($\Omega_\nu\ge0.0013$ for the minimal mass sum $0.06\,\mathrm{eV}$, and up to about 0.5% allowed), so "Light and neutrinos contribute less than $0.1\%$" is wrong; photons contribute about 0.005%.
+- [Correctness] Item 4: write $q=-\ddot a/(aH_0^2)$ in the text instead of keeping the sign error with a callout; item 2: the Hubble law in frequency is $\delta\nu/\nu=-H d/c$ (or $z=Hd/c$).
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/09 Time Dilation and the Twin-Paradox/09 References.md
+- [Correctness] Ref 3: "$25$(9–15), 47–51" is not a valid issue/page citation; give it as *Phys. Today* 25(1), 9–15 and 47–51 (1972) or whatever the actual letter pages are. Ref 4 lacks its year (Naturwissenschaften 6, 697–702, 1918).
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/09 Time Dilation and the Twin-Paradox/09.04 Langevin's Twin-Paradox.md
+- [Correctness] "Kinematics is symmetric except for the brief inertial, gravity-like force in B's rest frame": B has no single inertial rest frame; its worldline consists of two inertial segments, and in B's outbound and inbound frames Earth's simultaneous time jumps at the turnaround. The asymmetry is in the worldlines, not only in the force, so the "real paradox" claim does not follow from STR as stated; label it as the author's view.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/09 Time Dilation and the Twin-Paradox/09.05 The Real Twin-Paradox in the STR.md
+- [Correctness] "The STR cannot choose $t_A>t_B$ or $t_B>t_A$": once each frame's burn sequence is specified, both worldlines are known in any inertial frame and $\int d\tau$ gives unique reunion readings (equal if the reversals are symmetric, otherwise the clock that changed velocity more ages less). Freezing the clocks during burns does not change this, since the difference accumulates on the coasting legs.
+- [Correctness] Subscript inconsistency: "relative dilation is $\Delta T_a-\Delta T_b$" uses lowercase $a,b$ while the rest of the note uses $A,B$.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/09 Time Dilation and the Twin-Paradox/09.06 The Predictions for Motional Time Dilation.md
+- [Correctness] The STR prediction for the Mumbai–Paris trip uses only the ground-relative speed $v$ in $-v^2/(2c^2)$, treating the rotating Earth surface as inertial. Standard relativity evaluates both clocks in the non-rotating Earth-centred inertial frame, giving the transported clock's rate offset $-(v^2+2\mathbf u_r\cdot\mathbf v)/(2c^2)$ relative to the laboratory clock, the same $u_rv/c^2$ term the note attributes only to an absolute frame (this is the Hafele–Keating east–west asymmetry and the Sagnac correction). The statements "The STR says the transported clock is slower throughout" and "a westward-circling clock can run faster ... only in an absolute-frame theory" are therefore incorrect.
+- [Correctness] The interpretation section's claim that (9.3) "repeats a factor where its reciprocal is needed" is wrong for inertial relative motion: reciprocal dilation $dt=\sqrt{1-v^2/c^2}\,d\tau$ in the other clock's rest frame is the correct symmetric statement; the asymmetry appears only for non-inertial worldlines. Correct or remove that sentence.
+- [Correctness] Fix in the text the items kept with callouts: $0.78\,\mathrm{s}$ should be $0.0785\,\mathrm{s}$ ($720\,\mathrm{ns/s}\times30.3\,\mathrm{h}$), $\cos\omega t+\theta$ should be $\cos(\omega t+\theta)$ in (9.9), and (9.11) needs $\cos\phi$ in its last term. State the $\cos\phi$ used for the "19 ns" outward gain (with $\cos\phi=1$, $u_rvT/c^2-v^2T/(2c^2)=35-10.8\approx24\,\mathrm{ns}$).
+- [Correctness] "Mumbai's laboratory moves through the Universe at about $u=390\,\mathrm{km/s}$" conflicts with the CMB dipole speed of $370\,\mathrm{km/s}$ quoted in 08.05 for the solar system; use 370 km/s and give the annual modulation $\pm30\,\mathrm{km/s}$ around it.
+

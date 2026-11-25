@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Algebra and discrete mathematics: learning route"
 catalogue_ids:
   - "5"
@@ -53,7 +53,7 @@ Use the practice questions twice: first without the answer, then with the answer
 <!-- catalogue-complete-lesson-index:start -->
 ## Complete lesson index
 
-Read the prerequisite route above before the advanced lessons. The source topic links are in [[Planned Topics#5. Algebra and discrete mathematics|the detailed catalogue]].
+Read the prerequisite route above before the advanced lessons.
 
 - [[Statements quantifiers and proof|Statements, quantifiers, and proof]] — 5.1, 5.1.1, 5.1.2.
 - [[Sets relations and cardinality|Sets, relations, and cardinality]] — 5.2, 5.2.1, 5.2.2, 5.2.3, 5.2.4, 5.2.5.

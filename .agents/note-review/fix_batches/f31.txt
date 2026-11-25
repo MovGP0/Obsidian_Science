@@ -1,0 +1,49 @@
+=== 02 Physics/05 Relativity and Gravitation/01 Special Relativity/Inertial frames, light clocks, and simultaneity problems.md
+- [Correctness] The Physical quantities table lists $\mechanical{V}_A,\mechanical{V}_B,\mechanical{V}_C$ (ship speeds) and $\energy{\mathrm{BE}}/A$ (binding energy per nucleon), which this note never uses. Remove both rows.
+- [Correctness] Symbol clash for $\tau$: it is a proper interval in "Longitudinal length" ($\tau=t/\gamma$), a clock reading in "Clock synchronization", and the dilated laboratory lifetime in the muon example ($\tau=\gamma\tau_0$). The table also lists $\tau$ in two rows with opposite meanings. Rename the lab lifetime $t_{\mathrm{lab}}$.
+- [Correctness] Symbol clash for $L$: in example 4 and "Proper length…", $L$ (or $L_0$) is the Earth-frame proper distance of about 4 light-years, but in "Longitudinal length" $L=D/\gamma$ is the contracted length. Use $L_0$ consistently for the proper length.
+- [Correctness] Airplane example: with $v=100$ m/s, $\beta=3.3\times10^{-7}$ gives $\gamma-1=5.6\times10^{-14}$, about 200 ps per hour. Even the rounded $\beta=3\times10^{-7}$ gives $4.5\times10^{-14}\times3600$ s $\approx160$ ps, not "roughly 150 ps". State about 160–200 ps.
+
+=== 02 Physics/05 Relativity and Gravitation/01 Special Relativity/Lorentz transformations and clock comparisons.md
+- [Correctness] Macro misuse: the note writes $\mechanical{\Delta x}$, which colors the operator $\Delta$. The preamble rules keep operators uncolored, so write $\Delta\mechanical{x}$. Also, $\gamma$ is uncolored and $c$ uses `\signal`, while the sibling notes use $\mechanical{\gamma}$ and $\mechanical{c}$; align them.
+
+=== 02 Physics/05 Relativity and Gravitation/01 Special Relativity/Lorentz transformations and spacetime diagram problems.md
+- [Correctness] The Physical quantities table lists symbols this note never uses: $\tau_0,\tau$ as muon lifetimes, $\Delta t_{\mathrm{rest}}$, $\theta'$, and $\Delta t$ described as the "interferometer travel-time difference". It also omits symbols the note does use: $\mechanical{V}_A,\mechanical{V}_B,\mechanical{V}_C$, $t_{\mathrm f}$, $t_1$, $t_0$ and $\mechanical{v}'$ (upward rod speed). Rebuild the table from this note.
+
+=== 02 Physics/05 Relativity and Gravitation/01 Special Relativity/Proper time and spacetime interval review problems.md
+- [Correctness] "Four-position and proper time": $\mechanical{X}_{\mu}=(ct,x,y,z)$ uses a lower index for contravariant components. With signature $(+,-,-,-)$, $X_\mu=(ct,-x,-y,-z)$. Write $X^\mu$.
+- [Correctness] The table describes $\mechanical{M}_0,\mechanical{M}$ as masses "before and after photon absorption or rocket acceleration", but no rocket appears here. It also lists $\energy{E}',\energy{E}_{\mathrm{tot}}$, the muon lifetimes $\tau_0,\tau$, the interferometer $\Delta t$ and $\theta'$, none of which the note uses. It omits $\mechanical{m}_{\mathrm f}$, $\mechanical{V}_{\mathrm f}$, $\mechanical{V}_0$, $\mechanical{V}_1$, $\mechanical{V}_2$ and $\mechanical{M}$ (Problem 10-7).
+
+=== 02 Physics/05 Relativity and Gravitation/01 Special Relativity/Relativistic collisions, decays, and threshold exercises.md
+- [Correctness] The Physical quantities table lists $\mechanical{m}_{K^0}$ (the kaon does not appear here), muon lifetimes, and $\mechanical{p}_{\mathrm{tot}}$. It describes $\signal{\nu},\signal{\nu}'$ as frequencies "before and after scattering", but here they are the frequencies in the two frames of a Doppler problem. It also omits $\mechanical{V}$, $\mechanical{u}$, $\mechanical{\gamma}_m$, $\mechanical{p}_0$, $\mechanical{p}_x$ and $\mechanical{V}_{\mathrm f}$.
+- [Correctness] Sigma-minus decay: $1.5\times10^{-10}$ s is the $\Sigma^-$ mean lifetime (PDG $1.48\times10^{-10}$ s), not its half-life. Relabel it, or note that the value does not enter the kinetic-energy ratio.
+- [Correctness] Torpedo: $\mechanical{p}_{\mu}'=(\tfrac54mc,\tfrac34mc,0,0)$ uses a lower index with all spatial components positive. Write $p^\mu$ (upper index). In part (d), state the final result $u=(15/17)c$ explicitly.
+
+=== 02 Physics/05 Relativity and Gravitation/01 Special Relativity/Relativistic energy, Compton scattering, and Doppler calculations.md
+- [Correctness] $\mechanical{X}_{\mu}$, $\mechanical{U}_{\mu}$ and $\mechanical{p}_{\mu}=(E/c,\vec p)$ are written with lower indices, although with the note's $(-,+,+,+)$ convention the lower-index time component carries a minus sign. Use $X^\mu$, $U^\mu$ and $p^\mu$ throughout.
+- [Correctness] $\theta$ means three things in one note: the Lorentz-axis tilt ($\tan\theta=\beta$), the Compton scattering angle, and the Doppler propagation angle. $\nu'$ is the scattered frequency in the Compton section but the source-frame frequency in the Doppler section. The table describes $\nu,\nu'$ only as "before and after scattering" and also lists unused rows (muon lifetimes, interferometer $\Delta t$). Rename the axis tilt $\alpha$ and fix the table.
+
+=== 02 Physics/05 Relativity and Gravitation/01 Special Relativity/Relativistic formulation of Agular Momentum.md
+- [Correctness] $K^i=x^iE/c-tp^i$ is dimensionally inconsistent: the first term has units m·kg·m/s, the second s·kg·m/s. From $M^{i0}=x^iP^0-x^0P^i$ with $x^0=ct$, the correct form is $K^i=x^iE/c-ct\,p^i$; equivalently, the conserved mass moment is $x^iE/c^2-tp^i$.
+- [Correctness] "Conservation law" writes $\partial_\alpha M^{\mu\nu\alpha}=0$ with a three-index object the note never defines. Define the angular-momentum current $M^{\mu\nu\alpha}=x^\mu T^{\nu\alpha}-x^\nu T^{\mu\alpha}$, which needs a symmetric $T^{\mu\nu}$, and show how $\partial_\alpha M^{\mu\nu\alpha}=0$ integrates to a conserved $M^{\mu\nu}$.
+- [Correctness] $L^i=\epsilon^{ijk}x^jp^k$ is called "the relativistic version" of $\mathbf L=\mathbf r\times\mathbf p$, but it is the same expression. State the relation to the tensor, $L^i=\tfrac12\epsilon^{ijk}M^{jk}$.
+
+=== 02 Physics/05 Relativity and Gravitation/01 Special Relativity/Spacetime Coordinates.md
+- [Correctness] "$dl^2=dx^2+dt^2$" is wrong: the spatial line element is $dl^2=dx^2+dy^2+dz^2$, and time does not enter.
+- [Correctness] "$ds^2=\eta_xdx^2+\eta_tdt^2$ with $\eta_t=-1$" drops $c^2$, which makes it dimensionally inconsistent. Write $ds^2=\eta_{\mu\nu}dx^\mu dx^\nu$ with $x^0=ct$ and $\eta=\mathrm{diag}(-1,1,1,1)$.
+- [Correctness] $ds=\sqrt{dx^2+dy^2+dz^2-c^2dt^2}$ is imaginary for timelike separations. Define $ds^2$ as the invariant, and $d\tau=\sqrt{-ds^2}/c$ for timelike pairs.
+
+=== 02 Physics/05 Relativity and Gravitation/01 Special Relativity/Spacetime Interval.md
+- [Correctness] "$a(t)\approx1+H\,dt$" is wrong. The scale factor expands as $a(t)\approx a_0[1+H_0(t-t_0)]$, in coordinate time, not in the differential $dt$, so the $(1+2H\,dt)$ factors in all later lines are invalid.
+- [Correctness] "Time Dilation": substituting $dx'=dx-v\,dt$ gives $ds'^2=-c^2(1-v^2/c^2)dt^2-2v\,dx\,dt+dx^2$; the note drops $dx$ in the cross term ("$-2v\,dt$"). In coordinates $(t,x)$ the metric's off-diagonal entries are $-v$, not $-v/c$. The bullet "$g_{00}=-(1-v^2/c^2)$" contradicts the matrix entry $-c^2(1-v^2/c^2)$. Also fix the typos "glocks" and "intertial".
+- [Correctness] Galilean transformation: applying a Galilean boost to the Minkowski metric does not give special-relativistic time dilation. The resulting off-diagonal term is a coordinate artifact of a non-Lorentz frame, not a "gravitomagnetic potential" representing "the origin of inertia". Either use a Lorentz boost (the metric stays $\eta$) or clearly label this as a Galilean-coordinate exercise.
+- [Correctness] With $A_g=-v/c$ and $\nabla\times v=2\Omega$, $\nabla\times A_g=-2\Omega/c$, not $-2\Omega$. The claim $\Phi_U'=\gamma\Phi_U$ is unsourced and nonstandard; cite the source (it appears to be a Machian framework) or remove it.
+
+=== 02 Physics/05 Relativity and Gravitation/02 General Relativity/Centenary Einstein Equation.md
+- [Correctness] "Empty Space: $R_{ik}=0$ … the condition for spacetime to be flat" is wrong. Ricci-flat spacetimes can be strongly curved (the Schwarzschild and Kerr exteriors); flatness requires the full Riemann tensor to vanish. The Weyl tensor carries the vacuum curvature, not only gravitational waves.
+- [Correctness] The "Centenary Einstein Equation" with a separate $T_{ik(U)}$ is not standard GR. Moved to the right-hand side, it is just the EFE with total source $T+T_U$. State its origin and status (author, year), and say that a cosmological constant term is normally written $\Lambda g_{ik}$, not as part of a "universe" stress tensor.
+- [Correctness] The "Empty space" section sets $T_{ik(U)}=0$, which contradicts the earlier description of $T_{ik(U)}$ as a universal background present everywhere. Clarify when, if ever, it vanishes.
+
+=== 02 Physics/05 Relativity and Gravitation/02 General Relativity/Christoffel Symbols.md
+- [Correctness] Fig. 1.1 is clipped: its bounds are $[-4.5,2.55,4.5,-2.55]$, but the Cartesian grid spans $x\in[-6.4,-1.5]$, the polar circles reach $x\approx6.7$ (outer $e_r$ arrow at $x\approx7.2$), and the titles and bottom captions sit at $y=\pm3.3$ to $3.5$. Large parts of the figure are outside the view. Widen the bounds to about $[-7,3.9,8,-3.7]$ (with matching width and height) and check it in reading mode.
+

@@ -16,7 +16,7 @@ a_x b_x e_x e_x + a_x b_y e_x e_y + a_x b_z e_x e_z + \\
 a_y b_x e_y e_x + a_y b_y e_y e_y + a_y b_z e_y e_z + \\
 a_z b_x e_z e_x + a_z b_y e_z e_y + a_z b_z e_z e_z $$
 
-with $xy = -xy$ and $xx = 1$ follows:
+with $e_xe_y = -e_ye_x$ (distinct basis vectors) and $e_xe_x = 1$ follows:
 
 $$\overbrace{
     a_xb_x + a_yb_y + a_zb_z
@@ -25,13 +25,15 @@ $$\overbrace{
     e_ye_z (a_y b_z - a_z b_y) +
     e_ze_x (a_z b_x - a_x b_z) +
     e_xe_y (a_x b_y - a_y b_x)
-}^{\text{cross product}}$$
+}^{\text{wedge product } a\wedge b}$$
+
+The wedge product is the Hodge dual of the cross product: $a\wedge b = I\,(a\times b)$ with $I = e_xe_ye_z$.
 
 using the following bivector basis
 
 $$e_x e_y = -(e_y e_x) = i$$
-$$e_z e_x = -(e_z e_x) = j$$
-$$e_y e_z = -(e_y e_z) = k$$
+$$e_z e_x = -e_x e_z = j$$
+$$e_y e_z = -e_z e_y = k$$
 
 we get an quaternion:
 

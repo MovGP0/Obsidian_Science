@@ -135,9 +135,9 @@ Even without a closed form for the potential, one can compute the multipole coef
 
 ##### Energy of two separated charge distributions
 
-The notes return to two charge distributions $\electric{\rho}_1$ and $\electric{\rho}_2$ supported in volumes $V_1$ and $V_2$, with center-to-center distance $\mechanical{R}$.
+The notes return to two charge distributions $\electric{\rho}_1$ and $\electric{\rho}_2$ supported in volumes $V_1$ and $V_2$, with center-to-center distance $\mechanical{d}$.
 
-![[Kyle Kabasares - Electrodynamics - Separated charge distributions.png|**Fig. 90** Two localized charge distributions at separation $\mechanical{R}$.]]
+![[Kyle Kabasares - Electrodynamics - Separated charge distributions.png|**Fig. 90** Two localized charge distributions at separation $\mechanical{d}$.]]
 
 The total electrostatic energy is $\energy{W}=\frac12\int\electric{\rho}\electric{\phi}\,d^3\mechanical{r}$. Discard the two self energies to isolate the interaction.
 
@@ -149,7 +149,7 @@ $$
 \right).
 $$
 
-The factor of $1/2$ applies to the sum of both cross terms. At large separation, one can expand $\electric{\phi}_2$ in monopole, dipole, and higher terms of orders $\mechanical{R}^{-1}$, $\mechanical{R}^{-2}$, $\mechanical{R}^{-3}$, and so on, then integrate against $\electric{\rho}_1$.
+The factor of $1/2$ applies to the sum of both cross terms. At large separation, one can expand $\electric{\phi}_2$ in monopole, dipole, and higher terms of orders $\mechanical{d}^{-1}$, $\mechanical{d}^{-2}$, $\mechanical{d}^{-3}$, and so on, then integrate against $\electric{\rho}_1$.
 
 Equivalently, the two cross integrals are equal by symmetry of the Coulomb kernel, giving
 
@@ -161,17 +161,17 @@ $$
 {\lvert\mechanical{\mathbf r}_1-\mechanical{\mathbf r}_2\rvert}.
 $$
 
-Place the origin at the first distribution and resolve the position in the second distribution into the center-to-center displacement and a local coordinate. This prepares the inverse-distance expansion for large $\mechanical{R}$.
+Place the origin at the first distribution and resolve the position in the second distribution into the center-to-center displacement and a local coordinate. This prepares the inverse-distance expansion for large $\mechanical{d}$.
 
 ![[Kyle Kabasares - Electrodynamics - Local coordinates for two charge distributions.png|**Fig. 91** The separation vector is decomposed using coordinates local to the two distributions.]]
 
-Write $\mechanical{\mathbf x}_2=\mechanical{\mathbf r}+\mechanical{\mathbf y}_2$, where $\mechanical{\mathbf r}$ joins the centers and $\lvert\mechanical{\mathbf y}_2\rvert\ll\mechanical{r}$. With the first distribution also small compared with the separation,
+Write $\mechanical{\mathbf x}_2=\mechanical{\mathbf d}+\mechanical{\mathbf y}_2$, where $\mechanical{\mathbf d}$ joins the centers and $\lvert\mechanical{\mathbf y}_2\rvert\ll\mechanical{d}$. With the first distribution also small compared with the separation,
 
 $$
 \frac{1}{\lvert\mechanical{\mathbf x}_1-\mechanical{\mathbf x}_2\rvert}
-=\frac{1}{\lvert\mechanical{\mathbf r}+(\mechanical{\mathbf y}_2-\mechanical{\mathbf x}_1)\rvert}
-=\frac{1}{\mechanical{r}}
--\frac{(\mechanical{\mathbf y}_2-\mechanical{\mathbf x}_1)\cdot\mechanical{\mathbf r}}{\mechanical{r}^3}
+=\frac{1}{\lvert\mechanical{\mathbf d}+(\mechanical{\mathbf y}_2-\mechanical{\mathbf x}_1)\rvert}
+=\frac{1}{\mechanical{d}}
+-\frac{(\mechanical{\mathbf y}_2-\mechanical{\mathbf x}_1)\cdot\mechanical{\mathbf d}}{\mechanical{d}^3}
 +\cdots.
 $$
 
@@ -393,16 +393,16 @@ At the spherical surface, $\magnetic{\mathbf H}_{\parallel}$ and $\magnetic{B}_{
 
 $$
 \begin{aligned}
-\magnetic{\phi}_{\mathrm m,\mathrm{in}}&=(A\mechanical{r}+B/\mechanical{r}^2)Y_{10},\\
-\magnetic{\phi}_{\mathrm m,\mathrm{out}}&=(C\mechanical{r}+D/\mechanical{r}^2)Y_{10}.
+\magnetic{\phi}_{\mathrm m,\mathrm{in}}&=(a_{\mathrm{in}}\mechanical{r}+b_{\mathrm{in}}/\mechanical{r}^2)Y_{10},\\
+\magnetic{\phi}_{\mathrm m,\mathrm{out}}&=(a_{\mathrm{out}}\mechanical{r}+b_{\mathrm{out}}/\mechanical{r}^2)Y_{10}.
 \end{aligned}
 $$
 
-Continuity of $\magnetic{\mathbf H}_{\parallel}$ implies continuity of $\partial_\theta\magnetic{\phi}_{\mathrm m}$. If the azimuthal component is present, $\partial_\varphi\magnetic{\phi}_{\mathrm m}$ is continuous as well. At radius $\mechanical{R}$, matching the coefficient of the angular derivative gives
+The potential inside must stay finite at the origin, so regularity requires $b_{\mathrm{in}}=0$. Continuity of $\magnetic{\mathbf H}_{\parallel}$ implies continuity of $\partial_\theta\magnetic{\phi}_{\mathrm m}$. If the azimuthal component is present, $\partial_\varphi\magnetic{\phi}_{\mathrm m}$ is continuous as well. At radius $\mechanical{R}$, matching the coefficient of the angular derivative gives
 
 $$
-A\mechanical{R}+\frac{B}{\mechanical{R}^2}
-=C\mechanical{R}+\frac{D}{\mechanical{R}^2}.
+a_{\mathrm{in}}\mechanical{R}
+=a_{\mathrm{out}}\mechanical{R}+\frac{b_{\mathrm{out}}}{\mechanical{R}^2}.
 $$
 
 ## Source

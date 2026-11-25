@@ -1,0 +1,33 @@
+=== 03 Engineering/02 Signal Processing/01 Fourier Transformation/Fourier Transformation.md
+- FIXED | QDWT uses \( x[n] \); DWT row after QDWT with empty formulas | Changed to $x[n]$; moved DWT row before QDWT and filled it with $c_{j,k}=\langle x,\varphi_{j,k}\rangle$, $d_{j,k}=\langle x,\psi_{j,k}\rangle$, the orthogonal inverse, and a link to [[Wavelet Transformation]]
+- FIXED | C_w and C_psi undefined | Added $C_w=\int w(t)^2dt$ (real window, matches the note's synthesis with $w$) and $C_\psi$ = integral of the squared spectrum magnitude over abs(omega) with the omega FT convention; also added the missing 1/sqrt(abs(a)) factor in the CWT inverse (required for the inversion to hold)
+=== 03 Engineering/02 Signal Processing/02 Wavelet Transformation/01 Wavelets/Biorthogonal Wavelets.md
+- FIXED | Dual filters tilde in text but hat in callout | Callout now uses $(\tilde h, \tilde g)$; text uses $(\tilde h, \tilde g)$ with parentheses
+=== 03 Engineering/02 Signal Processing/02 Wavelet Transformation/01 Wavelets/Coiflet (Coif N).md
+- FIXED | Coif N naming ambiguous; vanishing moments not "equal" | Stated PyWavelets/MATLAB convention coifL with N=6L taps (N kept as filter length used in g_k), psi 2L and phi 2L-1 vanishing moments plus int phi=1; callout now names coif1/coif2 (6/12 taps) and mentions length naming; removed zero-width spaces
+=== 03 Engineering/02 Signal Processing/02 Wavelet Transformation/01 Wavelets/Daubechies‑20 (Db20).md
+- FIXED | Tap-count naming clashes with Haar Db1 and PyWavelets db20 | Added a naming-convention callout (Db20 = 20 taps = D20 = PyWavelets db10; db20 has 40 taps; Haar note uses db1 convention); file names not changed
+- FIXED | a(Z) normalization vs sqrt2 refinement; a, p undefined | Defined $a(Z)=\sum_n a_nZ^n$ with $a(1)=2$, $p(Z)$ of degree $A-1$ with $p(1)=1$, and $h_n=a_n/\sqrt2$ ($\sum h_n=\sqrt2$)
+=== 03 Engineering/02 Signal Processing/02 Wavelet Transformation/01 Wavelets/Daubechies‑4 (Db4).md
+- FIXED | 4-tap filter is db2 in MATLAB/PyWavelets | Added a naming-convention callout (Db4 = 4 taps = D4 = PyWavelets db2; db4 has 8 taps); converted CRLF to LF; file name not changed
+=== 03 Engineering/02 Signal Processing/02 Wavelet Transformation/01 Wavelets/Mexican Hat (Ricker - Marr).md
+- FIXED | -d2/dt2 e^{-t^2/2} equals normalized form is false | Moved the normalization factor in front of the negative second derivative
+- FIXED | C_psi 0.3761 wrong for stated convention | Verified numerically (2.3633); replaced with $C_\psi=4\sqrt\pi/3\approx2.363$
+- FIXED | FWHM values are Gaussian values | Verified numerically; replaced with 1.252 (central lobe, time) and 1.633 (peak of the spectrum magnitude)
+- FIXED | Garbled pasted text; scipy.signal.ricker removed | Fixed "$\omega=0$", abs(omega) in math, "DoG$_n$"; noted that signal.ricker was deprecated in SciPy 1.12 and removed in 1.15 (PyWavelets mexh already named)
+=== 03 Engineering/02 Signal Processing/02 Wavelet Transformation/01 Wavelets/Shannon (Sinc‑based) Wavelet.md
+- FIXED | psi(omega) labelled time-domain; psi used for two things | Section now "Mother wavelet $\psi(t)$" with the time-domain formula; the only frequency-domain block is $\Psi(\omega)$
+- FIXED | e^{-i omega} phase needs shifted time-domain form; FT convention missing | Verified the inverse; time-domain form now $2\,\mathrm{sinc}(2(t-1))-\mathrm{sinc}(t-1)$ in both places; added the 1/(2pi) forward convention and a sentence about the unshifted alternative
+=== 03 Engineering/02 Signal Processing/02 Wavelet Transformation/Father and Mother Wavelets.md
+- FIXED | G(z) and G(omega) missing sign and conjugate | Now $G(z)=(-1)^{N-1}z^{-(N-1)}H(-z^{-1})=-z^{-(N-1)}H(-z^{-1})$ (N even) and $G(\omega)=-e^{-i\omega(N-1)}\overline{H(\omega+\pi)}$; intuition callout mentions the conjugate
+- FIXED | Inverse h_k relation wrong sign | Now $h_k=-(-1)^kg_{N-1-k}$ (N even); checked with Haar
+- FIXED | Heading says low-pass for G; two index conventions; zero-width spaces | Heading now says high-pass; added sentence that the 1-k and N-1-k conventions differ by a shift of N-2; removed U+200B characters
+- FIXED | Alternating flip is CQF, not classic QMF | Renamed to conjugate quadrature filter (CQF, Smith-Barnwell) and noted that the classic QMF $g_k=(-1)^kh_k$ does not give orthogonal wavelets for N>2
+=== 03 Engineering/02 Signal Processing/02 Wavelet Transformation/Wavelet Functions.md
+- FIXED | Shannon closed form cell blank | Set to ✅ with $\psi(t)=2\,\mathrm{sinc}(2t)-\mathrm{sinc}(t)$
+- FIXED | Biorthogonal gives lengths; Gaussian moments and orthogonality wording | Biorthogonal now "CDF 5/3: 2/2, CDF 9/7: 4/4"; Gaussian vanishing moments now "$p$ (p-th derivative)"; orthogonality now "Non-orthogonal"
+- FIXED | Daubechies naming mixed | Added alternative names D4/db2 and D20/db10 in the table and a "Daubechies naming" callout explaining both conventions
+=== 03 Engineering/02 Signal Processing/02 Wavelet Transformation/Wavelet Transformation.md
+- FIXED | CWT lacks complex conjugate | Changed to $\psi^*((t-b)/a)$ and explained $\psi^*$ in the symbol list
+=== 03 Engineering/02 Signal Processing/Signal Processing.md
+- FIXED | FIR not always linear phase | Both places now say FIR filters are always stable and can have exactly linear phase (symmetric or antisymmetric coefficients)

@@ -1,0 +1,24 @@
+=== 01 Mathematics/06 Probability and Statistics/01 Counting and Conditional Probability/Counting, conditional probability, and Bayes problems.md
+- FIXED | Invalid intermediate 20/2 in 5!/(3!2!) | Replaced with 5!/(3!\,2!)=(5\cdot4)/2=10.
+
+=== 01 Mathematics/06 Probability and Statistics/02 Random Variables and Distributions/Discrete and continuous probability distributions.md
+- FIXED | lambda and f reused for smoothing weight/cost and exponential rate/density | Renamed the image-smoothing cost to J(x) and its roughness weight to \kappa (equation, following sentence, and g(x)\propto e^{-J(x)}).
+
+=== 01 Mathematics/06 Probability and Statistics/02 Random Variables and Distributions/Moments and transformations of random variables.md
+- FIXED | Cauchy reciprocal CDF branch for y<0 wrong | Verified {1/X<=y}={1/y<=X<0} for y<0; changed branch to 1/2-F_X(1/y) and rewrote the sentence that said the handwritten 1-F_X(1/y) applies for y<0.
+- FIXED | Pareto for earthquake magnitudes is misleading | Added that under Gutenberg-Richter magnitudes are approximately exponential and released energies approximately Pareto, with a link to the Exponential to Pareto transformation section.
+
+=== 01 Mathematics/06 Probability and Statistics/03 Sampling, Estimation, and Inference/Large numbers and normal approximation problems.md
+- FIXED | Hourly temperatures 41-58 labelled Celsius | Source not available; 58 degC exceeds the world-record air temperature and the source is a US course, so changed the unit to degrees Fahrenheit in text, quantity, and table (mean 44.7 checked).
+
+=== 01 Mathematics/06 Probability and Statistics/04 Regression, Simulation, and Stochastic Models/Likelihood estimation and Monte Carlo modeling problems.md
+- FIXED | Physical quantities table lists unrelated quantities | Replaced all rows with height x_i, mean mu, and standard deviation sigma in inches (the only physical quantities in the note).
+- FIXED | Trapezoidal rule link points to its own section | Retargeted the link to #Expected squared error.
+
+=== 01 Mathematics/06 Probability and Statistics/04 Regression, Simulation, and Stochastic Models/Markov models and population dynamics.md
+- FIXED | Table rows tau, t (iron), T, lambda, x/y, s do not match the note | Removed these six rows (tau_ij are hitting-time counts, lambda is a matrix eigenvalue, T is a transpose).
+- FIXED | beta used for crowding coefficient and predator effect | Renamed the predator-effect coefficient to b in the predator-prey section and its table row.
+
+=== 01 Mathematics/06 Probability and Statistics/04 Regression, Simulation, and Stochastic Models/Regression, validation, and goodness of fit.md
+- FIXED | Traffic accidents test needs chi^2_1 and a conclusion | Added that estimating mu gives chi^2_{k-1-1}=chi^2_1, computed T approx 1.35 and p approx 0.24 (recomputed with scipy), stated that the Poisson model is not rejected, and noted E_3=4.20<5.
+- FIXED | alpha is intercept and significance level; a is cutoff and interval endpoint | Renamed the regression intercept to beta_0 in the regression sections and Fig. 76 caption; renamed the interval endpoints (a,b) to (ell,u).

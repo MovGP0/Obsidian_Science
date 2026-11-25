@@ -464,35 +464,46 @@ Kyle Kabasares, *Cosmology (Physics 240B, UC Irvine 2018)*.
 
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
-| $t$ | $\unit{s}$ | Cosmic time | Age measured from the early-universe origin used in the course. |
+| $t$ | $\unit{s}$ | Cosmic time | Time coordinate of the perturbed FRW metric. |
 | $a$ | $1$ | Scale factor | Ratio of a physical separation at cosmic time $t$ to its value today for a pair of comoving points. |
-| $\thermal{T}$ | $\unit{K}$ | Temperature | Cosmic temperature on the right axis of the scale-factor figure. |
-| $H$, $H_0$ | $\unit{s^{-1}}$ | Hubble parameter and its present value | Fractional expansion rate $\dot a/a$, often quoted in $\unit{km\,s^{-1}\,Mpc^{-1}}$. |
-| $\mechanical{G}$ | $\unit{m^3\,kg^{-1}\,s^{-2}}$ | Gravitational constant | Coupling in the Friedmann equation. |
-| $\energy{\rho}$, $\energy{\rho}_0$, $\energy{\rho}_{\mathrm{cr}}$ | $\unit{J\,m^{-3}}$ | Cosmic energy densities | Time-dependent, present-day and present-day critical densities. In SI the corresponding mass densities are the energy densities divided by $c^2$. |
-| $h$ | $1$ | Reduced Hubble parameter | $H_0$ in units of $\quantity{100}{km\,s^{-1}\,Mpc^{-1}}$. |
-| $\mechanical{c}$ | $\unit{m\,s^{-1}}$ | Speed of light | Converts the time coordinate to length units in the flat interval. |
-| $\theta$, $\phi$ | $\unit{rad}$ | Spherical angles | Polar angle and azimuth in the spherical line element. |
-| $\mechanical{v}$ | $\unit{m\,s^{-1}}$ | Radial speed | Rate of change of radial position in the chosen inertial frame. It is expressed in units of the speed of light in $\gamma$. |
-| $\gamma$ | $1$ | Lorentz factor | Ratio of coordinate time to proper time for inertial motion. |
-| $\mechanical{P}^\mu$ | $\unit{kg\,m\,s^{-1}}$ | Four-momentum | Tangent to the particle trajectory for an appropriate normalization of the affine parameter. Its time component in SI is $\energy{E}/\mechanical{c}$. |
-| $\energy{E}$ | $\unit{J}$ | Photon energy | Energy measured by a comoving observer, equal to $\mechanical{P}^0$ in natural units. |
-| $\mechanical{\vec p}$ | $\unit{kg\,m\,s^{-1}}$ | Physical spatial momentum | Momentum components measured in a local orthonormal frame. |
-| $A$ | $\unit{m}$ | Comoving curvature radius | Radius of the embedded three-sphere before multiplication by the scale factor. |
-| $k$ | $\unit{m^{-2}}$ | Spatial curvature parameter | Units apply when $r$ has dimensions of length and $a$ is dimensionless. |
-| $\Lambda$ | $\unit{m^{-2}}$ | Cosmological constant | Coefficient of the metric term in the Einstein equation. |
-| $n$ | $\unit{m^{-3}}$ | Particle number density | For a heavy nonrelativistic species, rest energy times number density gives the leading energy density. |
-| $\sigma$ | $\unit{m^2}$ | Reaction cross section | Averaged together with relative speed to obtain the rate coefficient. |
-| $\phi$ | $\unit{GeV}$ | Homogeneous scalar field | Field amplitude expressed in energy units with $\hbar=\mechanical{c}=1$. |
+| $\vec x$, $x^i$ | $\unit{m}$ | Comoving position | Spatial coordinates of the perturbed metric. |
+| $H$, $H_0$ | $\unit{s^{-1}}$ | Hubble parameter and its present value | Fractional expansion rate $\dot a/a$. |
+| $\mathcal H$ | $\unit{s^{-1}}$ | Conformal Hubble parameter | Logarithmic derivative of the scale factor with respect to conformal time, $\mathcal H=aH$. |
 | $\eta$ | $\unit{s}$ | Conformal time | Defined by $d\eta=dt/a$. The product $\mechanical{c}\eta$ has units of comoving distance. |
-| $\Omega_\Lambda$ | $1$ | Present vacuum density parameter | Vacuum energy density divided by today's critical density. |
-| $\Psi$, $\Phi$ | $\unit{m^2\,s^{-2}}$ | Scalar metric perturbation potentials | The time and space perturbations in the sign convention above. |
-| $\Theta$ | $1$ | Fractional photon temperature perturbation | Defined by $\thermal{T}=\thermal{T}^{(0)}(1+\Theta)$. |
+| $\mechanical{G}$ | $\unit{m^3\,kg^{-1}\,s^{-2}}$ | Gravitational constant | Coupling in the Einstein and Friedmann equations. |
+| $\mechanical{c}$ | $\unit{m\,s^{-1}}$ | Speed of light | Set to one in natural units. |
+| $g_{\mu\nu}$, $g^{\mu\nu}$ | $1$ | Metric tensor | Components of the perturbed metric and its inverse. |
+| $\Gamma^\mu_{\alpha\beta}$ | $\unit{m^{-1}}$ | Christoffel symbols | Connection coefficients in the geodesic equation. |
+| $\Psi$, $\Phi$ | $1$ | Scalar metric perturbation potentials | Dimensionless time and space perturbations of the metric, with $g^{00}=-(1+2\Psi)^{-1}$. |
+| $h_{ij}$ | $1$ | Tensor metric perturbation | Traceless spatial perturbation that represents gravitational waves. |
+| $\mechanical{P}^\mu$ | $\unit{kg\,m\,s^{-1}}$ | Four-momentum | Tangent to the particle trajectory. Its time component in SI is $\energy{E}/\mechanical{c}$. |
+| $\lambda$ | — | Affine parameter | Parameter along the geodesic. Its unit depends on the normalization of $\mechanical{P}^\mu$. |
+| $\energy{E}$ | $\unit{J}$ | Particle energy | Energy measured by a comoving observer. |
+| $\mechanical{p}$, $\mechanical{\vec p}$ | $\unit{kg\,m\,s^{-1}}$ | Physical momentum | Magnitude and components of the momentum in a local orthonormal frame. |
+| $\hat p^i$ | $1$ | Momentum direction | Unit vector along the particle momentum. |
+| $\theta_p$, $\phi_p$ | $\unit{rad}$ | Momentum angles | Polar angle and azimuth of the momentum direction. |
+| $f$, $f^{(0)}$, $f^{(1)}$, $\bar f$ | $1$ | Distribution function | Phase-space occupation, its background and first-order parts, and its angular average. |
+| $C[f]$ | $\unit{s^{-1}}$ | Collision term | Rate of change of $f$ due to collisions. |
+| $n$, $n^{(0)}$, $n^{(1)}$ | $\unit{m^{-3}}$ | Particle number density | Number density and its background and first-order parts. |
+| $\mechanical{v}^i$, $\mechanical{\vec v}$, $\widetilde{\mechanical{v}}$ | $\unit{m\,s^{-1}}$ | Bulk velocity | Physical bulk velocity of a species and its longitudinal Fourier amplitude. |
+| $\mechanical{v}_{\mathrm b}$, $\mechanical{v}_\gamma$, $\mechanical{v}_{\mathrm m}$ | $\unit{m\,s^{-1}}$ | Species bulk velocities | Bulk velocities of baryons, photons, and matter. |
+| $u^i$ | $1$ | Velocity weight | Momentum-space weight $(\mechanical{p}/\energy{E})\hat p^i$ in the velocity moment. |
+| $q^{ij}$ | $\unit{m^{-3}}$ | Second angular moment | Momentum-space moment of $\hat p^i\hat p^j f\,\mechanical{p}/\energy{E}$. |
+| $\delta$, $\widetilde\delta$ | $1$ | Density contrast | Ratio of the first-order density perturbation to the background, and its Fourier amplitude. |
+| $\delta_{\mathrm b}$, $\delta_{\mathrm d}$, $\delta_{\mathrm m}$ | $1$ | Species density contrasts | Density contrasts of baryons, dark matter, and total matter. |
+| $\energy{\rho}$, $\energy{\rho}^{(0)}$, $\delta\energy{\rho}$ | $\unit{J\,m^{-3}}$ | Energy density | Total energy density, its background value, and its first-order perturbation. |
+| $\energy{\rho}_{\mathrm b}$, $\energy{\rho}_{\mathrm d}$, $\energy{\rho}_{\mathrm m}$, $\energy{\rho}_\gamma$, $\energy{\rho}_\nu$, $\energy{\rho}_{\mathrm m,0}$ | $\unit{J\,m^{-3}}$ | Component energy densities | Energy densities of baryons, dark matter, matter, photons, and neutrinos, and the present matter density. |
+| $n_e$ | $\unit{m^{-3}}$ | Free-electron number density | Number density of electrons available for Thomson scattering. |
 | $\sigma_{\mathrm T}$ | $\unit{m^2}$ | Thomson cross section | Low-energy cross section for photon scattering by an electron. |
-| $\Theta_0$ | $1$ | Temperature monopole | Angular average of $\Theta$ at a point. |
-| $\ell$, $C_\ell$ | $1$ | Angular multipole and temperature angular power | Here $C_\ell$ is for fractional temperature fluctuations. Higher $\ell$ corresponds to smaller angular scales. |
-| $\vec k$, $k$ | $\unit{m^{-1}}$ | Comoving wavevector and wavenumber | The wavevector labels a spatial Fourier mode. The magnitude is distinct from the curvature index $k$. |
+| $\thermal{T}$, $\thermal{T}^{(0)}$, $\delta\thermal{T}$ | $\unit{K}$ | Photon temperature | Photon temperature, its background value, and its perturbation. |
+| $\Theta$, $\widetilde\Theta$ | $1$ | Fractional photon temperature perturbation | Defined by $\thermal{T}=\thermal{T}^{(0)}(1+\Theta)$, and its Fourier amplitude. |
+| $\Theta_\ell$, $\Theta_0$, $\Theta_1$, $\Theta_2$ | $1$ | Photon temperature multipoles | Legendre moments of $\widetilde\Theta$: monopole, dipole, and quadrupole. |
+| $N_\ell$, $N_0$, $N_2$ | $1$ | Neutrino multipoles | Legendre moments of the relativistic neutrino perturbation, normalized like $\Theta_\ell$. |
 | $\mu$ | $1$ | Direction cosine for a photon Fourier mode | Dot product of the photon direction with the wavevector direction. |
-| $\delta$ | $1$ | Density contrast | Ratio of a first-order density perturbation to the homogeneous background. For nonrelativistic matter of fixed particle mass, the number and mass density contrasts agree. |
-| $\mathcal H$ | $\unit{s^{-1}}$ | Conformal Hubble parameter | Logarithmic derivative of the scale factor with respect to conformal time. |
-| $a_{\mathrm{eq}}$ | $1$ | Scale factor at matter–radiation equality | Obtained by equating $\Omega_{\mathrm m}a^{-3}$ and $\Omega_{\mathrm r}a^{-4}$. |
+| $\vec k$, $k$ | $\unit{m^{-1}}$ | Comoving wavevector and wavenumber | The wavevector labels a spatial Fourier mode. |
+| $\lambda_{\mathrm{com}}$ | $\unit{m}$ | Comoving wavelength | Wavelength of the Fourier mode, $2\pi/k$. |
+| $G_{\mu\nu}$ | $\unit{m^{-2}}$ | Einstein tensor | Curvature side of the Einstein equation. |
+| $\energy{T}_{\mu\nu}$ | $\unit{J\,m^{-3}}$ | Stress–energy tensor | Source side of the Einstein equation. |
+| $\Omega_{\mathrm m}$, $\Omega_{\mathrm r}$, $\Omega_\Lambda$ | $1$ | Present density parameters | Matter, radiation, and vacuum energy densities divided by today's critical density. |
+| $a_{\mathrm{eq}}$, $a_{\mathrm{start}}$ | $1$ | Characteristic scale factors | Scale factor at matter–radiation equality and at the start of a constant-$H$ phase. |
+| $y$ | $1$ | Normalized scale factor | Ratio $a/a_{\mathrm{eq}}$. |

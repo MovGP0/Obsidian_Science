@@ -1,0 +1,40 @@
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/06 The Equivalence Principles/06.07 A Brief Account of Experimental Tests.md
+- FIXED | Eötvös torque mechanism and "high-latitude" | Changed to mid-latitude (Budapest, 47°); stated that the centrifugal force has a horizontal component relative to the gravitational pull (plumb line follows the sum), scaling as Ω²R_E sinφ cosφ, largest at 45°; added Ω, R_E, φ to the table
+- FIXED | "Washington University in Seattle" | Changed to "the University of Washington, Seattle, USA (the Eöt-Wash group)"
+- FIXED | Sign of η = δa/g with η defined from m_i/m_g | Replaced with |η| ≃ |δa|/g from a = (m_g/m_i)g and stated that δa/g has the opposite sign to η
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/06 The Equivalence Principles/06.07.02 Laser Ranging to the Moon and the WEP.md
+- FIXED | Range precision "few parts in 10^14" | 3 mm/3.84e8 m = 7.8e-12; changed to "about one part in 10^11" and the interpretation sentence to about 10⁻¹¹, with 10⁻¹³ to 10⁻¹⁴ assigned to δa/g
+- FIXED | "Lunakhod" | Changed to "Lunokhod"
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/06 The Equivalence Principles/06.07.03 Tests of the SEP.md
+- FIXED | Symbol clash ε_g/E_g and M/m; uniform-sphere 3/5 factor | Replaced E_g/(mc²) with ε_g/(Mc²) and removed E_g, m from the table; wrote ε_g ≃ GM²/R and added that (6.5) gives 7.0e-10 for Earth while 3/5 and Earth's density structure give about 4.6e-10
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/06 The Equivalence Principles/06.08 The First Applications of the EEP - Prelude to the GTR.md
+- FIXED | Sign of (6.9) with T as clock periods | Defined T₁ (lower) and T₂ (upper) as readings accumulated over the same interval, so −gd/c² is correct; updated the note, the interpretation wording, and the table entry
+- FIXED | "runs at a smaller rate φ/c²" | Changed to "runs slower by the fraction |φ|/c²", with dτ/dt ≈ 1 + φ/c² and φ < 0
+- REJECTED | Planck constant in \energy{h} | The vault has no action group and its reference note Physical constants and SI units uses \energy{h}; the colouring is consistent with vault convention
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/06 The Equivalence Principles/06.11 The Equivalence Principle and the Quantum Theory.md
+- FIXED | "accelerated frame with acceleration −a" | Changed to "with acceleration a = −g", consistent with (6.11)
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/07 Einstein's General Theory of Relativity/07 References.md
+- FIXED | CPAE volume titles and "Abrahams expression" | Vol. 6 entries (refs 9, 10) now "The Berlin Years: Writings, 1914–1917"; Vol. 8 (ref 11) now "The Berlin Years: Correspondence, 1914–1918"; "Abraham’s expression"
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/07 Einstein's General Theory of Relativity/07.02 General Theory of Relativity as a Theory of Gravity.md
+- FIXED | g00 ≃ −(1+φ/c²) factor 2 and signature | Changed to g00 ≃ 1 + 2φ/c² with signature (+,−,−,−), consistent with g00 = 1 + h00 below
+- FIXED | Sign of (7.10) and Γ = ∇h00 | (7.10) now d²xⁱ/dt² = −c²Γⁱ₀₀ = −(c²/2)∇h00; following sentence now uses −c²Γⁱ₀₀ = −(c²/2)∇h00 = g = −∇φ, i.e. h00 = 2φ/c²
+- FIXED | Text states R = κT | Changed to R = −κT and updated the note to say the sign is corrected
+- FIXED | "time derivatives for the car" | Changed to "time derivatives of the metric are small for a static field"
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/07 Einstein's General Theory of Relativity/07.03 The GTR from an Action Principle.md
+- FIXED | Units of (7.12) are J m | Changed coefficients to c³/(16πG) and 1/c on the matter term; added that d⁴x is in m⁴ with x⁰ = ct; updated the coordinate table row
+- FIXED | Particle action −c∫m dτ with disclaimer | Text now S = −mc²∫dτ; removed the obsolete note
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/07 Einstein's General Theory of Relativity/07.04 The GTR as the Geometric Theory of Gravity.md
+- FIXED | (7.16) lacks c²/2 | Now V̈/V = −(κc²/2)Σ_{i=0}^{3} T_ii, with T00 = ρc² and pressures in the cloud rest frame (gives −4πG(ρ+3P/c²) for isotropic P); added ρ to the table
+- FIXED | g0i "typically vφ/c" | Changed to dimensionless order (v/c)(φ/c²), with a factor of about 4 in linearised GR
+- FIXED | "reduce the geometric object to the Ricci tensor" | Stated that the field equations contain only the Ricci contraction and that the other ten Weyl components remain and carry the vacuum tidal field, so curvature exists where R_ik = 0
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/07 Einstein's General Theory of Relativity/07.05 Einstein's Hole Argument.md
+- FIXED | "restricted to metric determinant 1" | Changed to coordinate transformations with substitution (Jacobian) determinant 1
+- FIXED | Trace assumption timing | "At this stage" changed to "In the addendum of 11 November 1915"
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/07 Einstein's General Theory of Relativity/07.05.01 Revisiting the Hole Argument.md
+- FIXED | Galilean map x' = x − vt is not a hole transformation | Removed "in the hole" and added that this map does not reduce to the identity outside L and changes the matter description there
+- FIXED | Comparing √(−γ00)dt with √(−γ'00)dt compares different clocks | Added to the interpretation section the proper-time integral in the new chart, its equality with the original value, and a label that the lecture's conclusion is the author's contested view; added t' to the table
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/07 Einstein's General Theory of Relativity/07.06 The GTR and Its Galilean Metrics.md
+- FIXED | Cross-term signs in (7.21) and (7.22) | (7.21) now +2v dx' dt + dx'²; (7.22) now +2R²Ω dφ' dt + R² dφ'² with φ' = φ − Ωt defined in the text
+- FIXED | Painlevé derivation via r' = r + vt with v(r) | Added a note that (7.23) follows only from the non-integrable substitution dr → dr + v(r)dt, that flat-space coordinate changes cannot give curvature (Kretschmann 48G²M²/(c⁴r⁶) ≠ 0), and that the frame is not uniformly accelerated; changed "uniformly accelerated frame" to "freely falling frame"; the author's closing claim of a derivation is left in his voice
+- FIXED | Langevin metric "evidently not special or general relativity" | Labelled as the author's conclusion and added that it is the Minkowski metric in rotating coordinates (zero Riemann tensor), so also a special-relativistic result
+- FIXED | Notation R, Ω vs r, ω and dR² | Dropped dR² (R constant on the loop); added to the Fig. 7.4 caption that r and ω are written R and Ω in the text (figure labels not redrawn)

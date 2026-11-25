@@ -368,11 +368,5 @@ Kyle Kabasares, *Extragalactic Astrophysics (Physics 241C, UC Irvine 2018)*.
 | $\mechanical{\rho}_{\mathrm c}$ | $\unit{kg\,m^{-3}}$ | Critical mass density | Reference cosmic density for the spherical overdensity convention. |
 | $\mechanical{M}_\Delta$ | $\unit{kg}$ | Spherical overdensity mass | Mass enclosed within $\mechanical{r}_\Delta$. |
 | $c$ | $1$ | Halo concentration | Ratio of the outer halo reference radius to the scale radius. |
-| $\mechanical{M}_{\mathrm{tot}}$, $\mechanical{M}_{\mathrm b}$, $\mechanical{M}_{\mathrm d}$, $\mechanical{M}_*$ | $\unit{kg}$ | Total, baryonic, disk baryon, and stellar masses | Successive mass components in the luminosity estimate. |
-| $h$ | $1$ | Reduced Hubble parameter | Defined by $H_0=\quantity{100h}{km\,s^{-1}\,Mpc^{-1}}$. |
-| $q$, $\epsilon$, $e$ | $1$ | Axis ratio, ellipticity, and eccentricity | Three measures of apparent ellipse shape. |
-| $N$ | $1$ | Number of stars | Total stellar population of the model galaxy. |
-| $n$ | $\unit{m^{-3}}$ | Stellar number density | Number of stars per unit volume. |
-| $\mu$ | $1$ | Mean particle mass in atomic mass units | Dimensionless factor converting the atomic mass unit to the average gas particle mass. |
-| $\mechanical{r}_0$ | $\unit{m}$ | King radius | Length scale set by the velocity dispersion and central density of the nonsingular isothermal sphere. |
-| $a$, $b$ | $1$ | Fundamental-plane coefficients | Logarithmic slopes with respect to velocity dispersion and effective intensity. |
+| $\mechanical{M}_{\mathrm{tot}}$ | $\unit{kg}$ | Total mass | Total mass of the point-mass model. |
+| $\mechanical{r}_0$ | $\unit{m}$ | Reference radius | Radius that sets the zero point of the logarithmic potential. |

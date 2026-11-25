@@ -49,7 +49,7 @@ $$
 \energy{\rho}=\energy{\rho}_{\mathrm{rad}}+\energy{\rho}_{\mathrm{matter}}+\energy{\rho}_{\nu}+\energy{\rho}_x.
 $$
 
-A species behaves as radiation when its rest energy is small compared with its characteristic thermal energy. Examples in the notes are photons, possible dark radiation, and neutrinos at early times. There are three neutrino flavors, $\nu_e$, $\nu_\mu$, and $\nu_\tau$. The 2018 lecture quotes an approximate upper-limit range of $\quantity{0.2\text{–}1}{eV}$ for $\sum_{i=1}^3\mechanical{m}_{\nu_i}\mechanical{c}^2$, where the sum runs over the neutrino mass eigenstates.
+A species behaves as radiation when its rest energy is small compared with its characteristic thermal energy. Examples in the notes are photons, possible dark radiation, and neutrinos at early times. There are three neutrino flavors, $\nu_e$, $\nu_\mu$, and $\nu_\tau$. The 2018 lecture quotes an approximate upper-limit range of $\quantity{0.2\text{–}1}{eV}$ for $\sum_{i=1}^3\mechanical{m}_{\nu_i}\mechanical{c}^2$, where the sum runs over the neutrino mass eigenstates. Current bounds are tighter. Planck 2018 gives $\sum\mechanical{m}_{\nu_i}\mechanical{c}^2<\quantity{0.12}{eV}$, and DESI 2024 combined with CMB data gives about $\quantity{0.07}{eV}$ as the upper limit. Neutrino oscillations require $\sum\mechanical{m}_{\nu_i}\mechanical{c}^2\gtrsim\quantity{0.06}{eV}$.
 
 The present CMB temperature is $\thermal{T}_{\mathrm{CMB},0}=\quantity{2.726}{K}$, or $\thermal{k}_{\mathrm B}\thermal{T}_{\mathrm{CMB},0}=\quantity{2.35\times10^{-4}}{eV}=\quantity{0.235}{meV}$. The temperature scales as
 
@@ -57,7 +57,7 @@ $$
 \thermal{T}(a)=\frac{\thermal{T}_{\mathrm{CMB},0}}{a}.
 $$
 
-At $a\simeq 0.001$, around the time the CMB was released, $\thermal{k}_{\mathrm B}\thermal{T}\simeq\quantity{0.235}{eV}$. For a characteristic Big Bang nucleosynthesis temperature with $\thermal{k}_{\mathrm B}\thermal{T}_{\mathrm{BBN}}\simeq\quantity{1}{MeV}$, the notes estimate
+At $a\simeq 0.001$, around the time the CMB was released, $\thermal{k}_{\mathrm B}\thermal{T}\simeq\quantity{0.235}{eV}$. For the onset of Big Bang nucleosynthesis, when the weak interactions freeze out at $\thermal{k}_{\mathrm B}\thermal{T}_{\mathrm{BBN}}\simeq\quantity{1}{MeV}$, the notes estimate
 
 $$
 a_{\mathrm{BBN}}\simeq
@@ -192,7 +192,7 @@ $$
 The lecture introduces Big Bang nucleosynthesis, the CMB, and thermal dark matter. It lists the following characteristic energies, with temperature expressed as $\thermal{k}_{\mathrm B}\thermal{T}$.
 
 - Thermal dark matter freeze-out at roughly $\mechanical{m}\mechanical{c}^2/20$. For $\mechanical{m}\mechanical{c}^2=\quantity{100}{GeV}$, the example gives $\thermal{k}_{\mathrm B}\thermal{T}\simeq\quantity{5}{GeV}$.
-- Big Bang nucleosynthesis at $\quantity{1\text{–}10}{MeV}$ in the notes' rough ordering.
+- Big Bang nucleosynthesis at $\quantity{1\text{–}10}{MeV}$ in the notes' rough ordering. This range is too hot. The neutron-to-proton ratio freezes out near $\quantity{0.8}{MeV}$, and nuclei form near $\quantity{0.07\text{–}0.1}{MeV}$, as in [[Expansion histories and primordial element abundances]].
 - Release of the CMB at roughly $\quantity{0.2}{eV}$ and $z\sim1100$.
 - The margin also mentions QCD phase transitions and an “electronic phase transition” followed by $10$, with no unit given there.
 
@@ -368,17 +368,12 @@ Kyle Kabasares, *Cosmology (Physics 240B, UC Irvine 2018)*.
 | $ds^2$ | $\unit{m^2}$ | Squared spacetime interval | Metric contraction of two coordinate differentials when the line element is expressed in length units. |
 | $\mechanical{c}$ | $\unit{m\,s^{-1}}$ | Speed of light | Converts the time coordinate to length units in the flat interval. |
 | $\thermal{k}_{\mathrm B}$ | $\unit{J\,K^{-1}}$ | Boltzmann constant | Relates temperature to energy and is set to one in natural units. |
-| $\tau$ | $\unit{s}$ | Proper time | Elapsed time measured by a clock moving along the timelike path. |
-| $\mechanical{v}$ | $\unit{m\,s^{-1}}$ | Radial speed | Rate of change of radial position in the chosen inertial frame. It is expressed in units of the speed of light in $\gamma$. |
-| $\gamma$ | $1$ | Lorentz factor | Ratio of coordinate time to proper time for inertial motion. |
-| $\mechanical{F}$, $\mechanical{m}$, $\mechanical{a}$ | $\unit{N}$, $\unit{kg}$, $\unit{m\,s^{-2}}$ | Force, mass and acceleration | Quantities in Newton's second law. The acceleration here is distinct from the cosmological scale factor $a$. |
+| $\mechanical{m}$, $\mechanical{m}_e$ | $\unit{kg}$ | Particle mass | Rest mass of a particle species, and of the electron. |
 | $\mechanical{P}^\mu$ | $\unit{kg\,m\,s^{-1}}$ | Four-momentum | Tangent to the particle trajectory for an appropriate normalization of the affine parameter. Its time component in SI is $\energy{E}/\mechanical{c}$. |
 | $\energy{E}$ | $\unit{J}$ | Photon energy | Energy measured by a comoving observer, equal to $\mechanical{P}^0$ in natural units. |
 | $\mechanical{\vec p}$ | $\unit{kg\,m\,s^{-1}}$ | Physical spatial momentum | Momentum components measured in a local orthonormal frame. |
 | $\thermal{p}$ | $\unit{Pa}$ | Isotropic pressure | Spatial diagonal component of the comoving perfect-fluid stress-energy tensor. |
-| $\mechanical{\rho}$ | $\unit{kg\,m^{-3}}$ | Mass density | Mass per volume in the dimensional estimate of the infall time. |
-| $A$ | $\unit{m}$ | Comoving curvature radius | Radius of the embedded three-sphere before multiplication by the scale factor. |
-| $k$ | $\unit{m^{-2}}$ | Spatial curvature parameter | Units apply when $r$ has dimensions of length and $a$ is dimensionless. |
+| $k$ | $1$ | Spatial curvature index | Takes the values $0$, $+1$, or $-1$. The curvature scale is the explicit $R_0$. |
 | $R_0$ | $\unit{m}$ | Comoving curvature radius | Used in the positively and negatively curved cases. |
 | $V$ | $\unit{m^3}$ | Proper spatial volume | A shell is evaluated at a fixed cosmic time. |
 | $\thermal{Q}$ | $\unit{J}$ | Heat transferred | Vanishes for the adiabatic expansion considered here. |
@@ -395,6 +390,3 @@ Kyle Kabasares, *Cosmology (Physics 240B, UC Irvine 2018)*.
 | $\thermal{T}_\gamma$, $\thermal{T}_\nu$ | $\unit{K}$ | Photon and neutrino temperatures | After decoupling, the two distributions have separate temperature scales. |
 | $\sigma$ | $\unit{m^2}$ | Reaction cross section | Averaged together with relative speed to obtain the rate coefficient. |
 | $\mechanical{v}_{\mathrm{rel}}$ | $\unit{m\,s^{-1}}$ | Relative speed | Speed entering the forward two-body reaction rate. |
-| $\vec k$, $k$ | $\unit{m^{-1}}$ | Comoving wavevector and wavenumber | The wavevector labels a spatial Fourier mode. The magnitude is distinct from the curvature index $k$. |
-| $\mu$ | $1$ | Direction cosine for a photon Fourier mode | Dot product of the photon direction with the wavevector direction. |
-| $\delta$ | $1$ | Density contrast | Ratio of a first-order density perturbation to the homogeneous background. For nonrelativistic matter of fixed particle mass, the number and mass density contrasts agree. |

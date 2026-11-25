@@ -202,7 +202,7 @@ $$
 \frac{2\pi}{\hbar}|\energy{V}_{k,0}^{(-)}|^2
 \delta\!\left(\energy{E}(\signal{k})-\energy{E}_0-\hbar\signal{\omega}\right),
 $$
-where $\energy{V}_{k,0}^{(-)}$ is the coefficient of $e^{-i\signal{\omega}\mechanical{t}}$. In a radial basis normalized with respect to $d\signal{k}$, integrate this expression over $\signal{k}$. The delta contributes $1/|d\energy{E}/d\signal{k}|$ at $\energy{E}=\energy{E}_0+\hbar\signal{\omega}$ when this energy is in the continuum. The speed is $\mechanical{v}=\hbar\signal{k}/\mechanical{m}$. A region of size $\mechanical{\ell}$ has crossing time $\mechanical{\ell}/\mechanical{v}=\mechanical{m}\mechanical{\ell}/(\hbar\signal{k})$.
+where $\energy{V}_{k,0}^{(-)}$ is the coefficient of $e^{-i\signal{\omega}\mechanical{t}}$. In a radial basis normalized with respect to $d\signal{k}$, integrate this expression over $\signal{k}$. The delta contributes $1/|d\energy{E}/d\signal{k}|$ at $\energy{E}=\energy{E}_0+\hbar\signal{\omega}$ when this energy is in the continuum. The speed is $\mechanical{v}=\hbar\signal{k}/\mechanical{m}$. A region of size $\mechanical{d}$ has crossing time $\mechanical{d}/\mechanical{v}=\mechanical{m}\mechanical{d}/(\hbar\signal{k})$.
 
 For a two-body hydrogen model, the Gaussian-unit Hamiltonian includes the proton and electron kinetic energies and the Coulomb attraction $-\electric{e}^2/\lVert\mechanical{\mathbf r}_e-\mechanical{\mathbf r}_p\rVert$, where $\electric{e}$ is the positive charge magnitude. In a uniform field the external term is $-\electric{q}_e\electric{\mathcal E}(\mechanical{z}_e-\mechanical{z}_p)\cos(\signal{\omega}\mechanical{t})$ for signed electron charge $\electric{q}_e$. The projection $\mechanical{z}_e-\mechanical{z}_p=\mechanical{r}\cos\theta$ uses the relative vector from proton to electron. Reversing the relative vector reverses the projection.
 
@@ -279,18 +279,16 @@ Kyle Kabasares, *Quantum Mechanics II (Physics 215B, UC Irvine 2018)*.
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
 | $\hbar$ | $\unit{J\,s}$ | Reduced Planck constant | Planck constant divided by $2\pi$. |
-| $\signal{\omega}$, $\signal{\omega}_j$ | $\unit{rad\,s^{-1}}$ | Angular frequencies | Common unperturbed frequency and frequencies of the new oscillator modes. |
-| $\mechanical{t}$, $\mechanical{t}_0$, $\Delta\mechanical{t}$ | $\unit{s}$ | Time | Observation time, initial or switching time, and elapsed time. |
+| $\signal{\omega}$, $\signal{\omega}_{ni}$ | $\unit{rad\,s^{-1}}$ | Angular frequencies | Field frequency and transition frequency between two unperturbed states. |
+| $\mechanical{t}$ | $\unit{s}$ | Time | Time variable of the evolution. |
 | $\mechanical{m}$ | $\unit{kg}$ | Mass | Particle mass. |
-| $\energy{E}$, $\energy{E}_0$ | $\unit{J}$ | Energy eigenvalue | Energy of an eigenstate, including the common energy of a degenerate subspace. |
+| $\energy{E}$, $\energy{E}_0$ | $\unit{J}$ | Energy eigenvalue | Energy of an eigenstate, and the ground-state energy of the spherical well. |
 | $\mechanical{z}$, $\mechanical{r}$ | $\unit{m}$ | Vertical position and radius | Position along the drive direction and distance from the origin. |
-| $E$ | $\unit{N}$ | Linear perturbation coefficient | Electric field strength multiplied by the signed charge, with the sign set by the potential convention. |
-| $\Gamma$ | $\unit{s^{-1}}$ | Transition rate | Leading probability per unit time for transition into the continuum. |
-| $\Omega$ | $\unit{sr}$ | Solid angle | Angular measure for the direction of a final momentum. |
-| $\signal{\mathbf k}$, $\signal{k}_j$ | $\unit{m^{-1}}$ | Wave vector and components | Spatial frequencies of the momentum eigenfunction. |
-| $\mechanical{\mathbf p}$, $\mechanical{\mathbf p}'$ | $\unit{kg\,m\,s^{-1}}$ | Momentum vectors | Momentum before and after scattering. |
-| $N$ | 1 | Number of states | Count of momentum states in the box. |
-| $\mathcal E$ | $\unit{N}$ | Electric driving coefficient | Charge-weighted field strength with the sign convention used in the ionization example. |
+| $\Gamma_{i\to n}$, $\Gamma_{i\to n}^{\mathrm{abs}}$ | $\unit{s^{-1}}$ | Transition rate | Probability per unit time for a transition from $i$ to $n$. |
+| $\Omega$ | $\unit{sr}$ | Solid angle | Angular measure for a direction of the wave vector or position. |
+| $\signal{\mathbf k}$, $\signal{k}$ | $\unit{m^{-1}}$ | Wave vector and wave number | Wave vector of a radiation mode or continuum state and its magnitude. |
+| $\mechanical{\mathbf p}_e$, $\mechanical{\mathbf p}_p$ | $\unit{kg\,m\,s^{-1}}$ | Particle momenta | Momenta of the electron and the proton. |
+| $N$ | 1 | Photon number | Number of photons in one mode. |
 | $\eta$ | $\unit{s^{-1}}$ | Switching rate | Parameter setting the speed of the smooth switch-on. |
 | $\electric{\phi}$ | $\unit{V}$ | Scalar electric potential | Time component of the four-potential multiplied by the speed of light. |
 | $\magnetic{\mathbf A}$ | $\unit{T\,m}$ | Magnetic vector potential | Spatial part of the electromagnetic four-potential. |
@@ -312,7 +310,7 @@ Kyle Kabasares, *Quantum Mechanics II (Physics 215B, UC Irvine 2018)*.
 | $\electric{\mathcal E}$ | $\unit{V\,m^{-1}}$ | Electric field amplitude | Amplitude of the uniform oscillating field. |
 | $R_0$, $R_{k\ell}$ | — | Radial wavefunctions | Radial factors for the ground state and partial-wave continuum states. |
 | $\mechanical{v}$ | $\unit{m\,s^{-1}}$ | Particle speed | Speed associated with the continuum wave number. |
-| $\mechanical{\ell}$ | $\unit{m}$ | Crossing length | Size of the region used to estimate a transit time. |
+| $\mechanical{d}$ | $\unit{m}$ | Crossing length | Size of the region used to estimate a transit time. |
 | $\electric{e}$ | $\unit{C}$ | Elementary charge magnitude | Positive magnitude of the proton or electron charge. |
 | $\mechanical{\mu}$, $\mechanical{M}$ | $\unit{kg}$ | Reduced and total mass | Mass in the relative-motion and center-of-mass kinetic terms. |
 | $\mechanical{\mathbf p}_{\mathrm{rel}}$, $\mechanical{\mathbf P}$ | $\unit{kg\,m\,s^{-1}}$ | Relative and total momentum | Momenta conjugate to the relative and center-of-mass coordinates. |
@@ -322,5 +320,4 @@ Kyle Kabasares, *Quantum Mechanics II (Physics 215B, UC Irvine 2018)*.
 | $\overline N(\signal{k})$ | 1 | Mean mode occupation | Thermal average of the photon number in one mode. |
 | $\thermal{T}$ | $\unit{K}$ | Temperature | Temperature of the equilibrium radiation and atom. |
 | $k_B$ | $\unit{J\,K^{-1}}$ | Boltzmann constant | Converts temperature to the thermal energy scale. |
-| $A$, $B$ | $\unit{s^{-1}}$ | Mode emission and absorption coefficients | Spontaneous rate and induced transition rate per photon for a single resonant mode. |
-| $\mechanical{v}$ | $\unit{m^3\,mol^{-1}}$ | Molar volume | Container volume per mole in the gas equations. |
+| $A(\signal{\mathbf k},s)$ | — | Mode amplitude | Gaussian-unit vector-potential amplitude of mode $(\signal{\mathbf k},s)$. Its unit depends on the normalization. |

@@ -486,9 +486,3 @@ The equation $x^2/a^2-y^2/b^2=1$ gives a hyperbola.
 ## Source
 
 Kyle Kabasares, *Calculus III - Vector Calculus (Math 23, UC Merced 2014)*.
-
-## Physical quantities
-
-| Symbol | Unit | Quantity | Description |
-| --- | --- | --- | --- |
-| $\lVert\mechanical{\mathbf v}\rVert$ | $\unit{m\,s^{-1}}$ | Speed | Magnitude of the velocity vector. |

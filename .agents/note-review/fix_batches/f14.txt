@@ -1,0 +1,57 @@
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/01 Ordinary Differential Equations/01 Worked Differential Equations/01 Examples/Energy Conservation Example.md
+- [Correctness] Step 4: $\varphi_0=\arctan(x_0\omega/v_0)$ gives the wrong phase for $v_0<0$ and is undefined for $v_0=0$; for $x=A\sin(\omega t+\varphi_0)$ use $\varphi_0=\operatorname{atan2}(x_0\omega,\,v_0)$ (equivalently $\sin\varphi_0=x_0/A$, $\cos\varphi_0=v_0/(\omega A)$); likewise Step 3's $\varphi_0=\arcsin(x_0/A)$ only covers $v_0\ge0$.
+
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/01 Ordinary Differential Equations/01 Worked Differential Equations/01 Examples/Hamiltonian Flow Example.md
+- [Correctness] Step 4: "The flow matrix above rotates the vector $\mathbf{u}$" is false unless $m\omega=1$; $\mathrm{e}^{At}$ is not orthogonal and moves $\mathbf{u}$ along an ellipse; it is a rotation only in the scaled coordinates $(x,\,p/(m\omega))$.
+
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/01 Ordinary Differential Equations/01 Worked Differential Equations/01 Examples/Substitution Example.md
+- [Correctness] Second section: the first derivative is written $\frac{\mathrm{d}x}{\mathrm{d}t^2}$ (should be $\frac{\mathrm{d}x}{\mathrm{d}t}$) and the last equation writes $\frac{\mathrm{d}^2x^2}{\mathrm{d}t^2}$ (should be $\frac{\mathrm{d}^2x}{\mathrm{d}t^2}$).
+- [Correctness] Second section: the ansatz is stated as $x=A\cos(\Omega t)$ but then differentiated as $A\cos(\Omega t)+B\sin(\Omega t)$; the table omits $B$, calls $\Omega$ "Oscillation Frequency" (it is an angular frequency), and $\Omega$ duplicates the first section's $\omega$; the conclusion $\Omega^2=k/m$ is never stated.
+
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/01 Ordinary Differential Equations/01 Worked Differential Equations/Algebraic Rules for Ordinary Differential Equations (ODE).md
+- [Correctness] Logarithmic derivatives: "$\frac{d}{dt}\ln f=f'/f$ applies whenever $f(t)$ stays away from zero" is wrong for $f<0$, where $\ln f$ is undefined; require $f>0$ or write $\frac{d}{dt}\ln|f|=f'/f$ for $f\neq0$ (matching the integral section's $\ln|f|$).
+
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/01 Ordinary Differential Equations/01 Worked Differential Equations/Types of Differentials.md
+- [Correctness] Exterior derivative: "$d\omega=\partial_\nu\omega_\mu\wedge dx^\nu\wedge dx^\mu$" wedges a function component; the correct form is $d\omega=\partial_\nu\omega_\mu\,dx^\nu\wedge dx^\mu$ (equivalently $\tfrac12(\partial_\nu\omega_\mu-\partial_\mu\omega_\nu)\,dx^\nu\wedge dx^\mu$).
+- [Correctness] Covariant derivative key point: it is not "the unique derivative operator"; uniqueness holds only for the Levi-Civita connection (torsion-free and metric-compatible), so state that condition.
+- [Correctness] Laplacian: "measures how a scalar deviates from its average value" holds for the Riemannian Laplacian, not for the Lorentzian d'Alembertian $\Box$ that the same section names; separate $\nabla^2$ (elliptic) from $\Box$ (wave operator).
+- [Correctness] Table row for $u^\mu\nabla_\mu$ says a connection is required, but on scalars $u^\mu\nabla_\mu f=u^\mu\partial_\mu f=df/d\tau$ needs none; note that the connection enters only for tensors. The Lie derivative key point "captures changes due to coordinate motion" should read "changes relative to the flow of $v$".
+
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/02 Linear Systems, Stability, and Phase Portraits/Linearization, phase portraits, and nonlinear maps.md
+- [Correctness] The Physical quantities table lists $\beta$ twice with conflicting meanings ("Crowding coefficient, $\unit{s^{-1}}$" and "Predator effect coefficient, 1"), gives $\lambda$ as a Lyapunov exponent although here $\lambda$ is always a Jacobian eigenvalue or recurrence root, and contains rows for symbols that never occur in this note ($T$ sampling period, $x,y$ ingredient amounts in oz, $s$ protein surplus, $t$ iron surplus); rebuild it from the symbols actually used.
+- [Correctness] Symbol clashes: $\beta$ is the predator-effect coefficient in $R'=\alpha R(1-\beta W)$ but also the logistic-map parameter $\beta=1+\alpha\Delta t$, and $\alpha$ is the rabbit growth rate, the multiplier in $y_n=\alpha y_{n-1}$, and the logistic rate; rename the map parameter (e.g. $r$) and the recurrence multiplier.
+
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/03 Boundary-Value Problems and Eigenfunctions/Box central-field and oscillator eigenfunctions.md
+- [Correctness] "The adjective linear describes its dependence on the unknown function" is incorrect: "linear harmonic oscillator" refers to the one-dimensional oscillator with a restoring force linear in displacement (potential $\propto x^2$); every equation in this note is linear in $\phi$, so linearity in the unknown cannot be what the adjective distinguishes.
+
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/03 Boundary-Value Problems and Eigenfunctions/Endpoint eigenvalues and Fourier orthogonality.md
+- [Correctness] The Physical quantities table lists $\mechanical{c}$ twice (viscous damping coefficient and wave speed) and describes "a slice of the conducting rod" and "distance along the wave and heat models", none of which appear in this note; drop the wave-speed row and the heat/wave wording.
+
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/03 Boundary-Value Problems and Eigenfunctions/Weighted eigenfunctions and Rayleigh bounds.md
+- [Correctness] The Physical quantities table lists $\mechanical{u}$ as "Pressure, Pa" (the note's $\mechanical{u}$ is string displacement) and has rows for thermal diffusivity $\thermal{k}$, membrane dimensions $L,H$, and radius $r,a$ that never occur; the $\mechanical{Q}$ row links to the "Theorems for regular Sturm–Liouville problems" section, but $\mechanical{Q}$ appears in the Exercise 4.4.2 part.
+- [Correctness] Symbol clash for $\alpha$: in the opening string equation and the heat-rod equation $q=\alpha$, but in Exercise 4.4.2 $\alpha=\alpha_{\mathrm{line}}/\mechanical{\rho}_0$ and $q=\mechanical{\rho}_0\alpha$; also plain $T(t)$ is the time factor next to the tension $\mechanical{T}_0$. Use one meaning (e.g. $q=\alpha_{\mathrm{line}}$) and call the time factor $h(t)$ as later in the note.
+
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/04 Partial Differential Equations/Classification and heat-equation examples.md
+- [Correctness] The Physical quantities table lists $\mechanical{c}$ as "Viscous damping coefficient" ($\unit{N\,s\,m^{-1}}$) and $\mechanical{m}$, $\mechanical{x}$ as oscillator mass and displacement, none of which occur here; $\mechanical{c}$ is only the wave speed, so the damping row also creates a duplicate-symbol clash. Remove these oscillator rows.
+- [Correctness] The $\thermal{y}$ row links to "#Changing the forcing at one point", but $\thermal{y}(\mechanical{x},\signal{t})$ is introduced in "Introduction to PDEs" (the $y$ in the forcing section is an ODE solution); also the same temperature is written $\thermal{y}$ there and $\thermal{u}$ from "Deriving the heat equation" on, so use one symbol.
+
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/04 Partial Differential Equations/Fourier extensions and forced heat modes.md
+- [Correctness] Under "Term-by-term differentiation of Fourier series and the method of eigenfunction expansion", the sentence "The time-differentiation rule on [[#Eigenfunction expansion for the heat equation]]" points to the wrong heading; the rule is in "Time differentiation of a Fourier series".
+- [Correctness] The Physical quantities table lists $\mechanical{u}$ as pressure "in the divergence-form example" (no such example here, and it clashes with $\mechanical{u}$ = wave displacement in the same table), plus rows that do not occur in this note: $\mechanical{\rho}$ in $\unit{kg/m^3}$, "$\mechanical{Q}$ in Exercise 4.4.2" with its link, $L,H$ membrane dimensions, and $r,a$. Rebuild the table from the symbols used.
+
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/04 Partial Differential Equations/Heat equation, boundary data, and separation.md
+- [Correctness] Symbol clash: $\thermal{\phi}$ is the heat flux ($\unit{W/m^2}$) in the derivation and the initial temperature in "Separation of variables" and "Separation of variables for the heat equation"; the table lists both. Rename the initial profile (e.g. $\thermal{f}$, already used later).
+- [Correctness] Symbol clash: $\thermal{k}$ is defined as diffusivity $\thermal{k}_0/(\thermal{c}\mechanical{\rho})$ in "The heat equation" but used for conductivity in Fourier's law $\thermal{\phi}=-\thermal{k}\,\partial\thermal{u}/\partial x$ in the next part; write $\thermal{k}_0$ there.
+- [Correctness] Two internal links point to unrelated sections: "Newton's law of cooling" refers to [[#The spatial eigenvalue problem]], and the steady-state remark cites the "source convention on [[#Newton's law of cooling and the initial condition]]", whereas the convention $-(\thermal{k}_0\thermal{u}')'=\thermal{Q}$ is in "Steady-state heat equation". Retarget or remove them.
+- [Correctness] The Physical quantities table has rows for symbols not in this note: wave speed $\mechanical{c},\mechanical{v}$; string density $\mechanical{\rho}(x),\mechanical{\rho}_{\min},\mechanical{\rho}_{\max}$ in $\unit{kg\,m^{-1}}$ (clashing with $\mechanical{\rho}$ in $\unit{kg/m^3}$); membrane $L,H$ (clashing with the heat-transfer coefficient $\thermal{H}$) and radius $a$. Remove them.
+
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/04 Partial Differential Equations/Insulated, periodic, and forced heat problems.md
+- [Correctness] The Physical quantities table lists $L$, $H$ (rectangular membrane dimensions) and $r$, $a$ (membrane radius), which this note never uses, and omits $g(x)$ and the rod-length meaning of $L$ (and $2L$ for the ring); replace with the symbols actually used.
+
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/04 Partial Differential Equations/Model error, random walks, and continuum limits.md
+- [Correctness] The Physical quantities table lists many symbols this note never uses ($R$, $\alpha$, $M$, $\beta$ twice with different meanings, $t_0$, $K$, $\delta$, $y_i$, ingredient amounts $x,y$, surpluses $s,t$, $a_i$, $d\theta_i/dt$) and defines $\tau$ as "Total population" although here $\tau=t$ is the moving-frame time; rebuild it from $\Delta x,\Delta t,c,D,U,C,f,g,h,z$.
+- [Correctness] "The notes credit the model to Witten and give 1978 as the year of introduction": diffusion-limited aggregation was introduced by Witten and Sander in 1981 (Phys. Rev. Lett. 47, 1400); correct the attribution and year.
+
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/04 Partial Differential Equations/Rectangular and circular membrane eigenmodes.md
+- [Correctness] The Physical quantities table defines $\mechanical{u}$ as "Pressure" in Pa (here it is membrane displacement in m), lists $\mechanical{\beta}$ both as a damping coefficient (unused here) and as initial velocity, and lists unused $\mechanical{v}$; fix the rows to match this note.
+

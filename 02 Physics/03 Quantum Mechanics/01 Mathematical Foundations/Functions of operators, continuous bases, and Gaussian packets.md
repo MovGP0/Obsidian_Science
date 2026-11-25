@@ -218,8 +218,8 @@ The remaining integral is $\langle Kg\mid f\rangle$. The symmetry condition is t
 On the full real line the notes discuss both decaying functions and generalized plane waves $e^{ikx}$. For plane waves the boundary term involves $e^{i(k-k')x}$. The notes use an average over a long interval, which tends to zero for $k\ne k'$ even though the exponential continues to oscillate.
 
 $$
-\lim_{\Delta\to\infty}\frac{1}{\Delta}
-\int_L^{L+\Delta}e^{i(k-k')x}\,dx=0
+\lim_{\Lambda\to\infty}\frac{1}{\Lambda}
+\int_{x_0}^{x_0+\Lambda}e^{i(k-k')x}\,dx=0
 \quad(k\ne k').
 $$
 
@@ -389,7 +389,7 @@ $$
 
 ##### Sakurai 1.2. Expansion in Pauli matrices
 
-**(a)** Write $X=a_0I+\boldsymbol\sigma\cdot\mathbf a$, where $\mathbf a=(a_1,a_2,a_3)$ and $\boldsymbol\sigma=(\sigma_x,\sigma_y,\sigma_z)$ consists of the Pauli matrices.
+**(a)** Write $M=a_0I+\boldsymbol\sigma\cdot\mathbf a$, where $\mathbf a=(a_1,a_2,a_3)$ and $\boldsymbol\sigma=(\sigma_x,\sigma_y,\sigma_z)$ consists of the Pauli matrices.
 
 $$
 \sigma_x=\begin{pmatrix}0&1\\1&0\end{pmatrix},\quad
@@ -400,20 +400,20 @@ $$
 Expanding the sum gives
 
 $$
-X=\begin{pmatrix}a_0+a_3&a_1-ia_2\\a_1+ia_2&a_0-a_3\end{pmatrix},
+M=\begin{pmatrix}a_0+a_3&a_1-ia_2\\a_1+ia_2&a_0-a_3\end{pmatrix},
 \qquad
-\operatorname{Tr}X=2a_0.
+\operatorname{Tr}M=2a_0.
 $$
 
-The notes use Mathematica to compute the traces of the Pauli products. Evaluating $\operatorname{Tr}(\sigma_k X)$ component by component gives $2a_1$, $2a_2$, and $2a_3$, respectively. Thus $a_k=\operatorname{Tr}(\sigma_k X)/2$ for $k=1,2,3$, with $\sigma_1=\sigma_x$, $\sigma_2=\sigma_y$, and $\sigma_3=\sigma_z$.
+The notes use Mathematica to compute the traces of the Pauli products. Evaluating $\operatorname{Tr}(\sigma_k M)$ component by component gives $2a_1$, $2a_2$, and $2a_3$, respectively. Thus $a_k=\operatorname{Tr}(\sigma_k M)/2$ for $k=1,2,3$, with $\sigma_1=\sigma_x$, $\sigma_2=\sigma_y$, and $\sigma_3=\sigma_z$.
 
-**(b)** Solve for the coefficients from the four entries of $X$.
+**(b)** Solve for the coefficients from the four entries of $M$.
 
 $$
-a_0=\frac{X_{11}+X_{22}}{2},\qquad
-a_1=\frac{X_{12}+X_{21}}{2},\qquad
-a_2=\frac{X_{21}-X_{12}}{2i},\qquad
-a_3=\frac{X_{11}-X_{22}}{2}.
+a_0=\frac{M_{11}+M_{22}}{2},\qquad
+a_1=\frac{M_{12}+M_{21}}{2},\qquad
+a_2=\frac{M_{21}-M_{12}}{2i},\qquad
+a_3=\frac{M_{11}-M_{22}}{2}.
 $$
 
 ##### Shankar example 4.2.4. Gaussian wave packet
@@ -489,5 +489,9 @@ Kyle Kabasares, *Quantum Mechanics (Physics 137, UC Merced 2015)*.
 
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
-| $R$, $T$ | $1$ | Reflection and transmission coefficients | Ratios of reflected and transmitted flux magnitudes to the incident flux magnitude. |
-| $a_0$ | $\unit{m}$ | Bohr radius | Characteristic length in the hydrogen radial wavefunctions. |
+| $x$, $x'$ | $\unit{m}$ | Position | The position coordinate and the position eigenvalue of $X$. |
+| $k$, $k'$ | $\unit{m^{-1}}$ | Wave number | The eigenvalue of $K=-iD$ for a plane wave. |
+| $a$ | $\unit{m}$ | Packet center | The center and mean position of the Gaussian wave packet. |
+| $\Delta$ | $\unit{m}$ | Width parameter | The width parameter of the Gaussian wave packet. |
+| $\Delta X$ | $\unit{m}$ | Position uncertainty | The standard deviation of position for the Gaussian wave packet. |
+| $\psi(x)$, $A$ | $\unit{m^{-1/2}}$ | Wavefunction and normalization factor | The Gaussian position amplitude and its normalization constant. |

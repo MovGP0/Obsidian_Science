@@ -16,29 +16,29 @@ The regression function is $g(x)=E[Y\mid X=x]$, where $x$ can be vector-valued. 
 For the simple linear model,
 
 $$
-Y_i=\alpha+\beta x_i+U_i.
+Y_i=\beta_0+\beta x_i+U_i.
 $$
 
-Here $Y_i$ is the dependent variable, $\alpha$ is the intercept, $\beta$ is the slope, $x_i$ is the observed feature or independent variable, and $U_i$ is the noise term. The model assumes that $U_1,\ldots,U_n$ are independent, that $E[U_i]=0$, and that $\operatorname{Var}(U_i)=\sigma^2$ for every $i$. The notes ask whether those assumptions hold in an application.
+Here $Y_i$ is the dependent variable, $\beta_0$ is the intercept, $\beta$ is the slope, $x_i$ is the observed feature or independent variable, and $U_i$ is the noise term. The model assumes that $U_1,\ldots,U_n$ are independent, that $E[U_i]=0$, and that $\operatorname{Var}(U_i)=\sigma^2$ for every $i$. The notes ask whether those assumptions hold in an application.
 
-To estimate $\alpha$ and $\beta$, minimize the residual sum of squares,
+To estimate $\beta_0$ and $\beta$, minimize the residual sum of squares,
 
 $$
-S(\alpha,\beta)=\sum_{i=1}^n(y_i-\alpha-\beta x_i)^2.
+S(\beta_0,\beta)=\sum_{i=1}^n(y_i-\beta_0-\beta x_i)^2.
 $$
 
-Under independent normal responses $Y_i\sim N(\alpha+\beta x_i,\sigma^2)$ at the observed $x_i$, least squares gives the maximum likelihood estimates of $\alpha$ and $\beta$.
+Under independent normal responses $Y_i\sim N(\beta_0+\beta x_i,\sigma^2)$ at the observed $x_i$, least squares gives the maximum likelihood estimates of $\beta_0$ and $\beta$.
 
 ##### )
 
-Minimize $S(\alpha,\beta)=\sum_{i=1}^n(y_i-(\alpha+\beta x_i))^2$ to estimate $\alpha$ and $\beta$. This is equivalent to maximum likelihood under the Gaussian error model $Y_i\sim N(\alpha+\beta x_i,\sigma^2)$ with independent errors.
+Minimize $S(\beta_0,\beta)=\sum_{i=1}^n(y_i-(\beta_0+\beta x_i))^2$ to estimate $\beta_0$ and $\beta$. This is equivalent to maximum likelihood under the Gaussian error model $Y_i\sim N(\beta_0+\beta x_i,\sigma^2)$ with independent errors.
 
-![[Kyle Kabasares - Probability and Statistics - Vertical residuals around a fitted line.png|**Fig. 76** Vertical deviations from the line $y=\alpha+\beta x$ are the residuals whose squares are summed.]]
+![[Kyle Kabasares - Probability and Statistics - Vertical residuals around a fitted line.png|**Fig. 76** Vertical deviations from the line $y=\beta_0+\beta x$ are the residuals whose squares are summed.]]
 
-Setting $\partial S/\partial\alpha=0$ and $\partial S/\partial\beta=0$ yields a system of linear equations. After fitting the line, estimate the error standard deviation by
+Setting $\partial S/\partial\beta_0=0$ and $\partial S/\partial\beta=0$ yields a system of linear equations. After fitting the line, estimate the error standard deviation by
 
 $$
-\hat\sigma=\sqrt{\frac1{n-2}\sum_{i=1}^n(y_i-(\hat\alpha+\hat\beta x_i))^2}.
+\hat\sigma=\sqrt{\frac1{n-2}\sum_{i=1}^n(y_i-(\hat\beta_0+\hat\beta x_i))^2}.
 $$
 
 The residual degrees of freedom are $n-2$, the number of observations minus the two fitted regression parameters. The lecture proposes minimizing cross-validation error to choose a model and address overfitting and underfitting.
@@ -96,7 +96,7 @@ The page begins with item 2, a regression model through the origin, $Y_i=\beta x
 
 Many inference problems fall into one of three categories, point estimation, confidence intervals, and hypothesis testing.
 
-A $(1-\alpha)$ confidence interval for $\theta$ has the form $C_n=(a,b)$, where $a=a(X_1,\ldots,X_n)$ and $b=b(X_1,\ldots,X_n)$ depend on the data. Its coverage satisfies $P_\theta(\theta\in C_n)\ge 1-\alpha$ for every $\theta\in\Theta$. For a procedure with exact $95\%$ coverage, $95\%$ of intervals constructed in repeated experiments contain the parameter.
+A $(1-\alpha)$ confidence interval for $\theta$ has the form $C_n=(\ell,u)$, where $\ell=\ell(X_1,\ldots,X_n)$ and $u=u(X_1,\ldots,X_n)$ depend on the data. Its coverage satisfies $P_\theta(\theta\in C_n)\ge 1-\alpha$ for every $\theta\in\Theta$. For a procedure with exact $95\%$ coverage, $95\%$ of intervals constructed in repeated experiments contain the parameter.
 
 ##### Normal-based confidence intervals
 
@@ -219,6 +219,14 @@ E_1=n\hat p_1=30.95,\qquad E_2=n\hat p_2=14.85,\qquad E_3=n\hat p_3=4.20.
 $$
 
 The $p$-value is the upper-tail probability for the observed goodness-of-fit statistic under the null reference distribution.
+
+Here $\mu$ is estimated from the data, so the reference distribution loses one more degree of freedom. With $k=3$ categories, it is $\chi^2_{k-1-1}=\chi^2_1$. The observed statistic is
+
+$$
+T=\frac{(32-30.95)^2}{30.95}+\frac{(12-14.85)^2}{14.85}+\frac{(6-4.20)^2}{4.20}\approx1.35.
+$$
+
+Thus $p=P(\chi^2_1\ge1.35)\approx0.24$, and the test does not reject the Poisson model at the $5\%$ level. The expected count $E_3=4.20$ is less than $5$, so the chi-square approximation is only rough.
 
 ## Source
 

@@ -36,19 +36,19 @@ The bath derivative with respect to $N$ is $-\energy{\mu}/(\thermal{k}_{\mathrm 
 
 ##### Repeated notes on quantum spins
 
-The lower half repeats the magnetic moment and angular momentum relations for spin-$1/2$ particles and the energy $\energy{E}=-\magnetic{\mu}\magnetic{H}(n_\uparrow-n_\downarrow)$. The two orientations give $\ln Z_N=N\ln[2\cosh(\thermal{\beta}\magnetic{\mu}\magnetic{H})]$ and
+The lower half repeats the magnetic moment and angular momentum relations for spin-$1/2$ particles and the energy $\energy{E}=-\magnetic{\mu}\magnetic{B}(n_\uparrow-n_\downarrow)$. The notebook writes the field as $H$. This note writes $\magnetic{B}$ to avoid a clash with the Hamiltonian $\energy{H}$. The two orientations give $\ln Z_N=N\ln[2\cosh(\thermal{\beta}\magnetic{\mu}\magnetic{B})]$ and
 
 $$
-\langle\energy{E}\rangle=-N\magnetic{\mu}\magnetic{H}\tanh(\thermal{\beta}\magnetic{\mu}\magnetic{H}),
+\langle\energy{E}\rangle=-N\magnetic{\mu}\magnetic{B}\tanh(\thermal{\beta}\magnetic{\mu}\magnetic{B}),
 \qquad
-\frac{\magnetic{M}_z}{N}=\magnetic{\mu}\tanh(\thermal{\beta}\magnetic{\mu}\magnetic{H}).
+\frac{\magnetic{M}_z}{N}=\magnetic{\mu}\tanh(\thermal{\beta}\magnetic{\mu}\magnetic{B}).
 $$
 
-The last line again recalls the $1/\sqrt N$ factor in the relative standard deviation. The mean-energy line here omits the factor $\magnetic{H}$, and the fluctuation line again shows the squared hyperbolic sine. The derivatives and corrected forms are on [[Classical canonical gases and spin magnetization#Quantum spins|the section on Quantum spins]].
+The last line again recalls the $1/\sqrt N$ factor in the relative standard deviation. The mean-energy line here omits the field factor $\magnetic{B}$, and the fluctuation line again shows the squared hyperbolic sine. The derivatives and corrected forms are on [[Classical canonical gases and spin magnetization#Quantum spins|the section on Quantum spins]].
 
 For the two-state spin model, $\magnetic{\chi}$ tends to $N\magnetic{\mu}^2/(\thermal{k}_{\mathrm B}\thermal{T})$ at zero field. The finite-field expression follows from the derivative of $\tanh x$ on [[Classical canonical gases and spin magnetization#Quantum spins|the section on Quantum spins]]. The handwritten denominator here is unclear.
 
-With $x=\thermal{\beta}\magnetic{\mu}\magnetic{H}$, the free energy and entropy are
+With $x=\thermal{\beta}\magnetic{\mu}\magnetic{B}$, the free energy and entropy are
 
 $$
 \begin{aligned}
@@ -66,25 +66,25 @@ At fixed positive field and low temperature, $\thermal{S}\sim N\thermal{k}_{\mat
 For the canonical ensemble, $\energy{A}=-\thermal{\beta}^{-1}\ln Z$. The corresponding grand canonical potential uses the grand partition function $\Xi$.
 
 $$
-\energy{\Omega}(\thermal{T},\mechanical{V},\energy{\mu})
+\energy{\Phi}(\thermal{T},\mechanical{V},\energy{\mu})
 =-\frac{1}{\thermal{\beta}}\ln\Xi,\qquad
-\Xi=e^{-\thermal{\beta}\energy{\Omega}}.
+\Xi=e^{-\thermal{\beta}\energy{\Phi}}.
 $$
 
-Here $\energy{\Omega}$ is an energy, distinct from the state count $\Omega$. The notebook mentions that Feynman uses $g$ for this potential. The normalized density operator obeys
+The notebook writes $\Omega$ for this potential. This note writes $\energy{\Phi}$, as in [[05.09 Summary]], to keep it distinct from the state count $\Omega$. The notebook mentions that Feynman uses $g$ for this potential. The normalized density operator obeys
 
 $$
-\ln\hat\rho=\thermal{\beta}\energy{\Omega}\mathbb{1}
+\ln\hat\rho=\thermal{\beta}\energy{\Phi}\mathbb{1}
 +\thermal{\beta}\energy{\mu}\hat N-\thermal{\beta}\energy{\hat H},
 $$
 
 with hats denoting operators. Substituting into $\thermal{S}=-\thermal{k}_{\mathrm B}\operatorname{Tr}(\hat\rho\ln\hat\rho)$ and using $\operatorname{Tr}\hat\rho=1$ gives
 
 $$
-\thermal{S}=-\frac{\energy{\Omega}+\energy{\mu}\langle N\rangle-\langle\energy{E}\rangle}{\thermal{T}}.
+\thermal{S}=-\frac{\energy{\Phi}+\energy{\mu}\langle N\rangle-\langle\energy{E}\rangle}{\thermal{T}}.
 $$
 
-Rearranging yields $\energy{\Omega}=\langle\energy{E}\rangle-\thermal{T}\thermal{S}-\energy{\mu}\langle N\rangle=\energy{A}-\energy{\mu}\langle N\rangle$. For a homogeneous extensive system the equation of state is $\energy{\Omega}=-\mechanical{P}\mechanical{V}$.
+Rearranging yields $\energy{\Phi}=\langle\energy{E}\rangle-\thermal{T}\thermal{S}-\energy{\mu}\langle N\rangle=\energy{A}-\energy{\mu}\langle N\rangle$. For a homogeneous extensive system the equation of state is $\energy{\Phi}=-\mechanical{P}\mechanical{V}$.
 
 The grand canonical weight for a microstate with energy $\energy{E}$ and particle count $N$ is the Boltzmann factor times $e^{\thermal{\beta}\energy{\mu}N}$. The normalized probability is
 
@@ -127,7 +127,7 @@ $$
 \left(\frac{\partial\ln\Xi}{\partial\thermal{\beta}}\right)_{\mu,V}.
 $$
 
-The chemical potential sets the mean count. The grand potential $\energy{\Omega}=-\thermal{\beta}^{-1}\ln\Xi=-\mechanical{P}\mechanical{V}$ gives the equation of state.
+The chemical potential sets the mean count. The grand potential $\energy{\Phi}=-\thermal{\beta}^{-1}\ln\Xi=-\mechanical{P}\mechanical{V}$ gives the equation of state.
 
 To compute $\Xi$ for the ideal gas, choose states of definite $N$, then sum over $N$. The canonical factor for $N$ identical particles in the dilute classical limit is the product of Gaussian momentum integrals and position integrals, divided by $N!$.
 
@@ -245,7 +245,7 @@ When $\langle n(\energy{E})\rangle\ll1$, the denominator on the right is close t
 
 ##### Fermions
 
-The page gives the dates Fermi (1925) and Dirac (1926). Identical fermions have an antisymmetric wavefunction under exchange of their full particle coordinates, including spin when relevant. In the spatial notation of the page,
+The page gives the dates Fermi (1925) and Dirac (1926). Fermi published his statistics in 1926. Identical fermions have an antisymmetric wavefunction under exchange of their full particle coordinates, including spin when relevant. In the spatial notation of the page,
 
 $$
 \psi(\mechanical{\vec r}_1,\mechanical{\vec r}_2)
@@ -292,7 +292,7 @@ For fermions, the review repeats the mean occupation $[e^{\thermal{\beta}(\energ
 
 For identical particles, interchanging the labels leaves the Hamiltonian invariant. If $\energy{\hat H}(1,2)\psi(1,2)=\energy{E}\psi(1,2)$, then the exchanged function $\psi(2,1)$ also solves the eigenvalue equation at $\energy{E}$. Choose a state with definite exchange symmetry and write $\psi(1,2)=\lambda\psi(2,1)$, where $\lambda=e^{i\alpha}$. Exchanging twice gives $\lambda^2=1$, so $\lambda=+1$ for a symmetric state or $\lambda=-1$ for an antisymmetric state.
 
-Bosons have integer spin and fermions have half-integer spin. The notebook attributes the spin–statistics theorem to Pauli and labels it a result of quantum field theory. The date written on this page is 1944, while the earlier historical outline gives about 1941.
+Bosons have integer spin and fermions have half-integer spin. The notebook attributes the spin–statistics theorem to Pauli and labels it a result of quantum field theory. The date written on this page is 1944, while the earlier historical outline gives about 1941. Pauli published the theorem in 1940 (Phys. Rev. 58, 716).
 
 ##### Gases with interactions or internal degrees of freedom
 
@@ -321,36 +321,29 @@ Kyle Kabasares, *Thermodynamics and Statistical Mechanics (Chem 232A - Physics 2
 | $\mechanical{\vec r}$, $\mechanical{\vec x}$ | $\unit{m}$ | Position | Spatial position on a particle trajectory. |
 | $\mechanical{\vec p}$ | $\unit{kg\,m\,s^{-1}}$ | Momentum | Particle momentum, which changes sign under time reversal. |
 | $\mechanical{V}$ | $\unit{m^3}$ | Volume | Spatial extent of a simple system. |
-| $\mechanical{P}$, $\mechanical{P}_{\mathrm{int}}$, $\mechanical{P}_{\mathrm{ext}}$ | $\unit{Pa}$ | Pressure | Force per unit area, including the internal and applied external pressure at the piston. |
-| $n$ | $\unit{mol}$ | Amount of substance | Number of moles in the gas. |
-| $\energy{H}$ | $\unit{J}$ | Enthalpy or Hamiltonian | Internal energy plus the pressure–volume product in thermodynamics. In mechanics and ensemble weights, the Hamiltonian. |
+| $\mechanical{P}$ | $\unit{Pa}$ | Pressure | Force per unit area in the equation of state. |
+| $\energy{H}$ | $\unit{J}$ | Hamiltonian | Classical energy function of a molecule. |
 | $\energy{E}$ | $\unit{J}$ | Energy | Microscopic energy that enters the Boltzmann weight. |
 | $\thermal{\beta}$ | $\unit{J^{-1}}$ | Inverse thermal energy | Reciprocal of Boltzmann's constant times the absolute temperature. |
-| $\mechanical{q}_i$, $\mechanical{p}_i$ | — | Generalized coordinates and momenta | Conjugate variables that specify a phase-space point. Their units depend on the coordinates. |
-| $\energy{F}$, $\energy{A}$ | $\unit{J}$ | Helmholtz free energy | Canonical thermodynamic potential obtained from the partition function. |
+| $\energy{A}$ | $\unit{J}$ | Helmholtz free energy | Canonical thermodynamic potential obtained from the partition function. |
 | $Z$ | 1 | Partition function | Sum of the Boltzmann weights of the accessible states. |
-| $n$ | $\unit{m^{-3}}$ | Number density | Particle count per unit volume. |
 | $n_i$ | 1 | Occupation number | Number of particles in a given energy level. |
 | $\energy{\mu}$ | $\unit{J}$ per particle | Chemical potential | Intensive energy variable conjugate to particle number. |
-| $\Omega$ | 1 | Multiplicity | Number of accessible microstates, including the cumulative count in the ideal-gas calculation. |
-| $\mechanical{c}$ | $\unit{m\,s^{-1}}$ | Speed of light | Propagation speed in the photon spectrum formula. |
+| $\Omega$ | 1 | Multiplicity | Number of accessible microstates of a subsystem or the bath. |
+| $\mechanical{c}$ | $\unit{m\,s^{-1}}$ | Speed of light | Constant in the rest energy and in the thermal-wavelength estimate. |
 | $\signal{\lambda}_{\mathrm{th}}$ | $\unit{m}$ | Thermal de Broglie wavelength | Wavelength scale for a particle of the given mass at the absolute temperature. |
 | $\hat\rho$ | 1 | Density matrix | Quantum statistical state with trace equal to one. |
 | $\energy{V}_{ij}$ | $\unit{J}$ | Pair potential energy | Contribution to the Hamiltonian from the interaction of particles $i$ and $j$. |
 | $\magnetic{\mu}$, $\magnetic{\vec\mu}$ | $\unit{J\,T^{-1}}$ | Magnetic dipole moment | Moment of an individual spin. |
-| $\magnetic{H}$, $\magnetic{\vec H}$ | $\unit{T}$ in this convention | Applied magnetic field | Field entering the dipole energy in the notebook's notation. |
+| $\magnetic{B}$ | $\unit{T}$ | Applied magnetic field | Field entering the dipole energy. The notebook writes $H$. |
 | $\magnetic{M}$, $\magnetic{M}_z$ | $\unit{J\,T^{-1}}$ | Total moment along the field | Sum of the mean field-aligned moment components. |
 | $\magnetic{\chi}$ | $\unit{J\,T^{-2}}$ in this convention | Magnetic susceptibility | Response of the total moment to a change in the applied field. |
-| $g$ | 1 | Landé factor | Proportionality factor relating angular momentum and magnetic moment. |
 | $\mechanical{I}$ | $\unit{kg\,m^2}$ | Moment of inertia | Rotational inertia determining the spacing of rotor levels. |
 | $\Xi$ | 1 | Grand partition function | Normalizes the weights over energy states and particle numbers. |
-| $\energy{\Omega}$ | $\unit{J}$ | Grand potential | Legendre transform of Helmholtz free energy with respect to particle number. |
+| $\energy{\Phi}$ | $\unit{J}$ | Grand potential | Legendre transform of Helmholtz free energy with respect to particle number. |
 | $\hat N$ | 1 | Number operator | Operator whose eigenvalue is the particle count in a number state. |
 | $z$ | 1 | Fugacity | Exponential of the chemical potential divided by the thermal energy. |
 | $\energy{E}_{\mathrm F}$ | $\unit{J}$ or $\unit{eV}$ | Fermi energy | Zero-temperature energy at the edge of the filled one-particle states. |
 | $\mechanical{M}$ | $\unit{kg}$ | Molecular mass | Sum of the constituent particle masses. |
 | $\energy{H}_{\mathrm{int}}$ | $\unit{J}$ | Internal Hamiltonian | Energy of the molecular degrees of freedom after separating center-of-mass motion. |
-| $j$ | 1 | Internal partition function | Sum over molecular states other than translation. |
-| $g$ | 1 | Internal degeneracy | Number of internal states per momentum state. |
-| $\alpha$ | $1$ | Fine-structure constant | Electromagnetic coupling used in the photon scattering estimate. |
-| $\mechanical{M}$ | $\unit{kg}$ | Stellar mass | Mass interior to a shell or total mass, as indicated by the argument. |
+| $\alpha$ | $\unit{rad}$ | Exchange phase | Phase of the factor $\lambda=e^{i\alpha}$ under particle exchange. |

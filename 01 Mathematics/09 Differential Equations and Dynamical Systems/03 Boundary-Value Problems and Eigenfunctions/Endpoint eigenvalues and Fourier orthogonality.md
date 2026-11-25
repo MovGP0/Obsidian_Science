@@ -389,12 +389,11 @@ Kyle Kabasares, *Intermediate Ordinary Differential Equations (Math 125, UC Merc
 
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
-| $\mechanical{m}$ | $\unit{kg}$ | Mass | Mass of the vibrating body or of a slice of the conducting rod. |
-| $\mechanical{x}$ | $\unit{m}$ | Displacement or spatial coordinate | Position relative to equilibrium in the oscillator or distance along the wave and heat models. |
+| $\mechanical{m}$ | $\unit{kg}$ | Mass | Mass of the vibrating body. |
+| $\mechanical{x}$ | $\unit{m}$ | Displacement | Position relative to equilibrium in the forced oscillator. |
 | $\mechanical{c}$ | $\unit{N\,s\,m^{-1}}$ | Viscous damping coefficient | Proportionality between velocity and damping force. |
 | $\mechanical{k}$ | $\unit{N\,m^{-1}}$ | Spring constant | Proportionality between displacement and restoring force. |
 | $\mechanical{F}$ | $\unit{N}$ | Driving-force amplitude | Magnitude of the sinusoidal force coefficient. |
 | $\signal{\omega}$ | $\unit{rad\,s^{-1}}$ | Driving angular frequency | Rate of change of the driving phase. |
-| $\signal{t}$ | $\unit{s}$ | Time | Independent variable in the vibration and heat models. |
+| $\signal{t}$ | $\unit{s}$ | Time | Independent variable in the vibration model. |
 | $\signal{A}$ | $\unit{m}$ | Response amplitude | Displacement coefficient of the sinusoidal response. |
-| $\mechanical{c}$ | $\unit{m\,s^{-1}}$ | Wave speed | Coefficient whose square multiplies the second spatial derivative in the wave equation. |

@@ -10,15 +10,15 @@ title: "Maxwell equations, retarded potentials, and conservation"
 Match the uniform field at infinity and require regularity at the origin.
 
 $$
-C\mechanical{r}Y_{10}=-\frac{\magnetic{B}_0}{\magnetic{\mu}_0}\mechanical{r}\cos\theta,
-\qquad B=0.
+a_{\mathrm{out}}\mechanical{r}Y_{10}=-\frac{\magnetic{B}_0}{\magnetic{\mu}_0}\mechanical{r}\cos\theta,
+\qquad b_{\mathrm{in}}=0.
 $$
 
 The continuity of $\magnetic{B}_{\perp}$ at $\mechanical{R}$ gives
 
 $$
-\magnetic{\mu}_0\left(C-\frac{2D}{\mechanical{R}^3}\right)
-=\magnetic{\mu}\left(A-\frac{2B}{\mechanical{R}^3}\right).
+\magnetic{\mu}_0\left(a_{\mathrm{out}}-\frac{2b_{\mathrm{out}}}{\mechanical{R}^3}\right)
+=\magnetic{\mu}\left(a_{\mathrm{in}}-\frac{2b_{\mathrm{in}}}{\mechanical{R}^3}\right).
 $$
 
 Solving these conditions with the tangential condition on [[Magnetic materials, bound currents, and interface problems#Magnetostatics in media|the section on Magnetostatics in media ·]] gives a uniform induced magnetization. In the result, $\magnetic{\mathbf B}_0$ denotes the applied field far from the sphere.
@@ -233,13 +233,13 @@ $$
 
 ##### Infinite wire with a linearly increasing current
 
-Now let the current grow linearly after switch-on. The handwritten $\circuit{I}_0$ in this example is a slope with units of current per time.
+Now let the current grow linearly after switch-on. Write the rate of increase of the current as $\dot{\circuit{I}}_0$, in $\unit{A\,s^{-1}}$. The handwriting uses $\circuit{I}_0$ for this slope.
 
 $$
 \circuit{\mathbf J}(\mechanical{\mathbf x},t)
 =\begin{cases}
 0,&t<0,\\
-\circuit{I}_0 t\,\delta(\mechanical{x})\delta(\mechanical{y})\hat{\mathbf z},&t>0.
+\dot{\circuit{I}}_0 t\,\delta(\mechanical{x})\delta(\mechanical{y})\hat{\mathbf z},&t>0.
 \end{cases}
 $$
 
@@ -251,7 +251,7 @@ Insert the current density in the retarded vector-potential formula. Integrating
 
 $$
 \magnetic{\mathbf A}(\mechanical{\mathbf x},t)
-=\frac{\magnetic{\mu}_0\circuit{I}_0}{4\pi}\hat{\mathbf z}
+=\frac{\magnetic{\mu}_0\dot{\circuit{I}}_0}{4\pi}\hat{\mathbf z}
 \int_{-\infty}^{\infty}d\mechanical{z}'\int_0^\infty dt'\,
 \frac{t'\,\delta(t-t'-s/c)}{s}.
 $$
@@ -266,7 +266,7 @@ For $t>\mechanical{a}/c$, the ramp-current result is
 
 $$
 \magnetic{\mathbf A}(\mechanical{\mathbf x},t)=
-\frac{\magnetic{\mu}_0\circuit{I}_0}{4\pi}\hat{\mathbf z}
+\frac{\magnetic{\mu}_0\dot{\circuit{I}}_0}{4\pi}\hat{\mathbf z}
 \int_{-\sqrt{c^2t^2-\mechanical{a}^2}}^{\sqrt{c^2t^2-\mechanical{a}^2}}
 \frac{t-\sqrt{\mechanical{a}^2+(\mechanical{z}')^2}/c}{\sqrt{\mechanical{a}^2+(\mechanical{z}')^2}}
 \,d\mechanical{z}'.
@@ -355,6 +355,8 @@ Kyle Kabasares, *Electrodynamics (Physics 213A, UC Irvine 2018)*.
 | $\magnetic{\mathbf A}$ | $\unit{T\,m}$ | Magnetic vector potential | Potential whose curl yields the magnetic flux density. |
 | $\magnetic{\Phi}_{\mathrm B}$ | $\unit{Wb}$ | Magnetic flux | Integral of magnetic flux density through an oriented surface. |
 | $\electric{\Phi}_{\mathrm E}$ | $\unit{V\,m}$ | Electric flux | Integral of electric field through an oriented surface. |
+| $\circuit{I}_0$ | $\unit{A}$ | Switched current | Constant wire current after the switch-on at $t=0$. |
+| $\dot{\circuit{I}}_0$ | $\unit{A\,s^{-1}}$ | Current ramp rate | Rate of increase of the wire current after switch-on. |
 | $\energy{\mathbf S}$ | $\unit{W\,m^{-2}}$ | Poynting vector | Electromagnetic energy flux density. |
 | $\mechanical{\mathbf g}$ | $\unit{kg\,m^{-2}\,s^{-1}}$ | Electromagnetic momentum density | Field momentum per unit volume. |
 | $\mechanical{T}_{ij}$ | $\unit{N\,m^{-2}}$ | Maxwell stress tensor | Tensor entering the field momentum balance. |

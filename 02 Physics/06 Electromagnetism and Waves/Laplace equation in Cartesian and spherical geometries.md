@@ -46,7 +46,7 @@ $$
 +\int\frac{dk}{2\pi}\,b(k)\cos(kx).
 $$
 
-For a potential periodic in $x$ with period $a$, the wave numbers are discrete, $k_n=2\pi n/a$. If the potential also depends on $y$, the Fourier coefficients can depend on $y$,
+For a potential periodic in $x$ with period $\Lambda$, the wave numbers are discrete, $k_n=2\pi n/\Lambda$. If the potential also depends on $y$, the Fourier coefficients can depend on $y$,
 
 $$
 \electric{\phi}(x,y)
@@ -171,15 +171,15 @@ $$
 \Delta_\Omega=
 \frac{1}{\sin\theta}\frac{\partial}{\partial\theta}
 \left(\sin\theta\frac{\partial}{\partial\theta}\right)
-+\frac{1}{\sin^2\theta}\frac{\partial^2}{\partial\phi^2}.
++\frac{1}{\sin^2\theta}\frac{\partial^2}{\partial\varphi^2}.
 $$
 
-The spherical harmonics $Y_{\ell m}(\theta,\phi)$ supply a complete angular basis, analogous to the sine and cosine modes in Cartesian coordinates. They satisfy $\Delta_\Omega Y_{\ell m}=-\ell(\ell+1)Y_{\ell m}$, so $\ell(\ell+1)$ is the positive separation constant. Expand
+The spherical harmonics $Y_{\ell m}(\theta,\varphi)$ supply a complete angular basis, analogous to the sine and cosine modes in Cartesian coordinates. They satisfy $\Delta_\Omega Y_{\ell m}=-\ell(\ell+1)Y_{\ell m}$, so $\ell(\ell+1)$ is the positive separation constant. Expand
 
 $$
-\electric{\phi}(\mechanical{r},\theta,\phi)
+\electric{\phi}(\mechanical{r},\theta,\varphi)
 =\sum_{\ell=0}^{\infty}\sum_{m=-\ell}^{\ell}
-R_{\ell m}(\mechanical{r})Y_{\ell m}(\theta,\phi).
+R_{\ell m}(\mechanical{r})Y_{\ell m}(\theta,\varphi).
 $$
 
 Substitution into Laplace's equation gives one radial equation per harmonic,
@@ -194,11 +194,11 @@ The harmonics may be chosen orthonormal,
 
 $$
 \int_0^{2\pi}\!\!\int_0^\pi
-Y_{\ell m}(\theta,\phi)Y_{\ell' m'}^*(\theta,\phi)
-\sin\theta\,d\theta\,d\phi=\delta_{\ell\ell'}\delta_{mm'}.
+Y_{\ell m}(\theta,\varphi)Y_{\ell' m'}^*(\theta,\varphi)
+\sin\theta\,d\theta\,d\varphi=\delta_{\ell\ell'}\delta_{mm'}.
 $$
 
-The azimuthal derivative $\partial_\phi$ commutes with $\Delta_\Omega$. Choose simultaneous eigenfunctions with $\partial_\phi f=imf$. Then $f(\theta,\phi)=e^{im\phi}g(\theta)$, and single-valuedness under $\phi\mapsto\phi+2\pi$ requires integer $m$. The angular eigenvalue equation $\Delta_\Omega f=\lambda f$ reduces to
+The azimuthal derivative $\partial_\varphi$ commutes with $\Delta_\Omega$. Choose simultaneous eigenfunctions with $\partial_\varphi f=imf$. Then $f(\theta,\varphi)=e^{im\varphi}g(\theta)$, and single-valuedness under $\varphi\mapsto\varphi+2\pi$ requires integer $m$. The angular eigenvalue equation $\Delta_\Omega f=\lambda f$ reduces to
 
 $$
 \frac{1}{\sin\theta}\frac{d}{d\theta}
@@ -209,8 +209,8 @@ $$
 Regularity at both poles selects the allowed eigenvalues. For $m=0$, substitute a power series in $\cos\theta$. The coefficient recursion gives a regular polynomial when the series terminates, with $\lambda=-\ell(\ell+1)$ and $g$ proportional to the Legendre polynomial $P_\ell(\cos\theta)$. For nonzero $m$, the corresponding angular functions are the associated Legendre functions $P_\ell^m(\cos\theta)$.
 
 $$
-Y_{\ell m}(\theta,\phi)
-=N_{\ell m}e^{im\phi}P_\ell^m(\cos\theta),
+Y_{\ell m}(\theta,\varphi)
+=N_{\ell m}e^{im\varphi}P_\ell^m(\cos\theta),
 \qquad
 \ell=0,1,\ldots,\quad m=-\ell,\ldots,\ell.
 $$
@@ -222,12 +222,12 @@ The first-degree harmonics in the convention of the notes are
 $$
 \begin{aligned}
 Y_{10}&=\sqrt{\frac{3}{4\pi}}\cos\theta,\\
-Y_{11}&=-\sqrt{\frac{3}{8\pi}}\,e^{i\phi}\sin\theta,\\
-Y_{1,-1}&=\sqrt{\frac{3}{8\pi}}\,e^{-i\phi}\sin\theta.
+Y_{11}&=-\sqrt{\frac{3}{8\pi}}\,e^{i\varphi}\sin\theta,\\
+Y_{1,-1}&=\sqrt{\frac{3}{8\pi}}\,e^{-i\varphi}\sin\theta.
 \end{aligned}
 $$
 
-The exponent for $m=-1$ follows from the $e^{im\phi}$ convention on the preceding page. The recap emphasizes completeness, orthonormality, $\Delta_\Omega Y_{\ell m}=-\ell(\ell+1)Y_{\ell m}$, and $\partial_\phi^2Y_{\ell m}=-m^2Y_{\ell m}$.
+The exponent for $m=-1$ follows from the $e^{im\varphi}$ convention on the preceding page. The recap emphasizes completeness, orthonormality, $\Delta_\Omega Y_{\ell m}=-\ell(\ell+1)Y_{\ell m}$, and $\partial_\varphi^2Y_{\ell m}=-m^2Y_{\ell m}$.
 
 ##### Sphere held at constant potential
 
@@ -246,24 +246,24 @@ In the exterior, $\electric{\phi}\to0$ at infinity requires $A_{\ell m}=0$. On t
 
 $$
 \sum_{\ell,m}\frac{B_{\ell m}}{\mechanical{R}^{\ell+1}}
-Y_{\ell m}(\theta,\phi)=\electric{V}_0.
+Y_{\ell m}(\theta,\varphi)=\electric{V}_0.
 $$
 
-For a prescribed boundary potential $\electric{V}(\theta,\phi)$, project onto the orthonormal spherical harmonics,
+For a prescribed boundary potential $\electric{V}(\theta,\varphi)$, project onto the orthonormal spherical harmonics,
 
 $$
 \frac{B_{\ell m}}{\mechanical{R}^{\ell+1}}
-=\int_{S^2}\electric{V}(\theta,\phi)Y_{\ell m}^*(\theta,\phi)\,d\Omega.
+=\int_{S^2}\electric{V}(\theta,\varphi)Y_{\ell m}^*(\theta,\varphi)\,d\Omega.
 $$
 
 A constant boundary value $\electric{V}_0=\electric{V}_0\sqrt{4\pi}\,Y_{00}$ leaves only $B_{00}=\mechanical{R}\electric{V}_0\sqrt{4\pi}$. The exterior potential is $\electric{\phi}=\electric{V}_0\mechanical{R}/\mechanical{r}$.
 
-For $\electric{V}(\theta,\phi)=\electric{V}_0\cos\theta$, the boundary data are $\electric{V}_0\sqrt{4\pi/3}\,Y_{10}$. Only $B_{10}=\mechanical{R}^2\electric{V}_0\sqrt{4\pi/3}$ survives, so
+For $\electric{V}(\theta,\varphi)=\electric{V}_0\cos\theta$, the boundary data are $\electric{V}_0\sqrt{4\pi/3}\,Y_{10}$. Only $B_{10}=\mechanical{R}^2\electric{V}_0\sqrt{4\pi/3}$ survives, so
 
 $$
-\electric{\phi}(\mechanical{r},\theta,\phi)
+\electric{\phi}(\mechanical{r},\theta,\varphi)
 =\electric{V}_0\sqrt{\frac{4\pi}{3}}
-\frac{\mechanical{R}^2}{\mechanical{r}^2}Y_{10}(\theta,\phi)
+\frac{\mechanical{R}^2}{\mechanical{r}^2}Y_{10}(\theta,\varphi)
 =\electric{V}_0\left(\frac{\mechanical{R}}{\mechanical{r}}\right)^2\cos\theta.
 $$
 
@@ -340,16 +340,16 @@ The residual second integral has lower limit $\mechanical{a}$ because only the c
 
 ##### Spherical boundary-value recap
 
-Expand $\electric{\phi}=\sum_{\ell,m}R_{\ell m}(\mechanical{r})Y_{\ell m}(\theta,\phi)$ in orthonormal spherical harmonics. In a charge-free region the radial coefficients are $A_{\ell m}\mechanical{r}^\ell+B_{\ell m}\mechanical{r}^{-\ell-1}$. Outside a sphere with potential tending to zero at infinity, retain the decaying terms. Matching to the surface data $\electric{V}(\theta,\phi)$ at $\mechanical{r}=\mechanical{R}$ gives
+Expand $\electric{\phi}=\sum_{\ell,m}R_{\ell m}(\mechanical{r})Y_{\ell m}(\theta,\varphi)$ in orthonormal spherical harmonics. In a charge-free region the radial coefficients are $A_{\ell m}\mechanical{r}^\ell+B_{\ell m}\mechanical{r}^{-\ell-1}$. Outside a sphere with potential tending to zero at infinity, retain the decaying terms. Matching to the surface data $\electric{V}(\theta,\varphi)$ at $\mechanical{r}=\mechanical{R}$ gives
 
 $$
 \frac{B_{\ell m}}{\mechanical{R}^{\ell+1}}
-=\int_{S^2}\electric{V}(\theta,\phi)Y_{\ell m}^*(\theta,\phi)\,d\Omega.
+=\int_{S^2}\electric{V}(\theta,\varphi)Y_{\ell m}^*(\theta,\varphi)\,d\Omega.
 $$
 
 ![[Kyle Kabasares - Electrodynamics - General Dirichlet data on a sphere.png|**Fig. 57** The angular function on the sphere specifies the Dirichlet data.]]
 
-If the boundary data are a linear combination of a few spherical harmonics, orthogonality gives the coefficients directly. The example takes $\electric{V}(\theta,\phi)=\electric{V}_0\cos^2\theta$, so the remaining series at the surface must sum to that function.
+If the boundary data are a linear combination of a few spherical harmonics, orthogonality gives the coefficients directly. The example takes $\electric{V}(\theta,\varphi)=\electric{V}_0\cos^2\theta$, so the remaining series at the surface must sum to that function.
 
 ![[Kyle Kabasares - Electrodynamics - Spherical boundary with cosine-squared potential.png|**Fig. 58** The imposed angular dependence in the example is proportional to $\cos^2\theta$.]]
 
@@ -363,4 +363,5 @@ Kyle Kabasares, *Electrodynamics (Physics 213A, UC Irvine 2018)*.
 | --- | --- | --- | --- |
 | $\electric{\phi}$ | $\unit{V}$ | Electrostatic potential | Potential energy per unit charge, defined up to a constant. |
 | $k_n$ | $\unit{m^{-1}}$ | Fourier wave number | Spatial frequency in radians per unit length for the periodic mode $n$. |
+| $\Lambda$ | $\unit{m}$ | Spatial period | Period of the potential along $x$ in the Fourier example. |
 | $\gamma_{mn}$ | $\unit{m^{-1}}$ | Cube mode rate | Magnitude of the two-dimensional wave vector setting the exponential dependence on height. |

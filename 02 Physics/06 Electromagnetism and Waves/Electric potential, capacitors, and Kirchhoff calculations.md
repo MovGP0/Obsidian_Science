@@ -86,12 +86,12 @@ $$
 
 Hold the other two coordinates constant in each partial derivative. The margin reads “It's so beautiful.”
 
-The worked line-integral example writes $\electric{\vec E}=(500\mechanical{x}\mechanical{y}^2\hat{\imath}+30\hat{\jmath})\,\unit{V\,m^{-1}}$ and gives the example displacement $\mathrm{d}\mechanical{\vec s}=5\,\mathrm{d}\mechanical{x}\,\hat{\imath}+3\,\mathrm{d}\mechanical{y}\,\hat{\jmath}+\mathrm{d}\mechanical{z}\,\hat{k}$. The dot product gives the two terms $2500\mechanical{x}\mechanical{y}^2\,\mathrm{d}\mechanical{x}$ and $90\,\mathrm{d}\mechanical{y}$. The final line treats $\mechanical{y}$ as fixed during the $x$ integral and uses
+The worked line-integral example writes $\electric{\vec E}=(500\mechanical{x}\mechanical{y}^2\hat{\imath}+30\hat{\jmath})\,\unit{V\,m^{-1}}$ and writes the displacement as $5\,\mathrm{d}\mechanical{x}\,\hat{\imath}+3\,\mathrm{d}\mechanical{y}\,\hat{\jmath}+\mathrm{d}\mechanical{z}\,\hat{k}$. That is not a displacement element. The correct element is $\mathrm{d}\mechanical{\vec s}=\mathrm{d}\mechanical{x}\,\hat{\imath}+\mathrm{d}\mechanical{y}\,\hat{\jmath}+\mathrm{d}\mechanical{z}\,\hat{k}$, so $\mathrm{d}\electric{V}=-\electric{\vec E}\cdot\mathrm{d}\mechanical{\vec s}=-500\mechanical{x}\mechanical{y}^2\,\mathrm{d}\mechanical{x}-30\,\mathrm{d}\mechanical{y}$. This field has $\nabla\times\electric{\vec E}=-1000\mechanical{x}\mechanical{y}\,\hat{k}\neq0$. Thus it is not an electrostatic field, and $\Delta\electric{V}$ depends on the path. The final line treats $\mechanical{y}$ as fixed during the $x$ integral. For the path that first goes from $x_i$ to $x_f$ at $\mechanical{y}=y_i$ and then from $y_i$ to $y_f$ at fixed $\mechanical{x}$,
 
 $$
 \Delta\electric{V}
-=-2500\mechanical{y}^2\int_{x_i}^{x_f}\mechanical{x}\,\mathrm{d}\mechanical{x}
--90\int_{y_i}^{y_f}\mathrm{d}\mechanical{y}.
+=-500y_i^2\int_{x_i}^{x_f}\mechanical{x}\,\mathrm{d}\mechanical{x}
+-30\int_{y_i}^{y_f}\mathrm{d}\mechanical{y}.
 $$
 
 The intermediate handwriting gives a positive line integral for $\Delta\electric{V}$. The last line uses the minus sign consistent with $\electric{\vec E}=-\nabla\electric{V}$. The notes say to determine the additive constant from the initial conditions. It cancels in $\Delta\electric{V}=\electric{V}(x_f)-\electric{V}(x_i)$.
@@ -144,7 +144,7 @@ The last factor is the volume between the plates.
 
 ##### Dielectrics
 
-A dielectric is a nonconducting material with dielectric constant $\electric{K}$ and permittivity $\electric{\varepsilon}=\electric{K}\electric{\varepsilon}_0$. The notes give $\electric{E}>3\times10^5\,\unit{V\,m^{-1}}$ as the air breakdown threshold. They describe ionization and conduction during breakdown, and say that dielectric materials can withstand a stronger field before they break down.
+A dielectric is a nonconducting material with dielectric constant $\electric{K}$ and permittivity $\electric{\varepsilon}=\electric{K}\electric{\varepsilon}_0$. The notes give $\electric{E}>3\times10^5\,\unit{V\,m^{-1}}$ as the air breakdown threshold. The accepted value for dry air is about $3\times10^6\,\unit{V\,m^{-1}}$. They describe ionization and conduction during breakdown, and say that dielectric materials can withstand a stronger field before they break down.
 
 ##### Molecular view
 
@@ -155,7 +155,7 @@ A dielectric is a nonconducting material with dielectric constant $\electric{K}$
 
 The free plate charge stays constant after disconnection. The field in the capacitor becomes smaller. The sketch shows leftward field arrows from the positive plate on the right to the negative plate on the left. The molecule diagram shows dipole moments aligned left, with positive bound charge on the left dielectric face and negative bound charge on the right.
 
-The field without the dielectric is written $\electric{E}_0=\electric{\eta}/\electric{\varepsilon}_0$. The separate entry for the induced field is written $\electric{E}_{\mathrm{induced}}=\electric{\eta}_{\mathrm{induced}}/\electric{\varepsilon}$. The arrows point $\electric{\vec E}_0$ left and $\electric{\vec E}_{\mathrm{induced}}$ right.
+The field without the dielectric is written $\electric{E}_0=\electric{\eta}/\electric{\varepsilon}_0$. The separate entry for the induced field is written with $\electric{\varepsilon}$ in the denominator. The bound surface charge makes its field in the same way as free charge in vacuum, so the correct form is $\electric{E}_{\mathrm{induced}}=\electric{\eta}_{\mathrm{induced}}/\electric{\varepsilon}_0$. The arrows point $\electric{\vec E}_0$ left and $\electric{\vec E}_{\mathrm{induced}}$ right.
 
 $$
 \electric{\vec E}_{\mathrm{net}}
@@ -380,45 +380,48 @@ Kyle Kabasares, *Electricity and Magnetism (Physics 9H, UC Merced 2014)*.
 
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
-| $\energy{U}$ | $\unit{J}$ | Electric potential energy | The interaction energy of the two charges. |
-| $\electric{\vec E}$ | $\unit{V\,m^{-1}}$ | Electric field | The electric force per unit test charge. |
-| $\electric{V}$ | $\unit{V}$ | Electric potential | The potential energy per unit test charge. |
-| $\electric{q}$, $\electric{q}_1$, $\electric{q}_2$ | $\unit{C}$ | Electric charge | The test or source charge in the electrostatic relations. |
-| $\mechanical{r}$ | $\unit{m}$ | Radial distance | The distance from a source, axis, or center. |
-| $\mechanical{x}$, $\mechanical{y}$, $\mechanical{z}$ | $\unit{m}$ | Position coordinates | The coordinates in the spatial derivatives. |
+| $\energy{U}$, $\Delta\energy{U}$, $\energy{U}_{\mathrm{source}}$ | $\unit{J}$ | Electric potential energy | The interaction energy of the charges or the energy stored in a capacitor. |
+| $\energy{U}_0$, $\energy{U}_{\mathrm{now}}$ | $\unit{J}$ | Capacitor energy | The stored energy before and after the dielectric is inserted. |
+| $\electric{\vec E}$, $\electric{E}_x$, $\electric{E}_y$, $\electric{E}_z$ | $\unit{V\,m^{-1}}$ | Electric field | The electric force per unit test charge and its components. |
+| $\electric{E}_0$, $\electric{\vec E}_0$ | $\unit{V\,m^{-1}}$ | Field without dielectric | The field between the plates from the free plate charge alone. |
+| $\electric{\vec E}_{\mathrm{induced}}$ | $\unit{V\,m^{-1}}$ | Induced field | The field of the bound surface charge on the dielectric faces. |
+| $\electric{\vec E}_{\mathrm{net}}$ | $\unit{V\,m^{-1}}$ | Net field | The field in the capacitor with the dielectric in place. |
+| $\electric{V}$, $\electric{V}_a$, $\electric{V}_b$ | $\unit{V}$ | Electric potential | The potential energy per unit test charge, or the voltage across a capacitor or source. |
+| $\Delta\electric{V}$, $\Delta\electric{V}_{ab}$, $\Delta\electric{V}_{bc}$, $\Delta\electric{V}_{ac}$ | $\unit{V}$ | Potential difference | The change in potential between two points. |
+| $\Delta\electric{V}_1$, $\Delta\electric{V}_2$, $\Delta\electric{V}_{\mathrm{bat}}$ | $\unit{V}$ | Series voltages | The voltages across the two series capacitors and across the battery. |
+| $\Delta\electric{V}_C$, $\Delta\electric{V}_R$, $\electric{V}_C$ | $\unit{V}$ | Element voltages | The potential changes across the capacitor and the resistor in the RC loop. |
+| $\Delta\electric{V}_0$, $\Delta\electric{V}_{\max}$ | $\unit{V}$ | Initial capacitor voltage | The capacitor voltage before discharge starts. |
+| $\electric{q}$, $\electric{q}_1$, $\electric{q}_2$ | $\unit{C}$ | Electric charge | The test or source charge, or the intermediate charge during charging. |
+| $\electric{Q}$, $\electric{Q}_1$, $\electric{Q}_2$, $\electric{Q}_{\mathrm{tot}}$ | $\unit{C}$ | Charge | The total disk charge, the plate charge of a capacitor, or the total charge in a parallel connection. |
+| $\electric{Q}_0$, $\electric{Q}_{\max}$ | $\unit{C}$ | Initial capacitor charge | The capacitor charge before discharge starts. |
+| $\mechanical{r}$ | $\unit{m}$ | Radial distance | The distance from a point charge or the radius of a ring on the disk. |
+| $\mechanical{x}$, $\mechanical{y}$, $\mechanical{z}$ | $\unit{m}$ | Position coordinates | The coordinates in the spatial derivatives and on the disk axis. |
 | $\electric{k}$ | $\unit{N\,m^2\,C^{-2}}$ | Coulomb constant | The coefficient in the inverse-square force law. |
 | $\electric{\varepsilon}_0$ | $\unit{F\,m^{-1}}$ | Vacuum permittivity | The constant that sets the strength of the electric interaction in vacuum. |
-| $\mechanical{d}$ | $\unit{m}$ | Separation or diameter | The separation of charges, plates, or slits, or the wire diameter. |
-| $\electric{e}$ | $\unit{C}$ | Elementary charge | The magnitude of the charge of an electron or proton. |
-| $\electric{Q}$ | $\unit{C}$ | Total charge | The charge distributed along the semicircular arc. |
-| $\theta$, $\mechanical{\theta}$ | $\unit{rad}$ | Angle | A geometric angle used in projections, polarization, and ray diagrams. |
-| $\mechanical{A}$ | $\unit{m^2}$ | Area | The area over which the surface charge is distributed. |
-| $\mechanical{V}$ | $\unit{m^3}$ | Volume | The volume over which the charge is distributed. |
-| $\electric{\eta}$, $\electric{\sigma}$ | $\unit{C\,m^{-2}}$ | Surface charge density | The charge per unit area. |
-| $\mechanical{R}$ | $\unit{m}$ | Radius | The radius of a sphere, disk, wire, or coil, or the radius of curvature of a mirror. |
-| $\electric{I}$, $\electric{I}_2$–$\electric{I}_6$ | $\unit{A}$ | Circuit currents | The current in the feed and each bridge branch. |
-| $\circuit{R}_1$–$\circuit{R}_6$ | $\unit{\Omega}$ | Resistances | The resistances of the six elements in the bridge. |
-| $\electric{V}_0$ | $\unit{V}$ | Source potential difference | The voltage across the source in the bridge sketch. |
+| $\mechanical{d}$ | $\unit{m}$ | Plate separation | The distance between the capacitor plates. |
+| $\electric{e}$ | $\unit{C}$ | Elementary charge | The magnitude of the charge of an electron. |
+| $\mechanical{A}$ | $\unit{m^2}$ | Area | The plate area of the capacitor or the cross-sectional area of the wire. |
+| $\mechanical{V}$ | $\unit{m^3}$ | Volume | The volume that contains the mobile electrons. |
+| $\electric{\eta}$ | $\unit{C\,m^{-2}}$ | Surface charge density | The free charge per unit area on the disk or plate. |
+| $\mechanical{R}$ | $\unit{m}$ | Disk radius | The radius of the charged disk. |
 | $\mathrm{d}\mechanical{\vec s}$ | $\unit{m}$ | Path displacement | The directed displacement element in the field integral. |
-| $\circuit{C}$ | $\unit{F}$ | Capacitance | The charge magnitude per unit voltage across a capacitor. |
-| $\electric{K}$ | 1 | Dielectric constant | The permittivity of the dielectric relative to vacuum. |
-| $\electric{\varepsilon}$ | $\unit{F\,m^{-1}}$ | Permittivity | The electric response parameter of a dielectric or transparent medium. |
-| $\electric{\eta}_{\mathrm{induced}}$ | $\unit{C\,m^{-2}}$ | Induced surface charge density | The bound charge per area on a dielectric face. |
+| $\circuit{C}$, $\circuit{C}_1$, $\circuit{C}_2$ | $\unit{F}$ | Capacitance | The charge magnitude per unit voltage across a capacitor. |
 | $\circuit{C}_{\mathrm{eq}}$ | $\unit{F}$ | Equivalent capacitance | The capacitance of a single element that gives the same terminal charge–voltage relation. |
+| $\electric{K}$, $\electric{K}_E$ | 1 | Dielectric constant | The permittivity of the dielectric relative to vacuum. |
+| $\electric{\varepsilon}$ | $\unit{F\,m^{-1}}$ | Permittivity | The permittivity of the dielectric. |
+| $\electric{\eta}_{\mathrm{induced}}$ | $\unit{C\,m^{-2}}$ | Induced surface charge density | The bound charge per area on a dielectric face. |
 | $\mechanical{v}_d$ | $\unit{m\,s^{-1}}$ | Drift speed | The mean directed speed of the charge carriers along the wire. |
+| $\Delta\mechanical{x}$ | $\unit{m}$ | Drift distance | The distance that the electrons drift in the time $\Delta t$. |
 | $\electric{i}_e$ | $\unit{s^{-1}}$ | Electron flow rate | The number of electrons crossing a section per second. |
 | $N_e$ | 1 | Electron count | The number of electrons in the specified volume. |
 | $n_e$ | $\unit{m^{-3}}$ | Electron number density | The number of mobile electrons per unit volume. |
-| $t$, $\signal{t}$, $\Delta\signal{t}$ | $\unit{s}$ | Time and elapsed time | The time coordinate or the duration of a process. |
+| $t$, $\Delta t$ | $\unit{s}$ | Time and elapsed time | The time coordinate or the duration of a process. |
 | $\electric{J}$ | $\unit{A\,m^{-2}}$ | Current density | The conventional current per unit cross-sectional area. |
 | $\electric{\sigma}$ | $\unit{S\,m^{-1}}$ | Electrical conductivity | The proportionality constant between current density and electric field. |
-| $\energy{P}$ | $\unit{W}$ | Electrical power | The rate of electrical energy transfer in the resistive element. |
+| $\electric{I}$, $\electric{I}_1$, $\electric{I}_2$, $\electric{I}_3$ | $\unit{A}$ | Current | The conventional current, or the branch currents in the Kirchhoff example. |
+| $\electric{I}_0$, $\electric{I}_{\max}$ | $\unit{A}$ | Initial current | The current at the start of charging or discharging. |
+| $\circuit{R}$, $\circuit{R}_1$, $\circuit{R}_2$, $\circuit{R}_3$ | $\unit{\Omega}$ | Resistance | The resistance of a resistor in the circuit. |
 | $\circuit{R}_{\mathrm{eq}}$ | $\unit{\Omega}$ | Equivalent resistance | The single resistance with the same terminal relation as the resistor network. |
-| $\signal{\tau}$ | $\unit{s}$ | Circuit time constant | The exponential time scale, equal to $\circuit{R}\circuit{C}$ or $\circuit{L}/\circuit{R}$. |
+| $\energy{P}$ | $\unit{W}$ | Electrical power | The rate of electrical energy transfer in the resistive element. |
+| $\signal{\tau}$ | $\unit{s}$ | Circuit time constant | The exponential time scale, equal to $\circuit{R}\circuit{C}$. |
 | $\electric{\mathcal{E}}$ | $\unit{V}$ | Electromotive force | The source voltage in the charging loop. |
-| $\electric{V}_C$ | $\unit{V}$ | Capacitor voltage | The potential difference across the capacitor. |
-| $\mechanical{v}$ | $\unit{m\,s^{-1}}$ | Speed | The speed of a particle or of a wave in the medium. |
-| $N$ | 1 | Turn count | The number of loops contributing to the coil field. |
-| $\Delta\electric{V}_R$, $\Delta\electric{V}_L$ | $\unit{V}$ | Element potential changes | The signed potential changes across the resistor and inductor along the loop. |
-| $\electric{v}_R$, $\electric{V}_R$ | $\unit{V}$ | Resistor voltage | The instantaneous resistor voltage and its amplitude. |
-| $\electric{E}_0$, $\electric{\vec E}_0$ | $\unit{V\,m^{-1}}$ | Electric-field amplitude | Scalar or vector amplitude in the sinusoidal wave solution. |

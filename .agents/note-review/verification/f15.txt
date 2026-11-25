@@ -1,0 +1,10 @@
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/04 Partial Differential Equations/The wave equation on a line and a finite string.md
+- FIXED | Physical quantities table has u as pressure, rho twice, and unused symbols | Rebuilt the table: removed u (Pa), A, v, rho_min/max, H, r, a, T(x,t); kept one rho (kg/m^3, rod) and rho_0 (kg/m); added L and omega_n'
+- FIXED | Damping mode factor sin*sin*exp(-beta(n pi/L)^2 t) does not solve u_tt=c^2u_xx-beta u_t | Replaced it with the underdamped mode sin(n pi x/L)e^{-beta t/2}sin(omega_n' t+theta_n), omega_n'=sqrt((n pi c/L)^2-beta^2/4); removed the e^{-n^2 t} remark and its self-link
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/05 Calculus of Variations/Physical action and equations of motion.md
+- REJECTED | t, tau, omega wrapped in \signal{} instead of \mechanical{} | Macro choice, not an error; the vault Classical Mechanics notes (for example the 04 Oscillations notes) also use \signal{} for t and omega, and the note is consistent internally
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/05 Calculus of Variations/Variational modeling of paths and surfaces.md
+- FIXED | Physical quantities table lists symbols from other notes | Rebuilt the table with t (elapsed time), epsilon (variation parameter), lambda (Lyapunov exponent), theta_1, theta_2; omitted pure mathematical symbols f, eta, g, C, C_2 per the skill table rules
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/06 Bifurcations and Chaos/Logistic-map bifurcations and numerical dynamics.md
+- FIXED | Table gives beta two wrong meanings, epsilon as rate ratio, unused x,y,s,t rows; Lorenz beta clashes | Rebuilt the table (beta dimensionless logistic parameter, epsilon perturbation size, t_0 sampling phase, Lorenz sigma, rho, b); renamed the Lorenz beta to b and added a one-line note
+- FIXED | Planar predator-prey example presented as chaos despite Poincare-Bendixson | Added sentences: it shows only local sensitivity near a separatrix; 2D autonomous flows cannot be chaotic; chaos needs 3D flows (Lorenz) or 1D noninvertible maps

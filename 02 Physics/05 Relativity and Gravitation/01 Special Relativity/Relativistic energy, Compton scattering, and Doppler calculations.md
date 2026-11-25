@@ -22,7 +22,7 @@ $$
 \end{aligned}
 $$
 
-The axes have a common origin. The $\mechanical{x}'$ axis consists of events with $t'=0$, so its slope in the unprimed diagram is $\mechanical{\beta}=\mechanical{v}/\mechanical{c}$. The $\mechanical{c}t'$ axis consists of events with $\mechanical{x}'=0$, so it tilts toward the $\mechanical{x}$ axis by the same angle $\mechanical{\theta}$, where $\tan\mechanical{\theta}=\mechanical{\beta}$. In the primed diagram the tilt of the unprimed axes has the opposite sign, with signed tangent $-\mechanical{v}/\mechanical{c}$.
+The axes have a common origin. The $\mechanical{x}'$ axis consists of events with $t'=0$, so its slope in the unprimed diagram is $\mechanical{\beta}=\mechanical{v}/\mechanical{c}$. The $\mechanical{c}t'$ axis consists of events with $\mechanical{x}'=0$, so it tilts toward the $\mechanical{x}$ axis by the same angle $\mechanical{\alpha}$, where $\tan\mechanical{\alpha}=\mechanical{\beta}$. In the primed diagram the tilt of the unprimed axes has the opposite sign, with signed tangent $-\mechanical{v}/\mechanical{c}$.
 
 ![[Kyle Kabasares - Special Relativity - Lorentz axes and length contraction.png|**Fig. 9** Tilted axes for the two frames, with projections of the event on the primed space axis and the worldline of the stick's endpoint.]]
 
@@ -32,7 +32,7 @@ Take a stick at rest in $S'$ with one end at $\mechanical{x}'=0$ and the other a
 
 $$
 \begin{aligned}
-\Delta&=\tan\mechanical{\theta}\,(\mechanical{\beta}\mechanical{\gamma}\mechanical{x}_a')
+\Delta&=\tan\mechanical{\alpha}\,(\mechanical{\beta}\mechanical{\gamma}\mechanical{x}_a')
 =\mechanical{\beta}^2\mechanical{\gamma}\mechanical{x}_a',\\
 \mechanical{L}
 &=\mechanical{\gamma}\mechanical{x}_a'-\Delta
@@ -95,7 +95,7 @@ The handwritten $A_1'$ line has $A_2$ in the second term. The boost mixes the ti
 The ordinary velocity uses the coordinate time of the frame, for example $\mechanical{V}_x=d\mechanical{x}/dt$ in $S$ and $\mechanical{V}_x'=d\mechanical{x}'/dt'$ in $S'$. Write the spacetime position as
 
 $$
-\mechanical{X}_{\mu}(t)=(\mechanical{c}t,\mechanical{x},\mechanical{y},\mechanical{z}).
+\mechanical{X}^{\mu}(t)=(\mechanical{c}t,\mechanical{x},\mechanical{y},\mechanical{z}).
 $$
 
 For inertial motion from the origin at speed $\mechanical{v}$, its squared interval is
@@ -112,7 +112,7 @@ For this timelike path, the proper time satisfies $\mechanical{c}^2\tau^2=-\mech
 Dividing the spacetime displacement by the elapsed proper time, or differentiating with respect to proper time, gives the four-velocity.
 
 $$
-\mechanical{U}_{\mu}
+\mechanical{U}^{\mu}
 =\mechanical{\gamma}\left(\mechanical{c},\frac{\mechanical{x}}{t},\frac{\mechanical{y}}{t},\frac{\mechanical{z}}{t}\right)
 =\mechanical{\gamma}(\mechanical{c},\mechanical{V}_x,\mechanical{V}_y,\mechanical{V}_z).
 $$
@@ -122,8 +122,8 @@ $$
 Multiply the four-velocity by the mass.
 
 $$
-\mechanical{p}_{\mu}
-=\mechanical{m}\mechanical{U}_{\mu}
+\mechanical{p}^{\mu}
+=\mechanical{m}\mechanical{U}^{\mu}
 =(\mechanical{\gamma}\mechanical{m}\mechanical{c},
 \mechanical{\gamma}\mechanical{m}\mechanical{V}_x,
 \mechanical{\gamma}\mechanical{m}\mechanical{V}_y,
@@ -204,7 +204,7 @@ For comparison, the photon at the hydrogen ionization threshold has $\energy{E}=
 The energy–momentum four-vector for light is
 
 $$
-\mechanical{p}_{\mu}
+\mechanical{p}^{\mu}
 =\left(\frac{\energy{E}}{\mechanical{c}},\mechanical{\vec p}\right)
 =\frac{\energy{h}\signal{\nu}}{\mechanical{c}}(1,\signal{\hat k}),
 $$
@@ -213,9 +213,9 @@ where $\signal{\hat k}$ is the unit vector in the propagation direction. Suppose
 
 $$
 \begin{aligned}
-\mechanical{p}_{\mu}
+\mechanical{p}^{\mu}
 &=\frac{\energy{h}\signal{\nu}}{\mechanical{c}}(1,\cos\mechanical{\theta},\sin\mechanical{\theta},0),\\
-\mechanical{p}_{\mu}'
+\mechanical{p}'^{\mu}
 &=\frac{\energy{h}\signal{\nu}'}{\mechanical{c}}(1,\cos\mechanical{\theta}',\sin\mechanical{\theta}',0).
 \end{aligned}
 $$
@@ -329,7 +329,7 @@ $$
 \end{aligned}
 $$
 
-The page then writes the energy and longitudinal momentum transformation from $S$ to $S'$ for $\mechanical{p}_{\mu}=(\energy{E}/\mechanical{c},\mechanical{p}_1,\mechanical{p}_2,\mechanical{p}_3)$.
+The page then writes the energy and longitudinal momentum transformation from $S$ to $S'$ for $\mechanical{p}^{\mu}=(\energy{E}/\mechanical{c},\mechanical{p}_1,\mechanical{p}_2,\mechanical{p}_3)$.
 
 $$
 \begin{aligned}
@@ -491,21 +491,28 @@ Kyle Kabasares, *Special Relativity (Physics 126, UC Merced 2015)*.
 | $\mechanical{m}$ | $\unit{kg}$ | Mass | Inertial mass of the particle. |
 | $\mechanical{c}$ | $\unit{m\,s^{-1}}$ | Speed of light in vacuum | The light propagation speed. |
 | $\mechanical{\beta}$ | 1 | Speed ratio | Relative speed divided by the speed of light. |
-| $\Delta t$, $\Delta t'$ | $\unit{s}$ | Time interval | Difference between event times or clock readings, including the interferometer travel-time difference. |
-| $\signal{\lambda}$ | $\unit{m}$ | Wavelength | Distance traveled by light in one wave period. |
-| $\Delta t_{\mathrm{rest}}$, $\Delta t_0$, $\tau$ | $\unit{s}$ | Proper time interval | Time recorded by the clock present at both events. |
-| $\mechanical{\gamma}$ | 1 | Lorentz factor | Factor relating the coordinate interval to the proper interval for inertial motion. |
-| $\tau_0$, $\tau$ | $\unit{s}$ | Rest and laboratory lifetimes | Muon lifetime measured in its rest frame and in the laboratory. |
-| $\mechanical{d}$, $\mechanical{L}$ | $\unit{m}$ | Distance | Distance traveled in the laboratory or separation of the departure and arrival points. |
+| $\mechanical{\alpha}$ | $\unit{rad}$ | Axis tilt | Angle between the primed and unprimed axes in the spacetime diagram, with $\tan\mechanical{\alpha}=\mechanical{\beta}$. |
+| $\mechanical{x}_a'$ | $\unit{m}$ | Rest length of the stick | Position of the far stick end in $S'$. |
+| $\mechanical{L}$ | $\unit{m}$ | Contracted length | Length of the moving stick or meter stick in the frame in which it moves. |
+| $\Delta t$, $\Delta t'$ | $\unit{s}$ | Time interval | Coordinate time difference between two events in a frame. |
+| $\Delta t_0$, $\tau$ | $\unit{s}$ | Proper time interval | Time recorded by the clock present at both events. |
+| $\Delta\mechanical{x}$, $\Delta\mechanical{y}$, $\Delta\mechanical{z}$ and primed forms | $\unit{m}$ | Position separations | Spatial separations of two events. |
+| $\mechanical{\gamma}$, $\mechanical{\gamma}'$, $\mechanical{\gamma}_1$ | 1 | Lorentz factor | Factor that depends on the speed of a frame or particle. |
 | $\mechanical{V}_x$, $\mechanical{V}_y$, $\mechanical{V}_z$ and primed forms | $\unit{m\,s^{-1}}$ | Object velocity components | Velocity of an object along the coordinate axes. |
-| $\mechanical{\theta}$, $\mechanical{\theta}'$ | $\unit{rad}$ | Angle | Tilt of a rod or coordinate axis, or angle of a ray relative to the reference axis. |
-| $\mechanical{s}^2$ | $\unit{m^2}$ | Squared spacetime interval | Invariant quadratic expression in coordinate separations. |
-| $\mechanical{\vec p}$, $\mechanical{p}_{\mathrm{tot}}$ | $\unit{kg\,m\,s^{-1}}$ | Momentum | Momentum of a particle and the sum over particles. |
-| $\mechanical{X}_{\mu}$ | $\unit{m}$ | Four-position | Spacetime position with the time coordinate scaled by the speed of light. |
-| $\mechanical{U}_{\mu}$ | $\unit{m\,s^{-1}}$ | Four-velocity | Rate of change of four-position with respect to proper time. |
-| $\mechanical{p}_{\mu}$ | $\unit{kg\,m\,s^{-1}}$ | Four-momentum | Product of the mass and four-velocity. |
+| $\mechanical{V}_1'$, $\mechanical{V}_2'$ | $\unit{m\,s^{-1}}$ | Fragment velocities | Velocities of the two fragments in $S'$. |
+| $\mechanical{v}'$ | $\unit{m\,s^{-1}}$ | Speed | Common pion speed in the kaon frame, or speed of the moving observer in the interval examples. |
+| $\mechanical{s}^2$, $(\Delta\mechanical{s})^2$ | $\unit{m^2}$ | Squared spacetime interval | Invariant quadratic expression in coordinate separations. |
+| $\mechanical{\vec p}$, $\mechanical{p}_{\mathrm{tot}}'$ | $\unit{kg\,m\,s^{-1}}$ | Momentum | Momentum of a particle and the classical momentum sum in $S'$. |
+| $\mechanical{X}^{\mu}$ | $\unit{m}$ | Four-position | Spacetime position with the time coordinate scaled by the speed of light. |
+| $\mechanical{U}^{\mu}$ | $\unit{m\,s^{-1}}$ | Four-velocity | Rate of change of four-position with respect to proper time. |
+| $\mechanical{p}^{\mu}$, $\mechanical{p}'^{\mu}$ | $\unit{kg\,m\,s^{-1}}$ | Four-momentum | Product of the mass and four-velocity. |
+| $\mechanical{p}_0$, $\mechanical{p}_1$, $\mechanical{p}_2$, $\mechanical{p}_3$ and primed forms | $\unit{kg\,m\,s^{-1}}$ | Four-momentum components | Energy divided by the speed of light, and Cartesian momentum components. |
 | $\energy{h}$ | $\unit{J\,s}$ | Planck constant | Relates photon energy to frequency. |
-| $\signal{\nu}$, $\signal{\nu}'$ | $\unit{Hz}$ | Photon frequencies | Frequencies before and after scattering. |
+| $\signal{\nu}$, $\signal{\nu}'$ | $\unit{Hz}$ | Compton photon frequencies | Frequencies of the incident and scattered photon in Compton scattering. |
+| $\signal{\nu}$, $\signal{\nu}'$ | $\unit{Hz}$ | Doppler frequencies | Frequency of the light in the observer frame $S$ and in the source frame $S'$. |
+| $\mechanical{\theta}$ | $\unit{rad}$ | Scattering angle | Angle of the scattered photon relative to the incident direction in Compton scattering. |
+| $\mechanical{\theta}$, $\mechanical{\theta}'$ | $\unit{rad}$ | Propagation angle | Angle of the light ray relative to the positive $x$ axis in the observer and source frames. |
+| $\signal{\lambda}$, $\signal{\lambda}'$ | $\unit{m}$ | Wavelength | Wavelength of the incident and scattered photon. |
 | $\mechanical{m}_e$ | $\unit{kg}$ | Electron mass | Rest mass of the electron. |
 | $\energy{E}_e$ | $\unit{J}$ | Electron energy | Total relativistic energy of the recoiling electron. |
 | $\mechanical{p}_e$ | $\unit{kg\,m\,s^{-1}}$ | Electron momentum magnitude | Magnitude of the recoiling electron's spatial momentum. |
@@ -513,7 +520,9 @@ Kyle Kabasares, *Special Relativity (Physics 126, UC Merced 2015)*.
 | $\signal{\lambda}_{\mathrm C}$ | $\unit{m}$ | Electron Compton wavelength | Characteristic wavelength that sets the scale of the scattering shift. |
 | $\signal{\hat k}$ | 1 | Propagation direction | Unit vector along the photon momentum. |
 | $\mechanical{m}_{K^0}$, $\mechanical{m}_{\pi^0}$ | $\unit{kg}$ or $\unit{MeV}/\mechanical{c}^2$ | Particle masses | Rest masses of the neutral kaon and neutral pion. |
-| $\energy{E}$, $\energy{E}'$, $\energy{E}_{\mathrm{tot}}$ | $\unit{J}$ or $\unit{eV}$ | Energy | Time component of four-momentum multiplied by the speed of light. |
+| $\mechanical{p}'$ | $\unit{kg\,m\,s^{-1}}$ | Pion momentum magnitude | Momentum magnitude of each pion in the kaon frame. |
+| $\energy{E}$, $\energy{E}'$, $\energy{E}_1'$, $\energy{E}_2'$, $\energy{E}_{\mathrm{tot}}$ | $\unit{J}$ or $\unit{eV}$ | Energy | Total energy of a particle or photon. |
+| $\mechanical{V}_{\mathrm f}$, $\mechanical{a}$ | $\unit{m\,s^{-1}}$, $\unit{m\,s^{-2}}$ | Final speed and acceleration | Classical speed reached after constant acceleration for a time $\Delta t$. |
 | $\mechanical{m}_0$ | $\unit{kg}$ | Rest mass | Invariant mass measured in the rest frame. |
 | $\mechanical{m}_{\mathrm{rel}}$ | $\unit{kg}$ | Relativistic mass | Frame-dependent shorthand for the total energy divided by the speed of light squared. |
 | $\energy{E}_0$ | $\unit{J}$ or $\unit{eV}$ | Rest energy | Energy of an object at rest. |

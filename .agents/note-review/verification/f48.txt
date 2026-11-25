@@ -1,0 +1,47 @@
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/00 Introduction.md
+- FIXED | Part chapter ranges do not match folders 04–08, 09–11, 12–13, 14–15 | Set Parts II–V to Chapters 4–8, 9–11, 12–13, 14–15, added special matrices to Part II, and reworded the closing note to say the ranges follow the table of contents and folders
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/01 Analytical Foundations/01 Complex Numbers/07 Applications to Oscillations and Signals.md
+- FIXED | Table lists signal A twice (signal amplitude and wavefunction amplitude) | Renamed the plane-wave prefactor to \signal{C} in the QM box and its table row
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/01 Analytical Foundations/03 Ordinary Differential Equations/02 Second-Order Linear Equations.md
+- FIXED | Damped amplitude A clashes with free-particle coefficients A,B | Renamed the free-particle cosine and sine coefficients to D_1, D_2
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/01 Analytical Foundations/03 Ordinary Differential Equations/99 Exercises/05 Exercise 5.md
+- FIXED | Integer label m clashes with mass m | Renamed the state labels n,m to n_x,n_y in all equations, prose, the level table, the note, and the quantities table; mass unchanged
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/04 Vectors and Vector Spaces/03 Linear Independence and Spanning Sets.md
+- FIXED | Definition 4.3 calls the set of all combinations the spanning set | Definition now calls it the span (linear span) and defines a spanning set for V as a family whose span is V; removed the note about the source
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/06 Special Matrices/02 Singular Value Decomposition.md
+- FIXED | False sentence that eigenvectors exist only for square diagonalizable matrices | Removed the sentence; kept the correcting note
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/06 Special Matrices/08 Density Matrices.md
+- FIXED | Stray text3d label 50 in Fig. 6.2 and its apologetic note | Removed the text3d element and the two note sentences about it (not yet checked in Obsidian reading mode)
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/07 Eigenvalues and Eigenvectors/99 Exercises/01 Exercise 1.md
+- FIXED | v_2,v_4 eigenvectors clash with components v_1,v_2 | Renamed the normalized eigenvectors in (a) to u_2,u_4 (definitions, checks, orthogonality); components stay v_1,v_2
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/09 Dirac Notation/00 Dirac Notation.md
+- FIXED | Dirac did not introduce bra-ket notation in the 1930 book | Now says Dirac introduced it in the 1939 paper A new notation for quantum mechanics and the 1947 third edition of his book used it
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/09 Dirac Notation/03 Operators in Dirac Notation.md
+- FIXED | Ket label phi clashes with relative phase signal phi | Renamed the Bloch relative phase to \signal{\varphi} in all equations and the table
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/04 Frequencies and Transformations/12 Fourier Series/06 Common Errors.md
+- FIXED | Box basis phi_n and amplitude c_n collide with Fourier phi_n and c_n | Renamed box modes to \signal{\chi}_n and box amplitudes to \beta_n in the QM section, checks, and table; reworded the callout to contrast \beta_n with c_n
+- FIXED | phi_n and psi(0) uncoloured | Box modes are now \signal{\chi}_n and psi(0) in the projection is \signal{\psi}(0)
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/04 Frequencies and Transformations/12 Fourier Series/99 Exercises/07 Exercise 7.md
+- FIXED | Mode phase signal delta_n clashes with Kronecker delta | Renamed the mode phase to \signal{\varphi}_n in the question and table
+- FIXED | Uncoloured phi in (b) and classical E vs quantum E | Coloured \signal{\phi}_1,\signal{\phi}_2 in (b); labelled classical total energy \energy{E}_{\text{string}} (and its mean); split the energy table row into string and quantum energies
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/05 Probability and Uncertainty/14 Probability and Distributions/06 Common Errors.md
+- FIXED | Vanishing term is the squared mean, not the mean square | Changed mean-square term to squared-mean term
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/09 Glossary of Terms.md
+- FIXED | a is potential offset, translation distance, and eigenvalue | Renamed the translation distance to \mechanical{s} in the Momentum entry and table; potential offset and eigenvalue a now each have one meaning per entry
+- FIXED | Mixed-state Tr(rho^2)<1 stated unconditionally | Added that the strict inequality needs nonzero weights on at least two physically different states, otherwise the mixture is pure
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/Functions of operators, continuous bases, and Gaussian packets.md
+- FIXED | Table lists R, T, Bohr radius a_0 not used in note | Replaced the table with rows for x, k, a, Delta, Delta X, psi and A as used in the note
+- FIXED | X, Delta, L each have two meanings | Renamed the Sakurai matrix to M, the averaging length to Lambda, and the averaging lower limit to x_0
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/01 The Crisis of Classical Physics/01.02 Photoelectric Effect.md
+- FIXED | Source links point to Blackbody radiation headings | Pointed links to Quantization, light, and early atomic models#Photoelectric apparatus and Matter waves, diffraction, and early quantum problems#The photoelectric effect (headings verified)
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/01 The Crisis of Classical Physics/Matter waves, diffraction, and early quantum problems.md
+- FIXED | Table has unused decay constant, activity, lifetime and wrong rho description | Removed the three rows, described rho as bulk density of the gold foil, added K, D, d, n, f, foil thickness and t rows
+- FIXED | Neutron speed 2 km/s should be about 200 m/s | Stated very cold neutrons of wavelength about 1.85 nm at about 200 m/s (h/(m lambda) = 214 m/s) and noted that the source value 2 km/s is the thermal-neutron speed
+- PARTLY | Clashes for t, T, P, phi and lambda' vs lambda_f | Renamed foil thickness to ell, phase shift to delta, time factor to chi(t), lambda_f to lambda'; T and P are already separated by macros (thermal vs signal, energy vs plain); left the Davisson-Germer and Compton angles phi because the figure captions and images use them
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/01 The Crisis of Classical Physics/Quantization, light, and early atomic models.md
+- FIXED | Table has unused decay constant, activity, wrong rho; sigma and R clashes | Removed decay constant and activity rows, fixed rho description, renamed Stefan-Boltzmann constant to sigma_SB (added table rows for sigma_SB and u), and wrote the Balmer general formula with R_H
+- FIXED | c quoted as 2.9989e8 m/s | Changed to 2.9979e8 m/s (3.10 eV result unchanged)
+- FIXED | Stefan-Boltzmann integral uses the Rayleigh-Jeans exitance | Integrand is now the Planck exitance (c/4)u(lambda); added that epsilon=1 for a blackbody and that the Rayleigh-Jeans integral diverges
+- FIXED | Rutherford example 2 does not state the angle | Added theta=45 deg (recomputed: 3.15e-7 mm^-2 at 45 deg, 2.7e-8 mm^-2 at 90 deg)
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/02 Postulates of Quantum Mechanics/02.01 The Quantum State.md
+- FIXED | alpha is global phase and superposition coefficient | Renamed the superposition coefficients to c_1,c_2

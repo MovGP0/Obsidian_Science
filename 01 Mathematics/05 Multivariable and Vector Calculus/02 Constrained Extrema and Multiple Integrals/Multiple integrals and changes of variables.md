@@ -212,7 +212,7 @@ $$
 
 ![[Kyle Kabasares - Calculus III - Vector Calculus - Triple Riemann sum cells.png|**Fig. 109** A box partitioned into cells for a three-dimensional Riemann sum.]]
 
-Integrating $1$ gives the volume. If the solid lies between $z=0$ and a nonnegative graph $z=f(x,y)$ over $D$, that volume is also $\iint_D f(x,y)\,dA$. Integrating a mass density $\mechanical{\rho}(x,y,z)$ gives the mass $\mechanical{M}=\iiint_V\mechanical{\rho}(x,y,z)\,dV$.
+Integrating $1$ gives the volume. If the solid lies between $z=0$ and a nonnegative graph $z=f(x,y)$ over $D$, that volume is also $\iint_D f(x,y)\,dA$. Integrating a mass density $\mechanical{\delta}(x,y,z)$ gives the mass $\mechanical{M}=\iiint_V\mechanical{\delta}(x,y,z)\,dV$.
 
 ##### 15.7 Triple integrals
 
@@ -329,7 +329,7 @@ The cone $z=\sqrt{3}\sqrt{x^2+y^2}=\sqrt3\,r$ has inclination $\phi=\pi/6$. The 
 $$
 x^2+y^2+\left(z-\frac H{\sqrt3}\right)^2=\left(\frac H{\sqrt3}\right)^2.
 $$
-Expanding gives $\rho^2=(2H/\sqrt3)\rho\cos\phi$. Along each ray within the cone, the sphere is reached at $\rho=2H\cos\phi/\sqrt3$. For the density $3-\rho^2/5$ in the notes, the mass integral is
+Expanding gives $\rho^2=(2H/\sqrt3)\rho\cos\phi$. Along each ray within the cone, the sphere is reached at $\rho=2H\cos\phi/\sqrt3$. For the density $\mechanical{\delta}=3-\rho^2/5$ in the notes, the mass integral is
 $$
 \mechanical{M}
 =\int_0^{2\pi}\int_0^{\pi/6}\int_0^{2H\cos\phi/\sqrt3}
@@ -473,5 +473,5 @@ Kyle Kabasares, *Calculus III - Vector Calculus (Math 23, UC Merced 2014)*.
 
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
-| $\mechanical{\rho}$ | $\unit{kg\,m^{-3}}$ | Mass density | Mass per unit volume. |
+| $\mechanical{\delta}$ | $\unit{kg\,m^{-3}}$ | Mass density | Mass per unit volume. |
 | $\mechanical{M}$ | $\unit{kg}$ | Total mass | Integral of the density over the solid. |

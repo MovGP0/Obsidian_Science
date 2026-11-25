@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Color Algebra"
 source_pdf: "D:\\GitHub\\books\\dokumen.pub_gauge-theories-of-the-strong-weak-and-electromagnetic-interactions-second-edition-secondnbsped-9781400848225.pdf"
 source_page: "440"
@@ -155,7 +155,7 @@ $$
 To evaluate the color factor for the second diagram in figure 8.19(b), we employ the commutation relations expressed in (A.5.11) to replace the mixed quark–gluon–gluon loop with the gluon bubble (A.5.9). In this way we find
 
 $$
-if^{abc}(T^bT^c)=\frac{C_A}{2}T^a=\frac{N}{2}T^a \tag{A.5.19}
+-if^{abc}(T^bT^c)=\frac{C_A}{2}T^a=\frac{N}{2}T^a \tag{A.5.19}
 $$
 
 ![[gauge-theories-equation-A-5-19-color-diagram.svg|The second one-loop vertex correction, with the printed graphical factors retained.]]

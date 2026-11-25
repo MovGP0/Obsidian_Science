@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Deriving the Kaluza–Klein mass tower"
 document_type: "Self-contained study chapter"
 ---
@@ -224,7 +224,7 @@ The units below use the collection's natural-unit convention. Explicit SI formul
 | $\mechanical{y}$ | $\unit{GeV^{-1}}$ | Coordinates | Length-valued base, embedding, or compact coordinates used in this chapter. |
 | $\mechanical{r}$ | $\unit{GeV^{-1}}$ | Reference circle radius | Radius encoded in the periodic coordinate identification. |
 | $\signal{\Psi}$ | $\unit{GeV^{3/2}}$ | Five-dimensional scalar field | Canonically normalized higher-dimensional matter field. |
-| $\signal{\psi}_n$ | $\unit{GeV}$ | Four-dimensional scalar fields | Canonical field or Fourier-mode amplitude on the base spacetime. |
+| $\signal{\psi}_n$ | $\unit{GeV}$ | Four-dimensional mode fields | Canonically normalized mode fields in the length-coordinate derivation. |
 | $\mechanical{m}_5,\;\mechanical{m}_n,\;\mechanical{m}_0$ | $\unit{GeV}$ | Masses | Original mass or effective four-dimensional mode mass in natural units. |
 | $\mechanical{p}_{5,n},\;\mechanical{\mathbf p}$ | $\unit{GeV}$ | Momenta | Compact-direction or ordinary spatial momentum. |
 | $\energy{E}$ | $\unit{GeV}$ | Energies | Excitation scale, wave energy, or first-mode rest energy. |
@@ -232,9 +232,9 @@ The units below use the collection's natural-unit convention. Explicit SI formul
 | $\mechanical{c}$ | $1$ | Speed of light | Set to one in natural units; restored explicitly in SI formulas. |
 | $\mechanical{t}$ | $\unit{GeV^{-1}}$ | Time | Time coordinate in the angular formulation’s natural units. |
 | $\mechanical{x}$ | $\unit{GeV^{-1}}$ | Base coordinate | Ordinary length-valued base coordinate; a four-coordinate argument where stated. |
-| $\mechanical{\theta}$ | $1$ | Circular angle | Compact circular angle; the spherical-coordinate inset identifies its separate polar-angle use. |
+| $\mechanical{\theta}$ | $1$ | Circular angle | Compact circular angle with period two pi. |
 | $\mechanical{p}_x,\mechanical{p}_y$ | $\unit{GeV}$ | Momenta | Four-momentum and ordinary spatial momentum components. |
 | $\mechanical{p}_\theta$ | $\unit{GeV}$ | Circular momentum | Physical momentum around the circle, equal to the integer mode divided by radius. |
 | $\mechanical{\widetilde m}$ | $\unit{GeV}$ | Full-space mass | Five-dimensional starting mass, set to zero in the angular mass-tower calculation. |
-| $\signal{\psi},\signal{\psi}_n$ | — | Scalar waves | Scalar field and Fourier coefficients in the unnormalized expansion; amplitude units depend on the chosen normalization. |
+| $\signal{\psi},\signal{\psi}_n$ | — | Scalar waves | Scalar field and its Fourier coefficients in the first (angular) section, without canonical normalization; units depend on the chosen normalization. |
 | $C$ | — | Wave amplitude | Constant amplitude with units set by the chosen wave normalization. |

@@ -77,7 +77,7 @@ Without complex numbers, this calculation would require trigonometric angle-addi
 >
 > $$
 > \signal{\psi}(\mechanical{x},\signal{t})
-> =\signal{A}\mathrm{e}^{\mathrm{i}(\signal{k}\mechanical{x}-\signal{\omega}\signal{t})},
+> =\signal{C}\mathrm{e}^{\mathrm{i}(\signal{k}\mechanical{x}-\signal{\omega}\signal{t})},
 > \qquad\signal{k}=\frac{\mechanical{p}}{\energy{\hbar}},
 > \quad\signal{\omega}=\frac{\energy{E}}{\energy{\hbar}}.
 > $$
@@ -139,7 +139,7 @@ Check the phasor result at $\signal{t}=0$: its value is three, and its initial t
 | $\signal{\omega}$ | $\unit{rad\,s^{-1}}$ | Angular frequency | The rate at which the signal or plane-wave phase changes with time. |
 | $\signal{\phi}$ | $\unit{rad}$ | Phase | The initial or resultant phase of an oscillation. |
 | $\signal{\psi}(\mechanical{x},\signal{t})$ | $\unit{m^{-1/2}}$ | Wavefunction | The position-space wavefunction with one-dimensional probability-density normalization. |
-| $\signal{A}$ | $\unit{m^{-1/2}}$ | Wavefunction amplitude | The constant prefactor in the plane-wave expression under the stated unit convention. |
+| $\signal{C}$ | $\unit{m^{-1/2}}$ | Wavefunction amplitude | The constant prefactor in the plane-wave expression under the stated unit convention. |
 | $\mechanical{x}$ | $\unit{m}$ | Position | The particle's position in one spatial dimension. |
 | $\mechanical{p}$ | $\unit{kg\,m\,s^{-1}}$ | Momentum | The momentum of the free particle. |
 | $\energy{E}$ | $\unit{J}$ | Energy | The energy of the free particle. |

@@ -1,0 +1,71 @@
+=== 02 Physics/05 Relativity and Gravitation/02 General Relativity/General Relativity (MIT 8.962 self-study).md
+- [Correctness] Linearized gravity with dynamic sources (~l.1954): $\Theta=\frac12(H-\nabla^2\lambda)$ should be $\Theta=\frac13(H-\nabla^2\lambda)$ (Flanagan–Hughes); only the 1/3 form gives $G_{tt}=-\nabla^2\Theta$. Line ~1962 writes "$G_{\alpha\beta}=8\pi T_{\alpha\beta}$", dropping the $G$ used in the following equations ($8\pi GT_{\alpha\beta}$).
+- [Correctness] Field tensor (~l.1876–1887): with $\eta=\mathrm{diag}(-1,1,1,1)$, $A^0=q/r$ and $F^{\mu\nu}=\partial^\mu A^\nu-\partial^\nu A^\mu$, $F^{0i}=+qx^i/r^3$. The printed matrix is $F_{\mu\nu}$, so relabel it or flip the first row and column. Elsewhere: "Principle of equivalence" (~l.788) quotes a test precision of $10^{-13}$, which is outdated (MICROSCOPE 2022: about $10^{-15}$). "Buchdahl's theorem" (~l.3201) gives the neutron-star $T_F\simeq10^{13}$ K, which should be about $10^{11}$–$10^{12}$ K.
+- [Correctness] The symbol table and the overloaded symbols need repair. $\Lambda$ is the Lorentz matrix, an EM gauge function, the cosmological constant and the radial metric function $e^{2\Lambda(r)}$. $H$ is the Hubble parameter and the trace of $h_{ij}$. $\rho_0$ is the rest-frame density, the present-day cosmological density and the rest-mass density. $a$ is the four-acceleration, a cube constant, the scale factor and the Kerr spin. $R$ is the Ricci scalar, the scale factor, the Kruskal coordinate and the receiver radius. In the perfect-fluid section, $\rho$ silently switches from the moving-frame value $\gamma^2\rho_0$ to the rest-frame density. Rename the clashes and add the missing core rows ($G$, $R^\alpha{}_{\beta\gamma\delta}$, $T_{\mu\nu}$, $h_{\mu\nu}$, $\bar h_{\mu\nu}$, $I_{ij}$, $V_{\mathrm{eff}}$, $M$, $Q$).
+
+=== 02 Physics/05 Relativity and Gravitation/02 General Relativity/Schwarzschild Metric.md
+- [Correctness] The note says "natural units ($c=1$)" but keeps $G$ in $1-2GM/r$, lists $c=299\,792\,458$ m/s, and then gives $r_s=2GM/c^2$; use either $G=c=1$ throughout ($1-2M/r$, $r_s=2M$) or the full SI form $-(1-2GM/(c^2r))\,c^2\mathrm dt^2+\dots$ with $r_s=2GM/c^2$.
+- [Correctness] "**r** the radial distance from the object" is wrong: $r$ is the areal (circumferential) radius, defined so the sphere area is $4\pi r^2$; the proper radial distance is $\int\mathrm dr/\sqrt{1-r_s/r}$ and exceeds $\Delta r$.
+
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/02 Geodesic congruences/2.1 Energy conditions.md
+- [Correctness] Table 2.1, weak row: "$\rho+p_i>0$" should be $\rho+p_i\ge0$ (a cosmological constant with $\rho=-p>0$ satisfies the WEC with $\rho+p=0$).
+
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/02 Geodesic congruences/2.1.2 Weak energy condition.md
+- [Correctness] "$0\le\rho+a^2p_1<\rho+p_1$" holds only for $p_1>0$; the correct argument lets $a^2\to1$ and gives $\rho+p_1\ge0$, so Eq. (2.7) should read $\rho\ge0$, $\rho+p_i\ge0$ (not $>0$).
+
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/02 Geodesic congruences/2.1.6 Violations of the energy conditions.md
+- [Correctness] "recent work suggests" and "Its status in curved spacetimes is not yet fully settled ... as of 1994" are outdated: the ANEC has since been proven in flat spacetime for general unitary Lorentz-invariant QFTs (Faulkner, Leigh, Parrikar, Wang 2016; Hartman, Kundu, Tajdini 2017); add a dated update note.
+- [Correctness] $\energy{\hbar}$ is coloured as an energy, but $\hbar$ is an action (J s, or m$^2$ in geometrized units); use the appropriate macro group or leave it uncoloured.
+
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/02 Geodesic congruences/2.2.1 Two-dimensional medium.md
+- [Correctness] The physical-quantity table lists $\mechanical{B}_{ab}$, $\mechanical{r}_1$, and $\mechanical{\phi}'$, which this note never uses; trim the table to the symbols in the note.
+
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/02 Geodesic congruences/2.2.2 Expansion.md
+- [Correctness] The table lists $\mechanical{B}_{ab}$ and $\mechanical{\phi}'$, which this note does not use; remove them.
+
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/02 Geodesic congruences/2.2.3 Shear.md
+- [Correctness] The table lists $\mechanical{B}_{ab}$, $\mechanical{\sigma}_{ab}$, and $\mechanical{\phi}'$, which this note does not use; remove them.
+
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/02 Geodesic congruences/2.2.4 Rotation.md
+- [Correctness] The table lists $\mechanical{B}_{ab}$, $\mechanical{r}_1$, and $\mechanical{\omega}_{ab}$, which this note does not use; remove them.
+
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/02 Geodesic congruences/2.3.3 Frobenius' theorem.md
+- [Correctness] "$\omega_{\alpha\beta}=-\Phi_{[\alpha}\mu_{,\beta]}$" is missing a comma; it should be $-\Phi_{,[\alpha}\mu_{,\beta]}$.
+
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/02 Geodesic congruences/2.3.4 Raychaudhuri's equation.md
+- [Correctness] The physical-quantity table lists $\mechanical{\theta}_0$, $\mechanical{u}^t$, $\mechanical{u}^r$, $\mechanical{u}^\theta$, $\mechanical{u}^\phi$, and $\mechanical{u}_t$, none of which appear in this note; trim it.
+
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/02 Geodesic congruences/2.3.5 Focusing theorem.md
+- [Correctness] The physical-quantity table lists $\mechanical{u}^t$, $\mechanical{u}^r$, $\mechanical{u}^\theta$, $\mechanical{u}^\phi$, and $\mechanical{u}_t$, which this note never uses; trim it.
+
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/02 Geodesic congruences/2.3.6 Example.md
+- [Correctness] The table lists $\mechanical{u}^r$, $\mechanical{u}^\theta$, $\mechanical{u}^\phi$, $\mechanical{u}_t$, $\mechanical{\theta}_0$, and $\mechanical{B}^{\alpha\beta}$, none of which appear in this note; trim it.
+
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/02 Geodesic congruences/2.3.7 Another example.md
+- [Correctness] Symbol clash: $\mechanical{\theta}$ is both the polar angle in $\mathrm d\Omega^2$ and the expansion scalar, and the table lists both meanings; rename the angle (for example $\vartheta$) or add an explicit warning.
+
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/02 Geodesic congruences/2.3.8 Interpretation of θ.md
+- [Correctness] Eq. (2.21) is written with $\mathrm d/\mathrm d\mechanical{t}$, but the note (and Eq. 2.27) uses proper time; write $\theta=\delta V^{-1}\,\mathrm d\delta V/\mathrm d\tau$ and drop $\mechanical{t}$ from the table.
+
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/02 Geodesic congruences/2.4 Congruence of null geodesics.md
+- [Correctness] The table lists $\mechanical{\tilde\xi}^\alpha$ and $h'_{\alpha\beta}$, which appear only in later notes; trim it to the symbols used here.
+
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/02 Geodesic congruences/2.4.4 Raychaudhuri's equation.md
+- [Correctness] The table lists $\mechanical{\theta}_0$ and the $\mechanical{k}^{\rm out}$, $\mechanical{k}^{\rm in}$ variants, none of which appear in this note; trim it.
+
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/02 Geodesic congruences/2.4.5 Focusing theorem.md
+- [Correctness] The table lists the $\mechanical{k}^{\rm out}$, $\mechanical{k}^{\rm in}$ variants, which this note never uses; trim it.
+
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/02 Geodesic congruences/2.4.6 Example.md
+- [Correctness] Symbol clash: $\mechanical{\theta}$ is the polar angle in $h_{\alpha\beta}=\operatorname{diag}(0,0,r^2,r^2\sin^2\theta)$ and also the expansion $\theta=2/r$, and the table lists both; rename the angle or add a warning.
+
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/02 Geodesic congruences/2.4.7 Another example.md
+- [Correctness] Symbol clash: the table lists $\mechanical{\theta}$ both as a sphere angle and as the expansion; the index placement also switches between $k^{\rm out}_\alpha$ and $k_{\rm out}^\alpha$; make both consistent.
+
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.10 Slowly rotating shell.md
+- [Correctness] Symbol clash: $\mechanical{\Omega}$ is the frame angular velocity (3.72-3.73) while $\mathrm d\Omega^2$ in (3.71) is the solid-angle element; write the angular part explicitly or call the frame rate $\mechanical{\Omega_{\mathrm{in}}}$ from the start.
+
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.11.2 Surface stress-energy tensor.md
+- [Correctness] Symbol clash: $\gamma_{\alpha\beta}$ (the jump tensor of Eq. 3.94) appears in the same equations as the free index $\gamma$ (for example $[g_{\alpha\beta,\gamma}]=-\gamma_{\alpha\beta}\mechanical{k}_\gamma$ and $[\Gamma^\alpha_{\beta\gamma}]$ in 3.95); relabel the free index or note the clash explicitly.
+- [Correctness] Missing semantic macro: $k^\beta$ is written bare in (3.98) ($\gamma_{\alpha\beta}e^\alpha_Ak^\beta$) and (3.99) ($e^\alpha_Ak^\beta$); use $\mechanical{k}^\beta$ as everywhere else.
+

@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Full coordinate transformation calculation"
 document_type: "Self-contained study chapter"
 ---
@@ -120,9 +120,7 @@ g_{\mu\nu}-\mechanical{\Phi}_{\mathrm{ang}}\mechanical{\xi}^{\,2}\electric{A}_\m
 \end{aligned}
 $$
 
-The two products are equal and cancel. Thus the adjusted base metric is unchanged: $g\prime_{\mu
-u}=g_{\mu
-u}$. The raw upper-left block is not invariant by itself; the combination that includes the mixed-vector product is invariant.
+The two products are equal and cancel. Thus the adjusted base metric is unchanged: $g'_{\mu\nu}=g_{\mu\nu}$. The raw upper-left block is not invariant by itself; the combination that includes the mixed-vector product is invariant.
 
 <!-- visual-source:end -->
 

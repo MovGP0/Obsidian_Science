@@ -35,7 +35,7 @@ $$
 
 ##### Nondispersive wave equation and energy
 
-For $\partial_{\mechanical{x}}^2\mechanical{y}=\mechanical{v}^{-2}\partial_{\mechanical{t}}^2\mechanical{y}$, the speed is $\sqrt{\mechanical{T}/\mechanical{\mu}}$ on a string or $\sqrt{\mechanical{k}/\mechanical{\rho}}$ in a gas, where $\mechanical{k}$ is the relevant bulk modulus. The string's energy densities per unit length and its instantaneous power in the positive $\mechanical{x}$ direction are
+For $\partial_{\mechanical{x}}^2\mechanical{y}=\mechanical{v}^{-2}\partial_{\mechanical{t}}^2\mechanical{y}$, the speed is $\sqrt{\mechanical{T}/\mechanical{\mu}}$ on a string or $\sqrt{\mechanical{B}_{\mathrm{bulk}}/\mechanical{\rho}}$ in a gas, where $\mechanical{B}_{\mathrm{bulk}}$ is the relevant bulk modulus and $\mechanical{\rho}$ is the gas density. The string's energy densities per unit length and its instantaneous power in the positive $\mechanical{x}$ direction are
 
 $$
 \frac{d\energy{K}}{d\mechanical{x}}=\frac12\mechanical{\mu}(\partial_{\mechanical{t}}\mechanical{y})^2,
@@ -45,7 +45,7 @@ $$
 \energy{P}=-\mechanical{T}(\partial_{\mechanical{t}}\mechanical{y})(\partial_{\mechanical{x}}\mechanical{y}).
 $$
 
-The reflection and transmission amplitude coefficients at the junction are $R=(\mechanical{v}_2-\mechanical{v}_1)/(\mechanical{v}_2+\mechanical{v}_1)$ and $T=2\mechanical{v}_2/(\mechanical{v}_2+\mechanical{v}_1)$.
+The reflection and transmission amplitude coefficients at the junction are $\mathcal{R}=(\mechanical{v}_2-\mechanical{v}_1)/(\mechanical{v}_2+\mechanical{v}_1)$ and $\mathcal{T}=2\mechanical{v}_2/(\mechanical{v}_2+\mechanical{v}_1)$.
 
 ##### Fourier series and dispersion review
 
@@ -142,7 +142,7 @@ For a string with two fixed ends, the first three modes fit one, two, or three h
 $$
 \signal{\lambda}_n=\frac{2\mechanical{L}}{n},\qquad
 \signal{f}_n=\frac{n\mechanical{v}}{2\mechanical{L}}
-=\frac{n}{2\mechanical{L}}\sqrt{\frac{\mechanical{F}_T}{\mechanical{\mu}}}.
+=\frac{n}{2\mechanical{L}}\sqrt{\frac{\mechanical{T}}{\mechanical{\mu}}}.
 $$
 
 ![[Kyle Kabasares - Vibrations and Waves - First three modes with fixed ends.png|**Fig. 100** The first three fixed-end modes contain one, two, and three half-wavelengths.]]
@@ -290,22 +290,21 @@ Kyle Kabasares, *Vibrations and Waves (Physics 122, UC Merced 2015)*.
 
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
-| $\mechanical{F}$ | $\unit{N}$ | Restoring force | Force that vanishes at equilibrium. |
 | $\mechanical{m}$ | $\unit{kg}$ | Mass | Inertial parameter in the equation of motion. |
 | $\mechanical{t}$ | $\unit{s}$ | Time | Independent variable for the motion. |
 | $\signal{\omega}$ | $\unit{rad\,s^{-1}}$ | Angular frequency | Rate of phase accumulation. |
 | $\mechanical{b}$ | $\unit{kg\,s^{-1}}$ | Damping coefficient | Proportionality constant between drag and velocity. |
 | $\signal{\gamma}$ | $\unit{s^{-1}}$ | Damping rate | Ratio of the velocity drag coefficient to mass. |
 | $\signal{\omega}_0$ | $\unit{rad\,s^{-1}}$ | Undamped natural angular frequency | Angular frequency in the absence of drag. |
-| $\signal{\alpha}$ | $\unit{rad}$ | Response phase | Phase of the displacement relative to the driving cosine. |
+| $\signal{\alpha}$ | $\unit{rad}$ | Phase constant | Phase constant of the free underdamped solution, set by the initial conditions. |
 | $\signal{\delta}$ | $\unit{rad}$ | Phase lag | Angle by which the steady displacement lags the applied force. |
 | $\signal{\lambda}$ | $\unit{m}$ | Wavelength | Spatial distance over one wave cycle. |
 | $\mechanical{y}$ | $\unit{m}$ | Transverse displacement | Deflection of a string element from equilibrium. |
 | $\mechanical{\mu}$ | $\unit{kg\,m^{-1}}$ | Linear mass density | Mass per unit length of the string. |
-| $\mechanical{T}$ | $\unit{N}$ | String tension | Magnitude of the force along the string, distinct from the period $\signal{T}$. |
+| $\mechanical{T}$ | $\unit{N}$ | String tension | Magnitude of the force along the string. |
+| $\mechanical{B}_{\mathrm{bulk}}$ | $\unit{Pa}$ | Bulk modulus | Elastic modulus that sets the sound speed in a gas. |
+| $\mathcal{R}$, $\mathcal{T}$ | 1 | Reflection and transmission coefficients | Ratios of the reflected and transmitted amplitudes to the incident amplitude at the junction. |
 | $\signal{\omega}_n$ | $\unit{rad\,s^{-1}}$ | String mode angular frequency | Discrete angular frequency selected by the fixed endpoints. |
-| $\mechanical{b}$ | $\unit{m}$ | Pulse height and half-width | Peak displacement and distance from the peak to a half-height point in this example. |
 | $\signal{k}$ | $\unit{rad\,m^{-1}}$ | Angular wave number | Phase change per unit distance, equal to $2\pi/\signal{\lambda}$. |
-| $d$ | $\unit{m^4\,s^{-2}}$ | String dispersion coefficient | Multiplies the squared angular wave number in the phase speed squared. |
 | $\signal{\Gamma}_{1,2}$ | $\unit{s^{-1}}$ | Overdamped decay rates | The two exponential rates of the free response. |
 | $\energy{P}$ | $\unit{W}$ | Instantaneous wave power | Energy flow rate through a cross section of the string. |

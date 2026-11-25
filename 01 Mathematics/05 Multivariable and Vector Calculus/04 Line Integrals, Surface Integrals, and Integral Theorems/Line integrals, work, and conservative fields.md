@@ -95,7 +95,7 @@ $$
 $$
 Multiplication by $ds=\lVert\mathbf r'(t)\rVert\,dt$ cancels the denominator. For a force field, the integral gives the work along the curve:
 $$
-\mechanical{W}=\int_C\mechanical{\mathbf F}\cdot\mathbf T\,ds
+\energy{W}=\int_C\mechanical{\mathbf F}\cdot\mathbf T\,ds
 =\int_a^b\mechanical{\mathbf F}(\mathbf r(t))\cdot\mathbf r'(t)\,dt.
 $$
 
@@ -109,7 +109,7 @@ For the work done by a field $\mechanical{\mathbf F}=\langle\mechanical{F}_1,\me
 4. Take the dot product with $\mathbf r'(t)$ and integrate.
 
 $$
-\mechanical{W}
+\energy{W}
 =\int_a^b\bigl(\mechanical{F}_1(\mathbf r(t))x'(t)
 +\mechanical{F}_2(\mathbf r(t))y'(t)
 +\mechanical{F}_3(\mathbf r(t))z'(t)\bigr)\,dt.
@@ -130,7 +130,7 @@ $$
 $$
 The two contributions to the numerator of the dot product are $-4t$ and $1-t$, so
 $$
-\mechanical{W}=\int_0^1\frac{1-5t}{(4t^2+(t-1)^2)^{3/2}}\,dt.
+\energy{W}=\int_0^1\frac{1-5t}{(4t^2+(t-1)^2)^{3/2}}\,dt.
 $$
 
 The direct method parametrizes $C$ and evaluates the field on the parametrization. A conservative field $\mathbf F=\nabla\phi$ gives a shortcut through the scalar potential $\phi(x,y,z)$ restricted to the path. In the plane, $\partial F_1/\partial y=\partial F_2/\partial x$ is the differential condition for a potential on a simply connected domain. For a closed curve $C$, the starting and ending values of the potential agree.
@@ -241,5 +241,5 @@ Kyle Kabasares, *Calculus III - Vector Calculus (Math 23, UC Merced 2014)*.
 | --- | --- | --- | --- |
 | $\mechanical{\mathbf v}$ | $\unit{m\,s^{-1}}$ | Velocity | Time derivative of the position vector. |
 | $\mechanical{\mathbf F}$ | $\unit{N}$ | Force | Vector describing a mechanical interaction. |
-| $\mechanical{W}$ | $\unit{J}$ | Work | Integral of force projected onto the direction of displacement. |
+| $\energy{W}$ | $\unit{J}$ | Work | Integral of force projected onto the direction of displacement. |
 | $\mechanical{F}_1$, $\mechanical{F}_2$, $\mechanical{F}_3$ | $\unit{N}$ | Force components | Cartesian components of the force field. |

@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Elliptic integral tables: modulus, amplitude, and complete values"
 catalogue_ids:
   - "21.9"
@@ -68,7 +68,7 @@ As $k\to1^-$, $K(k)$ diverges; $E(k)$ tends to 1. Do not linearly extrapolate a 
 
 ## Worked example and a convention trap
 
-For an ellipse with semiaxes $a=2$ and $b=\sqrt3$, $k^2=1-3/4=1/4$ and $k=1/2$. Its complete perimeter is $4aE(k)=8E(0.5)\approx11.739696$. As a check, a circle of radius 2 has perimeter $4\pi\approx12.5664$, and the ellipse should have a smaller perimeter.
+For an ellipse with semiaxes $a=2$ and $b=\sqrt3$, $k^2=1-3/4=1/4$ and $k=1/2$. Its complete perimeter is $4aE(k)=8E(0.5)\approx11.739698$. As a check, a circle of radius 2 has perimeter $4\pi\approx12.5664$, and the ellipse should have a smaller perimeter.
 
 Some libraries use the **parameter** $m=k^2$, rather than $k$. For example, SciPy's `ellipk(m)` and `ellipe(m)` take $m$. The table row at $k=0.5$ corresponds to input $m=0.25$ in that convention. Entering 0.5 there requests a different integral. [SciPy elliptic-integral convention](https://docs.scipy.org/doc/scipy/reference/generated/scipy.special.ellipk.html)
 

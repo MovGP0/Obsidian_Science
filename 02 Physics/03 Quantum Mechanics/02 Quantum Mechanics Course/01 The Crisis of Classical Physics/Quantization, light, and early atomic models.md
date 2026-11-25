@@ -62,13 +62,13 @@ A **blackbody** is a perfect absorber and emitter. Its spectrum has four feature
 **Wien's displacement law** gives $\signal{\lambda}_{\max}\thermal{T}=\quantity{2.898\times10^{-3}}{m\,K}$. The **Stefan–Boltzmann law** gives the total emitted power per area.
 
 $$
-\energy{R}(\thermal{T})=\int_0^\infty \energy{I}(\signal{\lambda},\thermal{T})\,d\signal{\lambda}
-=\varepsilon\sigma\thermal{T}^4,
+\energy{R}(\thermal{T})=\int_0^\infty \frac{c}{4}\,\energy{u}(\signal{\lambda})\,d\signal{\lambda}
+=\varepsilon\sigma_{\mathrm{SB}}\thermal{T}^4,
 \qquad
-\sigma=\quantity{5.6705\times10^{-8}}{W\,m^{-2}\,K^{-4}},
+\sigma_{\mathrm{SB}}=\quantity{5.6705\times10^{-8}}{W\,m^{-2}\,K^{-4}},
 $$
 
-where $\varepsilon$ is the emissivity. The Rayleigh–Jeans spectral exitance and Planck spectral energy density in the notes are
+where $\varepsilon$ is the emissivity, with $\varepsilon=1$ for a blackbody. The integrand $(c/4)\energy{u}(\signal{\lambda})$ is the Planck spectral exitance of a blackbody. The integral of the Rayleigh–Jeans exitance below diverges. The Rayleigh–Jeans spectral exitance and Planck spectral energy density in the notes are
 
 $$
 \energy{I}(\signal{\lambda},\thermal{T})=\frac{2\pi c k_{\mathrm B}\thermal{T}}{\signal{\lambda}^4},
@@ -131,7 +131,7 @@ $$
 \electric{V}_0=\frac{hc}{\electric{e}\signal{\lambda}}-\frac{\energy{\phi}}{\electric{e}}.
 $$
 
-For $\signal{\lambda}=\quantity{400}{nm}$, use $h=\quantity{6.626\times10^{-34}}{J\,s}$ and $c=\quantity{2.9989\times10^8}{m/s}$ to obtain $h\signal{f}=hc/\signal{\lambda}\simeq\quantity{3.10}{eV}$. With $\energy{\phi}=\quantity{2.93}{eV}$, the stopping energy is $\electric{e}\electric{V}_0=h\signal{f}-\energy{\phi}=\quantity{0.17}{eV}$ and $\electric{V}_0=\quantity{0.17}{V}$. In Einstein's explanation a single electron absorbs the entire photon energy.
+For $\signal{\lambda}=\quantity{400}{nm}$, use $h=\quantity{6.626\times10^{-34}}{J\,s}$ and $c=\quantity{2.9979\times10^8}{m/s}$ to obtain $h\signal{f}=hc/\signal{\lambda}\simeq\quantity{3.10}{eV}$. With $\energy{\phi}=\quantity{2.93}{eV}$, the stopping energy is $\electric{e}\electric{V}_0=h\signal{f}-\energy{\phi}=\quantity{0.17}{eV}$ and $\electric{V}_0=\quantity{0.17}{V}$. In Einstein's explanation a single electron absorbs the entire photon energy.
 
 ##### Röntgen's findings
 
@@ -253,7 +253,7 @@ $$
 
 ##### Rutherford scattering example 2
 
-Use $\energy{K}=\quantity{7.7\times10^6}{eV}$, $Z_1=2$, $Z_2=79$, $t=\quantity{2.1\times10^{-7}}{m}$, $\mechanical{r}=\quantity{1.0}{cm}$, and $n=\quantity{5.90\times10^{28}}{m^{-3}}$. The boxed result for the count per detector area divided by the incident count is $N(\theta)/N_{\mathrm i}=\quantity{3.2\times10^{-7}}{mm^{-2}}$.
+Use $\energy{K}=\quantity{7.7\times10^6}{eV}$, $Z_1=2$, $Z_2=79$, $\theta=45^\circ$, $t=\quantity{2.1\times10^{-7}}{m}$, $\mechanical{r}=\quantity{1.0}{cm}$, and $n=\quantity{5.90\times10^{28}}{m^{-3}}$. The boxed result for the count per detector area divided by the incident count is $N(\theta)/N_{\mathrm i}=\quantity{3.2\times10^{-7}}{mm^{-2}}$.
 
 ##### Balmer series and Rydberg–Ritz formula
 
@@ -262,7 +262,7 @@ $$
 \qquad n=3,4,5,\ldots
 $$
 
-The more general formula is $1/\signal{\lambda}_n=R(1/m^2-1/n^2)$ for $n>m$. The notes give $R_\infty=\quantity{1.09737\times10^7}{m^{-1}}$ and $R_{\mathrm H}=\quantity{1.09678\times10^7}{m^{-1}}$.
+The more general formula is $1/\signal{\lambda}_n=R_{\mathrm H}(1/m^2-1/n^2)$ for $n>m$. The notes give $R_\infty=\quantity{1.09737\times10^7}{m^{-1}}$ and $R_{\mathrm H}=\quantity{1.09678\times10^7}{m^{-1}}$.
 
 ##### Substitution for Rutherford example 1
 
@@ -446,6 +446,8 @@ Kyle Kabasares, *Modern Physics (Physics 10, UC Merced 2014)*.
 | $\thermal{T}$ | $\unit{K}$ | Absolute temperature | Determines the blackbody spectrum. |
 | $\signal{\lambda}_{\max}$ | $\unit{m}$ | Peak wavelength | Wavelength of maximum spectral exitance. |
 | $\energy{R}$ | $\unit{W\,m^{-2}}$ | Radiant exitance | Emitted power per unit surface area. |
+| $\sigma_{\mathrm{SB}}$ | $\unit{W\,m^{-2}\,K^{-4}}$ | Stefan–Boltzmann constant | Relates the radiant exitance of a blackbody to the fourth power of temperature. |
+| $\energy{u}(\signal{\lambda})$ | $\unit{J\,m^{-4}}$ | Spectral energy density | Planck energy density per unit volume and per unit wavelength. |
 | $\varepsilon$ | $1$ | Emissivity | Ratio of emitted power to that of a blackbody at the same temperature. |
 | $h$ | $\unit{J\,s}$ | Planck constant | Relates the energy of one quantum to its frequency. |
 | $\energy{\phi}$ | $\unit{eV}$ | Work function | Minimum energy needed to remove an electron from a material surface. |
@@ -457,6 +459,4 @@ Kyle Kabasares, *Modern Physics (Physics 10, UC Merced 2014)*.
 | $\mechanical{a}_0$ | $\unit{m}$ | Bohr radius | Radius of the $n=1$ orbit in the Bohr model. |
 | $\energy{E}_n$ | $\unit{eV}$ | Bound-state energy | Energy of the $n$th level relative to ionization. |
 | $\signal{\lambda}$ | $\unit{m}$ | De Broglie wavelength | Wavelength associated with momentum magnitude $\mechanical{p}$ through $h/\mechanical{p}$. |
-| $\lambda$ | $\unit{s^{-1}}$ | Decay constant | Probability rate for the decay of an individual nucleus. |
-| $R$ | $\unit{Bq}$ | Activity | Number of radioactive decays per unit time. |
-| $\mechanical{\rho}$ | $\unit{kg/m^3}$ | Mass density | Nuclear mass per unit volume. |
+| $\mechanical{\rho}$ | $\unit{kg/m^3}$ | Mass density | Bulk mass per unit volume of the gold foil. |

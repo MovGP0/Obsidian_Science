@@ -510,7 +510,13 @@ Kyle Kabasares, *Quantum Mechanics (Physics 137, UC Merced 2015)*.
 | --- | --- | --- | --- |
 | $\hbar$ | $\unit{J\,s}$ | Reduced Planck constant | Planck constant divided by $2\pi$. |
 | $\energy{E}$ | $\unit{J}$ | Energy eigenvalue | Energy associated with a stationary state. |
-| $\Psi$ | $\unit{m^{-3/2}}$ in three dimensions | Position-space wavefunction | Probability amplitude for one particle. Its squared magnitude is a probability density. |
+| $\Psi$ | $\unit{m^{-1/2}}$ | Position-space wavefunction | Probability amplitude $\Psi(x,t)$ for one particle in one dimension. Its squared magnitude is a probability density. |
+| $\Phi(\mechanical{p},t)$ | $\unit{(kg\,m\,s^{-1})^{-1/2}}$ | Momentum-space wavefunction | Probability amplitude in the momentum representation. $\lvert\Phi\rvert^2\,d\mechanical{p}$ is a probability. |
+| $\mechanical{p}$ | $\unit{kg\,m/s}$ | Momentum | Momentum of the particle. |
+| $x$ | $\unit{m}$ | Position | Position of the particle in one dimension. |
+| $h$ | $\unit{J\,s}$ | Planck constant | Constant in the de Broglie relation. |
+| $\sigma_Q$ | — | Standard deviation | Spread of the measured values of the observable $Q$. Its unit is the unit of $Q$. |
+| $\sigma_x$, $\sigma_{p_x}$ | $\unit{m}$, $\unit{kg\,m/s}$ | Position and momentum standard deviations | Spreads of position and momentum in the uncertainty relation. |
+| $c_n$ | $1$ | Expansion coefficient | Amplitude of the eigenfunction $f_n$ in the state. $\lvert c_n\rvert^2$ is the probability of the outcome $\lambda_n$. |
 | $\signal{\lambda}$ | $\unit{m}$ | Wavelength | Distance through which a sinusoidal wave repeats. |
 | $\signal{k}$ | $\unit{m^{-1}}$ | Wave number | Spatial phase change per unit distance. |
-| $R$, $T$ | $1$ | Reflection and transmission coefficients | Ratios of reflected and transmitted flux magnitudes to the incident flux magnitude. |

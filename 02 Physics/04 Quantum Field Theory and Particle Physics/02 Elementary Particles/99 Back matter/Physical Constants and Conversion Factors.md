@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Physical Constants and Conversion Factors"
 ---
 
@@ -20,6 +20,9 @@ title: "Physical Constants and Conversion Factors"
 | Bohr radius | $\mechanical{a}=\energy{\hbar}^2/\electric{e}^2\mechanical{m}_e=5.29177\times10^{-11}\,\unit{\mathrm{m}}$ |
 | Bohr energies | $\energy{E}_n=-\mechanical{m}_e\electric{e}^4/(2\energy{\hbar}^2n^2)=-\electric{\alpha}^2\mechanical{m}_e\mechanical{c}^2/2n^2=-13.6\,\unit{\mathrm{eV}}/n^2$ |
 
+> [!note]
+> The formulas for $\electric{\alpha}$, $\mechanical{r}_e$, $\mechanical{a}$, and $\energy{E}_n$ use Gaussian units, with $\electric{e}$ in esu. In SI units, replace $\electric{e}^2$ with $\electric{e}^2/4\pi\electric{\varepsilon_0}$.
+
 $$
 \begin{aligned}
 1\,\unit{\mathrm{\mathring A}}&=10^{-10}\,\unit{\mathrm{m}}\\
@@ -40,6 +43,7 @@ $$
 | $\electric{e}$ | $\unit{\mathrm{C}}$ | Elementary charge | The magnitude of the electron charge. |
 | $\mechanical{m}_e$ | $\unit{\mathrm{kg}}$ | Electron mass | The mass of the electron. |
 | $\mechanical{m}_p$ | $\unit{\mathrm{kg}}$ | Proton mass | The mass of the proton. |
+| $\electric{\varepsilon_0}$ | $\unit{\mathrm{F/m}}$ | Vacuum permittivity | The SI constant that converts the Gaussian formulas. |
 | $\electric{\alpha}$ | $1$ | Fine-structure constant | The electromagnetic coupling strength in Gaussian units. |
 | $\mechanical{r}_e$ | $\unit{\mathrm{m}}$ | Classical electron radius | The length defined from electron charge and rest energy. |
 | $\signal{\lambda}_e$ | $\unit{\mathrm{m}}$ | Electron Compton wavelength | The wavelength defined from Planck's constant and electron mass. |

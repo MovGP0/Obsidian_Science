@@ -21,7 +21,7 @@ This term represents the kinetic energy of the electron. Here, $\mu$ is the redu
 
 $$\hat{V} = -\frac{e^2}{4\pi \epsilon_0 r}$$
 
-This term describes the Coulomb attraction between the electron and proton, where $r$ is the distance between them, $e$ is the charge of the electron, and $\epsilon_0$ is the vacuum permittivity.
+This term describes the Coulomb attraction between the electron and proton, where $r$ is the distance between them, $e$ is the elementary charge, and $\epsilon_0$ is the vacuum permittivity.
 
 ## Fine Structure
 
@@ -29,17 +29,17 @@ The fine structure accounts for relativistic corrections and spin-orbit interact
 
 ### Relativistic Kinetic Energy Correction
 
-$$\hat{H}_{\text{rel}} = -\frac{\hbar^2}{8\mu^2 c^2}\nabla^4$$
+$$\hat{H}_{\text{rel}} = -\frac{\hbar^4}{8\mu^3 c^2}\nabla^4$$
 
 ###  Spin-Orbit Interaction
 
-$$\hat{H}_{\text{so}} = \frac{e\hbar}{2\mu c^2 r}\mathbf{L}\cdot\mathbf{S}$$
+$$\hat{H}_{\text{so}} = \frac{e^2}{8\pi \epsilon_0 \mu^2 c^2 r^3}\mathbf{L}\cdot\mathbf{S}$$
 
 where $\mathbf{L}$ is the orbital angular momentum, and $\mathbf{S}$ is the spin of the electron.
 
 ### Darwin Term
 
-$$\hat{H}_{\text{D}} = \frac{e^2\hbar^2}{8\mu c^2\epsilon_0}\delta(\mathbf{r})$$
+$$\hat{H}_{\text{D}} = \frac{e^2\hbar^2}{8\mu^2 c^2\epsilon_0}\delta^3(\mathbf{r})$$
 
 ## Hyperfine Structure
 

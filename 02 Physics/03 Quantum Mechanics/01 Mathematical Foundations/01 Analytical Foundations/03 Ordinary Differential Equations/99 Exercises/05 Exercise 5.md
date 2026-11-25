@@ -31,23 +31,23 @@ $$
 **(a)** Use the separation ansatz $\signal{\psi}(\mechanical{x},\mechanical{y})=X(\mechanical{x})Y(\mechanical{y})$ to show that the eigenfunctions are
 
 $$
-\signal{\psi}_{n,m}
+\signal{\psi}_{n_x,n_y}
 =\frac2{\mechanical{L}}
-\sin\left(\frac{n\pi\mechanical{x}}{\mechanical{L}}\right)
-\sin\left(\frac{m\pi\mechanical{y}}{\mechanical{L}}\right),
+\sin\left(\frac{n_x\pi\mechanical{x}}{\mechanical{L}}\right)
+\sin\left(\frac{n_y\pi\mechanical{y}}{\mechanical{L}}\right),
 $$
 
 with energies
 
 $$
-\energy{E}_{n,m}
-=\frac{\pi^2\mechanical{\hbar}^2}{2\mechanical{m}\mechanical{L}^2}(n^2+m^2).
+\energy{E}_{n_x,n_y}
+=\frac{\pi^2\mechanical{\hbar}^2}{2\mechanical{m}\mechanical{L}^2}(n_x^2+n_y^2).
 $$
 
 **(b)** List the first six energy levels in ascending order. Which are degenerate?
 
 > [!note]
-> In the box-state labels, $n$ and $m$ are positive integer indices. The symbol $\mechanical{m}$ in the Hamiltonian's denominator is the particle mass. The source does not specify whether “first six energy levels” counts distinct energy values or individual states; state your counting convention.
+> In the box-state labels, $n_x$ and $n_y$ are positive integer indices. The symbol $\mechanical{m}$ in the Hamiltonian's denominator is the particle mass. The source does not specify whether “first six energy levels” counts distinct energy values or individual states; state your counting convention.
 
 ## Worked solution
 
@@ -72,28 +72,28 @@ $$
 The zero boundary conditions at the lower edges remove the cosine terms. The conditions at the upper edges require
 
 $$
-\signal{k}_x=\frac{n\pi}{\mechanical{L}},\qquad
-\signal{k}_y=\frac{m\pi}{\mechanical{L}},\qquad n,m=1,2,3,\ldots.
+\signal{k}_x=\frac{n_x\pi}{\mechanical{L}},\qquad
+\signal{k}_y=\frac{n_y\pi}{\mechanical{L}},\qquad n_x,n_y=1,2,3,\ldots.
 $$
 
-Zero or negative separation constants would give only the zero solution under both endpoint conditions. Normalize each one-dimensional factor, using $\int_0^{\mechanical{L}}\sin^2(n\pi\mechanical{x}/\mechanical{L})\,\mathrm{d}\mechanical{x}=\mechanical{L}/2$:
+Zero or negative separation constants would give only the zero solution under both endpoint conditions. Normalize each one-dimensional factor, using $\int_0^{\mechanical{L}}\sin^2(n_x\pi\mechanical{x}/\mechanical{L})\,\mathrm{d}\mechanical{x}=\mechanical{L}/2$:
 
 $$
-X_n=\sqrt{\frac2{\mechanical{L}}}\sin\left(\frac{n\pi\mechanical{x}}{\mechanical{L}}\right),\qquad
-Y_m=\sqrt{\frac2{\mechanical{L}}}\sin\left(\frac{m\pi\mechanical{y}}{\mechanical{L}}\right).
+X_{n_x}=\sqrt{\frac2{\mechanical{L}}}\sin\left(\frac{n_x\pi\mechanical{x}}{\mechanical{L}}\right),\qquad
+Y_{n_y}=\sqrt{\frac2{\mechanical{L}}}\sin\left(\frac{n_y\pi\mechanical{y}}{\mechanical{L}}\right).
 $$
 
 Their product gives the question's normalized state:
 
 $$
-\signal{\psi}_{n,m}=\frac2{\mechanical{L}}
-\sin\left(\frac{n\pi\mechanical{x}}{\mechanical{L}}\right)
-\sin\left(\frac{m\pi\mechanical{y}}{\mechanical{L}}\right),
+\signal{\psi}_{n_x,n_y}=\frac2{\mechanical{L}}
+\sin\left(\frac{n_x\pi\mechanical{x}}{\mechanical{L}}\right)
+\sin\left(\frac{n_y\pi\mechanical{y}}{\mechanical{L}}\right),
 \qquad
-\energy{E}_{n,m}=\frac{\pi^2\mechanical{\hbar}^2}{2\mechanical{m}\mechanical{L}^2}(n^2+m^2).
+\energy{E}_{n_x,n_y}=\frac{\pi^2\mechanical{\hbar}^2}{2\mechanical{m}\mechanical{L}^2}(n_x^2+n_y^2).
 $$
 
-The double integral of $|\signal{\psi}_{n,m}|^2$ is the product of the two one-dimensional normalization integrals, hence equals one. Division by $XY$ was only a way to obtain the equations away from nodes; the resulting smooth functions satisfy the original equation at the nodes as well.
+The double integral of $|\signal{\psi}_{n_x,n_y}|^2$ is the product of the two one-dimensional normalization integrals, hence equals one. Division by $XY$ was only a way to obtain the equations away from nodes; the resulting smooth functions satisfy the original equation at the nodes as well.
 
 ### (b) Order the levels and count the states
 
@@ -105,7 +105,7 @@ $$
 
 Order the possible sums of two positive integer squares. The first six are:
 
-| Level | $\energy{E}/\energy{E}_*$ | State labels $(n,m)$ | Degeneracy |
+| Level | $\energy{E}/\energy{E}_*$ | State labels $(n_x,n_y)$ | Degeneracy |
 | --- | --- | --- | --- |
 | 1 | $2$ | $(1,1)$ | $1$ |
 | 2 | $5$ | $(1,2),(2,1)$ | $2$ |
@@ -116,7 +116,7 @@ Order the possible sums of two positive integer squares. The first six are:
 
 For this range it is enough to check indices $1$ through $4$: any index $5$ gives a sum of at least $26$. Direct enumeration then gives no other sum below $17$.
 
-For $n\ne m$, exchange of the two indices leaves the energy unchanged but gives a different spatial state. The two states are orthogonal, since at least one separated sine integral has unequal integer indices and is zero. They are therefore independent states at the same energy, not two names for one state. Any normalized linear combination in the same eigenspace also has that energy.
+For $n_x\ne n_y$, exchange of the two indices leaves the energy unchanged but gives a different spatial state. The two states are orthogonal, since at least one separated sine integral has unequal integer indices and is zero. They are therefore independent states at the same energy, not two names for one state. Any normalized linear combination in the same eigenspace also has that energy.
 
 If “first six” instead means the first six **individual states**, with multiplicity, the energy list is $2,5,5,8,10,10$ in units of $\energy{E}_*$. This alternative stops after the two states at the fourth distinct level. Higher sums can have degeneracies beyond simple index exchange; none is needed in the first six distinct levels.
 
@@ -140,10 +140,10 @@ Their degeneracies are $1,2,1,2,2,2$. If states are counted separately, the firs
 
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
-| $\signal{\psi},\signal{\psi}_{n,m}$ | $\unit{m^{-1}}$ | Two-dimensional wavefunction | The normalized state in the square box. |
-| $X,X_n,Y,Y_m$ | $\unit{m^{-1/2}}$ | Separated wavefunction factors | The normalized one-dimensional factors. |
+| $\signal{\psi},\signal{\psi}_{n_x,n_y}$ | $\unit{m^{-1}}$ | Two-dimensional wavefunction | The normalized state in the square box. |
+| $X,X_{n_x},Y,Y_{n_y}$ | $\unit{m^{-1/2}}$ | Separated wavefunction factors | The normalized one-dimensional factors. |
 | $\mechanical{x},\mechanical{y},\mechanical{L}$ | $\unit{m}$ | Coordinates and box length | The position coordinates and side length. |
-| $\mechanical{m}$ | $\unit{kg}$ | Particle mass | The mass, distinct from the integer state label m. |
-| $\energy{E},\energy{E}_{n,m},\energy{E}_*$ | $\unit{J}$ | State energies and energy unit | The eigenenergies and their common scale. |
+| $\mechanical{m}$ | $\unit{kg}$ | Particle mass | The mass, distinct from the integer state labels. |
+| $\energy{E},\energy{E}_{n_x,n_y},\energy{E}_*$ | $\unit{J}$ | State energies and energy unit | The eigenenergies and their common scale. |
 | $\signal{k}_x,\signal{k}_y$ | $\unit{m^{-1}}$ | Wave-number components | The oscillation rates along the two coordinates. |
 | $\mechanical{\hbar}$ | $\unit{J\,s}$ | Reduced Planck constant | The constant in the kinetic energy. |

@@ -424,5 +424,6 @@ Kyle Kabasares, *Partial Differential Equations (Math 126, UC Merced 2017)*.
 | $\thermal{v}$ | $\unit{K}$ | Temperature difference | Temperature relative to the equilibrium profile. |
 | $\thermal{r}$ | $\unit{K}$ | Boundary interpolation | Temperature profile that interpolates between the time-dependent endpoint values. |
 | $\thermal{\bar Q}$ | $\unit{K/s}$ | Effective temperature source | Normalized heat source minus the time derivative of the boundary interpolation. |
-| $L$, $H$ | $\unit{m}$ | Rectangular membrane dimensions | Length in the $x$ direction and height in the $y$ direction. |
-| $r$, $a$ | $\unit{m}$ | Radial distance and membrane radius | Distance from the center and its value at the fixed rim. |
+| $\thermal{A}$, $\thermal{B}$ | $\unit{K}$ | Endpoint temperatures | Prescribed temperatures at $x=0$ and $x=L$, constant or time dependent. |
+| $g(x)$ | $\unit{K}$ | Reduced initial temperature | Initial data $\thermal{f}(x)-\thermal{u}_E(x)$ of the problem for $\thermal{v}$. |
+| $L$ | $\unit{m}$ | Rod length or half ring length | Length of the rod on $[0,L]$, and half the length $2L$ of the circular wire on $[-L,L]$. |

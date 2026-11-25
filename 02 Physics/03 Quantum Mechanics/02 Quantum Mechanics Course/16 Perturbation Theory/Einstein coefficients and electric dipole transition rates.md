@@ -124,30 +124,34 @@ Kyle Kabasares, *Quantum Mechanics II (Physics 215B, UC Irvine 2018)*.
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
 | $\hbar$ | $\unit{J\,s}$ | Reduced Planck constant | Planck constant divided by $2\pi$. |
-| $\signal{\omega}$, $\signal{\omega}_j$ | $\unit{rad\,s^{-1}}$ | Angular frequencies | Common unperturbed frequency and frequencies of the new oscillator modes. |
-| $\mechanical{t}$, $\mechanical{t}_0$, $\Delta\mechanical{t}$ | $\unit{s}$ | Time | Observation time, initial or switching time, and elapsed time. |
+| $\signal{\omega}$ | $\unit{rad\,s^{-1}}$ | Angular frequency | Angular frequency of the resonant radiation mode. |
+| $\mechanical{t}$ | $\unit{s}$ | Time | Time variable of the photon-number rates. |
 | $\mechanical{m}$ | $\unit{kg}$ | Mass | Particle mass. |
-| $\energy{E}$, $\energy{E}_0$ | $\unit{J}$ | Energy eigenvalue | Energy of an eigenstate, including the common energy of a degenerate subspace. |
-| $E$ | $\unit{N}$ | Linear perturbation coefficient | Electric field strength multiplied by the signed charge, with the sign set by the potential convention. |
-| $\Gamma$ | $\unit{s^{-1}}$ | Transition rate | Leading probability per unit time for transition into the continuum. |
-| $\Omega$ | $\unit{sr}$ | Solid angle | Angular measure for the direction of a final momentum. |
-| $\mechanical{L}$ | $\unit{m}$ | Box side length | Periodic normalization length in each coordinate. |
-| $\signal{\mathbf k}$, $\signal{k}_j$ | $\unit{m^{-1}}$ | Wave vector and components | Spatial frequencies of the momentum eigenfunction. |
-| $\mechanical{\mathbf p}$, $\mechanical{\mathbf p}'$ | $\unit{kg\,m\,s^{-1}}$ | Momentum vectors | Momentum before and after scattering. |
-| $N$ | 1 | Number of states | Count of momentum states in the box. |
-| $c$ | $\unit{m\,s^{-1}}$ | Speed of light | Vacuum light speed used in the time coordinate and Maxwell equations. |
-| $\electric{q}$ | $\unit{C}$ | Electric charge | Signed charge of the particle, with the value expressed in the unit system used for the potentials. |
-| $\mechanical{\widehat{\mathbf p}}$ | $\unit{kg\,m\,s^{-1}}$ | Canonical momentum | Generator of spatial translations in the position representation. |
-| $\mathbf j(\mechanical{\mathbf r})$ | $\unit{m^{-2}\,s^{-1}}$ | Canonical number current | Symmetrized momentum density divided by mass. |
-| $\boldsymbol\epsilon_s$ | 1 | Polarization vector | Unit vector specifying the polarization of a transverse wave mode. |
-| $\mechanical{R}$ | $\unit{m}$ | Well radius | Radius at which the finite binding potential changes. |
-| $\energy{I}(\signal{\omega})$ | $\unit{W\,m^{-2}\,(\mathrm{rad\,s^{-1}})^{-1}}$ | Spectral intensity | Radiation intensity per unit angular frequency. |
-| $\overline N(\signal{k})$ | 1 | Mean mode occupation | Thermal average of the photon number in one mode. |
+| $\energy{E}_n$, $\energy{E}_i$, $\energy{E}_0$ | $\unit{J}$ | Atomic energies | Energies of the upper level, the lower level, and the lower (ground) state. |
+| $P_i$, $P_n$, $P_0$ | $1$ | Occupation probabilities | Equilibrium probabilities to find the atom in the lower or upper level. |
+| $N$ | $1$ | Photon number | Number of photons in one radiation mode. |
+| $\overline N(\signal{k})$ | $1$ | Mean mode occupation | Thermal average of the photon number in one mode. |
+| $A$, $B$ | $\unit{s^{-1}}$ | Mode emission and absorption coefficients | Spontaneous rate and induced transition rate per photon for a single resonant mode. |
+| $\alpha$ | $1$ | Reduced photon energy | Ratio $\hbar c\signal{k}/(k_B\thermal{T})$ in the thermal sum. |
 | $\thermal{T}$ | $\unit{K}$ | Temperature | Temperature of the equilibrium radiation and atom. |
 | $k_B$ | $\unit{J\,K^{-1}}$ | Boltzmann constant | Converts temperature to the thermal energy scale. |
-| $A$, $B$ | $\unit{s^{-1}}$ | Mode emission and absorption coefficients | Spontaneous rate and induced transition rate per photon for a single resonant mode. |
+| $\signal{\mathbf k}$, $\signal{k}$ | $\unit{m^{-1}}$ | Wave vector and wave number | Propagation vector of the radiation mode and its magnitude. |
+| $c$ | $\unit{m\,s^{-1}}$ | Speed of light | Vacuum light speed. |
+| $\electric{q}$ | $\unit{C}$ | Electric charge | Signed charge of the particle, with the value expressed in the unit system used for the potentials. |
+| $\energy{I}(\signal{\omega})$ | $\unit{W\,m^{-2}\,(\mathrm{rad\,s^{-1}})^{-1}}$ | Spectral intensity | Radiation intensity per unit angular frequency. |
+| $A(\signal{\mathbf k},s)$ | — | Mode amplitude | Gaussian-unit vector-potential amplitude of mode $(\signal{\mathbf k},s)$; its unit depends on the normalization. |
+| $\Gamma_{n\to i}^{\mathrm{ind}}$ | $\unit{s^{-1}}$ | Induced emission rate | Probability per unit time for induced emission from $n$ to $i$. |
+| $\Omega$ | $\unit{sr}$ | Solid angle | Angular measure for the direction of the emitted photon. |
+| $\boldsymbol\epsilon_s$ | $1$ | Polarization vector | Unit vector specifying the polarization of a transverse wave mode. |
+| $\varphi$ | — | Scalar field | Field of the scalar-field analogy for the mode oscillators. |
+| $\mechanical{\widehat{\mathbf p}}$ | $\unit{kg\,m\,s^{-1}}$ | Canonical momentum | Generator of spatial translations in the position representation. |
+| $\mathbf j(\mechanical{\mathbf r})$ | $\unit{m^{-2}\,s^{-1}}$ | Canonical number current | Symmetrized momentum density divided by mass. |
+| $\mechanical{\mathbf r}$, $\mechanical{\mathbf r}_i$ | $\unit{m}$ | Position | Position measured from the atom's center. |
 | $\mechanical{\mathbf R}$ | $\unit{m}$ | Sum of position vectors | Coordinate sum proportional to the dipole moment for equal charges. |
+| $H_0$ | $\unit{J}$ | Atomic Hamiltonian | Unperturbed Hamiltonian of the atom. |
 | $\mathbf j_0$ | $\unit{m\,s^{-1}}$ | Integrated number current | Sum of velocities when the vector potential is absent. |
 | $\mathbf d_{0n}$ | $\unit{m}$ | Transition position matrix element | Electric dipole matrix element with the common charge factored out. |
 | $\electric{q}\mathbf d_{0n}$ | $\unit{C\,m}$ | Transition electric dipole moment | Off-diagonal matrix element of the electric dipole. |
+| $d\energy{P}_{\mathrm{rad}}/d\Omega$ | $\unit{W\,sr^{-1}}$ | Angular radiated power | Power radiated into a polarization per unit solid angle. |
 | $\mechanical{\mathbf L}$, $\mechanical{L}_z$ | $\unit{J\,s}$ | Orbital angular momentum | Total orbital angular momentum and its projection on the $z$-axis. |
+| $X$, $Y$ | $\unit{m}$ | Transverse matrix elements | Matrix elements of $\mechanical{R}_x$ and $\mechanical{R}_y$ between angular momentum eigenstates. |

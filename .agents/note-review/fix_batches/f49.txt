@@ -1,0 +1,60 @@
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/02 Postulates of Quantum Mechanics/Quantum measurement and change-of-basis exercises.md
+- [Correctness] The Physical quantities table lists reflection and transmission coefficients $R,T$, which never appear. Replace them with the symbols actually used ($L_x,L_y,L_z$ in units of $\hbar$, $\Omega$, $w$, $P_w$).
+
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/02 Postulates of Quantum Mechanics/Quantum states, eigenfunctions, and time evolution problems.md
+- [Correctness] The Physical quantities table lists reflection and transmission coefficients $R,T$, which are unused. $T$ also means kinetic energy ($H=T+V$), the fall time, and the wave period, and $k$ means the box wave number, the spring constant, the delta shift, and the wave number. Rename the clashing symbols and list the ones used.
+
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/03 Measurement, Observables, and Uncertainty/Dirac notation, representations, and quantum uncertainty.md
+- [Correctness] The Physical quantities table lists $R$, $T$ as reflection and transmission coefficients, which the note never uses; $T$ is instead a generic matrix in "Linear algebra". Remove the row and add the symbols actually used ($\Phi(\mechanical{p},t)$, $\mechanical{p}$, $\sigma_Q$, $c_n$).
+- [Correctness] The table gives $\Psi$ in $\unit{m^{-3/2}}$ "in three dimensions", but every integral in the note is one-dimensional ($dx$), so $\Psi(x,t)$ has unit $\unit{m^{-1/2}}$ and $\Phi(\mechanical{p},t)$ has unit $\unit{(kg\,m\,s^{-1})^{-1/2}}$.
+
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/03 Measurement, Observables, and Uncertainty/Hermitian operators and uncertainty derivations.md
+- [Correctness] Symbol clash in the opening: $a(x)$, $b(x)$ denote functions while $a$, $b$ are also the integration limits in the Schwarz inequality, and later $a,b,c,d$ are real coefficients in Problem 3.12; rename the functions (e.g. $u(x),v(x)$) or the limits.
+- [Correctness] The quantities table gives $\Psi$ in $\unit{m^{-3/2}}$ "in three dimensions", but the note is one-dimensional ($\Psi(x,t)$, $dx$), so the unit is $\unit{m^{-1/2}}$; also add the symbols used ($\mechanical{p}$, $q$, $\sigma_Q$, $c_n$).
+
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/06 One-Dimensional Systems/06.05 Attractive Delta Potential.md
+- [Correctness] The source link [[Orbital angular momentum, rings, and spheres#Atkins problems 3.29 and 3.30|Physics 137]] targets a section about hydrogenic orbital and spin angular momentum, which has nothing to do with point interactions. The relevant heading in that note is "#Double delta well".
+
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/06 One-Dimensional Systems/06.08 One-Dimensional Systems Exercises.md
+- [Correctness] Symbol clash: $T$ denotes both the transmission coefficient (exercises 2, 8, and 10) and the oscillation period (exercise 6), and the table lists both. Rename the period, for example to $\tau$.
+
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/06 One-Dimensional Systems/Free particles, finite barriers, and point interactions.md
+- [Correctness] $\alpha$ denotes three different things: the delta strength in $V=-\alpha\delta(x)$, the Gaussian parameter in $\phi(k)=\frac{2N}{\sqrt\alpha}\cos(kx_0)e^{-k^2/(2\alpha)}$, and the cosine coefficient in the centered infinite well $\psi_{\mathrm{II}}=\alpha\cos(kx)+\beta\sin(kx)$; rename the last two (e.g. $C,D$ and $a_G$); equation tags (1),(2) are also reused for both the Fourier pair and the even-state matching equations.
+
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/06 One-Dimensional Systems/Square-well, oscillator, and tunneling problems.md
+- [Correctness] The physical-quantities table lists $R$ as "Activity" in $\unit{Bq}$, but here $R$ is the dimensionless reflection coefficient; $E_n$ is described as "relative to ionization" in eV, which is wrong for the infinite well (measured from the well floor); add $T$, $k$, $\kappa$, $\eta$, $L$, $m$, $\psi$.
+- [Correctness] Symbol clashes: in "Barrier boundary conditions" region III is $De^{ik_3x}+Fe^{-ik_3x}$ with $F=0$, but two paragraphs later it is $Fe^{ik_3x}+Ge^{-ik_3x}$ with $F$ the transmitted amplitude; the finite-well decay uses $\eta=1/\alpha$ with $\alpha$ never defined (use $\kappa$ as later in the note).
+
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/07 Barriers and Quantum Tunneling/07.05 Other Applications.md
+- [Correctness] The quantities table lists $\electric I,\electric V$ (current and voltage), but the note never uses these symbols; drop the row or add the $I$–$V$ characteristic it refers to.
+
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/08 Harmonic Oscillator/Harmonic oscillator wavefunctions and ladder calculations.md
+- [Correctness] The physical-quantities table defines $a_0$ as the Bohr radius in $\unit{m}$, but here $a_0$ is the first power-series coefficient; $\Psi$ is also given in $\unit{m^{-3/2}}$ in a purely 1D note.
+- [Correctness] Symbol clashes: $\alpha$ is the Hermite scale $\sqrt{m\omega/\hbar}$, then $n\pi/a$ in the $\langle x\rangle$ integral, then the delta strength in $V=+\alpha\delta(x)$; $y$ is both the dimensionless oscillator coordinate and the unknown function in $y''+y=0$; $E_0$ is the oscillator ground energy $\hbar\omega/2$ and also "the constant multiplying $n^2$" for the well (the comparison table correctly uses $E_1$); $k$ and $k'$ swap roles between "Strategy for wavefunctions" and the last paragraph.
+
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/09 Orbital Angular Momentum/Orbital angular momentum, rings, and spheres.md
+- [Correctness] The physical-quantities table lists $J_x$ as a probability flux with unit $\unit{s^{-1}}$, but the note uses $\hat J_x$ only as a generalized angular momentum component (section "General angular momentum"); also $R,T$ (reflection/transmission) never appear as symbols, while the mass $m$, $m_\ell$, $\hat J$, and $\Lambda^2$ are missing; rebuild the table from the symbols actually used.
+- [Correctness] In the "Physics 137 — Midterm 2 review" block, "Its inner product is $\int_a^b\lvert f\rvert^2dx<\infty$, $\langle f\mid g\rangle=\ldots$" labels the square-integrability condition as the inner product; separate the two statements.
+
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/09 Orbital Angular Momentum/Spatial rotations and the angular momentum generators.md
+- [Correctness] In "The three-dimensional rotation group", $O_y(\epsilon)O_x(\epsilon)-O_x(\epsilon)O_y(\epsilon)=\epsilon^2[L_x,L_y]$ with the given passive matrices equals $-i\epsilon^2L_z=\begin{pmatrix}0&\epsilon^2&0\\-\epsilon^2&0&0\\0&0&0\end{pmatrix}=O_z(+\epsilon^2)-I_3$, not the displayed $\begin{pmatrix}0&-\epsilon^2&0\\\epsilon^2&0&0\\0&0&0\end{pmatrix}$ and not $O_z(-\epsilon^2)-I_3$.
+- [Correctness] The physical-quantities table lists $\mechanical{L}$ both as "Box side length" (m) and as orbital angular momentum, and includes symbols the note never uses ($\mathbf p,\mathbf p'$, $c$, emission coefficients $A,B$); remove them and add the dimensionless generators $L_i,T_a,J_i$, $O$, $D(R)$, $\boldsymbol\omega$, $\ell,m$.
+
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/10 Spin/Spin in magnetic fields and atomic Zeeman splitting.md
+- [Correctness] The physical-quantities table lists $\mechanical{v}$ twice (particle speed and molar volume) and $A,B$ twice (emission coefficients and virial coefficients), includes unused symbols ($\mechanical t_0$, $\Delta\mechanical t$, oscillator $\mechanical x$, $E$ in N, box length $\mechanical L$, $\Delta E,\delta E$), and omits the spin-coupling constant $A$, $a,\tilde a$, $b_i$, $g$, $g_J$, $\mu_B$, $m_j$, $\chi$, $R_{n\ell}$; rebuild it and rename the spin-coupling constant to avoid the clash with $\magnetic{\mathbf A}$ and the virial $A(T)$.
+
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/10 Spin/Unitary rotations of spinors and Pauli matrices.md
+- [Correctness] The Physical quantities table lists symbols the note never uses ($\mechanical{L}$ as "Box side length", $c$, and $A$, $B$ as mode emission/absorption coefficients); $\mechanical{L}$ as a length also clashes with the orbital angular momentum $\mechanical{\mathbf L}$ in the same table. Remove these rows.
+- [Correctness] In "Spinor rotation" the Cartesian rotation is written $O=e^{-i\phi\widehat{\mathbf n}\cdot\mathbf L}$ with dimensionless generators, while the same letter $\mechanical{\mathbf L}$ is the dimensionful orbital operator elsewhere in the note; rename the $3\times3$ generators (e.g. $\mathcal J_i$) or write $e^{-i\phi\widehat{\mathbf n}\cdot\mechanical{\mathbf L}/\hbar}$.
+
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/11 Addition of Angular Momentum/11.10 Addition of Angular Momentum Exercises.md
+- [Correctness] Exercise 10 calls the ladder relation the "Racah recurrence"; the Racah formula is the closed-form expression for CG coefficients, while this is the standard ladder recursion relation. Rename it.
+
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/11 Addition of Angular Momentum/Coupled angular momentum and Clebsch–Gordan calculations.md
+- [Correctness] The Physical quantities table is largely copied from other notes: it lists $\mechanical{x}$ "along the oscillator axis", $E$ in newtons as a "linear perturbation coefficient", $\Delta\energy{E},\delta\energy{E}$ continuum scales, $\mechanical{L}$ "Box side length", $\mechanical{\mathbf p}'$ scattering momenta, $\eta$ switching rate, and $A,B$ as "mode emission and absorption coefficients", none of which occur here; in the note $A$ is the spin–spin coupling constant, $\magnetic{\mathbf A}$ the vector potential and $B$ the magnetic field. Rebuild the table from the symbols actually used.
+- [Correctness] "measured to about ten significant figures" is outdated: the 2023 Northwestern measurement gives $g/2=1.00115965218059(13)$ (0.13 ppt), about 14 significant figures; also drop the quoted wrong handwritten estimate $(\alpha/4\pi)^2$ and keep only $g-2=\alpha/\pi+O(\alpha^2)$.
+- [Correctness] The electron mass switches between $\mechanical{m}$ (in $H$, $\magnetic{\boldsymbol\mu}$, $\Delta H$) and $\mechanical{m}_e$ (in $H'$, $\magnetic{\mu}_B$) within the same derivation; use one symbol throughout.
+
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/11 Addition of Angular Momentum/Pauli matrices and two-spin calculations.md
+- [Correctness] The Physical quantities table defines $J_x$ as a "Probability flux" in $\unit{s^{-1}}$ and lists $R,T$ reflection/transmission coefficients; in this note $\hat J_x$ is an angular momentum component and $R,T$ never appear. Replace with $\hat{\mathbf S},\hat{\mathbf L},\hat{\mathbf J}$ in $\unit{J\,s}$.
+

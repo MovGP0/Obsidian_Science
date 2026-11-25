@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Complex analysis learning guide"
 catalogue_ids:
   - "14"
@@ -42,7 +42,7 @@ For $f(z)=z^2$, the quotient is $(f(z+h)-f(z))/h=2z+h$. Thus $f'(z)=2z$. At $z=i
 <!-- catalogue-complete-lesson-index:start -->
 ## Complete lesson index
 
-Read the prerequisite route above before the advanced lessons. The source topic links are in [[Planned Topics#14. Complex analysis|the detailed catalogue]].
+Read the prerequisite route above before the advanced lessons.
 
 - [[Complex limits and derivatives|Complex limits and derivatives]] — 14.1, 14.1.1, 14.1.1.1, 14.1.1.2, 14.1.1.3, 14.1.1.4.
 - [[Holomorphic functions and their consequences|Holomorphic functions and their consequences]] — 14.1.2, 14.1.2.1, 14.1.2.2, 14.1.2.3, 14.1.2.4.

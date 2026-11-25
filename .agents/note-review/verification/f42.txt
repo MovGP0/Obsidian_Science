@@ -1,0 +1,48 @@
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/11 The Crucial Experimental Tests of Cosmic Relativity/11.03.01 The Propagation of Light in a Moving Frame.md
+- FIXED | Loop travel time is L/c_w to first order, not L/[c_w(1-v/c_w)]; (11.8), GT and (11.10) loop results lose the first-order term | Added a note callout after (11.9) with the segment-by-segment sum (+2l along, -2l against v) giving L/c_w and Delta t' = L/c for light; added l_i and Delta x_AB' to the table
+- FIXED | (11.9) divides an open-path displacement gamma L by a loop duration, so the ratio is not a velocity | Same note callout states that the loop endpoint displacement is about zero and L is a path length, so (11.9) is not a velocity
+- FIXED | Lorentz factor written as signal{gamma} | Replaced all 18 \signal{\gamma} by \mechanical{\gamma}, the vault convention for the Lorentz factor
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/11 The Crucial Experimental Tests of Cosmic Relativity/11.03.02 A Simple Demonstration of the Conflict Between the PoR and the Light Hypothesis.md
+- REJECTED | (11.11) uses L/[c(1-v/c)] for a loop co-moving with the detector | The loop is at rest in frame O (loop of length L in the apparatus rest frame) and only the detector moves along it (Fig. 11.3, d = vt), so the lapping interval L/(c-v) and N = (c-v)/(c_s-v) are correct; first-order cancellation applies only to a co-moving loop
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/11 The Crucial Experimental Tests of Cosmic Relativity/11.04 The Experiment on the One-Way Relative Velocity of Light.md
+- FIXED | With fixed mirrors, standard relativity predicts 2Lv/c^2 = 7e-17 s per m/s, matching the plotted slope, so the light result does not discriminate | Verified 2*(3.1 m/c)*(v/c) = 6.9e-17 s per m/s and 350 mV*(2e-18 s/10 mV) = 7e-17 s; added a note callout stating this after the result paragraph
+- FIXED | 5 ms precision must be 5 us (Tv/c_s = 76 us per m/s vs plotted 80 us per m/s) | Changed the text to 5 us and rewrote the note box to give the check and say the value is corrected; added c_s to the table
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/11 The Crucial Experimental Tests of Cosmic Relativity/11.06 Cosmic Relativity and Clock Synchronisation.md
+- FIXED | v_r defined as receiver velocity but v used in (11.14) | Defined the receiver velocity as bold v and removed v_r from the table
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/11 The Crucial Experimental Tests of Cosmic Relativity/11.07 Experimental Tests of Time Dilation - Atomic Clocks.md
+- FIXED | l_i in (11.17) not defined | Added a sentence after (11.17): l_i = v_i t_i is the directed displacement of segment i
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/11 The Crucial Experimental Tests of Cosmic Relativity/11.08 Experimental Tests of Time Dilation - GNSS and GPS.md
+- FIXED | GPS speed at 26 560 km is 3.87 km/s, not 3.6 km/s | sqrt(GM/r) = 3.874 km/s; text and table now give 3.87 km/s at 26 560 km and say the source prints 3.6 km/s and 26000 km
+- FIXED | Bidou -> BeiDou, QNSS -> QZSS, orbits include inclined geosynchronous | Corrected both names and described the regional systems as geostationary and inclined geosynchronous
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/11 The Crucial Experimental Tests of Cosmic Relativity/11.08.01 Time Dilations in the GNSS Satellites.md
+- FIXED | GM/(R0 c^2) = 6.95e-10, gravitational 0.53 ns/s, motional -0.083 ns/s, net +38.5 us/day | Recomputed (6.96e-10, 0.529 ns/s = 45.7 us/day, -0.0835 ns/s = -7.2 us/day, net 38.5 us/day); replaced the values and noted the printed source values
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/11 The Crucial Experimental Tests of Cosmic Relativity/11.09 The Absence of a Relative Time Dilation in Accelerated Frames.md
+- FIXED | Replace retained 33 fs, 30 nm, 1 ns/day by 33 ps, 30 um, 0.1 ns/day | Verified (10 mm/c = 33 ps, c*1e-13 s = 30 um, g d/c^2*86400 s = 0.094 ns); corrected the text and reduced the note box to the source values and checks
+- PARTLY | f_g = dA_g/dt lacks units and normalisation versus -c dg_0i/dt elsewhere | Units and normalisation were unstated; added the dimensionless normalisation A_g = -v/c (linked to 01.05), unit s^-1 for f_g and induced acceleration c f_g = -dv/dt, and updated the table; kept the symbol f_g
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/11 The Crucial Experimental Tests of Cosmic Relativity/11.10.01 An Early History of the Relevant Ideas.md
+- FIXED | Lodge dated 1893 but ref. [15] is 1897 | Text now cites the 1893 paper (Phil. Trans. R. Soc. A 184, 727) and the 1897 paper [15]; the reference list (not in batch) is unchanged
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/11 The Crucial Experimental Tests of Cosmic Relativity/11.10.02 The Experiments by G. Sagnac.md
+- PARTLY | Mixed signal{omega} and bare boldsymbol{omega} for angular velocity | Within this note, wrapped all three bare \boldsymbol{\omega} in \signal{}; 11.08.02 (not in batch) still uses bare \boldsymbol{\omega}
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/11 The Crucial Experimental Tests of Cosmic Relativity/11.10.03 The Michelson-Gale Experiment.md
+- FIXED | 2pi/86400 is the solar-day rate; sidereal 2pi/86164 s = 7.292e-5 rad/s | Replaced with the sidereal rate 2pi/86 164 s = 7.292e-5 rad/s
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/11 The Crucial Experimental Tests of Cosmic Relativity/11.10.04 The Proof of the Galilean Nature of a Rotating Frame.md
+- FIXED | Moving-frame line element written in unprimed dx; correct primed form and null-condition check | Extended the existing note callout with ds^2 = dx'^2 +- 2v dx' dt - c^2(1-v^2/c^2)dt^2 for x = x' +- vt and the null result dx'/dt = c -+ v
+- FIXED | c' = R dphi/dt uses the stationary angle | Changed to c' = R dphi'/dt and stated dphi/dt = c/R in the stationary frame
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/12 Cosmic Relativity and Quantum Dynamics/12 References.md
+- FIXED | Entry 5 garbled; entry 18 title is The Principles of Quantum Mechanics | Entry 5 now reads A tribute to G. Ramachandran, ed. by G. Umesh et al. (Sriranga Digital Software Technologies, ...); entry 18 title corrected
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/12 Cosmic Relativity and Quantum Dynamics/12.01 Cosmic Relativity and Quantum Dynamics.md
+- FIXED | Delta x Delta p >= hbar is not the standard bound | Display now gives the Kennard relation >= hbar/2; the source form is stated as an order-of-magnitude variant
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/12 Cosmic Relativity and Quantum Dynamics/12.02 The True Nature of the Schrodinger Equation.md
+- FIXED | Momentum operator i hbar nabla has the wrong sign | Text now gives p = -i hbar nabla and notes the source sign error
+- FIXED | Path probabilities a^2, b^2 treat complex amplitudes as real | Changed to squared moduli abs(a)^2 and abs(b)^2 in the text and described a, b, c as complex weights in the table
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/12 Cosmic Relativity and Quantum Dynamics/12.04 The Quantum Interference of Single Particles.md
+- FIXED | a, b are both path weights and action labels S(a), S(b); zeta_B vs zeta | Renamed S(a), S(b) to S_1, S_2 throughout (also in the two action contributions), renamed zeta_B to zeta, and updated the table
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/12 Cosmic Relativity and Quantum Dynamics/12.07 The Minuteness of the Quantum Zero-Point Energy.md
+- FIXED | p is momentum and also pressure | Renamed the pressure to P (\energy{P}) in the text and table
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/12 Cosmic Relativity and Quantum Dynamics/12.08 The Dirac Equation and Relativity.md
+- FIXED | p_j = i hbar d/dx_j has the wrong sign | Text now gives p_j = -i hbar d/dx_j and notes that the source omits the minus sign
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/13 Cosmic Gravity and the Quantum Spin/13 References.md
+- FIXED | Pauli 58, Berry 392 45-57, Uhlenbeck G., Duck-Sudarshan 1998, Lamoreaux, Bose p. 178 | Applied all six corrections (Bose page range now 178-181)
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/13 Cosmic Gravity and the Quantum Spin/13.00 Cosmic Gravity and the Quantum Spin.md
+- FIXED | EM dipole energy is E = -mu.B | Text now gives E = -mu.B and notes that the source omits the minus sign
+- FIXED | Torque (13.3) has the wrong sign relative to H = s.B_g/2 | Verified via Heisenberg equation ds/dt = (1/2)B_g x s = -Omega x s; (13.3) now reads T = ds/dt = (1/2)B_g x s = -Omega x s with a sentence on the source sign; 13.02 (not in batch) still says the order in (13.3) gives the opposite direction and needs a wording update

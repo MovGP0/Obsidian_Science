@@ -55,7 +55,7 @@ The factors depend on the expansion convention.
 For a particle in the box $[0,\mechanical{L}]$, the normalized sine functions
 
 $$
-\phi_n(\mechanical{x})=\sqrt{\frac2{\mechanical{L}}}
+\signal{\chi}_n(\mechanical{x})=\sqrt{\frac2{\mechanical{L}}}
 \sin\left(\frac{n\pi\mechanical{x}}{\mechanical{L}}\right),
 \qquad n=1,2,3,\ldots,
 $$
@@ -70,11 +70,11 @@ $$
 The initial-state expansion is
 
 $$
-\signal{\psi}(\mechanical{x},0)=\sum_{n=1}^{\infty}c_n\phi_n(\mechanical{x}),
-\qquad c_n=\langle\phi_n|\psi(0)\rangle.
+\signal{\psi}(\mechanical{x},0)=\sum_{n=1}^{\infty}\beta_n\signal{\chi}_n(\mechanical{x}),
+\qquad \beta_n=\langle\signal{\chi}_n|\signal{\psi}(0)\rangle.
 $$
 
-Here $c_n$ is a **probability amplitude**. For a normalized initial state, $|c_n|^2$ is the probability of measuring
+Here $\beta_n$ is a **probability amplitude**. For a normalized initial state, $|\beta_n|^2$ is the probability of measuring
 
 $$
 \energy{E_n}=\frac{n^2\pi^2\mechanical{\hbar}^2}{2\mechanical{m}\mechanical{L}^2}.
@@ -84,12 +84,12 @@ Time evolution gives
 
 $$
 \signal{\psi}(\mechanical{x},\signal{t})
-=\sum_{n=1}^{\infty}c_n\phi_n(\mechanical{x})
+=\sum_{n=1}^{\infty}\beta_n\signal{\chi}_n(\mechanical{x})
 e^{-i\energy{E_n}\signal{t}/\mechanical{\hbar}}.
 $$
 
 > [!note]
-> The source reuses $c_n$ here for coefficients in a **normalized sine basis**. These box amplitudes are not the coefficients of the earlier unnormalized complex exponentials. For the latter, the normalized-basis coefficient is $d_n=\sqrt{2L}\,c_n$.
+> The box amplitudes $\beta_n$ are coefficients in a **normalized sine basis**. They are not the coefficients $c_n$ of the earlier unnormalized complex exponentials. For the latter, the normalized-basis coefficient is $d_n=\sqrt{2L}\,c_n$.
 
 Each mode has its own time frequency, as for a vibrating string. The spatial modes and fixed-end boundary conditions are the same. The temporal laws differ:
 
@@ -106,9 +106,9 @@ Both systems use the same second spatial derivative with the same boundary condi
 
 Insert a single normalized box mode as the initial state. Projection must give one coefficient equal to one and all others zero. Its time factor has unit magnitude, so the probability density is stationary. This checks the coefficient normalization and the sign-independent conservation of norm.
 
-For several modes, orthogonality gives $\int_0^{\mechanical{L}}|\signal{\psi}|^2\,d\mechanical{x}=\sum_n|c_n|^2$ at every time. The local density can still vary because cross terms need not vanish before spatial integration. Energy probabilities remain fixed under this time-independent Hamiltonian.
+For several modes, orthogonality gives $\int_0^{\mechanical{L}}|\signal{\psi}|^2\,d\mechanical{x}=\sum_n|\beta_n|^2$ at every time. The local density can still vary because cross terms need not vanish before spatial integration. Energy probabilities remain fixed under this time-independent Hamiltonian.
 
-Norm convergence is weaker than finite mean energy. Since the displayed energies grow as $n^2$, finite mean energy requires $\sum_n n^2|c_n|^2<\infty$. Thus a normalized coefficient sequence can define a state without defining a finite-energy preparation. Boundary conditions and the energy domain remain part of the physical model.
+Norm convergence is weaker than finite mean energy. Since the displayed energies grow as $n^2$, finite mean energy requires $\sum_n n^2|\beta_n|^2<\infty$. Thus a normalized coefficient sequence can define a state without defining a finite-energy preparation. Boundary conditions and the energy domain remain part of the physical model.
 
 ## Physical quantities
 
@@ -118,8 +118,8 @@ Norm convergence is weaker than finite mean energy. Since the displayed energies
 | $\mechanical{L}$ | $\unit{m}$ | Box length | The distance between the confining boundaries. |
 | $\mechanical{m}$ | $\unit{kg}$ | Mass | The particle mass. |
 | $\mechanical{\hbar}$ | $\unit{J\,s}$ | Reduced Planck constant | The action scale in the spectrum and evolution. |
-| $\signal{\psi}$, $\phi_n$ | $\unit{m^{-1/2}}$ | Wavefunction | The state and normalized one-dimensional box modes. |
-| $c_n$ | $1$ | Box-state amplitude | The quantum coefficient in the normalized sine basis. |
+| $\signal{\psi}$, $\signal{\chi}_n$ | $\unit{m^{-1/2}}$ | Wavefunction | The state and normalized one-dimensional box modes. |
+| $\beta_n$ | $1$ | Box-state amplitude | The quantum coefficient in the normalized sine basis. |
 | $\energy{E_n}$ | $\unit{J}$ | Energy | The box energy eigenvalue. |
 | $\signal{t}$ | $\unit{s}$ | Time | The elapsed time in the state evolution. |
 | $\signal{\omega_n}$ | $\unit{s^{-1}}$ | Mode angular frequency | The temporal frequency of the specified string or quantum mode. |

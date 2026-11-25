@@ -30,7 +30,7 @@ For a linear transformation $T\colon\mathbb R^n\to\mathbb R^m$ with standard mat
 2. $T(\mathbf{x})=0$ has only the solution $\mathbf{x}=0$.
 3. The columns of $A$ are linearly independent.
 
-The conditions on [[#Vector spaces and subspaces|the section on Vector spaces and subspaces]] for injectivity are also equivalent to $\ker T=\{0\}$, $\operatorname{nullity}A=0$, and $\operatorname{rank}A=n$.
+The conditions on [[#The four fundamental subspaces|the section on The four fundamental subspaces]] for injectivity are also equivalent to $\ker T=\{0\}$, $\operatorname{nullity}A=0$, and $\operatorname{rank}A=n$.
 
 The following are equivalent conditions for surjectivity.
 
@@ -102,7 +102,7 @@ $$
 
 For differentiation $T\colon P_3\to P_3$, the basis $(1,t,t^2,t^3)$ maps to $(0,1,2t,3t^2)$. The corresponding columns are $(0,0,0,0)^{\mathsf T}$, $(1,0,0,0)^{\mathsf T}$, $(0,2,0,0)^{\mathsf T}$, and $(0,0,3,0)^{\mathsf T}$, reproducing $A_{\mathrm{diff}}$ on [[#Representing transformations as matrices|the section on Representing transformations as matrices]].
 
-The final example returns to $M_{2\times2}$ with the same matrix-unit basis in domain and codomain. The matrix $\begin{pmatrix}a&b\\c&d\end{pmatrix}$ has coordinate column $(a,b,c,d)^{\mathsf T}$. Transposition maps it to $(a,c,b,d)^{\mathsf T}$, so the columns of the representing matrix are $e_1,e_3,e_2,e_4$, as on [[Coordinate matrices and diagonalization#Stretching along a basis direction|the section on Stretching along a basis direction]].
+The final example returns to $M_{2\times2}$ with the same matrix-unit basis in domain and codomain. The matrix $\begin{pmatrix}a&b\\c&d\end{pmatrix}$ has coordinate column $(a,b,c,d)^{\mathsf T}$. Transposition maps it to $(a,c,b,d)^{\mathsf T}$, so the columns of the representing matrix are $e_1,e_3,e_2,e_4$, as on [[Coordinate matrices and diagonalization#Coordinate representation of a matrix|the section on Coordinate representation of a matrix]].
 
 For the map from [[#Representing transformations as matrices|the section on Representing transformations as matrices]],
 
@@ -284,7 +284,7 @@ $$
 \|Qx\|^2=(Qx)^{\mathsf T}(Qx)=x^{\mathsf T}Q^{\mathsf T}Qx=x^{\mathsf T}x=\|x\|^2.
 $$
 
-It also preserves inner products, as on [[#Orthogonal projections|the section on Final review. Orthogonal projections]].
+It also preserves inner products, as on [[#Orthonormal sets|the section on Orthonormal sets]].
 
 ##### Coordinates in an orthonormal basis
 

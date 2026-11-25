@@ -18,7 +18,7 @@ SVD generalizes diagonalization by using two different orthonormal bases. In gen
 
 The singular values are the square roots of the eigenvalues of $A^\dagger A$, which is Hermitian and positive semidefinite. The columns of $U$ are the **left singular vectors**; the columns of $V$ are the **right singular vectors** (Fig. 6.1).
 
-These are singular vectors, not eigenvectors of $A$. The source states that eigenvectors exist only for square, diagonalizable matrices.
+These are singular vectors, not eigenvectors of $A$.
 
 > [!note]
 > A square complex matrix can have eigenvectors without being diagonalizable. Diagonalizability requires a complete eigenbasis. For a rectangular matrix, the usual eigenvalue equation does not act within one vector space. In the rectangular SVD, retain the required singular values and zero entries with the appropriate matrix sizes.

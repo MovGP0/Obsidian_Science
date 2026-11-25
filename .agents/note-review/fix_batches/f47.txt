@@ -1,0 +1,25 @@
+=== 01 Mathematics/06 Probability and Statistics/01 Counting and Conditional Probability/Counting, conditional probability, and Bayes problems.md
+- [Correctness] In "Products of sample spaces and independence", the step $\binom52=5!/(3!2!)=20/2=10$ has an invalid intermediate: $5!/(3!2!)=120/12$; write $=(5\cdot4)/2=10$.
+
+=== 01 Mathematics/06 Probability and Statistics/02 Random Variables and Distributions/Discrete and continuous probability distributions.md
+- [Correctness] Symbol clash: $\lambda$ is first the roughness weight in $f(x)=\sum(x_{ij}-y_{ij})^2+\lambda R(x)$ and later the exponential rate in $\operatorname{Exp}(\lambda)$, and $f$ denotes both that cost function and a density; rename the smoothing weight (e.g. $\beta$) and the cost (e.g. $C(x)$).
+
+=== 01 Mathematics/06 Probability and Statistics/02 Random Variables and Distributions/Moments and transformations of random variables.md
+- [Correctness] In "Reciprocal of a Cauchy variable", the branch $F_Y(y)=1-F_X(1/y)$ for $y<0$ is wrong: for $y<0$, $\{1/X\le y\}=\{1/y\le X<0\}$, so $F_Y(y)=\tfrac12-F_X(1/y)$ (check: $y=-1$ gives $1/4$; $y\to0^-$ gives $1/2$). The $y>0$ branch $\tfrac32-F_X(1/y)$ and the resulting density are correct; also fix the sentence claiming the handwritten $1-F_X(1/y)$ applies for $y<0$.
+- [Correctness] In the review "Pareto" section, "modeling earthquake magnitudes" is misleading: under Gutenberg–Richter, magnitudes are approximately exponential while seismic energies or moments are Pareto, consistent with this note's own exponential-to-Pareto transformation $Y=e^X$.
+
+=== 01 Mathematics/06 Probability and Statistics/03 Sampling, Estimation, and Inference/Large numbers and normal approximation problems.md
+- [Correctness] In "Numerical summaries of data", the hourly temperatures $41$ to $58$ are labelled degrees Celsius; $58\,^\circ\mathrm C$ exceeds the world-record air temperature, so these are almost certainly degrees Fahrenheit. Check the source and fix the unit in the text and in the physical-quantities table ($\thermal{\bar x}_{11}\approx\quantity{44.7}{{}^\circ F}$).
+
+=== 01 Mathematics/06 Probability and Statistics/04 Regression, Simulation, and Stochastic Models/Likelihood estimation and Monte Carlo modeling problems.md
+- [Correctness] The "Physical quantities" table lists symbols with wrong meanings for this note: $M$ is the Monte Carlo hit count (not a carrying capacity), $K$ is the MSE constant in $K/N$ (not a koala population), $\lambda$ is the log-likelihood (not a Lyapunov exponent), and $y_i$, $x,y$, $s$ (age groups, ingredients, protein surplus) do not occur; replace it with a table for the quantities actually used (e.g. height $x_i$ in in) or remove it.
+- [Correctness] In "Trapezoidal rule", the sentence "The handwritten expectation omits the square, which is required by the calculation on [[#Trapezoidal rule|the section on Trapezoidal rule]]" links to its own section; the squared-error calculation is in "#Expected squared error", so retarget the link.
+
+=== 01 Mathematics/06 Probability and Statistics/04 Regression, Simulation, and Stochastic Models/Markov models and population dynamics.md
+- [Correctness] The "Physical quantities" table lists $\tau$ as "total population" (here $\tau_{ij}$ are hitting times), $t$ as "iron surplus" (here $t$ is time), and $T$, $\lambda$, $x$, $y$, $s$ (sampling period, Lyapunov exponent, ingredients, protein) which never occur; remove these rows.
+- [Correctness] Symbol clash: $\beta$ is the logistic crowding coefficient $\alpha/M$ (units s$^{-1}$) and also the predator-effect coefficient in $\alpha R(1-\beta W)$ (dimensionless), and both appear as separate rows in the table; rename one (e.g. $b$ for the predator effect).
+
+=== 01 Mathematics/06 Probability and Statistics/04 Regression, Simulation, and Stochastic Models/Regression, validation, and goodness of fit.md
+- [Correctness] In "Traffic accidents", the note states the $\chi^2_{k-1}$ reference for specified probabilities, but here $\mu$ is estimated from the data, so the reference is $\chi^2_{k-1-1}=\chi^2_1$; add this and finish the test: $T\approx1.34$, $p\approx0.25$, so the Poisson model is not rejected (also note that $E_3\approx4.2<5$).
+- [Correctness] Symbol clash: $\alpha$ is the regression intercept in $Y_i=\alpha+\beta x_i+U_i$ and also the significance level in the $(1-\alpha)$ intervals and $z_{\alpha/2}$; $a$ is both the speed-trap cutoff and an interval endpoint. Rename the intercept (e.g. $\beta_0$) or the endpoints.
+

@@ -425,7 +425,7 @@ For two electrons in a $d$ subshell, parallel spins can occupy $m_\ell=-2,-1$ or
 
 What are the $L$, $S$, and $J$ values for the first few excited states of helium? The ground configuration is $1s^2$. Excite one electron to form $1s\,2p$, consistent with the orbital dipole rule $\Delta\ell=\pm1$. The notes also ask how the $1s\,2s$ configuration can be reached and suggest asking Dr. Menke.
 
-For $1s\,2p$, the first electron has $\ell_1=0$, $m_{\ell_1}=0$, and $s_1=1/2$. The second has $\ell_2=1$, $m_{\ell_2}=-1,0,1$, and $s_2=1/2$. This gives $L=1$ ($P$), $S=0$ or $1$, and $J=1$ for the singlet or $0,1,2$ for the triplet. The ordering predicted by the Hund-rule exercise puts $\,{}^1P_1$ highest and $\,{}^3P_0$ lowest by maximum $S$ and minimum $J$, with $\,{}^3P_1$ and $\,{}^3P_2$ between them.
+For $1s\,2p$, the first electron has $\ell_1=0$, $m_{\ell_1}=0$, and $s_1=1/2$. The second has $\ell_2=1$, $m_{\ell_2}=-1,0,1$, and $s_2=1/2$. This gives $L=1$ ($P$), $S=0$ or $1$, and $J=1$ for the singlet or $0,1,2$ for the triplet. The Hund-rule exercise puts $\,{}^1P_1$ highest and $\,{}^3P_0$ lowest by maximum $S$ and minimum $J$. Hund's rules apply to the ground term of equivalent electrons, so only the result that the triplet lies below the singlet is valid here. The measured helium $2\,{}^3P$ multiplet is inverted: $\,{}^3P_2$ is lowest and $\,{}^3P_0$ is highest, about $30\,\unit{GHz}$ above $\,{}^3P_1$.
 
 For helium $1s\,2s$, both electrons have $\ell=0$ and $s=1/2$. Thus $L=0$, and $S=0,1$ gives the terms $\,{}^1S_0$ and $\,{}^3S_1$. In using Hund's rules, prioritize $S$, then $L$, then $J$.
 
@@ -453,7 +453,7 @@ Kyle Kabasares, *Modern Physics (Physics 10, UC Merced 2014)*.
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
 | $\electric{e}$ | $\unit{C}$ | Elementary charge | Magnitude of the electron charge. |
-| $\varepsilon$ | $1$ | Emissivity | Ratio of emitted power to that of a blackbody at the same temperature. |
+| $\electric{\varepsilon_0}$ | $\unit{F/m}$ | Vacuum permittivity | Electric constant in the Coulomb potential energy. |
 | $h$ | $\unit{J\,s}$ | Planck constant | Relates the energy of one quantum to its frequency. |
 | $\energy{E}_n$ | $\unit{eV}$ | Bound-state energy | Energy of the $n$th level relative to ionization. |
 | $\signal{\lambda}$ | $\unit{m}$ | De Broglie wavelength | Wavelength associated with momentum magnitude $\mechanical{p}$ through $h/\mechanical{p}$. |
@@ -464,6 +464,9 @@ Kyle Kabasares, *Modern Physics (Physics 10, UC Merced 2014)*.
 | $\magnetic{\mu}_B$ | $\unit{J/T}$ | Bohr magneton | Scale of the electron orbital magnetic moment. |
 | $\mechanical{\vec S}$ | $\unit{J\,s}$ | Spin angular momentum | Intrinsic angular momentum of a particle. |
 | $\mechanical{\vec J}$ | $\unit{J\,s}$ | Total angular momentum | Vector sum of orbital and spin angular momenta. |
-| $\lambda$ | $\unit{s^{-1}}$ | Decay constant | Probability rate for the decay of an individual nucleus. |
-| $R$ | $\unit{Bq}$ | Activity | Number of radioactive decays per unit time. |
-| $\tau$ | $\unit{s}$ | Mean lifetime | Reciprocal of the decay constant. |
+| $R(r)$ | — | Radial wave function | Radial factor of the separated hydrogen wave function. |
+| $\mechanical{\vec\tau}$ | $\unit{N\,m}$ | Torque | Torque $\magnetic{\vec\mu}\times\magnetic{\vec B}$ on a magnetic moment in a field. |
+| $\mechanical{\vec L}$ | $\unit{J\,s}$ | Orbital angular momentum | Angular momentum of the electron orbital motion. |
+| $\mechanical{L}_z$ | $\unit{J\,s}$ | Orbital angular momentum projection | Component $m_\ell\hbar$ of $\mechanical{\vec L}$ along the $z$-axis. |
+| $g_s$ | $1$ | Spin $g$ factor | Ratio that sets the spin magnetic moment, $g_s\simeq2$. |
+| $\magnetic{\vec B}$ | $\unit{T}$ | Magnetic flux density | Applied field that exerts the torque on the magnetic moment. |

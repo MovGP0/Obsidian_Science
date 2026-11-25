@@ -18,7 +18,7 @@ $$
 \end{aligned}
 $$
 
-The triplet therefore has spin-coupling energy $a=A\hbar^2/4$, and the singlet has $\tilde a=-3A\hbar^2/4$. For fields $\magnetic{B}_i\hat{\mathbf z}$, set $b_i=-\electric{q}\hbar\magnetic{B}_i/(\mechanical{m}\mechanical{c})$. In the ordered basis $\lvert1,1\rangle,\lvert1,0\rangle,\lvert1,-1\rangle,\lvert0,0\rangle$ the Hamiltonian is
+For the coupling $K\mechanical{\mathbf S}_1\cdot\mechanical{\mathbf S}_2$, the triplet therefore has spin-coupling energy $a=K\hbar^2/4$, and the singlet has $\tilde a=-3K\hbar^2/4$. For fields $\magnetic{B}_i\hat{\mathbf z}$, set $b_i=-\electric{q}\hbar\magnetic{B}_i/(\mechanical{m}\mechanical{c})$. In the ordered basis $\lvert1,1\rangle,\lvert1,0\rangle,\lvert1,-1\rangle,\lvert0,0\rangle$ the Hamiltonian is
 
 $$
 H=
@@ -261,26 +261,38 @@ Kyle Kabasares, *Quantum Mechanics II (Physics 215B, UC Irvine 2018)*.
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
 | $\hbar$ | $\unit{J\,s}$ | Reduced Planck constant | Planck constant divided by $2\pi$. |
-| $\mechanical{t}$, $\mechanical{t}_0$, $\Delta\mechanical{t}$ | $\unit{s}$ | Time | Observation time, initial or switching time, and elapsed time. |
-| $\mechanical{m}$ | $\unit{kg}$ | Mass | Particle mass. |
-| $\mechanical{x}$ | $\unit{m}$ | Position | Displacement along the oscillator axis. |
-| $\energy{E}$, $\energy{E}_0$ | $\unit{J}$ | Energy eigenvalue | Energy of an eigenstate, including the common energy of a degenerate subspace. |
-| $\mechanical{z}$, $\mechanical{r}$ | $\unit{m}$ | Vertical position and radius | Position along the drive direction and distance from the origin. |
-| $E$ | $\unit{N}$ | Linear perturbation coefficient | Electric field strength multiplied by the signed charge, with the sign set by the potential convention. |
-| $\Delta\energy{E}$, $\delta\energy{E}$ | $\unit{J}$ | Energy scales | Width over which the continuum factors change and spacing of individual final levels. |
-| $\mechanical{L}$ | $\unit{m}$ | Box side length | Periodic normalization length in each coordinate. |
-| $\magnetic{\mathbf A}$ | $\unit{T\,m}$ | Magnetic vector potential | Spatial part of the electromagnetic four-potential. |
-| $c$ | $\unit{m\,s^{-1}}$ | Speed of light | Vacuum light speed used in the time coordinate and Maxwell equations. |
+| $\mechanical{t}$ | $\unit{s}$ | Time | Time in the Schrödinger equation and in the spin precession. |
+| $\mechanical{m}$, $\mechanical{m}_e$ | $\unit{kg}$ | Mass | Particle mass and electron mass. |
+| $\mechanical{x}$, $\mechanical{y}$ | $\unit{m}$ | Cartesian coordinates | Coordinates in the gauge function and in the vector potential. |
+| $\mechanical{\mathbf r}$, $\mechanical{r}$ | $\unit{m}$ | Position and radius | Position vector and radial distance. In the hard-sphere model, $\mechanical{r}$ is the sphere radius. |
+| $\energy{E}$, $\energy{E}_n$ | $\unit{J}$ | Energy eigenvalue | Energy of a stationary state. |
+| $\Delta\energy{E}^{(1)}$ | $\unit{J}$ | First-order Zeeman shift | Linear energy shift of an atomic level in a weak field. |
+| $V$ | $\unit{J}$ | Potential energy | Scalar potential energy in the spinor Hamiltonian. |
+| $K$ | $\unit{J^{-1}\,s^{-2}}$ | Spin–spin coupling constant | Coefficient of $\mechanical{\mathbf S}_1\cdot\mechanical{\mathbf S}_2$ in the Hamiltonian. |
+| $a$, $\tilde a$ | $\unit{J}$ | Spin-coupling energies | Spin–spin energy of the triplet and of the singlet. |
+| $b_i$ | $\unit{J}$ | Zeeman energy parameter | Field-dependent energy $-\electric{q}\hbar\magnetic{B}_i/(\mechanical{m}\mechanical{c})$ for spin $i$. |
+| $\magnetic{\mathbf B}$, $\magnetic{B}_i$ | $\unit{T}$ | Magnetic flux density | Applied magnetic field and its components. |
+| $\magnetic{\mathbf A}$ | $\unit{T\,m}$ | Magnetic vector potential | Vector potential of the uniform field. |
+| $\chi$ | $\unit{T\,m^2}$ | Gauge function | Scalar function whose gradient changes the gauge of $\magnetic{\mathbf A}$. |
+| $\mechanical{c}$ | $\unit{m\,s^{-1}}$ | Speed of light | Vacuum light speed in the Gaussian-unit coupling terms. |
 | $\electric{q}$ | $\unit{C}$ | Electric charge | Signed charge of the particle, with the value expressed in the unit system used for the potentials. |
-| $\mechanical{v}$ | $\unit{m\,s^{-1}}$ | Particle speed | Speed associated with the continuum wave number. |
 | $\electric{e}$ | $\unit{C}$ | Elementary charge magnitude | Positive magnitude of the proton or electron charge. |
-| $\thermal{T}$ | $\unit{K}$ | Temperature | Temperature of the equilibrium radiation and atom. |
-| $A$, $B$ | $\unit{s^{-1}}$ | Mode emission and absorption coefficients | Spontaneous rate and induced transition rate per photon for a single resonant mode. |
+| $\electric{\epsilon}_0$ | $\unit{F\,m^{-1}}$ | Vacuum permittivity | Constant in the SI Coulomb potential. |
+| $g$, $g_J$ | $1$ | g-factor and Landé factor | Spin g-factor and the effective g-factor of a $(\ell,s,j)$ multiplet. |
+| $\magnetic{\mu}_B$ | $\unit{J\,T^{-1}}$ | Bohr magneton | Unit of the atomic magnetic moment. |
+| $\magnetic{\boldsymbol{\mu}}$, $\magnetic{\boldsymbol{\mu}}_{\mathrm{spin}}$ | $\unit{J\,T^{-1}}$ | Magnetic moment | Magnetic moment of the atom and of the spin. |
 | $\mechanical{\mathbf L}$, $\mechanical{L}_z$ | $\unit{J\,s}$ | Orbital angular momentum | Total orbital angular momentum and its projection on the $z$-axis. |
 | $\mechanical{\mathbf S}$, $\mechanical{S}_i$ | $\unit{J\,s}$ | Spin angular momentum | Intrinsic angular momentum and its Cartesian components. |
-| $\mechanical{\mathbf J}$, $\mechanical{J}_i$ | $\unit{J\,s}$ | Total angular momentum | Sum of orbital and spin angular momentum or of two subsystems' angular momenta. |
-| $n,R$ | $\unit{mol}$, $\unit{J\,mol^{-1}\,K^{-1}}$ | Amount of substance and molar gas constant | The factors multiplying absolute temperature on the right-hand side. |
-| $a,b$ | $\unit{Pa\,m^6\,mol^{-2}}$, $\unit{m^3\,mol^{-1}}$ | van der Waals parameters | Set the attractive pressure correction and the excluded volume per mole. |
+| $\mechanical{\mathbf J}$, $\mechanical{J}_z$ | $\unit{J\,s}$ | Total angular momentum | Sum of orbital and spin angular momentum. |
+| $\ell$, $s$, $j$, $m_j$ | $1$ | Angular momentum quantum numbers | Orbital, spin, and total quantum numbers, and the projection quantum number of $\mechanical{J}_z$. |
+| $\alpha$ | $1$ | Projection factor | Ratio $\langle\mechanical{S}_z\rangle/\langle\mechanical{J}_z\rangle$ in a fixed multiplet. |
+| $R_{n\ell}$ | $\unit{m^{-3/2}}$ | Radial wavefunction | Radial part of the hydrogen wavefunction. |
+| $\signal{k}$ | $\unit{m^{-1}}$ | Radial decay constant | Exponential decay rate of the bound radial function. |
+| $\mechanical{P}$ | $\unit{Pa}$ | Pressure | Gas pressure. |
+| $\mechanical{V}$ | $\unit{m^3}$ | Volume | Container volume. |
 | $\mechanical{v}$ | $\unit{m^3\,mol^{-1}}$ | Molar volume | Container volume per mole in the gas equations. |
-| $A(\thermal{T}),B(\thermal{T})$ | $\unit{m^3\,mol^{-1}}$, $\unit{m^6\,mol^{-2}}$ | Virial coefficients | First two corrections to the ideal-gas compressibility factor in powers of molar density. |
-| $\thermal{T}_B,\thermal{T}_c$ | $\unit{K}$ | Boyle and critical temperatures | Temperature at which the second virial coefficient vanishes and temperature at the liquid–vapor critical point. |
+| $n$ | $\unit{mol}$ | Amount of substance | Number of moles in the van der Waals equation. |
+| $R$ | $\unit{J\,mol^{-1}\,K^{-1}}$ | Molar gas constant | Factor that multiplies absolute temperature in the gas equations. |
+| $\thermal{T}$, $\thermal{T}_B$ | $\unit{K}$ | Temperature and Boyle temperature | Gas temperature and the temperature at which the second virial coefficient vanishes. |
+| $a$, $b$ | $\unit{Pa\,m^6\,mol^{-2}}$, $\unit{m^3\,mol^{-1}}$ | van der Waals parameters | Attractive pressure correction and excluded volume per mole. |
+| $A(\thermal{T})$, $B(\thermal{T})$ | $\unit{m^3\,mol^{-1}}$, $\unit{m^6\,mol^{-2}}$ | Virial coefficients | First two corrections to the ideal-gas compressibility factor in powers of molar density. |

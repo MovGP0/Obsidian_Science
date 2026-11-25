@@ -298,12 +298,12 @@ Kyle Kabasares, *Quantum Mechanics II (Physics 215B, UC Irvine 2018)*.
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
 | $\hbar$ | $\unit{J\,s}$ | Reduced Planck constant | Planck constant divided by $2\pi$. |
-| $\signal{\omega}$, $\signal{\omega}_j$ | $\unit{rad\,s^{-1}}$ | Angular frequencies | Common unperturbed frequency and frequencies of the new oscillator modes. |
+| $\signal{\omega}$, $\signal{\omega}_0$ | $\unit{rad\,s^{-1}}$ | Angular frequencies | Drive frequency (or oscillator frequency in the potential) and oscillator frequency $\signal{\omega}_0$. |
 | $\mechanical{t}$, $\mechanical{t}_0$, $\Delta\mechanical{t}$ | $\unit{s}$ | Time | Observation time, initial or switching time, and elapsed time. |
 | $\mechanical{m}$ | $\unit{kg}$ | Mass | Particle mass. |
 | $\mechanical{x}$ | $\unit{m}$ | Position | Displacement along the oscillator axis. |
 | $\mechanical{p}$ | $\unit{kg\,m\,s^{-1}}$ | Momentum | Momentum along the oscillator axis. |
-| $\energy{E}$, $\energy{E}_0$ | $\unit{J}$ | Energy eigenvalue | Energy of an eigenstate, including the common energy of a degenerate subspace. |
+| $\energy{E}_n$, $\energy{E}_n^{(0)}$ | $\unit{J}$ | Energy eigenvalue | Energy of eigenstate $n$, with and without the perturbation. |
 | $\signal{\omega}_{mn}$, $\signal{\omega}_n$ | $\unit{rad\,s^{-1}}$ | Energy-related angular frequencies | Frequency associated with an energy difference or an eigenstate phase. |
 | $\mechanical{F}$, $\mechanical{F}_0$ | $\unit{N}$ | Linear driving coefficient | Coefficient of displacement in the driving potential, equal to the negative of the applied force. |
 | $\mechanical{x}_0$ | $\unit{m}$ | Shifted equilibrium position | Minimum of the oscillator potential after adding the linear term. |
@@ -314,7 +314,11 @@ Kyle Kabasares, *Quantum Mechanics II (Physics 215B, UC Irvine 2018)*.
 | $\signal{\lambda}_{\mathrm{q}}$ | $\unit{s^{-2}}$ | Squared frequency shift | Change of the oscillator's squared angular frequency at unit envelope. |
 | $\mechanical{\tau}$, $\mechanical{t}_{\max}$ | $\unit{s}$ | Drive timescales | Decay time of the exponential or ending time of the constant pulse. |
 | $\energy{\kappa}$ | $\unit{J\,m^{-2}}$ | Quadratic coupling | Coefficient of the quadratic driving potential, equal to mass times the squared frequency shift. |
-| $c$ | $\unit{m\,s^{-1}}$ | Speed of light | Vacuum light speed used in the time coordinate and Maxwell equations. |
-| $\energy{V}_0$, $\energy{V}$ | $\unit{J}$ | Well depth and potential energy | Positive depth and the signed binding potential as a function of radius. |
-| $A$, $B$ | $\unit{s^{-1}}$ | Mode emission and absorption coefficients | Spontaneous rate and induced transition rate per photon for a single resonant mode. |
-| $\mechanical{P},\mechanical{V}$ | $\unit{Pa}$, $\unit{m^3}$ | Gas pressure and volume | State variables of the van der Waals equation. |
+| $H$, $H_0$, $V$ | $\unit{J}$ | Hamiltonian operators | Full Hamiltonian, unperturbed Hamiltonian, and perturbation. |
+| $\energy{V}_{mn}$, $(\energy{V}_I)_{mn}$ | $\unit{J}$ | Perturbation matrix elements | Matrix elements of $V$ and $V_I$ between unperturbed eigenstates. |
+| $U$, $U_0$, $U_I$ | $1$ | Evolution operators | Full, unperturbed, and interaction-picture propagators. |
+| $V_I$ | $\unit{J}$ | Interaction-picture perturbation | Perturbation transformed with the unperturbed evolution $U_0$. |
+| $O_S$, $O_H$, $O_I$ | — | Observable operators | One observable in the Schrödinger, Heisenberg, and interaction pictures; its unit is that of the observable. |
+| $c_n$ | $1$ | Expansion coefficients | Amplitudes of the state along the unperturbed eigenstate $\lvert n\rangle$. |
+| $\mathcal T$ | $1$ | Time-ordering operator | Sorts operator products from the latest to the earliest time. |
+| $\Theta$ | $1$ | Step function | Switches a perturbation on or off at a given time. |

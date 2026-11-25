@@ -1,0 +1,43 @@
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/01 Historical Introduction to the Elementary Particles/1.8 The Quark Model (1964).md
+- FIXED | "None has ever been found" for exotic hadrons is outdated | Added an update note after the paragraph: X(3872), Z_c(3900), P_c pentaquarks, doubly charged T_cs0(2900)++ (c s̄ u d̄); they are color singlets compatible with QCD.
+- FIXED | "Only colorless combinations are q q̄, qqq, q̄q̄q̄" is wrong | Changed "The only" to "The simplest" and added a note on tetraquarks, pentaquarks, and glueballs as further color singlets.
+- FIXED | Nonet table pairs u ū with π0 and d d̄ with η | Kept the source table and added a note that these are placeholders, with π0=(uū−dd̄)/√2, η≈(uū+dd̄−2ss̄)/√6, η'≈(uū+dd̄+ss̄)/√3.
+- FIXED | Confinement and DIS "not conclusive" remarks are dated | Added an update note: QCD established, lattice QCD linearly rising potential, free fractional-charge searches set tight limits.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/01 Historical Introduction to the Elementary Particles/1.9 The November Revolution and Its Aftermath (1974-1983).md
+- FIXED | Fig. 1.13(b) labels s̄d̄, s̄c, ud̄ (ρ*) wrong | Changed graph labels to sd̄ (K̄*⁰), sc̄, and ud̄ (ρ⁺); label text only, no layout change (not checked in Obsidian reading mode).
+- FIXED | Fig. 1.13(d) scs, ccd at charm +1, uss (Ξ*⁺); Fig. 1.13(e) cdd at charm +2 | Changed (d) scs→ccs, charm +1 ccd→cdd, uss (Ξ*⁺)→uss (Ξ⁰), and (e) charm +2 cdd→ccd; also fixed (d) charm +2 vertex "cuu"→"ccu" (same error type); label text only.
+- PARTLY | Fig. 1.13(a) is a stray circle; outer labels missing | Confirmed (a) is a placeholder and K*±, n, p, Δ⁰, Σ*⁻, Σ*⁰ labels are missing; not edited because the brief forbids redrawing figures; (a) needs a manual rebuild and the labels need placement checked in reading mode.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/01 Historical Introduction to the Elementary Particles/1.B References and Notes.md
+- FIXED | Note 10 Phys. Rev. 92, 8301 should be 830 | Changed the page to 830 (Reines and Cowan 1953).
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/01 Historical Introduction to the Elementary Particles/1.P Problems.md
+- REJECTED | p used for electron momentum (1.3) and proton mass (1.9) | Problem 1.9 already states that the particle names stand for their masses, and the table lists these masses in a separate row; this is the claim's own alternative remedy.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/02 Elementary Particle Dynamics/2.2 Quantum Electrodynamics (QED).md
+- FIXED | Each vertex gives α, and α=1/137 | Now each vertex gives √α in the amplitude, α≈1/137, and an n-vertex diagram scales as α^(n/2) in the amplitude and α^n in the rate.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/02 Elementary Particle Dynamics/2.4.2 Quarks.md
+- FIXED | Eq. (2.6) CKM magnitudes outdated; zero lower bounds | Kept Eq. (2.6) and added an update note with current PDG magnitudes (0.974, 0.225, 0.0037; 0.225, 0.973, 0.042; 0.0086, 0.041, 0.999) and that V_ub and V_td are nonzero.
+- FIXED | d+ν_e→u+e should be u+e^- | Changed to d+ν_e→u+e^-.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/02 Elementary Particle Dynamics/2.5 Decays and Conservation Laws.md
+- FIXED | Neutrinos stable "having zero mass" is outdated | Added an update note after the opening paragraph: at least two neutrinos are massive; lightest is stable, heavier ones decay unobservably slowly; photon massless and stable.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/02 Elementary Particle Dynamics/2.6 Unification Schemes.md
+- FIXED | Proton lifetime "at least 10^20 times age of universe" outdated | Added an update note: Super-Kamiokande τ/B(p→e+π0)>2.4e34 yr, more than 10^24 times the age of the universe, excludes minimal SU(5); added τ and B table rows.
+- FIXED | Couplings do not meet at one point in SM; M_Z=91.19 not 90 | Added an update note below the Fig. 2.5 caption: no single SM meeting point, near-meeting with SUSY at about 2e16 GeV, M_Z=91.19 GeV/c².
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/03 Relativistic Kinematics/3.3 Energy and Momentum.md
+- FIXED | Photon and neutrinos as known massless particles is outdated | Added an update note after the Planck-formula paragraph: neutrinos are massive; the Standard Model massless particles are the photon and the gluon.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/04 Symmetries/4.2 Spin and Orbital Angular Momentum.md
+- FIXED | Table 4.3 lacks the Higgs boson for elementary spin 0 | Entered "Higgs boson" in the cell and added a note (spin 0, about 125 GeV/c², discovered 2012; hypothetical spin-2 graviton); added Higgs mass and c table rows.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/04 Symmetries/4.3 Addition of Angular Momenta.md
+- FIXED | Eq. (4.17) sums over j1, j2 instead of m1, m2 | Changed the summation index to m_1+m_2=m.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/04 Symmetries/4.5 Flavor Symmetries.md
+- FIXED | Table 4.4 quark masses outdated; top ">23,000" and "putative" | Added an update note after the table warning with PDG values (m_u 2.2, m_d 4.7, m_s 93 MeV MS-bar at 2 GeV; m_c 1.27, m_b 4.18, m_t 172.6 GeV, top found 1995, no hadrons); added a quark-mass table row.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/04 Symmetries/4.6 Parity.md
+- FIXED | Wu electrons go opposite to nuclear spin, not along it | Fixed the text ("southerly", opposite to spin), Fig. 4.7 caption, mirror statement (electrons along the spin), and Fig. 4.8 caption; the SVGs in Attachements still draw the electron arrow along the spin and need redrawing.
+- FIXED | Massless neutrino and Lorentz-invariant helicity outdated | Added an update note: neutrinos are massive, the weak interaction selects chirality, helicity equals chirality up to O(m_ν c²/E); added m_ν and E table rows.
+- FIXED | Table 4.6 uses obsolete meson names | Added current PDG names with source names in parentheses (b1, K1B, h1/h1'; a0, K0*, f0/f0'; a1, K1A, f1(1285)/f1(1420); a2, K2*, f2/f2') and a one-line remark below the table.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/04 Symmetries/4.8 CP Violation.md
+- FIXED | "Never observed outside the neutral kaon system" outdated | Added an update note: CP violation in B0 (2001), charm (2019), baryons (2025); CKM phase is the established mechanism (Nobel 2008); open question is the baryon asymmetry.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/04 Symmetries/4.9 Time Reversal and the TCP Theorem.md
+- FIXED | Eq. (4.76) and "As of 1985 no T violation" outdated | Added an update note: neutron EDM limit 1.8e-26 e·cm (PSI 2020); direct T violation by CPLEAR (1998) and BaBar (2012); added d_n to the dipole-moment table row.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/04 Symmetries/4.P Problems.md
+- REJECTED | Table assigns m to electron mass and to projection number | The table already lists them in separate rows (electron mass; angular momentum quantum numbers), which is what the claim asks for.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/05 Bound States/5.1 The Schrödinger Equation for a Central Potential.md
+- FIXED | Top quark does not form hadrons | Added a footnote at "(c, b, and t)": the top decays (about 5e-25 s) before it forms hadrons, so only c and b form heavy-quark hadrons; added a lifetime table row.

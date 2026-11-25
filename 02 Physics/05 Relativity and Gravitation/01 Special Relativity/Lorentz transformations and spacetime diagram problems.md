@@ -485,16 +485,24 @@ Kyle Kabasares, *Special Relativity (Physics 126, UC Merced 2015)*.
 | --- | --- | --- | --- |
 | $\mechanical{v}$ | $\unit{m\,s^{-1}}$ | Relative speed | Speed of one inertial frame relative to another. |
 | $\mechanical{x}$, $\mechanical{y}$, $\mechanical{z}$ and primed forms | $\unit{m}$ | Spatial coordinates | Location of an event in an inertial frame. |
+| $\mechanical{x}_1$, $\mechanical{x}_2$ and primed forms | $\unit{m}$ | Event positions | Positions of the stick ends, clocks, or flashes. |
 | $t$, $t'$ | $\unit{s}$ | Coordinate times | Time assigned to an event in the two frames. |
+| $t_1$, $t_2$ and primed forms | $\unit{s}$ | Event times | Times of the marking or clock events, the crossing time in $S$, or the departure time of ship $B$. |
+| $t_{\mathrm f}$ | $\unit{s}$ | Meeting time | Earth-frame time at which the two ships meet in Problem 4-11. |
+| $t_A$, $t_B$ | $\unit{s}$ | Ship clock readings | Readings of the clocks on ships $A$ and $B$ at the meeting. |
+| $t_0$ | $\unit{s}$ | Explosion time | Time of the explosion of ship $B$ in the frame of the diagram. |
 | $\mechanical{c}$ | $\unit{m\,s^{-1}}$ | Speed of light in vacuum | The light propagation speed. |
-| $\Delta t$, $\Delta t'$ | $\unit{s}$ | Time interval | Difference between event times or clock readings, including the interferometer travel-time difference. |
-| $\mechanical{D}$ | $\unit{m}$ | Rest separation | Distance between the ends of a stick, synchronized clocks, or a flashbulb and mirror in their common rest frame. |
-| $\Delta t_{\mathrm{rest}}$, $\Delta t_0$, $\tau$ | $\unit{s}$ | Proper time interval | Time recorded by the clock present at both events. |
 | $\mechanical{\gamma}$ | 1 | Lorentz factor | Factor relating the coordinate interval to the proper interval for inertial motion. |
-| $\tau_0$, $\tau$ | $\unit{s}$ | Rest and laboratory lifetimes | Muon lifetime measured in its rest frame and in the laboratory. |
-| $\mechanical{d}$, $\mechanical{L}$ | $\unit{m}$ | Distance | Distance traveled in the laboratory or separation of the departure and arrival points. |
-| $\mechanical{L}_0$ | $\unit{m}$ | Rest length | Length measured with the object at rest. |
-| $\mechanical{V}_x$, $\mechanical{V}_y$, $\mechanical{V}_z$ and primed forms | $\unit{m\,s^{-1}}$ | Object velocity components | Velocity of an object along the coordinate axes. |
+| $\Delta t$, $\Delta t'$ | $\unit{s}$ | Time interval | Difference between event times or clock readings in a frame. |
+| $\Delta t_0$, $\tau$ | $\unit{s}$ | Proper time interval | Time recorded by the clock present at both events. |
 | $\Delta t_{\mathrm f}$, $\Delta t_{\mathrm b}$ | $\unit{s}$ | Outbound and return times | Light travel times on the two legs of the longitudinal light clock. |
-| $\mechanical{\theta}$, $\mechanical{\theta}'$ | $\unit{rad}$ | Angle | Tilt of a rod or coordinate axis, or angle of a ray relative to the reference axis. |
+| $\mechanical{D}$ | $\unit{m}$ | Rest separation | Distance between the ends of a stick, synchronized clocks, or a flashbulb and mirror in their common rest frame. |
+| $\mechanical{L}_0$ | $\unit{m}$ | Rest length | Length or separation measured in its rest frame. |
+| $\mechanical{L}$ | $\unit{m}$ | Measured length | Contracted length or separation, distance at the meeting, or tilted rod length in the lab. |
+| $\mechanical{d}$ | $\unit{m}$ | Distance | Stick length in the clock frame, or distance from Earth to the meeting point. |
+| $\mechanical{V}_x$, $\mechanical{V}_y$, $\mechanical{V}_z$ and primed forms | $\unit{m\,s^{-1}}$ | Object velocity components | Velocity of an object along the coordinate axes. |
+| $\mechanical{V}_A$, $\mechanical{V}_B$, $\mechanical{V}_C$ | $\unit{m\,s^{-1}}$ | Ship speeds | Speed magnitudes of ships $A$, $B$, and $C$ in the frame of the problem. |
+| $\mechanical{v}'$ | $\unit{m\,s^{-1}}$ | Upward rod speed | Vertical speed of the rod ends in $S'$. |
+| $\Delta\mechanical{x}$, $\Delta\mechanical{y}$ and primed forms | $\unit{m}$ | Position separations | Horizontal and vertical separations of the rod ends. |
+| $\mechanical{\theta}$ | $\unit{rad}$ | Rod angle | Angle between the tilted rod and the horizontal in the lab. |
 | $\mechanical{s}^2$ | $\unit{m^2}$ | Squared spacetime interval | Invariant quadratic expression in coordinate separations. |

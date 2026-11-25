@@ -26,7 +26,6 @@ $$
 
 | Band | $a$ | $b$ | Scatter | Reference given in the notes |
 | --- | --- | --- | --- | --- |
-| $V$ | $1.15\pm0.05$ | $-0.85\pm0.03$ | $\sim15\%$ | Falcón-Barroso |
 | SDSS $r$ | $1.49\pm0.05$ | $-0.75\pm0.01$ | $12\%$ | Bernardi et al. |
 | $K$ | $1.51\pm0.04$ | $-0.77\pm0.01$ | $17\%$ | La Barbera |
 
@@ -93,7 +92,7 @@ The lecture repeats the definition of $\mechanical{D}_n$ using the aperture lumi
 
 Set aside 45 minutes after 11 a.m. during finals week. The exam is an informal discussion intended to check how well students have assimilated the course material. Come with a topic in mind and expect to move between topics. Equations can be filled in on the board. Be ready to ask questions and derive equations.
 
-Dressler et al. used a threshold corresponding to $\quantity{20.75}{mag\,arcsec^{-2}}$ in the $B$ band. In the lecture's derivation, most of the light contributing to this aperture is in the regime where a de Vaucouleurs profile has an effective $\gamma\sim1.2$, giving $1/\gamma\sim0.8$. With $b$ between $-0.85$ and $-0.75$, the residual exponent $b+1/\gamma$ is roughly between $-0.05$ and $+0.05$ at this precision. [Dressler et al. (1987)](https://articles.adsabs.harvard.edu/pdf/1987ApJ...313...42D)
+Dressler et al. used a threshold corresponding to $\quantity{20.75}{mag\,arcsec^{-2}}$ in the $B$ band. In the lecture's derivation, most of the light contributing to this aperture is in the regime where a de Vaucouleurs profile has an effective $\gamma\sim1.2$, giving $1/\gamma\approx0.83$. With $b$ between $-0.85$ and $-0.75$, the residual exponent $b+1/\gamma$ is roughly between $-0.02$ and $+0.08$ at this precision. [Dressler et al. (1987)](https://articles.adsabs.harvard.edu/pdf/1987ApJ...313...42D)
 
 Neglecting the weak dependence on mean effective intensity gives the **$D_n$–$\sigma$ relation** $\mechanical{D}_n\propto\mechanical{\sigma}_0^a$, with $a$ typically about $1.2$–$1.5$. For $a=1.33$ the lecture gives
 
@@ -171,15 +170,12 @@ Kyle Kabasares, *Extragalactic Astrophysics (Physics 241C, UC Irvine 2018)*.
 
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
-| $V$ | $\unit{m^3}$ | Gas volume | Volume used to convert emissivity to luminosity. |
 | $\mechanical{R}$, $\mechanical{R}_{\mathrm e}$ | $\unit{kpc}$ | Projected and effective radius | The profile coordinate is the isophote's semimajor axis. The effective radius encloses half the component's projected light. |
 | $\energy{I}(\mechanical{R})$, $\energy{I}_{\mathrm e}$ | $\unit{W\,m^{-2}}$ | Surface luminosity density and its effective value | The profile and its normalization at the effective radius. |
 | $n$ | $1$ | Sérsic index | Shape parameter of the profile, with $n=4$ for the de Vaucouleurs law. |
 | $\energy{L}$ | $\unit{W}$ | Total luminosity | Integral of the surface luminosity density over projected area. |
 | $\mechanical{r}$ | $\unit{m}$ | Spherical radius | Three-dimensional distance from the center. |
-| $q$, $\epsilon$, $e$ | $1$ | Axis ratio, ellipticity, and eccentricity | Three measures of apparent ellipse shape. |
-| $p$ | $1$ | Inner deprojection slope | Exponent of the prefactor in the approximate spatial density. |
-| $n$ | $\unit{m^{-3}}$ | Stellar number density | Number of stars per unit volume. |
+| $\epsilon$ | $1$ | Ellipticity | Apparent flattening of the isophotes, one minus the axis ratio. |
 | $\mechanical{\sigma}$ | $\unit{m\,s^{-1}}$ | Isothermal velocity dispersion | Constant one-dimensional velocity dispersion. |
 | $\mechanical{r}_{\mathrm g}$ | $\unit{m}$ | Gravitational radius | Radius defined by the total mass and gravitational binding energy. |
 | $\mechanical{v}_0$ | $\unit{m\,s^{-1}}$ | Characteristic rotation speed | Mass-weighted root-mean-square azimuthal streaming speed. |
@@ -194,4 +190,3 @@ Kyle Kabasares, *Extragalactic Astrophysics (Physics 241C, UC Irvine 2018)*.
 | $K_R$, $K_v$ | $1$ | Virial structure coefficients | Ratios connecting the effective radius and observed dispersion to the gravitational radius and global root-mean-square speed. |
 | $\langle\energy{I}_{\mathrm e}\rangle$ | $\unit{W\,m^{-2}}$ | Mean effective intensity | Mean luminosity per unit projected area inside the effective radius. |
 | $K$ | $\unit{kg\,s^2\,m^{-3}}$ | Virial scaling coefficient | Inverse of $2\pi G K_R K_v^2$ in the effective-radius scaling. |
-| $\mechanical{r}_{\mathrm g}$ | $\unit{pc}$ | Gyroradius | Radius of a charged particle's motion around a magnetic field line in this section. |

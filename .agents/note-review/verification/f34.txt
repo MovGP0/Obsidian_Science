@@ -1,0 +1,65 @@
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.5.1 Preliminaries.md
+- FIXED | Undefined e^A_alpha; state basis conditions explicitly | Replaced the condition with xi_a xi^a=0=xi_a e^a_A and added N_a N^a=0, N_a xi^a=-1, N_a e^a_A=0 for N^alpha
+- FIXED | Symbol clash theta^A labels vs expansion theta | Added one sentence that the generator labels theta^A are not the expansion theta of Eq. (5.97) (kept book notation)
+
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.5.6 Third law.md
+- FIXED | WEC is >=0 not >0; Eq. (5.115) and conclusion | Changed WEC, rho condition, Eq. (5.115) and m Delta-dot to >=0; "positive" to "never negative/non-negative"; conclusion now "cannot be decreasing" (text already calls the argument an illustration)
+
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.7 Problems.md
+- FIXED | Problem 7(a) item (vi) should be (iv) | Changed (vi) to (iv)
+- FIXED | Problem 3(b) calls null l_alpha a four-velocity | Changed "the four-velocity" to "the null tangent vector"
+
+=== 02 Physics/05 Relativity and Gravitation/04 Kaluza–Klein/KK 01 Motivation and extra dimensions.md
+- FIXED | Symbol clash y compact vs ordinary coordinate | Wrote the periodicity as theta ~ theta + 2 pi with circumference 2 pi r; y is now only the ordinary coordinate (table row updated)
+- FIXED | Table descriptions refer to absent uses | Trimmed y, r, theta, E_KK and psi rows to this note's uses (psi row now psi_n only)
+
+=== 02 Physics/05 Relativity and Gravitation/04 Kaluza–Klein/KK 02 Study route and source books.md
+- FIXED | Table rows with meanings not used (r, theta, q, g_ab) | Removed spherical-inset text from r and theta rows, deleted unused q row, reduced g_mu nu,g_ab row to g_mu nu as the angular base metric block
+
+=== 02 Physics/05 Relativity and Gravitation/04 Kaluza–Klein/KK 03 From distance to the metric tensor.md
+- PARTLY | Symbol clash y, r, theta between Cartesian/spherical and circle | theta already had a warning; extended it to r and the Schwarzschild metric and marked y=r theta as the compact coordinate (not the Cartesian y); no renaming, to keep the collection-wide y convention
+- FIXED | g_mu nu listed twice with units 1 and —; unused m row | Merged into g_uv (unit 1) and g_mu nu,g_ab (unit —) rows; removed the unused rest-mass row
+
+=== 02 Physics/05 Relativity and Gravitation/04 Kaluza–Klein/KK 04 Comparing four- and five-dimensional metrics.md
+- FIXED | Duplicate g~_AB and g_mu nu rows with conflicting units | One g_mu nu row (unit 1) and one g~_AB row (unit —, angular entry has length squared); removed unused g_ab
+
+=== 02 Physics/05 Relativity and Gravitation/04 Kaluza–Klein/KK 05 Cylinder condition and radion assumptions.md
+- FIXED | Symbol clash y in g~_AB(t,x,y,z,theta) vs Eq. (5.1) | Wrote the argument as g~_AB(x^mu,theta); updated coordinate row and removed now-unused t and z rows
+- FIXED | g~_AB listed twice with units 1 and — | Removed the unit-1 row; kept one row with unit — and a precise description (also fixed theta row spherical-inset text)
+
+=== 02 Physics/05 Relativity and Gravitation/04 Kaluza–Klein/KK 06 Algebraic decomposition of the metric.md
+- PARTLY | B_mu has two definitions; table lists only one | The relation B^len=-r B^ang is already stated in the convention paragraph; added a separate table row for the angular B_mu (GeV) and labelled the dimensionless row as Eq. (6.2)
+- FIXED | Symbol clash y in B_mu(t,x,y,z) vs Eq. (6.1) | Wrote the argument as B_mu(x^0,x^1,x^2,x^3); removed now-unused t and z rows (also fixed theta row spherical-inset text)
+
+=== 02 Physics/05 Relativity and Gravitation/04 Kaluza–Klein/KK 11 Full coordinate transformation calculation.md
+- FIXED | Broken \nu (literal newlines) in g'_{mu nu}=g_{mu nu} | Replaced with $g'_{\mu\nu}=g_{\mu\nu}$ on one line
+
+=== 02 Physics/05 Relativity and Gravitation/04 Kaluza–Klein/KK 14 Reducing the Einstein-Hilbert action.md
+- FIXED | Doubling kappa^2 Phi^2 doubles, not quadruples, Maxwell coefficient | Reworded: doubling the coupling kappa multiplies the Maxwell coefficient (proportional to kappa^2) by four
+
+=== 02 Physics/05 Relativity and Gravitation/04 Kaluza–Klein/KK 15 Deriving the curvature split.md
+- FIXED | Text on the same line as closing $$ | Moved "Ricci curvature is symmetric..." to its own paragraph after the display
+- FIXED | Stray period ends F F display before "in a local inertial frame" | Removed the period
+
+=== 02 Physics/05 Relativity and Gravitation/04 Kaluza–Klein/KK 16 Fourier modes and periodicity.md
+- FIXED | theta row spherical inset; k_5 row generic | theta row now "period two pi"; k_5 row now "Wave numbers" for the line wave number k and the compact wave number k_5 (k was used but not listed)
+
+=== 02 Physics/05 Relativity and Gravitation/04 Kaluza–Klein/KK 17 Klein-Gordon equation and dispersion.md
+- PARTLY | Duplicate psi rows, unused psi_n, duplicate x rows | Removed the unused psi,psi_n (—) row and kept one canonical psi row; bold x and x are different quantities, so merged them into one coordinates row instead of deleting one
+
+=== 02 Physics/05 Relativity and Gravitation/04 Kaluza–Klein/KK 18 Deriving the Kaluza-Klein mass tower.md
+- PARTLY | psi_n twice with conflicting units; theta spherical inset | The two psi_n rows are different normalizations (angular section unnormalized, length section canonical), so kept both with distinguishing descriptions; fixed theta row
+
+=== 02 Physics/05 Relativity and Gravitation/04 Kaluza–Klein/KK 19 Deriving charge from phase winding.md
+- FIXED | "Each mass eigenmode is also a charge eigenmode" false (±n degenerate) | Now: each Fourier mode e^{in theta} is both a mass and charge eigenmode; a cos(n theta) combination has definite mass but no definite charge
+- PARTLY | theta spherical inset; psi_n listed twice | Fixed theta row; the two psi_n rows are different normalizations, so kept both with distinguishing descriptions
+
+=== 02 Physics/05 Relativity and Gravitation/04 Kaluza–Klein/KK 20 General covariance and gauge symmetry.md
+- FIXED | theta row mentions absent spherical inset | theta row now "Compact circular angle with period two pi"
+
+=== 02 Physics/05 Relativity and Gravitation/04 Kaluza–Klein/KK 21 Visualizing local phase choices.md
+- PARTLY | Symbol clash y ordinary vs compact | Compact y appears only in words in the convention paragraph; added a sentence there that later sections do not use compact y and the plane-example y is ordinary; no rename
+- FIXED | Unused m row; r and theta rows mention spherical inset | Removed m row; r row now "Physical circle radius"; theta row now "period two pi"
+
+=== 02 Physics/05 Relativity and Gravitation/04 Kaluza–Klein/Kaluza-Klein - Study Guide.md
+- FIXED | "Collection uses a mostly-plus metric" contradicts mostly-minus angular sections | Now says the collection uses two signatures: mostly-plus for length-coordinate derivations, mostly-minus for each chapter's first angular section

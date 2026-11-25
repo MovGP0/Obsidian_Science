@@ -1,0 +1,52 @@
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/07 Electroweak Interactions of Quarks/7.1 The Standard Electroweak Theory -  Preliminaries.md
+- [Correctness] Fig. 7.2 photon vertex "$-i\electric{Q_q}\gamma_\mu$" is missing the coupling $e$; it should be $-ie\electric{Q_q}\gamma_\mu$.
+- [Correctness] Eq. (7.1.33): $\mathcal M^f=\mathsf V_L^f\zeta^f\mathsf V_R^{f\dagger}$ is dimensionless as written while the table gives $\mathcal M^f$ in GeV; the mass matrix is $\mathcal M^f=(v/\sqrt2)\,\mathsf V_L^f\zeta^f\mathsf V_R^{f\dagger}$. Also the fragment "with $f=u,d$. Accordingly, ..." after the vertex factors belongs directly after (7.1.33), not after Fig. 7.2.
+- [Correctness] "Whenever it is necessary to retain the color indices, we shall suppress them" is logically inverted; it should say the color indices are suppressed except where they are needed.
+- [Correctness] Dated values: $\cos\theta_C=0.97425$ (now $|V_{ud}|\approx0.97367$) and $B(K^+\to\pi^+\nu\bar\nu)=(1.73^{+1.15}_{-1.05})\times10^{-10}$ (NA62 2024: $(1.30^{+0.33}_{-0.30})\times10^{-10}$); add an update callout or refresh with current PDG values together with (7.1.28).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/07 Electroweak Interactions of Quarks/7.11 The Hierarchy Problem.md
+- [Correctness] "$\mechanical{M_{\mathrm{Pl}}}=(\hbar\mechanical{c}/G_{\mathrm{N}})^{1/2}\approx1.2\times10^{19}\,\unit{GeV}$" mixes units: with the SI units in the table $(\hbar c/G_N)^{1/2}$ is a mass ($2.18\times10^{-8}$ kg); write $\mechanical{M_{\mathrm{Pl}}}c^2=(\hbar c^5/G_N)^{1/2}\approx1.22\times10^{19}\,\unit{GeV}$ or state natural units.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/07 Electroweak Interactions of Quarks/7.12 The Vacuum Energy Problem.md
+- [Correctness] Intro: the gravitational to electrostatic attraction ratio for an electron and a proton is $Gm_em_p/(e^2/4\pi\varepsilon_0)\approx4.4\times10^{-40}$, so it is about 39 to 40 orders of magnitude smaller, not 41. Correct the number or give the explicit ratio.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/07 Electroweak Interactions of Quarks/7.2 Electroweak Gauge Bosons.md
+- [Correctness] Eq. 7.2.11, first line: "$3[2\cdot\Gamma(Z^0\to u\bar u)+3\cdot\Gamma(Z^0\to d\bar d)]$" mixes widths into a dimensionless ratio, and it double-counts color because $\Gamma(Z^0\to q\bar q)$ in 7.2.10 already contains the factor 3. Write $3[2(L_u^2+R_u^2)+3(L_d^2+R_d^2)]$, or equivalently $[2\Gamma(u\bar u)+3\Gamma(d\bar d)]/\Gamma(\nu\bar\nu)$.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/07 Electroweak Interactions of Quarks/7.3 Electron-Positron Annihilations.md
+- [Correctness] Eq. 7.3.10: "$1-\frac{8x_W}{3}+\frac{32x_W^2}{3}$" should be $1-\frac{8x_W}{3}+\frac{32x_W^2}{9}$, as in 7.2.11 and 7.3.19b. With $/3$, $R_{\mathrm{peak}}^{(u\bar u)}$ becomes 1066 instead of the tabulated 693.
+- [Correctness] Text before 7.3.14: "$(R_i-L_i)=\tau_3^{(i)}$" has the wrong sign. With $L_e=-1+2x_W$ and $R_e=2x_W$, one gets $R_e-L_e=+1$ while $\tau_3^{(e)}=-1$, so it must read $(R_i-L_i)=-\tau_3^{(i)}$, which is consistent with 7.3.14 as written.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/07 Electroweak Interactions of Quarks/7.4 Deeply Inelastic Lepton-Hadron Scattering.md
+- [Correctness] (7.4.70) has prefactor $\frac{G_F^2}{2\pi}\energy{E'}\energy{E}$, which gives $\unit{GeV}^{-3}$ instead of $\unit{GeV}^{-5}$ for $d^2\sigma/dQ^2d\nu$ (with $W_i\sim\unit{GeV}^{-1}$); it must be $\frac{G_F^2}{2\pi}\frac{\energy{E'}}{\energy{E}}$, matching (7.4.27) and the Jacobian $2ME^2y$ that leads to (7.4.71).
+- [Correctness] (7.4.97) $A/Q^2\simeq-7.2\times10^{-5}$ is missing its unit: it should read $-7.2\times10^{-5}\,\unit{GeV}^{-2}$ (recomputed: $G_F\cdot\frac45/(4\pi\alpha\sqrt2)=7.19\times10^{-5}\,\unit{GeV}^{-2}$).
+- [Correctness] Symbol slips: the table defines $N$ only as "parton count", but the note also uses $N$ for the target nucleon in (7.4.1), (7.4.69), (7.4.85)-(7.4.89); in (7.4.28) one form factor is written $\Gamma_2^2(\mechanical{q}^2)$ while all the others take $\mechanical{Q}^2$; the rule (7.4.47) needs an absolute value, $1/|\partial h/\partial x|$.
+- [Correctness] The world average $M_W=80.399\pm0.023\,\unit{GeV}$ (PDG 2010) near the end is outdated; add an editorial note giving the current PDG value ($80.369\pm0.013\,\unit{GeV}$, PDG 2024) and mark "most precise to date" and "recent" (BoNuS, HERA) as statements made at the source's date.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/07 Electroweak Interactions of Quarks/7.5 Hadron-Hadron Interactions.md
+- [Correctness] Eq. (7.5.9) has the wrong Jacobian: $\partial(x,\tau)/\partial(x_a,x_b)=x_a+x_b=(x^2+4\tau)^{1/2}$, so it should read $F(\tau,x)=x_ax_b\,g(x_a,x_b)/(x^2+4\tau)^{1/2}$. Only with the square root does integrating over $x$ give (7.5.11) and the standard $d^2\sigma/dM^2dx_F=(4\pi\alpha^2/9M^4)\,x_ax_b/(x_a+x_b)\sum e_i^2[\dots]$.
+- [Correctness] In the paragraph after (7.5.15), "studying $1.96$-GeV proton–antiproton collisions" should say $1.96\,\mathrm{TeV}$. In the Fig. 7.17 caption, CMS stands for "Compact Muon Solenoid", not "Compact Muon Spectrometer".
+- [Correctness] Several values are out of date and should be marked as 2012 values or updated: the LHC has run at $13$ and $13.6\,\mathrm{TeV}$; the PDG 2024 average is $M_W=80.369\pm0.013\,\mathrm{GeV}$ (CDF 2022 reported $80.434\pm0.009$); the sequential $W'$ is now excluded below about $6\,\mathrm{TeV}$ and the sequential $Z'$ below about $5\,\mathrm{TeV}$ (ATLAS/CMS full Run 2), not "$>2\,\mathrm{TeV}$".
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/07 Electroweak Interactions of Quarks/7.6 Further Tests of the Electroweak Theory.md
+- [Correctness] Paragraph 3: "$B(B_s\to\mu^+\mu^-)<(3.5\pm0.2)\times10^{-9}$" is the standard-model expectation, not a bound, so the "$<$" with an uncertainty is wrong. Write the SM value with "$=$" and give the 2012 bound separately. Also note that $B_s\to\mu^+\mu^-$ has since been observed (world average about $3.3\times10^{-9}$, consistent with the SM value $\approx3.66\times10^{-9}$).
+- [Correctness] "departures from the CMK paradigm" should read "CKM".
+- [Correctness] Several statements are outdated: the first-row sum is now $\mathcal S_u\approx0.9985\pm0.0007$ (PDG 2024, the "Cabibbo-angle anomaly"), not $0.9999\pm0.0006$; CP violation in charm was established by LHCb in 2019 ($\Delta A_{CP}\approx-1.5\times10^{-3}$); top FCNC limits are now about $10^{-5}$–$10^{-4}$; a sequential fourth generation is excluded by the measured Higgs production rate. Add a dated "status update" callout.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/07 Electroweak Interactions of Quarks/7.7 A Brief Look at Quantum Corrections.md
+- [Correctness] The values have been superseded: the 2023 Northwestern measurement gives electron $g/2=1.001\,159\,652\,180\,59(13)$, and QED is now known through $(\alpha/\pi)^5$; $m_t=172.57\pm0.29\,\mathrm{GeV}$ (PDG 2024) rather than $173.2\pm0.9$; the Higgs boson has been found at $M_H=125.20\pm0.11\,\mathrm{GeV}$, so the fit discussion around Fig. 7.22 should say that the fitted $92^{+34}_{-26}$ GeV is consistent with it at about $1\sigma$.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/07 Electroweak Interactions of Quarks/7.8 The Scale of Fermion Masses.md
+- [Correctness] The last paragraph ("Until the Higgs boson is discovered and shown to couple to fermion pairs…") is outdated. Since 2012–2020, Higgs couplings to $t$, $b$, $\tau$ and $\mu$ have been observed and found proportional to mass, while the $He\bar e$ coupling is still unestablished. Add a dated update note.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/07 Electroweak Interactions of Quarks/7.9 Search for the Higgs Boson.md
+- [Correctness] Add a dated update callout: $M_H=125.20\pm0.11\,\mathrm{GeV}$ (PDG 2024); spin-parity $0^+$ is established (not just "even-integer spin"); $H\to b\bar b$, $\tau\tau$, $\mu\mu$ and $t\bar tH$ have been observed; a fourth generation, which the text says "would raise the $gg\to H$ rate", is excluded by exactly that rate.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/07 Electroweak Interactions of Quarks/7.P Problems.md
+- [Correctness] Problem 7.3(a): "Express $V_{ub}=A\lambda^2$" should be "$V_{cb}=A\lambda^2$". The next sentence then correctly sets $V_{ub}=0$, and part (b) assigns $s_{23}=A\lambda^2$, i.e. $V_{cb}$.
+- [Correctness] Problem 7.4: "(for $j\ne k$ and $i\ne j$, respectively)" should be "$i\ne k$", since the second condition is $\sum_jV_{ij}V_{kj}^*=\delta_{ik}$.
+- [Correctness] Problem 7.19 has two parts labelled "(b)"; the second, on $\delta p/p$, should be "(c)". Also add the missing comma in "$e^+e^-$ $\mu^+\mu^-$".
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/08 Strong Interactions among Quarks/8.1 A Color Gauge Theory.md
+- [Correctness] Eq. (8.1.20): the left side reads $\sum_{i<j}\langle\mathbf T^{(i)}\cdot\mathbf T^{(i)}\rangle$ and should be $\sum_{i<j}\langle\mathbf T^{(i)}\cdot\mathbf T^{(j)}\rangle$.
+

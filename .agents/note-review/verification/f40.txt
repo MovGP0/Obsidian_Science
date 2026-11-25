@@ -1,0 +1,55 @@
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/09 Time Dilation and the Twin-Paradox/09.07.01 Time Dilation of Unstable Particles.md
+- FIXED | Expansion v' ≈ v ± u²/c is wrong; exact shift is ±u(1−v²/c²)/(1±uv/c²) ≈ ±u/γ² | Replaced the expansion with the exact composition and its ±u/γ² approximation.
+- FIXED | Eq. (9.12) should be Γ_Ab ≈ Γ_STR(1 ∓ uv/c²), asymmetry ±0.13 % independent of γ | Rewrote (9.12) from the exact identity and stated the ±0.13 % asymmetry; kept the source's ±0.9 % value as a marked non-derivable expansion.
+- FIXED | Say which of τ, τ' is the proper lifetime | Added that τ' is the proper lifetime and τ the laboratory lifetime, in the text and the table row.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/09 Time Dilation and the Twin-Paradox/09.07.02 Experiments on Atomic Systems.md
+- FIXED | Eq. (9.15) is not the SR moving-source result; second-order term is +v²/(2c²) | Replaced (9.15) with ν sqrt((1±β)/(1∓β)) ≈ ν(1±β+β²/2), added a note on the source's form and the Ives–Stilwell mean-wavelength shift, and changed the asymmetry sign in the next sentence.
+- FIXED | State which frame defines θ in (9.13)/(9.14) | Added that θ is measured in the source frame and that the lab-frame transverse result is ν/γ, a decrease.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/09 Time Dilation and the Twin-Paradox/09.07.03 Experiments on the Comparison of Atomic Clocks.md
+- FIXED | Caesium frequency is 9 192 631 770 Hz ≈ 9.19 GHz, not 9.18 GHz | Corrected the text and the table row.
+- FIXED | Eq. (9.18) left side must be −(v'²−v_ref²)/(2c²) | Replaced the sum with the difference.
+- FIXED | "Over t seconds" vs T; transported clock absolute velocity should be v' | Changed to T, defined v' in the text and added a v' table row (also added the missing ± in the u_r L cos φ/c² term).
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/09 Time Dilation and the Twin-Paradox/09.08 The Hafele-Keating Experiment.md
+- FIXED | Hafele was at Washington University in St. Louis, not USNO | Corrected the affiliation sentence.
+- FIXED | Absolute-frame row coincides with H&K's own published kinematic predictions; their totals match observation | Added a paragraph after Table 9.2 with −184±18, +96±10 ns and totals −40±23, +275±21 ns, and that the "Einstein" row is the author's Earth-fixed calculation.
+- FIXED | Latitude unit rad vs degrees | Changed both latitude table rows to degrees.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/09 Time Dilation and the Twin-Paradox/09.09.02 Resolution Sans Acceleration.md
+- FIXED | Fig. 9.4 leg labels T(1 − v²/4c²) should be T/2 − Tv²/(4c²) | Changed the four graph text labels and updated the caption (not checked in Obsidian reading mode).
+- FIXED | C at relative velocity −2v is wrong in relativity | Changed to C moving at −v relative to A.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/09 Time Dilation and the Twin-Paradox/09.10 Einstein's Gravitational Resolution of the Paradox.md
+- FIXED | Callout misattributes "STR alone insufficient" to Einstein | Attributed the reading to the author and stated that the 1918 inertial-frame STR calculation already gives a unique answer.
+- FIXED | Fig. 9.5(a,c) leg labels should be T/2 − Tv²/(4c²) | Changed the four graph text labels (not checked in Obsidian reading mode).
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/09 Time Dilation and the Twin-Paradox/09.11 Summary.md
+- FIXED | Summary implies experiment contradicted standard relativity | Added that H&K's standard Earth-centred-inertial calculation predicted the westward gain (+275±21 ns total).
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10 References.md
+- FIXED | Ref. 7 author Lyttleton, journal Proc. R. Soc. Lond. A | Corrected author name and journal.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.00 Cosmic Relativity - The Theory and Its Primary Fundamental Results.md
+- FIXED | "critical to about 3 %" is outdated | Marked 3 % as the source's value and added Planck 2018 + BAO Ω_k = 0.001 ± 0.002 (few tenths of a per cent); updated the table row.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.01 The Universe That Determines the Physics of Relativity.md
+- FIXED | Fig. 10.1 caption 13 billion years vs text ten billion | Changed caption to roughly ten billion years of mostly matter-dominated history.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.02 A Hypothetical Scenario in Electrodynamics.md
+- FIXED | Centre potential is 3Q/(8πε0R) = qR²/(2ε0), about 6 kV | Corrected the formula and the value (about 6 kV, of order 10^4 V) in text and table.
+- FIXED | A = vφ/c is Gaussian; SI form is vφ/c² in V s/m | Corrected the formula and the table unit and description.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.04 Physics in the Gravitationally Charged Universe.md
+- FIXED | Constant Φ_u only shifts H; effects come from velocity-dependent terms | Replaced the sentence with the constant-shift statement and the vector-potential origin of effects.
+- FIXED | CMBR 10^-5 is temperature uniformity, not synchronisation | Restated as temperature uniformity and attributed the simultaneity conclusion to the author.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.05 The Gravitational Foundation of Cosmic Relativity.md
+- FIXED | (10.5)–(10.6) give the moving chart in rest coordinates, not g'_μν; correct g'_0x = +v/c | Added a note with the correct substitution and g'_00, g'_0x = +v/c; kept the source sign −v/c because the later chapter notes (10.06.04, 10.07.01, 10.08.x, 10.10.x) use it.
+- FIXED | ∇²φ_u = 0 contradicts Poisson's equation; intended ∇Φ_u = 0 | Changed to ∇Φ_u = 0 and added the Poisson-equation caveat.
+- FIXED | φ_u vs Φ_u symbol clash | Used Φ_u for the potential and removed the φ_u table row.
+- FIXED | Potential scaling drops G | Rewrote as Φ_u ~ GρR_u² with ρ ∝ 1/(Gt²), R_u ∝ ct, giving c²; added a G table row.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.06.01 The Modification of Duration and Distance.md
+- FIXED | Spatial metric γ_ab clashes with Lorentz factor γ | Renamed to h_ab in the text and table.

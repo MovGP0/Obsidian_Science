@@ -1,0 +1,68 @@
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/11 The Crucial Experimental Tests of Cosmic Relativity/11.03.01 The Propagation of Light in a Moving Frame.md
+- [Correctness] For the looped path the stationary-frame travel time is not $\mechanical{L}/[\mechanical{c}_w(1-\mechanical{v}/\mechanical{c}_w)]$: summing segments gives $\Delta t\approx\mechanical{L}/\mechanical{c}_w+(\mechanical{v}/\mechanical{c}_w^2)\times$(A-to-B displacement along $\mechanical{\mathbf v}$), which is $\mechanical{L}/\mechanical{c}_w$ to first order when B is next to A (for the tabulated loop: $+2\mechanical{l}$ along, $-2\mechanical{l}$ against). Hence (11.8) gives $\Delta t'\approx\mechanical{L}/\mechanical{c}$ for light, not $\mechanical{L}/(\mechanical{c}-\mechanical{v})$, and the GT and Galilean (11.10) loop results also lose their first-order term.
+- [Correctness] (11.9) divides the open-path displacement $\Delta\mechanical{x}'=\signal{\gamma}\mechanical{L}$ by the loop duration; for a loop the endpoint displacement is about zero and $\mechanical{L}$ is a path length, so the ratio is not a velocity.
+- [Correctness] The Lorentz factor is written $\signal{\gamma}$; use $\mechanical{\gamma}$.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/11 The Crucial Experimental Tests of Cosmic Relativity/11.03.02 A Simple Demonstration of the Conflict Between the PoR and the Light Hypothesis.md
+- [Correctness] (11.11) uses $\mechanical{L}/[\mechanical{c}(1-\mechanical{v}/\mechanical{c})]$ for a light circuit of a loop co-moving with the detector; for a closed loop the first-order terms cancel (see [[11.03 The True Relative Velocity of Light - A Prelude to a Test]]), so the light circuit time is $\mechanical{L}/\mechanical{c}$ in the apparatus frame and $N$ is not $(\mechanical{c}-\mechanical{v})/(\mechanical{c}_s-\mechanical{v})$.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/11 The Crucial Experimental Tests of Cosmic Relativity/11.04 The Experiment on the One-Way Relative Velocity of Light.md
+- [Correctness] Fig. 11.5(a) states that the four mirrors are fixed and only source, optics and detector translate; then in the lab frame (mirrors and light at rest) standard relativity predicts a counter-propagating delay $2\mechanical{L}\mechanical{v}/\mechanical{c}^2$, i.e. $2\times(3.1\,\unit{m}/\mechanical{c})\times\mechanical{v}/\mechanical{c}\approx7\times10^{-17}\,\unit{s}$ per $\unit{m/s}$, which matches the plotted slope (350 mV per m/s at 10 mV per $2\times10^{-18}\,\unit{s}$). The result therefore does not discriminate; this must be stated, since criterion 1 (co-moving A, B and path) is not met.
+- [Correctness] The sound-test check is consistent ($\mechanical{T}\mechanical{v}/\mechanical{c}_s=26\,\unit{ms}/343\approx76\,\unit{\mu s}$ per m/s versus a plotted slope of $80\,\unit{\mu s}$ per m/s), which confirms that the "$5\,\unit{ms}$" precision must be $5\,\unit{\mu s}$; correct it rather than retaining it in a note box.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/11 The Crucial Experimental Tests of Cosmic Relativity/11.06 Cosmic Relativity and Clock Synchronisation.md
+- [Correctness] (11.14) defines $\mechanical{\mathbf v}_r$ as receiver velocity but then uses $\mechanical{\mathbf v}$; use one symbol.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/11 The Crucial Experimental Tests of Cosmic Relativity/11.07 Experimental Tests of Time Dilation - Atomic Clocks.md
+- [Correctness] $\mechanical{\mathbf l}_i$ in (11.17) is not defined; state that $\mechanical{\mathbf l}_i=\mechanical{\mathbf v}_it_i$ is the directed segment.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/11 The Crucial Experimental Tests of Cosmic Relativity/11.08 Experimental Tests of Time Dilation - GNSS and GPS.md
+- [Correctness] GPS satellites at $26\,560\,\unit{km}$ orbital radius move at $\sqrt{\mechanical{G}\mechanical{M}/r}\approx3.87\,\unit{km/s}$, not $3.6\,\unit{km/s}$.
+- [Correctness] "Bidou" should be BeiDou, and Japan's system is QZSS (Quasi-Zenith Satellite System), not "QNSS"; QZSS and NavIC use geosynchronous inclined as well as geostationary orbits.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/11 The Crucial Experimental Tests of Cosmic Relativity/11.08.01 Time Dilations in the GNSS Satellites.md
+- [Correctness] With $\mechanical{G}\mechanical{M}=3.986\times10^{14}\,\unit{m^3/s^2}$, $\mechanical{R}_0=6371\,\unit{km}$, $\mechanical{R}_s=26\,560\,\unit{km}$: $\mechanical{G}\mechanical{M}/(\mechanical{R}_0\mechanical{c}^2)=6.95\times10^{-10}$ (not $7.3\times10^{-10}$), the gravitational shift is $0.53\,\unit{ns/s}$ ($45.7\,\unit{\mu s/day}$), and the motional shift with $\mechanical{v}_s=3.87\,\unit{km/s}$ is $-0.083\,\unit{ns/s}$ ($-7.2\,\unit{\mu s/day}$), not $-0.07$; net $+38.5\,\unit{\mu s/day}$.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/11 The Crucial Experimental Tests of Cosmic Relativity/11.09 The Absence of a Relative Time Dilation in Accelerated Frames.md
+- [Correctness] Replace the retained values in the text by the correct ones already identified in the note box: $10\,\unit{mm}$ of light path is $33\,\unit{ps}$, $10^{-13}\,\unit{s}$ corresponds to $30\,\unit{\mu m}$, and a $10\,\unit{m}$ vertical separation on Earth accumulates about $0.1\,\unit{ns}$ per day.
+- [Correctness] $\mechanical{f}_g=d\mechanical{A}_g/dt$ uses the macro letter $\mechanical{f}$ for a field per unit mass while the chapter otherwise writes induced acceleration as $-\mechanical{c}\,d\mechanical{g}_{0i}/dt$; state units and normalisation.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/11 The Crucial Experimental Tests of Cosmic Relativity/11.10.01 An Early History of the Relevant Ideas.md
+- [Correctness] The text dates Lodge's work to 1893 while citing ref. [15] from 1897; cite both papers (Phil. Trans. A 184, 727 (1893) and 189, 149 (1897)) or adjust the year.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/11 The Crucial Experimental Tests of Cosmic Relativity/11.10.02 The Experiments by G. Sagnac.md
+- [Correctness] The symbol $\mechanical{v}=\mechanical{R}\signal{\omega}$ in (11.26) uses $\signal{\omega}$ while the general formula uses $\boldsymbol{\omega}$ without macro, and 11.08.02 uses $\boldsymbol{\omega}$ for Earth rotation; use one convention for angular velocity in the chapter.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/11 The Crucial Experimental Tests of Cosmic Relativity/11.10.03 The Michelson-Gale Experiment.md
+- [Correctness] "Earth's rotation rate $2\pi/86400\,\mathrm{rad/s}$" is the solar-day value; the rotation rate relative to inertial space is the sidereal $2\pi/86164\,\mathrm{s}\approx7.292\times10^{-5}\,\mathrm{rad/s}$.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/11 The Crucial Experimental Tests of Cosmic Relativity/11.10.04 The Proof of the Galilean Nature of a Rotating Frame.md
+- [Correctness] The "moving-frame line element" is written in unprimed $dx$; substituting $x=x'\pm vt$ gives $ds^2=dx'^2\pm2v\,dx'\,dt-c^2(1-v^2/c^2)dt^2$, and the null condition $ds=0$ then yields $dx'/dt=c\mp v$, which is the check the note should display.
+- [Correctness] "$c'=R\,d\phi/dt=c\mp R\omega$" uses the stationary angle; the relative light speed is $c'=R\,d\phi'/dt$ (with $d\phi/dt=c/R$ in the stationary frame).
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/12 Cosmic Relativity and Quantum Dynamics/12 References.md
+- [Correctness] Entry 5 is garbled: "A tribute to G., ed. by G. Umesh et al. (Ramachandran, ...)" should read "A tribute to G. Ramachandran, ed. by G. Umesh et al. (Sriranga Digital Software Technologies, ...)"; entry 18's title is *The Principles of Quantum Mechanics*.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/12 Cosmic Relativity and Quantum Dynamics/12.01 Cosmic Relativity and Quantum Dynamics.md
+- [Correctness] "$\Delta x\,\Delta p\ge\hbar$" is not the standard bound; for standard deviations the Kennard relation is $\Delta x\,\Delta p\ge\hbar/2$. State it and keep the source's form only as a quoted variant.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/12 Cosmic Relativity and Quantum Dynamics/12.02 The True Nature of the Schrodinger Equation.md
+- [Correctness] "momentum represented in the source by $i\hbar\nabla$" has the wrong sign; the position-space operator is $\hat{\mathbf p}=-i\hbar\nabla$, and the sign fixes the direction of the probability current in (12.10).
+- [Correctness] "The two path probabilities are written as $a^2$ and $b^2$" (and the coefficients $a,b,c$ in (12.16)) treat complex amplitudes as real; the probabilities are $|a|^2$ and $|b|^2$.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/12 Cosmic Relativity and Quantum Dynamics/12.04 The Quantum Interference of Single Particles.md
+- [Correctness] Symbol clash: $a,b$ are both the path weights and the labels in $S(a)$, $S(b)$, and (12.22) defines $\zeta_B$ while (12.23)–(12.24) use $\zeta$. Write $S_1,S_2$ for the path actions and use one name for the combined wave.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/12 Cosmic Relativity and Quantum Dynamics/12.07 The Minuteness of the Quantum Zero-Point Energy.md
+- [Correctness] Symbol clash: $p$ is momentum ($p$, $p_0$) and also pressure ($p=-\rho c^2$) in the same note; rename the pressure $P$.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/12 Cosmic Relativity and Quantum Dynamics/12.08 The Dirac Equation and Relativity.md
+- [Correctness] "$\hat p_j=i\hbar\,\partial/\partial x_j$" has the wrong sign; the operator is $\hat p_j=-i\hbar\,\partial/\partial x_j$.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/13 Cosmic Gravity and the Quantum Spin/13 References.md
+- [Correctness] Fix the entries that can be verified: Pauli 1940 is Phys. Rev. **58**, 716–722 (not 48); Berry 1984 is Proc. R. Soc. Lond. A **392**, 45–57; Uhlenbeck's initial is G.; Duck and Sudarshan, Am. J. Phys. **66**, 284 is 1998; "Lamoroux" is Lamoreaux; Bose, Z. Phys. **26** starts on page 178.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/13 Cosmic Gravity and the Quantum Spin/13.00 Cosmic Gravity and the Quantum Spin.md
+- [Correctness] "the source writes the electromagnetic coupling as $E=\boldsymbol\mu\cdot\mathbf B$"; the dipole energy is $E=-\boldsymbol\mu\cdot\mathbf B$, which matters because the gravitational analogy is built on it.
+- [Correctness] Torque (13.3) $\mathbf T=\mathbf s\times\mathbf B_g/2$ does not follow from energy (13.2): $H=\tfrac12\mathbf s\cdot\mathbf B_g=-\mathbf s\cdot\boldsymbol\Omega$ gives $d\mathbf s/dt=\tfrac12\mathbf B_g\times\mathbf s=-\boldsymbol\Omega\times\mathbf s$, the familiar apparent precession of a free gyroscope in a rotating frame, whereas (13.3) gives the opposite sign.
+

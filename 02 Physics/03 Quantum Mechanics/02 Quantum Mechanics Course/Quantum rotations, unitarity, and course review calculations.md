@@ -36,20 +36,20 @@ $$
 
 ![[Kyle Kabasares - Quantum Mechanics II - Continuation around a turning point.png|**Fig. 26** A simple turning point and a contour that passes above it in the complex plane.]]
 
-Linearize the potential as $U(z)\simeq \energy{E}-\mechanical{F}(z-\mechanical{a})$, where $\mechanical{F}=-U'(\mechanical{a})$. The magnitude of the real-axis momentum scales as $\lvert\mechanical{x}-\mechanical{a}\rvert^{1/2}$. Writing $z-\mechanical{a}=\mechanical{\rho} e^{i\mechanical{\varphi}}$, the WKB prefactor continued from the right is proportional to
+Linearize the potential as $U(z)\simeq \energy{E}-\mechanical{F}(z-\mechanical{a})$, where $\mechanical{F}=-U'(\mechanical{a})$. The magnitude of the real-axis momentum scales as $\lvert\mechanical{x}-\mechanical{a}\rvert^{1/2}$. Writing $z-\mechanical{a}=\mechanical{\rho} e^{i\varphi}$, the WKB prefactor continued from the right is proportional to
 
 $$
 (z-\mechanical{a})^{-1/4}
-=\mechanical{\rho}^{-1/4}e^{-i\mechanical{\varphi}/4}.
+=\mechanical{\rho}^{-1/4}e^{-i\varphi/4}.
 $$
 
-Along the semicircle $z=\mechanical{a}+\mechanical{\rho} e^{i\mechanical{\varphi}}$, with fixed $\mechanical{\rho}$,
+Along the semicircle $z=\mechanical{a}+\mechanical{\rho} e^{i\varphi}$, with fixed $\mechanical{\rho}$,
 
 $$
-dz=i\mechanical{\rho}e^{i\mechanical{\varphi}}\,d\mechanical{\varphi}.
+dz=i\mechanical{\rho}e^{i\varphi}\,d\varphi.
 $$
 
-The continuation of the right-hand decay integrand, $\sqrt{2\mechanical{m}\lvert\mechanical{F}\rvert(z-\mechanical{a})}\,dz$, is proportional to $e^{3i\mechanical{\varphi}/2}\,d\mechanical{\varphi}$. The prefactor gains $e^{-i\pi/4}$ as $\mechanical{\varphi}$ goes from $0$ to $\pi$. On the allowed side, the action produces oscillatory phases. Combining the two conjugate oscillatory factors uses $\cos\alpha=(e^{i\alpha}+e^{-i\alpha})/2$.
+The continuation of the right-hand decay integrand, $\sqrt{2\mechanical{m}\lvert\mechanical{F}\rvert(z-\mechanical{a})}\,dz$, is proportional to $e^{3i\varphi/2}\,d\varphi$. The prefactor gains $e^{-i\pi/4}$ as $\varphi$ goes from $0$ to $\pi$. On the allowed side, the action produces oscillatory phases. Combining the two conjugate oscillatory factors uses $\cos\alpha=(e^{i\alpha}+e^{-i\alpha})/2$.
 
 With $C_R=C/2$ as noted in the margin, the connection formula for the decaying right-hand solution reads
 
@@ -186,12 +186,18 @@ Kyle Kabasares, *Quantum Mechanics II (Physics 215B, UC Irvine 2018)*.
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
 | $\hbar$ | $\unit{J\,s}$ | Reduced Planck constant | Planck constant divided by $2\pi$. |
-| $\mechanical{t}$, $\mechanical{t}_0$, $\Delta\mechanical{t}$ | $\unit{s}$ | Time | Observation time, initial or switching time, and elapsed time. |
 | $\mechanical{m}$ | $\unit{kg}$ | Mass | Particle mass. |
-| $\mechanical{x}$ | $\unit{m}$ | Position | Displacement along the oscillator axis. |
-| $\mechanical{p}$ | $\unit{kg\,m\,s^{-1}}$ | Momentum | Momentum along the oscillator axis. |
-| $\energy{E}$, $\energy{E}_0$ | $\unit{J}$ | Energy eigenvalue | Energy of an eigenstate, including the common energy of a degenerate subspace. |
-| $\mechanical{F}$, $\mechanical{F}_0$ | $\unit{N}$ | Linear driving coefficient | Coefficient of displacement in the driving potential, equal to the negative of the applied force. |
-| $\mechanical{x}_0$ | $\unit{m}$ | Shifted equilibrium position | Minimum of the oscillator potential after adding the linear term. |
-| $E$ | $\unit{N}$ | Linear perturbation coefficient | Electric field strength multiplied by the signed charge, with the sign set by the potential convention. |
-| $A$, $B$ | $\unit{s^{-1}}$ | Mode emission and absorption coefficients | Spontaneous rate and induced transition rate per photon for a single resonant mode. |
+| $\mechanical{x}$, $\mechanical{x}_0$ | $\unit{m}$ | Position | Particle position and the lower limit of the WKB phase integral. |
+| $\psi$ | $\unit{m^{-1/2}}$ | Wave function | Position-space amplitude of the stationary state. |
+| $\energy{E}$ | $\unit{J}$ | Energy | Energy of the stationary state. |
+| $U(\mechanical{x})$ | $\unit{J}$ | Potential energy | Position-dependent potential of the one-dimensional problem. |
+| $\mechanical{p}(\mechanical{x})$ | $\unit{kg\,m\,s^{-1}}$ | Local classical momentum | Momentum $\sqrt{2\mechanical{m}[\energy{E}-U(\mechanical{x})]}$ at position $\mechanical{x}$. |
+| $C$, $C'$, $C_1$, $C_2$ | — | WKB amplitudes | Constant coefficients of the WKB solutions. Their unit depends on the normalization. |
+| $\mechanical{a}$, $\mechanical{b}$ | $\unit{m}$ | Turning points | Right and left classical turning points, where $\energy{E}=U$. |
+| $\mechanical{F}$ | $\unit{N}$ | Force at the turning point | Force $-U'(\mechanical{a})$ in the linearized potential. |
+| $z$, $\mechanical{y}$, $\mechanical{\rho}$ | $\unit{m}$ | Complex coordinate | Complex position $\mechanical{x}+i\mechanical{y}$ and its distance $\mechanical{\rho}=\lvert z-\mechanical{a}\rvert$ from the turning point. |
+| $\mechanical{t}$, $\mechanical{\epsilon}$ | $\unit{s}$ | Time | Time and a short time step of the evolution. |
+| $U(\mechanical{t})$ | $1$ | Evolution operator | Unitary operator that maps the state at time $0$ to the state at $\mechanical{t}$. |
+| $H$ | $\unit{J}$ | Hamiltonian | Hermitian generator of the time evolution. |
+| $L$, $\lambda_i$ | — | Observable and eigenvalues | Observable operator and its eigenvalues; their unit is that of the observable. |
+| $\alpha_i$ | $1$ | Expansion amplitudes | Amplitudes of the state in the eigenbasis of $L$. |

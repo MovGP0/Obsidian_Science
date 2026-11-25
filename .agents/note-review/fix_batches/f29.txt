@@ -1,0 +1,15 @@
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/Nuclear and quantum statistics review calculations.md
+- [Correctness] The physical-quantities table lists symbols the note does not use with those meanings: $F$ as Faraday constant (the note uses $F_G$, $F_C$ for forces and $F(v)$ for a density), $R$ as activity (the note uses $R$ for nuclear radius, interaction range, and $3R$ gas constant), $T$ "determines the blackbody spectrum", and $\lambda$ only as decay constant (the note uses $\lambda=m/(2k_BT)$ and de Broglie wavelength); rebuild the table from the symbols actually used ($A$, $Z$, $N$, $L$, $m_\ell$, $k_B$, $g(E)$, $f$, $R_{21}$, $a_0$, $C_V$, $N_A$, $R$, $F_G$, $F_C$).
+- [Correctness] Symbol clashes: $A$ is mass number and also the normalization constant in $f_{\mathrm{MB}}$ and $F(v)=Av^3e^{-\lambda v^2}$; $N$ is neutron number and particle number in $P=(2/3)N\langle E\rangle/V$; rename the normalization constants (e.g. $C$) and the particle count.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/Nuclear mass, decay channels, and dating problems.md
+- [Correctness] Neutron-discovery sketch: the recoil protons from paraffin had energies up to about 5.7 MeV (Chadwick 1932), not "5.7 keV"; note the handwritten label as a slip.
+- [Correctness] The physical-quantities table lists $\varepsilon$ as emissivity, but the note only uses $\varepsilon_0$ (vacuum permittivity); also $R$ is activity in the table but the note uses $\mechanical{R}$ for nuclear radius and $R$, $S$ for breakup products, and $N$ for both neutron number and $N(t)$; rename the products and fix the table.
+- [Correctness] Be-8 two-alpha value: $[2(4.002603)-8.005305]\times931.5=-0.0922$ MeV, not $-0.093$ MeV (as correctly given in the review-calculations note).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/Standard Model.md
+- [Correctness] Covariant derivative: the SU(2) term must be $-ig\,\tfrac{\tau^i}{2}W^i_\mu$ (generators $T^i=\tau^i/2$), not $-ig\tau^iW^i_\mu$; otherwise $m_W=\tfrac12gv$ is off by a factor 2.
+- [Correctness] With $\mathcal L\supset-\mu^2\phi^\dagger\phi-\lambda(\phi^\dagger\phi)^2$ and $\mu^2<0$, the minimum is at $v=\sqrt{-\mu^2/\lambda}$, not $\sqrt{\mu^2/\lambda}$.
+- [Correctness] Yukawa terms: "$-\ldots-\text{h.c.}$" makes the Lagrangian anti-Hermitian; write $-(\bar Q_LY_d\phi d_R+\bar Q_LY_u\tilde\phi u_R+\bar L_LY_e\phi e_R+\text{h.c.})$, and fix the Compact Form, whose inner minus signs flip the up-type and lepton terms relative to the Yukawa section.
+- [Correctness] Rendering errors: column vectors written as `\begin{pmatrix} u_L \ d_L \end{pmatrix}` (also $L_L$ and $\langle\phi\rangle$) need `\\`, $m_Z=\tfrac12\sqrt{g^2+g'^2},v$ needs `\,v`, and the Higgs doublet mixes Unicode `φ⁺`/`ϕ⁰`; also "left-handed means only one spin orientation" conflates chirality with helicity, and right-handed singlets do couple to the $Z$ via hypercharge.
+

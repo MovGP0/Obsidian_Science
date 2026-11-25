@@ -1,6 +1,6 @@
 A group is a special set with additional rules.
 
-Given the group $(G,\cdot)$, the following rules must be met:
+Given the group $(G,\cdot)$, the operation $\cdot: G\times G\to G$ is a binary operation on $G$. Thus $a\cdot b\in G$ for all $a,b\in G$ (closure). The following rules must also be met:
 
 1. Identity element:
 $$\exists e \in G$$
@@ -18,8 +18,9 @@ $$a \cdot a^{-1} = a^{-1} \cdot a = e$$
 
 ### Group homomorphisms
 
-Because of the rules of groups, additional rules can be derived. 
+A group homomorphism is a map between two groups that keeps the group operation.
 
-Ie. given a morphism $f$ on the group $(G,·)$ we can define:
+I.e. a map $f:(G,\cdot)\to(H,\ast)$ is a homomorphism if:
 
-$$f(a\cdot b) = f(a)\cdot f(b)$$
+$$f(a\cdot b) = f(a)\ast f(b)$$
+$$\forall a,b \in G$$

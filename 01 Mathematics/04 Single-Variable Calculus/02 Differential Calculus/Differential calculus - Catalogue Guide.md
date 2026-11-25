@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Differential calculus: learning route"
 catalogue_ids:
   - "6"
@@ -56,7 +56,7 @@ First identify the domain and the type of question. A formula can require a nonz
 <!-- catalogue-complete-lesson-index:start -->
 ## Complete lesson index
 
-Read the prerequisite route above before the advanced lessons. The source topic links are in [[Planned Topics#6. Differential calculus|the detailed catalogue]].
+Read the prerequisite route above before the advanced lessons.
 
 - [[Tangents and the derivative|Tangents and the derivative]] — 6.1, 6.1.1.
 - [[Elementary derivative methods|Elementary derivative methods]] — 6.1.2, 6.1.2.1, 6.1.2.2.

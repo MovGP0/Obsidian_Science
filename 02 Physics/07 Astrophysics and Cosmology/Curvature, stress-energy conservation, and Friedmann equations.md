@@ -410,9 +410,9 @@ Kyle Kabasares, *Cosmology (Physics 240B, UC Irvine 2018)*.
 | $\mechanical{c}$ | $\unit{m\,s^{-1}}$ | Speed of light | Converts the time coordinate to length units in the flat interval. |
 | $\mechanical{x}$, $\mechanical{y}$, $\mechanical{z}$, $\mechanical{r}$ | $\unit{m}$ | Spatial coordinates | The Cartesian coordinates and the spherical radial coordinate. |
 | $\theta$, $\phi$ | $\unit{rad}$ | Spherical angles | Polar angle and azimuth in the spherical line element. |
-| $\mechanical{v}$ | $\unit{m\,s^{-1}}$ | Radial speed | Rate of change of radial position in the chosen inertial frame. It is expressed in units of the speed of light in $\gamma$. |
-| $\gamma$ | $1$ | Lorentz factor | Ratio of coordinate time to proper time for inertial motion. |
-| $\mechanical{F}$, $\mechanical{m}$, $\mechanical{a}$ | $\unit{N}$, $\unit{kg}$, $\unit{m\,s^{-2}}$ | Force, mass and acceleration | Quantities in Newton's second law. The acceleration here is distinct from the cosmological scale factor $a$. |
+| $\mechanical{v}$ | $\unit{m\,s^{-1}}$ | Particle speed | Typical speed of the matter particles, small compared with $\mechanical{c}$ for nonrelativistic matter. |
+| $\gamma$ | $1$ | Spatial metric | Metric of the spatial slice used in the proper-volume integral. |
+| $\mechanical{m}$ | $\unit{kg}$ | Mass | Mass in the dimensional estimate of the infall time. |
 | $\energy{E}$ | $\unit{J}$ | Photon energy | Energy measured by a comoving observer, equal to $\mechanical{P}^0$ in natural units. |
 | $\energy{T}^\mu{}_\nu$ | $\unit{J\,m^{-3}}$ | Stress-energy tensor | Encodes energy density, momentum density, energy flux and stresses. The unit applies to local orthonormal components. |
 | $\thermal{p}$ | $\unit{Pa}$ | Isotropic pressure | Spatial diagonal component of the comoving perfect-fluid stress-energy tensor. |
@@ -421,7 +421,7 @@ Kyle Kabasares, *Cosmology (Physics 240B, UC Irvine 2018)*.
 | $\mechanical{\rho}$ | $\unit{kg\,m^{-3}}$ | Mass density | Mass per volume in the dimensional estimate of the infall time. |
 | $A$ | $\unit{m}$ | Comoving curvature radius | Radius of the embedded three-sphere before multiplication by the scale factor. |
 | $\chi$ | $\unit{rad}$ | Hyperspherical radial angle | Coordinate with $x_4=R\cos\chi$ in the embedding. |
-| $k$ | $\unit{m^{-2}}$ | Spatial curvature parameter | Units apply when $r$ has dimensions of length and $a$ is dimensionless. |
+| $k$ | $1$ | Spatial curvature index | Takes the values $+1$, $-1$, or $0$. The curvature scale is the explicit $R_0$. |
 | $R_0$ | $\unit{m}$ | Comoving curvature radius | Used in the positively and negatively curved cases. |
 | $S_k(r)$ | $\unit{m}$ | Comoving transverse radius | Determines the area of a sphere at comoving radial distance $r$. |
 | $V$ | $\unit{m^3}$ | Proper spatial volume | A shell is evaluated at a fixed cosmic time. |
@@ -432,9 +432,4 @@ Kyle Kabasares, *Cosmology (Physics 240B, UC Irvine 2018)*.
 | $\thermal{Q}$ | $\unit{J}$ | Heat transferred | Vanishes for the adiabatic expansion considered here. |
 | $\energy{U}$ | $\unit{J}$ | Internal energy in a comoving region | The product of energy density and the proper volume of the region. |
 | $\Lambda$ | $\unit{m^{-2}}$ | Cosmological constant | Coefficient of the metric term in the Einstein equation. |
-| $\sigma$ | $\unit{m^2}$ | Reaction cross section | Averaged together with relative speed to obtain the rate coefficient. |
-| $\phi$ | $\unit{GeV}$ | Homogeneous scalar field | Field amplitude expressed in energy units with $\hbar=\mechanical{c}=1$. |
-| $\ell$, $C_\ell$ | $1$ | Angular multipole and temperature angular power | Here $C_\ell$ is for fractional temperature fluctuations. Higher $\ell$ corresponds to smaller angular scales. |
-| $\vec k$, $k$ | $\unit{m^{-1}}$ | Comoving wavevector and wavenumber | The wavevector labels a spatial Fourier mode. The magnitude is distinct from the curvature index $k$. |
-| $\mu$ | $1$ | Direction cosine for a photon Fourier mode | Dot product of the photon direction with the wavevector direction. |
-| $\delta$ | $1$ | Density contrast | Ratio of a first-order density perturbation to the homogeneous background. For nonrelativistic matter of fixed particle mass, the number and mass density contrasts agree. |
+| $\ell$ | $\unit{m}$ | Transverse proper length | Proper length of an object perpendicular to the line of sight, $\ell=aS_k\,d\theta$. |

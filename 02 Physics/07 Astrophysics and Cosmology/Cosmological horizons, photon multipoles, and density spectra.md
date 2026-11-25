@@ -361,27 +361,24 @@ Kyle Kabasares, *Cosmology (Physics 240B, UC Irvine 2018)*.
 | $h$ | $1$ | Reduced Hubble parameter | $H_0$ in units of $\quantity{100}{km\,s^{-1}\,Mpc^{-1}}$. |
 | $ds^2$ | $\unit{m^2}$ | Squared spacetime interval | Metric contraction of two coordinate differentials when the line element is expressed in length units. |
 | $\mechanical{c}$ | $\unit{m\,s^{-1}}$ | Speed of light | Converts the time coordinate to length units in the flat interval. |
-| $\theta$, $\phi$ | $\unit{rad}$ | Spherical angles | Polar angle and azimuth in the spherical line element. |
-| $\mechanical{v}$ | $\unit{m\,s^{-1}}$ | Radial speed | Rate of change of radial position in the chosen inertial frame. It is expressed in units of the speed of light in $\gamma$. |
-| $\gamma$ | $1$ | Lorentz factor | Ratio of coordinate time to proper time for inertial motion. |
-| $\mechanical{F}$, $\mechanical{m}$, $\mechanical{a}$ | $\unit{N}$, $\unit{kg}$, $\unit{m\,s^{-2}}$ | Force, mass and acceleration | Quantities in Newton's second law. The acceleration here is distinct from the cosmological scale factor $a$. |
-| $\mechanical{\vec p}$ | $\unit{kg\,m\,s^{-1}}$ | Physical spatial momentum | Momentum components measured in a local orthonormal frame. |
-| $A$ | $\unit{m}$ | Comoving curvature radius | Radius of the embedded three-sphere before multiplication by the scale factor. |
-| $\chi$ | $\unit{rad}$ | Hyperspherical radial angle | Coordinate with $x_4=R\cos\chi$ in the embedding. |
-| $k$ | $\unit{m^{-2}}$ | Spatial curvature parameter | Units apply when $r$ has dimensions of length and $a$ is dimensionless. |
-| $V$ | $\unit{m^3}$ | Proper spatial volume | A shell is evaluated at a fixed cosmic time. |
-| $\Lambda$ | $\unit{m^{-2}}$ | Cosmological constant | Coefficient of the metric term in the Einstein equation. |
-| $n$ | $\unit{m^{-3}}$ | Particle number density | For a heavy nonrelativistic species, rest energy times number density gives the leading energy density. |
-| $\thermal{T}_\gamma$, $\thermal{T}_\nu$ | $\unit{K}$ | Photon and neutrino temperatures | After decoupling, the two distributions have separate temperature scales. |
-| $\sigma$ | $\unit{m^2}$ | Reaction cross section | Averaged together with relative speed to obtain the rate coefficient. |
+| $\theta$ | $\unit{rad}$ | Subtended angle | Angle subtended by a proper length at the last-scattering distance. |
+| $\mechanical{v}$, $\widetilde{\mechanical{v}}_{\mathrm b}$ | $\unit{m\,s^{-1}}$ | Bulk velocity | Velocity of the matter or baryon fluid and its Fourier amplitude. |
+| $\mechanical{m}_e$ | $\unit{kg}$ | Electron mass | Rest mass of the scattering electron. |
+| $\mechanical{p}$, $\mechanical{p}'$, $\mechanical{\vec q}$ | $\unit{kg\,m\,s^{-1}}$ | Scattering momenta | Photon momenta before and after Compton scattering, and the electron momentum. |
+| $\mechanical{\vec p}$, $\hat{\vec p}$ | $\unit{kg\,m\,s^{-1}}$, $1$ | Photon momentum and direction | Photon momentum and its unit direction vector. |
+| $\chi$ | $\unit{m}$ | Comoving radial distance | Distance to the source in comoving coordinates, used in $D_{\mathrm A}=\chi/(1+z)$. |
+| $D_{\mathrm A}$ | $\unit{m}$ | Angular diameter distance | Ratio of proper length to subtended angle. |
+| $V_{\mathrm{eff}}$ | $\unit{m^3}$ | Effective proper volume | Proper volume of a unit coordinate volume in the perturbed metric. |
+| $n_e$ | $\unit{m^{-3}}$ | Free-electron number density | Number density of electrons available for Thomson scattering. |
+| $\thermal{T}_\gamma$, $\thermal{T}_e$ | $\unit{K}$ | Photon and electron temperatures | Temperatures of the CMB photons and of the electrons. |
 | $\eta$ | $\unit{s}$ | Conformal time | Defined by $d\eta=dt/a$. The product $\mechanical{c}\eta$ has units of comoving distance. |
 | $\Omega_\Lambda$ | $1$ | Present vacuum density parameter | Vacuum energy density divided by today's critical density. |
-| $\Psi$, $\Phi$ | $\unit{m^2\,s^{-2}}$ | Scalar metric perturbation potentials | The time and space perturbations in the sign convention above. |
+| $\Psi$, $\Phi$ | $1$ | Scalar metric perturbation potentials | Dimensionless time and space perturbations in $ds^2=-\mechanical{c}^2(1+2\Psi)dt^2+a^2(1+2\Phi)d\vec x^{\,2}$. |
 | $\Theta$ | $1$ | Fractional photon temperature perturbation | Defined by $\thermal{T}=\thermal{T}^{(0)}(1+\Theta)$. |
 | $\sigma_{\mathrm T}$ | $\unit{m^2}$ | Thomson cross section | Low-energy cross section for photon scattering by an electron. |
 | $\Theta_0$ | $1$ | Temperature monopole | Angular average of $\Theta$ at a point. |
-| $\ell$, $C_\ell$ | $1$ | Angular multipole and temperature angular power | Here $C_\ell$ is for fractional temperature fluctuations. Higher $\ell$ corresponds to smaller angular scales. |
-| $\vec k$, $k$ | $\unit{m^{-1}}$ | Comoving wavevector and wavenumber | The wavevector labels a spatial Fourier mode. The magnitude is distinct from the curvature index $k$. |
+| $\ell$ | $1$ | Multipole order | Order of the Legendre moment $\Theta_\ell$ of the photon temperature perturbation. |
+| $\vec k$, $k$ | $\unit{m^{-1}}$ | Comoving wavevector and wavenumber | The wavevector labels a spatial Fourier mode. |
 | $\mu$ | $1$ | Direction cosine for a photon Fourier mode | Dot product of the photon direction with the wavevector direction. |
 | $\delta$ | $1$ | Density contrast | Ratio of a first-order density perturbation to the homogeneous background. For nonrelativistic matter of fixed particle mass, the number and mass density contrasts agree. |
 | $\mathcal H$ | $\unit{s^{-1}}$ | Conformal Hubble parameter | Logarithmic derivative of the scale factor with respect to conformal time. |

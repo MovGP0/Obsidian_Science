@@ -278,7 +278,7 @@ The density is $f(x)=\lambda e^{-\lambda x}$ for $x\geq0$ and zero otherwise, wi
 
 ##### Pareto
 
-The density is $f(x)=\alpha/x^{\alpha+1}$ for $x\geq1$. Its mean is $\alpha/(\alpha-1)$ for $\alpha>1$. The notes mention modeling earthquake magnitudes and salaries above a threshold.
+The density is $f(x)=\alpha/x^{\alpha+1}$ for $x\geq1$. Its mean is $\alpha/(\alpha-1)$ for $\alpha>1$. The notes mention modeling earthquake magnitudes and salaries above a threshold. Under the Gutenberg–Richter law, magnitudes are approximately exponential, and the released seismic energies are approximately Pareto. This agrees with the transformation $Y=e^X$ in [[#Exponential to Pareto transformation]].
 
 ![[Kyle Kabasares - Probability and Statistics - Pareto density in distribution review.png|**Fig. 36** The support of the Pareto model begins at 1.]]
 
@@ -474,12 +474,12 @@ F_X(x)=\frac{1}{\pi}\left[\arctan t\right]_{-\infty}^{x}
 =\frac12+\frac{1}{\pi}\arctan x.
 $$
 
-The handwritten calculation uses $1-F_X(1/y)$ for the CDF of $Y$. This applies for $y<0$. For $y>0$ the event also includes every negative value of $X$. Since $P(X<0)=1/2$,
+The handwritten calculation uses $1-F_X(1/y)$ for the CDF of $Y$. This expression is $P(X\geq1/y)$, which is not the CDF of $Y$ on either half-line. For $y<0$ the event $\{1/X\leq y\}$ contains only the values $1/y\leq X<0$. For $y>0$ the event also includes every negative value of $X$. Since $P(X<0)=1/2$,
 
 $$
 F_Y(y)=
 \begin{cases}
-1-F_X(1/y),&y<0,\\
+1/2-F_X(1/y),&y<0,\\
 1/2,&y=0,\\
 1/2+1-F_X(1/y),&y>0.
 \end{cases}

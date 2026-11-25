@@ -235,10 +235,10 @@ $$
 z-\frac12=\left(x-\frac12\right)+\frac12(y-1).
 $$
 
-The tangent-plane function from the preceding example is $\pi(x,y)=1/2+(x-1/2)+(y-1)/2$. It gives
+The tangent-plane function from the preceding example is $L(x,y)=1/2+(x-1/2)+(y-1)/2$. It gives
 
 $$
-f(0.47,1.02)\approx\pi(0.47,1.02)
+f(0.47,1.02)\approx L(0.47,1.02)
 =\frac12-0.03+\frac12(0.02)=0.48.
 $$
 
@@ -446,10 +446,8 @@ Kyle Kabasares, *Calculus III - Vector Calculus (Math 23, UC Merced 2014)*.
 | --- | --- | --- | --- |
 | $\mechanical{\mathbf r}$ | $\unit{m}$ | Position | Vector from the coordinate origin to the moving point. |
 | $\mechanical{\mathbf v}$ | $\unit{m\,s^{-1}}$ | Velocity | Time derivative of the position vector. |
-| $\mechanical{\mathbf a}$, $\mechanical{a}$ | $\unit{m\,s^{-2}}$ | Acceleration | Time derivative of velocity, or its signed one-dimensional value. |
-| $\mechanical{v}$, $\mechanical{v}_0$ | $\unit{m\,s^{-1}}$ | One-dimensional velocity | Signed velocity and its value at the initial time. |
-| $\mechanical{x}$, $\mechanical{y}$ | $\unit{m}$ | Position components | Horizontal and vertical coordinates of the marked point. |
-| $\mechanical{\theta}$ | $\unit{rad}$ | Rotation angle or azimuth | Angle swept by the rolling circle, or horizontal direction of the initial velocity measured from the positive $x$-axis. |
+| $\mechanical{\mathbf a}$ | $\unit{m\,s^{-2}}$ | Acceleration | Time derivative of velocity. |
+| $\mechanical{\theta}$ | $\unit{rad}$ | Azimuth | Horizontal direction of the initial velocity measured from the positive $x$-axis. |
 | $\mechanical{\phi}$ | $\unit{rad}$ | Launch inclination | Angle of the initial velocity from the positive vertical. |
 | $\mechanical{\mathbf v}_0$, $\mechanical{v}_{0x}$, $\mechanical{v}_{0y}$, $\mechanical{v}_{0z}$ | $\unit{m\,s^{-1}}$ | Initial velocity and components | Velocity at launch resolved into Cartesian components. |
 | $\mechanical{x}_0$, $\mechanical{y}_0$, $\mechanical{z}_0$ | $\unit{m}$ | Initial position coordinates | Position components at launch. |

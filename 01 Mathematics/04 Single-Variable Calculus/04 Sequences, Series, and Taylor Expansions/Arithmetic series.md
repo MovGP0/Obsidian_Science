@@ -69,7 +69,7 @@ The result must be a positive integer if both endpoints belong to the proposed s
 
 ## Common mistakes
 
-The formula needs equally spaced **values**, not merely equally spaced positions. The list $1,2,4,8$ is not arithmetic. A decreasing sequence still uses the same sum formula. Negative terms can cancel positive terms, so its total need not lie between the first and last term. The quantity $(a+\ell)/2$ is the mean of the terms, not their total.
+The formula needs equally spaced **values**, not merely equally spaced positions. The list $1,2,4,8$ is not arithmetic. A decreasing sequence still uses the same sum formula. The quantity $(a+\ell)/2$ is the mean of the terms, not their total. The mean lies between the first and last term, but the total $S_n$ is $n$ times the mean, so it need not.
 
 ## Practice
 

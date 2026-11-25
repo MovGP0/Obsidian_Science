@@ -1,0 +1,42 @@
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/01 Ordinary Differential Equations/01 Worked Differential Equations/01 Examples/Energy Conservation Example.md
+- PARTLY | Step 4 arctan phase wrong for v0<=0; Step 3 arcsin covers only v0>=0 | Step 4 confirmed: replaced arctan(x0 omega/v0) with atan2(x0 omega, v0) and stated sin/cos conditions for x=A sin(omega t+phi0); Step 3 left unchanged because its explicit sign choice in A sin(+-omega t+phi0) already covers v0<0
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/01 Ordinary Differential Equations/01 Worked Differential Equations/01 Examples/Hamiltonian Flow Example.md
+- FIXED | e^{At} is not a rotation unless m omega=1 | Rewrote Step 4 sentence: motion along the ellipse in (x,p); rotation by omega t only in scaled coordinates (x, p/(m omega))
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/01 Ordinary Differential Equations/01 Worked Differential Equations/01 Examples/Substitution Example.md
+- FIXED | dx/dt^2 and d^2x^2/dt^2 typos | Corrected to dx/dt and d^2x/dt^2
+- FIXED | Ansatz omits B, Omega called frequency, conclusion missing | Ansatz now A cos + B sin; added B row; Omega labelled angular frequency; added conclusion Omega^2=k/m so Omega=omega
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/01 Ordinary Differential Equations/01 Worked Differential Equations/Algebraic Rules for Ordinary Differential Equations (ODE).md
+- FIXED | d/dt ln f = f'/f invalid for f<0 | Changed to d/dt ln|f| = f'/f for f(t) not 0, noting the absolute value can be dropped for f>0
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/01 Ordinary Differential Equations/01 Worked Differential Equations/Types of Differentials.md
+- FIXED | Exterior derivative wedges a function component | Wrote d omega = partial_nu omega_mu dx^nu wedge dx^mu = 1/2(partial_nu omega_mu - partial_mu omega_nu) dx^nu wedge dx^mu
+- FIXED | Covariant derivative not unique without conditions | Key point now says uniqueness holds only for the torsion-free metric-compatible Levi-Civita connection
+- FIXED | Average-value meaning holds only for Riemannian Laplacian | Meaning now separates elliptic Riemannian Laplacian from the Lorentzian d'Alembertian wave operator
+- FIXED | u^mu nabla_mu on scalars needs no connection; Lie derivative wording | Table cell now says connection needed only for tensors, added scalar identity u^mu nabla_mu f = df/dtau; Lie key point now says changes relative to the flow of v
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/02 Linear Systems, Stability, and Phase Portraits/Linearization, phase portraits, and nonlinear maps.md
+- FIXED | Table has duplicate beta, lambda as Lyapunov exponent, unrelated rows | Rebuilt table from symbols used (R, W, t, alpha, beta, gamma, delta, lambda as eigenvalue, bars, epsilon, x_i, h/Delta t, y, kappa, x_n, mu)
+- FIXED | beta and alpha clashes with logistic map and recurrence | Renamed logistic-map parameter beta to mu and recurrence multiplier alpha to kappa; logistic rate alpha kept as a growth rate (same meaning as rabbit growth rate)
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/03 Boundary-Value Problems and Eigenfunctions/Box central-field and oscillator eigenfunctions.md
+- FIXED | "linear" does not mean linearity in the unknown | Sentence now says linear refers to the 1D oscillator with restoring force linear in displacement (potential quadratic); also removed BOM and converted CRLF to LF
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/03 Boundary-Value Problems and Eigenfunctions/Endpoint eigenvalues and Fourier orthogonality.md
+- FIXED | Duplicate c row and heat/wave wording not in note | Removed wave-speed row; m, x and t descriptions now refer only to the forced oscillator
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/03 Boundary-Value Problems and Eigenfunctions/Weighted eigenfunctions and Rayleigh bounds.md
+- PARTLY | Table has wrong u, unused k, L,H, r,a rows; Q link wrong | Removed pressure, diffusivity, membrane and radius rows, added L string length and alpha rows, c row without unused v; Q link kept because Exercise 4.4.2 lies inside the Theorems for regular Sturm–Liouville problems section, description now names the exercise
+- FIXED | alpha clash and T(t) next to tension T0 | Exercise 4.4.2 now uses alpha for the load coefficient (q=alpha as in the opening) and writes the ratio alpha/rho0 explicitly; time factor T(t) renamed h(t) in the nonuniform-string section and the exercise
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/04 Partial Differential Equations/Classification and heat-equation examples.md
+- PARTLY | Oscillator rows c, m, x do not occur | Damping-c row removed; m (rod slice mass) and x (spatial coordinate) do occur, so their rows were kept with descriptions corrected
+- FIXED | y row link wrong; y vs u for same temperature | Changed the Introduction to PDEs heat equation to use u and removed the y row with its wrong link
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/04 Partial Differential Equations/Fourier extensions and forced heat modes.md
+- FIXED | Time-differentiation link points to wrong heading | Link now targets #Time differentiation of a Fourier series
+- FIXED | Table has pressure u, unused rho, Q, Exercise 4.4.2, L,H, r,a rows | Rebuilt table from used symbols; added L, F/m/a for Newton's law; kept c,v since v occurs in the vector wave equation
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/04 Partial Differential Equations/Heat equation, boundary data, and separation.md
+- FIXED | phi used for heat flux and initial temperature | Renamed initial profile to psi (already the initial temperature symbol; f is taken by the source f(x,t) there); merged table rows
+- FIXED | k used for conductivity in Fourier's law | Fourier's law now uses k_0; replaced the explaining sentence
+- FIXED | Two internal links point to unrelated sections | Removed the Newton's-law link (no section holds it); retargeted the source-convention link to #Steady-state heat equation
+- FIXED | Table rows for c,v, string rho, L,H, a | Removed them; added L rod length and r radial distance (used in Exercise 2.3.1 D)
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/04 Partial Differential Equations/Insulated, periodic, and forced heat problems.md
+- FIXED | Table lists membrane L,H and r,a; omits g and rod L | Replaced with L (rod length and half ring length), g(x) and the endpoint temperatures A, B
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/04 Partial Differential Equations/Model error, random walks, and continuum limits.md
+- FIXED | Table full of unrelated symbols; tau wrong | Rebuilt table from x,t, Delta x, Delta t, c, D, U, f, g, h, C, z, y, tau, mu, sigma, L, N
+- FIXED | DLA attribution Witten 1978 | Kept the report of the notes and added that Witten and Sander introduced DLA in 1981
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/04 Partial Differential Equations/Rectangular and circular membrane eigenmodes.md
+- FIXED | u as pressure, damping beta, unused v | u row now membrane displacement in m; removed damping-beta row; c row without v

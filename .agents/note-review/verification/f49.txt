@@ -1,0 +1,43 @@
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/02 Postulates of Quantum Mechanics/Quantum measurement and change-of-basis exercises.md
+- FIXED | Table lists unused R,T; add L_x,L_y,L_z, Omega, w, P_w | Replaced the R,T row with rows for L_x,L_y,L_z (units of hbar), the measured eigenvalue w of Omega, and the outcome probability; operators Omega and P_w are not listed as quantities
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/02 Postulates of Quantum Mechanics/Quantum states, eigenfunctions, and time evolution problems.md
+- FIXED | Unused R,T in table; T and k clash (kinetic energy, fall time, period; box/spring/delta shift/wave number) | Removed R,T row; H=K+V=T+V to H=K+V (twice); wave period renamed T_w; spring constant renamed k_s; delta shift k renamed x_0; box and wave k kept (both wave numbers); added rows for m, x, K, L, k, k_s, sigma_x, p(x), tau(t), g, h, T (fall time), v, lambda, T_w, omega
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/03 Measurement, Observables, and Uncertainty/Dirac notation, representations, and quantum uncertainty.md
+- FIXED | Unused R,T row; add Phi, p, sigma_Q, c_n | Removed R,T row; added Phi(p,t), p, x, h, sigma_Q, sigma_x and sigma_px, c_n
+- FIXED | Psi unit m^-3/2 but note is 1D | Psi unit changed to m^-1/2 (one dimension); Phi given unit (kg m s^-1)^-1/2
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/03 Measurement, Observables, and Uncertainty/Hermitian operators and uncertainty derivations.md
+- FIXED | a(x),b(x) clash with integration limits a,b and coefficients a,b,c,d | Renamed the opening functions a(x),b(x),c(x) to u(x),v(x),w(x)
+- FIXED | Psi unit m^-3/2 in a 1D note; add p, q, sigma_Q, c_n | Psi unit changed to m^-1/2; added rows for x, p, q, sigma_Q, c_n
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/06 One-Dimensional Systems/06.05 Attractive Delta Potential.md
+- FIXED | Source link targets Atkins 3.29/3.30 section instead of Double delta well | Link heading changed to #Double delta well (heading exists in the target note)
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/06 One-Dimensional Systems/06.08 One-Dimensional Systems Exercises.md
+- FIXED | T is both transmission coefficient and oscillation period | Renamed the period in exercise 6 and the table to tau (value 4mL^2/(3 pi hbar) verified)
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/06 One-Dimensional Systems/Free particles, finite barriers, and point interactions.md
+- FIXED | alpha used for delta strength, Gaussian parameter, and well coefficient; tags (1),(2) reused | Gaussian parameter renamed gamma (with a definition sentence); centered-well coefficients alpha,beta renamed P,Q; even-state matching tags renumbered (4),(5) and the reference updated; added alpha and gamma table rows
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/06 One-Dimensional Systems/Square-well, oscillator, and tunneling problems.md
+- FIXED | R listed as Activity in Bq; E_n relative to ionization in eV; missing symbols | R row now reflection coefficient (1); E_n row now J, measured from the well floor; added E, V_0, m, L, psi, k, kappa, eta, T rows
+- FIXED | Region III amplitudes D,F vs F,G; eta=1/alpha with alpha undefined | Region III in Barrier boundary conditions now Fe^{ik3x}+Ge^{-ik3x} with G=0; eta=1/kappa
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/07 Barriers and Quantum Tunneling/07.05 Other Applications.md
+- FIXED | Table lists I,V that the note never uses as symbols | Removed the current and voltage row
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/08 Harmonic Oscillator/Harmonic oscillator wavefunctions and ladder calculations.md
+- FIXED | a_0 listed as Bohr radius; Psi in m^-3/2 in a 1D note | Removed the Bohr-radius row (a_0 is a series coefficient); Psi unit changed to m^-1/2
+- FIXED | alpha, y, E_0, k/k' clashes | <x> helper alpha renamed beta; Hermite scale alpha renamed gamma (delta strength keeps alpha); example function y renamed g in y''+y=0; well E_0 n^2 changed to E_1 n^2; last paragraph uses k' inside and k=i kappa outside as in the strategy section; added gamma and alpha table rows
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/09 Orbital Angular Momentum/Orbital angular momentum, rings, and spheres.md
+- FIXED | J_x listed as probability flux; unused R,T; missing m, m_l, J, Lambda^2 | Replaced J_x and R,T rows with rows for the generalized angular momentum J, mass m, radius r, quantum numbers l,m_l and j,m_j; Lambda^2 not listed because it is a dimensionless operator
+- FIXED | Square-integrability condition labeled as the inner product | Split into a square-integrability statement and a separate inner-product equation
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/09 Orbital Angular Momentum/Spatial rotations and the angular momentum generators.md
+- FIXED | O_yO_x-O_xO_y matrix sign wrong; equals O_z(+eps^2)-I_3 | Verified numerically that eps^2[L_x,L_y]=-i eps^2 L_z; flipped the displayed matrix signs and changed the text to -i eps^2 L_z=O_z(eps^2)-I_3
+- FIXED | Table has box length L, p', c, A,B that are unused | Removed those rows (kept p); added r, generators L_i,T_a,J_i, O and D(R), angles phi and epsilon, omega, l and m
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/10 Spin/Spin in magnetic fields and atomic Zeeman splitting.md
+- FIXED | Table duplicates v and A,B, lists unused symbols, omits used ones; rename spin-coupling constant | Spin-coupling constant A renamed K (with the coupling K S1.S2 stated); rebuilt the table: removed t0, Delta t, oscillator x, E in N, Delta E and delta E, box L, particle speed v, emission A,B, T_c; added K, a and tilde a, b_i, g, g_J, mu_B, mu, m_j and other quantum numbers, chi, R_nl, B, P, V, alpha and others
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/10 Spin/Unitary rotations of spinors and Pauli matrices.md
+- FIXED | Unused rows box length L, c, A,B | Removed the three rows
+- FIXED | Cartesian rotation generators share the letter L with the orbital operator | Rewrote O=e^{-i phi n.L} as O=e^{-i phi n.calJ} with dimensionless 3x3 generators calJ_i (the formula is in the scalar/vector paragraph after Spinor rotation)
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/11 Addition of Angular Momentum/11.10 Addition of Angular Momentum Exercises.md
+- FIXED | Ladder relation called Racah recurrence | Renamed to ladder recursion relations
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/11 Addition of Angular Momentum/Coupled angular momentum and Clebsch–Gordan calculations.md
+- FIXED | Table copied from other notes; A is the spin-spin constant | Rebuilt the table: removed oscillator x, E in N, Delta E and delta E, box L, p', eta, emission A,B; added x,y,z, r and r_12, p, v, F, V, Hamiltonians, Delta E^(1), A (spin-spin coupling), B, E field, g, alpha, quantum numbers; kept A vector potential, phi, mu, d rows
+- PARTLY | Ten significant figures outdated; drop handwritten (alpha/4pi)^2 | Precision statement updated with the 2023 value g/2=1.00115965218059(13), 0.13 ppt, about 14 significant figures; kept the handwritten remark because the note already gives the correct alpha/pi correction next to it
+- FIXED | Electron mass switches between m and m_e in one derivation | Used m_e in the hydrogen Hamiltonian expansion and in the spin-orbit term Delta H; kept m only in the general-particle formulas (mu, H_mag, practice problem)
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/11 Addition of Angular Momentum/Pauli matrices and two-spin calculations.md
+- FIXED | J_x as probability flux and unused R,T | Replaced with rows for S, L, J (J s) and the spin quantum numbers s, m_s

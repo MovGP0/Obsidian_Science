@@ -11,7 +11,7 @@
 | $\nabla_\mu V^\mu$  | Divergence of a vector field                           | scalar                                      | yes (connection appears implicitly) | conservation laws, continuity equations         |
 | $\Box$              | Laplacian / d'Alembertian on scalars                   | scalar                                      | yes                                 | wave equations, potential theory                |
 | $D/Dt$              | Material derivative following a fluid parcel           | scalar but frame-dependent                  | no                                  | continuum mechanics, fluid dynamics             |
-| $u^\mu \nabla_\mu$  | Directional derivative along the four-velocity $u^\mu$ | scalar or tensor contraction                | yes                                 | relativistic dynamics, geodesics                |
+| $u^\mu \nabla_\mu$  | Directional derivative along the four-velocity $u^\mu$ | scalar or tensor contraction                | only for tensors (not for scalars)  | relativistic dynamics, geodesics                |
 
 ## Finite difference
 
@@ -116,7 +116,7 @@ $$
 - Conservation laws such as $\nabla_\mu T^{\mu\nu} = 0$.
 - Maxwell's equations in curved spacetime.
 
-**Key point:** The unique derivative operator that respects curvature and index structure on manifolds.
+**Key point:** A derivative operator that respects curvature and index structure on manifolds. It is unique only with an additional condition: the Levi-Civita connection is the unique torsion-free and metric-compatible connection.
 
 ## Lie derivative
 
@@ -141,7 +141,7 @@ $$
 - Fluid dynamics and the evolution of fields along a velocity field.
 - Lie dragging of tensors in relativity.
 
-**Key point:** Connection-independent and captures changes due to coordinate motion rather than curvature.
+**Key point:** Connection-independent and captures changes relative to the flow of $v$ rather than curvature.
 
 ## Exterior derivative
 
@@ -150,7 +150,7 @@ $$
 For a 1-form $\omega = \omega_\mu dx^\mu$ in coordinates:
 
 $$
-d\omega = \partial_\nu \omega_\mu \wedge dx^\nu \wedge dx^\mu
+d\omega = \partial_\nu \omega_\mu \, dx^\nu \wedge dx^\mu = \tfrac{1}{2}\left(\partial_\nu \omega_\mu - \partial_\mu \omega_\nu\right) dx^\nu \wedge dx^\mu
 $$
 
 **Meaning:** Encodes generalized curls and fluxes without reference to a metric or connection.
@@ -185,7 +185,7 @@ $$
 \Box f = \nabla^\mu \nabla_\mu f
 $$
 
-**Meaning:** Measures how a scalar deviates from its average value in the vicinity.
+**Meaning:** On a Riemannian (positive-definite) metric, the Laplacian $\nabla^2 f$ is an elliptic operator and measures how a scalar deviates from its average value in the vicinity. On a Lorentzian spacetime, the same expression is the d'Alembertian $\Box f$, which is a wave operator and does not have this average-value meaning.
 
 **Use cases:**
 - Wave and Klein-Gordon equations.
@@ -216,6 +216,8 @@ $$
 $$
 u^\mu \nabla_\mu f
 $$
+
+For a scalar, $u^\mu \nabla_\mu f = u^\mu \partial_\mu f = df/d\tau$, so no connection is necessary. The connection enters only for tensors.
 
 **Meaning:** Computes how a scalar or tensor changes when carried along the worldline parameterized by proper time $\tau$.
 

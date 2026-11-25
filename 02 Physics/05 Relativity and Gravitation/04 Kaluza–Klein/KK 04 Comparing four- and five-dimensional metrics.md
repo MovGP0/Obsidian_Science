@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Comparing four- and five-dimensional metrics"
 document_type: "Self-contained study chapter"
 ---
@@ -127,10 +127,10 @@ The units below use the collection's natural-unit convention. Explicit SI formul
 | $\mechanical{y}$ | $\unit{GeV^{-1}}$ | Coordinates | Length-valued base, embedding, or compact coordinates used in this chapter. |
 | $\mechanical{r}$ | $\unit{GeV^{-1}}$ | Reference circle radius | Radius encoded in the periodic coordinate identification. |
 | $\mechanical{s}_5$ | $\unit{GeV^{-1}}$ | Interval or spatial length | Separation specified by the relevant line element. |
-| $g_{\mu\nu},\;\widetilde g_{AB}$ | $1$ | Metric fields | Metric coefficients for length-valued coordinates; an angular coefficient instead carries the required length factors. |
+| $g_{\mu\nu}$ | $1$ | Four-dimensional metric | Flat metric coefficients for length-valued coordinates in both sign conventions. |
 | $\mechanical{\Phi}$ | $1$ | Radion | Ratio of the physical circular radius to the reference radius. |
 | $\mechanical{t}$ | $\unit{GeV^{-1}}$ | Time | Time coordinate in the angular formulation’s natural units. |
 | $\mechanical{x}$ | $\unit{GeV^{-1}}$ | Base coordinate | Ordinary length-valued base coordinate; a four-coordinate argument where stated. |
 | $\mechanical{\Phi}_{\mathrm{ang}}$ | $\unit{GeV^{-2}}$ | Angular squared radius | Squared physical radius; distinct from the dimensionless radius ratio in the length-coordinate formulation. |
-| $\widetilde g_{AB}$ | — | Five-dimensional metric | Component units depend on the length-valued base coordinates and dimensionless angular coordinate. |
-| $g_{\mu\nu},g_{ab}$ | $1$ | Angular base metric | Four-dimensional metric or positive spatial example, as identified beside the equation. |
+| $\widetilde g_{AB}$ | — | Five-dimensional metric | Entries for length-valued coordinates are dimensionless; the angular entry carries units of length squared. |
+

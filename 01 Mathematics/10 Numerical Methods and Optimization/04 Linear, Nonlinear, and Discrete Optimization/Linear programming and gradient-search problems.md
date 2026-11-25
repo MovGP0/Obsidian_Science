@@ -177,17 +177,17 @@ $$
 5x+7y\ge35,\qquad 10x+4y\ge40.
 $$
 
-Minimize the cost $3x+2y$ in cents, with coefficient vector $(3,2)^T$. In standard form, maximize its negative, $-3x-2y$. Introduce nonnegative surplus variables $s,t$ for the two nutrient requirements.
+Minimize the cost $3x+2y$ in cents, with coefficient vector $(3,2)^T$. In standard form, maximize its negative, $-3x-2y$. Introduce nonnegative surplus variables $u,w$ for the two nutrient requirements.
 
 $$
-5x+7y-s=35,\qquad 10x+4y-t=40,
-\qquad x,y,s,t\ge0.
+5x+7y-u=35,\qquad 10x+4y-w=40,
+\qquad x,y,u,w\ge0.
 $$
 
 Thus
 
 $$
-\vec x=\begin{pmatrix}x\\y\\s\\t\end{pmatrix},
+\vec x=\begin{pmatrix}x\\y\\u\\w\end{pmatrix},
 \qquad
 \vec c=\begin{pmatrix}-3\\-2\\0\\0\end{pmatrix},
 \qquad
@@ -202,7 +202,7 @@ For the soup mixture, the cost contours have equation $3x+2y=c$, or $y=c/2-3x/2$
 
 ![[Kyle Kabasares - Mathematical Modeling - Soup mixture feasible region and cost lines.png|**Fig. 94** The arrow marks the minimum-cost corner at the intersection of the two nutrient constraints. The line intercepts and cost levels are sketched approximately.]]
 
-The recorded solution is $(x,y,s,t)^T=(14/5,3,0,0)^T$. Substitution gives $5(14/5)+7(3)=35$ and $10(14/5)+4(3)=40$, consistent with the two stated requirements.
+The recorded solution is $(x,y,u,w)^T=(14/5,3,0,0)^T$. Substitution gives $5(14/5)+7(3)=35$ and $10(14/5)+4(3)=40$, consistent with the two stated requirements.
 
 The general objective is $P=\sum_i c_ix_i$ with $A\vec x\le\vec b$ and all decision variables nonnegative.
 
@@ -262,9 +262,9 @@ The three constraint lines have $y$-intercepts 7, $-10$, and 10. The feasible re
 
 ![[Kyle Kabasares - Mathematical Modeling - Five corner feasible region for the simplex example.png|**Fig. 96** The axes and the three numbered constraint lines enclose a pentagon. The arrow at the origin marks the starting point.]]
 
-For standard form the objective becomes $f(x,y,r,s,t)=x+y$, with new nonnegative variables. The first two equality rows are $-2x+y+r=7$ and $-x+y-s=-10$. The latter right-hand side appears as $10$ at the bottom of the page. The original inequality above uses $-10$.
+For standard form the objective becomes $f(x,y,s_1,s_2,s_3)=x+y$, with new nonnegative variables. The first two equality rows are $-2x+y+s_1=7$ and $-x+y-s_2=-10$. The latter right-hand side appears as $10$ at the bottom of the page. The original inequality above uses $-10$.
 
-The third constraint in standard form is $x+4y+t=40$, with $x,y,r,s,t\ge0$. In the variable order $(x,y,r,s,t)$,
+The third constraint in standard form is $x+4y+s_3=40$, with $x,y,s_1,s_2,s_3\ge0$. In the variable order $(x,y,s_1,s_2,s_3)$,
 
 $$
 \vec c=\begin{pmatrix}1\\1\\0\\0\\0\end{pmatrix},
@@ -291,7 +291,7 @@ T=\begin{pmatrix}
 \end{pmatrix}.
 $$
 
-The notes propose row reductions for price reduction. The indicated operation $R_3\gets-R_3$ makes the three columns for $r,s,t$ into an identity block in the constraint rows. The target form is
+The notes propose row reductions for price reduction. The indicated operation $R_3\gets-R_3$ makes the three columns for $s_1,s_2,s_3$ into an identity block in the constraint rows. The target form is
 
 $$
 \begin{pmatrix}
@@ -302,7 +302,7 @@ $$
 
 The handwritten arrows label the blocks in reverse. The columns forming $I$ are the basic columns, and the variables corresponding to $H$ are nonbasic and initially set to zero. The method then changes the basis to increase the objective.
 
-Start with $x=y=0$. After negating the third tableau row, the constraints give the identity columns for $r,s,t$.
+Start with $x=y=0$. After negating the third tableau row, the constraints give the identity columns for $s_1,s_2,s_3$.
 
 $$
 T=\begin{pmatrix}
@@ -313,9 +313,9 @@ T=\begin{pmatrix}
 \end{pmatrix}.
 $$
 
-The initial basic values are $r=7$, $s=10$, and $t=40$. To decide which variable enters the basis, the notes pick the largest improving coefficient from the nonbasic part of the objective row. The two coefficients are equal, so either $x$ or $y$ can enter. The page says “basic variables” in this instruction, but the variables initially set to zero are the nonbasic ones.
+The initial basic values are $s_1=7$, $s_2=10$, and $s_3=40$. To decide which variable enters the basis, the notes pick the largest improving coefficient from the nonbasic part of the objective row. The two coefficients are equal, so either $x$ or $y$ can enter. The page says “basic variables” in this instruction, but the variables initially set to zero are the nonbasic ones.
 
-Choose $y$, the third column of the full tableau. To find the first boundary reached, examine $b_i/a_{i3}$ for constraint rows with $a_{i3}>0$. Here those ratios are $7/1=7$ and $40/4=10$. The coefficient $-1$ in the other constraint row gives no upper bound on increasing $y$. Thus the second row of the full tableau is the pivot row, and $r$ is the first basic variable to reach zero.
+Choose $y$, the third column of the full tableau. To find the first boundary reached, examine $b_i/a_{i3}$ for constraint rows with $a_{i3}>0$. Here those ratios are $7/1=7$ and $40/4=10$. The coefficient $-1$ in the other constraint row gives no upper bound on increasing $y$. Thus the second row of the full tableau is the pivot row, and $s_1$ is the first basic variable to reach zero.
 
 The notes list a discussion on using MATLAB to solve linear programs and a reminder to set up meetings with Terese.
 
@@ -444,13 +444,12 @@ Kyle Kabasares, *Mathematical Modeling (Math 150, UC Merced 2017)*.
 
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
-| $R$ | 1 | Population | Number of animals in the isolated system. |
-| $t$, $1/\alpha$ | $\unit{s}$ | Elapsed time | Time in the population model and time for one factor of $e$ of exponential growth, expressed in the chosen time unit. |
-| $t_0$ | $\unit{s}$ | Inflection time | Time at which the logistic population reaches half its carrying capacity. |
-| $y_i$ | 1 | Age-group population | Number of individuals in the indicated age band. |
-| $\tau$ | 1 | Total population | Sum of the four age-group populations. |
-| $T$ | $\unit{s}$ | Sampling period | Time between successive measurements at the same phase. |
-| $\lambda$ | $\unit{s^{-1}}$ | Lyapunov exponent | Exponential rate of growth or decay of a perturbation in time. |
 | $x$, $y$ | $\unit{oz}$ | Ingredient amounts | Onion soup and chicken stock per serving, respectively. |
-| $s$ | $\unit{g}$ | Protein surplus | Protein above the minimum required per serving. |
-| $t$ | — | Iron surplus | Iron above the minimum required per serving, in the unspecified iron units of the exercise. |
+| $u$ | $\unit{g}$ | Protein surplus | Protein above the minimum required per serving. |
+| $w$ | — | Iron surplus | Iron above the minimum required per serving, in the unspecified iron units of the exercise. |
+| $t$ | $\unit{s}$ | Time | Time parameter of the spiral search trajectory, expressed in the chosen time unit. |
+| $x(t)$, $y(t)$ | $\unit{m}$ | Search-center position | Coordinates of the center of the moving search disk. The notes give no unit. |
+| $R$ | $\unit{m}$ | Search radius | Radius of the moving search disk. The spiral turn spacing is $2R$. |
+| $r$ | $\unit{m}$ | Radial distance | Distance from the disk center in the coverage integral. |
+| $p$ | $\unit{m^{-2}}$ | Target-location density | Probability per unit area that the target is at $(x,y)$. |
+| $T$ | $\unit{s}$ | Search horizon | Upper time limit of the coverage integral. |

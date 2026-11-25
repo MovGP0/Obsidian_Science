@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Algebraic decomposition of the metric"
 document_type: "Self-contained study chapter"
 ---
@@ -49,7 +49,7 @@ Expanding the last square produces the original mixed term and a negative base-s
 The cylinder condition makes the mixed components independent of the circle coordinate. Normalize them and define the adjusted base tensor:
 
 $$
-\electric{B}_\mu(\mechanical{t},\mechanical{x},\mechanical{y},\mechanical{z})
+\electric{B}_\mu(\mechanical{x}^0,\mechanical{x}^1,\mechanical{x}^2,\mechanical{x}^3)
 \equiv\frac{\widetilde g_{\mu4}}{\mechanical{\Phi}_{\mathrm{ang}}},
 \qquad
 g_{\mu\nu}\equiv\widetilde g_{\mu\nu}
@@ -174,12 +174,11 @@ The units below use the collection's natural-unit convention. Explicit SI formul
 | $g_{\mu\nu},\;\widetilde g_{AB}$ | $1$ | Metric fields | Metric coefficients for length-valued coordinates; an angular coefficient instead carries the required length factors. |
 | $\mechanical{\Phi}$ | $1$ | Radion | Ratio of the physical circular radius to the reference radius. |
 | $\mechanical{\kappa}$ | $\unit{GeV^{-1}}$ | Metric coupling scale | Scale between the canonical electromagnetic potential and the metric shift. |
-| $\electric{B}_\mu$ | $1$ | Metric shift vector | Normalized mixed metric field, distinct from magnetic flux density. |
+| $\electric{B}_\mu$ | $1$ | Metric shift vector | Normalized mixed metric field in the length convention, Eq. (6.2), distinct from magnetic flux density. |
+| $\electric{B}_\mu$ | $\unit{GeV}$ | Angular metric shift vector | Mixed field of the first section, equal to minus the length-convention field divided by the reference radius. |
 | $\electric{A}_\mu$ | $\unit{GeV}$ | Potential components | Canonically normalized electromagnetic potential components. |
-| $\mechanical{t}$ | $\unit{GeV^{-1}}$ | Time | Time coordinate in the angular formulation’s natural units. |
-| $\mechanical{z}$ | $\unit{GeV^{-1}}$ | Spatial coordinate | Third ordinary spatial coordinate. |
 | $\mechanical{\widetilde s}$ | $\unit{GeV^{-1}}$ | Five-dimensional interval | Five-dimensional interval in the mostly-minus convention. |
-| $\mechanical{\theta}$ | $1$ | Circular angle | Compact circular angle; the spherical-coordinate inset identifies its separate polar-angle use. |
+| $\mechanical{\theta}$ | $1$ | Circular angle | Compact circular angle with period two pi. |
 | $\mechanical{\Phi}_{\mathrm{ang}}$ | $\unit{GeV^{-2}}$ | Angular squared radius | Squared physical radius; distinct from the dimensionless radius ratio in the length-coordinate formulation. |
 | $\widetilde g_{AB}$ | — | Five-dimensional metric | Component units depend on the length-valued base coordinates and dimensionless angular coordinate. |
 | $g_{\mu\nu},g_{ab}$ | $1$ | Angular base metric | Four-dimensional metric or positive spatial example, as identified beside the equation. |

@@ -1,0 +1,45 @@
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/10 Weak Interactions/10.5 Charged Weak Interactions of Quarks.md
+- FIXED | Footnote says all neutrinos are massless, so no lepton mixing | Appended a modern note to footnote ep-10-5-rotation: neutrinos have nonzero masses and leptons mix through the PMNS matrix.
+- FIXED | KM magnitudes (10.91) and CP-phase statements outdated | Added a note callout after (10.91) with current PDG magnitudes and gamma about 66 degrees; appended B-factory (BaBar/Belle 2001) CP-violation confirmation to footnote ep-10-5-generations.
+- REJECTED | Symbol clash c_i = cos theta_i versus speed of light c | The note defines c_i explicitly right after (10.90); the subscript and the uncolored versus mechanical{c} macro keep them distinct.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/10 Weak Interactions/10.6 Neutral Weak Interactions.md
+- FIXED | Table 10.1 electron c_V missing square | Changed -1/2+2 sin theta_w to -1/2+2 sin^2 theta_w.
+- FIXED | Eq. (10.118) missing square | Verified from (10.116) at 2E=M_Z c^2 that the ratio is (1/8)(M_Z c^2/hbar Gamma_Z)^2 (about 170 for 92/2.5); added the square.
+- FIXED | Outdated M_W, M_Z, m_t, SLC/LEP, tau_Z statements | Added note callouts with M_W 80.37 and M_Z 91.19 GeV, SLC/LEP start in 1989, hbar Gamma_Z 2.4952 GeV and N_nu 2.984; added modern notes for m_t 172.6 GeV in footnote ep-10-6-top and for the measured width next to tau_Z.
+- FIXED | Fig. 10.6 caption says neutrino for an antineutrino reaction | Changed "The neutrino enters" to "The antineutrino enters".
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/10 Weak Interactions/10.7.1 Chiral Fermion States.md
+- FIXED | Footnote on right-handed neutrinos ignores neutrino mass | Appended a modern note: neutrinos have mass, chirality is not exactly helicity, and right-handed (sterile) neutrinos are allowed but unobserved.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/10 Weak Interactions/10.P Problems.md
+- FIXED | Problem 10.1(a) answer is the spin sum, not the average reducing to (10.11) | Confirmed epsilon=-1 gives 4(g_w/M_W c)^4(p1.p2)(p3.p4)=(10.10); added a sentence that this is the spin sum and dividing by 2 gives (10.11).
+- FIXED | Top mesons do not exist; 2m_t<M_Z assumptions counterfactual | Added modern notes to Problems 10.16, 10.20(b), and 10.21.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/11 Gauge Theories/11.3 Local Gauge Invariance.md
+- FIXED | Spurious i in minimal coupling rule | With p_mu = i hbar d_mu and (11.38), i hbar D_mu = i hbar d_mu - (q/c)A_mu; changed to p_mu -> p_mu - (q/c)A_mu.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/11 Gauge Theories/11.4 Yang-Mills Theory.md
+- FIXED | Eq. (11.62) interaction term missing tau | Inserted boldsymbol tau: -(q psibar gamma^mu tau psi).A_mu, consistent with (11.56) and (11.67).
+- FIXED | U(2)=U(1)xSU(2) holds only locally | Added to footnote ep-11-4-u2 that globally U(2) is [U(1)xSU(2)]/Z_2.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/11 Gauge Theories/11.5 Chromodynamics.md
+- FIXED | U(3)=U(1)xSU(3) holds only locally | Added to footnote ep-11-5-u3 that globally U(3) is [U(1)xSU(3)]/Z_3.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/11 Gauge Theories/11.7 The Mass Term.md
+- FIXED | Eq. (11.105) dimensionally inconsistent | Confirmed; kept the source equations and added a note callout after (11.107) giving the consistent form with a constant energy density epsilon_0 and (mc/hbar)^2=2 epsilon_0 alpha^2; added epsilon_0 to the table and clarified the alpha row.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/11 Gauge Theories/11.8 Spontaneous Symmetry-Breaking.md
+- FIXED | Cubic term sign in (11.120) | Expanded U with phi_1=eta+mu/lambda: L contains -mu lambda(eta^3+eta xi^2); changed the sign.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/11 Gauge Theories/11.9 The Higgs Mechanism.md
+- FIXED | Mixing term -2i(mu/lambda)(q/hbar c)(d xi)A cannot be in a real Lagrangian | Expanded (1/2)|D phi|^2 (other terms in (11.131) agree); changed the term to +(mu/lambda)(q/hbar c)(d_mu xi)A^mu in both (11.131) and (11.133).
+- FIXED | Outdated Higgs, SSC, and Yukawa statements | Added a modern note callout (2012 LHC discovery, m_H about 125 GeV, SSC cancelled 1993, measured couplings to t, b, tau, mu) after the paragraph; added m_H to the table.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/11 Gauge Theories/11.P Problems.md
+- FIXED | Problem 11.12 answers use g instead of q | Replaced g with q in both answers (consistent with (11.61) and (11.66)) and changed the table row to q, alpha.
+- FIXED | Unclosed bracket in 11.12(a) answer | Added the closing ] after -A^nu x d^mu lambda.
+- REJECTED | phi (cone azimuth vs scalar field) and L (angular momentum vs Lagrangian) clashes | The note writes the Lagrangian density as script L, never plain L; phi is used in separate problems with distinct macros and separate table rows.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/92 Appendix B Decay Rates and Cross Sections/B.2 Cross Sections.md
+- PARTLY | p_i means particle i in (B.5) but incoming momentum in (B.7); p_3 missing from table | The clash is real: renamed to p_in and p_out in (B.7) and its text and added a table row. p_3 is already covered by the generic p_i row, which now names p_1 and p_3 as examples.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/93 Appendix C Pauli and Dirac Matrices/C.2 Dirac Matrices.md
+- FIXED | gamma^0 written as identity | Changed (C.9) to diag(1,-1), consistent with Reference Formulas.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/99 Back matter/Particle Data.md
+- FIXED | Outdated t, W, Z, tau, neutron, neutrino values | Kept the historical tables and added a note callout with current PDG values (t 172600, W 80370 and 3.2e-25 s, Z 91188 and 2.6e-25 s, tau 1776.9 and 2.90e-13 s, neutron 878 s, nonzero neutrino masses).
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/99 Back matter/Physical Constants and Conversion Factors.md
+- FIXED | Gaussian formulas with e given in C | Added a note callout that the alpha, r_e, a, E_n formulas use Gaussian units with e in esu and that SI needs e^2/4 pi epsilon_0; added epsilon_0 to the table.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/01 Introduction/1.0 Chapter introduction.md
+- FIXED | Outdated Higgs and LHC energy statements | Added a dated status note callout (m_H about 125.1 GeV, LHC at 13 and 13.6 TeV) without editing the source text; added m_H to the table.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/01 Introduction/1.2 Leptons.md
+- PARTLY | tau symbol clash (lepton, lifetime, isospin matrices) | Renamed the lifetime to tau_tau in the text and table; did not add tau_pm and tau_1,2 to the table because they are matrices (operators), which the skill excludes from the table.
+- FIXED | Tau universality "within 1.5%" outdated | Added a dated status note that PDG data now test it at the few-per-mille level.

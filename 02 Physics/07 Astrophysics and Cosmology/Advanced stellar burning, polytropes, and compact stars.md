@@ -56,12 +56,12 @@ The handwritten year is 2018, although nearby lectures are dated 2019. The openi
 
 Two alpha particles form beryllium-8. Further captures give carbon-12 and oxygen-16. The beryllium-8 state is labeled excited, with an arrow pointing back toward the two-alpha state and a lifetime of about $\quantity{10^{-16}}{s}$. Forming beryllium-8 is endothermic and takes about $\quantity{92}{keV}$.
 
-The power-law expression for energy generation is repeated. The next line also uses $\energy{\epsilon}_0$, this time for an energy in keV.
+The power-law expression for energy generation is repeated. The next line gives the Gamow peak energy $\energy{E}_0$ in keV. The notes use the symbol $\energy{\epsilon}_0$ for it.
 
 $$
 \begin{aligned}
 \energy{\epsilon}&=\energy{\epsilon}_0\mechanical{\rho}^{\lambda}\thermal{T}^{\nu},\\
-\energy{\epsilon}_0&=1.22\left(Z_\alpha Z_X\mu\thermal{T}_6^2\right)^{1/3}\,\unit{keV}.
+\energy{E}_0&=1.22\left(Z_\alpha^2 Z_X^2\mu\thermal{T}_6^2\right)^{1/3}\,\unit{keV}.
 \end{aligned}
 $$
 
@@ -212,12 +212,12 @@ The margin reads “Worst time of year…” The notes then express the density 
 
 $$
 \mechanical{\rho}
-=(n+n_e)\mu\mechanical{m}_u
-=n\mu_0\mechanical{m}_u
+=(n_{\mathrm{nuc}}+n_e)\mu\mechanical{m}_u
+=n_{\mathrm{nuc}}\mu_0\mechanical{m}_u
 =n_e\mu_e\mechanical{m}_u.
 $$
 
-Here $n$ is the nucleus number density in this equation. The notes define $\mu$ as the mean mass per free particle in atomic mass units, and $\mu_0$ as the mean mass per free nucleus in the same units. The $\mu_e$ factor uses the mass per free electron.
+Here $n_{\mathrm{nuc}}$ is the nucleus number density. The notes define $\mu$ as the mean mass per free particle in atomic mass units, and $\mu_0$ as the mean mass per free nucleus in the same units. The $\mu_e$ factor uses the mass per free electron.
 
 The notes give $\mu_e$ as the mean mass in atomic mass units per free electron. The composition examples are as follows.
 
@@ -225,13 +225,13 @@ The notes give $\mu_e$ as the mean mass in atomic mass units per free electron. 
 | --- | --- | --- | --- |
 | Ionized hydrogen | $0.5$ | $1$ | $1$ |
 | Ionized helium | $1.33$ | $4$ | $2$ |
-| Iron, as written | $56/29$ | $28$ | $2$ |
+| Fully ionized iron-56 | $56/27pprox2.07$ | $56$ | $56/26pprox2.15$ |
 
 The first Fermi–Dirac pressure line is written
 
 $$
 \mechanical{P}
-=\frac{(3\pi^2)^{2/3}}5\,\frac{\hbar}{\mechanical{m}_e}
+=\frac{(3\pi^2)^{2/3}}5\,\frac{\hbar^2}{\mechanical{m}_e}
  \left(\frac{\mechanical{\rho}}{\mu_e\mechanical{m}_u}\right)^{5/3}.
 $$
 
@@ -241,17 +241,17 @@ $$
 \begin{aligned}
 \mechanical{P}
 &=\frac{\mechanical{\rho}\thermal{k}\thermal{T}}{\mu\mechanical{m}_u}
- =\frac{(3\pi)^{2/3}}5\,\frac{\hbar}{\mechanical{m}_e}
+ =\frac{(3\pi^2)^{2/3}}5\,\frac{\hbar^2}{\mechanical{m}_e}
  \left(\frac{\mechanical{\rho}}{\mu_e\mechanical{m}_u}\right)^{5/3},\\
-\frac{\thermal{T}}{\mechanical{\rho}_{\mathrm{cr}}^{3/2}}
-&=\frac{(2\pi^2)^{2/3}\hbar}
+\frac{\thermal{T}}{\mechanical{\rho}_{\mathrm{cr}}^{2/3}}
+&=\frac{(3\pi^2)^{2/3}\hbar^2}
  {5\mechanical{m}_e\mechanical{m}_u^{2/3}\thermal{k}}\,
  \frac{\mu}{\mu_e^{5/3}}.
 \end{aligned}
 $$
 
 > [!note]
-> The pressure lines show $\hbar$ to the first power, while the energy scale on [[#Polytropes and compact objects|the section on Polytropes and compact objects]] uses $\hbar^2$. The written coefficient also varies across the three lines. Equating the two density powers gives $\thermal{T}\propto\mechanical{\rho}_{\mathrm{cr}}^{2/3}$, which agrees with the power of temperature in the next line.
+> The source pressure lines show $\hbar$ to the first power, a coefficient that varies across the three lines, and $\mechanical{\rho}_{\mathrm{cr}}^{3/2}$. The lines above use the correct form with $\hbar^2$ and $(3\pi^2)^{2/3}$. Equating the two density powers gives $\thermal{T}\propto\mechanical{\rho}_{\mathrm{cr}}^{2/3}$, which agrees with the power of temperature in the next line.
 
 $$
 \mechanical{\rho}_{\mathrm{cr}}
@@ -260,21 +260,21 @@ $$
  \mu_e^{5/2}\,\unit{kg\,m^{-3}}.
 $$
 
-For a helium white dwarf, the notes give $\thermal{T}=10^9\,\unit{K}$ and box $\mechanical{\rho}_{\mathrm{cr}}\simeq10^9\,\unit{kg\,m^{-3}}$.
+For a helium white dwarf, the notes give $\thermal{T}=10^9\,\unit{K}$ and box $\mechanical{\rho}_{\mathrm{cr}}\simeq10^9\,\unit{kg\,m^{-3}}$. With $\mu=4/3$ and $\mu_e=2$, the formula gives $\mechanical{\rho}_{\mathrm{cr}}\approx2.8\times10^9\,\unit{kg\,m^{-3}}$.
 
 The notes begin with a speed condition and normalized variables.
 
 $$
-\mechanical{D}^2\gg\frac{2\thermal{k}\thermal{T}_0}{\mu},
+\mechanical{D}^2\gg\frac{2\thermal{k}\thermal{T}_0}{\mechanical{m}},
 \qquad
 x=\frac{\thermal{T}}{\thermal{T}_0},
 \qquad
 y=\frac{\mechanical{\rho}}{\mechanical{\rho}_0},
 \qquad
-d=\frac{\mechanical{D}^2\mu}{\thermal{k}\thermal{T}_0}.
+d=\frac{\mechanical{D}^2\mechanical{m}}{\thermal{k}\thermal{T}_0}.
 $$
 
-For the speed condition to be dimensionally consistent, $\mu$ is a particle mass in these lines. The two equations in the normalized variables are
+The notes write $\mu$ in these lines. For the speed condition to be dimensionally consistent, it is a particle mass, written here as $\mechanical{m}$. The two equations in the normalized variables are
 
 $$
 x+dy^2=y+dy,\qquad 5x+dy^2=5+d.
@@ -360,9 +360,9 @@ $$
 The radial coordinate is
 
 $$
-\mechanical{r}=az,
+\mechanical{r}=\mechanical{\ell}z,
 \qquad
-a=\left[\frac{(n+1)K\mechanical{\rho}_c^{1/n-1}}{4\pi\mechanical{G}}\right]^{1/2}.
+\mechanical{\ell}=\left[\frac{(n+1)K\mechanical{\rho}_c^{1/n-1}}{4\pi\mechanical{G}}\right]^{1/2}.
 $$
 
 The Lane–Emden equation is
@@ -408,16 +408,16 @@ Thus $\mechanical{M}\propto\mechanical{R}^{-3}$ for $n=3/2$. For $n=3$, the mass
 
 $$
 \mechanical{M}
-=\frac{(3\pi)^{3/2}}{2}
+=\frac{\sqrt{3\pi}}{2}
  \left(\frac{\hbar c}{\mechanical{G}}\right)^{3/2}
  \frac{2.02}{(\mu_e\mechanical{m}_u)^2}
-=1.457\left(\frac2{\mu_e}\right)\mechanical{M}_\odot.
+=1.457\left(\frac2{\mu_e}\right)^2\mechanical{M}_\odot.
 $$
 
 > [!note]
-> The denominator under $\hbar c$ resembles $a$ in the handwriting. It is read as $\mechanical{G}$ from the mass dimensions. The written coefficient $(3\pi)^{3/2}/2$ and the final unsquared composition factor are kept as written. The preceding expression scales as $\mu_e^{-2}$.
+> The denominator under $\hbar c$ resembles $a$ in the handwriting. It is read as $\mechanical{G}$ from the mass dimensions. The source writes the coefficient as $(3\pi)^{3/2}/2$ and the composition factor without the square. The correct coefficient is $\sqrt{3\pi}/2$, and the mass scales as $\mu_e^{-2}$.
 
-The page labels C, O, and He with $\mu_e=2$ and remarks that something happens if the mass exceeds the limit. It gives $\mechanical{M}=5.73\mechanical{M}_\odot$ for $\mu_e=1$ and adds “GR is needed.”
+The page labels C, O, and He with $\mu_e=2$ and remarks that something happens if the mass exceeds the limit. It gives $\mechanical{M}=5.73\mechanical{M}_\odot$ for $\mu_e=1$ and adds “GR is needed.” The corrected formula gives $\mechanical{M}\approx5.83\mechanical{M}_\odot$ for $\mu_e=1$.
 
 The last page gives the compactness estimate
 
@@ -439,80 +439,58 @@ Kyle Kabasares, *Stellar Astrophysics (Physics 241B, UC Irvine 2019)*.
 
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
-| $\mechanical{r}$ | $\unit{cm}$ | Radial distance | The distance from the center of the star. |
-| $\mechanical{G}$ | $\unit{m^3\,kg^{-1}\,s^{-2}}$ | Gravitational constant | The proportionality constant in Newton's law of gravitation. |
-| $\mechanical{M}_\odot$ | $\unit{kg}$ | Solar mass | The mass of the Sun. |
-| $\energy{L}_\odot$ | $\unit{W}$ | Solar luminosity | The power radiated by the Sun. |
-| $\mechanical{\rho}$ | $\unit{g\,cm^{-3}}$ | Mass density | The mass per unit volume at the given radius. |
-| $\mechanical{F}$ | $\unit{dyn}$ | Force | The gravitational force on the patch. |
-| $\mechanical{M}$ | $\unit{g}$ | Mass | The enclosed mass in the expression beside the force sketch. |
-| $\mechanical{P}$ | $\unit{dyn\,cm^{-2}}$ | Pressure | The local force per unit area exerted by the stellar material. |
-| $\mechanical{m}$ | $\unit{g}$ | Mass | The mass acted on by the force. |
-| $\mechanical{M}$ | $\unit{g}$ | Total stellar mass | The upper limit of the integral over the stellar mass. |
-| $\mechanical{R}$ | $\unit{cm}$ | Stellar radius | The radius of the star used in the energy scale. |
-| $\energy{E}$ | $\unit{erg\,g^{-1}}$ | Specific internal energy | The internal energy per unit mass. |
-| $\thermal{T}$ | $\unit{K}$ | Temperature | The local thermodynamic temperature. |
-| $\thermal{\gamma}$ | 1 | Adiabatic index | The index that relates pressure and energy density in the gas model. |
-| $\energy{\varepsilon}$ | $\unit{erg\,cm^{-3}}$ | Energy density | The product of mass density and specific internal energy. |
-| $w$ | 1 | Equation-of-state parameter | The ratio of pressure to energy density. |
-| $\energy{L}$ | $\unit{erg\,s^{-1}}$ | Stellar luminosity | The rate of energy loss from the contracting star. |
-| $\energy{E}$ | $\unit{erg\,cm^{-3}}$ | Thermal energy density | The gas energy per unit volume in the temperature estimate. |
-| $n$ | $\unit{cm^{-3}}$ | Particle number density | The number of gas particles per unit volume. |
-| $\thermal{k}$ | $\unit{erg\,K^{-1}}$ | Boltzmann constant | The conversion factor between temperature and energy per particle. |
-| $\mu$ | $\unit{g\,mol^{-1}}$ | Mean molar mass | The mass per mole of gas particles, as used in the density conversion. |
-| $\mechanical{\rho}_c$ | $\unit{g\,cm^{-3}}$ | Central mass density | The density at the center, equal to the density throughout the uniform model. |
-| $n_e$ | $\unit{cm^{-3}}$ | Electron number density | The number of free electrons per unit volume. |
-| $\mu_e$ | $\unit{g\,mol^{-1}}$ | Mean mass per mole of electrons | The total gas mass divided by the amount of free electrons. |
-| $X$ | 1 | Hydrogen mass fraction | The fraction of stellar mass in hydrogen. |
-| $Y$ | 1 | Helium mass fraction | The fraction of stellar mass in helium. |
-| $Z$ | 1 | Metallicity | The fraction of stellar mass in elements heavier than helium. |
 | $\energy{\epsilon}$ | $\unit{erg\,g^{-1}\,s^{-1}}$ | Specific energy production rate | The power generated per unit mass of stellar material. |
 | $\energy{\epsilon}_0$ | — | Energy production coefficient | The coefficient of the density and temperature power law. Its units depend on the exponents. |
-| $D$ | $\unit{cm^2\,s^{-1}}$ | Radiative diffusion coefficient | The proportionality factor between energy flux and the radiation energy density gradient. |
-| $a$ | $\unit{erg\,cm^{-3}\,K^{-4}}$ | Radiation constant | The constant in the radiation energy density $a\thermal{T}^4$. |
-| $c$ | $\unit{cm\,s^{-1}}$ | Speed of light | The speed of light in the radiative diffusion relation. |
-| $\mechanical{\rho}_0$ | $\unit{g\,cm^{-3}}$ | Reference density | The density at the corresponding position in the reference star. |
-| $\mechanical{v}$ | $\unit{cm\,s^{-1}}$ | Streaming speed | The speed used in the free-streaming distance integral. |
-| $y$ | 1 | Radius scale factor | The ratio of the rescaled radius to the original radius. |
-| $z$ | 1 | Redshift | The horizontal coordinate of the DSNB sketch. |
+| $\energy{\epsilon}_{\mathrm{pp}}$, $\energy{\epsilon}_{\mathrm{CNO}}$ | $\unit{erg\,g^{-1}\,s^{-1}}$ | Specific burning rates | The energy production rates per unit mass for pp and CNO burning. |
+| $\lambda$, $\nu$, $\nu_{\mathrm{CNO}}$ | 1 | Power-law exponents | The density and temperature exponents of the energy production rate. |
+| $X$ | 1 | Hydrogen mass fraction | The fraction of stellar mass in hydrogen. |
+| $X_{\mathrm{CNO}}$ | 1 | CNO mass fraction | The combined abundance of carbon, nitrogen, and oxygen used in the normalization. |
+| $\energy{E}_0$ | $\unit{keV}$ | Gamow peak energy | The most effective collision energy for the charged-particle reaction. |
+| $Z_\alpha$, $Z_X$ | 1 | Charge numbers | The proton numbers of the alpha particle and the target nucleus. |
+| $\mu$ | 1 | Mass number of the reduced mass | The reduced mass in atomic mass units in the Gamow-energy formula. |
+| $\thermal{T}$ | $\unit{K}$ | Temperature | The local thermodynamic temperature. |
+| $\thermal{T}_6$ | 1 | Temperature in millions of kelvins | The numerical temperature $\thermal{T}/(10^6\,\unit{K})$. |
+| $\energy{Q}$ | $\unit{keV}$ | Reaction energy | The energy released or absorbed by a reaction step. |
+| $n_X$, $n_\alpha$, $n({}^{8}\mathrm{Be})$ | $\unit{m^{-3}}$ | Nuclide number densities | The number densities in the helium-burning equilibrium relation. |
+| $\mechanical{m}_\alpha$ | $\unit{kg}$ | Alpha-particle mass | The mass in the equilibrium prefactor. |
+| $\thermal{k}$ | $\unit{J\,K^{-1}}$ | Boltzmann constant | The conversion factor between temperature and energy per particle. |
+| $h$, $\hbar$ | $\unit{J\,s}$ | Planck constant and reduced Planck constant | The quantum of action in the equilibrium prefactor and the uncertainty relation. |
+| $\energy{L}_\nu$ | $\unit{W}$ | Neutrino luminosity | The power carried away by neutrinos. |
+| $\energy{L}_\odot$ | $\unit{W}$ | Solar luminosity | The power radiated by the Sun. |
+| $\mechanical{M}$ | $\unit{kg}$ | Mass | The stellar mass, the enclosed mass in the structure equations, or the limiting mass. |
+| $\mechanical{M}_\odot$ | $\unit{kg}$ | Solar mass | The mass of the Sun. |
 | $\Delta\mechanical{x}$ | $\unit{m}$ | Position uncertainty | The spatial uncertainty of an electron in the degeneracy argument. |
 | $\Delta\mechanical{p}$ | $\unit{kg\,m\,s^{-1}}$ | Momentum uncertainty | The momentum uncertainty in the degeneracy argument. |
-| $\hbar$ | $\unit{J\,s}$ | Reduced Planck constant | The quantum of action in the uncertainty relation. |
-| $N$ | 1 | Particle count | The number of particles in the gas volume. |
-| $\energy{E}$ | $\unit{MeV}$ | Electron energy | The energy plotted in the collapse sketch. |
-| $\mechanical{m}_e$ | $\unit{kg}$ | Electron mass | The particle mass on the electron side of the degeneracy comparison. |
-| — | $\unit{kg}$ | Chandrasekhar mass | The mass limit noted for electron degeneracy support. |
-| $Z$ | 1 | Proton number | The number of protons in the nucleus in the neutron-drip diagram. |
-| $N$ | 1 | Neutron number | The number of neutrons in the nucleus in the neutron-drip diagram. |
-| $\mechanical{R}$ | $\unit{m}$ | Nuclear radius scale | The length scale given with the nuclear density. |
-| $\mechanical{m}_p$, $\mechanical{M}_p$ | $\unit{MeV\,c^{-2}}$ | Proton mass | The proton mass in the nucleon-mass estimate. |
-| $\mechanical{v}$ | $\unit{cm\,s^{-1}}$ | Projectile speed | The speed entering the incident flux and rate. |
-| $n_\alpha$, $n_X$, $n_\beta$ | $\unit{cm^{-3}}$ | Projectile and target number densities | The number of particles per unit volume for the incident and target species. |
-| $\energy{\epsilon}$ | $\unit{MeV}$ | Collision energy | The integration variable in the reaction rate average. |
-| $\mechanical{m}$ | $\unit{kg}$ | Reduced mass | The reduced mass of the projectile–target pair. |
-| $\mechanical{m}_\alpha$, $\mechanical{m}_X$ | $\unit{kg}$ | Projectile and target masses | The two masses used in the reduced mass. |
-| $\mu$ | 1 | Reduced mass in atomic mass units | The numerical mass in the cross-section conversion to barns. |
-| $s$ | $\unit{m}$ | Impact parameter | The transverse offset of the incoming trajectory from the target. |
-| $\mechanical{p}$ | $\unit{kg\,m\,s^{-1}}$ | Relative momentum | The momentum used with the impact parameter to obtain the angular momentum. |
-| $\thermal{T}_6$ | 1 | Temperature in millions of kelvins | The numerical temperature that labels the integrand curves. |
-| $X_{\mathrm{CNO}}$ | 1 | CNO mass fraction | The combined abundance of carbon, nitrogen, and oxygen used in the normalization. |
-| $\energy{\epsilon}_{\mathrm{pp}}$, $\energy{\epsilon}_{\mathrm{CNO}}$ | $\unit{erg\,g^{-1}\,s^{-1}}$ | Specific burning rates | The energy production rates per unit mass for pp and CNO burning. |
-| $\energy{Q}$ | $\unit{keV}$ | Reaction energy | The energy change of the first helium-burning step. |
-| $n({}^{8}\mathrm{Be})$ | $\unit{cm^{-3}}$ | Beryllium-8 number density | The density of the intermediate nucleus in the helium-burning relation. |
-| $h$ | $\unit{J\,s}$ | Planck constant | The action constant written in the equilibrium prefactor. |
-| $\energy{\epsilon}_0$ | $\unit{keV}$ | Characteristic collision energy | The energy scale written in keV on the second line of the helium-burning estimate. |
-| $\energy{L}_\nu$ | $\unit{erg\,s^{-1}}$ | Neutrino luminosity | The power carried away by neutrinos. |
-| $\energy{E}_e$ | $\unit{J}$ | Electron kinetic energy | The nonrelativistic kinetic energy in the degeneracy estimate. |
-| $a$ | $\unit{m}$ | Confinement length | The characteristic electron spacing estimated from position uncertainty. |
-| $K$ | $\unit{dyn\,cm^3\,g^{-5/3}}$ | Polytropic constant | The coefficient of the density power law for the nonrelativistic gas. |
+| $\mechanical{p}$ | $\unit{kg\,m\,s^{-1}}$ | Electron momentum | The momentum of an electron in the degeneracy estimate. |
+| $\mechanical{v}$ | $\unit{m\,s^{-1}}$ | Electron speed | The speed of an electron in the kinetic-energy estimate. |
+| $\mechanical{m}$ | $\unit{kg}$ | Particle mass | The particle mass in the thermal momentum estimate and in the speed condition. |
+| $\mechanical{m}_e$ | $\unit{kg}$ | Electron mass | The mass of the electron. |
+| $\mechanical{m}_p$ | $\unit{kg}$ | Proton mass | The mass per electron in the order-of-magnitude density estimate. |
 | $\mechanical{m}_u$ | $\unit{kg}$ | Atomic mass constant | The mass unit used in the composition formula. |
+| $\mechanical{\rho}$ | $\unit{kg\,m^{-3}}$ | Mass density | The mass per unit volume of the stellar material. |
+| $a$ | $\unit{m}$ | Confinement length | The characteristic electron spacing estimated from position uncertainty. |
+| $\energy{E}_e$, $\energy{E}$ | $\unit{J}$ | Electron energy | The nonrelativistic or relativistic energy of a confined electron. |
+| $\energy{\varepsilon}$ | $\unit{J\,m^{-3}}$ | Energy density | The electron energy per unit volume. |
+| $\mechanical{P}$ | $\unit{Pa}$ | Pressure | The local pressure of the stellar material. |
+| $w$ | 1 | Equation-of-state parameter | The ratio of pressure to energy density. |
+| $\thermal{\gamma}$ | 1 | Polytropic exponent | The exponent in $\mechanical{P}=K\mechanical{\rho}^{\thermal{\gamma}}$. |
+| $K$ | — | Polytropic constant | The coefficient of the density power law. Its unit depends on $\thermal{\gamma}$. |
+| $n_{\mathrm{nuc}}$ | $\unit{m^{-3}}$ | Nucleus number density | The number of nuclei per unit volume in the composition formula. |
+| $n_e$ | $\unit{m^{-3}}$ | Electron number density | The number of free electrons per unit volume. |
 | $\mu$, $\mu_0$, $\mu_e$ | 1 | Mass per particle, nucleus, or electron in atomic mass units | The numerical mass factors in the three equivalent density expressions. |
-| $n$ | $\unit{cm^{-3}}$ | Nucleus number density | The nucleus count per volume in the compact-object composition formula. |
-| $\mechanical{\rho}_{\mathrm{cr}}$ | $\unit{kg\,m^{-3}}$ | Critical density | The density at which the ideal-gas and degeneracy pressures are equal in the estimate. |
-| $\mechanical{D}$ | $\unit{m\,s^{-1}}$ | Speed scale | The speed inferred from the squared term in the opening condition. |
+| $\mechanical{\rho}_{\mathrm{cr}}$ | $\unit{kg\,m^{-3}}$ | Critical density | The density at which the ideal-gas and degeneracy pressures are equal. |
+| $\mechanical{D}$ | $\unit{m\,s^{-1}}$ | Speed scale | The speed in the opening condition of the normalized equations. |
 | $\thermal{T}_0$ | $\unit{K}$ | Reference temperature | The temperature used to normalize the thermal terms. |
-| $\mu$ | $\unit{kg}$ | Particle mass scale | The mass in the speed condition on [[#Relativistic stars\|the section on Relativistic stars]]. |
-| $\mechanical{F}_p$ | $\unit{dyn}$ | Pressure force | The outward force due to the pressure difference across the shell. |
-| $\mechanical{F}_g$ | $\unit{dyn}$ | Gravitational force | The inward gravitational force on the shell. |
-| $n$ | 1 | Polytropic index | The index that determines the density profile and the equation-of-state exponent. |
-| $a$ | $\unit{m}$ | Polytropic length scale | The factor that converts the normalized coordinate to radius. |
+| $\mechanical{\rho}_0$ | $\unit{kg\,m^{-3}}$ | Reference density | The density used to normalize the density. |
+| $x$, $y$, $d$ | 1 | Normalized variables | The normalized temperature, normalized density, and speed parameter. |
+| $c$ | $\unit{m\,s^{-1}}$ | Speed of light | The speed of light in the relativistic estimates. |
+| $\mechanical{F}_p$ | $\unit{N}$ | Pressure force | The outward force due to the pressure difference across the shell. |
+| $\mechanical{F}_g$ | $\unit{N}$ | Gravitational force | The inward gravitational force on the shell. |
+| $\mechanical{r}$ | $\unit{m}$ | Radial distance | The distance from the center of the star. |
+| $\mechanical{G}$ | $\unit{m^3\,kg^{-1}\,s^{-2}}$ | Gravitational constant | The proportionality constant in Newton's law of gravitation. |
+| $n$ | 1 | Polytropic index | The index that sets the density profile, with $\thermal{\gamma}=1+1/n$. |
+| $\mechanical{\rho}_c$ | $\unit{kg\,m^{-3}}$ | Central mass density | The density at the center of the polytrope. |
+| $\omega$ | 1 | Lane–Emden variable | The dimensionless function with $\mechanical{\rho}=\mechanical{\rho}_c\omega^n$. |
+| $\mechanical{\ell}$ | $\unit{m}$ | Polytropic length scale | The factor that converts the Lane–Emden coordinate to radius. |
+| $z$, $z_n$ | 1 | Lane–Emden coordinate | The dimensionless radius and its value at the first zero of $\omega$. |
+| $\mechanical{R}$ | $\unit{m}$ | Stellar radius | The radius of the star. |

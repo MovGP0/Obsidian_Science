@@ -10,9 +10,9 @@
 | $g_s, g, g'$                                            | Coupling constants             | Numbers that measure how strongly each force acts: <br>- $g_s$ for strong, <br>- $g$ for weak, <br>- $g'$ for hypercharge.                                                                                                    |
 | $\psi$                                                  | Fermion field                  | A general name for a matter particle: quarks and leptons (electrons, neutrinos, etc.) are all fermions.<br>Each $\psi$ represents a quantum field whose excitations are particles.                                            |
 | $\bar{\psi}$                                            | Dirac adjoint                  | The mathematical partner of $\psi$, needed to write physical quantities like energy and current densities.                                                                                                                    |
-| $Q_L = \begin{pmatrix} u_L \\ d_L \end{pmatrix}$        | Left-handed quark doublet      | Contains the two quarks of one generation that feel the weak force (up- and down-type). <br>“Left-handed” means only one spin orientation participates in the weak force.                                                     |
+| $Q_L = \begin{pmatrix} u_L \\ d_L \end{pmatrix}$        | Left-handed quark doublet      | Contains the two quarks of one generation that feel the weak force (up- and down-type). <br>“Left-handed” refers to chirality, not to helicity. Only left-chiral fields couple to the $W$ bosons.                                                     |
 | $L_L = \begin{pmatrix} \nu_L \\ e_L \end{pmatrix}$      | Left-handed lepton doublet     | Contains the neutrino and charged lepton (like the electron) that feel the weak force.                                                                                                                                        |
-| $u_R, d_R, e_R$                                         | Right-handed singlets          | Right-handed versions of quarks and leptons, which do **not** feel the weak force directly.                                                                                                                                   |
+| $u_R, d_R, e_R$                                         | Right-handed singlets          | Right-handed (right-chiral) quarks and leptons. They do **not** couple to the $W$ bosons, but they couple to the $Z$ boson and the photon through their hypercharge.                                                                                                                                   |
 | $D_\mu$                                                 | Covariant derivative           | A special derivative that includes the gauge fields.<br>It ensures that the equations stay consistent under the symmetry transformations.<br>When expanded, it produces all **interactions between matter and force fields**. |
 | $\gamma^\mu$                                            | Dirac matrices                 | Mathematical objects that connect the spin of fermions to space and time directions — part of relativistic quantum mechanics.                                                                                                 |
 | $\phi = \begin{pmatrix} \phi^+ \\ \phi^0 \end{pmatrix}$ | Higgs field                    | A field that fills all space; when it gains a nonzero value, it gives masses to other particles through their interactions with it.                                                                                           |
@@ -76,15 +76,15 @@ B_{\mu\nu} &= \partial_\mu B_\nu - \partial_\nu B_\mu
 Fermions fall into left- and right-handed multiplets:
 
 **Quarks:**  
-$$Q_L = \begin{pmatrix} u_L \ d_L \end{pmatrix}, \quad u_R, d_R$$    
+$$Q_L = \begin{pmatrix} u_L \\ d_L \end{pmatrix}, \quad u_R, d_R$$    
 
 **Leptons:**
-$$L_L = \begin{pmatrix} \nu_L \ e_L \end{pmatrix}, \quad  e_R$$
+$$L_L = \begin{pmatrix} \nu_L \\ e_L \end{pmatrix}, \quad  e_R$$
 
 Each couples to the gauge fields via the **covariant derivative**:  
 $$D_\mu = \partial_\mu
 - i g_s T^a G_\mu^a
-- i g \tau^i W_\mu^i
+- i g \frac{\tau^i}{2} W_\mu^i
 - i g' Y B_\mu$$
 
 Then:
@@ -95,7 +95,7 @@ This term includes **all gauge–fermion interactions** (photon, W, Z, gluon cou
 ### Higgs Sector
 
 The Higgs field is an $SU(2)_L$ doublet with hypercharge ($Y = +\frac{1}{2}$):
-$$\phi = \begin{pmatrix} \phi⁺ \\ ϕ⁰ \end{pmatrix}$$
+$$\phi = \begin{pmatrix} \phi^+ \\ \phi^0 \end{pmatrix}$$
 
 $$\mathcal{L}_{\text{Higgs}} =
 (D_\mu \phi)^\dagger (D^\mu \phi)
@@ -103,7 +103,7 @@ $$\mathcal{L}_{\text{Higgs}} =
 - \lambda (\phi^\dagger \phi)^2$$
 
 When $\phi$ acquires a vacuum expectation value (VEV)  
-$$\langle \phi \rangle = \frac{1}{\sqrt{2}}\begin{pmatrix} 0 \ v \end{pmatrix},\quad v = \sqrt{\frac{\mu^2}{\lambda}} \approx 246\ \text{GeV}$$
+$$\langle \phi \rangle = \frac{1}{\sqrt{2}}\begin{pmatrix} 0 \\ v \end{pmatrix},\quad v = \sqrt{\frac{-\mu^2}{\lambda}} \approx 246\ \text{GeV}$$
 the **electroweak symmetry breaks**:  
 $$SU(2)_L \times U(1)_Y \to U(1)_{\text{EM}}$$ 
 giving masses to ($W^\pm$), ($Z^0$), and fermions.
@@ -112,10 +112,10 @@ giving masses to ($W^\pm$), ($Z^0$), and fermions.
 
 Fermion–Higgs interactions responsible for mass generation:  
 $$\mathcal{L}_{\text{Yukawa}} =
-- \bar{Q}_L Y_d \phi d_R
-- \bar{Q}_L Y_u \tilde{\phi} u_R
-- \bar{L}_L Y_e \phi e_R
-- \text{h.c.}$$
+- \left(\bar{Q}_L Y_d \phi d_R
++ \bar{Q}_L Y_u \tilde{\phi} u_R
++ \bar{L}_L Y_e \phi e_R
++ \text{h.c.}\right)$$
 where ($\tilde{\phi} = i \tau_2 \phi^*$) and ($Y_u$, $Y_d$, $Y_e$) are Yukawa matrices.
 
 After spontaneous symmetry breaking, these terms yield:  
@@ -136,9 +136,9 @@ $$\begin{aligned}
 - \lambda (\phi^\dagger \phi)^2 \\
  &- \left(  
     \bar{Q}_L Y_d \phi d_R
-- \bar{Q}_L Y_u \tilde{\phi} u_R
-- \bar{L}_L Y_e \phi e_R
-- \text{h.c.}  
++ \bar{Q}_L Y_u \tilde{\phi} u_R
++ \bar{L}_L Y_e \phi e_R
++ \text{h.c.}  
 \right)  
 \end{aligned}$$
 
@@ -148,7 +148,7 @@ After the Higgs gets a VEV, the Lagrangian automatically generates:
 
 **Mass terms:**
 - $m_W = \tfrac{1}{2} g v$
-- $m_Z = \tfrac{1}{2}\sqrt{g^2 + g'^2},v$
+- $m_Z = \tfrac{1}{2}\sqrt{g^2 + g'^2}\,v$
 - $m_f = Y_f v/\sqrt{2}$
 
 **Interaction vertices:**

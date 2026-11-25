@@ -22,19 +22,19 @@ The normalization $\langle\psi\mid\psi\rangle=1$ integrates $\lvert\psi\rvert^2$
 $$
 \begin{aligned}
 i\hbar\frac{\partial\Psi}{\partial t}
-&=\hat H\Psi=\frac{\hat{\mathbf p}\cdot\hat{\mathbf p}}{2m}\Psi+\energy{V(x,y,z)}\Psi\\
-&=-\frac{\hbar^2}{2m}\left(
+&=\hat H\Psi=\frac{\hat{\mathbf p}\cdot\hat{\mathbf p}}{2\mu}\Psi+\energy{V(x,y,z)}\Psi\\
+&=-\frac{\hbar^2}{2\mu}\left(
 \frac{\partial^2\Psi}{\partial x^2}+\frac{\partial^2\Psi}{\partial y^2}
 +\frac{\partial^2\Psi}{\partial z^2}\right)+\energy{V}\Psi\\
-&=-\frac{\hbar^2}{2m}\nabla^2\Psi+\energy{V}\Psi.
+&=-\frac{\hbar^2}{2\mu}\nabla^2\Psi+\energy{V}\Psi.
 \end{aligned}
 $$
 
-For time-independent $\energy{V}$, put $\Psi(x,y,z,t)=R(x,y,z)T(t)$. Substitution gives $Ri\hbar\,dT/dt=-T\hbar^2\nabla^2R/(2m)+\energy{V}RT$. Divide by $RT$.
+For time-independent $\energy{V}$, put $\Psi(x,y,z,t)=R(x,y,z)T(t)$. Substitution gives $Ri\hbar\,dT/dt=-T\hbar^2\nabla^2R/(2\mu)+\energy{V}RT$. Divide by $RT$.
 
 $$
 \frac{i\hbar}{T}\frac{dT}{dt}
-=\frac1R\left(-\frac{\hbar^2}{2m}\nabla^2R+\energy{V}R\right)
+=\frac1R\left(-\frac{\hbar^2}{2\mu}\nabla^2R+\energy{V}R\right)
 =\energy{E}.
 $$
 
@@ -45,7 +45,7 @@ The time equation gives $dT/dt=-i\energy{E}T/\hbar$, so $T(t)=e^{-i\energy{E}t/\
 ##### Three-dimensional time-independent equation
 
 $$
-\hat H\psi=-\frac{\hbar^2}{2m}\nabla^2\psi+\energy{V}\psi=\energy{E}\psi.
+\hat H\psi=-\frac{\hbar^2}{2\mu}\nabla^2\psi+\energy{V}\psi=\energy{E}\psi.
 $$
 
 In Cartesian coordinates, $\nabla^2\psi=\partial_x^2\psi+\partial_y^2\psi+\partial_z^2\psi$. In spherical coordinates,
@@ -62,22 +62,22 @@ $$
 
 ##### Separation in Cartesian coordinates
 
-Put $\psi(x,y,z)=X(x)Y(y)Z(z)$. In the Laplacian, each derivative acts on its matching factor, yielding $YZX''+XZY''+XYZ''$. Divide the equation by $XYZ$ to obtain
+Put $\psi(x,y,z)=f(x)g(y)h(z)$. In the Laplacian, each derivative acts on its matching factor, yielding $ghf''+fhg''+fgh''$. Divide the equation by $fgh$ to obtain
 
 $$
--\frac{\hbar^2}{2m}\left(\frac{X''}{X}+\frac{Y''}{Y}+\frac{Z''}{Z}\right)
+-\frac{\hbar^2}{2\mu}\left(\frac{f''}{f}+\frac{g''}{g}+\frac{h''}{h}\right)
 +\energy{V(x,y,z)}=\energy{E}.
 $$
 
-Separation requires a suitable potential. In a region of constant potential each derivative ratio depends on just one independent coordinate and must be constant. Thus $-(\hbar^2/2m)X''/X$ is a separation constant, giving an ordinary differential equation for $X$, and likewise for $Y$ and $Z$.
+Separation requires a suitable potential. In a region of constant potential each derivative ratio depends on just one independent coordinate and must be constant. Thus $-(\hbar^2/2\mu)f''/f$ is a separation constant, giving an ordinary differential equation for $f$, and likewise for $g$ and $h$.
 
 ##### Separation of variables in spherical coordinates
 
-Use $\partial_\phi=\partial/\partial\phi$, $\partial_{\phi\phi}=\partial^2/\partial\phi^2$, and $\partial_r=\partial/\partial r$. For a central potential $\energy{V(r)}$, substitute $\psi(r,\theta,\phi)=R(r)Y(\theta,\phi)$ into $-\hbar^2\nabla^2\psi/(2m)+\energy{V}\psi=\energy{E}\psi$. Divide by $-\hbar^2RY/(2mr^2)$ and group radial and angular terms.
+Use $\partial_\phi=\partial/\partial\phi$, $\partial_{\phi\phi}=\partial^2/\partial\phi^2$, and $\partial_r=\partial/\partial r$. For a central potential $\energy{V(r)}$, substitute $\psi(r,\theta,\phi)=R(r)Y(\theta,\phi)$ into $-\hbar^2\nabla^2\psi/(2\mu)+\energy{V}\psi=\energy{E}\psi$. Divide by $-\hbar^2RY/(2\mu r^2)$ and group radial and angular terms.
 
 $$
 \left[\frac{1}{R}\frac{d}{dr}\left(r^2\frac{dR}{dr}\right)
--\frac{2mr^2}{\hbar^2}(\energy{V(r)}-\energy{E})\right]
+-\frac{2\mu r^2}{\hbar^2}(\energy{V(r)}-\energy{E})\right]
 +\frac{1}{Y}\left[
 \frac1{\sin\theta}\partial_\theta(\sin\theta\,\partial_\theta Y)
 +\frac1{\sin^2\theta}\partial_{\phi\phi}Y
@@ -182,7 +182,7 @@ For $\psi=R(r)Y_\ell^m(\theta,\phi)$, the radial equation is
 
 $$
 \frac{d}{dr}\left(r^2\frac{dR}{dr}\right)
--\frac{2mr^2}{\hbar^2}\big[\energy{V(r)}-\energy{E}\big]R
+-\frac{2\mu r^2}{\hbar^2}\big[\energy{V(r)}-\energy{E}\big]R
 =\ell(\ell+1)R.
 $$
 
@@ -198,8 +198,8 @@ $$
 The radial Schrödinger equation becomes
 
 $$
--\frac{\hbar^2}{2m}u''
-+\left[\energy{V(r)}+\frac{\hbar^2\ell(\ell+1)}{2mr^2}\right]u=\energy{E}u.
+-\frac{\hbar^2}{2\mu}u''
++\left[\energy{V(r)}+\frac{\hbar^2\ell(\ell+1)}{2\mu r^2}\right]u=\energy{E}u.
 $$
 
 The bracket is the effective potential. The centrifugal term is positive, as in the sketch and the subsequent inside-well equation. It diverges as $r\to0$ for $\ell>0$.
@@ -212,7 +212,7 @@ $$
 \energy{V(r)}=\begin{cases}0,&r\le a,\\ \infty,&r>a.\end{cases}
 $$
 
-Outside, $\psi=u=0$. At the wall $\psi(a)=0$ and $u(a)=0$. Inside, with $\signal{k}^2=2m\energy{E}/\hbar^2$,
+Outside, $\psi=u=0$. At the wall $\psi(a)=0$ and $u(a)=0$. Inside, with $\signal{k}^2=2\mu\energy{E}/\hbar^2$,
 
 $$
 u''=\left[\frac{\ell(\ell+1)}{r^2}-\signal{k}^2\right]u.
@@ -223,7 +223,7 @@ For $\ell=0$, $u''=-\signal{k}^2u$, so $u=A\sin(\signal{k}r)+B\cos(\signal{k}r)$
 For $\ell=0$, $\psi(r,\theta,\phi)=A\sin(\signal{k}r)Y_0^0/r$, with constant $Y_0^0$. The boundary condition $u(a)=0$ gives $\sin(\signal{k}a)=0$, so $\signal{k}a=n\pi$ and
 
 $$
-\energy{E_n}=\frac{n^2\pi^2\hbar^2}{2ma^2},
+\energy{E_n}=\frac{n^2\pi^2\hbar^2}{2\mu a^2},
 \qquad n=1,2,\ldots\quad(\ell=0).
 $$
 
@@ -244,7 +244,7 @@ The derivative operator is applied repeatedly, including to its $1/x$ factor. Th
 At the wall, $u(a)=0$ implies $j_\ell(\signal{k}a)=0$. Let $\beta_{n\ell}$ be the $n$th positive zero. Then
 
 $$
-\energy{E_{n\ell}}=\frac{\hbar^2\beta_{n\ell}^2}{2ma^2},
+\energy{E_{n\ell}}=\frac{\hbar^2\beta_{n\ell}^2}{2\mu a^2},
 \qquad
 \psi_{n\ell m}(r,\theta,\phi)=A\,j_\ell(\beta_{n\ell}r/a)Y_\ell^m(\theta,\phi).
 $$
@@ -297,6 +297,15 @@ Kyle Kabasares, *Quantum Mechanics (Physics 137, UC Merced 2015)*.
 | $\energy{E}$ | $\unit{J}$ | Energy eigenvalue | Energy associated with a stationary state. |
 | $\Psi$ | $\unit{m^{-3/2}}$ in three dimensions | Position-space wavefunction | Probability amplitude for one particle. Its squared magnitude is a probability density. |
 | $\signal{k}$ | $\unit{m^{-1}}$ | Wave number | Spatial phase change per unit distance. |
-| $R$, $T$ | $1$ | Reflection and transmission coefficients | Ratios of reflected and transmitted flux magnitudes to the incident flux magnitude. |
+| $\mu$ | $\unit{kg}$ | Particle mass | Mass of the particle in the Hamiltonian. |
+| $R$ | — | Spatial or radial function | Spatial factor $R(x,y,z)$ in the time separation, and radial factor $R(r)$ in spherical coordinates. |
+| $T$ | $1$ | Time factor | Time-dependent factor $T(t)=e^{-i\energy{E}t/\hbar}$ of the separated wavefunction. |
+| $u$ | — | Reduced radial function | Product $u(r)=rR(r)$ used in the radial equation. |
+| $\ell$ | $1$ | Orbital quantum number | Index of the separation constant $\ell(\ell+1)$. |
+| $m$ | $1$ | Magnetic quantum number | Azimuthal index in $e^{im\phi}$, with $m=-\ell,\ldots,\ell$. |
+| $Y_\ell^m$ | $1$ | Spherical harmonic | Normalized angular factor of the wavefunction. |
+| $P_\ell^m$ | $1$ | Associated Legendre function | Polar factor of the spherical harmonic. |
+| $j_\ell$, $n_\ell$ | $1$ | Spherical Bessel and Neumann functions | Radial solutions inside the infinite spherical well. |
+| $\beta_{n\ell}$ | $1$ | Bessel function zero | The $n$th positive zero of $j_\ell$. |
+| $a$ | $\unit{m}$ | Well radius | Radius of the infinite spherical well. |
 | $a_0$ | $\unit{m}$ | Bohr radius | Characteristic length in the hydrogen radial wavefunctions. |
-| $Z$ | $1$ | Atomic number | Nuclear charge in units of the elementary charge. |

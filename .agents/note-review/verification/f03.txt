@@ -1,0 +1,45 @@
+=== 02 Physics/07 Astrophysics and Cosmology/Advanced stellar burning, polytropes, and compact stars.md
+- FIXED | Gamow energy needs squared charges | Changed to E_0=1.22(Z_alpha^2 Z_X^2 mu T_6^2)^(1/3) keV and renamed the symbol from epsilon_0 to E_0 (prose says the notes use epsilon_0).
+- FIXED | Iron row mu, mu_0, mu_e wrong | Row now reads fully ionized iron-56 with mu=56/27~2.07, mu_0=56, mu_e=56/26~2.15.
+- FIXED | Fermi-Dirac pressure needs hbar^2 and T/rho_cr^(2/3) | All three pressure lines now use (3pi^2)^(2/3) hbar^2/m_e and T/rho_cr^(2/3); callout updated; added that the 2.38e-5 formula gives ~2.8e9 kg m^-3 for He at 1e9 K (recomputed 2.385e-5).
+- FIXED | Chandrasekhar coefficient and composition factor | Coefficient sqrt(3pi)/2 and factor (2/mu_e)^2 (recomputed 1.456); callout rewritten; added that mu_e=1 gives 5.83 M_sun.
+- FIXED | Physical-quantity table merged from other notes | Rebuilt table from symbols in the note; resolved clashes by renaming nucleus density to n_nuc, polytropic length a to ell, and the speed-condition mass mu to m.
+=== 02 Physics/07 Astrophysics and Cosmology/Astronomical fluxes, magnitudes, and extinction.md
+- FIXED | Table lists unused and clashing symbols | Removed rows from other notes (RA, parallax, Oort A and B, binary a and T, noise terms, t_0, sky mu_B and mu_K, and others); added atmospheric path a, a_0 and A_lambda, A_V, A_B.
+=== 02 Physics/07 Astrophysics and Cosmology/Atomic oscillators and line absorption cross sections.md
+- FIXED | Table alpha, E, b wrong; many symbols missing | Rebuilt table: alpha_nu absorption coefficient, level energies E_l and E_u, removed b and fine-structure alpha, added sigma, B, A, g, omega_0, E_0, d and others.
+=== 02 Physics/07 Astrophysics and Cosmology/Baryon–photon coupling and growth of matter perturbations.md
+- FIXED | Psi, Phi units wrong; unused and missing rows | Rebuilt table with Psi and Phi dimensionless; removed gamma, A, curvature k, Lambda, sigma, scalar phi, C_l, spherical angles; added N_l, Theta_l, n_e, rho_b, q^ij, u^i, y and others.
+=== 02 Physics/07 Astrophysics and Cosmology/Celestial coordinates, astrometry, and stellar binaries.md
+- FIXED | Parallax range and Gaia entry outdated | Added a note after the 200 pc statement (before Fig. 33) with Gaia DR3 parallax precision 0.02-0.03 mas at G<15 and kpc reach; Gaia row now gives DR3 ~1.8e9 sources and its precision.
+- FIXED | Table missing k_1, k_2 and has clashing rows | Rebuilt table from note symbols (k_1, k_2, M_1, M_2, r_1, r_2, v_1, v_2, mass-luminosity exponent); removed Boltzmann k, argument of periastron, extinction, Oort A and B, scattering angle, emitter radius. RA and parallax both use alpha in the body and figure, so they stay as separate rows.
+=== 02 Physics/07 Astrophysics and Cosmology/Comptonization and the Sunyaev–Zeldovich effect.md
+- FIXED | Table alpha, E wrong; missing tau, n_e, T_e and others | Rebuilt table: alpha as T-M scaling exponent, E_gamma photon energy; added tau, n_e, T_e, Theta, D, d_A, f_gas, M_tot and others; removed fine-structure alpha and the generic y row.
+=== 02 Physics/07 Astrophysics and Cosmology/Cosmic Background Microwave Radiation.md
+- FIXED | 2.72584 has transposed digits | Changed to 2.72548 +- 0.00057 K (Fixsen 2009), consistent with -270.425 C.
+=== 02 Physics/07 Astrophysics and Cosmology/Cosmic energy components and thermal equilibrium.md
+- FIXED | Neutrino mass range 0.2-1 eV outdated | Kept the lecture value and added current bounds: Planck 2018 <0.12 eV, DESI 2024 with CMB ~0.07 eV, oscillation lower bound ~0.06 eV.
+- FIXED | BBN at 1-10 MeV too hot; 1 MeV estimate is the onset | List item now states n/p freeze-out near 0.8 MeV and nucleus formation near 0.07-0.1 MeV with a link to the companion note; the a_BBN sentence now says onset of BBN at weak freeze-out.
+- PARTLY | Table k units, mu clash, unused rows, p versus P | Set k dimensionless (curvature index with explicit R_0); removed direction-cosine mu and unused tau, gamma, v, F m a, A, vec k, delta, rho rows; did not rename pressure to P because P^mu is the four-momentum in this note (macros already differ).
+=== 02 Physics/07 Astrophysics and Cosmology/Cosmological geodesics and photon redshift.md
+- FIXED | Table has undefined z, scalar phi, V and unused rows; missing lambda, Gamma, g | Rebuilt table from note symbols; added affine parameter lambda, Christoffel symbols, metric, proper time, position vector s.
+=== 02 Physics/07 Astrophysics and Cosmology/Cosmological horizons, photon multipoles, and density spectra.md
+- FIXED | Table chi, Psi and Phi units, curvature k, unused rows | chi is now comoving radial distance in m (added D_A); Psi and Phi dimensionless; removed curvature k, gamma, F m a, Lambda, sigma, A; replaced n, T_nu, V, theta-phi, v rows with n_e, T_e, V_eff, subtended angle, bulk velocity; added m_e and scattering momenta.
+=== 02 Physics/07 Astrophysics and Cosmology/Curvature, stress-energy conservation, and Friedmann equations.md
+- FIXED | Table k units, l as multipole, scalar phi, unused rows | k is a dimensionless curvature index; ell is transverse proper length; removed scalar phi, sigma, vec k, mu, delta; gamma row is now the spatial metric, F m a row is now mass m, v row is now particle speed (A, chi, Lambda, E are used and kept).
+=== 02 Physics/07 Astrophysics and Cosmology/Cyclotron and single-particle synchrotron emission.md
+- FIXED | Pulse width needs the full cone width 2/gamma | L ~ 2 r_g/gamma, L/v ~ 2/omega_B, Delta t_pulse ~ 1/(gamma^3 omega_B^rel sin alpha) (R and L eq. 6.16), bandwidth ~ gamma^3 omega_B^rel sin alpha.
+- PARTLY | Table alpha wrong, L and theta overloaded, missing symbols | Rebuilt table (pitch angle alpha, r_g, gamma, v_perp, omega_B^rel and others); did not rename chord L or change theta in the Fig. 61 caption because the figure images carry those labels.
+=== 02 Physics/07 Astrophysics and Cosmology/Electromagnetic units and Compton scattering.md
+- FIXED | Table lists y and E as radiant energy; missing k, gamma, x, Theta | Rebuilt table: removed y; added Coulomb constant k, gamma, x (coordinate and dimensionless energy), Theta, photon energies E_gamma^i and E_gamma^f, and the EM-unit symbols.
+=== 02 Physics/07 Astrophysics and Cosmology/Epicyclic orbits, asymmetric drift, and Galactic phase space.md
+- FIXED | Table rows from other notes clash | Rebuilt table with escape, epicycle, Lindblad, CBE and Jeans symbols; removed Stefan-Boltzmann sigma, magnitudes, airmass, dust path, extinction, Oort A and B, binary and transit rows.
+- FIXED | CBE does not need a time-independent potential | Sentence now says the derivation conserves star number and requires a smooth potential, and that the potential can depend on time.
+=== 02 Physics/07 Astrophysics and Cosmology/Expansion histories and primordial element abundances.md
+- FIXED | B_He4=22 MeV is not the binding energy | Added that the 4He binding energy is 28.3 MeV and that 23.8 MeV is the energy released in D+D->4He+gamma; kept the manuscript value as quoted.
+=== 02 Physics/07 Astrophysics and Cosmology/Galactic chemical evolution and the closed-box model.md
+- FIXED | Table lists unused or clashing Z, X, A, h, sigma, n; missing X, Y, N_O, N_Fe, M_g, M_h, M_star | Rebuilt table from the note symbols.
+- PARTLY | Z_sun=0.02 and X, Y are old values | Added that 0.02 is the classical value used in the G-dwarf example, modern Z_sun ~0.013-0.014 (Asplund 2009) and Y_p ~0.245; X=0.76 and Y=0.24 are close to primordial values, so not changed.
+=== 02 Physics/07 Astrophysics and Cosmology/Galactic potential models, virial balance, and relaxation.md
+- FIXED | Table mostly from other notes | Rebuilt table: m as mass, b as impact parameter, alpha as line-of-sight and scattering angles, tau as averaging time, R as system size; added N, t_c, t_r, f(E), eta, k, T and others; removed metal yield p and other unused rows.
+- PARTLY | Globular-cluster Coulomb logarithm | Added that 2 AU ~ 9.7e-6 pc gives Lambda ~ 1e5 and ln Lambda ~ 11.5; the Galactic-disk sentence is correct physics and only got a transition (In the solar neighborhood, relaxation is also too slow).

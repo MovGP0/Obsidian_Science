@@ -307,9 +307,9 @@ Kyle Kabasares, *Mathematical Modeling (Math 150, UC Merced 2017)*.
 | $\mechanical{\Delta t}$ | $\unit{s}$ | Time step | Interval between snapshots of the walker model. |
 | $\mechanical{D}$ | $\unit{m^2\,s^{-1}}$ | Variance growth rate | The ratio $(\mechanical{\Delta x})^2/\mechanical{\Delta t}$ and twice the coefficient in the diffusion equation. |
 | $\mechanical{U}$ | $\unit{m\,s^{-1}}$ | Drift velocity | Continuum advection velocity produced by the scaled random-walk bias. |
-| $t$, $1/\alpha$ | $\unit{s}$ | Elapsed time | Time in the population model and time for one factor of $e$ of exponential growth, expressed in the chosen time unit. |
-| $M$ | 1 | Carrying capacity | Population that the modeled resources can sustain at equilibrium. |
-| $\delta$ | $\unit{s^{-1}}$ | Wolf decline rate | Fractional rate of decline in the absence of prey. |
-| $x$, $y$ | $\unit{oz}$ | Ingredient amounts | Onion soup and chicken stock per serving, respectively. |
-| $s$ | $\unit{g}$ | Protein surplus | Protein above the minimum required per serving. |
-| $t$ | — | Iron surplus | Iron above the minimum required per serving, in the unspecified iron units of the exercise. |
+| $\mechanical{\Delta y}$ | $\unit{m}$ | Grid spacing in $y$ | Height of a spatial cell in the two-dimensional walker model. |
+| $L$ | $\unit{m}$ | Box size | Side length of one covering cell, measured in fixed units. |
+| $M$ | $\unit{m}$ | Side length | Side length of the full square or cube that the cells cover. |
+| $x$, $y$ | $\unit{m}$ | Position | Coordinates of a walker. |
+| $s$ | $\unit{m}$ | Signed step | Displacement of a walker in one time step. |
+| $t$ | $\unit{s}$ | Time | Time at which the position density is evaluated. |

@@ -56,7 +56,7 @@ As on [[Maxwell equations, retarded potentials, and conservation#Infinite wire w
 
 ##### Set 7, problem 1
 
-The page sketches a particle trajectory that changes direction at the origin, with the angle $\theta$ shown from the positive $\mechanical{x}$ axis.
+The page sketches a particle trajectory that changes direction at the origin, with the angle $\alpha$ shown from the positive $\mechanical{x}$ axis. This note writes $\alpha$ for the trajectory angle to keep it distinct from the polar angle $\theta$.
 
 ![[Kyle Kabasares - Electrodynamics - Particle trajectory turning at the origin.png|**Fig. 135** Spatial sketch of two trajectory branches meeting at the origin.]]
 
@@ -68,25 +68,25 @@ For a stationary observer a distance $\mechanical{a}$ away, the light signal fro
 
 ##### Retarded potential for the two trajectory branches
 
-The notes refer to Jackson Chapter 14. For each branch, use the Liénard–Wiechert scalar potential. In SI, with $\mechanical{R}$ the source-to-observer distance and $\hat{\mathbf n}$ its direction at the retarded event,
+The notes refer to Jackson Chapter 14. For each branch, use the Liénard–Wiechert scalar potential. In SI, with $\mechanical{s}$ the source-to-observer distance and $\hat{\mathbf n}$ its direction at the retarded event,
 
 $$
 \electric{\phi}(\mechanical{\mathbf x},t)=\frac{\electric{q}}{4\pi\electric{\varepsilon}_0}
-\left.\frac{1}{(1-\boldsymbol\beta\cdot\hat{\mathbf n})\mechanical{R}}\right|_{\mathrm{ret}},
+\left.\frac{1}{(1-\boldsymbol\beta\cdot\hat{\mathbf n})\mechanical{s}}\right|_{\mathrm{ret}},
 \qquad
 \boldsymbol\beta=\frac{\mechanical{\mathbf v}}{c}.
 $$
 
-The handwritten line also gives the form proportional to $1/\mechanical{R}$, which applies when $\boldsymbol\beta\cdot\hat{\mathbf n}=0$ at the retarded event.
+The handwritten line also gives the form proportional to $1/\mechanical{s}$, which applies when $\boldsymbol\beta\cdot\hat{\mathbf n}=0$ at the retarded event.
 
-For $t>\mechanical{a}/c$, the observer sees the branch after the kink. At source time $t'$, the particle has planar coordinates $(\mechanical{v}t'\cos\theta,\mechanical{v}t'\sin\theta)$ on the line of slope $\tan\theta$. The handwritten work initially uses an in-plane observer at $(\mechanical{a},0)$, with distance
+For $t>\mechanical{a}/c$, the observer sees the branch after the kink. At source time $t'$, the particle has planar coordinates $(\mechanical{v}t'\cos\alpha,\mechanical{v}t'\sin\alpha)$ on the line of slope $\tan\alpha$. The handwritten work initially uses an in-plane observer at $(\mechanical{a},0)$, with distance
 
 $$
-\mechanical{R}(t')=
-\sqrt{(\mechanical{a}-\mechanical{v}t'\cos\theta)^2+(\mechanical{v}t'\sin\theta)^2}.
+\mechanical{s}(t')=
+\sqrt{(\mechanical{a}-\mechanical{v}t'\cos\alpha)^2+(\mechanical{v}t'\sin\alpha)^2}.
 $$
 
-It then crosses out that expression and proceeds with $\mechanical{R}(t')=\sqrt{\mechanical{a}^2+\mechanical{v}^2(t')^2}$, which corresponds to an observer displaced perpendicular to the trajectory branch. This reduced distance yields the quadratic shown on the page.
+It then crosses out that expression and proceeds with $\mechanical{s}(t')=\sqrt{\mechanical{a}^2+\mechanical{v}^2(t')^2}$, which corresponds to an observer displaced perpendicular to the trajectory branch. This reduced distance yields the quadratic shown on the page.
 
 $$
 t=t'+\frac{\sqrt{\mechanical{a}^2+\mechanical{v}^2(t')^2}}{c},
@@ -94,14 +94,14 @@ t=t'+\frac{\sqrt{\mechanical{a}^2+\mechanical{v}^2(t')^2}}{c},
 (c^2-\mechanical{v}^2)(t')^2-2c^2tt'=\mechanical{a}^2-c^2t^2.
 $$
 
-The retarded root satisfies $t'\leq t$. For the in-plane observer at $(\mechanical{a},0)$, the cross term $-2\mechanical{a}\mechanical{v}t'\cos\theta$ remains in the squared distance.
+The retarded root satisfies $t'\leq t$. For the in-plane observer at $(\mechanical{a},0)$, the cross term $-2\mechanical{a}\mechanical{v}t'\cos\alpha$ remains in the squared distance.
 
-The observer is explicitly placed at $(0,0,\mechanical{a})$ on this page, perpendicular to the plane of motion. This gives the reduced distance used on [[#Retarded potential for the two trajectory branches|the section on Retarded potential for the two trajectory branches]]. For the branch with direction $(\cos\theta,\sin\theta,0)$, the unit vector from the particle to the observer and the normalized velocity are
+The observer is explicitly placed at $(0,0,\mechanical{a})$ on this page, perpendicular to the plane of motion. This gives the reduced distance used on [[#Retarded potential for the two trajectory branches|the section on Retarded potential for the two trajectory branches]]. For the branch with direction $(\cos\alpha,\sin\alpha,0)$, the unit vector from the particle to the observer and the normalized velocity are
 
 $$
-\hat{\mathbf n}=\frac{(-\mechanical{v}t'\cos\theta,-\mechanical{v}t'\sin\theta,\mechanical{a})}{\mechanical{R}(t')},
+\hat{\mathbf n}=\frac{(-\mechanical{v}t'\cos\alpha,-\mechanical{v}t'\sin\alpha,\mechanical{a})}{\mechanical{s}(t')},
 \qquad
-\boldsymbol\beta=\frac{\mechanical{v}}{c}(\cos\theta,\sin\theta,0).
+\boldsymbol\beta=\frac{\mechanical{v}}{c}(\cos\alpha,\sin\alpha,0).
 $$
 
 Use the appropriate velocity and direction on each branch when evaluating $\boldsymbol\beta\cdot\hat{\mathbf n}$. Only the quadratic root with $t'<t$ is physically acceptable.

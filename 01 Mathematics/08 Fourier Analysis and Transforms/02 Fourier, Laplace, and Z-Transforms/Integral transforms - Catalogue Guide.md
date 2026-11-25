@@ -57,7 +57,7 @@ Write the forward definition before using a transform table. Check the integrati
 <!-- catalogue-complete-lesson-index:start -->
 ## Complete lesson index
 
-Read the prerequisite route above before the advanced lessons. The source topic links are in [[Planned Topics#15. Integral transforms|the detailed catalogue]].
+Read the prerequisite route above before the advanced lessons.
 
 - [[Integral kernels and inverse transforms|Integral kernels and inverse transforms]] — 15.1, 15.1.1, 15.1.2, 15.1.3, 15.1.4, 15.1.5, 15.1.6.
 - [[Laplace transform rules and impulses|Laplace transform rules and impulses]] — 15.2, 15.2.1, 15.2.1.1, 15.2.1.2, 15.2.1.3, 15.2.1.4.

@@ -1,0 +1,55 @@
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.11.02 The Bloch–Nordsieck Theorem.md
+- FIXED | Massive-charge remainder is a single ΔE log times a mass log, not ln² ΔE | Replaced the schematic display by σ0[1+(2α/π)(ln(s/m²)−1)ln(ΔE/√s)+…], added a sentence linking the 08.11.03 expansion, and added m to the table
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.16 Exercises/08.16.12 Schwinger result for (g − 2) - 2.md
+- FIXED | μ is both Lorentz index and dim-reg scale | Renamed the scale to \energy{\tilde\mu} in the display, the callout and the table
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/09 Renormalization/09.01 Ultraviolet Divergences in Loop Diagrams.md
+- FIXED | Twelve significant figures overstates the precision of a_e | Now states agreement at about 1e-12 absolute, about ten significant figures of a_e and twelve to thirteen of g; added g to the table
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/09 Renormalization/09.01.03 Renormalizable and Nonrenormalizable Theories.md
+- FIXED | [λ] used for the operator dimension clashes with the coupling notation | Named the operator O and the coupling g: [O]=4−Δ, Δ=[g]; changed the three bullet conditions to [O]
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/09 Renormalization/09.02.02 Pauli–Villars Regularization.md
+- FIXED | Fermion and beyond-one-loop difficulty statement is misleading | Replaced it with: routinely used for QED fermion loops with several regulators and mass sum rules; real limits are non-Abelian gauge invariance and chiral fermions
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/09 Renormalization/09.03.03 Vertex Correction Γμ(p′, p) and Anomalous Moment.md
+- FIXED | Lorentz invariance and parity also allow a q^μ term | Added that current conservation (Ward identity q_μ ū'Γ^μ u=0) removes the q^μ term before (9.74)
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/09 Renormalization/09.08 Exercises/09.08.02 Quartic scalar theory in four dimensions.md
+- FIXED | Exercise statement misses the −i vertex factor | Changed λ/2 to −iλ/2 in the exercise display
+- FIXED | +iε clashes with the 1/ε dim-reg pole | Changed +iε to +i0 in the exercise display, as in the solution
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/09 Renormalization/09.08 Exercises/09.08.05 Lamb-shift order-of-magnitude estimate.md
+- FIXED | Printed prefactor differs by 1/4, not 1/(4π) | Callout now gives the printed prefactor −α²/(6πr) as a factor 1/4 smaller than the conventional −(α/r)2α/(3π); integral −4α²/(15m²) checked numerically
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/09 Renormalization/09.08 Exercises/09.08.08 Beta function and evolution of α.md
+- FIXED | α_0 (reference) clashes with bare charge e_0 | Replaced every α_0 by α(μ_0), including the table
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.01 Motivation - The Scale Problem.md
+- FIXED | Lamb shift listed as an input parameter | Inputs are now α and the electron mass; added that predictions such as the Lamb shift test the theory
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.02.03 Solution of the Callan–Symanzik Equation.md
+- FIXED | Example 10.2 exponent sign holds only for amputated Γ^(n) | Extended the existing note: unamputated G gives s^(D+nγ) and +n∫γ; printed −n∫γ with s^(4−n) holds only for Γ^(n) with −nγ (fixed-point check confirmed)
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.05.03 Scale Evolution of αₛ in QCD.md
+- PARTLY | Normalizing at M_Z requires N_f=5, b0=23/3; figure uses b0=7 | Prose corrected (b0=23/3 gives Λ(5)≈88 MeV, b0=7 gives formal ≈45 MeV, both recomputed) and caption marks the b0=7 curve as formal; Graphs curve not redrawn with thresholds (needs figure work and reading-mode check)
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.05.04 Interpretation - Antiscreening and the Color of the Vacuum.md
+- FIXED | Paramagnetic gluon part is +4C_A, not 11/3 C_A | Now states spin paramagnetism +4C_A (antiscreening), orbital diamagnetism −C_A/3 (screening), net 11/3 C_A; "paramagnetic gluon contribution" changed to "net gluon contribution"
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.06.01 Wilson's Idea - Integrating Out High-Energy Modes.md
+- FIXED | Displayed rescaling maps bΛ to b²Λ | Display now k'=k/b, x'=bx, φ'(x')=b^(−(d−2)/2)φ^<(x); callout shortened to a one-line remark on the source misprint
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.06.02 Relevant, Marginal, and Irrelevant Operators.md
+- FIXED | Iron is 3D Heisenberg, not Ising with CO2 and binary mixtures | Replaced iron by the uniaxial antiferromagnet FeF₂, named the 3D Ising class, and stated that iron belongs to the 3D Heisenberg (O(3)) class
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.13 Exercises/10.13.02 Running QED charge.md
+- FIXED | Table lists unused Q_i, Q, Q_1, Q_{N_f} | Table row now lists only Q_f
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.02.02 The Free Scalar Field and Gaussian Functional Integrals.md
+- FIXED | Boxed (11.9) misses i in the exponent | Box now has −(i/2)∫JΔ_FJ with an e^{iS} lead-in; deleted the correcting callout
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.05.04 Fermionic Functional Integral.md
+- FIXED | Two barred-source derivatives give zero | Display now (1/i²)(1/Z0)δ/δη_β(y) δZ0/δη̄_α(x)|0 = iS_F with left derivatives (sign checked); deleted the "source prints" display and its callout
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.07.01 Derivation for the Scalar Field.md
+- FIXED | ε(x) field shift clashes with the iε prescription | Renamed the shift to δφ(x) in the text and the table
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.08.01 Global Symmetry and the Noether Current.md
+- FIXED | Constant-ε δS is inconsistent with (11.33) | Main text now uses δS=−∫ε(x)∂j and derives (11.33) from 0=⟨δO⟩+i⟨δS O⟩ (sign checked); deleted the correcting callout paragraph and kept the time-ordering/anomaly paragraph
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.08.02 The Ward–Takahashi Identity for QED.md
+- FIXED | (11.34) with unamputated photon is not the identity | Restated for the photon-amputated function M^μ=e S_F(p+k)Γ^μS_F(p), full propagator iS_F, amputated correlator iM^μ: k_μM^μ=−e[S_F(p+k)−S_F(p)] (consistent with 11.35); dropped the callout paragraph; added M^μ to the table
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.10 Exercises/11.10.05 One-loop effective potential in quartic theory.md
+- FIXED | 𝒱 is defined but never used | Deleted the sentence and the table row
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.04.01 Propagators.md
+- FIXED | Caption says dashed but the SVG is dotted | Changed the caption to "dotted line" (SVG has stroke-dasharray 1 7)
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.04.02 Vertices.md
+- FIXED | Table lists unused k | Removed k and reworded the description to the outgoing antighost momentum
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.06.01 Structure of the One-Loop Calculation.md
+- FIXED | Table lists ℓ, which the text never uses | Introduced the loop momentum ℓ and ℓ+k in the gluon-loop section (these labels appear in Fig. 12.8 SVG); kept the table row
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.06.03 Running Coupling and the Landau Scale.md
+- FIXED | Physical curve through α_s(M_Z) needs N_f=5, β0=23/3 | Callout now gives N_f=5, β0=23/3, Λ(5)≈88 MeV as physical and marks the N_f=6 point at x≈7.61 as formal; caption says formal six-flavor β0=7; graph unchanged
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.10 Exercises/12.10.02 Covariance of the covariant derivative.md
+- FIXED | Table lists unused A_μ^a and mentions field equations | Row now lists A_μ, A_μ^U, A'_μ, with the description limited to the covariance check

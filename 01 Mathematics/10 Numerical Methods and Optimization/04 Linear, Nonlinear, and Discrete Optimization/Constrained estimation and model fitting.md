@@ -183,11 +183,3 @@ It follows that $\lambda/24=30$, so $\lambda=720$, $x=720/12=60$, and $y=720/24=
 ## Source
 
 Kyle Kabasares, *Mathematical Modeling (Math 150, UC Merced 2017)*.
-
-## Physical quantities
-
-| Symbol | Unit | Quantity | Description |
-| --- | --- | --- | --- |
-| $\lambda$ | $\unit{s^{-1}}$ | Lyapunov exponent | Exponential rate of growth or decay of a perturbation in time. |
-| $x$, $y$ | $\unit{oz}$ | Ingredient amounts | Onion soup and chicken stock per serving, respectively. |
-| $s$ | $\unit{g}$ | Protein surplus | Protein above the minimum required per serving. |

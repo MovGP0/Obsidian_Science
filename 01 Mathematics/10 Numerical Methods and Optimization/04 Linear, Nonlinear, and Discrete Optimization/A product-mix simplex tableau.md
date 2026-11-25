@@ -73,6 +73,4 @@ Kyle Kabasares, *Mathematical Modeling (Math 150, UC Merced 2017)*.
 
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
-| $x$, $y$ | $\unit{oz}$ | Ingredient amounts | Onion soup and chicken stock per serving, respectively. |
-| $s$ | $\unit{g}$ | Protein surplus | Protein above the minimum required per serving. |
 | $s_1$, $s_2$ | $\unit{h}$ | Unused labor time | Weekly fabrication and assembly labor-hours remaining, respectively. |

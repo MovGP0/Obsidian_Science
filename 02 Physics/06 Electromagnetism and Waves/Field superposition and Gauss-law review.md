@@ -149,32 +149,28 @@ Kyle Kabasares, *Electricity and Magnetism (Physics 9H, UC Merced 2014)*.
 
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
-| $\mechanical{\vec F}$ | $\unit{N}$ | Force | The force on a charge. |
-| $\energy{U}$ | $\unit{J}$ | Electric potential energy | The interaction energy of the two charges. |
-| $\electric{\vec E}$ | $\unit{V\,m^{-1}}$ | Electric field | The electric force per unit test charge. |
-| $\electric{V}$ | $\unit{V}$ | Electric potential | The potential energy per unit test charge. |
-| $\electric{q}$, $\electric{q}_1$, $\electric{q}_2$ | $\unit{C}$ | Electric charge | The test or source charge in the electrostatic relations. |
-| $\mechanical{r}$ | $\unit{m}$ | Radial distance | The distance from a source, axis, or center. |
+| $\mechanical{\theta}_i$, $\mechanical{\theta}_r$ | $\unit{rad}$ | Angles of incidence and reflection | The angles of the incident and reflected rays to the mirror normal. |
+| $\mechanical{\theta}$ | $\unit{rad}$ | Angle | The angle between the polarization axes, or between the field and the area element. |
+| $\mechanical{M}$ | 1 | Transverse magnification | The signed ratio of image height to object height. |
+| $\mechanical{s}_o$, $\mechanical{s}_i$ | $\unit{m}$ | Object and image distances | The signed distances from the mirror to the object and to the image. |
+| $\mechanical{\vec F}$, $\mechanical{\vec F}_{\mathrm{ext}}$, $\mechanical{\vec F}_{\mathrm{el}}$ | $\unit{N}$ | Force | The force on a charge, the external force, and the electric force. |
+| $\mechanical{\vec v}$ | $\unit{m\,s^{-1}}$ | Velocity | The velocity of the moving charge. |
+| $\magnetic{\vec B}$ | $\unit{T}$ | Magnetic flux density | The magnetic field in the Lorentz force. |
+| $\energy{I}_1$, $\energy{I}_2$ | $\unit{W\,m^{-2}}$ | Intensity | The light intensity before and after the polarizer. |
+| $\electric{q}$, $\electric{q}_1$, $\electric{q}_2$ | $\unit{C}$ | Electric charge | The test charge or the two point charges. |
+| $\electric{Q}$ | $\unit{C}$ | Source charge | The charge of the point source or of the thin shell. |
+| $\electric{Q}_{\mathrm{enc}}$ | $\unit{C}$ | Enclosed charge | The net charge inside the Gaussian surface. |
+| $\electric{\vec E}$, $\electric{\vec E}_n$, $\electric{E}$, $\electric{E}_r$, $\electric{E}_{\perp}$ | $\unit{N\,C^{-1}}$ | Electric field | The electric force per unit test charge, its contributions, and its components. |
 | $\electric{k}$ | $\unit{N\,m^2\,C^{-2}}$ | Coulomb constant | The coefficient in the inverse-square force law. |
 | $\electric{\varepsilon}_0$ | $\unit{F\,m^{-1}}$ | Vacuum permittivity | The constant that sets the strength of the electric interaction in vacuum. |
-| $\mechanical{d}$ | $\unit{m}$ | Separation or diameter | The separation of charges, plates, or slits, or the wire diameter. |
-| $\electric{Q}$ | $\unit{C}$ | Total charge | The charge distributed along the semicircular arc. |
-| $\theta$, $\mechanical{\theta}$ | $\unit{rad}$ | Angle | A geometric angle used in projections, polarization, and ray diagrams. |
-| $\mechanical{s}$ | $\unit{m}$ | Dipole separation | The distance between the two charges of the dipole. |
-| $\mechanical{A}$ | $\unit{m^2}$ | Area | The area over which the surface charge is distributed. |
-| $\electric{\eta}$, $\electric{\sigma}$ | $\unit{C\,m^{-2}}$ | Surface charge density | The charge per unit area. |
-| $\electric{\Phi}$, $\electric{\Phi}_{E,\mathrm{net}}$ | $\unit{N\,m^2\,C^{-1}}$ | Electric flux | The surface integral of the normal electric field. |
-| $\mechanical{\vec A}$ | $\unit{m^2}$ | Area vector | A vector normal to the surface with magnitude equal to the area. |
-| $\mechanical{R}$ | $\unit{m}$ | Radius | The radius of a sphere, disk, wire, or coil, or the radius of curvature of a mirror. |
-| $\energy{W}$ | $\unit{J}$ | Work | The integral of force along the displacement. |
+| $\mechanical{r}$, $\mechanical{r}_1$, $\mechanical{r}_2$ | $\unit{m}$ | Radial distance | The distance from the source charge or the radius of a Gaussian sphere. |
 | $\mechanical{\vec r}$ | $\unit{m}$ | Position vector | Its differential gives the displacement along the work path. |
-| $\electric{\varepsilon}$ | $\unit{F\,m^{-1}}$ | Permittivity | The electric response parameter of a dielectric or transparent medium. |
-| $\electric{\sigma}$ | $\unit{S\,m^{-1}}$ | Electrical conductivity | The proportionality constant between current density and electric field. |
-| $\magnetic{\vec B}$ | $\unit{T}$ | Magnetic flux density | The magnetic field that determines the flux through a surface. |
-| $N$ | 1 | Turn count | The number of loops contributing to the coil field. |
-| $\energy{I}$ | $\unit{W\,m^{-2}}$ | Intensity | Time-averaged energy flux magnitude. |
-| $\mechanical{s}$, $\mechanical{o}$, $\mechanical{s}_o$ | $\unit{m}$ | Object distance | Signed distance from the lens to the object. |
-| $\mechanical{s}'$, $\mechanical{i}$, $\mechanical{s}_i$ | $\unit{m}$ | Image distance | Signed distance from the lens to the image. |
-| $\mechanical{M}$ | 1 | Transverse magnification | Signed ratio of image height to object height. |
-| — | $\unit{C}$ | Electron and proton charges | The signed charges of the electron and proton. |
-| — | $\unit{kg}$ | Electron mass | The mass scale given for the electron. |
+| $\mechanical{R}$ | $\unit{m}$ | Radius or separation | The radius of the Gaussian sphere or the shell, or the final distance between the two charges. |
+| $\mechanical{d}$ | $\unit{m}$ | Distance | The distance from the sheet, or the separation of the two plates. |
+| $\electric{\Phi}_{\mathrm E}$ | $\unit{N\,m^2\,C^{-1}}$ | Electric flux | The surface integral of the normal electric field. |
+| $\mechanical{A}$, $\mechanical{A}_1$, $\mechanical{A}_2$, $\mechanical{A}_3$ | $\unit{m^2}$ | Area | The sheet area and the cap and cross-section areas of the pillbox. |
+| $\mechanical{\vec A}$ | $\unit{m^2}$ | Area vector | A vector normal to the surface with magnitude equal to the area. |
+| $\electric{\sigma}$ | $\unit{C\,m^{-2}}$ | Surface charge density | The charge per unit area of the sheet. |
+| $\energy{U}$ | $\unit{J}$ | Electric potential energy | The interaction energy of the two charges. |
+| $\energy{W}_{\mathrm{ext}}$ | $\unit{J}$ | External work | The work of the external force that brings the charge in from infinity. |
+| $\electric{V}$, $\electric{V}_\infty$ | $\unit{V}$ | Electric potential | The potential energy per unit test charge, with its value at infinity. |

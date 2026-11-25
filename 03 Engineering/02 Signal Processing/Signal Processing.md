@@ -45,14 +45,14 @@ How to go from continuous to discrete signals.
 - **Band-stop / Notch filter** – rejects a narrow band 
 - **All-pass filter** – preserves amplitude, changes phase
 - **Filter types**:
-    - FIR (Finite Impulse Response) – always stable, linear phase
+    - FIR (Finite Impulse Response) – always stable, can have exactly linear phase (symmetric or antisymmetric coefficients)
     - IIR (Infinite Impulse Response) – more efficient, may have nonlinear phase
 - **Design methods**: windowing, bilinear transform, Parks–McClellan
 - **Special cases**: CIC filters, moving average filters
 
 ## Filtering & Signal Shaping
 
-- **FIR Filters** – linear phase, stable, designed by windowing or Parks–McClellan
+- **FIR Filters** – always stable, can have exactly linear phase, designed by windowing or Parks–McClellan
 - **IIR Filters** – efficient, but phase non-linear (Butterworth, Chebyshev, Elliptic)
 - **Adaptive Filters** – LMS, NLMS, RLS for noise cancellation / echo suppression
 - **Notch Filters** – for narrowband interference removal

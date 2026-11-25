@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Fourier modes and periodicity"
 document_type: "Self-contained study chapter"
 ---
@@ -148,6 +148,6 @@ The units below use the collection's natural-unit convention. Explicit SI formul
 | $\signal{\Psi}$ | $\unit{GeV^{3/2}}$ | Five-dimensional scalar field | Canonically normalized higher-dimensional matter field. |
 | $\signal{\psi}_n,\;\signal{\psi}_{-n}$ | $\unit{GeV}$ | Four-dimensional scalar fields | Canonical field or Fourier-mode amplitude on the base spacetime. |
 | $\mechanical{p}_{5,n}$ | $\unit{GeV}$ | Momenta | Compact-direction or ordinary spatial momentum. |
-| $\signal{k}_5$ | $\unit{GeV}$ | Angular frequency and wave vector | Temporal or spatial phase gradient in natural units. |
+| $\signal{k},\;\signal{k}_5$ | $\unit{GeV}$ | Wave numbers | Continuous wave number on a line and allowed compact wave number around the circle. |
 | $\energy{\hbar}$ | $1$ | Reduced Planck constant | Set to one in natural units; restored explicitly in SI formulas. |
-| $\mechanical{\theta}$ | $1$ | Circular angle | Compact circular angle; the spherical-coordinate inset identifies its separate polar-angle use. |
+| $\mechanical{\theta}$ | $1$ | Circular angle | Compact circular angle with period two pi. |

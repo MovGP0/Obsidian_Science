@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Klein-Gordon equation and dispersion"
 document_type: "Self-contained study chapter"
 ---
@@ -178,9 +178,9 @@ The units below use the collection's natural-unit convention. Explicit SI formul
 
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
-| $\mechanical{\mathbf x}$ | $\unit{GeV^{-1}}$ | Coordinates | Length-valued base, embedding, or compact coordinates used in this chapter. |
+| $\mechanical{x},\;\mechanical{x}^\mu,\;\mechanical{\mathbf x}$ | $\unit{GeV^{-1}}$ | Coordinates | Four-position and its components, and the spatial position vector. |
 | $\mechanical{t}$ | $\unit{GeV^{-1}}$ | Time | Time coordinate in natural units. |
-| $\signal{\psi}$ | $\unit{GeV}$ | Four-dimensional scalar fields | Canonical field or Fourier-mode amplitude on the base spacetime. |
+| $\signal{\psi}$ | $\unit{GeV}$ | Klein–Gordon scalar field | Canonically normalized four-dimensional scalar field. |
 | $\mechanical{m}$ | $\unit{GeV}$ | Masses | Original mass or effective four-dimensional mode mass in natural units. |
 | $\mechanical{\mathbf p}$ | $\unit{GeV}$ | Momenta | Compact-direction or ordinary spatial momentum. |
 | $\energy{E}$ | $\unit{GeV}$ | Energies | Excitation scale, wave energy, or first-mode rest energy. |
@@ -188,8 +188,6 @@ The units below use the collection's natural-unit convention. Explicit SI formul
 | $\mechanical{\mathbf v}_{\mathrm g}$ | $1$ | Group velocity | Wave-packet velocity expressed relative to the speed of light. |
 | $\energy{\hbar}$ | $1$ | Reduced Planck constant | Set to one in natural units; restored explicitly in SI formulas. |
 | $\mechanical{c}$ | $1$ | Speed of light | Set to one in natural units; restored explicitly in SI formulas. |
-| $\mechanical{x}$ | $\unit{GeV^{-1}}$ | Base coordinate | Ordinary length-valued base coordinate; a four-coordinate argument where stated. |
 | $\signal{\lambda}$ | $\unit{GeV^{-1}}$ | Wavelength | Distance between equal-phase fronts in the plane-wave calculation. |
 | $\mechanical{p}_\mu,\mechanical{p}^\mu,\mechanical{p}_x,\mechanical{p}_y,\mechanical{p}_z$ | $\unit{GeV}$ | Momenta | Four-momentum and ordinary spatial momentum components. |
-| $\signal{\psi},\signal{\psi}_n$ | — | Scalar waves | Scalar field and Fourier coefficients in the unnormalized expansion; amplitude units depend on the chosen normalization. |
 | $C$ | — | Wave amplitude | Constant amplitude with units set by the chosen wave normalization. |

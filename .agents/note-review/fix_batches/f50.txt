@@ -1,0 +1,61 @@
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/12 Hydrogen Atom/Atomic spectra and wave mechanics review problems.md
+- [Correctness] Electron in an infinite well: $h^2/(8m_eL^2)$ with $L=0.100\,\mathrm{nm}$ gives $6.02\times10^{-18}\,\mathrm J=37.6\,\mathrm{eV}$, not $37.7\,\mathrm{eV}$; the derived levels should be $E_2=150.4$, $E_3=338.4$, and $E_4=601.6\,\mathrm{eV}$.
+- [Correctness] Problem 6-16: $L=\sqrt{3\pi^2\hbar^2\lambda/(2m_ehc)}=\sqrt{3h\lambda/(8m_ec)}$ with $\lambda=694.3\,\mathrm{nm}$ gives $0.795\,\mathrm{nm}$, not $0.791\,\mathrm{nm}$.
+- [Correctness] 11.4(a) item 4: the transition is not stated, and $\Delta E=E_f-E_i=-(13.6\,\mathrm{eV})(1/n_f^2-1/n_i^2)$ is negative for emission (for $4\to2$ it is $-2.55\,\mathrm{eV}$); name the transition and either write $\lvert\Delta E\rvert=2.55\,\mathrm{eV}$ or fix the sign.
+- [Correctness] Physical quantities table: the rows for decay constant $\lambda$, activity $R$, and mean lifetime $\tau$ are never used, $\lambda$ clashes with the de Broglie wavelength row, and $R$ is used in the note as the radial function; remove them and add the symbols the note uses ($k$, $\kappa$, $\eta$, $\vec L$, $L_z$, $m_\ell$, $j$, $m_j$, $\psi$).
+
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/12 Hydrogen Atom/Hydrogen, spin, and the structure of the periodic table.md
+- [Correctness] Helium excited states: the helium $1s\,2p$ $^3P$ multiplet is inverted, so $^3P_2$ is the lowest and $^3P_0$ the highest level ($2^3P_0$ lies about 30 GHz above $2^3P_1$); Hund's rules apply to the ground term of equivalent electrons and do not predict "$^3P_0$ lowest" here, so keep only "triplet below singlet".
+- [Correctness] Physical quantities table: emissivity $\varepsilon$, decay constant $\lambda$, activity $R$, and mean lifetime $\tau$ are never used, while in this note $R$ is the radial function and $\tau$ the torque; replace those rows with the symbols the note uses ($R(r)$, $\vec\tau$, $\vec L$, $L_z$, $g_s$, $\vec B$, $\varepsilon_0$).
+
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/12 Hydrogen Atom/Three-dimensional wells and hydrogen wavefunctions.md
+- [Correctness] Physical quantities table: $R,T$ are listed as reflection and transmission coefficients, but here $R$ is the radial (or spatial) function and $T(t)$ the time factor, and $Z$ is listed as atomic number but only appears as the Cartesian factor $Z(z)$; fix those rows and add $m$, $\ell$, $Y_\ell^m$, $P_\ell^m$, $j_\ell$, $n_\ell$, $\beta_{n\ell}$, $a$, and $u$.
+- [Correctness] Symbol clash: $m$ is both the particle mass ($2mr^2/\hbar^2$) and the magnetic quantum number ($m^2$, $e^{im\phi}$), and $Y$ is both the Cartesian factor $Y(y)$ and the angular function $Y(\theta,\phi)$; use $\mu$ or $m_e$ for the mass and different letters for the Cartesian factors.
+
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/14 Many-Particle Systems and Identical Particles/14.08 Many-Particle Systems and Identical Particles Exercises.md
+- [Correctness] $\Psi_\pm$ denotes the symmetric/antisymmetric well states in Exercises 4, 6, 7 and 8, while $\lvert\Psi^\pm\rangle$ denotes Bell states in Exercises 1 and 8; Exercise 8 uses both in one line. Rename the well states (e.g. $\Phi_S,\Phi_A$).
+
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/16 Perturbation Theory/Degenerate perturbation theory and oscillator transitions.md
+- [Correctness] The physical-quantity table lists symbols absent from the note with unrelated meanings: $E$ in $\mathrm N$ (linear perturbation coefficient), $\Delta E,\delta E$ (continuum widths), $c$ (speed of light), $V_0,V$ (well depth), and $A,B$ (emission coefficients); remove them and add the used but missing $C_{ii'}$, $\alpha$, $\epsilon$, $U$, $H$, $\Theta$, $a_x,a_y$.
+- [Correctness] Symbol clash: $C_{ii'}$ denotes the state expansion coefficients in the review section and $C_{ij}$ the quadratic-form matrix of the 2D oscillator perturbation; rename one (e.g. $K_{ij}$), and likewise $\lambda$ is used for the quartic coupling, the mode-frequency shifts $\lambda_j$, and the power-law coupling $\lambda_n$.
+
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/16 Perturbation Theory/Einstein coefficients and electric dipole transition rates.md
+- [Correctness] The physical-quantity table contradicts the note: $\mechanical{L}$ is listed as "Box side length" (here $L$ is orbital angular momentum, also listed), $\mechanical{R}$ as "Well radius" (here the sum of position vectors, also listed), $N$ as "Number of states" (here photon number), $E_0$ as a degenerate-subspace energy (here the ground-state energy), plus unused $E$ in $\mathrm N$, $\Gamma$, $\mathbf p,\mathbf p'$, $\omega_j$, $t_0$, $\Delta t$; rebuild it from the symbols actually used.
+
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/16 Perturbation Theory/Heisenberg and interaction pictures in perturbation calculations.md
+- [Correctness] The physical-quantity table lists symbols the note never uses, including gas pressure and volume $P,V$ "of the van der Waals equation", $V_0$ as a well depth, $A,B$ emission coefficients, $c$, $\omega_j$ "of the new oscillator modes", and $E_0$ as a degenerate-subspace energy; remove them and add the used ones ($U$, $U_0$, $U_I$, $V_I$, $O_S,O_H,O_I$, $c_n$, $\omega_0$, $\mathcal T$).
+
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/16 Perturbation Theory/Light–matter coupling, absorption, and induced emission.md
+- [Correctness] The physical-quantities table lists symbols this note never uses or gives them the wrong meaning: $\signal{\omega}_j$ ("new oscillator modes"), $\mechanical{t}_0,\Delta\mechanical{t}$, $E$ in N, $\mathcal E$ in N (a duplicate of $\electric{\mathcal E}$ in V/m), $\mechanical{\mathbf p}'$, $N$ "number of states", $A,B$ "Einstein coefficients" (which clash with the mode amplitude $A(\signal{\mathbf k},s)$), and a second $\mechanical{v}$ meaning "molar volume in the gas equations"; $\energy{E}_0$ is described as "common energy of a degenerate subspace" but here it is the ground-state energy of the well. Prune the table to the symbols actually used and fix their meanings.
+- [Correctness] Symbol clash: $\mechanical{\ell}$ is the crossing length in the absorption-rate paragraph ("A region of size $\mechanical{\ell}$ has crossing time…"), while $\ell$ is the partial-wave quantum number a few lines earlier in $R_{k\ell}$ and $\delta_{\ell1}$; rename the length (e.g. $\mechanical{d}$).
+
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/16 Perturbation Theory/Time-dependent transition rates and the golden rule.md
+- [Correctness] Symbol clash: $\Delta\energy{E}$ means $\energy{E}_n^{(0)}-\energy{E}_0^{(0)}$ in the constant-perturbation section but "the energy scale of the smooth factors" in the golden-rule window $2\pi\hbar/\Delta\energy{E}\ll\mechanical{t}\ll2\pi\hbar/\delta\energy{E}$; rename one of them (e.g. $W$ for the smoothness scale).
+- [Correctness] The physical-quantities table describes $\mechanical{F}$ as "equal to the negative of the applied force", but with $H\ni-\mechanical{F}\mechanical{x}\Theta(\mechanical{t})$ the force on the oscillator is $+\mechanical{F}$; the table also lists symbols this note never uses ($\signal{\omega}_j$, $\mechanical{F}_0$, $\mechanical{z},\mechanical{r}$, $E$ in N, $c$, $\energy{V}_0$, $A,B$, $d\energy{P}_{\mathrm{rad}}/d\Omega$, $\Delta\mechanical{t}$). Fix $\mechanical{F}$ and prune the rest.
+
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/18 Geometric Phases/18.07 Generalizations and Outlook.md
+- [Correctness] The sentence "[[19.00 Bands in Periodic Potentials|Bands in Periodic Potentials]] applies Berry curvature to the Brillouin zone…" is wrong: no note in chapter 19 mentions Berry curvature, the anomalous velocity, or Chern numbers (grep finds no "Berry" in that folder); rephrase it as an outlook beyond the course or link to a note that actually covers it.
+
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/21 Complete Solutions to the Exercises/21.01 Solutions for the Crisis of Classical Physics.md
+- [Correctness] The physical-quantities table omits symbols used in the note and the letter $a$ has three meanings (acceleration in Ex. 7, slit width in Ex. 8 and 10, besides the Bohr radius $a_0$); rename the acceleration (e.g. $a_{\mathrm c}$) and add $a$, $r_e$, $\energy P$ and $v$ to the table.
+
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/21 Complete Solutions to the Exercises/21.09 Solutions for Orbital Angular Momentum.md
+- [Correctness] $R$ denotes the sphere radius in Exercises 8 and 9 and the radial wave function $R(r)$ in Exercise 10, and $\mechanical M$, $\omega$, $R$ are missing from the table; rename the radial function (e.g. $\mathcal R(r)$) and complete the table.
+
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/21 Complete Solutions to the Exercises/21.13 Solutions for the Density Matrix and Decoherence.md
+- [Correctness] Symbol clash: $\gamma$ is the gyromagnetic ratio in Exercise 10 and the dephasing rate in Exercise 11 (only the color macro distinguishes them); rename the dephasing parameter, for example $\Gamma$ with $\hat L=\sqrt\Gamma\,\sigma_z$ and $T_\phi=1/(2\Gamma)$, and update the table.
+
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/21 Complete Solutions to the Exercises/21.14 Solutions for Identical Particles.md
+- [Correctness] Symbol clash: $L$ is the well width (Exercises 3, 4, 6, 7) and the orbital term label in Exercise 10, and both appear in the table; use $a$ for the width, or write the term label distinctly.
+- [Correctness] Symbol clash: $n$ is the orbital index ($n=1$ in Exercise 3) and the number density in Exercise 11; rename the density, for example $n_e$ or $\varrho$.
+
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/21 Complete Solutions to the Exercises/21.17 Solutions for Symmetries and Conservation Laws.md
+- [Correctness] The physical-quantities table lists $\Gamma$ (transition rate), but no $\Gamma$ appears in the note; Exercise 11 writes the rates without a symbol. Either introduce $\Gamma_{2p}$, $\Gamma_{3p}$ in Exercise 11 or remove $\Gamma$ from the table.
+
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/21 Complete Solutions to the Exercises/21.20 Solutions for Variational Methods, WKB, and Scattering.md
+- [Correctness] $V_0$ is an energy in Exercise 6 ($V_0e^{-r^2/b^2}$, with the energy macro) but an energy times length in Exercise 9 ($V_0e^{-\mu r}/r$, uncolored); rename the Yukawa strength, for example $g$ in $\unit{J\,m}$, and add it to the table.
+
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/Quantum rotations, unitarity, and course review calculations.md
+- [Correctness] The physical-quantities table is copied from another note: it describes $x$, $p$ as "along the oscillator axis" and lists $t_0$, $\Delta t$, $E_0$, $F_0$, $x_0$ (shifted equilibrium), $E$ (field times charge, in N) and $A$, $B$ (Einstein coefficients), none of which match their use here ($A$, $B$ are states in Example 4.1, $x_0$ is a WKB integration limit, and $F=-U'(a)$ is the force itself, not its negative); rebuild it with $\psi$, $U$, $p(x)$, $C$, $F$, $a$, $b$, $U(t)$, $H$, $L$, $\lambda_i$, $\alpha_i$.
+- [Correctness] Semantic macros: the complex-plane helper variables $\rho$, $\varphi$, $y$ and the short time step $\epsilon$ are wrapped in the mechanical macro, while $\hbar$ is left uncolored throughout; use $\mechanical{\hbar}$ as in the rest of the course and keep contour coordinates uncolored.
+

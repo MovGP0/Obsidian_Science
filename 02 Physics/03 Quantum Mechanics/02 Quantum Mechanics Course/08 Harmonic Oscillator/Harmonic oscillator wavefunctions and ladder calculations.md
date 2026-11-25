@@ -186,24 +186,24 @@ The energy eigenvalue equation is $\hat H\psi=\energy{E}\psi$. The notes use hyp
 
 ##### Expectation values
 
-Calculate $\langle x\rangle$, $\langle x^2\rangle$, $\langle\mechanical{p}\rangle$, and $\langle\mechanical{p}^2\rangle$. For $\langle x\rangle$, use $\sin^2 u=(1-\cos 2u)/2$ and set $\alpha=n\pi/a$.
+Calculate $\langle x\rangle$, $\langle x^2\rangle$, $\langle\mechanical{p}\rangle$, and $\langle\mechanical{p}^2\rangle$. For $\langle x\rangle$, use $\sin^2 u=(1-\cos 2u)/2$ and set $\beta=n\pi/a$.
 
 $$
 \langle x\rangle
-=\frac{2}{a}\int_0^a x\sin^2(\alpha x)\,dx
-=\frac{1}{a}\int_0^a x\,dx-\frac{1}{a}\int_0^a x\cos(2\alpha x)\,dx.
+=\frac{2}{a}\int_0^a x\sin^2(\beta x)\,dx
+=\frac{1}{a}\int_0^a x\,dx-\frac{1}{a}\int_0^a x\cos(2\beta x)\,dx.
 $$
 
-Integrate the second term by parts with $u=x$ and $v=\sin(2\alpha x)/(2\alpha)$. The endpoint sine vanishes and the endpoint cosines agree.
+Integrate the second term by parts with $u=x$ and $v=\sin(2\beta x)/(2\beta)$. The endpoint sine vanishes and the endpoint cosines agree.
 
 $$
 \langle x\rangle
 =\frac{a}{2}-\frac{1}{a}
-\left[\frac{x\sin(2\alpha x)}{2\alpha}+\frac{\cos(2\alpha x)}{4\alpha^2}\right]_0^a
+\left[\frac{x\sin(2\beta x)}{2\beta}+\frac{\cos(2\beta x)}{4\beta^2}\right]_0^a
 =\frac{a}{2}.
 $$
 
-For the infinite well on $0<x<a$, $\langle x\rangle=a/2$ and $\energy{E_n}=\energy{E_0}n^2$, where $\energy{E_0}$ here is the constant multiplying $n^2$.
+For the infinite well on $0<x<a$, $\langle x\rangle=a/2$ and $\energy{E_n}=\energy{E_1}n^2$, where $\energy{E_1}$ is the ground-state energy of the well.
 
 ![[Kyle Kabasares - Quantum Mechanics - Well Wavefunctions and Densities.png|**Fig. 30** Wavefunctions in gray and probability densities in blue for $n=1$ and $n=2$.]]
 
@@ -300,15 +300,15 @@ $$
 The first excited state is $\psi_1=A_1xe^{-m\signal{\omega}x^2/(2\hbar)}$, and $\energy{E_n}=(n+\frac12)\hbar\signal{\omega}$. The general spatial state is
 
 $$
-\psi_n(x)=A_n H_n(\alpha x)e^{-\alpha^2x^2/2},
+\psi_n(x)=A_n H_n(\gamma x)e^{-\gamma^2x^2/2},
 \qquad
-\alpha=\sqrt{\frac{m\signal{\omega}}{\hbar}}
+\gamma=\sqrt{\frac{m\signal{\omega}}{\hbar}}
 =\left(\frac{m\mechanical{k}}{\hbar^2}\right)^{1/4},
 \qquad
-A_n=\sqrt{\frac{\alpha}{2^n n!\sqrt{\pi}}}.
+A_n=\sqrt{\frac{\gamma}{2^n n!\sqrt{\pi}}}.
 $$
 
-Here $H_n$ is the Hermite polynomial of order $n$. The powers in $\alpha$ and $A_n$ are set by the Gaussian and its normalization. The handwritten expressions give $\alpha^2$ and $A_n^2$ in those places.
+Here $H_n$ is the Hermite polynomial of order $n$. The powers in $\gamma$ and $A_n$ are set by the Gaussian and its normalization. The handwritten expressions give $\gamma^2$ and $A_n^2$ in those places.
 
 | $n$ | $H_n(z)$ |
 | --- | --- |
@@ -332,21 +332,21 @@ e^x&=1+x+\frac{x^2}{2!}+\cdots=\sum_{n=0}^{\infty}\frac{x^n}{n!},\\
 \end{aligned}
 $$
 
-For example, $y''+y=0$ has solution $c_1\cos x+c_2\sin x$. To recover it by the series method, assume $y=\sum_{n=0}^{\infty}a_nx^n$.
+For example, $g''+g=0$ has solution $c_1\cos x+c_2\sin x$. To recover it by the series method, assume $g=\sum_{n=0}^{\infty}a_nx^n$.
 
 To find the recurrence for the $a_n$, differentiate the series term by term.
 
 $$
 \begin{aligned}
-y&=a_0+a_1x+a_2x^2+\cdots=\sum_{n=0}^{\infty}a_nx^n,\\
-y'&=a_1+2a_2x+3a_3x^2+4a_4x^3+\cdots
+g&=a_0+a_1x+a_2x^2+\cdots=\sum_{n=0}^{\infty}a_nx^n,\\
+g'&=a_1+2a_2x+3a_3x^2+4a_4x^3+\cdots
 =\sum_{n=1}^{\infty}na_nx^{n-1},\\
-y''&=2a_2+3\cdot2a_3x+4\cdot3a_4x^2+\cdots
+g''&=2a_2+3\cdot2a_3x+4\cdot3a_4x^2+\cdots
 =\sum_{n=2}^{\infty}n(n-1)a_nx^{n-2}.
 \end{aligned}
 $$
 
-In $y''+y=0$, use $n=k+2$ in the first sum and then rename $k$ to $n$.
+In $g''+g=0$, use $n=k+2$ in the first sum and then rename $k$ to $n$.
 
 $$
 \sum_{n=2}^{\infty}n(n-1)a_nx^{n-2}+\sum_{n=0}^{\infty}a_nx^n
@@ -355,7 +355,7 @@ $$
 
 Each coefficient vanishes, so $a_{n+2}=-a_n/[(n+2)(n+1)]$ for $n\ge 0$.
 
-Iterating the recurrence for $y''+y=0$ gives
+Iterating the recurrence for $g''+g=0$ gives
 
 $$
 \begin{aligned}
@@ -377,7 +377,7 @@ $$
 Substitute into the series to recover the cosine and sine.
 
 $$
-y=a_0\sum_{n=0}^{\infty}\frac{(-1)^nx^{2n}}{(2n)!}
+g=a_0\sum_{n=0}^{\infty}\frac{(-1)^nx^{2n}}{(2n)!}
 +a_1\sum_{n=0}^{\infty}\frac{(-1)^nx^{2n+1}}{(2n+1)!}
 =a_0\cos x+a_1\sin x.
 $$
@@ -546,7 +546,7 @@ For real $\signal{k}$, $e^{\pm\signal{k}x}$ are real and $e^{i\signal{k}x}$ is g
 
 ![[Kyle Kabasares - Quantum Mechanics - Finite Well Energy Reference Choices.png|**Fig. 39** Two energy conventions for a finite well. The first sets the exterior potential to zero, and the second sets the well floor to zero.]]
 
-In either convention, the interior solution is $Ce^{i\signal{k}x}+De^{-i\signal{k}x}$ with $\signal{k}=\sqrt{2m(\energy{E}-\energy{V})}/\hbar$ real. For the first well, $\energy{V}=0$ outside and the bound energy is negative. There $\signal{k'}=i\sqrt{2m\lvert\energy{E}\rvert}/\hbar$ and the exterior solution is $Ae^{-\signal{\kappa}x}+Be^{+\signal{\kappa}x}$. For the second well, the exterior potential exceeds $\energy{E}$ and the exterior wave number is
+In either convention, the interior solution is $Ce^{i\signal{k'}x}+De^{-i\signal{k'}x}$ with $\signal{k'}=\sqrt{2m(\energy{E}-\energy{V})}/\hbar$ real. For the first well, $\energy{V}=0$ outside and the bound energy is negative. There the exterior wave number is $\signal{k}=i\sqrt{2m\lvert\energy{E}\rvert}/\hbar=i\signal{\kappa}$ and the exterior solution is $Ae^{-\signal{\kappa}x}+Be^{+\signal{\kappa}x}$. For the second well, the exterior potential exceeds $\energy{E}$ and the exterior wave number is
 
 $$
 \frac{\sqrt{2m(\energy{E}-\energy{V})}}{\hbar}
@@ -565,10 +565,11 @@ Kyle Kabasares, *Quantum Mechanics (Physics 137, UC Merced 2015)*.
 | $\hbar$ | $\unit{J\,s}$ | Reduced Planck constant | Planck constant divided by $2\pi$. |
 | $\energy{V}$ | $\unit{J}$ | Potential energy | Position-dependent energy term in the Hamiltonian. |
 | $\energy{E}$ | $\unit{J}$ | Energy eigenvalue | Energy associated with a stationary state. |
-| $\Psi$ | $\unit{m^{-3/2}}$ in three dimensions | Position-space wavefunction | Probability amplitude for one particle. Its squared magnitude is a probability density. |
+| $\Psi$ | $\unit{m^{-1/2}}$ | Position-space wavefunction | Probability amplitude for one particle in one dimension. Its squared magnitude is a probability density. |
 | $\signal{k}$ | $\unit{m^{-1}}$ | Wave number | Spatial phase change per unit distance. |
 | $\signal{\omega}$ | $\unit{rad/s}$ | Angular frequency | Temporal phase change per unit time. |
 | $R$, $T$ | $1$ | Reflection and transmission coefficients | Ratios of reflected and transmitted flux magnitudes to the incident flux magnitude. |
 | $\signal{\kappa}$ | $\unit{m^{-1}}$ | Decay constant | Reciprocal of the amplitude penetration depth in the forbidden region. |
 | $\mechanical{k}$ | $\unit{N/m}$ | Spring constant | Proportionality between restoring force and displacement. |
-| $a_0$ | $\unit{m}$ | Bohr radius | Characteristic length in the hydrogen radial wavefunctions. |
+| $\gamma$ | $\unit{m^{-1}}$ | Oscillator scale parameter | Inverse length $\gamma=\sqrt{m\signal{\omega}/\hbar}$ in the Hermite wavefunctions. |
+| $\alpha$ | $\unit{J\,m}$ | Delta strength | Strength of the point interaction $\energy{V(x)}=+\alpha\delta(x)$. |

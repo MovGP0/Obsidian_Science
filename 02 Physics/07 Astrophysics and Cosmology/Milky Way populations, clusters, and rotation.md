@@ -7,7 +7,7 @@ title: "Milky Way populations, clusters, and rotation"
 
 ## Worked lecture material
 
-The lecture estimates a Milky Way star formation rate of about $3\mechanical{M}_{\odot}$ per year. The IMF specifies how that mass is distributed among newly formed stars.
+The lecture estimates a Milky Way star formation rate of about $3\mechanical{M}_{\odot}$ per year. A more recent estimate is about $1.6$–$2\mechanical{M}_{\odot}$ per year (Licquia and Newman 2015). The IMF specifies how that mass is distributed among newly formed stars.
 
 ##### Spiral galaxies
 
@@ -52,7 +52,7 @@ n(\mechanical{R},\mechanical{z},S)
 \exp\left[-\frac{|\mechanical{z}|}{\mechanical{h}_z(S)}\right].
 $$
 
-The radial scale length $\mechanical{h}_R$ and vertical scale height $\mechanical{h}_z$ describe stars of type $S$. The lecture gives a radial scale length of about $\quantity{4}{kpc}$ and notes that the scale height depends on stellar type. At the Sun’s location, $\mechanical{r}\sim\quantity{8}{kpc}$, the thin disk rotates at about $\quantity{200\text{–}220}{km\cdot s^{-1}}$.
+The radial scale length $\mechanical{h}_R$ and vertical scale height $\mechanical{h}_z$ describe stars of type $S$. The lecture gives a radial scale length of about $\quantity{4}{kpc}$ and notes that the scale height depends on stellar type. More recent estimates give about $\quantity{2.5\text{–}3}{kpc}$ (Bland-Hawthorn and Gerhard 2016). At the Sun’s location, $\mechanical{r}\sim\quantity{8}{kpc}$ (GRAVITY Collaboration 2019: $\mechanical{R}_0\simeq\quantity{8.18}{kpc}$), the thin disk rotates at about $\quantity{200\text{–}220}{km\cdot s^{-1}}$.
 
 ##### The thick disk
 
@@ -242,31 +242,19 @@ Kyle Kabasares, *Intro to Astrophysics (Physics 240A, UC Irvine 2018)*.
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
 | $\mechanical{M}_{\odot}$ | $\unit{\mathrm{g}}$ | Solar mass | Mass of the Sun. |
-| $\mechanical{d}$ | $\unit{cm}$ | Distance to the source | Distance from the observer to the spherical source. |
+| $\mechanical{d}$ | $\unit{kpc}$ | Distance to the source | Distance from the Sun to a nearby star or gas parcel. |
 | $\signal{\lambda}$ | $\unit{cm}$ | Wavelength | Wavelength of the radiation. |
-| $h$ | $\unit{erg\cdot s}$ | Planck constant | Relates photon energy to frequency. |
-| $\sigma$ | $\unit{erg\cdot s^{-1}\cdot cm^{-2}\cdot K^{-4}}$ | Stefan–Boltzmann constant | Relates blackbody flux to the fourth power of temperature. |
-| $\mechanical{r}$ | $\unit{cm}$ | Emitter radius | Radius of the spherical emitter. |
-| $b$ | 1 | Softening constant | Sets the low-flux scale of the inverse hyperbolic sine magnitude. |
-| $A$ | 1 | Extinction | Increase in apparent magnitude caused by attenuation. |
-| $n$ | $\unit{cm^{-3}}$ | Grain number density | Number of dust grains per unit volume. |
-| $\mechanical{r}$ | — | Profile radius | Radial coordinate in the surface brightness sketch. |
-| $\theta$ | $\unit{rad}$ | Position angle | Orientation on the sky measured from north toward east. |
-| $\theta$ | $\unit{rad}$ | Angular resolution | Minimum angular separation in the Rayleigh criterion. |
-| $\alpha$ | $\unit{h}$ | Right ascension | Celestial coordinate measured eastward along the celestial equator. |
+| $\mechanical{r}$ | $\unit{kpc}$ | Galactocentric radius | Distance from the Galactic center. |
+| $\theta$ | $\unit{rad}$ | Cylindrical azimuth | Azimuthal angle in the Galactic cylindrical coordinates. |
 | $\ell,\,b$ | $\unit{deg}$ | Galactic longitude and latitude | Angles that specify a direction in the Galactic coordinate system. |
 | $\mechanical{R}_0$ | $\unit{kpc}$ | Solar Galactocentric distance | Distance from the Sun to the Galactic center. |
-| $\alpha$ | $\unit{arcsec}$ | Parallax angle | Angular shift due to a one-AU observing baseline. |
-| $\lambda$ | $\unit{rad}$ | Convergent-point angle | Angle between the line of sight to the cluster member and the direction of the shared velocity. |
-| $i$ | $\unit{deg}$ | Inclination | Angle between the orbital axis and the line of sight. |
 | $\mechanical{\omega}$ | $\unit{rad\cdot s^{-1}}$ | Orbital angular speed | Rate of change of orbital phase. |
 | $G$ | $\unit{cm^3\cdot g^{-1}\cdot s^{-2}}$ | Gravitational constant | Constant in Newton’s law of gravitation. |
-| $\mechanical{M}$ | $\unit{g}$ | Stellar mass | Mass in the main-sequence scaling relations. |
-| $\mechanical{R}$ | $\unit{km}$ | Stellar radius | Radius in the main-sequence scaling relation. |
+| $\mechanical{M}$ | $\unit{g}$ | Central mass | Mass concentrated at the center in the Keplerian case. |
+| $\mechanical{R}$, $\mechanical{z}$ | $\unit{kpc}$ | Cylindrical radius and height | Galactocentric radius in the disk plane and height above the midplane. |
 | $[\mathrm{Fe}/\mathrm{H}]$ | 1 | Iron abundance index | Base-ten logarithm of the iron-to-hydrogen ratio relative to the solar value. |
-| $\omega$ | $\unit{rad}$ | Argument of periastron | Orientation of periastron in the orbital plane. |
-| $n$ | $\unit{pc^{-3}}$ | Stellar number density | Number of stars per unit volume. |
-| $\sigma$ | 1 | Absolute-magnitude dispersion | Standard deviation of the Gaussian magnitude distribution. |
+| $n$, $n_0$ | $\unit{pc^{-3}}$ | Stellar number density | Number of stars of type $S$ per unit volume and its central value. |
+| $\mechanical{h}_R$, $\mechanical{h}_z$ | $\unit{kpc}$ | Disk scale length and scale height | Radial and vertical exponential scales of the thin disk. |
 | $\mechanical{\sigma}$ | $\unit{km\cdot s^{-1}}$ | Velocity dispersion | Standard deviation of velocities along the chosen direction. |
 | $\mechanical{\sigma}_z$ | $\unit{km\cdot s^{-1}}$ | Vertical velocity dispersion | Spread of stellar velocities perpendicular to the disk. |
 | $[a/b]$ | 1 | Relative elemental abundance | Logarithm of the number ratio of elements $a$ and $b$ relative to the solar ratio. |
@@ -276,4 +264,5 @@ Kyle Kabasares, *Intro to Astrophysics (Physics 240A, UC Irvine 2018)*.
 | $\mechanical{\omega}_0$ | $\unit{rad\cdot s^{-1}}$ | Solar orbital angular speed | Angular speed of circular rotation at the Sun’s location. |
 | $A$ | $\unit{km\cdot s^{-1}\cdot kpc^{-1}}$ | First Oort constant | Local rotational shear inferred from the longitude dependence of radial velocities. |
 | $B$ | $\unit{km\cdot s^{-1}\cdot kpc^{-1}}$ | Second Oort constant | Offset in the nearby tangential velocity per unit distance. |
-| $\alpha$ | $\unit{rad}$ | Scattering angle | Small change in the direction of the moving star. |
+| $\alpha$, $\beta$ | $\unit{rad}$ | Triangle angles | Angles in the Sun–parcel–Galactic center triangle, with $\beta=\alpha+90^\circ$. |
+| $\mechanical{v}$, $\mechanical{v}_r$, $\mechanical{v}_t$ | $\unit{km\cdot s^{-1}}$ | Circular, radial, and tangential velocities | Circular speed of the parcel and its line-of-sight and transverse components relative to the Sun. |

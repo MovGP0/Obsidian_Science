@@ -1,0 +1,43 @@
+=== 01 Mathematics/07 Complex Numbers and Complex Analysis/01 Complex Arithmetic, Polar Form, and Roots/Complex arithmetic and polar form problems.md
+- [Correctness] Exercise 4 is circular: the middle expression already replaces $\overline{(2-5i)+(3+2i)}$ by $(2+5i)+(3-2i)$, i.e. it assumes the sum rule it should check; compute $\overline{5-3i}=5+3i$ and compare with $(2+5i)+(3-2i)=5+3i$.
+- [Correctness] Symbol clash: $u$ is the temperature/harmonic function ($\thermal{u}$, listed in the table) but also the real part of $z^{-1}=u+iv$ in both inverse derivations; rename the inverse components (for example $p+iq$).
+
+=== 01 Mathematics/07 Complex Numbers and Complex Analysis/01 Complex Arithmetic, Polar Form, and Roots/Euler's Formula.md
+- [Correctness] The callout "The +/- depends on the chosen coordinate system" is wrong: $e^{i\pi/2}=i$, $e^{i3\pi/2}=-i$ etc. follow from Euler's formula and do not depend on any convention; only the drawing orientation (counterclockwise = positive angle) is conventional.
+- [Correctness] The image line "[![obsidian|300](https://upload.wikimedia.org/...)]" is malformed (extra outer brackets, alt text used as size) and does not render as intended; use a valid embed, preferably a local file in `Attachements`.
+
+=== 01 Mathematics/07 Complex Numbers and Complex Analysis/02 Holomorphic Functions and Contour Integration/Complex analysis - Catalogue Guide.md
+- [Correctness] "[[Planned Topics#14. Complex analysis|the detailed catalogue]]" is a broken link: no note "Planned Topics" exists in the vault (only a backup copy under `.temp`); remove it or point it to the current catalogue note.
+
+=== 01 Mathematics/07 Complex Numbers and Complex Analysis/02 Holomorphic Functions and Contour Integration/Complex line integrals and primitives.md
+- [Correctness] "Components of a curve": defining a smooth curve only as "one with continuous derivative" is incomplete. A smooth arc also needs $z'(t)\ne0$, and without that condition a $C^1$ parametrization can trace the cusp shown in Fig. 92, which the note presents as non-smooth.
+
+=== 01 Mathematics/07 Complex Numbers and Complex Analysis/03 Laurent Series, Residues, and Conformal Maps/Residues and real integrals by contour deformation.md
+- [Correctness] Symbol clash: $b_n$ are the principal-part Laurent coefficients throughout, but in "Removable singularities" the Taylor coefficients of $g=(z-z_0)^2f$ are also called $b_0,b_1,b_2,\ldots$ (so "$f(z_0)=b_2$" collides with the pole-order coefficient $b_2$); likewise $c_n$ is the two-sided Laurent coefficient in (4) but the Taylor coefficient of $H$ in "Computing residues", where "$\operatorname{Res}=c_{m-1}$" then conflicts with (4) ($c_{-1}$ is the residue). Rename the Taylor coefficients, for example $h_k$, and keep one residue notation ($\operatorname{Res}_{z=z_0}f$) instead of mixing in $\operatorname{Res}[f,r_k]$ and $\operatorname{Res}(f;z_k)$.
+
+=== 01 Mathematics/07 Complex Numbers and Complex Analysis/03 Laurent Series, Residues, and Conformal Maps/Taylor expansions and Laurent annuli.md
+- [Correctness] In "Region $D_2$" the sentence "combine it with the inverse-power expansion from [[#Region $D_1$|the section on Region $D_1$]]" points to the wrong place: Region $D_1$ contains only nonnegative-power expansions; the inverse-power expansion of $1/(z-1)$ is the display immediately above in Region $D_2$, so drop the link or say "with the expansion of $1/(z-1)$ above".
+
+=== 01 Mathematics/05 Multivariable and Vector Calculus/02 Constrained Extrema and Multiple Integrals/12.07 Multiple integrals.md
+- [Correctness] The source link after "Set the spherical bounds before integrating" points to [[Multiple integrals and changes of variables#Fubini's theorem]]. The matching material (the cone $z=\sqrt3\,r$, $\phi\le\pi/6$) is under "#Mass inside a cone and a sphere" or "#15.9 Triple integrals in spherical coordinates", so retarget it.
+
+=== 01 Mathematics/05 Multivariable and Vector Calculus/02 Constrained Extrema and Multiple Integrals/Multiple integrals and changes of variables.md
+- [Correctness] Symbol clash: $\rho$ is the spherical radial coordinate from "15.9" onward and also the mass density $\mechanical{\rho}(x,y,z)$ (and the table row). In "Mass inside a cone and a sphere" the density is written $3-\rho^2/5$ with $\rho$ as the radius. Rename the density (e.g. $\mechanical{\mu}$ or $\delta$) and update the table.
+
+=== 01 Mathematics/05 Multivariable and Vector Calculus/02 Constrained Extrema and Multiple Integrals/Partial derivatives and constrained extrema.md
+- [Correctness] The physical-quantities table describes $\mechanical{\theta}$ as the "Angle swept by the rolling circle", but this note has no rolling circle. It also lists symbols the note never uses ($\mechanical{a}$ scalar, $\mechanical{v}$, $\mechanical{v}_0$, $\mechanical{x}$, $\mechanical{y}$ as "marked point" coordinates). Trim the table to $\mathbf r,\mathbf v,\mathbf a,\theta,\phi,\mathbf v_0$ components and $x_0,y_0,z_0$.
+- [Correctness] Symbol clash: in "Tangent planes and linear approximation" the tangent-plane function is named $\pi(x,y)$, but the note also uses the constant $\pi$ (angles $3\pi/4$, $\pi/4$). Rename it, e.g. $L(x,y)$.
+
+=== 01 Mathematics/05 Multivariable and Vector Calculus/03 Vector Fields, Gradients, Divergence, and Curl/Gradient.md
+- [Correctness] The opening line "Measures the change of density of a vector field" and the title "Gradient ∇F" are wrong. The gradient acts on a scalar field $f$ and gives a vector field, as the table itself states. Change them to "Direction and rate of steepest increase of a scalar field" and "Gradient ∇f".
+- [Correctness] "Electric field as the gradient of voltage" is missing the sign. In electrostatics $\mathbf E=-\nabla V$.
+
+=== 01 Mathematics/05 Multivariable and Vector Calculus/03 Vector Fields, Gradients, Divergence, and Curl/Vector analysis and field theory - Catalogue Guide.md
+- [Correctness] The link [[Planned Topics#13. Vector analysis and field theory|the detailed catalogue]] is broken. "Planned Topics.md" exists only under `.temp/` backups, not in the vault. Remove the link or point it at an existing catalogue note.
+
+=== 01 Mathematics/05 Multivariable and Vector Calculus/04 Line Integrals, Surface Integrals, and Integral Theorems/13.07 Integral theorems.md
+- [Correctness] The source link [[Line integrals, work, and conservative fields#Line integrals|Math 23]] under "Turn circulation into an area integral" points to the line-integral section. The Green's-theorem example with $(-y,x)$ is in [[Green’s theorem, surface integrals, and flux#16.4 Green's theorem]], so retarget it.
+
+=== 01 Mathematics/05 Multivariable and Vector Calculus/04 Line Integrals, Surface Integrals, and Integral Theorems/Line integrals, work, and conservative fields.md
+- [Correctness] Work is an energy quantity, but it is written $\mechanical{W}$ here, while the companion note [[Line integrals and scalar potentials]] uses $\energy{W}$. Use $\energy{W}$ in the text and the table.
+

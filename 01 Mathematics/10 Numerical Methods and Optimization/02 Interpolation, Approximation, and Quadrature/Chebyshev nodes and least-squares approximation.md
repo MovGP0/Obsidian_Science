@@ -250,9 +250,3 @@ $$
 ## Source
 
 Kyle Kabasares, *Numerical Analysis (Math 130, UC Merced 2016)*.
-
-## Physical quantities
-
-| Symbol | Unit | Quantity | Description |
-| --- | --- | --- | --- |
-| $x$ | $\unit{s}$ | Time | Independent variable in the particle example. The recorded values have no specified unit. |

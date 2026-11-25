@@ -1,0 +1,43 @@
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/01 Review of Thermodynamics/Thermodynamic equilibrium, work, and the fundamental postulates.md
+- FIXED | Postulate II margin: Delta G=H-T Delta S and Delta G_univ>0 | Wrote Delta G=Delta H-T Delta S at constant T and stated that Delta G_univ>0 is not a criterion; at fixed T,P spontaneity is Delta G_sys<0, equivalent to Delta S_univ=-Delta G_sys/T>0
+- FIXED | Table lists unused or clashing symbols and misses used ones | Removed vec x, Boltzmann E, number density n, Curie T_c, Lande g, fugacity z, degeneracy g, fine-structure alpha rows; added T_0, T_f, T_h, T_c (reservoirs), P_0, V_0, F_int, F_ext
+- FIXED | Symbol clashes W (work vs multiplicity) and x (piston coordinate vs V/V_0) | Multiplicity renamed Omega (S=k_B ln Omega, with a note on the notebook W, table row updated); substitution renamed xi=V/V_0 in the integral and power-rule line
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/02 Foundations of Statistical Mechanics/02.03.03 Geometric Interpretation - Incompressibility.md
+- FIXED | Fig. 2.2 map called a shear but is a general area-preserving map | Checked edge vectors (1,0.2),(0.25,1.05): det=1 but not a shear; text and caption now say area-preserving (determinant-one) linear deformation; figure not redrawn
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/02 Foundations of Statistical Mechanics/02.08.03 Example 3 - Two-Level System and Negative Temperature.md
+- FIXED | Table rows N (oscillators) and E (Delta E) do not fit the note | N row now Spin count; E row now total energy of the spin system
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/03 Microcanonical Ensemble/03.01.02 Ergodic Hypothesis and Microcanonical Density.md
+- FIXED | Table lists unused time t | Removed the t row (only the word long-time occurs, no symbol)
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/03 Microcanonical Ensemble/03.08 Worked Examples.md
+- FIXED | h_i Hamiltonian clashes with Planck h; theta and phi coloured differently | Renamed single-molecule Hamiltonian to \energy{\mathcal H}_i (equation and table); made phi uncoloured like theta in text, subscripts, and table
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/03 Microcanonical Ensemble/Phase-space counting, ideal gases, and Liouville’s theorem.md
+- PARTLY | Table meanings wrong and unused symbols | Most right: removed z, q, j, Ising h, W, Q_rev, P_int/P_ext, vec r, molar v, mechanical omega rows; u now radiation energy density (J m^-3); Omega now shell count; added Omega_D and Omega_G; but P_i IS used (block densities), so its row was corrected rather than removed
+- PARTLY | n clashes, wrong earlier/later sentence, omega and N macros | Sentence corrected to later; block count renamed K; oscillator omega changed to \signal{\omega} with table merged; N left uncoloured because the whole note uses plain N consistently (recolouring would be a note-wide style rewrite)
+- FIXED | Gibbs bullet Omega(T,V,N) should be grand potential Omega(T,V,mu) and clashes with multiplicity | Now \energy{\Omega}_G(T,V,mu) with a remark that the notebook writes (T,V,N); table row added
+- FIXED | Dates and reading-list name | Added that Boltzmann published the transport equation and H-theorem in 1872, that Pauli published the proof in 1940, and that Carder is almost certainly Kardar, Statistical Physics of Particles
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/04 Canonical Ensemble/04.01.02 Derivation of the Canonical Distribution.md
+- FIXED | varepsilon described as level spacing | Row now Bath energy, the energy argument of Omega_B
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/04 Canonical Ensemble/04.05.01 Formal Proof.md
+- FIXED | U(T) without energy macro | Wrapped as {\energy{U}}({\thermal{T}})
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/04 Canonical Ensemble/04.07.02 Quantum Oscillator.md
+- FIXED | x=beta hbar omega vs axis x=k_B T/(hbar omega) | Fig. 4.4 axis label text changed to tau = kT/(hbar omega); plotted curves unchanged; not checked in Obsidian reading mode
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/04 Canonical Ensemble/Canonical density matrices and imaginary-time kernels.md
+- FIXED | Free-particle links point to Entropy heading | Links now point to Position representation and imaginary time (equation) and Free particle kernel (solution and trace)
+- FIXED | Oscillator kernel link points to Canonical ensemble kernels and has stray dot | Link now to One-dimensional quantum harmonic oscillator, stray dot removed
+- FIXED | A used for observable, Helmholtz energy, and Gaussian prefactor | Observable renamed \hat O in the thermal-average equation; Gaussian prefactor renamed \mathcal N; Helmholtz A kept
+- FIXED | Table lists unused symbols or wrong meanings | Removed h, P_int/P_ext, both n rows, theta/phi, both g rows, q; x row now kernel positions; H row now Hamiltonian only; Omega row description corrected
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/04 Canonical Ensemble/Classical canonical gases and spin magnetization.md
+- FIXED | Hamiltonian H vs field H clash | Field renamed \magnetic{B} throughout (including chi derivative at B=0) with a sentence that the notebook writes H; table row updated
+- FIXED | Table errors (v, j, z, n, P_int/ext, q_i p_i, g, c) | v now particle speed; removed j, z, both n, q_i/p_i, degeneracy g rows; pressure row trimmed; H row Hamiltonian only; c row now Gaussian-unit moment constant
+- FIXED | Amontons extrapolation gave about -240 C, not -273 C | Kept notebook value and added that Amontons got roughly -240 C and the -273 C value came from later, more precise gas data
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/05 Grand Canonical Ensemble/05.01.03 Physical Interpretation.md
+- FIXED | Fig. 5.1 labels use Greek subscript beta (U+1D66) | Replaced with HTML <sub>B</sub> (and <sub>A</sub> for the matching A labels, as used elsewhere in the vault); not checked in Obsidian reading mode
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/05 Grand Canonical Ensemble/05.07 Solved Examples.md
+- FIXED | Fugacity z clashes with z_rot, z_osc, z_int | Renamed single-particle partition functions to q_rot, q_osc, q_int (all occurrences)
+- FIXED | N_site vs n_site and Delta row meaning | Example 5.5 now uses n_site; Delta row now positive spacing between the two internal levels
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/05 Grand Canonical Ensemble/05.09 Summary.md
+- FIXED | Table lists unused entropy S | Removed the S row (S occurs only as a derivative subscript)
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/05 Grand Canonical Ensemble/Grand potentials, exchange symmetry, and occupation numbers.md
+- FIXED | Fermi 1926 and Pauli 1940 dates | Added that Fermi published his statistics in 1926 and Pauli published the theorem in 1940 (Phys. Rev. 58, 716), next to the notebook dates
+- FIXED | Omega vs grand potential, H vs field, alpha meaning | Grand potential renamed \energy{\Phi} (as in 05.09) with an explanatory sentence; field renamed \magnetic{B} with a note on the notebook H; alpha row now exchange phase
+- FIXED | Table lists unused symbols or wrong meanings | Removed P_int/P_ext, both n, q_i/p_i, F, both g, j, fine-structure alpha, stellar mass rows; H row Hamiltonian only; Omega and c descriptions corrected

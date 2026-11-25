@@ -22,7 +22,7 @@ $$\begin{bmatrix}
 \end{bmatrix} = \frac{1}{\sqrt{2}} \begin{bmatrix}
 1 \\ i
 \end{bmatrix}$$
-When we apply this matrix again, we get the original polarization direction, but with a half cycle phase change:
+When we apply this matrix again, we get the anti-diagonal polarization, which is perpendicular to the original diagonal polarization. Two passes through the quarter waveplate act as a half waveplate:
 $$Q L = A$$
 $$\begin{bmatrix}
 1 & 0 \\ 0 & i
@@ -78,8 +78,8 @@ $$G = \begin{bmatrix}
 \sin 45° & \cos 45°
 \end{bmatrix}
 = \begin{bmatrix}
-\cos \frac{π}{2} & -\sin \frac{π}{2} \\
-\sin \frac{π}{2} & \cos \frac{π}{2}
+\cos \frac{π}{4} & -\sin \frac{π}{4} \\
+\sin \frac{π}{4} & \cos \frac{π}{4}
 \end{bmatrix}
 = \begin{bmatrix} \frac{1}{√{2}} & -\frac{1}{√{2}}\\ \frac{1}{√{2}} & \frac{1}{√{2}} \end{bmatrix}
 = \frac{1}{\sqrt{2}} \begin{bmatrix} 1 & -1 \\ 1 & 1 \end{bmatrix}$$
@@ -97,7 +97,7 @@ $$= \frac{1}{2} \begin{bmatrix}
 \end{bmatrix}$$
 $$= \frac{1}{\sqrt{2}} \begin{bmatrix}
 1 & i \\ i & 1
-\end{bmatrix} {\color{lightgrey} e^{i \frac{π}{4}}{4}}$$
+\end{bmatrix} {\color{lightgrey} e^{i \frac{π}{4}}}$$
 
 This new equation now represents the Waveplate angled at 45°.
 

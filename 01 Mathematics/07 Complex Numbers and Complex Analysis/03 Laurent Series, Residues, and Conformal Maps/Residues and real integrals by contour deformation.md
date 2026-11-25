@@ -214,7 +214,7 @@ If $f$ and $g$ are analytic at $\alpha$, $f(\alpha)=g(\alpha)=0$, and $g'(\alpha
 
 **Applications of residues**
 
-The lecture opens with the residue theorem $\int_C f(z)\,dz=2\pi i\sum_k\operatorname{Res}[f,r_k]$, where the sum is over the enclosed singularities for a positively oriented simple closed contour.
+The lecture opens with the residue theorem $\int_C f(z)\,dz=2\pi i\sum_k\operatorname{Res}_{z=r_k}f(z)$, where the sum is over the enclosed singularities for a positively oriented simple closed contour.
 
 1. The residue at $r_k$ is $b_1$ in the Laurent expansion
 
@@ -222,12 +222,12 @@ The lecture opens with the residue theorem $\int_C f(z)\,dz=2\pi i\sum_k\operato
    f(z)=\sum_{n=0}^{\infty}a_n(z-r_k)^n+\sum_{n=1}^{\infty}b_n(z-r_k)^{-n}.
    $$
 
-2. If $r_k$ is a simple pole, write $f(z)=g(z)/(z-r_k)$ with $g$ analytic at $r_k$. Then $\operatorname{Res}[f,r_k]=\lim_{z\to r_k}(z-r_k)f(z)$.
+2. If $r_k$ is a simple pole, write $f(z)=g(z)/(z-r_k)$ with $g$ analytic at $r_k$. Then $\operatorname{Res}_{z=r_k}f(z)=\lim_{z\to r_k}(z-r_k)f(z)$.
 
 For a pole of order $k$ at $r_0$, the principal part ends at the nonzero coefficient of $(z-r_0)^{-k}$. Then
 
 $$
-\operatorname{Res}[f,r_0]
+\operatorname{Res}_{z=r_0}f(z)
 =\frac1{(k-1)!}\lim_{z\to r_0}\frac{d^{k-1}}{dz^{k-1}}
 \bigl[(z-r_0)^k f(z)\bigr].
 $$
@@ -285,13 +285,13 @@ Set $f(z)=z/(z^3-8)$. The denominator factors as $(z-2)(z^2+2z+4)$, with roots $
 For sufficiently large $R$ and small $\rho$, the residue theorem gives
 
 $$
-\int_C f(z)\,dz=2\pi i\operatorname{Res}[f,z_+].
+\int_C f(z)\,dz=2\pi i\operatorname{Res}_{z=z_+}f(z).
 $$
 
 To find the residue, factor out $z-z_+$ and evaluate the remaining factor at $z_+$. The handwritten factorization later loses the minus sign on the real part of $z_-$. The roots listed at the top of the page give
 
 $$
-\operatorname{Res}[f,z_+]
+\operatorname{Res}_{z=z_+}f(z)
 =\left.\frac{z}{(z-2)(z-z_-)}\right|_{z=z_+}
 =\frac{-1-i\sqrt3}{12}.
 $$
@@ -304,7 +304,7 @@ $$
 +\int_{C_R} f(z)\,dz+\int_{C_\rho} f(z)\,dz.
 $$
 
-The indentation satisfies $\lim_{\rho\to0^+}\int_{C_\rho}f(z)\,dz=-\pi i\operatorname{Res}[f,2]$. The notes turn to the ML inequality to show that the outer arc contribution tends to zero as $R\to\infty$.
+The indentation satisfies $\lim_{\rho\to0^+}\int_{C_\rho}f(z)\,dz=-\pi i\operatorname{Res}_{z=2}f(z)$. The notes turn to the ML inequality to show that the outer arc contribution tends to zero as $R\to\infty$.
 
 For $f(z)=z/(z^3-8)$ and $R>2$, the reverse triangle inequality bounds $|f(z)|\le R/(R^3-8)$ on the outer arc. Its length is $\pi R$, so
 
@@ -316,11 +316,11 @@ $$
 
 ![[Kyle Kabasares - Complex Variables - Orientation of the principal value contour.png|**Fig. 140** The outer arc runs from $R$ back to $-R$. The real segments and the small clockwise arc run from left to right.]]
 
-The contour integral is $2\pi i\operatorname{Res}[f,-1+i\sqrt3]$. Subtracting the indentation contribution $-\pi i\operatorname{Res}[f,2]$ gives the formula recorded in the notes.
+The contour integral is $2\pi i\operatorname{Res}_{z=-1+i\sqrt3}f(z)$. Subtracting the indentation contribution $-\pi i\operatorname{Res}_{z=2}f(z)$ gives the formula recorded in the notes.
 
 $$
 \operatorname{PV}\int_{-\infty}^{\infty}\frac{x}{x^3-8}\,dx
-=2\pi i\operatorname{Res}[f,-1+i\sqrt3]+\pi i\operatorname{Res}[f,2].
+=2\pi i\operatorname{Res}_{z=-1+i\sqrt3}f(z)+\pi i\operatorname{Res}_{z=2}f(z).
 $$
 
 The boxed rule assigns $2\pi i$ times the enclosed residue and $\pi i$ times the simple residue on the real axis when the large arc vanishes and the indentation is taken above the pole.
@@ -539,7 +539,7 @@ The principal part of a Laurent series consists of its negative-power terms.
 Suppose $f$ is analytic on a simply connected domain $D$ except at finitely many isolated singularities $z_1,\ldots,z_n$ in $D$. Let $\gamma$ be a positively oriented, piecewise smooth, simple closed curve in $D$ that passes through none of the singularities. Then
 
 $$
-\int_\gamma f(z)\,dz=2\pi i\sum_{z_k\ \mathrm{inside}\ \gamma}\operatorname{Res}(f;z_k).
+\int_\gamma f(z)\,dz=2\pi i\sum_{z_k\ \mathrm{inside}\ \gamma}\operatorname{Res}_{z=z_k}f(z).
 $$
 
 **Proof**
@@ -554,7 +554,7 @@ $$
 \int_\gamma f(z)\,dz-\sum_k\int_{\gamma_k}f(z)\,dz=0.
 $$
 
-The Laurent coefficient formula on each small circle $|w-z_k|=s$ gives $\operatorname{Res}(f;z_k)=(2\pi i)^{-1}\int_{\gamma_k} f(w)\,dw$. Substitution gives the boxed formula with the sum restricted to the enclosed singularities.
+The Laurent coefficient formula on each small circle $|w-z_k|=s$ gives $\operatorname{Res}_{z=z_k}f(z)=(2\pi i)^{-1}\int_{\gamma_k} f(w)\,dw$. Substitution gives the boxed formula with the sum restricted to the enclosed singularities.
 
 ##### Integrals of rational functions
 
@@ -594,7 +594,7 @@ The ML inequality bounds the arc integral by a constant times $\pi R/R^2$, which
 
 $$
 \int_{-\infty}^{\infty}\frac{P(x)}{Q(x)}\,dx
-=2\pi i\sum_{\operatorname{Im}z_k>0}\operatorname{Res}(P/Q;z_k).
+=2\pi i\sum_{\operatorname{Im}z_k>0}\operatorname{Res}_{z=z_k}(P/Q).
 $$
 
 **Next example**
@@ -613,8 +613,8 @@ The zeros of $Q$ are $\pm i,\pm2i$, of which $i$ and $2i$ lie in the upper half-
 
 $$
 \begin{aligned}
-\operatorname{Res}(P/Q;i)&=\frac{P(i)}{Q'(i)}=\frac{-1}{3(2i)}=-\frac1{6i},\\
-\operatorname{Res}(P/Q;2i)&=\frac{P(2i)}{Q'(2i)}=\frac{-4}{(-3)(4i)}=\frac1{3i}.
+\operatorname{Res}_{z=i}(P/Q)&=\frac{P(i)}{Q'(i)}=\frac{-1}{3(2i)}=-\frac1{6i},\\
+\operatorname{Res}_{z=2i}(P/Q)&=\frac{P(2i)}{Q'(2i)}=\frac{-4}{(-3)(4i)}=\frac1{3i}.
 \end{aligned}
 $$
 
@@ -628,14 +628,14 @@ $$
 
 ##### Computing residues
 
-At a pole of order $m$, write $f(z)=H(z)/(z-z_0)^m$ with $H$ analytic for $|z-z_0|<r$. Its power series is $H(z)=\sum_{k=0}^{\infty}c_k(z-z_0)^k$. Dividing by $(z-z_0)^m$ gives
+At a pole of order $m$, write $f(z)=H(z)/(z-z_0)^m$ with $H$ analytic for $|z-z_0|<r$. Its power series is $H(z)=\sum_{k=0}^{\infty}h_k(z-z_0)^k$. Dividing by $(z-z_0)^m$ gives
 
 $$
-f(z)=\frac{c_0}{(z-z_0)^m}+\cdots+\frac{c_{m-1}}{z-z_0}
-+c_m+c_{m+1}(z-z_0)+\cdots
+f(z)=\frac{h_0}{(z-z_0)^m}+\cdots+\frac{h_{m-1}}{z-z_0}
++h_m+h_{m+1}(z-z_0)+\cdots
 $$
 
-for $0<|z-z_0|<r$. The terms through $c_{m-1}/(z-z_0)$ have negative powers of $z-z_0$.
+for $0<|z-z_0|<r$. The terms through $h_{m-1}/(z-z_0)$ have negative powers of $z-z_0$.
 
 The residue is $(2\pi i)^{-1}\int_{|w-z_0|=s}f(w)\,dw$ for a positively oriented circle with $0<s<r$. Substitute the Laurent expansion and consider the contribution of each power separately, distinguishing $j=-1$ from $j\ne-1$ in
 
@@ -658,17 +658,17 @@ $$
 
 When $j=-1$, the same parametrization gives $(2\pi)^{-1}\int_0^{2\pi}d\theta=1$. A later handwritten line drops the minus sign on the index of the surviving power. The calculation above selects $(z-z_0)^{-1}$.
 
-For $f(z)=H(z)/(z-z_0)^m$, this power has coefficient $c_{m-1}$ from the Taylor expansion of $H$. In fact,
+For $f(z)=H(z)/(z-z_0)^m$, this power has coefficient $h_{m-1}$ from the Taylor expansion of $H$. In fact,
 
 $$
-H(z)=c_0+c_1(z-z_0)+c_2(z-z_0)^2+\cdots,\qquad
-H'(z)=c_1+2c_2(z-z_0)+\cdots.
+H(z)=h_0+h_1(z-z_0)+h_2(z-z_0)^2+\cdots,\qquad
+H'(z)=h_1+2h_2(z-z_0)+\cdots.
 $$
 
-Taking $m-1$ derivatives and evaluating at $z_0$ leaves $(m-1)!c_{m-1}$. Therefore
+Taking $m-1$ derivatives and evaluating at $z_0$ leaves $(m-1)!h_{m-1}$. Therefore
 
 $$
-\operatorname{Res}(f;z_0)=c_{m-1}=\frac{H^{(m-1)}(z_0)}{(m-1)!}.
+\operatorname{Res}_{z=z_0}f(z)=h_{m-1}=\frac{H^{(m-1)}(z_0)}{(m-1)!}.
 $$
 
 **Example.** Find the residue of $e^z/(z-1)^3$ at $z_0=1$. Here $H(z)=e^z$. The notes recall $e^z=\sum_{n=0}^{\infty}z^n/n!$ and begin the expansion about $1$ by writing $e^z=e\,e^{z-1}$.
@@ -683,7 +683,7 @@ $$
 
 The residue at $1$ is $e/2$.
 
-**Example.** Let $F$ and $G$ be analytic on $|z-z_0|<r_0$, with $G(z_0)=0$ and $G'(z_0)\ne0$. Find $\operatorname{Res}(F/G;z_0)$. Write $G(z)=(z-z_0)P(z)$ with $P$ analytic and nonzero at $z_0$. The handwriting attributes the factorization to the fundamental theorem of algebra. Here it follows from the Taylor expansion of $G$ at its simple zero. In particular,
+**Example.** Let $F$ and $G$ be analytic on $|z-z_0|<r_0$, with $G(z_0)=0$ and $G'(z_0)\ne0$. Find $\operatorname{Res}_{z=z_0}(F/G)$. Write $G(z)=(z-z_0)P(z)$ with $P$ analytic and nonzero at $z_0$. The handwriting attributes the factorization to the fundamental theorem of algebra. Here it follows from the Taylor expansion of $G$ at its simple zero. In particular,
 
 $$
 P(z_0)=\lim_{z\to z_0}\frac{G(z)}{z-z_0}
@@ -717,19 +717,19 @@ $$
 =\lim_{z\to z_0}(z-z_0)f(z)=0.
 $$
 
-The function $g$ is analytic on $|z-z_0|<r$ and has a Taylor series $g(z)=b_0+b_1(z-z_0)+b_2(z-z_0)^2+\cdots$. Since $g(z_0)=g'(z_0)=0$, its first two coefficients vanish. Thus
+The function $g$ is analytic on $|z-z_0|<r$ and has a Taylor series $g(z)=g_0+g_1(z-z_0)+g_2(z-z_0)^2+\cdots$. Since $g(z_0)=g'(z_0)=0$, its first two coefficients vanish. Thus
 
 $$
-g(z)=b_2(z-z_0)^2+b_3(z-z_0)^3+\cdots.
+g(z)=g_2(z-z_0)^2+g_3(z-z_0)^3+\cdots.
 $$
 
 On the punctured disk,
 
 $$
-f(z)=\frac{g(z)}{(z-z_0)^2}=b_2+b_3(z-z_0)+\cdots.
+f(z)=\frac{g(z)}{(z-z_0)^2}=g_2+g_3(z-z_0)+\cdots.
 $$
 
-Define $f(z_0)=b_2$. The power series now gives an analytic extension throughout $|z-z_0|<r$, so the singularity is removable.
+Define $f(z_0)=g_2$. The power series now gives an analytic extension throughout $|z-z_0|<r$, so the singularity is removable.
 
 ##### Poles
 

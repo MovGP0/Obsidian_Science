@@ -220,7 +220,7 @@ $$
 \thermal{Q}=-n\thermal{R}\thermal{T}\ln 2.
 $$
 
-The sign convention takes $\thermal{Q}$ as heat into the system. Heat into the surroundings is $-\thermal{Q}$, giving $\Delta\thermal{S}_{\mathrm{surr}}=-\thermal{Q}/\thermal{T}$. A separate line gives the statistical formula $\thermal{S}=\thermal{k}_{\mathrm B}\ln W$, where $W$ is the multiplicity.
+The sign convention takes $\thermal{Q}$ as heat into the system. Heat into the surroundings is $-\thermal{Q}$, giving $\Delta\thermal{S}_{\mathrm{surr}}=-\thermal{Q}/\thermal{T}$. A separate line gives the statistical formula $\thermal{S}=\thermal{k}_{\mathrm B}\ln\Omega$, where $\Omega$ is the multiplicity. The notebook writes $W$ for the multiplicity. This note uses $\Omega$ because $\energy{W}$ is the work.
 
 For reversible adiabatic compression to the same final volume, $\thermal{Q}=0$ and $\Delta\thermal{S}_{\mathrm{univ}}=0$. The work and internal energy change are equal, and the gas temperature now depends on volume along the path.
 
@@ -231,20 +231,20 @@ $$
 \frac{\thermal{T}(\mechanical{V})}{\mechanical{V}}\,d\mechanical{V}.
 $$
 
-Use $\mechanical{P}=\mechanical{P}_0(\mechanical{V}_0/\mechanical{V})^{5/3}$ for this adiabatic path. With the dimensionless substitution $x=\mechanical{V}/\mechanical{V}_0$,
+Use $\mechanical{P}=\mechanical{P}_0(\mechanical{V}_0/\mechanical{V})^{5/3}$ for this adiabatic path. With the dimensionless substitution $\xi=\mechanical{V}/\mechanical{V}_0$,
 
 $$
 \begin{aligned}
 \energy{W}
 &=-\mechanical{P}_0\int_{\mechanical{V}_0}^{\mechanical{V}_0/2}
 \left(\frac{\mechanical{V}_0}{\mechanical{V}}\right)^{5/3}d\mechanical{V}\\
-&=-\mechanical{P}_0\mechanical{V}_0\int_1^{1/2}x^{-5/3}\,dx\\
+&=-\mechanical{P}_0\mechanical{V}_0\int_1^{1/2}\xi^{-5/3}\,d\xi\\
 &=\frac32\mechanical{P}_0\mechanical{V}_0\left[(1/2)^{-2/3}-1\right]
 =\frac32\mechanical{P}_0\mechanical{V}_0(2^{2/3}-1).
 \end{aligned}
 $$
 
-The notebook recalls the power rule $\int x^\alpha\,dx=x^{\alpha+1}/(\alpha+1)+C$ for $\alpha\ne-1$. Since $\mechanical{P}_0\mechanical{V}_0=n\thermal{R}\thermal{T}_0$,
+The notebook recalls the power rule $\int \xi^\alpha\,d\xi=\xi^{\alpha+1}/(\alpha+1)+C$ for $\alpha\ne-1$. Since $\mechanical{P}_0\mechanical{V}_0=n\thermal{R}\thermal{T}_0$,
 
 $$
 \Delta\energy{U}
@@ -318,7 +318,7 @@ Equilibrium states exist and are uniquely characterized by the extensive paramet
 
 There is a real-valued state function $\thermal{S}(\energy{U},\mechanical{V},N_1,\ldots,N_r)$, the entropy. The equilibrium values of the unconstrained internal parameters maximize the entropy subject to the imposed constraints. The sketch shows a peaked surface with a line of fixed $y$ as an example of a constraint.
 
-The margin introduces Gibbs free energy, $\energy{G}=\energy{H}-\thermal{T}\thermal{S}$, as the part left “after taxes.” It writes $\Delta\energy{G}=\energy{H}-\thermal{T}\Delta\thermal{S}$ and $\Delta\energy{G}_{\mathrm{univ}}>0$. The latter is an unexplained margin notation. The entropy increase for an isolated system is stated in the second law on [[#Statistical thermodynamics with C. Martens|the section on · Statistical thermodynamics with C. Martens]].
+The margin introduces Gibbs free energy, $\energy{G}=\energy{H}-\thermal{T}\thermal{S}$, as the part left “after taxes.” At constant temperature it writes $\Delta\energy{G}=\Delta\energy{H}-\thermal{T}\Delta\thermal{S}$. The margin also writes $\Delta\energy{G}_{\mathrm{univ}}>0$, which is not a correct criterion. At fixed $\thermal{T}$ and $\mechanical{P}$, a spontaneous process has $\Delta\energy{G}_{\mathrm{sys}}<0$. This is equivalent to $\Delta\thermal{S}_{\mathrm{univ}}=-\Delta\energy{G}_{\mathrm{sys}}/\thermal{T}>0$. The entropy increase for an isolated system is stated in the second law on [[#Statistical thermodynamics with C. Martens|the section on · Statistical thermodynamics with C. Martens]].
 
 ##### Postulate III
 
@@ -377,34 +377,29 @@ Kyle Kabasares, *Thermodynamics and Statistical Mechanics (Chem 232A - Physics 2
 | $P(\energy{E}_k)$ | — | Kinetic energy distribution | Probability distribution for the total kinetic energy. |
 | $\energy{\sigma}$ | $\unit{J}$ | Kinetic energy standard deviation | Width of the energy distribution. |
 | $\thermal{k}_{\mathrm B}$ | $\unit{J\,K^{-1}}$ | Boltzmann constant | Relates absolute temperature to a microscopic energy scale. |
-| $\thermal{T}$ | $\unit{K}$ | Absolute temperature | Temperature of the system or reservoir. |
+| $\thermal{T}$, $\thermal{T}_0$, $\thermal{T}_{\mathrm f}$ | $\unit{K}$ | Absolute temperature | Temperature of the system or reservoir, with initial and final values on the adiabat. |
+| $\thermal{T}_h$, $\thermal{T}_c$ | $\unit{K}$ | Reservoir temperatures | Temperatures of the hot and cold reservoirs. |
 | $\energy{U}$ | $\unit{J}$ | Internal energy | Total microscopic energy of the system. |
 | $\thermal{S}$ | $\unit{J\,K^{-1}}$ | Entropy | State function whose change along a reversible path is the integral of reversible heat divided by temperature. |
 | $\thermal{Q}$, $\thermal{Q}_{\mathrm{rev}}$ | $\unit{J}$ | Heat | Energy transferred by heating, with the subscript denoting a reversible path. |
 | $\energy{W}$ | $\unit{J}$ | Work | Energy transferred by work, positive when done on the system. |
 | $\energy{G}$ | $\unit{J}$ | Gibbs free energy | Thermodynamic potential whose change determines the spontaneous reaction direction at fixed temperature and pressure. |
 | $\dot{\thermal{S}}_{\mathrm{univ}}$ | $\unit{J\,K^{-1}\,s^{-1}}$ | Entropy production rate | Rate of increase of the total entropy. |
-| $\mechanical{\vec r}$, $\mechanical{\vec x}$ | $\unit{m}$ | Position | Spatial position on a particle trajectory. |
+| $\mechanical{\vec r}$ | $\unit{m}$ | Position | Spatial position on a particle trajectory. |
 | $\mechanical{\vec p}$ | $\unit{kg\,m\,s^{-1}}$ | Momentum | Particle momentum, which changes sign under time reversal. |
-| $\mechanical{V}$ | $\unit{m^3}$ | Volume | Spatial extent of a simple system. |
+| $\mechanical{V}$, $\mechanical{V}_0$ | $\unit{m^3}$ | Volume | Spatial extent of a simple system, with the initial volume $\mechanical{V}_0$. |
 | $N_A$, $N_B$ | 1 | Species populations | Numbers of particles of the two chemical species. |
 | $\dot{\energy{U}}$ | $\unit{J\,s^{-1}}$ | Internal energy rate | Rate of change of energy stored in a system. |
 | $\mechanical{x}$, $\mechanical{h}$ | $\unit{m}$ | Position and height | Coordinate along the displacement and elevation reached in the lifting example. |
 | $\mechanical{g}$ | $\unit{m\,s^{-2}}$ | Gravitational acceleration | Magnitude of the local acceleration due to gravity. |
 | $\mechanical{A}$ | $\unit{m^2}$ | Piston area | Area over which the gas pressure acts. |
-| $\mechanical{P}$, $\mechanical{P}_{\mathrm{int}}$, $\mechanical{P}_{\mathrm{ext}}$ | $\unit{Pa}$ | Pressure | Force per unit area, including the internal and applied external pressure at the piston. |
+| $\mechanical{P}$, $\mechanical{P}_0$, $\mechanical{P}_{\mathrm{int}}$, $\mechanical{P}_{\mathrm{ext}}$ | $\unit{Pa}$ | Pressure | Force per unit area, including the initial pressure and the internal and applied external pressure at the piston. |
+| $\mechanical{F}_{\mathrm{int}}$, $\mechanical{F}_{\mathrm{ext}}$ | $\unit{N}$ | Piston forces | Forces on the piston from the gas pressure and from the external load. |
 | $n$ | $\unit{mol}$ | Amount of substance | Number of moles in the gas. |
 | $\thermal{R}$ | $\unit{J\,mol^{-1}\,K^{-1}}$ | Molar gas constant | Proportionality constant in the ideal gas law. |
 | $\thermal{C}_V$ | $\unit{J\,K^{-1}}$ | Heat capacity at constant volume | Temperature derivative of internal energy at fixed volume and composition. |
 | $\energy{H}$ | $\unit{J}$ | Enthalpy or Hamiltonian | Internal energy plus the pressure–volume product in thermodynamics. In mechanics and ensemble weights, the Hamiltonian. |
-| $W$ | 1 | Multiplicity | Number of microstates compatible with the macrostate. |
+| $\Omega$ | 1 | Multiplicity | Number of microstates compatible with the macrostate. |
 | $\energy{u}$ | $\unit{J}$ per particle or $\unit{J\,mol^{-1}}$ | Internal energy per unit amount | Internal energy divided by the particle count or mole amount. |
 | $\mechanical{v}$ | $\unit{m^3}$ per particle or $\unit{m^3\,mol^{-1}}$ | Volume per unit amount | Volume divided by the particle count or mole amount. |
 | $\thermal{s}$ | $\unit{J\,K^{-1}}$ per particle or $\unit{J\,K^{-1}\,mol^{-1}}$ | Entropy per unit amount | Entropy divided by the particle count or mole amount. |
-| $\energy{E}$ | $\unit{J}$ | Energy | Microscopic energy that enters the Boltzmann weight. |
-| $n$ | $\unit{m^{-3}}$ | Number density | Particle count per unit volume. |
-| $\thermal{T}_c$ | $\unit{K}$ | Curie temperature | Temperature of the loss of spontaneous magnetization. |
-| $g$ | 1 | Landé factor | Proportionality factor relating angular momentum and magnetic moment. |
-| $z$ | 1 | Fugacity | Exponential of the chemical potential divided by the thermal energy. |
-| $g$ | 1 | Internal degeneracy | Number of internal states per momentum state. |
-| $\alpha$ | $1$ | Fine-structure constant | Electromagnetic coupling used in the photon scattering estimate. |

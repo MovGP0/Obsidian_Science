@@ -1,0 +1,33 @@
+=== 01 Mathematics/04 Single-Variable Calculus/02 Differential Calculus/Differential calculus - Catalogue Guide.md
+- [Correctness] The link `[[Planned Topics#6. Differential calculus|the detailed catalogue]]` is broken: no `Planned Topics.md` exists in the vault (only a backup under the hidden `.temp/` folder, which Obsidian does not index); point it to an existing catalogue note or remove it.
+
+=== 01 Mathematics/04 Single-Variable Calculus/03 Integral Calculus/08.08 Checks and approximations.md
+- [Correctness] Symbol clash: $M$ is the upper bound in $m\le f\le M$ and also names the midpoint sum $M_n$ in the same note; rename the bounds (e.g. $f_{\min}\le f\le f_{\max}$) or the midpoint sum.
+
+=== 01 Mathematics/04 Single-Variable Calculus/03 Integral Calculus/Integral calculus - Catalogue Guide.md
+- [Correctness] In "Complete lesson index", `[[Planned Topics#8. Integral calculus|the detailed catalogue]]` is broken: no `Planned Topics.md` exists outside `.temp/` backups; retarget it to [[Mathematics Catalogue Source Guide]] (heading "Complete chapter index") or remove it.
+
+=== 01 Mathematics/04 Single-Variable Calculus/03 Integral Calculus/Integral of a Derivative.md
+- [Correctness] The first integrand $\int_{t=0}^{n}\frac{F(t)}{dt}\,dt$ lacks the differential in the numerator; it must be $\int_0^n\frac{dF}{dt}\,dt$ (or $\int_0^n\dot F(t)\,dt$).
+- [Correctness] The final equation $\int_0^n\dot f g\,dt=-\int_0^n f\dot g\,dt$ drops the boundary term; the correct statement is $\int_0^n\dot f g\,dt=\bigl[fg\bigr]_0^n-\int_0^n f\dot g\,dt$ (the pure sign swap holds only when $fg$ takes equal values at both endpoints).
+- [Correctness] The "expansion" $(F(1)-F(0))+\dots+(F(n)-F(n-1))$ is a unit-step telescoping sum, not an expansion of the integral; present it as $\sum F'(\xi_i)\Delta t=\sum[F(t_i)-F(t_{i-1})]$ (mean value theorem) with $\Delta t\to0$, replace "the forces cancel" by "the intermediate terms cancel", and close the missing parenthesis in $(F(n)-F(n-1))$.
+- [Correctness] In "Notation in Textbooks" the delimiters are swapped: use `\Bigl[ F(t) \Bigr]`, not "`\Bigr[` and `\Bigl]`"; also the product rule is a consequence, not the definition, of the derivative of $fg$.
+
+=== 01 Mathematics/04 Single-Variable Calculus/03 Integral Calculus/Integration by parts and trigonometric substitutions.md
+- [Correctness] Under Fig. 4 the text says the substitution angle "is complementary to the angle labeled $\theta$ in the sketch", so $\theta$ names two different angles; relabel the sketch angle (e.g. $\varphi=\pi/2-\theta$) or replace the figure so it matches $x=a\sin\theta$.
+
+=== 01 Mathematics/04 Single-Variable Calculus/03 Integral Calculus/Partial fractions and improper integral problems.md
+- [Correctness] Under "Exponential substitution and partial fractions", the link to "#Example with a repeated linear factor" points to the $(x+2)/[x(x+1)^2]$ example, but the identity being expanded is $1=A(u-2)(u^2+1)+B(u+2)(u^2+1)+(Cu+D)(u+2)(u-2)$ from the $e^x$ example just above; move that heading before the $e^x$ example and drop or retarget the link.
+
+=== 01 Mathematics/04 Single-Variable Calculus/03 Integral Calculus/Substitution and work integrals.md
+- [Correctness] The strip width is written `\mechanical{\Delta x}` in the Fig. 1 caption and the physical-quantities table, coloring the operator $\Delta$; per the macro rules write $\Delta\mechanical{x}$.
+
+=== 01 Mathematics/04 Single-Variable Calculus/04 Sequences, Series, and Taylor Expansions/09.07 Remainders and error.md
+- [Correctness] Worked answer 1: $(0.1)^5/5!=1/12000000\approx8.33\times10^{-8}$, not "about $8.34\times10^{-8}$".
+
+=== 01 Mathematics/04 Single-Variable Calculus/04 Sequences, Series, and Taylor Expansions/Arithmetic series.md
+- [Correctness] "Common mistakes": "Negative terms can cancel positive terms, so its total need not lie between the first and last term" implies totals otherwise lie between the first and last term, which is false (e.g. $1+\cdots+5=15$); what holds is that the mean $(a+\ell)/2$ lies between them and the total is $n$ times that mean.
+
+=== 01 Mathematics/04 Single-Variable Calculus/04 Sequences, Series, and Taylor Expansions/Taylor and Maclaurin series problems.md
+- [Correctness] The "Physical quantities" table lists cable weight per length ($\unit{lbf/ft}$), coal weight ($\unit{lbf}$), and water loss per lift ($\unit{kg/m}$). None of these appear in this note, which is pure mathematics; it seems to be copied from a work-integral note. Delete the table.
+

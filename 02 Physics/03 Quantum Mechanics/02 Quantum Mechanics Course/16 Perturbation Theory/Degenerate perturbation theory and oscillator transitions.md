@@ -74,10 +74,10 @@ $$
 H_0=\hbar\signal{\omega}(a_x^\dagger a_x+a_y^\dagger a_y+1),\qquad
 V=\hbar\signal{\delta}
 \begin{pmatrix}a_x^\dagger&a_y^\dagger\end{pmatrix}
-\begin{pmatrix}C_{11}&C_{12}\\C_{21}&C_{22}\end{pmatrix}
+\begin{pmatrix}K_{11}&K_{12}\\K_{21}&K_{22}\end{pmatrix}
 \begin{pmatrix}a_x\\a_y\end{pmatrix}.
 $$
-Diagonalizing the quadratic form gives new ladder operators $\widetilde a_1,\widetilde a_2$ and angular frequencies $\signal{\omega}_j=\signal{\omega}+\signal{\lambda}_j$, with $\signal{\lambda}_j$ the eigenvalues of $\signal{\delta} C$. The notes write the result in the standard oscillator form with a half quantum of energy per mode. For the displayed $V$, this form differs from $H_0+V$ by the additive constant $\hbar(\signal{\lambda}_1+\signal{\lambda}_2)/2$.
+Diagonalizing the quadratic form gives new ladder operators $\widetilde a_1,\widetilde a_2$ and angular frequencies $\signal{\omega}_j=\signal{\omega}+\signal{\kappa}_j$, with $\signal{\kappa}_j$ the eigenvalues of $\signal{\delta} K$. The notes write the result in the standard oscillator form with a half quantum of energy per mode. For the displayed $V$, this form differs from $H_0+V$ by the additive constant $\hbar(\signal{\kappa}_1+\signal{\kappa}_2)/2$.
 $$
 H=\hbar\signal{\omega}_1(\widetilde a_1^\dagger\widetilde a_1+1/2)
 +\hbar\signal{\omega}_2(\widetilde a_2^\dagger\widetilde a_2+1/2).
@@ -169,16 +169,19 @@ Kyle Kabasares, *Quantum Mechanics II (Physics 215B, UC Irvine 2018)*.
 | $\energy{V}_{ij}$, $\energy{V}_{\widetilde i\widetilde j}$ | $\unit{J}$ | Perturbation matrix elements | Entries in the original and rotated bases. |
 | $\hbar$ | $\unit{J\,s}$ | Reduced Planck constant | Planck constant divided by $2\pi$. |
 | $\signal{\omega}$, $\signal{\omega}_j$ | $\unit{rad\,s^{-1}}$ | Angular frequencies | Common unperturbed frequency and frequencies of the new oscillator modes. |
-| $\signal{\delta}$, $\signal{\lambda}_j$ | $\unit{rad\,s^{-1}}$ | Frequency parameters | Perturbation scale and resulting shifts of the mode frequencies. |
+| $\signal{\delta}$, $\signal{\kappa}_j$ | $\unit{rad\,s^{-1}}$ | Frequency parameters | Perturbation scale and resulting shifts of the mode frequencies. |
 | $\mechanical{t}$, $\mechanical{t}_0$, $\Delta\mechanical{t}$ | $\unit{s}$ | Time | Observation time, initial or switching time, and elapsed time. |
 | $\mechanical{m}$ | $\unit{kg}$ | Mass | Particle mass. |
 | $\mechanical{x}$ | $\unit{m}$ | Position | Displacement along the oscillator axis. |
 | $\mechanical{p}$ | $\unit{kg\,m\,s^{-1}}$ | Momentum | Momentum along the oscillator axis. |
 | $\energy{\lambda}$ | $\unit{J\,m^{-4}}$ | Quartic coupling | Coefficient controlling the strength of the quartic potential. |
-| $\energy{E}$, $\energy{E}_0$ | $\unit{J}$ | Energy eigenvalue | Energy of an eigenstate, including the common energy of a degenerate subspace. |
+| $\energy{E}$, $\energy{E}_0$ | $\unit{J}$ | Energy eigenvalue | Energy of an eigenstate, and the common energy of the degenerate subspace. |
 | $\energy{\lambda}_n$ | $\unit{J\,m^{-n}}$ | Power-law coupling | Coefficient of the perturbation proportional to the $n$th power of displacement. |
-| $E$ | $\unit{N}$ | Linear perturbation coefficient | Electric field strength multiplied by the signed charge, with the sign set by the potential convention. |
-| $\Delta\energy{E}$, $\delta\energy{E}$ | $\unit{J}$ | Energy scales | Width over which the continuum factors change and spacing of individual final levels. |
-| $c$ | $\unit{m\,s^{-1}}$ | Speed of light | Vacuum light speed used in the time coordinate and Maxwell equations. |
-| $\energy{V}_0$, $\energy{V}$ | $\unit{J}$ | Well depth and potential energy | Positive depth and the signed binding potential as a function of radius. |
-| $A$, $B$ | $\unit{s^{-1}}$ | Mode emission and absorption coefficients | Spontaneous rate and induced transition rate per photon for a single resonant mode. |
+| $H$, $H_0$, $V$ | $\unit{J}$ | Hamiltonian operators | Full Hamiltonian, unperturbed Hamiltonian, and perturbation. |
+| $C_{ii'}$ | $1$ | Expansion coefficients | Amplitudes of the perturbed state $\lvert i\rangle$ in the unperturbed basis. |
+| $\epsilon$ | $1$ | Perturbation order parameter | Small parameter that counts the order of the perturbation. |
+| $\alpha$ | $\unit{rad}$ | Mixing angle | Rotation angle that diagonalizes the perturbation in the degenerate subspace. |
+| $a_x$, $a_y$ | $1$ | Ladder operators | Lowering operators of the two oscillator axes. |
+| $K_{ij}$ | $1$ | Quadratic-form matrix | Dimensionless coefficients of the quadratic oscillator perturbation. |
+| $U$ | $1$ | Evolution operator | Unitary operator that maps the state at $\mechanical{t}_0$ to the state at $\mechanical{t}$. |
+| $\Theta$ | $1$ | Step function | Switches the quartic perturbation on at $\mechanical{t}_0$. |

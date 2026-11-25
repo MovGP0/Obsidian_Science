@@ -159,6 +159,9 @@ Accurate parallaxes are difficult to measure. The observed stellar track combine
 
 The semimajor axis of the annual parallax ellipse is the parallax angle. The lecture gives about $\quantity{200}{pc}$ as a practical parallax range in the context of this example.
 
+> [!note]
+> This range applies to ground-based and Hipparcos-era parallaxes. Gaia DR3 (2022) gives parallax uncertainties of about $\quantity{0.02\text{–}0.03}{mas}$ for $G<15$. This gives distances to $10\%$ out to several kiloparsecs.
+
 ![[Kyle Kabasares - Intro to Astrophysics - Local parallax reach in the Milky Way.png|**Fig. 33** The local region within parallax reach is small on the scale of the Galaxy. The diagram marks $\quantity{8.5}{kpc}$ from the Sun to the Galactic center.]]
 
 ##### Astrometric catalogs
@@ -168,7 +171,7 @@ The semimajor axis of the annual parallax ellipse is the parallax angle. The lec
 | Hipparcos | About 100,000 stars to $V=7.3\,\unit{mag}$. The notes list a $\quantity{29}{cm}$ telescope and the dates 1985–1993. | Positions about $\quantity{1\text{–}3}{mas}$ and proper motions about $\quantity{1\text{–}2}{mas\cdot yr^{-1}}$. |
 | Tycho | About 2.5 million stars. | Lower precision than Hipparcos. |
 | U.S. Naval Observatory CCD catalog | About 48 million stars. | Positions about $\quantity{20\text{–}70}{mas}$ and proper motions about $\quantity{1\text{–}7}{mas\cdot yr^{-1}}$. |
-| Gaia | About $10^9$ stars. | |
+| Gaia | About $10^9$ stars. Gaia DR3 (2022) contains about $1.8\times10^9$ sources. | Not stated in the lecture. In Gaia DR3, parallaxes are about $\quantity{0.02\text{–}0.03}{mas}$ for $G<15$. |
 
 The lecture asks students to read about the Gaia spacecraft.
 
@@ -350,41 +353,39 @@ Kyle Kabasares, *Intro to Astrophysics (Physics 240A, UC Irvine 2018)*.
 
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
-| $\mechanical{M}_{\odot}$ | $\unit{\mathrm{g}}$ | Solar mass | Mass of the Sun. |
-| $\energy{L}_{\odot}$ | $\unit{\mathrm{erg}\cdot\mathrm{s}^{-1}}$ | Solar luminosity | Radiant power of the Sun. |
-| $\energy{L}$ | $\unit{erg\cdot s^{-1}}$ | Luminosity | Total radiant power. |
-| $\mechanical{d}$ | $\unit{cm}$ | Distance to the source | Distance from the observer to the spherical source. |
-| $\signal{\nu}$ | $\unit{Hz}$ | Frequency | Frequency of the radiation. |
-| $\signal{\lambda}$ | $\unit{cm}$ | Wavelength | Wavelength of the radiation. |
-| $\signal{c}$ | $\unit{cm\cdot s^{-1}}$ | Speed of light | Speed of light in vacuum. |
-| $k$ | $\unit{erg\cdot K^{-1}}$ | Boltzmann constant | Relates temperature to energy. |
-| $\mechanical{r}$ | $\unit{cm}$ | Emitter radius | Radius of the spherical emitter. |
-| $m$ | 1 | Apparent magnitude | Logarithmic measure of observed flux relative to a zero point. |
-| $b$ | 1 | Softening constant | Sets the low-flux scale of the inverse hyperbolic sine magnitude. |
-| $B-V$ | 1 | Color index | Difference between the apparent magnitudes in the $B$ and $V$ filters. |
-| $A$ | 1 | Extinction | Increase in apparent magnitude caused by attenuation. |
-| $\mechanical{r}$ | — | Profile radius | Radial coordinate in the surface brightness sketch. |
-| $\theta$ | $\unit{rad}$ | Position angle | Orientation on the sky measured from north toward east. |
-| $\theta$ | $\unit{rad}$ | Angular resolution | Minimum angular separation in the Rayleigh criterion. |
 | — | $\unit{h}$ | Hour angle | Angular distance of a celestial object from the local meridian, expressed in hours. |
 | $\alpha$ | $\unit{h}$ | Right ascension | Celestial coordinate measured eastward along the celestial equator. |
 | $\delta$ | $\unit{deg}$ | Declination | Angular distance north or south of the celestial equator. |
 | $\mathrm{LST}$ | $\unit{h}$ | Local sidereal time | Right ascension on the local meridian. |
-| $\mechanical{R}_0$ | $\unit{kpc}$ | Solar Galactocentric distance | Distance from the Sun to the Galactic center. |
-| $\phi$ | $\unit{rad}$ | Galactocentric azimuth | Azimuthal angle around the Galactic axis. |
-| $\mechanical{\mathbf{v}}$ | $\unit{km\cdot s^{-1}}$ | Stellar velocity | Velocity of the star relative to the observer. |
+| $\ell$, $b$ | $\unit{deg}$ | Galactic coordinates | Galactic longitude and latitude. |
+| $\mechanical{R}$, $\mechanical{z}$, $\phi$ | $\unit{kpc}$, $\unit{kpc}$, $\unit{rad}$ | Galactocentric cylindrical coordinates | Radius, height, and azimuth about the Galactic axis. |
+| $\mechanical{v}_r$, $\mechanical{v}_t$ | $\unit{km\cdot s^{-1}}$ | Radial and transverse velocities | Velocity components along and across the line of sight. |
 | $\mu$ | $\unit{arcsec\cdot yr^{-1}}$ | Proper motion | Angular rate of motion across the sky. |
+| $\mechanical{d}$ | $\unit{pc}$ | Distance | Distance from the observer to the star or cluster. |
+| $\signal{\nu}_0$, $\signal{\nu}_{\mathrm{obs}}$ | $\unit{Hz}$ | Rest and observed frequencies | Frequency in the source rest frame and frequency measured by the observer. |
+| $\signal{\lambda}_0$, $\signal{\lambda}_{\mathrm{obs}}$, $\Delta\signal{\lambda}$ | $\unit{cm}$ | Rest wavelength, observed wavelength, and shift | Wavelengths in the rest and observer frames and the difference between them. |
+| $\beta$ | 1 | Speed ratio | Radial speed divided by the speed of light. |
+| $\gamma$ | 1 | Lorentz factor | Relativistic factor $1/\sqrt{1-\beta^2}$. |
+| $\signal{c}$ | $\unit{cm\cdot s^{-1}}$ | Speed of light | Speed of light in vacuum. |
 | $\alpha$ | $\unit{arcsec}$ | Parallax angle | Angular shift due to a one-AU observing baseline. |
 | $\lambda$ | $\unit{rad}$ | Convergent-point angle | Angle between the line of sight to the cluster member and the direction of the shared velocity. |
 | $i$ | $\unit{deg}$ | Inclination | Angle between the orbital axis and the line of sight. |
-| $\mechanical{a}$ | $\unit{cm}$ | Binary separation | Distance between the two stars in a circular orbit. |
+| $\mechanical{M}_1$, $\mechanical{M}_2$ | $\unit{g}$ | Component masses | Masses of the two stars in the binary. |
+| $\mechanical{r}_1$, $\mechanical{r}_2$ | $\unit{cm}$ | Orbital radii | Radii of the two stellar orbits about the common center of mass. |
+| $\mechanical{a}$ | $\unit{cm}$ | Binary separation | Sum of the orbital radii, or the semimajor axis of the relative orbit. |
 | $\signal{T}$ | $\unit{s}$ | Orbital period | Time for one orbit. |
+| $\mechanical{v}_1$, $\mechanical{v}_2$ | $\unit{km\cdot s^{-1}}$ | Orbital speeds | Speeds of the two stars in their circular orbits. |
 | $\mechanical{\omega}$ | $\unit{rad\cdot s^{-1}}$ | Orbital angular speed | Rate of change of orbital phase. |
 | $G$ | $\unit{cm^3\cdot g^{-1}\cdot s^{-2}}$ | Gravitational constant | Constant in Newton’s law of gravitation. |
 | $\theta_1,\,\theta_2$ | $\unit{rad}$ | Angular orbital radii | Angular sizes of the two stars’ orbits about the common center of mass. |
+| $\mechanical{k}_1$, $\mechanical{k}_2$ | $\unit{km\cdot s^{-1}}$ | Radial velocity amplitudes | Projected orbital speeds $\mechanical{v}\sin i$ of the two stars. |
+| $t_1,\ldots,t_8$ | $\unit{s}$ | Eclipse contact times | Ingress and egress landmarks in the binary light curve. |
+| $\energy{L}$ | $\unit{erg\cdot s^{-1}}$ | Luminosity | Total radiant power of a star. |
+| $\energy{L}_{\odot}$ | $\unit{erg\cdot s^{-1}}$ | Solar luminosity | Radiant power of the Sun. |
 | $\mechanical{M}$ | $\unit{g}$ | Stellar mass | Mass in the main-sequence scaling relations. |
-| $\mechanical{R}$ | $\unit{km}$ | Stellar radius | Radius in the main-sequence scaling relation. |
-| $\omega$ | $\unit{rad}$ | Argument of periastron | Orientation of periastron in the orbital plane. |
-| $A$ | $\unit{km\cdot s^{-1}\cdot kpc^{-1}}$ | First Oort constant | Local rotational shear inferred from the longitude dependence of radial velocities. |
-| $B$ | $\unit{km\cdot s^{-1}\cdot kpc^{-1}}$ | Second Oort constant | Offset in the nearby tangential velocity per unit distance. |
-| $\alpha$ | $\unit{rad}$ | Scattering angle | Small change in the direction of the moving star. |
+| $\mechanical{M}_{\odot}$ | $\unit{g}$ | Solar mass | Mass of the Sun. |
+| $\alpha$ | 1 | Mass–luminosity exponent | Exponent in $\energy{L}\propto\mechanical{M}^{\alpha}$. |
+| $\mechanical{R}$, $\mechanical{R}_{\odot}$, $\mechanical{R}_{\mathrm{Earth}}$ | $\unit{km}$ | Radii | Stellar radius in the main-sequence relation, solar radius, and Earth radius. |
+| $m_B$, $m_V$ | 1 | Apparent magnitudes | Apparent magnitudes in the $B$ and $V$ bands. |
+| $B-V$ | 1 | Color index | Difference between the apparent magnitudes in the $B$ and $V$ filters. |
+| $\energy{F}_B$, $\energy{F}_V$ | $\unit{erg\cdot s^{-1}\cdot cm^{-2}}$ | Band fluxes | Fluxes in the $B$ and $V$ passbands. |

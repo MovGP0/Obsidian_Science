@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Phase-Space Formulas: Decay Rates and Cross Sections"
 source_pdf: "D:\\GitHub\\books\\dokumen.pub_gauge-theories-of-the-strong-weak-and-electromagnetic-interactions-second-edition-secondnbsped-9781400848225.pdf"
 source_page: "447"
@@ -42,7 +42,7 @@ For the important special case $\alpha\to(1,2)\equiv\beta$ of the two-body decay
 $$
 \frac{d\energy{\Gamma}_{\beta\alpha}}{d\mechanical{\Omega}_{\mathrm{cm}}}
 =\frac{\lvert\mathcal{M}_{\beta\alpha}\rvert^2}{64\pi^2}
-\frac{\mechanical{S}_{12}}{\mechanical{m}_\alpha^{\,2}}\cdot S. \tag{B.1.4}
+\frac{\mechanical{S}_{12}}{\mechanical{m}_\alpha^{\,3}}\cdot S. \tag{B.1.4}
 $$
 
 <!-- PDF page 462; printed page 448 -->

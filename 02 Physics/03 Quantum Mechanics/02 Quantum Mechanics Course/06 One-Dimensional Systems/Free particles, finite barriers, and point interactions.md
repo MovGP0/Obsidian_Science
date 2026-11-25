@@ -452,15 +452,15 @@ Match the even solution and its derivative at $x=a$.
 
 $$
 D'\cos(\signal{k'}a)=Fe^{-\signal{\kappa}a}.
-\tag{1}
+\tag{4}
 $$
 
 $$
 -\signal{k'}D'\sin(\signal{k'}a)=-\signal{\kappa}Fe^{-\signal{\kappa}a}.
-\tag{2}
+\tag{5}
 $$
 
-Dividing (1) by (2) eliminates the amplitudes.
+Dividing (4) by (5) eliminates the amplitudes.
 
 $$
 \frac{1}{-\signal{k'}\tan(\signal{k'}a)}
@@ -513,9 +513,11 @@ $$
 \begin{aligned}
 \Psi(x,t)&=\frac{1}{\sqrt{2\pi}}\int_{-\infty}^{+\infty}
 \phi(\signal{k})e^{i(\signal{k}x-\hbar\signal{k}^2t/(2m))}\,d\signal{k},\\
-\phi(\signal{k})&=\frac{2N}{\sqrt{\alpha}}\cos(\signal{k}x_0)e^{-\signal{k}^2/(2\alpha)}.
+\phi(\signal{k})&=\frac{2N}{\sqrt{\gamma}}\cos(\signal{k}x_0)e^{-\signal{k}^2/(2\gamma)}.
 \end{aligned}
 $$
+
+Here $\gamma$ is the width parameter of the Gaussian packet.
 
 1. Sketch $\energy{V(x)}$.
 2. Write the time-independent Schrödinger equation.
@@ -549,18 +551,18 @@ In the infinite-wall limit, $\psi_{\mathrm I}=\psi_{\mathrm{III}}=0$. The interi
 
 $$
 \begin{aligned}
-\psi_{\mathrm{II}}&=\alpha\cos(\signal{k}x)+\beta\sin(\signal{k}x),\\
-\psi_{\mathrm{II}}'&=-\alpha\signal{k}\sin(\signal{k}x)
-+\beta\signal{k}\cos(\signal{k}x).
+\psi_{\mathrm{II}}&=P\cos(\signal{k}x)+Q\sin(\signal{k}x),\\
+\psi_{\mathrm{II}}'&=-P\signal{k}\sin(\signal{k}x)
++Q\signal{k}\cos(\signal{k}x).
 \end{aligned}
 $$
 
 At an infinite wall, impose continuity of $\psi$ and allow its slope to jump. Matching at $x=-a/2$ and $x=a/2$ gives
 
 $$
-0=\alpha\cos(-\signal{k}a/2)+\beta\sin(-\signal{k}a/2),
+0=P\cos(-\signal{k}a/2)+Q\sin(-\signal{k}a/2),
 \qquad
-0=\alpha\cos(\signal{k}a/2)+\beta\sin(\signal{k}a/2).
+0=P\cos(\signal{k}a/2)+Q\sin(\signal{k}a/2).
 $$
 
 ## Source
@@ -581,3 +583,5 @@ Kyle Kabasares, *Quantum Mechanics (Physics 137, UC Merced 2015)*.
 | $J_x$ | $\unit{s^{-1}}$ | Probability flux | Signed one-dimensional probability current. |
 | $R$, $T$ | $1$ | Reflection and transmission coefficients | Ratios of reflected and transmitted flux magnitudes to the incident flux magnitude. |
 | $\signal{\kappa}$ | $\unit{m^{-1}}$ | Decay constant | Reciprocal of the amplitude penetration depth in the forbidden region. |
+| $\alpha$ | $\unit{J\,m}$ | Delta strength | Strength of the point interaction $\energy{V(x)}=-\alpha\delta(x)$. |
+| $\gamma$ | $\unit{m^{-2}}$ | Gaussian width parameter | Parameter that sets the width of the Gaussian momentum distribution $\phi(\signal{k})$. |

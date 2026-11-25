@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Overview"
 catalogue_ids:
   - "4"
@@ -62,7 +62,7 @@ The existing [[Linear algebra - Overview]] and [[Tensor algebra - Overview]] off
 <!-- catalogue-complete-lesson-index:start -->
 ## Complete lesson index
 
-Read the prerequisite route above before the advanced lessons. The source topic links are in [[Planned Topics#4. Linear algebra|the detailed catalogue]].
+Read the prerequisite route above before the advanced lessons.
 
 - [[Matrices and linear maps|Matrices and linear maps]] — 4.1, 4.1.1, 4.1.2, 4.1.3, 4.1.4, 4.1.5.
 - [[Vector and matrix norms|Vector and matrix norms]] — 4.1.6, 4.1.6.1, 4.1.6.2.

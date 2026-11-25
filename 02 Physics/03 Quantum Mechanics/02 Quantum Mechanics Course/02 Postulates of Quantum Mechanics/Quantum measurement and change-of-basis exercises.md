@@ -201,4 +201,6 @@ Kyle Kabasares, *Quantum Mechanics (Physics 137, UC Merced 2015)*.
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
 | $\hbar$ | $\unit{J\,s}$ | Reduced Planck constant | Planck constant divided by $2\pi$. |
-| $R$, $T$ | $1$ | Reflection and transmission coefficients | Ratios of reflected and transmitted flux magnitudes to the incident flux magnitude. |
+| $L_x$, $L_y$, $L_z$ | $1$ | Angular momentum components | Matrix representations of the angular momentum components in units of $\hbar$. |
+| $w$ | — | Measured eigenvalue | The eigenvalue of the observable $\Omega$ that a measurement gives. Its unit is the unit of $\Omega$. |
+| — | $1$ | Probability | The probability of a measurement outcome, for example $\lvert\langle w_j\mid\psi\rangle\rvert^2$. |

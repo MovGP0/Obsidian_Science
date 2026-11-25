@@ -15,19 +15,19 @@ Use this list to trace the chapter's treatment of cosmic gravity, inertia, and p
 1. A. Einstein, *The Meaning of Relativity* (Methuen, UK, 1922). Source link label: zbMATH.
 2. C. S. Unnikrishnan, Physics in the ‘once-given’ Universe, in *Recent Developments in Theoretical Physics*, ed. by S. Ghosh, G. Kar (World Scientific, Singapore, 2009), pp. 99–120. Source link label: Crossref.
 3. C. S. Unnikrishnan, A new gravitational paradigm for relativity and dynamics. *J. Phys. (Conf. Ser.)* **1466**, 012007 (2020).
-4. A. Einstein, Theoretical comments on the superconductivity of metals. Translated in *The Collected Papers of Albert Einstein*, vol. 13, Doc. 76 (Princeton University Press, 1922).
+4. A. Einstein, Theoretical comments on the superconductivity of metals. Translated in *The Collected Papers of Albert Einstein*, vol. 13, Doc. 76 (Princeton University Press, 2012). Original comment: 1922.
 5. E. Mach, *The Science of Mechanics*, 4th edn. (The Open Court Publishing Co., London, 1919), pp. 222–245 and appendix XX.
 6. A. Einstein, On the foundations of general relativity, *Annalen der Physik* **55**, 241–244 (1918). (Translated in *The Collected Papers of Albert Einstein*, vol. 7, Doc. 4, Princeton University Press.)
 7. A. Einstein, Autobiographical notes, in *Albert Einstein: Philosopher-Scientist*, ed. by P. Schilpp (Harper and Row, New York, 1949).
 8. A. A. Michelson, *Studies in Optics* (Dover Publications, 1927).
 9. A. Einstein, On the ether, *Schweizerische Naturforschende Gesellschaft, Verhandlungen II. Wissenschaftlicher Teil* **105**, 85–93 (1924). (Translated in *The Collected Papers of Albert Einstein*, vol. 14, Doc. 332, Princeton University Press.)
-10. R. A. Littleton, H. Bondi, Physical consequences of a general excess of charge. *Proc. Phys. Soc.* **252**, 313–333 (1959). Source link label: MathSciNet.
+10. R. A. Lyttleton, H. Bondi, On the physical consequences of a general excess of charge. *Proc. R. Soc. Lond. A* **252**, 313–333 (1959). Source link label: MathSciNet.
 11. C. S. Unnikrishnan, True dynamical tests of the equivalence principle. *Int. J. Mod. Phys. (Conf. Ser.)* **30**, 1460267 (2014).
 12. D. Sciama, On the origin of inertia. *MNRAS* **113**, 34–42 (1953). Source link labels: ADS, MathSciNet, Crossref, zbMATH.
 13. J. Barbour, H. Pfister (eds.), *Mach's Principle: From Newton's Bucket to Quantum Gravity*, vol. 6 of Einstein Studies (Birkhäuser, Boston, 1995).
 14. C. S. Unnikrishnan, Experiments motivated by the Mach's Principle: a review with comments, in *Mach's Principle and the Origin of Inertia*, ed. by M. Sachs, A. R. Roy (Apeiron, Montreal, 2003).
 15. C. S. Unnikrishnan, Spin-statistics connection and the gravity of the Universe: The cosmic connection (2004). [arXiv:gr-qc/0406043](https://arxiv.org/abs/gr-qc/0406043).
-16. C. S. Unnikrishnan, Bosons, Fermions, spin, gravity, and the spin-statistics connection. *Phys News (Indian Phys. Assoc.)* **49**(2–3), 17–26 (2919).
+16. C. S. Unnikrishnan, Bosons, Fermions, spin, gravity, and the spin-statistics connection. *Phys News (Indian Phys. Assoc.)* **49**(2–3), 17–26 (2019).
 17. R. Naaman, D. H. Waldeck, Spintronics and chirality: spin selectivity in electron transport through chiral molecules. *Annu. Rev. Phys. Chem.* **66**, 263–281 (2015). Source link labels: ADS, Crossref.
 18. C. S. Unnikrishnan, A coherent and unified single particle description of the integer and fractional quantum Hall effects (2021). [arXiv:2110.00343](https://arxiv.org/abs/2110.00343).
 19. C. S. Unnikrishnan, Dynamics, relativity and the equivalence Principle in the ‘once-given’ Universe, in *Proceedings of the 50th Moriond meeting on Gravitation*, ed. by E. Augé, J. Dumarchez, J. Trân Thanh Vân (2015), pp. 177–180.
@@ -38,7 +38,7 @@ Use this list to trace the chapter's treatment of cosmic gravity, inertia, and p
 24. A. Einstein, *Fundamental ideas and problems of the theory of relativity, Nobel Lectures Physics 1901–1921* (Elsevier Publishing Company, Amsterdam, 1967).
 
 > [!note] Source year
-> Reference 16 gives the publication year as “2919”. This is retained from the screenshot and needs a later bibliographic check.
+> The screenshot gives the publication year of Reference 16 as “2919”. This is a typographical error. Volume 49 of *Physics News* is from 2019.
 
 ## Study route
 

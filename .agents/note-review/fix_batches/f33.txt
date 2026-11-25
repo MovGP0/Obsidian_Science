@@ -1,0 +1,76 @@
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.11.3 Intrinsic formulation.md
+- [Correctness] Index typo in the jump calculation: $[C_{ab}]=[N_{\alpha;\beta}]e^\alpha_ae^\alpha_b$ (repeated in all three lines) should read $e^\alpha_ae^\beta_b$.
+- [Correctness] Missing semantic macro: $k^\beta$ is bare in $[C_{A\mechanical{\lambda}}]=\frac12\gamma_{\alpha\beta}e^\alpha_Ak^\beta$; use $\mechanical{k}^\beta$.
+
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.11.4 Summary.md
+- [Correctness] Missing semantic macro: $e^\alpha_Ak^\beta$ in the $\energy{S^{\alpha\beta}}$ formula should use $\mechanical{k}^\beta$.
+
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.11.5 Parameterization of the null generators.md
+- [Correctness] The observer factor is mis-transformed: "$(-\bar{\mechanical{k}}_\mu\mechanical{u}^\mu)^{-1}=e^\beta(-\mechanical{k}_\mu\mechanical{u}^\mu)$" should be $e^\beta(-\mechanical{k}_\mu\mechanical{u}^\mu)^{-1}$, since $\bar{\mechanical{k}}^\alpha=e^{-\beta}\mechanical{k}^\alpha$; only then is $(-\mechanical{k}_\mu\mechanical{u}^\mu)^{-1}\energy{S^{\alpha\beta}}$ invariant.
+- [Correctness] Symbol clashes: $e^\beta$ (exponential of the reparameterization function $\beta$) sits next to basis vectors $e^\alpha_A$ and the index $\beta$; $\mechanical{\sigma}_{\alpha\beta}$ (shear) and $\sqrt\sigma$ (determinant) clash with the two-metric $\sigma_{AB}$; $\mechanical{\theta}$ (expansion) clashes with $\theta^A$; use an upright $\mathrm e^{\beta}$ (or a named factor) and a distinct shear symbol.
+
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.11.7 Accreting black hole.md
+- [Correctness] "$\mechanical{\Omega_{\mathrm{relative}}}=\mechanical{j^\psi}/\energy{\mu}=3\mechanical{M}\mechanical{a}f/(2\mechanical{m}\mechanical{r}^2)$" is inconsistent: $\mechanical{j^\psi}/\energy{\mu}=3\mechanical{M}\mechanical{a}/(2\mechanical{m}\mechanical{r}^2)$ without $f$; since $\mathrm d\mechanical{\phi}/\mathrm d\mechanical{t}=\mechanical{\ell}^\phi/\mechanical{\ell}^t=f\mechanical{\ell}^\phi$, the correct statement is $\mechanical{\Omega_{\mathrm{relative}}}=f\,\mechanical{j^\psi}/\energy{\mu}$.
+
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.11.8 Cosmological phase transition.md
+- [Correctness] Index typo: $\energy{S^{\alpha\beta}}=\mechanical{p}\sigma^{AB}e^\alpha_Ae^\alpha_B$ should be $\mechanical{p}\sigma^{AB}e^\alpha_Ae^\beta_B$.
+
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.13 Problems.md
+- [Correctness] Problem 9 quotes "the general relation $\mechanical{p}\mechanical{\theta}=[\energy{T_{\alpha\beta}}\mechanical{k^\alpha}\mechanical{k^\beta}]$", but Eqs. (3.102)-(3.104) give $-\mechanical{p}\mechanical{\theta}=[\energy{T_{\alpha\beta}}\mechanical{k}^\alpha\mechanical{k}^\beta]$ (as also used in 3.11.8); fix the sign.
+- [Correctness] Problem 8 says "Derive the relations (3.109)", but 3.11.5 assigns Problem 8 the derivation of the surface-quantity transformations (3.110); check against the source and make the two notes agree.
+
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.2.1 Surface element (non-null case).md
+- [Correctness] The physical-quantities table lists $\theta^A$, $\mechanical{u}$, $d\Sigma_t$ and $d\Sigma_x$, which this note never uses (only $d\Sigma_\mu$ with $\delta_\mu^t$, $\delta_\mu^x$ appears); remove them.
+
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.2.2 Surface element (null case).md
+- [Correctness] In the inverse-metric matrix, the $\Phi\lambda$ entries should be $-1$, not $+1$: with $k_\Phi\stackrel{*}{=}-1$, $k^\lambda\stackrel{*}{=}1$ and $N^\Phi\stackrel{*}{=}1$, Eq. (3.13) gives $g^{\Phi\lambda}=-N^\Phi k^\lambda=-1$ (equivalently $k^\lambda=g^{\lambda\Phi}k_\Phi=1$). The determinant result $\det\mathbf g^{-1}=-\det[\sigma^{AB}]$ is unaffected.
+
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.2.3 Element of two-surface.md
+- [Correctness] The physical-quantities table lists $dS_{tx},dS_{xt}$ and $n^\Phi$, which this note never uses; remove them.
+
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.4.1 Tangent tensor fields.md
+- [Correctness] The physical-quantities table lists $h_{\alpha\beta}$, which the note never uses (only $h^{\alpha\beta}$ and $h^\alpha{}_\mu$ appear); replace it with $h^\alpha{}_\mu$ or drop it.
+
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.6.5 Spherical space, moment of time symmetry.md
+- [Correctness] Symbol clash: a prime means $d/dr$ in $m'$, but $r'$ in the integral is a dummy integration variable. Rename the dummy variable (for example $\bar r$) so that $r'$ is not read as a derivative.
+
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.8 Oppenheimer-Snyder collapse.md
+- [Correctness] Symbol clash: $\mechanical{a}$ is the scale factor and $\mechanical{a^\alpha}$ is the four-acceleration in the same note (for example $K_{\tau\tau}=-a^\alpha n_\alpha$ next to $K^\theta{}_\theta=a^{-1}\cot\chi_0$). Rename the acceleration (for example $\alpha^\alpha$ or $\dot u^\alpha$) and update the table.
+
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/04 Lagrangian and Hamiltonian formulations of general relativity/4.1.7 Nondynamical term.md
+- [Correctness] Symbol clash: $R$ is the Ricci scalar ("Then $R=0$") and $\mechanical{R}$ is the cylinder radius ("$r=R$", "$R\to\infty$") in the same note; rename the radius (e.g. $r_0$) and update the table.
+
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/04 Lagrangian and Hamiltonian formulations of general relativity/4.2.6 Gravitational Hamiltonian.md
+- [Correctness] The table describes $\mathcal H_G$ as "The gravitational energy density"; this is misleading because the volume part $N(K^{ab}K_{ab}-K^2-{}^3R)-2N_a(K^{ab}-Kh^{ab})_{|b}$ is a combination of the constraints and vanishes for vacuum solutions (4.2.8–4.2.9); describe it as the volume (constraint) part of the Hamiltonian density.
+
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/04 Lagrangian and Hamiltonian formulations of general relativity/4.2.7 Variation of the Hamiltonian.md
+- [Correctness] The "three-dimensional version of Eq. (4.17)" and $\delta k=\tfrac12h^{ab}\delta h_{ab,c}r^c$ should use the projector onto $S_t$, $\sigma^{ab}=\sigma^{AB}e^a_Ae^b_B$, not the full $h^{ab}=r^ar^b+\sigma^{ab}$ (the $r^ar^br^c\delta h_{ab,c}$ piece does not vanish in general, exactly as $h^{\alpha\beta}$ in Eq. (4.17) is the boundary projector); the cancellation between $\delta_h\hat H_\Sigma$ and $\delta_h\hat H_S$ is unaffected because both terms change the same way.
+
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/04 Lagrangian and Hamiltonian formulations of general relativity/4.3.2 Mass and angular momentum for stationary, axially symmetric spacetimes.md
+- [Correctness] The table calls $K_{\phi r}$ a "mixed coordinate component"; it is a fully covariant off-diagonal component ("mixed" normally means one upper and one lower index). Reword to "off-diagonal covariant component".
+
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/04 Lagrangian and Hamiltonian formulations of general relativity/4.3.5 Distinction between ADM and Bondi-Sachs masses -  Vaidya spacetime.md
+- [Correctness] Symbol clash for $t$: in $u=t-r-2M\ln(r/2M-1)$ it is the Schwarzschild time, but later $t\equiv u+r$ defines the slicing time, which differs from it by $2M\ln(r/2M-1)$; rename one (e.g. $t_s$ for Schwarzschild time) and note the difference.
+- [Correctness] Symbol clash for $M$: it denotes the constant Schwarzschild mass in the definition of $u$ and also the surface functional $M(S)$, while the table lists only "original mass"; rename $M(S)$ (e.g. $\mathcal M(S)$) or add it to the table.
+
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/04 Lagrangian and Hamiltonian formulations of general relativity/4.3.6 Transfer of mass and angular momentum.md
+- [Correctness] In $\varepsilon^\alpha{}_{;\alpha}=-T^{\alpha\beta}{}_{;\alpha}\xi_{(t)\beta}+T^{\alpha\beta}\xi_{(t)\beta;\alpha}$ the second term must carry a minus sign, $-T^{\alpha\beta}\xi_{(t)\beta;\alpha}$ (both terms vanish, so the conclusion is unchanged).
+
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.1.4 Painlevé-Gullstrand coordinates.md
+- [Correctness] "an alternative coordinate system is produced that covers regions **VI** and **I**" — there is no region VI; it should be regions **IV** and **I** (the white-hole and exterior regions), as in [[5.1.3 Eddington-Finkelstein coordinates]].
+
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.1.7 Apparent horizon.md
+- [Correctness] Symbol clash: $\theta$ is both the expansion ($\theta=k^\alpha{}_{;\alpha}$) and the polar angle in $|g|^{1/2}=|g_{UV}|r^2\sin\theta$; the table lists both. Rename the angle locally (for example $\vartheta$) or write the expansion as $\Theta$.
+
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.1.9 Killing horizon.md
+- [Correctness] "$g_{\alpha\beta}t^\alpha t^\beta=1-\frac{2M}{r}$" has the wrong sign: $g_{\alpha\beta}t^\alpha t^\beta=g_{tt}=-(1-2M/r)$, negative (timelike) outside and positive (spacelike) inside, as the preceding sentence says.
+
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.2.2 Kruskal coordinates.md
+- [Correctness] With Eq. (5.26) as written ($U_-=\mp e^{\kappa_-u}$, $V_-=e^{-\kappa_-v}$), $U_-V_-=-\kappa_-(r-r_-)$, so $f\simeq+2U_-V_-$ and $\mathrm ds^2\simeq+\frac{2}{\kappa_-^2}\mathrm dU_-\mathrm dV_-$, not "$f\simeq-2U_-V_-$" and "$-\frac{2}{\kappa_-^2}$". Fix the sign convention, for example $V_-=-e^{-\kappa_-v}$, after checking the source.
+
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.3.4 Event horizon -  stationary observers.md
+- [Correctness] "where $\omega=-g_{t\phi}/g_{tt}$" is wrong; the frame-dragging rate is $\omega=-g_{t\phi}/g_{\phi\phi}$ (Eq. 5.45). Only this form makes the last line of the $\gamma^{-2}$ derivation correct.
+
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.3.9 Maximal extension of the Kerr spacetime.md
+- [Correctness] Eq. (5.75) reads "$U_-=\mp e^{\kappa_-u},\ V_+=-e^{-\kappa_-v}$"; the second coordinate must be $V_-=-e^{-\kappa_-v}$ (the metric is then written in terms of $\mathrm dU_-\,\mathrm dV_-$).
+

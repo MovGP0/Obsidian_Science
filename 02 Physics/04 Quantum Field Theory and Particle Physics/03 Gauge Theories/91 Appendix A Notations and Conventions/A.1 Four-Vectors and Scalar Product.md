@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Four-Vectors and Scalar Product"
 source_pdf: "D:\\GitHub\\books\\dokumen.pub_gauge-theories-of-the-strong-weak-and-electromagnetic-interactions-second-edition-secondnbsped-9781400848225.pdf"
 source_page: "433"
@@ -51,6 +51,8 @@ $$
 \mechanical{x}^2=\mechanical{x}^\mu\cdot\mechanical{x}_\mu
 =\signal{t}^2-\mechanical{\mathbf{x}}^2. \tag{A.1.4}
 $$
+
+Here $\mechanical{x}^2$ is the invariant square of the four-vector. In (A.1.1), $\mechanical{x}^2$ is the second spatial component and $\mechanical{x}$ is also the first spatial coordinate. The context shows which meaning applies.
 
 Thus a general scalar product is
 

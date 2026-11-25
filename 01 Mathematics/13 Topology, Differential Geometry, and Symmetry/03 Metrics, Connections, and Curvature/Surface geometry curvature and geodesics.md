@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Surface geometry curvature and geodesics"
 catalogue_ids:
   - "3.6.3"
@@ -27,7 +27,7 @@ $$
 n=\frac{r_u\times r_v}{\|r_u\times r_v\|}.
 $$
 
-Changing parameter orientation reverses this normal. For a regular implicit level surface $F(x,y,z)=0$, a normal is $\nabla F=(F_x,F_y,F_z)\ne0$, and the tangent plane is $\nabla F(P)\cdot(X-P)=0$. The gradient is perpendicular to all surface-curve tangents by the chain rule. [Tumarkin's tangent-plane notes](https://www.maths.dur.ac.uk/users/pavel.tumarkin/past/fall16/DG/outline_term1_7.pdf) present both constructions.
+Changing parameter orientation reverses this normal. For a regular implicit level surface $\Phi(x,y,z)=0$, a normal is $\nabla\Phi=(\Phi_x,\Phi_y,\Phi_z)\ne0$, and the tangent plane is $\nabla\Phi(P)\cdot(X-P)=0$. The gradient is perpendicular to all surface-curve tangents by the chain rule. [Tumarkin's tangent-plane notes](https://www.maths.dur.ac.uk/users/pavel.tumarkin/past/fall16/DG/outline_term1_7.pdf) present both constructions.
 
 For example, $z=x^2+y^2$ has normal $(-2x,-2y,1)$. At $P=(1,0,1)$ the tangent plane is $-2(x-1)+(z-1)=0$, or $z=2x-1$. Substituting $P$ checks the constant. The tangent plane generally meets the surface at more than one point; tangency describes local first-order agreement.
 
@@ -46,15 +46,15 @@ On a cylinder $r(u,v)=(R\cos u,R\sin u,v)$, $E=R^2$, $F=0$, $G=1$. Thus $ds^2=R^
 
 ## Curvature of a surface
 
-A surface can bend differently in different tangent directions. With a chosen normal, define second-form coefficients $e=n\cdot r_{uu}$, $f=n\cdot r_{uv}$, $g=n\cdot r_{vv}$. For tangent parameters $(a,b)\ne(0,0)$ the **normal curvature** is
+A surface can bend differently in different tangent directions. With a chosen normal, define second-form coefficients $L=n\cdot r_{uu}$, $M=n\cdot r_{uv}$, $N=n\cdot r_{vv}$. For tangent parameters $(a,b)\ne(0,0)$ the **normal curvature** is
 
 $$
-k_n=\frac{ea^2+2fab+gb^2}{Ea^2+2Fab+Gb^2}.
+k_n=\frac{La^2+2Mab+Nb^2}{Ea^2+2Fab+Gb^2}.
 $$
 
 Its maximum and minimum values are the principal curvatures $k_1,k_2$. Define Gaussian curvature $K=k_1k_2$ and mean curvature $H=(k_1+k_2)/2$. Reversing $n$ reverses both principal curvatures and $H$, but leaves $K$ unchanged. These definitions agree with the shape operator $-dn$; [Tumarkin's Gauss-map notes](https://www.maths.dur.ac.uk/users/pavel.tumarkin/past/fall16/DG/outline_term2_9.pdf) give the advanced development.
 
-With the upward normal, the paraboloid $z=x^2+y^2$ has at the origin $E=G=1$, $F=0$, $e=g=2$, $f=0$. Every tangent direction therefore has normal curvature $2$, giving $K=4$. For the saddle $z=x^2-y^2$, the same point instead has principal curvatures $2,-2$ and $K=-4$. Positive $K$ means bending with the same sign in all principal directions; negative $K$ means saddle bending. A plane has both curvatures zero.
+With the upward normal, the paraboloid $z=x^2+y^2$ has at the origin $E=G=1$, $F=0$, $L=N=2$, $M=0$. Every tangent direction therefore has normal curvature $2$, giving $K=4$. For the saddle $z=x^2-y^2$, the same point instead has principal curvatures $2,-2$ and $K=-4$. Positive $K$ means bending with the same sign in all principal directions; negative $K$ means saddle bending. A plane has both curvatures zero.
 
 ## Ruled and developable surfaces
 

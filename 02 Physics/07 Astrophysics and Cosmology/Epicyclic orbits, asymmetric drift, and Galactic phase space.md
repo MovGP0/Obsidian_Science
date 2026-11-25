@@ -269,7 +269,7 @@ d^3\mechanical{\mathbf v}}{n(\mechanical{\mathbf x},t)},
 \qquad n\langle\mechanical{\mathbf v}\rangle=\iiint f\mechanical{\mathbf v}\,d^3\mechanical{\mathbf v}.
 $$
 
-The derivation assumes a time-independent potential and conserves the number of stars. Strong encounters are negligible. The stars respond to the large-scale potential $\energy{\Phi}$, so the system is collisionless.
+The derivation conserves the number of stars and requires a smooth potential. The potential can depend on time. Strong encounters are negligible. The stars respond to the large-scale potential $\energy{\Phi}$, so the system is collisionless.
 
 ##### Phase-space flow
 
@@ -466,58 +466,36 @@ Kyle Kabasares, *Intro to Astrophysics (Physics 240A, UC Irvine 2018)*.
 
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
-| — | $\unit{\mathrm{rad}}$ | Plane angle | Angle measured in degrees, arcminutes, arcseconds, or radians. |
-| — | $\unit{\mathrm{sr}}$ | Solid angle | Angular extent measured in steradians or square degrees. |
-| $k$ | $\unit{erg\cdot K^{-1}}$ | Boltzmann constant | Relates temperature to energy. |
-| $\sigma$ | $\unit{erg\cdot s^{-1}\cdot cm^{-2}\cdot K^{-4}}$ | Stefan–Boltzmann constant | Relates blackbody flux to the fourth power of temperature. |
-| $m$ | 1 | Apparent magnitude | Logarithmic measure of observed flux relative to a zero point. |
-| $b$ | 1 | Softening constant | Sets the low-flux scale of the inverse hyperbolic sine magnitude. |
-| $\mechanical{a},\,\mechanical{a}_0$ | $\unit{cm}$ | Atmospheric path lengths | Slant and vertical distances through the atmosphere. |
-| $A$ | 1 | Extinction | Increase in apparent magnitude caused by attenuation. |
-| $n$ | $\unit{cm^{-3}}$ | Grain number density | Number of dust grains per unit volume. |
-| $\mechanical{x}$ | $\unit{cm}$ | Path length | Distance traveled through the dust. |
-| $\mechanical{R}_0$ | $\unit{kpc}$ | Solar Galactocentric distance | Distance from the Sun to the Galactic center. |
+| $k$ | $\unit{erg\cdot K^{-1}}$ | Boltzmann constant | Relates temperature to energy in the cluster escape estimate. |
+| $\thermal{T}$ | $\unit{K}$ | Kinetic temperature | Temperature of the stellar velocity distribution in a cluster. |
+| $\mechanical{m}$ | $\unit{g}$ | Stellar mass | Mass of one star. |
+| $\mechanical{v}$, $\mechanical{v}_{\mathrm{esc}}$ | $\unit{km\cdot s^{-1}}$ | Stellar speed | Speed of a star, and the root-mean-square escape speed. |
+| $\mathcal L$ | $\unit{erg}$ | Lagrangian | Kinetic energy minus potential energy of a star. |
+| $\energy{T}$, $\energy{U}$ | $\unit{erg}$ | Kinetic and potential energy | Energies of a star in the Lagrangian. |
 | $\mechanical{R},\,\mechanical{z}$ | $\unit{kpc}$ | Galactocentric radius and height | Cylindrical radius from the Galactic axis and height from the Galactic plane. |
-| $\phi$ | $\unit{rad}$ | Galactocentric azimuth | Azimuthal angle around the Galactic axis. |
-| $\mechanical{v}_r,\,\mechanical{v}_t$ | $\unit{km\cdot s^{-1}}$ | Radial and transverse velocity | Components parallel and perpendicular to the line of sight. |
-| $\beta,\,\gamma$ | 1 | Speed ratio and Lorentz factor | Radial speed in units of light speed and its associated relativistic factor. |
-| $\mechanical{M}_1,\,\mechanical{M}_2$ | $\unit{g}$ | Stellar masses | Masses of the binary components. |
-| $\mechanical{r}_1,\,\mechanical{r}_2$ | $\unit{cm}$ | Orbital radii | Distances of the stars from their common center of mass. |
-| $\mechanical{v}_1,\,\mechanical{v}_2$ | $\unit{cm\cdot s^{-1}}$ | Orbital speeds | Speeds of the stars about their center of mass. |
-| $G$ | $\unit{cm^3\cdot g^{-1}\cdot s^{-2}}$ | Gravitational constant | Constant in Newton’s law of gravitation. |
-| $\mechanical{k}_1,\,\mechanical{k}_2$ | $\unit{km\cdot s^{-1}}$ | Radial velocity amplitudes | Peak projected orbital speeds of the two components. |
-| $\mechanical{M}$ | $\unit{g}$ | Stellar mass | Mass in the main-sequence scaling relations. |
-| $\mechanical{R}$ | $\unit{km}$ | Stellar radius | Radius in the main-sequence scaling relation. |
-| $\mechanical{R}_{\odot},\,\mechanical{R}_{\mathrm{Earth}}$ | $\unit{km}$ | Solar and terrestrial radii | Reference radii of the Sun and Earth. |
-| $\mechanical{R}_{\mathrm p},\,\mechanical{R}_{\star}$ | $\unit{cm}$ | Planet and stellar radii | Radii that set the projected transit geometry. |
-| $e$ | 1 | Orbital eccentricity | Deviation of the orbit from a circle. |
-| $X$ | 1 | Airmass | Relative path length through the atmosphere. |
-| $\mechanical{m}$ | $\unit{g}$ | Planet mass | Mass of the orbiting planet. |
-| $n$ | $\unit{pc^{-3}}$ | Stellar number density | Number of stars per unit volume. |
-| $\Omega$ | $\unit{sr}$ | Solid angle | Angular area of the selected sky cone. |
-| $\nu(\mechanical{\mathbf{x}}),\,\nu(\mechanical{s})$ | — | Spatial distribution factor | Position-dependent part of the separable luminosity function. |
-| $\sigma$ | 1 | Absolute-magnitude dispersion | Standard deviation of the Gaussian magnitude distribution. |
-| $\mechanical{\sigma}$ | $\unit{km\cdot s^{-1}}$ | Velocity dispersion | Standard deviation of velocities along the chosen direction. |
-| $n(\mechanical{R},\mechanical{z},S),\,n_0$ | $\unit{pc^{-3}}$ | Disk stellar number density | Density of the stellar class $S$ at the given position and its central normalization. |
-| $\mechanical{h}_R(S),\,\mechanical{h}_z(S)$ | $\unit{kpc}$ | Radial and vertical scale lengths | E-folding distances of the disk density profile. |
-| $\mechanical{\sigma}_z$ | $\unit{km\cdot s^{-1}}$ | Vertical velocity dispersion | Spread of stellar velocities perpendicular to the disk. |
-| $\mechanical{v}_c,\,\mechanical{v}_{\mathrm{tang}}$ | $\unit{km\cdot s^{-1}}$ | Circular and tangential velocities | Orbital speeds along the direction of rotation. |
-| $A$ | $\unit{km\cdot s^{-1}\cdot kpc^{-1}}$ | First Oort constant | Local rotational shear inferred from the longitude dependence of radial velocities. |
-| $B$ | $\unit{km\cdot s^{-1}\cdot kpc^{-1}}$ | Second Oort constant | Offset in the nearby tangential velocity per unit distance. |
+| $\phi$, $\phi_0$ | $\unit{rad}$ | Galactocentric azimuth | Azimuthal angle around the Galactic axis, and its initial value. |
+| $t$ | $\unit{s}$ | Time | Time coordinate of the orbit. |
 | $\energy{\Phi}$ | $\unit{erg\cdot g^{-1}}$ | Gravitational potential | Potential energy per unit test mass. |
-| $\mechanical{\rho}$ | $\unit{g\cdot cm^{-3}}$ | Mass density | Mass per unit volume in the continuous gravitational model. |
-| $\mechanical{L}_z$ | $\unit{cm^2\cdot s^{-1}}$ | Specific angular momentum | Conserved angular momentum about the symmetry axis per unit mass. |
 | $\energy{\Phi}_{\mathrm{eff}}$ | $\unit{erg\cdot g^{-1}}$ | Effective potential | Gravitational potential plus the centrifugal term. |
+| $\mechanical{L}_z$ | $\unit{cm^2\cdot s^{-1}}$ | Specific angular momentum | Conserved angular momentum about the symmetry axis per unit mass. |
 | $\mechanical{R}_g$ | $\unit{kpc}$ | Guiding radius | Radius of the circular orbit at the minimum of the effective potential. |
-| $\mechanical{\Omega}$ | $\unit{rad\cdot s^{-1}}$ | Circular angular speed | Angular speed of the guiding orbit. |
+| $\mechanical{R}_0$ | $\unit{kpc}$ | Solar Galactocentric distance | Distance from the Sun to the Galactic center. |
+| $\mechanical{\Omega}$ | $\unit{rad\cdot s^{-1}}$ | Circular angular speed | Angular speed of a circular orbit at a given radius. |
 | $\mechanical{\kappa}$ | $\unit{rad\cdot s^{-1}}$ | Epicyclic angular frequency | Frequency of small radial oscillations about the guiding orbit. |
+| $\mechanical{x}$, $\mechanical{y}$ | $\unit{pc}$ | Local coordinates | Radial and tangential displacements from the guiding center or the local standard of rest. |
 | $\mechanical{X}$ | $\unit{pc}$ | Epicycle amplitude | Maximum radial displacement from the guiding orbit. |
 | $\psi$ | $\unit{rad}$ | Epicycle phase | Initial phase of the radial oscillation. |
-| $\mechanical{v}_x,\,\mechanical{v}_y$ | $\unit{km\cdot s^{-1}}$ | Local velocity components | Radial and tangential components relative to the local standard of rest. |
-| $\mechanical{\sigma}_x,\,\mechanical{\sigma}_y$ | $\unit{km\cdot s^{-1}}$ | In-plane velocity dispersions | Spreads of the radial and tangential components. |
+| $\mechanical{v}_x,\,\mechanical{v}_y,\,\mechanical{v}_z$ | $\unit{km\cdot s^{-1}}$ | Velocity components | Velocity components relative to the local standard of rest. |
+| $\mechanical{\sigma}$, $\mechanical{\sigma}_x,\,\mechanical{\sigma}_y,\,\mechanical{\sigma}_z$ | $\unit{km\cdot s^{-1}}$ | Velocity dispersions | Spreads of the stellar velocities, in general and along each direction. |
+| $\mechanical{M}$ | $\unit{g}$ | Dynamical mass | Mass inferred from rotation and velocity dispersion. |
+| $G$ | $\unit{cm^3\cdot g^{-1}\cdot s^{-2}}$ | Gravitational constant | Constant in Newton’s law of gravitation. |
+| $\mechanical{v}_{\mathrm{circ}}$, $\mechanical{v}_c$ | $\unit{km\cdot s^{-1}}$ | Circular velocity | Orbital speed of a circular orbit. |
 | $\mechanical{v}_{\mathrm{rot}}$ | $\unit{km\cdot s^{-1}}$ | Rotation speed | Ordered azimuthal motion contributing to the dynamical mass estimate. |
 | $\mechanical{\Omega}_{\mathrm b}$ | $\unit{rad\cdot s^{-1}}$ | Bar pattern speed | Angular speed of the rotating Galactic bar. |
+| $m$ | 1 | Azimuthal harmonic number | Order of the bar perturbation in the Lindblad resonance condition. |
 | $f(\mechanical{\mathbf x},\mechanical{\mathbf v},t)$ | $\unit{pc^{-3}\cdot(km\cdot s^{-1})^{-3}}$ | Stellar phase-space distribution | Number of stars per unit spatial and velocity volume. |
+| $n$ | $\unit{pc^{-3}}$ | Stellar number density | Number of stars per unit volume. |
 | $\langle\mechanical{\mathbf v}\rangle$ | $\unit{km\cdot s^{-1}}$ | Mean stellar velocity | First velocity moment divided by the local number density. |
+| $d\mathcal V$ | $\unit{pc^3\cdot(km\cdot s^{-1})^3}$ | Phase-space volume element | Product of the position and velocity differentials. |
+| $\mechanical{\rho}$ | $\unit{g\cdot cm^{-3}}$ | Mass density | Total mass per unit volume in Poisson’s equation. |
 | $\mechanical{\Sigma}(<\mechanical{z})$ | $\unit{M_{\odot}\cdot pc^{-2}}$ | Surface mass density | Mass per unit area between the two stated heights about the disk midplane. |
-| $\mechanical{M}_{\mathrm g},\,\mechanical{M}_{\mathrm h}$ | $\unit{M_{\odot}}$ | Gas mass and gas-phase heavy-element mass | Total gas mass and the mass of metals contained in that gas. |

@@ -60,7 +60,7 @@ $$
 In part (a), the notes use $\energy{I}=\electric{E}_0\magnetic{B}_0/(2\magnetic{\mu}_0)$, $\electric{E}_0=\mechanical{c}\magnetic{B}_0$, and $\energy{I}=\energy{P}/\mechanical{A}$. For an absorbing object, radiation pressure and Newton’s second law give
 
 $$
-\mechanical{p}_{\mathrm{rad}}=\frac{\energy{I}}{\mechanical{c}},
+\mechanical{P}_{\mathrm{rad}}=\frac{\energy{I}}{\mechanical{c}},
 \qquad
 \mechanical{F}_{\mathrm{rad}}=\frac{\energy{I}\mechanical{A}}{\mechanical{c}}
 =\mechanical{m}\mechanical{a},
@@ -226,19 +226,22 @@ Kyle Kabasares, *Electricity and Magnetism (Physics 9H, UC Merced 2014)*.
 
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
-| $\mechanical{r}$ | $\unit{m}$ | Radial distance | The distance from a source, axis, or center. |
 | $\mechanical{x}$, $\mechanical{y}$, $\mechanical{z}$ | $\unit{m}$ | Position coordinates | The coordinates in the spatial derivatives. |
-| $\mechanical{d}$ | $\unit{m}$ | Separation or diameter | The separation of charges, plates, or slits, or the wire diameter. |
-| $\mechanical{m}$ | $\unit{kg}$ | Object mass | The mass supported by the electric force or suspended by the string. |
+| $\mechanical{d}$ | $\unit{m}$ | Slit separation | The distance between the two slits. |
+| $\mechanical{d}_a$, $\mechanical{d}_p$ | $\unit{m}$ | Distances | The two distances in discussion question 8. |
+| $\mechanical{m}$ | $\unit{kg}$ | Object mass | The mass of the absorbing object, of the atom, or of the pendulum bob. |
+| $m$ | 1 | Fringe order | The integer order of a bright fringe. |
 | $\mechanical{g}$ | $\unit{m\,s^{-2}}$ | Gravitational acceleration | The acceleration used for weight and gravitational potential energy. |
 | $\theta$, $\mechanical{\theta}$ | $\unit{rad}$ | Angle | A geometric angle used in projections, polarization, and ray diagrams. |
 | $\mechanical{a}$ | $\unit{m\,s^{-2}}$ | Acceleration | The force per unit mass of the ion or test object. |
-| $\mechanical{s}$ | $\unit{m}$ | Dipole separation | The distance between the two charges of the dipole. |
-| $\mechanical{L}$ | $\unit{m}$ | Length | The length of a charge distribution or pendulum, or the distance to the screen. |
-| $\mechanical{A}$ | $\unit{m^2}$ | Area | The area over which the surface charge is distributed. |
-| $\mechanical{R}$ | $\unit{m}$ | Radius | The radius of a sphere, disk, wire, or coil, or the radius of curvature of a mirror. |
+| $\mechanical{L}$ | $\unit{m}$ | Length | The length of the pendulum, or the distance to the screen. |
+| $y$, $y_m$, $\Delta y$ | $\unit{m}$ | Fringe position and spacing | The displacement along the screen, the position of fringe $m$, and the spacing of adjacent fringes. |
+| $\mechanical{\ell}$ | $\unit{m}$ | Side length | The side length of the square cross section of the absorbing object. |
+| $\mechanical{D}_1$, $\mechanical{D}_2$ | $\unit{m}$ | Wave displacement | The displacements of the two superposed waves. |
+| $\mechanical{D}_{01}$, $\mechanical{D}_{02}$ | $\unit{m}$ | Displacement amplitude | The amplitudes of the two superposed waves. |
+| $\mechanical{A}$ | $\unit{m^2}$ | Area | The cross-sectional area of the absorbing object. |
 | $t$, $\signal{t}$, $\Delta\signal{t}$ | $\unit{s}$ | Time and elapsed time | The time coordinate or the duration of a process. |
-| $\energy{P}$ | $\unit{W}$ | Electrical power | The rate of electrical energy transfer in the resistive element. |
+| $\energy{P}$ | $\unit{W}$ | Power | The power of the light beam or pulse. |
 | $\mechanical{v}$ | $\unit{m\,s^{-1}}$ | Speed | The speed of a particle or of a wave in the medium. |
 | $\energy{K}$ | $\unit{J}$ | Kinetic energy | The energy of a particle moving at the selected speed. |
 | $\magnetic{\mu}_0$ | $\unit{T\,m\,A^{-1}}$ | Vacuum permeability | The magnetic constant in the current-element and moving-charge formulas. |
@@ -249,11 +252,11 @@ Kyle Kabasares, *Electricity and Magnetism (Physics 9H, UC Merced 2014)*.
 | $\signal{\lambda}$ | $\unit{m}$ | Wavelength | Spatial period of the wave. |
 | $\electric{E}_0$, $\electric{\vec E}_0$ | $\unit{V\,m^{-1}}$ | Electric-field amplitude | Scalar or vector amplitude in the sinusoidal wave solution. |
 | $\mechanical{c}$ | $\unit{m\,s^{-1}}$ | Speed of light in vacuum | Propagation speed obtained from Maxwell’s equations. |
-| $\magnetic{\mu}$ | $\unit{T\,m\,A^{-1}}$ | Permeability | Magnetic response parameter for the medium. |
 | $\magnetic{B}_0$ | $\unit{T}$ | Magnetic-field amplitude | Peak magnetic field of the traveling wave. |
 | $\energy{I}$ | $\unit{W\,m^{-2}}$ | Intensity | Time-averaged energy flux magnitude. |
+| $\energy{I}_0$, $\energy{I}_1$, $\energy{I}_2$, $\energy{I}_3$ | $\unit{W\,m^{-2}}$ | Polarizer intensities | The incident intensity and the intensities after each polarizer. |
 | $\mechanical{p}$ | $\unit{kg\,m\,s^{-1}}$ | Momentum | Radiation transfers momentum when absorbed or reflected. |
-| $\mechanical{p}_{\mathrm{rad}}$ | $\unit{Pa}$ | Radiation pressure | Force per unit area exerted by incident light. |
+| $\mechanical{P}_{\mathrm{rad}}$ | $\unit{Pa}$ | Radiation pressure | Force per unit area exerted by incident light. |
 | $\Delta\mechanical{r}$ | $\unit{m}$ | Path length difference | Difference in distance traveled by the two interfering waves. |
 | $\mechanical{v}_{\mathrm{rms}}$ | $\unit{m\,s^{-1}}$ | Root-mean-square speed | Thermal speed used to estimate the atom’s initial speed. |
 | $\thermal{T}$ | $\unit{K}$ | Absolute temperature | Temperature in the thermal speed estimate. |

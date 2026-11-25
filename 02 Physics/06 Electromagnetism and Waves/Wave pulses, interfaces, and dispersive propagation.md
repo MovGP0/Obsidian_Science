@@ -7,15 +7,15 @@ title: "Wave pulses, interfaces, and dispersive propagation"
 
 ## Worked lecture material
 
-At $\mechanical{t}=0$, let $\signal{k}_i=1/\signal{\lambda}_i$, measured in cycles per metre. The angular wave number is $2\pi\signal{k}_i$ in this convention. The sum of the two sine waves is
+At $\mechanical{t}=0$, let $\signal{\sigma}_i=1/\signal{\lambda}_i$, measured in cycles per metre. The angular wave number is $2\pi\signal{\sigma}_i$ in this convention. The sum of the two sine waves is
 
 $$
 \begin{aligned}
 \mechanical{y}(\mechanical{x},0)
-&=\mechanical{A}\sin(2\pi\signal{k}_1\mechanical{x})+\mechanical{A}\sin(2\pi\signal{k}_2\mechanical{x})\\
+&=\mechanical{A}\sin(2\pi\signal{\sigma}_1\mechanical{x})+\mechanical{A}\sin(2\pi\signal{\sigma}_2\mechanical{x})\\
 &=2\mechanical{A}
-\sin[\pi(\signal{k}_1+\signal{k}_2)\mechanical{x}]
-\cos[\pi(\signal{k}_1-\signal{k}_2)\mechanical{x}].
+\sin[\pi(\signal{\sigma}_1+\signal{\sigma}_2)\mechanical{x}]
+\cos[\pi(\signal{\sigma}_1-\signal{\sigma}_2)\mechanical{x}].
 \end{aligned}
 $$
 
@@ -242,7 +242,7 @@ A string has $\mechanical{\mu}=0.1\,\unit{kg\,m^{-1}}$, tension $50\,\unit{N}$, 
 $$
 \mechanical{v}=\sqrt{\frac{\mechanical{T}}{\mechanical{\mu}}}\simeq22.4\,\unit{m\,s^{-1}},
 \qquad
-\signal{\lambda}=\mechanical{v}\signal{T}\simeq2.2\,\unit{m}.
+\signal{\lambda}=\mechanical{v}\signal{T}\simeq2.24\,\unit{m}.
 $$
 
 In $\mechanical{y}=\mechanical{A}\sin[(2\pi/\signal{\lambda})(\mechanical{x}-\mechanical{v}\mechanical{t})+\signal{\phi}]$, the condition $\mechanical{y}(0,0)=0.01\,\unit{m}$ gives $\sin\signal{\phi}=1/2$. Negative initial transverse velocity requires $\cos\signal{\phi}>0$, so $\signal{\phi}=\pi/6$ modulo $2\pi$.
@@ -252,7 +252,7 @@ Using the rounded speed and wavelength from the preceding page, the sinusoidal w
 $$
 \mechanical{y}(\mechanical{x},\mechanical{t})
 =(0.02\,\unit{m})\sin\left[
-\frac{2\pi}{2.2\,\unit{m}}
+\frac{2\pi}{2.24\,\unit{m}}
 \big(\mechanical{x}-(22.4\,\unit{m\,s^{-1}})\mechanical{t}\big)
 +\frac{\pi}{6}
 \right].
@@ -288,11 +288,11 @@ For a single wave, the trace at $1\,\unit{m}$ leads the trace at $0$ by $\pi/8$ 
 
 In a nondispersive medium, all wavelengths propagate at the same speed. An ideal string with $\mechanical{v}=\sqrt{\mechanical{T}/\mechanical{\mu}}$ is an example. The notes give atmospheric waves and deep-water gravity waves as dispersive examples. In deep water the shorter gravity wavelengths have lower phase speeds.
 
-For this derivation write $\signal{k}_i=1/\signal{\lambda}_i$ in cycles per metre and $\signal{f}_i=\mechanical{v}_i/\signal{\lambda}_i$. Consider two nearby wavelengths with equal amplitudes:
+For this derivation write $\signal{\sigma}_i=1/\signal{\lambda}_i$ in cycles per metre and $\signal{f}_i=\mechanical{v}_i/\signal{\lambda}_i$. Consider two nearby wavelengths with equal amplitudes:
 
 $$
 \mechanical{y}_i
-=\mechanical{A}\sin[2\pi(\signal{k}_i\mechanical{x}-\signal{f}_i\mechanical{t})],
+=\mechanical{A}\sin[2\pi(\signal{\sigma}_i\mechanical{x}-\signal{f}_i\mechanical{t})],
 \qquad i=1,2.
 $$
 
@@ -300,28 +300,28 @@ Using the sine addition identity, their sum is
 
 $$
 \mechanical{y}_1+\mechanical{y}_2
-=2\mechanical{A}\sin[2\pi(\signal{\bar k}\mechanical{x}-\signal{\bar f}\mechanical{t})]
-\cos[\pi(\Delta\signal{k}\mechanical{x}-\Delta\signal{f}\mechanical{t})],
+=2\mechanical{A}\sin[2\pi(\signal{\bar\sigma}\mechanical{x}-\signal{\bar f}\mechanical{t})]
+\cos[\pi(\Delta\signal{\sigma}\mechanical{x}-\Delta\signal{f}\mechanical{t})],
 $$
 
 where the bars denote the two means and the differences use the same ordering for both quantities.
 
 ![[Kyle Kabasares - Vibrations and Waves - Phase and envelope of nearby waves.png|**Fig. 39** Nearby frequencies produce a fast oscillation with a slowly varying envelope.]]
 
-The sine phase travels at $\mechanical{v}_p=\signal{\bar f}/\signal{\bar k}$. The cosine envelope travels at $\Delta\signal{f}/\Delta\signal{k}$, which tends to the group velocity $\mechanical{v}_g=d\signal{f}/d\signal{k}$ in the narrow-band limit. With angular frequency and angular wave number the same ratios are $\signal{\omega}/\signal{k}$ and $d\signal{\omega}/d\signal{k}$. The velocities coincide for a nondispersive medium and generally differ when dispersion is present.
+The sine phase travels at $\mechanical{v}_p=\signal{\bar f}/\signal{\bar\sigma}$. The cosine envelope travels at $\Delta\signal{f}/\Delta\signal{\sigma}$, which tends to the group velocity $\mechanical{v}_g=d\signal{f}/d\signal{\sigma}$ in the narrow-band limit. With angular frequency and angular wave number the same ratios are $\signal{\omega}/\signal{k}$ and $d\signal{\omega}/d\signal{k}$. The velocities coincide for a nondispersive medium and generally differ when dispersion is present.
 
-For deep-water gravity waves, the dispersion relation is $\signal{f}=C\signal{k}^{1/2}$. The phase and group velocities are
+For deep-water gravity waves, the dispersion relation is $\signal{f}=C\signal{\sigma}^{1/2}$. The phase and group velocities are
 
 $$
-\mechanical{v}_p=\frac{\signal{f}}{\signal{k}}=\frac{C}{\sqrt{\signal{k}}},
+\mechanical{v}_p=\frac{\signal{f}}{\signal{\sigma}}=\frac{C}{\sqrt{\signal{\sigma}}},
 \qquad
-\mechanical{v}_g=\frac{d\signal{f}}{d\signal{k}}=\frac{C}{2\sqrt{\signal{k}}}
+\mechanical{v}_g=\frac{d\signal{f}}{d\signal{\sigma}}=\frac{C}{2\sqrt{\signal{\sigma}}}
 =\frac12\mechanical{v}_p.
 $$
 
 ##### Example of a dispersive string
 
-Take $\signal{\omega}=\signal{k}\sqrt{\mechanical{T}/\mechanical{\mu}+d\signal{k}^2}$, now with angular wave number $\signal{k}=2\pi/\signal{\lambda}$. The initial profile is
+Take $\signal{\omega}=\signal{k}\sqrt{\mechanical{T}/\mechanical{\mu}+\alpha\signal{k}^2}$, now with angular wave number $\signal{k}=2\pi/\signal{\lambda}$. The initial profile is
 
 $$
 \mechanical{y}(\mechanical{x},0)
@@ -334,9 +334,9 @@ in the displacement units of the problem. Divide the dispersion relation by $\si
 
 $$
 \begin{aligned}
-\mechanical{v}_p&=\sqrt{\frac{\mechanical{T}}{\mechanical{\mu}}+d\signal{k}^2},\\
-\mechanical{v}_g&=\sqrt{\frac{\mechanical{T}}{\mechanical{\mu}}+d\signal{k}^2}
-+\frac{d\signal{k}^2}{\sqrt{\mechanical{T}/\mechanical{\mu}+d\signal{k}^2}}.
+\mechanical{v}_p&=\sqrt{\frac{\mechanical{T}}{\mechanical{\mu}}+\alpha\signal{k}^2},\\
+\mechanical{v}_g&=\sqrt{\frac{\mechanical{T}}{\mechanical{\mu}}+\alpha\signal{k}^2}
++\frac{\alpha\signal{k}^2}{\sqrt{\mechanical{T}/\mechanical{\mu}+\alpha\signal{k}^2}}.
 \end{aligned}
 $$
 
@@ -344,7 +344,7 @@ For the sine modes, $\signal{\lambda}_n=2\mechanical{L}/n$ and $\signal{k}_n=n\p
 
 $$
 \signal{\omega}_n=\frac{n\pi}{\mechanical{L}}
-\sqrt{\frac{\mechanical{T}}{\mechanical{\mu}}+d\left(\frac{n\pi}{\mechanical{L}}\right)^2}.
+\sqrt{\frac{\mechanical{T}}{\mechanical{\mu}}+\alpha\left(\frac{n\pi}{\mechanical{L}}\right)^2}.
 $$
 
 ## Source
@@ -355,19 +355,28 @@ Kyle Kabasares, *Vibrations and Waves (Physics 122, UC Merced 2015)*.
 
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
-| $\mechanical{m}$ | $\unit{kg}$ | Mass | Inertial parameter in the equation of motion. |
+| $d\mechanical{m}$ | $\unit{kg}$ | Mass element | The mass $\mechanical{\mu}\,d\mechanical{x}$ of a short string element. |
+| $\mechanical{M}$ | $\unit{kg}$ | String mass | The total mass $\mechanical{\mu}\mechanical{L}$ of the string. |
+| $\mechanical{L}$ | $\unit{m}$ | String length | The distance between the fixed ends of the string. |
+| $\mechanical{x}$, $\mechanical{x}_1$, $\mechanical{x}_2$, $\mechanical{x}_g$ | $\unit{m}$ | Position | The position along the string, and the positions of corresponding points on the incident, transmitted, and reflected profiles. |
 | $\mechanical{t}$ | $\unit{s}$ | Time | Independent variable for the motion. |
+| $\mechanical{A}$, $\mechanical{A}_n$ | $\unit{m}$ | Amplitude | The amplitude of a sine wave, or of mode $n$. |
+| $\mechanical{v}$, $\mechanical{v}_1$, $\mechanical{v}_2$, $\mechanical{v}_i$ | $\unit{m\,s^{-1}}$ | Wave speed | The propagation speed on the string, on each side of the junction, or of wave $i$. |
+| $\mechanical{v}_y$ | $\unit{m\,s^{-1}}$ | Transverse velocity | The velocity $\partial\mechanical{y}/\partial\mechanical{t}$ of a string element, not the wave speed $\mechanical{v}$. |
+| $\mechanical{v}_p$, $\mechanical{v}_g$ | $\unit{m\,s^{-1}}$ | Phase and group velocity | The speed of the phase and the speed of the envelope. |
 | $\signal{\omega}$ | $\unit{rad\,s^{-1}}$ | Angular frequency | Rate of phase accumulation. |
+| $\signal{f}$, $\signal{f}_i$, $\signal{f}_n$ | $\unit{Hz}$ | Frequency | The number of cycles per second of a wave, of wave $i$, or of mode $n$. |
+| $\signal{T}$ | $\unit{s}$ | Period | The period of the sine wave, distinct from the tension $\mechanical{T}$. |
+| $\signal{\tau}_3$ | $\unit{s}$ | Third-mode period | The period $2\pi/\signal{\omega}_3$ of the third mode. |
 | $\signal{\phi}$ | $\unit{rad}$ | Phase constant | Phase at the initial time. |
-| $\mechanical{b}$ | $\unit{kg\,s^{-1}}$ | Damping coefficient | Proportionality constant between drag and velocity. |
-| $\signal{\tau}$ | $\unit{s}$ | Amplitude decay time | Time for the envelope to fall by a factor of $e$. |
-| $\signal{\lambda}$ | $\unit{m}$ | Wavelength | Spatial distance over one wave cycle. |
+| $\energy{E}$, $\energy{E}_n$ | $\unit{J}$ | Mode energy | The energy of mode $n$ and the total energy of the superposition. |
+| $C$ | $\unit{m^{1/2}\,s^{-1}}$ | Dispersion constant | The coefficient in the deep-water relation $\signal{f}=C\signal{\sigma}^{1/2}$. |
+| $\signal{\lambda}$, $\signal{\lambda}_i$, $\signal{\lambda}_n$ | $\unit{m}$ | Wavelength | Spatial distance over one wave cycle. |
 | $\mechanical{y}$ | $\unit{m}$ | Transverse displacement | Deflection of a string element from equilibrium. |
 | $\mechanical{\mu}$ | $\unit{kg\,m^{-1}}$ | Linear mass density | Mass per unit length of the string. |
 | $\mechanical{T}$ | $\unit{N}$ | String tension | Magnitude of the force along the string, distinct from the period $\signal{T}$. |
 | $\signal{\omega}_n$ | $\unit{rad\,s^{-1}}$ | String mode angular frequency | Discrete angular frequency selected by the fixed endpoints. |
-| $\signal{k}_i$ | $\unit{m^{-1}}$ | Spatial frequency | Reciprocal wavelength in cycles per metre on this page. |
+| $\signal{\sigma}$, $\signal{\sigma}_i$ | $\unit{m^{-1}}$ | Spatial frequency | Reciprocal wavelength in cycles per metre. |
 | $\mechanical{b}$ | $\unit{m}$ | Pulse height and half-width | Peak displacement and distance from the peak to a half-height point in this example. |
 | $\signal{k}$ | $\unit{rad\,m^{-1}}$ | Angular wave number | Phase change per unit distance, equal to $2\pi/\signal{\lambda}$. |
-| $d$ | $\unit{m^4\,s^{-2}}$ | String dispersion coefficient | Multiplies the squared angular wave number in the phase speed squared. |
-| $\mechanical{M}$ | $\unit{kg}$ | Reduced mass | Effective mass for relative motion of the isolated pair. |
+| $\alpha$ | $\unit{m^4\,s^{-2}}$ | String dispersion coefficient | Multiplies the squared angular wave number in the phase speed squared. |

@@ -388,15 +388,16 @@ $$
 
 ##### Scattering
 
-Elastic scattering changes the direction of the radiation and preserves the photon energy. In addition to the pure absorption and emission terms, the notes give the following scattering term with a minus sign, corresponding to their discussion of energy removal.
+Elastic scattering changes the direction of the radiation and preserves the photon energy. Scattering removes intensity from the beam direction $\Omega$ (loss term, minus sign) and adds intensity scattered into $\Omega$ from all other directions $\Omega'$ (gain term, plus sign).
 
 $$
 \frac{d\energy{I}_{\signal{\nu}}^{\mathrm{scat}}}{d\mechanical{s}}
-=-\int\energy{\alpha}_{\signal{\nu}}^{\mathrm{scat}}(\Omega,\Omega')
+=-\energy{\alpha}_{\signal{\nu}}^{\mathrm{scat}}\energy{I}_{\signal{\nu}}(\Omega)
++\int\energy{\alpha}_{\signal{\nu}}^{\mathrm{scat}}(\Omega,\Omega')
 \energy{I}_{\signal{\nu}}(\Omega')\,\frac{d\Omega'}{4\pi}
 $$
 
-For isotropic scattering, the coefficient is angle-independent. With the angular integral taken over the full sphere, the expression becomes $-\energy{\alpha}_{\signal{\nu}}^{\mathrm{scat}}\energy{J}_{\signal{\nu}}$, where $\energy{J}_{\signal{\nu}}$ is the mean intensity.
+For isotropic scattering, the coefficient is angle-independent. With the angular integral taken over the full sphere, the expression becomes $-\energy{\alpha}_{\signal{\nu}}^{\mathrm{scat}}(\energy{I}_{\signal{\nu}}-\energy{J}_{\signal{\nu}})$, where $\energy{J}_{\signal{\nu}}$ is the mean intensity.
 
 $$
 \energy{J}_{\signal{\nu}}=\frac{1}{4\pi}\int_{4\pi}\energy{I}_{\signal{\nu}}\,d\Omega
@@ -422,4 +423,14 @@ Kyle Kabasares, *Radiative Transfer in Astrophysics (Physics 240C, UC Irvine 201
 | $\mechanical{n}$ | $\unit{cm^{-3}}$ | Number density | Number of absorbers per unit volume. |
 | $\energy{\alpha}_{\signal{\nu}}$ | $\unit{cm^{-1}}$ | Absorption coefficient | Fractional loss of specific intensity per unit path length. |
 | $\energy{J}_{\signal{\nu}}$ | $\unit{erg\cdot s^{-1}\cdot cm^{-2}\cdot sr^{-1}\cdot Hz^{-1}}$ | Mean intensity | Specific intensity averaged over all directions. |
-| $\alpha$ | $1$ | Fine-structure constant | Dimensionless electromagnetic coupling constant. |
+| $\energy{\alpha}_{\signal{\nu}}^{\mathrm{scat}}$ | $\unit{cm^{-1}}$ | Scattering coefficient | Fractional loss of specific intensity per unit path length by scattering. |
+| $\signal{\nu}$ | $\unit{Hz}$ | Frequency | Frequency of the radiation. |
+| $\mechanical{R}$ | $\unit{cm}$ | Radius | Radius of an imaginary sphere or of the uniformly bright sphere. |
+| $\mechanical{D}$ | $\unit{cm}$ | Distance | Distance between two area elements, or from the observer to the center of the sphere. |
+| $\mechanical{d}$ | $\unit{cm}$ | Distance, mean separation | Distance from the source ($\mechanical{d}_1$, $\mechanical{d}_2$), or mean separation between absorbers. |
+| $\mechanical{A}$ | $\unit{cm^2}$ | Area | Area of a surface element or of the cylinder cross section. |
+| $\mechanical{s}$ | $\unit{cm}$ | Path length | Distance along the ray. |
+| $\mechanical{V}$ | $\unit{cm^3}$ | Volume | Volume element of the material. |
+| $\theta_c$ | $\unit{rad}$ | Angular radius | Angle between the line to the center of the sphere and a tangent ray. |
+| $\Omega_{\mathrm{obs}}$ | $\unit{sr}$ | Acceptance solid angle | Solid angle of the sphere seen by the observer. |
+| $N$ | $1$ | Number of absorbers | Number of absorbers in the cylinder, or number of thin disks. |

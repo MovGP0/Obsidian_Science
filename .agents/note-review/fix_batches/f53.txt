@@ -1,0 +1,35 @@
+=== 01 Mathematics/10 Numerical Methods and Optimization/01 Error, Floating Point, and Root Finding/Bisection, fixed-point, Newton, and secant iterations.md
+- [Correctness] Symbol clashes: $\ell$ is the order exponent in "Rates of convergence" ($e_h=O(h^\ell)$), the multiplier function in $g(x)=x-\ell(x)f(x)$, and the contraction constant in "Fixed-point theorem" (whose proof then switches to $q$); $\alpha$ is the limit in $\alpha_n\to\alpha$, the order in Definition 2.7, and the Homework 4 step $\alpha=1/100$; "Introduction to simple fixed-point iteration" redefines $g(x)=x$ as the identity after $g$ was the iteration map. Use one letter per meaning (e.g. $q$ contraction, $\alpha$ order only, $\omega(x)$ multiplier, $\mathrm{id}$ or $y=x$ for the line).
+- [Correctness] The Physical quantities table lists $x$ as time in seconds from a "particle example" that does not exist in this note; the note defines no physical quantities, so remove the section.
+
+=== 01 Mathematics/10 Numerical Methods and Optimization/01 Error, Floating Point, and Root Finding/Taylor error bounds and finite-digit arithmetic.md
+- [Correctness] "Choosing a degree for sine": $(\pi/4)^{n+1}/(n+1)!$ equals $3.59\times10^{-6}$ at $n=7$, $3.13\times10^{-7}$ at $n=8$ and $2.46\times10^{-8}$ at $n=9$, i.e. orders $10^{-6},10^{-7},10^{-8}$, not $10^{-5},10^{-6},10^{-7}$ as stated; the conclusion $n=8$ is right.
+- [Correctness] "Example 3 on [[#Discretization error in a derivative|...]]" links to the forward-difference section, which does not contain the $\sin x$ about $\pi/2$ example; remove the link (and the duplicate "Example 3" label used again for $\cos x$).
+- [Correctness] The Physical quantities table (time, velocity, height, weight with \mechanical{}) describes nothing in this note; remove the section.
+- [Correctness] In the forward-difference table, recomputation in IEEE double gives $4.62\times10^{-8}$ at $h=10^{-7}$; $4.66\times10^{-8}$ is the predicted truncation error $0.466h$, not the observed value.
+
+=== 01 Mathematics/10 Numerical Methods and Optimization/02 Interpolation, Approximation, and Quadrature/Chebyshev nodes and least-squares approximation.md
+- [Correctness] The Physical quantities table lists $x$ as time in seconds from a nonexistent particle example; remove the section.
+
+=== 01 Mathematics/10 Numerical Methods and Optimization/02 Interpolation, Approximation, and Quadrature/Finite differences and Richardson calculations.md
+- [Correctness] Symbol clash: $\mechanical{f}$ is a particle position in "Approximating derivatives" (and the table gives $x$ as time in s while saying it has no unit), but $f$ is a generic function in the rest of the note; drop the particle framing and the Physical quantities table, or confine both to that paragraph.
+
+=== 01 Mathematics/10 Numerical Methods and Optimization/02 Interpolation, Approximation, and Quadrature/Least-squares and numerical calculus review problems.md
+- [Correctness] The Physical quantities table lists only $x$ as time in seconds, while the note uses $\mechanical{x},\mechanical{y}$ for height and weight and $x$ elsewhere as a plain variable; remove the section or describe the regression variables correctly.
+
+=== 01 Mathematics/10 Numerical Methods and Optimization/02 Interpolation, Approximation, and Quadrature/Polynomial and spline interpolation problems.md
+- [Correctness] The Physical quantities table lists $x$ as time in seconds from a nonexistent particle example; remove the section.
+
+=== 01 Mathematics/10 Numerical Methods and Optimization/02 Interpolation, Approximation, and Quadrature/Trapezoidal, Simpson, and Gaussian quadrature.md
+- [Correctness] The Physical quantities table lists $x$ as time in seconds from a nonexistent particle example; remove the section.
+
+=== 01 Mathematics/10 Numerical Methods and Optimization/04 Linear, Nonlinear, and Discrete Optimization/A product-mix simplex tableau.md
+- [Correctness] The Physical quantities table includes $x,y$ (ounces of soup) and $s$ (protein surplus), which do not occur here; keep only $s_1,s_2$ (and add the component counts $x_i$ if desired).
+
+=== 01 Mathematics/10 Numerical Methods and Optimization/04 Linear, Nonlinear, and Discrete Optimization/Constrained estimation and model fitting.md
+- [Correctness] The Physical quantities table (Lyapunov exponent, ounces of soup, protein surplus) describes nothing in this note, where $\lambda$ is a Lagrange multiplier; remove the section.
+
+=== 01 Mathematics/10 Numerical Methods and Optimization/04 Linear, Nonlinear, and Discrete Optimization/Linear programming and gradient-search problems.md
+- [Correctness] The Physical quantities table describes population models (population $R$, total population $\tau$, sampling period $T$, Lyapunov exponent $\lambda$), but here $R$ is the search-disk radius, $\tau$ a step length, $T$ the search horizon and $\lambda$ the convex-combination parameter; remove or rewrite it.
+- [Correctness] Symbol clashes: $t$ is the iron surplus in the soup example, the third slack in the simplex example and time in the spiral search; $s$ is a surplus in the soup example and a slack in the simplex example. Rename per example.
+

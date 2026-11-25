@@ -7,7 +7,7 @@ title: "Common Errors"
 
 ## Error 1 — Use the second moment as the variance
 
-The variance is $\sigma^2=\langle X^2\rangle-\langle X\rangle^2$, not simply $\langle X^2\rangle$. The mean-square term vanishes only when $\langle X\rangle=0$.
+The variance is $\sigma^2=\langle X^2\rangle-\langle X\rangle^2$, not simply $\langle X^2\rangle$. The squared-mean term vanishes only when $\langle X\rangle=0$.
 
 ## Error 2 — Allow fluctuations when the standard deviation is zero
 

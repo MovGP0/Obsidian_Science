@@ -12,15 +12,14 @@ title: "Linear Independence and Spanning Sets"
 > w=\alpha_1v_1+\cdots+\alpha_kv_k,\qquad\alpha_i\in\mathbb{C}.
 > $$
 >
-> The source calls the set of all linear combinations the **spanning set**, or **linear span**, of $\{v_1,\ldots,v_k\}$:
+> The set of all linear combinations is the **span**, or **linear span**, of $\{v_1,\ldots,v_k\}$:
 >
 > $$
 > \operatorname{span}(v_1,\ldots,v_k)
 > =\left\{\sum_{i=1}^{k}\alpha_iv_i:\alpha_i\in\mathbb{C}\right\}.
 > $$
-
-> [!note]
-> The set of all linear combinations is the **span**. A **spanning set for $V$** is a family of vectors whose span is $V$. These are distinct terms; the source uses them as if they were the same.
+>
+> A **spanning set for $V$** is a family of vectors whose span is $V$.
 
 > [!definition] Definition 4.4 — Linear independence
 > The vectors $v_1,\ldots,v_k$ are **linearly independent** if

@@ -12,7 +12,7 @@ title: "Proper time and spacetime interval review problems"
 Set $\mechanical{x}_0=\mechanical{c}t$ so that all four coordinates of the spacetime position have units of length.
 
 $$
-\mechanical{X}_{\mu}=(\mechanical{x}_0,\mechanical{x}_1,\mechanical{x}_2,\mechanical{x}_3)
+\mechanical{X}^{\mu}=(\mechanical{x}_0,\mechanical{x}_1,\mechanical{x}_2,\mechanical{x}_3)
 =(\mechanical{c}t,\mechanical{x},\mechanical{y},\mechanical{z}).
 $$
 
@@ -261,22 +261,27 @@ Kyle Kabasares, *Special Relativity (Physics 126, UC Merced 2015)*.
 
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
-| $\mechanical{v}$ | $\unit{m\,s^{-1}}$ | Relative speed | Speed of one inertial frame relative to another. |
-| $\mechanical{x}$, $\mechanical{y}$, $\mechanical{z}$ and primed forms | $\unit{m}$ | Spatial coordinates | Location of an event in an inertial frame. |
-| $t$, $t'$ | $\unit{s}$ | Coordinate times | Time assigned to an event in the two frames. |
-| $\mechanical{m}$ | $\unit{kg}$ | Mass | Inertial mass of the particle. |
+| $\mechanical{X}^{\mu}$ | $\unit{m}$ | Four-position | Spacetime position with the time coordinate scaled by the speed of light. |
+| $\mechanical{x}_0$, $\mechanical{x}_1$, $\mechanical{x}_2$, $\mechanical{x}_3$ and primed forms | $\unit{m}$ | Four-position components | Components $\mechanical{c}t$, $\mechanical{x}$, $\mechanical{y}$, $\mechanical{z}$ of the four-position. |
+| $\mechanical{x}$, $\mechanical{y}$, $\mechanical{z}$ and primed forms | $\unit{m}$ | Spatial coordinates | Location of an event or point in a coordinate system. |
+| $t$, $t'$ | $\unit{s}$ | Coordinate times | Time assigned to an event in the two frames, or the lab lifetime in Problem 11-7. |
+| $\mechanical{v}$ | $\unit{m\,s^{-1}}$ | Relative speed | Speed of one inertial frame or particle relative to another frame. |
 | $\mechanical{c}$ | $\unit{m\,s^{-1}}$ | Speed of light in vacuum | The light propagation speed. |
 | $\mechanical{\beta}$ | 1 | Speed ratio | Relative speed divided by the speed of light. |
-| $\Delta t$, $\Delta t'$ | $\unit{s}$ | Time interval | Difference between event times or clock readings, including the interferometer travel-time difference. |
-| $\Delta t_{\mathrm{rest}}$, $\Delta t_0$, $\tau$ | $\unit{s}$ | Proper time interval | Time recorded by the clock present at both events. |
-| $\mechanical{\gamma}$ | 1 | Lorentz factor | Factor relating the coordinate interval to the proper interval for inertial motion. |
-| $\tau_0$, $\tau$ | $\unit{s}$ | Rest and laboratory lifetimes | Muon lifetime measured in its rest frame and in the laboratory. |
-| $\mechanical{d}$, $\mechanical{L}$ | $\unit{m}$ | Distance | Distance traveled in the laboratory or separation of the departure and arrival points. |
-| $\mechanical{V}_x$, $\mechanical{V}_y$, $\mechanical{V}_z$ and primed forms | $\unit{m\,s^{-1}}$ | Object velocity components | Velocity of an object along the coordinate axes. |
-| $\mechanical{\theta}$, $\mechanical{\theta}'$ | $\unit{rad}$ | Angle | Tilt of a rod or coordinate axis, or angle of a ray relative to the reference axis. |
-| $\mechanical{s}^2$ | $\unit{m^2}$ | Squared spacetime interval | Invariant quadratic expression in coordinate separations. |
-| $\mechanical{X}_{\mu}$ | $\unit{m}$ | Four-position | Spacetime position with the time coordinate scaled by the speed of light. |
-| $\energy{E}$, $\energy{E}'$, $\energy{E}_{\mathrm{tot}}$ | $\unit{J}$ or $\unit{eV}$ | Energy | Time component of four-momentum multiplied by the speed of light. |
-| $\mechanical{m}_0$ | $\unit{kg}$ | Rest mass | Invariant mass measured in the rest frame. |
+| $\mechanical{\gamma}$, $\mechanical{\gamma}_1$, $\mechanical{\gamma}_2$ | 1 | Lorentz factor | Factor that depends on the speed of a frame or body. |
+| $\mechanical{s}$, $\mechanical{s}^2$, $(\Delta\mechanical{s})^2$ | $\unit{m}$, $\unit{m^2}$ | Spacetime interval | Invariant separation of two events and its square. |
+| $\tau$ | $\unit{s}$ | Proper time | Time recorded by the clock that moves with the particle, or the proper lifetime of the particle. |
+| $\Delta t$, $\Delta t'$ | $\unit{s}$ | Time interval | Bullet travel time in the lab and in the ship frame, or a coordinate time difference. |
+| $\Delta\mechanical{x}$, $\Delta\mechanical{y}$, $\Delta\mechanical{z}$ | $\unit{m}$ | Position separations | Spatial separations of two events. |
+| $\mechanical{\theta}$ | $\unit{rad}$ | Rotation angle | Angle between the two sets of rotated spatial axes. |
+| $\mechanical{V}_x$, $\mechanical{V}_x'$ | $\unit{m\,s^{-1}}$ | Bullet velocity | Velocity of the bullet in the lab and in the ship frame. |
+| $\mechanical{m}_0$, $\mechanical{V}_0$ | $\unit{kg}$, $\unit{m\,s^{-1}}$ | Mass and speed of the fast body | Rest mass and speed of the $10^3\;\unit{kg}$ body in Problem 10-3. In Problem 11-11, $\mechanical{m}_0$ is the rest mass of the particle. |
+| $\mechanical{m}_{\mathrm f}$, $\mechanical{V}_{\mathrm f}$ | $\unit{kg}$, $\unit{m\,s^{-1}}$ | Mass and speed of the heavy body | Mass and recoil speed of the $10^6\;\unit{kg}$ body in Problem 10-3. |
+| $\mechanical{m}$ | $\unit{kg}$ | Mass | Rest mass of a particle, a moving body, or the spaceship. |
+| $\mechanical{V}_1$, $\mechanical{V}_2$ | $\unit{m\,s^{-1}}$ | Body velocities | Velocities of the masses $\mechanical{m}$ and $\mechanical{M}$ in Problem 10-7. |
+| $\mechanical{M}$ | $\unit{kg}$ or $\unit{MeV}/\mechanical{c}^2$ | Mass | Second mass in Problem 10-7, or mass of the final particle in Problem 11-13. |
+| $\mechanical{M}_0$ | $\unit{kg}$ or $\unit{MeV}/\mechanical{c}^2$ | Target mass | Mass of the target at rest before photon absorption. |
+| $\mechanical{p}$ | $\unit{kg\,m\,s^{-1}}$ or $\unit{MeV}/\mechanical{c}$ | Momentum | Magnitude of the relativistic momentum. |
+| $\energy{E}$, $\energy{E}_{\gamma}$ | $\unit{J}$ or $\unit{eV}$ | Energy | Total energy of a particle, or energy of the incident photon. |
 | $\energy{K}$ | $\unit{J}$ or $\unit{eV}$ | Kinetic energy | Difference between total energy and rest energy. |
-| $\mechanical{M}_0$, $\mechanical{M}$ | $\unit{kg}$ or $\unit{MeV}/\mechanical{c}^2$ | Initial and final masses | Invariant masses before and after photon absorption or rocket acceleration. |
+| $\mechanical{d}$ | $\unit{m}$ | Distance | Distance traveled by the particle in the lab before it decays. |

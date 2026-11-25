@@ -1,0 +1,53 @@
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/01 From Quantum Mechanics to Field Theory/01.04.02 Plane-Wave Solutions.md
+- FIXED | (1.14),(1.15) measure d^3k with p integrand | Changed both measures to d^3 p, deleted the k/p callout, removed k from the momentum table row
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/01 From Quantum Mechanics to Field Theory/01.06.01 Formulation.md
+- FIXED | Fig. 1.1 caption claims transmission exceeds classical value | 01.06.03 gives T<0 (1.62); caption now says Region II supports propagating negative-frequency modes and links 01.06.03 for the flux sign
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/01 From Quantum Mechanics to Field Theory/01.08.01 From Particles to Fields.md
+- FIXED | (1.64) measure d^3k with p integrand | Measure changed to d^3 p, callout removed, table row updated
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/01 From Quantum Mechanics to Field Theory/01.08.02 Fock Space.md
+- FIXED | (1.68) measure d^3k with p integrand | Measure changed to d^3 p, k/p callout removed, table row updated
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/01 From Quantum Mechanics to Field Theory/01.08.03 Antiparticles.md
+- FIXED | (1.69),(1.70) measure d^3k with p integrand | Both measures changed to d^3 p, k/p callout removed, table row updated
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/01 From Quantum Mechanics to Field Theory/01.09.01 The Beginnings (1925–1932).md
+- FIXED | Born-Jordan 1925 ladder-operator attribution | Rewrote: Born-Jordan 1925 gave the commutator; Born-Heisenberg-Jordan 1926 quantized a string as oscillators; radiation-field ladder operators came with Dirac 1927
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/01 From Quantum Mechanics to Field Theory/01.12 Exercises/01.12.01 Natural units and conversions.md
+- FIXED | Part (c) rounded inputs give 197.36 not 197.3 | Recomputed (197.359 with old inputs); inputs changed to hbar=1.054572e-34, c=2.997925e8, 1.602177e-13 J/MeV, giving 197.33 so the stated 197.3 holds
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/01 From Quantum Mechanics to Field Theory/01.12 Exercises/01.12.07 Weyl spinors and chirality.md
+- FIXED | Table calls E incident energy | Quantity renamed to Mode energy
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/02 Classical Field Theory/02.01.02 Oscillator Chain and Continuum Limit.md
+- FIXED | mu clash (mass density vs Lorentz index) | Renamed linear mass density to rho in text, (2.5), wave equation, speed and table
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/02 Classical Field Theory/02.05.04 Rotations and Angular Momentum.md
+- FIXED | Vector variation sign should be +omega A | Changed to +omega^mu_nu A^nu, removed correcting callout; also updated the sentence on (2.38) to match the corrected sign in 02.06.02
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/02 Classical Field Theory/02.06.02 The Belinfante–Rosenfeld Tensor.md
+- FIXED | (2.38) doubles antisymmetric part | Verified antisymmetric part of the improvement equals +(T^mn - T^nm); (2.38) now has a minus sign (and -d_rho B), callout removed
+- FIXED | (2.40) leading minus gives -T | Verified 2/sqrt(-g) d(sqrt(-g)L)/dg^mn = d_m phi d_n phi - g L; removed the minus sign and the correction callout
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/02 Classical Field Theory/02.07.02 The Complex Scalar Field.md
+- FIXED | O(2)=U(1) kept with callout | Text now states the phase group is SO(2)=U(1) and O(2) adds the reflection phi to phi*; callout removed
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/02 Classical Field Theory/02.07.03 The Electromagnetic Field.md
+- FIXED | (2.60) phase e^{ie alpha} paired with d alpha/e | With D=d-ieA the shift must be +d_mu alpha; removed 1/e, reworded the intro, removed the callout
+- PARTLY | Fig. 2.3 polarizations drawn as opposite arrows on one line | Error confirmed (existing callout already flags it); not redrawn because the brief forbids redrawing figures; needs a redraw with eps2 out of plane
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/03 Quantization of the Scalar Field/03.04.02 Zero-Point Energy.md
+- FIXED | (3.38) labels energy density E_0 | Renamed density to varepsilon_0 (energy per unit volume) in (3.38) and table, removed callout, adjusted the dimension-check sentence
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/03 Quantization of the Scalar Field/03.11 Exercises/03.11.05 Complex-scalar U(1) charge.md
+- FIXED | Lagrangian row says translation current | Description now says U(1) phase current
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/03 Quantization of the Scalar Field/03.11 Exercises/03.11.07 Massless Feynman propagator.md
+- FIXED | k and theta symbol clashes | In the spherical-coordinate step, magnitude renamed to kappa and polar angle to vartheta; kappa row added to table
+- FIXED | Table lists unused Delta+-, k' | Removed the Delta+- row and k' from the momentum row
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/03 Quantization of the Scalar Field/03.11 Exercises/03.11.08 Retarded scalar propagator.md
+- FIXED | Table lists unused Pauli-Jordan Delta | Removed the row (the k' entry in the momentum row is also unused; not changed)
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/03 Quantization of the Scalar Field/03.11 Exercises/03.11.09 Lorentz Noether current.md
+- FIXED | T and y table rows copied from other exercises | T now builds the Lorentz current; y is the second spatial point in the canonical commutator
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/03 Quantization of the Scalar Field/03.11 Exercises/03.11.10 Coherent-state particle number.md
+- FIXED | Table lists unused N_a, N_b | Row reduced to N, the total occupation count
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.03.01 The Attempt with Commutators.md
+- FIXED | (4.23),(4.24) d^3k and missing (2pi)^3 in commutator | Measures changed to d^3 p, commutator now (2pi)^3 delta delta, source-retention callout removed, table updated
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.04.01 Field Expansion.md
+- FIXED | (4.27),(4.28) d^3k with p integrand | Measures changed to d^3 p, callout and retained-mismatch paragraph deleted, table updated
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.05.03 Number Operators.md
+- FIXED | (4.35) d^3k with p integrand | Both measures changed to d^3 p, callout removed, table row now p
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.06.01 Hamiltonian Operator in Mode Variables.md
+- FIXED | (4.37),(4.38) d^3k with p integrand | Measures changed to d^3 p, k/p sentence deleted, table updated
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.06.02 The Noether Current and Charge.md
+- FIXED | (4.40) d^3k with p integrand | Measure changed to d^3 p, table row updated
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.06.03 The Four-Momentum Vector.md
+- FIXED | (4.41) d^3k with p integrand | Measure changed to d^3 p, label-identification sentence removed, table row updated

@@ -1,0 +1,52 @@
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/13 Cosmic Gravity and the Quantum Spin/13.01 The Physical Meaning of Spin.md
+- [Correctness] The table calls $s$ the "magnitude", but the text uses $s=\hbar/2$ as the maximal projection ($+s,\dots,-s$); the magnitude of spin-½ angular momentum is $\sqrt{s(s+1)}\,\hbar=(\sqrt3/2)\hbar$. Distinguish the quantum number $s$, the magnitude, and the projection $m_s\hbar$.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/13 Cosmic Gravity and the Quantum Spin/13.02 Spin as the Fundamental Gravitomagnetic Moment.md
+- [Correctness] (13.6) $d\mathbf s/dt=\tfrac12\mathbf s\times\mathbf B_g$ is inconsistent with (13.5): the Heisenberg or Poisson equation from $H=\tfrac12\mathbf s\cdot\mathbf B_g$ gives $d\mathbf s/dt=\tfrac12\mathbf B_g\times\mathbf s=-\tfrac12\mathbf s\times\mathbf B_g$.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/13 Cosmic Gravity and the Quantum Spin/13.03 Cosmic Gravitational Effects on Spin.md
+- [Correctness] With $\mathbf s=\hbar\boldsymbol\sigma/2$, the derived term $\hbar\boldsymbol\sigma\cdot\boldsymbol\Omega$ in (13.10) equals $2\,\mathbf s\cdot\boldsymbol\Omega$, not "$+\mathbf s\cdot\boldsymbol\Omega$". The minimal-coupling route gives a gyrogravitational factor 2, like $g=2$, which conflicts in magnitude as well as sign with (13.2) $E_g=-\mathbf s\cdot\boldsymbol\Omega$. State this explicitly instead of the vague normalisation note.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/13 Cosmic Gravity and the Quantum Spin/13.03.01 Emphasising the Spin-Phase Puzzle.md
+- [Correctness] Here $\mathbf B_g=+2\boldsymbol\omega$ and $E_g=+\mathbf s\cdot\boldsymbol\omega$, whereas 13.00 and 13.02 use $\mathbf B_g=-2\boldsymbol\Omega$ and $E_g=-\mathbf s\cdot\boldsymbol\Omega$; state the orientation of $\boldsymbol\omega$ relative to the orbit so that the signs agree within the chapter.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/13 Cosmic Gravity and the Quantum Spin/13.04 Spin Transport in Chiral Molecules and Spintronics.md
+- [Correctness] Equating the per-state energy $\hbar\Omega/2$ ($=s\Omega$ with $s=\hbar/2$) with the per-state Zeeman energy $\tfrac g2\mu_BB=\mu_BB$ gives $B=\hbar\Omega/(2\mu_B)=mv/(er)\approx5.7\times10^3\,\mathrm{T}$. The printed $B_{eq}=\hbar\Omega/(2g_m\mu_B)$ and $B_f=mv/(2er)\approx2.8\times10^3\,\mathrm{T}$ set a per-state energy equal to the full splitting $g\mu_BB$ and halve the field.
+- [Correctness] Room-temperature thermal energy is $k_BT\approx4.1\times10^{-21}\,\mathrm{J}=0.026\,\mathrm{eV}$, not $3\times10^{-21}\,\mathrm{J}$; the ratio to 0.66 eV is about 25.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/13 Cosmic Gravity and the Quantum Spin/13.05.01 The Dawn of the Spin-Statistics Connection.md
+- [Correctness] "Dirac named the integer-spin particles bosons ... in his 1926 paper" is wrong: Dirac coined both "fermion" and "boson" in a 1945 lecture. His 1926 paper derived the antisymmetric (Fermi–Dirac) statistics.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/14 The Quantum Hall Effects - Gravity in Condensed Matter/14 References.md
+- [Correctness] Bose, Z. Phys. **26**, starts on page 178 (178–181), not 168–171.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/14 The Quantum Hall Effects - Gravity in Condensed Matter/14.03 The 2-D Dynamics of Electrons in a Magnetic Field.md
+- [Correctness] The Fig. 14.4 graph draws levels at heights 0.5, 1, 2, 3 (labels ½ℏω, ℏω, 2ℏω, 3ℏω), which is not equally spaced and contradicts $E_n=(n+\tfrac12)\hbar\omega_c$. Redraw at 0.5, 1.5, 2.5, 3.5 with labels $(n+\tfrac12)\hbar\omega_c$ and keep the source labels in the caption only.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/14 The Quantum Hall Effects - Gravity in Condensed Matter/14.04 The Fractional Quantum Hall Effect.md
+- [Correctness] Fig. 14.7 draws a deep longitudinal-resistance minimum at $\nu=1/4$, but 1/4 is an even-denominator filling without an FQHE plateau (the chapter itself says so in 14.06.01 and 14.07.01). Replace it with an odd-denominator state such as $3/7$ or $2/9$, or draw 1/4 without a minimum.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/14 The Quantum Hall Effects - Gravity in Condensed Matter/14.10 The Quantum Hall Effects in Graphene.md
+- [Correctness] "Two spin projections and two sublattices add a fourfold degeneracy" is wrong: the fourfold degeneracy comes from spin and valley ($K$, $K'$). The two sublattices form the pseudospin components of each Dirac spinor.
+- [Correctness] With the stated rule that successive orbit areas differ by one flux quantum ($\pi r_0^2B=h/e$, so $r_0^2=2\hbar/(eB)$), (14.17) gives $E_n=v_F\sqrt{\hbar eBn}$, a factor $\sqrt2$ below the printed (and correct) $v_F\sqrt{2\hbar eBn}$. The printed step works only if $r_0=l_0=\sqrt{\hbar/(eB)}$; add this to the note.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/14 The Quantum Hall Effects - Gravity in Condensed Matter/14.12 The Wavefunctions in the QHE.md
+- [Correctness] Symbol clash: $m$ is the single-particle angular-momentum index in (14.22) and the Laughlin exponent in (14.23); use, for example, $\ell$ for the former and $q$ (with $\nu=1/q$) for the latter.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/15 Relativity and Quantum Entanglement/15 References.md
+- [Correctness] Entry 7: "Stud. Hist. Phil. Set." should be "Stud. Hist. Phil. Sci." (Studies in History and Philosophy of Science).
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/15 Relativity and Quantum Entanglement/15.02 Quantum Mechanics of Entanglement.md
+- [Correctness] (15.4) writes "$\Psi'=\psi_A\psi_B$" after A is found positive; the updated state is $\psi_{A+}\psi_B$ (up to normalisation), as the right-hand side shows.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/15 Relativity and Quantum Entanglement/15.04.01 The Correlations in the LHVT.md
+- [Correctness] With $a=0^\circ$, $a'=90^\circ$, $b=45^\circ$, $b'=-45^\circ$ (Fig. 15.3a), the $135^\circ$ pair is $(a',b')$, not $(a,b')$ as the text states. With $-\cos\theta$, the combination $(ab)+(a'b)+(a'b')-(ab')$ then evaluates to 0. Use $b'=+135^\circ$ (so $(a,b')=135^\circ$ and the other pairs $45^\circ$, giving $|B|=2\sqrt2$) or move the minus sign to $(a'b')$.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/15 Relativity and Quantum Entanglement/15.05 The Proof of Strict Locality in Quantum Correlations.md
+- [Correctness] The quantities table lists $s,s_+,s_-$ twice with conflicting units (J·s in one row, dimensionless "units of ℏ" in another), while (15.16)–(15.20) use them as dimensionless; keep one row with the dimensionless meaning.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/Universal Clock of Cosmic Relativity.md
+- [Correctness] The main metric prints "$r^2a\theta^2$"; it must be $r^2d\theta^2$.
+- [Correctness] "$-ds^2$ is the Spacetime Interval" and the unrendered "\((-+++)\)" are wrong or broken: $ds^2$ is the interval, with signature $(-,+,+,+)$ written in math delimiters.
+- [Correctness] "Static Universe ($a(t)=1$)" is misleading: $a=1$ at one instant is only a normalisation; a static universe needs $\dot a=0$ at all times, which for nonzero matter requires $\Lambda$ (the Einstein static universe) and is not a general special case of FLRW.
+

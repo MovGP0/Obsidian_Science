@@ -1,0 +1,52 @@
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/05 Lie Groups, Quaternions, and Spinors/03 Spinors/02 Examples from Physics/01 Polarization/Jones Vectors.md
+- [Correctness] "we can assume it to be complex, with a complex value of zero" is wrong: the added imaginary part is $iA\sin(ωt-kz+φ)$, not zero; the physical field is $\mathrm{Re}\,E$.
+- [Correctness] The "Conventions" section attributes the sign of $L=(1,\pm i)$ to the metric signature $(+,-,-,-)$ vs $(-,+,+,+)$; it actually depends on the phase convention $e^{i(ωt-kz)}$ vs $e^{i(kz-ωt)}$ and on whether handedness is defined from the source or the receiver view.
+- [Correctness] Under "Jones Matrices", waveplates do not "filter circular polarization" (they are lossless retarders), and $\frac1{\sqrt2}\begin{pmatrix}1&i\\i&i\end{pmatrix}$ is not unitary; the 45° quarter-wave plate is $\frac1{\sqrt2}\begin{pmatrix}1&i\\i&1\end{pmatrix}$ up to a global phase.
+- [Correctness] In "Phase Shift", adding $φ=\pi/2$ gives $\cos(θ+\pi/2)=-\sinθ$, not $\sinθ$; the quoted identity $\sinθ=\cos(θ-\pi/2)$ corresponds to $φ=-\pi/2$.
+- [Correctness] Symbol inconsistency: amplitudes appear as $A_x$, $Aʸ$ (Unicode superscript) and $A^x,A^y$, components as bold $\mathbf E^x$ and plain $E^x$; also fix the typos "$eit$", "$\mathbf{_x}$", "_x-direction", "non-traverse", and replace "density in time/space" by frequency $ω/2\pi$ and inverse wavelength $k/2\pi$.
+
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/05 Lie Groups, Quaternions, and Spinors/03 Spinors/02 Examples from Physics/01 Polarization/Pointcaré Sphere.md
+- [Correctness] "$Q''=\frac12\begin{pmatrix}1&1\\-1&1\end{pmatrix}$" is not unitary; the factor must be $\frac1{\sqrt2}$, as the note's own later callout uses.
+- [Correctness] The name is "Poincaré", not "Pointcaré", in the filename, text and reference label (also "Wikipdia").
+
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/05 Lie Groups, Quaternions, and Spinors/03 Spinors/02 Examples from Physics/01 Polarization/Waveplates.md
+- [Correctness] In "Rotated Quarter Waveplate", "$\cos 45° = \cos\frac{π}{2}$" is wrong; $45°=\pi/4$ (the final numeric matrix is correct).
+- [Correctness] After $QL=A$, "we get the original polarization direction, but with a half cycle phase change" is wrong: $A$ is perpendicular to the original $D$; two quarter-wave passes act as a half-wave plate that maps $D$ to $A$.
+- [Correctness] "$e^{i \frac{π}{4}}{4}$" contains a stray "{4}"; the verified result is $G^{-1}QG=e^{i\pi/4}\frac1{\sqrt2}\begin{pmatrix}1&i\\i&1\end{pmatrix}$.
+
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/05 Lie Groups, Quaternions, and Spinors/03 Spinors/02 Examples from Physics/Dirac Equation.md
+- [Correctness] "$\hat{p}^μ = -i\hbar \partial_\mu$" has the wrong sign and mismatched index placement for the stated equation; with $\psi\propto e^{-ip\cdot x/\hbar}$ and signature $(+,-,-,-)$, $\hat p_μ=i\hbar\partial_μ$, which turns $(\gamma^μ\hat p_μ-mc)\psi=0$ into $(i\hbar\gamma^μ\partial_μ-mc)\psi=0$.
+- [Correctness] $(\psi_1,\psi_2)$ and $(\psi_3,\psi_4)$ are not "electron spinor" and "positron spin" in general; in the Dirac representation they are the large and small components, which separate into particle and antiparticle parts only in the nonrelativistic limit (in the Weyl representation they are the left- and right-handed parts).
+- [Correctness] "Klein-Gordon let's derive the Lorentz Invariance without Spinors, so electrons are not neccessarily Fermions" is confused: Klein–Gordon is the spin-0 equation; Dirac's first-order equation needs $\{\gamma^μ,\gamma^ν\}=2\eta^{μν}$ and four-component spinors, which is why it describes spin-1/2 particles.
+
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/05 Lie Groups, Quaternions, and Spinors/03 Spinors/02 Examples from Physics/Pauli Exclusion Principle.md
+- [Correctness] "Two or more fermions cannot occupy the same quantum state" must say identical fermions; different species (e.g. an electron and a muon) are not constrained.
+
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/05 Lie Groups, Quaternions, and Spinors/03 Spinors/02 Examples from Physics/Spin-Statistics-Theorem.md
+- [Correctness] The sentence describes the exchange property of fermions, not the theorem; the theorem states that in relativistic quantum field theory integer-spin particles obey Bose statistics (symmetric) and half-integer-spin particles obey Fermi statistics (antisymmetric), and the sign applies to exchange of identical particles only.
+
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/05 Lie Groups, Quaternions, and Spinors/03 Spinors/02 Examples from Physics/Spinors in Physics.md
+- [Correctness] "Quarks, Electron, Muon, Tau Neutrino (Tauons)" omits the tau lepton as such and the electron and muon neutrinos; list the six quarks and the six leptons $e,\mu,\tau,\nu_e,\nu_\mu,\nu_\tau$.
+- [Correctness] "spin, is $\frac{n}{2}\hbar$, where $n$ is an integer" includes integer spins; $n$ must be odd. Also the spin quantum number $s$ gives magnitude $\sqrt{s(s+1)}\hbar$ while $s\hbar$ is the maximal projection; say which is meant in both sections.
+
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/05 Lie Groups, Quaternions, and Spinors/03 Spinors/02 Examples from Physics/Stern-Gerlach-Experiment.md
+- [Correctness] "Born Rule: If two states are mutually exclusive, they must be orthogonal" is not the Born rule; the Born rule is $P=|\braket{\beta|\alpha}|^2$, and orthogonality of perfectly distinguishable outcomes follows from it.
+
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/05 Lie Groups, Quaternions, and Spinors/03 Spinors/02 Examples from Physics/Vector Representation of Spinors in Physics.md
+- [Correctness] "$\bra{\phi} = \alpha \ket{\uparrow} + \beta \ket{\uparrow}$" should be the ket $\ket{\phi}=\alpha\ket{\uparrow}+\beta\ket{\downarrow}$ (bra on the left side and a repeated $\ket{\uparrow}$).
+- [Correctness] The table calls $\alpha,\beta$ probabilities; they are complex probability amplitudes, the probabilities are $|\alpha|^2$ and $|\beta|^2$, with $|\alpha|^2+|\beta|^2=1$.
+
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/05 Lie Groups, Quaternions, and Spinors/Quaternions.md
+- [Correctness] The Pauli list repeats $\sigma_2$ twice and omits $\sigma_3=\begin{pmatrix}1&0\\0&-1\end{pmatrix}$.
+- [Correctness] "They can be used to replace i, j, k in Quaternions" is wrong as stated: $\sigma_a^2=+I$, not $-I$. The correct substitution is $i\mapsto-i\sigma_1$, $j\mapsto-i\sigma_2$, $k\mapsto-i\sigma_3$, which satisfies $i^2=j^2=k^2=ijk=-1$.
+- [Correctness] "Properties of i, j, k" mixes cross products of basis vectors ($i\times i=0$) with quaternion products ($i^2=-1$) for the same letters; as quaternions $ii=-1$, $ij=k$, $ik=-j$. Use quaternion products throughout, or label the cross-product lines as the vector part of $uv$.
+
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/06 Bundles, Holonomy, and Gauge Connections/27.07 Transition functions.md
+- [Correctness] Symbol clash: $B$ is the base space ($\pi:E\to B$) and also a matrix in Practice 2 ($g_{23}=B$), and $A$ names an overlap component in the worked example and a matrix in Practice 2; rename the practice matrices (for example $M,N$).
+
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/06 Bundles, Holonomy, and Gauge Connections/27.09 Connections and holonomy.md
+- [Correctness] Symbol clash: $a$ is the rectangle width in "$[0,a]\times[0,b]$" and $\oint A=cab$, and later the real coefficient in $A=a\alpha$ with holonomy $e^{-2\pi ian}$; rename one (for example rectangle sides $w,h$ or coefficient $\kappa$).
+
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/07 Category Theory/Category of Categories.md
+- [Correctness] "The Category set of all possible [[Category]]" is incorrect and runs into a size paradox; $\mathbf{Cat}$ is the category whose objects are small categories and whose morphisms are functors, with functor composition and identity functors. Also add a quoted title, a TLDR, and a trailing newline.
+

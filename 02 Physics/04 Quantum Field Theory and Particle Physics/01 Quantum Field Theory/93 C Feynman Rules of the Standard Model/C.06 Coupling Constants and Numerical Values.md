@@ -16,7 +16,7 @@ Use this table to reproduce the source's calculations at its stated precision an
 | Quantity | Source value | Comment |
 | --- | --- | --- |
 | $\electric{\alpha}^{-1}(0)$ | $137.036$ | Fine-structure constant in the Thomson limit |
-| $\electric{\alpha}^{-1}(\mechanical{m}_Z)$ | $127.95$ | Electromagnetic coupling evolved to the electroweak scale |
+| $\electric{\alpha}^{-1}(\mechanical{m}_Z)$ | $127.95$ | Electromagnetic coupling evolved to the electroweak scale, modified minimal-subtraction scheme (the on-shell value is approximately $128.9$) |
 | $\signal{\alpha}_s(\mechanical{m}_Z)$ | $0.1179$ | QCD coupling in the modified minimal-subtraction scheme |
 | $\signal{G}_F$ | $1.1664\times10^{-5}\,\unit{GeV^{-2}}$ | Fermi constant |
 | $\signal{v}$ | $246.22\,\unit{GeV}$ | Higgs vacuum scale |
@@ -30,6 +30,9 @@ Use this table to reproduce the source's calculations at its stated precision an
 | $\mechanical{m}_\tau$ | $1.77686\,\unit{GeV}$ | Tau-lepton mass |
 | $\mechanical{m}_\mu$ | $0.1056584\,\unit{GeV}$ | Muon mass |
 | $\mechanical{m}_e$ | $0.51099895\,\unit{MeV}$ | Electron mass |
+
+> [!note] PDG 2024 values
+> Some source values are PDG 2022 values, although the source cites the 2024 edition. The *Review of Particle Physics 2024* gives $\electric{\alpha}^{-1}(\mechanical{m}_Z)=127.930\pm0.008$ (modified minimal-subtraction scheme, five quark flavors), $\signal{\alpha}_s(\mechanical{m}_Z)=0.1180\pm0.0009$, $\sin^2\signal{\theta}_W(\mechanical{m}_Z)=0.23129\pm0.00004$, and $\mechanical{m}_\tau=1.77693\,\unit{GeV}$. The table keeps the source values so that the source's calculations can be reproduced. Use the PDG values for new calculations, and check them against the most recent PDG edition.
 
 > [!note] Source label for the top benchmark
 > The table retains the source's $172.57\,\unit{GeV}$ value and its “pole mass” label. This label must not be read as a precision determination of a unique pole-mass parameter. The [PDG 2024 electroweak review, §10.2.3, discussion around Eq. (10.21)](https://pdg.lbl.gov/2024/reviews/rpp2024-rev-standard-model.pdf#page=7), identifies that value as the Top Quark Listings average and discusses the difference between directly reconstructed Monte Carlo mass parameters and a pole-mass definition. A precision use requires that mass-definition uncertainty as well as experimental uncertainty; the benchmark is not updated here.

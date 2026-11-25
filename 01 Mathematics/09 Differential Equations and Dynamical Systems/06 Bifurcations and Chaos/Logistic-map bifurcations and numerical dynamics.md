@@ -144,7 +144,7 @@ The proposed program for the difference equation takes an initial value $y_0$, a
 
 The lecture asks how to recognize, measure, and observe chaos. In a chaotic system, small differences in initial conditions can become large within a finite time. The notes call this the butterfly effect.
 
-Consider the predator–prey phase plane near the axes. Two nearby initial points can have markedly different trajectories, especially near the separatrix. The notes describe that separation as confined to a small region near the axes.
+Consider the predator–prey phase plane near the axes. Two nearby initial points can have markedly different trajectories, especially near the separatrix. The notes describe that separation as confined to a small region near the axes. This planar example shows only local sensitivity near a separatrix, not chaos. By the Poincaré–Bendixson theorem, a two-dimensional autonomous flow cannot be chaotic. Chaos needs at least three dimensions for a flow, such as the Lorenz system, or one dimension for a noninvertible map, such as the logistic map.
 
 ![[Kyle Kabasares - Mathematical Modeling - Nearby initial conditions near predator prey axes.png|**Fig. 81** The sketch marks two nearby starting points near the horizontal axis and shows their differing paths.]]
 
@@ -204,9 +204,11 @@ The day of the month has a handwritten 5 above an overwritten digit. The agenda 
 $$
 \frac{dx}{dt}=\sigma(y-x),\qquad
 \frac{dy}{dt}=x(\rho-z)-y,\qquad
-\frac{dz}{dt}=xy-\beta z,
-\qquad \sigma,\beta,\rho>0.
+\frac{dz}{dt}=xy-bz,
+\qquad \sigma,b,\rho>0.
 $$
+
+The parameter $b$ is often written $\beta$. Here $b$ avoids a clash with the logistic parameter $\beta$.
 
 ##### Numerical optimization
 
@@ -224,18 +226,14 @@ Kyle Kabasares, *Mathematical Modeling (Math 150, UC Merced 2017)*.
 
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
-| $t$, $1/\alpha$ | $\unit{s}$ | Elapsed time | Time in the population model and time for one factor of $e$ of exponential growth, expressed in the chosen time unit. |
-| $\alpha$ | $\unit{s^{-1}}$ | Population growth rate | Fractional rate of increase, expressed in the inverse of the chosen time unit. |
-| $M$ | 1 | Carrying capacity | Population that the modeled resources can sustain at equilibrium. |
-| $\beta$ | $\unit{s^{-1}}$ | Crowding coefficient | Coefficient of the quadratic reduction in growth when population is counted as a dimensionless number. |
-| $t_0$ | $\unit{s}$ | Inflection time | Time at which the logistic population reaches half its carrying capacity. |
-| $\beta$ | 1 | Predator effect coefficient | Reciprocal of the wolf count at which the rabbit growth term vanishes. |
-| $\epsilon$ | 1 | Rate ratio | Ratio of the wolf decline rate to the rabbit growth rate. |
+| $\beta$ | 1 | Logistic parameter | Growth parameter of the logistic map $x_{n+1}=\beta x_n(1-x_n)$. |
+| $t$ | $\unit{yr}$ | Time | Time in the age-structured population model. |
+| $\alpha$ | $\unit{yr^{-1}}$ | Population growth rate | Fractional rate of increase in the logistic differential equation, in the inverse of the chosen time unit. |
+| $M$ | 1 | Carrying capacity | Maximum population in the age-structured model. |
 | $d_2$, $d_3(t)$, $d_4$ | $\unit{yr^{-1}}$ | Death-rate coefficients | Per-capita loss coefficients for the three older groups. |
 | $d_1(t)$, $I_i(t)$ | $\unit{yr^{-1}}$ | Population flows | Direct loss and external inflow terms in the equations as written, with population counted as a dimensionless number. |
 | $\tau$ | 1 | Total population | Sum of the four age-group populations. |
-| $T$ | $\unit{s}$ | Sampling period | Time between successive measurements at the same phase. |
+| $T$, $t_0$ | $\unit{s}$ | Sampling period and phase | Time between successive measurements and the fixed time at which sampling starts. |
 | $\lambda$ | $\unit{s^{-1}}$ | Lyapunov exponent | Exponential rate of growth or decay of a perturbation in time. |
-| $x$, $y$ | $\unit{oz}$ | Ingredient amounts | Onion soup and chicken stock per serving, respectively. |
-| $s$ | $\unit{g}$ | Protein surplus | Protein above the minimum required per serving. |
-| $t$ | — | Iron surplus | Iron above the minimum required per serving, in the unspecified iron units of the exercise. |
+| $\epsilon$ | 1 | Perturbation size | Small shift of the initial state in the oscillator example. |
+| $\sigma$, $\rho$, $b$ | 1 | Lorenz parameters | Positive constant parameters of the Lorenz system. |

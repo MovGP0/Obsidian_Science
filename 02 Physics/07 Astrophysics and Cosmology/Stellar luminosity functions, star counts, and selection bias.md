@@ -246,42 +246,42 @@ Kyle Kabasares, *Intro to Astrophysics (Physics 240A, UC Irvine 2018)*.
 
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
-| $\mechanical{M}_{\odot}$ | $\unit{\mathrm{g}}$ | Solar mass | Mass of the Sun. |
-| $\energy{L}$ | $\unit{erg\cdot s^{-1}}$ | Luminosity | Total radiant power. |
-| $\mechanical{d}$ | $\unit{cm}$ | Distance to the source | Distance from the observer to the spherical source. |
-| $\sigma$ | $\unit{erg\cdot s^{-1}\cdot cm^{-2}\cdot K^{-4}}$ | Stefan–Boltzmann constant | Relates blackbody flux to the fourth power of temperature. |
-| $\mechanical{r}$ | $\unit{cm}$ | Emitter radius | Radius of the spherical emitter. |
-| $m$ | 1 | Apparent magnitude | Logarithmic measure of observed flux relative to a zero point. |
-| — | $\unit{s^{-1}}$ | Count rate | Detector counts per second. |
-| $B-V$ | 1 | Color index | Difference between the apparent magnitudes in the $B$ and $V$ filters. |
-| $m-M$ | 1 | Distance modulus | Difference between apparent and absolute magnitude. |
-| $A$ | 1 | Extinction | Increase in apparent magnitude caused by attenuation. |
-| $n$ | $\unit{cm^{-3}}$ | Grain number density | Number of dust grains per unit volume. |
-| $\tau$ | 1 | Optical depth | Attenuation exponent along the path. |
-| $\mechanical{r}$ | — | Profile radius | Radial coordinate in the surface brightness sketch. |
-| $\alpha$ | $\unit{h}$ | Right ascension | Celestial coordinate measured eastward along the celestial equator. |
-| $\alpha$ | $\unit{arcsec}$ | Parallax angle | Angular shift due to a one-AU observing baseline. |
-| $\mechanical{M}$ | $\unit{g}$ | Stellar mass | Mass in the main-sequence scaling relations. |
+| $M$ | $\unit{mag}$ | Absolute magnitude | Magnitude that a star would have at a distance of $\quantity{10}{pc}$. |
+| $m$ | $\unit{mag}$ | Apparent magnitude | Logarithmic measure of observed flux relative to a zero point. |
+| $m-M$ | $\unit{mag}$ | Distance modulus | Difference between apparent and absolute magnitude. |
 | $\Phi(M,\mechanical{\mathbf{x}})$ | $\unit{pc^{-3}\cdot mag^{-1}}$ | Stellar luminosity function | Number of stars per unit volume and absolute magnitude. |
 | $\mechanical{\mathbf{x}}$ | $\unit{pc}$ | Spatial position | Position at which the luminosity function is evaluated. |
+| $\Phi(M)$ | — | Magnitude distribution factor | Magnitude-dependent part of the separable luminosity function. Its units depend on the normalization of the spatial factor. |
+| $\nu(\mechanical{\mathbf{x}})$, $\nu(\mechanical{s})$ | — | Spatial density factor | Position-dependent part of the separable luminosity function. |
+| $\mechanical{\mathcal{M}}$ | $\unit{g}$ | Mass | Mass of the stellar system in the mass-to-light ratio. |
+| $\energy{L}$, $\energy{L}_V$ | $\unit{erg\cdot s^{-1}}$ | Luminosity | Total radiant power, or the power in the $V$ band. |
+| $\mechanical{M}_{\odot}$ | $\unit{g}$ | Solar mass | Mass of the Sun. |
+| $\energy{L}_{V,\odot}$ | $\unit{erg\cdot s^{-1}}$ | Solar $V$-band luminosity | Luminosity of the Sun in the $V$ band. |
 | $\Upsilon,\,\Upsilon_V$ | $\unit{M_{\odot}/L_{\odot}}$ | Mass-to-light ratio | Mass per unit luminosity, with a $V$-band form normalized to solar values. |
 | $A(m)$ | $\unit{sr^{-1}\cdot mag^{-1}}$ | Apparent-magnitude count distribution | Number of stars per unit solid angle and apparent magnitude. |
 | $N(m)$ | $\unit{sr^{-1}}$ | Cumulative magnitude count | Number of stars per unit solid angle above the brightness limit. |
+| $N_{\Omega}(m)$, $N_1$, $N_2$ | 1 | Cumulative count in the cone | Number of stars brighter than $m$ in the cone of solid angle $\Omega$. |
+| $\mechanical{d}$ | $\unit{pc}$ | Distance | Distance from the observer to the star in the distance modulus. |
+| $\mechanical{r}$ | $\unit{pc}$ | Limiting distance | Distance limit of the count in the cone. |
 | $N(\mechanical{r})$ | 1 | Cumulative distance count | Number of stars within the distance limit in the selected cone. |
 | $n$ | $\unit{pc^{-3}}$ | Stellar number density | Number of stars per unit volume. |
 | $\Omega$ | $\unit{sr}$ | Solid angle | Angular area of the selected sky cone. |
-| $\Phi(M)$ | — | Magnitude distribution factor | Magnitude-dependent part of the separable luminosity function. Its units depend on the normalization of the spatial factor. |
 | $\mechanical{s}$ | $\unit{pc}$ | Line-of-sight distance | Distance from the observer to the volume element. |
-| $a(\mechanical{s})$ | 1 | Extinction along the line of sight | Magnitude increase due to attenuation out to distance $\mechanical{s}$. |
+| $V$ | $\unit{pc^3}$ | Volume | Volume element at distance $\mechanical{s}$. |
+| $a(\mechanical{s})$ | $\unit{mag}$ | Extinction along the line of sight | Magnitude increase due to attenuation out to distance $\mechanical{s}$. |
 | $A_{\Omega}(m)$ | $\unit{mag^{-1}}$ | Star count in the field | Number of stars per unit apparent magnitude in solid angle $\Omega$. |
-| $M_0,\,\langle M\rangle_m$ | 1 | Mean absolute magnitudes | Intrinsic mean for the class and mean for stars selected at apparent magnitude $m$. |
-| $\sigma$ | 1 | Absolute-magnitude dispersion | Standard deviation of the Gaussian magnitude distribution. |
+| $M_0,\,\langle M\rangle_m$ | $\unit{mag}$ | Mean absolute magnitudes | Intrinsic mean for the class and mean for stars selected at apparent magnitude $m$. |
+| $\sigma$ | $\unit{mag}$ | Absolute-magnitude dispersion | Standard deviation of the Gaussian magnitude distribution. |
 | $\Psi(M)$ | $\unit{mag^{-1}}$ | Initial luminosity function | Number formed per unit absolute magnitude. |
-| $\tau_{\mathrm{gal}}$ | $\unit{yr}$ | Population age | Time elapsed since the single burst of star formation. |
+| $\tau_{\mathrm{gal}}$ | $\unit{yr}$ | Population age | Age of the stellar population or duration of star formation. |
 | $\tau_{\mathrm{MS}}$ | $\unit{yr}$ | Main-sequence lifetime | Time before a star leaves the main sequence. |
+| $B-V$ | $\unit{mag}$ | Color index | Difference between the apparent magnitudes in the $B$ and $V$ filters. |
+| $\mechanical{M}$ | $\unit{g}$ | Stellar mass | Mass of a star in the initial mass function. |
 | $\xi(\mechanical{M})$ | $\unit{pc^{-3}\cdot M_{\odot}^{-1}}$ | Initial mass function | Number of stars formed per unit volume and mass interval. |
 | $\xi_0$ | $\unit{pc^{-3}\cdot M_{\odot}^{-1}}$ | IMF normalization | Amplitude of the Salpeter mass distribution. |
+| $\alpha$ | 1 | IMF slope | Power-law exponent of the Kroupa initial mass function. |
+| $\mechanical{M}_{\mathrm{low}}$, $\mechanical{M}_{\mathrm{high}}$ | $\unit{g}$ | Mass limits | Lower and upper limits of the adopted mass range. |
+| $N_{\mathrm{tot}}$ | $\unit{pc^{-3}}$ | Total number of stars | Number of stars integrated over the adopted mass range. |
+| $\mechanical{M}_{\mathrm{tot}}$ | $\unit{g\cdot pc^{-3}}$ | Total stellar mass | Mass integrated over the adopted mass range. |
+| $t$ | $\unit{yr}$ | Time | Time in the star formation history. |
 | $t_0$ | $\unit{yr}$ | Star formation decay time | E-folding time of the exponential star formation history. |
-| $A$ | $\unit{km\cdot s^{-1}\cdot kpc^{-1}}$ | First Oort constant | Local rotational shear inferred from the longitude dependence of radial velocities. |
-| $B$ | $\unit{km\cdot s^{-1}\cdot kpc^{-1}}$ | Second Oort constant | Offset in the nearby tangential velocity per unit distance. |
-| $\alpha$ | $\unit{rad}$ | Scattering angle | Small change in the direction of the moving star. |

@@ -18,3 +18,6 @@ $$
 \varphi(t) = \sqrt2 \sum_{n=0}^3 h_n \,\varphi(2t - n),\quad
 \psi(t) = \sqrt2 \sum_{n=0}^3 g_n \,\varphi(2t - n)
 $$
+
+> [!note] Naming convention
+> This note names Daubechies wavelets by the number of filter taps: Db4 has 4 taps and 2 vanishing moments (Daubechies' D4). MATLAB and PyWavelets name wavelets by the number of vanishing moments, so this wavelet is `db2` there, and `db4` has 8 taps. The [[Haar Wavelet (Db1)]] note uses the vanishing-moment convention (Haar = `db1` = D2).

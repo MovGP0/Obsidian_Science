@@ -1,0 +1,56 @@
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.05 The Complete Standard Model Lagrangian.md
+- [Correctness] Symbol clash: $\lambda^a$ denotes the Gell-Mann matrices in $D_\mu\signal{Q}$ and $\signal{\lambda}$ the Higgs quartic coupling in $\energy{\mathcal L}_{\mathrm{Higgs}}$; write the color generators as $T^a$ (as in 13.04 with $T^a=\lambda^a/2$) to remove the clash.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.07.02 Precision Tests.md
+- [Correctness] The muon $g-2$ section is outdated: the final Fermilab result (2025) is $\magnetic{a}_\mu^{\mathrm{exp}}\approx116\,592\,071(15)\times10^{-11}$ and the 2025 Theory Initiative prediction (lattice HVP) is $\approx116\,592\,033(62)\times10^{-11}$, so the former $5\sigma$ tension has essentially disappeared; update or clearly mark the 2020/2023 numbers as superseded.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/93 C Feynman Rules of the Standard Model/C.06 Coupling Constants and Numerical Values.md
+- [Correctness] The table claims PDG 2024, but $\signal{\alpha}_s(\mechanical{m}_Z)=0.1179$, $\sin^2\hat{\signal{\theta}}_W(\mechanical{m}_Z)=0.2312$ and $\mechanical{m}_\tau=1.77686\,\unit{GeV}$ are PDG 2022 numbers. PDG 2024 gives $0.1180(9)$, $0.23129(4)$ (rounds to $0.2313$) and $1.77693\,\unit{GeV}$. Either update them (and the "$0.2232$ vs $0.2312$" sentence) or relabel the table as the source's 2022-era inputs. Also check against the PDG 2026 edition, which should be out by now.
+- [Correctness] The row $\electric{\alpha}^{-1}(\mechanical{m}_Z)=127.95$ is the PDG 2022 $\overline{\text{MS}}$ value $127.951$. The PDG 2024 electroweak review (Sec. 10.2) gives $\hat\alpha^{(5)}(\mechanical{m}_Z)^{-1}=127.930\pm0.008$. The comment column should also name the $\overline{\text{MS}}$ scheme, because the on-shell $\alpha(\mechanical{m}_Z)^{-1}\approx128.9$ differs by about one unit.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/00 Introduction/0.1 Elementary Particle Physics.md
+- [Correctness] "photons, neutrinos, and gluons are all (apparently) massless" is outdated: neutrino oscillations (Super-Kamiokande 1998, SNO 2001) prove that at least two neutrinos have mass (KATRIN direct bound $m_\nu<0.45\,\unit{eV}/c^2$); add a modern-status callout rather than changing the source text.
+- [Correctness] "Since 1978 ... it has met every experimental test" needs a note that neutrino masses require at least a minimal extension of the original Standard Model; the Higgs boson was found in 2012 ($125.2\,\unit{GeV}/c^2$).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/00 Introduction/0.2 How Do You Produce Elementary Particles -.md
+- [Correctness] "At present, the heaviest known particle is the $Z^0$" is outdated: the top quark ($172.6\,\unit{GeV}/c^2$, PDG) and the Higgs boson ($125.2\,\unit{GeV}/c^2$) are heavier; add a modern-status callout.
+- [Correctness] "the particle gains enormously in energy if you collide two high-speed particles head-on" is misleading: what grows is the centre-of-mass (available) energy $\sqrt{s}$, not the particle's energy; reword the note's gloss or add a clarifying footnote.
+- [Correctness] Fig. I.2 caption "LEP ... now under construction" is dated (LEP ran 1989 to 2000 up to about $104.5\,\unit{GeV}$ per beam; the LHC now runs in the same tunnel); flag it in a callout.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/00 Introduction/0.3 How Do You Detect Elementary Particles -.md
+- [Correctness] "the bubble chamber photograph in Fig. 1.11 ... five neutral particles" refers to the $\Omega^-$ discovery photograph, which is Fig. 1.10 in this vault (note 1.7); Fig. 1.11 there is the meson-nonet diagram. Change it to Fig. 1.10 and link it as [[1.7 The Eightfold Way (1961-1964)]].
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/01 Historical Introduction to the Elementary Particles/1.1 The Classical Era (1897-1932).md
+- [Correctness] "In 1914 Niels Bohr proposed a model for hydrogen" — the Bohr model was published in 1913; add a footnote (the source text may keep 1914).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/01 Historical Introduction to the Elementary Particles/1.10 Intermediate Vector Bosons (1983).md
+- [Correctness] Add the current PDG values next to (1.30) and the 1983 measurements: $M_W=80.369\pm0.013\,\unit{GeV}/c^2$ and $M_Z=91.1880\pm0.0020\,\unit{GeV}/c^2$; the 1983 values $81\pm5$ and $95\pm3$ are historical only.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/01 Historical Introduction to the Elementary Particles/1.11 The Standard Model (1978- - ).md
+- [Correctness] Several statements are outdated and need a status callout: top quark discovered 1995 ($172.6\,\unit{GeV}/c^2$), $\nu_\tau$ observed directly 2000 (DONUT), a single Higgs boson found in 2012 ($125.2\,\unit{GeV}/c^2$), gluon evidence now compelling (PETRA three-jet events 1979, LEP), glueballs still not established.
+- [Correctness] The separate conservation of $L_e$, $L_\mu$, $L_\tau$ implied by the lepton table is violated by neutrino oscillations; only the total $L$ is conserved in the Standard Model with massive neutrinos (as far as is known).
+- [Correctness] The text cites "(Fig. 1.16)" for the generations mimicking each other, but only Fig. 1.15 is embedded and no fig-1-16 asset exists in `Attachements`; add the missing figure or fix the reference.
+- [Correctness] The physical-quantities table lists $\mechanical{m}$ (particle mass), which the note text never uses (it appears only in the figure); remove it or use it in the text.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/01 Historical Introduction to the Elementary Particles/1.2 The Photon (1900-1924).md
+- [Correctness] $\energy{E}$ means both the photon energy in (1.1) and the emitted electron's kinetic energy in (1.3), and the table lists $\energy{E}$ twice; write (1.3) as $\energy{K_{\max}}=\mechanical{h}\signal{\nu}-\energy{w}$ (or $\energy{E_e}$) to remove the clash.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/01 Historical Introduction to the Elementary Particles/1.4 Antiparticles (1930-1956).md
+- [Correctness] The text says Anderson discovered the positron "in late 1931", but the Fig. 1.5 caption says 1932; the discovery was in August 1932. Add a footnote so the note is self-consistent.
+- [Correctness] Dirac's equation was published in early 1928 (Proc. R. Soc. A 117), not 1927; footnote the date.
+- [Correctness] The neutron charge structure "positive at the center and at the edges, negative in between" is outdated; modern form factors give a positive core and a negative outer region (mean-square charge radius $\langle r^2\rangle_n=-0.1155\,\unit{fm^2}$, PDG).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/01 Historical Introduction to the Elementary Particles/1.5 Neutrinos (1930-1962).md
+- [Correctness] "as far as we know, its mass is in fact zero" is outdated: oscillations prove nonzero neutrino masses ($\Delta m^2_{21}\approx7.5\times10^{-5}\,\unit{eV^2}$, $|\Delta m^2_{32}|\approx2.5\times10^{-3}\,\unit{eV^2}$; KATRIN $m_\nu<0.45\,\unit{eV}$), and the separate conservation of $L_e$ and $L_\mu$ is violated in oscillations.
+- [Correctness] "established that the neutrino and antineutrino are distinct particles" overstates the Davis result: the null result is also explained by helicity (V−A), and whether neutrinos are Dirac or Majorana is still open (neutrinoless double-beta-decay searches).
+- [Correctness] The 1962 Brookhaven description does not match the experiment (Danby et al.): the beam was mainly $\nu_\mu$ from $\pi^+\to\mu^+\nu_\mu$, the observed reaction was $\nu_\mu+n\to\mu^-+p$ (29 muon events), and the few shower events were consistent with background; footnote the correction.
+- [Correctness] "The upper number is the atomic weight (the number of neutrons plus protons)" names the mass number $A$, not the atomic weight; footnote the modern term. Also update (1.16): the current limit is $\mathrm{BR}(\mu\to e\gamma)<1.5\times10^{-13}$ (MEG II).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/01 Historical Introduction to the Elementary Particles/1.6 Strange Particles (1947-1960).md
+- [Correctness] The proton-stability footnote cites 1981–85 articles only; add the current bound $\tau/B(p\to e^+\pi^0)>2.4\times10^{34}\,\unit{yr}$ (Super-Kamiokande), which excludes minimal SU(5) GUTs.
+- [Correctness] $A$ denotes baryon number in the text, while the Fig. 1.9 caption uses $A$ and $B$ as vertex labels ("decays at $A$"); rename the vertices or note the clash (most texts use $B$ for baryon number, but $B$ is beauty in 1.11).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/01 Historical Introduction to the Elementary Particles/1.7 The Eightfold Way (1961-1964).md
+- [Correctness] In the baryon-decuplet graph the $S=-2$, $Q=0$ point at (1, -0.464) is labelled "Ξ*⁺"; it must be "Ξ*⁰" (the $\Xi^*$ doublet is $\Xi^{*-}$, $\Xi^{*0}$; see the $uss$ row in 1.8).
+- [Correctness] In the Fig. 1.11 nonet graph, the $^3P_0$ isoscalar label "S*⁰′" looks garbled (the source has $S^*$ and $\epsilon$); check against PDF page 44. Also add a footnote that the old names ($\kappa$, $\delta$, $\epsilon$, $Q$, $A_1$, $D$, $E$, $g$) correspond to modern $K_0^*$, $a_0(980)$, $f_0$, $K_1$, $a_1(1260)$, $f_1(1285)$, $f_1(1420)$, $\rho_3(1690)$.
+

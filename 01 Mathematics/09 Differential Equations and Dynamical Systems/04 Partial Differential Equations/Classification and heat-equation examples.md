@@ -40,11 +40,11 @@ The inverse is $y(t)=\frac14-\frac14\cos(2t)$. It satisfies the equation on each
 
 ##### Introduction to PDEs
 
-An ordinary differential equation such as $y''(t)+2y(t)=e^t$ uses a function of one independent variable. A partial differential equation uses a function of several independent variables. For example, the one-dimensional heat equation for the temperature $\thermal{y}(\mechanical{x},\signal{t})$ is
+An ordinary differential equation such as $y''(t)+2y(t)=e^t$ uses a function of one independent variable. A partial differential equation uses a function of several independent variables. For example, the one-dimensional heat equation for the temperature $\thermal{u}(\mechanical{x},\signal{t})$ is
 
 $$
-\frac{\partial\thermal{y}}{\partial\signal{t}}
-=\thermal{k}\frac{\partial^2\thermal{y}}{\partial\mechanical{x}^2}.
+\frac{\partial\thermal{u}}{\partial\signal{t}}
+=\thermal{k}\frac{\partial^2\thermal{u}}{\partial\mechanical{x}^2}.
 $$
 
 ##### Partial differential equations and notation
@@ -334,11 +334,9 @@ Kyle Kabasares, *Intermediate Ordinary Differential Equations (Math 125, UC Merc
 
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
-| $\mechanical{m}$ | $\unit{kg}$ | Mass | Mass of the vibrating body or of a slice of the conducting rod. |
-| $\mechanical{x}$ | $\unit{m}$ | Displacement or spatial coordinate | Position relative to equilibrium in the oscillator or distance along the wave and heat models. |
-| $\mechanical{c}$ | $\unit{N\,s\,m^{-1}}$ | Viscous damping coefficient | Proportionality between velocity and damping force. |
-| $\signal{t}$ | $\unit{s}$ | Time | Independent variable in the vibration and heat models. |
-| $\thermal{y}$ | $\unit{K}$ | Temperature | Dependent variable in the heat equation on [[#Changing the forcing at one point\|the section on Changing the forcing at one point]]. |
+| $\mechanical{m}$ | $\unit{kg}$ | Mass | Mass of a slice of the conducting rod. |
+| $\mechanical{x}$ | $\unit{m}$ | Spatial coordinate | Distance along the wave and heat models. |
+| $\signal{t}$ | $\unit{s}$ | Time | Independent variable in the wave and heat models. |
 | $\thermal{k}$ | $\unit{m^2\,s^{-1}}$ | Thermal diffusivity | Coefficient of the second spatial derivative in the heat equation. |
 | $\mechanical{u}$ | $\unit{m}$ | Wave displacement | Dependent variable in the one-dimensional mechanical wave model. |
 | $\mechanical{c}$ | $\unit{m\,s^{-1}}$ | Wave speed | Coefficient whose square multiplies the second spatial derivative in the wave equation. |

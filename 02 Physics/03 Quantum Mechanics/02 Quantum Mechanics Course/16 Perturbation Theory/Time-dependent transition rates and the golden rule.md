@@ -98,7 +98,7 @@ $$
 \Gamma=\frac{2\pi}{\hbar}
 \left[|\energy{V}_{\energy{E},0}|^2\rho(\energy{E})\right]_{\energy{E}=\energy{E}_0^{(0)}}.
 $$
-The time must be long enough that the peak is narrow on the energy scale $\Delta\energy{E}$ of the smooth factors, yet short enough that the peak samples many levels of spacing $\delta\energy{E}$. The notes give the window $2\pi\hbar/\Delta\energy{E}\ll\mechanical{t}\ll 2\pi\hbar/\delta\energy{E}$. The perturbative probability must also be small.
+The time must be long enough that the peak is narrow on the energy scale $\energy{W}$ of the smooth factors, yet short enough that the peak samples many levels of spacing $\delta\energy{E}$. The notes give the window $2\pi\hbar/\energy{W}\ll\mechanical{t}\ll 2\pi\hbar/\delta\energy{E}$. The perturbative probability must also be small.
 
 The total probability is $\sum_n P_{0\to n}\simeq\Gamma\mechanical{t}$. The rate can be split into partial rates $\Gamma=\sum_i\Gamma_i$, where $i$ labels subgroups of final states. A form that resolves the energy explicitly is
 $$
@@ -297,19 +297,19 @@ Kyle Kabasares, *Quantum Mechanics II (Physics 215B, UC Irvine 2018)*.
 | --- | --- | --- | --- |
 | $\energy{E}_i^{(0)}$ | $\unit{J}$ | Unperturbed energy | Energy eigenvalue of state $i$ before adding the perturbation. |
 | $\hbar$ | $\unit{J\,s}$ | Reduced Planck constant | Planck constant divided by $2\pi$. |
-| $\signal{\omega}$, $\signal{\omega}_j$ | $\unit{rad\,s^{-1}}$ | Angular frequencies | Common unperturbed frequency and frequencies of the new oscillator modes. |
-| $\mechanical{t}$, $\mechanical{t}_0$, $\Delta\mechanical{t}$ | $\unit{s}$ | Time | Observation time, initial or switching time, and elapsed time. |
+| $\signal{\omega}$ | $\unit{rad\,s^{-1}}$ | Angular frequency | Oscillator or drive angular frequency. |
+| $\mechanical{t}$, $\mechanical{t}_0$ | $\unit{s}$ | Time | Observation time and switching time. |
 | $\mechanical{m}$ | $\unit{kg}$ | Mass | Particle mass. |
 | $\mechanical{x}$ | $\unit{m}$ | Position | Displacement along the oscillator axis. |
 | $\mechanical{p}$ | $\unit{kg\,m\,s^{-1}}$ | Momentum | Momentum along the oscillator axis. |
 | $\energy{E}$, $\energy{E}_0$ | $\unit{J}$ | Energy eigenvalue | Energy of an eigenstate, including the common energy of a degenerate subspace. |
-| $\mechanical{F}$, $\mechanical{F}_0$ | $\unit{N}$ | Linear driving coefficient | Coefficient of displacement in the driving potential, equal to the negative of the applied force. |
+| $\mechanical{F}$ | $\unit{N}$ | Applied force | Constant force on the oscillator; the driving term in $H$ is $-\mechanical{F}\mechanical{x}$. |
 | $\mechanical{x}_0$ | $\unit{m}$ | Shifted equilibrium position | Minimum of the oscillator potential after adding the linear term. |
-| $\mechanical{z}$, $\mechanical{r}$ | $\unit{m}$ | Vertical position and radius | Position along the drive direction and distance from the origin. |
-| $E$ | $\unit{N}$ | Linear perturbation coefficient | Electric field strength multiplied by the signed charge, with the sign set by the potential convention. |
+| $\mechanical{r}$ | $\unit{m}$ | Radius | Distance from the origin in a radial perturbation. |
 | $\rho(\energy{E})$ | $\unit{J^{-1}}$ | Density of states | Number of states per unit energy in the set of final states. |
 | $\Gamma$ | $\unit{s^{-1}}$ | Transition rate | Leading probability per unit time for transition into the continuum. |
-| $\Delta\energy{E}$, $\delta\energy{E}$ | $\unit{J}$ | Energy scales | Width over which the continuum factors change and spacing of individual final levels. |
+| $\Delta\energy{E}$ | $\unit{J}$ | Energy separation | Difference $\energy{E}_n^{(0)}-\energy{E}_0^{(0)}$ between final and initial unperturbed energies. |
+| $\energy{W}$, $\delta\energy{E}$ | $\unit{J}$ | Energy scales | Width over which the continuum factors change and spacing of individual final levels. |
 | $\Omega$ | $\unit{sr}$ | Solid angle | Angular measure for the direction of a final momentum. |
 | $\mechanical{L}$ | $\unit{m}$ | Box side length | Periodic normalization length in each coordinate. |
 | $\signal{\mathbf k}$, $\signal{k}_j$ | $\unit{m^{-1}}$ | Wave vector and components | Spatial frequencies of the momentum eigenfunction. |
@@ -321,7 +321,4 @@ Kyle Kabasares, *Quantum Mechanics II (Physics 215B, UC Irvine 2018)*.
 | $\energy{\widetilde E}_k$ | $\unit{J}$ | Shifted oscillator energy | Energy eigenvalue while the constant force acts. |
 | $\mathcal E$ | $\unit{N}$ | Electric driving coefficient | Charge-weighted field strength with the sign convention used in the ionization example. |
 | $\eta$ | $\unit{s^{-1}}$ | Switching rate | Parameter setting the speed of the smooth switch-on. |
-| $c$ | $\unit{m\,s^{-1}}$ | Speed of light | Vacuum light speed used in the time coordinate and Maxwell equations. |
-| $\energy{V}_0$, $\energy{V}$ | $\unit{J}$ | Well depth and potential energy | Positive depth and the signed binding potential as a function of radius. |
-| $A$, $B$ | $\unit{s^{-1}}$ | Mode emission and absorption coefficients | Spontaneous rate and induced transition rate per photon for a single resonant mode. |
-| $d\energy{P}_{\mathrm{rad}}/d\Omega$ | $\unit{W\,sr^{-1}}$ | Angular radiated power | Radiated power per solid angle into the specified polarization. |
+| $V$, $\energy{V}_{n0}$ | $\unit{J}$ | Perturbation and matrix element | Perturbing potential and its matrix element between unperturbed states. |

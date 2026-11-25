@@ -68,7 +68,7 @@ A margin aside comments on the broad use of statistical mechanics and quantum me
 
 The historical sketch lists thermometers associated with the Medici family in Florence, then Fahrenheit (1714), Réaumur (1731), and Celsius (1742). The Réaumur line notes a $0$–$80$ scale and mentions boiling alcohol. These are the dates and descriptions in the notebook.
 
-The sketch attributed to Guillaume Amontons plots pressure against temperature. A dashed straight line extrapolates to zero pressure at approximately $-273\;\unit{^\circ C}$. The notes then mention Lavoisier (1783) and the caloric theory of heat, followed by Count Rumford (about 1798). The cannon-boring example illustrates conversion of mechanical work into heat.
+The sketch attributed to Guillaume Amontons plots pressure against temperature. A dashed straight line extrapolates to zero pressure at approximately $-273\;\unit{^\circ C}$ in the notebook. Amontons' own extrapolation gave roughly $-240\;\unit{^\circ C}$. The value near $-273\;\unit{^\circ C}$ comes from later, more precise gas data. The notes then mention Lavoisier (1783) and the caloric theory of heat, followed by Count Rumford (about 1798). The cannon-boring example illustrates conversion of mechanical work into heat.
 
 The historical notes mention Joule (1843), beer brewing, the importance of temperature for fermentation, and the use of accurate thermometers. Sadi Carnot (1824), described as an officer in the French army, sought a mathematical theory of heat engines. The notebook puts the print run of his book at about 600 copies and notes its small readership.
 
@@ -76,15 +76,15 @@ William Thomson, Lord Kelvin, is associated with absolute zero at $-273.15\;\uni
 
 ##### Spins in the canonical ensemble
 
-Consider $N$ independent moments in a uniform external magnetic field. The notebook denotes the field by $\magnetic{\vec H}$ in the energy formula, with the units of $\magnetic{\vec B}$ there. It contrasts the independent approximation with coupled spins in ferromagnets. The Hamiltonian is $\energy{H}=-\sum_{i=1}^N\magnetic{\vec\mu}_i\cdot\magnetic{\vec H}$. Classically, a single moment has energy $-\magnetic{\mu}\magnetic{H}\cos\mechanical{\theta}$, where $\mechanical{\theta}$ is its angle to the field.
+Consider $N$ independent moments in a uniform external magnetic field. The notebook denotes the field by $H$ in the energy formula, with the units of $\magnetic{\vec B}$. This note writes $\magnetic{\vec B}$ to avoid a clash with the Hamiltonian $\energy{H}$. It contrasts the independent approximation with coupled spins in ferromagnets. The Hamiltonian is $\energy{H}=-\sum_{i=1}^N\magnetic{\vec\mu}_i\cdot\magnetic{\vec B}$. Classically, a single moment has energy $-\magnetic{\mu}\magnetic{B}\cos\mechanical{\theta}$, where $\mechanical{\theta}$ is its angle to the field.
 
 The total partition function is $Z_N=Z_1^N$. Integrate over orientations for a single classical moment.
 
 $$
 Z_1=\int_0^{2\pi}d\phi\int_{-1}^{1}d(\cos\mechanical{\theta})\,
-e^{\thermal{\beta}\magnetic{\mu}\magnetic{H}\cos\mechanical{\theta}}
-=4\pi\frac{\sinh(\thermal{\beta}\magnetic{\mu}\magnetic{H})}
-{\thermal{\beta}\magnetic{\mu}\magnetic{H}}.
+e^{\thermal{\beta}\magnetic{\mu}\magnetic{B}\cos\mechanical{\theta}}
+=4\pi\frac{\sinh(\thermal{\beta}\magnetic{\mu}\magnetic{B})}
+{\thermal{\beta}\magnetic{\mu}\magnetic{B}}.
 $$
 
 Take $z$ along the field. The total mean magnetic moment along $z$ follows by differentiating $\ln Z_1$.
@@ -92,18 +92,18 @@ Take $z$ along the field. The total mean magnetic moment along $z$ follows by di
 $$
 \begin{aligned}
 \magnetic{M}_z&=N\magnetic{\mu}\langle\cos\mechanical{\theta}\rangle
-=\frac{N}{\thermal{\beta}}\frac{\partial\ln Z_1}{\partial\magnetic{H}},\\
+=\frac{N}{\thermal{\beta}}\frac{\partial\ln Z_1}{\partial\magnetic{B}},\\
 \frac{\magnetic{M}_z}{N}
-&=\magnetic{\mu}\left[\coth(\thermal{\beta}\magnetic{\mu}\magnetic{H})
--\frac{1}{\thermal{\beta}\magnetic{\mu}\magnetic{H}}\right].
+&=\magnetic{\mu}\left[\coth(\thermal{\beta}\magnetic{\mu}\magnetic{B})
+-\frac{1}{\thermal{\beta}\magnetic{\mu}\magnetic{B}}\right].
 \end{aligned}
 $$
 
-The bracket is the Langevin function of the dimensionless argument $\thermal{\beta}\magnetic{\mu}\magnetic{H}=\magnetic{\mu}\magnetic{H}/(\thermal{k}_{\mathrm B}\thermal{T})$.
+The bracket is the Langevin function of the dimensionless argument $\thermal{\beta}\magnetic{\mu}\magnetic{B}=\magnetic{\mu}\magnetic{B}/(\thermal{k}_{\mathrm B}\thermal{T})$.
 
 ##### Langevin function and Curie's law
 
-Write the classical magnetization curve in terms of $x=\magnetic{\mu}\magnetic{H}/(\thermal{k}_{\mathrm B}\thermal{T})$. For a strong positive field, the Langevin function $L(x)=\coth x-1/x$ approaches $1$. Then $\magnetic{M}_z/N$ approaches the full moment $\magnetic{\mu}$.
+Write the classical magnetization curve in terms of $x=\magnetic{\mu}\magnetic{B}/(\thermal{k}_{\mathrm B}\thermal{T})$. For a strong positive field, the Langevin function $L(x)=\coth x-1/x$ approaches $1$. Then $\magnetic{M}_z/N$ approaches the full moment $\magnetic{\mu}$.
 
 ![[Kyle Kabasares - Thermodynamics and Statistical Mechanics - Langevin function saturation.png|**Fig. 6** The normalized moment rises from zero and approaches its saturated value of one.]]
 
@@ -112,14 +112,14 @@ At weak fields, expand about $x=0$.
 $$
 L(x)=\frac{x}{3}-\frac{x^3}{45}+\cdots,\qquad
 \frac{\magnetic{M}_z}{N}
-\approx\frac{\magnetic{\mu}^2\magnetic{H}}{3\thermal{k}_{\mathrm B}\thermal{T}}.
+\approx\frac{\magnetic{\mu}^2\magnetic{B}}{3\thermal{k}_{\mathrm B}\thermal{T}}.
 $$
 
 The handwritten expansion has a plus on the cubic term and omits one factor of $\magnetic{\mu}$ in the leading moment. The expression $\coth x-1/x$ and the susceptibility on the same page give the forms above. The zero-field susceptibility obeys **Curie's law**,
 
 $$
 \magnetic{\chi}
-=\left.\frac{\partial\magnetic{M}_z}{\partial\magnetic{H}}\right|_{H=0}
+=\left.\frac{\partial\magnetic{M}_z}{\partial\magnetic{B}}\right|_{B=0}
 =\frac{N\magnetic{\mu}^2}{3\thermal{k}_{\mathrm B}}\frac{1}{\thermal{T}}.
 $$
 
@@ -131,21 +131,21 @@ The independent-spin susceptibility decreases as $1/\thermal{T}$. The notes then
 
 The margin cites Pathria pages 77 or 111 and Feynman page 130. The notes write the magnetic moment as $\magnetic{\vec\mu}=g\electric{e}\mechanical{\vec J}/(2\mechanical{m}\mechanical{c})$ in Gaussian units, with $\electric{e}$ the signed particle charge and $g$ the Landé factor. Total angular momentum is $\mechanical{\vec J}=\mechanical{\vec L}+\mechanical{\vec S}$, and the eigenvalue of $\mechanical{J}^2$ is $\energy{\hbar}^2j(j+1)$ for $j=0,\tfrac12,1,\tfrac32,\ldots$. A spin-$1/2$ electron has spin projections $\mechanical{S}_z=\pm\energy{\hbar}/2$.
 
-For $N$ independent two-state moments, the field points up along $z$. Let $n_\uparrow$ and $n_\downarrow$ count the moments parallel and antiparallel to the field. The energy is $\energy{E}=-\magnetic{\mu}\magnetic{H}(n_\uparrow-n_\downarrow)$. Write $x=\thermal{\beta}\magnetic{\mu}\magnetic{H}$. Then
+For $N$ independent two-state moments, the field points up along $z$. Let $n_\uparrow$ and $n_\downarrow$ count the moments parallel and antiparallel to the field. The energy is $\energy{E}=-\magnetic{\mu}\magnetic{B}(n_\uparrow-n_\downarrow)$. Write $x=\thermal{\beta}\magnetic{\mu}\magnetic{B}$. Then
 
 $$
 Z_N=(e^x+e^{-x})^N,\qquad
 \ln Z_N=N\ln(2\cosh x).
 $$
 
-The derivatives with respect to $\thermal{\beta}$ and $\magnetic{H}$ give
+The derivatives with respect to $\thermal{\beta}$ and $\magnetic{B}$ give
 
 $$
-\langle\energy{E}\rangle=-N\magnetic{\mu}\magnetic{H}\tanh x,\qquad
+\langle\energy{E}\rangle=-N\magnetic{\mu}\magnetic{B}\tanh x,\qquad
 \frac{\magnetic{M}_z}{N}=\magnetic{\mu}\tanh x.
 $$
 
-The energy variance is $N(\magnetic{\mu}\magnetic{H})^2/\cosh^2 x$. For nonzero field its relative standard deviation is
+The energy variance is $N(\magnetic{\mu}\magnetic{B})^2/\cosh^2 x$. For nonzero field its relative standard deviation is
 
 $$
 \frac{\sqrt{\langle(\Delta\energy{E})^2\rangle}}{|\langle\energy{E}\rangle|}
@@ -155,10 +155,10 @@ $$
 The notebook stresses the $1/\sqrt N$ factor. Its last denominator shows $\sinh^2 x$, which belongs to the relative variance with the corresponding $1/N$ prefactor. The magnetic susceptibility is
 
 $$
-\magnetic{\chi}=\frac{\partial\magnetic{M}_z}{\partial\magnetic{H}}
+\magnetic{\chi}=\frac{\partial\magnetic{M}_z}{\partial\magnetic{B}}
 =\frac{N\thermal{\beta}\magnetic{\mu}^2}{\cosh^2 x}
 \ \longrightarrow\ \frac{N\magnetic{\mu}^2}{\thermal{k}_{\mathrm B}\thermal{T}}
-\quad\text{as }\magnetic{H}\to0.
+\quad\text{as }\magnetic{B}\to0.
 $$
 
 This again has Curie's inverse-temperature dependence.
@@ -191,22 +191,19 @@ Kyle Kabasares, *Thermodynamics and Statistical Mechanics (Chem 232A - Physics 2
 | $\thermal{S}$ | $\unit{J\,K^{-1}}$ | Entropy | State function whose change along a reversible path is the integral of reversible heat divided by temperature. |
 | $\mechanical{\vec p}$ | $\unit{kg\,m\,s^{-1}}$ | Momentum | Particle momentum, which changes sign under time reversal. |
 | $\mechanical{V}$ | $\unit{m^3}$ | Volume | Spatial extent of a simple system. |
-| $\mechanical{P}$, $\mechanical{P}_{\mathrm{int}}$, $\mechanical{P}_{\mathrm{ext}}$ | $\unit{Pa}$ | Pressure | Force per unit area, including the internal and applied external pressure at the piston. |
-| $n$ | $\unit{mol}$ | Amount of substance | Number of moles in the gas. |
+| $\mechanical{P}$ | $\unit{Pa}$ | Pressure | Force per unit area of the ideal gas. |
 | $\thermal{C}_V$ | $\unit{J\,K^{-1}}$ | Heat capacity at constant volume | Temperature derivative of internal energy at fixed volume and composition. |
-| $\energy{H}$ | $\unit{J}$ | Enthalpy or Hamiltonian | Internal energy plus the pressure–volume product in thermodynamics. In mechanics and ensemble weights, the Hamiltonian. |
-| $\mechanical{v}$ | $\unit{m^3}$ per particle or $\unit{m^3\,mol^{-1}}$ | Volume per unit amount | Volume divided by the particle count or mole amount. |
+| $\energy{H}$ | $\unit{J}$ | Hamiltonian | Energy function of the gas or the spin system. |
+| $\mechanical{v}$ | $\unit{m\,s^{-1}}$ | Particle speed | Speed of a gas particle in the mean-square relation. |
 | $\energy{E}$ | $\unit{J}$ | Energy | Microscopic energy that enters the Boltzmann weight. |
 | $\thermal{\beta}$ | $\unit{J^{-1}}$ | Inverse thermal energy | Reciprocal of Boltzmann's constant times the absolute temperature. |
-| $\mechanical{q}_i$, $\mechanical{p}_i$ | — | Generalized coordinates and momenta | Conjugate variables that specify a phase-space point. Their units depend on the coordinates. |
 | $\energy{F}$, $\energy{A}$ | $\unit{J}$ | Helmholtz free energy | Canonical thermodynamic potential obtained from the partition function. |
 | $Z$ | 1 | Partition function | Sum of the Boltzmann weights of the accessible states. |
-| $n$ | $\unit{m^{-3}}$ | Number density | Particle count per unit volume. |
-| $\mechanical{c}$ | $\unit{m\,s^{-1}}$ | Speed of light | Propagation speed in the photon spectrum formula. |
+| $\mechanical{c}$ | $\unit{m\,s^{-1}}$ | Speed of light | Constant in the Gaussian-unit magnetic moment formula. |
 | $\mechanical{\omega}$ | $\unit{rad\,s^{-1}}$ | Angular frequency | Oscillation frequency in the harmonic Hamiltonian. |
 | $\energy{V}_{ij}$ | $\unit{J}$ | Pair potential energy | Contribution to the Hamiltonian from the interaction of particles $i$ and $j$. |
 | $\magnetic{\mu}$, $\magnetic{\vec\mu}$ | $\unit{J\,T^{-1}}$ | Magnetic dipole moment | Moment of an individual spin. |
-| $\magnetic{H}$, $\magnetic{\vec H}$ | $\unit{T}$ in this convention | Applied magnetic field | Field entering the dipole energy in the notebook's notation. |
+| $\magnetic{B}$, $\magnetic{\vec B}$ | $\unit{T}$ | Applied magnetic field | Field entering the dipole energy. The notebook writes $H$. |
 | $\magnetic{M}$, $\magnetic{M}_z$ | $\unit{J\,T^{-1}}$ | Total moment along the field | Sum of the mean field-aligned moment components. |
 | $\mechanical{\theta}$, $\phi$ | $\unit{rad}$ | Orientation angles | Polar and azimuthal angles of a moment relative to the field axis. |
 | $\magnetic{\chi}$ | $\unit{J\,T^{-2}}$ in this convention | Magnetic susceptibility | Response of the total moment to a change in the applied field. |
@@ -215,6 +212,3 @@ Kyle Kabasares, *Thermodynamics and Statistical Mechanics (Chem 232A - Physics 2
 | $\electric{e}$ | $\unit{C}$ in SI | Particle charge | Signed electric charge entering the magnetic moment formula in its chosen unit system. |
 | $\mechanical{\vec J}$, $\mechanical{\vec L}$, $\mechanical{\vec S}$ | $\unit{J\,s}$ | Angular momenta | Total, orbital, and spin angular momenta. |
 | $\mechanical{I}$ | $\unit{kg\,m^2}$ | Moment of inertia | Rotational inertia determining the spacing of rotor levels. |
-| $z$ | 1 | Fugacity | Exponential of the chemical potential divided by the thermal energy. |
-| $j$ | 1 | Internal partition function | Sum over molecular states other than translation. |
-| $g$ | 1 | Internal degeneracy | Number of internal states per momentum state. |

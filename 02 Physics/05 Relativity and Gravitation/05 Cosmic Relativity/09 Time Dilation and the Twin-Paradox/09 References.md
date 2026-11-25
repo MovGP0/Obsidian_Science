@@ -11,8 +11,8 @@ Use this list to trace the chapter's treatment of particle lifetimes, atomic spe
 
 1. P. Langevin, L’évolution de l’espace et du temps. *Scientia* **10**, 31–54 (1911).
 2. For example, L. Essen, *Nature* **217**, 19 (1968); H. Dingle, *Nature* **217**, 19–20 (1968); W. H. McCrea, *Nature* **216**, 122–124 (1967); M. Born, *Nature* **197**, 1287 (1963), and references therein. In particular, the source notes Born’s resolution as contradicting Einstein’s despite following him in his relativity textbook.
-3. J. Terrell, R. K. Adair, R. W. Williams, F. C. Michel, D. A. Ljung, D. Greenberger, J. P. Matthesen, V. Korenman, T. W. Noonan, R. Price, V. Sandberg, P. H. Polak, S. R. de Groot, G. Lüders, J. G. Fletcher, M. Sachs, The clock “paradox” — majority view. *Phys. Today* **25**(9–15), 47–51 (1972).
-4. A. Einstein, Dialogue about objections to the theory of relativity. *Die Naturwissenschaften* **6**, 697–702. English translation in *The Collected Papers of Albert Einstein*, Doc. 13, Vol. 7: The Berlin Years: Writings, 1918–1921 (Princeton University Press).
+3. J. Terrell, R. K. Adair, R. W. Williams, F. C. Michel, D. A. Ljung, D. Greenberger, J. P. Matthesen, V. Korenman, T. W. Noonan, R. Price, V. Sandberg, P. H. Polak, S. R. de Groot, G. Lüders, J. G. Fletcher, M. Sachs, The clock “paradox” — majority view. *Phys. Today* **25**(1), 9–15 and 47–51 (1972).
+4. A. Einstein, Dialogue about objections to the theory of relativity. *Die Naturwissenschaften* **6**, 697–702 (1918). English translation in *The Collected Papers of Albert Einstein*, Doc. 13, Vol. 7: The Berlin Years: Writings, 1918–1921 (Princeton University Press).
 5. A. Einstein, *Annalen der Physik* **17**, 891–921 (1905).
 6. B. Rossi, D. B. Hall, Variation of the rate of decay of Mesotrons with momentum. *Phys. Rev.* **59**, 223–228 (1941).
 7. H. J. Bhabha, Nuclear forces, heavy electrons, and the β-decay. *Nature* **141**, 117–118 (1938).

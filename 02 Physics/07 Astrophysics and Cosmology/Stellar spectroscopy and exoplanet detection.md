@@ -40,7 +40,7 @@ Other common features include the sodium D Fraunhofer lines at $5890$ and $5896$
 
 The lecture credits Annie Jump Cannon with the stellar classification system. The stars with the strongest hydrogen lines were assigned type A. Students should be able to classify a stellar spectrum by eye to within one class.
 
-The notes mark a Balmer jump, or break, near $3800$ Å and attribute it to photon absorption by neutral hydrogen in the atmospheres of cooler stars. In a classification such as G2 V, the final Roman numeral gives the luminosity class.
+The notes mark a Balmer jump, or break, near $3800$ Å and attribute it to photon absorption by neutral hydrogen in the atmospheres of cooler stars. The Balmer jump is at the Balmer limit, $3646$ Å. Bound–free absorption from the $n=2$ level of hydrogen causes it, and it is strongest in A stars (about $\quantity{10^4}{K}$). The break near $4000$ Å in cool stars is a different feature, caused by metal lines and the Ca II H and K lines. In a classification such as G2 V, the final Roman numeral gives the luminosity class.
 
 ##### Surface gravity
 
@@ -93,11 +93,11 @@ The 2018 lecture gives Gemini as a direct-imaging example, with 1–2 hour expos
 A transit is an eclipse in which the planet passes between the star and the observer. For a randomly oriented orbit, the geometric transit probability is
 
 $$
-P=\frac{(\mechanical{R}_{\mathrm p}+\mechanical{R}_{\star})
+P_{\mathrm{tr}}=\frac{(\mechanical{R}_{\mathrm p}+\mechanical{R}_{\star})
 [1+e\cos(\pi/2-\omega)]}{\mechanical{a}(1-e^2)}.
 $$
 
-For small eccentricity and a planet much smaller than the star, $P\sim\mechanical{R}_\star/\mechanical{a}$.
+For small eccentricity and a planet much smaller than the star, $P_{\mathrm{tr}}\sim\mechanical{R}_\star/\mechanical{a}$.
 
 | Planet and host | Approximate transit probability |
 | --- | --- |
@@ -169,10 +169,10 @@ The lecture gives an error of up to $10^{-3}$ from molecular absorption and diff
 
 ![[Kyle Kabasares - Intro to Astrophysics - Atmospheric scintillation.png|**Fig. 46** Two stellar lines of sight pass through different regions of the atmosphere above the observing telescope.]]
 
-The scintillation noise scales with telescope diameter $\mechanical{D}$, airmass $X$, and exposure time $t_{\mathrm{exp}}$ as
+The scintillation noise scales with telescope diameter $\mechanical{D}$, airmass $X_{\mathrm{air}}$, and exposure time $t_{\mathrm{exp}}$ as
 
 $$
-\signal{\sigma}_{\mathrm s}\propto\mechanical{D}^{-2/3}X^{1.75}t_{\mathrm{exp}}^{-1/2}.
+\signal{\sigma}_{\mathrm s}\propto\mechanical{D}^{-2/3}X_{\mathrm{air}}^{1.75}t_{\mathrm{exp}}^{-1/2}.
 $$
 
 For a star with $V=7$ and a $\quantity{4}{m}$ telescope, the example gives $\signal{\sigma}_{\mathrm s}=10\signal{\sigma}_{\mathrm{photometric}}$.
@@ -263,60 +263,52 @@ Kyle Kabasares, *Intro to Astrophysics (Physics 240A, UC Irvine 2018)*.
 
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
-| $\energy{L}$ | $\unit{erg\cdot s^{-1}}$ | Luminosity | Total radiant power. |
-| $\signal{\nu}$ | $\unit{Hz}$ | Frequency | Frequency of the radiation. |
-| $\signal{\lambda}$ | $\unit{cm}$ | Wavelength | Wavelength of the radiation. |
-| $\signal{c}$ | $\unit{cm\cdot s^{-1}}$ | Speed of light | Speed of light in vacuum. |
-| $h$ | $\unit{erg\cdot s}$ | Planck constant | Relates photon energy to frequency. |
-| $k$ | $\unit{erg\cdot K^{-1}}$ | Boltzmann constant | Relates temperature to energy. |
-| $\sigma$ | $\unit{erg\cdot s^{-1}\cdot cm^{-2}\cdot K^{-4}}$ | Stefan–Boltzmann constant | Relates blackbody flux to the fourth power of temperature. |
-| $m$ | 1 | Apparent magnitude | Logarithmic measure of observed flux relative to a zero point. |
-| $b$ | 1 | Softening constant | Sets the low-flux scale of the inverse hyperbolic sine magnitude. |
-| $Z$ | $\unit{rad}$ | Zenith angle | Angle between the line of sight and the local vertical. |
-| $A$ | 1 | Extinction | Increase in apparent magnitude caused by attenuation. |
-| $n$ | $\unit{cm^{-3}}$ | Grain number density | Number of dust grains per unit volume. |
-| $\mechanical{D}$ | $\unit{pc}$ | Distance | Distance to the square in the problem hint. |
-| $\theta$ | $\unit{rad}$ | Position angle | Orientation on the sky measured from north toward east. |
-| $\theta$ | $\unit{rad}$ | Angular resolution | Minimum angular separation in the Rayleigh criterion. |
-| $\mechanical{D}$ | $\unit{m}$ | Aperture diameter | Diameter of the telescope mirror. |
-| $\alpha$ | $\unit{h}$ | Right ascension | Celestial coordinate measured eastward along the celestial equator. |
-| $\delta$ | $\unit{deg}$ | Declination | Angular distance north or south of the celestial equator. |
-| $\mu$ | $\unit{arcsec\cdot yr^{-1}}$ | Proper motion | Angular rate of motion across the sky. |
-| $\alpha$ | $\unit{arcsec}$ | Parallax angle | Angular shift due to a one-AU observing baseline. |
-| $\lambda$ | $\unit{rad}$ | Convergent-point angle | Angle between the line of sight to the cluster member and the direction of the shared velocity. |
-| $i$ | $\unit{deg}$ | Inclination | Angle between the orbital axis and the line of sight. |
-| $\mechanical{a}$ | $\unit{cm}$ | Binary separation | Distance between the two stars in a circular orbit. |
-| $G$ | $\unit{cm^3\cdot g^{-1}\cdot s^{-2}}$ | Gravitational constant | Constant in Newton’s law of gravitation. |
-| $\mechanical{M}$ | $\unit{g}$ | Stellar mass | Mass in the main-sequence scaling relations. |
-| $\mechanical{R}$ | $\unit{km}$ | Stellar radius | Radius in the main-sequence scaling relation. |
 | — | $\unit{\mathring{A}}$ | Equivalent width | Width of a continuum-level rectangle with the same integrated line deficit or excess. |
 | $\mathrm{SFR}$ | $\unit{M_{\odot}\cdot yr^{-1}}$ | Star formation rate | Stellar mass formed per unit time. |
 | $\Delta\mechanical{M}_{\star}$ | $\unit{M_{\odot}}$ | Formed stellar mass | Mass of stars formed over the given interval. |
-| $\Delta t$ | $\unit{yr}$ | Time interval | Elapsed time over which stars formed. |
+| $\Delta t$ | $\unit{s}$ | Time interval | Elapsed time over which stars formed, or lifetime of a state in the uncertainty relation. |
 | $\mechanical{g}$ | $\unit{cm\cdot s^{-2}}$ | Surface gravity | Gravitational acceleration at the stellar surface. |
+| $G$ | $\unit{cm^3\cdot g^{-1}\cdot s^{-2}}$ | Gravitational constant | Constant in Newton’s law of gravitation. |
+| $\mechanical{M}$ | $\unit{g}$ | Stellar mass | Mass of the star. |
+| $\mechanical{R}$ | $\unit{cm}$ | Stellar radius | Radius of the star. |
 | $\Delta\energy{E}$ | $\unit{erg}$ | Energy width | Energy spread associated with a finite lifetime. |
+| $h$ | $\unit{erg\cdot s}$ | Planck constant | Relates photon energy to frequency. |
 | $\Delta\signal{\nu}$ | $\unit{Hz}$ | Doppler width | Frequency spread associated with thermal motion along the line of sight. |
+| $\signal{\nu}_0$ | $\unit{Hz}$ | Line-center frequency | Rest frequency of the spectral line. |
+| $\mechanical{v}_r$, $\mechanical{v}$ | $\unit{cm\cdot s^{-1}}$ | Radial velocity | Line-of-sight velocity of the absorbing atoms or of the star. |
+| $\signal{c}$ | $\unit{cm\cdot s^{-1}}$ | Speed of light | Speed of light in vacuum. |
 | $X,\,Y,\,Z$ | 1 | Stellar mass fractions | Fractions of stellar mass in hydrogen, helium, and heavier elements. |
 | $[\mathrm{Fe}/\mathrm{H}]$ | 1 | Iron abundance index | Base-ten logarithm of the iron-to-hydrogen ratio relative to the solar value. |
-| $P$ | 1 | Geometric transit probability | Probability that a randomly oriented orbit produces a transit. |
+| $\energy{L}_{\mathrm{planet}}$, $\energy{L}_{\star}$ | $\unit{erg\cdot s^{-1}}$ | Luminosity | Luminosity of the planet and of the host star. |
+| $\theta$ | $\unit{rad}$ | Angular resolution | Minimum angular separation in the Rayleigh criterion. |
+| $\signal{\lambda}$ | $\unit{cm}$ | Wavelength | Wavelength of the radiation. |
+| $\Delta\signal{\lambda}$ | $\unit{cm}$ | Wavelength shift | Doppler shift of a spectral line. |
+| $\mechanical{D}$ | $\unit{m}$ | Aperture diameter | Diameter of the telescope mirror. |
+| $P_{\mathrm{tr}}$ | 1 | Geometric transit probability | Probability that a randomly oriented orbit produces a transit. |
+| $\mechanical{R}_{\mathrm p}$, $\mechanical{R}_{\star}$ | $\unit{cm}$ | Planet and stellar radius | Radii of the planet and of the host star. |
 | $e$ | 1 | Orbital eccentricity | Deviation of the orbit from a circle. |
 | $\omega$ | $\unit{rad}$ | Argument of periastron | Orientation of periastron in the orbital plane. |
+| $\mechanical{a}$ | $\unit{cm}$ | Semimajor axis | Semimajor axis of the relative orbit of the planet. |
+| $P$ | $\unit{d}$ | Orbital period | Time between successive transits. |
 | $\signal{N}_{\mathrm{ADU}}$ | $\unit{ADU}$ | Photometric noise | Noise in digitized photometry counts. |
+| $\signal{\sigma}_{\star}$ | $\unit{e^-}$ | Stellar photon noise | Noise from the photon counts of the star. |
+| $\signal{\sigma}_{\mathrm S},\,\signal{\sigma}_{\mathrm D},\,\signal{\sigma}_{\mathrm R},\,\signal{\sigma}_{\mathrm P}$ | $\unit{e^-}$ | Per-pixel noise terms | Detector noise terms per pixel in the photometry aperture. |
 | $\signal{G}$ | $\unit{e^-\cdot ADU^{-1}}$ | Detector gain | Converts digitized counts to electrons. |
 | $n_{\mathrm{pix}},\,n_{\mathrm b}$ | 1 | Pixel counts | Number of pixels in the photometry aperture and background sample. |
+| $F$ | $\unit{counts}$ | Detected photon count | Number of photons detected from the star. |
+| $\signal{N}$, $\signal{N}_{\mathrm T}$, $\signal{N}_{\mathrm E}$ | $\unit{counts}$ | Noise | Noise of a photometric measurement, of the target, and of the reference. |
 | $F_{\mathrm T},\,F_{\mathrm E}$ | $\unit{counts}$ | Target and reference flux measurements | Measured counts for the target and reference stars. |
 | $F_{\mathrm{rel}},\,\signal{\sigma}_{\mathrm{rel}}$ | 1 | Relative flux and uncertainty | Target-to-reference flux ratio and its propagated uncertainty. |
-| $X$ | 1 | Airmass | Relative path length through the atmosphere. |
+| $\signal{\sigma}_{\mathrm s}$ | 1 | Scintillation noise | Relative flux noise caused by atmospheric scintillation. |
+| $X_{\mathrm{air}}$ | 1 | Airmass | Relative path length through the atmosphere. |
 | $t_{\mathrm{exp}}$ | $\unit{s}$ | Exposure time | Duration of a photometric exposure. |
+| $V$ | $\unit{mag}$ | Visual magnitude | Apparent magnitude of the star in the $V$ band. |
 | $\mechanical{K}$ | $\unit{m\cdot s^{-1}}$ | Radial velocity amplitude | Amplitude of the stellar line-of-sight velocity caused by the planet. |
 | $\mechanical{m}$ | $\unit{g}$ | Planet mass | Mass of the orbiting planet. |
+| $i$ | $\unit{deg}$ | Inclination | Angle between the orbital axis and the line of sight. |
+| $\signal{I}_{\mathrm{obs}}$, $\signal{I}_{\star}$, $\signal{I}$ | — | Spectral intensity | Observed spectrum, stellar spectrum, and intensity of a sample, in arbitrary units. |
 | $\signal{\Gamma}_{\mathrm I_2}$ | 1 | Iodine transmission | Fraction of incident light transmitted by the reference cell. |
+| $k$ | 1 | Scale coefficient | Coefficient that scales the model spectrum. |
 | $\signal{\sigma}_{I}$ | — | Intensity uncertainty | Measurement uncertainty in the units of the spectrum. |
 | $\signal{\sigma}_{\mathrm{RV}}$ | $\unit{m\cdot s^{-1}}$ | Radial velocity uncertainty | Uncertainty of the inferred velocity after conversion from a wavelength shift. |
-| $n$ | $\unit{pc^{-3}}$ | Stellar number density | Number of stars per unit volume. |
-| $\sigma$ | 1 | Absolute-magnitude dispersion | Standard deviation of the Gaussian magnitude distribution. |
-| $A$ | $\unit{km\cdot s^{-1}\cdot kpc^{-1}}$ | First Oort constant | Local rotational shear inferred from the longitude dependence of radial velocities. |
-| $\alpha$ | $\unit{rad}$ | Scattering angle | Small change in the direction of the moving star. |
-| $t_c,\,t_{\mathrm{cross}}$ | $\unit{yr}$ | Crossing time | Time to traverse the characteristic system radius at the characteristic speed. |
-| $\mechanical{M}_{\star}$ | $\unit{M_{\odot}}$ | Locked stellar mass | Mass in long-lived stars and stellar remnants. |
-| $p$ | 1 | Metal yield | Newly synthesized metal mass returned to the gas per unit mass locked into stars and remnants. |
+| $\Delta\mechanical{v}$ | $\unit{m\cdot s^{-1}}$ | Trial velocity shift | Velocity shift used in the cross-correlation function. |

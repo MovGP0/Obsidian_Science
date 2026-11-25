@@ -1,0 +1,14 @@
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/04 Partial Differential Equations/The wave equation on a line and a finite string.md
+- [Correctness] The Physical quantities table lists $\mechanical{u}$ as "Pressure" in Pa alongside $\mechanical{u}$ as wave displacement, gives $\mechanical{\rho}$ twice with units kg/m³ and kg/m, and includes unused $\mechanical{A}$, $\mechanical{v}$, $\mechanical{\rho}_{\min}$, $\mechanical{\rho}_{\max}$, $L,H$ (membrane) and $r,a$; keep only symbols used here with one meaning each.
+- [Correctness] In "Fundamental mode and higher modes", the displayed factor $\sin(n\pi x/L)\sin(n\pi ct/L)e^{-\beta(n\pi/L)^2t}$ does not solve $u_{tt}=c^2u_{xx}-\beta u_t$; show the actual underdamped mode $\sin(n\pi x/L)e^{-\beta t/2}\sin(\omega_n't+\theta_n)$ with $\omega_n'=\sqrt{(n\pi c/L)^2-\beta^2/4}$ and drop the conflicting $e^{-n^2t}$ remark.
+
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/05 Calculus of Variations/Physical action and equations of motion.md
+- [Correctness] Time $t$, duration $\tau$, and angular frequency $\omega$ are wrapped in `\signal{}` although this is a particle-mechanics context where the vault's mechanical group is the natural choice; use `\mechanical{}` (or leave the time variable uncolored) consistently with the other mechanics notes.
+
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/05 Calculus of Variations/Variational modeling of paths and surfaces.md
+- [Correctness] The Physical quantities table lists symbols from other notes ($R$ population, $\epsilon$ as a "rate ratio" although here $\epsilon$ is the variation parameter, $x,y$ ingredient amounts, $s$ protein surplus, $t$ iron surplus although $t$ is the integration variable, $T$ sampling period); rebuild it for $f$, $\eta$, $\epsilon$, $g$, $C$, $C_2$, $\lambda$, $\theta_i$.
+
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/06 Bifurcations and Chaos/Logistic-map bifurcations and numerical dynamics.md
+- [Correctness] The Physical quantities table gives $\beta$ two unrelated meanings (crowding coefficient in $\mathrm{s^{-1}}$, predator coefficient) although here $\beta$ is the dimensionless logistic parameter and also the Lorenz parameter; it lists $\epsilon$ as a "rate ratio" (here it is the perturbation size), and unused ingredient amounts $x,y$, protein surplus $s$, and $t$ as iron surplus; rebuild it and rename the Lorenz parameter (e.g. $b$) to remove the $\beta$ clash.
+- [Correctness] In "Introduction to chaos", the predator–prey near-axis example is presented as an illustration of chaos, but a two-dimensional autonomous flow cannot be chaotic (Poincaré–Bendixson); state that this shows only local sensitivity near a separatrix, and that chaos needs at least three dimensions for flows (e.g. Lorenz) or one dimension for noninvertible maps.
+

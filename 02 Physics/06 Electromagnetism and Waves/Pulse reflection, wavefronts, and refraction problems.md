@@ -201,19 +201,28 @@ Kyle Kabasares, *Vibrations and Waves (Physics 122, UC Merced 2015)*.
 
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
-| $\mechanical{m}$ | $\unit{kg}$ | Mass | Inertial parameter in the equation of motion. |
+| $\mechanical{m}_s$, $\mechanical{m}_b$ | $\unit{kg}$ | Mass | The mass of the string and the mass of the hanging block in Exercise 7-6. |
+| $\mechanical{M}$ | $\unit{kg}$ | String mass | The total mass of the string in Exercise 6-1(a). |
+| $\mechanical{L}$ | $\unit{m}$ | String length | The length of the string. |
+| $\mechanical{x}$ | $\unit{m}$ | Position | The position along the string. |
 | $\mechanical{t}$ | $\unit{s}$ | Time | Independent variable for the motion. |
-| $\signal{\omega}$ | $\unit{rad\,s^{-1}}$ | Angular frequency | Rate of phase accumulation. |
+| $\mechanical{v}$, $\mechanical{v}_1$, $\mechanical{v}_2$, $\mechanical{v}_i$ | $\unit{m\,s^{-1}}$ | Wave speed | The propagation speed of the pulse or wave, or the speed in medium $i$. |
+| $\mechanical{v}_y$ | $\unit{m\,s^{-1}}$ | Transverse velocity | The velocity $\partial\mechanical{y}/\partial\mechanical{t}$ of a string element, not the wave speed $\mechanical{v}$. |
+| $\mechanical{A}$ | $\unit{m}$ | Amplitude | The amplitude of the standing or traveling wave. |
+| $\mechanical{g}$ | $\unit{m\,s^{-2}}$ | Gravitational acceleration | The acceleration that gives the weight of the hanging block. |
+| $\signal{\omega}$, $\signal{\omega}_1$, $\signal{\omega}_3$ | $\unit{rad\,s^{-1}}$ | Angular frequency | Rate of phase accumulation, also for the first and third modes. |
+| $\signal{f}$, $\signal{f}_1$ | $\unit{Hz}$ | Frequency | The number of cycles per second, also for the fundamental mode. |
+| $\signal{T}$ | $\unit{s}$ | Period | The time for one wave cycle. |
 | $\signal{\phi}$ | $\unit{rad}$ | Phase constant | Phase at the initial time. |
-| $\mechanical{b}$ | $\unit{kg\,s^{-1}}$ | Damping coefficient | Proportionality constant between drag and velocity. |
-| $\mechanical{c}$ | $\unit{m\,s^{-1}}$ | Wave speed | Product of wavelength and frequency. |
-| $\signal{\lambda}$ | $\unit{m}$ | Wavelength | Spatial distance over one wave cycle. |
+| $\mechanical{c}$ | $\unit{m\,s^{-1}}$ | Speed of light in vacuum | The reference speed in the definition of the refractive index. |
+| $\signal{\lambda}$, $\signal{\lambda}_1$, $\signal{\lambda}_2$, $\signal{\lambda}_i$ | $\unit{m}$ | Wavelength | Spatial distance over one wave cycle, also in medium $i$. |
+| $\mechanical{\ell}$ | $\unit{m}$ | Interface distance | The distance along the interface that the two right triangles share. |
 | $\mechanical{y}$ | $\unit{m}$ | Transverse displacement | Deflection of a string element from equilibrium. |
 | $\mechanical{\mu}$ | $\unit{kg\,m^{-1}}$ | Linear mass density | Mass per unit length of the string. |
 | $\mechanical{T}$ | $\unit{N}$ | String tension | Magnitude of the force along the string, distinct from the period $\signal{T}$. |
-| $\mechanical{\theta}$ | $\unit{rad}$ | Local tangent angle | Angle between the string and the equilibrium direction. |
+| $\mechanical{\theta}_i$, $\mechanical{\theta}_r$ | $\unit{rad}$ | Ray angles | The angles of incidence and refraction, measured from the normal. |
+| $\mechanical{\alpha}$ | $\unit{rad}$ | Prism angle | The interior angle of the prism at $C$. |
 | $\mechanical{b}$ | $\unit{m}$ | Pulse height and half-width | Peak displacement and distance from the peak to a half-height point in this example. |
 | $\signal{k}$ | $\unit{rad\,m^{-1}}$ | Angular wave number | Phase change per unit distance, equal to $2\pi/\signal{\lambda}$. |
-| $\mechanical{M}$ | $\unit{kg}$ | Reduced mass | Effective mass for relative motion of the isolated pair. |
 | $n_i$ | 1 | Refractive index | Ratio of the vacuum speed of light to the phase speed in medium $i$. |
 | $\mechanical{\theta}_c$ | $\unit{rad}$ | Critical angle | Angle of incidence at which the refracted ray becomes grazing. |

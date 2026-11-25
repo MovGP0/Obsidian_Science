@@ -40,11 +40,11 @@ When a matrix has this properties, the rotation matrix in 2d-space is considered
 | $SO(2)$ | Special Orthogonal Group of 2×2 Matrices | - contains Rotations in 2D space<br>- no reflections<br>- no change in the length of the rotated vectors |
 | $SO(3)$ | Special Orthogonal Group of 3×3 Matrices | - contains Rotations in 3D space<br>- no reflections<br>- no change in the length of the rotated vectors |
 An **Orthogonal Group** is defined by:
-$$O(n)={R∈ℝ^{n×n}∣R^TR=I}.$$
+$$O(n)=\{R∈ℝ^{n×n}∣R^TR=I\}.$$
 which means that the transpose of an matrix $R$ is also it's inverse:
 $$R^{-1} = R^T$$ 
 The **Special Orthogonal Group** is further restricted by the [[Determinant]]:
-$$SO(n)={R∈O(n)∣\text{det}R=1}.$$
+$$SO(n)=\{R∈O(n)∣\text{det}R=1\}.$$
 
 > [!note]
 > In other metrics (e.g. Lorentzian instead of Euclidean), then the orthogonality condition becomes something like
@@ -55,7 +55,7 @@ $$SO(n)={R∈O(n)∣\text{det}R=1}.$$
 
 If the matrix is modified, such that the [[Determinant]] is no longer equal to 1 (rotation + scaling of the vector field), it is no longer considered to be an $SO(2)$ matrix and therefore not considered to be a *rotation matrix*.
 
-If the determinant is negative, it represents a **reflection** of the object. In the special case of an matrix $M$ with determinant of $\det{M} = -1$, it is considered to be in the group $S(n)$, but not in $SO(n)$. 
+If the determinant is negative, it represents a **reflection** of the object. In the special case of an orthogonal matrix $M$ with determinant of $\det{M} = -1$, it is in the set $O(n)\setminus SO(n)$. This set is not a group, because the product of two such matrices has determinant $+1$. 
 
 > [!seealso]
 > [[Scaling Matrices]]
@@ -104,9 +104,10 @@ The **magnitude** of the spinor $s$ is calculated using the [Pythagorean theorem
 $$|s|^2 = |s_{1}|^2 + |s_{2}|^2 = \mathrm{Re}(s_{1})^2 + \mathrm{Im}(s_{1})^2 + \mathrm{Re}(s_{2})^2 + \mathrm{\mathrm{Im}}(s_{2})^2$$
 The group $SU(2)$ **double covers** the group $SO(3)$: for every possible rotation in $SO(3)$ we have *exactly two* possible rotations in $SU(2)$; related by a $\pm$ sign:
 
-$$v' \leftrightarrow \pm s'$$
+$$v_i = s^{\dagger} σ_i\, s$$
 $$R \leftrightarrow \pm U$$
-Because $SO(3)$ is fully contained in $SU(2)$, we can use $SU(2)$ to represent rotations in $SO(3)$.
+Here $σ_i$ are the Pauli matrices, and $s$ and $-s$ give the same vector $\vec{v}$.
+$SO(3)$ is not a subgroup of $SU(2)$. It is the quotient $SU(2)/\{\pm I\}$ of a 2-to-1 homomorphism. Because of this homomorphism, we can use $SU(2)$ to represent rotations in $SO(3)$.
 
 > [!Note]
 > $SU(2)$ can be used where the orientation needs to be preserved after a (series of) rotations.
@@ -120,8 +121,8 @@ Because $SO(3)$ is fully contained in $SU(2)$, we can use $SU(2)$ to represent r
  > $SO(3)$ is typically easier to think with when handling rotations in $ℝ^3$, since it doesn't involve rotations an a hypershpere.
 
 > [!warning]
-> $SO(3)$ representation has the potential issue of [Gimbal Lock](https://en.wikipedia.org/wiki/Gimbal_lock).
-> Use $SU(2)$ where Gimbal Lock might be an issue.
+> Euler-angle parametrizations of $SO(3)$ have the potential issue of [Gimbal Lock](https://en.wikipedia.org/wiki/Gimbal_lock).
+> Rotation matrices and unit quaternions are both free of Gimbal Lock. Use them instead of Euler angles where Gimbal Lock might be an issue.
 
 ## Closure
 
@@ -135,9 +136,10 @@ Rotation matrices must be associative:
 $$(R_{1} R_{2}) R_{3} = R_{1} (R_{2} R_{3})$$
 ## Not Commutative
 
-Rotation matrices are not commutative:
+Rotation matrices in $SO(n)$ with $n\ge3$ are not commutative in general:
 
 $$R_{1}R_{2} \ne R_{2}R_{1}$$
+$SO(2)$ is commutative: $R_{Θ}R_{ϑ}=R_{Θ+ϑ}=R_{ϑ}R_{Θ}$.
 ## Length Preservation
 
 Rotation matrices may not change the length of a vector:
@@ -153,6 +155,6 @@ Rotation matrices can be used to
 ## Product rule
 
 Given a rotation matrix $R_{AB}$ that transforms a vector field from reference frame A to reference frame B, and another rotation matrix $R_{BC}$ that transforms a vector from reference frame B to C, than the product of those rotations is the rotation that transforms a vector from reference frame A to C:
-$$R_{AB} \cdot R_{BC} = R_{AC}$$
+$$R_{BC} \cdot R_{AB} = R_{AC}$$
 Note that inversing matrices of the orthogonal group O(n) inverses the order of indices:
 $$R_{AB}^{-1} = R_{AB}^T= R_{BA}$$

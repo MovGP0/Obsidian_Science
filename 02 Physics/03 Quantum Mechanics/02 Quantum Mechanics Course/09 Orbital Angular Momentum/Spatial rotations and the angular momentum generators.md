@@ -76,10 +76,10 @@ Compare the two orders of the small $x$ and $y$ rotations. The linear terms canc
 $$
 O_y(\epsilon)O_x(\epsilon)-O_x(\epsilon)O_y(\epsilon)
 =\epsilon^2[L_x,L_y]+O(\epsilon^3)
-=\begin{pmatrix}0&-\epsilon^2&0\\\epsilon^2&0&0\\0&0&0\end{pmatrix}
+=\begin{pmatrix}0&\epsilon^2&0\\-\epsilon^2&0&0\\0&0&0\end{pmatrix}
 +O(\epsilon^3).
 $$
-This is $O_z(-\epsilon^2)-I_3$ to the displayed order. The matrices on [[#The three-dimensional rotation group|the section on The three-dimensional rotation group]] obey $[L_i,L_j]=-i\varepsilon_{ijk}L_k$. The usual active generators are their negatives and obey the positive-sign convention $[J_i,J_j]=i\varepsilon_{ijk}J_k$. The source places the active algebra next to the passive coordinate matrices. The two orders of the rotations give different results, as in the composition of Euler rotations.
+This is $-i\epsilon^2L_z=O_z(\epsilon^2)-I_3$ to the displayed order. The matrices on [[#The three-dimensional rotation group|the section on The three-dimensional rotation group]] obey $[L_i,L_j]=-i\varepsilon_{ijk}L_k$. The usual active generators are their negatives and obey the positive-sign convention $[J_i,J_j]=i\varepsilon_{ijk}J_k$. The source places the active algebra next to the passive coordinate matrices. The two orders of the rotations give different results, as in the composition of Euler rotations.
 
 For a rotation about $\widehat{\mathbf n}$, set $\boldsymbol\omega=\phi\widehat{\mathbf n}$ for the angle-axis parameter. The rotation $e^{-i\boldsymbol\omega\cdot\mathbf L}$ acts on the components of a vector, such as $\magnetic{\mathbf A}$. Its expansion is
 $$
@@ -154,11 +154,14 @@ Kyle Kabasares, *Quantum Mechanics II (Physics 215B, UC Irvine 2018)*.
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
 | $\hbar$ | $\unit{J\,s}$ | Reduced Planck constant | Planck constant divided by $2\pi$. |
-| $\mechanical{L}$ | $\unit{m}$ | Box side length | Periodic normalization length in each coordinate. |
 | $\signal{\mathbf k}$, $\signal{k}_j$ | $\unit{m^{-1}}$ | Wave vector and components | Spatial frequencies of the momentum eigenfunction. |
-| $\mechanical{\mathbf p}$, $\mechanical{\mathbf p}'$ | $\unit{kg\,m\,s^{-1}}$ | Momentum vectors | Momentum before and after scattering. |
+| $\mechanical{\mathbf p}$ | $\unit{kg\,m\,s^{-1}}$ | Momentum | Linear momentum in $\mechanical{\mathbf L}=\mechanical{\mathbf r}\times\mechanical{\mathbf p}$. |
+| $\mechanical{\mathbf r}$ | $\unit{m}$ | Position | Position operator of the particle. |
 | $\magnetic{\mathbf A}$ | $\unit{T\,m}$ | Magnetic vector potential | Spatial part of the electromagnetic four-potential. |
-| $c$ | $\unit{m\,s^{-1}}$ | Speed of light | Vacuum light speed used in the time coordinate and Maxwell equations. |
-| $A$, $B$ | $\unit{s^{-1}}$ | Mode emission and absorption coefficients | Spontaneous rate and induced transition rate per photon for a single resonant mode. |
 | $\mathbf d_{0n}$ | $\unit{m}$ | Transition position matrix element | Electric dipole matrix element with the common charge factored out. |
 | $\mechanical{\mathbf L}$, $\mechanical{L}_z$ | $\unit{J\,s}$ | Orbital angular momentum | Total orbital angular momentum and its projection on the $z$-axis. |
+| $L_i$, $T_a$, $J_i$ | $1$ | Rotation generators | Dimensionless generator matrices of the Cartesian representation and of the fixed-$\ell$ representation. |
+| $O$, $D(R)$ | $1$ | Rotation matrices | Orthogonal $3\times3$ rotation matrix and unitary representation matrix of the rotation $R$. |
+| $\phi$, $\epsilon$ | $\unit{rad}$ | Rotation angle | Finite and infinitesimal rotation angles. |
+| $\boldsymbol\omega$ | $\unit{rad}$ | Angle-axis parameter | Rotation parameter $\boldsymbol\omega=\phi\widehat{\mathbf n}$. |
+| $\ell$, $m$ | $1$ | Orbital quantum numbers | Quantum numbers of $\mechanical{\mathbf L}^2$ and $\mechanical{L}_z$. |

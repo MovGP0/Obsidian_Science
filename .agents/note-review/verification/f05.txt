@@ -1,0 +1,39 @@
+=== 02 Physics/07 Astrophysics and Cosmology/Specific intensity and the radiative-transfer equation.md
+- FIXED | Scattering-in integral is a gain; isotropic case is -alpha_scat (I - J) | Rewrote the scattering term as -alpha_scat I(Omega) + integral (gain) and the isotropic result as -alpha_scat (I_nu - J_nu); updated the lead-in sentence.
+- FIXED | Table lists unused fine-structure alpha and omits D, d, theta_c, Omega_obs, N | Removed the alpha row; added rows for alpha_scat, nu, R, D, d, A, s, V, theta_c, Omega_obs and N.
+=== 02 Physics/07 Astrophysics and Cosmology/Spectral lines and Einstein transition coefficients.md
+- FIXED | Table has unused alpha, S, I, U; T is not brightness temperature; E is not radiant energy; missing B, R, N, g, nu_ul | Removed alpha, S, I and U rows; added U_B,tot (erg), B, R, nu_ul, N_u/N_l, g_u/g_l, n_u/n_l; T is now excitation temperature and E the level/radiated energy.
+- FIXED | n_u called number of electrons; nu subscript switches between ul and lu | n_u is now the number of atoms or ions in the upper level per unit volume; replaced every nu_{l u} with nu_{u l} (equations and Fig. 82 caption).
+=== 02 Physics/07 Astrophysics and Cosmology/Star formation and main-sequence lifetimes.md
+- FIXED | Class 1 and 2 YSOs are not stars with hydrogen burning | Added that class I/II objects are pre-main-sequence, powered by accretion and contraction with some deuterium burning, and hydrogen fusion starts at the ZAMS.
+- FIXED | O-star lifetime labelled 10^3 yr | Added the correct O-star main-sequence lifetime (3e6 to 1e7 yr) next to the transcription.
+- FIXED | Envelope convection point reversed; Y_primordial 0.23 outdated and relation reversed | Point 2 now says stars below about 1.3-1.5 Msun have cool, high-opacity convective envelopes and massive stars radiative ones; text gives Y_primordial about 0.245 and Y_primordial < Y_init, callout keeps the handwritten values.
+- FIXED | Table full of unused and conflicting symbols | Rebuilt the table from symbols used in the note (removed D, a, K, polytropic n, impact parameter, nuclear R, total lifetime tau, V, duplicate M/Z/n; added nu exponent).
+=== 02 Physics/07 Astrophysics and Cosmology/Stellar evolution and variable-star observations.md
+- FIXED | Half the core helium burns in the flash | Added that only a few percent burns in the flash and the rest burns quiescently on the horizontal branch over about 1e8 yr.
+- FIXED | Type I/II split is due to Minkowski (1941), not Zwicky | Added that Minkowski introduced the Type I/II split in 1941 and Zwicky later added Types III-V.
+- FIXED | Table lists unused A, n, delta, P, e, X, Oort constants, metal yield | Rebuilt the table with the used quantities (M, Msun, L, T, M_V, energy, lifetimes, density, radius, periods).
+=== 02 Physics/07 Astrophysics and Cosmology/Stellar hydrostatic equilibrium and the virial theorem.md
+- FIXED | R_sun = 6.96e7 km wrong; callout links wrong section | Equation now gives 6.96e5 km = 6.96e10 cm (consistent with g = 2.74e4 cm/s^2); callout now links to "Equilibrium of the whole star".
+- FIXED | (delta U)_ad after integration by parts has wrong minus sign | Displayed equation now has +; callout updated to explain the sign.
+- FIXED | K = 2/3 (gamma-1) U should be 3/2 (gamma-1) U | Displayed K = 3/2 (gamma-1) U with its derivation from 2K = 3(gamma-1)U; callout records the source coefficient.
+- FIXED | W means work and total energy; dM_r means shell and patch mass; table problems | Renamed work to W_F and patch mass to dm; rebuilt table (single E meaning, removed unused a, V, C/O, K, s, polytropic n, nuclear R etc., CGS units for G, M_r, Msun, Lsun, Rsun).
+=== 02 Physics/07 Astrophysics and Cosmology/Stellar luminosity functions, star counts, and selection bias.md
+- FIXED | Table sigma and A clashes, alpha x3, d in cm, unused entries | Rebuilt the table: single sigma (magnitude dispersion), A only as A(m), alpha only as Kroupa slope, d in pc, removed grain density, optical depth, RA, parallax, scattering angle, count rate, Oort constants; added M, nu(x), V, N_Omega, N_tot, M_tot etc.
+=== 02 Physics/07 Astrophysics and Cosmology/Stellar pressure balance and degenerate matter.md
+- FIXED | Table has unrelated entries, omits m_N, m_e, N_e, E_tot; V vs V_g clash | Renamed V_g to E_grav in all equations; rebuilt table without n (mol), Lande g, internal g, molecular M, P_int/P_ext, Boltzmann E; added m_N, m_e, N_e, E_tot, E_Fermi, rho, r, dm, R_eq, epsilon.
+=== 02 Physics/07 Astrophysics and Cosmology/Stellar remnants and neutron-capture nucleosynthesis.md
+- FIXED | Second heading should say above, not below, 6-10 Msun | Renamed heading to "Late stages above the 6-10 solar mass range" (no incoming links found).
+- FIXED | Ni-56 to Fe-56 is not double beta decay | Added that it is two successive EC/beta+ decays, Ni-56 to Co-56 (6.1 d) then Co-56 to Fe-56 (77 d), which power supernova light curves.
+- FIXED | Forbidden lines excited by free-electron collisions; 17 C and 18 C are O-17 and O-18 | Added electron-collision excitation; table row and following sentence now identify O-17 and O-18 (and F-19).
+- FIXED | Table copied from other notes; give tau_dyn a number | Rebuilt the table from used symbols; added tau_dyn about 0.04-0.1 s for rho 1e9-1e10 g/cm^3 (checked numerically).
+=== 02 Physics/07 Astrophysics and Cosmology/Stellar spectroscopy and exoplanet detection.md
+- FIXED | Balmer jump at 3646 A from n=2 bound-free, strongest in A stars | Added the correct position, cause and A-star maximum, and that the 4000 A break of cool stars is a separate metal-line and Ca II H and K feature.
+- FIXED | X and P clashes; table D, lambda, sigma clashes, unused symbols, a mislabelled | Renamed airmass to X_air and transit probability to P_tr; rebuilt table (a is planet semimajor axis, P is period, removed b, zenith Z, RA, Dec, proper motion, Oort A, scattering angle, crossing time, metal yield).
+=== 02 Physics/07 Astrophysics and Cosmology/Stellar structure equations, homology, and energy transport.md
+- FIXED | Sound-crossing period coefficient is (9/pi)^(1/2) = 1.69, Sun about 0.064 d | Replaced the display with (9/(pi Gamma_1 G rho))^(1/2) = 1.69/sqrt(...) = 0.064 d (checked numerically); callout records the source sqrt(12) and 0.04 d.
+- FIXED | sigma_8 integral dimensionally wrong; diffusion equation must use d/dM_r | sigma_8^2 now = 1/(2 pi^2) integral P W^2(k R_8) k^2 dk with R_8 = 8/h Mpc plus a sentence on the source omission; diffusion display now uses d/dM_r and callout updated.
+- FIXED | Table clashes for W, E, epsilon, mu and many unused entries | Rebuilt the table from symbols used (single W, E, epsilon and mu meanings; removed nuclear radius, impact parameter, polytropic K and n, neutrino emission time etc.; CGS units).
+=== 02 Physics/07 Astrophysics and Cosmology/Synchrotron populations, self-absorption, and equipartition.md
+- FIXED | C used for distribution normalization and band constant; table wrong and incomplete | Renamed the band constant to C_12 in all equations and text; rebuilt the table (removed fine-structure alpha, S, U, brightness T; E is electron energy; added p, k, V, epsilon(omega), n(E), pitch angle alpha and others).
+- PARTLY | Coma Faraday value 0.2 uG matches inverse-Compton, not Faraday rotation; check A366 | Coma part confirmed: added a callout that 0.2 uG matches the IC estimate and Faraday rotation gives about 5 uG (Bonafede et al. 2010); table values kept; A366 not verified without the source.

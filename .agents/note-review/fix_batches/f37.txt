@@ -1,0 +1,52 @@
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/06 The Equivalence Principles/06.07 A Brief Account of Experimental Tests.md
+- [Correctness] Eötvös paragraph: the horizontal torque comes from the centrifugal acceleration having a horizontal component relative to the true gravitational pull (the plumb line follows their sum), and the effect scales as $\Omega^2R_E\sin\varphi\cos\varphi$, maximal at $45^\circ$ latitude; Budapest ($47^\circ$) is a mid-latitude site, so "high-latitude location" and "Earth's gravity ... has a small horizontal component" should be corrected.
+- [Correctness] "Washington University in Seattle" should be "the University of Washington, Seattle" (Eöt-Wash group); Washington University is in St. Louis.
+- [Correctness] Sign convention of (6.4): with $a=(m_g/m_i)g$, one gets $\delta a/g=(m_g/m_i)_1-(m_g/m_i)_2\approx-\eta$ as $\eta$ is defined from $m_i/m_g$; either define $\eta$ with $m_g/m_i$ or write $|\eta|=|\delta a|/g$.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/06 The Equivalence Principles/06.07.02 Laser Ranging to the Moon and the WEP.md
+- [Correctness] "precision of a few parts in $10^{14}$": a few millimetres over $3.84\times10^8\,\mathrm{m}$ is $\approx10^{-11}$ ($3\,\mathrm{mm}/3.84\times10^8\,\mathrm{m}=7.8\times10^{-12}$); the interpretation section's "parts in $10^{12}$" should also read "about $10^{-11}$". The $10^{-13}$–$10^{-14}$ figure applies to the inferred differential acceleration $\delta a/g$, not the range.
+- [Correctness] "Lunakhod" should be "Lunokhod".
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/06 The Equivalence Principles/06.07.03 Tests of the SEP.md
+- [Correctness] Symbol clash: the same self-energy appears as $\epsilon_g$ (defined as $GM^2/R$) and $E_g$, and the same mass as $M$ and $m$; use one symbol each, and note that for a uniform sphere $E_g=\tfrac35GM^2/R$, so Earth's actual fraction $\approx4.6\times10^{-10}$ differs from $GM/(Rc^2)=7.0\times10^{-10}$.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/06 The Equivalence Principles/06.08 The First Applications of the EEP - Prelude to the GTR.md
+- [Correctness] Eq. (6.9) with the table entry "clock periods": the lower clock ($S_1$, lower potential) runs slow, so its period seen from $S_2$ is longer and $(T_1-T_2)/\bar T=+gd/c^2$; the printed sign $-gd/c^2$ is correct only if $T_1,T_2$ are elapsed proper-time readings over a common interval. Define $T$ as accumulated readings (and update the table) or flip the sign.
+- [Correctness] "runs at a smaller rate $\phi/c^2$ relative to a stationary clock in gravity-free space" should read "runs slower by the fraction $|\phi|/c^2$", i.e. $d\tau/dt\approx1+\phi/c^2$ with $\phi<0$.
+- [Correctness] The Planck constant is wrapped in \energy{h}; it is an action ($\mathrm{J\,s}$), so use the macro group for action or leave it uncolored as a constant.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/06 The Equivalence Principles/06.11 The Equivalence Principle and the Quantum Theory.md
+- [Correctness] "the classical path in a gravitational field $g$ is exactly the same as the classical path in an accelerated frame with acceleration $-a$" contradicts (6.11) and the earlier statement $a=-g$; it should read "with acceleration $a=-g$".
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/07 Einstein's General Theory of Relativity/07 References.md
+- [Correctness] Refs 9 and 10: Collected Papers Vol. 6 is "The Berlin Years: Writings, 1914–1917", not "1912–1914"; ref 11: Vol. 8 is "The Berlin Years: Correspondence, 1914–1918", not "1912–1914"; also "Abrahams expression" should be "Abraham's expression".
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/07 Einstein's General Theory of Relativity/07.02 General Theory of Relativity as a Theory of Gravity.md
+- [Correctness] "$g_{00}\simeq-(1+\phi/c^2)$" is missing a factor 2 and uses the $(-,+,+,+)$ signature, while later "$g_{00}=1+h_{00}$" uses $(+,-,-,-)$; pick one signature and write $g_{00}\simeq-(1+2\phi/c^2)$ or $g_{00}\simeq1+2\phi/c^2$ consistently.
+- [Correctness] Eq. (7.10): with $(+,-,-,-)$, $g^{ij}=-\delta^{ij}$ and $h_{00}=2\phi/c^2$, (7.8) and (7.9) give $d^2x^i/dt^2=-c^2\Gamma^i_{00}=-(c^2/2)\partial_ih_{00}=-\partial_i\phi$; the printed $+(c^2/2)\nabla h_{00}$ has the wrong sign, and the following statement "$\Gamma^i_{00}=\nabla h_{00}$" drops the factor $1/2$.
+- [Correctness] The main text still states "full contraction gives $R=\kappa T$"; the callout correctly notes $R=-\kappa T$. Fix the sentence itself rather than keeping a wrong sign with a disclaimer, since (7.5) follows only from $R=-\kappa T$.
+- [Correctness] "time derivatives for the car are small" contains a stray word ("car"); it should read "time derivatives of the metric are small for a static field".
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/07 Einstein's General Theory of Relativity/07.03 The GTR from an Action Principle.md
+- [Correctness] Eq. (7.12) with $d^4x$ in $\mathrm{m}^4$ (time as $ct$) has units of $\mathrm{J\,m}$, not $\mathrm{J\,s}$; the standard form is $S=\frac{1}{c}\int\left(\frac{c^4}{16\pi G}R+\mathcal L_m\right)\sqrt{-g}\,d^4x$, equivalently $\frac{c^3}{16\pi G}\int R\sqrt{-g}\,dt\,d^3x$ for the gravitational part.
+- [Correctness] Write the particle action as $S=-mc^2\int d\tau$ (with $\tau$ in seconds) in the text instead of keeping $-c\int m\,d\tau$ with a disclaimer.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/07 Einstein's General Theory of Relativity/07.04 The GTR as the Geometric Theory of Gravity.md
+- [Correctness] Eq. (7.16): Baez–Bunn give $\ddot V/V=-4\pi G(\rho+(P_x+P_y+P_z)/c^2)$, i.e. $\ddot V/V=-\tfrac12\kappa c^2(T_{00}+T_{11}+T_{22}+T_{33})$ with $T_{00}=\rho c^2$; the printed $-\kappa\sum T_{ii}$ lacks $c^2/2$ and has units $\mathrm{m^{-2}}$ instead of $\mathrm{s^{-2}}$.
+- [Correctness] "Its components are typically $v\phi/c$": $g_{0i}$ is dimensionless; its order of magnitude is $(v/c)(\phi/c^2)$, with a factor of about 4 in linearised GR.
+- [Correctness] "Space-time symmetries and physical constraints reduce the geometric object to the symmetric ten-component Ricci tensor" is misleading: the Ricci tensor is a contraction of the Riemann tensor; the remaining ten Weyl components are not removed and carry the vacuum tidal field, which is why $R_{ik}=0$ outside the Sun still has curvature. Say this explicitly, consistent with 07.02.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/07 Einstein's General Theory of Relativity/07.05 Einstein's Hole Argument.md
+- [Correctness] "restricted to metric determinant 1": the 4 November 1915 restriction was to coordinate transformations with Jacobian (substitution) determinant 1, as the quoted sentence itself says, not to metrics with determinant 1.
+- [Correctness] The trace assumption $\sum T^\mu{}_\mu=0$ was introduced in the 11 November 1915 addendum, not in the first (4 November) paper; "At this stage" should say so.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/07 Einstein's General Theory of Relativity/07.05.01 Revisiting the Hole Argument.md
+- [Correctness] The Galilean map $x'=x-vt$ does not reduce to the identity outside L, so it is not a hole-type transformation and cannot support the conclusion drawn for the hole; it also changes the description of the matter outside L.
+- [Correctness] Comparing $\sqrt{-\gamma_{00}}\,dt$ with $\sqrt{-\gamma'_{00}}\,dt$ at the same coordinate label compares two different physical clocks: a clock at rest in the old chart inside L is generally not at rest in the new chart, so its proper time is $\int\sqrt{-\gamma'_{\mu\nu}\dot x'^\mu\dot x'^\nu}\,dt'$, which equals the original value. Add this computation (as the interpretation section requests) or mark the claim as the author's contested view.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/07 Einstein's General Theory of Relativity/07.06 The GTR and Its Galilean Metrics.md
+- [Correctness] Eq. (7.21): with $x'=x-vt$, $dx=dx'+v\,dt$ gives $ds^2=-c^2dt^2(1-v^2/c^2)+2v\,dx'\,dt+dx'^2$; the cross term is $+2v$, not $-2v$, and likewise (7.22) should read $+2R^2\Omega\,d\phi'\,dt$ for $\phi'=\phi-\Omega t$.
+- [Correctness] Painlevé derivation: $r'=r+vt$ with $v=\sqrt{2GM/r}$ does not produce (7.23) because $v$ depends on $r$; (7.23) follows from the non-integrable substitution $dr\to dr+v(r)\,dt$ in $-c^2dt^2+dr^2+\dots$. A genuine coordinate transformation of flat spacetime cannot generate Schwarzschild curvature (Kretschmann scalar $48G^2M^2/(c^4r^6)\neq0$), and the frame is not "uniformly accelerated".
+- [Correctness] "the Langevin metric ... is evidently not special or general relativity": it is the Minkowski metric written in rotating coordinates (zero Riemann tensor) and is therefore a special-relativistic result; keep the claim only as an explicitly labelled author's interpretation.
+- [Correctness] Notation: the text uses $R,\Omega$ while the Fig. 7.4 caption uses $r,\omega$, and (7.22) contains $dR^2$ although $R$ is constant on the loop; use one set and drop $dR^2$ or explain it as the radial coordinate.
+

@@ -115,19 +115,19 @@ $$
 
 The box gives the magnitude $3.2\times10^{-15}\,\unit{T}$.
 
-To pass from a moving charge to a small current element, the notes use $\electric{I}=\mathrm{d}\electric{q}/\mathrm{d}t$ and replace $\electric{q}\mechanical{\vec v}$ by $(\Delta\electric{q}/\Delta t)\Delta\mechanical{\vec x}=\electric{I}\Delta\mechanical{\vec x}$. The field contribution is
+To pass from a moving charge to a small current element, the notes use $\electric{I}=\mathrm{d}\electric{q}/\mathrm{d}t$ and replace $\electric{q}\mechanical{\vec v}$ by $(\Delta\electric{q}/\Delta t)\Delta\mechanical{\vec\ell}=\electric{I}\Delta\mechanical{\vec\ell}$, where $\Delta\mechanical{\vec\ell}$ is the directed length of the current element. The field contribution is
 
 $$
 \Delta\magnetic{\vec B}
 =\frac{\magnetic{\mu}_0}{4\pi}
-\frac{\electric{I}\Delta\mechanical{\vec s}\times\hat r}{\mechanical{r}^2}.
+\frac{\electric{I}\Delta\mechanical{\vec\ell}\times\hat r}{\mechanical{r}^2}.
 $$
 
 The distance $\mechanical{r}$ runs from the current element to the point where the field is evaluated.
 
 ##### Field of a very long straight wire
 
-The observation point is a perpendicular distance $\mechanical{d}$ from the wire. A current element $\electric{I}\Delta\mechanical{x}$ a distance $\mechanical{x}$ along the wire is at distance $\sqrt{\mechanical{x}^2+\mechanical{d}^2}$ from that point. The sine factor is $\sin\theta=\mechanical{d}/\sqrt{\mechanical{x}^2+\mechanical{d}^2}$.
+The observation point is a perpendicular distance $\mechanical{d}$ from the wire. A current element $\electric{I}\Delta\mechanical{x}$, with $\Delta\mechanical{\ell}=\Delta\mechanical{x}$ along the wire, a distance $\mechanical{x}$ along the wire is at distance $\sqrt{\mechanical{x}^2+\mechanical{d}^2}$ from that point. The sine factor is $\sin\theta=\mechanical{d}/\sqrt{\mechanical{x}^2+\mechanical{d}^2}$.
 
 $$
 \Delta\magnetic{B}
@@ -239,33 +239,36 @@ Kyle Kabasares, *Electricity and Magnetism (Physics 9H, UC Merced 2014)*.
 
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
-| $\mechanical{\vec F}$ | $\unit{N}$ | Force | The force on a charge. |
-| $\electric{\vec E}$ | $\unit{V\,m^{-1}}$ | Electric field | The electric force per unit test charge. |
-| $\electric{V}$ | $\unit{V}$ | Electric potential | The potential energy per unit test charge. |
-| $\electric{q}$, $\electric{q}_1$, $\electric{q}_2$ | $\unit{C}$ | Electric charge | The test or source charge in the electrostatic relations. |
-| $\mechanical{r}$ | $\unit{m}$ | Radial distance | The distance from a source, axis, or center. |
-| $\mechanical{x}$, $\mechanical{y}$, $\mechanical{z}$ | $\unit{m}$ | Position coordinates | The coordinates in the spatial derivatives. |
+| $\electric{\vec E}$, $\electric{\vec E}_1$, $\electric{\vec E}_2$, $\electric{\vec E}_3$ | $\unit{V\,m^{-1}}$ | Electric field | The electric field and its superposed contributions. |
+| $\electric{\Phi}_E$ | $\unit{N\,m^2\,C^{-1}}$ | Electric flux | The surface integral of the normal electric field. |
+| $\electric{Q}_{\mathrm{enc}}$ | $\unit{C}$ | Enclosed charge | The net charge inside the closed surface. |
 | $\electric{\varepsilon}_0$ | $\unit{F\,m^{-1}}$ | Vacuum permittivity | The constant that sets the strength of the electric interaction in vacuum. |
-| $\mechanical{d}$ | $\unit{m}$ | Separation or diameter | The separation of charges, plates, or slits, or the wire diameter. |
-| $\mechanical{m}$ | $\unit{kg}$ | Object mass | The mass supported by the electric force or suspended by the string. |
-| $\mechanical{g}$ | $\unit{m\,s^{-2}}$ | Gravitational acceleration | The acceleration used for weight and gravitational potential energy. |
-| $\electric{e}$ | $\unit{C}$ | Elementary charge | The magnitude of the charge of an electron or proton. |
-| $\electric{Q}$ | $\unit{C}$ | Total charge | The charge distributed along the semicircular arc. |
-| $\theta$, $\mechanical{\theta}$ | $\unit{rad}$ | Angle | A geometric angle used in projections, polarization, and ray diagrams. |
-| $\electric{\Phi}$, $\electric{\Phi}_{E,\mathrm{net}}$ | $\unit{N\,m^2\,C^{-1}}$ | Electric flux | The surface integral of the normal electric field. |
-| $\mechanical{\vec A}$ | $\unit{m^2}$ | Area vector | A vector normal to the surface with magnitude equal to the area. |
-| $\mechanical{R}$ | $\unit{m}$ | Radius | The radius of a sphere, disk, wire, or coil, or the radius of curvature of a mirror. |
-| $\electric{I}$, $\electric{I}_2$–$\electric{I}_6$ | $\unit{A}$ | Circuit currents | The current in the feed and each bridge branch. |
-| $\electric{\varepsilon}$ | $\unit{F\,m^{-1}}$ | Permittivity | The electric response parameter of a dielectric or transparent medium. |
-| $t$, $\signal{t}$, $\Delta\signal{t}$ | $\unit{s}$ | Time and elapsed time | The time coordinate or the duration of a process. |
-| $\magnetic{\vec B}$ | $\unit{T}$ | Magnetic flux density | The magnetic field that determines the flux through a surface. |
-| $\magnetic{\Phi}_B$ | $\unit{Wb}$ | Magnetic flux | The integral of the normal magnetic field over the surface. |
+| $\magnetic{B}$, $\magnetic{\vec B}$, $\magnetic{\vec B}_1$, $\magnetic{\vec B}_2$, $\magnetic{\vec B}_3$ | $\unit{T}$ | Magnetic flux density | The magnetic field and its superposed contributions. |
+| $\magnetic{B}_z$, $\magnetic{B}_{\mathrm{coil,center}}$, $\magnetic{B}_{\mathrm{coil,axis}}$ | $\unit{T}$ | Loop and coil field | The axial field of a loop or coil and its value at the center. |
+| $\magnetic{\vec B}_{\mathrm{point}}$, $\Delta\magnetic{\vec B}$, $\Delta\magnetic{B}$ | $\unit{T}$ | Field contribution | The field of a moving point charge or of a current element. |
+| $\magnetic{\Phi}_B$ | $\unit{Wb}$ | Magnetic flux | The integral of the normal magnetic field over the closed surface. |
+| $\mechanical{\vec A}$ | $\unit{m^2}$ | Area vector | A vector normal to the surface or loop with magnitude equal to the area. |
 | $\magnetic{\vec\mu}$ | $\unit{A\,m^2}$ | Magnetic dipole moment | The current times the oriented area of the loop. |
-| $\mechanical{\vec\ell}$ | $\unit{m}$ | Wire length vector | The directed length of the wire segment carrying current. |
-| $\mechanical{v}$ | $\unit{m\,s^{-1}}$ | Speed | The speed of a particle or of a wave in the medium. |
-| $\energy{K}$ | $\unit{J}$ | Kinetic energy | The energy of a particle moving at the selected speed. |
 | $\magnetic{\mu}_0$ | $\unit{T\,m\,A^{-1}}$ | Vacuum permeability | The magnetic constant in the current-element and moving-charge formulas. |
-| $N$ | 1 | Turn count | The number of loops contributing to the coil field. |
+| $\mechanical{\vec F}_m$, $\mechanical{F}_m$ | $\unit{N}$ | Magnetic force | The magnetic force on the current-carrying wire. |
+| $\mechanical{F}_g$ | $\unit{N}$ | Weight | The gravitational force on the wire. |
+| $\mechanical{m}$ | $\unit{kg}$ | Mass | The mass of the wire or of the moving particle. |
+| $\mechanical{g}$ | $\unit{m\,s^{-2}}$ | Gravitational acceleration | The acceleration used for the weight of the wire. |
+| $\mechanical{\vec\ell}$, $\mechanical{\ell}$, $\Delta\mechanical{\vec\ell}$ | $\unit{m}$ | Wire length or current element | The directed length of a wire segment, or the line element of a loop or contour. |
+| $\electric{I}$, $\electric{I}_{\mathrm{tot}}$ | $\unit{A}$ | Current | The current in the wire, loop, or coil, or the total current in the round wire. |
+| $\electric{I}_1$, $\electric{I}_2$, $\electric{I}_3$ | $\unit{A}$ | Ampère-loop currents | The currents through the contour in the Ampère's law example. |
 | $\electric{I}_{\mathrm{enc}}$ | $\unit{A}$ | Enclosed current | The net current through a surface bounded by the Amperian loop. |
-| $\magnetic{\mu}$ | $\unit{T\,m\,A^{-1}}$ | Permeability | Magnetic response parameter for the medium. |
-| $\Delta\mechanical{r}$ | $\unit{m}$ | Path length difference | Difference in distance traveled by the two interfering waves. |
+| $\electric{q}$, $\Delta\electric{q}$ | $\unit{C}$ | Charge | The charge of the moving particle, or the charge that passes in the time $\Delta t$. |
+| $\electric{e}$ | $\unit{C}$ | Elementary charge | The magnitude of the charge of an electron or proton. |
+| $\mechanical{v}$, $\mechanical{\vec v}$ | $\unit{m\,s^{-1}}$ | Speed and velocity | The speed or velocity of the moving charged particle. |
+| $\energy{K}$ | $\unit{J}$ | Kinetic energy | The kinetic energy of the particle after acceleration. |
+| $\Delta\electric{V}$ | $\unit{V}$ | Accelerating voltage | The potential difference that accelerates the ions. |
+| $\mechanical{r}$ | $\unit{m}$ | Radius or distance | The orbit radius, the distance from a current element, or the radius of an Amperian loop. |
+| $\mechanical{r}_{24}$, $\mechanical{r}_{26}$, $\Delta\mechanical{r}$ | $\unit{m}$ | Isotope orbit radii | The orbit radii of the two isotopes and their difference. |
+| $\mechanical{x}$, $\Delta\mechanical{x}$ | $\unit{m}$ | Position along the wire | The coordinate of a current element along the straight wire and its length. |
+| $\mechanical{d}$ | $\unit{m}$ | Perpendicular distance | The distance from the straight wire to the observation point. |
+| $\mechanical{R}$ | $\unit{m}$ | Radius | The radius of the loop, the coil, or the round wire. |
+| $\mechanical{z}$ | $\unit{m}$ | Axial coordinate | The distance from the loop center along its axis. |
+| $\theta$ | $\unit{rad}$ | Angle | The angle in the sine factor of the Biot–Savart law. |
+| $N$ | 1 | Turn count | The number of coincident turns in the coil. |
+| $t$, $\Delta t$ | $\unit{s}$ | Time and elapsed time | The time coordinate or the duration of a process. |

@@ -261,20 +261,20 @@ Acceleration is $\mechanical{\mathbf a}=\mechanical{\mathbf r}''=d\mechanical{\m
 
 $$
 \mechanical{\mathbf r}(\mechanical{t})-\mechanical{\mathbf r}(0)
-=\int_0^{\mechanical{t}}\mechanical{\mathbf v}(s)\,ds,\qquad
+=\int_0^{\mechanical{t}}\mechanical{\mathbf v}(\tau)\,d\tau,\qquad
 \mechanical{\mathbf v}(\mechanical{t})-\mechanical{\mathbf v}(0)
-=\int_0^{\mechanical{t}}\mechanical{\mathbf a}(s)\,ds.
+=\int_0^{\mechanical{t}}\mechanical{\mathbf a}(\tau)\,d\tau.
 $$
 
 The handwritten formulas omit the starting values, which is valid when the corresponding starting vector is zero.
 
 ##### Velocity and acceleration on a helix
 
-For $\mechanical{\mathbf r}(t)=\langle\cos t,t,\sin t\rangle$ in numerical coordinates,
+For $\mathbf r(t)=\langle\cos t,t,\sin t\rangle$ in numerical coordinates,
 
 $$
-\mechanical{\mathbf v}(t)=\mechanical{\mathbf r}'(t)=\langle-\sin t,1,\cos t\rangle,\qquad
-\mechanical{\mathbf a}(t)=\mechanical{\mathbf r}''(t)=\langle-\cos t,0,-\sin t\rangle.
+\mathbf v(t)=\mathbf r'(t)=\langle-\sin t,1,\cos t\rangle,\qquad
+\mathbf a(t)=\mathbf r''(t)=\langle-\cos t,0,-\sin t\rangle.
 $$
 
 At $t=0$, the position is $\langle1,0,0\rangle$, the tangent velocity is $\langle0,1,1\rangle$, and the radially inward acceleration is $\langle-1,0,0\rangle$. The speed is $\sqrt{\sin^2t+1+\cos^2t}=\sqrt2$.
@@ -416,6 +416,6 @@ Kyle Kabasares, *Calculus III - Vector Calculus (Math 23, UC Merced 2014)*.
 | $\mechanical{v}$, $\mechanical{v}_0$ | $\unit{m\,s^{-1}}$ | One-dimensional velocity | Signed velocity and its value at the initial time. |
 | $\mechanical{x}$, $\mechanical{y}$ | $\unit{m}$ | Position components | Horizontal and vertical coordinates of the marked point. |
 | $\mechanical{\omega}$ | $\unit{rad\,s^{-1}}$ | Angular speed | Constant rate at which the circle rotates. |
-| $\mechanical{\theta}$ | $\unit{rad}$ | Rotation angle or azimuth | Angle swept by the rolling circle, or horizontal direction of the initial velocity measured from the positive $x$-axis. |
+| $\mechanical{\theta}$ | $\unit{rad}$ | Rotation angle | Angle swept by the rolling circle. |
 | $\mechanical{d}$ | $\unit{m}$ | Distance traveled by the center | Arc swept at the circumference, equal to the distance rolled. |
 | $\mechanical{s}$ | $\unit{m}$ | Arc length | Distance traveled by the marked point along its trajectory. |

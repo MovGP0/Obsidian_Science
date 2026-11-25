@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Dirac Matrices"
 ---
 
@@ -10,7 +10,7 @@ title: "Dirac Matrices"
 These are four unitary traceless $4\times4$ matrices:
 
 $$
-\gamma^0\equiv\begin{pmatrix}1&0\\0&1\end{pmatrix};\qquad
+\gamma^0\equiv\begin{pmatrix}1&0\\0&-1\end{pmatrix};\qquad
 \gamma^i\equiv\begin{pmatrix}0&\sigma^i\\-\sigma^i&0\end{pmatrix}
 \tag{C.9}
 $$

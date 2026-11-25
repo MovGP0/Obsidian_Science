@@ -551,7 +551,7 @@ $$
 \gamma'(t)=x'(t)+iy'(t).
 $$
 
-The notes describe a smooth curve as one with continuous derivative. The piecewise smooth example has a cusp and can be split there into two smooth segments.
+The notes describe a smooth curve as one with continuous derivative. A smooth arc also needs $\gamma'(t)\ne0$ for all $t$. Without this condition, a parametrization with continuous derivative can trace a cusp. The piecewise smooth example has a cusp and can be split there into two smooth segments.
 
 ![[Kyle Kabasares - Complex Variables - Smooth curve from A to B.png|**Fig. 91** A smooth path follows the arrows from $A$ to $B$.]]
 

@@ -118,7 +118,7 @@ $$
 \frac{32\pi Z^2\electric{e}^6}{3\mechanical{m}_ec^3}
 \left(\frac{2\pi}{3k_{\mathrm B}\mechanical{m}_e}\right)^{1/2}
 \frac{\exp[-h\signal{\nu}/(k_{\mathrm B}\thermal{T})]}{\sqrt{\thermal{T}}}
-\left(\frac{3\pi}{2\sqrt{3}}\right).
+\left(\frac{\sqrt{3}}{4}\right).
 $$
 
 The quantum-mechanical result replaces the final factor by the velocity-averaged free–free **Gaunt factor** $\bar{g}_{\mathrm{ff}}$, which is of order unity. Define the spectral cooling function by $\langle\energy{\epsilon}_{\signal{\nu}}\rangle_{\mathrm{MVD}}=\mechanical{n}_e\mechanical{n}_i\energy{\Lambda}_{\signal{\nu}}^{\mathrm{ff}}(\thermal{T})$. Its CGS numerical form, with $\thermal{T}$ in kelvin, is
@@ -312,10 +312,22 @@ Kyle Kabasares, *Radiative Transfer in Astrophysics (Physics 240C, UC Irvine 201
 | $\energy{E}$ | $\unit{erg}$ | Radiant energy | Energy emitted by the source. |
 | $t$ | $\unit{s}$ | Time | Elapsed time used to define the emission rate. |
 | $\energy{j}_{\signal{\nu}}$ | $\unit{erg\cdot s^{-1}\cdot Hz^{-1}\cdot sr^{-1}\cdot cm^{-3}}$ | Emission coefficient | Specific intensity added by spontaneous emission per unit path length. |
-| $\mechanical{n}$ | $\unit{cm^{-3}}$ | Number density | Number of absorbers per unit volume. |
-| $\energy{U}$ | $\unit{erg\cdot cm^{-3}}$ | Radiation energy density | Electromagnetic energy per unit volume in Gaussian CGS. |
-| $y$ | $1$ | Compton parameter | Mean fractional energy change per scattering times the mean scattering count, using the convention in this section. |
-| $\thermal{T}$ | $\unit{K}$ | Brightness temperature | Temperature inferred from the intensity in the Rayleigh–Jeans limit in this section. |
+| $\thermal{T}$ | $\unit{K}$ | Plasma temperature | Kinetic temperature of the electrons and ions in the plasma. |
 | $\energy{\epsilon}_{\signal{\nu}}$ | $\unit{erg\cdot s^{-1}\cdot cm^{-3}\cdot Hz^{-1}}$ | Volume emissivity | Radiated power per unit volume and frequency, integrated over direction. |
 | $\energy{\Lambda}_{\signal{\nu}}^{\mathrm{ff}}$ | $\unit{erg\cdot cm^3\cdot s^{-1}\cdot Hz^{-1}}$ | Free–free spectral cooling function | Thermally averaged volume emissivity divided by the electron and ion densities. |
-| $b$ | $\unit{cm\,s^{-1}}$ | Doppler parameter | Thermal speed scale for the line profile. |
+| $\mechanical{b}$ | $\unit{cm}$ | Impact parameter | Distance of closest approach of the electron to the ion on a straight trajectory. |
+| $\mechanical{v}_0$, $\mechanical{v}$ | $\unit{cm\,s^{-1}}$ | Initial and final electron speed | Electron speeds before and after the emission of a photon. |
+| $\mechanical{m}_e$ | $\unit{g}$ | Electron mass | Mass of the electron. |
+| $\signal{\nu}$ | $\unit{Hz}$ | Frequency | Frequency of the emitted photon. |
+| $\mechanical{n}_e$, $\mechanical{n}_i$ | $\unit{cm^{-3}}$ | Electron and ion number densities | Numbers of electrons and ions per unit volume. |
+| $Z$ | $1$ | Ion charge number | Ion charge in units of the elementary charge. |
+| $\bar{g}_{\mathrm{ff}}$ | $1$ | Velocity-averaged free–free Gaunt factor | Quantum-mechanical correction factor of order unity. |
+| $\mechanical{\ell}_e$ | $\unit{kpc}$ | Electron mean free path | Mean distance between Coulomb collisions of an electron. |
+| $\magnetic{B}$ | $\unit{\mu G}$ | Magnetic flux density | Magnetic field strength in the intracluster medium. |
+| $\mechanical{r}_g$ | $\unit{cm}$ | Gyroradius | Radius of the circular motion of a charged particle around a magnetic field line. |
+| $t_{\mathrm{eq}}$ | $\unit{yr}$ | Equilibration time | Time for collisions to set up a Maxwellian distribution. |
+| $\mechanical{P}$ | $\unit{dyn\cdot cm^{-2}}$ | Pressure | Thermal, magnetic, or gas pressure, as given by the subscript. |
+| $\mechanical{\rho}$ | $\unit{g\cdot cm^{-3}}$ | Mass density | Gas mass per unit volume. |
+| $\mechanical{\Phi}$ | $\unit{erg\cdot g^{-1}}$ | Gravitational potential | Gravitational potential energy per unit mass. |
+| $\mu$ | $1$ | Mean molecular weight | Mean particle mass in units of the atomic mass unit. |
+| $\mechanical{m}_a$ | $\unit{g}$ | Atomic mass unit | Mass unit used to give the mean particle mass. |

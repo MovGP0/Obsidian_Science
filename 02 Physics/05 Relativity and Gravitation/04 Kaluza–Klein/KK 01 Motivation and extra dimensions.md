@@ -75,13 +75,13 @@ A dimension is an independent local direction in which a point can change its po
 
 An infinite line and a circle are both locally one-dimensional. Their global structures differ. On the line, moving in one direction never returns to the initial point. On the circle, one complete circuit does.
 
-In the model studied here, ordinary spacetime has four coordinates. A fifth, spatial coordinate is periodic:
+In the model studied here, ordinary spacetime has four coordinates. A fifth, spatial coordinate, the circular angle $\mechanical{\theta}$, is periodic:
 
 $$
-\mechanical{y}\sim\mechanical{y}+2\pi\mechanical{r}.
+\mechanical{\theta}\sim\mechanical{\theta}+2\pi.
 $$
 
-The symbol $\sim$ identifies two coordinate labels for the same point. It does not describe two separate copies of the universe. The radius $\mechanical{r}$ sets the circumference.
+The symbol $\sim$ identifies two coordinate labels for the same point. It does not describe two separate copies of the universe. The radius $\mechanical{r}$ sets the circumference $2\pi\mechanical{r}$.
 
 The familiar tube picture contains a line direction and a circular direction. It is useful because it shows a compact coordinate directly. In the physical model, however, every spacetime event has a circular direction. The circle is not a small ring placed at a location in ordinary three-dimensional space.
 
@@ -281,18 +281,18 @@ The units below use the collection's natural-unit convention. Explicit SI formul
 
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
-| $\mechanical{y}$ | $\unit{GeV^{-1}}$ | Coordinates | Length-valued base, embedding, or compact coordinates used in this chapter. |
-| $\mechanical{r}$ | $\unit{GeV^{-1}}$ | Reference circle radius | Radius encoded in the periodic coordinate identification. |
-| $\energy{E}_{\mathrm{KK}}$ | $\unit{GeV}$ | Energies | Excitation scale, wave energy, or first-mode rest energy. |
+| $\mechanical{y}$ | $\unit{GeV^{-1}}$ | Spatial coordinate | Second ordinary spatial coordinate. |
+| $\mechanical{r}$ | $\unit{GeV^{-1}}$ | Circle radius | Radius of the compact circle; it sets the circumference. |
+| $\energy{E}_{\mathrm{KK}}$ | $\unit{GeV}$ | Excitation energy | Energy scale of the first nonzero mode around the circle. |
 | $\energy{\hbar}$ | $1$ | Reduced Planck constant | Set to one in natural units; restored explicitly in SI formulas. |
 | $\mechanical{c}$ | $1$ | Speed of light | Set to one in natural units; restored explicitly in SI formulas. |
 | $\mechanical{t}$ | $\unit{GeV^{-1}}$ | Time | Time coordinate in the angular formulation’s natural units. |
 | $\mechanical{x}$ | $\unit{GeV^{-1}}$ | Base coordinate | Ordinary length-valued base coordinate; a four-coordinate argument where stated. |
 | $\mechanical{z}$ | $\unit{GeV^{-1}}$ | Spatial coordinate | Third ordinary spatial coordinate. |
-| $\mechanical{\theta}$ | $1$ | Circular angle | Compact circular angle; the spherical-coordinate inset identifies its separate polar-angle use. |
+| $\mechanical{\theta}$ | $1$ | Circular angle | Compact circular angle with period two pi. |
 | $\electric{A}_\mu$ | $\unit{GeV}$ | Angular-convention potential | Electromagnetic potential with the angular formulation’s positive-gradient gauge law. |
 | $\mechanical{\xi}$ | $1$ | Angular normalization | Dimensionless factor relating the mixed vector to the four-potential. |
-| $\signal{\psi},\signal{\psi}_n$ | — | Scalar waves | Scalar field and Fourier coefficients in the unnormalized expansion; amplitude units depend on the chosen normalization. |
+| $\signal{\psi}_n$ | — | Matter modes | Matter-field mode with winding n; amplitude units depend on the chosen normalization. |
 | $\electric{\rho}$ | $\unit{GeV^3}$ | Charge density | Charge per volume in the introductory Maxwell equations. |
 | $\electric{\mathbf J}$ | $\unit{GeV^3}$ | Current density | Charge-current vector in the introductory Maxwell equations. |
 | $\mechanical{\mathbf F}$ | $\unit{GeV^2}$ | Lorentz force | Lorentz force in natural units. |

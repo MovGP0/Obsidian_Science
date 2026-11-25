@@ -2,6 +2,9 @@ The **Centenary Einstein Equation (CEE)** is a form of **Einstein's field equati
 
 $$R_{ik} - \frac{1}{2} g_{ik} R - \frac{8 \pi G}{c^4} T_{ik(U)} = \frac{8\pi G}{c^4} T_{ik}$$
 
+> [!note]
+> The CEE is not part of standard general relativity. It comes from a Machian framework, and this note does not give its author or year. Moved to the right-hand side, the term $T_{ik(U)}$ only adds to the total source, so the equation has the form of the standard field equations with the source $T_{ik}+T_{ik(U)}$. In standard general relativity, a cosmological constant enters as a separate term $\Lambda g_{ik}$, not as part of an energy-momentum tensor of the universe.
+
 - $R_{ik}$ is the **Ricci curvature tensor**.
   Represents how the volume of a small geodesic ball in spacetime deviates from that in flat spacetime. In simpler terms, it encapsulates the local curvature caused by the presence of matter and energy.
 
@@ -53,8 +56,8 @@ This states that the curvature of spacetime (left-hand side) is determined by bo
 
 ### Empty Space: $R_{ik} = 0$
 
-In regions of empty space (vacuum, $T_{ik} = 0$ and $T_{ik(U)} = 0$), the Ricci tensor $R_{ik}$ vanishes. This simplifies the equation to:
+In regions of empty space, the local source is zero, $T_{ik} = 0$. The background term $T_{ik(U)}$ is present everywhere, so it does not vanish there. Only if the background term is also neglected, for example on scales that are small compared with the universe, does the Ricci tensor $R_{ik}$ vanish. This simplifies the equation to:
 
 $R_{ik} = 0$
 
-This represents the condition for spacetime to be "flat" or only influenced by gravitational waves or other non-matter-related structures.
+This is the vacuum condition. It does not make spacetime flat: Ricci-flat spacetimes can be strongly curved, for example outside the Schwarzschild and Kerr black holes. Spacetime is flat only when the full Riemann tensor vanishes. In vacuum, the Weyl tensor carries the remaining curvature, which includes the static field of a mass as well as gravitational waves.

@@ -48,7 +48,7 @@ For $\ell=4$, $m_\ell=0,\pm1,\pm2,\pm3,\pm4$ and $\mechanical{L}_z=m_\ell\hbar$.
 
 ##### Statistical physics review
 
-Maxwell–Boltzmann statistics is the classical case. Bose–Einstein and Fermi–Dirac are the quantum cases. For a classical ideal gas of particles of the same type treated as distinguishable, the Maxwell–Boltzmann distribution uses $f_{\mathrm{MB}}=Ae^{-\energy{E}/(k_B\thermal{T})}$, with the exponential as the Boltzmann factor.
+Maxwell–Boltzmann statistics is the classical case. Bose–Einstein and Fermi–Dirac are the quantum cases. For a classical ideal gas of particles of the same type treated as distinguishable, the Maxwell–Boltzmann distribution uses $f_{\mathrm{MB}}=C_{\mathrm{MB}}e^{-\energy{E}/(k_B\thermal{T})}$, with the exponential as the Boltzmann factor.
 
 Bose–Einstein statistics applies to identical, indistinguishable particles with integer spin, including helium-4 atoms and photons. Its occupation factor is $f_{\mathrm{BE}}=[B_{\mathrm{BE}}e^{\energy{E}/(k_B\thermal{T})}-1]^{-1}$. Fermi–Dirac statistics applies to identical, indistinguishable particles with half-integer spin, such as the free electrons in a conductor. Its occupation factor is $f_{\mathrm{FD}}=[B_{\mathrm{FD}}e^{\energy{E}/(k_B\thermal{T})}+1]^{-1}$. The exponents use the same positive sign as the corrected expressions on [[Statistical populations and quantum counting problems#Statistical physics|the section on Statistical physics]].
 
@@ -69,7 +69,7 @@ $$
 
 **Homework 13.1 — Speed-weighted distribution**
 
-This exercise explicitly weights the ordinary speed distribution $f(v)\propto v^2e^{-mv^2/(2k_BT)}$ by $v$. The resulting density is $F(v)=Av^3e^{-\lambda v^2}$ with $\lambda=\mechanical{m}/(2k_B\thermal{T})$. Normalization gives $A=[\int_0^\infty v^3e^{-\lambda v^2}\,dv]^{-1}$.
+This exercise explicitly weights the ordinary speed distribution $f(v)\propto v^2e^{-mv^2/(2k_BT)}$ by $v$. The resulting density is $F(v)=C_Fv^3e^{-\lambda v^2}$ with $\lambda=\mechanical{m}/(2k_B\thermal{T})$. Normalization gives $C_F=[\int_0^\infty v^3e^{-\lambda v^2}\,dv]^{-1}$.
 
 $$
 \langle\energy{K}\rangle
@@ -80,7 +80,7 @@ $$
 
 The integrals are $I_5=\lambda^{-3}$ and $I_3=\tfrac12\lambda^{-2}$, giving $I_5/I_3=2/\lambda$.
 
-**13.1, continued.** The pressure of the gas is $\thermal{P}=(2/3)N\langle\energy{E}\rangle/\mechanical{V}$. To compute mean energy per particle using $n(E)=g(E)f(E)$, integrate $E\,g(E)f(E)$ over the energies and divide by $N$, or use a density already normalized to one.
+**13.1, continued.** The pressure of the gas is $\thermal{P}=(2/3)N_{\mathrm{tot}}\langle\energy{E}\rangle/\mechanical{V}$. To compute mean energy per particle using $n(E)=g(E)f(E)$, integrate $E\,g(E)f(E)$ over the energies and divide by $N_{\mathrm{tot}}$, or use a density already normalized to one.
 
 ##### Midterm 2 — Problem 1
 
@@ -180,12 +180,42 @@ Kyle Kabasares, *Modern Physics (Physics 10, UC Merced 2014)*.
 
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
-| $\electric{e}$ | $\unit{C}$ | Elementary charge | Magnitude of the electron charge. |
-| $\electric{F}$ | $\unit{C/mol}$ | Faraday constant | Charge per mole of elementary charges. |
-| $\thermal{T}$ | $\unit{K}$ | Absolute temperature | Determines the blackbody spectrum. |
+| $A$ | $1$ | Mass number | Number of nucleons in a nucleus, $A=Z+N$. |
+| $Z$ | $1$ | Atomic number | Number of protons in a nucleus. |
+| $N$ | $1$ | Neutron number | Number of neutrons in a nucleus. |
+| $N_{\mathrm{tot}}$ | $1$ | Particle number | Number of gas particles in the volume. |
+| $\mechanical{m}_p$, $\mechanical{m}_n$, $\mechanical{m}_e$ | $\unit{u}$ | Particle masses | Rest masses of the proton, neutron, and electron. |
+| $\mechanical{M}$ | $\unit{u}$ | Neutral atomic mass | Mass of the neutral parent or daughter atom. |
+| $\mechanical{m}$ | $\unit{kg}$ | Mass | Mass of a gas particle, or mass of the particle that sets the force range. |
+| $\mechanical{L}$, $\mechanical{L}_z$ | $\unit{J\,s}$ | Orbital angular momentum | Magnitude and $z$-component of the orbital angular momentum. |
+| $m_\ell$ | $1$ | Magnetic quantum number | Sets $\mechanical{L}_z=m_\ell\hbar$. |
 | $h$ | $\unit{J\,s}$ | Planck constant | Relates the energy of one quantum to its frequency. |
-| $\energy{V}$ | $\unit{J}$ | Potential energy | Position-dependent multiplication term in the Hamiltonian. |
-| $\lambda$ | $\unit{s^{-1}}$ | Decay constant | Probability rate for the decay of an individual nucleus. |
-| $R$ | $\unit{Bq}$ | Activity | Number of radioactive decays per unit time. |
-| $\energy{B}$ | $\unit{MeV}$ | Nuclear binding energy | Energy required to separate a nucleus into its constituent nucleons. |
-| $\thermal{C}_V$ | $\unit{J/K}$ | Heat capacity at constant volume | Temperature derivative of internal energy at fixed volume. |
+| $\energy{E}$ | $\unit{J}$ | Energy | Energy of a particle or level. |
+| $\thermal{T}$ | $\unit{K}$ | Absolute temperature | Temperature of the gas or solid. |
+| $k_B$ | $\unit{J/K}$ | Boltzmann constant | Converts temperature into energy. |
+| $f$ | $1$ | Occupation factor | Mean occupation of a state at energy $E$. |
+| $C_{\mathrm{MB}}$, $B_{\mathrm{BE}}$, $B_{\mathrm{FD}}$ | $1$ | Normalization factors | Constants in the occupation factors. |
+| $g(E)$ | $\unit{J^{-1}}$ | Density of states | Number of available states per unit energy. For a discrete level, it is the degeneracy. |
+| $n(E)$ | $\unit{J^{-1}}$ | Particle energy distribution | Number of particles per unit energy. |
+| $F(v)$ | $\unit{s/m}$ | Speed-weighted density | Normalized speed density weighted by $v$. |
+| $C_F$ | $\unit{s^4/m^4}$ | Normalization constant | Normalizes $F(v)$. |
+| $\lambda$ | $\unit{s^2/m^2}$ | Exponent coefficient | $\lambda=\mechanical{m}/(2k_B\thermal{T})$ in the speed distribution. |
+| $\energy{K}$ | $\unit{J}$ | Kinetic energy | Kinetic energy of a gas particle. |
+| $\thermal{P}$ | $\unit{Pa}$ | Pressure | Pressure of the ideal gas. |
+| $\mechanical{V}$ | $\unit{m^3}$ | Volume | Volume of the gas. |
+| $\energy{V}$ | $\unit{J}$ | Potential energy | Potential energy of the stepped well. |
+| $\mechanical{p}$ | $\unit{kg\,m/s}$ | Momentum | Momentum that sets the de Broglie wavelength $h/\mechanical{p}$. |
+| $R_{21}$ | $\unit{m^{-3/2}}$ | Radial wave function | Hydrogen radial function for $n=2$, $\ell=1$. |
+| $a_0$ | $\unit{m}$ | Bohr radius | Length scale of the hydrogen atom. |
+| $P(r)$ | $\unit{m^{-1}}$ | Radial probability density | Probability per unit radius. |
+| $\thermal{C}_V$ | $\unit{J/(mol\,K)}$ | Molar heat capacity at constant volume | Temperature derivative of the molar internal energy. |
+| $\energy{U}$ | $\unit{J/mol}$ | Molar internal energy | Internal energy of one mole of the Einstein solid. |
+| $N_A$ | $\unit{mol^{-1}}$ | Avogadro constant | Number of particles per mole. |
+| $R$ | $\unit{J/(mol\,K)}$ | Molar gas constant | $R=N_Ak_B$. |
+| $\energy{B}$ | $\unit{MeV}$ | Nuclear binding energy | Energy for the specified breakup channel. |
+| $\mechanical{R}$ | $\unit{fm}$ | Nuclear radius or interaction range | Radius of the carbon-12 nucleus, or the assumed strong-force range. |
+| $d$ | $\unit{fm}$ | Separation | Distance between the two protons. |
+| $\mechanical{F}_G$ | $\unit{N}$ | Gravitational force | Gravitational force between the two protons. |
+| $\electric{F}_C$ | $\unit{N}$ | Coulomb force | Electric force between the two protons. |
+| $\electric{e}$ | $\unit{C}$ | Elementary charge | Magnitude of the electron charge. |
+| $G$, $k_e$ | $\unit{N\,m^2/kg^2}$, $\unit{N\,m^2/C^2}$ | Gravitational and Coulomb constants | Set the strength of the two forces. |

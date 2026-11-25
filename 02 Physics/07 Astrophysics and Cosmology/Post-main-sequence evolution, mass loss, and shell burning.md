@@ -73,25 +73,27 @@ The notes identify luminosity, terminal wind speed $\mechanical{v}_\infty$, and 
 
 $$
 \dot{\mechanical{M}}\propto
-\frac{\energy{L}}{\mechanical{v}_\infty\mechanical{R}^{1/2}},
+\frac{\energy{L}^{1/\alpha_{\mathrm{eff}}}}{\mechanical{v}_\infty\mechanical{R}^{1/2}},
 \qquad
 \dot{\mechanical{M}}\,\mechanical{v}_\infty\mechanical{R}^{1/2}
-\propto\energy{L}.
+\propto\energy{L}^{1/\alpha_{\mathrm{eff}}}.
 $$
+
+The product $\dot{\mechanical{M}}\,\mechanical{v}_\infty\mechanical{R}^{1/2}$ is the modified wind momentum. Here $\alpha_{\mathrm{eff}}$ is the effective line-force exponent, and the exponent $1/\alpha_{\mathrm{eff}}$ is about $1.5$–$2$ (Kudritzki and Puls 2000). The notes write a linear dependence on $\energy{L}$.
 
 The sketch shows data scattered around a rising straight line. The axes are unmarked.
 
 For an $80\mechanical{M}_\odot$ star, the notes give $\dot{\mechanical{M}}\sim2\times10^{-5}\mechanical{M}_\odot\,\unit{yr^{-1}}$ and write
 
 $$
-t_{\mathrm{MS}}=\frac{\dot{\mechanical{M}}}{\mechanical{M}}
+\tau_{\dot{\mechanical{M}}}=\frac{\mechanical{M}}{\dot{\mechanical{M}}}
 =\quantity{4\times10^6}{yr},
 \qquad
 t_{\mathrm{nuc}}\simeq\quantity{2\times10^5}{yr}.
 $$
 
 > [!note]
-> The numerical value and the units of $t_{\mathrm{MS}}$ use $\mechanical{M}/\dot{\mechanical{M}}$. The handwritten fraction is inverted.
+> The numerical value and the units of $\tau_{\dot{\mechanical{M}}}$ use $\mechanical{M}/\dot{\mechanical{M}}$. The handwritten fraction is inverted and is corrected here. The notes label this time $t_{\mathrm{MS}}$, but it is the mass-loss time scale, not the main-sequence lifetime. The main-sequence lifetime of an $80\mechanical{M}_\odot$ star is about $\quantity{3\text{–}4}{Myr}$, so the wind removes a large fraction of the mass during this phase. The notes do not explain the value of $t_{\mathrm{nuc}}$.
 
 An arrow marks a decrease in central temperature.
 
@@ -123,6 +125,8 @@ If central density “wins,” electron degeneracy occurs and central density st
 | --- | --- | --- |
 | $\mechanical{M}>1.5\mechanical{M}_\odot$ | Slow ignition | $\thermal{T}_c\sim10^8\,\unit{K}$ and $\mechanical{\rho}_c<10^6\,\unit{g\,cm^{-3}}$ |
 | $0.4\mechanical{M}_\odot\leq\mechanical{M}\leq1.5\mechanical{M}_\odot$ | Helium flash | $\thermal{T}_c\sim10^8\,\unit{K}$ and $\mechanical{\rho}\sim10^6\,\unit{g\,cm^{-3}}$ |
+
+Current stellar models place the upper mass limit for the helium flash near $2\mechanical{M}_\odot$ (about $1.8$–$2.2\mechanical{M}_\odot$, depending on composition), not at the $1.5\mechanical{M}_\odot$ given in the notes.
 
 The notes describe partially degenerate helium, for which $\mechanical{P}\mechanical{V}\ne N\thermal{k}\thermal{T}$, and mark a temperature runaway.
 
@@ -161,37 +165,29 @@ Kyle Kabasares, *Stellar Astrophysics (Physics 241B, UC Irvine 2019)*.
 | $\mechanical{r}$ | $\unit{cm}$ | Radial distance | The distance from the center of the star. |
 | $\mechanical{M}_\odot$ | $\unit{kg}$ | Solar mass | The mass of the Sun. |
 | $\mechanical{\rho}$ | $\unit{g\,cm^{-3}}$ | Mass density | The mass per unit volume at the given radius. |
-| $\mechanical{V}$ | $\unit{cm^3}$ | Volume | The volume occupied by the shell or patch. |
-| $\mechanical{M}$ | $\unit{g}$ | Mass | The enclosed mass in the expression beside the force sketch. |
+| $\mechanical{V}$ | $\unit{cm^3}$ | Volume | The volume of the gas in the ideal-gas comparison. |
+| $\mechanical{M}$ | $\unit{g}$ | Stellar mass | The total mass of the star. |
 | $\mechanical{P}$ | $\unit{dyn\,cm^{-2}}$ | Pressure | The local force per unit area exerted by the stellar material. |
-| $\mechanical{m}$ | $\unit{g}$ | Mass | The mass acted on by the force. |
-| $\mechanical{M}$ | $\unit{g}$ | Total stellar mass | The upper limit of the integral over the stellar mass. |
-| $\mechanical{R}$ | $\unit{cm}$ | Stellar radius | The radius of the star used in the energy scale. |
+| $\mechanical{R}$ | $\unit{cm}$ | Stellar radius | The radius of the star in the wind-momentum relation. |
 | $\thermal{T}$ | $\unit{K}$ | Temperature | The local thermodynamic temperature. |
-| $t$ | $\unit{s}$ | Time | The independent variable in the virial calculation. |
 | $\energy{L}$ | $\unit{erg\,s^{-1}}$ | Stellar luminosity | The rate of energy loss from the contracting star. |
 | $t_{\mathrm{KH}}$ | $\unit{yr}$ | Kelvin–Helmholtz time scale | The time over which contraction can supply the luminosity. |
 | $n$ | $\unit{cm^{-3}}$ | Particle number density | The number of gas particles per unit volume. |
 | $\thermal{k}$ | $\unit{erg\,K^{-1}}$ | Boltzmann constant | The conversion factor between temperature and energy per particle. |
-| $\mu$ | $\unit{g\,mol^{-1}}$ | Mean molar mass | The mass per mole of gas particles, as used in the density conversion. |
+| $\mu$ | 1 | Mean molecular weight | The mean particle mass in atomic mass units. |
 | $\mechanical{\rho}_c$ | $\unit{g\,cm^{-3}}$ | Central mass density | The density at the center, equal to the density throughout the uniform model. |
 | $Z$ | 1 | Metallicity | The fraction of stellar mass in elements heavier than helium. |
 | $\thermal{T}_c$ | $\unit{K}$ | Central temperature | The temperature corresponding to the central pressure and density. |
-| — | $\unit{yr}$ | Hydrogen-burning time estimate | The time estimate for burning all the hydrogen in the model. |
-| $a$ | $\unit{erg\,cm^{-3}\,K^{-4}}$ | Radiation constant | The constant in the radiation energy density $a\thermal{T}^4$. |
-| $c$ | $\unit{cm\,s^{-1}}$ | Speed of light | The speed of light in the radiative diffusion relation. |
-| $\mechanical{v}$ | $\unit{cm\,s^{-1}}$ | Streaming speed | The speed used in the free-streaming distance integral. |
-| $\tau$ | $\unit{yr}$ | Stellar time scale | The time scale whose fractional change is estimated from the additional loss. |
 | $B-V$ | 1 | Color index | The difference between the blue and visual magnitudes. |
-| — | $\unit{yr}$ | Main-sequence time estimates | The time values written near the upper and lower ends of the main sequence. |
-| — | $\unit{yr}$ | Brown dwarf burning lifetime | The lifetime estimate written next to the deuterium-burning discussion. |
 | $\tau_{\mathrm{nuc}}$ | $\unit{yr}$ | Nuclear time scale | The duration over which nuclear burning can supply the star's energy. |
 | $V$ | 1 | Visual magnitude | The vertical coordinate in the Hertzsprung-gap sketch. |
 | $t_{\mathrm{univ}}$ | $\unit{Gyr}$ | Age of the universe | The cosmological age compared with estimates for globular clusters. |
 | — | $\unit{Gyr}$ | Stellar and cluster ages | Age estimates for globular clusters and HD 140283. |
 | $\dot{\mechanical{M}}$ | $\unit{kg\,s^{-1}}$ | Mass-loss rate | The rate at which the star loses mass, expressed as a positive magnitude. |
 | $\mechanical{v}_\infty$ | $\unit{cm\,s^{-1}}$ | Terminal wind speed | The speed that the wind approaches far from the star. |
-| $t_{\mathrm{MS}}$ | $\unit{yr}$ | Main-sequence time estimate | The time label used for the mass-loss estimate on this page. |
+| $\tau_{\dot{\mechanical{M}}}$ | $\unit{yr}$ | Mass-loss time scale | The stellar mass divided by the mass-loss rate. |
+| $\alpha_{\mathrm{eff}}$ | 1 | Effective line-force exponent | The exponent that sets the luminosity dependence of the modified wind momentum. |
+| $t_{\mathrm{nuc}}$ | $\unit{yr}$ | Nuclear time estimate | The time value that the notes give for the $80\mechanical{M}_\odot$ star. |
 | $\thermal{T}_\oplus$, $\thermal{T}_{\mathrm{Earth,now}}$, $\thermal{T}_{\mathrm{Earth,future}}$ | $\unit{K}$ | Earth temperature | The present and estimated future temperatures in the red giant example. |
 | $\energy{L}_{\odot,f}$, $\energy{L}_{\odot,n}$ | $\unit{W}$ | Future and present solar luminosity | The two luminosities used in the temperature ratio. |
 | $\Delta\mechanical{x}$ | $\unit{m}$ | Position uncertainty | The spatial uncertainty of an electron in the degeneracy argument. |
@@ -199,20 +195,3 @@ Kyle Kabasares, *Stellar Astrophysics (Physics 241B, UC Irvine 2019)*.
 | $\hbar$ | $\unit{J\,s}$ | Reduced Planck constant | The quantum of action in the uncertainty relation. |
 | $N$ | 1 | Particle count | The number of particles in the gas volume. |
 | $\mechanical{m}/\mechanical{M}$ | 1 | Fractional mass coordinate | The enclosed mass as a fraction of the total stellar mass. |
-| $f$ | — | Electron distribution | The distribution sketched against electron energy, with no stated normalization. |
-| $Z$ | 1 | Proton number | The number of protons in the nucleus in the neutron-drip diagram. |
-| $N$ | 1 | Neutron number | The number of neutrons in the nucleus in the neutron-drip diagram. |
-| $\tau$ | $\unit{s}$ | Total lifetime | The reciprocal of the sum of the channel rates. |
-| $\mechanical{R}$ | $\unit{m}$ | Nuclear radius scale | The length scale given with the nuclear density. |
-| $\mechanical{v}$ | $\unit{cm\,s^{-1}}$ | Projectile speed | The speed entering the incident flux and rate. |
-| $\mechanical{m}$ | $\unit{kg}$ | Reduced mass | The reduced mass of the projectile–target pair. |
-| $\mu$ | 1 | Reduced mass in atomic mass units | The numerical mass in the cross-section conversion to barns. |
-| $s$ | $\unit{m}$ | Impact parameter | The transverse offset of the incoming trajectory from the target. |
-| $\mechanical{p}$ | $\unit{kg\,m\,s^{-1}}$ | Relative momentum | The momentum used with the impact parameter to obtain the angular momentum. |
-| $a$ | $\unit{m}$ | Confinement length | The characteristic electron spacing estimated from position uncertainty. |
-| $K$ | $\unit{dyn\,cm^3\,g^{-5/3}}$ | Polytropic constant | The coefficient of the density power law for the nonrelativistic gas. |
-| $\mu$, $\mu_0$, $\mu_e$ | 1 | Mass per particle, nucleus, or electron in atomic mass units | The numerical mass factors in the three equivalent density expressions. |
-| $n$ | $\unit{cm^{-3}}$ | Nucleus number density | The nucleus count per volume in the compact-object composition formula. |
-| $\mu$ | $\unit{kg}$ | Particle mass scale | The mass in the speed condition on [[Advanced stellar burning, polytropes, and compact stars#Relativistic stars\|the section on Relativistic stars]]. |
-| $n$ | 1 | Polytropic index | The index that determines the density profile and the equation-of-state exponent. |
-| $a$ | $\unit{m}$ | Polytropic length scale | The factor that converts the normalized coordinate to radius. |

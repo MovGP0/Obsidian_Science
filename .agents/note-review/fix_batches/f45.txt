@@ -1,0 +1,66 @@
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/Internal molecular modes and the ideal quantum gas.md
+- [Correctness] Symbol clashes: $\mu$ is both the reduced mass ${\mechanical{\mu}}$ (diatomic section) and the chemical potential ${\energy{\mu}}$. $V$ is both volume ${\mechanical{V}}$ and the bond potential ${\energy{V}}(r)$. $n$ is the vibrational quantum number, the number density, and (in the table) amount of substance. $P$ is both ${\mechanical{P}}_{\mathrm{cm}}$ and pressure. Rename them, for example $m_r$, $U(r)$, $v$ and $\mathbf p_{\mathrm{cm}}$.
+- [Correctness] The quantity table has entries that are wrong for this note: $\mechanical{M}$ "Stellar mass" (here molecular mass, listed twice), $n$ in $\unit{mol}$, $\Omega$ "Multiplicity" (here ${\energy{\Omega}}$ is the grand potential), $g$ "Landé factor" (here internal degeneracy), and $\theta,\phi$ orientation angles and $P_{\mathrm{int}},P_{\mathrm{ext}}$, which never appear. Remove or correct these rows.
+
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.06.03 Thermal Conductivity and the Lorenz Number.md
+- [Correctness] The heat-capacity label is written ${\thermal{c}}_V^{({\electric{e}})}$, which colours the label "electronic" as the elementary charge. Use the plain label $(e)$, as in [[07.04.01 Derivation of the Linear Contribution]].
+
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.07.03 Ultrarelativistic Regime and the Chandrasekhar Mass.md
+- [Correctness] Symbol clash: ${\mechanical{A}}'$ (the energy coefficient) uses the same coloured letter as the mass number ${\mechanical{A}}$ in $\mu_e=A/Z$ in the same note. In 07.07.02 the coefficient is the uncoloured helper $A$. Use an uncoloured helper such as $a'$ (and $b$), or rename the mass number.
+
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/Degenerate Fermi gases and the Sommerfeld expansion.md
+- [Correctness] $x$ is used for two quantities: the integration variable $x=\beta(\epsilon-\mu)$ in "Fermi gas at nonzero temperature" and $x=k_BT/E_F$ from the chemical-potential result onward. Rename the second, for example $t=k_BT/E_F$.
+- [Correctness] The quantity table lists rows that are wrong or unused here: $n$ in $\unit{mol}$ (here $n$ is only number density), $g$ "Landé factor" (here spin degeneracy), $\Omega$ "Multiplicity", $z$ fugacity, and $P_{\mathrm{int}},P_{\mathrm{ext}}$. Remove or correct them.
+- [Correctness] Room-temperature thermal energy is given as $0.024\,\mathrm{eV}$ in "Sommerfeld expansion" and as $0.026\,\mathrm{eV}$ in "Metals". At 300 K, $k_BT=0.0259\,\mathrm{eV}$; mark the first as the notebook's rounding or correct it.
+
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/08.03.01 Internal Energy.md
+- [Correctness] Symbol clash: ${\mechanical{n}}$ is the mean occupation $\langle n(\varepsilon)\rangle$ in the first equation and the number density in $n\lambda^3=g_{3/2}(z)$ under "Normal phase"; rename the occupation (e.g. $\bar n(\varepsilon)$ or $f(\varepsilon)$), and fix the table row, which lists ${\mechanical{n}}_\alpha$, a symbol the note never uses.
+
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/Bose condensation, photon gases, and phonons.md
+- [Correctness] The physical-quantities table lists meanings and symbols the note does not use or uses differently: $g$ as "Landé factor" (here it is only the internal degeneracy), $j$ as "Internal partition function" (here $j$ is the summation index in $\zeta(s)$), $n$ as "Amount of substance" and "Number density" (here $n(\epsilon)$ is the occupation number, which is missing), $\Omega$ as "Multiplicity" (here ${\energy{\Omega}}$ is the grand potential), and $\energy{F}$, $\mechanical{P}_{\mathrm{int}}$, $\mechanical{P}_{\mathrm{ext}}$, $\signal{\nu}$ are never used; rebuild the table from the symbols actually present.
+- [Correctness] Under "Critical temperature of the Bose gas", London's proposal linking helium to Bose condensation dates from 1938, not 1928, and the lambda point is $2.17\,\mathrm{K}$; keep the transcribed "1928" and "2.19 K" only with a clarification callout (the same 2.19 K appears in the heat-capacity section).
+- [Correctness] Fig. 15 caption says the maximum of $x^3/(e^x-1)$ lies "near $x=2.822$"; the root of $3(1-e^{-x})=x$ is $2.8214$, so write $x\approx2.821$ as in 08.04.04.
+
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.02.03 van der Waals Equation.md
+- [Correctness] Table 9.1 lists the critical pressure of helium as $2.27\,\mathrm{atm}$; the measured value is $0.2275\,\mathrm{MPa}\approx2.24\,\mathrm{atm}$ (2.27 is the value in bar).
+
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/10 Phase Transitions/10.04.01 Triple Point and Critical Point.md
+- [Correctness] $P_t=611.73\,\text{Pa}$ is an older value; the current IAPWS value for the triple point of water is $P_t=611.657\,\text{Pa}$ (with $T_t=273.16$ K).
+
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/10 Phase Transitions/10.06.04 Specific Heat near the Lambda Transition.md
+- [Correctness] Fig. 10.4 puts the $T>T_\lambda$ branch above the $T<T_\lambda$ branch at equal $|t|$ ($A_->A_+$ in $C=C_c-A_\pm|t|^{0.013}$). For helium-4 the measured heat capacity is larger below $T_\lambda$ (Lipa et al.: $A^+/A^-\approx1.05$ in $C=B+(A^\pm/\alpha)|t|^{-\alpha}$, with $\alpha<0$). Swap the amplitudes so the figure shows the lambda shape.
+
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/10 Phase Transitions/10.07.02 Scaling Relations.md
+- [Correctness] "Fisher relation (1969)": Fisher derived $\gamma=\nu(2-\eta)$ in 1964 (J. Math. Phys. 5, 944); correct the year.
+
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/10 Phase Transitions/10.07.03 Universality and Universality Classes.md
+- [Correctness] The Heisenberg row ($\alpha=-0.122$, $\nu=0.707$) uses old estimates; current values are $\nu\approx0.711$, $\alpha\approx-0.134$, $\beta\approx0.369$, $\gamma\approx1.396$, $\delta\approx4.78$, $\eta\approx0.038$. For 3D XY, theory gives $\alpha\approx-0.015$ and $\delta\approx4.78$ (the $-0.013$ is the helium-4 experimental value). Update the rows or mark them as dated.
+
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/10 Phase Transitions/99 Exercises/10.01 Water Phase Diagram.md
+- [Correctness] $P_t=611.73\,\text{Pa}$ is outdated; the current IAPWS value is $611.657\,\text{Pa}$ (the rounded $\approx6.12$ mbar is unchanged).
+
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/11 Ising Model/11.03.04 Critical Mean-Field Exponents.md
+- [Correctness] Symbol clash: the exponent table writes $\beta=1/2$ (uncoloured) while the same note uses $\thermal{\beta}$ for inverse temperature in (11.7); use $\beta_{\mathrm c}$ as in [[11.03.02 Analysis of the Self-Consistency Equation]] or add the disambiguation sentence used in [[11.04.03 Exact Critical Exponents in Two Dimensions]].
+
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/11 Ising Model/11.04.04 Spontaneous Magnetization - Yang's Result.md
+- [Correctness] Fig. 11.5 caption says "Spontaneous magnetization versus reduced temperature", but the horizontal axis is $T/T_c$, not the reduced temperature $t=(T-T_c)/T_c$ defined in the chapter; change the caption to "versus $T/T_c$".
+
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/11 Ising Model/11.07 Worked Examples.md
+- [Correctness] Symbol clash: Example 11.3 uses $\magnetic{m}_0=0.5$ for the starting iterate, while Example 11.4 (and [[11.04.04 Spontaneous Magnetization - Yang's Result]]) uses $\magnetic{m}_0$ for the spontaneous magnetization; rename the iterates to $m^{(0)},m^{(1)},\dots$.
+
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/11 Ising Model/99 Exercises/11.04 Mean-Field Susceptibility above and below the Critical Temperature.md
+- [Correctness] The physical-quantities table lists $\magnetic{m}_0$ and $\magnetic{m}_{\mathrm s}$, which the note never uses; reduce the row to $\magnetic{m}$.
+
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/11 Ising Model/Ising mean field and transfer-matrix calculations.md
+- [Correctness] "Mean-field approximation": with $\energy{H}=-\energy{J}\sum_{\langle ij\rangle}\sigma_i\sigma_j$ (each pair once) the mean-field equation is $\bar\sigma=\tanh[\thermal{\beta}(q\energy{J}\bar\sigma+\energy{h})]$, so $\thermal{k}_{\mathrm B}\thermal{T}_{\mathrm c}=q\energy{J}$, not $q\energy{J}/2$; the factor $1/2$ belongs only in $\energy{U}=-Nq\energy{J}\bar\sigma^2/2$. Consequently the heat-capacity jump is $\tfrac32N\thermal{k}_{\mathrm B}$ (not $3N\thermal{k}_{\mathrm B}$) and the susceptibility prefactor is $N\magnetic{\mu}^2/(\energy{J}q)$ (not $2N\magnetic{\mu}^2/(\energy{J}q)$); fix these or state explicitly that the notebook's convention double-counts pairs.
+- [Correctness] Physical-quantities table lists symbols the note never uses or uses differently: Planck's constant as $\energy{h}$ (clashes with the Ising field parameter; only $\energy{\hbar}$ appears), Landé $g$, internal partition function $j$, internal degeneracy $g$ (clashes with density of states $g(\energy{E})$), $\energy{F}$; and $\thermal{T}_{\mathrm c}$ is described as "onset of macroscopic ground-state occupation". Remove unused rows and fix the description.
+
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/12 Landau Theory and the Renormalization Group/12.05.01 Parameter Space and RG Flow.md
+- [Correctness] In Fig. 12.5 the "Disordered phase" label sits at (1.1, 4.35), which lies above the dashed critical manifold $K_1+K_2=4$, i.e. on the ordered side; move it below the line (for example near (0.9, 1.9) next to the grey arrows flowing to $P_\infty$) so the label matches the flow region it names.
+
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/13 Exercise Solutions/13.01 Chapter 3 - Microcanonical Ensemble.md
+- [Correctness] Symbol clash: $\mu$ denotes both the chemical potential ($\energy{\mu}$, Ex. 3.2) and the magnetic moment ($\magnetic{\mu}$, Ex. 3.4-3.5), distinguished only by colour; likewise $n$ is number density, the ball dimension ("Equation (3.1) with dimension $n=N$") and part of $n_\pm$; rename the magnetic moment (e.g. $\mu_{\mathrm m}$) and drop "$n=N$".
+
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/13 Exercise Solutions/13.02 Chapter 4 - Canonical Ensemble.md
+- [Correctness] Symbol clash in Ex. 4.4: $\mechanical{p}$ is pressure while $\mechanical{\mathbf p}$ and $\mechanical{p}_i$ are momenta in the same exercise (and the quantity table lists both); use $P$ for pressure as in 13.01. Also $\sigma$ is used for the symmetry number, $\sigma_E$ for the energy spread and $\sigma_{\mathrm{liq}}$ for surface tension; rename the symmetry number (e.g. $\sigma_{\mathrm{sym}}$).
+

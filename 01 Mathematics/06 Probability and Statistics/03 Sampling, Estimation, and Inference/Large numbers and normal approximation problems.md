@@ -291,13 +291,13 @@ Scatter plots visualize bivariate, or two-dimensional, data.
 
 The sample mean is $\bar X_n=(X_1+\cdots+X_n)/n$. The capital-letter statistic $\bar X_n$ is a random variable, while $\bar x_n$ is the numerical mean of the observed data. By the law of large numbers, $\bar X_n$ estimates $\mu=E[X_1]$.
 
-The hourly temperature observations in degrees Celsius are
+The hourly temperature observations in degrees Fahrenheit are
 
 $$
 43,\ 43,\ 41,\ 41,\ 41,\ 42,\ 43,\ 58,\ 58,\ 41,\ 41.
 $$
 
-The sample mean is $\thermal{\bar x}_{11}\approx\quantity{44.7}{{}^\circ C}$. The median is the middle observation after sorting, or the average of the two middle observations for an even sample size. The median is more robust to outliers than the mean. The notes ask what defines an outlier.
+The sample mean is $\thermal{\bar x}_{11}\approx\quantity{44.7}{{}^\circ F}$. The median is the middle observation after sorting, or the average of the two middle observations for an even sample size. The median is more robust to outliers than the mean. The notes ask what defines an outlier.
 
 ##### Measures of variability
 
@@ -543,4 +543,4 @@ Kyle Kabasares, *Probability and Statistics (Math 32, UC Merced 2015)*.
 
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
-| $\thermal{\bar x}_{11}$ | $\unit{{}^\circ C}$ | Mean temperature | Sample mean of eleven hourly temperature readings. |
+| $\thermal{\bar x}_{11}$ | $\unit{{}^\circ F}$ | Mean temperature | Sample mean of eleven hourly temperature readings. |

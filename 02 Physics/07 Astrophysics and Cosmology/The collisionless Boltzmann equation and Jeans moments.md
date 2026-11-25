@@ -433,18 +433,15 @@ Kyle Kabasares, *Extragalactic Astrophysics (Physics 241C, UC Irvine 2018)*.
 
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
-| $V$ | $\unit{m^3}$ | Gas volume | Volume used to convert emissivity to luminosity. |
-| $\thermal{T}$ | $\unit{K}$ | Gas temperature | Determines the thermal energy and affects the cooling function. |
-| $\mu$ | $\unit{mag\,arcsec^{-2}}$ | Surface brightness in magnitudes | Logarithmic measure of intensity per angular area with a specified zero point. |
-| $n$ | $1$ | Sérsic index | Shape parameter of the profile, with $n=4$ for the de Vaucouleurs law. |
+| $\thermal{T}$ | $\unit{K}$ | Gas temperature | Temperature of the gas or of the equivalent collisional isothermal system. |
 | $\mechanical{r}$ | $\unit{m}$ | Spherical radius | Three-dimensional distance from the center. |
 | $\mechanical{M}(<\mechanical{r})$ | $\unit{kg}$ | Enclosed gravitating mass | Total mass within spherical radius $\mechanical{r}$. |
 | $\mechanical{\Phi}$ | $\unit{m^2\,s^{-2}}$ | Gravitational potential | Gravitational potential energy per unit mass. |
 | $\mechanical{\rho}(\mechanical{r})$ | $\unit{kg\,m^{-3}}$ | Mass density profile | Local gravitating mass per unit volume at spherical radius $\mechanical{r}$. |
-| $q$, $\epsilon$, $e$ | $1$ | Axis ratio, ellipticity, and eccentricity | Three measures of apparent ellipse shape. |
-| $\mechanical{\rho}_0$ | $\unit{kg\,m^{-3}}$ | Density normalization | Multiplicative scale in the approximate deprojection. |
-| $p$ | $1$ | Inner deprojection slope | Exponent of the prefactor in the approximate spatial density. |
+| $\mechanical{\rho}_0$ | $\unit{kg\,m^{-3}}$ | Central density | Density scale of the isothermal sphere, equal to the density at the center. |
 | $N$ | $1$ | Number of stars | Total stellar population of the model galaxy. |
+| $\mechanical{m}$ | $\unit{kg}$ | Particle mass | Mass of one star or dark-matter particle. |
+| $\mechanical{M}$ | $\unit{kg}$ | Total mass | Total mass of the system, $\mechanical{M}=N\mechanical{m}$. |
 | $n$ | $\unit{m^{-3}}$ | Stellar number density | Number of stars per unit volume. |
 | $f(\mechanical{\vec x},\mechanical{\vec v},\mechanical{t})$ | $\unit{s^3\,m^{-6}}$ | Phase-space distribution function | Probability density with respect to the product of position volume and velocity volume. |
 | $\nu(\mechanical{\vec x},\mechanical{t})$ | $\unit{m^{-3}}$ | Spatial probability density | Velocity integral of the normalized phase-space distribution. |
@@ -465,7 +462,6 @@ Kyle Kabasares, *Extragalactic Astrophysics (Physics 241C, UC Irvine 2018)*.
 | $\energy{\xi}$ | $\unit{J\,kg^{-1}}$ | Specific binding-energy variable | Energy variable in the exponential of the isothermal distribution. |
 | $\mechanical{\sigma}$ | $\unit{m\,s^{-1}}$ | Isothermal velocity dispersion | Constant one-dimensional velocity dispersion. |
 | $\mechanical{\Psi}$ | $\unit{m^2\,s^{-2}}$ | Relative gravitational potential | Difference between the chosen reference potential and the ordinary potential. |
+| $\mechanical{\Phi}_0$ | $\unit{m^2\,s^{-2}}$ | Reference potential | Constant potential that defines the relative potential and the energy variable. |
+| $\energy{E}$ | $\unit{J\,kg^{-1}}$ | Specific energy | Total energy per unit mass of a star. |
 | $\mechanical{r}_0$ | $\unit{m}$ | King radius | Length scale set by the velocity dispersion and central density of the nonsingular isothermal sphere. |
-| $\delta$ | $1$ | Global velocity anisotropy | One minus the ratio of integrated vertical to equatorial random-motion stress. |
-| $a$, $b$ | $1$ | Fundamental-plane coefficients | Logarithmic slopes with respect to velocity dispersion and effective intensity. |
-| $\beta$ | $1$ | Isothermal beta-model exponent | Ratio of the stellar velocity variance to the gas thermal energy per unit mass in this section. |

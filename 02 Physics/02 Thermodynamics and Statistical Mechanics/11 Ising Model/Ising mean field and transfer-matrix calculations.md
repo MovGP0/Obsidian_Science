@@ -78,7 +78,7 @@ $$
 
 Here $\langle ij\rangle$ runs over neighboring pairs. Replace neighboring spins by their mean $\bar{\sigma}$. The lattice sketch shows four nearest neighbors around one spin on a square lattice. The coordination number $q$ is the number of neighbors, and the approximation works best when $q$ is large.
 
-The notebook uses the effective coupling $\energy{J}q/2$ in its mean-field equation, so that $\thermal{T}_{\mathrm c}=\energy{J}q/(2\thermal{k}_{\mathrm B})$. At zero applied field, the ordered phase below $\thermal{T}_{\mathrm c}$ has $\bar{\sigma}\ne0$. The disordered phase above $\thermal{T}_{\mathrm c}$ has $\bar{\sigma}=0$. In the positive branch near the transition,
+Each spin has $q$ neighbors, and each pair occurs once in the sum. The mean field on one spin is therefore $q\energy{J}\bar{\sigma}+\energy{h}$, so $\bar{\sigma}=\tanh[\thermal{\beta}(q\energy{J}\bar{\sigma}+\energy{h})]$ and $\thermal{T}_{\mathrm c}=\energy{J}q/\thermal{k}_{\mathrm B}$. The notebook uses the effective coupling $\energy{J}q/2$ and writes $\thermal{T}_{\mathrm c}=\energy{J}q/(2\thermal{k}_{\mathrm B})$; the factor $1/2$ belongs only in the internal energy below. At zero applied field, the ordered phase below $\thermal{T}_{\mathrm c}$ has $\bar{\sigma}\ne0$. The disordered phase above $\thermal{T}_{\mathrm c}$ has $\bar{\sigma}=0$. In the positive branch near the transition,
 
 $$
 \bar{\sigma}\sim\sqrt{3}\left(1-\frac{\thermal{T}}{\thermal{T}_{\mathrm c}}\right)^{1/2}.
@@ -94,7 +94,7 @@ $$
 \energy{U}(\thermal{T})=-N\frac{\energy{J}q}{2}\bar{\sigma}^{\,2}.
 $$
 
-The heat capacity is $\thermal{C}_V=(\partial\energy{U}/\partial\thermal{T})_{\mechanical{V},N}$. With the critical temperature and near-critical spin on [[#Mean-field approximation to the Ising model|the section on Mean-field approximation to the Ising model]], the ordered-side limit is $3N\thermal{k}_{\mathrm B}$. The mean-field energy is zero above $\thermal{T}_{\mathrm c}$, so the heat capacity drops to zero there.
+The heat capacity is $\thermal{C}_V=(\partial\energy{U}/\partial\thermal{T})_{\mechanical{V},N}$. With the critical temperature and near-critical spin on [[#Mean-field approximation to the Ising model|the section on Mean-field approximation to the Ising model]], the ordered-side limit is $\tfrac32N\thermal{k}_{\mathrm B}$. The mean-field energy is zero above $\thermal{T}_{\mathrm c}$, so the heat capacity drops to zero there.
 
 ![[Kyle Kabasares - Thermodynamics and Statistical Mechanics - Ising heat capacity.png|**Fig. 17** Mean-field heat capacity with a jump at the transition.]]
 
@@ -107,7 +107,7 @@ $$
 \magnetic{\chi}(\thermal{T})
 &=\frac{\partial\magnetic{M}}{\partial\magnetic{H}}
 =N\magnetic{\mu}\frac{\partial\bar{\sigma}}{\partial\magnetic{H}}\\
-&=\frac{2N\magnetic{\mu}^{\,2}}{\energy{J}q}
+&=\frac{N\magnetic{\mu}^{\,2}}{\energy{J}q}
 \frac{\thermal{T}_{\mathrm c}/\thermal{T}}
 {\cosh^2(\bar{\sigma}\thermal{T}_{\mathrm c}/\thermal{T})-\thermal{T}_{\mathrm c}/\thermal{T}}.
 \end{aligned}
@@ -237,21 +237,17 @@ Kyle Kabasares, *Thermodynamics and Statistical Mechanics (Chem 232A - Physics 2
 | $\energy{E}$ | $\unit{J}$ | Energy | Microscopic energy that enters the Boltzmann weight. |
 | $\thermal{\beta}$ | $\unit{J^{-1}}$ | Inverse thermal energy | Reciprocal of Boltzmann's constant times the absolute temperature. |
 | $\mechanical{q}_i$, $\mechanical{p}_i$ | — | Generalized coordinates and momenta | Conjugate variables that specify a phase-space point. Their units depend on the coordinates. |
-| $\energy{F}$, $\energy{A}$ | $\unit{J}$ | Helmholtz free energy | Canonical thermodynamic potential obtained from the partition function. |
+| $\energy{A}$ | $\unit{J}$ | Helmholtz free energy | Canonical thermodynamic potential obtained from the partition function. |
 | $Z$ | 1 | Partition function | Sum of the Boltzmann weights of the accessible states. |
 | $\Omega$ | 1 | Multiplicity | Number of accessible microstates, including the cumulative count in the ideal-gas calculation. |
-| $\energy{h}$ | $\unit{J\,s}$ | Planck constant | Relates photon energy to frequency. |
 | $g(\energy{E})$ | $\unit{J^{-1}}$ | Density of states | Number of states per unit energy in the continuum approximation. |
 | $\magnetic{\mu}$, $\magnetic{\vec\mu}$ | $\unit{J\,T^{-1}}$ | Magnetic dipole moment | Moment of an individual spin. |
 | $\magnetic{H}$, $\magnetic{\vec H}$ | $\unit{T}$ in this convention | Applied magnetic field | Field entering the dipole energy in the notebook's notation. |
 | $\magnetic{M}$, $\magnetic{M}_z$ | $\unit{J\,T^{-1}}$ | Total moment along the field | Sum of the mean field-aligned moment components. |
 | $\magnetic{\chi}$ | $\unit{J\,T^{-2}}$ in this convention | Magnetic susceptibility | Response of the total moment to a change in the applied field. |
-| $g$ | 1 | Landé factor | Proportionality factor relating angular momentum and magnetic moment. |
-| $j$ | 1 | Internal partition function | Sum over molecular states other than translation. |
-| $g$ | 1 | Internal degeneracy | Number of internal states per momentum state. |
-| $\thermal{T}_{\mathrm c}$ | $\unit{K}$ | Critical temperature | Onset of macroscopic ground-state occupation or magnetic ordering, according to the model. |
+| $\thermal{T}_{\mathrm c}$ | $\unit{K}$ | Critical temperature | Temperature below which the Ising spins order spontaneously. |
 | $\energy{J}$ | $\unit{J}$ | Ising coupling | Energy coefficient of the neighboring-spin interaction. |
-| $\energy{h}$ | $\unit{J}$ | Ising field parameter | Energy coefficient of the single-spin term. The same letter denotes Planck's constant in earlier sections. |
+| $\energy{h}$ | $\unit{J}$ | Ising field parameter | Energy coefficient of the single-spin term. |
 | $\sigma_i$, $\bar{\sigma}$ | $1$ | Ising spin and mean spin | Individual orientation and its average in the mean-field approximation. |
 | $q$ | $1$ | Coordination number | Number of neighboring lattice sites. |
 | $\energy{f}$ | $\unit{J}$ | Free energy per site | Thermodynamic-limit free energy of the Ising chain divided by the site count. |

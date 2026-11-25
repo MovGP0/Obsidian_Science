@@ -349,11 +349,3 @@ $$
 ## Source
 
 Kyle Kabasares, *Calculus II - Integral Calculus (Math 22, UC Merced 2013)*.
-
-## Physical quantities
-
-| Symbol | Unit | Quantity | Description |
-| --- | --- | --- | --- |
-| — | $\unit{lbf/ft}$ | Cable weight per unit length | Weight of one foot of cable. |
-| — | $\unit{lbf}$ | Coal weight | Constant load carried by the cable. |
-| — | $\unit{kg/m}$ | Water loss per unit lift | The decrease in water mass per meter of bucket travel. |

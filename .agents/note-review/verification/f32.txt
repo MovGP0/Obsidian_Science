@@ -1,0 +1,49 @@
+=== 02 Physics/05 Relativity and Gravitation/02 General Relativity/General Relativity (MIT 8.962 self-study).md
+- FIXED | Theta should be (1/3)(H - Laplacian lambda); 8 pi T missing G | Changed 1/2 to 1/3 (checked against Newtonian limit: H=-6 phi_N gives Laplacian Theta=-8 pi G rho) and wrote 8 pi G T_alpha beta.
+- FIXED | F^{mu nu} matrix has wrong sign; 10^-13 EP precision outdated; neutron-star T_F 10^13 K too high | Flipped first row and column so F^{0i}=+q x^i/r^3=E^i and updated the remark; added MICROSCOPE 2022 value of about 10^-15; gave T_F about 10^11 to 10^12 K and kept the notes' 10^13 K in parentheses.
+- PARTLY | Overloaded symbols and missing table rows | Added table rows for G, M, Q, Riemann tensor, Einstein tensor, T_alpha beta, h, h-bar, I_ij, V_eff; perfect-fluid rho is explicitly called the rest-frame density (not silent); renaming Lambda, H, rho_0, a, R across a 3700-line multi-lecture note is a large rewrite and was not done (the table already keeps separate rows for different meanings of a).
+=== 02 Physics/05 Relativity and Gravitation/02 General Relativity/Schwarzschild Metric.md
+- PARTLY | Natural units c=1 inconsistent with G and r_s=2GM/c^2 | Units with c=1 and explicit G is a valid convention; reworded to say G stays explicit and gave r_s=2GM/c^2 in SI and r_s=2GM with c=1.
+- FIXED | r is not the radial distance | Described r as the areal radius (sphere area 4 pi r^2) and noted that the proper radial distance is larger.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/02 Geodesic congruences/2.1 Energy conditions.md
+- FIXED | WEC row rho+p_i>0 should be >=0 | Changed to rho+p_i>=0 (book typo; Lambda vacuum has rho+p=0); also converted note to LF without BOM.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/02 Geodesic congruences/2.1.2 Weak energy condition.md
+- FIXED | Strict inequality argument wrong; Eq. 2.7 should be >=0 | Replaced argument with the limit a^2 to 1 giving rho+p_1>=0 and changed Eq. 2.7 to rho+p_i>=0.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/02 Geodesic congruences/2.1.6 Violations of the energy conditions.md
+- FIXED | ANEC status outdated | Added a dated note callout on the flat-spacetime ANEC proofs (Faulkner et al. 2016; Hartman et al. 2017) and kept the book text.
+- FIXED | hbar coloured as energy | Removed the energy macro from hbar in the equation and table (action has no macro group).
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/02 Geodesic congruences/2.2.1 Two-dimensional medium.md
+- FIXED | Table lists unused B_ab, r_1, phi' | Removed B_ab, r_1 and phi' from the table rows.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/02 Geodesic congruences/2.2.2 Expansion.md
+- FIXED | Table lists unused B_ab, phi' | Removed B_ab and phi' from the table rows.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/02 Geodesic congruences/2.2.3 Shear.md
+- FIXED | Table lists unused B_ab, sigma_ab, phi' | Removed B_ab, sigma_ab and phi' from the table rows.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/02 Geodesic congruences/2.2.4 Rotation.md
+- FIXED | Table lists unused B_ab, r_1, omega_ab | Removed B_ab, r_1 and omega_ab from the table rows.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/02 Geodesic congruences/2.3.3 Frobenius' theorem.md
+- FIXED | Missing comma in -Phi_[alpha mu_,beta] | Wrote -Phi_{,[alpha} mu_{,beta]}.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/02 Geodesic congruences/2.3.4 Raychaudhuri's equation.md
+- FIXED | Table lists unused theta_0 and u components | Removed theta_0, u^t, u^r, u^theta, u^phi, u_t from the table.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/02 Geodesic congruences/2.3.5 Focusing theorem.md
+- FIXED | Table lists unused u components | Removed u^t, u^r, u^theta, u^phi, u_t from the table.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/02 Geodesic congruences/2.3.6 Example.md
+- FIXED | Table lists unused u components, theta_0, B^{alpha beta} | Removed them (and the also unused u^t) from the table.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/02 Geodesic congruences/2.3.7 Another example.md
+- FIXED | theta is both polar angle and expansion | Renamed the polar angle to vartheta in dOmega^2, u^vartheta and the table.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/02 Geodesic congruences/2.3.8 Interpretation of θ.md
+- FIXED | Eq. 2.21 uses d/dt instead of d/dtau | Wrote d/dtau in Eq. 2.21 and removed t from the table row.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/02 Geodesic congruences/2.4 Congruence of null geodesics.md
+- FIXED | Table lists tilde xi and h' used only later | Removed tilde xi^alpha and h'_alpha beta from the table.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/02 Geodesic congruences/2.4.4 Raychaudhuri's equation.md
+- FIXED | Table lists unused theta_0 and k^out/k^in | Removed theta_0 and the k^out, k^in variants from the table.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/02 Geodesic congruences/2.4.5 Focusing theorem.md
+- FIXED | Table lists unused k^out/k^in | Removed the k^out, k^in variants from the table.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/02 Geodesic congruences/2.4.6 Example.md
+- FIXED | theta is both polar angle and expansion | Renamed the polar angle to vartheta in the geodesic relations, h_alpha beta, B_alpha beta, N_alpha and the table.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/02 Geodesic congruences/2.4.7 Another example.md
+- PARTLY | theta clash; k^out index placement inconsistent | Renamed the sphere angle to vartheta; the k index placement follows the book convention (label on the side opposite the vector index) and was kept.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.10 Slowly rotating shell.md
+- FIXED | Omega frame rate clashes with dOmega^2 | Wrote the angular part explicitly as d theta^2 + sin^2 theta d phi^2 in Eq. 3.71 and the induced metric.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.11.2 Surface stress-energy tensor.md
+- FIXED | gamma_alpha beta clashes with free index gamma | Added an explicit sentence after Eq. 3.94 that the tensor gamma_alpha beta is not related to the index gamma (book notation kept).
+- FIXED | Bare k^beta in 3.98 and 3.99 | Wrapped both k^beta in the mechanical macro.

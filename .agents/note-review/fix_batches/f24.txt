@@ -1,0 +1,58 @@
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/01 Introduction/1.3 Quarks.md
+- [Correctness] Transcription slips: "proposed quarks in 1964 by as a means" (delete "by"), and "may be produced in the semifinal state" should read "final state".
+- [Correctness] Symbol clash: $B$ is baryon number in Table 1.1 and (1.3.6), and $B_1,B_3,B_{\mathrm{exp}}$ are branching ratios. Rename the latter to $\mathrm{BR}_1$ and so on.
+- [Correctness] Dated data: $B_{\mathrm{exp}}=(17.44\pm0.85)\%$ is now $(17.82\pm0.04)\%$, and the measured $\Gamma(\pi^0\to\gamma\gamma)$ is now about $7.80\pm0.12\,\mathrm{eV}$. Add a status note.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/02 Lagrangian Formalism and Conservation Laws/2.1 Hamilton's Principle.md
+- [Correctness] "joining $q_1\equiv q_1(t)$ and $q_2\equiv q_2(t)$" should read $q_1\equiv q(t_1)$ and $q_2\equiv q(t_2)$, the fixed endpoint values.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/02 Lagrangian Formalism and Conservation Laws/2.3 Symmetries and Conservation Laws.md
+- [Correctness] With $\Theta^{\mu\nu}\equiv\frac{\partial\mathcal L}{\partial(\partial_\nu\phi)}\partial^\mu\phi-g^{\mu\nu}\mathcal L$ as in (2.3.8), the result (2.3.7) gives $\partial_\nu\Theta^{\mu\nu}=0$, not $\partial_\mu\Theta^{\mu\nu}=0$ as in (2.3.9). The momentum densities are then $\Theta^{\mu0}$. Swap the indices in (2.3.8) to $\frac{\partial\mathcal L}{\partial(\partial_\mu\phi)}\partial^\nu\phi$ so that (2.3.9) and "$\Theta^{0\nu}$ momentum densities" hold.
+- [Correctness] With $\partial\mathcal L/\partial(\partial_\mu\psi)=\bar\psi i\gamma^\mu$, (2.3.20) gives $\mathbf J^\mu=-\bar\psi\gamma^\mu\frac{\boldsymbol\tau}{2}\psi$, the opposite sign to (2.3.22). Define $\mathbf J^\mu$ with $-\tfrac{i}{2}$ or state that the overall sign is a convention.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/02 Lagrangian Formalism and Conservation Laws/2.P Problems.md
+- [Correctness] Problem 2.5: "$-G_{\mathrm N}\sum_{i\ne j}m_im_j/(\mathbf x_i-\mathbf x_j)^2$" has the wrong power and the wrong sign (repulsive), and it double counts. It should be $L=\tfrac12\sum_i m_i\dot{\mathbf x}_i^2+\tfrac{G_{\mathrm N}}2\sum_{i\ne j}m_im_j/|\mathbf x_i-\mathbf x_j|$.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/03 The Idea of Gauge Invariance/3.4 Significance of Potentials in Quantum Theory.md
+- [Correctness] (3.4.8) writes $S_i=\int_{\text{path }i}d\mathbf x\cdot\mathbf A$ without the charge. It must be $S_i=q\int_{\text{path }i}d\mathbf x\cdot\mathbf A$, consistent with (3.4.3) and (3.4.9).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/03 The Idea of Gauge Invariance/3.5 Phase Invariance in Field Theory.md
+- [Correctness] Second line of (3.5.8): "$iq[\phi^*\partial^\mu\phi-(\partial^\mu\phi)\phi^*]$" is identically zero. It must be $iq[\phi^*\partial^\mu\phi-(\partial^\mu\phi^*)\phi]$, which follows from the first line with $\partial\mathcal L/\partial(\partial_\mu\phi)=\partial^\mu\phi^*$.
+- [Correctness] In (3.5.2), the second Klein–Gordon equation lacks "$=0$": $(\Box+m^2)\phi^*(x)=0$.
+- [Correctness] Symbol clash: (3.5.19) uses $m$ for the photon mass, while $m$ is the scalar or fermion mass in (3.5.1) and (3.5.15). Use $M_\gamma$, as in (3.5.21).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/04 Non-Abelian Gauge Theories/4.2 Construction.md
+- [Correctness] The last term of (4.2.31) should be $-\frac1{ig}G[G^{-1}\partial_\nu G,G^{-1}\partial_\mu G]G^{-1}$ $(=+\frac{i}{g}\ldots)$, and the last term of (4.2.35) should be $+\frac1{ig}G[\ldots]G^{-1}$. Both signs are flipped (checked numerically). The cancellation and the conclusion (4.2.26) are unaffected.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/04 Non-Abelian Gauge Theories/4.3 Some Physical Consequences.md
+- [Correctness] The physical-quantities row for $I,\mathbf I,\mathbf I^{(1)},\mathbf I^{(2)}$ says "in units of reduced Planck constant"; isospin is a dimensionless internal quantum number, not an angular momentum, so drop the $\hbar$ wording.
+- [Correctness] In (4.3.2) the vertex for a nucleon $\alpha$ turning into $\beta$ should strictly carry $(\tau^a)_{\beta\alpha}$ (row = outgoing, column = incoming, from $\bar\psi_\beta\tau^a_{\beta\alpha}\psi_\alpha$); $(\tau^a)_{\alpha\beta}$ differs by a sign for $\tau^2$ (the sum in (4.3.3) is unaffected because $\sum_a\tau^a_{ij}\tau^a_{kl}=2\delta_{il}\delta_{jk}-\delta_{ij}\delta_{kl}$ is real).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/04 Non-Abelian Gauge Theories/4.P Problems.md
+- [Correctness] The physical-quantities row "$I,s,S,L$ ... in units of reduced Planck constant" wrongly includes isospin $I$; isospin is dimensionless and not measured in $\hbar$.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/05 Hidden Symmetries/5.3 Spontaneous Breaking of a Gauge Symmetry.md
+- [Correctness] Eq. (5.3.13) mixes index positions: $\magnetic{A'_\mu}=\magnetic{A_\mu}+\frac1{\electric{q}v}\partial^\mu\zeta$ should read $\magnetic{A'_\mu}=\magnetic{A_\mu}+\frac1{\electric{q}v}\partial_\mu\zeta$ (consistent with (5.3.6) for $\alpha=-\zeta/(\electric{q}v)$).
+- [Correctness] Symbol clash: $\phi'$ means the gauge-transformed field in (5.3.5), (5.3.6) and (5.3.14) but the shifted field $\phi-\langle\phi\rangle_0$ in (5.3.9), and the table lists only "shifted"; rename the shifted field (e.g. $\tilde\phi$) or drop (5.3.9), which is never used afterwards.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/05 Hidden Symmetries/5.4 The Sigma Model.md
+- [Correctness] (5.4.7a,b): decomposing $\boldsymbol\alpha_LP_L+\boldsymbol\alpha_RP_R=\frac12(\boldsymbol\alpha_R+\boldsymbol\alpha_L)+\frac12\gamma_5(\boldsymbol\alpha_R-\boldsymbol\alpha_L)$ requires $\boldsymbol\alpha=\frac12(\boldsymbol\alpha_R+\boldsymbol\alpha_L)$ and $\boldsymbol\alpha_5=\frac12(\boldsymbol\alpha_R-\boldsymbol\alpha_L)$; as written a pure isospin rotation $\boldsymbol\alpha_L=\boldsymbol\alpha_R$ would be counted twice.
+- [Correctness] Second line of (5.4.11): with the note's own projectors (5.4.2)-(5.4.3), $\bar\psi_L\boldsymbol\tau\psi_R-\bar\psi_R\boldsymbol\tau\psi_L=\bar\psi\boldsymbol\tau\gamma_5\psi$, so the pion term is $-ig\boldsymbol\pi\cdot\bar\psi\boldsymbol\tau\gamma_5\psi$, not $+ig\ldots$ (the same sign carries into (5.4.17)); state the convention if the source sign is kept.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/05 Hidden Symmetries/5.P Problems.md
+- [Correctness] Problem 5.2 cites "transformation laws (5.4.6) and (5.4.8)", but in the sigma-model note (5.4.6) is the mass term; the nucleon transformation law is (5.4.5).
+- [Correctness] Problem 5.7(b): since $\electric{e^*}=-2\electric{e}<0$, the formula $\magnetic{\lambda}^{-1}=\electric{e^*}|\langle\psi\rangle_0|/\sqrt{\mechanical{m^*}c^2}$ gives a negative inverse length; use $|\electric{e^*}|$ (and state the unit system, since the free energy is written in natural units while $c$ appears here).
+- [Correctness] Problem 5.4: $\cos\theta_C\approx0.9746$ is dated; the current value is $|V_{ud}|\approx0.9737$ (PDG 2024).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/05 Hidden Symmetries/5.R For Further Reading.md
+- [Correctness] Migdal–Polyakov entry says "included in the Farhi–Suskind reprint collection"; the reprint collection cited earlier in this note is Farhi and Jackiw, *Dynamical Gauge Symmetry Breaking* (also "Int. J. Mod. Phys. 24" should be "Int. J. Mod. Phys. A 24").
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/06 Electroweak Interactions of Leptons/6.1 An Effective Lagrangian for the Weak Interactions.md
+- [Correctness] (6.1.71): the first line "$\mechanical{q_1}\cdot\mechanical{p_1}=\mechanical{m}e$" should be $\mechanical{m}\energy{E}$, and "$\mechanical{p_1}\cdot\mechanical{p_2}=\mechanical{m}\energy{E}$" should be $\mechanical{m}\energy{E'}$ (electron at rest, $p_2^0=E'$).
+- [Correctness] (6.1.41): from (6.1.40), $\mathcal I=-128\operatorname{Re}(C_S^*C_T)(\mechanical{m}\energy{E})^2(1-2y)$ gives $d\sigma_{ST}/dy=-\frac{2\mechanical{m}\energy{E}}{\pi}(1-2y)\operatorname{Re}(C_S^*C_T)$, as Table 6.1 also states; the displayed plus sign is wrong.
+- [Correctness] Item 10 heading reads "V + A interaction: $\bar\nu_e e\rightarrow\nu_e e$"; it should be $\bar\nu_e e\rightarrow\bar\nu_e e$.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/06 Electroweak Interactions of Leptons/6.2 Intermediate Vector Bosons -  A First Look.md
+- [Correctness] (6.2.2) and (6.2.3): the massive-vector propagator numerator is $g_{\mu\nu}-\mechanical{k_\mu}\mechanical{k_\nu}/\mechanical{M_W}^2$, not $g_{\mu\nu}-\mechanical{k_\mu}\mechanical{k_\nu}$ (dimensionally inconsistent as written).
+- [Correctness] (6.2.39): integrating (6.2.38), $d\sigma/d\Omega=32G_F^2\energy{Q}^4\sin^2\theta/(64\pi^2s)$ with $s=4\energy{Q}^2$ gives $\sigma=G_F^2\energy{Q}^2/3\pi=G_F^2s/12\pi$, not $G_F^2s/3\pi$; either $Q$ must be $\sqrt s$ or the factor should be $1/12\pi$ (the growth $\propto s$ and the conclusion are unaffected).
+

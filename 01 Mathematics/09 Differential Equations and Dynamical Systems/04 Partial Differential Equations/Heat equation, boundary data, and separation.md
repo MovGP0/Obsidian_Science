@@ -182,11 +182,11 @@ The notes list four requirements for a heat-flux law.
 Fourier's law of heat conduction satisfies these requirements.
 
 $$
-\thermal{\phi}(x,t)=-\thermal{k}\frac{\partial\thermal{u}}{\partial x},
-\qquad \thermal{k}>0.
+\thermal{\phi}(x,t)=-\thermal{k}_0\frac{\partial\thermal{u}}{\partial x},
+\qquad \thermal{k}_0>0.
 $$
 
-On this page $\thermal{k}$ denotes the material's thermal conductivity, written $\thermal{k}_0$ on [[#The heat equation|the section on The heat equation]]. The negative sign makes the flux point in the direction of decreasing temperature.
+Here $\thermal{k}_0$ is the material's thermal conductivity, as on [[#The heat equation|the section on The heat equation]]. The negative sign makes the flux point in the direction of decreasing temperature.
 
 If $\thermal{\phi}(x,t)<0$, heat flows to the left. Substituting Fourier's law into conservation of thermal energy gives
 
@@ -220,7 +220,7 @@ For ends held at the reference temperature, the notes prescribe $\thermal{u}(0,t
 
 ##### Newton's law of cooling and the initial condition
 
-The notes refer to [[#The spatial eigenvalue problem|the section on The spatial eigenvalue problem]] for Newton's law of cooling. At the left endpoint the Robin condition is
+Newton's law of cooling gives a Robin condition. At the left endpoint the Robin condition is
 
 $$
 -\thermal{k}_0(0)\frac{\partial\thermal{u}}{\partial x}(0,t)
@@ -269,7 +269,7 @@ $$
 
 **)**
 
-Set $\partial\thermal{u}/\partial t=0$ in the constant-coefficient heat equation $\partial\thermal{u}/\partial t=\thermal{k}\partial^2\thermal{u}/\partial x^2+\thermal{Q}(x)/(\thermal{c}\mechanical{\rho})$. Setting the coefficients to one for simplicity gives $-\thermal{u}''=\thermal{Q}(x)$ under the source convention on [[#Newton's law of cooling and the initial condition|the section on Newton's law of cooling and the initial condition]]. The abbreviated equation in the handwriting drops the minus sign.
+Set $\partial\thermal{u}/\partial t=0$ in the constant-coefficient heat equation $\partial\thermal{u}/\partial t=\thermal{k}\partial^2\thermal{u}/\partial x^2+\thermal{Q}(x)/(\thermal{c}\mechanical{\rho})$. Setting the coefficients to one for simplicity gives $-\thermal{u}''=\thermal{Q}(x)$ under the source convention on [[#Steady-state heat equation|the section on Steady-state heat equation]]. The abbreviated equation in the handwriting drops the minus sign.
 
 ##### Separation of variables
 
@@ -280,7 +280,7 @@ $$
 \frac{\partial\thermal{u}}{\partial t}
 &=\thermal{k}\frac{\partial^2\thermal{u}}{\partial x^2}+f(x,t),
 &&0<x<L,\quad t>0,\\
-\thermal{u}(x,0)&=\thermal{\phi}(x),\\
+\thermal{u}(x,0)&=\thermal{\psi}(x),\\
 \thermal{u}(0,t)&=\thermal{T}_1(t),&
 \thermal{u}(L,t)&=\thermal{T}_2(t),\qquad t>0.
 \end{aligned}
@@ -326,7 +326,7 @@ $$
 \frac{\partial\thermal{u}}{\partial t}
 &=\thermal{k}\frac{\partial^2\thermal{u}}{\partial x^2},
 &&0<x<L,\quad t>0,\\
-\thermal{u}(x,0)&=\thermal{\phi}(x),
+\thermal{u}(x,0)&=\thermal{\psi}(x),
 &&0<x<L,\\
 \thermal{u}(0,t)&=\thermal{u}(L,t)=0,
 &&t>0.
@@ -619,13 +619,10 @@ Kyle Kabasares, *Partial Differential Equations (Math 126, UC Merced 2017)*.
 | $\thermal{\phi}$ | $\unit{W/m^2}$ | Heat flux | Rate of heat flow in the positive axial direction per unit area. |
 | $\thermal{H}$ | $\unit{W/(m^2\,K)}$ | Heat transfer coefficient | Proportionality coefficient in Newton's law of cooling. |
 | $\thermal{u}_B$ | $\unit{K}$ | Surrounding temperature | Temperature of the environment in the Robin condition. |
-| $\thermal{\psi}$ | $\unit{K}$ | Initial temperature | Prescribed temperature profile at the initial time. |
-| $\thermal{\phi}(x)$ | $\unit{K}$ | Initial temperature | Initial profile in the separation-of-variables chapter. |
+| $\thermal{\psi}$ | $\unit{K}$ | Initial temperature | Prescribed temperature profile at the initial time, also in the separation-of-variables sections. |
 | $\thermal{f}(x)$ | $\unit{K}$ | Initial temperature | Prescribed temperature distribution in the discussion example. |
 | $\mechanical{v}_0$ | $\unit{m/s}$ | Advection velocity | Constant coefficient of transport in the advection–diffusion example. |
-| $\mechanical{c}$, $\mechanical{v}$ | $\unit{m\,s^{-1}}$ | Wave speed | Constant propagation speed in the scalar or vector wave equation. |
-| $\mechanical{\rho}(x)$, $\mechanical{\rho}_{\min}$, $\mechanical{\rho}_{\max}$ | $\unit{kg\,m^{-1}}$ | Nonuniform string density and its bounds | Mass per unit length and the lower and upper bounds used in the Rayleigh quotient. |
-| $L$, $H$ | $\unit{m}$ | Rectangular membrane dimensions | Length in the $x$ direction and height in the $y$ direction. |
-| $r$, $a$ | $\unit{m}$ | Radial distance and membrane radius | Distance from the center and its value at the fixed rim. |
+| $L$ | $\unit{m}$ | Rod length | Length of the rod on the interval $0<x<L$. |
+| $r$ | $\unit{m}$ | Radial distance | Distance from the center in the radial heat equation of Exercise 2.3.1. |
 | $\thermal{T}_1,\thermal{T}_2$ | $\unit{K}$ | Boundary temperatures | Temperatures prescribed at the left and right endpoints of the rod. |
 | $\thermal{\alpha},\thermal{\beta}$ | $\unit{K}$ | Endpoint temperatures | Constant temperatures at the left and right ends of the rod in the discussion example. |

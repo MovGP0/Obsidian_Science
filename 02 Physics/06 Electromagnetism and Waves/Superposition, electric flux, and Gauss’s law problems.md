@@ -44,19 +44,19 @@ $$
 \electric{E}_x=-\frac{\mathrm{d}\electric{V}}{\mathrm{d}\mechanical{x}}.
 $$
 
-The vector expression on this line is written with positive derivatives.
+In vector form, the force is the negative gradient of the potential energy.
 
 $$
-\mechanical{\vec F}=
-\frac{\partial\energy{U}}{\partial\mechanical{x}}\hat{\imath}
-+\frac{\partial\energy{U}}{\partial\mechanical{y}}\hat{\jmath}
-+\frac{\partial\energy{U}}{\partial\mechanical{z}}\hat{k}.
+\mechanical{\vec F}=-\nabla\energy{U}=
+-\frac{\partial\energy{U}}{\partial\mechanical{x}}\hat{\imath}
+-\frac{\partial\energy{U}}{\partial\mechanical{y}}\hat{\jmath}
+-\frac{\partial\energy{U}}{\partial\mechanical{z}}\hat{k}.
 $$
 
 > [!note]
-> The preceding one-dimensional relation has a minus sign. The corresponding force vector is the negative gradient of the potential energy.
+> The handwritten vector expression omits the minus signs. The one-dimensional relation above shows that they are necessary.
 
-The charge of an electron is $-1.60\times10^{-19}\,\unit{C}$ and the charge of a proton is $+1.60\times10^{-19}\,\unit{C}$. The electron mass is of order $10^{-31}\,\unit{kg}$.
+The charge of an electron is $-1.60\times10^{-19}\,\unit{C}$ and the charge of a proton is $+1.60\times10^{-19}\,\unit{C}$. The electron mass is $9.11\times10^{-31}\,\unit{kg}$.
 
 The two-charge sketch shows $\mechanical{\vec F}_{2,1}$ pointing left from charge $\electric{q}_1$ and $\mechanical{\vec F}_{1,2}$ pointing right from charge $\electric{q}_2$. The vector $\hat r_{1,2}$ points from charge 1 toward charge 2.
 
@@ -514,25 +514,25 @@ The net change in potential around a loop is zero, $\Delta\electric{V}_{\mathrm{
 
 ![[Kyle Kabasares - Electricity and Magnetism - six-resistor bridge sketch.png|**Fig. 3** Source and six-resistor bridge with branch currents and loop directions labeled]]
 
-The handwritten junction relations are
+Let $\electric{I}_4$ flow through $\circuit{R}_4$ from the node between $\circuit{R}_2$ and $\circuit{R}_5$ to the node between $\circuit{R}_3$ and $\circuit{R}_6$. Then the junction relations are
 
 $$
 \electric{I}=\electric{I}_2+\electric{I}_3,\qquad
 \electric{I}_2=\electric{I}_4+\electric{I}_5,\qquad
-\electric{I}_3=\electric{I}_4+\electric{I}_6.
+\electric{I}_3+\electric{I}_4=\electric{I}_6.
 $$
 
-The loop relations are written as
+The loop relations are
 
 $$
 \begin{aligned}
-\electric{V}_0&=\electric{I}\circuit{R}_1-\electric{I}_2\circuit{R}_2-\electric{I}_5\circuit{R}_5=0,\\
+\electric{V}_0-\electric{I}\circuit{R}_1-\electric{I}_2\circuit{R}_2-\electric{I}_5\circuit{R}_5&=0,\\
 0&=\electric{I}_3\circuit{R}_3-\electric{I}_4\circuit{R}_4-\electric{I}_2\circuit{R}_2,\\
 0&=\electric{I}_5\circuit{R}_5-\electric{I}_4\circuit{R}_4-\electric{I}_6\circuit{R}_6.
 \end{aligned}
 $$
 
-The first line appears to have an equals sign where the loop sum would use a minus sign after $\electric{V}_0$. The two junction equations also use $\electric{I}_4$ as an outgoing current at both ends of the same branch.
+The handwritten first loop line has an equals sign where the loop sum uses a minus sign after $\electric{V}_0$. The handwritten third junction relation, $\electric{I}_3=\electric{I}_4+\electric{I}_6$, uses $\electric{I}_4$ as an outgoing current at both ends of the same branch.
 
 ##### Hollow sphere
 
@@ -567,12 +567,14 @@ Kyle Kabasares, *Electricity and Magnetism (Physics 9H, UC Merced 2014)*.
 | $\energy{U}$ | $\unit{J}$ | Electric potential energy | The interaction energy of the two charges. |
 | $\electric{\vec E}$ | $\unit{V\,m^{-1}}$ | Electric field | The electric force per unit test charge. |
 | $\electric{V}$ | $\unit{V}$ | Electric potential | The potential energy per unit test charge. |
-| $\electric{q}$, $\electric{q}_1$, $\electric{q}_2$ | $\unit{C}$ | Electric charge | The test or source charge in the electrostatic relations. |
+| $\electric{q}$, $\electric{q}_1$, $\electric{q}_2$, $\electric{q}_3$ | $\unit{C}$ | Electric charge | The test or source charge in the electrostatic relations and examples. |
+| $\electric{q}_A$, $\electric{q}_B$, $\electric{q}_C$ | $\unit{C}$ | Triangle charges | The charges at the vertices $A$, $B$, and $C$ of the equilateral triangle. |
+| $\electric{Q}_1$, $\electric{Q}_2$ | $\unit{C}$ | Point charges | The charges $-2\electric{e}$ and $+2\electric{e}$ in the force example. |
 | $\mechanical{r}$ | $\unit{m}$ | Radial distance | The distance from a source, axis, or center. |
 | $\mechanical{x}$, $\mechanical{y}$, $\mechanical{z}$ | $\unit{m}$ | Position coordinates | The coordinates in the spatial derivatives. |
 | $\electric{k}$ | $\unit{N\,m^2\,C^{-2}}$ | Coulomb constant | The coefficient in the inverse-square force law. |
 | $\electric{\varepsilon}_0$ | $\unit{F\,m^{-1}}$ | Vacuum permittivity | The constant that sets the strength of the electric interaction in vacuum. |
-| $\mechanical{d}$ | $\unit{m}$ | Separation or diameter | The separation of charges, plates, or slits, or the wire diameter. |
+| $\mechanical{d}$ | $\unit{m}$ | Proton separation | The distance between the two protons. |
 | $\mechanical{m}_p$ | $\unit{kg}$ | Proton mass | The mass in the gravitational force and acceleration estimates. |
 | $\mechanical{a}_{pe}$, $\mechanical{a}_{pg}$ | $\unit{m\,s^{-2}}$ | Proton accelerations | The accelerations due to the electric and gravitational forces. |
 | $\mechanical{\vec F}_{C,\mathrm{net}}$ | $\unit{N}$ | Net force on charge C | The sum of the forces due to charges A and B. |
@@ -580,35 +582,26 @@ Kyle Kabasares, *Electricity and Magnetism (Physics 9H, UC Merced 2014)*.
 | $\mechanical{g}$ | $\unit{m\,s^{-2}}$ | Gravitational acceleration | The acceleration used for weight and gravitational potential energy. |
 | $\electric{e}$ | $\unit{C}$ | Elementary charge | The magnitude of the charge of an electron or proton. |
 | $\mechanical{T}$ | $\unit{N}$ | String tension | The force exerted by the string on each suspended object. |
-| $\electric{Q}$ | $\unit{C}$ | Total charge | The charge distributed along the semicircular arc. |
+| $\electric{Q}$, $\electric{Q}_{\mathrm{tot}}$ | $\unit{C}$ | Total charge | The charge of the semicircular arc, the line, or the sphere. |
 | $\electric{\lambda}$ | $\unit{C\,m^{-1}}$ | Linear charge density | The electric charge per unit length of the arc. |
-| $\theta$, $\mechanical{\theta}$ | $\unit{rad}$ | Angle | A geometric angle used in projections, polarization, and ray diagrams. |
+| $\theta$ | $\unit{rad}$ | Angle | A geometric angle used for field components, flux, and work. |
 | $\mechanical{a}$ | $\unit{m\,s^{-2}}$ | Acceleration | The force per unit mass of the ion or test object. |
 | $\electric{\vec p}$ | $\unit{C\,m}$ | Electric dipole moment | The product of the positive charge magnitude and the displacement from the negative to the positive charge. |
 | $\mechanical{s}$ | $\unit{m}$ | Dipole separation | The distance between the two charges of the dipole. |
-| $\mechanical{L}$ | $\unit{m}$ | Length | The length of a charge distribution or pendulum, or the distance to the screen. |
-| $\mechanical{A}$ | $\unit{m^2}$ | Area | The area over which the surface charge is distributed. |
+| $\mechanical{L}$ | $\unit{m}$ | Length | The length of the line charge, or the edge length of the cube. |
+| $\mechanical{A}$ | $\unit{m^2}$ | Area | The area of a charged surface or of the surface in the flux integral. |
 | $\mechanical{V}$ | $\unit{m^3}$ | Volume | The volume over which the charge is distributed. |
-| $\electric{\eta}$, $\electric{\sigma}$ | $\unit{C\,m^{-2}}$ | Surface charge density | The charge per unit area. |
+| $\electric{\eta}$ | $\unit{C\,m^{-2}}$ | Surface charge density | The charge per unit area. |
 | $\electric{\rho}$ | $\unit{C\,m^{-3}}$ | Volume charge density | The charge per unit volume. |
 | $\electric{\Phi}$, $\electric{\Phi}_{E,\mathrm{net}}$ | $\unit{N\,m^2\,C^{-1}}$ | Electric flux | The surface integral of the normal electric field. |
 | $\mechanical{\vec A}$ | $\unit{m^2}$ | Area vector | A vector normal to the surface with magnitude equal to the area. |
-| $\electric{Q}_{\mathrm{inside}}$ | $\unit{C}$ | Enclosed charge | The net charge within the closed surface. |
+| $\electric{Q}_{\mathrm{inside}}$, $\electric{Q}_{\mathrm{enc}}$ | $\unit{C}$ | Enclosed charge | The net charge within the closed surface. |
+| $\electric{Q}_{\mathrm{inner}}$ | $\unit{C}$ | Inner surface charge | The total charge on the inner surface of the hollow sphere. |
 | $\mechanical{H}$ | $\unit{m}$ | Cylinder height | The axial length in the formula for the curved surface area. |
-| $\mechanical{R}$ | $\unit{m}$ | Radius | The radius of a sphere, disk, wire, or coil, or the radius of curvature of a mirror. |
+| $\mechanical{R}$ | $\unit{m}$ | Sphere radius | The radius of the uniformly charged sphere. |
 | $\energy{W}$ | $\unit{J}$ | Work | The integral of force along the displacement. |
 | $\mechanical{\vec r}$ | $\unit{m}$ | Position vector | Its differential gives the displacement along the work path. |
 | $\electric{I}$, $\electric{I}_2$–$\electric{I}_6$ | $\unit{A}$ | Circuit currents | The current in the feed and each bridge branch. |
 | $\circuit{R}_1$–$\circuit{R}_6$ | $\unit{\Omega}$ | Resistances | The resistances of the six elements in the bridge. |
 | $\electric{V}_0$ | $\unit{V}$ | Source potential difference | The voltage across the source in the bridge sketch. |
-| $\electric{\varepsilon}$ | $\unit{F\,m^{-1}}$ | Permittivity | The electric response parameter of a dielectric or transparent medium. |
-| $N$ | 1 | Turn count | The number of loops contributing to the coil field. |
-| $\electric{q}_C$ | $\unit{C}$ | Capacitor charge | The instantaneous charge on the selected plate. |
-| $\Delta\mechanical{r}$ | $\unit{m}$ | Path length difference | Difference in distance traveled by the two interfering waves. |
-| $\mechanical{s}$, $\mechanical{o}$, $\mechanical{s}_o$ | $\unit{m}$ | Object distance | Signed distance from the lens to the object. |
-| $\mechanical{N}$ | $\unit{N}$ | Normal force | The force exerted by the incline perpendicular to its surface. |
-| $\electric{e}/\mechanical{m}$ | $\unit{C\,kg^{-1}}$ | Electron charge-to-mass ratio | The magnitude of the electron charge divided by its mass. |
-| $N\magnetic{\Phi}_B$ | $\unit{Wb}$ | Magnetic flux linkage | The sum of the fluxes linked by the turns of the solenoid. |
-| $\electric{V}_{\mathrm{in}}$, $\electric{V}_{\mathrm{out}}$ | $\unit{V}$ | Input and output voltages | The applied voltage and the voltage across the filter output. |
-| $\mechanical{D}_i$ | $\unit{m}$ | Wave displacement | Displacement of wave $i$ in the superposition example. |
-| $\mechanical{D}_{0i}$ | $\unit{m}$ | Displacement amplitude | Peak displacement of wave $i$. |
+| $\Delta\mechanical{r}$ | $\unit{m}$ | Displacement | The displacement along the path for a constant force. |

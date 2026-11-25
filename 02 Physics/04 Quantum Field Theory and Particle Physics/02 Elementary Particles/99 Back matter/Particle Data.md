@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Particle Data"
 ---
 
@@ -95,6 +95,9 @@ Mass (speculative).
 | $J/\psi$ | $c\bar c$ | $0$ | $3097$ | $1\times10^{-20}$ | $e^+e^-,\ \mu^+\mu^-,\ 5\pi,\ 7\pi$ |
 | $D^*$ | $c\bar d,\ d\bar c,\ c\bar u,\ u\bar c$ | $+1,-1,0,0$ | $2010$ | $>1\times10^{-22}$ | $D\pi,\ D\gamma$ |
 | $\Upsilon$ | $b\bar b$ | $0$ | $9460$ | $2\times10^{-20}$ | $\tau^+\tau^-,\ \mu^+\mu^-,\ e^+e^-$ |
+
+> [!note]
+> The tables above keep the historical values of the source. Some current PDG values are different: $t$ quark mass about $172{,}600$; $W^\pm$ mass $80{,}370$ and lifetime about $3.2\times10^{-25}\,\unit{s}$; $Z^0$ mass $91{,}188$ and lifetime about $2.6\times10^{-25}\,\unit{s}$ (both lifetimes from the measured widths); $\tau$ mass $1776.9$ and lifetime $2.90\times10^{-13}\,\unit{s}$; neutron lifetime about $878\,\unit{s}$. Neutrino oscillations show that the neutrino masses are not zero, but they are very small (below about $1\,\unit{eV}/\mechanical{c}^2$).
 
 ## Physical quantities
 

@@ -1,0 +1,62 @@
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/10 Weak Interactions/10.5 Charged Weak Interactions of Quarks.md
+- [Correctness] Footnote ep-10-5-rotation states "all neutrinos are massless" as the reason why there is no lepton mixing. Neutrino oscillations show nonzero masses and a lepton mixing (PMNS) matrix, so add a modern note.
+- [Correctness] The KM magnitudes in (10.91) and "only their magnitudes are known" are outdated. Current values: $|V_{ud}|\approx0.974$, $|V_{us}|\approx0.224$, $|V_{ub}|\approx0.0038$, $|V_{cb}|\approx0.041$, $|V_{td}|\approx0.0086$, $|V_{ts}|\approx0.041$. The CP phase is measured ($\gamma\approx66^\circ$), and footnote ep-10-5-generations ("it remains to be seen whether δ is the source of CP violation") should mention the B-factory confirmation.
+- [Correctness] Symbol clash: $c_i=\cos\theta_i$ in (10.90) versus the speed of light $c$ used in the same note. Consider writing $\cos\theta_i$, or say that $c_i$ is unrelated to $c$.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/10 Weak Interactions/10.6 Neutral Weak Interactions.md
+- [Correctness] Table 10.1, electron row: $c_V=-\frac12+2\sin\theta_w$ is missing the square. It must be $-\frac12+2\sin^2\theta_w$, which is consistent with (10.104) and (10.116).
+- [Correctness] Eq. (10.118) is missing a square. On the pole, $\sigma_Z/\sigma_\gamma\cong\frac18(M_Zc^2/\hbar\Gamma_Z)^2$, which gives $\approx166\approx200$ with $\hbar\Gamma_Z=2.5$ GeV as stated in the text; the printed linear form would give only ~4.5.
+- [Correctness] Outdated statements: $M_W=82$ and $M_Z=92\,\mathrm{GeV}/c^2$ (now 80.37 and 91.19); "$m_t>23$ GeV" (now 172.6 GeV); SLC and LEP "presently under construction"; and $\tau_Z$ "not yet accurately measured" ($\hbar\Gamma_Z=2.4952$ GeV, $N_\nu=2.984\pm0.008$). Add brief modern notes.
+- [Correctness] The Fig. 10.6 caption says "The neutrino enters from the left", but the reaction is $\bar\nu_\mu+e^-$; write "antineutrino".
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/10 Weak Interactions/10.7.1 Chiral Fermion States.md
+- [Correctness] The footnote ending "as far as we know right-handed neutrinos do not exist at all" should mention that neutrinos have mass. Their chirality is therefore not exactly helicity, and right-handed (sterile) neutrinos are allowed but unobserved.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/10 Weak Interactions/10.P Problems.md
+- [Correctness] Problem 10.1(a) asks for $\langle|\mathcal M|^2\rangle$ and says that it reduces to (10.11), but the printed answer is the spin sum $\sum|\mathcal M|^2$. At $\epsilon=-1$ it gives $4(g_w/M_Wc)^4(p_1\cdot p_2)(p_3\cdot p_4)$, i.e. (10.10). Either relabel to (10.10) or note the extra factor 1/2.
+- [Correctness] Problem 10.16 assumes a $T^+(t\bar d)$ meson, but the top quark decays before it hadronizes, so no top mesons exist. Add a note, and likewise note that the "$2m_t<M_Z$" assumptions in 10.20 and 10.21 are counterfactual.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/11 Gauge Theories/11.3 Local Gauge Invariance.md
+- [Correctness] Footnote ep-11-3-minimal: "$p_\mu\to p_\mu-i(q/c)A_\mu$" has a spurious $i$. With $p_\mu\leftrightarrow i\hbar\partial_\mu$ and (11.38), $i\hbar\mathcal D_\mu=i\hbar\partial_\mu-(q/c)A_\mu$, so the rule is $p_\mu\to p_\mu-(q/c)A_\mu$.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/11 Gauge Theories/11.4 Yang-Mills Theory.md
+- [Correctness] Eq. (11.62), second line: the interaction term must contain the isospin matrices, $-(q\bar\psi\gamma^\mu\boldsymbol\tau\psi)\cdot\mathbf A_\mu$, which follows from $\mathcal D_\mu$ in (11.56) and agrees with (11.67). As written, $(q\bar\psi\gamma^\mu\psi)\cdot\mathbf A_\mu$ is not a valid dot product.
+- [Correctness] Footnote ep-11-4-u2 writes $U(2)=U(1)\otimes SU(2)$. This holds only locally; globally $U(2)\cong[U(1)\times SU(2)]/\mathbb Z_2$, because $-1$ lies in both factors.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/11 Gauge Theories/11.5 Chromodynamics.md
+- [Correctness] Footnote ep-11-5-u3 writes $U(3)=U(1)\otimes SU(3)$; globally this should be $[U(1)\times SU(3)]/\mathbb Z_3$ (the same caveat as in 11.4).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/11 Gauge Theories/11.7 The Mass Term.md
+- [Correctness] In (11.105) the term $e^{-(\alpha\phi)^2}$ is dimensionless, while $\mathcal L$ is an energy density, and identifying $\alpha^2=\frac12(mc/\hbar)^2$ makes $\alpha$ an inverse length, so $\alpha\phi$ is not dimensionless. Insert a constant energy density, $\mathcal L=\ldots+\varepsilon_0e^{-(\alpha\phi)^2}$, which gives $(mc/\hbar)^2=2\varepsilon_0\alpha^2$. The table's "—" unit for $\alpha$ hides the problem.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/11 Gauge Theories/11.8 Spontaneous Symmetry-Breaking.md
+- [Correctness] Eq. (11.120): with $\eta\equiv\phi_1-\mu/\lambda$ from (11.119), the cubic term is $-\mu\lambda(\eta^3+\eta\xi^2)$, not $+\mu\lambda(\ldots)$. Compare (11.131) in [[11.9 The Higgs Mechanism]], which correctly has $-\lambda\mu(\eta^3+\eta\xi^2)$ for the same definition. The $+$ sign belongs to the opposite shift $\eta=\phi+\mu/\lambda$ used in (11.113).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/11 Gauge Theories/11.9 The Higgs Mechanism.md
+- [Correctness] Eqs. (11.131) and (11.133): the mixing term $-2i(\mu/\lambda)(q/\hbar c)(\partial_\mu\xi)A^\mu$ cannot appear in a real Lagrangian. Expanding $\frac12|(\partial_\mu+iqA_\mu/\hbar c)(\eta+\mu/\lambda+i\xi)|^2$ gives $+(\mu/\lambda)(q/\hbar c)(\partial_\mu\xi)A^\mu$.
+- [Correctness] Outdated statements: "the Higgs particle has never been seen" (discovered at the LHC in 2012, $m_H\approx125$ GeV); the SSC footnote (the project was cancelled in 1993); and the Yukawa footnote "only when the Higgs is found" (its couplings to $t$, $b$, $\tau$, and $\mu$ are now measured). Add a modern note.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/11 Gauge Theories/11.P Problems.md
+- [Correctness] The Problem 11.12 answers use $g$ for the gauge coupling, while the text uses $q$ throughout (11.61, 11.65), and $g$ in the same note is the gravitational acceleration (Problem 11.1). Replace $g$ with $q$ in both answers and in the table row "g, α".
+- [Correctness] The Problem 11.12(a) answer opens a bracket "[" that is never closed. Close it after $-\mathbf A^\nu\times\partial^\mu\boldsymbol\lambda$.
+- [Correctness] Other symbol clashes in the same note: $\phi$ is the cone azimuth in Problem 11.1 and the scalar field elsewhere, and $L$ (angular momentum, 11.1c) collides with the Lagrangian $L$. Consider $\varphi$ and $\ell_z$ for Problem 11.1.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/92 Appendix B Decay Rates and Cross Sections/B.2 Cross Sections.md
+- [Correctness] Symbol clash: $\mathbf p_i$ means "momentum of particle $i$" in (B.5) but "incoming momentum magnitude" in (B.7), next to $\mathbf p_f$. Rename to $\mathbf p_{\mathrm{in}},\mathbf p_{\mathrm{out}}$ in (B.7), and add $\mathbf p_3$ (used in B.10–B.13) to the table.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/93 Appendix C Pauli and Dirac Matrices/C.2 Dirac Matrices.md
+- [Correctness] (C.9) writes $\gamma^0=\begin{pmatrix}1&0\\0&1\end{pmatrix}$, which is the identity. The Dirac representation has $\gamma^0=\begin{pmatrix}1&0\\0&-1\end{pmatrix}$, as in [[Reference Formulas]]. With the identity, (C.15) $\{\gamma^0,\gamma^i\}=0$ and the claim "traceless" both fail.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/99 Back matter/Particle Data.md
+- [Correctness] Outdated values: $t$ ">23,000" (now about $172{,}600\,\mathrm{MeV}$), $W$ $81{,}800$ (now $80{,}370$), $Z$ $92{,}600$ (now $91{,}188$), $W/Z$ lifetimes "unknown" (now about $3.2\times10^{-25}$ and $2.6\times10^{-25}\,\mathrm s$ from the widths), $\tau$ mass 1784 and lifetime $3.3\times10^{-13}$ (now 1776.9 and $2.90\times10^{-13}$), neutron lifetime 900 s (now about 878 s), and neutrino masses 0 (now known to be nonzero). Keep the historical table and add a callout that gives current PDG values.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/99 Back matter/Physical Constants and Conversion Factors.md
+- [Correctness] $\alpha=e^2/\hbar c$, $r_e=e^2/m_ec^2$, $a=\hbar^2/e^2m_e$ and $E_n=-m_ee^4/2\hbar^2n^2$ are Gaussian formulas, but the table gives $e$ in C and the lengths in m. Either state "Gaussian units, $e$ in esu" or replace $e^2$ by $e^2/4\pi\varepsilon_0$.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/01 Introduction/1.0 Chapter introduction.md
+- [Correctness] Outdated statements: the Higgs boson is now established with $m_H\approx125.1\,\mathrm{GeV}$ (not only "less than 200 GeV" from indirect fits), and the LHC has run at 13 and 13.6 TeV. Add a dated status callout rather than editing the source text.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/01 Introduction/1.2 Leptons.md
+- [Correctness] Symbol clash: $\tau$ denotes the tau lepton, the tau lifetime ($c\tau=87\,\mu\mathrm m$) and the isospin matrices $\tau_\pm$. The table lists only the lifetime. Rename the lifetime to $\tau_\tau$ and add $\tau_\pm,\tau_{1,2}$ to the table.
+- [Correctness] Outdated: tau-family universality "verified within 1.5%" is now tested at the few-per-mille level (PDG). Add a dated note.
+

@@ -133,15 +133,15 @@ $$
 \langle\mechanical{\sigma}(\signal{\nu}_0)\rangle_D
 =\frac{\pi\electric{e}^2}{\mechanical{m}_ec}f_{\ell\to u}\frac{1}{\sqrt{\pi}\,\Delta\signal{\nu}_D}
 \simeq(\quantity{1.16\times10^{-14}}{cm^2})\frac{\signal{\lambda}_0}{\unit{\text{Å}}}
-\sqrt{\frac{A}{\thermal{T}/\unit{K}}}f_{\ell\to u}.
+\sqrt{\frac{A_{\mathrm r}}{\thermal{T}/\unit{K}}}f_{\ell\to u}.
 $$
 
-Here $A$ is the absorber mass in atomic mass units.
+Here $A_{\mathrm r}$ is the absorber mass in atomic mass units.
 
-The line-center cross section in Rybicki and Lightman, Eq. 10.71, uses $\signal{\lambda}_0$ in ångströms, $\thermal{T}$ in kelvin, and atomic weight $A$. Doppler broadening dominates the centers of most observed lines.
+The line-center cross section in Rybicki and Lightman, Eq. 10.71, uses $\signal{\lambda}_0$ in ångströms, $\thermal{T}$ in kelvin, and atomic weight $A_{\mathrm r}$. Doppler broadening dominates the centers of most observed lines.
 
-- In a galaxy cluster's intracluster medium, thermal bremsstrahlung comes from a coronal plasma with $k_B\thermal{T}\simeq\quantity{8}{keV}$. For an oxygen line with $h\signal{\nu}_0\simeq\quantity{0.65}{keV}$, $\Delta\signal{\nu}_D/\signal{\nu}_0\sim10^{-3}$, about ten times the natural linewidth.
-- In the solar photosphere, $\thermal{T}\sim\quantity{6000}{K}$. For an iron atom with $A=56$, $b\simeq\quantity{1.4}{km\,s^{-1}}$ and $\Delta\signal{\nu}_D/\signal{\nu}_0\sim4\times10^{-6}$, over 100 times the natural width in the example.
+- In a galaxy cluster's intracluster medium, thermal bremsstrahlung comes from a coronal plasma with $k_B\thermal{T}\simeq\quantity{8}{keV}$. For an oxygen line with $h\signal{\nu}_0\simeq\quantity{0.65}{keV}$ (O VIII Ly$\alpha$, $A\simeq\quantity{2.6\times10^{12}}{s^{-1}}$), $\Delta\signal{\nu}_D/\signal{\nu}_0\sim10^{-3}$. The natural width is $\Delta\signal{\nu}/\signal{\nu}_0\lesssim10^{-5}$, so the Doppler width is about $10^2$ times the natural linewidth or more.
+- In the solar photosphere, $\thermal{T}\sim\quantity{6000}{K}$. For an iron atom with $A_{\mathrm r}=56$, $b\simeq\quantity{1.4}{km\,s^{-1}}$ and $\Delta\signal{\nu}_D/\signal{\nu}_0\sim4\times10^{-6}$, over 100 times the natural width in the example.
 
 With small-scale turbulence, a one-dimensional turbulent velocity $\mechanical{v}_t$ contributes in quadrature:
 
@@ -154,7 +154,7 @@ The notes describe $\mechanical{v}_t$ as an average turbulent speed and assume t
 
 ##### Microturbulence and the Voigt profile
 
-Microturbulence occurs on scales smaller than the collisional mean free path. The Gaussian broadening formula also applies when the turbulent velocity distribution is Gaussian about the mean velocity.
+Microturbulence occurs on scales smaller than the photon mean free path, which is the length for unit optical depth. The Gaussian broadening formula also applies when the turbulent velocity distribution is Gaussian about the mean velocity.
 
 #### Voigt profile
 
@@ -208,9 +208,10 @@ Kyle Kabasares, *Radiative Transfer in Astrophysics (Physics 240C, UC Irvine 201
 | $\energy{E}$ | $\unit{erg}$ | Radiant energy | Energy emitted by the source. |
 | $t$ | $\unit{s}$ | Time | Elapsed time used to define the emission rate. |
 | $\mechanical{\sigma}_{\signal{\nu}}$ | $\unit{cm^2}$ | Absorption cross section | Effective area presented by one absorber at frequency $\signal{\nu}$. |
-| $\alpha$ | $1$ | Fine-structure constant | Dimensionless electromagnetic coupling constant. |
-| $y$ | $1$ | Compton parameter | Mean fractional energy change per scattering times the mean scattering count, using the convention in this section. |
-| $\thermal{T}$ | $\unit{K}$ | Brightness temperature | Temperature inferred from the intensity in the Rayleigh–Jeans limit in this section. |
+| $\signal{\alpha}_{\signal{\nu}}$ | $\unit{cm^{-1}}$ | Absorption coefficient | Product of the absorber number density and the absorption cross section. |
+| $\thermal{T}$ | $\unit{K}$ | Kinetic temperature | Gas temperature that sets the thermal velocity distribution. |
+| $A$, $A_{u\to\ell}$ | $\unit{s^{-1}}$ | Einstein coefficient | Spontaneous transition probability per unit time from the upper to the lower level. |
+| $A_{\mathrm r}$ | $1$ | Atomic weight | Absorber mass in atomic mass units. |
 | $\phi(\signal{\nu})$ | $\unit{Hz^{-1}}$ | Normalized line profile | Frequency distribution of a line, normalized to unit integral. |
 | $\Gamma$ | $\unit{s^{-1}}$ | Radiative damping rate | Energy decay rate in the weakly damped classical oscillator model. |
 | $f_{\ell\to u}$ | — | Absorption oscillator strength | Scales the integrated classical cross section for a transition from the lower to the upper level. |

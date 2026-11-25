@@ -30,7 +30,7 @@ For the rectangular current loop, start with the Biot–Savart or vector-potenti
 
 ##### Problem 6-2
 
-For radial magnetization $\magnetic{\mathbf M}=\magnetic{M}_0\hat{\mathbf r}$ in a sphere, both the bound volume current $\nabla\times\magnetic{\mathbf M}$ and the surface current $\magnetic{\mathbf M}\times\hat{\mathbf n}$ vanish. The handwritten calculation combines the curl source with a surface dot product and gives $\magnetic{\mathbf H}=0$. The vanishing currents give $\magnetic{\mathbf A}=0$ in the free-space solution and hence $\magnetic{\mathbf B}=0$. Inside, $\magnetic{\mathbf H}=-\magnetic{\mathbf M}$ by the constitutive definition.
+For radial magnetization $\magnetic{\mathbf M}=\magnetic{M}_0\hat{\mathbf r}$ in a sphere, both the bound volume current $\nabla\times\magnetic{\mathbf M}$ and the surface current $\magnetic{\mathbf M}\times\hat{\mathbf n}$ vanish. The handwritten calculation combines the curl source with a surface dot product and gives $\magnetic{\mathbf H}=0$. The vanishing currents give $\magnetic{\mathbf A}=0$ in the free-space solution and hence $\magnetic{\mathbf B}=0$. Inside, $\magnetic{\mathbf H}=\magnetic{\mathbf B}/\magnetic{\mu}_0-\magnetic{\mathbf M}=-\magnetic{M}_0\hat{\mathbf r}$ by the constitutive definition. Outside, $\magnetic{\mathbf H}=0$. Thus the handwritten result $\magnetic{\mathbf H}=0$ is correct only outside the sphere. The magnetic volume charge $-\nabla\cdot\magnetic{\mathbf M}=-2\magnetic{M}_0/\mechanical{r}$ and the surface charge $\magnetic{\mathbf M}\cdot\hat{\mathbf n}=\magnetic{M}_0$ cancel only in total, so they produce no field outside but a nonzero $\magnetic{\mathbf H}$ inside.
 
 The polarization sketch shows a radial polarization that vanishes outside a sphere.
 
@@ -47,7 +47,7 @@ $$
 {\lvert\mechanical{\mathbf x}-\mechanical{\mathbf x}'\rvert}\,dA'.
 $$
 
-For the polarization example, the handwritten calculation uses $\mechanical{r}^2\cos\theta/\mechanical{R}^2$ as the radial profile and differentiates it directly. For a radial vector, the divergence also includes the spherical area factor. Writing the profile from [[#Magnetic potential of a uniformly magnetized block|the section on Homework review ·]] as $\electric{P}_r=\electric{P}_0\mechanical{r}^2\cos\theta$ inside, one obtains
+For the polarization example, the handwritten calculation uses $\mechanical{r}^2\cos\theta/\mechanical{R}^2$ as the radial profile and differentiates it directly. For a radial vector, the divergence also includes the spherical area factor. Writing the profile from [[#Problem 6-2|the section on Problem 6-2]] as $\electric{P}_r=\electric{P}_0\mechanical{r}^2\cos\theta$ inside, one obtains
 
 $$
 \nabla\cdot\electric{\mathbf P}

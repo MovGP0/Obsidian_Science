@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Reducing the Einstein-Hilbert action"
 document_type: "Self-contained study chapter"
 ---
@@ -213,7 +213,7 @@ The restricted action has Einstein–Maxwell form. The full five-dimensional the
 
 ## Worked normalization check
 
-If the coefficient multiplying the squared potential in the metric were rescaled by a factor of two, the induced Maxwell coefficient would be multiplied by four. Restoring canonical normalization would rescale the potential and its matter charge. This illustrates why changing the charge normalization alone cannot repair the later mass–charge problem.
+If the coupling $\mechanical{\kappa}$ that multiplies the potential in the metric were rescaled by a factor of two, the induced Maxwell coefficient, which is proportional to $\mechanical{\kappa}^2$, would be multiplied by four. Restoring canonical normalization would rescale the potential and its matter charge. This illustrates why changing the charge normalization alone cannot repair the later mass–charge problem.
 
 ## Show the potential variation term by term
 

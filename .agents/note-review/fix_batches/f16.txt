@@ -1,0 +1,78 @@
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/01 From Quantum Mechanics to Field Theory/01.04.02 Plane-Wave Solutions.md
+- [Correctness] In (1.14) and (1.15) the measure is $d^{3}\mechanical{k}$ while the integrand depends only on $\mechanical{\mathbf p}$, so the integrals are ill-formed as written; write $\int d^{3}\mechanical{p}/(2\pi)^3\,1/(2\energy{\omega}_{\mathbf p})$ and delete the explanatory callout.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/01 From Quantum Mechanics to Field Theory/01.06.01 Formulation.md
+- [Correctness] The caption of Fig. 1.1 says the particle penetrates "with a transmission coefficient that exceeds the classical value", but with the retained momentum choice 01.06.03 finds $\signal{T}<0$ (Eq. 1.62); rephrase to "Region II supports propagating negative-frequency modes; see 01.06.03 for the sign of the transmitted flux".
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/01 From Quantum Mechanics to Field Theory/01.08.01 From Particles to Fields.md
+- [Correctness] In (1.64) the measure is $d^{3}\mechanical{k}$ but the integrand depends on $\mechanical{\mathbf p}$; as written the integral is ill-formed; use $d^{3}\mechanical{p}$ and drop the callout.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/01 From Quantum Mechanics to Field Theory/01.08.02 Fock Space.md
+- [Correctness] In (1.68) the measure $d^{3}\mechanical{k}$ does not match the integration variable $\mechanical{\mathbf p}$ in the integrand; write $d^{3}\mechanical{p}$.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/01 From Quantum Mechanics to Field Theory/01.08.03 Antiparticles.md
+- [Correctness] In (1.69) and (1.70) the measure $d^{3}\mechanical{k}$ does not match the integrand variable $\mechanical{\mathbf p}$; write $d^{3}\mechanical{p}$.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/01 From Quantum Mechanics to Field Theory/01.09.01 The Beginnings (1925–1932).md
+- [Correctness] "In 1925, Born and Jordan showed that the quantized harmonic oscillator ... could be described with creation and annihilation operators" is misattributed: Born–Jordan (1925) established the matrix-mechanics commutator; the first field quantization (a vibrating string as a set of oscillators) is the Born–Heisenberg–Jordan paper (1926), and creation/annihilation operators for the radiation field were introduced by Dirac (1927).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/01 From Quantum Mechanics to Field Theory/01.12 Exercises/01.12.01 Natural units and conversions.md
+- [Correctness] Part (c): with the stated inputs $1.0546\times10^{-34}$, $2.998\times10^{8}$ and $1.602\times10^{-13}$ the result is $197.36\approx197.4\,\mathrm{MeV\,fm}$, not $197.3$; use $1.602177\times10^{-13}\,\mathrm{J/MeV}$ (and $\hbar=1.054572\times10^{-34}\,\mathrm{J\,s}$) to obtain $197.33\,\mathrm{MeV\,fm}$.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/01 From Quantum Mechanics to Field Theory/01.12 Exercises/01.12.07 Weyl spinors and chirality.md
+- [Correctness] Physical-quantities table: $E$ is described as "Incident energy", but there is no scattering here; it is the positive energy of the massless plane-wave mode.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/02 Classical Field Theory/02.01.02 Oscillator Chain and Continuum Limit.md
+- [Correctness] Symbol clash: $\mu$ denotes the linear mass density $m/a$ but is also the Lorentz index in $\mathcal L(\phi,\partial_\mu\phi)$ in (2.5); rename the density (for example $\rho$ or $\varrho$) or write $\mathcal L(\phi,\partial_t\phi,\partial_x\phi)$.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/02 Classical Field Theory/02.05.04 Rotations and Angular Momentum.md
+- [Correctness] "a vector has $\Delta\signal{A}^{\mu}=-\omega^{\mu}{}_{\nu}\signal{A}^{\nu}$" is inconsistent with $\mechanical{x}^\mu\to\mechanical{x}^\mu+\omega^\mu{}_\nu\mechanical{x}^\nu$ (and with 02.08.04, whose vector generator gives $+\omega^\mu{}_\nu$); write $\Delta\signal{A}^\mu=+\omega^\mu{}_\nu\signal{A}^\nu$ and delete the correcting callout.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/02 Classical Field Theory/02.06.02 The Belinfante–Rosenfeld Tensor.md
+- [Correctness] Eq. (2.38) with the spin tensor of (2.37) doubles rather than cancels the antisymmetric part of $\energy{T}^{\mu\nu}$ (the improvement's antisymmetric part is $+\tfrac12\partial_\rho\mechanical{S}^{\rho\mu\nu}=+\tfrac12(\energy{T}^{\mu\nu}-\energy{T}^{\nu\mu})$); replace (2.38) inline by $\energy{\Theta}^{\mu\nu}=\energy{T}^{\mu\nu}-\tfrac12\partial_\rho(\mechanical{S}^{\rho\mu\nu}-\mechanical{S}^{\mu\rho\nu}-\mechanical{S}^{\nu\rho\mu})$ and drop the callout.
+- [Correctness] Eq. (2.40) with the leading minus sign gives $-\energy{T}_{\mu\nu}$ for the scalar (since $\tfrac{2}{\sqrt{-g}}\partial(\sqrt{-g}\energy{\mathcal L})/\partial g^{\mu\nu}=\partial_\mu\signal{\phi}\partial_\nu\signal{\phi}-g_{\mu\nu}\energy{\mathcal L}$); print the plus-sign form inline and remove the correction callout.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/02 Classical Field Theory/02.07.02 The Complex Scalar Field.md
+- [Correctness] "The source writes $O(2)\cong U(1)$" is kept in the text with a correcting callout; state directly that the phase rotation is $SO(2)\cong U(1)$ (the full $O(2)$ also contains the reflection $\signal{\phi}\to\signal{\phi}^*$) and remove the callout.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/02 Classical Field Theory/02.07.03 The Electromagnetic Field.md
+- [Correctness] Eq. (2.60) pairs the phase $e^{i\electric{e}\alpha}$ with the shift $\partial_\mu\alpha/\electric{e}$; with $D_\mu=\partial_\mu-i\electric{e}\electric{A}_\mu$ the consistent pair is $\signal{\phi}\to e^{i\electric{e}\alpha}\signal{\phi}$, $\electric{A}_\mu\to\electric{A}_\mu+\partial_\mu\alpha$ (or $e^{i\alpha}$ with $\partial_\mu\alpha/\electric{e}$); print the corrected form and delete the callout.
+- [Correctness] Fig. 2.3 draws $\varepsilon^{(1)}$ and $\varepsilon^{(2)}$ as opposite arrows on one line, i.e. the same polarization up to sign; redraw with $\varepsilon^{(1)}$ vertical in the plane and $\varepsilon^{(2)}$ as an out-of-plane dot (or a 3D view), so the figure matches its caption.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/03 Quantization of the Scalar Field/03.04.02 Zero-Point Energy.md
+- [Correctness] (3.38) labels an energy density $\energy{E}_0$ (table: MeV$^4$), while 03.04.04 uses $\energy{E}_0$ for a total energy in MeV; write $\energy{E}_0=V\cdot\tfrac12\int\frac{d^3k}{(2\pi)^3}\omega_k$ or rename the density (e.g. $\energy{\varepsilon}_0=E_0/V$) and drop the apologetic callout.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/03 Quantization of the Scalar Field/03.11 Exercises/03.11.05 Complex-scalar U(1) charge.md
+- [Correctness] The physical-quantities row for the Lagrangian density says "The density used to derive the translation current". In this note it is used to derive the U(1) phase current.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/03 Quantization of the Scalar Field/03.11 Exercises/03.11.07 Massless Feynman propagator.md
+- [Correctness] Symbol clash: $k$ denotes the four-momentum in the first display and then the magnitude $|\mathbf k|=k$ in the spherical-coordinate step. Also, $\theta$ is both the step function $\theta(x^0)$ and the polar angle. Rename them, for example to $\kappa=|\mathbf k|$ and $\vartheta$.
+- [Correctness] The physical-quantities table lists $\Delta^+,\Delta^-$ and $\mathbf k'$, which the note never uses.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/03 Quantization of the Scalar Field/03.11 Exercises/03.11.08 Retarded scalar propagator.md
+- [Correctness] The physical-quantities table lists the Pauli–Jordan function $\Delta$ as "The scalar commutator function in the microcausality exercise", but this note never uses $\Delta$ without a subscript (it would be needed if the derivation above is added).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/03 Quantization of the Scalar Field/03.11 Exercises/03.11.09 Lorentz Noether current.md
+- [Correctness] Table rows are copied from other exercises. $T^{\mu\nu}$ is described as "used to derive the translation current", but here it builds the Lorentz current. $\mathbf y$ is described as "the second integration point in the mode commutator", but here it only appears in the canonical commutator.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/03 Quantization of the Scalar Field/03.11 Exercises/03.11.10 Coherent-state particle number.md
+- [Correctness] The physical-quantities table lists $N_a,N_b$ (particle/antiparticle counts), which this real-field note never uses.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.03.01 The Attempt with Commutators.md
+- [Correctness] (4.23) and (4.24) integrate over $d^3k$ while the integrand depends on $\mathbf p$, and the mode commutator omits the $(2\pi)^3$ that the $(2\pi)^{-3}$ measure requires. Use $d^3p$ throughout and $[b^s_{\mathbf p},b^{s'\dagger}_{\mathbf q}]=(2\pi)^3\delta_{ss'}\delta^{(3)}(\mathbf p-\mathbf q)$, rather than retaining the inconsistency.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.04.01 Field Expansion.md
+- [Correctness] (4.27) and (4.28) integrate over $d^3\mechanical{k}$ while every factor of the integrand depends on $\mechanical{p}$; write $\int\frac{d^3\mechanical{p}}{(2\pi)^3\sqrt{2E_{\mathbf p}}}$ and delete the callout and the "retained k/p mismatch" paragraph.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.05.03 Number Operators.md
+- [Correctness] (4.35) integrates over $d^3\mechanical{k}$ with integrand labelled by $\mathbf p$; use $d^3\mechanical{p}$ and remove the callout.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.06.01 Hamiltonian Operator in Mode Variables.md
+- [Correctness] (4.37) and (4.38) integrate over $d^3\mechanical{k}$ with a $\mathbf p$-labelled integrand; use $d^3\mechanical{p}$ and delete the "printed k/p integration labels" sentence.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.06.02 The Noether Current and Charge.md
+- [Correctness] (4.40) integrates over $d^3\mechanical{k}$ with a $\mathbf p$-labelled integrand; use $d^3\mechanical{p}$.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.06.03 The Four-Momentum Vector.md
+- [Correctness] (4.41) integrates over $d^3\mechanical{k}$ with a $\mathbf p$-labelled integrand; use $d^3\mechanical{p}$ and drop the sentence about identifying the label during evaluation.
+

@@ -17,7 +17,7 @@ $$
 h_{00}=-2\Psi,\qquad h_{0i}=0,\qquad h_{ij}=2a^2\Phi\delta_{ij}.
 $$
 
-The notes compare this coordinate choice with synchronous gauge, which sets $h_{00}=h_{i0}=0$ so that coordinate time is proper time along worldlines at fixed spatial coordinates. They use the freedom to shift an electromagnetic potential by a constant, $A_\mu\to A_\mu+C_\mu$, as an analogy for gauge freedom.
+The notes compare this coordinate choice with synchronous gauge, which sets $h_{00}=h_{i0}=0$ so that coordinate time is proper time along worldlines at fixed spatial coordinates. They use electromagnetic gauge freedom, $A_\mu\to A_\mu+\partial_\mu\chi$ for a scalar function $\chi$, as an analogy. A constant shift of $A_\mu$ is only a trivial special case.
 
 The Einstein equation to first order is
 
@@ -256,7 +256,7 @@ $$
 
 When $\Theta=\Theta_0$, the perturbation is isotropic. For $\Gamma_{\mathrm T}\gg H$ in the tight-coupling approximation, the notes retain the monopole and dipole.
 
-![[Kyle Kabasares - Cosmology - acoustic peaks and diffusion damping.png|**Fig. 22** The sketch plots $\ell^2C_\ell$ against multipole $\ell$. It marks the first peak near $\ell=200$, the decline around $\ell=2000$, and the associated angular scales of about half a degree and a few arcminutes. The margin asks about the low-multipole plateau and the small-scale decline.]]
+![[Kyle Kabasares - Cosmology - acoustic peaks and diffusion damping.png|**Fig. 22** The sketch plots $\ell^2C_\ell$ against multipole $\ell$. It marks the first peak near $\ell=200$, the decline around $\ell=2000$, and the associated angular scales, labeled about half a degree and a few arcminutes. With $\theta\approx180^\circ/\ell$, the first peak corresponds to about one degree, and diffusion damping sets in from $\ell\gtrsim1000$. The margin asks about the low-multipole plateau and the small-scale decline.]]
 
 The notes suggest inspecting the Planck CMB map and paying attention to the angular scale of its fluctuations. After recombination, photon scattering is rare. Before recombination, diffusion can smooth fluctuations on the distances photons travel by repeated scattering. Baryons falling into dark-matter potential wells compete with the pressure of the coupled photon–baryon fluid.
 
@@ -360,27 +360,22 @@ Kyle Kabasares, *Cosmology (Physics 240B, UC Irvine 2018)*.
 | --- | --- | --- | --- |
 | $t$ | $\unit{s}$ | Cosmic time | Age measured from the early-universe origin used in the course. |
 | $a$ | $1$ | Scale factor | Ratio of a physical separation at cosmic time $t$ to its value today for a pair of comoving points. |
-| $\thermal{T}$ | $\unit{K}$ | Temperature | Cosmic temperature on the right axis of the scale-factor figure. |
+| $\thermal{T}$, $\thermal{T}^{(0)}$ | $\unit{K}$ | Photon temperature | Perturbed and background photon temperatures. |
 | $H$, $H_0$ | $\unit{s^{-1}}$ | Hubble parameter and its present value | Fractional expansion rate $\dot a/a$, often quoted in $\unit{km\,s^{-1}\,Mpc^{-1}}$. |
 | $\mechanical{G}$ | $\unit{m^3\,kg^{-1}\,s^{-2}}$ | Gravitational constant | Coupling in the Friedmann equation. |
 | $\energy{\rho}$, $\energy{\rho}_0$, $\energy{\rho}_{\mathrm{cr}}$ | $\unit{J\,m^{-3}}$ | Cosmic energy densities | Time-dependent, present-day and present-day critical densities. In SI the corresponding mass densities are the energy densities divided by $c^2$. |
-| $h$ | $1$ | Reduced Hubble parameter | $H_0$ in units of $\quantity{100}{km\,s^{-1}\,Mpc^{-1}}$. |
+| $h_{\mu\nu}$ | $1$ | Metric perturbation | Small first-order departure from the background metric. |
 | $ds^2$ | $\unit{m^2}$ | Squared spacetime interval | Metric contraction of two coordinate differentials when the line element is expressed in length units. |
 | $\mechanical{c}$ | $\unit{m\,s^{-1}}$ | Speed of light | Converts the time coordinate to length units in the flat interval. |
 | $\theta$, $\phi$ | $\unit{rad}$ | Spherical angles | Polar angle and azimuth in the spherical line element. |
 | $\tau$ | $\unit{s}$ | Proper time | Elapsed time measured by a clock moving along the timelike path. |
-| $\mechanical{v}$ | $\unit{m\,s^{-1}}$ | Radial speed | Rate of change of radial position in the chosen inertial frame. It is expressed in units of the speed of light in $\gamma$. |
-| $\gamma$ | $1$ | Lorentz factor | Ratio of coordinate time to proper time for inertial motion. |
-| $\mechanical{F}$, $\mechanical{m}$, $\mechanical{a}$ | $\unit{N}$, $\unit{kg}$, $\unit{m\,s^{-2}}$ | Force, mass and acceleration | Quantities in Newton's second law. The acceleration here is distinct from the cosmological scale factor $a$. |
+| $\mechanical{v}$ | $\unit{m\,s^{-1}}$ | Coordinate speed | Magnitude of $d\vec x/dt$ in the weak-field proper-time expression. |
+| $\mechanical{m}$ | $\unit{kg}$ | Particle mass | Rest mass in the mass-shell condition. |
 | $\mechanical{P}^\mu$ | $\unit{kg\,m\,s^{-1}}$ | Four-momentum | Tangent to the particle trajectory for an appropriate normalization of the affine parameter. Its time component in SI is $\energy{E}/\mechanical{c}$. |
 | $\energy{E}$ | $\unit{J}$ | Photon energy | Energy measured by a comoving observer, equal to $\mechanical{P}^0$ in natural units. |
 | $\mechanical{\vec p}$ | $\unit{kg\,m\,s^{-1}}$ | Physical spatial momentum | Momentum components measured in a local orthonormal frame. |
-| $A$ | $\unit{m}$ | Comoving curvature radius | Radius of the embedded three-sphere before multiplication by the scale factor. |
 | $k$ | $\unit{m^{-2}}$ | Spatial curvature parameter | Units apply when $r$ has dimensions of length and $a$ is dimensionless. |
-| $n$ | $\unit{m^{-3}}$ | Particle number density | For a heavy nonrelativistic species, rest energy times number density gives the leading energy density. |
-| $\sigma$ | $\unit{m^2}$ | Reaction cross section | Averaged together with relative speed to obtain the rate coefficient. |
-| $\phi$ | $\unit{GeV}$ | Homogeneous scalar field | Field amplitude expressed in energy units with $\hbar=\mechanical{c}=1$. |
-| $\eta$ | $\unit{s}$ | Conformal time | Defined by $d\eta=dt/a$. The product $\mechanical{c}\eta$ has units of comoving distance. |
+| $n$, $n_e$ | $\unit{m^{-3}}$ | Particle and free-electron number densities | Number of particles or free electrons per unit volume. |
 | $\Psi$, $\Phi$ | $\unit{m^2\,s^{-2}}$ | Scalar metric perturbation potentials | The time and space perturbations in the sign convention above. |
 | $\Theta$ | $1$ | Fractional photon temperature perturbation | Defined by $\thermal{T}=\thermal{T}^{(0)}(1+\Theta)$. |
 | $\sigma_{\mathrm T}$ | $\unit{m^2}$ | Thomson cross section | Low-energy cross section for photon scattering by an electron. |
@@ -389,4 +384,3 @@ Kyle Kabasares, *Cosmology (Physics 240B, UC Irvine 2018)*.
 | $\ell$, $C_\ell$ | $1$ | Angular multipole and temperature angular power | Here $C_\ell$ is for fractional temperature fluctuations. Higher $\ell$ corresponds to smaller angular scales. |
 | $\vec k$, $k$ | $\unit{m^{-1}}$ | Comoving wavevector and wavenumber | The wavevector labels a spatial Fourier mode. The magnitude is distinct from the curvature index $k$. |
 | $\mu$ | $1$ | Direction cosine for a photon Fourier mode | Dot product of the photon direction with the wavevector direction. |
-| $\delta$ | $1$ | Density contrast | Ratio of a first-order density perturbation to the homogeneous background. For nonrelativistic matter of fixed particle mass, the number and mass density contrasts agree. |

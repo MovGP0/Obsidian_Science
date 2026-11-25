@@ -502,10 +502,10 @@ Kyle Kabasares, *Intermediate Ordinary Differential Equations (Math 125, UC Merc
 
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
-| $\mechanical{m}$ | $\unit{kg}$ | Mass | Mass of the vibrating body or of a slice of the conducting rod. |
-| $\mechanical{x}$ | $\unit{m}$ | Displacement or spatial coordinate | Position relative to equilibrium in the oscillator or distance along the wave and heat models. |
+| $\mechanical{m}$ | $\unit{kg}$ | Mass | Mass of the vibrating body. |
+| $\mechanical{x}$ | $\unit{m}$ | Displacement | Position relative to equilibrium in the oscillator. |
 | $\mechanical{k}$ | $\unit{N\,m^{-1}}$ | Spring constant | Proportionality between displacement and restoring force. |
-| $\signal{t}$ | $\unit{s}$ | Time | Independent variable in the vibration and heat models. |
+| $\signal{t}$ | $\unit{s}$ | Time | Independent variable of the forced oscillator. |
 | $\mechanical{f}(\signal{t})$ | $\unit{N}$ | Driving force | Time-dependent input to the oscillator, given in pounds-force in the sawtooth example. |
 | $\signal{L}$ | $\unit{s}$ | Half-period | Half the time between successive repeats of the sawtooth force. |
 | $\mechanical{b}$ | $\unit{N\,s\,m^{-1}}$ | Viscous damping coefficient | Notation for the coefficient of velocity in the Laplace-transform motivation. |

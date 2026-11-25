@@ -1,0 +1,40 @@
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/07 Einstein's General Theory of Relativity/07.09 The GTR and Gravitomagnetism.md
+- FIXED | g_0i potentials are of order (v/c)(GM/Rc^2), not v/c | Changed the order estimate to (v/c) GM/(Rc^2), consistent with the B_g estimate.
+- FIXED | 5% accuracy for both LAGEOS and GP-B is wrong | Now quotes about 10% for LAGEOS and about 19% (37.2 ± 7.2 mas/yr) for Gravity Probe-B separately.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/07 Einstein's General Theory of Relativity/07.12 The GTR and Mach's Principle.md
+- FIXED | (7.32)-(7.33) use G_{mu nu} for the Ricci tensor, clashing with chapter convention | Wrote R_{mu nu} in (7.32), (7.33) and the table; the checks section now states that Einstein wrote G for the Ricci tensor and that (7.32) matches (7.5).
+- FIXED | "energy-momentum trace would represent abnormal matter" is garbled; typo "Machs" | Rephrased: the lambda g term acts like abnormal matter with p_Lambda = -rho_Lambda c^2; corrected to "Mach’s"; added p_Lambda, rho_Lambda, c to the table.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/07 Einstein's General Theory of Relativity/07.13 The GTR and Cosmology.md
+- FIXED | -Lambda g sign in (7.35) wrong for the (-,+,+,+) signature of (7.34) | Changed to +Lambda g and stated that positive Lambda is repulsive in this signature; also changed the same term in (7.36) of 07.15 (same batch) for consistency.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/07 Einstein's General Theory of Relativity/07.15 What Lies Beyond the GTR.md
+- FIXED | 1 - GM/(rc^2) called the metric component | Caption and following line now call it the clock-rate factor sqrt(-g00) and give g00 = -(1 - 2GM/(rc^2)).
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/08 Our Universe/08 References.md
+- FIXED | Wrong years/volume for refs 12, 9, 8 | Ref 12 Sandage now 1958, ref 9 Eddington now 1930, ref 8 Lemaître translation now MNRAS 91.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/08 Our Universe/08.01 Our Physical Universe Before 1930.md
+- FIXED | 60- and 100-inch telescopes were on Mt. Wilson; Herschel reflector was 48-inch (1789) | Replaced the "source states" sentence with the correct facts and added that the 200-inch came to Palomar in 1948.
+- FIXED | Einstein added -lambda phi to Poisson's equation, not a constant potential | Text now gives nabla^2 phi - lambda phi = 4 pi G rho with its constant-potential solution; added phi, lambda, G to the table.
+- FIXED | de Sitter model misdescribed; missing 1/2 in (8.1) and 1915 form | Rewrote de Sitter sentence (empty model with Lambda, static coordinates first, expanding interpretation by Lemaître 1925 and Robertson 1928); added 1/2 to both forms, removed the callout, and updated the checks sentence.
+- FIXED | Lambda = kappa rho/2 has wrong units with kappa = 8 pi G/c^4 | Changed to Lambda = kappa rho c^2/2 = 4 pi G rho/c^2 = 1/R^2; table now gives kappa in m/J and rho in kg/m^3.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/08 Our Universe/08.02 The Universe as Observed.md
+- FIXED | 5000 yr gives about one part in three million, not ten million | Changed to "about one part in three million".
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/08 Our Universe/08.02.01 The Large Scale Distribution of Matter.md
+- FIXED | One H atom per m^3 exceeds the quoted 10^-27 kg/m^3 bound | Now gives about 4e-28 kg/m^3, about one hydrogen atom per four cubic metres.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/08 Our Universe/08.02.02 The Expansion of the Universe.md
+- FIXED | Cepheid period is not inversely related to size; Leavitt's Cepheids were in the SMC | Text now says larger, more luminous, lower-density Cepheids have longer periods, and that Leavitt's sample in the Small Magellanic Cloud was at a common distance.
+- FIXED | a_o/a_e = 1+z, not 1+v/c; Doppler relation should be fractional | Text now gives delta nu/nu = -v/c for small v, a_o/a_e = 1+z, and 1+z ≈ 1+v/c only for v << c; removed the callout; added z to the table.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/08 Our Universe/08.02.03 The Velocity-Distance Relation from Observations.md
+- FIXED | 200-inch telescope placed at Mt. Wilson | Now "the 200-inch Hale telescope of the Palomar Observatory on Mt. Palomar".
+- FIXED | Outdated H0 values hide the Hubble tension | Now SH0ES 73.0 ± 1.0 and Planck 2018 67.4 ± 0.5 km/(s Mpc), with a sentence on the about 5-sigma Hubble tension.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/08 Our Universe/08.03 Einstein's Cosmological Constant.md
+- FIXED | (8.6) mixes kappa = 8 pi G/c^4 with mass density | Changed both parts to kappa rho c^2/2 and added = 4 pi G rho/c^2; table now gives kappa in m/J and adds c.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/08 Our Universe/08.03.01 The Cosmological Principle and the Expansion.md
+- FIXED | (8.8) prints f^2(t); signature of (8.7) differs from (8.2) | Changed to f^2(r), changed (8.7) to -c^2 dt^2 + a^2 dl^2, and removed the callout.
+- FIXED | Vddot/V = 3 addot/a false for V ∝ a^3; E = rho V inconsistent with (8.10) | Text now states the Baez–Bunn ball of test particles initially at rest, gives the comoving-volume result with the 6(adot/a)^2 term, writes E = rho V c^2, removes the callout, and updates the checks paragraph.
+- FIXED | (8.15)-(8.16) drop the Lambda c^2/3 terms | Added +Lambda c^2/3 to both equations.
+- FIXED | Milne model "not entirely excluded" is outdated | Now states that CMBR and BAO data exclude it (|Omega_k| ≲ 0.002 versus Omega_k = 1); added Omega_k to the table.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/08 Our Universe/08.03.02 The Concept of a Critical Density.md
+- FIXED | rho_c = H^2/(8 pi G) is missing the factor 3 | Both places now use 3H^2/(8 pi G) (9.2e-27 kg/m^3 for H0 = 70 checked); removed the callout and updated the checks sentence.
+- FIXED | Recollapse for rho > rho_c holds only for Lambda = 0 | Added that recollapse needs Lambda = 0 and that with Lambda > 0 a closed model can expand forever; added Lambda to the table.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/08 Our Universe/08.03.03 The Measurements of the Deceleration Parameter.md
+- FIXED | Wrong matter-only addot/a and q0 relations | Text now gives addot/a = -4 pi G rho/3 and q0 = Omega_m/2 = (1/2)[1 + kc^2/(H0^2 a^2)], identifies q = 0 without matter as the k = -1 Milne Universe, and removes the callout.
+- FIXED | "half critical density gives q = 0, mimicking a flat matter-free Universe" is unclear | Rephrased: q0 = Omega_m/2 - Omega_Lambda = 0 needs Omega_Lambda = Omega_m/2 (e.g. 0.5 and 0.25), which mimics the empty Milne model and is not flat; added rho_c, Omega_m, Omega_Lambda to the table.

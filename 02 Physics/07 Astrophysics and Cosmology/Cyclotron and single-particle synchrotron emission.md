@@ -269,24 +269,24 @@ $$
 \left(1-\frac{\mechanical{v}}{c}\right).
 $$
 
-This is much shorter than the travel time $\mechanical{L}/\mechanical{v}$ when $\mechanical{v}\simeq c$. With $\theta\simeq1/\gamma$,
+This is much shorter than the travel time $\mechanical{L}/\mechanical{v}$ when $\mechanical{v}\simeq c$. The cone of half-angle $\theta\simeq1/\gamma$ includes the line of sight while the velocity turns through the full cone width $\Delta\theta\simeq2/\gamma$. Thus
 
 $$
-\mechanical{L}=2\mechanical{r}_g\sin(\theta/2)\simeq\mechanical{r}_g\theta
-\simeq\frac{\mechanical{r}_g}{\gamma},
+\mechanical{L}\simeq\mechanical{r}_g\Delta\theta
+\simeq\frac{2\mechanical{r}_g}{\gamma},
 \qquad
-\frac{\mechanical{L}}{\mechanical{v}}\simeq\frac{1}{\gamma\signal{\omega}_B^{\mathrm{rel}}}
-=\frac{1}{\signal{\omega}_B}.
+\frac{\mechanical{L}}{\mechanical{v}}\simeq\frac{2}{\gamma\signal{\omega}_B^{\mathrm{rel}}}
+=\frac{2}{\signal{\omega}_B}.
 $$
 
 Also, $1-\beta=(1-\beta^2)/(1+\beta)=1/[\gamma^2(1+\beta)]\simeq1/(2\gamma^2)$.
 
-For $\sin\alpha=1$, the preceding estimates give $\Delta t_{\mathrm{pulse}}\simeq1/(2\gamma^2\signal{\omega}_B)$. Restoring the pitch-angle dependence gives
+For $\sin\alpha=1$, the preceding estimates give $\Delta t_{\mathrm{pulse}}\simeq1/(\gamma^2\signal{\omega}_B)$. Restoring the pitch-angle dependence gives (Rybicki and Lightman, equation 6.16)
 
 $$
 \Delta t_{\mathrm{pulse}}\simeq
-\frac{1}{2\gamma^2\signal{\omega}_B\sin\alpha}
-=\frac{1}{2\gamma^3\signal{\omega}_B^{\mathrm{rel}}\sin\alpha}.
+\frac{1}{\gamma^2\signal{\omega}_B\sin\alpha}
+=\frac{1}{\gamma^3\signal{\omega}_B^{\mathrm{rel}}\sin\alpha}.
 $$
 
 The handwritten notation for the cyclotron and relativistic gyration rates varies on this page. The expressions here use the relation $\signal{\omega}_B^{\mathrm{rel}}=\signal{\omega}_B/\gamma$.
@@ -299,7 +299,7 @@ For the synchrotron pulse,
 
 $$
 \Delta\signal{\omega}_{\mathrm{pulse}}\gtrsim\frac{1}{\Delta t_{\mathrm{pulse}}}
-\simeq2\gamma^3\signal{\omega}_B^{\mathrm{rel}}\sin\alpha.
+\simeq\gamma^3\signal{\omega}_B^{\mathrm{rel}}\sin\alpha.
 $$
 
 Synchrotron emission from one electron spans harmonics of the relativistic gyration frequency up to order $\gamma^3\signal{\omega}_B^{\mathrm{rel}}$, above which it falls rapidly. For example, if the relativistic gyration frequency is of order $\quantity{10^{10}}{Hz}$ and $\gamma\sim10^3$ to $10^4$, the upper scale is of order $\quantity{10^{19}}{Hz}$ to $\quantity{10^{22}}{Hz}$. The radiation can thus cover a wide part of the electromagnetic spectrum.
@@ -324,12 +324,36 @@ Kyle Kabasares, *Radiative Transfer in Astrophysics (Physics 240C, UC Irvine 201
 
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
-| $\energy{L}$ | $\unit{erg\cdot s^{-1}}$ | Luminosity | Total radiant energy emitted per unit time. |
-| $t$ | $\unit{s}$ | Time | Elapsed time used to define the emission rate. |
-| $\alpha$ | $1$ | Fine-structure constant | Dimensionless electromagnetic coupling constant. |
+| $\thermal{T}$ | $\unit{K}$ | Temperature | Gas temperature found from the optically thick spectrum. |
+| $\mechanical{L}$ | $\unit{cm}$ | Length | Source length in the first paragraph, and chord between the visible points A and B in the pulse estimate. |
+| $\vec{\mechanical{v}}$, $\mechanical{v}$ | $\unit{cm\cdot s^{-1}}$ | Particle velocity | Velocity of the charged particle and its magnitude. |
+| $\mechanical{v}_\perp$, $\mechanical{v}_\parallel$ | $\unit{cm\cdot s^{-1}}$ | Velocity components | Components of the velocity perpendicular and parallel to the magnetic field. |
+| $\mechanical{u}$ | $\unit{cm\cdot s^{-1}}$ | Object speed | Lab-frame speed in the velocity transformation. |
+| $\vec{\magnetic{B}}$, $\magnetic{B}$ | $\unit{G}$ | Magnetic flux density | Uniform magnetic field and its magnitude. |
+| $\vec{\electric{E}}$ | $\unit{statV\cdot cm^{-1}}$ | Electric field | Electric field in the force law and in the incident radiation. |
+| $\vec{\mechanical{F}}$, $\vec{\mechanical{F}}_\perp$ | $\unit{dyn}$ | Magnetic force | Lorentz force on the electron and its component perpendicular to the field. |
+| $\electric{e}$, $\electric{q}$ | $\unit{statC}$ | Charge | Elementary charge and the charge of a general particle. |
+| $\mechanical{m}_e$, $\mechanical{m}$ | $\unit{g}$ | Mass | Electron mass and the mass of a general particle. |
+| $c$ | $\unit{cm\cdot s^{-1}}$ | Speed of light | Speed of light in vacuum. |
+| $\mechanical{r}$, $\mechanical{r}_g$ | $\unit{cm}$ | Gyration radius | Radius of the circular motion about the field. |
+| $\signal{\omega}_B$, $\signal{\nu}_B$ | $\unit{rad\cdot s^{-1}}$, $\unit{Hz}$ | Cyclotron frequency | Angular and ordinary frequency of nonrelativistic gyration, $\signal{\omega}_B=\electric{e}\magnetic{B}/(\mechanical{m}_ec)$. |
+| $\signal{\omega}_B^{\mathrm{rel}}$ | $\unit{rad\cdot s^{-1}}$ | Relativistic gyration frequency | Angular gyration frequency $\signal{\omega}_B/\gamma$ of a relativistic particle. |
+| $\gamma$ | $1$ | Lorentz factor | Relativistic factor $(1-\mechanical{v}^2/c^2)^{-1/2}$ of the particle. |
+| $\beta$ | $1$ | Speed ratio | Particle speed divided by the speed of light. |
+| $\tau$ | $\unit{s}$ | Proper time | Time measured in the instantaneous rest frame of the particle. |
+| $U$, $A$ | $\unit{cm\cdot s^{-1}}$, $\unit{cm\cdot s^{-2}}$ | Four-velocity and four-acceleration | Four-vectors of the particle motion. |
+| $F^\mu{}_\nu$ | $\unit{G}$ | Electromagnetic field tensor | Tensor that contains the electric and magnetic fields. |
+| $\vec{\mechanical{a}}$, $\mechanical{a}_\perp$, $\mechanical{a}_\parallel$ | $\unit{cm\cdot s^{-2}}$ | Acceleration | Lab-frame acceleration and its components perpendicular and parallel to the velocity. Primes denote rest-frame values. |
+| $\energy{L}$, $\energy{L}_{\mathrm{sync}}$, $\energy{L}_{\mathrm{IC}}$ | $\unit{erg\cdot s^{-1}}$ | Radiated power | Power radiated by one electron, by synchrotron emission, and by inverse Compton scattering. |
+| $\alpha$ | $\unit{rad}$ | Pitch angle | Angle between the particle velocity and the magnetic field. |
+| $\Omega$ | $\unit{sr}$ | Solid angle | Solid angle in the direction average and the angular power pattern. |
 | $\mechanical{\sigma}_{\mathrm{T}}$ | $\unit{cm^2}$ | Thomson cross section | Ratio of total scattered power to incident energy flux. |
-| $\energy{U}$ | $\unit{erg\cdot cm^{-3}}$ | Radiation energy density | Electromagnetic energy per unit volume in Gaussian CGS. |
-| $\thermal{T}$ | $\unit{K}$ | Brightness temperature | Temperature inferred from the intensity in the Rayleigh–Jeans limit in this section. |
-| $\signal{\omega}_B$ | $\unit{rad\cdot s^{-1}}$ | Angular cyclotron frequency | Angular rate of nonrelativistic gyration in a magnetic field. |
 | $\energy{U}_B$ | $\unit{erg\cdot cm^{-3}}$ | Magnetic energy density | Magnetic field energy per unit volume. |
+| $\energy{U}_{\mathrm{photon}}$ | $\unit{erg\cdot cm^{-3}}$ | Photon energy density | Energy density of the radiation field scattered by inverse Compton scattering. |
+| $\theta$, $\theta'$ | $\unit{rad}$ | Aberration angle | Angle between the velocity and the boost direction in the lab and rest frames. |
+| $\phi$ | $\unit{rad}$ | Dipole pattern angle | Angle measured from the acceleration direction in the dipole power pattern. |
+| $\mechanical{D}$ | $\unit{cm}$ | Observer distance | Distance from the emitting arc to the observer. |
+| $t$, $t_A$, $t_B$ | $\unit{s}$ | Arrival times | Time, and the arrival times of radiation emitted at points A and B. |
+| $\Delta t$, $\Delta t_{\mathrm{pulse}}$ | $\unit{s}$ | Pulse interval and duration | Time between pulses or the observed duration of one pulse. |
+| $\Delta\signal{\omega}$, $\Delta\signal{\omega}_{\mathrm{pulse}}$ | $\unit{rad\cdot s^{-1}}$ | Bandwidth | Spread of angular frequency in the time–bandwidth relation and for one pulse. |
 | $\signal{\omega}_c$ | $\unit{rad\cdot s^{-1}}$ | Critical synchrotron angular frequency | Characteristic frequency scale above which the single-electron spectrum decays rapidly. |

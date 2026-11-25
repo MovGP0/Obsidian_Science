@@ -323,21 +323,21 @@ $$
 Let $R$ be the rabbit population and $W$ the wolf population. The model is
 
 $$
-\frac{dR}{dt}=\alpha R(1-\beta W),
+\frac{dR}{dt}=\alpha R(1-b W),
 \qquad
 \frac{dW}{dt}=\delta W(-1+\gamma R),
 \qquad
-\alpha,\beta,\gamma,\delta>0.
+\alpha,b,\gamma,\delta>0.
 $$
 
-The factor $-\beta W$ represents the effect of predators on the rabbits. The factor $\gamma R$ represents the effect of prey on the wolves. The first handwritten wolf equation has an extra minus sign before $\delta W$. The equilibrium calculation on this page uses the sign shown above, which gives a declining wolf population when $R=0$.
+The factor $-b W$ represents the effect of predators on the rabbits. The factor $\gamma R$ represents the effect of prey on the wolves. The first handwritten wolf equation has an extra minus sign before $\delta W$. The equilibrium calculation on this page uses the sign shown above, which gives a declining wolf population when $R=0$.
 
-The rabbit equation vanishes if $R=0$ or $W=1/\beta$. The wolf equation vanishes if $W=0$ or $R=1/\gamma$. The two equilibria are
+The rabbit equation vanishes if $R=0$ or $W=1/b$. The wolf equation vanishes if $W=0$ or $R=1/\gamma$. The two equilibria are
 
 $$
 (R_{\mathrm e},W_{\mathrm e})=(0,0)
 \qquad\text{and}\qquad
-(R_{\mathrm e},W_{\mathrm e})=\left(\frac1\gamma,\frac1\beta\right).
+(R_{\mathrm e},W_{\mathrm e})=\left(\frac1\gamma,\frac1b\right).
 $$
 
 The phase plane plots $(R(t),W(t))$ with $t$ as the parameter along the trajectory.
@@ -364,11 +364,5 @@ Kyle Kabasares, *Mathematical Modeling (Math 150, UC Merced 2017)*.
 | $\beta_K$ | 1 | Capacity reduction per rabbit | Reduction in koala capacity per rabbit in the first proposed model. |
 | $W$ | 1 | Wolf population | Number of predators in the rabbit and wolf model. |
 | $\delta$ | $\unit{s^{-1}}$ | Wolf decline rate | Fractional rate of decline in the absence of prey. |
-| $\beta$ | 1 | Predator effect coefficient | Reciprocal of the wolf count at which the rabbit growth term vanishes. |
+| $b$ | 1 | Predator effect coefficient | Reciprocal of the wolf count at which the rabbit growth term vanishes. |
 | $\gamma$ | 1 | Prey effect coefficient | Reciprocal of the rabbit count at which the wolf growth term vanishes. |
-| $\tau$ | 1 | Total population | Sum of the four age-group populations. |
-| $T$ | $\unit{s}$ | Sampling period | Time between successive measurements at the same phase. |
-| $\lambda$ | $\unit{s^{-1}}$ | Lyapunov exponent | Exponential rate of growth or decay of a perturbation in time. |
-| $x$, $y$ | $\unit{oz}$ | Ingredient amounts | Onion soup and chicken stock per serving, respectively. |
-| $s$ | $\unit{g}$ | Protein surplus | Protein above the minimum required per serving. |
-| $t$ | — | Iron surplus | Iron above the minimum required per serving, in the unspecified iron units of the exercise. |

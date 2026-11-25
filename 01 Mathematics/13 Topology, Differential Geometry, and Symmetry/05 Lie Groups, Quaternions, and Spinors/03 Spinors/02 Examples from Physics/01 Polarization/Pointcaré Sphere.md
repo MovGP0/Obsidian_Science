@@ -14,7 +14,7 @@ $$\begin{bmatrix}
 -\sin θ & \cos θ
 \end{bmatrix}$$
 we can derive
-$$Q'' = \frac{1}{2} \begin{bmatrix} 1 & 1 \\ -1 & 1 \end{bmatrix}$$
+$$Q'' = \frac{1}{\sqrt{2}} \begin{bmatrix} 1 & 1 \\ -1 & 1 \end{bmatrix}$$
 >[!note] 
 > The matrices
 > 
@@ -22,7 +22,7 @@ $$Q'' = \frac{1}{2} \begin{bmatrix} 1 & 1 \\ -1 & 1 \end{bmatrix}$$
 > 
 > are all examples of Unitary 2⨯2 Matrices and are thus part of the $U(2)$ group. 
 
-Those matrices represent rotations on the *Pointcaré Sphere*, <u>without changing the length</u> of the [[Jones Vectors]].
+Those matrices represent rotations on the *Poincaré Sphere*, <u>without changing the length</u> of the [[Jones Vectors]].
 
 > [!note]
 > Rotations in 3D space $\mathbb{R}^3$ are done by rotation matrices R that satisfy $R^T R = 1$, which means that applying their inverse is returning the same value and they are not changing the length of the rotated 3D vector.
@@ -31,4 +31,4 @@ Those matrices represent rotations on the *Pointcaré Sphere*, <u>without changi
 ## References
 
 - [YouTube: Polarizations and SU(2) Matrices](https://www.youtube.com/watch?v=qICXIY5Dynk)
-- [Wikipdia: Pointcaré Kugel](https://de.wikipedia.org/wiki/Poincar%C3%A9-Kugel)
+- [Wikipedia: Poincaré-Kugel](https://de.wikipedia.org/wiki/Poincar%C3%A9-Kugel)

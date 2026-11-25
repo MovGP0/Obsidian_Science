@@ -508,6 +508,7 @@ Kyle Kabasares, *Intro to Astrophysics (Physics 240A, UC Irvine 2018)*.
 | $\energy{f}_0$ | $\unit{erg\cdot s^{-1}\cdot cm^{-2}}$ | Reference flux | Flux scale for zero magnitude. |
 | $b$ | 1 | Softening constant | Sets the low-flux scale of the inverse hyperbolic sine magnitude. |
 | $Z$ | $\unit{rad}$ | Zenith angle | Angle between the line of sight and the local vertical. |
+| $\mechanical{a},\,\mechanical{a}_0$ | $\unit{cm}$ | Atmospheric path length | Slant path to the star and vertical path at the zenith. |
 | — | 1 | Airmass | Slant atmospheric path length relative to the zenith path length. |
 | $B-V$ | 1 | Color index | Difference between the apparent magnitudes in the $B$ and $V$ filters. |
 | $B,\,V,\,B',\,V'$ | 1 | Filter magnitudes | Standard or instrumental apparent magnitudes in the $B$ and $V$ bands. |
@@ -516,7 +517,7 @@ Kyle Kabasares, *Intro to Astrophysics (Physics 240A, UC Irvine 2018)*.
 | $m_{10}$ | 1 | Absolute magnitude | Apparent magnitude at the reference distance of ten parsecs. |
 | $M,\,M_V$ | 1 | Absolute magnitude | Absolute magnitude, or its value specifically in the $V$ band. |
 | $m-M$ | 1 | Distance modulus | Difference between apparent and absolute magnitude. |
-| $A$ | 1 | Extinction | Increase in apparent magnitude caused by attenuation. |
+| $A,\,A_{\signal{\lambda}},\,A_V,\,A_B$ | 1 | Extinction | Increase in apparent magnitude caused by attenuation, in general, at wavelength $\signal{\lambda}$, or in the $V$ or $B$ band. |
 | $M_{\mathrm{bol}}$ | 1 | Absolute bolometric magnitude | Absolute magnitude based on total luminosity. |
 | $C_{\mathrm{bol}}$ | 1 | Bolometric correction | Offset from the absolute magnitude in one band to the absolute bolometric magnitude. |
 | $n$ | $\unit{cm^{-3}}$ | Grain number density | Number of dust grains per unit volume. |
@@ -531,30 +532,5 @@ Kyle Kabasares, *Intro to Astrophysics (Physics 240A, UC Irvine 2018)*.
 | — | $\unit{mag\cdot arcsec^{-2}}$ | Surface brightness in magnitudes | Magnitude corresponding to the flux in one square arcsecond. |
 | $\mechanical{D}$ | $\unit{pc}$ | Distance | Distance to the square in the problem hint. |
 | $\theta$ | $\unit{rad}$ | Position angle | Orientation on the sky measured from north toward east. |
-| $\mu_B,\,\mu_K$ | $\unit{mag\cdot arcsec^{-2}}$ | Night-sky surface brightness | Sky brightness in the $B$ or $K$ band. |
 | $\theta$ | $\unit{rad}$ | Angular resolution | Minimum angular separation in the Rayleigh criterion. |
 | $\mechanical{D}$ | $\unit{m}$ | Aperture diameter | Diameter of the telescope mirror. |
-| $\alpha$ | $\unit{h}$ | Right ascension | Celestial coordinate measured eastward along the celestial equator. |
-| $\mu$ | $\unit{arcsec\cdot yr^{-1}}$ | Proper motion | Angular rate of motion across the sky. |
-| $\signal{\nu}_0,\,\signal{\nu}_{\mathrm{obs}}$ | $\unit{Hz}$ | Rest and observed frequencies | Frequency in the source rest frame and frequency measured by the observer. |
-| $\signal{\lambda}_0,\,\signal{\lambda}_{\mathrm{obs}},\,\Delta\signal{\lambda}$ | $\unit{cm}$ | Rest wavelength, observed wavelength, and shift | Wavelengths in the rest and observer frames and the difference between them. |
-| $\alpha$ | $\unit{arcsec}$ | Parallax angle | Angular shift due to a one-AU observing baseline. |
-| $\lambda$ | $\unit{rad}$ | Convergent-point angle | Angle between the line of sight to the cluster member and the direction of the shared velocity. |
-| $i$ | $\unit{deg}$ | Inclination | Angle between the orbital axis and the line of sight. |
-| $\mechanical{a}$ | $\unit{cm}$ | Binary separation | Distance between the two stars in a circular orbit. |
-| $\signal{T}$ | $\unit{s}$ | Orbital period | Time for one orbit. |
-| $\mechanical{M}$ | $\unit{g}$ | Stellar mass | Mass in the main-sequence scaling relations. |
-| $t_1,\ldots,t_8$ | $\unit{s}$ | Eclipse contact times | Ingress and egress landmarks in the binary light curve. |
-| $\energy{L}_{\mathrm{planet}},\,\energy{L}_{\star}$ | $\unit{erg\cdot s^{-1}}$ | Planet and stellar luminosities | Radiant powers compared in the direct-detection example. |
-| $e$ | 1 | Orbital eccentricity | Deviation of the orbit from a circle. |
-| $\signal{\sigma}_{\star},\,\signal{\sigma}_{\mathrm S},\,\signal{\sigma}_{\mathrm D},\,\signal{\sigma}_{\mathrm R},\,\signal{\sigma}_{\mathrm P}$ | $\unit{e^-}$ | Photometric noise components | Source noise and per-pixel terms in the aperture noise formula. |
-| $\signal{N},\,\signal{N}_{\mathrm T},\,\signal{N}_{\mathrm E}$ | $\unit{counts}$ | Count noise | Noise in the detected counts, including target and reference contributions. |
-| $\signal{\sigma}_{\mathrm s},\,\signal{\sigma}_{\mathrm{photometric}}$ | — | Scintillation and photometric noise | Noise contributions compared in the exposure example. |
-| $\signal{I}_{\mathrm{obs}},\,\signal{I}_{\star}$ | — | Observed and stellar spectra | Recorded intensity and model stellar intensity as functions of wavelength. |
-| $n$ | $\unit{pc^{-3}}$ | Stellar number density | Number of stars per unit volume. |
-| $\energy{S}$ | $\unit{Jy}$ | Radio flux density | Flux density on the horizontal axis of the radio source count sketch. |
-| $\sigma$ | 1 | Absolute-magnitude dispersion | Standard deviation of the Gaussian magnitude distribution. |
-| $t_0$ | $\unit{yr}$ | Star formation decay time | E-folding time of the exponential star formation history. |
-| $A$ | $\unit{km\cdot s^{-1}\cdot kpc^{-1}}$ | First Oort constant | Local rotational shear inferred from the longitude dependence of radial velocities. |
-| $B$ | $\unit{km\cdot s^{-1}\cdot kpc^{-1}}$ | Second Oort constant | Offset in the nearby tangential velocity per unit distance. |
-| $\alpha$ | $\unit{rad}$ | Scattering angle | Small change in the direction of the moving star. |

@@ -186,7 +186,7 @@ $$
 \energy{W}=\int_{\mechanical{a}}^{\mechanical{b}}\mechanical{F}\,d\mechanical{x}.
 $$
 
-![[Kyle Kabasares - Integral Calculus - Work as area under a force curve.png|**Fig. 1** The strips approximate the area under the force–displacement curve. Each strip has width $\mechanical{\Delta x}$.]]
+![[Kyle Kabasares - Integral Calculus - Work as area under a force curve.png|**Fig. 1** The strips approximate the area under the force–displacement curve. Each strip has width $\Delta\mechanical{x}$.]]
 
 **Example.** A cable weighing $\quantity{2}{lbf/ft}$ lifts coal weighing $\quantity{800}{lbf}$ from a mine shaft of depth $\mechanical{d}=\quantity{500}{ft}$. Find the work done.
 
@@ -254,7 +254,7 @@ Kyle Kabasares, *Calculus II - Integral Calculus (Math 22, UC Merced 2013)*.
 | --- | --- | --- | --- |
 | $\energy{W}$ | $\unit{ft\cdot lbf}$ or $\unit{J}$ | Work | Energy transferred by the force along the path. |
 | $\mechanical{F}$ | $\unit{lbf}$ or $\unit{N}$ | Force | Applied force in the direction of displacement. |
-| $\mechanical{\Delta x}$ | $\unit{ft}$ | Displacement increment | Width of one strip in the work estimate. |
+| $\Delta\mechanical{x}$ | $\unit{ft}$ | Displacement increment | Width of one strip in the work estimate. |
 | $\mechanical{d}$ | $\unit{ft}$ | Shaft depth | Vertical distance from the top to the bottom of the shaft. |
 | $\mechanical{m}$ | $\unit{kg}$ | Total lifted mass | Combined mass of the bucket and remaining water. |
 | $\mechanical{g}$ | $\unit{m/s^2}$ | Gravitational acceleration | Converts the lifted mass to its weight. |

@@ -1,17 +1,17 @@
 The **Friedmann-Lemaître-Robertson-Walker (FLRW) metric** describes a homogeneous and isotropic universe and is the basis for the modern theory of cosmology.
 
-$$ ds^2 = -c^2 dt^2 +a^2(t) \left(\frac{1}{1-kr^2} dr^2 + r^2 a\theta^2 + r^2 \sin^2 \theta d\phi^2 \right)$$
+$$ ds^2 = -c^2 dt^2 +a^2(t) \left(\frac{1}{1-kr^2} dr^2 + r^2 d\theta^2 + r^2 \sin^2 \theta d\phi^2 \right)$$
 
 The FLRW metric describes the geometry of the universe, incorporating the effects of cosmic expansion via the scale factor $a(t)$, spatial curvature $k$, and the passage of time $t$. It provides the framework for understanding the evolution of the universe and underlies all modern cosmological theories, including the Big Bang model and dark energy-dominated expansion.
 
 ----
 
-- $-ds^2$ is the [[Spacetime Interval]]
+- $ds^2$ is the [[Spacetime Interval]]
 
 - $-c^2 dt^2$: Time Contribution
 	- This term represents the **contribution of time** to the spacetime interval.
 	- $c$ is the speed of light, and $t$ is the **cosmic time**, a universal time coordinate used in cosmology.
-	- The negative sign reflects the metric signature used in general relativity (often \((-+++)\)).
+	- The negative sign reflects the metric signature used in general relativity (often $(-,+,+,+)$).
 
 - $a^2(t)$: Scale Factor
 	- $a(t)$ is the **scale factor**, which measures the expansion or contraction of the universe as a function of time.
@@ -53,11 +53,11 @@ $$ds^2 = -c^2 dt^2 + a^2(t) \left(dr^2 + r^2 d\theta^2 + r^2 \sin^2 \theta d\phi
 
 This represents a spatially flat universe (consistent with current observations).
 
-**Static Universe ($a(t) = 1$):**
+**Static Universe ($a(t) = 1$ at all times):**
 
 $$ds^2 = -c^2 dt^2 + \frac{1}{1-kr^2} dr^2 + r^2 d\theta^2 + r^2 \sin^2 \theta d\phi^2$$
 
-This represents a static (non-expanding) universe.
+This represents a static (non-expanding) universe. It requires $\dot a = 0$ at all times, not only $a = 1$ at one instant. With nonzero matter density, the Friedmann equations allow this only with a cosmological constant $\Lambda$ and $k > 0$ (the Einstein static universe). Thus it is not a general special case of the FLRW solutions.
 
 **Small Scales or Short Times:**
 

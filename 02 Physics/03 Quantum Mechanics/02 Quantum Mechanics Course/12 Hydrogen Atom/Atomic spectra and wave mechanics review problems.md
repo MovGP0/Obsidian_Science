@@ -43,10 +43,10 @@ Take $\energy{V}_2>\energy{E}>\energy{V}_1>0$. In region I, $\energy{V}=0$ and t
 For $\mechanical{L}=0.100\,\unit{nm}$, use $\energy{E}_n=n^2h^2/(8\mechanical{m}_e\mechanical{L}^{\,2})$. Substituting $h=6.626\times10^{-34}\,\unit{J\,s}$ and $\mechanical{m}_e=9.11\times10^{-31}\,\unit{kg}$ gives
 
 $$
-\energy{E}_1=6.02\times10^{-18}\,\unit{J}=37.7\,\unit{eV}.
+\energy{E}_1=6.02\times10^{-18}\,\unit{J}=37.6\,\unit{eV}.
 $$
 
-Using that rounded ground-state energy gives $\energy{E}_2=150.8\,\unit{eV}$, $\energy{E}_3=339.3\,\unit{eV}$, and $\energy{E}_4=603.2\,\unit{eV}$.
+Using that rounded ground-state energy gives $\energy{E}_2=150.4\,\unit{eV}$, $\energy{E}_3=338.4\,\unit{eV}$, and $\energy{E}_4=601.6\,\unit{eV}$.
 
 ##### Reviewing hydrogen
 
@@ -132,7 +132,7 @@ For an electron and $\mechanical{\eta}=1.0\times10^{-9}\,\unit{m}$, use $\hbar=1
 1. $(5,2,1,1/2)\to(5,2,1,-1/2)$ fails the $\Delta\ell=\pm1$ condition.
 2. $(4,3,0,1/2)\to(4,2,1,-1/2)$ changes the spin projection. The handwritten reason was $\Delta n\ne0$, although the earlier rule allows $\Delta n=0$.
 3. $(5,2,-2,-1/2)\to(1,0,0,-1/2)$ fails both the $\Delta\ell$ and $\Delta m_\ell$ conditions.
-4. The fourth transition is marked allowed. The calculation gives $\Delta\energy{E}=\energy{E}_f-\energy{E}_i=-(13.6\,\unit{eV})(1/n_f^2-1/n_i^2)=2.55\,\unit{eV}$.
+4. The fourth transition is marked allowed. The source does not state its levels; the value $2.55\,\unit{eV}$ matches the emission $n_i=4\to n_f=2$. The emitted photon energy is $\lvert\Delta\energy{E}\rvert=\energy{E}_i-\energy{E}_f=(13.6\,\unit{eV})(1/n_f^2-1/n_i^2)=2.55\,\unit{eV}$.
 
 ##### Angle of orbital angular momentum
 
@@ -239,7 +239,7 @@ $$
 \Delta\energy{E}=\energy{E}_2-\energy{E}_1=\frac{3\pi^2\hbar^2}{2\mechanical{m}_eL^2}
 =\frac{hc}{\signal{\lambda}},\qquad
 L=\sqrt{\frac{3\pi^2\hbar^2\signal{\lambda}}{2\mechanical{m}_ehc}}
-=0.791\,\unit{nm}.
+=0.795\,\unit{nm}.
 $$
 
 **10.6(a).** Model the electron as a classical uniform sphere of radius $r$. Its angular momentum is $\mechanical{L}=\mechanical{I}\mechanical{\omega}=(2/5)\mechanical{m}_e r^2\mechanical{\omega}=(2/5)\mechanical{m}_er\mechanical{v}$. Equating this to $\sqrt{s(s+1)}\,\hbar=\sqrt{3/4}\,\hbar$ gives a surface speed of $2.51\times10^{11}\,\unit{m/s}$, about $837c$. The result exposes the failure of the classical spinning-sphere model.
@@ -336,6 +336,12 @@ Kyle Kabasares, *Modern Physics (Physics 10, UC Merced 2014)*.
 | $\magnetic{\mu}_B$ | $\unit{J/T}$ | Bohr magneton | Scale of the electron orbital magnetic moment. |
 | $\mechanical{\vec S}$ | $\unit{J\,s}$ | Spin angular momentum | Intrinsic angular momentum of a particle. |
 | $\mechanical{\vec J}$ | $\unit{J\,s}$ | Total angular momentum | Vector sum of orbital and spin angular momenta. |
-| $\lambda$ | $\unit{s^{-1}}$ | Decay constant | Probability rate for the decay of an individual nucleus. |
-| $R$ | $\unit{Bq}$ | Activity | Number of radioactive decays per unit time. |
-| $\tau$ | $\unit{s}$ | Mean lifetime | Reciprocal of the decay constant. |
+| $k$ | $\unit{m^{-1}}$ | Wave number | Local wave number $2\pi/\signal{\lambda}$ in a classically allowed region. |
+| $\kappa$ | $\unit{m^{-1}}$ | Decay constant | Exponential decay rate of the wave function in a forbidden region. |
+| $\mechanical{\eta}$ | $\unit{m}$ | Penetration depth | Distance over which the wave function decays by $1/e$ in a barrier. |
+| $\mechanical{\vec L}$ | $\unit{J\,s}$ | Orbital angular momentum | Angular momentum of the electron orbital motion. |
+| $\mechanical{L}_z$ | $\unit{J\,s}$ | Orbital angular momentum projection | Component $m_\ell\hbar$ of $\mechanical{\vec L}$ along the $z$-axis. |
+| $m_\ell$ | $1$ | Magnetic quantum number | Index of the orbital projection $\mechanical{L}_z=m_\ell\hbar$. |
+| $j$ | $1$ | Total angular momentum quantum number | Gives the magnitude $\sqrt{j(j+1)}\,\hbar$ of $\mechanical{\vec J}$. |
+| $m_j$ | $1$ | Total projection quantum number | Index of the projection $\mechanical{J}_z=m_j\hbar$. |
+| $\psi$ | — | Wave function | Probability amplitude of the particle. Its unit depends on the dimension. |

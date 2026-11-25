@@ -16,7 +16,7 @@ Use this list to trace the chapter's treatment of open-path timing, clock transp
 5. K. C. Turner, H. A. Hill, New experimental Limit on velocity-dependent interactions of clocks and distant matter. *Phys. Rev.* **134**, B252–B256 (1964).
 6. M. Ruderfer, Erratum: first order terrestrial ether drift using the Mössbauer radiation. *Phys. Rev. Lett.* **7**, 361 (1961).
 7. C. Møller, New experimental tests of the special principle of relativity. *Proc. R. Soc. Lond. A* **270**, 306–314 (1962).
-8. T. P. Krisher et al., Test of the isotropy of the one-way speed of light using Hydrogen-maser frequency standards. *Phys. Rev.* **42**, 731–734 (1980).
+8. T. P. Krisher et al., Test of the isotropy of the one-way speed of light using Hydrogen-maser frequency standards. *Phys. Rev. D* **42**, 731–734 (1990).
 9. C. S. Unnikrishnan, Precision measurement of the one-way speed of light and implications to the theory of relativity, in *Physical Interpretations of Relativity Theory: Proceedings, London 2006*, ed. by M. C. Duffy, V. O. Gladyshev, A. Morozov, P. Rowlands (Bauman Moscow State Technical University, 2011), pp. 505–511.
 10. C. S. Unnikrishnan, Physics in the ‘once-given’ Universe, in *Recent Developments in Theoretical Physics*, ed. by S. Ghosh, G. Kar (World Scientific, Singapore, 2009), pp. 99–120.
 11. C. S. Unnikrishnan, Experimental evidence for the gravitational basis for Relativity and dynamics, in *The Physical Universe*, ed. by S. M. Wagh, S. D. Maharaj, G. Chon (Central India Research Institute, Nagpur, India, 2018), pp. 183–202.

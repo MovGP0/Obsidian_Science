@@ -1,6 +1,6 @@
 ![[biorthogonal4.4 wavelet.png|400]]
 
-Defined by two distinct filter banks: one for analysis $(h, g)$, one for reconstruction $\tilde h, \tilde g$.
+Defined by two distinct filter banks: one for analysis $(h, g)$, one for reconstruction $(\tilde h, \tilde g)$.
 They satisfy dual moment‑vanishing constraints.
 
 Refinement equations:
@@ -16,4 +16,4 @@ $$
 
 > [!note]
 > - Design ensures symmetry and perfect reconstruction.
-> - Primal (h, g) and dual (ĥ, ĝ) filter sets satisfy perfect reconstruction and dual moment constraints.
+> - Primal $(h, g)$ and dual $(\tilde h, \tilde g)$ filter sets satisfy perfect reconstruction and dual moment constraints.

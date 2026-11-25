@@ -12,9 +12,9 @@ title: "Radiative absorption, recombination, and Thomson scattering"
 Define the optical depth between two positions along a ray by
 
 $$
-\energy{\tau}_{\signal{\nu}}(\mechanical{s}_0,\mechanical{s})
+\tau_{\signal{\nu}}(\mechanical{s}_0,\mechanical{s})
 =\int_{\mechanical{s}_0}^{\mechanical{s}}
-\energy{\alpha}_{\signal{\nu}}(\mechanical{s}')\,d\mechanical{s}'.
+\signal{\alpha}_{\signal{\nu}}(\mechanical{s}')\,d\mechanical{s}'.
 $$
 
 The transfer equation includes both absorption and emission. For pure absorption, the ratio of the emerging specific intensity at $\mechanical{s}$ to the incident specific intensity at $\mechanical{s}_0$ is
@@ -22,44 +22,44 @@ The transfer equation includes both absorption and emission. For pure absorption
 $$
 \frac{\energy{I}_{\signal{\nu}}(\mechanical{s})}
 {\energy{I}_{\signal{\nu}}(\mechanical{s}_0)}
-=e^{-\energy{\tau}_{\signal{\nu}}(\mechanical{s}_0,\mechanical{s})}.
+=e^{-\tau_{\signal{\nu}}(\mechanical{s}_0,\mechanical{s})}.
 $$
 
-Each specific intensity measures energy per unit frequency, solid angle, projected area, and time. Dividing numerator and denominator by the photon energy $h\signal{\nu}$ converts the ratio to a photon-number ratio. Thus $e^{-\energy{\tau}_{\signal{\nu}}}$ gives the fraction of incident photons that emerge, or the probability of traversing the path without absorption.
+Each specific intensity measures energy per unit frequency, solid angle, projected area, and time. Dividing numerator and denominator by the photon energy $h\signal{\nu}$ converts the ratio to a photon-number ratio. Thus $e^{-\tau_{\signal{\nu}}}$ gives the fraction of incident photons that emerge, or the probability of traversing the path without absorption.
 
-- For $\energy{\tau}_{\signal{\nu}}=0$, every incident photon emerges.
-- As $\energy{\tau}_{\signal{\nu}}\to\infty$, the transmitted fraction tends to zero.
+- For $\tau_{\signal{\nu}}=0$, every incident photon emerges.
+- As $\tau_{\signal{\nu}}\to\infty$, the transmitted fraction tends to zero.
 
-The probability density for the optical depth at the first absorption is $e^{-\energy{\tau}_{\signal{\nu}}}$. Its integral over nonnegative optical depth is one, and its mean is
+The probability density for the optical depth at the first absorption is $e^{-\tau_{\signal{\nu}}}$. Its integral over nonnegative optical depth is one, and its mean is
 
 $$
 \begin{aligned}
-\int_0^\infty e^{-\energy{\tau}_{\signal{\nu}}}\,d\energy{\tau}_{\signal{\nu}} &=1,\\
-\langle\energy{\tau}_{\signal{\nu}}\rangle
-=\int_0^\infty \energy{\tau}_{\signal{\nu}}e^{-\energy{\tau}_{\signal{\nu}}}\,d\energy{\tau}_{\signal{\nu}} &=1.
+\int_0^\infty e^{-\tau_{\signal{\nu}}}\,d\tau_{\signal{\nu}} &=1,\\
+\langle\tau_{\signal{\nu}}\rangle
+=\int_0^\infty \tau_{\signal{\nu}}e^{-\tau_{\signal{\nu}}}\,d\tau_{\signal{\nu}} &=1.
 \end{aligned}
 $$
 
-A medium with $\energy{\tau}_{\signal{\nu}}\gg1$ is **optically thick**. A photon is likely to be absorbed before crossing it. A medium with $\energy{\tau}_{\signal{\nu}}\ll1$ is **optically thin**, and a photon is likely to escape. The characteristic boundary is $\energy{\tau}_{\signal{\nu}}=1$.
+A medium with $\tau_{\signal{\nu}}\gg1$ is **optically thick**. A photon is likely to be absorbed before crossing it. A medium with $\tau_{\signal{\nu}}\ll1$ is **optically thin**, and a photon is likely to escape. The characteristic boundary is $\tau_{\signal{\nu}}=1$.
 
 The **photon mean free path** is the average distance a photon travels before absorption. The corresponding mean optical depth is unity.
 
 Define the characteristic path length $\mechanical{\ell}_{\signal{\nu}}$ by
 
 $$
-\int_0^{\mechanical{\ell}_{\signal{\nu}}}\energy{\alpha}_{\signal{\nu}}\,d\mechanical{s}
-=1=\langle\energy{\alpha}_{\signal{\nu}}\rangle\,\mechanical{\ell}_{\signal{\nu}},
+\int_0^{\mechanical{\ell}_{\signal{\nu}}}\signal{\alpha}_{\signal{\nu}}\,d\mechanical{s}
+=1=\langle\signal{\alpha}_{\signal{\nu}}\rangle\,\mechanical{\ell}_{\signal{\nu}},
 \qquad
-\langle\energy{\alpha}_{\signal{\nu}}\rangle
+\langle\signal{\alpha}_{\signal{\nu}}\rangle
 =\frac{1}{\mechanical{\ell}_{\signal{\nu}}}
-\int_0^{\mechanical{\ell}_{\signal{\nu}}}\energy{\alpha}_{\signal{\nu}}\,d\mechanical{s}.
+\int_0^{\mechanical{\ell}_{\signal{\nu}}}\signal{\alpha}_{\signal{\nu}}\,d\mechanical{s}.
 $$
 
-In a homogeneous medium, $\langle\energy{\alpha}_{\signal{\nu}}\rangle=\energy{\alpha}_{\signal{\nu}}$ and the photon mean free path is
+In a homogeneous medium, $\langle\signal{\alpha}_{\signal{\nu}}\rangle=\signal{\alpha}_{\signal{\nu}}$ and the photon mean free path is
 
 $$
 \mechanical{\ell}_{\signal{\nu}}
-=\frac{1}{\energy{\alpha}_{\signal{\nu}}}
+=\frac{1}{\signal{\alpha}_{\signal{\nu}}}
 =\frac{1}{\mechanical{n}\mechanical{\sigma}_{\signal{\nu}}}.
 $$
 
@@ -114,9 +114,9 @@ K edges of heavier elements such as C, Ne, Mg, Si, and Fe are important contribu
 
 $$
 \energy{I}_{\signal{\nu}}
-=\energy{I}_{\signal{\nu}}(\mechanical{s}_0)e^{-\energy{\tau}_{\signal{\nu}}},
+=\energy{I}_{\signal{\nu}}(\mechanical{s}_0)e^{-\tau_{\signal{\nu}}},
 \qquad
-\energy{\tau}_{\signal{\nu}}=\int\energy{\alpha}_{\signal{\nu}}\,d\mechanical{s}.
+\tau_{\signal{\nu}}=\int\signal{\alpha}_{\signal{\nu}}\,d\mechanical{s}.
 $$
 
 ##### Photoelectric absorption coefficient of gas with solar abundances
@@ -124,10 +124,10 @@ $$
 The absorption coefficient is summed over all elements, where $\mechanical{n}_i$ is the number density of element $i$.
 
 $$
-\energy{\alpha}_{\signal{\omega}}
+\signal{\alpha}_{\signal{\omega}}
 =\sum_i\mechanical{n}_i\bigl(\mechanical{\sigma}_{\mathrm{ph}}^{\mathrm{abs}}(\signal{\omega})\bigr)_i,
 \qquad
-\energy{\tau}_{\signal{\omega}}
+\tau_{\signal{\omega}}
 =\int_{\mechanical{s}_0}^{\mechanical{s}}\sum_i\mechanical{n}_i
 \bigl(\mechanical{\sigma}_{\mathrm{ph}}^{\mathrm{abs}}(\signal{\omega})\bigr)_i\,d\mechanical{s}'.
 $$
@@ -144,7 +144,7 @@ $$
 If the relative abundances are constant along the path, the optical depth is
 
 $$
-\energy{\tau}_{\signal{\omega}}
+\tau_{\signal{\omega}}
 =\left[\sum_i\left(\frac{\mechanical{n}_i}{\mechanical{n}_{\mathrm{H}}}\right)
 \bigl(\mechanical{\sigma}_{\mathrm{ph}}^{\mathrm{abs}}(\signal{\omega})\bigr)_i\right]
 \mechanical{N}_{\mathrm{H}},
@@ -161,13 +161,13 @@ Problem set 2 is due April 30. The lecture begins by reviewing the optical-depth
 For solar abundances and photon energies above about $\quantity{0.1}{keV}$, the notes give this approximation when individual edges are unresolved:
 
 $$
-\energy{\tau}_{\signal{\omega}}
+\tau_{\signal{\omega}}
 \simeq 2\times10^{-22}
 \left(\frac{\hbar\signal{\omega}}{\quantity{1}{keV}}\right)^{-8/3}
 \left(\frac{\mechanical{N}_{\mathrm{H}}}{\unit{cm^{-2}}}\right).
 $$
 
-The optical depth is larger for smaller photon energy. The notes also mark the approximate $\signal{\omega}^{-3}$ dependence of the underlying photoelectric cross section. At $\energy{E}_\gamma=\quantity{1}{keV}$, a column $\mechanical{N}_{\mathrm{H}}=\quantity{5\times10^{21}}{cm^{-2}}$ gives $\energy{\tau}_{\signal{\omega}}\simeq1$.
+The optical depth is larger for smaller photon energy. The notes also mark the approximate $\signal{\omega}^{-3}$ dependence of the underlying photoelectric cross section. At $\energy{E}_\gamma=\quantity{1}{keV}$, a column $\mechanical{N}_{\mathrm{H}}=\quantity{5\times10^{21}}{cm^{-2}}$ gives $\tau_{\signal{\omega}}\simeq1$.
 
 ![[Kyle Kabasares - Radiative Transfer - Transparency versus hydrogen column.png|**Fig. 17** Photon energy at unit optical depth versus hydrogen column density. The curve separates the transparent region above it from the opaque region below it. The slide cites Niel Brandt's Astronomy 485 course.]]
 
@@ -304,7 +304,7 @@ $$
 
 ![[Kyle Kabasares - Radiative Transfer - Thomson scattering geometry.png|**Fig. 24** An incident wave polarized along $x$ reaches an electron initially at rest. The scattered ray makes an angle $\Theta$ with the polarization axis.]]
 
-The lecture recalls $\energy{L}=\mechanical{\sigma}_{\mathrm{T}}\energy{S}$, the nonrelativistic oscillation condition $\mechanical{v}\ll c$, Larmor's scaling $\energy{L}\propto\mechanical{a}^2$, and the relation $\energy{\alpha}=\mechanical{n}\mechanical{\sigma}$ between an attenuation coefficient and a cross section.
+The lecture recalls $\energy{L}=\mechanical{\sigma}_{\mathrm{T}}\energy{S}$, the nonrelativistic oscillation condition $\mechanical{v}\ll c$, Larmor's scaling $\energy{L}\propto\mechanical{a}^2$, and the relation $\signal{\alpha}=\mechanical{n}\mechanical{\sigma}$ between an attenuation coefficient and a cross section.
 
 The incident energy flux is the magnitude of the **Poynting vector**, which in CGS is
 
@@ -336,12 +336,14 @@ Kyle Kabasares, *Radiative Transfer in Astrophysics (Physics 240C, UC Irvine 201
 | $\energy{I}$ | $\unit{erg\cdot s^{-1}\cdot cm^{-2}\cdot sr^{-1}}$ | Frequency-integrated intensity | Specific intensity integrated over frequency. |
 | $\mechanical{\sigma}_{\signal{\nu}}$ | $\unit{cm^2}$ | Absorption cross section | Effective area presented by one absorber at frequency $\signal{\nu}$. |
 | $\mechanical{n}$ | $\unit{cm^{-3}}$ | Number density | Number of absorbers per unit volume. |
-| $\energy{\alpha}_{\signal{\nu}}$ | $\unit{cm^{-1}}$ | Absorption coefficient | Fractional loss of specific intensity per unit path length. |
-| $\energy{\tau}_{\signal{\nu}}$ | $1$ | Optical depth | Absorption coefficient integrated along a path. |
+| $\signal{\alpha}_{\signal{\nu}}$ | $\unit{cm^{-1}}$ | Absorption coefficient | Fractional loss of specific intensity per unit path length. It is distinct from the fine-structure constant $\alpha$. |
+| $\tau_{\signal{\nu}}$ | $1$ | Optical depth | Absorption coefficient integrated along a path. |
 | $\mechanical{\ell}_{\signal{\nu}}$ | $\unit{cm}$ | Photon mean free path | Average path length to absorption in a homogeneous medium. |
 | $\energy{E}_{\mathrm{I}}$ | $\unit{eV}$ | Ionization energy | Energy required to remove a bound electron from the atom. |
 | $\mechanical{N}_{\mathrm{H}}$ | $\unit{cm^{-2}}$ | Hydrogen absorption column density | Hydrogen number density integrated along the ray. |
 | $\mechanical{a}_0$ | $\unit{cm}$ | Bohr radius | Characteristic radius of the hydrogen ground state. |
 | $\alpha$ | $1$ | Fine-structure constant | Dimensionless electromagnetic coupling constant. |
+| $n$ | $1$ | Principal quantum number | Index of the hydrogenic energy level. It is distinct from the number density $\mechanical{n}$. |
+| $Z$ | $1$ | Atomic number | Number of protons in the nucleus. |
 | $\mechanical{\sigma}_{\mathrm{T}}$ | $\unit{cm^2}$ | Thomson cross section | Ratio of total scattered power to incident energy flux. |
 | $\energy{S}$ | $\unit{erg\cdot s^{-1}\cdot cm^{-2}}$ | Incident energy flux | Electromagnetic energy incident per unit time and area. |

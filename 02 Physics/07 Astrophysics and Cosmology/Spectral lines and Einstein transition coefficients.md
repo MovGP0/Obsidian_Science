@@ -58,7 +58,7 @@ $$
 \qquad
 \energy{A}_u=\sum_{\ell<u}\energy{A}_{u\to\ell},
 \qquad
-\frac{d\energy{E}_{\mathrm{rad}}}{dt}=N_u\energy{A}_{u\to\ell}h\signal{\nu}_{\ell u}.
+\frac{d\energy{E}_{\mathrm{rad}}}{dt}=N_u\energy{A}_{u\to\ell}h\signal{\nu}_{u\ell}.
 $$
 
 The last expression gives the emitted line power in the optically thin limit. The downward transition carries an electron from the upper to the lower state. In an external radiation field, photons can induce the upward transition $\ell\to u$.
@@ -95,7 +95,7 @@ Test this tentative equation in thermal equilibrium, where $\energy{J}_{\signal{
 
 An incident photon can induce a downward transition, producing an additional photon of the same energy as the incident one.
 
-![[Kyle Kabasares - Radiative Transfer - Stimulated two-level transition.png|**Fig. 82** A single incident photon stimulates a downward transition, leaving two outgoing photons with energy $h\nu_{\ell u}=E_u-E_\ell$ each.]]
+![[Kyle Kabasares - Radiative Transfer - Stimulated two-level transition.png|**Fig. 82** A single incident photon stimulates a downward transition, leaving two outgoing photons with energy $h\nu_{u\ell}=E_u-E_\ell$ each.]]
 
 The stimulated emission probability per unit time is $\energy{B}_{u\to\ell}\energy{J}_{\signal{\nu}}$. Its contribution to the upper level is
 
@@ -200,16 +200,16 @@ Use $d\energy{I}_{\signal{\nu}}/d\mechanical{s}=-\energy{\alpha}_{\signal{\nu}}\
 
 $$
 \energy{j}_{\signal{\nu}}=\frac{\energy{\epsilon}_{\signal{\nu}}}{4\pi}
-=\frac{h\signal{\nu}_{\ell u}}{4\pi}\mechanical{n}_u\energy{A}_{u\to\ell}\phi(\signal{\nu}),
+=\frac{h\signal{\nu}_{u\ell}}{4\pi}\mechanical{n}_u\energy{A}_{u\to\ell}\phi(\signal{\nu}),
 \qquad
-\signal{\nu}_{\ell u}=\frac{\energy{E}_u-\energy{E}_\ell}{h}.
+\signal{\nu}_{u\ell}=\frac{\energy{E}_u-\energy{E}_\ell}{h}.
 $$
 
-Here $\mechanical{n}_u$ is the number of electrons in the upper state per unit volume. The number of photoabsorptions per unit time is $N_\ell\energy{B}_{\ell\to u}\langle\energy{J}\rangle$. In a particular direction, the absorption term is
+Here $\mechanical{n}_u$ is the number of atoms or ions in the upper level per unit volume. The number of photoabsorptions per unit time is $N_\ell\energy{B}_{\ell\to u}\langle\energy{J}\rangle$. In a particular direction, the absorption term is
 
 $$
 \left.\frac{d\energy{I}_{\signal{\nu}}}{d\mechanical{s}}\right|_{\mathrm{abs}}
-=-\frac{h\signal{\nu}_{\ell u}}{4\pi}\mechanical{n}_\ell
+=-\frac{h\signal{\nu}_{u\ell}}{4\pi}\mechanical{n}_\ell
 \energy{B}_{\ell\to u}\phi(\signal{\nu})\energy{I}_{\signal{\nu}}
 =-\energy{\alpha}_{\signal{\nu}}^{\mathrm{abs}}\energy{I}_{\signal{\nu}}.
 $$
@@ -220,7 +220,7 @@ The stimulated emission rate is $N_u\energy{B}_{u\to\ell}\langle\energy{J}\rangl
 
 $$
 \left.\frac{d\energy{I}_{\signal{\nu}}}{d\mechanical{s}}\right|_{\mathrm{stim}}
-=\frac{h\signal{\nu}_{\ell u}}{4\pi}\mechanical{n}_u
+=\frac{h\signal{\nu}_{u\ell}}{4\pi}\mechanical{n}_u
 \energy{B}_{u\to\ell}\phi(\signal{\nu})\energy{I}_{\signal{\nu}}.
 $$
 
@@ -230,7 +230,7 @@ $$
 \energy{\alpha}_{\signal{\nu}}
 =\energy{\alpha}_{\signal{\nu}}^{\mathrm{photoabs}}
 -\energy{\alpha}_{\signal{\nu}}^{\mathrm{stim}}
-=\frac{h\signal{\nu}_{\ell u}}{4\pi}\phi(\signal{\nu})
+=\frac{h\signal{\nu}_{u\ell}}{4\pi}\phi(\signal{\nu})
 \mechanical{n}_\ell\energy{B}_{\ell\to u}
 \left(1-\frac{\mechanical{n}_u\energy{B}_{u\to\ell}}{\mechanical{n}_\ell\energy{B}_{\ell\to u}}\right).
 $$
@@ -239,9 +239,9 @@ The photoabsorption term alone is called the absorption coefficient uncorrected 
 
 $$
 \frac{d\energy{I}_{\signal{\nu}}}{d\mechanical{s}}
-=-\frac{h\signal{\nu}_{\ell u}}{4\pi}\phi(\signal{\nu})
+=-\frac{h\signal{\nu}_{u\ell}}{4\pi}\phi(\signal{\nu})
 (\mechanical{n}_\ell\energy{B}_{\ell\to u}-\mechanical{n}_u\energy{B}_{u\to\ell})\energy{I}_{\signal{\nu}}
-+\frac{h\signal{\nu}_{\ell u}}{4\pi}\mechanical{n}_u\energy{A}_{u\to\ell}\phi(\signal{\nu}).
++\frac{h\signal{\nu}_{u\ell}}{4\pi}\mechanical{n}_u\energy{A}_{u\to\ell}\phi(\signal{\nu}).
 $$
 
 ##### Thermal line source function
@@ -252,17 +252,17 @@ $$
 \energy{S}_{\signal{\nu}}
 =\frac{\mechanical{n}_u\energy{A}_{u\to\ell}}
 {\mechanical{n}_\ell\energy{B}_{\ell\to u}-\mechanical{n}_u\energy{B}_{u\to\ell}}
-=\frac{2h\signal{\nu}_{\ell u}^3/c^2}
+=\frac{2h\signal{\nu}_{u\ell}^3/c^2}
 {\dfrac{\mechanical{n}_\ell\energy{B}_{\ell\to u}}{\mechanical{n}_u\energy{B}_{u\to\ell}}-1}.
 $$
 
-Thermal populations give $\mechanical{n}_\ell/\mechanical{n}_u=(g_\ell/g_u)e^{h\signal{\nu}_{\ell u}/(k_{\mathrm B}\thermal{T})}$. This leads to $\energy{S}_{\signal{\nu}}=\energy{B}_{\signal{\nu}_{\ell u}}(\thermal{T})$, approximating $\signal{\nu}\simeq\signal{\nu}_{\ell u}$ across the line. This is the thermal-radiation condition. The resulting emergent intensity also depends on optical depth.
+Thermal populations give $\mechanical{n}_\ell/\mechanical{n}_u=(g_\ell/g_u)e^{h\signal{\nu}_{u\ell}/(k_{\mathrm B}\thermal{T})}$. This leads to $\energy{S}_{\signal{\nu}}=\energy{B}_{\signal{\nu}_{u\ell}}(\thermal{T})$, approximating $\signal{\nu}\simeq\signal{\nu}_{u\ell}$ across the line. This is the thermal-radiation condition. The resulting emergent intensity also depends on optical depth.
 
 $$
 \energy{\alpha}_{\signal{\nu}}
-=\frac{h\signal{\nu}_{\ell u}}{4\pi}
+=\frac{h\signal{\nu}_{u\ell}}{4\pi}
 \phi(\signal{\nu})\mechanical{n}_\ell\energy{B}_{\ell\to u}
-\left[1-e^{-h\signal{\nu}_{\ell u}/(k_{\mathrm B}\thermal{T})}\right].
+\left[1-e^{-h\signal{\nu}_{u\ell}/(k_{\mathrm B}\thermal{T})}\right].
 $$
 
 The handwritten lower-to-upper population ratio reverses the exponent sign, and the boxed absorption coefficient omits $\mechanical{n}_\ell$. The expressions here follow from the Boltzmann and transfer equations above.
@@ -275,17 +275,19 @@ Kyle Kabasares, *Radiative Transfer in Astrophysics (Physics 240C, UC Irvine 201
 
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
-| $\energy{E}$ | $\unit{erg}$ | Radiant energy | Energy emitted by the source. |
+| $\energy{U}_{B,\mathrm{tot}}$ | $\unit{erg}$ | Magnetic energy | Total magnetic energy in one radio lobe. |
+| $\magnetic{B}$ | $\unit{G}$ | Magnetic field | Equipartition magnetic field in the radio lobe. |
+| $\mechanical{R}$ | $\unit{cm}$ | Radius | Radius of the sphere that approximates a radio lobe. |
+| $\energy{E}$ | $\unit{erg}$ | Level energy, radiated energy | Energies $\energy{E}_u$ and $\energy{E}_\ell$ of the two levels, or radiated energy $\energy{E}_{\mathrm{rad}}$. |
+| $\signal{\nu}_{u\ell}$ | $\unit{Hz}$ | Transition frequency | Frequency of the photon emitted in the transition from $u$ to $\ell$. |
+| $N_u$, $N_\ell$ | $1$ | Level populations | Numbers of atoms or ions in the upper and lower levels. |
+| $g_u$, $g_\ell$ | $1$ | Statistical weights | Degeneracies of the upper and lower levels. |
 | $\energy{I}_{\signal{\nu}}$ | $\unit{erg\cdot s^{-1}\cdot cm^{-2}\cdot sr^{-1}\cdot Hz^{-1}}$ | Specific intensity | Radiated power per unit projected area, solid angle, and frequency. |
-| $\energy{I}$ | $\unit{erg\cdot s^{-1}\cdot cm^{-2}\cdot sr^{-1}}$ | Frequency-integrated intensity | Specific intensity integrated over frequency. |
 | $\energy{j}_{\signal{\nu}}$ | $\unit{erg\cdot s^{-1}\cdot Hz^{-1}\cdot sr^{-1}\cdot cm^{-3}}$ | Emission coefficient | Specific intensity added by spontaneous emission per unit path length. |
-| $\mechanical{n}$ | $\unit{cm^{-3}}$ | Number density | Number of absorbers per unit volume. |
+| $\mechanical{n}_u$, $\mechanical{n}_\ell$ | $\unit{cm^{-3}}$ | Level number densities | Numbers of atoms or ions in the upper and lower levels per unit volume. |
 | $\energy{\alpha}_{\signal{\nu}}$ | $\unit{cm^{-1}}$ | Absorption coefficient | Fractional loss of specific intensity per unit path length. |
 | $\energy{J}_{\signal{\nu}}$ | $\unit{erg\cdot s^{-1}\cdot cm^{-2}\cdot sr^{-1}\cdot Hz^{-1}}$ | Mean intensity | Specific intensity averaged over all directions. |
-| $\alpha$ | $1$ | Fine-structure constant | Dimensionless electromagnetic coupling constant. |
-| $\energy{S}$ | $\unit{erg\cdot s^{-1}\cdot cm^{-2}}$ | Incident energy flux | Electromagnetic energy incident per unit time and area. |
-| $\energy{U}$ | $\unit{erg\cdot cm^{-3}}$ | Radiation energy density | Electromagnetic energy per unit volume in Gaussian CGS. |
-| $\thermal{T}$ | $\unit{K}$ | Brightness temperature | Temperature inferred from the intensity in the Rayleigh–Jeans limit in this section. |
+| $\thermal{T}$ | $\unit{K}$ | Excitation temperature | Temperature that sets the Boltzmann level populations. |
 | $\energy{\epsilon}_{\signal{\nu}}$ | $\unit{erg\cdot s^{-1}\cdot cm^{-3}\cdot Hz^{-1}}$ | Volume emissivity | Radiated power per unit volume and frequency, integrated over direction. |
 | $\energy{S}_{\signal{\nu}}$ | $\unit{erg\cdot s^{-1}\cdot cm^{-2}\cdot sr^{-1}\cdot Hz^{-1}}$ | Source function | Ratio of the emission coefficient to the absorption coefficient. |
 | $\energy{B}_{\signal{\nu}}(\thermal{T})$ | $\unit{erg\cdot s^{-1}\cdot cm^{-2}\cdot sr^{-1}\cdot Hz^{-1}}$ | Planck function | Specific intensity of equilibrium blackbody radiation. |

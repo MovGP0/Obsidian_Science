@@ -1,0 +1,39 @@
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/05 Lie Groups, Quaternions, and Spinors/03 Spinors/02 Examples from Physics/01 Polarization/Jones Vectors.md
+- FIXED | "complex value of zero" is wrong | Replaced with: the field is extended to a complex field, the imaginary part has no physical meaning, the physical field is Re E.
+- FIXED | L/R sign attributed to metric signature | Conventions now name the phase convention e^{i(ωt-kz)} vs e^{i(kz-ωt)} and the source/receiver viewpoint for handedness.
+- FIXED | Waveplates do not filter; 45° QWP matrix not unitary | Waveplates described as lossless retarders; matrix corrected to (1/√2)[[1,i],[i,1]].
+- FIXED | φ=π/2 gives -sinθ, identity needs φ=-π/2 | Changed the phase to φ = -π/2 to match sinθ = cos(θ-π/2).
+- FIXED | Symbol inconsistencies and typos | Unified amplitudes to A_x, A_y and components to plain E^x, E^y; fixed e^{it}, \mathbf{x}, x-direction, non-transverse; density in time/space replaced by frequency ω/2π and inverse wavelength k/2π.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/05 Lie Groups, Quaternions, and Spinors/03 Spinors/02 Examples from Physics/01 Polarization/Pointcaré Sphere.md
+- FIXED | Q'' factor 1/2 not unitary | Changed the prefactor to 1/√2.
+- PARTLY | Spelling Poincaré and Wikipdia | Fixed "Poincaré Sphere" in text and the reference label (Wikipedia: Poincaré-Kugel); filename not renamed because a rename is outside the brief and affects links in other notes.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/05 Lie Groups, Quaternions, and Spinors/03 Spinors/02 Examples from Physics/01 Polarization/Waveplates.md
+- FIXED | cos 45° = cos π/2 is wrong | Changed π/2 to π/4 in the middle matrix of G.
+- FIXED | QL=A is not the original direction | Text now says A is perpendicular to D and two quarter-wave passes act as a half waveplate.
+- FIXED | Stray {4} after e^{iπ/4} | Removed the stray {4}; product G^{-1}QG verified numerically.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/05 Lie Groups, Quaternions, and Spinors/03 Spinors/02 Examples from Physics/Dirac Equation.md
+- FIXED | Momentum operator sign and index | Changed to p̂_μ = iħ∂_μ and added that with (+,-,-,-) it turns (γ^μ p̂_μ - mc)ψ=0 into the stated equation.
+- FIXED | Electron/positron spinor labels | Relabelled as upper (large) and lower (small) components in the Dirac representation; added nonrelativistic-limit and Weyl-representation remark.
+- FIXED | Confused Klein-Gordon note | Rewrote note: Klein-Gordon is second order and spin-0; first-order Dirac equation needs {γ^μ,γ^ν}=2η^{μν} and four-component spinors, hence spin-1/2.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/05 Lie Groups, Quaternions, and Spinors/03 Spinors/02 Examples from Physics/Pauli Exclusion Principle.md
+- FIXED | Must say identical fermions | Added "identical" to the TLDR statement.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/05 Lie Groups, Quaternions, and Spinors/03 Spinors/02 Examples from Physics/Spin-Statistics-Theorem.md
+- FIXED | States exchange property, not the theorem | Stated the theorem (integer spin Bose, half-integer spin Fermi, in relativistic QFT) and restricted the sign to identical particles.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/05 Lie Groups, Quaternions, and Spinors/03 Spinors/02 Examples from Physics/Spinors in Physics.md
+- FIXED | Incomplete fermion list | Listed six quarks and six leptons (e, μ, τ and three neutrinos) plus antiparticles.
+- FIXED | n must be odd; magnitude vs projection | Fermions: s = n/2 with n odd; both sections now state maximal projection sħ and magnitude √(s(s+1))ħ. Converted CRLF to LF.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/05 Lie Groups, Quaternions, and Spinors/03 Spinors/02 Examples from Physics/Stern-Gerlach-Experiment.md
+- FIXED | Born rule misstated | Added P = |⟨β|α⟩|² as the Born rule and kept orthogonality of mutually exclusive states as its consequence. Converted CRLF to LF.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/05 Lie Groups, Quaternions, and Spinors/03 Spinors/02 Examples from Physics/Vector Representation of Spinors in Physics.md
+- FIXED | Bra and repeated up-ket | Changed to ket |φ⟩ = α|↑⟩ + β|↓⟩. Converted CRLF to LF.
+- FIXED | α, β are amplitudes, not probabilities | Table now says complex probability amplitudes with probabilities |α|², |β|²; added |α|²+|β|²=1.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/05 Lie Groups, Quaternions, and Spinors/Quaternions.md
+- FIXED | σ2 repeated, σ3 missing | Replaced the duplicate σ2 with σ3 = [[1,0],[0,-1]].
+- FIXED | Pauli matrices cannot replace i,j,k directly | Stated σ_a² = σ_0 and the substitution i→-iσ1, j→-iσ2, k→-iσ3 giving i²=j²=k²=ijk=-1.
+- FIXED | Cross products mixed with quaternion products | Rewrote the list as quaternion products (ii=jj=kk=-1, ij=k, ik=-j, ...) with a short label. Converted CRLF to LF.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/06 Bundles, Holonomy, and Gauge Connections/27.07 Transition functions.md
+- FIXED | A, B clash with base space and overlap component | Renamed the Practice 2 matrices and answer to M, N (MN, NM checked). Removed BOM and converted CRLF to LF.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/06 Bundles, Holonomy, and Gauge Connections/27.09 Connections and holonomy.md
+- FIXED | a is rectangle side and coefficient | Renamed the S^1 coefficient to κ (A=κα, 2πκn, e^{-2πiκn}, κ=1/2). Removed BOM and converted CRLF to LF.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/07 Category Theory/Category of Categories.md
+- FIXED | "set of all categories" size paradox; missing title, TLDR, newline | Defined Cat as small categories with functors, functor composition and identity functors; added quoted title, TLDR, size note and trailing newline.

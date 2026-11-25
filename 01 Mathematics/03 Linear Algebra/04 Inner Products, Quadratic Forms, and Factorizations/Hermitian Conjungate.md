@@ -1,6 +1,6 @@
 Assuming we have a [[Jones Vectors|Jones Vector]] $J \in \mathbb{C}^n$, where the entries of the vector are [[Complex Numbers]].
 
-In this case we can't simply get the inverse of the vector using the transpose method:
+In this case we can't simply get the squared norm of the vector using the transpose method, because $J^T J$ can be zero or complex for a nonzero $J$ (for example $J = (1, i)^T$ gives $J^T J = 0$):
 
 $$\|J\|^2 \ne J^T J$$
 Instead we need to use the complex conjungate of the transposed vector:
@@ -11,7 +11,9 @@ This operation is called the **Hermitian Conjungate**
 $$J^{\dagger} = \left(J^T\right)^* = \left(J^*\right)^T$$
 
 thus we can write
-$$\|J\|^2 = J^{\dagger} J = J J^{\dagger}$$
+$$\|J\|^2 = J^{\dagger} J$$
+
+The reversed product $J J^{\dagger}$ is an $n \times n$ matrix, not a scalar. When $\|J\| = 1$, it is the projector onto $J$.
 
 ## Examples
 

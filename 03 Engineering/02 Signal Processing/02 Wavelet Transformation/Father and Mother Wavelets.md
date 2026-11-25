@@ -18,8 +18,10 @@ $$\psi(t) = \sqrt{2} \sum_{k} g_k \, \varphi(2t - k)$$
 
 ## Derivation
 
-Given the father wavelet $\varphi(t)$ and the filter coefficients $h_{k}$​, we can construct the mother wavelet $\psi(t)$ with the coefficients $g_k$ using the relation:
-$$g_k​=(−1)^k  h_{1−k}$$
+Given the father wavelet $\varphi(t)$ and the filter coefficients $h_{k}$, we can construct the mother wavelet $\psi(t)$ with the coefficients $g_k$ using the relation:
+$$g_k=(−1)^k  h_{1−k}$$
+
+Other texts use $g_k = (-1)^k h_{N-1-k}$ (see below). For even $N$, the two index conventions differ only by a shift of $N-2$ in $k$.
 
 > [!caution]
 > The father wavelet is **not uniquely** derivable from the mother wavelet.
@@ -45,9 +47,9 @@ The **low-pass coefficients** $h_k$ are the _time-domain impulse response_ of th
 
 ----
 
-## High-pass filter coefficients $g_{k}$ ↔ low-pass filter transfer function $G(z)$
+## High-pass filter coefficients $g_{k}$ ↔ high-pass filter transfer function $G(z)$
 
-This uses the **quadrature mirror filter** (QMF) relation, which enforces orthogonality in wavelets.
+This uses the alternating-flip relation of the **conjugate quadrature filter** (CQF, Smith–Barnwell), which enforces orthogonality in wavelets. The classic quadrature mirror filter (QMF) relation $g_k = (-1)^k h_k$ does not give orthogonal wavelets for $N > 2$.
 
 Transform from low-pass $h_k$ to high-pass $g_k$:
 $$g_k = (-1)^k \, h_{N-1-k}$$
@@ -60,15 +62,15 @@ $$g_k = (-1)^k \, h_{N-1-k}$$
 
 ### From low-pass transfer function $H(z)$ to high-pass transfer function $G(z)$
 
-$$G(z) = z^{-(N-1)} H(-z^{-1})$$
+$$G(z) = (-1)^{N-1} z^{-(N-1)} H(-z^{-1}) = -z^{-(N-1)} H(-z^{-1}) \quad (N \text{ even})$$
 
 On the unit circle:
 
-$$G(\omega) = e^{-i\omega(N-1)} \, H(\omega+\pi)$$
+$$G(\omega) = -e^{-i\omega(N-1)} \, \overline{H(\omega+\pi)}$$
 
 > [!info] Intuitively
->  We shift the low-pass response by $\pi$ (i.e., swap low/high frequency bands), and apply a phase factor.
+>  We shift the low-pass response by $\pi$ (i.e., swap low/high frequency bands), take the complex conjugate, and apply a phase factor.
 
 ### From high-pass transfer function $G(z)$ to low-pass transfer function $H(z)$
 
-$$h_k = (-1)^k \, g_{N-1-k}$$
+$$h_k = -(-1)^k \, g_{N-1-k} \quad (N \text{ even})$$

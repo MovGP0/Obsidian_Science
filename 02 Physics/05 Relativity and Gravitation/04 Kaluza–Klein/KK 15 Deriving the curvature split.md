@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Deriving the curvature split"
 document_type: "Self-contained study chapter"
 ---
@@ -46,7 +46,7 @@ $$
 \begin{aligned}
 \electric{F}_{\mu\nu}\electric{F}^{\mu\nu}
 &=g^{\mu\alpha}g^{\nu\beta}\electric{F}_{\mu\nu}\electric{F}_{\alpha\beta}\\
-&=2\left(|\magnetic{\mathbf B}|^2-|\electric{\mathbf E}|^2\right).
+&=2\left(|\magnetic{\mathbf B}|^2-|\electric{\mathbf E}|^2\right)
 \end{aligned}
 $$
 
@@ -78,7 +78,9 @@ R_{\alpha\beta}&=R^0{}_{\alpha0\beta}+R^1{}_{\alpha1\beta}
 +R^2{}_{\alpha2\beta}+R^3{}_{\alpha3\beta},\\
 R&=R^0{}_0+R^1{}_1+R^2{}_2+R^3{}_3.
 \end{aligned}
-$$ Ricci curvature is symmetric in this setting, with ten independent four-dimensional components. Scalar curvature gives one number and carries no remaining directional index. The comparison with Einstein's equation is
+$$
+
+Ricci curvature is symmetric in this setting, with ten independent four-dimensional components. Scalar curvature gives one number and carries no remaining directional index. The comparison with Einstein's equation is
 
 $$
 R_{\alpha\beta}-\frac12Rg_{\alpha\beta}

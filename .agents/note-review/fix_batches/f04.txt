@@ -1,0 +1,53 @@
+=== 02 Physics/07 Astrophysics and Cosmology/Galactic virial balance, rotational support, and anisotropy.md
+- [Correctness] Physical quantities table lists $r_{\mathrm g}$ twice (gravitational radius and "Gyroradius"), $V$ as both gas volume and potential energy while the note uses $V_{jk}$ for the external term, $K$ as a "virial scaling coefficient" clashing with kinetic energy $K$, and unused Sérsic $n$, number density $n$, fundamental-plane $a,b$ and $R,R_{\mathrm e}$; prune to the note's symbols.
+
+=== 02 Physics/07 Astrophysics and Cosmology/Galaxy morphology, surface brightness, and halo models.md
+- [Correctness] Physical quantities table lists $\mu$ twice (surface brightness and mean particle mass) and many symbols the note never uses ($h$, $q,\epsilon,e$, $N$, $n$, $r_0$, $a,b$, $M_{\mathrm b}$, $M_{\mathrm d}$, $M_*$); prune to the symbols actually used.
+
+=== 02 Physics/07 Astrophysics and Cosmology/Galaxy scaling laws, Sérsic profiles, and luminosity functions.md
+- [Correctness] Symbol clashes: $\alpha$ is the Tully–Fisher slope, the baryonic TF exponent and the Schechter slope; $b$ is the semiminor axis, the BTF exponent, the Fourier sine coefficients $b_n$ and the Sérsic $b_n$; $n$ is both Sérsic index and Fourier order; rename (e.g. Fourier $A_n,B_n$, BTF exponent $\beta$).
+- [Correctness] In the boxy/disky section $\theta$ is the eccentric-anomaly parameter ($x=a\cos\theta$, $y=b\sin\theta$), not the polar angle, so $R_{\mathrm{iso}}(\theta)$ and $R_{\mathrm{ell}}(\theta)$ are not "along the same direction"; define $\theta$ as the polar angle from the major axis (standard convention) or state the parametric convention consistently.
+- [Correctness] The MBW/2dF Schechter table gives $\phi_*$ in $h^3\,\mathrm{Mpc^{-3}}$, so the characteristic magnitudes are $M^*-5\log_{10}h$, not $M^*$; add the $-5\log_{10}h$.
+
+=== 02 Physics/07 Astrophysics and Cosmology/General relativity and the expanding-universe metric.md
+- [Correctness] Outdated values: $h=0.72\pm0.08$ is the 2001 HST Key Project result (Planck 2018: $h=0.674\pm0.005$; SH0ES ≈0.73, the Hubble tension), and the CMB is released at ≈380,000 yr, not ≈300,000 yr.
+- [Correctness] Physical quantities table lists $A$ as "comoving curvature radius" and $k$ as "spatial curvature parameter", but here $A,B$ are inhomogeneous metric coefficients (and $B$ multiplies $d\Omega^2$, so the text "radial metric coefficients" is wrong for $B$) and $k$ is the constant in $a=kt^{2/3}$; also $\phi$ (scalar field) clashes with the azimuth, $\eta$ (conformal time) with $\eta_{\mu\nu}$, and $V$, $\ell$, $C_\ell$, $\vec k$, $\mu$, $\delta$, $F,m,a$ are unused; rename $k$ in $a=kt^{2/3}$ and remove the course-grading paragraph.
+
+=== 02 Physics/07 Astrophysics and Cosmology/Gravitational encounters and collisionless galactic dynamics.md
+- [Correctness] Physical quantities table includes many unused symbols from other notes (gas volume $V$, $R_{\mathrm e}$, Sérsic $n$, $\Delta$, $c$, two different $\alpha$, $p$, $C$, isothermal $\sigma$, $\delta$, $a,b$) while $m$, $v$, $\theta$ and $x$ are missing; prune it.
+
+=== 02 Physics/07 Astrophysics and Cosmology/Interstellar gas and X-ray scaling in elliptical galaxies.md
+- [Correctness] Gyroradius normalization: with $v=\sqrt{3kT/m}$, an electron at $T=10^7$ K has $r_{\mathrm g}\approx3.9\times10^{-11}$ pc for $B=1\,\mu$G, so the formula should read $(B/1\,\mu\mathrm G)^{-1}$, or the coefficient should be ≈$2.0\times10^{-11}$ pc for $(B/2\,\mu\mathrm G)^{-1}$.
+- [Correctness] Symbol clashes: $r_{\mathrm g}$ is the gyroradius in the plasma section and the gravitational radius in the scaling section (the table lists both), and $\mu$ is listed as surface brightness and mean particle mass; rename the gyroradius $r_{\mathrm L}$ and prune unused table entries (Sérsic $n$, both $\alpha$, $C$, $q,\epsilon,e$, $p$, $a,b$, $K$).
+
+=== 02 Physics/07 Astrophysics and Cosmology/Inverse Compton scattering and photon energy exchange.md
+- [Correctness] Physical quantities table describes $n$ as the number density of absorbers, but here $n(E)$ is the photon number density per unit energy; it also lists unused $y$ (Compton parameter) and $b$ (Doppler parameter) and omits $x$, $\gamma$, $\beta$, $\theta$, $E_\gamma$, $U_\gamma$ and $L_{\mathrm{IC}}$.
+
+=== 02 Physics/07 Astrophysics and Cosmology/Metric Tensor of the Universe.md
+- [Correctness] $1/H\approx14.787\times10^{12}$ yr is wrong by a factor of 1000; for $H=70\,\mathrm{km\,s^{-1}\,Mpc^{-1}}$, $1/H\approx13.97\times10^9$ yr (14.787 Gyr corresponds to $H\approx66$).
+- [Correctness] The displayed matrix has spatial entries $a(t)$, but $g_{ij}=a(t)^2\delta_{ij}$ requires $a(t)^2$ on the diagonal.
+- [Correctness] $a(t)=1+Ht$ is only the first-order Taylor expansion about today (with $t$ measured from now and $H=H_0$), not the expansion law; say so, and call $H_0$ the present Hubble parameter, not a constant.
+
+=== 02 Physics/07 Astrophysics and Cosmology/Milky Way populations, clusters, and rotation.md
+- [Correctness] Physical quantities table gives $\omega$ as both orbital angular speed and argument of periastron, $\alpha$ as right ascension, parallax and scattering angle (here a triangle angle), $b$ as softening constant (here Galactic latitude), $A$ as extinction and Oort constant, $\theta$ as position angle (here cylindrical azimuth), $R$ as stellar radius in km (here Galactocentric radius); $\beta$ is missing. Prune to the note's symbols.
+- [Correctness] Outdated values: star formation rate ≈3 $M_\odot\,\mathrm{yr^{-1}}$ (modern ≈1.6–2, Licquia and Newman 2015), thin-disk scale length ≈4 kpc (modern ≈2.5–3 kpc, Bland-Hawthorn and Gerhard 2016), $R_0=8$–8.3 kpc (GRAVITY 2019: 8.18 kpc); $A\simeq15$, $B\simeq-12$ remain consistent with Bovy (2017).
+
+=== 02 Physics/07 Astrophysics and Cosmology/Natural and Doppler broadening and the Voigt profile.md
+- [Correctness] Microturbulence is defined by turbulent cells small compared with the photon mean free path (the unit-optical-depth length), not the collisional mean free path.
+- [Correctness] ICM example: for an oxygen line at 0.65 keV (O VIII Lyα, $A\approx2.6\times10^{12}\,\mathrm{s^{-1}}$) the natural width is $\Delta\nu/\nu\sim10^{-5}$ or less, so a Doppler width $\sim10^{-3}$ is ~$10^2$ times the natural width, not "about ten times"; recompute.
+- [Correctness] Symbol clashes: $A$ is both the Einstein coefficient and the atomic weight; the table lists $\alpha$ as fine-structure constant (here $\alpha_\nu$ is the absorption coefficient), $y$ as Compton parameter (here an integration variable) and $T$ as brightness temperature (here kinetic temperature).
+
+=== 02 Physics/07 Astrophysics and Cosmology/Perturbed metrics and the cosmological Boltzmann equation.md
+- [Correctness] The electromagnetic gauge analogy should be $A_\mu\to A_\mu+\partial_\mu\chi$; a constant shift $A_\mu\to A_\mu+C_\mu$ is a trivial special case and misrepresents gauge freedom.
+- [Correctness] Fig. 22 caption: the first acoustic peak at $\ell\approx220$ corresponds to about 1° ($\theta\approx180^\circ/\ell\approx0.8^\circ$), not half a degree, and diffusion damping sets in from $\ell\gtrsim1000$.
+- [Correctness] Physical quantities table lists $\phi$ as a scalar field, clashing with the azimuth in the line element, plus unused $F,m,a$, $A$, $\sigma$, $\eta$, radial speed $v$, $\gamma$, $\delta$ and $h$; prune.
+
+=== 02 Physics/07 Astrophysics and Cosmology/Post-main-sequence evolution, mass loss, and shell burning.md
+- [Correctness] The helium flash occurs for stars up to ≈2 $M_\odot$ (1.8–2.2 depending on composition), not 1.5 $M_\odot$ as in the text and the ignition table.
+- [Correctness] Mass loss: the modified wind momentum $\dot M v_\infty R^{1/2}$ scales as $L^{1/\alpha_{\mathrm{eff}}}$ with exponent ≈1.5–2 (Kudritzki and Puls 2000), not linearly in $L$.
+- [Correctness] $t_{\mathrm{MS}}=M/\dot M=4\times10^6$ yr is a mass-loss timescale, not a main-sequence lifetime, so rename it (e.g. $\tau_{\dot M}$); the adjacent $t_{\mathrm{nuc}}\simeq2\times10^5$ yr for an $80M_\odot$ star is unexplained (its main-sequence lifetime is ≈3–4 Myr).
+- [Correctness] Physical quantities table lists $\mu$ five times, $n$ three times, $Z$ as metallicity and proton number, two $\tau$, $a$, $K$, $s$ and others from other notes, including a link to a different note; reduce it to the symbols this note uses.
+
+=== 02 Physics/07 Astrophysics and Cosmology/Radiative absorption, recombination, and Thomson scattering.md
+- [Correctness] Symbol clashes: $n$ is both number density and principal quantum number, and $\alpha$ is both the absorption coefficient and the fine-structure constant; also the dimensionless optical depth $\tau_\nu$ and $\alpha_\nu$ are colored with \energy{}, which misuses the semantic macro.
+

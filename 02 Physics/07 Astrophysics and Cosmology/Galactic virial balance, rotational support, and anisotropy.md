@@ -343,18 +343,14 @@ Kyle Kabasares, *Extragalactic Astrophysics (Physics 241C, UC Irvine 2018)*.
 
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
-| $V$ | $\unit{m^3}$ | Gas volume | Volume used to convert emissivity to luminosity. |
-| $\mechanical{R}$, $\mechanical{R}_{\mathrm e}$ | $\unit{kpc}$ | Projected and effective radius | The profile coordinate is the isophote's semimajor axis. The effective radius encloses half the component's projected light. |
-| $n$ | $1$ | Sérsic index | Shape parameter of the profile, with $n=4$ for the de Vaucouleurs law. |
+| $\mechanical{R}_{\mathrm e}$ | $\unit{kpc}$ | Effective radius | Projected radius that encloses half the tracer light in the Wolf et al. estimator. |
 | $\mechanical{r}$ | $\unit{m}$ | Spherical radius | Three-dimensional distance from the center. |
 | $\mechanical{M}(<\mechanical{r})$ | $\unit{kg}$ | Enclosed gravitating mass | Total mass within spherical radius $\mechanical{r}$. |
 | $\mechanical{\Phi}$ | $\unit{m^2\,s^{-2}}$ | Gravitational potential | Gravitational potential energy per unit mass. |
 | $\mechanical{\rho}(\mechanical{r})$ | $\unit{kg\,m^{-3}}$ | Mass density profile | Local gravitating mass per unit volume at spherical radius $\mechanical{r}$. |
 | $q$, $\epsilon$, $e$ | $1$ | Axis ratio, ellipticity, and eccentricity | Three measures of apparent ellipse shape. |
 | $\mechanical{\rho}_0$ | $\unit{kg\,m^{-3}}$ | Density normalization | Multiplicative scale in the approximate deprojection. |
-| $n$ | $\unit{m^{-3}}$ | Stellar number density | Number of stars per unit volume. |
 | $\overline{\mechanical{v}_i}$ | $\unit{m\,s^{-1}}$ | Mean velocity component | First moment of the conditional velocity distribution. |
-| $\energy{V}$ | $\unit{J}$ | Gravitational potential energy | Product of the stellar mass and the gravitational potential. |
 | $\overline{\mechanical{v}_i\mechanical{v}_j}$ | $\unit{m^2\,s^{-2}}$ | Mixed second velocity moment | Mean product of two velocity components at a fixed position. |
 | $\mechanical{\sigma}_{\mathrm{los}}$ | $\unit{m\,s^{-1}}$ | Line-of-sight velocity dispersion | Width of the projected velocity distribution along the viewing direction. |
 | $\mechanical{\sigma}$ | $\unit{m\,s^{-1}}$ | Isothermal velocity dispersion | Constant one-dimensional velocity dispersion. |
@@ -375,6 +371,3 @@ Kyle Kabasares, *Extragalactic Astrophysics (Physics 241C, UC Irvine 2018)*.
 | $\mechanical{v}_0$ | $\unit{m\,s^{-1}}$ | Characteristic rotation speed | Mass-weighted root-mean-square azimuthal streaming speed. |
 | $\mechanical{\sigma}_0$ | $\unit{m\,s^{-1}}$ | Characteristic equatorial velocity dispersion | Square root of the mass-weighted local variance along the equatorial line of sight. |
 | $\delta$ | $1$ | Global velocity anisotropy | One minus the ratio of integrated vertical to equatorial random-motion stress. |
-| $a$, $b$ | $1$ | Fundamental-plane coefficients | Logarithmic slopes with respect to velocity dispersion and effective intensity. |
-| $K$ | $\unit{kg\,s^2\,m^{-3}}$ | Virial scaling coefficient | Inverse of $2\pi G K_R K_v^2$ in the effective-radius scaling. |
-| $\mechanical{r}_{\mathrm g}$ | $\unit{pc}$ | Gyroradius | Radius of a charged particle's motion around a magnetic field line in this section. |

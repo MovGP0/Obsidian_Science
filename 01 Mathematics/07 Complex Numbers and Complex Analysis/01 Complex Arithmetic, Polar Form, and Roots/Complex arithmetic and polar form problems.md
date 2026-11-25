@@ -26,19 +26,19 @@ Thus $(1,2)(-2,1)=(-4,-3)$.
 1. Expand $(\sqrt2-i)-i(1-\sqrt2\,i)$. This gives $\sqrt2-i-i+\sqrt2\,i^2=\sqrt2-2i-\sqrt2=-2i$.
 2. Compute $(2,-3)(-2,1)$. In complex notation $(2-3i)(-2+i)=-4+2i+6i-3i^2=-1+8i$, which corresponds to $(-1,8)$.
 3. Show that $\operatorname{Re}(iz)=-\operatorname{Im}z$ and $\operatorname{Im}(iz)=\operatorname{Re}z$. For $z=x+iy$, multiplication gives $iz=ix+i^2y=-y+ix$, so the real and imaginary parts are $-y$ and $x$.
-4. For nonzero $z=(x,y)$, begin finding the inverse by setting $z^{-1}=(u,v)$ and requiring $zz^{-1}=1$.
+4. For nonzero $z=(x,y)$, begin finding the inverse by setting $z^{-1}=(s,t)$ and requiring $zz^{-1}=1$.
 
 The notes mark the completed calculations “QED,” with the Latin phrase *quod erat demonstrandum*.
 
-For $z=(x,y)$ and $z^{-1}=(u,v)$, expand the product and match its real and imaginary parts to those of 1.
+For $z=(x,y)$ and $z^{-1}=(s,t)$, expand the product and match its real and imaginary parts to those of 1.
 
 $$
-(x+iy)(u+iv)=(xu-yv)+i(xv+yu)=1,
+(x+iy)(s+it)=(xs-yt)+i(xt+ys)=1,
 \qquad
-xu-yv=1,\quad xv+yu=0.
+xs-yt=1,\quad xt+ys=0.
 $$
 
-The handwritten work starts eliminating $x/y$ by writing $x/y=-u/v$ and $(x/y)u-v=1/y$, assuming the denominators are nonzero. The two equations also give $(x^2+y^2)u=x$ and $(x^2+y^2)v=-y$ without those divisions. Thus $z^{-1}=(x-iy)/(x^2+y^2)$ for $z\ne0$.
+The handwritten work starts eliminating $x/y$ by writing $x/y=-s/t$ and $(x/y)s-t=1/y$, assuming the denominators are nonzero. The two equations also give $(x^2+y^2)s=x$ and $(x^2+y^2)t=-y$ without those divisions. Thus $z^{-1}=(x-iy)/(x^2+y^2)$ for $z\ne0$.
 
 The page lists Professor Sindi and the address `ssindi@ucmerced.edu`, with “Math 122” in the subject line. Starting with homework 3, the notes call for typing homework in LaTeX and uploading it. They also mention scanning and uploading to CatCourses. Homework is due Fridays at noon and posted at least a week before it is due. Tentative midterms are March 16 and April 20, with the final on May 11 from 8 to 11 a.m.
 
@@ -138,14 +138,14 @@ The last handwritten expansion appears to repeat $y_2$ in the term for $z_3$. Th
 
 The notes use $5+(-5)=0$ and $5(1/5)=1$ to illustrate the additive identity 0 and multiplicative identity 1. For $z=x+iy$, the additive inverse is $-z=-x+i(-y)$, since $z+(-z)=x-x+i(y-y)=0$.
 
-For the multiplicative inverse, write $z^{-1}=u+iv$ and set $(x+iy)(u+iv)=1+i(0)$. Thus $xu-vy=1$ and $uy+vx=0$. When $x$ and $u$ are nonzero, the latter gives $y/x=-v/u$. The former gives $u-vy/x=1/x$, so $u+v^2/u=1/x$.
+For the multiplicative inverse, write $z^{-1}=s+it$ and set $(x+iy)(s+it)=1+i(0)$. Thus $xs-ty=1$ and $sy+tx=0$. When $x$ and $s$ are nonzero, the latter gives $y/x=-t/s$. The former gives $s-ty/x=1/x$, so $s+t^2/s=1/x$.
 
-Solving $xu-vy=1$ and $uy+vx=0$ gives
+Solving $xs-ty=1$ and $sy+tx=0$ gives
 
 $$
-u=\frac{x}{x^2+y^2},
+s=\frac{x}{x^2+y^2},
 \qquad
-v=-\frac{y}{x^2+y^2}.
+t=-\frac{y}{x^2+y^2}.
 $$
 
 The notes point to the numbered lecture notes in the CatCourses Files section. Euler's formula is $e^{i\theta}=\cos\theta+i\sin\theta$.
@@ -167,7 +167,7 @@ Let $\{a_n\}$ be a sequence in a set $X$ equipped with a distance. It converges 
 
 The notes ask how we know whether the limit belongs to $X$. The example sequence $a_n=(1+1/n)^n$ tends to $e$ as $n\to\infty$.
 
-The notes describe $\mathbb R$ as the rational numbers together with their accumulation points, the limits of rational approximations. They describe $\mathbb C=\{a+ib\mid a,b\in\mathbb R\}$ as the algebraic completion of the reals. For nonzero $z=a+ib$, the multiplicative inverse $z^{-1}=u+iv$ satisfies $zz^{-1}=1$.
+The notes describe $\mathbb R$ as the rational numbers together with their accumulation points, the limits of rational approximations. They describe $\mathbb C=\{a+ib\mid a,b\in\mathbb R\}$ as the algebraic completion of the reals. For nonzero $z=a+ib$, the multiplicative inverse $z^{-1}=s+it$ satisfies $zz^{-1}=1$.
 
 ##### Conjugate
 
@@ -292,7 +292,7 @@ For $z=a+bi$, the difference is $z-\bar z=(a+bi)-(a-bi)=2bi$, which is purely im
 $$
 \overline{2-5i}+\overline{3+2i}
 -\overline{(2-5i)+(3+2i)}
-=(2+5i)+(3-2i)-\bigl((2+5i)+(3-2i)\bigr)=0.
+=(2+5i)+(3-2i)-\overline{5-3i}=(5+3i)-(5+3i)=0.
 $$
 
 ##### Polar form

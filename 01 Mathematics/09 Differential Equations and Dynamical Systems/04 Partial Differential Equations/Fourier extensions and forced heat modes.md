@@ -469,7 +469,7 @@ $$
 =\sum_{n=1}^{\infty}B_n'(t)\sin\left(\frac{n\pi x}{L}\right).
 $$
 
-The margin assumption appears to name $\partial\thermal{u}/\partial x$ as piecewise smooth. The time-differentiation rule on [[#Eigenfunction expansion for the heat equation|the section on Eigenfunction expansion for the heat equation]] refers to $\partial\thermal{u}/\partial t$.
+The margin assumption appears to name $\partial\thermal{u}/\partial x$ as piecewise smooth. The time-differentiation rule on [[#Time differentiation of a Fourier series|the section on Time differentiation of a Fourier series]] refers to $\partial\thermal{u}/\partial t$.
 
 Substituting both differentiated series into the heat equation gives
 
@@ -635,22 +635,18 @@ Kyle Kabasares, *Partial Differential Equations (Math 126, UC Merced 2017)*.
 
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
-| $\mechanical{u}$ | $\unit{Pa}$ | Pressure | Unknown pressure in the divergence-form example. |
 | $\thermal{u}$ | $\unit{K}$ | Temperature | Temperature in the rod as a function of position and time. |
-| $\mechanical{\rho}$ | $\unit{kg/m^3}$ | Mass density | Mass per unit volume of the rod. |
 | $\thermal{k}$ | $\unit{m^2/s}$ | Thermal diffusivity | Ratio of conductivity to volumetric heat capacity. |
-| $\thermal{Q}$ | $\unit{W/m^3}$ | Volumetric heat source | Thermal energy supplied per unit time and volume. |
 | $\thermal{Q}'$ | $\unit{K/s}$ | Temperature source | Volumetric heat source divided by volumetric heat capacity. |
-| $\thermal{f}(x)$ | $\unit{K}$ | Initial temperature | Prescribed temperature distribution in the discussion example. |
+| $\thermal{f}(x)$ | $\unit{K}$ | Initial temperature | Prescribed temperature distribution at $t=0$. |
 | $\thermal{A},\thermal{B}$ | $\unit{K}$ | Fixed boundary temperatures | Prescribed endpoint values in the nonhomogeneous Dirichlet problem. |
 | $\thermal{u}_E$ | $\unit{K}$ | Equilibrium temperature | Time-independent temperature profile with the prescribed boundary values. |
 | $\thermal{v}$ | $\unit{K}$ | Temperature difference | Temperature relative to the equilibrium profile. |
+| $L$ | $\unit{m}$ | Half-period or rod length | Half-length of the interval $[-L,L]$ for the Fourier series and length of the rod $[0,L]$. |
 | $\mechanical{u}(x,t)$ | $\unit{m}$ | Wave displacement | Scalar displacement at position $x$ and time $t$ in the one-dimensional wave model. |
 | $\mechanical{c}$, $\mechanical{v}$ | $\unit{m\,s^{-1}}$ | Wave speed | Constant propagation speed in the scalar or vector wave equation. |
+| $\mechanical{\vec F}$, $\mechanical{m}$, $\mechanical{\vec a}$ | $\unit{N}$, $\unit{kg}$, $\unit{m\,s^{-2}}$ | Force, mass, and acceleration | Quantities in Newton's second law applied to the string segment. |
 | $\mechanical{\rho}_0(x)$ | $\unit{kg\,m^{-1}}$ | Linear mass density | Mass per unit length of the string near $x$. |
 | $\mechanical{T}(x,t)$, $\mechanical{T}_0$ | $\unit{N}$ | String tension | Tangential force and its constant value in the idealized model. |
 | $\mechanical{\theta}(x,t)$ | $\unit{rad}$ | Tangent angle | Angle between the tangent to the string and the horizontal. |
 | $\mechanical{Q}(x,t)$ | $\unit{m\,s^{-2}}$ | Vertical body force per unit mass | Applied vertical acceleration, such as $-\mechanical{g}$ for gravity. |
-| $\mechanical{Q}$ in Exercise 4.4.2 | $\unit{N\,m^{-1}}$ | Load per unit length | Displacement-proportional load added directly to the string equation on [[Weighted eigenfunctions and Rayleigh bounds#Theorems for regular Sturm–Liouville problems with separated boundary conditions\|the section on Theorems for regular Sturm–Liouville problems with separated boundary conditions]]. |
-| $L$, $H$ | $\unit{m}$ | Rectangular membrane dimensions | Length in the $x$ direction and height in the $y$ direction. |
-| $r$, $a$ | $\unit{m}$ | Radial distance and membrane radius | Distance from the center and its value at the fixed rim. |

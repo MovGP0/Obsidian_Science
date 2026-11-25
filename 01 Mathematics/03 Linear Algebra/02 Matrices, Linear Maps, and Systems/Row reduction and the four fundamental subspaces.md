@@ -173,7 +173,7 @@ The vectors $v_1,\ldots,v_p$ are linearly independent when $c_1v_1+\cdots+c_pv_p
 
 The notes label an implication “if $P$, then $Q$.” In the two-vector example, $P$ says that neither vector is a scalar multiple of the other, and $Q$ says that the pair is linearly independent.
 
-The portfolio vectors on [[#Reduced row echelon form|the section on Reduced row echelon form]] are dependent because
+The portfolio vectors on [[#Span and dependence|the section on Span and dependence]] are dependent because
 
 $$
 2\begin{pmatrix}1\\1\\1\end{pmatrix}
@@ -235,7 +235,7 @@ The system $A\mathbf{x}=0$ always has the zero solution. Does it have any other 
 
 ##### Column space and null space
 
-The column space $C(A)$ is the span of the columns of $A$. For the matrix on the section on Homework 2,
+The column space $C(A)$ is the span of the columns of $A$. For the matrix on [[#Homogeneous systems|the section on Homogeneous systems]],
 
 $$
 0\begin{pmatrix}3\\1\\2\end{pmatrix}
@@ -290,7 +290,7 @@ The circled pivots are $1$ and $-3$. A pivot is nonzero by definition.
 
 ##### Pivot and free variables
 
-Use each pivot to make the entries below it zero. For the rectangular system on [[#Forward elimination and back substitution|the section on Forward elimination and back substitution]], the resulting equations are
+Use each pivot to make the entries below it zero. For the rectangular system on [[#Rectangular matrix|the section on Rectangular matrix]], the resulting equations are
 
 $$
 x+2y+6z+4w=0,\qquad -3z-3w=0,\qquad 0=0.
@@ -353,7 +353,7 @@ $$
 
 ##### Pivoting
 
-The lecture repeats the reduction of $B$ on [[#Forward elimination and back substitution|the section on Forward elimination and back substitution]]. If the first entry of the first row were zero, so that the matrix were $\begin{pmatrix}0&2&6&4\\1&2&3&1\\1&2&8&6\end{pmatrix}$, exchange rows to bring a nonzero entry into the first pivot position.
+The lecture repeats the reduction of $B$ on [[#Rectangular matrix|the section on Rectangular matrix]]. If the first entry of the first row were zero, so that the matrix were $\begin{pmatrix}0&2&6&4\\1&2&3&1\\1&2&8&6\end{pmatrix}$, exchange rows to bring a nonzero entry into the first pivot position.
 
 Miller asks what happens to $A\mathbf{x}=\mathbf b$ when two rows are exchanged. Exchanging rows of both $A$ and $\mathbf b$ preserves the solutions. The column space of $A$ may change. In particular, forward elimination produces an upper echelon matrix $U$ with the same homogeneous solutions as $A$, so $N(U)=N(A)$.
 
@@ -366,7 +366,7 @@ N(B)=\operatorname{span}\left\{
 \right\}.
 $$
 
-The rank is the number of pivots. There is one special solution for each free variable. The repeated handwritten equations contain inconsistent signs and entries. The vectors here follow the calculation on [[#Forward elimination and back substitution|the section on Forward elimination and back substitution]].
+The rank is the number of pivots. There is one special solution for each free variable. The repeated handwritten equations contain inconsistent signs and entries. The vectors here follow the calculation on [[#Rectangular matrix|the section on Rectangular matrix]].
 
 ##### Complete solution to a nonhomogeneous system
 

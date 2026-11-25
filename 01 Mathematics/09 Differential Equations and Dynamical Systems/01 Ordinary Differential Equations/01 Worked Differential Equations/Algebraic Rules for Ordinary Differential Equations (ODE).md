@@ -55,9 +55,9 @@ $$
 Use this for positive arguments to turn multiplicative growth into additive rates.
 
 $$
-\frac{d}{dt}\ln f(t) = \frac{f'(t)}{f(t)}
+\frac{d}{dt}\ln |f(t)| = \frac{f'(t)}{f(t)}
 $$
-This more general form applies whenever $f(t)$ stays away from zero; it is the backbone of integrating factors.
+This more general form applies whenever $f(t)\neq 0$ (for $f(t)>0$ the absolute value can be dropped); it is the backbone of integrating factors.
 
 ### Higher derivatives
 

@@ -11,8 +11,11 @@ $$q = (\phi, x, y)$$
 
 The velocity is constrained to lie **along the car’s body axis**:
 
-$$\dot{x} = v \cos \phi, \qquad  
-\dot{y} = v \sin \phi$$
+$$\dot{x} = v \cos \phi, \qquad
+\dot{y} = v \sin \phi, \qquad
+\dot{\phi} = \omega$$
+
+The inputs are the forward speed $v$ and the turning rate $\omega$. The unicycle has no steering angle.
 
 This already encodes the key physical restriction:
 - The car can only move in the direction it is pointing.  
@@ -40,8 +43,8 @@ Write the generalized velocity:
 
 $$\dot{q} =  
 \begin{bmatrix}  
-\dot{\phi} \  
-\dot{x} \  
+\dot{\phi} \\
+\dot{x} \\
 \dot{y}  
 \end{bmatrix}$$
 
@@ -60,9 +63,9 @@ $$A(q) =
 so that:
 
 $$A(q)\dot{q}
-0\cdot \dot{\phi}
-- \sin \phi , \dot{x}
-- \cos \phi , \dot{y}  
+= 0\cdot \dot{\phi}
++ \sin \phi \, \dot{x}
+- \cos \phi \, \dot{y}
 = 0$$
 
 ### Interpretation
@@ -86,20 +89,22 @@ This is exactly why:
 - You cannot move a car sideways directly
 - You must perform maneuvers (forward/backward arcs)
 
-## Relation to the Steering Angle and the Paths on the Right
+## Relation to the Path Curvature
 
-The velocity direction is always aligned with (\phi).  
-The **steering angle** controls the curvature of the path:
+The velocity direction is always aligned with $\phi$.  
+The ratio of the inputs sets the **curvature** of the path, $\kappa = \omega / v$:
 
-- Straight steering → $\phi$ constant → straight line
-- Constant steering angle → constant curvature → circular arc
-- Time-varying steering → clothoids / complex curves
+- $\omega = 0$ → $\phi$ constant → straight line
+- Constant $\kappa$ → circular arc
+- Time-varying $\kappa$ → clothoids / complex curves
+
+In a car (kinematic bicycle) model with wheelbase $L$ and steering angle $\delta$, the turning rate is $\dot{\phi} = (v / L)\tan\delta$, so $\kappa = \tan\delta / L$.
 
 Thus the constraint does **not** say where the car goes — it strictly says:
 
 > “At every instant, your velocity must lie along your current heading.”
 
-That is what produces the family of feasible paths drawn on the right.
+That is what produces the family of feasible paths.
 
 ## Geometric Meaning (Coordinate-Free)
 
@@ -133,4 +138,4 @@ $$A(q)\dot{q} = 0$$
 
 is nothing more and nothing less than the **mathematical expression of the fact that a car cannot move sideways**.
 
-The steering angle rotates the constraint direction, which bends the admissible paths into the curved trajectories shown on the right side of the slide.
+The turning rate $\omega$ rotates the constraint direction, which bends the admissible paths into curved trajectories.

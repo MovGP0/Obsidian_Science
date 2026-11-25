@@ -1,4 +1,4 @@
-﻿---
+---
 title: "From distance to the metric tensor"
 document_type: "Self-contained study chapter"
 ---
@@ -39,7 +39,7 @@ g_{ab}&=\operatorname{diag}(1,\mechanical{r}^{\,2},\mechanical{r}^{\,2}\sin^2\me
 \end{aligned}
 $$
 
-Here the theta in the spherical inset is a polar angle. It is not yet the extra circular coordinate. The matrix is position dependent without implying spacetime curvature.
+Here the r and theta in the spherical inset are a radial coordinate and a polar angle. They are not yet the circle radius and the extra circular coordinate. The same applies to the Schwarzschild metric below. The matrix is position dependent without implying spacetime curvature.
 
 ### Spacetime and repeated indices %% Video 00:30:40–00:36:40 %%
 
@@ -205,7 +205,7 @@ $$
 \tag{3.3}
 $$
 
-The angle is dimensionless, so its metric coefficient has units of length squared. If instead you use the length coordinate $\mechanical{y}=\mechanical{r}\mechanical{\theta}$, then
+The angle is dimensionless, so its metric coefficient has units of length squared. If instead you use the compact length coordinate $\mechanical{y}=\mechanical{r}\mechanical{\theta}$ (not the ordinary Cartesian coordinate $\mechanical{y}$ of the first section), then
 
 $$
 \mathrm d\mechanical{s}_5^{\,2}
@@ -241,7 +241,7 @@ The units below use the collection's natural-unit convention. Explicit SI formul
 | $\mechanical{t}$ | $\unit{GeV^{-1}}$ | Time | Time coordinate in natural units. |
 | $\mechanical{r}$ | $\unit{GeV^{-1}}$ | Reference circle radius | Radius encoded in the periodic coordinate identification. |
 | $\mechanical{s}_4,\;\mechanical{s}_5,\;\mechanical{\ell}$ | $\unit{GeV^{-1}}$ | Interval or spatial length | Separation specified by the relevant line element. |
-| $g_{\mu\nu},\;g_{uv}$ | $1$ | Metric fields | Metric coefficients for length-valued coordinates; an angular coefficient instead carries the required length factors. |
+| $g_{uv}$ | $1$ | Plane metric | Metric coefficients for the length-valued coordinates u and v. |
 | $\mechanical{c}$ | $1$ | Speed of light | Set to one in natural units; restored explicitly in SI formulas. |
 | $\mechanical{z}$ | $\unit{GeV^{-1}}$ | Spatial coordinate | Third ordinary spatial coordinate. |
 | $\mechanical{h}$ | $\unit{GeV^{-1}}$ | Cylinder height | Axial coordinate in the cylinder-distance diagram. |
@@ -252,6 +252,5 @@ The units below use the collection's natural-unit convention. Explicit SI formul
 | $\mechanical{M}$ | $\unit{GeV^{-1}}$ | Angular geometric mass | Length-valued Schwarzschild parameter, equal to Newton's constant times black-hole mass in natural units. |
 | $\mechanical{m}_{\mathrm{BH}}$ | $\unit{GeV}$ | Black-hole mass | Physical mass used when restoring the gravitational constant in the angular inset. |
 | $\mechanical{G}$ | $\unit{GeV^{-2}}$ | Gravitational constant | Four-dimensional Newton coupling in the reduced action. |
-| $\mechanical{m}$ | $\unit{GeV}$ | Rest mass | Four-dimensional rest mass in the angular Klein–Gordon equation. |
 | $\mechanical{H}$ | $\unit{GeV^{-1}}$ | Angular cylinder height | Finite axial separation in the unrolled cylinder. |
-| $g_{\mu\nu},g_{ab}$ | — | Angular base metric | Metric examples in this chapter; angular-coordinate entries carry the required length factors. |
+| $g_{\mu\nu},g_{ab}$ | — | Metric fields | Spacetime and spherical metric coefficients; angular-coordinate entries carry the required length factors. |

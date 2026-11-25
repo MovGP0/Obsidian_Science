@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Feynman Integrals"
 source_pdf: "D:\\GitHub\\books\\dokumen.pub_gauge-theories-of-the-strong-weak-and-electromagnetic-interactions-second-edition-secondnbsped-9781400848225.pdf"
 source_page: "450"
@@ -104,13 +104,13 @@ $$
 and so on. Therefore, the general form to be evaluated is
 
 $$
-\mathcal{I}_{mn}=(2\pi)^{-4}\int
-\frac{d^4\mechanical{k}\,(\mechanical{k}^{\,2})^{m-2}}
+\mathcal{I}_{rn}=(2\pi)^{-4}\int
+\frac{d^4\mechanical{k}\,(\mechanical{k}^{\,2})^{r-2}}
 {(\mechanical{k}^{\,2}-a^2)^n}
-=\frac{B(m,n-m)}{16\pi^2i(a^2)^{n-m}}, \tag{B.3.12}
+=(-1)^{n-r+1}\frac{B(r,n-r)}{16\pi^2i(a^2)^{n-r}}, \tag{B.3.12}
 $$
 
-where the Euler beta function, $B(x,y)=\Gamma(x)\Gamma(y)/\Gamma(x+y)$, is finite provided $n>m>0$. It remains to perform the integrals over auxiliary parameters. In many calculations this last step accounts for the bulk of the labor, and an extensive calculus has been developed.
+where the Euler beta function, $B(x,y)=\Gamma(x)\Gamma(y)/\Gamma(x+y)$, is finite provided $n>r>0$. It remains to perform the integrals over auxiliary parameters. In many calculations this last step accounts for the bulk of the labor, and an extensive calculus has been developed.
 
 An alternative procedure for combining denominators is based upon the representation
 
@@ -150,9 +150,9 @@ $$
 Differentiation with respect to $\lambda$ then yields the general result
 
 $$
-(2\pi)^{-4}\int d^4\mechanical{k}\,(\mechanical{k}^{\,2})^m
+(2\pi)^{-4}\int d^4\mechanical{k}\,(\mechanical{k}^{\,2})^r
 \exp(i\lambda\mechanical{k}^{\,2})
-=\frac{(m+1)!}{16\pi^2i\lambda^2(-i\lambda)^m}. \tag{B.3.17}
+=\frac{(r+1)!}{16\pi^2i\lambda^2(-i\lambda)^r}. \tag{B.3.17}
 $$
 
 ## Physical quantities

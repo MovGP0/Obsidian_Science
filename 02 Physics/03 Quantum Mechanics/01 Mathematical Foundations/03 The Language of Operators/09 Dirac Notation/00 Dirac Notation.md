@@ -9,7 +9,7 @@ A useful first question is: which parts of a calculation change when we change b
 
 Read the ket-and-bra section first to distinguish vectors from functionals. Then use projectors and completeness to turn abstract products into calculations. The representation section applies this method to wavefunctions; the postulates section separates the mathematical language from the physical measurement assumptions. As a check on this distinction, a complex inner product is an amplitude, not a probability. Only its squared magnitude has the probability interpretation, with normalized states and the specified projection measurement.
 
-Paul Dirac introduced this notation in 1930 in an influential book on theoretical physics. The basic idea is simple: instead of working only with a wavefunction $\signal{\psi}(\mechanical{x})$ and an integral such as
+Paul Dirac introduced this notation in 1939 in the paper “A new notation for quantum mechanics”. The 1947 third edition of his book “The Principles of Quantum Mechanics” then used it. The basic idea is simple: instead of working only with a wavefunction $\signal{\psi}(\mechanical{x})$ and an integral such as
 
 $$
 \int\signal{\psi}^*(\mechanical{x})\signal{\phi}(\mechanical{x})\,d\mechanical{x},

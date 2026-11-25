@@ -1,0 +1,4 @@
+=== 02 Physics/03 Quantum Mechanics/Hamiltonian of the Hydrogen Atom.md
+- FIXED | Relativistic correction has wrong dimension | Changed to -hbar^4/(8 mu^3 c^2) nabla^4 (= -p^4/(8 m^3 c^2)); kept the note's mu symbol.
+- FIXED | Spin-orbit term is not an energy | Changed to e^2/(8 pi epsilon_0 mu^2 c^2 r^3) L.S (SI, Thomas factor included); dimension checked.
+- FIXED | Darwin term missing mass factor; e is elementary charge | Changed to e^2 hbar^2/(8 mu^2 c^2 epsilon_0) delta^3(r) and described e as the elementary charge.

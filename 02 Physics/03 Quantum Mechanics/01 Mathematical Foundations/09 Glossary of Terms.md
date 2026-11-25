@@ -427,8 +427,8 @@ $$
 In the momentum representation, the operator acts by multiplication by $\mechanical{p}$. Momentum generates spatial translations:
 
 $$
-\hat T(\mechanical{a})
-=e^{-i\mechanical{a}\hat p/\mechanical{\hbar}}.
+\hat T(\mechanical{s})
+=e^{-i\mechanical{s}\hat p/\mechanical{\hbar}}.
 $$
 
 See [[00 Functions, Derivatives and Integrals|Chapter 2]] and [[00 Unitary Operators|Chapter 11]].
@@ -549,7 +549,7 @@ $$
 \qquad\operatorname{Tr}(\rho^2)<1.
 $$
 
-The component states are normalized, $p_i\geq0$, and $\sum_i p_i=1$.
+The component states are normalized, $p_i\geq0$, and $\sum_i p_i=1$. The strict inequality requires nonzero weights on at least two physically different states; otherwise the mixture is a pure state.
 
 See [[00 Special Matrices|Chapter 6]].
 
@@ -707,7 +707,7 @@ See [[00 Complex Numbers|Chapter 1]] and [[00 Hilbert Space|Chapter 8]].
 | --- | --- | --- | --- |
 | $\mechanical{\hbar}$ | $\unit{J\,s}$ | Reduced Planck constant | The action scale in evolution, momentum, and uncertainty. |
 | $\mechanical{m}$ | $\unit{kg}$ | Mass | The particle mass in the Hamiltonian. |
-| $\mechanical{x}$, $\mechanical{x_0}$, $\mechanical{a}$, $\mechanical{\Delta x}$ | $\unit{m}$ | Position and displacement | The position coordinate, specified position, translation, and position spread. |
+| $\mechanical{x}$, $\mechanical{x_0}$, $\mechanical{s}$, $\mechanical{\Delta x}$ | $\unit{m}$ | Position and displacement | The position coordinate, specified position, translation, and position spread. |
 | $\mechanical{p}$, $\mechanical{\Delta p}$ | $\unit{kg\,m\,s^{-1}}$ | Momentum | The momentum coordinate and its standard deviation. |
 | $\energy{V}$, $\energy{E}$, $\energy{E_n}$ | $\unit{J}$ | Energy | The potential energy and measured energy eigenvalues. |
 | $\energy{a}$ | $\unit{J}$ | Potential offset | The constant term of the quadratic potential. |

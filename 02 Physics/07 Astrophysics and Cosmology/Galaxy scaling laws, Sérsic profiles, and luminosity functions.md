@@ -36,9 +36,9 @@ The stellar bulge and disk account for the inner circular-speed profile in the m
 See Schneider §3.4.1. The stellar luminosity scales with the maximum rotation speed,
 
 $$
-\energy{L}\propto\mechanical{v}_{\max}^{\alpha},
+\energy{L}\propto\mechanical{v}_{\max}^{\alpha_{\mathrm{TF}}},
 \qquad
-\alpha\simeq2.5\text{–}4.
+\alpha_{\mathrm{TF}}\simeq2.5\text{–}4.
 $$
 
 The exponent is larger in redder bands. At fixed $\mechanical{v}_{\max}$, the notes give a luminosity scatter of about $20\%$, or about $10\%$ in the $H$ band. The relation is used as a distance indicator. The lecture next develops a heuristic explanation, emphasizing the physical insight that can be gained before running complex numerical simulations.
@@ -93,10 +93,10 @@ The preceding estimate gives the fourth-power Tully–Fisher relation if $\Upsil
 The luminosity in the estimate counts the stars. What role does the gas play? If the relation reflects galaxy dynamics, the circular speed should also be related to the mass producing the gravitational field. Write
 
 $$
-\mechanical{M}_{\mathrm{tot}}\propto\mechanical{v}_{\mathrm c}^{\,b},
+\mechanical{M}_{\mathrm{tot}}\propto\mechanical{v}_{\mathrm c}^{\,\beta},
 $$
 
-with $b$ an unknown exponent and $\mechanical{v}_{\mathrm c}$ close to the circular speed inferred from the kinematic tracers. To compare with observations, relate the total mass to the stellar light and account for the gas. The notes follow McGaugh and colleagues (2000, *ApJ* 533, L99). [The Baryonic Tully–Fisher Relation](https://arxiv.org/abs/astro-ph/0003001).
+with $\beta$ an unknown exponent and $\mechanical{v}_{\mathrm c}$ close to the circular speed inferred from the kinematic tracers. To compare with observations, relate the total mass to the stellar light and account for the gas. The notes follow McGaugh and colleagues (2000, *ApJ* 533, L99). [The Baryonic Tully–Fisher Relation](https://arxiv.org/abs/astro-ph/0003001).
 
 1. Relate total gravitating mass to baryonic mass by $\mechanical{M}_{\mathrm b}=f_{\mathrm b}\mechanical{M}_{\mathrm{tot}}$, with $f_{\mathrm b}$ taken to be the mean cosmic baryon fraction. This assumes the halo retains its baryons during evolution. The notes caution that feedback can invalidate the assumption.
 2. Relate the halo's baryonic mass to the mass of baryons in the disk by $\mechanical{M}_{\mathrm d}=f_{\mathrm d}\mechanical{M}_{\mathrm b}$. Here $f_{\mathrm d}$ is the fraction of halo baryons ending up in the disk.
@@ -108,14 +108,14 @@ $$
 \energy{L}=\Upsilon_*^{-1}f_*f_{\mathrm d}f_{\mathrm b}\mechanical{M}_{\mathrm{tot}},
 \qquad
 \boxed{\energy{L}\propto
-\Upsilon_*^{-1}f_*f_{\mathrm d}f_{\mathrm b}\mechanical{v}_{\mathrm c}^{\,b}.}
+\Upsilon_*^{-1}f_*f_{\mathrm d}f_{\mathrm b}\mechanical{v}_{\mathrm c}^{\,\beta}.}
 $$
 
-This argument produces a tight luminosity–speed relation with the same exponent $b$ if the product $\Upsilon_*^{-1}f_*f_{\mathrm d}f_{\mathrm b}$ stays nearly constant. The gas fraction, and therefore $f_*$, varies substantially along the Hubble sequence. The notes report that a tighter relation results when both stars and gas are included in the disk baryon mass.
+This argument produces a tight luminosity–speed relation with the same exponent $\beta$ if the product $\Upsilon_*^{-1}f_*f_{\mathrm d}f_{\mathrm b}$ stays nearly constant. The gas fraction, and therefore $f_*$, varies substantially along the Hubble sequence. The notes report that a tighter relation results when both stars and gas are included in the disk baryon mass.
 
 $$
 \boxed{\mechanical{M}_{\mathrm d}=\mechanical{M}_*+\mechanical{M}_{\mathrm g}
-\propto\mechanical{v}_{\mathrm c}^{\,\alpha}.}
+\propto\mechanical{v}_{\mathrm c}^{\,\beta}.}
 $$
 
 This is the baryonic Tully–Fisher relation.
@@ -192,8 +192,8 @@ $$
 \begin{aligned}
 \mechanical{\rho}(\mechanical{r})
 &=\mechanical{\rho}_0\left(\frac{\mechanical{r}}{\mechanical{R}_{\mathrm e}}\right)^{-p}
-\exp\!\left[-b\left(\frac{\mechanical{r}}{\mechanical{R}_{\mathrm e}}\right)^{1/n}\right],\\
-b&\simeq 2n-\frac13+\frac{0.009876}{n},\\
+\exp\!\left[-b_n\left(\frac{\mechanical{r}}{\mechanical{R}_{\mathrm e}}\right)^{1/n}\right],\\
+b_n&\simeq 2n-\frac13+\frac{0.009876}{n},\\
 p&\simeq 1-\frac{0.6097}{n}+\frac{0.05563}{n^2}.
 \end{aligned}
 $$
@@ -247,17 +247,17 @@ The notes quantify deviations from a perfect ellipse with a Fourier series in $\
 $$
 \Delta(\theta)
 =\mechanical{R}_{\mathrm{iso}}(\theta)-\mechanical{R}_{\mathrm{ell}}(\theta)
-=a_0+\sum_{n=1}^\infty\bigl[a_n\cos(n\theta)+b_n\sin(n\theta)\bigr].
+=A_0+\sum_{m=1}^\infty\bigl[A_m\cos(m\theta)+B_m\sin(m\theta)\bigr].
 $$
 
-Here $\mechanical{R}_{\mathrm{iso}}$ is the distance to the actual isophote and $\mechanical{R}_{\mathrm{ell}}$ is the distance to the fitted ellipse along the same direction. The coefficients through $n=2$ are consistent with zero within the fitting errors by construction of the best-fitting ellipse.
+Here $\theta$ is the ellipse parameter (the eccentric anomaly) of the parametrization above, not the polar angle. The two angles are equal only on the axes. $\mechanical{R}_{\mathrm{ell}}(\theta)$ is the distance to the ellipse point with parameter $\theta$, and $\mechanical{R}_{\mathrm{iso}}(\theta)$ is the distance to the actual isophote along the ray through that point. The coefficients through $m=2$ are consistent with zero within the fitting errors by construction of the best-fitting ellipse.
 
-Most elliptical galaxies are nearly symmetric about their major and minor axes, so the $n=3$ terms are usually small. Reflection symmetry also suppresses the sine terms. The leading shape correction in the notes is therefore
+Most elliptical galaxies are nearly symmetric about their major and minor axes, so the $m=3$ terms are usually small. Reflection symmetry also suppresses the sine terms. The leading shape correction in the notes is therefore
 
 $$
 \Delta(\theta)
 =\mechanical{R}_{\mathrm{iso}}(\theta)-\mechanical{R}_{\mathrm{ell}}(\theta)
-\simeq a_4\cos4\theta.
+\simeq A_4\cos4\theta.
 $$
 
 Equivalently,
@@ -265,16 +265,16 @@ Equivalently,
 $$
 \mechanical{R}_{\mathrm{iso}}(\theta)\simeq
 \mechanical{R}_{\mathrm{ell}}(\theta)
-\left[1+\frac{a_4\cos4\theta}{\mechanical{R}_{\mathrm{ell}}(\theta)}\right].
+\left[1+\frac{A_4\cos4\theta}{\mechanical{R}_{\mathrm{ell}}(\theta)}\right].
 $$
 
 Schneider writes the displacement using vectors. The ellipse position vector is $\mechanical{\vec R}_{\mathrm{ell}}(\theta)=(a\cos\theta,b\sin\theta)$ and its magnitude is $\sqrt{x^2+y^2}$. The same bracket multiplies the position vector when the correction is radial.
 
-A positive $a_4$ gives a **disky** isophote. A negative $a_4$ gives a **boxy** isophote.
+A positive $A_4$ gives a **disky** isophote. A negative $A_4$ gives a **boxy** isophote.
 
 ##### Galaxy luminosity functions
 
-The notes give a typical isophotal deviation $|a_4/a|\sim0.01$, so the fitted ellipses reproduce the observed shapes to about the percent level in this measure.
+The notes give a typical isophotal deviation $|A_4/a|\sim0.01$, so the fitted ellipses reproduce the observed shapes to about the percent level in this measure.
 
 ##### Galaxy luminosity function
 
@@ -295,7 +295,7 @@ Above the characteristic luminosity $\energy{L}_*$, the Schechter function falls
 
 The midterm is next week. The notes repeat the global Schechter luminosity function from page 33 and give parameter estimates in two bands from MBW Table 15.1, page 656.
 
-| Band | $\alpha$ | $M^*$ ($\unit{mag}$) | $\phi_* / (h^3\,\unit{Mpc^{-3}})$ |
+| Band | $\alpha$ | $M^*-5\log_{10}h$ ($\unit{mag}$) | $\phi_* / (h^3\,\unit{Mpc^{-3}})$ |
 | --- | ---: | ---: | ---: |
 | $K$ | $-1.16\pm0.04$ | $-23.83\pm0.03$ | $(0.75\pm0.01)\times10^{-2}$ |
 | $b$ | $-1.21\pm0.03$ | $-19.66\pm0.07$ | $(1.61\pm0.08)\times10^{-2}$ |
@@ -357,30 +357,28 @@ Kyle Kabasares, *Extragalactic Astrophysics (Physics 241C, UC Irvine 2018)*.
 | $c$ | $1$ | Halo concentration | Ratio of the outer halo reference radius to the scale radius. |
 | $\mechanical{v}_{\mathrm c,\Delta}$ | $\unit{m\,s^{-1}}$ | Circular speed at the overdensity radius | Normalizes the NFW circular-speed profile. |
 | $\mechanical{v}_{\max}$ | $\unit{km\,s^{-1}}$ | Maximum rotation speed | Kinematic variable in the Tully–Fisher relation. |
-| $\alpha$ | $1$ | Tully–Fisher slope | Power-law exponent relating luminosity to maximum rotation speed. |
+| $\alpha_{\mathrm{TF}}$ | $1$ | Tully–Fisher slope | Power-law exponent relating luminosity to maximum rotation speed. |
 | $\mechanical{v}_{\mathrm{flat}}$ | $\unit{km\,s^{-1}}$ | Flat rotation speed | Approximate circular speed in the outer, flat part of the rotation curve. |
 | $\Upsilon(<\mechanical{r})$ | $\unit{kg\,W^{-1}}$ | Mass-to-light ratio | Enclosed mass divided by the luminosity used in the estimate. |
 | $\mechanical{M}_{\mathrm{tot}}$, $\mechanical{M}_{\mathrm b}$, $\mechanical{M}_{\mathrm d}$, $\mechanical{M}_*$ | $\unit{kg}$ | Total, baryonic, disk baryon, and stellar masses | Successive mass components in the luminosity estimate. |
 | $f_{\mathrm b}$, $f_{\mathrm d}$, $f_*$ | $1$ | Baryon, disk, and stellar fractions | Ratios of successive masses in the three steps above. |
 | $\Upsilon_*$ | $\unit{kg\,W^{-1}}$ | Stellar mass-to-light ratio | Stellar mass divided by stellar luminosity in the chosen band. |
 | $\mechanical{M}_{\mathrm g}$ | $\unit{kg}$ | Disk gas mass | Gas contribution to the disk baryon mass. |
+| $\beta$ | $1$ | Baryonic Tully–Fisher exponent | Power-law exponent relating total or disk baryon mass to circular speed. |
 | $h$ | $1$ | Reduced Hubble parameter | Defined by $H_0=\quantity{100h}{km\,s^{-1}\,Mpc^{-1}}$. |
 | $q$, $\epsilon$, $e$ | $1$ | Axis ratio, ellipticity, and eccentricity | Three measures of apparent ellipse shape. |
-| $b_n$ | $1$ | Sérsic normalization coefficient | Chosen so that the radius $\mechanical{R}_{\mathrm e}$ encloses half the projected light. |
+| $b_n$ | $1$ | Sérsic normalization coefficient | Chosen so that the radius $\mechanical{R}_{\mathrm e}$ encloses half the projected light. The deprojection uses the same coefficient. |
 | $\mechanical{\rho}_0$ | $\unit{kg\,m^{-3}}$ | Density normalization | Multiplicative scale in the approximate deprojection. |
 | $p$ | $1$ | Inner deprojection slope | Exponent of the prefactor in the approximate spatial density. |
 | $\mechanical{R}_{\mathrm{iso}}$, $\mechanical{R}_{\mathrm{ell}}$ | $\unit{m}$ | Isophote and fitted ellipse radii | Ordinary distances to the actual and fitted curves in a given direction. |
-| $\Delta(\theta)$, $a_n$, $b_n$ | $\unit{m}$ | Isophotal residual and its Fourier coefficients | Measure departure from the fitted ellipse. These Fourier coefficients are distinct from the dimensionless Sérsic coefficient. |
+| $\Delta(\theta)$, $A_m$, $B_m$ | $\unit{m}$ | Isophotal residual and its Fourier coefficients | Measure departure from the fitted ellipse as a function of the ellipse parameter $\theta$. |
 | $\phi(\energy{L})$ | $\unit{Mpc^{-3}\,W^{-1}}$ | Galaxy luminosity function | Number per unit volume per luminosity interval. |
 | $\phi_*$ | $\unit{Mpc^{-3}}$ | Schechter normalization | Density scale of the luminosity function. |
 | $\energy{L}_*$ | $\unit{W}$ | Characteristic luminosity | Sets the scale of the transition to exponential suppression. |
 | $\alpha$ | $1$ | Schechter faint-end slope | Power-law index at luminosities small compared with $\energy{L}_*$. |
-| $M^*$ | $\unit{mag}$ | Characteristic absolute magnitude | Magnitude corresponding to the Schechter luminosity $\energy{L}_*$. |
+| $M^*$ | $\unit{mag}$ | Characteristic absolute magnitude | Magnitude corresponding to the Schechter luminosity $\energy{L}_*$. The table gives $M^*-5\log_{10}h$. |
 | $n_{\mathrm g}$ | $\unit{Mpc^{-3}}$ | Mean galaxy number density | Integrated count per unit volume. |
 | $\energy{\ell}_{\mathrm{tot}}$ | $\unit{W\,Mpc^{-3}}$ | Mean galaxy luminosity density | Integrated luminosity per unit volume. |
 | $n(\mechanical{M})$ | $\unit{Mpc^{-3}\,kg^{-1}}$ | Halo mass function | Number per unit volume per unit halo mass. |
 | $C$ | $\unit{kg^{-1}}$ | Exponential cutoff coefficient | Reciprocal of the mass scale in the special-case halo mass function. |
-| $n$ | $\unit{m^{-3}}$ | Stellar number density | Number of stars per unit volume. |
-| $\mu$ | $1$ | Mean particle mass in atomic mass units | Dimensionless factor converting the atomic mass unit to the average gas particle mass. |
-| $a$, $b$ | $1$ | Fundamental-plane coefficients | Logarithmic slopes with respect to velocity dispersion and effective intensity. |
-| $K$ | $\unit{kg\,s^2\,m^{-3}}$ | Virial scaling coefficient | Inverse of $2\pi G K_R K_v^2$ in the effective-radius scaling. |
+| $a$, $b$ | $\unit{kpc}$ | Semimajor and semiminor axes | Semiaxes of the fitted ellipse. |

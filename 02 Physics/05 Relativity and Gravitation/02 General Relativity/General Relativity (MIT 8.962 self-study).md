@@ -785,7 +785,7 @@ The photon is redshifted as it climbs the tower.
 
 In an inertial frame, a particle has zero acceleration when no forces act on it. Gravity appears to change this because it causes acceleration, but the gravitational force is proportional to the object's inertial mass. In the notes' analogy, mass is the gravitational charge. All freely falling objects at the same location therefore experience the same gravitational acceleration in a uniform field. With no other forces, they retain their relative velocities in that approximation.
 
-A frame in free fall recovers the behavior of an inertial frame locally. Relative to the frame's own acceleration, the common gravitational acceleration cancels. The **weak equivalence principle** states that over a sufficiently small region, the motion of freely falling particles under gravity is indistinguishable from that seen in a uniformly accelerating frame. The lecture notes give a test precision of about $10^{-13}$.
+A frame in free fall recovers the behavior of an inertial frame locally. Relative to the frame's own acceleration, the common gravitational acceleration cancels. The **weak equivalence principle** states that over a sufficiently small region, the motion of freely falling particles under gravity is indistinguishable from that seen in a uniformly accelerating frame. The lecture notes give a test precision of about $10^{-13}$. The MICROSCOPE satellite (final result 2022) reached about $10^{-15}$.
 
 #### Tides, curvature, and the Einstein equivalence principle
 
@@ -1877,14 +1877,14 @@ $$
 =\partial^\mu \electric{A}^\nu-\partial^\nu\electric{A}^\mu
 =\frac{\electric{q}}{\mechanical{r}^3}
 \begin{bmatrix}
-0&-x&-y&-z\\
-x&0&0&0\\
-y&0&0&0\\
-z&0&0&0
+0&x&y&z\\
+-x&0&0&0\\
+-y&0&0&0\\
+-z&0&0&0
 \end{bmatrix}.
 $$
 
-The handwritten derivative terms have interchanged indices on the potentials. The antisymmetric expression above is consistent with the matrix.
+The handwritten derivative terms have interchanged indices on the potentials, and the handwritten matrix has the opposite sign. With $\eta=\operatorname{diag}(-1,1,1,1)$ the expression above gives $\electric{F}^{0i}=+\electric{q}x^i/\mechanical{r}^3=\electric{E}^i$.
 
 $$
 \electric{E}^i=\frac{\electric{q}x^i}{\mechanical{r}^3},
@@ -1951,7 +1951,7 @@ The gauge-invariant combinations are
 $$
 \begin{aligned}
 \Phi&=\phi+\partial_t\gamma-\frac12\partial_t^2\lambda,\\
-\Theta&=\frac12(H-\nabla^2\lambda),\\
+\Theta&=\frac13(H-\nabla^2\lambda),\\
 \Psi_i&=\beta_i-\frac12\partial_t\epsilon_i,
 &\partial_i\Psi_i&=0,
 \end{aligned}
@@ -1959,7 +1959,7 @@ $$
 
 together with $h_{ij}^{\mathrm{TT}}$. The time derivative of $\epsilon_i$ in $\Psi_i$ follows from the preceding gauge transformations. The two scalars contribute $1+1$ independent functions, the divergence-free vector contributes $3-1=2$, and the transverse, traceless tensor contributes $6-1-3=2$. This gives six gauge-invariant functions.
 
-To express $G_{\alpha\beta}=8\pi T_{\alpha\beta}$ in terms of those functions, decompose the stress–energy tensor first.
+To express $G_{\alpha\beta}=8\pi G T_{\alpha\beta}$ in terms of those functions, decompose the stress–energy tensor first.
 
 $$
 \begin{aligned}
@@ -3198,7 +3198,7 @@ $$
 d\thermal{U}=-\mechanical{P}\,d\mechanical{V}+\thermal{T}\,d\thermal{S}.
 $$
 
-Whether a fluid is cold depends on its temperature relative to its Fermi temperature $\thermal{T}_{\mathrm F}=\energy{E}_{\mathrm F}/k_{\mathrm B}$. The notes give $\thermal{T}_{\mathrm F}\simeq\quantity{10^{13}}{K}$ for neutron stars and observed temperatures of $\quantity{10^6}{K}$ to $\quantity{10^9}{K}$. Even a billion kelvin is cold on that scale.
+Whether a fluid is cold depends on its temperature relative to its Fermi temperature $\thermal{T}_{\mathrm F}=\energy{E}_{\mathrm F}/k_{\mathrm B}$. For neutron stars $\thermal{T}_{\mathrm F}\simeq\quantity{10^{11}}{K}$ to $\quantity{10^{12}}{K}$ (the notes give $\quantity{10^{13}}{K}$) and observed temperatures of $\quantity{10^6}{K}$ to $\quantity{10^9}{K}$. Even a billion kelvin is cold on that scale.
 
 A test equation of state takes the pressure to be a power law of the rest-mass density, $\mechanical{P}=K\mechanical{\rho}_0^\Gamma$, with constants $K$ and $\Gamma$. This is a **polytrope**.
 
@@ -3740,3 +3740,13 @@ For the critical impact parameter $b_{\mathrm{crit}}=3\sqrt3\,G\mechanical{M}$, 
 | $a$ | $\unit{m}$ | Kerr spin parameter | Angular momentum per mass with $c=1$ in the displayed equation. |
 | $r_{\mathrm H}$ | $\unit{m}$ | Horizon radius | Outer root of $\Delta=0$ in the Kerr coordinates. |
 | $b_{\mathrm{crit}}$ | $\unit{m}$ | Critical photon impact parameter | Boundary between capture and deflection of incoming Schwarzschild light rays. |
+| $G$ | $\unit{m^3\,kg^{-1}\,s^{-2}}$ | Gravitational constant | Couples the Einstein tensor to the stress-energy tensor. |
+| $\mechanical{M}$ | $\unit{kg}$ | Mass of the central body | Mass parameter of the Schwarzschild, Reissner–Nordström, and Kerr solutions. In geometric units it is a length. |
+| $\electric{Q}$ | $\unit{C}$ | Black-hole charge | Charge parameter of the Reissner–Nordström solution. In geometric units it is a length. |
+| $R^\alpha{}_{\beta\gamma\delta}$ | $\unit{m^{-2}}$ | Riemann curvature tensor | Measures how a vector changes after parallel transport around a small closed loop. |
+| $G_{\alpha\beta}$ | $\unit{m^{-2}}$ | Einstein tensor | Trace-reversed Ricci tensor on the left side of the field equation. |
+| $T_{\alpha\beta}$ | $\unit{J\,m^{-3}}$ | Stress-energy tensor | Densities and fluxes of energy and momentum. |
+| $h_{\alpha\beta}$ | $1$ | Metric perturbation | Small deviation of the metric from the Minkowski metric. |
+| $\bar h_{\alpha\beta}$ | $1$ | Trace-reversed metric perturbation | $h_{\alpha\beta}-\frac12\eta_{\alpha\beta}h$, the quantity in the linearized field equation. |
+| $I_{ij}$ | $\unit{kg\,m^2}$ | Mass quadrupole moment | Second moment of the energy density of the source. |
+| $V_{\mathrm{eff}}$ | $1$ | Effective potential | Radial effective potential per unit rest energy squared, compared with $\hat E^2$. |

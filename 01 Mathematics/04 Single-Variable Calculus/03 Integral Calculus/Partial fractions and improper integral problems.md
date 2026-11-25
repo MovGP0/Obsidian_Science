@@ -381,7 +381,7 @@ $$
 
 ##### Exponential substitution and partial fractions
 
-Expand the polynomial identity from [[#Example with a repeated linear factor|the section on Example with a repeated linear factor]] and collect powers of $u$.
+Expand the polynomial identity from the $e^x$ example above and collect powers of $u$.
 
 $$
 \begin{aligned}

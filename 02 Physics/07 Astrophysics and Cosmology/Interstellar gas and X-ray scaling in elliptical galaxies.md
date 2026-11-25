@@ -50,8 +50,8 @@ $$
 The notes use the same scale for protons. In a magnetic field of magnitude $\magnetic{B}$, a particle of mass $\mechanical{m}$ and charge magnitude $Ze$ has an estimated gyroradius
 
 $$
-\mechanical{r}_{\mathrm g}
-=\quantity{3.9\times10^{-11}}{pc}\,Z^{-1}
+\mechanical{r}_{\mathrm L}
+=\quantity{2.0\times10^{-11}}{pc}\,Z^{-1}
 \left(\frac{\thermal{T}}{\quantity{10^7}{K}}\right)^{1/2}
 \left(\frac{\mechanical{m}}{\mechanical{m}_{\mathrm e}}\right)^{1/2}
 \left(\frac{\magnetic{B}}{2\,\mu\mathrm{G}}\right)^{-1}.
@@ -327,14 +327,12 @@ Kyle Kabasares, *Extragalactic Astrophysics (Physics 241C, UC Irvine 2018)*.
 
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
-| $V$ | $\unit{m^3}$ | Gas volume | Volume used to convert emissivity to luminosity. |
+| $\mechanical{V}$ | $\unit{m^3}$ | Emitting volume | Volume over which the X-ray emissivity is integrated. |
 | $Z$ | $1$ | Metallicity | Abundance of elements heavier than helium, often quoted relative to solar metallicity. |
 | $\thermal{T}$ | $\unit{K}$ | Gas temperature | Determines the thermal energy and affects the cooling function. |
 | $\mechanical{M}_\odot$ | $\unit{kg}$ | Solar mass | Reference unit for galactic and cluster masses. |
 | $\thermal{\Lambda}_\nu$ | $\unit{W\,m^3\,Hz^{-1}}$ | Spectral cooling function | Spectral emissivity divided by the square of the hydrogen number density. |
-| $\mu$ | $\unit{mag\,arcsec^{-2}}$ | Surface brightness in magnitudes | Logarithmic measure of intensity per angular area with a specified zero point. |
-| $\mechanical{R}$, $\mechanical{R}_{\mathrm e}$ | $\unit{kpc}$ | Projected and effective radius | The profile coordinate is the isophote's semimajor axis. The effective radius encloses half the component's projected light. |
-| $n$ | $1$ | Sérsic index | Shape parameter of the profile, with $n=4$ for the de Vaucouleurs law. |
+| $\mechanical{R}$ | $\unit{kpc}$ | Projected radius | Radius in the plane of the sky in the beta-model brightness profile. |
 | $\energy{L}$ | $\unit{W}$ | Total luminosity | Integral of the surface luminosity density over projected area. |
 | $\mechanical{r}$ | $\unit{m}$ | Spherical radius | Three-dimensional distance from the center. |
 | $\mechanical{M}(<\mechanical{r})$ | $\unit{kg}$ | Enclosed gravitating mass | Total mass within spherical radius $\mechanical{r}$. |
@@ -344,15 +342,9 @@ Kyle Kabasares, *Extragalactic Astrophysics (Physics 241C, UC Irvine 2018)*.
 | $\mechanical{\rho}_{\mathrm c}$ | $\unit{kg\,m^{-3}}$ | Critical mass density | Reference cosmic density for the spherical overdensity convention. |
 | $\mechanical{M}_\Delta$ | $\unit{kg}$ | Spherical overdensity mass | Mass enclosed within $\mechanical{r}_\Delta$. |
 | $c$ | $1$ | Halo concentration | Ratio of the outer halo reference radius to the scale radius. |
-| $\alpha$ | $1$ | Tully–Fisher slope | Power-law exponent relating luminosity to maximum rotation speed. |
-| $\mechanical{M}_{\mathrm{tot}}$, $\mechanical{M}_{\mathrm b}$, $\mechanical{M}_{\mathrm d}$, $\mechanical{M}_*$ | $\unit{kg}$ | Total, baryonic, disk baryon, and stellar masses | Successive mass components in the luminosity estimate. |
-| $h$ | $1$ | Reduced Hubble parameter | Defined by $H_0=\quantity{100h}{km\,s^{-1}\,Mpc^{-1}}$. |
-| $q$, $\epsilon$, $e$ | $1$ | Axis ratio, ellipticity, and eccentricity | Three measures of apparent ellipse shape. |
-| $p$ | $1$ | Inner deprojection slope | Exponent of the prefactor in the approximate spatial density. |
-| $\alpha$ | $1$ | Schechter faint-end slope | Power-law index at luminosities small compared with $\energy{L}_*$. |
-| $C$ | $\unit{kg^{-1}}$ | Exponential cutoff coefficient | Reciprocal of the mass scale in the special-case halo mass function. |
-| $N$ | $1$ | Number of stars | Total stellar population of the model galaxy. |
-| $n$ | $\unit{m^{-3}}$ | Stellar number density | Number of stars per unit volume. |
+| $\mechanical{M}_*$ | $\unit{kg}$ | Stellar mass | Stellar mass of an early-type galaxy in the ATLAS³D sample. |
+| $\mechanical{M}$ | $\unit{kg}$ | Total mass | Total gravitating mass in the virial scaling. |
+| $h$ | $\unit{J\,s}$ | Planck constant | Converts photon frequency to energy in the bremsstrahlung cutoff. |
 | $\mechanical{t}_{\mathrm{cross}}$ | $\unit{s}$ | Galaxy crossing time | Characteristic galaxy radius divided by stellar speed. |
 | $\mu$ | $1$ | Mean particle mass in atomic mass units | Dimensionless factor converting the atomic mass unit to the average gas particle mass. |
 | $\mechanical{m}_{\mathrm u}$ | $\unit{kg}$ | Atomic mass unit | Mass unit used to specify the mean gas particle mass. |
@@ -361,17 +353,15 @@ Kyle Kabasares, *Extragalactic Astrophysics (Physics 241C, UC Irvine 2018)*.
 | $\energy{T}_{jk}$ | $\unit{J}$ | Ordered kinetic-energy tensor component | Kinetic contribution from bulk stellar motions. |
 | $\energy{\Pi}_{jk}$ | $\unit{J}$ | Integrated random-motion stress | Twice the random contribution to the kinetic-energy tensor. |
 | $\mechanical{I}_{jk}$ | $\unit{kg\,m^2}$ | Second spatial mass moment | Mass-weighted product of two position coordinates. |
-| $\mechanical{I}$ | $\unit{kg\,m^2}$ | Scalar spatial mass moment | Trace of the second spatial moment tensor. |
-| $\energy{K}$, $\energy{W}$ | $\unit{J}$ | Total kinetic and gravitational potential energies | Traces of the kinetic and potential-energy tensors in the isolated self-gravitating system. |
 | $\mechanical{r}_{\mathrm g}$ | $\unit{m}$ | Gravitational radius | Radius defined by the total mass and gravitational binding energy. |
-| $a$, $b$ | $1$ | Fundamental-plane coefficients | Logarithmic slopes with respect to velocity dispersion and effective intensity. |
-| $K_R$, $K_v$ | $1$ | Virial structure coefficients | Ratios connecting the effective radius and observed dispersion to the gravitational radius and global root-mean-square speed. |
-| $K$ | $\unit{kg\,s^2\,m^{-3}}$ | Virial scaling coefficient | Inverse of $2\pi G K_R K_v^2$ in the effective-radius scaling. |
+| $K_R$ | $1$ | Radius structure coefficient | Ratio of the virial radius to the gravitational radius. |
 | $\mechanical{M}(\mathrm{H\,I})$, $\mechanical{M}(\mathrm{H}_2)$ | $\unit{kg}$ | Atomic and molecular hydrogen masses | Cold-gas mass estimates from atomic hydrogen measurements and CO observations. |
 | $\energy{L}_B$, $\energy{L}_{B,\odot}$ | $\unit{W}$ | Galaxy and solar $B$-band luminosities | Optical luminosity and its solar reference in the $B$ band. |
 | $\energy{L}_X$, $\energy{L}_{\mathrm{opt}}$ | $\unit{W}$ | X-ray and optical luminosities | Luminosities compared across the elliptical galaxy sample. |
 | $\mechanical{\lambda}_{\mathrm C}$ | $\unit{pc}$ | Coulomb mean free path | Characteristic distance traveled between Coulomb deflections. |
-| $\mechanical{r}_{\mathrm g}$ | $\unit{pc}$ | Gyroradius | Radius of a charged particle's motion around a magnetic field line in this section. |
+| $\mechanical{r}_{\mathrm L}$ | $\unit{pc}$ | Gyroradius | Radius of a charged particle's motion around a magnetic field line. |
+| $\mechanical{m}$, $\mechanical{m}_{\mathrm e}$ | $\unit{kg}$ | Particle mass and electron mass | Mass of the gyrating particle and its reference value. |
+| $Z$ | $1$ | Charge number | Particle charge in units of the elementary charge in the gyroradius estimate. |
 | $\magnetic{B}$ | $\unit{T}$ | Magnetic flux density magnitude | Field strength entering the gyroradius estimate. |
 | $\mechanical{\tau}_{\mathrm{ee}}$ | $\unit{yr}$ | Electron–electron equilibration time | Time for electrons to equilibrate through Coulomb interactions with other electrons. |
 | $\mechanical{\tau}_{\mathrm{e,i}}$ | $\unit{yr}$ | Electron–ion equilibration time | Time for ions and electrons to exchange thermal energy. |

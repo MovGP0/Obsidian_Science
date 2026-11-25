@@ -21,4 +21,4 @@ $$x(t) = x_0\cos(\omega t) + \frac{v_0}{\omega}\sin(\omega t).$$
 
 Every solution satisfies $H = \tfrac{1}{2m}p^2 + \tfrac{1}{2}k x^2 = \text{const}$, so the orbit is an ellipse in $(x,p)$-space.
 
-The flow matrix above rotates the vector $\mathbf{u}$ at frequency $\omega$, matching the physical intuition of a constant-energy rotation.
+The flow matrix above is not a rotation in $(x,p)$-space unless $m\omega=1$. It moves the vector $\mathbf{u}$ along the ellipse with angular frequency $\omega$. In the scaled coordinates $(x,\,p/(m\omega))$, the flow is a rotation by the angle $\omega t$ and the orbit is a circle, which matches the physical intuition of a constant-energy rotation.

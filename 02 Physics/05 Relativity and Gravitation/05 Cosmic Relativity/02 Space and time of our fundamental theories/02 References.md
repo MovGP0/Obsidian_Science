@@ -11,7 +11,7 @@ Use this list to trace the chapter's treatment of operational space, inertial fr
 
 1. I. Newton, *Principia Mathematica: The Mathematical Principles of Natural Philosophy* (Daniel Adee, New York, 1846).
 2. E. Mach, *The Science of Mechanics*, 4th edn. (The Open Court Publishing Co., London, 1919), pp. 222–245 and appendix XX.
-3. C. S. Unnikrishnan, Physical reality and the unobservables of physical nature, in *Einsten, Routledge Studies in the Philosophy of Mathematics and Physics, Tagore and the Nature of Reality*, ed. by P. Ghose (2016), pp. 127–152.
+3. C. S. Unnikrishnan, Physical reality and the unobservables of physical nature, in *Einstein, Tagore and the Nature of Reality*, ed. by P. Ghose, Routledge Studies in the Philosophy of Mathematics and Physics (Routledge, 2016), pp. 127–152.
 4. J. Barbour, *The Discovery of Dynamics* (Oxford University Press, 2001).
 5. M. Jammer, *Concepts of Space: The History of Theories of Space in Physics* (Dover Books, 1954).
 6. A. Einstein, *Fundamental Ideas and Problems of the Theory of Relativity, Nobel Lectures, Physics 1901–1921* (Elsevier Publishing Company, Amsterdam, 1967).

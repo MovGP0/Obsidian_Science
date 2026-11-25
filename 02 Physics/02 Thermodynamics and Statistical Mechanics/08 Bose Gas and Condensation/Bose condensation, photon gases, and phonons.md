@@ -93,6 +93,9 @@ The factors $4\pi^2$ and $g$ in the boxed result follow from the state count abo
 
 For helium, the ideal-gas calculation gives a critical temperature of roughly $3\;\unit{K}$. The lecture records an experimental value of approximately $2.19\;\unit{K}$ and attributes the comparison to Fritz London. The handwritten date reads 1928.
 
+> [!note] Source clarification
+> London proposed the link between superfluid helium and Bose condensation in 1938, not 1928. The measured lambda point of helium-4 at saturated vapor pressure is $2.17\;\unit{K}$. The value $2.19\;\unit{K}$ here and in the heat-capacity section is the notebook's value.
+
 ##### Counting the ground state separately
 
 The ground state can hold a macroscopic population. Include its occupation explicitly and use the continuum integral for the excited states,
@@ -222,7 +225,7 @@ $$
 
 When $\energy{\hbar}\signal{\omega}\ll\thermal{k}_{\mathrm B}\thermal{T}$, the mean energy per mode approaches the equipartition value $\thermal{k}_{\mathrm B}\thermal{T}$. When $\energy{\hbar}\signal{\omega}\gg\thermal{k}_{\mathrm B}\thermal{T}$, the spectrum falls exponentially.
 
-![[Kyle Kabasares - Thermodynamics and Statistical Mechanics - Planck spectrum peak.png|**Fig. 15** Planck spectrum in the dimensionless frequency $x=\energy{\hbar}\signal{\omega}/(\thermal{k}_{\mathrm B}\thermal{T})$. The maximum of $x^3/(e^x-1)$ lies near $x=2.822$.]]
+![[Kyle Kabasares - Thermodynamics and Statistical Mechanics - Planck spectrum peak.png|**Fig. 15** Planck spectrum in the dimensionless frequency $x=\energy{\hbar}\signal{\omega}/(\thermal{k}_{\mathrm B}\thermal{T})$. The maximum of $x^3/(e^x-1)$ lies near $x\approx2.821$.]]
 
 The photon dispersion is $\energy{E}=\mechanical{c}|\mechanical{\vec p}|$, and $\energy{\mu}=0$. Integrate the Planck spectrum from [[#Photon number density|the section on Photon number density]], using $x=\thermal{\beta}\energy{\hbar}\signal{\omega}$,
 
@@ -277,22 +280,18 @@ Kyle Kabasares, *Thermodynamics and Statistical Mechanics (Chem 232A - Physics 2
 | $\thermal{S}$ | $\unit{J\,K^{-1}}$ | Entropy | State function whose change along a reversible path is the integral of reversible heat divided by temperature. |
 | $\mechanical{\vec p}$ | $\unit{kg\,m\,s^{-1}}$ | Momentum | Particle momentum, which changes sign under time reversal. |
 | $\mechanical{V}$ | $\unit{m^3}$ | Volume | Spatial extent of a simple system. |
-| $\mechanical{P}$, $\mechanical{P}_{\mathrm{int}}$, $\mechanical{P}_{\mathrm{ext}}$ | $\unit{Pa}$ | Pressure | Force per unit area, including the internal and applied external pressure at the piston. |
-| $n$ | $\unit{mol}$ | Amount of substance | Number of moles in the gas. |
+| $\mechanical{P}$ | $\unit{Pa}$ | Pressure | Force per unit area of the gas or of the radiation. |
 | $\thermal{C}_V$ | $\unit{J\,K^{-1}}$ | Heat capacity at constant volume | Temperature derivative of internal energy at fixed volume and composition. |
 | $\energy{E}$ | $\unit{J}$ | Energy | Microscopic energy that enters the Boltzmann weight. |
 | $\thermal{\beta}$ | $\unit{J^{-1}}$ | Inverse thermal energy | Reciprocal of Boltzmann's constant times the absolute temperature. |
-| $\energy{F}$, $\energy{A}$ | $\unit{J}$ | Helmholtz free energy | Canonical thermodynamic potential obtained from the partition function. |
-| $n$ | $\unit{m^{-3}}$ | Number density | Particle count per unit volume. |
+| $\energy{A}$ | $\unit{J}$ | Helmholtz free energy | Canonical thermodynamic potential obtained from the partition function. |
+| $n(\energy{\epsilon})$ | 1 | Mean occupation number | Mean number of bosons in one state of energy $\energy{\epsilon}$. |
 | $\energy{\mu}$ | $\unit{J}$ per particle | Chemical potential | Intensive energy variable conjugate to particle number. |
-| $\Omega$ | 1 | Multiplicity | Number of accessible microstates, including the cumulative count in the ideal-gas calculation. |
-| $\signal{\nu}$, $\signal{\omega}$ | $\unit{Hz}$, $\unit{rad\,s^{-1}}$ | Frequency and angular frequency | Two frequency conventions for radiation modes, related by $\signal{\omega}=2\pi\signal{\nu}$. |
+| $\signal{\omega}$ | $\unit{rad\,s^{-1}}$ | Angular frequency | Angular frequency of a radiation mode. |
 | $\mechanical{c}$ | $\unit{m\,s^{-1}}$ | Speed of light | Propagation speed in the photon spectrum formula. |
-| $g$ | 1 | Landé factor | Proportionality factor relating angular momentum and magnetic moment. |
 | $\energy{\Omega}$ | $\unit{J}$ | Grand potential | Legendre transform of Helmholtz free energy with respect to particle number. |
-| $j$ | 1 | Internal partition function | Sum over molecular states other than translation. |
 | $g$ | 1 | Internal degeneracy | Number of internal states per momentum state. |
-| $\thermal{T}_{\mathrm c}$ | $\unit{K}$ | Critical temperature | Onset of macroscopic ground-state occupation or magnetic ordering, according to the model. |
+| $\thermal{T}_{\mathrm c}$ | $\unit{K}$ | Critical temperature | Onset of macroscopic ground-state occupation. |
 | $N_0$, $N_{\mathrm{ex}}$ | $1$ | Ground and excited populations | Particles in the ground state and particles in all excited states, respectively. |
 | $\mathcal{N}$ | $1$ | Mode count | Number of photon modes, including polarization. |
 | $\alpha$ | $1$ | Fine-structure constant | Electromagnetic coupling used in the photon scattering estimate. |

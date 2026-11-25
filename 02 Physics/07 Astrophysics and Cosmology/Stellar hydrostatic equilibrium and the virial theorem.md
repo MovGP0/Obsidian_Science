@@ -34,12 +34,12 @@ $$
 \energy{L}_\odot &= 3.847 \times 10^{26}\,\unit{W}
                  = 3.847 \times 10^{33}\,\unit{erg\,s^{-1}},\\
 10^{-7}\,\unit{J} &= 1\,\unit{erg},\\
-\mechanical{R}_\odot &= 6.96 \times 10^7\,\unit{km}.
+\mechanical{R}_\odot &= 6.96 \times 10^5\,\unit{km} = 6.96 \times 10^{10}\,\unit{cm}.
 \end{aligned}
 $$
 
 > [!note]
-> The source writes the solar radius with an exponent of $7$. The surface gravity on this page and the gravitational energy scale on [[#Internal energy|the section on Internal energy]] give about $7.0 \times 10^5\,\unit{km}$ when combined.
+> The source writes the solar radius with an exponent of $7$, which is wrong by a factor of 100. The surface gravity on this page and the gravitational energy scale in [[#Equilibrium of the whole star|the section on Equilibrium of the whole star]] agree with $6.96 \times 10^5\,\unit{km}$.
 
 $$
 \begin{aligned}
@@ -68,7 +68,7 @@ Consider a $\quantity{1}{cm^2}$ patch on the surface of the shell. The sketch sh
 $$
 \begin{aligned}
 \mathrm{d}\mechanical{F}
-&= \mathrm{d}\mechanical{M}_r\,\mechanical{a}
+&= \mathrm{d}\mechanical{m}\,\mechanical{a}
  = \mechanical{\rho}\,\mathrm{d}\mechanical{V}\,\mechanical{g}
  = \mechanical{A}\mechanical{\rho}\mechanical{g}\,\mathrm{d}\mechanical{r},\\
 \mathrm{d}\mechanical{F}
@@ -80,7 +80,7 @@ $$
 \end{aligned}
 $$
 
-Here $\mathrm{d}\mechanical{M}_r$ in the force calculation is the mass of the patch. The gravitational force acts on the patch, but the pressure difference holds it in place. The sketch shows the pressure force $\Delta\mechanical{P}\,\mechanical{A}$ acting up and the weight $\mechanical{g}\,\mathrm{d}\mechanical{M}_r$ acting down. Beside the sketch, the weight per unit area is
+Here $\mathrm{d}\mechanical{m}$ in the force calculation is the mass of the patch. The gravitational force acts on the patch, but the pressure difference holds it in place. The sketch shows the pressure force $\Delta\mechanical{P}\,\mechanical{A}$ acting up and the weight $\mechanical{g}\,\mathrm{d}\mechanical{m}$ acting down. Beside the sketch, the weight per unit area is
 
 $$
 \mechanical{\rho}\mechanical{g}\,\mathrm{d}\mechanical{r}
@@ -117,7 +117,7 @@ For $\mechanical{g}>0$ and positive density $\mechanical{\rho}$, the pressure de
 
 The notes describe an integral quantity for the star that is minimized over a family of configurations. The gravitational potential energy $\energy{\Omega}$ is the energy associated with assembling the star.
 
-Consider adding a mass element $\mathrm{d}\mechanical{M}_r$ to $\mechanical{M}_r$. At a distance $\mechanical{r}'$, the gravitational force has magnitude $(\mechanical{G}\mechanical{M}_r/\mechanical{r}'^{\,2})\,\mathrm{d}\mechanical{M}_r$. Over the displacement from $\mechanical{r}'$ to $\mechanical{r}'+\mathrm{d}\mechanical{r}'$, use $\energy{W}=\mechanical{F}\mechanical{d}$ with $\mechanical{F}=\mechanical{m}\mechanical{a}$.
+Consider adding a mass element $\mathrm{d}\mechanical{M}_r$ to $\mechanical{M}_r$. At a distance $\mechanical{r}'$, the gravitational force has magnitude $(\mechanical{G}\mechanical{M}_r/\mechanical{r}'^{\,2})\,\mathrm{d}\mechanical{M}_r$. Over the displacement from $\mechanical{r}'$ to $\mechanical{r}'+\mathrm{d}\mechanical{r}'$, use the work $\energy{W}_F=\mechanical{F}\mechanical{d}$ with $\mechanical{F}=\mechanical{m}\mechanical{a}$.
 
 $$
 \begin{aligned}
@@ -305,12 +305,12 @@ The page begins with the adiabatic variation of the internal energy.
 
 $$
 (\delta\energy{U})_{\mathrm{ad}}
-= -\int_{\mechanical{M}}\frac{\mathrm{d}\mechanical{P}}{\mathrm{d}\mechanical{M}_r}\,
+= +\int_{\mechanical{M}}\frac{\mathrm{d}\mechanical{P}}{\mathrm{d}\mechanical{M}_r}\,
   4\pi\mechanical{r}^2\delta\mechanical{r}\,\mathrm{d}\mechanical{M}_r.
 $$
 
 > [!note]
-> The source writes a minus sign here. The minus sign before the integral on [[#Integration by parts|the section on Integration by parts]] and the minus sign from integration by parts give a plus sign, as used in the stability equation below.
+> The source writes a minus sign here. The minus sign before the integral in $\delta\energy{U}_{\mathrm{adiabatic}}$ and the minus sign from [[#Integration by parts|integration by parts]] give the plus sign shown, as used in the stability equation below.
 
 For the gravitational energy, expand to first order in the radial displacement.
 
@@ -487,18 +487,18 @@ $$
 
 Here $\energy{E}$ is the specific energy. For a monatomic gas, $\thermal{\gamma}=5/3$ and $\mechanical{P}=\tfrac23\mechanical{\rho}\energy{E}$. For a relativistic gas, $\thermal{\gamma}=4/3$ and $\mechanical{P}=\tfrac13\mechanical{\rho}\energy{E}$.
 
-The source writes
+From $2\energy{K}=3\int_{\mechanical{M}}(\mechanical{P}/\mechanical{\rho})\,\mathrm{d}\mechanical{M}_r=3(\thermal{\gamma}-1)\energy{U}$,
 
 $$
-\energy{K}=\frac23(\thermal{\gamma}-1)\energy{U},
+\energy{K}=\frac32(\thermal{\gamma}-1)\energy{U},
 \qquad
 \energy{U}=\int_{\mechanical{M}}\energy{E}\,\mathrm{d}\mechanical{M}_r.
 $$
 
-It then gives $\energy{K}=\energy{U}$ for $\thermal{\gamma}=5/3$.
+This gives $\energy{K}=\energy{U}$ for $\thermal{\gamma}=5/3$.
 
 > [!note]
-> The preceding pressure integral gives the coefficient $3/2$ in place of $2/3$. This agrees with $\energy{K}=\energy{U}$ for $\thermal{\gamma}=5/3$.
+> The source writes the coefficient $2/3$ in place of $3/2$.
 
 $$
 \begin{aligned}
@@ -580,28 +580,28 @@ Kyle Kabasares, *Stellar Astrophysics (Physics 241B, UC Irvine 2019)*.
 | --- | --- | --- | --- |
 | $\mechanical{g}$ | $\unit{cm\,s^{-2}}$ | Gravitational acceleration | The local acceleration due to the star's gravity. |
 | $\mechanical{r}$ | $\unit{cm}$ | Radial distance | The distance from the center of the star. |
-| $\mechanical{G}$ | $\unit{m^3\,kg^{-1}\,s^{-2}}$ | Gravitational constant | The proportionality constant in Newton's law of gravitation. |
-| $\mechanical{M}_r$ | $\unit{kg}$ | Enclosed mass | The stellar mass within radius $\mechanical{r}$. |
-| $\mechanical{M}_\odot$ | $\unit{kg}$ | Solar mass | The mass of the Sun. |
-| $\energy{L}_\odot$ | $\unit{W}$ | Solar luminosity | The power radiated by the Sun. |
-| $\mechanical{R}_\odot$ | $\unit{km}$ | Solar radius | The radius of the Sun. |
+| $\mechanical{G}$ | $\unit{cm^3\,g^{-1}\,s^{-2}}$ | Gravitational constant | The proportionality constant in Newton's law of gravitation. |
+| $\mechanical{M}_r$ | $\unit{g}$ | Enclosed mass | The stellar mass within radius $\mechanical{r}$. |
+| $\mechanical{M}_\odot$ | $\unit{g}$ | Solar mass | The mass of the Sun. |
+| $\energy{L}_\odot$ | $\unit{erg\,s^{-1}}$ | Solar luminosity | The power radiated by the Sun. |
+| $\mechanical{R}_\odot$ | $\unit{cm}$ | Solar radius | The radius of the Sun. |
 | $\mechanical{R}_\oplus$ | $\unit{km}$ | Earth radius | The radius of Earth. |
 | $\mechanical{M}_\oplus$ | $\unit{kg}$ | Earth mass | The mass of Earth. |
 | $\mechanical{\rho}$ | $\unit{g\,cm^{-3}}$ | Mass density | The mass per unit volume at the given radius. |
-| $\mathrm{d}\mechanical{M}_r$ | $\unit{g}$ | Mass element | The mass of the thin shell or the patch, according to context. |
-| $\mechanical{F}$ | $\unit{dyn}$ | Force | The gravitational force on the patch. |
+| $\mathrm{d}\mechanical{M}_r$ | $\unit{g}$ | Shell mass | The mass of the thin spherical shell. |
+| $\mathrm{d}\mechanical{m}$ | $\unit{g}$ | Patch mass | The mass of the patch in the force calculation. |
+| $\mechanical{F}$ | $\unit{dyn}$ | Force | The gravitational force on the patch or on the added mass element. |
 | $\mechanical{a}$ | $\unit{cm\,s^{-2}}$ | Acceleration | The acceleration due to gravity in the force calculation. |
-| $\mechanical{V}$ | $\unit{cm^3}$ | Volume | The volume occupied by the shell or patch. |
+| $\mechanical{V}$ | $\unit{cm^3}$ | Volume | The volume occupied by the patch, or the volume of the star in the pressure integral. |
 | $\mechanical{A}$ | $\unit{cm^2}$ | Area | The surface area of the patch. |
-| $\mechanical{M}$ | $\unit{g}$ | Mass | The enclosed mass in the expression beside the force sketch. |
 | $\mechanical{P}$ | $\unit{dyn\,cm^{-2}}$ | Pressure | The local force per unit area exerted by the stellar material. |
 | $\Delta\mechanical{P}$ | $\unit{dyn\,cm^{-2}}$ | Pressure difference | The pressure difference between the two faces of the patch. |
 | $\ddot{\mechanical{r}}$ | $\unit{cm\,s^{-2}}$ | Radial acceleration | The acceleration of the patch in the outward radial coordinate. |
 | $\energy{\Omega}$ | $\unit{erg}$ | Gravitational potential energy | The potential energy of the assembled star. |
-| $\energy{W}$ | $\unit{erg}$ | Work | The energy transferred by a force acting through a displacement. |
+| $\energy{W}_F$ | $\unit{erg}$ | Work | The energy transferred by a force acting through a displacement. |
 | $\mechanical{d}$ | $\unit{cm}$ | Displacement | The distance through which the force acts in the work calculation. |
 | $\mechanical{m}$ | $\unit{g}$ | Mass | The mass acted on by the force. |
-| $\mechanical{M}$ | $\unit{g}$ | Total stellar mass | The upper limit of the integral over the stellar mass. |
+| $\mechanical{M}$ | $\unit{g}$ | Total stellar mass | The mass of the star, and the upper limit of the integral over the stellar mass. |
 | $\mechanical{R}$ | $\unit{cm}$ | Stellar radius | The radius of the star used in the energy scale. |
 | $q$ | 1 | Gravitational energy coefficient | The factor that depends on the stellar density profile. |
 | — | $\unit{yr}$ | Gravitational time scale | The energy scale divided by the luminosity. |
@@ -617,6 +617,7 @@ Kyle Kabasares, *Stellar Astrophysics (Physics 241B, UC Irvine 2019)*.
 | $t$ | $\unit{s}$ | Time | The independent variable in the virial calculation. |
 | $\mechanical{\vec{p}}_i$ | $\unit{g\,cm\,s^{-1}}$ | Particle momentum | The momentum of particle $i$. |
 | $\mechanical{\vec{r}}_i$, $\mechanical{r}_i$ | $\unit{cm}$ | Particle position and radial distance | The position of particle $i$ and its magnitude. |
+| $\mechanical{m}_i$ | $\unit{g}$ | Particle mass | The mass of particle $i$. |
 | $\dot{\mechanical{\vec{r}}}_i$ | $\unit{cm\,s^{-1}}$ | Particle velocity | The rate of change of the position of particle $i$. |
 | $\mechanical{I}$ | $\unit{g\,cm^2}$ | Scalar moment of inertia | The sum of particle masses times their squared distances from the origin. |
 | $\mechanical{v}_i$ | $\unit{cm\,s^{-1}}$ | Particle speed | The magnitude of the velocity of particle $i$. |
@@ -632,22 +633,3 @@ Kyle Kabasares, *Stellar Astrophysics (Physics 241B, UC Irvine 2019)*.
 | $w$ | 1 | Equation-of-state parameter | The ratio of pressure to energy density. |
 | $\energy{L}$ | $\unit{erg\,s^{-1}}$ | Stellar luminosity | The rate of energy loss from the contracting star. |
 | $t_{\mathrm{KH}}$ | $\unit{yr}$ | Kelvin–Helmholtz time scale | The time over which contraction can supply the luminosity. |
-| $\energy{E}$ | $\unit{erg\,cm^{-3}}$ | Thermal energy density | The gas energy per unit volume in the temperature estimate. |
-| $n$ | $\unit{cm^{-3}}$ | Particle number density | The number of gas particles per unit volume. |
-| — | $\unit{erg\,g^{-1}}$ | Energy released per mass of hydrogen | The energy yield of the conversion from hydrogen to helium. |
-| $a$ | $\unit{erg\,cm^{-3}\,K^{-4}}$ | Radiation constant | The constant in the radiation energy density $a\thermal{T}^4$. |
-| $\mechanical{v}$ | $\unit{cm\,s^{-1}}$ | Streaming speed | The speed used in the free-streaming distance integral. |
-| $V$ | 1 | Visual magnitude | The vertical coordinate in the Hertzsprung-gap sketch. |
-| $\mathrm{C}/\mathrm{O}$ | 1 | Carbon-to-oxygen ratio | The composition ratio identified as a source of uncertainty in the cooling calculation. |
-| — | $\unit{MeV}$ | Binding energy per nucleon | The energy per nucleon sketched against nuclear mass number. |
-| $\energy{E}$ | $\unit{MeV}$ | Electron energy | The energy plotted in the collapse sketch. |
-| $\mechanical{R}$ | $\unit{m}$ | Nuclear radius scale | The length scale given with the nuclear density. |
-| $\mechanical{v}$ | $\unit{cm\,s^{-1}}$ | Projectile speed | The speed entering the incident flux and rate. |
-| $\mechanical{m}$ | $\unit{kg}$ | Reduced mass | The reduced mass of the projectile–target pair. |
-| $s$ | $\unit{m}$ | Impact parameter | The transverse offset of the incoming trajectory from the target. |
-| $a$ | $\unit{m}$ | Confinement length | The characteristic electron spacing estimated from position uncertainty. |
-| $K$ | $\unit{dyn\,cm^3\,g^{-5/3}}$ | Polytropic constant | The coefficient of the density power law for the nonrelativistic gas. |
-| $n$ | $\unit{cm^{-3}}$ | Nucleus number density | The nucleus count per volume in the compact-object composition formula. |
-| $n$ | 1 | Polytropic index | The index that determines the density profile and the equation-of-state exponent. |
-| $a$ | $\unit{m}$ | Polytropic length scale | The factor that converts the normalized coordinate to radius. |
-| $2\mechanical{G}\mechanical{M}/(\mechanical{R}c^2)$ | 1 | Relativistic compactness | The Schwarzschild radius expressed as a fraction of the object's radius. |

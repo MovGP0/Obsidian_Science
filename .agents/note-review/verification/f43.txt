@@ -1,0 +1,36 @@
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/13 Cosmic Gravity and the Quantum Spin/13.01 The Physical Meaning of Spin.md
+- FIXED | Table calls s the magnitude, but s is the maximal projection | Added a sentence that s is the maximal projection and the spin-1/2 magnitude is (√3/2)ħ; table now separates maximal projection s, vector magnitude S, and projection S_n
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/13 Cosmic Gravity and the Quantum Spin/13.02 Spin as the Fundamental Gravitomagnetic Moment.md
+- FIXED | (13.6) sign inconsistent with H = ½ s·B_g | Heisenberg equation checked (ds/dt = ½ B_g × s); changed (13.6) to ½ B_g × s and added a sentence that the source order (also in 13.00 eq. 13.3, not in this batch) gives the opposite precession direction
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/13 Cosmic Gravity and the Quantum Spin/13.03 Cosmic Gravitational Effects on Spin.md
+- FIXED | ħσ·Ω equals 2 s·Ω, not s·Ω; factor 2 conflicts with (13.2) | Re-derived Π×Π term (gives -ħσ·B_g/2 = +ħσ·Ω); extended the sign note to state the term is +2 s·Ω, a gyrogravitational factor 2, disagreeing with (13.2) in sign and magnitude
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/13 Cosmic Gravity and the Quantum Spin/13.03.01 Emphasising the Spin-Phase Puzzle.md
+- FIXED | B_g = +2ω and E_g = +s·ω conflict with -2Ω and -s·Ω | Added to the note that the signs agree with (13.1)-(13.2) only if ω = -Ω is the cosmic-matter angular velocity relative to the orbital frame (opposite to the orbital angular velocity); phase magnitude unaffected
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/13 Cosmic Gravity and the Quantum Spin/13.04 Spin Transport in Chiral Molecules and Spintronics.md
+- FIXED | B_eq and B_f halve the field by equating per-state energy with full splitting | Recomputed B = mv/(er) ≈ 5.7e3 T; changed B_eq to ħΩ/(g_m μ_B), the B_f equality to (g/2)μ_B B_f = eħB_f/(2m), B_f to mv/(er) ≈ 5.7×10³ T, and rewrote both notes to record the source's halved forms
+- FIXED | Room-temperature k_BT is 4.1e-21 J = 0.026 eV, ratio about 25 | Replaced 3e-21 J / 30 times with k_BT ≈ 4.1×10⁻²¹ J ≈ 0.026 eV and about 25 times; table thermal-energy symbol set to k_BT
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/13 Cosmic Gravity and the Quantum Spin/13.05.01 The Dawn of the Spin-Statistics Connection.md
+- FIXED | Dirac did not name bosons in 1926; he coined fermion and boson in 1945 | Sentence now says the 1926 paper derived the antisymmetric statistics and Dirac introduced the names fermion and boson in a 1945 lecture
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/14 The Quantum Hall Effects - Gravity in Condensed Matter/14 References.md
+- FIXED | Bose Z. Phys. 26 pages are 178–181, not 168–171 | Changed page range to 178–181
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/14 The Quantum Hall Effects - Gravity in Condensed Matter/14.03 The 2-D Dynamics of Electrons in a Magnetic Field.md
+- PARTLY | Fig. 14.4 levels at 0.5, 1, 2, 3 are not equally spaced | Confirmed the graph contradicts E_n = (n+½)ħω_c; no edit because the brief forbids redrawing figures, and the existing note already flags the label mismatch; the graph needs levels at 0.5, 1.5, 2.5, 3.5 with bounds raised
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/14 The Quantum Hall Effects - Gravity in Condensed Matter/14.04 The Fractional Quantum Hall Effect.md
+- PARTLY | Fig. 14.7 draws a deep minimum at even-denominator ν = 1/4 | Confirmed (last factor of the functiongraph places a minimum at B = 16 T labelled 1/4); no edit because the brief forbids redrawing figures; fix by removing that factor or relabelling to an odd-denominator state
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/14 The Quantum Hall Effects - Gravity in Condensed Matter/14.10 The Quantum Hall Effects in Graphene.md
+- FIXED | Fourfold degeneracy is spin and valley, not spin and sublattice | Sentence now names two valleys (K and K′) and states the sublattices form the pseudospin components of each Dirac spinor
+- FIXED | Flux-quantum rule gives E_n = v_F√(ħeBn), √2 too small; step needs r0 = l0 | Verified r0² = 2ħ/(eB) from πr0²B = h/e; added to the note that the step requires r0 = l0 = √(ħ/(eB)) and the stated rule gives a result √2 below (14.15)
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/14 The Quantum Hall Effects - Gravity in Condensed Matter/14.12 The Wavefunctions in the QHE.md
+- FIXED | Symbol clash m for angular-momentum index and Laughlin exponent | Renamed single-particle index to ℓ (14.22, z^ℓ phase sentence, note) and Laughlin exponent to q (14.23, ν = 1/q, q = 3, charge 1/q); added ℓ and q rows to the table
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/15 Relativity and Quantum Entanglement/15 References.md
+- FIXED | Stud. Hist. Phil. Set. should be Sci. | Changed to Stud. Hist. Phil. Sci.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/15 Relativity and Quantum Entanglement/15.02 Quantum Mechanics of Entanglement.md
+- FIXED | (15.4) Ψ' = ψ_A ψ_B should be ψ_{A+} ψ_B | Changed left side to Ψ' = a ψ_{A+} ψ_B, matching the unnormalised right-hand side
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/15 Relativity and Quantum Entanglement/15.04.01 The Correlations in the LHVT.md
+- REJECTED | With b' = -45° the 135° pair is (a',b'), so B = 0 | The SVG draws b′ 45° below the horizontal a′ axis (angles from horizontal), so (a,b′) = 135° and the others 45°, giving |B| = 2√2 as stated; added "angles measured from the horizontal a′ direction" to the caption to remove the ambiguity
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/15 Relativity and Quantum Entanglement/15.05 The Proof of Strict Locality in Quantum Correlations.md
+- FIXED | s, s+, s- listed twice with conflicting units | Removed the J·s row, merged s into the dimensionless row, and rewrote the one dimensional use (action sentence) as ħs±(θi-φ) and ħsφ
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/Universal Clock of Cosmic Relativity.md
+- FIXED | Metric prints r²aθ² instead of r²dθ² | Changed to r^2 d\theta^2
+- FIXED | -ds² is not the interval; unrendered \((-+++)\) | Changed to ds² is the Spacetime Interval and signature to $(-,+,+,+)$
+- FIXED | Static universe a(t)=1 is misleading | Heading now says a(t) = 1 at all times; added that it needs ȧ = 0 always and, with matter, Λ and k > 0 (Einstein static universe), so it is not a general FLRW special case

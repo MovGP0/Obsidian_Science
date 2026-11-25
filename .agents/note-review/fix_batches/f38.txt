@@ -1,0 +1,54 @@
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/07 Einstein's General Theory of Relativity/07.09 The GTR and Gravitomagnetism.md
+- [Correctness] "The potentials are of order $v/c$" should be "of order $(v/c)(GM/Rc^2)$", consistent with $B_g\sim\Omega GM/(Rc^2)$ in the next sentence.
+- [Correctness] "measured to about 5% accuracy through LAGEOS ... and in Gravity Probe-B": the GP-B frame-dragging result $37.2\pm7.2\,\mathrm{mas/yr}$ is a 19% measurement; LAGEOS analyses claim about 10%. Quote each separately.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/07 Einstein's General Theory of Relativity/07.12 The GTR and Mach's Principle.md
+- [Correctness] In (7.32)–(7.33) the left side is Einstein's 1918 notation, where $G_{\mu\nu}$ denotes the Ricci tensor; with the chapter's convention ($G_{ik}$ = Einstein tensor, 07.02 and 07.04) the trace-reversed right side is wrong. Write $R_{\mu\nu}$ (or state the notation change) so that (7.32) matches (7.5).
+- [Correctness] "the energy–momentum trace would then represent abnormal matter, now called the cosmological constant" is garbled: the $\lambda g_{\mu\nu}$ term acts like a source with $\rho_\Lambda=-p_\Lambda/c^2$; rephrase. Also fix the typo "Machs principle".
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/07 Einstein's General Theory of Relativity/07.13 The GTR and Cosmology.md
+- [Correctness] Eq. (7.35) is written with $-\Lambda g_{\mu\nu}$ while (7.34) uses the $(-,+,+,+)$ signature, in which the standard Einstein equation is $G_{\mu\nu}+\Lambda g_{\mu\nu}=\kappa T_{\mu\nu}$ (positive $\Lambda$ repulsive); either change the sign or state that a $(+,-,-,-)$ convention is meant.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/07 Einstein's General Theory of Relativity/07.15 What Lies Beyond the GTR.md
+- [Correctness] Fig. 7.7 caption and the following line give the metric factor $1-GM/(rc^2)$; the weak-field component is $g_{00}=-(1-2GM/(rc^2))$, and $1-GM/(rc^2)$ is the clock-rate factor $\sqrt{-g_{00}}$. State which one is meant.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/08 Our Universe/08 References.md
+- [Correctness] Ref 12 (Sandage, ApJ 127, 513) is from 1958, not 1948 (08.02.03 itself says 1958); ref 9 (Eddington, MNRAS 90, 668) is from 1930, not 1931; ref 8 (Lemaître translation) is MNRAS 91, 483–490 (1931), not volume 90.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/08 Our Universe/08.01 Our Physical Universe Before 1930.md
+- [Correctness] Telescopes: the 100-inch Hooker telescope (1917) and the 60-inch (1908) were on Mt. Wilson, not Mt. Palomar (the 200-inch came to Palomar in 1948); Herschel's largest reflector (1789) had a 48-inch aperture. The disclaimer "The source states" does not fix the error; correct the facts.
+- [Correctness] "adding a constant potential to Poisson's equation" is wrong; Einstein added a term $-\lambda\phi$, $\nabla^2\phi-\lambda\phi=4\pi G\rho$, as 08.03 states, which then admits a constant-potential solution.
+- [Correctness] "de Sitter soon showed that the Einstein Universe expands even without matter": de Sitter's 1917 solution is a different, empty model with $\Lambda$; it was originally presented in static coordinates and its expanding interpretation came later (Lemaître 1925, Robertson 1928). Also write (8.1) and the 1915 form with $\tfrac12g_{ik}R$ in the text instead of keeping the omission with a callout.
+- [Correctness] "$\Lambda=\kappa\rho/2=1/R^2$" with $\kappa=8\pi G/c^4$ and mass density needs $\kappa\rho c^2/2$ for units of $\mathrm{m^{-2}}$.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/08 Our Universe/08.02 The Universe as Observed.md
+- [Correctness] Over $5000\,\mathrm{yr}$ the scale factor changes by $H_0\Delta t\approx5000/(1.4\times10^{10})\approx3.6\times10^{-7}$, about one part in three million, not one part in ten million.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/08 Our Universe/08.02.01 The Large Scale Distribution of Matter.md
+- [Correctness] "below $10^{-27}\,\mathrm{kg/m^3}$, about one hydrogen atom per cubic metre": one H atom per $\mathrm{m^3}$ is $1.7\times10^{-27}\,\mathrm{kg/m^3}$, above the quoted bound; the Planck baryon density $\Omega_b\rho_c\approx4.2\times10^{-28}\,\mathrm{kg/m^3}$ corresponds to about 0.25 H atoms per $\mathrm{m^3}$.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/08 Our Universe/08.02.02 The Expansion of the Universe.md
+- [Correctness] "the period was inversely related to the 'breathing' star's size": larger, more luminous Cepheids have longer periods (pulsation period $\propto(G\bar\rho)^{-1/2}$, lower mean density for larger stars), which is why period indicates luminosity. Also Leavitt's Cepheids were in the Small Magellanic Cloud, a fact that made them all lie at a common distance.
+- [Correctness] Lemaître's result is $a_o/a_e=1+z$ with $z$ the redshift; $1+v/c$ holds only for $v\ll c$. Write $1+z$ and give the low-velocity Doppler limit separately, together with the fractional form $\delta\nu/\nu=-v/c$ in the text instead of the callout.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/08 Our Universe/08.02.03 The Velocity-Distance Relation from Observations.md
+- [Correctness] "a new 200-inch telescope, described in the source as at Mt. Wilson of the Palomar observatory": the 200-inch Hale telescope is on Mt. Palomar (Palomar Observatory); correct the text.
+- [Correctness] Modern values are outdated: SH0ES gives $73.0\pm1.0\,\mathrm{km/(s\,Mpc)}$ and Planck 2018 $67.4\pm0.5\,\mathrm{km/(s\,Mpc)}$; the quoted $\pm4$ and $\pm3$ hide the 5σ "Hubble tension" that this paragraph should mention.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/08 Our Universe/08.03 Einstein's Cosmological Constant.md
+- [Correctness] Eq. (8.6) mixes $\kappa=8\pi G/c^4$ with mass density $\rho$; in SI it should read $\lambda=\kappa\rho c^2/2=4\pi G\rho/c^2=1/R^2$, which also lets the reader evaluate $R$ for a given density.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/08 Our Universe/08.03.01 The Cosmological Principle and the Expansion.md
+- [Correctness] Eq. (8.8) prints $f^2(t)\,d\Sigma^2$; it must be $f^2(r)\,d\Sigma^2$ as the following sentence defines. Fix it in the text rather than with a callout, and use one metric signature for (8.7) and (8.2).
+- [Correctness] Eq. (8.9): $\ddot V/V=3\ddot a/a+6(\dot a/a)^2$ for $V\propto a^3$, so the identification $\ddot V/V=3\ddot a/a$ is false as written; state that the Baez–Bunn relation applies to a small ball of test particles initially at rest relative to each other, for which the result is $3\ddot a/a$. Also write $E=\rho Vc^2$ consistently with (8.10).
+- [Correctness] Eqs. (8.15)–(8.16) drop the $\Lambda c^2/3$ terms that (8.12) and (8.14) contain; add them, otherwise the later dark-energy discussion (8.03.03) has no equation to refer to.
+- [Correctness] "this model is not entirely excluded by observations": the empty Milne model ($\Omega_k=1$) is excluded by CMB and BAO data, which give $|\Omega_k|\lesssim0.002$; update the statement.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/08 Our Universe/08.03.02 The Concept of a Critical Density.md
+- [Correctness] Replace $\rho_c=H^2/(8\pi G)$ by $\rho_c=3H^2/(8\pi G)$ in both places; the quoted $9\times10^{-27}\,\mathrm{kg/m^3}$ is the value of the correct formula ($H_0=70$ gives $9.2\times10^{-27}$; the printed formula would give $3\times10^{-27}$), so the callout's "numerical estimate retained" should go.
+- [Correctness] "For $\rho>\rho_c$ the model ... eventually ... collapses" holds only for $\Lambda=0$; with the observed $\Lambda>0$ a closed model can expand forever. Add the condition in the text.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/08 Our Universe/08.03.03 The Measurements of the Deceleration Parameter.md
+- [Correctness] Replace "$2\ddot a/a=8\pi G\rho/3=kc^2/a^2-H_0^2$" and "$q_0=1+kc^2/(H_0^2a^2)$" by the correct matter-only results $\ddot a/a=-4\pi G\rho/3$ and $q_0=\Omega_m/2=\tfrac12[1+kc^2/(H_0^2a^2)]$ in the text itself.
+- [Correctness] "Adding matter at half the critical density can give $q=0$, mimicking a flat matter-free Universe" is unclear: $q_0=\Omega_m/2-\Omega_\Lambda=0$ needs $\Omega_\Lambda=\Omega_m/2$ (e.g. $\Omega_m=0.5$, $\Omega_\Lambda=0.25$, not flat), and the "flat matter-free" model with $q=0$ does not exist ($k=0$ with $\rho=0$ and $\Lambda=0$ is static Minkowski); rephrase as "mimicking the empty Milne model".
+

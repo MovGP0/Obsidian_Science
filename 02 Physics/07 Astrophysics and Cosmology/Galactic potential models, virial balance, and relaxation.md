@@ -403,7 +403,7 @@ $$
 t_r=\frac{t_s}{2\ln\Lambda}.
 $$
 
-For a globular cluster example with $\mechanical{r}_s\sim\quantity{2}{AU}$ and $\mechanical{R}=\quantity{1}{pc}$, the notes estimate $\ln\Lambda$ from $\ln[1/(2\times10^{-5})]=\ln(5\times10^4)$. Relaxation is too slow to change the Galactic disk significantly in the solar neighborhood.
+For a globular cluster example with $\mechanical{r}_s\sim\quantity{2}{AU}$ and $\mechanical{R}=\quantity{1}{pc}$, the notes estimate $\ln\Lambda$ from $\ln[1/(2\times10^{-5})]=\ln(5\times10^4)$. With $\quantity{2}{AU}\simeq\quantity{9.7\times10^{-6}}{pc}$, the ratio is $\Lambda=\mechanical{R}/\mechanical{r}_s\approx10^5$, so $\ln\Lambda\approx11.5$. In the solar neighborhood, relaxation is also too slow to change the Galactic disk significantly in the solar neighborhood.
 
 For an idealized spherical system with $N$ stars of mass $\mechanical{m}$,
 
@@ -469,56 +469,49 @@ Kyle Kabasares, *Intro to Astrophysics (Physics 240A, UC Irvine 2018)*.
 
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
-| $\mechanical{M}_{\odot}$ | $\unit{\mathrm{g}}$ | Solar mass | Mass of the Sun. |
-| $k$ | $\unit{erg\cdot K^{-1}}$ | Boltzmann constant | Relates temperature to energy. |
-| $\sigma$ | $\unit{erg\cdot s^{-1}\cdot cm^{-2}\cdot K^{-4}}$ | Stefan–Boltzmann constant | Relates blackbody flux to the fourth power of temperature. |
-| $\mechanical{r}$ | $\unit{cm}$ | Emitter radius | Radius of the spherical emitter. |
-| $m$ | 1 | Apparent magnitude | Logarithmic measure of observed flux relative to a zero point. |
-| $b$ | 1 | Softening constant | Sets the low-flux scale of the inverse hyperbolic sine magnitude. |
-| $A$ | 1 | Extinction | Increase in apparent magnitude caused by attenuation. |
-| $n$ | $\unit{cm^{-3}}$ | Grain number density | Number of dust grains per unit volume. |
-| $\mechanical{x}$ | $\unit{cm}$ | Path length | Distance traveled through the dust. |
-| $\tau$ | 1 | Optical depth | Attenuation exponent along the path. |
-| $\mechanical{r}$ | — | Profile radius | Radial coordinate in the surface brightness sketch. |
-| $\theta$ | $\unit{rad}$ | Position angle | Orientation on the sky measured from north toward east. |
-| $\theta$ | $\unit{rad}$ | Angular resolution | Minimum angular separation in the Rayleigh criterion. |
-| $\alpha$ | $\unit{h}$ | Right ascension | Celestial coordinate measured eastward along the celestial equator. |
-| $\alpha$ | $\unit{arcsec}$ | Parallax angle | Angular shift due to a one-AU observing baseline. |
-| $\mechanical{a}$ | $\unit{cm}$ | Binary separation | Distance between the two stars in a circular orbit. |
 | $G$ | $\unit{cm^3\cdot g^{-1}\cdot s^{-2}}$ | Gravitational constant | Constant in Newton’s law of gravitation. |
-| $\mechanical{M}$ | $\unit{g}$ | Stellar mass | Mass in the main-sequence scaling relations. |
-| $\mechanical{R}$ | $\unit{km}$ | Stellar radius | Radius in the main-sequence scaling relation. |
-| $e$ | 1 | Orbital eccentricity | Deviation of the orbit from a circle. |
-| $\mechanical{m}$ | $\unit{g}$ | Planet mass | Mass of the orbiting planet. |
-| $n$ | $\unit{pc^{-3}}$ | Stellar number density | Number of stars per unit volume. |
-| $\sigma$ | 1 | Absolute-magnitude dispersion | Standard deviation of the Gaussian magnitude distribution. |
-| $t_0$ | $\unit{yr}$ | Star formation decay time | E-folding time of the exponential star formation history. |
-| $\mechanical{\sigma}$ | $\unit{km\cdot s^{-1}}$ | Velocity dispersion | Standard deviation of velocities along the chosen direction. |
-| $\mechanical{\sigma}_z$ | $\unit{km\cdot s^{-1}}$ | Vertical velocity dispersion | Spread of stellar velocities perpendicular to the disk. |
-| $\mechanical{M}(\mechanical{R})$ | $\unit{M_{\odot}}$ | Enclosed mass | Mass inside radius $\mechanical{R}$. |
-| $\mechanical{v}_0$ | $\unit{km\cdot s^{-1}}$ | Solar circular speed | Circular rotation speed at the Sun’s Galactocentric radius. |
-| $A$ | $\unit{km\cdot s^{-1}\cdot kpc^{-1}}$ | First Oort constant | Local rotational shear inferred from the longitude dependence of radial velocities. |
-| $\energy{\Phi}$ | $\unit{erg\cdot g^{-1}}$ | Gravitational potential | Potential energy per unit test mass. |
+| $\mechanical{M}$, $\mechanical{M}(\mechanical{R})$ | $\unit{g}$ | Mass | Attracting or total system mass, and the mass inside radius $\mechanical{R}$. |
+| $\mechanical{M}_{\odot}$ | $\unit{g}$ | Solar mass | Mass of the Sun. |
+| $\mechanical{m}$, $\mechanical{m}_{\alpha}$, $\mechanical{m}_{\beta}$ | $\unit{g}$ | Particle mass | Mass of a test particle or star, and of particles $\alpha$ and $\beta$. |
+| $\mechanical{\mathbf r}$, $\mechanical{r}$ | $\unit{cm}$ | Displacement and radius | Displacement from the attracting mass, and the radial distance. |
+| $\mechanical{\mathbf x}$, $\mechanical{x}$, $\mechanical{y}$, $\mechanical{z}$ | $\unit{cm}$ | Position | Position vector and its Cartesian components. |
+| $\mechanical{R}$ | $\unit{pc}$ | Radius or system size | Galactocentric radius, or the size of the stellar system. |
+| $\mechanical{\mathbf F}$, $\mechanical{\mathbf F}_{\mathrm{ext},\alpha}$ | $\unit{dyn}$ | Force | Gravitational force, and the external force on particle $\alpha$. |
+| $\energy{\Phi}$, $\energy{\Phi}_{\mathrm p}$ | $\unit{erg\cdot g^{-1}}$ | Gravitational potential | Potential energy per unit test mass, and the Plummer potential. |
 | $\mechanical{\rho}$ | $\unit{g\cdot cm^{-3}}$ | Mass density | Mass per unit volume in the continuous gravitational model. |
+| $\mechanical{v}_{\mathrm{circ}}$ | $\unit{km\cdot s^{-1}}$ | Circular speed | Speed of a circular orbit in a spherical potential. |
+| $\mechanical{v}_r$ | $\unit{km\cdot s^{-1}}$ | Line-of-sight velocity | Velocity component along the line of sight. |
+| $\mechanical{v}_0$ | $\unit{km\cdot s^{-1}}$ | Solar circular speed | Circular rotation speed at the Sun’s Galactocentric radius. |
+| $\alpha$ | $\unit{rad}$ | Line-of-sight angle | Angle between the line of sight and the circular velocity of the gas. |
+| $\ell$ | $\unit{deg}$ | Galactic longitude | Longitude of the line of sight. |
 | $\mechanical{a}_{\mathrm p}$ | $\unit{pc}$ | Plummer scale radius | Length parameter of the Plummer potential. |
 | $\mechanical{r}_c$ | $\unit{pc}$ | Plummer core radius | Projected radius at half the central surface density. |
 | $\mechanical{r}_0$ | $\unit{pc}$ | Potential reference radius | Radius at which the logarithmic potential is set to zero. |
 | $\mechanical{\rho}_{\mathrm{NFW}}$ | $\unit{g\cdot cm^{-3}}$ | Halo density scale | Normalization of the Navarro–Frenk–White profile. |
 | $\mechanical{a}_{\mathrm N}$ | $\unit{kpc}$ | Halo scale radius | Radius parameter of the Navarro–Frenk–White profile. |
 | $\energy{E},\,\energy{E}_{\mathrm k},\,\energy{E}_{\mathrm p}$ | $\unit{erg}$ | Total, kinetic, and potential energies | Energies of the particle in the static gravitational potential. |
-| $\mechanical{v}_{\mathrm{escape}}$ | $\unit{cm\cdot s^{-1}}$ | Escape speed | Speed that gives zero total energy when the potential vanishes at infinity. |
+| $\mechanical{v}$, $\mechanical{\mathbf v}$ | $\unit{km\cdot s^{-1}}$ | Velocity | Particle velocity and speed. |
+| $\mechanical{v}_{\mathrm{esc}}$, $\mechanical{v}_{\mathrm{escape}}$ | $\unit{km\cdot s^{-1}}$ | Escape speed | Speed that gives zero total energy when the potential vanishes at infinity. |
+| $\mechanical{v}_{\mathrm{Earth}}$ | $\unit{km\cdot s^{-1}}$ | Earth orbital speed | Orbital speed of the Earth about the Sun. |
 | $\mechanical{\mathbf L}$ | $\unit{g\cdot cm^2\cdot s^{-1}}$ | Angular momentum | Cross product of position and momentum. |
-| $\mechanical{\mathbf F}_{\mathrm{ext},\alpha}$ | $\unit{dyn}$ | External force | Force on particle $\alpha$ from outside the self-gravitating system. |
 | $\mechanical{I}$ | $\unit{g\cdot cm^2}$ | Scalar moment of inertia | Sum of particle masses times squared distances from the origin. |
 | $\energy{K},\,\energy{U}$ | $\unit{erg}$ | System kinetic and potential energies | Total kinetic energy and gravitational pair potential energy. |
+| $\tau$ | $\unit{s}$ | Averaging time | Time interval for the time average in the virial theorem. |
+| $N$ | 1 | Number of stars | Number of equal-mass stars in the system. |
+| $\mechanical{\sigma}$, $\mechanical{\sigma}_x$, $\mechanical{\sigma}_y$, $\mechanical{\sigma}_z$ | $\unit{km\cdot s^{-1}}$ | Velocity dispersion | Three-dimensional velocity dispersion and its components. |
 | $\mechanical{\sigma}_r$ | $\unit{km\cdot s^{-1}}$ | Line-of-sight velocity dispersion | One measured component of the cluster velocity dispersion. |
 | $\eta$ | 1 | Cluster structure parameter | Relates the core radius to the gravitational potential energy in the virial estimate. |
+| $k$ | $\unit{erg\cdot K^{-1}}$ | Boltzmann constant | Relates temperature to energy in the Boltzmann factor. |
+| $\thermal{T}$ | $\unit{K}$ | Kinetic temperature | Temperature of the stellar velocity distribution. |
+| $f(\energy{E})$ | 1 | Boltzmann factor | Relative probability of a stellar energy $\energy{E}$. |
 | $\mechanical{r}_s$ | $\unit{AU}$ | Strong-encounter radius | Separation where the gravitational interaction energy is comparable to the initial kinetic energy. |
 | $t_s$ | $\unit{yr}$ | Time between strong encounters | Time for the moving star to sweep a volume containing one stellar encounter on average. |
-| $\mechanical{b}$ | $\unit{pc}$ | Impact parameter | Closest distance along the unperturbed straight-line path. |
+| $n$ | $\unit{pc^{-3}}$ | Stellar number density | Number of stars per unit volume. |
+| $\mechanical{b}$, $\mechanical{b}_{\min}$, $\mechanical{b}_{\max}$ | $\unit{pc}$ | Impact parameter | Closest distance along the unperturbed straight-line path, and its smallest and largest values. |
 | $\mechanical{v}_\perp$ | $\unit{km\cdot s^{-1}}$ | Transverse velocity change | Velocity acquired perpendicular to the incoming path. |
 | $\mechanical{F}_{\perp}$ | $\unit{dyn}$ | Transverse gravitational force | Force component perpendicular to the incoming path. |
+| $\theta$ | $\unit{rad}$ | Encounter angle | Angle between the separation of the two stars and the impact-parameter direction. |
 | $\alpha$ | $\unit{rad}$ | Scattering angle | Small change in the direction of the moving star. |
-| $t_{\mathrm{relax}}$ | $\unit{yr}$ | Relaxation time | Time for accumulated weak encounters to change the velocity by order its initial magnitude. |
+| $t_r$, $t_{\mathrm{relax}}$ | $\unit{yr}$ | Relaxation time | Time for accumulated weak encounters to change the velocity by order its initial magnitude. |
+| $t_c$, $t_{\mathrm{cross}}$ | $\unit{yr}$ | Crossing time | Time for a star to cross the system. |
 | $\Lambda$ | 1 | Impact-parameter ratio | Largest divided by smallest impact parameter in the weak-encounter estimate. |
-| $p$ | 1 | Metal yield | Newly synthesized metal mass returned to the gas per unit mass locked into stars and remnants. |

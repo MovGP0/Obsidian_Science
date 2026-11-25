@@ -230,7 +230,6 @@ elements: [
   {type: text3d, def: [[0.72, 0.39, 0.76], '|ψ⟩'], att: {fixed: true, fontSize: 17, anchorX: 'left', anchorY: 'middle', useMathJax: false, strokeColor: '#007b9b'}},
   {type: text3d, def: [[0.27, 0.1, 0.24], 'mixed state'], att: {fixed: true, fontSize: 16, anchorX: 'left', anchorY: 'middle', useMathJax: false, strokeColor: '#b55b64'}},
   {type: text3d, def: [[-0.08, -0.02, -0.14], 'I/2'], att: {fixed: true, fontSize: 14, anchorX: 'right', anchorY: 'middle', useMathJax: false, strokeColor: '#777777'}},
-  {type: text3d, def: [[0.34, 0.16, 0.82], '50'], att: {fixed: true, fontSize: 16, anchorX: 'middle', anchorY: 'middle', useMathJax: false, strokeColor: '#007b9b'}},
   {type: text, def: [0, -2.25, 'Pure states ↔ surface'], att: {fixed: true, fontSize: 17, anchorX: 'middle', anchorY: 'middle', useMathJax: false, strokeColor: '#333333'}},
   {type: text, def: [0, -2.5, 'Mixed states ↔ interior'], att: {fixed: true, fontSize: 17, anchorX: 'middle', anchorY: 'middle', useMathJax: false, strokeColor: '#333333'}}
 ]
@@ -239,7 +238,7 @@ elements: [
 **Fig. 6.2** Interactive 3D Bloch sphere for spin one half. Drag inside the plot to rotate it. Pure states lie on the surface, with $\operatorname{Tr}(\rho^2)=1$; mixed states lie inside, with $\operatorname{Tr}(\rho^2)<1$. The maximally mixed state $\rho=I/2$ is at the center.
 
 > [!note]
-> The blue state marker has unit distance from the origin in three dimensions. The red mixed-state marker lies strictly inside the sphere. The source contains the blue label “50” without a unit or explanation. It is retained without assigning it an angle or other meaning.
+> The blue state marker has unit distance from the origin in three dimensions. The red mixed-state marker lies strictly inside the sphere.
 
 ## Physical quantities
 

@@ -468,7 +468,7 @@ The next two lectures preview diffusion-limited aggregates, with the formation o
 
 ##### Diffusion-limited aggregates and fractal dimension
 
-The notes credit the model to Witten and give 1978 as the year of introduction. Diffusion-limited aggregation models the growth of an object from material that is also diffusing. Crystal growth is one example.
+The notes credit the model to Witten and give 1978 as the year of introduction. T. A. Witten and L. M. Sander introduced diffusion-limited aggregation in 1981. Diffusion-limited aggregation models the growth of an object from material that is also diffusing. Crystal growth is one example.
 
 ##### Growth of a diffusion-limited aggregate
 
@@ -502,24 +502,16 @@ Kyle Kabasares, *Mathematical Modeling (Math 150, UC Merced 2017)*.
 
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
+| $x$, $t$ | $\unit{m}$, $\unit{s}$ | Position and time | Independent variables of the walker counts and the continuum equations. |
 | $\mechanical{\Delta x}$ | $\unit{m}$ | Grid spacing | Width of a spatial cell in the walker model. |
 | $\mechanical{\Delta t}$ | $\unit{s}$ | Time step | Interval between snapshots of the walker model. |
 | $\mechanical{c}$ | $\unit{m\,s^{-1}}$ | Advection speed | Displacement of a walker divided by the elapsed time. |
 | $\mechanical{D}$ | $\unit{m^2\,s^{-1}}$ | Variance growth rate | The ratio $(\mechanical{\Delta x})^2/\mechanical{\Delta t}$ and twice the coefficient in the diffusion equation. |
 | $\mechanical{U}$ | $\unit{m\,s^{-1}}$ | Drift velocity | Continuum advection velocity produced by the scaled random-walk bias. |
-| $R$ | 1 | Population | Number of animals in the isolated system. |
-| $t$, $1/\alpha$ | $\unit{s}$ | Elapsed time | Time in the population model and time for one factor of $e$ of exponential growth, expressed in the chosen time unit. |
-| $\alpha$ | $\unit{s^{-1}}$ | Population growth rate | Fractional rate of increase, expressed in the inverse of the chosen time unit. |
-| $M$ | 1 | Carrying capacity | Population that the modeled resources can sustain at equilibrium. |
-| $\beta$ | $\unit{s^{-1}}$ | Crowding coefficient | Coefficient of the quadratic reduction in growth when population is counted as a dimensionless number. |
-| $t_0$ | $\unit{s}$ | Inflection time | Time at which the logistic population reaches half its carrying capacity. |
-| $K$ | 1 | Koala population | Number of koalas in the competition model. |
-| $\delta$ | $\unit{s^{-1}}$ | Wolf decline rate | Fractional rate of decline in the absence of prey. |
-| $\beta$ | 1 | Predator effect coefficient | Reciprocal of the wolf count at which the rabbit growth term vanishes. |
-| $y_i$ | 1 | Age-group population | Number of individuals in the indicated age band. |
-| $\tau$ | 1 | Total population | Sum of the four age-group populations. |
-| $x$, $y$ | $\unit{oz}$ | Ingredient amounts | Onion soup and chicken stock per serving, respectively. |
-| $s$ | $\unit{g}$ | Protein surplus | Protein above the minimum required per serving. |
-| $t$ | — | Iron surplus | Iron above the minimum required per serving, in the unspecified iron units of the exercise. |
-| $a_i$ | $\unit{yr^{-1}}$ | Birth-rate coefficients | Per-capita contributions to the youngest group. |
-| $d\mechanical{\theta}_i/dt$ | $\unit{rad\,s^{-1}}$ | Angular rate | Time derivative of the corresponding angular coordinate. |
+| $f$ | 1 | Walker count | Number of walkers in a cell, and the fundamental solution of the diffusion equation per unit length. |
+| $g$, $h$ | 1 | Initial and inflow data | Walker count at $t=0$ and at the left boundary $x=0$. |
+| $C$, $\widetilde C$ | 1 | Expected walker count | Expected number of walkers in a cell, in the original and in the moving coordinates. |
+| $z$ | 1 | Bias | Excess probability of a step to the right. |
+| $y$, $\tau$ | $\unit{m}$, $\unit{s}$ | Moving coordinates | Position $y=x-\mechanical{U}t$ relative to the drift and the time $\tau=t$. |
+| $\mu$, $\sigma$ | $\unit{m}$ | Gaussian mean and width | Center and standard deviation of the Gaussian profile. |
+| $L$, $N$ | $\unit{m}$, 1 | Box size and box count | Side of a covering cell and the number of cells used to measure the dimension. |

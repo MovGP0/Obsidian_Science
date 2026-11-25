@@ -159,9 +159,9 @@ $$
 ##### Examples of time dilation
 
 1. **Walking person.** For $\mechanical{v}=1\,\unit{m\,s^{-1}}$, the notes round $\mechanical{\beta}$ to $3\times10^{-9}$. The expansion $\mechanical{\gamma}\simeq1+\tfrac12\mechanical{\beta}^2$ then gives $\mechanical{\gamma}\simeq1+4.5\times10^{-18}$.
-2. **Airplane.** For $\mechanical{v}=100\,\unit{m\,s^{-1}}$, the notes take $\mechanical{\beta}\simeq3\times10^{-7}$. In a one-hour flight, $\Delta t-\Delta t_{\mathrm{rest}}=(\mechanical{\gamma}-1)\Delta t_{\mathrm{rest}}\simeq(4.5\times10^{-14})(3600\,\unit{s})$, or roughly $150\,\unit{ps}$ with the rounding used in the notes. A margin annotation refers to an experiment in 1971.
-3. **Muon.** For $\mechanical{v}=0.9950\mechanical{c}$, $\mechanical{\gamma}\simeq10$. A rest lifetime $\tau_0=2.2\,\unit{\mu s}$ becomes $\tau=\mechanical{\gamma}\tau_0\simeq22\,\unit{\mu s}$ in the laboratory. The corresponding distance is $\mechanical{d}=\mechanical{v}\tau\simeq6.6\,\unit{km}$, about four miles.
-4. **Spaceship.** Take the Earth-to-Alpha Centauri distance to be $\mechanical{L}\simeq4$ light-years, or the distance light covers in $4\times365\times24\times3600$ seconds. With $\mechanical{v}=0.9999\mechanical{c}$, the Lorentz factor is about $71$. The Earth-frame travel time is $\mechanical{L}/\mechanical{v}\simeq4$ years, and the ship clock records about $4/71$ years.
+2. **Airplane.** For $\mechanical{v}=100\,\unit{m\,s^{-1}}$, the notes take $\mechanical{\beta}\simeq3\times10^{-7}$. In a one-hour flight, $\Delta t-\Delta t_{\mathrm{rest}}=(\mechanical{\gamma}-1)\Delta t_{\mathrm{rest}}\simeq(4.5\times10^{-14})(3600\,\unit{s})$, or about $160\,\unit{ps}$ with this rounding. The unrounded value $\mechanical{\beta}\simeq3.3\times10^{-7}$ gives about $200\,\unit{ps}$. A margin annotation refers to an experiment in 1971.
+3. **Muon.** For $\mechanical{v}=0.9950\mechanical{c}$, $\mechanical{\gamma}\simeq10$. A rest lifetime $\tau_0=2.2\,\unit{\mu s}$ becomes $t_{\mathrm{lab}}=\mechanical{\gamma}\tau_0\simeq22\,\unit{\mu s}$ in the laboratory. The corresponding distance is $\mechanical{d}=\mechanical{v}t_{\mathrm{lab}}\simeq6.6\,\unit{km}$, about four miles.
+4. **Spaceship.** Take the Earth-to-Alpha Centauri distance to be $\mechanical{L}_0\simeq4$ light-years, or the distance light covers in $4\times365\times24\times3600$ seconds. With $\mechanical{v}=0.9999\mechanical{c}$, the Lorentz factor is about $71$. The Earth-frame travel time is $\mechanical{L}_0/\mechanical{v}\simeq4$ years, and the ship clock records about $4/71$ years.
 
 ##### Apparent contradiction in reciprocal time dilation
 
@@ -433,8 +433,8 @@ Kyle Kabasares, *Special Relativity (Physics 126, UC Merced 2015)*.
 | $\mechanical{D}$ | $\unit{m}$ | Rest separation | Distance between the ends of a stick, synchronized clocks, or a flashbulb and mirror in their common rest frame. |
 | $\Delta t_{\mathrm{rest}}$, $\Delta t_0$, $\tau$ | $\unit{s}$ | Proper time interval | Time recorded by the clock present at both events. |
 | $\mechanical{\gamma}$ | 1 | Lorentz factor | Factor relating the coordinate interval to the proper interval for inertial motion. |
-| $\tau_0$, $\tau$ | $\unit{s}$ | Rest and laboratory lifetimes | Muon lifetime measured in its rest frame and in the laboratory. |
-| $\mechanical{d}$, $\mechanical{L}$ | $\unit{m}$ | Distance | Distance traveled in the laboratory or separation of the departure and arrival points. |
-| $\mechanical{L}_0$ | $\unit{m}$ | Rest length | Length measured with the object at rest. |
-| $\mechanical{V}_A,\mechanical{V}_B,\mechanical{V}_C$ | $\unit{m\,s^{-1}}$ | Ship speeds | Speed magnitudes in the frame of the problem. |
-| $\energy{\mathrm{BE}}/A$ | $\unit{MeV}$ per nucleon | Binding energy per nucleon | Nuclear binding energy divided by the mass number. |
+| $\tau_0$, $t_{\mathrm{lab}}$ | $\unit{s}$ | Rest and laboratory lifetimes | Muon lifetime measured in its rest frame and in the laboratory. |
+| $\tau$, $\tau'_A$, $\tau'_B$ | $\unit{s}$ | Clock readings | Readings set on the clocks in the synchronization protocols. |
+| $\mechanical{d}$ | $\unit{m}$ | Distance | Distance traveled by the muon in the laboratory, or source-to-mirror distance of the light clock. |
+| $\mechanical{L}$ | $\unit{m}$ | Contracted length | Length or separation measured in the frame in which it moves. |
+| $\mechanical{L}_0$ | $\unit{m}$ | Rest length | Length or separation measured in its rest frame, such as the Earth-to-star distance. |

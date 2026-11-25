@@ -1,0 +1,23 @@
+=== 01 Mathematics/04 Single-Variable Calculus/02 Differential Calculus/Differential calculus - Catalogue Guide.md
+- FIXED | Broken link [[Planned Topics#6. Differential calculus]] | Planned Topics.md exists only in a .temp backup; removed the sentence with the broken link (same approach as other batches); also removed BOM and converted CRLF to LF
+=== 01 Mathematics/04 Single-Variable Calculus/03 Integral Calculus/08.08 Checks and approximations.md
+- FIXED | Symbol clash: bound M vs midpoint sum M_n | Renamed the bounds m,M to f_min,f_max in the bound statement and inequality; also removed BOM and converted CRLF to LF
+=== 01 Mathematics/04 Single-Variable Calculus/03 Integral Calculus/Integral calculus - Catalogue Guide.md
+- FIXED | Broken link [[Planned Topics#8. Integral calculus]] | Removed the sentence with the broken link; also removed BOM and converted CRLF to LF
+=== 01 Mathematics/04 Single-Variable Calculus/03 Integral Calculus/Integral of a Derivative.md
+- FIXED | Integrand F(t)/dt lacks the differential | Changed \frac{F(t)}{dt} to \frac{dF}{dt}
+- FIXED | Final integration-by-parts equation drops the boundary term | Added (fg)(t)|_0^n to the right side and changed the text to say the sign changes and the boundary term is added
+- PARTLY | Telescoping sum is not an expansion; forces cancel; missing parenthesis | Replaced "expand" by a unit-step split where each step integral is the change of F; changed "forces" to "intermediate terms"; closed the parenthesis; did not add a mean-value-theorem derivation (unit-step split is exact by itself)
+- FIXED | Swapped \Bigr[ \Bigl] delimiters; product rule called a definition | Changed to \Bigl[ and \Bigr]; changed "is defined as" to "is given by the product rule"; also converted CRLF to LF
+=== 01 Mathematics/04 Single-Variable Calculus/03 Integral Calculus/Integration by parts and trigonometric substitutions.md
+- FIXED | Theta names two angles at Fig. 4 | Figure kept (sketch angle is from the x-axis, x=a cos); text now names the sketch angle varphi=pi/2-theta and says the sketch writes it as theta
+=== 01 Mathematics/04 Single-Variable Calculus/03 Integral Calculus/Partial fractions and improper integral problems.md
+- FIXED | Link to #Example with a repeated linear factor points to wrong example | Replaced the link with a reference to the e^x example above; note: the "Example with a repeated linear factor" section itself ends with an integral of a different example (x+5, x-5 terms), which needs a separate check
+=== 01 Mathematics/04 Single-Variable Calculus/03 Integral Calculus/Substitution and work integrals.md
+- FIXED | \mechanical{\Delta x} colors the operator | Changed both uses (Fig. 1 caption and table) to \Delta\mechanical{x}
+=== 01 Mathematics/04 Single-Variable Calculus/04 Sequences, Series, and Taylor Expansions/09.07 Remainders and error.md
+- FIXED | (0.1)^5/5! is about 8.33e-8, not 8.34e-8 | Changed 8.34 to 8.33 (python: 8.3333e-08)
+=== 01 Mathematics/04 Single-Variable Calculus/04 Sequences, Series, and Taylor Expansions/Arithmetic series.md
+- FIXED | Total does not generally lie between first and last term | Replaced the sentence: the mean lies between the first and last term, the total is n times the mean so it need not; also converted CRLF to LF
+=== 01 Mathematics/04 Single-Variable Calculus/04 Sequences, Series, and Taylor Expansions/Taylor and Maclaurin series problems.md
+- FIXED | Physical quantities table copied from a work-integral note | Confirmed no cable, coal, or water content in the note; deleted the three-row Physical quantities section

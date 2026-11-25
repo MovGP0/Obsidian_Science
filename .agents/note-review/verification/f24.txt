@@ -1,0 +1,57 @@
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/01 Introduction/1.3 Quarks.md
+- FIXED | Transcription slips "in 1964 by as" and "semifinal state" | Deleted "by" and changed "semifinal state" to "final state".
+- FIXED | Symbol clash B baryon number vs B_1, B_3, B_exp branching ratios | Renamed the branching ratios to \mathrm{BR}_1, \mathrm{BR}_3, \mathrm{BR}_{\mathrm{exp}} in (1.3.14)-(1.3.16) and the quantities table.
+- FIXED | Dated tau branching ratio and pi0 width data | Kept the source values and added short parenthetical notes with current world averages (17.82 +/- 0.04)% and about (7.80 +/- 0.12) eV.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/02 Lagrangian Formalism and Conservation Laws/2.1 Hamilton's Principle.md
+- FIXED | Endpoints written as q_1(t), q_2(t) | Changed to q_1 = q(t_1) and q_2 = q(t_2).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/02 Lagrangian Formalism and Conservation Laws/2.3 Symmetries and Conservation Laws.md
+- FIXED | Index order in Theta^{mu nu} (2.3.8) inconsistent with (2.3.9) and Theta^{0 nu} momentum densities | Changed (2.3.8) to dL/d(d_mu phi) d^nu phi - g^{mu nu} L; (2.3.7) then gives d_mu Theta^{mu nu} = 0 and Theta^{00} is unchanged.
+- FIXED | (2.3.20) gives the negative of (2.3.22) | Verified the sign (J = -psibar gamma tau/2 psi from (2.3.20)); added a parenthetical before (2.3.22) that states the sign difference and that the overall current sign is a convention.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/02 Lagrangian Formalism and Conservation Laws/2.P Problems.md
+- FIXED | Problem 2.5 potential has wrong power, wrong sign and double counting | Replaced the term by +(G_N/2) sum_{i!=j} m_i m_j over the distance abs(x_i - x_j).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/03 The Idea of Gauge Invariance/3.4 Significance of Potentials in Quantum Theory.md
+- FIXED | (3.4.8) S_i lacks the charge q | Added \electric{q} so S_i = q int dx.A, consistent with (3.4.3) and (3.4.9).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/03 The Idea of Gauge Invariance/3.5 Phase Invariance in Field Theory.md
+- FIXED | Second line of (3.5.8) identically zero | Changed (d^mu phi) phi^* to (d^mu phi^*) phi; checked against the first line.
+- FIXED | (3.5.2) second Klein-Gordon equation lacks "=0" | Added "=0".
+- FIXED | Photon mass written m in (3.5.19) | Changed to \mechanical{M_\gamma} and updated the table description to "photon mass and its limit".
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/04 Non-Abelian Gauge Theories/4.2 Construction.md
+- FIXED | Signs of last terms in (4.2.31) and (4.2.35) flipped | Re-derived with d G^{-1} = -G^{-1}(dG)G^{-1}; changed (4.2.31) last term to -1/(ig) and (4.2.35) last term to +1/(ig); cancellation and (4.2.26) unchanged.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/04 Non-Abelian Gauge Theories/4.3 Some Physical Consequences.md
+- FIXED | Isospin row says "in units of reduced Planck constant" | Replaced with "(dimensionless internal quantum number)".
+- FIXED | Vertex (4.3.2) should carry (tau^a)_{beta alpha} | Changed the index order to (tau^a)_{beta alpha}; left (4.3.3) unchanged because the summed product is real and therefore equal.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/04 Non-Abelian Gauge Theories/4.P Problems.md
+- FIXED | Row "I,s,S,L in units of reduced Planck constant" includes isospin | Rewrote the description so isospin is a dimensionless internal quantum number and only the spins and L are in units of hbar.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/05 Hidden Symmetries/5.3 Spontaneous Breaking of a Gauge Symmetry.md
+- FIXED | (5.3.13) uses d^mu zeta on A_mu | Changed to d_mu zeta.
+- FIXED | phi' means both gauge-transformed and shifted field | Renamed the shifted field in (5.3.9) to \tilde\phi and added phi' (gauge-transformed) and \tilde\phi (shifted) to the table row.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/05 Hidden Symmetries/5.4 The Sigma Model.md
+- FIXED | (5.4.7a,b) parameters miss factor 1/2 | Verified alpha_L P_L + alpha_R P_R decomposition; set alpha = (alpha_R + alpha_L)/2 and alpha_5 = (alpha_R - alpha_L)/2.
+- FIXED | Pion term sign in (5.4.11) wrong with the note's projectors | Verified psibar_L tau psi_R - psibar_R tau psi_L = psibar tau gamma_5 psi; changed +ig to -ig in (5.4.11) line 2 and in (5.4.17).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/05 Hidden Symmetries/5.P Problems.md
+- FIXED | Problem 5.2 cites (5.4.6) for the nucleon transformation law | Changed to (5.4.5).
+- PARTLY | Problem 5.7(b) negative inverse length and unit system | Sign issue right: changed e^* to abs(e^*); did not add a unit-system statement because the intended system (hbar = 1 with c kept) is not certain from the note.
+- FIXED | Problem 5.4 cos theta_C = 0.9746 dated | Kept the source value and added a parenthetical with the current value abs(V_ud) = 0.9737.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/05 Hidden Symmetries/5.R For Further Reading.md
+- FIXED | "Farhi–Suskind reprint collection" and "Int. J. Mod. Phys. 24" | Changed to "Farhi–Jackiw reprint collection" (the collection cited earlier in the note) and "Int. J. Mod. Phys. A 24".
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/06 Electroweak Interactions of Leptons/6.1 An Effective Lagrangian for the Weak Interactions.md
+- FIXED | (6.1.71) q_1.p_1 = m e and p_1.p_2 = m E | Changed to m E and m E'; re-derived all six invariants, the other four are correct.
+- FIXED | (6.1.41) sign | Changed to -(2mE/pi)(1-2y) Re(C_S^* C_T), consistent with (6.1.40), (6.1.38) and Table 6.1; (6.1.42) unaffected.
+- FIXED | Item 10 heading reaction | Changed to antineutrino-electron to antineutrino-electron (\bar\nu_e e -> \bar\nu_e e).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/06 Electroweak Interactions of Leptons/6.2 Intermediate Vector Bosons -  A First Look.md
+- FIXED | Propagator numerator lacks 1/M_W^2 in (6.2.2) and (6.2.3) | Changed numerator to g_{mu nu} - k_mu k_nu/M_W^2 in both.
+- FIXED | (6.2.39) high-energy cross section factor | Recomputed from (6.2.38) with s = 4Q^2 and integral of sin^2 = 8pi/3; changed result to G_F^2 s/(12 pi) = G_F^2 Q^2/(3 pi); the s growth and the conclusion are unchanged.

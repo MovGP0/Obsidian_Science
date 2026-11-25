@@ -266,14 +266,42 @@ Kyle Kabasares, *Radiative Transfer in Astrophysics (Physics 240C, UC Irvine 201
 
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
-| $\energy{L}$ | $\unit{erg\cdot s^{-1}}$ | Luminosity | Total radiant energy emitted per unit time. |
-| $\energy{E}$ | $\unit{erg}$ | Radiant energy | Energy emitted by the source. |
-| $t$ | $\unit{s}$ | Time | Elapsed time used to define the emission rate. |
+| $\electric{E}_x$, $\vec{\electric{E}}$, $\electric{E}$ | $\unit{statV\cdot cm^{-1}}$ | Electric field | Electric field of the incident wave, in general, and its magnitude. |
+| $\vec{\magnetic{B}}$, $\magnetic{B}$ | $\unit{G}$ | Magnetic flux density | Magnetic field and its magnitude. |
+| $\signal{\omega}$ | $\unit{rad\cdot s^{-1}}$ | Angular frequency | Angular frequency of the incident wave. |
+| $t$ | $\unit{s}$ | Time | Time coordinate. |
+| $\energy{L}$ | $\unit{erg\cdot s^{-1}}$ | Scattered power | Power radiated by the electron. |
+| $\energy{S}$, $\vec{\energy{S}}$ | $\unit{erg\cdot s^{-1}\cdot cm^{-2}}$ | Incident energy flux | Electromagnetic energy incident per unit time and area, and the Poynting vector. |
 | $\mechanical{\sigma}_{\mathrm{T}}$ | $\unit{cm^2}$ | Thomson cross section | Ratio of total scattered power to incident energy flux. |
-| $\energy{S}$ | $\unit{erg\cdot s^{-1}\cdot cm^{-2}}$ | Incident energy flux | Electromagnetic energy incident per unit time and area. |
+| $\mechanical{\sigma}$ | $\unit{cm^2}$ | Compton cross section | Total Klein–Nishina cross section. |
+| $\electric{e}$ | $\unit{esu}$ | Elementary charge | Charge of the electron in magnitude. |
+| $\mechanical{m}_e$ | $\unit{g}$ | Electron mass | Rest mass of the electron. |
+| $c$ | $\unit{cm\cdot s^{-1}}$ | Speed of light | Speed of light in vacuum. |
 | $\mechanical{r}_0$ | $\unit{cm}$ | Classical electron radius | Length scale that sets the Thomson cross section. |
+| $\mechanical{F}_{21}$, $\vec{\mechanical{F}}$ | $\unit{dyn}$ | Force | Coulomb force on $\electric{q}_2$ due to $\electric{q}_1$, and the Lorentz force. |
+| $k$ | $\unit{N\cdot m^2\cdot C^{-2}}$ | Coulomb constant | Proportionality constant in Coulomb's law. It equals $1$ in Gaussian CGS. |
+| $\electric{q}$, $\electric{q}_1$, $\electric{q}_2$ | $\unit{C}$ | Electric charge | Signed charges in Coulomb's law and the Lorentz force. |
+| $\mechanical{r}_{21}$ | $\unit{m}$ | Charge separation | Distance between the two charges. |
 | $\electric{\epsilon}_0$ | $\unit{F\cdot m^{-1}}$ | Vacuum permittivity | Constant in the SI form of Coulomb's law. |
 | $\magnetic{\mu}_0$ | $\unit{N\cdot A^{-2}}$ | Vacuum permeability | Magnetic constant in SI. |
+| $\circuit{I}_1$, $\circuit{I}_2$ | $\unit{A}$ | Currents | Currents in two parallel wires. |
+| $\mechanical{d}$ | $\unit{m}$ | Wire separation | Distance between the parallel wires. |
+| $\electric{\rho}$ | $\unit{C\cdot m^{-3}}$ | Charge density | Charge per unit volume in Maxwell's equations. |
+| $\vec{\electric{J}}$ | $\unit{A\cdot m^{-2}}$ | Current density | Current per unit area in Maxwell's equations. |
+| $\energy{U}_{\mathrm{SI}}$, $\energy{U}_{\mathrm{CGS}}$ | $\unit{J\cdot m^{-3}}$, $\unit{erg\cdot cm^{-3}}$ | Electromagnetic energy density | Field energy per unit volume in SI and Gaussian CGS. |
+| $\mechanical{v}$, $\vec{\mechanical{v}}$ | $\unit{cm\cdot s^{-1}}$ | Velocity | Frame speed in the Lorentz transformation, or particle velocity. |
+| $\mechanical{p}_e$, $\mechanical{p}_\gamma$ | $\unit{g\cdot cm\cdot s^{-1}}$ | Momentum | Electron and photon momentum magnitudes. |
+| $h$ | $\unit{erg\cdot s}$ | Planck constant | Relates photon energy to frequency. |
+| $\signal{\nu}$ | $\unit{Hz}$ | Photon frequency | Frequency of the incident photon. |
+| $x$, $y$, $z$, $\vec{x}$ | $\unit{cm}$ | Spatial coordinates | Event coordinates in an inertial frame. Primes denote the moving frame. |
+| $\gamma$ | $1$ | Lorentz factor | Relativistic factor $[1-(\mechanical{v}/c)^2]^{-1/2}$. |
+| $X$, $U$, $P$ | — | Four-vectors | Position, velocity, and momentum four-vectors. Their units are those of their components. |
+| $\tau$ | $\unit{s}$ | Proper time | Time measured by a clock moving with the particle. |
+| $\mechanical{m}$ | $\unit{g}$ | Rest mass | Rest mass of a particle. |
+| $\energy{E}$ | $\unit{erg}$ | Particle energy | Total energy $\gamma\mechanical{m}c^2$ of a particle. |
+| $\vec{\mechanical{p}}$, $\mechanical{p}_i$ | $\unit{g\cdot cm\cdot s^{-1}}$ | Spatial momentum | Spatial part of the four-momentum. |
+| $\energy{E}_\gamma$, $\energy{E}_\gamma^i$, $\energy{E}_\gamma^f$ | $\unit{erg}$ | Photon energy | Photon energy, and its values before and after scattering. |
+| $\signal{\lambda}_i$, $\signal{\lambda}_f$ | $\unit{cm}$ | Photon wavelength | Wavelength of the photon before and after scattering. |
+| $\Theta$ | $\unit{rad}$ | Scattering angle | Angle between the incident and scattered photon directions. |
 | $\signal{\lambda}_{\mathrm{C}}$ | $\unit{cm}$ | Electron Compton wavelength | Wavelength associated with a photon of energy equal to the electron rest energy. |
-| $\energy{U}$ | $\unit{erg\cdot cm^{-3}}$ | Radiation energy density | Electromagnetic energy per unit volume in Gaussian CGS. |
-| $y$ | $1$ | Compton parameter | Mean fractional energy change per scattering times the mean scattering count, using the convention in this section. |
+| $x$ | $1$ | Dimensionless photon energy | Ratio $\energy{E}_\gamma/(\mechanical{m}_ec^2)$ in the Klein–Nishina expansion. |

@@ -307,38 +307,42 @@ Kyle Kabasares, *Electricity and Magnetism (Physics 9H, UC Merced 2014)*.
 
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
-| $\mechanical{\vec F}$ | $\unit{N}$ | Force | The force on a charge. |
-| $\energy{U}$ | $\unit{J}$ | Electric potential energy | The interaction energy of the two charges. |
-| $\electric{V}$ | $\unit{V}$ | Electric potential | The potential energy per unit test charge. |
-| $\mechanical{r}$ | $\unit{m}$ | Radial distance | The distance from a source, axis, or center. |
-| $\electric{\varepsilon}_0$ | $\unit{F\,m^{-1}}$ | Vacuum permittivity | The constant that sets the strength of the electric interaction in vacuum. |
-| $\mechanical{d}$ | $\unit{m}$ | Separation or diameter | The separation of charges, plates, or slits, or the wire diameter. |
-| $\electric{Q}$ | $\unit{C}$ | Total charge | The charge distributed along the semicircular arc. |
-| $\theta$, $\mechanical{\theta}$ | $\unit{rad}$ | Angle | A geometric angle used in projections, polarization, and ray diagrams. |
-| $\mechanical{L}$ | $\unit{m}$ | Length | The length of a charge distribution or pendulum, or the distance to the screen. |
-| $\mechanical{A}$ | $\unit{m^2}$ | Area | The area over which the surface charge is distributed. |
-| $\mechanical{\vec A}$ | $\unit{m^2}$ | Area vector | A vector normal to the surface with magnitude equal to the area. |
-| $\mechanical{R}$ | $\unit{m}$ | Radius | The radius of a sphere, disk, wire, or coil, or the radius of curvature of a mirror. |
-| $\electric{I}$, $\electric{I}_2$–$\electric{I}_6$ | $\unit{A}$ | Circuit currents | The current in the feed and each bridge branch. |
-| $\circuit{C}$ | $\unit{F}$ | Capacitance | The charge magnitude per unit voltage across a capacitor. |
-| $\electric{\varepsilon}$ | $\unit{F\,m^{-1}}$ | Permittivity | The electric response parameter of a dielectric or transparent medium. |
-| $t$, $\signal{t}$, $\Delta\signal{t}$ | $\unit{s}$ | Time and elapsed time | The time coordinate or the duration of a process. |
-| $\signal{\tau}$ | $\unit{s}$ | Circuit time constant | The exponential time scale, equal to $\circuit{R}\circuit{C}$ or $\circuit{L}/\circuit{R}$. |
-| $\electric{\mathcal{E}}$ | $\unit{V}$ | Electromotive force | The source voltage in the charging loop. |
-| $\electric{V}_C$ | $\unit{V}$ | Capacitor voltage | The potential difference across the capacitor. |
-| $\magnetic{\vec B}$ | $\unit{T}$ | Magnetic flux density | The magnetic field that determines the flux through a surface. |
-| $\magnetic{\Phi}_B$ | $\unit{Wb}$ | Magnetic flux | The integral of the normal magnetic field over the surface. |
-| $\mechanical{\vec\ell}$ | $\unit{m}$ | Wire length vector | The directed length of the wire segment carrying current. |
-| $\magnetic{\mu}_0$ | $\unit{T\,m\,A^{-1}}$ | Vacuum permeability | The magnetic constant in the current-element and moving-charge formulas. |
-| $N$ | 1 | Turn count | The number of loops contributing to the coil field. |
+| $\magnetic{B}$, $\magnetic{\vec B}$ | $\unit{T}$ | Magnetic flux density | The magnetic field of the wire or the field through a loop. |
+| $\magnetic{B}_{\mathrm{sol}}$, $\magnetic{B}_1$ | $\unit{T}$ | Solenoid field | The field inside the solenoid or inside coil 1. |
+| $\magnetic{\vec B}_{\mathrm{ext}}$ | $\unit{T}$ | External field | The external magnetic field that acts on the current-carrying wire. |
+| $\magnetic{\mu}_0$ | $\unit{T\,m\,A^{-1}}$ | Vacuum permeability | The magnetic constant in Ampère's law and the solenoid field. |
+| $\electric{I}$, $\electric{I}_1$ | $\unit{A}$ | Current | The current in the wire, the solenoid, the circuit, or coil 1. |
+| $\electric{I}_0$ | $\unit{A}$ | Final or initial current | The steady current $\electric{V}_{\mathrm{bat}}/\circuit{R}$ of the LR circuit, or the initial current of a decay. |
+| $\electric{I}_L$, $\electric{I}_{\max}$ | $\unit{A}$ | Inductor current | The current through the inductor and its amplitude in the LC circuit. |
 | $\electric{I}_{\mathrm{ind}}$ | $\unit{A}$ | Induced current | The current driven by the induced emf. |
+| $\mechanical{r}$ | $\unit{m}$ | Radius | The distance from the wire axis, or the solenoid radius. |
+| $\mechanical{R}$ | $\unit{m}$ | Wire radius | The radius of the long straight wire. |
+| $\mechanical{r}_2$ | $\unit{m}$ | Coil 2 radius | The radius of the turns of coil 2. |
+| $\mechanical{d}$ | $\unit{m}$ | Wire diameter | The diameter of the wire in the adjacent turns of coil 1. |
+| $\mechanical{L}$ | $\unit{m}$ | Solenoid length | The length of the solenoid. |
+| $N$, $N_1$, $N_2$ | 1 | Turn count | The number of turns of the solenoid or of each coil. |
+| $\magnetic{\Phi}_B$ | $\unit{Wb}$ | Magnetic flux | The integral of the normal magnetic field over the surface, or the flux linkage in the solenoid example. |
+| $\mechanical{A}$, $\mechanical{A}_2$ | $\unit{m^2}$ | Loop area | The area of the loop or of a turn of coil 2. |
+| $\mechanical{\vec A}$ | $\unit{m^2}$ | Area vector | A vector normal to the loop with magnitude equal to the area. |
+| $\theta$ | $\unit{rad}$ | Field angle | The angle between the magnetic field and the area vector. |
+| $\mechanical{\vec F}_{\mathrm{wire}}$ | $\unit{N}$ | Magnetic force on the wire | The force of the external field on the current-carrying wire. |
+| $\mechanical{\vec\ell}$, $\mechanical{\ell}$ | $\unit{m}$ | Wire length | The directed length of the wire segment that carries current. |
+| $\electric{\mathcal{E}}_{\mathrm{ind}}$, $\electric{\mathcal{E}}_2$, $\electric{\mathcal{E}}_L$ | $\unit{V}$ | Induced emf | The emf induced in a loop, in coil 2, or in the inductor. |
+| $\electric{\mathcal{E}}$, $\electric{\mathcal{E}}_0$ | $\unit{V}$ | Source emf | The emf of the battery in the LR loop. |
+| $\electric{V}_{\mathrm{bat}}$ | $\unit{V}$ | Battery voltage | The voltage of the battery that drives the LR circuit. |
+| $\Delta\electric{V}$, $\Delta\electric{V}_R$, $\Delta\electric{V}_L$, $\Delta\electric{V}_C$ | $\unit{V}$ | Element potential changes | The signed potential changes across the capacitor, resistor, and inductor along the loop. |
+| $\electric{V}_C$ | $\unit{V}$ | Capacitor voltage | The potential difference across the capacitor. |
+| $\electric{Q}$, $\electric{Q}_C$ | $\unit{C}$ | Capacitor charge | The charge on the capacitor. |
+| $\electric{Q}_0$, $\electric{Q}_{\max}$ | $\unit{C}$ | Initial or maximum charge | The initial capacitor charge and the charge amplitude in the LC circuit. |
+| $\circuit{R}$ | $\unit{\Omega}$ | Resistance | The resistance in the loop or in the filter. |
+| $\circuit{C}$, $\circuit{C}_1$, $\circuit{C}_2$ | $\unit{F}$ | Capacitance | The capacitance in the circuit or filter. |
 | $\circuit{L}$ | $\unit{H}$ | Inductance | The linked magnetic flux per unit current. |
-| $\Delta\electric{V}_R$, $\Delta\electric{V}_L$ | $\unit{V}$ | Element potential changes | The signed potential changes across the resistor and inductor along the loop. |
+| $\signal{\tau}$ | $\unit{s}$ | Circuit time constant | The exponential time scale, equal to $\circuit{R}\circuit{C}$ or $\circuit{L}/\circuit{R}$. |
+| $t$ | $\unit{s}$ | Time | The time after the switch changes state. |
 | $\energy{U}_C$, $\energy{U}_L$ | $\unit{J}$ | Stored capacitor and inductor energies | The energies stored by the respective circuit elements. |
 | $\energy{u}_E$, $\energy{u}_B$ | $\unit{J\,m^{-3}}$ | Electric and magnetic energy densities | The energy per unit volume in the respective fields. |
-| $\signal{f}$ | $\unit{Hz}$ | Oscillation frequency | The number of cycles per second in a circuit or wave. |
-| $\signal{\omega}$ | $\unit{rad\,s^{-1}}$ | Angular frequency | The phase advance per second in an oscillation. |
+| $\electric{E}$ | $\unit{V\,m^{-1}}$ | Electric field | The field in the electric energy density. |
+| $\electric{\varepsilon}_0$ | $\unit{F\,m^{-1}}$ | Vacuum permittivity | The constant in the electric energy density. |
+| $\signal{f}$ | $\unit{Hz}$ | Oscillation frequency | The number of cycles per second in the LC circuit. |
+| $\signal{\omega}$ | $\unit{rad\,s^{-1}}$ | Angular frequency | The phase advance per second in the LC oscillation. |
 | $\signal{f}_{\mathrm{cutoff}}$ | $\unit{Hz}$ | Cutoff frequency | The characteristic frequency set by the resistor and capacitor. |
-| $\electric{v}_R$, $\electric{V}_R$ | $\unit{V}$ | Resistor voltage | The instantaneous resistor voltage and its amplitude. |
-| $\electric{v}_L$, $\electric{V}_L$ | $\unit{V}$ | Inductor voltage | The instantaneous voltage across the inductor and its amplitude. |
-| $\magnetic{\mu}$ | $\unit{T\,m\,A^{-1}}$ | Permeability | Magnetic response parameter for the medium. |

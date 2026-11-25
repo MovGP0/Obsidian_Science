@@ -10,10 +10,10 @@ title: "Electrostatic multipoles and matching at charge sources"
 Since $\cos^2\theta=\alpha Y_{20}+\beta Y_{00}$ for constants $\alpha,\beta$, projection gives $B_{20}/\mechanical{R}^3=\alpha\electric{V}_0$ and $B_{00}/\mechanical{R}=\beta\electric{V}_0$. The exterior solution is therefore
 
 $$
-\electric{\phi}(\mechanical{r},\theta,\phi)
-=\alpha\electric{V}_0Y_{20}(\theta,\phi)
+\electric{\phi}(\mechanical{r},\theta,\varphi)
+=\alpha\electric{V}_0Y_{20}(\theta,\varphi)
 \left(\frac{\mechanical{R}}{\mechanical{r}}\right)^3
-+\beta\electric{V}_0Y_{00}(\theta,\phi)
++\beta\electric{V}_0Y_{00}(\theta,\varphi)
 \frac{\mechanical{R}}{\mechanical{r}}.
 $$
 
@@ -24,14 +24,14 @@ The radial factors follow from the two projected coefficients and give the presc
 For general boundary data, the exterior series has terms proportional to $1/\mechanical{r}$, $1/\mechanical{r}^2$, $1/\mechanical{r}^3$, and higher inverse powers. At large distances only the first few nonzero terms are needed. For localized charge, a standard SI normalization of the multipole moments $\electric{q}_{\ell m}$ gives
 
 $$
-\electric{\phi}(\mechanical{r},\theta,\phi)
+\electric{\phi}(\mechanical{r},\theta,\varphi)
 =\frac1{\electric{\varepsilon}_0}\sum_{\ell=0}^\infty\sum_{m=-\ell}^{\ell}
-\frac{\electric{q}_{\ell m}Y_{\ell m}(\theta,\phi)}
+\frac{\electric{q}_{\ell m}Y_{\ell m}(\theta,\varphi)}
 {(2\ell+1)\mechanical{r}^{\ell+1}},
 \qquad
 \electric{q}_{\ell m}
 =\int \electric{\rho}(\mechanical{\vec x}')\mechanical{r}'^\ell
-Y_{\ell m}^*(\theta',\phi')\,d^3\mechanical{x}'.
+Y_{\ell m}^*(\theta',\varphi')\,d^3\mechanical{x}'.
 $$
 
 This convention includes the Coulomb factor $1/(4\pi\electric{\varepsilon}_0)$ multiplying the spherical-harmonic kernel's $4\pi$. For a point charge at the origin only the $\ell=0$ term contributes. Since $Y_{00}=1/\sqrt{4\pi}$, the moment is $\electric{q}_{00}=\electric{Q}/\sqrt{4\pi}$ and the potential reduces to $\electric{Q}/(4\pi\electric{\varepsilon}_0\mechanical{r})$.
@@ -57,7 +57,7 @@ $$
 =\frac{\electric{p}\cos\theta}{4\pi\electric{\varepsilon}_0\mechanical{r}^2}.
 $$
 
-This is the $\ell=1$, $m=0$ mode since $Y_{10}\propto\cos\theta$. With the SI normalization on [[#Multipole expansion|the section on Multipole expansion]], $\electric{q}_{10}=\sqrt{3/(4\pi)}\,\electric{p}_z$. A dipole along $x$ instead has angular dependence $\sin\theta\cos\phi$ and involves $Y_{11}$ and $Y_{1,-1}$. With the phases used on [[Laplace equation in Cartesian and spherical geometries#Sphere held at constant potential|the section on Sphere held at constant potential]], $\electric{p}_x$ is proportional to $\electric{q}_{1,-1}-\electric{q}_{11}$.
+This is the $\ell=1$, $m=0$ mode since $Y_{10}\propto\cos\theta$. With the SI normalization on [[#Multipole expansion|the section on Multipole expansion]], $\electric{q}_{10}=\sqrt{3/(4\pi)}\,\electric{p}_z$. A dipole along $x$ instead has angular dependence $\sin\theta\cos\varphi$ and involves $Y_{11}$ and $Y_{1,-1}$. With the phases used on [[Laplace equation in Cartesian and spherical geometries#Sphere held at constant potential|the section on Sphere held at constant potential]], $\electric{p}_x$ is proportional to $\electric{q}_{1,-1}-\electric{q}_{11}$.
 
 The three Cartesian dipole components are linear combinations of the three $\ell=1$ moments. The first three orders are the monopole $\electric{q}_{00}$, the dipole moments $\electric{q}_{1m}$, and the quadrupole moments $\electric{q}_{2m}$.
 
@@ -72,7 +72,7 @@ $$
 \frac{1}{\lvert\mechanical{\vec x}-\mechanical{\vec x}'\rvert}
 =\sum_{\ell,m}\frac{4\pi}{2\ell+1}
 \frac{\mechanical{r}'^\ell}{\mechanical{r}^{\ell+1}}
-Y_{\ell m}(\theta,\phi)Y_{\ell m}^*(\theta',\phi').
+Y_{\ell m}(\theta,\varphi)Y_{\ell m}^*(\theta',\varphi').
 $$
 
 Substitute this into $\electric{\phi}=(4\pi\electric{\varepsilon}_0)^{-1}\int\electric{\rho}(\mechanical{\vec x}')/\lvert\mechanical{\vec x}-\mechanical{\vec x}'\rvert\,d^3\mechanical{x}'$ and match coefficients of $Y_{\ell m}/\mechanical{r}^{\ell+1}$. This gives the moment integral on [[#Multipole expansion|the section on Multipole expansion]]. The notes use an alternative normalization on this page, with $1/(4\pi)$ inside the moment integral and a compensating $4\pi$ in the potential series. The power of the source radius is $\ell$ in either convention.
@@ -211,7 +211,7 @@ The radial ratio is $\mechanical{R}^{\ell}/\mechanical{r}^{\ell+1}$ outside and 
 
 ##### Potential of a sphere with cosine volume charge density
 
-Inside a sphere of radius $\mechanical{R}$, take $\electric{\rho}=\electric{\rho}_0\cos\theta=\electric{\rho}_0 C Y_{10}(\theta,\varphi)$, where $C=\sqrt{4\pi/3}$. The density vanishes outside.
+Inside a sphere of radius $\mechanical{R}$, take $\electric{\rho}=\electric{\rho}_0\cos\theta=\electric{\rho}_0 \gamma Y_{10}(\theta,\varphi)$, where $\gamma=\sqrt{4\pi/3}$. The density vanishes outside.
 
 ![[Kyle Kabasares - Electrodynamics - Sphere with cosine volume charge density.png|**Fig. 62** Charged volume extending from the origin to radius $\mechanical{R}$.]]
 
@@ -220,7 +220,7 @@ The Coulomb integral is
 $$
 \electric{\phi}(\mechanical{\mathbf r})
 =\frac{1}{4\pi\electric{\varepsilon}_0}\int
-\frac{\electric{\rho}_0 C Y_{10}(\theta',\varphi')}
+\frac{\electric{\rho}_0 \gamma Y_{10}(\theta',\varphi')}
 {\lvert\mechanical{\mathbf r}-\mechanical{\mathbf r}'\rvert}\,d^3\mechanical{r}'.
 $$
 
@@ -228,7 +228,7 @@ Expand the inverse distance in spherical harmonics. The angular integral of $Y_{
 
 $$
 \electric{\phi}
-=\frac{\electric{\rho}_0 C Y_{10}(\theta,\varphi)}{3\electric{\varepsilon}_0}
+=\frac{\electric{\rho}_0 \gamma Y_{10}(\theta,\varphi)}{3\electric{\varepsilon}_0}
 \int_0^{\mechanical{R}}
 \frac{\mechanical{r}_{<}}{\mechanical{r}_{>}^2}(\mechanical{r}')^2\,d\mechanical{r}'.
 $$
@@ -243,7 +243,7 @@ For $\mechanical{r}<\mechanical{R}$, the identity of the smaller radius changes 
 
 $$
 \electric{\phi}
-=\frac{\electric{\rho}_0 C Y_{10}(\theta,\varphi)}{3\electric{\varepsilon}_0}
+=\frac{\electric{\rho}_0 \gamma Y_{10}(\theta,\varphi)}{3\electric{\varepsilon}_0}
 \left[
 \int_0^{\mechanical{r}}\frac{\mechanical{r}'}{\mechanical{r}^2}(\mechanical{r}')^2\,d\mechanical{r}'
 +\int_{\mechanical{r}}^{\mechanical{R}}\frac{\mechanical{r}}{(\mechanical{r}')^2}(\mechanical{r}')^2\,d\mechanical{r}'
@@ -302,7 +302,7 @@ Compare the far-field expansion (Jackson, Eq. 4.10) with the exterior potential 
 $$
 \electric{\phi}(\mechanical{\mathbf r})=\frac{1}{4\pi\electric{\varepsilon}_0}
 \left[
-\frac{\electric{q}}{\mechanical{r}}
+\frac{\electric{q}_{\mathrm{tot}}}{\mechanical{r}}
 +\frac{\electric{\mathbf p}\cdot\mechanical{\mathbf r}}{\mechanical{r}^3}
 +\frac12\sum_{i,j}\electric{Q}_{ij}\frac{\mechanical{x}_i\mechanical{x}_j}{\mechanical{r}^5}
 +\cdots
@@ -339,7 +339,7 @@ $$
 Matching the monopole gives
 
 $$
-\electric{q}=\frac{4\pi\electric{\varepsilon}_0 B_{00}}{\sqrt{4\pi}}
+\electric{q}_{\mathrm{tot}}=\frac{4\pi\electric{\varepsilon}_0 B_{00}}{\sqrt{4\pi}}
 =\frac{4\pi\electric{\varepsilon}_0\mechanical{R}}{\sqrt{4\pi}}
 \int Y_{00}^*(\theta',\varphi')\electric{V}(\theta',\varphi')\,d\Omega'.
 $$
@@ -458,10 +458,28 @@ Kyle Kabasares, *Electrodynamics (Physics 213A, UC Irvine 2018)*.
 
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
-| $\mechanical{R}$ | $\unit{m}$ | Gaussian sphere radius | Distance from the central charge to the integration surface. |
-| $\mechanical{a}$, $\mechanical{b}$ | $\unit{m}$ | Inner and outer radii | Radial boundaries of the concentric spherical capacitor or conducting shell. |
-| $\electric{V}_0$ | $\unit{V\,m}$ | Screened-potential coefficient | Multiplies the exponential divided by radius. |
-| $\alpha$ | $\unit{m^{-2}}$ | Gaussian profile coefficient | Controls the width of the prescribed planar potential. |
-| $\electric{q}_{\ell m}$ | $\unit{C\,m^\ell}$ | Electric multipole moment | Charge-density moment weighted by a radial power and a conjugate spherical harmonic. |
-| $\electric{V}_0$ | $\unit{V}$ | Prescribed potential amplitude | Voltage scale for the planar and spherical boundary data, distinct from the screened-potential coefficient. |
-| $\electric{\sigma}_0$ | $\unit{C\,m^{-2}}$ | Surface charge density amplitude | Coefficient of $\cos\theta$ on the spherical shell. |
+| $\electric{\phi}$, $\electric{\phi}_{\mathrm{out}}$, $\electric{\phi}_{\mathrm{in}}$, $\electric{\phi}_{\mathrm{dip}}$ | $\unit{V}$ | Electrostatic potential | The potential outside, inside, or of a dipole source. |
+| $\electric{V}_0$, $\electric{V}$ | $\unit{V}$ | Prescribed boundary potential | The voltage scale of the boundary data on the spherical surfaces. |
+| $\mechanical{R}$ | $\unit{m}$ | Sphere radius | The radius of the shell, the charged sphere, or the radial position of the point charge. |
+| $\mechanical{a}$ | $\unit{m}$ | Dipole separation or inner radius | The distance between the two dipole charges, or the radius of the inner sphere. |
+| $\mechanical{b}$ | $\unit{m}$ | Outer radius | The radius of the outer concentric sphere. |
+| $\mechanical{r}$, $\mechanical{r}'$, $\mechanical{r}_{<}$, $\mechanical{r}_{>}$ | $\unit{m}$ | Radial distance | The field-point and source-point radii and their smaller and larger values. |
+| $\mechanical{\vec x}$, $\mechanical{\mathbf r}$, $\mechanical{x}_i$, $\mechanical{z}$ | $\unit{m}$ | Position | The field-point position vector and its Cartesian components. |
+| $\mechanical{\mathbf r}_{\mathrm{im}}$ | $\unit{m}$ | Image position | The position of the image charge for the grounded sphere. |
+| $\alpha$, $\beta$ | 1 | Projection coefficients | The coefficients of $Y_{20}$ and $Y_{00}$ in the expansion of $\cos^2\theta$. |
+| $A_{\ell m}$, $B_{\ell m}$, $C_{\ell m}$, $D_{\ell m}$ | — | Radial expansion coefficients | The coefficients of the radial solutions in each region; the unit depends on $\ell$ and on the radial power. |
+| $c_{\ell m}$ | $\unit{V}$ | Boundary-data coefficients | The harmonic coefficients of the boundary potential. |
+| $\electric{q}_{\ell m}$ | $\unit{C\,m^\ell}$ | Electric multipole moment | The charge-density moment weighted by a radial power and a conjugate spherical harmonic. |
+| $\electric{\rho}$ | $\unit{C\,m^{-3}}$ | Volume charge density | The charge per unit volume of the source. |
+| $\electric{\rho}_0$ | $\unit{C\,m^{-3}}$ | Density amplitude | The coefficient of $\cos\theta$ in the charged sphere. |
+| $\electric{\sigma}$ | $\unit{C\,m^{-2}}$ | Surface charge density | The charge per unit area on a spherical surface. |
+| $\electric{\sigma}_0$ | $\unit{C\,m^{-2}}$ | Surface charge density amplitude | The coefficient of $\cos\theta$ on the spherical shell. |
+| $\electric{Q}$ | $\unit{C}$ | Point charge | The real point charge in the matching and image problems. |
+| $\electric{q}$ | $\unit{C}$ | Dipole charge | The magnitude of each of the two dipole charges. |
+| $\electric{q}'$ | $\unit{C}$ | Image charge | The image charge for the grounded sphere. |
+| $\electric{Q}_{\mathrm{tot}}$, $\electric{q}_{\mathrm{tot}}$ | $\unit{C}$ | Total charge | The net charge of the source distribution or of the two spheres. |
+| $\electric{Q}_{\mathrm{in}}$ | $\unit{C}$ | Inner-sphere charge | The charge inside the Gaussian surface between the two spheres. |
+| $\electric{p}$, $\electric{\mathbf p}$, $\electric{p}_x$, $\electric{p}_z$ | $\unit{C\,m}$ | Electric dipole moment | The dipole moment and its Cartesian components. |
+| $\electric{Q}_{ij}$ | $\unit{C\,m^2}$ | Quadrupole moment | The Cartesian quadrupole tensor in the far-field expansion. |
+| $\electric{\mathbf E}$, $\electric{E}_r$ | $\unit{V\,m^{-1}}$ | Electric field | The electric field and its radial component. |
+| $\electric{\varepsilon}_0$ | $\unit{F\,m^{-1}}$ | Vacuum permittivity | The constant in Coulomb's law and Poisson's equation. |

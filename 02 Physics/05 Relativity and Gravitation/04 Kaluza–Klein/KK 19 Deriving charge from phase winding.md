@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Deriving charge from phase winding"
 document_type: "Self-contained study chapter"
 ---
@@ -57,7 +57,7 @@ $$
 \quad \mechanical{\kappa}=\mechanical{r}\mechanical{\xi}.
 $$
 
-The integer comes from periodicity, while the coefficient xi comes from the metric normalization. The zero mode is neutral. Opposite winding gives opposite charge and the same mass. Each mass eigenmode is also a charge eigenmode because their Fourier phase has one definite coefficient multiplying the gauge function. The fixed proportionality between charge magnitude and mass will become the main problem of the simple model.
+The integer comes from periodicity, while the coefficient xi comes from the metric normalization. The zero mode is neutral. Opposite winding gives opposite charge and the same mass. Each Fourier mode $e^{in\mechanical{\theta}}$ is both a mass eigenmode and a charge eigenmode because its phase has one definite coefficient multiplying the gauge function. A combination of the modes $n$ and $-n$, such as $\cos(n\mechanical{\theta})$, has a definite mass but no definite charge. The fixed proportionality between charge magnitude and mass will become the main problem of the simple model.
 
 <!-- visual-source:end -->
 
@@ -220,9 +220,9 @@ The units below use the collection's natural-unit convention. Explicit SI formul
 | $\mechanical{\kappa}$ | $\unit{GeV^{-1}}$ | Metric coupling scale | Scale between the canonical electromagnetic potential and the metric shift. |
 | $\electric{A}_\mu$ | $\unit{GeV}$ | Potential components | Canonically normalized electromagnetic potential components. |
 | $\signal{\Psi}$ | $\unit{GeV^{3/2}}$ | Five-dimensional scalar field | Canonically normalized higher-dimensional matter field. |
-| $\signal{\psi}_n$ | $\unit{GeV}$ | Four-dimensional scalar fields | Canonical field or Fourier-mode amplitude on the base spacetime. |
+| $\signal{\psi}_n$ | $\unit{GeV}$ | Four-dimensional mode fields | Canonically normalized mode fields in the length-coordinate derivation. |
 | $\electric{q}_n$ | $1$ | Electric charges | Mode charge or elementary charge in Heaviside-Lorentz natural units. |
-| $\mechanical{\theta}$ | $1$ | Circular angle | Compact circular angle; the spherical-coordinate inset identifies its separate polar-angle use. |
+| $\mechanical{\theta}$ | $1$ | Circular angle | Compact circular angle with period two pi. |
 | $\mechanical{\xi}$ | $1$ | Angular normalization | Dimensionless factor relating the mixed vector to the four-potential. |
-| $\signal{\psi},\signal{\psi}_n$ | — | Scalar waves | Scalar field and Fourier coefficients in the unnormalized expansion; amplitude units depend on the chosen normalization. |
+| $\signal{\psi},\signal{\psi}_n$ | — | Scalar waves | Scalar field and its Fourier coefficients in the first (angular) section, without canonical normalization; units depend on the chosen normalization. |
 | $\mechanical{m}_5,\mechanical{m}_n$ | $\unit{GeV}$ | Scalar masses | Original five-dimensional mass and reduced mode mass. |

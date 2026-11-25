@@ -46,11 +46,11 @@ The numerical substitution uses $hc\simeq\quantity{1240}{eV\,nm}$ and $\mechanic
 
 ##### Interference of neutrons
 
-Gähler and Zeilinger performed interference experiments at low intensities with neutrons moving at about $\quantity{2}{km/s}$. Photons, electrons, and neutrons can all produce interference patterns in a double-slit experiment.
+Gähler and Zeilinger performed interference experiments at low intensities with very cold neutrons of wavelength about $\quantity{1.85}{nm}$, which move at about $\quantity{200}{m/s}$. The notes give about $\quantity{2}{km/s}$, which is the typical speed of thermal neutrons. Photons, electrons, and neutrons can all produce interference patterns in a double-slit experiment.
 
 ##### Probability and its role
 
-Integrating probability density over a region gives probability, just as integrating mass density over a region gives mass. The wave function extends de Broglie's wave description of matter. The notes give a separated wave function $\Psi(\mathbf r,t)=\psi(\mathbf r)\phi(t)$ and distinguish the uppercase $\Psi$ from the lowercase $\psi$ and $\phi$.
+Integrating probability density over a region gives probability, just as integrating mass density over a region gives mass. The wave function extends de Broglie's wave description of matter. The notes give a separated wave function $\Psi(\mathbf r,t)=\psi(\mathbf r)\chi(t)$ and distinguish the uppercase $\Psi$ from the lowercase $\psi$ and $\chi$.
 
 The product $\Psi^*\Psi$ is real. Integrate it over all space using the volume element $d\tau$ to get a probability of one for finding the particle somewhere.
 
@@ -74,10 +74,10 @@ A sinusoidal wave traveling in the positive $x$ direction has the form
 
 $$
 \Psi(x,t)=A\sin(\signal{k}x-\signal{\omega}t)+B\cos(\signal{k}x-\signal{\omega}t)
-=A'\sin(\signal{k}x-\signal{\omega}t+\phi).
+=A'\sin(\signal{k}x-\signal{\omega}t+\delta).
 $$
 
-Here $\phi$ is a phase shift, $\signal{\omega}=2\pi/\signal{T}=2\pi\signal{f}$, and the wave number is $\signal{k}=2\pi/\signal{\lambda}$.
+Here $\delta$ is a phase shift, $\signal{\omega}=2\pi/\signal{T}=2\pi\signal{f}$, and the wave number is $\signal{k}=2\pi/\signal{\lambda}$.
 
 ##### Interference
 
@@ -139,7 +139,7 @@ For a normalized wave function, the probability density is $P(x)=\lvert\Psi(x)\r
 
 ![[Kyle Kabasares - Modern Physics - Wave function nodes.png|**Fig. 9** The sketched wave function has nodes at the circled positions, where the probability density is zero.]]
 
-The notes use the sinusoidal example $\Psi=A\sin(\signal{k}x-\signal{\omega}t+\phi)$, with $A$ an overall normalization constant when the domain permits normalization. A separable spatial wave function in three dimensions is $\Psi(\mathbf r)=X(x)Y(y)Z(z)$.
+The notes use the sinusoidal example $\Psi=A\sin(\signal{k}x-\signal{\omega}t+\delta)$, with $A$ an overall normalization constant when the domain permits normalization. A separable spatial wave function in three dimensions is $\Psi(\mathbf r)=X(x)Y(y)Z(z)$.
 
 ##### Normalizing a wave function
 
@@ -200,7 +200,7 @@ $$
 The incident energy is $hc/\signal{\lambda}_0$. The notes write the outgoing energy above the electron rest energy as $hc/\signal{\lambda}'+\mechanical{p}_{\mathrm e}^2/(2\mechanical{m}_{\mathrm e})$, using the nonrelativistic recoil approximation. The boxed wavelength shift is the relativistic result,
 
 $$
-\Delta\signal{\lambda}=\signal{\lambda}_{\mathrm f}-\signal{\lambda}_0
+\Delta\signal{\lambda}=\signal{\lambda}'-\signal{\lambda}_0
 =\frac{h}{\mechanical{m}_{\mathrm e}c}(1-\cos\theta).
 $$
 
@@ -302,7 +302,7 @@ Laplace wrote in 1812 of an all-seeing intelligence. The notes quote Heisenberg 
 
 ##### Rutherford scattering
 
-Use $\energy{K}=\quantity{7.7}{MeV}=\quantity{1.232\times10^{-12}}{J}$, $\theta=90^\circ$, and $t=\quantity{10^{-6}}{m}$. The number density is
+Use $\energy{K}=\quantity{7.7}{MeV}=\quantity{1.232\times10^{-12}}{J}$, $\theta=90^\circ$, and foil thickness $\ell=\quantity{10^{-6}}{m}$. The number density is
 
 $$
 n=\frac{\mechanical{\rho}N_{\mathrm A}N_{\mathrm m}}{M_{\mathrm g}}
@@ -313,7 +313,7 @@ $$
 Then
 
 $$
-f=\pi nt\left(\frac{(2)(79)\electric{e}^2}{8\pi\epsilon_0\energy{K}}\right)^2\cot^2(45^\circ)
+f=\pi n\ell\left(\frac{(2)(79)\electric{e}^2}{8\pi\epsilon_0\energy{K}}\right)^2\cot^2(45^\circ)
 \simeq4.3\times10^{-5}.
 $$
 
@@ -326,7 +326,7 @@ Use a gold foil of thickness $\quantity{2.0\times10^{-6}}{m}$ and incident alpha
 As before, gold has number density $n=\mechanical{\rho}N_{\mathrm A}N_{\mathrm m}/M_{\mathrm g}=\quantity{5.90\times10^{28}}{m^{-3}}$, using $\quantity{19.3}{g/cm^3}$ and $\quantity{197}{g/mol}$. The fraction scattered through at least $90^\circ$ uses $\cot^2(45^\circ)=1$.
 
 $$
-f(90^\circ)=\pi nt
+f(90^\circ)=\pi n\ell
 \left[\frac{(2)(79)(\quantity{1.6\times10^{-19}}{C})^2}
 {8\pi(\quantity{8.85\times10^{-12}}{C^2/(N\,m^2)})(\quantity{1.12\times10^{-12}}{J})}\right]^2
 \simeq9.8\times10^{-5}.
@@ -444,7 +444,11 @@ Kyle Kabasares, *Modern Physics (Physics 10, UC Merced 2014)*.
 | $\signal{\lambda}$ | $\unit{m}$ | De Broglie wavelength | Wavelength associated with momentum magnitude $\mechanical{p}$ through $h/\mechanical{p}$. |
 | $\signal{v}_{\mathrm{ph}}$ | $\unit{m/s}$ | Phase velocity | Speed of a point of constant phase. |
 | $\signal{v}_{\mathrm{gr}}$ | $\unit{m/s}$ | Group velocity | Speed of the envelope of a narrow wave packet. |
-| $\lambda$ | $\unit{s^{-1}}$ | Decay constant | Probability rate for the decay of an individual nucleus. |
-| $R$ | $\unit{Bq}$ | Activity | Number of radioactive decays per unit time. |
-| $\mechanical{\rho}$ | $\unit{kg/m^3}$ | Mass density | Nuclear mass per unit volume. |
-| $\tau$ | $\unit{s}$ | Mean lifetime | Reciprocal of the decay constant. |
+| $\mechanical{\rho}$ | $\unit{kg/m^3}$ | Mass density | Bulk mass per unit volume of the gold foil. |
+| $\energy{K}$ | $\unit{J}$ | Kinetic energy | Kinetic energy of the electron or alpha particle. |
+| $\mechanical{D}$ | $\unit{m}$ | Atomic spacing | Distance between neighboring atoms in the Davisson–Germer crystal. |
+| $\mechanical{d}$ | $\unit{m}$ | Plane spacing | Distance between neighboring Bragg planes. |
+| $n$ | $\unit{m^{-3}}$ | Number density | Number of gold nuclei per unit volume of the foil. |
+| $f$ | $1$ | Scattered fraction | Fraction of alpha particles scattered through at least the given angle. |
+| $\ell$ | $\unit{m}$ | Foil thickness | Thickness of the gold foil. |
+| $\mechanical{t}$ | $\unit{s}$ | Time | Duration of the light exposure in the momentum-transfer problem. |

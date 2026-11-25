@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Vector analysis and field theory learning guide"
 catalogue_ids:
   - "13"
@@ -58,7 +58,7 @@ Check a complicated result using a simpler representation. For instance, $x^2+y^
 <!-- catalogue-complete-lesson-index:start -->
 ## Complete lesson index
 
-Read the prerequisite route above before the advanced lessons. The source topic links are in [[Planned Topics#13. Vector analysis and field theory|the detailed catalogue]].
+Read the prerequisite route above before the advanced lessons.
 
 - [[Scalar and vector fields|Scalar and vector fields]] — 13.1, 13.1.2, 13.1.2.1, 13.1.2.2, 13.1.2.3, 13.1.2.4, 13.1.3, 13.1.3.1, 13.1.3.2, 13.1.3.3, 13.1.3.4, 13.1.3.5.
 - [[Vector functions and curves|Vector functions and curves]] — 13.1.1, 13.1.1.1, 13.1.1.2, 13.1.1.3, 13.1.1.4.

@@ -1,0 +1,23 @@
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/13 Exercise Solutions/13.03 Chapter 5 - Grand Canonical Ensemble.md
+- [Correctness] The TLDR promises "subsystem energy shifts", which no exercise covers, and leaves out the two adsorption problems; reword it to: ideal-gas grand potential and entropy, Langmuir fixed-$\mu$ energy response, van der Waals number fluctuations, and the BET multilayer isotherm.
+- [Correctness] Physical-quantities table: $\mathcal Z$ is never used (the note writes $Z_N$), and symbols the note does use are missing: $\mechanical{\kappa}_T^{(0)}$, $\mechanical{P}_s$, $\mechanical{P}_0$, $z_s$, $x=\energy{\Delta}/(k_BT)$, $n_{\mathrm c}$, $\thermal{T}_{\mathrm c}$, and the unsubscripted level energy $\varepsilon$.
+- [Correctness] Exercise 5.2, the weight $e^{-\thermal{\beta}(\varepsilon-\mu N)}$ leaves $\varepsilon$ and $\mu$ without macros, while the same quantities are colored everywhere else; write $\energy{\varepsilon}$ and $\energy{\mu}$.
+
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/13 Exercise Solutions/13.04 Chapter 6 - Ideal Quantum Gas.md
+- [Correctness] Symbol clash: $n$ means number density ($\varepsilon_F\propto n^{2/3}$; $n\signal{\lambda}_T^3\ll1$ in Exercise 6.6) and also occupation (the "factor $n+1$" in the same section and the note box, next to $n_{\mathrm{BE}}$). In 6.6, write the enhancement factor as $1+\bar n$. Likewise $g$ means density of states while $g_{5/2}(z)$ is the Bose function in 6.3; the note should say so or rename one of them.
+- [Correctness] Physical-quantities table: $g_{5/2},f_{5/2}$ (Bose/Fermi functions), $\Gamma$, $\zeta$, $\energy{U}_0$, $\mechanical{P}_0$, $\Xi_\alpha$, $\Theta$ (step function), and the Sommerfeld test function $\phi$ are missing. The row for $\mathcal N$ says "electromagnetic one-particle modes", but Exercise 6.7 also uses it for massive ultrarelativistic particles.
+
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/13 Exercise Solutions/13.05 Chapter 8 - Bose Gas and Condensation.md
+- [Correctness] Exercise 8.3(c), "The Wien approximation predates Planck's law (1896)" reads as if Planck's law dates from 1896. Write "Wien's approximation (1896) predates Planck's law (1900)".
+
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/13 Exercise Solutions/13.06 Chapter 9 - Real Gases and Interactions.md
+- [Correctness] Exercise 9.5(c): "$\mechanical{P}_{\mathrm{vir}}\approx4.129\times10^5\,\unit{Pa}\approx4.077\,\unit{atm}$" is inconsistent; $4.129\times10^5$ Pa is $4.075$ atm (unrounded $4.1292\times10^5$ Pa $=4.0752$ atm), the same as the vdW value.
+- [Correctness] Physical-quantities table: $\energy{\varepsilon}$ is described as "The level energy or level spacing used in the exercise"; in this note it is the square-well depth of Exercise 9.2 (argon scale $\varepsilon/k_B\approx120$ K). The table also omits $\gamma$, $\mechanical{P}_{\mathrm c}$, $\mechanical{V}_{\mathrm c}$ and $\mechanical{P}_0$.
+
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/93 C Elements of Combinatorics and Probability/C.05.03 Random Walk in d Dimensions and Polymers.md
+- [Correctness] $\mechanical{\tau}$ means the random-walk step interval in "Step-length conventions" but imaginary time in Remark C.2, and $\mechanical{t}$ is used in both roles; the table concedes this. Rename the imaginary time (for example $\mechanical{t}_{\mathrm E}$).
+
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/Statistical populations and quantum counting problems.md
+- [Correctness] Symbol clash: $\energy{E}_1,\energy{E}_2$ are hydrogen levels 10.2 eV apart in the Maxwell–Boltzmann example, but later $\energy{E}_1=h^2/(8\mechanical{m}L^2)$ is the infinite-well ground energy. Rename one of them (for example $\energy{E}_{\mathrm{box}}$).
+- [Correctness] Physical-quantities table: $\thermal{T}$ "Determines the blackbody spectrum" and $\energy{E}_n$ "relative to ionization" do not match this note (there is no blackbody, and here $E_n=E_1n^2$ are box levels). It omits $\mechanical{m}$, $N$, $g(E)$, $n(E)$ and $f$, and $k_B$ and $h$ appear without the semantic macros used elsewhere in the vault.
+

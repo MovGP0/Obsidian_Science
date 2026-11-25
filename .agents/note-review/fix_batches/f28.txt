@@ -1,0 +1,53 @@
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/08 Strong Interactions among Quarks/8.P Problems.md
+- [Correctness] Problem 8.4: right after defining $V(r)=\frac{\alpha_s}{r}\langle\mathbf T^{(1)}\cdot\mathbf T^{(2)}\rangle$, the four potentials are printed as $-\frac43\alpha_s r$, $+\frac16\alpha_s r$, $-\frac23\alpha_s r$, $+\frac13\alpha_s r$. They must be $-\frac43\alpha_s/r$, $+\frac16\alpha_s/r$, $-\frac23\alpha_s/r$, $+\frac13\alpha_s/r$.
+- [Correctness] Problem 8.5 table: the single box is the $6$ of $\mathrm{SU}(6)$ with $(3,2)$ and $G^2=35/12$, not dimension "1". Also, the embedded pair images are swapped relative to their content: the $21$ [$(6,3)\oplus(3^*,1)$, $G^2=20/3$] is the symmetric (horizontal) pair, and the $15$ [$G^2=14/3$] is the antisymmetric (vertical) pair, as the filenames vertical-pair and horizontal-pair indicate the opposite.
+- [Correctness] Problem 8.22 table: at $90^\circ$, $\hat\sigma(gg\to q\bar q)/\hat\sigma(ud\to ud)=\frac{7/48}{20/9}=\frac{21}{320}\approx0.066$, not $\approx0.66$. All other ratios check (0.1, 22/15, 7/6, 7/15, 11/4, 2187/160).
+- [Correctness] Problem 8.10 cites "the Feynman rules for the Faddeev–Popov ghost given in figure 8.10". Figure 8.10 is the dielectric polarization; the ghost vertex is figure 8.17.
+- [Correctness] Problem 8.27(c): $\sum_{i=u,d,s}e_i^4=2/9$; the quoted $2/3$ includes the color factor and should read $3\sum_ie_i^4=2/3$. The Han–Nambu citation should be *Phys. Rev.* **139**, B1006 (1965), not "149B, 1006".
+- [Correctness] Problem 8.9: for the attractive Coulomb potential $-\alpha/r$, the factor $1+\alpha|\mathbf q|^2/(15\pi m^2)$ yields the contact term $-\frac{4\alpha_{\mathrm R}^2}{15m^2}\delta^3(\mathbf x)$. The printed $\frac{4}{15}\frac{\alpha_{\mathrm R}}{m^2}\delta^3(\mathbf x)$ is missing one power of $\alpha_{\mathrm R}$ and the sign.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/08 Strong Interactions among Quarks/8.R For Further Reading.md
+- [Correctness] HQET list: the second Eichten–Hill paper is *Phys. Lett.* **B243**, 427 (1990), not "*Phys. Rev.* **B243**".
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/09 Unified Theories/9.2 The SU(5) Model.md
+- [Correctness] (9.2.19), hypercharge term: the coefficient must be $-\frac{g_5}{2}\sqrt{\frac35}\,\mathcal A_\mu\sum\bar f\gamma^\mu Yf$ (i.e. $-\frac{g'}{2}$), not $-\frac{g_5}{2}\frac35$, to agree with (9.2.21) $g'=g_5\sqrt{3/5}$ and (9.2.26).
+- [Correctness] Outdated bounds and status: (9.2.28) should be updated to Super-Kamiokande (2020), $\tau/B(p\to e^+\pi^0)>2.4\times10^{34}\,\mathrm{yr}$ and $\tau/B(p\to\mu^+\pi^0)>1.6\times10^{34}\,\mathrm{yr}$. (9.2.29) has been superseded by SNO+ ($\sim10^{30}\,\mathrm{yr}$ for invisible proton decay). "the normal Higgs scalar $H^0$, still with unknown mass" should note $M_H\approx125\,\mathrm{GeV}$ (2012).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/09 Unified Theories/9.3 Coupling-Constant Unification.md
+- [Correctness] In (9.3.9), with the vault convention $Q=I_3+\tfrac12 Y$ of (6.3.6), $\tfrac12[\operatorname{tr}(Y_{\mathrm L}^2)+\operatorname{tr}(Y_{\mathrm R}^2)]=20/3$ per generation, not $5/3$; the traces must be of $(Y/2)^2$, i.e. write $\tfrac12[\operatorname{tr}(Y_{\mathrm L}/2)^2+\operatorname{tr}(Y_{\mathrm R}/2)^2]=\tfrac53 n_g$ so that $4\pi b_Y=-20n_g/9$ follows.
+- [Correctness] (9.3.15): solving (9.3.13) with $\alpha^{-1}=128.957$, $\alpha_s^{-1}=8.446$ gives $\mechanical{u}=1.45\times10^{15}\,\mathrm{GeV}$ ($\log_{10}u=15.161$, exactly the endpoint used in Fig. 9.3), not $1.44\times10^{15}$; state 1.45 or note the rounding.
+- [Correctness] Inputs are dated: current PDG values are $\alpha_s(M_Z^2)=0.1180\pm0.0009$, $M_Z=91.1876\,\mathrm{GeV}$, and $M_W\approx80.37\,\mathrm{GeV}$ gives $x_W^{(\mathrm{os})}=1-M_W^2/M_Z^2\approx0.2232$ rather than 0.2226 in (9.3.22); add a dated-values callout and recompute $u$ and (9.3.21).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/09 Unified Theories/9.4 Nucleon Decay.md
+- [Correctness] "Super-Kamiokande ... has a fiducial volume of $32{,}000\,\mathrm{m^3}$": 32 kt is the inner-detector volume; the standard fiducial volume is 22.5 kt ($22{,}500\,\mathrm{m^3}$) of the 50 kt tank.
+- [Correctness] The bound $8.2\times10^{33}$ yr for $p\to e^+\pi^0$ is superseded: Super-K (2020) gives $\tau/B>2.4\times10^{34}$ yr, so (9.4.14) is now more than 100 times below the limit; update the sentence and the "megaton-class detectors" remark (Hyper-Kamiokande and DUNE are under construction).
+- [Correctness] The physical-quantities table assigns $B$ to both baryon number and branching fraction; rename the branching fraction (e.g. $\mathcal{B}$) in the table and in the Fig. 9.5 caption.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/09 Unified Theories/9.5 The Baryon Number of the Universe.md
+- [Correctness] With the convention (9.5.9) $S_{ba}=S(a\to b)$, (9.5.10) $(SS^\dagger)_{aa}=\sum_i S_{ai}S^*_{ai}=\sum_i\lvert S(i\to a)\rvert^2$, whereas $\sum_i\lvert S(a\to i)\rvert^2$ is $(S^\dagger S)_{aa}$; relabel the first line (both equal 1, so the conclusion stands).
+- [Correctness] (9.5.1) is outdated: Planck CMB plus BBN give $\eta=n_B/n_\gamma=(6.1\pm0.04)\times10^{-10}$; add the current value next to the source range.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/09 Unified Theories/9.6 The Problem of Fermion Masses.md
+- [Correctness] Subtracting (9.6.4) from (9.6.3) gives $+\frac{3}{20n_f}+\frac{27}{20n_f}=+\frac{3}{2n_f}$, so (9.6.5) must read $+\frac{3}{2n_f}\ln(\alpha_1(\mu^2)/\alpha_u)$, not $-\frac{3}{2n_f}$; only the plus sign reproduces $m_b/m_\tau=e^{(4/7)\ln8-(1/4)\ln(65/40)}=2.91$, while the printed minus gives 3.70.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/91 Appendix A Notations and Conventions/A.1 Four-Vectors and Scalar Product.md
+- [Correctness] The letter $x$ denotes both the four-vector $x^\mu$ and its first spatial component in (A.1.1), and $x^2$ means the invariant (A.1.4) while $x^2$ with an index means a component; note this explicitly or write the spatial components as $x^1,x^2,x^3$ only.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/91 Appendix A Notations and Conventions/A.4 Dirac Equation and Dirac Spinors.md
+- [Correctness] Symbol clashes: $\lambda$ is the helicity label and also the Fierz matrix $\lambda_{ij}$ in (A.4.30), and $\mu$ is a helicity label in (A.4.7)–(A.4.9) as well as a Lorentz index; use e.g. $\lambda,\lambda'$ for helicities and $C_{ij}$ for the Fierz coefficients.
+- [Correctness] The physical-quantities table lists $\mechanical{s}$ twice (as "spin state" and as polarization four-vector); merge into one row for the polarization four-vector.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/91 Appendix A Notations and Conventions/A.5 Color Algebra.md
+- [Correctness] (A.5.19): with $[T^b,T^c]=if^{bcd}T^d$ and $f^{abc}f^{dbc}=N\delta^{ad}$, $if^{abc}T^bT^c=\tfrac{i}{2}f^{abc}[T^b,T^c]=-\tfrac{N}{2}T^a$, not $+\tfrac{C_A}{2}T^a$; either correct the sign or state that the vertex factor is taken as $-if^{abc}$ in this diagram.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/92 Appendix B Observables and Feynman Rules/B.1 Phase-Space Formulas -  Decay Rates and Cross Sections.md
+- [Correctness] (B.1.4) must read $d\Gamma/d\Omega_{\mathrm{cm}}=\lvert\mathcal M\rvert^2 S_{12}/(64\pi^2 m_\alpha^3)\cdot S$ (equivalently $\lvert\mathcal M\rvert^2\lvert\mathbf p\rvert/(32\pi^2m_\alpha^2)$); with $m_\alpha^2$ the right side has dimension $\mathrm{GeV}^2$ instead of GeV.
+- [Correctness] $S$ denotes the statistical weight and $S_{12},S_{34}$ the kinematic factor; rename one (e.g. $\lambda^{1/2}_{12}$ for the kinematic factor) to avoid the clash.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/92 Appendix B Observables and Feynman Rules/B.2 Feynman Rules -  Generalities.md
+- [Correctness] $\epsilon$ is used for the polarization vector and for the $+i\epsilon$ prescription in the propagators; write the infinitesimal as $i0^+$ or $i\eta$.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/92 Appendix B Observables and Feynman Rules/B.3 Feynman Integrals.md
+- [Correctness] Wick rotation gives $\mathcal I_{mn}=(-1)^{n-m+1}B(m,n-m)/[16\pi^2 i(a^2)^{n-m}]$; the printed form without the sign factor is right for $n-m$ odd (e.g. $m=2,n=3$: $-i/(32\pi^2a^2)$) but wrong for $n-m$ even (e.g. $m=2,n=4$ gives $+i/(96\pi^2a^4)$, not $-i/(96\pi^2a^4)$).
+- [Correctness] $m$ is both a mass ($m_j$, $m_k$ in (B.3.2)) and the power index in (B.3.12) and (B.3.17), and $\lambda$ here is a Schwinger parameter; rename the index (e.g. $r$) to avoid the clash.
+

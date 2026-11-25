@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Cylinder condition and radion assumptions"
 document_type: "Self-contained study chapter"
 ---
@@ -15,7 +15,7 @@ Use natural units: the speed of light and reduced Planck constant are one. Greek
 
 ### Fifteen independent metric functions %% Video 00:50:40–00:54:20 %%
 
-A general symmetric five-dimensional metric is a matrix of functions $\widetilde g_{AB}(\mechanical{t},\mechanical{x},\mechanical{y},\mechanical{z},\mechanical{\theta})$. A symmetric five-by-five matrix has
+A general symmetric five-dimensional metric is a matrix of functions $\widetilde g_{AB}(\mechanical{x}^\mu,\mechanical{\theta})$. A symmetric five-by-five matrix has
 
 $$
 \frac{5(5+1)}2=15
@@ -147,15 +147,12 @@ The units below use the collection's natural-unit convention. Explicit SI formul
 
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
-| $\mechanical{x},\;\mechanical{y}$ | $\unit{GeV^{-1}}$ | Coordinates | Length-valued base, embedding, or compact coordinates used in this chapter. |
+| $\mechanical{x},\;\mechanical{x}^\mu,\;\mechanical{y}$ | $\unit{GeV^{-1}}$ | Coordinates | Ordinary spacetime coordinates and the compact length coordinate. |
 | $\mechanical{r}$ | $\unit{GeV^{-1}}$ | Reference circle radius | Radius encoded in the periodic coordinate identification. |
-| $\widetilde g_{AB}$ | $1$ | Metric fields | Metric coefficients for length-valued coordinates; an angular coefficient instead carries the required length factors. |
 | $\mechanical{\Phi}$ | $1$ | Radion | Ratio of the physical circular radius to the reference radius. |
 | $\energy{E}_{\mathrm{KK}}$ | $\unit{GeV}$ | Energies | Excitation scale, wave energy, or first-mode rest energy. |
 | $\energy{\hbar}$ | $1$ | Reduced Planck constant | Set to one in natural units; restored explicitly in SI formulas. |
 | $\mechanical{c}$ | $1$ | Speed of light | Set to one in natural units; restored explicitly in SI formulas. |
-| $\mechanical{t}$ | $\unit{GeV^{-1}}$ | Time | Time coordinate in the angular formulation’s natural units. |
-| $\mechanical{z}$ | $\unit{GeV^{-1}}$ | Spatial coordinate | Third ordinary spatial coordinate. |
-| $\mechanical{\theta}$ | $1$ | Circular angle | Compact circular angle; the spherical-coordinate inset identifies its separate polar-angle use. |
+| $\mechanical{\theta}$ | $1$ | Circular angle | Compact circular angle with period two pi. |
 | $\mechanical{\Phi}_{\mathrm{ang}}$ | $\unit{GeV^{-2}}$ | Angular squared radius | Squared physical radius; distinct from the dimensionless radius ratio in the length-coordinate formulation. |
-| $\widetilde g_{AB}$ | — | Five-dimensional metric | Component units depend on the length-valued base coordinates and dimensionless angular coordinate. |
+| $\widetilde g_{AB}$ | — | Five-dimensional metric | Entries for length-valued coordinates are dimensionless; the angular entry carries units of length squared. |

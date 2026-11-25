@@ -15,7 +15,7 @@ Use this list to trace the chapter's treatment of EPR completeness, entangled st
 4. C. S. Unnikrishnan, *Gravity's Time* (Jenny Stanford Publishing, Singapore, 2022).
 5. A. Einstein, B. Podolsky, N. Rosen, Can quantum mechanical description of physical reality be considered complete? Phys. Rev. **47**, 777–780 (1935).
 6. A. Schilpp (ed.), *Albert Einstein: Philosopher-Scientist* (MJF Books, New York, 1949).
-7. A. Einstein letter to Schrödinger, June 1935, quoted in D. Howard, Stud. Hist. Phil. Set. **16**, 171–201 (1985).
+7. A. Einstein letter to Schrödinger, June 1935, quoted in D. Howard, Stud. Hist. Phil. Sci. **16**, 171–201 (1985).
 8. A. Einstein, Quantum mechanics and reality (in German). Dialectica **2**, 320–324 (1948).
 9. E. Schrödinger, Discussion of probability relations between separated systems. Math. Proc. Cambridge Philos. Soc. **31**, 555–563 (1935).
 10. J. von Neumann, *The Mathematical Foundations of Quantum Mechanics* (Princeton University Press, 1955).

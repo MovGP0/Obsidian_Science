@@ -346,9 +346,13 @@ Kyle Kabasares, *Radiative Transfer in Astrophysics (Physics 240C, UC Irvine 201
 | $\energy{L}$ | $\unit{erg\cdot s^{-1}}$ | Luminosity | Total radiant energy emitted per unit time. |
 | $\energy{E}$ | $\unit{erg}$ | Radiant energy | Energy emitted by the source. |
 | $t$ | $\unit{s}$ | Time | Elapsed time used to define the emission rate. |
-| $\mechanical{n}$ | $\unit{cm^{-3}}$ | Number density | Number of absorbers per unit volume. |
+| $\mechanical{n}(\energy{E})$ | $\unit{cm^{-3}\cdot erg^{-1}}$ | Photon number density per unit energy | Number of photons per unit volume and per unit photon energy. |
 | $\mechanical{\sigma}_{\mathrm{T}}$ | $\unit{cm^2}$ | Thomson cross section | Ratio of total scattered power to incident energy flux. |
 | $\energy{S}$ | $\unit{erg\cdot s^{-1}\cdot cm^{-2}}$ | Incident energy flux | Electromagnetic energy incident per unit time and area. |
 | $\energy{U}$ | $\unit{erg\cdot cm^{-3}}$ | Radiation energy density | Electromagnetic energy per unit volume in Gaussian CGS. |
-| $y$ | $1$ | Compton parameter | Mean fractional energy change per scattering times the mean scattering count, using the convention in this section. |
-| $b$ | $\unit{cm\,s^{-1}}$ | Doppler parameter | Thermal speed scale for the line profile. |
+| $x$ | $1$ | Dimensionless photon energy | Photon energy in the electron rest frame divided by $\mechanical{m}_e c^2$. |
+| $\gamma$, $\beta$ | $1$ | Lorentz factor and speed ratio | Electron Lorentz factor and $\beta=\mechanical{v}/c$ for the boost between frames. |
+| $\theta$ | $\unit{rad}$ | Direction angle | Angle between the particle or photon direction and the boost direction. |
+| $\energy{E}_\gamma^i$, $\energy{E}_\gamma^f$ | $\unit{erg}$ | Incident and scattered photon energies | Photon energies before and after scattering in the laboratory frame. |
+| $\energy{U}_\gamma$ | $\unit{erg\cdot cm^{-3}}$ | Photon energy density | Energy density of the incident isotropic radiation field in the laboratory frame. |
+| $\energy{L}_{\mathrm{IC}}$ | $\unit{erg\cdot s^{-1}}$ | Net inverse Compton power | Net power transferred from one electron to the radiation field. |

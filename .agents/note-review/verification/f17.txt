@@ -1,0 +1,69 @@
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.07.02 Calculation of the Propagator.md
+- FIXED | (4.43)/(4.44) integrate over d^3k with p integrand | Changed all four measures to d^3p, removed the source-label sentence, and dropped k from the table.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.07.03 Momentum Representation.md
+- FIXED | (4.47) integrates over d^4k with p integrand | Changed the measure to d^4p, removed the source-label sentence, and dropped k from the table.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.08.04 The CPT Theorem.md
+- FIXED | (4.59) omits the spinor matrix | Verified T gamma^0 C = i gamma^0 gamma^5 numerically; (4.59) now reads eta i gamma^0 gamma^5 psibar^T(-x) = -eta i gamma^5 psi^*(-x); both callouts replaced by one short derivation sentence; phase row updated.
+- FIXED | Tensor row checkmarks instead of signs | Replaced by P (-1)^mu(-1)^nu, T -(-1)^mu(-1)^nu, CP -(-1)^mu(-1)^nu; replaced the checkmark callout by the definition of (-1)^mu and removed the related sentence in the closing paragraph.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.09.02 Fierz Identities.md
+- FIXED | (4.61) compact sum has wrong axial/pseudoscalar signs and no 1/2 for sigma | Verified the standard scalar Fierz identity numerically and displayed it as (4.61) with the minus-sign rule for anticommuting fields; removed the caveat callout and updated the diagnostic sentence.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.12 Examples of Trace Calculations.md
+- FIXED | (4.89) wrong sign | (4.89) now gives -4i eps^{alpha mu beta nu} p_alpha p'_beta = +4i eps^{alpha beta mu nu} p_alpha p'_beta; removed the callout and updated the intro sentence.
+- FIXED | Example 4.8 ansatz phase inconsistent with (4.93)-(4.94) | Dropped the phase from the ansatz so (4.93)-(4.94) are consistent, removed the inconsistency callout (the example title already names the Dirac equation), and stated the shifted ansatz explicitly in the remaining callout.
+- FIXED | q and k symbol clashes in (4.89) and (4.90) | Renamed q to p' in (4.89), integrated (4.90) over d^3p, removed the k-mismatch sentence and the k table row, and updated the p row.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.14 Connection to Quantum Electrodynamics.md
+- FIXED | Photon propagator reuses S_F^gamma | Renamed it to D~_{F mu nu} in the Fig. 4.1 caption and the table.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.18 Exercises/04.18.03 Fermion Fock number.md
+- FIXED | Table lists n instead of the operator n-hat | Table row now lists n-hat as the mode number operator with eigenvalues zero and one.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.04.03 Canonical Commutation Relations.md
+- FIXED | [A^i,pi^j] sign inconsistent with pi^i = -Adot^i | Verified pi^i is conjugate to A_i; (5.11) now displays -i delta_T^{ij}; the callout records the printed +i form; adjusted the closing sentence.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.04.04 Hamiltonian Operator and Structure of Fock Space.md
+- FIXED | p^2 = k^mu k_mu mixes p and k | Wrote k^2 = k^mu k_mu = 0 and removed p from the table row.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.03.01 Definition.md
+- PARTLY | calligraphic T used for time ordering and transition operator | Clash confirmed; renamed the transition operator to T-hat in this note and added a sentence on time ordering; 06.03.02 General Properties is not in this batch and still uses calligraphic T for the transition operator, so it needs the same rename.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.06.03 Formula for Scalar Fields.md
+- FIXED | LSZ phases should follow chapter convention | Main formula now uses e^{-ip_j x_j} for incoming and e^{+ip'_k y_k} for outgoing; the callout records the source phases.
+- FIXED | Momentum-space i M uses the full Green function | Displayed formula now uses the connected G~_c^{(n+m)}; the callout records the source form; the table row includes G~_c.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.08.03 Decay Width.md
+- FIXED | n used for last particle and for identical-set size | Changed the identical-particle factor to 1/k! for each set of k identical final particles.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.10 Examples.md
+- FIXED | Yukawa density has +mu^2/2 phi^2 | Displayed -mu^2/2 phi^2; the first callout records the source sign; the second callout reworded to match.
+- FIXED | m is scalar mass in 6.8 and fermion mass in 6.9 | Renamed the Yukawa fermion mass to M and split the table row into scalar masses (6.8) and Yukawa masses M, mu (6.9).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.12 Exercises/06.12.10 Symmetry factor of the disconnected double figure eight.md
+- FIXED | S used for Dyson term and symmetry factor | Renamed the Dyson term to calligraphic S^{(2)} and added it to the quantity table.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.06.02 Annihilation - e⁺e⁻ → μ⁺μ⁻.md
+- FIXED | (7.4) last term misprinted | Displayed +g^{mu sigma}g^{nu rho} in (7.4) and moved the misprint to the callout.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.09.02 Counting Divergences.md
+- FIXED | Table omits E_gamma=1, E_gamma=3 and vacuum graphs with D>=0 | Verified D=3, D=1, D=4; added three rows (vacuum energy cancels; one- and three-photon amplitudes vanish by Lorentz invariance or Furry's theorem) and changed "The source lists" to "The cases are".
+- FIXED | delta m in table but not used | Wrote delta m proportional to m ln(Lambda/m) in the chiral-symmetry sentence.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.09.04 The Vertex Correction.md
+- FIXED | Caption says vertex divergence renormalizes charge | Caption now says the vertex constant equals the electron field constant by the Ward identity, so charge is renormalized only by vacuum polarization.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.15 Exercises/07.15.08 Electron–muon scattering amplitude.md
+- FIXED | mu used as muon label and Lorentz index | Renamed muon spinors to u_{(mu)} and the muon tensor to L^{(mu)}_{mu nu} (also in the table) and added a sentence that (mu) is the species label.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.01.01 Global and Local Gauge Invariance.md
+- FIXED | Q_e = -abs(e) does not follow from quantization with e>0 | Text now derives J^mu = e psibar gamma^mu psi, says psi quanta carry charge e, and sets e = -abs(e) for the electron; a callout records the source claim; table updated and A_mu, J^mu, L_int rows added.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.09 Bremsstrahlung.md
+- REJECTED | p, p', k not used in the figure | The Fig. 8.6 SVG labels the legs e⁻(p), e⁻(p′) and γ(k), so the table row is correct.
+- FIXED | Photon energy colored signal instead of energy | Changed all signal{omega} to energy{omega} and renamed the table row to photon energies.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.11.01 Nature of the Infrared Problem.md
+- FIXED | Measure d^4k with l integrand | Changed the measure to d^4l, removed the explaining sentence from the callout, and dropped k from the table.

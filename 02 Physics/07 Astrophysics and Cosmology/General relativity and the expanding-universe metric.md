@@ -11,7 +11,7 @@ title: "General relativity and the expanding-universe metric"
 
 Kaplinghat trained as a particle physicist and joked about finding it boring. The opening questions include how a black hole could already have a mass of about $10^9\,\mechanical{M}_{\odot}$ at redshift $z=7$. The course will focus on the expansion of the universe. Variability in active galactic nuclei (AGN) may serve as a tool for cosmology. Ryden is recommended as a supplementary text, alongside papers assigned for reading.
 
-The core Big Bang cosmology topics are the basics of the expanding universe, the cosmic microwave background (annotated at an age of about $300{,}000$ years), and nucleosynthesis (annotated with the early timescale of about $\quantity{1}{s}$). Possible additional topics are future cosmological probes such as weak lensing, the Boltzmann equations, inflation as a separate extension to the Big Bang framework, and reionization.
+The core Big Bang cosmology topics are the basics of the expanding universe, the cosmic microwave background (annotated at an age of about $300{,}000$ years; current estimates give about $380{,}000$ years for its release), and nucleosynthesis (annotated with the early timescale of about $\quantity{1}{s}$). Possible additional topics are future cosmological probes such as weak lensing, the Boltzmann equations, inflation as a separate extension to the Big Bang framework, and reionization.
 
 Growth of perturbations and galaxy formation are further possible topics. The main tools are the Boltzmann equation and general relativity. Prerequisites include metrics, four-vectors, and special relativity.
 
@@ -21,10 +21,10 @@ Homework and classwork count for two-thirds of the grade, and the final exam cou
 
 ![[Kyle Kabasares - Cosmology - Scale factor through radiation and matter domination.png|**Fig. 1** Cosmic scale factor $a$ and temperature $\thermal{T}$ versus cosmic time $t$. The figure marks the regimes $a\propto t^{1/2}$ during radiation domination and $a\propto t^{2/3}$ during matter domination, with $a=1$ today.]]
 
-The Hubble parameter is $H(t)=\dot a(t)/a(t)$. In the spatially flat, matter-dominated case, $a=kt^{2/3}$ for a constant $k$, and
+The Hubble parameter is $H(t)=\dot a(t)/a(t)$. In the spatially flat, matter-dominated case, $a=Ct^{2/3}$ for a constant $C$, and
 
 $$
-\dot a=\tfrac23kt^{-1/3},\qquad H(t)=\frac{\tfrac23kt^{-1/3}}{kt^{2/3}}=\frac{2}{3t}.
+\dot a=\tfrac23Ct^{-1/3},\qquad H(t)=\frac{\tfrac23Ct^{-1/3}}{Ct^{2/3}}=\frac{2}{3t}.
 $$
 
 The Friedmann equation in the notes uses units with $\mechanical{c}=1$ and the normalization $a(t_0)=1$.
@@ -46,7 +46,7 @@ H_0=\quantity{100h}{km\,s^{-1}\,Mpc^{-1}}
 \approx\frac{\quantity{2.133\times10^{-33}h}{eV}}{\hbar}.
 $$
 
-The lecture notes quote $h=0.72\pm0.08$. They give the critical density in mass-equivalent units as $\energy{\rho}_{\mathrm{cr}}=\quantity{1.88h^2\times10^{-29}}{g\,cm^{-3}}$. If the particle scattering rate exceeds the expansion rate, interactions can keep the particles in equilibrium.
+The lecture notes quote $h=0.72\pm0.08$, the 2001 Hubble Space Telescope Key Project value. Planck 2018 gives $h=0.674\pm0.005$, and distance-ladder measurements give $h\approx0.73$. This difference is the Hubble tension. They give the critical density in mass-equivalent units as $\energy{\rho}_{\mathrm{cr}}=\quantity{1.88h^2\times10^{-29}}{g\,cm^{-3}}$. If the particle scattering rate exceeds the expansion rate, interactions can keep the particles in equilibrium.
 
 ##### General relativity
 
@@ -170,7 +170,7 @@ $$
 ds^2=-dt^2+a^2(t)\bigl(d\mechanical{x}^2+d\mechanical{y}^2+d\mechanical{z}^2\bigr).
 $$
 
-The scale factor multiplies every physical separation between fixed comoving points. The notes contrast this with a spherically symmetric inhomogeneous form $ds^2=-dt^2+A^2(t,\mechanical{r})\,d\mechanical{r}^2+B^2(\mechanical{r},t)\,d\Omega^2$, using $A,B$ for the radial metric coefficients and $d\Omega^2=d\theta^2+\sin^2\theta\,d\phi^2$.
+The scale factor multiplies every physical separation between fixed comoving points. The notes contrast this with a spherically symmetric inhomogeneous form $ds^2=-dt^2+A^2(t,\mechanical{r})\,d\mechanical{r}^2+B^2(\mechanical{r},t)\,d\Omega^2$, using $A$ for the radial metric coefficient, $B$ for the angular metric coefficient, and $d\Omega^2=d\theta^2+\sin^2\theta\,d\phi^2$.
 
 ![[Kyle Kabasares - Cosmology - Comoving point separation.png|**Fig. 3** Two fixed comoving points. The physical separation projected along the $x$ axis is $a(t)(\mechanical{x}_2-\mechanical{x}_1)$.]]
 
@@ -297,12 +297,5 @@ Kyle Kabasares, *Cosmology (Physics 240B, UC Irvine 2018)*.
 | $\mechanical{v}$ | $\unit{m\,s^{-1}}$ | Radial speed | Rate of change of radial position in the chosen inertial frame. It is expressed in units of the speed of light in $\gamma$. |
 | $\gamma$ | $1$ | Lorentz factor | Ratio of coordinate time to proper time for inertial motion. |
 | $\mechanical{F}$, $\mechanical{m}$, $\mechanical{a}$ | $\unit{N}$, $\unit{kg}$, $\unit{m\,s^{-2}}$ | Force, mass and acceleration | Quantities in Newton's second law. The acceleration here is distinct from the cosmological scale factor $a$. |
-| $A$ | $\unit{m}$ | Comoving curvature radius | Radius of the embedded three-sphere before multiplication by the scale factor. |
-| $k$ | $\unit{m^{-2}}$ | Spatial curvature parameter | Units apply when $r$ has dimensions of length and $a$ is dimensionless. |
-| $V$ | $\unit{m^3}$ | Proper spatial volume | A shell is evaluated at a fixed cosmic time. |
-| $\phi$ | $\unit{GeV}$ | Homogeneous scalar field | Field amplitude expressed in energy units with $\hbar=\mechanical{c}=1$. |
-| $\eta$ | $\unit{s}$ | Conformal time | Defined by $d\eta=dt/a$. The product $\mechanical{c}\eta$ has units of comoving distance. |
-| $\ell$, $C_\ell$ | $1$ | Angular multipole and temperature angular power | Here $C_\ell$ is for fractional temperature fluctuations. Higher $\ell$ corresponds to smaller angular scales. |
-| $\vec k$, $k$ | $\unit{m^{-1}}$ | Comoving wavevector and wavenumber | The wavevector labels a spatial Fourier mode. The magnitude is distinct from the curvature index $k$. |
-| $\mu$ | $1$ | Direction cosine for a photon Fourier mode | Dot product of the photon direction with the wavevector direction. |
-| $\delta$ | $1$ | Density contrast | Ratio of a first-order density perturbation to the homogeneous background. For nonrelativistic matter of fixed particle mass, the number and mass density contrasts agree. |
+| $A$, $B$ | $1$, $\unit{m}$ | Inhomogeneous metric coefficients | Coefficients of $d\mechanical{r}^2$ and $d\Omega^2$ in the spherically symmetric inhomogeneous line element. |
+| $C$ | $\unit{s^{-2/3}}$ | Matter-era scale-factor constant | Constant in $a=Ct^{2/3}$ for the flat, matter-dominated model. |

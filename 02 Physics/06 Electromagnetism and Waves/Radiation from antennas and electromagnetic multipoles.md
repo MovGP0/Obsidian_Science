@@ -39,7 +39,7 @@ in the radial approximation. This gives the outgoing radial factor $e^{ik\mechan
 
 ##### Radiated power
 
-Power $\energy{P}$ is the rate at which radiation carries energy away. Its angular distribution is $d\energy{P}/d\Omega$. One can also resolve the power by angular frequency, $d^2\energy{P}/(d\Omega\,d\omega)$, which the page labels $\energy{I}$ and calls “fluence.”
+Power $\energy{P}$ is the rate at which radiation carries energy away. Its angular distribution is $d\energy{P}/d\Omega$. One can also resolve the power by angular frequency, $d^2\energy{P}/(d\Omega\,d\omega)$, which the page labels $\energy{I}$ and calls “fluence.” This name is not correct, because fluence is energy per unit area. For a pulse, Jackson’s spectral quantity $d^2\energy{I}/(d\omega\,d\Omega)$ is the energy radiated per unit solid angle per unit angular-frequency interval, in $\unit{J\,s\,sr^{-1}}$, and is not a power.
 
 ![[Kyle Kabasares - Electrodynamics - Poynting flux through a sphere.png|**Fig. 120** Integrate the outward Poynting flux over a sphere surrounding the source.]]
 
@@ -154,7 +154,7 @@ Compute $\magnetic{\mathbf H}=(\nabla\times\magnetic{\mathbf A})/\magnetic{\mu}_
 
 ![[Kyle Kabasares - Electrodynamics - Harmonic current and antenna end charges.png|**Fig. 124** The end charges build up as the harmonic current flows along the segment.]]
 
-For charges $\pm\electric{Q}(t)$ separated by $\mechanical{L}$, $d\electric{Q}/dt=\circuit{I}_0e^{-i\omega t}$. Thus the oscillating charge is $\electric{Q}(t)=\circuit{I}_0e^{-i\omega t}/(-i\omega)$ and the dipole amplitude is $\electric{\mathbf p}_\omega=(\circuit{I}_0\mechanical{L}/(-i\omega))\hat{\mathbf x}$ for a segment along $\hat{\mathbf x}$. The example gives
+For charges $\pm\electric{q}(t)$ separated by $\mechanical{L}$, $d\electric{q}/dt=\circuit{I}_0e^{-i\omega t}$. Thus the oscillating charge is $\electric{q}(t)=\circuit{I}_0e^{-i\omega t}/(-i\omega)$ and the dipole amplitude is $\electric{\mathbf p}_\omega=(\circuit{I}_0\mechanical{L}/(-i\omega))\hat{\mathbf x}$ for a segment along $\hat{\mathbf x}$. The example gives
 
 $$
 \frac{d\langle\energy{P}\rangle}{d\Omega}
@@ -262,7 +262,7 @@ Two opposing collinear segments can cancel both moments. Their electric dipoles 
 
 ##### Electric quadrupole radiation
 
-When both dipoles vanish, the electric quadrupole can contribute. The example combines charges $-\electric{Q}$ at $\mechanical{z}=\pm\mechanical{d}/2$ with $2\electric{Q}$ at the origin. The oscillating charge gives a time-dependent quadrupole moment.
+When both dipoles vanish, the electric quadrupole can contribute. The example combines charges $-\electric{q}$ at $\mechanical{z}=\pm\mechanical{d}/2$ with $2\electric{q}$ at the origin. The oscillating charge gives a time-dependent quadrupole moment.
 
 ![[Kyle Kabasares - Electrodynamics - Charge layout of an electric quadrupole.png|**Fig. 130** Two like end charges and two opposite charges combined at the center.]]
 
@@ -276,8 +276,8 @@ $$
 Replace the integral by a sum over the point charges. The $\mechanical{x}$ coordinates are zero, and the center charge contributes zero. The end charges give
 
 $$
-\electric{Q}_{xx}=2(-\electric{Q})\left[-\frac13\left(\frac{\mechanical{d}}2\right)^2\right]
-=\frac{2\electric{Q}}3\left(\frac{\mechanical{d}}2\right)^2.
+\electric{Q}_{xx}=2(-\electric{q})\left[-\frac13\left(\frac{\mechanical{d}}2\right)^2\right]
+=\frac{2\electric{q}}3\left(\frac{\mechanical{d}}2\right)^2.
 $$
 
 By axial symmetry, $\electric{Q}_{yy}=\electric{Q}_{xx}$. Tracelessness gives $\electric{Q}_{zz}=-2\electric{Q}_{xx}$. The page cites Jackson Eq. 9.45 for the angular power. With $\electric{\mathbf Q}_{\mathrm J}=3\electric{\mathbf Q}$ to convert the trace-subtracted tensor on page 95 to the convention with a factor of three, write
@@ -335,9 +335,29 @@ Kyle Kabasares, *Electrodynamics (Physics 213A, UC Irvine 2018)*.
 
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
-| $\mechanical{L}$ | $\unit{m}$ | Gaussian cylinder length | Axial extent of the cylinder chosen for the flux integral. |
-| $\mechanical{d}$ | $\unit{m}$ | Plate separation | Distance between the two parallel planes. |
-| $\circuit{I}$ | $\unit{A}$ | Electric current | Charge flowing per unit time through a cross section. |
+| $\mechanical{L}$ | $\unit{m}$ | Antenna length | The length of the straight antenna, and the separation of the end charges $\pm\electric{q}$. |
+| $\mechanical{d}$ | $\unit{m}$ | Tapered antenna length | The length of the tapered antenna, and the charge spacing in the quadrupole example. |
+| $\mechanical{\mathbf x}$, $\mechanical{\mathbf x}'$, $\mechanical{x}$, $\mechanical{y}$, $\mechanical{z}$ | $\unit{m}$ | Position | The observation point, the source point, and their Cartesian coordinates. |
+| $\mechanical{r}$, $\mechanical{r}'$ | $\unit{m}$ | Radial distance | The distance from the origin to the observation point or to the source point. |
+| $s$ | $\unit{m}$ | Source distance | The distance $\lvert\mechanical{\mathbf x}-\mechanical{\mathbf x}'\rvert$ from the source point to the observation point. |
+| $\theta$ | $\unit{rad}$ | Polar angle | The angle between the observation direction and the dipole axis. |
+| $\mechanical{a}$ | $\unit{m^2}$ | Loop area | The area of the planar current loop. |
+| $t$, $t'$ | $\unit{s}$ | Time and retarded time | The observation time and the source time. |
+| $c$ | $\unit{m\,s^{-1}}$ | Speed of light in vacuum | The propagation speed of the radiation. |
+| $k$ | $\unit{rad\,m^{-1}}$ | Wave number | The ratio $\omega/c$. |
+| $\electric{\phi}$ | $\unit{V}$ | Scalar potential | The retarded electric scalar potential. |
+| $\magnetic{\mathbf A}$ | $\unit{T\,m}$ | Vector potential | The retarded magnetic vector potential. |
+| $\electric{\mathbf E}$ | $\unit{V\,m^{-1}}$ | Electric field | The radiated electric field. |
+| $\magnetic{\mathbf H}$ | $\unit{A\,m^{-1}}$ | Magnetic field | The radiated magnetic field. |
+| $\electric{\rho}$, $\electric{\rho}_\omega$ | $\unit{C\,m^{-3}}$ | Charge density | The source charge density and its harmonic amplitude. |
+| $\circuit{\mathbf J}$, $\circuit{\mathbf J}_\omega$, $\circuit{J}_z$ | $\unit{A\,m^{-2}}$ | Current density | The source current density, its harmonic amplitude, and its axial component. |
+| $\electric{\varepsilon}_0$ | $\unit{F\,m^{-1}}$ | Vacuum permittivity | The electric constant. |
+| $\magnetic{\mu}_0$ | $\unit{H\,m^{-1}}$ | Vacuum permeability | The magnetic constant. |
+| $\electric{q}$ | $\unit{C}$ | Point charge | The oscillating end charge of the antenna, or the point charge in the quadrupole example. |
+| $\electric{\mathbf p}$, $\electric{\mathbf p}_\omega$, $\electric{p}_z$, $\electric{p}_0$ | $\unit{C\,m}$ | Electric dipole moment | The dipole moment, its harmonic amplitude, its axial component, and the magnitude of the rotating dipole. |
+| $\magnetic{\mathbf m}$, $\magnetic{\mathbf m}_\omega$ | $\unit{A\,m^2}$ | Magnetic dipole moment | The moment of the current loop and its harmonic amplitude. |
+| $\electric{Q}_{ab}$, $\electric{\mathbf Q}$, $\electric{\mathbf Q}_{\mathrm J}$ | $\unit{C\,m^2}$ | Electric quadrupole moment | The traceless quadrupole tensor and the tensor in Jackson’s convention. |
+| $\circuit{I}$, $\circuit{I}_0$ | $\unit{A}$ | Electric current | Charge flowing per unit time through a cross section, and its amplitude. |
 | $\omega$ | $\unit{rad\,s^{-1}}$ | Angular frequency | Rate of change of phase in time in magnitude. |
 | $\energy{P}$ | $\unit{W}$ | Radiated power | Rate of outward energy flow through a surface surrounding the source. |
 | $\circuit{Z}_0$ | $\unit{\Omega}$ | Vacuum wave impedance | Ratio of transverse electric to magnetic field-strength amplitudes in an outgoing wave. |

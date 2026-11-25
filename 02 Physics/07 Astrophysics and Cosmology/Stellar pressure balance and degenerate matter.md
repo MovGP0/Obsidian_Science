@@ -20,14 +20,14 @@ This is a polytropic relation of the form $\mechanical{P}\mechanical{V}^{\therma
 Approximate a star as a sphere of uniform density $\mechanical{\rho}$ out to radius $\mechanical{R}$. The source sketches the actual density dropping toward the outer edge and uses a sharp cutoff at $\mechanical{R}$ for the estimate. Build the star by adding shells. The interaction energy of a shell $d\mechanical{m}=4\pi\mechanical{r}^2\mechanical{\rho}\,d\mechanical{r}$ with the interior mass $\mechanical{M}(\mechanical{r})=4\pi\mechanical{\rho}\mechanical{r}^3/3$ is
 
 $$
-d\energy{V}_g=-\frac{\mechanical{G}\mechanical{M}(\mechanical{r})\,d\mechanical{m}}{\mechanical{r}}.
+d\energy{E}_{\mathrm{grav}}=-\frac{\mechanical{G}\mechanical{M}(\mechanical{r})\,d\mechanical{m}}{\mechanical{r}}.
 $$
 
 The total mass is fixed at $\mechanical{M}=N\mechanical{m}_N=4\pi\mechanical{\rho}\mechanical{R}^3/3$, where $N$ counts nucleons. Thus
 
 $$
 \begin{aligned}
-\energy{V}_g
+\energy{E}_{\mathrm{grav}}
 &=-\frac{\mechanical{G}(4\pi)^2\mechanical{\rho}^2}{3}\int_0^{\mechanical{R}}\mechanical{r}^4\,d\mechanical{r}\\
 &=-\frac{3\mechanical{G}\mechanical{M}^2}{5\mechanical{R}}
 =-\frac35\left(\frac{4\pi}{3}\right)^{1/3}\mechanical{G}(N\mechanical{m}_N)^2\mechanical{V}^{-1/3}.
@@ -38,7 +38,7 @@ The effective gravitational pressure and nonrelativistic electron degeneracy pre
 
 $$
 \begin{aligned}
-\mechanical{P}_g&=-\left(\frac{\partial\energy{V}_g}{\partial\mechanical{V}}\right)_N
+\mechanical{P}_g&=-\left(\frac{\partial\energy{E}_{\mathrm{grav}}}{\partial\mechanical{V}}\right)_N
 =-\frac15\left(\frac{4\pi}{3}\right)^{1/3}\mechanical{G}(N\mechanical{m}_N)^2\mechanical{V}^{-4/3},\\
 \mechanical{P}_{\mathrm{deg}}&=\frac{(3\pi^2)^{2/3}\energy{\hbar}^2}{5\mechanical{m}_e}\left(\frac{N_e}{\mechanical{V}}\right)^{5/3}.
 \end{aligned}
@@ -163,30 +163,32 @@ Kyle Kabasares, *Thermodynamics and Statistical Mechanics (Chem 232A - Physics 2
 
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
-| $\mechanical{m}$ | $\unit{kg}$ | Mass | Inertial mass of a particle. |
-| $\energy{\hbar}$ | $\unit{J\,s}$ | Reduced Planck constant | Planck constant divided by $2\pi$. |
-| $N$ | 1 | Particle count | Number of atoms or molecules. |
-| $\thermal{k}_{\mathrm B}$ | $\unit{J\,K^{-1}}$ | Boltzmann constant | Relates absolute temperature to a microscopic energy scale. |
-| $\thermal{T}$ | $\unit{K}$ | Absolute temperature | Temperature of the system or reservoir. |
-| $\mechanical{\vec p}$ | $\unit{kg\,m\,s^{-1}}$ | Momentum | Particle momentum, which changes sign under time reversal. |
-| $\mechanical{V}$ | $\unit{m^3}$ | Volume | Spatial extent of a simple system. |
-| $\mechanical{P}$, $\mechanical{P}_{\mathrm{int}}$, $\mechanical{P}_{\mathrm{ext}}$ | $\unit{Pa}$ | Pressure | Force per unit area, including the internal and applied external pressure at the piston. |
-| $n$ | $\unit{mol}$ | Amount of substance | Number of moles in the gas. |
-| $\energy{E}$ | $\unit{J}$ | Energy | Microscopic energy that enters the Boltzmann weight. |
-| $n$ | $\unit{m^{-3}}$ | Number density | Particle count per unit volume. |
-| $\mechanical{c}$ | $\unit{m\,s^{-1}}$ | Speed of light | Propagation speed in the photon spectrum formula. |
-| $\signal{k}$ | $\unit{m^{-1}}$ | Wavenumber | Magnitude of the wavevector for a quantum state in the box. |
-| $g$ | 1 | Landé factor | Proportionality factor relating angular momentum and magnetic moment. |
-| $\energy{E}_{\mathrm F}$ | $\unit{J}$ or $\unit{eV}$ | Fermi energy | Zero-temperature energy at the edge of the filled one-particle states. |
-| $\mechanical{M}$ | $\unit{kg}$ | Molecular mass | Sum of the constituent particle masses. |
-| $\thermal{\gamma}$ | 1 | Adiabatic exponent | Heat-capacity ratio for the ideal gas when the heat capacities are constant. |
-| $g$ | 1 | Internal degeneracy | Number of internal states per momentum state. |
-| $\mechanical{p}_{\mathrm F}$ | $\unit{kg\,m\,s^{-1}}$ | Fermi momentum | Momentum magnitude at the boundary of the occupied states at zero temperature. |
-| $\mechanical{G}$ | $\unit{m^3\,kg^{-1}\,s^{-2}}$ | Gravitational constant | Sets the Newtonian gravitational interaction strength. |
+| $\mechanical{V}$ | $\unit{m^3}$ | Volume | Volume of the photon gas or of the star. |
+| $\thermal{T}$ | $\unit{K}$ | Absolute temperature | Temperature of the photon gas or of the electron gas. |
+| $\mechanical{P}$ | $\unit{Pa}$ | Pressure | Force per unit area. |
+| $\thermal{\gamma}$ | 1 | Polytropic exponent | Exponent in the polytropic relation $\mechanical{P}\mechanical{V}^{\thermal{\gamma}}=\text{constant}$. |
+| $\mechanical{\rho}$ | $\unit{kg\,m^{-3}}$ | Mass density | Uniform density of the model star. |
+| $\mechanical{r}$ | $\unit{m}$ | Radial coordinate | Radius of a shell inside the star. |
+| $d\mechanical{m}$ | $\unit{kg}$ | Shell mass | Mass of the shell added at radius $\mechanical{r}$. |
 | $\mechanical{M}$ | $\unit{kg}$ | Stellar mass | Mass interior to a shell or total mass, as indicated by the argument. |
 | $\mechanical{R}$ | $\unit{m}$ | Stellar radius | Outer cutoff in the uniform-density approximation. |
-| $\energy{V}_g$ | $\unit{J}$ | Gravitational potential energy | Binding energy contribution obtained by assembling spherical shells. |
+| $\mechanical{R}_{\mathrm{eq}}$ | $\unit{m}$ | Equilibrium radius | Radius at which gravitational and degeneracy pressures balance. |
+| $\mechanical{G}$ | $\unit{m^3\,kg^{-1}\,s^{-2}}$ | Gravitational constant | Sets the Newtonian gravitational interaction strength. |
+| $N$ | 1 | Nucleon number | Number of nucleons in the star. |
+| $N_e$ | 1 | Electron number | Number of electrons in the star. |
+| $\mechanical{m}_N$ | $\unit{kg}$ | Nucleon mass | Mass of one nucleon. |
+| $\mechanical{m}_e$ | $\unit{kg}$ | Electron mass | Mass of one electron. |
+| $\energy{E}_{\mathrm{grav}}$ | $\unit{J}$ | Gravitational potential energy | Binding energy obtained by assembling spherical shells. |
 | $\mechanical{P}_g$, $\mechanical{P}_{\mathrm{deg}}$ | $\unit{Pa}$ | Gravitational and degeneracy pressure | Effective inward pressure from binding and outward pressure of a degenerate gas. |
+| $\energy{\hbar}$ | $\unit{J\,s}$ | Reduced Planck constant | Planck constant divided by $2\pi$. |
 | $Y_e$ | $1$ | Electron fraction | Number of electrons per nucleon in fully ionized matter. |
-| $\signal{k}_F$ | $\unit{m^{-1}}$ | Fermi wave number | Radius of the occupied Fermi sphere in wavevector space. |
+| $\thermal{k}_{\mathrm B}$ | $\unit{J\,K^{-1}}$ | Boltzmann constant | Relates absolute temperature to a microscopic energy scale. |
+| $\energy{E}_{\mathrm F}$ | $\unit{J}$ or $\unit{eV}$ | Fermi energy | Zero-temperature energy at the edge of the filled one-particle states. |
+| $\energy{\epsilon}$ | $\unit{J}$ | Electron energy | Energy of one ultrarelativistic electron. |
+| $\mechanical{c}$ | $\unit{m\,s^{-1}}$ | Speed of light | Speed of light in vacuum. |
+| $\mechanical{\vec p}$ | $\unit{kg\,m\,s^{-1}}$ | Momentum | Momentum of one electron. |
+| $\mechanical{p}_{\mathrm F}$ | $\unit{kg\,m\,s^{-1}}$ | Fermi momentum | Momentum magnitude at the boundary of the occupied states at zero temperature. |
+| $\signal{\vec k}$, $\signal{k}_F$ | $\unit{m^{-1}}$ | Wavevector, Fermi wave number | Wavevector of an electron state, and radius of the occupied Fermi sphere in wavevector space. |
+| $\energy{E}_{\mathrm{Fermi}}$ | $\unit{J}$ | Total electron energy | Total kinetic energy of the degenerate ultrarelativistic electrons. |
+| $\energy{E}_{\mathrm{tot}}$ | $\unit{J}$ | Total energy | Sum of the gravitational and electron energies. |
 | $\mechanical{M}_\odot$ | $\unit{kg}$ | Solar mass | Reference unit for the white-dwarf critical mass. |

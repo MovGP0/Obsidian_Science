@@ -251,7 +251,7 @@ The agenda compares Monte Carlo integration with the trapezoidal rule, lists max
 
 ![[Kyle Kabasares - Mathematical Modeling - Target region inside a Monte Carlo sampling box.png|**Fig. 48** The shaded target region $A$ is inside the sampling box.]]
 
-For a target area $A$ inside a square of side $L$, use $m/N$ to estimate $A/L^2$. The mean square error has the form $K/N$ and the root mean square error scales as $N^{-1/2}$. The handwritten expectation omits the square, which is required by the calculation on [[#Trapezoidal rule|the section on Trapezoidal rule]].
+For a target area $A$ inside a square of side $L$, use $m/N$ to estimate $A/L^2$. The mean square error has the form $K/N$ and the root mean square error scales as $N^{-1/2}$. The handwritten expectation omits the square, which is required by the calculation on [[#Expected squared error|the section on Expected squared error]].
 
 For a unit disk inside a square of side $2$, the area fraction is $\pi/4$, so $\pi\approx 4m/N$.
 
@@ -305,9 +305,6 @@ Kyle Kabasares, *Mathematical Modeling (Math 150, UC Merced 2017)*.
 
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
-| $M$ | 1 | Carrying capacity | Population that the modeled resources can sustain at equilibrium. |
-| $K$ | 1 | Koala population | Number of koalas in the competition model. |
-| $y_i$ | 1 | Age-group population | Number of individuals in the indicated age band. |
-| $\lambda$ | $\unit{s^{-1}}$ | Lyapunov exponent | Exponential rate of growth or decay of a perturbation in time. |
-| $x$, $y$ | $\unit{oz}$ | Ingredient amounts | Onion soup and chicken stock per serving, respectively. |
-| $s$ | $\unit{g}$ | Protein surplus | Protein above the minimum required per serving. |
+| $x_i$ | $\unit{in}$ | Height | Observed height of person $i$ in the likelihood example. |
+| $\mu$ | $\unit{in}$ | Mean height | Mean parameter of the normal height model. |
+| $\sigma$ | $\unit{in}$ | Standard deviation of height | Spread parameter of the normal height model. |

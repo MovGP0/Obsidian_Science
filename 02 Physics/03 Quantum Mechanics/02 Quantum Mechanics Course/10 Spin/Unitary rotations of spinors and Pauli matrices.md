@@ -104,7 +104,7 @@ $$
 $$
 With $g=e^{-i\phi\widehat{\mathbf n}\cdot\boldsymbol\sigma/2}$, the transformation $g^\dagger(\mathbf r\cdot\boldsymbol\sigma)g$ gives the components of the passively rotated vector. For rotation about $z$ these are $x'=x\cos\phi+y\sin\phi$, $y'=-x\sin\phi+y\cos\phi$, and $z'=z$. A spinor column times a spinor row gives another example of a $2\times2$ matrix.
 
-A scalar is invariant under rotation. A Cartesian vector transforms as $\mathbf A\mapsto O\mathbf A$, where $O=e^{-i\phi\widehat{\mathbf n}\cdot\mathbf L}$ for the chosen Cartesian generators. A two-component spinor transforms under $g$. These are different representations of rotations.
+A scalar is invariant under rotation. A Cartesian vector transforms as $\mathbf A\mapsto O\mathbf A$, where $O=e^{-i\phi\widehat{\mathbf n}\cdot\boldsymbol{\mathcal J}}$ for the chosen dimensionless Cartesian $3\times3$ generators $\mathcal J_i$. A two-component spinor transforms under $g$. These are different representations of rotations.
 
 The hydrogen ground-state spatial wavefunction is radial. The excited multiplet $n=2,\ell=1$ has three basis states labeled by $m=1,0,-1$. At fixed $n,\ell=1$, a state is $\psi=C_1\psi_{n,1,1}+C_0\psi_{n,1,0}+C_{-1}\psi_{n,1,-1}$, and the coefficient column represents it in this basis. Each basis wavefunction is normalized. Spin can be included by combining the orbital states with the spinor basis columns.
 
@@ -150,9 +150,6 @@ Kyle Kabasares, *Quantum Mechanics II (Physics 215B, UC Irvine 2018)*.
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
 | $\hbar$ | $\unit{J\,s}$ | Reduced Planck constant | Planck constant divided by $2\pi$. |
-| $\mechanical{L}$ | $\unit{m}$ | Box side length | Periodic normalization length in each coordinate. |
-| $c$ | $\unit{m\,s^{-1}}$ | Speed of light | Vacuum light speed used in the time coordinate and Maxwell equations. |
-| $A$, $B$ | $\unit{s^{-1}}$ | Mode emission and absorption coefficients | Spontaneous rate and induced transition rate per photon for a single resonant mode. |
 | $\mechanical{\mathbf L}$, $\mechanical{L}_z$ | $\unit{J\,s}$ | Orbital angular momentum | Total orbital angular momentum and its projection on the $z$-axis. |
 | $\mechanical{\mathbf S}$, $\mechanical{S}_i$ | $\unit{J\,s}$ | Spin angular momentum | Intrinsic angular momentum and its Cartesian components. |
 | $\mechanical{\mathbf J}$, $\mechanical{J}_i$ | $\unit{J\,s}$ | Total angular momentum | Sum of orbital and spin angular momentum or of two subsystems' angular momenta. |

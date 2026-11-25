@@ -1,0 +1,57 @@
+=== 01 Mathematics/03 Linear Algebra/01 Vectors and Bases/05.08 Lines and planes.md
+- [Correctness] "See [[05.07 Linear combinations]] for the difference between a span through the origin and its translated copy" points to a note that never discusses translated copies; link [[10.01 Vector spaces]] (which mentions translated lines and affine sets) or drop the claim.
+
+=== 01 Mathematics/03 Linear Algebra/01 Vectors and Bases/Basis change.md
+- [Correctness] In "Basis change on Covector", ${e'}_j = B^i_j\ a_i$ uses an undefined $a_i$; it should read ${e'}_j = B^i_j\ e_i$.
+
+=== 01 Mathematics/03 Linear Algebra/01 Vectors and Bases/Cross product.md
+- [Correctness] The index form $c_i = ε_{ijk} \, a_i \, b_j$ is wrong (free index $i$ repeated, $k$ dangling); it must be $c_i=\varepsilon_{ijk}\,a_j\,b_k$.
+- [Correctness] "Determinant of two 3D vectors" is not a valid definition (a determinant needs three rows); say that $\mathbf a\times\mathbf b$ is the formal determinant with rows $(\mathbf e_x,\mathbf e_y,\mathbf e_z)$, $\mathbf a$, $\mathbf b$, i.e. its components are $2\times2$ minors.
+
+=== 01 Mathematics/03 Linear Algebra/01 Vectors and Bases/Scalar Product.md
+- [Correctness] $c_i = a_i\,b_i$ defines a vector (the component-wise product), not the scalar product; the dot product is $c=a_ib_i=\sum_i a_ib_i$ with no free index, and writing $c=a\,b$ without a dot clashes with the geometric product $ab$ in [[Vector product]].
+- [Correctness] The angle formula is restricted to "$\forall a,b\in\mathbb{R}^2$" although it holds in any $\mathbb R^n$ with an orthonormal basis; generalize it and require $a,b\neq0$ for the $\cos\gamma$ formula.
+
+=== 01 Mathematics/03 Linear Algebra/01 Vectors and Bases/Vector product.md
+- [Correctness] "with $xy = -xy$ and $xx = 1$" is wrong as written; it should be $e_xe_y=-e_ye_x$ (distinct basis vectors) and $e_xe_x=1$.
+- [Correctness] The bivector basis lines $e_z e_x = -(e_z e_x) = j$ and $e_y e_z = -(e_y e_z) = k$ assert $X=-X$; they should read $e_ze_x=-e_xe_z=j$ and $e_ye_z=-e_ze_y=k$.
+- [Correctness] The overbrace labels the bivector part "cross product"; it is the wedge product $a\wedge b$, whose components equal those of $a\times b$ only through the Hodge dual ($a\wedge b=I\,(a\times b)$ with $I=e_xe_ye_z$).
+
+=== 01 Mathematics/03 Linear Algebra/02 Matrices, Linear Maps, and Systems/LU factorization and matrix practice.md
+- [Correctness] "On [[Linear maps, inverses, and determinants#Determinants by elimination|the section on Determinants by elimination]] the same symbol denotes the determinant of that submatrix" points to the wrong heading; $M_{ij}$ is defined under [[Linear maps, inverses, and determinants#Cofactors]].
+
+=== 01 Mathematics/03 Linear Algebra/02 Matrices, Linear Maps, and Systems/Linear algebra - Catalogue Guide.md
+- [Correctness] [[Planned Topics#4. Linear algebra|the detailed catalogue]] is broken: no note named "Planned Topics" exists in the vault; retarget it or remove it.
+
+=== 01 Mathematics/03 Linear Algebra/02 Matrices, Linear Maps, and Systems/Row reduction and the four fundamental subspaces.md
+- [Correctness] Wrong internal anchors: "The portfolio vectors on [[#Reduced row echelon form]]" (they are introduced under "Span and dependence"), "For the matrix on the section on Homework 2" (the matrix is in "Homogeneous systems"), and three references to [[#Forward elimination and back substitution]] for the matrix $B$, which is defined under "Rectangular matrix".
+
+=== 01 Mathematics/03 Linear Algebra/02 Matrices, Linear Maps, and Systems/Scaling Matrices.md
+- [Correctness] "A matrix $M$ is scaling a vector field, if it's Determinant is not equal to 1" is wrong: $\operatorname{diag}(2,1/2)$ scales both axes yet has determinant 1, and a rotation combined with a scaling has determinant $\ne1$ without being a scaling matrix; define a scaling matrix as $\operatorname{diag}(s_x,s_y,\ldots)$ and say $|\det|$ is the volume factor.
+- [Correctness] "Scaling Matrix in $ℝ^2$" shows a $3\times3$ matrix; the linear scaling on $\mathbb R^2$ is $\begin{pmatrix}s_x&0\\0&s_y\end{pmatrix}$, and the $3\times3$ form acts on homogeneous coordinates (same issue for the $\mathbb R^3$ and $\mathbb R^4$ sections).
+
+=== 01 Mathematics/03 Linear Algebra/02 Matrices, Linear Maps, and Systems/Subspaces, eigenvectors, and orthogonal projections.md
+- [Correctness] Wrong anchors: "The conditions on [[#Vector spaces and subspaces]] for injectivity" (they are listed under "The four fundamental subspaces"); "as on [[Coordinate matrices and diagonalization#Stretching along a basis direction]]" for the transpose matrix (it is under "Coordinate representation of a matrix"); "[[#Orthogonal projections|the section on Final review. Orthogonal projections]]" for inner-product preservation (the proof is under "Orthonormal sets", and "Final review" is not a heading).
+
+=== 01 Mathematics/03 Linear Algebra/02 Matrices, Linear Maps, and Systems/Symmetrization and Antisymmetrization.md
+- [Correctness] "Any real square matrix $A_{ii}$" and "$A_{ii}= A_{(ij)} + A_{[ij]}$" use a diagonal index; both should be $A_{ij}$.
+- [Correctness] The general symmetrization formula is written with square brackets $A_{[i_1 i_2 \dots i_n]}$; it must use round brackets $A_{(i_1 i_2 \dots i_n)}$, since square brackets denote antisymmetrization in this note.
+- [Correctness] "$\omega_{ij} = \epsilon_{ijk},\omega^k$" has a stray comma and is not an antisymmetrization formula; write $\omega_{ij}=\epsilon_{ijk}\omega^k$ with inverse $\omega^k=\tfrac12\epsilon^{kij}\omega_{ij}$ and say it identifies 3D antisymmetric matrices with axial vectors.
+
+=== 01 Mathematics/03 Linear Algebra/02 Matrices, Linear Maps, and Systems/Vectors, projections, lines, and planes.md
+- [Correctness] The "Physical quantities" table lists $\lVert\mechanical{\mathbf v}\rVert$ as speed in $\unit{m\,s^{-1}}$, but the note uses $\mathbf v$ only as a generic geometric vector and never as velocity; remove the table (and the macro use) from this mathematics note.
+
+=== 01 Mathematics/03 Linear Algebra/03 Determinants and Eigenvalues/Determinant of a Matrix.md
+- [Correctness] The $3\times3$ formula $aei + bdi + ceg - afh - bdi - ceg$ is wrong (it cancels to $aei-afh$); the rule of Sarrus gives $aei+bfg+cdh-ceg-bdi-afh$.
+- [Correctness] The cofactor expansion $a_1\det(M_{11})-a_2\det(M_{12})+\cdots+(-1)^n a_n\det(M_{nn})$ is wrong in its last term and sign; it should be $\det A=\sum_{j=1}^n(-1)^{1+j}a_{1j}\det M_{1j}$ (Laplace expansion, not "Levi-Civita's expansion").
+- [Correctness] "$\det A=1$ ... representing rotations" and "$\det A\notin\{0,1,-1\}$ indicates scaling or skewing" are wrong: shears have determinant 1, and $\operatorname{diag}(2,1/2)$ scales with determinant 1; determinant only fixes the signed volume factor. Likewise in the second callout, $\det R=\pm1$ does not make a matrix orthogonal, so say "for orthogonal matrices".
+- [Correctness] "Volume of a Vector Space" puts a formal row $(\mathbf i,\mathbf j,\mathbf k,\ldots)$ into the matrix; the volume spanned by $n$ vectors in $\mathbb R^n$ is $|\det[a\;b\;c\;\cdots]|$ of the $n\times n$ matrix of their components, and "a positive determinant indicates that vectors form a volume" should say "nonzero".
+- [Correctness] "Orientation of a Vector Space" uses the determinant of an $n\times(n+1)$ matrix, which is undefined; orientation is the sign of the $n\times n$ determinant of the basis relative to a reference basis.
+
+=== 01 Mathematics/03 Linear Algebra/03 Determinants and Eigenvalues/Eigenvectors and Eigenvalues.md
+- [Correctness] "When eigenvectors and eigenvalues are imaginary, then every non-zero vector will change" is imprecise: the relevant case is non-real complex eigenvalues (for example $(1\pm i)/\sqrt2$ for a $45^\circ$ rotation, not purely imaginary), and the correct conclusion is that no nonzero real vector stays on its own line.
+
+=== 01 Mathematics/03 Linear Algebra/04 Inner Products, Quadratic Forms, and Factorizations/Hermitian Conjungate.md
+- [Correctness] "$\|J\|^2 = J^{\dagger} J = J J^{\dagger}$" is wrong: $J^\dagger J$ is the scalar $\|J\|^2$, but $JJ^\dagger$ is an $n\times n$ matrix (the projector onto $J$ when $\|J\|=1$).
+- [Correctness] "we can't simply get the inverse of the vector using the transpose method" describes the wrong concept; the issue is the squared norm, since $J^TJ$ can be zero or complex for nonzero $J$ (for example $J=(1,i)$).
+

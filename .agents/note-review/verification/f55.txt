@@ -1,0 +1,30 @@
+=== 01 Mathematics/07 Complex Numbers and Complex Analysis/01 Complex Arithmetic, Polar Form, and Roots/Complex arithmetic and polar form problems.md
+- FIXED | Exercise 4 is circular (assumes the sum rule) | Middle step now computes the conjugate of the sum as conj(5-3i)=5+3i and compares it with (2+5i)+(3-2i)=5+3i.
+- FIXED | u is both temperature/harmonic function and real part of the inverse | Renamed inverse components u+iv to s+it in all three inverse derivations (p,q were already used for rationals).
+=== 01 Mathematics/07 Complex Numbers and Complex Analysis/01 Complex Arithmetic, Polar Form, and Roots/Euler's Formula.md
+- FIXED | Callout says the sign depends on the coordinate system | Callout now says the values follow from Euler's formula and only the drawing orientation (counterclockwise positive) is a convention.
+- PARTLY | Image line malformed | Stray outer brackets and alt text "obsidian" were wrong (the |300 width works in Obsidian); removed brackets and set alt text; no local copy made because downloading the image needs user approval.
+=== 01 Mathematics/07 Complex Numbers and Complex Analysis/02 Holomorphic Functions and Contour Integration/Complex analysis - Catalogue Guide.md
+- FIXED | Broken link to Planned Topics | Removed the sentence with the broken link, as already done in other catalogue guides; converted file to LF without BOM.
+=== 01 Mathematics/07 Complex Numbers and Complex Analysis/02 Holomorphic Functions and Contour Integration/Complex line integrals and primitives.md
+- FIXED | Smooth curve definition lacks gamma'(t) not 0 | Added that a smooth arc also needs gamma'(t)!=0 and that a C1 parametrization without it can trace a cusp.
+=== 01 Mathematics/07 Complex Numbers and Complex Analysis/03 Laurent Series, Residues, and Conformal Maps/Residues and real integrals by contour deformation.md
+- FIXED | b_n and c_n reused for Taylor coefficients; mixed residue notation | Renamed Taylor coefficients of g to g_k and of H to h_k; replaced Res[f,a] and Res(f;a) with Res_{z=a} f(z) (or Res_{z=a}(P/Q), (F/G)).
+=== 01 Mathematics/07 Complex Numbers and Complex Analysis/03 Laurent Series, Residues, and Conformal Maps/Taylor expansions and Laurent annuli.md
+- FIXED | Region D2 link points to Region D1 for the inverse-power expansion | Replaced the link with "the inverse-power expansion of 1/(z-1) above".
+=== 01 Mathematics/05 Multivariable and Vector Calculus/02 Constrained Extrema and Multiple Integrals/12.07 Multiple integrals.md
+- FIXED | Spherical-bounds source link points to Fubini's theorem | Retargeted it to #Mass inside a cone and a sphere.
+=== 01 Mathematics/05 Multivariable and Vector Calculus/02 Constrained Extrema and Multiple Integrals/Multiple integrals and changes of variables.md
+- FIXED | rho is both spherical radius and mass density | Renamed the density to \mechanical{\delta} in the mass formula, the cone example (delta=3-rho^2/5), and the table.
+=== 01 Mathematics/05 Multivariable and Vector Calculus/02 Constrained Extrema and Multiple Integrals/Partial derivatives and constrained extrema.md
+- FIXED | Table has rolling-circle theta and unused symbols | Removed unused scalar a, v, v0, x, y rows; theta row now describes only the azimuth.
+- FIXED | Tangent-plane function named pi(x,y) | Renamed it L(x,y) in both uses.
+=== 01 Mathematics/05 Multivariable and Vector Calculus/03 Vector Fields, Gradients, Divergence, and Curl/Gradient.md
+- FIXED | Opening line and title describe a vector field | Title now "Gradient ∇f" (quoted); opening line says it gives the direction and rate of steepest increase of a scalar field; converted file to LF.
+- FIXED | Electric field missing minus sign | Example now says negative gradient of the potential, E=-grad V, with \electric macros.
+=== 01 Mathematics/05 Multivariable and Vector Calculus/03 Vector Fields, Gradients, Divergence, and Curl/Vector analysis and field theory - Catalogue Guide.md
+- FIXED | Broken link to Planned Topics | Removed the sentence with the broken link, as already done in other catalogue guides; converted file to LF without BOM.
+=== 01 Mathematics/05 Multivariable and Vector Calculus/04 Line Integrals, Surface Integrals, and Integral Theorems/13.07 Integral theorems.md
+- FIXED | Green's theorem source link points to line-integral section | Retargeted it to [[Green’s theorem, surface integrals, and flux#16.4 Green's theorem]].
+=== 01 Mathematics/05 Multivariable and Vector Calculus/04 Line Integrals, Surface Integrals, and Integral Theorems/Line integrals, work, and conservative fields.md
+- FIXED | Work written \mechanical{W} instead of \energy{W} | Replaced all four uses (three equations and the table row) with \energy{W}.

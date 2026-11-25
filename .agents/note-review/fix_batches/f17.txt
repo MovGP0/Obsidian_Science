@@ -1,0 +1,70 @@
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.07.02 Calculation of the Propagator.md
+- [Correctness] (4.43) and (4.44) integrate over $d^3\mechanical{k}$ with a $\mathbf p$-labelled integrand; use $d^3\mechanical{p}$.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.07.03 Momentum Representation.md
+- [Correctness] (4.47) integrates over $d^4\mechanical{k}$ with a $p$-dependent integrand; use $d^4\mechanical{p}$ and remove the sentence about the source label.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.08.04 The CPT Theorem.md
+- [Correctness] (4.59) $\Theta\psi\Theta^{-1}=\eta_{CPT}\bar\psi^T(-x)$ omits the spinor matrix; replace it by the derived $\Theta\psi(x)\Theta^{-1}=\eta\,i\gamma^0\gamma^5\bar\psi^T(-x)=-\eta\,i\gamma^5\psi^*(-x)$ (I verified $T\gamma^0C=i\gamma^0\gamma^5$) and drop both callouts about the printed form.
+- [Correctness] Table 4.1 tensor row: replace the checkmarks by the actual signs $P:(-1)^\mu(-1)^\nu$, $T:-(-1)^\mu(-1)^\nu$, $CP:-(-1)^\mu(-1)^\nu$ (with $(-1)^\mu=+1$ for $\mu=0$, $-1$ otherwise), consistent with $C=-1$, $CPT=+1$; then the callout on checkmarks can go.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.09.02 Fierz Identities.md
+- [Correctness] Replace (4.61) by the standard scalar Fierz identity for commuting spinors, $(\bar\psi_1\psi_2)(\bar\psi_3\psi_4)=\tfrac14[(\bar\psi_1\psi_4)(\bar\psi_3\psi_2)+(\bar\psi_1\gamma^\mu\psi_4)(\bar\psi_3\gamma_\mu\psi_2)+\tfrac12(\bar\psi_1\sigma^{\mu\nu}\psi_4)(\bar\psi_3\sigma_{\mu\nu}\psi_2)-(\bar\psi_1\gamma^\mu\gamma^5\psi_4)(\bar\psi_3\gamma_\mu\gamma^5\psi_2)+(\bar\psi_1\gamma^5\psi_4)(\bar\psi_3\gamma^5\psi_2)]$, with an overall minus sign for anticommuting fields; the printed $-\tfrac14\sum_\Gamma\Gamma\otimes\bar\Gamma$ gives $+$ for the axial term (since $\overline{\gamma^\mu\gamma^5}=\gamma^\mu\gamma^5$), the wrong sign for $i\gamma^5$, and no $\tfrac12$ for $\sigma^{\mu\nu}$.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.12 Examples of Trace Calculations.md
+- [Correctness] (4.89) has the wrong sign: by (4.76), $\mathrm{tr}(\not p\gamma^\mu\not q\gamma^\nu\gamma^5)=-4i\epsilon^{\alpha\mu\beta\nu}p_\alpha q_\beta=+4i\epsilon^{\alpha\beta\mu\nu}p_\alpha q_\beta$; print the corrected formula and remove the callout.
+- [Correctness] Example 4.8 states the ansatz $\psi=e^{-imt}(\phi,\chi)$ but (4.93)–(4.94) are the unshifted equations; either drop the phase from the ansatz or print the shifted equations $i\partial_t\phi=\boldsymbol\sigma\cdot\mathbf p\,\chi$, $i\partial_t\chi=\boldsymbol\sigma\cdot\mathbf p\,\phi-2m\chi$, and rename the example (it does not start from Klein–Gordon).
+- [Correctness] Symbol clash: $\mechanical{q}$ is the photon momentum in Example 4.4 but a generic vector in (4.89), and $\mechanical{k}$ is the muon momentum label in 4.4 but the integration variable in (4.90) (whose integrand uses $p$); use distinct letters and integrate (4.90) over $d^3p$.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.14 Connection to Quantum Electrodynamics.md
+- [Correctness] The caption and table call the photon propagator $\tilde{\signal{S}}_F^\gamma$, reusing the Dirac propagator letter for a different object with different index structure ($-ig_{\mu\nu}/(q^2+i\varepsilon)$); use $\tilde D_{F\mu\nu}$ as is standard.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.18 Exercises/04.18.03 Fermion Fock number.md
+- [Correctness] The physical-quantities table lists $\signal{n}$, but the note only uses the operator $\hat{\signal{n}}$; list $\hat{\signal{n}}$ (eigenvalues $0,1$).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.04.03 Canonical Commutation Relations.md
+- [Correctness] With $\pi^i=-\dot A^i$ and (5.12), the relation is $[A^i(\mathbf x),\pi^j(\mathbf y)]=-i\delta_T^{ij}(\mathbf x-\mathbf y)$ (equivalently $[A_i,\pi^j]=+i\delta_T^{ij}$); display the consistent form as the main equation and move the printed source form into the callout.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.04.04 Hamiltonian Operator and Structure of Fock Space.md
+- [Correctness] "$\mechanical{p}^{\,2}=\mechanical{k}^\mu\mechanical{k}_\mu=0$" mixes $p$ and $k$ for the same photon momentum; write $\mechanical{k}^{\,2}=0$.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.03.01 Definition.md
+- [Correctness] $\mathcal T$ is used both for time ordering ($\mathcal S=\mathcal T\exp(\dots)$) and for the transition operator ($\mathcal S=1+i\mathcal T$) in the same note; rename the transition operator (e.g. $\hat T$ or $\mathbb T$) here and in [[06.03.02 General Properties]].
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.06.03 Formula for Scalar Fields.md
+- [Correctness] Display the LSZ formula in the chapter convention as the main equation: incoming weight $\int d^4x_j\,e^{-ip_j\cdot x_j}(\Box+m_{\mathrm{ph}}^2)$ and outgoing weight $\int d^4y_k\,e^{+ip'_k\cdot y_k}(\Box+m_{\mathrm{ph}}^2)$; keep the source phases only in a callout.
+- [Correctness] In the momentum-space form, replace the full $\tilde G^{(n+m)}$ by the connected Green function when writing $i\mathcal M$, as the callout already states, rather than displaying the uncorrected source expression.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.08.03 Decay Width.md
+- [Correctness] $n$ labels the last final particle in $1\to2+\dots+n$ and also the size of a set of identical particles in "a factor $1/n!$ for each set of $n$ identical final particles"; use a different letter (e.g. $1/k!$) for the identical set.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.10 Examples.md
+- [Correctness] The displayed Yukawa density has $+\frac{\mu^2}2\phi^2$; display the correct $-\frac{\mu^2}2\phi^2$ (consistent with the propagator used in the amplitude) and keep the source sign only in a callout.
+- [Correctness] $\mechanical{m}$ is the scalar mass in Example 6.8 and the fermion mass in Example 6.9; the table entry "mass parameters" lumps them. Use e.g. $M$ for the fermion mass or split the table rows by example.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.12 Exercises/06.12.10 Symmetry factor of the disconnected double figure eight.md
+- [Correctness] $S$ is used both for the second-order Dyson term $S^{(2)}$ and for the symmetry factor $S=128$; rename the Dyson term (for example $\mathcal S^{(2)}$) and add it to the quantity table.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.06.02 Annihilation - e⁺e⁻ → μ⁺μ⁻.md
+- [Correctness] Equation (7.4) displays $4(g^{\mu\nu}g^{\rho\sigma}-g^{\mu\rho}g^{\nu\sigma}+g^{\sigma\rho}g^{\mu\nu})$; display the correct $4(g^{\mu\nu}g^{\rho\sigma}-g^{\mu\rho}g^{\nu\sigma}+g^{\mu\sigma}g^{\nu\rho})$ and keep the misprint only in the callout, so readers cannot copy the wrong identity.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.09.02 Counting Divergences.md
+- [Correctness] "Other amplitudes with more external legs have negative superficial degree" leaves out $E_e=0,E_\gamma=1$ ($D=3$), $E_e=0,E_\gamma=3$ ($D=1$) and the vacuum graph ($D=4$), which also have $D\ge0$; add them to the table with "vanishes by Lorentz invariance / Furry's theorem" and "vacuum energy, cancels in normalized amplitudes".
+- [Correctness] The physical-quantity table lists $\delta\mechanical{m}$, which the note never uses; either write the chiral-symmetry statement as $\delta\mechanical{m}\propto\mechanical{m}\ln(\energy{\Lambda}/\mechanical{m})$ in the text or drop it from the table.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.09.04 The Vertex Correction.md
+- [Correctness] The caption "The logarithmic divergence contributes to charge renormalization" is misleading for QED: by $Z_1=Z_2$ the vertex divergence cancels against the electron field renormalization, and the charge is renormalized only through $Z_3$ (vacuum polarization); rephrase the caption.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.15 Exercises/07.15.08 Electron–muon scattering amplitude.md
+- [Correctness] Symbol clash: $\bar u_\mu(\mechanical{q}')\gamma_\mu u_\mu(\mechanical{q})$ and $\signal{L}_{\mu,\mu\nu}$ use $\mu$ both as the muon species label and as a contracted Lorentz index; use e.g. $u_{(\mu)}$ and $\signal{L}^{(\mu)}_{\alpha\beta}$, or Lorentz indices $\alpha,\beta$.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.01.01 Global and Local Gauge Invariance.md
+- [Correctness] With $\psi\to e^{-i\electric{e}\signal{\alpha}}\psi$, $D_\mu=\partial_\mu+i\electric{e}\electric{A}_\mu$, $\electric{e}>0$ and $\mathcal L_{\mathrm{int}}=-J^\mu\electric{A}_\mu$, the current is $J^\mu=\electric{e}\bar\psi\gamma^\mu\psi$, so the particles annihilated by $\psi$ carry charge $+\electric{e}$; the claim that $\electric{Q}_e=-|\electric{e}|$ "follows from quantization" is false here. Either set $\electric{e}=-|\electric{e}|$ for the electron (Peskin's convention) or use $D_\mu=\partial_\mu-i|\electric{e}|\electric{A}_\mu$.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.09 Bremsstrahlung.md
+- [Correctness] The table lists $p,p',k$ as used "in the figure", but neither the text nor the Fig. 8.6 caption uses these symbols; introduce them (e.g. in an explicit soft factor) or remove the row.
+- [Correctness] The photon energy is written $\signal{\omega}$ here but $\energy{\omega}$ in 08.06.02, 08.10.01 and 08.11.02 for the same physical quantity; use $\energy{\omega}$ consistently.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.11.01 Nature of the Infrared Problem.md
+- [Correctness] The displayed integral uses the measure $d^4k$ with an integrand in $l$; correct the equation to $d^4l$ (and drop $k$ from the table) instead of keeping the error and explaining it in a note.
+

@@ -1,0 +1,35 @@
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/06 Electroweak Interactions of Leptons/6.3 The Standard Electroweak Theory of Leptons.md
+- FIXED | (6.3.35) W mass term coefficient g^2v^2/2 | Changed to g^2v^2/8 (|b1-ib2|^2=2W+W-), consistent with M_W=gv/2.
+- FIXED | (6.3.72) ig must be ig^2; unbalanced bracket in (6.3.68) | Changed prefactor to ig^2/(8M_W^2) so (6.3.73) follows; removed the stray [ before (k_++S)_beta.
+- FIXED | (6.3.63) amplitude ratio must be (M_Z/M_W)^4 | Changed exponent to 4; with physical amplitudes this reproduces Gamma=G_F M_Z^3/(12 pi sqrt2) (checked).
+- FIXED | Outdated neutrino-mass bound and LHC outlook | Bound now <0.45 eV (90% CL, KATRIN 2025); LHC sentence now states completed WW and triple-gauge measurements at 7, 8, 13, 13.6 TeV.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/06 Electroweak Interactions of Leptons/6.4 Neutral-Current Interactions among Leptons.md
+- FIXED | Wrong equation cited for terms linear in (v+a) | Changed "(6.4.22) and (6.4.21)" to "(6.4.22) and (6.4.23)".
+- FIXED | Symbol clash v (coupling vs spinor) and mu (mass vs label) | Added disambiguating sentences to the coupling, spinor, and lepton-mass rows of the physical-quantities table; equations unchanged.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/06 Electroweak Interactions of Leptons/6.5 The Higgs Boson -  A First Look.md
+- FIXED | Spurious 1/x and 1/x' in (6.5.8), (6.5.9) | Removed them; asymptotic G_F M_H^3/(8 pi sqrt2) now matches the stated M_H^3 behavior.
+- FIXED | (6.5.6) middle expression lacks phase-space factor and N_c | Added N_c and (1-4m_f^2/M_H^2)^(1/2); verified it reproduces the right-hand side with (6.5.5).
+- FIXED | Fig. 6.25 vertices (e), (f) lack g_mu_nu on the left side | Added g_{mu nu} to both left-hand sides.
+- FIXED | Symbol clash v (vev vs spinor); unused Gamma_H in table | Added disambiguation to the spinor table row; removed Gamma_H from the table.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/06 Electroweak Interactions of Leptons/6.7 Neutrino Mixing and Neutrino Mass.md
+- FIXED | (6.7.11) nu_mu,tau e cross section uses the antineutrino weighting | Changed to (L_e^2+R_e^2/3); the 1/7 weighting is unchanged.
+- FIXED | Fig. 6.32 caption 8Be should be 8B | Changed to 8B in the caption.
+- FIXED | Inverted-hierarchy minimum and (6.7.20) estimate | Changed 0.11 eV to 0.10 eV (computed 0.0987 eV); changed ~1e-5 eV to approx 2.5e-6 eV (v^2/2M with v=246 GeV).
+- PARTLY | Symbol clashes m1/m2, L, tau, phi; L_CC^(q) label | Renamed seesaw eigenvalues to m_light, m_heavy (equation and table) and L_CC^(q) to L_CC^(l); kept L, tau, phi since color or context already distinguish them.
+- FIXED | Outdated values (KATRIN, cosmology, h, theta13, N_nu, OPERA, MicroBooNE) | Added one short update note callout after (6.7.5) that lists the current values; source text kept.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/06 Electroweak Interactions of Leptons/6.8 Renormalizability of the Theory.md
+- FIXED | Gauge-fixing sign doubles instead of cancels the mixing | Changed (6.8.3) to (dA - xi M zeta)^2 (mixing sign agrees with 5.3.11) and added the one-line integration by parts.
+- PARTLY | "only anomaly" too strong; U(1)^3 and gravitational anomalies nonzero for leptons | U(1)_Y^3 part is right (-6 per family, +6 from three colored quarks): restricted the statement and added a sentence; the mixed gravitational sum Y is zero for leptons alone (-2-(-2)=0), so not added.
+- FIXED | g_A approx 1.25 outdated | Changed to g_A approx 1.27.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/06 Electroweak Interactions of Leptons/6.B References.md
+- FIXED | Ref. 19 Aubert et al. volume 34 should be 32 | Changed to Phys. Rev. Lett. 32, 1454, 1457 (1974).
+- FIXED | Footnote 26 malformed exp^{1/alpha} | Changed to M_W exp(1/alpha).
+- FIXED | Ref. 59 encoding artifact 95Ð98 | Changed to 95–98.
+- FIXED | Ref. 49 Daya Bay arXiv number; Double-CHOZ | Changed arXiv:1210.6327 to arXiv:1203.1669 and Double-CHOZ to Double Chooz.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/06 Electroweak Interactions of Leptons/6.P Problems.md
+- FIXED | Problem 6.13 quartic term lacks z^2; Thacker initial; "it respect" | Added z^2 to the quartic term (verified by expanding the potential), changed to H. B. Thacker and "it respects".
+- FIXED | Problem 6.16 Ross-Veltman formula | Replaced with sum[I(I+1)-Y^2/4]<phi>^2 / sum (1/2)Y^2<phi>^2; checked rho=1 for the doublet and the I=3, Y=4 septet.
+- FIXED | Table lists unused p, q; sigma, lambda, theta clashes | Removed p, q from the momentum row; added disambiguation to the sigma, lambda (Fierz lambda_ij), and theta rows.
+- FIXED | Problem 6.17 g_A outdated | Changed to 1.2754 +- 0.0013 (PDG 2024) with the source value kept in parentheses.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/06 Electroweak Interactions of Leptons/6.R For Further Reading.md
+- FIXED | Salam and Ward journal is Phys. Lett., not Phys. Rev. Lett. | Changed to Phys. Lett. 13, 168 (1964).

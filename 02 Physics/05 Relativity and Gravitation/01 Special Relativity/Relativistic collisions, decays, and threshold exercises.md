@@ -128,7 +128,7 @@ Find (a) the torpedo four-momentum in the alien ship's rest frame, (b) the four-
 (a) Take positive $x$ to point from the alien ship toward Pinafore. The alien ship's frame is $S'$ and Pinafore's frame is $S$. In $S'$ the torpedo moves along $x$ at $(3/5)\mechanical{c}$, giving its four-momentum
 
 $$
-\mechanical{p}_{\mu}'
+\mechanical{p}'^{\mu}
 =\left(\frac54\mechanical{m}\mechanical{c},\frac34\mechanical{m}\mechanical{c},0,0\right),
 \qquad
 \mechanical{m}\mechanical{c}=3.0\times10^{11}\;\unit{kg\,m\,s^{-1}}.
@@ -149,7 +149,7 @@ $$
 \end{aligned}
 $$
 
-Altogether $\mechanical{p}_{\mu}=(17\mechanical{m}\mechanical{c}/8,15\mechanical{m}\mechanical{c}/8,0,0)$.
+Altogether $\mechanical{p}^{\mu}=(17\mechanical{m}\mechanical{c}/8,15\mechanical{m}\mechanical{c}/8,0,0)$.
 
 (c) The torpedo has momentum magnitude $(15/8)\mechanical{m}\mechanical{c}\approx5.6\times10^{11}\;\unit{kg\,m\,s^{-1}}$, below the threshold. The shield stops it.
 
@@ -167,6 +167,8 @@ $$
 =15^2\left(1-\frac{\mechanical{u}^2}{\mechanical{c}^2}\right),\qquad
 \frac{\mechanical{u}^2}{\mechanical{c}^2}=\frac{15^2}{15^2+8^2}=\frac{15^2}{17^2}.
 $$
+
+The torpedo moves toward Pinafore at $\mechanical{u}=(15/17)\mechanical{c}$.
 
 ### Chapter 11 sample problems
 
@@ -274,7 +276,7 @@ For symmetric uranium fission, the binding energy increases by about $1\;\unit{M
 
 ##### 2. Sigma-minus decay
 
-The problem gives a half-life of $1.5\times10^{-10}\;\unit{s}$ for the decay $\Sigma^-\longrightarrow n+\pi^-$. Find the ratio $\energy{K}_{\pi^-}/\energy{K}_n$ in the rest frame of $\Sigma^-$. The stated rest energies are $1197.4\;\unit{MeV}$ for $\Sigma^-$, $939.6\;\unit{MeV}$ for the neutron, and $139.6\;\unit{MeV}$ for $\pi^-$. The neutron and pion move in opposite directions in this frame.
+The problem gives a half-life of $1.5\times10^{-10}\;\unit{s}$ for the decay $\Sigma^-\longrightarrow n+\pi^-$. This value is the mean lifetime of $\Sigma^-$, not its half-life. It does not enter the kinetic-energy ratio. Find the ratio $\energy{K}_{\pi^-}/\energy{K}_n$ in the rest frame of $\Sigma^-$. The stated rest energies are $1197.4\;\unit{MeV}$ for $\Sigma^-$, $939.6\;\unit{MeV}$ for the neutron, and $139.6\;\unit{MeV}$ for $\pi^-$. The neutron and pion move in opposite directions in this frame.
 
 Equation 12.13 gives the total pion energy. Subtract the pion rest energy to get its kinetic energy.
 
@@ -456,26 +458,36 @@ Kyle Kabasares, *Special Relativity (Physics 126, UC Merced 2015)*.
 
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
-| $\mechanical{v}$ | $\unit{m\,s^{-1}}$ | Relative speed | Speed of one inertial frame relative to another. |
+| $\mechanical{v}$ | $\unit{m\,s^{-1}}$ | Speed | Speed of a frame or particle in the stated frame. |
+| $\mechanical{V}$ | $\unit{m\,s^{-1}}$ | Boost speed | Speed of the primed frame relative to the unprimed frame. |
+| $\mechanical{v}'$ | $\unit{m\,s^{-1}}$ | Beam speed in frame $B$ | Speed of the proton beam in the rest frame of ship $B$. |
+| $\mechanical{u}$ | $\unit{m\,s^{-1}}$ | Torpedo speed | Speed of the torpedo in the frame of Pinafore. |
 | $\mechanical{x}$, $\mechanical{y}$, $\mechanical{z}$ and primed forms | $\unit{m}$ | Spatial coordinates | Location of an event in an inertial frame. |
-| $t$, $t'$ | $\unit{s}$ | Coordinate times | Time assigned to an event in the two frames. |
-| $\mechanical{m}$ | $\unit{kg}$ | Mass | Inertial mass of the particle. |
-| $\mechanical{v}_x$, $\mechanical{v}_y$, $\mechanical{v}_z$ and primed forms | $\unit{m\,s^{-1}}$ | Particle velocity components | Coordinate rates of change in the two frames. |
+| $t$, $t'$ | $\unit{s}$ | Coordinate times | Time assigned to an event in the two frames, or the lab decay time. |
+| $\tau$ | $\unit{s}$ | Proper lifetime | Time to decay in the rest frame of the tau lepton. |
+| $\mechanical{d}$ | $\unit{m}$ | Distance | Lab distance traveled by the tau lepton before it decays. |
+| $\mechanical{m}$ | $\unit{kg}$ or $\unit{MeV}/\mechanical{c}^2$ | Mass | Rest mass of a particle, decay fragment, kettle, or proton. |
+| $\Delta\mechanical{m}$ | $\unit{kg}$ | Mass increase | Increase of the mass of the heated kettle and water. |
+| $\mechanical{v}_x$, $\mechanical{v}_y$ | $\unit{m\,s^{-1}}$ | Particle velocity components | Velocity components of the particle in the momentum problem. |
+| $\mechanical{V}_x$, $\mechanical{V}_x'$ | $\unit{m\,s^{-1}}$ | Passenger velocity | Velocity of the running passenger in the road and bus frames. |
 | $\mechanical{c}$ | $\unit{m\,s^{-1}}$ | Speed of light in vacuum | The light propagation speed. |
-| $\Delta t_{\mathrm{rest}}$, $\Delta t_0$, $\tau$ | $\unit{s}$ | Proper time interval | Time recorded by the clock present at both events. |
-| $\mechanical{\gamma}$ | 1 | Lorentz factor | Factor relating the coordinate interval to the proper interval for inertial motion. |
-| $\tau_0$, $\tau$ | $\unit{s}$ | Rest and laboratory lifetimes | Muon lifetime measured in its rest frame and in the laboratory. |
-| $\mechanical{d}$, $\mechanical{L}$ | $\unit{m}$ | Distance | Distance traveled in the laboratory or separation of the departure and arrival points. |
-| $\mechanical{V}_x$, $\mechanical{V}_y$, $\mechanical{V}_z$ and primed forms | $\unit{m\,s^{-1}}$ | Object velocity components | Velocity of an object along the coordinate axes. |
-| $\mechanical{\vec p}$, $\mechanical{p}_{\mathrm{tot}}$ | $\unit{kg\,m\,s^{-1}}$ | Momentum | Momentum of a particle and the sum over particles. |
-| $\mechanical{p}_{\mu}$ | $\unit{kg\,m\,s^{-1}}$ | Four-momentum | Product of the mass and four-velocity. |
+| $\mechanical{\gamma}$ | 1 | Lorentz factor | Factor that depends on the speed of a frame or particle. |
+| $\mechanical{\gamma}_m$, $\mechanical{\gamma}_m'$ | 1 | Particle Lorentz factor | Lorentz factor of the proton in frames $S$ and $S'$. |
+| $\mechanical{\vec p}$ | $\unit{kg\,m\,s^{-1}}$ | Momentum | Relativistic momentum vector of a particle. |
+| $\mechanical{p}^{\mu}$, $\mechanical{p}'^{\mu}$ | $\unit{kg\,m\,s^{-1}}$ | Four-momentum | Product of the mass and four-velocity in frames $S$ and $S'$. |
+| $\mechanical{p}_0$, $\mechanical{p}_x$, $\mechanical{p}_y$, $\mechanical{p}_z$ and primed forms | $\unit{kg\,m\,s^{-1}}$ or $\unit{MeV}/\mechanical{c}$ | Four-momentum components | Energy divided by the speed of light, and Cartesian momentum components. |
+| $\mechanical{p}_m$, $\mechanical{p}_M$, $\mechanical{p}_{\gamma}$, $\mechanical{p}_{\mathrm f}$, $\mechanical{p}_{\pi^0}$ | $\unit{kg\,m\,s^{-1}}$ or $\unit{MeV}/\mechanical{c}$ | Particle momenta | Momentum magnitudes of the decay fragments, photon, final particle, and pion. |
 | $\energy{h}$ | $\unit{J\,s}$ | Planck constant | Relates photon energy to frequency. |
-| $\signal{\nu}$, $\signal{\nu}'$ | $\unit{Hz}$ | Photon frequencies | Frequencies before and after scattering. |
-| $\mechanical{m}_{K^0}$, $\mechanical{m}_{\pi^0}$ | $\unit{kg}$ or $\unit{MeV}/\mechanical{c}^2$ | Particle masses | Rest masses of the neutral kaon and neutral pion. |
-| $\energy{E}$, $\energy{E}'$, $\energy{E}_{\mathrm{tot}}$ | $\unit{J}$ or $\unit{eV}$ | Energy | Time component of four-momentum multiplied by the speed of light. |
-| $\energy{K}$ | $\unit{J}$ or $\unit{eV}$ | Kinetic energy | Difference between total energy and rest energy. |
+| $\signal{\nu}$, $\signal{\nu}'$ | $\unit{Hz}$ | Photon frequencies | Frequency of the torpedo photons in the alien frame and in the frame of Endeavor. |
+| $N$ | 1 | Photon count | Number of photons carried by the photon torpedo. |
+| $\energy{E}$, $\energy{E}'$ | $\unit{J}$ or $\unit{eV}$ | Energy | Total energy of a particle, photon, or torpedo in frames $S$ and $S'$. |
+| $\Delta\energy{E}$ | $\unit{J}$ | Added energy | Heat added to the kettle and water. |
+| $\energy{E}_{\gamma}$, $\energy{E}_{\mathrm f}$, $\energy{E}_{\pi^-}$, $\energy{E}_{\pi^0}$ | $\unit{J}$ or $\unit{eV}$ | Particle energies | Total energies of the photon, final particle, and pions. |
+| $(\energy{E}_1)_{\mathrm{th}}$ | $\unit{J}$ or $\unit{eV}$ | Threshold energy | Minimum total energy of the incident particle for the reaction. |
+| $\energy{K}$, $\energy{K}_{\pi^-}$, $\energy{K}_n$ | $\unit{J}$ or $\unit{eV}$ | Kinetic energy | Difference between total energy and rest energy. |
 | $\mechanical{m}_p$ | $\unit{kg}$ or $\unit{MeV}/\mechanical{c}^2$ | Proton mass | Rest mass of the proton. |
 | $\mechanical{m}_n$ | $\unit{kg}$ or $\unit{MeV}/\mechanical{c}^2$ | Neutron mass | Rest mass of the neutron. |
+| $\mechanical{m}_{\pi^0}$ | $\unit{kg}$ or $\unit{MeV}/\mechanical{c}^2$ | Neutral pion mass | Rest mass of the neutral pion. |
 | $\mechanical{m}_{\Sigma^-}$, $\mechanical{m}_{\pi^-}$ | $\unit{kg}$ or $\unit{MeV}/\mechanical{c}^2$ | Decay particle masses | Rest masses of the sigma-minus particle and negative pion. |
-| $\mechanical{M}_0$, $\mechanical{M}$ | $\unit{kg}$ or $\unit{MeV}/\mechanical{c}^2$ | Initial and final masses | Invariant masses before and after photon absorption or rocket acceleration. |
-| $N$ | 1 | Photon count | Number of photons carried by the photon torpedo. |
+| $\mechanical{m}_i$, $\mechanical{m}_1$, $\mechanical{m}_2$ | $\unit{kg}$ or $\unit{MeV}/\mechanical{c}^2$ | Reaction masses | Rest masses of the final particles, the incident particle, and the target. |
+| $\mechanical{M}_0$, $\mechanical{M}$ | $\unit{kg}$ or $\unit{MeV}/\mechanical{c}^2$ | Initial and final masses | Masses before and after photon absorption, or initial and final masses of the photon rocket. $\mechanical{M}$ is also the mass of the second decay fragment. |

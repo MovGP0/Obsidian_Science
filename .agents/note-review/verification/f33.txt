@@ -1,0 +1,52 @@
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.11.3 Intrinsic formulation.md
+- FIXED | Index typo e^\alpha_ae^\alpha_b in the [C_ab] jump calculation | Changed e^\alpha_ae^\alpha_b to e^\alpha_ae^\beta_b in all three lines
+- FIXED | Bare k^\beta in [C_{A\lambda}] | Wrapped it as \mechanical{k}^\beta
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.11.4 Summary.md
+- FIXED | Bare k^\beta in the S^{\alpha\beta} formula | Wrapped it as \mechanical{k}^\beta
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.11.5 Parameterization of the null generators.md
+- FIXED | Observer factor mis-transformed | Since bar k = e^{-beta} k, changed the right side to e^\beta(-k_\mu u^\mu)^{-1}; the invariance statement now holds
+- PARTLY | Symbol clashes e^\beta, shear sigma, expansion theta | The exponential e^\beta looks like the basis vectors e^\beta_b; changed all reparameterization exponentials to upright \mathrm e (basis vectors unchanged); kept shear sigma_{\alpha\beta} vs sigma_{AB} and expansion theta vs theta^A because they are standard notation, differ by index type and macro color
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.11.7 Accreting black hole.md
+- FIXED | Omega_relative = j^psi/mu inconsistent with the f factor | j^psi/mu = 3Ma/(2mr^2) and Omega = f l^phi; changed the middle term to f\,j^psi/mu
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.11.8 Cosmological phase transition.md
+- FIXED | Index typo e^\alpha_Ae^\alpha_B in S^{\alpha\beta} | Changed to e^\alpha_Ae^\beta_B
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.13 Problems.md
+- FIXED | Problem 9 sign of p theta relation | Eqs. (3.102)-(3.103) give -p theta = [T kk]; added the minus sign
+- FIXED | Problem 8 cites (3.109) instead of (3.110) | (3.109) is a choice of N, while 3.11.5 assigns Problem 8 the surface-quantity transformations; changed to (3.110) (source PDF could not be rendered to confirm)
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.2.1 Surface element (non-null case).md
+- FIXED | Table lists unused theta^A, u, dSigma_t, dSigma_x | Removed these symbols from the table rows and dropped 'or null' from the coordinate description
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.2.2 Surface element (null case).md
+- FIXED | Inverse-metric Phi-lambda entries should be -1 | k^lambda = g^{lambda Phi}k_Phi = 1 with k_Phi = -1 gives g^{Phi lambda} = -1; changed both entries
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.2.3 Element of two-surface.md
+- FIXED | Table lists unused dS_tx, dS_xt, n^Phi | Removed them from the table
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.4.1 Tangent tensor fields.md
+- FIXED | Table lists unused h_{\alpha\beta} | Replaced it with h^\alpha{}_\mu
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.6.5 Spherical space, moment of time symmetry.md
+- FIXED | Dummy variable r' clashes with prime as d/dr | Renamed the integration variable to \bar r (three places)
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.8 Oppenheimer-Snyder collapse.md
+- FIXED | a is scale factor and a^\alpha is four-acceleration | Renamed the four-acceleration to \dot u^\alpha (text, a^\alpha_+, and table)
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/04 Lagrangian and Hamiltonian formulations of general relativity/4.1.7 Nondynamical term.md
+- FIXED | R is Ricci scalar and cylinder radius | Renamed the cylinder radius \mechanical{R} to \mechanical{r_0} everywhere including the table
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/04 Lagrangian and Hamiltonian formulations of general relativity/4.2.6 Gravitational Hamiltonian.md
+- FIXED | H_G described as gravitational energy density | Changed the table description to say that, apart from a divergence, it is a combination of the constraints
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/04 Lagrangian and Hamiltonian formulations of general relativity/4.2.7 Variation of the Hamiltonian.md
+- FIXED | Boundary terms and delta k should use sigma^{ab}, not h^{ab} | Replaced h^{ab} by \sigma^{ab} in the five boundary-term occurrences, defined sigma^{ab} after the Eq. (4.17) reference, and added a table row; the cancellation is unchanged
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/04 Lagrangian and Hamiltonian formulations of general relativity/4.3.2 Mass and angular momentum for stationary, axially symmetric spacetimes.md
+- FIXED | K_{phi r} called mixed component | Reworded to off-diagonal covariant component
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/04 Lagrangian and Hamiltonian formulations of general relativity/4.3.5 Distinction between ADM and Bondi-Sachs masses -  Vaidya spacetime.md
+- FIXED | t is both Schwarzschild time and slicing time u+r | Renamed the Schwarzschild time in the definition of u to t_S, said what it is, and noted in the table that t = u + r differs from t_S
+- FIXED | M is both Schwarzschild mass and surface functional M(S) | Renamed M(S) to \mathcal M(S) and added a table row
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/04 Lagrangian and Hamiltonian formulations of general relativity/4.3.6 Transfer of mass and angular momentum.md
+- FIXED | Second term of the divergence of epsilon^alpha needs a minus sign | With epsilon^alpha = -T^alpha_beta xi^beta, changed +T xi_{;alpha} to -T xi_{;alpha}
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.1.4 Painlevé-Gullstrand coordinates.md
+- FIXED | Region VI does not exist | Changed regions VI and I to IV and I
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.1.7 Apparent horizon.md
+- FIXED | theta is expansion and polar angle | Renamed the polar angle to \vartheta in the determinant and in the table
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.1.9 Killing horizon.md
+- FIXED | Wrong sign of g t t | Changed to g_{\alpha\beta}t^\alpha t^\beta = -(1-2M/r), timelike outside and spacelike inside
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.2.2 Kruskal coordinates.md
+- FIXED | Sign of V_- inconsistent with f = -2U_-V_- and metric sign | Verified U_-V_- = -kappa(r-r_-) as written; changed Eq. (5.26) to V_- = -e^{-kappa_- v}, which makes f = -2U_-V_- and the -2/kappa^2 metric correct (matches the Kerr Eq. 5.75)
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.3.4 Event horizon -  stationary observers.md
+- FIXED | omega = -g_tphi/g_tt is wrong | Factoring g_phiphi from the norm gives omega = -g_tphi/g_phiphi; corrected
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.3.9 Maximal extension of the Kerr spacetime.md
+- FIXED | Eq. (5.75) has V_+ instead of V_- | Changed V_+ to V_-

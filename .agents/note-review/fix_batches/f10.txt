@@ -1,0 +1,52 @@
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/01 Elementary Topology/Box counting and random-walk distributions.md
+- [Correctness] The "Physical quantities" table lists symbols from other notes that are never used here and clash with this note: $M$ as carrying capacity (here $M$ is the square side length), $\delta$ as wolf decline rate (here $\delta$ is the Dirac delta), $x,y$ as ingredient amounts in oz (here positions), $s$ as protein surplus (here the signed step), $t$ as iron surplus and $1/\alpha$ (here time, $\alpha$ unused); keep only $\Delta x$, $\Delta t$, $D$, $U$ and add $L$ (box size) and $p$, $C$ if desired.
+
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/2 Vector operations/2.11 Laplacian.md
+- [Correctness] Symbol clash: $\phi$ denotes the scalar field in Eqs. (2.43)–(2.50) and the $k/r$ example, but the azimuth angle in Eqs. (2.51)–(2.52) (where the field is renamed $\psi$); use $\psi$ for the scalar field throughout the note.
+
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/3 Vector applications/3.5 Chapter 3 problems.md
+- [Correctness] Problem 3.3 gives a push of 10 N on a box of unspecified mass $m$; the speed at the top depends on $m$ ($a=F/m-g(\sin25^\circ+0.33\cos25^\circ)$, and the box only accelerates up the ramp if $m<1.41\,\mathrm{kg}$), so state a numerical mass.
+
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/5 Higher-rank tensors/5.5 Metric tensor.md
+- [Correctness] Symbol clash: $\phi$ is the spherical azimuth in Eqs. (5.16)–(5.18) and the scalar field in the gradient and Laplacian formulas; $\theta$ is both the angle between $\vec A$ and $\vec B$ and the polar angle. Rename the scalar field (e.g. $f$, as in 4.9) and the inter-vector angle (e.g. $\vartheta$).
+
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/6 Tensor applications/6.1 The inertia tensor.md
+- [Correctness] Symbol clash: $\mechanical{a}$ denotes acceleration (intro and table) and the pyramid half-side, and $a,b$ are also used as component indices in $\mechanical{I}_{ab}$; rename the half-side (e.g. $\mechanical{d}$) or the indices ($j,k$) and keep only one meaning per symbol in the table.
+
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/6 Tensor applications/6.2 The electromagnetic field tensor.md
+- [Correctness] Symbol clash: $\mechanical{v}$ is the generic wave speed in Eq. (6.12) and the frame speed in the boost, and $\vec A$ is a generic vector field in Eq. (6.12) while $A$ is the Lorentz matrix in Eq. (6.18); rename the wave-equation field (e.g. $\vec\Psi$) and speed ($u$), and update the table.
+
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/6 Tensor applications/6.4 Chapter 6 problems.md
+- [Correctness] The table lists $\theta$ only as the rotation angle of Problem 6.3, but Problem 6.9 uses $\theta$ as the polar angle in $ds^2=d\mechanical{r}^2+\mechanical{r}^2d\theta^2$; add the polar-angle meaning to that row (or use a different letter, e.g. $\alpha$, for the 20° rotation).
+
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/03 Metrics, Connections, and Curvature/Surface geometry curvature and geodesics.md
+- [Correctness] Symbol clash: $f$ is the graph function in $r(u,v)=(u,v,f(u,v))$ and also the second-form coefficient $f=n\cdot r_{uv}$, and $F$ is both the level-surface function $F(x,y,z)=0$ and the first-form coefficient $F=r_u\cdot r_v$; rename the second-form coefficients (e.g. $L,M,N$) and the implicit function (e.g. $\Phi$).
+
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/04 Differential Forms and Moving Frames/Exterior Product.md
+- [Correctness] "$(a\wedge b)_i = ε_{ijk}\ a_j e_j\ b_k e_k$" mixes components with basis vectors and gives a vector, not a bivector; the bivector components are $(a\wedge b)_{jk}=a_jb_k-a_kb_j$, and in 3D its Hodge dual is the cross product $(a\times b)_i=\varepsilon_{ijk}a_jb_k$.
+- [Correctness] "$c_i = ε_{ijkl} \, a_j \, b_k \, e_l$" uses a four-index Levi-Civita symbol in three dimensions with a free basis vector; delete it or replace it by $a\wedge b=\tfrac12(a_jb_k-a_kb_j)\,e_j\wedge e_k$.
+- [Correctness] "2D exterior product: Special case of the cross product" writes $a\times b=a_xb_y-a_yb_x$; in 2D the wedge is $a\wedge b=(a_xb_y-a_yb_x)\,e_x\wedge e_y$ (a multiple of the unit bivector), and the wedge exists in every dimension while only in 3D is it dual to the cross product, so "higher order version of the cross product" inverts the relation.
+
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/05 Lie Groups, Quaternions, and Spinors/03 Spinors/01 Rotation/Algebra of Rotation.md
+- [Correctness] The heading "Algebraic Spaces of Rotation $SO(n)$" lists complex numbers, quaternions and spinors, which represent $U(1)\cong SO(2)$ and $SU(2)=\mathrm{Spin}(3)$ (a double cover), not $SO(n)$ itself; retitle e.g. "Representations of rotations" and state which group each item realizes.
+
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/05 Lie Groups, Quaternions, and Spinors/03 Spinors/01 Rotation/Homotopology classes in the Axis-Angle Space.md
+- [Correctness] "Those loops may have a winding number greater than 0" suggests an integer invariant; the fundamental group of $SO(3)$ is $\mathbb Z_2$, so there are exactly two classes and no integer winding number. Say this explicitly.
+- [Correctness] The space is described only as "a loop around a spherical space ... represented as a circle"; state precisely that the axis-angle space is the solid ball of radius $\pi$ with antipodal boundary points identified ($\mathbb{RP}^3$), and that a "teleport" is passing through the boundary to the antipodal point.
+
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/05 Lie Groups, Quaternions, and Spinors/03 Spinors/01 Rotation/Homotopology.md
+- [Correctness] "Two curves are called homotopic when they have the same Topology" is wrong: all curves have the topology of an interval or circle; homotopy is a continuous deformation inside a given space (with fixed endpoints, or freely for loops). Replace with the definition $H:[0,1]\times[0,1]\to X$, $H(\cdot,0)=\gamma_0$, $H(\cdot,1)=\gamma_1$.
+- [Correctness] "A homotopic class is defined by the winding number" is only true for spaces with fundamental group $\mathbb Z$ (circle, annulus, cylinder); for $SO(3)$, used in the companion note, the classes form $\mathbb Z_2$. State the general notion (fundamental group $\pi_1(X)$) and give winding number as the $\mathbb Z$ example.
+
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/05 Lie Groups, Quaternions, and Spinors/03 Spinors/01 Rotation/Rotation using Axis-Angle Vector.md
+- [Correctness] "can be represented by some (one or more) axis" contradicts Euler's rotation theorem cited right below: every rotation of $\mathbb R^3$ is a rotation about exactly one axis (unique unless the rotation is the identity).
+- [Correctness] The callout "Rotations in 3 dimensions can't be properly represented by an 3d vector ... requires 4 dimensions" is misleading: every rotation is represented by the 3-parameter axis-angle vector ($SO(3)$ is 3-dimensional); what fails is that axis-angle vectors do not compose by addition and do not record the path class, which the unit quaternion on $S^3\subset\mathbb R^4$ captures.
+- [Correctness] Symbol clash: the angle is $Θ$ in the first section and $θ$ in "Angular velocity"; also state that $\dot{\hat x}_b=ω_s\times\hat x_b$ requires all vectors expressed in frame $s$.
+
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/05 Lie Groups, Quaternions, and Spinors/03 Spinors/01 Rotation/Rotation using Matrices.md
+- [Correctness] "Because $SO(3)$ is fully contained in $SU(2)$" is wrong: $SO(3)$ is not a subgroup of $SU(2)$ but the quotient $SU(2)/\{\pm I\}$ via a 2-to-1 homomorphism; the line "$v'\leftrightarrow\pm s'$" should be replaced by the map $s\mapsto s^\dagger\vec\sigma s$ from spinors to vectors.
+- [Correctness] Gimbal lock is a property of Euler-angle parametrizations, not of $SO(3)$ matrices; rotation matrices and unit quaternions are both free of it. Rewrite the warning accordingly.
+- [Correctness] "Rotation matrices are not commutative" contradicts $SO(2)$, which the note treats at length and which is abelian ($R_θR_ϑ=R_{θ+ϑ}$); say $SO(n)$ is non-commutative for $n\ge3$.
+- [Correctness] "In the special case of a matrix with determinant of $-1$, it is considered to be in the group $S(n)$" is wrong: there is no such group; orthogonal matrices with $\det=-1$ form $O(n)\setminus SO(n)$, which is not a group (not closed under products).
+- [Correctness] Product rule: if $R_{AB}$ maps column components from frame A to frame B, then $R_{AC}=R_{BC}R_{AB}$, not $R_{AB}R_{BC}$; either reverse the order or define $R_{AB}$ as the orientation of B relative to A (Modern Robotics convention). Also the set definitions "$O(n)={R∈ℝ^{n×n}∣R^TR=I}$" lose their braces when rendered; use escaped braces.
+

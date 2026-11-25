@@ -28,7 +28,7 @@ Use this list to trace the chapter's treatment of integer and fractional Hall tr
 17. J. K. Jain, *Composite Fermions* (Cambridge University Press, 2007).
 18. J. K. Jain, A note contrasting two microscopic theories of the fractional quantum Hall effect. Indian J. Phys. **88**, 915–929 (2014).
 19. C. S. Unnikrishnan, Reconstructing quantum mechanics without foundational problems (2018), [arXiv:1812.06088](https://arxiv.org/abs/1812.06088).
-20. S. N. Bose, Plancks Gesetz und Lichtquantenhypothese (Planck's law and the light-quantum hypothesis). Zeitschrift für Physik **26**, 168–171 (1924).
+20. S. N. Bose, Plancks Gesetz und Lichtquantenhypothese (Planck's law and the light-quantum hypothesis). Zeitschrift für Physik **26**, 178–181 (1924).
 21. R. J. Willett, The quantum Hall effect at 5/2 filling factor. Rep. Prog. Phys. **76**, 076501 (2013).
 22. R. R. Du, H. L. Störmer, D. C. Tsui, L. N. Pfeiffer, K. W. West, Experimental evidence for new particles in the fractional quantum Hall effect. Phys. Rev. Lett. **70**, 2944–2947 (1993).
 23. A. H. Castro Neto, F. Guinea, N. M. R. Peres, K. S. Novoselov, A. K. Geim, The electronic properties of graphene. Rev. Mod. Phys. **81**, 109–162 (2009).

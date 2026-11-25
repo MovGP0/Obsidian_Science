@@ -427,9 +427,3 @@ where $\alpha_j>0$ is the squared norm. If every $\alpha_j=1$, the set is orthon
 ## Source
 
 Kyle Kabasares, *Numerical Analysis (Math 130, UC Merced 2016)*.
-
-## Physical quantities
-
-| Symbol | Unit | Quantity | Description |
-| --- | --- | --- | --- |
-| $x$ | $\unit{s}$ | Time | Independent variable in the particle example. The recorded values have no specified unit. |

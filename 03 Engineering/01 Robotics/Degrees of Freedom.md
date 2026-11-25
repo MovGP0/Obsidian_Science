@@ -3,7 +3,7 @@ title: Degrees of Freedom (DoF)
 aliases:
   - DoF
 ---
-- Describes the count of numbers (i.e. angles, lengths) that are required to describe the stationary state of a system.
+- Describes the count of numbers (i.e. angles, lengths) that is necessary to specify the configuration of a system (velocities are not included).
 - Easier to calculate in rigid bodies, since rigid bodies are assumed to not change their configuration (i.e. bending or squishing).
 
 ## Joint types
@@ -36,27 +36,27 @@ $$
 | Σ        | Summation over all joints                                       |                         |
 | i        | Joint index in the summation                                    | 1 … J                   |
 - The formula **assumes all constraints are independent**.
-  If geometric or kinematic dependencies exist (parallel constraints), Grübler’s result **overestimates mobility**.
+  If geometric or kinematic dependencies exist (parallel constraints), Grübler counts the dependent constraints as independent and subtracts too many. The result then **underestimates mobility** and is only a lower bound: actual DoF $\ge$ Grübler’s result.
 - For **planar mechanisms**, use:
     - `m = 3` (x, y, rotation)
 - For **spatial mechanisms**, use:
     - `m = 6` (x, y, z, roll, pitch, yaw)
 - Each joint contributes its own **local mobility `fᵢ`**
 
-### Examples for dependence of constraints
+### Examples
 
-- The **four-bar chain mechanism** has 4 linkages, but only 1 DoF:
+- The **four-bar chain mechanism** has $N = 4$ bodies (including the ground) and $J = 4$ revolute joints. Grübler gives $3\,(4 - 1 - 4) + 4 = 1$ DoF, which agrees with the actual mobility (all constraints are independent):
 
 ![[Pasted image 20251207114915.png]]
 
-- This mechanism has 6 linkages, but also only has 1 DoF
+- This mechanism is an example of **dependent constraints**. It has $N = 5$ bodies (ground, 3 parallel links, coupler) and $J = 6$ revolute joints. Grübler gives $3\,(5 - 1 - 6) + 6 = 0$ DoF, but the mechanism moves with 1 DoF, because the third parallel link adds a redundant constraint:
 
 ![[Pasted image 20251207115034.png]]
 
-- A [Stewart platform](https://en.wikipedia.org/wiki/Stewart_platform) has 6 DoF
+- A [Stewart platform](https://en.wikipedia.org/wiki/Stewart_platform) has $N = 14$ bodies (ground, platform, 6 legs with 2 bodies each) and $J = 18$ joints (6 universal, 6 prismatic, 6 spherical). Grübler gives $6\,(14 - 1 - 18) + (6 \cdot 2 + 6 \cdot 1 + 6 \cdot 3) = 6$ DoF:
 
 ![[Hexapod_general_Anim.gif]]
 
 ## See also
 
-- [Wikpedia: Degrees of Freedom (Mechanics)](https://en.wikipedia.org/wiki/Degrees_of_freedom_(mechanics))
+- [Wikipedia: Degrees of Freedom (Mechanics)](https://en.wikipedia.org/wiki/Degrees_of_freedom_(mechanics))

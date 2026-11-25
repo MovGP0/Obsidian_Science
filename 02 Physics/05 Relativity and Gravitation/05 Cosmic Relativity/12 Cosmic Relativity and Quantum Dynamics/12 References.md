@@ -13,7 +13,7 @@ Use this list to trace the chapter's treatment of Schrödinger evolution, action
 2. C. S. Unnikrishnan, *New Quantum Mechanics Without Foundational Problems*, described as forthcoming (2023) in the source.
 3. E. Schrödinger, An undulatory theory of the mechanics of atoms and molecules. *Phys. Rev.* **28**, 1049–1070 (1926).
 4. L. de Broglie, Ondes et quanta [Waves and quanta]. *C. R. hebd. Séanc. Acad. Sci. Paris* **177**, 507–510 (1923).
-5. C. S. Unnikrishnan, The ensemble nature of the Schrödinger equation and its wavefunction, and a new universal action mechanics, in *In Pursuit of Excellence — A tribute to G.*, ed. by G. Umesh et al. (Ramachandran, Sriranga Digital Software Technologies, Srirangapatna, 2022).
+5. C. S. Unnikrishnan, The ensemble nature of the Schrödinger equation and its wavefunction, and a new universal action mechanics, in *In Pursuit of Excellence — A tribute to G. Ramachandran*, ed. by G. Umesh et al. (Sriranga Digital Software Technologies, Srirangapatna, 2022).
 6. T. Norsen, *Foundations of Quantum Mechanics* (Springer International Publishing AG, 2017).
 7. S. Weinberg, The trouble with quantum mechanics, in *The New York Review of Books* (2017).
 8. A. Einstein, Physics and reality. *J. Franklin Inst.* **221**, 349–382 (1936); Quantum mechanics and reality (in German). *Dialectica* **2**, 320–324 (1948).
@@ -26,7 +26,7 @@ Use this list to trace the chapter's treatment of Schrödinger evolution, action
 15. D. Bohm, B. J. Hiley, *The Undivided Universe: An Ontological Interpretation of Quantum Theory* (Routledge, London, 1993).
 16. D. Bohm, B. J. Hiley, P. N. Kaloyerou, An ontological basis for the quantum theory. *Phys. Rep.* **144**, 321–375 (1987).
 17. M. Born, W. Heisenberg, P. Jordan, On quantum mechanics II. *Z. Phys.* **35**, 557–615 (1926).
-18. P. A. M. Dirac, *Principle of Quantum Mechanics* (Oxford University Press, 1930).
+18. P. A. M. Dirac, *The Principles of Quantum Mechanics* (Oxford University Press, 1930).
 19. J. von Neumann, *The Mathematical Foundations of Quantum Mechanics* (Princeton University Press, 1955).
 20. S. Weinberg, The cosmological constant problem. *Rev. Mod. Phys.* **61**, 1–23 (1989).
 

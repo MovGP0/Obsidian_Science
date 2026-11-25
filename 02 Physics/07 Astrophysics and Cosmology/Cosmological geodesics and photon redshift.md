@@ -214,20 +214,17 @@ Kyle Kabasares, *Cosmology (Physics 240B, UC Irvine 2018)*.
 
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
-| $z$ | $1$ | Redshift | Dimensionless shift of the observed wavelength relative to its emitted value. |
-| $t$ | $\unit{s}$ | Cosmic time | Age measured from the early-universe origin used in the course. |
-| $a$ | $1$ | Scale factor | Ratio of a physical separation at cosmic time $t$ to its value today for a pair of comoving points. |
+| $t$ | $\unit{s}$ | Cosmic time | Time coordinate $x^0$ of the FRW metric. |
+| $a$, $a_0$ | $1$ | Scale factor | Ratio of a physical separation at cosmic time $t$ to its value today for a pair of comoving points, and its reference value. |
 | $ds^2$ | $\unit{m^2}$ | Squared spacetime interval | Metric contraction of two coordinate differentials when the line element is expressed in length units. |
+| $g_{\mu\nu}$, $g^{\mu\nu}$ | $1$ | Metric tensor | Components of the metric and its inverse. |
+| $\Gamma^\mu_{\alpha\beta}$ | $\unit{m^{-1}}$ | Christoffel symbols | Connection coefficients in the geodesic equation and the covariant derivative. |
+| $\lambda$ | — | Affine parameter | Parameter along the geodesic with $\mechanical{P}^\alpha=dx^\alpha/d\lambda$. Its unit depends on this normalization. |
+| $\tau$ | $\unit{s}$ | Proper time | Elapsed time measured by a clock moving with a massive particle. |
 | $\mechanical{x}$, $\mechanical{y}$, $\mechanical{z}$, $\mechanical{r}$ | $\unit{m}$ | Spatial coordinates | The Cartesian coordinates and the spherical radial coordinate. |
-| $\theta$, $\phi$ | $\unit{rad}$ | Spherical angles | Polar angle and azimuth in the spherical line element. |
-| $\tau$ | $\unit{s}$ | Proper time | Elapsed time measured by a clock moving along the timelike path. |
-| $\mechanical{F}$, $\mechanical{m}$, $\mechanical{a}$ | $\unit{N}$, $\unit{kg}$, $\unit{m\,s^{-2}}$ | Force, mass and acceleration | Quantities in Newton's second law. The acceleration here is distinct from the cosmological scale factor $a$. |
-| $\mechanical{P}^\mu$ | $\unit{kg\,m\,s^{-1}}$ | Four-momentum | Tangent to the particle trajectory for an appropriate normalization of the affine parameter. Its time component in SI is $\energy{E}/\mechanical{c}$. |
-| $\energy{E}$ | $\unit{J}$ | Photon energy | Energy measured by a comoving observer, equal to $\mechanical{P}^0$ in natural units. |
+| $\mechanical{\vec s}$ | $\unit{m}$ | Position vector | Spatial position vector in spherical coordinates. |
+| $\theta$, $\phi$ | $\unit{rad}$ | Spherical angles | Polar angle and azimuth in spherical coordinates. |
+| $\mechanical{P}^\mu$, $\mechanical{\vec P}$ | $\unit{kg\,m\,s^{-1}}$ | Four-momentum | Tangent to the trajectory, and its spatial coordinate components. Its time component in SI is $\energy{E}/\mechanical{c}$. |
+| $\energy{E}$, $\energy{E}_0$ | $\unit{J}$ | Photon energy | Energy measured by a comoving observer, and its value at the reference scale factor. |
 | $\mechanical{\vec p}$ | $\unit{kg\,m\,s^{-1}}$ | Physical spatial momentum | Momentum components measured in a local orthonormal frame. |
-| $A$ | $\unit{m}$ | Comoving curvature radius | Radius of the embedded three-sphere before multiplication by the scale factor. |
-| $V$ | $\unit{m^3}$ | Proper spatial volume | A shell is evaluated at a fixed cosmic time. |
-| $\sigma$ | $\unit{m^2}$ | Reaction cross section | Averaged together with relative speed to obtain the rate coefficient. |
-| $\phi$ | $\unit{GeV}$ | Homogeneous scalar field | Field amplitude expressed in energy units with $\hbar=\mechanical{c}=1$. |
-| $\mu$ | $1$ | Direction cosine for a photon Fourier mode | Dot product of the photon direction with the wavevector direction. |
-| $\delta$ | $1$ | Density contrast | Ratio of a first-order density perturbation to the homogeneous background. For nonrelativistic matter of fixed particle mass, the number and mass density contrasts agree. |
+| $\mechanical{m}$ | $\unit{kg}$ | Particle mass | Rest mass in the mass-shell relation. |

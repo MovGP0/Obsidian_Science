@@ -178,10 +178,10 @@ At the same fixed normalization, $\mechanical{V}\propto\energy{L}_{\mathrm{sync}
 Substitute the luminosity relation to eliminate the electron normalization. For fixed observing-band limits,
 
 $$
-\energy{U}_e=C\energy{L}_{\mathrm{sync}}^{\mathrm{tot}}\magnetic{B}^{-3/2},
+\energy{U}_e=C_{12}\energy{L}_{\mathrm{sync}}^{\mathrm{tot}}\magnetic{B}^{-3/2},
 $$
 
-where $C$ depends on $\signal{\omega}_{\min}$, $\signal{\omega}_{\max}$, $p$, and fundamental constants.
+where the band constant $C_{12}$ depends on $\signal{\omega}_{\min}$, $\signal{\omega}_{\max}$, $p$, and fundamental constants.
 
 Problem set 5 was due June 4, 2019. The handwritten question says “photons,” while the example and the subsequent notation refer to cosmic-ray protons. The notes give $\energy{U}_p\simeq100\energy{U}_e$ for Galactic cosmic rays and $\energy{U}_p\sim\energy{U}_e$ in the Crab Nebula. Write $\energy{U}_p=k\energy{U}_e$. The notes cite arXiv:1702.07523 and give a range $\energy{U}_p\simeq(8\text{–}125)\energy{U}_e$.
 
@@ -189,11 +189,11 @@ For a field filling the whole volume, the sum of particle and field energies is
 
 $$
 \energy{U}_{\mathrm{tot}}=\energy{U}_e+\energy{U}_p+\energy{U}_{B,\mathrm{tot}}
-=(1+k)C\energy{L}_{\mathrm{sync}}^{\mathrm{tot}}\magnetic{B}^{-3/2}
+=(1+k)C_{12}\energy{L}_{\mathrm{sync}}^{\mathrm{tot}}\magnetic{B}^{-3/2}
 +\frac{\magnetic{B}^2}{8\pi}\mechanical{V}.
 $$
 
-The handwritten substitution drops $C$ and groups the field term inside the particle factor. The expression shown follows from the stated sum.
+The handwritten substitution drops $C_{12}$ and groups the field term inside the particle factor. The expression shown follows from the stated sum.
 
 ![[Kyle Kabasares - Radiative Transfer - Minimum energy magnetic field.png|**Fig. 77** At fixed synchrotron luminosity the particle energy decreases with increasing field, and the magnetic energy increases. Their sum has a minimum at $B_{\mathrm{eq}}$.]]
 
@@ -201,7 +201,7 @@ The equipartition estimate assumes that the source tends toward the field streng
 
 $$
 0=\left.\frac{d\energy{U}_{\mathrm{tot}}}{d\magnetic{B}}\right|_{\magnetic{B}_{\mathrm{eq}}}
-=-\frac{3}{2}(1+k)C\energy{L}_{\mathrm{sync}}^{\mathrm{tot}}\magnetic{B}_{\mathrm{eq}}^{-5/2}
+=-\frac{3}{2}(1+k)C_{12}\energy{L}_{\mathrm{sync}}^{\mathrm{tot}}\magnetic{B}_{\mathrm{eq}}^{-5/2}
 +\frac{\magnetic{B}_{\mathrm{eq}}\mechanical{V}}{4\pi}.
 $$
 
@@ -209,7 +209,7 @@ This gives
 
 $$
 \magnetic{B}_{\mathrm{eq}}
-=\left[\frac{6\pi}{\mechanical{V}}(1+k)C\energy{L}_{\mathrm{sync}}^{\mathrm{tot}}\right]^{2/7}.
+=\left[\frac{6\pi}{\mechanical{V}}(1+k)C_{12}\energy{L}_{\mathrm{sync}}^{\mathrm{tot}}\right]^{2/7}.
 $$
 
 At that field strength,
@@ -234,7 +234,10 @@ Historical field estimates for clusters with radio halos or relics, labeled 2004
 | Coma | $\quantity{\sim0.5}{\mu G}$ | $\quantity{\sim0.2}{\mu G}$ |
 | A366 | $\quantity{\sim2}{\mu G}$ | $\quantity{\sim3\text{–}5}{\mu G}$ |
 
-The Coma values are annotated as smaller than the central field. The notes next introduce Cygnus A, a double-lobed radio source in a galaxy cluster.
+The Coma values are annotated as smaller than the central field.
+
+> [!note]
+> The Coma value of about $\quantity{0.2}{\mu G}$ in the Faraday rotation column matches the inverse-Compton (hard X-ray) estimate. Faraday rotation measurements of Coma give several microgauss, about $\quantity{5}{\mu G}$ in the center (Bonafede et al. 2010). The cluster name “A366” is reproduced as written and is not verified against the source. The notes next introduce Cygnus A, a double-lobed radio source in a galaxy cluster.
 
 ## Source
 
@@ -244,22 +247,61 @@ Kyle Kabasares, *Radiative Transfer in Astrophysics (Physics 240C, UC Irvine 201
 
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
-| $\energy{L}$ | $\unit{erg\cdot s^{-1}}$ | Luminosity | Total radiant energy emitted per unit time. |
-| $\energy{E}$ | $\unit{erg}$ | Radiant energy | Energy emitted by the source. |
-| $t$ | $\unit{s}$ | Time | Elapsed time used to define the emission rate. |
-| $\energy{I}_{\signal{\nu}}$ | $\unit{erg\cdot s^{-1}\cdot cm^{-2}\cdot sr^{-1}\cdot Hz^{-1}}$ | Specific intensity | Radiated power per unit projected area, solid angle, and frequency. |
-| $\energy{I}$ | $\unit{erg\cdot s^{-1}\cdot cm^{-2}\cdot sr^{-1}}$ | Frequency-integrated intensity | Specific intensity integrated over frequency. |
-| $\energy{j}_{\signal{\nu}}$ | $\unit{erg\cdot s^{-1}\cdot Hz^{-1}\cdot sr^{-1}\cdot cm^{-3}}$ | Emission coefficient | Specific intensity added by spontaneous emission per unit path length. |
-| $\mechanical{n}$ | $\unit{cm^{-3}}$ | Number density | Number of absorbers per unit volume. |
-| $\energy{\alpha}_{\signal{\nu}}$ | $\unit{cm^{-1}}$ | Absorption coefficient | Fractional loss of specific intensity per unit path length. |
-| $\alpha$ | $1$ | Fine-structure constant | Dimensionless electromagnetic coupling constant. |
-| $\mechanical{\sigma}_{\mathrm{T}}$ | $\unit{cm^2}$ | Thomson cross section | Ratio of total scattered power to incident energy flux. |
-| $\energy{S}$ | $\unit{erg\cdot s^{-1}\cdot cm^{-2}}$ | Incident energy flux | Electromagnetic energy incident per unit time and area. |
-| $\energy{U}$ | $\unit{erg\cdot cm^{-3}}$ | Radiation energy density | Electromagnetic energy per unit volume in Gaussian CGS. |
-| $\thermal{T}$ | $\unit{K}$ | Brightness temperature | Temperature inferred from the intensity in the Rayleigh–Jeans limit in this section. |
-| $\energy{S}_{\signal{\nu}}$ | $\unit{erg\cdot s^{-1}\cdot cm^{-2}\cdot sr^{-1}\cdot Hz^{-1}}$ | Source function | Ratio of the emission coefficient to the absorption coefficient. |
+| $\signal{\omega}$ | $\unit{rad\cdot s^{-1}}$ | Angular frequency | Angular frequency of the synchrotron radiation. |
+| $s$ | 1 | Spectral index | Exponent in $\energy{\epsilon}(\signal{\omega})\propto\signal{\omega}^{-s}$. |
+| $\energy{\epsilon}(\signal{\omega})$ | $\unit{erg\cdot s^{-1}\cdot cm^{-3}\cdot (rad\cdot s^{-1})^{-1}}$ | Synchrotron emissivity | Synchrotron power per unit volume and angular-frequency interval. |
+| $\energy{j}(\signal{\omega})$ | $\unit{erg\cdot s^{-1}\cdot cm^{-3}\cdot sr^{-1}\cdot (rad\cdot s^{-1})^{-1}}$ | Emission coefficient | Synchrotron power per unit volume, solid angle, and angular-frequency interval. |
+| $\energy{E}$ | $\unit{erg}$ | Electron energy | Energy of one electron, $\gamma\mechanical{m}_ec^2$. |
+| $\mechanical{n}(\energy{E})$ | $\unit{cm^{-3}\cdot erg^{-1}}$ | Electron energy distribution | Number of electrons per unit volume and energy interval. |
+| $C$ | $\unit{cm^{-3}\cdot erg^{p-1}}$ | Distribution normalization | Normalization of the power-law electron energy distribution. |
+| $p$ | 1 | Electron energy index | Exponent of the power-law electron energy distribution. |
+| $\energy{L}_{\mathrm{sync}}$ | $\unit{erg\cdot s^{-1}}$ | Single-electron synchrotron power | Power radiated by one electron of energy $\energy{E}$. |
+| $\mechanical{v}_r$ | $\unit{km\cdot s^{-1}}$ | Recession speed | Recession speed of the homework source. |
+| $H_0$, $h$ | $\unit{km\cdot s^{-1}\cdot Mpc^{-1}}$, $1$ | Hubble constant | Hubble constant and its dimensionless form. |
+| $\mechanical{D}$ | $\unit{Mpc}$ | Distance | Hubble-law distance of the homework source. |
+| $\thermal{T}$ | $\unit{K}$ | Gas temperature | Temperature of the hot cluster gas. |
+| $\mechanical{n}_e$, $\mechanical{n}_i$ | $\unit{cm^{-3}}$ | Electron and ion number densities | Numbers of electrons and ions per unit volume in the hot gas. |
+| $Z$ | 1 | Ion charge number | Charge number of the ions in the free–free emissivity. |
+| $\bar{g}$ | 1 | Gaunt factor | Frequency-averaged Gaunt factor of the free–free emission. |
+| $\mechanical{M}_{\mathrm{gas}}$, $\mechanical{M}_{\mathrm{tot}}$ | $\unit{g}$ | Gas mass and total mass | Mass of the hot gas and total mass within radius $\mechanical{r}$. |
+| $\mechanical{M}_\odot$ | $\unit{g}$ | Solar mass | Mass of the Sun. |
+| $\energy{E}_{\mathrm{th}}$ | $\unit{erg}$ | Thermal energy | Thermal energy of the hot gas. |
+| $t_{\mathrm{cool}}$ | $\unit{yr}$ | Cooling time | Time for the gas to radiate its thermal energy. |
+| $\mechanical{P}$ | $\unit{dyn\cdot cm^{-2}}$ | Gas pressure | Pressure of the hot gas. |
+| $\mechanical{r}$ | $\unit{cm}$ | Radius | Distance from the cluster center. |
+| $\mechanical{\rho}_{\mathrm{gas}}$ | $\unit{g\cdot cm^{-3}}$ | Gas density | Mass density of the hot gas. |
+| $G$ | $\unit{cm^3\cdot g^{-1}\cdot s^{-2}}$ | Gravitational constant | Constant in Newton’s law of gravitation. |
+| $k_{\mathrm B}$ | $\unit{erg\cdot K^{-1}}$ | Boltzmann constant | Relates temperature to energy. |
+| $\mu$ | 1 | Mean molecular weight | Mean particle mass in atomic mass units. |
+| $\mechanical{m}_a$ | $\unit{g}$ | Atomic mass unit | Mass unit for the mean particle mass. |
+| $f_{\mathrm{gas}}$, $f_{\mathrm{baryon}}$ | 1 | Gas and baryon fractions | Ratio of gas mass, or baryon mass, to total mass. |
+| $z$ | 1 | Redshift | Cosmological redshift of the source. |
+| $\gamma$ | 1 | Lorentz factor | Lorentz factor of the electron. |
+| $\theta$ | $\unit{rad}$ | Beam angular radius | Angular radius of the relativistic emission cone. |
+| $\Delta t_{\mathrm{pulse}}$ | $\unit{s}$ | Pulse duration | Duration of the pulse that the observer receives. |
 | $\signal{\omega}_B$ | $\unit{rad\cdot s^{-1}}$ | Angular cyclotron frequency | Angular rate of nonrelativistic gyration in a magnetic field. |
-| $\energy{U}_B$ | $\unit{erg\cdot cm^{-3}}$ | Magnetic energy density | Magnetic field energy per unit volume. |
 | $\signal{\omega}_c$ | $\unit{rad\cdot s^{-1}}$ | Critical synchrotron angular frequency | Characteristic frequency scale above which the single-electron spectrum decays rapidly. |
+| $\alpha$ | $\unit{rad}$ | Pitch angle | Angle between the electron velocity and the magnetic field. |
+| $\electric{e}$ | $\unit{statC}$ | Elementary charge | Charge of the electron. |
+| $\magnetic{B}$ | $\unit{G}$ | Magnetic field | Magnetic field strength in the emitting region. |
+| $\mechanical{m}_e$ | $\unit{g}$ | Electron mass | Mass of the electron. |
+| $c$ | $\unit{cm\cdot s^{-1}}$ | Speed of light | Speed of light in vacuum. |
+| $\mechanical{v}$ | $\unit{cm\cdot s^{-1}}$ | Electron speed | Speed of the electron. |
+| $\mechanical{\sigma}_{\mathrm{T}}$ | $\unit{cm^2}$ | Thomson cross section | Ratio of total scattered power to incident energy flux. |
+| $\energy{U}_B$ | $\unit{erg\cdot cm^{-3}}$ | Magnetic energy density | Magnetic field energy per unit volume. |
+| $\energy{E}_1$, $\energy{E}_2$, $\energy{E}_{\min}$, $\energy{E}_{\max}$ | $\unit{erg}$ | Energy limits | Lower and upper limits of the power-law electron energy distribution. |
 | $\Pi$ | $1$ | Degree of polarization | Polarized intensity divided by total intensity. |
+| $\energy{E}_\gamma$ | $\unit{erg}$ | Photon energy | Energy of the emitted photon, $\hbar\signal{\omega}$. |
+| $\energy{\alpha}_{\signal{\nu}}$ | $\unit{cm^{-1}}$ | Absorption coefficient | Fractional loss of specific intensity per unit path length. |
+| $\signal{\nu}$ | $\unit{Hz}$ | Frequency | Frequency of the radiation. |
+| $\energy{j}_{\signal{\nu}}$ | $\unit{erg\cdot s^{-1}\cdot Hz^{-1}\cdot sr^{-1}\cdot cm^{-3}}$ | Emission coefficient per frequency | Synchrotron power per unit volume, solid angle, and frequency. |
+| $\energy{S}_{\signal{\nu}}$ | $\unit{erg\cdot s^{-1}\cdot cm^{-2}\cdot sr^{-1}\cdot Hz^{-1}}$ | Source function | Ratio of the emission coefficient to the absorption coefficient. |
+| $\energy{I}_{\signal{\nu}}$ | $\unit{erg\cdot s^{-1}\cdot cm^{-2}\cdot sr^{-1}\cdot Hz^{-1}}$ | Specific intensity | Radiated power per unit projected area, solid angle, and frequency. |
+| $\energy{U}_e$, $\energy{U}_p$ | $\unit{erg}$ | Particle energies | Total energy in the relativistic electrons and in the cosmic-ray protons. |
+| $\mechanical{V}$ | $\unit{cm^3}$ | Volume | Volume occupied by the emitting electrons and the field. |
+| $\energy{L}_{\mathrm{sync}}^{\mathrm{tot}}$ | $\unit{erg\cdot s^{-1}}$ | Total synchrotron luminosity | Synchrotron luminosity integrated over the observed band. |
+| $C_{12}$ | — | Band constant | Constant that relates $\energy{U}_e$ to $\energy{L}_{\mathrm{sync}}^{\mathrm{tot}}\magnetic{B}^{-3/2}$. It depends on the band limits and $p$. |
+| $k$ | 1 | Proton-to-electron energy ratio | Ratio $\energy{U}_p/\energy{U}_e$. |
+| $\energy{U}_{B,\mathrm{tot}}$, $\energy{U}_{\mathrm{tot}}$ | $\unit{erg}$ | Magnetic and total energy | Total magnetic energy in the volume, and the sum of particle and field energies. |
 | $\magnetic{B}_{\mathrm{eq}}$ | $\unit{G}$ | Equipartition magnetic field | Field strength minimizing the total particle and magnetic energy at fixed synchrotron luminosity. |
+| $f$ | 1 | Volume filling factor | Fraction of the volume that the emitting field fills. |

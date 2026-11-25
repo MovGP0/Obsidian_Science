@@ -1,0 +1,16 @@
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/07 Category Theory/Category.md
+- [Correctness] Under "Compositions", for $f:A\to B$ and $g:B\to C$ the composite is $g\circ f:A\to C$, not $h=f\circ g$; the note's own associativity law $(h\circ g)\circ f$ uses the right-to-left convention, so the composition line contradicts it.
+- [Correctness] The identity law "$I_e(e)=e$" applies a morphism to an element, which a general category does not provide; the law is $f\circ\mathrm{id}_A=f=\mathrm{id}_B\circ f$ for every $f:A\to B$.
+- [Correctness] "Objects are Elements in a Set" with the set-order and repetition examples is wrong and irrelevant: objects need not form a set (e.g. in $\mathbf{Set}$ itself) and need not have elements, and morphisms need not be functions between sets ("transformation functions"). Remove the set examples and give $\mathbf{Set}$, $\mathbf{Grp}$, $\mathbf{Vect}$ and a poset as examples.
+
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/07 Category Theory/Equivalence.md
+- [Correctness] "Two groups $C$ and $D$" should be "two categories"; an equivalence consists of functors $F:C\to D$ and $G:D\to C$ with natural isomorphisms $G\circ F\cong1_C$ and $F\circ G\cong1_D$ (the categories themselves are not "natural isomorph").
+- [Correctness] The natural-transformation paragraph omits the defining condition: $\nu:F\Rightarrow G$ is a family $\nu_X:F(X)\to G(X)$ with $G(f)\circ\nu_X=\nu_Y\circ F(f)$ for every $f:X\to Y$; it is a natural isomorphism when every $\nu_X$ is invertible, which is what $\nu^{-1}$ should express.
+
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/07 Category Theory/Functor.md
+- [Correctness] "A Functor is a map between two sets" is wrong; a functor maps between categories (objects to objects, morphisms to morphisms), as the next sentence correctly says. Delete the first sentence.
+
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/07 Category Theory/Isomorphism.md
+- [Correctness] The text calls the equations "$f\circ f^{-1}=I_B$ and $f^{-1}\circ f=I_A$" the isomorphisms; correctly, $f:A\to B$ is an isomorphism if some $g:B\to A$ satisfies $g\circ f=\mathrm{id}_A$ and $f\circ g=\mathrm{id}_B$, and then $g=f^{-1}$ is unique.
+- [Correctness] "isomorphisms between two sets" should be "between two objects" of a category; in $\mathbf{Set}$ isomorphisms are bijections, in $\mathbf{Grp}$ group isomorphisms, in $\mathbf{Top}$ homeomorphisms. Add these examples, a quoted title, and a TLDR.
+

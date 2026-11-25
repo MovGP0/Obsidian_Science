@@ -1,0 +1,46 @@
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.06.02 Interpretation in Terms of the Gravitational Potentials.md
+- PARTLY | A_i=g_0i/g_00 mismatches (10.11) in units and gamma power | Note box already stated the unit mismatch; added that g'_0i/g'_00=(v_i/c)gamma^2 is dimensionless with gamma^2 and disagrees with (10.11) even with Phi_u=-c^2
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.06.03 The Time Dilation of Physical Clocks.md
+- FIXED | lambda_r introduced but unused | Inserted lambda_r into (10.13) as the clock-rate ratio equal to sqrt(1-v^2/c^2)
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.06.05 The Propagation of Light.md
+- FIXED | Two-way duration should be 2L/c; unify L_x and L | Set T=2L/c, (10.14) T'=2L/c', c'T'=cT=2L, note box updated; replaced L_x by L in text and table
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.07.01 Laws of Dynamics - Newton's Law of Motion.md
+- FIXED | Inconsistent signs in (10.16) | Rewrote (10.16) with Phi_u=-abs(Phi_u) ending in F_react=-(abs(Phi_u)/c^2)(...); defined applied F=-F_react; (10.18), (10.19) and the c^2 normalisation use abs(Phi_u); note box rewritten; F_react added to table
+- FIXED | Extra gamma in (10.17) | Right side now (abs(Phi_u)/c^2) dp/dt
+- FIXED | g_0i=-v_i/c=A_i conflicts with A'_i | Added that this A_i is dimensionless and equals A'_i/abs(Phi_u)=-gamma v_i/c only for gamma approx 1
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.08.02 The Centrifugal Force.md
+- FIXED | -Phi_u/c^2 with Phi_u approx -c^2 makes reaction centripetal | Replaced Phi_u by abs(Phi_u) in (10.20) and (10.21) and added one sentence that the reaction points outward
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.08.03 The Coriolis Force.md
+- FIXED | Coriolis sign -2m u x Omega is reversed | (10.22) now ends in +2 gamma m_i u x Omega; text, a_k and both Fig. 10.4 caption formulas changed to -2(m_i) Omega x u (the SVG has no formula)
+- FIXED | Power of c in curl step and missing curl(Omega x r)=2 Omega | Coupling written (m/c) u x B_g so units are force and the c^2 step is correct; added v=Omega x r, curl=2 Omega, m_i=abs(Phi_u)m/c^2; B_g unit set to source-dependent; r added to table
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.09 The Twist in Tropical Cyclones.md
+- FIXED | Vertical component should be 2 Omega sin lambda | Changed to vertical component of magnitude 2 Omega sin lambda
+- FIXED | Phi_i undefined; force sign wrong | Phi_i to Phi_u (text and table); force now -2m Omega sin lambda z-hat x v with a sentence on the Coriolis parameter and right deflection; source sign of B_g approx -2 Omega kept as printed
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.10.02 Weightlessness in Free Fall and the EEP.md
+- FIXED | Sign chain in (10.24) and g=-a | (10.24) left side now m g; text now gives a=g with abs(Phi_u)/c^2=1; (10.23) ends -m_i a=-m_i g; note box rewritten
+- FIXED | Phi without subscript, partial derivative, phi vs phi_l | (10.23) uses abs(Phi_u) and dv/dt; text uses phi_l only; table row trimmed
+- PARTLY | EM analogue is Gaussian, not SI | The formulas are consistent Gaussian expressions, not an error; added the label (in Gaussian units)
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.10.03 Two Kinds of Gravitational Forces and the Geodesic Principle.md
+- FIXED | Sign and factor c in g_a=-dg_0i/dt=-dv/dt | Changed to g_a=c dg_0i/dt=-dv/dt (induced field opposes acceleration, as in 10.10.02); stated g_0i=-v/c; note box updated
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.11 The EEP and the Time Dilation of Clocks in an Accelerated Frame.md
+- FIXED | Sign of Delta T=Tgd/c^2 depends on undefined direction | Defined x upward against the field so phi(x1)-phi(x2)=gd and d is the height of C1 above C2; added that the higher clock runs faster; table updated
+- FIXED | signal gamma should be mechanical gamma | Replaced in text and table
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.12.02 Motional Time Dilation in Cosmic Relativity.md
+- FIXED | signal gamma should be mechanical gamma | Replaced in equation and table
+- FIXED | energy macro wraps delta and sign conflicts with E_g=-m Phi_u | Now delta E_g=-m delta phi with delta outside the macro (text and table)
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.12.03 Synchronisation of Clocks in Cosmic Relativity.md
+- FIXED | CMB uniform to few microkelvin and 1e-6 is wrong | Kept the source statement and added a correction: after 3.36 mK dipole removal anisotropies are tens of microkelvin, Delta T/T ~ 1e-5 (link to 10.04), mean 2.7255 K; Delta T row added
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.12.04 The Addition of Velocities in Cosmic Relativity.md
+- FIXED | signal gamma should be mechanical gamma | Replaced all four occurrences
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.13.02 The Optical Aberration and the Fresnel Drag.md
+- FIXED | Refraction multiplies angle by n, not 1/n | Text now says exit refraction multiplies the small angle by n (Snell)
+- FIXED | c' -/+ v inconsistent with (10.39) | Defined c'_+/- = c/n +/- v/n^2 from (10.38) as telescope-frame speeds against and along the motion, with c'-v=c'_- as example
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.14 The Unipolar Induction.md
+- FIXED | (10.40) scalar equals vector and wrong sign | (10.40) now F=q v x B with magnitude mu0 i1 q v/(2 pi r) for v parallel to the wire; added a sentence on the source form; table rows include vector F and v
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.16 Summary.md
+- FIXED | B_g=-2 Omega Phi_u/c^2 vs -2 Omega in 10.15 | Replaced by the 10.15 form B_g=c curl g_0i=-2 Omega and stated that it is the normalised form with g_0i=-v_i/c
+- FIXED | signal gamma should be mechanical gamma | Replaced in potentials and table
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/11 The Crucial Experimental Tests of Cosmic Relativity/11 References.md
+- FIXED | Krisher et al. is Phys. Rev. D 42 (1990) | Changed to Phys. Rev. D 42, 731-734 (1990)
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/11 The Crucial Experimental Tests of Cosmic Relativity/11.01.01 Past Experiments on the One-Way Propagation of Light.md
+- FIXED | Fig. 11.1 reference attached to Ruderfer disc | Removed the reference from the Ruderfer paragraph and added (Fig. 11.1) to the Krisher fibre-test paragraph; figure embed position unchanged

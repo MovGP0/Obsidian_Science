@@ -1,0 +1,38 @@
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/01 Elementary Topology/Box counting and random-walk distributions.md
+- FIXED | Physical-quantities table has foreign rows (carrying capacity M, wolf rate delta, ingredient x,y, protein s, iron t, 1/alpha) clashing with this note | Removed the six foreign rows; added rows for Delta y, box size L, square side M, positions x,y, signed step s and time t (all with length or time units)
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/2 Vector operations/2.11 Laplacian.md
+- REJECTED | phi is scalar field and azimuth; use psi throughout | The note explicitly introduces psi as the scalar field before Eqs. (2.51)-(2.52), so each equation is unambiguous; renaming phi would also contradict the phi_0 labels in Fig. 2.17 and its caption
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/3 Vector applications/3.5 Chapter 3 problems.md
+- PARTLY | Problem 3.3 mass unspecified; speed depends on m; accelerates only for m<1.41 kg | Dependence on m and the 1.41 kg limit are correct (g(sin25+0.33cos25)=7.08 m/s^2); no source mass is known, so instead of inventing one the problem now asks for the speed as a function of m and states the m<1.41 kg condition
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/5 Higher-rank tensors/5.5 Metric tensor.md
+- FIXED | phi is azimuth and scalar field; theta is inter-vector angle and polar angle | Renamed the scalar field in the gradient and Laplacian formulas to f and the angle between A and B to vartheta (with a short defining phrase)
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/6 Tensor applications/6.1 The inertia tensor.md
+- PARTLY | a is acceleration, pyramid half-side and component index | Index clash is real: renamed component indices a,b to j,k in I_jk; kept the half-side a because Fig. 6.2 labels it a and the text marks it as a length, distinct from the vector acceleration vec a
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/6 Tensor applications/6.2 The electromagnetic field tensor.md
+- FIXED | v is wave speed and frame speed; A is vector field and Lorentz matrix | Renamed the field in Eq. (6.12) to vec Psi and its speed to u; added a wave-speed row for u to the table
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/6 Tensor applications/6.4 Chapter 6 problems.md
+- FIXED | Table lists theta only as rotation angle but Problem 6.9 uses it as polar angle | The 20 degree rotation has no symbol in the text, so the theta row now describes the polar angle of Problem 6.9
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/03 Metrics, Connections, and Curvature/Surface geometry curvature and geodesics.md
+- FIXED | f is graph function and second-form coefficient; F is level-surface function and first-form coefficient | Renamed second-form coefficients e,f,g to L,M,N (definition, k_n formula, paraboloid example) and the implicit function F to Phi; also removed the UTF-8 BOM and stored with LF
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/04 Differential Forms and Moving Frames/Exterior Product.md
+- FIXED | (a wedge b)_i = eps_ijk a_j e_j b_k e_k mixes components and basis vectors | Replaced by bivector components (a wedge b)_jk = a_j b_k - a_k b_j and added that its 3D Hodge dual is (a x b)_i = eps_ijk a_j b_k
+- FIXED | c_i = eps_ijkl a_j b_k e_l uses a four-index symbol in 3D | Replaced by c = 1/2 (a_j b_k - a_k b_j) e_j wedge e_k
+- FIXED | 2D exterior product written as cross product; higher order version inverts relation | 2D formula now a wedge b = (a_x b_y - a_y b_x) e_x wedge e_y with text on the unit bivector; intro now says the wedge exists in every dimension and is dual to the cross product in 3D; converted CRLF to LF
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/05 Lie Groups, Quaternions, and Spinors/03 Spinors/01 Rotation/Algebra of Rotation.md
+- FIXED | Heading says SO(n) but lists complex numbers, quaternions, spinors | Retitled heading to Representations of Rotations (no incoming heading links) and stated the group each item realizes: SO(3), SO(n), U(1)=SO(2), SU(2) double cover, Spin(3)
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/05 Lie Groups, Quaternions, and Spinors/03 Spinors/01 Rotation/Homotopology classes in the Axis-Angle Space.md
+- FIXED | winding number greater than 0 suggests integer invariant; pi_1(SO(3)) = Z_2 | Now states no integer winding number and that pi_1(SO(3)) = Z_2 gives exactly two classes
+- FIXED | Space described vaguely as loop around spherical space shown as circle | Now describes the solid ball of radius pi with antipodal boundary points identified (RP^3) and the teleport as continuing from the antipodal boundary point
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/05 Lie Groups, Quaternions, and Spinors/03 Spinors/01 Rotation/Homotopology.md
+- FIXED | homotopic when they have the same Topology is wrong | Replaced the callout with the definition via H:[0,1]x[0,1]->X, H(.,0)=gamma_0, H(.,1)=gamma_1, fixed endpoints or free for loops
+- FIXED | homotopic class defined by winding number only true for pi_1 = Z | Defined classes generally via pi_1(X), kept winding number as the Z example (circle, annulus, cylinder) and noted pi_1(SO(3)) = Z_2
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/05 Lie Groups, Quaternions, and Spinors/03 Spinors/01 Rotation/Rotation using Axis-Angle Vector.md
+- FIXED | some (one or more) axis contradicts Euler rotation theorem | Now says exactly one axis, unique unless the rotation is the identity
+- FIXED | Callout says 3D rotations cannot be represented by a 3d vector, need 4 dimensions | Rewrote: axis-angle vector represents every rotation (SO(3) is 3-dimensional) but does not compose by addition or record the path class, which the unit quaternion on S^3 in R^4 records
+- FIXED | Angle is Theta then theta; frame of omega_s x x_b unstated | Changed theta to Theta in the angular-velocity section and stated that all vectors are expressed in frame s; converted CRLF to LF
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/05 Lie Groups, Quaternions, and Spinors/03 Spinors/01 Rotation/Rotation using Matrices.md
+- FIXED | SO(3) fully contained in SU(2) is wrong; v-prime <-> +-s-prime | Replaced with v_i = s^dagger sigma_i s (s and -s give the same vector) and stated SO(3) = SU(2)/{+-I} via a 2-to-1 homomorphism, not a subgroup
+- FIXED | Gimbal lock attributed to SO(3) matrices | Warning now attributes gimbal lock to Euler-angle parametrizations and says matrices and unit quaternions are free of it
+- FIXED | Rotation matrices not commutative contradicts abelian SO(2) | Restricted to SO(n), n>=3, in general, and added R_Theta R_vartheta = R_(Theta+vartheta) for SO(2)
+- FIXED | det = -1 matrices in group S(n) is wrong | Now says orthogonal det -1 matrices form O(n)\SO(n), which is not a group because products have det +1
+- FIXED | Product rule order wrong for A-to-B maps; set braces lost | Changed to R_BC R_AB = R_AC matching the stated A-to-B convention; escaped braces in the O(n) and SO(n) set definitions; converted CRLF to LF

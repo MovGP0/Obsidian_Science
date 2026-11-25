@@ -82,7 +82,7 @@ The force is entropic because the ideal model takes the internal energy to be in
 In particular, require $\mechanical{r}/(N\mechanical{\ell})\ll1$. A finite chain cannot extend beyond its contour length, whereas a Gaussian assigns nonzero weight beyond it. Excluded-volume effects and directional correlations also change the ideal-chain model. Thus the linear law must not be extrapolated to full extension.
 
 > [!note] Remark C.2
-> Random walks are related to Euclidean quantum mechanics by the Wick rotation $\mechanical{t}\to-i\mechanical{\tau}$. The real-time propagator
+> Random walks are related to Euclidean quantum mechanics by the Wick rotation $\mechanical{t}\to-i\mechanical{\tau}_{\mathrm E}$. The real-time propagator
 >
 > $$
 > \langle\mechanical{x}|
@@ -94,7 +94,7 @@ In particular, require $\mechanical{r}/(N\mechanical{\ell})\ll1$. A finite chain
 >
 > $$
 > \langle\mechanical{x}|
-> e^{-\energy{H}\mechanical{\tau}/\signal{\hbar}}
+> e^{-\energy{H}\mechanical{\tau}_{\mathrm E}/\signal{\hbar}}
 > |\mechanical{x}'\rangle.
 > $$
 >
@@ -110,7 +110,9 @@ The Wick-rotation remark is a relation between evolution kernels, not an identif
 | $\mechanical{\kappa}$ | $\unit{N\,m^{-1}}$ | Entropic spring constant | The coefficient relating extension to restoring-force magnitude. |
 | $\mechanical{\mathbf r},\mechanical{r},\mechanical{x}_i,\mechanical{\ell}$ | $\unit{m}$ | End-to-end displacement and step length | The displacement vector, its magnitude and components, and the length of one link. |
 | $\mechanical{F}$ | $\unit{N}$ | Restoring force | The radial force directed towards the unextended state. |
-| $\mechanical{t},\mechanical{\tau}$ | $\unit{s}$ | Time variables | Real time, step interval, or imaginary time, as specified in each context. |
+| $\mechanical{t}$ | $\unit{s}$ | Time | The real elapsed time of the walk or of the quantum propagator. |
+| $\mechanical{\tau}$ | $\unit{s}$ | Step interval | The time interval of one random-walk step. |
+| $\mechanical{\tau}_{\mathrm E}$ | $\unit{s}$ | Imaginary time | The Euclidean time variable after the Wick rotation. |
 | $\mechanical{x},\mechanical{x}'$ | $\unit{m}$ | Propagator endpoints | The initial and final position coordinates. |
 | $\signal{\hbar}$ | $\unit{J\,s}$ | Reduced Planck constant | The quantum of action divided by two pi. |
 | $\thermal{k}_{\mathrm B}$ | $\unit{J\,K^{-1}}$ | Boltzmann constant | The constant that converts temperature to energy. |

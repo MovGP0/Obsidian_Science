@@ -1,5 +1,3 @@
-A **Functor** is a map between two sets.
-
 A functor $F : C \rightarrow D$ between two categories $C$ and $D$ consists of
 - A Function on objects
 - A Function on morphisms

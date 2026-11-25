@@ -1,0 +1,34 @@
+=== 01 Mathematics/10 Numerical Methods and Optimization/01 Error, Floating Point, and Root Finding/Bisection, fixed-point, Newton, and secant iterations.md
+- PARTLY | Symbol clashes for ell, alpha and g | Confirmed for the multiplier, contraction constant, Homework step and identity map: renamed multiplier ell(x) to omega(x), theorem constant ell to q (matches proof), Homework step alpha to mu, identity g(x)=x to id(x) and line y=x; kept alpha_n to alpha in the Definition 1.18 section (separate textbook section, alpha is not reused there)
+- FIXED | Physical quantities table lists nonexistent particle time x | Removed the Physical quantities section (note defines no physical quantities)
+
+=== 01 Mathematics/10 Numerical Methods and Optimization/01 Error, Floating Point, and Root Finding/Taylor error bounds and finite-digit arithmetic.md
+- FIXED | Sine degree bound orders of magnitude off by one | Changed orders to 10^-6, 10^-7, 10^-8 at n=7,8,9 (python: 3.59e-6, 3.13e-7, 2.46e-8)
+- FIXED | Example 3 link points to the wrong section and label is duplicated | Replaced the linked Example 3 label with plain text One example; kept Example 3 for the cosine example
+- FIXED | Physical quantities table describes nothing in this note | Removed the Physical quantities section
+- FIXED | Forward-difference error at h=1e-7 is 4.62e-8, not 4.66e-8 | Changed table value to 4.62e-8 (python check); also corrected h=1e-10 row from 1.66e-7 to 1.67e-7 (computed 1.6697e-7)
+
+=== 01 Mathematics/10 Numerical Methods and Optimization/02 Interpolation, Approximation, and Quadrature/Chebyshev nodes and least-squares approximation.md
+- FIXED | Physical quantities table lists nonexistent particle time x | Removed the Physical quantities section
+
+=== 01 Mathematics/10 Numerical Methods and Optimization/02 Interpolation, Approximation, and Quadrature/Finite differences and Richardson calculations.md
+- FIXED | Particle position f clashes with generic function f | Confined the particle framing to its paragraph: position is now s(t) at times t, the backward-difference remark says f=s, and the table rows are t and s(t)
+
+=== 01 Mathematics/10 Numerical Methods and Optimization/02 Interpolation, Approximation, and Quadrature/Least-squares and numerical calculus review problems.md
+- FIXED | Table lists only x as time while note uses height and weight | Replaced the time row with height x (m) and weight y, y-hat (N) rows for the regression example, noting the data give no units
+
+=== 01 Mathematics/10 Numerical Methods and Optimization/02 Interpolation, Approximation, and Quadrature/Polynomial and spline interpolation problems.md
+- FIXED | Physical quantities table lists nonexistent particle time x | Removed the Physical quantities section
+
+=== 01 Mathematics/10 Numerical Methods and Optimization/02 Interpolation, Approximation, and Quadrature/Trapezoidal, Simpson, and Gaussian quadrature.md
+- FIXED | Physical quantities table lists nonexistent particle time x | Removed the Physical quantities section
+
+=== 01 Mathematics/10 Numerical Methods and Optimization/04 Linear, Nonlinear, and Discrete Optimization/A product-mix simplex tableau.md
+- FIXED | Table includes soup x, y and surplus s not in the note | Removed the x, y and s rows; kept s1, s2 (component counts are dimensionless, not added)
+
+=== 01 Mathematics/10 Numerical Methods and Optimization/04 Linear, Nonlinear, and Discrete Optimization/Constrained estimation and model fitting.md
+- FIXED | Table (Lyapunov exponent, soup, surplus) describes nothing here | Removed the Physical quantities section (lambda is a Lagrange multiplier)
+
+=== 01 Mathematics/10 Numerical Methods and Optimization/04 Linear, Nonlinear, and Discrete Optimization/Linear programming and gradient-search problems.md
+- FIXED | Table describes population models instead of this note | Rewrote the table: soup amounts x, y, surpluses u, w, search time t, center position x(t), y(t), radius R, radial distance r, density p, horizon T
+- FIXED | t and s clash across soup, simplex and spiral examples | Renamed soup surpluses s, t to u, w and simplex slacks r, s, t to s1, s2, s3; t now means time only in the examples

@@ -41,7 +41,7 @@ The notes identify planar, spherical, and cylindrical boundaries as geometries t
 
 ![[Kyle Kabasares - Electrodynamics - Planar spherical and cylindrical boundaries.png|**Fig. 26** The three boundary geometries listed in the lecture. The planar example places the boundary at $x=0$.]]
 
-For a point charge on the right of a plane held at zero potential, use the potential of two charges on the right-hand side. On the conducting side the potential is zero.
+For a point charge on the right of a plane held at zero potential, use, in the right-hand region, the potential of the real charge and its mirror image on the left. On the conducting side the potential is zero.
 
 ![[Kyle Kabasares - Electrodynamics - Point charge beside a grounded plane.png|**Fig. 27** The real charge $\electric{Q}$ lies on the right of the grounded plane.]]
 
@@ -56,7 +56,7 @@ $$
 \right).
 $$
 
-The distances are equal on the plane, so the potential there is zero. For a grounded sphere, the exterior potential is likewise the sum of the real-charge potential and an image potential, with the image strength $\electric{q}$ and location $\mechanical{\vec x}''$ determined by the sphere and the real charge. The interior conductor is at zero potential. See Jackson, equation 2.4. The notes mention a similar construction for cylindrical geometry.
+The distances are equal on the plane, so the potential there is zero. For a grounded sphere, the exterior potential is likewise the sum of the real-charge potential and an image potential, with the image strength $\electric{q}'$ and location $\mechanical{\vec x}''$ determined by the sphere and the real charge. The interior conductor is at zero potential. See Jackson, equation 2.4. The notes mention a similar construction for cylindrical geometry.
 
 ![[Kyle Kabasares - Electrodynamics - Point charge beside a grounded sphere.png|**Fig. 28** A point charge $\electric{Q}$ is outside a sphere held at zero potential.]]
 

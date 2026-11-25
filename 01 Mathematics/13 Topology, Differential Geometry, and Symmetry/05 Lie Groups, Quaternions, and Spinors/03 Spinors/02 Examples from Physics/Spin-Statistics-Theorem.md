@@ -1,1 +1,1 @@
-A fermionic (spinor-valued) multi-particle wavefunction will pick up a minus sign, when any two particles are exchanged.
+In relativistic quantum field theory, particles with integer spin obey Bose statistics (symmetric wavefunction), and particles with half-integer spin obey Fermi statistics (antisymmetric wavefunction). Thus a fermionic (spinor-valued) multi-particle wavefunction picks up a minus sign when two identical particles are exchanged.

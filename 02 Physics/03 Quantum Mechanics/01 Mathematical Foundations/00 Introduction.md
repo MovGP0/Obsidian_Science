@@ -11,13 +11,13 @@ The book has five parts.
 
 **Part I (Chapters 1–3)** establishes the foundations of analysis: complex numbers and Euler's formula, differential and integral calculus and their applications to operators, ordinary differential equations, and the eigenvalue problem.
 
-**Part II (Chapters 4–7)** develops linear algebra in its complex form: vector spaces over $\mathbb{C}$, linear operators and matrices, eigenvalues and unitary diagonalization, and Hilbert space as an infinite-dimensional completion.
+**Part II (Chapters 4–8)** develops linear algebra in its complex form: vector spaces over $\mathbb{C}$, linear operators and matrices, special matrices, eigenvalues and unitary diagonalization, and Hilbert space as an infinite-dimensional completion.
 
-**Part III (Chapters 8–10)** introduces the notation and algebra specific to quantum mechanics. It covers Dirac notation (bras, kets, and inner products), commutators and the uncertainty principle, unitary operators, and the connection between symmetries and conserved quantities.
+**Part III (Chapters 9–11)** introduces the notation and algebra specific to quantum mechanics. It covers Dirac notation (bras, kets, and inner products), commutators and the uncertainty principle, unitary operators, and the connection between symmetries and conserved quantities.
 
-**Part IV (Chapters 11–12)** covers Fourier analysis: Fourier series as expansions in eigenstates, and the Fourier transform as a change of basis between position space and momentum space.
+**Part IV (Chapters 12–13)** covers Fourier analysis: Fourier series as expansions in eigenstates, and the Fourier transform as a change of basis between position space and momentum space.
 
-**Part V (Chapters 13–14)** completes the picture with probability theory and the calculation of expectation values and quantum uncertainties.
+**Part V (Chapters 14–15)** completes the picture with probability theory and the calculation of expectation values and quantum uncertainties.
 
 Each chapter ends with a “Common Errors” section. This section explains and corrects the errors that students make most often. Each chapter also has exercises at three levels: basic, intermediate, and challenge. The book is designed to be read in order, because each chapter builds on the previous material. Readers who already know some topics can also read the text in a different order and return to earlier chapters when they find gaps in their knowledge.
 
@@ -43,4 +43,4 @@ At each stage, check both the result and its conditions. A change of orthonormal
 Use [[08 Exercise Solutions]] for practice and [[09 Glossary of Terms]] to distinguish terms that look similar. Before reading a solution, state which mathematical object is being used and which assumption makes the main step valid.
 
 > [!note]
-> The chapter ranges above follow the supplied introduction. They differ from the supplied table of contents. The table of contents lists Part II as Chapters 4–8, Part III as Chapters 9–11, Part IV as Chapters 12–13, and Part V as Chapters 14–15. The note folders follow the table of contents.
+> The chapter ranges above follow the supplied table of contents and the note folders. The supplied introduction gave different ranges: Part II as Chapters 4–7, Part III as Chapters 8–10, Part IV as Chapters 11–12, and Part V as Chapters 13–14.

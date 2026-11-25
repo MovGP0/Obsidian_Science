@@ -1,0 +1,62 @@
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/05 Bound States/5.10 Baryon Masses and Magnetic Moments.md
+- [Correctness] Table 5.6, $\Lambda$ row is swapped: with $m_u=363$, $m_s=538$, $A'\hbar^2/m_u^2=200$ MeV, eq. (5.132) gives $1264-150=1114$ MeV (calculated), while the observed mass is 1116 MeV; the row should read Calculated 1114, Observed 1116.
+- [Correctness] Example 5.3: the contribution is written $(2/3\sqrt2)^2\,(\hbar/2)\sum\langle\cdots\rangle$; by eq. (5.117) the prefactor must be $2/\hbar$, otherwise the result $\tfrac29(2\mu_u-\mu_d)$ does not follow (dimensions are off by $\hbar^2$).
+- [Correctness] After eq. (5.118) the experimental value is quoted as $0.68497945$; the ratio $\mu_n/\mu_p$ is negative, $-0.68497945$.
+- [Correctness] The Table 5.5 predictions (2.79, −1.86, …) require $m_u=m_d\approx336$ and $m_s\approx540$ MeV; the Table 4.4 baryon masses the text cites ($363$, $538$) give $\mu_p\approx2.59$, $\mu_n\approx-1.72$; state the masses actually used.
+- [Correctness] Experimental moments are 1981 values: current PDG gives $\Sigma^+=2.458\pm0.010$, $\Sigma^-=-1.160\pm0.025$, $\Xi^0=-1.250\pm0.014$, $\Xi^-=-0.6507\pm0.0025$, $\Lambda=-0.613$; also footnote "No decuplet moments have been measured" is outdated ($\mu_{\Omega^-}=-2.02\pm0.05\,\mu_N$).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/05 Bound States/5.2 The Hydrogen Atom.md
+- [Correctness] Eq. (5.34) $R=m e^4 c/(4\pi\hbar^3)$ has the wrong dimension; from (5.32) divided by $hc$ it must be $R=m e^4/(4\pi c\hbar^3)$ (Gaussian), which gives $1.097\times10^5\,\mathrm{cm^{-1}}$.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/05 Bound States/5.3.1 The Relativistic Correction.md
+- [Correctness] Eq. (5.42) prefactor $1/(4n^2)$ is wrong; inserting (5.40), (5.41) and $E_n=-\alpha^2mc^2/2n^2$ into (5.39) gives $\Delta E_{\mathrm{rel}}=-\alpha^4mc^2\frac{1}{4n^4}\left[\frac{2n}{l+1/2}-\frac32\right]$.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/05 Bound States/5.3.2 Spin-Orbit Coupling.md
+- [Correctness] Eq. (5.52) prefactor $1/(4n^2)$ must be $1/(4n^4)$: $\Delta E_{\mathrm{fs}}=-\alpha^4mc^2\frac{1}{4n^4}\left[\frac{2n}{j+1/2}-\frac32\right]$ (check: $n=2$, $j=1/2$ gives $-\tfrac{5}{128}\alpha^4mc^2$, the Dirac result).
+- [Correctness] The torque footnote uses $\magnetic{\mathbf m}$ for the magnetic moment while $\mechanical{m}$ is the electron mass in the same note; use $\boldsymbol\mu$ as in (5.45).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/05 Bound States/5.5 Hyperfine Structure.md
+- [Correctness] The delta-function footnote uses $\epsilon$ for the radius of the small sphere while $\epsilon$ is the hyperfine gap in (5.65)–(5.66); rename the radius (for example $\delta r$).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/05 Bound States/5.6 Positronium.md
+- [Correctness] In (5.80) $n$ denotes the number of photons while $\mechanical{n}$ is the principal quantum number in the same section; use $N_\gamma$ for the photon count.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/05 Bound States/5.7 Quarkonium.md
+- [Correctness] Table 5.2, $F_0=1500$ MeV/fm, $E_2$: solving the radial equation with $\mu=750$ MeV and $\alpha_s=0.2$ gives $E_2\approx1464$ MeV, not 1480 (all other entries reproduce within about 5 MeV); check the source value.
+- [Correctness] Outdated claims: the $2^1P_1$ state ($h_c(3525)$) was observed in 2005; top quarks decay ($\Gamma_t\approx1.4$ GeV) before forming toponium or $c\bar t$, $b\bar t$ bound states, so the closing paragraphs on toponium need a dated note.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/05 Bound States/5.8 Light Quark Mesons.md
+- [Correctness] "in exactly the same sense that the $\pi^0$ is a singlet under $SU(2)$" is wrong: $\pi^0$ is the $I_3=0$ member of the isotriplet; the $SU(2)$ singlet is $(u\bar u+d\bar d)/\sqrt2$ of eq. (5.90).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/05 Bound States/5.9 Baryons.md
+- [Correctness] Outdated: "it is hard enough to make a baryon with one heavy quark" (doubly charmed $\Xi_{cc}^{++}$ observed by LHCb in 2017), and "$cbt$" baryons cannot form because the top quark decays before hadronizing.
+- [Correctness] Table 5.4 uses 1981 resonance names that differ from current PDG: $N(1688)\to N(1680)$, $N(1470)\to N(1440)$, $\Delta(1690)\to\Delta(1600)$, $\Delta(1890)\to\Delta(1905)$; add a note that the table is historical.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/05 Bound States/5.P Problems.md
+- [Correctness] Problem 5.22 hint: from eq. (5.92) the $\eta$ is $\tfrac16u\bar u$, $\tfrac16d\bar d$ and $\tfrac23s\bar s$ (probabilities sum to 1), not $\tfrac13s\bar s$.
+- [Correctness] Problem 5.23(b) "only $B(b\bar u)$ and $\Upsilon(b\bar b)$ have been detected" is outdated ($B^*$, $B_s$, $B_s^*$, $B_c$, $\eta_b$ are observed), and the $F$, $F^*$ mesons are now called $D_s$, $D_s^*$.
+- [Correctness] Symbol clashes: the quantity table gives $\mechanical{m}$ as both projection quantum number and mass, and Problem 5.12 uses $\alpha$ for a proportionality constant next to the fine-structure $\alpha$; rename (for example $m_l$ and $k$).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/06 The Feynman Calculus/6.2 The Golden Rule.md
+- [Correctness] In (6.25) the second denominator root reads $\sqrt{m_3^2c^2+\mathbf p_2^2}$; after the substitution it must be $\sqrt{m_3^2c^2+\rho^2}$.
+- [Correctness] After (6.41): "the same as in equation (6.25), with $m_2\to m_4$ and $m_1\to(E_1+E_2)/c^2$" should read $m_2\to m_3$, $m_3\to m_4$, $m_1\to(E_1+E_2)/c^2$.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/06 The Feynman Calculus/6.5 Scattering.md
+- [Correctness] Eq. (6.49) reads $g^2/[(p_4-p_2)-m_C^2c^2]$; the propagator needs the square: $\mathcal M=g^2/[(p_4-p_2)^2-m_C^2c^2]$.
+- [Correctness] In eqs. (6.53)-(6.54) the unbold $p^2$ means $|\mathbf p|^2$, while elsewhere in the note unbold $p_i$ are four-momenta (for which $p^2=m^2c^2$); write $|\mathbf p|^2$ there to avoid the clash.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/06 The Feynman Calculus/6.6 Higher-Order Diagrams.md
+- [Correctness] Eq. (6.55): the third denominator factor is $(q_1^2-m_B^2c^2)$; it must be $(q_3^2-m_B^2c^2)$ (the B line in the loop carries $q_3$, as eq. 6.56 then correctly shows).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/07 Quantum Electrodynamics/7.2 Solutions to the Dirac Equation.md
+- [Correctness] Eq. (7.43), case (3): "Pick $u_B=(0,1)^T$" must be $u_B=(1,0)^T$; the right-hand side already uses $(\mathbf p\cdot\boldsymbol\sigma)(1,0)^T$, and $u^{(3)}$ in eq. (7.46) has lower components $(1,0)$.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/07 Quantum Electrodynamics/7.3 Bilinear Covariants.md
+- [Correctness] Eq. (7.55): the right-hand side reads $|\psi_3|^2+|\psi_2|^2+|\psi_3|^2+|\psi_4|^2$; the first term must be $|\psi_1|^2$.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/07 Quantum Electrodynamics/7.4 The Photon.md
+- [Correctness] The spin quantum numbers $s$ and $m_s$ are wrapped in `\mechanical{}` (so $m_s$ reads like a mass); they are dimensionless quantum numbers and should be left uncolored, also in the table.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/07 Quantum Electrodynamics/7.9 Renormalization.md
+- [Correctness] Before (7.177): "$\not p_1 u(p_1)=mc,\ \bar u(p_3)\not p_3=u(p_3)mc$" is wrong (a spinor cannot equal a scalar, and the bar is lost); it must read $\not p_1u(p_1)=mc\,u(p_1)$ and $\bar u(p_3)\not p_3=mc\,\bar u(p_3)$, which then gives $\bar u(p_3)\not q\,u(p_1)=0$.
+

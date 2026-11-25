@@ -1,0 +1,34 @@
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/08 Strong Interactions among Quarks/8.11 Strong-Interaction Symmetries.md
+- FIXED | U(1) problem candidate should be eta'(958), not eta(958) | Changed $\eta(958)$ to $\eta'(958)$.
+- FIXED | Winding number (8.11.10) and theta term (8.11.11) coefficients inconsistent and missing g^2 | With unrescaled fields of (8.1.4)-(8.1.6) set n = g^2/(16 pi^2) int tr G*G and L_theta = theta g^2/(16 pi^2) tr G*G so that int L_theta = n theta; added g row to the table.
+- FIXED | Axion paragraph describes excluded PQWW electroweak-scale axion; theta-bar not introduced | Introduced theta-bar = theta + arg det M_q, used theta-bar in (8.11.13) and the strong CP sentence, stated that the electroweak-scale version is excluded and that invisible axions break the U(1) at f_a much larger than the electroweak scale with the axion potential driving theta-bar to zero; added table rows for theta-bar, M_q, f_a.
+- REJECTED | nEDM limit in (8.11.12) outdated | The value 2.9e-26 e cm matches the cited source measurement [120]; it is outdated, not wrong, and the conclusion abs(theta-bar) < 1e-10 is unchanged; updating it would break the citation.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/08 Strong Interactions among Quarks/8.12 Assessment.md
+- FIXED | AdS^5 (x) S_5 should be AdS_5 x S^5 | Changed to $\mathrm{AdS}_5\times S^5$.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/08 Strong Interactions among Quarks/8.2 Charge Renormalization in Electrodynamics.md
+- FIXED | (8.2.12) z_1 exponent has -i epsilon instead of +i epsilon | Changed to +i epsilon, consistent with (8.2.11) and (8.2.16).
+- FIXED | (8.2.27) still has i sigma after sigma=1; (8.2.28) delta(sigma-x_1-x_2) | Removed sigma from the (8.2.27) exponent and changed (8.2.28) to delta(sigma-z_1-z_2).
+- FIXED | Sign of (8.2.51)-(8.2.53) prefactor | Verified the Minkowski Gaussian integral gives i e^{-i pi n/4}/(4 pi z)^{n/2}, so with -e^2 from (8.2.44) the prefactor is -i e^2 e^{-i pi n/4}/(4 pi)^{n/2}; changed it in the three lines of (8.2.51) and in (8.2.52), and the pole term (8.2.53) to +i e^2/(16 pi^2); (8.2.54)-(8.2.56) now follow. The same sign slip also affects the Delta prefactor in (8.2.47)-(8.2.48), which I did not change because Delta=0 and it was not claimed.
+- FIXED | epsilon used for dielectric constant and Feynman i epsilon; grammar after (8.2.36) | Renamed the dielectric constant to $\electric{\varepsilon_{\mathrm{r}}}$ in (8.2.1), (8.2.2), the text and the table; changed "charges increases" to "charge increases".
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/08 Strong Interactions among Quarks/8.3 The Running Coupling Constant in QCD.md
+- PARTLY | alpha used as gauge function, quark color indices, and in alpha_s; ghost octet given triplet indices | The ghost index point is right: changed the ghost indices to adjoint a, b in the text and in (8.3.14). The alpha uses (index, function argument of a QED gauge transformation, subscripted alpha_s) are standard textbook conventions in separate contexts and are not renamed.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/08 Strong Interactions among Quarks/8.4 Perturbative QCD -  A First Example.md
+- FIXED | After (8.4.3) the propagator is said to vanish; actually its denominator vanishes and the propagator diverges | Changed to "whose denominator vanishes" and added "In both limits the propagator diverges."
+- FIXED | Table lists unused p_1, p_2; theta used for step function and angles; "three-jet cross differential cross section" | Removed p_1, p_2 from the table, renamed the step function to Theta in (8.4.1) and the text, and changed the phrase to "the three-jet differential cross section".
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/08 Strong Interactions among Quarks/8.5 QCD Corrections to Deeply Inelastic Scattering.md
+- FIXED | (8.5.49) third term must be 1/[(n+1)(n+2)] | Verified from (8.5.43) moments and A_2(g<-g) = -n_f/3; corrected the term.
+- FIXED | (8.5.75) per-species momentum fraction is Sigma_2/(2 n_f), not Sigma_2/2 | Changed the prefactor to 1/(2 n_f); value 3/68 unchanged.
+- FIXED | (8.5.50)/(8.5.51) missing factor x and wrong moment power | Verified from (7.4.71), (7.4.86), (7.4.87) that x F_3 = x[u - ubar + d - dbar]; added the factor x and changed Delta_n to int x^{n-1} F_3.
+- FIXED | Typos in (8.5.53), (8.5.67), (8.5.10)-(8.5.11), figure reference; y used twice | Fixed Delta_k(0), F_2(u,Q^2), (x,tau) arguments, "figure 8.27"; renamed the convolution variable y to xi in (8.5.5)-(8.5.14) and the text, updated the table (xi row, removed the t note).
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/08 Strong Interactions among Quarks/8.6 Jets in Hadron-Hadron Collisions.md
+- FIXED | hat-sigma_ij unit should be GeV^-2, not GeV^-4 | Dimensional check confirms GeV^-2; changed the unit and described hat-sigma as the scaled form hat-s d hat-sigma/(pi d hat-t).
+- FIXED | Text calls figure 8.37 a dijet cross section; caption shows inclusive jet cross section | Changed the text to "doubly differential inclusive jet cross section".
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/08 Strong Interactions among Quarks/8.7 Two-Photon Processes and the Photon-Structure Function.md
+- FIXED | <e^2> must be (1/n_f) sum e_i^2 for (8.7.31) and (8.7.33) to agree | Verified the photon source for Sigma is 2 sum e_i^2; changed (8.7.32) to 1/n_f and updated the table description.
+- FIXED | Integrand arguments in (8.7.31), (8.7.33); moments reference | Changed Delta, gamma, Sigma integrand arguments to the integration variable and "moments of (8.7.30)" to (8.7.31).
+- PARTLY | y used as inelasticity and convolution variable; x also argument of f(x) | Renamed the convolution variable to xi in (8.7.22)-(8.7.33) and the table; left x in f(x) because it is only the dummy argument of a defined function.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/08 Strong Interactions among Quarks/8.8 Color Confinement.md
+- FIXED | (8.8.6) in Gaussian units D = E + 4 pi P | Confirmed Gaussian units from W = (1/8 pi) int D.E and (8.8.11); added 4 pi.
+- FIXED | Fig. 8.47 caption T = a/N_tau has units of length | Changed to T = 1/(a N_tau).
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/08 Strong Interactions among Quarks/8.9 QCD-induced Electroweak Symmetry Breaking.md
+- FIXED | (8.9.4) off-diagonal +gg' contradicts the stated A and Z eigenvectors | Verified the null vector of [[g^2,-gg'],[-gg',g'^2]] is (g',g), matching A and Z; changed both off-diagonal entries to -gg'.

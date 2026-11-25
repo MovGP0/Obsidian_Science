@@ -1,0 +1,27 @@
+=== 02 Physics/06 Electromagnetism and Waves/Polarization, interference, refraction, and lenses.md
+- PARTLY | Symbol clashes p_rad vs momentum p and order m vs mass m | Renamed radiation pressure to \mechanical{P}_{\mathrm{rad}} in equation and table; kept uncolored integer order m (index, distinct from colored mass, standard notation) and added it to the table
+- FIXED | Physical-quantities table rows wrong or missing (s, A, P, m, r, mu, ell, D, Delta y, I_0, order m) | Removed dipole-separation s, r, mu and R rows; corrected A, P, m, d, L descriptions; added ell, D_1/D_2, D_01/D_02, y/y_m/Delta y, I_0..I_3, order m, d_a/d_p
+=== 02 Physics/06 Electromagnetism and Waves/Pulse reflection, wavefronts, and refraction problems.md
+- FIXED | Table: duplicate b damping row, M as reduced mass, theta as tangent angle, c as wave speed | Deleted damping-b and reduced-mass rows; M row now string mass; theta row replaced by theta_i/theta_r ray angles; c row now vacuum speed of light
+- PARTLY | Table omits v, v_y, L, g, A, f, T, ell, m_s, m_b, alpha; rename v_y | Added all missing rows (also omega_1/omega_3, lambda_i, x); kept v_y (subscripted, conventional) and described it in the table as distinct from wave speed v
+=== 02 Physics/06 Electromagnetism and Waves/Radiation from antennas and electromagnetic multipoles.md
+- FIXED | Table: L as Gaussian cylinder length, d as plate separation; many symbols missing | L and d rows now straight/tapered antenna lengths; added k, A, phi, rho, J, p, m, Q_ab, q, a, r, theta, s, t, c, E, H, epsilon_0, mu_0, x
+- PARTLY | Symbol clash Q point charge vs Q_ab quadrupole tensor; a loop area vs tensor indices | Renamed point charge to \electric{q} in the antenna-charge and quadrupole sections (Q_xx=(2q/3)(d/2)^2 verified); kept loop area a since it is colored and used in a different section from the uncolored indices
+- FIXED | Spectral quantity called fluence | Added sentences that the fluence label is wrong and that Jackson's d^2I/(d omega d Omega) is energy per solid angle per frequency interval (J s/sr), not a power
+=== 02 Physics/06 Electromagnetism and Waves/Resonance, coupled modes, and Fourier practice.md
+- FIXED | Clashes M string vs reduced mass, omega_1 fundamental vs damped frequency, k slope vs stiffness | Reduced mass renamed \mechanical{m}_{\mathrm{red}}; free damped frequency renamed omega_d (also in T=2pi/omega_d, 0.36 s verified); ramp slope renamed kappa
+- FIXED | Table: beta described as rate, unused b and d rows, F instead of F_0, missing k, L, v, A_n, B_n, E_n | beta now phase in rad; deleted pulse-height b and dispersion d rows; F row now F_0 drive amplitude; added missing rows plus omega_d, m_red, m_A/m_B, x, A/B/C, kappa, T, f, M string mass
+=== 02 Physics/06 Electromagnetism and Waves/Spherical harmonics and magnetic dipole boundary problems.md
+- FIXED | Polarization paragraph links to magnetized-block section with garbled text | Link changed to [[#Problem 6-2|the section on Problem 6-2]]
+- FIXED | Problem 6-2 handwritten H=0 vs H=-M unresolved | Stated H=-M_0 r-hat inside and 0 outside; handwritten H=0 holds only outside; magnetic charges -2M_0/r and M_0 cancel only in total
+=== 02 Physics/06 Electromagnetism and Waves/Steady currents, vector potentials, and magnetic multipoles.md
+- FIXED | Table lists only U, I_enc, m; add B, A, J, I, mu_0, chi, R, rho, rho_0, q, p; clarify m | Added those rows plus E, phi, rho (charge), epsilon_0, r, x/y/z, s, N; m description now the moment (1/2) integral r' x J
+=== 02 Physics/06 Electromagnetism and Waves/Superposition, electric flux, and Gauss’s law problems.md
+- FIXED | F = +grad U displayed without minus sign | Displayed F=-nabla U with negative components; replaced positive-derivative sentence; callout now says the handwritten vector form omits the minus signs
+- FIXED | Kirchhoff equations inconsistent | First loop now V_0-IR_1-I_2R_2-I_5R_5=0; third junction now I_3+I_4=I_6 with I_4 defined as flowing from the R_2/R_5 node to the R_3/R_6 node (other loops checked consistent with Fig. 3); handwritten forms reported in text
+- FIXED | Table has unused or wrong rows and misses Q_1, Q_2, Q_enc, Q_tot, q_A, q_B | Removed epsilon, N, normal force N, s/o/s_o, e/m, N Phi_B, V_in/V_out, D_i, D_0i, sigma rows; q_C now vertex charge; Delta r now displacement; fixed d, L, A, R, theta descriptions; added missing charges and Q_inner, q_3
+- FIXED | Electron mass of order 10^-31 kg | Now states 9.11x10^-31 kg
+=== 02 Physics/06 Electromagnetism and Waves/Wave pulses, interfaces, and dispersive propagation.md
+- FIXED | Table: duplicate damping b, tau as decay time, M as reduced mass, unused m, many missing | Deleted damping-b and reduced-mass rows; tau_3 now third-mode period; m row now mass element dm; added M, A, A_n, v, v_y, v_1/v_2, v_p, v_g, f_n, L, x, E_n, T, C and others
+- PARTLY | Clashes k_i=1/lambda vs k=2pi/lambda, tension T vs period T, dispersion d vs differentials | Spatial frequency renamed \signal{\sigma} in opening and Dispersion sections; dispersion coefficient renamed alpha; kept T tension (mechanical) vs T period (signal), already distinguished by color and table
+- FIXED | Sine-wave example lambda rounded to 2.2 m gives period 0.098 s | Changed lambda to 2.24 m in the value and in the final wave formula

@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Feynman Rules: Generalities"
 source_pdf: "D:\\GitHub\\books\\dokumen.pub_gauge-theories-of-the-strong-weak-and-electromagnetic-interactions-second-edition-secondnbsped-9781400848225.pdf"
 source_page: "448"
@@ -29,27 +29,27 @@ A propagator is associated with each internal line representing a particle with 
 1. For each internal spin-zero boson, a factor
 
    $$
-   \frac{i}{\mechanical{q}^{\,2}-\mechanical{m}^{\,2}+i\epsilon}.
+   \frac{i}{\mechanical{q}^{\,2}-\mechanical{m}^{\,2}+i0^+}.
    $$
 
 2. For each internal photon, a factor (in Feynman gauge)
 
    $$
-   \frac{-ig_{\mu\nu}}{\mechanical{q}^{\,2}+i\epsilon}.
+   \frac{-ig_{\mu\nu}}{\mechanical{q}^{\,2}+i0^+}.
    $$
 
 3. For each internal massive vector boson with mass $\mechanical{M}_V$, a factor (in unitary gauge)
 
    $$
    \frac{-i(g_{\mu\nu}-\mechanical{q}_\mu\mechanical{q}_\nu/\mechanical{M}_V^{\,2})}
-   {\mechanical{q}^{\,2}-\mechanical{M}_V^{\,2}+i\epsilon}.
+   {\mechanical{q}^{\,2}-\mechanical{M}_V^{\,2}+i0^+}.
    $$
 
 4. For each internal fermion line, a factor
 
    $$
    \frac{i(\not{\mechanical{q}}+\mechanical{m})}
-   {\mechanical{q}^{\,2}-\mechanical{m}^{\,2}+i\epsilon}.
+   {\mechanical{q}^{\,2}-\mechanical{m}^{\,2}+i0^+}.
    $$
 
    An internal antifermion is regarded as a fermion of negative four-momentum $(-\mechanical{q})$.

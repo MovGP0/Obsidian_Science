@@ -1,0 +1,44 @@
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/08 Strong Interactions among Quarks/8.11 Strong-Interaction Symmetries.md
+- [Correctness] Discussion of the U(1) problem: "the obvious candidate, $\eta(958)$" should be $\eta'(958)$. The $\eta$ is at 548 MeV.
+- [Correctness] Eqs. (8.11.10) and (8.11.11) are inconsistent. For the $e^{in\theta}$ weighting of (8.11.9) to be reproduced, the action $\int d^4x\,\mathcal L_\theta$ must equal $n\theta$, so the coefficients must match: $1/8\pi^2$ in $n$ requires $\theta/8\pi^2$ in $\mathcal L_\theta$, not $\theta/16\pi^2$. With the unrescaled fields of (8.1.4)–(8.1.6), both also need a factor $g^2$. The standard forms are $n=\frac{g^2}{16\pi^2}\int d^4x\,\mathrm{tr}\,G\tilde G$ and $\mathcal L_\theta=\frac{\theta g^2}{16\pi^2}\mathrm{tr}\,G\tilde G$ with $\tilde G^{\mu\nu}=\tfrac12\epsilon^{\mu\nu\alpha\beta}G_{\alpha\beta}$.
+- [Correctness] The last paragraph says the new U(1) "is spontaneously broken in the course of electroweak symmetry breaking". That is the original Peccei–Quinn–Weinberg–Wilczek axion, which was excluded long ago. Viable "invisible" axions (KSVZ, DFSZ) break the PQ symmetry at $f_a\gg v$, and $\bar\theta$ relaxes to zero through the axion potential. Also introduce $\bar\theta=\theta+\arg\det M_q$ explicitly, since the text mentions that the two phases combine.
+- [Correctness] The nEDM limit in (8.11.12) is outdated: the current bound is $|d_n|<1.8\times10^{-26}\,e\,\mathrm{cm}$ (90% CL, PSI 2020). It still gives $|\bar\theta|\lesssim10^{-10}$.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/08 Strong Interactions among Quarks/8.12 Assessment.md
+- [Correctness] AdS/CFT paragraph: "$\mathrm{AdS}^5\otimes S_5$" should read $\mathrm{AdS}_5\times S^5$ (five-dimensional anti-de Sitter space times the five-sphere), as the bracketed gloss itself says.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/08 Strong Interactions among Quarks/8.2 Charge Renormalization in Electrodynamics.md
+- [Correctness] (8.2.12): the $z_1$ exponent is printed as $iz_1(k^2-m^2-i\epsilon)$; it must be $+i\epsilon$, as in (8.2.11) and as used in (8.2.16), where $-(m^2-i\epsilon)(z_1+z_2)$ appears.
+- [Correctness] (8.2.27) still carries $i\sigma$ in the exponent although $\sigma=1$ was already set (it should be $\exp\{i[q^2z_1z_2/(z_1+z_2)-(M_i^2-i\epsilon)(z_1+z_2)]\}$), and (8.2.28) reads $\delta(\sigma-x_1-x_2)$ where it should be $\delta(\sigma-z_1-z_2)$.
+- [Correctness] Sign of (8.2.51)–(8.2.53): the $-e^2$ in (8.2.44) and $\int d^nl\,e^{il^2z}/(2\pi)^n=ie^{-i\pi n/4}/(4\pi z)^{n/2}$ give the prefactor $-ie^2e^{-i\pi n/4}/(4\pi)^{n/2}$, so the pole term is $+\frac{ie^2}{16\pi^2}(q^\mu q^\nu-q^2g^{\mu\nu})\frac{2}{4-n}\int(1-2z)^2$. As printed, the expansion $\Gamma(2-n/2)X^{n/2-2}=\frac{2}{4-n}-\ln X$ gives a log term with the opposite sign to (8.2.54). (8.2.54)–(8.2.56) themselves are correct.
+- [Correctness] Symbol clash: $\epsilon$ denotes both the dielectric constant $\electric{\epsilon}$ (8.2.1) and the Feynman $i\epsilon$ in every propagator. Rename one, for example $\varepsilon_{\mathrm r}$ for the dielectric constant, and fix "the effective electric charges increases" after (8.2.36).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/08 Strong Interactions among Quarks/8.3 The Running Coupling Constant in QCD.md
+- [Correctness] Symbol clash for $\alpha$: it is the gauge function $\alpha(x)$ in (3.5.14)/(8.3.6), quark color indices $\alpha,\beta,\gamma$ in (8.3.9) and (8.3.19)–(8.3.22), and part of $\alpha_s$. Also, the ghost is called a color octet, yet (8.3.14) gives it triplet-style indices $\alpha,\beta$; use adjoint indices $a,b$ there.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/08 Strong Interactions among Quarks/8.4 Perturbative QCD -  A First Example.md
+- [Correctness] After (8.4.3): "which vanishes in the soft-gluon limit … also vanishes if $k\cdot q_i=0$" is backwards. The denominator $k^2+2q_i\cdot k$ vanishes, so the propagator diverges; that divergence is the soft and collinear singularity.
+- [Correctness] The physical-quantities table lists $p_1,p_2$, which the note never uses. $\theta$ is used both for the step function in (8.4.1) and for the angles $\theta_{1g},\theta_{2g}$ in (8.4.12). Also fix "three-jet cross differential cross section".
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/08 Strong Interactions among Quarks/8.5 QCD Corrections to Deeply Inelastic Scattering.md
+- [Correctness] (8.5.49): the third term must be $1/[(n+1)(n+2)]$, not $1/[n(n+1)(n+2)]$, since $\int_0^1z^{n-1}z(1-z)\,dz=1/[(n+1)(n+2)]$. Check: only the corrected form gives $A_2(g\leftarrow g)=-n_f/3$, as required by (8.5.27) and used in (8.5.70); the printed form gives $-1/4-n_f/3$.
+- [Correctness] (8.5.75): the momentum fraction per quark or antiquark species is $\Sigma_2^\infty/(2n_f)=\frac{9/17}{12}=\frac{3}{68}$, not $\tfrac12\Sigma_2^\infty$ (which would be $9/34$). The numerical value $3/68$ and the check (8.5.77) are correct.
+- [Correctness] (8.5.50)/(8.5.51): with (7.4.86)–(7.4.87), where $u(x)$ is a number density, the cross-section difference gives $x\mathcal F_3=x[u-\bar u+d-\bar d]$, so the first line is missing a factor $x$. The nonsinglet moment should then be $\Delta_n=\int_0^1dx\,x^{n-1}\mathcal F_3=\int_0^1dx\,x^{n-1}(q-\bar q)$, so that $\Delta_1$ counts valence quarks, consistent with $A_1=0$ expressing fermion-number conservation.
+- [Correctness] Several typos: (8.5.53) the denominator should be $\ln(\Delta_k(\tau)/\Delta_k(0))$, not $\Delta_n(0)$; in (8.5.67) $F_2(x,Q^2)$ inside $\int_x^1du/u^3$ must be $F_2(u,Q^2)$; (8.5.10)–(8.5.11) write $(x,t)$ for $(x,\tau)$; "the beam prepared in (8.27)" should say figure 8.27. Also $y$ is both the parent momentum fraction in (8.5.5) and the inelasticity in (8.5.62), and the table lists it twice; rename one.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/08 Strong Interactions among Quarks/8.6 Jets in Hadron-Hadron Collisions.md
+- [Correctness] Physical-quantities table: with dimensionless number densities $f_i$ and the left side of (8.6.3) in $\mathrm{GeV}^{-3}$, the prefactor $2\pi p_\perp/s$ (in $\mathrm{GeV}^{-1}$) requires $\hat\sigma_{ij}$ in $\mathrm{GeV}^{-2}$, not $\mathrm{GeV}^{-4}$. Correct the unit, or state that $\hat\sigma_{ij}$ is the Owens–Reya–Glück scaled form $\hat s\,d\hat\sigma/(\pi\,d\hat t)$.
+- [Correctness] The text calls figure 8.37 "the doubly differential dijet cross section", but the caption (and the figure) show the inclusive jet cross section against $p_\perp$ in rapidity bins. Make them consistent.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/08 Strong Interactions among Quarks/8.7 Two-Photon Processes and the Photon-Structure Function.md
+- [Correctness] (8.7.32): each $q_i$ and $\bar q_i$ receives a photon source $\propto e_i^2$, so $d\Sigma/d\tau\supset2\sum_ie_i^2$ and $\Delta^{(i)}$ gets $e_i^2-\frac{1}{n_f}\sum_je_j^2$. For (8.7.31) and (8.7.33) to agree, $\langle e^2\rangle$ must be $\frac{1}{n_f}\sum_ie_i^2$, not $\frac{1}{2n_f}\sum_ie_i^2$. The table's "printed flavor sum" wording hints at this.
+- [Correctness] Integrand arguments: in (8.7.31), $\Delta^{(i)}(x,\tau)$ inside $\int_x^1dy/y$ should be $\Delta^{(i)}(y,\tau)$; in (8.7.33), $\gamma(x,\tau)$ and $\Sigma(x,\tau)$ should be $\gamma(y,\tau)$ and $\Sigma(y,\tau)$. "Taking moments of (8.7.30)" should refer to (8.7.31).
+- [Correctness] Symbol clash: $y$ is the inelasticity in (8.7.18) and (8.7.20) and the convolution variable in (8.7.22)–(8.7.33); $x$ is also the argument of the flux factor $f(x)$ in (8.7.3). Rename the convolution variable, for example $\xi$.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/08 Strong Interactions among Quarks/8.8 Color Confinement.md
+- [Correctness] (8.8.6): in the Gaussian units used throughout ($W=\frac1{8\pi}\int D\cdot E$, $\sigma=(1-\epsilon)D/4\pi\epsilon$), the relation is $\mathbf D=\mathbf E+4\pi\mathbf P$, not $\mathbf D=\mathbf E+\mathbf P$.
+- [Correctness] Figure 8.47 caption: the lattice temperature is $T=1/(aN_\tau)$, not $a/N_\tau$; the latter has units of length (the table gives $a$ in $\mathrm{GeV}^{-1}$).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/08 Strong Interactions among Quarks/8.9 QCD-induced Electroweak Symmetry Breaking.md
+- [Correctness] (8.9.4): with off-diagonal $+gg'$, the massless eigenvector in $(b_3,\mathcal A)$ is $\propto(g',-g)$, i.e. $A\propto g'b_3-g\mathcal A$, which contradicts the stated $A=(g\mathcal A+g'b_3)/\sqrt{g^2+g'^2}$ and $Z=(gb_3-g'\mathcal A)/\sqrt{g^2+g'^2}$. For those eigenvectors (and $Q=T_3+Y/2$), the off-diagonal entries must be $-gg'$.
+

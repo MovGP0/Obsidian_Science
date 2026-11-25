@@ -15,7 +15,7 @@ The next two lines read “Murdered by Burbidge” and “Except for some dinosa
 
 ##### Variable stars
 
-- Mira ($o$ Ceti) varies on a time scale of one to two years. The notes give “wonderful” as the Latin meaning of Mira.
+- Mira ($o$ Ceti) varies with a period of about $\quantity{332}{day}$, slightly less than one year. The notes give “wonderful” as the Latin meaning of Mira.
 - Algol varies on a time scale of days. The notes give “demon” as the Arabic meaning of Algol.
 
 The notes compare $\tau_{\mathrm{dyn}}\sim1\,\unit{h}$ and $\tau_{\mathrm{nuc}}\sim10^{10}\,\unit{yr}$. They list at least 70 classes of variable stars, including T Tauri, Cepheid ($\delta$ Cephei), FK Comae, Mira, and U Geminorum.
@@ -48,11 +48,11 @@ The bottom diagram shows luminosity increasing upward. Two near-vertical lines m
 | --- | --- |
 | W Virginis | Type II Cepheids. Metal-poor and lower mass. |
 | RR Lyrae | On the horizontal branch. Spectral types A2–F2 and periods from hours to days. |
-| $\beta$ Cephei and $\gamma$ Doradus | The notes distinguish nonradial modes from the radial dynamical time and add “$g$-mode-driven.” |
+| $\beta$ Cephei and $\gamma$ Doradus | The notes distinguish nonradial modes from the radial dynamical time and add “$g$-mode-driven.” Only the $\gamma$ Doradus stars are high-order $g$-mode pulsators. $\beta$ Cephei stars pulsate mainly in low-order $p$ and mixed modes, driven by the $\kappa$ mechanism in the iron opacity bump. |
 | $\delta$ Scuti | A–F stars with periods from $\quantity{30}{min}$ to $\quantity{8}{h}$. |
 | SX Phoenicis | Described as blue stragglers found in globular clusters. |
-| ZZ Ceti | Pulsating white dwarfs. The notes list hydrogen, helium, and CNO atmospheres in this part of the page. |
-| Mira | Periods from $\quantity{100}{day}$ to $\quantity{300}{day}$. |
+| ZZ Ceti | Pulsating white dwarfs with hydrogen atmospheres (DAV). The notes list hydrogen, helium, and CNO atmospheres in this part of the page. The pulsators with helium atmospheres are the DBV (V777 Her) stars, and those with carbon- and oxygen-rich atmospheres are the GW Vir stars. |
+| Mira | The notes give periods from $\quantity{100}{day}$ to $\quantity{300}{day}$. Mira variables have periods from about $\quantity{80}{day}$ to $\quantity{1000}{day}$. |
 | roAp | Periods of about $\quantity{10}{min}$. |
 
 The margin remarks are “deltascuti.net in Vienna!” and “Ames, Iowa” beside the white dwarf entry.

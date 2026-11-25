@@ -1,0 +1,44 @@
+=== 03 Engineering/02 Signal Processing/01 Fourier Transformation/Fourier Transformation.md
+- [Correctness] In the formula table the QDWT note uses "\( x[n] \)", which Obsidian does not render; use $x[n]$. The DWT row comes after QDWT and has empty formula cells; give $c_{j,k}=\langle x,\varphi_{j,k}\rangle$, $d_{j,k}=\langle x,\psi_{j,k}\rangle$ or link to [[Wavelet Transformation]].
+- [Correctness] The STFT inverse uses $C_w$ and the CWT inverse uses $C_\psi$ without defining them; add $C_w=\int|w(t)|^2dt$ and $C_\psi=\int|\hat\psi(\omega)|^2/|\omega|\,d\omega$ (the latter in the $\omega$ convention, matching integration over both signs of $a$).
+
+=== 03 Engineering/02 Signal Processing/02 Wavelet Transformation/01 Wavelets/Biorthogonal Wavelets.md
+- [Correctness] The dual filters are written $\tilde h,\tilde g$ in the text and "(ĥ, ĝ)" in the callout; use one notation (tilde), since a hat elsewhere means a Fourier transform.
+
+=== 03 Engineering/02 Signal Processing/02 Wavelet Transformation/01 Wavelets/Coiflet (Coif N).md
+- [Correctness] "Coif N" is ambiguous: "Coif6, Coif12" use the filter length $6L$, whereas PyWavelets `coifN` (and the pictured coiflet5) use $L$ with $6N$ taps; state which convention the note uses and give the vanishing moments precisely ($2L$ for $\psi$, $2L-1$ for $\varphi$ beyond $\int\varphi=1$) instead of "equal".
+
+=== 03 Engineering/02 Signal Processing/02 Wavelet Transformation/01 Wavelets/Daubechies‑20 (Db20).md
+- [Correctness] The naming convention (20 taps = 10 vanishing moments, i.e. D20) clashes with the [[Haar Wavelet (Db1)]] note title (vanishing-moment convention, where Haar = db1) and with MATLAB/PyWavelets `db20` (40 taps, 20 vanishing moments); state the convention explicitly and use it consistently across the wavelet notes.
+- [Correctness] The polynomial $a(Z)$ uses the normalization $a(1)=2$ (so $\sum a_k=2$), but the refinement equations use $h_n$ with $\sqrt2$, which needs $\sum h_n=\sqrt2$; state $h_n=a_n/\sqrt2$ and define $a(Z)=\sum_n a_nZ^n$, $p(Z)$, and its degree $A-1$.
+
+=== 03 Engineering/02 Signal Processing/02 Wavelet Transformation/01 Wavelets/Daubechies‑4 (Db4).md
+- [Correctness] This 4-tap filter with 2 vanishing moments is `db2` in MATLAB/PyWavelets (where `db4` has 8 taps), and the Haar note calls Haar "Db1" in that vanishing-moment convention; either rename to "D4 (db2)" or add a callout explaining the two naming conventions.
+
+=== 03 Engineering/02 Signal Processing/02 Wavelet Transformation/01 Wavelets/Mexican Hat (Ricker - Marr).md
+- [Correctness] "$-\frac{d^2}{dt^2}[e^{-t^2/2}] = \frac{2}{\sqrt3\pi^{1/4}}(1-t^2)e^{-t^2/2}$" is false; the left side is $(1-t^2)e^{-t^2/2}$, so write $\psi(t)=\frac{2}{\sqrt3\pi^{1/4}}\bigl(-\frac{d^2}{dt^2}e^{-t^2/2}\bigr)$.
+- [Correctness] With the stated convention $\hat f(\omega)=\int f e^{-i\omega t}dt$ and the given $\hat\psi$, $C_\psi=\int_0^\infty|\hat\psi|^2/\omega\,d\omega=\frac{8\sqrt\pi}{3}\cdot\frac12=\frac{4\sqrt\pi}{3}\approx2.363$, and this is the constant the stated inversion formula needs; $0.3761$ is $2.363/(2\pi)$, which belongs to a different convention.
+- [Correctness] The table's "Main lobe FWHM ≈2.3548 in time; ≈1.177 in frequency" uses Gaussian values ($2\sqrt{2\ln2}$, $\sqrt{2\ln2}$); for $(1-t^2)e^{-t^2/2}$ the central-lobe FWHM is ≈1.252, and the FWHM of the $|\hat\psi(\omega)|$ peak is ≈1.633.
+- [Correctness] Pasted text is garbled: "zero at ω=0\omega=0", "large ∣ω∣|\omega|" and "Derivative-of-Gaussian (DoG n_n)"; also `scipy.signal.ricker` was deprecated in SciPy 1.12 and removed in 1.15, so point to PyWavelets `mexh` instead.
+
+=== 03 Engineering/02 Signal Processing/02 Wavelet Transformation/01 Wavelets/Shannon (Sinc‑based) Wavelet.md
+- [Correctness] The section "Mother wavelet $\psi(\omega)$" gives a frequency-domain expression and then calls it "this time-domain form"; the same expression is repeated as $\Psi(\omega)$ later, so $\psi$ means two different things in one note. Keep one frequency-domain block, labelled $\hat\psi(\omega)$ or $\Psi(\omega)$.
+- [Correctness] With the phase factor $e^{-i\omega}$, the inverse transform is the shifted function $\psi(t)=2\,\mathrm{sinc}(2(t-1))-\mathrm{sinc}(t-1)$, not $2\,\mathrm{sinc}(2t)-\mathrm{sinc}(t)$; either drop $e^{-i\omega}$ (then the unshifted form holds and is still orthonormal) or shift the time-domain formula. Also state the Fourier convention that makes the $\frac{1}{2\pi}$ prefactor consistent.
+
+=== 03 Engineering/02 Signal Processing/02 Wavelet Transformation/Father and Mother Wavelets.md
+- [Correctness] From $g_k=(-1)^kh_{N-1-k}$ it follows that $G(z)=(-1)^{N-1}z^{-(N-1)}H(-z^{-1})=-z^{-(N-1)}H(-z^{-1})$ for even $N$; check with Haar: $z^{-1}H(-z^{-1})=(z^{-1}-1)/\sqrt2=-G(z)$. On the unit circle it is $G(\omega)=-e^{-i\omega(N-1)}\overline{H(\omega+\pi)}$ (conjugate missing, sign missing).
+- [Correctness] The inverse relation "$h_k=(-1)^kg_{N-1-k}$" has the wrong sign for even $N$: inverting gives $h_k=-(-1)^kg_{N-1-k}$; with the Haar $g=[1,-1]/\sqrt2$ the note's formula gives $h_0=-1/\sqrt2$.
+- [Correctness] The heading "High-pass filter coefficients $g_k$ ↔ low-pass filter transfer function $G(z)$" should say high-pass; "Derivation" uses $g_k=(-1)^kh_{1-k}$ while the later section uses $g_k=(-1)^kh_{N-1-k}$ without saying that these are two index conventions (shift by $N-2$); also remove the zero-width spaces (U+200B) after "$h_{k}$" and inside the display "$$g_k=(−1)^k h_{1−k}$$".
+- [Correctness] The alternating-flip relation $g_k=(-1)^kh_{N-1-k}$ is the conjugate quadrature filter (CQF, Smith–Barnwell) condition; the classic QMF is $g_k=(-1)^kh_k$, which does not give orthogonal wavelets for $N>2$; rename accordingly.
+
+=== 03 Engineering/02 Signal Processing/02 Wavelet Transformation/Wavelet Functions.md
+- [Correctness] Shannon has a closed form $\psi(t)=2\,\mathrm{sinc}(2t)-\mathrm{sinc}(t)$, so its "Closed-form ψ(t)?" cell should be ✅, not blank.
+- [Correctness] Biorthogonal "Adjustable (e.g. 3/5, 9/7 designs)" gives filter lengths, not vanishing moments (CDF 5/3 has 2/2, CDF 9/7 has 4/4); Gaussian "Nth derivative structure (e.g. cgau family)" should be "$p$" (cgau is the separate complex Gaussian family), and "Approximate; non-orthogonal" should just be "non-orthogonal".
+- [Correctness] The Daubechies naming is mixed: Haar is "Db1" (vanishing-moment convention), while "Db4" = 4 taps and "Db20" = 20 taps (tap convention); in PyWavelets these would be db2 and db10. Add a note and make the names consistent.
+
+=== 03 Engineering/02 Signal Processing/02 Wavelet Transformation/Wavelet Transformation.md
+- [Correctness] The CWT formula lacks the complex conjugate: it should be $\psi^*\!\left(\frac{t-b}{a}\right)$ (as in [[Fourier Transformation]]), which matters for complex wavelets such as Morlet.
+
+=== 03 Engineering/02 Signal Processing/Signal Processing.md
+- [Correctness] "FIR (Finite Impulse Response) – always stable, linear phase" and "FIR Filters – linear phase, stable": FIR filters are always stable, but have linear phase only when the coefficients are symmetric or antisymmetric; write "can have exactly linear phase".
+

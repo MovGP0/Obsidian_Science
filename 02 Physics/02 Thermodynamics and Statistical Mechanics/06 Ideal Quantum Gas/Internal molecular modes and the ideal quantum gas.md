@@ -59,28 +59,28 @@ When electronic spin $s$ or orbital angular momentum $\ell$ is nonzero, the inte
 For a diatomic molecule restricted to its electronic ground state, the Hamiltonian separates into center-of-mass translation and relative motion.
 
 $$
-\energy{H}=\frac{\mechanical{P}_{\mathrm{cm}}^2}{2\mechanical{M}}
+\energy{H}=\frac{\mechanical{p}_{\mathrm{cm}}^2}{2\mechanical{M}}
 +\energy{\epsilon}_0
-+\frac{\mechanical{p}_{\mathrm{rel}}^2}{2\mechanical{\mu}}
-+\energy{V}(\mechanical{r}),
++\frac{\mechanical{p}_{\mathrm{rel}}^2}{2\mechanical{m}_{\mathrm r}}
++\energy{U}(\mechanical{r}),
 $$
 
-where $\mechanical{\mu}$ is the reduced mass. Near the equilibrium bond length $\mechanical{r}_0$, use a rigid-rotor term and a harmonic vibrational potential,
+where $\mechanical{m}_{\mathrm r}$ is the reduced mass. Near the equilibrium bond length $\mechanical{r}_0$, use a rigid-rotor term and a harmonic vibrational potential,
 
 $$
-\energy{V}_{\mathrm{eff}}\approx
+\energy{U}_{\mathrm{eff}}\approx
 \frac{\energy{\hbar}^2\ell(\ell+1)}{2\mechanical{I}}+
 \frac12\mechanical{k}(\mechanical{r}-\mechanical{r}_0)^2,
-\qquad \mechanical{\omega}=\sqrt{\frac{\mechanical{k}}{\mechanical{\mu}}}.
+\qquad \mechanical{\omega}=\sqrt{\frac{\mechanical{k}}{\mechanical{m}_{\mathrm r}}}.
 $$
 
 Relative to the electronic energy offset, the internal eigenvalues are
 
 $$
-\energy{E}_{\ell,n}=
+\energy{E}_{\ell,v}=
 \frac{\energy{\hbar}^2\ell(\ell+1)}{2\mechanical{I}}
-+\energy{\hbar}\mechanical{\omega}\left(n+\frac12\right),
-\qquad \ell,n=0,1,2,\ldots.
++\energy{\hbar}\mechanical{\omega}\left(v+\frac12\right),
+\qquad \ell,v=0,1,2,\ldots.
 $$
 
 The sketch shows closely spaced rotational levels grouped under each vibrational level. The internal partition function factors as $j=Z_{\mathrm{vib}}Z_{\mathrm{rot}}$.
@@ -118,7 +118,7 @@ $$
 \begin{aligned}
 Z_{\mathrm{rot}}&=\sum_{\ell=0}^{\infty}(2\ell+1)
 e^{-\thermal{\beta}\energy{\hbar}^2\ell(\ell+1)/(2\mechanical{I})},\\
-Z_{\mathrm{vib}}&=\sum_{n=0}^\infty e^{-\thermal{\beta}\energy{\hbar}\mechanical{\omega}(n+1/2)}
+Z_{\mathrm{vib}}&=\sum_{v=0}^\infty e^{-\thermal{\beta}\energy{\hbar}\mechanical{\omega}(v+1/2)}
 =\frac{1}{2\sinh[\energy{\hbar}\mechanical{\omega}/(2\thermal{k}_{\mathrm B}\thermal{T})]}.
 \end{aligned}
 $$
@@ -317,8 +317,7 @@ Kyle Kabasares, *Thermodynamics and Statistical Mechanics (Chem 232A - Physics 2
 | $\mechanical{\vec r}$, $\mechanical{\vec x}$ | $\unit{m}$ | Position | Spatial position on a particle trajectory. |
 | $\mechanical{\vec p}$ | $\unit{kg\,m\,s^{-1}}$ | Momentum | Particle momentum, which changes sign under time reversal. |
 | $\mechanical{V}$ | $\unit{m^3}$ | Volume | Spatial extent of a simple system. |
-| $\mechanical{P}$, $\mechanical{P}_{\mathrm{int}}$, $\mechanical{P}_{\mathrm{ext}}$ | $\unit{Pa}$ | Pressure | Force per unit area, including the internal and applied external pressure at the piston. |
-| $n$ | $\unit{mol}$ | Amount of substance | Number of moles in the gas. |
+| $\mechanical{P}$ | $\unit{Pa}$ | Pressure | Force per unit area that the gas applies to the walls. |
 | $\thermal{C}_V$ | $\unit{J\,K^{-1}}$ | Heat capacity at constant volume | Temperature derivative of internal energy at fixed volume and composition. |
 | $\energy{H}$ | $\unit{J}$ | Enthalpy or Hamiltonian | Internal energy plus the pressure–volume product in thermodynamics. In mechanics and ensemble weights, the Hamiltonian. |
 | $\energy{E}$ | $\unit{J}$ | Energy | Microscopic energy that enters the Boltzmann weight. |
@@ -329,13 +328,10 @@ Kyle Kabasares, *Thermodynamics and Statistical Mechanics (Chem 232A - Physics 2
 | $n_i$ | 1 | Occupation number | Number of particles in a given energy level. |
 | $\energy{\epsilon}_i$ | $\unit{J}$ | Single-particle energy | Energy of a particle occupying level $i$. |
 | $\energy{\mu}$ | $\unit{J}$ per particle | Chemical potential | Intensive energy variable conjugate to particle number. |
-| $\Omega$ | 1 | Multiplicity | Number of accessible microstates, including the cumulative count in the ideal-gas calculation. |
 | $\mechanical{c}$ | $\unit{m\,s^{-1}}$ | Speed of light | Propagation speed in the photon spectrum formula. |
 | $\mechanical{L}$ | $\unit{m}$ | Box length | Side length of the cubic box. |
 | $\signal{\lambda}_{\mathrm{th}}$ | $\unit{m}$ | Thermal de Broglie wavelength | Wavelength scale for a particle of the given mass at the absolute temperature. |
 | $\mechanical{\omega}$ | $\unit{rad\,s^{-1}}$ | Angular frequency | Oscillation frequency in the harmonic Hamiltonian. |
-| $\mechanical{\theta}$, $\phi$ | $\unit{rad}$ | Orientation angles | Polar and azimuthal angles of a moment relative to the field axis. |
-| $g$ | 1 | Landé factor | Proportionality factor relating angular momentum and magnetic moment. |
 | $\mechanical{I}$ | $\unit{kg\,m^2}$ | Moment of inertia | Rotational inertia determining the spacing of rotor levels. |
 | $\Xi$ | 1 | Grand partition function | Normalizes the weights over energy states and particle numbers. |
 | $\energy{\Omega}$ | $\unit{J}$ | Grand potential | Legendre transform of Helmholtz free energy with respect to particle number. |
@@ -344,10 +340,11 @@ Kyle Kabasares, *Thermodynamics and Statistical Mechanics (Chem 232A - Physics 2
 | $j$ | 1 | Internal partition function | Sum over molecular states other than translation. |
 | $\thermal{C}_P$ | $\unit{J\,K^{-1}}$ | Heat capacity at constant pressure | Heat capacity for a process at fixed pressure and composition. |
 | $p_i$ | 1 | Level degeneracy | Number of distinct quantum states at the same level energy. |
-| $\mechanical{\mu}$ | $\unit{kg}$ | Reduced mass | Effective mass of the relative motion of the two atoms. |
+| $\mechanical{m}_{\mathrm r}$ | $\unit{kg}$ | Reduced mass | Effective mass of the relative motion of the two atoms. |
+| $\energy{U}(\mechanical{r})$, $\energy{U}_{\mathrm{eff}}$ | $\unit{J}$ | Bond potential | Potential energy of the two atoms as a function of their separation, and its effective form with the rotational term. |
+| $\mechanical{p}_{\mathrm{cm}}$, $\mechanical{p}_{\mathrm{rel}}$ | $\unit{kg\,m\,s^{-1}}$ | Center-of-mass and relative momentum | Momentum of the molecule as a whole and momentum of the relative motion. |
 | $\mechanical{r}_0$ | $\unit{m}$ | Equilibrium bond length | Internuclear separation at the minimum of the molecular potential. |
 | $\mechanical{k}$ | $\unit{N\,m^{-1}}$ | Bond force constant | Curvature of the potential near its minimum. |
 | $\energy{\Delta}_{\mathrm{rot}}$ | $\unit{J}$ | First rotational gap | Energy difference between the first excited and ground rotational levels. |
 | $\thermal{\gamma}$ | 1 | Adiabatic exponent | Heat-capacity ratio for the ideal gas when the heat capacities are constant. |
 | $g$ | 1 | Internal degeneracy | Number of internal states per momentum state. |
-| $\mechanical{M}$ | $\unit{kg}$ | Stellar mass | Mass interior to a shell or total mass, as indicated by the argument. |

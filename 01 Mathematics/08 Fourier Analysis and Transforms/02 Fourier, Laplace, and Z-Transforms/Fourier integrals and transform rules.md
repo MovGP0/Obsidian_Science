@@ -32,13 +32,13 @@ For even real $f$, the sine part cancels, so $\widehat f(k)=2\int_0^\infty f(t)\
 
 Linearity holds wherever the transforms exist. Substitution and integration by parts give the following rules. Assume sufficient decay and integrability for each operation; the derivative rule requires the boundary term $f(t)e^{-ikt}$ to vanish at both infinities.
 
-| Change in the original | Change in its transform |     |     |
-| ---------------------- | ----------------------- | --- | --- |
-| $f(t-a)$               | $e^{-ika}\widehat f(k)$ |     |     |
-| $e^{ibt}f(t)$          | $\widehat f(k-b)$       |     |     |
-| $f(at)$, real $a\ne0$  | $\widehat f(k/a)/       | a   | $   |
-| $f'(t)$                | $ik\widehat f(k)$       |     |     |
-| $tf(t)$                | $i\widehat f'(k)$       |     |     |
+| Change in the original | Change in its transform |
+| ---------------------- | ----------------------- |
+| $f(t-a)$               | $e^{-ika}\widehat f(k)$ |
+| $e^{ibt}f(t)$          | $\widehat f(k-b)$       |
+| $f(at)$, real $a\ne0$  | $\widehat f(k/a)/\lvert a\rvert$ |
+| $f'(t)$                | $ik\widehat f(k)$       |
+| $tf(t)$                | $i\widehat f'(k)$       |
 
 For instance, differentiate the kernel with respect to $k$: $\widehat f'(k)=\int(-it)f(t)e^{-ikt}dt$. Multiply by $i$ to obtain the last row. A negative scale reverses integration bounds, which is why the scale rule uses $|a|$.
 

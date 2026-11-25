@@ -46,24 +46,24 @@ $$
 For $\lambda=2$, the first row gives $v_1+v_2=0$. Choose $(1,-1)^T$. Its squared norm is $1^2+(-1)^2=2$, so
 
 $$
-v_2=\frac1{\sqrt2}\begin{pmatrix}1\\-1\end{pmatrix}.
+u_2=\frac1{\sqrt2}\begin{pmatrix}1\\-1\end{pmatrix}.
 $$
 
 For $\lambda=4$, the first row gives $-v_1+v_2=0$. Choose $(1,1)^T$ and divide by the same norm:
 
 $$
-v_4=\frac1{\sqrt2}\begin{pmatrix}1\\1\end{pmatrix}.
+u_4=\frac1{\sqrt2}\begin{pmatrix}1\\1\end{pmatrix}.
 $$
 
 Direct substitution checks both results:
 
 $$
-Av_2=\frac1{\sqrt2}\begin{pmatrix}2\\-2\end{pmatrix}=2v_2,
+Au_2=\frac1{\sqrt2}\begin{pmatrix}2\\-2\end{pmatrix}=2u_2,
 \qquad
-Av_4=\frac1{\sqrt2}\begin{pmatrix}4\\4\end{pmatrix}=4v_4.
+Au_4=\frac1{\sqrt2}\begin{pmatrix}4\\4\end{pmatrix}=4u_4.
 $$
 
-Also $v_2^\dagger v_4=(1-1)/2=0$. The two normalized vectors form an orthonormal basis.
+Also $u_2^\dagger u_4=(1-1)/2=0$. The two normalized vectors form an orthonormal basis.
 
 ### (b) Complex Hermitian matrix
 

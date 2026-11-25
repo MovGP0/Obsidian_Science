@@ -59,7 +59,7 @@ Definitions, constructions, and theorems have different roles. A **definition** 
 <!-- catalogue-complete-lesson-index:start -->
 ## Complete lesson index
 
-Read the prerequisite route above before the advanced lessons. The source topic links are in [[Planned Topics#3. Geometry|the detailed catalogue]].
+Read the prerequisite route above before the advanced lessons.
 
 - [[Points lines and angles|Points, lines, and angles]] — 3.1, 3.1.1, 3.1.1.1, 3.1.1.2, 3.1.1.3, 3.1.1.4, 3.1.1.5.
 - [[Circular and hyperbolic geometry|Circular and hyperbolic geometry]] — 3.1.2, 3.1.2.1, 3.1.2.2.

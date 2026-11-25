@@ -44,7 +44,7 @@ For example, the quotient $(x^2-1)/(x-1)$ agrees with $x+1$ for every $x\ne1$. I
 <!-- catalogue-complete-lesson-index:start -->
 ## Complete lesson index
 
-Read the prerequisite route above before the advanced lessons. The source topic links are in [[Planned Topics#2. Functions and their representation|the detailed catalogue]].
+Read the prerequisite route above before the advanced lessons.
 
 - [[Function inputs outputs and representations|Function inputs outputs and representations]] — 2.1, 2.1.1, 2.1.1.1, 2.1.1.2, 2.1.1.3, 2.1.1.4, 2.1.1.5, 2.1.1.6, 2.1.1.7, 2.1.2, 2.1.2.1, 2.1.2.2.
 - [[Function order bounds and symmetry|Function order bounds and symmetry]] — 2.1.3, 2.1.3.1, 2.1.3.2, 2.1.3.3, 2.1.3.4, 2.1.3.5, 2.1.3.6, 2.1.3.7.

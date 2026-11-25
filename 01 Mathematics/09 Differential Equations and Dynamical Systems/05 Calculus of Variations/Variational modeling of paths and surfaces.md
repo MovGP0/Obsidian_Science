@@ -293,12 +293,7 @@ Kyle Kabasares, *Mathematical Modeling (Math 150, UC Merced 2017)*.
 
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
-| $R$ | 1 | Population | Number of animals in the isolated system. |
-| $t$, $1/\alpha$ | $\unit{s}$ | Elapsed time | Time in the population model and time for one factor of $e$ of exponential growth, expressed in the chosen time unit. |
-| $\epsilon$ | 1 | Rate ratio | Ratio of the wolf decline rate to the rabbit growth rate. |
-| $T$ | $\unit{s}$ | Sampling period | Time between successive measurements at the same phase. |
+| $t$ | $\unit{s}$ | Elapsed time | Time between the initial state and the sampled state in the Lyapunov estimate. |
+| $\epsilon$ | 1 | Variation parameter | Small real factor that scales the variation $\eta$ or the initial perturbation. |
 | $\lambda$ | $\unit{s^{-1}}$ | Lyapunov exponent | Exponential rate of growth or decay of a perturbation in time. |
-| $x$, $y$ | $\unit{oz}$ | Ingredient amounts | Onion soup and chicken stock per serving, respectively. |
-| $s$ | $\unit{g}$ | Protein surplus | Protein above the minimum required per serving. |
-| $t$ | — | Iron surplus | Iron above the minimum required per serving, in the unspecified iron units of the exercise. |
 | $\mechanical{\theta}_1$, $\mechanical{\theta}_2$ | $\unit{rad}$ | Angular coordinates | The two angles in the rover-arm state. |

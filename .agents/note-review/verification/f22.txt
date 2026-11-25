@@ -1,0 +1,42 @@
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/07 Quantum Electrodynamics/7.P Problems.md
+- FIXED | Problem 7.34 hint interference denominator must use (p1-p4)^2 | Changed (p2-p4)^2 to (p1-p4)^2 in the hint denominator to match the second propagator of (7.105); removed BOM.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/08 Electrodynamics of Quarks and Hadrons/8.2 Hadron Production in e⁺e⁻ Scattering.md
+- FIXED | Eq. (8.2) second trace needs lower indices | Changed gamma^mu, gamma^nu to gamma_mu, gamma_nu in the second trace.
+- FIXED | 1784 GeV must be 1784 MeV | Changed the unit to MeV in the paragraph after (8.11).
+- FIXED | Outdated SLC 1987 and top-mass statements | Added two Modern status callouts: SLC/LEP from 1989 with Z0 dominance near 2E of 91 GeV; top found 1995 at 172.6 GeV/c^2, R=5 step above 2E of 345 GeV never seen in e+e-.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/08 Electrodynamics of Quarks and Hadrons/8.3 Elastic Electron-Proton Scattering.md
+- FIXED | Eq. (8.16) q_mu K^{mu nu}=1 must be 0 | Changed to 0; checked that (8.17) follows from 0.
+- FIXED | Footnote cites Mott formula as (7.127) | Changed to (7.128), which is the Mott cross section in 7.8.
+- PARTLY | Symbol clash K (anomalous moment) vs K_i and K^{mu nu} | Renamed K to kappa_p in the Fig. 8.4 caption and table in 8.3; 8.B is not in this batch, so its K (used in K_1=-q^2(F_1+K F_2)^2) still needs the same rename.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/08 Electrodynamics of Quarks and Hadrons/8.4 Inelastic Electron-Proton Scattering.md
+- FIXED | Symbol clash W missing mass vs structure functions W_i | Renamed the missing mass to M_X in the Fig. 8.5 caption and the table (8.B, not in batch, still uses W for it).
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/08 Electrodynamics of Quarks and Hadrons/8.5 The Parton Model and Bjorken Scaling.md
+- FIXED | Eq. (8.40) W_2^i missing a factor c | Changed c to c^2; checked against (8.35), (8.36) and (8.45).
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/09 Quantum Chromodynamics/9.1 Feynman Rules for Chromodynamics.md
+- FIXED | Symbol clash color vector c vs speed of light c | Added an explicit warning sentence after (9.15); did not rename because the color vector c is used across 9.1 to 9.P.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/09 Quantum Chromodynamics/9.2 The Quark-Quark Interaction.md
+- FIXED | Missing opening parenthesis in triplet state (9.34) | Changed bg-gb)/sqrt2 to (bg-gb)/sqrt2.
+- FIXED | Example 9.4 fourth term sign must be + | Changed the sign of the br-br term to +; the expansion and the next line now agree.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/09 Quantum Chromodynamics/9.3 Pair Annihilation in QCD.md
+- FIXED | Symbol clash color vectors c, c_1, c_2 vs speed of light c | Added an explicit warning sentence after (9.40); no rename, for consistency with the other chapter-9 notes.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/09 Quantum Chromodynamics/9.4 Asymptotic Freedom.md
+- FIXED | Eq. (9.72) Lambda range outdated | Added a Modern status callout: alpha_s(M_Z)=0.1180+-0.0009 (PDG 2024), Lambda^(5) about 210 MeV, Lambda^(3) about 340 MeV in MS-bar, scheme and flavor dependence; added m_q and M_Z to the table.
+- FIXED | f is number of active flavors, not 6 | Reworded f as the number of active flavors with m_q c below sqrt(abs(q^2)), at most 6, f=5 between b and t thresholds.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/09 Quantum Chromodynamics/9.5 Applications of QCD.md
+- FIXED | Outdated claim that n-p mass difference cannot be calculated | Added a dated Modern status callout: lattice light-hadron spectrum to about 1% (Durr 2008), n-p mass difference (Borsanyi 2015), nuclear binding still hard.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/09 Quantum Chromodynamics/9.B References and Notes.md
+- FIXED | Ref. 6 Phys. Rev. 14C must be Phys. Rep. 14C; remove BOM | Changed the journal to Phys. Rep. and removed the BOM (UTF-8, LF).
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/09 Quantum Chromodynamics/9.P Problems.md
+- FIXED | Problem 9.5(a) 7*6/(3*2*1)=56 is wrong arithmetic | Changed to 8*7*6/(3*2*1)=56.
+- FIXED | Problem 9.2 stated mapping does not match U | With r=(1,0,0), b=(0,1,0), g=(0,0,1), U takes r to g, b to r, g to b; corrected the stated mapping and kept U.
+- FIXED | Problems 9.6(b), 9.6(c), 9.8 states multiplied instead of divided by sqrt | Changed to /sqrt2, /sqrt6, /sqrt2.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/10 Weak Interactions/10.1 Charged Leptonic Weak Interactions.md
+- FIXED | Outdated M_W, M_Z and heaviest-particle claim | Added a Modern status callout after (10.1): M_W about 80.37, M_Z about 91.19 GeV/c^2; top quark and Higgs boson are heavier.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/10 Weak Interactions/10.2 Decay of the Muon.md
+- FIXED | Eq. (10.39) G must be G_F | Changed G^2 to G_F^2 and removed the table remark about the printed symbol G.
+- FIXED | New machines under construction near M_W is outdated | Added a Modern status callout: LEP2, Tevatron, LHC have run there; current M_W gives g_w about 0.65 (checked numerically), close to (10.41).
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/10 Weak Interactions/10.3 Decay of the Neutron.md
+- PARTLY | Outdated lifetime, c_A, within-error-bars and 6% claims | Modern values right; 914 s was inside 898+-16 for the book data and 963 s is 6.8 to 7.2% above 898 s, so the book text was defensible; added a callout with 878.4+-0.5 s, g_A 1.2754, recomputed 944 s (about 7% high) and noted the omitted Coulomb and radiative corrections.
+- FIXED | State modern V_ud since it enters (10.71) | Included abs(V_ud)=0.97367 in the same callout as the modern value of cos(theta_C).
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/10 Weak Interactions/10.4 Decay of the Pion.md
+- FIXED | A massless electron would still have both helicities | Made the 1-gamma^5 vertex statement the main sentence and added that a massless electron could still be right-handed but the weak vertex cannot produce it.

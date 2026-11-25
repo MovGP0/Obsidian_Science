@@ -17,10 +17,10 @@ $$
 
 The notes put a boxed “1987” next to the time-scale relation and give $\delta_X\lesssim1/2$.
 
-The initial helium abundance in the Sun is $Y_{\mathrm{initial}}=0.274$. The next line gives $Y_{\mathrm{primordial}}=0.23$ and writes $Y_{\mathrm{primordial}}\geq Y_{\mathrm{init}}$, followed by $\delta_X<1/2$.
+The initial helium abundance in the Sun is $Y_{\mathrm{initial}}=0.274$. The primordial helium abundance is $Y_{\mathrm{primordial}}\approx0.245$, so $Y_{\mathrm{primordial}}<Y_{\mathrm{init}}$. This is followed by $\delta_X<1/2$.
 
 > [!note]
-> The inequality between the helium abundances is reproduced as written. The numerical values on the page give the reverse ordering.
+> The handwritten notes give $Y_{\mathrm{primordial}}=0.23$ and $Y_{\mathrm{primordial}}\geq Y_{\mathrm{init}}$. The value $0.23$ is outdated: Big Bang nucleosynthesis and Planck data give $Y_p\approx0.245$. Both values give $Y_{\mathrm{primordial}}<Y_{\mathrm{init}}$.
 
 The next sketch shows two photons meeting at one vertex, a dashed axion line $a$ connecting the vertices, and two photons leaving the second vertex. Each photon line is labeled $\gamma$.
 
@@ -36,7 +36,7 @@ The next sketch shows two photons meeting at one vertex, a dashed axion line $a$
 
 The notes use YSO for *young stellar object*. As a protostar becomes a star, thermonuclear fusion becomes the dominant energy source over gravitational contraction.
 
-The classification list gives classes 0, 1, and 2. The notes mark class 0 as still contracting and classes 1 and 2 as “stars” with nuclear burning. The sketch for class 0 shows arrows pointing into a cloud. The two sketches below it show a star with bipolar outflow and a star with arrows pointing outward in several directions.
+The classification list gives classes 0, 1, and 2. The notes mark class 0 as still contracting and classes 1 and 2 as “stars” with nuclear burning. Class I and class II objects (protostars and classical T Tauri stars) are pre-main-sequence objects. Accretion and gravitational contraction power them, with some deuterium burning. Hydrogen fusion starts only at the zero-age main sequence. The sketch for class 0 shows arrows pointing into a cloud. The two sketches below it show a star with bipolar outflow and a star with arrows pointing outward in several directions.
 
 An inset labeled DSNB shows a rate, read here as $\mathrm{d}n/\mathrm{d}t$, against redshift $z$. The curve rises, levels off, and falls. An adjacent arrow points from “neutrons” to “Gd.”
 
@@ -55,7 +55,7 @@ The notes say that most stars are on the main sequence in an “honest sample.�
 
 ![[Kyle Kabasares - Stellar Astrophysics - HR diagram for nearest stars.png|**Fig. 7** Color–magnitude sketch of the nearest stars, with the main sequence and the white dwarf group labeled]]
 
-The nearest-star sketch marks $M_V=0$ near the top and $B-V=0.0$ near $\quantity{10^4}{K}$. Effective temperature increases toward the left. The handwriting marks the upper main sequence with $\quantity{10^3}{yr}$ and “O stars,” and the lower main sequence with $\quantity{10^{12}}{yr}$. The upper arrow ends near the Sirius A label.
+The nearest-star sketch marks $M_V=0$ near the top and $B-V=0.0$ near $\quantity{10^4}{K}$. Effective temperature increases toward the left. The handwriting marks the upper main sequence with $\quantity{10^3}{yr}$ and “O stars.” The correct main-sequence lifetime of O stars is a few million years, about $\quantity{3\times10^6}{yr}$ to $\quantity{10^7}{yr}$. The handwriting marks the lower main sequence with $\quantity{10^{12}}{yr}$. The upper arrow ends near the Sirius A label.
 
 The page opens with an aside about discussing better books.
 
@@ -66,7 +66,7 @@ Mass is the primary factor. Composition is secondary. Mass sets the radius, lumi
 On the main sequence, hydrogen becomes helium through the proton–proton chains or the CNO cycle. The notes give $1.5\mechanical{M}_\odot$ as the dividing mass in this lecture. CNO burning is more effective at high temperatures.
 
 1. CNO reactions generate energy in a smaller region, which leads to a convective center.
-2. The notes say that at $\mechanical{M}\geq1.5\mechanical{M}_\odot$ there is more neutral hydrogen in the stellar envelope. They connect higher opacity to a redder star and weaker ultraviolet emission.
+2. Stars below about $1.3$–$1.5\mechanical{M}_\odot$ have cool envelopes with more neutral hydrogen and $\mathrm{H}^-$. The high opacity gives them convective envelopes, a redder color, and weaker ultraviolet emission. More massive stars have radiative envelopes. (The handwritten notes put the neutral hydrogen at $\mechanical{M}\geq1.5\mechanical{M}_\odot$, which is the reverse.)
 
 Convection occurs in part of the star. The notes use the absence of nuclear products at the surface as evidence that convection does not mix the whole star.
 
@@ -103,40 +103,24 @@ Kyle Kabasares, *Stellar Astrophysics (Physics 241B, UC Irvine 2019)*.
 
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
-| $\mechanical{M}_\odot$ | $\unit{kg}$ | Solar mass | The mass of the Sun. |
-| $\mechanical{M}$ | $\unit{g}$ | Mass | The enclosed mass in the expression beside the force sketch. |
-| $\mechanical{P}$ | $\unit{dyn\,cm^{-2}}$ | Pressure | The local force per unit area exerted by the stellar material. |
-| $\mechanical{M}$ | $\unit{g}$ | Total stellar mass | The upper limit of the integral over the stellar mass. |
-| $\mechanical{R}$ | $\unit{cm}$ | Stellar radius | The radius of the star used in the energy scale. |
-| $\thermal{T}$ | $\unit{K}$ | Temperature | The local thermodynamic temperature. |
-| $t$ | $\unit{s}$ | Time | The independent variable in the virial calculation. |
-| $\energy{L}$ | $\unit{erg\,s^{-1}}$ | Stellar luminosity | The rate of energy loss from the contracting star. |
-| $n$ | $\unit{cm^{-3}}$ | Particle number density | The number of gas particles per unit volume. |
-| $\thermal{k}$ | $\unit{erg\,K^{-1}}$ | Boltzmann constant | The conversion factor between temperature and energy per particle. |
-| $X$ | 1 | Hydrogen mass fraction | The fraction of stellar mass in hydrogen. |
-| $Y$ | 1 | Helium mass fraction | The fraction of stellar mass in helium. |
-| $Z$ | 1 | Metallicity | The fraction of stellar mass in elements heavier than helium. |
-| $Y_p$ | 1 | Primordial helium mass fraction | The helium mass fraction produced after the Big Bang. |
-| $D$ | $\unit{cm^2\,s^{-1}}$ | Radiative diffusion coefficient | The proportionality factor between energy flux and the radiation energy density gradient. |
-| $a$ | $\unit{erg\,cm^{-3}\,K^{-4}}$ | Radiation constant | The constant in the radiation energy density $a\thermal{T}^4$. |
+| $\thermal{T}$ | $\unit{K}$ | Temperature | The stellar temperature in the fractional-change relation and the stellar-structure results. |
 | $\delta_X$ | 1 | Fractional energy loss | The fraction of the nuclear production rate removed by the parameterized loss. |
+| $\nu$ | 1 | Temperature exponent | The exponent of the temperature dependence of the nuclear energy generation rate. |
 | $\tau$ | $\unit{yr}$ | Stellar time scale | The time scale whose fractional change is estimated from the additional loss. |
 | $Y_{\mathrm{initial}}$, $Y_{\mathrm{init}}$ | 1 | Initial solar helium mass fraction | The helium mass fraction at the start of the solar model. |
-| $Y_{\mathrm{primordial}}$ | 1 | Primordial helium mass fraction | The helium mass fraction compared with the initial solar value. |
+| $Y_{\mathrm{primordial}}$, $Y_p$ | 1 | Primordial helium mass fraction | The helium mass fraction produced by Big Bang nucleosynthesis. |
+| $\mechanical{M}$ | $\unit{g}$ | Stellar mass | The total mass of the star. |
+| $\mechanical{M}_\odot$ | $\unit{g}$ | Solar mass | The mass of the Sun. |
+| $\mechanical{M}_J$ | $\unit{g}$ | Jupiter mass | The mass of Jupiter, used as a unit for brown dwarfs. |
+| $\energy{L}$ | $\unit{erg\,s^{-1}}$ | Stellar luminosity | The energy that the star radiates per unit time. |
+| $\mechanical{R}$ | $\unit{cm}$ | Stellar radius | The radius of the star. |
 | $\mathrm{d}n/\mathrm{d}t$ | — | Event rate | The rate sketched against redshift. The source gives no normalization. |
 | $z$ | 1 | Redshift | The horizontal coordinate of the DSNB sketch. |
 | $\magnetic{\vec{B}}$ | $\unit{G}$ | Magnetic flux density | The magnetic field associated with stellar activity. |
 | $M_V$ | 1 | Absolute visual magnitude | The magnitude plotted on the vertical axes of the color–magnitude diagrams. |
 | $B-V$ | 1 | Color index | The difference between the blue and visual magnitudes. |
-| $\mechanical{M}_J$ | $\unit{kg}$ | Jupiter mass | The mass of Jupiter, used as a unit for brown dwarfs. |
+| $Z$ | 1 | Metallicity | The fraction of stellar mass in elements heavier than helium. |
+| $\mechanical{P}$ | $\unit{dyn\,cm^{-2}}$ | Pressure | The gas pressure in the ideal-gas relation. |
+| $n$ | $\unit{cm^{-3}}$ | Particle number density | The number of gas particles per unit volume. |
+| $\thermal{k}$ | $\unit{erg\,K^{-1}}$ | Boltzmann constant | The conversion factor between temperature and energy per particle. |
 | $\mathrm{D}/\mathrm{H}$ | 1 | Deuterium-to-hydrogen abundance ratio | The abundance of deuterium relative to hydrogen. |
-| $V$ | 1 | Visual magnitude | The vertical coordinate in the Hertzsprung-gap sketch. |
-| $Z$ | 1 | Proton number | The number of protons in the nucleus in the neutron-drip diagram. |
-| $\tau$ | $\unit{s}$ | Total lifetime | The reciprocal of the sum of the channel rates. |
-| $\mechanical{R}$ | $\unit{m}$ | Nuclear radius scale | The length scale given with the nuclear density. |
-| $s$ | $\unit{m}$ | Impact parameter | The transverse offset of the incoming trajectory from the target. |
-| $a$ | $\unit{m}$ | Confinement length | The characteristic electron spacing estimated from position uncertainty. |
-| $K$ | $\unit{dyn\,cm^3\,g^{-5/3}}$ | Polytropic constant | The coefficient of the density power law for the nonrelativistic gas. |
-| $n$ | $\unit{cm^{-3}}$ | Nucleus number density | The nucleus count per volume in the compact-object composition formula. |
-| $n$ | 1 | Polytropic index | The index that determines the density profile and the equation-of-state exponent. |
-| $a$ | $\unit{m}$ | Polytropic length scale | The factor that converts the normalized coordinate to radius. |

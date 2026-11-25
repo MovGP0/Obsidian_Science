@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Solve spherical triangles"
 catalogue_ids:
   - "3.4.3"
@@ -59,7 +59,7 @@ For SSA, suppose $a,b,A$ are known. The equation $\sin B=\sin b\sin A/\sin a$ su
 
 ## Spherical curves and distances from coordinates
 
-For two points with latitudes $\varphi_1,\varphi_2$ and longitude difference $\Delta\lambda$, apply the spherical cosine rule to their polar triangle:
+For two points with latitudes $\varphi_1,\varphi_2$ and longitude difference $\Delta\lambda$, apply the spherical cosine rule to the triangle that the north pole and the two points make. Its sides at the pole are the colatitudes $\pi/2-\varphi_1$ and $\pi/2-\varphi_2$, and the included angle is $\Delta\lambda$:
 
 $$
 \cos\sigma=\sin\varphi_1\sin\varphi_2+

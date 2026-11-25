@@ -1,0 +1,60 @@
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/01 Historical Introduction to the Elementary Particles/1.8 The Quark Model (1964).md
+- [Correctness] "none has ever been found" for exotic hadrons is outdated: tetraquark candidates ($X(3872)$ 2003, $Z_c(3900)$ 2013), the doubly charged $T_{c\bar s0}(2900)^{++}$ (LHCb 2022, a meson-like state with $Q=+2$, against "nor can there be a meson with a charge of +2") and pentaquarks $P_c$ (LHCb 2015) have been observed.
+- [Correctness] "The only colorless combinations you can make are $q\bar q$, $qqq$, and $\bar q\bar q\bar q$" is wrong: $qq\bar q\bar q$ and $qqqq\bar q$ (and glueballs) are also colour singlets; restate the rule as "colour-singlet combinations, the simplest being $q\bar q$ and $qqq$".
+- [Correctness] The nonet table pairs $u\bar u\to\pi^0$ and $d\bar d\to\eta$, which is wrong even with the later caveat; give the physical states $\pi^0=(u\bar u-d\bar d)/\sqrt2$, $\eta\approx(u\bar u+d\bar d-2s\bar s)/\sqrt6$, $\eta'\approx(u\bar u+d\bar d+s\bar s)/\sqrt3$, or write "mixtures" in the meson column.
+- [Correctness] The confinement paragraph ("crucial theoretical problem for the eighties ... solution may be at hand") and the DIS "not conclusive" remark are dated; add a callout that QCD is established, that lattice QCD shows a linearly rising quark potential, and that free-quark searches set tight limits.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/01 Historical Introduction to the Elementary Particles/1.9 The November Revolution and Its Aftermath (1974-1983).md
+- [Correctness] Fig. 1.13(b) vector-meson graph: "s̄d̄ (K̄*⁰)" is two antiquarks and not a meson (should be $s\bar d$, $\bar K^{*0}$); "s̄c" at the charm $-1$ vertex has charm $+1$ (should be $s\bar c$); "ud̄ (ρ*)" should be $u\bar d$ ($\rho^+$).
+- [Correctness] Fig. 1.13(d) spin-½ graph: the charm $+2$ vertex "scs" should be $ccs$, the charm $+1$ vertex at (−1.6, 1.1) labelled "ccd" should be $cdd$ ($\Sigma_c^0$), and "uss (Ξ*⁺)" should be $uss$ ($\Xi^0$); Fig. 1.13(e): the charm $+2$ vertex at (−0.75, 1.7) labelled "cdd" should be $ccd$.
+- [Correctness] Fig. 1.13(a) is a stray circle with three labels ($d\bar d$, $s\bar s$, $c\bar c$) instead of the pseudoscalar 16-plet; rebuild it as the pseudoscalar analogue of (b) ($D$, $D_s$, $K$, $\pi$, $\eta$, $\eta_c$) or remove it, and add the missing outer labels ($K^{*\pm}$, $n$, $p$, $\Delta^0$, $\Sigma^{*-}$, $\Sigma^{*0}$) so the reader can actually use the diagrams for Problems 1.14–1.15.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/01 Historical Introduction to the Elementary Particles/1.B References and Notes.md
+- [Correctness] Note 10: "Phys. Rev. **92**, 8301 (1953)" should read "**92**, 830 (1953)" (Reines and Cowan); the extra digit looks like a merged footnote mark.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/01 Historical Introduction to the Elementary Particles/1.P Problems.md
+- [Correctness] Symbol clash: $\mechanical{p}$ is used for electron momentum in Problem 1.3 and for the proton mass in the Coleman–Glashow relation (Problem 1.9), and the table lists both; write the masses in 1.9 as $m_p, m_n, m_{\Sigma^\pm}, m_{\Xi^{0,-}}$ or state explicitly that the particle names stand for masses only there.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/02 Elementary Particle Dynamics/2.2 Quantum Electrodynamics (QED).md
+- [Correctness] "each vertex within a diagram introduces a factor of $\alpha=e^2/\hbar c=1/137$": each vertex contributes $\sqrt{\alpha}$ (i.e. $e$) to the amplitude, so a diagram with $n$ vertices scales as $\alpha^{n/2}$ in the amplitude and $\alpha^{n}$ in the rate; also write $\alpha\approx1/137$ rather than "=".
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/02 Elementary Particle Dynamics/2.4.2 Quarks.md
+- [Correctness] Eq. (2.6) is outdated: current PDG magnitudes are about $|V_{ud}|=0.974$, $|V_{us}|=0.225$, $|V_{ub}|=0.0037$, $|V_{cd}|=0.225$, $|V_{cs}|=0.973$, $|V_{cb}|=0.042$, $|V_{td}|=0.0086$, $|V_{ts}|=0.041$, $|V_{tb}|=0.999$; the ranges "0. to 0.014" and "0. to 0.024" also suggest $V_{ub}$, $V_{td}$ could vanish, which is now excluded. Add the current values in a callout.
+- [Correctness] "$d+\nu_e\to u+e$" should read $d+\nu_e\to u+e^-$ (charge bookkeeping is the point of the example).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/02 Elementary Particle Dynamics/2.5 Decays and Conservation Laws.md
+- [Correctness] Opening paragraph: "The neutrinos and the photon are stable (having zero mass ...)" is outdated; neutrino oscillations show at least two neutrinos are massive. The lightest neutrino is still stable, and heavier ones could only decay at unobservably slow rates, so rephrase the reason.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/02 Elementary Particle Dynamics/2.6 Unification Schemes.md
+- [Correctness] "the half-life is ... at least $10^{20}$ times the age of the universe" is outdated: Super-Kamiokande gives $\tau/B(p\to e^+\pi^0)>2.4\times10^{34}$ yr, i.e. more than $10^{24}$ times the age of the universe, which rules out minimal non-supersymmetric SU(5).
+- [Correctness] Fig. 2.5 and the text imply the three couplings meet at one point near $10^{15}$ GeV; LEP precision data show that with Standard Model running they do not meet at a single point (they nearly do with supersymmetric running near $2\times10^{16}$ GeV). Add this caveat; also $M_Z=91.19\,\mathrm{GeV}/c^2$, not 90.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/03 Relativistic Kinematics/3.3 Energy and Momentum.md
+- [Correctness] "at least two types of massless particles (the photon and the neutrinos) are known to exist" is outdated; neutrinos are massive (oscillations), so the examples of massless particles are the photon and the gluon.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/04 Symmetries/4.2 Spin and Orbital Angular Momentum.md
+- [Correctness] Table 4.3 shows "—" for elementary spin-0 bosons; the Higgs boson (spin 0, $125\,\mathrm{GeV}/c^2$, discovered 2012) belongs there. Mention also the hypothetical spin-2 graviton.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/04 Symmetries/4.3 Addition of Angular Momenta.md
+- [Correctness] Eq. (4.17) sums over $j_1,j_2$, but $j_1,j_2$ are fixed; the sum must run over $m_1,m_2$ with $m_1+m_2=m$: $\lvert j\,m\rangle=\sum_{m_1+m_2=m}C^{j\,j_1\,j_2}_{m\,m_1\,m_2}\lvert j_1m_1\rangle\lvert j_2m_2\rangle$.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/04 Symmetries/4.5 Flavor Symmetries.md
+- [Correctness] Table 4.4 is outdated: current PDG values are about $m_u=2.2$, $m_d=4.7$, $m_s=93$ MeV (MS-bar at 2 GeV), $m_c=1.27$ GeV, $m_b=4.18$ GeV, and $m_t=172.6$ GeV (directly measured since the 1995 discovery), not "$>23{,}000$"; replace or annotate the table and the "putative top quark" sentence.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/04 Symmetries/4.6 Parity.md
+- [Correctness] Wu experiment: electrons from polarised $^{60}$Co are emitted preferentially opposite to the nuclear spin ("southerly"), not "in the direction of the nuclear spin"; fix the text, the Fig. 4.7 caption, and the mirror-image statements and Fig. 4.8 caption (the mirror image then has electrons preferentially along the spin). Griffiths corrected this in the 2nd edition.
+- [Correctness] "The neutrino is massless ... the helicity of a neutrino is Lorentz-invariant" is outdated; neutrinos have small masses, so strictly it is chirality (not helicity) that the weak interaction selects, and helicity equals chirality only up to corrections of order $m_\nu/E$. Add a callout (the footnote's "if neutrinos have a small but nonzero mass" is now confirmed).
+- [Correctness] Table 4.6 uses obsolete 1980s meson names; current PDG names are $b_1, K_{1B}, h_1/h_1'$ for $1^{+-}$; $a_0, K_0^*, f_0$ for $0^{++}$; $a_1, K_{1A}, f_1(1285)/f_1(1420)$ for $1^{++}$; $a_2, K_2^*, f_2/f_2'$ for $2^{++}$. Give modern names (old names in brackets).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/04 Symmetries/4.8 CP Violation.md
+- [Correctness] "has never been observed outside the neutral kaon system" is outdated: CP violation was observed in $B^0$ decays (BaBar/Belle 2001), in charm decays (LHCb 2019) and in baryon decays (LHCb 2025); the CKM phase is now the established Standard Model mechanism (Nobel Prize 2008). Add an update callout and soften "no one has yet found a natural way".
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/04 Symmetries/4.9 Time Reversal and the TCP Theorem.md
+- [Correctness] Eq. (4.76) and "As of 1985, no experiment has shown direct evidence of T violation" are outdated: the current neutron EDM limit is $\lvert d_n\rvert<1.8\times10^{-26}\,e\,\mathrm{cm}$ (PSI, 2020), and CPLEAR (1998, $K^0\leftrightarrow\bar K^0$) and BaBar (2012, entangled $B$ mesons) observed T violation directly; add a dated update callout.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/04 Symmetries/4.P Problems.md
+- [Correctness] The physical-quantities table assigns $\mechanical{m}$ both to the electron mass (Problem 4.8) and to the projection quantum number in the ladder-operator formula (Problem 4.23); list them as separate rows or write the projection as $m_s$ in 4.23.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/05 Bound States/5.1 The Schrödinger Equation for a Central Potential.md
+- [Correctness] "hadrons made out of heavy quarks ($c,b$, and $t$)" and the later "substantially less than $c,b$, and $t$": the top quark decays ($\tau\approx5\times10^{-25}$ s) before it can form hadrons, so drop $t$ or add a footnote.
+

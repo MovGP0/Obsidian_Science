@@ -1,0 +1,82 @@
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.11.02 The Bloch–Nordsieck Theorem.md
+- [Correctness] The schematic $\sigma=\sigma_0[1+\frac{\alpha}{\pi}(-\ln^2\frac{\Delta E}{\sqrt s}+\dots)]$ is a double log in $\Delta E$, but for massive external charges the regulator-free remainder is a single log in $\Delta E$ times a mass log, $\sigma\simeq\sigma_0[1+\frac{2\alpha}{\pi}(\ln\frac{s}{m^2}-1)\ln\frac{\Delta E}{\sqrt s}+\dots]$, consistent with the first-order expansion of the exponent in 08.11.03.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.16 Exercises/08.16.12 Schwinger result for (g − 2) - 2.md
+- [Correctness] Symbol clash: $\mu$ is both the Lorentz index of $\Lambda^\mu$, $\gamma^\mu$ and the dimensional-regularization scale in $\mu^{2\epsilon}$ in the same equation; rename the scale (e.g. $\tilde\mu$) or the vertex index.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/09 Renormalization/09.01 Ultraviolet Divergences in Loop Diagrams.md
+- [Correctness] "agreement of the electron anomalous-moment prediction with experiment to about twelve significant figures" overstates the precision for $a_e$: the agreement is at the $10^{-12}$ level in absolute terms, i.e. roughly 9–10 significant figures of $a_e$ (about 12–13 for $g$ itself); state which quantity is meant.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/09 Renormalization/09.01.03 Renormalizable and Nonrenormalizable Theories.md
+- [Correctness] Notation clash: "$[\lambda]=4-\Delta$" uses $\lambda$ for the interaction operator although $\lambda$ conventionally denotes a coupling and $\Delta$ is called the coupling dimension; the bullets then write "$[\lambda]<4$" for the operator dimension. Name the operator ($[\mathcal O]=4-[g]$) and the coupling ($[g]=\Delta$) separately.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/09 Renormalization/09.02.02 Pauli–Villars Regularization.md
+- [Correctness] "The source notes difficulties in extending the construction to fermion fields and beyond one loop" is misleading: Pauli–Villars is routinely used for QED fermion loops (several regulator fields with mass sum rules); its real limitations are non-Abelian gauge invariance and chiral fermions. State that instead of the source wording.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/09 Renormalization/09.03.03 Vertex Correction Γμ(p′, p) and Anomalous Moment.md
+- [Correctness] "Lorentz invariance and parity give the on-shell form" (9.74) is incomplete: these symmetries also allow a $q^\mu$ term, which is excluded only by current conservation (Ward identity, $q_\mu\bar u'\Gamma^\mu u=0$); add that condition.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/09 Renormalization/09.08 Exercises/09.08.02 Quartic scalar theory in four dimensions.md
+- [Correctness] The exercise statement writes $-i\Sigma=\frac{\lambda}{2}\int\frac{i}{k^2-m^2+i\epsilon}$, missing the vertex factor $-i$; with the $-i\lambda$ vertex it must be $(-i\lambda/2)\int\ldots$, as the solution correctly uses.
+- [Correctness] Symbol clash in the exercise statement: $+i\epsilon$ is the causal prescription while the same part asks for the result in terms of $1/\epsilon$ with $d=4-2\epsilon$; use $+i0$ as the solution does.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/09 Renormalization/09.08 Exercises/09.08.05 Lamb-shift order-of-magnitude estimate.md
+- [Correctness] The note says the printed potential has "an extra factor $1/(4\pi)$"; the printed prefactor $-\frac{\alpha}{4\pi}\frac{2\alpha}{3r}=-\frac{\alpha^2}{6\pi r}$ differs from the standard $-\frac{\alpha}{r}\frac{2\alpha}{3\pi}$ by a factor $1/4$, not $1/(4\pi)$ (the standard form gives $\int d^3r\,V=-\frac{2\alpha^2}{3m^2}\cdot\frac25=-\frac{4\alpha^2}{15m^2}$, verified numerically).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/09 Renormalization/09.08 Exercises/09.08.08 Beta function and evolution of α.md
+- [Correctness] Symbol clash: $\alpha_0$ is the reference coupling at $\mu_0$ while $e_0$ in the same note is the bare charge; rename the reference value (for example $\alpha(\mu_0)$) so that $\alpha_0=e_0^2/4\pi$ is not implied.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.01 Motivation - The Scale Problem.md
+- [Correctness] "Its parameters are fixed experimentally, such as the fine-structure constant, the electron mass, and the Lamb shift": the Lamb shift is a QED prediction, not an input parameter; keep only charge and mass as inputs (or say the Lamb shift tests the theory).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.02.03 Solution of the Callan–Symanzik Equation.md
+- [Correctness] Example 10.2 keeps $\exp[-n\int\gamma]$ with $s^{4-n}$; for the unamputated $G^{(n)}$ of (10.1) (with $+n\gamma$) a fixed-point check gives $G(sp)=s^{D+n\gamma}G(p)$, so the exponent would be $+n\int\gamma$; the printed $-n\int\gamma$ with $s^{4-n}$ is consistent only for the amputated vertex $\Gamma^{(n)}$, whose CS equation has $-n\gamma$. State this explicitly alongside the existing $4-n$ note.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.05.03 Scale Evolution of αₛ in QCD.md
+- [Correctness] Normalizing at $\alpha_s(M_Z)=0.118$ requires $N_f=5$, $b_0=23/3$ (the top is inactive below $m_t\approx173\,\mathrm{GeV}$), but Fig. 10.4 and the "one-loop formula with $b_0=7$" use $N_f=6$ from 1 GeV through $M_Z$; use $b_0=23/3$ between $m_b$ and $m_t$ (one-loop $\Lambda^{(5)}\approx88\,\mathrm{MeV}$ instead of $\approx45\,\mathrm{MeV}$ with $b_0=7$) and switch flavors at thresholds.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.05.04 Interpretation - Antiscreening and the Color of the Vacuum.md
+- [Correctness] "gluon loops produce a paramagnetic color effect, contributing $+(11/3)C_A$" is inaccurate: in the Nielsen–Hughes decomposition the gluon contribution is $+4C_A$ (spin paramagnetism, antiscreening) $-\tfrac13C_A$ (orbital diamagnetism, screening), giving the net $\tfrac{11}{3}C_A$.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.06.01 Wilson's Idea - Integrating Out High-Energy Modes.md
+- [Correctness] The displayed rescaling $\mechanical{x}'=b^{-1}\mechanical{x}$, $\signal{\phi}'=b^{(d-2)/2}\signal{\phi}^{<}$ maps the cutoff $b\energy{\Lambda}$ to $b^2\energy{\Lambda}$ (as the note itself admits); replace the display by the correct $\mechanical{k}'=\mechanical{k}/b$, $\mechanical{x}'=b\mechanical{x}$, $\signal{\phi}'(\mechanical{x}')=b^{-(d-2)/2}\signal{\phi}^{<}(\mechanical{x})$ and shorten the note to a one-line remark about the source's misprint.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.06.02 Relevant, Marginal, and Irrelevant Operators.md
+- [Correctness] Example 10.5 lists iron together with carbon dioxide near its critical point and binary liquid mixtures as sharing critical exponents; liquid–gas and binary-mixture critical points are in the 3D Ising class, while an isotropic ferromagnet such as iron is in the 3D Heisenberg (O(3)) class; replace iron by a uniaxial magnet (e.g. the antiferromagnet FeF₂) or state explicitly that iron belongs to a different class.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.13 Exercises/10.13.02 Running QED charge.md
+- [Correctness] The physical-quantities table lists $\electric{Q_i}$, $\electric{Q}$, $\electric{Q_1}$, $\electric{Q_{N_f}}$, which this note never uses (only $\electric{Q}_f$ appears); remove them.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.02.02 The Free Scalar Field and Gaussian Functional Integrals.md
+- [Correctness] Boxed (11.9) reads $Z_0[J]=Z_0[0]\exp[-\tfrac12\int J\Delta_FJ]$; with weight $e^{iS}$ it must be $Z_0[0]\exp[-\tfrac{i}{2}\int J\Delta_FJ]$. Put the correct form in the box and delete the correcting callout.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.05.04 Fermionic Functional Integral.md
+- [Correctness] The displayed correlator uses $\delta^2Z_0/\delta\bar\eta_\alpha(x)\delta\bar\eta_\beta(y)$, which vanishes at zero source; replace it with $\frac{1}{i^2}\frac{1}{Z_0}\frac{\delta}{\delta\eta_\beta(y)}\frac{\delta Z_0}{\delta\bar\eta_\alpha(x)}\big|_0=iS_{F,\alpha\beta}(x-y)$ (left derivatives) and delete the "source prints" display and its correcting callout.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.07.01 Derivation for the Scalar Field.md
+- [Correctness] Symbol clash: $\signal{\epsilon}(x)$ is the field shift, while the closing callout uses $\epsilon$ for the $i\epsilon$ prescription; rename the shift (for example $\delta\signal{\phi}(x)$).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.08.01 Global Symmetry and the Noether Current.md
+- [Correctness] The displayed $\delta S=\epsilon\int\mathrm{d}^4x\,\partial_\mu j_N^\mu$ (constant $\epsilon$) is inconsistent with (11.33); write the local form $\delta S=-\int\mathrm{d}^4x\,\epsilon(x)\,\partial_\mu j_N^\mu$, derive (11.33) from $0=\langle\delta O\rangle+i\langle\delta S\,O\rangle$ in the main text, and delete the correcting callout.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.08.02 The Ward–Takahashi Identity for QED.md
+- [Correctness] (11.34) as displayed, with an unamputated photon field contracted with $k^\mu$, is not the identity (it misses the longitudinal $\xi/k^2$ propagator factor); state it for the amputated photon leg with full electron propagators, $k_\mu\mathcal{M}^\mu(k;p,p+k)=-e[S_F(p+k)-S_F(p)]$ with an explicit factor-of-$i$ convention, and drop the correcting callout.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.10 Exercises/11.10.05 One-loop effective potential in quartic theory.md
+- [Correctness] "Here $\mathcal V$ denotes the spacetime volume" refers to a symbol that appears in no equation (the volume factor in $\ln\det=\mathcal V\int d^dk\ldots$ is never written), yet $\mathcal V$ is also listed in the table; either insert the relation $\Gamma^{(1)}=-\mathcal V\,V^{(1)}_{\mathrm{eff}}$ with the determinant, or delete the sentence and the table row.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.04.01 Propagators.md
+- [Correctness] The Fig. 12.5 caption says "dashed line", but QFT-12-05-Ghost-Propagator.svg uses stroke-dasharray "1 7" (a dotted line), and 12.04.02 calls ghost legs "dotted"; change the caption to "dotted line".
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.04.02 Vertices.md
+- [Correctness] The Physical quantities table lists $\mechanical{k}$ among the vertex momenta, but $k$ never appears in the note; remove it.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.06.01 Structure of the One-Loop Calculation.md
+- [Correctness] The physical-quantities table lists $\mechanical{\ell}$ ("integration momentum in Fig. 12.8"), but the note text never uses $\ell$; drop it or introduce the loop momentum in the gluon-loop section.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.06.03 Running Coupling and the Landau Scale.md
+- [Correctness] At $\mechanical{M}_Z=91.2\,\unit{GeV}$ the top quark ($173\,\unit{GeV}$) is not active, so the physical one-loop curve through $\signal{\alpha}_s(\mechanical{M}_Z)=0.118$ uses $N_f=5$, $\beta_0=23/3$, giving $\energy{\Lambda}^{(5)}_{\mathrm{1\,loop}}\approx88\,\unit{MeV}$; state this instead of the $N_f=6$, $\beta_0=7$ point at $x\approx7.61$, and keep $N_f=6$ only as an explicit formal exercise.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.10 Exercises/12.10.02 Covariance of the covariant derivative.md
+- [Correctness] The physical-quantities table lists $\signal{A}_\mu^a$ and describes the fields as appearing "in the field equations", but this note uses neither the components nor any field equation; list only $\signal{A}_\mu$, $\signal{A}_\mu^U$, $\signal{A}'_\mu$.
+

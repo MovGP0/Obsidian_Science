@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Visualizing local phase choices"
 document_type: "Self-contained study chapter"
 ---
@@ -100,7 +100,7 @@ The path must be specified when field strength is nonzero. For the pure-gauge ch
 
 ## Length-coordinate convention for the worked derivation
 
-The following worked derivation uses a length coordinate y with period two pi times the reference radius and the mostly-plus metric. To translate the angular calculation above at fixed radius: set y equal to radius times angle, reverse the sign of the full metric, and reverse the sign of the potential. The length-valued coupling kappa equals radius times xi. The field-strength tensor reverses sign with the potential. The dimensionless radion Phi is the physical radius divided by the reference radius; the earlier squared-radius scalar equals reference radius squared times Phi squared. In this later notation, an index labeled 5 denotes the same compact direction labeled 4 in the first calculation; it does not add another coordinate. The algebra below defines its own variables before using them.
+The following worked derivation uses a length coordinate y with period two pi times the reference radius and the mostly-plus metric. To translate the angular calculation above at fixed radius: set y equal to radius times angle, reverse the sign of the full metric, and reverse the sign of the potential. The length-valued coupling kappa equals radius times xi. The field-strength tensor reverses sign with the potential. The dimensionless radion Phi is the physical radius divided by the reference radius; the earlier squared-radius scalar equals reference radius squared times Phi squared. In this later notation, an index labeled 5 denotes the same compact direction labeled 4 in the first calculation; it does not add another coordinate. The algebra below defines its own variables before using them. The sections below do not use the compact coordinate y; the y in the plane example above is an ordinary spatial coordinate.
 
 ## Build the mental picture one step at a time
 
@@ -205,12 +205,11 @@ The units below use the collection's natural-unit convention. Explicit SI formul
 | $\mechanical{t}$ | $\unit{GeV^{-1}}$ | Time | Time coordinate in the angular formulation’s natural units. |
 | $\mechanical{y}$ | $\unit{GeV^{-1}}$ | Spatial coordinate | Ordinary spatial coordinate in the stated example. |
 | $\mechanical{z}$ | $\unit{GeV^{-1}}$ | Spatial coordinate | Third ordinary spatial coordinate. |
-| $\mechanical{r}$ | $\unit{GeV^{-1}}$ | Radius | Physical circle radius; radial coordinate in the explicitly identified spherical inset. |
-| $\mechanical{\theta}$ | $1$ | Circular angle | Compact circular angle; the spherical-coordinate inset identifies its separate polar-angle use. |
+| $\mechanical{r}$ | $\unit{GeV^{-1}}$ | Radius | Physical circle radius. |
+| $\mechanical{\theta}$ | $1$ | Circular angle | Compact circular angle with period two pi. |
 | $\mechanical{\xi}$ | $1$ | Angular normalization | Dimensionless factor relating the mixed vector to the four-potential. |
 | $\mechanical{p}_x,\mechanical{p}_y$ | $\unit{GeV}$ | Momenta | Four-momentum and ordinary spatial momentum components. |
 | $\energy{E}$ | $\unit{GeV}$ | Energy | Energy in the relativistic dispersion relation; distinct from electric field. |
-| $\mechanical{m}$ | $\unit{GeV}$ | Rest mass | Four-dimensional rest mass in the angular Klein–Gordon equation. |
 | $\mechanical{m}_n$ | $\unit{GeV}$ | Mode mass | Four-dimensional mass associated with the circular Fourier label. |
 | $\signal{\psi},\signal{\psi}_n$ | — | Scalar waves | Scalar field and Fourier coefficients in the unnormalized expansion; amplitude units depend on the chosen normalization. |
 | $C$ | — | Wave amplitude | Constant amplitude with units set by the chosen wave normalization. |

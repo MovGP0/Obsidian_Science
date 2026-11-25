@@ -1,0 +1,45 @@
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/05 Bound States/5.10 Baryon Masses and Magnetic Moments.md
+- FIXED | Table 5.6 Lambda row swapped | 2(363)+538-150=1114 calculated; row now reads Calculated 1114, Observed 1116
+- FIXED | Example 5.3 prefactor hbar/2 should be 2/hbar | changed prefactor to 2/hbar per eq. (5.117); result 2/9(2mu_u-mu_d) now follows
+- FIXED | mu_n/mu_p experimental value sign | changed 0.68497945 to -0.68497945
+- FIXED | Table 5.5 predictions need m_u=m_d=336, m_s=540 MeV | checked 938/336=2.79 vs 938/363=2.59; text now states 336 and 540 MeV/c^2 and notes Table 4.4 baryon masses give 2.59 and -1.72
+- PARTLY | 1981 experimental moments outdated; decuplet footnote outdated | table values are correct for the cited 1981 source and kept; added a sentence with current PDG values and amended footnote to say Omega- moment is now measured (-2.02+-0.05)
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/05 Bound States/5.2 The Hydrogen Atom.md
+- FIXED | Eq. (5.34) Rydberg constant dimension wrong | (5.32)/(hc) gives m e^4/(4 pi c hbar^3); moved c to the denominator
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/05 Bound States/5.3.1 The Relativistic Correction.md
+- FIXED | Eq. (5.42) prefactor 1/(4n^2) should be 1/(4n^4) | E_n^2 carries 1/n^4 (n=1 gives -5/8 alpha^4 mc^2); changed to 1/(4n^4)
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/05 Bound States/5.3.2 Spin-Orbit Coupling.md
+- FIXED | Eq. (5.52) prefactor 1/(4n^2) should be 1/(4n^4) | changed to 1/(4n^4); n=2 j=1/2 gives -5/128 alpha^4 mc^2 (Dirac result)
+- FIXED | torque footnote uses m for magnetic moment | replaced magnetic bold m with boldsymbol mu in footnote and removed it from the quantity table row
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/05 Bound States/5.5 Hyperfine Structure.md
+- FIXED | epsilon used for sphere radius and hyperfine gap | renamed the sphere radius in the delta-function footnote to r_0
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/05 Bound States/5.6 Positronium.md
+- FIXED | n used for photon count and principal quantum number | renamed photon count to N_gamma in the text and in eq. (5.80)
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/05 Bound States/5.7 Quarkonium.md
+- FIXED | Table 5.2 F0=1500 E2 should be about 1464 | finite-difference solution (mu=750 MeV, alpha_s=0.2) reproduces all other entries and gives E2=1464.4; changed 1480 to 1464
+- FIXED | 2^1P_1 observed 2005; top decays before toponium forms | added parenthetical h_c(3525) observation in 2005 and a dated note that top decays (width about 1.4 GeV) before t-tbar, c-tbar, b-tbar bound states form
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/05 Bound States/5.8 Light Quark Mesons.md
+- FIXED | pi0 is not an SU(2) singlet | replaced the pi0 with the isosinglet combination (u ubar + d dbar)/sqrt2 of eq. (5.90)
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/05 Bound States/5.9 Baryons.md
+- FIXED | outdated heavy-baryon statements (Xi_cc++ 2017; no top baryons) | added a dated note after the heavy-baryon sentence
+- FIXED | Table 5.4 uses 1981 resonance names | added a note below the source line that names are historical, with N(1680), N(1440), Delta(1600), Delta(1905)
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/05 Bound States/5.P Problems.md
+- FIXED | Problem 5.22 eta hint s sbar weight 1/3 should be 2/3 | from (u ubar + d dbar - 2 s sbar)/sqrt6 the weights are 1/6, 1/6, 2/3; changed 1/3 to 2/3
+- FIXED | Problem 5.23(b) outdated; F and F* now D_s and D_s* | added a dated note after the bracket in 5.23(b)
+- FIXED | m and alpha symbol clashes | removed projection m (only an index of Y_l^m) from the quantum-number table row; renamed the Problem 5.12 proportionality constant alpha to k
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/06 The Feynman Calculus/6.2 The Golden Rule.md
+- FIXED | eq. (6.25) second root uses p_2 instead of rho | changed bold p_2^2 to rho^2
+- FIXED | mass mapping after (6.41) | changed to m_2 to m_3, m_3 to m_4, and m_1 to (E_1+E_2)/c^2
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/06 The Feynman Calculus/6.5 Scattering.md
+- FIXED | eq. (6.49) propagator missing square | added ^2 to (p_4-p_2)
+- FIXED | unbold p^2 in (6.53)-(6.54) clashes with four-momenta | wrote abs(bold p)^2 in both equations and in the quantity table
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/06 The Feynman Calculus/6.6 Higher-Order Diagrams.md
+- FIXED | eq. (6.55) third denominator should use q_3 | changed (q_1^2 - m_B^2 c^2) to (q_3^2 - m_B^2 c^2)
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/07 Quantum Electrodynamics/7.2 Solutions to the Dirac Equation.md
+- FIXED | case (3) u_B should be (1,0)^T | changed pick to u_B=(1,0)^T, consistent with the right side and u^(3)
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/07 Quantum Electrodynamics/7.3 Bilinear Covariants.md
+- FIXED | eq. (7.55) first term psi_3 should be psi_1 | changed first term to abs(psi_1)^2
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/07 Quantum Electrodynamics/7.4 The Photon.md
+- REJECTED | s and m_s should be uncolored | the vault colors quantum numbers (n, l, m_l, j, s) with mechanical throughout these notes; m_s has a subscript and no clash with a mass in this note
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/07 Quantum Electrodynamics/7.9 Renormalization.md
+- FIXED | Dirac equation identities before (7.177) wrong | now pslash_1 u(p_1)=mc u(p_1) and ubar(p_3) pslash_3=mc ubar(p_3)

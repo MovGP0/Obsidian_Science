@@ -300,17 +300,17 @@ $$
 -\mechanical{\beta}\mechanical{u}_t.
 $$
 
-The annotation beneath the damping term appears to read $e^{-\beta(n\pi/L)^2t}$. For the velocity damping in the displayed equation, an underdamped mode instead has the envelope $e^{-\mechanical{\beta}t/2}$, obtained from the roots of its time equation.
-
-The handwritten damping example gives the mode factor
+The annotation beneath the damping term appears to read $e^{-\beta(n\pi/L)^2t}$. This factor does not solve the displayed equation. Substitute $\mechanical{u}=\sin(n\pi x/L)\,T(t)$. The time equation is $T''+\mechanical{\beta}T'+\mechanical{\omega}_n^{2}T=0$ with $\mechanical{\omega}_n=n\pi\mechanical{c}/L$. For $\mechanical{\beta}<2\mechanical{\omega}_n$, the underdamped mode is
 
 $$
 \sin\left(\frac{n\pi x}{L}\right)
-\sin\left(\frac{n\pi\mechanical{c}t}{L}\right)
-e^{-\beta(n\pi/L)^2t}.
+e^{-\mechanical{\beta}t/2}
+\sin(\mechanical{\omega}_n' t+\mechanical{\theta}_n),
+\qquad
+\mechanical{\omega}_n'=\sqrt{\left(\frac{n\pi\mechanical{c}}{L}\right)^2-\frac{\mechanical{\beta}^2}{4}}.
 $$
 
-For $\beta=1$ and $L=\pi$ the exponential is $e^{-n^2t}$, so the high-frequency modes in this example decay quickly. This is the frequency-dependent decay written in the source. The velocity-damping equation on [[#Fundamental mode and higher modes|the section on Fundamental mode and higher modes]] gives the underdamped envelope stated there.
+In this model, all modes decay with the same envelope $e^{-\mechanical{\beta}t/2}$. A decay rate that increases with $n$, as in the handwritten factor, needs a different damping term.
 
 ##### Traveling waves on an infinite domain
 
@@ -477,24 +477,20 @@ Kyle Kabasares, *Partial Differential Equations (Math 126, UC Merced 2017)*.
 
 | Symbol | Unit | Quantity | Description |
 | --- | --- | --- | --- |
-| $\mechanical{u}$ | $\unit{Pa}$ | Pressure | Unknown pressure in the divergence-form example. |
 | $\thermal{u}$ | $\unit{K}$ | Temperature | Temperature in the rod as a function of position and time. |
 | $\thermal{c}$ | $\unit{J/(kg\,K)}$ | Specific heat capacity | Thermal energy per unit mass per unit temperature rise. |
-| $\mechanical{\rho}$ | $\unit{kg/m^3}$ | Mass density | Mass per unit volume of the rod. |
+| $\mechanical{\rho}$ | $\unit{kg/m^3}$ | Mass density | Mass per unit volume of the nonuniform rod. |
 | $\thermal{k}_0$ | $\unit{W/(m\,K)}$ | Thermal conductivity | Material coefficient in Fourier's law. |
 | $\thermal{k}$ | $\unit{m^2/s}$ | Thermal diffusivity | Ratio of conductivity to volumetric heat capacity. |
-| $\mechanical{A}$ | $\unit{m^2}$ | Cross-sectional area | Area of a face perpendicular to the rod axis. |
-| $\mechanical{u}(x,t)$ | $\unit{m}$ | Wave displacement | Scalar displacement at position $x$ and time $t$ in the one-dimensional wave model. |
-| $\mechanical{c}$, $\mechanical{v}$ | $\unit{m\,s^{-1}}$ | Wave speed | Constant propagation speed in the scalar or vector wave equation. |
-| $\mechanical{\rho}_0(x)$ | $\unit{kg\,m^{-1}}$ | Linear mass density | Mass per unit length of the string near $x$. |
-| $\mechanical{T}(x,t)$, $\mechanical{T}_0$ | $\unit{N}$ | String tension | Tangential force and its constant value in the idealized model. |
 | $\thermal{q}(x,t)$ | $\unit{K\,s^{-1}}$ | Temperature source rate | Local heating or cooling rate in the nonhomogeneous heat equation. |
+| $L$ | $\unit{m}$ | Length | Length of the rod or the string. |
+| $\mechanical{u}(x,t)$ | $\unit{m}$ | Wave displacement | Transverse displacement of the string at position $x$ and time $t$. |
+| $\mechanical{c}$ | $\unit{m\,s^{-1}}$ | Wave speed | Constant propagation speed in the wave equation. |
+| $\mechanical{\rho}_0(x)$ | $\unit{kg\,m^{-1}}$ | Linear mass density | Mass per unit length of the string near $x$. |
+| $\mechanical{T}_0$ | $\unit{N}$ | String tension | Constant tension in the idealized string model. |
 | $\mechanical{f}(x)$ | $\unit{m}$ | Initial string displacement | Transverse displacement at $t=0$. |
 | $\mechanical{g}(x)$ | $\unit{m\,s^{-1}}$ | Initial string velocity | Transverse velocity at $t=0$. |
 | $\mechanical{A}_n^{\mathrm{amp}}$ | $\unit{m}$ | Normal-mode amplitude | Peak magnitude of the oscillatory time factor for mode $n$. |
-| $\mechanical{\omega}_n$ | $\unit{rad\,s^{-1}}$ | Normal-mode angular frequency | Angular frequency of the time factor for mode $n$. |
+| $\mechanical{\omega}_n$, $\mechanical{\omega}_n'$ | $\unit{rad\,s^{-1}}$ | Normal-mode angular frequency | Undamped and damped angular frequency of the time factor for mode $n$. |
 | $\mechanical{\theta}_n$ | $\unit{rad}$ | Normal-mode phase | Phase offset determined by the two time coefficients. |
 | $\mechanical{\beta}$ | $\unit{s^{-1}}$ | Velocity damping coefficient | Coefficient of the transverse velocity in the damped wave equation. |
-| $\mechanical{\rho}(x)$, $\mechanical{\rho}_{\min}$, $\mechanical{\rho}_{\max}$ | $\unit{kg\,m^{-1}}$ | Nonuniform string density and its bounds | Mass per unit length and the lower and upper bounds used in the Rayleigh quotient. |
-| $L$, $H$ | $\unit{m}$ | Rectangular membrane dimensions | Length in the $x$ direction and height in the $y$ direction. |
-| $r$, $a$ | $\unit{m}$ | Radial distance and membrane radius | Distance from the center and its value at the fixed rim. |

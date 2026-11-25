@@ -88,7 +88,7 @@ The remainder $r_n$ is the error of the degree-$n$ Taylor approximation. For $f(
 
 The exponential example gives $|r_2(x)|\le e/6\approx 0.453$ for $0\le x\le 1$, using $x^3\le 1$ and $e^\xi\le e$.
 
-Midterm 1 is scheduled for September 29, 2016. Example 3 on [[#Discretization error in a derivative|the section on Discretization error in a derivative]] asks for a quadratic approximation to $f(x)=\sin x$ around $x_0=\pi/2$.
+Midterm 1 is scheduled for September 29, 2016. One example asks for a quadratic approximation to $f(x)=\sin x$ around $x_0=\pi/2$.
 
 ![[Kyle Kabasares - Numerical Analysis - Sine function.png|**Fig. 3** The sine function, with its maximum at the Taylor expansion center $\pi/2$.]]
 
@@ -193,7 +193,7 @@ $$
 |R_n(x)|\le\frac{(\pi/4)^{n+1}}{(n+1)!}\le 10^{-6}.
 $$
 
-The preceding bound has order of magnitude $10^{-5}$ at $n=7$, $10^{-6}$ at $n=8$, and $10^{-7}$ at $n=9$. The notes underline $n=9$. Direct evaluation gives about $3.13\times10^{-7}$ already at $n=8$, the first degree that meets the target using this bound. A margin example writes $0.2=2\times 10^{-1}$ to illustrate order-of-magnitude notation.
+The preceding bound has order of magnitude $10^{-6}$ at $n=7$, $10^{-7}$ at $n=8$, and $10^{-8}$ at $n=9$. The notes underline $n=9$. Direct evaluation gives about $3.13\times10^{-7}$ already at $n=8$, the first degree that meets the target using this bound. A margin example writes $0.2=2\times 10^{-1}$ to illustrate order-of-magnitude notation.
 
 A decimal machine number has the form $0.d_1d_2\ldots d_kd_{k+1}\ldots\times10^n$. For example, $3/62=0.048387\ldots=0.48387\ldots\times10^{-1}$.
 
@@ -247,10 +247,10 @@ For $f(x)=\sin x$ and $x_0=1.2$, the exact derivative is $\cos(1.2)=0.3623\ldots
 | $10^{-2}$ | $4.66\times10^{-3}$ |
 | $10^{-3}$ | $4.66\times10^{-4}$ |
 | $10^{-4}$ | $4.66\times10^{-5}$ |
-| $10^{-7}$ | $4.66\times10^{-8}$ |
+| $10^{-7}$ | $4.62\times10^{-8}$ |
 | $10^{-8}$ | $4.36\times10^{-10}$ |
 | $10^{-9}$ | $5.59\times10^{-8}$ |
-| $10^{-10}$ | $1.66\times10^{-7}$ |
+| $10^{-10}$ | $1.67\times10^{-7}$ |
 | $10^{-11}$ | $7.93\times10^{-6}$ |
 
 The observed error begins to grow as round-off dominates. To aim for
@@ -322,12 +322,3 @@ $$
 ## Source
 
 Kyle Kabasares, *Numerical Analysis (Math 130, UC Merced 2016)*.
-
-## Physical quantities
-
-| Symbol | Unit | Quantity | Description |
-| --- | --- | --- | --- |
-| $x$ | $\unit{s}$ | Time | Independent variable in the particle example. The recorded values have no specified unit. |
-| $\mechanical{f}'(x)$ | $\unit{m\,s^{-1}}$ | Velocity | Rate of change of position with time. Its magnitude is speed. |
-| $\mechanical{x}_i$ | $\unit{m}$ | Height | Horizontal coordinate in the regression sketch. No unit is specified in the sketch. |
-| $\mechanical{y}_i$ | $\unit{N}$ | Weight | Vertical coordinate if weight is taken as a force. The sketch gives no measurement units. |

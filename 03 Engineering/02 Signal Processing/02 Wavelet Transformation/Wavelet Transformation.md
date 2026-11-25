@@ -22,12 +22,12 @@ $$X(t,\omega) = \int_{-\infty}^{\infty} x(\tau)\, w(\tau - t)\, e^{-i \omega \ta
 
 The **Wavelet Transform** replaces the fixed window with a **scalable, shifting function** (the wavelet).
 
-$$W(a,b) = \frac{1}{\sqrt{|a|}} \int_{-\infty}^{\infty} x(t)\, \psi\!\left(\frac{t-b}{a}\right) dt$$
+$$W(a,b) = \frac{1}{\sqrt{|a|}} \int_{-\infty}^{\infty} x(t)\, \psi^*\!\left(\frac{t-b}{a}\right) dt$$
 
 where:
 - $a$ = scale (controls width of wavelet → frequency band).
 - $b$ = shift (controls position in time).
-- $\psi(t)$ = mother wavelet.
+- $\psi(t)$ = mother wavelet. $\psi^*$ is its complex conjugate (this matters for complex wavelets such as Morlet).
 
 ### Key differences
 

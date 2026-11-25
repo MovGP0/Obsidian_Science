@@ -78,10 +78,10 @@ Using derivative information may speed up root finding, although it can complica
 A **fixed point** of $g$ is a number $p$ such that $g(p)=p$. Given $f$, set $g(x)=x-f(x)$ so that $g(p)=p$ exactly when $f(p)=0$. Conversely, take $f(x)=x-g(x)$. More generally,
 
 $$
-g(x)=x-\ell(x)f(x).
+g(x)=x-\omega(x)f(x).
 $$
 
-Where $\ell$ is nonzero, the fixed points are precisely the roots of $f$. Choosing $\ell(x)$ using derivatives of $f$ may make fixed-point iteration converge faster.
+Where $\omega$ is nonzero, the fixed points are precisely the roots of $f$. Choosing $\omega(x)$ using derivatives of $f$ may make fixed-point iteration converge faster.
 
 For $g(x)=e^{-x}$ on $[0.2,1.2]$, start at $x_0=1$. The first iterates are $x_1=g(x_0)=e^{-1}\approx0.368$ and $x_2=g(x_1)=e^{-e^{-1}}\approx0.692$.
 
@@ -100,7 +100,7 @@ $$
 g(x)=x-f(x),\qquad g(x)=x+2f(x),\qquad g(x)=x-\frac{f(x)}{f'(x)}
 $$
 
-where the last expression is defined. They all have the general form $g(x)=x-\ell(x)f(x)$.
+where the last expression is defined. They all have the general form $g(x)=x-\omega(x)f(x)$.
 
 For continuous $g$ on $[a,b]$, the main questions are whether there is a fixed point in the interval, whether it is unique, whether the iterates converge to it, how fast they converge, and what failure to converge says about existence.
 
@@ -112,7 +112,7 @@ Textbook Example 1 takes $g(x)=x^2-2$. A fixed point satisfies $p=p^2-2$, hence 
 
 ##### Fixed-point theorem
 
-If $g\in C[a,b]$ and $a\le g(x)\le b$ for every $x\in[a,b]$, then $g$ has a fixed point $x^*\in[a,b]$. If $g'$ also exists on $(a,b)$ and some constant $0\le\ell<1$ satisfies $|g'(x)|\le\ell$ throughout $(a,b)$, the fixed point is unique.
+If $g\in C[a,b]$ and $a\le g(x)\le b$ for every $x\in[a,b]$, then $g$ has a fixed point $x^*\in[a,b]$. If $g'$ also exists on $(a,b)$ and some constant $0\le q<1$ satisfies $|g'(x)|\le q$ throughout $(a,b)$, the fixed point is unique.
 
 ##### Proof of the fixed-point theorem
 
@@ -143,9 +143,9 @@ Because $q^k\to0$, the iterates converge to $x^*$. The error satisfies the linea
 
 ##### Introduction to simple fixed-point iteration
 
-Write $f(x)=g(x)-h(x)$ with $g(x)=x$. The root equation becomes $g(x)=h(x)$, or $x=h(x)$. This is an open method, so convergence depends on the map and the initial guess. Closed methods maintain a bracket. The notes encourage deriving the method from the intersection instead of memorizing the updates.
+Write $f(x)=\operatorname{id}(x)-h(x)$ with the identity map $\operatorname{id}(x)=x$. The root equation becomes $\operatorname{id}(x)=h(x)$, or $x=h(x)$. This is an open method, so convergence depends on the map and the initial guess. Closed methods maintain a bracket. The notes encourage deriving the method from the intersection instead of memorizing the updates.
 
-Start with $x_i$ on the line $g(x)=x$. The sketch traces the values $v_1=g(x_i)$, $v_2=h(v_1)$, $v_3=g(v_2)$, $v_4=h(v_3)$, and so on. The identity map copies each new value to the input of the next application of $h$.
+Start with $x_i$ on the line $y=x$. The sketch traces the values $v_1=\operatorname{id}(x_i)$, $v_2=h(v_1)$, $v_3=\operatorname{id}(v_2)$, $v_4=h(v_3)$, and so on. The identity map copies each new value to the input of the next application of $h$.
 
 ![[Kyle Kabasares - Numerical Analysis - Fixed-point cobweb.png|**Fig. 12** Successive vertical and horizontal steps between $y=h(x)$ and $y=x$ approach the intersection in the convergent case.]]
 
@@ -161,7 +161,7 @@ The **order** is the exponent $p$ in an error bound $e_{n+1}\le Ce_n^p$. For the
 
 ##### 2.3 Newton's method
 
-To seek faster convergence, use the fixed-point form $g(x)=x-\ell(x)f(x)$. Choosing $\ell(x)=1/f'(x)$ where $f'(x)\ne0$ gives Newton's method.
+To seek faster convergence, use the fixed-point form $g(x)=x-\omega(x)f(x)$. Choosing $\omega(x)=1/f'(x)$ where $f'(x)\ne0$ gives Newton's method.
 
 $$
 x_{k+1}=x_k-\frac{f(x_k)}{f'(x_k)},\qquad k=0,1,2,\ldots.
@@ -286,7 +286,7 @@ On $[-1,2]$, let
 
 $$
 f(x)=x^4-8x^3+24x^2-32x+16,\qquad
-g(x)=x-\alpha f(x),\qquad \alpha=\frac1{100}.
+g(x)=x-\mu f(x),\qquad \mu=\frac1{100}.
 $$
 
 Check existence and uniqueness of a fixed point of $g$. To apply the interval form of the existence theorem, check that $g$ maps the interval into itself. Since this $g$ is increasing there, its extrema occur at the endpoints.
@@ -316,9 +316,3 @@ The handwritten triangle-inequality estimate gives $k=0.92$ and concludes unique
 ## Source
 
 Kyle Kabasares, *Numerical Analysis (Math 130, UC Merced 2016)*.
-
-## Physical quantities
-
-| Symbol | Unit | Quantity | Description |
-| --- | --- | --- | --- |
-| $x$ | $\unit{s}$ | Time | Independent variable in the particle example. The recorded values have no specified unit. |
