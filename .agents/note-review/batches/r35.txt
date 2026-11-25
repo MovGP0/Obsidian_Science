@@ -1,0 +1,108 @@
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.11 Connection to Feynman Diagrams.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.12 Exercises/06.12 Exercises.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.12 Exercises/06.12.01 Time ordering and the Feynman propagator.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.12 Exercises/06.12.02 Wick's theorem for six fields.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.12 Exercises/06.12.03 Fermion propagator from Wick's theorem.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.12 Exercises/06.12.04 Mandelstam identities for equal-mass scattering.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.12 Exercises/06.12.05 Lorentz-invariant flux factor.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.12 Exercises/06.12.06 Leading total cross section in quartic scalar theory.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.12 Exercises/06.12.07 LSZ for the free scalar field.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.12 Exercises/06.12.08 Scalar decay in Yukawa theory.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.12 Exercises/06.12.09 Optical theorem at second order in quartic theory.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.12 Exercises/06.12.10 Symmetry factor of the disconnected double figure eight.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.01 From Wick's Theorem to Diagrams.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.01.01 Translation Rules.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.02 Position-Space Feynman Rules - φ⁴ Theory.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.02.01 The Propagator and the Internal Line.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.02.02 The Vertex in Position Space.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.02.03 φφ → φφ Scattering at First Order.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.03 Momentum-Space Feynman Rules.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.03.01 Momentum-Space Feynman Rules for φ⁴.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.03.02 φφ → φφ Scattering at One Loop.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.04 Symmetry Factors.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.04.01 General Rule.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.04.02 Graphical Examples of Symmetry Factors.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.05 Feynman Rules for QED.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.05.01 Internal Propagators.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.05.02 External Lines.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.05.03 The QED Vertex.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.05.04 Signs from Fermion Loops.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.05.05 Ordering along Fermion Lines.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.05.06 Summary Table of Feynman Rules for QED.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.06 Worked Examples in QED.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.06.01 Møller Scattering - e⁻e⁻ → e⁻e⁻.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.06.02 Annihilation - e⁺e⁻ → μ⁺μ⁻.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.06.03 Compton Scattering - e⁻γ → e⁻γ.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.07 Crossing Symmetry.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.07.01 Crossing Rule for Fermions and Photons.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.07.02 Crossing Examples.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.08 Mandelstam Variables and Scattering Channels.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.08.01 Physical Interpretation of the Channels.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.08.02 The Variables in the Center-of-Mass Frame.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.09 One-Loop Diagrams and Ultraviolet Divergences.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.09.01 The Photon Propagator at One Loop.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.09.02 Counting Divergences.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.09.03 Electron Self-Energy.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.09.04 The Vertex Correction.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.10 The Ward Identity and Its Consequences.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.11 Form Factors and the Anomalous Magnetic Moment.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.12 Vacuum Diagrams and Connected Structure.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.12.01 Vacuum Diagrams.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.12.02 Connectedness and 1PI Diagrams.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.13 Trace Techniques.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.13.01 Clifford Algebra in d = 4 Dimensions.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.13.02 Traces of γ Matrices.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.14 Bhabha Scattering - e⁺e⁻ → e⁺e⁻.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.15 Exercises/07.15 Exercises.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.15 Exercises/07.15.01 Symmetry factors in quartic scalar theory.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.15 Exercises/07.15.02 Scalar propagator in position space.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.15 Exercises/07.15.03 Gamma-matrix traces.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.15 Exercises/07.15.04 Compton cross section in the Thomson limit.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.15 Exercises/07.15.05 Crossing from Compton scattering to two-photon annihilation.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.15 Exercises/07.15.06 Transversality of the vacuum-polarization tensor.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.15 Exercises/07.15.07 Schwinger magnetic moment.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.15 Exercises/07.15.08 Electron–muon scattering amplitude.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.15 Exercises/07.15.09 Tadpole in quartic scalar theory.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.15 Exercises/07.15.10 Power counting in quartic scalar theory.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.16 Summary.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.01 The QED Lagrangian and U(1) Gauge Invariance.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.01.01 Global and Local Gauge Invariance.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.01.02 Covariant Derivative and Minimal Coupling.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.01.03 Physical Content of the Lagrangian.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.02 Feynman Rules of QED.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.03 Trace Techniques.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.03.01 Spin Sums and Completeness.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.03.02 Traces of Gamma Matrices.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.03.03 Index Contractions in d = 4.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.04 Annihilation - e⁺e⁻ → μ⁺μ⁻.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.04.01 Kinematics and Feynman Diagram.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.04.02 Feynman Amplitude.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.04.03 Calculation of the Squared Amplitude.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.04.04 Mandelstam Variables.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.04.05 Differential and Total Cross Sections.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.04.06 The Ratio R and Color Counting.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.05 Bhabha Scattering - e⁺e⁻ → e⁺e⁻.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.05.01 Diagrams and Interference.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.05.02 Squared Modulus and Interference.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.06 Compton Scattering and the Klein–Nishina Formula.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.06.01 Diagrams and Kinematics.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.06.02 Klein–Nishina Formula.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.07 Møller Scattering - e⁻e⁻ → e⁻e⁻.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.07.01 Diagrams and the Exclusion Principle.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.08 Annihilation - e⁺e⁻ → γγ.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.09 Bremsstrahlung.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.10 Polarization.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.10.01 Transverse and Longitudinal Polarization.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.10.02 Sum over Physical Polarizations.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.10.03 Helicity Asymmetries.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.11 Infrared Divergences.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.11.01 Nature of the Infrared Problem.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.11.02 The Bloch–Nordsieck Theorem.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.11.03 The Sudakov Double Logarithm.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.12 Preview of Loop Corrections.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.12.01 Vacuum Polarization.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.12.02 Vertex Correction and Anomalous Magnetic Moment.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.12.03 Fermion Self-Energy.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.13 Ward–Takahashi Identity.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.13.01 Statement and Physical Meaning.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.13.02 Consequences for Renormalization Factors.md

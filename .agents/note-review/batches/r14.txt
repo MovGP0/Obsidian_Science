@@ -1,0 +1,82 @@
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/01 Elementary Topology/27.01 Topological language.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/01 Elementary Topology/27.02 Compactness.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/01 Elementary Topology/27.03 Identifications.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/01 Elementary Topology/27.04 Loops and homotopies.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/01 Elementary Topology/27.05 Winding numbers.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/01 Elementary Topology/Box counting and random-walk distributions.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/18.01 Dual spaces.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/18.02 Tensor products.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/18.03 Tensor type.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/18.04 Components.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/18.05 Transformation laws.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/18.06 Index notation.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/18.07 Tensor operations.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/18.08 Forms and metrics.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/18.09 Coordinate checks.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/19.01 Local models.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/19.02 Charts and atlases.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/19.03 Transition maps.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/19.04 Examples.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/19.05 Tangent vectors.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/19.06 Tangent and cotangent spaces.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/19.07 Smooth maps.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/19.08 Vector and tensor fields.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/19.09 Local and global statements.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Curvilinear tensor calculations.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Manifolds and coordinate charts - Overview.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Pseudotensors and reflections.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Tensor algebra - Overview.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Tensor coordinates and invariants.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/1 Vectors/1 Vectors.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/1 Vectors/1.1 Definitions (basic).md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/1 Vectors/1.2 Cartesian unit vectors.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/1 Vectors/1.3 Vector components.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/1 Vectors/1.4 Vector addition and multiplication by a scalar.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/1 Vectors/1.5 Non-Cartesian unit vectors.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/1 Vectors/1.6 Basis vectors.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/1 Vectors/1.7 Chapter 1 problems.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/2 Vector operations/2 Vector operations.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/2 Vector operations/2.1 Scalar product.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/2 Vector operations/2.10 Curl.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/2 Vector operations/2.11 Laplacian.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/2 Vector operations/2.12 Chapter 2 problems.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/2 Vector operations/2.2 Cross product.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/2 Vector operations/2.3 Triple scalar product.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/2 Vector operations/2.4 Triple vector product.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/2 Vector operations/2.5 Partial derivatives.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/2 Vector operations/2.6 Vectors as derivatives.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/2 Vector operations/2.7 Nabla - the del operator.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/2 Vector operations/2.8 Gradient.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/2 Vector operations/2.9 Divergence.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/3 Vector applications/3 Vector applications.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/3 Vector applications/3.1 Mass on an inclined plane.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/3 Vector applications/3.2 Curvilinear motion.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/3 Vector applications/3.3 The electric field.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/3 Vector applications/3.4 The magnetic field.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/3 Vector applications/3.5 Chapter 3 problems.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/4 Covariant and contravariant vector components/4 Covariant and contravariant vector components.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/4 Covariant and contravariant vector components/4.1 Coordinate-system transformations.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/4 Covariant and contravariant vector components/4.10 Chapter 4 problems.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/4 Covariant and contravariant vector components/4.2 Basis-vector transformations.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/4 Covariant and contravariant vector components/4.3 Basis-vector vs. component transformations.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/4 Covariant and contravariant vector components/4.4 Non-orthogonal coordinate systems.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/4 Covariant and contravariant vector components/4.5 Dual basis vectors.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/4 Covariant and contravariant vector components/4.6 Finding covariant and contravariant components.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/4 Covariant and contravariant vector components/4.7 Index notation.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/4 Covariant and contravariant vector components/4.8 Quantities that transform contravariantly.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/4 Covariant and contravariant vector components/4.9 Quantities that transform covariantly.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/5 Higher-rank tensors/5 Higher-rank tensors.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/5 Higher-rank tensors/5.1 Definitions (advanced).md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/5 Higher-rank tensors/5.10 Chapter 5 problems.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/5 Higher-rank tensors/5.2 Covariant, contravariant, and mixed tensors.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/5 Higher-rank tensors/5.3 Tensor addition and subtraction.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/5 Higher-rank tensors/5.4 Tensor multiplication.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/5 Higher-rank tensors/5.5 Metric tensor.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/5 Higher-rank tensors/5.6 Index raising and lowering.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/5 Higher-rank tensors/5.7 Tensor derivatives and Christoffel symbols.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/5 Higher-rank tensors/5.8 Covariant differentiation.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/5 Higher-rank tensors/5.9 Vectors and one-forms.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/6 Tensor applications/6 Tensor applications.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/6 Tensor applications/6.1 The inertia tensor.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/6 Tensor applications/6.2 The electromagnetic field tensor.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/6 Tensor applications/6.3 The Riemann curvature tensor.md

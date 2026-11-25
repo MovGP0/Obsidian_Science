@@ -1,0 +1,447 @@
+=== 02 Physics/05 Relativity and Gravitation/02 General Relativity/Killing Vector.md
+priority: low
+graph: no
+manim: yes
+summary: Clear, well-motivated and mathematically correct note (Killing equation, conserved charges, Killing tensors, Carter constant), with a correct rotation-field figure.
+- [Manim] Add a short animation that rotates the unit sphere along $\xi=\partial_\varphi$ while a small geodesic triangle keeps its side lengths, then contrast it with a non-Killing flow (for example $\xi=\sin\theta\,\partial_\theta$) that visibly stretches the triangle; this shows what $\mathcal L_\xi g=0$ means.
+- [Example] After Eq. (8), give one concrete conserved quantity: for a Schwarzschild geodesic, $\energy{E}=(1-2M/r)\,\mechanical{p^t}$ and $\mechanical{L_z}=r^2\sin^2\theta\,\mechanical{p^\varphi}$, so the reader sees Eq. (7) produce the familiar formulas.
+- [Intuition] In the Carter-constant section, add that the Carter integral reduces to the total angular momentum squared $\mechanical{L}^2$ (minus $\mechanical{L_z}^2$, depending on convention) when $a\to0$; this gives the hidden symmetry an intuitive limit.
+- [Links] Link the time-translation row of the symmetry table to [[Schwarzschild Metric]] or [[5.1 Schwarzschild black hole]] so the table connects to a concrete metric.
+=== 02 Physics/05 Relativity and Gravitation/02 General Relativity/Schwarzschild Metric.md
+priority: high
+graph: yes
+manim: no
+summary: Very short stub with inconsistent units and a misleading description of $r$; it lacks frontmatter, TLDR, and the vault's physical-quantity table.
+- [Correctness] The note says "natural units ($c=1$)" but keeps $G$ in $1-2GM/r$, lists $c=299\,792\,458$ m/s, and then gives $r_s=2GM/c^2$; use either $G=c=1$ throughout ($1-2M/r$, $r_s=2M$) or the full SI form $-(1-2GM/(c^2r))\,c^2\mathrm dt^2+\dots$ with $r_s=2GM/c^2$.
+- [Correctness] "**r** the radial distance from the object" is wrong: $r$ is the areal (circumferential) radius, defined so the sphere area is $4\pi r^2$; the proper radial distance is $\int\mathrm dr/\sqrt{1-r_s/r}$ and exceeds $\Delta r$.
+- [Structure] Add frontmatter with a quoted title, a TLDR callout, a physical-quantity table with semantic macros, and use $\theta,\phi$ consistently (the text mixes Unicode θ, ϕ with \phi).
+- [Graph] Plot $-g_{tt}=1-r_s/r$ and $g_{rr}=(1-r_s/r)^{-1}$ against $r/r_s$ for $r/r_s\in[1.05,6]$, marking $r=r_s$ where $g_{tt}\to0$ and $g_{rr}\to\infty$ (a coordinate, not a curvature, singularity).
+- [Example] Add worked numbers: $r_s\approx2.95$ km for the Sun and $8.87$ mm for the Earth, and the clock-rate factor $\sqrt{1-r_s/r}\approx1-7\times10^{-10}$ at the Earth's surface.
+- [Links] Link to [[5.1 Schwarzschild black hole]], [[5.1.1 Birkhoff's theorem]], and [[Killing Vector]] (static and spherical symmetries) instead of only a video source.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/00 Front matter/Notation and conventions.md
+priority: low
+graph: no
+manim: no
+summary: Accurate transcription of the book's sign conventions and symbol list; usable as a reference.
+- [Structure] Add a one-line warning that $\mechanical{\theta}$ denotes both the expansion scalar and the polar angle (both rows appear in the table), and that $\sigma$ denotes both the shear tensor $\sigma_{\alpha\beta}$ and the two-surface metric $\sigma_{AB}$; this clash recurs in Chapters 2 and 3.
+- [Simplify] In the Physical quantities table, describe $\mathrm d\mechanical{\Omega}^2$ as the solid-angle line element on the unit sphere rather than an "Angular distance" $\mechanical{\Omega}$ in rad.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/00 Front matter/Preface.md
+priority: low
+graph: no
+manim: no
+summary: Faithful transcription of the author's preface; no technical content to correct.
+- [Links] Turn the chapter references (Chapter 2 congruences, Chapter 3 hypersurfaces, Chapter 5 black holes) into wiki links to [[2.0 Chapter introduction]], [[3.0 Chapter introduction]], and [[5.0 Chapter introduction]]; note that the GRTensorII URL is historical.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/00 Front matter/Title and Publication Details.md
+priority: low
+graph: no
+manim: no
+summary: Bibliographic front matter; no content changes needed.
+- [Structure] Consider dropping the "Source Access Footer" section and image (a library download stamp), which carries no content for the vault.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/01 Fundamentals/1.0 Chapter introduction.md
+priority: low
+graph: no
+manim: no
+summary: Clear chapter overview; no change needed beyond navigation.
+- [Links] Turn the section numbers (1.1 to 1.11) mentioned in the text into wiki links to the corresponding notes so the overview works as a hub.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/01 Fundamentals/1.1 Vectors, dual vectors, and tensors.md
+priority: low
+graph: no
+manim: no
+summary: Correct and concise transcription of the transformation-law definition of tensors.
+- [Example] Add a short worked example in plane polar coordinates: transform the vector $A^\alpha=(1,0)$ (Cartesian) and the gradient of $f=x$, and check that $A^\alpha f_{,\alpha}$ is invariant; this makes Eqs. (1.1)–(1.2) concrete.
+- [Intuition] Before Eq. (1.3), add one sentence on why upper and lower indices transform oppositely (a vector scales like $\mathrm dx$, a gradient like $1/\mathrm dx$).
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/01 Fundamentals/1.10 Geodesic deviation.md
+priority: medium
+graph: yes
+manim: yes
+summary: Correct derivation of the geodesic deviation equation, but it is purely formal and gives no example of the relative acceleration it predicts.
+- [Example] Add the sphere example: for neighbouring great circles $D^2\xi/\mathrm ds^2=-\xi/R^2$, so $\xi=\xi_0\sin(s/R)$ and meridians reconverge at the opposite pole; also add the Newtonian tidal limit $\ddot\xi^a=-R^a{}_{0b0}\xi^b=-\partial_a\partial_b\Phi\,\xi^b$.
+- [Graph] Plot $\xi(s)/\xi_0$ for the sphere, $\sin(s/R)$, against the flat-space line $s/R$ for $s/R\in[0,\pi]$, so the reader sees curvature bend an initially linear separation.
+- [Manim] Animate two meridians leaving the equator in parallel on a sphere and converging at the pole, with the deviation vector drawn between them.
+- [Structure] The file starts with a UTF-8 BOM (also in the committed version); save it without BOM as the vault rules require. The same applies to all BOM files in Sections 1.6–1.13, 2.x and 3.x of this batch.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/01 Fundamentals/1.11 Fermi normal coordinates.md
+priority: low
+graph: no
+manim: no
+summary: Correct statement of the Fermi-normal-coordinate metric (Eq. 1.47) with a clear hub of derivation notes.
+- [Intuition] Add one paragraph on the physical meaning of Eq. (1.47): the correction $-R_{tatb}x^ax^b$ in $g_{tt}$ is twice the Newtonian tidal potential felt in a freely falling laboratory.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/01 Fundamentals/1.11.1 Geometric construction.md
+priority: low
+graph: no
+manim: no
+summary: Correct and readable description of the Fermi construction, supported by Fig. 1.4.
+- [Simplify] Say explicitly that $x^0$ in Eq. (1.51) is the same coordinate as $t$ in Eq. (1.47), since the table and text use both names.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/01 Fundamentals/1.11.2 Coordinate transformation.md
+priority: low
+graph: no
+manim: no
+summary: Correct derivation of $\partial x^{\alpha'}/\partial x^\mu|_\gamma=\hat e^{\alpha'}_\mu$; compact but complete.
+- [Simplify] The rescaling constant is called $c$, which collides with the speed of light used elsewhere in the vault; rename it (for example $\kappa$) or remark that it is a pure number here.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/01 Fundamentals/1.11.3 Deviation vectors.md
+priority: low
+graph: no
+manim: no
+summary: Short, correct definition of the four deviation vectors.
+- [Links] Link "Section 1.10" and "Eq. (1.46)" to [[1.10 Geodesic deviation]].
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/01 Fundamentals/1.11.4 Metric on γ.md
+priority: low
+graph: no
+manim: no
+summary: Short, correct one-step result; no change needed.
+- [Links] Link Eqs. (1.49), (1.54) and (1.55) to [[1.11.1 Geometric construction]] and [[1.11.2 Coordinate transformation]].
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/01 Fundamentals/1.11.5 First derivatives of the metric on γ.md
+priority: low
+graph: no
+manim: no
+summary: Correct argument that all Christoffel symbols vanish on $\gamma$.
+- [Simplify] Add one sentence that $\Gamma^\alpha_{bc}\Omega^b\Omega^c=0$ for all unit $\Omega^a$ implies $\Gamma^\alpha_{bc}=0$ only because $\Gamma^\alpha_{bc}$ is symmetric in $b,c$; readers usually miss this step.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/01 Fundamentals/1.11.6 Second derivatives of the metric on γ.md
+priority: low
+graph: no
+manim: no
+summary: Correct derivation (Eqs. 1.62 and 1.63 check out and reproduce Eq. 1.47), but "a little algebra" hides the key symmetrization step.
+- [Simplify] Show the "little algebra": from $3(\Gamma^\alpha_{ab,d}+\Gamma^\alpha_{ad,b})=-(R^\alpha{}_{bad}+R^\alpha{}_{dab})$, verify that $\Gamma^\alpha_{ab,c}=-\tfrac13(R^\alpha{}_{abc}+R^\alpha{}_{bac})$ satisfies it using $R^\alpha{}_{abd}=-R^\alpha{}_{adb}$, and note that this solution is unique.
+- [Simplify] Show how Eq. (1.63) follows from Eqs. (1.60)–(1.62) with one explicit line, for example $g_{tt,ab}=2\Gamma_{tta,b}$ on $\gamma$ (because $g_{\alpha\beta,\gamma}=\Gamma_{\alpha\beta\gamma}+\Gamma_{\beta\alpha\gamma}$).
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/01 Fundamentals/1.11.7 Riemann tensor in Fermi normal coordinates.md
+priority: low
+graph: no
+manim: no
+summary: Short, correct remark on how to obtain Fermi-frame curvature components.
+- [Example] Add the simplest case: for a radially falling observer in Schwarzschild, $R_{\hat t\hat r\hat t\hat r}=-2M/r^3$ and $R_{\hat t\hat\theta\hat t\hat\theta}=R_{\hat t\hat\phi\hat t\hat\phi}=M/r^3$, which give radial stretching and transverse squeezing (this also prepares Problem 10).
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/01 Fundamentals/1.12 Bibliographical notes.md
+priority: low
+graph: no
+manim: no
+summary: Bibliography transcription; no change needed.
+- [Structure] No change needed.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/01 Fundamentals/1.13 Problems.md
+priority: low
+graph: no
+manim: no
+summary: Correct exercise list (Problems 3, 6, 9 and 12 checked); it works as a problem set.
+- [Links] Link the cross-references (Section 1.5 in Problem 5, the Weyl tensor of Problem 8, Section 1.11 in Problem 10) to [[1.5 Killing vectors]], [[1.9 Curvature]], and [[1.11 Fermi normal coordinates]].
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/01 Fundamentals/1.2 Covariant differentiation.md
+priority: low
+graph: no
+manim: no
+summary: Correct transcription of the connection transformation law and Christoffel formula; dense but standard.
+- [Example] Add plane polar Christoffel symbols ($\Gamma^r_{\phi\phi}=-r$, $\Gamma^\phi_{r\phi}=1/r$) and show that $A^\alpha{}_{;\beta}=0$ for the constant Cartesian field $\partial_x$ even though its polar components vary.
+- [Simplify] Add the two-line derivation of Eq. (1.11) (cyclic sum of $g_{\alpha\beta;\gamma}=0$ plus symmetry), which the text calls "easy to show".
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/01 Fundamentals/1.3 Geodesics.md
+priority: low
+graph: no
+manim: no
+summary: Correct and compact derivation of the geodesic equation with arbitrary and affine parameters.
+- [Example] Illustrate the practical method mentioned after Eq. (1.14): apply Euler–Lagrange to $L'=\tfrac12g_{\alpha\beta}\dot x^\alpha\dot x^\beta$ for the 2-sphere and read off $\Gamma^\theta_{\phi\phi}=-\sin\theta\cos\theta$, $\Gamma^\phi_{\theta\phi}=\cot\theta$.
+- [Simplify] Expand "A straightforward calculation shows" before Eq. (1.13) with the intermediate step $\frac{\mathrm d}{\mathrm d\lambda}(g_{\alpha\beta}\dot x^\beta/L)-\frac{1}{2L}g_{\beta\gamma,\alpha}\dot x^\beta\dot x^\gamma=0$, which shows where $\kappa=\mathrm d\ln L/\mathrm d\lambda$ comes from.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/01 Fundamentals/1.4 Lie differentiation.md
+priority: medium
+graph: no
+manim: yes
+summary: Correct derivation of the Lie derivative, but the geometric difference from the covariant derivative is only implied.
+- [Manim] Animate the rotation flow $u=\partial_\phi$ in the plane dragging a vector along it, next to a parallel-transported copy of the same vector; the Lie-dragged vector turns with the flow and the parallel-transported one does not.
+- [Example] Compute $\mathcal L_uA$ for $u=-y\partial_x+x\partial_y$ and $A=\partial_x$ with Eq. (1.16), giving $\mathcal L_uA=[u,A]=-\partial_y$, to make the definition concrete.
+- [Links] The text cites Fig. 1.2, which is embedded only in [[1.2 Covariant differentiation]]; link or re-embed it.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/01 Fundamentals/1.5 Killing vectors.md
+priority: low
+graph: no
+manim: no
+summary: Correct and concise introduction; the two extra rotation Killing vectors are correct (overall sign is a convention).
+- [Links] Link to the expanded [[Killing Vector]] note in 02 General Relativity, which already has the sphere figure and the Killing-tensor extension.
+- [Example] Add the Schwarzschild case $A=1/B=1-2M/r$, where $\widetilde E=(1-2M/r)\,\mathrm dt/\mathrm d\tau$ and $\widetilde L=r^2\sin^2\theta\,\mathrm d\phi/\mathrm d\tau$, so the conserved quantities become familiar.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/01 Fundamentals/1.6 Local flatness.md
+priority: low
+graph: no
+manim: no
+summary: Correct counting proof of local flatness, though the claim that second derivatives cannot be removed is not justified.
+- [Simplify] Add the third-order count behind "not possible to also set the derivatives of the connection to zero": the coefficients $\partial^3x^{\alpha'}/\partial x^\beta\partial x^\gamma\partial x^\delta$ give $4\times20=80$ free values, while $g_{\alpha\beta,\gamma\delta}$ has $10\times10=100$ components; the 20 left over are the independent Riemann components.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/01 Fundamentals/1.7 Metric determinant.md
+priority: low
+graph: no
+manim: no
+summary: Correct derivations of the invariant volume element and divergence formula.
+- [Example] Add the divergence formula in spherical coordinates, $A^\alpha{}_{;\alpha}=r^{-2}\partial_r(r^2A^r)+\dots$, which is used directly in [[2.3.7 Another example]] and [[2.4.7 Another example]].
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/01 Fundamentals/1.8 Levi-Civita tensor.md
+priority: low
+graph: no
+manim: no
+summary: Correct transcription; the proof is complete and the sign of Eq. (1.30) is correctly emphasized.
+- [Intuition] Add one sentence that the minus sign in Eq. (1.30) comes from $g<0$ in Lorentzian signature (raising all four indices multiplies by $1/g$).
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/01 Fundamentals/1.9 Curvature.md
+priority: low
+graph: no
+manim: no
+summary: Correct summary of the Riemann, Ricci and Einstein tensors and the field equations, with MTW signs that match Eq. (1.31).
+- [Example] Add the 2-sphere of radius $a$ as a quick check: $R_{\theta\phi\theta\phi}=a^2\sin^2\theta$ and Ricci scalar $2/a^2$, so the reader can verify Eq. (1.32) and the sign conventions.
+- [Links] Link the geometric interpretation of the Riemann tensor to [[1.10 Geodesic deviation]].
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/02 Geodesic congruences/2.0 Chapter introduction.md
+priority: low
+graph: no
+manim: no
+summary: Clear chapter overview; no change needed.
+- [Links] Link the section numbers 2.1–2.4 to their hub notes.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/02 Geodesic congruences/2.1 Energy conditions.md
+priority: medium
+graph: yes
+manim: no
+summary: Useful summary table, but the weak-energy row repeats a strict inequality that is wrong.
+- [Correctness] Table 2.1, weak row: "$\rho+p_i>0$" should be $\rho+p_i\ge0$ (a cosmological constant with $\rho=-p>0$ satisfies the WEC with $\rho+p=0$).
+- [Graph] Plot the allowed region of each condition for a perfect fluid in the $(\rho,p)$ plane, $\rho\in[-1,2]$, $p\in[-2,2]$: NEC $\rho+p\ge0$; WEC adds $\rho\ge0$; SEC is NEC plus $\rho+3p\ge0$; DEC $\rho\ge|p|$; mark dust, radiation ($p=\rho/3$), and dark energy ($p=-\rho$).
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/02 Geodesic congruences/2.1.1 Introduction and summary.md
+priority: low
+graph: no
+manim: no
+summary: Correct setup of the eigenvalue decomposition and observer vectors.
+- [Intuition] Add one sentence that Eq. (2.1) is not fully general (some stress-energy tensors, for example null dust, have no timelike eigenvector), so the derived inequalities apply to the common "type I" case.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/02 Geodesic congruences/2.1.2 Weak energy condition.md
+priority: medium
+graph: no
+manim: no
+summary: The argument is clear but ends with a wrong strict inequality caused by an invalid step.
+- [Correctness] "$0\le\rho+a^2p_1<\rho+p_1$" holds only for $p_1>0$; the correct argument lets $a^2\to1$ and gives $\rho+p_1\ge0$, so Eq. (2.7) should read $\rho\ge0$, $\rho+p_i\ge0$ (not $>0$).
+- [Example] Add a quick check: dust ($p=0$) and radiation ($p=\rho/3$) satisfy the WEC, while the negative-energy Casimir region of [[2.1.6 Violations of the energy conditions]] does not.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/02 Geodesic congruences/2.1.3 Null energy condition.md
+priority: low
+graph: no
+manim: no
+summary: Correct and short.
+- [Intuition] Add that the NEC is the condition used in the null focusing theorem ([[2.4.5 Focusing theorem]]) and in the horizon area theorem, which explains why the weakest condition is also the most important one.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/02 Geodesic congruences/2.1.4 Strong energy condition.md
+priority: low
+graph: no
+manim: no
+summary: Correct derivation (algebra checked), but the remark that the SEC does not imply the WEC lacks an example.
+- [Example] Give the counterexample: a negative cosmological constant ($\rho<0$, $p=-\rho$) satisfies the SEC but violates the WEC; conversely, dark energy with $p=-\rho$, $\rho>0$ violates the SEC, which is why it drives cosmic acceleration.
+- [Simplify] Show the "simple algebra" step: multiply by $1-a^2$ and collect terms to get $\rho+\sum_ip_i\ge a^2(p_2+p_3-\rho-p_1)$.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/02 Geodesic congruences/2.1.5 Dominant energy condition.md
+priority: low
+graph: no
+manim: no
+summary: Correct derivation of $\rho\ge|p_i|$.
+- [Intuition] Add that $-T^\alpha{}_\beta v^\beta$ is the energy-momentum current (four-momentum density) seen by the observer, and that for a perfect fluid the DEC is simply $|p|\le\rho$.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/02 Geodesic congruences/2.1.6 Violations of the energy conditions.md
+priority: medium
+graph: no
+manim: no
+summary: Correct Casimir formula, but the status of the averaged null energy condition is reported as of 1994 and is outdated.
+- [Correctness] "recent work suggests" and "Its status in curved spacetimes is not yet fully settled ... as of 1994" are outdated: the ANEC has since been proven in flat spacetime for general unitary Lorentz-invariant QFTs (Faulkner, Leigh, Parrikar, Wang 2016; Hartman, Kundu, Tajdini 2017); add a dated update note.
+- [Correctness] $\energy{\hbar}$ is coloured as an energy, but $\hbar$ is an action (J s, or m$^2$ in geometrized units); use the appropriate macro group or leave it uncoloured.
+- [Example] Add the SI form $\rho=-\pi^2\hbar c/(720d^4)$ and a number: for $d=1\,\mu$m, $\rho\approx-4.3\times10^{-4}$ J/m$^3$.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/02 Geodesic congruences/2.2 Kinematics of a deformable medium.md
+priority: low
+graph: no
+manim: no
+summary: Hub page; no change needed.
+- [Structure] Add one sentence stating the section's result: $B^a{}_b$ splits into expansion, shear, and rotation.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/02 Geodesic congruences/2.2.1 Two-dimensional medium.md
+priority: low
+graph: no
+manim: no
+summary: Clear Newtonian warm-up.
+- [Correctness] The physical-quantity table lists $\mechanical{B}_{ab}$, $\mechanical{r}_1$, and $\mechanical{\phi}'$, which this note never uses; trim the table to the symbols in the note.
+- [Intuition] Add that $B^a{}_b=\partial v^a/\partial x^b$ is the velocity gradient of the medium, linking it to familiar fluid kinematics.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/02 Geodesic congruences/2.2.2 Expansion.md
+priority: low
+graph: no
+manim: no
+summary: Correct and simple; the table contains unused symbols.
+- [Correctness] The table lists $\mechanical{B}_{ab}$ and $\mechanical{\phi}'$, which this note does not use; remove them.
+- [Simplify] State that $\Delta A=\pi r_0^2\theta\Delta t$ holds to first order in $\Delta t$ (the exact area is $\pi r_0^2(1+\tfrac12\theta\Delta t)^2$).
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/02 Geodesic congruences/2.2.3 Shear.md
+priority: low
+graph: no
+manim: yes
+summary: Correct shear algebra with an accurate, area-preserving ellipse figure.
+- [Correctness] The table lists $\mechanical{B}_{ab}$, $\mechanical{\sigma}_{ab}$, and $\mechanical{\phi}'$, which this note does not use; remove them.
+- [Manim] Animate the circle deforming under $\sigma_+$ and then under $\sigma_\times$, with tracer points, showing that the area stays constant while the axes stretch and squeeze.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/02 Geodesic congruences/2.2.4 Rotation.md
+priority: low
+graph: no
+manim: no
+summary: Correct; the rotation sense is not stated.
+- [Correctness] The table lists $\mechanical{B}_{ab}$, $\mechanical{r}_1$, and $\mechanical{\omega}_{ab}$, which this note does not use; remove them.
+- [Intuition] Note that with this sign convention $\phi'=\phi-\omega\Delta t$, so positive $\omega$ rotates the figure clockwise.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/02 Geodesic congruences/2.2.5 General case.md
+priority: medium
+graph: no
+manim: yes
+summary: Correct decomposition, but the combined action is only stated in words.
+- [Manim] Animate a circle of tracer points under a general $B^a{}_b$ (for example $\theta=0.4$, $\sigma_+=0.3$, $\omega=0.5$), then split the motion into its three parts side by side.
+- [Example] Decompose one numerical matrix, for example $B=\begin{pmatrix}1&2\\0&0\end{pmatrix}$, into $\theta=1$, $\sigma_+=\tfrac12$, $\sigma_\times=1$, $\omega=1$.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/02 Geodesic congruences/2.2.6 Three-dimensional medium.md
+priority: low
+graph: no
+manim: no
+summary: Correct Jacobian argument for the volume interpretation.
+- [Simplify] State that $\det(1+B\Delta t)=1+\operatorname{Tr}B\,\Delta t$ holds to first order in $\Delta t$, so shear and rotation change the volume only at order $\Delta t^2$.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/02 Geodesic congruences/2.3 Congruence of timelike geodesics.md
+priority: low
+graph: no
+manim: no
+summary: Clear setup note.
+- [Links] Link "Section 1.10" to [[1.10 Geodesic deviation]] and add links to the subsection notes 2.3.1–2.3.8 so the note also works as a hub.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/02 Geodesic congruences/2.3.1 Transverse metric.md
+priority: low
+graph: no
+manim: no
+summary: Correct and short.
+- [Intuition] Add that $h^\alpha{}_\beta$ projects onto the comoving observer's local rest space, so $h^\alpha{}_\beta A^\beta$ is the spatial part of $A$ seen by that observer.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/02 Geodesic congruences/2.3.2 Kinematics.md
+priority: low
+graph: no
+manim: no
+summary: Correct; clearly links back to the Newtonian decomposition.
+- [Links] Link "the first equation of Section 2.2" to [[2.2.1 Two-dimensional medium]].
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/02 Geodesic congruences/2.3.3 Frobenius' theorem.md
+priority: low
+graph: no
+manim: no
+summary: Correct proof, though long and with one notational typo.
+- [Correctness] "$\omega_{\alpha\beta}=-\Phi_{[\alpha}\mu_{,\beta]}$" is missing a comma; it should be $-\Phi_{,[\alpha}\mu_{,\beta]}$.
+- [Example] Add a counterexample: rigidly rotating observers $u\propto\partial_t+\Omega\partial_\phi$ in flat spacetime have $\omega_{\alpha\beta}\neq0$ and no orthogonal hypersurfaces, which shows what the theorem rules out.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/02 Geodesic congruences/2.3.4 Raychaudhuri's equation.md
+priority: low
+graph: no
+manim: no
+summary: Correct derivation (Ricci-identity sign checked), but the identity for $B^{\alpha\beta}B_{\beta\alpha}$ is skipped.
+- [Correctness] The physical-quantity table lists $\mechanical{\theta}_0$, $\mechanical{u}^t$, $\mechanical{u}^r$, $\mechanical{u}^\theta$, $\mechanical{u}^\phi$, and $\mechanical{u}_t$, none of which appear in this note; trim it.
+- [Simplify] Show the check $B^{\alpha\beta}B_{\beta\alpha}=\tfrac13\theta^2+\sigma^{\alpha\beta}\sigma_{\alpha\beta}-\omega^{\alpha\beta}\omega_{\alpha\beta}$: cross terms vanish because $\sigma$ is tracefree and symmetric while $\omega$ is antisymmetric, and $\omega^{\alpha\beta}\omega_{\beta\alpha}=-\omega^{\alpha\beta}\omega_{\alpha\beta}$.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/02 Geodesic congruences/2.3.5 Focusing theorem.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct statement and integration, but the blow-up of $\theta$ is described only in words.
+- [Graph] Plot the bounding solution $\theta(\tau)=1/(1/\theta_0+\tau/3)$ for $\theta_0=+1,-1,-2$ (inverse length units), $\tau\in[0,4]$, with vertical asymptotes at $\tau=3/|\theta_0|$ for the converging cases.
+- [Correctness] The physical-quantity table lists $\mechanical{u}^t$, $\mechanical{u}^r$, $\mechanical{u}^\theta$, $\mechanical{u}^\phi$, and $\mechanical{u}_t$, which this note never uses; trim it.
+- [Intuition] Add that rotation enters Eq. (2.20) with a plus sign and can prevent focusing (a centrifugal effect), which is why hypersurface orthogonality is assumed.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/02 Geodesic congruences/2.3.6 Example.md
+priority: low
+graph: yes
+manim: no
+summary: Correct FRW example; the table is copied from other notes.
+- [Correctness] The table lists $\mechanical{u}^r$, $\mechanical{u}^\theta$, $\mechanical{u}^\phi$, $\mechanical{u}_t$, $\mechanical{\theta}_0$, and $\mechanical{B}^{\alpha\beta}$, none of which appear in this note; trim it.
+- [Graph] Plot $\theta(t)=3\dot a/a$ for matter ($a\propto t^{2/3}$, $\theta=2/t$) and radiation ($a\propto t^{1/2}$, $\theta=3/(2t)$) for $t\in[0.1,5]$, so the decreasing expansion predicted by the focusing theorem is visible.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/02 Geodesic congruences/2.3.7 Another example.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct calculations ($\Phi$, $\theta$, and $\mathrm d\theta/\mathrm d\tau$ verified), but $\theta$ means two things in the same note.
+- [Correctness] Symbol clash: $\mechanical{\theta}$ is both the polar angle in $\mathrm d\Omega^2$ and the expansion scalar, and the table lists both meanings; rename the angle (for example $\vartheta$) or add an explicit warning.
+- [Intuition] Add the Raychaudhuri check: with $R_{\alpha\beta}=0$ and $\omega=0$, $\sigma^{\alpha\beta}\sigma_{\alpha\beta}=9M/(2r^3)-\theta^2/3=3M/r^3\neq0$, so the focusing here comes entirely from tidal shear.
+- [Graph] Plot $\theta(r)=-\tfrac32\sqrt{2M/r^3}$ and $\mathrm d\theta/\mathrm d\tau=-9M/(2r^3)$ for ingoing geodesics against $r/M\in[1,20]$, marking the horizon $r=2M$, where nothing is singular.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/02 Geodesic congruences/2.3.8 Interpretation of θ.md
+priority: low
+graph: no
+manim: no
+summary: Correct and careful proof, with the wrong derivative variable in the headline equation.
+- [Correctness] Eq. (2.21) is written with $\mathrm d/\mathrm d\mechanical{t}$, but the note (and Eq. 2.27) uses proper time; write $\theta=\delta V^{-1}\,\mathrm d\delta V/\mathrm d\tau$ and drop $\mechanical{t}$ from the table.
+- [Links] Link Eqs. (2.16) and (2.17) to [[2.3.2 Kinematics]] and the determinant-variation step to [[1.7 Metric determinant]].
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/02 Geodesic congruences/2.4 Congruence of null geodesics.md
+priority: low
+graph: no
+manim: no
+summary: Clear setup note for the null case.
+- [Correctness] The table lists $\mechanical{\tilde\xi}^\alpha$ and $h'_{\alpha\beta}$, which appear only in later notes; trim it to the symbols used here.
+- [Links] Add links to the subsection notes 2.4.1–2.4.8 so the note works as a hub.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/02 Geodesic congruences/2.4.1 Transverse metric.md
+priority: low
+graph: no
+manim: no
+summary: Correct construction (normalization $k^\alpha N_\alpha=-1$ checked in the null coordinates).
+- [Intuition] Add one sentence that $N^\alpha$ is the light ray travelling opposite to $k^\alpha$, so $h_{\alpha\beta}$ is the metric of the wave-front 2-surface seen by both rays.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/02 Geodesic congruences/2.4.2 Kinematics.md
+priority: low
+graph: no
+manim: no
+summary: Correct derivation of $\tilde B_{\alpha\beta}$ and $\theta=k^\alpha{}_{;\alpha}$; long but complete.
+- [Simplify] Add a short summary at the top: only the transverse projection $\tilde B$ matters, $\theta$ is independent of $N^\alpha$, and $\sigma$, $\omega$ change only by terms along $k^\alpha$ (Problem 6 of [[2.6 Problems]]).
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/02 Geodesic congruences/2.4.3 Frobenius' theorem.md
+priority: low
+graph: no
+manim: no
+summary: Correct algebra, but the opening sentence announces the converse of what is proved.
+- [Simplify] The note opens with "if $\omega_{\alpha\beta}=0$, then the congruence is hypersurface orthogonal", but Eq. (2.38) proves the opposite direction; add the one-line converse (if $\tilde B_{[\alpha\beta]}=0$, then $B_{[\alpha\beta]}$ has only terms along $k_\alpha$ or $k_\beta$, so $k_{[\alpha;\beta}k_{\gamma]}=0$) or reword the opening.
+- [Links] Link "Section 2.3.3" to [[2.3.3 Frobenius' theorem]] and "Problem 6" to [[2.6 Problems]].
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/02 Geodesic congruences/2.4.4 Raychaudhuri's equation.md
+priority: low
+graph: no
+manim: no
+summary: Correct; relies on the timelike derivation.
+- [Correctness] The table lists $\mechanical{\theta}_0$ and the $\mechanical{k}^{\rm out}$, $\mechanical{k}^{\rm in}$ variants, none of which appear in this note; trim it.
+- [Simplify] Explain why $B^{\alpha\beta}B_{\beta\alpha}=\tilde B^{\alpha\beta}\tilde B_{\beta\alpha}$: the extra terms of Eq. (2.35) are proportional to $k_\alpha$ or $k_\beta$ and drop out because $B$ is orthogonal to $k$.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/02 Geodesic congruences/2.4.5 Focusing theorem.md
+priority: low
+graph: yes
+manim: no
+summary: Correct null analogue of the focusing theorem.
+- [Correctness] The table lists the $\mechanical{k}^{\rm out}$, $\mechanical{k}^{\rm in}$ variants, which this note never uses; trim it.
+- [Graph] Plot $\theta(\lambda)=1/(1/\theta_0+\lambda/2)$ for $\theta_0=-1$ together with the timelike bound $1/(1/\theta_0+\tau/3)$, showing the earlier caustic for the null case ($\lambda=2$ versus $\tau=3$).
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/02 Geodesic congruences/2.4.6 Example.md
+priority: low
+graph: no
+manim: no
+summary: Correct light-cone example ($B_{\alpha\beta}$, $\theta=2/r$, and the alternative null $N_\alpha$ verified), but $\theta$ is overloaded.
+- [Correctness] Symbol clash: $\mechanical{\theta}$ is the polar angle in $h_{\alpha\beta}=\operatorname{diag}(0,0,r^2,r^2\sin^2\theta)$ and also the expansion $\theta=2/r$, and the table lists both; rename the angle or add a warning.
+- [Simplify] Show the "straightforward calculation" in one line: $B_{\theta\theta}=-\Gamma^r_{\theta\theta}k_r=r$ and $B_{\phi\phi}=-\Gamma^r_{\phi\phi}k_r=r\sin^2\theta$.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/02 Geodesic congruences/2.4.7 Another example.md
+priority: low
+graph: yes
+manim: no
+summary: Correct results ($\theta=\pm2/r$ and $\mathrm d\theta/\mathrm d\lambda=-2/r^2$ verified), but the notation is inconsistent.
+- [Correctness] Symbol clash: the table lists $\mechanical{\theta}$ both as a sphere angle and as the expansion; the index placement also switches between $k^{\rm out}_\alpha$ and $k_{\rm out}^\alpha$; make both consistent.
+- [Graph] Plot outgoing and ingoing $\theta=\pm2/r$ against $r/M\in[2,20]$, and add a $t$ versus $r^*$ diagram with lines of constant $u$ and constant $v$.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/02 Geodesic congruences/2.4.8 Interpretation of θ.md
+priority: low
+graph: no
+manim: no
+summary: Correct outline of the area interpretation; it reuses symbols in a confusing way.
+- [Simplify] Warn that $\sigma_{AB}$ (two-metric) differs from the shear $\sigma_{\alpha\beta}$, that the coordinates $\theta^A$ differ from the expansion $\theta$, and that the auxiliary parameter $\mu$ is unrelated to the factor $\mu$ in Frobenius' theorem.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/02 Geodesic congruences/2.5 Bibliographical notes.md
+priority: low
+graph: no
+manim: no
+summary: Bibliography transcription; no change needed.
+- [Structure] No change needed.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/02 Geodesic congruences/2.6 Problems.md
+priority: low
+graph: no
+manim: no
+summary: Correct problem list; the stated result of Problem 3(c) was verified symbolically.
+- [Links] Link the references "Section 1.13, Problem 8" in Problems 4 and 7 to [[1.13 Problems]] and the auxiliary-vector discussion in Problem 6 to [[2.4.1 Transverse metric]].
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.0 Chapter introduction.md
+priority: low
+graph: no
+manim: no
+summary: Clear chapter overview; no change needed.
+- [Links] Link the section ranges (3.1–3.3, 3.4–3.6, 3.7–3.11) to their hub notes.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.1 Description of hypersurfaces.md
+priority: low
+graph: no
+manim: no
+summary: Hub page; no change needed.
+- [Structure] Add one sentence that summarizes the section (defining equations, normal vector, induced metric, light-cone example).
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.1.1 Defining equations.md
+priority: low
+graph: no
+manim: no
+summary: Correct and simple.
+- [Example] Add spacetime examples before the null case, for example the spacelike slice $\Phi=t$ and the timelike cylinder $\Phi=r-R$ in flat spacetime.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.1.2 Normal vector.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct (Eq. 3.4 sign convention and the null-geodesic argument check out), but the three cases are hard to picture.
+- [Graph] Draw a 1+1 Minkowski diagram ($x$ horizontal, $t$ vertical, range $[-2,2]$) with a spacelike line $t=0.3x$, a timelike line $x=0.3t$, and a null line $t=x$, each with its normal vector; for the null line the normal lies along the line itself.
+- [Simplify] Show the one-line check of Eq. (3.4), $n^\alpha n_\alpha=\varepsilon^2\Phi^{,\alpha}\Phi_{,\alpha}/|\Phi^{,\mu}\Phi_{,\mu}|=\varepsilon$.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.1.3 Induced metric.md
+priority: low
+graph: no
+manim: no
+summary: Correct and clear description of the induced metric and the completeness relations.
+- [Example] Add the induced metric of the timelike cylinder $r=R$ in flat spacetime, $\mathrm ds^2_\Sigma=-\mathrm dt^2+R^2\mathrm d\Omega^2$, as a non-null counterpart to [[3.1.4 Light cone in flat spacetime]].
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.1.4 Light cone in flat spacetime.md
+priority: low
+graph: yes
+manim: no
+summary: Correct worked example (tangent vectors, $\sigma_{AB}$, and $N^\alpha$ verified).
+- [Graph] Add a graph3d of the future light cone $t=\sqrt{x^2+y^2}$ (one spatial dimension suppressed) for $t\in[0,2]$ with 8 generators ($\phi=k\pi/4$) and the cross-section circle at $\lambda=1.5$, whose circumference grows linearly with $\lambda$ (area $4\pi\lambda^2$ in 3+1).

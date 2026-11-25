@@ -1,0 +1,528 @@
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/11 Ising Model/11.02.01 Solution by Recursion.md
+priority: low
+graph: no
+manim: yes
+summary: Short, correct derivation of the reduced-sum recursion with good checks ($Z_n(s)=2^{n-1}$ at $J=h=0$ verifies).
+- [Example] Add a two-step worked case at $h=0$: $Z_2(\pm1)=e^{\beta J}+e^{-\beta J}=2\cosh\beta J$, and $Z_3(s)=(2\cosh\beta J)^2$, so the reader sees the recursion produce a closed form before the matrix language appears.
+- [Intuition] State explicitly that the recursion is the vector equation $\mathbf Z_{n+1}=\mathbf T^{\mathsf T}\mathbf Z_n$ with $\mathbf Z_n=(Z_n(+),Z_n(-))$, which makes the bridge to [[11.02.02 Transfer-Matrix Method]] immediate.
+- [Manim] Animate a chain growing one site at a time, with the two-component vector $(Z_n(+),Z_n(-))$ updated at each attachment, to show that only the end spin carries information forward.
+- [Structure] The physical-quantity table lists $\thermal{T}$ with "a c subscript marks a critical value", but no critical temperature appears in this note; trim the description.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/11 Ising Model/11.02.02 Transfer-Matrix Method.md
+priority: low
+graph: yes
+manim: no
+summary: Clear and correct; the characteristic polynomial, eigenvalues (11.3) and the $J=0$ limit all verify.
+- [Example] Add the explicit $N=2$ check $\operatorname{Tr}\mathbf T^2=e^{2\beta(J+h)}+e^{2\beta(J-h)}+2e^{-2\beta J}$ and match it to the four periodic configurations, so the trace-as-sum claim is seen directly.
+- [Graph] Plot $\lambda_+$ and $\lambda_-$ from (11.3) versus $\beta h\in[-3,3]$ for $\beta J=0.5$ and $\beta J=-0.5$, showing the gap $\lambda_+>|\lambda_-|$ never closes at finite temperature (the key fact behind analyticity).
+- [Intuition] Add one sentence explaining why the trace imposes periodicity: $(\mathbf T^N)_{ss}$ sums all paths that start and end on the same spin value.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/11 Ising Model/11.02.03 Helmholtz Free Energy.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and compact; both limiting checks ($f\to-J$ and $f=-k_BT\ln2$) verify.
+- [Graph] Plot $f/J$ from (11.4) versus $k_BT/J\in[0.05,4]$ for $h/J=0,0.5,1$, showing smooth curves with no kink, which visualizes Remark 11.2.
+- [Intuition] Explain briefly why a $2\times2$ matrix cannot produce a transition: a singularity would need $\lambda_+=|\lambda_-|$, which Perron–Frobenius forbids for a strictly positive matrix at $T>0$; this gives the reason behind the analyticity remark rather than only the statement.
+- [Example] Add a numerical illustration of the finite-size correction, e.g. for $\beta J=1$, $h=0$: $(\lambda_-/\lambda_+)^N=\tanh^N 1\approx0.762^N$, negligible already at $N=50$.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/11 Ising Model/11.02.04 Magnetization and Susceptibility.md
+priority: low
+graph: yes
+manim: no
+summary: Correct results ($m(h)$ and $\chi=\beta e^{2\beta J}$ verify) with a slightly awkward paragraph order.
+- [Structure] The sentence "follows from the field derivative of the free energy:" ends with a colon but is followed by a prose paragraph before the equation; move the explanatory paragraph after the displayed $m=-\partial f/\partial h$.
+- [Graph] Plot $m(h)$ for $h/J\in[-2,2]$ at $k_BT/J=2,1,0.5,0.25$, showing ever steeper but always smooth curves through the origin, the visual form of "no spontaneous magnetization but diverging susceptibility".
+- [Graph] Add a semilog plot of $k_BT\,\chi=e^{2J/k_BT}$ versus $J/k_BT$ to show the exponential (not power-law) growth.
+- [Intuition] Connect $\chi=\beta e^{2\beta J}$ to $\chi=\beta\sum_r G(r)=\beta(1+t)/(1-t)$ with $t=\tanh\beta J$ (fluctuation–response relation), linking this note to [[11.02.05 Correlation Function and Correlation Length]].
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/11 Ising Model/11.02.05 Correlation Function and Correlation Length.md
+priority: low
+graph: yes
+manim: yes
+summary: Thorough and correct; $\xi\sim\frac12e^{2\beta J}$, $c(T)$ and the maximum at $k_BT\approx0.83J$ ($x\tanh x=1$, $x\approx1.200$) all verify.
+- [Graph] Add a plot of the heat capacity $c/k_B=x^2\operatorname{sech}^2x$ versus $k_BT/J\in[0,4]$ with the Schottky maximum at $0.83$ marked, since the note discusses its shape in detail but shows only $G(r)$.
+- [Graph] Plot $\xi$ versus $k_BT/J$ on a log scale with the asymptote $\frac12e^{2J/k_BT}$ overlaid, illustrating Remark 11.3.
+- [Intuition] Sketch the transfer-matrix derivation of $G(r)=(\lambda_-/\lambda_+)^r$ in two lines (insert $\sigma^z$ at sites $0$ and $r$ in $\operatorname{Tr}\mathbf T^N$; $\sigma^z$ swaps the two eigenvectors at $h=0$), since it is stated without derivation.
+- [Manim] Animate Monte Carlo snapshots of a 1D chain at decreasing temperature, showing domains growing in length while walls never disappear, which illustrates a diverging but finite $\xi$.
+- [Structure] Example 11.1 (free energy, internal energy, heat capacity) is unrelated to the correlation-function title; consider moving it to [[11.02.03 Helmholtz Free Energy]] or renaming the section.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/11 Ising Model/11.03 Mean-Field Approximation.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub with a useful reading order; no change needed.
+- [Structure] No change needed; the reading-order paragraph and link list are consistent and all targets exist.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/11 Ising Model/11.03.01 Derivation of the Self-Consistency Equation.md
+priority: low
+graph: no
+manim: no
+summary: Correct derivation (Hamiltonian, Weiss field and (11.5) verify) but the key substitution step hides the neglected term.
+- [Simplify] The displayed step "$\sigma_i\sigma_j=m\sigma_i+\sigma_i\delta\sigma_j$" is exact but does not show what is dropped; write the symmetric form $\sigma_i\sigma_j=m\sigma_i+m\sigma_j-m^2+\delta\sigma_i\delta\sigma_j$ first, then strike the last term.
+- [Intuition] Add the counting $\sum_{\langle ij\rangle}(\sigma_i+\sigma_j)=z\sum_i\sigma_i$ and $\sum_{\langle ij\rangle}1=Nz/2$ before the second line of $\mathcal H_{\mathrm{MF}}$, since the factors $z$ and $1/2$ are otherwise unexplained.
+- [Example] Give a quick numeric example: square lattice ($z=4$), $h=0$, $k_BT=3J$: solving $m=\tanh(4m/3)$ gives $m\approx0.69$, so readers see the equation in use before the graphical analysis.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/11 Ising Model/11.03.02 Analysis of the Self-Consistency Equation.md
+priority: medium
+graph: yes
+manim: yes
+summary: Correct and clear analysis (the expansion to $m^2\approx3(1-T/T_c)$ verifies) but it describes a graphical construction without showing it.
+- [Graph] Add the standard plot of $y=m$ and $y=\tanh(Km)$ for $m\in[-1.5,1.5]$ at $K=0.5,1,2$, marking the intersections $\pm m_0$ for $K=2$; the text refers to these intersections but has no figure.
+- [Graph] Add a plot of the full numerical solution $m_0(T/T_c)$ of $m=\tanh(m\,T_c/T)$ for $T/T_c\in[0,1.2]$ together with $\sqrt{3(1-T/T_c)}$, illustrating the closing paragraph about extrapolation beyond saturation.
+- [Manim] Animate $y=\tanh(Km)$ as $K$ increases from 0.5 to 2 while $y=m$ stays fixed, with the two nonzero intersections splitting off from the origin at $K=1$ (pitchfork bifurcation).
+- [Intuition] Support "the solution $m=0$ is unstable" by pointing to the Landau coefficient $a<0$ in [[11.03.03 Landau Free Energy and the Phase Transition]] rather than only to the slope argument.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/11 Ising Model/11.03.03 Landau Free Energy and the Phase Transition.md
+priority: low
+graph: yes
+manim: yes
+summary: Correct and well explained; $a(T)$, $b(T)=(zJ)^4/[12(k_BT)^3]$ and the curvature $-4a$ verify, and the existing figure fits the text.
+- [Example] Show the expansion $\ln\cosh x=x^2/2-x^4/12+O(x^6)$ that produces $a$ and $b$, since the coefficients are currently stated without the intermediate step.
+- [Graph] Add a companion plot of the untruncated mean-field $f(m)-f(0)$ for $T/T_c=1.2,1,0.8,0.5$ over $m\in[-1,1]$, showing where the quartic approximation stays accurate.
+- [Manim] Animate the curve $a(T)m^2+bm^4$ as $T$ decreases through $T_c$, with a ball rolling into one of the two emerging minima, to show the continuous onset and the choice of sign.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/11 Ising Model/11.03.04 Critical Mean-Field Exponents.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct results (Curie–Weiss law and $\Delta C=3k_B/2$ verify), but the exponent $\beta$ collides with the inverse temperature and $\delta$ and $\Delta C$ are stated without derivation.
+- [Correctness] Symbol clash: the exponent table writes $\beta=1/2$ (uncoloured) while the same note uses $\thermal{\beta}$ for inverse temperature in (11.7); use $\beta_{\mathrm c}$ as in [[11.03.02 Analysis of the Self-Consistency Equation]] or add the disambiguation sentence used in [[11.04.03 Exact Critical Exponents in Two Dimensions]].
+- [Example] Derive $\delta=3$ in two lines: at $T=T_c$, $m=\tanh(m+\beta_c h)$ gives $m^3/3\approx\beta_c h$, so $m\propto h^{1/3}$; the table currently gives it without support.
+- [Example] Derive the heat-capacity jump: $u=-zJm^2/2$ with $m^2=3(1-T/T_c)$ gives $c=3k_B/2$ just below $T_c$ and $0$ above.
+- [Graph] Plot the mean-field $\chi^{-1}$ versus $T/T_c\in[0.5,1.5]$, showing slope 1 above $T_c$ and slope 2 below (the factor-2 amplitude ratio), which connects to exercise [[11.04 Mean-Field Susceptibility above and below the Critical Temperature]].
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/11 Ising Model/11.03.05 Limits of the Mean-Field Approximation.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and well scoped; the Ginzburg scaling $|t|^{(d-4)/2}$, the 3D exponents and the 1D mean-field $T_c=2J/k_B$ are right.
+- [Graph] Plot $|t|^{(d-4)/2}$ on log axes for $d=3,4,5$ over $|t|\in[10^{-4},1]$, showing growth for $d<4$, constancy at $d=4$ and decay for $d>4$.
+- [Intuition] Add a one-line heuristic: fluctuations of $m$ averaged over a correlation volume scale as $\xi^{2-d}$, while $m^2\propto|t|$; with $\xi\propto|t|^{-1/2}$ the ratio is $|t|^{(d-4)/2}$.
+- [Links] Link "Theorem 11.1 (Ginzburg criterion)" to the fuller treatment in [[12.02.03 Ginzburg Criterion]].
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/11 Ising Model/11.04 Ising Model in Two Dimensions.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub with a correct reading order; no change needed.
+- [Structure] No change needed; all four links resolve and the scope paragraph is accurate.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/11 Ising Model/11.04.01 Onsager Solution.md
+priority: low
+graph: yes
+manim: no
+summary: Correct; the critical condition, $k_BT_c\approx2.269J$, the 76% overestimate and both integral limits ($f\to-k_BT\ln2$, $f\to-2J$) verify.
+- [Graph] Plot the exact heat capacity per spin (numerically differentiated from the Onsager integral) versus $k_BT/J\in[1,5]$ with the 1D chain and mean-field ($z=4$) curves overlaid, showing the logarithmic spike at 2.269 against the smooth 1D maximum and the mean-field jump at 4.
+- [Intuition] Add a sentence on why the singularity sits at $\theta_1=\theta_2=0$: it is the longest-wavelength mode, so the transition is driven by fluctuations on the largest scales.
+- [Example] Add the numerical step $\ln(1+\sqrt2)=0.88137$, so $k_BT_c/J=2/0.88137=2.2692$.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/11 Ising Model/11.04.02 Kramers–Wannier Duality.md
+priority: medium
+graph: yes
+manim: yes
+summary: Correct ($e^{-2K^*}=\tanh K$ and $K_c=\tfrac12\ln(1+\sqrt2)$ verify) and carefully scoped, but the contour matching is only asserted.
+- [Graph] Plot $K^*(K)=-\frac12\ln\tanh K$ for $K\in[0.05,2]$ together with the diagonal $K^*=K$, marking the intersection at $K_c\approx0.4407$; it shows at a glance that weak and strong coupling are exchanged.
+- [Example] Show the weight matching on one elementary loop: the high-temperature square loop has weight $\tanh^4K$, a single flipped dual spin has four broken bonds with weight $e^{-2K^*\cdot4}$, so equating them gives $\tanh K=e^{-2K^*}$.
+- [Manim] Animate a square lattice with its dual overlaid, morphing a high-temperature closed bond loop into the domain-wall contour enclosing a flipped spin on the dual lattice.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/11 Ising Model/11.04.03 Exact Critical Exponents in Two Dimensions.md
+priority: low
+graph: yes
+manim: no
+summary: Correct exponent table with valid scaling-relation checks and good scope notes.
+- [Graph] Plot $C$ versus $t\in[-0.2,0.2]$ comparing a logarithmic divergence $-\ln|t|$ with a mean-field finite jump, to make the two meanings of $\alpha=0$ visible.
+- [Example] Add the remaining checks $\alpha+\beta(1+\delta)=2$ ($0+\tfrac18\cdot16=2$) and hyperscaling $d\nu=2-\alpha$ ($2\cdot1=2$), which complete the consistency test.
+- [Links] Link the scaling-relation remark to [[12.06.02 Derivation of Scaling Relations]] in addition to the external Tong reference.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/11 Ising Model/11.04.04 Spontaneous Magnetization - Yang's Result.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct formula and good discussion, but the figure plots only schematic power laws and its caption names the wrong axis.
+- [Correctness] Fig. 11.5 caption says "Spontaneous magnetization versus reduced temperature", but the horizontal axis is $T/T_c$, not the reduced temperature $t=(T-T_c)/T_c$ defined in the chapter; change the caption to "versus $T/T_c$".
+- [Graph] Replace or supplement the schematic curves with the exact Yang curve $[1-\sinh^{-4}(2K_cT_c/T)]^{1/8}$ and the full mean-field solution of $m=\tanh(mT_c/T)$, both versus $T/T_c\in[0,1.2]$; this removes the need for the "Interpretation of the source plot" caveat.
+- [Structure] The opening sentence ends with a colon but the formula appears only after a separate paragraph; move the scope paragraph after Equation (11.9).
+- [Example] Add the near-$T_c$ expansion: $\sinh(2K)\approx1+2\sqrt2(K-K_c)$, so the bracket $\approx8\sqrt2(K-K_c)$ and $m_0\propto(T_c-T)^{1/8}$, making the exponent derivation explicit.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/11 Ising Model/11.05 Spontaneous Symmetry Breaking.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub that states the puzzle and resolution well; no change needed.
+- [Structure] No change needed; links resolve and the motivation paragraph is accurate.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/11 Ising Model/11.05.01 Mechanism of Spontaneous Breaking.md
+priority: medium
+graph: yes
+manim: yes
+summary: Correct and careful about the order of limits, but entirely abstract with no concrete illustration.
+- [Example] Illustrate the non-commuting limits with a two-phase model: for finite $N$, $\langle\sigma\rangle\approx m_s\tanh(N\beta h\,m_s)$, which tends to $m_s$ if $N\to\infty$ first and to $0$ if $h\to0$ first.
+- [Graph] Plot $\langle\sigma\rangle=m_s\tanh(N\beta hm_s)$ versus $\beta h\in[-0.05,0.05]$ for $N=10,100,1000$ with $m_s=0.9$, showing the curves sharpen into a step of height $2m_s$.
+- [Manim] Animate the same family as $N$ grows, so the smooth finite-size curve visibly turns into the discontinuous infinite-system magnetization.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/11 Ising Model/11.05.02 Physical Interpretation - Equilibrium States and Domains.md
+priority: low
+graph: no
+manim: yes
+summary: Correct and well qualified (barrier scaling, $2J$ per broken bond, Mermin–Wagner scope).
+- [Example] Add the 2D domain-wall estimate: a straight wall across an $L\times L$ lattice costs $2JL$, so the reversal barrier scales as $L^{d-1}$, not $N=L^d$, which quantifies the "Barrier scaling" note.
+- [Manim] Animate a 2D lattice below $T_c$ with mixed boundary conditions, showing two domains separated by a fluctuating wall, to illustrate ergodicity breaking and interface energy.
+- [Links] Link the Mermin–Wagner remark to [[11.06.02 XY Model]] and [[11.06.03 Heisenberg Model]], where the theorem is applied.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/11 Ising Model/11.05.03 Order Parameter and Phase Transition.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct physics, but the two paths through the phase diagram are described only in words.
+- [Graph] Add a $(T,h)$ phase diagram with the coexistence line $h=0$, $0\le T<T_c$ ending at the critical point, and mark the two paths (zero-field temperature sweep and fixed-$T$ field sweep) discussed in the text.
+- [Graph] Add a companion plot of $m(h)$ at $T/T_c=0.8,1,1.2$ (mean field), showing the jump $2m_s$, the critical $h^{1/\delta}$ shape and the smooth paramagnetic curve.
+- [Simplify] Shorten the "Source correction" note to one sentence; the main text already places coexistence at $h=0$.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/11 Ising Model/11.06 Extensions of the Ising Model.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub; no change needed.
+- [Structure] No change needed; links resolve and the distinction between spin components and lattice dimension is well made.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/11 Ising Model/11.06.01 Potts Model.md
+priority: low
+graph: yes
+manim: no
+summary: Correct; the $q=2$ mapping, the factor one half and $e^{\beta_cJ}=1+\sqrt q$ all verify.
+- [Graph] Plot $k_BT_c/J=1/\ln(1+\sqrt q)$ versus $q=2,\dots,10$ as points, with the continuous ($q\le4$) and first-order ($q\ge5$) regions shaded.
+- [Intuition] Add why larger $q$ favours a first-order transition: the disordered phase gains entropy of order $\ln q$ per site, which eventually lets it win discontinuously against the ordered phase.
+- [Example] Give a second number, e.g. $q=3$: $k_BT_c/J=1/\ln(1+\sqrt3)\approx0.995$.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/11 Ising Model/11.06.02 XY Model.md
+priority: medium
+graph: yes
+manim: yes
+summary: Correct overview of the BKT transition, but vortices and quasi-long-range order are described without any picture or formula.
+- [Example] State the low-temperature law $G(r)\sim r^{-\eta(T)}$ with $\eta=k_BT/(2\pi J)$ in spin-wave theory and the universal value $\eta=1/4$ at the transition ($k_BT_{\mathrm{BKT}}\approx0.893J$ on the square lattice), so "power-law decay" becomes concrete.
+- [Intuition] Add the Kosterlitz–Thouless energy–entropy argument: a free vortex costs $\pi J\ln(L/a)$ and gains entropy $2k_B\ln(L/a)$, so free vortices proliferate above $k_BT\approx\pi J/2$ (renormalized down to the actual value).
+- [Graph] Plot a vector field of a vortex–antivortex pair, $\theta(\mathbf r)=\arg(\mathbf r-\mathbf r_1)-\arg(\mathbf r-\mathbf r_2)$, to show what the topological defects are.
+- [Manim] Animate a vortex–antivortex pair binding and unbinding as temperature crosses $T_{\mathrm{BKT}}$, illustrating the topological transition.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/11 Ising Model/11.06.03 Heisenberg Model.md
+priority: low
+graph: no
+manim: no
+summary: Correct and carefully qualified, though the universality discussion repeats itself across three paragraphs.
+- [Simplify] Merge Remark 11.6, the following paragraph and the "Scope of the universality statement" note into one paragraph stating that the class is fixed by $d$, the order-parameter symmetry ($n$) and the interaction range.
+- [Example] Quote the 3D Heisenberg exponents ($\beta\approx0.37$, $\gamma\approx1.40$, $\nu\approx0.71$) next to the 3D Ising values ($0.326$, $1.237$, $0.630$), so "its exponents differ" is shown, not only stated.
+- [Links] Link "Mermin–Wagner theorem" to the remark in [[11.05.02 Physical Interpretation - Equilibrium States and Domains]].
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/11 Ising Model/11.07 Worked Examples.md
+priority: low
+graph: yes
+manim: no
+summary: Correct worked examples; $\mathbf T^3$, the enumeration, the iterates (0.50467, 0.50853, 0.51170, limit 0.52543), Yang's 0.95441 and the full mean-field 0.71041 all verify.
+- [Correctness] Symbol clash: Example 11.3 uses $\magnetic{m}_0=0.5$ for the starting iterate, while Example 11.4 (and [[11.04.04 Spontaneous Magnetization - Yang's Result]]) uses $\magnetic{m}_0$ for the spontaneous magnetization; rename the iterates to $m^{(0)},m^{(1)},\dots$.
+- [Simplify] In Example 11.5 the expression $h_{\mathrm{eff}}=k_BT\operatorname{arctanh}(\tanh K)=J$ is a roundabout identity; state directly that the bond spins $\mu_i$ act as independent spins in field $J$, giving $\mathcal Z=2(2\cosh K)^{N-1}$ for the open chain.
+- [Graph] For Example 11.3, plot the cobweb diagram of $m\mapsto\tanh(m/0.9)$ from $m=0.5$, showing the slow convergence to 0.525 that explains why three iterates are not yet close.
+- [Structure] The source/correction notes in Examples 11.3 and 11.4 nearly repeat the main text; give the unrounded values directly in the main text and keep one short note.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/11 Ising Model/11.08 Summary and Connections.md
+priority: low
+graph: no
+manim: no
+summary: Accurate summary table and useful exercise guide.
+- [Links] In "Connections", link item 2 to [[12.01 Landau Theory of Phase Transitions]] and item 4 to [[12.00 Landau Theory and the Renormalization Group]], since the next chapter exists in the vault.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/11 Ising Model/99 Exercises/11.01 Internal Energy and Heat Capacity in a Field.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and well-checked solution route (eigenvalue factorization, zero-field and zero-coupling limits verified), but it stops short of the explicit field-dependent result.
+- [Example] Under "Solution route and checks", give the closed-form $\energy{u}(\thermal{\beta},\energy{h})$ obtained by differentiating the factorized $\ln\lambda_+$ (including the $-2\energy{J}e^{-4\thermal{\beta}\energy{J}}$ term from the square root) as a collapsible answer, so readers can check their own differentiation.
+- [Graph] Plot $\thermal{c}/\thermal{k}_{\mathrm B}$ versus $\thermal{k}_{\mathrm B}\thermal{T}/\energy{J}\in[0.05,5]$ for $\energy{h}/\energy{J}=0,0.5,1,2$; it shows the Schottky-like peak shifting and broadening with field and makes the nonnegativity check visual.
+- [Intuition] Add one sentence after the zero-coupling check explaining that the field opens a gap $2\energy{h}$ per spin, so the heat-capacity peak moves to $\thermal{k}_{\mathrm B}\thermal{T}\sim\energy{h}$ at large field.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/11 Ising Model/99 Exercises/11.02 Mean-Field Magnetization near the Critical Temperature.md
+priority: low
+graph: yes
+manim: no
+summary: Short, correct expansion with good range and sign remarks; clear as it stands.
+- [Graph] Plot the numerical solution of $\magnetic{m}=\tanh(\magnetic{m}\thermal{T}_{\mathrm c}/\thermal{T})$ and the asymptote $\sqrt{3(1-\thermal{T}/\thermal{T}_{\mathrm c})}$ for $\thermal{T}/\thermal{T}_{\mathrm c}\in[0,1]$; it shows where the leading term is accurate and that it exceeds 1 near $\thermal{T}=0$, as the text remarks.
+- [Simplify] In "Derivation and range", show the divided equation explicitly, $1=\frac{1}{1-\thermal{\epsilon}}-\frac{\magnetic{m}^2}{3(1-\thermal{\epsilon})^3}$, before stating $\magnetic{m}^2=3\thermal{\epsilon}$, so the balance step is not left implicit.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/11 Ising Model/99 Exercises/11.03 Critical Temperature of the Triangular Lattice.md
+priority: low
+graph: no
+manim: no
+summary: Correct and complete star–triangle plus duality derivation (algebra and $4/\ln3\approx3.641$ verified); slightly heavy on caveats.
+- [Structure] The opening says "the source supplies the exact result" and only later derives it; reorder so the derivation section leads and the supplied values become the final check.
+- [Intuition] Also state the honeycomb critical point ($\tanh\thermal{L}_{\mathrm c}=1/\sqrt3$, i.e. $\thermal{k}_{\mathrm B}\thermal{T}_{\mathrm c}\approx1.519\energy{J}$) to show the expected ordering triangular > square > honeycomb with coordination number.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/11 Ising Model/99 Exercises/11.04 Mean-Field Susceptibility above and below the Critical Temperature.md
+priority: low
+graph: yes
+manim: no
+summary: Correct derivation of the factor-two amplitude ratio (verified); clear, with one table defect.
+- [Correctness] The physical-quantities table lists $\magnetic{m}_0$ and $\magnetic{m}_{\mathrm s}$, which the note never uses; reduce the row to $\magnetic{m}$.
+- [Graph] Plot $\thermal{k}_{\mathrm B}\thermal{T}_{\mathrm c}\magnetic{\chi}$ from the full selected-branch formula for $\thermal{T}/\thermal{T}_{\mathrm c}\in[0.3,2]$, together with the asymptotes $1/(\thermal{T}/\thermal{T}_{\mathrm c}-1)$ and $1/[2(1-\thermal{T}/\thermal{T}_{\mathrm c})]$; this shows the amplitude ratio and the return to zero at low temperature.
+- [Intuition] Add a sentence that the ordered side is stiffer because the quartic term adds curvature at the nonzero minimum, linking to the Landau result $\chi^+/\chi^-=2$ in [[12.01.04 Landau Critical Exponents]].
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/11 Ising Model/Ising mean field and transfer-matrix calculations.md
+priority: high
+graph: yes
+manim: no
+summary: Transcribed lecture notes with an off-topic ensembles opening, a factor-of-two mean-field convention that conflicts with the stated Hamiltonian, and a cluttered quantity table.
+- [Correctness] "Mean-field approximation": with $\energy{H}=-\energy{J}\sum_{\langle ij\rangle}\sigma_i\sigma_j$ (each pair once) the mean-field equation is $\bar\sigma=\tanh[\thermal{\beta}(q\energy{J}\bar\sigma+\energy{h})]$, so $\thermal{k}_{\mathrm B}\thermal{T}_{\mathrm c}=q\energy{J}$, not $q\energy{J}/2$; the factor $1/2$ belongs only in $\energy{U}=-Nq\energy{J}\bar\sigma^2/2$. Consequently the heat-capacity jump is $\tfrac32N\thermal{k}_{\mathrm B}$ (not $3N\thermal{k}_{\mathrm B}$) and the susceptibility prefactor is $N\magnetic{\mu}^2/(\energy{J}q)$ (not $2N\magnetic{\mu}^2/(\energy{J}q)$); fix these or state explicitly that the notebook's convention double-counts pairs.
+- [Correctness] Physical-quantities table lists symbols the note never uses or uses differently: Planck's constant as $\energy{h}$ (clashes with the Ising field parameter; only $\energy{\hbar}$ appears), Landé $g$, internal partition function $j$, internal degeneracy $g$ (clashes with density of states $g(\energy{E})$), $\energy{F}$; and $\thermal{T}_{\mathrm c}$ is described as "onset of macroscopic ground-state occupation". Remove unused rows and fix the description.
+- [Structure] The "Ising model" subsection is actually about microcanonical vs canonical entropy of the ideal gas (Sackur–Tetrode, verified correct) and is unrelated to the title; move it to an ensembles note or retitle the subsection.
+- [Simplify] Remove meta-commentary about the handwritten source ("The handwritten radical differs...", the "Ising 1920" label, "The notebook labels the logarithm...") or collect it in one source remark; it distracts from the physics.
+- [Graph] Complement Fig. 17/18 with native plots: numerical mean-field $\bar\sigma(\thermal{T}/\thermal{T}_{\mathrm c})$ and $\thermal{C}_V/(N\thermal{k}_{\mathrm B})$ on $[0,1.5]$ showing the $3/2$ jump, and the 1D chain $\bar\sigma(\energy{h})$ for $\thermal{\beta}\energy{J}=0.5,1,2$ showing no spontaneous magnetization.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/12 Landau Theory and the Renormalization Group/12.00 Landau Theory and the Renormalization Group.md
+priority: low
+graph: no
+manim: no
+summary: Clear chapter hub with a useful reading plan.
+- [Structure] The "three passes" paragraph skips Section 12.3 (Kadanoff blocks); mention it alongside Section 12.4 as the conceptual step before the exact decimation.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/12 Landau Theory and the Renormalization Group/12.01 Landau Theory of Phase Transitions.md
+priority: low
+graph: no
+manim: no
+summary: Concise section hub; no change needed.
+- [Structure] No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/12 Landau Theory and the Renormalization Group/12.01.01 Basic Idea - The Order Parameter.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and readable definition with good caveats about conjugate field and finite samples.
+- [Graph] Add a schematic plot of $\phi(\thermal{T})$ for a continuous transition ($\propto(1-\thermal{T}/\thermal{T}_{\mathrm c})^{1/2}$) next to a first-order jump, to make the "continuous at $\thermal{T}_{\mathrm c}$" property concrete.
+- [Structure] Move the example list (magnets, gas–liquid, superconductors, superfluids) directly after Definition 12.1 and before the caveat paragraphs, so the reader sees concrete cases first.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/12 Landau Theory and the Renormalization Group/12.01.02 Landau Expansion of the Free Energy.md
+priority: low
+graph: no
+manim: no
+summary: Correct and well-motivated construction of the quartic Landau functional.
+- [Intuition] Add one sentence explaining why $a_2$ is linear in $\thermal{T}-\thermal{T}_{\mathrm c}$: it is the leading term of a regular expansion that changes sign, reflecting the competition between entropy and exchange energy (cf. mean-field $\thermal{k}_{\mathrm B}\thermal{T}_{\mathrm c}=z\energy{J}$).
+- [Structure] The table gives units "—" for $a$, $b$, $a'$, while the last paragraph gives $\unit{J}$ and $\unit{J\,K^{-1}}$ for normalized magnetization; mention that case in the table descriptions for consistency.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/12 Landau Theory and the Renormalization Group/12.01.03 Minimization - Spontaneous Magnetization.md
+priority: low
+graph: no
+manim: yes
+summary: Correct minimization and stability analysis with an accurate native graph (minima at $\pm0.5$, depth $-0.0625$ verified).
+- [Manim] Animate the Landau potential $a\thermal{t}\phi^2+b\phi^4$ as $\thermal{t}$ sweeps from positive to negative, with a ball in the minimum that rolls into one of two symmetric wells; this shows the continuous onset and symmetry breaking better than three static curves.
+- [Graph] Add a companion pitchfork plot of $\phi_\pm(\thermal{t})=\pm\sqrt{a|\thermal{t}|/(2b)}$ for $\thermal{t}\in[-1,0.5]$, with the unstable origin branch dashed for $\thermal{t}<0$.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/12 Landau Theory and the Renormalization Group/12.01.04 Landau Critical Exponents.md
+priority: low
+graph: yes
+manim: no
+summary: Correct exponent derivations (susceptibility ratio 2 and $\Delta\thermal{C}$ factor verified), well organized but dense with caveats at the end.
+- [Graph] Plot three panels versus $\thermal{t}\in[-1,1]$ with $a=b=1$: $\phi_0(\thermal{t})$, $\chi=1/(2\thermal{t})$ and $1/(4|\thermal{t}|)$, and the heat-capacity step; this makes $\beta,\gamma,\alpha$ and the amplitude ratio visible at once.
+- [Simplify] Merge the "Temperature factor" note into the heat-capacity section (derive $\Delta\thermal{C}=\thermal{T}a^2/(2b\thermal{T}_{\mathrm c}^2)$ directly) instead of first quoting the source's proportionality and then correcting it.
+- [Example] Add an explicit check of Rushbrooke $\alpha+2\beta+\gamma=2$ and Widom $\gamma=\beta(\delta-1)$ with the values in Remark 12.1, rather than only asserting they hold.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/12 Landau Theory and the Renormalization Group/12.01.05 First-Order Transitions in Landau Theory.md
+priority: low
+graph: yes
+manim: yes
+summary: Correct treatment; the coexistence conditions and the graph coefficients ($a_2=1/4$) check out.
+- [Example] Work out Case 1 coexistence explicitly: equal depth and stationarity give $\phi^*=-a_3/(2a_4)$ and $a_2=a_3^2/(4a_4)$, which makes "$\thermal{T}_{\mathrm c}>\thermal{T}_0$" a derived statement.
+- [Graph] Case 1 has no figure; plot $a_2\phi^2+a_3\phi^3+a_4\phi^4$ with $a_3=-1$, $a_4=1$ and $a_2=0.35,\ 0.25,\ 0.1$ (coexistence at $a_2=1/4$, $\phi^*=1/2$) to show the asymmetric second minimum.
+- [Manim] Animate Eq. (12.3) as $a_2$ decreases from 0.8 to 0, marking the global minimum; the jump of the selected minimum from 0 to $\pm\sqrt{1/2}$ at $a_2=1/4$, and the later loss of the metastable origin at $a_2=0$, show the metastability window clearly.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/12 Landau Theory and the Renormalization Group/12.02 Landau–Ginzburg Functional and Spatial Fluctuations.md
+priority: low
+graph: no
+manim: no
+summary: Good section hub that separates minimization from thermal averaging; no change needed.
+- [Structure] No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/12 Landau Theory and the Renormalization Group/12.02.01 Inclusion of Spatial Fluctuations.md
+priority: low
+graph: yes
+manim: no
+summary: Correct functional and Euler–Lagrange equation; lacks a concrete spatial example.
+- [Example] Add the one-dimensional domain-wall solution of the bulk equation for $\thermal{t}<0$, $h=0$: $\phi(x)=\phi_0\tanh\!\left(x\sqrt{a|\thermal{t}|/c}\right)$, to show what the gradient term does and that the wall width scales like the correlation length.
+- [Graph] Plot that kink profile for two values of $|\thermal{t}|$ to show the wall width growing as the transition is approached.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/12 Landau Theory and the Renormalization Group/12.02.02 Correlation Length.md
+priority: low
+graph: yes
+manim: no
+summary: Correct Gaussian calculation of $\mechanical{\xi}=\sqrt{c/(2a\thermal{t})}$ and the Ornstein–Zernike form; clear.
+- [Graph] Plot the structure factor $1/(\signal{k}^2+\mechanical{\xi}^{-2})$ for three temperatures and, separately, $G(\mechanical{r})\propto e^{-\mechanical{r}/\mechanical{\xi}}/\mechanical{r}$ on a log axis for $\mechanical{\xi}=1,3,10$; this supports the scattering-peak-width remark.
+- [Simplify] Replace "static fluctuation–dissipation relation" with "equipartition for each Gaussian mode" (or show the link to $\thermal{k}_{\mathrm B}\thermal{T}\chi(\signal{k})$ explicitly), since the displayed step is just the Gaussian variance.
+- [Intuition] Add the ordered-side result ($\mechanical{\xi}=\sqrt{c/(4a|\thermal{t}|)}$ from curvature $-4a\thermal{t}$) to show $\nu=1/2$ on both sides with amplitude ratio $\sqrt2$.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/12 Landau Theory and the Renormalization Group/12.02.03 Ginzburg Criterion.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct scaling derivation (substitution steps verified), but the argument is buried among caveat paragraphs and the quote-then-correct pattern.
+- [Simplify] Fold the "Reduced-temperature sign" note into the derivation by writing $|\thermal{t}|$ from the start, and keep the $a$-dependence in the final inequality so the Ginzburg width $|\thermal{t}_{\mathrm G}|$ can be read off directly instead of being "suppressed".
+- [Example] Derive the $d=3$ Ginzburg number explicitly, $|\thermal{t}_{\mathrm G}|\sim(\thermal{k}_{\mathrm B}\thermal{T}_{\mathrm c})^2b^2/(a\,c^3)$ up to numerical factors, and explain why a large bare coherence length (BCS) makes it tiny.
+- [Graph] Replace or complement the schematic band with a log–log plot of $|\thermal{t}|^{(d-4)/2}$ versus $|\thermal{t}|\in[10^{-4},1]$ for $d=3,4,5$ against a horizontal threshold, which shows directly why $d=4$ is the dividing line.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/12 Landau Theory and the Renormalization Group/12.03 Renormalization Group - Kadanoff's Idea.md
+priority: low
+graph: no
+manim: no
+summary: Short hub with useful framing; no change needed.
+- [Structure] No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/12 Landau Theory and the Renormalization Group/12.03.01 The Many-Scale Problem.md
+priority: low
+graph: no
+manim: yes
+summary: Clear conceptual note, though abstract without an image of critical clusters.
+- [Manim] Show 2D Ising snapshots at $\thermal{T}=1.5\thermal{T}_{\mathrm c}$, $\thermal{T}_{\mathrm c}$ and $0.8\thermal{T}_{\mathrm c}$ while zooming out at $\thermal{T}_{\mathrm c}$, so clusters of all sizes and statistical self-similarity become visible (precomputed configurations are fine).
+- [Intuition] Add one concrete number: at $|\thermal{t}|=10^{-3}$ with $\nu\approx0.63$ in 3D, $\mechanical{\xi}\approx80$ lattice spacings, so a correlated region contains roughly $10^5$–$10^6$ spins.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/12 Landau Theory and the Renormalization Group/12.03.02 Kadanoff Block Spins.md
+priority: low
+graph: no
+manim: yes
+summary: Correct and clear; the block-spin graph's majority assignments all check out.
+- [Manim] Animate one or two majority-rule blocking steps on a larger lattice near criticality, including rescaling back to the original spacing, to show that the coarse-grained picture looks statistically similar at $\thermal{T}_{\mathrm c}$ but becomes ordered or random away from it.
+- [Intuition] State the scaling consequence explicitly: $\mechanical{\xi}'=\mechanical{\xi}/b$ in new lattice units, so only $\mechanical{\xi}=0$ or $\infty$ can be fixed points; link to [[12.04.03 Calculation of the Correlation Length]].
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/12 Landau Theory and the Renormalization Group/12.04 RG Transformation - Decimation of the 1D Ising Chain.md
+priority: low
+graph: no
+manim: no
+summary: Clear section hub; no change needed.
+- [Structure] No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/12 Landau Theory and the Renormalization Group/12.04.01 Model and Method.md
+priority: low
+graph: no
+manim: yes
+summary: Correct, well-checked decimation with a useful zero-coupling limit.
+- [Manim] Animate the chain: highlight even sites, sum them out, merge two bonds $K$ into one bond $K'$, then shrink the lattice by 2; this conveys decimation and rescaling in one picture.
+- [Structure] The physical-quantities table says "subscript c marks the transition temperature", but no critical temperature appears here; drop that clause.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/12 Landau Theory and the Renormalization Group/12.04.02 Fixed-Point Analysis.md
+priority: low
+graph: yes
+manim: yes
+summary: Correct fixed-point analysis, including the exact bound $0<R(K)<K$ and the $e^{-2K}$ doubling.
+- [Graph] Add a cobweb plot: $R(K)=\tfrac12\ln\cosh(2K)$ and the diagonal $K'=K$ for $K\in[0,3]$, with iterates starting from $K=2.5$; it shows the absence of an intermediate fixed point and the flow to zero.
+- [Manim] Animate the cobweb iteration step by step together with a point moving on the $K$ axis toward 0, to show the slow initial drift (about $\ln2/2$ per step) and the rapid quadratic final approach.
+- [Structure] The table's "subscript c marks the transition temperature" is irrelevant here; remove it.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/12 Landau Theory and the Renormalization Group/12.04.03 Calculation of the Correlation Length.md
+priority: low
+graph: yes
+manim: no
+summary: Correct; the exact identity $\tanh K'=\tanh^2K$ gives a clean check, but the note leads with the weaker approximate argument.
+- [Structure] Lead with the exact result $\tanh K'=(\tanh K)^2\Rightarrow\xi(K')=\xi(K)/2$, then present $K^{(n)}\approx K^{2^n}$ as the small-coupling special case.
+- [Graph] Plot $\xi(K)=1/|\ln\tanh K|$ for $K\in[0.05,3]$ on a log $y$ axis with the low-temperature asymptote $\tfrac12e^{2K}$ and the high-temperature form $-1/\ln K$.
+- [Intuition] Add the low-temperature limit $\xi\approx\tfrac12e^{2K}$, which together with $e^{-2K'}\approx2e^{-2K}$ from [[12.04.02 Fixed-Point Analysis]] shows the halving near the zero-temperature endpoint as well.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/12 Landau Theory and the Renormalization Group/12.05 Fixed Points, Eigenvalues, and Universality.md
+priority: low
+graph: no
+manim: no
+summary: Short, accurate section hub that motivates the four subnotes and the fixed-point versus basin distinction.
+- [Structure] No change needed; optionally add one sentence previewing that a critical point is reached only after tuning the relevant fields ($t=h=0$), so the reader knows what "tuned" means before 12.05.01.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/12 Landau Theory and the Renormalization Group/12.05.01 Parameter Space and RG Flow.md
+priority: medium
+graph: yes
+manim: yes
+summary: Clear qualitative picture of RG flow with a helpful schematic, but the figure labelling and the abstract text could be tied more tightly to the 1D Ising example.
+- [Correctness] In Fig. 12.5 the "Disordered phase" label sits at (1.1, 4.35), which lies above the dashed critical manifold $K_1+K_2=4$, i.e. on the ordered side; move it below the line (for example near (0.9, 1.9) next to the grey arrows flowing to $P_\infty$) so the label matches the flow region it names.
+- [Intuition] Add one concrete anchor: for the 1D Ising chain the "coupling space" is the single axis $K$ with fixed points $K^*=0$ (stable) and $K^*=\infty$ (unstable), and only in $d\ge2$ does a finite critical fixed point with a critical manifold appear; this makes the 2D schematic less abstract.
+- [Simplify] The caption sentence "The dashed critical manifold is stable along the flow toward the critical point" is confusing; rephrase as "flow starting on the dashed critical manifold stays on it and runs into $P_c$; flow starting off it is pushed away along the relevant direction".
+- [Graph] Optionally supplement the hand-placed arrows with a computed linear flow around $P_c$, e.g. a direction field of $\dot u_1=y_1u_1$, $\dot u_2=y_2u_2$ with $y_1=1$, $y_2=-1$ in rotated coordinates, so the saddle geometry is exact rather than schematic.
+- [Manim] Animate a few initial points (one exactly on the critical manifold, two slightly off on either side) being iterated by a model map $\mathbf K\to\mathcal R_b(\mathbf K)$, showing the on-manifold point converging to $P_c$ and the others first approaching then veering off to $P_\infty$ or the ordered sink.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/12 Landau Theory and the Renormalization Group/12.05.02 Linearization about a Fixed Point.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct and compact definitions of scaling fields and relevance, but lacks a worked example of computing $y$ from an actual RG map.
+- [Example] Add a one-coupling worked example: for a map $K'=R(K)$ with fixed point $K^*$, $\lambda=R'(K^*)$ and $y=\ln\lambda/\ln b$; e.g. the 1D Ising map $K'=\tfrac12\ln\cosh 2K$ gives $R'(0)=0$ at the trivial fixed point (strongly irrelevant), linking back to 12.04.
+- [Intuition] Explain why $\lambda_i(b)$ must be a power of $b$: the semigroup property $\mathcal R_b\mathcal R_{b'}=\mathcal R_{bb'}$ forces $\lambda(b)\lambda(b')=\lambda(bb')$, hence $\lambda=b^{y}$; one line removes the apparent arbitrariness of the definition.
+- [Simplify] Note that $M$ need not be symmetric, so eigenvalues could in principle be complex and left and right eigenvectors differ; state briefly that the note assumes real eigenvalues and a complete eigenbasis.
+- [Graph] Plot the one-dimensional flow $du/d\ell=yu+cu^2$ versus $u\in[-1,1]$ for $y=+0.5$, $y=-0.5$ and $y=0$ with $c=\pm1$, showing relevant, irrelevant, marginally relevant and marginally irrelevant behaviour in one figure.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/12 Landau Theory and the Renormalization Group/12.05.03 Critical Exponents from the RG.md
+priority: medium
+graph: no
+manim: no
+summary: Formulas (12.8)-(12.10) and Example 12.2 are correct, but the exponent derivations are only described verbally rather than shown.
+- [Simplify] Replace the paragraph "To reconstruct the powers..." with the three explicit lines $m=-\partial f_s/\partial h\sim|t|^{(d-y_h)/y_t}$, $\chi\sim|t|^{(d-2y_h)/y_t}$, $c\sim\partial^2 f_s/\partial t^2\sim|t|^{d/y_t-2}$, from which $\beta,\gamma,\alpha$ are read off immediately.
+- [Example] Derive $\delta$ explicitly: set $b^{y_h}h=1$ at $t=0$ to get $f_s\sim h^{d/y_h}$, so $m\sim h^{(d-y_h)/y_h}$ and $\delta=y_h/(d-y_h)$; Example 12.2 also omits $\delta=15$ and $\eta=1/4$, which would complete the check.
+- [Intuition] Justify $\nu=1/y_t$ with the one-line relation $\xi(t)=b\,\xi(b^{y_t}t)$; choosing $b^{y_t}|t|=1$ gives $\xi\propto|t|^{-1/y_t}$, which is clearer than "the correlation length rescales as $b^{-1}$".
+- [Links] Link the forward reference "Section 12.7" in the hyperscaling callout to [[12.07.01 Upper Critical Dimension - Four Dimensions]].
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/12 Landau Theory and the Renormalization Group/12.05.04 Universality Explained by the RG.md
+priority: low
+graph: yes
+manim: no
+summary: Accurate and well-scoped statement of universality; the main gap is a concrete illustration of what "same class" looks like in data.
+- [Example] Add the classic illustration: liquid-gas critical points of different fluids and uniaxial magnets share $\beta\approx0.326$ (3D Ising class), with a sentence on why a fluid maps to $\mathbb Z_2$ symmetry despite having no spin.
+- [Graph] Plot a data-collapse illustration using the mean-field equation of state $h=2atm+4bm^3$: scaled $m/|t|^{1/2}$ versus $h/|t|^{3/2}$ for several $t$ values on both branches, showing that all curves fall onto two universal branches.
+- [Intuition] Give one example of a microscopic change that is relevant rather than irrelevant (e.g. cubic anisotropy in an $O(n)$ model with large $n$, or long-range $1/r^{d+\sigma}$ interactions with small $\sigma$), to illustrate the scope callout.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/12 Landau Theory and the Renormalization Group/12.06 Scaling and Relations between Critical Exponents.md
+priority: low
+graph: no
+manim: no
+summary: Concise and correct section hub with a useful caveat about hyperscaling.
+- [Structure] No change needed; optionally state up front that only two of the six exponents are independent (given hyperscaling), which is the punchline of the section.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/12 Landau Theory and the Renormalization Group/12.06.01 Widom Scaling Hypothesis.md
+priority: low
+graph: yes
+manim: no
+summary: Correct statement of the Widom form and its link to the RG, with appropriate caveats, though the data-collapse idea is described but not shown.
+- [Intuition] Show the one-line consequence that makes the hypothesis plausible: rescaling $t\to\lambda t$, $h\to\lambda^\Delta h$ multiplies $f_s$ by $\lambda^{2-\alpha}$, i.e. the free energy looks the same at every distance from $T_c$ once axes are rescaled.
+- [Graph] Plot an explicit scaling function, e.g. mean-field $m/|t|^{\beta}$ versus $h/|t|^{\beta\delta}$ with $\beta=1/2$, $\delta=3$ from $h=2atm+4bm^3$, both branches $t>0$ and $t<0$, scaled field from $-5$ to $5$, to make "data collapse" concrete.
+- [Links] Link "Section 12.1.1" to [[12.01.01 Basic Idea - The Order Parameter]] and "RG form (12.8)" to [[12.05.03 Critical Exponents from the RG]].
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/12 Landau Theory and the Renormalization Group/12.06.02 Derivation of Scaling Relations.md
+priority: medium
+graph: no
+manim: no
+summary: All relations and the Fisher integral are correct, but the Rushbrooke derivation is presented circularly and the Widom derivation is only asserted.
+- [Simplify] Derive Rushbrooke directly without invoking Widom: from $\beta=2-\alpha-\Delta$ and $\gamma=2\Delta-2+\alpha$, eliminate $\Delta$ to get $\alpha+2\beta+\gamma=2$ in one line; the current route "with $\Delta=\beta\delta$ and $\delta=\gamma/\beta+1$" uses the Widom relation before its own section.
+- [Example] Make the Widom section an actual derivation: at $t\to0$ with $h$ fixed, $\Phi_\pm(x)\sim x^{(2-\alpha)/\Delta}$ so $m\sim h^{(2-\alpha-\Delta)/\Delta}$, giving $1/\delta=\beta/\Delta$, hence $\Delta=\beta\delta$ and $\gamma=\Delta-\beta=\beta(\delta-1)$.
+- [Structure] Reorder sections to Widom first, then Rushbrooke, then Josephson and Fisher, so the opening paragraph's statement "These steps supply the Widom relation used in the Rushbrooke derivation" is no longer a forward reference.
+- [Intuition] For Josephson, add the physical argument $f_s\sim k_BT/\xi^d$ (one $k_BT$ per correlated volume), so $|t|^{2-\alpha}\sim|t|^{d\nu}$; currently only "RG homogeneity" is cited.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/12 Landau Theory and the Renormalization Group/12.06.03 Check of the Scaling Relations.md
+priority: low
+graph: no
+manim: no
+summary: Numbers in Table 12.1 and all arithmetic checks are correct; the prose around rounding is somewhat repetitive.
+- [Simplify] Merge the "Source precision" callout and the last paragraph's rounding discussion into one short sentence; they say the same thing twice.
+- [Example] Add the Widom check for 3D Ising ($0.33\times3.79=1.25$ versus $1.24$) and the O(3) Rushbrooke check ($-0.12+0.74+1.40=2.02$) so every row is tested against at least one relation.
+- [Structure] Consider citing a modern source for the 3D values (e.g. conformal bootstrap: $\nu=0.62997$, $\eta=0.03630$ for Ising) in a footnote, since the table is labelled "numerical" without provenance.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/12 Landau Theory and the Renormalization Group/12.07 Upper and Lower Critical Dimensions.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub that correctly separates the two different questions answered by upper and lower critical dimensions.
+- [Structure] No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/12 Landau Theory and the Renormalization Group/12.07.01 Upper Critical Dimension - Four Dimensions.md
+priority: medium
+graph: no
+manim: no
+summary: The power counting is correct, but the derivation of $[\phi]$ is stated before it is justified and the dangerous-irrelevance remark is too terse.
+- [Structure] Move the paragraph "The field dimension follows by requiring the integrated quadratic gradient term to remain invariant..." before the displayed result $[\phi]=(d-2)/2$, and write it as an equation: $\int d^dx\,(\nabla\phi)^2$ dimensionless gives $-d+2+2[\phi]=0$.
+- [Example] Add the analogous count for $u_6\phi^6$: $[u_6]=d-3(d-2)=6-2d$, irrelevant for $d>3$, to show why only the quartic term matters near four dimensions.
+- [Intuition] Make the dangerous irrelevance concrete: below $T_c$ the mean-field minimum is $m_0=\sqrt{-r/(4u)}$ and $f\sim-r^2/(16u)$, which diverge as $u\to0$, so $u$ cannot be set to zero even though it flows to zero; this is why hyperscaling fails for $d>4$.
+- [Links] Link "Equation (12.4)" to [[12.02.01 Inclusion of Spatial Fluctuations]] and "The Ginzburg criterion" to [[12.02.03 Ginzburg Criterion]].
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/12 Landau Theory and the Renormalization Group/12.07.02 Expansion in ε = 4 − d - Wilson–Fisher Program.md
+priority: medium
+graph: yes
+manim: yes
+summary: Formulas (12.12)-(12.13) and the Ising estimate $\nu\approx0.583$ are correct, but the note never shows the flow equation that produces the Wilson-Fisher fixed point.
+- [Example] Include the one-loop flow $du/d\ell=\varepsilon u-A_nu^2$ (already used in Exercise 12.5) with $u^*=\varepsilon/A_n$ and $y_u=-\varepsilon$, so the fixed point "of order $\varepsilon$" in step 2 is visibly derived rather than asserted.
+- [Graph] Plot $\beta(u)=\varepsilon u-u^2$ on $u\in[-0.3,1.2]$ for $\varepsilon=-0.5,0,0.5,1$, marking the Gaussian and Wilson-Fisher zeros and their slopes, to show the exchange of stability at $d=4$.
+- [Graph] Plot first-order $\nu(\varepsilon)$ for $n=1,2,3$ on $\varepsilon\in[0,1]$ with the 3D benchmark values $0.630$, $0.672$, $0.711$ as markers at $\varepsilon=1$, to visualise the accuracy of the truncation.
+- [Manim] Animate the fixed points on the $u$ axis as $\varepsilon$ is swept from $-0.5$ to $1$: the Wilson-Fisher point passes through the Gaussian point at $\varepsilon=0$ and the flow arrows around the Gaussian point reverse (transcritical exchange of stability).
+- [Simplify] The paragraph about "roughly seven percent of that benchmark... not a new numerical determination" is wordy; condense to one sentence.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/12 Landau Theory and the Renormalization Group/12.07.03 Lower Critical Dimension.md
+priority: low
+graph: no
+manim: no
+summary: Correct statement of Mermin-Wagner and the Ising lower critical dimension; the heuristic argument is qualitative only.
+- [Intuition] Add the spin-wave estimate: $\langle\delta\theta^2\rangle\propto\int d^dk/k^2$ diverges in the infrared for $d\le2$, which turns "small gradient cost" into a one-line calculation that yields $d_c^{\mathrm{inf}}=2$.
+- [Intuition] For Ising, add Peierls' domain-wall argument in one sentence: in $d=1$ a domain wall costs finite energy $2J$ but gains entropy $k_B\ln N$, so order is destroyed for any $T>0$, while in $d=2$ the wall cost grows with its length.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/12 Landau Theory and the Renormalization Group/12.08 Worked Examples.md
+priority: low
+graph: yes
+manim: no
+summary: All worked numbers (decimation sequence, correlation lengths, 2D Ising exponents, Ginzburg arithmetic) check out and the steps are clear.
+- [Graph] Add a cobweb plot for Example 12.4: $K'=\tfrac12\ln\cosh 2K$ and the diagonal $K'=K$ on $K\in[0,1.2]$, with the iteration staircase from $K_0=0.5$ converging to $K^*=0$.
+- [Graph] For Example 12.3, plot $F(\phi)=at\phi^2+b\phi^4-h\phi$ with $a=b=1$ for $t=-1,0,1$ at $h=0$ and $h=0.2$ on $\phi\in[-1.2,1.2]$, showing how the field selects the positive minimum.
+- [Simplify] In Example 12.6 the paragraph after the callout repeats the sensitivity argument; keep only the $(3/2)^6\approx11$ factor statement.
+- [Structure] The quantity table lists both $\mechanical{\xi}$ (m) and $\xi$ (lattice units) and both $a$ and $\mechanical{a}_0$; add a sentence in Example 12.4 stating that $\xi$ there is in lattice units to avoid confusion with Example 12.6.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/12 Landau Theory and the Renormalization Group/12.09 Summary and Connections.md
+priority: low
+graph: no
+manim: no
+summary: Accurate summary with correct exponent and scaling-relation tables.
+- [Structure] Use the chapter's notation $d_{\mathrm c}^{\mathrm{sup}}$ (as in 12.07.01 and Table 12.2) instead of $d_{\mathrm c}$ in the Ginzburg section for consistency.
+- [Links] Add [[12.04 RG Transformation - Decimation of the 1D Ising Chain]], [[12.07.02 Expansion in ε = 4 − d - Wilson–Fisher Program]] and [[12.07.03 Lower Critical Dimension]] to the Connections list, since the summary discusses all three.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/12 Landau Theory and the Renormalization Group/12.99 Exercises.md
+priority: low
+graph: no
+manim: no
+summary: Well-posed exercise list; the checks section gives correct answers ($t=b^2/(4ac)$, $\phi^2=-b/(2c)$, $y_u=-\varepsilon$, $\nu=0.60$, $\gamma=1.20$).
+- [Simplify] In Exercise 12.5, state the field normalization that goes with $A_n=(n+8)K_d$ (which multiple of $(\phi^2)^2$ the coupling multiplies), since common conventions give $(n+8)K_d/6$ or $4(n+8)K_d$; otherwise "standard convention" is ambiguous.
+- [Links] Link the solutions note [[13.08 Chapter 12 - Landau Theory and the Renormalization Group]] at the end of the checks section.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/13 Exercise Solutions/13.00 Exercise Solutions.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub with study guidance; all eight listed solution notes exist.
+- [Structure] No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/13 Exercise Solutions/13.01 Chapter 3 - Microcanonical Ensemble.md
+priority: medium
+graph: yes
+manim: no
+summary: All derivations and numbers (Sackur-Tetrode derivatives, 1D gas entropy, Schottky peak $y_*\approx1.1997$, $C_{\max}\approx0.439Nk_B$, electron wavelengths) are correct, but the note is long and some meta-commentary dilutes the solutions.
+- [Correctness] Symbol clash: $\mu$ denotes both the chemical potential ($\energy{\mu}$, Ex. 3.2) and the magnetic moment ($\magnetic{\mu}$, Ex. 3.4-3.5), distinguished only by colour; likewise $n$ is number density, the ball dimension ("Equation (3.1) with dimension $n=N$") and part of $n_\pm$; rename the magnetic moment (e.g. $\mu_{\mathrm m}$) and drop "$n=N$".
+- [Graph] Plot $C/(Nk_B)=y^2\operatorname{sech}^2y$ versus $k_BT/(\mu B)=1/y$ on $[0,4]$ with the peak at $(0.834, 0.439)$ marked (Ex. 3.4b).
+- [Graph] For Ex. 3.5, plot $S/(Nk_B)$ from (13.8) and $\mu B/(k_BT)=\tfrac12\ln[(1-\varepsilon)/(1+\varepsilon)]$ versus $\varepsilon\in(-1,1)$ on shared axes, showing the entropy maximum and the sign change of $1/T$ at $\varepsilon=0$.
+- [Simplify] In Ex. 3.1 the asymptotic section presents both an exact $O(1)$ result and the source's looser $O(\ln N)$ bound plus two callouts; keep the exact difference $-\ln(k_BT/E_{\mathrm{ref}})$ and one sentence on why it is negligible.
+- [Links] Turn plain equation references such as "(3.5)", "(3.13)", "(3.17)" into links to their notes (e.g. [[03.04.02 Explicit Calculation of Φ(E)]], [[03.06.01 Complete Derivation]], [[03.08 Worked Examples]]).
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/13 Exercise Solutions/13.02 Chapter 4 - Canonical Ensemble.md
+priority: medium
+graph: yes
+manim: no
+summary: Derivations are correct (three-level derivative, peak $x^*\approx1.881$, $C^*\approx0.637k_B$, rotational coefficient $1/90$ and $1+\Theta^2/(45T^2)$, demagnetization entropy), but there are symbol clashes and some overlong commentary.
+- [Correctness] Symbol clash in Ex. 4.4: $\mechanical{p}$ is pressure while $\mechanical{\mathbf p}$ and $\mechanical{p}_i$ are momenta in the same exercise (and the quantity table lists both); use $P$ for pressure as in 13.01. Also $\sigma$ is used for the symmetry number, $\sigma_E$ for the energy spread and $\sigma_{\mathrm{liq}}$ for surface tension; rename the symmetry number (e.g. $\sigma_{\mathrm{sym}}$).
+- [Graph] Plot $C/k_B$ versus $k_BT/\varepsilon$ on $[0,3]$ for the three-level system (13.10) together with the two-level Schottky curve, marking the peaks at $k_BT/\varepsilon=1/1.881$ ($0.637$) and $1/2.40$ ($0.439$).
+- [Graph] Plot the rotational heat capacity per molecule $c_V^{\mathrm{rot}}/k_B$ versus $T/\Theta_{\mathrm{rot}}$ on $[0,3]$ from a numerical sum of (13.11), showing the freeze-out and the overshoot above 1 predicted by $1+\Theta^2/(45T^2)$.
+- [Simplify] In Ex. 4.5 the final two paragraphs on the zero-field endpoint and the callout on sweep-rate sign could be cut to one sentence each; the core result (13.14) is clear without them.
+- [Links] Link "Equation (4.13)", "(4.15)", "(4.17)", "(4.18)" and "Theorem 4.1" to their notes (e.g. [[04.07.02 Quantum Oscillator]], [[04.09.01 Hamiltonian Function and Partition Function]], [[04.11 Solved Examples]]).

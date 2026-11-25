@@ -1,0 +1,228 @@
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.0 Chapter introduction.md
+priority: low
+graph: no
+manim: no
+summary: Clear chapter overview that maps the sections and links them to earlier chapters.
+- [Links] Turn the plain-text references (Sections 5.1–5.5, Chapters 2–4) into wiki links to [[5.1 Schwarzschild black hole]], [[5.2 Reissner-Nordström black hole]], [[5.3 Kerr black hole]], [[5.4 General properties of black holes]], [[5.5 The laws of black-hole mechanics]] and the relevant chapter hubs.
+- [Structure] The file starts with a UTF-8 BOM, as do almost all notes in this folder (all of this batch except 5.1.1 and 5.1.3); strip the BOMs to meet the vault's UTF-8 without BOM rule.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.1 Schwarzschild black hole.md
+priority: low
+graph: no
+manim: no
+summary: Hub note with a complete and correct list of the ten subsection links.
+- [Structure] No change needed apart from removing the UTF-8 BOM. Optionally add one line saying the Kruskal (5.1.2), Eddington–Finkelstein (5.1.3), Painlevé–Gullstrand (5.1.4) and Penrose–Carter (5.1.5) notes are four charts of one spacetime.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.1.1 Birkhoff's theorem.md
+priority: medium
+graph: no
+manim: no
+summary: Correct but compressed proof sketch that states Eq. (5.4) without saying where it comes from and moves quickly past the step that removes $\psi(t)$.
+- [Simplify] After "The third gives $\psi'=0$", explain that $\psi$ can still depend on $t$, and that the rescaling $\mathrm d\bar t=e^{\psi(t)}\mathrm dt$ absorbs it. That step is what makes the exterior static.
+- [Intuition] Add a short physical paragraph: in vacuum, $\partial_t m=0$ means no energy flux, so a pulsating spherical star cannot radiate gravitational waves; its exterior field is as unaware of the pulsation as the Newtonian field outside a spherical shell.
+- [Links] Link the "time-dependent mass distribution" statement to the Vaidya example ([[5.1.8 Distinction between event and apparent horizons -  Vaidya spacetime]]) as a non-vacuum counterexample in which $m$ does change.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.1.10 Bifurcation two-sphere.md
+priority: low
+graph: yes
+manim: no
+summary: Short and correct; Eq. (5.19) checks out, but the claim that $t_\alpha\propto-\partial_\alpha U$ is stated without the one line of algebra behind it.
+- [Simplify] Show the lowering explicitly: $t_U=g_{UV}t^V=-\frac{16M^3}{r}e^{-r/2M}\frac{V}{4M}$ on $U=0$, so $t_\alpha=-\frac{4M^2V}{r}e^{-r/2M}\partial_\alpha U$ (with $V>0$ on the future horizon).
+- [Graph] Kruskal $U$–$V$ diagram with the Killing flow: draw arrows of $(t^U,t^V)=(-U,V)/4M$ on a grid in $[-2,2]^2$ to show hyperbolic "boost" flow lines that vanish at the origin (the bifurcation sphere) and run along the horizons.
+- [Links] Link "Eqs. (5.5)–(5.8)" to [[5.1.2 Kruskal coordinates]] and point to the Kerr analogue [[5.3.11 Bifurcation two-sphere]].
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.1.2 Kruskal coordinates.md
+priority: medium
+graph: no
+manim: yes
+summary: Correct derivation (Eq. 5.9 and $UV=1$ at $r=0$ check out) with good figures, but it uses $f$ without defining it and does not explain why each of the four regions is what it is.
+- [Simplify] The symbol $f$ in "$f\simeq\pm e^{(v-u)/4M}$" is never defined in this note; state $f=1-2M/r$ when it first appears.
+- [Simplify] Add the one-line check of Eq. (5.9): $\mathrm dU\,\mathrm dV=\pm\frac{1}{16M^2}e^{(v-u)/4M}\mathrm du\,\mathrm dv$ together with $e^{(v-u)/4M}=e^{r/2M}|r/2M-1|$ gives the prefactor $32M^3e^{-r/2M}/r$.
+- [Structure] Add a small table of the four regions with the signs of $U,V$ (I: $U<0,V>0$; II: $U>0,V>0$; III: $U>0,V<0$; IV: $U<0,V<0$) and their meaning (exterior, black hole, second exterior, white hole).
+- [Manim] Animate how the $(t,r)$ grid of region I maps into the Kruskal quadrant: lines of constant $t$ turn into rays through the origin and lines of constant $r$ into hyperbolas $UV=\text{const}$, with $t\to\pm\infty$ collapsing onto the horizons.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.1.3 Eddington-Finkelstein coordinates.md
+priority: medium
+graph: no
+manim: yes
+summary: Correct and brief (Eqs. 5.10–5.11 and the outgoing slope $2/f$ check out), but the key physical point, that light cones tip over at $r=2M$, is left to the figure.
+- [Intuition] Spell out the outgoing slope: $\mathrm dv/\mathrm dr=2/f$ is positive outside, infinite at $r=2M$ (the outgoing ray stays at $r=2M$) and negative inside (outgoing rays move to smaller $r$). This is why nothing escapes.
+- [Simplify] Introduce $\tilde t=v-r$ and say that Fig. 5.3 plots $\tilde t$ against $r$, so ingoing rays sit at 45°. Readers otherwise cannot see why the ingoing lines are straight.
+- [Manim] Move a light cone along $r$ from $4M$ to $0.5M$ in the $(r,\tilde t)$ plane, with the outgoing edge rotating from 45° to vertical at $r=2M$ and then tipping inward.
+- [Links] Link "regions I and II / IV and I" to the region figure in [[5.1.2 Kruskal coordinates]].
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.1.4 Painlevé-Gullstrand coordinates.md
+priority: medium
+graph: yes
+manim: no
+summary: Clear and correct metric derivation (Eq. 5.12 checks out), with one region-label typo.
+- [Correctness] "an alternative coordinate system is produced that covers regions **VI** and **I**" — there is no region VI; it should be regions **IV** and **I** (the white-hole and exterior regions), as in [[5.1.3 Eddington-Finkelstein coordinates]].
+- [Simplify] Write out the substitution $\mathrm dt=\mathrm dT-f^{-1}\sqrt{2M/r}\,\mathrm dr$ and the two-line expansion that gives Eq. (5.12). Also note that $\mathrm dT=\mathrm d\tau$ holds only along the infalling worldlines, not as a general identity.
+- [Intuition] Add the "river model" reading: space flows inward at the Newtonian escape speed $\sqrt{2M/r}$, which reaches the speed of light exactly at $r=2M$.
+- [Graph] Plot the inflow speed $\sqrt{2M/r}$ against $r/M\in[0.5,6]$ with a horizontal line at 1, marking $r=2M$.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.1.5 Penrose-Carter diagram.md
+priority: low
+graph: no
+manim: yes
+summary: Clear and correct (the singularity at $\tilde U+\tilde V=\pm\pi/2$ follows from $\tan\tilde U\tan\tilde V=1$), with good figures and a helpful boundary table.
+- [Simplify] Add the one-line reason that $UV=1$ maps to $\tilde U+\tilde V=\pm\pi/2$: $\tan\tilde U\tan\tilde V=1\Leftrightarrow\cos(\tilde U+\tilde V)=0$.
+- [Manim] Animate the compactification: start with the Kruskal diagram including its hyperbolas, apply $\arctan$ to both null coordinates continuously, and show infinity shrinking to the diamond edges $\mathscr I^\pm$ and the points $i^0,i^\pm$.
+- [Example] Trace three worldlines on Fig. 5.5 (an observer staying outside who ends at $i^+$, an infalling observer who ends at $r=0$, and an outgoing light ray that ends on $\mathscr I^+$) to show how to read the diagram.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.1.6 Event horizon.md
+priority: low
+graph: no
+manim: no
+summary: Short qualitative note that is correct and readable.
+- [Simplify] Add a sentence saying why the observer cannot avoid $r=0$: in region II, $r$ is a timelike coordinate and every future-directed worldline has $\mathrm dr<0$.
+- [Links] Link "Fig. 5.2" to [[5.1.2 Kruskal coordinates]] and the region labels to the Penrose diagram in [[5.1.5 Penrose-Carter diagram]].
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.1.7 Apparent horizon.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct calculation (Eq. 5.15 re-derived from Eq. 5.8), but one symbol has two meanings and the intermediate steps are compressed.
+- [Correctness] Symbol clash: $\theta$ is both the expansion ($\theta=k^\alpha{}_{;\alpha}$) and the polar angle in $|g|^{1/2}=|g_{UV}|r^2\sin\theta$; the table lists both. Rename the angle locally (for example $\vartheta$) or write the expansion as $\Theta$.
+- [Simplify] Show the intermediate step: differentiating Eq. (5.8) with respect to $V$ gives $r_{,V}=-4M^2Ue^{-r/2M}/r$; with $|g_{UV}|=16M^3e^{-r/2M}/r$ this yields Eq. (5.15).
+- [Graph] Plot $\theta=-U/(2Mr)$ along a slice $V=1$ against $U\in[-2,0.9]$ (using $r(UV)$ from Eq. 5.8), showing the sign change at $U=0$.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.1.8 Distinction between event and apparent horizons -  Vaidya spacetime.md
+priority: medium
+graph: yes
+manim: yes
+summary: Correct and well argued (I re-derived $\kappa=2m/r^2$, $k^\alpha{}_{;\alpha}=2(r-m)/r^2$ and $g^{\alpha\beta}\Phi_{,\alpha}\Phi_{,\beta}=-4\,\mathrm dm/\mathrm dv$), but the teleological point would land better with an explicit example.
+- [Simplify] Give $k^\alpha=(k^v,k^r)=(2,f)$ explicitly and show that $k_\alpha k^\alpha=0$; readers can then check $\kappa=f_{,r}=2m/r^2$ and the divergence themselves.
+- [Example] Work a concrete linear accretion $m(v)=m_1+(m_2-m_1)(v-v_1)/(v_2-v_1)$, integrate the outgoing null equation $\mathrm dr/\mathrm dv=f/2$ backward from $r=2m_2$ at $v_2$, and show that the event horizon starts growing before $v_1$ (see Problem 2 in [[5.7 Problems]]).
+- [Graph] For $m_1=1$, $m_2=1.5$, $v_1=0$, $v_2=5$: plot the apparent horizon $r=2m(v)$ and the numerically integrated event horizon $r(v)$ on axes $v\in[-10,15]$, $r\in[1.5,3.5]$.
+- [Manim] Animate the shell of null dust falling in while the event horizon (already growing in anticipation) and the apparent horizon (jumping only when the dust arrives) evolve over $v$, to show the teleological behaviour.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.1.9 Killing horizon.md
+priority: medium
+graph: no
+manim: no
+summary: Very short note whose only equation has the wrong sign.
+- [Correctness] "$g_{\alpha\beta}t^\alpha t^\beta=1-\frac{2M}{r}$" has the wrong sign: $g_{\alpha\beta}t^\alpha t^\beta=g_{tt}=-(1-2M/r)$, negative (timelike) outside and positive (spacelike) inside, as the preceding sentence says.
+- [Intuition] Add that a Killing vector generates a symmetry flow, and that on a Killing horizon this flow moves points along the null generators. Link to [[5.1.10 Bifurcation two-sphere]], where it is shown that $t^\alpha$ is tangent to the generators.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.2 Reissner-Nordström black hole.md
+priority: low
+graph: no
+manim: no
+summary: Hub note with correct links to the four subsections.
+- [Structure] No change needed apart from removing the UTF-8 BOM.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.2.1 Derivation of the Reissner-Nordström solution.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and compact derivation ($m'=Q^2/2r^2$ follows from Eq. 5.20 and Eq. 5.4), with the stress-tensor algebra left to the reader.
+- [Simplify] Show the "few steps of algebra" for Eq. (5.20): with $F^{tr}=Q/r^2$, $F^{\mu\nu}F_{\mu\nu}=-2Q^2/r^4$, so $T^t{}_t=T^r{}_r=\frac{1}{4\pi}(-\frac{Q^2}{r^4}+\frac{Q^2}{2r^4})=-\frac{Q^2}{8\pi r^4}$.
+- [Links] Link "Eq. (5.2)" and "Eqs. (5.4)" to [[5.1.1 Birkhoff's theorem]], and "Stokes’ theorem (Section 3.5.3)" and "Section 4.3" to the corresponding notes.
+- [Graph] Plot $m(r)/M=1-Q^2/(2Mr)$ and $f(r)$ against $r/M\in[0.2,5]$ for $Q/M=0.8$, marking $r_\pm$ and the radius $Q^2/2M$ where $m$ turns negative.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.2.2 Kruskal coordinates.md
+priority: medium
+graph: yes
+manim: no
+summary: The outer-patch construction is correct, but the inner-patch Kruskal definitions are inconsistent in sign, and the physical-quantity table omits the Kruskal coordinates.
+- [Correctness] With Eq. (5.26) as written ($U_-=\mp e^{\kappa_-u}$, $V_-=e^{-\kappa_-v}$), $U_-V_-=-\kappa_-(r-r_-)$, so $f\simeq+2U_-V_-$ and $\mathrm ds^2\simeq+\frac{2}{\kappa_-^2}\mathrm dU_-\mathrm dV_-$, not "$f\simeq-2U_-V_-$" and "$-\frac{2}{\kappa_-^2}$". Fix the sign convention, for example $V_-=-e^{-\kappa_-v}$, after checking the source.
+- [Structure] Typo: "the outer horizon in an event horizon" should read "is an event horizon". Add $U_\pm,V_\pm$ (dimensionless) to the physical-quantity table and wrap them in the same macro as the other coordinates.
+- [Simplify] Show the check "$f\simeq-2U_+V_+$": $U_+V_+=\mp e^{2\kappa_+r^*}=-\kappa_+(r-r_+)$ near $r_+$.
+- [Graph] Plot $f(r)=1-2/r+q^2/r^2$ (with $M=1$) for $q=0,0.6,0.9,1$ on $r\in[0.2,4]$, showing the two roots merging in the extreme case and $\kappa_\pm=\frac12|f'(r_\pm)|$ as the slopes there.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.2.3 Radial observers in Reissner-Nordström spacetime.md
+priority: low
+graph: yes
+manim: yes
+summary: Clear and correct (Eqs. 5.28–5.32 and their $f\to0$ limits re-derived); the potential diagram and the patch figure support the argument well.
+- [Example] Give a numeric case: $M=1$, $Q=0.8$, $\tilde E=1$ gives $r_\pm=1.6,0.4$ and $r_{\min}=Q^2/2M=0.32$ (from $f=1$). Point out that $r_{\min}$ coincides with the radius where $m(r)=0$, which ties the turning point to the negative-mass argument.
+- [Simplify] Prove the closing claim "this always occurs within the inner horizon" in one line: $r_-=Q^2/r_+>Q^2/2M$ because $r_+<2M$.
+- [Manim] Animate the observer on the Penrose diagram of Fig. 5.9 together with the potential of Fig. 5.10: a dot falling through $r_+$ and $r_-$, bouncing at $r_{\min}$ and leaving through a new $r_-$ and $r_+$ into the next universe.
+- [Graph] Plot $\dot r^2=\tilde E^2-f(r)$ against $r$ for $\tilde E=1$ and $Q/M=0.8$ to make the forbidden region $r<r_{\min}$ explicit.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.2.4 Surface gravity.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and well motivated (Eqs. 5.34, 5.37–5.43 re-derived, including the Frobenius contraction signs), and the redshift argument gives good intuition.
+- [Simplify] In the Frobenius step, show that $t^{\alpha;\beta}t_\alpha=-\kappa t^\beta$ (Killing antisymmetry). This is the only non-obvious sign in the chain to $-2\kappa^2t_\gamma$.
+- [Graph] For $Q/M=0,0.6,0.9$, plot the local acceleration $a(r)=\frac12f^{-1/2}f'$ and the redshifted $a_\infty(r)=\frac12f'$ against $r/M$ from $r_+$ to $6$, showing $a$ diverging while $a_\infty\to\kappa$.
+- [Links] Link "Section 5.1.9" to [[5.1.9 Killing horizon]] and "Section 5.2.2" to [[5.2.2 Kruskal coordinates]].
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.3 Kerr black hole.md
+priority: low
+graph: no
+manim: no
+summary: Hub note with correct links to all thirteen subsections.
+- [Structure] No change needed apart from removing the UTF-8 BOM.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.3.1 The Kerr metric.md
+priority: low
+graph: yes
+manim: no
+summary: Correct reference note (metric, inverse, and the Kretschmann scalar 5.47 verified) that would benefit from limiting cases.
+- [Intuition] Add the limits: $a=0$ recovers Schwarzschild, and $M=0$ gives flat space in oblate spheroidal coordinates. Note that for $r\gg M$, the $g_{t\phi}$ term reduces to the Lense–Thirring term $-4J\sin^2\theta/r\,\mathrm dt\,\mathrm d\phi$.
+- [Simplify] Say explicitly where $\rho^2=0$ is: $r=0$ and $\theta=\pi/2$, which is a ring rather than a point. Link to [[5.3.8 The nature of the singularity]].
+- [Graph] Plot $M^4R_{\alpha\beta\gamma\delta}R^{\alpha\beta\gamma\delta}$ from Eq. (5.47) for $a/M=0.9$ against $r/M\in[0.05,3]$ at $\theta=\pi/2$ and $\theta=0$, showing the divergence only in the equatorial plane at $r\to0$.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.3.10 Surface gravity.md
+priority: low
+graph: yes
+manim: no
+summary: Correct result (Eq. 5.80 verified using $1-a\Omega_H\sin^2\theta=\rho^2/(r_+^2+a^2)$), but it does not say which coordinates the covector $\xi_\alpha\propto\partial_\alpha r$ is written in, and one cross-reference points to the wrong note.
+- [Links] "We shall return to this remarkable property in Section 5.5.1": in this vault the uniformity of $\kappa$ is proved in [[5.5.2 Zeroth law]], not [[5.5.1 Preliminaries]].
+- [Simplify] State that $\xi_\alpha=(1-a\Omega_H\sin^2\theta)\partial_\alpha r$ holds in the ingoing coordinates $(v,r,\theta,\psi)$ of Eq. (5.65); in Boyer–Lindquist coordinates $\xi_\alpha$ vanishes at $\Delta=0$. Also add the identity $1-a\Omega_H\sin^2\theta=\rho^2/(r_+^2+a^2)$, which makes the $\theta$-independence visible.
+- [Graph] Plot $M\kappa$ against $a/M\in[0,1]$, falling from $1/4$ to 0, alongside $M\Omega_H$ rising to $1/2$.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.3.11 Bifurcation two-sphere.md
+priority: low
+graph: no
+manim: no
+summary: Correct and concise; the relation to the old $k^\alpha$ is stated without explaining why it is finite on the horizon.
+- [Simplify] In the bracketed remark, note that $k^\alpha_{\mathrm{old}}$ from Eq. (5.60) has components proportional to $1/\Delta$, so $\Delta k^\alpha_{\mathrm{old}}$ stays finite at $r_+$; otherwise "evaluated on the horizon" reads as zero.
+- [Links] Link "Eq. (5.78)" to [[5.3.10 Surface gravity]], "Section 5.3.6" to [[5.3.6 Principal null congruences]], and add a pointer to the Schwarzschild case [[5.1.10 Bifurcation two-sphere]].
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.3.12 Smarr's formula.md
+priority: low
+graph: no
+manim: no
+summary: Correct (Smarr's formula verified symbolically via $r_+^2+a^2=2Mr_+$), but it skips the algebra and has one wrong cross-reference.
+- [Links] "We will generalize Smarr’s formula ... in Section 5.5.2": in this vault the generalization is [[5.5.3 Generalized Smarr formula]]; [[5.5.2 Zeroth law]] is the wrong target.
+- [Simplify] Show the three-line check: $2\Omega_HJ=2Ma^2/(r_+^2+a^2)=a^2/r_+$ and $\kappa A/4\pi=r_+-M$, so the sum is $(a^2+r_+^2)/r_+-M=2M-M=M$.
+- [Intuition] Add a scaling remark: $M$ has degree 1 and $A$, $J$ have degree 2, so Euler's theorem for homogeneous functions gives $M=2\Omega_HJ+2\frac{\kappa}{8\pi}A$ directly from the variation law.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.3.13 Variation law.md
+priority: low
+graph: no
+manim: no
+summary: Correct derivation outline, but the final substitution is left to the reader, the sign claim is slightly overstated, and one cross-reference is wrong.
+- [Links] "to which we shall return in Section 5.5.4": the second law is [[5.5.5 Second law]] in this vault; [[5.5.4 First law]] is the wrong target.
+- [Simplify] Write out the collection step: $\frac{\delta A}{8\pi}=\frac{r_+(r_+\delta M-a\delta a)}{r_+-M}+a\delta a=\frac{r_+^2\delta M-Ma\delta a}{r_+-M}$, then use $M\delta a=\delta J-a\delta M$ and $r_+^2+a^2=2Mr_+$ to reach Eq. (5.85).
+- [Simplify] [[5.3.5 The Penrose process]] gives $\delta M-\Omega_H\delta J>0$ only for particles that cross the horizon along timelike worldlines; for null particles it is $\ge0$. "Always increases" should therefore read "never decreases".
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.3.2 Dragging of inertial frames -  ZAMOs.md
+priority: low
+graph: yes
+manim: yes
+summary: Short, correct note ($\omega\simeq2J/r^3$ checks out) that would gain from a picture of how $\omega$ grows toward the horizon.
+- [Graph] Plot $M\omega=2M^2ar/\Sigma$ in the equatorial plane against $r/M$ from $r_+$ to 10 for $a/M=0.5,0.9,0.998$, with the far-field curve $2J/r^3$ overlaid.
+- [Manim] Show a ring of ZAMOs at several radii in the equatorial plane, each moving at $\omega(r)$, with the inner rings visibly whirling faster in the hole's sense of rotation.
+- [Links] Link "Section 3.10" (frame dragging) to its note in Chapter 3.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.3.3 Static limit -  static observers.md
+priority: low
+graph: no
+manim: no
+summary: Clear and correct (Eq. 5.50 follows from $g_{tt}=0$), with a good figure of the ergosphere.
+- [Simplify] Show the step $g_{tt}=-(1-2Mr/\rho^2)=0\Rightarrow r^2-2Mr+a^2\cos^2\theta=0$, and note that $r_{\mathrm{sl}}=2M$ at the equator and $r_{\mathrm{sl}}=r_+$ at the poles.
+- [Intuition] Add the "faster than light" analogy: inside $r_{\mathrm{sl}}$, staying at fixed $\phi$ would require moving against the frame-dragging flow faster than light.
+- [Structure] State in the figure caption which value of $a/M$ Fig. 5.12 uses.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.3.4 Event horizon -  stationary observers.md
+priority: medium
+graph: yes
+manim: no
+summary: Generally clear derivation of the allowed angular velocities and the horizon, but it contains a wrong definition of $\omega$.
+- [Correctness] "where $\omega=-g_{t\phi}/g_{tt}$" is wrong; the frame-dragging rate is $\omega=-g_{t\phi}/g_{\phi\phi}$ (Eq. 5.45). Only this form makes the last line of the $\gamma^{-2}$ derivation correct.
+- [Simplify] Show the reduction to Eq. (5.53): $\omega^2-g_{tt}/g_{\phi\phi}=\rho^2\Delta/(\Sigma g_{\phi\phi})=\rho^4\Delta/(\Sigma^2\sin^2\theta)$.
+- [Graph] For $a/M=0.9$, $\theta=\pi/2$: plot $M\Omega_+$, $M\Omega_-$ and $M\omega$ against $r/M\in[r_+,6]$, showing $\Omega_-$ crossing zero at $r_{\mathrm{sl}}=2M$ and all three meeting at $\Omega_H$ at $r_+$.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.3.5 The Penrose process.md
+priority: low
+graph: no
+manim: yes
+summary: Clear qualitative explanation that is correct; the scenario would benefit from numbers and a visual.
+- [Example] Add the maximal extractable energy: $M-M_{\mathrm{irr}}$, with $M_{\mathrm{irr}}=\sqrt{A/16\pi}$, which is about 29% of $M$ for $a=M$. This makes "self-limiting" quantitative.
+- [Manim] Animate a particle entering the ergosphere (top view with $r_+$ and $r_{\mathrm{sl}}$ circles), splitting into a negative-energy fragment that falls through $r_+$ and a positive-energy fragment that escapes. Show the hole's $J$ and $M$ counters decreasing.
+- [Links] Link "static limit" and "ergosphere" to [[5.3.3 Static limit -  static observers]] and the final inequality to [[5.3.13 Variation law]].
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.3.6 Principal null congruences.md
+priority: low
+graph: no
+manim: no
+summary: Correct (the choices making $\Theta=0$, $P=\tilde E\rho^2$, Eqs. 5.62–5.63 and the ingoing metric 5.65 all verified), but it does not explain why these choices are made.
+- [Intuition] Explain the choice $\tilde L=a\tilde E\sin^2\theta$: it is the unique choice that keeps $\theta$ constant and makes $R$ a perfect square. These rays are the Kerr analogue of purely radial light rays.
+- [Simplify] Add $r^\sharp$, $P$, $R$ and $\Theta$ to the physical-quantity table, and wrap $r^\sharp$ in the same macro as $r^*$.
+- [Links] Link "Section 5.7, Problem 4" to [[5.7 Problems]] and "Section 5.3.9" to [[5.3.9 Maximal extension of the Kerr spacetime]].
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.3.7 Kerr-Schild coordinates.md
+priority: low
+graph: yes
+manim: no
+summary: Correct (I verified the split of Eq. 5.65, $-l_\alpha$ in Eq. 5.70 and the quartic 5.71), and the presentation is clear.
+- [Simplify] Show how Eq. (5.70) follows: $\sin\theta\,e^{i\psi}=(x+iy)(r-ia)/(r^2+a^2)$, so the real and imaginary parts give the $\mathrm dx$ and $\mathrm dy$ coefficients.
+- [Graph] Plot surfaces of constant $r$ in the $x$–$z$ plane ($y=0$) for $a=1$: the ellipses $x^2/(r^2+a^2)+z^2/r^2=1$ for $r=0.25,0.5,1,2$, which degenerate to the disk $r=0$ bounded by the ring $x^2+y^2=a^2$.
+- [Links] Link "Section 5.7, Problem 5" to [[5.7 Problems]] and "Eq. (5.65)" to [[5.3.6 Principal null congruences]].

@@ -1,0 +1,616 @@
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/10 Commutators and Operator Algebra/99 Exercises/06 Exercise 6.md
+priority: low
+graph: no
+manim: no
+summary: Correct and logically complete, separating the exclusion of noninteger eigenvalues from the existence of every integer, but the closing truncated-ladder paragraph is dense.
+- [Simplify] In part (c), derive the norm product $\|\hat a^r|\lambda\rangle\|^2=\lambda(\lambda-1)\cdots(\lambda-r+1)$ explicitly for $r=2$ (using $\hat a^\dagger\hat a\,\hat a|\lambda\rangle=(\lambda-1)\hat a|\lambda\rangle$) instead of only saying it "follows by applying the same norm identity".
+- [Example] Make the noninteger contradiction concrete: for $\lambda=2.5$, three lowerings give norm factors $2.5\cdot1.5\cdot0.5>0$ and an eigenvalue $-0.5$, contradicting $\langle\hat N\rangle\ge0$.
+- [Simplify] Rewrite the final "finite ladder truncated at a highest state" paragraph with the explicit trace argument: $\operatorname{tr}[\hat a,\hat a^\dagger]=0\neq\operatorname{tr}\hat I=d$, so no $d\times d$ matrices satisfy the identity commutator.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/10 Commutators and Operator Algebra/99 Exercises/07 Exercise 7.md
+priority: low
+graph: yes
+manim: yes
+summary: A correct and well-ordered solution in which every moment is computed explicitly, with only a few unsupported intermediate claims.
+- [Structure] In part (a), the sentence "Acting on the vacuum also gives $\hat a|n\rangle=\sqrt n|n-1\rangle$" is asserted without the step; show it by applying the commutator to $|n\rangle=(\hat a^\dagger)^n|0\rangle/\sqrt{n!}$ and using $\hat a|0\rangle=0$, since part (c) depends on it.
+- [Intuition] Add the time evolution $|\alpha\rangle\to|\alpha e^{-i\omega t}\rangle$ (up to a phase) and state that $\langle\hat x\rangle$ then oscillates like a classical oscillator with constant widths; this justifies the "most classical" remark in the note callout.
+- [Graph] Plot the Poisson photon-number distribution $P(n)=e^{-|\alpha|^2}|\alpha|^{2n}/n!$ as bars for $|\alpha|^2=1,4,10$, $n=0$ to $20$, showing mean $|\alpha|^2$ and spread $|\alpha|$.
+- [Manim] Animate the coherent-state Gaussian density $|\psi_\alpha(x,t)|^2$ sliding back and forth in the harmonic potential with fixed width, next to a point circling in the $(\langle x\rangle,\langle p\rangle)$ phase plane with a constant uncertainty disk.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/10 Commutators and Operator Algebra/99 Exercises/08 Exercise 8.md
+priority: low
+graph: no
+manim: no
+summary: Correct, with a clearly justified sign correction and a direct position-space check; the final paragraph on active versus passive interpretation is dense.
+- [Simplify] Turn the last paragraph into a two-line display: $\langle e^{ik\hat x}\psi|\hat p|e^{ik\hat x}\psi\rangle=\langle\psi|e^{-ik\hat x}\hat p\,e^{ik\hat x}|\psi\rangle=\langle\hat p\rangle+\hbar k$, which shows directly why the minus sign in part (c) and the momentum kick of $+\hbar k$ are compatible.
+- [Example] Add a concrete case: a real Gaussian with $\langle\hat p\rangle=0$ multiplied by $e^{ikx}$ has mean momentum $\hbar k$, which links the identity to a Galilean boost.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/11 Unitary Operators/00 Unitary Operators.md
+priority: low
+graph: no
+manim: no
+summary: A clear chapter hub with a sensible reading order and working section links.
+- [Structure] No change needed apart from optionally naming which exercises are meant by "phase evolution and precession" (Exercises 3 and 4) and "the antiunitary challenge" (Exercise 7), with links.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/11 Unitary Operators/01 Unitary Operators.md
+priority: medium
+graph: no
+manim: no
+summary: Correct, but the note opens with the infinite-dimensional shift counterexample and domain remarks before the definition has been stated, which makes the entry difficult.
+- [Structure] Move the two opening paragraphs (unilateral shift, domains of conjugated observables) after Definition 11.1 and the property list, so the reader meets $\hat U^\dagger\hat U=\hat U\hat U^\dagger=\hat I$ first.
+- [Simplify] Properties 2 and 3 have no proofs while 1 and 4 do; add the one-line proofs $\langle\hat U\phi|\hat U\psi\rangle=\langle\phi|\hat U^\dagger\hat U|\psi\rangle$ and $(\hat U\hat A\hat U^\dagger)\hat U|a\rangle=\hat U\hat A|a\rangle$.
+- [Example] Add a concrete $2\times2$ example such as a real rotation matrix or $\sigma_x$, checking $U^\dagger U=I$ and showing its eigenvalues lie on the unit circle.
+- [Example] Write the shift counterexample with explicit products: $S^\dagger S=I$ but $SS^\dagger=I-|e_0\rangle\langle e_0|$, which makes "proper projector" concrete.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/11 Unitary Operators/02 Hermitian and Unitary Operators.md
+priority: low
+graph: no
+manim: yes
+summary: Correct, with two methods for the Pauli exponential and a careful sign convention, but the opening paragraphs refer to "the theorem" and "the Pauli examples" before they appear.
+- [Structure] Move the three opening paragraphs (derivative at zero, group assumption in the converse, half-angle remark) after Theorem 11.1 or into the relevant examples; as written they anticipate content the reader has not seen.
+- [Simplify] Display the converse argument briefly: from $\hat U^\dagger(\theta)\hat U(\theta)=\hat I$ differentiate at $\theta=0$ to get $\hat U'(0)^\dagger+\hat U'(0)=0$, so $\hat G=-i\hat U'(0)$ is Hermitian.
+- [Manim] Animate a Bloch vector under $e^{-i\theta\sigma_x/2}$ for $\theta$ from $0$ to $4\pi$, with a side counter showing the spinor sign (+ at $0$, $-$ at $2\pi$, + at $4\pi$), to make the $2\pi$ sign change versus the $4\pi$ return visible.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/11 Unitary Operators/03 Spatial Translations and Momentum.md
+priority: low
+graph: yes
+manim: yes
+summary: Correct and careful about full-line and symmetry assumptions, though the generator-to-translation link is shown only as a formal Taylor series.
+- [Structure] The opening paragraphs discuss the "shifted argument" and "full-line assumption" before $\hat T(a)$ is defined; move the operator definition to the top.
+- [Intuition] Add the infinitesimal form $\hat T(\delta a)\approx\hat I-i\,\delta a\,\hat p/\hbar$ and show that it gives $\psi(x)-\delta a\,\psi'(x)$, which motivates calling $\hat p$ the generator before the full series.
+- [Graph] Plot a Gaussian $\psi(x)=e^{-x^2}$ and its translate $e^{-(x-a)^2}$ for $a=1.5$ on $x\in[-3,4]$, to show that the argument $x-a$ moves the peak right.
+- [Manim] Optionally animate Taylor partial sums $\sum_{n\le N}(-a)^n\psi^{(n)}/n!$ for $N=0,1,2,4,8$ converging to the shifted Gaussian.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/11 Unitary Operators/04 Time Evolution.md
+priority: medium
+graph: yes
+manim: yes
+summary: Correct results and a correct resonant Rabi figure, but the off-resonant transition probability is stated without derivation, and the opening paragraphs discuss limits of formulas not yet shown.
+- [Structure] Move the opening paragraphs on detuning limits and the rotating-frame caveat into or after the Rabi example; at the top they refer to quantities the reader has not met.
+- [Simplify] Derive the Rabi formula instead of asserting it: with mixing angle $\tan\vartheta=\Omega/\omega_0$, $c_+=\cos(\vartheta/2)$, $c_-=-\sin(\vartheta/2)$ (or an equivalent phase choice), giving $P=\sin^2\vartheta\,\sin^2(\omega_Rt/2)$ with $\sin^2\vartheta=\Omega^2/\omega_R^2$.
+- [Links] "Diagonalize as in Chapter 7, Exercise 4" is plain text, and that exercise treats equal diagonal entries $E_0$; link it and note that the detuned case has diagonal entries $\pm\hbar\omega_0/2$ and needs the general $2\times2$ formula.
+- [Graph] Add a second panel with $P(\uparrow\to\downarrow)$ for $\omega_0/\Omega=0,1,2$ on $\Omega t\in[0,4\pi]$, showing the reduced amplitude $\Omega^2/\omega_R^2$ and the faster oscillation off resonance.
+- [Manim] Animate the Bloch vector precessing about the tilted axis $(\Omega,0,\omega_0)/\omega_R$ for zero and nonzero detuning, showing full versus partial transfer to the south pole.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/11 Unitary Operators/05 Symmetries and Conservation Laws.md
+priority: low
+graph: no
+manim: no
+summary: Correct and appropriately cautious, but the differentiation step from group invariance to $[\hat H,\hat G]=0$ is only described in words.
+- [Simplify] Display the derivation: $\frac{d}{d\theta}[\hat H,e^{i\theta\hat G}]\big|_{\theta=0}=i[\hat H,\hat G]=0$, then $d\langle\hat G\rangle/dt=(i/\hbar)\langle[\hat H,\hat G]\rangle=0$.
+- [Example] Add one worked case, e.g. a central potential $\hat H=\hat p^2/2m+V(r)$ commuting with $\hat L_z$, contrasted with a uniform field along $x$ that breaks $\hat L_z$ conservation.
+- [Structure] The table's "Time translation" row lists $\hat U(t)$ as a symmetry whose generator is conserved; add that this conservation is automatic ($[\hat H,\hat H]=0$) for a time-independent Hamiltonian, so readers do not look for a further condition.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/11 Unitary Operators/06 Common Errors.md
+priority: low
+graph: no
+manim: no
+summary: A correct and useful list of errors, though the BCH warning lacks a concrete failing example.
+- [Example] Under Error 1, add a $2\times2$ check: $e^{s\sigma_x}e^{s\sigma_z}\neq e^{s(\sigma_x+\sigma_z)}$, showing the second-order term $\tfrac{s^2}{2}[\sigma_x,\sigma_z]=-is^2\sigma_y$ explicitly.
+- [Example] Under Error 2, give a numeric relative-phase case: $(|\uparrow\rangle+e^{i\phi}|\downarrow\rangle)/\sqrt2$ has $\langle\sigma_x\rangle=\cos\phi$, which changes, while the global-phase version does not.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/11 Unitary Operators/07 Chapter Summary.md
+priority: low
+graph: no
+manim: no
+summary: A correct and compact summary; the opening reconstruction paragraphs are useful but slightly abstract.
+- [Structure] No change needed; optionally add the Rabi formula and the antiunitary time-reversal boundary from Exercise 7 to the bullet list, since both are chapter results.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/11 Unitary Operators/08 Exercises.md
+priority: low
+graph: no
+manim: no
+summary: A working exercise index with useful method guidance; links resolve.
+- [Structure] No change needed.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/11 Unitary Operators/99 Exercises/01 Exercise 1.md
+priority: low
+graph: no
+manim: no
+summary: Correct calculation of $e^{i\theta\sigma_y/2}$ and its half-turn action, with good sign checks.
+- [Example] The superposition remark is only verbal; display $\tfrac1{\sqrt2}(|\uparrow\rangle+|\downarrow\rangle)\mapsto\tfrac1{\sqrt2}(|\uparrow\rangle-|\downarrow\rangle)$ at $\theta=\pi$, i.e. $|+x\rangle\to|-x\rangle$.
+- [Intuition] Note that $e^{i\theta\sigma_y/2}$ is a real rotation matrix by $-\theta/2$ in the component plane, which is why the half-angle and the full-turn minus sign appear.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/11 Unitary Operators/99 Exercises/02 Exercise 2.md
+priority: low
+graph: no
+manim: no
+summary: A correct and clear proof of the translation group law with an appropriate symmetry caveat.
+- [Links] No change needed; optionally link Exercise 8 to contrast the commuting translations with noncommuting spin rotations, since the note already mentions the Abelian group.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/11 Unitary Operators/99 Exercises/03 Exercise 3.md
+priority: low
+graph: yes
+manim: no
+summary: Correct; the extra projection-probability check $1/2+(\sqrt3/4)\cos(\omega t)$ is a good illustration of what still evolves.
+- [Simplify] Display the computation of the test-ket probability, $\tfrac12\left|\tfrac{\sqrt3}2e^{-i\omega t}+\tfrac12e^{-2i\omega t}\right|^2$, instead of describing it in words.
+- [Graph] Plot $P(E_1)=3/4$, $P(E_2)=1/4$ and $P_+(t)=1/2+(\sqrt3/4)\cos(\omega t)$ over $\omega t\in[0,4\pi]$, showing constant energy populations next to an oscillating probability.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/11 Unitary Operators/99 Exercises/04 Exercise 4.md
+priority: low
+graph: no
+manim: yes
+summary: Correct, with explicit Pauli means and an Ehrenfest sign check of the precession direction.
+- [Manim] Animate the Bloch vector starting on $+x$ and rotating on the equator toward $+y$ for $\omega_0>0$, with a counter showing the spinor sign flip after one period $2\pi/\omega_0$ and the return after two.
+- [Simplify] Shorten the last paragraph on the magnetic-coupling sign to one sentence, e.g. $\omega_0=-\gamma B$ fixes the direction for a given gyromagnetic ratio.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/11 Unitary Operators/99 Exercises/05 Exercise 5.md
+priority: low
+graph: no
+manim: no
+summary: A correct and concise proof with clear statements of the assumptions.
+- [Example] Add a concrete check: $\hat A=\hat p$ with the free Hamiltonian $\hat p^2/2m$ conserves $\langle\hat p\rangle$, while $\hat A=\hat x$ does not, since $d\langle\hat x\rangle/dt=\langle\hat p\rangle/m$.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/11 Unitary Operators/99 Exercises/06 Exercise 6.md
+priority: low
+graph: yes
+manim: yes
+summary: Correct, and it usefully distinguishes the imposed rigid translation from free spreading, though the later paragraphs repeat the same point several times.
+- [Simplify] Merge the last three paragraphs (dispersion relation, boundary checks, spectrum unbounded below) into one short "Rigid translation versus free motion" comparison.
+- [Graph] Plot $\sigma(t)/\sigma$ for the rigid translation (constant $1$) and the free-particle width $\sqrt{1+\tau^2}$ against $\tau=\hbar t/(2m\sigma^2)\in[0,3]$.
+- [Manim] Animate the density $|\psi(x,t)|^2$ under $\hat H=v\hat p$ (rigid slide) and under free evolution of a boosted packet (sliding and spreading) side by side.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/11 Unitary Operators/99 Exercises/07 Exercise 7.md
+priority: low
+graph: no
+manim: no
+summary: A correct and rigorous treatment of antiunitarity, $\hat T^2=-\hat I$ and Kramers degeneracy, with good boundary examples, but long for its scope.
+- [Simplify] In part (b), show the intermediate function explicitly: $g=\hat p\hat T^{-1}f=-i\hbar\partial_x f^*(x,-t)$, then $\hat Tg=g^*(x,-t)=+i\hbar\partial_x f(x,t)$; the current first line hides this step.
+- [Structure] Move the two boundary examples (real diagonal Hamiltonian, z-split spin) into a short callout so the main Kramers proof stays compact.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/11 Unitary Operators/99 Exercises/08 Exercise 8.md
+priority: low
+graph: no
+manim: no
+summary: A correct explicit verification of the SU(2) algebra, ladder matrices and $\hat J^2$, with a good remark on transverse variances.
+- [Example] Make the transverse-variance remark explicit: in $|\uparrow\rangle$, $(\Delta J_x)^2=(\Delta J_y)^2=\hbar^2/4$, so $\hbar^2/4+\hbar^2/4+\hbar^2/4=3\hbar^2/4$.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/04 Frequencies and Transformations/12 Fourier Series/00 Fourier Series.md
+priority: low
+graph: no
+manim: no
+summary: Clear chapter hub with good historical motivation and a sensible reading order; links resolve.
+- [Intuition] In "Why modes are useful", answer the posed check explicitly in one sentence (a constant needs one complex mode $n=0$ but infinitely many odd sine modes on $[0,L]$, coefficients $\propto1/n$) so the reader sees why the boundary conditions matter.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/04 Frequencies and Transformations/12 Fourier Series/01 The Complex Form.md
+priority: medium
+graph: yes
+manim: yes
+summary: Correct and compact, but the projection derivation is described in words only and the note jumps quickly to $L^2$ subtleties without a concrete picture.
+- [Simplify] Write out the orthogonality step as an equation, $\int_{-L}^{L}e^{i(n-m)\pi x/L}dx=2L\delta_{nm}$, and link [[03 Exercise 3]] where it is proved, instead of describing "the surviving integral is $2L$" only in prose.
+- [Example] Add a two-line worked example, e.g. $f(x)=\cos(\pi x/L)$ giving $c_{\pm1}=1/2$ and all others zero, to show that a real cosine needs a pair of opposite harmonics.
+- [Graph] Plot the real and imaginary parts of $e^{in\pi x/L}$ for $n=1,2,3$ on $[-L,L]$ (take $L=1$) to show that each mode completes exactly $n$ cycles per period, which is the origin of orthogonality.
+- [Manim] Animate a rotating phasor $e^{in\pi x/L}$ as $x$ sweeps one period for $n=1,2,3$ next to its real-part trace, showing integer winding numbers.
+- [Links] The sentence about orthogonal projection could link the Hilbert-space note [[03 Orthonormal Bases]] (Chapter 8), where projection and norm convergence are developed.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/04 Frequencies and Transformations/12 Fourier Series/02 The Real Form.md
+priority: low
+graph: no
+manim: no
+summary: Correct and clear; the conversion rules and the $a_0/2$ check are well explained.
+- [Simplify] Show the one-line derivation $a_n=c_n+c_{-n}$, $b_n=i(c_n-c_{-n})$ from Euler's formula before stating the conversion rules, so the pairing argument is visible rather than asserted.
+- [Example] Under "Symmetry and coefficient calculations", add a non-symmetric example (e.g. a shifted step) to show that general functions need both $a_n$ and $b_n$ (even part gives cosines, odd part gives sines).
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/04 Frequencies and Transformations/12 Fourier Series/03 Examples of Fourier Series.md
+priority: medium
+graph: yes
+manim: no
+summary: All three derivations and the Basel and alternating checks are correct, but the note has no figure of the partial sums that would make the $1/n$ versus $1/n^2$ decay difference visible.
+- [Graph] Plot $x$ and its partial sums $2\sum_{n=1}^{N}(-1)^{n+1}\sin(nx)/n$ for $N=3,10$ on $[-3\pi,3\pi]$ to show the sawtooth periodic extension and the jumps at odd multiples of $\pi$.
+- [Graph] Plot $x^2$ and the partial sums $\pi^2/3+4\sum_{n=1}^{N}(-1)^n\cos(nx)/n^2$ for $N=1,3$ on $[-3\pi,3\pi]$; the close fit at $N=3$ illustrates the faster $1/n^2$ convergence claimed in the introduction.
+- [Graph] A log-log plot of $|b_n|$ for $x$ and $|a_n|$ for $x^2$ versus $n=1..50$ would show the slopes $-1$ and $-2$ predicted by the endpoint test.
+- [Structure] The $x$ example applies the real-form Parseval relation before it is introduced in [[05 Parseval's Relation]] (and its real form only appears in Common Errors); state $\tfrac1\pi\int|f|^2=a_0^2/2+\sum(a_n^2+b_n^2)$ here and link it.
+- [Simplify] Replace "dated 1734 in the source" with a plain historical statement (Euler, solved 1734, published 1735) and drop the source meta-commentary.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/04 Frequencies and Transformations/12 Fourier Series/04 Convergence and the Gibbs Phenomenon.md
+priority: medium
+graph: no
+manim: yes
+summary: Mathematically correct with a good existing Gibbs figure, but the norm-versus-pointwise discussion is dense and the note contains source-editing commentary that distracts from the physics.
+- [Structure] Rewrite the "[!note]" about the source legend and caption as plain content (N is the highest harmonic, $N=5$ has three terms, $N=25$ thirteen, and the overshoot is $\approx0.179$ above 1, i.e. $\approx8.95\%$ of the jump 2) without referring to "the source".
+- [Simplify] The sentence "Convergence to $f$ at a specified point depends on its assigned value; the Fourier coefficients and their series limit do not" is hard to parse; let the concrete $f(0)=7$ example that follows carry the point.
+- [Intuition] State the limiting value explicitly: the first peak of the partial sums tends to $\tfrac2\pi\operatorname{Si}(\pi)\approx1.179$ and sits at $x=\pi/(N+1)$ for highest harmonic $N$; link [[08 Exercise 8]] where this is derived.
+- [Manim] Animate the sign-function partial sums as odd harmonics are added one at a time (up to $N\approx49$), keeping a fixed overshoot marker while the peak slides toward $x=0$; the motion shows persistent height and shrinking width better than two static curves.
+- [Links] The final paragraph on finite kinetic energy could link the box-state section of [[12 Fourier Series/06 Common Errors|Common errors]], where the condition $\sum n^2|c_n|^2<\infty$ is stated.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/04 Frequencies and Transformations/12 Fourier Series/05 Parseval's Relation.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and well normalized, with a useful best-approximation remark; it lacks a worked numerical example.
+- [Links] Turn "the Parseval identity from Chapter 8" into a wiki link to [[03 Orthonormal Bases]] in the Hilbert Space chapter, where the identity and its finite-sum proof appear.
+- [Example] Add the sign-function example: $\tfrac1{2\pi}\int_{-\pi}^{\pi}|\operatorname{sgn}|^2dx=1=\sum|c_n|^2$ with $|c_{\pm n}|=2/(n\pi)$ for odd $n$ gives $\sum_{\text{odd}}1/n^2=\pi^2/8$.
+- [Graph] Plot the relative mean-square error $1-\tfrac{8}{\pi^2}\sum_{k=0}^{K}(2k+1)^{-2}$ of the sign-function series versus $K=0..30$ (log y-axis) to visualize the finite identity and the slow $1/K$ decay.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/04 Frequencies and Transformations/12 Fourier Series/06 Common Errors.md
+priority: medium
+graph: no
+manim: yes
+summary: The error list and box-state section are correct, but the quantum section reuses $L$, $\phi_n$, and $c_n$ with new meanings and the file title undersells the quantum content.
+- [Correctness] Symbol clash within the note: the box section's $\phi_n=\sqrt{2/L}\sin(n\pi x/L)$ on $[0,L]$ and $c_n$ (box amplitude) collide with $\phi_n^*=e^{-in\pi x/L}/\sqrt{2L}$ and $c_n$ (complex Fourier coefficient) in Errors 1 and 4; rename the box amplitudes or basis (e.g. $\beta_n$, $\chi_n$) rather than relying on the closing callout.
+- [Correctness] Macro inconsistency: $\phi_n$ is uncoloured although the table groups it with $\signal{\psi}$ (and Exercise 5 uses \signal{\phi}_n), and $\psi(0)$ in $c_n=\langle\phi_n|\psi(0)\rangle$ is uncoloured; colour them consistently.
+- [Simplify] "the sign-independent conservation of norm" is unclear; say the norm is conserved because $|e^{-iE_nt/\hbar}|=1$, independent of the sign convention in the exponent.
+- [Structure] Give the quantum material its own clearly separated section (or note); the hub links this note as "Common errors and quantum applications" while the title says only "Common Errors".
+- [Manim] Animate $|\psi(x,t)|^2$ for an equal superposition of box modes $n=1,2$, showing the density sloshing with period $2\pi\hbar/(E_2-E_1)$ while the total area stays one, which makes the "local density can vary, norm fixed" remark concrete.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/04 Frequencies and Transformations/12 Fourier Series/07 Chapter Summary.md
+priority: low
+graph: no
+manim: no
+summary: Accurate summary with a good reconstruction paragraph; only the source meta-note is unnecessary.
+- [Structure] Remove or rephrase the closing "[!note]" about the source summary; the bullets already distinguish $c_n$ and $d_n$.
+- [Simplify] The "Real form" bullet omits the formulas; add $a_n=\tfrac1L\int f\cos(n\pi x/L)\,dx$ and $b_n=\tfrac1L\int f\sin(n\pi x/L)\,dx$ so the summary works as a reference.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/04 Frequencies and Transformations/12 Fourier Series/08 Exercises.md
+priority: low
+graph: no
+manim: no
+summary: Clean exercise index with useful guidance; links resolve.
+- [Structure] No change needed.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/04 Frequencies and Transformations/12 Fourier Series/99 Exercises/01 Exercise 1.md
+priority: low
+graph: yes
+manim: no
+summary: Correct solution with well-motivated symmetry arguments; the $x=0$ check is mentioned but not carried out.
+- [Example] Carry out the $x=0$ check explicitly: it requires $\sum_{k\ge1}(-1)^{k+1}/(4k^2-1)=(\pi-2)/4$, giving $2/\pi+(\pi-2)/\pi=1$ (verified numerically).
+- [Graph] Plot $|\cos x|$ and the partial sums with $k\le1$ and $k\le3$ on $[-2\pi,2\pi]$ to show the period-$\pi$ structure and the fast convergence even at the cusps.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/04 Frequencies and Transformations/12 Fourier Series/99 Exercises/02 Exercise 2.md
+priority: low
+graph: no
+manim: no
+summary: Correct and clear; it duplicates the sign-function example of the main text, which the note acknowledges.
+- [Links] Link "the sign-function example" to [[03 Examples of Fourier Series#Example — The sign function]] and the Gibbs figure in [[04 Convergence and the Gibbs Phenomenon]] instead of only naming them.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/04 Frequencies and Transformations/12 Fourier Series/99 Exercises/03 Exercise 3.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and well explained, including the useful non-integer extension.
+- [Graph] Plot $I(r)/2L=\sin(\pi r)/(\pi r)$ for real $r\in[-5,5]$ with integer points marked, showing that the overlap vanishes exactly at nonzero integers only.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/04 Frequencies and Transformations/12 Fourier Series/99 Exercises/04 Exercise 4.md
+priority: low
+graph: no
+manim: no
+summary: Correct derivation (integral $8\pi^4/45$ and $\pi^4/90$ verified) with good sanity checks.
+- [Links] Note that the nonconstant coefficients equal those of $x^2$ in [[03 Examples of Fourier Series#Example — The function f(x) = x²]] and link there, so the integration by parts need not be repeated.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/04 Frequencies and Transformations/12 Fourier Series/99 Exercises/05 Exercise 5.md
+priority: low
+graph: yes
+manim: no
+summary: Correct throughout (normalization, $c_n$, $S_5\approx0.999999048$, $P(E_1)\approx0.998555$, $P(E_3)\approx0.00136976$ all verified) and clearly motivated.
+- [Graph] Plot the scaled state $\sqrt{30}\,y(1-y)$ and the single-mode approximation $c_1\sqrt2\sin(\pi y)$ on $y\in[0,1]$ to show why $P(E_1)\approx0.9986$; the curves are almost indistinguishable.
+- [Intuition] Add one sentence noting that the $n^{-3}$ coefficient decay (and $n^{-6}$ probabilities) reflects that the odd periodic extension of the parabola is continuous with continuous first derivative, linking the smoothness-decay rule from [[03 Examples of Fourier Series]].
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/04 Frequencies and Transformations/12 Fourier Series/99 Exercises/06 Exercise 6.md
+priority: low
+graph: no
+manim: no
+summary: Correct, and the prefactor correction is right ($2/\pi$ on the half interval); the source meta-commentary is the main distraction.
+- [Structure] State the question directly with the correct $2/\pi$ prefactor and reduce the "printed prefactor is incorrect" discussion to a short remark, since vault readers never see "the source".
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/04 Frequencies and Transformations/12 Fourier Series/99 Exercises/07 Exercise 7.md
+priority: medium
+graph: no
+manim: yes
+summary: Physically correct and careful (energy $\tfrac{\mu D^2}{2}\sum\omega_n^2c_n^2$ verified), but long and burdened by repairs to the original question and some symbol reuse.
+- [Correctness] Symbol clash: $\signal{\delta}_n$ (mode phase, question and table) and $\delta_{mn}$ (Kronecker delta, part (a) and the derivative orthogonality) share the letter; rename the phase (e.g. $\varphi_n$), which is never used after the question anyway.
+- [Correctness] Notation inconsistency: part (b) writes $c_1\phi_1(\mechanical{x})+c_2\phi_2(\mechanical{x})$ with uncoloured $\phi$ while the rest uses \signal{\phi}_n, and $\energy{E}$ denotes the classical string total while $\langle\energy{E}\rangle$, $\energy{E}_n$ in part (c) are quantum energies; colour $\phi$ consistently and label the classical energy distinctly (e.g. $\energy{E}_{\text{string}}$).
+- [Simplify] Reformulate the question to include zero initial velocity, linear density $\mu$, tension $T$, and a displacement scale, so the "[!note]" and the first half of part (b) about missing data shrink to one remark.
+- [Manim] Animate the string $y(x,t)$ for $c_1=c_2=1/\sqrt2$ beside $|\psi(x,t)|^2$ for the quantum superposition, showing the string profile's squared norm oscillating while the quantum norm stays one, the key distinction of part (c).
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/04 Frequencies and Transformations/12 Fourier Series/99 Exercises/08 Exercise 8.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and thorough (tail bounds, $f_N'$ identity, and $\tfrac2\pi\operatorname{Si}(\pi)\approx1.17898$ verified); the source-correction note is the only distraction.
+- [Structure] Rephrase part (c) to ask directly which convergence mode fails near the jump and drop the source-wording note, keeping only the cutoff-convention remark (highest harmonic $2N+1$ versus Fig. 12.1).
+- [Graph] Plot the exact squared error $2-\tfrac{16}{\pi^2}\sum_{k=0}^{N}(2k+1)^{-2}$ with the bounds $8/[\pi^2(2N+3)]$ and $8/[\pi^2(2N+1)]$ for $N=0..40$ on log-log axes to show the $N^{-1}$ rate.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/04 Frequencies and Transformations/13 Fourier Transform/00 Fourier Transform.md
+priority: low
+graph: no
+manim: no
+summary: Clear chapter hub with a useful reading path and a good translation-versus-modulation guiding test; all section links resolve.
+- [Structure] No change needed beyond optionally linking the "previous chapter" mention in the first paragraph to the Fourier series chapter hub so the $L\to\infty$ motivation has a direct back-reference.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/04 Frequencies and Transformations/13 Fourier Transform/01 From Discrete to Continuous.md
+priority: medium
+graph: yes
+manim: yes
+summary: The formal limit (including $2Lc_n\to\sqrt{2\pi}\hat f(k_n)$ and $d_n\approx\sqrt{\Delta k}\,\hat f(k_n)$) is correct, but the note is terse and abstract, with no concrete function to watch the limit happen.
+- [Example] Add a worked instance with $f(x)=e^{-|x|}$ or a Gaussian: compute $2Lc_n$ for $L=2,5,20$ and show the points $(k_n,2Lc_n/\sqrt{2\pi})$ landing on the curve $\hat f(k)$, which makes the "individual $c_n\to0$ but weighted sum survives" sentence concrete.
+- [Graph] Plot stems of $2Lc_n/\sqrt{2\pi}$ at $k_n=n\pi/L$ for $L=3$ and $L=10$ over $k\in[-6,6]$ together with the continuous $\hat f(k)=\sqrt{2/\pi}/(1+k^2)$ for $f=e^{-|x|}$, to show the spacing $\Delta k=\pi/L$ shrinking onto the transform.
+- [Manim] Animate $L$ growing from 2 to 30: the periodic extension of $f$ on $[-L,L]$ spreads its copies apart while the discrete spectral stems (scaled by $2L$) densify onto the continuous $\hat f(k)$.
+- [Structure] Remove the meta references to "the source" in the closing note (e.g. "The source states the integral formulas for $f\in L^2$") and state the $L^2$ extension directly; the reader has no access to the source.
+- [Intuition] Before the definition box, add one sentence explaining why the symmetric $1/\sqrt{2\pi}$ split is chosen here (it makes $\mathcal F$ unitary, so Parseval has no extra factor), linking to the Parseval row in [[02 Basic Properties]].
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/04 Frequencies and Transformations/13 Fourier Transform/02 Basic Properties.md
+priority: medium
+graph: yes
+manim: yes
+summary: Property table and derivative proof are correct for the symmetric convention, but the convolution factor is only described in words and the translation/modulation checks lack a picture.
+- [Simplify] Write out the convolution derivation explicitly in three lines (insert inverse transforms, use $\int e^{i(k-k')y}dy=2\pi\delta(k-k')$, collect the factors to $\sqrt{2\pi}$) instead of the prose paragraph, so the $\sqrt{2\pi}$ factor can be checked.
+- [Example] Add a short worked use of the convolution theorem, e.g. $e^{-x^2/2}*e^{-x^2/2}=\sqrt{\pi}\,e^{-x^2/4}$, verified via $\sqrt{2\pi}\,\hat f\hat g=\sqrt{2\pi}\,e^{-k^2}$.
+- [Graph] Two-panel plot for $f(x)=e^{-x^2/2}$: left, $\lvert\mathcal F[f(x-a)]\rvert$ and $\operatorname{Re}\mathcal F[f(x-a)]$ for $a=0,2$ over $k\in[-4,4]$ (same magnitude, oscillating real part); right, $\lvert\mathcal F[e^{ik_0x}f]\rvert$ for $k_0=0,2$ (shifted magnitude).
+- [Manim] Animate a Gaussian packet sliding in $x$ while its spectral magnitude stays fixed and its phase winds (real part oscillating), then a modulation $e^{ik_0x}$ being dialled up while the spectral peak slides to $k_0$.
+- [Structure] Drop "The source also mentions absolutely continuous functions..." and state the condition directly.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/04 Frequencies and Transformations/13 Fourier Transform/03 The Dirac Delta Distribution.md
+priority: medium
+graph: yes
+manim: yes
+summary: Correct and careful distributional treatment, but identities (13.3) and (13.4) are stated without derivation and the Gaussian nascent-delta idea has no visual.
+- [Simplify] Derive (13.4) from the general rule $\delta(g(x))=\sum_i\delta(x-x_i)/\lvert g'(x_i)\rvert$ for simple roots, stated once; then (13.2) and (13.4) become special cases and the $a\neq0$ remark follows naturally.
+- [Example] Add a one-line test-function check of (13.3), $\int x\delta(x)\varphi(x)\,dx=0\cdot\varphi(0)=0$, and an applied example such as $\int\delta(x^2-4)e^{x}dx=\tfrac12\cosh 2$.
+- [Graph] Plot $\delta_\sigma(x)=e^{-x^2/(2\sigma^2)}/(\sigma\sqrt{2\pi})$ for $\sigma=1,0.5,0.25,0.1$ over $x\in[-3,3]$, illustrating constant unit area with pointwise blow-up at zero.
+- [Manim] Animate $\sigma\to0$ for $\delta_\sigma$ overlaid on a fixed test function $\varphi(x)$, with a running readout of $\int\delta_\sigma\varphi\,dx$ converging to $\varphi(0)$.
+- [Intuition] For $\delta(x)=\tfrac1{2\pi}\int e^{ikx}dk$, show the truncated integral $\tfrac1{2\pi}\int_{-K}^{K}e^{ikx}dk=\sin(Kx)/(\pi x)$ as a second nascent delta, which explains why the identity is only distributional.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/04 Frequencies and Transformations/13 Fourier Transform/04 Important Transform Pairs.md
+priority: low
+graph: yes
+manim: yes
+summary: Gaussian and rectangular transforms, width conventions, prefactor and Parseval checks, and the existing figure (verified: $\sigma_x=0.7$, transform amplitude $0.7$, $\sigma_k$ arrow to $4+1/0.7$) are all correct and well explained.
+- [Graph] Add a plot for the rectangular window: $f(x)$ for $L=2$ and $\hat f(k)=\sqrt{2/\pi}\sin(kL/2)/k$ over $k\in[-4\pi,4\pi]$, marking the first zeros at $\pm2\pi/L$ and the $k=0$ value $L/\sqrt{2\pi}$; optionally overlay $L=1$ to show the broader spectrum.
+- [Manim] Animate a Gaussian whose $\sigma_x$ is slowly decreased while its transform widens and lowers in sync, with a live readout of $\sigma_x\sigma_k=1$ and $\Delta x\Delta k=1/2$.
+- [Intuition] In the chirp paragraph, give an explicit example such as $e^{-ax^2/2}e^{i\beta x^2}$, whose spectral density is Gaussian with a width that grows with $\lvert\beta\rvert$, so "can broaden its Fourier density" is backed by a formula.
+- [Structure] Rephrase the callout "The source writes a width estimate..." to state the heuristic $\Delta x\,\Delta k\sim2\pi$ directly.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/04 Frequencies and Transformations/13 Fourier Transform/05 Position-Momentum Duality.md
+priority: low
+graph: yes
+manim: no
+summary: Correct ($\widetilde\psi(p)=\hbar^{-1/2}\hat\psi(p/\hbar)$, the Gaussian momentum amplitude, $\Delta p=\hbar/(2\sigma)$ and the table units all check out) and clearly organized.
+- [Graph] Side-by-side plot of $\lvert\psi(x)\rvert^2$ and $\lvert\widetilde\psi(p)\rvert^2$ for $\sigma=1$, $\hbar=1$, $p_0=2$ over $x\in[-4,4]$ and $p\in[0,4]$, with $\pm\Delta x$ and $\pm\Delta p$ marked, mirroring Fig. 13.1 but with probability widths.
+- [Simplify] Back the claim $\hat x=i\hbar\,\partial_p$ with the same two-line argument used for $\hat p$ (differentiate $\widetilde\psi$ under the integral), or say explicitly that it is left as an exercise.
+- [Structure] Remove "The source's short proof suppresses the factor..." and simply state why the $1/\sqrt\hbar$ factor is kept.
+- [Simplify] Use one notation for the mean momentum: this note writes $\mechanical{p_0}$ while Exercises 5, 6 and 8 write $\mechanical{p}_0$; align them so the macro colours the subscript consistently.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/04 Frequencies and Transformations/13 Fourier Transform/06 Common Errors.md
+priority: medium
+graph: no
+manim: no
+summary: Formulas are correct (including $\mathcal F[fg]=\hat f*\hat g/\sqrt{2\pi}$), but the note mixes an error list with a substantial quantum-application section and contains editorial commentary on "the source".
+- [Structure] Rewrite Error 4 so it does not say "The source heading says ... That statement is incorrect"; title it directly, e.g. "Every $L^2$ function has a transform, but not every function is in $L^2$", and keep the plane-wave example.
+- [Structure] Consider moving the "Quantum mechanics — Position–momentum duality" section and the one after it into [[05 Position-Momentum Duality]], or rename the note to match the hub label "Common errors and quantum applications"; the heading "A stationary equation is not an ordinary probability distribution" is confusing and could read "No normalizable free-particle energy eigenstate".
+- [Example] Give Error 2 a concrete counterexample: for $f=g=e^{-x^2/2}$, $\mathcal F[fg]=e^{-k^2/4}/\sqrt2$ while $\hat f\hat g=e^{-k^2}$.
+- [Intuition] Under Error 3, add the nascent-Gaussian check $\int\delta_\sigma^2dx=1/(2\sigma\sqrt\pi)\to\infty$, which shows concretely why the delta cannot be normalized.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/04 Frequencies and Transformations/13 Fourier Transform/07 Chapter Summary.md
+priority: low
+graph: no
+manim: no
+summary: Accurate, compact summary consistent with the chapter's conventions and width distinctions.
+- [Structure] No change needed; optionally add the translation $e^{-ika}\hat f$ and modulation $\hat f(k-k_0)$ rules as a bullet, since the hub's guiding test relies on them.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/04 Frequencies and Transformations/13 Fourier Transform/08 Exercises.md
+priority: low
+graph: no
+manim: no
+summary: Clean exercise index with working links and a helpful suggested order.
+- [Structure] No change needed.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/04 Frequencies and Transformations/13 Fourier Transform/99 Exercises/01 Exercise 1.md
+priority: low
+graph: yes
+manim: no
+summary: All three transforms are correct (the sign in (b) verified two ways) and the quick checks are good.
+- [Graph] Plot the pair for part (a), $e^{-\lvert x\rvert}$ and $\sqrt{2/\pi}/(1+k^2)$, next to the Gaussian pair $e^{-x^2/2}\leftrightarrow e^{-k^2/2}$ over $k\in[-5,5]$, to visualise the cusp-to-$k^{-2}$-tail versus Gaussian-decay comparison made in the checks.
+- [Intuition] In part (c), note that for large $k_0$ the two Gaussians separate and $\hat h$ shows two peaks at $\pm k_0$, the spectral signature of a real oscillating signal.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/04 Frequencies and Transformations/13 Fourier Transform/99 Exercises/02 Exercise 2.md
+priority: low
+graph: no
+manim: no
+summary: Short, correct exercise with good direction and magnitude checks.
+- [Structure] No change needed.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/04 Frequencies and Transformations/13 Fourier Transform/99 Exercises/03 Exercise 3.md
+priority: low
+graph: no
+manim: no
+summary: Correct completion of the square, prefactor and normalization, with useful unit and scaling checks.
+- [Simplify] Mention that the result also follows in one line from Parseval plus the normalized position density, so the explicit integral is a check rather than the only route.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/04 Frequencies and Transformations/13 Fourier Transform/99 Exercises/04 Exercise 4.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and well checked (derivative-jump balance, uniqueness, singular $k_0\to0$ limit).
+- [Graph] Plot $f(x)=e^{-k_0\lvert x\rvert}/(2k_0)$ for $k_0=0.5,1,2$ over $x\in[-5,5]$ to show the cusp with slope jump $-1$ and the growth of the peak $1/(2k_0)$ as $k_0\to0$.
+- [Structure] Replace "the Green-function solution requested by the source" with a direct statement of the problem.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/04 Frequencies and Transformations/13 Fourier Transform/99 Exercises/05 Exercise 5.md
+priority: low
+graph: no
+manim: no
+summary: Correct moments and uncertainty product, with a good amplitude-versus-density width warning.
+- [Simplify] In part (a), "Write $q=p-p_0$ as an integration variable" is misleading because that integral is over $x$; call $q$ the shifted momentum label (it becomes an integration variable only in part (b)).
+- [Simplify] Part (a) duplicates Exercise 3; state that the modulation property shifts the Exercise 3 result by $p_0$ and skip the repeated integral.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/04 Frequencies and Transformations/13 Fourier Transform/99 Exercises/06 Exercise 6.md
+priority: low
+graph: yes
+manim: yes
+summary: Derivation verified (coefficients $A$, $B$, the prefactor and $\Delta x(t)=\sigma\sqrt{1+\tau^2}$ are correct) and well interpreted, including the Heisenberg-picture cross-check.
+- [Graph] Plot $\lvert\psi(x,t)\rvert^2$ for $\tau=0,1,2,4$ with $\sigma=1$ and the centre moving at $p_0/m$, plus a second panel of $\Delta x(t)/\sigma=\sqrt{1+\tau^2}$ against $\tau\in[0,5]$ with its linear asymptote $\tau$.
+- [Manim] Animate the packet moving and spreading in time, showing $\operatorname{Re}\psi$ developing a chirp (faster oscillation at the leading edge) while a momentum-density panel stays fixed.
+- [Example] Add a numerical scale: an electron with $\sigma=1\,\text{nm}$ has $2m\sigma^2/\hbar\approx1.7\times10^{-14}\,\text{s}$, whereas a $1\,\mu\text{g}$ grain with $\sigma=1\,\mu\text{m}$ needs about $2\times10^{13}\,\text{s}$, giving intuition for why spreading is a quantum-scale effect.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/04 Frequencies and Transformations/13 Fourier Transform/99 Exercises/07 Exercise 7.md
+priority: medium
+graph: yes
+manim: no
+summary: Mathematically correct (coefficients $\sqrt{\pi/b}\,f(x_n)$, sinc series, error bound, Parseval for samples, rectangular-pulse transform and the aliasing counterexample check out), but dense for a reader new to sampling.
+- [Graph] Plot a band-limited example such as $f(x)=\operatorname{sinc}^2(x/2)$ (band limit $b=1$), its samples at $x_n=n\pi$, and the weighted terms $f(x_n)\operatorname{sinc}(x-x_n)$ summing to $f$ over $x\in[-15,15]$.
+- [Graph] Add a second plot of the counterexample $e^{-x^2}\sin(bx)$ for $b=2$, with its zero samples at every $x_n=n\pi/b$ marked, to make the role of band limitation visible.
+- [Simplify] Open part (a) with a one-paragraph plain-language idea (a spectrum on a finite interval is a Fourier series, and its coefficients are exactly the samples) before the $L^1$/continuous-representative technicalities.
+- [Structure] Remove the repeated "the source's" phrasing in the question, the note callout and part (b), and state the duration–bandwidth heuristic directly with the angular-frequency label.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/04 Frequencies and Transformations/13 Fourier Transform/99 Exercises/08 Exercise 8.md
+priority: low
+graph: no
+manim: yes
+summary: Correct throughout (derivatives of $K$, $A=(1+i\tau)/(4i\sigma^2\tau)$, $m/(2i\hbar tA)=1/(1+i\tau)$, kernel units $\unit{m^{-1}}$ and $\lvert K\rvert^2=m/(2\pi\hbar t)$ verified) and consistent with Exercise 6.
+- [Manim] Animate $\operatorname{Re}K(x,t;0,0)$ for decreasing $t$: the chirp oscillates ever faster with growing amplitude, while its integral against a fixed smooth test function converges to $\varphi(0)$.
+- [Structure] Replace the callout about the source's "previous exercise" wording with a plain pointer to Exercises 5 and 6.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/05 Probability and Uncertainty/14 Probability and Distributions/00 Probability and Distributions.md
+priority: low
+graph: no
+manim: no
+summary: Clear chapter hub with a useful reading route; links resolve and the single-row quantity table is accurate.
+- [Structure] No change needed; optionally add a one-line pointer from the "Reading route" Born-rule paragraph to [[07 The Postulates of Quantum Mechanics#P4 — Probability]] so the postulate is reachable from the hub.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/05 Probability and Uncertainty/14 Probability and Distributions/01 Discrete Probability.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and compact; the die example is fully worked ($\sigma_X^2=35/12$, $\sigma_X\approx1.708$ verified) but the opening paragraph about random variables precedes the definition it relies on.
+- [Structure] Move the opening "is the result even?" paragraph below Definition 14.1 (or turn it into a short example), so the reader meets the definition of a discrete random variable first.
+- [Graph] Add a bar chart (stem plot) of the fair-die distribution $P_i=1/6$ for $i=1,\dots,6$, with a vertical dashed line at $\langle X\rangle=3.5$ and a shaded band $3.5\pm1.708$, to show that the mean is not an outcome and what one standard deviation spans.
+- [Example] Illustrate the closing finite-moment warning with a concrete case, e.g. $P_k=\frac{6}{\pi^2k^2}$ for $k=1,2,\ldots$: normalized but with divergent $\langle X\rangle$.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/05 Probability and Uncertainty/14 Probability and Distributions/02 Continuous Probability.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and well-hedged (density vs point probability, CDF jumps, density values above one); the uniform example is verified.
+- [Graph] Plot the uniform density $\rho(x)=2$ on $[0,1/2]$ (zero elsewhere, $x\in[-0.25,1]$) with a shaded interval such as $[0.1,0.3]$ of area $0.4$, and beside it the CDF $F(x)$ rising linearly from 0 to 1; this makes "density can exceed one" and "interval probability = area" visible.
+- [Intuition] In the CDF paragraph, give one mixed example (e.g. probability $1/2$ at $x=0$ plus density $1/2$ on $[0,1]$) to show a jump in $F$ alongside a continuous part, supporting the later discrete/continuous measurement remark.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/05 Probability and Uncertainty/14 Probability and Distributions/03 The Normal Distribution.md
+priority: low
+graph: no
+manim: yes
+summary: Accurate and readable; the existing Fig. 14.1 (68.3/13.6/2.1 % bands verified) carries the key picture, and the wave-packet phase caveat is correct.
+- [Manim] Animate the central limit theorem of item 1: show the density of the standardized sum of $n$ independent uniform variables for $n=1,2,3,5,10$ morphing toward the standard normal curve overlaid in a fixed colour.
+- [Simplify] In item 3 ("Unchirped Gaussian wave packets saturate..."), state the bound explicitly ($\Delta x\,\Delta p=\hbar/2$), say "constant or linear phase" instead of the undefined "unchirped", and link to Exercise 7, which derives it.
+- [Example] The $Y=2X+1$ prediction sentence is buried in the $\sigma>0$ paragraph; split it into its own short "Linear transformations" example, including the transformed density $\rho_Y(y)=\rho_X((y-1)/2)/2$.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/05 Probability and Uncertainty/14 Probability and Distributions/04 Chebyshev's Inequality.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct proof and a good sharpness example (values $\pm2$ with $1/8$ each verified), but a transcription note about "the source" leaks into the text.
+- [Structure] Rewrite the note beginning "The source does not exclude $\sigma=0$" in self-contained form (e.g. "We require $\sigma>0$: for $\sigma=0$ the event $|X-\mu|\ge0$ has probability one, which exceeds $1/k^2$ for $k>1$"); the reader has no access to "the source".
+- [Graph] Plot the Chebyshev bound $1/k^2$ for $k\in[1,4]$ together with the exact two-sided normal tail $\operatorname{erfc}(k/\sqrt2)$ and the exponential tail $e^{-(1+k)}$ (from Exercise 2), log-scaled vertical axis, to show how loose but universal the bound is.
+- [Intuition] Add one sentence comparing the $k=2$ Chebyshev guarantee (at least 75 %) with the Gaussian value 95.4 % from Fig. 14.1, so the price of shape-independence is explicit.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/05 Probability and Uncertainty/14 Probability and Distributions/05 Conditional Probability.md
+priority: medium
+graph: no
+manim: no
+summary: Correct, but the jump from classical conditioning to quantum compatibility is abrupt, and the "same projector measured twice" example is an artificial illustration of two compatible observables.
+- [Example] Add a compatible-but-correlated example with genuinely different observables, e.g. $\hat\sigma_z\otimes\hat 1$ and $\hat 1\otimes\hat\sigma_z$ in $(|00\rangle+|11\rangle)/\sqrt2$: they commute, each outcome has probability $1/2$, yet $P(\text{both }1)=1/2\ne1/4$.
+- [Structure] Insert a one-sentence bridge before "In the finite-dimensional ideal projective-measurement setting..." stating the question (does commuting imply statistically independent outcomes?), so the TLDR claim is set up before the definitions.
+- [Example] After the independence definition, test it on the die example already given: $P(A\cap B)=1/3\ne P(A)P(B)=1/4$, so "even" and "greater than 3" are dependent.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/05 Probability and Uncertainty/14 Probability and Distributions/06 Common Errors.md
+priority: medium
+graph: no
+manim: no
+summary: Useful error list and Born-rule section with a correct quantity table, but with one mislabeled term, an unlinked chapter reference, and diagnostic tips placed away from their errors.
+- [Correctness] Error 1 says "The mean-square term vanishes only when $\langle X\rangle=0$"; the mean square is $\langle X^2\rangle$, so the vanishing term should be called the squared mean $\langle X\rangle^2$.
+- [Structure] Move the paragraph "For Error 1, shift the variable by its mean..." under Error 1 and keep the phase test directly under Error 4; currently the Error 1 tip appears after Error 4.
+- [Links] Turn "It corresponds to P4 in Chapter 9" into a wiki link to [[07 The Postulates of Quantum Mechanics#P4 — Probability|P4 in Chapter 9]] (heading exists).
+- [Example] In the Born-rule section, add a two-line worked example (e.g. $\psi=e^{-|x|/a}/\sqrt a$ with $\int\rho\,dx=1$ and $\langle x\rangle=0$, linking Exercise 4) so the expectation formulas are seen in use.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/05 Probability and Uncertainty/14 Probability and Distributions/07 Chapter Summary.md
+priority: low
+graph: no
+manim: no
+summary: Accurate summary with good reconstruction advice, but its closing note refers to a "source’s final bullet" the reader cannot see.
+- [Structure] Rewrite the note "The source’s final bullet equates positive variance with a superposition..." as a self-contained caveat (pure state, different eigenvalues, mixtures can also have positive variance) without referring to the source.
+- [Links] Add wiki links from each bullet to its section note (e.g. "Chebyshev bound" to [[04 Chebyshev's Inequality]]) so the summary doubles as a navigation page.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/05 Probability and Uncertainty/14 Probability and Distributions/08 Exercises.md
+priority: low
+graph: no
+manim: no
+summary: Clean exercise index; all seven links point to existing notes and the guiding paragraphs are useful.
+- [Structure] No change needed; the editorial sentence "The original exercise anchors are retained for existing links" could be dropped.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/05 Probability and Uncertainty/14 Probability and Distributions/99 Exercises/01 Exercise 1.md
+priority: low
+graph: no
+manim: no
+summary: Correct, short, and well explained; the centered-variance cross-check and the strict-vs-non-strict remark are good.
+- [Intuition] Compare the result with the Gaussian rule of thumb: $P(|X-\mu|>\sigma)=1/2$ here versus about $0.317$ for a normal law, showing that this three-point law has heavier one-sigma tails.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/05 Probability and Uncertainty/14 Probability and Distributions/99 Exercises/02 Exercise 2.md
+priority: low
+graph: yes
+manim: no
+summary: Correct throughout ($C=\lambda$, $\sigma_X=1/\lambda$, tail $e^{-3}\approx0.0498$ verified) with a good scaling argument.
+- [Graph] Plot $e^{-y}$ for $y=\lambda x\in[0,6]$, with a vertical line at the mean $y=1$, the $\pm2\sigma$ band $[-1,3]$ marked (only $[0,3]$ inside the support), and the tail $y\ge3$ shaded and labelled $e^{-3}\approx5\%$.
+- [Intuition] Note in (c) that the lower branch is empty because the distribution is skewed: the mean lies only one standard deviation above the support boundary, which is why the exact tail is far below $1/4$.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/05 Probability and Uncertainty/14 Probability and Distributions/99 Exercises/03 Exercise 3.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and clear; the $\hbar^2P_+P_-$ shortcut is a nice independent check.
+- [Graph] Plot $\langle\hat S_z\rangle/\hbar=\tfrac12\cos\theta$ and $\Delta S_z/\hbar=\tfrac12|\sin\theta|$ for $\theta\in[0,2\pi]$ on one axis, marking the spread maxima at $\theta=\pi/2,3\pi/2$ where the mean is zero.
+- [Intuition] Mention that $\theta$ is the Bloch-sphere polar angle, so $\langle\hat S_z\rangle=\tfrac\hbar2\cos\theta$ is the projection of the Bloch vector, which explains the cosine geometrically.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/05 Probability and Uncertainty/14 Probability and Distributions/99 Exercises/04 Exercise 4.md
+priority: low
+graph: yes
+manim: no
+summary: Correct ($A=1/\sqrt a$, $\langle x^2\rangle=a^2/2$, $P=e^{-2}$ verified) with good checks, though the question still quotes "the source".
+- [Structure] Rephrase (c) "described in the source as outside the classical region" in self-contained wording; the following note already explains why the classical label needs a potential and energy.
+- [Graph] Plot $a|\psi|^2=e^{-2|u|}$ against $u=x/a$ on $[-3,3]$, shading $|u|>1$ (total area $e^{-2}\approx0.135$) and marking $\pm\Delta x/a=\pm1/\sqrt2$.
+- [Intuition] Mention that this is the bound state of the attractive delta potential $V=-\alpha\delta(x)$ with $a=\hbar^2/(m\alpha)$, so "classically forbidden" can be tied to an actual energy ($E<0$ makes every $x\ne0$ forbidden).
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/05 Probability and Uncertainty/14 Probability and Distributions/99 Exercises/05 Exercise 5.md
+priority: low
+graph: yes
+manim: no
+summary: Correct derivation ($\langle x^2\rangle_n=L^2(1/3-1/(2n^2\pi^2))$ verified) with a careful correspondence-principle discussion; the Chapter 12 link exists.
+- [Graph] Plot $L|\psi_n|^2=1-\cos(2n\pi u)$ on $u\in[0,1]$ for $n=1,3,10$ together with the uniform level 1, to show the density oscillating while its moments converge.
+- [Graph] Add a small plot of $\Delta x_n/L=\sqrt{1/12-1/(2n^2\pi^2)}$ for $n=1,\dots,20$ (points) with the horizontal asymptote $1/\sqrt{12}\approx0.2887$; $n=1$ gives about $0.181$.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/05 Probability and Uncertainty/14 Probability and Distributions/99 Exercises/06 Exercise 6.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and thorough (partition function, Planck mean energy, and the $k_BT-\hbar\omega/2$ correction verified), with a careful pure-state vs mixture caveat.
+- [Graph] Plot $\langle\hat H\rangle/\hbar\omega=1/(e^{1/t}-1)$ versus $t=k_BT/\hbar\omega$ on $t\in[0,3]$, with the classical line $t$ and the corrected asymptote $t-1/2$, to show freeze-out at low $t$ and the approach to equipartition.
+- [Simplify] The pure-vs-mixed distinction is stated three times (question, end of (b), final note); keep the density-matrix note and shorten the other two to one clause each.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/05 Probability and Uncertainty/14 Probability and Distributions/99 Exercises/07 Exercise 7.md
+priority: medium
+graph: no
+manim: yes
+summary: Mathematically correct (entropy $\tfrac12\ln(2\pi e\sigma^2)$, Lagrange solution, relative-entropy proof, and phase-gradient variance formula verified) but long and still phrased around "the source".
+- [Structure] Replace "The source defines..." and "Discuss the source’s observation..." in the question with self-contained wording; the reader cannot consult the source.
+- [Simplify] Part (b) gives three arguments (second variation, concavity, relative entropy); present the relative-entropy proof as the main global argument and shorten the second-variation paragraph to one sentence, since it gives only local information.
+- [Manim] Animate a fixed Gaussian position density while the phase $\phi(x)=\kappa x^2$ is ramped from $\kappa=0$ upward, showing the momentum density $|\tilde\psi(p)|^2$ widening alongside, to make "same position density, larger $\Delta p$" visible.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/05 Probability and Uncertainty/15 Expectation Value and Uncertainty/00 Expectation Value and Uncertainty.md
+priority: low
+graph: no
+manim: no
+summary: Clear chapter hub with a useful roadmap; all section links resolve.
+- [Structure] No change needed; optionally add one line naming the running example (two-level state $|1\rangle,|2\rangle$ reused in 01, 02, and Exercise 1) so readers see how the sections connect.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/05 Probability and Uncertainty/15 Expectation Value and Uncertainty/01 Expectation Value of an Observable.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and compact; the example and the operator cross-check are clear, but the paragraph on scope and the phase remark are dense for a first encounter.
+- [Graph] Add a small 2D stem/bar plot of the outcome distribution: bars of height $1/5$ at $E=\hbar\omega$ and $4/5$ at $E=2\hbar\omega$ (horizontal axis $E/\hbar\omega$ from 0 to 3), with a vertical line at the mean $9/5$, to show that the mean lies between levels and is not itself an outcome.
+- [Example] Back the sentence "Changing the relative phase ... can change another observable" with a one-line example, e.g. a second observable with $\langle1|\hat B|2\rangle\neq0$ (such as $\hat x$ in a box, linking to [[03 Ehrenfest's Theorem]]) whose mean depends on the relative phase.
+- [Simplify] Split the dense scope paragraph (degeneracy, continuous spectra, existence of expectations) into a short callout after the example so the main line (definition, spectral form, example) reads uninterrupted.
+- [Intuition] Add the classical analogue: $\sum_n a_n|c_n|^2$ is exactly a weighted average like the mean of a loaded die, with $|c_n|^2$ as the loading.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/05 Probability and Uncertainty/15 Expectation Value and Uncertainty/02 Variance and Quantum Uncertainty.md
+priority: low
+graph: yes
+manim: no
+summary: Correct proof and example; the domain paragraph is technical relative to the rest and could be moved to a note callout.
+- [Simplify] Show the middle step of the proof explicitly: $\langle(\hat A-\mu)^2\rangle=\langle\psi|(\hat A-\mu)^\dagger(\hat A-\mu)|\psi\rangle$ using self-adjointness, which is why the expectation becomes a squared norm.
+- [Example] Add the two-outcome shortcut used later in Exercise 1: $(\Delta H)^2=P_1P_2(E_2-E_1)^2=\tfrac15\cdot\tfrac45(\hbar\omega)^2=\tfrac4{25}(\hbar\omega)^2$, which reproduces $\Delta H=2\hbar\omega/5$ in one line.
+- [Graph] Reuse the bar plot of note 01 and add a shaded band $\langle H\rangle\pm\Delta H=(9/5\pm2/5)\hbar\omega$ to visualize the spread.
+- [Structure] Move the unbounded-operator/domain paragraph (line starting "For an unbounded self-adjoint observable") into a [!note] callout after the proof.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/05 Probability and Uncertainty/15 Expectation Value and Uncertainty/03 Ehrenfest's Theorem.md
+priority: low
+graph: no
+manim: yes
+summary: Correct derivation and a well-checked box example (matrix element $-16L/(9\pi^2)$, frequency $3\pi^2\hbar/(2mL^2)$, and Fig. 15.1 all verified); the existing graph is adequate.
+- [Manim] Animate the probability density $|\psi(x,t)|^2=\tfrac1L[\sin^2(\pi x/L)+\sin^2(2\pi x/L)+2\sin(\pi x/L)\sin(2\pi x/L)\cos(\omega_{12}t)]$ sloshing between the two halves of the box, with a moving marker at $\langle x\rangle(t)$, to show that the mean oscillates because of interference while energy probabilities stay fixed.
+- [Simplify] In Eq. (15.1) and (15.2), show the two commutators explicitly, $[\hat H,\hat x]=-i\hbar\hat p/m$ and $[\hat H,\hat p]=i\hbar V'(\hat x)$, rather than only citing Chapter 10, so the reader can verify the signs.
+- [Example] Make the "averaging the force" caveat concrete with a cubic potential $V=\lambda x^3$: $\langle V'\rangle=3\lambda(\langle x\rangle^2+(\Delta x)^2)$ differs from $V'(\langle x\rangle)$ by $3\lambda(\Delta x)^2$.
+- [Intuition] Point out that the predicted checks are satisfied: the amplitude $16/(9\pi^2)\approx0.18$ keeps $\langle x\rangle$ within $[0.32L,0.68L]$, inside the box.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/05 Probability and Uncertainty/15 Expectation Value and Uncertainty/04 The Uncertainty Principle.md
+priority: medium
+graph: no
+manim: no
+summary: Correct and concise proof sketch, but the note lacks the canonical $x$-$p$ application and any concrete numerical check of the energy-time relation.
+- [Example] Add the canonical case $\hat A=\hat x$, $\hat B=\hat p$ with $[\hat x,\hat p]=i\hbar$ giving $\Delta x\,\Delta p\ge\hbar/2$, and link to [[15 Expectation Value and Uncertainty/99 Exercises/03 Exercise 3|Exercise 3]] where the box states give $\approx0.568\hbar$.
+- [Example] Check the energy-time relation on the box superposition of [[03 Ehrenfest's Theorem]]: there $\Delta H=(E_2-E_1)/2$ and $\Delta t_x=\Delta x/|d\langle x\rangle/dt|$, so the reader sees the bound evaluated rather than only stated.
+- [Simplify] Expand the proof by one line: write $\langle u|v\rangle=\langle\hat A\hat B\rangle-\langle\hat A\rangle\langle\hat B\rangle$ and $\langle v|u\rangle=\langle\hat B\hat A\rangle-\langle\hat A\rangle\langle\hat B\rangle$ before subtracting, so the commutator appearance is visible.
+- [Example] Illustrate the "zero right-hand side" paragraph with spin: for $\sigma_x,\sigma_y$ in the state $|+x\rangle$, $\langle[\sigma_x,\sigma_y]\rangle=2i\langle\sigma_z\rangle=0$, yet $\Delta\sigma_y=1$.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/05 Probability and Uncertainty/15 Expectation Value and Uncertainty/05 Spectral Distribution and Projection onto Eigenstates.md
+priority: medium
+graph: yes
+manim: no
+summary: All numbers verified ($|c_1|^2=960/\pi^6\approx0.9986$, $\langle H\rangle=10E_1/\pi^2\approx1.013E_1$), but the note starts directly with the example and lacks a general statement of the spectral projection idea.
+- [Structure] Add a short general paragraph before the example: $c_n=\langle n|\psi\rangle$, $P(E_n)=|c_n|^2$, $\sum_n|c_n|^2=1$, and the projector $\hat P_n=|n\rangle\langle n|$, so the note's title concept is stated before it is used.
+- [Graph] Plot the normalized parabola $\sqrt{30}\,u(1-u)$ and the ground state $\sqrt2\sin(\pi u)$ on $u=x/L\in[0,1]$ in one 2D graph; their near-coincidence makes the 99.86% overlap visible. Optionally add a bar plot of $P(E_n)=960/(n^6\pi^6)$ for $n=1..7$ on a log scale.
+- [Example] Complete the moment discussion the note hints at: $\langle H^2\rangle=E_1^2\cdot\tfrac{960}{\pi^6}\cdot\tfrac{\pi^2}{8}=\tfrac{120}{\pi^4}E_1^2$, so $\Delta H=\sqrt{20}\,E_1/\pi^2\approx0.453E_1$, a large spread despite $|c_1|^2\approx1$; also note that $\langle H^3\rangle$ diverges, which makes the "powers of energy increase their relative weight" remark concrete.
+- [Intuition] Give the independent check $\langle H\rangle=\langle p^2\rangle/2m=\tfrac{\hbar^2}{2m}\int|\psi'|^2dx=5\hbar^2/(mL^2)$, which equals $10E_1/\pi^2$ without any series.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/05 Probability and Uncertainty/15 Expectation Value and Uncertainty/06 Common Errors.md
+priority: low
+graph: no
+manim: no
+summary: Correct and useful list of errors, but the eight-point formalism overview is a different kind of content packed under a "Common Errors" title.
+- [Structure] Consider moving the "Quantum mechanics — The formalism in eight points" section to its own note or to the chapter summary; if moved, update the heading link in 07 Chapter Summary.
+- [Simplify] The mapping "Fourier analysis connects position and momentum descriptions in point 4" is tenuous; tie Fourier analysis to change of representation (points 1 and 3) or to the $x$-$p$ uncertainty (point 6) instead.
+- [Example] Error 4 could reuse the quantum two-level example of note 01 ($\langle H^2\rangle=17/5$ vs $\langle H\rangle^2=81/25$ in units of $(\hbar\omega)^2$) to show the same mistake in the chapter's own notation.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/05 Probability and Uncertainty/15 Expectation Value and Uncertainty/07 Chapter Summary.md
+priority: low
+graph: no
+manim: no
+summary: Accurate summary with a good closing reconstruction; heading link to the eight-point overview resolves.
+- [Structure] No change needed; optionally add the Robertson inequality as its own bullet, since it is a main result of note 04 and currently appears only through the energy-time special case.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/05 Probability and Uncertainty/15 Expectation Value and Uncertainty/08 Exercises.md
+priority: low
+graph: no
+manim: no
+summary: Clean exercise hub; all six exercise links resolve.
+- [Structure] No change needed.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/05 Probability and Uncertainty/15 Expectation Value and Uncertainty/99 Exercises/01 Exercise 1.md
+priority: low
+graph: no
+manim: no
+summary: Correct and well-explained worked solution ($7/4$, $13/4$, $\Delta H=\sqrt3\hbar\omega/4$ verified) with a useful two-level variance check.
+- [Simplify] The remark about a "signed frequency parameter" in part (a) adds little for this exercise; drop it or move it to a footnote since $\omega>0$ is already assumed in the table.
+- [Intuition] In part (c), add one sentence that $\langle H^2\rangle$ and $\Delta H$ are also constant for the same reason, matching the TLDR's "constant energy moments".
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/05 Probability and Uncertainty/15 Expectation Value and Uncertainty/99 Exercises/02 Exercise 2.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and carefully explained ($\langle x^2\rangle_n=L^2/3-L^2/(2n^2\pi^2)$ verified), with good sign and limit checks.
+- [Graph] Plot the densities $L\rho_n=2\sin^2(n\pi u)$ for $n=1,2,8$ together with the uniform value $1$ on $u=x/L\in[0,1]$, to show why the moments approach the uniform ones while the density keeps oscillating.
+- [Graph] Optionally add a stem plot of $\Delta x_n/L=\sqrt{1/12-1/(2n^2\pi^2)}$ for $n=1..10$ with a dashed asymptote at $1/\sqrt{12}\approx0.2887$.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/05 Probability and Uncertainty/15 Expectation Value and Uncertainty/99 Exercises/03 Exercise 3.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and thorough ($\Delta p_n=n\pi\hbar/L$, $\Delta x_n\Delta p_n\approx0.568\hbar$ at $n=1$ verified), with appropriate domain caveats.
+- [Graph] Plot $\Delta x_n\Delta p_n/\hbar=\sqrt{n^2\pi^2/12-1/2}$ for $n=1..8$ as points with a horizontal line at the Robertson bound $1/2$, showing how close the ground state comes.
+- [Simplify] The two closing remarks on the continuous Fourier distribution and the self-adjointness note overlap; merge them into one callout so the main solution stays short.

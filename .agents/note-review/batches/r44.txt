@@ -1,0 +1,43 @@
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/92 Appendix B Decay Rates and Cross Sections/Appendix B.0 Decay Rates and Cross Sections.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/92 Appendix B Decay Rates and Cross Sections/B.1 Decays.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/92 Appendix B Decay Rates and Cross Sections/B.2 Cross Sections.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/93 Appendix C Pauli and Dirac Matrices/Appendix C.0 Pauli and Dirac Matrices.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/93 Appendix C Pauli and Dirac Matrices/C.1 Pauli Matrices.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/93 Appendix C Pauli and Dirac Matrices/C.2 Dirac Matrices.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/94 Appendix D Feynman Rules/Appendix D.0 Feynman Rules.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/94 Appendix D Feynman Rules/D.1 External Lines.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/94 Appendix D Feynman Rules/D.2 Propagators.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/94 Appendix D Feynman Rules/D.3 Vertex Factors.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/99 Back matter/Index.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/99 Back matter/Particle Data.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/99 Back matter/Physical Constants and Conversion Factors.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/99 Back matter/Reference Formulas.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/Elementary Particles - Contents.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/00 Front matter/Preface.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/00 Front matter/Title, Publication Details, and Epigraph.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/01 Introduction/1.0 Chapter introduction.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/01 Introduction/1.1 Elements of the Standard Model of Particle Physics.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/01 Introduction/1.2 Leptons.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/01 Introduction/1.3 Quarks.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/01 Introduction/1.4 The Fundamental Interactions.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/01 Introduction/1.B References.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/01 Introduction/1.P Problems.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/01 Introduction/1.R For Further Reading.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/02 Lagrangian Formalism and Conservation Laws/2.0 Chapter introduction.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/02 Lagrangian Formalism and Conservation Laws/2.1 Hamilton's Principle.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/02 Lagrangian Formalism and Conservation Laws/2.2 Free Field Theory Examples.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/02 Lagrangian Formalism and Conservation Laws/2.3 Symmetries and Conservation Laws.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/02 Lagrangian Formalism and Conservation Laws/2.B References.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/02 Lagrangian Formalism and Conservation Laws/2.P Problems.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/02 Lagrangian Formalism and Conservation Laws/2.R For Further Reading.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/03 The Idea of Gauge Invariance/3.1 Historical Preliminaries.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/03 The Idea of Gauge Invariance/3.2 Gauge Invariance in Classical Electrodynamics.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/03 The Idea of Gauge Invariance/3.3 Phase Invariance in Quantum Mechanics.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/03 The Idea of Gauge Invariance/3.4 Significance of Potentials in Quantum Theory.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/03 The Idea of Gauge Invariance/3.5 Phase Invariance in Field Theory.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/03 The Idea of Gauge Invariance/3.6 Feynman Rules for Electromagnetism.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/03 The Idea of Gauge Invariance/3.B References.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/03 The Idea of Gauge Invariance/3.P Problems.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/03 The Idea of Gauge Invariance/3.R For Further Reading.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/04 Non-Abelian Gauge Theories/4.1 Motivation.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/04 Non-Abelian Gauge Theories/4.2 Construction.md

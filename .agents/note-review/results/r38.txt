@@ -1,0 +1,656 @@
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.04.03 Additional Rules.md
+priority: low
+graph: no
+manim: no
+summary: Short, correct rule list whose correction note and loop-count check already make the scope clear.
+- [Simplify] The bullet "Each ghost loop gives a factor $-1$ from Fermi statistics" should say the sign comes from the anticommuting (Grassmann) ghost fields; ghosts are spin-zero, so "Fermi statistics" invites a spin-statistics misreading.
+- [Example] Add one worked loop count, e.g. the one-loop gluon self-energy: $I=2$ internal lines, $V=2$ vertices, $L=I-V+1=1$, with the symmetry factor $1/2$ of the gluon bubble, to make the $L=I-V+1$ rule and the "actual graph symmetry" note concrete.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.05 QCD as an SU(3) Gauge Theory.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub that separates color from flavor and links both subnotes; no change needed.
+- [Structure] No change needed; at most state $\dim SU(3)=N_c^2-1=8$ explicitly next to "eight adjoint gauge fields" so the count is derived rather than asserted.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.05.01 Color Charge and Representations.md
+priority: low
+graph: no
+manim: no
+summary: Correct and readable overview of quark and gluon color representations and singlet hadrons.
+- [Simplify] The color index is written as a superscript in $\signal{q}_\alpha^i$ and as a subscript in $\bar{\signal{q}}_i\gamma^\mu(T^a)_{ij}\signal{A}_\mu^a\signal{q}_j$; use one index position throughout the note.
+- [Example] Write the explicit singlet states $\frac{1}{\sqrt3}\delta_{ij}\bar q^i q^j$ for mesons and $\frac{1}{\sqrt6}\varepsilon_{ijk}q^iq^jq^k$ for baryons, so the decompositions $\mathbf3\otimes\bar{\mathbf3}=\mathbf1\oplus\mathbf8$ and the $\varepsilon^{ijk}$ remark become concrete.
+- [Intuition] State the dimension count behind $\mathbf3\otimes\mathbf3\otimes\mathbf3=\mathbf1\oplus\mathbf8\oplus\mathbf8\oplus\mathbf{10}$ ($27=1+8+8+10$) and that the singlet is totally antisymmetric in color, which is why baryon wavefunctions must be symmetric in the other labels.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.05.02 Color Factors.md
+priority: low
+graph: no
+manim: no
+summary: Correct color-factor summary with two well-checked examples (2/9 and the TᵃTᵇTᵃ identity).
+- [Simplify] In Example 12.3 the left side $\sum\lvert(T^a)_{i'i}(T^a)_{j'j}\rvert^2$ hides the sum over $a$ inside the modulus while the right side introduces $b$; write $\sum_{a,b}(T^a)_{i'i}(T^a)_{j'j}(T^b)^*_{i'i}(T^b)^*_{j'j}$ before converting to traces, as done in Exercise 12.8.
+- [Intuition] Add one line explaining $C_F=4/3$ via the Fierz identity: contracting $\sum_a(T^a)_{ij}(T^a)_{jl}$ with the displayed completeness relation gives $T_F(N_c-1/N_c)\delta_{il}$, which links the "Useful relations" section directly to the Casimir values.
+- [Example] Mention the physical use of $C_F-C_A/2=-1/(2N_c)$ from Example 12.4, e.g. that the color-octet $q\bar q$ potential is repulsive with factor $1/6$ while the singlet is attractive with $C_F=4/3$.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.06 Asymptotic Freedom and the QCD Beta Function.md
+priority: low
+graph: no
+manim: no
+summary: Correct statement of the one-loop beta function and its sign, with the qualitative discussion placed before the formula.
+- [Structure] The paragraph "The minus sign before the coefficient matters... coefficient is seven" refers to a formula that appears only later; move it after (12.13) so the reader sees $\beta_0=(11N_c-2N_f)/3$ before its numerical checks.
+- [Intuition] Add the one-line consequence $\mathrm d(1/\signal{\alpha}_s)/\mathrm d\ln\energy{\mu}=\beta_0/(2\pi)>0$, which makes "the coupling decreases as the scale increases" immediate and links to 12.06.03.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.06.01 Structure of the One-Loop Calculation.md
+priority: high
+graph: no
+manim: no
+summary: The note is dominated by caveats about the source's non-standard polarization normalization, so a reader cannot extract a clean, correct calculation.
+- [Correctness] The physical-quantities table lists $\mechanical{\ell}$ ("integration momentum in Fig. 12.8"), but the note text never uses $\ell$; drop it or introduce the loop momentum in the gluon-loop section.
+- [Simplify] Rewrite the gauge-sector result in the background-field gauge, where the coefficients are clean and gauge independent: $\signal{\Pi}_{\mathrm{BF}}=\frac{\signal{g}_s^2}{16\pi^2}\left(\frac{11}{3}C_A-\frac43T_FN_f\right)\ln(\energy{\mu}^2/(-\mechanical{k}^2))$, which gives $\beta_0$ directly; then the four source-normalization callouts can shrink to one sentence.
+- [Example] Alternatively show the ordinary covariant-gauge numbers explicitly, $Z_3=1+\frac{\signal{g}_s^2}{16\pi^2\varepsilon}\left[\left(\frac{13}{6}-\frac{\xi}{2}\right)C_A-\frac43T_FN_f\right]$ and $Z_1$ from the three-gluon vertex, and combine $Z_g=Z_1Z_3^{-3/2}$ so the $\xi$-dependence visibly cancels.
+- [Structure] Group all source-convention remarks (factor-two normalization, tadpole vanishing in dimensional regularization, external-momentum arrows) into one callout at the end, keeping the main text a linear derivation.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.06.02 Overall Result.md
+priority: medium
+graph: no
+manim: no
+summary: The final β₀ is correct, but the factor 2 between the source's polarization coefficient and β₀ is introduced without explanation.
+- [Simplify] Explain the step $\beta_0=2\left(\frac{11}{6}C_A-\frac23T_FN_f\right)$: state that the source's $\signal{\Pi}$ is normalized to half the conventional coefficient (cf. the $4T_FN_f/3$ remark in 12.06.01), or derive $\beta(\signal{g}_s)=-\frac{\signal{g}_s}{2}\,\mathrm d\signal{\Pi}/\mathrm d\ln\energy{\mu}$ in that convention, so the factor is not magic.
+- [Example] Add a small table of $\beta_0$ for $N_f=3,4,5,6$ ($9,\,25/3,\,23/3,\,7$) to show which value applies in which energy range.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.06.03 Running Coupling and the Landau Scale.md
+priority: medium
+graph: yes
+manim: no
+summary: The one-loop solution is correct and well explained, but the benchmark combines αs(M_Z) with six active flavors, which is physically inconsistent.
+- [Correctness] At $\mechanical{M}_Z=91.2\,\unit{GeV}$ the top quark ($173\,\unit{GeV}$) is not active, so the physical one-loop curve through $\signal{\alpha}_s(\mechanical{M}_Z)=0.118$ uses $N_f=5$, $\beta_0=23/3$, giving $\energy{\Lambda}^{(5)}_{\mathrm{1\,loop}}\approx88\,\unit{MeV}$; state this instead of the $N_f=6$, $\beta_0=7$ point at $x\approx7.61$, and keep $N_f=6$ only as an explicit formal exercise.
+- [Graph] Replace or supplement Fig. 12.11 with $\signal{\alpha}_s(\energy{\mu})$ versus $\energy{\mu}$ on a log axis from $1$ to $1000\,\unit{GeV}$, one-loop with $N_f=5$ through $0.118$ at $91.2\,\unit{GeV}$, optionally switching to $N_f=6$ at $m_t=173\,\unit{GeV}$ and $N_f=4$ at $m_b=4.2\,\unit{GeV}$; the current $x=\ln(\energy{\mu}/\energy{\Lambda})$ axis hides the physical energy scale.
+- [Intuition] Add a one-line numerical sense of the running, e.g. one-loop $N_f=5$ from $0.118$ gives about $0.17$ at $10\,\unit{GeV}$ and about $0.09$ at $1\,\unit{TeV}$.
+- [Simplify] In Example 12.5 relate the QED result to the QCD normalization: one Dirac fermion of unit charge contributes $-\frac43$ to $\beta_0$ in the convention of (12.13), which reproduces $\beta(\electric{\alpha})=+2\electric{\alpha}^2/(3\pi)$.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.07 Confinement.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub that distinguishes colored fields in calculations from color-singlet asymptotic states.
+- [Structure] No change needed.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.07.01 Evidence for Confinement.md
+priority: medium
+graph: yes
+manim: yes
+summary: Correct physics with good caveats, but the Cornell potential lacks a picture and a string-breaking estimate.
+- [Simplify] The potential is labelled "$\mechanical{r}\to\infty$" although the next lines say the Coulomb term dominates at short distance; label it as the Cornell potential valid over $0.1\lesssim r\lesssim1\,\mathrm{fm}$ instead.
+- [Graph] Plot $\energy{V}(r)=-\frac{4}{3}\frac{\signal{\alpha}_s\hbar c}{r}+\energy{\sigma}r$ for $r=0.05$–$1.5\,\mathrm{fm}$ with $\signal{\alpha}_s\approx0.3$ and $\energy{\sigma}=0.18\,\unit{GeV^2}\approx0.91\,\unit{GeV/fm}$, plus a dashed flat continuation beyond $r_b\approx1.2\,\mathrm{fm}$ to show schematically where dynamical light quarks break the string.
+- [Example] Convert the string tension to intuitive units, $\energy{\sigma}\approx0.18\,\unit{GeV^2}\approx0.9\,\unit{GeV/fm}\approx14$ tonnes-force, and estimate the breaking distance $r_b\approx1.2\,\mathrm{fm}$ from $\energy{\sigma}r_b\approx1$–$1.2\,\unit{GeV}$, the energy needed to create a light quark pair that binds to the static sources.
+- [Manim] Animate a quark–antiquark pair being pulled apart: field lines collapse into a flux tube whose length grows, then the tube snaps and a new $q\bar q$ pair forms two mesons; this shows string breaking better than a static plot.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.07.02 Theoretical Criteria for Confinement.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and carefully qualified Wilson-loop criterion; the area-law-to-potential step could be shown as one equation.
+- [Simplify] Write the derivation in one line: $\langle\signal{W}(R,T)\rangle\xrightarrow{T\to\infty}e^{-\energy{V}(R)T}$, so area law $e^{-\energy{\sigma}RT}$ gives $\energy{V}(R)=\energy{\sigma}R$ and perimeter law gives $\energy{V}(R)\to2\energy{\kappa}$ (constant); the current prose paragraph conveys this less directly.
+- [Graph] Plot $\energy{V}(R)=-\ln\langle W\rangle/T$ versus $R$ for the area law (linear, slope $\energy{\sigma}$) and the perimeter law (saturating at $2\energy{\kappa}$) at large $T$, with $R$ in units of $\energy{\sigma}^{-1/2}$.
+- [Simplify] The Wilson loop uses $\signal{g}$ while the rest of the chapter uses $\signal{g}_s$; either use $\signal{g}_s$ or state that the criterion is for a general gauge group.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.08 Ward–Slavnov–Taylor Identities.md
+priority: low
+graph: no
+manim: no
+summary: Concise, correct hub on the origin of the WST identities.
+- [Structure] No change needed; optionally write the generic identity $\langle\delta_{\mathrm{BRST}}\mathcal O\rangle=0$ as one display so the "integral of this change vanishes" sentence has a formula.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.08.01 The WST Identity for the Propagator.md
+priority: low
+graph: no
+manim: no
+summary: Correct and short; the tensor-decomposition argument is described in words but not shown.
+- [Example] Show the two-line decomposition: $\signal{\Pi}_{\mu\nu}=A(k^2)g_{\mu\nu}+B(k^2)k_\mu k_\nu$, and $k^\mu\signal{\Pi}_{\mu\nu}=(A+Bk^2)k_\nu=0$ gives $B=-A/k^2$, i.e. the transverse form; then a Proca term $m^2g_{\mu\nu}$ fails because $k^\mu m^2g_{\mu\nu}=m^2k_\nu\neq0$.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.08.02 Relations between Renormalizations.md
+priority: low
+graph: no
+manim: no
+summary: The four ratios for Z_g are correct and the leg-counting explanation is helpful, but the gluon field factor changes name mid-note.
+- [Simplify] Define $\signal{A}_{\mu,0}^a=Z_A^{1/2}\signal{A}_\mu^a$ directly (or use $Z_3$ in the identity) instead of switching from $Z_3$ to $Z_A$ and explaining it in a callout; also define $Z_q$ by $\signal{q}_0=Z_q^{1/2}\signal{q}$ in the opening display.
+- [Example] State the one-loop consequence $Z_g=1-\frac{\signal{g}^2}{16\pi^2\varepsilon}\frac{\beta_0}{2}$ (with $\beta_0=\frac{11}{3}C_A-\frac43T_FN_f$), which shows how these identities feed the beta function of 12.06.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.09 Advanced Topics and Outlook.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub that states what each advanced tool is for; no change needed.
+- [Structure] No change needed.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.09.01 The Topological Sector - Instantons.md
+priority: medium
+graph: no
+manim: no
+summary: Correct with the normalization fix, but the note lacks the instanton action and the tunnelling suppression that give the topic its physical meaning.
+- [Simplify] Move the corrected charge $\signal{Q}=\frac{\signal{g}_s^2}{32\pi^2}\int\signal{F}\hat{\signal{F}}$ into the main text and put the source's coupling-absorbed form into the callout, so the primary formula matches the chapter convention.
+- [Intuition] Add the Bogomolny bound $S_E\geq\frac{8\pi^2}{\signal{g}_s^2}\lvert\signal{Q}\rvert$, saturated by (anti-)self-dual fields; this explains both why instantons solve the equations and why tunnelling is suppressed by $e^{-8\pi^2/\signal{g}_s^2}$.
+- [Example] Add the BPST instanton $A_\mu\propto\frac{x^\nu}{x^2+\rho^2}$ with action density $\propto\rho^4/(x^2+\rho^2)^4$ to show a concrete $\signal{Q}=1$ configuration of size $\rho$.
+- [Simplify] Replace "The source discusses ... strong CP problem" with the actual statement: the term $\frac{\bar\theta\,\signal{g}_s^2}{32\pi^2}\signal{F}\tilde{\signal{F}}$ is bounded by the neutron EDM to $\lvert\bar\theta\rvert\lesssim10^{-10}$.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.09.02 Large-N_c Expansion.md
+priority: low
+graph: no
+manim: no
+summary: Correct and well-motivated description of the 't Hooft limit.
+- [Example] Give the standard counting results in one line: planar diagrams scale as $N_c^2$ for vacuum graphs, each handle costs $1/N_c^2$, each quark loop costs $1/N_c$, and meson couplings scale as $1/\sqrt{N_c}$ (narrow, weakly interacting mesons).
+- [Intuition] Mention the double-line notation (gluon as a quark–antiquark color line pair) as the device that makes the planar dominance visible.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.09.03 Wilson Operators and ’t Hooft Loops.md
+priority: low
+graph: no
+manim: no
+summary: Correct idealized phase table with appropriate caveats.
+- [Simplify] Add the defining 't Hooft commutation relation $\signal{W}(C)\signal{B}(C')=e^{2\pi i n/N}\signal{B}(C')\signal{W}(C)$ for linked loops (linking number $n$), which makes "magnetic disorder operator" and the electric–magnetic duality of the table precise.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.10 Exercises/12.10 Exercises.md
+priority: low
+graph: no
+manim: no
+summary: Useful exercise index with a reading guide; no change needed.
+- [Structure] No change needed.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.10 Exercises/12.10.01 Structure constants of SU(2).md
+priority: low
+graph: no
+manim: no
+summary: Correct and complete short exercise.
+- [Structure] The two prediction/check paragraphs appear before the actual calculation; move them after the matrix product so the solution reads calculation first, checks second.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.10 Exercises/12.10.02 Covariance of the covariant derivative.md
+priority: low
+graph: no
+manim: no
+summary: Correct derivation with a clear cancellation of the derivative terms.
+- [Correctness] The physical-quantities table lists $\signal{A}_\mu^a$ and describes the fields as appearing "in the field equations", but this note uses neither the components nor any field equation; list only $\signal{A}_\mu$, $\signal{A}_\mu^U$, $\signal{A}'_\mu$.
+- [Simplify] The hint uses $\signal{A}_\mu^U$ and the solution uses $\signal{A}'_\mu$ for the same object; use one symbol.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.10 Exercises/12.10.03 Jacobi identity for the structure constants.md
+priority: low
+graph: no
+manim: no
+summary: Correct and compact solution.
+- [Example] Show the claimed adjoint check explicitly: with $(T^a_{\mathrm{adj}})_{bc}=-if^{abc}$, $[T^a_{\mathrm{adj}},T^b_{\mathrm{adj}}]_{ce}=if^{abd}(T^d_{\mathrm{adj}})_{ce}$ is exactly the derived identity after relabelling; currently it is only asserted.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.10 Exercises/12.10.04 Adjoint quadratic Casimir of SU(N).md
+priority: low
+graph: no
+manim: no
+summary: Correct, and the double-commutator route fills the source's gap well.
+- [Simplify] Show the one-line derivation of $\sum_aT^aXT^a=\frac12\operatorname{tr}(X)\,1-\frac{X}{2N}$ from the completeness relation (contract with $X_{jk}$), since the final result depends on it.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.10 Exercises/12.10.05 Yang–Mills equations of motion.md
+priority: low
+graph: no
+manim: no
+summary: Correct Euler–Lagrange derivation with good checks.
+- [Simplify] The step from $-\signal{g}f^{bac}\signal{F}^{b\mu}{}_\nu\signal{A}^{c\nu}$ to $+\signal{g}f^{abc}\signal{A}_\nu^b\signal{F}^{c\nu\mu}$ is summarized as "reordering"; show the two moves (antisymmetry $F^{\mu\nu}=-F^{\nu\mu}$ and relabelling $b\leftrightarrow c$ with $f^{acb}=-f^{abc}$) explicitly.
+- [Intuition] Add the matter-source version $(D_\nu\signal{F}^{\nu\mu})^a=-\signal{g}\bar\psi\gamma^\mu T^a\psi$ (sign per convention) to show that the gluon field itself carries color current, unlike Maxwell.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.10 Exercises/12.10.06 Non-Abelian Bianchi identity.md
+priority: low
+graph: no
+manim: no
+summary: Correct operator proof, though the step from the Jacobi identity to the cyclic curvature identity is skipped.
+- [Simplify] Insert the intermediate line $[D_\mu,[D_\nu,D_\rho]]=-i\signal{g}[D_\mu,\signal{F}_{\nu\rho}]=-i\signal{g}(D_\mu\signal{F}_{\nu\rho})$ so the cyclic identity follows visibly, and give the component form $(D_\mu F_{\nu\rho})^a=\partial_\mu F^a_{\nu\rho}+gf^{abc}A^b_\mu F^c_{\nu\rho}$.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.10 Exercises/12.10.07 Three-gluon vertex with two equal color indices.md
+priority: low
+graph: no
+manim: no
+summary: Correct short solution with a useful counterexample (f¹²⁸ = 0).
+- [Simplify] Clarify that $f^{aac}$ here means a fixed component with no sum over $a$; with the summation convention it would read as a contraction.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.10 Exercises/12.10.08 Annihilation color factor for quark–antiquark scattering.md
+priority: low
+graph: no
+manim: no
+summary: Correct 2/9 result with a justified mismatch note; the coherent-versus-incoherent explanation is repeated several times.
+- [Simplify] Merge the two paragraphs after the "Color-factor mismatch" note with the earlier callout; the coherent internal sum versus incoherent external average is explained three times.
+- [Example] Add the companion $t$-channel and interference color factors for identical flavors ($2/9$, $2/9$, and $-2/27$), which is what a combined channel structure would need and shows why $16/9$ cannot arise.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.10 Exercises/12.10.09 Fermion screening and gluon antiscreening.md
+priority: low
+graph: no
+manim: no
+summary: Correct qualitative and quantitative comparison of screening and antiscreening.
+- [Intuition] Add the Nielsen–Hughes decomposition: each massless helicity state of spin $s$ contributes to $\beta_0$ in proportion to $(-1)^{2s}[(2s)^2-1/3]$, so a gluon gives $4-1/3=11/3$ (times $C_A$; paramagnetic spin term $4$ beats diamagnetic $-1/3$), a Weyl fermion $-(1-1/3)=-2/3$ (times $T_F$, hence $-\frac43T_F$ per Dirac flavor); this makes the "paramagnetic analogy" quantitative.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.10 Exercises/12.10.10 Formal infrared scale in QCD.md
+priority: low
+graph: yes
+manim: no
+summary: Numbers are correct for the stated fixed six-flavor exercise, and the caveats are explicit.
+- [Example] Add the physically appropriate five-flavor one-loop value for comparison: $\beta_0=23/3$ gives $\ln(\mechanical{M}_Z/\energy{\Lambda})=6.945$ and $\energy{\Lambda}^{(5)}\approx88\,\unit{MeV}$, $\energy{\mu}^*\approx200\,\unit{MeV}$, which closes much of the gap to the $210\,\unit{MeV}$ benchmark.
+- [Graph] Plot one-loop $\signal{\alpha}_s(\energy{\mu})$ for $N_f=6$ and $N_f=5$ through $0.118$ at $91.2\,\unit{GeV}$, $\energy{\mu}$ from $0.05$ to $100\,\unit{GeV}$ (log axis), with horizontal line $\signal{\alpha}_s=1$ and the poles at $45$ and $88\,\unit{MeV}$ marked.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.10 Exercises/12.10.11 Gluon propagator in covariant gauges.md
+priority: low
+graph: no
+manim: no
+summary: Correct propagators and a clear correction of the source's gauge-independence claim.
+- [Example] Give the actual counterexample for part (c): at one loop in pure Yang–Mills the divergent part of the scalar is $\propto C_A\left(\frac{13}{6}-\frac{\xi}{2}\right)$, which visibly depends on $\xi$; this is stronger than the abstract argument.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.10 Exercises/12.10.12 Symmetry of the four-gluon vertex.md
+priority: low
+graph: no
+manim: no
+summary: Correct vertex and symmetry argument, with the long historical note somewhat out of place.
+- [Structure] Move the historical note (Weyl, Yang–Mills, Faddeev–Popov, BRST, Nobel 2004) to the chapter exercise index or chapter introduction; it is unrelated to the vertex symmetry task.
+- [Simplify] The exercise asks for the simultaneous exchange of both pairs; add one sentence stating that invariance under each exchange separately implies invariance under their composition.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.01 Spontaneous Symmetry Breaking.md
+priority: low
+graph: no
+manim: no
+summary: Clear chapter introduction and hub that motivates the Higgs construction.
+- [Structure] No change needed; the final "Spontaneous symmetry breaking" section is only two sentences and could be merged into the introduction.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.01.01 Breaking a Discrete Symmetry - The Double-Well Potential.md
+priority: low
+graph: no
+manim: no
+summary: Correct expansion with a corrected figure and clear physical remarks.
+- [Simplify] Show the curvature check that the prose describes: $\energy{V}''(\signal{v})=-\energy{\mu}^2+3\signal{\lambda}\signal{v}^2=2\energy{\mu}^2=\mechanical{m}_\eta^2$, versus $\energy{V}''(0)=-\energy{\mu}^2<0$.
+- [Example] Mention the domain wall (kink) $\signal{\phi}(z)=\signal{v}\tanh(\mechanical{m}_\eta z/2)$ interpolating between the two vacua, a concrete consequence of a broken discrete symmetry.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.01.02 Breaking a Continuous Symmetry - Goldstone's Theorem.md
+priority: medium
+graph: no
+manim: yes
+summary: Correct model, figure, and Hessian proof; the general proof is abstract and lacks a worked Hessian example.
+- [Example] Show the U(1) Hessian in Cartesian components $\signal{\Phi}=(\phi_1+i\phi_2)/\sqrt2$ at $\langle\phi\rangle=(\signal{v},0)$: $\mechanical{\mathcal M}^2=\operatorname{diag}(2\energy{\mu}^2,0)$, and that the null vector is the rotated vacuum $T\signal{v}\propto(0,\signal{v})$.
+- [Simplify] In the proof, state that for real fields the generators $(T^a)_{ij}$ are real antisymmetric (the infinitesimal transformation is $\delta\phi_i=\varepsilon^a(T^a)_{ij}\phi_j$), otherwise readers will confuse them with the Hermitian $T^a$ used elsewhere in the chapter.
+- [Simplify] Show the second-order expansion step that yields $\frac12(\partial\signal{\theta})^2$: $\lvert\partial\signal{\Phi}\rvert^2=\frac12(\partial\signal{h})^2+\frac{(\signal{v}+\signal{h})^2}{2\signal{v}^2}(\partial\signal{\theta})^2$.
+- [Manim] Animate a ball released at the top of the Mexican hat rolling to an arbitrary point on the trough, then oscillating radially (massive $\signal{h}$, finite frequency) versus drifting freely around the trough (massless $\signal{\theta}$); motion makes the mass/no-mass distinction intuitive.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.02 The Higgs Mechanism.md
+priority: low
+graph: no
+manim: no
+summary: Clear motivating hub with the polarization count stated up front.
+- [Structure] No change needed.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.02.01 The Abelian Higgs Model.md
+priority: low
+graph: no
+manim: no
+summary: Correct and complete derivation, including the corrected gauge phase and the degree-of-freedom count.
+- [Intuition] Add the superconductor analogy in one or two sentences (Cooper-pair condensate, photon mass $=$ inverse London penetration depth), the condensed-matter origin of the mechanism.
+- [Simplify] Show the cancellation in one display: under the gauge transformation $\signal{\theta}\to\signal{\theta}+\electric{e}\signal{v}\alpha$ and $\electric{A}_\mu\to\electric{A}_\mu+\partial_\mu\alpha$, so $\partial_\mu\signal{\theta}-\electric{e}\signal{v}\electric{A}_\mu$ is invariant; the current paragraph says this only in words.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.02.02 The Rξ Gauge.md
+priority: low
+graph: yes
+manim: no
+summary: Correct propagators and caveats; the Rξ gauge-fixing term itself is never written.
+- [Example] Write the gauge-fixing term $-\frac{1}{2\xi}(\partial_\mu\electric{A}^\mu-\xi\electric{e}\signal{v}\signal{\theta})^2$ and show that it cancels the $\electric{A}^\mu\partial_\mu\signal{\theta}$ mixing and gives $\mechanical{m}_\theta^2=\xi\mechanical{m}_W^2$; also mention the ghost mass $\xi\mechanical{m}_W^2$.
+- [Graph] Plot the longitudinal propagator factor $k^2\lvert D_L(k^2)\rvert$ versus $k^2/\mechanical{m}_W^2$ (from 0 to 50) for $\xi=1,10$ and unitary gauge, where $D_L=\xi/(k^2-\xi m_W^2)$ in Rξ and $-1/m_W^2$ in unitary gauge, to show the missing $1/k^2$ falloff.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.03 The Glashow–Weinberg–Salam Electroweak Theory.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub with a sensible reading order.
+- [Structure] No change needed.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.03.01 The Gauge Group and Vector Bosons.md
+priority: low
+graph: no
+manim: no
+summary: Correct and concise gauge-sector definition.
+- [Structure] No change needed; optionally preview $\signal{W}^\pm=(\signal{W}^1\mp i\signal{W}^2)/\sqrt2$ here since the last paragraph names $\signal{W}^\pm$ before they are defined.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.03.02 Fermion Representations.md
+priority: low
+graph: no
+manim: no
+summary: Correct representation list and charge checks.
+- [Example] Add one table listing every first-generation field with $T^3$, $\electric{Y}$, and $\electric{Q}_{\mathrm{em}}$, including the right-chiral fields ($u_R$: $0+2/3$, $d_R$: $0-1/3$, $e_R$: $0-1$), which the current check omits.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.03.03 The Higgs Doublet and Electroweak SSB.md
+priority: low
+graph: no
+manim: no
+summary: Correct and well-argued description of the doublet and the residual U(1)em.
+- [Example] Show the explicit check $\electric{Q}_{\mathrm{em}}\langle\signal{H}\rangle=(T^3+\electric{Y})\frac{1}{\sqrt2}(0,\signal{v})^T=(-\frac12+\frac12)\cdot(\ldots)=0$ and $(T^3-\electric{Y})\langle\signal{H}\rangle=-\langle\signal{H}\rangle\neq0$ as one display, since the text states it in words.
+- [Intuition] Mention $\signal{v}=(\sqrt2\signal{G}_F)^{-1/2}\approx246\,\unit{GeV}$, which is how the value is actually obtained (cf. Exercise 13.4).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.03.04 Gauge Boson Masses - The Explicit Calculation.md
+priority: low
+graph: no
+manim: no
+summary: Correct explicit mass calculation with careful remarks on tree-level inputs.
+- [Simplify] Show the two-line neutral mass matrix $\frac{\signal{v}^2}{8}\begin{pmatrix}\signal{g}^2&-\signal{g}\signal{g}'\\-\signal{g}\signal{g}'&\signal{g}'^2\end{pmatrix}$ in the $(\signal{W}^3,\signal{B})$ basis with eigenvalues $0$ and $(\signal{g}^2+\signal{g}'^2)\signal{v}^2/4$; the zero-determinant argument is described but not displayed.
+- [Example] Add numbers: with $\signal{g}\approx0.65$, $\signal{v}=246\,\unit{GeV}$ one gets $\mechanical{m}_W\approx80\,\unit{GeV}$, making Remark 13.4's "a gauge coupling is also required" concrete.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.03.05 Fermion Masses and Yukawa Couplings.md
+priority: low
+graph: no
+manim: no
+summary: Correct Yukawa construction with clear gauge-invariance reasoning.
+- [Example] Add the numerical range of Yukawas, $y_e=\sqrt2m_e/\signal{v}\approx2.9\times10^{-6}$ to $y_t\approx0.99$, to illustrate "symmetry does not predict the hierarchy".
+- [Simplify] Show $\tilde{\signal{H}}=i\sigma^2\signal{H}^*\to\frac{1}{\sqrt2}(\signal{v}+\signal{h},0)^T$ in unitary gauge so the up-type mass derivation is as explicit as the electron one.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.03.06 The CKM Matrix.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct definition, but the parameter count and the size pattern of the matrix are asserted without derivation.
+- [Example] Derive the count: an $N\times N$ unitary matrix has $N^2$ real parameters, $2N-1$ relative quark phases can be removed, leaving $(N-1)^2$, of which $N(N-1)/2$ are angles and $(N-1)(N-2)/2$ phases, so $N=3$ gives three angles and one phase and $N=2$ gives no phase.
+- [Example] Add approximate magnitudes or the Wolfenstein form with $\lambda\approx0.225$, $A\approx0.83$, showing the hierarchy $\lvert V_{ud}\rvert\approx0.974$, $\lvert V_{us}\rvert\approx0.225$, $\lvert V_{cb}\rvert\approx0.041$, $\lvert V_{ub}\rvert\approx0.004$.
+- [Graph] Plot the unitarity triangle in the $(\bar\rho,\bar\eta)$ plane with vertices $(0,0)$, $(1,0)$, and $(\bar\rho,\bar\eta)\approx(0.16,0.35)$, labelling the angles $\alpha,\beta,\gamma$; its nonzero area is the rephasing-invariant CP measure mentioned in the note.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.03.07 Neutral Currents and Charged Currents.md
+priority: low
+graph: yes
+manim: no
+summary: Correct current structure and a justified correction of the figure caption.
+- [Example] Add a small table of $g_V^f=T^3_f-2Q_f\sin^2\theta_W$ and $g_A^f=T^3_f$ for $\nu,e,u,d$ (e.g. $g_V^e\approx-0.04$, $g_V^u\approx0.19$, $g_V^d\approx-0.35$), linking (13.6) to the worked example in 13.09.
+- [Graph] Plot $g_V^f(\sin^2\theta_W)$ for $\nu,e,u,d$ over $\sin^2\theta_W\in[0,0.5]$ with a vertical marker at $0.231$, showing why the electron vector coupling nearly vanishes and why neutral-current asymmetries measure the weak angle.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.04 The QCD Sector.md
+priority: low
+graph: no
+manim: no
+summary: Correct summary of the QCD sector within the Standard Model.
+- [Simplify] Avoid reusing $\lambda^a$ (Gell-Mann matrices) next to the Higgs quartic $\signal{\lambda}$ in neighbouring notes, or add a one-line remark that $\lambda^a$ here are matrices, not the Higgs coupling.
+- [Example] Add the Gell-Mann–Oakes–Renner relation $m_\pi^2f_\pi^2\approx(m_u+m_d)\lvert\langle\bar qq\rangle\rvert$ as the quantitative form of the pseudo-Goldstone statement.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.05 The Complete Standard Model Lagrangian.md
+priority: medium
+graph: no
+manim: no
+summary: Correct Lagrangian and parameter count, but one symbol carries two meanings in the same note.
+- [Correctness] Symbol clash: $\lambda^a$ denotes the Gell-Mann matrices in $D_\mu\signal{Q}$ and $\signal{\lambda}$ the Higgs quartic coupling in $\energy{\mathcal L}_{\mathrm{Higgs}}$; write the color generators as $T^a$ (as in 13.04 with $T^a=\lambda^a/2$) to remove the clash.
+- [Simplify] Add a compact table of each multiplet's $(SU(3),SU(2),Y)$ labels next to the covariant derivatives, so the hypercharge factors $\frac16,\frac23,-\frac13,-\frac12,-1$ can be read rather than inferred from signs.
+- [Simplify] Move the corrected topological term $\frac{\signal{g}_s^2\theta}{32\pi^2}\signal{G}\tilde{\signal{G}}$ into the main display, with the source's form in the note, so it matches the canonical gluon normalization used in the gauge sector.
+- [Intuition] Note that the two Higgs parameters are equivalently $\signal{v}\approx246\,\unit{GeV}$ and $\mechanical{m}_h\approx125\,\unit{GeV}$ ($\signal{\lambda}\approx0.13$), the form in which they are measured.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.06 Anomaly Cancellation.md
+priority: low
+graph: no
+manim: no
+summary: Correct anomaly conditions and checks; two mixed anomalies are asserted rather than verified.
+- [Example] Verify the remaining two conditions explicitly as for $SU(2)^2U(1)$: $[SU(3)]^2U(1)_Y$: $2\cdot\frac16-\frac23+\frac13=0$; gravitational: $6\cdot\frac16+2(-\frac12)-3\cdot\frac23-3(-\frac13)-(-1)=0$.
+- [Intuition] State the physical punchline once: anomaly cancellation fixes quark charges relative to lepton charges and requires complete generations, which is why the top quark had to exist given the $b$ and $\tau$.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.07 Experimental Successes of the Standard Model.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub distinguishing discovery tests from precision tests.
+- [Structure] No change needed.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.07.01 Predictions and Discoveries.md
+priority: low
+graph: no
+manim: no
+summary: Accurate chronology with appropriate caveats about source values.
+- [Structure] Add a short timeline table (prediction year, discovery year, experiment, mass) for $W$, $Z$, top, Higgs, and optionally the gluon (PETRA 1979) and neutral currents (1973), which would compress the prose.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.07.02 Precision Tests.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct Z-pole physics, but the muon g−2 comparison is outdated and no longer represents the status of the test.
+- [Correctness] The muon $g-2$ section is outdated: the final Fermilab result (2025) is $\magnetic{a}_\mu^{\mathrm{exp}}\approx116\,592\,071(15)\times10^{-11}$ and the 2025 Theory Initiative prediction (lattice HVP) is $\approx116\,592\,033(62)\times10^{-11}$, so the former $5\sigma$ tension has essentially disappeared; update or clearly mark the 2020/2023 numbers as superseded.
+- [Graph] Plot the Z lineshape $\sigma_{\mathrm{had}}(\sqrt s)$ for $\sqrt s=88$–$95\,\unit{GeV}$ as a relativistic Breit–Wigner with $\Gamma_Z=\Gamma_{\mathrm{vis}}+N_\nu\cdot0.166\,\unit{GeV}$ for $N_\nu=2,3,4$ (peak $\propto1/\Gamma_Z^2$), the classic figure behind $N_\nu=2.984$.
+- [Example] Show the arithmetic of the neutrino count: $\Gamma_{\mathrm{inv}}\approx499\,\unit{MeV}$ divided by $\Gamma(Z\to\nu\bar\nu)\approx166\,\unit{MeV}$ gives $\approx3.0$, linking to 13.09.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.08 Beyond the Standard Model.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub separating observed effects from theoretical motivations.
+- [Structure] No change needed.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.08.01 Neutrino Masses.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct Dirac and seesaw estimates, but oscillations themselves are only described in words.
+- [Example] Add the two-flavor oscillation formula $P(\nu_\alpha\to\nu_\beta)=\sin^22\theta\,\sin^2\!\left(1.27\,\Delta m^2[\mathrm{eV^2}]\,L[\mathrm{km}]/E[\mathrm{GeV}]\right)$ and the measured $\Delta m^2_{21}\approx7.4\times10^{-5}\,\mathrm{eV^2}$, $\lvert\Delta m^2_{31}\rvert\approx2.5\times10^{-3}\,\mathrm{eV^2}$.
+- [Graph] Plot $P(\nu_\mu\to\nu_\tau)$ versus $L/E$ (0 to 2000 km/GeV) for $\sin^22\theta=1$, $\Delta m^2=2.5\times10^{-3}\,\mathrm{eV^2}$; optionally a second log-log plot of the seesaw $m_\nu=y^2v^2/(2M_R)$ versus $M_R=10^{10}$–$10^{16}\,\unit{GeV}$ for $y=1,0.1,0.01$ with the $0.05\,\mathrm{eV}$ band.
+- [Simplify] State that the Dirac bound uses $y_\nu=\sqrt2m_\nu/v\approx6\times10^{-13}$ for $0.1\,\mathrm{eV}$, so "$\lesssim10^{-12}$" is visibly derived.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.08.02 The Hierarchy Problem.md
+priority: low
+graph: no
+manim: no
+summary: Correct and carefully qualified discussion of naturalness.
+- [Example] Replace or supplement the schematic $\signal{\lambda}\energy{\Lambda}^2/(16\pi^2)$ with the dominant top-loop term $\delta m_h^2\approx-\frac{3y_t^2}{8\pi^2}\Lambda^2$ and evaluate the cancellation for $\Lambda=10\,\unit{TeV}$ (about one part in $10^2$) versus $M_P$ (about $10^{-34}$).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.08.03 Dark Matter.md
+priority: low
+graph: yes
+manim: no
+summary: Correct short overview that separates gravitational evidence from candidate identification.
+- [Graph] Plot a schematic galaxy rotation curve $v(r)$ for $r=0$–$30\,\mathrm{kpc}$: the Keplerian falloff $v\propto r^{-1/2}$ expected from visible mass alone versus an observed flat curve near $200\,\mathrm{km/s}$ obtained by adding an isothermal or NFW halo.
+- [Intuition] Add the WIMP-miracle estimate $\Omega h^2\approx3\times10^{-27}\,\mathrm{cm^3s^{-1}}/\langle\sigma v\rangle$ to explain why weak-scale cross sections were favoured.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.08.04 The Grand Unification Problem.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct qualitative discussion, but Fig. 13.5 uses arbitrary slopes although the one-loop running is simple to plot exactly.
+- [Graph] Replace the uncalibrated lines $59-0.52x$, $29+0.33x$, $8+1.4x$ with one-loop running $\alpha_i^{-1}(\mu)=\alpha_i^{-1}(M_Z)-\frac{b_i}{2\pi}\ln(\mu/M_Z)$, $\alpha_i^{-1}(M_Z)\approx(59.0,\,29.6,\,8.5)$, SM $b_i=(41/10,\,-19/6,\,-7)$, for $x=\ln(\mu/M_Z)$ from 0 to 37; optionally overlay MSSM $b_i=(33/5,\,1,\,-3)$ above $1\,\unit{TeV}$ to show the near-meeting at $\sim2\times10^{16}\,\unit{GeV}$.
+- [Example] Give the SM pairwise crossing scales from these numbers (roughly $10^{13}$ GeV for $\alpha_1=\alpha_2$ and $10^{17}$ GeV for $\alpha_2=\alpha_3$) to quantify "do not meet exactly".
+- [Simplify] Add the Super-Kamiokande bound $\tau(p\to e^+\pi^0)>2.4\times10^{34}\,\mathrm{yr}$ next to the minimal-SU(5) prediction ($\sim10^{29}$–$10^{31}\,\mathrm{yr}$) so the exclusion statement has numbers.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.08.05 Quantum Gravity.md
+priority: low
+graph: no
+manim: no
+summary: Correct and concise; the power-counting argument could be made numerical.
+- [Example] Add the expansion parameter $G_NE^2=(E/M_P)^2$ with $M_P=G_N^{-1/2}\approx1.2\times10^{19}\,\unit{GeV}$, showing that quantum-gravity corrections at LHC energies are of order $10^{-31}$.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.09 Worked Example - The Decay Width Z → ff̄.md
+priority: low
+graph: no
+manim: no
+summary: Correct, well-structured worked example; the trace step is the only compressed part.
+- [Simplify] Show the trace step: moving $(g_V-g_A\gamma^5)$ through $\not p_2\gamma_\nu$ gives $(g_V^2+g_A^2)\operatorname{Tr}[\not p_1\gamma_\mu\not p_2\gamma_\nu]$ plus a $\gamma^5$ term that vanishes on contraction with $-g^{\mu\nu}$, and $-g^{\mu\nu}\cdot4(p_{1\mu}p_{2\nu}+p_{1\nu}p_{2\mu}-g_{\mu\nu}p_1\cdot p_2)=8p_1\cdot p_2=4m_Z^2$.
+- [Example] Extend the numerical check to all channels: charged leptons $\approx84\,\unit{MeV}$, up-type $\approx286$ (tree $\times3$), down-type $\approx368\,\unit{MeV}$, giving a tree-level total near $2.42\,\unit{GeV}$ versus the measured $2.495\,\unit{GeV}$ (the gap is mostly the QCD factor $1+\alpha_s/\pi$).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.10 Exercises/13.10 Exercises.md
+priority: low
+graph: no
+manim: no
+summary: Useful exercise index with a reading guide; no change needed.
+- [Structure] No change needed.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.10 Exercises/13.10.01 Goldstone modes in the O(3) model.md
+priority: low
+graph: no
+manim: no
+summary: Correct solution with a good geometric prediction of the spectrum.
+- [Simplify] Show the quadratic expansion explicitly: the $\phi_{1,2}^2$ terms are $(\phi_1^2+\phi_2^2)(-\frac{\mu^2}{2}+\frac{\lambda v^2}{2})=0$, while $\sigma^2$ gets $\lambda v^2$; the solution currently only states the result.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.10 Exercises/13.10.02 Degrees of freedom in the Abelian Higgs model.md
+priority: low
+graph: no
+manim: no
+summary: Correct counting with a clear Goldstone–vector mixing argument.
+- [Simplify] The exercise uses $\signal{g}$ and $\signal{\phi}$ where §13.2.1 uses $\electric{e}$ and $\signal{\Phi}$; switch to the section's symbols instead of explaining the renaming.
+- [Intuition] Add the explicit longitudinal polarization $\varepsilon_L^\mu=(\lvert\mathbf k\rvert,E\hat{\mathbf k})/m\approx k^\mu/m$ at high energy, which is why it behaves like the Goldstone $\partial^\mu\theta/m$.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.10 Exercises/13.10.03 Leptonic decay of the W⁺ boson.md
+priority: low
+graph: no
+manim: no
+summary: Correct amplitude, widths, and lifetime with a good inclusive-count argument.
+- [Example] Add the resulting branching ratios $\mathrm{BR}(W\to e\nu)=1/9\approx11.1\%$ and hadronic $6/9$, and note that the QCD factor $1+\alpha_s/\pi$ raises the width to about $2.09\,\unit{GeV}$, explaining most of the gap to the quoted experimental value.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.10 Exercises/13.10.04 Weak mixing angle.md
+priority: low
+graph: no
+manim: no
+summary: Correct numerical reconstruction with clear scheme caveats.
+- [Structure] No change needed; the numbers $\sin^2\theta_W=0.2233$, $v=246.22\,\unit{GeV}$, $g=0.6529$, $\alpha=1/132.1$ check out.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.10 Exercises/13.10.05 Cubic hypercharge anomaly.md
+priority: low
+graph: no
+manim: no
+summary: Correct table and exact zero sum.
+- [Structure] No change needed.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.10 Exercises/13.10.06 Rho parameter and scalar multiplets.md
+priority: low
+graph: yes
+manim: no
+summary: Correct general formula, triplet example, and fit interpretation.
+- [Graph] Plot tree-level $\rho=(v_d^2+2v_t^2)/(v_d^2+4v_t^2)$ versus $v_t/v_d$ from 0 to 0.1 with the band $\rho_0=1.00038\pm0.00020$, showing that a single complex triplet pushes $\rho$ below one and is constrained to $v_t/v_d\lesssim10^{-2}$.
+- [Example] Add the real-triplet ($Y=0$) case, which gives $\rho>1$, to show the sign depends on the representation and to motivate the Georgi–Machacek combination mentioned in the scope note.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.10 Exercises/13.10.07 Higgs couplings to gauge bosons.md
+priority: low
+graph: yes
+manim: no
+summary: Correct vertex factors, corrected polarization sum, and width formula.
+- [Simplify] Show the contraction once: $(-g^{\mu\nu}+p_1^\mu p_1^\nu/m_W^2)(-g_{\mu\nu}+p_{2\mu}p_{2\nu}/m_W^2)=2+(p_1\cdot p_2)^2/m_W^4$, so the corrected factor $4$ in the denominator is visible.
+- [Graph] Plot $\Gamma(h\to W^+W^-)$ from the boxed formula for $m_h=2m_W$ to $500\,\unit{GeV}$, showing the threshold rise and the $m_h^3$ growth from longitudinal W bosons.
+- [Simplify] The table gives $\signal{H}$ in $\unit{MeV}$ while all other entries use $\unit{GeV}$; use one unit.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.10 Exercises/13.10.08 One-generation seesaw mechanism.md
+priority: low
+graph: yes
+manim: no
+summary: Correct eigenvalues and numerical scale with careful scope notes.
+- [Graph] Log-log plot of $\lvert m_\pm\rvert$ versus $M_R/m_D$ from $10^{-2}$ to $10^{4}$ using the exact $m_\pm=(M_R\pm\sqrt{M_R^2+4m_D^2})/2$, showing the Dirac limit ($\lvert m_\pm\rvert\approx m_D$) and the seesaw branches $M_R$ and $m_D^2/M_R$.
+- [Simplify] Give the mixing angle $\tan2\theta=2m_D/M_R$, so $\theta\approx m_D/M_R$, which quantifies how sterile the heavy state is.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.10 Exercises/13.10.09 Photon and Z exchange in electron–positron annihilation.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct results, but it switches to half-sized vector and axial couplings, which forces extra conversion factors against 13.09.
+- [Simplify] Use the same vertex convention as 13.09 ($\frac{\signal{g}}{2\cos\theta_W}\gamma^\mu(g_V-g_A\gamma^5)$ with $g_V=T^3-2Q\sin^2\theta_W$); then $A_\ell=g_V^2+g_A^2$ directly and the "factors of two" paragraph disappears.
+- [Example] Part (b) asks to show the QED cross section but only states it; add the two-line derivation from $\overline{\lvert\mathcal M\rvert^2}=e^4(1+\cos^2\theta)$ and $d\sigma/d\Omega=\alpha^2(1+\cos^2\theta)/(4s)$.
+- [Graph] Plot $\sigma(e^+e^-\to\mu^+\mu^-)$ versus $\sqrt s=10$–$200\,\unit{GeV}$ on a log scale: pure photon $4\pi\alpha^2/(3s)$, pure Z Breit–Wigner, and the full result with interference, showing the Z peak near $2\,\mathrm{nb}$.
+- [Intuition] Mention the forward–backward asymmetry generated by the $\gamma$–Z interference below the pole (about $-10\%$ for $\mu^+\mu^-$ at $\sqrt s\approx35\,\unit{GeV}$ at PETRA), the first visible sign of the Z.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.10 Exercises/13.10.10 Accidental Standard Model symmetries.md
+priority: low
+graph: no
+manim: no
+summary: Correct anomaly coefficients, ΔB = ΔL = 3, and lifetime estimate with clear corrections.
+- [Simplify] The instanton weight $e^{-8\pi^2/\signal{g}^2}\sim10^{-80}$ is an amplitude factor; the transition rate goes as its square, $e^{-16\pi^2/\signal{g}^2}=e^{-4\pi/\alpha_W}\sim10^{-160}$, so state which one is meant.
+- [Example] Add the sphaleron barrier height $E_{\mathrm{sph}}\sim\frac{4\pi\signal{v}}{\signal{g}}\times\mathcal O(2)\approx9\,\unit{TeV}$ to explain why $\thermal{T}\gtrsim100\,\unit{GeV}$ makes $B+L$ violation fast.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.01 Natural Units.md
+priority: low
+graph: no
+manim: no
+summary: Clear convention statement with sensible checks.
+- [Structure] No change needed.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.01.01 Fundamental Conversion Factors.md
+priority: low
+graph: no
+manim: no
+summary: Correct reference table with a useful worked conversion.
+- [Example] Add the time conversion $1\,\unit{GeV^{-1}}=6.582\times10^{-25}\,\mathrm{s}$ ($\hbar$ in $\unit{GeV\,s}$), which is used in the W-lifetime and proton-lifetime exercises but missing from Table A.1.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.01.02 Dimensions in Natural Units.md
+priority: low
+graph: no
+manim: no
+summary: Correct dimension table and derivation.
+- [Example] Add a row or sentence for couplings with dimension, e.g. the Fermi constant $[G_F]=[M]^{-2}$ and Newton's constant $[G_N]=[M]^{-2}$, which connects power counting to nonrenormalizability used in Chapter 13.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.02 Metric and Relativistic Conventions.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub for metric and index conventions.
+- [Structure] No change needed.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.02.01 Metric Tensor.md
+priority: low
+graph: no
+manim: no
+summary: Correct and well-checked metric convention.
+- [Structure] No change needed.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.02.02 Covariant and Contravariant Indices.md
+priority: low
+graph: no
+manim: no
+summary: Correct and clear index conventions.
+- [Structure] No change needed.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.03 Four-Vectors.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub for four-vector definitions.
+- [Structure] No change needed.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.03.01 Spacetime Coordinate.md
+priority: low
+graph: no
+manim: no
+summary: Correct coordinate convention with useful interval checks.
+- [Structure] No change needed.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.03.02 Four-Momentum.md
+priority: low
+graph: no
+manim: no
+summary: Correct and clear, including the on-shell versus off-shell distinction.
+- [Structure] No change needed.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.03.03 Derivative Operator.md
+priority: low
+graph: no
+manim: no
+summary: Correct derivative conventions and sign checks.
+- [Example] Add the plane-wave check $i\partial^\mu e^{-ip\cdot x}=p^\mu e^{-ip\cdot x}$, which ties the derivative convention to four-momentum and the Klein–Gordon equation $(\Box+m^2)\phi=0$.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.03.04 Electromagnetic Current and Potential.md
+priority: low
+graph: no
+manim: no
+summary: Correct field-tensor components with an explicit sign check.
+- [Example] Add the covariant Maxwell equations $\partial_\mu\electric{F}^{\mu\nu}=\electric{j}^\nu$ and the Lorentz force $dp^\mu/d\tau=qF^{\mu\nu}u_\nu$ in this sign convention, since those are where the $\electric{F}^{0i}=-\electric{E}^i$ sign matters.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.04 Gamma Matrices and Clifford Algebra.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub; all linked notes exist.
+- [Structure] No change needed.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.04.01 Clifford Algebra.md
+priority: low
+graph: no
+manim: no
+summary: Correct and clear algebra with the slash-squared check.
+- [Structure] No change needed.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.04.02 Dirac–Pauli Representation.md
+priority: low
+graph: no
+manim: no
+summary: Correct matrices and consistency checks.
+- [Structure] No change needed.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.04.03 Weyl Representation (Chiral).md
+priority: low
+graph: no
+manim: no
+summary: Correct Weyl matrices and chirality assignment.
+- [Example] Add the explicit Weyl-basis Dirac equation $\begin{pmatrix}-m&i\sigma\cdot\partial\\i\bar\sigma\cdot\partial&-m\end{pmatrix}\begin{pmatrix}\psi_L\\\psi_R\end{pmatrix}=0$, showing that the mass term is what couples the two chiral components.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.04.04 The Matrix γ⁵.md
+priority: low
+graph: no
+manim: no
+summary: Correct definition, representations, and properties.
+- [Structure] No change needed; the $\epsilon$-tensor form and $\epsilon_{0123}=-1$ correctly reproduce $\gamma^5=i\gamma^0\gamma^1\gamma^2\gamma^3$.

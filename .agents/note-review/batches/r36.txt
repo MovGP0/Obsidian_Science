@@ -1,0 +1,71 @@
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.13.03 Form for External Amplitudes.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.14 High-Energy Limit.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.14.01 Chiral Structure of the Amplitudes.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.14.02 Regge Limit.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.15 Summary of Fundamental Processes.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.16 Exercises/08.16 Exercises.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.16 Exercises/08.16.01 Gauge invariance of the QED Lagrangian.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.16 Exercises/08.16.02 QED Noether current.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.16 Exercises/08.16.03 Trace calculations.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.16 Exercises/08.16.04 Muon-pair angular distribution.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.16 Exercises/08.16.05 Bhabha scattering.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.16 Exercises/08.16.06 Compton scattering with polarized photons.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.16 Exercises/08.16.07 Symmetry of Møller scattering.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.16 Exercises/08.16.08 Tree-level Compton Ward identity.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.16 Exercises/08.16.09 Low-energy vacuum polarization and the Uehling potential.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.16 Exercises/08.16.10 R ratio and number of colors.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.16 Exercises/08.16.11 Crossing symmetry.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.16 Exercises/08.16.12 Schwinger result for (g − 2) - 2.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/09 Renormalization/09.01 Ultraviolet Divergences in Loop Diagrams.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/09 Renormalization/09.01.01 Superficial Degree of Divergence.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/09 Renormalization/09.01.02 Divergent Diagrams in QED.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/09 Renormalization/09.01.03 Renormalizable and Nonrenormalizable Theories.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/09 Renormalization/09.02 Regularization Methods.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/09 Renormalization/09.02.01 Cutoff Regularization.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/09 Renormalization/09.02.02 Pauli–Villars Regularization.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/09 Renormalization/09.02.03 Dimensional Regularization.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/09 Renormalization/09.03 One-Loop Corrections in QED.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/09 Renormalization/09.03.01 Electron Self-Energy Σ(p).md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/09 Renormalization/09.03.02 Vacuum Polarization Πμν(q).md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/09 Renormalization/09.03.03 Vertex Correction Γμ(p′, p) and Anomalous Moment.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/09 Renormalization/09.04 Renormalization Procedure.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/09 Renormalization/09.04.01 Bare and Renormalized Quantities.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/09 Renormalization/09.04.02 On-Shell Renormalization Conditions.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/09 Renormalization/09.04.03 The MS and MS-Bar Schemes.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/09 Renormalization/09.05 The BPHZ Scheme and Renormalizability at All Orders.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/09 Renormalization/09.05.01 The Problem of Overlapping Divergences.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/09 Renormalization/09.05.02 The Bogoliubov–Parasiuk Subtraction Formula.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/09 Renormalization/09.05.03 Proof at All Orders for QED.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/09 Renormalization/09.06 The Lamb Shift.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/09 Renormalization/09.06.01 Historical and Experimental Context.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/09 Renormalization/09.06.02 Physical Origin.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/09 Renormalization/09.06.03 Self-Energy Estimate - The Bethe Method.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/09 Renormalization/09.07 Renormalization Constants in QED - Summary.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/09 Renormalization/09.08 Exercises/09.08 Exercises.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/09 Renormalization/09.08 Exercises/09.08.01 QED superficial degree of divergence.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/09 Renormalization/09.08 Exercises/09.08.02 Quartic scalar theory in four dimensions.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/09 Renormalization/09.08 Exercises/09.08.03 Ward–Takahashi identity at one loop.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/09 Renormalization/09.08 Exercises/09.08.04 Vacuum-polarization imaginary part above threshold.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/09 Renormalization/09.08 Exercises/09.08.05 Lamb-shift order-of-magnitude estimate.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/09 Renormalization/09.08 Exercises/09.08.06 Electron self-energy on shell.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/09 Renormalization/09.08 Exercises/09.08.07 Counterterm Feynman rules.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/09 Renormalization/09.08 Exercises/09.08.08 Beta function and evolution of α.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/09 Renormalization/09.08 Exercises/09.08.09 Magnetic anomaly at order α².md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/09 Renormalization/09.08 Exercises/09.08.10 Dimensional regularization of the scalar bubble.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.01 Motivation - The Scale Problem.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.01.01 Scale Ambiguity and Its Resolution.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.02 The Callan–Symanzik Equation.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.02.01 Derivation from the Independence of Bare Parameters.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.02.02 Physical Meaning of the Beta Function and Anomalous Dimension.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.02.03 Solution of the Callan–Symanzik Equation.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.03 The Running Coupling Constant in QED.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.03.01 The Beta Function of Quantum Electrodynamics.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.03.02 Scale Evolution of α(μ) and Charge Screening.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.04 Fixed Points of the Renormalization Group.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.04.01 Definition and Classification.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.04.02 The Gaussian Fixed Point and the Wilson–Fisher Point.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.05 The Beta Function for Non-Abelian Gauge Theories.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.05.01 Calculation of the Beta Function in Yang–Mills Theory.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.05.02 Asymptotic Freedom.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.05.03 Scale Evolution of αₛ in QCD.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.05.04 Interpretation - Antiscreening and the Color of the Vacuum.md

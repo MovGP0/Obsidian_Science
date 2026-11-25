@@ -1,0 +1,32 @@
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/09 Unified Theories/9.3 Coupling-Constant Unification.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/09 Unified Theories/9.4 Nucleon Decay.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/09 Unified Theories/9.5 The Baryon Number of the Universe.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/09 Unified Theories/9.6 The Problem of Fermion Masses.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/09 Unified Theories/9.7 Assessment.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/09 Unified Theories/9.B References.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/09 Unified Theories/9.P Problems.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/09 Unified Theories/9.R For Further Reading.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/90 Epilogue/Epilogue.0 Epilogue.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/91 Appendix A Notations and Conventions/A.1 Four-Vectors and Scalar Product.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/91 Appendix A Notations and Conventions/A.2 Dirac Matrices.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/91 Appendix A Notations and Conventions/A.3 Trace Theorems and Tensor Contractions.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/91 Appendix A Notations and Conventions/A.4 Dirac Equation and Dirac Spinors.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/91 Appendix A Notations and Conventions/A.5 Color Algebra.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/91 Appendix A Notations and Conventions/A.6 Weyl-van der Waerden Spinors.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/91 Appendix A Notations and Conventions/Appendix A.B References.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/92 Appendix B Observables and Feynman Rules/Appendix B.B References.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/92 Appendix B Observables and Feynman Rules/Appendix B.R For Further Reading.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/92 Appendix B Observables and Feynman Rules/B.1 Phase-Space Formulas -  Decay Rates and Cross Sections.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/92 Appendix B Observables and Feynman Rules/B.2 Feynman Rules -  Generalities.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/92 Appendix B Observables and Feynman Rules/B.3 Feynman Integrals.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/92 Appendix B Observables and Feynman Rules/B.4 Regularization Procedures.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/92 Appendix B Observables and Feynman Rules/B.5 Feynman Rules -  Electrodynamics.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/93 Appendix C Physical Constants/Appendix C.0 Physical Constants.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/93 Appendix C Physical Constants/Appendix C.R For Further Reading.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/99 Back matter/Author Index.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/99 Back matter/Subject Index.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/Gauge Theories - Contents.md
+02 Physics/04 Quantum Field Theory and Particle Physics/Nuclear and quantum statistics review calculations.md
+02 Physics/04 Quantum Field Theory and Particle Physics/Nuclear binding and radioactive decay.md
+02 Physics/04 Quantum Field Theory and Particle Physics/Nuclear mass, decay channels, and dating problems.md
+02 Physics/04 Quantum Field Theory and Particle Physics/Standard Model.md

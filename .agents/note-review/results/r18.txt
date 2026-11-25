@@ -1,0 +1,506 @@
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/02 Foundations of Statistical Mechanics/02.08.03 Example 3 - Two-Level System and Negative Temperature.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and well motivated (the $1/T$ derivation, sign of $T$ for inversion, and the $S(E)$ figure with maximum $\ln 2$ all check out), with only a carried-over table and one compressed derivative step.
+- [Correctness] The Physical quantities table describes ${\mechanical{N}}$ as "Particle or oscillator count" and ${\energy{E}}$ with "ΔE is an energy interval", but this note has no oscillators and no $\Delta E$; restrict the rows to the spin count and the spin-system energy.
+- [Simplify] In "Temperature and population inversion", show the intermediate steps $\partial S/\partial x={\mechanical{N}}k_{\mathrm B}\ln\frac{1-x}{x}$ and $\partial E/\partial x=2{\mechanical{N}}\mu_{\mathrm B}B$ before the quoted $1/T$, so the ratio ${\mechanical{n}}_-/{\mechanical{n}}_+$ visibly comes from $(1-x)/x$.
+- [Graph] Add a second plot of $\beta=1/(k_{\mathrm B}T)$ in units of $1/(\mu_{\mathrm B}B)$, i.e. $\tfrac12\ln\frac{1-u}{1+u}$, against $u=E/({\mechanical{N}}\mu_{\mathrm B}B)\in(-0.98,0.98)$, next to $k_{\mathrm B}T/(\mu_{\mathrm B}B)=2/\ln\frac{1-u}{1+u}$: $\beta$ falls smoothly through zero while $T$ jumps from $+\infty$ to $-\infty$, which is the clearest way to see why $T<0$ is "hotter than $T=+\infty$".
+- [Example] Overlay on Fig. 2.3 the exact points $\ln\binom{N}{n_+}/N$ for $N=20$ to show the endpoint deviation from the Stirling curve that the text mentions (exact value $0$ at $u=\pm1$, Stirling smoothing elsewhere).
+- [Structure] Move the paragraph on the cumulative-count ("volume") entropy and the Swendsen–Wang reference into a callout, so the main line goes straight from inversion to "negative temperature is hotter".
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/02 Foundations of Statistical Mechanics/02.09 Comparison of the Two Entropy Definitions.md
+priority: low
+graph: no
+manim: yes
+summary: Accurate and carefully qualified, but the coarse-graining argument stays abstract and the two-state comparison is described in words without numbers.
+- [Example] Make the "two allowed states with unequal probabilities" sentence concrete: for $p=(0.9,0.1)$, $S_G=0.325\,k_{\mathrm B}$, while $k_{\mathrm B}\ln\Omega=k_{\mathrm B}\ln2=0.693\,k_{\mathrm B}$; equality holds only for $p=(1/2,1/2)$.
+- [Example] Illustrate the convexity statement with two cells of equal measure $1/2$: a density concentrated in one cell, $(2,0)$, is replaced by its average $(1,1)$, and $-\int\rho\ln\rho$ rises from $-\ln2$ to $0$ (same reference measure).
+- [Manim] Animate a small phase-space blob under an area-preserving mixing map (for example the Arnold cat map on the unit torus) on a fixed 8×8 grid: the fine-grained area stays constant while the coarse-grained cell occupancy spreads and its entropy grows, making clear this is a statement about the description, not the exact density.
+- [Structure] Fold the "Additivity clarification" callout into the table cell (for example "Independent distributions; correlations subtract the mutual information") so the table is self-contained.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/02 Foundations of Statistical Mechanics/02.10 Summary.md
+priority: low
+graph: no
+manim: no
+summary: A correct and compact chapter summary.
+- [Links] Add a wiki link to the corresponding section note in each numbered item (for example [[02.03 Liouville's Theorem]], [[02.04 Ergodic Hypothesis]], [[02.05 Boltzmann Entropy]], [[02.06 Gibbs Entropy]], [[02.07 Fundamental Postulate of Statistical Mechanics]]) and link the next chapter as [[03.00 Microcanonical Ensemble]].
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/03 Microcanonical Ensemble/03.00 Microcanonical Ensemble.md
+priority: low
+graph: no
+manim: no
+summary: A clear chapter hub with a sensible reading route.
+- [Links] The reading route stops at [[03.06 Sackur–Tetrode Formula]]; add [[03.07 Equipartition Theorem]], [[03.08 Worked Examples]], [[03.09 Thermodynamics as a Limit of the Microcanonical Ensemble]], [[03.10 Summary]] and [[03.99 Exercises]] so every chapter section is reachable from the hub.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/03 Microcanonical Ensemble/03.01 Isolated System and the Phase-Space Hypershell.md
+priority: low
+graph: no
+manim: no
+summary: A short, correct section hub.
+- [Structure] No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/03 Microcanonical Ensemble/03.01.01 Macroscopic and Microscopic Variables.md
+priority: low
+graph: no
+manim: yes
+summary: Correct definitions of macrostate, microstate and ensemble, but entirely abstract and with a closing paragraph that mixes three unrelated remarks.
+- [Example] Add the smallest concrete case: one particle in a 1D box of length $L$, where $\Gamma=(q,p)$ is a point in a 2D plane, the macrostate fixes only $E$ and $L$, and the compatible microstates are any position with $p=\pm\sqrt{2mE}$.
+- [Manim] Animate an ensemble of ~200 points of a 1D harmonic oscillator in the $(q,p)$ plane, each moving on its own ellipse under Hamilton's equations, while a histogram of $q$ updates; this shows "ensemble = many copies with different initial states" and an ensemble mean $\langle q^2\rangle$ that stays constant although each copy moves.
+- [Simplify] Split the last paragraph after the mean formula: one sentence on the unit of $\rho$ (inverse action to the power $3N$), one on normalization ($\langle1\rangle=1$), and drop or justify the unrelated sentence on fluctuations.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/03 Microcanonical Ensemble/03.01.02 Ergodic Hypothesis and Microcanonical Density.md
+priority: medium
+graph: no
+manim: no
+summary: Physically careful and correct, but the two density conventions (raw versus reduced measure) are explained in a dense callout instead of in the definition itself, and there is no worked example.
+- [Correctness] The Physical quantities table lists ${\signal{t}}$ (time), but no time symbol appears in this note; remove the row.
+- [Simplify] Put both normalizations directly in Definition 3.2: $\rho_{\mathrm{mc}}=1/\Omega$ with respect to $\mathrm d\gamma$, and $\rho_{\mathrm{raw}}=1/(h^{3N}\Omega)$ with respect to $\mathrm d^{6N}\Gamma$, then shorten the "Density normalization" callout to one sentence.
+- [Example] Add the 1D harmonic oscillator as a check: $\Phi(E)=2\pi E/(\omega_0 h)=E/(\hbar\omega_0)$, so the shell contains $\Omega=\delta/(\hbar\omega_0)$ states, which matches the quantum level count in the window and makes the role of $h$ concrete.
+- [Intuition] Before "Equal probability ... is the microcanonical equilibrium postulate", say in one line that Liouville's theorem makes any $\rho=f(\mathcal H)$ stationary, and the postulate selects the uniform $f$ on the shell.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/03 Microcanonical Ensemble/03.01.03 Geometric Structure of the Hypershell.md
+priority: low
+graph: no
+manim: yes
+summary: The figure and the trajectory clarification are correct, but the first paragraph's description of the shaded and unshaded regions is hard to parse.
+- [Simplify] Rewrite the first paragraph as: "The shaded ring contains the states with $E-\delta\le\mathcal H\le E$; the unshaded interior ($\mathcal H<E-\delta$) belongs to the cumulative volume $\Phi(E)$ but not to the shell."
+- [Intuition] Identify the drawn ellipses as contours of the oscillator Hamiltonian $p^2/2m+m\omega_0^2q^2/2$, with semi-axes $\sqrt{2mE}$ in $p$ and $\sqrt{2E/(m\omega_0^2)}$ in $q$; this explains why the axes need separate scales and why the ring area is $2\pi\delta/\omega_0$.
+- [Manim] Animate several ensemble points at different energies inside the shell, each circulating on its own ellipse and never crossing to another, to visualize the "Trajectory clarification" callout (shell = ensemble tolerance, not one trajectory's range).
+- [Structure] The shaded ring is built from ~80 separate quadrilateral polygons; one polygon tracing the outer ellipse and then the inner ellipse in reverse would give the same figure with far less code to maintain.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/03 Microcanonical Ensemble/03.02 Density of States and Phase-Space Volume.md
+priority: low
+graph: no
+manim: no
+summary: A short, correct section hub.
+- [Structure] No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/03 Microcanonical Ensemble/03.02.01 Basic Definitions.md
+priority: low
+graph: no
+manim: no
+summary: Correct and precise definitions of $\Phi$, $\omega$ and $\Omega$, though without any concrete instance.
+- [Example] Add the 1D harmonic oscillator: $\Phi=E/(\hbar\omega_0)$, $\omega(E)=1/(\hbar\omega_0)$ (constant, unit $\mathrm J^{-1}$), and $\Omega=\delta/(\hbar\omega_0)$ exactly, so all three objects and their units are visible in one line; use $\omega_0$ to avoid a clash with the density symbol.
+- [Intuition] Explain the delta-function form of $\omega(E)$ as the limit "shell volume divided by shell width" as $\delta\to0$, which links it directly to the shell count defined just below.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/03 Microcanonical Ensemble/03.02.02 Volume of a Ball in n Dimensions.md
+priority: low
+graph: yes
+manim: no
+summary: A clean and correct proof (the Gaussian trick, the surface area $S_{n-1}$, and the Stirling form all check out) with good low-dimensional checks.
+- [Simplify] In the spherical-coordinate step, show the substitution $t=r^2$ that turns $\int_0^\infty e^{-r^2}r^{n-1}\,\mathrm dr$ into $\tfrac12\Gamma(n/2)$.
+- [Graph] Plot the unit-ball volume $V_n(1)=\pi^{n/2}/\Gamma(n/2+1)$ and sphere area $S_{n-1}$ as points for $n=1,\dots,20$; $V_n(1)$ peaks at $n=5$ and then tends to zero, a striking fact that supports the "most volume near the boundary" remark.
+- [Graph] Plot the inner fraction $(1-\epsilon)^n$ against $\epsilon\in[0,1]$ for $n=3,30,300$ to make the final paragraph visual.
+- [Example] Add $V_4(R)=\pi^2R^4/2$ as a fourth check that uses $\Gamma(3)=2$.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/03 Microcanonical Ensemble/03.02.03 Asymptotic Behavior of Φ(E) and ω(E).md
+priority: low
+graph: yes
+manim: no
+summary: Correct (the plotted normalizations $u^6$ and $u^5$ match $\alpha=6$); the shell-fraction paragraph is the key idea but has no numbers.
+- [Example] Put numbers on the shell fraction: for $N=10^{23}$ ($\alpha=1.5\times10^{23}$) and $x=\delta/E=10^{-10}$, $\alpha x=1.5\times10^{13}$, so the shell holds essentially all of $\Phi$ although it is relatively very thin; the linear approximation would need $x\ll10^{-23}$.
+- [Graph] Add a plot of the shell fraction $1-(1-x)^\alpha$ against $\log_{10}x\in[-4,0]$ for $\alpha=6,60,600$, with the linear approximation $\alpha x$ dashed, to show where the two limits separate.
+- [Structure] Add $C$ and $\alpha$ to the Physical quantities table ($C$ has unit $\mathrm J^{-\alpha}$ at fixed $N$ and $V$), since the note introduces both.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/03 Microcanonical Ensemble/03.03 Microcanonical Entropy.md
+priority: low
+graph: no
+manim: no
+summary: A short, correct section hub.
+- [Structure] No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/03 Microcanonical Ensemble/03.03.01 Boltzmann Formula.md
+priority: low
+graph: no
+manim: no
+summary: Correct and readable, but the additivity and "doubling" statements stay verbal.
+- [Example] Add a numeric additivity check: $\Omega_A=10$, $\Omega_B=20$ gives $\Omega=200$ and $k_{\mathrm B}\ln200=k_{\mathrm B}\ln10+k_{\mathrm B}\ln20$; and state the "fixed entropy increment" explicitly as $k_{\mathrm B}\ln2\approx9.57\times10^{-24}\,\mathrm{J\,K^{-1}}$.
+- [Intuition] Mention that the grave shows $S=k\log W$ and that $W$ is the same count as $\Omega$ here, to connect the historical form with the note's notation.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/03 Microcanonical Ensemble/03.03.02 Temperature, Pressure, and Chemical Potential.md
+priority: medium
+graph: yes
+manim: no
+summary: The relations and signs are correct ($\mu/T=-\partial S/\partial N$ follows from the stated first law), but Remark 3.3 asserts the equilibrium condition without the short maximization that makes it intuitive.
+- [Intuition] Derive Remark 3.3 in three lines: maximize $S_A(E_A)+S_B(E-E_A)$, get $1/T_A=1/T_B$, and show $\mathrm dS=(1/T_A-1/T_B)\,\mathrm dE_A>0$, so before equilibrium energy flows from the hotter to the colder system.
+- [Graph] Plot $\ln\Omega_A(E_A)+\ln\Omega_B(E-E_A)$ for two ideal gases with $\Omega\propto E^{3N/2}$ ($N_A=20$, $N_B=40$) against $E_A/E\in(0,1)$, shifted to zero at its maximum, and mark the maximum at $E_A/E=1/3$ where the temperatures are equal; optionally add $N_A=200$, $N_B=400$ to show the sharpening.
+- [Links] Point forward to [[03.04.05 Equation of State and Temperature]] as the first application of Eqs. (3.2) and (3.3).
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/03 Microcanonical Ensemble/03.04 Classical Ideal Gas in the Microcanonical Ensemble.md
+priority: low
+graph: no
+manim: no
+summary: A clear, correct section hub.
+- [Structure] No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/03 Microcanonical Ensemble/03.04.01 Hamiltonian Function and Problem Structure.md
+priority: low
+graph: no
+manim: no
+summary: Short and correct; the high-dimensional ball is stated but not made tangible.
+- [Example] Show the lowest cases: for one particle in 1D the "ball" is the interval $|p|\le\sqrt{2mE}$, for one particle in 3D an ordinary sphere in $(p_x,p_y,p_z)$, and for $N$ particles the same picture in $3N$ dimensions.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/03 Microcanonical Ensemble/03.04.02 Explicit Calculation of Φ(E).md
+priority: low
+graph: no
+manim: no
+summary: Eq. (3.5) is correct and the factorization is well justified; the closing paragraph is repetitive.
+- [Simplify] The final paragraph says again that $V_{3N}$ is a helper ball volume, not the container volume, which is already stated just above; keep one statement.
+- [Example] Write out the one-particle case explicitly, $\Phi=V\,\tfrac{4\pi}{3}(2mE)^{3/2}/h^3$, which the text describes only in words, and evaluate it for a helium atom in $1\,\mathrm{cm^3}$ with $E=\tfrac32k_{\mathrm B}\cdot300\,\mathrm K$ to show the count is enormous even for $N=1$.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/03 Microcanonical Ensemble/03.04.03 Density of States and Hypershell Volume.md
+priority: low
+graph: no
+manim: no
+summary: Correct (Eq. 3.6 and $\omega=\tfrac{3N}{2E}\Phi$ check out), but the finite-size slope paragraph is dense.
+- [Simplify] Make the slope comparison concrete: the volume entropy gives $k_{\mathrm B}T=2E/(3N)$, the shell entropy $k_{\mathrm B}T=E/(3N/2-1)$; for $N=2$ these differ by a factor $3/2$, for $N=10^{23}$ by a relative amount of order $10^{-23}$.
+- [Structure] The last paragraph repeats the small-window caveat already linked to [[03.02.01 Basic Definitions]]; merge it into the sentence with that link.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/03 Microcanonical Ensemble/03.04.04 Ideal-Gas Entropy without the Factor 1 per N!.md
+priority: low
+graph: no
+manim: no
+summary: Correct derivation of Eq. (3.7) and of the extensivity excess $2Nk_{\mathrm B}\ln2$, clearly connected to the Gibbs paradox.
+- [Simplify] State that the Stirling form drops the subextensive term $\tfrac12\ln(3\pi N)$, so the reader sees what "≈" discards.
+- [Example] Add a number for Remark 3.4: for $N=N_{\mathrm A}$ the spurious excess is $2R\ln2\approx11.5\,\mathrm{J\,K^{-1}}$.
+- [Links] Link "Section 3.5" in Remark 3.4 as [[03.05 Gibbs Paradox]] and the closing mention of the missing factorial to [[03.05.03 Resolution - Gibbs Correction Factor]].
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/03 Microcanonical Ensemble/03.04.05 Equation of State and Temperature.md
+priority: low
+graph: no
+manim: no
+summary: Correct and well reasoned, including the point that the volume-entropy derivatives need no Stirling approximation.
+- [Links] Link "Section 3.7" as [[03.07 Equipartition Theorem]].
+- [Example] Add numbers for one mole at $300\,\mathrm K$: $E=\tfrac32RT\approx3.74\,\mathrm{kJ}$ and $P\approx1.11\times10^5\,\mathrm{Pa}$ in $22.4\,\mathrm L$, to anchor both results.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/03 Microcanonical Ensemble/03.05 Gibbs Paradox.md
+priority: low
+graph: no
+manim: no
+summary: A clear, correct section hub.
+- [Structure] No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/03 Microcanonical Ensemble/03.05.01 Statement of the Paradox.md
+priority: low
+graph: no
+manim: yes
+summary: Correct statement with good caveats, but it does not say why the result is paradoxical rather than simply wrong.
+- [Intuition] Point out that $2Nk_{\mathrm B}\ln2$ is exactly the correct mixing entropy for two different gases, so the uncorrected count cannot tell identical from different species; that is the heart of the paradox.
+- [Example] Give the size for one mole per side: $\Delta S=2R\ln2\approx11.5\,\mathrm{J\,K^{-1}}$, a macroscopic amount that thermodynamics says is zero.
+- [Manim] Animate the partition being removed for two boxes of identical gray particles and, side by side, for red and blue particles; the colored case visibly changes its macrostate as the colors interdiffuse, the gray case does not.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/03 Microcanonical Ensemble/03.05.02 Diagnosis - Particle Identity.md
+priority: low
+graph: no
+manim: no
+summary: Correct and clear, with a helpful figure; the dilute-occupation assumption behind $1/N!$ is stated but not shown.
+- [Example] Count a small case: two identical particles in two cells give 4 labeled states, but 3 Bose states and 1 Fermi state, while $4/2!=2$; the factorial is exact only when no two particles share a cell, which shows why the prescription needs dilute occupation.
+- [Example] Add $N=3$ particles in three distinct cells: $3!=6$ labeled arrangements, one physical state, to show the factorial growth.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/03 Microcanonical Ensemble/03.05.03 Resolution - Gibbs Correction Factor.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and compact; the algebra of Eqs. (3.9)–(3.10) checks out, but the note states the physical reason for dividing by $N!$ and the size of the removed term instead of showing them.
+- [Example] Before Eq. (3.9), add a two-particle, two-box illustration: labelled counting gives 4 arrangements, but only 3 configurations differ physically. Use it to show why $1/N!$ is exact only in the dilute limit, where multiple occupancy is negligible, which is the claim in the last paragraph.
+- [Graph] Plot $S/(Nk_{\mathrm B})$ against $N$ (log axis, $N=1$ to $10^4$) at fixed $E/N$ and $V/N$ (for example argon at 300 K, 1 atm), for the uncorrected entropy (Eq. 3.7) and the corrected Eq. (3.10). The uncorrected curve grows like $\ln N$, while the corrected one levels off at the Sackur–Tetrode value.
+- [Simplify] The paragraph "At fixed particle count the same factor divides ..." packs three separate points (a consistent measure, derivatives unaffected, a dimensionless factor) into dense sentences; split it into a short bulleted list.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/03 Microcanonical Ensemble/03.05.04 Check of the Resolution.md
+priority: low
+graph: no
+manim: yes
+summary: Correct extensivity check, but the first line of the aligned equation silently simplifies $4\pi m(2E)/(3(2N)h^2)$, and the note asserts the different-species case without a formula.
+- [Simplify] In the first line of the aligned equation for $S(2E,2V,2N)$, show the unsimplified argument $\frac{4\pi m(2E)}{3(2N)h^2}$ before cancelling, so the reader sees that both logarithmic arguments are per-particle ratios.
+- [Example] Give the two-species result explicitly. Removing the partition between $N$ atoms of A and $N$ atoms of B, each expanding from $V$ to $2V$, gives $\Delta S=2Nk_{\mathrm B}\ln2$ when $N_A!N_B!$ are applied separately. This contrasts directly with the $\Delta S=0$ result above.
+- [Manim] Animate a box with a partition, first with identical (same-colour) particles and then with two colours. After the partition is removed, show that the identical case is macroscopically unchanged while the coloured case visibly mixes, with an entropy counter showing 0 versus $2Nk_{\mathrm B}\ln2$.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/03 Microcanonical Ensemble/03.06 Sackur–Tetrode Formula.md
+priority: low
+graph: no
+manim: no
+summary: Short hub note that orients the reader adequately.
+- [Structure] No change needed. Optionally state the final formula $S=Nk_{\mathrm B}[\ln(V/(N\lambda_{\mathrm{th}}^3))+5/2]$ in the hub, so readers see the result before following the two links.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/03 Microcanonical Ensemble/03.06.01 Complete Derivation.md
+priority: low
+graph: yes
+manim: no
+summary: The derivation of Eqs. (3.11)–(3.13) is correct and tracks the constants well; one sentence is unclear about which factorials are still to be expanded.
+- [Simplify] The opening says "Apply Stirling's approximation to both factorial factors", but Eq. (3.10) already contains the Stirling form $-N\ln N+N$ of $\ln N!$. Say that only the gamma function remains to be expanded, and that Eq. (3.10) already dropped the $\tfrac12\ln(2\pi N)$ correction of $\ln N!$.
+- [Graph] Plot the exact $\ln\Phi_{\mathrm{corr}}/N$ (with exact $\ln N!$ and $\ln\Gamma(3N/2+1)$) and the Sackur–Tetrode value $\ln(V/(N\lambda_{\mathrm{th}}^3))+5/2$ against $N=1\ldots200$ at fixed $n\lambda_{\mathrm{th}}^3=10^{-7}$. The plot shows the $O(\ln N/N)$ approach to the limit.
+- [Intuition] After Eq. (3.13), add one sentence that reads the formula as "entropy per particle = log of the number of thermal-wavelength cells available to each particle, plus 5/2". Remark 3.5 then follows immediately.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/03 Microcanonical Ensemble/03.06.02 Properties of the Sackur–Tetrode Entropy.md
+priority: low
+graph: yes
+manim: no
+summary: Correct ($C_V$, the Euler relation and $\mu=k_{\mathrm B}T\ln(n\lambda_{\mathrm{th}}^3)$ all check out), but the last two paragraphs describe derivative steps in words where two displayed lines would be clearer.
+- [Simplify] Replace the prose paragraph on the particle-count derivative at fixed energy with the explicit computation from the energy form: $(\partial S/\partial N)_{E,V}=S/N-\tfrac52k_{\mathrm B}=k_{\mathrm B}\ln(V/(N\lambda_{\mathrm{th}}^3))$.
+- [Simplify] Likewise show the $C_V$ step instead of the closing verbal check: at fixed $V,N$, $S=Nk_{\mathrm B}[\tfrac32\ln T+\text{const}]$, so $T\,\partial S/\partial T=\tfrac32Nk_{\mathrm B}$.
+- [Graph] Plot $S/(Nk_{\mathrm B})=\ln(1/(n\lambda_{\mathrm{th}}^3))+5/2$ against $T$ (log axis, 0.1–1000 K) for argon at its 1 atm, 300 K density. Mark where it would turn negative ($n\lambda_{\mathrm{th}}^3=e^{5/2}$) and shade the region $n\lambda_{\mathrm{th}}^3\gtrsim1$ where the formula is invalid. This shows the third-law section visually.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/03 Microcanonical Ensemble/03.07 Equipartition Theorem.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub with a useful counting warning.
+- [Structure] No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/03 Microcanonical Ensemble/03.07.01 Statement and Proof.md
+priority: low
+graph: yes
+manim: no
+summary: The Gaussian proof is correct, but in a microcanonical chapter the theorem is proved only canonically, without the short microcanonical route.
+- [Example] Add the microcanonical version for the ideal gas of this chapter: with $\Phi\propto E^{3N/2}$, $\langle p_{1x}^2/2m\rangle=E/(3N)=\tfrac12k_{\mathrm B}T$. Alternatively, cite the generalized equipartition $\langle x_i\,\partial\mathcal H/\partial x_j\rangle=\delta_{ij}k_{\mathrm B}T$ with a link to its derivation, so the theorem is tied to this chapter's ensemble.
+- [Graph] Plot the normalized distribution $\propto e^{-\beta a x^2}$ for $a=0.5,1,4$ (with $\beta=1$). In a second panel, plot the distribution of the energy $\epsilon=ax^2$, which is identical for all $a$ and has mean $1/(2\beta)$. This illustrates the sentence about increasing the coefficient.
+- [Simplify] The sentence "One can check the numerator by differentiating the denominator with respect to the inverse thermal energy" should show the one-line formula $\langle ax^2\rangle=-\partial_\beta\ln\int e^{-\beta ax^2}dx=1/(2\beta)$.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/03 Microcanonical Ensemble/03.07.02 Applications of Equipartition.md
+priority: low
+graph: yes
+manim: no
+summary: The counting for gases and the Dulong–Petit solid is correct, but the last paragraph about a "proposed measurement" is vague and could be replaced by concrete numbers.
+- [Example] Replace the "proposed measurement" paragraph with concrete molar values, $C_{V,m}=\tfrac32R=12.5$, $\tfrac52R=20.8$, $\tfrac72R=29.1$ and $3R=24.9\,\mathrm{J\,mol^{-1}\,K^{-1}}$, compared with measured room-temperature values for He, N$_2$ and Cu.
+- [Graph] Plot the Einstein heat capacity $C_V/(3Nk_{\mathrm B})=x^2e^x/(e^x-1)^2$, with $x=\Theta_E/T$, against $T/\Theta_E$ from 0 to 2, with the Dulong–Petit line at 1. This makes the sentence about failure at low temperature concrete.
+- [Intuition] In the diatomic section, say in one sentence why rotation about the molecular axis is not counted: its moment of inertia is tiny, so its level spacing is huge. The current text only says that the rigid rotor "treats only two changes of molecular-axis direction".
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/03 Microcanonical Ensemble/03.07.03 Classical Limits of Equipartition.md
+priority: medium
+graph: yes
+manim: no
+summary: Physically correct (the 85 K rotational scale for H$_2$ and the vibrational and Debye ranges are reasonable), but the freeze-out criterion comes with no worked formula or plot.
+- [Graph] Plot $C_{V,m}/R$ for H$_2$ against $T$ on a log axis (20–10000 K), using $\Theta_{\mathrm{rot}}\approx85\,\mathrm K$, $\Theta_{\mathrm{vib}}\approx6300\,\mathrm K$, and the quantum rotor and oscillator formulas. The curve shows the plateaus at 3/2, 5/2 and 7/2, the standard picture of freezing out.
+- [Example] Show freeze-out explicitly for a two-level mode: for a gap $\Delta$, $C\approx k_{\mathrm B}(\Delta/k_{\mathrm B}T)^2e^{-\Delta/k_{\mathrm B}T}$ at low $T$. This makes the paragraph about the excited-to-ground Boltzmann ratio quantitative.
+- [Simplify] In the bullet list, define the characteristic temperatures $\Theta_{\mathrm{vib}}=\hbar\omega_{\mathrm{vib}}/k_{\mathrm B}$ and $\Theta_{\mathrm{rot}}=\hbar^2/(2Ik_{\mathrm B})$ as symbols, matching the existing $\Theta_D$, so the three criteria read in parallel.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/03 Microcanonical Ensemble/03.08 Worked Examples.md
+priority: medium
+graph: yes
+manim: no
+summary: All four examples check out (spin temperature; oscillator Jacobian $2/\omega$; argon $\lambda_{\mathrm{th}}=1.595\times10^{-11}$ m and $S_m=154.9$ J/(mol K); diatomic prefactor $(8\pi^2I)^N$), but the note is long, has one symbol clash, and gives the diatomic convolution only as prose.
+- [Correctness] Example 3.4 uses ${\energy{h}}_i$ for the single-molecule Hamiltonian, while ${\energy{h}}^{5N}$ in $\Phi_{\mathrm{di}}$ is Planck's constant in the same example; rename the Hamiltonian $\mathcal H_i$ or $\varepsilon_i$. Also colour the angles consistently: $\theta$ is uncoloured while ${\mechanical{\phi}}$ uses \mechanical.
+- [Example] In Example 3.4, show the single-molecule rotational integral explicitly. The ellipse area in $(p_\theta,p_\phi)$ is $2\pi IE_{\mathrm{rot}}\sin\theta$, and integrating over the angles gives $8\pi^2IE_{\mathrm{rot}}$. This is the origin of $(8\pi^2I)^N$, which the reader cannot derive from the current text.
+- [Simplify] Replace the prose about convolving the translational and rotational counts with the one-line identity $\int_0^E\frac{d}{dE'}\frac{E'^{a}}{\Gamma(a+1)}\frac{(E-E')^{b}}{\Gamma(b+1)}dE'=\frac{E^{a+b}}{\Gamma(a+b+1)}$, with $a=3N/2$ and $b=N$.
+- [Graph] For Example 3.1, plot $S/(Nk_{\mathrm B})$ from Eq. (3.16) and $\mu_{\mathrm B}B/(k_{\mathrm B}T)$ from the temperature formula against $E/(N\mu_{\mathrm B}B)\in(-1,1)$. The plot shows the entropy maximum at $E=0$ and the sign change of $1/T$; link it to Exercise 3.5.
+- [Structure] The note is 17 KB with four independent examples. Consider one note per example (3.1 spins, 3.2 oscillators, 3.3 argon, 3.4 diatomic), matching the chapter's one-subsection-per-note layout.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/03 Microcanonical Ensemble/03.09 Thermodynamics as a Limit of the Microcanonical Ensemble.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub with a useful caveat about fixed versus fluctuating quantities.
+- [Structure] No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/03 Microcanonical Ensemble/03.09.01 Thermodynamic Limit.md
+priority: low
+graph: no
+manim: no
+summary: Correct and appropriately qualified, but the $N^{-1/2}$ argument comes after the proposition it motivates, and no number shows how small the fluctuations are.
+- [Structure] Move the paragraph "The usual inverse-square-root scaling follows when ..." to directly after the $N^{-1/2}$ statement, before Proposition 3.3, so the argument comes before it is used.
+- [Example] Add a numerical comparison: $N^{-1/2}\approx3\times10^{-12}$ for $N=10^{23}$ but $10\%$ for a 100-atom nanocluster. This shows why the choice of ensemble matters only for small systems.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/03 Microcanonical Ensemble/03.09.02 Fluctuations in the Microcanonical Ensemble.md
+priority: low
+graph: yes
+manim: yes
+summary: Correct; the binomial local-count argument is good but is written entirely in words where one formula would be clearer.
+- [Simplify] Write the binomial argument as formulas: $\langle N_v\rangle=Nv/V$ and $\langle(\delta N_v)^2\rangle=N(v/V)(1-v/V)$, so $\langle(\delta n_v)^2\rangle=\langle(\delta N_v)^2\rangle/v^2\approx n/v$ for $v\ll V$. This gives the $1/v$ scaling directly.
+- [Graph] Plot the relative standard deviation $\sqrt{(1-f)/(Nf)}$ of the local count against the volume fraction $f=v/V$ for $N=10^2,10^4,10^6$. The curves vanish at $f=1$ and scale as $1/\sqrt{Nf}$ for small $f$.
+- [Manim] Animate an ideal gas in a box with a highlighted sub-region and a live count of the particles inside it. Then enlarge the sub-region to show the relative fluctuation shrinking, and vanishing when the region covers the whole box.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/03 Microcanonical Ensemble/03.09.03 Connection to Information - Shannon Entropy.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and careful, but the note states the maximization claim without its one-line Lagrange-multiplier proof.
+- [Example] Add the short proof that uniform probabilities maximize $-\sum p_i\ln p_i$: with a multiplier for $\sum p_i=1$, the condition $-\ln p_i-1-\lambda=0$ gives equal $p_i$, so $S_{\max}=k_{\mathrm B}\ln\Omega$.
+- [Graph] Plot the binary entropy $-p\ln p-(1-p)\ln(1-p)$ for $p\in[0,1]$, with its maximum $\ln2$ at $p=1/2$. This also connects to Exercise 3.4(c).
+- [Example] Make the units note concrete with the conversion $1\,\text{bit}=k_{\mathrm B}\ln2\approx9.57\times10^{-24}\,\mathrm{J\,K^{-1}}$.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/03 Microcanonical Ensemble/03.10 Summary.md
+priority: low
+graph: no
+manim: no
+summary: Accurate summary of the chapter.
+- [Links] Link each numbered result to its note, for example item 4 to [[03.05.03 Resolution - Gibbs Correction Factor]], item 5 to [[03.06.01 Complete Derivation]] and item 6 to [[03.07.01 Statement and Proof]], so the summary also works as a navigation page.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/03 Microcanonical Ensemble/03.99 Exercises.md
+priority: low
+graph: no
+manim: no
+summary: Clear exercise index; all six links resolve to unique notes.
+- [Structure] No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/03 Microcanonical Ensemble/99 Exercises/03.01 Density of States and Entropy Comparison.md
+priority: low
+graph: no
+manim: no
+summary: Correct, but the Answer section is hedged and wordy for a short calculation.
+- [Simplify] State the main result compactly at the top of the Answer: $S_\omega-S_\Phi=k_{\mathrm B}\ln(3NE_*/(2E))$, which is $O(1)$ or $O(\ln N)$, while $S$ itself is $O(N)$. The three following paragraphs can then be shortened to one.
+- [Example] Give one number: for $N=10^{23}$, the correction $\ln(3N/2)\approx53.6$, compared with $S/k_{\mathrm B}\sim10^{24}$.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/03 Microcanonical Ensemble/99 Exercises/03.02 Pressure and Chemical Potential.md
+priority: low
+graph: no
+manim: no
+summary: Correct derivation (pressure, $\mu=k_{\mathrm B}T\ln(n\lambda_{\mathrm{th}}^3)$ and the Euler check all verify); the closing sign-check paragraph is dense.
+- [Simplify] Shorten the paragraph after the Euler relation. Its point is that an arbitrary term $cN$ added to $S$ also shifts $\mu$ by $-cT$, so the Euler check cannot detect it; one displayed line says this more clearly than three sentences.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/03 Microcanonical Ensemble/99 Exercises/03.03 Ideal Gas in a One-Dimensional Box.md
+priority: low
+graph: no
+manim: no
+summary: Correct (the entropy constant 3/2, $E=\tfrac12Nk_{\mathrm B}T$, $FL=Nk_{\mathrm B}T=2E$ and the one-particle check all verify) and clearly organized.
+- [Intuition] Add a kinetic cross-check of $F=Nk_{\mathrm B}T/L$. A particle with speed $v$ hits a wall every $2L/v$ and transfers $2mv$ each time, so the average force is $mv^2/L$; with $\langle mv^2\rangle=k_{\mathrm B}T$, summing over $N$ particles gives the result.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/03 Microcanonical Ensemble/99 Exercises/03.04 Spin Energy and Heat Capacity.md
+priority: low
+graph: yes
+manim: no
+summary: Correct; the Schottky values $x_{\max}=1.19968$, $T_{\max}=0.83356\,\mu_{\mathrm B}B/k_{\mathrm B}$ and $C_{\max}=0.43923\,Nk_{\mathrm B}$ verify numerically.
+- [Graph] Plot $C_B/(Nk_{\mathrm B})=x^2\operatorname{sech}^2x$ and $S/(Nk_{\mathrm B})=\ln(2\cosh x)-x\tanh x$ against $k_{\mathrm B}T/(\mu_{\mathrm B}B)$ from 0 to 5, marking the Schottky maximum at 0.834 and the asymptote $\ln2$.
+- [Simplify] The text jumps from $dx/dT$ to the result; show the intermediate step $C_B=\frac{dE}{dx}\frac{dx}{dT}=N\mu_{\mathrm B}B\operatorname{sech}^2x\cdot\frac{x}{T}$ before the final form.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/03 Microcanonical Ensemble/99 Exercises/03.05 Negative Temperature.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and well argued, but a picture of $S(E)$ and $T(E)$ would make the passage from $+\infty$ to $-\infty$ immediately visible.
+- [Graph] Plot $S(E)/(Nk_{\mathrm B})$, $\mu_{\mathrm B}B/(k_{\mathrm B}T)$ and $k_{\mathrm B}T/(\mu_{\mathrm B}B)$ against $E/(N\mu_{\mathrm B}B)\in(-1,1)$ in stacked panels. The first shows the entropy maximum, the second the smooth zero crossing of $\beta$, and the third the jump of $T$ from $+\infty$ to $-\infty$.
+- [Example] Mention the experimental realization by Purcell and Pound (1951), who inverted nuclear spins in LiF, as a concrete instance of the isolation condition in the last paragraph.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/03 Microcanonical Ensemble/99 Exercises/03.06 Electron Thermal Wavelength.md
+priority: low
+graph: yes
+manim: no
+summary: Correct; the values $\lambda_{\mathrm{th}}=4.304$ nm and 0.7454 nm, the separation 0.4642 nm, and $n\lambda_{\mathrm{th}}^3\approx797$ and 4.14 all verify.
+- [Graph] Plot $n_e\lambda_{\mathrm{th}}^3$ against $T$ on log–log axes (10–$10^6$ K) for $n_e=10^{28}\,\mathrm{m^{-3}}$, with a horizontal line at 1 and markers at 300 K and $10^4$ K. The curve crosses 1 only near $2.6\times10^4$ K, showing how far metals are from the classical regime.
+- [Intuition] Add the Fermi temperature for this density, $T_F=\hbar^2(3\pi^2n_e)^{2/3}/(2m_ek_{\mathrm B})\approx2.0\times10^4\,\mathrm K$, as the standard companion criterion $T\ll T_F$ for degeneracy.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/03 Microcanonical Ensemble/Phase-space counting, ideal gases, and Liouville’s theorem.md
+priority: high
+graph: no
+manim: yes
+summary: The derivations I checked are correct (virial $PV=\tfrac23E_{\mathrm{kin}}$, ball volume, $\Sigma$, the energy representation with $N^{5/3}$, $\mu$, and the 3D-oscillator count), but the note is a notebook transcription with a badly mismatched physical-quantities table, several symbol clashes, and an unfinished Liouville section.
+- [Correctness] The physical-quantities table lists wrong meanings and symbols the note never uses. $j$ is a summation index here, not an "internal partition function"; ${\energy{h}}$ appears a second time as an "Ising field parameter"; $z$ (fugacity), $q$ (coordination number), $P_i$, $W$, $\thermal{Q}_{\mathrm{rev}}$, $\mechanical{P}_{\mathrm{int}}$, $\mechanical{P}_{\mathrm{ext}}$, $\mechanical{\vec r}$ and $\mechanical{v}$ (molar volume) never appear. $\energy{u}$ is described as internal energy per amount but is used as a spectral energy density in $du=\rho(\nu)d\nu$. $\Omega$ is said to include the cumulative count, which the note calls $\Sigma$, and $\Omega_D$ (unit-sphere area) is missing.
+- [Correctness] Symbol clashes and macros: $n$ stands for number density, amount in moles, number of blocks, the quantum numbers $n_x$ and the Stirling variable. The sentence "it denotes the amount in moles in the earlier ideal gas calculation" is wrong, because the moles usage ($PV=nRT$) comes later. The oscillator section uses \mechanical{\omega} while the table and the rest of the chapter use \signal{\omega}, and $N$ is uncoloured although the chapter uses \mechanical{N}.
+- [Correctness] In the Gibbs bullet, the "potential $\Omega(\thermal{T},\mechanical{V},N)$" should be the grand potential $\Omega(T,V,\mu)$. It also clashes with the multiplicity $\Omega$ used throughout; rename one of them (for example $\Omega_G$).
+- [Correctness] Historical and reference details: the Boltzmann transport equation and H-theorem date from 1872, not 1876, and Pauli's spin–statistics proof is from 1940. The reading-list name read as "Carder" is almost certainly Kardar (*Statistical Physics of Particles*), the usual companion to Pathria.
+- [Structure] The Liouville section stops mid-derivation. Finish it by showing $\nabla_\Gamma\cdot\vec v_\Gamma=\sum_i(\partial^2H/\partial q_i\partial p_i-\partial^2H/\partial p_i\partial q_i)=0$, so $dP/dt=\partial_tP+\{P,H\}=0$. Also split this 36 KB note into topical notes (history and thermodynamics review, ideal-gas counting, fluctuations, ergodicity and Liouville), each linked to its chapter counterpart, for example [[03.06.01 Complete Derivation]] and [[03.09.02 Fluctuations in the Microcanonical Ensemble]].
+- [Manim] Animate Liouville's theorem: a small rectangular patch of pendulum initial conditions flows in $(q,p)$ under Hamilton's equations, stretching and shearing while a numerical readout shows its area staying constant. Contrast it with a damped pendulum, whose patch shrinks.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/04 Canonical Ensemble/04.00 Canonical Ensemble.md
+priority: low
+graph: no
+manim: no
+summary: A clear chapter hub that motivates the canonical ensemble from the boundary conditions.
+- [Links] The reading route names the ideal gas, oscillator and spin examples only in words; link them as [[04.06 Classical Ideal Gas in the Canonical Ensemble]], [[04.07 Classical and Quantum Harmonic Oscillators]], [[04.08 Two-Level System]] and [[04.09 Paramagnetism - Spin-½ Model]], and add [[04.99 Exercises]].
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/04 Canonical Ensemble/04.01 System in Contact with a Thermostat.md
+priority: low
+graph: no
+manim: no
+summary: A short, correct section hub that states the role of weak contact well.
+- [Structure] No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/04 Canonical Ensemble/04.01.01 Configuration of the Composite System.md
+priority: low
+graph: no
+manim: no
+summary: Correct and clear setup of the system-plus-bath construction.
+- [Structure] Add the symbols $\mathcal S$, $\mathcal B$, $\mathcal T$ and ${\energy{E}}_{\mathcal B}$, ${\energy{E}}_{\mathrm{tot}}$ to the Physical quantities table (or a one-line legend), since the note introduces all of them.
+- [Intuition] Add a concrete picture, for example a small copper sample in a large water bath, with rough heat capacities, to show what "much larger" means quantitatively.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/04 Canonical Ensemble/04.01.02 Derivation of the Canonical Distribution.md
+priority: medium
+graph: yes
+manim: no
+summary: The derivation and the second-order remainder $-E_i^2/(2k_{\mathrm B}T^2C_{\mathcal B})$ are correct, but the step "why expand the logarithm and not $\Omega_{\mathcal B}$ itself" is not explained, and the table misdescribes one symbol.
+- [Correctness] The Physical quantities table describes ${\energy{\varepsilon}}$ as "The level spacing or characteristic energy per particle", but in this note it is the bath-energy argument of $\Omega_{\mathcal B}(\varepsilon)$; correct the description.
+- [Intuition] Explain why the logarithm is expanded: $\Omega_{\mathcal B}$ varies as a huge power of energy, so its Taylor series converges badly, while $\ln\Omega_{\mathcal B}=S_{\mathcal B}/k_{\mathrm B}$ is extensive and smooth; one sentence with $\Omega_{\mathcal B}\propto\varepsilon^{3N_{\mathcal B}/2}$ makes the point.
+- [Graph] Plot the exact finite-bath weight $(1-E/E_{\mathrm{tot}})^{3N_{\mathcal B}/2}$ against $E/(k_{\mathrm B}T)\in[0,5]$ for an ideal-gas bath with $N_{\mathcal B}=2,10,100$ (with $E_{\mathrm{tot}}=\tfrac32N_{\mathcal B}k_{\mathrm B}T$), together with $e^{-E/(k_{\mathrm B}T)}$, to show the Boltzmann factor emerging as the bath grows.
+- [Example] After the degeneracy remark, give a numeric case: a level with 10 states at $E=k_{\mathrm B}T$ carries $10e^{-1}\approx3.7$ times the probability of a single ground state.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/04 Canonical Ensemble/04.01.03 Physical Interpretation of β.md
+priority: low
+graph: no
+manim: yes
+summary: Correct and clear, with a good figure and an explicit warning that Boltzmann weights are per microstate.
+- [Manim] Animate the occupation bars of a five-level ladder with spacing $\varepsilon$ as $k_{\mathrm B}T/\varepsilon$ sweeps from $0.05$ to $5$: all weight starts in the ground state and spreads upward, which shows the meaning of "coldness" $\beta$ dynamically.
+- [Example] Add a degenerate-level example next to the "highly degenerate excited level" paragraph: ground state $g_0=1$ at $0$ and $g_1=10$ at $\varepsilon=k_{\mathrm B}T$ gives $P_1/P_0=10e^{-1}\approx3.7$, so the excited level is more probable.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/04 Canonical Ensemble/04.02 Canonical Partition Function.md
+priority: low
+graph: no
+manim: no
+summary: A short, correct section hub.
+- [Structure] No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/04 Canonical Ensemble/04.02.01 Definition and Basic Properties.md
+priority: low
+graph: no
+manim: no
+summary: Correct definitions and proof; the derivative identities would be easier to absorb with one worked case.
+- [Example] Apply Eq. (4.5) to the two-level system $\mathcal Z=1+e^{-\beta\varepsilon}$ to get $\langle E\rangle=\varepsilon/(e^{\beta\varepsilon}+1)$ and the variance $\varepsilon^2e^{\beta\varepsilon}/(e^{\beta\varepsilon}+1)^2$, and link [[04.08 Two-Level System]].
+- [Simplify] Move the paragraph beginning "In the derivatives below..." to directly after Proposition 4.1, where its remarks about the second derivative and the single-energy check apply.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/04 Canonical Ensemble/04.02.02 Factorization of the Partition Function.md
+priority: low
+graph: no
+manim: no
+summary: Correct, with a good contrast between localized and identical particles.
+- [Example] Write the two-spin case explicitly: $\mathcal Z=\sum_{s_1,s_2=\pm1}e^{\beta\mu B(s_1+s_2)}=(2\cosh\beta\mu B)^2$, which shows the factorization in one line and why no $1/2!$ appears.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/04 Canonical Ensemble/04.03 Connection to Thermodynamics - Helmholtz Free Energy.md
+priority: low
+graph: no
+manim: no
+summary: A short, correct section hub.
+- [Structure] No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/04 Canonical Ensemble/04.03.01 Partition Function as a Thermodynamic Potential.md
+priority: low
+graph: yes
+manim: no
+summary: Correct proof and good sanity checks of the sign of $F=-k_{\mathrm B}T\ln\mathcal Z$.
+- [Graph] For the two-level system, plot $U/\varepsilon$, $TS/\varepsilon$ and $F/\varepsilon=-x\ln(1+e^{-1/x})$ against $x=k_{\mathrm B}T/\varepsilon\in[0,3]$, showing $F=U-TS$ falling below $U$ as entropy becomes important.
+- [Example] Make the "several states at the same energy" check concrete: $g$ degenerate states at energy $E_0$ give $F=E_0-k_{\mathrm B}T\ln g$.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/04 Canonical Ensemble/04.03.02 Calculation of Thermodynamic Quantities from F.md
+priority: low
+graph: no
+manim: no
+summary: Correct derivative relations (including $C_V=k_{\mathrm B}\beta^2\partial_\beta^2\ln\mathcal Z$) and a clear map figure.
+- [Simplify] Show the chain-rule step for Eq. (4.9): $\mathrm d\beta/\mathrm dT=-k_{\mathrm B}\beta^2$ and $\partial U/\partial\beta=-\partial^2_\beta\ln\mathcal Z$.
+- [Links] Point to [[04.06.02 Helmholtz Free Energy and Equation of State]] as the worked application of Eqs. (4.7) and (4.8).
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/04 Canonical Ensemble/04.04 Energy Fluctuations.md
+priority: low
+graph: no
+manim: no
+summary: A short, correct section hub.
+- [Structure] No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/04 Canonical Ensemble/04.04.01 Variance and Standard Deviation.md
+priority: low
+graph: no
+manim: no
+summary: Correct proof of $\sigma_E^2=k_{\mathrm B}T^2C_V$, but the commentary paragraphs come before the result they discuss.
+- [Structure] Move the two paragraphs on non-negative heat capacity and units after the displayed result $\sigma_E^2=k_{\mathrm B}T^2C_V$, which they refer to as "the variance relation below".
+- [Example] Evaluate for one mole of monatomic gas at $300\,\mathrm K$: $\sigma_E=\sqrt{k_{\mathrm B}T^2\cdot\tfrac32R}\approx3.9\times10^{-9}\,\mathrm J$ against $U\approx3.7\,\mathrm{kJ}$, a relative width of order $10^{-12}$.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/04 Canonical Ensemble/04.04.02 Relative Fluctuations and the Law of Large Numbers.md
+priority: low
+graph: no
+manim: no
+summary: Correct scaling, a correctly normalized figure, and an accurate ideal-gas value $\sigma_u=\sqrt{2/(3N)}$; the caveat paragraphs precede the result and slow the reader down.
+- [Structure] Put the scaling result ($U\sim N\varepsilon_0$, $C_V\sim Nk_{\mathrm B}$, $\sigma_E/\langle E\rangle\sim N^{-1/2}$) first and move the two paragraphs on energy reference and Gaussian validity after it.
+- [Links] The density of states is called $g(E)$ here and $\omega(E)$ in [[03.02.01 Basic Definitions]]; state that they are the same object (or unify the symbol) so readers can connect the two chapters.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/04 Canonical Ensemble/04.05 Ensemble Equivalence in the Thermodynamic Limit.md
+priority: low
+graph: no
+manim: no
+summary: A short, correct section hub with appropriate caveats.
+- [Structure] No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/04 Canonical Ensemble/04.05.01 Formal Proof.md
+priority: medium
+graph: yes
+manim: no
+summary: The saddle-point argument is correct (the curvature $-1/(k_{\mathrm B}T^2C_V)$ and the $O(\ln N)$ correction check out), but the caveat paragraphs before the proof are heavy and the integrand's sharpness is never shown.
+- [Correctness] "$U({\thermal{T}})$" in the sentence after the saddle condition is written without the energy macro; use ${\energy{U}}({\thermal{T}})$ as in the table.
+- [Simplify] Move the paragraphs on the energy reference and the nonnegative spectrum after the proof (or into the scope callout), so the proof starts right after the theorem.
+- [Graph] Plot the normalized integrand $g(E)e^{-\beta E}$ for an ideal gas, $g\propto E^{3N/2-1}$, against $E/E^*$ for $N=2,20,200$, showing the peak at $E^*$ narrowing as $N^{-1/2}$; this is the picture behind the saddle-point step.
+- [Intuition] State in words that $\ln\mathcal Z\approx\max_E[S(E)/k_{\mathrm B}-\beta E]$ is a Legendre transform, so $F$ is the Legendre transform of $E(S)$, which is why the two ensembles carry the same thermodynamics.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/04 Canonical Ensemble/04.06 Classical Ideal Gas in the Canonical Ensemble.md
+priority: low
+graph: no
+manim: no
+summary: A short, correct section hub.
+- [Structure] No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/04 Canonical Ensemble/04.06.01 Calculation of the Partition Function.md
+priority: low
+graph: yes
+manim: no
+summary: Correct derivation of $\mathcal Z_1=V/\lambda_{\mathrm{th}}^3$ and Eq. (4.11); the dilute condition would benefit from a number.
+- [Example] Evaluate for helium at $300\,\mathrm K$ and $1\,\mathrm{atm}$: $\lambda_{\mathrm{th}}\approx0.50\,\mathrm{\AA}$ and $n\lambda_{\mathrm{th}}^3\approx3\times10^{-6}\ll1$, so the Maxwell–Boltzmann limit is excellent; contrast with conduction electrons in a metal where it fails.
+- [Graph] Plot $\lambda_{\mathrm{th}}(T)$ on log–log axes for $T\in[1,1000]\,\mathrm K$ for He atoms and electrons, with the mean interparticle spacing $n^{-1/3}$ of a gas at $1\,\mathrm{atm}$ and of electrons in copper as horizontal reference lines; crossings mark where the classical count breaks down.
+- [Simplify] Move the two commentary paragraphs ("There is no position-dependent energy..." and "The thermal wavelength has length units...") after the result they explain.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/04 Canonical Ensemble/04.06.02 Helmholtz Free Energy and Equation of State.md
+priority: low
+graph: no
+manim: no
+summary: Correct ($P$, $U$ and the entropy derivative with the extra $3/2$ from $\lambda_{\mathrm{th}}^{-3}\propto T^{3/2}$ all check out) and well connected to the microcanonical result.
+- [Links] Link "Sackur–Tetrode formula" to [[03.06 Sackur–Tetrode Formula]] and note that the canonical and microcanonical results agree once $E=\tfrac32Nk_{\mathrm B}T$ is inserted.
+- [Example] Evaluate Eq. (4.12) for argon at $298\,\mathrm K$ and $1\,\mathrm{bar}$ and compare with the tabulated $S^\circ\approx154.8\,\mathrm{J\,mol^{-1}K^{-1}}$, a classic success of the formula.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/04 Canonical Ensemble/04.07 Classical and Quantum Harmonic Oscillators.md
+priority: low
+graph: no
+manim: no
+summary: A short, correct section hub with a good preview of the zero-point versus heat-capacity distinction.
+- [Structure] No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/04 Canonical Ensemble/04.07.01 Classical One-Dimensional Oscillator.md
+priority: low
+graph: no
+manim: no
+summary: Correct and compact; the commentary before the calculation is denser than the calculation itself.
+- [Simplify] Move the paragraph "Both thermal energy and the oscillator level scale..." after the result $\langle E\rangle=k_{\mathrm B}T$, where the independence of $m$ and $\omega$ is visible.
+- [Intuition] Interpret $\mathcal Z_1^{\mathrm{cl}}=k_{\mathrm B}T/(\hbar\omega)$ as "the number of quantum levels below $k_{\mathrm B}T$", which links directly to the high-temperature limit in [[04.07.02 Quantum Oscillator]].
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/04 Canonical Ensemble/04.07.02 Quantum Oscillator.md
+priority: medium
+graph: yes
+manim: no
+summary: The partition function, Planck occupation, limits and Einstein heat capacity are correct, but the symbol $x$ is used for two reciprocal quantities and the heat capacity is not plotted.
+- [Correctness] Symbol clash: "Limiting cases" sets $x=\beta\hbar\omega$, while the Fig. 4.4 axis uses $x=k_{\mathrm B}T/(\hbar\omega)$, its reciprocal; rename one (for example $\tau=k_{\mathrm B}T/(\hbar\omega)$ on the axis).
+- [Graph] Add the Einstein heat capacity $C_V/k_{\mathrm B}$ against $k_{\mathrm B}T/(\hbar\omega)\in[0,3]$, with the classical value $1$ dashed; it reaches $0.92$ at $k_{\mathrm B}T=\hbar\omega$ and is exponentially suppressed below about $0.2$.
+- [Simplify] Derive the heat capacity in one line from $\langle E\rangle$ (differentiate $\hbar\omega/(e^{\beta\hbar\omega}-1)$ with respect to $T$) instead of stating it, and move the two commentary paragraphs before Eq. (4.13) to after the limiting cases.
+- [Example] Add a real number: for the N₂ vibration ($\hbar\omega/k_{\mathrm B}\approx3390\,\mathrm K$) at $300\,\mathrm K$, $\langle n\rangle\approx1.2\times10^{-5}$, so vibrations are frozen out at room temperature.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/04 Canonical Ensemble/04.08 Two-Level System.md
+priority: low
+graph: yes
+manim: yes
+summary: Correct (the Schottky maximum at $k_{\mathrm B}T/\varepsilon\approx0.417$ with height $0.439$ checks out numerically) and well motivated by the predicted limits.
+- [Graph] Add $\langle E\rangle/\varepsilon=1/(e^{1/x}+1)$ and $S/k_{\mathrm B}$ against $x=k_{\mathrm B}T/\varepsilon\in[0,5]$ next to the heat capacity, so the reader sees that the peak of $C$ marks the steepest rise of $\langle E\rangle$ toward $1/2$ and of $S$ toward $\ln2$.
+- [Manim] Animate the two population bars $P_0$, $P_1$ as $T$ increases while a tracer moves along the Schottky curve, showing that $C$ is large exactly while $P_1$ changes fastest.
+- [Simplify] Show the derivative step $C=\mathrm d\langle E\rangle/\mathrm dT$ leading to Eq. (4.14), and rewrite it as $C/k_{\mathrm B}=z^2/\cosh^2z$ with $z=\varepsilon/(2k_{\mathrm B}T)$, so the quoted maximum follows from $z\tanh z=1$ ($z\approx1.200$, $k_{\mathrm B}T^*/\varepsilon\approx0.417$).

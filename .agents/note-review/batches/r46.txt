@@ -1,0 +1,11 @@
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/05 Hidden Symmetries/5.3 Spontaneous Breaking of a Gauge Symmetry.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/05 Hidden Symmetries/5.4 The Sigma Model.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/05 Hidden Symmetries/5.5 Spontaneous Breaking of a Non-Abelian Symmetry.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/05 Hidden Symmetries/5.6 Prospects.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/05 Hidden Symmetries/5.B References.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/05 Hidden Symmetries/5.P Problems.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/05 Hidden Symmetries/5.R For Further Reading.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/06 Electroweak Interactions of Leptons/6.0 Chapter introduction.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/06 Electroweak Interactions of Leptons/6.1 An Effective Lagrangian for the Weak Interactions.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/06 Electroweak Interactions of Leptons/6.2 Intermediate Vector Bosons -  A First Look.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/06 Electroweak Interactions of Leptons/6.3 The Standard Electroweak Theory of Leptons.md

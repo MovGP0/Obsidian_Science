@@ -1,0 +1,36 @@
+01 Mathematics/07 Complex Numbers and Complex Analysis/01 Complex Arithmetic, Polar Form, and Roots/06.01 Complex arithmetic.md
+01 Mathematics/07 Complex Numbers and Complex Analysis/01 Complex Arithmetic, Polar Form, and Roots/06.02 The complex plane.md
+01 Mathematics/07 Complex Numbers and Complex Analysis/01 Complex Arithmetic, Polar Form, and Roots/06.03 Conjugation and modulus.md
+01 Mathematics/07 Complex Numbers and Complex Analysis/01 Complex Arithmetic, Polar Form, and Roots/06.04 Polar representation.md
+01 Mathematics/07 Complex Numbers and Complex Analysis/01 Complex Arithmetic, Polar Form, and Roots/06.05 Euler’s formula.md
+01 Mathematics/07 Complex Numbers and Complex Analysis/01 Complex Arithmetic, Polar Form, and Roots/06.06 Rotations and products.md
+01 Mathematics/07 Complex Numbers and Complex Analysis/01 Complex Arithmetic, Polar Form, and Roots/06.07 Roots.md
+01 Mathematics/07 Complex Numbers and Complex Analysis/01 Complex Arithmetic, Polar Form, and Roots/06.08 Complex-valued functions.md
+01 Mathematics/07 Complex Numbers and Complex Analysis/01 Complex Arithmetic, Polar Form, and Roots/All roots of complex numbers.md
+01 Mathematics/07 Complex Numbers and Complex Analysis/01 Complex Arithmetic, Polar Form, and Roots/Complex Numbers.md
+01 Mathematics/07 Complex Numbers and Complex Analysis/01 Complex Arithmetic, Polar Form, and Roots/Complex arithmetic and conjugates.md
+01 Mathematics/07 Complex Numbers and Complex Analysis/01 Complex Arithmetic, Polar Form, and Roots/Complex arithmetic and polar form problems.md
+01 Mathematics/07 Complex Numbers and Complex Analysis/01 Complex Arithmetic, Polar Form, and Roots/Complex numbers - Overview.md
+01 Mathematics/07 Complex Numbers and Complex Analysis/01 Complex Arithmetic, Polar Form, and Roots/Complex numbers and the plane.md
+01 Mathematics/07 Complex Numbers and Complex Analysis/01 Complex Arithmetic, Polar Form, and Roots/Euler's Formula.md
+01 Mathematics/07 Complex Numbers and Complex Analysis/01 Complex Arithmetic, Polar Form, and Roots/Exponential form of complex numbers.md
+01 Mathematics/07 Complex Numbers and Complex Analysis/01 Complex Arithmetic, Polar Form, and Roots/Integer powers of complex numbers.md
+01 Mathematics/07 Complex Numbers and Complex Analysis/01 Complex Arithmetic, Polar Form, and Roots/Polar form of complex numbers.md
+01 Mathematics/07 Complex Numbers and Complex Analysis/02 Holomorphic Functions and Contour Integration/Branches of complex elementary functions.md
+01 Mathematics/07 Complex Numbers and Complex Analysis/02 Holomorphic Functions and Contour Integration/Cauchy theorems and integral formulas.md
+01 Mathematics/07 Complex Numbers and Complex Analysis/02 Holomorphic Functions and Contour Integration/Cauchy’s theorem and integral formula problems.md
+01 Mathematics/07 Complex Numbers and Complex Analysis/02 Holomorphic Functions and Contour Integration/Complex analysis - Catalogue Guide.md
+01 Mathematics/07 Complex Numbers and Complex Analysis/02 Holomorphic Functions and Contour Integration/Complex branches and elementary functions.md
+01 Mathematics/07 Complex Numbers and Complex Analysis/02 Holomorphic Functions and Contour Integration/Complex limits and derivatives.md
+01 Mathematics/07 Complex Numbers and Complex Analysis/02 Holomorphic Functions and Contour Integration/Complex limits, derivatives, and analyticity.md
+01 Mathematics/07 Complex Numbers and Complex Analysis/02 Holomorphic Functions and Contour Integration/Complex line integrals and primitives.md
+01 Mathematics/07 Complex Numbers and Complex Analysis/02 Holomorphic Functions and Contour Integration/Contour integrals and primitives.md
+01 Mathematics/07 Complex Numbers and Complex Analysis/02 Holomorphic Functions and Contour Integration/Holomorphic functions and their consequences.md
+01 Mathematics/07 Complex Numbers and Complex Analysis/03 Laurent Series, Residues, and Conformal Maps/Complex series and analytic continuation.md
+01 Mathematics/07 Complex Numbers and Complex Analysis/03 Laurent Series, Residues, and Conformal Maps/Conformal maps and harmonic functions.md
+01 Mathematics/07 Complex Numbers and Complex Analysis/03 Laurent Series, Residues, and Conformal Maps/Elliptic integrals and Jacobi functions.md
+01 Mathematics/07 Complex Numbers and Complex Analysis/03 Laurent Series, Residues, and Conformal Maps/Laurent series and residues.md
+01 Mathematics/07 Complex Numbers and Complex Analysis/03 Laurent Series, Residues, and Conformal Maps/Real integrals by contour methods.md
+01 Mathematics/07 Complex Numbers and Complex Analysis/03 Laurent Series, Residues, and Conformal Maps/Residues and real integrals by contour deformation.md
+01 Mathematics/07 Complex Numbers and Complex Analysis/03 Laurent Series, Residues, and Conformal Maps/Taylor expansions and Laurent annuli.md
+01 Mathematics/07 Complex Numbers and Complex Analysis/03 Laurent Series, Residues, and Conformal Maps/Theta and Weierstrass functions.md

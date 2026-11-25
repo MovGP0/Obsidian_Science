@@ -1,0 +1,70 @@
+02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/06.07.02 Properties of the Bose–Einstein Distribution.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/06.08 Classical Limit - Maxwell–Boltzmann Distribution.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/06.08.01 Derivation as a Limit of Quantum Statistics.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/06.08.02 Thermal de Broglie Wavelength.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/06.08.03 Quantum Degeneracy Parameter.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/06.09 Density of States for a Free Particle.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/06.09.01 Motivation and Problem Formulation.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/06.09.02 Density of States in Three Dimensions.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/06.09.03 Density of States in Two Dimensions.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/06.09.04 Density of States in One Dimension.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/06.09.05 Transition from a Sum to an Integral.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/06.10 Comparison of the Three Statistics.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/06.10.01 Comparison Table.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/06.10.02 Graphs of the Three Distributions.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/06.10.03 Analysis of the Comparison.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/06.11 Grand Potential and the Fermi and Bose Functions.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/06.12 Equation of State and Degeneracy Pressure.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/06.13 Summary.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/06.99 Exercises.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/99 Exercises/06.01 Pressure and Energy of a Quantum Gas.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/99 Exercises/06.02 Ground-State Energy of a Fermi Gas.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/99 Exercises/06.03 Grand Partition Function and Pressure.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/99 Exercises/06.04 Low-Temperature Fermi Heat Capacity.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/99 Exercises/06.05 Planck Blackbody Spectrum.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/99 Exercises/06.06 Ordering of Occupation Distributions.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/99 Exercises/06.07 Ultrarelativistic Density of States.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/Internal molecular modes and the ideal quantum gas.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.00 Fermi Gas.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.01 Fermi Gas at Zero Temperature.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.01.01 Level Occupation and the Fermi Sphere.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.01.02 Calculation of the Fermi Momentum.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.02 Density of States and Total Energy at T = 0.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.02.01 Density of States.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.02.02 Total Energy at T = 0.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.02.03 Degeneracy Pressure.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.03 Fermi Gas at Finite Temperature - Sommerfeld Expansion.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.03.01 Fermi–Dirac Distribution.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.03.02 Fermi Integrals.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.03.03 Sommerfeld Expansion.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.03.04 Chemical Potential at Low Temperature.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.03.05 Total Energy at Finite Temperature.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.04 Electronic Specific Heat.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.04.01 Derivation of the Linear Contribution.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.04.02 Comparison with the Classical Prediction.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.04.03 Experimental Significance.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.05 Pauli Paramagnetism.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.05.01 Magnetization of the Electron Gas.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.05.02 Pauli Susceptibility.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.05.03 Finite-Temperature Corrections.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.06 Electron Gas in Metals - Drude–Sommerfeld Model.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.06.01 Drude Model.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.06.02 Sommerfeld Transport Model.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.06.03 Thermal Conductivity and the Lorenz Number.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.06.04 Effective Mass and Experimental Density of States.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.07 White Dwarfs and the Chandrasekhar Mass.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.07.01 Structure and Composition.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.07.02 Hydrostatic Equilibrium and Degeneracy Pressure.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.07.03 Ultrarelativistic Regime and the Chandrasekhar Mass.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.07.04 Stellar Stability and Quantum Glue.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.08 Worked Examples.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.09 Further Study - Relativistic Fermi Gas.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.10 Summary.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.99 Exercises.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/99 Exercises/07.01 Sirius B - Degenerate Electrons.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/Degenerate Fermi gases and the Sommerfeld expansion.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/08.00 Bose Gas and Condensation.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/08.01 Ideal Bose Gas - Grand Canonical Formalism.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/08.01.01 Bose–Einstein Distribution.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/08.01.02 Bose Functions gₙ(z).md
+02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/08.01.03 Equation of State - Fugacity Series.md

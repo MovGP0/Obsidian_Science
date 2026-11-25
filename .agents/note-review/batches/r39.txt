@@ -1,0 +1,98 @@
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.04.05 Antisymmetric Spin Tensor.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.04.06 Properties of Gamma Matrices.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.04.07 Trace Identities.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.04.08 Charge Conjugation Matrix.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.05 Spinor Conventions.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.05.01 Dirac Adjoint.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.05.02 The Dirac Equation and Solution Spinors.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.05.03 Equations of Motion for the Spinors u and v.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.05.04 Spinor Normalization.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.05.05 Completeness Relations.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.05.06 Chiral Projectors.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.06 Levi-Civita Tensor.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.07 Fourier Transform.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.07.01 Conventions in d Dimensions.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.07.02 Dirac Delta Function.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.07.03 Invariant Single-Particle Measure.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.08 Dimensional Regularization.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.08.01 Gaussian Integrals in d Euclidean Dimensions.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.08.02 Feynman Parametrization.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.08.03 Euler's Gamma Function.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.08.04 Expansion around d = 4.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.08.05 Euler's Beta Function.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.08.06 Angular Integrals in d Dimensions.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.09 Overview of User-Defined Commands.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/92 B Clifford Algebras and Lie Groups/B.01 Clifford Algebras in d Dimensions.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/92 B Clifford Algebras and Lie Groups/B.01.01 Definition.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/92 B Clifford Algebras and Lie Groups/B.01.02 Dimension and Structure.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/92 B Clifford Algebras and Lie Groups/B.01.03 Chiral Volume Element.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/92 B Clifford Algebras and Lie Groups/B.02 Gamma Matrices in Different Dimensions.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/92 B Clifford Algebras and Lie Groups/B.02.01 General Properties.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/92 B Clifford Algebras and Lie Groups/B.02.02 Identities in Four Dimensions.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/92 B Clifford Algebras and Lie Groups/B.02.03 Representations in Low Dimensions.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/92 B Clifford Algebras and Lie Groups/B.03 Spinor Representations.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/92 B Clifford Algebras and Lie Groups/B.03.01 Dirac Spinors.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/92 B Clifford Algebras and Lie Groups/B.03.02 Chiral Projectors.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/92 B Clifford Algebras and Lie Groups/B.03.03 Majorana Spinors.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/92 B Clifford Algebras and Lie Groups/B.03.04 Weyl–Majorana Spinors.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/92 B Clifford Algebras and Lie Groups/B.03.05 Fierz Identities.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/92 B Clifford Algebras and Lie Groups/B.04 Lie Groups - Definition and Examples.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/92 B Clifford Algebras and Lie Groups/B.04.01 Definition.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/92 B Clifford Algebras and Lie Groups/B.04.02 Basic Examples.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/92 B Clifford Algebras and Lie Groups/B.05 Lie Algebras.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/92 B Clifford Algebras and Lie Groups/B.05.01 The Lie Algebra Associated with a Lie Group.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/92 B Clifford Algebras and Lie Groups/B.05.02 Generators and Structure Constants.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/92 B Clifford Algebras and Lie Groups/B.05.03 Adjoint Representation.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/92 B Clifford Algebras and Lie Groups/B.05.04 Killing Form.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/92 B Clifford Algebras and Lie Groups/B.05.05 Casimir Operators.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/92 B Clifford Algebras and Lie Groups/B.06 SU(N) - Generators in the Fundamental Representation.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/92 B Clifford Algebras and Lie Groups/B.06.01 SU(2) - Pauli Matrices and Representation Theory.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/92 B Clifford Algebras and Lie Groups/B.06.02 SU(3) - Gell-Mann Matrices and Casimir Operators.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/92 B Clifford Algebras and Lie Groups/B.07 Useful Identities for SU(N) - Fierz Identities and Color Factors.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/92 B Clifford Algebras and Lie Groups/B.07.01 Basic Algebraic Identities.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/92 B Clifford Algebras and Lie Groups/B.07.02 Fierz Identities for SU(N).md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/92 B Clifford Algebras and Lie Groups/B.07.03 Sums over Internal Color States.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/92 B Clifford Algebras and Lie Groups/B.08 The Lorentz Group SO(1, 3) and Its Universal Cover SL(2, ℂ).md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/92 B Clifford Algebras and Lie Groups/B.08.01 Lorentz Algebra.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/92 B Clifford Algebras and Lie Groups/B.08.02 Decomposition into su(2) ⊕ su(2).md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/92 B Clifford Algebras and Lie Groups/B.08.03 The Universal Cover SL(2, ℂ).md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/92 B Clifford Algebras and Lie Groups/B.08.04 Generators in the Spinor Representation.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/92 B Clifford Algebras and Lie Groups/B.08.05 Lorentz Algebra in the Dirac Representation.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/93 C Feynman Rules of the Standard Model/C.01 General Conventions.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/93 C Feynman Rules of the Standard Model/C.02 Propagators.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/93 C Feynman Rules of the Standard Model/C.02.01 Bosonic Propagators.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/93 C Feynman Rules of the Standard Model/C.02.02 Faddeev–Popov Ghost Propagators.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/93 C Feynman Rules of the Standard Model/C.02.03 Goldstone Boson Propagators.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/93 C Feynman Rules of the Standard Model/C.02.04 Fermionic Propagators.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/93 C Feynman Rules of the Standard Model/C.03 Electromagnetic Interaction Vertices.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/93 C Feynman Rules of the Standard Model/C.04 Electroweak Interaction Vertices.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/93 C Feynman Rules of the Standard Model/C.04.01 Charged Currents (W–Fermion–Fermion Vertex).md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/93 C Feynman Rules of the Standard Model/C.04.02 Neutral Current (Z–Fermion–Fermion Vertex).md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/93 C Feynman Rules of the Standard Model/C.04.03 Higgs–Fermion–Fermion Vertex.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/93 C Feynman Rules of the Standard Model/C.04.04 Triple Gauge Vertices (TGC).md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/93 C Feynman Rules of the Standard Model/C.04.05 Quartic Gauge Vertices (QGC).md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/93 C Feynman Rules of the Standard Model/C.04.06 Higgs–Gauge-Boson Vertices.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/93 C Feynman Rules of the Standard Model/C.04.07 Higgs Field Self-Interactions.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/93 C Feynman Rules of the Standard Model/C.05 QCD Vertices.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/93 C Feynman Rules of the Standard Model/C.05.01 Quark–Gluon Vertex.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/93 C Feynman Rules of the Standard Model/C.05.02 Three-Gluon Vertex.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/93 C Feynman Rules of the Standard Model/C.05.03 Four-Gluon Vertex.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/93 C Feynman Rules of the Standard Model/C.05.04 Ghost–Gluon Vertex.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/93 C Feynman Rules of the Standard Model/C.06 Coupling Constants and Numerical Values.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/00 Front matter/Preface.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/00 Front matter/Title and Publication Details.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/00 Introduction/0.1 Elementary Particle Physics.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/00 Introduction/0.2 How Do You Produce Elementary Particles -.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/00 Introduction/0.3 How Do You Detect Elementary Particles -.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/00 Introduction/0.4 Units.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/00 Introduction/0.B References and Notes.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/01 Historical Introduction to the Elementary Particles/1.1 The Classical Era (1897-1932).md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/01 Historical Introduction to the Elementary Particles/1.10 Intermediate Vector Bosons (1983).md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/01 Historical Introduction to the Elementary Particles/1.11 The Standard Model (1978- - ).md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/01 Historical Introduction to the Elementary Particles/1.2 The Photon (1900-1924).md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/01 Historical Introduction to the Elementary Particles/1.3 Mesons (1934-1947).md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/01 Historical Introduction to the Elementary Particles/1.4 Antiparticles (1930-1956).md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/01 Historical Introduction to the Elementary Particles/1.5 Neutrinos (1930-1962).md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/01 Historical Introduction to the Elementary Particles/1.6 Strange Particles (1947-1960).md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/01 Historical Introduction to the Elementary Particles/1.7 The Eightfold Way (1961-1964).md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/01 Historical Introduction to the Elementary Particles/1.8 The Quark Model (1964).md

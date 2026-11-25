@@ -1,0 +1,605 @@
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/06 Special Matrices/00 Special Matrices.md
+priority: low
+graph: no
+manim: no
+summary: Clear chapter hub with a correct family table and a useful nilpotent boundary example.
+- [Structure] No change needed beyond adding one sentence after the table that Hermitian, anti-Hermitian, unitary, and projector rows are all special cases of the Normal row, so the reader sees the table as a hierarchy rather than a flat list.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/06 Special Matrices/01 Orthogonal Projectors.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and compact, with a well-chosen oblique-projector counterexample and a verified ℂ³ example.
+- [Graph] Add a 2D plot contrasting the two projectors in the text: for $u=(1,1)$ draw the orthogonal projection onto the $x$ axis (dropped perpendicular to $(1,0)$) and the oblique projector $\begin{pmatrix}1&1\\0&0\end{pmatrix}$ (which sends $u$ to $(2,0)$ along the direction $(1,-1)$), with the residual vectors shown so the reader sees which one is perpendicular.
+- [Intuition] In the paragraph on the two conditions, state the Pythagoras result explicitly, $\|u\|^2=\|Pu\|^2+\|(I-P)u\|^2$, and check it on the ℂ³ example: $5=3+2$.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/06 Special Matrices/02 Singular Value Decomposition.md
+priority: medium
+graph: yes
+manim: yes
+summary: The construction and the sign example are good, but the note contains a contradictory "source" sentence and the figure shows three identical circles instead of the actual geometric action.
+- [Correctness] Remove the sentence "The source states that eigenvectors exist only for square, diagonalizable matrices."; it asserts a false claim (non-diagonalizable square matrices have eigenvectors), which the following note then has to contradict; keep only the corrected statement.
+- [Graph] Replace Fig. 6.1 (three equal circles with labels) by a real three-panel plot for one concrete matrix, e.g. $A=\begin{pmatrix}3&1\\1&-1\end{pmatrix}$ or $\begin{pmatrix}2&1\\0&1\end{pmatrix}$: unit circle with $v_1,v_2$; the circle after $V^\dagger$ (same circle, rotated axes); after $\Sigma$ (axis-aligned ellipse with semi-axes $\sigma_1,\sigma_2$); after $U$ (the final ellipse with $\sigma_1u_1,\sigma_2u_2$ drawn).
+- [Manim] Animate the unit circle being transformed by $V^\dagger$, then $\Sigma$, then $U$ in sequence for the same $2\times2$ matrix, ending on the image ellipse; the time ordering makes "rotate, stretch, rotate" concrete in a way a static picture does not.
+- [Example] Add a worked low-rank example under "Compression": for a $2\times2$ matrix with $\sigma_1\gg\sigma_2$, show $A_1=\sigma_1u_1v_1^\dagger$ and state the Eckart–Young error $\|A-A_1\|_2=\sigma_2$.
+- [Simplify] Move the sentence on squared singular values summing to one (bipartite coefficients) into the "Entanglement" bullet, where the Schmidt context is introduced; in its current place it appears before any state has been defined.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/06 Special Matrices/03 Polar Decomposition.md
+priority: low
+graph: no
+manim: no
+summary: Correct, with a clear construction proof and diagonal example; the quantum application is nearly tautological.
+- [Intuition] Replace the diagonal example by a non-commuting one, e.g. $A=\begin{pmatrix}1&1\\0&1\end{pmatrix}$, and show $P=\sqrt{A^\dagger A}$ is not diagonal and $UP\ne PU$, so the warning "U and P do not commute" is demonstrated, not only stated.
+- [Simplify] Rewrite the application paragraph: "It is the unitary factor in the polar decomposition of the propagator" is circular; say instead that any unitary $A$ has $A^\dagger A=I$, hence $P=I$, and that a nontrivial $P$ would signal norm loss or gain (for example a non-Hermitian effective Hamiltonian with decay).
+- [Structure] Drop the meta phrase "as the source states" in the left-polar note; state the invertibility assumption directly and mention that non-invertible matrices still have a polar form with unique $P$ but non-unique $U$.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/06 Special Matrices/04 Rank, Kernel and Image.md
+priority: low
+graph: no
+manim: no
+summary: Correct and concise, with a proof sketch and a useful nilpotent counterexample.
+- [Simplify] In the nilpotent paragraph, "Thus the later eigenvalue counting rule uses Hermiticity" refers to the rule stated in the preceding paragraph, not a later one; change "later" to "preceding" (or "the rank equals the number of nonzero eigenvalues rule above").
+- [Example] Add a physical one-liner: for $\sigma_z+I=\operatorname{diag}(2,0)$ the kernel is spanned by $|\downarrow\rangle$ and the rank is one, linking kernel to "states the operator annihilates".
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/06 Special Matrices/05 Determinant, Trace and Invariants.md
+priority: medium
+graph: yes
+manim: no
+summary: The invariant formulas are correct, but the convergence paragraph comes before the example it refers to and the thermal example never defines $Z$ or $\thermal{\beta}$ in formulas.
+- [Structure] Move the paragraph "In the thermal example below, the sum must define a normalizable state..." to after the thermal-state equation, and replace the closing note's "The source uses these symbols without defining them" by explicit definitions $Z=\sum_n\mathrm{e}^{-\thermal{\beta}\energy{E}_n}$ and $\thermal{\beta}=1/(k_\mathrm{B}T)$.
+- [Example] Finish the thermal example with a two-level system ($\energy{E}_0=0$, $\energy{E}_1=\Delta$): $\langle\hat H\rangle=\Delta/(\mathrm{e}^{\thermal{\beta}\Delta}+1)$, with limits $0$ for $T\to0$ and $\Delta/2$ for $T\to\infty$.
+- [Graph] Plot $\langle\hat H\rangle/\Delta=1/(\mathrm{e}^{1/\tau}+1)$ against reduced temperature $\tau=k_\mathrm{B}T/\Delta$ for $\tau\in[0,5]$, with a dashed asymptote at $1/2$.
+- [Intuition] Add one sentence that $\det A$ is the volume scaling factor and $\operatorname{Tr}A$ is the first-order rate of volume change, $\det(\mathrm{e}^{tA})=\mathrm{e}^{t\operatorname{Tr}A}$, which explains why unitary evolution with Hermitian $H$ has $\lvert\det\rvert=1$.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/06 Special Matrices/06 Condition Number.md
+priority: low
+graph: no
+manim: no
+summary: Correct derivation of the worst-case bound with a clear diagonal example.
+- [Intuition] Add the geometric picture: $A$ maps the unit sphere to an ellipsoid whose longest and shortest semi-axes are $\sigma_{\max}$ and $\sigma_{\min}$, so $\kappa$ is the eccentricity ratio; link to Fig. 6.1 in [[02 Singular Value Decomposition]].
+- [Example] Add a rule of thumb: with double precision ($\approx10^{-16}$ relative error) and $\kappa\approx10^{k}$, about $k$ significant digits can be lost; illustrate with $\varepsilon=10^{-8}$ in the existing example.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/06 Special Matrices/07 Gell-Mann Matrices.md
+priority: medium
+graph: no
+manim: no
+summary: The listed properties are correct, but the note never displays the eight Gell-Mann matrices or any structure constants, so the reader cannot check the claims.
+- [Example] Display all eight matrices $\lambda_1,\ldots,\lambda_8$ explicitly (including $\lambda_8=\operatorname{diag}(1,1,-2)/\sqrt3$) and point out that $\lambda_1,\lambda_2,\lambda_3$ are the Pauli matrices embedded in the upper-left block.
+- [Example] List the nonzero independent structure constants, $f_{123}=1$, $f_{147}=f_{246}=f_{257}=f_{345}=f_{516}=f_{637}=1/2$, $f_{458}=f_{678}=\sqrt3/2$, and verify one commutator, e.g. $[\lambda_1,\lambda_2]=2\mathrm{i}\lambda_3$.
+- [Simplify] The closing note refers to "the final expression" with summation over $k$; say instead that $[\sigma_i,\sigma_j]=2\mathrm{i}\varepsilon_{ijk}\sigma_k$ uses the summation convention, or write the sum explicitly as in the $SU(3)$ formula.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/06 Special Matrices/08 Density Matrices.md
+priority: medium
+graph: yes
+manim: yes
+summary: The definition, properties, and mixture-versus-superposition contrast are correct and clear, but the Bloch figure carries an unexplained label and the note omits the Bloch-vector formula it plots.
+- [Correctness] Remove the stray text3d label '50' at $(0.34,0.16,0.82)$ in Fig. 6.2 together with the note that apologises for it; it has no meaning and suggests an angle that is not defined.
+- [Structure] The physical-quantity table row "— | 1 | Spin quantum number" lists no symbol used in the note; delete it or replace it with the Bloch vector $\mathbf r$ if the formula below is added.
+- [Intuition] State the Bloch parametrisation $\rho=\tfrac12(I+\mathbf r\cdot\boldsymbol\sigma)$ with $\operatorname{Tr}\rho^2=\tfrac12(1+|\mathbf r|^2)$ next to Fig. 6.2 and link [[06 Special Matrices/99 Exercises/07 Exercise 7|Exercise 7]], so the axis labels and the surface/interior claim are derived rather than asserted; label the red marker with its purity ($\mathbf r=(0.22,0.08,0.12)$ gives $\operatorname{Tr}\rho^2\approx0.53$).
+- [Intuition] Add that the decomposition into $p_i,|\psi_i\rangle$ is not unique: $I/2$ is both the up/down mixture and the $\pm x$ mixture, so only $\rho$ (not the ensemble) is physically meaningful.
+- [Manim] Animate pure dephasing of $|+x\rangle$: the Bloch vector shrinks along the $x$ axis toward the centre while the matrix display shows the off-diagonal entries decaying as $\mathrm{e}^{-t/T_2}$ and the purity dropping from 1 to 1/2.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/06 Special Matrices/09 Common Errors.md
+priority: low
+graph: no
+manim: no
+summary: The listed errors and the purity proof are correct, but the note opens with proof material before the error list and calls the coefficient matrix both $C_{ij}$ and $\signal{c}_{ij}$.
+- [Structure] Move the two opening paragraphs (purity proof via eigenvalues $q_i$ and the $\operatorname{diag}(-1,0)$ test) under "Error 3", which they belong to; the note should start with the error list.
+- [Structure] In the Schmidt callout, write "the coefficient matrix $C=(\signal{c}_{ij})$" instead of "$C_{ij}$" so one symbol is used, and drop the "In the source" phrasing in favour of a direct statement with the $V^*$ caveat merged into it.
+- [Simplify] In "Error 2", add a one-line counterexample: $\det(I+I)=4\ne\det I+\det I=2$ for $2\times2$.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/06 Special Matrices/10 Chapter Summary.md
+priority: low
+graph: no
+manim: no
+summary: Accurate and well-scoped summary with a good diag(1,0) versus I/2 comparison.
+- [Structure] No change needed; optionally add the condition-number bullet $\kappa=\sigma_{\max}/\sigma_{\min}$ and the Gell-Mann bullet, which are the only chapter sections not summarised.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/06 Special Matrices/11 Exercises.md
+priority: low
+graph: no
+manim: no
+summary: Clear exercise index with helpful study guidance; links resolve.
+- [Structure] No change needed.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/06 Special Matrices/99 Exercises/01 Exercise 1.md
+priority: low
+graph: no
+manim: no
+summary: Correct, fully worked, with good orthogonal-complement and normalisation checks.
+- [Intuition] Mention that $v=(1,\mathrm{i})/\sqrt2$ is the $\sigma_y$ eigenstate $|+y\rangle$ and that $P=\tfrac12(I+\sigma_y)$, connecting the result to the Bloch picture in [[08 Density Matrices]].
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/06 Special Matrices/99 Exercises/02 Exercise 2.md
+priority: low
+graph: no
+manim: no
+summary: Correct and clear, with a useful transfer check to the singular case.
+- [Structure] No change needed.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/06 Special Matrices/99 Exercises/03 Exercise 3.md
+priority: low
+graph: no
+manim: no
+summary: Correct, with a good coherence-versus-population discussion and an explicit $\sigma_x$ prediction.
+- [Structure] No change needed; optionally note that $\rho=\tfrac12(I+\sigma_x)$, i.e. Bloch vector $(1,0,0)$, to tie it to Exercise 7.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/06 Special Matrices/99 Exercises/04 Exercise 4.md
+priority: low
+graph: no
+manim: no
+summary: Correct, with a good proof of the minimum purity and a clear warning that a zero mean is not a purity test.
+- [Structure] No change needed.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/06 Special Matrices/99 Exercises/05 Exercise 5.md
+priority: low
+graph: no
+manim: no
+summary: Correct full SVD with clear dimension bookkeeping and a good distinction between unused output directions and zero singular values.
+- [Simplify] The note uses $s_k$ for singular values while the chapter uses $\sigma_i$; use $\sigma_k$ here for consistency (no clash with Pauli matrices arises in this exercise).
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/06 Special Matrices/99 Exercises/06 Exercise 6.md
+priority: low
+graph: no
+manim: no
+summary: Correct proof with a useful converse counterexample and SU(n) remark.
+- [Structure] No change needed.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/06 Special Matrices/99 Exercises/07 Exercise 7.md
+priority: low
+graph: no
+manim: no
+summary: Correct derivation (eigenvalues, purity, boundary tests check out), but the question text and a note dwell on the source's ambiguous "when does equality hold".
+- [Structure] Reword part (b) of the question to "When is $\operatorname{Tr}(\rho^2)=1$, and when is it $1/2$?" and delete the note about the unspecified equality and the sentence "resolves the source's unspecified equality question"; the solution then reads directly.
+- [Intuition] Add one sentence that the eigenvalues $\tfrac12(1\pm|\mathbf r|)$ mean the Bloch length directly measures how far the state is from maximally mixed, linking to Fig. 6.2 in [[08 Density Matrices]].
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/06 Special Matrices/99 Exercises/08 Exercise 8.md
+priority: low
+graph: no
+manim: no
+summary: Correct Kronecker product, energies, and sign discussion with appropriate degeneracy comments.
+- [Structure] Replace the note "which the source does not specify" with the direct statement that $\energy{J}$ is introduced below; the worked solution already handles this.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/06 Special Matrices/99 Exercises/09 Exercise 9.md
+priority: low
+graph: no
+manim: no
+summary: Correct and carefully checked Schmidt decomposition (singular values, vectors, reconstruction, and reduced purity 7/9 all verify numerically).
+- [Simplify] Shorten part (b) by noting first that $C$ is real symmetric with eigenvalues $\varphi/\sqrt3$ and $-1/(\varphi\sqrt3)$, where $\varphi=(1+\sqrt5)/2$, so $s_+=\varphi/\sqrt3$ and $s_-=1/(\varphi\sqrt3)$; the golden ratio makes the numbers memorable and explains $\beta/\alpha=1/\varphi$.
+- [Example] Add the entanglement entropy $S=-\sum\lambda_\pm\log_2\lambda_\pm\approx0.55$ bit as a quantitative follow-up to "entangled but not maximally entangled".
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/07 Eigenvalues and Eigenvectors/00 Eigenvalues and Eigenvectors.md
+priority: low
+graph: no
+manim: no
+summary: Clear chapter hub with a good motivating question and a useful defective-matrix warning; the closing paragraph is slightly dense.
+- [Simplify] Split the paragraph that starts "For example, $\begin{pmatrix}0&1\\0&0\end{pmatrix}$" into two: one sentence on the defective matrix (state that $(1,0)^T$ is its only eigendirection) and a separate sentence on continuous spectra with a forward link to the Hilbert Space note [[05 Continuous Bases]].
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/07 Eigenvalues and Eigenvectors/01 Definition and Calculation.md
+priority: medium
+graph: no
+manim: yes
+summary: Correct and compact procedure with a well-checked σ_y example, but the geometric meaning of eigenvectors and the algebraic-versus-geometric multiplicity distinction are only stated in words.
+- [Manim] Animate the real symmetric map $A=\begin{pmatrix}3&1\\1&3\end{pmatrix}$ acting on a ring of unit vectors: most vectors turn, while the vectors along $(1,1)$ and $(1,-1)$ only stretch by 4 and 2; this makes "preserved direction" concrete before the determinant method.
+- [Example] Add a short worked degenerate case next to the sentence "A repeated root does not by itself give several independent eigenvectors", e.g. compare $\operatorname{diag}(2,2)$ (kernel dimension 2) with $\begin{pmatrix}2&1\\0&2\end{pmatrix}$ (kernel dimension 1), both with the double root $\lambda=2$.
+- [Simplify] Rewrite the zero-eigenvalue paragraph: "Its normalized length is one" and "prevents discarding a physical zero-level state merely because its measurement value vanishes" are hard to parse; state simply that $\lambda=0$ is allowed while $v=0$ is excluded because $A0=\lambda0$ holds for every $\lambda$.
+- [Links] Turn "Chapter 6 uses $\det(\lambda I-A)$" in the note callout into a wiki link to the relevant Chapter 6 (Special Matrices) note.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/07 Eigenvalues and Eigenvectors/02 Properties of Hermitian Operators.md
+priority: low
+graph: no
+manim: no
+summary: Both proofs are correct and short; the introductory paragraph refers to "both proofs" before the reader has seen them.
+- [Structure] Move the opening paragraph ("Both proofs compare the same inner product in two orders...") after Theorem 7.2 as a remark, or reduce it to one sentence of motivation, so the note starts with Theorem 7.1.
+- [Intuition] Add a non-Hermitian counterexample, e.g. the rotation $\begin{pmatrix}0&-1\\1&0\end{pmatrix}$ with eigenvalues $\pm i$, to show that the real-eigenvalue result really needs $\hat A^\dagger=\hat A$.
+- [Example] In the $A=I$ example, write the Gram–Schmidt result explicitly: $(1,1)^T-(1,0)^T=(0,1)^T$, so the reader sees the orthonormal pair.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/07 Eigenvalues and Eigenvectors/03 The Spectral Theorem.md
+priority: medium
+graph: no
+manim: no
+summary: Correct statement and good projector discussion, but the proof roadmap and the diag(2,2,5) check appear before the spectral decomposition they refer to, and no worked 2×2 decomposition is given.
+- [Structure] Reorder: theorem, then the boxed spectral decomposition and degenerate projector $\hat P_a$, then the $\operatorname{diag}(2,2,5)$ check (which uses $P_2$, $P_5$ before they are defined), then the proof roadmap.
+- [Simplify] In the proof roadmap, say why "A complex finite matrix has an eigenvector": the characteristic polynomial has a root in $\mathbb C$ by the fundamental theorem of algebra.
+- [Example] Add a short worked decomposition, e.g. $\sigma_y=|+y\rangle\langle+y|-|-y\rangle\langle-y|$ using the vectors from [[01 Definition and Calculation]], with the explicit outer-product matrices.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/07 Eigenvalues and Eigenvectors/04 Diagonalization Methods.md
+priority: medium
+graph: yes
+manim: no
+summary: The five-step recipe, σ_x example, and matrix-function example are correct and well checked; the level diagram is useful, but the dependence of the energies on the coupling is not plotted.
+- [Graph] Add a 2D plot of $E_\pm=E_0\pm\Delta$ versus $\Delta$ (set $E_0=0$, $\Delta\in[-2,2]$ in units of a reference energy): two straight lines crossing at $\Delta=0$, showing the gap $2|\Delta|$ and the label exchange for negative $\Delta$ that the note callout describes.
+- [Simplify] In the $e^{i\theta\sigma_x}$ example, show the intermediate product $H\operatorname{diag}(e^{i\theta},e^{-i\theta})H$ (entries $(e^{i\theta}\pm e^{-i\theta})/2$) and then state the compact form $\cos\theta\,I+i\sin\theta\,\sigma_x$, linking to Exercise 6 where the same identity is derived by power series.
+- [Intuition] Fig. 7.1 labels the uncoupled states as spin states $|\uparrow\rangle,|\downarrow\rangle$ with "Same energy, different spin", but the model is generic (Exercise 4 applies it to NH₃ and a double well); add one sentence that the Hamiltonian is $E_0I+\Delta\sigma_x$ and that the labels denote any two basis states.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/07 Eigenvalues and Eigenvectors/05 Common Errors.md
+priority: medium
+graph: no
+manim: no
+summary: The content is correct, including the degenerate-measurement caveat, but two introductory paragraphs refer to "the first error" and rules "below" before they are introduced, and the measurement section has no numerical example.
+- [Structure] Move the residual-check paragraph ("A residual check makes the first error concrete...") into Error 1, and move the postulate-caveat paragraph into the measurement-principle section, so the note opens directly with the error list.
+- [Simplify] Mark the error headings as misconceptions (e.g. "Error 1 — Misconception: normalize before finding the direction"); as written, "Normalize before finding the direction" reads like advice to follow.
+- [Example] Add a numerical measurement example, e.g. $|\psi\rangle=(\sqrt3|\uparrow\rangle+|\downarrow\rangle)/2$ for $\sigma_z$: $P(+1)=3/4$, $P(-1)=1/4$, $\langle\sigma_z\rangle=1/2$, which also shows that the mean need not be an eigenvalue.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/07 Eigenvalues and Eigenvectors/06 Chapter Summary.md
+priority: low
+graph: no
+manim: no
+summary: Accurate summary with a useful reconstruction exercise.
+- [Links] The equal-superposition question ("Explain why the mean can lie between the allowed outcomes") is answered in Exercise 5; add a link to [[07 Eigenvalues and Eigenvectors/99 Exercises/05 Exercise 5|Exercise 5]].
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/07 Eigenvalues and Eigenvectors/07 Exercises.md
+priority: low
+graph: no
+manim: no
+summary: Clear exercise index with useful guidance; no change needed.
+- [Structure] No change needed.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/07 Eigenvalues and Eigenvectors/99 Exercises/01 Exercise 1.md
+priority: medium
+graph: no
+manim: no
+summary: Correct and carefully verified solutions, but the eigenvector labels in part (a) clash with the component symbols used in parts (a) and (b).
+- [Correctness] Symbol clash: in (a) $v_2$ and $v_4$ denote the normalized eigenvectors for $\lambda=2,4$, while the same section writes "the first row gives $v_1+v_2=0$" and (b) uses "$(1-i)v_2=\lambda v_1$" with $v_1,v_2$ as components; rename the eigenvectors (e.g. $u_2,u_4$) and keep $v_1,v_2$ for components.
+- [Simplify] In (b), show the two component equations $(1-i)v_2=\lambda v_1$ and $(1+i)v_1=\lambda v_2$ as a displayed system before the choice $v_1=1-i$, $v_2=\lambda$.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/07 Eigenvalues and Eigenvectors/99 Exercises/02 Exercise 2.md
+priority: low
+graph: no
+manim: no
+summary: Correct, clear verification with useful extra checks.
+- [Simplify] In "A reconstruction by action", show the one-line product $|+x\rangle\langle+x|-x\rangle\langle-x|=0$ explicitly, since the argument depends on it.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/07 Eigenvalues and Eigenvectors/99 Exercises/03 Exercise 3.md
+priority: low
+graph: no
+manim: no
+summary: Correct and clear; the non-Hermitian counterexample is a good addition.
+- [Intuition] Add the general 2×2 identity $\det(A-\lambda I)=\lambda^2-(\operatorname{Tr}A)\lambda+\det A$, which shows directly why trace and determinant fix the eigenvalues in two dimensions.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/07 Eigenvalues and Eigenvectors/99 Exercises/04 Exercise 4.md
+priority: low
+graph: yes
+manim: no
+summary: Correct diagonalization with good checks and a clear explanation of the symmetric and antisymmetric states.
+- [Intuition] The basis kets are written $|\uparrow\rangle,|\downarrow\rangle$, but for the NH₃ molecule and the double well named in the question they are position configurations; rename them $|L\rangle,|R\rangle$ or state that the arrows label any two basis states.
+- [Graph] Plot $E_\pm(\Delta)=E_0\pm\Delta$ for $\Delta\in[-2,2]$ (with $E_0=0$), marking the degenerate point $\Delta=0$ and the swap of which state is higher, matching the paragraph on the labels $+$ and $-$.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/07 Eigenvalues and Eigenvectors/99 Exercises/05 Exercise 5.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and well-explained solution with a good probability-only cross-check.
+- [Graph] Plot $P_+=\cos^2(\theta/2)$, $P_-=\sin^2(\theta/2)$ and $\Delta S_z/(\hbar/2)=|\sin\theta|$ for $\theta\in[0,\pi]$ on one 2D axis; the crossing of the probabilities at $\theta=\pi/2$ coincides with the maximum uncertainty.
+- [Intuition] Add one sentence that $\theta$ is the polar angle of the spin on the Bloch sphere, so $\theta=\pi/2$ is the spin along $+x$, perpendicular to the measurement axis.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/07 Eigenvalues and Eigenvectors/99 Exercises/06 Exercise 6.md
+priority: low
+graph: yes
+manim: yes
+summary: Correct derivation with a justified Rabi-frequency correction and a good spectral explanation; a time plot would show the oscillation immediately.
+- [Graph] Plot $P_\uparrow(t)=\cos^2(\Delta t/\hbar)$ and $P_\downarrow(t)=\sin^2(\Delta t/\hbar)$ versus $\Delta t/\hbar\in[0,2\pi]$, marking the full-transfer time $t=\pi\hbar/(2|\Delta|)$ and the period $T=\pi\hbar/|\Delta|$.
+- [Manim] Animate the Bloch vector rotating about the $x$ axis from the north pole ($|\uparrow\rangle$) to the south pole and back, with two population bars beside it; the motion shows why the population angular frequency is $2|\Delta|/\hbar$.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/07 Eigenvalues and Eigenvectors/99 Exercises/07 Exercise 7.md
+priority: medium
+graph: yes
+manim: no
+summary: Rigorous and correct ladder-operator proof with careful positivity and domain arguments, but it is long and one physical statement about the zero-point energy is vague.
+- [Simplify] Replace "The oscillator cannot have both exactly zero position and exactly zero momentum uncertainty" with the quantitative statement that the vacuum has $\Delta x\,\Delta p=\hbar/2$ (from the computed $\langle x^2\rangle_0$ and $\langle p^2\rangle_0$), the minimum allowed by the Heisenberg relation.
+- [Graph] Plot the potential $V/(\hbar\omega)=\tfrac12\xi^2$ versus $\xi=x/\sqrt{\hbar/(m\omega)}\in[-3.5,3.5]$ with horizontal level lines at $E_n/(\hbar\omega)=n+\tfrac12$ for $n=0,\ldots,4$; this shows the equal spacing and the nonzero ground level.
+- [Structure] Part (b) mixes the nonexistence proof (fractional values) with the existence construction (raising from $|0\rangle$); split it into two subheadings, "No fractional or negative eigenvalues" and "Every nonnegative integer occurs".
+- [Simplify] The question writes $[\hat a,\hat a^\dagger]=1$ and the solution writes $=I$; use one form throughout.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/08 Hilbert Space/00 Hilbert Space.md
+priority: low
+graph: no
+manim: no
+summary: Good motivating hub with a clear comparison table; the last two paragraphs are dense for an overview.
+- [Simplify] Shorten the paragraphs "Use the chapter in two stages..." and "For a quick convergence test..." to two sentences each, or move the $1/n$ versus constant-coefficient test into [[02 Completeness and Hilbert Space]] where completeness is defined.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/08 Hilbert Space/01 The Space L2(R).md
+priority: medium
+graph: yes
+manim: no
+summary: Correct examples with checked integrals and a good membership-versus-normalization section; visual intuition for finite versus infinite area is missing.
+- [Graph] Plot $|f(x)|^2$ for $e^{-|x|}$, the normalized Gaussian with $\sigma=1$, and the plane wave ($|e^{ikx}|^2=1$) on $x\in[-5,5]$, shading the area under each; the plane-wave area clearly grows without bound as the range widens.
+- [Example] Add one example showing that an unbounded function can still be in $L^2$ (e.g. $x^{-1/3}$ on $[0,1]$), with a link to [[08 Hilbert Space/99 Exercises/01 Exercise 1|Exercise 1]], to correct the intuition that membership requires boundedness.
+- [Intuition] In the equivalence-class note, give a concrete case: the function equal to $e^{-|x|}$ except $f(0)=5$ is the same $L^2$ element as $e^{-|x|}$.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/08 Hilbert Space/02 Completeness and Hilbert Space.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct definition with a good sequence-space counterexample, but the incompleteness example is abstract and no function-space example is shown.
+- [Example] Add the standard function-space counterexample: continuous functions on $[0,1]$ with the $L^2$ norm are incomplete, since $f_n(x)=\tfrac12+\tfrac12\tanh(n(x-\tfrac12))$ is Cauchy and converges in norm to a step function that is not continuous.
+- [Graph] Plot that sequence $f_n$ for $n=2,5,20,100$ on $[0,1]$ together with the limiting step, to show a Cauchy sequence whose limit leaves the space.
+- [Simplify] The paragraph "In state expansions, the same tail argument..." is abstract; replace it with one concrete sentence pointing to [[08 Hilbert Space/99 Exercises/08 Exercise 8|Exercise 8]], where this proof is carried out.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/08 Hilbert Space/03 Orthonormal Bases.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct definition, Parseval proof, and Fourier orthonormality check; convergence in norm is stated but never visualized, and the chapter references are not linked.
+- [Graph] Plot the partial sine sums of $f(x)=1$ on $[0,1]$, $\tfrac4\pi\sum_{k=0}^{K}\sin((2k+1)\pi x)/(2k+1)$ for $K=0,2,10$, to show norm convergence with a persistent overshoot near the endpoints (Gibbs).
+- [Structure] Definition 8.3 indexes the basis by $n=0,1,\ldots$, while the Fourier example uses $n\in\mathbb Z$ and the box example uses $n\ge1$; add one sentence that any countable index set is allowed.
+- [Links] Link "studied in detail in Chapter 12" to the Fourier Series chapter hub and "verified in Chapter 2" to [[05 The Inner Product as an Integral]], where the box sine orthogonality is shown.
+- [Simplify] Replace "probability of finding the system in its $n$th stationary state" with "probability that an energy measurement gives $E_n$", which is the operational statement.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/08 Hilbert Space/04 The Completeness Relation.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct and careful about strong versus operator-norm convergence, but the position-space kernel identity has no picture and no finite-dimensional warm-up.
+- [Example] Start with the finite case $|\uparrow\rangle\langle\uparrow|+|\downarrow\rangle\langle\downarrow|=I$ in $\mathbb C^2$, written as matrices, before the infinite-dimensional statement.
+- [Graph] Plot the partial kernel $K_N(x,\tfrac12)=2\sum_{n=1}^N\sin(n\pi x)\sin(n\pi/2)$ on $[0,1]$ for $N=5,20,60$, showing the peak at $x=1/2$ that becomes narrower and taller (cross-link to Exercise 7).
+- [Links] Link "introduced in Chapter 13" to the note "03 The Dirac Delta Distribution" in the Fourier Transform chapter.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/08 Hilbert Space/05 Continuous Bases.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct and appropriately cautious about generalized states, but the discrete-to-continuous correspondence is not shown side by side and only the position basis is treated.
+- [Intuition] Add a small table of correspondences: $\delta_{mn}\leftrightarrow\delta(x-x')$, $\sum_n\leftrightarrow\int dx$, $c_n\leftrightarrow\psi(x)$, $|c_n|^2\leftrightarrow|\psi(x)|^2dx$.
+- [Graph] Plot unit-area Gaussians $\delta_\varepsilon(x)=e^{-x^2/(2\varepsilon^2)}/(\varepsilon\sqrt{2\pi})$ for $\varepsilon=1,0.3,0.1$ on $[-3,3]$: the area stays 1 while the peak grows, which shows why $\langle x_0|x_0\rangle$ is not a finite norm.
+- [Example] Add the momentum basis $\langle x|p\rangle=e^{ipx/\hbar}/\sqrt{2\pi\hbar}$ as a second continuous basis, linking to the plane-wave example in [[01 The Space L2(R)]].
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/08 Hilbert Space/06 Finite-Dimensional Systems.md
+priority: low
+graph: no
+manim: no
+summary: Correct and concise; the truncation caveat is valuable.
+- [Links] Illustrate the truncation paragraph with a link to the two-level Hamiltonian in [[07 Eigenvalues and Eigenvectors/99 Exercises/04 Exercise 4|Chapter 7 Exercise 4]], which is exactly such an effective model.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/08 Hilbert Space/07 Common Errors.md
+priority: medium
+graph: no
+manim: no
+summary: Correct content, but the note opens with an example of "Error 4" before any error is listed, and Error 1 has no concrete example.
+- [Structure] Move the two opening paragraphs (the $(1+x^2)^{-1/2}$ domain example and the three checks) into the Error 4 section, which they illustrate.
+- [Example] Give a concrete case for Error 1: the sine series of $f=1$ on $[0,L]$ converges in $L^2$ but equals zero at both endpoints (see [[08 Hilbert Space/99 Exercises/04 Exercise 4|Exercise 4]]), or the shrinking moving-indicator ("typewriter") sequence, which tends to zero in norm but converges at no point.
+- [Simplify] In Error 4, give the domain of $\hat x$ explicitly, $\{\psi\in L^2:\int x^2|\psi|^2dx<\infty\}$, so the opening example has a definition to refer to.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/08 Hilbert Space/08 Chapter Summary.md
+priority: low
+graph: no
+manim: no
+summary: Accurate summary; the section separating the two meanings of completeness is helpful.
+- [Structure] No change needed.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/08 Hilbert Space/09 Exercises.md
+priority: low
+graph: no
+manim: no
+summary: Clear exercise index with useful guidance; no change needed.
+- [Structure] No change needed.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/08 Hilbert Space/99 Exercises/01 Exercise 1.md
+priority: low
+graph: yes
+manim: no
+summary: All integrals are correct (3, divergent, π/2, 1/8, 2L verified) and the endpoint generalization is a good addition.
+- [Graph] Plot the squared integrands $x^{-2/3}$ and $x^{-4/3}$ on $(0,1]$ (y clipped at about 50) to show that both blow up at zero but only the first has finite area, matching the threshold $a<1/2$.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/08 Hilbert Space/99 Exercises/02 Exercise 2.md
+priority: low
+graph: no
+manim: no
+summary: Correct and clear; the remark that this check does not prove completeness is well placed.
+- [Structure] No change needed.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/08 Hilbert Space/99 Exercises/03 Exercise 3.md
+priority: low
+graph: no
+manim: no
+summary: Correct and clear, with good caveats on degeneracy and phases.
+- [Structure] No change needed.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/08 Hilbert Space/99 Exercises/04 Exercise 4.md
+priority: low
+graph: yes
+manim: yes
+summary: Correct coefficients, symmetry argument, and Parseval derivation of π²/8, with a useful truncation estimate.
+- [Graph] Plot the partial sums $\tfrac4\pi\sum_{k=0}^{K}\sin((2k+1)\pi x/L)/(2k+1)$ with $L=1$ for $K=0,1,4,20$ together with $f=1$; this shows the first-mode fraction $8/\pi^2\approx0.81$, the endpoint zeros, and the Gibbs overshoot.
+- [Manim] Animate adding odd sine modes one by one to approach $f=1$, with a running bar for $\sum|c_n|^2/L$ approaching 1; the motion shows norm convergence while the endpoint values stay zero.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/08 Hilbert Space/99 Exercises/05 Exercise 5.md
+priority: low
+graph: no
+manim: no
+summary: Correct derivation with a proper domain note and a useful units check.
+- [Structure] No change needed.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/08 Hilbert Space/99 Exercises/06 Exercise 6.md
+priority: low
+graph: yes
+manim: no
+summary: Correct normalization, coefficients, and numerical sum (0.999999048 and the norm error 9.76e-4 confirmed), with a good distinction between probability error and norm error.
+- [Graph] Plot $\psi(x)=\sqrt{30}\,x(1-x)$ and its one-term approximation $c_1\phi_1(x)=\tfrac{8\sqrt{30}}{\pi^3}\sin(\pi x)$ on $[0,1]$ (with $L=1$), plus their difference scaled up, to show why the first mode carries 99.86 % of the probability.
+- [Simplify] The note and its physical-quantity table write the box functions as $\signal{\phi_n}$, while [[03 Orthonormal Bases]] writes the same functions uncolored; use one convention across the chapter.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/08 Hilbert Space/99 Exercises/07 Exercise 7.md
+priority: low
+graph: yes
+manim: yes
+summary: Correct and rigorous kernel analysis (Dirichlet form and diagonal growth both verified); the formation of the delta peak would benefit from a picture.
+- [Graph] Plot $K_N(x,x')$ with $L=1$ and $x'=0.3$ for $N=5,20,60$ on $x\in[0,1]$, showing the peak of height about $N$ at $x'$ and the oscillating tails.
+- [Manim] Animate $K_N(x,0.3)$ as $N$ increases from 1 to 60 while the shaded area under the central peak stays near 1, illustrating that the kernel concentrates but is defined by its integral action.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/08 Hilbert Space/99 Exercises/08 Exercise 8.md
+priority: low
+graph: no
+manim: no
+summary: Correct and complete proof of Riesz–Fischer with a good constructive example and clear physical interpretation.
+- [Structure] No change needed.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/09 Dirac Notation/00 Dirac Notation.md
+priority: low
+graph: no
+manim: no
+summary: Clear chapter hub with good motivation and working section links, but one historical claim is wrong.
+- [Correctness] "Paul Dirac introduced this notation in 1930 in an influential book": the 1930 first edition of The Principles of Quantum Mechanics did not use bra–ket notation; Dirac introduced it in his 1939 paper "A new notation for quantum mechanics" (Proc. Cambridge Phil. Soc. 35, 416), and the book adopted it in the 1947 third edition.
+- [Simplify] The last two sentences of the second paragraph (amplitude vs probability) duplicate the inner-product and postulates notes; shorten to one sentence so the hub stays a roadmap.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/09 Dirac Notation/01 Ket and Bra.md
+priority: low
+graph: no
+manim: no
+summary: Correct and compact; the $(1,i)^T/\sqrt2$ conjugation example is a good hook, but the introduction front-loads Riesz and generalized-ket caveats before the definitions.
+- [Structure] Move the paragraph on generalized position kets and Riesz (line 12) after the "From a wavefunction to a ket" section, where $|x\rangle$ first appears, so the definitions come first.
+- [Example] Add one line with the explicit column/row form in $\mathbb C^2$: $|\psi\rangle=(\alpha,\beta)^T\Rightarrow\langle\psi|=(\alpha^*,\beta^*)$, and show $\langle\psi|\phi\rangle$ as a row-times-column product to connect with matrix algebra.
+- [Links] Link "generalized ket" and "Riesz representation theorem" to the Chapter 8 Hilbert Space notes (02 Linear Algebra/08 Hilbert Space) where these are developed.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/09 Dirac Notation/02 The Inner Product in Dirac Notation.md
+priority: low
+graph: no
+manim: no
+summary: Correct axioms and a verified worked example ($|\langle\psi|\phi\rangle|^2=1/2$); the opening paragraphs are abstract compared to the concrete example.
+- [Structure] The phase-test paragraph (line 12) refers to "either normalized ket" before any ket is defined; move it after the ℂ² example and apply it to that $|\psi\rangle$, $|\phi\rangle$ explicitly (e.g. $\langle\psi|i\phi\rangle=i(1-i\sqrt2)/\sqrt6$).
+- [Intuition] Display the Cauchy–Schwarz inequality $|\langle\psi|\phi\rangle|^2\le\langle\psi|\psi\rangle\langle\phi|\phi\rangle$ as an equation, since the text cites it but never shows it.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/09 Dirac Notation/03 Operators in Dirac Notation.md
+priority: low
+graph: yes
+manim: no
+summary: Correct operator definitions and a well-checked Bloch-sphere example, with one symbol clash between a ket and a phase.
+- [Correctness] Symbol clash: $\phi$ labels the ket in $\langle\phi|\hat A|\psi\rangle$ and the adjoint relation, and $\signal{\phi}$ is the relative phase in the Bloch-state example; rename the phase (e.g. $\signal{\varphi}$) or the ket (e.g. $|\chi\rangle$) and update the table.
+- [Graph] Plot $\langle\sigma_z\rangle=\cos\theta$ for $\theta\in[0,\pi]$ with marked points at $0,\pi/2,\pi$ (values $1,0,-1$), optionally together with $P(\uparrow)=\cos^2(\theta/2)$ and $P(\downarrow)=\sin^2(\theta/2)$, to show that a zero mean comes from equal probabilities of $\pm1$.
+- [Example] Add the matrix form $\sigma_z=\mathrm{diag}(1,-1)$ and one off-diagonal matrix element such as $\langle\uparrow|\sigma_x|\downarrow\rangle=1$ to illustrate $A_{mn}$ and the adjoint relation concretely.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/09 Dirac Notation/04 Projectors.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and well scoped, with a useful non-orthogonal idempotent counterexample; the reference to "the source" is unclear for readers.
+- [Graph] A 2D vector diagram in the real plane: unit vector $|n\rangle$ at 30°, state $|\psi\rangle$ at 75°, its projection $\langle n|\psi\rangle|n\rangle$ and the rejected component $(\hat I-\hat P_n)|\psi\rangle$, to show idempotence and orthogonality geometrically.
+- [Simplify] Replace "The source calls this the most general form of Born's postulate" with a direct statement of scope; readers do not know which source is meant.
+- [Example] Add a projector onto a non-basis direction, e.g. $\hat P_{+x}=\tfrac12\begin{pmatrix}1&1\\1&1\end{pmatrix}$, and verify Hermiticity and $\hat P^2=\hat P$; this contrasts directly with the non-Hermitian idempotent example in the introduction.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/09 Dirac Notation/05 The Completeness Relation.md
+priority: low
+graph: no
+manim: no
+summary: Correct derivations of $\langle\hat A^2\rangle=\sum a_n^2P_n$ and of the change of basis; the domain remarks are dense for a first reading.
+- [Example] Add a numerical instance of the second-moment formula (e.g. the state $\tfrac12|1\rangle+\tfrac{\sqrt3}2|2\rangle$ with eigenvalues $1,2$) giving $\langle A\rangle=7/4$, $\langle A^2\rangle=13/4$ and variance $3/16$, to show $\langle A^2\rangle\ne\langle A\rangle^2$.
+- [Simplify] Combine the domain remarks in line 10 and in the closing note into the closing note only, so the introduction stays focused on "insert the identity".
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/09 Dirac Notation/06 From Notation to Representation.md
+priority: medium
+graph: no
+manim: no
+summary: Correct overview, but it never shows the explicit differential or matrix form it promises, so the representation change stays abstract.
+- [Example] In the position section, write $H_x=-\frac{\hbar^2}{2m}\frac{d^2}{dx^2}+V(x)$ and in the momentum section $H_p=\frac{p^2}{2m}+V(i\hbar\,\partial_p)$, so readers see the "differential equation" contrast stated in the TLDR.
+- [Intuition] Add the bridging overlap $\langle x|p\rangle=e^{ipx/\hbar}/\sqrt{2\pi\hbar}$ and note that it fixes the sign of $\hat x\leftrightarrow i\hbar\,\partial_p$; the "usual phase convention" is mentioned but not given.
+- [Example] Add a 2×2 discrete example (e.g. $H=\begin{pmatrix}E_0&\Delta\\\Delta&E_0\end{pmatrix}$ with $\det(H-EI)=0$ giving $E_0\pm\Delta$) and link it to Exercise 8.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/09 Dirac Notation/07 The Postulates of Quantum Mechanics.md
+priority: low
+graph: no
+manim: no
+summary: Correct, carefully scoped statement of the six postulates; the opening paragraphs are abstract and would benefit from one worked spin measurement.
+- [Example] Run one spin-½ example through P1–P6: state $\tfrac35|\uparrow\rangle+\tfrac45|\downarrow\rangle$, measure $\sigma_z$ (outcomes $\pm1$, probabilities $9/25$, $16/25$), post-measurement state, then evolution under a given $\hat H$.
+- [Simplify] Replace the source-referencing note ("The source presents this...") with a direct scope statement, and move the consistency-test paragraph (line 10) after P5 where the formulas it checks appear.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/09 Dirac Notation/08 Common Errors.md
+priority: low
+graph: no
+manim: no
+summary: Correct, well chosen errors with a good complex counterexample; the final interpretation section partly repeats earlier notes.
+- [Links] "the generalized-state qualifications from Chapter 8" should be a wiki link to the Chapter 8 Hilbert Space notes (02 Linear Algebra/08 Hilbert Space).
+- [Example] Error 1 would gain from a two-line ℂ² check: with $\hat A=\sigma_y$ and $|\psi\rangle=|\uparrow\rangle$, $\hat A|\psi\rangle=(0,i)^T$ while $\langle\psi|\hat A=(0,-i)$, showing the conjugation difference.
+- [Simplify] The "What the notation reveals" section repeats the spectral decomposition and completeness from earlier notes; shorten it to links plus one sentence each.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/09 Dirac Notation/09 Chapter Summary.md
+priority: low
+graph: no
+manim: no
+summary: Accurate summary list; no change needed beyond optional links.
+- [Links] Link each bullet to its section note (Ket and Bra, Inner Product, Operators, Projectors, Completeness), as is already done for the postulates bullet.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/09 Dirac Notation/10 Exercises.md
+priority: low
+graph: no
+manim: no
+summary: Functional exercise index with working links; no change needed.
+- [Structure] No change needed.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/09 Dirac Notation/99 Exercises/01 Exercise 1.md
+priority: low
+graph: no
+manim: no
+summary: Correct solution (both overlaps $1/\sqrt{10}$) with a useful phase transfer check; one intermediate line is confusing.
+- [Simplify] The expansion line "$2-i(0)-2i(0)+(-i)(-i)$" hides which cross terms vanish; write $2\langle\uparrow|\uparrow\rangle-i\langle\uparrow|\downarrow\rangle-2i\langle\downarrow|\uparrow\rangle+(-i)(-i)\langle\downarrow|\downarrow\rangle$ before substituting.
+- [Structure] The overlap calculation sits under heading "(c)" although it concerns $\psi$ and $\phi$ from (a) and (b); give it its own heading, e.g. "(d) Overlaps and conjugate symmetry".
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/09 Dirac Notation/99 Exercises/02 Exercise 2.md
+priority: low
+graph: no
+manim: no
+summary: Correct and clear projector exercise ($9/25$); no substantive change needed.
+- [Simplify] The last two paragraphs (complementary projector, repeat measurement) are good checks but long; condense them into a short "Checks" list.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/09 Dirac Notation/99 Exercises/03 Exercise 3.md
+priority: low
+graph: no
+manim: no
+summary: Correct and concise derivation of Parseval's identity; no change needed.
+- [Structure] No change needed.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/09 Dirac Notation/99 Exercises/04 Exercise 4.md
+priority: low
+graph: no
+manim: no
+summary: Correct moments, uncertainty ($\sqrt3\hbar\omega/4$) and collapse; the closing paragraphs are slightly out of order.
+- [Structure] "the variance check also predicts the degeneracy discussed below" refers to the $\omega=0$ paragraph that appears above it (line 91); change "below" to "above" or move the $\omega=0$ paragraph after the variance check.
+- [Simplify] Present the two-outcome variance shortcut $p_1p_2(E_2-E_1)^2=\tfrac{3}{16}(\hbar\omega)^2$ as a displayed equation, since it is the quickest check of part (a).
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/09 Dirac Notation/99 Exercises/05 Exercise 5.md
+priority: low
+graph: yes
+manim: no
+summary: Correct basis change and $P(+x)=1/2$, with a strong relative-phase generalization.
+- [Graph] Plot $P(+x)=(1+\cos\alpha)/2$ and $P(\uparrow)=1/2$ for $\alpha\in[0,2\pi]$, marking $\alpha=\pi/2$ (this exercise), $0$ and $\pi$; it shows that the z-probabilities are blind to the relative phase while the x-probabilities are not.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/09 Dirac Notation/99 Exercises/06 Exercise 6.md
+priority: low
+graph: no
+manim: no
+summary: Correct proof, but the domain discussion after the proof is longer than the proof itself.
+- [Simplify] Merge the two domain paragraphs (lines 82 and 84, partly repeating line 44) into one short note, keeping the $\mathrm{diag}(0,1)$ counterexample as a separate example line.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/09 Dirac Notation/99 Exercises/07 Exercise 7.md
+priority: low
+graph: no
+manim: no
+summary: Correct and well argued pure-versus-mixed comparison (purities $1$ and $1/2$, $\langle\hat X\rangle=1$ vs $0$).
+- [Simplify] The final paragraph about discarding vs conditioning on the record is dense; state the three preparations (coherent, record discarded, conditioned on alive) as a three-row table with their density matrices and $\langle\hat X\rangle$.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/09 Dirac Notation/99 Exercises/08 Exercise 8.md
+priority: low
+graph: yes
+manim: yes
+summary: Correct and thorough two-level oscillation calculation ($P=\sin^2(\Delta t/\hbar)$, $\Omega=2|\Delta|/\hbar$).
+- [Graph] Plot $P(\uparrow\to\downarrow)=\sin^2(\Delta t/\hbar)$ and $P(\uparrow)=\cos^2(\Delta t/\hbar)$ against $t$ in units of $\hbar/|\Delta|$ for $0\le t\le 2\pi$, marking the period $T=\pi\hbar/|\Delta|$ and the quadratic short-time start.
+- [Manim] Animate the Bloch vector precessing about the x-axis at angular frequency $2\Delta/\hbar$, starting at the north pole, with its z-projection shown as the population difference; this makes the "relative phase drives the oscillation" argument visible.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/10 Commutators and Operator Algebra/00 Commutators and Operator Algebra.md
+priority: low
+graph: no
+manim: no
+summary: Clear chapter hub with working section links.
+- [Simplify] Replace the "The source describes..." note with a direct statement; readers cannot identify the source.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/10 Commutators and Operator Algebra/01 Definition and Algebraic Properties.md
+priority: low
+graph: no
+manim: no
+summary: Correct identities and a fully worked Pauli example; the Jacobi identity display is awkwardly split.
+- [Structure] The Jacobi identity is split over two displays tagged (10.5) and (10.6) to mirror the source; write it as one equation $[\hat A,[\hat B,\hat C]]+[\hat B,[\hat C,\hat A]]+[\hat C,[\hat A,\hat B]]=0$ with a single tag and drop the sentence about the source.
+- [Example] Add a one-line application of (10.4), e.g. $[\hat x^2,\hat p]=2i\hbar\hat x$ with a forward link to the canonical-relation note, so both product rules have an example.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/10 Commutators and Operator Algebra/02 The Canonical Commutation Relation.md
+priority: low
+graph: no
+manim: no
+summary: Correct proof, derived relations and Ehrenfest example; the trace obstruction is a valuable insight.
+- [Example] Complete the Ehrenfest pair by adding $d\langle\hat p\rangle/dt=-\langle V'(\hat x)\rangle$ from (10.10), giving the quantum analogue of Newton's second law.
+- [Simplify] Display the trace argument as an equation: $\operatorname{Tr}[X,P]=0\ne i\hbar\,n=\operatorname{Tr}(i\hbar I_n)$.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/10 Commutators and Operator Algebra/03 Compatible Operators.md
+priority: low
+graph: no
+manim: no
+summary: Correct theorem and free-particle example; a finite-matrix example of degeneracy would make the proof sketch concrete.
+- [Example] Add a 3×3 example: $A=\mathrm{diag}(1,1,2)$ and a $B$ that mixes only the first two basis vectors, showing that $[A,B]=0$ but the standard basis does not diagonalize $B$ until $B$ is diagonalized inside the degenerate eigenspace.
+- [Example] Add a noncompatible pair that shares one eigenstate (e.g. $\hat L_x$, $\hat L_y$ on the $l=0$ state) to illustrate the "individual common eigenstates" statement.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/10 Commutators and Operator Algebra/04 The Uncertainty Principle.md
+priority: low
+graph: no
+manim: no
+summary: Correct Robertson proof, spin examples, and a correctly drawn uncertainty hyperbola (all plotted points verified).
+- [Intuition] Add the stronger Schrödinger form $(\Delta A)^2(\Delta B)^2\ge\big(\tfrac12\langle\{\hat a,\hat b\}\rangle\big)^2+\big|\tfrac12\langle[\hat A,\hat B]\rangle\big|^2$, since the introduction refers to the discarded real correlation without showing it.
+- [Graph] Mark the oscillator ground state $(1/\sqrt2,1/\sqrt2)$ in Fig. 10.1 as a second filled boundary point, since the text below the figure already discusses it.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/10 Commutators and Operator Algebra/05 Creation and Annihilation Operators.md
+priority: high
+graph: yes
+manim: yes
+summary: The commutator calculation is correct, but the Hamiltonian factorization and the spectrum are stated without derivation, although the note says they "follow algebraically".
+- [Example] Derive $\hat H=\hbar\omega(\hat a^\dagger\hat a+\tfrac12)$: compute $\hat a^\dagger\hat a=\frac{m\omega}{2\hbar}\hat x^2+\frac{1}{2m\hbar\omega}\hat p^2+\frac{i}{2\hbar}[\hat x,\hat p]$ and show where the $-\tfrac12$ comes from.
+- [Simplify] Add the ladder steps that the introduction describes but the body omits: $[\hat N,\hat a]=-\hat a$, $[\hat N,\hat a^\dagger]=\hat a^\dagger$, $\hat N\hat a|n\rangle=(n-1)\hat a|n\rangle$, $\lVert\hat a|n\rangle\rVert^2=n\ge0$, and termination at $\hat a|0\rangle=0$.
+- [Example] State $\hat a|n\rangle=\sqrt n|n-1\rangle$, $\hat a^\dagger|n\rangle=\sqrt{n+1}|n+1\rangle$, and the inverse relations $\hat x=\sqrt{\hbar/(2m\omega)}(\hat a+\hat a^\dagger)$, $\hat p=i\sqrt{m\hbar\omega/2}(\hat a^\dagger-\hat a)$.
+- [Graph] Plot $V(x)=\tfrac12x^2$ in units of $\hbar\omega$ and $\sqrt{\hbar/(m\omega)}$ for $x\in[-3,3]$ with horizontal lines at $E_n=n+\tfrac12$, $n=0,\dots,4$, and $\hat a^\dagger$/$\hat a$ arrows between neighbouring levels.
+- [Manim] Animate a marker stepping up and down the equally spaced ladder as $\hat a^\dagger$ and $\hat a$ are applied, stopping at $n=0$ where $\hat a|0\rangle=0$, to show termination and the zero-point energy.
+- [Simplify] Replace the two "The source..." notes with direct statements; readers cannot see the source.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/10 Commutators and Operator Algebra/06 Common Errors.md
+priority: low
+graph: no
+manim: no
+summary: Correct and useful list of errors with a good applications overview.
+- [Example] Error 2 names $[\hat H,\hat x]$ but does not show the result; add $[\hat H,\hat x]=-i\hbar\hat p/m$ with a link to the canonical-relation note.
+- [Simplify] In the angular-momentum paragraph use $l$ for orbital and $s$ for spin quantum numbers alongside the general $j$, matching standard notation.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/10 Commutators and Operator Algebra/07 Chapter Summary.md
+priority: low
+graph: no
+manim: no
+summary: Accurate summary; no change needed beyond optional links.
+- [Links] Link each bullet to its section note, as already done for the compatibility bullet.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/10 Commutators and Operator Algebra/08 Exercises.md
+priority: low
+graph: no
+manim: no
+summary: Functional exercise index with working links; no change needed.
+- [Structure] No change needed.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/10 Commutators and Operator Algebra/99 Exercises/01 Exercise 1.md
+priority: low
+graph: no
+manim: no
+summary: Correct results for all four commutators with good order and sign checks.
+- [Example] Write the Ehrenfest consequence of part (d) as an equation, $d\langle\hat p\rangle/dt=-\langle V'(\hat x)\rangle$, instead of describing it only in words in the closing paragraph.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/10 Commutators and Operator Algebra/99 Exercises/02 Exercise 2.md
+priority: low
+graph: no
+manim: no
+summary: Correct and clear matrix verification with independent trace, Hermiticity, and action checks; no change needed.
+- [Structure] No change needed.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/10 Commutators and Operator Algebra/99 Exercises/03 Exercise 3.md
+priority: low
+graph: no
+manim: no
+summary: Correct spin uncertainties ($\hbar/2$, $\hbar/2$, $0$) with a good outcome-distribution explanation; no change needed.
+- [Structure] No change needed.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/10 Commutators and Operator Algebra/99 Exercises/04 Exercise 4.md
+priority: low
+graph: no
+manim: no
+summary: Correct induction proofs; no substantive change needed.
+- [Simplify] Part (b) could note that it follows from (a) by the substitution $\hat x\to\hat p$, $\hat p\to-\hat x$, which preserves the canonical commutator, instead of repeating the induction.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/10 Commutators and Operator Algebra/99 Exercises/05 Exercise 5.md
+priority: low
+graph: no
+manim: no
+summary: Correct derivation of the Ehrenfest theorem with a good warning on state-specific conservation.
+- [Example] Close with the two standard applications $d\langle\hat x\rangle/dt=\langle\hat p\rangle/m$ and $d\langle\hat p\rangle/dt=-\langle V'(\hat x)\rangle$, using Exercise 1 and the canonical-relation note.

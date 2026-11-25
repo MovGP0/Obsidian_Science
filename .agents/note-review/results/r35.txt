@@ -1,0 +1,814 @@
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.11 Connection to Feynman Diagrams.md
+priority: low
+graph: no
+manim: yes
+summary: Short, correct bridge note that states the line/vertex dictionary clearly but never shows a concrete Wick term turning into a picture.
+- [Example] Add one worked translation: the first-order term $\langle p_1'p_2'|\mathcal N\{\phi^4(x)\}|p_1p_2\rangle$ and its four external attachments drawn as the contact vertex, with the $4!$ attachments cancelling the $1/4!$ to give $-i\lambda$.
+- [Manim] Animate the six-field pairing $\langle\phi_1\cdots\phi_6\rangle$: arcs joining field labels morph into propagator lines between points, showing that one complete pairing is one diagram.
+- [Links] Link "Chapter 7" to [[07.01 From Wick's Theorem to Diagrams]] and mention that Chapter 7 renames the quartic coupling from $\lambda$ to $g$.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.12 Exercises/06.12 Exercises.md
+priority: low
+graph: no
+manim: no
+summary: Clear exercise hub with a useful reading order; no changes needed.
+- [Structure] No change needed; optionally drop the redundant one-line "Source solutions" section, which repeats the previous sentence.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.12 Exercises/06.12.01 Time ordering and the Feynman propagator.md
+priority: low
+graph: yes
+manim: no
+summary: Correct derivation with a verified step-function representation, but the final step to the four-dimensional integral is only asserted.
+- [Simplify] After the step-function representation, write out the substitution: insert $\theta(\pm\tau)$, shift to $k^0$, and combine $\frac{1}{2\omega_{\mathbf k}}[\frac{1}{k^0-\omega_{\mathbf k}+i0}-\frac{1}{k^0+\omega_{\mathbf k}-i0}]=\frac{1}{k^2-m^2+i\epsilon}$, instead of "as in Chapter 3".
+- [Graph] Add a 2D complex-$k^0$ plane figure with poles at $k^0=\pm(\omega_{\mathbf k}-i\epsilon)$ and the lower/upper closing contours for $\tau>0$ and $\tau<0$.
+- [Intuition] State in one sentence why only the $\phi^+(x)\phi^-(y)$ term is not normal ordered (annihilator to the left of a creator) before using the commutator.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.12 Exercises/06.12.02 Wick's theorem for six fields.md
+priority: low
+graph: no
+manim: no
+summary: Correct and complete enumeration of the fifteen pairings with a useful counting recursion.
+- [Simplify] The paragraph on operator-identity terms with one or two contractions repeats the earlier sentence about incomplete contractions; merge them into one sentence.
+- [Intuition] Add the general count $(2n-1)!!$ for $2n$ fields and note that an odd number of fields gives zero, so the six-field case reads as one instance of a rule.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.12 Exercises/06.12.03 Fermion propagator from Wick's theorem.md
+priority: low
+graph: no
+manim: no
+summary: Correct derivation including both fermionic minus signs and a good inverse-Dirac-operator check.
+- [Structure] The exercise writes spinors as $u_\alpha^s(k)$ and the operator as $\not\partial$ while the solution uses $u_\alpha(k,s)$ and $\not\partial_x$; use one notation throughout.
+- [Simplify] Show explicitly that $(i\not\partial_x+m)$ acting on $e^{+ik\cdot(x-y)}$ gives $-(\not k-m)$, which is exactly where the fermionic exchange sign and the $v\bar v$ mass sign combine; this is the step readers most often lose.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.12 Exercises/06.12.04 Mandelstam identities for equal-mass scattering.md
+priority: low
+graph: yes
+manim: no
+summary: Clean, correct derivation with good sign and sum-rule checks.
+- [Graph] Plot $t/(s-4m^2)$ and $u/(s-4m^2)$ against $\cos\theta\in[-1,1]$ (two straight lines between 0 and $-1$), marking their crossing at $\theta=\pi/2$ and the forward and backward limits $t=0$, $u=0$.
+- [Intuition] Add one sentence noting that $s\ge4m^2$, $t\le0$, $u\le0$ define the physical s-channel region, linking to the Mandelstam-channel discussion in Chapter 7.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.12 Exercises/06.12.05 Lorentz-invariant flux factor.md
+priority: low
+graph: no
+manim: no
+summary: Correct and careful, with a good counterexample for non-collinear beams, though the CM algebra step is skipped.
+- [Simplify] Show the CM step: with $E_{1,2}^2=|\mathbf p_i|^2+m_{1,2}^2$, $(E_1E_2+|\mathbf p_i|^2)^2-m_1^2m_2^2=|\mathbf p_i|^2(E_1+E_2)^2$, so the reader sees where $\sqrt s$ comes from.
+- [Example] Make the perpendicular-beam counterexample numeric: for $|\mathbf v_1|=|\mathbf v_2|=v$ at 90 degrees compare $|\mathbf v_1-\mathbf v_2|=\sqrt2\,v$ with the Møller value $\sqrt{2v^2-v^4}$.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.12 Exercises/06.12.06 Leading total cross section in quartic scalar theory.md
+priority: low
+graph: yes
+manim: no
+summary: Correct result and dimensional check, with a helpful explanation of the identical-particle factor.
+- [Graph] Plot $m^2\sigma_{\mathrm{tot}}/\lambda^2=1/(32\pi\,s/m^2)$ versus $\sqrt s/m$ from 2 to 10 to show the $1/s$ fall-off from the threshold value $\lambda^2/(128\pi m^2)$.
+- [Simplify] The threshold paragraph is dense; state simply that flux and two-body phase space both scale as $|\mathbf p|$ near threshold, so their ratio stays finite.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.12 Exercises/06.12.07 LSZ for the free scalar field.md
+priority: medium
+graph: no
+manim: no
+summary: Correct in substance and honest about the source error, but the main message (free $S=\mathbf 1$, connected part zero) is buried under formal distributional caveats.
+- [Structure] Lead with the conclusion ($\langle p'|S|p\rangle=\langle p'|p\rangle$, connected amplitude zero) and then present the formal double amputation as the reason the source's route fails.
+- [Simplify] Merge the last two paragraphs (wave-packet check and the four-dimensional delta remark), which repeat the same point about not cancelling one pole and setting the remaining inverse factor to zero.
+- [Intuition] Add one sentence: LSZ amputates the external poles, and a free two-point function is nothing but an external pole, so after amputation nothing nontrivial remains.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.12 Exercises/06.12.08 Scalar decay in Yukawa theory.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and complete calculation; all intermediate factors and the final width check.
+- [Graph] Plot $\Gamma/(g^2M/8\pi)=(1-4m^2/M^2)^{3/2}$ versus $2m/M\in[0,1]$, optionally with the pseudoscalar $(1-4m^2/M^2)^{1/2}$ curve, to show the threshold suppression.
+- [Intuition] Explain the exponent $3/2$: one power of $\beta=\sqrt{1-4m^2/M^2}$ from phase space and $\beta^2$ from the spin sum, because a scalar decaying to $f\bar f$ by parity must produce a P-wave pair.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.12 Exercises/06.12.09 Optical theorem at second order in quartic theory.md
+priority: low
+graph: no
+manim: no
+summary: Correct verification with matching factors and a useful cut-convention note; the t/u-channel paragraph is hard to follow.
+- [Simplify] Rewrite the t/u-channel paragraph as one statement: at forward kinematics $t=0$ and $u=4m^2-s<0$, both below the $4m^2$ two-particle threshold, so only the s-channel bubble has an imaginary part.
+- [Intuition] Add that the cut puts both internal lines on shell, turning the loop into the tree amplitude squared times phase space; a small figure of the bubble with a dashed cut line would help.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.12 Exercises/06.12.10 Symmetry factor of the disconnected double figure eight.md
+priority: low
+graph: no
+manim: no
+summary: Correct count and automorphism check, but one letter is reused for two different quantities.
+- [Correctness] $S$ is used both for the second-order Dyson term $S^{(2)}$ and for the symmetry factor $S=128$; rename the Dyson term (for example $\mathcal S^{(2)}$) and add it to the quantity table.
+- [Simplify] Add one sentence explaining why the $1/2!$ survives here: the two vertices are self-contracted, so exchanging $x$ and $y$ gives no new contraction, unlike connected second-order graphs where it cancels the Dyson factor.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.01 From Wick's Theorem to Diagrams.md
+priority: low
+graph: no
+manim: yes
+summary: Clear chapter introduction with good caveats about what lines mean; no math errors.
+- [Structure] I could not confirm that the opening quotation is something Freeman Dyson actually said; verify the source or remove the attribution.
+- [Manim] Animate the first-order matrix element: the four fields of $\phi^4(x)$ connect to the four external particles and then collapse into the contact-vertex picture, with the $4!$ attachment count displayed.
+- [Example] Show one contraction explicitly (for example $\langle0|\mathcal T\{\phi(x)\phi(y)\}|0\rangle$ drawn as a line) before the dictionary is stated in words.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.01.01 Translation Rules.md
+priority: low
+graph: no
+manim: no
+summary: Correct, compact dictionary with a good plane-wave sign check.
+- [Example] Add a minimal check: one contact vertex with two incoming and two outgoing plane waves integrates to $(2\pi)^4\delta^{(4)}(p_1+p_2-p_1'-p_2')$, linking to [[07.02.03 φφ → φφ Scattering at First Order]].
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.02 Position-Space Feynman Rules - φ⁴ Theory.md
+priority: low
+graph: no
+manim: no
+summary: Short hub that orients the reader well.
+- [Structure] No change needed.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.02.01 The Propagator and the Internal Line.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and clear; the propagator remains abstract without showing how it behaves with separation.
+- [Graph] Plot the spacelike propagator $\Delta(r)=\frac{m}{4\pi^2 r}K_1(mr)$ (in units of $m^2$) versus $mr\in[0.1,5]$ on a log axis to show the $1/(4\pi^2r^2)$ short-distance behavior and the $e^{-mr}$ decay set by the mass.
+- [Intuition] Add one sentence that the propagator is nonzero at spacelike separation, which is a further reason it cannot be read as a classical trajectory.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.02.02 The Vertex in Position Space.md
+priority: low
+graph: no
+manim: no
+summary: Correct and readable explanation of why $1/4!$ cancels.
+- [Example] Make the $4!$ count explicit: $p_1$ can attach to 4 fields, $p_2$ to 3, $p_1'$ to 2, $p_2'$ to 1, giving 24, and contrast it with the tadpole count of 12.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.02.03 φφ → φφ Scattering at First Order.md
+priority: low
+graph: no
+manim: no
+summary: Correct and clear tree-level example with a good note on the two amplitude normalizations.
+- [Simplify] Give the delta-containing quantity its own symbol (for example $\langle f|iT|i\rangle$) instead of reusing $i\mathcal M$; the note and the "—" unit entry in the table then become unnecessary.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.03 Momentum-Space Feynman Rules.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub with a correct loop-counting argument.
+- [Intuition] State the counting formula $L=I-V+1$ explicitly, since the paragraph only describes it in words.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.03.01 Momentum-Space Feynman Rules for φ⁴.md
+priority: low
+graph: no
+manim: no
+summary: Correct rule list with a good dimension check.
+- [Structure] Add the external-line rule (factor 1 for each amputated external scalar line) to the numbered list so it parallels the QED table.
+- [Simplify] Mark the fermion-loop rule explicitly as a forward reference to QED, since it never applies in this note.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.03.02 φφ → φφ Scattering at One Loop.md
+priority: low
+graph: no
+manim: no
+summary: Correct bubble expression; the definition of $q$ is repeated and the paragraph order is disjointed.
+- [Simplify] Define $q=p_1+p_2$ once (it is stated twice, before and after the integral) and place the paragraph on the factor one half directly after the $S=2$ sentence.
+- [Intuition] Give the power-counting reason for the logarithmic divergence ($d^4k$ against $k^{-4}$ from two propagators) and write the full one-loop sum as the same integral with $q^2\to s,t,u$.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.04 Symmetry Factors.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub with a correct definition and a good boundary example.
+- [Structure] No change needed.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.04.01 General Rule.md
+priority: medium
+graph: no
+manim: no
+summary: The tadpole and figure-eight counts are correct and well explained, but the "double bubble" example is ambiguous.
+- [Simplify] Specify the "double bubble" precisely (which correlation function, how many external legs, which loops are in series); at second order in $\phi^4$ both the two-point cactus and the two separate tadpoles have $S=4$, and the reader cannot tell which graph is meant or check it.
+- [Example] Add the explicit Wick count for the four-point s-channel bubble ($S=2$) as a third worked count, since it is the case used most later.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.04.02 Graphical Examples of Symmetry Factors.md
+priority: medium
+graph: no
+manim: no
+summary: Panel (a) is correct; panel (b) is acknowledged in the note to be a cubic topology, which makes the figure confusing in a quartic-theory chapter.
+- [Example] Replace panel (b) with a genuine quartic example, for example the two-loop sunset self-energy with $S=3!=6$ or the four-point s-channel bubble with $S=2$, so the warning callout is no longer needed.
+- [Simplify] Remove the paragraph about "independent tests" once the figure is fixed; it exists only to explain the source mismatch.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.05 Feynman Rules for QED.md
+priority: low
+graph: no
+manim: no
+summary: Correct hub; one sentence about the charge convention and units is unclear.
+- [Simplify] Replace "This makes the charge convention, rather than a unit conversion, the relevant issue for its sign" with a plain statement that $e>0$, the electron charge is $-e$, and this fixes the sign of the vertex factor.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.05.01 Internal Propagators.md
+priority: low
+graph: no
+manim: no
+summary: Correct propagators with useful caveats about gauge and polarization.
+- [Structure] Give the general covariant-gauge propagator $\frac{-i}{k^2+i\epsilon}[g^{\mu\nu}-(1-\xi)k^\mu k^\nu/k^2]$ once, so the "Feynman gauge, $\xi=1$" label has a referent.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.05.02 External Lines.md
+priority: low
+graph: no
+manim: no
+summary: Correct table and a helpful row/column-spinor check.
+- [Example] Illustrate the check with one chain: for $e^+(p_+)e^-(p_-)\to\gamma^*$ it is $\bar v(p_+)\gamma^\mu u(p_-)$, row spinor on the left and column spinor on the right.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.05.03 The QED Vertex.md
+priority: low
+graph: no
+manim: no
+summary: Correct and clear.
+- [Structure] No change needed.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.05.04 Signs from Fermion Loops.md
+priority: low
+graph: no
+manim: no
+summary: Correct statement of the loop sign and trace, but the origin of the minus sign is only asserted.
+- [Example] Show the two-vertex vacuum-polarization contraction explicitly: closing the chain requires one odd permutation of fermion fields, giving $-\mathrm{Tr}[\gamma^\mu S_F(x-y)\gamma^\nu S_F(y-x)]$.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.05.05 Ordering along Fermion Lines.md
+priority: low
+graph: no
+manim: no
+summary: Correct rule, but the constructive recipe appears only in the last paragraph.
+- [Structure] Move the last paragraph (start at the outgoing bra and follow the line against the arrow) to the top, then give the Compton ordering as an application.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.05.06 Summary Table of Feynman Rules for QED.md
+priority: low
+graph: no
+manim: no
+summary: Correct reference table with a useful three-pass procedure.
+- [Structure] No change needed; optionally add a row for the relative minus sign between diagrams that differ by exchange of identical external fermions.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.06 Worked Examples in QED.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub that previews the three examples well.
+- [Structure] No change needed.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.06.01 Møller Scattering - e⁻e⁻ → e⁻e⁻.md
+priority: low
+graph: no
+manim: no
+summary: Correct amplitudes with a clear explanation of the relative sign.
+- [Example] Quote the massless unpolarized result $\overline{|\mathcal M|^2}=2e^4[\frac{s^2+u^2}{t^2}+\frac{s^2+t^2}{u^2}+\frac{2s^2}{tu}]$ so the reader sees the interference term in the final answer.
+- [Links] Link to [[08.07 Møller Scattering - e⁻e⁻ → e⁻e⁻]] for the squared amplitude.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.06.02 Annihilation - e⁺e⁻ → μ⁺μ⁻.md
+priority: medium
+graph: yes
+manim: no
+summary: The calculation and numbers are correct (all factors and the 11 pb estimate check), but trace identity (7.4) is displayed with a known misprint.
+- [Correctness] Equation (7.4) displays $4(g^{\mu\nu}g^{\rho\sigma}-g^{\mu\rho}g^{\nu\sigma}+g^{\sigma\rho}g^{\mu\nu})$; display the correct $4(g^{\mu\nu}g^{\rho\sigma}-g^{\mu\rho}g^{\nu\sigma}+g^{\mu\sigma}g^{\nu\rho})$ and keep the misprint only in the callout, so readers cannot copy the wrong identity.
+- [Simplify] Show the intermediate step behind (7.5): for massless legs the $g^{\mu\nu}$ terms cancel and $L_e^{\mu\nu}L^{(m)}_{\mu\nu}=32[(q_1\cdot p_2)(q_2\cdot p_1)+(q_1\cdot p_1)(q_2\cdot p_2)]$.
+- [Graph] Add a polar plot of $d\sigma/d\Omega\propto1+\cos^2\theta$ for $\theta\in[0,\pi]$ to show the forward-backward symmetric shape.
+- [Structure] Give the total cross section its own equation label instead of retaining the duplicated (7.7).
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.06.03 Compton Scattering - e⁻γ → e⁻γ.md
+priority: low
+graph: yes
+manim: no
+summary: Correct amplitudes, Klein–Nishina formula and Thomson limit; the cross-section derivation is only quoted.
+- [Graph] Add a polar plot of the Klein–Nishina $d\sigma/d\Omega$ in units of $\alpha^2/m_e^2$ for $\omega/m_e=0.01,0.5,2,10$, using $\omega'/\omega=1/[1+(\omega/m_e)(1-\cos\theta)]$, to show the Thomson shape and the forward peaking at high energy.
+- [Simplify] Add the $+i\epsilon$ to the crossed-diagram denominator for consistency with the direct one.
+- [Links] Link the Klein–Nishina result to [[08.06.02 Klein–Nishina Formula]] for the full derivation.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.07 Crossing Symmetry.md
+priority: low
+graph: no
+manim: no
+summary: Correct conceptual hub with useful caveats on cross sections versus amplitudes.
+- [Example] Add one concrete crossing pair, for example $e^-\mu^-\to e^-\mu^-$ and $e^+e^-\to\mu^+\mu^-$ related by $s\leftrightarrow t$, so the abstract rule has an anchor.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.07.01 Crossing Rule for Fermions and Photons.md
+priority: medium
+graph: no
+manim: no
+summary: Correct but abstract; the rule is stated and hedged without a single worked leg-by-leg example, so a reader cannot see what "reverse the momentum and pick the new spinor" means in practice.
+- [Example] Add a minimal worked case right after the replacement rule: take the outgoing electron $\bar u(\mechanical{p}')$ of $\mathrm e^-\mu^-\to\mathrm e^-\mu^-$, cross it to an incoming positron, and show the resulting $\bar v(\bar{\mechanical{p}})$ factor and the new conservation law.
+- [Simplify] Merge the two paragraphs on "analytic prescriptions" and "not equalities between positive-energy spinors" into one sentence plus a short list of three steps (reverse momentum, swap spinor type, track the overall fermion sign).
+- [Intuition] Move the photon caveat into the main text: crossing turns $\signal{\epsilon}$ into $\signal{\epsilon}^*$ because incoming and outgoing photon wavefunctions are complex conjugates, instead of quoting "unchanged" and then contradicting it in a note.
+- [Structure] Mention the overall factor $(-1)$ per crossed fermion in spin-summed squared amplitudes (used in 07.15.05) so the rule is complete here.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.07.02 Crossing Examples.md
+priority: medium
+graph: no
+manim: yes
+summary: Momentum map and the s↔t identification are correct, but most of the note corrects the source figure and the "both fermionic lines" wording rather than showing a clean crossed diagram.
+- [Structure] Replace (or supplement) the incorrect source sketch Fig. 7.13 with a correct pair of annihilation diagrams (t and u channel, one photon per vertex); keep the source figure only as a short side note.
+- [Structure] Harmonize photon labels with Exercise 7.5: here $\mechanical{k}\to-\mechanical{k}_1$, but [[07.15.05 Crossing from Compton scattering to two-photon annihilation]] uses $\mechanical{k}\to-\mechanical{k}_2$ and $\mechanical{k}'\to\mechanical{k}_1$; pick one convention for the chapter.
+- [Example] Write out the explicit map for $\gamma\gamma\to\mathrm e^+\mathrm e^-$ (incoming $\mathrm e^-(\mechanical{p})$ becomes an outgoing positron with $\mechanical{p}\to-\bar{\mechanical{p}}$, outgoing $\gamma(\mechanical{k}')$ becomes incoming with $\mechanical{k}'\to-\mechanical{k}_2$) instead of only saying the source wording is insufficient.
+- [Manim] Animate the Compton s-channel diagram with legs rotating: the outgoing electron leg swings to the initial side and becomes a positron (arrow kept, momentum label flips sign), the incoming photon swings to the final side, ending in the annihilation diagram.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.08 Mandelstam Variables and Scattering Channels.md
+priority: low
+graph: yes
+manim: no
+summary: Definitions and the sum rule are correct and compact; the verbal derivation of the sum rule is harder to follow than the one-line algebra it describes.
+- [Simplify] Replace the prose derivation with the display $\energy{s}+\mechanical{t}+\mechanical{u}=3\mechanical{m}_1^2+\mechanical{m}_2^2+\mechanical{m}_3^2+\mechanical{m}_4^2+2\mechanical{p}_1\cdot(\mechanical{p}_2-\mechanical{p}_3-\mechanical{p}_4)$ followed by $\mechanical{p}_2-\mechanical{p}_3-\mechanical{p}_4=-\mechanical{p}_1$.
+- [Graph] Add a 2D Mandelstam plane for equal masses $\mechanical{m}=1$: axes $\energy{s}$ and $\mechanical{t}$ (range $-10$ to $10$), the lines $\energy{s}=0$, $\mechanical{t}=0$, $\mechanical{u}=4-\energy{s}-\mechanical{t}=0$, and shaded physical regions of the s channel ($\energy{s}\ge4$, $\mechanical{t}\le0$, $\mechanical{u}\le0$) and of the crossed t and u channels.
+- [Intuition] Add one sentence on why the sum rule matters: only two invariants are independent, so a 2→2 amplitude is a function of $(\energy{s},\mechanical{t})$.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.08.01 Physical Interpretation of the Channels.md
+priority: low
+graph: no
+manim: no
+summary: Clear and correct short note; the equal-mass condition for the spacelike transfer is slightly over-restricted.
+- [Simplify] In the paragraph on the spacelike transfer, a vanishing CM energy component of $\mechanical{p}_1-\mechanical{p}_3$ only needs $\mechanical{m}_1=\mechanical{m}_3$ and $\mechanical{m}_2=\mechanical{m}_4$ (elastic), not all masses equal; state it that way.
+- [Example] Give one concrete process per channel: $\mathrm e^+\mathrm e^-\to\mu^+\mu^-$ (pure s), $\mathrm e^-\mu^-\to\mathrm e^-\mu^-$ (pure t), Møller (t and u), Bhabha (s and t), linking [[07.14 Bhabha Scattering - e⁺e⁻ → e⁺e⁻]].
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.08.02 The Variables in the Center-of-Mass Frame.md
+priority: medium
+graph: yes
+manim: no
+summary: The general $\mechanical{t}(\cos\mechanical{\theta})$ formula, exact equal-mass relations and massless Møller result are correct (checked), but the Møller pole discussion is one dense paragraph and the formula is not derived.
+- [Simplify] Derive the general formula in two lines from $\mechanical{t}=\mechanical{m}^2+\mechanical{m}'^{\,2}-2(E_1E_3-|\mathbf p||\mathbf p'|\cos\mechanical{\theta})$ with $E_1=E_3=\sqrt{\energy{s}}/2$ and $|\mathbf p|=\lambda^{1/2}(\energy{s},\mechanical{m}^2,\mechanical{m}^2)/(2\sqrt{\energy{s}})$, so the Källén factors are motivated.
+- [Structure] Split the long Møller paragraph into (i) exact equal-mass relations, (ii) forward and backward Coulomb poles, (iii) the need for an angular cut.
+- [Graph] Plot $-\mechanical{t}/\energy{s}$ and $-\mechanical{u}/\energy{s}$ versus $\cos\mechanical{\theta}\in[-1,1]$ (massless case), and separately $\overline{|\signal{\mathcal M}|^2}_{\text{Møller}}/\electric{e}^{\,4}$ on a log axis versus $\mechanical{\theta}\in[5^\circ,175^\circ]$, showing the symmetric forward and backward poles.
+- [Example] Add a numerical check: for $\sqrt{\energy{s}}=10\unit{MeV}$ and $\mechanical{\theta}=90^\circ$, $\mechanical{t}=\mechanical{u}=-(\energy{s}-4\mechanical{m}_e^2)/2$, and verify $\energy{s}+\mechanical{t}+\mechanical{u}=4\mechanical{m}_e^2$.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.09 One-Loop Diagrams and Ultraviolet Divergences.md
+priority: low
+graph: no
+manim: no
+summary: Adequate hub that frames loops, regulators and renormalization conditions.
+- [Structure] No change needed beyond optionally adding a short descriptor next to each child link (photon bubble $D=2$, self-energy $D=1$, vertex $D=0$).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.09.01 The Photon Propagator at One Loop.md
+priority: medium
+graph: yes
+manim: no
+summary: Loop expression, sign, dimension count and transverse decomposition are correct, but the note stops before saying what $\electric{\Pi}(\mechanical{q}^{\,2})$ does physically.
+- [Intuition] Add the physical consequence: after renormalization the effective coupling is $\electric{\alpha}_{\mathrm{eff}}(\mechanical{q}^{\,2})=\electric{\alpha}/[1-\hat{\electric{\Pi}}(\mechanical{q}^{\,2})]$, i.e. charge screening and the running of $\electric{\alpha}$ (about $1/128$ at the Z mass).
+- [Graph] Plot the renormalized one-loop $\hat{\electric{\Pi}}_2(\mechanical{q}^{\,2})=-(2\electric{\alpha}/\pi)\int_0^1dx\,x(1-x)\ln[\mechanical{m}^2/(\mechanical{m}^2-x(1-x)\mechanical{q}^{\,2})]$ for spacelike $-\mechanical{q}^{\,2}/\mechanical{m}^2\in[10^{-2},10^{6}]$ on a log axis, showing the crossover to $(\electric{\alpha}/3\pi)\ln(-\mechanical{q}^{\,2}/\mechanical{m}^2)$.
+- [Structure] The routing $\mechanical{k}-\mechanical{q}$ here differs from $\mechanical{k}+\mechanical{q}$ in [[07.15.06 Transversality of the vacuum-polarization tensor]]; harmonize or state that the routing is a free choice.
+- [Intuition] Explain the Lorentz decomposition step: the only available rank-2 tensors are $g^{\mu\nu}$ and $\mechanical{q}^\mu\mechanical{q}^\nu$, and (7.10) fixes their relative coefficient.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.09.02 Counting Divergences.md
+priority: medium
+graph: no
+manim: no
+summary: The power-counting formula and listed cases are correct, but the table omits the $D\ge0$ pure-photon amplitudes that vanish by Furry's theorem, and the follow-up sentence then misstates the remaining cases.
+- [Correctness] "Other amplitudes with more external legs have negative superficial degree" leaves out $E_e=0,E_\gamma=1$ ($D=3$), $E_e=0,E_\gamma=3$ ($D=1$) and the vacuum graph ($D=4$), which also have $D\ge0$; add them to the table with "vanishes by Lorentz invariance / Furry's theorem" and "vacuum energy, cancels in normalized amplitudes".
+- [Correctness] The physical-quantity table lists $\delta\mechanical{m}$, which the note never uses; either write the chiral-symmetry statement as $\delta\mechanical{m}\propto\mechanical{m}\ln(\energy{\Lambda}/\mechanical{m})$ in the text or drop it from the table.
+- [Simplify] Derive $D=4-E_\gamma-\tfrac32E_e$ in three lines from $D=4L-I_e-2I_\gamma$, $L=I_e+I_\gamma-V+1$, $2V=2I_e+E_e$ and $V=2I_\gamma+E_\gamma$, so Remark 7.6 is not just quoted.
+- [Structure] Add $E_e$, $E_\gamma$ and $D$ to the physical-quantity table as dimensionless counts.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.09.03 Electron Self-Energy.md
+priority: low
+graph: no
+manim: no
+summary: Correct expression and a useful dimension check; the reason the linear divergence becomes logarithmic appears only in the caption.
+- [Intuition] Explain in the text why $D=1$ reduces to a logarithm: the linearly divergent piece would be $\propto\energy{\Lambda}\mathbf 1$, which chiral symmetry forbids at $\mechanical{m}=0$, so $\delta\mechanical{m}\propto\mechanical{m}\ln\energy{\Lambda}$; link [[07.09.02 Counting Divergences]].
+- [Example] Quote the standard cutoff result $\delta\mechanical{m}\approx(3\electric{\alpha}/4\pi)\mechanical{m}\ln(\energy{\Lambda}^2/\mechanical{m}^2)$ and contrast it with the linearly divergent classical electrostatic self-energy of a point charge.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.09.04 The Vertex Correction.md
+priority: medium
+graph: no
+manim: no
+summary: The power count is correct, but the figure caption attributes the vertex divergence to charge renormalization, contradicting the Ward-identity statement in the text.
+- [Correctness] The caption "The logarithmic divergence contributes to charge renormalization" is misleading for QED: by $Z_1=Z_2$ the vertex divergence cancels against the electron field renormalization, and the charge is renormalized only through $Z_3$ (vacuum polarization); rephrase the caption.
+- [Intuition] Add the payoff sentence: the finite magnetic part of this diagram gives $\magnetic{F}_2(0)=\electric{\alpha}/2\pi$, linking [[07.11 Form Factors and the Anomalous Magnetic Moment]].
+- [Structure] Write the loop integral explicitly (with $\gamma^\nu S(\mechanical{p}'-\mechanical{k})\gamma^\mu S(\mechanical{p}-\mechanical{k})\gamma_\nu$ times the photon propagator), as the two sibling notes do, so the power count can be read off.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.10 The Ward Identity and Its Consequences.md
+priority: medium
+graph: no
+manim: no
+summary: Identity, tree check and consequences are correct, but the note does not show how $\signal{Z}_1=\signal{Z}_2$ follows from it, which is its main use.
+- [Example] Add the short derivation of $\signal{Z}_1=\signal{Z}_2$: take $\mechanical{q}\to0$ to get $\Gamma^\mu(\mechanical{p},\mechanical{p})=\partial\signal{S}_F^{-1}/\partial\mechanical{p}_\mu$ (the original Ward identity), then compare the residues near the mass shell.
+- [Intuition] Explain in one line why charge renormalization is then universal: only $\signal{Z}_3$ enters, so electrons and muons keep equal renormalized charges.
+- [Structure] The table calls $\signal{S}_F$ "renormalized" while the text writes $\not{\mechanical{p}}-\mechanical{m}-\energy{\Sigma}$ without saying whether $\mechanical{m}$ is bare or physical; state which.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.11 Form Factors and the Anomalous Magnetic Moment.md
+priority: medium
+graph: no
+manim: no
+summary: Decomposition and $\electric{\alpha}/2\pi$ are correct, but the zero-transfer paragraphs are convoluted and the precision statement lacks current numbers.
+- [Simplify] Replace the two paragraphs on "the coefficient extracted before the external-field response" with one sentence: $\magnetic{F}_2(0)$ is the coefficient of the $\sigma^{\mu\nu}\mechanical{q}_\nu$ term, which becomes the coupling to $\magnetic{\mathbf B}$ in a static field, so it is read off before $\mechanical{q}\to0$.
+- [Example] Replace the vague "twelve significant figures" with current values: $\magnetic{a}_e^{\exp}=0.001\,159\,652\,180\,59(13)$ (Fan et al. 2023), noting that the theory comparison is limited by the Cs and Rb determinations of $\electric{\alpha}$; compare with $\electric{\alpha}/2\pi=0.0011614$.
+- [Links] Link the Gordon-decomposition argument in [[07.15.07 Schwinger magnetic moment]] to explain why $\magnetic{g}=2[\electric{F}_1(0)+\magnetic{F}_2(0)]$.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.12 Vacuum Diagrams and Connected Structure.md
+priority: low
+graph: no
+manim: no
+summary: Short hub with a helpful framing of the two questions.
+- [Structure] No change needed.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.12.01 Vacuum Diagrams.md
+priority: low
+graph: no
+manim: no
+summary: Correct exponentiation and loop-count note; the combinatorial argument is given only in words.
+- [Example] Show the exponentiation explicitly: for bubble types $V_i$ appearing $n_i$ times the weight is $\prod_iV_i^{n_i}/n_i!$, and summing over all $n_i$ gives $\exp(\sum_iV_i)$.
+- [Intuition] Add the link to vacuum energy: $\langle0|\mathcal S|0\rangle=e^{-iE_0T}$, so $\sum_iV_i=-iE_0T$ grows with spacetime volume, which explains why bubbles must be divided out.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.12.02 Connectedness and 1PI Diagrams.md
+priority: low
+graph: no
+manim: no
+summary: Correct definitions and generating-functional relations; a figure would make the cut test concrete.
+- [Example] Add a small diagram pair: two self-energy bubbles in series on a propagator (reducible, cut the middle line) versus a single sunset graph (1PI).
+- [Structure] Add $Z[J]$ and $W[J]$ to the physical-quantity table ($W$ is dimensionless like $\energy{\Gamma}$).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.13 Trace Techniques.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub explaining why traces appear and which averaging factors to apply.
+- [Example] Optionally show the one-line completeness step $\sum_{s,s'}|\bar u(p')\gamma^\mu u(p)|^2$-type sums becoming $\operatorname{Tr}[(\not p'+m)\gamma^\mu(\not p+m)\gamma^\nu]$; otherwise no change needed.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.13.01 Clifford Algebra in d = 4 Dimensions.md
+priority: low
+graph: no
+manim: no
+summary: Correct identities with a good check of the second; the dimensional-regularization warning stays abstract.
+- [Example] Give the $d$-dimensional forms $\gamma^\mu\gamma_\mu=d$, $\gamma^\mu\not a\gamma_\mu=-(d-2)\not a$, $\gamma^\mu\not a\not b\gamma_\mu=4a\cdot b-(4-d)\not a\not b$ to make the warning concrete.
+- [Links] Point to [[07.15.03 Gamma-matrix traces]] for the derivation of the third identity.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.13.02 Traces of γ Matrices.md
+priority: low
+graph: no
+manim: no
+summary: Trace list, the $\gamma^5$ sign convention ($\epsilon^{0123}=+1$ gives $\operatorname{Tr}[\gamma^5\gamma^0\gamma^1\gamma^2\gamma^3]=-4i$, consistent) and the leptonic contraction are correct.
+- [Simplify] Write the example in slash notation $\operatorname{Tr}[\not{\mechanical{q}}_1\gamma^\mu\not{\mechanical{q}}_2\gamma^\nu]$ and state the contraction rule $(a^\mu b^\nu+a^\nu b^\mu-g^{\mu\nu}a\cdot b)(c_\mu d_\nu+c_\nu d_\mu-g_{\mu\nu}c\cdot d)=2(a\cdot c)(b\cdot d)+2(a\cdot d)(b\cdot c)$ used in the last step.
+- [Example] Finish the example in the CM frame (e.g. $\mechanical{q}_1\cdot\mechanical{p}_1=\energy{s}(1\pm\cos\theta)/4$ depending on labels) to obtain the $1+\cos^2\theta$ distribution, and link [[07.06.02 Annihilation - e⁺e⁻ → μ⁺μ⁻]].
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.14 Bhabha Scattering - e⁺e⁻ → e⁺e⁻.md
+priority: medium
+graph: yes
+manim: no
+summary: Amplitudes and the relative sign are correct, but the note never gives the squared result or cross section, so the forward-peaking claim stays qualitative.
+- [Example] Add the massless spin-averaged result $\overline{|\signal{\mathcal M}|^2}=2\electric{e}^{\,4}[(\energy{s}^2+\mechanical{u}^2)/\mechanical{t}^2+(\mechanical{t}^2+\mechanical{u}^2)/\energy{s}^2+2\mechanical{u}^2/(\energy{s}\mechanical{t})]$ with $d\sigma/d\Omega=\overline{|\signal{\mathcal M}|^2}/(64\pi^2\energy{s})$, and note it follows from Møller by crossing $\energy{s}\leftrightarrow\mechanical{u}$.
+- [Graph] Plot $\energy{s}\,d\sigma/d\Omega$ in units of $\electric{\alpha}^2$ versus $\cos\theta\in[-0.95,0.95]$ for Bhabha and for $\mathrm e^+\mathrm e^-\to\mu^+\mu^-$ ($\tfrac14(1+\cos^2\theta)$) on a log axis, showing the forward t-channel peak.
+- [Intuition] Mention that the forward peak makes small-angle Bhabha scattering the standard luminosity monitor at $\mathrm e^+\mathrm e^-$ colliders.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.15 Exercises/07.15 Exercises.md
+priority: low
+graph: no
+manim: no
+summary: Clear exercise index; all links resolve.
+- [Structure] No change needed.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.15 Exercises/07.15.01 Symmetry factors in quartic scalar theory.md
+priority: low
+graph: no
+manim: no
+summary: Counts are correct ($S=8$; $N=192$ giving $S=6$; $S=2$) and the source leg-count error is handled well; the diagrams are only described in words.
+- [Example] Add small drawings (SVG) of the figure-eight, the setting-sun and the s-channel bubble with external labels, so the automorphisms can be seen.
+- [Structure] Since (b) as posed is inconsistent, state in the exercise which corrected question is answered (two-point setting-sun), and optionally note the genuine two-to-two one-loop graphs (s, t, u bubbles, each $S=2$).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.15 Exercises/07.15.02 Scalar propagator in position space.md
+priority: low
+graph: yes
+manim: no
+summary: Bessel-function result, asymptotics and dimensions are correct and the source's $1/r$ error is properly corrected; $\mechanical{k}$ doubles as four-momentum and radial magnitude.
+- [Graph] Plot $4\pi^2\mechanical{r}^2\signal{\Delta}_{\mathrm E}=\mechanical{m}\mechanical{r}K_1(\mechanical{m}\mechanical{r})$ versus $\mechanical{m}\mechanical{r}\in[0.01,10]$ (log x-axis) together with the large-distance asymptote $\sqrt{\pi z/2}\,e^{-z}$, showing the massless value 1 at short distance and the exponential fall-off.
+- [Intuition] State the short-distance limit $\signal{\Delta}_{\mathrm E}\to1/(4\pi^2\mechanical{r}^2)$ (from $K_1(z)\approx1/z$); it is the four-dimensional analogue of the Coulomb $1/(4\pi r)$ and supports the dimension argument.
+- [Simplify] Use a separate symbol (e.g. $\kappa$) for the radial Euclidean momentum magnitude instead of reusing $\mechanical{k}$.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.15 Exercises/07.15.03 Gamma-matrix traces.md
+priority: low
+graph: no
+manim: no
+summary: All three derivations are correct and well ordered.
+- [Simplify] Add a one-line proof that odd traces vanish (insert $\gamma^5\gamma^5$ and anticommute), since the solution relies on it; otherwise no change needed.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.15 Exercises/07.15.04 Compton cross section in the Thomson limit.md
+priority: low
+graph: yes
+manim: no
+summary: Correct limit, integral and numerical value ($6.65\times10^{-25}\unit{cm^2}$); a good place for a Klein–Nishina plot.
+- [Graph] Plot $(\mechanical{m}_e^2/\electric{\alpha}^2)\,d\mechanical{\sigma}/d\mechanical{\Omega}$ versus $\mechanical{\theta}\in[0,\pi]$ for $\energy{\omega}/\mechanical{m}_e=0,0.1,1,10$ (polar or Cartesian), showing the Thomson shape and the forward concentration at high energy.
+- [Example] Show the conversion to $\unit{cm^2}$ with $\hbar c=197.327\unit{MeV\,fm}$ and $\mechanical{m}_e=0.511\unit{MeV}$, i.e. $\mechanical{\sigma}_T=\tfrac{8\pi}{3}r_e^2$ with $r_e=\electric{\alpha}\hbar c/\mechanical{m}_e=2.818\unit{fm}$.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.15 Exercises/07.15.05 Crossing from Compton scattering to two-photon annihilation.md
+priority: low
+graph: yes
+manim: no
+summary: Momentum map, channel table, the extra crossing sign and the final $2\electric{e}^4(\mechanical{u}/\mechanical{t}+\mechanical{t}/\mechanical{u})$ are correct; the requested diagrams are not drawn.
+- [Example] Add the two annihilation diagrams the exercise asks for (t and u channel, one photon per vertex), which also replaces the faulty source sketch discussed in [[07.07.02 Crossing Examples]].
+- [Structure] Photon labels differ from 07.07.02 ($\mechanical{k}\to-\mechanical{k}_2$ here versus $\mechanical{k}\to-\mechanical{k}_1$ there); harmonize.
+- [Graph] Plot $\overline{|\signal{\mathcal M}|^2}/(2\electric{e}^4)=2(1+\cos^2\theta)/(1-\cos^2\theta)$ versus $\cos\theta\in[-0.95,0.95]$ (massless CM), showing the forward and backward peaks.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.15 Exercises/07.15.06 Transversality of the vacuum-polarization tensor.md
+priority: low
+graph: no
+manim: no
+summary: Correct and careful proof with good regulator and photon-mass caveats; slightly repetitive.
+- [Simplify] Merge the paragraph "The key step is the difference of inverse kernels" into the derivation and replace the repeated Ward–Takahashi statement by a link to [[07.10 The Ward Identity and Its Consequences]].
+- [Intuition] Give the concrete counterexample behind the regulator caveat: a hard four-momentum cutoff produces a non-transverse term $\propto g^{\mu\nu}\energy{\Lambda}^2$, i.e. a spurious photon mass.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.15 Exercises/07.15.07 Schwinger magnetic moment.md
+priority: medium
+graph: no
+manim: no
+summary: Correct conclusion, but the key step from the Gordon spin term to $\magnetic{g}=2(\electric{F}_1+\magnetic{F}_2)$ is asserted rather than shown, and the Gordon identity is displayed twice.
+- [Simplify] Show the nonrelativistic step: in a static external field the $i\sigma^{\mu\nu}\mechanical{q}_\nu/2\mechanical{m}$ terms combine to $-\frac{\electric{e}}{2\mechanical{m}}\,2[\electric{F}_1(0)+\magnetic{F}_2(0)]\,\mechanical{\mathbf S}\cdot\magnetic{\mathbf B}$ using $\boldsymbol\sigma=2\mechanical{\mathbf S}$, from which $\magnetic{g}$ is read off.
+- [Structure] Remove the duplicate display of the Gordon decomposition (exercise and solution) and the vague sentence "the factor two ... is essential".
+- [Structure] The table writes $\mechanical{p}\prime$; use $\mechanical{p}'$ as in the text.
+- [Example] Compare $\electric{\alpha}/2\pi=0.0011614$ with the measured $\magnetic{a}_e=0.0011597$ and note that the two-loop term $-0.328\,(\electric{\alpha}/\pi)^2$ closes most of the gap.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.15 Exercises/07.15.08 Electron–muon scattering amplitude.md
+priority: medium
+graph: yes
+manim: no
+summary: Amplitude, trace result $2\electric{e}^4(\energy{s}^2+\mechanical{u}^2)/\mechanical{t}^2$ and the Møller comparison are correct, but the muon label $\mu$ collides with the Lorentz index $\mu$.
+- [Correctness] Symbol clash: $\bar u_\mu(\mechanical{q}')\gamma_\mu u_\mu(\mechanical{q})$ and $\signal{L}_{\mu,\mu\nu}$ use $\mu$ both as the muon species label and as a contracted Lorentz index; use e.g. $u_{(\mu)}$ and $\signal{L}^{(\mu)}_{\alpha\beta}$, or Lorentz indices $\alpha,\beta$.
+- [Simplify] Show the contraction from $\signal{L}_e^{\mu\nu}\signal{L}^{(\mu)}_{\mu\nu}$ to $8[(\mechanical{p}\cdot\mechanical{q})(\mechanical{p}'\cdot\mechanical{q}')+(\mechanical{p}\cdot\mechanical{q}')(\mechanical{p}'\cdot\mechanical{q})]$ by reusing Example 7.8 in [[07.13.02 Traces of γ Matrices]].
+- [Graph] Plot $\overline{|\signal{\mathcal M}|^2}/(2\electric{e}^4)$ versus $\cos\theta\in[-1,0.95]$ for e–μ, $[4+(1+\cos\theta)^2]/(1-\cos\theta)^2$, and for Møller on a log axis, showing the missing backward peak for distinct particles.
+- [Structure] Add one sentence that Z exchange is neglected (tree-level QED only).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.15 Exercises/07.15.09 Tadpole in quartic scalar theory.md
+priority: low
+graph: yes
+manim: no
+summary: Cutoff integral, dimensional-regularization result and the $\Gamma(-1+\epsilon)$ expansion are correct (checked), and the regulator discussion is careful.
+- [Graph] Plot $32\pi^2\energy{\Sigma}_{\mathrm{tad}}/(\signal{\lambda}\mechanical{m}^2)$ versus $\energy{\Lambda}/\mechanical{m}\in[1,100]$ (log axes) together with its separate pieces $\energy{\Lambda}^2/\mechanical{m}^2$ and $-\ln(1+\energy{\Lambda}^2/\mechanical{m}^2)$, to show the quadratic dominance.
+- [Intuition] Add the physical point behind the quadratic divergence: a mass correction of order $\signal{\lambda}\energy{\Lambda}^2/32\pi^2$ is the scalar fine-tuning (hierarchy) problem, which dimensional regularization hides but does not remove.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.15 Exercises/07.15.10 Power counting in quartic scalar theory.md
+priority: low
+graph: no
+manim: no
+summary: Correct derivation of $D=4-E$; the table has overlapping rows ($E=6$ and $E\ge6$).
+- [Structure] Merge the $E=6$ and $E\ge6$ rows and add an $E=0$ row ($D=4$, vacuum energy).
+- [Example] Add the general-dimension formula $D=d-\frac{d-2}{2}E+(d-4)V$ to show why the vertex count cancels only in $d=4$ (super-renormalizable below, non-renormalizable above).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/07 Feynman Diagrams/07.16 Summary.md
+priority: low
+graph: no
+manim: no
+summary: Accurate chapter summary with useful reconstruction checks.
+- [Links] Turn plain references into wiki links, e.g. Table 7.1 to [[07.05.06 Summary Table of Feynman Rules for QED]] and the Ward identity to [[07.10 The Ward Identity and Its Consequences]].
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.01 The QED Lagrangian and U(1) Gauge Invariance.md
+priority: low
+graph: no
+manim: no
+summary: Readable chapter introduction and hub, with vague precision claims and one missing child link.
+- [Links] The closing sentence links 08.01.01 and 08.01.02 but not [[08.01.03 Physical Content of the Lagrangian]]; add it.
+- [Example] Replace "more than ten decimal places" with the actual comparison (measured $\magnetic{a}_e=0.001\,159\,652\,180\,59(13)$, 2023) and flag the Feynman quote as unverified attribution.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.01.01 Global and Local Gauge Invariance.md
+priority: medium
+graph: no
+manim: no
+summary: The transformation algebra is correct, but the source's charge-sign claim is wrong for the stated conventions and is only deferred to the next note.
+- [Correctness] With $\psi\to e^{-i\electric{e}\signal{\alpha}}\psi$, $D_\mu=\partial_\mu+i\electric{e}\electric{A}_\mu$, $\electric{e}>0$ and $\mathcal L_{\mathrm{int}}=-J^\mu\electric{A}_\mu$, the current is $J^\mu=\electric{e}\bar\psi\gamma^\mu\psi$, so the particles annihilated by $\psi$ carry charge $+\electric{e}$; the claim that $\electric{Q}_e=-|\electric{e}|$ "follows from quantization" is false here. Either set $\electric{e}=-|\electric{e}|$ for the electron (Peskin's convention) or use $D_\mu=\partial_\mu-i|\electric{e}|\electric{A}_\mu$.
+- [Structure] The gauge parameter $\signal{\alpha}$ shares its letter with the fine-structure constant $\electric{\alpha}$ used throughout the chapter; consider $\theta(\mechanical{x})$ or $\Lambda(\mechanical{x})$.
+- [Manim] Optional: show phase arrows on a spacetime grid, first rotated uniformly (differences between neighbours unchanged), then by a position-dependent angle so neighbour differences change, motivating the compensating field.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.01.02 Covariant Derivative and Minimal Coupling.md
+priority: low
+graph: no
+manim: no
+summary: Correct and explicit covariance check and interaction term; the closing charge-sign note is hedged instead of stating the consequence.
+- [Simplify] In the closing note, state plainly that with $J^\mu=\electric{e}\signal{j}^\mu$ and $\electric{e}>0$ the field quanta have charge $+\electric{e}$, and which substitution describes electrons (see the 08.01.01 item).
+- [Simplify] Shorten the four-line expansion (8.1) to two lines by applying the product rule directly; the cancellation sentence already makes the point.
+- [Intuition] Add the field-strength check $[D_\mu,D_\nu]=i\electric{e}\electric{F}_{\mu\nu}$, with $\electric{F}_{\mu\nu}$ invariant under $\electric{A}_\mu\to\electric{A}_\mu+\partial_\mu\signal{\alpha}$, to explain why the Maxwell term is allowed.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.01.03 Physical Content of the Lagrangian.md
+priority: low
+graph: no
+manim: no
+summary: Correct and clear decomposition of the Lagrangian with appropriate caveats on convergence and photon mass.
+- [Intuition] Add the coupled field equations from the full Lagrangian, $\partial_\mu\electric{F}^{\mu\nu}=\electric{e}\signal{j}^\nu$ and $(i\not D-\mechanical{m})\signal{\psi}=0$, to show what the interaction term changes.
+- [Example] Mention the experimental photon-mass bound (PDG: $\mechanical{m}_\gamma<10^{-18}\unit{eV}$) next to Remark 8.1.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.02 Feynman Rules of QED.md
+priority: low
+graph: no
+manim: no
+summary: Correct compact rule list; the incoming electron is pulled out of the table for no reason.
+- [Structure] Put the incoming electron $u^s(\mechanical{p})$ into the external-state table with the other five rows.
+- [Links] Link "Chapter 7" to [[07.05 Feynman Rules for QED]] and [[07.05.06 Summary Table of Feynman Rules for QED]].
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.03 Trace Techniques.md
+priority: low
+graph: no
+manim: no
+summary: Short, clear hub that orders the three trace subnotes and correctly states when the unpolarized average applies.
+- [Structure] No change needed; optionally add one line naming the generic recipe ($\overline{|\mathcal M|^2}\to$ insert completeness $\to$ trace $\to$ contract) so the reader sees the pipeline before opening the subnotes.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.03.01 Spin Sums and Completeness.md
+priority: low
+graph: no
+manim: no
+summary: Correct and compact, but the step from a bilinear product to a trace is only described in words.
+- [Example] Add a three-line worked example: $\sum_{s,s'}|\bar u^{s'}(p')\Gamma u^s(p)|^2=\operatorname{tr}[\Gamma(\not p+m)\bar\Gamma(\not p'+m)]$, showing explicitly where each completeness relation is inserted.
+- [Intuition] Add a normalization check: tracing $\sum_s u^s\bar u^s=\not p+m$ gives $\sum_s\bar u^s u^s=4m=2\cdot2m$, matching $\bar u^s u^s=2m$ per spin; the analogous check for $v$ gives $-2m$ and explains the opposite mass sign.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.03.02 Traces of Gamma Matrices.md
+priority: low
+graph: no
+manim: no
+summary: Correct identity list, but the four-gamma trace and the gamma-five sign are stated without derivation or explicit convention.
+- [Simplify] Derive (8.5) in three lines (anticommute $\gamma^\mu$ through the other three and use cyclicity) so the plus-minus-plus sign pattern is earned rather than memorized.
+- [Structure] State the convention package explicitly next to the $\gamma^5$ trace (e.g. $\gamma^5=i\gamma^0\gamma^1\gamma^2\gamma^3$, $\epsilon^{0123}=-1$ as in Peskin–Schroeder) instead of only saying the sign is convention-dependent.
+- [Structure] The algebraic-check paragraph refers to (8.6) before (8.6) is displayed; move it below (8.6) or phrase it in terms of (8.5) contracted with one vector.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.03.03 Index Contractions in d = 4.md
+priority: low
+graph: no
+manim: no
+summary: Correct four-dimensional contraction identities with a sensible warning about dimensional regularization.
+- [Simplify] Show the one-line derivation of $\gamma^\mu\not a\gamma_\mu=-2\not a$ from $\gamma^\mu\not a=-\not a\gamma^\mu+2a^\mu$, which also makes the later identities plausible.
+- [Example] Since the note warns about dimensional regularization, give the $d$-dimensional forms ($\gamma^\mu\gamma_\mu=d$, $\gamma^\mu\not a\gamma_\mu=-(d-2)\not a$, $\gamma^\mu\not a\not b\gamma_\mu=4a\cdot b-(4-d)\not a\not b$) so the reader sees exactly what changes.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.04 Annihilation - e⁺e⁻ → μ⁺μ⁻.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub with a good motivating question and correct scope statement.
+- [Structure] No change needed; optionally state the final results ($\alpha^2(1+\cos^2\theta)/4s$ and $4\pi\alpha^2/3s$) up front so the reader knows the destination.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.04.01 Kinematics and Feynman Diagram.md
+priority: low
+graph: no
+manim: no
+summary: Correct and readable setup of momenta, diagram, and threshold.
+- [Example] Write the explicit centre-of-mass four-vectors ($p=(E,0,0,E)$, $\bar p=(E,0,0,-E)$, $k=(E,\mathbf k)$, $\bar k=(E,-\mathbf k)$ with $|\mathbf k|=\sqrt{E^2-m_\mu^2}$) so the virtual photon $q=(2E,\mathbf 0)$ and the threshold $E\ge m_\mu$ are visible at a glance; later notes reuse them.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.04.02 Feynman Amplitude.md
+priority: low
+graph: no
+manim: no
+summary: Correct amplitude with useful dimension and current-conservation checks.
+- [Simplify] Show the phase bookkeeping explicitly: $(-ie)^2(-i)=ie^2$, so $i\mathcal M=ie^2/q^2[\dots][\dots]$; this one line replaces the abstract sentence about the displayed overall phase.
+- [Intuition] Make the transversality claim concrete: $q_\mu\bar v(\bar p)\gamma^\mu u(p)=\bar v(\bar p)(\not p+\not{\bar p})u(p)=\bar v(m-m)u=0$.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.04.03 Calculation of the Squared Amplitude.md
+priority: medium
+graph: no
+manim: no
+summary: The derivation is correct (re-derived (8.7) and (8.8)), but the long list of contractions is hard to follow and the mass terms are simplified in one opaque step.
+- [Simplify] Introduce $A=p\cdot\bar p+m_e^2$, $B=k\cdot\bar k+m_\mu^2$, $P=p\cdot\bar p$, $K=k\cdot\bar k$ and show the intermediate step $-2AK-2BP+4AB=2m_e^2K+2m_\mu^2P+4m_e^2m_\mu^2$ that turns the first form of (8.8) into the second.
+- [Structure] Replace the seven separate contraction displays by a $3\times3$ table (rows: electron-tensor terms, columns: muon-tensor terms) whose entries are the scalar products; this makes the factor 2 in front of each product obvious.
+- [Simplify] The electron-tensor section expands the trace twice (once with the vanishing odd traces, once again without); keep a single expansion.
+- [Example] Display the current-conservation check, $q^\mu L^{(e)}_{\mu\nu}=(P+m_e^2)(p+\bar p)_\nu-(p+\bar p)_\nu(P+m_e^2)=0$, rather than only describing it.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.04.04 Mandelstam Variables.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and well-checked; the meaning of t and u as functions of angle is deferred to the next note.
+- [Graph] Plot $t/s=-(1-\cos\theta)/2$ and $u/s=-(1+\cos\theta)/2$ against $\cos\theta\in[-1,1]$ (massless case) together with their sum $-1$, so the physical region and the right-angle point $t=u=-s/2$ are visible.
+- [Simplify] Derive one massless dot product in a line, e.g. $t=(p-k)^2=-2p\cdot k$, to show where the factor $-1/2$ comes from.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.04.05 Differential and Total Cross Sections.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct results (recomputed 0.87 nb at 10 GeV), but the angular shape and the energy scaling would be much clearer with plots and a practical unit formula.
+- [Graph] Polar plot of $d\sigma/d\Omega\propto1+\cos^2\theta$ for $\theta\in[0,2\pi]$, optionally overlaid with the isotropic average $4/3$, to show the forward–backward symmetric shape.
+- [Graph] Log–log plot of $\sigma_{\rm tot}=86.8\,\mathrm{nb}/(s/\mathrm{GeV}^2)$ for $\sqrt s\in[1,200]\,\mathrm{GeV}$, marking the 10 GeV benchmark.
+- [Example] State the practical formula $\sigma_{\rm tot}\approx86.8\,\mathrm{nb}/s[\mathrm{GeV}^2]$ and the conversion $1\,\mathrm{GeV^{-2}}=0.3894\,\mathrm{mb}$ used to get 0.87 nb; the current text skips the unit conversion.
+- [Links] The general formula $d\sigma/d\Omega=|\mathbf k|\overline{|\mathcal M|^2}/(64\pi^2s|\mathbf p|)$ appears without source; link the chapter 7 note where the two-body cross section is derived.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.04.06 The Ratio R and Color Counting.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct R values and threshold formula, but the note mixes two topics and gives no picture of the step structure.
+- [Graph] Plot the parton-model $R(\sqrt s)$ as a step function (2 below charm, 10/3 above about 3.7 GeV, 11/3 above about 10.6 GeV) on $\sqrt s\in[1,40]\,\mathrm{GeV}$, optionally with the $(1+\alpha_s/\pi)$-corrected values.
+- [Graph] Plot $\sigma/\sigma_{\rm massless}=\beta_\mu(1+2m_\mu^2/s)$ against $\sqrt s/(2m_\mu)\in[1,5]$ to show the threshold rise and approach to one.
+- [Structure] Example 8.2 (massive muon threshold) concerns $\mathrm e^+\mathrm e^-\to\mu^+\mu^-$ kinematics, not $R$; move it to 08.04.05 or give it its own short note.
+- [Simplify] Write the QCD correction explicitly as $R=3\sum_qQ_q^2(1+\alpha_s/\pi+\dots)$ instead of only "corrections of order $\alpha_s/\pi$".
+- [Intuition] Mention that the threshold formula is tree level only; near threshold the Coulomb (Sommerfeld) final-state enhancement modifies the $\beta$ behaviour.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.05 Bhabha Scattering - e⁺e⁻ → e⁺e⁻.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub with the right physical warning about the forward Coulomb peak.
+- [Structure] No change needed.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.05.01 Diagrams and Interference.md
+priority: low
+graph: no
+manim: no
+summary: Correct channel amplitudes and relative sign; the origin of the minus sign is only asserted.
+- [Intuition] Show briefly how the relative sign arises: the two Wick contractions differ by an odd permutation of the external fermion operators, or equivalently the $t$-channel amplitude follows from the $s$-channel one by crossing $\bar p\leftrightarrow-k$.
+- [Simplify] Add the physical-region values $s=4E^2>0$ and $t=-2E^2(1-\cos\theta)\le0$, which makes the timelike-versus-spacelike sentence concrete.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.05.02 Squared Modulus and Interference.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct (8.11) with a good right-angle check (1/2, 5, −1 verified), but the traces are not shown and the angular behaviour is left to words.
+- [Graph] Plot the three bracket terms of (8.11) and their sum against $\cos\theta\in[-0.95,0.95]$ on a logarithmic vertical axis, using $t=-s(1-\cos\theta)/2$, $u=-s(1+\cos\theta)/2$; overlay the muon-pair term $(1+\cos^2\theta)/2$ for comparison.
+- [Simplify] Obtain $\overline{|\mathcal M_t|^2}$ from $\overline{|\mathcal M_s|^2}$ by crossing ($s\leftrightarrow t$) in one line rather than "trace evaluation gives", and name the single trace that produces the interference term.
+- [Example] Give the explicit angular form $d\sigma/d\Omega=\frac{\alpha^2}{2s}\left[\frac{1+\cos^4(\theta/2)}{\sin^4(\theta/2)}-\frac{2\cos^4(\theta/2)}{\sin^2(\theta/2)}+\frac{1+\cos^2\theta}{2}\right]$ so the $1/\sin^4(\theta/2)$ peak is visible.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.06 Compton Scattering and the Klein–Nishina Formula.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub with correct scope and checks.
+- [Structure] No change needed.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.06.01 Diagrams and Kinematics.md
+priority: low
+graph: no
+manim: no
+summary: Correct amplitude (8.12) and denominators; the gauge-invariance check is only described.
+- [Example] Carry out the gauge check explicitly for $\epsilon(k)\to k$: using the Dirac equation, show that the two terms reduce to $\pm\bar u(p')\gamma_\nu u(p)\epsilon^{*\nu}$ and cancel.
+- [Example] Derive the Compton relation $1/\omega'-1/\omega=(1-\cos\theta)/m$ here from $p'^2=(p+k-k')^2=m^2$, since the next note uses it without derivation.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.06.02 Klein–Nishina Formula.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct squared amplitude, Klein–Nishina and Thomson results, but the route from the invariant expression to (8.13) is skipped and the angular physics is not visualized.
+- [Graph] Polar plot of $(d\sigma/d\Omega)/r_0^2$ from (8.13) for $\omega/m_e=0.01,\,0.1,\,1,\,10$ to show the transition from the symmetric Thomson pattern to forward peaking.
+- [Graph] Plot $\omega'/\omega=1/[1+(\omega/m_e)(1-\cos\theta)]$ against $\theta\in[0,\pi]$ for the same energies.
+- [Simplify] Add the missing step: lab-frame phase space gives $d\sigma/d\cos\theta=\frac{1}{32\pi m^2}(\omega'/\omega)^2\overline{|\mathcal M|^2}$, and in the lab $p\cdot k=m\omega$, $p\cdot k'=m\omega'$, which turns the bracket into $\omega'/\omega+\omega/\omega'-\sin^2\theta$.
+- [Structure] The note uses both $m$ and $m_e$ for the same electron mass (and lists both in the table); pick one symbol.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.07 Møller Scattering - e⁻e⁻ → e⁻e⁻.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub that correctly separates the exchange sign from identical-particle phase-space counting.
+- [Structure] No change needed.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.07.01 Diagrams and the Exclusion Principle.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct amplitudes and (8.14), but the result is not connected to Bhabha by crossing and lacks a numerical check.
+- [Graph] Plot the bracket of (8.14) against $\cos\theta\in[-0.95,0.95]$ (log vertical axis) together with its separate $t$-pole, $u$-pole, and interference terms, to show the symmetric forward and backward peaks.
+- [Example] Add the right-angle check: with $t=u=-s/2$ the three terms are $5$, $5$, and $+8$, total $18$ (the interference is constructive here, unlike Bhabha).
+- [Simplify] Note that (8.14) follows from Bhabha (8.11) by crossing $s\leftrightarrow u$; this is a strong consistency check between the two notes.
+- [Structure] The table lists $\mathcal M$ and $\mathcal M_{\mathrm{Møller}}$ in two rows for the same quantity; merge them.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.08 Annihilation - e⁺e⁻ → γγ.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct amplitude, (8.15), and high-energy total cross section (checked against Dirac's formula), but the crossing from Compton and the integration are not shown.
+- [Simplify] Show the crossing explicitly: the massless Compton result $-2e^4(u/s+s/u)$ with $s\to t$ and the overall fermion-crossing sign gives $2e^4(u/t+t/u)$; a small mapping table (which momentum goes where) would replace the abstract paragraph.
+- [Graph] Plot $u/t+t/u=2(1+\cos^2\theta)/\sin^2\theta$ (massless) against $\cos\theta\in[-0.99,0.99]$, optionally with the massive version at $\sqrt s=10m_e$, to show the collinear peaks that the mass regulates.
+- [Example] Sketch the integration that produces $[\ln(s/m_e^2)-1]$: the endpoints $\cos\theta\to\pm1$ are cut off at $1\mp\cos\theta\sim m^2/s$, giving the logarithm.
+- [Intuition] Mention the low-energy limit (Dirac's $\sigma\simeq\pi r_0^2/\beta$, relevant for positron annihilation at rest) as a contrast to the high-energy $\ln s/s$ behaviour.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.09 Bremsstrahlung.md
+priority: medium
+graph: no
+manim: yes
+summary: Qualitatively correct but schematic; the angular factor is never given and the quantity table and macros are inconsistent with the rest of the chapter.
+- [Correctness] The table lists $p,p',k$ as used "in the figure", but neither the text nor the Fig. 8.6 caption uses these symbols; introduce them (e.g. in an explicit soft factor) or remove the row.
+- [Correctness] The photon energy is written $\signal{\omega}$ here but $\energy{\omega}$ in 08.06.02, 08.10.01 and 08.11.02 for the same physical quantity; use $\energy{\omega}$ consistently.
+- [Example] Replace the schematic $f(\theta,\phi)$ by the explicit eikonal factor $dN=-\frac{\alpha}{4\pi^2}\frac{d\omega}{\omega}d\Omega_k\,\omega^2\left(\frac{p'}{p'\cdot k}-\frac{p}{p\cdot k}\right)^2$, which shows where the $1/\omega$ and the angular pattern come from.
+- [Manim] Animate an electron deflected by a nucleus with radiation emitted from the kink in its trajectory, showing that the change of velocity (not velocity itself) produces the photon and that soft photons dominate.
+- [Simplify] Give the integrated soft result $\sim\frac{\alpha}{\pi}\ln\frac{-q^2}{m^2}\ln\frac{\omega_{\max}}{\omega_{\min}}$ for $-q^2\gg m^2$ to make the logarithmic divergence quantitative.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.10 Polarization.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub with a useful reconstruction check.
+- [Structure] No change needed.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.10.01 Transverse and Longitudinal Polarization.md
+priority: low
+graph: no
+manim: yes
+summary: Correct transverse and circular vectors, but the longitudinal part promised by the title is only one sentence.
+- [Structure] Display the unphysical scalar and longitudinal vectors ($\epsilon_{(0)}=(1,0,0,0)$, $\epsilon_{(3)}=(0,0,0,1)$) and show that $\epsilon_{(0)}+\epsilon_{(3)}=k/\omega$, which is why their contributions decouple via the Ward identity.
+- [Manim] Animate the electric-field vector at a fixed point for $\epsilon_{(1)}$, $\epsilon_{(2)}$, and $\epsilon_{(\pm)}$ (oscillating line versus rotating arrow), showing circular states as phase-shifted superpositions of linear ones.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.10.02 Sum over Physical Polarizations.md
+priority: low
+graph: no
+manim: no
+summary: Correct polarization-sum formula (including the general-$n$ correction) and a clear statement of when $-g_{\mu\nu}$ may be used.
+- [Example] Evaluate the projector for $k=(\omega,0,0,\omega)$, $n=(1,0,0,-1)$ and show it reduces to $\mathrm{diag}(0,1,1,0)$, i.e. exactly $\sum_\lambda\epsilon^{i*}\epsilon^j$ for $\lambda=1,2$.
+- [Example] Show in two lines why the extra terms vanish: $k^\mu\mathcal M_\mu=0$ kills the $k_\mu n_\nu$ and $k_\nu n_\mu$ terms after contraction with $\mathcal M^\mu\mathcal M^{*\nu}$.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.10.03 Helicity Asymmetries.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct helicity cross sections and reconstruction of (8.9), but the angular-momentum argument is too terse and the many caveat boxes interrupt the flow.
+- [Graph] Polar plot of $(1+\cos\theta)^2$, $(1-\cos\theta)^2$, and their sum $2(1+\cos^2\theta)$, to show how two asymmetric helicity channels combine into the symmetric unpolarized pattern.
+- [Intuition] Make the angular-momentum argument explicit: $J_z=+1$ initially, final state along $\theta$ with $J_{z'}=\pm1$, amplitude $\propto d^1_{1,\pm1}(\theta)=(1\pm\cos\theta)/2$, and squaring gives the displayed factors; add a small spin-arrow sketch.
+- [Structure] Merge the three note boxes (antifermion chirality, "other four" counting, QED asymmetry caveat) into one short "Conventions and caveats" section at the end.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.11 Infrared Divergences.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub with a good motivating question about detector resolution.
+- [Structure] No change needed.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.11.01 Nature of the Infrared Problem.md
+priority: medium
+graph: no
+manim: no
+summary: The power-counting argument is correct, but the displayed integral keeps a known typo and the soft numerator is not worked out.
+- [Correctness] The displayed integral uses the measure $d^4k$ with an integrand in $l$; correct the equation to $d^4l$ (and drop $k$ from the table) instead of keeping the error and explaining it in a note.
+- [Simplify] Show the soft (eikonal) limit of the numerator: for $l\to0$, $\bar u(p')\gamma^\nu(\not p'+m)\gamma^\mu(\not p+m)\gamma_\nu u(p)\to4(p\cdot p')\bar u(p')\gamma^\mu u(p)$, so the soft part is manifestly proportional to $\Gamma^\mu_{\rm tree}$.
+- [Simplify] Give the leading high-energy form $\delta F_1\simeq-\frac{\alpha}{2\pi}\ln\frac{-q^2}{m^2}\ln\frac{-q^2}{m_\gamma^2}$ instead of the vague $\ln(m_\gamma^2/\mu^2)$ with an unspecified scale.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.11.02 The Bloch–Nordsieck Theorem.md
+priority: medium
+graph: yes
+manim: no
+summary: Conceptually careful, but the displayed resolution logarithm has the wrong structure for massive charges and no explicit cancellation is shown.
+- [Correctness] The schematic $\sigma=\sigma_0[1+\frac{\alpha}{\pi}(-\ln^2\frac{\Delta E}{\sqrt s}+\dots)]$ is a double log in $\Delta E$, but for massive external charges the regulator-free remainder is a single log in $\Delta E$ times a mass log, $\sigma\simeq\sigma_0[1+\frac{2\alpha}{\pi}(\ln\frac{s}{m^2}-1)\ln\frac{\Delta E}{\sqrt s}+\dots]$, consistent with the first-order expansion of the exponent in 08.11.03.
+- [Example] Show the cancellation explicitly at one loop: a virtual term $\propto-\frac{\alpha}{\pi}(\ln\frac{s}{m^2}-1)\ln\frac{\sqrt s}{m_\gamma}$ and a real term $\propto+\frac{\alpha}{\pi}(\ln\frac{s}{m^2}-1)\ln\frac{\Delta E}{m_\gamma}$ (common coefficient), so the reader sees $m_\gamma$ drop out and $\Delta E$ remain.
+- [Graph] Plot $\sigma(\Delta E)/\sigma_0$ from the corrected first-order formula against $\Delta E/\sqrt s\in[10^{-4},1]$ (log axis) for $\sqrt s=10\,\mathrm{GeV}$, $m=m_e$, showing that it turns negative at small $\Delta E$ and motivating resummation.
+- [Simplify] The KLN/collinear discussion (two paragraphs plus an external link) is longer than the theorem itself; condense it to two sentences.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.11.03 The Sudakov Double Logarithm.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct leading-log statements with appropriate caveats, but the dense note box and missing numbers make the size of the effect hard to grasp.
+- [Graph] Plot $\sigma_{\rm excl}/\sigma_0=\exp[-\frac{\alpha}{\pi}\ln\frac{s}{m_e^2}\ln\frac{s}{\Delta E^2}]$ and its first-order truncation against $\sqrt s\in[1,1000]\,\mathrm{GeV}$ for fixed $\Delta E/\sqrt s=0.01$, showing the truncation turning negative while the exponential stays positive.
+- [Example] Give one number: at $\sqrt s=91\,\mathrm{GeV}$, $\Delta E=1\,\mathrm{GeV}$, the exponent is about $-(1/137\pi)\cdot24.2\cdot9.0\approx-0.51$, i.e. roughly a 40 percent suppression.
+- [Intuition] Explain the origin of the two logarithms with the soft–collinear integral $\int\frac{d\omega}{\omega}\int\frac{d\theta^2}{\theta^2}$, which makes "double log" concrete.
+- [Simplify] Shorten the "Soft-factor scope" note box to two sentences; its reference list is heavier than the physics it qualifies.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.12 Preview of Loop Corrections.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub with correct expansion factor and links.
+- [Links] Link "Chapter 9" to the hub of the 09 Renormalization folder so the forward reference is clickable.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.12.01 Vacuum Polarization.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct structure and running-coupling statements, but (8.16) is not identified as the subtracted function and the size of the electron-only running is not quantified.
+- [Simplify] State that (8.16) is the renormalized (subtracted) function $\hat\Pi(q^2)=\Pi(q^2)-\Pi(0)$; the unsubtracted one-loop $\Pi$ is ultraviolet divergent, and $\alpha_{\rm em}(q^2)=\alpha/(1-\hat\Pi)$ holds for the subtracted one.
+- [Graph] Plot $1/\alpha_{\rm em}(Q)$ from one-loop leptonic running against $Q\in[1\,\mathrm{MeV},100\,\mathrm{GeV}]$ (log axis), first electron only, then adding $\mu$ and $\tau$, with a marker at $1/128$ for the full value at $M_Z$.
+- [Example] Quantify the electron loop: at $M_Z$, $\frac{1}{3\pi}[\ln(M_Z^2/m_e^2)-5/3]\approx2.4$, so $1/\alpha$ drops from 137.0 to about 134.6; adding $\mu$ and $\tau$ gives about 132.7, and hadrons supply the rest to about 128.9.
+- [Intuition] Add a one-line screening picture (a test charge surrounded by oriented virtual dipoles, more bare charge seen at shorter distance) linking the sign of $\hat\Pi$ to the growth of $\alpha$.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.12.02 Vertex Correction and Anomalous Magnetic Moment.md
+priority: low
+graph: no
+manim: no
+summary: Correct form-factor decomposition and Schwinger term (0.00116 verified), with clearly dated numerical benchmarks.
+- [Intuition] Use the Gordon identity $\bar u'\gamma^\mu u=\bar u'[\frac{(p+p')^\mu}{2m}+\frac{i\sigma^{\mu\nu}q_\nu}{2m}]u$ to show why $F_1+F_2$ multiplies the spin (magnetic) term and hence $g=2(F_1+F_2)$.
+- [Structure] Add one sentence that the theory–experiment comparison is now limited by the fine-structure-constant determinations (the Cs and Rb atom-recoil values disagree by several standard deviations), so the quoted agreement depends on which $\alpha$ is used.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.12.03 Fermion Self-Energy.md
+priority: low
+graph: no
+manim: no
+summary: Correct qualitative preview of the self-energy structure and its renormalization role.
+- [Example] Write the on-shell conditions explicitly: $m_{\rm phys}=m+\Sigma(\not p=m_{\rm phys})$ and $Z_2^{-1}=1-\left.\frac{d\Sigma}{d\not p}\right|_{\not p=m_{\rm phys}}$; this makes "location fixes mass, residue fixes normalization" concrete.
+- [Structure] The argument is written $\Sigma(\not p)$ here but $\Sigma(p)$ in 08.13.01; use one notation across the two notes.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.13 Ward–Takahashi Identity.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub; all three links (including 08.13.03) resolve.
+- [Structure] No change needed.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.13.01 Statement and Physical Meaning.md
+priority: low
+graph: no
+manim: no
+summary: Correct identity, tree check, and careful handling of the factor-$i$ convention.
+- [Example] Add the zero-momentum Ward limit $\Gamma^\mu(p,p)=\partial S_F^{-1}(p)/\partial p_\mu$, obtained by expanding (8.19) to first order in $q$; it is the bridge to $Z_1=Z_2$ in the next note.
+- [Intuition] Add a short one-loop illustration: inserting the external photon on every internal fermion line of the self-energy produces the one-loop vertex, which is why (8.19) holds order by order.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/08 Quantum Electrodynamics/08.13.02 Consequences for Renormalization Factors.md
+priority: low
+graph: no
+manim: no
+summary: Correct statement of $Z_1=Z_2$ and its implication, but the derivation from the identity is absent.
+- [Simplify] Derive $Z_1=Z_2$ in three lines from the Ward limit $\Gamma^\mu(p,p)=\partial S^{-1}/\partial p_\mu$ near the mass shell, then show $e_R=Z_1^{-1}Z_2Z_3^{1/2}e_0=Z_3^{1/2}e_0$ so the role of the photon factor is explicit.

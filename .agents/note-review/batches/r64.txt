@@ -1,0 +1,66 @@
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/09 Time Dilation and the Twin-Paradox/09.07 Experiments on Motional Time Dilation.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/09 Time Dilation and the Twin-Paradox/09.07.01 Time Dilation of Unstable Particles.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/09 Time Dilation and the Twin-Paradox/09.07.02 Experiments on Atomic Systems.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/09 Time Dilation and the Twin-Paradox/09.07.03 Experiments on the Comparison of Atomic Clocks.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/09 Time Dilation and the Twin-Paradox/09.08 The Hafele-Keating Experiment.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/09 Time Dilation and the Twin-Paradox/09.09 Popular Resolutions of the Twin-Paradox.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/09 Time Dilation and the Twin-Paradox/09.09.01 Langevin's Solution in the Acceleration.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/09 Time Dilation and the Twin-Paradox/09.09.02 Resolution Sans Acceleration.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/09 Time Dilation and the Twin-Paradox/09.10 Einstein's Gravitational Resolution of the Paradox.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/09 Time Dilation and the Twin-Paradox/09.11 Summary.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10 References.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.00 Cosmic Relativity - The Theory and Its Primary Fundamental Results.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.01 The Universe That Determines the Physics of Relativity.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.02 A Hypothetical Scenario in Electrodynamics.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.03 A Theory of Relativity and Dynamics Without Postulates.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.04 Physics in the Gravitationally Charged Universe.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.05 The Gravitational Foundation of Cosmic Relativity.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.06 The Primary Results in Cosmic Relativity.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.06.01 The Modification of Duration and Distance.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.06.02 Interpretation in Terms of the Gravitational Potentials.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.06.03 The Time Dilation of Physical Clocks.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.06.04 Cosmic Relativity and the Principle of Relativity.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.06.05 The Propagation of Light.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.07 Cosmic Relativity and Dynamics.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.07.01 Laws of Dynamics - Newton's Law of Motion.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.08 Cosmic Relativity and the Origin of Inertia.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.08.01 Cosmic Relativity and the Inertial Forces.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.08.02 The Centrifugal Force.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.08.03 The Coriolis Force.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.09 The Twist in Tropical Cyclones.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.10 Cosmic Relativity and the Principles of Equivalence.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.10.01 Newton's Law and the WEP.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.10.02 Weightlessness in Free Fall and the EEP.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.10.03 Two Kinds of Gravitational Forces and the Geodesic Principle.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.10.04 The Equivalence Principle and Universality of Free Fall.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.11 The EEP and the Time Dilation of Clocks in an Accelerated Frame.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.12 Clocks and Time Dilation in Cosmic Relativity.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.12.01 Time Dilation in the STR.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.12.02 Motional Time Dilation in Cosmic Relativity.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.12.03 Synchronisation of Clocks in Cosmic Relativity.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.12.04 The Addition of Velocities in Cosmic Relativity.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.13 Cosmic Relativity and the Electrodynamics of Moving Media.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.13.01 The Doppler Shift.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.13.02 The Optical Aberration and the Fresnel Drag.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.14 The Unipolar Induction.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.15 Cosmic Relativity and the Spin Angular Momentum.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.16 Summary.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/11 The Crucial Experimental Tests of Cosmic Relativity/11 References.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/11 The Crucial Experimental Tests of Cosmic Relativity/11.00 The Crucial Experimental Tests of Cosmic Relativity.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/11 The Crucial Experimental Tests of Cosmic Relativity/11.01 The Nature of Propagation of Light.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/11 The Crucial Experimental Tests of Cosmic Relativity/11.01.01 Past Experiments on the One-Way Propagation of Light.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/11 The Crucial Experimental Tests of Cosmic Relativity/11.02 True Relative Velocity of Light - The Prediction.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/11 The Crucial Experimental Tests of Cosmic Relativity/11.03 The True Relative Velocity of Light - A Prelude to a Test.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/11 The Crucial Experimental Tests of Cosmic Relativity/11.03.01 The Propagation of Light in a Moving Frame.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/11 The Crucial Experimental Tests of Cosmic Relativity/11.03.02 A Simple Demonstration of the Conflict Between the PoR and the Light Hypothesis.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/11 The Crucial Experimental Tests of Cosmic Relativity/11.04 The Experiment on the One-Way Relative Velocity of Light.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/11 The Crucial Experimental Tests of Cosmic Relativity/11.05 Motional Time Dilation - The Predictions.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/11 The Crucial Experimental Tests of Cosmic Relativity/11.06 Cosmic Relativity and Clock Synchronisation.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/11 The Crucial Experimental Tests of Cosmic Relativity/11.07 Experimental Tests of Time Dilation - Atomic Clocks.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/11 The Crucial Experimental Tests of Cosmic Relativity/11.08 Experimental Tests of Time Dilation - GNSS and GPS.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/11 The Crucial Experimental Tests of Cosmic Relativity/11.08.01 Time Dilations in the GNSS Satellites.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/11 The Crucial Experimental Tests of Cosmic Relativity/11.08.02 The GNSS Mystery Created by the Galilean Propagation of Light.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/11 The Crucial Experimental Tests of Cosmic Relativity/11.09 The Absence of a Relative Time Dilation in Accelerated Frames.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/11 The Crucial Experimental Tests of Cosmic Relativity/11.10 The One-Way Relative Velocity of Light in Rotating Frames.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/11 The Crucial Experimental Tests of Cosmic Relativity/11.10.01 An Early History of the Relevant Ideas.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/11 The Crucial Experimental Tests of Cosmic Relativity/11.10.02 The Experiments by G. Sagnac.md

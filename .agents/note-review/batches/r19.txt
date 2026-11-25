@@ -1,0 +1,73 @@
+02 Physics/02 Thermodynamics and Statistical Mechanics/04 Canonical Ensemble/04.09 Paramagnetism - Spin-½ Model.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/04 Canonical Ensemble/04.09.01 Hamiltonian Function and Partition Function.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/04 Canonical Ensemble/04.09.02 Magnetization and Susceptibility.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/04 Canonical Ensemble/04.09.03 Entropy and Heat Capacity of the Spin System.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/04 Canonical Ensemble/04.10 Generalization - Arbitrary Spin J and the Brillouin Function.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/04 Canonical Ensemble/04.11 Solved Examples.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/04 Canonical Ensemble/04.12 Classical Equipartition Theorem.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/04 Canonical Ensemble/04.13 Canonical Ensemble in Quantum Mechanics.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/04 Canonical Ensemble/04.14 Summary of the Main Results.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/04 Canonical Ensemble/04.99 Exercises.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/04 Canonical Ensemble/99 Exercises/04.01 Independent Quantum Oscillators.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/04 Canonical Ensemble/99 Exercises/04.02 Three-Level System.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/04 Canonical Ensemble/99 Exercises/04.03 Quantum Rotation of a Diatomic Gas.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/04 Canonical Ensemble/99 Exercises/04.04 Ideal-Gas Pressure in Two and Three Dimensions.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/04 Canonical Ensemble/99 Exercises/04.05 Adiabatic Demagnetization.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/04 Canonical Ensemble/Canonical density matrices and imaginary-time kernels.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/04 Canonical Ensemble/Classical canonical gases and spin magnetization.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/05 Grand Canonical Ensemble/05.00 Grand Canonical Ensemble.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/05 Grand Canonical Ensemble/05.01 Chemical Potential.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/05 Grand Canonical Ensemble/05.01.01 Thermodynamic Definition.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/05 Grand Canonical Ensemble/05.01.02 Gibbs–Duhem Relation.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/05 Grand Canonical Ensemble/05.01.03 Physical Interpretation.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/05 Grand Canonical Ensemble/05.01.04 Chemical Potential of the Classical Ideal Gas.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/05 Grand Canonical Ensemble/05.02 Derivation of the Grand Canonical Ensemble.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/05 Grand Canonical Ensemble/05.02.01 System in Contact with a Reservoir.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/05 Grand Canonical Ensemble/05.02.02 Derivation of the Grand Canonical Distribution.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/05 Grand Canonical Ensemble/05.02.03 Derivation from the Maximum-Entropy Principle.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/05 Grand Canonical Ensemble/05.03 Grand Partition Function.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/05 Grand Canonical Ensemble/05.03.01 Definition and Properties.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/05 Grand Canonical Ensemble/05.03.02 Grand Potential.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/05 Grand Canonical Ensemble/05.03.03 Relation between Grand Potential and Pressure.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/05 Grand Canonical Ensemble/05.03.04 Calculation of Thermodynamic Quantities.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/05 Grand Canonical Ensemble/05.04 Particle-Number Fluctuations.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/05 Grand Canonical Ensemble/05.04.01 Calculation of the Variance.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/05 Grand Canonical Ensemble/05.04.02 Relation to Isothermal Compressibility.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/05 Grand Canonical Ensemble/05.04.03 Ideal-Gas Case.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/05 Grand Canonical Ensemble/05.05 Equivalence to Other Ensembles in the Thermodynamic Limit.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/05 Grand Canonical Ensemble/05.05.01 Thermodynamic Limit.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/05 Grand Canonical Ensemble/05.05.02 Proof for the Ideal Gas.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/05 Grand Canonical Ensemble/05.05.03 When Ensembles Are Not Equivalent.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/05 Grand Canonical Ensemble/05.06 Applications of the Grand Canonical Ensemble.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/05 Grand Canonical Ensemble/05.06.01 Classical Ideal Gas in the Grand Canonical Ensemble.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/05 Grand Canonical Ensemble/05.06.02 Surface Adsorption - Langmuir Isotherm.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/05 Grand Canonical Ensemble/05.06.03 Chemical Equilibrium and the Law of Mass Action.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/05 Grand Canonical Ensemble/05.07 Solved Examples.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/05 Grand Canonical Ensemble/05.08 Exercises.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/05 Grand Canonical Ensemble/05.09 Summary.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/05 Grand Canonical Ensemble/99 Exercises/05.01 Grand Potential and Ideal-Gas Entropy.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/05 Grand Canonical Ensemble/99 Exercises/05.02 Langmuir Heat Capacity at Fixed Chemical Potential.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/05 Grand Canonical Ensemble/99 Exercises/05.03 Particle Fluctuations in a Dilute van der Waals Gas.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/05 Grand Canonical Ensemble/99 Exercises/05.04 BET Multilayer Adsorption.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/05 Grand Canonical Ensemble/Grand potentials, exchange symmetry, and occupation numbers.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/06.00 Ideal Quantum Gas.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/06.01 Particle Indistinguishability in Quantum Mechanics.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/06.01.01 The Indistinguishability Problem.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/06.01.02 Consequences for the Wavefunction.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/06.01.03 Symmetrization and Antisymmetrization.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/06.02 Spin–Statistics Theorem - Bosons and Fermions.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/06.03 Occupation Numbers and Fock Space.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/06.03.01 Occupation-Number Representation.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/06.03.02 Fock Space.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/06.03.03 Creation and Annihilation Operators - Notes.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/06.04 Grand Partition Function for Quantum Particles.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/06.04.01 Grand Canonical Ensemble.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/06.04.02 Factorization over Individual Levels.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/06.04.03 Grand Partition Function for Fermions.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/06.04.04 Grand Partition Function for Bosons.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/06.05 Derivation of Mean Occupation Distributions.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/06.06 Fermi–Dirac Distribution.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/06.06.01 Derivation.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/06.06.02 Properties of the Fermi–Dirac Distribution.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/06.07 Bose–Einstein Distribution.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/06.07.01 Derivation.md

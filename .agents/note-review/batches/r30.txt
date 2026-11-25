@@ -1,0 +1,68 @@
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/10 Spin/Unitary rotations of spinors and Pauli matrices.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/11 Addition of Angular Momentum/11.00 Addition of Angular Momentum.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/11 Addition of Angular Momentum/11.01 Statement of the Problem.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/11 Addition of Angular Momentum/11.02 Uncoupled and Coupled Bases.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/11 Addition of Angular Momentum/11.03 Addition Rule.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/11 Addition of Angular Momentum/11.04 Clebsch–Gordan Coefficients.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/11 Addition of Angular Momentum/11.05 Combining Two Spin-½ Systems.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/11 Addition of Angular Momentum/11.06 Spin–Orbit Coupling.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/11 Addition of Angular Momentum/11.07 Spherical Tensor Operators.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/11 Addition of Angular Momentum/11.08 Wigner–Eckart Theorem.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/11 Addition of Angular Momentum/11.09 Electric Dipole Selection Rules.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/11 Addition of Angular Momentum/11.10 Addition of Angular Momentum Exercises.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/11 Addition of Angular Momentum/Coupled angular momentum and Clebsch–Gordan calculations.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/11 Addition of Angular Momentum/Pauli matrices and two-spin calculations.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/12 Hydrogen Atom/12.00 Hydrogen Atom.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/12 Hydrogen Atom/12.01 Hamiltonian and Separation of Center-of-Mass Motion.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/12 Hydrogen Atom/12.02 Separation of Radial and Angular Variables.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/12 Hydrogen Atom/12.03 Solution of the Radial Equation.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/12 Hydrogen Atom/12.04 Wave Functions and Degeneracy.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/12 Hydrogen Atom/12.05 Ground State and Typical Scales.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/12 Hydrogen Atom/12.06 Spectrum and Emission.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/12 Hydrogen Atom/12.07 Fine-Structure and Zeeman Corrections.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/12 Hydrogen Atom/12.08 Hydrogen Atom Exercises.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/12 Hydrogen Atom/Atomic spectra and wave mechanics review problems.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/12 Hydrogen Atom/Hydrogen, spin, and the structure of the periodic table.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/12 Hydrogen Atom/Three-dimensional wells and hydrogen wavefunctions.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/13 Density Matrix and Decoherence/13.00 Density Matrix and Decoherence.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/13 Density Matrix and Decoherence/13.01 Limitations of Pure States.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/13 Density Matrix and Decoherence/13.02 Definition and Properties of the Density Matrix.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/13 Density Matrix and Decoherence/13.03 Expectation Values and Purity.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/13 Density Matrix and Decoherence/13.04 Composite Systems and Partial Trace.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/13 Density Matrix and Decoherence/13.05 Von Neumann Entropy.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/13 Density Matrix and Decoherence/13.06 Liouville–von Neumann Equation.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/13 Density Matrix and Decoherence/13.07 Decoherence.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/13 Density Matrix and Decoherence/13.08 Lindblad Equation.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/13 Density Matrix and Decoherence/13.09 Density Matrix and Decoherence Exercises.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/14 Many-Particle Systems and Identical Particles/14.00 Many-Particle Systems and Identical Particles.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/14 Many-Particle Systems and Identical Particles/14.01 Tensor Product.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/14 Many-Particle Systems and Identical Particles/14.02 Entanglement and Bell States.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/14 Many-Particle Systems and Identical Particles/14.03 Identical Particles.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/14 Many-Particle Systems and Identical Particles/14.04 Pauli Exclusion Principle.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/14 Many-Particle Systems and Identical Particles/14.05 Statistics of Two Bosons and Two Fermions in a Potential Well.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/14 Many-Particle Systems and Identical Particles/14.06 Helium Atom.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/14 Many-Particle Systems and Identical Particles/14.07 Notes on the Periodic Structure of the Elements.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/14 Many-Particle Systems and Identical Particles/14.08 Many-Particle Systems and Identical Particles Exercises.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/15 Entanglement, EPR, and Quantum Information/15.00 Entanglement, EPR, and Quantum Information.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/15 Entanglement, EPR, and Quantum Information/15.01 Separable and Entangled States.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/15 Entanglement, EPR, and Quantum Information/15.02 Bell States.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/15 Entanglement, EPR, and Quantum Information/15.03 EPR Paradox.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/15 Entanglement, EPR, and Quantum Information/15.04 Bell and CHSH Inequalities.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/15 Entanglement, EPR, and Quantum Information/15.05 Experimental Tests.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/15 Entanglement, EPR, and Quantum Information/15.06 No-Cloning Theorem.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/15 Entanglement, EPR, and Quantum Information/15.07 Qubits and Quantum Gates.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/15 Entanglement, EPR, and Quantum Information/15.08 Quantum Teleportation.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/15 Entanglement, EPR, and Quantum Information/15.09 Superdense Coding.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/15 Entanglement, EPR, and Quantum Information/15.10 Entanglement, EPR, and Quantum Information Exercises.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/16 Perturbation Theory/16.00 Perturbation Theory.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/16 Perturbation Theory/16.01 Time-Independent Perturbation Theory – Nondegenerate Case.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/16 Perturbation Theory/16.02 Harmonic Oscillator with a Cubic Perturbation.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/16 Perturbation Theory/16.03 Degenerate Case.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/16 Perturbation Theory/16.04 Time-Dependent Perturbation Theory.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/16 Perturbation Theory/16.05 Harmonic Perturbation and Fermi's Golden Rule.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/16 Perturbation Theory/16.06 Radiation Absorption by an Atom.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/16 Perturbation Theory/16.07 Two-Level Dynamics and Rabi Oscillations.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/16 Perturbation Theory/16.08 Perturbation Theory Exercises.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/16 Perturbation Theory/Degenerate perturbation theory and oscillator transitions.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/16 Perturbation Theory/Einstein coefficients and electric dipole transition rates.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/16 Perturbation Theory/Heisenberg and interaction pictures in perturbation calculations.md

@@ -1,0 +1,25 @@
+01 Mathematics/06 Probability and Statistics/01 Counting and Conditional Probability/Counting arrangements and selections.md
+01 Mathematics/06 Probability and Statistics/01 Counting and Conditional Probability/Counting, conditional probability, and Bayes problems.md
+01 Mathematics/06 Probability and Statistics/01 Counting and Conditional Probability/Events and conditional probability.md
+01 Mathematics/06 Probability and Statistics/01 Counting and Conditional Probability/Probability theory and mathematical statistics - Catalogue Guide.md
+01 Mathematics/06 Probability and Statistics/02 Random Variables and Distributions/Continuous probability models.md
+01 Mathematics/06 Probability and Statistics/02 Random Variables and Distributions/Discrete and continuous probability distributions.md
+01 Mathematics/06 Probability and Statistics/02 Random Variables and Distributions/Discrete probability models.md
+01 Mathematics/06 Probability and Statistics/02 Random Variables and Distributions/Gaussian bell shapes.md
+01 Mathematics/06 Probability and Statistics/02 Random Variables and Distributions/Moments and transformations of random variables.md
+01 Mathematics/06 Probability and Statistics/02 Random Variables and Distributions/Random variables and joint distributions.md
+01 Mathematics/06 Probability and Statistics/03 Sampling, Estimation, and Inference/Bootstrap intervals and likelihood examples.md
+01 Mathematics/06 Probability and Statistics/03 Sampling, Estimation, and Inference/Confidence intervals and hypothesis tests.md
+01 Mathematics/06 Probability and Statistics/03 Sampling, Estimation, and Inference/Joint distributions, covariance, and sampling.md
+01 Mathematics/06 Probability and Statistics/03 Sampling, Estimation, and Inference/Large numbers and normal approximation problems.md
+01 Mathematics/06 Probability and Statistics/03 Sampling, Estimation, and Inference/Likelihood and validation.md
+01 Mathematics/06 Probability and Statistics/03 Sampling, Estimation, and Inference/Measurement uncertainty.md
+01 Mathematics/06 Probability and Statistics/03 Sampling, Estimation, and Inference/Propagation and uncertainty budgets.md
+01 Mathematics/06 Probability and Statistics/03 Sampling, Estimation, and Inference/Samples and descriptive statistics.md
+01 Mathematics/06 Probability and Statistics/03 Sampling, Estimation, and Inference/Sampling distributions.md
+01 Mathematics/06 Probability and Statistics/04 Regression, Simulation, and Stochastic Models/Correlation and regression models.md
+01 Mathematics/06 Probability and Statistics/04 Regression, Simulation, and Stochastic Models/Large numbers and stochastic processes.md
+01 Mathematics/06 Probability and Statistics/04 Regression, Simulation, and Stochastic Models/Likelihood estimation and Monte Carlo modeling problems.md
+01 Mathematics/06 Probability and Statistics/04 Regression, Simulation, and Stochastic Models/Markov models and population dynamics.md
+01 Mathematics/06 Probability and Statistics/04 Regression, Simulation, and Stochastic Models/Monte Carlo simulation.md
+01 Mathematics/06 Probability and Statistics/04 Regression, Simulation, and Stochastic Models/Regression, validation, and goodness of fit.md

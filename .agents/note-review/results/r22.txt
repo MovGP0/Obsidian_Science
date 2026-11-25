@@ -1,0 +1,462 @@
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.10 Summary and Connections.md
+priority: low
+graph: no
+manim: no
+summary: Accurate chapter summary; the Lennard-Jones reduced Boyle temperature (about 3.42) and the inversion temperature of twice the Boyle temperature check out.
+- [Links] Under each numbered item, link the matching section note (for example [[09.02.06 Maxwell Construction]], [[09.04.03 Boyle Temperature]], [[09.07.04 Inversion Temperature]]) so the summary can also be used to navigate.
+- [Simplify] In the "Test the distinctions at the Boyle temperature" paragraph, add the one-line van der Waals result $\mu_{JT}(T_B)=b/c_P>0$ so that the claim "the throttling coefficient need not vanish" has a concrete example.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.99 Exercises.md
+priority: low
+graph: no
+manim: no
+summary: Clear exercise hub with a useful suggested order; no change needed.
+- [Structure] No change needed; you could add a one-line topic tag after each link (for example "9.2: Mayer integral, Boyle temperature").
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/99 Exercises/09.01 Critical Compressibility.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct derivation (I verified $\kappa_T=4b/[3k_B(T-T_c)]=1/(6P_c\tau)$ above and $1/(12P_c|\tau|)$ below), but the amplitude comparison is given in words, not in equations.
+- [Simplify] In "Approach from below", the paragraph "It becomes the inverse of six times critical pressure times..." should show the equations $\kappa_T^{+}=1/(6P_c\tau)$ and $\kappa_T^{-}=1/(12P_c|\tau|)$, so the amplitude ratio $2$ is visible at a glance.
+- [Simplify] Show the intermediate step $(\partial p/\partial w)_t\approx-6\tau-\tfrac92(-4\tau)=12\tau$ explicitly, and state that the $18\tau w$ term is of order $|\tau|^{3/2}$ and is dropped.
+- [Graph] On log-log axes, plot $P_c\kappa_T$ against $|\tau|$ for $10^{-4}\le|\tau|\le10^{-1}$. Show the two branches $1/(6|\tau|)$ (above) and $1/(12|\tau|)$ (below): they are parallel lines with slope $-1$ and a vertical offset of $\ln 2$.
+- [Intuition] Add one sentence connecting the result to the flat critical isotherm: $(\partial P/\partial v)_T\to0$ is a horizontal tangent, so a small pressure change gives a large volume change.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/99 Exercises/09.02 Square-Well Virial Coefficient.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and well structured; I verified $T_B=\varepsilon/[k_B\ln(\lambda^3/(\lambda^3-1))]\approx2.84578\,\varepsilon/k_B$ for $\lambda=1.5$.
+- [Graph] Plot the reduced coefficient $B_2/(2\pi\sigma^3/3)=1-(\lambda^3-1)(e^{1/T^*}-1)$ against $T^*=k_BT/\varepsilon$ on $0.5\le T^*\le10$ for $\lambda=1.3,1.5,1.8$. Mark the zero crossings to show that a wider well raises the Boyle temperature, and draw the hard-sphere asymptote at 1.
+- [Simplify] The paragraph about removing the attraction ("The limit of the displayed root toward zero should be read in this sense...") is hard to follow. Replace it with: as $\varepsilon\to0$ at fixed $\lambda$, $T_B\to0$ and $B_2\to2\pi\sigma^3/3>0$ at every positive temperature.
+- [Structure] The table entry for $\sigma$ says "Hard-sphere diameter or Lennard–Jones zero-crossing distance"; in this note it is only the hard-core diameter, so restrict the description.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/99 Exercises/09.03 Coexistence-Curve Slope.md
+priority: low
+graph: yes
+manim: no
+summary: Correct; the slope $dp_0/dt=4$ and $dP_0/dT=k_B/(2b)$ verify, and the order-counting argument is sound.
+- [Graph] Plot the numerical Maxwell coexistence pressure $p_0(t)$ for $0.80\le t\le1$ together with the tangent line $1+4(t-1)$, so the reader sees how far the leading-order slope holds.
+- [Simplify] In "Apply equal pressure and equal area", say explicitly why the area vanishes: the odd cubic $-6\tau w-\tfrac32 w^3$ is integrated over the symmetric interval $[-2\sqrt{-\tau},2\sqrt{-\tau}]$.
+- [Example] Add a short numerical example (for example $t=0.95$: leading-order $w_{g,\ell}\approx\pm0.447$ and $p_0\approx0.80$) to make the square-root scaling concrete.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/99 Exercises/09.04 Latent Heat near the Critical Point.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and complete; the leading form $L\simeq6Nk_BT_c\sqrt{\delta}$ agrees with the logarithmic entropy formula ($\ln[(2+6\sqrt\delta)/(2-6\sqrt\delta)]\approx6\sqrt\delta$).
+- [Graph] Plot $L/(Nk_BT_c)$ against $T/T_c$ on $[0.5,1]$, computed from the exact formula with numerically found Maxwell volumes, together with the asymptote $6\sqrt{1-T/T_c}$.
+- [Simplify] In the "Check" paragraph, show the expansion $\ln\frac{V_g-Nb}{V_\ell-Nb}\approx6\sqrt\delta$ explicitly. It then reproduces the prefactor 6 independently, not only the limit zero.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/99 Exercises/09.05 Nitrogen Pressure in Three Models.md
+priority: low
+graph: no
+manim: no
+summary: All numbers verify (414194.7 Pa, 413096.0 Pa, 413078.8 Pa, a difference of about 17 Pa, $nb/V\approx0.00643$); the discussion is clear but somewhat repetitive.
+- [Simplify] Merge the last three interpretation paragraphs ("The small difference...", "The numerical digits...", "This is a comparison of models...") into one short paragraph. They make the same point three times.
+- [Example] Give the two corrections separately in numbers (excluded volume about $+2.7\times10^{3}$ Pa and attraction about $-3.8\times10^{3}$ Pa relative to the ideal value), so the statement "the attraction correction is slightly larger" is quantified.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/99 Exercises/09.06 Joule–Thomson Coefficient from the Virial Expansion.md
+priority: low
+graph: yes
+manim: no
+summary: Correct derivation; $T_{inv}=2a/(k_Bb)=2T_B=27T_c/4$ verifies, but it cites source equation numbers that the reader cannot follow.
+- [Links] "This is Eq. (9.15)" and "Eq. (9.13)" refer to source numbering; replace them with links to [[09.07.04 Inversion Temperature]] and [[09.04.02 Connection to van der Waals]] (or the note that holds $B_2=b-a/k_BT$).
+- [Graph] Plot $c_P\mu_{JT}/b=2T_B/T-1$ against $T/T_B$ on $[0.3,4]$. Mark the Boyle temperature (value $+1$) and the inversion temperature at $T/T_B=2$, so the cooling and heating regions are visible.
+- [Simplify] The paragraphs "Use the Boyle temperature as a transfer test" and "The finite zero-pressure limit" partly repeat "Interpret the sign"; shorten them into one paragraph.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/10 Phase Transitions/10.00 Phase Transitions.md
+priority: low
+graph: no
+manim: no
+summary: Clear chapter hub with a useful reading guide.
+- [Links] The links are correct; [[10.12 Summary]] also matches a QFT note with the same name, so consider a path-qualified link for robustness.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/10 Phase Transitions/10.01 Phenomenology of Phase Transitions.md
+priority: low
+graph: no
+manim: no
+summary: Short and clear section hub; no change needed.
+- [Structure] No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/10 Phase Transitions/10.01.01 Representative Examples.md
+priority: low
+graph: no
+manim: no
+summary: Values are correct (water $T_c=647.1$ K, $P_c=220.6$ bar, Curie temperatures, $L\approx2257$ J/g); the closing paragraphs read as disclaimers more than explanation.
+- [Simplify] Shorten the last two paragraphs ("The liquid–gas example gives a direct energy check..." and "For the magnetic example...") to one sentence each. The domain-cancellation point is worth keeping; the "no measured transition curve is supplied here" sentence is not.
+- [Structure] Add a compact comparison table (system, order parameter, control variable, transition order, typical $T_c$) to summarize the four examples.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/10 Phase Transitions/10.01.02 General Properties.md
+priority: low
+graph: no
+manim: no
+summary: Correct and balanced, with an appropriate caveat note.
+- [Example] For "Universality", give one concrete example: the liquid–gas critical point of CO₂ and a uniaxial magnet share $\beta\approx0.33$ despite completely different microscopic physics.
+- [Links] Link "Universality" to [[10.07.03 Universality and Universality Classes]] and "correlation length" to [[10.06.03 Correlation Function]].
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/10 Phase Transitions/10.02 Ehrenfest Classification.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub with a correct definition (Ehrenfest 1933).
+- [Structure] Remove the double blank line after Definition 10.1; otherwise no change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/10 Phase Transitions/10.02.01 First-Order Phase Transitions.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct ($\Delta v\approx RT/(PM)\approx1.70$ L/g verifies), but the main idea, two crossing Gibbs-energy branches, is only described in words.
+- [Graph] Plot two schematic branches $G_1(T)$ and $G_2(T)$ at fixed $P$, crossing at $T_0$ with different slopes, and below them $S=-\partial G/\partial T$ of the stable branch, which jumps by $\Delta S=L/T_0$. Show the metastable continuations dashed to explain hysteresis.
+- [Structure] In Example 10.1, $\Delta s$ is written without the `\thermal{}` macro, unlike all other entropies in the note; wrap it for consistency.
+- [Simplify] The last paragraph ("The symbol for latent heat has two normalizations...") repeats the NOTE callout; delete it or fold it into the callout.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/10 Phase Transitions/10.02.02 Continuous Transitions - Second Order.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct second-derivative formulas and a good remark on terminology; it needs a visual contrast of the possible singular forms.
+- [Graph] Plot three schematic $C(T)$ curves near $T_c$: a finite jump (mean field, $\alpha=0$), a logarithmic divergence (2D Ising, $-\ln|t|$), and a finite cusp ($\alpha=-0.013$, helium-4), all on $-0.2\le t\le0.2$.
+- [Simplify] Delete or shorten the last paragraph ("To distinguish a finite jump from a cusp... No such dataset is included here"). It adds no physics.
+- [Intuition] Add a sentence that at a continuous transition the entropy curve $S(T)$ is continuous but has a kink or infinite slope, mirroring the jump shown in the first-order note.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/10 Phase Transitions/10.02.03 Limits of the Ehrenfest Classification.md
+priority: low
+graph: no
+manim: no
+summary: Correct and concise, though abstract.
+- [Example] Make limit 1 concrete: the 2D Ising heat capacity diverges logarithmically, so no derivative of finite order simply "jumps"; and the BKT transition has all derivatives finite (essential singularity), so it has no finite Ehrenfest order.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/10 Phase Transitions/10.03 Clausius–Clapeyron Equation.md
+priority: low
+graph: no
+manim: no
+summary: Clear section hub; no change needed.
+- [Structure] No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/10 Phase Transitions/10.03.01 Derivation.md
+priority: low
+graph: no
+manim: no
+summary: Correct, careful derivation with consistent molar quantities and a clear sign convention.
+- [Intuition] Add one sentence of geometric picture: in the $(T,P)$ plane the two surfaces $\mu_\alpha(T,P)$ and $\mu_\beta(T,P)$ intersect along a curve, and the Clausius–Clapeyron slope is the direction of that intersection.
+- [Example] Add a one-line numeric check for boiling water ($L=40.7$ kJ/mol, $T=373$ K, $\Delta v\approx30.6$ L/mol gives $dP/dT\approx3.6$ kPa/K) so the formula has a concrete magnitude.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/10 Phase Transitions/10.03.02 Application - Vaporization Curve.md
+priority: low
+graph: yes
+manim: no
+summary: Correct derivation of the integrated Clausius–Clapeyron law; it needs the plot it describes.
+- [Graph] Plot $\ln(P/P_0)$ against $1/T$ for water with $L=40.7$ kJ/mol and reference $(373.15\,\text{K},101.325\,\text{kPa})$ over 280–450 K, and optionally overlay tabulated vapour pressures to show the slight curvature from a temperature-dependent $L$.
+- [Example] Add a worked example: predict the boiling point at 70 kPa (about 3000 m altitude), which gives about 363 K.
+- [Simplify] Shorten the final "proposed test" paragraph and remove "No vapor-pressure data or fitted slope is provided here."
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/10 Phase Transitions/10.03.03 Application - Melting Curve.md
+priority: low
+graph: no
+manim: no
+summary: Correct; $\Delta v=-1.63\times10^{-6}$ m³/mol and $dP/dT\approx-1.35\times10^7$ Pa/K $\approx-133$ atm/K verify.
+- [Simplify] The last two paragraphs repeat the dimensional and sign checks already implied by the example; merge them into two sentences.
+- [Intuition] Give the reciprocal form $dT/dP\approx-7.5\,\text{mK/atm}$. It shows directly how small the pressure-melting effect is, which supports the ice-skating remark.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/10 Phase Transitions/10.03.04 Clausius–Clapeyron Relation for Magnetic Fields.md
+priority: medium
+graph: yes
+manim: no
+summary: The relation and its sign (with $G=U-TS-VHM$) verify, but the derivation is only described, not shown.
+- [Simplify] Show the two-line derivation: $dG=-S\,dT-VM\,dH$, then $dG_{SC}=dG_N$ along $H_c(T)$, which gives $dH_c/dT=-(S_{SC}-S_N)/[V(M_{SC}-M_N)]$. This replaces the verbal "the conjugate magnetic work term... has a minus sign".
+- [Graph] Plot $H_c(T)/H_c(0)=1-(T/T_c)^2$ and the normalized latent heat $L/(VH_c(0)^2/8\pi)=4x^2(1-x^2)$ against $x=T/T_c$ on $[0,1]$, showing the maximum at $x=1/\sqrt2$.
+- [Structure] Merge the two unit callouts ("Unit and sign convention" and "Entropy-unit correction") into one; also add the SI form $L=-\mu_0VTH_c\,dH_c/dT$ here, as the exercise note does.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/10 Phase Transitions/10.04 Phase Diagram.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub with a useful P–T versus P–V cross-check.
+- [Structure] No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/10 Phase Transitions/10.04.01 Triple Point and Critical Point.md
+priority: low
+graph: no
+manim: no
+summary: Clear definitions and a useful correction to the source about the supercritical region; the triple-point pressure is an outdated value.
+- [Correctness] $P_t=611.73\,\text{Pa}$ is an older value; the current IAPWS value for the triple point of water is $P_t=611.657\,\text{Pa}$ (with $T_t=273.16$ K).
+- [Example] Add the water critical point ($T_c=647.1$ K, $P_c=22.06$ MPa, $\rho_c\approx322$ kg/m³) next to the triple point, so both special points have numbers in this note.
+- [Simplify] The last paragraph repeats the correction callout and the NIST link context; shorten it to the link alone.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/10 Phase Transitions/10.04.02 Gibbs Phase Rule.md
+priority: low
+graph: no
+manim: no
+summary: Correct theorem and counting proof ($\varphi(C+1)-(\varphi-1)(C+2)=C-\varphi+2$); clear.
+- [Example] Add one two-component example, for example a binary liquid in equilibrium with its vapour ($C=2$, $\varphi=2$, $\mathcal F=2$), to show where the mole fraction enters the count.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/10 Phase Transitions/10.04.03 Phase Diagram in the P–T Plane.md
+priority: low
+graph: no
+manim: no
+summary: Good schematic figure and correct topology; the text is clear.
+- [Graph] Optionally add a dashed alternative melting line with negative slope (or a second panel) to show the water case beside the generic one, as the text discusses both.
+- [Simplify] The "Critical-point condition" callout repeats the correction in [[10.04.01 Triple Point and Critical Point]]; replace it with a link.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/10 Phase Transitions/10.04.04 P–V Diagram with Isotherms.md
+priority: low
+graph: no
+manim: yes
+summary: Strong note with a correctly computed van der Waals figure (the plateau at $p\approx0.5045$ between $v\approx0.5534$ and $3.128$ verifies against the plotted coexistence curve).
+- [Manim] Animate the reduced isotherm as $t$ decreases from 1.15 to 0.85. Show the van der Waals loop forming below $t=1$, the Maxwell plateau sliding to the equal-area position, and the plateau endpoints tracing the dashed coexistence dome.
+- [Structure] The reduced variables $p,v,t$ in the equation are written without semantic macros, while $P,V,T$ are coloured; colour them consistently (for example `\mechanical{p}`).
+- [Intuition] Add the lever rule, gas fraction $x_g=(v-v_L)/(v_G-v_L)$, to make "the gas fraction increases continuously from zero to one" quantitative.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/10 Phase Transitions/10.05 Order Parameter and Spontaneous Symmetry Breaking.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub; no change needed.
+- [Structure] No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/10 Phase Transitions/10.05.01 Definition of the Order Parameter.md
+priority: low
+graph: no
+manim: no
+summary: Correct and careful definition with a good list of order-parameter types.
+- [Structure] Replace the bullet list with a small table (system, order parameter, number of components, symmetry group); it connects directly to the universality classes in [[10.07.03 Universality and Universality Classes]].
+- [Simplify] Shorten the final paragraph on the liquid–gas case: one sentence that the density difference has no exact microscopic $\mathbb Z_2$ (only an emergent one near $T_c$) is enough.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/10 Phase Transitions/10.05.02 Examples of Order Parameters.md
+priority: low
+graph: no
+manim: no
+summary: Correct, with appropriate caveats on the schematic BCS formula and gauge symmetry.
+- [Structure] The liquid–gas order parameter $\phi$ is written without the `\mechanical{}` macro used for $\phi$ in the neighbouring notes; make it consistent.
+- [Simplify] Move the paragraph "For ferromagnetic positive exchange energy..." up into the Ising section, where it belongs, and delete the duplicated unit remarks in the final paragraph.
+- [Links] Link the Ising Hamiltonian to [[11.01.01 Hamiltonian and Spin Variables]] and note that chapter 11 writes the spins as $\sigma_i$ rather than $s_i$.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/10 Phase Transitions/10.05.03 Spontaneous Symmetry Breaking.md
+priority: medium
+graph: yes
+manim: yes
+summary: Correct, and the order-of-limits paragraph is good, but the double-well picture that drives the argument is missing.
+- [Graph] Plot $F(\phi)=a\phi^2+b\phi^4-h\phi$ with $a<0$, $b>0$ for $h=0$ and a small $h>0$, showing that the tilt makes one minimum the global one.
+- [Manim] Animate the order of limits: a ball in the tilted double well settles in the right minimum; then $h\to0$ while the barrier (which grows with $N$) stays high, so the ball stays there. Contrast this with a small-$N$ case where it hops between the wells.
+- [Example] State the order of limits as a formula: $m_s=\lim_{h\to0^+}\lim_{N\to\infty}m(h,N)\ne0$, whereas $\lim_{N\to\infty}\lim_{h\to0}m=0$.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/10 Phase Transitions/10.05.04 Temperature Dependence of the Order Parameter.md
+priority: low
+graph: no
+manim: no
+summary: Clear, with a good figure and a correct caption.
+- [Simplify] Shorten the final two paragraphs ("The power law is an asymptotic statement..." and "As a reconstruction check...") into one; they mostly restate the caption.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/10 Phase Transitions/10.06 Critical Point and Fluctuations.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub; no change needed.
+- [Structure] No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/10 Phase Transitions/10.06.01 Critical Opalescence.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct physics, but the key quantitative link, the Ornstein–Zernike form, is missing, and the normalization caveats are heavy.
+- [Intuition] Add the Ornstein–Zernike form $S(q)\propto\kappa_T/(1+q^2\xi^2)$. It explains both the strong forward scattering ($q\xi\ll1$) and why the turbidity grows as $\xi$ approaches the wavelength of light.
+- [Graph] Plot $S(q)/S_0$ against $q\xi_0$ on log-log axes for $\xi/\xi_0=1,10,100$ using the Ornstein–Zernike form with $S(0)\propto\xi^{2}$, showing the growing small-angle peak.
+- [Simplify] Condense the normalization paragraph and the finite-sample paragraph to two sentences; they distract from the main idea.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/10 Phase Transitions/10.06.02 Divergence of Response Functions.md
+priority: low
+graph: yes
+manim: no
+summary: Correct with a useful caveat; it lacks the fluctuation–response link that the hub note promises.
+- [Intuition] Add the fluctuation–response relation $\kappa_T=V\langle(\Delta N)^2\rangle/(k_BT\langle N\rangle^2)$ (or $\chi\propto\langle M^2\rangle-\langle M\rangle^2$), which explains why a large response means large fluctuations.
+- [Graph] Plot $\kappa_T$ against $t$ on $-0.1\le t\le0.1$ for $\gamma=1$ (mean field) and $\gamma=1.24$ (3D Ising), with different amplitudes on the two sides.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/10 Phase Transitions/10.06.03 Correlation Function.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct definitions and scaling forms; a plot would make the crossover from power-law to exponential decay much clearer.
+- [Graph] Plot $G(r)=e^{-r/\xi}/r^{d-2+\eta}$ ($d=3$, $\eta=0.036$) on log-log axes for $\xi=5,20,\infty$ over $1\le r\le200$, showing the common power-law part and the cutoff at $r\approx\xi$.
+- [Simplify] The last paragraph on units and finite samples repeats [[10.07.01 Definition of Critical Exponents]]; shorten it.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/10 Phase Transitions/10.06.04 Specific Heat near the Lambda Transition.md
+priority: high
+graph: yes
+manim: no
+summary: The text is correct, but the figure shows the wrong asymmetry for helium-4, is close to unreadable for $\alpha=-0.013$, and its 1001-point curves inflate the note to 85 kB.
+- [Correctness] Fig. 10.4 puts the $T>T_\lambda$ branch above the $T<T_\lambda$ branch at equal $|t|$ ($A_->A_+$ in $C=C_c-A_\pm|t|^{0.013}$). For helium-4 the measured heat capacity is larger below $T_\lambda$ (Lipa et al.: $A^+/A^-\approx1.05$ in $C=B+(A^\pm/\alpha)|t|^{-\alpha}$, with $\alpha<0$). Swap the amplitudes so the figure shows the lambda shape.
+- [Graph] With exponent 0.013, the linear-$T$ plot shows a nearly vertical drop within $10^{-14}$ of $T_\lambda$. Replace it with (or add) a plot of $C$ against $\log_{10}|t|$ for $10^{-9}\le|t|\le10^{-2}$, where the two branches appear as gently curving lines approaching the finite value $C_c$. This is how the orbital data are usually shown.
+- [Structure] Replace the two embedded 1001-point `curve` elements with `functiongraph` expressions (for example `f:3-1.2*abs(x-1)^0.013`). This cuts the note from about 85 kB to a few kB.
+- [Simplify] The note uses both $T_c$ (in $t$) and $T_\lambda$ (in the figure) for the same temperature; use $T_\lambda$ throughout, or state $T_c\equiv T_\lambda$ once.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/10 Phase Transitions/10.07 Critical Exponents.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub; no change needed.
+- [Structure] No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/10 Phase Transitions/10.07.01 Definition of Critical Exponents.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and complete definitions with good path warnings.
+- [Graph] Add one log-log plot of $|m|$ against $-t$ for $\beta=1/2$ (mean field), $0.326$ (3D Ising) and $1/8$ (2D Ising), to show how the exponent changes the shape near $T_c$.
+- [Structure] Add a small table with one row per exponent (observable, path, mean-field value, 3D Ising value) beside the aligned equations.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/10 Phase Transitions/10.07.02 Scaling Relations.md
+priority: medium
+graph: no
+manim: no
+summary: Correct relations and a clear Fisher derivation, but one historical date is wrong and the Widom and Josephson relations are stated without motivation.
+- [Correctness] "Fisher relation (1969)": Fisher derived $\gamma=\nu(2-\eta)$ in 1964 (J. Math. Phys. 5, 944); correct the year.
+- [Intuition] Add the Widom scaling hypothesis $f_s(t,h)=|t|^{2-\alpha}\Phi(h/|t|^{\Delta})$ in one line. Rushbrooke and Widom then follow by differentiation, which explains why they hold together.
+- [Example] Add a small check table that inserts the 3D Ising values ($\alpha=0.110$, $\beta=0.326$, $\gamma=1.237$, $\nu=0.630$, $\eta=0.036$, $d=3$) into all four relations, to show agreement within rounding.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/10 Phase Transitions/10.07.03 Universality and Universality Classes.md
+priority: medium
+graph: no
+manim: no
+summary: Good structure and evidence-status discussion, but some theory rows of Table 10.1 are outdated.
+- [Correctness] The Heisenberg row ($\alpha=-0.122$, $\nu=0.707$) uses old estimates; current values are $\nu\approx0.711$, $\alpha\approx-0.134$, $\beta\approx0.369$, $\gamma\approx1.396$, $\delta\approx4.78$, $\eta\approx0.038$. For 3D XY, theory gives $\alpha\approx-0.015$ and $\delta\approx4.78$ (the $-0.013$ is the helium-4 experimental value). Update the rows or mark them as dated.
+- [Simplify] The paragraphs "Read the table as..." and "As a check..." can be merged; keep the evidence-status point and remove the repetition about rounding.
+- [Intuition] Add one sentence explaining why the liquid–gas point is in the Ising class (lattice-gas mapping: occupied or empty sites correspond to spin up or down), not only stating that it is.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/10 Phase Transitions/10.08 Landau Theory of Phase Transitions.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub; no change needed.
+- [Structure] Remove the double blank line after the first paragraph; otherwise no change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/10 Phase Transitions/10.08.01 Landau Free Energy.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct and careful, but the note has no picture of the free-energy landscape that the whole theory relies on.
+- [Graph] Plot $F-F_0=a\phi^2+b\phi^4$ ($b=1$) for $a=+1,0,-1$ on $-1.5\le\phi\le1.5$, and a second panel with $b=-1$, $c=1$ for $a=0.5,0.25,0$ to preview the first-order case.
+- [Simplify] The last two paragraphs repeat the symmetry and stability arguments of the main text; compress them to two sentences.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/10 Phase Transitions/10.08.02 Second-Order Transition.md
+priority: medium
+graph: yes
+manim: yes
+summary: All results verify ($F_{eq}=-a_0^2(T-T_c)^2/4b$, $\Delta C=T_ca_0^2/2b$, curvature $-4a$ below $T_c$); the closing paragraphs state formulas in words.
+- [Simplify] Replace the verbal paragraphs ("substituting its defining squared magnitude into the curvature gives minus four times the quadratic coefficient...") with the equations $F''(\phi_{eq})=-4a$ and $\chi^{-1}=2a$ (above), $-4a$ (below).
+- [Graph] Plot three stacked panels against $T/T_c$ on $[0.5,1.5]$: $\phi_{eq}$, $F_{eq}-F_0$, and $C-C_0$ showing the jump $\Delta C$.
+- [Manim] Animate $F(\phi)$ as $T$ sweeps from $1.3T_c$ to $0.7T_c$: the single well flattens at $T_c$ and splits into two, and a marker follows the minimum continuously.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/10 Phase Transitions/10.08.03 First-Order Transition in Landau Theory.md
+priority: medium
+graph: yes
+manim: yes
+summary: All conditions verify ($a_{sp}=b^2/3c$, $a_{coex}=b^2/4c$, $\phi_0^2=-b/2c$, curvature $2b^2/c$), but the key ordering is again written in words.
+- [Simplify] Replace "The exact ordering of quadratic coefficients is the squared quartic coefficient divided by three times..." with $b^2/(3c)>b^2/(4c)>0$ and the corresponding $T_{sp,upper}>T_{coex}>T_{sp,lower}$.
+- [Graph] Plot $F(\phi)$ for $b=-1$, $c=1$ at $a=1/3$ (inflection appears), $a=1/4$ (three equal minima), $a=0.1$, and $a=0$ (origin loses stability), on $-1.2\le\phi\le1.2$.
+- [Manim] Animate decreasing $a$ through these values, showing side minima appearing, becoming degenerate with the origin, and the equilibrium state jumping from $\phi=0$ to $\pm\phi_0$. Optionally show a hysteresis loop on heating.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/10 Phase Transitions/10.08.04 Critical Mean-Field Exponents.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and compact; the amplitude ratio 2 and the Rushbrooke and Widom checks verify.
+- [Graph] Plot $2a_0T_c\chi$ against $t$ on $[-0.2,0.2]$ showing the branches $1/t$ and $1/(2|t|)$, which makes the amplitude ratio visible.
+- [Simplify] The last paragraph repeats the critical-isotherm derivation; remove it or cut it to one sentence.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/10 Phase Transitions/10.09 van der Waals Model and the Ferromagnet Analogy.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub that states the analogy well.
+- [Structure] Add a two-column dictionary table (fluid and magnet: $\rho_L-\rho_G$ and $m$, $P-P_c(T)$ and $h$, $\kappa_T$ and $\chi$, coexistence line and $h=0$ for $T<T_c$) to make the analogy explicit.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/10 Phase Transitions/10.09.01 van der Waals Equation.md
+priority: low
+graph: no
+manim: no
+summary: Correct critical constants and reduced equation.
+- [Example] Add the critical compressibility factor $Z_c=P_cv_c/(RT_c)=3/8$ and compare it with real fluids ($\approx0.23$–$0.29$). This is the simplest quantitative test of the model.
+- [Simplify] The final two paragraphs restate unit checks and the Maxwell caveat already given elsewhere; shorten them.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/10 Phase Transitions/10.09.02 Law of Corresponding States.md
+priority: low
+graph: yes
+manim: no
+summary: Clear distinction between corresponding states and universality.
+- [Graph] Plot the reduced coexistence curve $T/T_c$ against $\rho/\rho_c$ for the van der Waals model, with Guggenheim's empirical noble-gas fit $\rho_{L,G}/\rho_c=1+\tfrac34(1-T/T_c)\pm\tfrac74(1-T/T_c)^{1/3}$ overlaid. It shows both the data collapse and the non-mean-field exponent.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/10 Phase Transitions/10.09.03 Critical van der Waals Exponents.md
+priority: low
+graph: yes
+manim: no
+summary: Correct expansion and exponents; the coexistence width $2\sqrt{-t}$ verifies.
+- [Graph] Plot the exact van der Waals coexistence volumes from the Maxwell construction against the leading form $1\pm2\sqrt{-t}$ for $-0.2\le t\le0$, to show where the asymptotic result holds.
+- [Simplify] The last two paragraphs repeat the order-counting argument in words; replace them with the one line: $t\epsilon\sim\epsilon^3\sim|t|^{3/2}$, while $t\epsilon^2,\epsilon^4\sim t^2$.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/10 Phase Transitions/10.09.04 Maxwell Construction.md
+priority: low
+graph: yes
+manim: yes
+summary: Correct, and the free-energy explanation of the equal-area rule is good.
+- [Graph] Plot the $t=0.9$ reduced isotherm with the two equal areas shaded between the loop and the plateau, and the spinodal points marked.
+- [Manim] Animate a horizontal line sliding in pressure while the two enclosed areas are computed live, stopping where they are equal. An inset can show $\mu(P)$ with the two branches crossing at the same pressure.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/10 Phase Transitions/10.10 Worked Problems.md
+priority: low
+graph: no
+manim: no
+summary: Useful problem hub with good guidance; no change needed.
+- [Structure] No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/10 Phase Transitions/10.11 Notes on the Renormalization Group.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub; no change needed.
+- [Structure] No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/10 Phase Transitions/10.11.01 Basic Idea.md
+priority: medium
+graph: no
+manim: yes
+summary: Correct but abstract; a concrete coarse-graining example would make the idea much easier to grasp.
+- [Manim] Animate majority-rule block-spin coarse graining ($3\times3$ blocks) on Ising configurations at $T<T_c$, $T=T_c$, and $T>T_c$. After repeated steps the first flows to all aligned, the last to random noise, and the critical one keeps looking statistically the same.
+- [Example] Add the exact 1D decimation result $\tanh K'=\tanh^2K$ as a worked example of one RG step. It shows the flow to $K=0$ and hence no transition at $T>0$, linking to [[11.02 Ising Model in One Dimension]].
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/10 Phase Transitions/10.11.02 Fixed Points and Critical Exponents.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct relations ($\nu=1/y_t$, $\eta=d+2-2y_h$), but the derivation of the second relation is only asserted.
+- [Graph] Plot an RG recursion map $K'(K)$ against $K$ with the diagonal, for example the Migdal–Kadanoff 2D Ising map $K'=\tfrac12\ln\cosh(4K)$ for $b=2$. Show the unstable fixed point $K^*$ and the flows to $0$ and $\infty$; the slope at $K^*$ gives $y_t$.
+- [Simplify] Replace the verbal "To reconstruct the thermal relation" paragraph with the equation chain $\xi(t)=b\,\xi(b^{y_t}t)\Rightarrow\xi\propto|t|^{-1/y_t}$.
+- [Intuition] Add one line for $\eta$: $G(r)$ scales as $b^{-2(d-y_h)}$, so $d-2+\eta=2(d-y_h)$.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/10 Phase Transitions/10.11.03 ε Expansion.md
+priority: low
+graph: yes
+manim: no
+summary: Correct coefficients ($\nu=\tfrac12+\tfrac{n+2}{4(n+8)}\epsilon$, $\eta=\tfrac{n+2}{2(n+8)^2}\epsilon^2$) and a good caution about extrapolation.
+- [Graph] Plot first-order $\nu(n)$ at $\epsilon=1$ for $n=1,2,3$ together with the accepted values (0.630, 0.672, 0.711), to show the size of the leading-order error.
+- [Intuition] Add one sentence on why $d=4$ is special: the $\phi^4$ coupling has scaling dimension $\epsilon$, so it is marginal at $d=4$ and the Wilson–Fisher fixed point sits at $u^*=O(\epsilon)$.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/10 Phase Transitions/10.12 Summary.md
+priority: low
+graph: no
+manim: no
+summary: Accurate and well organized summary.
+- [Links] Add links from each bullet to its section note (for example [[10.03.01 Derivation]], [[10.07.02 Scaling Relations]], [[10.08.02 Second-Order Transition]]).
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/10 Phase Transitions/99 Exercises/10.01 Water Phase Diagram.md
+priority: low
+graph: yes
+manim: no
+summary: Correct calculation; it uses the same outdated triple-point pressure as the main note.
+- [Correctness] $P_t=611.73\,\text{Pa}$ is outdated; the current IAPWS value is $611.657\,\text{Pa}$ (the rounded $\approx6.12$ mbar is unchanged).
+- [Graph] Add a schematic water P–T diagram (log pressure axis) with a negative-slope ice-I melting line, the triple point, the critical point, and labels for the high-pressure ice phases, which the generic figure in [[10.04.03 Phase Diagram in the P–T Plane]] cannot show.
+- [Simplify] The final two paragraphs before "Solution" repeat the dimensional check from [[10.03.03 Application - Melting Curve]]; replace them with a link.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/10 Phase Transitions/99 Exercises/10.02 Mean-Field Ising Exponents.md
+priority: low
+graph: yes
+manim: no
+summary: Correct; $m^2\approx-3t$, $\chi^-=1/(2k_BT_c|t|)$, and $m^3\approx3h$ verify.
+- [Graph] Plot the graphical solution of $m=\tanh(m\,T_c/T)$: the line $y=m$ and $y=\tanh(m/\tau)$ for $\tau=T/T_c=0.8,1.0,1.2$ on $-1.5\le m\le1.5$, showing the appearance of nonzero intersections below $T_c$.
+- [Simplify] In the susceptibility section, show the denominator step $k_BT-zJ(1-m^2)=k_BT_c(t+m^2)=-2k_BT_ct$ explicitly, so that the factor 2 below $T_c$ is visible.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/10 Phase Transitions/99 Exercises/10.03 Superconducting Transition Heat.md
+priority: low
+graph: yes
+manim: no
+summary: Correct; the maximum $H_c^2(0)/(8\pi)$ at $T_c/\sqrt2$ and the SI form verify.
+- [Graph] Plot $L/V$ normalized by $H_c^2(0)/(8\pi)$, that is $4x^2(1-x^2)$, against $x=T/T_c$ on $[0,1]$ with the maximum marked.
+- [Simplify] The last paragraph before "Solution" repeats the maximum check in words; shorten it to one sentence.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/10 Phase Transitions/99 Exercises/10.04 Scaling Relations for the Two-Dimensional Ising Model.md
+priority: low
+graph: no
+manim: no
+summary: Correct and clear arithmetic check of all four relations.
+- [Example] Add the mean-field Josephson counterexample as a displayed equation ($2-0\ne\tfrac12\cdot2$) instead of describing it only in words.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/11 Ising Model/11.00 Ising Model.md
+priority: low
+graph: no
+manim: no
+summary: Clear chapter hub with correct history (Lenz 1920, Ising 1925, Onsager 1944).
+- [Structure] No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/11 Ising Model/11.01 Model Definition.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub; no change needed.
+- [Structure] No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/11 Ising Model/11.01.01 Hamiltonian and Spin Variables.md
+priority: low
+graph: no
+manim: no
+summary: Correct definition with good sign checks.
+- [Example] Add a worked example: a 3-spin chain (or a $2\times2$ periodic square lattice), listing all configurations and energies, so the reader sees the $2^N$ counting and the bond energies $\mp J$ concretely.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/11 Ising Model/11.01.02 Lattice and Coordination Number.md
+priority: low
+graph: no
+manim: no
+summary: Correct table ($z$ and $Nz/2$ for all six lattices) and a clear boundary remark.
+- [Structure] Add a small figure of the square and triangular lattices with one site's neighbours highlighted, to make "same $z$, different geometry" visible.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/11 Ising Model/11.01.03 ℤ₂ Symmetry.md
+priority: low
+graph: no
+manim: yes
+summary: Correct and clear; the figure is accurate (net $+6$ of 36 spins), but its JSON is pretty-printed over about 1600 lines.
+- [Structure] Compact the Graphs JSON (one element per line, as in the chapter 10 figures); the note shrinks from 25 kB to a few kB and becomes easier to edit.
+- [Manim] Animate the 6×6 configuration under a global flip (all arrows reverse while a bond-energy counter stays constant) and then under a single-site flip (the counter changes by $2J$ times the number of satisfied minus unsatisfied bonds at that site).
+- [Simplify] The statement $\langle\sigma_i\rangle=0$ holds for any flip-symmetric boundary condition (free or periodic), not only periodic ones; say so to avoid implying that periodicity is required.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/11 Ising Model/11.02 Ising Model in One Dimension.md
+priority: low
+graph: yes
+manim: no
+summary: Clear hub with a good reading guide; the quantity table mentions a critical-value subscript that the note never uses.
+- [Graph] Add the key exact result as a plot: correlation length $\xi/a=-1/\ln\tanh(J/k_BT)$ against $k_BT/J$ on $[0.2,3]$, which grows exponentially as $T\to0$ but stays finite for every $T>0$.
+- [Structure] The table entry for $T$ says "a c subscript marks a critical value", but no $T_c$ appears in this note; remove that clause.

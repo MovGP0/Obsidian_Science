@@ -1,0 +1,370 @@
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/02 Space and time of our fundamental theories/02.06 Space and Time in the Factual Universe.md
+priority: medium
+graph: yes
+manim: no
+summary: A short, readable account of the FLRW metric and cosmic time, but the CMB uniformity figure is off and the metric is given without a worked example.
+- [Correctness] "globally synchronised, but for the small fluctuations amounting a part in a million": the primary CMB temperature anisotropies are about $\Delta T/T\sim10^{-5}$ (tens of μK on 2.725 K), and the dipole is about $10^{-3}$. Add a short callout with the correct order of magnitude.
+- [Example] After Eq. (2.6), add one worked step: a photon emitted at $t_e$ and received at $t_0$ has $1+z=a(t_0)/a(t_e)$. Also add $H_0\approx70\,\unit{km\,s^{-1}\,Mpc^{-1}}$, which gives $1/H_0\approx14\,\unit{Gyr}$, so the reader sees what $H$ means in numbers.
+- [Graph] Plot $a(t)/a(t_0)$ against $t$ for a flat ΛCDM model ($\Omega_m=0.3$, $\Omega_\Lambda=0.7$) and for matter-only ($a\propto t^{2/3}$), over 0–20 Gyr. Mark today. This shows "steadily expanding" and the present acceleration.
+- [Intuition] In "Interpretation and checks", add one sentence: comoving observers are those who see no CMB dipole, so the cosmic time $t$ is the proper time of these observers. This links the abstract metric to the dipole in Fig. 1.3.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/02 Space and time of our fundamental theories/02.07 Philosopher's Space and Time.md
+priority: low
+graph: no
+manim: no
+summary: A philosophical and historical note that is clear enough; it has no equations and needs little change.
+- [Structure] Separate the author's claims (for example "a local clock synchronised to the CMBR temperature will read the same time as any other clock anywhere") from established results, with a short callout: CMB temperature defines cosmic time only for comoving observers, after correction for the local dipole and gravitational redshift.
+- [Links] Link "CMBR" and "universal time" to [[08.05 The Cosmic Microwave Background Radiation]] and to [[02.06 Space and Time in the Factual Universe]], where the FLRW cosmic time is defined.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/02 Space and time of our fundamental theories/02.08 Space, Time, and the Principle of Relativity.md
+priority: low
+graph: no
+manim: no
+summary: A clear, quotation-led statement of the Principle of Relativity; the numbers are correct, but one quotation has lost a prime.
+- [Correctness] In the quotation from 'The Meaning of Relativity', "every other system K which moves uniformly ... relatively to K" must read "every other system K′". As printed, the statement compares K with itself.
+- [Example] The lifetime distance checks out: $370\,\unit{km/s}\times80\,\unit{yr}\approx9\times10^{11}\,\unit{km}\approx0.1$ light year. Show this one-line calculation, and name the measured CMB dipole speed of the Sun (about 370 km/s) as the source of the "nearly 400 km/s".
+- [Intuition] The "Interpretation and checks" cabin-with-a-window example is good. Move it near Galileo's ship quotation, so that the difference between an isolated cabin and an "open deck" in a medium is made right where the ether doubt is introduced.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/02 Space and time of our fundamental theories/02.09 Summary.md
+priority: low
+graph: no
+manim: no
+summary: A chapter summary that does its job; no change needed apart from links.
+- [Links] Add wiki links from each summarised topic (Newton's bucket, Mach, ether and fields, FLRW metric, logical positivists, PoR) to the matching 02.0x notes, so the summary works as a navigation hub.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/03 Electrodynamics, light and relativity/03 References.md
+priority: low
+graph: no
+manim: no
+summary: A reference list with good provenance notes; no change needed.
+- [Links] For reference 21, add to the callout that the correct volume of Poincaré's Comptes Rendus paper is 140 (1905), not 14. Also note that Maxwell's Part III is dated 1862 here, but the 03.00 text says "in 1861".
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/03 Electrodynamics, light and relativity/03.00 Electrodynamics, Light and Relativity.md
+priority: low
+graph: no
+manim: no
+summary: A clear chapter introduction; the only equation is fine, but its source-notation callout is not needed.
+- [Correctness] The Maxwell quotation spells the name "Kohlrauch"; the physicist is Rudolf Kohlrausch (Weber–Kohlrausch measurement of 1856). Correct it, or mark it as a source typo.
+- [Simplify] Write the light-speed relation as $\mechanical{c}=1/\sqrt{\electric{\epsilon}_0\magnetic{\mu}_0}$ and delete the "Source notation" callout. The printed form is not ambiguous enough to need it.
+- [Example] Add the one-line check $1/\sqrt{8.854\times10^{-12}\times1.2566\times10^{-6}}\approx2.998\times10^8\,\unit{m/s}$. This shows the "coincidence" that Maxwell noticed.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/03 Electrodynamics, light and relativity/03.01 Experiments to Determine the Speed of Light.md
+priority: low
+graph: no
+manim: no
+summary: A short hub with a useful SI note; no substantial change needed.
+- [Structure] Give the defined value $\mechanical{c}=299\,792\,458\,\unit{m/s}$ (exact since 1983) explicitly in "Interpretation and checks". The lecture's $2.99\times10^8$ looks like a measured estimate.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/03 Electrodynamics, light and relativity/03.01.01 Roemer's Method.md
+priority: high
+graph: yes
+manim: yes
+summary: The geometric idea is explained well, but the numerical estimate mixes the one-sided delay with the approach–recession difference and so gets half the intended speed.
+- [Correctness] The note defines $\signal{\Delta T}=2\mechanical{v}\signal{T}/\mechanical{c}$ for the difference between the observed periods, then uses "varies by about 30 s" with $\mechanical{c}=\mechanical{v}\signal{T}/30\,\unit{s}\approx1.5\times10^8\,\unit{m/s}$. If 30 s is the approach–recession difference, then $\mechanical{c}=2\mechanical{v}\signal{T}/\signal{\Delta T}\approx3.06\times10^5\,\unit{km/s}$. The one-sided shift $\mechanical{v}\signal{T}/\mechanical{c}$ is only about 15 s. State which quantity is 30 s and fix the estimate.
+- [Correctness] "the average maximum delay is $42.48\times3600\times30/\mechanical{c}$" is the one-sided per-eclipse shift $\mechanical{v}\signal{T}/\mechanical{c}$, not the difference $\signal{\Delta T}$ given below it. Use one name for each quantity, so that the reader does not apply the factor 2 twice or not at all.
+- [Example] Add Roemer's actual observable: the shifts accumulate to about 16–22 minutes over half a year, which is the light-travel time across Earth's orbit ($2\,\unit{AU}/\mechanical{c}\approx1000\,\unit{s}$). This gives a more robust estimate than a single 30 s interval.
+- [Graph] Plot the predicted eclipse-time residual $\delta t(\tau)=[d(\tau)-d_0]/\mechanical{c}$ over one synodic year, with $d(\tau)=|\mathbf r_J-\mathbf r_E|$ for circular orbits (1 AU and 5.2 AU). Overlay the per-interval shift $\mathrm{d}\delta t/\mathrm{d}\tau\cdot T$, so the reader sees the maximum near quadrature.
+- [Manim] Animate Earth and Jupiter orbiting, with Io eclipses as flashes whose light fronts travel to Earth. A running clock shows the intervals getting shorter while Earth approaches and longer while it recedes.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/03 Electrodynamics, light and relativity/03.01.02 Michelson's Measurements.md
+priority: medium
+graph: no
+manim: yes
+summary: A clear historical account; the numbers check out, but the Fizeau method could have a worked example.
+- [Example] Work out Fizeau's condition: the wheel blocks the returning light when $2\mechanical{L}/\mechanical{c}=1/(2N f)$, with $N=720$ teeth. For $\mechanical{L}=8.6\,\unit{km}$ this gives $f\approx12.1\,\unit{s^{-1}}$. Note that Fizeau's actual baseline (Suresnes–Montmartre) was about 8.6 km, not 8.2 km.
+- [Example] Check the octagon in the text: $\signal{T}=2\times35\,\unit{km}/\mechanical{c}=2.33\times10^{-4}\,\unit{s}$, and $1/8$ turn in $\signal{T}$ needs $1/(8\signal{T})\approx535$ rev/s. This matches the caption and confirms the 45° condition.
+- [Intuition] In the two-way paragraph, add the explicit result $2\mechanical{L}/[\mechanical{c}(1-\mechanical{v}^2/\mechanical{c}^2)]$. This shows why the first-order terms cancel and links the reader to Eq. (3.18) in 03.06.
+- [Manim] Animate the rotating octagonal mirror: a pulse leaves facet 1, travels to the distant mirror and back, and the octagon turns 45° in that time, so facet 2 sends the pulse back to the slit.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/03 Electrodynamics, light and relativity/03.02 The Ether - The Medium for the Propagation of the EM Waves.md
+priority: low
+graph: no
+manim: no
+summary: A short, clear historical note about the ether; no errors of substance.
+- [Simplify] In "meant a different density of the ether in such media", state that this was one historical model (Fresnel's), in which the ether density in matter is proportional to $\signal{n}^2$. This prepares the drag coefficient $1-1/\signal{n}^2$ in 03.03–03.04.
+- [Links] Link "stellar aberration" in the last paragraph to [[03.03 Stellar Aberration]], and "Fizeau measured the velocity of light in water" to [[03.04 The Speed of Light in Moving Media - Fresnel Drag]]. Note that Foucault (1850) first showed that light is slower in water.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/03 Electrodynamics, light and relativity/03.03 Stellar Aberration.md
+priority: medium
+graph: yes
+manim: yes
+summary: The aberration estimate and formulas are correct and clear, but one date is wrong and Eq. (3.1) needs an explicit angle convention.
+- [Correctness] "A. Fresnel had made the important theoretical discovery in 1815": Fresnel proposed partial drag in his 1818 letter to Arago. Correct the year.
+- [Simplify] State the convention for Eq. (3.1): $\mechanical{\theta}$ is the true angle between the star direction and Earth's velocity, and $\mechanical{\phi}$ is the apparent angle. Show the small-angle result $\mechanical{\theta}-\mechanical{\phi}\approx(\mechanical{v}/\mechanical{c})\sin\mechanical{\theta}$, which gives $20.5''$ at $\mechanical{\theta}=90^\circ$.
+- [Example] Add Airy's 1871 water-telescope null result as a worked contrast: Eq. (3.2) with $\signal{n}=1.33$ predicts $27''$ instead of $20.5''$. No such change was seen, and Fresnel's drag removes exactly this extra factor.
+- [Graph] Plot the apparent annual path of a star at ecliptic latitude β, from $\Delta\lambda\cos\beta=-\kappa\cos(\lambda_\odot-\lambda)$ and $\Delta\beta=-\kappa\sin\beta\sin(\lambda_\odot-\lambda)$ with $\kappa=20.5''$: an ellipse with semi-axes κ and κ sinβ. Compare it with the parallax ellipse, which is 90° out of phase.
+- [Manim] Animate rain falling vertically on a walking person who tilts the umbrella, then a telescope tube moving sideways while a photon travels down it. This shows the tilt $\mechanical{v}/\mechanical{c}$.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/03 Electrodynamics, light and relativity/03.04 The Speed of Light in Moving Media - Fresnel Drag.md
+priority: high
+graph: yes
+manim: yes
+summary: The drag formula (3.3) and its relativistic check are correct, but the figure caption's fringe-shift scaling and size estimate are wrong.
+- [Correctness] Fig. 3.4 caption and the sentence after it: for complete drag (speed $\mechanical{c}/\signal{n}\pm\mechanical{v}$) the fringe shift is $\Delta N\approx4\mechanical{L}\signal{n}^2\mechanical{v}/(\signal{\lambda}\mechanical{c})$, not proportional to $\mechanical{L}(\signal{n}-1)\mechanical{v}/(\signal{\lambda}\mechanical{c})$. With Fresnel drag it is $4\mechanical{L}(\signal{n}^2-1)\mechanical{v}/(\signal{\lambda}\mechanical{c})$.
+- [Correctness] Caption: "the observed effect was still smaller, second order in the refractive index n" is wrong. The observed shift is the fraction $1-1/\signal{n}^2\approx0.44$ of the complete-drag value, which is first order in $\mechanical{v}/\mechanical{c}$. The body text ("about half the effect") is correct.
+- [Correctness] Caption: "At about 5 m/s the expected shift is only about 1/100 of a fringe". With Fizeau's tubes ($\mechanical{L}\approx1.5\,\unit{m}$ each, $\signal{\lambda}\approx0.53\,\unit{\mu m}$), complete drag at 5 m/s gives $\Delta N\approx0.3$ fringe. Fizeau observed about 0.23 fringe on reversing a 7 m/s flow. Replace the estimate.
+- [Example] Add the worked derivation: $\Delta t=\mechanical{L}[1/(\mechanical{c}/\signal{n}-f\mechanical{v})-1/(\mechanical{c}/\signal{n}+f\mechanical{v})]\approx2\mechanical{L}\signal{n}^2f\mechanical{v}/\mechanical{c}^2$ per tube. Here $f=0$, $1-1/\signal{n}^2$ or $1$ gives the three hypotheses (a)–(c) of the lecture.
+- [Graph] Plot the predicted fringe shift against flow speed (0–8 m/s) for no drag, Fresnel drag and complete drag, with Fizeau's 1851 point and the Michelson–Morley 1886 water result.
+- [Manim] Animate the Sagnac-type loop: two counter-propagating wave trains pass through flowing water and come back out of step. A slider switches the drag coefficient between 0, 0.44 and 1.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/03 Electrodynamics, light and relativity/03.05 The Doppler Effect.md
+priority: high
+graph: yes
+manim: yes
+summary: A rich derivation, but it is dense and many formulas carry printed errors that are only listed in a callout; the claim about untested observer motion is outdated.
+- [Correctness] "the situation where the observer is in transverse motion ... is not yet adequately probed in experiments" is outdated. Mössbauer rotor experiments with a moving absorber, for example Hay et al. (1960) and Kündig (1963), measured the transverse shift of a moving receiver and agreed with special relativity.
+- [Correctness] Eqs. (3.13)–(3.14) mix $\mechanical{u}_s$ and $\mechanical{v}$ for the same speed (the callout mentions only $\mechanical{u}_s$ in 3.14). Use one symbol, $\mechanical{u}_s$ for the source case and $\mechanical{u}_o$ for the observer case, in both the exact and the approximate forms.
+- [Correctness] Ives–Stilwell (1938) did not observe at 90°. They compared the forward- and backward-shifted lines, and the second-order shift of their mean gives $\sqrt{1-\mechanical{u}^2/\mechanical{c}^2}$. Say this, so that "what was verified was Eq. (3.13)" is not read as a transverse measurement.
+- [Structure] Instead of keeping six erroneous printed forms with a separate callout, give corrected forms next to them: Eq. (3.9) should be $\signal{\nu}'\approx\signal{\nu}(1-\mechanical{u}_s/\mechanical{c}+\mechanical{u}_s^2/2\mechanical{c}^2)$, Eq. (3.8) should keep $\mechanical{u}_s$, and Hubble's law should be $cz=H\mechanical{d}$ with 1 Mpc $=3.26\times10^6$ ly. Also state that the standard redshift is $z=(\signal{\nu}-\signal{\nu}')/\signal{\nu}'$.
+- [Graph] Plot $\signal{\nu}'/\signal{\nu}$ against $\beta=u/c$ in $[-0.9,0.9]$ for the classical moving source $1/(1+\beta)$, the classical moving observer $1-\beta$, and the relativistic $\sqrt{(1-\beta)/(1+\beta)}$. Add the transverse curves $\sqrt{1-\beta^2}$ and $1/\sqrt{1-\beta^2}$.
+- [Manim] Animate circular wavefronts from a moving source (bunched in front, stretched behind), then the same for a moving observer in a medium. Finish with the relativistic case, where the time-dilation factor scales the emission period.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/03 Electrodynamics, light and relativity/03.06 Experiments Designed to Detect the Stationary Ether.md
+priority: high
+graph: yes
+manim: yes
+summary: A long but careful Michelson–Morley analysis whose numbers check out; it lacks a fringe-count example, and the frame labels change mid-note.
+- [Correctness] The length-contraction paragraph after Eq. (3.27) switches from frames O, O′ to "F′" and "F" without definition. Use O and O′ throughout, or define F, F′.
+- [Example] Add the 1887 numbers: effective arm $\mechanical{L}\approx11\,\unit{m}$, $\signal{\lambda}\approx550\,\unit{nm}$, $\mechanical{v}/\mechanical{c}=10^{-4}$, so the expected shift on a 90° rotation is $2\mechanical{L}\mechanical{v}^2/(\mechanical{c}^2\signal{\lambda})\approx0.4$ fringe. The observed shift was below about 0.01–0.02 fringe. This makes "sufficient sensitivity" concrete.
+- [Simplify] Put the corrected leading term $(\mechanical{L}/\mechanical{c})(\mechanical{v}^2/\mechanical{c}^2)$ directly as the result of Eq. (3.19), and keep the source form only in the callout. As it stands, the reader meets the wrong factor 2 first.
+- [Graph] Plot the predicted fringe shift $N(\alpha)=(\mechanical{L}\mechanical{v}^2/\signal{\lambda}\mechanical{c}^2)\cos2\alpha$ against the apparatus angle α (0–360°) for $\mechanical{v}=30\,\unit{km/s}$. Overlay the observed band of about ±0.01 fringe.
+- [Manim] Animate the interferometer moving through the ether frame: the longitudinal beam lags then catches up, and the transverse beam follows a zig-zag. Then rotate the apparatus 90° and show the predicted fringe motion, followed by the contracted arm that cancels it.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/03 Electrodynamics, light and relativity/03.07 The Trouton-Noble Experiment.md
+priority: high
+graph: no
+manim: yes
+summary: A useful historical account, but the energy and torque argument contains several inconsistencies beyond those listed in the callout.
+- [Correctness] Fitzgerald "had proposed the length contraction hypothesis in 1892". FitzGerald published it in 1889 (Science, ref. [16] in 03.06); 1892 is Lorentz's independent proposal.
+- [Correctness] "The total energy remains the same because the capacitance increases by the factor γ, but the volume decreases ... by the same factor" is inconsistent. At fixed charge, the longitudinal field is unchanged and the volume shrinks by $1/\gamma$, so $\energy{\mathcal E}=Q^2/2\circuit{C}$ falls by $1/\gamma$. At fixed $\electric{V}$, $\circuit{C}\electric{V}^2/2$ rises by γ. Rewrite or remove this claim.
+- [Correctness] Eq. (3.29) writes $\mechanical{T}=d\energy{\mathcal E}_m/d\mechanical{\theta}$. The torque is $\mechanical{T}=-d\energy{\mathcal E}_m/d\mechanical{\theta}$. With $\energy{\mathcal E}_m\propto\sin^2\mechanical{\theta}$, the printed minus sign on the right is correct, so the callout's "extra minus sign" comment is misleading. Fix the definition and the $\sin\mechanical{\theta}\to\sin^2\mechanical{\theta}$ exponent together.
+- [Correctness] $\mechanical{V}$ (volume, caption) and $\electric{V}$ (voltage, body) are both used. Rename the integration volume, for example to $d\tau$, so that one letter has one meaning.
+- [Example] Give one order-of-magnitude torque estimate with explicit geometry, for example $\mechanical{T}\sim\tfrac12\electric{\epsilon}_0\electric{E}^2\mechanical{A}\mechanical{d}(\mechanical{v}^2/\mechanical{c}^2)$ for plausible plate values. Then compare it with the torsion-fibre sensitivity of the original experiment.
+- [Manim] Animate the suspended capacitor rotating with Earth: the predicted torque $\propto\sin2\mechanical{\theta}$ would make it oscillate at twice the rotation frequency, while the observed orientation stays fixed.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/03 Electrodynamics, light and relativity/03.08 The Birth of a New Theory of Relativity.md
+priority: low
+graph: no
+manim: no
+summary: A clear interpretive comparison of Lorentz–Poincaré and Einstein relativity; it has almost no mathematics and needs little change.
+- [Structure] Add a two-column table that compares LPTR and STR: preferred frame, one-way light speed, meaning of contraction and dilation, and predicted M-M result. This replaces several long paragraphs that repeat the same contrast.
+- [Links] Link "a later chapter" (the crucial demarcating experiments) to [[11.04 The Experiment on the One-Way Relative Velocity of Light]].
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/03 Electrodynamics, light and relativity/03.09 Experiments on the Unipolar Induction.md
+priority: medium
+graph: no
+manim: yes
+summary: The experimental cases are described clearly, but the disc emf is never computed and one symbol is used for two quantities.
+- [Correctness] $\electric{E}$ is used both for the electric field vector and for the emf in Figs. 3.9–3.10, as the table admits. Use $\mathcal{E}$ (or $U$) for the emf.
+- [Example] Add the Faraday-disc result $\mathcal{E}=\int_0^R\omega r\magnetic{B}\,dr=\tfrac12\omega\magnetic{B}R^2$. For example, $\magnetic{B}=0.5\,\unit{T}$, $R=0.1\,\unit{m}$ and 50 rev/s give about 0.8 V. This shows the size of the "large currents".
+- [Intuition] In "Interpretation and checks", add a case table for Fig. 3.10 (a)–(c). In the lab frame where the axisymmetric field is static, a conductor segment contributes emf only if it moves in that frame. This gives (a) and (c) nonzero and (b) zero, and also brings in the stationary return wire.
+- [Manim] Animate the three rotating cases with the circuit drawn: conductor rotating, magnet rotating, and both rotating. Show the field lines staying fixed for an axisymmetric magnet, and mark which part of the circuit moves in the lab.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/03 Electrodynamics, light and relativity/03.10 The Principle of Relativity and the Theories of Relativity.md
+priority: low
+graph: no
+manim: no
+summary: A clear conceptual note; no change of substance needed.
+- [Structure] The callout and the paragraph before it repeat the same statement. Keep the callout and shorten the paragraph to the logic "PoR is necessary, not sufficient", with a reference to Eq. (3.22) in [[03.06 Experiments Designed to Detect the Stationary Ether]].
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/03 Electrodynamics, light and relativity/03.11 Summary.md
+priority: low
+graph: no
+manim: no
+summary: A chapter summary that does its job; no change needed.
+- [Links] Add wiki links from items (a)–(e) and from the Trouton–Noble and unipolar paragraphs to notes 03.01–03.10.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/04 The special theory of relativity and its empirical foundations/04 References.md
+priority: low
+graph: no
+manim: no
+summary: A reference list; no change needed.
+- [Links] Reference 13 links to a general site. If a stable URL for the translated Nordmann article exists, use it; otherwise state that only the journal issue is cited.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/04 The special theory of relativity and its empirical foundations/04.00 The Special Theory of Relativity and Its Empirical Foundations.md
+priority: low
+graph: no
+manim: no
+summary: A short chapter introduction; clear, with no change needed.
+- [Links] Add a short list of the chapter's sub-notes (04.01–04.06), as the other chapter hubs have, so the introduction can be used for navigation.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/04 The special theory of relativity and its empirical foundations/04.01 Einstein's Motivations for a Theory of Relativity.md
+priority: low
+graph: no
+manim: no
+summary: A readable historical account of Einstein's motivations, with one chronological issue.
+- [Correctness] "Einstein mentioned the astronomical evidence of light received from double stars for this fact [3, 4]" sits inside the account of 1905. The 1905 paper cites no double-star evidence. De Sitter's argument [4] dates from 1913, and the remark about school children is in the 1916 popular book. State the dates, so that it is not read as part of Einstein's 1905 reasoning.
+- [Example] For the magnet–conductor paragraph, add the two-frame calculation: in the magnet frame the force is $\electric{q}\mechanical{\mathbf v}\times\magnetic{\mathbf B}$, and in the conductor frame it is $\electric{q}\electric{\mathbf E}'$ with $\electric{\mathbf E}'=\mechanical{\mathbf v}\times\magnetic{\mathbf B}$ to first order. The emf is the same in both.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/04 The special theory of relativity and its empirical foundations/04.02 The Lorentz Transformations.md
+priority: medium
+graph: yes
+manim: yes
+summary: The derivation in Eq. (4.3) is correct and easy to follow; the clock-offset statement drops a γ, and a spacetime diagram would help.
+- [Correctness] "A clock in O′ at the position $\mechanical{x}$ of the frame O runs behind a clock at the origin ... by the amount $\mechanical{v}\mechanical{x}/\mechanical{c}^2$": from Eq. (4.7), at fixed $t$ the offset is $\gamma\mechanical{v}\mechanical{x}/\mechanical{c}^2=\mechanical{v}\mechanical{x}'/\mechanical{c}^2$. Write it with $\mechanical{x}'$, or add γ.
+- [Simplify] Replace the light-path symbol $d\mechanical{l}$ in Eqs. (4.1)–(4.2) by the interval $ds^2=d\mechanical{x}^2+d\mechanical{y}^2+d\mechanical{z}^2-\mechanical{c}^2dt^2$ from the start. This removes the need for the "Source interval symbol" callout and makes clear what Eq. (4.3) keeps invariant.
+- [Graph] Draw a Minkowski diagram ($\mechanical{x}$, $\mechanical{c}t$) with the O′ axes for $\beta=0.5$: the $\mechanical{c}t'$ axis with slope $1/\beta$, the $\mechanical{x}'$ axis with slope β, and the light line at 45°. Mark lines of constant $t'$, so that the $-\mechanical{v}\mechanical{x}/\mechanical{c}^2$ term appears as tilted simultaneity lines.
+- [Manim] Animate a Lorentz boost of the spacetime grid: as β increases from 0 to 0.8, the primed axes scissor towards the light line, which stays fixed.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/04 The special theory of relativity and its empirical foundations/04.03 The Physical Results of the Special Theory of Relativity.md
+priority: medium
+graph: yes
+manim: no
+summary: The derivations of contraction, dilation, velocity addition and drag are correct, but several printed typos are only listed in callouts.
+- [Structure] Correct the printed forms in place instead of only in callouts: $\mechanical{y}=\mechanical{y}'$ and $\mechanical{z}=\mechanical{z}'$ in Eqs. (4.12)–(4.13), $dt'$ in the numerator of Eq. (4.15), "$\mechanical{\phi}=\pi/2$" after Eq. (4.16), and the reference to Eq. (4.4)/(4.7) instead of (4.11)/(4.14). Each callout makes the reader do the correction.
+- [Example] After Eq. (4.9), add a muon example: $\tau_0=2.2\,\unit{\mu s}$ and $\gamma=10$ give a lab lifetime of 22 μs and a mean decay length of about 6.6 km. This makes time dilation concrete.
+- [Graph] Plot $\mechanical{u}$ against $\mechanical{u}'$ from Eq. (4.15) for $\mechanical{v}=0.5\mechanical{c}$ and $0.9\mechanical{c}$, with $\mechanical{u}'\in[-\mechanical{c},\mechanical{c}]$, against the Galilean line $\mechanical{u}'+\mechanical{v}$. All relativistic curves stay within $\pm\mechanical{c}$.
+- [Simplify] Keep the author's interpretation of the "local time" in one clearly marked paragraph. As written, the derivation of Eqs. (4.9)–(4.10) is mixed with claims about "mysteriously unsynchronised" clocks.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/04 The special theory of relativity and its empirical foundations/04.03.01 The Doppler Effect in the STR.md
+priority: high
+graph: yes
+manim: yes
+summary: The note argues that Einstein's Doppler formula is contradicted by experiment, but this depends on frame-dependent angles and on factual claims that are not correct.
+- [Correctness] "All the experiments use a moving source and a stationary detector" is false. Mössbauer rotor experiments with the absorber on the rim (Hay et al. 1960, Kündig 1963) used a moving receiver and agreed with special relativity.
+- [Correctness] "the spectral shift that is confirmed in experiments, like the Ives-Stilwell experiment, directly contradicts this": Eq. (4.21) uses φ = 90° in the observer frame, while Eq. (4.22) is emission at 90° in the source frame. These are different geometries related by aberration, and Ives–Stilwell measured the forward and backward lines, not 90°. No contradiction follows. The note's "Interpretation and checks" says this, but the lecture text calls it a refutation.
+- [Correctness] "For the special case φ = 0, the important difference between the two expressions ... cannot be discerned" compares Eq. (4.18) (observer receding for $\mechanical{v}>0$) with Eq. (4.20) (source approaching). These are reciprocal, opposite senses of motion. State the sign convention, so that the reader sees that the same sense of relative motion gives the same formula.
+- [Simplify] Unify the angle symbol: θ in Eqs. (4.17) and (4.19), φ in the text. Say in which frame each angle is measured.
+- [Graph] Plot $\signal{\nu}'/\signal{\nu}$ against the observer-frame angle (0–180°) from Eq. (4.17), and against the source-frame angle from Eq. (4.19), for β = 0.3. The two curves cross 1 at different angles, which shows why "transverse" is frame-dependent.
+- [Manim] Animate a source moving past a detector. Show the photon emitted at 90° in the source frame arriving tilted in the lab, and mark the received frequency in both descriptions.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/04 The special theory of relativity and its empirical foundations/04.03.02 The Unipolar Phenomena and the STR.md
+priority: medium
+graph: no
+manim: no
+summary: The historical quotations are presented clearly, but the force-law statement contradicts the note's own co-rotating example, and the standard explanation is not given.
+- [Correctness] "requires only the local magnetic field $\magnetic{\mathbf B}$ and the instantaneous relative velocity $\mechanical{\mathbf v}$": in the co-rotating case the relative velocity of conductor and magnet is zero, yet an emf appears. The velocity in $\electric{\mathbf E}=\mechanical{\mathbf v}\times\magnetic{\mathbf B}$ must be the conductor's velocity in the frame where the field is static (the lab), not the velocity relative to the magnet.
+- [Correctness] "hidden under a several rug" is a typo. Use "swept under the rug" or similar.
+- [Intuition] Add the standard textbook resolution in one paragraph: emf is the loop integral of the force per charge in a single frame, and the stationary brushes and return wire complete the loop. This reproduces all three rotating cases without a preferred frame. Then mark the author's absolute-frame view as an alternative interpretation.
+- [Links] Link to [[03.09 Experiments on the Unipolar Induction]] for the disc-emf formula once it is added there.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/04 The special theory of relativity and its empirical foundations/04.03.03 Einstein's STR and Thermodynamics.md
+priority: medium
+graph: yes
+manim: no
+summary: A concise account of the moving-temperature debate; it is clear but omits the invariant-temperature position and a concrete observable.
+- [Intuition] Add the third standard position (Landsberg: $\thermal{T}'=\thermal{T}$) next to Planck–Einstein 1907 ($\thermal{T}/\gamma$) and Ott/Einstein 1952 ($\gamma\thermal{T}$). Then explain that the disagreement is about how heat and work are defined for a moving body, not about a measured value.
+- [Example] Give the observable case: a detector moving at β through blackbody radiation sees a direction-dependent temperature $\thermal{T}(\theta)=\thermal{T}_0/[\gamma(1-\beta\cos\theta)]$. This is the measured CMB dipole, about 3.36 mK for β ≈ 1.23×10⁻³.
+- [Graph] Plot $\thermal{T}(\theta)/\thermal{T}_0$ against θ (0–180°) for β = 0.1 and 0.5. Draw horizontal lines at $1/\gamma$, $1$ and $\gamma$, so the reader sees that no single scalar transformation describes the directional spectrum.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/04 The special theory of relativity and its empirical foundations/04.03.04 The Empirical Status of the Light Hypothesis.md
+priority: medium
+graph: yes
+manim: no
+summary: A clear presentation of the two-way versus one-way issue, with useful quotations; it lacks the standard conventionality framework and includes a dimensional slip.
+- [Correctness] Correct in place: "$\mechanical{v}\delta t=\mechanical{v}\mechanical{x}/\mechanical{c}^2$ is the duration the signal saves" should read $(\mechanical{v}/\mechanical{c})\delta t=\mechanical{v}\mechanical{x}/\mechanical{c}^2$. The callout notes the unit mismatch but leaves the wrong expression in the text.
+- [Intuition] Introduce the Reichenbach parameter ε: $t_B=t_A+\epsilon(t'_A-t_A)$ with $0<\epsilon<1$, where Einstein's convention is ε = 1/2. One-way speeds are then $\mechanical{c}/(2\epsilon)$ and $\mechanical{c}/(2(1-\epsilon))$, and the round trip stays $\mechanical{c}$. This makes the note's main point precise in one line.
+- [Graph] Plot the one-way speeds $c_{\rightarrow}=\mechanical{c}/(2\epsilon)$ and $c_{\leftarrow}=\mechanical{c}/(2(1-\epsilon))$ against ε in [0.3, 0.7], with their harmonic mean fixed at $\mechanical{c}$.
+- [Structure] State in the lecture section, not only in "Interpretation and checks", which constraints do exist: source-independence (de Sitter, and the 1964 CERN π⁰ decay-photon test), round-trip isotropy (modern cavity tests at about $10^{-17}$), and Kennedy–Thorndike-type tests.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/04 The special theory of relativity and its empirical foundations/04.04 The General Nature of Experimenters' Interpretations.md
+priority: medium
+graph: no
+manim: no
+summary: Readable, but the argument that rest-frame experiments cannot test dilation or contraction omits that Earth's velocity changes during these experiments.
+- [Intuition] Kennedy–Thorndike and Hils–Hall compare the laboratory at different times of day and year, when its velocity differs by up to about 60 km/s. They therefore compare different inertial frames, and the Robertson–Mansouri–Sexl test theory turns their null results into bounds on the time-dilation parameter. Add this, so that the claim "no relativistic effect is expected" is not left without the standard counter-argument.
+- [Simplify] The Kennedy–Thorndike paragraph uses "1935" and "1932" for the same experiment (the paper is from 1932). Use 1932 in the text and drop the date callout.
+- [Example] Show why unequal arms need dilation: with arms $L_1\ne L_2$ and contraction only, the round-trip difference changes by $\approx(L_1-L_2)\mechanical{v}^2/\mechanical{c}^3$ when $\mechanical{v}$ changes. This term is cancelled only if the clock (source frequency) also changes by $\sqrt{1-\mechanical{v}^2/\mechanical{c}^2}$.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/04 The special theory of relativity and its empirical foundations/04.05 The Special Theory of Relativity and Accelerated Frames.md
+priority: low
+graph: no
+manim: no
+summary: A short, correct note on using special relativity with accelerated motion; it lacks a worked example.
+- [Example] Add the proper-time integral $\tau=\int\sqrt{1-v(t)^2/c^2}\,dt$ and one case: a clock on a circular orbit, or a muon in the CERN storage ring (γ ≈ 29.3, lifetime extended from 2.2 μs to 64 μs despite an acceleration of about $10^{18}\,g$). This supports the statement that acceleration itself does not affect clock rate.
+- [Links] The links to [[07.01 The Genesis and Its Salient Points]] and [[09.10 Einstein's Gravitational Resolution of the Paradox]] are valid. Also link "Wigner rotation" (two non-collinear boosts) to a relativity note if one exists.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/04 The special theory of relativity and its empirical foundations/04.06 Summary.md
+priority: low
+graph: no
+manim: no
+summary: A chapter summary that does its job; no change needed beyond links.
+- [Links] Add wiki links from each summarised topic to notes 04.01–04.05, especially 04.03.01 (Doppler) and 04.03.04 (light hypothesis).
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/05 Simultaneity and the synchronisation of time/05 References.md
+priority: low
+graph: no
+manim: no
+summary: A reference list; no change needed.
+- [Links] For reference 3, add to the callout that the correct volume of Poincaré's Comptes Rendus paper is 140, as in the Chapter 3 list.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/05 Simultaneity and the synchronisation of time/05.00 Simultaneity and the Synchronisation of Time.md
+priority: low
+graph: no
+manim: no
+summary: A short chapter introduction with a fair interpretation callout; no change needed.
+- [Links] Add the list of chapter sub-notes (05.01–05.07) for navigation.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/05 Simultaneity and the synchronisation of time/05.01 Introduction.md
+priority: low
+graph: no
+manim: no
+summary: A clear introduction to simultaneity; one numerical claim about the CMB is off.
+- [Correctness] "the average temperature is the same everywhere in the Universe to very high accuracy (of a part in a million)": CMB anisotropies are about $10^{-5}$ (and the observer's dipole is about $10^{-3}$). Correct the figure, as in 02.06.
+- [Example] Give the size of the first-order term: for Earth's orbit ($\mechanical{v}=30\,\unit{km/s}$) and clocks 1000 km apart, $\mechanical{v}\mechanical{x}/\mechanical{c}^2\approx0.33\,\unit{ns}$. This is relevant for GPS, which needs better than 10 ns.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/05 Simultaneity and the synchronisation of time/05.02 Galilean Simultaneity.md
+priority: medium
+graph: yes
+manim: yes
+summary: Eq. (5.1) and (5.2) are correct and the Galilean case is explained well, but the note is long and has minor typos.
+- [Simplify] Split the long final paragraph into (i) the result of Eq. (5.2), (ii) the author's interpretation of the local time as hiding Galilean propagation, and (iii) the lead-in to Einstein's case. Fix the typos "need not necessary be" and "an observers O′".
+- [Example] Give a sound example: $\mechanical{L}=340\,\unit{m}$, $\mechanical{c}_w=340\,\unit{m/s}$, observer at $\mechanical{v}=20\,\unit{m/s}$, which gives $\Delta t\approx-59\,\unit{ms}$ from Eq. (5.1). Compare with the first-order value $-\mechanical{L}\mechanical{v}/\mechanical{c}_w^2=-58.8\,\unit{ms}$.
+- [Graph] Plot $|\Delta t|\,\mechanical{c}_w/\mechanical{L}$ against $\mechanical{v}/\mechanical{c}_w\in[0,0.9]$ for the exact Eq. (5.1), its first-order approximation, and the contracted form Eq. (5.2).
+- [Manim] Animate two sound pulses from A and B spreading in still air, with one observer at rest and one moving. The moving observer meets the B pulse first, and both clocks show their reception times.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/05 Simultaneity and the synchronisation of time/05.03 Einstein's Discussion of Simultaneity in the STR.md
+priority: high
+graph: yes
+manim: yes
+summary: The lecture's central STR deduction contradicts the invariance of event coincidence, and only the short interpretation section corrects it.
+- [Correctness] "the light signals from A and B will reach the observer O′ simultaneously, after the delay $\mechanical{L}/(2\mechanical{c})$" is not what special relativity predicts. The meeting of the two rays is one spacetime event on O's worldline, which all frames agree on. In O′'s frame the two emissions are not simultaneous (they differ by $\gamma\mechanical{v}\mechanical{L}/\mechanical{c}^2$), so O′ receives the B flash first. The "catastrophe" paragraph follows from assuming that "when the events occurred" is the same in both frames.
+- [Structure] Put a visible callout at the start of the lecture account. It should say that the note presents the author's contested argument and that standard special relativity resolves it through the relativity of simultaneity of the emission events. Readers should not have to reach "Interpretation and checks" to find this.
+- [Graph] Add a Minkowski diagram ($\mechanical{x}$, $\mechanical{c}t$, β = 0.5): emission events at $(\pm\mechanical{L}/2,0)$, light lines meeting on O's worldline at $\mechanical{c}t=\mechanical{L}/2$, and O′'s worldline $\mechanical{x}=\beta\mechanical{c}t$ crossing the B ray first. Overlay the $t'=0$ line to show that the emissions are not simultaneous for O′.
+- [Manim] Animate the same flashes twice, in the platform frame and in the train frame, with Lorentz-transformed event times. In both, the B ray reaches O′ before the A ray, so the arrival order agrees.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/05 Simultaneity and the synchronisation of time/05.04 Einstein's Fallacy on the Relativity of Simultaneity.md
+priority: high
+graph: yes
+manim: yes
+summary: The note states as proven an inconsistency in special relativity that rests on a frame error. The interpretation section corrects it, but the main text does not.
+- [Correctness] "The light signals that were emitted when O′ was at the midpoint M′ ... will necessarily reach O′ simultaneously" assumes that the emissions are simultaneous in O′'s frame. For flashes simultaneous on the platform, the Lorentz transformation gives a train-frame emission difference $\gamma\mechanical{v}\mechanical{L}/\mechanical{c}^2$, with B earlier. Einstein's conclusion therefore follows within the light postulate, with no inconsistency, and the boxed note "Einstein's light hypothesis is inconsistent" states a refuted claim as fact.
+- [Correctness] The claim that light reaching distant walls is "untestable and unverifiable" ignores that each wall can carry a local detector and clock, so that each arrival is a recorded event. What is frame-dependent is only the time order of two spacelike-separated events, which is the content of the relativity of simultaneity.
+- [Structure] The title states the source's claim as fact. Keep the title for the source structure, but add a top callout stating that this is the author's contested reading and that the standard analysis finds no fallacy.
+- [Graph] Add a spacetime diagram with platform and train axes (β = 0.6): the two flashes on the platform $t=0$ line, their positions on the train's $t'$ axis, and the reception events on O and O′. This shows directly that the emissions are not simultaneous in the train frame.
+- [Manim] Animate Fig. 5.5 (light from the room centre to both walls) in both frames, with detectors at the walls that stamp local clock times. Show that each frame's synchronised clocks record the stamps consistently.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/05 Simultaneity and the synchronisation of time/05.05 H. Bergson's Critique of Einstein's Relativity of Simultaneity.md
+priority: medium
+graph: no
+manim: no
+summary: A clear historical account, but it presents Bergson's argument as unrefuted, which is historically incorrect.
+- [Correctness] "there is not a single written account from anybody that counters and disproves Bergson's ... demonstration" is false. Jean Becquerel and André Metz published rebuttals in 1922–24, and Bergson answered Becquerel in the appendices added to the second edition of Durée et simultanéité (1923). Mention this exchange.
+- [Structure] Mark the boxed note ("logically and physically impeccable") as the author's view, and link to the interpretation in [[05.04 Einstein's Fallacy on the Relativity of Simultaneity]], which explains where standard SR differs.
+- [Intuition] Distinguish Bergson's philosophical concern (lived duration and the reality of multiple times) from the physical claim about signal arrivals, as the "Physical question" section starts to do. One sentence in the lecture section would prevent the two from being conflated.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/05 Simultaneity and the synchronisation of time/05.06 The Synchronisation of Time.md
+priority: medium
+graph: yes
+manim: yes
+summary: A good treatment of two-way and clock-transport synchronisation, with correct transport algebra (5.6); one quantity is mislabelled and the conventionality framework is missing.
+- [Correctness] "the midpoint of the two-way time delay is determined as $t_{A0}=(t_{A2}-t_{A1})/2$" defines half the round-trip delay, not a midpoint time. The midpoint instant is $(t_{A1}+t_{A2})/2$, as in Eq. (5.3). Rename $t_{A0}$, for example $\tau=(t_{A2}-t_{A1})/2$, in the text and the table.
+- [Intuition] Introduce the Reichenbach ε (Einstein's convention is ε = 1/2) and state that slow clock transport reproduces ε = 1/2 in any inertial frame. This is the standard counterpart of the note's Eq. (5.6) result, and it shows why transport cannot decide the one-way speed.
+- [Example] Give numbers for Eq. (5.6): $\mechanical{u}=370\,\unit{km/s}$ (CMB dipole) and $\mechanical{L}=1000\,\unit{km}$ give a transport gap $\mechanical{L}\mechanical{u}/\mechanical{c}^2\approx4.1\,\unit{ns}$. Compare this with modern time-transfer precision.
+- [Graph] Extend the Fig. 5.6(b) diagram with a third, slow-transport worldline from A to B, and show that its arrival reading coincides with the ε = 1/2 reflection time.
+- [Manim] Animate the two-way protocol: the pulse goes from A to B and back, and B's clock is set to the midpoint reading. Then repeat with an assumed preferred-frame drift to show the hidden offset $\mechanical{L}\mechanical{v}/\mechanical{c}^2$.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/05 Simultaneity and the synchronisation of time/05.07 Summary.md
+priority: low
+graph: no
+manim: no
+summary: The chapter summary restates the contested "fatal inconsistency" as established fact; otherwise it is clear.
+- [Structure] Add one sentence or a callout saying that the claimed inconsistency is the author's thesis, and that standard SR attributes the different arrival order to non-simultaneous emissions in the moving frame. Link to the interpretation sections of [[05.03 Einstein's Discussion of Simultaneity in the STR]] and [[05.04 Einstein's Fallacy on the Relativity of Simultaneity]].
+- [Links] Link each summarised step to notes 05.02–05.06.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/06 The Equivalence Principles/06 References.md
+priority: low
+graph: no
+manim: no
+summary: A reference list; one entry is superseded by later results.
+- [Links] Add the MICROSCOPE final result (Touboul et al., Phys. Rev. Lett. 129, 121102 (2022), $\eta=(-1.5\pm2.7)\times10^{-15}$) as a note next to reference 17, so that readers get the current bound.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/06 The Equivalence Principles/06.00 The Equivalence Principles.md
+priority: low
+graph: no
+manim: no
+summary: A clear chapter introduction; no change needed.
+- [Links] Add a list of the chapter sub-notes (06.01–06.12) for navigation.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/06 The Equivalence Principles/06.01 The Universality of Free Fall.md
+priority: medium
+graph: yes
+manim: no
+summary: A clear statement of the UFF and its role in GR, with an outdated experimental bound and a mixing of active and passive gravitational mass.
+- [Correctness] "the UFF is verified ... to the level of 1 part in $10^{13}$–$10^{14}$" is outdated. MICROSCOPE (2022) gives the Eötvös parameter $\eta(\mathrm{Ti,Pt})=(-1.5\pm2.7)\times10^{-15}$. Update the number.
+- [Correctness] "The gravitational mass is the source of a gravitational field; it is the 'charge' of gravity" describes the active gravitational mass, while the WEP and the UFF concern the passive gravitational mass (the coupling to an external field). Distinguish $\mechanical{m}_p$ from $\mechanical{m}_a$, and link to [[06.07.04 The Active and the Passive Gravitational Masses]].
+- [Example] Define the Eötvös parameter $\eta=2|a_1-a_2|/(a_1+a_2)$ and show that $\eta=10^{-15}$ near Earth means $\Delta a\approx10^{-14}\,\unit{m/s^2}$.
+- [Graph] Plot the best bound on η (log scale) against year: Newton ~1e-3, Bessel ~2e-5, Eötvös 1922 ~5e-9, Roll–Krotkov–Dicke 1964 ~1e-11, Braginsky 1972 ~1e-12, Eöt-Wash 2008/2012 ~2e-13, MICROSCOPE 2022 ~1e-15.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/06 The Equivalence Principles/06.02 The Equivalence of Inertia and Mass - The Weak Equivalence Principle.md
+priority: medium
+graph: no
+manim: no
+summary: Eq. (6.1)–(6.3) are presented clearly with a good charge analogy, but the note mixes active and passive gravitational mass.
+- [Correctness] "the WEP implies that any form of energy is also a source of gravity, with mass $\mechanical{m}_g=\mechanical{m}_i$" is wrong. The WEP equates inertial and passive gravitational mass. That energy also sources gravity is the equality of active and passive mass, which is a separate statement tested by Kreuzer (ref. [21]) and lunar laser ranging. Correct the parenthesis.
+- [Simplify] Use $\mechanical{m}_p$ (passive) consistently in Eq. (6.1), instead of first $\mechanical{m}$ and then $\mechanical{m}_g$. The table currently lists $\mechanical{m}$ and $\mechanical{m}_g$ as the same quantity, which hides the conceptual point.
+- [Example] Make Eq. (6.2) concrete: in the same field $\electric{E}=1\,\unit{kV/m}$, an electron accelerates at about $1.8\times10^{14}\,\unit{m/s^2}$ and a proton at about $9.6\times10^{10}\,\unit{m/s^2}$ in the opposite direction. Gravity gives both the same $g$.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/06 The Equivalence Principles/06.03 Galileo's Thought Experiment Proof of the UFF.md
+priority: low
+graph: no
+manim: yes
+summary: Galileo's argument and the author's critique are explained clearly; one historiographic claim is wrong.
+- [Correctness] "Nobody seems to have found any defect in Galileo's proof till now" is incorrect. The argument and its hidden assumptions (for example that speed depends only on weight and that weight is additive) have been analysed at length, for example by J. R. Brown (1991), J. D. Norton (1996) and T. Gendler (1998). Cite this literature or soften the claim.
+- [Simplify] The source title is "Discourses and Mathematical Demonstrations Relating to Two New Sciences" (1638), usually shortened to "Two New Sciences". "Dialogues Concerning Two New Sciences" mixes it with the 1632 Dialogue.
+- [Manim] Animate the three cases of Fig. 6.1 under an Aristotelian rule $v\propto W$: the light and heavy bodies separately, the tied pair with the light body as a drag, and the pair as one body. Show the two predicted speeds for the pair diverging.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/06 The Equivalence Principles/06.04 Einstein's Equivalence Principle.md
+priority: low
+graph: no
+manim: yes
+summary: A clear statement of the EEP with good tidal caveats; it has one directional error and an unused table symbol.
+- [Correctness] "the additional apparent force $\mechanical{\mathbf F}=-\mechanical{m}\mechanical{\mathbf a}$, acting opposite to the direction of motion": the inertial force is opposite to the frame's acceleration, not to its velocity. A decelerating rocket gives apparent weight towards its nose.
+- [Correctness] The physical-quantities table lists $\mechanical{g}'$, which the note never uses. Remove it or use it in the text.
+- [Example] Give a tidal estimate for the "locally" restriction: in a 2 m cabin in low Earth orbit, the differential acceleration is $\approx2g\,\Delta r/R_E\approx6\times10^{-6}\,\unit{m/s^2}$. This shows the size of the effect that limits the EEP.
+- [Manim] Animate Fig. 6.2: a ball released in a box at rest on Earth, and the same in a rocket accelerating at g, side by side and identical. Then widen the box until the two balls in the Earth case visibly converge towards Earth's centre (tidal effect).

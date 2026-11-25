@@ -1,0 +1,570 @@
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/11 The Crucial Experimental Tests of Cosmic Relativity/11.10.03 The Michelson-Gale Experiment.md
+priority: medium
+graph: no
+manim: no
+summary: Clear historical account with correctly transcribed numbers, but the expected fringe shift is quoted without the formula that produces it.
+- [Example] Add the leading Sagnac fringe formula $\Delta N=4A\Omega\sin\varphi/(\lambda c)$ and evaluate it: $A=613\times339\approx2.078\times10^5\,\mathrm{m^2}$, $\varphi\approx41.8^\circ$, $\lambda\approx570\,\mathrm{nm}$ give $\Delta N\approx0.235$, reproducing the quoted $0.236\pm0.002$.
+- [Correctness] "Earth's rotation rate $2\pi/86400\,\mathrm{rad/s}$" is the solar-day value; the rotation rate relative to inertial space is the sidereal $2\pi/86164\,\mathrm{s}\approx7.292\times10^{-5}\,\mathrm{rad/s}$.
+- [Structure] The Physical quantities table has only "—" symbols; introduce $A$, $\Omega$, $\varphi$, $\lambda$, $\Delta N$ in the text with the formula above and list them.
+- [Intuition] Explain in one sentence why the counter-clockwise beam is retarded (it co-rotates with Earth seen from above the northern hemisphere) and why the small inner rectangle gives an almost null reference shift (its area is much smaller).
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/11 The Crucial Experimental Tests of Cosmic Relativity/11.10.04 The Proof of the Galilean Nature of a Rotating Frame.md
+priority: medium
+graph: no
+manim: yes
+summary: Faithful transcription with good dimensional notes, but primed and unprimed coordinates are mixed and the closed-loop delay is never actually computed from the metric.
+- [Correctness] The "moving-frame line element" is written in unprimed $dx$; substituting $x=x'\pm vt$ gives $ds^2=dx'^2\pm2v\,dx'\,dt-c^2(1-v^2/c^2)dt^2$, and the null condition $ds=0$ then yields $dx'/dt=c\mp v$, which is the check the note should display.
+- [Correctness] "$c'=R\,d\phi/dt=c\mp R\omega$" uses the stationary angle; the relative light speed is $c'=R\,d\phi'/dt$ (with $d\phi/dt=c/R$ in the stationary frame).
+- [Example] Restore $dt^2$ in (11.28), solve the null condition for both directions, and show that the round-trip difference is $\delta T=4A\omega/c^2=2Lv/c^2$ for $A=\pi R^2$, $L=2\pi R$, $v=\omega R$, matching (11.27).
+- [Manim] Animate a straight A–B track bending into a circle that then rotates, while two light pulses travel in opposite directions and reach the moving emitter at different times, to make the train analogy concrete.
+- [Simplify] In Interpretation, quote the exact rotating-coordinate metric of ordinary relativity, $ds^2=-(c^2-\omega^2r^2)dt^2+2\omega r^2d\phi\,dt+dr^2+r^2d\phi^2+dz^2$, so the reader can compare it directly with the source's Galilean form.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/11 The Crucial Experimental Tests of Cosmic Relativity/11.11 Lorentz's Relativity, Einstein's Relativity and Cosmic Relativity.md
+priority: low
+graph: no
+manim: no
+summary: Short historical-philosophical comparison that is readable and balanced by its Interpretation section.
+- [Links] Link the Sagnac, Michelson–Gale, Hafele–Keating, and GNSS sections of this chapter where the note names them as evidence.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/11 The Crucial Experimental Tests of Cosmic Relativity/11.12 Summary.md
+priority: low
+graph: no
+manim: no
+summary: Accurate chapter summary that flags the source's dimensionally incomplete accelerated-clock expressions.
+- [Simplify] In the accelerated-clock paragraph, print the dimensionally correct forms $vL/c^2$, $aTL/c^2$, and $2aTL/c^2$ in the main text and move the source's printed forms into the note, so the summary does not repeat formulas without time units.
+- [Links] Link each summarised topic to its section note (11.9 accelerated clocks, 11.10.02 Sagnac, 11.10.03 Michelson–Gale, 11.10.04 Langevin metric).
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/12 Cosmic Relativity and Quantum Dynamics/12 References.md
+priority: low
+graph: no
+manim: no
+summary: Reference list with a clear provenance disclaimer.
+- [Correctness] Entry 5 is garbled: "A tribute to G., ed. by G. Umesh et al. (Ramachandran, ...)" should read "A tribute to G. Ramachandran, ed. by G. Umesh et al. (Sriranga Digital Software Technologies, ...)"; entry 18's title is *The Principles of Quantum Mechanics*.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/12 Cosmic Relativity and Quantum Dynamics/12.00 Cosmic Relativity and Quantum Dynamics.md
+priority: low
+graph: no
+manim: no
+summary: Concise chapter abstract; no change needed apart from navigation.
+- [Links] Add a short contents list linking 12.01–12.10 so the abstract works as a hub.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/12 Cosmic Relativity and Quantum Dynamics/12.01 Cosmic Relativity and Quantum Dynamics.md
+priority: medium
+graph: no
+manim: no
+summary: Readable introduction, but it quotes the uncertainty relation with the wrong bound and writes the Schrödinger equation in a nonstandard form.
+- [Correctness] "$\Delta x\,\Delta p\ge\hbar$" is not the standard bound; for standard deviations the Kennard relation is $\Delta x\,\Delta p\ge\hbar/2$. State it and keep the source's form only as a quoted variant.
+- [Simplify] Equation (12.1) uses $d\psi/dt$ for a wavefunction $\psi(\mathbf x,t)$; write $i\hbar\,\partial\psi/\partial t=\hat H\psi$ (or use a state vector $|\psi(t)\rangle$) to avoid suggesting a total derivative along a path.
+- [Example] Add one numeric illustration of the action criterion mentioned in Interpretation, for example an electron in a hydrogen orbit ($S\sim\hbar$) compared with a 1 mg dust grain moving at 1 mm/s over 1 mm ($S\sim10^{21}\hbar$).
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/12 Cosmic Relativity and Quantum Dynamics/12.02 The True Nature of the Schrodinger Equation.md
+priority: medium
+graph: yes
+manim: no
+summary: The continuity-to-Schrödinger derivation (12.6)–(12.14) is algebraically correct and well annotated, but the note is long and has a momentum-operator sign error and real-coefficient normalisations.
+- [Correctness] "momentum represented in the source by $i\hbar\nabla$" has the wrong sign; the position-space operator is $\hat{\mathbf p}=-i\hbar\nabla$, and the sign fixes the direction of the probability current in (12.10).
+- [Correctness] "The two path probabilities are written as $a^2$ and $b^2$" (and the coefficients $a,b,c$ in (12.16)) treat complex amplitudes as real; the probabilities are $|a|^2$ and $|b|^2$.
+- [Simplify] After (12.13), state that $C$ must be real for $iC\psi$ to cancel in the continuity equation, and show the second real equation of the polar decomposition (the Hamilton–Jacobi equation with the quantum potential), which makes concrete why continuity alone does not fix Schrödinger evolution.
+- [Graph] Plot $|\langle e^{i\theta}\rangle|=e^{-\sigma^2/2}$ against the Gaussian phase spread $\sigma\in[0,3]\,\mathrm{rad}$ to show why (12.15) does not have unit modulus and why the incoherent limit tends to 0 rather than $\exp(i0)=1$.
+- [Structure] Split the 18 KB note: put the measurement and collapse discussion from (12.16) onward under its own heading or a separate note.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/12 Cosmic Relativity and Quantum Dynamics/12.03 The Law of Motion in the Microscopic Physical World.md
+priority: medium
+graph: no
+manim: no
+summary: The modified Hamilton equation and (12.20) check out algebraically, but key intermediate steps and the meaning of the extra terms are left implicit.
+- [Simplify] Before (12.20), show $\nabla^2\zeta=\left[(i/\hbar)\nabla^2S-(\nabla S)^2/\hbar^2\right]\zeta$, so the reader sees where $p^2/2m$ and the imaginary $i\hbar\nabla^2S/2m$ term come from.
+- [Simplify] The coefficient $a=-i\hbar c$ introduces a velocity named $c$ that is not light speed; rename it (for example $u$), because $c$ means light speed throughout the Cosmic Relativity notes.
+- [Intuition] Show the arithmetic behind "an ant ... about $10^{20}\hbar$ per second": a 10 mg ant at 1 cm/s has kinetic energy $\approx5\times10^{-10}\,\mathrm{J}$, so it accumulates about $5\times10^{24}\hbar$ per second. The source's estimate is conservative, and the numbers make the action criterion tangible.
+- [Simplify] Below (12.21), say that the coefficient $i\hbar/2m$ is imaginary, so the equation has the form of a free Schrödinger equation (oscillatory spreading), not real diffusion.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/12 Cosmic Relativity and Quantum Dynamics/12.04 The Quantum Interference of Single Particles.md
+priority: medium
+graph: yes
+manim: yes
+summary: Correct two-path interference algebra, but the labels reuse the amplitude letters and the result is not visualised.
+- [Correctness] Symbol clash: $a,b$ are both the path weights and the labels in $S(a)$, $S(b)$, and (12.22) defines $\zeta_B$ while (12.23)–(12.24) use $\zeta$. Write $S_1,S_2$ for the path actions and use one name for the combined wave.
+- [Graph] Plot $I(\Delta S/\hbar)=\rho_1+\rho_2+2\sqrt{\rho_1\rho_2}\cos(\Delta S/\hbar)$ for $\Delta S/\hbar\in[0,4\pi]$ with $(\rho_1,\rho_2)=(0.5,0.5)$ and $(0.8,0.2)$, showing how visibility $2\sqrt{\rho_1\rho_2}/(\rho_1+\rho_2)$ falls for unequal weights.
+- [Manim] Animate single detection dots arriving one at a time on a screen and gradually building the $\cos^2$ fringe envelope, which shows the "repeated histories accumulate a pattern" statement directly.
+- [Intuition] Next to the existing note on maxima above one, add that the screen-normalised probability density is $I(x)/\int I\,dx$, so the fringe pattern itself is unchanged.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/12 Cosmic Relativity and Quantum Dynamics/12.05 The Continuity Equation and the Schrodinger Equation.md
+priority: medium
+graph: no
+manim: no
+summary: The Kennard force law (12.25) is transcribed with the correct sign, but the quantum potential is never named or written separately.
+- [Simplify] Define $Q=-\sum_i\frac{\hbar^2}{2m_i}\frac{\nabla_i^2A}{A}$ and write (12.25) as $m_j\dot{\mathbf v}_j=-\nabla_j(V+Q)$; this names the "quantum force" in the Kennard quote.
+- [Intuition] Add the product-state check suggested in Interpretation: for $\psi=\psi_1(x_1)\psi_2(x_2)$, $A$ factorises and the force on particle $j$ depends only on $x_j$. Only entangled states couple distant coordinates, which pins down exactly what the nonlocality debate is about.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/12 Cosmic Relativity and Quantum Dynamics/12.06 L. de Broglie's Non-existent Matter-Waves.md
+priority: low
+graph: no
+manim: no
+summary: Clear historical narrative, with a symbol for the spatial period that differs from the rest of the chapter.
+- [Simplify] The spatial period is $l=h/p$ here but $\lambda=h/p$ in 12.04; use one symbol across the chapter.
+- [Example] Anchor the relation with two measured cases: a 100 eV electron has $h/p\approx0.123\,\mathrm{nm}$ (crystal diffraction), and a C$_{60}$ molecule at 200 m/s has $h/p\approx2.8\,\mathrm{pm}$ (molecule interferometry).
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/12 Cosmic Relativity and Quantum Dynamics/12.07 The Minuteness of the Quantum Zero-Point Energy.md
+priority: medium
+graph: no
+manim: no
+summary: Short and readable, but it uses one letter for two quantities, leaves the action condition unexplained, and gives no numerical example.
+- [Correctness] Symbol clash: $p$ is momentum ($p$, $p_0$) and also pressure ($p=-\rho c^2$) in the same note; rename the pressure $P$.
+- [Simplify] Replace the unexplained "$S=Np\,l\pm\hbar$" with the Bohr–Sommerfeld condition $\oint p\,dx=2pl=nh$, which gives $p_n=nh/(2l)$ and the stated ground-state momentum $p_0=h/(2l)$ (the infinite-well result).
+- [Example] Evaluate the claim: an electron in a 1 nm well has $E_0=h^2/(8ml^2)\approx0.38\,\mathrm{eV}$, against a rest energy of 511 keV.
+- [Intuition] In Interpretation, name the Casimir force as the standard measured effect that any "no vacuum ZPE" account must reproduce.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/12 Cosmic Relativity and Quantum Dynamics/12.08 The Dirac Equation and Relativity.md
+priority: medium
+graph: yes
+manim: no
+summary: Carefully annotated transcription; the 4×4 eigenvalue claim is correct but unproved, and the momentum operator has the wrong sign.
+- [Correctness] "$\hat p_j=i\hbar\,\partial/\partial x_j$" has the wrong sign; the operator is $\hat p_j=-i\hbar\,\partial/\partial x_j$.
+- [Simplify] Prove the eigenvalue statement in one line: (12.33) has block form $\begin{bmatrix}\hbar\Omega&M\\M&-\hbar\Omega\end{bmatrix}$ with $M=\mu\boldsymbol\sigma\cdot\mathbf B$, $M^2=\mu^2B^2$, so $H^2=(\hbar^2\Omega^2+\mu^2B^2)\mathbb 1$ and each sign of $E_\pm$ is doubly degenerate. This also explains "two energy values rather than four".
+- [Graph] Plot $E_\pm=\pm\sqrt{(\hbar\Omega)^2+(\mu B)^2}$ against $\mu B/\hbar\Omega\in[-3,3]$ together with the additive tensor-product levels $\pm\hbar\Omega\pm\mu B$, to visualise the avoided crossing and the difference the Interpretation section describes.
+- [Simplify] Rewrite (12.41)–(12.42) with $\hbar\Omega$ instead of reusing $\Omega$ as an energy, so the duplicate table row for $\Omega$ can be removed.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/12 Cosmic Relativity and Quantum Dynamics/12.09 Cosmic Relativity and Quantum Mechanics.md
+priority: low
+graph: no
+manim: no
+summary: Brief statement of the claimed gravitational phase coupling with a useful relative-phase caveat.
+- [Example] Add the neutron gravity-interferometer (COW) phase $\Delta\phi=mg\,\Delta h\,T/\hbar$ for two paths at heights differing by $\Delta h$, as a concrete measured relative gravitational phase against which the claim can be checked.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/12 Cosmic Relativity and Quantum Dynamics/12.10 Summary.md
+priority: low
+graph: no
+manim: no
+summary: Accurate chapter summary; the schematic phase integrals lack the factors that make them dimensionless phases.
+- [Simplify] Write the phase terms as $(mc^2/\hbar)\int g_{00}\,dt$ and $(mc/\hbar)\int g_{0i}\,dx^i$; as printed, $\int m g_{00}\,dt$ has units kg·s, not action.
+- [Links] Link each summarised result to its section (12.02 ensemble equation, 12.03 modified Hamilton equation, 12.07 ZPE, 12.08 Dirac analogy).
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/13 Cosmic Gravity and the Quantum Spin/13 References.md
+priority: low
+graph: no
+manim: no
+summary: Reference list with an explicit not-verified disclaimer; several entries are verifiably wrong.
+- [Correctness] Fix the entries that can be verified: Pauli 1940 is Phys. Rev. **58**, 716–722 (not 48); Berry 1984 is Proc. R. Soc. Lond. A **392**, 45–57; Uhlenbeck's initial is G.; Duck and Sudarshan, Am. J. Phys. **66**, 284 is 1998; "Lamoroux" is Lamoreaux; Bose, Z. Phys. **26** starts on page 178.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/13 Cosmic Gravity and the Quantum Spin/13.00 Cosmic Gravity and the Quantum Spin.md
+priority: medium
+graph: no
+manim: no
+summary: Good overview of the gravitomagnetic spin proposal, but the electromagnetic comparison and the torque formula carry sign errors.
+- [Correctness] "the source writes the electromagnetic coupling as $E=\boldsymbol\mu\cdot\mathbf B$"; the dipole energy is $E=-\boldsymbol\mu\cdot\mathbf B$, which matters because the gravitational analogy is built on it.
+- [Correctness] Torque (13.3) $\mathbf T=\mathbf s\times\mathbf B_g/2$ does not follow from energy (13.2): $H=\tfrac12\mathbf s\cdot\mathbf B_g=-\mathbf s\cdot\boldsymbol\Omega$ gives $d\mathbf s/dt=\tfrac12\mathbf B_g\times\mathbf s=-\boldsymbol\Omega\times\mathbf s$, the familiar apparent precession of a free gyroscope in a rotating frame, whereas (13.3) gives the opposite sign.
+- [Simplify] The metric components use $\omega$ and (13.1)–(13.2) use $\Omega$ for the same frame rotation; use one symbol.
+- [Intuition] Give the scale: for Earth's $\Omega=7.29\times10^{-5}\,\mathrm{rad/s}$, an electron's $\hbar\Omega/2\approx3.8\times10^{-39}\,\mathrm{J}\approx2.4\times10^{-20}\,\mathrm{eV}$, which shows how small the spin–rotation energy is in laboratory frames.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/13 Cosmic Gravity and the Quantum Spin/13.01 The Physical Meaning of Spin.md
+priority: low
+graph: no
+manim: no
+summary: Clear basic account of spin, but the symbol $s$ is used for both magnitude and maximal projection.
+- [Correctness] The table calls $s$ the "magnitude", but the text uses $s=\hbar/2$ as the maximal projection ($+s,\dots,-s$); the magnitude of spin-½ angular momentum is $\sqrt{s(s+1)}\,\hbar=(\sqrt3/2)\hbar$. Distinguish the quantum number $s$, the magnitude, and the projection $m_s\hbar$.
+- [Simplify] $S_n=S\cos\theta$ introduces $S$ for the magnitude while the table and the rest of the note use $s$; pick one.
+- [Example] Add the spin-1 case (projections $+\hbar,0,-\hbar$) next to spin ½ to show the $\hbar$ spacing rule.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/13 Cosmic Gravity and the Quantum Spin/13.02 Spin as the Fundamental Gravitomagnetic Moment.md
+priority: medium
+graph: no
+manim: yes
+summary: Short and clear, but the precession equation has the opposite sign to the stated interaction energy.
+- [Correctness] (13.6) $d\mathbf s/dt=\tfrac12\mathbf s\times\mathbf B_g$ is inconsistent with (13.5): the Heisenberg or Poisson equation from $H=\tfrac12\mathbf s\cdot\mathbf B_g$ gives $d\mathbf s/dt=\tfrac12\mathbf B_g\times\mathbf s=-\tfrac12\mathbf s\times\mathbf B_g$.
+- [Manim] Animate two spin vectors of different length precessing about $\mathbf B_g$ at the same rate $B_g/2$, to show the claimed magnitude independence (the analogue of the weak equivalence principle).
+- [Intuition] State the analogy explicitly: $\gamma=gq/2m$ for magnetic precession versus a "gyrogravitational" ratio $1/2$ here, so the reader sees why charge-to-mass drops out.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/13 Cosmic Gravity and the Quantum Spin/13.03 Cosmic Gravitational Effects on Spin.md
+priority: medium
+graph: no
+manim: no
+summary: The Pauli-equation algebra is sound in structure and well annotated, but the stated interaction energy is off by a factor two from the derived term.
+- [Correctness] With $\mathbf s=\hbar\boldsymbol\sigma/2$, the derived term $\hbar\boldsymbol\sigma\cdot\boldsymbol\Omega$ in (13.10) equals $2\,\mathbf s\cdot\boldsymbol\Omega$, not "$+\mathbf s\cdot\boldsymbol\Omega$". The minimal-coupling route gives a gyrogravitational factor 2, like $g=2$, which conflicts in magnitude as well as sign with (13.2) $E_g=-\mathbf s\cdot\boldsymbol\Omega$. State this explicitly instead of the vague normalisation note.
+- [Intuition] Mention that the spin–rotation coupling $H=-\mathbf s\cdot\boldsymbol\Omega$ (Mashhoon) is a standard rotating-frame result and has been measured with neutrons (Demirel et al., New J. Phys. 17, 023065, 2015); this gives the reader a benchmark for the factor and sign.
+- [Simplify] Introduce $\boldsymbol\Pi\times\boldsymbol\Pi=i\hbar(e\mathbf B+m\nabla\times\mathbf A_g)$ as a separate displayed step before (13.10); this makes both spin terms follow from one commutator.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/13 Cosmic Gravity and the Quantum Spin/13.03.01 Emphasising the Spin-Phase Puzzle.md
+priority: medium
+graph: no
+manim: no
+summary: The phase arithmetic (13.12)–(13.13) checks out for one cyclotron period, but the sign convention differs from the rest of the chapter and the standard Pauli resolution is missing.
+- [Correctness] Here $\mathbf B_g=+2\boldsymbol\omega$ and $E_g=+\mathbf s\cdot\boldsymbol\omega$, whereas 13.00 and 13.02 use $\mathbf B_g=-2\boldsymbol\Omega$ and $E_g=-\mathbf s\cdot\boldsymbol\Omega$; state the orientation of $\boldsymbol\omega$ relative to the orbit so that the signs agree within the chapter.
+- [Intuition] Show the Pauli Landau spectrum $E=(n+\tfrac12)\hbar\omega_c\pm\tfrac g2\cdot\tfrac12\hbar\omega_c$: for $g=2$ the Zeeman term cancels or doubles the zero-point term, giving $n\hbar\omega_c$ and $(n+1)\hbar\omega_c$. This is where the "extra π" sits in standard theory.
+- [Simplify] In (13.12), evaluate over one period ($\oint dt=2\pi/\omega$) to get $\pi$, and drop or explain the final "$=\pi\Phi/\Phi_0=\pi n$" step, which reintroduces the orbital integer.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/13 Cosmic Gravity and the Quantum Spin/13.03.02 The Thomas Precession in Atoms and the Spectral Fine Structure.md
+priority: medium
+graph: no
+manim: no
+summary: The key results (13.14) circular limit and (13.15)–(13.17) with the factor $(g-1)$ are algebraically consistent, but Gaussian and SI conventions are mixed.
+- [Simplify] Quote the standard Thomas result $\boldsymbol\omega_T=\frac{\gamma^2}{\gamma+1}\frac{\mathbf a\times\mathbf v}{c^2}\approx-\frac{\mathbf v\times\mathbf a}{2c^2}$ next to (13.14), so the reader can see that the source's expression matches it to first order.
+- [Structure] Rewrite (13.15)–(13.17) in SI with $1/(4\pi\varepsilon_0)$ and $\mu_B=e\hbar/2m$ and use $\langle r^{-3}\rangle$; this removes the convention note and the extra $e$ in the induced-field expression.
+- [Example] Anchor the magnitude: the hydrogen $2p_{3/2}$–$2p_{1/2}$ splitting is about 10.9 GHz ($4.5\times10^{-5}\,\mathrm{eV}$), and the sodium D doublet in Fig. 13.3 corresponds to about 2.1 meV.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/13 Cosmic Gravity and the Quantum Spin/13.03.03 Geometric Phases and Cosmic Gravity.md
+priority: medium
+graph: yes
+manim: yes
+summary: The polarisation-rotation algebra (13.19) is correct, but the link between $-2\pi\cos\theta$ and the solid-angle phase is only asserted.
+- [Intuition] Show that a cone of half-angle $\theta$ subtends the solid angle $\Omega_s=2\pi(1-\cos\theta)$, and that the source's $-2\pi\cos\theta$ equals $\Omega_s$ modulo $2\pi$, which is why adding the fibre's $2\pi$ winding reproduces the Tomita–Chiao result.
+- [Simplify] Clarify the "factor $1/2$" remark: for spin ½ each state acquires $\mp\tfrac12\Omega_s$, and experiments measure the up–down relative phase, which is $\Omega_s$, so there is no factor-two discrepancy in the reported values.
+- [Graph] Plot the geometric phase against $\theta\in[0,\pi]$: $2\pi(1-\cos\theta)$ for the photon, $\pi(1-\cos\theta)$ per spin-½ state, and the source's $-2\pi\cos\theta$ reduced mod $2\pi$.
+- [Manim] Animate the fibre tangent tracing a circle on the unit sphere of directions while the polarisation vector is parallel-transported, ending rotated by the enclosed solid angle.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/13 Cosmic Gravity and the Quantum Spin/13.04 Spin Transport in Chiral Molecules and Spintronics.md
+priority: medium
+graph: no
+manim: no
+summary: The headline estimate $\hbar\Omega\approx0.66\,\mathrm{eV}$ checks out, but the equivalent-field derivation and the thermal energy carry factor errors.
+- [Correctness] Equating the per-state energy $\hbar\Omega/2$ ($=s\Omega$ with $s=\hbar/2$) with the per-state Zeeman energy $\tfrac g2\mu_BB=\mu_BB$ gives $B=\hbar\Omega/(2\mu_B)=mv/(er)\approx5.7\times10^3\,\mathrm{T}$. The printed $B_{eq}=\hbar\Omega/(2g_m\mu_B)$ and $B_f=mv/(2er)\approx2.8\times10^3\,\mathrm{T}$ set a per-state energy equal to the full splitting $g\mu_BB$ and halve the field.
+- [Correctness] Room-temperature thermal energy is $k_BT\approx4.1\times10^{-21}\,\mathrm{J}=0.026\,\mathrm{eV}$, not $3\times10^{-21}\,\mathrm{J}$; the ratio to 0.66 eV is about 25.
+- [Intuition] State the assumption behind $\Omega=v/r$: a coherent ballistic electron circling a 0.5 nm helix at $5\times10^5\,\mathrm{m/s}$. Say that tunnelling or hopping transport through DNA is not obviously described this way, so the reader can judge the estimate.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/13 Cosmic Gravity and the Quantum Spin/13.05 Bosons, Fermions, and the Proof of the Spin-Statistics Connection.md
+priority: low
+graph: no
+manim: no
+summary: Clear motivation for the spin–statistics section; no change needed beyond navigation.
+- [Links] Link the three review subsections 13.05.01–13.05.03 and the proposal in 13.06 at the end of the Lecture account.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/13 Cosmic Gravity and the Quantum Spin/13.05.01 The Dawn of the Spin-Statistics Connection.md
+priority: low
+graph: yes
+manim: no
+summary: Good historical overview with one misattribution.
+- [Correctness] "Dirac named the integer-spin particles bosons ... in his 1926 paper" is wrong: Dirac coined both "fermion" and "boson" in a 1945 lecture. His 1926 paper derived the antisymmetric (Fermi–Dirac) statistics.
+- [Graph] Plot $1/(e^x-1)$ (for $x>0$), $1/(e^x+1)$, and $e^{-x}$ against $x=(E-\mu)/k_BT\in[-3,5]$, to show the common Boltzmann limit at large $x$ and the Bose enhancement and Fermi blocking at small $x$; include $\mu$ in the displayed formulas.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/13 Cosmic Gravity and the Quantum Spin/13.05.02 Pauli's Proof and His Inconclusive Tryst with the SSC.md
+priority: low
+graph: no
+manim: no
+summary: Accurate account of Pauli's conditions and the author's objections.
+- [Simplify] Add the factor $1/\sqrt2$ to (13.20)–(13.21) for orthonormal $\psi_1,\psi_2$ and show the exchange $x_1\leftrightarrow x_2$ explicitly giving $\pm\Psi$.
+- [Links] The DOI in Interpretation (PhysRev.58.716) is correct but contradicts the chapter reference list ("48"); fix the list so the two agree.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/13 Cosmic Gravity and the Quantum Spin/13.05.03 Physical Proofs of the Spin-Statistics Connection.md
+priority: low
+graph: no
+manim: no
+summary: Short and clear review; adequate as a bridge note.
+- [Example] Add the standard heuristic that a $2\pi$ rotation multiplies a spin-$s$ state by $(-1)^{2s}$, and state clearly that this rotation sign is not by itself the exchange sign; this matches the Interpretation's warning.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/13 Cosmic Gravity and the Quantum Spin/13.06 The Proof of the Spin-Statistics Connection.md
+priority: medium
+graph: no
+manim: yes
+summary: The proposal is transcribed faithfully with its inconsistencies noted, but no consistent version of the phase bookkeeping is offered.
+- [Simplify] Give one self-consistent version next to the source: each particle acquires $\delta\varphi=-s\theta/\hbar$; in the exchange route each turns by an extra $\pi$, so the pair gains $\Delta\varphi=2\pi s/\hbar$ and $e^{i\Delta\varphi}=(-1)^{2s/\hbar}$. This replaces the double-$\hbar$ and sign confusions in (13.25)–(13.27).
+- [Manim] Animate the two indistinguishable scattering routes, with momentum arrows turning through $\theta$ and $\theta+\pi$ and a phase dial for each spin accumulating $-s\,d\theta/\hbar$, ending with dials differing by $\pi$ for spin ½ and $2\pi$ for spin 1.
+- [Example] Add quick checks: photon ($s=\hbar$) gives $+1$, spin-3/2 gives $-1$, and a composite of two spin-½ particles gives $+1$, so the reader can test the rule.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/13 Cosmic Gravity and the Quantum Spin/13.07 Summary.md
+priority: low
+graph: no
+manim: no
+summary: Accurate concise chapter summary.
+- [Links] Link each summarised application to its section note (13.03.01, 13.03.02, 13.03.03, 13.04, 13.06).
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/14 The Quantum Hall Effects - Gravity in Condensed Matter/14 References.md
+priority: low
+graph: no
+manim: no
+summary: Reference list; nearly all entries check out against standard citations.
+- [Correctness] Bose, Z. Phys. **26**, starts on page 178 (178–181), not 168–171.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/14 The Quantum Hall Effects - Gravity in Condensed Matter/14.00 The Quantum Hall Effects - Gravity in Condensed Matter.md
+priority: low
+graph: no
+manim: no
+summary: Concise chapter abstract with a sound caveat about constant energy offsets.
+- [Intuition] Add the scale comparison: $mc^2=511\,\mathrm{keV}$ against $\hbar\omega_c\approx17\,\mathrm{meV}$ for GaAs ($m^*=0.067m_e$) at 10 T. This shows why the size of a constant term is irrelevant unless it varies.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/14 The Quantum Hall Effects - Gravity in Condensed Matter/14.01 The Hall Effect.md
+priority: low
+graph: no
+manim: yes
+summary: Correct and clear classical Hall derivation.
+- [Example] Add a number: copper ($n=8.5\times10^{28}\,\mathrm{m^{-3}}$), $I=1\,\mathrm{A}$, $B=1\,\mathrm{T}$, $d=0.1\,\mathrm{mm}$ gives $V_H=IB/(ned)\approx0.7\,\mathrm{\mu V}$. This explains why Hall needed thin gold leaf.
+- [Manim] Animate carriers drifting along the strip, being deflected by $\mathbf B$, piling up on one edge until the transverse field cancels the magnetic force, after which they drift straight.
+- [Simplify] Fix the sign convention of $V_H$ before (14.1) (which edge is positive for electrons), so that $ne=-IB/(V_Hd)$ is visibly positive.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/14 The Quantum Hall Effects - Gravity in Condensed Matter/14.02 The Quantum Hall Effect.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct definitions and resistance quantum, but the plateau graph omits the classical Hall line it should sit on.
+- [Graph] Fig. 14.2b has $R_H=0$ below the first step; add the classical background $R_H=B/(\rho e)$ and place the plateaux at $B\propto1/\nu$ (for example $\nu=4,3,2,1$ at $B_1/4,B_1/3,B_1/2,B_1$), so the staircase crosses the classical line at integer filling.
+- [Example] Add a worked number: $\rho=3\times10^{15}\,\mathrm{m^{-2}}$ reaches $\nu=1$ at $B=\rho h/e\approx12.4\,\mathrm{T}$.
+- [Simplify] The sheet density $\rho$ clashes with the resistivity $\rho_{xx}$ used later in the chapter (14.08.03); consider $n_s$ for sheet density across the chapter.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/14 The Quantum Hall Effects - Gravity in Condensed Matter/14.03 The 2-D Dynamics of Electrons in a Magnetic Field.md
+priority: medium
+graph: yes
+manim: yes
+summary: Correct cyclotron and Landau-level physics, but the level diagram contradicts the stated equal spacing.
+- [Correctness] The Fig. 14.4 graph draws levels at heights 0.5, 1, 2, 3 (labels ½ℏω, ℏω, 2ℏω, 3ℏω), which is not equally spaced and contradicts $E_n=(n+\tfrac12)\hbar\omega_c$. Redraw at 0.5, 1.5, 2.5, 3.5 with labels $(n+\tfrac12)\hbar\omega_c$ and keep the source labels in the caption only.
+- [Example] Give GaAs numbers at 10 T: $\hbar\omega_c\approx17\,\mathrm{meV}\approx200\,\mathrm{K}$ and degeneracy $B/\phi_0\approx2.4\times10^{15}\,\mathrm{m^{-2}}$.
+- [Manim] Animate several electrons on cyclotron orbits of different radius and speed that all complete their circles at the same time, showing the speed-independent frequency the note calls crucial.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/14 The Quantum Hall Effects - Gravity in Condensed Matter/14.03.01 The Theory of the IQHE Plateaux.md
+priority: medium
+graph: no
+manim: yes
+summary: Good qualitative plateau mechanism with a helpful schematic; the spin bookkeeping is ambiguous.
+- [Simplify] The text allows two opposite-spin electrons per orbital and also high-field spin polarisation; state that odd-integer plateaux need resolved spin splitting, so each spin-resolved level counts as one $\nu$ step.
+- [Manim] Animate the Fermi level rising through broadened Landau bands (Fig. 14.6) while the Hall staircase is traced alongside: flat while it crosses localised tails, stepping at extended centres.
+- [Intuition] Add one sentence on Laughlin's gauge argument (adding one flux quantum pumps exactly one electron per filled level edge to edge), which explains why localised states do not change $\sigma_{xy}$.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/14 The Quantum Hall Effects - Gravity in Condensed Matter/14.04 The Fractional Quantum Hall Effect.md
+priority: medium
+graph: yes
+manim: no
+summary: Clear phenomenology, but the illustrative graph shows a fractional minimum at an even-denominator filling.
+- [Correctness] Fig. 14.7 draws a deep longitudinal-resistance minimum at $\nu=1/4$, but 1/4 is an even-denominator filling without an FQHE plateau (the chapter itself says so in 14.06.01 and 14.07.01). Replace it with an odd-denominator state such as $3/7$ or $2/9$, or draw 1/4 without a minimum.
+- [Example] Explain that the relation $B\nu\approx4\,\mathrm{T}$ corresponds to a sheet density $\rho=\nu B/\phi_0\approx9.7\times10^{14}\,\mathrm{m^{-2}}$.
+- [Simplify] Group the long fraction list into the sequences $n/(2n\pm1)$ and $n/(4n\pm1)$ plus their particle–hole partners; this prepares the counting in 14.08.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/14 The Quantum Hall Effects - Gravity in Condensed Matter/14.05 The Current Theories of the FQHE.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct composite-fermion algebra (14.5)–(14.6), but the inverse relation that produces the fraction sequences is not shown.
+- [Simplify] Add the inverse $\nu=\nu^*/(2p\nu^*\pm1)$ and list $1/3,2/5,3/7,\dots$ and $2/3,3/5,\dots$; this connects directly to the author's (14.11) in 14.08.
+- [Intuition] Explain why an even number of attached flux quanta keeps fermionic statistics: each attached quantum adds an exchange phase $\pi$, so $2p$ quanta add $2p\pi$.
+- [Graph] Plot $\nu^*=\nu/(1-2\nu)$ for $\nu\in[0.2,0.8]$ with horizontal lines at $|\nu^*|=1,2,3$, marking the intersections at the observed fractions and the divergence at $\nu=1/2$.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/14 The Quantum Hall Effects - Gravity in Condensed Matter/14.06 The Need for a New Unified Theory.md
+priority: low
+graph: no
+manim: no
+summary: Short bridge note with a fair Interpretation section; no change needed.
+- [Structure] No change needed.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/14 The Quantum Hall Effects - Gravity in Condensed Matter/14.06.01 Summary of the Reasons for a New Theory.md
+priority: low
+graph: no
+manim: no
+summary: Clear numbered list of the author's objections; one item is confusingly worded and the list is interrupted.
+- [Simplify] Item 4: say that the Hall resistance keeps following the classical line $B/(\rho e)$ at even-denominator fillings, and that $B^*=B(1-2\nu)$ is an effective field of the composite fermions, not the measured Hall field. As written, "longitudinal resistance ... proportional to applied field" is unclear.
+- [Structure] The sentence "These are the author's critiques..." sits between items 7 and 8 and splits the list; move it after item 8.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/14 The Quantum Hall Effects - Gravity in Condensed Matter/14.07 New Physics Input to the QHE - Cosmic Gravity.md
+priority: low
+graph: no
+manim: no
+summary: Brief statement of the proposed input with an appropriate constant-offset caveat.
+- [Intuition] Add the one-line demonstration: $H\to H-m\Phi_u$ multiplies every state by $e^{im\Phi_ut/\hbar}$, so all energy differences and the Landau state count are unchanged.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/14 The Quantum Hall Effects - Gravity in Condensed Matter/14.07.01 The Quantum Degeneracy of the Landau Levels.md
+priority: medium
+graph: no
+manim: no
+summary: The algebra of (14.8) checks out with $\Omega=eB/m$, and the notes correctly identify the area-normalisation and $k=2$ issues; the derivation is dense.
+- [Simplify] Make the sample area explicit: $G_q=eBA/h$ states in area $A$, then divide by $A$ to obtain $g_m$; this removes the need for the note on (14.7).
+- [Example] Work one case in numbers: a sample with $\rho=1\times10^{15}\,\mathrm{m^{-2}}$ at $\nu=1/3$ has $B\approx12.4\,\mathrm{T}$, $b=3\rho$, and corrected $g=b-2\rho=\rho$.
+- [Simplify] Rename the magnetic degeneracy $g_m$ (it clashes with the gyromagnetic $g_m$ of 13.04 and the total degeneracy $g$); for example $n_B$ for the flux-quantum density.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/14 The Quantum Hall Effects - Gravity in Condensed Matter/14.08 The Integrated Theory of the Quantum Hall Effects.md
+priority: medium
+graph: yes
+manim: no
+summary: The fraction sequences from (14.11) and the figure counts (5 of 15, 6 of 15, 7 of 14) are arithmetically correct; the note would benefit from a plot and from naming its identity with the composite-fermion formula.
+- [Graph] Plot $\nu^*=\nu/|1-2\nu|$ for $\nu\in(0,1)$ with horizontal lines $\nu^*=1,2,3$; the intersections give $1/3,2/5,3/7$ and $1,2/3,3/5$, with the singularity at $1/2$.
+- [Intuition] State explicitly that (14.10) is algebraically identical to Jain's (14.6) with $p=1$, so both accounts predict the same fractions and differ only in physical interpretation; this is the key comparison for the reader.
+- [Example] Evaluate the Coulomb sublevel scale: for GaAs ($\varepsilon_r=12.9$) and $\rho=10^{15}\,\mathrm{m^{-2}}$, $l=\rho^{-1/2}\approx32\,\mathrm{nm}$ and $E_C=e^2/(4\pi\varepsilon_0\varepsilon_rl)\approx3.5\,\mathrm{meV}$, against $\hbar\omega_c\approx17\,\mathrm{meV}$ at 10 T.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/14 The Quantum Hall Effects - Gravity in Condensed Matter/14.08.01 FQHE Beyond the Filling Factor nu = 1-3.md
+priority: low
+graph: no
+manim: no
+summary: The source inconsistencies are flagged correctly; the intended formula could simply be stated.
+- [Simplify] Write the intended relation $\rho/g=\nu/|1-4\nu|$ for $k=2$ and list both branches $\nu=n/(4n+1)=1/5,2/9,3/13$ and $\nu=n/(4n-1)=1/3,2/7,3/11,4/15$; this confirms the note that 4/11 should be 4/15.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/14 The Quantum Hall Effects - Gravity in Condensed Matter/14.08.02 The 5-2-FQHE State and the Half-Integer States.md
+priority: low
+graph: no
+manim: no
+summary: Short and appropriately hedged description of the author's mixed-domain hypothesis.
+- [Intuition] Mention what the hypothesis must reproduce: the 5/2 state shows a quantised $R_{xy}=h/(2.5e^2)$ and a measured activation gap of order 0.5 K in the best samples. A domain mixture would need to give both, not only an intermediate resistance.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/14 The Quantum Hall Effects - Gravity in Condensed Matter/14.08.03 The Excitation Energy Gaps.md
+priority: low
+graph: yes
+manim: no
+summary: The notes correctly flag the nonstandard magnetic length; a standard-form example would make the scaling concrete.
+- [Simplify] Give the standard $l_B=\sqrt{\hbar/(eB)}$ and $E_C=e^2/(4\pi\varepsilon_0\varepsilon_rl_B)$ with a number: at 10 T, $l_B\approx8.1\,\mathrm{nm}$ and $E_C\approx14\,\mathrm{meV}$ in GaAs. Measured FQHE gaps are a small fraction (about 0.1) of this.
+- [Graph] Plot $\ln(\rho_{xx}/\rho_0)=-\Delta/(2k_BT)$ against $1/T\in[0,10]\,\mathrm{K^{-1}}$ for $\Delta/k_B=1,3,5\,\mathrm{K}$, to show how the Arrhenius slope gives the gap.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/14 The Quantum Hall Effects - Gravity in Condensed Matter/14.09 Electron-Hole Symmetry and the FQHE.md
+priority: low
+graph: no
+manim: no
+summary: Brief qualitative argument; adequate.
+- [Example] Show the particle–hole pairing $\nu\leftrightarrow1-\nu$ with $1/3\leftrightarrow2/3$ and $2/5\leftrightarrow3/5$, and note that both members of each pair come from the same formula $\nu/|1-2\nu|$ in 14.08.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/14 The Quantum Hall Effects - Gravity in Condensed Matter/14.10 The Quantum Hall Effects in Graphene.md
+priority: medium
+graph: yes
+manim: no
+summary: The graphene Landau spectrum (14.15) is correct, but the degeneracy origin is misstated and the source's heuristic derivation does not reproduce it under its own stated rule.
+- [Correctness] "Two spin projections and two sublattices add a fourfold degeneracy" is wrong: the fourfold degeneracy comes from spin and valley ($K$, $K'$). The two sublattices form the pseudospin components of each Dirac spinor.
+- [Correctness] With the stated rule that successive orbit areas differ by one flux quantum ($\pi r_0^2B=h/e$, so $r_0^2=2\hbar/(eB)$), (14.17) gives $E_n=v_F\sqrt{\hbar eBn}$, a factor $\sqrt2$ below the printed (and correct) $v_F\sqrt{2\hbar eBn}$. The printed step works only if $r_0=l_0=\sqrt{\hbar/(eB)}$; add this to the note.
+- [Simplify] State the standard graphene sequence $\sigma_{xy}=\pm4(N+\tfrac12)e^2/h$, i.e. $\nu=\pm2,\pm6,\pm10$, instead of "$\rho/(B/\phi_0)=4(\nu+1/2)$" with $\nu$ reused as a level index.
+- [Graph] Plot $E_n$ against $n=0..6$ at $B=10\,\mathrm{T}$ for graphene ($v_F\sqrt{2\hbar eBn}$, $E_1\approx115\,\mathrm{meV}$) and for a GaAs 2DEG ($(n+\tfrac12)\hbar\omega_c$, about 17 meV spacing), showing the shrinking graphene gaps and its zero-energy level.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/14 The Quantum Hall Effects - Gravity in Condensed Matter/14.11 Charge and Thermal Transport by Edge States.md
+priority: medium
+graph: no
+manim: no
+summary: Clear presentation of edge charge and heat transport claims with good unit notes, but the data comparison omits the standard prediction for the same states.
+- [Intuition] Note that the graphene table values also match the standard non-equilibrated count of downstream plus upstream modes (for example $5/3$: $2+1=3$; $8/3$: $3+1=4$; $4/3$: $1+1=2$; $7/3$: 3), so these data do not discriminate between the accounts. This is in line with "vanishing thermal equilibration" in the cited title.
+- [Example] Give the thermal quantum in numbers: $\pi^2k_B^2/(3h)\approx9.5\times10^{-13}\,\mathrm{W/K^2}$, so one channel at 20 mK carries $\kappa T\approx1.9\times10^{-14}\,\mathrm{W/K}$.
+- [Simplify] Next to (14.19), state the hole-conjugate $2/3$ prediction explicitly: net $n_+-n_-=0$ when equilibrated and 2 when not. This makes the "backward heat flow" discussion concrete.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/14 The Quantum Hall Effects - Gravity in Condensed Matter/14.12 The Wavefunctions in the QHE.md
+priority: low
+graph: yes
+manim: no
+summary: Correct standard wavefunctions; one letter does two jobs.
+- [Correctness] Symbol clash: $m$ is the single-particle angular-momentum index in (14.22) and the Laughlin exponent in (14.23); use, for example, $\ell$ for the former and $q$ (with $\nu=1/q$) for the latter.
+- [Graph] Plot the radial density $r^{2\ell}e^{-r^2/2l_0^2}$ for $\ell=0..4$ against $r/l_0\in[0,5]$; the peaks at $r=\sqrt{2\ell}\,l_0$ enclose areas $\ell\,h/(eB)$, i.e. one flux quantum per state. This is the standard picture behind the state counting the author invokes.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/14 The Quantum Hall Effects - Gravity in Condensed Matter/14.13 Summary.md
+priority: low
+graph: no
+manim: no
+summary: Accurate chapter summary.
+- [Links] Link the summarised claims to 14.07.01 (degeneracy), 14.08 (fractions), 14.08.02 (5/2), 14.10 (graphene), and 14.11 (edge transport).
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/15 Relativity and Quantum Entanglement/15 References.md
+priority: low
+graph: no
+manim: no
+summary: Reference list with provenance disclaimer.
+- [Correctness] Entry 7: "Stud. Hist. Phil. Set." should be "Stud. Hist. Phil. Sci." (Studies in History and Philosophy of Science).
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/15 Relativity and Quantum Entanglement/15.00 Relativity and Quantum Entanglement.md
+priority: low
+graph: no
+manim: no
+summary: Clear chapter introduction with a well-framed audit section.
+- [Intuition] Give Bell locality as one formula, $P(A,B\mid a,b,\lambda)=P(A\mid a,\lambda)\,P(B\mid b,\lambda)$, next to the no-signalling condition $P(A\mid a,b)=P(A\mid a)$, so the three notions in "Physical question" are concrete.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/15 Relativity and Quantum Entanglement/15.01 The Space-Time Context of the Problem.md
+priority: low
+graph: no
+manim: yes
+summary: Clear discussion of event ordering; a worked number would make the frame dependence tangible.
+- [Example] Add a number: events 1 km apart and simultaneous in O are separated by $\Delta t'=-\gamma v\Delta x/c^2\approx-2.5\,\mathrm{\mu s}$ in a frame moving at $0.6c$.
+- [Manim] Animate a Minkowski diagram in which the simultaneity line of O′ tilts as its speed increases, swapping the order of spacelike events A and B while the light cones stay fixed.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/15 Relativity and Quantum Entanglement/15.02 Quantum Mechanics of Entanglement.md
+priority: low
+graph: no
+manim: no
+summary: Good elementary introduction to product and entangled states; one state label is wrong.
+- [Correctness] (15.4) writes "$\Psi'=\psi_A\psi_B$" after A is found positive; the updated state is $\psi_{A+}\psi_B$ (up to normalisation), as the right-hand side shows.
+- [Simplify] Show the nonfactorisability proof in one line: matching (15.5) to $(a\psi_{A+}+b\psi_{A-})(c\psi_{B+}+d\psi_{B-})$ needs $ac=bd=0$ but $ad,bc\neq0$, which is impossible. Also add $|\alpha|^2+|\beta|^2=1$ with the singlet values $\alpha=-\beta=1/\sqrt2$.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/15 Relativity and Quantum Entanglement/15.03 The EPR Argument of the Incompleteness of Quantum Mechanics.md
+priority: low
+graph: no
+manim: no
+summary: Clear reconstruction of the representational-incompleteness reading of EPR.
+- [Example] Add the original EPR position–momentum state (perfect correlation of $x_1-x_2$ and anticorrelation of $p_1+p_2$), to show concretely how choosing position or momentum at A assigns different wavefunctions to B (step 2).
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/15 Relativity and Quantum Entanglement/15.04 Measurements of the Quantised Observables of the Microworld.md
+priority: medium
+graph: yes
+manim: no
+summary: Clear setup with the subset-weighting fix noted; the origin of the conditional cosine is still opaque.
+- [Intuition] Show where the conditional means come from: for the singlet, $P(B=+\mid A=+)=\sin^2(\theta/2)$, so $\langle B\mid A=+\rangle=\sin^2(\theta/2)-\cos^2(\theta/2)=-\cos\theta$. This uses the quantum state, as the Interpretation says, not conservation alone.
+- [Simplify] Derive $S_a=\mathbf n\cdot\mathbf a$ from $P(+)=\cos^2(\theta/2)$ for a spin prepared along $\mathbf n$ at angle $\theta$ to $\mathbf a$.
+- [Graph] Plot $C(\theta)=-\cos\theta$ for $\theta\in[0,\pi]$ with markers at $0$, $\pi/2$, $\pi$ (values $-1,0,+1$) matching the sign checks in Interpretation.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/15 Relativity and Quantum Entanglement/15.04.01 The Correlations in the LHVT.md
+priority: medium
+graph: yes
+manim: no
+summary: Good explanation of the Bell bound, but the stated analyser settings do not produce the quoted CHSH value.
+- [Correctness] With $a=0^\circ$, $a'=90^\circ$, $b=45^\circ$, $b'=-45^\circ$ (Fig. 15.3a), the $135^\circ$ pair is $(a',b')$, not $(a,b')$ as the text states. With $-\cos\theta$, the combination $(ab)+(a'b)+(a'b')-(ab')$ then evaluates to 0. Use $b'=+135^\circ$ (so $(a,b')=135^\circ$ and the other pairs $45^\circ$, giving $|B|=2\sqrt2$) or move the minus sign to $(a'b')$.
+- [Graph] Extend Fig. 15.3b over $\theta\in[0,\pi]$ and use Bell's linear example $-1+2\theta/\pi$, which meets $-\cos\theta$ at $0$, $\pi/2$, and $\pi$. The gap between the curves near $45^\circ$ and $135^\circ$ is exactly what CHSH exploits.
+- [Simplify] Show the two-line CHSH bound: $A(a)[B(b)+B(b')]+A(a')[B(b)-B(b')]=\pm2$ for local $\pm1$ responses, so the average lies in $[-2,2]$.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/15 Relativity and Quantum Entanglement/15.05 The Proof of Strict Locality in Quantum Correlations.md
+priority: medium
+graph: yes
+manim: no
+summary: The algebra (15.12)–(15.22) is correct as transcribed and the branch-selection caveat is well noted, but the table is inconsistent and the marginals are not checked.
+- [Correctness] The quantities table lists $s,s_+,s_-$ twice with conflicting units (J·s in one row, dimensionless "units of ℏ" in another), while (15.16)–(15.20) use them as dimensionless; keep one row with the dimensionless meaning.
+- [Intuition] Write out all four joint probabilities $p_{++}=p_{--}=\tfrac12\sin^2(\theta/2)$ and $p_{+-}=p_{-+}=\tfrac12\cos^2(\theta/2)$, and show that each marginal is $1/2$ for every setting (no signalling). This is the check the Interpretation section asks for.
+- [Graph] Plot $p_-=\cos^2(\theta/2)$, $p_+=\sin^2(\theta/2)$, and $C=-\cos\theta$ for $\theta\in[0,\pi]$.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/15 Relativity and Quantum Entanglement/15.06 Summary.md
+priority: low
+graph: no
+manim: no
+summary: Accurate concise chapter summary.
+- [Links] Link the summarised steps to 15.03 (EPR), 15.04 (cosine correlation), 15.04.01 (Bell bound), and 15.05 (action-wave correlations).
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/16 Paradigms Lost and Found/16 References.md
+priority: low
+graph: no
+manim: no
+summary: Short self-citation list with an appropriate caution.
+- [Structure] No change needed.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/16 Paradigms Lost and Found/16.00 Paradigms Lost and Found.md
+priority: low
+graph: no
+manim: no
+summary: Brief chapter abstract; adequate.
+- [Links] Add links to 16.01–16.05 as a contents list.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/16 Paradigms Lost and Found/16.01 The Evolution of the Theories of Dynamics and Relativity.md
+priority: low
+graph: no
+manim: no
+summary: Readable historical survey with a sound methodological caveat.
+- [Links] Link the earlier chapters where these historical points are developed (the Sagnac and Michelson–Gale sections of chapter 11, the GTR chapter 07, and the cosmic-gravity results of chapter 10).
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/16 Paradigms Lost and Found/16.02 Completing the Theory of Gravity - Centenary Einstein's Equation.md
+priority: low
+graph: no
+manim: no
+summary: Correct table units and a strong Interpretation section on the Bianchi constraint.
+- [Example] Show what (16.1) gives with $T_{\mu\nu}=0$ and $T^U_{\mu\nu}$ a homogeneous dust: the ordinary Friedmann equation $(\dot a/a)^2=\tfrac{8\pi G}{3}\rho_U-kc^2/a^2+\Lambda c^2/3$ (with the sign convention stated). This makes "describes cosmic gravitational evolution" concrete and shows the rearrangement is standard GR.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/16 Paradigms Lost and Found/16.03 Physical Absolute Space and Absolute Time.md
+priority: low
+graph: no
+manim: no
+summary: Brief, clear statement of the cosmic reference proposal.
+- [Example] Give the operational reference: the CMB dipole implies a solar-system velocity of about 370 km/s towards galactic $(l,b)\approx(264^\circ,48^\circ)$.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/16 Paradigms Lost and Found/16.04 Is the Cosmic Gravitational Paradigm the Ultimate Foundation.md
+priority: low
+graph: no
+manim: no
+summary: Short philosophical assessment, appropriately framed as the author's view.
+- [Structure] No change needed.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/16 Paradigms Lost and Found/16.05 Concluding Notes.md
+priority: low
+graph: no
+manim: no
+summary: Short closing note with a useful self-check exercise.
+- [Structure] No change needed.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/Universal Clock of Cosmic Relativity.md
+priority: high
+graph: yes
+manim: yes
+summary: Loose bullet-list explanation of the FLRW metric that lacks the vault's frontmatter and TLDR conventions, contains a typo in the main formula, and never connects to Cosmic Relativity.
+- [Correctness] The main metric prints "$r^2a\theta^2$"; it must be $r^2d\theta^2$.
+- [Correctness] "$-ds^2$ is the Spacetime Interval" and the unrendered "\((-+++)\)" are wrong or broken: $ds^2$ is the interval, with signature $(-,+,+,+)$ written in math delimiters.
+- [Correctness] "Static Universe ($a(t)=1$)" is misleading: $a=1$ at one instant is only a normalisation; a static universe needs $\dot a=0$ at all times, which for nonzero matter requires $\Lambda$ (the Einstein static universe) and is not a general special case of FLRW.
+- [Structure] Add the quoted frontmatter title and a TLDR as the Obsidian skill requires, turn the bullet glossary into prose plus a physical-quantities table, and add a section linking FLRW cosmic time to the Cosmic Relativity claims in [[15.00 Relativity and Quantum Entanglement]] and [[16.03 Physical Absolute Space and Absolute Time]].
+- [Graph] Plot $a(t)/a_0$ against $t/t_0$ for radiation ($t^{1/2}$), matter ($t^{2/3}$), and de Sitter ($e^{H(t-t_0)}$) expansion, all normalised at $t_0$.
+- [Manim] Animate a comoving grid of galaxies whose coordinate labels stay fixed while proper separations grow with $a(t)$, with identical comoving clocks ticking in step to show the meaning of cosmic time.

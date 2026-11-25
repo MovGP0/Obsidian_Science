@@ -1,0 +1,88 @@
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.06 The Wilsonian Renormalization Group.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.06.01 Wilson's Idea - Integrating Out High-Energy Modes.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.06.02 Relevant, Marginal, and Irrelevant Operators.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.06.03 Theory Space and Basins of Attraction.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.07 Dimensional Transmutation and Λ_QCD.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.07.01 A Theory without a Scale Generates a Scale.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.07.02 The Scale Anomaly and the Energy–Momentum Tensor.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.08 Confinement and Asymptotic Freedom.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.09 The Beta Function at Two Loops.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.10 Applications - Unification of Forces.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.10.01 Coupling Constants of the Standard Model.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.10.02 Quasi-Unification and Supersymmetry.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.10.03 The Philosophy of Effective Field Theories.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.11 Anomalies and the Renormalization Group.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.11.01 Scale Anomalies and Conformal Invariance.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.11.02 The c-Theorem (Zamolodchikov) and the a-Theorem.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.12 Summary.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.13 Exercises/10.13 Exercises.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.13 Exercises/10.13.01 Beta function in quartic scalar theory.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.13 Exercises/10.13.02 Running QED charge.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.13 Exercises/10.13.03 Wilson–Fisher fixed point.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.13 Exercises/10.13.04 Asymptotic freedom.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.13 Exercises/10.13.05 Callan–Symanzik equation for the propagator.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.13 Exercises/10.13.06 Landau pole with Standard Model charged fermions.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.13 Exercises/10.13.07 Gauge-coupling unification.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.13 Exercises/10.13.08 Relevant, marginal, and irrelevant operators.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.01 The Path Integral in Quantum Mechanics.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.01.01 Sum over Histories.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.01.02 Derivation from Quantum Mechanics.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.01.03 The Free Particle.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.01.04 Harmonic Oscillator.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.02 Functional Integrals for the Scalar Field.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.02.01 Generating Functional Z[J].md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.02.02 The Free Scalar Field and Gaussian Functional Integrals.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.02.03 Functional Determinants and Zeta Regularization.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.03 Connected Green's Functions and W[J].md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.04 The Effective Action Γ[φ_cl].md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.04.01 Legendre Transform of W[J].md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.04.02 Proper Vertex Functions.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.04.03 Effective Potential.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.04.04 Loop Expansion and Counting Powers of ℏ.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.05 Functional Integrals for Fermions.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.05.01 Grassmann Variables.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.05.02 Berezin Integral.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.05.03 Gaussian Integrals over Grassmann Variables.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.05.04 Fermionic Functional Integral.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.06 Functional Integrals for Gauge Fields.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.06.01 Gauge Redundancy.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.06.02 The Faddeev–Popov Procedure.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.06.03 Ghost Fields.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.06.04 QED - The Complete Functional Integral.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.07 Schwinger–Dyson Equations from the Functional Integral.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.07.01 Derivation for the Scalar Field.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.08 Ward Identities from the Functional Integral.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.08.01 Global Symmetry and the Noether Current.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.08.02 The Ward–Takahashi Identity for QED.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.09 Conclusions and Outlook.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.10 Exercises/11.10 Exercises.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.10 Exercises/11.10.01 Harmonic oscillator at finite temperature.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.10 Exercises/11.10.02 Free-theory four-point function.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.10 Exercises/11.10.03 Fermionic and bosonic determinants.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.10 Exercises/11.10.04 Grassmann Gaussian integral.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.10 Exercises/11.10.05 One-loop effective potential in quartic theory.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.10 Exercises/11.10.06 Faddeev–Popov determinant in Coulomb gauge.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.10 Exercises/11.10.07 Schwinger–Dyson equation for the photon propagator.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.10 Exercises/11.10.08 Effective-action Hessian and exact propagator.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.10 Exercises/11.10.09 Unphysical photon modes in electron–positron annihilation.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.10 Exercises/11.10.10 Translation Ward identity in quartic theory.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.01 Lie Groups and Lie Algebras.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.01.01 General Structure.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.01.02 Representations.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.01.03 The Group SU(2).md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.01.04 The Group SU(3).md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.02 Yang–Mills Gauge Fields.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.02.01 Local Non-Abelian Gauge Invariance.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.02.02 Transformation of Gauge Fields.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.02.03 Field Strength Tensor.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.02.04 The Yang–Mills Lagrangian.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.02.05 Self-Interactions of Gauge Bosons.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.03 Faddeev–Popov Quantization.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.03.01 Gauge Orbits and Gauge Fixing.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.03.02 The Faddeev–Popov Prescription.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.03.03 Ghost Fields.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.03.04 The Fully Quantized Lagrangian.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.03.05 BRST Symmetry.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.04 Feynman Rules for Yang–Mills Theory.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.04.01 Propagators.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.04.02 Vertices.md

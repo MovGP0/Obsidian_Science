@@ -1,0 +1,656 @@
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.06 The Wilsonian Renormalization Group.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub that orders the three subnotes and flags the two separate steps (mode elimination and rescaling) and the flow-direction convention.
+- [Structure] The closing sentence repeats the first link of the opening paragraph verbatim; drop it or replace it with a one-line pointer to the exercises ([[10.13.03 Wilson–Fisher fixed point]], [[10.13.08 Relevant, marginal, and irrelevant operators]]).
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.06.01 Wilson's Idea - Integrating Out High-Energy Modes.md
+priority: medium
+graph: no
+manim: yes
+summary: The mode-splitting and effective-action definitions are clear, but the displayed rescaling is knowingly wrong and only corrected in a trailing note, which confuses the reader.
+- [Correctness] The displayed rescaling $\mechanical{x}'=b^{-1}\mechanical{x}$, $\signal{\phi}'=b^{(d-2)/2}\signal{\phi}^{<}$ maps the cutoff $b\energy{\Lambda}$ to $b^2\energy{\Lambda}$ (as the note itself admits); replace the display by the correct $\mechanical{k}'=\mechanical{k}/b$, $\mechanical{x}'=b\mechanical{x}$, $\signal{\phi}'(\mechanical{x}')=b^{-(d-2)/2}\signal{\phi}^{<}(\mechanical{x})$ and shorten the note to a one-line remark about the source's misprint.
+- [Simplify] Remove the "the source gives / it states" phrasing in the rescaling paragraph and state the three RG steps as a numbered list: (1) integrate out the shell $b\energy{\Lambda}<\lvert\mechanical{k}\rvert<\energy{\Lambda}$, (2) rescale momenta, (3) rescale the field so the kinetic term keeps coefficient $1/2$.
+- [Intuition] Show in one line why the field exponent is $(d-2)/2$: substituting $\mechanical{x}=\mechanical{x}'/b$ in $\int d^d\mechanical{x}\,(\partial\signal{\phi})^2$ gives a factor $b^{2-d}$ that the field rescaling must absorb; then show the tree-level consequence $\signal{g}_n'=b^{\,n-d}\signal{g}_n$ that feeds [[10.06.02 Relevant, Marginal, and Irrelevant Operators]].
+- [Manim] Animate a momentum disk of radius $\energy{\Lambda}$: the outer shell is shaded and removed (integrated out), the remaining disk of radius $b\energy{\Lambda}$ is blown back up to radius $\energy{\Lambda}$, and a coupling readout $\signal{g}\to\signal{g}'$ updates each iteration.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.06.02 Relevant, Marginal, and Irrelevant Operators.md
+priority: medium
+graph: yes
+manim: no
+summary: The dimensional classification and sign checks are correct and well motivated, but the universality example groups systems from different universality classes.
+- [Correctness] Example 10.5 lists iron together with carbon dioxide near its critical point and binary liquid mixtures as sharing critical exponents; liquid–gas and binary-mixture critical points are in the 3D Ising class, while an isotropic ferromagnet such as iron is in the 3D Heisenberg (O(3)) class; replace iron by a uniaxial magnet (e.g. the antiferromagnet FeF₂) or state explicitly that iron belongs to a different class.
+- [Example] After the flow equation, give a numeric illustration: a dimension-6 coefficient with $\signal{\tilde g_6}=1$ at $\energy{\mu}=1\,\unit{TeV}$ becomes $10^{-4}$ at $10\,\unit{GeV}$, while a mass term with $\signal{\tilde g_2}=10^{-4}$ grows to $1$ over the same range.
+- [Graph] Plot the tree-level solutions $\signal{\tilde g_n}(\energy{\mu})=\signal{\tilde g_n}(\energy{\mu_0})(\energy{\mu}/\energy{\mu_0})^{n-d}$ for $d=4$, $n=2,4,6$ on a log–log plot with $\energy{\mu}/\energy{\mu_0}\in[10^{-3},1]$, showing the rising, flat, and falling lines.
+- [Simplify] Merge the two notes on the meaning of $d$ and on EFT accuracy into the main text where $d$ is introduced, so the reader is not told the source uses a different convention after the table.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.06.03 Theory Space and Basins of Attraction.md
+priority: medium
+graph: yes
+manim: yes
+summary: Conceptually correct but entirely verbal; the critical-surface and basin ideas would benefit greatly from one concrete two-coupling flow.
+- [Example] Add the two-coupling $\signal{\phi}^4$ flow in $d=4-\epsilon$ as a concrete theory space, e.g. $\mathrm{d}r/\mathrm{d}l=2r+u/(1+r)$, $\mathrm{d}u/\mathrm{d}l=\epsilon u-3u^2/(1+r)^2$ (schematic normalization), with Gaussian and Wilson–Fisher fixed points, one relevant direction ($r$) and one irrelevant direction at the Wilson–Fisher point.
+- [Graph] Plot that flow as a 2D vector field (streamlines) for $\epsilon=1$ with $r\in[-1,1]$, $u\in[0,1.5]$, marking both fixed points and the critical surface (the separatrix flowing into the Wilson–Fisher point).
+- [Manim] Animate several starting theories (dots) flowing along the field toward the infrared: dots on the critical line converge to the Wilson–Fisher point, while dots off it run away toward large positive $r$ (disordered) or negative $r$ (ordered), illustrating basin and tuning.
+- [Intuition] Explain "stationary point of the vector field" as "a theory that looks the same at every length scale", and link the linearized eigenvalues to the relevant/irrelevant classification of [[10.06.02 Relevant, Marginal, and Irrelevant Operators]].
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.07 Dimensional Transmutation and Λ_QCD.md
+priority: low
+graph: no
+manim: no
+summary: Short, clear hub that correctly separates the generated scale from predictions of specific hadron masses.
+- [Structure] The final sentence duplicates the first link; drop it or replace it with a pointer to the numeric estimate in [[10.13.04 Asymptotic freedom]].
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.07.01 A Theory without a Scale Generates a Scale.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct and carefully hedged, but it never displays the formula it relies on, so the key idea of dimensional transmutation stays abstract.
+- [Links] "given by (10.6)" points to an equation in another note without a link; write it as [[10.05.03 Scale Evolution of αₛ in QCD|(10.6)]] or, better, display it here.
+- [Simplify] Display the transmutation formula explicitly: $\energy{\Lambda_{\mathrm{QCD}}}=\energy{\mu_0}\exp[-2\pi/(b_0\signal{\alpha_s}(\energy{\mu_0}))]$, and show in one line that $\mathrm{d}\energy{\Lambda_{\mathrm{QCD}}}/\mathrm{d}\energy{\mu_0}=0$ along the one-loop trajectory, which is the "no new parameter" statement now given only in words.
+- [Example] Insert the numbers: with $\signal{\alpha_s}(\mechanical{M_Z})=0.118$ and $n_f=5$ ($b_0=23/3$) the one-loop value is $\energy{\Lambda}\approx88\,\unit{MeV}$, with $b_0=7$ it is $\approx45\,\unit{MeV}$, versus the $\approx210\,\unit{MeV}$ higher-order $\overline{\mathrm{MS}}$ value, illustrating the scheme, flavor-number, and loop dependence mentioned in the last paragraph.
+- [Graph] Plot one-loop $\signal{\alpha_s}(\energy{\mu})=2\pi/(b_0\ln(\energy{\mu}/\energy{\Lambda}))$ for $\energy{\mu}\in[0.3,1000]\,\unit{GeV}$ (log axis) for two or three reference values of $\signal{\alpha_s}(\mechanical{M_Z})$, marking the corresponding $\energy{\Lambda}$ where each curve diverges.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.07.02 The Scale Anomaly and the Energy–Momentum Tensor.md
+priority: medium
+graph: no
+manim: no
+summary: The anomaly formula and dimensional checks are right and the source's vacuum-condensate claim is properly corrected, but the correct proton-mass relation is described only in words.
+- [Simplify] State the relation the correction note alludes to: $\langle p\vert\energy{T}^\mu{}_\mu\vert p\rangle=2m_p^2$ (relativistic normalization, at rest), and rewrite the source paragraph about the vacuum expectation value directly in this correct form instead of quoting it and then correcting it.
+- [Structure] Fold the long paragraph about the negative beta function and the Lorentzian contraction into a short remark after the formula; it currently interrupts the flow between the anomaly and Example 10.6.
+- [Example] In Example 10.6 add the arithmetic: two $u$ quarks of about $2.2\,\unit{MeV}$ and one $d$ quark of about $4.7\,\unit{MeV}$ give about $9\,\unit{MeV}$, i.e. roughly 1% of $938\,\unit{MeV}$, which justifies the quoted 99%.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.08 Confinement and Asymptotic Freedom.md
+priority: medium
+graph: yes
+manim: yes
+summary: Physically careful about not overclaiming confinement from the Landau pole, but the source's flawed argument is still presented in the body before being corrected.
+- [Links] "the one-loop evolution (10.6)" is an unlinked reference to another note; link [[10.05.03 Scale Evolution of αₛ in QCD|(10.6)]].
+- [Structure] Move the source's "force becomes arbitrarily large" paragraph and its correction into one short remark; lead instead with the static potential as the proper confinement diagnostic.
+- [Graph] Plot the Cornell potential $V(r)=-\frac{4}{3}\frac{\alpha_s\hbar c}{r}+\sigma r$ with $\alpha_s\approx0.3$, $\sigma\approx0.18\,\unit{GeV^2}$, for $r\in[0.05,1.5]\,\unit{fm}$, showing the Coulomb-like short-distance part and the linear long-distance part (constant force about $0.9\,\unit{GeV/fm}$).
+- [Manim] Animate a quark–antiquark pair being pulled apart: the field lines collapse into a flux tube of constant width, the stored energy grows linearly, and at a critical length the tube breaks into two mesons via pair creation.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.09 The Beta Function at Two Loops.md
+priority: medium
+graph: yes
+manim: no
+summary: Coefficients, the $N_f=6$ values, and the expansion of the scale relation all check out, but several paragraphs of caveats precede the formula they qualify.
+- [Structure] Move the paragraph about boundary data and the Lambert $W$ branch after the displayed $t$ relation, since it refers to "the integral" and "both displayed differences" before they appear.
+- [Simplify] Define $t=\ln(\energy{\mu}/\energy{\mu_0})$ explicitly, add $t$, $b_0$, $b_1$, $N_c$, $N_f$ to the physical-quantities table, and show the one-line expansion $1/\signal{\beta}\approx-16\pi^2/(b_0\signal{g}^3)+b_1/(b_0^2\signal{g})$ that produces the logarithmic term.
+- [Intuition] Mention that $b_1$ changes sign for $N_f>153/19\approx8.05$ while $b_0>0$ up to $N_f<16.5$, giving the Banks–Zaks infrared fixed point $\signal{g}_*^2=-16\pi^2b_0/b_1$; this makes the remark about "no positive nonzero fixed point" for six flavors concrete.
+- [Graph] Plot $\signal{\alpha_s}(\energy{\mu})$ from $\signal{\alpha_s}(\mechanical{M_Z})=0.118$ at one loop and at two loops (numerically integrated, $N_f=5$) for $\energy{\mu}\in[1,1000]\,\unit{GeV}$ on a log axis, showing how the two-loop term shifts the low-energy rise.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.10 Applications - Unification of Forces.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub that correctly frames unification as a pairwise-crossing test rather than a visual near-meeting.
+- [Structure] The closing sentence repeats the first link; remove it.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.10.01 Coupling Constants of the Standard Model.md
+priority: low
+graph: no
+manim: no
+summary: Values and coefficients are correct ($\alpha^{-1}=128$ and $\sin^2\theta_W\approx0.231$ reproduce 1/59 and 1/29), and the sign-convention warning is useful.
+- [Example] Show the input numbers behind $1/59$ and $1/29$: $\electric{\alpha}(\mechanical{M_Z})\approx1/128$, $\sin^2\mechanical{\theta_W}\approx0.231$, so the reader can reproduce the values.
+- [Intuition] Explain the signs of $b_i$ in one line: gauge-boson loops (antiscreening) dominate for $SU(2)$ and $SU(3)$, while $U(1)_Y$ has only matter and Higgs loops (screening); and note the general one-loop formula $b=-\frac{11}{3}C_A+\frac{2}{3}\sum T_F+\frac13\sum T_S$ (Weyl fermions, complex scalars) from which all three values follow.
+- [Structure] Move the "Notice that these b coefficients include their signs" sentence to directly after the evolution equation so the convention is stated where it is used.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.10.02 Quasi-Unification and Supersymmetry.md
+priority: medium
+graph: yes
+manim: no
+summary: The one-loop formula and the plotted SM lines are correct, but the MSSM claim that is the point of the note is not shown in the figure.
+- [Graph] Add the MSSM lines with $b_i=(33/5,1,-3)$ (for simplicity starting at $\mechanical{M_Z}$, or with a kink at about 1 TeV) to Fig. 10.5 in a second panel or lighter style; with the note's inputs they cross pairwise at about $10^{15.9}$–$10^{16.6}\,\unit{GeV}$, visibly tighter than the SM crossings at $10^{13.2}$, $10^{14.4}$, and $10^{16.6}\,\unit{GeV}$.
+- [Graph] The functiongraph offset uses $\log_{10}\mechanical{M_Z}=1.95904$ (that is 91.0 GeV); use $\log_{10}91.19\approx1.95995$ for consistency with the stated reference mass (visual change negligible).
+- [Example] Quote the three SM pairwise crossing scales from [[10.13.07 Gauge-coupling unification]] in the text so "approach one another near $10^{15}$ GeV" is quantified.
+- [Simplify] Replace "Figure 10.5 illustrates this behavior" and the "source states" phrasing with direct statements; the paragraph beginning "The displayed Standard Model curves therefore..." can be cut to one sentence.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.10.03 The Philosophy of Effective Field Theories.md
+priority: low
+graph: no
+manim: no
+summary: Correct and readable; the Fermi-theory example is well chosen and its matching relation and dimensions are right.
+- [Example] Evaluate the matching numerically: with $\signal{g_2}\approx0.65$ and $\mechanical{M_W}\approx80.4\,\unit{GeV}$, $\signal{G_F}=\sqrt2\signal{g_2}^2/(8\mechanical{M_W}^2)\approx1.16\times10^{-5}\,\unit{GeV^{-2}}$, matching the measured $1.166\times10^{-5}\,\unit{GeV^{-2}}$; then show the suppression $\signal{G_F}E^2\approx10^{-5}$ at $E=1\,\unit{GeV}$.
+- [Simplify] The two paragraphs between the matching formula and the suppression statement repeat the dimension check and caveats; condense them to two sentences.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.11 Anomalies and the Renormalization Group.md
+priority: low
+graph: no
+manim: no
+summary: Brief, correct hub.
+- [Structure] The final sentence repeats the first link; remove it.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.11.01 Scale Anomalies and Conformal Invariance.md
+priority: low
+graph: no
+manim: no
+summary: Accurate and appropriately hedged, though the definition of the scale anomaly is not connected to the explicit trace formula elsewhere in the chapter.
+- [Links] Link the trace-anomaly formula (10.7) in [[10.07.02 The Scale Anomaly and the Energy–Momentum Tensor]] where the scale anomaly is defined, so "expressed through a nonzero beta function" has a concrete equation behind it.
+- [Example] Add a concrete 4D interacting conformal example besides $\mathcal{N}=4$ SYM, e.g. the Banks–Zaks fixed point of QCD with $N_f$ just below 16.5 (see [[10.09 The Beta Function at Two Loops]]), to show that conformal fixed points need not be supersymmetric.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.11.02 The c-Theorem (Zamolodchikov) and the a-Theorem.md
+priority: low
+graph: no
+manim: no
+summary: Correct with good corrections of the source's "Euler anomaly in the Weyl tensor" wording, but lacks a concrete flow to illustrate the theorems.
+- [Example] Add the 2D minimal-model example $c_p=1-6/(p(p+1))$ with the flow from the tricritical Ising model ($c=7/10$) to the Ising model ($c=1/2$), checking $c_{\mathrm{UV}}>c_{\mathrm{IR}}$.
+- [Example] For the a-theorem, add the free-field values $a\propto(1,\tfrac{11}{2},62)$ for a real scalar, a Dirac fermion, and a gauge vector, and apply them to QCD (free quarks and gluons in the UV versus massless pions in the IR) as a consistency check.
+- [Simplify] Replace the source sentence that calls the c-function "positive definite" and the quoted "in the Weyl tensor" phrase with the corrected statements directly, keeping the note shorter.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.12 Summary.md
+priority: low
+graph: no
+manim: no
+summary: A concise, correct summary with a useful workflow paragraph.
+- [Simplify] Item 1 "Scale dependence of renormalized parameters is unphysical and unavoidable" reads as a contradiction; rephrase as "the subtraction-scale dependence of renormalized parameters is a bookkeeping choice that cancels in observables, while dependence on the physical probe energy is real".
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.13 Exercises/10.13 Exercises.md
+priority: low
+graph: no
+manim: no
+summary: Complete exercise index with working links and a helpful study order.
+- [Structure] The "Source solutions" section is redundant (its two sentences say the solutions are inside each linked article); merge it into the opening line.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.13 Exercises/10.13.01 Beta function in quartic scalar theory.md
+priority: low
+graph: no
+manim: no
+summary: The bubble integral, three-channel pole, counterterm $\delta_\lambda=3\lambda/(32\pi^2\bar\epsilon)$, and beta-function derivation all check out and are clearly laid out.
+- [Simplify] Move the two motivating paragraphs (locality of the pole, keeping $\epsilon$ until after differentiating) to the points of the derivation where they are used, so the solution starts with the amplitude.
+- [Intuition] Add one sentence on the meaning of the factor 3: the s, t and u channels each contribute the same local pole, and $b=2a$ arises because $\signal{\lambda}_0\propto\signal{\lambda}^1$ at tree level while the counterterm is $\propto\signal{\lambda}^2$.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.13 Exercises/10.13.02 Running QED charge.md
+priority: low
+graph: yes
+manim: no
+summary: The electron-only result 134.47 and the active charge sum 20/3 at $M_Z$ are correct, and the limitations of the estimate are clearly stated.
+- [Correctness] The physical-quantities table lists $\electric{Q_i}$, $\electric{Q}$, $\electric{Q_1}$, $\electric{Q_{N_f}}$, which this note never uses (only $\electric{Q}_f$ appears); remove them.
+- [Links] Link "(10.5)" to [[10.03.02 Scale Evolution of α(μ) and Charge Screening]].
+- [Example] Add a crude threshold-stepped estimate: run with electrons only from $m_e$ to $m_\mu$, add the muon up to $m_\tau$, then the tau up to $M_Z$; the leptons alone bring $\alpha^{-1}$ to about 132.2 at the Z, which shows quantitatively that the remaining gap to 128.9 is hadronic.
+- [Graph] Plot $\electric{\alpha}^{-1}(\energy{\mu})$ for $\energy{\mu}\in[m_e,M_Z]$ on a log axis: the electron-only straight line versus the threshold-stepped line with increasing slopes at each fermion mass, with the benchmark 128.9 marked.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.13 Exercises/10.13.03 Wilson–Fisher fixed point.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and clear; the fixed point, slope $\beta'=\epsilon$, and IR-stability argument are all right.
+- [Graph] Plot $\signal{\beta}(\tilde{\signal{\lambda}})=-\epsilon\tilde{\signal{\lambda}}+3\tilde{\signal{\lambda}}^2/(16\pi^2)$ for $\epsilon=1$ with $\tilde{\signal{\lambda}}\in[0,80]$, marking the zeros at 0 and $16\pi^2/3\approx52.6$ and adding arrows on the axis showing the IR flow toward the Wilson–Fisher point.
+- [Example] In part (c), quote the leading ε-expansion exponent $\nu\approx1/2+\epsilon/12$ (Ising, $N=1$), giving 0.583 at $\epsilon=1$ against the 3D value 0.630, to make "rough route to the Ising class" concrete.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.13 Exercises/10.13.04 Asymptotic freedom.md
+priority: low
+graph: yes
+manim: no
+summary: Correct integration, Landau-pole location, and numeric value $\Lambda\approx45$ MeV for fixed six flavors.
+- [Example] Add the five-flavor one-loop value for comparison: $b_0=23/3$ gives $\energy{\Lambda}_{\mathrm{QCD}}\approx88\,\unit{MeV}$, which shows how strongly the result depends on the flavor number before the higher-order benchmark near 210 MeV.
+- [Graph] Plot $\signal{\alpha}_s(\energy{\mu})$ from the one-loop formula with $\energy{\Lambda}=45\,\unit{MeV}$ ($b_0=7$) and $\energy{\Lambda}=88\,\unit{MeV}$ ($b_0=23/3$) for $\energy{\mu}\in[0.2,1000]\,\unit{GeV}$ on a log axis, both passing through 0.118 at $M_Z$.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.13 Exercises/10.13.05 Callan–Symanzik equation for the propagator.md
+priority: low
+graph: no
+manim: no
+summary: The CS equation, dimensional elimination, characteristic solution, and the $t^{c_\gamma/b_0}$ log correction all check out, but the illustration switches to a gauge theory instead of using the scalar theory of the exercise.
+- [Example] Add the scalar case the exercise asks about: $\signal{\gamma}=\signal{\lambda}^2/(12(16\pi^2)^2)$ at two loops and $\bar{\signal{\lambda}}(t)=\signal{\lambda}/(1-3\signal{\lambda}t/(16\pi^2))$, noting that in the IR $\bar{\signal{\lambda}}\sim16\pi^2/(3\lvert t\rvert)$ so the integrated anomalous dimension converges and the propagator approaches a free $1/\mechanical{P}^2$ up to a constant.
+- [Simplify] State the constant-$\signal{\gamma}$ check $\signal{G}^{(2)}\propto\mechanical{P}^{-2+2\signal{\gamma}}$ right after the characteristic solution; it gives immediate intuition for the exponential factor.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.13 Exercises/10.13.06 Landau pole with Standard Model charged fermions.md
+priority: low
+graph: yes
+manim: no
+summary: Correct counting (sum 8), beta function, and Landau-pole estimate $\sim10^{32}$ GeV (more precisely $6\times10^{31}$ GeV).
+- [Graph] Plot $1/\electric{\alpha}(\energy{\mu})$ against $\log_{10}(\energy{\mu}/\unit{GeV})$ for the electron-only slope and for the all-species slope $16/(3\pi)$, from $m_e$ up to the zero crossing near $10^{32}\,\unit{GeV}$, with the Planck scale marked.
+- [Simplify] Quote the result as $\approx6\times10^{31}\,\unit{GeV}$ alongside the order-of-magnitude statement, since $5.1\times10^{-4}\,\unit{GeV}\times e^{80.7}\approx5.7\times10^{31}\,\unit{GeV}$.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.13 Exercises/10.13.07 Gauge-coupling unification.md
+priority: low
+graph: yes
+manim: no
+summary: All pairwise crossing numbers for SM and MSSM reproduce, and the correction notes on precision are accurate.
+- [Graph] Add a plot of the six lines $\signal{\alpha}_i^{-1}(L)$ for SM ($b=(4.1,-19/6,-7)$) and MSSM ($b=(6.6,1,-3)$) for $L\in[0,36]$, marking the three pairwise crossings in each case; this is the picture the exercise is computing.
+- [Simplify] The SM value $\energy{\mu}_{13}\approx2.38\times10^{14}$ GeV is quoted as the source's; direct evaluation gives $2.37\times10^{14}$ GeV for both rounded and exact $b_2$, so quote 2.37 and drop the "source's rounded" qualifier.
+- [Structure] Move part (a)'s "The source's numerical steps use the rounded $b_2$..." sentence into the closing note on exact $b_2$, so the solution reads linearly.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/10 The Renormalization Group/10.13 Exercises/10.13.08 Relevant, marginal, and irrelevant operators.md
+priority: low
+graph: no
+manim: no
+summary: Correct dimension counting and suppression estimate, clearly presented.
+- [Intuition] Add that the marginal $\signal{\phi}^4$ coupling is marginally irrelevant in $d=4$ because $\signal{\beta}>0$ (Exercise 10.1), so it slowly decreases logarithmically toward the infrared; this completes part (b).
+- [Simplify] Use one notation for the coefficients: the Lagrangian has $\signal{\lambda_6}/(\energy{\Lambda}^2 6!)$ while the solution writes $\signal{\lambda}_{2n}/\energy{\Lambda}^{2n-4}$ without the $(2n)!$; state that the factorial is absorbed or keep it consistently.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.01 The Path Integral in Quantum Mechanics.md
+priority: low
+graph: no
+manim: no
+summary: Clear chapter hub with good motivation and a correct reading order through the four particle notes.
+- [Links] Optionally replace "full to connected and proper functions" with explicit links to [[11.03 Connected Green's Functions and W[J]]] and [[11.04 The Effective Action Γ[φ_cl]]]; otherwise no change needed.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.01.01 Sum over Histories.md
+priority: medium
+graph: yes
+manim: yes
+summary: Correct and carefully qualified, but the stationary-phase idea stays abstract and the "The source describes..." transcription scaffolding distracts.
+- [Simplify] Replace "The source describes the particle as taking all paths at once" with a direct statement and merge it with the following note callout, which repeats the same caveat.
+- [Example] Add a two-path toy: two paths with action difference $\Delta S$ give $|e^{iS_1}+e^{iS_2}|^2=2+2\cos\Delta S$, which shows interference and why squaring each path first loses it.
+- [Graph] Plot $\cos S(a)$ against $a\in[-3,3]$ for the free-particle family $q(t)=q_{\mathrm{cl}}(t)+a\sin(\pi t/T)$, where $S(a)=S_{\mathrm{cl}}+m\pi^2a^2/(4T)$, for $m/T=1,5,20$, to show the phase becoming stationary only near $a=0$ as the action scale grows.
+- [Manim] Animate a fan of paths between fixed endpoints, each path adding its unit phasor $e^{iS}$ tip-to-tail; paths near the classical one add coherently while distant ones curl up and cancel.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.01.02 Derivation from Quantum Mechanics.md
+priority: medium
+graph: no
+manim: yes
+summary: The time-slicing derivation is correct and complete, including the normalization count, but forward references without links and dense prose make the flow harder to follow than necessary.
+- [Links] "use the small-time approximation from the previous page" and "must reduce to (11.4)" point to other notes without links; link [[11.01.01 Sum over Histories]] and [[11.01.03 The Free Particle]].
+- [Simplify] Move the paragraph on operator ordering (left-endpoint potential) next to Remark 11.1 and shorten it; it currently sits between the remark and the reconstruction check.
+- [Example] Add the explicit $N=2$ case: one intermediate integral of two free slice kernels, done by completing the square, gives (11.4) with $2\epsilon$; this makes the "reconstruction check" concrete.
+- [Manim] Animate the time slicing: a jagged polygon path through $N$ slices whose vertices are integrated over, with $N$ doubling from 2 to 32 and the polygons densifying toward continuous paths.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.01.03 The Free Particle.md
+priority: low
+graph: yes
+manim: no
+summary: Correct, well-checked exact Gaussian example; the fluctuation factor is fixed by comparison rather than computed, which is acceptable but could be motivated.
+- [Simplify] State in one line why comparison can fix the fluctuation factor: it is independent of $q_i,q_f$, so the delta-function limit fixes it (or point to the $N$-slice product in [[11.01.02 Derivation from Quantum Mechanics]]).
+- [Graph] Plot $\mathrm{Re}\,K_0(q_f,T;0,0)$ against $q_f\in[-5,5]$ for $m=1$ and $T=0.2,1,3$, to show the chirped oscillations and the $T^{-1/2}$ decrease of the prefactor.
+- [Intuition] Add one sentence that the classical action $m(q_f-q_i)^2/(2T)$ is kinetic energy times time for the straight path, so the phase grows with distance squared and causes the chirp.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.01.04 Harmonic Oscillator.md
+priority: medium
+graph: yes
+manim: no
+summary: The classical path, action, product identity, and kernel are correct, but the determinant-ratio step is only described and the Euclidean example has notation slips.
+- [Simplify] Show the determinant ratio explicitly: $\det(-\partial_t^2-\omega^2)/\det(-\partial_t^2)=\prod_n(1-\omega^2T^2/n^2\pi^2)=\sin\omega T/(\omega T)$, then multiply the free prefactor $\sqrt{m/(2\pi iT)}$ by its inverse square root to get (11.5).
+- [Structure] In Example 11.2 the measure is written $\mathcal{D}q_E$ while the action uses $S_E[q]$ and $\dot q$; use one symbol. Also replace "The source calls this result exact" by a direct statement.
+- [Graph] Plot $|\sin\omega T|^{-1/2}$ against $\omega T\in[0,4\pi]$, with the free curve $(\omega T)^{-1/2}$ for comparison, and mark the caustics at $\omega T=n\pi$ where the phase jumps by $-\pi/2$.
+- [Graph] Plot the partial products $\prod_{n=1}^{N}(1-x^2/n^2\pi^2)$ for $N=1,3,10$ against $\sin x/x$ for $x\in[0,10]$ to make the infinite-product identity tangible.
+- [Links] The zero-frequency check refers to (11.4); link [[11.01.03 The Free Particle]] there.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.02 Functional Integrals for the Scalar Field.md
+priority: low
+graph: no
+manim: no
+summary: Concise hub that correctly sets the lattice-regularized view and the Feynman-prescription convention.
+- [Links] "The source functional in the next article" should link [[11.02.01 Generating Functional Z[J]]] explicitly.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.02.01 Generating Functional Z[J].md
+priority: medium
+graph: no
+manim: no
+summary: Definitions and factors of $i$ are correct, but the expansion is first written for the unnormalized functional and then corrected in a callout, which is avoidable friction.
+- [Simplify] Write the functional expansion directly for $Z[J]/Z[0]$ and delete the correcting callout; also drop the "The source writes" phrasing.
+- [Intuition] Add a zero-dimensional analogue: $Z(J)=\int\mathrm{d}x\,e^{-x^2/2+Jx}$ with $\langle x^n\rangle=\partial_J^nZ/Z|_{J=0}$, so the reader sees source differentiation before the functional version.
+- [Structure] Move Remark 11.3 on the $i\epsilon$ prescription before (11.7), since (11.7) already presupposes vacuum boundary conditions.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.02.02 The Free Scalar Field and Gaussian Functional Integrals.md
+priority: high
+graph: yes
+manim: no
+summary: The derivation is correct up to the boxed result, but the box itself is wrong and the reader must follow several "the source writes/calls" corrections to reach the right propagator.
+- [Correctness] Boxed (11.9) reads $Z_0[J]=Z_0[0]\exp[-\tfrac12\int J\Delta_FJ]$; with weight $e^{iS}$ it must be $Z_0[0]\exp[-\tfrac{i}{2}\int J\Delta_FJ]$. Put the correct form in the box and delete the correcting callout.
+- [Simplify] Rewrite Example 11.4 as one clean computation (first derivative, second derivative, factor $1/i^2$, result $i\Delta_F$) and remove the "source calls" and "next line of the source" passages and the callout that reconciles them.
+- [Simplify] The source-term display drops the $-i\epsilon$ that the line above kept; keep it consistently or state once that it is implicit from here on.
+- [Graph] Plot the Euclidean free propagator $\Delta_E(r)=mK_1(mr)/(4\pi^2r)$ against $r\in[0.1,5]/m$ together with the massless $1/(4\pi^2r^2)$ on a log scale, to show short-distance agreement and exponential decay beyond the Compton length.
+- [Example] For Wick's theorem, write the four-point result explicitly: $\langle\phi_1\phi_2\phi_3\phi_4\rangle=(i\Delta_{12})(i\Delta_{34})+(i\Delta_{13})(i\Delta_{24})+(i\Delta_{14})(i\Delta_{23})$.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.02.03 Functional Determinants and Zeta Regularization.md
+priority: medium
+graph: no
+manim: no
+summary: Correct definitions with good caveats, but the note has no worked example and its physical-quantity table omits most symbols used.
+- [Example] Add the 1D example that links to the oscillator: on a circle of circumference $\beta$, zeta regularization gives $\det(-\partial_\tau^2+\omega^2)=4\sinh^2(\beta\omega/2)$, which reproduces $Z=1/(2\sinh(\beta\omega/2))$ and checks against [[11.01.04 Harmonic Oscillator]].
+- [Simplify] Use the Euclidean operator $-\partial_E^2+m^2$ in the main text instead of the Minkowski "$-\square-m^2$ on a four-dimensional torus", so the note does not first state and then retract that the spectrum is suitable.
+- [Structure] The table lists only $m$; add $\mathcal{O}$, $\lambda_n$, $\zeta_{\mathcal{O}}$, $s$, and the heat-kernel parameter $t$ (with unit $\mathrm{MeV^{-2}}$, not a time).
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.03 Connected Green's Functions and W[J].md
+priority: low
+graph: no
+manim: no
+summary: Clear and correct; the factors of $i$ in $W=-i\ln Z$, the expansion, and the free example are consistent.
+- [Example] Add the lowest interacting example: in $\phi^4$ theory the tree-level connected four-point function is $-i\lambda\int\mathrm{d}^4z\prod_{k=1}^{4}i\Delta_F(x_k-z)$, showing that interactions make $G_c^{(4)}\neq0$.
+- [Intuition] State the zero-dimensional cumulant analogy explicitly: $\ln\langle e^{Jx}\rangle=J\langle x\rangle+\tfrac{J^2}{2}(\langle x^2\rangle-\langle x\rangle^2)+\dots$.
+- [Simplify] Merge the one-sentence "Connected propagator" lead-in with the following paragraph; it says the same thing twice.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.04 The Effective Action Γ[φ_cl].md
+priority: low
+graph: no
+manim: no
+summary: Good hub that states the purpose of the Legendre transform and links all subnotes except the first.
+- [Links] Add an explicit link to [[11.04.01 Legendre Transform of W[J]]] at the start, as the other hubs do.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.04.01 Legendre Transform of W[J].md
+priority: medium
+graph: yes
+manim: no
+summary: The Legendre transform and the free check are correct, but the source misstatement is kept and corrected in a callout, and intuition for the transform is missing.
+- [Simplify] Replace the callout "The source says that the field ... extremizes the effective action itself" with one main-text sentence: with a source, $\Gamma+\int J\phi_{\mathrm{cl}}$ is stationary; without one, $\Gamma$ is.
+- [Intuition] Add the thermodynamic analogy: as $G(T,p)$ is the Legendre transform of $F(T,V)$ that exchanges volume for pressure, $\Gamma$ exchanges the control variable $J$ for the response $\phi_{\mathrm{cl}}$.
+- [Example] Write the free check as equations: $\phi_{\mathrm{cl}}=-\Delta_FJ$, $J=(\square+m^2)\phi_{\mathrm{cl}}$, $\Gamma_0=-\tfrac12\int\phi_{\mathrm{cl}}(\square+m^2)\phi_{\mathrm{cl}}=S_0$.
+- [Graph] Zero-dimensional toy: for $e^{W(J)}=\int\mathrm{d}x\,e^{-x^2/2-gx^4/24+Jx}$ with $g=1$, plot numerically $W(J)$ for $J\in[-3,3]$ and its Legendre transform $\Gamma(\varphi)$, with the classical $-\varphi^2/2-g\varphi^4/24$ overlaid.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.04.02 Proper Vertex Functions.md
+priority: low
+graph: no
+manim: no
+summary: Correct signs and factors of $i$ in (11.14), (11.15), and the inverse relation, with a useful explicit tree-level check.
+- [Example] Add the geometric-series view $G_c=G_0+G_0(-i\Sigma)G_0+\dots=i/(p^2-m^2-\Sigma)$ and link the diagrammatic form in [[11.07.01 Derivation for the Scalar Field]].
+- [Intuition] Give a one-line picture of 1PI: a diagram that falls into two pieces when one internal line is cut is reducible; a chain of self-energy bubbles is the standard example.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.04.03 Effective Potential.md
+priority: medium
+graph: yes
+manim: no
+summary: The Coleman–Weinberg result and its checks are correct, but the step from the Gaussian determinant to (11.16) is skipped and one symbol is uncolored.
+- [Simplify] Show the intermediate step: in dimensional regularization $\tfrac12\int\frac{\mathrm{d}^dk_E}{(2\pi)^d}\ln(k_E^2+M^2)=-\frac{M^4}{64\pi^2}\big(\tfrac{2}{\bar\epsilon}+\tfrac32-\ln\tfrac{M^2}{\mu^2}\big)$, and $\overline{\mathrm{MS}}$ removes the pole, giving (11.16) with $M^2=m^2+\lambda\phi_{\mathrm{cl}}^2/2$.
+- [Structure] The one-loop integrand uses an uncolored $V''$ for the tree potential; write the second derivative of $\energy{V}^{(0)}$ consistently with the table.
+- [Graph] Plot $V^{(0)}$ and $V^{(0)}+V^{(1)}_{\mathrm{eff}}$ against $\phi_{\mathrm{cl}}\in[-4,4]$ for $m=\mu=1$ and $\lambda=1$ and $3$, to show the size of the one-loop shift and that it stays even in the field.
+- [Intuition] Add one sentence that $V''$ is the field-dependent mass squared of the fluctuations, so the one-loop term is their zero-point energy $\tfrac12\sum\omega_k$ per volume.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.04.04 Loop Expansion and Counting Powers of ℏ.md
+priority: low
+graph: no
+manim: no
+summary: Correct power counting, including the $I-V=L-1$ graph argument; the main expansion leaves the linear term to a callout.
+- [Simplify] Expand the source-coupled exponent $(S+\int J\phi)/\hbar$ in the main text, so the linear term cancels by the definition of the saddle and the callout can be removed.
+- [Example] Apply $L=I-V+1$ to two concrete $\phi^4$ self-energy graphs (the tadpole with $I=1,V=1$ and the sunset with $I=3,V=2$) to show the powers $\hbar^1$ and $\hbar^2$.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.05 Functional Integrals for Fermions.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub with a useful two-step sign check and a correct reading order.
+- [Structure] No change needed.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.05.01 Grassmann Variables.md
+priority: low
+graph: no
+manim: no
+summary: Short, correct introduction to Grassmann algebra with a good truncation example.
+- [Example] Add one line with three generators showing $(\theta_1\theta_2)^2=0$ but $\theta_1\theta_2\neq0$, and that $\theta_1\theta_2$ commutes with $\theta_3$, to make "even bilinears commute" concrete.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.05.02 Berezin Integral.md
+priority: low
+graph: no
+manim: no
+summary: Correct rules, orientation signs, and change-of-variables result, explained with a clear one-variable check.
+- [Structure] The translation-invariance paragraph appears before the rules (11.18) it justifies; move it after (11.18).
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.05.03 Gaussian Integrals over Grassmann Variables.md
+priority: low
+graph: no
+manim: no
+summary: The one-pair, determinant, and source formulas are correct and the shift argument checks out; the two-pair case is described rather than shown.
+- [Example] Write the two-pair expansion explicitly: the quadratic term $\tfrac12(\bar\theta M\theta)^2$ and the Berezin integration that gives $M_{11}M_{22}-M_{12}M_{21}$.
+- [Structure] Add $\mathcal{O}$ to the physical-quantity table, since Example 11.6 uses it.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.05.04 Fermionic Functional Integral.md
+priority: medium
+graph: no
+manim: no
+summary: (11.21)–(11.23) are correct, but the note displays a wrong two-point formula from the source before correcting it, which is confusing.
+- [Correctness] The displayed correlator uses $\delta^2Z_0/\delta\bar\eta_\alpha(x)\delta\bar\eta_\beta(y)$, which vanishes at zero source; replace it with $\frac{1}{i^2}\frac{1}{Z_0}\frac{\delta}{\delta\eta_\beta(y)}\frac{\delta Z_0}{\delta\bar\eta_\alpha(x)}\big|_0=iS_{F,\alpha\beta}(x-y)$ (left derivatives) and delete the "source prints" display and its correcting callout.
+- [Example] Show the completing-the-square shift $\psi\to\psi-S_F\eta$, $\bar\psi\to\bar\psi-\bar\eta S_F$ in one display so (11.22) is derived, not only stated.
+- [Intuition] For the fermion-loop sign, show the one-line contraction in which reordering $\bar\psi_a\psi_a\bar\psi_b\psi_b$ into two propagators gives $-\mathrm{tr}(S_{ab}S_{ba})$.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.06 Functional Integrals for Gauge Fields.md
+priority: low
+graph: no
+manim: no
+summary: Good hub that states the gauge-redundancy problem and the physical-amplitude test clearly.
+- [Links] "Exercise 11.9" is unlinked; link [[11.10.09 Unphysical photon modes in electron–positron annihilation]].
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.06.01 Gauge Redundancy.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and clear statement of gauge invariance and of the zero modes of the Maxwell operator.
+- [Graph] Toy model: plot the integrand $e^{-(x-y)^2}$ over $x,y\in[-4,4]$ as a 3D surface; it is constant along the orbits $x-y=\text{const}$, so the integral diverges with the orbit length, the finite-dimensional picture of $\operatorname{Vol}(\mathcal{G})$.
+- [Example] Show the momentum-space zero mode in one line: $(-k^2g^{\mu\nu}+k^\mu k^\nu)k_\nu=0$.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.06.02 The Faddeev–Popov Procedure.md
+priority: medium
+graph: no
+manim: yes
+summary: The identity, the Lorenz-gauge determinant, the gauge averaging, and the $\xi$ propagator are correct, but the idea lacks a finite-dimensional motivation and the notation is mixed.
+- [Example] Start with the finite-dimensional identity $1=|g'(x_0)|\int\mathrm{d}x\,\delta(g(x))$ applied to the toy integral $\int\mathrm{d}x\,\mathrm{d}y\,e^{-(x-y)^2}$ with slice $y=0$, to show how the orbit volume factors out.
+- [Structure] The gauge condition and determinant use plain $A$ ($G(A)$, $\Delta_{\mathrm{FP}}[A]$) while the rest uses $\electric{A}_\mu$, and $\omega$, $G$, $\Delta_{\mathrm{FP}}$, $\mathcal{O}^{\mu\nu}$ are missing from the table; make both consistent.
+- [Simplify] Show the inversion of $\mathcal{O}^{\mu\nu}$ in momentum space with transverse and longitudinal projectors to get (11.27) instead of stating it.
+- [Manim] Animate gauge orbits as curves in a 2D field-space sketch, a slice $G=0$ that cuts each orbit once, and then the Gaussian average over $\omega$ that smears the sharp slice into a band.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.06.03 Ghost Fields.md
+priority: medium
+graph: no
+manim: no
+summary: The ghost representation and the QCD ghost Lagrangian (11.29) are correct, but the QED and QCD operator sign conventions differ and some source scaffolding remains.
+- [Structure] QED uses $\mathcal{M}=\square$ while QCD uses $\mathcal{M}=-\partial^\mu D_\mu$, which reduces to $-\square$ at $g=0$; use one convention (or note the irrelevant constant sign) so the Abelian limit matches.
+- [Simplify] Replace "The source calls them ghosts" and "The source describes the cancellation..." with direct statements, and merge the figure callout into the caption.
+- [Structure] The table lists $\mechanical{q}$ as a vertex momentum but neither the text nor the caption uses it; keep only symbols that appear in the note or its figure.
+- [Intuition] Add one sentence on why ghosts matter in loops: the ghost loop in the gluon self-energy cancels the contribution of unphysical gluon polarizations.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.06.04 QED - The Complete Functional Integral.md
+priority: low
+graph: no
+manim: no
+summary: Correct gauge-fixed QED functional and vertex sign, with a clear statement of what the functional does and does not yet give.
+- [Example] List the three rules of Fig. 11.4 as formulas in the text ($-ig_{\mu\nu}/(k^2+i\epsilon)$, $i(\not p+m)/(p^2-m^2+i\epsilon)$, $-ie\gamma^\mu$) so they are readable and searchable without the image.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.07 Schwinger–Dyson Equations from the Functional Integral.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub that states the assumptions and the non-closure of the hierarchy.
+- [Structure] No change needed.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.07.01 Derivation for the Scalar Field.md
+priority: medium
+graph: no
+manim: no
+summary: The derivation of (11.31)–(11.32) and the Dyson resummation are correct, but one symbol is used for two quantities and an elementary toy would make the hierarchy intuitive.
+- [Correctness] Symbol clash: $\signal{\epsilon}(x)$ is the field shift, while the closing callout uses $\epsilon$ for the $i\epsilon$ prescription; rename the shift (for example $\delta\signal{\phi}(x)$).
+- [Example] Add the zero-dimensional SD identity: from $\int\mathrm{d}x\,\partial_x e^{-x^2/2-\lambda x^4/24}=0$ follows $\langle x^2\rangle+\tfrac{\lambda}{6}\langle x^4\rangle=1$, the exact analogue of (11.32).
+- [Simplify] Show the step from differentiating (11.31) with respect to $J(y)$ to (11.32): the factors $(1/i)\cdot i^2$ and $(1/i)^3\cdot i^4$, then division by $-i$.
+- [Structure] Fix the grammar "can sum infinitely many diagrams while still omit" to "while still omitting", and use the same d'Alembertian symbol $\square$ as the other notes instead of $\Box$.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.08 Ward Identities from the Functional Integral.md
+priority: low
+graph: no
+manim: no
+summary: Good hub that separates Ward identities from Schwinger–Dyson equations and states the tree-level check.
+- [Structure] No change needed.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.08.01 Global Symmetry and the Noether Current.md
+priority: medium
+graph: no
+manim: no
+summary: Identity (11.33) is correct, but the displayed action variation has a form and sign that the note must correct in a long callout.
+- [Correctness] The displayed $\delta S=\epsilon\int\mathrm{d}^4x\,\partial_\mu j_N^\mu$ (constant $\epsilon$) is inconsistent with (11.33); write the local form $\delta S=-\int\mathrm{d}^4x\,\epsilon(x)\,\partial_\mu j_N^\mu$, derive (11.33) from $0=\langle\delta O\rangle+i\langle\delta S\,O\rangle$ in the main text, and delete the correcting callout.
+- [Example] Add the U(1) complex scalar: $\delta\phi=i\phi$, $\delta\phi^*=-i\phi^*$, $j^\mu=i(\phi^*\partial^\mu\phi-\phi\partial^\mu\phi^*)$ with its sign stated, and the resulting identity for $\langle\partial_\mu j^\mu(x)\phi(x_1)\phi^*(x_2)\rangle$.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.08.02 The Ward–Takahashi Identity for QED.md
+priority: medium
+graph: no
+manim: no
+summary: (11.35), (11.36), the renormalization consequences, and the one-loop relation are correct, but (11.34) is shown in a form that the note itself says needs amputation, and source commentary dominates.
+- [Correctness] (11.34) as displayed, with an unamputated photon field contracted with $k^\mu$, is not the identity (it misses the longitudinal $\xi/k^2$ propagator factor); state it for the amputated photon leg with full electron propagators, $k_\mu\mathcal{M}^\mu(k;p,p+k)=-e[S_F(p+k)-S_F(p)]$ with an explicit factor-of-$i$ convention, and drop the correcting callout.
+- [Simplify] Remove the paragraph on "the source's preceding sentence" about charge renormalization; the main text already states $Z_1=Z_2$ and $e_0=Z_3^{-1/2}e$.
+- [Structure] Rename "Example 11.7: Explicit one-loop check", because it derives the constraint $k_\mu\delta\Gamma^\mu=\Sigma(p)-\Sigma(p+k)$ without evaluating loops; also color $\xi$ as $\signal{\xi}$ like the other gauge notes.
+- [Intuition] Add one sentence on why $Z_1=Z_2$ matters physically: charge renormalization is universal, so electrons and muons with equal bare charge keep equal renormalized charge.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.09 Conclusions and Outlook.md
+priority: low
+graph: no
+manim: no
+summary: Accurate summary of the chapter's tools and checks.
+- [Links] Link each bullet to its section note (for example [[11.03 Connected Green's Functions and W[J]]] and [[11.06.02 The Faddeev–Popov Procedure]]) so the summary also works as a navigation page.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.10 Exercises/11.10 Exercises.md
+priority: low
+graph: no
+manim: no
+summary: Clear exercise hub with a useful reading order and convention reminder; all ten links resolve.
+- [Structure] The "Source solutions" section only repeats that solutions sit in the linked articles; merge its two sentences into the intro or drop the heading.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.10 Exercises/11.10.01 Harmonic oscillator at finite temperature.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and well-checked derivation (zero mode, product formula, both temperature limits), with one self-contradictory sentence about the source.
+- [Structure] The sentence "The source now explicitly identifies the $n=0$ contribution as $1/\omega$." directly after the "Zero-mode factor" callout contradicts the callout (which says the source hides it in $\mathcal N'$); delete it or merge it into the callout.
+- [Simplify] In the step from $\mathcal N'/\omega\prod 1/(\omega_n^2+\omega^2)$ to $\frac{1}{\beta\omega}\prod(1+\beta^2\omega^2/4\pi^2n^2)^{-1}$, state explicitly that the frequency-independent factor $\prod_{n\ge1}\omega_n^{-2}$ (zeta-regularized $\prod_{n\ge1}(2\pi n/\beta)^2=\beta^2$) together with the measure supplies the $1/\beta$, so the reader sees where $\beta$ comes from.
+- [Graph] Plot $Z(\beta\omega)=1/(2\sinh(\beta\omega/2))$ on a log axis for $\beta\omega\in[0.1,10]$ together with the asymptotes $1/(\beta\omega)$ (classical) and $e^{-\beta\omega/2}$ (ground state) to visualize the two limits discussed in the last paragraph.
+- [Example] Add a numeric check: truncating the product at $N=1,5,50$ for $\beta\omega=2$ and comparing with $\sinh(1)/1\approx1.1752$ shows how fast the infinite-product identity converges.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.10 Exercises/11.10.02 Free-theory four-point function.md
+priority: low
+graph: no
+manim: no
+summary: Correct and clear; factors of $i$ and the $G^{(2)}=i\Delta_F$ convention are consistent ($i^{-4}(-i\Delta)^2=(i\Delta)^2$).
+- [Simplify] The product-rule step jumps from "derivatives above second order vanish" to "all pairings"; show the explicit fourth derivative of $e^f$ at $J=0$, $f_{12}f_{34}+f_{13}f_{24}+f_{14}f_{23}$, as one displayed line.
+- [Intuition] Add the finite-dimensional analogue $\langle x^4\rangle=3\langle x^2\rangle^2$ for a one-variable Gaussian before the field calculation; it is mentioned only at the end in the coincident-point remark.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.10 Exercises/11.10.03 Fermionic and bosonic determinants.md
+priority: medium
+graph: no
+manim: no
+summary: Physically correct Euclidean treatment ($D_E^\dagger D_E=K\mathbf1_4$, ratio $(\det K)^{5/2}$, log coefficient $-4$), but the many source-correction callouts make the main line hard to follow.
+- [Structure] Three callouts (exercise note, "Operator convention", final note) all discuss the source's Lorentzian identity and determinant phase; merge them into one callout so the solution reads as a single derivation.
+- [Structure] The Physical quantities table omits the operators $K$, $D_{\mathrm E}$ and the Euclidean gamma matrices used throughout; add them (or state that operators are omitted).
+- [Example] Make the mode-by-mode paragraph concrete: for one Euclidean momentum mode with $K$-eigenvalue $\lambda=k^2+m^2$, the scalar contributes $\lambda^{-1/2}$ and the Dirac block $\det(i\gamma\cdot k+m)=\lambda^2$; display this instead of describing it in words.
+- [Intuition] In the Supersymmetry section, give the simplest matched count explicitly (one Dirac fermion versus two complex scalars, i.e. $(\det K)^2(\det K)^{-2}=1$) to show the cancellation rather than only stating that multiplicities differ.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.10 Exercises/11.10.04 Grassmann Gaussian integral.md
+priority: low
+graph: no
+manim: no
+summary: Correct proof with explicit factorial and measure-sign bookkeeping and good small-matrix checks.
+- [Example] Write out the $n=2$ check explicitly (expand $(\bar\theta M\theta)^2/2$, show the cross terms and the sign that yields $M_{11}M_{22}-M_{12}M_{21}$) instead of describing it in prose.
+- [Structure] Remove the extra blank lines after the "Factorial and measure" callout (three consecutive empty lines before "Small-matrix checks").
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.10 Exercises/11.10.05 One-loop effective potential in quartic theory.md
+priority: medium
+graph: yes
+manim: no
+summary: The regulated result $-\frac{M^4}{64\pi^2}[1/\varepsilon-\gamma+\ln4\pi-\ln(M^2/\mu^2)+3/2]$ and the boxed $\overline{\mathrm{MS}}$ form check out, but the text has a dangling symbol and skips the key integral.
+- [Correctness] "Here $\mathcal V$ denotes the spacetime volume" refers to a symbol that appears in no equation (the volume factor in $\ln\det=\mathcal V\int d^dk\ldots$ is never written), yet $\mathcal V$ is also listed in the table; either insert the relation $\Gamma^{(1)}=-\mathcal V\,V^{(1)}_{\mathrm{eff}}$ with the determinant, or delete the sentence and the table row.
+- [Simplify] Show the master formula $\frac12\int\frac{d^dk_E}{(2\pi)^d}\ln(k_E^2+M^2)=-\frac{\Gamma(-d/2)}{2(4\pi)^{d/2}}M^d$ and the expansion $\Gamma(-2+\varepsilon)=\frac12(1/\varepsilon-\gamma+3/2)+\mathcal O(\varepsilon)$; the jump to the regulated result is currently unexplained.
+- [Structure] The same symbol $V^{(1)}_{\mathrm{eff}}$ denotes the unrenormalized integral, the regulated expansion and the renormalized boxed result; label the first two (e.g. "bare") to distinguish them from the $\overline{\mathrm{MS}}$ result.
+- [Graph] Plot $V_{\mathrm{tree}}+V^{(1)}_{\mathrm{eff}}$ versus $\phi_{\mathrm{cl}}\in[-3,3]\,m$ for $\lambda=0.5,1,2$ with $\mu=m$, alongside the tree potential, to show the size of the one-loop correction and where the logarithm becomes large.
+- [Links] Turn the bare equation reference "(11.16)" into a link to [[11.04.03 Effective Potential]].
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.10 Exercises/11.10.06 Faddeev–Popov determinant in Coulomb gauge.md
+priority: low
+graph: no
+manim: no
+summary: Correct and concise; the propagator components match the standard Coulomb-gauge result, but part (c) states rather than derives the inversion.
+- [Simplify] In part (c), show the inversion briefly: write the quadratic action in $A_0$ and transverse $\mathbf A_T$, note that $A_0$ appears only through $\frac12(\nabla A_0)^2$ giving $i/|\mathbf k|^2$, while $\mathbf A_T$ gives the projected $i/(k^2+i0)$.
+- [Intuition] Add the explicit check that the instantaneous $D^{00}$ term in position space is proportional to $\delta(t)/(4\pi r)$, the Coulomb potential, to justify the name.
+- [Structure] The table lacks the gauge function $G$, gauge parameter $\alpha$ and $\Delta_{\mathrm{FP}}$; add them or note they are helper symbols.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.10 Exercises/11.10.07 Schwinger–Dyson equation for the photon propagator.md
+priority: medium
+graph: no
+manim: no
+summary: The kernel, the sign correction to $-i\delta^\mu_\alpha$ and the dressed propagator check out (transverse and longitudinal parts both invert to $-i$), but the step from the functional identity to the dressed equation is skipped.
+- [Simplify] "Absorbing the matter-current insertion into the proper polarization" hides the main step; show the intermediate exact equation containing $\langle T J^\mu_{\mathrm{mat}}A_\alpha\rangle$ in momentum space and then define $\Pi^{\mu\nu}$ through its 1PI part.
+- [Example] Add the one-loop result for $\Pi(k^2)$ (for example $\Pi_2(k^2)\propto-\frac{e^2}{2\pi^2}\int_0^1dx\,x(1-x)\ln\frac{m^2-x(1-x)k^2}{\mu^2}$ in $\overline{\mathrm{MS}}$, with the sign matched to the note's convention) as a concrete transverse example.
+- [Links] Turn "(11.27)" into a link to [[11.06.02 The Faddeev–Popov Procedure]].
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.10 Exercises/11.10.08 Effective-action Hessian and exact propagator.md
+priority: low
+graph: no
+manim: no
+summary: Correct chain-rule proof with carefully separated factors of $i$ ($W''=i\langle\phi\phi\rangle_c$ checks out), although the repeated convention callouts are heavy.
+- [Structure] The two exercise callouts and the "Factors of i" callout repeat the same bookkeeping; replace them with one small table of the three objects ($W''$, $\Gamma''$, proper vertex $i\Gamma''$) and their tree-level values.
+- [Intuition] Add one sentence explaining why the chain rule works: $\delta\phi_{\mathrm{cl}}/\delta J=W''$ and $\delta J/\delta\phi_{\mathrm{cl}}=-\Gamma''$ are inverse Jacobians of the same map.
+- [Links] Link "relation (11.15)" to [[11.04.02 Proper Vertex Functions]].
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.10 Exercises/11.10.09 Unphysical photon modes in electron–positron annihilation.md
+priority: low
+graph: yes
+manim: no
+summary: Correct current-conservation argument and Born cross section, with a sound correction of the source's two-polarization claim.
+- [Simplify] The note never shows the cancellation of an actual gauge-dependent term; add the general-$\xi$ propagator and show that its $(1-\xi)q_\mu q_\nu/q^2$ piece drops by $q_\mu j^\mu=0$, which is what the exercise asks.
+- [Graph] Plot $\sigma s/(4\pi\alpha^2/3)=\sqrt{1-4m_\mu^2/s}\,(1+2m_\mu^2/s)$ versus $\sqrt s/(2m_\mu)\in[1,5]$ to show the threshold rise and the approach to 1.
+- [Structure] The exercise uses $k$ and the solution $q$ for the same photon momentum; use one symbol.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/11 Functional Integrals/11.10 Exercises/11.10.10 Translation Ward identity in quartic theory.md
+priority: medium
+graph: no
+manim: no
+summary: Conceptually sound corrections (no Noether current for $\mathbb Z_2$, translation symmetry does not protect the mass), but the Ward identity is stated without derivation and the requested relation to the propagator is only described.
+- [Simplify] Derive the local identity in a few lines: substitute $\phi\to\phi+\epsilon_\nu(x)\partial^\nu\phi$, use $\delta S=-\int\partial_\mu\epsilon_\nu T^{\mu\nu}$, and read off the contact terms, so the $-i$ and sign conventions are traceable.
+- [Example] Write the two-point case explicitly, $\partial_\mu\langle T^{\mu\nu}(x)\phi(x_1)\phi(x_2)\rangle=-i[\delta(x-x_1)\partial_1^\nu+\delta(x-x_2)\partial_2^\nu]D(x_1-x_2)$, and its integrated form $(\partial_1+\partial_2)D=0$, instead of describing them in prose.
+- [Structure] The exercise statement first introduces the $\mathbb Z_2$ symmetry and then says "Instead"; restate the exercise directly in terms of translation symmetry and keep the parity remark in the callout.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.01 Lie Groups and Lie Algebras.md
+priority: low
+graph: no
+manim: no
+summary: Clear chapter introduction with appropriate caveats about asymptotic freedom and confinement.
+- [Links] Add links to [[12.01.03 The Group SU(2)]] and [[12.01.04 The Group SU(3)]] where "the two concrete groups" are mentioned, so the hub links all four section notes.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.01.01 General Structure.md
+priority: low
+graph: no
+manim: no
+summary: Correct and compact (Jacobi identity in standard form), but the explanatory paragraph refers to an identity before it is displayed.
+- [Structure] The paragraph "The commutator measures ... Substitute (12.1) twice to obtain the displayed identity" precedes the Jacobi identity; move it after the displayed $f^{abe}f^{ecd}+\ldots=0$.
+- [Example] Add the SU(2) instance $f^{abc}=\varepsilon^{abc}$, giving $K^{ab}=\varepsilon^{acd}\varepsilon^{bcd}=2\delta^{ab}$, as a concrete check of the positive-definite form.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.01.02 Representations.md
+priority: low
+graph: no
+manim: no
+summary: Correct normalizations and Casimirs; the trace check is described in words before the Casimir is introduced.
+- [Structure] Move the "useful normalization check" paragraph below the Quadratic Casimir section and write it as an equation: $(N^2-1)T_F=N\,C_F\Rightarrow C_F=(N^2-1)/(2N)$.
+- [Example] Add the adjoint check $f^{acd}f^{bcd}=C_A\delta^{ab}=N\delta^{ab}$ (linking it to $K^{ab}$ in [[12.01.01 General Structure]]), and move Example 12.1 (SU(2) Casimir, currently in the SU(3) note) here.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.01.03 The Group SU(2).md
+priority: low
+graph: yes
+manim: no
+summary: Correct and clear; the double-cover argument is stated in words and would benefit from one formula and a plot.
+- [Example] Display $e^{i\theta\sigma^3/2}=\mathrm{diag}(e^{i\theta/2},e^{-i\theta/2})$ so the minus sign at $\theta=2\pi$ is visible.
+- [Graph] Plot the characters $\chi_{1/2}(\theta)=2\cos(\theta/2)$ (doublet) and $\chi_1(\theta)=1+2\cos\theta$ (adjoint, vector) for $\theta\in[0,4\pi]$ to show the $4\pi$ versus $2\pi$ periodicity.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.01.04 The Group SU(3).md
+priority: low
+graph: no
+manim: no
+summary: Correct matrices, structure constants, $d$-symbol definition and completeness relation, but the worked example concerns SU(2) rather than SU(3).
+- [Structure] Example 12.1 checks the SU(2) Casimir; move it to [[12.01.03 The Group SU(2)]] or [[12.01.02 Representations]] and replace it here with the SU(3) check $\sum_a(\lambda^a/2)^2=\frac43\mathbf1$, obtained from the completeness relation by contracting $j=k$.
+- [Example] Add one worked structure-constant evaluation, e.g. $f^{458}=-2i\operatorname{Tr}([T^4,T^5]T^8)=\sqrt3/2$, to show how the table is obtained.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.02 Yang–Mills Gauge Fields.md
+priority: low
+graph: no
+manim: no
+summary: Clear section hub with a good three-step reading guide.
+- [Links] The first sentence links 12.02.01 and the next paragraph links it again; drop the first sentence, and add [[12.02.05 Self-Interactions of Gauge Bosons]] to the reading list.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.02.01 Local Non-Abelian Gauge Invariance.md
+priority: low
+graph: no
+manim: no
+summary: Correct setup of the covariant derivative; the motivational paragraphs are placed before the sentence they motivate.
+- [Structure] The paragraph "The connection compares internal vectors at neighboring points..." comes before "The extra term breaks local invariance"; reorder so the problem (the extra $(\partial_\mu U)\psi$ term) is stated before the remedy.
+- [Simplify] Show explicitly why the Dirac term fails: $\bar\psi i\gamma^\mu\partial_\mu\psi\to\bar\psi i\gamma^\mu\partial_\mu\psi+\bar\psi i\gamma^\mu U^\dagger(\partial_\mu U)\psi$, which makes the need for $D_\mu$ concrete.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.02.02 Transformation of Gauge Fields.md
+priority: low
+graph: no
+manim: no
+summary: Correct finite and infinitesimal transformations ($\delta A^a=\frac1g\partial\alpha^a+f^{abc}A^b\alpha^c$ checks out), but the derivation of (12.3) is described rather than shown.
+- [Simplify] Replace the descriptive derivation paragraph by the short computation $(\partial_\mu-igA'_\mu)U\psi=U(\partial_\mu-igA_\mu)\psi\Rightarrow A'_\mu=UA_\mu U^\dagger-\frac{i}{g}(\partial_\mu U)U^\dagger$ plus the identity $(\partial U)U^\dagger=-U\partial U^\dagger$.
+- [Simplify] Show the infinitesimal step $i\alpha^b[T^b,A_\mu]=-f^{abc}\alpha^bA_\mu^cT^a$ that produces the $f^{abc}A^b\alpha^c$ term.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.02.03 Field Strength Tensor.md
+priority: low
+graph: no
+manim: yes
+summary: Correct derivation and component form (12.4), with a useful test-field remark; the geometric meaning of curvature is missing.
+- [Intuition] Add the holonomy interpretation: transporting a color vector around a small $\mu\nu$ loop of area $\epsilon^2$ multiplies it by $1+ig\epsilon^2F_{\mu\nu}+\ldots$, which explains why $F$ measures non-commuting covariant derivatives.
+- [Manim] Animate parallel transport of an internal (color) arrow around a small square plaquette in the $\mu\nu$ plane, showing that it returns rotated by an amount proportional to $F_{\mu\nu}$, and that under a gauge transformation the rotation is conjugated ($F\to UFU^\dagger$) rather than removed.
+- [Simplify] Show the infinitesimal step from $UFU^\dagger$ to $-f^{abc}\alpha^bF^c$ in one line, mirroring 12.02.02.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.02.04 The Yang–Mills Lagrangian.md
+priority: low
+graph: no
+manim: no
+summary: Correct expansion (12.6) with matching cubic and quartic coefficients; the cross-term step is not shown.
+- [Simplify] Show how the cubic coefficient arises: the cross term $-\frac12 gf^{abc}(\partial_\mu A^a_\nu-\partial_\nu A^a_\mu)A^{b\mu}A^{c\nu}$ collapses to $-gf^{abc}(\partial_\mu A^a_\nu)A^{b\mu}A^{c\nu}$ by antisymmetry of $f^{abc}$ in $b,c$.
+- [Structure] The bullet for $\mathcal L_4$ uses $f^{abe}f^{cde}$ while (12.6) uses $f^{abc}f^{ade}$; use the same index pattern to avoid confusion.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.02.05 Self-Interactions of Gauge Bosons.md
+priority: low
+graph: no
+manim: no
+summary: Three- and four-gluon rules match the standard (Peskin–Schroeder) forms and the field equation is correct; the vertex derivation is omitted.
+- [Simplify] Sketch how (12.7) follows from $\mathcal L_3$: Fourier transform ($\partial_\mu\to-ip_\mu$ for incoming momentum), sum over the $3!$ leg assignments, and multiply by $i$; this makes the absence of an explicit $i$ in (12.7) understandable.
+- [Example] In Example 12.2, write the component form $\partial_\nu F^{a\mu\nu}+gf^{abc}A^b_\nu F^{c\mu\nu}=0$ and move the gluon term to the right as a color current to make the "self-source" statement explicit.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.03 Faddeev–Popov Quantization.md
+priority: low
+graph: no
+manim: no
+summary: Clear section hub explaining why gauge fixing is needed.
+- [Links] Add [[12.03.04 The Fully Quantized Lagrangian]], the only section note not linked from the hub.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.03.01 Gauge Orbits and Gauge Fixing.md
+priority: low
+graph: yes
+manim: no
+summary: Clear conceptual note with an appropriate Gribov caveat; it lacks a concrete toy model.
+- [Example] Add the finite-dimensional toy $\int d^2x\,e^{-S(|x|)}$ with rotations as the "gauge" symmetry: the orbits are circles, the slice $\theta=0$ picks one representative, and the Jacobian $r$ plays the role of the FP determinant; this anticipates 12.03.02.
+- [Graph] Plot the toy model: concentric circular orbits in the plane with a radial gauge-fixing line, plus a curved slice that crosses one orbit twice to illustrate a Gribov copy.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.03.02 The Faddeev–Popov Prescription.md
+priority: medium
+graph: no
+manim: no
+summary: The source's index-order error is correctly identified and fixed, but the note never completes the prescription (factoring out the gauge volume) and the table is thin.
+- [Simplify] Complete the argument after the determinant: insert the identity, use gauge invariance of $S$, $\mathcal DA$ and $\Delta_{\mathrm{FP}}$ to rename $A^\alpha\to A$, factor out $\int\mathcal D\alpha$, and average $\delta(G-\omega)$ with $e^{-i\int\omega^2/2\xi}$ to arrive at $\mathcal L_{\mathrm{gf}}$ of 12.03.04.
+- [Structure] Lead with the corrected operator $M^{ab}$ and put the source's version in the callout, rather than displaying the incomplete source formula as the main text.
+- [Structure] The table lacks $G^a$, $\alpha^a$, $\Delta_{\mathrm{FP}}$ and $M^{ab}$; add them.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.03.03 Ghost Fields.md
+priority: low
+graph: no
+manim: no
+summary: Correct ghost Lagrangian and integration by parts (consistent with $D^{ab}c^b=\partial c^a+gf^{abc}A^bc^c$); the link between $M$ and the ghost operator is implicit.
+- [Simplify] State explicitly that $M^{ab}=\frac1g\partial^\mu D^{ab}_\mu$ from 12.03.02 is replaced by $-\partial^\mu D^{ab}_\mu$ (the constant factor $-1/g$ goes into the normalization), so the reader connects the determinant identity to (12.10).
+- [Links] Link [[12.03.02 The Faddeev–Popov Prescription]] at the first mention of the FP determinant, and [[12.04.02 Vertices]] where the ghost–gluon vertex is named.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.03.04 The Fully Quantized Lagrangian.md
+priority: low
+graph: no
+manim: no
+summary: Correct and consistent with 12.03.03 and 12.02.02; brief and clear.
+- [Simplify] Add one line deriving $\mathcal L_{\mathrm{gf}}$ from Gaussian averaging over $\delta(\partial A-\omega)$ with weight $e^{-i\int\omega^2/(2\xi)}$, so $\xi$ is not introduced without motivation.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.03.05 BRST Symmetry.md
+priority: medium
+graph: no
+manim: no
+summary: Transformations are internally consistent ($s(\mathcal L_{\mathrm{gf}}+\mathcal L_{\mathrm{ghost}})=0$ and $s^2\bar c=-\partial Dc/\xi$ check out), but the note asserts rather than shows invariance.
+- [Example] Show the short check that the gauge-fixing and ghost terms cancel: $s\mathcal L_{\mathrm{gf}}=-\frac1\xi(\partial A)\,\partial^\mu D_\mu c$ and $s(-\bar c\,\partial^\mu D_\mu c)=+\frac1\xi(\partial A)\,\partial^\mu D_\mu c$, using $s(D_\mu c)=0$.
+- [Intuition] Explain that $s$ acts as a gauge transformation with parameter $\alpha^a=gc^a$ (compare 12.02.02), which makes $sA$ and $sq$ immediately recognizable.
+- [Structure] Add $s$, $\xi$ and $T^a$ to the table, and display the Nakanishi–Lautrup version ($s\bar c^a=B^a$, $sB^a=0$) instead of mentioning it only in the callout.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.04 Feynman Rules for Yang–Mills Theory.md
+priority: low
+graph: no
+manim: no
+summary: Correct reference table consistent with the detailed propagator and vertex notes; all links resolve.
+- [Structure] State in the ghost–gluon row that $q$ is the outgoing antighost momentum, since the table is meant to be usable on its own.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.04.01 Propagators.md
+priority: low
+graph: no
+manim: no
+summary: Correct propagators and a useful gauge check $k^\mu[\ldots]_{\mu\nu}=\xi k_\nu$; one caption does not match its figure.
+- [Correctness] The Fig. 12.5 caption says "dashed line", but QFT-12-05-Ghost-Propagator.svg uses stroke-dasharray "1 7" (a dotted line), and 12.04.02 calls ghost legs "dotted"; change the caption to "dotted line".
+- [Simplify] Note that Landau gauge $\xi=0$ is reached as the limit $\xi\to0$ of the family (the gauge-fixing term itself is singular there), and give the Landau-gauge propagator $-i\delta^{ab}(g_{\mu\nu}-k_\mu k_\nu/k^2)/k^2$ explicitly.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.04.02 Vertices.md
+priority: low
+graph: no
+manim: no
+summary: Correct vertex factors, but the table lists an unused symbol and one explanatory sentence is misleading.
+- [Correctness] The Physical quantities table lists $\mechanical{k}$ among the vertex momenta, but $k$ never appears in the note; remove it.
+- [Intuition] "This asymmetry reflects the antisymmetry of $f^{abc}$ and the derivative acting only on $\bar c$" attributes the asymmetry partly to $f^{abc}$; it comes from the derivative on $\bar c$ in (12.10), so rephrase.
+- [Simplify] Derive the ghost vertex from (12.10) in one line (the derivative on the outgoing antighost gives a factor of $q^\mu$, times $i$ from $e^{iS}$, giving $-gf^{abc}q^\mu$).

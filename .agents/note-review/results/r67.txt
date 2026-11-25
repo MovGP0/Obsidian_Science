@@ -1,0 +1,150 @@
+=== 02 Physics/07 Astrophysics and Cosmology/Advanced stellar burning, polytropes, and compact stars.md
+priority: high
+graph: yes
+manim: no
+summary: A page-by-page transcription that keeps many handwritten errors, flags some of them in callouts, and has no clear line of argument from burning stages through degeneracy to the Chandrasekhar mass.
+- [Correctness] In the Gamow-energy line, "$\energy{\epsilon}_0=1.22(Z_\alpha Z_X\mu\thermal{T}_6^2)^{1/3}\,\unit{keV}$" needs squared charges: $E_0=1.22\,(Z_\alpha^2Z_X^2\mu\,T_6^2)^{1/3}\,\mathrm{keV}$.
+- [Correctness] Composition table, row "Iron, as written": for fully ionized ${}^{56}$Fe the values are $\mu=56/27\approx2.07$, $\mu_0=56$ and $\mu_e=56/26\approx2.15$. The listed $56/29$, $28$ and $2$ are wrong. In the note's density relation $\rho=n\mu_0m_u$, $\mu_0$ has to be 56.
+- [Correctness] In the Fermi–Dirac pressure block, state the correct form once instead of only listing the variants: $P=\frac{(3\pi^2)^{2/3}}{5}\frac{\hbar^2}{m_e}\left(\frac{\rho}{\mu_em_u}\right)^{5/3}$. The displayed "$\thermal{T}/\mechanical{\rho}_{\mathrm{cr}}^{3/2}$" should be $T/\rho_{\mathrm{cr}}^{2/3}$. With that form the $2.38\times10^{-5}$ coefficient checks out: recomputed 2.385e-5 kg m^-3 K^-3/2. For He at $10^9$ K it gives $\rho_{\mathrm{cr}}\approx2.8\times10^9$ kg m^-3.
+- [Correctness] Chandrasekhar mass: the correct coefficient is $\sqrt{3\pi}/2$, not $(3\pi)^{3/2}/2$. The composition factor is $(2/\mu_e)^2$, giving $M_{\mathrm{Ch}}=1.457\,(2/\mu_e)^2M_\odot$ (recomputed 1.456). For $\mu_e=1$ this is $5.83M_\odot$, not the quoted $5.73M_\odot$. Replace the hedging callout with this result.
+- [Correctness] The physical-quantity table is a merged list from other notes. Examples: $z$ is listed as "Redshift … DSNB sketch" but is used as the Lane–Emden coordinate. $a$ appears three times, as radiation constant, confinement length and polytropic length. $\mu$ has three different units. $D$ is a diffusion coefficient but is used as a speed. There are neutron-drip, impact-parameter and DSNB entries the note never uses. Rebuild the table from symbols actually present and resolve the $a$, $n$, $\mu$ and $E$ clashes.
+- [Graph] Plot Lane–Emden solutions $\omega(z)$ for $n=0,1,1.5,3,5$ on $0\le z\le10$, marking $z_{3/2}=3.65$ and $z_3=6.90$, to replace the hand sketch in Fig. 24. Optionally add a log-log plot of the white-dwarf mass–radius relation $M\propto R^{-3}$ approaching the Chandrasekhar limit.
+=== 02 Physics/07 Astrophysics and Cosmology/Astronomical fluxes, magnitudes, and extinction.md
+priority: medium
+graph: yes
+manim: no
+summary: The note is accurate and readable on fluxes, magnitudes and extinction, but it is cluttered with course logistics, and its quantity table belongs to several other notes.
+- [Correctness] The physical-quantity table lists many symbols the note never uses, and several clash with symbols that are used. Orbital period $\signal{T}$ clashes with transmission $\signal{T}(\signal{\lambda})$. Oort $A,B$ clash with extinction $A$ and the $B$ band. Binary separation is listed for $\mechanical{a}$, which the note uses for atmospheric path length. Right ascension and parallax are both $\alpha$. Also listed are noise terms, a star-formation time and others. Prune the table to this note's symbols.
+- [Simplify] Remove the course logistics: homework dates, Wikipedia sign-up, "Birthday lecture!", reading lists and the "3±5 counts" fragment. Replace them with one sentence on what a magnitude is and why it is logarithmic.
+- [Example] After the distance-modulus box, add a worked example. For instance, a star with $m_V=10$ at $d=1$ kpc with $A_V=1$ has $M_V=10-5\log_{10}(1000)+5-1=-1$. Include the sign convention for $A$ explicitly ($m-M=5\log_{10}d-5+A$).
+- [Intuition] In the extinction section, mention that $A_B=A_V+E(B-V)\approx4.1E(B-V)$ follows directly from $R_V=3.1$. This makes the quoted "4.0" a derived value rather than a separate fact. Also explain why scattering by small grains reddens light.
+- [Graph] Plot Planck spectra $B_\lambda(T)$ for $T=3000,5800,10^4$ K over 100–3000 nm on log axes, with the U, B, V, R, I band centres marked. This shows Wien's law and why color indices measure temperature.
+=== 02 Physics/07 Astrophysics and Cosmology/Atomic oscillators and line absorption cross sections.md
+priority: medium
+graph: yes
+manim: yes
+summary: The classical oscillator derivation is correct and fairly complete, but the order is confusing (the line integral comes before the cross section it uses), and the quantity table is wrong.
+- [Correctness] The physical-quantity table defines $\alpha$ as the fine-structure constant, but the note uses $\signal{\alpha}_{\signal{\nu}}$ for the absorption coefficient. $\energy{E}$ is listed as "radiant energy" but appears only as level energies $E_u,E_\ell$. The Doppler parameter $b$ is unused. Missing are $\sigma$, $B_{\ell\to u}$, $A_{u\to\ell}$, $g_\ell$, $g_u$, $\omega_0$, $\electric{E}_0$ and $\electric{\boldsymbol d}$.
+- [Structure] Move "Cross section near resonance" after the derivation of $\sigma(\omega)=\langle L\rangle/\langle S\rangle$. Currently the frequency integral with $x=4\pi(\nu-\nu_0)/\Gamma$ appears before the Lorentzian it integrates. Also delete the duplicated sentence "The next step integrates the right side by parts. Integration by parts gives".
+- [Simplify] Remove the exam and evaluation logistics in the cross-section and oscillator-strength sections. The paragraph beginning "For the strongest transitions the integrated dipole cross section is a general result" should name the Thomas–Reiche–Kuhn sum rule ($\sum f=1$ per electron), which is what it is gesturing at.
+- [Example] Add a numerical check for H$\alpha$. Use $f_{2\to3}=0.641$, $g_2=8$, $g_3=18$ in $A_{u\to\ell}=\frac{8\pi^2e^2\nu^2}{m_ec^3}\frac{g_\ell}{g_u}f$ to recover $A_{32}\approx4.4\times10^7\,\mathrm{s^{-1}}$. This connects to the classical $\Gamma\approx5\times10^7\,\mathrm{s^{-1}}$ quoted earlier.
+- [Graph] Plot $\sigma(\omega)/\sigma_T=\omega^4/[(\omega^2-\omega_0^2)^2+\Gamma^2\omega^2]$ on log-log axes for $0.01\le\omega/\omega_0\le100$ with an exaggerated $\Gamma/\omega_0=10^{-2}$. It shows the Rayleigh $\omega^4$ regime, the Lorentzian resonance and the Thomson plateau.
+- [Manim] Animate the driven oscillator as the drive frequency sweeps through $\omega_0$. Show the amplitude peaking and the phase lag going from 0 to $\pi$, next to the growing $\sigma(\omega)$ curve.
+=== 02 Physics/07 Astrophysics and Cosmology/Baryon–photon coupling and growth of matter perturbations.md
+priority: medium
+graph: yes
+manim: yes
+summary: The Dodelson-style derivations check out, including the Christoffel contraction, moments, Einstein equations and the $\Phi(y)$ solution. The note is fragmented, though, with repeated continuity derivations and empty headings.
+- [Correctness] The physical-quantity table gives $\Psi,\Phi$ units of $\unit{m^2\,s^{-2}}$, but in this note's metric ($g^{00}=-(1+2\Psi)^{-1}$) they are dimensionless. The table also lists unused symbols ($\gamma$, curvature radius $A$, $\Lambda$, $\sigma$, scalar field $\phi$, $C_\ell$, $\theta$) and omits $N_\ell$, $\Theta_\ell$, $n_e$, $\rho_{\mathrm b}$, $q^{ij}$, $u^i$ and $y$.
+- [Structure] The continuity equation $\partial_t\delta+\nabla\cdot\vec v/a+3\partial_t\Phi=0$ is derived twice (in "Continuity and velocity moments" and again right after). The heading "Horizon entry and perturbation growth" is empty and is immediately followed by "Early universe". Merge the duplicate and give the sections a clear order: Boltzmann equation, moments, drag, Einstein equations, superhorizon evolution, subhorizon evolution.
+- [Intuition] Before the $\eta\Phi''+4\Phi'=0$ box, explain physically why superhorizon potentials stay constant in a single-fluid era and drop by exactly $9/10$ across equality. The change in the equation of state changes the relation between $\Phi$ and the conserved curvature perturbation.
+- [Graph] Plot $\Phi(y)/\Phi(0)=\frac{1}{10y^3}[16\sqrt{1+y}+9y^3+2y^2-8y-16]$ for $10^{-2}\le y\le10^2$ on a log $y$ axis, with $y=1$ marked and the asymptote $0.9$. This replaces the sketch in Fig. 24. Optionally add the conformal time $\eta(a)$ from the closed-form expression.
+- [Manim] Animate a fixed comoving scale $k^{-1}$ against a shrinking-then-growing comoving Hubble radius $(aH)^{-1}$ through inflation, radiation and matter eras. Show horizon exit and re-entry, matching Fig. 23.
+=== 02 Physics/07 Astrophysics and Cosmology/Celestial coordinates, astrometry, and stellar binaries.md
+priority: medium
+graph: yes
+manim: yes
+summary: The coordinates, parallax and binary-mass derivations are correct and accessible, but the astrometry values are pre-Gaia, and the quantity table mixes in symbols from other notes.
+- [Correctness] The "practical parallax range" of about $200$ pc and the Gaia line "about $10^9$ stars" with no precision are outdated. Gaia DR3 has about $1.8\times10^9$ sources, with parallax precision of about 0.02–0.03 mas at $G<15$, which reaches 10% distances out to several kpc. Update the catalog table and the Fig. 33 discussion.
+- [Correctness] The physical-quantity table lists the Boltzmann constant $k$ (unused) but not the velocity amplitudes $\mechanical{k}_1,\mechanical{k}_2$. It lists "argument of periastron $\omega$", which clashes with the orbital angular speed $\mechanical{\omega}$, plus extinction $A$, Oort $A,B$, scattering angle $\alpha$ (clashing with RA and parallax $\alpha$) and an "emitter radius" for $\mechanical{r}$, which here means orbital radii $r_1,r_2$. Rebuild it from the note's symbols.
+- [Example] After the box $(M_1+M_2)\sin^3i=T(k_1+k_2)^3/(2\pi G)$, add a worked SB2 example, for instance $T=10$ d, $k_1=50$ km/s, $k_2=100$ km/s, giving $M\sin^3i$ and the individual $M_i\sin^3i$. Remove the "find a Wikipedia article" logistics.
+- [Graph] Plot the two radial-velocity curves $v_{r,1}(t)=\gamma+k_1\sin(2\pi t/T)$ and $v_{r,2}=\gamma-k_2\sin(2\pi t/T)$ over two periods. Also plot the sky track of a nearby star combining a 1-yr parallax ellipse with linear proper motion (Fig. 32).
+- [Manim] Animate two stars orbiting their center of mass with radii $r_1/r_2=M_2/M_1$, while the radial-velocity curves trace out in sync. Optionally show the parallax ellipse traced as Earth orbits.
+=== 02 Physics/07 Astrophysics and Cosmology/Comptonization and the Sunyaev–Zeldovich effect.md
+priority: medium
+graph: yes
+manim: no
+summary: The physics is correct and reasonably clear, with a correct $F_X$–$\Delta T$ distance scaling and a historically accurate $H_0$. It starts mid-derivation, though, and lacks the full SZ spectral shape.
+- [Correctness] The physical-quantity table lists the fine-structure constant $\alpha$, which is never used; the note's $\alpha$ is the $T$–$M$ scaling exponent. It omits $\tau$, $n_e$, $T_e$, $\Theta$, $D$, $d_A$, $f_{\mathrm{gas}}$ and $M_{\mathrm{tot}}$. $\energy{E}$ is listed as "radiant energy" but is used as photon energy $E_\gamma$.
+- [Structure] The opening sentence ("Dividing the two power equations…") depends on the previous note. Add a one-line link to [[Inverse Compton scattering and photon energy exchange]] and a sentence stating the setup. Remove the makeup-lecture logistics.
+- [Intuition] In "Sunyaev–Zeldovich distortion", state that the thermal SZ effect conserves photon number and only shifts photons up in frequency. This is why it gives a decrement below about 217 GHz and an increment above. Also note that the SZ surface brightness is independent of redshift, which is why SZ selection is nearly $z$-independent.
+- [Graph] Plot the thermal SZ distortion $\Delta I_\nu/(I_0y)=\frac{x^4e^x}{(e^x-1)^2}\left[x\coth(x/2)-4\right]$ with $x=h\nu/kT_{\mathrm{CMB}}$, for $\nu=0$–600 GHz, with the null at 217 GHz marked. Overlay the undistorted Planck curve scaled for reference.
+- [Example] Add an order-of-magnitude check of "$\Delta T\sim-1$ mK". With $n_e\sim10^{-3}\,\mathrm{cm^{-3}}$, $kT_e\sim10$ keV and path $\sim1$ Mpc, $y\approx\sigma_Tn_eL\,kT_e/m_ec^2\approx4\times10^{-5}$, so $\Delta T\approx-2yT\approx-0.2$ mK. Then show which parameters push it toward 1 mK.
+=== 02 Physics/07 Astrophysics and Cosmology/Cosmic Background Microwave Radiation.md
+priority: high
+graph: yes
+manim: no
+summary: A two-line stub without frontmatter or TLDR, with a mis-ordered title and a transposed temperature value.
+- [Correctness] "$2.72584\pm0.00057$ K" has two digits transposed. The Fixsen (2009) value is $T_0=2.72548\pm0.00057$ K, which also matches the quoted $-270.425\,^\circ$C (2.72548 − 273.15 = −270.4245).
+- [Structure] Rename to "Cosmic microwave background" (standard word order), add quoted frontmatter title, TLDR and quantity table, and use `\thermal{T}` with `\unit{K}`. Update the incoming links in "05 Cosmic Relativity/00 Acronyms.md" and "04 Reference/Note Improvement Tracker.md". Alternatively, turn it into a short hub that links to [[Cosmic energy components and thermal equilibrium]], [[Cosmological horizons, photon multipoles, and density spectra]] and [[Comptonization and the Sunyaev–Zeldovich effect]].
+- [Graph] If expanded, add the blackbody $B_\nu(T_0)$ for 1–1000 GHz with its peak at 160.2 GHz. It could also show the $T\propto1+z$ scaling.
+=== 02 Physics/07 Astrophysics and Cosmology/Cosmic energy components and thermal equilibrium.md
+priority: medium
+graph: yes
+manim: no
+summary: The thermodynamics is correct, including the equilibrium integrals, mean energies and $T_\nu/T_\gamma=(4/11)^{1/3}$. However, the neutrino-mass bound is outdated, the BBN temperature is misplaced, and the table has many clashes.
+- [Correctness] "approximate upper-limit range of $0.2$–$1$ eV for $\sum m_\nu c^2$" is outdated. Planck 2018 gives $\sum m_\nu<0.12$ eV, DESI 2024 combined with the CMB gives about $<0.07$ eV, and KATRIN (2024) gives $m_\beta<0.45$ eV. Oscillations require $\sum m_\nu\gtrsim0.06$ eV.
+- [Correctness] In "Beyond equilibrium", "Big Bang nucleosynthesis at 1–10 MeV" is too hot. Weak freeze-out of $n/p$ happens near 0.8 MeV, and nucleosynthesis proper happens near 0.07–0.1 MeV, as in the companion note [[Expansion histories and primordial element abundances]]. The earlier "$k_BT_{\mathrm{BBN}}\simeq1$ MeV" estimate of $a_{\mathrm{BBN}}$ should also say it is the onset.
+- [Correctness] The physical-quantity table gives $k$ units of $\unit{m^{-2}}$, but in this note's Friedmann equation $k\in\{0,\pm1\}$ is dimensionless with $R_0$ explicit. The table lists $\mu$ as a "direction cosine", which clashes with the chemical potential $\thermal{\mu}$ used here. It also has unused rows ($\tau$, $\gamma$, $\vec v$, $\mechanical{F},\mechanical{m},\mechanical{a}$, $A$, $\vec k$, $\delta$). Pressure $\thermal{p}$ and momentum $\mechanical{p}$ share a letter in the same integral; consider $P$ for pressure.
+- [Structure] Remove the midterm note and merge the empty heading "Neutrino temperature after electron–positron annihilation" with its subheading. The section "Momentum in the flat FRW metric" duplicates [[Cosmological geodesics and photon redshift]]; replace it with a link.
+- [Graph] Plot $\rho_i(a)/\rho_{\mathrm{cr},0}$ for radiation, matter and $\Lambda$ on log-log axes for $10^{-10}\le a\le10$, with $a_{\mathrm{eq}}\approx3\times10^{-4}$, $a_{m\Lambda}\approx0.75$, BBN and CMB release marked. A second panel could show $T_\gamma$ and $T_\nu$ through $e^\pm$ annihilation (Fig. 17).
+=== 02 Physics/07 Astrophysics and Cosmology/Cosmological geodesics and photon redshift.md
+priority: medium
+graph: no
+manim: yes
+summary: The tensor and Christoffel computations are correct, but the note derives $E\propto1/a$ twice and never actually defines redshift, despite its title.
+- [Structure] The opening block derives $d E/dt+(\dot a/a)E=0$, and the section "Energy of light along a geodesic" derives it again. Reorder as: vector and tensor transformation, Christoffel symbols, FRW Christoffels, photon geodesic, redshift. Drop the opening duplicate.
+- [Intuition] Add the redshift definition the title promises: $1+z=\lambda_{\mathrm{obs}}/\lambda_{\mathrm{em}}=a(t_{\mathrm{obs}})/a(t_{\mathrm{em}})$, from $E\propto a^{-1}$. Add one example ($z=1100$ for the CMB gives $a\approx9\times10^{-4}$). Also add the massive-particle result $p\propto a^{-1}$, so peculiar velocities decay.
+- [Correctness] The physical-quantity table lists $z$, which is never defined in the body. It also lists the scalar field $\phi$ (GeV), clashing with the azimuth $\phi$ used here, and proper volume $V$, clashing with the vector $\vec V$. Further unused rows are $\sigma$, $\mu$, $\delta$, $A$ and $\mechanical{F},\mechanical{m},\mechanical{a}$. The affine parameter $\lambda$, $\Gamma^\mu_{\alpha\beta}$ and $g_{\mu\nu}$ are missing.
+- [Manim] Animate a wave packet travelling across an expanding comoving grid, with its wavelength stretching in proportion to $a(t)$ and the energy readout falling as $1/a$. Optionally animate parallel transport around a closed loop on a sphere (Figs. 5–6), showing the vector's net rotation.
+=== 02 Physics/07 Astrophysics and Cosmology/Cosmological horizons, photon multipoles, and density spectra.md
+priority: medium
+graph: yes
+manim: yes
+summary: The derivations and numbers check out, including the Mészáros solution, the dipole–velocity relation, $k_{\mathrm{eq}}\approx0.011$ Mpc^-1 and $D_A\approx13$ Mpc. Readability suffers from transcribed scratch work and a mixed table.
+- [Correctness] The physical-quantity table describes $\chi$ as a "hyperspherical radial angle" in rad, but this note uses $\chi$ as the comoving radial distance in $D_A=\chi/(1+z)$. It gives $\Psi,\Phi$ units of $\unit{m^2\,s^{-2}}$ while the photon equation treats them as dimensionless. It lists $k$ as a curvature parameter in m^-2 next to wavenumber $k$. There are unused rows ($\gamma$, $\mechanical F$, $\Lambda$, $\sigma$, $n$, $T_\nu$, $V$, $A$).
+- [Simplify] Delete the scratch-work paragraphs in "Mode crossing at equality": "$124.5$ Mpc/150 … $5/6$ Mpc?", "$10^{-5.5}$ … True answer $0.01$ Mpc", and the attribution to Manoj. The clean $k_{\mathrm{eq}}=0.073\,\Omega_mh^2$ Mpc$^{-1}$ derivation already gives the result.
+- [Intuition] In "Photon scattering and energy transfer", note that the radiation term $\Omega_ra^{-4}\approx8\times10^7$ is about 28% of the matter term at $a=10^{-3}$, so "keeps only matter" is a rough approximation. Also state the conclusion of the energy-transfer estimate: the fractional energy change per scattering, $\sim\sqrt{T/m_e}\sim10^{-3}$, justifies treating Thomson scattering as elastic.
+- [Graph] Plot the physical Hubble length $D_H(a)$ and proper mode sizes $a/k$ for $k=10^{-3},10^{-2},10^{-1}$ Mpc$^{-1}$ on log-log axes for $10^{-6}\le a\le1$ (Fig. 27). Plot the Mészáros growth $\delta_m\propto y+2/3$ for $10^{-3}\le y\le10^2$, showing the stagnation before equality.
+- [Manim] Animate three modes ($k\ll k_{\mathrm{eq}}$, $k\sim k_{\mathrm{eq}}$, $k\gg k_{\mathrm{eq}}$) entering the horizon. Show their $\Phi$ amplitudes freezing, dropping to 9/10 or decaying as in Fig. 31.
+=== 02 Physics/07 Astrophysics and Cosmology/Curvature, stress-energy conservation, and Friedmann equations.md
+priority: medium
+graph: yes
+manim: yes
+summary: The GR results are correct: $R_{00}$, $R$, $G_{00}=3H^2$, the shell volume, $D_A$, the flux law and the continuity equation. It has a broken internal reference, conflicting conventions for $r$, and a table with symbol clashes.
+- [Links] After the $R_{00}$ computation, "the Ricci scalar from [[#Conservation of energy and momentum|…]]" points to the wrong section. $R=6(\ddot a/a+\dot a^2/a^2)$ is computed in "Riemann tensor", so link to [[#Riemann tensor]].
+- [Correctness] The physical-quantity table gives $k$ units of $\unit{m^{-2}}$, but the note normalizes $k\in\{0,\pm1\}$ with an explicit $R_0$. It lists $\ell,C_\ell$ as an angular multipole, while the note uses $\ell$ for transverse length in $\ell=a S_k\,d\theta$. It lists the scalar field $\phi$, clashing with the azimuth $\phi$. Several rows are unused ($\gamma$, $\mechanical F$, $\sigma$, $\vec k$, $\mu$, $\delta$, $E$).
+- [Simplify] Pick one radial convention. The note uses dimensionless $r$ in $dr^2/(1-kr^2)$ and comoving length $r$ in $S_k(r)=R_0\sin(r/R_0)$, plus an embedding radius $A=R$ and "unit-radius normalization". State the mapping once, or use $\chi$ for comoving distance. Drop "$ds^2=-c^2dt^2+d\Omega^2$", which mixes dimensions.
+- [Example] After $D_A=S_k/(1+z)$, give one flat-ΛCDM number ($\Omega_m=0.3$, $h=0.7$: $D_A$ peaks at about 1.75 Gpc near $z\approx1.6$). Explain why objects beyond that redshift look larger.
+- [Graph] Plot comoving distance $r(z)$, $D_A(z)$ and $D_L(z)=(1+z)r$ for flat ΛCDM with $0\le z\le10$. Optionally redraw Fig. 13 as $\log\rho$ versus $\log a$ for radiation, matter and $\Lambda$.
+- [Manim] Animate parallel transport of a tangent vector around a geodesic triangle on a sphere, showing that the net rotation angle equals the enclosed area times curvature. This motivates the Riemann-tensor definition.
+=== 02 Physics/07 Astrophysics and Cosmology/Cyclotron and single-particle synchrotron emission.md
+priority: medium
+graph: yes
+manim: yes
+summary: A clear progression from cyclotron motion to the synchrotron power and beaming, with correct power formulas. It has a factor-2 slip in the pulse duration, letter clashes, and stray material from the previous lecture.
+- [Correctness] Pulse width: the beam sweeps past the observer while the velocity turns through the full cone width $\Delta\theta\approx2/\gamma$, so $L\approx2r_g/\gamma$. Rybicki and Lightman eq. 6.16 then gives $\Delta t_{\mathrm{pulse}}\approx1/(\gamma^3\omega_B^{\mathrm{rel}}\sin\alpha)$, not $1/(2\gamma^3\omega_B^{\mathrm{rel}}\sin\alpha)$. Fix "$\mechanical{L}=2\mechanical{r}_g\sin(\theta/2)\simeq\mechanical{r}_g/\gamma$" and the bandwidth estimate.
+- [Correctness] The physical-quantity table defines $\alpha$ as the fine-structure constant, but the note uses $\alpha$ for pitch angle. $L$ is used for luminosity, emission-arc chord length and (in the first paragraph) source length. $\theta$ is both the aberration angle and the dipole-pattern angle (Fig. 61 uses $\theta$ while the text uses $\phi$). Rename the chord, for example to $\ell_{AB}$, and add $r_g$, $\gamma$, $v_\perp$ and $\omega_B^{\mathrm{rel}}$ to the table.
+- [Structure] Move the opening paragraph on planetary-nebula temperatures and densities, and the problem-set and makeup logistics, to the free–free note or delete them. Start with the Synchrotron radiation section.
+- [Example] Add a numerical example: for $B=10\,\mu$G and $\gamma=10^4$, $\nu_c=\frac{3}{4\pi}\gamma^2\frac{eB}{m_ec}\approx4\times10^9$ Hz, so GHz radio emission comes from GeV electrons. The current example uses an unmotivated $\omega_B^{\mathrm{rel}}\sim10^{10}$ Hz.
+- [Graph] Plot the single-electron synchrotron function $F(x)=x\int_x^\infty K_{5/3}(\xi)\,d\xi$ for $10^{-3}\le x\le10$ on log-log axes. Mark the peak at $x\approx0.29$ and overlay the asymptotes $2.15x^{1/3}$ and $1.25x^{1/2}e^{-x}$ (Fig. 69).
+- [Manim] Animate an electron on a circular orbit with a narrow forward beam of half-angle $1/\gamma$ sweeping past a distant observer. Below it, draw the received pulse train with narrow pulses separated by $2\pi/\omega_B^{\mathrm{rel}}$, showing why the spectrum extends to $\gamma^3\omega_B^{\mathrm{rel}}$.
+=== 02 Physics/07 Astrophysics and Cosmology/Electromagnetic units and Compton scattering.md
+priority: low
+graph: yes
+manim: no
+summary: The unit comparison and four-vector Compton derivation are correct and clear. The note opens mid-derivation and lacks a numerical example.
+- [Structure] The first paragraph and the $\sigma_T$ box continue the Thomson derivation from the previous note. Either add a one-line lead-in with a link to [[Radiative absorption, recombination, and Thomson scattering#Radiated power and Thomson cross section]], or move the block there.
+- [Correctness] The physical-quantity table lists the Compton parameter $y$, which is never used. It lists $\energy{E}$ as "radiant energy" while the note uses photon energies $E_\gamma^{i,f}$. It omits $k$ (Coulomb constant), $\gamma$, $x$ and the scattering angle $\Theta$.
+- [Example] After the Compton formula, add worked numbers. The maximum shift is $2\lambda_C=4.85$ pm. A 511 keV photon scattered by $90^\circ$ leaves with $255.5$ keV, while a 10 keV X-ray loses only about 2%. This shows when recoil matters.
+- [Graph] Plot the full Klein–Nishina total cross section $\sigma_{\mathrm{KN}}/\sigma_T$ versus $x=E_\gamma/m_ec^2$ for $10^{-3}\le x\le10^3$ (log axes). Overlay the low-energy series $1-2x+26x^2/5$ and the high-energy asymptote $\frac{3}{8x}(\ln2x+\tfrac12)$.
+=== 02 Physics/07 Astrophysics and Cosmology/Epicyclic orbits, asymmetric drift, and Galactic phase space.md
+priority: medium
+graph: yes
+manim: yes
+summary: The epicycle derivation is correct ($\kappa^2=-4B\Omega$, $\sigma_y^2/\sigma_x^2=-B/(A-B)$, periods of 170 and 220 Myr), as are the CBE, moment and Jeans derivations. However, "Asymmetric drift" never derives asymmetric drift, and the quantity table is badly polluted.
+- [Correctness] The physical-quantity table contains rows from other notes that clash with this note's symbols. The Stefan–Boltzmann $\sigma$ clashes with velocity dispersion $\mechanical\sigma$, apparent magnitude $m$ with mass $\mechanical m$, airmass $X$ with epicycle amplitude $\mechanical X$, and dust path length $\mechanical x$ with epicycle displacement $\mechanical x$. Extinction $A$ clashes with Oort $A$, and grain density $n$ with stellar density $n$. Binary-star, transit, luminosity-function and metallicity rows are also included. Prune it to the epicycle, CBE and Jeans symbols.
+- [Correctness] In "Collisionless Boltzmann equation", "The derivation assumes a time-independent potential" is not needed. The phase-space continuity argument with $\dot{\mathbf v}=-\nabla\Phi(\mathbf x,t)$ holds for time-dependent potentials. What is required is a smooth potential and negligible encounters.
+- [Structure] "Asymmetric drift" only gives the heuristic $M\sim R(v_{\mathrm{rot}}^2+\sigma^2)/G$. Either derive the radial Jeans equation result $v_c^2-\bar v_\phi^2=\sigma_R^2\left[\sigma_\phi^2/\sigma_R^2-1-\partial\ln(\nu\sigma_R^2)/\partial\ln R\right]$, or rename the section. Move the opening paragraph on cluster evaporation (the $1/136$ fraction) to the cluster note.
+- [Graph] Plot $\Omega(R)$, $\Omega\pm\kappa/2$ and $\Omega-\kappa/4$ for a flat rotation curve ($v_c=220$ km/s, $\kappa=\sqrt2\Omega$) on $0.5$–$15$ kpc. Add a horizontal bar pattern speed (for example 40 km/s/kpc) to locate the ILR, corotation and OLR. Also plot an epicycle in the guiding-centre frame, an ellipse with axis ratio $2\Omega/\kappa=\sqrt2$.
+- [Manim] Animate a star on an epicyclic orbit in the inertial frame alongside the same motion in the frame co-rotating with the guiding centre. Show the retrograde ellipse with axis ratio $2\Omega/\kappa$.
+=== 02 Physics/07 Astrophysics and Cosmology/Expansion histories and primordial element abundances.md
+priority: medium
+graph: yes
+manim: no
+summary: The Saha-type deuterium derivation, the $w$-scaling and the helium estimate are correct. The section titles do not match their content, and a few quoted constants are off.
+- [Correctness] "$\energy{B}_{{}^4\mathrm{He}}=22$ MeV" is wrong as a binding energy. The ${}^4$He binding energy is 28.3 MeV; the nearby value 23.8 MeV is the $Q$ of $D+D\to{}^4\mathrm{He}+\gamma$. Either correct it or label the reaction.
+- [Example] The rough $H\simeq(1\,\mathrm{s^{-1}})(T/\mathrm{MeV})^2$ gives $t\simeq100$ s at 0.07 MeV, but the quoted Dodelson formula gives $t\simeq270$ s at the same temperature. State this explicitly. Explain that neutron decay over that time ($\tau_n=878$ s, not "of order 1000 s") lowers $X_n$ from about 0.15 to 0.11. Compare the simple $Y_p\approx0.22$ with the observed $Y_p\approx0.245$.
+- [Structure] "Expansion with different equations of state" begins with the deuterium abundance and $\eta_B$, and the deuterium equilibrium is derived three times (first section, start of the second, and "Reaction freeze-out"). Consolidate into one BBN section and one equation-of-state section. Remove the logistics ("class leaves Chapter 3 midway").
+- [Example] In "Galaxy counts in a redshift shell", the stated $15\ \mathrm{Gpc^3}$ is high. For flat ΛCDM ($\Omega_m=0.3$, $h=0.7$), $V(0.5)-V(0.4)\approx12.6$ Gpc$^3$. Use the computed value, and note that the full sky is $4.125\times10^4$ deg$^2=1.485\times10^8$ arcmin$^2$.
+- [Graph] Plot the equilibrium deuterium fraction $n_D/n_N$ from the boxed Saha relation versus $k_BT$ from 1 to 0.03 MeV for $\eta_B=6.1\times10^{-10}$, showing the abrupt turn-on near 0.07 MeV (deuterium bottleneck). Add a second plot of $a(t)\propto t^{2/[3(1+w)]}$ for $w=1,1/3,0$.

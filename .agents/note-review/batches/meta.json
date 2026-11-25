@@ -1,0 +1,357 @@
+[
+{
+"batch": "r01",
+"folder": "01 Mathematics/01 Foundations, Arithmetic, and Algebra",
+"notes": 86
+},
+{
+"batch": "r02",
+"folder": "01 Mathematics/02 Geometry and Trigonometry",
+"notes": 54
+},
+{
+"batch": "r03",
+"folder": "01 Mathematics/03 Linear Algebra",
+"notes": 64
+},
+{
+"batch": "r04",
+"folder": "01 Mathematics/04 Single-Variable Calculus",
+"notes": 72
+},
+{
+"batch": "r05",
+"folder": "01 Mathematics/05 Multivariable and Vector Calculus",
+"notes": 48
+},
+{
+"batch": "r06",
+"folder": "01 Mathematics/06 Probability and Statistics",
+"notes": 25
+},
+{
+"batch": "r07",
+"folder": "01 Mathematics/07 Complex Numbers and Complex Analysis",
+"notes": 36
+},
+{
+"batch": "r08",
+"folder": "01 Mathematics/08 Fourier Analysis and Transforms",
+"notes": 27
+},
+{
+"batch": "r09",
+"folder": "01 Mathematics/09 Differential Equations and Dynamical Systems",
+"notes": 49
+},
+{
+"batch": "r10",
+"folder": "01 Mathematics/09 Differential Equations and Dynamical Systems",
+"notes": 43
+},
+{
+"batch": "r11",
+"folder": "01 Mathematics/10 Numerical Methods and Optimization",
+"notes": 52
+},
+{
+"batch": "r12",
+"folder": "01 Mathematics/11 Discrete Mathematics and Abstract Algebra",
+"notes": 27
+},
+{
+"batch": "r13",
+"folder": "01 Mathematics/12 Advanced Analysis",
+"notes": 31
+},
+{
+"batch": "r14",
+"folder": "01 Mathematics/13 Topology, Differential Geometry, and Symmetry",
+"notes": 82
+},
+{
+"batch": "r15",
+"folder": "01 Mathematics/13 Topology, Differential Geometry, and Symmetry",
+"notes": 111
+},
+{
+"batch": "r16",
+"folder": "01 Mathematics/99 Reference",
+"notes": 21
+},
+{
+"batch": "r17",
+"folder": "02 Physics/02 Thermodynamics and Statistical Mechanics",
+"notes": 64
+},
+{
+"batch": "r18",
+"folder": "02 Physics/02 Thermodynamics and Statistical Mechanics",
+"notes": 70
+},
+{
+"batch": "r19",
+"folder": "02 Physics/02 Thermodynamics and Statistical Mechanics",
+"notes": 73
+},
+{
+"batch": "r20",
+"folder": "02 Physics/02 Thermodynamics and Statistical Mechanics",
+"notes": 70
+},
+{
+"batch": "r21",
+"folder": "02 Physics/02 Thermodynamics and Statistical Mechanics",
+"notes": 72
+},
+{
+"batch": "r22",
+"folder": "02 Physics/02 Thermodynamics and Statistical Mechanics",
+"notes": 66
+},
+{
+"batch": "r23",
+"folder": "02 Physics/02 Thermodynamics and Statistical Mechanics",
+"notes": 68
+},
+{
+"batch": "r24",
+"folder": "02 Physics/02 Thermodynamics and Statistical Mechanics",
+"notes": 48
+},
+{
+"batch": "r25",
+"folder": "02 Physics/03 Quantum Mechanics",
+"notes": 93
+},
+{
+"batch": "r26",
+"folder": "02 Physics/03 Quantum Mechanics",
+"notes": 87
+},
+{
+"batch": "r27",
+"folder": "02 Physics/03 Quantum Mechanics",
+"notes": 82
+},
+{
+"batch": "r28",
+"folder": "02 Physics/03 Quantum Mechanics",
+"notes": 65
+},
+{
+"batch": "r29",
+"folder": "02 Physics/03 Quantum Mechanics",
+"notes": 62
+},
+{
+"batch": "r30",
+"folder": "02 Physics/03 Quantum Mechanics",
+"notes": 68
+},
+{
+"batch": "r31",
+"folder": "02 Physics/03 Quantum Mechanics",
+"notes": 83
+},
+{
+"batch": "r32",
+"folder": "02 Physics/04 Quantum Field Theory and Particle Physics",
+"notes": 85
+},
+{
+"batch": "r33",
+"folder": "02 Physics/04 Quantum Field Theory and Particle Physics",
+"notes": 115
+},
+{
+"batch": "r34",
+"folder": "02 Physics/04 Quantum Field Theory and Particle Physics",
+"notes": 109
+},
+{
+"batch": "r35",
+"folder": "02 Physics/04 Quantum Field Theory and Particle Physics",
+"notes": 108
+},
+{
+"batch": "r36",
+"folder": "02 Physics/04 Quantum Field Theory and Particle Physics",
+"notes": 71
+},
+{
+"batch": "r37",
+"folder": "02 Physics/04 Quantum Field Theory and Particle Physics",
+"notes": 88
+},
+{
+"batch": "r38",
+"folder": "02 Physics/04 Quantum Field Theory and Particle Physics",
+"notes": 85
+},
+{
+"batch": "r39",
+"folder": "02 Physics/04 Quantum Field Theory and Particle Physics",
+"notes": 98
+},
+{
+"batch": "r40",
+"folder": "02 Physics/04 Quantum Field Theory and Particle Physics",
+"notes": 29
+},
+{
+"batch": "r41",
+"folder": "02 Physics/04 Quantum Field Theory and Particle Physics",
+"notes": 20
+},
+{
+"batch": "r42",
+"folder": "02 Physics/04 Quantum Field Theory and Particle Physics",
+"notes": 31
+},
+{
+"batch": "r43",
+"folder": "02 Physics/04 Quantum Field Theory and Particle Physics",
+"notes": 24
+},
+{
+"batch": "r44",
+"folder": "02 Physics/04 Quantum Field Theory and Particle Physics",
+"notes": 43
+},
+{
+"batch": "r45",
+"folder": "02 Physics/04 Quantum Field Theory and Particle Physics",
+"notes": 8
+},
+{
+"batch": "r46",
+"folder": "02 Physics/04 Quantum Field Theory and Particle Physics",
+"notes": 11
+},
+{
+"batch": "r47",
+"folder": "02 Physics/04 Quantum Field Theory and Particle Physics",
+"notes": 1
+},
+{
+"batch": "r48",
+"folder": "02 Physics/04 Quantum Field Theory and Particle Physics",
+"notes": 3
+},
+{
+"batch": "r49",
+"folder": "02 Physics/04 Quantum Field Theory and Particle Physics",
+"notes": 1
+},
+{
+"batch": "r50",
+"folder": "02 Physics/04 Quantum Field Theory and Particle Physics",
+"notes": 8
+},
+{
+"batch": "r51",
+"folder": "02 Physics/04 Quantum Field Theory and Particle Physics",
+"notes": 4
+},
+{
+"batch": "r52",
+"folder": "02 Physics/04 Quantum Field Theory and Particle Physics",
+"notes": 1
+},
+{
+"batch": "r53",
+"folder": "02 Physics/04 Quantum Field Theory and Particle Physics",
+"notes": 12
+},
+{
+"batch": "r54",
+"folder": "02 Physics/04 Quantum Field Theory and Particle Physics",
+"notes": 15
+},
+{
+"batch": "r55",
+"folder": "02 Physics/04 Quantum Field Theory and Particle Physics",
+"notes": 32
+},
+{
+"batch": "r56",
+"folder": "02 Physics/05 Relativity and Gravitation",
+"notes": 13
+},
+{
+"batch": "r57",
+"folder": "02 Physics/05 Relativity and Gravitation",
+"notes": 67
+},
+{
+"batch": "r58",
+"folder": "02 Physics/05 Relativity and Gravitation",
+"notes": 74
+},
+{
+"batch": "r59",
+"folder": "02 Physics/05 Relativity and Gravitation",
+"notes": 29
+},
+{
+"batch": "r60",
+"folder": "02 Physics/05 Relativity and Gravitation",
+"notes": 35
+},
+{
+"batch": "r61",
+"folder": "02 Physics/05 Relativity and Gravitation",
+"notes": 33
+},
+{
+"batch": "r62",
+"folder": "02 Physics/05 Relativity and Gravitation",
+"notes": 46
+},
+{
+"batch": "r63",
+"folder": "02 Physics/05 Relativity and Gravitation",
+"notes": 61
+},
+{
+"batch": "r64",
+"folder": "02 Physics/05 Relativity and Gravitation",
+"notes": 66
+},
+{
+"batch": "r65",
+"folder": "02 Physics/05 Relativity and Gravitation",
+"notes": 69
+},
+{
+"batch": "r66",
+"folder": "02 Physics/06 Electromagnetism and Waves",
+"notes": 31
+},
+{
+"batch": "r67",
+"folder": "02 Physics/07 Astrophysics and Cosmology",
+"notes": 15
+},
+{
+"batch": "r68",
+"folder": "02 Physics/07 Astrophysics and Cosmology",
+"notes": 16
+},
+{
+"batch": "r69",
+"folder": "02 Physics/07 Astrophysics and Cosmology",
+"notes": 16
+},
+{
+"batch": "r70",
+"folder": "03 Engineering/01 Robotics",
+"notes": 24
+},
+{
+"batch": "r71",
+"folder": "04 Reference/03 Color Standards",
+"notes": 7
+}
+]

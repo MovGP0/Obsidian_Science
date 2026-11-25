@@ -1,0 +1,111 @@
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/6 Tensor applications/6.4 Chapter 6 problems.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/Further reading for Vectors and Tensors.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/Index for Vectors and Tensors.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/Vectors and Tensors.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/03 Metrics, Connections, and Curvature/20.01 Metric definitions.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/03 Metrics, Connections, and Curvature/20.02 Coordinate components.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/03 Metrics, Connections, and Curvature/20.03 Coordinate changes.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/03 Metrics, Connections, and Curvature/20.04 Inverse metrics.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/03 Metrics, Connections, and Curvature/20.05 Signature.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/03 Metrics, Connections, and Curvature/20.06 Lengths and angles.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/03 Metrics, Connections, and Curvature/20.07 Curves.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/03 Metrics, Connections, and Curvature/20.08 Volume.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/03 Metrics, Connections, and Curvature/20.09 Examples and limits.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/03 Metrics, Connections, and Curvature/21.01 The differentiation problem.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/03 Metrics, Connections, and Curvature/21.02 Affine connections.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/03 Metrics, Connections, and Curvature/21.03 Connection coefficients.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/03 Metrics, Connections, and Curvature/21.04 Covectors and tensors.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/03 Metrics, Connections, and Curvature/21.05 Transformation behaviour.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/03 Metrics, Connections, and Curvature/21.06 Levi-Civita connection.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/03 Metrics, Connections, and Curvature/21.07 Parallel transport.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/03 Metrics, Connections, and Curvature/21.08 Geodesics.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/03 Metrics, Connections, and Curvature/21.09 Coordinate examples.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/03 Metrics, Connections, and Curvature/22.01 Curvature definitions.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/03 Metrics, Connections, and Curvature/22.02 Coordinate expressions.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/03 Metrics, Connections, and Curvature/22.03 Conventions.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/03 Metrics, Connections, and Curvature/22.04 Tensor symmetries.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/03 Metrics, Connections, and Curvature/22.05 Bianchi identities.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/03 Metrics, Connections, and Curvature/22.06 Contractions.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/03 Metrics, Connections, and Curvature/22.07 The Einstein tensor.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/03 Metrics, Connections, and Curvature/22.08 Examples.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/03 Metrics, Connections, and Curvature/22.09 Local flatness and information loss.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/03 Metrics, Connections, and Curvature/Connections and covariant derivatives - Overview.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/03 Metrics, Connections, and Curvature/Curvature - Overview.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/03 Metrics, Connections, and Curvature/Metric geometry - Overview.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/03 Metrics, Connections, and Curvature/Surface geometry curvature and geodesics.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/04 Differential Forms and Moving Frames/23.01 Alternating tensors.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/04 Differential Forms and Moving Frames/23.02 Wedge products.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/04 Differential Forms and Moving Frames/23.03 Exterior derivatives.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/04 Differential Forms and Moving Frames/23.04 Coordinate expressions.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/04 Differential Forms and Moving Frames/23.05 Pullbacks.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/04 Differential Forms and Moving Frames/23.06 Integration.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/04 Differential Forms and Moving Frames/23.07 Stokes’ theorem.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/04 Differential Forms and Moving Frames/23.08 Closed and exact forms.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/04 Differential Forms and Moving Frames/23.09 Classical operations.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/04 Differential Forms and Moving Frames/24.01 Frames and coframes.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/04 Differential Forms and Moving Frames/24.02 Orthonormal frames.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/04 Differential Forms and Moving Frames/24.03 Non-coordinate frames.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/04 Differential Forms and Moving Frames/24.04 Connection one-forms.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/04 Differential Forms and Moving Frames/24.05 Cartan’s first structure equation.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/04 Differential Forms and Moving Frames/24.06 Cartan’s second structure equation.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/04 Differential Forms and Moving Frames/24.07 Reading components.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/04 Differential Forms and Moving Frames/24.08 Contractions.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/04 Differential Forms and Moving Frames/24.09 Frame changes.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/04 Differential Forms and Moving Frames/Differential forms - Overview.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/04 Differential Forms and Moving Frames/Exterior Product.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/04 Differential Forms and Moving Frames/Frames and Cartan equations - Overview.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/05 Lie Groups, Quaternions, and Spinors/03 Spinors/01 Rotation/Algebra of Rotation.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/05 Lie Groups, Quaternions, and Spinors/03 Spinors/01 Rotation/Homotopology classes in the Axis-Angle Space.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/05 Lie Groups, Quaternions, and Spinors/03 Spinors/01 Rotation/Homotopology.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/05 Lie Groups, Quaternions, and Spinors/03 Spinors/01 Rotation/Rotation using Axis-Angle Vector.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/05 Lie Groups, Quaternions, and Spinors/03 Spinors/01 Rotation/Rotation using Complex Numbers.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/05 Lie Groups, Quaternions, and Spinors/03 Spinors/01 Rotation/Rotation using Matrices.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/05 Lie Groups, Quaternions, and Spinors/03 Spinors/01 Rotation/Rotation using Quaternions.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/05 Lie Groups, Quaternions, and Spinors/03 Spinors/02 Examples from Physics/01 Polarization/Jones Vectors.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/05 Lie Groups, Quaternions, and Spinors/03 Spinors/02 Examples from Physics/01 Polarization/Pointcaré Sphere.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/05 Lie Groups, Quaternions, and Spinors/03 Spinors/02 Examples from Physics/01 Polarization/Waveplates.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/05 Lie Groups, Quaternions, and Spinors/03 Spinors/02 Examples from Physics/Dirac Equation.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/05 Lie Groups, Quaternions, and Spinors/03 Spinors/02 Examples from Physics/Pauli Exclusion Principle.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/05 Lie Groups, Quaternions, and Spinors/03 Spinors/02 Examples from Physics/Spin-Statistics-Theorem.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/05 Lie Groups, Quaternions, and Spinors/03 Spinors/02 Examples from Physics/Spinors in Physics.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/05 Lie Groups, Quaternions, and Spinors/03 Spinors/02 Examples from Physics/Stern-Gerlach-Experiment.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/05 Lie Groups, Quaternions, and Spinors/03 Spinors/02 Examples from Physics/Vector Representation of Spinors in Physics.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/05 Lie Groups, Quaternions, and Spinors/03 Spinors/Rotation.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/05 Lie Groups, Quaternions, and Spinors/03 Spinors/Spinors.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/05 Lie Groups, Quaternions, and Spinors/25.04 Matrix groups.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/05 Lie Groups, Quaternions, and Spinors/25.05 Lie groups.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/05 Lie Groups, Quaternions, and Spinors/25.06 Generators and Lie algebras.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/05 Lie Groups, Quaternions, and Spinors/25.07 Exponential maps.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/05 Lie Groups, Quaternions, and Spinors/25.08 The circle group U(1).md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/05 Lie Groups, Quaternions, and Spinors/Dual quaternions and rigid transformations.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/05 Lie Groups, Quaternions, and Spinors/Groups and continuous symmetries - Overview.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/05 Lie Groups, Quaternions, and Spinors/Lie groups and infinitesimal transformations.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/05 Lie Groups, Quaternions, and Spinors/Octonions.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/05 Lie Groups, Quaternions, and Spinors/Quaternion algebra.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/05 Lie Groups, Quaternions, and Spinors/Quaternion interpolation and applications.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/05 Lie Groups, Quaternions, and Spinors/Quaternions.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/05 Lie Groups, Quaternions, and Spinors/Rotation conventions and quaternions.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/05 Lie Groups, Quaternions, and Spinors/Sedenions.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/05 Lie Groups, Quaternions, and Spinors/Trigintaduonions.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/06 Bundles, Holonomy, and Gauge Connections/26.01 Sections and local frames.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/06 Bundles, Holonomy, and Gauge Connections/26.02 Local gauge transformations.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/06 Bundles, Holonomy, and Gauge Connections/26.03 The derivative problem.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/06 Bundles, Holonomy, and Gauge Connections/26.04 Covariant derivatives.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/06 Bundles, Holonomy, and Gauge Connections/26.05 Abelian phase connections.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/06 Bundles, Holonomy, and Gauge Connections/26.06 Curvature or field strength.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/06 Bundles, Holonomy, and Gauge Connections/26.07 Covariance and invariants.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/06 Bundles, Holonomy, and Gauge Connections/26.08 Parallel transport.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/06 Bundles, Holonomy, and Gauge Connections/26.09 Pure gauge and global limits.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/06 Bundles, Holonomy, and Gauge Connections/27.06 Bundle structure.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/06 Bundles, Holonomy, and Gauge Connections/27.07 Transition functions.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/06 Bundles, Holonomy, and Gauge Connections/27.08 Bundle types.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/06 Bundles, Holonomy, and Gauge Connections/27.09 Connections and holonomy.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/06 Bundles, Holonomy, and Gauge Connections/27.10 Local and global potentials.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/06 Bundles, Holonomy, and Gauge Connections/Elementary topology and bundles - Overview.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/06 Bundles, Holonomy, and Gauge Connections/Gauge connections - Overview.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/07 Category Theory/Category Theory.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/07 Category Theory/Category of Categories.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/07 Category Theory/Category.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/07 Category Theory/Equivalence.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/07 Category Theory/Functor.md
+01 Mathematics/13 Topology, Differential Geometry, and Symmetry/07 Category Theory/Isomorphism.md

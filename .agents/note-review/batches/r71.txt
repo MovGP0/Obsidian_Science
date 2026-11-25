@@ -1,0 +1,7 @@
+04 Reference/03 Color Standards/RAL Classic Colors.md
+04 Reference/03 Color Standards/RAL Design Colors.md
+04 Reference/03 Color Standards/RAL Design System Plus.md
+04 Reference/03 Color Standards/RAL Effect Colors.md
+04 Reference/03 Color Standards/RAL Plastics P1 Colors.md
+04 Reference/03 Color Standards/RAL Plastics P2 Colors.md
+04 Reference/03 Color Standards/_RAL Colors.md

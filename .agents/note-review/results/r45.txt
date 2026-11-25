@@ -1,0 +1,69 @@
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/04 Non-Abelian Gauge Theories/4.3 Some Physical Consequences.md
+priority: medium
+graph: yes
+manim: no
+summary: Faithful and mostly correct transcription whose isospin-channel calculation is compressed and whose closing range argument is stated without a quantitative picture.
+- [Correctness] The physical-quantities row for $I,\mathbf I,\mathbf I^{(1)},\mathbf I^{(2)}$ says "in units of reduced Planck constant"; isospin is a dimensionless internal quantum number, not an angular momentum, so drop the $\hbar$ wording.
+- [Correctness] In (4.3.2) the vertex for a nucleon $\alpha$ turning into $\beta$ should strictly carry $(\tau^a)_{\beta\alpha}$ (row = outgoing, column = incoming, from $\bar\psi_\beta\tau^a_{\beta\alpha}\psi_\alpha$); $(\tau^a)_{\alpha\beta}$ differs by a sign for $\tau^2$ (the sum in (4.3.3) is unaffected because $\sum_a\tau^a_{ij}\tau^a_{kl}=2\delta_{il}\delta_{jk}-\delta_{ij}\delta_{kl}$ is real).
+- [Simplify] Before (4.3.5) show the two-line evaluation $\langle\mathbf I^{(1)}\cdot\mathbf I^{(2)}\rangle=\tfrac12[I(I+1)-\tfrac34-\tfrac34]$ giving $-\tfrac34$ for $I=0$ and $+\tfrac14$ for $I=1$, and state that $\energy{\mathcal E}=g^2\langle\mathbf I^{(1)}\cdot\mathbf I^{(2)}\rangle$, so positive means repulsive as for like charges.
+- [Graph] After the final paragraph, plot the Coulomb-like potential $-1/r$ against Yukawa potentials $-e^{-m r}/r$ for $m=0$, $m_\pi\approx0.71\,\mathrm{fm^{-1}}$ and $m_\rho\approx3.9\,\mathrm{fm^{-1}}$ over $r=0.2$–$5\,\mathrm{fm}$, to make "infinite range versus short range" concrete.
+- [Intuition] Add one sentence contrasting with QED: the photon has zero charge so there is no $AAA$ vertex, while $b_\mu^a$ carries isospin, which is exactly why the $\epsilon^{abc}$ term in $F_{\mu\nu}$ yields the cubic and quartic vertices of Fig. 4.2; write the schematic $\partial b\,b\,b$ and $b^4$ structure.
+- [Structure] The file starts with a UTF-8 BOM; save as UTF-8 without BOM.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/04 Non-Abelian Gauge Theories/4.4 Assessment.md
+priority: low
+graph: no
+manim: no
+summary: Short, clear summary section that needs no substantive change.
+- [Links] Link the "massless vector bosons" argument back to [[4.3 Some Physical Consequences]] and "the following chapter" to [[5.0 Chapter introduction]].
+- [Structure] The file starts with a UTF-8 BOM; save as UTF-8 without BOM.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/04 Non-Abelian Gauge Theories/4.B References.md
+priority: low
+graph: no
+manim: no
+summary: Accurate reference list; no change needed beyond file encoding.
+- [Structure] The file starts with a UTF-8 BOM; save as UTF-8 without BOM.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/04 Non-Abelian Gauge Theories/4.P Problems.md
+priority: low
+graph: no
+manim: no
+summary: Problem statements are correct (checked the $C,P,G$ formulas, the nine-term $|p\uparrow\rangle$ with norm $\sqrt{18}$, and $\mu_n/\mu_p=-2/3$), with only table issues.
+- [Correctness] The physical-quantities row "$I,s,S,L$ ... in units of reduced Planck constant" wrongly includes isospin $I$; isospin is dimensionless and not measured in $\hbar$.
+- [Structure] $\sigma$ is used for the cross section, for the scalar particle in $e^+e^-\to\sigma^+\sigma^-$ (problem 4.2) and for the Pauli matrix $\sigma_z^{(i)}$ (problem 4.7); add the latter two meanings to the table or note the clash.
+- [Structure] In 4.7(b) the elementary charge $e$ in $\mu=e\hbar/2mc$ is uncolored while $\electric{e_q}$ is colored; apply $\electric{e}$ consistently.
+- [Structure] The file starts with a UTF-8 BOM; save as UTF-8 without BOM.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/04 Non-Abelian Gauge Theories/4.R For Further Reading.md
+priority: low
+graph: no
+manim: no
+summary: Accurate annotated reading list; no change needed beyond encoding.
+- [Structure] The file starts with a UTF-8 BOM; save as UTF-8 without BOM (optionally note that the PDG Young-diagram review cited from 2010 is maintained in the current Review of Particle Physics).
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/05 Hidden Symmetries/5.0 Chapter introduction.md
+priority: low
+graph: no
+manim: no
+summary: Clear motivational introduction that sets up the three kinds of symmetry realization well.
+- [Structure] Add a small three-row table (exact and manifest; explicitly broken, $\mathcal L=\mathcal L_{\rm sym}+\varepsilon\mathcal L_{\rm break}$; spontaneously broken, symmetric $\mathcal L$ with non-invariant vacuum) with the ferromagnet example for each, so the reader has the map before 5.1.
+- [Links] Link "chapter 2" (Noether's theorem) and "the Higgs mechanism" to the corresponding vault notes.
+- [Structure] The file starts with a UTF-8 BOM; save as UTF-8 without BOM.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/05 Hidden Symmetries/5.1 The Idea of Spontaneously Broken Symmetries.md
+priority: medium
+graph: yes
+manim: yes
+summary: Correct and readable (the shifted Lagrangian (5.1.19) and the mass$^2$ $2|\mu|^2$ check out), but the key expansion is not shown and the figures lack vacuum markers.
+- [Simplify] Before (5.1.19) show the shortcut $\energy{V}=\tfrac{|\lambda|}{4}(\phi^2-v^2)^2-\tfrac{|\mu|^2v^2}{4}$ and $\phi^2-v^2=2v\phi'+\phi'^2$, which gives the quadratic term $|\lambda|v^2\phi'^2=|\mu|^2\phi'^2$ in one line, i.e. mass$^2=V''(v)=2|\mu|^2$.
+- [Intuition] State that $\phi\to-\phi$ here is an internal $\mathbb Z_2$ reflection of the field, called "parity" only by analogy (it is spatial parity only if $\phi$ is a pseudoscalar), to avoid confusion with $\mathbf x\to-\mathbf x$.
+- [Graph] In Fig. 5.1(b) mark the minima at $\phi=\pm v$ ($\pm1$ in the plotted units) with points and labels $\pm v$, and mark the local maximum at $\phi=0$; in Fig. 5.1(a) mark the unique minimum at $\phi=0$.
+- [Manim] Animate $V(\phi)=\tfrac12\mu^2\phi^2+\tfrac14\phi^4$ as $\mu^2$ is swept from positive to negative: the single well flattens and splits into a double well while a ball at $\phi=0$ rolls into one of the two minima, showing the vacuum choice.
+- [Structure] Both graph blocks sit in the middle of the sentence "does not return to zero / when the applied field is turned off"; move them after the paragraph introducing (5.1.7) where Fig. 5.1 is first referenced.
+- [Structure] The file starts with a UTF-8 BOM; save as UTF-8 without BOM.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/05 Hidden Symmetries/5.2 Spontaneous Breaking of Continuous Symmetries.md
+priority: medium
+graph: yes
+manim: yes
+summary: Correct exposition of the Goldstone model (the surfaces match $\tfrac12r^2+\tfrac14r^4$ and $\tfrac14(r^2-1)^2$), but the step to (5.2.9) is skipped and the 3D figures carry no labels.
+- [Simplify] Show the expansion behind (5.2.9): write $\energy{V}=\tfrac{|\lambda|}{4}(\boldsymbol\phi^2-v^2)^2+\text{const}$ and $\boldsymbol\phi^2-v^2=2v\eta+\eta^2+\zeta^2$, so the quadratic part is $|\lambda|v^2\eta^2=-\mechanical{\mu}^2\eta^2$ and $\zeta$ appears only in cubic and quartic terms.
+- [Graph] The two graph3d figures have no axis labels or markers; add text3d labels $\phi_1,\phi_2,V$, draw the vacuum circle $r=v$ in an accent color in Fig. 5.2(b), and mark the chosen vacuum $(v,0)$ with short arrows for the radial $\eta$ and tangential $\zeta$ directions.
+- [Structure] Each 3D figure is about 155 KB of hard-coded curve3d samples on one line; if the plugin supports surface or parametric-curve expressions, generate the mesh from $z=\tfrac14(r^2-1)^2$ instead to keep the note editable.
+- [Manim] Animate a ball at $(v,0)$ in the Mexican hat: a radial nudge makes it oscillate (massive $\eta$), a tangential nudge makes it roll freely along the trough (massless $\zeta$), visualizing "no restoring force against angular oscillations".
+- [Intuition] Add one sentence counting generators for the general statement: SO(2) has one generator, the vacuum $(v,0)$ breaks it, hence one Goldstone boson; preview that for SO(3) with $\langle\boldsymbol\phi\rangle\propto\hat z$ two generators are broken (problems 5.5, 5.6).
+- [Structure] The file starts with a UTF-8 BOM; save as UTF-8 without BOM.

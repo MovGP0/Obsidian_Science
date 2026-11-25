@@ -1,0 +1,27 @@
+01 Mathematics/11 Discrete Mathematics and Abstract Algebra/01 Number Theory and Modular Arithmetic/Continued fractions.md
+01 Mathematics/11 Discrete Mathematics and Abstract Algebra/01 Number Theory and Modular Arithmetic/Diophantine equations and modular arithmetic.md
+01 Mathematics/11 Discrete Mathematics and Abstract Algebra/01 Number Theory and Modular Arithmetic/Divisibility primes and Fibonacci numbers.md
+01 Mathematics/11 Discrete Mathematics and Abstract Algebra/01 Number Theory and Modular Arithmetic/Number theory theorems and primality tests.md
+01 Mathematics/11 Discrete Mathematics and Abstract Algebra/02 Graphs, Networks, and Boolean Algebra/Boolean structure and normal forms.md
+01 Mathematics/11 Discrete Mathematics and Abstract Algebra/02 Graphs, Networks, and Boolean Algebra/Directed paths and network flows.md
+01 Mathematics/11 Discrete Mathematics and Abstract Algebra/02 Graphs, Networks, and Boolean Algebra/Graph walks and spanning trees.md
+01 Mathematics/11 Discrete Mathematics and Abstract Algebra/02 Graphs, Networks, and Boolean Algebra/Matchings and planar graphs.md
+01 Mathematics/11 Discrete Mathematics and Abstract Algebra/03 Groups, Rings, Fields, and Representations/25.01 Group axioms.md
+01 Mathematics/11 Discrete Mathematics and Abstract Algebra/03 Groups, Rings, Fields, and Representations/25.02 Subgroups and homomorphisms.md
+01 Mathematics/11 Discrete Mathematics and Abstract Algebra/03 Groups, Rings, Fields, and Representations/25.03 Group actions.md
+01 Mathematics/11 Discrete Mathematics and Abstract Algebra/03 Groups, Rings, Fields, and Representations/25.09 Representations.md
+01 Mathematics/11 Discrete Mathematics and Abstract Algebra/03 Groups, Rings, Fields, and Representations/Algebra and discrete mathematics - Catalogue Guide.md
+01 Mathematics/11 Discrete Mathematics and Abstract Algebra/03 Groups, Rings, Fields, and Representations/Algebras and compatible quotients.md
+01 Mathematics/11 Discrete Mathematics and Abstract Algebra/03 Groups, Rings, Fields, and Representations/Group representations and decomposition.md
+01 Mathematics/11 Discrete Mathematics and Abstract Algebra/03 Groups, Rings, Fields, and Representations/Group.md
+01 Mathematics/11 Discrete Mathematics and Abstract Algebra/03 Groups, Rings, Fields, and Representations/Identities and free constructions.md
+01 Mathematics/11 Discrete Mathematics and Abstract Algebra/03 Groups, Rings, Fields, and Representations/Operations semigroups and groups.md
+01 Mathematics/11 Discrete Mathematics and Abstract Algebra/03 Groups, Rings, Fields, and Representations/Rings ideals and finite fields.md
+01 Mathematics/11 Discrete Mathematics and Abstract Algebra/03 Groups, Rings, Fields, and Representations/Symmetry groups and applications.md
+01 Mathematics/11 Discrete Mathematics and Abstract Algebra/04 Codes, Cryptography, and Fuzzy Systems/AES and IDEA block ciphers.md
+01 Mathematics/11 Discrete Mathematics and Abstract Algebra/04 Codes, Cryptography, and Fuzzy Systems/Check digits and error-correcting codes.md
+01 Mathematics/11 Discrete Mathematics and Abstract Algebra/04 Codes, Cryptography, and Fuzzy Systems/Classical ciphers and cryptanalysis.md
+01 Mathematics/11 Discrete Mathematics and Abstract Algebra/04 Codes, Cryptography, and Fuzzy Systems/Fuzzy relations and inference.md
+01 Mathematics/11 Discrete Mathematics and Abstract Algebra/04 Codes, Cryptography, and Fuzzy Systems/Fuzzy sets and aggregation.md
+01 Mathematics/11 Discrete Mathematics and Abstract Algebra/04 Codes, Cryptography, and Fuzzy Systems/Fuzzy systems and interpolation.md
+01 Mathematics/11 Discrete Mathematics and Abstract Algebra/04 Codes, Cryptography, and Fuzzy Systems/Perfect secrecy and public-key arithmetic.md

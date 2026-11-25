@@ -1,0 +1,8 @@
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/04 Non-Abelian Gauge Theories/4.3 Some Physical Consequences.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/04 Non-Abelian Gauge Theories/4.4 Assessment.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/04 Non-Abelian Gauge Theories/4.B References.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/04 Non-Abelian Gauge Theories/4.P Problems.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/04 Non-Abelian Gauge Theories/4.R For Further Reading.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/05 Hidden Symmetries/5.0 Chapter introduction.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/05 Hidden Symmetries/5.1 The Idea of Spontaneously Broken Symmetries.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/05 Hidden Symmetries/5.2 Spontaneous Breaking of Continuous Symmetries.md

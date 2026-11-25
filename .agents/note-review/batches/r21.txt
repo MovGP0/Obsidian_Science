@@ -1,0 +1,72 @@
+02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/08.02 Bose–Einstein Condensation.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/08.02.01 Derivation of the Critical Temperature.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/08.02.02 Condensate - Ground-State Occupation.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/08.02.03 Nature of the Phase Transition.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/08.03 Thermodynamic Properties of the Bose Gas.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/08.03.01 Internal Energy.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/08.03.02 Pressure.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/08.03.03 Specific Heat.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/08.03.04 Entropy and the Third Law.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/08.04 Photon Gas and Blackbody Radiation.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/08.04.01 Photons as Relativistic Bosons.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/08.04.02 Density of States and the Planck Spectrum.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/08.04.03 Stefan–Boltzmann Law.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/08.04.04 Wien Displacement Law.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/08.04.05 Radiation Pressure.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/08.05 Phonons and the Debye Model.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/08.05.01 Lattice Vibrations as Bosons.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/08.05.02 Debye Model.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/08.05.03 Debye Internal Energy and Specific Heat.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/08.05.04 High- and Low-Temperature Limits.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/08.05.05 Comparison with the Einstein Model.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/08.05.06 Typical Debye Temperatures.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/08.06 Experimental Bose–Einstein Condensates.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/08.06.01 Historical Overview.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/08.06.02 Magneto-Optical Traps and Cooling Methods.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/08.06.03 Condensate Properties.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/08.07 Worked Examples.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/08.08 Summary.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/08.99 Exercises.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/99 Exercises/08.01 Critical Temperature of Helium-4.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/99 Exercises/08.02 Entropy of the Condensed Bose Gas.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/99 Exercises/08.03 Limits and Maximum of the Planck Spectrum.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/99 Exercises/08.04 Accuracy of the Debye T³ Law.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/99 Exercises/08.05 Photon Gas in a One-Litre Cavity.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/99 Exercises/08.06 Condensation in Two Dimensions.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/Bose condensation, photon gases, and phonons.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.00 Real Gases and Interactions.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.01 Limits of the Ideal Gas.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.01.01 When the Model Fails.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.01.02 Characteristic Scales.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.02 van der Waals Equation.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.02.01 Excluded Volume.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.02.02 Long-Range Attraction.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.02.03 van der Waals Equation.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.02.04 van der Waals Isotherms.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.02.05 Critical Point.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.02.06 Maxwell Construction.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.02.07 Reduced Variables and the Law of Corresponding States.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.03 Virial Expansion.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.03.01 Thermodynamic Derivation.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.03.02 Pressure and Coefficients.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.03.03 Physical Meaning of the Coefficients.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.04 Second Virial Coefficient.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.04.01 General Formula.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.04.02 Connection to van der Waals.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.04.03 Boyle Temperature.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.05 Lennard–Jones Potential and Calculation of B₂.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.05.01 The 6–12 Potential.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.05.02 Calculation of B₂(T) for the Lennard–Jones Potential.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.06 Cluster Expansion and Mayer Diagrams.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.06.01 Expansion of the Configurational Integral.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.06.02 Mayer Graphs.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.06.03 Cluster Integrals.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.06.04 Relation between Cluster Integrals and Virial Coefficients.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.07 Joule–Thomson Effect and Gas Liquefaction.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.07.01 Joule–Thomson Expansion.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.07.02 Joule–Thomson Coefficient.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.07.03 Coefficient for the van der Waals Gas.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.07.04 Inversion Temperature.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.07.05 Application - Gas Liquefaction.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.08 Worked Examples.md
+02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.09 Notes on Empirical Equations of State.md

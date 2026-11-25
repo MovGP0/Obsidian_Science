@@ -1,0 +1,169 @@
+=== 02 Physics/07 Astrophysics and Cosmology/Galactic chemical evolution and the closed-box model.md
+priority: medium
+graph: yes
+manim: no
+summary: The closed-box derivation and G-dwarf numbers are correct (p≈0.74 Z⊙, fraction ≈0.39), but the note opens with unrelated disk-dynamics material and carries a physical-quantities table copied from other notes.
+- [Correctness] Physical quantities table lists $Z$ as zenith angle, $X$ as airmass, $A$ as extinction and Oort constant, $h$, the Stefan–Boltzmann $\sigma$ and a grain density $n$, none of which this note uses; $Z$ and $X$ clash with the metallicity and hydrogen mass fraction used in the text, while $X$, $Y$, $N_{\mathrm O}$, $N_{\mathrm{Fe}}$, $M_{\mathrm g}$, $M_{\mathrm h}$, $M_\star$ are missing.
+- [Correctness] $Z_\odot=0.02$ and $X=0.76$, $Y=0.24$ are old values; modern solar metallicity is $Z_\odot\approx0.013$–$0.014$ (Asplund et al. 2009) and primordial $Y_p\approx0.245$; label 0.02 as the classical value used in the G-dwarf example.
+- [Structure] The opening vertical Jeans–Poisson result $2\pi G\Sigma(<z)=-n^{-1}\partial(n\sigma_z^2)/\partial z$ and the K-dwarf surface-density table belong to a disk-dynamics note; move them or give them their own heading with a one-line derivation from the Jeans and Poisson equations.
+- [Simplify] Remove transcription asides ("The notes append an extra Z", "handwritten exponent", "Gluon exchange mediates the strong interaction") and state the closed-box assumptions and result in one clean pass, defining the yield $p$ before using it.
+- [Graph] Plot the closed-box cumulative metallicity distribution $M_\star(<Z)/M_\star(<Z_\odot)=(1-e^{-Z/p})/(1-e^{-Z_\odot/p})$ for $Z/Z_\odot\in[0,1]$ with $p=0.74Z_\odot$, mark $Z_\odot/4$ (≈0.39) and the observed ≲1% point, and overlay a pre-enriched curve with $Z_0=0.1Z_\odot$.
+- [Intuition] End with the standard resolutions of the G-dwarf problem (pre-enrichment $Z_0>0$, gas infall/accreting box) so the reader sees why the closed box fails and what fixes it.
+=== 02 Physics/07 Astrophysics and Cosmology/Galactic potential models, virial balance, and relaxation.md
+priority: medium
+graph: yes
+manim: yes
+summary: Derivations of the virial theorem, Plummer mass estimate, strong/weak encounters and relaxation times are correct and the numbers check out, but the note mixes topics and has a garbled symmetrization step and a foreign quantities table.
+- [Correctness] Physical quantities table is mostly from other notes: $m$ as apparent magnitude (here mass), $b$ as softening constant (here impact parameter), $\alpha$ as right ascension/parallax (here line-of-sight angle and scattering angle), $\tau$ as optical depth (here averaging time), $R$ as stellar radius in km (here system size), $p$ metal yield unused; replace with the note's actual symbols ($N$, $t_c$, $t_r$, $f(v)$, $\eta$, …).
+- [Correctness] Globular-cluster Coulomb logarithm: $r_s\simeq2\,\mathrm{AU}\simeq9.7\times10^{-6}\,\mathrm{pc}\approx10^{-5}\,\mathrm{pc}$, so $\Lambda=R/r_s\approx10^5$ ($\ln\Lambda\approx11.5$), not $\ln[1/(2\times10^{-5})]=\ln(5\times10^4)$; the following sentence about the Galactic disk is a non sequitur after a globular-cluster example.
+- [Simplify] Replace "The contribution from the first term before the sum is symmetrized changes when α and β are exchanged" with an explicit statement that the pair sum is rewritten by swapping α↔β and averaging; also move the opening tangent-point section (Figs. 70–72) to [[Milky Way populations, clusters, and rotation#Rotation kinematics of the Milky Way disk]].
+- [Links] Link the weak-encounter section to [[Gravitational encounters and collisionless galactic dynamics]], which gets $t_r/t_c\simeq N/(8\ln N)$ instead of $N/(6\ln(N/2))$, and explain that the prefactor differs only because one uses volume density $n=3N/4\pi R^3$ and the other projected density $N/\pi R^2$.
+- [Graph] Plot $v_c(r)$ for Plummer ($a_{\mathrm p}=1$), NFW ($a_{\mathrm N}=1$) and the singular isothermal sphere for $r/a\in[0,10]$; separately plot $t_r/t_c=N/(6\ln(N/2))$ on log-log axes for $N=10^2$–$10^{12}$ with the open cluster, globular cluster and elliptical from the table as markers.
+- [Manim] Animate a weak encounter: a star on a straight line past a field star with the transverse kick $\int F_\perp dt$ building up, then many random kicks producing a random walk with $\langle v_\perp^2\rangle\propto t$.
+=== 02 Physics/07 Astrophysics and Cosmology/Galactic virial balance, rotational support, and anisotropy.md
+priority: medium
+graph: yes
+manim: no
+summary: The tensor virial derivation and the oblate-spheroid $W_{xx}/W_{zz}$ result are correct (ratio →1 in the spherical limit), but the note starts mid-topic and its table contains duplicated and foreign symbols.
+- [Correctness] Physical quantities table lists $r_{\mathrm g}$ twice (gravitational radius and "Gyroradius"), $V$ as both gas volume and potential energy while the note uses $V_{jk}$ for the external term, $K$ as a "virial scaling coefficient" clashing with kinetic energy $K$, and unused Sérsic $n$, number density $n$, fundamental-plane $a,b$ and $R,R_{\mathrm e}$; prune to the note's symbols.
+- [Structure] The note opens with the King approximation and SIS without defining $r_0$ or the nonsingular isothermal sphere; add a short lead-in ($r_0=\sqrt{9\sigma^2/4\pi G\rho_0}$) or move this paragraph to the note that solves the isothermal sphere.
+- [Simplify] Collapse the scattered remarks on "handwritten" index order and the signed surface term into one convention statement at the start of the virial section, noting once that $W_{jk}$ is symmetric for self-gravity.
+- [Graph] Plot the $v_0/\sigma_0$–$\epsilon$ diagram $v_0/\sigma_0=\sqrt{2[(1-\delta)W_{xx}/W_{zz}-1]}$ using the oblate formula for $\epsilon\in[0,0.7]$ and $\delta=0,0.1,0.2,0.3$; this is the classic diagnostic of rotational versus anisotropic flattening.
+- [Example] Work one case: an E4 galaxy ($\epsilon=0.4$) has $W_{xx}/W_{zz}\approx1.53$, so an isotropic oblate rotator needs $v_0/\sigma_0\approx1.03$; compare with the low $v/\sigma$ of giant ellipticals to show they must be anisotropic.
+=== 02 Physics/07 Astrophysics and Cosmology/Galaxy morphology, surface brightness, and halo models.md
+priority: medium
+graph: yes
+manim: no
+summary: The surface-brightness definitions, Sérsic/exponential constants (7.669, 8.327, 7.215π, 1.67) and NFW normalization are correct, but the structure is fragmented with empty or misnumbered headings, admin text and an inaccurate table.
+- [Correctness] Physical quantities table lists $\mu$ twice (surface brightness and mean particle mass) and many symbols the note never uses ($h$, $q,\epsilon,e$, $N$, $n$, $r_0$, $a,b$, $M_{\mathrm b}$, $M_{\mathrm d}$, $M_*$); prune to the symbols actually used.
+- [Structure] Remove the empty heading "Galaxy interactions and morphology", the midterm/Professor Buote remark and the Zwicky personality aside; rename "Case 2" and "Part 2. Case 3" (there is no Case 1) or add Case 1 = point mass/Keplerian explicitly.
+- [Simplify] The cooling argument asserts $R_{\mathrm{crit}}\simeq75$ kpc and $M_{\mathrm{crit}}\sim10^{12}M_\odot$ without steps; show $t_{\mathrm{cool}}=t_{\mathrm{ff}}$ with a bremsstrahlung $\Lambda\propto T^{1/2}$ and virial $T$ to obtain them, and rewrite the unclear sentence "Above $M_{\mathrm{crit}}$, fragmentation requires $R<R_{\mathrm{crit}}$".
+- [Graph] Plot a rotation-curve decomposition for $R=0$–40 kpc: exponential disk ($h_R=3$ kpc, $M_{\mathrm d}=5\times10^{10}M_\odot$), NFW halo ($c=10$, $M_{200}=10^{12}M_\odot$), their quadrature sum, and the Keplerian fall-off of the disk alone.
+- [Graph] Plot $\mu(R)-\mu_{\mathrm e}$ for the de Vaucouleurs law and an exponential disk with the same $R_{\mathrm e}$ ($R/R_{\mathrm e}\in[0,5]$) to show the steeper core and shallower wings of the $R^{1/4}$ law.
+=== 02 Physics/07 Astrophysics and Cosmology/Galaxy scaling laws, Sérsic profiles, and luminosity functions.md
+priority: medium
+graph: yes
+manim: no
+summary: Tully–Fisher, Sérsic, Schechter and isophote material is mostly correct, but a wrong internal link, heavy symbol reuse and an angle-convention slip in the boxy/disky section hurt clarity.
+- [Links] "The exponent 1/n follows from the intensity form on [[#Normal elliptical galaxies]]" points to the ellipse section; the Sérsic intensity is in [[#Sérsic profile]].
+- [Correctness] Symbol clashes: $\alpha$ is the Tully–Fisher slope, the baryonic TF exponent and the Schechter slope; $b$ is the semiminor axis, the BTF exponent, the Fourier sine coefficients $b_n$ and the Sérsic $b_n$; $n$ is both Sérsic index and Fourier order; rename (e.g. Fourier $A_n,B_n$, BTF exponent $\beta$).
+- [Correctness] In the boxy/disky section $\theta$ is the eccentric-anomaly parameter ($x=a\cos\theta$, $y=b\sin\theta$), not the polar angle, so $R_{\mathrm{iso}}(\theta)$ and $R_{\mathrm{ell}}(\theta)$ are not "along the same direction"; define $\theta$ as the polar angle from the major axis (standard convention) or state the parametric convention consistently.
+- [Correctness] The MBW/2dF Schechter table gives $\phi_*$ in $h^3\,\mathrm{Mpc^{-3}}$, so the characteristic magnitudes are $M^*-5\log_{10}h$, not $M^*$; add the $-5\log_{10}h$.
+- [Structure] Remove the midterm remark, and fix mislabelled headings: "Projected shapes and light profiles" contains the BTF normalization and "Galaxy luminosity functions" (duplicated with "Galaxy luminosity function") contains the $a_4$ statement.
+- [Graph] Plot Sérsic $\mu(R)-\mu_{\mathrm e}=1.086\,b_n[(R/R_{\mathrm e})^{1/n}-1]$ for $n=0.5,1,2,4,8$ over $R/R_{\mathrm e}\in[0,5]$; a Schechter $\log\phi$ versus $\log(L/L_*)$ for $\alpha=-0.7,-1.0,-1.2,-1.5$; and a polar plot of an isophote with $a_4/a=\pm0.03$ to show disky versus boxy.
+=== 02 Physics/07 Astrophysics and Cosmology/General relativity and the expanding-universe metric.md
+priority: medium
+graph: yes
+manim: yes
+summary: The tensor transformation, geodesic and FRW Christoffel derivations are correct and clear, but the note opens with course logistics, quotes outdated cosmological values and has a misleading quantities table.
+- [Correctness] Outdated values: $h=0.72\pm0.08$ is the 2001 HST Key Project result (Planck 2018: $h=0.674\pm0.005$; SH0ES ≈0.73, the Hubble tension), and the CMB is released at ≈380,000 yr, not ≈300,000 yr.
+- [Correctness] Physical quantities table lists $A$ as "comoving curvature radius" and $k$ as "spatial curvature parameter", but here $A,B$ are inhomogeneous metric coefficients (and $B$ multiplies $d\Omega^2$, so the text "radial metric coefficients" is wrong for $B$) and $k$ is the constant in $a=kt^{2/3}$; also $\phi$ (scalar field) clashes with the azimuth, $\eta$ (conformal time) with $\eta_{\mu\nu}$, and $V$, $\ell$, $C_\ell$, $\vec k$, $\mu$, $\delta$, $F,m,a$ are unused; rename $k$ in $a=kt^{2/3}$ and remove the course-grading paragraph.
+- [Intuition] In the local-inertial-frame section give the counting argument: 100 second derivatives $\partial^2g_{\mu\nu}$ versus 80 free third derivatives of the coordinate transformation leaves 20 that cannot be removed, the independent Riemann components; this makes "curvature persists" concrete.
+- [Example] The geodesic section sets up but never computes Christoffel symbols; add the polar example ($\Gamma^r_{\theta\theta}=-r$, $\Gamma^\theta_{r\theta}=1/r$) and the flat FRW results $\Gamma^0_{ij}=a\dot a\,\delta_{ij}$, $\Gamma^i_{0j}=(\dot a/a)\delta^i_j$.
+- [Graph] Plot $a(t)/a(t_0)$ for radiation ($t^{1/2}$), matter ($t^{2/3}$) and a cosmological constant ($e^{H t}$), all normalized to 1 today, with $H(t)=2/(3t)$ for matter as a second panel.
+- [Manim] Animate a comoving grid stretching with $a(t)$ while galaxies keep fixed comoving coordinates, showing the physical separation $a(t)(x_2-x_1)$ grow (Fig. 3 in motion).
+=== 02 Physics/07 Astrophysics and Cosmology/Gravitational encounters and collisionless galactic dynamics.md
+priority: low
+graph: yes
+manim: yes
+summary: A clean, correct derivation of the direct-collision time (≈10^21 yr checks out), the impulse approximation and the relaxation time $t_{\mathrm{relax}}\simeq0.1N/\ln N\,t_{\mathrm{cross}}$, but it opens with leftover luminosity-function text and has a foreign quantities table.
+- [Correctness] Physical quantities table includes many unused symbols from other notes (gas volume $V$, $R_{\mathrm e}$, Sérsic $n$, $\Delta$, $c$, two different $\alpha$, $p$, $C$, isothermal $\sigma$, $\delta$, $a,b$) while $m$, $v$, $\theta$ and $x$ are missing; prune it.
+- [Structure] Move the opening Schechter-model paragraph to the end of [[Galaxy scaling laws, Sérsic profiles, and luminosity functions]], where the Press–Schechter discussion stops.
+- [Links] Cross-link [[Galactic potential models, virial balance, and relaxation#Weak encounters]], which derives the same impulse but gets $N/(6\ln(N/2))$; note the different prefactor comes from volume versus projected stellar density.
+- [Example] Make the last paragraph explicit: $N=10^{11}$ gives $t_{\mathrm{relax}}\approx4\times10^8\,t_{\mathrm{cross}}$, and with $t_{\mathrm{cross}}\approx50$ Myr this is ~$10^{16}$ yr; contrast a globular cluster ($N=10^5$, $t_{\mathrm{relax}}\sim10^3\,t_{\mathrm{cross}}\sim10^8$–$10^9$ yr) where relaxation matters.
+- [Graph] Plot $F_\perp/(Gm^2/b^2)=[1+(vt/b)^2]^{-3/2}$ for $vt/b\in[-5,5]$ with a rectangle of height 1 and width 2 of equal area, showing the effective encounter duration $2b/v$.
+- [Manim] Show a star crossing the galaxy on a nearly straight path, receiving many small randomly oriented kicks whose squared sum grows linearly with the number of crossings until $\Delta v^2\sim v^2$.
+=== 02 Physics/07 Astrophysics and Cosmology/Interstellar gas and X-ray scaling in elliptical galaxies.md
+priority: medium
+graph: yes
+manim: no
+summary: The hot-gas plasma estimates, beta-model derivation and self-similar scalings are mostly correct (sound speed, crossing time, $P_{\mathrm{mag}}/P_{\mathrm{th}}$, $L_X\propto T^2$ check out), but there is a gyroradius normalization error, a symbol clash and leftover admin text.
+- [Correctness] Gyroradius normalization: with $v=\sqrt{3kT/m}$, an electron at $T=10^7$ K has $r_{\mathrm g}\approx3.9\times10^{-11}$ pc for $B=1\,\mu$G, so the formula should read $(B/1\,\mu\mathrm G)^{-1}$, or the coefficient should be ≈$2.0\times10^{-11}$ pc for $(B/2\,\mu\mathrm G)^{-1}$.
+- [Correctness] Symbol clashes: $r_{\mathrm g}$ is the gyroradius in the plasma section and the gravitational radius in the scaling section (the table lists both), and $\mu$ is listed as surface brightness and mean particle mass; rename the gyroradius $r_{\mathrm L}$ and prune unused table entries (Sérsic $n$, both $\alpha$, $C$, $q,\epsilon,e$, $p$, $a,b$, $K$).
+- [Structure] Remove the opening fundamental-plane fragment and the course-evaluation/final-exam paragraph, and replace "For problem 2/3" with a statement of what is being computed (potential of an NFW halo, tensor virial theorem with external potential).
+- [Example] Add a worked beta value: for $\sigma=250\,\mathrm{km\,s^{-1}}$ and $kT=0.8$ keV ($\mu=0.62$), $\beta=\mu m_{\mathrm u}\sigma^2/kT\approx0.5$, which explains why fitted $\beta\lesssim0.5$ and why extrapolated luminosities depend on the outer radius.
+- [Graph] Plot $I_X(R)/I_{X,0}=(1+R^2/r_c^2)^{-3\beta+1/2}$ on log-log axes for $R/r_c\in[0.1,100]$ and $\beta=0.4,0.5,0.67$; separately plot $L_X\propto T^2$ (self-similar) against the observed $\sim T^3$ (clusters) and $\sim T^5$ (galaxies) slopes.
+=== 02 Physics/07 Astrophysics and Cosmology/Inverse Compton scattering and photon energy exchange.md
+priority: medium
+graph: yes
+manim: yes
+summary: The Lorentz-transformation steps, the $4\gamma^2$ maximum and the net power $\tfrac43\sigma_{\mathrm T}c\gamma^2\beta^2U_\gamma$ are correct and the numerical examples check out, but the opening fragment is undefined and the derivation stops before the promised mean energy boost.
+- [Correctness] Physical quantities table describes $n$ as the number density of absorbers, but here $n(E)$ is the photon number density per unit energy; it also lists unused $y$ (Compton parameter) and $b$ (Doppler parameter) and omits $x$, $\gamma$, $\beta$, $\theta$, $E_\gamma$, $U_\gamma$ and $L_{\mathrm{IC}}$.
+- [Structure] The opening Klein–Nishina formula uses $x$ without definition; define $x=h\nu'/(m_ec^2)$ in the electron rest frame and move this limit after the Thomson-condition discussion where it is needed.
+- [Simplify] Finish the "Mean photon energy boost" section: dividing the two lines gives $\langle E_f-E_i\rangle/\langle E_i\rangle=\tfrac43\gamma^2\beta^2$, so $\langle E_f\rangle\simeq\tfrac43\gamma^2\langle E_i\rangle$ for $\gamma\gg1$, the angle-averaged result promised earlier.
+- [Simplify] Replace the phase-space paragraph (four-volume and the homework claim that $dt'/E'$ is invariant) with the standard argument that $d^3p/E$ is invariant, so $n(E)\,dE\,d\Omega/E$ is invariant.
+- [Graph] Plot $\sigma_{\mathrm{KN}}/\sigma_{\mathrm T}$ versus $x\in[10^{-3},10^3]$ on log-log axes with the Thomson limit 1 and the asymptote $\tfrac{3}{8x}(\ln2x+\tfrac12)$; add $E_f/E_i$ versus $\theta_i$ for $\beta=0.9$ and $\hat k_f'\cdot\hat k_e=1$.
+- [Manim] Animate aberration: isotropic lab-frame photons appear concentrated head-on in the electron rest frame as $\beta$ grows, scatter there, and are beamed forward into a cone of half-angle $\sim1/\gamma$ on return to the lab frame.
+=== 02 Physics/07 Astrophysics and Cosmology/Metric Tensor of the Universe.md
+priority: high
+graph: no
+manim: no
+summary: A short stub with three factual errors that duplicates the FRW metric section of another note and lacks the vault's required frontmatter, TLDR and quantities table.
+- [Correctness] $1/H\approx14.787\times10^{12}$ yr is wrong by a factor of 1000; for $H=70\,\mathrm{km\,s^{-1}\,Mpc^{-1}}$, $1/H\approx13.97\times10^9$ yr (14.787 Gyr corresponds to $H\approx66$).
+- [Correctness] The displayed matrix has spatial entries $a(t)$, but $g_{ij}=a(t)^2\delta_{ij}$ requires $a(t)^2$ on the diagonal.
+- [Correctness] $a(t)=1+Ht$ is only the first-order Taylor expansion about today (with $t$ measured from now and $H=H_0$), not the expansion law; say so, and call $H_0$ the present Hubble parameter, not a constant.
+- [Structure] Add the quoted frontmatter title, TLDR, Source and Physical quantities table, and either merge into or link to [[General relativity and the expanding-universe metric#Metric of the expanding universe]]; use one time convention ($x^0=t$ with $g_{00}=-c^2$, or $x^0=ct$ with $g_{00}=-1$) consistently.
+=== 02 Physics/07 Astrophysics and Cosmology/Milky Way populations, clusters, and rotation.md
+priority: medium
+graph: yes
+manim: yes
+summary: The Oort-constant derivation is correct and well structured, but the descriptive part is list-like, some values are outdated, and the quantities table is full of conflicting entries.
+- [Correctness] Physical quantities table gives $\omega$ as both orbital angular speed and argument of periastron, $\alpha$ as right ascension, parallax and scattering angle (here a triangle angle), $b$ as softening constant (here Galactic latitude), $A$ as extinction and Oort constant, $\theta$ as position angle (here cylindrical azimuth), $R$ as stellar radius in km (here Galactocentric radius); $\beta$ is missing. Prune to the note's symbols.
+- [Correctness] Outdated values: star formation rate ≈3 $M_\odot\,\mathrm{yr^{-1}}$ (modern ≈1.6–2, Licquia and Newman 2015), thin-disk scale length ≈4 kpc (modern ≈2.5–3 kpc, Bland-Hawthorn and Gerhard 2016), $R_0=8$–8.3 kpc (GRAVITY 2019: 8.18 kpc); $A\simeq15$, $B\simeq-12$ remain consistent with Bovy (2017).
+- [Simplify] Show the skipped step from $v_t\simeq v\sin\alpha-v_0\cos\ell$ to $v_t\simeq d[A\cos2\ell+B]$, and remove the figure-tick commentary callout.
+- [Example] Close the final sentence numerically: $\omega_0=A-B\approx27\,\mathrm{km\,s^{-1}\,kpc^{-1}}$, so $v_0=\omega_0R_0\approx220\,\mathrm{km\,s^{-1}}$ for $R_0\approx8.2$ kpc, matching the quoted thin-disk speed.
+- [Graph] Plot $v_r/d=A\sin2\ell$ and $v_t/d=A\cos2\ell+B$ for $\ell\in[0^\circ,360^\circ]$ with $A=15$, $B=-12\,\mathrm{km\,s^{-1}\,kpc^{-1}}$, and a second panel comparing Keplerian, solid-body and flat rotation curves.
+- [Manim] Animate differential rotation in the Sun's frame: stars on circular orbits with a flat rotation curve, relative-velocity arrows around the Sun forming the quadrupole $\sin2\ell$ pattern that defines $A$.
+=== 02 Physics/07 Astrophysics and Cosmology/Natural and Doppler broadening and the Voigt profile.md
+priority: medium
+graph: yes
+manim: yes
+summary: The Lorentzian, Doppler and Voigt derivations and the main numbers (classical width 1.2×10^-4 Å, line-center 1.16×10^-14 cm²) are correct, but there are a few physics slips, symbol clashes and leftover course logistics.
+- [Correctness] Microturbulence is defined by turbulent cells small compared with the photon mean free path (the unit-optical-depth length), not the collisional mean free path.
+- [Correctness] ICM example: for an oxygen line at 0.65 keV (O VIII Lyα, $A\approx2.6\times10^{12}\,\mathrm{s^{-1}}$) the natural width is $\Delta\nu/\nu\sim10^{-5}$ or less, so a Doppler width $\sim10^{-3}$ is ~$10^2$ times the natural width, not "about ten times"; recompute.
+- [Correctness] Symbol clashes: $A$ is both the Einstein coefficient and the atomic weight; the table lists $\alpha$ as fine-structure constant (here $\alpha_\nu$ is the absorption coefficient), $y$ as Compton parameter (here an integration variable) and $T$ as brightness temperature (here kinetic temperature).
+- [Structure] Remove the final-exam and office-hours bullets and the duplicated Doppler-geometry figure; rename "Natural line broadening" (it holds oscillator strengths) and say the asymptotic formula is for Lyman lines while the table gives Balmer lines.
+- [Graph] Plot area-normalized Gaussian, Lorentzian and Voigt $H(a,u)/\sqrt\pi$ for $a=0.01,0.1,1$ over $u\in[-10,10]$ on a logarithmic $y$ axis, showing the Doppler core and the $1/u^2$ damping wings.
+- [Manim] Animate the convolution: a Gaussian slides along the Lorentzian and the overlap integral traces out the Voigt profile point by point.
+=== 02 Physics/07 Astrophysics and Cosmology/Perturbed metrics and the cosmological Boltzmann equation.md
+priority: medium
+graph: no
+manim: no
+summary: The perturbed-geodesic and first-order Boltzmann equations match Dodelson and are carefully expanded, but there are two momentum variables, a weak gauge analogy, an inaccurate figure caption and an unfinished final section.
+- [Correctness] The electromagnetic gauge analogy should be $A_\mu\to A_\mu+\partial_\mu\chi$; a constant shift $A_\mu\to A_\mu+C_\mu$ is a trivial special case and misrepresents gauge freedom.
+- [Correctness] Fig. 22 caption: the first acoustic peak at $\ell\approx220$ corresponds to about 1° ($\theta\approx180^\circ/\ell\approx0.8^\circ$), not half a degree, and diffusion damping sets in from $\ell\gtrsim1000$.
+- [Correctness] Physical quantities table lists $\phi$ as a scalar field, clashing with the azimuth in the line element, plus unused $F,m,a$, $A$, $\sigma$, $\eta$, radial speed $v$, $\gamma$, $\delta$ and $h$; prune.
+- [Structure] The last section stops at the general $\Gamma^0_{\mu\nu}$; compute $\Gamma^0_{00}=\partial_t\Psi$, $\Gamma^0_{0i}=\partial_i\Psi$, $\Gamma^0_{ij}=\delta_{ij}a^2[H+2H(\Phi-\Psi)+\partial_t\Phi]$ and finish $dE/dt$ for massive particles, or cut the section.
+- [Simplify] Use one momentum variable: the page switches from physical $p$ to $q=a\sqrt{\delta_{ij}P^iP^j}$ "written as $p$"; also retitle "Ionization and the Boltzmann equation", which mostly restates the metric.
+=== 02 Physics/07 Astrophysics and Cosmology/Post-main-sequence evolution, mass loss, and shell burning.md
+priority: high
+graph: no
+manim: yes
+summary: Largely a transcription of sketches and margin remarks rather than an explanation, with several questionable physics statements and a quantities table merged from many unrelated notes.
+- [Correctness] The helium flash occurs for stars up to ≈2 $M_\odot$ (1.8–2.2 depending on composition), not 1.5 $M_\odot$ as in the text and the ignition table.
+- [Correctness] Mass loss: the modified wind momentum $\dot M v_\infty R^{1/2}$ scales as $L^{1/\alpha_{\mathrm{eff}}}$ with exponent ≈1.5–2 (Kudritzki and Puls 2000), not linearly in $L$.
+- [Correctness] $t_{\mathrm{MS}}=M/\dot M=4\times10^6$ yr is a mass-loss timescale, not a main-sequence lifetime, so rename it (e.g. $\tau_{\dot M}$); the adjacent $t_{\mathrm{nuc}}\simeq2\times10^5$ yr for an $80M_\odot$ star is unexplained (its main-sequence lifetime is ≈3–4 Myr).
+- [Correctness] Physical quantities table lists $\mu$ five times, $n$ three times, $Z$ as metallicity and proton number, two $\tau$, $a$, $K$, $s$ and others from other notes, including a link to a different note; reduce it to the symbols this note uses.
+- [Structure] Remove the MACHO anecdote, "BS!" and tick-mark descriptions and rewrite as a narrative (core contraction, mirror principle, shell burning, helium ignition); state the assumed $L$ ratio of 10 in the Earth example (at the RGB tip $L\sim2000L_\odot$ gives ~1900 K) and note later HD 140283 ages (~12–13.7 Gyr) that remove the tension with 13.8 Gyr.
+- [Manim] Move a point along a $1M_\odot$ track on the HR diagram with an inset cross-section showing core contraction, hydrogen shell burning, envelope expansion, the helium flash and the horizontal branch.
+=== 02 Physics/07 Astrophysics and Cosmology/Radiative absorption, recombination, and Thomson scattering.md
+priority: medium
+graph: yes
+manim: yes
+summary: Optical depth, photoelectric scaling ($Z^4n^{-5}\omega^{-3}$, $\tau\simeq1$ at 1 keV for $5\times10^{21}\,\mathrm{cm^{-2}}$) and the Thomson setup are correct, but the Thomson derivation stops before its result and there are symbol clashes and admin remnants.
+- [Correctness] Symbol clashes: $n$ is both number density and principal quantum number, and $\alpha$ is both the absorption coefficient and the fine-structure constant; also the dimensionless optical depth $\tau_\nu$ and $\alpha_\nu$ are colored with \energy{}, which misuses the semantic macro.
+- [Structure] Finish the Thomson derivation: $\sigma_{\mathrm T}=L/S=\tfrac{8\pi}{3}(e^2/m_ec^2)^2\approx6.65\times10^{-25}\,\mathrm{cm^2}$ with $d\sigma/d\Omega=r_e^2\sin^2\Theta$; the "Homework. Prove the result for the general case" line refers to a result never stated.
+- [Simplify] Remove "Problem set 2 is due April 30", the stray repeated $I=I_0e^{-\tau}$ equation after the K-edge paragraph, and the $n^{-3}$ versus $n^{-5}$ remark (Kramers gives $n^{-5}$).
+- [Graph] Plot transmission $e^{-\tau}$ versus photon energy 0.1–10 keV using $\tau=2\times10^{-22}(E/\mathrm{keV})^{-8/3}N_{\mathrm H}$ for $N_{\mathrm H}=10^{20},10^{21},10^{22},10^{23}\,\mathrm{cm^{-2}}$ on log axes, a native version of Figs. 15 and 17.
+- [Manim] Animate an electron driven along $x$ by a linearly polarized wave and radiating a dipole pattern $\propto\sin^2\Theta$, with no emission along the polarization axis.
+=== 02 Physics/07 Astrophysics and Cosmology/Specific intensity and the radiative-transfer equation.md
+priority: low
+graph: yes
+manim: yes
+summary: A clear, correct development of flux, specific intensity, its constancy along rays and the transfer equation, except for a sign error in the scattering term and leftover course logistics.
+- [Correctness] Scattering term: the integral over incoming directions $\int\alpha^{\mathrm{scat}}(\Omega,\Omega')I_\nu(\Omega')\,d\Omega'/4\pi$ is the scattering-in gain and enters with a plus sign; the loss is $-\alpha^{\mathrm{scat}}_\nu I_\nu(\Omega)$, so isotropic scattering gives $dI_\nu/ds=-\alpha^{\mathrm{scat}}_\nu(I_\nu-J_\nu)$, not $-\alpha^{\mathrm{scat}}_\nu J_\nu$.
+- [Correctness] Physical quantities table lists the fine-structure constant $\alpha$, which the note never uses, and omits $D$, $d$, $\theta_c$, $\Omega_{\mathrm{obs}}$ and $N$.
+- [Structure] Remove the opening course-logistics section (office hours, due dates, slides policy) and the dangling "The notes mention plane-parallel and cylindrical symmetry".
+- [Simplify] Add the source function $S_\nu=j_\nu/\alpha_\nu$, the form $dI_\nu/d\tau_\nu=-I_\nu+S_\nu$ and the constant-$S$ solution $I_\nu=I_\nu(0)e^{-\tau}+S_\nu(1-e^{-\tau})$ with its optically thin and thick limits.
+- [Graph] Plot $I_\nu(\tau)/S_\nu$ for $\tau\in[0,5]$ with $I_\nu(0)/S_\nu=0,0.5,2$, showing relaxation to the source function.
+- [Manim] Show an observer receding from a uniformly bright sphere: the cone of rays narrows so the flux falls as $(R/D)^2$ while the intensity along each ray stays constant.

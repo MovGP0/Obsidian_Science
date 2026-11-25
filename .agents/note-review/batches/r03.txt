@@ -1,0 +1,64 @@
+01 Mathematics/03 Linear Algebra/01 Vectors and Bases/05.01 Geometric vectors.md
+01 Mathematics/03 Linear Algebra/01 Vectors and Bases/05.02 Vector operations.md
+01 Mathematics/03 Linear Algebra/01 Vectors and Bases/05.03 Components and bases.md
+01 Mathematics/03 Linear Algebra/01 Vectors and Bases/05.04 Magnitude and unit vectors.md
+01 Mathematics/03 Linear Algebra/01 Vectors and Bases/05.05 Dot products.md
+01 Mathematics/03 Linear Algebra/01 Vectors and Bases/05.06 General bases.md
+01 Mathematics/03 Linear Algebra/01 Vectors and Bases/05.07 Linear combinations.md
+01 Mathematics/03 Linear Algebra/01 Vectors and Bases/05.08 Lines and planes.md
+01 Mathematics/03 Linear Algebra/01 Vectors and Bases/10.01 Vector spaces.md
+01 Mathematics/03 Linear Algebra/01 Vectors and Bases/Basis change.md
+01 Mathematics/03 Linear Algebra/01 Vectors and Bases/Cross product.md
+01 Mathematics/03 Linear Algebra/01 Vectors and Bases/Hadamard product.md
+01 Mathematics/03 Linear Algebra/01 Vectors and Bases/Length of Vector.md
+01 Mathematics/03 Linear Algebra/01 Vectors and Bases/Linear maps functionals and complexification.md
+01 Mathematics/03 Linear Algebra/01 Vectors and Bases/Scalar Product.md
+01 Mathematics/03 Linear Algebra/01 Vectors and Bases/Unit Vector.md
+01 Mathematics/03 Linear Algebra/01 Vectors and Bases/Vector Addition.md
+01 Mathematics/03 Linear Algebra/01 Vectors and Bases/Vector calculations and geometric products.md
+01 Mathematics/03 Linear Algebra/01 Vectors and Bases/Vector product.md
+01 Mathematics/03 Linear Algebra/01 Vectors and Bases/Vectors - Overview.md
+01 Mathematics/03 Linear Algebra/02 Matrices, Linear Maps, and Systems/10.02 Linear maps.md
+01 Mathematics/03 Linear Algebra/02 Matrices, Linear Maps, and Systems/10.03 Matrices.md
+01 Mathematics/03 Linear Algebra/02 Matrices, Linear Maps, and Systems/10.04 Linear systems.md
+01 Mathematics/03 Linear Algebra/02 Matrices, Linear Maps, and Systems/10.05 Inverses.md
+01 Mathematics/03 Linear Algebra/02 Matrices, Linear Maps, and Systems/10.09 Real and complex matrices.md
+01 Mathematics/03 Linear Algebra/02 Matrices, Linear Maps, and Systems/10.10 Block matrices.md
+01 Mathematics/03 Linear Algebra/02 Matrices, Linear Maps, and Systems/Coordinate matrices and diagonalization.md
+01 Mathematics/03 Linear Algebra/02 Matrices, Linear Maps, and Systems/Gram–Schmidt and QR factorization problems.md
+01 Mathematics/03 Linear Algebra/02 Matrices, Linear Maps, and Systems/LU factorization and matrix practice.md
+01 Mathematics/03 Linear Algebra/02 Matrices, Linear Maps, and Systems/Linear algebra - Catalogue Guide.md
+01 Mathematics/03 Linear Algebra/02 Matrices, Linear Maps, and Systems/Linear algebra - Overview.md
+01 Mathematics/03 Linear Algebra/02 Matrices, Linear Maps, and Systems/Linear maps, inverses, and determinants.md
+01 Mathematics/03 Linear Algebra/02 Matrices, Linear Maps, and Systems/Linear systems and pivot exchange.md
+01 Mathematics/03 Linear Algebra/02 Matrices, Linear Maps, and Systems/Matrices and linear maps.md
+01 Mathematics/03 Linear Algebra/02 Matrices, Linear Maps, and Systems/Row reduction and the four fundamental subspaces.md
+01 Mathematics/03 Linear Algebra/02 Matrices, Linear Maps, and Systems/Scaling Matrices.md
+01 Mathematics/03 Linear Algebra/02 Matrices, Linear Maps, and Systems/Skewing Matrices.md
+01 Mathematics/03 Linear Algebra/02 Matrices, Linear Maps, and Systems/Subspaces, eigenvectors, and orthogonal projections.md
+01 Mathematics/03 Linear Algebra/02 Matrices, Linear Maps, and Systems/Symmetrization and Antisymmetrization.md
+01 Mathematics/03 Linear Algebra/02 Matrices, Linear Maps, and Systems/Vectors, projections, lines, and planes.md
+01 Mathematics/03 Linear Algebra/03 Determinants and Eigenvalues/10.06 Determinants and trace.md
+01 Mathematics/03 Linear Algebra/03 Determinants and Eigenvalues/10.07 Eigenvalues and eigenvectors.md
+01 Mathematics/03 Linear Algebra/03 Determinants and Eigenvalues/10.08 Diagonalization.md
+01 Mathematics/03 Linear Algebra/03 Determinants and Eigenvalues/Determinant of a Matrix.md
+01 Mathematics/03 Linear Algebra/03 Determinants and Eigenvalues/Determinants and oriented area.md
+01 Mathematics/03 Linear Algebra/03 Determinants and Eigenvalues/Eigenvalues and principal axes.md
+01 Mathematics/03 Linear Algebra/03 Determinants and Eigenvalues/Eigenvectors and Eigenvalues.md
+01 Mathematics/03 Linear Algebra/04 Inner Products, Quadratic Forms, and Factorizations/11.01 Bilinear maps.md
+01 Mathematics/03 Linear Algebra/04 Inner Products, Quadratic Forms, and Factorizations/11.02 Quadratic forms.md
+01 Mathematics/03 Linear Algebra/04 Inner Products, Quadratic Forms, and Factorizations/11.03 Symmetry.md
+01 Mathematics/03 Linear Algebra/04 Inner Products, Quadratic Forms, and Factorizations/11.04 Inner products.md
+01 Mathematics/03 Linear Algebra/04 Inner Products, Quadratic Forms, and Factorizations/11.05 Orthonormal bases.md
+01 Mathematics/03 Linear Algebra/04 Inner Products, Quadratic Forms, and Factorizations/11.06 Basis changes.md
+01 Mathematics/03 Linear Algebra/04 Inner Products, Quadratic Forms, and Factorizations/11.07 Classification.md
+01 Mathematics/03 Linear Algebra/04 Inner Products, Quadratic Forms, and Factorizations/11.08 Indefinite forms.md
+01 Mathematics/03 Linear Algebra/04 Inner Products, Quadratic Forms, and Factorizations/11.09 Complex inner products.md
+01 Mathematics/03 Linear Algebra/04 Inner Products, Quadratic Forms, and Factorizations/Bilinear and quadratic forms - Overview.md
+01 Mathematics/03 Linear Algebra/04 Inner Products, Quadratic Forms, and Factorizations/Cauchy-Schwarz inequality.md
+01 Mathematics/03 Linear Algebra/04 Inner Products, Quadratic Forms, and Factorizations/From row reduction to least squares.md
+01 Mathematics/03 Linear Algebra/04 Inner Products, Quadratic Forms, and Factorizations/Hermitian Conjungate.md
+01 Mathematics/03 Linear Algebra/04 Inner Products, Quadratic Forms, and Factorizations/Least squares and numerical stability.md
+01 Mathematics/03 Linear Algebra/04 Inner Products, Quadratic Forms, and Factorizations/Singular value decomposition.md
+01 Mathematics/03 Linear Algebra/04 Inner Products, Quadratic Forms, and Factorizations/Vector and matrix norms.md
+01 Mathematics/03 Linear Algebra/04 Inner Products, Quadratic Forms, and Factorizations/Vector spaces and bilinear forms.md

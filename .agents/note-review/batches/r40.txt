@@ -1,0 +1,29 @@
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/01 Historical Introduction to the Elementary Particles/1.9 The November Revolution and Its Aftermath (1974-1983).md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/01 Historical Introduction to the Elementary Particles/1.B References and Notes.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/01 Historical Introduction to the Elementary Particles/1.P Problems.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/02 Elementary Particle Dynamics/2.1 The Four Forces.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/02 Elementary Particle Dynamics/2.2 Quantum Electrodynamics (QED).md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/02 Elementary Particle Dynamics/2.3 Quantum Chromodynamics (QCD).md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/02 Elementary Particle Dynamics/2.4 Weak Interactions.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/02 Elementary Particle Dynamics/2.4.1 Leptons.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/02 Elementary Particle Dynamics/2.4.2 Quarks.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/02 Elementary Particle Dynamics/2.4.3 Weak and Electromagnetic Couplings of W and Z.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/02 Elementary Particle Dynamics/2.5 Decays and Conservation Laws.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/02 Elementary Particle Dynamics/2.6 Unification Schemes.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/02 Elementary Particle Dynamics/2.B References and Notes.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/02 Elementary Particle Dynamics/2.P Problems.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/03 Relativistic Kinematics/3.1 Lorentz Transformations.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/03 Relativistic Kinematics/3.2 Four-Vectors.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/03 Relativistic Kinematics/3.3 Energy and Momentum.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/03 Relativistic Kinematics/3.4 Collisions.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/03 Relativistic Kinematics/3.5 Examples and Applications.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/03 Relativistic Kinematics/3.B References and Notes.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/03 Relativistic Kinematics/3.P Problems.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/04 Symmetries/4.1 Symmetries, Groups, and Conservation Laws.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/04 Symmetries/4.2 Spin and Orbital Angular Momentum.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/04 Symmetries/4.3 Addition of Angular Momenta.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/04 Symmetries/4.4 Spin 1-2.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/04 Symmetries/4.5 Flavor Symmetries.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/04 Symmetries/4.6 Parity.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/04 Symmetries/4.7 Charge Conjugation.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/04 Symmetries/4.8 CP Violation.md

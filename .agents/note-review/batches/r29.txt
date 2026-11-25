@@ -1,0 +1,62 @@
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/04 Schrödinger Equation/04.04 Wave Packets.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/04 Schrödinger Equation/04.05 Heisenberg Picture.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/04 Schrödinger Equation/04.06 Ehrenfest Theorem.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/04 Schrödinger Equation/04.07 Symmetries and Conserved Quantities.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/04 Schrödinger Equation/04.08 Schrödinger Equation Exercises.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/05 Feynman Path Integrals/05.00 Feynman Path Integrals.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/05 Feynman Path Integrals/05.01 Transition Amplitude and Propagator.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/05 Feynman Path Integrals/05.02 Time Discretization and the Feynman Formula.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/05 Feynman Path Integrals/05.03 Free Particle.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/05 Feynman Path Integrals/05.04 Harmonic Oscillator.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/05 Feynman Path Integrals/05.05 Classical Limit and Stationary Phase.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/05 Feynman Path Integrals/05.06 Equivalence to the Schrödinger Equation.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/05 Feynman Path Integrals/05.07 Closed Paths and Geometric Phases.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/05 Feynman Path Integrals/05.08 Feynman Path Integrals Exercises.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/06 One-Dimensional Systems/06.00 One-Dimensional Systems.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/06 One-Dimensional Systems/06.01 Free Particle.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/06 One-Dimensional Systems/06.02 Potential Step.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/06 One-Dimensional Systems/06.03 Infinite Potential Well.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/06 One-Dimensional Systems/06.04 Finite Potential Well.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/06 One-Dimensional Systems/06.05 Attractive Delta Potential.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/06 One-Dimensional Systems/06.06 General Theorems in One Dimension.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/06 One-Dimensional Systems/06.07 Overview.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/06 One-Dimensional Systems/06.08 One-Dimensional Systems Exercises.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/06 One-Dimensional Systems/Free particles, finite barriers, and point interactions.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/06 One-Dimensional Systems/Square-well, oscillator, and tunneling problems.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/07 Barriers and Quantum Tunneling/07.00 Barriers and Quantum Tunneling.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/07 Barriers and Quantum Tunneling/07.01 Rectangular Potential Barrier.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/07 Barriers and Quantum Tunneling/07.02 Physical Interpretation.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/07 Barriers and Quantum Tunneling/07.03 WKB Approximation for Tunneling.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/07 Barriers and Quantum Tunneling/07.04 Application to Alpha Decay.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/07 Barriers and Quantum Tunneling/07.05 Other Applications.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/07 Barriers and Quantum Tunneling/07.06 Tunneling and Lifetimes.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/07 Barriers and Quantum Tunneling/07.07 Barriers and Quantum Tunneling Exercises.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/08 Harmonic Oscillator/08.00 Harmonic Oscillator.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/08 Harmonic Oscillator/08.01 Algebraic Form – Operators â and â†.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/08 Harmonic Oscillator/08.02 Position Representation – Hermite Functions.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/08 Harmonic Oscillator/08.03 Expectation Values and Fluctuations.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/08 Harmonic Oscillator/08.04 Dynamics and the Ehrenfest Theorem.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/08 Harmonic Oscillator/08.05 Coherent States.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/08 Harmonic Oscillator/08.06 Oscillator in Two and Three Dimensions.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/08 Harmonic Oscillator/08.07 Harmonic Oscillator Exercises.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/08 Harmonic Oscillator/Harmonic oscillator wavefunctions and ladder calculations.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/09 Orbital Angular Momentum/09.00 Orbital Angular Momentum.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/09 Orbital Angular Momentum/09.01 Definition and Algebra.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/09 Orbital Angular Momentum/09.02 Raising and Lowering Operators.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/09 Orbital Angular Momentum/09.03 Spectrum of L̂² and L̂ (z).md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/09 Orbital Angular Momentum/09.04 Spherical Harmonics.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/09 Orbital Angular Momentum/09.05 L̂² as the Angular Laplace Operator.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/09 Orbital Angular Momentum/09.06 Particle on a Sphere.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/09 Orbital Angular Momentum/09.07 Rotations as Unitary Operators.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/09 Orbital Angular Momentum/09.08 Orbital Angular Momentum Exercises.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/09 Orbital Angular Momentum/Orbital angular momentum, rings, and spheres.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/09 Orbital Angular Momentum/Spatial rotations and the angular momentum generators.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/10 Spin/10.00 Spin.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/10 Spin/10.01 Algebraic Definition.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/10 Spin/10.02 Spin ½ and the Pauli Matrices.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/10 Spin/10.03 Bloch Sphere.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/10 Spin/10.04 Larmor Precession.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/10 Spin/10.05 Stern–Gerlach Revisited.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/10 Spin/10.06 Introduction to Combining Two Spin-½ Systems.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/10 Spin/10.07 Spin Exercises.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/10 Spin/Spin in magnetic fields and atomic Zeeman splitting.md

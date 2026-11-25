@@ -1,0 +1,319 @@
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/92 Appendix B Decay Rates and Cross Sections/Appendix B.0 Decay Rates and Cross Sections.md
+priority: low
+graph: no
+manim: no
+summary: Short appendix hub whose two links resolve correctly.
+- [Structure] No change needed; the hub lists [[B.1 Decays]] and [[B.2 Cross Sections]] correctly.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/92 Appendix B Decay Rates and Cross Sections/B.1 Decays.md
+priority: low
+graph: yes
+manim: no
+summary: Accurate formula sheet (B.1–B.4 check out, including the massless limit B.4) but gives no derivation hints or worked example.
+- [Intuition] Add one sentence that (B.2) follows from (B.1) by using the delta function to do the $d^3\mathbf p_3$ integral in the rest frame, and that the square root in (B.3) is the Källén function $\lambda^{1/2}(m_1^2,m_2^2,m_3^2)$.
+- [Simplify] The table says the units of $\mathcal M$ "depend on the final particle count"; state the rule explicitly: $[\mathcal M]=(mc)^{4-n}$ with $n$ external lines, so for a two-body decay $\mathcal M$ has momentum units and (B.2) has units of $\mathrm{s^{-1}}$.
+- [Example] Add a worked example with (B.3): $\pi^+\to\mu^+\nu_\mu$ gives $|\mathbf p|=(m_\pi^2-m_\mu^2)c/(2m_\pi)\approx29.8\,\mathrm{MeV}/c$.
+- [Graph] Plot $|\mathbf p|/(m_1c)$ from (B.3) against $m_2/m_1\in[0,1]$ for $m_3/m_1=0,\,0.2,\,0.5$; the curves end at the threshold $m_2+m_3=m_1$.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/92 Appendix B Decay Rates and Cross Sections/B.2 Cross Sections.md
+priority: low
+graph: yes
+manim: no
+summary: Formulas B.5–B.13 are correctly transcribed and dimensionally consistent, but the momentum notation is overloaded.
+- [Correctness] Symbol clash: $\mathbf p_i$ means "momentum of particle $i$" in (B.5) but "incoming momentum magnitude" in (B.7), next to $\mathbf p_f$. Rename to $\mathbf p_{\mathrm{in}},\mathbf p_{\mathrm{out}}$ in (B.7), and add $\mathbf p_3$ (used in B.10–B.13) to the table.
+- [Intuition] Explain that $\sqrt{(p_1\cdot p_2)^2-(m_1m_2c^2)^2}$ is the Lorentz-invariant flux factor, and show that it reduces to (B.6) and (B.9) in the two frames.
+- [Graph] For a massless projectile on a heavy target, (B.11) needs $E_3/E_1=1/[1+(E_1/m_2c^2)(1-\cos\theta)]$. Plot $(E_3/E_1)^2$ against $\theta\in[0,\pi]$ for $E_1/m_2c^2=0.1,1,10$ to show when the recoil-free limit (B.12) applies.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/93 Appendix C Pauli and Dirac Matrices/Appendix C.0 Pauli and Dirac Matrices.md
+priority: low
+graph: no
+manim: no
+summary: Short hub whose links resolve.
+- [Structure] No change needed.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/93 Appendix C Pauli and Dirac Matrices/C.1 Pauli Matrices.md
+priority: low
+graph: no
+manim: no
+summary: Correct and compact list of Pauli identities.
+- [Intuition] After (C.8), say that $\theta=|\boldsymbol\theta|$ and that $e^{-i\phi\,\hat n\cdot\boldsymbol\sigma/2}$ rotates a spin-½ state by $\phi$, so a $2\pi$ rotation gives $-1$.
+- [Example] Show (C.3) as the special case $\mathbf a=\mathbf b$ of (C.7), $(\mathbf a\cdot\boldsymbol\sigma)^2=|\mathbf a|^2$, which is the step that leads to (C.8).
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/93 Appendix C Pauli and Dirac Matrices/C.2 Dirac Matrices.md
+priority: medium
+graph: no
+manim: no
+summary: Useful trace sheet with one transcription error in the definition of gamma^0.
+- [Correctness] (C.9) writes $\gamma^0=\begin{pmatrix}1&0\\0&1\end{pmatrix}$, which is the identity. The Dirac representation has $\gamma^0=\begin{pmatrix}1&0\\0&-1\end{pmatrix}$, as in [[Reference Formulas]]. With the identity, (C.15) $\{\gamma^0,\gamma^i\}=0$ and the claim "traceless" both fail.
+- [Simplify] The sentence "Since $\gamma^5$ is the product of an even number..., it follows that $\operatorname{Tr}(\gamma^5\gamma^\mu)=0$" reads as a contradiction. Rephrase: $\gamma^5$ times an odd number of $\gamma$'s is an odd product, so its trace is zero.
+- [Example] Give the explicit $\gamma^5=\begin{pmatrix}0&1\\1&0\end{pmatrix}$ and verify $\operatorname{Tr}(\gamma^5\gamma^0\gamma^1\gamma^2\gamma^3)=-4i$, which is consistent with (C.25) and $\epsilon^{0123}=-1$.
+- [Links] Link the trace theorems to [[7.7 Casimir's Trick and the Trace Theorems]], where they are used.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/94 Appendix D Feynman Rules/Appendix D.0 Feynman Rules.md
+priority: low
+graph: no
+manim: no
+summary: Short hub whose three links resolve.
+- [Structure] No change needed.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/94 Appendix D Feynman Rules/D.1 External Lines.md
+priority: low
+graph: no
+manim: no
+summary: Correct minimal rule list.
+- [Intuition] Add one line on the order of factors: write the spinors by following each fermion line backward against the arrow, so $\bar u\ldots u$ or $\bar v\ldots v$ brackets the vertex matrices.
+- [Links] Link to [[7.5 The Feynman Rules for Quantum Electrodynamics]] for context.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/94 Appendix D Feynman Rules/D.2 Propagators.md
+priority: low
+graph: no
+manim: no
+summary: Correct propagator list, without the $i\varepsilon$ prescription or any interpretation.
+- [Intuition] State that the propagators have poles at the on-shell condition $q^2=(mc)^2$, that the $+i\varepsilon$ is suppressed, and that the massive spin-1 numerator is the polarization sum $\sum\epsilon_\mu\epsilon_\nu^*$.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/94 Appendix D Feynman Rules/D.3 Vertex Factors.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct vertex catalogue, with all SVG embeds present, but it does not explain where the neutral-current coefficients come from and colors the couplings inconsistently.
+- [Intuition] Add the generating rule $c_V^f=T_3^f-2Q_f\sin^2\theta_w$, $c_A^f=T_3^f$. It reproduces every row of the $c_V,c_A$ table, for example $u$: $\tfrac12-\tfrac43\sin^2\theta_w$.
+- [Example] Give numbers: $g_e=\sqrt{4\pi/137}\approx0.303$, $\sin^2\theta_w\approx0.231$, so $g_w\approx0.63$ and $g_z\approx0.72$. This shows that weak couplings are not small; the propagators suppress the weak interactions.
+- [Graph] Plot $c_V^f$ against $\sin^2\theta_w\in[0,0.5]$ for $e$, $u$ and $d$ (straight lines), and mark the physical value 0.231 where $c_V^e\approx-0.04$ is nearly zero.
+- [Structure] Macro use is inconsistent: $g_e$ is wrapped in `\electric{}`, but $g_s$, $g_w$ and $g_z$ are uncolored. Treat all couplings the same way.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/99 Back matter/Index.md
+priority: low
+graph: no
+manim: no
+summary: Plain transcribed index with a few punctuation slips.
+- [Structure] Add missing commas before page numbers in "Asymptotic freedom 62–64", "local 348–350" and "Gell-Mann matrices 282"; write "α𝑤" (math-italic Unicode) as "α_w", consistent with "αₛ".
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/99 Back matter/Particle Data.md
+priority: medium
+graph: no
+manim: no
+summary: Faithful 1987 data sheet, but several values are now superseded and could mislead readers.
+- [Correctness] Outdated values: $t$ ">23,000" (now about $172{,}600\,\mathrm{MeV}$), $W$ $81{,}800$ (now $80{,}370$), $Z$ $92{,}600$ (now $91{,}188$), $W/Z$ lifetimes "unknown" (now about $3.2\times10^{-25}$ and $2.6\times10^{-25}\,\mathrm s$ from the widths), $\tau$ mass 1784 and lifetime $3.3\times10^{-13}$ (now 1776.9 and $2.90\times10^{-13}$), neutron lifetime 900 s (now about 878 s), and neutrino masses 0 (now known to be nonzero). Keep the historical table and add a callout that gives current PDG values.
+- [Structure] Say in the TLDR or the opening line that this is the 1987 edition's table, and point to the PDG for current data.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/99 Back matter/Physical Constants and Conversion Factors.md
+priority: low
+graph: no
+manim: no
+summary: Correct values, but the formulas use Gaussian units while the charge is given in coulombs.
+- [Correctness] $\alpha=e^2/\hbar c$, $r_e=e^2/m_ec^2$, $a=\hbar^2/e^2m_e$ and $E_n=-m_ee^4/2\hbar^2n^2$ are Gaussian formulas, but the table gives $e$ in C and the lengths in m. Either state "Gaussian units, $e$ in esu" or replace $e^2$ by $e^2/4\pi\varepsilon_0$.
+- [Structure] Several digits are dated ($m_e=0.511003$, now 0.51099895 MeV; $m_p=938.280$, now 938.272 MeV; $1\,\mathrm{eV}=1.602176634\times10^{-19}\,\mathrm J$, exact since 2019). Add a short note.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/99 Back matter/Reference Formulas.md
+priority: low
+graph: no
+manim: no
+summary: Correct summary sheet (gamma^0 is right here), with plain-text cross-references instead of links.
+- [Links] Replace "see Appendix C" and "see Appendix D" with [[C.2 Dirac Matrices]] and [[D.3 Vertex Factors]], and consider embedding [[D.1 External Lines]] and [[D.2 Propagators]] instead of duplicating them.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/Elementary Particles - Contents.md
+priority: low
+graph: no
+manim: no
+summary: Complete contents hub; all wiki links resolve uniquely.
+- [Structure] No change needed.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/00 Front matter/Preface.md
+priority: low
+graph: no
+manim: no
+summary: Clean preface transcription.
+- [Structure] "Institut für Theoretical Particle Physics" mixes German and English. Check it against the source: the Karlsruhe institute is "Institut für Theoretische Teilchenphysik".
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/00 Front matter/Title, Publication Details, and Epigraph.md
+priority: low
+graph: no
+manim: no
+summary: Front-matter transcription; nothing to improve.
+- [Structure] No change needed.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/01 Introduction/1.0 Chapter introduction.md
+priority: low
+graph: no
+manim: no
+summary: Readable overview prose from 2013 that contains statements now superseded by experiment.
+- [Correctness] Outdated statements: the Higgs boson is now established with $m_H\approx125.1\,\mathrm{GeV}$ (not only "less than 200 GeV" from indirect fits), and the LHC has run at 13 and 13.6 TeV. Add a dated status callout rather than editing the source text.
+- [Intuition] For "shorter than about $10^{-15}\,\mathrm{cm}$, less than 1% of the proton radius", add the actual range $\hbar/M_Wc\approx2.5\times10^{-16}\,\mathrm{cm}$. Note that $10^{-15}\,\mathrm{cm}$ is about 1.2% of $r_p\approx0.84\times10^{-13}\,\mathrm{cm}$.
+- [Structure] End the long prose with a short bullet list of the open questions it raises (EWSB agent, fermion masses, hierarchy, vacuum energy, dark matter, baryon asymmetry).
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/01 Introduction/1.1 Elements of the Standard Model of Particle Physics.md
+priority: low
+graph: no
+manim: yes
+summary: Clear introduction to the fermion content and parity violation; the resolution estimate has no worked example.
+- [Example] Work the resolution estimate: $\hbar c\approx197\,\mathrm{MeV\,fm}=1.97\times10^{-19}\,\mathrm{TeV\,m}$, so $E_\perp=2\,\mathrm{TeV}$ gives $r\approx10^{-19}\,\mathrm m$.
+- [Manim] Animate the Wu experiment under a mirror (parity) reflection: the axial spin $\vec J$ stays the same while the electron momentum reverses, so the preferred sign of $\vec J\cdot\hat p_e$ flips. This shows why the observed asymmetry violates parity.
+- [Structure] $\hbar$ and $c$ are uncolored in text and table, while the vault convention is `\energy{\hbar}` and `\mechanical{c}`. The Fig. 1.1 caption writes "SU(2)ₗ" (lowercase) where "SU(2)_L" is meant.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/01 Introduction/1.2 Leptons.md
+priority: medium
+graph: no
+manim: no
+summary: Short and correct in substance, but tau is overloaded and the V−A structure is not explained.
+- [Correctness] Symbol clash: $\tau$ denotes the tau lepton, the tau lifetime ($c\tau=87\,\mu\mathrm m$) and the isospin matrices $\tau_\pm$. The table lists only the lifetime. Rename the lifetime to $\tau_\tau$ and add $\tau_\pm,\tau_{1,2}$ to the table.
+- [Intuition] Explain that $\tfrac12(1-\gamma_5)$ is the left-handed projector $P_L$, so (1.2.2) couples only the L components in (1.2.1).
+- [Correctness] Outdated: tau-family universality "verified within 1.5%" is now tested at the few-per-mille level (PDG). Add a dated note.
+- [Links] Link "problem 1.6" and "problem 1.9" to [[1.P Problems]].
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/01 Introduction/1.3 Quarks.md
+priority: medium
+graph: yes
+manim: no
+summary: Rich evidence for quark spin, charge and color, with the R ratios and the pi^0 width correct, but with typos, one symbol clash and dated measurements.
+- [Correctness] Transcription slips: "proposed quarks in 1964 by as a means" (delete "by"), and "may be produced in the semifinal state" should read "final state".
+- [Correctness] Symbol clash: $B$ is baryon number in Table 1.1 and (1.3.6), and $B_1,B_3,B_{\mathrm{exp}}$ are branching ratios. Rename the latter to $\mathrm{BR}_1$ and so on.
+- [Correctness] Dated data: $B_{\mathrm{exp}}=(17.44\pm0.85)\%$ is now $(17.82\pm0.04)\%$, and the measured $\Gamma(\pi^0\to\gamma\gamma)$ is now about $7.80\pm0.12\,\mathrm{eV}$. Add a status note.
+- [Graph] Step plot of $R$ against $\sqrt s$ from 1 to 15 GeV: $R=2$ (u, d, s), $10/3$ above the charm threshold of about 3.7 GeV, and $11/3$ above about 10.6 GeV, overlaid with the $N_c=1$ values $2/3$, $10/9$ and $11/9$.
+- [Example] Show the substitution in (1.3.17): $\alpha=1/137$, $M_\pi=135\,\mathrm{MeV}$, $f_\pi=92.4\,\mathrm{MeV}$ gives 0.86 eV $\times N_c^2$, which reproduces (1.3.18).
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/01 Introduction/1.4 The Fundamental Interactions.md
+priority: medium
+graph: no
+manim: no
+summary: Correct currents (1.4.10 and 1.4.12 check out), but it leaves the chiral couplings unstated and the GIM cancellation underived.
+- [Example] Give $L_e$ and $R_e$ explicitly. From (1.4.5), with $J^{(\mathrm{EM})}=-\bar e\gamma e$ split into chiral parts, $L_e=-\tfrac12+\sin^2\theta_W$ and $R_e=\sin^2\theta_W$ in the normalization of (1.4.6).
+- [Intuition] Add the one-line reason for GIM: $(d_\theta,s_\theta)$ is a rotation of $(d,s)$, so $\bar d_\theta d_\theta+\bar s_\theta s_\theta=\bar dd+\bar ss$ and the $\bar sd$ cross terms of (1.4.10) cancel in (1.4.12).
+- [Structure] Remove the stray comma in "framework of the electroweak, theory".
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/01 Introduction/1.B References.md
+priority: low
+graph: no
+manim: no
+summary: Reference list; nothing to explain.
+- [Structure] No change needed. Optionally add the current PDG Review of Particle Physics next to ref. 2.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/01 Introduction/1.P Problems.md
+priority: low
+graph: no
+manim: no
+summary: Correct problem statements; the formulas in 1.1, 1.2 and 1.8 check out.
+- [Structure] $\sigma$ is both the charged scalar and the cross section (1.4, 1.5). Consider calling the scalar $S^\pm$ to remove the clash that the table only acknowledges.
+- [Links] "appendix B.5" refers to Quigg's appendix, which is not transcribed. Add a link when it exists, or point to [[D.3 Vertex Factors]] (Griffiths conventions) with a warning about sign conventions.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/01 Introduction/1.R For Further Reading.md
+priority: low
+graph: no
+manim: no
+summary: Annotated reading list.
+- [Structure] No change needed.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/02 Lagrangian Formalism and Conservation Laws/2.0 Chapter introduction.md
+priority: low
+graph: no
+manim: no
+summary: Short, clear chapter overview.
+- [Links] Link the three announced topics to [[2.1 Hamilton's Principle]], [[2.2 Free Field Theory Examples]] and [[2.3 Symmetries and Conservation Laws]].
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/02 Lagrangian Formalism and Conservation Laws/2.1 Hamilton's Principle.md
+priority: medium
+graph: yes
+manim: yes
+summary: Standard, correct derivation of the Euler–Lagrange equations with one endpoint-notation error and no visual intuition.
+- [Correctness] "joining $q_1\equiv q_1(t)$ and $q_2\equiv q_2(t)$" should read $q_1\equiv q(t_1)$ and $q_2\equiv q(t_2)$, the fixed endpoint values.
+- [Simplify] Replace "principle of least action" with "stationary action" or add a remark, because the text itself later says "stationary" and the action is not always a minimum.
+- [Graph] For the free particle, take trial paths $q(t)=q_{\mathrm{cl}}(t)+\varepsilon\sin(\pi(t-t_1)/(t_2-t_1))$ and plot $S(\varepsilon)$ for $\varepsilon\in[-1,1]$. The parabola has its minimum at $\varepsilon=0$.
+- [Manim] Animate a family of varied paths between fixed endpoints, with $\delta q$ vanishing at $t_1,t_2$, while a side meter shows $S$ and the classical path is marked where $dS/d\varepsilon=0$.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/02 Lagrangian Formalism and Conservation Laws/2.2 Free Field Theory Examples.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct catalogue of free Lagrangians; the Euler–Lagrange steps are skipped and the letter A_mu is reused.
+- [Example] Show one Euler–Lagrange step for (2.2.1): $\partial\mathcal L/\partial(\partial_\mu\phi)=\partial^\mu\phi$ and $\partial\mathcal L/\partial\phi=-m^2\phi$, which give (2.2.2).
+- [Structure] $A_\mu$ denotes both the photon potential (`\magnetic`) and the massive Proca field (uncolored) in one note. Use a separate letter such as $V_\mu$ for the Proca field.
+- [Intuition] After (2.2.12), count degrees of freedom: Proca has 3 polarizations and the massless photon has 2. This explains why the $M\to0$ limit is subtle.
+- [Structure] Close the parenthesis in "(or, equivalently, of $a$ and $b$ then yield".
+- [Graph] Plot the Klein–Gordon dispersion $E=\sqrt{p^2+m^2}$ for $m=0$ and $m=1$ (natural units), $p\in[0,3]$, to show the rest-energy gap.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/02 Lagrangian Formalism and Conservation Laws/2.3 Symmetries and Conservation Laws.md
+priority: high
+graph: no
+manim: no
+summary: Clear Noether examples, but the index placement of the stress tensor and the sign of the isospin current are internally inconsistent.
+- [Correctness] With $\Theta^{\mu\nu}\equiv\frac{\partial\mathcal L}{\partial(\partial_\nu\phi)}\partial^\mu\phi-g^{\mu\nu}\mathcal L$ as in (2.3.8), the result (2.3.7) gives $\partial_\nu\Theta^{\mu\nu}=0$, not $\partial_\mu\Theta^{\mu\nu}=0$ as in (2.3.9). The momentum densities are then $\Theta^{\mu0}$. Swap the indices in (2.3.8) to $\frac{\partial\mathcal L}{\partial(\partial_\mu\phi)}\partial^\nu\phi$ so that (2.3.9) and "$\Theta^{0\nu}$ momentum densities" hold.
+- [Correctness] With $\partial\mathcal L/\partial(\partial_\mu\psi)=\bar\psi i\gamma^\mu$, (2.3.20) gives $\mathbf J^\mu=-\bar\psi\gamma^\mu\frac{\boldsymbol\tau}{2}\psi$, the opposite sign to (2.3.22). Define $\mathbf J^\mu$ with $-\tfrac{i}{2}$ or state that the overall sign is a convention.
+- [Example] Compute $\Theta^{00}$ for the Klein–Gordon Lagrangian (2.2.1): $\tfrac12(\dot\phi^2+|\nabla\phi|^2+m^2\phi^2)\ge0$. This shows that (2.3.10) is the familiar positive energy density.
+- [Structure] Fix the comma in "will, therefore change".
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/02 Lagrangian Formalism and Conservation Laws/2.B References.md
+priority: low
+graph: no
+manim: no
+summary: Short reference list.
+- [Structure] No change needed.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/02 Lagrangian Formalism and Conservation Laws/2.P Problems.md
+priority: medium
+graph: yes
+manim: no
+summary: Good exercises; the actions in 2.6 and 2.7 are correct, but the N-body Lagrangian in 2.5 is wrong.
+- [Correctness] Problem 2.5: "$-G_{\mathrm N}\sum_{i\ne j}m_im_j/(\mathbf x_i-\mathbf x_j)^2$" has the wrong power and the wrong sign (repulsive), and it double counts. It should be $L=\tfrac12\sum_i m_i\dot{\mathbf x}_i^2+\tfrac{G_{\mathrm N}}2\sum_{i\ne j}m_im_j/|\mathbf x_i-\mathbf x_j|$.
+- [Graph] For problem 2.7, plot $S(T)$ for $m=\omega=1$, $x_1=1$, $x_2=0.5$, $\omega T\in(0,3\pi)$. $S$ diverges at $\omega T=n\pi$, where the classical endpoint problem degenerates.
+- [Structure] $T$ is wrapped in `\signal{}` while $t_1,t_2$ are uncolored. Use one convention for times.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/02 Lagrangian Formalism and Conservation Laws/2.R For Further Reading.md
+priority: low
+graph: no
+manim: no
+summary: Annotated reading list.
+- [Structure] No change needed.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/03 The Idea of Gauge Invariance/3.1 Historical Preliminaries.md
+priority: medium
+graph: no
+manim: yes
+summary: Correct (3.1.5 and 3.1.6 check out) but abstract; Weyl's scale idea and Einstein's objection would benefit from a picture.
+- [Intuition] Explain Einstein's objection concretely: transporting a ruler or clock around a closed loop rescales it by $\exp\oint S\cdot dx$, which is nonzero when the field strength is nonzero. Two identical atoms with different histories would then have different frequencies.
+- [Manim] Side by side, transport a ruler (Weyl scale, its length changes) and a phase arrow (phase version, it rotates by $q\oint A\cdot dx$) around the same loop. This shows why only the phase version is unobservable locally.
+- [Simplify] After (3.1.6), state the components: $E\to E-qV$ and $\mathbf p\to\mathbf p-q\mathbf A$.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/03 The Idea of Gauge Invariance/3.2 Gauge Invariance in Classical Electrodynamics.md
+priority: medium
+graph: no
+manim: yes
+summary: Correct and complete (F^{01}=E_1, the dual tensor and 3.2.19/3.2.22 check out), but the matrix forms are given without a verification step.
+- [Example] Verify one entry explicitly, for example $F^{01}=\partial^1A^0-\partial^0A^1=-\partial_xV-\partial_tA_x=E_1$, so readers can check the sign conventions of (3.2.10).
+- [Manim] Morph a 2D vector potential $\mathbf A$ into $\mathbf A+\nabla\Lambda$ (for example $\Lambda=\sin x\cos y$) while a color map of $B_z=\nabla\times\mathbf A$ stays fixed. This makes "gauge invariance" visible.
+- [Structure] Add $\Lambda$ to the physical-quantities table.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/03 The Idea of Gauge Invariance/3.3 Phase Invariance in Quantum Mechanics.md
+priority: low
+graph: no
+manim: yes
+summary: Clear, correct statement of the gauge principle; the key verification is left to the reader.
+- [Example] Write out (3.3.7) in one line: $D'_\mu\psi'=e^{i\alpha}[\partial_\mu\psi+i(\partial_\mu\alpha)\psi+iqA_\mu\psi-i(\partial_\mu\alpha)\psi]=e^{i\alpha}D_\mu\psi$.
+- [Manim] Show a row of phase arrows with a position-dependent $\alpha(x)$: the plain derivative picks up the gradient term, and a compensating shift of $A_\mu$ cancels it.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/03 The Idea of Gauge Invariance/3.4 Significance of Potentials in Quantum Theory.md
+priority: medium
+graph: yes
+manim: yes
+summary: Good physical discussion of the Aharonov–Bohm effect, with a missing charge factor and no quantitative fringe picture.
+- [Correctness] (3.4.8) writes $S_i=\int_{\text{path }i}d\mathbf x\cdot\mathbf A$ without the charge. It must be $S_i=q\int_{\text{path }i}d\mathbf x\cdot\mathbf A$, consistent with (3.4.3) and (3.4.9).
+- [Simplify] (3.4.3) calls $q\int d\mathbf x\cdot\mathbf A$ "the classical action". Say that it is the vector-potential part of the action, which is the only part that changes.
+- [Graph] Plot the interference intensity $I(\Phi)\propto1+\cos(q\Phi/\hbar)$ against $\Phi/\Phi_0$ for $\Phi/\Phi_0\in[0,3]$, with $\Phi_0=h/e\approx4.14\times10^{-15}\,\mathrm{Wb}$.
+- [Manim] Animate two beams passing either side of a solenoid while the enclosed flux ramps up. The fringe pattern on the screen shifts periodically, but no force acts on the beams.
+- [Structure] The Fig. 3.1 caption says "time-dependent vector potential", but the text describes a static solenoid. Check the caption against the source.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/03 The Idea of Gauge Invariance/3.5 Phase Invariance in Field Theory.md
+priority: high
+graph: yes
+manim: no
+summary: Central derivation of scalar and spinor QED, with a current that vanishes identically as written and several small errors.
+- [Correctness] Second line of (3.5.8): "$iq[\phi^*\partial^\mu\phi-(\partial^\mu\phi)\phi^*]$" is identically zero. It must be $iq[\phi^*\partial^\mu\phi-(\partial^\mu\phi^*)\phi]$, which follows from the first line with $\partial\mathcal L/\partial(\partial_\mu\phi)=\partial^\mu\phi^*$.
+- [Correctness] In (3.5.2), the second Klein–Gordon equation lacks "$=0$": $(\Box+m^2)\phi^*(x)=0$.
+- [Correctness] Symbol clash: (3.5.19) uses $m$ for the photon mass, while $m$ is the scalar or fermion mass in (3.5.1) and (3.5.15). Use $M_\gamma$, as in (3.5.21).
+- [Structure] Fix the typos "section section 2.2" and "orbitcollected".
+- [Graph] Plot $rV(r)\propto e^{-r/r_0}$ against $r/r_0\in[0,3]$ together with the pure Coulomb value 1, to show what the photon-mass bound $r_0>2\times10^8\,\mathrm{km}$ constrains.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/03 The Idea of Gauge Invariance/3.6 Feynman Rules for Electromagnetism.md
+priority: medium
+graph: no
+manim: no
+summary: Correct vertex factors and propagators (3.6.8 and 3.6.11 check out), but the key substitution steps are compressed.
+- [Example] Before (3.6.7), show that $\phi^*\partial^\mu\phi\to-ip_1^\mu S_2S_1$ and $(\partial^\mu\phi^*)\phi\to+ip_2^\mu S_2S_1$. Their difference gives $-i(p_1+p_2)^\mu$.
+- [Intuition] Explain that the factor 2 in (3.6.11) comes from the two ways of assigning the two external photons to $A_\mu A_\nu$.
+- [Structure] "The general form of the wave functions is typified by..." should read "wave equations". The re-quoted equation keeps the tag (3.2.22); mark it as a repeat or link to [[3.2 Gauge Invariance in Classical Electrodynamics]].
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/03 The Idea of Gauge Invariance/3.B References.md
+priority: low
+graph: no
+manim: no
+summary: Reference list.
+- [Structure] No change needed.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/03 The Idea of Gauge Invariance/3.P Problems.md
+priority: low
+graph: no
+manim: no
+summary: Correct problem statements; the duality rotation in 3.4 and the Faraday-cage action in 3.6 are correct.
+- [Structure] $\sigma$ is again both the scalar particle and the cross section, and the table mixes natural units ($\mathbf E,\mathbf B$ in $\mathrm{GeV^2}$) with SI ($V$ in volts, $S$ in J s). Rename the scalar and state the unit system per problem.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/03 The Idea of Gauge Invariance/3.R For Further Reading.md
+priority: low
+graph: no
+manim: no
+summary: Annotated reading list.
+- [Structure] No change needed.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/04 Non-Abelian Gauge Theories/4.1 Motivation.md
+priority: low
+graph: no
+manim: no
+summary: Clear motivation for local isospin symmetry.
+- [Links] The re-quoted (2.3.14) and (2.3.13) should link to [[2.3 Symmetries and Conservation Laws]].
+- [Intuition] Add one sentence that a local SU(2) rotation lets "proton" at one point be a superposition of $p$ and $n$ at another. Compensating for this needs three gauge fields, one per generator.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/04 Non-Abelian Gauge Theories/4.2 Construction.md
+priority: medium
+graph: no
+manim: yes
+summary: Careful Yang–Mills construction (4.2.10–4.2.22 and 4.2.37 check out), but the sign of the last term in (4.2.31) and in (4.2.35) is wrong.
+- [Correctness] The last term of (4.2.31) should be $-\frac1{ig}G[G^{-1}\partial_\nu G,G^{-1}\partial_\mu G]G^{-1}$ $(=+\frac{i}{g}\ldots)$, and the last term of (4.2.35) should be $+\frac1{ig}G[\ldots]G^{-1}$. Both signs are flipped (checked numerically). The cancellation and the conclusion (4.2.26) are unaffected.
+- [Example] Show the shortcut with (4.2.16): $\tau\cdot\alpha\,\tau\cdot b-\tau\cdot b\,\tau\cdot\alpha=2i\,\tau\cdot(\alpha\times b)$, which gives (4.2.20) in one line.
+- [Intuition] After (4.2.37), explain that the $g\epsilon_{jkl}b^jb^k$ term makes $-\frac14\mathbf F^2$ contain cubic and quartic terms in $b$, so the gauge bosons carry isospin and interact with each other. Link to the three- and four-gluon vertices in [[D.3 Vertex Factors]].
+- [Manim] In 3D isospace, show the infinitesimal transformation $\mathbf b'_\mu=\mathbf b_\mu-\boldsymbol\alpha\times\mathbf b_\mu-\frac1g\partial_\mu\boldsymbol\alpha$ as a rotation of the arrow $\mathbf b$ about $\boldsymbol\alpha$ plus a shift. This contrasts with the shift-only Abelian case (4.2.12).
+- [Structure] In (4.2.21), $b^k$ lacks its Lorentz index; write $b_\mu^k$.

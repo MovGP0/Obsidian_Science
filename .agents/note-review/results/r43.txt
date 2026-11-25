@@ -1,0 +1,204 @@
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/10 Weak Interactions/10.1 Charged Leptonic Weak Interactions.md
+priority: medium
+graph: yes
+manim: no
+summary: A faithful transcription whose algebra checks out (10.12–10.14 re-derived), but the experimental values are from the 1980s and the step from 10.11 to 10.12 is skipped.
+- [Correctness] Eq. (10.1) quotes $M_W=82\pm2$ and $M_Z=92\pm2\,\mathrm{GeV}/c^2$; give current values ($M_W\approx80.37$, $M_Z\approx91.19\,\mathrm{GeV}/c^2$) in a short note. "By far the heaviest elementary particles yet detected" is no longer true, because the top quark (~173 GeV) and the Higgs boson (~125 GeV) are heavier.
+- [Simplify] Between (10.11) and (10.12), show the CM kinematics: $p_1\cdot p_2=2E^2/c^2$ and $p_3\cdot p_4=(s-m_\mu^2c^2)/2$ with $s=4E^2/c^2$. Also show where the second factor of $\{1-(m_\mu c^2/2E)^2\}$ in (10.13) comes from ($|\mathbf p_f|/|\mathbf p_i|$).
+- [Intuition] Add one sentence on why the cross section grows as $E^2$ in the four-fermion limit (10.4). Say that this growth violates unitarity at high energy and that the full propagator (10.3) cures it.
+- [Graph] Plot $\sigma(E)/\sigma_0$ from (10.14) against $E$ from the threshold $m_\mu c^2/2\approx52.8$ MeV up to ~1 GeV, i.e. $(E/E_0)^2[1-(m_\mu c^2/2E)^2]^2$. Mark the threshold.
+- [Links] Plain-text references such as "Chapter 7", "eq. (7.123)", and "Chap. 4, Sect. 4.6" could become wiki links to the corresponding notes, for example the Casimir's trick and parity-violation notes.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/10 Weak Interactions/10.2 Decay of the Muon.md
+priority: medium
+graph: yes
+manim: no
+summary: The derivation is clear and was verified step by step (10.17–10.39 all consistent), but one symbol is inconsistent and some book-specific and outdated remarks remain.
+- [Correctness] Eq. (10.39) writes $G$ while the note defines $G_F$ in (10.38) and uses $G_F$ elsewhere; write $G_F^2$ in (10.39) and drop the table's remark that the equation "prints the symbol G".
+- [Links] Footnote ep-10-2-fermi refers to "the footnote (*) on p. 303", a page reference to the printed book; replace it with a wiki link to the V–A footnote in [[10.1 Charged Leptonic Weak Interactions]].
+- [Correctness] "New machines are presently under construction that will run at energies close to $M_Wc^2$" is outdated (LEP2, Tevatron, and LHC have run there). Update it or mark it as historical. $g_w=0.66$ is consistent with the current $M_W$ ($g_w\approx0.653$).
+- [Graph] Plot the normalized electron spectrum from (10.35): with $x=2E/m_\mu c^2\in[0,1]$, $d\Gamma/dx\propto x^2(3-2x)$. This shows the peak at the endpoint $E_{\max}=m_\mu c^2/2$.
+- [Simplify] Before the integration, say which particle is which (2 = $\bar\nu_e$, 3 = $\nu_\mu$, 4 = $e$). The reader must otherwise infer this from the spinor $v(2)$ in (10.15).
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/10 Weak Interactions/10.3 Decay of the Neutron.md
+priority: medium
+graph: yes
+manim: no
+summary: The calculation is correct (1316 s, 914 s, and 963 s reproduced numerically, and the closed form (10.63) was checked), but the experimental comparison uses data that is decades old, which changes the story's conclusion.
+- [Correctness] The experimental lifetime "$898\pm16$ sec" is outdated (PDG: $878.4\pm0.5$ s), and $c_A=1.26\pm0.02$ is now $g_A\approx1.2754$. The claim that 914 s "is now within the error bars" and the footnote's "within 6%" no longer hold (963 s is ~10% above 878 s; even against 898 s the gap was 7%). Add an updated remark.
+- [Correctness] The Cabibbo angle $13.1^\circ$ in (10.70) is close to the current $\approx13.0^\circ$ ($|V_{ud}|=0.9737$); state the modern $|V_{ud}|$ in a note, since it enters (10.71) directly.
+- [Graph] Plot the electron spectrum (10.62), $E\sqrt{E^2-m_e^2c^4}\,(\Delta mc^2-E)^2$, for $E$ from 0.511 to 1.293 MeV, and optionally the matching Kurie plot, so that the reader can compare it with Fig. 10.2.
+- [Simplify] Problem 10.5 hides the expansion that gives (10.61). Add a one-line sketch of how $E_\pm$ from (10.55) are expanded to lowest order in $\epsilon,\delta,\eta,\phi$, or at least state which terms are dropped.
+- [Intuition] Explain the factor $\tfrac14(c_V^2+3c_A^2)$ in (10.68): one Fermi (vector, spin-singlet) channel plus three Gamow–Teller (axial, spin-triplet) channels.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/10 Weak Interactions/10.4 Decay of the Pion.md
+priority: medium
+graph: yes
+manim: no
+summary: The derivation (10.74–10.81) is short and was verified, including the ratio $1.283\times10^{-4}$, but the helicity explanation contains one misleading sentence.
+- [Correctness] "If the electron were truly massless, then (like the neutrino) it would only exist as a left-handed particle" is wrong. A massless electron would still have both helicities (the photon couples to both); only the $(1-\gamma^5)$ weak vertex selects the left-handed one. Rephrase so that the "More precisely" sentence is the main statement.
+- [Graph] Plot $m_l^2(m_\pi^2-m_l^2)^2$ (normalized) against $m_l$ from 0 to $m_\pi$. Mark $m_e$, $m_\mu$, and the maximum at $m_l=m_\pi/\sqrt3\approx80.6$ MeV, so that the helicity suppression is visible next to the phase-space factor.
+- [Intuition] Mention that the tree-level ratio $1.28\times10^{-4}$ becomes $1.235\times10^{-4}$ after radiative corrections, in agreement with the current measurement $1.2327(23)\times10^{-4}$. This explains the residual 4% discrepancy.
+- [Simplify] In (10.74), say that the trace is (10.9) with the momentum labels changed, contracted with $p^\mu p^\nu$ so that the $\epsilon$ term vanishes; the reader currently has to work out that contraction.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/10 Weak Interactions/10.5 Charged Weak Interactions of Quarks.md
+priority: medium
+graph: no
+manim: no
+summary: The Cabibbo–GIM–KM story is clear and the numbers check (0.96 and 0.19 reproduced), but several statements about neutrinos, CKM data, and CP violation are outdated physics.
+- [Correctness] Footnote ep-10-5-rotation states "all neutrinos are massless" as the reason why there is no lepton mixing. Neutrino oscillations show nonzero masses and a lepton mixing (PMNS) matrix, so add a modern note.
+- [Correctness] The KM magnitudes in (10.91) and "only their magnitudes are known" are outdated. Current values: $|V_{ud}|\approx0.974$, $|V_{us}|\approx0.224$, $|V_{ub}|\approx0.0038$, $|V_{cb}|\approx0.041$, $|V_{td}|\approx0.0086$, $|V_{ts}|\approx0.041$. The CP phase is measured ($\gamma\approx66^\circ$), and footnote ep-10-5-generations ("it remains to be seen whether δ is the source of CP violation") should mention the B-factory confirmation.
+- [Correctness] Symbol clash: $c_i=\cos\theta_i$ in (10.90) versus the speed of light $c$ used in the same note. Consider writing $\cos\theta_i$, or say that $c_i$ is unrelated to $c$.
+- [Intuition] Add a picture of the Cabibbo rotation (10.87) as a rotation of the $(d,s)$ axes by $\theta_C$ in flavor space. Optionally state the Wolfenstein hierarchy $\lambda,\lambda^2,\lambda^3$ to explain why the third-generation mixing is small.
+- [Simplify] Example 10.2 says that $f_\pi$ "contained a factor of $\cos\theta_C$", but 10.4 never introduced that factor (it appears only in a footnote ansatz). Make the assumption explicit: $f_K/f_\pi=\tan\theta_C$, and the experimental mismatch is mostly $f_K/f_\pi\approx1.19$.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/10 Weak Interactions/10.6 Neutral Weak Interactions.md
+priority: high
+graph: yes
+manim: no
+summary: The long derivations are well transcribed and mostly correct (10.100–10.117 verified), but there are two real formula errors and many outdated experimental statements.
+- [Correctness] Table 10.1, electron row: $c_V=-\frac12+2\sin\theta_w$ is missing the square. It must be $-\frac12+2\sin^2\theta_w$, which is consistent with (10.104) and (10.116).
+- [Correctness] Eq. (10.118) is missing a square. On the pole, $\sigma_Z/\sigma_\gamma\cong\frac18(M_Zc^2/\hbar\Gamma_Z)^2$, which gives $\approx166\approx200$ with $\hbar\Gamma_Z=2.5$ GeV as stated in the text; the printed linear form would give only ~4.5.
+- [Correctness] Outdated statements: $M_W=82$ and $M_Z=92\,\mathrm{GeV}/c^2$ (now 80.37 and 91.19); "$m_t>23$ GeV" (now 172.6 GeV); SLC and LEP "presently under construction"; and $\tau_Z$ "not yet accurately measured" ($\hbar\Gamma_Z=2.4952$ GeV, $N_\nu=2.984\pm0.008$). Add brief modern notes.
+- [Graph] Plot the ratio (10.116) against $2E$ from 10 to 150 GeV on a log y-axis with the bracket = 2, $M_Zc^2=91.19$ GeV, and $\hbar\Gamma_Z=2.50$ GeV (this is Problem 10.22). Optionally add the angular distribution (10.111) to show the forward–backward asymmetry term.
+- [Simplify] Between (10.109) and (10.110), give the CM dot products $p_1\cdot p_3=(E/c)^2(1-\cos\theta)$ and $p_1\cdot p_4=(E/c)^2(1+\cos\theta)$, which produce $(1+\cos^2\theta)$ and $-8\cos\theta$.
+- [Correctness] The Fig. 10.6 caption says "The neutrino enters from the left", but the reaction is $\bar\nu_\mu+e^-$; write "antineutrino".
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/10 Weak Interactions/10.7 Electroweak Unification.md
+priority: low
+graph: no
+manim: no
+summary: A hub note with three correct child links.
+- [Structure] No change needed; optionally add a one-line description after each link (chirality, weak isospin/hypercharge, mixing angle).
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/10 Weak Interactions/10.7.1 Chiral Fermion States.md
+priority: medium
+graph: yes
+manim: no
+summary: The chirality-versus-helicity explanation is correct (10.120 verified in the Dirac representation) but dense, and the neutrino remark needs updating.
+- [Correctness] The footnote ending "as far as we know right-handed neutrinos do not exist at all" should mention that neutrinos have mass. Their chirality is therefore not exactly helicity, and right-handed (sterile) neutrinos are allowed but unobserved.
+- [Graph] Plot the helicity content of a left-chiral state against speed: the probabilities of helicity $-1$ and $+1$ are $(1+\beta)/2$ and $(1-\beta)/2$, for $\beta=|\mathbf p|c/E$ from 0 to 1. This makes "approximately so if $E\gg mc^2$" concrete.
+- [Example] Add a numerical example: for a 1 MeV electron, compute $\beta$ and the right-handed-helicity admixture of $u_L$, and link it to the suppression in [[10.4 Decay of the Pion]].
+- [Links] Link "Appendix D" in footnote ep-10-7-1-bosons to [[Appendix D.0 Feynman Rules]], and link eq. (7.48) to its note.
+- [Simplify] Table 10.2 would read faster with a column for helicity in the massless limit ($-1$, $+1$, and the reversed assignment for antiparticles), so that the $v_L=\frac12(1+\gamma^5)v$ sign reversal is explained in the table.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/10 Weak Interactions/10.7.2 Weak Isospin and Hypercharge.md
+priority: low
+graph: yes
+manim: no
+summary: A correct and readable note (10.141, 10.142, and 10.144 checked) that would gain from an explicit quantum-number table.
+- [Structure] Add a table of $T^3$, $Y$, and $Q$ for $\nu_L,e_L,e_R,u_L,d_L,u_R,d_R$ that checks $Q=T^3+Y/2$ in each row. The note currently derives $Y$ only implicitly through (10.144).
+- [Graph] A 2D weight diagram with $T^3$ on the x-axis and $Y$ on the y-axis for one generation of chiral fermions, with lines of constant $Q$, would show the doublet and singlet structure at a glance.
+- [Simplify] State explicitly that $j_\mu^\pm=j_\mu^1\pm ij_\mu^2$ with $j_\mu^a=\frac12\bar\chi_L\gamma_\mu\tau^a\chi_L$, which links (10.140) to (10.146); 10.7.3 uses this relation without saying where it comes from.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/10 Weak Interactions/10.7.3 Electro-Weak Mixing.md
+priority: low
+graph: yes
+manim: no
+summary: A concise, correct derivation (10.151, 10.156, 10.158, and 10.159 verified) with a minor notation inconsistency.
+- [Simplify] "The arrow denotes a three-vector in weak isospin space", but the note uses bold $\mathbf W$ and $\mathbf j$, not arrows; change "arrow" to "boldface".
+- [Graph] Draw the $(B,W^3)$ plane with the $(A,Z)$ axes rotated by $\theta_w\approx28.7^\circ$ from (10.155), so that the mixing reads as a rotation.
+- [Example] Work out one more Table 10.1 entry explicitly (for example the electron $c_V=-\frac12+2\sin^2\theta_w$, $c_A=-\frac12$ from (10.159)) to show how the right-handed component enters through $j^{em}$.
+- [Structure] The colors are inconsistent: $A_\mu$ uses \electric{} while $B_\mu$, $W^3_\mu$, and $Z_\mu$ use \signal{}, although (10.155) mixes them. Consider one group for all boson fields.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/10 Weak Interactions/10.B References and Notes.md
+priority: low
+graph: no
+manim: no
+summary: A reference list; no change needed.
+- [Links] Optionally link "Figure (10.4)" in note 7 to the Fig. 10.4 embed in [[10.5 Charged Weak Interactions of Quarks]].
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/10 Weak Interactions/10.P Problems.md
+priority: low
+graph: yes
+manim: no
+summary: The problem list is faithful; the given answers that were checked are right (10.4, 10.6, 10.9, and the 10.20 branching ratios), with one label inconsistency and one outdated premise.
+- [Correctness] Problem 10.1(a) asks for $\langle|\mathcal M|^2\rangle$ and says that it reduces to (10.11), but the printed answer is the spin sum $\sum|\mathcal M|^2$. At $\epsilon=-1$ it gives $4(g_w/M_Wc)^4(p_1\cdot p_2)(p_3\cdot p_4)$, i.e. (10.10). Either relabel to (10.10) or note the extra factor 1/2.
+- [Correctness] Problem 10.16 assumes a $T^+(t\bar d)$ meson, but the top quark decays before it hadronizes, so no top mesons exist. Add a note, and likewise note that the "$2m_t<M_Z$" assumptions in 10.20 and 10.21 are counterfactual.
+- [Graph] Problem 10.22 asks for a plot of (10.116); the plot could be embedded as a native graph (see the 10.6 suggestion).
+- [Structure] Typo in Problem 10.18: "easier to produce then" should be "than".
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/11 Gauge Theories/11.1 Lagrangian Formulation of Classical Particle Mechanics.md
+priority: low
+graph: no
+manim: no
+summary: A short, correct introduction to the Euler–Lagrange equation.
+- [Example] Add one non-Cartesian example (for example a plane pendulum in $\theta$) to show the advantage claimed in the text, or link to the vault's Classical Mechanics Lagrangian notes.
+- [Links] Link the Euler–Lagrange equation to the vault's classical-mechanics note on the principle of least action (reference 2 mentions it only in plain text).
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/11 Gauge Theories/11.2 Lagrangians in Relativistic Field Theory.md
+priority: low
+graph: no
+manim: no
+summary: Correct and clear; the Proca, Dirac, and Maxwell Euler–Lagrange steps and the Gaussian units in the table were all verified.
+- [Simplify] For (11.17), show the one-line derivation (or the factor-of-2 origin from the two identical $F$ factors), because Problem 11.2 is the only pointer.
+- [Intuition] After (11.25), add a sentence linking the continuity equation to the gauge invariance discussed in [[11.3 Local Gauge Invariance]] (a non-conserved $J$ would make $-J\cdot A/c$ change under $A\to A+\partial\lambda$ by more than a divergence).
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/11 Gauge Theories/11.3 Local Gauge Invariance.md
+priority: medium
+graph: no
+manim: yes
+summary: A clear presentation of the gauge principle (11.29–11.39 verified), with one error in the minimal-coupling footnote.
+- [Correctness] Footnote ep-11-3-minimal: "$p_\mu\to p_\mu-i(q/c)A_\mu$" has a spurious $i$. With $p_\mu\leftrightarrow i\hbar\partial_\mu$ and (11.38), $i\hbar\mathcal D_\mu=i\hbar\partial_\mu-(q/c)A_\mu$, so the rule is $p_\mu\to p_\mu-(q/c)A_\mu$.
+- [Manim] Animate a row of phase arrows $e^{i\theta(x)}$ at lattice points: a global rotation leaves the neighbor differences unchanged, while a local rotation changes them, and a compensating link field $A$ restores the covariant difference.
+- [Intuition] Add one sentence explaining $\mathcal D_\mu$ as a comparison of field values at neighboring points after "parallel transport" by $A$; this makes the factor $iqA/\hbar c$ less arbitrary.
+- [Links] Link "Chapter 7 [eq. (7.81)]" and "Table 4.2" to their notes.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/11 Gauge Theories/11.4 Yang-Mills Theory.md
+priority: medium
+graph: no
+manim: no
+summary: A good transcription of the non-Abelian construction (11.58–11.61 verified), with a missing matrix in one equation and a loose group statement.
+- [Correctness] Eq. (11.62), second line: the interaction term must contain the isospin matrices, $-(q\bar\psi\gamma^\mu\boldsymbol\tau\psi)\cdot\mathbf A_\mu$, which follows from $\mathcal D_\mu$ in (11.56) and agrees with (11.67). As written, $(q\bar\psi\gamma^\mu\psi)\cdot\mathbf A_\mu$ is not a valid dot product.
+- [Correctness] Footnote ep-11-4-u2 writes $U(2)=U(1)\otimes SU(2)$. This holds only locally; globally $U(2)\cong[U(1)\times SU(2)]/\mathbb Z_2$, because $-1$ lies in both factors.
+- [Simplify] Show the commutator step from (11.60) to (11.61) explicitly with $[\boldsymbol\tau\cdot\mathbf a,\boldsymbol\tau\cdot\mathbf b]=2i\boldsymbol\tau\cdot(\mathbf a\times\mathbf b)$, instead of only citing Problem 4.20.
+- [Intuition] Explain physically why $\mathbf F^{\mu\nu}$ needs the $\mathbf A\times\mathbf A$ term: the gauge bosons themselves carry the "charge", so they self-interact. This differs from photons and links to the three- and four-gluon vertices in [[11.6 Feynman Rules]].
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/11 Gauge Theories/11.5 Chromodynamics.md
+priority: low
+graph: no
+manim: no
+summary: A short, correct generalization to SU(3) that mirrors 11.4.
+- [Correctness] Footnote ep-11-5-u3 writes $U(3)=U(1)\otimes SU(3)$; globally this should be $[U(1)\times SU(3)]/\mathbb Z_3$ (the same caveat as in 11.4).
+- [Simplify] State the SU(3) commutator $[\lambda_i,\lambda_j]=2if_{ijk}\lambda_k$ next to (11.84), so that it is clear why (11.83) has the same form as (11.61).
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/11 Gauge Theories/11.6 Feynman Rules.md
+priority: low
+graph: no
+manim: no
+summary: A correct and clear recipe; the Proca inverse (11.95), the vertex normalizations (11.101) and (11.103), and the expansion (11.104) were all verified.
+- [Simplify] In (11.104), say that the first two bracketed terms are equal (so the prefactor is effectively $q/4\pi\hbar c$), and label which line gives the three-gluon and which the four-gluon vertex, instead of "first term"/"second term".
+- [Links] Link "(9.18)" and "(9.19)" to the QCD gluon-vertex notes, and "Chapters 6, 7, and 10" to their propagator notes.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/11 Gauge Theories/11.7 The Mass Term.md
+priority: medium
+graph: yes
+manim: yes
+summary: The idea is clear and the shifted Lagrangian (11.113) is correct, but the exponential toy model is dimensionally inconsistent.
+- [Correctness] In (11.105) the term $e^{-(\alpha\phi)^2}$ is dimensionless, while $\mathcal L$ is an energy density, and identifying $\alpha^2=\frac12(mc/\hbar)^2$ makes $\alpha$ an inverse length, so $\alpha\phi$ is not dimensionless. Insert a constant energy density, $\mathcal L=\ldots+\varepsilon_0e^{-(\alpha\phi)^2}$, which gives $(mc/\hbar)^2=2\varepsilon_0\alpha^2$. The table's "—" unit for $\alpha$ hides the problem.
+- [Graph] Extend Fig. 11.1 by overlaying the quadratic approximation $\mathcal U\approx-\mu^4/4\lambda^2+\mu^2\eta^2$ near $\phi=+\mu/\lambda$, and the inverted parabola $-\frac12\mu^2\phi^2$ at $\phi=0$, to show the "wrong-sign mass" visually. The label colors (#00bcd4, #9b59b6) also do not match the \signal and \energy macro colors.
+- [Manim] Animate a ball placed on the hilltop at $\phi=0$ rolling into one well and oscillating there; the oscillation frequency corresponds to $m=\sqrt2\mu\hbar/c$.
+- [Structure] Typo: "has no affect on the field equations" should be "effect".
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/11 Gauge Theories/11.8 Spontaneous Symmetry-Breaking.md
+priority: medium
+graph: no
+manim: yes
+summary: A good conceptual note with an interactive 3D Mexican-hat figure, but the cubic coupling in (11.120) has the wrong sign.
+- [Correctness] Eq. (11.120): with $\eta\equiv\phi_1-\mu/\lambda$ from (11.119), the cubic term is $-\mu\lambda(\eta^3+\eta\xi^2)$, not $+\mu\lambda(\ldots)$. Compare (11.131) in [[11.9 The Higgs Mechanism]], which correctly has $-\lambda\mu(\eta^3+\eta\xi^2)$ for the same definition. The $+$ sign belongs to the opposite shift $\eta=\phi+\mu/\lambda$ used in (11.113).
+- [Manim] On the Mexican-hat surface, animate a ball in the valley doing (a) radial oscillation (the massive $\eta$) and (b) free rolling around the rim (the massless Goldstone $\xi$). This shows the footnote intuition directly.
+- [Simplify] Show the short trick for (11.120): with $s=\eta^2+\xi^2+2v\eta$ and $v=\mu/\lambda$ the potential is $\frac14\lambda^2s^2+\text{const}$, which makes the cancellation of the linear term transparent.
+- [Structure] The Fig. 11.3 graph3d block is about 40 kB of sampled coordinates. If the plugin allows, define the surface parametrically or as a function so that the note stays editable.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/11 Gauge Theories/11.9 The Higgs Mechanism.md
+priority: high
+graph: no
+manim: no
+summary: The narrative is clear and the mass (11.132) is correct, but the key bilinear term is printed as imaginary, and the experimental status is badly outdated.
+- [Correctness] Eqs. (11.131) and (11.133): the mixing term $-2i(\mu/\lambda)(q/\hbar c)(\partial_\mu\xi)A^\mu$ cannot appear in a real Lagrangian. Expanding $\frac12|(\partial_\mu+iqA_\mu/\hbar c)(\eta+\mu/\lambda+i\xi)|^2$ gives $+(\mu/\lambda)(q/\hbar c)(\partial_\mu\xi)A^\mu$.
+- [Correctness] Outdated statements: "the Higgs particle has never been seen" (discovered at the LHC in 2012, $m_H\approx125$ GeV); the SSC footnote (the project was cancelled in 1993); and the Yukawa footnote "only when the Higgs is found" (its couplings to $t$, $b$, $\tau$, and $\mu$ are now measured). Add a modern note.
+- [Intuition] Add a degree-of-freedom count before and after the gauge choice: $2+2$ (complex scalar plus massless vector) equals $1+3$ (Higgs plus massive vector).
+- [Simplify] After (11.131), group the terms by role (free fields, mass terms, bilinear mixing, interactions) and point out that the $\frac12(q\mu/\lambda\hbar c)^2A^2$ term comes from $|iqA\,v/\hbar c|^2$ with $v=\mu/\lambda$.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/11 Gauge Theories/11.B References and Notes.md
+priority: low
+graph: no
+manim: no
+summary: A reference list; no change needed.
+- [Links] Optionally link reference 11 (Halzen and Martin, GWS Higgs sector) to [[10.7.3 Electro-Weak Mixing]] for the in-vault continuation.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/11 Gauge Theories/11.P Problems.md
+priority: low
+graph: no
+manim: no
+summary: The problem list is faithful and includes a rotatable cone figure; the answer to Problem 11.12 was checked and is algebraically right, but it uses a clashing symbol and is missing a bracket.
+- [Correctness] The Problem 11.12 answers use $g$ for the gauge coupling, while the text uses $q$ throughout (11.61, 11.65), and $g$ in the same note is the gravitational acceleration (Problem 11.1). Replace $g$ with $q$ in both answers and in the table row "g, α".
+- [Correctness] The Problem 11.12(a) answer opens a bracket "[" that is never closed. Close it after $-\mathbf A^\nu\times\partial^\mu\boldsymbol\lambda$.
+- [Correctness] Other symbol clashes in the same note: $\phi$ is the cone azimuth in Problem 11.1 and the scalar field elsewhere, and $L$ (angular momentum, 11.1c) collides with the Lagrangian $L$. Consider $\varphi$ and $\ell_z$ for Problem 11.1.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/91 Appendix A The Dirac Delta Function/Appendix A.0 The Dirac Delta Function.md
+priority: low
+graph: yes
+manim: yes
+summary: A clear and correct introduction to the delta function (A.7–A.13 and Example A.1 checked), with very heavy embedded figure data.
+- [Graph] Add an interactive plot with a slider $n=1..20$ that shows the rectangle (height $n$, width $1/n$), the triangle (height $n$, base $2/n$), and a Gaussian $\frac{n}{\sqrt\pi}e^{-n^2x^2}$ together, all with unit area, to illustrate the limit in Fig. A.2.
+- [Manim] Animate a Gaussian narrowing with its area held fixed while $\int f(x)\delta_n(x)\,dx$ converges to $f(0)$ for a sample $f$; this is the sifting property in motion.
+- [Structure] The Fig. A.1 and A.3 graph blocks are 28–33 kB each; replace the sampled point lists with a compact functiongraph or line definition. Also close the unbalanced parenthesis in "(that is, *not* another delta function—…".
+- [Example] Add the answer form for Problem A.4 as a plotted check: $f(y)=1/\sqrt{1-y}$ for $0<y<1$ and 0 otherwise, which follows directly from (A.13).

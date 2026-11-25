@@ -1,0 +1,31 @@
+01 Mathematics/12 Advanced Analysis/01 Metric Spaces, Measure, and Integration/Complete metrics and contraction maps.md
+01 Mathematics/12 Advanced Analysis/01 Metric Spaces, Measure, and Integration/Measure and Lebesgue integration.md
+01 Mathematics/12 Advanced Analysis/01 Metric Spaces, Measure, and Integration/Metric spaces and convergence.md
+01 Mathematics/12 Advanced Analysis/02 Banach and Hilbert Spaces/Continuous functionals and representation.md
+01 Mathematics/12 Advanced Analysis/02 Banach and Hilbert Spaces/Extension separation and reflexivity.md
+01 Mathematics/12 Advanced Analysis/02 Banach and Hilbert Spaces/Fixed points positive maps and monotonicity.md
+01 Mathematics/12 Advanced Analysis/02 Banach and Hilbert Spaces/Functional analysis - Catalogue Guide.md
+01 Mathematics/12 Advanced Analysis/02 Banach and Hilbert Spaces/Holder and Minkowski inequalities.md
+01 Mathematics/12 Advanced Analysis/02 Banach and Hilbert Spaces/Inner products and Hilbert spaces.md
+01 Mathematics/12 Advanced Analysis/02 Banach and Hilbert Spaces/Lp spaces and integral norms.md
+01 Mathematics/12 Advanced Analysis/02 Banach and Hilbert Spaces/Norms Banach spaces and series.md
+01 Mathematics/12 Advanced Analysis/02 Banach and Hilbert Spaces/Ordered norms and normed algebras.md
+01 Mathematics/12 Advanced Analysis/02 Banach and Hilbert Spaces/Ordered vector spaces and lattices.md
+01 Mathematics/12 Advanced Analysis/02 Banach and Hilbert Spaces/Orthogonal expansions and best approximation.md
+01 Mathematics/12 Advanced Analysis/03 Operators and Spectral Theory/Bounded operators and convergence.md
+01 Mathematics/12 Advanced Analysis/03 Operators and Spectral Theory/Compact self-adjoint spectral theory.md
+01 Mathematics/12 Advanced Analysis/03 Operators and Spectral Theory/Compactness weak convergence and Fredholm equations.md
+01 Mathematics/12 Advanced Analysis/03 Operators and Spectral Theory/Dual and Hilbert adjoints.md
+01 Mathematics/12 Advanced Analysis/03 Operators and Spectral Theory/Resolvents and spectra.md
+01 Mathematics/12 Advanced Analysis/04 Integral Equations, Distributions, and Sobolev Spaces/Abel equations and weak singularities.md
+01 Mathematics/12 Advanced Analysis/04 Integral Equations, Distributions, and Sobolev Spaces/Cauchy integrals and boundary jumps.md
+01 Mathematics/12 Advanced Analysis/04 Integral Equations, Distributions, and Sobolev Spaces/Distributions and generalized derivatives.md
+01 Mathematics/12 Advanced Analysis/04 Integral Equations, Distributions, and Sobolev Spaces/Finite-rank kernels and successive approximation.md
+01 Mathematics/12 Advanced Analysis/04 Integral Equations, Distributions, and Sobolev Spaces/First-kind equations and singular systems.md
+01 Mathematics/12 Advanced Analysis/04 Integral Equations, Distributions, and Sobolev Spaces/Fredholm determinants and alternatives.md
+01 Mathematics/12 Advanced Analysis/04 Integral Equations, Distributions, and Sobolev Spaces/Hilbert boundary problems and characteristic equations.md
+01 Mathematics/12 Advanced Analysis/04 Integral Equations, Distributions, and Sobolev Spaces/Kernels and classification.md
+01 Mathematics/12 Advanced Analysis/04 Integral Equations, Distributions, and Sobolev Spaces/Linear integral equations - Catalogue Guide.md
+01 Mathematics/12 Advanced Analysis/04 Integral Equations, Distributions, and Sobolev Spaces/Quadrature and collocation.md
+01 Mathematics/12 Advanced Analysis/04 Integral Equations, Distributions, and Sobolev Spaces/Sobolev spaces and weak derivatives.md
+01 Mathematics/12 Advanced Analysis/04 Integral Equations, Distributions, and Sobolev Spaces/Volterra equations and convolution.md

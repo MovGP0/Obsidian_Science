@@ -1,0 +1,52 @@
+01 Mathematics/10 Numerical Methods and Optimization/01 Error, Floating Point, and Root Finding/Bisection, fixed-point, Newton, and secant iterations.md
+01 Mathematics/10 Numerical Methods and Optimization/01 Error, Floating Point, and Root Finding/Floating-point arithmetic and error.md
+01 Mathematics/10 Numerical Methods and Optimization/01 Error, Floating Point, and Root Finding/Numerical mathematics - Catalogue Guide.md
+01 Mathematics/10 Numerical Methods and Optimization/01 Error, Floating Point, and Root Finding/Polynomial root algorithms.md
+01 Mathematics/10 Numerical Methods and Optimization/01 Error, Floating Point, and Root Finding/Scalar root finding.md
+01 Mathematics/10 Numerical Methods and Optimization/01 Error, Floating Point, and Root Finding/Taylor error bounds and finite-digit arithmetic.md
+01 Mathematics/10 Numerical Methods and Optimization/02 Interpolation, Approximation, and Quadrature/Bezier curves and surfaces.md
+01 Mathematics/10 Numerical Methods and Optimization/02 Interpolation, Approximation, and Quadrature/Bicubic spline algorithms.md
+01 Mathematics/10 Numerical Methods and Optimization/02 Interpolation, Approximation, and Quadrature/Chebyshev nodes and least-squares approximation.md
+01 Mathematics/10 Numerical Methods and Optimization/02 Interpolation, Approximation, and Quadrature/Choosing and rectifying empirical curves.md
+01 Mathematics/10 Numerical Methods and Optimization/02 Interpolation, Approximation, and Quadrature/Cubic spline algorithms.md
+01 Mathematics/10 Numerical Methods and Optimization/02 Interpolation, Approximation, and Quadrature/Empirical powers and exponential models.md
+01 Mathematics/10 Numerical Methods and Optimization/02 Interpolation, Approximation, and Quadrature/Exponential sums and power products.md
+01 Mathematics/10 Numerical Methods and Optimization/02 Interpolation, Approximation, and Quadrature/Finite differences and Richardson calculations.md
+01 Mathematics/10 Numerical Methods and Optimization/02 Interpolation, Approximation, and Quadrature/Fitting combined exponential models.md
+01 Mathematics/10 Numerical Methods and Optimization/02 Interpolation, Approximation, and Quadrature/Gaussian and Romberg quadrature.md
+01 Mathematics/10 Numerical Methods and Optimization/02 Interpolation, Approximation, and Quadrature/Least-squares and numerical calculus review problems.md
+01 Mathematics/10 Numerical Methods and Optimization/02 Interpolation, Approximation, and Quadrature/Minimax approximation.md
+01 Mathematics/10 Numerical Methods and Optimization/02 Interpolation, Approximation, and Quadrature/Numerical derivatives and extrapolation.md
+01 Mathematics/10 Numerical Methods and Optimization/02 Interpolation, Approximation, and Quadrature/Polynomial and spline interpolation problems.md
+01 Mathematics/10 Numerical Methods and Optimization/02 Interpolation, Approximation, and Quadrature/Polynomial interpolation algorithms.md
+01 Mathematics/10 Numerical Methods and Optimization/02 Interpolation, Approximation, and Quadrature/Quadratic and reciprocal empirical models.md
+01 Mathematics/10 Numerical Methods and Optimization/02 Interpolation, Approximation, and Quadrature/Quadrature from interpolation.md
+01 Mathematics/10 Numerical Methods and Optimization/02 Interpolation, Approximation, and Quadrature/Trapezoidal, Simpson, and Gaussian quadrature.md
+01 Mathematics/10 Numerical Methods and Optimization/02 Interpolation, Approximation, and Quadrature/Trigonometric interpolation and FFT.md
+01 Mathematics/10 Numerical Methods and Optimization/03 Numerical Linear Algebra and Differential Equations/Boundary value algorithms.md
+01 Mathematics/10 Numerical Methods and Optimization/03 Numerical Linear Algebra and Differential Equations/Direct linear system methods.md
+01 Mathematics/10 Numerical Methods and Optimization/03 Numerical Linear Algebra and Differential Equations/Initial value algorithms.md
+01 Mathematics/10 Numerical Methods and Optimization/03 Numerical Linear Algebra and Differential Equations/Iterative system methods.md
+01 Mathematics/10 Numerical Methods and Optimization/03 Numerical Linear Algebra and Differential Equations/Least-squares algorithms.md
+01 Mathematics/10 Numerical Methods and Optimization/03 Numerical Linear Algebra and Differential Equations/Numerical solution of initial value problems.md
+01 Mathematics/10 Numerical Methods and Optimization/03 Numerical Linear Algebra and Differential Equations/Partial differential equation algorithms.md
+01 Mathematics/10 Numerical Methods and Optimization/04 Linear, Nonlinear, and Discrete Optimization/A product-mix simplex tableau.md
+01 Mathematics/10 Numerical Methods and Optimization/04 Linear, Nonlinear, and Discrete Optimization/Bases and simplex tableaux.md
+01 Mathematics/10 Numerical Methods and Optimization/04 Linear, Nonlinear, and Discrete Optimization/Constrained estimation and model fitting.md
+01 Mathematics/10 Numerical Methods and Optimization/04 Linear, Nonlinear, and Discrete Optimization/Direct search and unconstrained descent.md
+01 Mathematics/10 Numerical Methods and Optimization/04 Linear, Nonlinear, and Discrete Optimization/Dynamic decisions and Bellman equations.md
+01 Mathematics/10 Numerical Methods and Optimization/04 Linear, Nonlinear, and Discrete Optimization/Evolution strategies.md
+01 Mathematics/10 Numerical Methods and Optimization/04 Linear, Nonlinear, and Discrete Optimization/Feasible directions and projected gradients.md
+01 Mathematics/10 Numerical Methods and Optimization/04 Linear, Nonlinear, and Discrete Optimization/Linear models and graphical solutions.md
+01 Mathematics/10 Numerical Methods and Optimization/04 Linear, Nonlinear, and Discrete Optimization/Linear programming and gradient-search problems.md
+01 Mathematics/10 Numerical Methods and Optimization/04 Linear, Nonlinear, and Discrete Optimization/Nonlinear derivatives and Newton iteration.md
+01 Mathematics/10 Numerical Methods and Optimization/04 Linear, Nonlinear, and Discrete Optimization/Nonlinear optimality and convexity.md
+01 Mathematics/10 Numerical Methods and Optimization/04 Linear, Nonlinear, and Discrete Optimization/Numerical variational methods.md
+01 Mathematics/10 Numerical Methods and Optimization/04 Linear, Nonlinear, and Discrete Optimization/Optimization - Catalogue Guide.md
+01 Mathematics/10 Numerical Methods and Optimization/04 Linear, Nonlinear, and Discrete Optimization/Penalties barriers and cutting planes.md
+01 Mathematics/10 Numerical Methods and Optimization/04 Linear, Nonlinear, and Discrete Optimization/Purchasing and knapsack policies.md
+01 Mathematics/10 Numerical Methods and Optimization/04 Linear, Nonlinear, and Discrete Optimization/Quadratic programs and complementarity methods.md
+01 Mathematics/10 Numerical Methods and Optimization/04 Linear, Nonlinear, and Discrete Optimization/Revised simplex and linear duality.md
+01 Mathematics/10 Numerical Methods and Optimization/04 Linear, Nonlinear, and Discrete Optimization/Tours and sequencing.md
+01 Mathematics/10 Numerical Methods and Optimization/04 Linear, Nonlinear, and Discrete Optimization/Transport assignment and allocation.md
+01 Mathematics/10 Numerical Methods and Optimization/04 Linear, Nonlinear, and Discrete Optimization/Vector spaces affine sets and convexity.md

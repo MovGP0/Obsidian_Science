@@ -1,0 +1,49 @@
+01 Mathematics/09 Differential Equations and Dynamical Systems/01 Ordinary Differential Equations/01 Worked Differential Equations/01 Examples/Energy Conservation Example.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/01 Ordinary Differential Equations/01 Worked Differential Equations/01 Examples/Hamiltonian Flow Example.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/01 Ordinary Differential Equations/01 Worked Differential Equations/01 Examples/Laplace Transform Example.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/01 Ordinary Differential Equations/01 Worked Differential Equations/01 Examples/Series Expansion Example.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/01 Ordinary Differential Equations/01 Worked Differential Equations/01 Examples/Substitution Example.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/01 Ordinary Differential Equations/01 Worked Differential Equations/Algebraic Rules for Ordinary Differential Equations (ODE).md
+01 Mathematics/09 Differential Equations and Dynamical Systems/01 Ordinary Differential Equations/01 Worked Differential Equations/Solving Differential Equations.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/01 Ordinary Differential Equations/01 Worked Differential Equations/Types of Differentials.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/01 Ordinary Differential Equations/14.01 Equation types.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/01 Ordinary Differential Equations/14.02 Solutions and data.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/01 Ordinary Differential Equations/14.03 First-order methods.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/01 Ordinary Differential Equations/14.04 Constant-coefficient equations.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/01 Ordinary Differential Equations/14.05 Harmonic equations.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/01 Ordinary Differential Equations/14.08 Verification and approximation.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/01 Ordinary Differential Equations/Differential equations - Catalogue Guide.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/01 Ordinary Differential Equations/First-order initial value problems.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/01 Ordinary Differential Equations/First-order solution methods.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/01 Ordinary Differential Equations/Higher-order equations and initial-value data.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/01 Ordinary Differential Equations/Implicit equations and singular solutions.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/01 Ordinary Differential Equations/Linear equations and order reduction.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/01 Ordinary Differential Equations/Ordinary differential equations - Overview.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/01 Ordinary Differential Equations/Power-series solutions and forcing methods.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/02 Linear Systems, Stability, and Phase Portraits/14.06 Linear systems.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/02 Linear Systems, Stability, and Phase Portraits/14.07 Equilibria and stability.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/02 Linear Systems, Stability, and Phase Portraits/Constant-coefficient equations and systems.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/02 Linear Systems, Stability, and Phase Portraits/Dynamical systems and chaos - Catalogue Guide.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/02 Linear Systems, Stability, and Phase Portraits/Flows and linear stability.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/02 Linear Systems, Stability, and Phase Portraits/Iteration and invariant sets.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/02 Linear Systems, Stability, and Phase Portraits/Linear systems and matrix exponential calculations.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/02 Linear Systems, Stability, and Phase Portraits/Linearization, phase portraits, and nonlinear maps.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/03 Boundary-Value Problems and Eigenfunctions/15.05 Eigenvalue problems.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/03 Boundary-Value Problems and Eigenfunctions/15.07 Orthogonality and coefficients.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/03 Boundary-Value Problems and Eigenfunctions/Boundary eigenvalue problems.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/03 Boundary-Value Problems and Eigenfunctions/Box central-field and oscillator eigenfunctions.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/03 Boundary-Value Problems and Eigenfunctions/Endpoint eigenvalues and Fourier orthogonality.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/03 Boundary-Value Problems and Eigenfunctions/Fourier convergence and Sturm–Liouville examples.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/03 Boundary-Value Problems and Eigenfunctions/Weighted eigenfunctions and Rayleigh bounds.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/04 Partial Differential Equations/15.01 Basic language.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/04 Partial Differential Equations/15.02 Model equations.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/04 Partial Differential Equations/15.03 Initial and boundary data.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/04 Partial Differential Equations/15.04 Separation of variables.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/04 Partial Differential Equations/15.06 Superposition.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/04 Partial Differential Equations/15.08 Well-posedness.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/04 Partial Differential Equations/15.09 Checks.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/04 Partial Differential Equations/Characteristics for first-order PDEs.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/04 Partial Differential Equations/Classification and heat-equation examples.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/04 Partial Differential Equations/Classification of second-order PDEs.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/04 Partial Differential Equations/Fourier extensions and forced heat modes.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/04 Partial Differential Equations/Heat equation, boundary data, and separation.md

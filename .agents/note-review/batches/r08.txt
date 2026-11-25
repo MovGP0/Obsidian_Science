@@ -1,0 +1,27 @@
+01 Mathematics/08 Fourier Analysis and Transforms/01 Orthogonality and Fourier Series/16.01 Periodic functions.md
+01 Mathematics/08 Fourier Analysis and Transforms/01 Orthogonality and Fourier Series/16.02 Trigonometric and complex bases.md
+01 Mathematics/08 Fourier Analysis and Transforms/01 Orthogonality and Fourier Series/16.03 Function inner products.md
+01 Mathematics/08 Fourier Analysis and Transforms/01 Orthogonality and Fourier Series/16.04 Fourier coefficients.md
+01 Mathematics/08 Fourier Analysis and Transforms/01 Orthogonality and Fourier Series/16.05 Reality and symmetry.md
+01 Mathematics/08 Fourier Analysis and Transforms/01 Orthogonality and Fourier Series/16.06 Convergence.md
+01 Mathematics/08 Fourier Analysis and Transforms/01 Orthogonality and Fourier Series/16.07 Energy of an expansion.md
+01 Mathematics/08 Fourier Analysis and Transforms/01 Orthogonality and Fourier Series/16.08 Operations on expansions.md
+01 Mathematics/08 Fourier Analysis and Transforms/01 Orthogonality and Fourier Series/16.09 Boundary-value applications.md
+01 Mathematics/08 Fourier Analysis and Transforms/01 Orthogonality and Fourier Series/Fourier analysis - Overview.md
+01 Mathematics/08 Fourier Analysis and Transforms/01 Orthogonality and Fourier Series/Fourier coefficients and convergence.md
+01 Mathematics/08 Fourier Analysis and Transforms/01 Orthogonality and Fourier Series/Symmetry and numerical Fourier coefficients.md
+01 Mathematics/08 Fourier Analysis and Transforms/02 Fourier, Laplace, and Z-Transforms/16.10 The nonperiodic extension.md
+01 Mathematics/08 Fourier Analysis and Transforms/02 Fourier, Laplace, and Z-Transforms/Fourier integrals and transform rules.md
+01 Mathematics/08 Fourier Analysis and Transforms/02 Fourier, Laplace, and Z-Transforms/From Fourier series to Fourier integrals.md
+01 Mathematics/08 Fourier Analysis and Transforms/02 Fourier, Laplace, and Z-Transforms/Integral kernels and inverse transforms.md
+01 Mathematics/08 Fourier Analysis and Transforms/02 Fourier, Laplace, and Z-Transforms/Integral transforms - Catalogue Guide.md
+01 Mathematics/08 Fourier Analysis and Transforms/02 Fourier, Laplace, and Z-Transforms/Invert Laplace transforms.md
+01 Mathematics/08 Fourier Analysis and Transforms/02 Fourier, Laplace, and Z-Transforms/Laplace transform rules and impulses.md
+01 Mathematics/08 Fourier Analysis and Transforms/02 Fourier, Laplace, and Z-Transforms/Periodic forcing and Laplace-transform problems.md
+01 Mathematics/08 Fourier Analysis and Transforms/02 Fourier, Laplace, and Z-Transforms/Solve difference equations with Z-transforms.md
+01 Mathematics/08 Fourier Analysis and Transforms/02 Fourier, Laplace, and Z-Transforms/Solve equations with Fourier transforms.md
+01 Mathematics/08 Fourier Analysis and Transforms/02 Fourier, Laplace, and Z-Transforms/Solve equations with Laplace transforms.md
+01 Mathematics/08 Fourier Analysis and Transforms/02 Fourier, Laplace, and Z-Transforms/Z-transform rules and inversion.md
+01 Mathematics/08 Fourier Analysis and Transforms/03 Discrete Transforms and Wavelets/Haar wavelets and fast discrete transforms.md
+01 Mathematics/08 Fourier Analysis and Transforms/03 Discrete Transforms and Wavelets/Walsh functions and step expansions.md
+01 Mathematics/08 Fourier Analysis and Transforms/03 Discrete Transforms and Wavelets/Wavelets and local transforms.md

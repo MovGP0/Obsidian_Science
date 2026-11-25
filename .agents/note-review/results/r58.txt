@@ -1,0 +1,598 @@
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.10 Slowly rotating shell.md
+priority: medium
+graph: yes
+manim: yes
+summary: Faithful and numerically correct (Eqs. 3.79-3.83 and the large-R limits re-derive), but the long stretch from $K^a{}_b$ to the perfect-fluid form is algebra-heavy with little physical narration.
+- [Correctness] Symbol clash: $\mechanical{\Omega}$ is the frame angular velocity (3.72-3.73) while $\mathrm d\Omega^2$ in (3.71) is the solid-angle element; write the angular part explicitly or call the frame rate $\mechanical{\Omega_{\mathrm{in}}}$ from the start.
+- [Simplify] Show the two intermediate steps the note skips: the eigenvalue equation $\energy{S^\psi{}_t}+\energy{S^\psi{}_\psi}\mechanical{\omega}=-\energy{\sigma}\mechanical{\omega}$ that yields $\mechanical{\omega}=-\energy{S^\psi{}_t}/(\energy{\sigma}+\energy{S^\psi{}_\psi})$, and the identity $8\pi\mechanical{R}\sqrt f(\energy{\sigma}+\mechanical{p})=(1-\sqrt f)(1+3\sqrt f)/2$ that produces (3.79).
+- [Intuition] Before the algebra, state the physical picture in one paragraph: inside the shell spacetime is flat but its natural nonrotating frame turns at $\mechanical{\Omega_{\mathrm{in}}}$ relative to the stars, which is why the interior metric (3.75) is written in the rotating coordinate $\mechanical{\psi}$.
+- [Graph] Plot $\mechanical{\Omega_{\mathrm{in}}}/\mechanical{\Omega_{\mathrm{shell}}}=(1-\sqrt{1-2x})(1+3\sqrt{1-2x})/(1+2\sqrt{1-2x})$ with $x=\mechanical{M}/\mechanical{R}$ against $\mechanical{R}/\mechanical{M}$ from 2 to 30, overlaying the weak-field approximation $4\mechanical{M}/(3\mechanical{R})$, to show the approach to corotation at $\mechanical{R}\to2\mechanical{M}$.
+- [Graph] Second plot: dimensionless $4\pi\mechanical{R}\energy{\sigma}$ and $8\pi\mechanical{R}\mechanical{p}$ from (3.80)-(3.81) against $\mechanical{R}/\mechanical{M}$ in $[2,20]$, showing the pressure diverging as $\mechanical{R}\to2\mechanical{M}$.
+- [Manim] Top-down view of a rotating shell with a nonrotating frame (gyroscope cross) inside, animating the interior frame being dragged at $\mechanical{\Omega_{\mathrm{in}}}$ while the shell turns at $\mechanical{\Omega_{\mathrm{shell}}}$, with $\mechanical{R}/\mechanical{M}$ decreased toward 2 to show corotation.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.11 Null shells.md
+priority: low
+graph: no
+manim: no
+summary: Short section hub with a clear motivation paragraph and correct child links.
+- [Structure] No change needed; optionally add one sentence on why null shells (matter moving at the speed of light, for example an impulsive burst of radiation) are physically relevant.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.11.1 Geometry.md
+priority: medium
+graph: no
+manim: yes
+summary: Correct and careful setup, but the many basis vectors and the arbitrary observer congruence are introduced without a picture, which makes the construction hard to follow.
+- [Intuition] Add a short paragraph or figure explaining why the normal of a null surface is also tangent to it (so "orthogonal crossing" fails to pick a congruence), contrasting with the timelike or spacelike case of Section 3.7.
+- [Simplify] Add a small table of the basis $(\mechanical{k}^\alpha,e^\alpha_A,N^\alpha)$ with all inner products ($\mechanical{k}\cdot\mechanical{k}=0$, $\mechanical{k}\cdot e_A=0$, $N\cdot N=0$, $N\cdot\mechanical{k}=-1$, $N\cdot e_A=0$, $e_A\cdot e_B=\sigma_{AB}$) before the completeness relation (3.89).
+- [Example] Illustrate the basis with the simplest case, the light cone $\mechanical{t}=\mechanical{r}$ in Minkowski space with $\mechanical{\lambda}=\mechanical{r}$, giving explicit $\mechanical{k}^\alpha$, $N_\alpha$ and $\sigma_{AB}=\mechanical{r}^2\Omega_{AB}$.
+- [Simplify] Spell out the one-line check of (3.92): contracting with $\mechanical{u}^\alpha$ and using $\mechanical{u}^\alpha\partial_\alpha\mechanical{\tau}=1$ returns $\mechanical{k}_\alpha\mechanical{u}^\alpha$.
+- [Manim] Spacetime diagram of a null surface at 45 degrees with timelike observer worldlines crossing it at different tilts, showing that each family is equally valid and that $\mechanical{\tau}=0$ marks the crossing.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.11.2 Surface stress-energy tensor.md
+priority: medium
+graph: no
+manim: no
+summary: Accurate distributional derivation of the null-shell stress-energy tensor, but dense and with a notational clash between the jump tensor and spacetime indices.
+- [Correctness] Symbol clash: $\gamma_{\alpha\beta}$ (the jump tensor of Eq. 3.94) appears in the same equations as the free index $\gamma$ (for example $[g_{\alpha\beta,\gamma}]=-\gamma_{\alpha\beta}\mechanical{k}_\gamma$ and $[\Gamma^\alpha_{\beta\gamma}]$ in 3.95); relabel the free index or note the clash explicitly.
+- [Correctness] Missing semantic macro: $k^\beta$ is written bare in (3.98) ($\gamma_{\alpha\beta}e^\alpha_Ak^\beta$) and (3.99) ($e^\alpha_Ak^\beta$); use $\mechanical{k}^\beta$ as everywhere else.
+- [Simplify] Show the short step from (3.95) to (3.96), and state up front that only the transverse derivative $g_{\alpha\beta,\gamma}N^\gamma$ can jump because tangential derivatives of a continuous metric are continuous.
+- [Intuition] After (3.99), interpret the three terms: $\energy{\mu}$ is energy flowing along the generators, $\mechanical{j^A}$ a flow across generators, $\mechanical{p}$ an isotropic transverse stress; mention that the factor $(-\mechanical{k}_\mu\mechanical{u}^\mu)^{-1}$ encodes the observer dependence.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.11.3 Intrinsic formulation.md
+priority: low
+graph: no
+manim: no
+summary: Clear explanation of why the extrinsic curvature is useless for null surfaces and how the transverse curvature replaces it; one index typo.
+- [Correctness] Index typo in the jump calculation: $[C_{ab}]=[N_{\alpha;\beta}]e^\alpha_ae^\alpha_b$ (repeated in all three lines) should read $e^\alpha_ae^\beta_b$.
+- [Correctness] Missing semantic macro: $k^\beta$ is bare in $[C_{A\mechanical{\lambda}}]=\frac12\gamma_{\alpha\beta}e^\alpha_Ak^\beta$; use $\mechanical{k}^\beta$.
+- [Simplify] In the second line of the jump calculation, explain why $[N_{\alpha;\beta}]=-[\Gamma^\gamma_{\alpha\beta}]N_\gamma$ (the partial derivatives of $N_\alpha$ are continuous in the continuous coordinates) and show the contraction $\mechanical{k}^\gamma N_\gamma=-1$ that produces the $+\frac12$.
+- [Structure] Add a short side-by-side comparison of the timelike formula $\energy{S_{ab}}=-\frac{\varepsilon}{8\pi}([K_{ab}]-[K]h_{ab})$ with (3.101) to make the analogy explicit.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.11.4 Summary.md
+priority: low
+graph: no
+manim: no
+summary: Compact, correct summary of the null-shell formalism.
+- [Correctness] Missing semantic macro: $e^\alpha_Ak^\beta$ in the $\energy{S^{\alpha\beta}}$ formula should use $\mechanical{k}^\beta$.
+- [Links] Link the summarized equations to [[3.11.2 Surface stress-energy tensor]] and [[3.11.3 Intrinsic formulation]], and note that $-\mechanical{k}_\mu\mechanical{u}^\mu=1$ for the observers used in [[3.11.6 Imploding spherical shell]] and [[3.11.8 Cosmological phase transition]].
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.11.5 Parameterization of the null generators.md
+priority: medium
+graph: no
+manim: no
+summary: Mostly correct and the work-energy interpretation of (3.104) is valuable, but there is a missing inverse and the notation overloads $e$, $\sigma$ and $\theta$.
+- [Correctness] The observer factor is mis-transformed: "$(-\bar{\mechanical{k}}_\mu\mechanical{u}^\mu)^{-1}=e^\beta(-\mechanical{k}_\mu\mechanical{u}^\mu)$" should be $e^\beta(-\mechanical{k}_\mu\mechanical{u}^\mu)^{-1}$, since $\bar{\mechanical{k}}^\alpha=e^{-\beta}\mechanical{k}^\alpha$; only then is $(-\mechanical{k}_\mu\mechanical{u}^\mu)^{-1}\energy{S^{\alpha\beta}}$ invariant.
+- [Correctness] Symbol clashes: $e^\beta$ (exponential of the reparameterization function $\beta$) sits next to basis vectors $e^\alpha_A$ and the index $\beta$; $\mechanical{\sigma}_{\alpha\beta}$ (shear) and $\sqrt\sigma$ (determinant) clash with the two-metric $\sigma_{AB}$; $\mechanical{\theta}$ (expansion) clashes with $\theta^A$; use an upright $\mathrm e^{\beta}$ (or a named factor) and a distinct shear symbol.
+- [Simplify] Add the one-line derivation of (3.104): $-8\pi\mechanical{p}\mechanical{\theta}=8\pi[\energy{T_{\alpha\beta}}\mechanical{k}^\alpha\mechanical{k}^\beta]$ together with $\mechanical{\theta}\,\mathrm d\mechanical{S}=\mathrm d(\mathrm d\mechanical{S})/\mathrm d\mechanical{\lambda}$, so the sign of $-\mechanical{p}\mechanical{\theta}=[\energy{T_{\alpha\beta}}\mechanical{k}^\alpha\mechanical{k}^\beta]$ is explicit.
+- [Example] Point to [[3.11.8 Cosmological phase transition]] as the worked case with $[\mechanical{\kappa}]\ne0$ and to [[3.11.6 Imploding spherical shell]] where both sides are affine.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.11.6 Imploding spherical shell.md
+priority: medium
+graph: yes
+manim: yes
+summary: Correct and physical example ($C^\pm_{AB}$, $\energy{\mu}=\mechanical{M}/(4\pi\mechanical{r}^2)$ and $\energy{\tilde E}=1-\mechanical{M}/\mechanical{r_\Sigma}$ all re-derive), but the transverse curvatures and the observer kick are only asserted.
+- [Simplify] Show the short computation $C_{AB}=-N_\alpha\Gamma^\alpha_{AB}=-N_r\Gamma^r_{\theta\theta}$ with $\Gamma^r_{\theta\theta}=-\mechanical{r}$ (inside) or $-\mechanical{r}f$ (outside), which gives $C^\mp_{AB}$ in two lines.
+- [Example] Expand the "simple calculation, based on Eq. (3.91)": with $\mechanical{u}_t=-\energy{\tilde E}$ and $-\mechanical{k}_\alpha\mechanical{u}^\alpha=1$ one gets $\energy{\tilde E}-(\energy{\tilde E}^2-f)^{1/2}=f$, hence $\energy{\tilde E}=(1+f)/2=1-\mechanical{M}/\mechanical{r_\Sigma}$.
+- [Simplify] Write $N_\alpha\mathrm dx^\alpha$ with explicit side labels ($\mathrm d\mechanical{t_-}$, $\mathrm d\mechanical{t_+}$) instead of the unlabelled $\mathrm d\mechanical{t}$.
+- [Graph] Plot the post-crossing infall speed $|\mathrm d\mechanical{r}/\mathrm d\mechanical{\tau}|=\sqrt{\energy{\tilde E}^2-f}$ against $\mechanical{r}/\mechanical{M}$ for crossing radii $\mechanical{r_\Sigma}/\mechanical{M}=4,10,50$, showing larger kicks for observers crossing closer to the centre.
+- [Manim] Spacetime animation of the null shell imploding at $45^\circ$ while initially static observers stay vertical until crossing and then tilt inward, with the horizon $\mechanical{r}=2\mechanical{M}$ appearing behind the shell.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.11.7 Accreting black hole.md
+priority: medium
+graph: yes
+manim: yes
+summary: Rich example whose key quantities ($\mechanical{k}^\alpha$, $\mechanical{\psi}$, $\energy{\mu}$, $\mechanical{j^\psi}$, $\mechanical{\Omega_{\mathrm{fluid}}}$) check out, but the stated relation between $\mechanical{\Omega_{\mathrm{relative}}}$ and $\mechanical{j^\psi}/\energy{\mu}$ drops a factor $f$.
+- [Correctness] "$\mechanical{\Omega_{\mathrm{relative}}}=\mechanical{j^\psi}/\energy{\mu}=3\mechanical{M}\mechanical{a}f/(2\mechanical{m}\mechanical{r}^2)$" is inconsistent: $\mechanical{j^\psi}/\energy{\mu}=3\mechanical{M}\mechanical{a}/(2\mechanical{m}\mechanical{r}^2)$ without $f$; since $\mathrm d\mechanical{\phi}/\mathrm d\mechanical{t}=\mechanical{\ell}^\phi/\mechanical{\ell}^t=f\mechanical{\ell}^\phi$, the correct statement is $\mechanical{\Omega_{\mathrm{relative}}}=f\,\mechanical{j^\psi}/\energy{\mu}$.
+- [Simplify] Show the check that $\mechanical{\psi}$ is constant on generators: $\mathrm d/\mathrm d\mechanical{r}\,[(\mechanical{a}/\mechanical{r})(1+(\mechanical{r}/2\mechanical{M})\ln f)]=2\mechanical{M}\mechanical{a}/(\mechanical{r}^3f)$.
+- [Intuition] Explain why $\mechanical{j^\psi}$ appears: the accreted matter carries angular momentum, so it must move across the generators, which are only dragged; the jump $[C_{\mechanical{\lambda}\psi}]$ is the angular-momentum analogue of the mass jump $[C_{AB}]$.
+- [Graph] Plot $\mechanical{\Omega_{\mathrm{generators}}}$, $\mechanical{\Omega_{\mathrm{fluid}}}$ and $\mechanical{\Omega_{\mathrm{relative}}}$ (in units of $\mechanical{a}/\mechanical{M}^2$) against $\mechanical{r}/\mechanical{M}$ from 2 to 10 for $\mechanical{m}/\mechanical{M}=0.1$, showing $\mechanical{\Omega_{\mathrm{relative}}}\to0$ at the horizon.
+- [Manim] Top-down view of the infalling shell with generator lines spiralling in at $\mechanical{\Omega_{\mathrm{generators}}}$ and fluid elements spiralling faster, the two rates merging as the shell reaches $\mechanical{r}=2\mechanical{M}$.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.11.8 Cosmological phase transition.md
+priority: low
+graph: yes
+manim: no
+summary: Clear, fully checkable example (densities, $C^\pm_{ab}$, $\mechanical{\kappa_+}=1/(2\mechanical{t})$, $\mechanical{p}=-1/(16\pi\mechanical{t})$ and the energy balance all re-derive) with one index typo.
+- [Correctness] Index typo: $\energy{S^{\alpha\beta}}=\mechanical{p}\sigma^{AB}e^\alpha_Ae^\alpha_B$ should be $\mechanical{p}\sigma^{AB}e^\alpha_Ae^\beta_B$.
+- [Simplify] Add the short derivation of $\energy{\rho_-}=\mechanical{p_-}=1/(32\pi\mechanical{t}^2)$ from $G_{tt}=(\dot{\mechanical{a}}/\mechanical{a})^2$ and $G_{zz}=-(2\ddot{\mechanical{a}}/\mechanical{a}+\dot{\mechanical{a}}^2/\mechanical{a}^2)$ with $\mechanical{a}\propto\mechanical{t}^{1/2}$, and of $\mechanical{\kappa_+}=\Gamma^t_{zz}(\mechanical{k}^z)^2=\dot{\mechanical{a}}/\mechanical{a}$.
+- [Intuition] State explicitly that the shell is a tension sheet doing work on the fluid: the factor-3 jump in $\energy{\rho}$ is supplied by $-\mechanical{p}\mechanical{\theta}$, making this the cleanest illustration of Eq. (3.104).
+- [Graph] Plot the scale factors along $x$ and along $z$ against $\mechanical{t}$ for a fixed comoving point before and after the shell passes (constant in $z$, then $\propto\mechanical{t}^{1/2}$), together with $32\pi\mechanical{t}^2\energy{\rho}$ jumping from 1 to 3.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.12 Bibliographical notes.md
+priority: low
+graph: no
+manim: no
+summary: Faithful bibliographic note from the source; adequate as is.
+- [Links] Turn the section references (3.1-3.11) into wiki links to the corresponding notes, and optionally remark that the 2000 Cook Living Reviews article on initial data has since been complemented by newer reviews.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.13 Problems.md
+priority: low
+graph: no
+manim: no
+summary: Clean problem list with correct setups (Painlevé-Gullstrand form, de Sitter embedding, time-symmetric data), but two cross-references are inconsistent with the chapter notes.
+- [Correctness] Problem 9 quotes "the general relation $\mechanical{p}\mechanical{\theta}=[\energy{T_{\alpha\beta}}\mechanical{k^\alpha}\mechanical{k^\beta}]$", but Eqs. (3.102)-(3.104) give $-\mechanical{p}\mechanical{\theta}=[\energy{T_{\alpha\beta}}\mechanical{k}^\alpha\mechanical{k}^\beta]$ (as also used in 3.11.8); fix the sign.
+- [Correctness] Problem 8 says "Derive the relations (3.109)", but 3.11.5 assigns Problem 8 the derivation of the surface-quantity transformations (3.110); check against the source and make the two notes agree.
+- [Links] Link the referenced sections (3.6.5, 3.6.6, 3.7.5, 3.11.5, 2.3.7) to their notes, for example [[3.11.5 Parameterization of the null generators]].
+- [Simplify] In Problem 2(c), "constant Ricci curvature" undersells the result; the given $R_{\alpha\beta\gamma\delta}$ means a maximally symmetric spacetime of constant curvature (de Sitter).
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.2 Integration over hypersurfaces.md
+priority: low
+graph: no
+manim: no
+summary: Short hub note with a correct TLDR and working links to its three subsections.
+- [Structure] No change needed; optionally add one sentence saying which element (non-null $d\Sigma=|h|^{1/2}d^3y$, null $-k_\alpha\sqrt\sigma\,d^2\theta\,d\lambda$, two-surface $dS_{\alpha\beta}$) each subnote covers.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.2.1 Surface element (non-null case).md
+priority: medium
+graph: no
+manim: no
+summary: Faithful and correct transcription (both Minkowski examples and the cofactor proof check out), but dense, with the orientation convention and the $\varepsilon$ sign trap stated only in passing.
+- [Correctness] The physical-quantities table lists $\theta^A$, $\mechanical{u}$, $d\Sigma_t$ and $d\Sigma_x$, which this note never uses (only $d\Sigma_\mu$ with $\delta_\mu^t$, $\delta_\mu^x$ appears); remove them.
+- [Intuition] Before Eq. (3.15), say in one line why the Levi-Civita contraction gives a volume: $\epsilon_{\mu\alpha\beta\gamma}e_1^\alpha e_2^\beta e_3^\gamma$ is the 4D analogue of the cross product $\mathbf a\times\mathbf b$, giving a covector orthogonal to all three edges whose size is the parallelepiped volume.
+- [Simplify] Put the sign convention ($f>0$, so $n^\alpha d\Sigma_\alpha=d\Sigma>0$) and its consequence for spacelike $\Sigma$ ($d\Sigma_\alpha=-n_\alpha d\Sigma$ is past-directed) in a short callout, because 3.3.2 depends on exactly this sign.
+- [Simplify] In the derivation, state explicitly that $g^{\Phi\Phi}$ has the sign $\varepsilon$, which is why $n^\Phi=g^{\Phi\Phi}n_\Phi=|g^{\Phi\Phi}|^{1/2}$ comes out positive.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.2.2 Surface element (null case).md
+priority: medium
+graph: no
+manim: no
+summary: Correct overall, and the $u=t-x$ example checks out ($f=1$, $d\Sigma_t=-d\Sigma_x$), but the inverse-metric matrix has a sign inconsistency and the derivation is compressed.
+- [Correctness] In the inverse-metric matrix, the $\Phi\lambda$ entries should be $-1$, not $+1$: with $k_\Phi\stackrel{*}{=}-1$, $k^\lambda\stackrel{*}{=}1$ and $N^\Phi\stackrel{*}{=}1$, Eq. (3.13) gives $g^{\Phi\lambda}=-N^\Phi k^\lambda=-1$ (equivalently $k^\lambda=g^{\lambda\Phi}k_\Phi=1$). The determinant result $\det\mathbf g^{-1}=-\det[\sigma^{AB}]$ is unaffected.
+- [Simplify] Label the matrix's block rows and columns $(\Phi,\lambda,A)$ and say that it is a 4x4 matrix written in $1+1+2$ blocks; as printed it looks like a 3x3 matrix.
+- [Intuition] After Eq. (3.20), add a sentence that the minus sign is the null analogue of the $\varepsilon=-1$ in Eq. (3.16): for a future-directed null normal, $d\Sigma_\alpha$ again points to the past.
+- [Example] For the light-cone example, show $\det\mathbf E$ explicitly, or at least the four basis vectors $N,k,e_\theta,e_\phi$ from 3.1.4, so the reader can verify $f=\lambda^2\sin\theta$.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.2.3 Element of two-surface.md
+priority: low
+graph: no
+manim: no
+summary: Correct and well structured (the $f^2=g\,g^{\Phi\Phi}g^{\Psi\Psi}$ step and the null-normal rewrite into Eq. (3.19) both check out); only the final cofactor step is left to the reader.
+- [Correctness] The physical-quantities table lists $dS_{tx},dS_{xt}$ and $n^\Phi$, which this note never uses; remove them.
+- [Simplify] Show the last step to $f=\sqrt\sigma$: Jacobi's complementary-minor identity gives $\operatorname{cof}(g_{\Phi\Phi})\operatorname{cof}(g_{\Psi\Psi})-\operatorname{cof}(g_{\Phi\Psi})^2=g\,\sigma$, so with $\operatorname{cof}(g_{\Phi\Psi})=0$ one gets $f^2=\sigma$.
+- [Simplify] Show the two-line check that substituting $k^\alpha=(n^\alpha+r^\alpha)/\sqrt2$ and $N^\alpha=(n^\alpha-r^\alpha)/\sqrt2$ turns $2k_{[\alpha}N_{\beta]}$ into $-2n_{[\alpha}r_{\beta]}$, and that $k\cdot N=-1$.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.3 Gauss-Stokes theorem.md
+priority: low
+graph: no
+manim: no
+summary: Hub note with a correct TLDR and links.
+- [Structure] No change needed.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.3.1 First version.md
+priority: low
+graph: no
+manim: no
+summary: Clear and correct proof by onion coordinates; the claim that the angular-divergence term vanishes is left as an exercise.
+- [Simplify] Give the hinted 3D example explicitly in one or two lines: in flat spherical coordinates, $\oint\partial_\theta(\ldots)d\theta\,d\phi$ and $\oint\partial_\phi(\ldots)d\theta\,d\phi$ vanish because the integrand is periodic in $\phi$ and the $\sin\theta$ in $\sqrt{-g}$ vanishes at the poles.
+- [Intuition] Add a one-line reminder that this is the 4D version of the flat-space divergence theorem $\int\nabla\cdot\mathbf A\,dV=\oint\mathbf A\cdot d\mathbf S$, with the caveat that on spacelike pieces of $\partial\mathcal V$, "outward" $d\Sigma_\alpha$ follows the $\varepsilon$ convention of 3.2.1.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.3.2 Conservation.md
+priority: low
+graph: no
+manim: no
+summary: Correct and short; the sign bookkeeping with outward and future-directed normals is the only tricky point and is handled correctly.
+- [Intuition] Note that with future-directed $n_\alpha$, the physical charge is $Q=-\int j^\alpha n_\alpha\,d\Sigma$; for example $j^\alpha=\rho_0u^\alpha$ gives $-j^\alpha n_\alpha=\rho_0\gamma>0$. The sign does not affect conservation, but readers will meet $Q=-\int j\cdot n\,d\Sigma$ elsewhere.
+- [Simplify] Spell out the sign step: on $\Sigma_2$ the outward normal is $+n_2$, so the contribution is $-\int j\cdot n_2\sqrt h\,d^3y$; on $\Sigma_1$ it is $-n_1$, giving $+\int j\cdot n_1\sqrt h\,d^3y$; the sum vanishes.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.3.3 Second version.md
+priority: low
+graph: no
+manim: no
+summary: Correct proof that parallels 3.3.1; the factor 1/2 and the $B^{01}-B^{10}$ step are explained.
+- [Intuition] Add one sentence connecting this to Maxwell theory: with $B^{\alpha\beta}=F^{\alpha\beta}$, Eq. (3.24) is Gauss's law (charge inside $\Sigma$ equals electric flux through $\partial\Sigma$). This motivates why antisymmetric tensors give conserved surface integrals, and links ahead to Komar-type mass integrals.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.4 Differentiation of tangent vector fields.md
+priority: low
+graph: no
+manim: no
+summary: Hub note with the non-null assumption stated and correct links.
+- [Links] Consider linking "Section 3.11" to [[3.11 Null shells]].
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.4.1 Tangent tensor fields.md
+priority: low
+graph: no
+manim: no
+summary: Short, correct statement of the tangent-tensor correspondence and the projector.
+- [Correctness] The physical-quantities table lists $h_{\alpha\beta}$, which the note never uses (only $h^{\alpha\beta}$ and $h^\alpha{}_\mu$ appear); replace it with $h^\alpha{}_\mu$ or drop it.
+- [Intuition] Add one line checking the projector: $h^\alpha{}_\mu n^\mu=0$ and $h^\alpha{}_\mu e_a^\mu=e_a^\alpha$, so it removes the normal part and keeps tangent vectors unchanged.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.4.2 Intrinsic covariant derivative.md
+priority: medium
+graph: no
+manim: no
+summary: Correct derivation, but the proof that Eq. (3.28) equals the Christoffel form (3.30) silently needs the symmetry of $\Gamma_{cab}$ in $ab$ as well as metric compatibility.
+- [Simplify] State that metric compatibility ($h_{ab|c}=0$) and symmetry $\Gamma^c_{ab}=\Gamma^c_{ba}$ together fix Eq. (3.30), and note that symmetry follows from $e^\alpha_{a;\beta}e_b^\beta=e^\alpha_{b;\beta}e_a^\beta$, which 3.4.3 proves later (or move that line here).
+- [Simplify] In the second line of the derivation, add the intermediate step $A_\alpha=h_{\alpha\gamma}A^\gamma=A^ce_{c\alpha}$, which is what turns $A_\alpha e^\alpha_{a;\beta}$ into $A^ce_c^\gamma e_{a\gamma;\beta}$.
+- [Intuition] Give the 2D example of a sphere of radius $R$ in flat $\mathbb R^3$: projecting the flat derivative onto the sphere reproduces the sphere's Christoffel symbols (for example $\Gamma^\theta_{\phi\phi}=-\sin\theta\cos\theta$).
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.4.3 Extrinsic curvature.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct and complete (Eqs. 3.32–3.36 check out), but $K_{ab}$ stays abstract with no worked example, and the convex/concave statement lacks a picture.
+- [Example] Add a worked example: a sphere $r=R$ in flat space with outward $n_\alpha=\partial_\alpha r$ gives $K_{ab}=h_{ab}/R$ and $K=2/R>0$; a $t$ = const slice of FRW gives $K=3\dot a/a$ (used in 3.6.2).
+- [Graph] Plot a 2D curve such as a circle or the parabola $y=x^2/2$ with its unit normal field drawn at several points, to show that $K$ measures how fast the normals spread ($K=1/R$ for a circle).
+- [Simplify] In the line that uses $K=n^\alpha{}_{;\alpha}$, note that it needs $n^\alpha n_{\alpha;\beta}=0$, which holds because $n^\alpha$ is extended off $\Sigma$ as a unit field.
+- [Intuition] Say in words that $K_{ab}$ is the projection of $\tfrac12\mathcal L_ng_{\alpha\beta}$, "half the rate of change of the spatial metric as you move along the normal". This is the reason 3.6.1 uses $K_{ab}$ as the "velocity" initial data.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.5 Gauss-Codazzi equations.md
+priority: low
+graph: no
+manim: no
+summary: Hub note with correct links.
+- [Structure] No change needed.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.5.1 General form.md
+priority: medium
+graph: no
+manim: no
+summary: Equations (3.39) and (3.40) and the intermediate expression are correct, but the key step ("after some algebra") hides the antisymmetrization, and there is no example.
+- [Simplify] Show the antisymmetrization step: write LHS minus the same expression with $b\leftrightarrow c$, note that the $\Gamma^d_{bc}$ and $K_{bc}$ terms cancel by symmetry, and identify $\Gamma^d_{ab,c}-\Gamma^d_{ac,b}+\Gamma\Gamma-\Gamma\Gamma$ with the intrinsic Riemann tensor via Eq. (3.38).
+- [Example] Add the sphere check: for a 2-sphere of radius $R$ in flat $\mathbb R^3$ ($\varepsilon=+1$, $K_{ab}=h_{ab}/R$), Eq. (3.39) gives $R_{abcd}=(h_{ac}h_{bd}-h_{ad}h_{bc})/R^2$, the familiar constant curvature $1/R^2$.
+- [Intuition] Note that Eq. (3.39) generalizes Gauss's Theorema Egregium: ambient curvature equals intrinsic curvature plus a term quadratic in $K_{ab}$.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.5.2 Contracted form.md
+priority: medium
+graph: no
+manim: no
+summary: Correct results, but "a little algebra" skips the whole derivation of Eqs. (3.41) and (3.42).
+- [Simplify] Show the steps for Eq. (3.41): $G_{\alpha\beta}n^\alpha n^\beta=R_{\alpha\beta}n^\alpha n^\beta-\tfrac12\varepsilon R$; insert the expression for $R$ so that the $R_{\mu\alpha\nu\beta}n^\mu e^\alpha_an^\nu e^\beta_b$ terms cancel, leaving $-\tfrac12\varepsilon h^{ab}h^{mn}R_{\mu\alpha\nu\beta}e^\mu_me^\alpha_ae^\nu_ne^\beta_b$, which is evaluated with the contracted Eq. (3.39).
+- [Simplify] For Eq. (3.42), note that $g_{\alpha\beta}e^\alpha_an^\beta=0$, so only $R_{\alpha\beta}e^\alpha_an^\beta=h^{bc}R_{\mu\alpha\nu\beta}e^\mu_be^\alpha_ae^\nu_cn^\beta$ survives; contracting the Codazzi equation (3.40) gives the result.
+- [Intuition] Add one line saying that these are exactly the components of Einstein's equations that contain no second normal derivatives, which is why they become constraints in 3.6.1.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.5.3 Ricci scalar.md
+priority: low
+graph: no
+manim: no
+summary: Correct and well explained (Ricci identity, total-derivative split, and the $K^{ab}K_{ab}$ computation all check out).
+- [Intuition] Add a closing sentence on why Eq. (3.43) matters: the divergence term becomes a boundary term in the Einstein–Hilbert action, which motivates the Gibbons–Hawking boundary term and the ADM Lagrangian in Chapter 4 (link the relevant Chapter 4 note).
+- [Simplify] Show the contraction of the Ricci identity explicitly: $n^\alpha{}_{;\beta\alpha}-n^\alpha{}_{;\alpha\beta}=R_{\mu\beta}n^\mu$ under the book's sign convention.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.6 Initial-value problem.md
+priority: low
+graph: no
+manim: no
+summary: Hub note with correct TLDR and links.
+- [Structure] No change needed.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.6.1 Constraints.md
+priority: medium
+graph: no
+manim: no
+summary: Correct constraints (Eq. 3.44 follows from 3.41 with $\varepsilon=-1$) with good motivation; the sign meaning of $j_a$ and the counting of degrees of freedom could be clearer.
+- [Intuition] Note that with future-directed $n^\beta$, $T_{\alpha\beta}e^\alpha_an^\beta$ is minus the momentum density measured by normal observers (for dust it equals $-\rho\gamma u_a$). Either say so or point out that it is the book's sign convention.
+- [Intuition] Add the Maxwell analogy: just as $\nabla\cdot\mathbf E=4\pi\rho$ and $\nabla\cdot\mathbf B=0$ restrict the initial $(\mathbf E,\mathbf B)$, Eqs. (3.44) and (3.45) are 4 conditions on the 12 numbers $(h_{ab},K_{ab})$.
+- [Simplify] In the table, give $\mechanical{j_a}$ the same unit as $\energy{\rho}$ ($\mathrm{m^{-2}}$ in geometrized units) and use consistent semantic macros for the two projections of $T_{\alpha\beta}$; currently one uses \energy and the other \mechanical.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.6.2 Cosmological initial values.md
+priority: low
+graph: no
+manim: no
+summary: Correct and short worked example; all steps check ($K^2-K^{ab}K_{ab}=\tfrac23K^2$, $K=3\dot a/a$, Friedmann equation).
+- [Simplify] Show the one-line computation $K=n^\alpha{}_{;\alpha}=(-g)^{-1/2}\partial_t\sqrt{-g}=\partial_t(a^3)/a^3=3\dot a/a$, and state $^3R=0$ for the flat slice explicitly.
+- [Structure] The spatial coordinates $x,y,z$ are uncolored while $\mechanical{t}$ is colored; apply the macros consistently.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.6.3 Moment of time symmetry.md
+priority: low
+graph: yes
+manim: no
+summary: Clear and correct short note.
+- [Graph] Plot the closed-FRW cycloid $a(\eta)=\tfrac12a_{\max}(1-\cos\eta)$, $\tau=\tfrac12a_{\max}(\eta-\sin\eta)$ for $\eta\in[0,2\pi]$, and mark the turning point $t_0$ where $K=3\dot a/a=0$, showing the time symmetry visually.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.6.4 Stationary and static spacetimes.md
+priority: low
+graph: no
+manim: no
+summary: Correct and concise; the argument that $n_{(\alpha;\beta)}=t_{(\alpha}\mu_{,\beta)}$ projects to zero is right.
+- [Example] Add the Schwarzschild example: $g_{ta}=0$ and the $t$ = const slices have $K_{ab}=0$, whereas Kerr is stationary with $g_{t\phi}\neq0$ and is not static.
+- [Simplify] State the projection explicitly: $t_{(\alpha}\mu_{,\beta)}e^\alpha_ae^\beta_b=0$ because $t_\alpha e^\alpha_a=0$.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.6.5 Spherical space, moment of time symmetry.md
+priority: low
+graph: no
+manim: no
+summary: Correct and clear ($^3R=4m'/r^2$ gives $m'=4\pi r^2\rho$).
+- [Correctness] Symbol clash: a prime means $d/dr$ in $m'$, but $r'$ in the integral is a dummy integration variable. Rename the dummy variable (for example $\bar r$) so that $r'$ is not read as a derivative.
+- [Intuition] Note that outside the matter $m(r)=M$, so the slice is exactly a $t$ = const slice of Schwarzschild. Also note that $\int\rho\,4\pi r^2dr$ is not the proper-volume integral (which has the extra factor $(1-2m/r)^{-1/2}$), so $m$ includes the gravitational binding energy.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.6.6 Spherical space, empty and flat.md
+priority: medium
+graph: no
+manim: no
+summary: The algebra is correct ($2K_2(2K_1+K_2)=0$, the momentum constraint gives $2rK'+3K=0$), but the radial unit vector reuses the letter of the spacetime normal and the physical meaning is deferred.
+- [Simplify] Rename the radial unit vector $n_a=\partial_ar$ (for example $r_a$, as in 3.2.3), because $n$ denotes the hypersurface normal that defines $K_{ab}$ throughout the chapter.
+- [Simplify] Show the intermediate steps: $K^2-K^{ab}K_{ab}=(K_1+2K_2)^2-K_1^2-2K_2^2=2K_2(2K_1+K_2)$, and in the momentum constraint $(\tfrac13+1)K'+2K/r=0$.
+- [Links] Link "Section 3.13, Problem 1" to [[3.13 Problems]] and hint at the answer: a flat slice with $K\propto r^{-3/2}$ is the Painlevé–Gullstrand slicing of Schwarzschild, with $K_0r_0^{3/2}$ fixed by $M$.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.6.7 Conformally-flat space.md
+priority: low
+graph: yes
+manim: no
+summary: Correct (the effective-density formula follows from $^3R=-8\psi^{-5}\nabla^2\psi$), but there is no concrete solution.
+- [Example] Give the simplest solution: $\psi=1+M/(2r)$ is the $t$ = const slice of Schwarzschild in isotropic coordinates, and the Brill–Lindquist form $\psi=1+\sum_iM_i/(2|\mathbf x-\mathbf x_i|)$ gives multiple black holes.
+- [Graph] Plot $\psi(x,0,0)$ on $x\in[-8,8]$ for two Brill–Lindquist holes (for example $M_1=M_2=1$ at $x=\pm3$) and for the single-hole case, showing the punctures and $\psi\to1$ at infinity.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.7 Junction conditions and thin shells.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub with a good motivating paragraph and correct links.
+- [Links] The text cites Fig. 3.5, which is embedded in 3.7.1; add "see [[3.7.1 Notation and assumptions]]" or move the embed here, and link "Section 3.11" to [[3.11 Null shells]].
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.7.1 Notation and assumptions.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and clear setup of signed normal distance, the Heaviside and delta distributions, and jumps.
+- [Graph] Plot $\Theta(\ell)$, a smoothed $\delta(\ell)$, and a sample continuous metric component with a kink at $\ell=0$ on $\ell\in[-2,2]$, to preview why $[g]=0$ is needed while $[\partial g]\neq0$ is allowed.
+- [Simplify] Add the one-line check behind Eq. (3.46): $n^\alpha\partial_\alpha\ell=1$ and $n^\alpha n_\alpha=\varepsilon$ force $n_\alpha=\varepsilon\partial_\alpha\ell$.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.7.2 First junction condition.md
+priority: low
+graph: no
+manim: no
+summary: Correct and clear; the derivative $\partial_\gamma\Theta(\pm\ell)=\pm\varepsilon\delta(\ell)n_\gamma$ is right.
+- [Intuition] Add one sentence of physical meaning: if $[h_{ab}]\neq0$, observers on the two sides would measure different proper lengths and times for the same curve on $\Sigma$, so the surface would have no single geometry.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.7.3 Riemann tensor.md
+priority: low
+graph: no
+manim: no
+summary: Correct short derivation of the $\delta$-function part of the Riemann tensor, Eq. (3.51).
+- [Simplify] Say which terms of $R^\alpha{}_{\beta\gamma\delta}=\Gamma^\alpha_{\beta\delta,\gamma}-\Gamma^\alpha_{\beta\gamma,\delta}+\Gamma\Gamma-\Gamma\Gamma$ give the $\delta$ term, and that the $\Gamma\Gamma$ products contain only $\Theta^2=\Theta$ and $\Theta(\ell)\Theta(-\ell)=0$, so they are well defined.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.7.4 Surface stress-energy tensor.md
+priority: medium
+graph: no
+manim: no
+summary: All expressions check out ($[\Gamma]$, $A^\alpha{}_{\beta\gamma\delta}$, $A_{\alpha\beta}$, $A$), but the note is a chain of formulas with little guidance.
+- [Simplify] Add the intermediate substitution for $A^\alpha{}_{\beta\gamma\delta}$ (insert $[\Gamma^\alpha_{\beta\delta}]n_\gamma$ and $[\Gamma^\alpha_{\beta\gamma}]n_\delta$, and note that the $\kappa^\alpha{}_\beta n_\gamma n_\delta$ terms cancel) so readers can follow without redoing it.
+- [Intuition] Add an analogy: a surface charge makes $\mathbf E$ jump and $\nabla\cdot\mathbf E$ contain a $\delta$; similarly a thin shell makes $\partial g$ jump and the curvature contain a $\delta(\ell)$, whose coefficient is $S_{\alpha\beta}$.
+- [Structure] Add $\kappa_{\alpha\beta}$, $\kappa$, $A^\alpha{}_{\beta\gamma\delta}$, $A_{\alpha\beta}$ and $A$ to the physical-quantities table, because these are the note's main symbols.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.7.5 Second junction condition.md
+priority: medium
+graph: no
+manim: no
+summary: Correct derivation of the Lanczos–Israel relation (3.56), with all algebra checking out, but there is no example of the formula in use.
+- [Example] Add a one-paragraph example: a static shell of radius $R$ between a flat interior and a Schwarzschild exterior has $[K^\theta{}_\theta]=(\sqrt{1-2M/R}-1)/R$, giving $\sigma=(1-\sqrt{1-2M/R})/(4\pi R)\approx M/(4\pi R^2)$ for $R\gg M$. Alternatively, point forward to [[3.9 Thin-shell collapse]].
+- [Simplify] Mention that the first line, $[n_{\alpha;\beta}]=-[\Gamma^\gamma_{\alpha\beta}]n_\gamma$, uses $[n_{\alpha,\beta}]=0$, which follows from $n_\alpha=\varepsilon\partial_\alpha\ell$ with $\ell$ smooth.
+- [Links] Link "Section 3.13, Problem 4" to [[3.13 Problems]].
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.7.6 Summary.md
+priority: low
+graph: no
+manim: no
+summary: Accurate summary of the Darmois–Israel conditions and the Lanczos equation.
+- [Links] Link "Eq. (3.57)" to [[3.7.5 Second junction condition]] and "Section 3.11" to [[3.11 Null shells]].
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.8 Oppenheimer-Snyder collapse.md
+priority: medium
+graph: yes
+manim: yes
+summary: Physics and math are correct (the cycloid solves (3.59)–(3.60), and $\tilde E=\cos\chi_0$ leads to $M=\tfrac43\pi\rho R^3$), but one letter is reused for two quantities and the final step and the collapse picture are left implicit.
+- [Correctness] Symbol clash: $\mechanical{a}$ is the scale factor and $\mechanical{a^\alpha}$ is the four-acceleration in the same note (for example $K_{\tau\tau}=-a^\alpha n_\alpha$ next to $K^\theta{}_\theta=a^{-1}\cot\chi_0$). Rename the acceleration (for example $\alpha^\alpha$ or $\dot u^\alpha$) and update the table.
+- [Simplify] Show the final step to Eq. (3.67): $\cos^2\chi_0=\dot a^2\sin^2\chi_0+1-2M/R$, so $2M/R=\sin^2\chi_0(1+\dot a^2)=\tfrac{8\pi}{3}\rho a^2\sin^2\chi_0$. Also add the compact result $M=\tfrac12a_{\max}\sin^3\chi_0$.
+- [Graph] Plot $R(\tau)/M$ for the cycloid with $a_{\max}$ and $\chi_0$ chosen to give, say, $R_{\max}=10M$, together with the horizon line $R=2M$. Overlay the exterior time $T(\tau)$ from Eq. (3.63) to show $T\to\infty$ as $R\to2M$ while $\tau$ stays finite.
+- [Manim] Animate a shrinking dust ball in an Eddington–Finkelstein diagram: the surface worldline $R(\tau)$ crosses $r=2M$, the event horizon grows from the centre, and outgoing light rays from the surface become trapped.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.9 Thin-shell collapse.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct (the components of $S^a{}_b$, the integration to constant $m$, Eq. (3.70) and $R_{\max}$ all check out), with a good physical interpretation; the bound and unbound behaviour would be clearer with a plot.
+- [Graph] Plot $\dot R^2=\left(\frac{M}{m}+\frac{m}{2R}\right)^2-1$ against $R/m$ for $M/m=0.8,1,1.2$ on $R/m\in[0.2,10]$, marking $R_{\max}=m^2/[2(m-M)]$ for the bound case and $R=2M$.
+- [Simplify] Show the squaring step: $\beta_+=\beta_--m/R$, so $1+\dot R^2-2M/R=1+\dot R^2-2m\sqrt{1+\dot R^2}/R+m^2/R^2$, which gives Eq. (3.70).
+- [Intuition] State that taking $\beta_\pm>0$ assumes both sides are "normal" regions in which $r$ increases outward. Also note that $-m^2/(2R)$ is the Newtonian self-energy of a shell (with $G=1$), so Eq. (3.70) reduces to $M\approx m+\tfrac12m\dot R^2-m^2/(2R)$ for slow, weak-field motion.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/04 Lagrangian and Hamiltonian formulations of general relativity/4.0 Chapter introduction.md
+priority: low
+graph: no
+manim: no
+summary: Clear, faithful chapter overview; it only lacks navigation links to the sections it describes.
+- [Links] The prose names "Section 4.1", "Section 4.2" and "Section 4.3" as plain text; link them as [[4.1 Lagrangian formulation]], [[4.2 Hamiltonian formulation]] and [[4.3 Mass and angular momentum]] so the overview works as a roadmap.
+- [Intuition] Add one sentence explaining why a boundary term is needed (the Hilbert Lagrangian $R$ contains second derivatives of $g_{\alpha\beta}$), so the reader knows what to look for in 4.1.4 and 4.1.5.
+- [Structure] The file starts with a UTF-8 BOM (EF BB BF); save it as UTF-8 without BOM as the Obsidian skill requires.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/04 Lagrangian and Hamiltonian formulations of general relativity/4.1 Lagrangian formulation.md
+priority: low
+graph: no
+manim: no
+summary: Section hub with a correct list of links; no content change needed.
+- [Structure] No content change needed; only remove the leading UTF-8 BOM so the file is UTF-8 without BOM.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/04 Lagrangian and Hamiltonian formulations of general relativity/4.1.1 Mechanics.md
+priority: low
+graph: yes
+manim: yes
+summary: Correct and compact derivation of the Euler–Lagrange equation; a worked example and a picture of varied paths would make the fixed-endpoint condition (4.2) concrete.
+- [Example] After Eq. (4.3), add a one-line example, e.g. the harmonic oscillator $L=\tfrac12\dot q^2-\tfrac12\omega^2q^2$ giving $\ddot q+\omega^2q=0$, so the reader sees the abstract equation produce a familiar result.
+- [Graph] Plot, for the free particle $L=\tfrac12\dot q^2$ on $t\in[0,1]$ with $q(0)=0$, $q(1)=1$, the true path $q=t$ and varied paths $q=t+\epsilon\sin(\pi t)$ for $\epsilon=\pm0.2,\pm0.4$; add a second panel of $S(\epsilon)=\tfrac12+\tfrac{\pi^2}{4}\epsilon^2$ showing the stationary point at $\epsilon=0$.
+- [Manim] Animate a path whose interior wiggles while the endpoints stay pinned at $t_1$ and $t_2$, with a live readout of $S$ that is smallest on the true path; this shows directly why the boundary term $\partial L/\partial\dot q\,\delta q|_{t_1}^{t_2}$ vanishes.
+- [Structure] The file starts with a UTF-8 BOM; save as UTF-8 without BOM.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/04 Lagrangian and Hamiltonian formulations of general relativity/4.1.2 Field theory.md
+priority: low
+graph: no
+manim: no
+summary: Correct field-theory generalization with a correct Klein–Gordon example; mainly needs a link and one intermediate step.
+- [Links] "Gauss’ theorem (Section 3.3)" is plain text; link it to [[3.3 Gauss-Stokes theorem]] (the target exists in 03 Hypersurfaces).
+- [Simplify] In the second line of the $\delta S$ derivation, state explicitly that $\mathcal L^\alpha\delta q_{,\alpha}=(\mathcal L^\alpha\delta q)_{;\alpha}-\mathcal L^\alpha{}_{;\alpha}\delta q$ is the covariant product rule (valid because $\delta q_{,\alpha}=\delta q_{;\alpha}$ for a scalar), the field analogue of the integration by parts in 4.1.1.
+- [Example] Add the flat-spacetime limit of the final Klein–Gordon equation, $-\partial_t^2\psi+\nabla^2\psi-m^2\psi=0$, so the reader recognizes the curved-spacetime result.
+- [Structure] The file starts with a UTF-8 BOM; save as UTF-8 without BOM.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/04 Lagrangian and Hamiltonian formulations of general relativity/4.1.3 General relativity.md
+priority: low
+graph: no
+manim: no
+summary: Accurate statement of the full gravitational plus matter action; the role of each term is announced but not motivated.
+- [Intuition] Add a short sentence or table explaining the job of each term in Eq. (4.12): $S_H$ gives $G_{\alpha\beta}$, $S_B$ cancels the normal-derivative boundary term from $S_H$ (4.1.4–4.1.5), $S_0$ only renormalizes the value (4.1.7), $S_M$ gives $T_{\alpha\beta}$ (4.1.6), with wiki links to those notes.
+- [Simplify] The notation switches between $S[g;\phi]$ in Eq. (4.12) and $S[g,\phi]$ in the next paragraph; use one form.
+- [Intuition] Explain the sign factor $\varepsilon$ in Eq. (4.9) with the concrete boundary of Fig. 4.1 (two spacelike slices with $\varepsilon=-1$ and a timelike cylinder with $\varepsilon=+1$).
+- [Structure] The file starts with a UTF-8 BOM; save as UTF-8 without BOM.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/04 Lagrangian and Hamiltonian formulations of general relativity/4.1.4 Variation of the Hilbert term.md
+priority: medium
+graph: no
+manim: no
+summary: The derivation checks out step by step, but it is dense and one cross-reference points to the wrong section.
+- [Links] "completeness relations $g^{\alpha\beta}=\varepsilon n^\alpha n^\beta+h^{\alpha\beta}$ ... (see Section 3.1.1)" points to the wrong note: in this vault 3.1.1 is "Defining equations", and the completeness relations are in [[3.1.3 Induced metric]]; also link "Section 1.7" to [[1.7 Metric determinant]] and "Section 1.2" to [[1.2 Covariant differentiation]].
+- [Simplify] Before Eq. (4.16), show the one-line contraction $g^{\alpha\beta}[(\delta\Gamma^\mu_{\alpha\beta})_{;\mu}-(\delta\Gamma^\mu_{\alpha\mu})_{;\beta}]=(g^{\alpha\beta}\delta\Gamma^\mu_{\alpha\beta}-g^{\alpha\mu}\delta\Gamma^\beta_{\alpha\beta})_{;\mu}$ (metric compatibility), and the intermediate steps leading to $\not\!\delta v_\mu=g^{\alpha\beta}(\delta g_{\mu\beta,\alpha}-\delta g_{\alpha\beta,\mu})$, which the text currently only asserts.
+- [Intuition] Add a mechanics analogue for why second derivatives force a boundary term: $L=-\tfrac12q\ddot q$ differs from $\tfrac12\dot q^2$ by the total derivative $-\tfrac12\mathrm d(q\dot q)/\mathrm dt$, so its variation leaves a $\delta\dot q$ endpoint term that fixing $q$ alone cannot remove; this is exactly the role of the $\delta g_{\alpha\beta,\mu}n^\mu$ term in Eq. (4.18).
+- [Simplify] The phrase "covariant differentiation is defined with respect to the reference metric $g_{\alpha\beta}$" can be confused with the flat reference behind $K_0$; say "the unvaried (background) metric".
+- [Structure] The file starts with a UTF-8 BOM; save as UTF-8 without BOM.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/04 Lagrangian and Hamiltonian formulations of general relativity/4.1.5 Variation of the boundary term.md
+priority: low
+graph: no
+manim: no
+summary: Correct and short; one step in the variation of $K$ is skipped without justification.
+- [Simplify] In $\delta K=-h^{\alpha\beta}\delta\Gamma^\gamma_{\alpha\beta}n_\gamma$, explain why $h^{\alpha\beta}\delta n_{\alpha,\beta}$ drops: $\delta n_\alpha\propto n_\alpha n^\mu n^\nu\delta g_{\mu\nu}$ vanishes on $\partial\mathcal V$, so its tangential derivatives vanish too; also note that $\delta h^{\alpha\beta}=0$ there.
+- [Simplify] State in one sentence that the first two terms in the second line of $\delta K$ vanish because they are tangential derivatives ($h^{\alpha\beta}\delta g_{\mu\alpha,\beta}$ contains only $e^\beta_b\partial_\beta$), mirroring the argument already given in 4.1.4.
+- [Links] Link "Section 3.4" to [[3.4.3 Extrinsic curvature]] and "Eq. (4.18)" to [[4.1.4 Variation of the Hilbert term]].
+- [Structure] The file starts with a UTF-8 BOM; save as UTF-8 without BOM.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/04 Lagrangian and Hamiltonian formulations of general relativity/4.1.6 Variation of the matter action.md
+priority: low
+graph: no
+manim: no
+summary: Correct derivation of $T_{\alpha\beta}$ and of the Einstein equations; the Klein–Gordon checks are left to the reader.
+- [Example] Show the short computation behind "It is easy to check": $\partial\mathcal L/\partial g^{\alpha\beta}=-\tfrac12\psi_{,\alpha}\psi_{,\beta}$, so Eq. (4.21) gives the stated $T_{\alpha\beta}$.
+- [Example] Add the flat-space energy density $T_{00}=\tfrac12(\dot\psi^2+|\nabla\psi|^2+m^2\psi^2)\ge0$ as evidence that the sign convention in Eq. (4.21) is physically sensible.
+- [Example] Carry out the suggested consistency check in one line: $T^{\alpha\beta}{}_{;\beta}=(g^{\mu\nu}\psi_{;\mu\nu}-m^2\psi)\psi^{,\alpha}$, so conservation implies the Klein–Gordon equation wherever $\psi^{,\alpha}\neq0$.
+- [Simplify] Before Eq. (4.23), write the combined integrand $(G_{\alpha\beta}/16\pi-T_{\alpha\beta}/2)\delta g^{\alpha\beta}$ so the origin of the factor $8\pi$ is visible.
+- [Structure] The file starts with a UTF-8 BOM; save as UTF-8 without BOM.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/04 Lagrangian and Hamiltonian formulations of general relativity/4.1.7 Nondynamical term.md
+priority: medium
+graph: yes
+manim: no
+summary: The flat-space divergence $8\pi R(t_2-t_1)$ is correct, but the note uses $R$ for two quantities and the subtraction is only described, not demonstrated.
+- [Correctness] Symbol clash: $R$ is the Ricci scalar ("Then $R=0$") and $\mechanical{R}$ is the cylinder radius ("$r=R$", "$R\to\infty$") in the same note; rename the radius (e.g. $r_0$) and update the table.
+- [Simplify] "Because $S_0$ depends only on the induced metric $h_{ab}$ (through the factor $|h|^{1/2}$ in the integrand)" is incomplete: $K_0$ also depends on $h_{ab}$, because it is fixed by embedding the boundary geometry in flat spacetime; say so, because that is why $\delta S_0=0$ when $h_{ab}$ is held fixed.
+- [Simplify] Show the two-line check $K=n^\alpha{}_{;\alpha}=r^{-2}\partial_r(r^2)=2/r$ and the integral $\int\mathrm dt\oint(2/R)R^2\sin\theta\,\mathrm d\theta\,\mathrm d\phi=8\pi R\,\Delta t$.
+- [Example] Add a Schwarzschild boundary example: on the cylinder $r=R$, $K=2\sqrt f/R+M/(R^2\sqrt f)$ with $f=1-2M/R$, $|h|^{1/2}=\sqrt f R^2\sin\theta$ and $K_0=2/R$, so the boundary contribution $(S_B-S_0)/\Delta t=\tfrac12(2Rf+M-2R\sqrt f)\to-M/2$ stays finite while $S_B$ alone grows like $R$.
+- [Graph] Plot the boundary contribution per unit time versus $R/M\in[3,50]$ with $M=1$: unsubtracted $S_B/\Delta t=(2R-3M)/2$ (diverges) and subtracted $(S_B-S_0)/\Delta t=\tfrac12(2R-3M-2R\sqrt{1-2M/R})$ (approaches $-M/2$).
+- [Structure] The file starts with a UTF-8 BOM; save as UTF-8 without BOM.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/04 Lagrangian and Hamiltonian formulations of general relativity/4.1.8 Bianchi identities.md
+priority: low
+graph: no
+manim: no
+summary: Correct derivation of the contracted Bianchi identities, but the key logical point (an identity, not a field equation) is not spelled out.
+- [Intuition] Explain that here $\delta S_G=0$ holds for every metric because a coordinate change cannot change the value of a scalar integral; therefore $G^{\alpha\beta}{}_{;\beta}=0$ is an identity, not a consequence of the field equations, and it is what forces $T^{\alpha\beta}{}_{;\beta}=0$ on the matter side.
+- [Simplify] Between Eq. (4.27) and the next display, note that $G_{\alpha\beta}(\epsilon^{\alpha;\beta}+\epsilon^{\beta;\alpha})=2G^{\alpha\beta}\epsilon_{\alpha;\beta}$ by the symmetry of $G$, which is why the prefactor changes from $16\pi$ to $8\pi$.
+- [Structure] Add $\epsilon^\alpha$ (infinitesimal displacement field) to the physical-quantities table and remove the leading UTF-8 BOM.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/04 Lagrangian and Hamiltonian formulations of general relativity/4.2 Hamiltonian formulation.md
+priority: low
+graph: no
+manim: no
+summary: Section hub with a correct list of links; no content change needed.
+- [Structure] No content change needed; only remove the leading UTF-8 BOM so the file is UTF-8 without BOM.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/04 Lagrangian and Hamiltonian formulations of general relativity/4.2.1 Mechanics.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and clear derivation of Hamilton's equations; a phase-space example would help.
+- [Example] Add the harmonic oscillator: $p=\dot q$, $H=\tfrac12p^2+\tfrac12\omega^2q^2$, giving $\dot q=p$, $\dot p=-\omega^2q$, and point out that the endpoint values of $p$ are not fixed, which is why only $\delta q$ vanishes at $t_1,t_2$.
+- [Graph] Plot the phase portrait of the oscillator in the $(q,p)$ plane: ellipses $\tfrac12p^2+\tfrac12q^2=E$ for $E=0.5,1,2$ with $\omega=1$, plus the vector field $(p,-q)$, to show Hamilton's equations as flow along curves of constant $H$.
+- [Structure] The file starts with a UTF-8 BOM; save as UTF-8 without BOM.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/04 Lagrangian and Hamiltonian formulations of general relativity/4.2.2 3 + 1 decomposition.md
+priority: medium
+graph: no
+manim: yes
+summary: The 3+1 results (4.36)–(4.38) are correct, but lapse and shift remain abstract and the "easy to check" steps are skipped.
+- [Intuition] State the physical meaning: $N\,\mathrm dt$ is the proper time elapsed along the normal between $\Sigma_t$ and $\Sigma_{t+\mathrm dt}$, and $N^a\mathrm dt$ is how far the spatial coordinates drift sideways relative to the normal observers.
+- [Simplify] Spell out the two "easy to check" claims: $t^\alpha\partial_\alpha t=1$ follows from $t^\alpha=(\partial x^\alpha/\partial t)_y$, and (4.36) is compatible with (4.31) because $t^\alpha\partial_\alpha t=Nn^\alpha(-n_\alpha/N)+N^ae^\alpha_a\partial_\alpha t=1+0$.
+- [Example] Add a concrete metric: Schwarzschild in Painlevé–Gullstrand coordinates, $\mathrm ds^2=-\mathrm dt^2+(\mathrm dr+\sqrt{2M/r}\,\mathrm dt)^2+r^2\mathrm d\Omega^2$, has $N=1$, $N^r=\sqrt{2M/r}$ and flat $h_{ab}$, in contrast with the static slicing $N=\sqrt{1-2M/r}$, $N^a=0$.
+- [Manim] Animate a stack of slices $\Sigma_t$ with a congruence curve crossing them; at each step decompose the tangent $t^\alpha$ into the normal piece $Nn^\alpha$ and the sideways shift $N^ae^\alpha_a$, showing that changing $N$ and $N^a$ changes the slicing and coordinates but not the spacetime.
+- [Structure] The file starts with a UTF-8 BOM; save as UTF-8 without BOM.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/04 Lagrangian and Hamiltonian formulations of general relativity/4.2.3 Field theory.md
+priority: medium
+graph: no
+manim: no
+summary: The field Hamilton equations and the Klein–Gordon example check out, but the example is left in an opaque form with $g^{tt}$ and $\sqrt{-g}$.
+- [Simplify] In the Klein–Gordon example use $g^{tt}=-1/N^2$ and $\sqrt{-g}=N\sqrt h$ to write $p=\sqrt h\,\dot\psi/N$ and $\mathcal H=N\left[\frac{p^2}{2\sqrt h}+\frac{\sqrt h}{2}(h^{ab}\psi_{,a}\psi_{,b}+m^2\psi^2)\right]$, which makes positivity and the role of the lapse obvious.
+- [Example] Add the flat-space check ($N=1$, $h_{ab}=\delta_{ab}$): $\dot\psi=p$, $\dot p=\nabla^2\psi-m^2\psi$, hence $\ddot\psi=\nabla^2\psi-m^2\psi$, replacing "It is easy to check".
+- [Intuition] Explain why $\mathcal H$ is kept as a density: it integrates with plain $\mathrm d^3y$ in Eq. (4.42), and it carries the factor $N$, so the Hamiltonian depends on the chosen time flow.
+- [Links] Link "Gauss’ theorem" to [[3.3 Gauss-Stokes theorem]] and the foliated region of Fig. 4.4 forward to [[4.2.4 Foliation of the boundary]], where $S_t$ and $\mathcal B$ are described in detail.
+- [Structure] The file starts with a UTF-8 BOM; save as UTF-8 without BOM.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/04 Lagrangian and Hamiltonian formulations of general relativity/4.2.4 Foliation of the boundary.md
+priority: low
+graph: no
+manim: no
+summary: Correct geometric bookkeeping with a helpful Table 4.1; it would benefit from a concrete example and a corrected cross-reference.
+- [Links] "The three-dimensional completeness relations ... (see Section 3.1.1)": in this vault the completeness relations are in [[3.1.3 Induced metric]], not 3.1.1 "Defining equations"; fix the reference and link it.
+- [Structure] Move Table 4.1 to the start of the note (or repeat it there) so the reader has the $\Sigma_t/S_t/\mathcal B$ dictionary before the derivations.
+- [Example] Add the flat-space example: $\Sigma_t$ the $t=$ const slices, $S_t$ the sphere $r=R$, $\theta^A=(\theta,\phi)$, $\sigma_{AB}=R^2\mathrm{diag}(1,\sin^2\theta)$, $r_a=\partial_ar$, $k=2/R$, $N=1$, $\sqrt{-\gamma}=R^2\sin\theta$.
+- [Simplify] State explicitly the assumption $n_\alpha r^\alpha=0$ on $\mathcal B$ (the slices meet the boundary orthogonally), which is what allows the curves $\beta$ to have tangent $n^\alpha$ and gives Eq. (4.53).
+- [Structure] The file starts with a UTF-8 BOM; save as UTF-8 without BOM.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/04 Lagrangian and Hamiltonian formulations of general relativity/4.2.5 Gravitational action.md
+priority: medium
+graph: no
+manim: no
+summary: Signs and cancellations in the 3+1 split of the action are correct, but the reuse of $n^\alpha$, $h_{ab}$, $y^a$ for both $\partial\mathcal V$ and $\Sigma_t$ makes the first part hard to follow.
+- [Simplify] The opening equation uses $n^\alpha$, $h_{ab}$, $K$, $y^a$ for the boundary $\partial\mathcal V$, and the note then redefines them for $\Sigma_t$; give the generic boundary quantities distinct temporary names (or write the three pieces $\Sigma_{t_2}$, $\Sigma_{t_1}$, $\mathcal B$ directly) to avoid the clash the text itself warns about.
+- [Simplify] Explain the sign bookkeeping on $\Sigma_{t_1}$ and $\Sigma_{t_2}$ explicitly: $\varepsilon=-1$ on both, and the outward normal is $+n$ on $\Sigma_{t_2}$ but $-n$ on $\Sigma_{t_1}$, giving $-2\int_{\Sigma_{t_2}}K\sqrt h$ and $+2\int_{\Sigma_{t_1}}K\sqrt h$.
+- [Intuition] Point out the meaning of $r_{\alpha;\beta}n^\alpha n^\beta=-r_\alpha a^\alpha$ with $a^\alpha=n^\beta\nabla_\beta n^\alpha$ the acceleration of the normal observers, so $\mathcal K+r_{\alpha;\beta}n^\alpha n^\beta=k$ reads "boundary curvature minus the acceleration term equals the two-surface curvature".
+- [Example] Add the flat-space check of Eq. (4.55): with $t=$ const slices and $S_t$ a sphere of radius $R$, ${}^3R=K_{ab}=0$, $N=1$ and $k=k_0=2/R$, so $S_G=0$ exactly, as claimed.
+- [Links] Link "Section 3.5.3" to [[3.5.3 Ricci scalar]] and "Eq. (4.12)" to [[4.1.3 General relativity]].
+- [Structure] The file starts with a UTF-8 BOM; save as UTF-8 without BOM.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/04 Lagrangian and Hamiltonian formulations of general relativity/4.2.6 Gravitational Hamiltonian.md
+priority: medium
+graph: no
+manim: no
+summary: Eqs. (4.57), (4.59), (4.61) and (4.62) check out, but the table mislabels the Hamiltonian density and the constraint structure is not made visible.
+- [Correctness] The table describes $\mathcal H_G$ as "The gravitational energy density"; this is misleading because the volume part $N(K^{ab}K_{ab}-K^2-{}^3R)-2N_a(K^{ab}-Kh^{ab})_{|b}$ is a combination of the constraints and vanishes for vacuum solutions (4.2.8–4.2.9); describe it as the volume (constraint) part of the Hamiltonian density.
+- [Simplify] Show the inversion leading to Eq. (4.62): the trace of (4.59) gives $16\pi p=-2\sqrt h\,K$, hence $\sqrt h\,K^{ab}=16\pi(p^{ab}-\tfrac12ph^{ab})$.
+- [Intuition] After Eq. (4.61), note that the bulk integrand is $-N\hat{\mathcal C}-2N^a\hat{\mathcal C}_a$ with the constraints defined in 4.2.7, so the lapse and shift act as Lagrange multipliers and on solutions only the boundary term survives.
+- [Example] Preview the payoff: for Schwarzschild with static slicing ($N=\sqrt f$, $f=1-2M/R$, $N^a=0$, $k=2\sqrt f/R$, $k_0=2/R$, $\sqrt\sigma=R^2\sin\theta$) the boundary term gives $H_G=-R(f-\sqrt f)\to M$ as $R\to\infty$, linking forward to [[4.2.9 Value of the Hamiltonian for solutions]].
+- [Structure] The file starts with a UTF-8 BOM; save as UTF-8 without BOM.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/04 Lagrangian and Hamiltonian formulations of general relativity/4.2.7 Variation of the Hamiltonian.md
+priority: high
+graph: no
+manim: no
+summary: The long variation is essentially correct (key steps re-derived), but it is very dense, the $S_t$ boundary terms use $h^{ab}$ where the two-surface projector is meant, and the constraint index notation is inconsistent.
+- [Correctness] The "three-dimensional version of Eq. (4.17)" and $\delta k=\tfrac12h^{ab}\delta h_{ab,c}r^c$ should use the projector onto $S_t$, $\sigma^{ab}=\sigma^{AB}e^a_Ae^b_B$, not the full $h^{ab}=r^ar^b+\sigma^{ab}$ (the $r^ar^br^c\delta h_{ab,c}$ piece does not vanish in general, exactly as $h^{\alpha\beta}$ in Eq. (4.17) is the boundary projector); the cancellation between $\delta_h\hat H_\Sigma$ and $\delta_h\hat H_S$ is unaffected because both terms change the same way.
+- [Structure] The closing sentence defines "$\mathcal C^a\equiv\hat{\mathcal C}^a/(16\pi)$" but Eqs. (4.65) and (4.73) use the covector $\hat{\mathcal C}_a$, $\mathcal C_a$; use $\mathcal C_a$ consistently.
+- [Simplify] Write the three-dimensional curvature as ${}^3R^{ab}$ and ${}^3G^{ab}$ instead of $R^{ab}$ and $G^{ab}$, since this chapter already uses $R_{\alpha\beta}$ and $G_{\alpha\beta}$ for the four-dimensional tensors.
+- [Structure] Add a short roadmap at the top (vary $N,N^a$ → constraints; vary $p^{ab}$ → $\mathcal H_{ab}$; vary $h_{ab}$ → $\mathcal P^{ab}$; boundary terms cancel because $\delta h_{ab}=\delta N=\delta N^a=0$ on $S_t$) and fold the long $\delta_h$ algebra into collapsible callouts, keeping (4.64) and (4.69)–(4.73) visible.
+- [Intuition] State after Eq. (4.70) that $\mathcal H_{ab}=2NK_{ab}+2N_{(a|b)}$ by Eq. (4.62), so the Hamilton equation $\dot h_{ab}=\mathcal H_{ab}$ reproduces Eq. (4.57); this shows at once that the Hamiltonian is consistent with the Lagrangian definition of $K_{ab}$.
+- [Structure] The file starts with a UTF-8 BOM; save as UTF-8 without BOM.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/04 Lagrangian and Hamiltonian formulations of general relativity/4.2.8 Hamilton's equations.md
+priority: medium
+graph: no
+manim: no
+summary: Faithful and correct transcription (Eqs. 4.74-4.79 check out for Poisson's sign convention $K_{ab}=n_{\alpha;\beta}e^\alpha_ae^\beta_b$), but it reads as a terse derivation with many references to equations that live in other notes.
+- [Structure] Add a short numbered "3+1 recipe" box after Eq. (4.76): (1) choose $N$, $N^a$; (2) solve the constraints (4.77) for initial $h_{ab}$, $K_{ab}$; (3) evolve with (4.78)-(4.79); and state that the evolution preserves the constraints (Bianchi identities), which explains why only the initial data are constrained.
+- [Intuition] After Eq. (4.75), explain why $N$ and $N^a$ have no evolution equations: they appear without time derivatives, so they act as Lagrange multipliers whose variation yields the constraints $\mathcal C=0$, $\mathcal C_a=0$ (the gauge freedom of choosing the foliation).
+- [Links] Link the cited material: Eq. (4.73) to [[4.2.7 Variation of the Hamiltonian]], Eqs. (4.57)/(4.62) to [[4.2.5 Gravitational action]]/[[4.2.6 Gravitational Hamiltonian]], Eq. (4.37) to [[4.2.2 3 + 1 decomposition]], and "Section 4.5, Problem 4" to [[4.5 Problems#Problem 4]].
+- [Simplify] Note in one sentence that Eq. (4.78) is the definition of $K_{ab}$ rearranged ($K_{ab}=\frac{1}{2N}(\dot h_{ab}-N_{a|b}-N_{b|a})$), and that this $K_{ab}$ has the opposite sign to the MTW/numerical-relativity convention, so readers comparing with ADM codes are not confused by the signs in (4.79).
+- [Structure] The physical-quantities table omits $\mathcal C$, $\mathcal C_a$, $\mathcal H_{ab}$, $\mathcal P^{ab}$ and $\mathcal L_N$, which carry the main equations; add them (and fix the typo "constraints equations" to "constraint equations").
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/04 Lagrangian and Hamiltonian formulations of general relativity/4.2.9 Value of the Hamiltonian for solutions.md
+priority: low
+graph: no
+manim: no
+summary: Short, correct note; Eq. (4.80) is consistent with the later ADM and angular-momentum definitions, but it does not show why the volume term drops out.
+- [Simplify] Add one line showing the mechanism: the volume part of $H_G$ is lapse and shift multiplied by the constraint densities $\mathcal C$, $\mathcal C_a$, so it vanishes on solutions of (4.77), leaving only the $S_t$ term.
+- [Intuition] Add a sentence that this is the general-relativity analogue of Gauss's law: the energy of a solution is read off from the fields on the boundary, which is exactly what [[4.3.1 Hamiltonian definitions]] exploits.
+- [Structure] The table lists $\theta^A$ but not $\sigma$ (determinant of $\sigma_{AB}$) or the surface $S_t$; add them, and link Eq. (4.61) to [[4.2.6 Gravitational Hamiltonian]].
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/04 Lagrangian and Hamiltonian formulations of general relativity/4.3 Mass and angular momentum.md
+priority: low
+graph: no
+manim: no
+summary: Hub note with correct links to all six subsections.
+- [Structure] No change needed; optionally add a few words after each link (e.g. "ADM: spatial infinity", "Bondi-Sachs: null infinity").
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/04 Lagrangian and Hamiltonian formulations of general relativity/4.3.1 Hamiltonian definitions.md
+priority: medium
+graph: no
+manim: no
+summary: Correct and well structured, but the key idea (mass = Hamiltonian for asymptotic time translations, angular momentum = minus the Hamiltonian for rotations) is buried in long paragraphs.
+- [Structure] Put the two definitions side by side in a small table or callout: generator, $(N,N^a)$ choice, resulting formula (4.81) vs (4.82), and the sign convention, so the parallel with Noether charges (energy for $\partial_t$, angular momentum for $\partial_\phi$) is visible.
+- [Intuition] Explain why the subtraction $k_0$ is needed: in flat space $k=2/R$ and $\oint k\sqrt\sigma\,\mathrm d^2\theta=8\pi R$ diverges as $R\to\infty$, so subtracting the flat embedding makes $M=0$ for Minkowski and finite otherwise.
+- [Example] Point forward to [[4.3.2 Mass and angular momentum for stationary, axially symmetric spacetimes]] with the one-line Schwarzschild check ($k-k_0\approx-2m/R^2$ times $4\pi R^2$ gives $M=m$).
+- [Structure] The table gives $\energy{H_G^{\mathrm{solution}}}$ unit "—" while 4.2.9 gives $\unit{\mathrm m}$; state that its dimension depends on the generator (m for translations, m$^2$ for rotations), and add $\phi^a$ and $\sqrt{\sigma}$, which the formulas use.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/04 Lagrangian and Hamiltonian formulations of general relativity/4.3.2 Mass and angular momentum for stationary, axially symmetric spacetimes.md
+priority: medium
+graph: no
+manim: no
+summary: All intermediate results verified ($k=2(1-2m/R)/R$, $k-k_0=-2m/R^2$, $g^{t\phi}=-2j/r^3$, $\Gamma^t_{\phi r}=-3j\sin^2\theta/r^2$, $J=j$), but the "brief calculations" are skipped.
+- [Correctness] The table calls $K_{\phi r}$ a "mixed coordinate component"; it is a fully covariant off-diagonal component ("mixed" normally means one upper and one lower index). Reword to "off-diagonal covariant component".
+- [Simplify] Show the "brief calculation" of $k$: $k=\frac{1}{\sqrt h}\partial_r(\sqrt h\,r^r)$ with $\sqrt h\approx(1+3m/r)r^2\sin\theta$ and $r^r\approx1-m/r$, so $\sqrt h\,r^r=(r^2+2mr)\sin\theta$ and $k=\frac{2}{r}(1-\frac{2m}{r})$.
+- [Simplify] Show the two contributions $\Gamma^t_{\phi r}=\frac12(g^{tt}\partial_rg_{t\phi}+g^{t\phi}\partial_rg_{\phi\phi})=-\frac{j\sin^2\theta}{r^2}-\frac{2j\sin^2\theta}{r^2}$ and the final integral $\frac{3j}{4}\int_0^\pi\sin^3\theta\,\mathrm d\theta=\frac{3j}{4}\cdot\frac43=j$, so the factor 3 can be followed.
+- [Intuition] Add that Eq. (4.83) is the large-$r$ limit of the Kerr metric with $m=M$, $j=Ma$ (link the Kerr note if one exists), so the result $J=j$ has an obvious physical anchor.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/04 Lagrangian and Hamiltonian formulations of general relativity/4.3.3 Komar formulae.md
+priority: medium
+graph: no
+manim: no
+summary: Derivations verified (including $\Gamma^t_{rt}=m(1+2m/r)/r^2$ and the factors in Eqs. 4.89-4.90), but the chain from surface to volume integral is dense and lacks a physical example.
+- [Example] Add a worked check of Eq. (4.89) for static dust ($T=-\rho$, $n\cdot\xi_{(t)}\approx-1$): $(T_{\alpha\beta}-\frac12Tg_{\alpha\beta})n^\alpha\xi^\beta_{(t)}=\rho/2$, so $M=\int\rho\sqrt h\,\mathrm d^3y$; then mention [[4.5 Problems#Problem 6]] ($\rho+3p$: pressure gravitates).
+- [Intuition] Explain why $J$ carries $1/16\pi$ while $M$ carries $-1/8\pi$ (the well-known Komar factor-of-2 mismatch), and that the normalizations are fixed here by matching to $k-k_0$ and $K_{ab}\phi^ar^b$.
+- [Intuition] Sharpen the closing claim that only stationary, axially symmetric spacetimes allow hypersurface integrals: the Komar mass needs only the timelike Killing vector (stationarity), and $J$ only the axial Killing vector.
+- [Simplify] In the first derivation state why $\xi^\alpha_{(t);\beta}=\Gamma^\alpha_{\beta t}$ (the components of $\xi_{(t)}=\partial_t$ are constant) and that the $g^{t\phi}$ contribution to $\Gamma^t_{rt}$ is $O(j^2)$ and dropped.
+- [Links] Link "Section 3.2.3", "Section 3.3.3" and "Section 1.13, Problem 9" to the corresponding notes of this book, and "Section 5.5.3" to the black-hole mechanics note.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/04 Lagrangian and Hamiltonian formulations of general relativity/4.3.4 Bondi-Sachs mass.md
+priority: medium
+graph: no
+manim: yes
+summary: Correct but very short; the difference between the "spatial infinity" and "null infinity" limits is stated rather than shown.
+- [Manim] Animate on a $(r,t)$ diagram the spheres $S(t,r)$ moving to large $r$ along a horizontal line $t=$ const (spatial infinity, $u\to-\infty$) and along a $45^\circ$ line $u=$ const (null infinity), with an outgoing radiation shell, to show which limit crosses the radiation.
+- [Intuition] Add that $M_{\mathrm{ADM}}(t)$ is in fact independent of $t$ (shown in the Vaidya note), whereas $M_{\mathrm{BS}}(u)$ genuinely depends on $u$; the notation of Eqs. (4.91)-(4.92) otherwise suggests both evolve.
+- [Simplify] State that $u=t-r$ is the flat-space form and that in curved spacetime one uses $t-r^*$ (as in [[4.3.5 Distinction between ADM and Bondi-Sachs masses -  Vaidya spacetime]]).
+- [Example] Give a concrete scale for Eq. (4.93): GW150914 radiated about $3\,M_\odot$ of Bondi mass within a fraction of a second, while the ADM mass stayed at the initial total of about $65\,M_\odot$.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/04 Lagrangian and Hamiltonian formulations of general relativity/4.3.5 Distinction between ADM and Bondi-Sachs masses -  Vaidya spacetime.md
+priority: medium
+graph: yes
+manim: yes
+summary: Calculations verified ($G_{uu}$, $n_\alpha$, $h_{ab}$, exact $k=2/(R\sqrt{1+2m/R})$, $T_{uu}=-T_u{}^r$) and the paradox discussion is good, but two symbols are reused with different meanings.
+- [Correctness] Symbol clash for $t$: in $u=t-r-2M\ln(r/2M-1)$ it is the Schwarzschild time, but later $t\equiv u+r$ defines the slicing time, which differs from it by $2M\ln(r/2M-1)$; rename one (e.g. $t_s$ for Schwarzschild time) and note the difference.
+- [Correctness] Symbol clash for $M$: it denotes the constant Schwarzschild mass in the definition of $u$ and also the surface functional $M(S)$, while the table lists only "original mass"; rename $M(S)$ (e.g. $\mathcal M(S)$) or add it to the table.
+- [Graph] Plot a model mass function $m(u)=m_0-\frac{\Delta m}{2}[1+\tanh(u/\tau)]$ ($m_0=1$, $\Delta m=0.3$, $\tau=1$, $u\in[-6,6]$) together with the constant $M_{\mathrm{ADM}}=m(-\infty)=m_0$ and $M_{\mathrm{BS}}(u)=m(u)$.
+- [Manim] Animate outgoing null shells on a $(r,t)$ diagram with a constant-$t$ slice and a constant-$u$ null cone: the $t$-slice crosses all emitted radiation (ADM constant), the $u$-cone misses earlier radiation (Bondi mass decreasing); this complements Fig. 4.5.
+- [Intuition] Note that $\ell^\alpha$ is null, so it is not a normalized four-velocity; the "energy density" $\rho$ is defined relative to the chosen normalization $\ell_\alpha=-\partial_\alpha u$.
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/04 Lagrangian and Hamiltonian formulations of general relativity/4.3.6 Transfer of mass and angular momentum.md
+priority: low
+graph: no
+manim: no
+summary: Clear dust example and correct final results for $\Delta M$ and $\Delta J$, with one sign slip in the divergence identity.
+- [Correctness] In $\varepsilon^\alpha{}_{;\alpha}=-T^{\alpha\beta}{}_{;\alpha}\xi_{(t)\beta}+T^{\alpha\beta}\xi_{(t)\beta;\alpha}$ the second term must carry a minus sign, $-T^{\alpha\beta}\xi_{(t)\beta;\alpha}$ (both terms vanish, so the conclusion is unchanged).
+- [Simplify] State that the second term vanishes because $T^{\alpha\beta}$ is symmetric while $\xi_{\beta;\alpha}$ is antisymmetric; the text mentions only the antisymmetry.
+- [Example] Add a one-line test-particle check: a single particle of mass $m$ crossing $\Sigma$ transfers $\Delta M=m\tilde E$ and $\Delta J=m\tilde L$, connecting to the geodesic constants of motion (link the Schwarzschild/Kerr geodesic notes if present).
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/04 Lagrangian and Hamiltonian formulations of general relativity/4.4 Bibliographical notes.md
+priority: low
+graph: no
+manim: no
+summary: Reference list, transcribed faithfully.
+- [Links] Link the in-text references "Section 4.2.4", "Section 4.2.8", "Sections 4.3.3 and 4.3.5", "Section 4.3.4" and "Problem 7" to [[4.2.4 Foliation of the boundary]], [[4.2.8 Hamilton's equations]], [[4.3.3 Komar formulae]], [[4.3.5 Distinction between ADM and Bondi-Sachs masses -  Vaidya spacetime]], [[4.3.4 Bondi-Sachs mass]] and [[4.5 Problems#Problem 7]].
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/04 Lagrangian and Hamiltonian formulations of general relativity/4.5 Problems.md
+priority: low
+graph: no
+manim: no
+summary: Exercise list; the checked statements (Problem 5 result, Problem 6(b) $\rho+3p$ factor, Problem 8(c) energy and angular-momentum fluxes) are consistent.
+- [Structure] Letters are reused across problems ($\rho$ = inner radius in P3, fluid density in P6, scalar source in P8; $\ell$ = proper distance in P7, multipole index in P8; $m$ = mass and azimuthal index); add a short remark or per-problem quantity notes so the single table is not ambiguous, and give $\lambda$ the unit "arbitrary" rather than m.

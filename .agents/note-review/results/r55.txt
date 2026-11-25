@@ -1,0 +1,268 @@
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/09 Unified Theories/9.3 Coupling-Constant Unification.md
+priority: medium
+graph: yes
+manim: no
+summary: A careful leading-log derivation whose coefficients (9.3.10), (9.3.13), (9.3.20) and both figures check out numerically, but it has a hypercharge-normalization slip in (9.3.9), a rounding mismatch for the unification scale, and dated inputs.
+- [Correctness] In (9.3.9), with the vault convention $Q=I_3+\tfrac12 Y$ of (6.3.6), $\tfrac12[\operatorname{tr}(Y_{\mathrm L}^2)+\operatorname{tr}(Y_{\mathrm R}^2)]=20/3$ per generation, not $5/3$; the traces must be of $(Y/2)^2$, i.e. write $\tfrac12[\operatorname{tr}(Y_{\mathrm L}/2)^2+\operatorname{tr}(Y_{\mathrm R}/2)^2]=\tfrac53 n_g$ so that $4\pi b_Y=-20n_g/9$ follows.
+- [Correctness] (9.3.15): solving (9.3.13) with $\alpha^{-1}=128.957$, $\alpha_s^{-1}=8.446$ gives $\mechanical{u}=1.45\times10^{15}\,\mathrm{GeV}$ ($\log_{10}u=15.161$, exactly the endpoint used in Fig. 9.3), not $1.44\times10^{15}$; state 1.45 or note the rounding.
+- [Correctness] Inputs are dated: current PDG values are $\alpha_s(M_Z^2)=0.1180\pm0.0009$, $M_Z=91.1876\,\mathrm{GeV}$, and $M_W\approx80.37\,\mathrm{GeV}$ gives $x_W^{(\mathrm{os})}=1-M_W^2/M_Z^2\approx0.2232$ rather than 0.2226 in (9.3.22); add a dated-values callout and recompute $u$ and (9.3.21).
+- [Intuition] After (9.3.21), compare also with the $\overline{\mathrm{MS}}$ value $\sin^2\hat\theta_W(M_Z)\approx0.2312$, which is the scheme closer to the leading-log running, and say explicitly that the gap 0.203 vs 0.231 is many standard deviations; this makes the "quantitative failure" concrete.
+- [Graph] Extend Fig. 9.3 with dashed SUSY curves from Table 9.2 ($4\pi\tilde b=(9,6,0)-2n_g+(0,-1/2,-3/10)N_H$, $n_g=3$, $N_H=2$, starting at $M_Z$ from measured $\alpha_i^{-1}(M_Z)\approx(59.0,29.6,8.47)$) on the same axes $\log_{10}Q\in[2,17]$, so the near-miss vs near-meeting is visible.
+- [Structure] All Gauge Theories notes in this batch except the Contents page carry a committed UTF-8 BOM; run the skill's formatter over the folder to strip it.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/09 Unified Theories/9.4 Nucleon Decay.md
+priority: medium
+graph: yes
+manim: no
+summary: Clear dimensional estimate (9.4.1) that reproduces about $10^{34}$ years, but the detector and experimental-limit numbers are outdated or misstated and the physical-quantities table reuses $B$.
+- [Correctness] "Super-Kamiokande ... has a fiducial volume of $32{,}000\,\mathrm{m^3}$": 32 kt is the inner-detector volume; the standard fiducial volume is 22.5 kt ($22{,}500\,\mathrm{m^3}$) of the 50 kt tank.
+- [Correctness] The bound $8.2\times10^{33}$ yr for $p\to e^+\pi^0$ is superseded: Super-K (2020) gives $\tau/B>2.4\times10^{34}$ yr, so (9.4.14) is now more than 100 times below the limit; update the sentence and the "megaton-class detectors" remark (Hyper-Kamiokande and DUNE are under construction).
+- [Correctness] The physical-quantities table assigns $B$ to both baryon number and branching fraction; rename the branching fraction (e.g. $\mathcal{B}$) in the table and in the Fig. 9.5 caption.
+- [Example] Show the arithmetic of (9.4.1): $(m_\mu/m_p)^5=(0.1126)^5\approx1.8\times10^{-5}$, $(u/M_W)^4\approx10^{52}$, $\tau_\mu=7\times10^{-14}$ yr, giving $1.3\times10^{34}$ yr; then note that a factor 2 in $u$ changes $\tau_p$ by 16.
+- [Graph] Log-log plot of $\tau_p$ from (9.4.1) versus $u$ for $10^{14}$ to $10^{17}$ GeV, with a horizontal line at the Super-K limit $2.4\times10^{34}$ yr and markers at the minimal SU(5) value $1.45\times10^{15}$ GeV and a SUSY-like $2\times10^{16}$ GeV.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/09 Unified Theories/9.5 The Baryon Number of the Universe.md
+priority: medium
+graph: yes
+manim: no
+summary: A readable account of the Sakharov conditions with a correct (9.5.5) argument, but the unitarity indices are mislabeled, the baryon-to-photon range is dated, and the reason SU(5) baryogenesis fails is not stated.
+- [Correctness] With the convention (9.5.9) $S_{ba}=S(a\to b)$, (9.5.10) $(SS^\dagger)_{aa}=\sum_i S_{ai}S^*_{ai}=\sum_i\lvert S(i\to a)\rvert^2$, whereas $\sum_i\lvert S(a\to i)\rvert^2$ is $(S^\dagger S)_{aa}$; relabel the first line (both equal 1, so the conclusion stands).
+- [Correctness] (9.5.1) is outdated: Planck CMB plus BBN give $\eta=n_B/n_\gamma=(6.1\pm0.04)\times10^{-10}$; add the current value next to the source range.
+- [Intuition] Add one sentence that SU(5) conserves $B-L$ and electroweak sphalerons wash out any $B+L$ asymmetry with $B-L=0$, which is a key reason minimal-GUT baryogenesis fails, and replace "seeds electroweak baryogenesis" by "is converted to a baryon asymmetry by sphalerons" for leptogenesis.
+- [Graph] Plot the out-of-equilibrium condition: $\log_{10}$ of the expansion rate $H(T)=1.66\,g_*^{1/2}T^2/M_{\mathrm{Pl}}$ ($g_*\approx100$) and of a decay rate $\Gamma_X\approx\alpha M_X$ ($\alpha=1/40$, $M_X=10^{15}$ GeV) versus $T$ from $10^{12}$ to $10^{19}$ GeV, marking where $\Gamma_X<H$ at $T\sim M_X$.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/09 Unified Theories/9.6 The Problem of Fermion Masses.md
+priority: medium
+graph: yes
+manim: no
+summary: Concise and well motivated, but the combined b–τ formula (9.6.5) has a sign error that contradicts the quoted numerical result (9.6.6).
+- [Correctness] Subtracting (9.6.4) from (9.6.3) gives $+\frac{3}{20n_f}+\frac{27}{20n_f}=+\frac{3}{2n_f}$, so (9.6.5) must read $+\frac{3}{2n_f}\ln(\alpha_1(\mu^2)/\alpha_u)$, not $-\frac{3}{2n_f}$; only the plus sign reproduces $m_b/m_\tau=e^{(4/7)\ln8-(1/4)\ln(65/40)}=2.91$, while the printed minus gives 3.70.
+- [Intuition] State that $m_b=5.16$ GeV should be compared with $m_b(m_b)\approx4.18$ GeV ($\overline{\mathrm{MS}}$) or the pole mass about 4.8 GeV, and that the toy inputs ($1/\alpha_3=5$, $1/\alpha_1=65$) control the factor; "suggestive" then has a concrete meaning.
+- [Example] Add the failure case in one line: the same running applied to $m_s=m_\mu$, $m_d=m_e$ at $u$ gives $m_s/m_d=m_\mu/m_e\approx207$, whereas experiment gives about 20 (the Georgi–Jarlskog motivation used in problem 9.18).
+- [Graph] Plot $m_b(\mu)/m_\tau(\mu)$ from (9.6.5) (with the corrected sign) versus $\log_{10}\mu$ from $\log_{10}m_b$ to 15, using one-loop $\alpha_3,\alpha_1$ from Table 9.2, showing the ratio rising from 1 at $u$ to about 3 at low scale.
+- [Simplify] Fix "two-step spontaneously symmetry breaking" to "two-step spontaneous symmetry breaking".
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/09 Unified Theories/9.7 Assessment.md
+priority: low
+graph: no
+manim: no
+summary: A clear summary list; numbers (13 orders between $M_Z$ and $M_X$, four orders to $M_{\mathrm{Pl}}$) are consistent with 9.3.
+- [Links] Add links from each bullet to the section that supports it (charge quantization to 9.2, $b/\tau$ to 9.6, coupling non-unification to 9.3, proton decay to 9.4, baryon asymmetry to 9.5).
+- [Structure] Add a short dated callout that neutrino masses are now established by oscillations, which sharpens the bullet that SU(5) "does not predict ... neutrino masses" (minimal SU(5) predicts massless neutrinos).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/09 Unified Theories/9.B References.md
+priority: low
+graph: no
+manim: no
+summary: Reference list; no change needed beyond the formatting issue.
+- [Structure] Strip the committed UTF-8 BOM with the skill's formatter.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/09 Unified Theories/9.P Problems.md
+priority: low
+graph: no
+manim: no
+summary: Faithful problem list; spot checks of 9.2 (hypercharge bits), 9.10 (exponent 11/9) and 9.13 (1/6 + 5/9 and 1/5 + 7/15) all verify.
+- [Links] Link the referenced equations and tables to their notes (Table 9.2 and (9.3.13) in 9.3, (9.2.32) and (9.2.9)–(9.2.10) in 9.2, (9.6.2)–(9.6.4) in 9.6).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/09 Unified Theories/9.R For Further Reading.md
+priority: low
+graph: no
+manim: no
+summary: Reading list; no change needed beyond the formatting issue.
+- [Structure] Strip the committed UTF-8 BOM with the skill's formatter.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/90 Epilogue/Epilogue.0 Epilogue.md
+priority: low
+graph: no
+manim: no
+summary: A clear list of open questions, correctly framed as the source edition's view.
+- [Structure] Add a short dated callout after the list noting what has since been answered or sharpened: the Higgs boson was found in 2012 ($m_H\approx125$ GeV), and no superpartners or proton decay have been seen; keep the original text unchanged.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/91 Appendix A Notations and Conventions/A.1 Four-Vectors and Scalar Product.md
+priority: low
+graph: no
+manim: no
+summary: Correct and compact conventions page; (A.1.8) and (A.1.9) signs check out.
+- [Correctness] The letter $x$ denotes both the four-vector $x^\mu$ and its first spatial component in (A.1.1), and $x^2$ means the invariant (A.1.4) while $x^2$ with an index means a component; note this explicitly or write the spatial components as $x^1,x^2,x^3$ only.
+- [Example] Add one worked line, e.g. $p\cdot x=Et-\mathbf p\cdot\mathbf x$ and $e^{-ip\cdot x}$ as a positive-energy plane wave, to show why the metric sign matters.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/91 Appendix A Notations and Conventions/A.2 Dirac Matrices.md
+priority: low
+graph: no
+manim: no
+summary: Accurate reference; (A.2.6), (A.2.7), (A.2.18), (A.2.22) and (A.2.23) were verified numerically in the stated representation.
+- [Simplify] "Other useful identities follow at once from the commutation relations" should say anticommutation relations (A.2.1), and (A.2.13) should end with a period, not a comma.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/91 Appendix A Notations and Conventions/A.3 Trace Theorems and Tensor Contractions.md
+priority: low
+graph: no
+manim: no
+summary: Correct trace and Levi-Civita identities; (A.3.11a) $=4i\varepsilon_{\mu\nu\rho\sigma}$ with $\varepsilon_{0123}=+1$ checks numerically.
+- [Intuition] Add a one-line reminder that the sign of (A.3.11) depends on $\varepsilon_{0123}=+1$ (A.2.19), which differs from many modern texts ($\varepsilon^{0123}=+1$), so readers comparing results know where a sign flip comes from.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/91 Appendix A Notations and Conventions/A.4 Dirac Equation and Dirac Spinors.md
+priority: low
+graph: no
+manim: no
+summary: Correct spinor conventions (checked (A.4.15), (A.4.18)–(A.4.20), (A.4.17), (A.4.27)–(A.4.28)), with some symbol reuse.
+- [Correctness] Symbol clashes: $\lambda$ is the helicity label and also the Fierz matrix $\lambda_{ij}$ in (A.4.30), and $\mu$ is a helicity label in (A.4.7)–(A.4.9) as well as a Lorentz index; use e.g. $\lambda,\lambda'$ for helicities and $C_{ij}$ for the Fierz coefficients.
+- [Correctness] The physical-quantities table lists $\mechanical{s}$ twice (as "spin state" and as polarization four-vector); merge into one row for the polarization four-vector.
+- [Simplify] Say that $\tfrac12(1\pm\gamma_5)$ are chirality projectors that coincide with helicity projectors only for $m\to0$, which is what (A.4.20)–(A.4.21) show.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/91 Appendix A Notations and Conventions/A.5 Color Algebra.md
+priority: low
+graph: no
+manim: no
+summary: Helpful graphical color-algebra summary; (A.5.18) is correct but (A.5.19) has a sign problem.
+- [Correctness] (A.5.19): with $[T^b,T^c]=if^{bcd}T^d$ and $f^{abc}f^{dbc}=N\delta^{ad}$, $if^{abc}T^bT^c=\tfrac{i}{2}f^{abc}[T^b,T^c]=-\tfrac{N}{2}T^a$, not $+\tfrac{C_A}{2}T^a$; either correct the sign or state that the vertex factor is taken as $-if^{abc}$ in this diagram.
+- [Example] Add a numerical check for $N=3$: $C_F=4/3$, $C_A=3$, $T_R=1/2$, and $C_F-\tfrac12C_A=-1/6$ for (A.5.18).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/91 Appendix A Notations and Conventions/A.6 Weyl-van der Waerden Spinors.md
+priority: low
+graph: no
+manim: no
+summary: Short pointer section; adequate as a placeholder.
+- [Example] Add the chiral-representation decomposition $\psi=(\xi_\alpha,\bar\eta^{\dot\alpha})^{\mathrm T}$ with $P_L\psi=(\xi,0)^{\mathrm T}$ so the claim that Dirac spinors combine two irreducible representations is shown in one line.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/91 Appendix A Notations and Conventions/Appendix A.B References.md
+priority: low
+graph: no
+manim: no
+summary: Reference list; no change needed beyond the formatting issue.
+- [Structure] Strip the committed UTF-8 BOM with the skill's formatter.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/92 Appendix B Observables and Feynman Rules/Appendix B.B References.md
+priority: low
+graph: no
+manim: no
+summary: Reference list; no change needed beyond the formatting issue.
+- [Structure] Strip the committed UTF-8 BOM with the skill's formatter.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/92 Appendix B Observables and Feynman Rules/Appendix B.R For Further Reading.md
+priority: low
+graph: no
+manim: no
+summary: Reading list; no change needed beyond the formatting issue.
+- [Structure] Strip the committed UTF-8 BOM with the skill's formatter.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/92 Appendix B Observables and Feynman Rules/B.1 Phase-Space Formulas -  Decay Rates and Cross Sections.md
+priority: medium
+graph: no
+manim: no
+summary: Compact and mostly correct phase-space summary, but the two-body decay formula (B.1.4) is dimensionally wrong.
+- [Correctness] (B.1.4) must read $d\Gamma/d\Omega_{\mathrm{cm}}=\lvert\mathcal M\rvert^2 S_{12}/(64\pi^2 m_\alpha^3)\cdot S$ (equivalently $\lvert\mathcal M\rvert^2\lvert\mathbf p\rvert/(32\pi^2m_\alpha^2)$); with $m_\alpha^2$ the right side has dimension $\mathrm{GeV}^2$ instead of GeV.
+- [Correctness] $S$ denotes the statistical weight and $S_{12},S_{34}$ the kinematic factor; rename one (e.g. $\lambda^{1/2}_{12}$ for the kinematic factor) to avoid the clash.
+- [Simplify] State that in (B.1.6)–(B.1.8) $S_{12}$ is (B.1.5) with $m_\alpha^2\to s$, so $S_{12}=2\sqrt s\,\lvert\mathbf p_{\mathrm{cm}}\rvert$, and give the massless limit $S_{12}=s$.
+- [Example] Add a check: integrating (B.1.4) for a scalar decaying to two massless scalars with $\mathcal M=g$ gives $\Gamma=g^2/(16\pi m_\alpha)$.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/92 Appendix B Observables and Feynman Rules/B.2 Feynman Rules -  Generalities.md
+priority: low
+graph: no
+manim: no
+summary: Correct and readable list of generic Feynman rules.
+- [Correctness] $\epsilon$ is used for the polarization vector and for the $+i\epsilon$ prescription in the propagators; write the infinitesimal as $i0^+$ or $i\eta$.
+- [Simplify] "For the massless case, $k\cdot\epsilon=0$ as well" suggests it fails for massive bosons; $k\cdot\epsilon(k,\lambda)=0$ holds for all three massive polarizations too (e.g. $(M;0,0,0)\cdot(0;0,0,-1)=0$), with the extra gauge freedom only in the massless case.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/92 Appendix B Observables and Feynman Rules/B.3 Feynman Integrals.md
+priority: medium
+graph: no
+manim: no
+summary: Useful toolbox whose combining identities (B.3.6), (B.3.7), (B.3.13)–(B.3.17) check out, but the master integral (B.3.12) has a sign valid only for odd $n-m$.
+- [Correctness] Wick rotation gives $\mathcal I_{mn}=(-1)^{n-m+1}B(m,n-m)/[16\pi^2 i(a^2)^{n-m}]$; the printed form without the sign factor is right for $n-m$ odd (e.g. $m=2,n=3$: $-i/(32\pi^2a^2)$) but wrong for $n-m$ even (e.g. $m=2,n=4$ gives $+i/(96\pi^2a^4)$, not $-i/(96\pi^2a^4)$).
+- [Correctness] $m$ is both a mass ($m_j$, $m_k$ in (B.3.2)) and the power index in (B.3.12) and (B.3.17), and $\lambda$ here is a Schwinger parameter; rename the index (e.g. $r$) to avoid the clash.
+- [Example] Work one case end to end: combine $1/[(k^2-m^2)((k-p)^2-m^2)]$ with (B.3.3), shift $k\to k+zp$, and apply (B.3.12) with $a^2=m^2-z(1-z)p^2$.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/92 Appendix B Observables and Feynman Rules/B.4 Regularization Procedures.md
+priority: low
+graph: no
+manim: no
+summary: Brief but correct; (B.4.1)–(B.4.2) reduce to (B.3.16)–(B.3.17) at $d=4$.
+- [Example] Add the standard result $\int d^dk/(2\pi)^d\,(k^2-\Delta)^{-2}=\tfrac{i}{16\pi^2}[2/(4-d)-\gamma_E+\ln4\pi-\ln\Delta]+O(4-d)$ to show how the $(d-4)^{-1}$ pole appears.
+- [Structure] The physical-quantities table lists only $k$; add $d$, $\lambda$ and $m$ (or note that they are dimensionless or defined in B.3).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/92 Appendix B Observables and Feynman Rules/B.5 Feynman Rules -  Electrodynamics.md
+priority: low
+graph: no
+manim: no
+summary: Correct and consistent vertex factors for spinor and scalar QED.
+- [Intuition] Add one sentence that the two-photon seagull $2iq^2g_{\mu\nu}$ is required for gauge invariance of scalar Compton scattering, with a link to section 3.6.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/93 Appendix C Physical Constants/Appendix C.0 Physical Constants.md
+priority: low
+graph: no
+manim: no
+summary: Internally consistent 2010 constants table (conversions such as $G_F^2(\hbar c)^2=5.297\times10^{-38}\,\mathrm{cm^2/GeV^2}$ check out), clearly labeled as source values.
+- [Structure] Add a "current value" column (CODATA 2022/PDG 2024): $\hbar=6.582119569\ldots\times10^{-22}\,\mathrm{MeV\,s}$ and $\hbar c=197.3269804\,\mathrm{MeV\,fm}$ are exact since the 2019 SI, $\alpha^{-1}=137.035999177(21)$, $G_F=1.1663788(6)\times10^{-5}\,\mathrm{GeV^{-2}}$, $G_N=6.67430(15)\times10^{-11}\,\mathrm{m^3\,kg^{-1}\,s^{-2}}$, $M_{\mathrm{Pl}}=1.220890(14)\times10^{19}\,\mathrm{GeV}$.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/93 Appendix C Physical Constants/Appendix C.R For Further Reading.md
+priority: low
+graph: no
+manim: no
+summary: Reading list; no change needed beyond the formatting issue.
+- [Structure] Strip the committed UTF-8 BOM with the skill's formatter.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/99 Back matter/Author Index.md
+priority: low
+graph: no
+manim: no
+summary: Index transcription; no change needed beyond the formatting issue.
+- [Structure] Strip the committed UTF-8 BOM with the skill's formatter.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/99 Back matter/Subject Index.md
+priority: low
+graph: no
+manim: no
+summary: Index transcription covering printed pages 475–482; no change needed beyond the formatting issue.
+- [Structure] Strip the committed UTF-8 BOM with the skill's formatter.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/Gauge Theories - Contents.md
+priority: low
+graph: no
+manim: no
+summary: Complete contents hub; all 119 wiki links resolve.
+- No change needed.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/Nuclear and quantum statistics review calculations.md
+priority: high
+graph: yes
+manim: no
+summary: A grab bag of correct worked numbers (angular-momentum angles, Be-8, carbon-nucleus forces, range-mass estimate all verify), but the physical-quantities table is wrong, several letters are reused, and some results are left unfinished.
+- [Correctness] The physical-quantities table lists symbols the note does not use with those meanings: $F$ as Faraday constant (the note uses $F_G$, $F_C$ for forces and $F(v)$ for a density), $R$ as activity (the note uses $R$ for nuclear radius, interaction range, and $3R$ gas constant), $T$ "determines the blackbody spectrum", and $\lambda$ only as decay constant (the note uses $\lambda=m/(2k_BT)$ and de Broglie wavelength); rebuild the table from the symbols actually used ($A$, $Z$, $N$, $L$, $m_\ell$, $k_B$, $g(E)$, $f$, $R_{21}$, $a_0$, $C_V$, $N_A$, $R$, $F_G$, $F_C$).
+- [Correctness] Symbol clashes: $A$ is mass number and also the normalization constant in $f_{\mathrm{MB}}$ and $F(v)=Av^3e^{-\lambda v^2}$; $N$ is neutron number and particle number in $P=(2/3)N\langle E\rangle/V$; rename the normalization constants (e.g. $C$) and the particle count.
+- [Example] Finish the open calculations: the hydrogen population ratio is $4e^{-404}\approx10^{-175}$ at 293 K, Homework 13.1 gives $\langle K\rangle=\mechanical{m}/\lambda=2k_BT$ (flux-weighted, larger than $\tfrac32k_BT$), and $\Pr(a_0\le r\le2a_0)\approx0.049$ for the 2p state.
+- [Structure] Split into topic sections (nuclear basics, angular momentum, statistics, wells, hydrogen) or move items to their topical notes; the title "Nuclear and quantum statistics" hides the angular-momentum and finite-well material, and Be-8 duplicates the other two nuclear notes.
+- [Graph] Plot $f_{\mathrm{BE}}$, $f_{\mathrm{MB}}$, $f_{\mathrm{FD}}$ versus $(E-\mu)/k_BT$ from $-3$ to 5 (with $B=1$) as a native graph to replace or accompany Fig. 70, and $P(r)=r^4e^{-r/a_0}/(24a_0^5)$ on $0\le r\le12a_0$ with the shaded interval $[a_0,2a_0]$.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/Nuclear binding and radioactive decay.md
+priority: low
+graph: yes
+manim: no
+summary: Short, clear and correct summary of binding, Q values and decay law (the $5.19\times10^6$ nuclei example checks).
+- [Structure] The speed of light is wrapped in `\signal{c}` while the Gauge Theories notes use `\mechanical{c}`, and $t$, $\lambda$ are uncolored; align the macro choice with the vault convention.
+- [Example] Add the Be-8 numbers inline ($B=+56.5$ MeV vs free nucleons, $Q_{2\alpha}=+0.092$ MeV) so the stated example is self-contained.
+- [Graph] Plot $\mathcal N(t)/\mathcal N_0=e^{-t\ln2/t_{1/2}}$ for $t_{1/2}=1$ h over 0–5 h, and on a log axis the sum of two exponentials ($t_{1/2}=1$ h and 5 h, equal initial activities) to show the curved mixture described in the text.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/Nuclear mass, decay channels, and dating problems.md
+priority: medium
+graph: yes
+manim: no
+summary: Many correct worked examples (Po-210, confinement estimate, density, deuteron, U-230 channels, U–Pb age all verify), but with one wrong transcribed energy, a wrong table entry, duplications, and letter reuse.
+- [Correctness] Neutron-discovery sketch: the recoil protons from paraffin had energies up to about 5.7 MeV (Chadwick 1932), not "5.7 keV"; note the handwritten label as a slip.
+- [Correctness] The physical-quantities table lists $\varepsilon$ as emissivity, but the note only uses $\varepsilon_0$ (vacuum permittivity); also $R$ is activity in the table but the note uses $\mechanical{R}$ for nuclear radius and $R$, $S$ for breakup products, and $N$ for both neutron number and $N(t)$; rename the products and fix the table.
+- [Correctness] Be-8 two-alpha value: $[2(4.002603)-8.005305]\times931.5=-0.0922$ MeV, not $-0.093$ MeV (as correctly given in the review-calculations note).
+- [Structure] Remove the duplicated sentence "For ${}^8$Be$\to2\alpha$, compare ..." and merge the two confinement-estimate passages; the "Decay series" heading contains no decay series, so rename it or add the $^{238}$U chain.
+- [Example] The U-230 proton channel needs $M({}^{229}\mathrm{Pa})=229.032097$ u, which is not listed; add it so $Q=-5.6$ MeV can be reproduced.
+- [Graph] Plot $N_{\mathrm{Pb}}/N_{\mathrm U}=e^{\lambda t}-1$ versus $t$ from 0 to 10 Gyr with $t_{1/2}=4.47$ Gyr, marking the ratio 0.60 at $t=3.0$ Gyr.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/Standard Model.md
+priority: high
+graph: yes
+manim: yes
+summary: A useful overview of the SM Lagrangian, but it lacks frontmatter and TLDR, contains several sign and factor errors, and has broken LaTeX column vectors.
+- [Correctness] Covariant derivative: the SU(2) term must be $-ig\,\tfrac{\tau^i}{2}W^i_\mu$ (generators $T^i=\tau^i/2$), not $-ig\tau^iW^i_\mu$; otherwise $m_W=\tfrac12gv$ is off by a factor 2.
+- [Correctness] With $\mathcal L\supset-\mu^2\phi^\dagger\phi-\lambda(\phi^\dagger\phi)^2$ and $\mu^2<0$, the minimum is at $v=\sqrt{-\mu^2/\lambda}$, not $\sqrt{\mu^2/\lambda}$.
+- [Correctness] Yukawa terms: "$-\ldots-\text{h.c.}$" makes the Lagrangian anti-Hermitian; write $-(\bar Q_LY_d\phi d_R+\bar Q_LY_u\tilde\phi u_R+\bar L_LY_e\phi e_R+\text{h.c.})$, and fix the Compact Form, whose inner minus signs flip the up-type and lepton terms relative to the Yukawa section.
+- [Correctness] Rendering errors: column vectors written as `\begin{pmatrix} u_L \ d_L \end{pmatrix}` (also $L_L$ and $\langle\phi\rangle$) need `\\`, $m_Z=\tfrac12\sqrt{g^2+g'^2},v$ needs `\,v`, and the Higgs doublet mixes Unicode `φ⁺`/`ϕ⁰`; also "left-handed means only one spin orientation" conflates chirality with helicity, and right-handed singlets do couple to the $Z$ via hypercharge.
+- [Structure] Add quoted frontmatter title, TLDR, semantic macros, a units column, and move the symbol table to a "Physical quantities" section at the end per the Obsidian skill; add the mixing relations $A_\mu=\sin\theta_WW^3_\mu+\cos\theta_WB_\mu$, $e=g\sin\theta_W$.
+- [Graph] 3D surface of $V(\phi)=\mu^2\lvert\phi\rvert^2+\lambda\lvert\phi\rvert^4$ over $(\mathrm{Re}\,\phi,\mathrm{Im}\,\phi)\in[-1.5,1.5]^2$ with $\mu^2=-1$, $\lambda=0.5$ (Mexican hat).
+- [Manim] Animate $\mu^2$ going from $+1$ to $-1$ so the bowl morphs into the hat and a ball rolls to the circle of minima at $\lvert\phi\rvert=v/\sqrt2$.

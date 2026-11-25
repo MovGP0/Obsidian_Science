@@ -1,0 +1,31 @@
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/06 Electroweak Interactions of Leptons/6.5 The Higgs Boson -  A First Look.md
+priority: medium
+graph: yes
+manim: no
+summary: Faithful, compact transcription with correct couplings and cross-section numbers, but two width formulas carry a spurious factor and the pre-discovery framing is never updated.
+- [Correctness] Eqs. (6.5.8) and (6.5.9) contain a spurious $1/x$ (and $1/x'$): the correct widths are $\Gamma(H\to W^+W^-)=\frac{G_F M_H^3}{32\pi\sqrt2}(1-x)^{1/2}(3x^2-4x+4)$ and the $ZZ$ analogue with $64\pi$; with $1/x$ the width would grow like $M_H^5$, contradicting the stated asymptotic $M_H^3$ behaviour and the $2x^2$ transverse-polarization remark.
+- [Correctness] In (6.5.6) the middle expression $|\mathcal M|^2/(64\pi^2 M_H)$ omits the two-body phase-space factor $(1-4m_f^2/M_H^2)^{1/2}=2q/M_H$ (and $N_c$); only with it does $|\mathcal M|^2$ from (6.5.5) give the stated $\beta^{3/2}$ result.
+- [Correctness] Fig. 6.25 vertex factors (e) and (f): the left-hand sides $ig^2/2$ and $ig^2/(2\cos^2\theta_W)$ lack the $g_{\mu\nu}$ that appears on the right; write $\frac{ig^2}{2}g_{\mu\nu}$ etc.
+- [Correctness] Symbol clash: $v$ is both the vacuum expectation value (vertex factor, table) and the antifermion spinor $v(f,p_2)$ in (6.5.2); rename or add a remark, and drop the unused $\Gamma_H$ from the physical-quantities table.
+- [Structure] Add a short callout that the Higgs was discovered in 2012 with $M_H\approx125.2\,\mathrm{GeV}$ and SM width $\approx4.1\,\mathrm{MeV}$ (dominant $b\bar b$ at about 58%, $\gamma\gamma$ seen first), so phrases like "if the Higgs boson is light" and the Higgs-factory discussion read as historical context; note the $\mu^+\mu^-$ factor 42,750 checks out.
+- [Graph] Native log-log plot of $\Gamma(H\to b\bar b)$, $\Gamma(H\to\tau\tau)$, $\Gamma(H\to W^+W^-)$, $\Gamma(H\to ZZ)$ from (6.5.7)-(6.5.9) for $M_H=100$-$1000\,\mathrm{GeV}$, with a vertical marker at 125 GeV and a reference line $\Gamma=M_H$, to show the $M_H$ vs $M_H^3$ scaling and the thresholds at $2M_W,2M_Z$.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/06 Electroweak Interactions of Leptons/6.6 The Higgs Boson, Asymptotic Behavior, and the 1-TeV Scale.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and clearly argued (the $J=0$ projection, the 1.5 TeV$^2$ and 1 TeV bounds and the coupled-channel eigenvalues all check out), though the A/B/C cancellation bookkeeping is wordy.
+- [Simplify] Replace the two prose paragraphs on A- and B-force cancellations with a small table (rows $J=0,1,2$; columns A-force, B-force; entries naming which diagrams cancel) so the role of Higgs exchange at subleading order is visible at a glance.
+- [Example] After (6.6.4) add the two-line derivation of the $t$-channel projection ($t=-s(1-\cos\theta)/2$, $a_0=\frac1{32\pi}\int_{-1}^1\mathcal M\,d\cos\theta$) that produces the logarithm; the step is currently skipped.
+- [Graph] Plot $|a_0|$ from (6.6.4) versus $\sqrt s$ ($0.2$-$5\,\mathrm{TeV}$, off the pole) for $M_H=0.125, 0.5, 1.0, 1.5\,\mathrm{TeV}$ with the unitarity line $|a_0|=1$ (and optionally $1/2$), showing the approach to the constant (6.6.5) and where heavy-Higgs curves cross the bound.
+- [Structure] Add a closing callout that $M_H=125\,\mathrm{GeV}$ satisfies (6.6.11) by a wide margin, so $W_LW_L$ scattering stays perturbative, which turns the LHC "no-lose" argument into a confirmed outcome.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/06 Electroweak Interactions of Leptons/6.7 Neutrino Mixing and Neutrino Mass.md
+priority: medium
+graph: no
+manim: yes
+summary: Broad and readable survey with good native reproductions of Figs. 6.33-6.35, but it has a swapped cross-section formula, a caption typo, loose numbers, symbol clashes, and many experimental values from about 2012.
+- [Correctness] In (6.7.11) the $\nu_{\mu,\tau}e$ cross section should be $\frac{G_F^2m_eE_\nu}{2\pi}\left(L_e^2+\frac{R_e^2}{3}\right)$ (as in note 6.4, eq. for $\nu_\mu e$); $\left(\frac{L_e^2}{3}+R_e^2\right)$ is the $\bar\nu_\mu e$ result. The $\tfrac17$ weighting survives only because $L_e^2=R_e^2$ at $\sin^2\theta_W=\tfrac14$.
+- [Correctness] Fig. 6.32 caption: "total ${}^8\mathrm{Be}$ solar neutrino flux" should be ${}^8\mathrm{B}$ (boron-8), consistent with the body text.
+- [Correctness] Numbers: with Table 6.5 the inverted-hierarchy minimum is $\sum m_\nu=\sqrt{2.40\times10^{-3}}+\sqrt{2.48\times10^{-3}}\approx0.099\,\mathrm{eV}$, so "$\gtrsim0.11$ eV" should read $\gtrsim0.10$ eV; and (6.7.20) with $v=246\,\mathrm{GeV}$, $M=1.22\times10^{19}\,\mathrm{GeV}$ gives $m\approx2.5\times10^{-6}\,\mathrm{eV}$, not "$\sim10^{-5}$ eV".
+- [Correctness] Symbol clashes: $m_1,m_2$ denote both the $\nu_1,\nu_2$ mass eigenvalues and the seesaw eigenvalues in (6.7.23); $L$ is both baseline and lepton number (plus $L_e$, $\mathsf L_\ell$); $\tau$ is both lifetime and the tau lepton; $\phi$ is both Higgs doublet and flux $\phi_e$. Rename (for example $m_{\mathrm{light}},m_{\mathrm{heavy}}$, $L_{\mathrm{lep}}$, $\Phi_e$), fix the table, and check whether $\mathcal L_{\mathrm{CC}}^{(q)}$ in (6.7.12) should carry a lepton label $(\ell)$.
+- [Correctness] Outdated values need an update callout: KATRIN now gives $m_{\nu_e}<0.45\,\mathrm{eV}$ (90% CL, 2024; Table 6.4 still "$<2$ eV", sensitivity "0.2 eV" as future); cosmology now gives $\sum m_\nu\lesssim0.07$-$0.12\,\mathrm{eV}$ (Planck+DESI), not 0.44 eV; $h\approx0.67$-$0.73$, not $0.742$; $\theta_{13}\approx8.5^\circ$ is precisely measured; the LEP $N_\nu$ fit is $2.996\pm0.007$ after the 2019 luminosity correction; OPERA confirmed $\nu_\tau$ appearance; MicroBooNE disfavours the MiniBooNE low-energy excess as electrons.
+- [Manim] Animate two-flavour oscillation: two mass-eigenstate phasors rotating at frequencies $m_i^2/2E$ with the projected flavour probabilities $P_{\alpha\to\beta}(L)$ from (6.7.7) traced as a function of $L$ alongside, making clear why a common phase (massless case) gives no flavour change.

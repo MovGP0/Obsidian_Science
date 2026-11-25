@@ -1,0 +1,299 @@
+=== 02 Physics/05 Relativity and Gravitation/04 Kaluza–Klein/KK 16 Fourier modes and periodicity.md
+priority: medium
+graph: yes
+manim: no
+summary: The periodicity argument and normalization are correct and well checked, but generic boilerplate and an undefined self-check term make it denser than needed.
+- [Correctness] Physical quantities: the $\mechanical{\theta}$ row refers to a "spherical-coordinate inset" that does not exist in this note, and $\signal{k}_5$ is described generically as "Angular frequency and wave vector" although only the compact wave number is used; make the rows describe this note's quantities.
+- [Simplify] The shared "Geometric and field equations" and "Length-coordinate convention" paragraphs introduce the radion, $\xi$, $\varepsilon$, $\kappa$, $\Phi$ and the field strength, none of which appear here; trim them to the angle/length conversion actually used ($y=r\theta$).
+- [Structure] Self-check question 1 asks about "the cylinder condition", which is never defined in this note; define it in one sentence or link [[KK 05 Cylinder condition and radion assumptions]].
+- [Example] In "Worked mode example", finish the calculation with equation (16.2): for $\Psi\propto1+2\cos(y/r)$ state $\psi_0$ and $\psi_{\pm1}$ explicitly (equal amplitudes, $p_5=0,\pm1/r$) so the reader sees the normalization prefactor at work.
+- [Graph] Plot $\mathrm{Re}\,e^{in\theta}$ for $n=0,1,2$ and the antiperiodic $n=1/2$ over $\theta\in[0,4\pi]$, marking $\theta=2\pi$, to show why only integers return to the start value (self-check 2).
+- [Structure] The file starts with a UTF-8 BOM (committed in HEAD); remove it per the vault rule.
+
+=== 02 Physics/05 Relativity and Gravitation/04 Kaluza–Klein/KK 17 Klein-Gordon equation and dispersion.md
+priority: low
+graph: yes
+manim: yes
+summary: Clear and correct in both sign conventions, with a good worked example; the quantity table is the main defect.
+- [Correctness] Physical quantities lists $\signal{\psi}$ twice with conflicting units (GeV and —), lists $\signal{\psi}_n$ and an "unnormalized expansion" that this note never uses, and lists both $\mechanical{\mathbf x}$ and $\mechanical{x}$ as coordinates; remove the duplicates.
+- [Intuition] The note switches from $(\Box+m^2)\psi=0$ (mostly-minus) to $(\Box-m^2)\psi=0$ (mostly-plus); add a two-row comparison table (signature, $\Box$, KG form, plane-wave check) so the sign change is visibly a convention change.
+- [Example] Extend "Worked energy calculation" with the phase velocity $E/|p|=5/4$ and the identity $v_\mathrm g v_\mathrm p=1$, which makes the "phase velocity can exceed one" remark concrete.
+- [Graph] Native plot of $v_\mathrm g=p/\sqrt{p^2+m^2}$ and $v_\mathrm p=\sqrt{p^2+m^2}/p$ for $m=1$, $p\in(0,5]$, with the line $v=1$; complements the existing dispersion SVG.
+- [Manim] A 1D massive Klein–Gordon wave packet whose phase crests run faster than its envelope, showing $v_\mathrm p>1>v_\mathrm g$.
+- [Structure] Remove the committed UTF-8 BOM.
+
+=== 02 Physics/05 Relativity and Gravitation/04 Kaluza–Klein/KK 18 Deriving the Kaluza-Klein mass tower.md
+priority: low
+graph: yes
+manim: yes
+summary: The mass-tower derivation, the numbers in the worked tower, and the limits are correct and well motivated.
+- [Correctness] Physical quantities: $\signal{\psi}_n$ appears twice with conflicting units (GeV and —), and the $\mechanical{\theta}$ row mentions a nonexistent "spherical-coordinate inset"; clean up the duplicates.
+- [Simplify] In the warm-up, $\mechanical{x}$ is one spatial axis, but in the next section it abbreviates all four base coordinates; use $x^\mu$ or a separate symbol for the four-coordinate argument.
+- [Simplify] Rephrase "The cylinder condition extends the mode-label separation to a circle-independent background": say that separation works because the background metric does not depend on $\theta$, so no term couples different $n$.
+- [Graph] Plot the worked tower: $m_n=\sqrt{m_5^2+n^2/r^2}$ against $n=0..5$ for $1/r=2$ GeV with $m_5=0$ and $m_5=3$ GeV, showing equal spacing only in the massless case.
+- [Manim] Roll a flat plane wave into a tube: phase fronts on a sheet wrap into a cylinder, and only wave numbers $p_y=n/r$ join smoothly at the seam.
+- [Structure] Remove the committed UTF-8 BOM.
+
+=== 02 Physics/05 Relativity and Gravitation/04 Kaluza–Klein/KK 19 Deriving charge from phase winding.md
+priority: medium
+graph: no
+manim: yes
+summary: The passive-transformation sign, covariant derivative, and inverse-metric reduction are correct, but one eigenmode statement is wrong and the two sign conventions are not compared side by side.
+- [Correctness] "Each mass eigenmode is also a charge eigenmode" is false: modes $\pm n$ are mass-degenerate, so a combination such as $\cos(n\theta)$ is a mass eigenmode with no definite charge; say instead that each Fourier mode $e^{in\theta}$ is simultaneously a mass and a charge eigenmode.
+- [Correctness] Physical quantities: the $\mechanical{\theta}$ row mentions a nonexistent "spherical-coordinate inset", and $\signal{\psi}_n$ is listed twice with conflicting units.
+- [Intuition] Add a small table with both conventions: angular ($A'=A+\partial\varepsilon$, $D=\partial+iqA$) and length ($A'=A-\partial\lambda$, $D=\partial-iqA$), both with matter phase $e^{-iq\cdot}$. The note currently gives only the length-coordinate covariant derivative.
+- [Simplify] In "Obtain the charged mode equation", show the intermediate expansion $g^{\mu\nu}\partial_\mu\partial_\nu-2\kappa A^\mu\partial_\mu\partial_5+(1+\kappa^2A^2)\partial_5^2$ acting on $e^{iny/r}$ before compressing it into $D_\mu D^\mu-n^2/r^2$.
+- [Manim] A tube whose zero-angle seam is bent by $\varepsilon(x)$ while the winding mode stays fixed, with the read-off phase of $\psi_n$ shifting by $-n\xi\varepsilon(x)$.
+- [Structure] Remove the committed UTF-8 BOM.
+
+=== 02 Physics/05 Relativity and Gravitation/04 Kaluza–Klein/KK 20 General covariance and gauge symmetry.md
+priority: low
+graph: no
+manim: yes
+summary: A careful conceptual note that separates passive, active, local, and global aspects correctly; one worked calculation would make it concrete.
+- [Correctness] Physical quantities: the $\mechanical{\theta}$ row mentions a "spherical-coordinate inset" that is not in this note.
+- [Example] In "Worked coordinate-versus-field distinction", write the flat-tube calculation explicitly: start from $\eta_{\mu\nu}dx^\mu dx^\nu+dy^2$, substitute $y'=y+\kappa\lambda(x)$, read off $A_\mu=-\partial_\mu\lambda$, and show $F_{\mu\nu}=0$.
+- [Manim] A coordinate grid on a cylinder sheared by a position-dependent circular shift while marked events stay fixed, illustrating "What the deformed grids show".
+- [Structure] Remove the committed UTF-8 BOM.
+
+=== 02 Physics/05 Relativity and Gravitation/04 Kaluza–Klein/KK 21 Visualizing local phase choices.md
+priority: medium
+graph: yes
+manim: yes
+summary: The gauge-invariant phase comparison is derived correctly, but there is a coordinate-letter clash and the visual discussion depends on figures described only in words.
+- [Correctness] Symbol clash: $\mechanical{y}$ is an ordinary spatial coordinate in the plane example and in the table, but the note's own length-coordinate paragraph defines $y$ as the compact coordinate; rename one of them in this note.
+- [Correctness] Physical quantities: $\mechanical{m}$ is listed although it is never used, and the $\mechanical{r}$ and $\mechanical{\theta}$ rows refer to a nonexistent "spherical inset".
+- [Graph] For $\varepsilon(x)=\sin x$ and a rest-state mode, plot $\chi'(x)=-q\varepsilon(x)$, $\partial_x\chi'$, and $qA'_x=q\varepsilon'(x)$ on one axis, showing $\partial_x\chi'+qA'_x=0$ (the worked cancellation).
+- [Manim] The "meditation": the tube seam curves, the colored phase on the base plane shifts, potential arrows appear, and a running readout of $D_\mu\psi$ stays at zero.
+- [Structure] Remove the committed UTF-8 BOM.
+
+=== 02 Physics/05 Relativity and Gravitation/04 Kaluza–Klein/KK 22 Limits and missing ingredients.md
+priority: low
+graph: yes
+manim: no
+summary: An accurate and balanced limitations chapter whose bubble-of-nothing smoothness check is correct; parts of the radion discussion repeat each other.
+- [Simplify] The radion point appears three times (list item 2, the paragraph after the list, and "The radius field cannot simply be forgotten"); merge these into one passage that links to KK 23.
+- [Graph] For the closing-circle metric, plot $f(\rho)=1-r^2/\rho^2$ and the circle circumference $2\pi r\sqrt{f(\rho)}$ for $\rho/r\in[1,5]$, showing the circle shrinking smoothly to zero at $\rho=r$.
+- [Example] In "Why one circle gives an Abelian field", add a contrast: rotations of a 2-sphere have three generators with $[L_i,L_j]=i\epsilon_{ijk}L_k$, which is the minimal non-Abelian case.
+- [Structure] Remove the committed UTF-8 BOM.
+
+=== 02 Physics/05 Relativity and Gravitation/04 Kaluza–Klein/KK 23 Radion and the mass-charge problem.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and well verified (the Jordan-frame action, the trace step, $r\approx23\ell_P$, and $m_1\approx5.2\times10^{17}$ GeV all check out), but the same estimate is derived twice with inconsistent notation.
+- [Structure] Notation is inconsistent within the note: $\mechanical{G}$ vs $\mechanical{G}_4$, and $\mechanical{\ell}_{\mathrm P}$ vs $\mechanical{\ell}_P$ (the table has a row for each); pick one form.
+- [Simplify] The first section and "Derive the charged-mode scale" repeat the same derivation of $r=2\ell_P/\sqrt\alpha$ and $m_1$; keep one full derivation and refer back to it.
+- [Example] Show the numbers: $\sqrt{\alpha}\approx0.0854$, $2/\sqrt\alpha\approx23.4$, $23.4\times1.616\times10^{-35}\,\mathrm m\approx3.8\times10^{-34}\,\mathrm m$, and $m_1=(\sqrt\alpha/2)m_\mathrm P\approx0.0427\times1.22\times10^{19}\,\mathrm{GeV}$.
+- [Graph] Replace or complement Fig. 23.2 with a native plot of $U(\sigma)=\tfrac12 m_\sigma^2(\sigma-\sigma_0)^2$ and the small-oscillation frequency, labeled as illustrative.
+- [Structure] Remove the committed UTF-8 BOM.
+
+=== 02 Physics/05 Relativity and Gravitation/04 Kaluza–Klein/KK 24 Conclusions and cumulative problems.md
+priority: low
+graph: no
+manim: no
+summary: A concise recap with correct cumulative problems and solutions.
+- [Example] Problem 3: also give $\sqrt{52}=2\sqrt{13}\approx7.21$ GeV, so the uneven spacing (4, 5, 7.21) is visible at a glance.
+- [Links] Problem 4: link where the coefficient $-\kappa^2/(64\pi G_4)$ comes from ([[KK 14 Reducing the Einstein-Hilbert action]]).
+- [Structure] Remove the committed UTF-8 BOM.
+
+=== 02 Physics/05 Relativity and Gravitation/04 Kaluza–Klein/KK 25 Credits and further study.md
+priority: low
+graph: no
+manim: no
+summary: A short study-direction note; no content changes are needed.
+- [Structure] The frontmatter title "Further study and final self-check" differs from the file name "Credits and further study", and the file has a committed UTF-8 BOM; align the title and remove the BOM.
+
+=== 02 Physics/05 Relativity and Gravitation/04 Kaluza–Klein/Kaluza-Klein - Study Guide.md
+priority: low
+graph: no
+manim: no
+summary: A well-organized hub with a correct angular-to-length conversion, but one contradictory statement about the metric convention.
+- [Correctness] "Notation and units" opens with "The collection uses a mostly-plus metric", but the next section and the first section of every chapter from KK 16 to KK 24 use a mostly-minus angular calculation; say the collection uses two signatures, as stated later.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/00 Acronyms.md
+priority: low
+graph: no
+manim: no
+summary: A clean acronym list; it is sufficient as a reference.
+- [Structure] Add the abbreviations M-M (Michelson–Morley) and CMB, which the chapter-1 notes use, and consider linking CMBR to [[08.05 The Cosmic Microwave Background Radiation]] inside this collection.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/00 Cosmic Relativity.md
+priority: low
+graph: no
+manim: no
+summary: A useful hub with study routes and a sound reading method.
+- [Structure] Remove the closing workflow remark ("Their visual review in Obsidian reading mode remains deferred, as requested"); it is a maintenance note, not reader-facing content.
+- [Structure] The Part II block quote repeats the passage already quoted in 01.01; shorten it to one sentence or link to 01.01.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/01 The paradigm of Cosmic Relativity and its evidence/01 References.md
+priority: low
+graph: no
+manim: no
+summary: A reference list with some bibliographic errors copied from the source.
+- [Correctness] Ref. 10 should read R. A. Lyttleton and H. Bondi, "On the physical consequences of a general excess of charge", Proc. R. Soc. Lond. A 252, 313–333 (1959); it is not "Littleton" and not Proc. Phys. Soc.
+- [Correctness] Ref. 4: volume 13 of the Collected Papers was published by Princeton University Press in 2012; 1922 is the date of Einstein's original comment, not of the translation volume.
+- [Correctness] Ref. 16: replace the impossible year "2919" (most likely 2019) after checking the citation, and resolve the callout.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/01 The paradigm of Cosmic Relativity and its evidence/01.00 The Paradigm of Cosmic Relativity and Its Evidence.md
+priority: low
+graph: no
+manim: no
+summary: A faithful abstract with a short critical frame; the strongest claim needs explicit context.
+- [Intuition] Interpretation: say that the claimed confirmation of $c\pm v$ is the author's own; the one-way light speed depends on the clock-synchronization convention, and standard experiments agree with special relativity. Link [[05.06 The Synchronisation of Time]] and [[11.04 The Experiment on the One-Way Relative Velocity of Light]].
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/01 The paradigm of Cosmic Relativity and its evidence/01.01 The First Principles.md
+priority: low
+graph: no
+manim: no
+summary: A philosophical introduction without equations; it is adequate as it stands.
+- [Structure] The transfer exercise (a magnetic field and the force on an arbitrary material) is not connected to the chapter; replace it with a cosmology example, such as what the CMB dipole does and does not establish.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/01 The paradigm of Cosmic Relativity and its evidence/01.02 What Is the Theory of Cosmic Relativity.md
+priority: low
+graph: no
+manim: no
+summary: A faithful lecture account; the interpretation section does not yet address its central testable claim.
+- [Intuition] Interpretation: add that a synchronization convention with anisotropy parameter $\varepsilon\neq1/2$ reproduces every special-relativistic prediction, so $c'=c-v$ for one-way light is not observable without a synchronization-independent measurement; this is what the M–M two-way argument in the lecture leaves open.
+- [Links] Link the Michelson–Morley discussion to [[03.06 Experiments Designed to Detect the Stationary Ether]] and the "novel experiment" to [[11.04 The Experiment on the One-Way Relative Velocity of Light]].
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/01 The paradigm of Cosmic Relativity and its evidence/01.03 Why Is Cosmic Relativity Necessary.md
+priority: low
+graph: no
+manim: no
+summary: A readable thought experiment whose numeric claim checks out; the interpretation could test the clock claim directly.
+- [Example] Check the "more than a volt" claim: with $n_b\approx0.25\,\mathrm{m^{-3}}$, a charge excess of $10^{-40}e$ per baryon, and $R\approx1.4\times10^{26}$ m, the result is $\phi\approx\rho R^2/(2\varepsilon_0)\sim10^3$–$10^4$ V, so the claim holds with a wide margin.
+- [Intuition] The claim that matter "up to the Virgo cluster" produces a measurable difference in moving-clock dilation needs a check: a spatially uniform potential shifts all clocks equally, and observed motional dilation follows $\gamma$ with no detected environmental dependence.
+- [Structure] Give the electric-potential table row a symbol (for example $\electric{\phi}$) instead of "—", and fix the typo "charges particles" to "charged particles".
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/01 The paradigm of Cosmic Relativity and its evidence/01.04 The Gravity of Our Universe.md
+priority: medium
+graph: yes
+manim: no
+summary: The order-of-magnitude estimates are correct and the interpretation is good; the "≈c²" coincidence deserves a worked explanation.
+- [Example] Evaluate equation (1.1): $2\pi\cdot6.67\times10^{-11}\cdot10^{-26}\cdot10^{52}\approx4\times10^{16}\,\mathrm{m^2/s^2}\approx0.5c^2$. With the critical density $3H_0^2/(8\pi G)$ and $cT=c/H_0$, $\Phi_u=\tfrac34c^2$ exactly, which shows that the near equality follows from Friedmann scaling.
+- [Graph] Log-log plot of the cumulative potential $\Phi(R)=2\pi G\rho R^2$ for $R$ from $10^{20}$ to $1.4\times10^{26}$ m, with horizontal reference lines at $c^2$, $10^{11}$ (galaxy), $10^9$ (Sun), and $10^8$ (Earth).
+- [Structure] Physical quantities lists $\mechanical{R}$ (causal radius) and $\mechanical{M}$ (shell mass), which appear neither in the text nor in the figures; remove them or use them.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/01 The paradigm of Cosmic Relativity and its evidence/01.05 The Cosmic Gravitational Metric and the Potentials.md
+priority: high
+graph: no
+manim: yes
+summary: The callouts flag several normalization problems, but the central Galilean-transformation derivation contains a primed/unprimed error that the note does not mention.
+- [Correctness] Eqs. (1.4)–(1.6): substituting $dx'=dx-v\,dt$ into a form written in primed coordinates yields the line element in unprimed coordinates. The Galilean transform of the rest metric ($H\to0$) is $ds^2=-(c^2-v^2)dt'^2+2v\,dx'dt'+dx'^2$, with cross coefficient $+v$ for $x'=x-vt$, and $\sqrt{1-v^2/c^2}$ describes a clock at $dx'=0$. In the printed (1.6), a comoving clock ($dx=v\,dt$) shows no dilation at all; add this to the source callout.
+- [Correctness] After Eq. (1.8): with $A_g=-v/c$, the curl is $\nabla\times A_g=-2\Omega/c$, not $-2\Omega$. Only $-\nabla\times\mathbf v$ equals $-2\Omega$; list this among the dimensional inconsistencies.
+- [Intuition] State plainly in the interpretation that a Galilean relabelling of flat spacetime leaves the curvature zero and reproduces exactly the special-relativistic dilation relative to the original frame. Eq. (1.7) therefore encodes a choice of simultaneity ($t'=t$), not new physics.
+- [Manim] Animate the Galilean shear of a $(t,x)$ grid with the light cone and a moving clock's worldline: the coordinate light speeds become $c\mp v$ while the proper time along the worldline stays the same.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/01 The paradigm of Cosmic Relativity and its evidence/01.06 A Phenomenological Assertion.md
+priority: medium
+graph: no
+manim: no
+summary: A short note with a good interpretive warning, but it mislabels the factor it discusses and lacks the numbers that would show the calibration.
+- [Correctness] $\sqrt{1-v^2/\Phi_U}$ (and $\sqrt{1-v^2/c^2}$) is called a "Lorentz factor", but the Lorentz factor is $\gamma=1/\sqrt{1-v^2/c^2}$; say "the reciprocal Lorentz factor" or "time-dilation factor" in the added text and the callout.
+- [Example] Compute $\Phi_U/c^2=2\pi G\rho T^2$ for the critical density: it is $3/4$ for $T=1/H_0$ and $1/3$ for an Einstein–de Sitter age $T=2/(3H_0)$. The relation is of order unity and depends on the cutoff, not an exact equality.
+- [Intuition] Name an observable that would distinguish the two forms, for example the dependence of time-dilation tests on the local gravitational potential, which differs between laboratories, satellites, and solar orbit positions.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/01 The paradigm of Cosmic Relativity and its evidence/01.07 Summary of the Primary Results of Cosmic Relativity.md
+priority: high
+graph: no
+manim: no
+summary: A long catalogue of source claims with several sign and arithmetic errors that the callouts do not cover; it is hard to study in its current form.
+- [Correctness] Eq. (1.17): for $\mathbf v=\boldsymbol\Omega\times\mathbf r$, $-m\,\mathbf v\times\boldsymbol\Omega=m\,\boldsymbol\Omega\times(\boldsymbol\Omega\times\mathbf r)=-m\Omega^2\mathbf r$ points inward, so the final outward $\hat{\mathbf r}\,mv^2/r$ has the opposite sign. With $\mathbf A=-\mathbf v/c$ dimensionless, $m_g\,d\mathbf A/dt$ also lacks a factor $c$ to be a force.
+- [Correctness] Coriolis paragraph: $\mathbf F=m_g\mathbf u\times\mathbf B_g$ with $\mathbf B_g=-2\boldsymbol\Omega$ gives $+2m\,\boldsymbol\Omega\times\mathbf u$, the opposite sign of the standard Coriolis force $-2m\,\boldsymbol\Omega\times\mathbf u$; flag this in a source callout.
+- [Correctness] "The farthest 1/3 of the Universe has 4 times the amount of matter than the nearer 2/3" is wrong: the volume ratio is $(1-8/27)/(8/27)=19/8\approx2.4$. Only the potential share of the outer third, $1-(2/3)^2=5/9$, matches "more than half".
+- [Correctness] Eq. (1.19) closes the spinless orbit phase at $2\pi n$, but the quoted levels $(i+\tfrac12)\hbar\omega$ imply the semiclassical condition $\Phi/\Phi_0=n+\tfrac12$ (Maslov phase $\pi$). The supposedly missing $\pi$ is this omitted term, and the Zeeman $\pi$ for $g\approx2$ gives the standard spin-split levels; the interpretation section should state this standard resolution.
+- [Structure] Split the fourteen numbered results into callouts or separate subsections, each with a one-line "shared with standard physics / distinctive claim" tag, and shorten the 47-row quantity table to the symbols that are actually used.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/01 The paradigm of Cosmic Relativity and its evidence/01.08 The Universal Clock of Cosmic Relativity.md
+priority: low
+graph: yes
+manim: no
+summary: A short note with a correct temperature value and a good cosmic-time caveat, but it overstates CMB isotropy.
+- [Correctness] "The same everywhere to ... better than a part in a million" overstates the isotropy: the CMB dipole is about $1.2\times10^{-3}$, and the intrinsic anisotropies are about $10^{-5}$ after the dipole is removed; add a callout with these values.
+- [Example] Show the clock reading: $T=T_0(1+z)$, so for example $z=1100$ gives about 3000 K. This makes concrete how temperature labels epochs.
+- [Graph] Log-log plot of $T_\mathrm{CMB}=2.725(1+z)$ K for $z\in[0,1100]$, marking recombination.
+- [Structure] Give the temperature table row a symbol (for example $\thermal{T}_{\mathrm{CMB}}$) instead of "—".
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/01 The paradigm of Cosmic Relativity and its evidence/01.09 Cosmic Relativity and Its Experimental Tests.md
+priority: low
+graph: no
+manim: no
+summary: A brief claims note; the interpretation correctly points to Ashby but gives no worked example.
+- [Example] Add the standard GPS Sagnac correction $\Delta t=2\,\boldsymbol\omega_E\cdot\mathbf A/c^2$ (up to about 100 ns for a receiver's signal path) computed in the Earth-centred inertial frame within special relativity. This shows why receiver-velocity terms appear without Galilean velocity addition.
+- [Links] Link the GNSS claim to [[11.08 Experimental Tests of Time Dilation - GNSS and GPS]].
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/01 The paradigm of Cosmic Relativity and its evidence/01.10 Cosmic Relativity and General Relativity.md
+priority: low
+graph: no
+manim: no
+summary: The interpretation section handles the "Centenary Einstein's Equation" well; the gravitational-wave claim needs a check.
+- [Intuition] Add that GW170817 constrains $|v_\mathrm{gw}-c|/c\lesssim10^{-15}$: gravitational waves and light have equal speeds, which says nothing about Galilean versus Lorentzian velocity addition.
+- [Simplify] Write the algebraic identity explicitly: (1.23) is $G_{ik}=(8\pi G/c^4)(T_{ik}+T_{ik(U)})$, the standard field equation with total stress–energy.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/01 The paradigm of Cosmic Relativity and its evidence/01.11 Summary.md
+priority: low
+graph: no
+manim: no
+summary: A chapter summary with an appropriate review exercise; no change needed.
+- [Structure] No change needed beyond optionally listing, in one line each, which chapter-1 claims are shared with standard physics and which are distinctive.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/02 Space and time of our fundamental theories/02 References.md
+priority: low
+graph: no
+manim: no
+summary: A reference list; one entry is garbled.
+- [Correctness] Ref. 3: the book title is "Einstein, Tagore and the Nature of Reality" (ed. P. Ghose, Routledge Studies in the Philosophy of Mathematics and Physics). The printed entry scrambles the series name into the title and misspells Einstein.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/02 Space and time of our fundamental theories/02.00 Space and Time of Our Fundamental Theories.md
+priority: low
+graph: no
+manim: no
+summary: A chapter abstract and introduction with a sensible operational frame; no change needed.
+- [Structure] No change needed.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/02 Space and time of our fundamental theories/02.01 Newton's Space and Time.md
+priority: medium
+graph: yes
+manim: yes
+summary: Faithful quotations with a short physical interpretation; the bucket experiment would benefit from a quantitative example and visuals.
+- [Correctness] The Scholium on time and space follows the Definitions and precedes the Axioms (Laws of Motion), outside Book 1. The note says it is the first Scholium of Book 1, "after the definitions and 'axioms'".
+- [Example] Derive the free surface $z(r)=\Omega^2r^2/(2g)$ from the interpretation's pressure argument; for $R=0.15$ m and $\Omega=2\pi$ rad/s the rim rises about 4.5 cm.
+- [Graph] Plot $z(r)$ for $\Omega=2,4,6$ rad/s over $r\in[-0.15,0.15]$ m.
+- [Manim] Bucket spin-up: the bucket starts rotating, the water lags, and the surface goes from flat to parabolic, matching Newton's four stages.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/02 Space and time of our fundamental theories/02.02 Ernst Mach's Critique and Insight.md
+priority: low
+graph: no
+manim: no
+summary: A quotation-heavy historical note with an adequate interpretation.
+- [Intuition] Mach's "walls several leagues thick" question has a quantitative general-relativistic answer: Lense–Thirring frame dragging inside a rotating shell, measured by Gravity Probe B and LAGEOS. Add one paragraph with the order of magnitude.
+- [Links] Link to [[07.12 The GTR and Mach's Principle]] where Einstein's adoption of Mach's principle is mentioned.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/02 Space and time of our fundamental theories/02.03 Space and Time in 19th Century Physics.md
+priority: low
+graph: no
+manim: no
+summary: A readable historical account with a sound interpretation.
+- [Example] Show the ether's "electromagnetic properties" numerically: $c=1/\sqrt{\mu_0\varepsilon_0}\approx3.00\times10^8$ m/s, the Maxwell result that made the medium idea attractive.
+- [Structure] Fix the typo "forward to Max Jammer's book" to "foreword".
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/02 Space and time of our fundamental theories/02.04 Space and Time in Einstein's Relativity.md
+priority: medium
+graph: yes
+manim: yes
+summary: A long lecture account with a useful sign-convention callout, but it keeps two physically wrong arguments and a misquoted letter without comment.
+- [Correctness] "Since any two points in space-time can be connected by light, it follows that their interval remains invariant" is wrong: spacelike-separated events cannot be joined by a light signal, and invariance of the null cone alone gives only $ds'^2=\lambda(v)\,ds^2$. Fixing $\lambda=1$ needs isotropy and the group property; correct this in the interpretation.
+- [Correctness] The local-time term $vx/c^2$ is described as making clocks run "at rates that depend on both the relative velocity and the distance". It is a position-dependent synchronization offset (relativity of simultaneity), not a rate; the rate effect is the separate factor $\gamma$.
+- [Correctness] Einstein–Barnett quotation: per Lehmkuhl (2014) it reads "which we are wont to look at" and "is not logically founded", not "which we wont" and "not logically found".
+- [Graph] Minkowski diagram: the invariant hyperbolas $x^2-c^2t^2=\pm1$, the light cone, and the boosted axes for $v=0.6c$.
+- [Manim] A Lorentz boost of the Minkowski grid in which the axes scissor toward the light cone while the hyperbolas stay fixed, showing what "rotation in space-time" means.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/02 Space and time of our fundamental theories/02.05 Speculative Space and Time.md
+priority: low
+graph: yes
+manim: no
+summary: A short, correct overview of extra dimensions; the experimental bound is vague and the in-vault Kaluza–Klein collection is not linked.
+- [Example] Replace "a few microns" with the current bound: torsion-balance tests (Eöt-Wash, Lee et al. 2020) confirm the inverse-square law for gravitational-strength Yukawa terms down to about 50 µm, which bounds the largest extra dimension to tens of micrometres.
+- [Graph] Log-log plot of $F r^2$ (normalized) against $r$ for one and two compact dimensions of size $R=50$ µm, showing the crossover from $1/r^2$ ($r\gg R$) to $1/r^{2+n}$ ($r\ll R$).
+- [Links] Link the Kaluza–Klein paragraph to [[Kaluza-Klein - Study Guide]] and the charge-quantization remark to [[KK 19 Deriving charge from phase winding]].

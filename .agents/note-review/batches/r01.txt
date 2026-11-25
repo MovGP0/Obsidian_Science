@@ -1,0 +1,86 @@
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/01 Numbers and Arithmetic/02.01 Arithmetic rules.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/01 Numbers and Arithmetic/Absolute values and triangle bounds.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/01 Numbers and Arithmetic/Annuities.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/01 Numbers and Arithmetic/Arithmetic - Catalogue Guide.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/01 Numbers and Arithmetic/Arithmetic geometric harmonic and quadratic means.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/01 Numbers and Arithmetic/Chebyshev sum inequalities.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/01 Numbers and Arithmetic/Commensurability.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/01 Numbers and Arithmetic/Comparing means of two positive numbers.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/01 Numbers and Arithmetic/Compound interest.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/01 Numbers and Arithmetic/Depreciation.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/01 Numbers and Arithmetic/Inequalities between means.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/01 Numbers and Arithmetic/Inequality definitions and rules.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/01 Numbers and Arithmetic/Integers.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/01 Numbers and Arithmetic/Irrational and transcendental numbers.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/01 Numbers and Arithmetic/Irrational numbers.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/01 Numbers and Arithmetic/Loan repayment.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/01 Numbers and Arithmetic/Natural Numbers.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/01 Numbers and Arithmetic/Number sets and the real line.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/01 Numbers and Arithmetic/Percentages.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/01 Numbers and Arithmetic/Powers and exponent rules.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/01 Numbers and Arithmetic/Radical expressions.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/01 Numbers and Arithmetic/Rational Numbers.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/01 Numbers and Arithmetic/Ratios and transformations of proportions.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/01 Numbers and Arithmetic/Real Numbers.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/01 Numbers and Arithmetic/Roots and principal values.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/02 Sets, Logic, and Proof/01.01 Numbers and sets.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/02 Sets, Logic, and Proof/01.04 Logical statements.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/02 Sets, Logic, and Proof/01.05 Quantifiers.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/02 Sets, Logic, and Proof/01.06 Definitions and assumptions.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/02 Sets, Logic, and Proof/01.07 Indexed notation.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/02 Sets, Logic, and Proof/01.08 Proof methods.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/02 Sets, Logic, and Proof/Direct and constructive proofs.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/02 Sets, Logic, and Proof/Mathematical induction.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/02 Sets, Logic, and Proof/Mathematical notation and reasoning - Overview.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/02 Sets, Logic, and Proof/Proof by contradiction.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/02 Sets, Logic, and Proof/Sets relations and cardinality.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/02 Sets, Logic, and Proof/Statements quantifiers and proof.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/03 Algebra and Equations/01.02 Variables and expressions.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/03 Algebra and Equations/02.02 Equivalent expressions.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/03 Algebra and Equations/02.03 Rational expressions.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/03 Algebra and Equations/02.04 Equations and inequalities.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/03 Algebra and Equations/02.05 Simultaneous equations.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/03 Algebra and Equations/02.06 Rearranging formulas.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/03 Algebra and Equations/02.07 Completing the square.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/03 Algebra and Equations/02.08 Checking solutions.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/03 Algebra and Equations/Algebra - Overview.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/03 Algebra and Equations/Algebraic expressions and their types.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/03 Algebra and Equations/Bernoulli and binomial inequalities.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/03 Algebra and Equations/Cubic equations.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/03 Algebra and Equations/Equation forms and safe transformations.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/03 Algebra and Equations/Exponential and logarithmic equations.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/03 Algebra and Equations/Factoring polynomials.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/03 Algebra and Equations/Greatest common divisors of polynomials.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/03 Algebra and Equations/Hyperbolic equations.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/03 Algebra and Equations/Linear and quadratic equations.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/03 Algebra and Equations/Polynomial roots and higher degrees.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/03 Algebra and Equations/Polynomials and identities.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/03 Algebra and Equations/Quadratic Formula.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/03 Algebra and Equations/Quartic equations.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/03 Algebra and Equations/Rational expressions and polynomial division.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/03 Algebra and Equations/Solving linear and quadratic inequalities.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/03 Algebra and Equations/The binomial theorem.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/04 Functions and Graphs/01.03 Functions and relations.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/04 Functions and Graphs/03.01 Function definitions.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/04 Functions and Graphs/03.02 Graphs.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/04 Functions and Graphs/03.03 Polynomial and rational functions.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/04 Functions and Graphs/03.04 Exponential and logarithmic functions.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/04 Functions and Graphs/03.06 Function transformations.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/04 Functions and Graphs/03.07 Composition and inverse functions.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/04 Functions and Graphs/03.08 Representations.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/04 Functions and Graphs/Elementary function families.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/04 Functions and Graphs/Exponential and logarithmic graphs.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/04 Functions and Graphs/Fractional linear graphs.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/04 Functions and Graphs/Function composition and inversion.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/04 Functions and Graphs/Function inputs outputs and representations.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/04 Functions and Graphs/Function order bounds and symmetry.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/04 Functions and Graphs/Functions - Overview.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/04 Functions and Graphs/Functions and their representation - Catalogue Guide.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/04 Functions and Graphs/Grid and alignment nomograms.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/04 Functions and Graphs/Hyperbolic functions.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/04 Functions and Graphs/Hyperbolic identities.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/04 Functions and Graphs/Inverse hyperbolic functions.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/04 Functions and Graphs/Logarithms and their bases.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/04 Functions and Graphs/Polynomial graph shapes.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/04 Functions and Graphs/Radical and real-power graphs.md
+01 Mathematics/01 Foundations, Arithmetic, and Algebra/04 Functions and Graphs/Scales and transformed graph paper.md

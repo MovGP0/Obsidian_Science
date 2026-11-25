@@ -1,0 +1,461 @@
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/00.00 Statistical Mechanics.md
+priority: low
+graph: no
+manim: no
+summary: Clear course hub with a useful reading-route section; all links resolve, but a few chapter introductions are missing and two links are ambiguous.
+- [Links] Chapters 10, 11, 12, 13 and appendices A, B, C have no "Chapter introduction" entry although the notes exist; add [[10.00 Phase Transitions]], [[11.00 Ising Model]], [[12.00 Landau Theory and the Renormalization Group]], [[13.00 Exercise Solutions]], [[A.00 Gaussian Integrals and the Gamma Function]], [[B.00 Saddle-Point Method]] and [[C.00 Elements of Combinatorics and Probability]] to match Chapters 1–9.
+- [Links] [[02.10 Summary]] and [[10.12 Summary]] are ambiguous basenames (identically named notes exist in 04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory); path-qualify them, e.g. [[02 Foundations of Statistical Mechanics/02.10 Summary|2.10 Summary]], so Obsidian cannot resolve them to the QFT notes.
+- [Structure] Chapter 5 lists "5.8 Exercises" as a numbered section while other chapters use unnumbered "Exercises" (xx.99); either keep it as is but note the inconsistency, or align the naming.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/00.01 Introduction.md
+priority: low
+graph: no
+manim: no
+summary: Clear motivating introduction with a concrete canonical-ensemble example; the last paragraph is generic book-blurb text.
+- [Simplify] The closing paragraph ("Many figures help the reader visualize the concepts") is source-preface boilerplate; either drop it or replace it with a short reading-path list linking [[01.00 Review of Thermodynamics]] and [[02.00 Foundations of Statistical Mechanics]].
+- [Links] Add a link to [[00.00 Statistical Mechanics]] (the contents hub) so the introduction is not a dead end in the vault graph.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/01 Review of Thermodynamics/01.00 Review of Thermodynamics.md
+priority: low
+graph: no
+manim: no
+summary: Concise chapter hub with a useful guiding example (gas in a cylinder) and correct links.
+- No change needed; optionally list the nine section links (01.01 to 01.09) directly so the hub is navigable without going through the contents note.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/01 Review of Thermodynamics/01.01 Thermodynamic Systems and State Variables.md
+priority: low
+graph: no
+manim: no
+summary: Short, clear section hub with a good steady-state-versus-equilibrium check question.
+- No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/01 Review of Thermodynamics/01.01.01 System Definition and Classification.md
+priority: low
+graph: no
+manim: no
+summary: Clear and correct classification of systems and walls with good caveats about adiabatic versus isolated.
+- [Structure] The wall list at the end belongs before the paragraph on adiabatic and rigid walls, which already uses those terms; move it up directly after Definition 1.1.
+- [Example] Add a small table mapping wall combinations (adiabatic+rigid+impermeable, diathermal+rigid+impermeable, diathermal+rigid+permeable) to system type and ensemble (microcanonical, canonical, grand canonical) to make the ensemble paragraph scannable.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/01 Review of Thermodynamics/01.01.02 Equilibrium State and State Variables.md
+priority: low
+graph: no
+manim: no
+summary: Accurate and readable; good caveats on steady states, glasses, and limits of extensivity.
+- [Structure] Molar concentration appears in the table with symbol "—"; give it a symbol (for example $c$) or drop the row, and add "per particle" to the $\energy{\mu}$ description to contrast with the per-mole $	hermal{s}$ defined in the same note.
+- [Intuition] Add one sentence on why only a few variables suffice (most microscopic degrees of freedom average out; conserved quantities and external constraints survive), as a forward pointer to Chapter 2.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/01 Review of Thermodynamics/01.01.03 Equation of State and Thermodynamic Space.md
+priority: low
+graph: yes
+manim: no
+summary: Clear and correct, with useful checks; the "thermodynamic space" idea would benefit from a picture.
+- [Graph] Add a 3D surface plot of the ideal-gas equation of state $P=nRT/V$ for $n=1\,\mathrm{mol}$, $V\in[0.005,0.05]\,\mathrm{m^3}$, $T\in[100,600]\,\mathrm{K}$, with isotherm curves drawn on it, to show that equilibrium states form a 2D surface in $(P,V,T)$ space.
+- [Example] Since the van der Waals equation is mentioned, state it here, $\left(P+a n^2/V^2\right)(V-nb)=nRT$, with one sentence on what $a$ and $b$ correct, instead of only referring to the source's Example 1.3.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/01 Review of Thermodynamics/01.02 First Law of Thermodynamics.md
+priority: low
+graph: no
+manim: no
+summary: Short, clear section hub with a good motivating contrast between constant-volume and constant-pressure heating.
+- No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/01 Review of Thermodynamics/01.02.01 Internal Energy, Heat, and Work.md
+priority: low
+graph: yes
+manim: no
+summary: Correct, with clear sign convention and a helpful sign check; path dependence of heat and work is stated but not shown.
+- [Example] Add a numerical example of two paths between the same ideal-gas states (isothermal versus isochoric-then-isobaric) with computed $Q$ and $W$ differing but $\Delta U$ equal, to make "heat and work are not state functions" concrete.
+- [Graph] Add a $P$–$V$ plot of those two paths for $1\,\mathrm{mol}$ ideal gas between $(V_A,T)$ and $(2V_A,T)$, shading the areas under each path to show different work.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/01 Review of Thermodynamics/01.02.02 Differential Form and Quasi-Static Processes.md
+priority: low
+graph: no
+manim: yes
+summary: Careful and correct treatment of quasi-static versus reversible and of when $P\,dV$ is the actual work.
+- [Simplify] The paragraph on the state-identity status of (1.2) is dense; add a two-line worked example: free expansion of an ideal gas from $V$ to $2V$ has $Q=W=0$ but $\int T\,dS = nRT\ln 2$ and $\int P\,dV = nRT\ln 2$, so the terms are not actual heat and work.
+- [Manim] Optional animation of a piston: slow quasi-static expansion with gas pressure tracking the external pressure versus sudden release into vacuum, with a $P$–$V$ trace drawn only for the quasi-static case.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/01 Review of Thermodynamics/01.02.03 Heat Capacities.md
+priority: low
+graph: no
+manim: no
+summary: Correct definitions and a correct $C_P-C_V$ relation with good unit and sign checks; the derivation of (1.3) is deferred.
+- [Simplify] Show the short ideal-gas substitution explicitly: $TV(1/T)^2/(1/P)=PV/T=nR$, instead of only describing it.
+- [Example] Add numbers for water at room temperature ($\alpha_P\approx2.1\times10^{-4}\,\mathrm{K^{-1}}$, $\kappa_T\approx4.6\times10^{-10}\,\mathrm{Pa^{-1}}$) to show that $C_P-C_V$ is about 1% of $C_P$ for liquids, contrasting with gases.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/01 Review of Thermodynamics/01.03 Second Law of Thermodynamics.md
+priority: low
+graph: no
+manim: no
+summary: Short, clear section hub; the refrigerator example correctly warns against subsystem-only entropy reasoning.
+- No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/01 Review of Thermodynamics/01.03.01 Classical Formulations.md
+priority: low
+graph: no
+manim: no
+summary: Correct statements and a correct equivalence argument, but the equivalence proof is a dense verbal paragraph.
+- [Simplify] Rewrite the equivalence paragraph as two numbered constructions with explicit heat bookkeeping: engine takes $Q$ from hot and gives $W=Q$; refrigerator takes $Q_C$ from cold and gives $Q_C+W$ to hot; net effect $Q_C$ moved cold to hot with no work. Do the same for the converse.
+- [Graph] Add a simple static block diagram (hot reservoir, cold reservoir, engine and refrigerator boxes with heat and work arrows) for each of the two composite devices.
+- [Simplify] The sentence attributing a "tendency of isolated systems to increase their disorder" to the source invites the disorder misconception; either drop it or add that disorder is only a heuristic and entropy is defined in 01.03.03.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/01 Review of Thermodynamics/01.03.02 Carnot Cycle and Carnot's Theorem.md
+priority: low
+graph: no
+manim: yes
+summary: Correct, with an accurate native $P$–$V$ graph (adiabat and isotherm intersections check out for $\gamma=5/3$); the proof of (1.4) is only sketched in words.
+- [Simplify] Write the two-line derivation explicitly: $\Delta S_{\text{cycle}}=0 \Rightarrow Q_H/T_H=Q_C/T_C$, hence $\eta=1-Q_C/Q_H=1-T_C/T_H$; the current paragraph describes it without equations.
+- [Example] Add a numeric example, for instance $T_H=500\,\mathrm{K}$, $T_C=300\,\mathrm{K}$ gives $\eta_{\text{rev}}=0.40$, and link to [[01.08 Worked Examples|Example 1.1]] for the full ideal-gas calculation.
+- [Manim] Animate one Carnot cycle: a piston-cylinder alternately in contact with hot and cold reservoirs and insulated, with a dot tracing A→B→C→D on the $P$–$V$ diagram and the enclosed area (net work) filling in at the end.
+- [Graph] Optionally add a companion $T$–$S$ diagram (a rectangle between $T_C$ and $T_H$) next to Fig. 1.1, which makes $Q_H$, $Q_C$ and $W$ visible as areas.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/01 Review of Thermodynamics/01.03.03 Entropy as a State Function.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and well argued; the decomposition of an arbitrary reversible cycle into Carnot cycles is described but not shown.
+- [Graph] Add a static $P$–$V$ figure of an arbitrary closed reversible cycle overlaid with a mesh of thin adiabats and isotherm segments, showing how interior segments cancel and only the outer zigzag remains.
+- [Example] Give the explicit ideal-gas entropy difference $\Delta S=nC_{V,m}\ln(T_B/T_A)+nR\ln(V_B/V_A)$ computed along two different reversible paths to show path independence concretely.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/01 Review of Thermodynamics/01.03.04 Clausius Inequality.md
+priority: low
+graph: no
+manim: no
+summary: Correct and careful about the reservoir temperature; applying the inequality before stating it is slightly awkward.
+- [Structure] Move the opening paragraph on the reservoir temperature to after Proposition 1.1 and start with the cyclic inequality, so the reader sees the statement before its caveats.
+- [Example] Add a worked example: a block of heat capacity $C$ at $T_1$ placed in a reservoir at $T_2$; show $\Delta S_{\text{block}}=C\ln(T_2/T_1)\ge C(T_2-T_1)/T_2=Q/T_2$, with equality only when $T_1=T_2$.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/01 Review of Thermodynamics/01.03.05 Principle of Maximum Entropy.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and clear with a good two-body example; the example would be stronger with the actual calculation and a plot.
+- [Example] Make the two-body example quantitative: with $U_1+U_2$ fixed, $dS_{\text{tot}}/dU_1=1/T_1-1/T_2=0$, and give a numeric final temperature for two equal blocks.
+- [Graph] Plot total entropy $S_{\text{tot}}(U_1)$ and the two subsystem entropies for two identical blocks with constant heat capacity $C$ ($U_1$ from near 0 to $U_{\text{tot}}$), marking the maximum at $U_1=U_{\text{tot}}/2$.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/01 Review of Thermodynamics/01.04 Third Law of Thermodynamics.md
+priority: low
+graph: yes
+manim: no
+summary: Correct, with two justified corrections to the source; the unattainability statement is left without a valid argument after the source's argument is corrected.
+- [Intuition] After the cooling-argument correction, give the standard valid argument: since all $S(T,X)$ curves for different control parameters $X$ meet at $T=0$, alternating isothermal and adiabatic steps shrink and infinitely many steps are needed to reach $T=0$.
+- [Graph] Plot $S(T)$ for two values of a control parameter (for example a paramagnet $S(T,B)$ at $B_1<B_2$) converging at $T=0$, with the staircase of isothermal and adiabatic steps drawn between them.
+- [Graph] Optionally plot Debye $C_V/(3nR)$ against $T/\Theta_D$ from 0 to 2 together with the Dulong–Petit line at 1, showing the $T^3$ approach to zero.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/01 Review of Thermodynamics/01.05 Thermodynamic Potentials.md
+priority: low
+graph: no
+manim: no
+summary: Short, clear section hub that ties potentials to experimental constraints.
+- No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/01 Review of Thermodynamics/01.05.01 Motivation - Natural Variables.md
+priority: low
+graph: no
+manim: no
+summary: Correct and well motivated; the Legendre preview is given in words where one equation would be clearer.
+- [Simplify] Replace the verbal paragraph on subtracting $TS$ with the one-line computation $d(U-TS)=T\,dS-P\,dV-T\,dS-S\,dT=-S\,dT-P\,dV$.
+- [Intuition] Add one sentence on why "without losing information" matters: $U(T,V)$ obtained by plain substitution determines $U(S,V)$ only up to an unknown function, whereas $F(T,V)$ contains the full information.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/01 Review of Thermodynamics/01.05.02 Legendre Transformation.md
+priority: medium
+graph: yes
+manim: yes
+summary: Mathematically correct but abstract; the key geometric idea (tangent lines and intercepts) is missing, which makes the transformation hard to grasp.
+- [Intuition] Add the geometric picture: $-g(p)$ is the $y$-intercept of the tangent line of slope $p$ to $f$, so the family of tangents encodes $f$ as fully as its points do.
+- [Graph] Plot a convex $f(x)=x^2/2+1$ on $x\in[-3,3]$ with tangent lines for slopes $p=-2,-1,0,1,2$, marking each intercept $-g(p)$; beside it plot $g(p)=p^2/2-1$.
+- [Example] Work one explicit example ($f=x^2/2\Rightarrow g=p^2/2$, or $f=e^x\Rightarrow g=p\ln p-p$) and verify $g'(p)=x$ for it.
+- [Manim] Animate a tangent line rolling along the convex curve while its intercept is plotted as a point tracing out $g(p)$ in a second panel.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/01 Review of Thermodynamics/01.05.03 Four Thermodynamic Potentials.md
+priority: low
+graph: no
+manim: no
+summary: Complete, correct derivations of all four differentials with a good explanation of minimum principles.
+- [Intuition] Add a short physical meaning for each potential (for example $-\Delta F$ is the maximum work obtainable at fixed $T$; $-\Delta G$ is the maximum non-$PV$ work at fixed $T,P$), which motivates the name "free energy".
+- [Structure] Consider a thermodynamic-square mnemonic as a compact summary after the four sections.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/01 Review of Thermodynamics/01.05.04 Chemical Potential and Open Systems.md
+priority: low
+graph: no
+manim: no
+summary: Correct and thorough; Euler relation, Gibbs–Duhem and the phase-rule count are right.
+- [Simplify] Show the one-line Euler derivation: differentiate $U(\lambda S,\lambda V,\lambda N_i)=\lambda U$ with respect to $\lambda$ at $\lambda=1$, instead of only citing Euler's theorem.
+- [Example] Add the ideal-gas chemical potential $\mu=k_BT\ln(n\lambda_T^3)$ as a preview, linking to [[05.01.04 Chemical Potential of the Classical Ideal Gas]], to give $\mu$ a concrete form and sign.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/01 Review of Thermodynamics/01.06 Maxwell Relations.md
+priority: low
+graph: no
+manim: no
+summary: Short, clear section hub with appropriate caveats.
+- No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/01 Review of Thermodynamics/01.06.01 Systematic Derivation.md
+priority: low
+graph: no
+manim: no
+summary: Correct derivation of all four Maxwell relations with a useful sign rule.
+- [Simplify] For (1.7), show the mixed-derivative step $\partial^2F/\partial V\partial T$ computed both ways, so each relation can be reproduced rather than just read.
+- [Structure] Add a compact table of the four relations with their generating potentials for quick reference.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/01 Review of Thermodynamics/01.06.02 Applications of the Maxwell Relations.md
+priority: low
+graph: yes
+manim: no
+summary: Correct derivations of the Joule equation, $C_P-C_V$ and the Joule–Thomson coefficient; the real-gas inversion behavior is only mentioned.
+- [Example] Apply the Joule equation to the van der Waals gas: $(\partial U/\partial V)_T=an^2/V^2$, a two-line result that shows what internal pressure means physically.
+- [Graph] Plot the Joule–Thomson inversion curve of a van der Waals gas in reduced variables ($T_r$ against $P_r$, $P_r$ from 0 to 9), shading the cooling region $\mu_{JT}>0$.
+- [Structure] The physical-quantities row with symbol "—" for the water expansion-zero temperature is not a quantity symbol; remove it from the table and keep the value in the text.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/01 Review of Thermodynamics/01.07 Thermodynamic Stability.md
+priority: low
+graph: no
+manim: no
+summary: Short, clear section hub distinguishing local stability from global equilibrium.
+- No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/01 Review of Thermodynamics/01.07.01 General Stability Conditions.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct conditions with good feedback intuition, but the step from $\delta^2 S<0$ to $C_V>0$ is asserted ("expanding the stability conditions gives") rather than shown.
+- [Simplify] Show the thermal case explicitly: transfer $\delta U$ between two equal halves, $\delta^2S\propto(\partial^2 S/\partial U^2)_V(\delta U)^2=-(\delta U)^2/(T^2C_V)<0$, hence $C_V>0$.
+- [Graph] Plot a van der Waals isotherm below $T_c$ in reduced variables ($T_r=0.9$, $V_r$ from 0.45 to 5), marking the spinodal points where $\partial P/\partial V=0$, the unstable branch between them, and the metastable branches out to the Maxwell-construction coexistence volumes.
+- [Intuition] Add a free-energy picture: $F(V)$ at fixed $T$ with a concave region between the spinodals and the common tangent defining coexistence, to show local versus global stability.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/01 Review of Thermodynamics/01.07.02 Inequalities between Susceptibilities.md
+priority: medium
+graph: no
+manim: no
+summary: Statements are correct, but neither $C_P\ge C_V$ from stability nor $\kappa_T/\kappa_S=C_P/C_V$ is derived, so the note reads as a list of results.
+- [Simplify] Derive $\kappa_T/\kappa_S=C_P/C_V$ in a few lines (Jacobians, or $(\partial V/\partial P)_S=(\partial V/\partial P)_T+(\partial V/\partial T)_P(\partial T/\partial P)_S$), and state the companion $\kappa_T-\kappa_S=TV\alpha_P^2/C_P$.
+- [Links] Link the $C_P\ge C_V$ statement to its proof in [[01.06.02 Applications of the Maxwell Relations]] and to (1.3) in [[01.02.03 Heat Capacities]].
+- [Example] Add the physical consequence: the speed of sound uses $\kappa_S$ ($c^2=1/(\rho\kappa_S)$); Newton's isothermal estimate for air was about 15% low because it used $\kappa_T$.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/01 Review of Thermodynamics/01.08 Worked Examples.md
+priority: medium
+graph: yes
+manim: yes
+summary: Derivations are correct (Carnot work/heat, Joule coefficient, van der Waals cooling, critical constants, $Z_c=3/8$, entropy from $F$, Maxwell relation) and well checked, but some passages are dense and two examples stop short of the most instructive result.
+- [Simplify] Example 1.1 and 1.3 share near-identical subscripts: $\thermal{T}_C$ (cold reservoir) vs $\thermal{T}_c$ (critical), and $\mechanical{V}_C$ (state C) vs $\mechanical{V}_c$ (critical), all listed on the same table rows; rename the cold reservoir to $\thermal{T}_L$/$\thermal{Q}_L$ or the critical values to $\thermal{T}_{\mathrm{cr}}$, $\mechanical{V}_{\mathrm{cr}}$ to remove the case-only distinction.
+- [Example] Example 1.2 "Entropy change": the callout says the van der Waals entropy must include cooling but never gives it; add $\Delta\thermal{S}=\mechanical{n}\thermal{R}\ln\frac{\mechanical{v}_2-\mechanical{b}}{\mechanical{v}_1-\mechanical{b}}+\thermal{C}_V\ln\frac{\thermal{T}_2}{\thermal{T}_1}$ (from the entropy derived in Example 1.3) and a number, e.g. argon ($\mechanical{a}\approx0.1355\,\unit{Pa\,m^6\,mol^{-2}}$, $\thermal{C}_V=\tfrac32\mechanical{n}\thermal{R}$) doubling from $22.4$ to $44.8\,\unit{L\,mol^{-1}}$ gives $\Delta\thermal{T}\approx-0.24\,\unit{K}$, showing why Joule observed no effect.
+- [Simplify] Work and efficiency paragraph: "If the isothermal volume ratio approaches one, the entire cycle shrinks ... their ratio has the Carnot value only as a nonzero-cycle limit" is confusing; state that $\energy{\eta}=1-\thermal{T}_C/\thermal{T}_H$ is independent of $\mechanical{V}_B/\mechanical{V}_A$ for every finite cycle, and that the cycle collapses onto the two adiabats (not to a point) as the ratio tends to one.
+- [Graph] Fig. 1.3: the $\thermal{T}_r=0.70$ isotherm is clipped at $\mechanical{P}_r=-0.3$ although its minimum is $\mechanical{P}_r\approx-1.35$ at $\mechanical{V}_r\approx0.58$; either extend the lower bound or note the negative-pressure dip, and add the Maxwell equal-area tie line and spinodal points for $\thermal{T}_r=0.85$ so the caption's "spinodal points" and the coexistence remark in the text are visible.
+- [Manim] Example 1.2: animate particles initially confined to the left half spreading into the vacuum after the partition is removed, with a counter showing $\energy{U}$ constant and $\Delta\thermal{S}=\mechanical{n}\thermal{R}\ln2$; motion conveys the irreversible transient better than the static before/after Fig. 1.2.
+- [Links] "equation (1.4)" and "Maxwell relation (1.8)" are cited as bare numbers; link them to [[01.03.02 Carnot Cycle and Carnot's Theorem]] and [[01.06.01 Systematic Derivation]], and move the first mention of "Equation (1.10)" (before its definition) to after the displayed equation.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/01 Review of Thermodynamics/01.09 Summary and Connection to Statistical Mechanics.md
+priority: low
+graph: no
+manim: no
+summary: Correct and useful dictionary between thermodynamics and statistical mechanics, with appropriate scope caveats.
+- [Links] Link each Table 1.2 row to the note where it is derived (for example [[02.05.02 Boltzmann Formula]], [[02.06 Gibbs Entropy]], and the canonical and grand canonical chapters), so the summary works as a navigation hub.
+- [Simplify] The temperature row ("Controls the energy distribution") is vague next to the others; give the explicit relation $1/T=(\partial S/\partial E)_{V,N}$ or the Boltzmann factor $e^{-E/k_BT}$.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/01 Review of Thermodynamics/Thermodynamic equilibrium, work, and the fundamental postulates.md
+priority: high
+graph: yes
+manim: yes
+summary: The isothermal and adiabatic derivations are correct and well checked, but the note reads as a page-by-page notebook transcription with sketch narration and trivia, a wrong Gibbs margin formula, and a physical-quantities table full of symbols from other notes.
+- [Correctness] Postulate II margin: "$\Delta G=H-T\Delta S$" should be $\Delta G=\Delta H-T\Delta S$ (constant $T$), and "$\Delta G_{\mathrm{univ}}>0$" is wrong as a spontaneity criterion; state instead that at fixed $T,P$ a spontaneous process has $\Delta G_{\mathrm{sys}}<0$, equivalent to $\Delta S_{\mathrm{univ}}=-\Delta G/T>0$, or drop the margin line.
+- [Correctness] Physical-quantities table lists symbols the note never uses and that clash with used ones: $\thermal{T}_c$ as "Curie temperature" (the note uses $T_c$ for the cold reservoir), $n$ as "number density" (the note uses $n$ in mol), $\energy{E}$ Boltzmann-weight energy, Landé $g$, degeneracy $g$, fugacity $z$, fine-structure $\alpha$ (the note's $\alpha$ is a power-rule exponent), and $\mechanical{\vec x}$; remove these and add the used $\thermal{T}_h$, $\thermal{T}_0$, $\thermal{T}_{\mathrm f}$, $\mechanical{P}_0$, $\mechanical{V}_0$, $\mechanical{F}_{\mathrm{int}}$, $\mechanical{F}_{\mathrm{ext}}$.
+- [Correctness] Symbol clashes: $W$ is work and multiplicity ($S=k_B\ln W$ in "Isothermal and adiabatic compression"), and $x$ is the piston coordinate in metres and the dimensionless $x=V/V_0$; use $\Omega$ for multiplicity and e.g. $\xi=V/V_0$ for the substitution.
+- [Links] The Postulate II link "[[#Statistical thermodynamics with C. Martens|the section on · Statistical thermodynamics ...]]" has a stray "·" and should point to [[#Second law of thermodynamics]]; the link at the end of "Isothermal and adiabatic compression" points to its own section and can be replaced by "above".
+- [Structure] Cut transcription narration and trivia ("The sketch shows ...", room NS2-2208, GitHub reference, the missed January 12 lecture, the Cuba Libre sketch, $\exists/\forall$ reminder) and merge the duplicate isothermal compression (worked twice) and repeated steady-state Earth paragraphs; in "Enthalpy and a Maxwell relation" actually state the resulting relation $(\partial T/\partial V)_S=-(\partial P/\partial S)_V$ instead of only the equal mixed derivatives, and say explicitly in "State functions" that there is no $\Delta Q$ or $\Delta W$.
+- [Graph] Add a $P/P_0$ versus $V/V_0$ plot on $[0.5,1]$ with the isotherm $1/x$ and the adiabat $x^{-5/3}$, shading the areas under each so the reader sees $W_{\mathrm{iso}}=\ln 2\,P_0V_0\approx0.693\,P_0V_0$ versus $W_{\mathrm{ad}}=\tfrac32(2^{2/3}-1)P_0V_0\approx0.881\,P_0V_0$; optional Manim of a piston compressing slowly while a state point traces the isotherm and then the adiabat on the same $PV$ diagram.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/02 Foundations of Statistical Mechanics/02.00 Foundations of Statistical Mechanics.md
+priority: low
+graph: no
+manim: no
+summary: Clear chapter hub with a good three-question reading guide and valid links.
+- No change needed; optionally list all section links (02.01 to 02.09) so the hub is complete without the contents note.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/02 Foundations of Statistical Mechanics/02.01 From Mechanics to Statistics.md
+priority: low
+graph: no
+manim: no
+summary: Short, clear section hub distinguishing microscopic and statistical states.
+- No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/02 Foundations of Statistical Mechanics/02.01.01 The Scale Problem.md
+priority: low
+graph: no
+manim: no
+summary: Correct counts ($1.8\times10^{24}$ degrees of freedom, twice as many initial values), but the diatomic remark sits awkwardly next to a displayed formula that only covers the monatomic case.
+- [Simplify] Either drop the diatomic sentence before the displayed formula or extend the formula to $f=5$ for a diatomic gas; currently the text says "the total number is therefore" right after mentioning rotations, but then uses $f=3$.
+- [Example] Make the impracticality concrete: storing $6N\approx3.6\times10^{24}$ double-precision numbers needs about $3\times10^{25}$ bytes, many orders of magnitude beyond any computer memory.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/02 Foundations of Statistical Mechanics/02.01.02 Limits of the Deterministic Description.md
+priority: low
+graph: yes
+manim: yes
+summary: Correct, with a justified numerical correction to the source ($\ln 10^{30}\approx69$, giving about 69 ps).
+- [Graph] Plot $\ln\delta(t)/\delta(0)$ against $t$ for $\lambda=1\,\mathrm{ps^{-1}}$ from 0 to 100 ps, showing linear growth until saturation at the accessible-region size, with horizontal lines at the resolution scale marking $t^*$ for $\delta(0)=10^{-30}$ and $10^{-31}$ (illustrating the $\ln 10/\lambda$ gain).
+- [Manim] Animate two nearby trajectories in a chaotic billiard (for example a stadium) starting from almost identical initial conditions and visibly diverging after a few bounces.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/02 Foundations of Statistical Mechanics/02.02 Phase Space.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub with an important warning about Γ-space versus μ-space pictures.
+- No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/02 Foundations of Statistical Mechanics/02.02.01 Definitions - μ-Space and Γ-Space.md
+priority: low
+graph: yes
+manim: no
+summary: Correct definitions with a good remark on correlations, but no picture of the one-point-versus-many-points distinction.
+- [Graph] Add a side-by-side static figure for $N=3$ particles in one dimension: left panel μ-space $(q,p)$ with three points; right panel a schematic of Γ-space showing a single point labelled $(q_1,q_2,q_3,p_1,p_2,p_3)$.
+- [Example] Use a single 1D harmonic oscillator as a worked example where μ-space and Γ-space coincide (both 2D), then a two-particle 1D system with a 4D Γ-space, to build the idea step by step.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/02 Foundations of Statistical Mechanics/02.02.02 Phase-Space Trajectories.md
+priority: low
+graph: yes
+manim: yes
+summary: Correct; the oscillator energy-ellipse check is good but not shown, and the uniqueness proof skips the time-shift step for autonomous systems.
+- [Simplify] In the proof of Proposition 2.1, add the missing step: for an autonomous system, if two trajectories meet at the same point at different times $t_1,t_2$, time-shifting one by $t_2-t_1$ gives two solutions with the same value at one time, so they are the same trajectory.
+- [Graph] Plot the phase portrait of a 1D harmonic oscillator, $H=p^2/2m+m\omega^2q^2/2$, with nested ellipses for several energies and direction arrows (clockwise for $q$ right, $p$ up).
+- [Manim] Animate a point moving around an energy ellipse together with the oscillating mass, to connect the phase-space trajectory with the physical motion.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/02 Foundations of Statistical Mechanics/02.02.03 Phase-Space Volume Element.md
+priority: low
+graph: no
+manim: yes
+summary: Short, correct note with a good native oscillator phase portrait and a careful remark on $h$ cells, but the shell-versus-cumulative sentence is confusing and the figure labels do not match the caption.
+- [Simplify] The sentence "Confusing the ellipse with its enclosed area changes a shell count into a cumulative count" mixes three objects; rewrite as: the curve has zero area, the full enclosed area $\Sigma(E)$ is the cumulative count of states below $E$, and only the annulus $\Delta\Gamma$ counts states in $[E,E+\Delta E]$; also move "Fig. 2.1 shows trajectories of one particle in one dimension" before the first mention of Fig. 2.1.
+- [Structure] The figure labels the ellipses $E_1,E_2,E_3$ and shades the annulus between $E_2$ and $E_3$, while the caption speaks of $[E,E+\Delta E]$; either relabel the inner and outer shaded boundaries as $E$ and $E+\Delta E$ or say in the caption that the shaded band is $[E_2,E_3]$.
+- [Example] Add the one-line calculation: the ellipse area is $\pi\sqrt{2mE}\sqrt{2E/k}=2\pi E/\omega$ with $\omega=\sqrt{k/m}$, so $\Sigma(E)/h=E/(\hbar\omega)$ and the annulus holds $\Delta E/(\hbar\omega)$ states, which shows concretely why one cell of area $h$ corresponds to one oscillator level.
+- [Manim] Animate a small patch of phase points flowing around the oscillator ellipses (rigid rotation in scaled coordinates) to show that the patch area, and the annulus, is preserved in time, linking to [[02.03 Liouville's Theorem]].
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/02 Foundations of Statistical Mechanics/02.03 Liouville's Theorem.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub with an important caveat about effective dissipative dynamics.
+- No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/02 Foundations of Statistical Mechanics/02.03.01 Probability Density in Phase Space.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and careful about units and normalization; lacks a concrete density.
+- [Example] Give an explicit normalized density, for example a Gaussian in $(q,p)$ for one particle, $\rho=\frac{1}{2\pi\sigma_q\sigma_p}e^{-q^2/2\sigma_q^2-p^2/2\sigma_p^2}$, and compute $\langle q^2\rangle$ from it.
+- [Graph] Plot that Gaussian density as a 3D surface over the $(q,p)$ plane to show what an ensemble cloud looks like.
+- [Structure] Move the "normalization check" paragraph after the ensemble-average formula it refers to.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/02 Foundations of Statistical Mechanics/02.03.02 Statement and Proof.md
+priority: low
+graph: no
+manim: yes
+summary: Correct and complete proof with consistent Poisson-bracket sign; the material-versus-partial derivative distinction is well explained.
+- [Manim] Animate a blob of points in the harmonic-oscillator phase plane rotating rigidly while a fixed observation window shows $\partial\rho/\partial t\ne0$ and a tagged moving point shows $d\rho/dt=0$.
+- [Simplify] State the result $\nabla_\Gamma\cdot\mathbf v=0$ as a highlighted intermediate result before using it, since it is the key step reused in 02.03.03.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/02 Foundations of Statistical Mechanics/02.03.03 Geometric Interpretation - Incompressibility.md
+priority: low
+graph: no
+manim: yes
+summary: Correct, with an accurate native figure (the parallelogram's edge vectors $(1,0.2)$ and $(0.25,1.05)$ give determinant 1); a real Hamiltonian example would be more convincing.
+- [Correctness] The caption and text call the mapping in Fig. 2.2 a "shear", but the drawn map (edge vectors $(1,0.2)$ and $(0.25,1.05)$) is a general area-preserving linear map, not a shear; call it an "area-preserving deformation" or redraw it as a true shear $(q,p)\to(q+ap,p)$.
+- [Manim] Animate a square of initial conditions under the pendulum (or free-particle) flow, stretching into a thin filament while its area, displayed numerically, stays constant; contrast with a damped oscillator whose region shrinks.
+- [Example] Add the free particle $q(t)=q_0+p_0t/m$, $p(t)=p_0$ as the simplest exact example: a square becomes a sheared parallelogram with unchanged area.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/02 Foundations of Statistical Mechanics/02.03.04 Consequences of Liouville's Theorem.md
+priority: low
+graph: no
+manim: no
+summary: Correct consequences with a valid source correction and links to the right follow-up notes; the constancy of fine-grained entropy is stated without its one-line reason.
+- [Simplify] Add the short argument for Corollary 2.2: since $\rho$ is constant along trajectories and $d\Gamma$ is invariant, $\int\rho\ln\rho\,d\Gamma$ is just relabelled by the flow and cannot change.
+- [Intuition] Add one sentence or a pointer to the coarse-graining picture (a filamenting blob whose coarse-grained density spreads), to make the apparent paradox concrete.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/02 Foundations of Statistical Mechanics/02.04 Ergodic Hypothesis.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub separating recurrence from equilibration.
+- No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/02 Foundations of Statistical Mechanics/02.04.01 The Averaging Problem.md
+priority: low
+graph: yes
+manim: no
+summary: Clear statement of the time-average versus ensemble-average problem; lacks a concrete example where the two can be compared.
+- [Structure] The subscript "mis" in $\tau_{\mathrm{mis}}$ is a leftover from the Italian source ("misura"); rename it $\tau_{\mathrm{meas}}$ for English readers.
+- [Example] Add the 1D harmonic oscillator as a solvable check: the time average of $q^2$ over one period is $E/(m\omega^2)$, equal to the microcanonical average over the energy ellipse.
+- [Graph] Plot the running time average $\frac1\tau\int_0^\tau q^2\,dt$ for that oscillator against $\tau$ (0 to 10 periods), converging to the horizontal line at $E/(m\omega^2)$.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/02 Foundations of Statistical Mechanics/02.04.02 Ergodic Hypothesis.md
+priority: medium
+graph: yes
+manim: yes
+summary: Correct and carefully qualified, but abstract; no example of an ergodic versus non-ergodic flow is given.
+- [Example] Add the irrational rotation on a torus (two uncoupled oscillators with frequency ratio $\omega_1/\omega_2$): rational ratio gives closed orbits (not ergodic on the torus), irrational gives dense orbits (ergodic on the torus but not on the full energy surface).
+- [Graph] Plot trajectories on the unit square $(\theta_1,\theta_2)$ mod $2\pi$ for $\omega_1/\omega_2=2/3$ and $\omega_1/\omega_2=\sqrt2$ side by side, over the same long time, to show closed versus space-filling orbits.
+- [Manim] Animate the $\sqrt2$ torus trajectory gradually filling the square while a histogram of time spent in grid cells flattens toward uniform.
+- [Simplify] The sentence on delta-function weighting ("need not be uniform with respect to the unweighted geometric surface area") would be clearer with the explicit weight $d\Sigma/|\nabla_\Gamma\mathcal H|$.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/02 Foundations of Statistical Mechanics/02.04.03 Poincaré Recurrence Times.md
+priority: low
+graph: no
+manim: yes
+summary: Correct and well qualified; the $10^{10^{23}}$-year estimate is quoted from the source without showing where it comes from.
+- [Simplify] Show the order-of-magnitude chain: with $|\Gamma_E|/|\mathcal V|\sim e^{N}$ and $N\sim10^{23}$, $t_P\sim e^{10^{23}}t_{\text{micro}}\approx10^{0.43\times10^{23}}t_{\text{micro}}$, so the unit of $t_{\text{micro}}$ (seconds or years) is irrelevant at this scale.
+- [Example] Add a small-system contrast: for $N=10$ particles where the ratio is perhaps $e^{10}$, recurrence happens within about $10^4$ microscopic times and is observable in simulations.
+- [Manim] Animate a few-particle system (for example the Kac ring model or a few point particles in a box) returning near its initial configuration, with a counter showing how recurrence time grows with $N$.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/02 Foundations of Statistical Mechanics/02.04.04 Critical Discussion of the Ergodic Hypothesis.md
+priority: low
+graph: yes
+manim: no
+summary: Accurate, well referenced discussion; FPUT and KAM are named but not illustrated.
+- [Graph] Plot FPUT-style mode energies $E_k(t)$ for the first 4 normal modes of a 32-particle $\alpha$-chain starting with all energy in mode 1, over a time range that shows the near-recurrence, to make point 1 concrete.
+- [Example] For the two-uncoupled-oscillators obstruction, give numbers: $E_1=0.9E$, $E_2=0.1E$ initially, time average of $E_1$ stays $0.9E$, whereas the microcanonical average is $0.5E$.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/02 Foundations of Statistical Mechanics/02.05 Boltzmann Entropy.md
+priority: low
+graph: no
+manim: no
+summary: Short, clear hub.
+- No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/02 Foundations of Statistical Mechanics/02.05.01 Counting Microstates.md
+priority: low
+graph: no
+manim: no
+summary: Correct semiclassical counting rule with good dimensional and indistinguishability remarks; no worked count.
+- [Example] Add a minimal worked count: a single particle in a 1D box of length $L$ with energy below $E$ has $\Phi=2L\sqrt{2mE}$, giving $\Omega\approx2L\sqrt{2mE}/h$ states, which matches the quantum count $L\sqrt{8mE}/h$ in the large-$E$ limit.
+- [Intuition] Explain in one sentence why $h$ is the cell size (each quantum state occupies an area $h$ in the $(q,p)$ plane, consistent with the uncertainty principle and the oscillator check $E/\hbar\omega$ in 02.08.01).
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/02 Foundations of Statistical Mechanics/02.05.02 Boltzmann Formula.md
+priority: low
+graph: no
+manim: no
+summary: Correct and clear with good additivity and unit arguments.
+- [Simplify] Quote $k_B$ at its exact SI value $1.380649\times10^{-23}\,\mathrm{J/K}$ (exact since 2019) rather than the truncated $1.380$, which also rounds the wrong way (correct rounding is $1.381$).
+- [Intuition] Add the short uniqueness argument: a continuous function with $f(xy)=f(x)+f(y)$ must be $c\ln x$, so additivity forces the logarithm up to the constant $k_B$.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/02 Foundations of Statistical Mechanics/02.05.03 Connection to Thermodynamics.md
+priority: low
+graph: no
+manim: no
+summary: Correct relations with a good thermal-contact interpretation; no example applies them.
+- [Example] Apply the relations to the ideal gas $S=Nk_B\ln V+\tfrac32Nk_B\ln E+\dots$ to recover $E=\tfrac32Nk_BT$ and $PV=Nk_BT$ in two lines, as a preview of Chapter 3.
+- [Structure] Move the unit-check sentence about $P/T$ after the pressure relation is displayed; it currently appears before $P/T$ is introduced.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/02 Foundations of Statistical Mechanics/02.06 Gibbs Entropy.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub that distinguishes probability distributions from state counts.
+- No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/02 Foundations of Statistical Mechanics/02.06.01 Generalization to Nonuniform Distributions.md
+priority: low
+graph: yes
+manim: no
+summary: Correct, but the two-state check appears before the definition it tests.
+- [Structure] Move Definition 2.8 directly after the motivating first paragraph, and put the two-state check after it.
+- [Graph] Plot the two-state Gibbs entropy $S_G/k_B=-p\ln p-(1-p)\ln(1-p)$ for $p\in[0,1]$, marking the maximum $\ln2$ at $p=1/2$ and zeros at the ends.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/02 Foundations of Statistical Mechanics/02.06.02 Continuous Form.md
+priority: low
+graph: no
+manim: no
+summary: Correct and important clarification about the reference measure; the cell argument is given in words only.
+- [Simplify] Write the cell argument as equations: $p_j\approx\rho_j\Delta\Gamma$, so $-\sum_jp_j\ln p_j=-\int\rho\ln\rho\,d\Gamma-\ln\Delta\Gamma$, which shows the additive constant explicitly.
+- [Example] Add the 1D Gaussian example $S/k_B=\tfrac12\ln(2\pi e\sigma^2/\ell^2)$ for reference length $\ell$, showing that rescaling $\ell$ only shifts $S$ by a constant while differences are unchanged.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/02 Foundations of Statistical Mechanics/02.06.03 Constrained Maximization - Derivation of the Boltzmann Distribution.md
+priority: low
+graph: yes
+manim: no
+summary: Correct derivations with a good concavity argument, but $\beta=1/k_BT$ is asserted rather than identified.
+- [Simplify] Justify $\beta=1/k_BT$: with $p_i=e^{-\beta E_i}/Z$, $S_G=k_B(\beta U+\ln Z)$, so $\partial S_G/\partial U=k_B\beta$; comparing with $\partial S/\partial U=1/T$ from 02.05.03 gives $\beta=1/k_BT$.
+- [Graph] Plot normalized Boltzmann probabilities $p_i$ for a five-level system with equally spaced levels at $\beta\Delta E=0,0.5,1,2$, showing the transition from uniform to ground-state dominated.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/02 Foundations of Statistical Mechanics/02.06.04 Equivalence to Boltzmann Entropy for a Uniform Distribution.md
+priority: low
+graph: no
+manim: no
+summary: Short, correct calculation with useful caveats; the closing sentence is redundant.
+- [Simplify] Drop the final sentence "The two definitions agree exactly in this case", which repeats the conclusion of the previous paragraph.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/02 Foundations of Statistical Mechanics/02.07 Fundamental Postulate of Statistical Mechanics.md
+priority: low
+graph: no
+manim: yes
+summary: Correct and well qualified, with a good free-expansion example of when the postulate does not apply.
+- [Manim] Animate gas particles initially confined to the left half of a box, the partition removed, and the particles spreading until the coarse-grained density is uniform, with a caption marking when uniform weighting becomes appropriate.
+- [Example] Add a tiny discrete example: 4 spins with total magnetization zero have $\Omega=\binom42=6$ accessible states, each assigned $p=1/6$.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/02 Foundations of Statistical Mechanics/02.07.01 Justification and Status of the Postulate.md
+priority: low
+graph: no
+manim: no
+summary: Clear and balanced assessment of the four justifications with a correct uniqueness clarification.
+- No change needed; optionally link point 1 to [[02.04.02 Ergodic Hypothesis]] and point 3 to [[02.03.04 Consequences of Liouville's Theorem]].
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/02 Foundations of Statistical Mechanics/02.08 Examples.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub with useful prediction prompts for each example.
+- No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/02 Foundations of Statistical Mechanics/02.08.01 Example 1 - Distinguishable Harmonic Oscillators.md
+priority: low
+graph: yes
+manim: no
+summary: Correct derivation (Jacobian $2/\omega$, $\Phi=(2\pi E/\omega)^N/N!$ and the Stirling result all check out) with good factorial and shell-width remarks.
+- [Graph] Plot $S/(Nk_B)=\ln(E/(N\hbar\omega))+1$ against $E/(N\hbar\omega)$ from 0.5 to 10, with the tangent slope at one point labelled $1/(k_BT)$ per oscillator, to visualize $E=Nk_BT$.
+- [Example] Add a numeric check for small $N$ (for example $N=2$): $\Phi=(2\pi E/\omega)^2/2$ obtained from the 4D ball volume $\pi^2r^4/2$, so readers can verify the general formula.
+- [Structure] The quantum-comparison paragraph on $k_BT\gg\hbar\omega$ interrupts the derivation between the density of states and the entropy; move it to after the equipartition result.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/02 Foundations of Statistical Mechanics/02.08.02 Example 2 - Entropy of Mixing.md
+priority: low
+graph: yes
+manim: yes
+summary: Correct mixing-entropy derivation and limits; contains a leftover editorial note and a terse Gibbs-paradox resolution.
+- [Structure] Remove the "Equation-format correction" callout: it documents a past vault edit, not physics, and should not appear in the reader-facing note.
+- [Simplify] Make the Gibbs-paradox resolution explicit: with the $1/N!$ factor, identical gases give $\Delta S=k_B\ln[V^{N}/N!]-k_B\ln[V_A^{N_A}/N_A!]-k_B\ln[V_B^{N_B}/N_B!]\approx0$ by Stirling when $V_A/N_A=V_B/N_B$.
+- [Graph] Plot $\Delta S_{\text{mix}}/(nR)=-x\ln x-(1-x)\ln(1-x)$ for $x\in[0,1]$, marking the maximum $\ln2$ at $x=1/2$.
+- [Manim] Animate two colored gases separated by a partition, the partition removed, and the colors interdiffusing, then repeat with one color to illustrate that nothing observable changes for identical gases.

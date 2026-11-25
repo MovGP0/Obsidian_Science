@@ -1,0 +1,74 @@
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.10 Slowly rotating shell.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.11 Null shells.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.11.1 Geometry.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.11.2 Surface stress-energy tensor.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.11.3 Intrinsic formulation.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.11.4 Summary.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.11.5 Parameterization of the null generators.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.11.6 Imploding spherical shell.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.11.7 Accreting black hole.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.11.8 Cosmological phase transition.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.12 Bibliographical notes.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.13 Problems.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.2 Integration over hypersurfaces.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.2.1 Surface element (non-null case).md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.2.2 Surface element (null case).md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.2.3 Element of two-surface.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.3 Gauss-Stokes theorem.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.3.1 First version.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.3.2 Conservation.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.3.3 Second version.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.4 Differentiation of tangent vector fields.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.4.1 Tangent tensor fields.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.4.2 Intrinsic covariant derivative.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.4.3 Extrinsic curvature.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.5 Gauss-Codazzi equations.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.5.1 General form.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.5.2 Contracted form.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.5.3 Ricci scalar.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.6 Initial-value problem.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.6.1 Constraints.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.6.2 Cosmological initial values.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.6.3 Moment of time symmetry.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.6.4 Stationary and static spacetimes.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.6.5 Spherical space, moment of time symmetry.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.6.6 Spherical space, empty and flat.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.6.7 Conformally-flat space.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.7 Junction conditions and thin shells.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.7.1 Notation and assumptions.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.7.2 First junction condition.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.7.3 Riemann tensor.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.7.4 Surface stress-energy tensor.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.7.5 Second junction condition.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.7.6 Summary.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.8 Oppenheimer-Snyder collapse.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/03 Hypersurfaces/3.9 Thin-shell collapse.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/04 Lagrangian and Hamiltonian formulations of general relativity/4.0 Chapter introduction.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/04 Lagrangian and Hamiltonian formulations of general relativity/4.1 Lagrangian formulation.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/04 Lagrangian and Hamiltonian formulations of general relativity/4.1.1 Mechanics.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/04 Lagrangian and Hamiltonian formulations of general relativity/4.1.2 Field theory.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/04 Lagrangian and Hamiltonian formulations of general relativity/4.1.3 General relativity.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/04 Lagrangian and Hamiltonian formulations of general relativity/4.1.4 Variation of the Hilbert term.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/04 Lagrangian and Hamiltonian formulations of general relativity/4.1.5 Variation of the boundary term.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/04 Lagrangian and Hamiltonian formulations of general relativity/4.1.6 Variation of the matter action.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/04 Lagrangian and Hamiltonian formulations of general relativity/4.1.7 Nondynamical term.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/04 Lagrangian and Hamiltonian formulations of general relativity/4.1.8 Bianchi identities.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/04 Lagrangian and Hamiltonian formulations of general relativity/4.2 Hamiltonian formulation.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/04 Lagrangian and Hamiltonian formulations of general relativity/4.2.1 Mechanics.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/04 Lagrangian and Hamiltonian formulations of general relativity/4.2.2 3 + 1 decomposition.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/04 Lagrangian and Hamiltonian formulations of general relativity/4.2.3 Field theory.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/04 Lagrangian and Hamiltonian formulations of general relativity/4.2.4 Foliation of the boundary.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/04 Lagrangian and Hamiltonian formulations of general relativity/4.2.5 Gravitational action.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/04 Lagrangian and Hamiltonian formulations of general relativity/4.2.6 Gravitational Hamiltonian.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/04 Lagrangian and Hamiltonian formulations of general relativity/4.2.7 Variation of the Hamiltonian.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/04 Lagrangian and Hamiltonian formulations of general relativity/4.2.8 Hamilton's equations.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/04 Lagrangian and Hamiltonian formulations of general relativity/4.2.9 Value of the Hamiltonian for solutions.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/04 Lagrangian and Hamiltonian formulations of general relativity/4.3 Mass and angular momentum.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/04 Lagrangian and Hamiltonian formulations of general relativity/4.3.1 Hamiltonian definitions.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/04 Lagrangian and Hamiltonian formulations of general relativity/4.3.2 Mass and angular momentum for stationary, axially symmetric spacetimes.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/04 Lagrangian and Hamiltonian formulations of general relativity/4.3.3 Komar formulae.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/04 Lagrangian and Hamiltonian formulations of general relativity/4.3.4 Bondi-Sachs mass.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/04 Lagrangian and Hamiltonian formulations of general relativity/4.3.5 Distinction between ADM and Bondi-Sachs masses -  Vaidya spacetime.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/04 Lagrangian and Hamiltonian formulations of general relativity/4.3.6 Transfer of mass and angular momentum.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/04 Lagrangian and Hamiltonian formulations of general relativity/4.4 Bibliographical notes.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/04 Lagrangian and Hamiltonian formulations of general relativity/4.5 Problems.md

@@ -1,0 +1,331 @@
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/04 Partial Differential Equations/Insulated, periodic, and forced heat problems.md
+priority: high
+graph: yes
+manim: yes
+summary: The mathematics is correct, but the note is a page-by-page transcription with orphan headings, handwriting commentary, a course schedule, and the ring coefficients derived twice, which hides the three clean ideas (Neumann, periodic, subtract a profile).
+- [Correctness] The Physical quantities table lists $L$, $H$ (rectangular membrane dimensions) and $r$, $a$ (membrane radius), which this note never uses, and omits $g(x)$ and the rod-length meaning of $L$ (and $2L$ for the ring); replace with the symbols actually used.
+- [Structure] Remove the orphan headings `##### )` and the stray `**)**` lines, the February schedule table, and remarks such as "The handwriting labels..." and "The minus sign in the final handwritten margin..."; give each problem (Neumann rod, ring, periodic on $[0,L]$, nonhomogeneous Cases 1–3) its own heading.
+- [Structure] The ring coefficients $a_0,a_m,b_m$ are derived twice ("Superposition on the ring" and again after the schedule); merge into one derivation, and state $a_m$ where only $b_m$ is currently given; the $f(x)=x$ example sits under the $[0,L]$ periodic paragraph but uses $[-L,L]$ modes, so move it to the ring section.
+- [Intuition] Under "Zero eigenvalue" add that $A_0=\frac1L\int_0^L f\,dx$ is the conserved average temperature of an insulated rod (total heat cannot leave), so $u\to A_0$ as $t\to\infty$.
+- [Graph] Plot the Neumann solution for $f(x)=x$ on $[0,1]$, $k=1$: $u=\tfrac12-\sum_{n\,\text{odd}}\frac{4}{n^2\pi^2}\cos(n\pi x)e^{-n^2\pi^2t}$ (20 terms) at $t=0,0.01,0.05,0.2$, relaxing to the mean $1/2$; overlay the Dirichlet case $A=0$, $B=1$ relaxing to the line $u_E=x$.
+- [Manim] Animate the insulated rod profile flattening to its mean while the shaded area stays constant, then the Dirichlet rod relaxing to the equilibrium line $u_E(x)$, to contrast conserved heat with boundary-driven equilibrium.
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/04 Partial Differential Equations/Laplace and Poisson boundary problems.md
+priority: low
+graph: yes
+manim: no
+summary: Clear, carefully signed, and correct (compatibility condition, ball example, fundamental solution, and Green representation all check out); only small additions would help.
+- [Graph] Plot the ball example $u(r)=\frac{s_0}{6}(a^2-r^2)$ for $a=1$, $s_0=6$ on $0\le r\le1$ next to the 1D answer $u=x(1-x)$ from Practice 1, showing source-induced curvature with zero boundary values.
+- [Example] In "Harmonic functions and uniqueness", check the mean-value property for $u=x^2-y^2$ on a circle of radius $\rho$ about the origin (the average of $\rho^2\cos2\theta$ is $0=u(0)$), so the abstract statement gets a concrete instance.
+- [Intuition] In "Fundamental solution and Green functions", interpret $G(\mathbf x,\mathbf y)$ as the response at $\mathbf x$ to a unit point source at $\mathbf y$ with a grounded boundary, and point to the method of images as the standard construction for a half-space or ball.
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/04 Partial Differential Equations/Model error, random walks, and continuum limits.md
+priority: high
+graph: yes
+manim: yes
+summary: The random-walk derivations of advection, diffusion, and advection–diffusion are correct, but the note mixes course logistics, a norms primer, and handwriting commentary, and its quantity table is copied from unrelated population and diet models.
+- [Correctness] The Physical quantities table lists many symbols this note never uses ($R$, $\alpha$, $M$, $\beta$ twice with different meanings, $t_0$, $K$, $\delta$, $y_i$, ingredient amounts $x,y$, surpluses $s,t$, $a_i$, $d\theta_i/dt$) and defines $\tau$ as "Total population" although here $\tau=t$ is the moving-frame time; rebuild it from $\Delta x,\Delta t,c,D,U,C,f,g,h,z$.
+- [Correctness] "The notes credit the model to Witten and give 1978 as the year of introduction": diffusion-limited aggregation was introduced by Witten and Sander in 1981 (Phys. Rev. Lett. 47, 1400); correct the attribution and year.
+- [Structure] Remove office hours, homework-team notes, and handwriting remarks; split into "Measuring model error (metrics, norms, big-O fits)" and "Walkers to PDEs", or move the norms part to its own note, since the title promises continuum limits.
+- [Structure] "Properties of the fundamental solution" starts its list at 2; make $f_t=(D/2)f_{xx}$ item 1. "Measuring dimension" stops before the result: add $d=\lim_{L\to0}\log N/\log(1/L)$ and the typical 2D DLA value $d\approx1.71$.
+- [Graph] Plot the advection–diffusion kernel $C=e^{-(x-Ut)^2/(2Dt)}/\sqrt{2\pi Dt}$ for $U=1$, $D=1$ at $t=0.25,1,2$ on $-2\le x\le6$, and a log-log plot of $|s_n-3|$ for $s_n=(3n^2+2n)/(n^2+2)$, $n=1..1000$, with reference slope $-1$.
+- [Manim] Animate a few hundred unbiased, then biased, walkers on a 1D grid with their histogram converging to the spreading (and drifting) Gaussian, showing where $D=(\Delta x)^2/\Delta t$ and $U=2Dz/\Delta x$ come from.
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/04 Partial Differential Equations/Partial differential equations - Overview.md
+priority: low
+graph: no
+manim: no
+summary: A clear hub whose links all resolve, but it lists only the short 15.xx lessons and omits the longer worked notes in the same folder.
+- [Links] Add a "Worked material" list linking the folder's long notes ([[Insulated, periodic, and forced heat problems]], [[The wave equation on a line and a finite string]], [[Rectangular and circular membrane eigenmodes]], [[Laplace and Poisson boundary problems]], [[Wave diffusion and potential equations]], [[Travelling solitary waves]], [[Schrödinger evolution and probability]], [[Model error, random walks, and continuum limits]]).
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/04 Partial Differential Equations/Point sources and superposition.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and well organized (kernel, flux, and the two-source worked example all check); a field picture is the main missing piece.
+- [Graph] Add a 2D streamline plot in the $xy$-plane for the worked example: equal strengths at $(\pm1,0)$, then strengths $+1$ and $-1$, on $[-3,3]^2$, showing the null point at the origin and the dipole pattern.
+- [Intuition] In "Discrete and continuous source distributions", give the continuous potential $\phi=\frac1{4\pi}\iiint s(\mathbf y)/\|\mathbf x-\mathbf y\|\,dV_{\mathbf y}$ and note that superposing scalar potentials is easier than adding vectors.
+- [Example] Add the far-field check for the opposite-strength pair: for $R\gg b$ the field decays like $R^{-3}$ (dipole), compared with $R^{-2}$ for a single source.
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/04 Partial Differential Equations/Rectangular and circular membrane eigenmodes.md
+priority: high
+graph: yes
+manim: yes
+summary: The separation and Bessel material is correct, but the rectangular membrane is derived twice and the circular membrane three times, with handwriting remarks and inconsistent equation labels, so the single clean argument is hard to find.
+- [Correctness] The Physical quantities table defines $\mechanical{u}$ as "Pressure" in Pa (here it is membrane displacement in m), lists $\mechanical{\beta}$ both as a damping coefficient (unused here) and as initial velocity, and lists unused $\mechanical{v}$; fix the rows to match this note.
+- [Structure] Merge "Vibrating rectangular membrane", "Coefficients from the initial membrane velocity" and "Final exam study. Vibrating rectangular membrane" into one derivation, and the circular passes (incl. "Circular membrane review" and "Final exam study. Vibrating circular membrane") into one; drop the agenda table, the reused "Eq. (2)" labels, and handwriting remarks.
+- [Simplify] Give the full circular coefficients once: $A_{0n}=\iint\alpha J_0\,dA/(2\pi\int_0^aJ_0^2r\,dr)$, $A_{mn}=\iint\alpha J_m\cos m\theta\,dA/(\pi\int_0^aJ_m^2r\,dr)$, $B_{mn}$ likewise with $\sin m\theta$, using $\int_0^aJ_m^2(z_{mn}r/a)r\,dr=\tfrac{a^2}{2}J_{m+1}^2(z_{mn})$; the note only shows the sine projection and never the $m=0$ factor $1/(2\pi)$.
+- [Example] Finish "Quarter membrane": $g(0)=g(\pi/2)=0$ gives $g=\sin(2k\theta)$, $\mu=(2k)^2$, radial factor $J_{2k}(z_{2k,n}r/a)$; then compare disk frequency ratios $z_{mn}/z_{01}$ (1, 1.59, 2.14, 2.30, ...) with the string's integers to explain why drums sound inharmonic.
+- [Graph] Plot $J_0,J_1,J_2$ on $0\le z\le15$ with zeros $z_{01}\approx2.405$, $z_{11}\approx3.832$, $z_{02}\approx5.520$ marked, plus 3D surfaces of disk modes $(0,1),(1,1),(0,2)$ and the square-membrane mode $(2,1)$ with $L=H=1$.
+- [Manim] Animate disk modes $(0,1)$, $(1,1)$, $(0,2)$ as surfaces $J_m(z_{mn}r)\cos m\theta\cos(z_{mn}t)$ with nodal circles and diameters highlighted.
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/04 Partial Differential Equations/Schrödinger evolution and probability.md
+priority: low
+graph: yes
+manim: yes
+summary: Correct and careful (separation, real/imaginary system, current $J=2\operatorname{Im}(\bar\psi\psi_x)$, and two-mode interference all check); a visual of the interference term would add intuition.
+- [Graph] Plot $|\psi|^2=\sin^2\pi x+\sin^22\pi x+2\sin\pi x\sin2\pi x\cos(3\pi^2t)$ on $[0,1]$ at $t=0$ and at the half period $t=1/(3\pi)$, showing the density moving from one half to the other while the area stays 1.
+- [Manim] Animate the two-mode state: real and imaginary parts rotating at rates $\pi^2$ and $4\pi^2$ while $|\psi|^2$ sloshes between the halves with period $2/(3\pi)$, next to a single stationary mode with frozen density.
+- [Intuition] In "Why the total squared integral is preserved", compute $J(1/2,t)$ for the two-mode state to show probability flowing across the midpoint at the interference frequency $3\pi^2$.
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/04 Partial Differential Equations/Separation of variables on a circular membrane.md
+priority: low
+graph: yes
+manim: no
+summary: A compact, correct summary of the disk eigenproblem; a few numbers and a picture of the first zeros would make it concrete.
+- [Example] Give $j_{0,1}\approx2.405$, $j_{1,1}\approx3.832$, $j_{2,1}\approx5.136$, $j_{0,2}\approx5.520$ and their ratios to $j_{0,1}$, so "frequencies set by zeros" becomes concrete.
+- [Graph] Plot $J_0,J_1,J_2$ on $0\le z\le12$ with first zeros marked (shareable with [[Rectangular and circular membrane eigenmodes]]).
+- [Links] Both source links use the alias "Math 126"; give them distinct descriptive aliases (e.g. "Sturm–Liouville problems", "Rectangular membrane").
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/04 Partial Differential Equations/Source and vortex reconstruction.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and clearly argued (Biot–Savart cross-product order, Coulomb gauge, and the worked decompositions check); a picture of the two parts would help.
+- [Graph] Plot in the $z=0$ plane on $[-2,2]^2$ the field $(x-y,x+y)$ beside its source part $(x,y)$ and vortex part $(-y,x)$.
+- [Example] Add a localized example where the integral formulas apply, e.g. a uniform vortex tube $\boldsymbol\omega=\omega_0\hat z$ for $r<a$, giving $\mathbf F_v=\tfrac{\omega_0}{2}(-y,x)$ inside and $\tfrac{\omega_0a^2}{2r^2}(-y,x)$ outside.
+- [Intuition] In "Helmholtz decomposition and its limits", name the physical analogues (Coulomb's law for $-\nabla\phi$, Biot–Savart for $\nabla\times\mathbf A$) and link [[Point sources and superposition]].
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/04 Partial Differential Equations/The wave equation on a line and a finite string.md
+priority: high
+graph: yes
+manim: yes
+summary: Correct core results (modal coefficients, amplitude–phase form, d'Alembert) are buried in a transcription that repeats the fixed-end solution four times, includes an unrelated forced-heat section, an inconsistent damping passage, and a stray link.
+- [Correctness] The Physical quantities table lists $\mechanical{u}$ as "Pressure" in Pa alongside $\mechanical{u}$ as wave displacement, gives $\mechanical{\rho}$ twice with units kg/m³ and kg/m, and includes unused $\mechanical{A}$, $\mechanical{v}$, $\mechanical{\rho}_{\min}$, $\mechanical{\rho}_{\max}$, $L,H$ (membrane) and $r,a$; keep only symbols used here with one meaning each.
+- [Links] "The notes mark Section 3.3.5 on [[Rectangular and circular membrane eigenmodes#Eigenvalue problem with Bessel functions|...]] as the start of the material for Midterm 2" links a Fourier-series section to an unrelated Bessel heading; remove the link and the midterm remark.
+- [Correctness] In "Fundamental mode and higher modes", the displayed factor $\sin(n\pi x/L)\sin(n\pi ct/L)e^{-\beta(n\pi/L)^2t}$ does not solve $u_{tt}=c^2u_{xx}-\beta u_t$; show the actual underdamped mode $\sin(n\pi x/L)e^{-\beta t/2}\sin(\omega_n't+\theta_n)$ with $\omega_n'=\sqrt{(n\pi c/L)^2-\beta^2/4}$ and drop the conflicting $e^{-n^2t}$ remark.
+- [Structure] Move "Modal equation for the forced heat problem" to [[Insulated, periodic, and forced heat problems]], and merge the repeated fixed-end derivations (first derivation, boxed restatement, two "Midterm study" sections) into one.
+- [Graph] Plot the plucked string ($f$ a triangle peaked at $x=1/2$ with height 1, $g=0$, $L=c=1$, 30 terms) at $t=0,0.125,0.25,0.5$, plus the first three mode shapes $\sin(n\pi x)$.
+- [Manim] Animate d'Alembert's solution: a Gaussian bump splitting into two half-height pulses, then the plucked string as two traveling halves reflecting (inverted) at the fixed ends.
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/04 Partial Differential Equations/Travelling solitary waves.md
+priority: low
+graph: yes
+manim: yes
+summary: Clear and correct: every travelling-wave profile (KdV, focusing NLS, sine–Gordon kink, mKdV, BBM) verifies against its stated convention.
+- [Graph] Plot KdV pulses $\tfrac c2\operatorname{sech}^2(\tfrac{\sqrt c}{2}z)$ for $c=1,4,9$ on $-10\le z\le10$ (taller is narrower), and the kink $4\arctan e^z$ with its derivative $2\operatorname{sech}z$.
+- [Manim] Animate the exact KdV two-soliton solution ($c=4$ and $c=1$): the tall pulse overtakes the short one and both re-emerge with a phase shift, beside the naive sum of two single pulses, illustrating the solitary-wave versus soliton distinction.
+- [Intuition] In "Korteweg–de Vries equation", add the particle analogy $(U')^2/2+V(U)=0$ with $V=U^3-cU^2/2$: the solitary wave is the homoclinic orbit leaving $U=0$ and turning at $U=c/2$.
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/04 Partial Differential Equations/Wave diffusion and potential equations.md
+priority: low
+graph: yes
+manim: yes
+summary: Well structured and correct; examples and checks are good, and only visuals and one contrast are missing.
+- [Graph] Plot $e^{-\pi^2t}\sin\pi x+2e^{-4\pi^2t}\sin2\pi x$ at $t=0,0.01,0.05,0.1$ on $[0,1]$ (second mode dies first) and the heat kernel $e^{-x^2/(4t)}/\sqrt{4\pi t}$ at $t=0.05,0.2,1$.
+- [Manim] Animate the same initial bump under the wave equation (splits into two half-height pulses) and the heat equation (spreads without splitting) side by side.
+- [Intuition] In "Diffusion and the heat equation", contrast the heat kernel being positive everywhere for $t>0$ (infinite propagation speed) with the wave equation's finite domain of dependence $[x-ct,x+ct]$.
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/05 Calculus of Variations/17.01 Functions and functionals.md
+priority: low
+graph: no
+manim: no
+summary: Clear, correct, and well paced; the function-versus-functional distinction is made with good examples and checked practice answers.
+- [Example] After "Worked example: same endpoint, different functionals", add the arc-length functional $\int_0^1\sqrt{1+y'^2}\,dx$ for $y_1=x$ ($\sqrt2$) and $y_2=x^2$ ($\approx1.479$) to show a geometric functional that the later chapters minimize.
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/05 Calculus of Variations/17.02 Admissible variations.md
+priority: low
+graph: no
+manim: no
+summary: Clear and correct, with a useful figure and a careful treatment of linear versus nonlinear constraints.
+- [Intuition] In "Constraints beyond endpoint data", add a one-line picture for the normalized family: on the "sphere" $\|y\|_2=1$ a straight line leaves the surface quadratically, just as a tangent line leaves a circle, which is why normalization is needed.
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/05 Calculus of Variations/17.03 First variation.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and clear; the worked example (value $-1/4$ and exact expansion $11/12-\varepsilon/4+\varepsilon^2/6$) checks out.
+- [Graph] Plot $j(\varepsilon)=J[x^2+\varepsilon x(1-x)]=\tfrac{11}{12}-\tfrac{\varepsilon}{4}+\tfrac{\varepsilon^2}{6}$ for $-1\le\varepsilon\le3$ with its tangent line at $\varepsilon=0$ (slope $-1/4$), so the first variation is visibly an ordinary derivative.
+- [Example] Close the worked example by noting that the actual minimizer of this $J$ is $y=x^3/6+5x/6$ (from $y''=x$), so readers see where the descending direction leads.
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/05 Calculus of Variations/17.04 Euler–Lagrange equations.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and well argued (fundamental lemma, total derivative warning, and the worked minimizer with $J=-1/24$ all check).
+- [Graph] Plot $y_*=\tfrac12x(x-1)$ together with competitors $y_*+\varepsilon\sin(\pi x)$ for $\varepsilon=\pm0.1$ on $[0,1]$, annotated with their $J$ values, to show the stationary curve as the lowest member of a family.
+- [Links] Add a pointer to the Beltrami identity in [[Functionals and stationary curves]] for $x$-independent integrands, since this note is the main Euler–Lagrange entry point of the 17.xx sequence.
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/05 Calculus of Variations/17.05 Boundary terms.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and clear, with a good separation of interior equation, natural condition, endpoint cost, and moving endpoints.
+- [Graph] Plot the free-end minimizer $y=\tfrac12x^2-x$ beside the fixed-end minimizer $y=\tfrac12x(x-1)$ on $[0,1]$, showing the zero slope at $x=1$ that the natural condition produces.
+- [Example] After the moving-endpoint formula, add the shortest-distance example (segment from a point to a line meets it at a right angle), as in [[Constraints and free endpoints]], so the transversality formula gets one concrete use here too.
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/05 Calculus of Variations/17.06 Several variables and fields.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and clear (coupled pair, divergence-theorem step, and disk example all verify); it largely overlaps [[Fields of several variables]].
+- [Graph] Plot the disk minimizer $u_*=1-x_1^2-x_2^2$ as a 3D surface over the unit disk (a paraboloid "membrane under uniform load").
+- [Links] Cross-link [[Fields of several variables]] and [[Higher derivatives and coupled curves]], which cover the same material with different examples (minimal surfaces, weak form).
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/05 Calculus of Variations/17.07 Constraints.md
+priority: low
+graph: no
+manim: no
+summary: Correct and clear; the fixed-integral example ($\lambda=-12$, $y_*=6x(1-x)$, $J=6$) and the circle multiplier $\lambda=-(u'^2+v'^2)$ check out.
+- [Intuition] In "Pointwise constraints require local multipliers", add that $-\lambda=u'^2+v'^2$ is the squared speed, i.e. the multiplier is the centripetal "constraint force" needed to stay on the circle, which links to [[Physical action and equations of motion]].
+- [Links] Cross-link [[Constraints and free endpoints]], which treats the same fixed-average example with the unhalved functional ($J=12M^2$), and say why the two values differ by a factor 2.
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/05 Calculus of Variations/17.08 Second variation.md
+priority: low
+graph: no
+manim: no
+summary: Correct and clear, with a good saddle example, figure, and honest discussion of the non-sharp estimate.
+- [Intuition] In "A sufficient estimate and its limits", state the sharp result: $\int_0^1\eta^2\le\pi^{-2}\int_0^1\eta'^2$ (Wirtinger), so zero is a strict minimum exactly for $c<\pi^2$ and the saddle example with $c=2\pi^2$ lies beyond this threshold; link [[Tests with first and second variations]] for the Jacobi-equation view.
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/05 Calculus of Variations/17.09 Changing the problem.md
+priority: low
+graph: no
+manim: no
+summary: Clear and correct; the restricted-minimum example ($-\varepsilon/6+\varepsilon^2/6$) and the finite-dimensional analogue with figure make the point well.
+- [Links] In "Valid reductions and approximation", link [[Numerical variational methods]] for the finite trial-family (Ritz/Galerkin) remark.
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/05 Calculus of Variations/Calculus of variations - Catalogue Guide.md
+priority: low
+graph: no
+manim: no
+summary: A clear, correct entry guide with a good worked proof and nonexistence example; one link is broken.
+- [Links] The index line links [[Planned Topics#10. Calculus of variations|the detailed catalogue]], but no note named "Planned Topics" exists in the vault (only a backup under `.temp`); remove or retarget the link.
+- [Links] Mention that the 17.xx lessons and the catalogue lessons overlap pairwise (e.g. [[17.07 Constraints]] / [[Constraints and free endpoints]], [[17.08 Second variation]] / [[Tests with first and second variations]]) so readers do not work through both routes unknowingly.
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/05 Calculus of Variations/Calculus of variations - Overview.md
+priority: low
+graph: no
+manim: no
+summary: A concise hub; all links resolve.
+- [Links] Add a short "Applications and further lessons" list linking [[Classical curve problems]], [[Physical action and equations of motion]], [[Variational modeling of paths and surfaces]], and [[Calculus of variations - Catalogue Guide]].
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/05 Calculus of Variations/Classical curve problems.md
+priority: medium
+graph: yes
+manim: yes
+summary: Correct throughout (Beltrami step, cycloid, $I=\sqrt2\pi$ versus $\sqrt{2\pi^2+8}$ for the chord), but the brachistochrone is presented entirely in reduced variables, so the physical meaning and a picture are missing.
+- [Intuition] In "Brachistochrone as a weighted-length problem", state the physical origin in one line: from energy, $v=\sqrt{2gy}$, so $T=\int ds/v=\frac{1}{\sqrt{2g}}\int\sqrt{1+y'^2}/\sqrt y\,dx$, which is why $I$ differs from time by the constant $1/\sqrt{2g}$.
+- [Graph] Plot the cycloid $X=\theta-\sin\theta$, $Y=1-\cos\theta$, $0\le\theta\le\pi$, the straight chord to $(\pi,2)$, and a circular arc through both points, with $Y$ pointing down, annotating $I=4.443$ and $5.267$.
+- [Manim] Animate three beads released together at the origin sliding without friction along the chord, a circular arc, and the cycloid to $(\pi,2)$, with the cycloid bead arriving first; optionally add the tautochrone effect (beads started at different heights arrive at the bottom together).
+- [Example] In "Isoperimetric problem", add a numerical comparison at $L=12$ for the equilateral triangle ($\approx6.93$), square ($9$), regular hexagon ($\approx10.39$), and circle ($\approx11.46$) to show polygons approaching the circle.
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/05 Calculus of Variations/Constraints and free endpoints.md
+priority: low
+graph: no
+manim: no
+summary: Correct and clear (fixed-average example, natural condition, transversality, and the perpendicular-segment example all check), with a useful figure.
+- [Links] Cross-link [[17.07 Constraints]] and [[17.05 Boundary terms]], which cover the same example and moving-endpoint formula with a halved functional, and note the resulting factor-2 difference in $J[y_*]$.
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/05 Calculus of Variations/Fields of several variables.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and clear (square example with cost $4/3$, minimal-surface equation, weak form); a surface picture would help.
+- [Graph] Plot the 3D saddle $u_*=x_1^2-x_2^2$ over the unit square as the Dirichlet-energy minimizer, and optionally a minimal surface such as Scherk's $u=\ln(\cos x_2/\cos x_1)$ on $|x_1|,|x_2|<1.2$ to contrast with the linear Laplace case.
+- [Example] After the minimal-surface equation, add the catenoid as a non-graph minimal surface and link [[Variational modeling of paths and surfaces]], where it is derived as a surface of revolution.
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/05 Calculus of Variations/Functionals and stationary curves.md
+priority: low
+graph: no
+manim: no
+summary: Clear and correct (worked minimizer with $J=-1/6$, Beltrami derivation, practice answers all check).
+- [Example] After the Beltrami identity, add a one-line application (e.g. the shortest-path integrand $\sqrt{1+y'^2}$ gives $1/\sqrt{1+y'^2}=C$, hence straight lines) so the shortcut is used before it reappears in [[Classical curve problems]].
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/05 Calculus of Variations/Higher derivatives and coupled curves.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and clear (cubic $3x^2-2x^3$ with $J=12$, coupled pair, parametric length all verify).
+- [Graph] Plot $y_*=3x^2-2x^3$ and $y=x$ on $[0,1]$ to show how fixed zero end slopes force the smooth S-shaped bend (the "smoothstep" curve) versus the free-slope line.
+- [Intuition] In "When the integrand uses curvature-like information", mention that $\int y''^2$ is the small-slope bending energy of an elastic beam (Euler–Bernoulli), giving the physical reason for clamped versus simply supported boundary conditions.
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/05 Calculus of Variations/Physical action and equations of motion.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and clear (oscillator, energy $0.04\,\mathrm J$, and the saddle threshold $\tau>\pi/\omega$ check); macro use for time is the only convention issue.
+- [Correctness] Time $t$, duration $\tau$, and angular frequency $\omega$ are wrapped in `\signal{}` although this is a particle-mechanics context where the vault's mechanical group is the natural choice; use `\mechanical{}` (or leave the time variable uncolored) consistently with the other mechanics notes.
+- [Graph] Plot $\delta^2S/(a^2)=\tfrac{\tau}{2}[m(n\pi/\tau)^2-k]$ against $\tau$ for $n=1,2$ with $m=2$, $k=8$ on $0.5\le\tau\le4$, marking the sign change of the $n=1$ curve at $\tau=\pi/2\approx1.571$ s.
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/05 Calculus of Variations/Tests with first and second variations.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and clear, but its saddle example, Cauchy–Schwarz estimate, and fourth-order practice duplicate [[17.08 Second variation]] almost verbatim.
+- [Graph] Plot the Jacobi solution $v=\sin(\sqrt c\,x)$ for $c=2\pi^2$ on $[0,1]$, marking its conjugate point $x=1/\sqrt2<1$, next to $c=\pi^2/2$ whose first zero $\sqrt2$ lies beyond the interval.
+- [Intuition] Tie the two halves together: the Jacobi analysis shows zero is a strict minimum exactly when $\pi/\sqrt c>1$, i.e. $c<\pi^2$, which is the sharp version of the non-sharp estimate $c<2$.
+- [Structure] Replace the duplicated material with a link to [[17.08 Second variation]] and keep this note's distinctive Legendre and Jacobi sections.
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/05 Calculus of Variations/Variational modeling of paths and surfaces.md
+priority: high
+graph: yes
+manim: no
+summary: The Euler–Lagrange, straight-line, and catenary derivations are correct, but the note interleaves an unrelated Lyapunov-exponent project discussion, handwriting remarks, and a quantity table copied from population and diet models.
+- [Correctness] The Physical quantities table lists symbols from other notes ($R$ population, $\epsilon$ as a "rate ratio" although here $\epsilon$ is the variation parameter, $x,y$ ingredient amounts, $s$ protein surplus, $t$ iron surplus although $t$ is the integration variable, $T$ sampling period); rebuild it for $f$, $\eta$, $\epsilon$, $g$, $C$, $C_2$, $\lambda$, $\theta_i$.
+- [Structure] Move "Project meeting notes" (rover arm, finite-time Lyapunov estimate, MATLAB averaging) to the chaos material, e.g. [[Entropy and Lyapunov exponents]]; it does not belong under paths and surfaces, and remove grading and presentation remarks.
+- [Example] Finish the symmetric catenoid: $2=C\cosh(1/C)$ has two roots, $C\approx1.697$ and $C\approx0.470$; the areas $2\pi C(1+\tfrac C2\sinh(2/C))$ are $\approx23.97$ and $\approx27.38$, versus $8\pi\approx25.13$ for two flat discs, so the shallow catenoid is the minimizer and the deep one is only stationary.
+- [Intuition] Explain the $(0,0)$–$(1,1)$ failure and the existence threshold: $C\cosh(1/C)$ has minimum $\approx1.509$ (at $C\approx0.834$), so for half-separation 1 no catenoid exists if the end radius is below about $1.51$; the film then breaks into the Goldschmidt solution (two discs joined by an axis segment).
+- [Graph] Plot the two catenary profiles $C\cosh(t/C)$ for $C=1.697$ and $C=0.470$ on $-1\le t\le1$ with end radius 2, and the function $C\cosh(1/C)$ against $C$ on $0.3\le C\le3$ with the horizontal line at 2 showing the two intersections.
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/06 Bifurcations and Chaos/Chaos in interval maps.md
+priority: low
+graph: yes
+manim: yes
+summary: Rigorous and correct (Devaney properties for the tent map, the $2/5,4/5$ cycle, the conjugacy $h=\sin^2(\pi u/2)$, the logistic density, and the solenoid trapping all check), but it is abstract and has no picture of the dynamics.
+- [Graph] Plot the tent map and $y=x$ on $[0,1]$ with the cobweb of the two-cycle $2/5\to4/5\to2/5$, and next to it $T^3$ (eight linear branches) to show how itinerary intervals of length $2^{-n}$ arise; add a histogram of 10^5 iterates of $4x(1-x)$ overlaid with $\rho(x)=1/(\pi\sqrt{x(1-x)})$.
+- [Manim] Animate the stretch-and-fold action of the tent map on the interval (stretch to double length, fold at $1/2$) and two initially close points separating by a factor 2 per step until they are $O(1)$ apart.
+- [Intuition] In "The tent map and symbolic histories", add the doubling-map analogy: in binary, $T$ acts essentially as a shift of digits (with a flip on $R$), so knowing $n$ more steps requires $n$ more bits of the initial condition; this makes sensitivity and the numerical-caution section immediate.
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/06 Bifurcations and Chaos/Conjugacy and structural stability.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and carefully qualified; the examples ($x/2$ vs $x/8$, $x'=x^2+\varepsilon$) are good, though the global theory paragraphs are dense.
+- [Graph] Plot the phase lines of $x'=x^2+\varepsilon$ for $\varepsilon=-0.25,0,0.25$ (graphs of the right-hand side on $-1\le x\le1$ with equilibria marked) to show the non-robust change against the robust $x'=-x+\varepsilon x^2$.
+- [Example] In "Robust flows", add a 2D contrast: the center $x'=y$, $y'=-x$ (not structurally stable, becomes a spiral under $x'=y+\varepsilon x$) versus the hyperbolic saddle, which is the classic picture of what structural stability rules out.
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/06 Bifurcations and Chaos/Dimensions of attractors.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and careful about box vs Hausdorff vs measure dimensions and about the Douady–Oesterlé bound; the Cantor-measure example nicely shows $D_1$ and $D_2$ depending on weights.
+- [Graph] Plot $D_1(p)=H(p)/\log3$ and $D_2(p)=-\log(p^2+(1-p)^2)/\log3$ for $0<p<1$, with the box dimension $\log2/\log3$ as a horizontal line, showing $D_2\le D_1\le D_B$ with equality at $p=1/2$.
+- [Example] Add a log-log box-counting plot of $\log N(\varepsilon)$ versus $\log(1/\varepsilon)$ for the Cantor set at $\varepsilon=3^{-n}$, $n=1..10$, with slope $0.6309$, to show how the definition is used in practice.
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/06 Bifurcations and Chaos/Entropy and Lyapunov exponents.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and clearly separated (topological vs metric entropy, Lyapunov exponent definition and limits); an explicit nonuniform example would help.
+- [Example] Add the logistic map at $r=4$: averaging $\log|4(1-2x)|$ against $\rho(x)=1/(\pi\sqrt{x(1-x)})$ gives $\lambda=\log2$, the same as the conjugate tent map, illustrating that the exponent survives a smooth-enough conjugacy.
+- [Graph] Plot the Lyapunov exponent of the logistic map $x\mapsto rx(1-x)$ against $r$ on $2.8\le r\le4$ (1000 parameters, $10^4$ iterates after transients), with $\lambda=0$ marked, showing negative values in periodic windows and $\log2$ at $r=4$; link [[Routes to chaos]].
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/06 Bifurcations and Chaos/Invariant measures and ergodic averages.md
+priority: low
+graph: yes
+manim: no
+summary: Clear and correct, with good finite examples contrasting ergodic and non-ergodic measures.
+- [Graph] Plot the running time average $\overline a_N(x_0)$ of $a(x)=x$ for the doubling map (computed in exact rational or high precision, or via the logistic map at $r=4$ with $\int x\rho=1/2$) for $N=1..10^4$ and several $x_0$, converging to $1/2$, next to the two constant averages of the non-ergodic identity example.
+- [Example] Add the logistic density $\rho(x)=1/(\pi\sqrt{x(1-x)})$ for $r=4$ as a continuous invariant measure that is not length, linking [[Chaos in interval maps]].
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/06 Bifurcations and Chaos/Local and global bifurcations.md
+priority: medium
+graph: yes
+manim: yes
+summary: Correct normal forms and calculations (saddle-node, transcritical, pitchfork, Hopf, flip, homoclinic loop), but the note relies on prose where bifurcation diagrams and a phase portrait are the natural explanation.
+- [Graph] Plot the three scalar bifurcation diagrams (equilibria vs $\mu$ on $-1\le\mu\le1$, solid for stable, dashed for unstable) for $\mu-x^2$, $\mu x-x^2$, and $\mu x-x^3$, and the Hopf diagram $r=\sqrt\mu$.
+- [Graph] Plot the phase portrait of $u'=v$, $v'=u-u^3$ on $[-2,2]^2$ with the figure-eight homoclinic level $H=0$, and the same with $-0.2v$ damping to show the loops breaking.
+- [Manim] Animate the Hopf bifurcation: phase portraits of $r'=\mu r-r^3$, $\theta'=1$ as $\mu$ goes from $-0.5$ to $0.5$, with the stable spiral turning into an unstable spiral surrounded by a growing limit cycle of radius $\sqrt\mu$.
+- [Intuition] In "Local bifurcations of equilibria", add one sentence on how to recognize which normal form applies (conditions $f=f_x=0$ plus $f_\mu\ne0$, $f_{xx}\ne0$ for saddle-node; $f_\mu=0$, $f_{x\mu}\ne0$ for transcritical), so the zero-eigenvalue remark becomes operational.
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/06 Bifurcations and Chaos/Logistic-map bifurcations and numerical dynamics.md
+priority: high
+graph: yes
+manim: yes
+summary: The logistic fixed-point and stability analysis is correct, but the note mixes it with course logistics, a birthday remark, an age-structured population model, Newton's method, Fibonacci, the Lorenz system, and gradient ascent, and its quantity table is copied from other models.
+- [Correctness] The Physical quantities table gives $\beta$ two unrelated meanings (crowding coefficient in $\mathrm{s^{-1}}$, predator coefficient) although here $\beta$ is the dimensionless logistic parameter and also the Lorenz parameter; it lists $\epsilon$ as a "rate ratio" (here it is the perturbation size), and unused ingredient amounts $x,y$, protein surplus $s$, and $t$ as iron surplus; rebuild it and rename the Lorenz parameter (e.g. $b$) to remove the $\beta$ clash.
+- [Correctness] In "Introduction to chaos", the predator–prey near-axis example is presented as an illustration of chaos, but a two-dimensional autonomous flow cannot be chaotic (Poincaré–Bendixson); state that this shows only local sensitivity near a separatrix, and that chaos needs at least three dimensions for flows (e.g. Lorenz) or one dimension for noninvertible maps.
+- [Structure] Remove the schedule, birthday, and handwriting remarks, and move the age-structured model, Newton's method, Fibonacci, and gradient ascent to their own notes; keep logistic fixed points, cobwebs, the two-cycle, and the Lyapunov sampling idea.
+- [Example] Under "Example with $\beta=3.2$", give the explicit two-cycle $x_\pm=(\beta+1\pm\sqrt{(\beta-3)(\beta+1)})/(2\beta)\approx0.5130,0.7995$, its multiplier $-\beta^2+2\beta+4=0.16$, and the next doubling at $1+\sqrt6\approx3.449$, linking [[Routes to chaos]] where these are derived; quote the accumulation point as $3.5699$.
+- [Graph] Plot the logistic bifurcation diagram ($2.5\le\beta\le4$, 1000 parameter values, last 200 of 1000 iterates) and cobwebs for $\beta=0.5,2,3.2,3.9$ from $x_0=0.1$.
+- [Manim] Animate the cobweb for $\beta$ sweeping from 2.8 to 3.6, showing the fixed point losing stability, the 2-cycle and then the 4-cycle appearing, synchronized with a marker moving along the bifurcation diagram.
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/06 Bifurcations and Chaos/Manifolds and return maps.md
+priority: low
+graph: yes
+manim: yes
+summary: Correct and clear; the nonlinear stable-manifold example $v=-u^2/3$ and the radial return map are well chosen.
+- [Graph] Plot the phase portrait of $u'=-u$, $v'=v+u^2$ on $[-2,2]^2$ with the stable manifold $v=-u^2/3$, its tangent eigenspace $v=0$, and the unstable manifold $u=0$ highlighted.
+- [Manim] Animate trajectories of $r'=-(r-1)$, $\theta'=1$ spiralling onto the unit circle, with dots marking successive crossings of the section $\theta=0$ converging to $r=1$, so the return map is seen as a strobe of the flow.
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/06 Bifurcations and Chaos/Markov chains and the logistic map.md
+priority: low
+graph: yes
+manim: no
+summary: A short, correct bridge note (stationary distribution $2/3$, logistic fixed-point stability); it pairs two loosely related topics.
+- [Graph] Plot $a_n$ for the two-state chain from $a_0=1$ and $a_0=0$ converging geometrically (ratio $1/4$) to $2/3$, beside logistic iterates for $r=2.5$ (oscillating convergence) and $r=3.2$ (2-cycle).
+- [Links] Give the two source links distinct aliases (e.g. "Markov chains", "Difference equations") instead of the repeated "Math 150".
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/06 Bifurcations and Chaos/Nonlinear evolution patterns and chaos.md
+priority: low
+graph: yes
+manim: yes
+summary: Correct and well structured (Swift–Hohenberg and Kuramoto–Sivashinsky dispersion relations, amplitude equation $A'=rA-\tfrac34A^3$ all check); visuals would make the pattern-selection argument much more vivid.
+- [Graph] Plot the growth rates $\sigma(k)=r-(1-k^2)^2$ for $r=-0.1,0,0.1$ and $\sigma(k)=k^2-k^4$ on $0\le k\le1.5$, with the allowed wavenumbers $k=2\pi n/L$ for $L=2\pi$ and $L=4\pi$ marked as dots.
+- [Manim] Animate a numerical Kuramoto–Sivashinsky solution on $L=32\pi$ as a space–time plot building up row by row, from small random data to cellular structure and then irregular dynamics, to show what "chaotic evolution" of a PDE looks like.
+- [Example] In "What changes when the equation is nonlinear?", add the explicit Burgers shock time: for $u_t+uu_x=0$ with $u(x,0)=-\tanh x$ the gradient blows up at $t=1$ (characteristics $x=x_0-t\tanh x_0$ cross), linking [[Characteristics for first-order PDEs]].
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/06 Bifurcations and Chaos/Reconstructing dynamics from observations.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and careful about theorem hypotheses; the circle example is clear, but a chaotic example would show the method's real use.
+- [Graph] Plot delay reconstructions $(x(t),x(t+\tau))$ of the Lorenz $x$-coordinate ($\sigma=10$, $\rho=28$, $b=8/3$) for a too-small, a good ($\tau\approx0.1$–$0.2$) and a too-large delay, next to the true $(x,z)$ projection.
+- [Example] Add the circle case $\alpha=\pi/2$ versus $\alpha=0.05$ with observation noise of size $0.01$ to show numerically how the $1/\sin\alpha$ factor amplifies errors.
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/06 Bifurcations and Chaos/Routes to chaos.md
+priority: low
+graph: yes
+manim: yes
+summary: Correct and well referenced (two-cycle formula, multiplier $-r^2+2r+4$, thresholds 3 and $1+\sqrt6$, bottleneck time $\pi/\sqrt\varepsilon$, Neimark–Sacker example), with an existing figure for the first doublings.
+- [Graph] Add the full numerical logistic bifurcation diagram for $2.8\le r\le4$ with the period-3 window near $r\approx3.828$ marked, complementing the exact two-branch figure.
+- [Manim] Animate type-I intermittency for the logistic map just below $r=1+\sqrt8\approx3.8284$: the time series shows long nearly period-3 laminar phases interrupted by bursts, with a cobweb of $f^3$ showing the narrow channel near the tangency.
+- [Example] In "Period-doubling cascades", give the first thresholds $r_1=3$, $r_2\approx3.4495$, $r_3\approx3.5441$, $r_4\approx3.5644$ and the ratios of successive gaps ($\approx4.75$, $4.66$) to show convergence toward $4.6692$.

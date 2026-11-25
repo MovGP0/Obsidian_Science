@@ -1,0 +1,70 @@
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/06 Electroweak Interactions of Leptons/6.9 Interim Assessment.md
+priority: low
+graph: no
+manim: no
+summary: A correct but single dense paragraph that summarizes the lepton electroweak chapter; it reads as pre-2012 text.
+- [Structure] Split the paragraph into a short bulleted list of what the theory explains (charged currents, neutral currents, massive $W^\pm$/$Z^0$, Higgs-generated lepton masses) and what it leaves open (values of Yukawa couplings, neutrino mass, anomaly cancellation needing quark families).
+- [Structure] Add an update callout after "Should we discover a standard-model Higgs boson": the Higgs was discovered in 2012 at about 125 GeV, and LHC measurements confirm couplings to $\tau$, $b$, $t$ (and evidence for $\mu$) that scale roughly with $\mechanical{m}$.
+- [Links] Link "following chapter" to the 7.1 Preliminaries note and the anomaly remark to the §6.8 anomaly note so the reader can follow the quark-family argument.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/06 Electroweak Interactions of Leptons/6.B References.md
+priority: low
+graph: no
+manim: no
+summary: Reference list transcribed faithfully apart from a few citation and encoding errors.
+- [Correctness] Ref. 19: the Aubert et al. neutral-current papers are *Phys. Rev. Lett.* **32**, 1454, 1457 (1974), not volume **34** (volume 34 is 1975).
+- [Correctness] Footnote 26: "$\mechanical{M_W}\exp^{1/\alpha}$" is malformed; write $\mechanical{M_W}\exp(1/\alpha)$ (or $\mechanical{M_W}e^{1/\alpha}$).
+- [Correctness] Ref. 59: "pp. 95Ð98" is an encoding artifact; it should read "pp. 95–98".
+- [Correctness] Ref. 49: the Daya Bay *Phys. Rev. Lett.* **108**, 171803 (2012) paper is arXiv:1203.1669; arXiv:1210.6327 is the later improved measurement (Chin. Phys. C **37**, 011001), so fix the arXiv number or cite both explicitly (also "Double-CHOZ" should be "Double Chooz").
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/06 Electroweak Interactions of Leptons/6.P Problems.md
+priority: medium
+graph: no
+manim: no
+summary: Clear exercise list, but two displayed formulas (6.13, 6.16) contain errors and the quantity table has stray and clashing entries.
+- [Correctness] Problem 6.13: the quartic term should be $-(|\lambda|/4)(2w^+w^-+z^2+h^2)^2$ (Lee–Quigg–Thacker); the note drops $z^2$, which removes the $z^4$ and $z^2h^2$ contact terms needed for the $hz\to hz$ amplitude in part (b). Also the citation should read "H. B. Thacker", not "H. H. Thacker" (and "it respect" should be "it respects").
+- [Correctness] Problem 6.16: the Ross–Veltman result is $\rho=\sum_i[I_i(I_i+1)-\tfrac14Y_i^2]\langle\phi_i\rangle_0^2\big/\sum_i\tfrac12Y_i^2\langle\phi_i\rangle_0^2$ (with $Q=I_3+Y/2$ and the vev in the $I_3=-Y/2$ component); the note's numerator $I_i(I_i+1)-\tfrac12Y_i(\tfrac12Y_i-1)$ over $\sum Y_i^2\langle\phi_i\rangle_0^2$ agrees only when the vev sits in the $I_3=-I$ component (it gives $\rho=10/16$ instead of 1 for the $I=3$, $Y=4$ septet).
+- [Correctness] Physical-quantities table lists four-momenta $\mechanical{p},\mechanical{q}$ "in problem 6.10" but the note never uses them ($p$ appears only as a proton spinor in 6.17); also $\sigma$ is both a cross section and the sigma-model field, $\lambda$ both the scalar coupling and a Lorentz index/Fierz matrix $\lambda_{ij}$, and $\theta$ both the scattering angle (6.11) and the vacuum mixing angle (6.23); disambiguate the table rows.
+- [Correctness] Problem 6.17: $g_A=1.2695\pm0.0029$ is outdated; the current PDG value is $g_A\approx1.2754\pm0.0013$ (add a note if the source value is kept).
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/06 Electroweak Interactions of Leptons/6.R For Further Reading.md
+priority: low
+graph: no
+manim: no
+summary: A well-organized annotated reading list; only a citation slip and some dated claims need attention.
+- [Correctness] "A. Salam and J. C. Ward, *Phys. Rev. Lett.* **13**, 168 (1964)" should be *Phys. Lett.* **13**, 168 (1964), as correctly given in 6.B ref. 1.
+- [Structure] Add a short dated callout under "Neutrinoless double beta decay": the Klapdor-Kleingrothaus $^{76}$Ge claim was excluded by GERDA and KamLAND-Zen, and the EXO-200/KamLAND-Zen limits cited are superseded by KamLAND-Zen 800 ($T_{1/2}>3.8\times10^{26}$ yr).
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/07 Electroweak Interactions of Quarks/7.0 Chapter introduction.md
+priority: low
+graph: no
+manim: no
+summary: A clear chapter roadmap with no technical content to correct.
+- [Links] Turn the section references (section 6.8, section 6.4, chapter 8, and the topics in the last paragraph) into wiki links to the corresponding notes so the intro works as a chapter hub; also note that the Higgs boson is no longer "hitherto missing" (discovered 2012).
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/07 Electroweak Interactions of Quarks/7.1 The Standard Electroweak Theory -  Preliminaries.md
+priority: medium
+graph: no
+manim: no
+summary: Solid derivation of quark doublets, GIM and CKM structure, with a few transcription errors, a misplaced fragment, and dated numbers.
+- [Correctness] Fig. 7.2 photon vertex "$-i\electric{Q_q}\gamma_\mu$" is missing the coupling $e$; it should be $-ie\electric{Q_q}\gamma_\mu$.
+- [Correctness] Eq. (7.1.33): $\mathcal M^f=\mathsf V_L^f\zeta^f\mathsf V_R^{f\dagger}$ is dimensionless as written while the table gives $\mathcal M^f$ in GeV; the mass matrix is $\mathcal M^f=(v/\sqrt2)\,\mathsf V_L^f\zeta^f\mathsf V_R^{f\dagger}$. Also the fragment "with $f=u,d$. Accordingly, ..." after the vertex factors belongs directly after (7.1.33), not after Fig. 7.2.
+- [Correctness] "Whenever it is necessary to retain the color indices, we shall suppress them" is logically inverted; it should say the color indices are suppressed except where they are needed.
+- [Correctness] Dated values: $\cos\theta_C=0.97425$ (now $|V_{ud}|\approx0.97367$) and $B(K^+\to\pi^+\nu\bar\nu)=(1.73^{+1.15}_{-1.05})\times10^{-10}$ (NA62 2024: $(1.30^{+0.33}_{-0.30})\times10^{-10}$); add an update callout or refresh with current PDG values together with (7.1.28).
+- [Intuition] Before (7.1.29), show the two-generation GIM cancellation explicitly: $\bar d_\theta d_\theta+\bar s_\theta s_\theta=\bar d d+\bar s s$, so the $\sin\theta_C\cos\theta_C$ cross terms of (7.1.14) cancel; this one line makes the general $[\mathcal O,\mathcal O^\dagger]$ argument intuitive.
+- [Simplify] Add one sentence explaining how to read the ternary plot in Fig. 7.1 (each corner is 100% $d$, $s$ or $b$; $d'$ sits near the $d$ corner shifted by $|V_{us}|^2\approx0.05$ towards $s$).
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/07 Electroweak Interactions of Quarks/7.10 Incompleteness of the Electroweak Theory.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct triviality and vacuum-stability derivations (re-derived 7.10.1–7.10.12), but compact and missing the post-2012 conclusion.
+- [Graph] Plot the one-loop triviality bound (7.10.5) as $\log_{10}(\energy{\Lambda^\star}/\unit{GeV})$ versus $\mechanical{M_H}$ for $100\le\mechanical{M_H}\le800\,\unit{GeV}$ with $v=246\,\unit{GeV}$, with a vertical marker at $125\,\unit{GeV}$ and horizontal lines at $1\,\unit{TeV}$, $10^{16}$ and $1.2\times10^{19}\,\unit{GeV}$; note that the one-loop curve reaches the Planck scale near $\mechanical{M_H}\approx143\,\unit{GeV}$, versus $180\,\unit{GeV}$ from the two-loop analysis in (7.10.6).
+- [Graph] Plot the effective potential (7.10.7) $\energy{V}(x)=-\mechanical{\mu}^2x+Bx^2\ln(x/\mechanical{M}^2)$ in dimensionless form for $\ln(x_0/\mechanical{M}^2)$ just above and just below $-1$ to show the minimum ceasing to be absolute, which motivates (7.10.10).
+- [Simplify] In (7.10.11) state that $\energy{V}''$ is the second derivative with respect to the real field $\phi$ (using $\phi^\dagger\phi=\phi^2/2$), not with respect to $\phi^\dagger\phi$; otherwise the factor $4B\langle\phi^\dagger\phi\rangle_0$ looks wrong.
+- [Structure] Add an update callout after the "chimney" paragraph: with $\mechanical{M_H}\approx125.1\,\unit{GeV}$ and $\mechanical{m_t}\approx172.5\,\unit{GeV}$, the measured point lies below the absolute-stability bound in the metastable region, which is exactly the scenario described in the final paragraph.
+- [Intuition] Explain in one sentence why the sign in (7.10.1) makes $\lambda$ grow with energy (screening, as in QED), so a large $\lambda$ at low energy hits a Landau pole sooner, giving the upper bound.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/07 Electroweak Interactions of Quarks/7.11 The Hierarchy Problem.md
+priority: medium
+graph: yes
+manim: no
+summary: A readable qualitative account of the hierarchy problem that would gain from one concrete fine-tuning estimate.
+- [Correctness] "$\mechanical{M_{\mathrm{Pl}}}=(\hbar\mechanical{c}/G_{\mathrm{N}})^{1/2}\approx1.2\times10^{19}\,\unit{GeV}$" mixes units: with the SI units in the table $(\hbar c/G_N)^{1/2}$ is a mass ($2.18\times10^{-8}$ kg); write $\mechanical{M_{\mathrm{Pl}}}c^2=(\hbar c^5/G_N)^{1/2}\approx1.22\times10^{19}\,\unit{GeV}$ or state natural units.
+- [Example] Add a worked estimate using the top-quark loop, $\delta\mechanical{M_H}^2\approx-\frac{3G_F}{\sqrt2\pi^2}\mechanical{m_t}^2\energy{\Lambda}^2$, and give the required cancellation for $\energy{\Lambda}=10\,\unit{TeV}$ (about 1 part in 100) and for $\energy{\Lambda}=\mechanical{M_{\mathrm{Pl}}}$ (about 1 part in $10^{32}$), linking to problem 7.21.
+- [Graph] Plot the fine-tuning measure $|\delta\mechanical{M_H}^2|/\mechanical{M_H}^2$ from the problem 7.21 formula $\frac{3G_F\energy{\Lambda}^2}{4\pi^2\sqrt2}(2\mechanical{M_W}^2+\mechanical{M_Z}^2+\mechanical{M_H}^2-4\mechanical{m_t}^2)$ versus $\energy{\Lambda}$ on log axes from $0.5$ to $10^{19}\,\unit{GeV}$ with $\mechanical{M_H}=125\,\unit{GeV}$.
+- [Structure] Add an update callout: no superpartners, technicolor resonances or little-Higgs partners have been seen at the LHC up to roughly 1–2 TeV, so the "less than about 1 TeV" expectations in the supersymmetry paragraph are now strongly constrained.
+- [Intuition] Explain why fermion masses do not suffer the same problem (chiral symmetry makes $\delta m_f\propto m_f\ln\energy{\Lambda}$), which makes clear why the scalar mass is special.

@@ -1,0 +1,189 @@
+=== 02 Physics/07 Astrophysics and Cosmology/Spectral lines and Einstein transition coefficients.md
+priority: medium
+graph: yes
+manim: no
+summary: The Einstein-coefficient derivation, the line coefficients and the source function are correct and reasonably clear, but an off-topic opening, duplicated equations, meta-comments about the handwriting and a wrong quantities table get in the way.
+- [Correctness] The Physical quantities table lists symbols the note never uses ($\alpha$ fine-structure constant, $\energy{S}$ incident flux, $\energy{I}$ frequency-integrated intensity, $\energy{U}$ radiation energy density, while the note uses $\energy{U}_{B,\mathrm{tot}}$ in erg). It also calls $\thermal{T}$ "brightness temperature", but here it is the excitation temperature of the Boltzmann populations, and calls $\energy{E}$ "radiant energy", but here it is the level energies $E_u,E_\ell$. Replace these with $\magnetic{B}$, $\mechanical{R}$, $N_u$, $N_\ell$, $g_u$, $g_\ell$ and $\nu_{u\ell}$.
+- [Correctness] In "Line emission and photoabsorption coefficients", $n_u$ is "the number of electrons in the upper state per unit volume". It should be the number of atoms or ions in the upper level per unit volume. The subscript also switches between $\nu_{u\ell}$ (Spontaneous emission) and $\nu_{\ell u}$ (later sections); use one form throughout.
+- [Structure] The opening Cygnus A lobe-energy paragraph belongs in the synchrotron/equipartition note, so move it there and start with "Formation of spectral lines". Its value checks out: $B^2/8\pi\cdot\tfrac43\pi R^3\approx1.3\times10^{60}$ erg. Also, the spontaneous-emission relations appear twice (around lines 31–48 and 54–62); merge them.
+- [Simplify] Delete the remarks that "the handwritten line reverses the arrow/sign/omits $n_\ell$/uses $h$" (Spontaneous emission, Einstein relations, Fermi golden rule, thermal source function), or collapse them into one footnote. The displayed equations are already correct.
+- [Intuition] After the Einstein relations, add the stimulated-to-spontaneous ratio in a blackbody field, $B_{u\ell}B_\nu/A_{u\ell}=1/(e^{h\nu/kT}-1)$. It explains why stimulated emission and the factor $1-e^{-h\nu/kT}$ in $\alpha_\nu$ dominate in the radio but are negligible for optical lines.
+- [Graph] Plot $1/(e^{x}-1)$ and $1-e^{-x}$ against $x=h\nu/(k_BT)$ on log axes for $x\in[10^{-3},10]$. Mark the 21 cm line at $T=100$ K and Hα at $T=6000$ K.
+
+=== 02 Physics/07 Astrophysics and Cosmology/Star formation and main-sequence lifetimes.md
+priority: high
+graph: yes
+manim: no
+summary: The note is a fragmentary transcription with stray fragments and margin jokes, several wrong or outdated physics statements, a table copied from other notes, and no lifetime formula despite its title.
+- [Correctness] In "Young stellar objects", classes 1 and 2 are called "stars with nuclear burning". Class I/II YSOs (protostars, classical T Tauri stars) are pre-main-sequence objects powered by accretion and contraction, plus some deuterium burning. Hydrogen fusion starts only at the ZAMS.
+- [Correctness] In "Zero-age main sequence", the upper main sequence (O stars) is labelled $10^3$ yr. O-star main-sequence lifetimes are a few Myr ($\sim3$–$10\times10^6$ yr); state the correct value next to the transcription.
+- [Correctness] Point 2 of "Life on the main sequence" is reversed. Stars below about 1.3–1.5 $M_\odot$ have cool envelopes with high H⁻/neutral-H opacity and therefore convective envelopes; more massive stars have radiative envelopes. Also, $Y_{\mathrm{primordial}}=0.23$ is outdated (BBN and Planck give $Y_p\approx0.245$), and the relation should read $Y_{\mathrm{primordial}}<Y_{\mathrm{init}}$.
+- [Correctness] The Physical quantities table lists many symbols the note does not use ($D$, $a$, $K$, polytropic $n$, impact parameter $s$, nuclear radius, total lifetime $\tau$, $V$). It also repeats $\mechanical{M}$, $\tau$, $Z$ and $n$ with conflicting meanings. Rebuild it from the symbols actually used.
+- [Structure] The note opens with leftover fragments: the $\delta_X$ scalings, an axion diagram and a DSNB inset. Move the $\delta_X$ result to the homology note and drop the rest. Despite the title, the note never gives a lifetime formula; add $t_{\mathrm{MS}}\approx10\,\mathrm{Gyr}\,(M/M_\odot)^{-2.5}$ from $t\propto M/L$ with $L\propto M^{3.5}$.
+- [Graph] Make a log–log plot of $t_{\mathrm{MS}}=10\,\mathrm{Gyr}\,(M/M_\odot)^{-2.5}$ for $M=0.08$–$60\,M_\odot$, with a horizontal line at 13.8 Gyr and the 0.08 $M_\odot$ hydrogen-burning limit marked. Also clarify that "20 K lower" refers to Earth's equilibrium temperature: $T\propto L^{1/4}$ and $0.75^{1/4}\approx0.93$.
+
+=== 02 Physics/07 Astrophysics and Cosmology/Stellar evolution and variable-star observations.md
+priority: medium
+graph: yes
+manim: yes
+summary: A readable survey of stellar evolution with mostly correct numbers (the burning-stage timescales, white dwarf, Crab, RR Lyrae and pp/CNO thresholds all check), but it has a few factual errors, misordered phases and an unrelated quantities table.
+- [Correctness] "After the red giant branch" says that about half the core helium burns quickly in the helium flash. Only a few percent burns in the flash; the rest burns quiescently on the horizontal branch over about $10^8$ yr.
+- [Correctness] In "Supernova classification", the Type I/II split is due to Minkowski (1941), not Zwicky. Zwicky later added Types III–V.
+- [Correctness] The Physical quantities table lists extinction $A$, grain density $n$, declination $\delta$, transit probability $P$, eccentricity $e$, airmass $X$, the Oort constants and the metal yield, none of which appear in the note. Replace them with the symbols the note uses ($\thermal{T}$, $M_V$, pulsation period).
+- [Structure] "Post-main-sequence evolution" describes the red giant before the sentence "enters the subgiant phase". Reorder to main sequence → subgiant → red giant branch, and remove the stray assignment line "Give a 15-minute overview of the paper".
+- [Graph] Add $t_{\mathrm{MS}}\approx10\,\mathrm{Gyr}\,(M/M_\odot)^{-2.5}$ to "Main-sequence lifetime" and plot it log–log for $0.1$–$60\,M_\odot$ with a line at 13.8 Gyr. The crossing near $0.85\,M_\odot$ shows the "below about 0.8 $M_\odot$" claim directly.
+- [Manim] Animate a 1 $M_\odot$ star moving along its HR-diagram track (MS → subgiant → RGB → helium flash → HB → AGB → planetary nebula → white-dwarf cooling), with a counter showing how long each phase lasts.
+
+=== 02 Physics/07 Astrophysics and Cosmology/Stellar hydrostatic equilibrium and the virial theorem.md
+priority: medium
+graph: yes
+manim: no
+summary: The derivations of hydrostatic equilibrium, its variational form and the virial theorem are sound and the numbers check, but several displayed equations are still wrong, with the fix given only in a callout, and the variational section repeats itself.
+- [Correctness] The displayed solar radius $R_\odot=6.96\times10^7$ km is wrong by a factor of 100; it should be $6.96\times10^5$ km $=6.96\times10^{10}$ cm. Fix the equation instead of only noting the error. The callout also links to "Internal energy", but the $GM^2/R$ scale it refers to is in "Equilibrium of the whole star".
+- [Correctness] The $(\delta U)_{\mathrm{ad}}$ equation after "Integration by parts" still has a minus sign. The correct result is $(\delta U)_{\mathrm{ad}}=+\int(dP/dM_r)\,4\pi r^2\delta r\,dM_r$, as the callout admits; correct the displayed equation.
+- [Correctness] In "Applications of the virial theorem", the displayed $K=\tfrac23(\gamma-1)U$ is wrong. From $2K=3\int P/\rho\,dM_r=3(\gamma-1)U$ it follows that $K=\tfrac32(\gamma-1)U$; write the correct form instead of keeping the wrong one with a callout.
+- [Correctness] Symbol clashes: $\energy{W}$ means both work ($W=Fd$) and total energy, and $\mathrm{d}M_r$ means both the shell mass and the patch mass. The table defines $\energy{E}$ three ways, lists many unused symbols ($a$, $V$, C/O, $K$, impact parameter, polytropic $n$), and gives SI units for $G$ and $M_r$ in a CGS note.
+- [Simplify] The first law and $\delta V_\rho$ are stated twice in "Internal energy"; keep one version. In the Kelvin–Helmholtz section, say which $q$ gives $t_{\mathrm{KH}}\approx2\times10^7$ yr: $(q/2)\times3.1\times10^7$ yr needs $q\approx1.3$, while uniform density ($q=3/5$) gives about $10^7$ yr.
+- [Graph] Plot the coefficient $(3\gamma-4)/(3(\gamma-1))$ in $W=(\ldots)\Omega$ against $\gamma\in[1.1,2]$. Mark $\gamma=4/3$ (zero, marginally bound) and $\gamma=5/3$ (1/2) to show why "relativistic stars are bad".
+
+=== 02 Physics/07 Astrophysics and Cosmology/Stellar luminosity functions, star counts, and selection bias.md
+priority: medium
+graph: yes
+manim: no
+summary: The star-count, Malmquist-bias, luminosity-function and IMF derivations are correct and clearly laid out (the 0.6 slope, the Gaussian bias box and Kroupa slopes check), but the quantities table is badly polluted and the note lacks a worked number.
+- [Correctness] The Physical quantities table uses $\sigma$ for both the Stefan–Boltzmann constant and the magnitude dispersion, and $A$ for extinction and an Oort constant while the note uses $A(m)$ for star counts. It lists $\alpha$ three times, gives $\mechanical{d}$ in cm although the note uses pc, and includes unused entries (grain density, optical depth, right ascension, parallax, scattering angle, count rate). Rebuild it.
+- [Example] After the Malmquist box, work the uniform-density case: $d\ln A/dm=0.6\ln10\approx1.38$, so $\langle M\rangle_m-M_0\approx-1.38\sigma^2$. For example, $\sigma=0.5$ mag gives a 0.35 mag bias toward brighter stars.
+- [Intuition] Link the slope of 0.6 to the radio source-count figure: in flux units the same Euclidean result is $N(>S)\propto S^{-3/2}$. Add that departures from this slope reveal evolution or the edges of the population.
+- [Structure] The opening supernova-progenitor paragraph and Fig. 52 (a luminosity–temperature curve) have nothing to do with luminosity functions; move or drop them. Fig. 61 (exponential star formation history) has no accompanying text.
+- [Example] In the IMF section, compute an example: a Salpeter IMF over 0.1–100 $M_\odot$ gives about 0.0074 core-collapse progenitors (above 8 $M_\odot$) per solar mass formed, i.e. one per roughly 135 $M_\odot$.
+- [Graph] Plot the Gaussian $\Phi(M)$ ($M_0=0.6$, $\sigma=0.5$) together with the magnitude-limited sample distribution $\propto\Phi(M)\,10^{-0.6M}$, which is shifted by $-1.38\sigma^2$. In a second panel, plot the Salpeter and Kroupa IMFs log–log over 0.01–100 $M_\odot$.
+
+=== 02 Physics/07 Astrophysics and Cosmology/Stellar pressure balance and degenerate matter.md
+priority: medium
+graph: yes
+manim: no
+summary: The degenerate-star pressure balance is correct; I re-derived $R_{\mathrm{eq}}$, the $(81\pi^2/512)^{1/3}$ factor, the neutron-star radius and the ultrarelativistic $E_F$. However, an unrelated fusion block breaks the derivation, and the instability argument lacks numbers.
+- [Structure] The section "Stellar fusion and pressure balance" (pp-chain and triple-alpha energies, which are correct) interrupts the derivation between setting up $P_g$ and $P_{\mathrm{deg}}$ and solving for $R$. Move it to the end or to a burning note.
+- [Correctness] The table lists unrelated entries (amount $n$ in mol, Landé $g$, internal degeneracy $g$, molecular mass $M$, $P_{\mathrm{int}}$ and $P_{\mathrm{ext}}$, Boltzmann-weight $E$) and omits $m_N$, $m_e$, $N_e$ and $E_{\mathrm{tot}}$. $\mechanical{V}$ (volume) and $\energy{V}_g$ (gravitational energy) also clash; rename $V_g$ to $E_{\mathrm{grav}}$, which later sections already use.
+- [Example] Give the numbers: $R_{\mathrm{eq}}\approx7.6\times10^3$ km for $N=10^{57}$ and $Y_e=1/2$, and $R_{\mathrm{NS}}\approx13$ km. Point out the mass–radius law $R\propto N^{-1/3}\propto M^{-1/3}$: heavier white dwarfs are smaller.
+- [Intuition] In "Instability at small radius", spell out the argument. Nonrelativistically $E_F\propto R^{-2}$, which beats gravity at small $R$ and gives an energy minimum. Ultrarelativistically $E_F\propto R^{-1}$, the same as gravity, so above the threshold $N$ there is no minimum. Quote $M_{\mathrm{Ch}}\approx1.44\,(2/\mu_e)^2M_\odot$ instead of the loose "1.26, revised 1.44".
+- [Simplify] Replace the handwritten $G^{-1}\sim(10^{18}\,\mathrm{GeV})^2$ remark with $G^{-1/2}=M_{\mathrm{Pl}}=1.22\times10^{19}$ GeV, which gives $N\sim(M_{\mathrm{Pl}}/m_N)^3\approx2\times10^{57}$.
+- [Graph] Plot $E_{\mathrm{tot}}(R)=aN^{5/3}/R^2-bN^2/R$ in units of the minimum for three values of $N$, showing that the equilibrium radius shrinks as $N^{-1/3}$. Overlay the ultrarelativistic case $E_{\mathrm{tot}}\propto(cN^{4/3}-bN^2)/R$, which has no minimum.
+
+=== 02 Physics/07 Astrophysics and Cosmology/Stellar remnants and neutron-capture nucleosynthesis.md
+priority: high
+graph: yes
+manim: yes
+summary: The note is a loose transcription full of personal asides and sketch descriptions. Its numbers mostly check (the $10^{53}$ erg TNT comparisons, the α-ladder and the s-process neutron sources), but it has a mislabelled heading, several physics slips and a copied quantities table.
+- [Correctness] The second heading, "Late stages below the 6–10 solar mass range", covers carbon, neon, oxygen and silicon burning and iron-core collapse, which happen only in stars above about 8–10 $M_\odot$. Rename it "Late stages above the 6–10 solar mass range".
+- [Correctness] The step $^{56}$Ni → $^{56}$Fe is labelled "double beta decay". It is two successive electron-capture/β⁺ decays: $^{56}$Ni → $^{56}$Co ($t_{1/2}=6.1$ d), then $^{56}$Co → $^{56}$Fe (77 d). These decays power supernova light curves.
+- [Correctness] Forbidden lines in planetary nebulae are excited by collisions with free electrons, not "collisions between atoms". In the abundance table, "17 C" and "18 C" are almost certainly $^{17}$O and $^{18}$O, which the CNO cycle produces alongside $^{13}$C, $^{14}$N and $^{19}$F.
+- [Correctness] The quantities table is mostly copied from other notes (force-sketch $M$, virial $t$, $D$, $a$, $c$, $K$, polytropic $n$, impact parameter, nuclear radius, reduced mass). Keep only the symbols used here: $\tau_{\mathrm{dyn}}$, $\rho_c$, $T_c$, $X_i$, $\Phi$, $Z$, $N$, $\delta m_{np}$, $S_\gamma$. Also give $\tau_{\mathrm{dyn}}$ a number: $1/\sqrt{G\rho}\approx0.04$–0.1 s for $\rho\sim10^9$–$10^{10}$ g cm⁻³.
+- [Graph] Plot the binding energy per nucleon $B/A$ from the semi-empirical mass formula for $A=1$–240, marking the peak near $^{56}$Fe/$^{62}$Ni (about 8.8 MeV) and $^{238}$U. The handwritten sketch has no vertical scale.
+- [Manim] Animate the r-process path on an $N$–$Z$ chart: rapid neutron captures push nuclei right to the drip line, waiting points stall at magic $N$, and β⁻ decays then carry the nuclei diagonally back to stability, building the abundance peaks.
+
+=== 02 Physics/07 Astrophysics and Cosmology/Stellar spectroscopy and exoplanet detection.md
+priority: medium
+graph: yes
+manim: yes
+summary: A clear observational survey whose exoplanet numbers check (Proxima b 37 mas, Keck 50 mas, transit probabilities and depths, the $K$ formula and RV table), with one physics error about the Balmer jump, symbol clashes and a polluted table.
+- [Correctness] "Stellar spectra" puts the Balmer jump near 3800 Å and blames neutral hydrogen in cooler stars. The jump is at the Balmer limit, 3646 Å, and comes from bound–free absorption out of the $n=2$ level of hydrogen. It is strongest in A stars (about $10^4$ K), not in cooler stars; the roughly 4000 Å break of cool stars is a different feature, caused by metal lines and Ca H&K.
+- [Correctness] Symbol clashes: $X$ is both the hydrogen mass fraction and the airmass, and $P$ is both the transit probability and the period (Fig. 47). In the table, $\mechanical{D}$ is both the aperture and a "distance in pc", $\lambda$ is both wavelength and a convergent-point angle, and $\sigma$ is both the Stefan–Boltzmann constant and a noise term. The table also lists unused symbols ($b$ softening, zenith angle $Z$, RA and Dec, proper motion, Oort $A$, scattering angle, crossing time, metal yield) and calls $\mechanical{a}$ a "binary separation" instead of the planet's semimajor axis.
+- [Simplify] In "Line broadening", name pressure (collisional) broadening as the reason dwarfs have broader lines, and give the thermal Doppler width $\Delta\nu/\nu_0=\sqrt{2kT/(mc^2)}$ instead of the generic $v_r/c$. Add Hδ at 4102 Å to the Balmer table.
+- [Simplify] In "Differential photometry", write the photon-limited result as $\sigma_{\mathrm{rel}}/F_{\mathrm{rel}}\simeq1/\sqrt{F_T}$; it is numerically equal to the current $1/N_T$ but clearer. Also clarify the "inherent radial velocity stability of about 1 km/s": stellar jitter is about 1 m/s, while about 1 km/s is the per-pixel or resolution-element scale.
+- [Graph] Plot $K=28.4\,\mathrm{m\,s^{-1}}\,(m\sin i/M_J)\,(P/1\,\mathrm{yr})^{-1/3}(M_\star/M_\odot)^{-2/3}$ against orbital period from 1 d to $10^4$ d for Earth, Neptune and Jupiter masses, with a horizontal line at 1 m/s. The curves reproduce the radial-velocity table (Jupiter analog 12.5 m/s, Earth analog 0.09 m/s).
+- [Manim] Show a planet orbiting its star while the transit light curve and the star's radial-velocity curve are drawn in sync. This makes clear that the transit happens at a zero crossing of the radial velocity and that edge-on orbits are needed.
+
+=== 02 Physics/07 Astrophysics and Cosmology/Stellar structure equations, homology, and energy transport.md
+priority: high
+graph: yes
+manim: no
+summary: The core results are correct (uniform-density $T$, $P_c$, $T_c$, $\mu$ formulas, the homology matrix and its determinant, the $\delta_X$ scalings), but the very long note has a wrong sound-crossing coefficient, a dimensionally wrong $\sigma_8$ formula, unrelated cosmology sections and a bloated table.
+- [Correctness] "Sound waves": from $\Pi=(12R^3/(\Gamma_1GM))^{1/2}$ and $R^3/GM=3/(4\pi G\bar\rho)$ one gets $\Pi=(9/(\pi\Gamma_1G\bar\rho))^{1/2}\approx1.69/\sqrt{\Gamma_1G\bar\rho}$, not $\sqrt{12}/\sqrt{G\bar\rho}$. For the Sun this is about 0.064 d; the quoted 0.04 d corresponds to a coefficient of 1.
+- [Correctness] $\sigma_8^2=\int P(k)W^2\,dk$ is dimensionally wrong; it should be $\sigma_8^2=\frac{1}{2\pi^2}\int P(k)W^2(kR)\,k^2\,dk$ with $R=8\,h^{-1}$ Mpc. Also, the "Diffusion equation" display under "Homologous stars" still uses $d/dr$. With the $(4\pi r^2)^2$ factor and no $\rho$, the derivative must be $d/dM_r$; fix the equation, not just the callout.
+- [Correctness] Table clashes: $\energy{W}$ is listed as both work and total energy; $\energy{E}$ as specific energy, as energy density (its meaning here) and as electron energy; $\energy{\epsilon}$ also as collision energy; and $\mu$ with four meanings. The table also carries many unused entries (nuclear radius, impact parameter, $h$, polytropic $K$ and $n$, neutrino emission time); prune it.
+- [Intuition] In the homology matrix, state which inputs give the example exponents. $\chi_\rho=\chi_T=\lambda=1$ with Thomson opacity ($n=s=0$) and CNO burning ($\nu=15$) gives $(\alpha_R,\alpha_\rho,\alpha_L,\alpha_T)=(7/9,-4/3,3,2/9)$. Kramers opacity with pp burning ($\nu=4$) gives $\alpha_L\approx5.5$, matching the low-mass value of 5.0. Also note that the $\delta_X$ result $L'\propto y^{-1/2}$ assumes Kramers opacity.
+- [Structure] Move "Axions and neutrino magnetic moments", the $\sigma_8$ and power-spectrum material and "Warm dark matter streaming" to a cosmology or particle note. Replace the opening "Dynamical times" display ($W=\Omega/2\approx-GM^2/R$, which mixes $\gamma=4/3$ and $5/3$) with a clean derivation of $\tau_{\mathrm{dyn}}\sim(G\bar\rho)^{-1/2}\approx0.5$–1 h.
+- [Graph] Plot the constant-density profiles $M_r/M=x^3$, $P/P_c=1-x^2$ and $T/T_c=1-x^2$ against $x=r/R$. In a second panel, plot log–log homology lines $L\propto M^{3}$, $L\propto M^{5.5}$ and $R\propto M^{0.78}$ over 0.1–50 $M_\odot$.
+
+=== 02 Physics/07 Astrophysics and Cosmology/Synchrotron populations, self-absorption, and equipartition.md
+priority: medium
+graph: yes
+manim: yes
+summary: The synchrotron population, polarization, self-absorption and equipartition derivations are correct (spectral index, $\Pi=72\%$, $\nu^{5/2}$, $B^{2/7}$ and the 3/4 and 7/4 energy ratios all check), but one symbol is reused, a table entry is doubtful, and a homework digression interrupts the note.
+- [Correctness] Symbol clash: $C$ is the normalization in $n(E)=CE^{-p}$ and also the band constant in $U_e=CL_{\mathrm{sync}}^{\mathrm{tot}}B^{-3/2}$; rename the second one, e.g. $C_{12}$. The table lists $\alpha$ fine-structure constant, $\energy{S}$ incident flux, $\energy{U}$ radiation energy density and brightness $T$, defines $\energy{E}$ as radiant energy (here it is electron energy), and omits $p$, $k$, $V$, $\epsilon(\omega)$, $n(E)$ and the pitch angle $\alpha$.
+- [Correctness] In the cluster-field table, a Coma "Faraday rotation" value of about 0.2 μG matches the inverse-Compton (hard X-ray) estimate. Faraday rotation gives several μG, about 5 μG in the centre (Bonafede et al. 2010). Relabel the column or the values, and check "A366" against the source, as it looks like a misread cluster name.
+- [Structure] "Review of homework problem 3" (cluster X-ray $h$-scalings, which check out) is unrelated to synchrotron emission; move it to the bremsstrahlung/cluster note. The definition of $\epsilon(\omega)$ is also stated twice in the first section.
+- [Example] Finish the equipartition section with a numerical case, moving in the Cygnus A estimate that now sits in the spectral-lines note: $B_{\mathrm{eq}}\sim100\,\mu$G in lobes of radius 30 kpc gives $U_B\sim10^{60}$ erg, so $U_{\mathrm{tot}}\approx\tfrac73U_B$.
+- [Graph] Make a log–log plot of a homogeneous self-absorbed source, $I_\nu\propto(\nu/\nu_1)^{5/2}\left[1-\exp(-(\nu/\nu_1)^{-(p+4)/2})\right]$ with $p=2.5$ and $\nu/\nu_1$ from 0.01 to 100. Mark the slopes $+5/2$ and $-0.75$.
+- [Manim] Animate an electron gyrating with $\gamma\gg1$ whose $1/\gamma$ beaming cone sweeps past an observer, producing a short pulse of width $\sim1/(\gamma^2\omega_B)$. This shows directly why $\omega_c\propto\gamma^2$.
+
+=== 02 Physics/07 Astrophysics and Cosmology/The collisionless Boltzmann equation and Jeans moments.md
+priority: low
+graph: yes
+manim: yes
+summary: A careful, correct derivation of the Vlasov equation, the continuity and Jeans equations, the spherical Jeans mass and the isothermal sphere, with good explanations; the main defect is a quantities table copied from other notes.
+- [Correctness] The Physical quantities table conflicts with the note. It uses $\mu$ for both surface brightness and mean particle mass, $n$ for both Sérsic index and number density, and $\beta$ for both the velocity anisotropy and an "isothermal beta-model exponent". It describes $\rho_0$ as a deprojection normalization and lists unused $V$, $q$, $\epsilon$, $e$, $p$, $\delta$, $a$ and $b$. Prune it.
+- [Simplify] In "The isothermal sphere", state that $\Phi_0=\Phi(0)$, so $\Psi(0)=0$ and $\rho(0)=\rho_0$. Give the dimensionless form in $\rho/\rho_0$ and $r/r_0$, and mention the singular solution $\rho=\sigma^2/(2\pi Gr^2)$ as the large-$r$ asymptote, which gives a flat rotation curve with $v_c=\sqrt2\,\sigma$.
+- [Example] After the spherical Jeans mass formula, work an example: a tracer with $\nu\propto r^{-3}$ and constant $\overline{v_r^2}=\sigma^2$ gives $M(<r)=\sigma^2r(3-2\beta)/G$. Changing $\beta$ from 0 to 0.5 then lowers the inferred mass by 33%, which makes the mass–anisotropy degeneracy concrete.
+- [Graph] Plot the numerical isothermal-sphere solution $\log(\rho/\rho_0)$ against $\log(r/r_0)$ for $r/r_0$ from 0.01 to 1000, together with the singular $r^{-2}$ asymptote, showing the core and the damped oscillations about it.
+- [Manim] Animate a blob of points in $(x,v)$ phase space evolving in an anharmonic potential. It shears into a thin filament while its area stays constant, which illustrates $df/dt=0$ and phase mixing.
+
+=== 02 Physics/07 Astrophysics and Cosmology/The fundamental plane of elliptical galaxies.md
+priority: medium
+graph: yes
+manim: yes
+summary: The virial derivation of the fundamental plane, the $D_n$ aperture algebra and the $M/L$ tilt exponents are correct (I reproduced 0.37/0.11 and 0.16/−0.14), but the note starts mid-topic, includes exam logistics, and has a missing $h^{-1}$ and a misstated exponent range.
+- [Correctness] The $D_n$–σ normalization is missing a factor: Schneider eq. 3.35 reads $D_n/(h^{-1}\,\mathrm{kpc})=2.05\,(\sigma_0/100\,\mathrm{km\,s^{-1}})^{1.33}$. Restore the $h^{-1}$.
+- [Correctness] With $1/\gamma\approx0.83$ and $b$ between $-0.85$ and $-0.75$, the residual exponent $b+1/\gamma$ lies between $-0.02$ and $+0.08$, not between $\pm0.05$. In the table, $r_g$ is listed both as gravitational radius and as gyroradius, and $V$, $n$, $q$/$\epsilon$/$e$ and $p$ are unused.
+- [Structure] The note opens mid-derivation, replacing $\sigma_0$ and $v_0$ and using an undefined $\delta$; move that paragraph to the elliptical-kinematics note or define the quantities. Remove the "Oral final exam" block, and fix the duplicated link text "the [[#The fundamental plane|the section on …]]".
+- [Intuition] Quantify the tilt: the virial theorem predicts $(a,b)=(2,-1)$, while observations give about $(1.5,-0.75)$. This implies $M/L\propto L^{0.16\text{–}0.37}$, so $M/L$ rises by a factor of about 2–5 over two decades in $L$, which shows why stellar populations alone are debated as the explanation.
+- [Graph] Make a 3D plot of the observed plane $\log R_e=1.49\log\sigma_0-0.75\log I_e+c$ and the virial plane $\log R_e=2\log\sigma_0-\log I_e+c'$, for $\sigma_0=100$–400 km/s and two decades in $I_e$, to show the tilt.
+- [Manim] Rotate a 3D cloud of galaxies scattered about the plane from face-on to edge-on. This shows that the scatter is thin only in one projection and that $D_n$–σ is a nearly edge-on view.
+
+=== 02 Physics/07 Astrophysics and Cosmology/Thermal bremsstrahlung and cluster hydrostatic equilibrium.md
+priority: medium
+graph: yes
+manim: yes
+summary: A clear derivation of free–free emission in the impulse approximation and of cluster hydrostatic equilibrium, with correct ICM scales (mean free path, gyroradius, pressures, sound-crossing time), but one wrong correction factor and a nearly empty, mislabelled quantities table.
+- [Correctness] In "Free–free cooling function and Gaunt factor", matching the impulse-approximation result to R&L eq. 5.14a leaves a factor of $\sqrt3/4\approx0.43$, not $3\pi/(2\sqrt3)\approx2.72$. Check: $32\pi^3(2\pi)^{-3/2}m_e^{-3/2}\big/\left[32\pi m_e^{-1}(2\pi/(3m_e))^{1/2}\right]=\sqrt3/4$. Correct the bracketed factor.
+- [Correctness] The Physical quantities table lists $b$ as the Doppler parameter, but the note uses $b$ as the impact parameter. The Compton $y$, $\energy{U}$ radiation energy density and "brightness" $T$ are unused or wrong here. Add $n_e$, $n_i$, $Z$, $v_0$, $\ell_e$, $r_g$, $t_{\mathrm{eq}}$, $P$, $\rho$, $\Phi$, $\mu$, $m_a$ and $\bar g_{\mathrm{ff}}$.
+- [Intuition] Explain why the spectrum is flat: a pulse of duration $b/v_0$ has a flat Fourier spectrum up to $\nu\sim v_0/(2\pi b)$. The exact classical integral over $b$ gives $\ln(b_{\max}/b_{\min})$, and the Gaunt factor replaces this log; this makes "close to the quantum result" concrete.
+- [Example] Add an ICM luminosity estimate: $n_e\approx n_i=10^{-3}$ cm⁻³, $T=10^8$ K and $\bar g=1.2$ give $\epsilon_{\mathrm{ff}}\approx1.7\times10^{-29}$ erg s⁻¹ cm⁻³, so a uniform sphere of radius 1 Mpc emits about $2\times10^{45}$ erg/s. Also note that the 20% ICM mass share is on the high side; typical values are 12–15%.
+- [Graph] Plot $\epsilon_\nu\propto T^{-1/2}e^{-h\nu/kT}$ against $h\nu$ for $kT=2$, 5 and 10 keV on log–log axes from 0.1 to 50 keV, at fixed $n_en_i$, showing the flat part and the exponential cutoff.
+- [Manim] Animate an electron passing an ion on a straight line, while plotting its acceleration pulse against time and the Fourier spectrum of that pulse, which is flat up to $v_0/b$ and then cut off.
+
+=== 02 Physics/07 Astrophysics and Cosmology/Thermal source functions and optically thick spectra.md
+priority: low
+graph: yes
+manim: no
+summary: A correct, readable treatment of the formal solution, the cavity argument, Kirchhoff's law and the free–free radio turnover; the $\alpha_\nu^{\mathrm{ff}}$ formula and the scalings check, and only the table and some framing need work.
+- [Correctness] The table lists $\alpha$ fine-structure constant, $\energy{S}$ incident flux and $\energy{I}$, which are unused, and calls $\thermal{T}$ brightness temperature, though here it is the wall or plasma temperature. It omits $L$ (path length), $Z$, $n_e$, $n_i$, $\bar g_{\mathrm{ff}}$, $\delta Q$ and the entropy $\thermal{S}$, which also visually clashes with the source function $\energy{S}_\nu$; rename the entropy (e.g. $S_{\mathrm{ent}}$).
+- [Structure] The opening Perseus nonthermal-pressure sentence and Figs. 50–51 belong in the cluster/bremsstrahlung note. The heading "Thermal bremsstrahlung absorption" introduces general source-function material; rename it to something like "Source function and formal solution".
+- [Simplify] Remove the remarks "The source writes $\nu^3$ … / $T^{1/2}$ …"; the displayed equations are already correct.
+- [Example] Add the turnover frequency: setting $\tau_\nu=1$ gives $\nu_t\propto T^{-0.64}\,\mathrm{EM}^{0.48}$. For an HII region with $T=10^4$ K and $\mathrm{EM}=10^6$ pc cm⁻⁶, $\nu_t\approx0.6$ GHz.
+- [Graph] Plot $I_\nu=B_\nu(T)(1-e^{-\tau_\nu})$ with $\tau_\nu=(\nu/\nu_t)^{-2.1}$ and $\nu_t=0.6$ GHz, log–log over 0.05–50 GHz, showing the $\nu^2$ rise and the flat optically thin part. In a second panel, plot $I(\tau)$ for $I_0=0$, $S/2$ and $2S$ relaxing to $S$.
+
+=== 02 Physics/07 Astrophysics and Cosmology/Thermonuclear rates and hydrogen-burning chains.md
+priority: high
+graph: yes
+manim: no
+summary: The core nuclear-rate physics is right ($\pi\bar\lambda^2=0.657$ b/($\mu\epsilon$), $\eta=0.1574\ldots$, the partial-wave annulus, $\epsilon_{\mathrm{grav}}$, a Gamow peak of about 30 keV), but the CNO chain is wrong, the rate prefactor has the wrong mass power, symbols clash, and many personal asides clutter the note.
+- [Correctness] In "CNO cycles", the fourth reaction must be $^{14}$N + p → $^{15}$O + γ. The cycle then needs $^{15}$O → $^{15}$N + e⁺ + ν and $^{15}$N + p → $^{12}$C + α to close; write out the full chain.
+- [Correctness] Nonresonant rate prefactor: $(8/\pi m)^{1/2}(kT)^{-3/2}$, with $S$ in MeV b and energies in MeV, gives $1.6\times10^{-15}\,\mathrm{cm^3\,s^{-1}}\,S/[\mu^{1/2}(kT)^{3/2}]$. The power is $\mu^{1/2}$, not $\mu$, and $S$ (taken as constant) must multiply the integral.
+- [Correctness] $r_{\alpha\beta}=n_\alpha n_\beta\langle\sigma v\rangle_{\alpha\beta}$ should use the target density $n_X$, as in the line before it, because $\beta$ labels the outgoing particle.
+- [Correctness] Symbol clashes: $\energy{\epsilon}$ is the energy-generation rate at the top and the collision energy later; $\Gamma$ denotes both the adiabatic exponents and the resonance widths; $\mu$ is both mean molar mass and reduced mass in amu; $P_i$ sits next to pressure $P$. Rename, for example collision energy $E$. The table also carries many unused entries ($a$, $c$, streaming $v$, neutron-drip $Z$/$N$, polytropic $K$/$n$).
+- [Structure] Remove the margin asides ("Texas accent", "Communism", "Monster salary", EM drive and others). Clarify that $Q_{\mathrm{eff,pp}}\approx13$ MeV is per pp reaction, i.e. half of the 26.2 MeV released per $^4$He.
+- [Graph] Plot the Gamow peak: $e^{-E/kT}$, $e^{-b/\sqrt E}$ with $b=31.28\,Z_1Z_2\,\mu^{1/2}\,\mathrm{keV^{1/2}}$, and their product for $^{12}$C + p at $T_6=20$ and 22, over $E=0$–100 keV. The peak sits near 29 keV, and comparing the two areas shows the $T^{\sim16}$ sensitivity.
+
+=== 02 Physics/07 Astrophysics and Cosmology/Variable stars and stellar pulsation.md
+priority: high
+graph: yes
+manim: yes
+summary: Mostly a list of class names, sketch descriptions and margin remarks with almost no physics, plus several factual slips in the class table.
+- [Correctness] The table gives Mira periods as 100–300 days. Mira variables span about 80–1000 d, and Mira itself has $P\approx332$ d, so the opening "one to two years" for Mira is also too long.
+- [Correctness] β Cephei stars pulsate mainly in low-order p (and mixed) modes driven by the iron-opacity κ mechanism; only γ Doradus stars are g-mode pulsators. ZZ Ceti stars are specifically hydrogen-atmosphere (DAV) white dwarfs; helium- and C/O-atmosphere pulsators are the DBV (V777 Her) and GW Vir classes.
+- [Structure] The opening Kr/Rb neutron-capture sketch and "Murdered by Burbidge" belong in the nucleosynthesis note. The quantities table lists unrelated symbols ($a$ twice, $K$, $h$, neutron-drip $Z$ and $N$, total lifetime $\tau$).
+- [Intuition] Add the physics the note lacks: the κ mechanism, in which the He II ionization zone traps heat on compression and acts as a valve, and the period–mean-density relation $\Pi\sqrt{\bar\rho/\bar\rho_\odot}\approx Q$ with $Q\approx0.03$–0.04 d for Cepheids.
+- [Graph] Plot the Leavitt law $M_V=-2.43(\log P-1)-4.05$ for classical Cepheids with $P=1$–100 d. Add Type II Cepheids about 1.5 mag fainter and RR Lyrae at $M_V\approx0.6$, $P\approx0.5$ d.
+- [Manim] Animate a radially pulsating star whose ionization layer changes opacity, together with synchronized radius and light curves, to show the driving and the phase lag between maximum light and minimum radius.

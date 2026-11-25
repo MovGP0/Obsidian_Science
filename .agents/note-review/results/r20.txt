@@ -1,0 +1,487 @@
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/06.07.02 Properties of the Bose–Einstein Distribution.md
+priority: medium
+graph: yes
+manim: no
+summary: Physically careful and correct, but the key small-gap result is given only in words and the limit equation drops the semantic macros.
+- [Simplify] In "Chemical-potential constraint", replace the sentence "approximately thermal energy divided by that gap" with the displayed formula ${\mechanical{n}}_0\simeq {\thermal{k}}_B{\thermal{T}}/({\energy{\varepsilon}}_0-{\energy{\mu}})$ and its one-line derivation from $e^y-1\approx y$.
+- [Structure] The limit in "Unbounded occupation" writes plain $\mu\to\varepsilon_\alpha^-$; use ${\energy{\mu}}$ and ${\energy{\varepsilon}}_\alpha$ like the rest of the note.
+- [Example] Add a number: for $({\energy{\varepsilon}}_0-{\energy{\mu}})/({\thermal{k}}_B{\thermal{T}})=10^{-6}$ the ground state holds about $10^6$ particles, which shows how a macroscopic population arises without $\mu$ reaching $\varepsilon_0$.
+- [Graph] Plot ${\mechanical{n}}_0$ against $y=\beta(\varepsilon_0-\mu)$ for $y\in[0.01,3]$ on log axes, together with the asymptote $1/y$, to show where the linear approximation holds.
+- [Structure] The quantity table lists ${\mechanical{n}}_\alpha$ but the body uses ${\mechanical{n}}_{\mathrm{BE}}$ and the ground-state occupation; add both symbols to the table.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/06.08 Classical Limit - Maxwell–Boltzmann Distribution.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub note that motivates the classical limit and links its three subsections correctly.
+- [Simplify] The sentence "retain the identical-particle counting already built into quantum number states" is abstract; say concretely that it is the source of the $1/N!$ in the classical partition function.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/06.08.01 Derivation as a Limit of Quantum Statistics.md
+priority: low
+graph: yes
+manim: no
+summary: Short and correct derivation with a good numerical error estimate; the error numbers are right ($0.009901$, $0.010101$).
+- [Simplify] Introduce the helper $r$ as a displayed equation $r=e^{-{\thermal{\beta}}({\energy{\varepsilon}}-{\energy{\mu}})}$ and give the expansion $r/(1\pm r)=r\mp r^2+\dots$ explicitly, so the "opposite signs, order $r^2$" claim is visible.
+- [Graph] Plot the ratios $n_{\mathrm{FD}}/n_{\mathrm{MB}}=1/(1+r)$ and $n_{\mathrm{BE}}/n_{\mathrm{MB}}=1/(1-r)$ against $x=\beta(\varepsilon-\mu)$ for $x\in[0.2,6]$, with a 1 % band, to show where the Maxwell–Boltzmann law is accurate.
+- [Links] Link the "populated low-energy states" remark to [[06.08.03 Quantum Degeneracy Parameter]], where the criterion is turned into $n\lambda_T^3\ll1$.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/06.08.02 Thermal de Broglie Wavelength.md
+priority: low
+graph: no
+manim: no
+summary: Correct and well checked (the $h/p=\sqrt\pi\lambda_T$ remark is right), with an existing scaling graph; it only lacks concrete magnitudes.
+- [Example] Add typical values: for ⁴He at $300\,\mathrm K$, $\lambda_T\approx0.050\,\mathrm{nm}$; for an electron at $300\,\mathrm K$, $\lambda_T\approx4.3\,\mathrm{nm}$. Compare each with the spacing in a gas at $1\,\mathrm{atm}$ (about $3.4\,\mathrm{nm}$) and in a metal (about $0.2\,\mathrm{nm}$).
+- [Simplify] Display the Gaussian integral behind Eq. (6.6), $\int_0^\infty\sqrt\varepsilon\,e^{-\beta\varepsilon}d\varepsilon=\tfrac{\sqrt\pi}2(k_BT)^{3/2}$, instead of saying only "evaluate the Gaussian integral".
+- [Structure] The letter $g$ appears as ${\energy{g}}(\varepsilon)$ (density of states) and ${\mechanical{g}}_s$ (spin degeneracy) in the same note. This is fine, but the convention callout should say explicitly that $g_s$ is a pure number.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/06.08.03 Quantum Degeneracy Parameter.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and careful; the ⁴He ($5.61\,\mathrm K$) and electron ($2.58\times10^4\,\mathrm K$) degeneracy temperatures recompute exactly.
+- [Graph] Add a log–log "degeneracy map" of number density ($10^{20}$ to $10^{36}\,\mathrm{m^{-3}}$) against temperature ($10^{-9}$ to $10^{8}\,\mathrm K$). Draw the lines $n\lambda_T^3=1$ for electrons and for ⁴He atoms, and mark air at STP, liquid He, copper electrons, white-dwarf electrons, and a cold-atom BEC.
+- [Structure] ${\mechanical{n}}$ here is number density, while the neighbouring notes use ${\mechanical{n}}_\alpha$ for occupation. Add a one-line reminder at the definition so that readers do not mix the two.
+- [Intuition] State the geometric picture directly: ${\mechanical{\eta}}=(\lambda_T/d)^3$, so "$\eta\sim1$" means that the thermal wavelength equals the mean spacing, which links to Fig. 6.2.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/06.09 Density of States for a Free Particle.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub with correct links and a good geometric preview.
+- [Structure] No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/06.09.01 Motivation and Problem Formulation.md
+priority: low
+graph: yes
+manim: yes
+summary: Correct and readable set-up of periodic boundary conditions, but the central idea (a uniform $k$-grid with one state per cell of volume $(2\pi/L)^d$) is never stated as a formula or shown.
+- [Simplify] Add the explicit statement that each allowed $\mathbf k$ occupies a cell of volume $(2\pi/{\mechanical{L}})^d$, so the number of states in $d^d k$ is $L^d\,d^dk/(2\pi)^d$. This is the bridge to 06.09.02, which currently starts from that formula without derivation.
+- [Graph] Show a 2D lattice of allowed $(k_x,k_y)$ points, spaced $2\pi/L$, with a circle of radius $k$ and a thin shell, to illustrate state counting.
+- [Manim] Animate a growing circle on the $k$-grid while a counter compares the number of enclosed lattice points with $\pi k^2/(2\pi/L)^2$, showing how the continuum count becomes accurate for large $k$.
+- [Structure] The quantity table lists ${\signal{\phi}}_\alpha$ while the body uses ${\signal{\phi}}_{\mathbf k}$; align the subscript.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/06.09.02 Density of States in Three Dimensions.md
+priority: low
+graph: no
+manim: no
+summary: Correct derivation (the prefactor $g_sV(2m)^{3/2}/(4\pi^2\hbar^3)$ checks) with useful scaling checks.
+- [Simplify] Between the two lines of the aligned derivation, add the simplification step $4\pi/(2\pi)^3=1/(2\pi^2)$ and $2m\varepsilon\sqrt{m/2\varepsilon}=(2m)^{3/2}\sqrt\varepsilon/2$, so that the reader can reach Eq. (6.7) without scratch work.
+- [Example] Add a magnitude: the number of states below $k_BT$ at $300\,\mathrm K$ for ⁴He in $1\,\mathrm{cm^3}$ is about $V/\lambda_T^3\sim10^{25}$, far more than the atoms in a dilute gas. This motivates the continuum treatment.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/06.09.03 Density of States in Two Dimensions.md
+priority: low
+graph: no
+manim: no
+summary: Short, correct, and well explained, including the Jacobian-cancellation intuition.
+- [Example] Mention a physical realization, such as a 2D electron gas in a GaAs heterostructure with $g_s=2$ and $m^*\approx0.067\,m_e$, where the constant density of states produces the step-like density of states of subbands.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/06.09.04 Density of States in One Dimension.md
+priority: low
+graph: yes
+manim: no
+summary: Correct (the prefactor and the Bose integrability argument $\varepsilon^{d/2-2}$, integrable only for $d>2$, check), with a useful dimension-comparison remark.
+- [Graph] Next to Remark 6.4, plot $g(\varepsilon)\propto\varepsilon^{-1/2}$, $\varepsilon^0$ and $\varepsilon^{1/2}$ on common normalized axes for $\varepsilon\in(0,4]$, so the three dimensions can be compared at a glance.
+- [Structure] The quantity table lists ${\mechanical{n}}_\alpha$, but the note uses ${\mechanical{n}}_{\mathrm{BE}}$ only; rename the table entry.
+- [Links] Link the "special role of three dimensions" sentence to [[08.02 Bose–Einstein Condensation]].
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/06.09.05 Transition from a Sum to an Integral.md
+priority: low
+graph: no
+manim: no
+summary: Correct and explicit about total and per-volume densities, but its validity condition is stated without a number.
+- [Example] Quantify the condition $k_BT\gg$ level spacing: for ⁴He in a $1\,\mathrm{cm}$ box the lowest spacing $\hbar^2(2\pi/L)^2/2m$ is about $8\times10^{-17}\,k_B\cdot300\,\mathrm K$, so the sum-to-integral step is excellent.
+- [Structure] $\ln\Xi_\alpha$ in Eq. (6.9) is used without being defined here; add its explicit FD/BE form $\pm\ln(1\pm z e^{-\beta\varepsilon})$ or link to the note that defines it.
+- [Structure] In the sentence "With total density of states $g$", use ${\energy{g}}$ for consistency with the macros.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/06.10 Comparison of the Three Statistics.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub; its distinction between a fixed $\mu$ and a fixed density is valuable.
+- [Structure] No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/06.10.01 Comparison Table.md
+priority: low
+graph: no
+manim: no
+summary: Accurate comparison table with good caveats; one cell is phrased awkwardly.
+- [Simplify] In the "Chemical-potential condition" row, replace "No bosonic upper bound" for Fermi–Dirac with "Any real ${\energy{\mu}}$", which says the same thing positively.
+- [Structure] In the quantity table, $\lambda_T$ in the ${\mechanical{\eta}}$ row lacks the ${\signal{}}$ macro, and $k_B$ in the ${\thermal{\beta}}$ row lacks ${\thermal{}}$.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/06.10.02 Graphs of the Three Distributions.md
+priority: low
+graph: no
+manim: no
+summary: Good graph with a correct reconstruction point ($x=\ln2$ gives $1/3$, $1/2$, $1$).
+- [Simplify] In the caption, say explicitly that the BE curve starts at $x\approx0.28$ only because it leaves the plotted range there, so readers do not read it as a physical cutoff.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/06.10.03 Analysis of the Comparison.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and clear analysis; the $n_{\mathrm{MB}}=1/2$ check is right.
+- [Graph] Plot the ratios $n_{\mathrm{BE}}/n_{\mathrm{MB}}=1/(1-n_{\mathrm{MB}})$ and $n_{\mathrm{FD}}/n_{\mathrm{MB}}=1/(1+n_{\mathrm{MB}})$ against $n_{\mathrm{MB}}\in[0,0.9]$. This turns the "Quantum correction" formula into a picture of statistical attraction and repulsion.
+- [Structure] The quantity table lists ${\mechanical{n}}_\alpha$, but the body uses ${\mechanical{n}}_{\mathrm{FD,BE,MB}}$; align the table.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/06.11 Grand Potential and the Fermi and Bose Functions.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct results and a correct convergence discussion, but the number and pressure formulas are stated without the short derivation that justifies orders $3/2$ and $5/2$.
+- [Simplify] Show the substitution explicitly: $N=\int g(\varepsilon)n\,d\varepsilon=A_{3D}(k_BT)^{3/2}\Gamma(3/2)f_{3/2}(z)$ and $A_{3D}(k_BT)^{3/2}\Gamma(3/2)=g_sV/\lambda_T^3$. Without this, the "counting meaning" paragraph has nothing to point to.
+- [Graph] Plot $f_{3/2}(z)$, $g_{3/2}(z)$ and $z$ for $z\in[0,1]$ (and $f_{3/2}$ to $z=5$). Mark $g_{3/2}(1)\approx2.612$ to show the bounded Bose excited-state capacity that leads to condensation.
+- [Example] Add the leading series $f_\ell(z)=z-z^2/2^\ell+\dots$, $g_\ell(z)=z+z^2/2^\ell+\dots$. Remark 6.6 then follows immediately, and the series connects to the second virial correction.
+- [Structure] The note uses $g$ for the Bose function $g_\ell$ and for the spin degeneracy ${\mechanical{g}}_s$. It also uses ${\energy{\Phi}}$ for the grand potential, while the companion lecture note uses ${\energy{\Omega}}$. Add a notation remark.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/06.12 Equation of State and Degeneracy Pressure.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and concrete; the copper numbers recompute ($\varepsilon_F=6.99\,\mathrm{eV}$, $T_F=8.1\times10^4\,\mathrm K$, $P_0=3.8\times10^{10}\,\mathrm{Pa}$).
+- [Graph] Plot $P$ against $n$ on log–log axes. Show the degeneracy line $P_0=\tfrac25n\varepsilon_F$ (slope $5/3$) together with classical isotherms $P=nk_BT$ for 300 K and $10^4$ K, to show where degeneracy pressure dominates.
+- [Structure] The quantity table lists ${\mechanical{P}}$, ${\energy{\varepsilon}}$ and ${\mechanical{m}}$, but the body uses ${\mechanical{P}}_0$, ${\energy{\varepsilon}}_F$ and ${\mechanical{m}}_e$; add those symbols.
+- [Simplify] In the Example, note that $(6\pi^2n/g_s)^{2/3}$ becomes $(3\pi^2n)^{2/3}$ for $g_s=2$, since the displayed numeric line silently changes the form.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/06.13 Summary.md
+priority: low
+graph: no
+manim: no
+summary: Accurate and well-structured summary; the two-state self-check (four bosonic configurations) is correct.
+- [Links] "the Fermi-gas chapter" is not linked; use [[07.00 Fermi Gas]]. Consider linking the Bose–Einstein condensation, blackbody, and Debye mentions to [[08.02 Bose–Einstein Condensation]], [[08.04 Photon Gas and Blackbody Radiation]] and [[08.05 Phonons and the Debye Model]].
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/06.99 Exercises.md
+priority: low
+graph: no
+manim: no
+summary: Clear exercise hub with correct links and a helpful guided route.
+- [Structure] The sentence about "supplied screenshots" with no answer key is workflow metadata; shorten it to "Worked solutions are added derivations, not from the source".
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/99 Exercises/06.01 Pressure and Energy of a Quantum Gas.md
+priority: low
+graph: no
+manim: no
+summary: Correct and well-explained integration-by-parts derivation that covers both statistics, including the boundary terms.
+- [Example] Add a closing generalization: for dispersion $\varepsilon\propto k^s$ in $d$ dimensions, $PV=(s/d)U$. This recovers $2/3$ here and $1/3$ in Exercise 6.7, and links the two exercises.
+- [Structure] The quantity table lists ${\mechanical{n}}_\alpha$, but the body uses ${\mechanical{n}}(\varepsilon)$. Also add $q$ and $A_{3D}$ as helper symbols in the text, or say that they are helpers.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/99 Exercises/06.02 Ground-State Energy of a Fermi Gas.md
+priority: low
+graph: yes
+manim: no
+summary: Correct, compact, and well interpreted.
+- [Graph] Plot $g(\varepsilon)\propto\sqrt\varepsilon$ with the area up to $\varepsilon_F$ shaded and a vertical line at the mean $3\varepsilon_F/5$. This shows why the mean lies above $\varepsilon_F/2$.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/99 Exercises/06.03 Grand Partition Function and Pressure.md
+priority: low
+graph: no
+manim: no
+summary: Correct derivation; the prefactor $\tfrac23A_{3D}(k_BT)^{3/2}\Gamma(5/2)=g_sV/\lambda_T^3$ checks.
+- [Simplify] In step 2, show the one-line prefactor check $\tfrac23\cdot\tfrac{3\sqrt\pi}{4}A_{3D}(k_BT)^{3/2}=g_sV/\lambda_T^3$, rather than asserting it.
+- [Structure] $g_0$ (ground-mode degeneracy) lacks a macro and sits next to ${\mechanical{g}}_s$ and ${\energy{g}}(\varepsilon)$. Consider writing ${\mechanical{g}}_0$ and noting that it is a pure count.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/99 Exercises/06.04 Low-Temperature Fermi Heat Capacity.md
+priority: low
+graph: yes
+manim: no
+summary: Correct Sommerfeld derivation (the $\mu$ shift, the $\pi^2/6$ energy coefficient and $C_V=\tfrac{\pi^2}{2}Nk_BT/T_F$ all check); the numerical check ($3.29\%$) is right.
+- [Graph] Plot $C_V/(Nk_B)$ against $T/T_F$ for $0$–$2$, using the exact numerical FD result, with the Sommerfeld line $\tfrac{\pi^2}2T/T_F$ and the classical plateau $3/2$. This shows where the linear law fails.
+- [Links] Link the Sommerfeld expansion in step 1 to [[07.03.03 Sommerfeld Expansion]] for its derivation.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/99 Exercises/06.05 Planck Blackbody Spectrum.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and clear derivation with useful limiting cases.
+- [Graph] Plot the dimensionless spectrum $x^3/(e^x-1)$ for $x=h\nu/k_BT\in[0,12]$ with the Rayleigh–Jeans curve $x^2$ and the Wien curve $x^3e^{-x}$. Mark the peak at $x\approx2.821$.
+- [Links] Link to [[08.04.02 Density of States and the Planck Spectrum]] and [[08.04.04 Wien Displacement Law]] for the continuation.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/99 Exercises/06.06 Ordering of Occupation Distributions.md
+priority: low
+graph: no
+manim: no
+summary: Correct and complete elementary proof with a good domain caveat.
+- [Links] No change needed; optionally link to [[06.10.02 Graphs of the Three Distributions]], whose figure shows the same ordering.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/99 Exercises/06.07 Ultrarelativistic Density of States.md
+priority: low
+graph: no
+manim: no
+summary: Correct derivation of $g\propto\varepsilon^2$ and $PV=U/3$, including the classical check $\langle\varepsilon\rangle=3k_BT$.
+- [Structure] $g_{\mathrm{rel}}$ is written without the ${\energy{}}$ macro, although the quantity table lists ${\energy{g}}(\varepsilon)$; use ${\energy{g}}_{\mathrm{rel}}$ in the text and the table.
+- [Links] Link the photon remark to [[06.05 Planck Blackbody Spectrum]] (same $\varepsilon^2$ density with $g_s=2$).
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/06 Ideal Quantum Gas/Internal molecular modes and the ideal quantum gas.md
+priority: high
+graph: yes
+manim: no
+summary: The derivations are correct (the rotational limits, the small-fugacity virial correction $1\pm n\lambda^3/(2^{5/2}g)$ and $PV=\tfrac23E$ check), but the note mixes transcription commentary into the physics and has several symbol clashes and a wrong quantity table.
+- [Correctness] Symbol clashes: $\mu$ is both the reduced mass ${\mechanical{\mu}}$ (diatomic section) and the chemical potential ${\energy{\mu}}$. $V$ is both volume ${\mechanical{V}}$ and the bond potential ${\energy{V}}(r)$. $n$ is the vibrational quantum number, the number density, and (in the table) amount of substance. $P$ is both ${\mechanical{P}}_{\mathrm{cm}}$ and pressure. Rename them, for example $m_r$, $U(r)$, $v$ and $\mathbf p_{\mathrm{cm}}$.
+- [Correctness] The quantity table has entries that are wrong for this note: $\mechanical{M}$ "Stellar mass" (here molecular mass, listed twice), $n$ in $\unit{mol}$, $\Omega$ "Multiplicity" (here ${\energy{\Omega}}$ is the grand potential), $g$ "Landé factor" (here internal degeneracy), and $\theta,\phi$ orientation angles and $P_{\mathrm{int}},P_{\mathrm{ext}}$, which never appear. Remove or correct these rows.
+- [Simplify] Move the transcription remarks ("The margin cites Pathria page 142", "The handwritten derivative drops a superscript", "The handwritten prefactor is incomplete", "written $z$ in the notebook") into one source-notes callout so that the physics reads continuously.
+- [Simplify] The "Internal modes of diatomic molecules" section repeats the rotational partition function and limits from "Diatomic molecule". Merge the two, and say clearly that the heat-capacity sketch marked "vibr." with $T_0\approx85\,\mathrm K$ refers to the rotational scale of H₂ ($\theta_{\mathrm{rot}}\approx85\,\mathrm K$, while $\theta_{\mathrm{vib}}\approx6300\,\mathrm K$). Also note that Dulong–Petit is a solid-state law and is only an analogy here.
+- [Graph] Add a native plot of $C/(Nk_B)$ against $T/\theta$ for the rotor (exact sum, showing the overshoot near $T\approx0.8\,\theta_{\mathrm{rot}}$) and for the oscillator, $(x/2)^2/\sinh^2(x/2)$ with $x=\theta_{\mathrm{vib}}/T$. This would complement the hand-drawn Figs. 10–11 quantitatively.
+- [Links] Link the relativistic exercise prompts to [[06.07 Ultrarelativistic Density of States]] and the $PV=\tfrac23E$ result to [[06.01 Pressure and Energy of a Quantum Gas]]. Also use ${\signal{c}}$ for the speed of light as the chapter does, instead of ${\mechanical{c}}$.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.00 Fermi Gas.md
+priority: low
+graph: no
+manim: no
+summary: Clear chapter hub with a good motivating question and correct links.
+- [Structure] No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.01 Fermi Gas at Zero Temperature.md
+priority: low
+graph: no
+manim: no
+summary: Short, correct hub that motivates filling under exclusion.
+- [Structure] No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.01.01 Level Occupation and the Fermi Sphere.md
+priority: low
+graph: no
+manim: yes
+summary: Correct and well illustrated (the occupied points in Fig. 7.1 correctly lie inside radius 1.45), with careful remarks on the bulk limit.
+- [Manim] Animate the ground-state filling: add particles two at a time (spin up and down) to the $k$-grid points in order of increasing $|\mathbf k|$, so that the occupied region grows into the Fermi disk while the boundary radius $k_F\propto N^{1/3}$ (2D section) is tracked.
+- [Structure] The integer labels are written $n_x,n_y,n_z$, while ${\mechanical{n}}$ is number density in the next note. Use $\ell_x,\ell_y,\ell_z$ as in [[06.09.01 Motivation and Problem Formulation]].
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.01.02 Calculation of the Fermi Momentum.md
+priority: low
+graph: no
+manim: no
+summary: Correct and compact derivation of $k_F$, $\varepsilon_F$ and $p_F$ with good unit checks.
+- [Example] Add one concrete line, or a link to [[07.08 Worked Examples]]: copper with $n=8.49\times10^{28}\,\mathrm{m^{-3}}$ gives $k_F=1.36\times10^{10}\,\mathrm{m^{-1}}$, $\varepsilon_F=7.0\,\mathrm{eV}$ and $T_F=8.2\times10^4\,\mathrm K$, which makes "typical metallic Fermi temperatures" concrete.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.02 Density of States and Total Energy at T = 0.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub that correctly stresses the fixed-$N$ constraint for the pressure.
+- [Structure] No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.02.01 Density of States.md
+priority: low
+graph: no
+manim: no
+summary: Correct per-volume density of states with an explicit convention note relative to Chapter 6.
+- [Structure] The helper coefficient $C$ is later used next to the heat capacities ${\thermal{C}}_V$ (07.03–07.04). Rename it, for example $A_g$, or state that $C$ here is not a heat capacity.
+- [Simplify] Show the omitted algebra step $4\pi k^2\,dk/(2\pi)^3=\tfrac{1}{2\pi^2}\tfrac{(2m)^{3/2}}{2\hbar^3}\sqrt\varepsilon\,d\varepsilon$ between the second and third displays.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.02.02 Total Energy at T = 0.md
+priority: low
+graph: no
+manim: no
+summary: Correct and clear, with a good figure; the plotted finite-temperature chemical potentials ($0.9947$ and $0.9146\,\varepsilon_F$ for $k_BT=0.08$ and $0.3\,\varepsilon_F$) agree with an exact number-equation solution.
+- [Simplify] State in the Fig. 7.2 caption the two temperatures used ($k_BT=0.08\,\varepsilon_F$ and $0.3\,\varepsilon_F$), so that readers can relate the curves to the Sommerfeld formula.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.02.03 Degeneracy Pressure.md
+priority: low
+graph: no
+manim: no
+summary: Correct ($P_0=\tfrac{\hbar^2}{5m}(6\pi^2/g_s)^{2/3}n^{5/3}$ checks), with a good second derivation route described in words.
+- [Simplify] Write the energy-derivative route as two displayed lines, $E_0\propto V^{-2/3}$ and $P_0=-(\partial E_0/\partial V)_N=\tfrac23E_0/V$, instead of only describing it in prose.
+- [Links] Link to [[06.12 Equation of State and Degeneracy Pressure]], which already contains the copper estimate $P_0\approx3.8\times10^{10}\,\mathrm{Pa}$.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.03 Fermi Gas at Finite Temperature - Sommerfeld Expansion.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub that states the fixed-density constraint and the validity window of the expansion.
+- [Structure] No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.03.01 Fermi–Dirac Distribution.md
+priority: low
+graph: no
+manim: no
+summary: Correct, with a figure that uses chemical potentials from the exact number equation (it improves on the source).
+- [Simplify] State in the Fig. 7.3 caption the three temperatures plotted ($k_BT/\varepsilon_F=0.05$, $0.15$, $0.4$) and the corresponding $\mu/\varepsilon_F$ ($0.998$, $0.981$, $0.840$).
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.03.02 Fermi Integrals.md
+priority: low
+graph: yes
+manim: no
+summary: Correct definitions and a careful normalization warning, but no formula connects the integrals back to $n$ and $E$.
+- [Simplify] Add the two explicit uses, $n=C(k_BT)^{3/2}F_{1/2}(\eta)$ and $E/V=C(k_BT)^{5/2}F_{3/2}(\eta)$. The "order $1/2$ versus $3/2$" paragraph then has formulas to refer to.
+- [Graph] Plot $F_{1/2}(\eta)$ for $\eta\in[-4,10]$ on a log scale, with the classical asymptote $\Gamma(3/2)e^\eta$ and the degenerate asymptote $\tfrac23\eta^{3/2}$. This shows the crossover between the two regimes.
+- [Structure] $\eta$ here is the reduced chemical potential, while [[06.08.03 Quantum Degeneracy Parameter]] uses ${\mechanical{\eta}}$ for $n\lambda_T^3$; add a one-line warning about the different meaning.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.03.03 Sommerfeld Expansion.md
+priority: medium
+graph: yes
+manim: no
+summary: The result (7.3) and the $\pi^2/3$ moment are correct, but the derivation jumps from the Taylor series to the lemma without the intermediate line.
+- [Simplify] Insert the intermediate result $I=\Phi(\mu)+\tfrac{\pi^2}{6}(k_BT)^2\Phi''(\mu)+\tfrac{7\pi^4}{360}(k_BT)^4\Phi^{(4)}(\mu)+\dots$ and then note $\Phi''=\phi'$ and $\Phi(\mu)=\int_0^\mu\phi$. This makes the link to Eq. (7.3) explicit.
+- [Graph] Plot the kernel $-\partial f/\partial\varepsilon$ against $(\varepsilon-\mu)/k_BT$ for $\in[-8,8]$, with its full width at half maximum of about $3.5\,k_BT$ marked. This shows why only a window of width $\sim k_BT$ matters.
+- [Example] Add a worked check with $\phi=\varepsilon^{1/2}$, giving the number correction used in 07.03.04, so that the lemma is applied once before it is used.
+- [Structure] $\Phi$ is the primitive here but the grand potential in Chapter 6 (06.11). Consider another letter, such as $K(\varepsilon)$.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.03.04 Chemical Potential at Low Temperature.md
+priority: low
+graph: yes
+manim: no
+summary: Correct derivation and a good physical sign argument.
+- [Graph] Plot $\mu/\varepsilon_F$ against $T/T_F$ for $0$–$1.5$: show the exact numerical solution of the number equation, the Sommerfeld approximation $1-\tfrac{\pi^2}{12}(T/T_F)^2$, and the classical limit $k_BT\ln[\tfrac43\pi^{-1/2}(T_F/T)^{3/2}]$. Mark where $\mu$ crosses zero (near $T\approx0.99\,T_F$).
+- [Example] Quantify the shift for copper at 300 K: $\Delta\mu/\varepsilon_F\approx-1.1\times10^{-5}$, so $\mu=\varepsilon_F$ is an excellent approximation in metals.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.03.05 Total Energy at Finite Temperature.md
+priority: low
+graph: yes
+manim: no
+summary: Correct (the coefficient $5\pi^2/12$ checks) and well explained, including why the $\mu$ shift matters.
+- [Simplify] Show the substitution explicitly: $\tfrac25C\mu^{5/2}\approx\tfrac25C\varepsilon_F^{5/2}[1-\tfrac{5\pi^2}{24}t^2]$ plus $\tfrac{\pi^2}{4}C\varepsilon_F^{5/2}t^2$, with $t=k_BT/\varepsilon_F$, giving the net $\tfrac{\pi^2}{6}$. The cancellation that the text describes is then visible.
+- [Graph] Plot $E/E_0$ against $T/T_F$ from 0 to 2, using the exact numerical result, with the Sommerfeld parabola and the classical line $E/(N\varepsilon_F)=\tfrac32T/T_F$.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.04 Electronic Specific Heat.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub with good motivation for why a large energy coexists with a small heat capacity.
+- [Structure] No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.04.01 Derivation of the Linear Contribution.md
+priority: low
+graph: no
+manim: no
+summary: Correct; all three expressions for $\gamma$ agree, given the per-volume $g(\varepsilon_F)=3n/(2\varepsilon_F)$.
+- [Example] Add the copper number: $\gamma_{\mathrm{free}}=\pi^2R/(2T_F)\approx0.50\,\mathrm{mJ\,mol^{-1}\,K^{-2}}$ against the measured $0.695$. Link to [[07.08 Worked Examples]].
+- [Simplify] Show the one-line identity $g(\varepsilon_F)=3n/(2\varepsilon_F)$ that turns the middle expression for $\gamma$ into the density-of-states form.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.04.02 Comparison with the Classical Prediction.md
+priority: low
+graph: no
+manim: no
+summary: Correct ratio $\pi^2T/(3T_F)$ with a justified source correction.
+- [Example] Evaluate the ratio for copper at 300 K: $\pi^2\cdot300/(3\cdot8.18\times10^4)\approx0.012$. This quantifies the famous failure of the classical $\tfrac32R$ electronic heat capacity.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.04.03 Experimental Significance.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct physics and data (the Debye coefficient, the $3.9\,\mathrm K$ crossover and the table values check), but the figure plots against $T$, although the method is a straight line against $T^2$.
+- [Graph] Replace Fig. 7.4, or add a second figure, with $C/T$ against $T^2$ for $T^2\in[0,40]\,\mathrm{K^2}$ using $\gamma=0.695$ and $\beta_{\mathrm{ph}}=0.046\,\mathrm{mJ\,mol^{-1}\,K^{-4}}$. Show the straight line, the intercept $\gamma$ and the slope $\beta_{\mathrm{ph}}$, which is the actual analysis the note describes.
+- [Structure] The first display writes $\beta_{\mathrm{ph}}$ uncolored, while later lines use ${\thermal{\beta}}_{\mathrm{ph}}$; make it consistent.
+- [Example] Add the inverse step for Cu: the slope $0.046\,\mathrm{mJ\,mol^{-1}\,K^{-4}}$ gives $\Theta_D=(12\pi^4R/5\beta_{\mathrm{ph}})^{1/3}\approx350\,\mathrm K$, close to the tabulated $343\,\mathrm K$.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.05 Pauli Paramagnetism.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub that correctly states the scope (spin only, no orbital or exchange terms).
+- [Structure] No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.05.01 Magnetization of the Electron Gas.md
+priority: low
+graph: yes
+manim: no
+summary: Correct signs and populations, carefully explained.
+- [Graph] Add the standard Pauli picture: the two half-densities of states $g_1(\varepsilon\mp\mu_BB)$ drawn back-to-back (spin up to the left, spin down to the right), shifted by $\pm\mu_BB$ and filled to a common $\mu$. The small excess area in the down branch is the magnetization.
+- [Structure] $g_1$ is written without the ${\energy{}}$ macro, unlike ${\energy{g}}$; use ${\energy{g}}_1$.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.05.02 Pauli Susceptibility.md
+priority: low
+graph: yes
+manim: no
+summary: Correct derivation and a justified correction of the source's Curie comparison (ratio $\tfrac32T/T_F$ for spin 1/2).
+- [Example] Add a number: for copper's free-electron values, $\chi_{\mathrm{Pauli}}=3n\mu_0\mu_B^2/(2\varepsilon_F)\approx1.2\times10^{-5}$, which shows how small the effect is (and that diamagnetic terms can compete).
+- [Graph] Plot $\chi/\chi_{\mathrm{Pauli}}$ against $T/T_F$ (0–1): a nearly flat Pauli curve together with the Curie curve $\tfrac23T_F/T$. This visualizes the remark that degeneracy suppresses the response.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.05.03 Finite-Temperature Corrections.md
+priority: low
+graph: no
+manim: no
+summary: Correct coefficient $-\pi^2/12$, but the two contributions are described only in words.
+- [Simplify] Add the two-line calculation: $\chi\propto\int g(-f')\,d\varepsilon=g(\mu)+\tfrac{\pi^2}{6}(k_BT)^2g''(\mu)$, with the curvature term $-\tfrac{\pi^2}{24}t^2$ and the $\mu$-shift term $-\tfrac{\pi^2}{24}t^2$ summing to $-\tfrac{\pi^2}{12}t^2$, where $t=k_BT/\varepsilon_F$.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.06 Electron Gas in Metals - Drude–Sommerfeld Model.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub that separates equilibrium statistics from the relaxation-time input.
+- [Structure] No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.06.01 Drude Model.md
+priority: low
+graph: no
+manim: yes
+summary: Correct ($\tau=\sigma m_e/(ne^2)\approx2.5\times10^{-14}\,\mathrm s$ for copper checks), but the force-balance derivation is described rather than shown.
+- [Simplify] Display the equation of motion $m_e\,d\langle\mathbf v\rangle/dt=-e\mathbf E-m_e\langle\mathbf v\rangle/\tau$, its steady state $\langle\mathbf v\rangle=-e\tau\mathbf E/m_e$, and $\mathbf j=-ne\langle\mathbf v\rangle=\sigma\mathbf E$. This replaces the paragraph about signs.
+- [Manim] Animate a few electrons moving randomly with occasional scattering events while a weak field adds a slow drift opposite to $\mathbf E$. Show the average velocity settling at $-e\tau E/m_e$, which makes the relaxation-time picture tangible.
+- [Example] Add the drift speed for $1\,\mathrm A$ in a $1\,\mathrm{mm^2}$ copper wire ($\approx7\times10^{-5}\,\mathrm{m\,s^{-1}}$), to contrast with $v_F\approx1.6\times10^6\,\mathrm{m\,s^{-1}}$ in 07.06.02.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.06.02 Sommerfeld Transport Model.md
+priority: low
+graph: no
+manim: no
+summary: Correct numbers ($v_F=1.57\times10^6\,\mathrm{m\,s^{-1}}$, about 13 times the classical speed, $\ell\approx39\,\mathrm{nm}$) and a good clarification of the temperature of the estimate.
+- [Intuition] Add the picture of a Fermi sphere displaced by $\delta\mathbf k=-e\tau\mathbf E/\hbar$: only states near the surface change occupation, which is why $v_F$, and not the drift speed, enters the mean free path.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.06.03 Thermal Conductivity and the Lorenz Number.md
+priority: low
+graph: no
+manim: no
+summary: Correct derivation ($L_0=\pi^2k_B^2/3e^2=2.44\times10^{-8}\,\mathrm{W\,\Omega\,K^{-2}}$), and the table ratios recompute.
+- [Correctness] The heat-capacity label is written ${\thermal{c}}_V^{({\electric{e}})}$, which colours the label "electronic" as the elementary charge. Use the plain label $(e)$, as in [[07.04.01 Derivation of the Linear Contribution]].
+- [Simplify] Show the substitution $\varepsilon_F=\tfrac12m_ev_F^2$ that turns $\tfrac13c_Vv_F^2\tau$ into $\pi^2nk_B^2T\tau/(3m_e)$.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.06.04 Effective Mass and Experimental Density of States.md
+priority: low
+graph: no
+manim: no
+summary: Correct linearized dispersion, with a justified source correction and good caveats on multiband metals.
+- [Links] Link the enhancement factor to the copper (1.39) and iron (7.9) estimates in [[07.08 Worked Examples]].
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.07 White Dwarfs and the Chandrasekhar Mass.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub that correctly frames the mass limit as a scaling argument.
+- [Structure] No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.07.01 Structure and Composition.md
+priority: low
+graph: no
+manim: no
+summary: Correct estimates ($n_e\approx3\times10^{35}\,\mathrm{m^{-3}}$, $T_F\sim2\times10^9\,\mathrm K$) with good caveats.
+- [Example] Show the two numbers behind the claims: $\varepsilon_F^{\mathrm{NR}}\approx0.16\,\mathrm{MeV}$ ($T_F\approx1.9\times10^9\,\mathrm K$) and $p_Fc/(m_ec^2)\approx0.8$ at $\rho=10^9\,\mathrm{kg\,m^{-3}}$. The phrase "can be comparable" then becomes quantitative.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.07.02 Hydrostatic Equilibrium and Degeneracy Pressure.md
+priority: low
+graph: yes
+manim: no
+summary: Correct energy-balance argument (the virial check $|E_{\mathrm{grav}}|=2E_{\mathrm{kin}}$ and the second derivative $2A/R^4$ check), but no number is given for the radius.
+- [Example] Write out $A$ and $B$ and evaluate $R_{\mathrm{eq}}=2A/B$ for $M=M_\odot$ and $\mu_e=2$. It gives about $7\times10^3\,\mathrm{km}$, close to Earth's radius and to the observed white-dwarf radii in 07.07.01.
+- [Graph] Plot $E_{\mathrm{kin}}=A/R^2$, $E_{\mathrm{grav}}=-B/R$ and their sum against $R/R_{\mathrm{eq}}$ for $0.3$–$4$, marking the minimum at $R_{\mathrm{eq}}$ with depth $-B^2/(4A)$.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.07.03 Ultrarelativistic Regime and the Chandrasekhar Mass.md
+priority: medium
+graph: no
+manim: yes
+summary: Correct scaling argument and coefficients, with a good clarification of the marginal case, but the energy coefficient reuses the mass-number symbol.
+- [Correctness] Symbol clash: ${\mechanical{A}}'$ (the energy coefficient) uses the same coloured letter as the mass number ${\mechanical{A}}$ in $\mu_e=A/Z$ in the same note. In 07.07.02 the coefficient is the uncoloured helper $A$. Use an uncoloured helper such as $a'$ (and $b$), or rename the mass number.
+- [Example] Complete the uniform-density estimate: setting $A'=B$ with $A'=\tfrac34(9\pi/4)^{1/3}\hbar cN_e^{4/3}$ and $B=\tfrac35GM^2$ gives $M\approx1.75\,M_\odot$ for $\mu_e=2$. This shows that the crude model already lands within 20 % of $5.83/\mu_e^2=1.46\,M_\odot$.
+- [Manim] Animate $E_{\mathrm{tot}}(R)$ using the full relativistic kinetic energy, $\propto\int_0^{x_F}(\sqrt{1+t^2}-1)t^2dt$ with $x_F\propto N^{1/3}/R$, as $M$ increases. The minimum moves to smaller $R$, becomes shallower, and disappears at the Chandrasekhar mass.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.07.04 Stellar Stability and Quantum Glue.md
+priority: low
+graph: yes
+manim: no
+summary: Correct mass–radius scaling ($R\propto M^{-1/3}$), with careful scope limits.
+- [Graph] Plot the white-dwarf mass–radius relation for $M/M_\odot\in[0.2,1.46]$: the nonrelativistic law $R\propto M^{-1/3}$, normalized with the 07.07.02 estimate, and a schematic relativistic curve that falls to $R=0$ at $M_{\mathrm{Ch}}$. Mark Sirius B ($1.02\,M_\odot$, about $5600\,\mathrm{km}$).
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.08 Worked Examples.md
+priority: low
+graph: yes
+manim: no
+summary: All numbers recompute (Cu: $\varepsilon_F=7.04\,\mathrm{eV}$, $\gamma_V=70.7\,\mathrm{J\,m^{-3}\,K^{-2}}$, $\gamma_{\mathrm{free}}=0.501$; Fe: $\varepsilon_F=11.2\,\mathrm{eV}$, $m^*/m\approx7.9$), and the presentation is clear.
+- [Graph] For Example 7.2, plot the copper $C_e=\gamma T$ and $C_{\mathrm{ph}}=\beta_{\mathrm{ph}}T^3$ and their sum for $T\in[0,8]\,\mathrm K$, with the crossover at $3.9\,\mathrm K$ marked.
+- [Structure] In Example 7.2, $\beta_{\mathrm{ph}}$ is uncoloured while ${\thermal{\gamma}}$ is coloured; use ${\thermal{\beta}}_{\mathrm{ph}}$ as in 07.04.03.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.09 Further Study - Relativistic Fermi Gas.md
+priority: low
+graph: yes
+manim: no
+summary: Correct density of states and pressure integral (the prefactor $g_sm^4c^5/6\pi^2\hbar^3$ checks), with useful limit checks.
+- [Graph] Plot $\log P_0$ against $\log n$ for electrons ($n=10^{30}$–$10^{40}\,\mathrm{m^{-3}}$) from the exact integral, with the $n^{5/3}$ and $n^{4/3}$ asymptotes. Mark the crossover at $x_F=1$ ($n\approx5.9\times10^{35}\,\mathrm{m^{-3}}$) and Sirius B.
+- [Structure] $g_{\mathrm{rel}}$ lacks the ${\energy{}}$ macro, and ${\mechanical{m}}$ should be ${\mechanical{m}}_e$ when applied to electrons, as in the Sirius B exercise.
+- [Simplify] Display the momentum-flux formula $P=\tfrac13\int n(\mathbf p)\,p\,v\,d^3p$ with $v=c\,t/\sqrt{1+t^2}$ before the final integral, so that the "isotropic momentum flux" statement is derived.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.10 Summary.md
+priority: low
+graph: no
+manim: no
+summary: Accurate summary table and good reconstruction checks.
+- [Links] Link each table row to its source note, for example Pauli susceptibility to [[07.05.02 Pauli Susceptibility]] and Lorenz number to [[07.06.03 Thermal Conductivity and the Lorenz Number]], so that the table works as a navigation hub.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/07.99 Exercises.md
+priority: low
+graph: no
+manim: no
+summary: Clear exercise hub with correct links.
+- [Structure] No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/99 Exercises/07.01 Sirius B - Degenerate Electrons.md
+priority: low
+graph: no
+manim: no
+summary: Excellent worked exercise; every number recomputes ($\rho=2.82\times10^9$, $n_e=8.49\times10^{35}$, $x_F=1.13$, $\varepsilon_F=0.260\,\mathrm{MeV}$, $T_F=3.0\times10^9\,\mathrm K$, $P^{\mathrm{NR}}=1.8\times10^{22}$, $P=1.3\times10^{22}\,\mathrm{Pa}$).
+- [Links] Link the relativistic pressure formula to [[07.09 Further Study - Relativistic Fermi Gas]], where it is introduced.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/07 Fermi Gas/Degenerate Fermi gases and the Sommerfeld expansion.md
+priority: high
+graph: no
+manim: no
+summary: The derivations are correct (the Sommerfeld cancellation of even terms, the $\pi^2/8$ and $5\pi^2/8$ coefficients, $A$ and $S$ at low $T$, and the ultrarelativistic $3/4$ factor check), but the note has a symbol clash, a wrong quantity table, and heavy transcription commentary.
+- [Correctness] $x$ is used for two quantities: the integration variable $x=\beta(\epsilon-\mu)$ in "Fermi gas at nonzero temperature" and $x=k_BT/E_F$ from the chemical-potential result onward. Rename the second, for example $t=k_BT/E_F$.
+- [Correctness] The quantity table lists rows that are wrong or unused here: $n$ in $\unit{mol}$ (here $n$ is only number density), $g$ "Landé factor" (here spin degeneracy), $\Omega$ "Multiplicity", $z$ fugacity, and $P_{\mathrm{int}},P_{\mathrm{ext}}$. Remove or correct them.
+- [Correctness] Room-temperature thermal energy is given as $0.024\,\mathrm{eV}$ in "Sommerfeld expansion" and as $0.026\,\mathrm{eV}$ in "Metals". At 300 K, $k_BT=0.0259\,\mathrm{eV}$; mark the first as the notebook's rounding or correct it.
+- [Simplify] Collect the transcription remarks ("handwritten volume has an apparent square", "short handwritten box omits", "gold symbol is overwritten", "handwritten power ... differs", "written $z$ in the notebook") in one source-notes callout so that the physics reads continuously.
+- [Links] Link the material to the chapter notes that treat it fully: [[07.03.03 Sommerfeld Expansion]], [[07.03.04 Chemical Potential at Low Temperature]], [[07.09 Further Study - Relativistic Fermi Gas]], and [[07.01 Sirius B - Degenerate Electrons]] for the white-dwarf estimate. Also use ${\signal{c}}$ for the speed of light instead of ${\mechanical{c}}$.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/08.00 Bose Gas and Condensation.md
+priority: low
+graph: no
+manim: no
+summary: Clear chapter hub with a good model-choice guide; all links resolve (the 2D-condensation link points to the exercise note).
+- [Structure] No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/08.01 Ideal Bose Gas - Grand Canonical Formalism.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub that motivates the factorization and the separate ground-state treatment.
+- [Structure] No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/08.01.01 Bose–Einstein Distribution.md
+priority: low
+graph: no
+manim: no
+summary: Correct and clear, including the geometric-series derivation of the minus sign.
+- [Simplify] Display the geometric-series step as an equation, $\Xi_k=\sum_{n=0}^\infty q^n=1/(1-q)$ and $\langle n_k\rangle=q\,\partial_q\ln\Xi_k=q/(1-q)$, instead of describing it only in prose.
+- [Structure] The quantity table lists ${\mechanical{n}}_\alpha$, but the note uses ${\mechanical{n}}_k$, and the helper $q$ is not identified as a helper.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/08.01.02 Bose Functions gₙ(z).md
+priority: low
+graph: yes
+manim: no
+summary: Correct definitions and properties (the density-of-states rewriting in terms of $\lambda$ checks), with a good local convergence argument.
+- [Graph] Plot $g_{1/2}(z)$, $g_{3/2}(z)$ and $g_{5/2}(z)$ for $z\in[0,1)$, marking $g_{3/2}(1)=2.612$ and $g_{5/2}(1)=1.341$ and showing the divergence of $g_{1/2}$ as $z\to1$. This visualizes the saturation of the excited states.
+- [Structure] The quantity table writes ${\energy{g(\varepsilon)}}$, which puts the argument inside the macro; use ${\energy{g}}({\energy{\varepsilon}})$ as in the body.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/08.01.03 Equation of State - Fugacity Series.md
+priority: low
+graph: yes
+manim: no
+summary: Correct pressure derivation and virial coefficients ($-2^{-5/2}$ and $-(2\cdot3^{-5/2}-\tfrac18)\approx-0.0033$ check).
+- [Graph] Plot $P/(nk_BT)$ against $n\lambda^3$ from 0 to $\zeta(3/2)$ for the Bose gas (parametric in $z$), together with the Fermi gas ($g_s=1$, same range) and the classical value 1. This shows the opposite statistical corrections and the Bose endpoint at condensation.
+- [Simplify] Show the inversion step $z=y-y^2/2^{3/2}+(\tfrac14-3^{-3/2})y^3+\dots$ with $y=n\lambda^3$, from which the virial bracket follows.
+- [Structure] In the quantity table, $\mu$ in the fugacity row lacks the ${\energy{}}$ macro; ${\mechanical{n}}_0$ is described as "local" density in a uniform gas, so "condensate number density" is clearer.

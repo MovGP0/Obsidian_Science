@@ -1,0 +1,95 @@
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/05 Hidden Symmetries/5.3 Spontaneous Breaking of a Gauge Symmetry.md
+priority: medium
+graph: yes
+manim: yes
+summary: A faithful, compact derivation of the Abelian Higgs model whose small-oscillation algebra checks out, but it skips the expansion step and has an index slip and a symbol clash.
+- [Correctness] Eq. (5.3.13) mixes index positions: $\magnetic{A'_\mu}=\magnetic{A_\mu}+\frac1{\electric{q}v}\partial^\mu\zeta$ should read $\magnetic{A'_\mu}=\magnetic{A_\mu}+\frac1{\electric{q}v}\partial_\mu\zeta$ (consistent with (5.3.6) for $\alpha=-\zeta/(\electric{q}v)$).
+- [Correctness] Symbol clash: $\phi'$ means the gauge-transformed field in (5.3.5), (5.3.6) and (5.3.14) but the shifted field $\phi-\langle\phi\rangle_0$ in (5.3.9), and the table lists only "shifted"; rename the shifted field (e.g. $\tilde\phi$) or drop (5.3.9), which is never used afterwards.
+- [Simplify] Show the two-line expansion behind (5.3.11): with $\phi\approx(v+\eta+i\zeta)/\sqrt2$, $D_\mu\phi$ gives the cross term $\electric{q}v\magnetic{A_\mu}\partial^\mu\zeta$ and mass term $\frac12\electric{q}^2v^2A^2$, and $V$ expanded to second order gives $-\mechanical{\mu}^2\eta^2$ using $v^2=-\mechanical{\mu}^2/|\lambda|$; also fix the typo "from out study".
+- [Graph] 3D surface of $V(\phi_1,\phi_2)=\frac{\mechanical{\mu}^2}{2}(\phi_1^2+\phi_2^2)+\frac{|\lambda|}{4}(\phi_1^2+\phi_2^2)^2$ with $\mechanical{\mu}^2=-1$, $|\lambda|=1$, $\phi_{1,2}\in[-1.6,1.6]$, marking the radial $\eta$ and angular $\zeta$ directions at $\phi_1=v$.
+- [Manim] Animate the degree-of-freedom bookkeeping: the Goldstone phase $\zeta$ on the vacuum circle being rotated away by the unitary-gauge transformation (5.3.14) while a massless photon's two transverse helicities gain a third longitudinal arrow.
+- [Links] Link "the Goldstone model discussed in the previous section" to [[5.2 Spontaneous Breaking of Continuous Symmetries]] and "Higgs mechanism" forward to the electroweak note 6.3.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/05 Hidden Symmetries/5.4 The Sigma Model.md
+priority: medium
+graph: yes
+manim: no
+summary: Clear and well structured, with a correct ππ-scattering calculation, but two factor/sign slips in the chiral decomposition and terse numerics.
+- [Correctness] (5.4.7a,b): decomposing $\boldsymbol\alpha_LP_L+\boldsymbol\alpha_RP_R=\frac12(\boldsymbol\alpha_R+\boldsymbol\alpha_L)+\frac12\gamma_5(\boldsymbol\alpha_R-\boldsymbol\alpha_L)$ requires $\boldsymbol\alpha=\frac12(\boldsymbol\alpha_R+\boldsymbol\alpha_L)$ and $\boldsymbol\alpha_5=\frac12(\boldsymbol\alpha_R-\boldsymbol\alpha_L)$; as written a pure isospin rotation $\boldsymbol\alpha_L=\boldsymbol\alpha_R$ would be counted twice.
+- [Correctness] Second line of (5.4.11): with the note's own projectors (5.4.2)-(5.4.3), $\bar\psi_L\boldsymbol\tau\psi_R-\bar\psi_R\boldsymbol\tau\psi_L=\bar\psi\boldsymbol\tau\gamma_5\psi$, so the pion term is $-ig\boldsymbol\pi\cdot\bar\psi\boldsymbol\tau\gamma_5\psi$, not $+ig\ldots$ (the same sign carries into (5.4.17)); state the convention if the source sign is kept.
+- [Example] Make (5.4.21) reproducible: give the inputs ($g_{\pi NN}\approx13.15$ from $g^2/4\pi\approx13.7$, $f_\pi\approx92.4\,\unit{MeV}$) since $13.12\times92\approx1207\,\unit{MeV}$, not $1215$, with the rounded values quoted in the text.
+- [Intuition] Before (5.4.8) explain in one sentence why $\boldsymbol\Sigma$ must transform as $G_L\boldsymbol\Sigma G_R^\dagger$: it is exactly what makes $\bar\psi_L\boldsymbol\Sigma\psi_R$ invariant, which is the whole point of Gell-Mann–Lévy.
+- [Graph] Plot $|\mathcal M|f_\pi^2$ from (5.4.26) versus $\mechanical{q}^2/\mechanical{m_\sigma}^2\in[0,0.8]$: exact $x/(1-x)$ against the leading term $x$, showing the low-energy theorem and where the $\sigma$ pole matters.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/05 Hidden Symmetries/5.5 Spontaneous Breaking of a Non-Abelian Symmetry.md
+priority: low
+graph: no
+manim: no
+summary: Short and correct (the $g^2v^2$ mass term and $T_3$ invariance check out), but it uses $\mechanical{\mu}$ without ever defining the potential.
+- [Simplify] State the potential explicitly, $\energy{V}=\frac12\mechanical{\mu}^2\boldsymbol\phi\cdot\boldsymbol\phi+\frac14|\lambda|(\boldsymbol\phi\cdot\boldsymbol\phi)^2$ with $v^2=-\mechanical{\mu}^2/|\lambda|$; otherwise "mass $\mechanical{\mu}$" and $(\text{mass})^2=-2\mechanical{\mu}^2$ in (5.5.11) are unsupported.
+- [Example] Show the one-line mass computation: $(D_\mu\langle\boldsymbol\phi\rangle)_k=g\epsilon_{jk3}b_\mu^jv$ gives components $(-gvb^2,\,gvb^1,\,0)$, hence $\frac12g^2v^2[(b^1)^2+(b^2)^2]$ and no $b^3$ term.
+- [Simplify] Harmonize generator notation ($T_i$, $T^j$, $T_3$ are used interchangeably) and tabulate the degree-of-freedom count before/after (9 = 3·1 + 3·2 = 1·1 + 2·3 + 1·2).
+- [Links] Link "section 5.3" to [[5.3 Spontaneous Breaking of a Gauge Symmetry]] and "problem 5.5" to [[5.P Problems#5.5]].
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/05 Hidden Symmetries/5.6 Prospects.md
+priority: low
+graph: no
+manim: no
+summary: A brief, accurate chapter wrap-up.
+- [Structure] Add a short note box that the Higgs boson was observed in 2012 at about $125\,\unit{GeV}$, so the forward reference to "constraints on the Higgs-boson mass" in section 7.10 reads as historical context.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/05 Hidden Symmetries/5.B References.md
+priority: low
+graph: no
+manim: no
+summary: Reference list; citations checked look correct.
+- No change needed.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/05 Hidden Symmetries/5.P Problems.md
+priority: low
+graph: no
+manim: no
+summary: Problem list transcribed faithfully, including a few source slips worth correcting.
+- [Correctness] Problem 5.2 cites "transformation laws (5.4.6) and (5.4.8)", but in the sigma-model note (5.4.6) is the mass term; the nucleon transformation law is (5.4.5).
+- [Correctness] Problem 5.7(b): since $\electric{e^*}=-2\electric{e}<0$, the formula $\magnetic{\lambda}^{-1}=\electric{e^*}|\langle\psi\rangle_0|/\sqrt{\mechanical{m^*}c^2}$ gives a negative inverse length; use $|\electric{e^*}|$ (and state the unit system, since the free energy is written in natural units while $c$ appears here).
+- [Correctness] Problem 5.4: $\cos\theta_C\approx0.9746$ is dated; the current value is $|V_{ud}|\approx0.9737$ (PDG 2024).
+- [Links] Link the referenced equations (5.4.5), (5.4.8), (5.4.11) to [[5.4 The Sigma Model]] and problem 5.8's "Abelian Higgs model" to [[5.3 Spontaneous Breaking of a Gauge Symmetry]].
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/05 Hidden Symmetries/5.R For Further Reading.md
+priority: low
+graph: no
+manim: no
+summary: Reading list; one wrong attribution inherited from the source.
+- [Correctness] Migdal–Polyakov entry says "included in the Farhi–Suskind reprint collection"; the reprint collection cited earlier in this note is Farhi and Jackiw, *Dynamical Gauge Symmetry Breaking* (also "Int. J. Mod. Phys. 24" should be "Int. J. Mod. Phys. A 24").
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/06 Electroweak Interactions of Leptons/6.0 Chapter introduction.md
+priority: low
+graph: no
+manim: no
+summary: A clear chapter overview with one dated statement.
+- [Structure] "Experimental tools to search for, and characterize, the agent of electroweak symmetry breaking are now at hand" predates the 2012 Higgs discovery; add a note box with the discovery and current status.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/06 Electroweak Interactions of Leptons/6.1 An Effective Lagrangian for the Weak Interactions.md
+priority: medium
+graph: yes
+manim: yes
+summary: A long but systematic catalogue of four-fermion cross sections whose numbers recompute correctly, with a few transcription errors in the inverse-muon-decay kinematics and the interference results.
+- [Correctness] (6.1.71): the first line "$\mechanical{q_1}\cdot\mechanical{p_1}=\mechanical{m}e$" should be $\mechanical{m}\energy{E}$, and "$\mechanical{p_1}\cdot\mechanical{p_2}=\mechanical{m}\energy{E}$" should be $\mechanical{m}\energy{E'}$ (electron at rest, $p_2^0=E'$).
+- [Correctness] (6.1.41): from (6.1.40), $\mathcal I=-128\operatorname{Re}(C_S^*C_T)(\mechanical{m}\energy{E})^2(1-2y)$ gives $d\sigma_{ST}/dy=-\frac{2\mechanical{m}\energy{E}}{\pi}(1-2y)\operatorname{Re}(C_S^*C_T)$, as Table 6.1 also states; the displayed plus sign is wrong.
+- [Correctness] Item 10 heading reads "V + A interaction: $\bar\nu_e e\rightarrow\nu_e e$"; it should be $\bar\nu_e e\rightarrow\bar\nu_e e$.
+- [Structure] Add a short roadmap before item 1 (S, P, T, V−A, V+A for $\nu$ and $\bar\nu$, results collected in Table 6.1) and state once that the couplings $C_i$ are set to 1 in items 1–10, so readers can skip to the V−A results and the unitarity argument.
+- [Graph] Plot the Table 6.1 rows, $(\pi/\mechanical{m}\energy{E})\,d\sigma/dy$ versus $y\in[0,1]$, for S, T, V−A and V+A as two panels ($\nu_e e$ and $\bar\nu_e e$), illustrating the "confusion theorem" discussion.
+- [Manim] Animate Fig. 6.3: helicity arrows of the incoming and outgoing leptons as the c.m. scattering angle sweeps from forward to backward, showing $J_z=1$ for $\bar\nu_e e$ cannot be matched at $y=1$ so the cross section goes as $(1-y)^2$.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/06 Electroweak Interactions of Leptons/6.2 Intermediate Vector Bosons -  A First Look.md
+priority: medium
+graph: yes
+manim: no
+summary: A well-motivated account of why W exchange tames but does not cure the four-fermion theory; most results recompute correctly, but the propagator lacks its $1/M_W^2$ and the $\nu\bar\nu\to W_0W_0$ cross section does not follow from (6.2.38).
+- [Correctness] (6.2.2) and (6.2.3): the massive-vector propagator numerator is $g_{\mu\nu}-\mechanical{k_\mu}\mechanical{k_\nu}/\mechanical{M_W}^2$, not $g_{\mu\nu}-\mechanical{k_\mu}\mechanical{k_\nu}$ (dimensionally inconsistent as written).
+- [Correctness] (6.2.39): integrating (6.2.38), $d\sigma/d\Omega=32G_F^2\energy{Q}^4\sin^2\theta/(64\pi^2s)$ with $s=4\energy{Q}^2$ gives $\sigma=G_F^2\energy{Q}^2/3\pi=G_F^2s/12\pi$, not $G_F^2s/3\pi$; either $Q$ must be $\sqrt s$ or the factor should be $1/12\pi$ (the growth $\propto s$ and the conclusion are unaffected).
+- [Simplify] Fix the typo "Because the electron emitted the $W^-$ decay" (missing "in") and, after (6.2.8), give the worked number: for $\mechanical{M_W}=100\,\unit{GeV}$ the exponent is $\pi\sqrt2/(G_F\mechanical{M_W}^2)\approx38$, so $s\lesssim3.5\times10^{20}\,\unit{GeV^2}$, i.e. $\energy{E}\approx3.4\times10^{23}\,\unit{GeV}$.
+- [Intuition] Before (6.2.31) explain physically why $\epsilon_0^\mu\to k^\mu/M_W$ makes longitudinal amplitudes grow with energy, since this is the mechanism behind every bad high-energy behaviour in the section.
+- [Graph] Plot $\sigma(\nu_\mu e\rightarrow\mu\nu_e)/E$ from (6.1.74) (point coupling) and (6.2.5) with $\mechanical{M_W}=80.4\,\unit{GeV}$ versus $E$ from $11\,\unit{GeV}$ to $10^8\,\unit{GeV}$ on log axes, showing threshold, linear rise and saturation at $G_F^2\mechanical{M_W}^2/\pi$.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/06 Electroweak Interactions of Leptons/6.3 The Standard Electroweak Theory of Leptons.md
+priority: medium
+graph: no
+manim: no
+summary: The core electroweak construction is clear and the couplings and numerical predictions recompute correctly, but several displayed factors are wrong and some experimental statements are dated.
+- [Correctness] (6.3.35): from $\frac{v^2}{8}g^2|b^1-ib^2|^2=\frac{g^2v^2}{4}W^+_\mu W^{-\mu}$ the mass term is $\frac{g^2v^2}{8}(|W_\mu^+|^2+|W_\mu^-|^2)$, not $\frac{g^2v^2}{2}(\ldots)$; only the former gives (6.3.36) $\mechanical{M_W}=gv/2$.
+- [Correctness] (6.3.72) has $\frac{ig}{8\mechanical{M_W}^2}$; it must be $\frac{ig^2}{8\mechanical{M_W}^2}$, since with $\not k_+-\not k_-\to-2\not P$ it has to reproduce $-\frac{ig^2}{4\mechanical{M_W}^2}$ in (6.3.73); also (6.3.68) has an unbalanced bracket in $g_{\alpha\nu}[(\mechanical{k_+}+\mechanical{S})_\beta$.
+- [Correctness] (6.3.63) as written, $|\mathcal M(Z\to\nu\bar\nu)|^2=\frac12\frac{\mechanical{M_Z}^2}{\mechanical{M_W}^2}|\mathcal M(W\to e\bar\nu)|^2$, accounts only for the coupling ratio; since $|\mathcal M|^2\propto G_FM^4$ (6.2.18), the ratio at the respective masses is $\frac12(\mechanical{M_Z}/\mechanical{M_W})^4$, which is what yields $\Gamma=G_F\mechanical{M_Z}^3/(12\pi\sqrt2)$.
+- [Correctness] Outdated values: the electron-neutrino mass bound "$\lesssim2\,\unit{eV}$" is now $m_\nu<0.45\,\unit{eV}$ (KATRIN 2025), and "ATLAS and CMS ... will probe ... at $\sqrt s=7\,\unit{TeV}$" should be updated to the completed 13 and 13.6 TeV WW and triple-gauge-coupling measurements.
+- [Structure] The vertex-factor lists for Fig. 6.14 and Fig. 6.15 interrupt sentences ("(6.3.67) ... which shows very promising agreement" and "(6.3.69) ... and the other kinematical quantities"); move each list after the paragraph it splits.
+- [Links] Link "procedure of section 5.5" to [[5.5 Spontaneous Breaking of a Non-Abelian Symmetry]], "§5.4" to [[5.4 The Sigma Model]], and the reused equations (6.2.20), (6.2.25), (6.2.37) to [[6.2 Intermediate Vector Bosons -  A First Look]].

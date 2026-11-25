@@ -1,0 +1,729 @@
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/01 Numbers and Arithmetic/02.01 Arithmetic rules.md
+priority: low
+graph: no
+manim: no
+summary: Compact, correct lesson on operation laws, signs, fractions and powers; the worked calculation checks out ($29/3$).
+- [Structure] The "Worked calculation" ($3-(2/3-5/6)/(-1/2)^2+\sqrt{36}=29/3$) and the order-of-operations paragraph are duplicated almost verbatim in [[Arithmetic - Catalogue Guide]]; keep the full version here and let the guide link to it.
+- [Intuition] In "Signs and fractions", the proof that $(-a)(-b)=ab$ uses $(-a)b=-ab$ without justification; add the one-line reason ($ab+(-a)b=(a-a)b=0$) so the argument is self-contained.
+- [Example] In "Powers and roots", add a one-line example of why $a^0=1$ is forced ($a^n/a^n=a^{n-n}$) and a counterexample for the negative-base restriction, e.g. $(-8)^{2/6}$ vs $(-8)^{1/3}$, to motivate "positive base for rational exponents".
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/01 Numbers and Arithmetic/Absolute values and triangle bounds.md
+priority: low
+graph: yes
+manim: no
+summary: Clear, correct treatment of absolute value as distance, the triangle and reverse triangle inequalities, with a good error-bound application.
+- [Graph] Add a 2D plot of $f(a)=|a+b|$ and $g(a)=|a|+|b|$ for fixed $b=3$, $a\in[-8,8]$, showing they coincide for $a\ge0$ and separate for $a<0$ (equality iff $ab\ge0$).
+- [Simplify] In the $n$-term triangle inequality, "equality holds when all nonzero terms have the same sign" should read "exactly when", matching the two-term iff statement.
+- [Example] Practice item 2 nicely contrasts deviation from 3 and distance from 0; add that the reverse triangle inequality also gives $|x|\ge2.8$, so the reader sees both bounds used together.
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/01 Numbers and Arithmetic/Annuities.md
+priority: low
+graph: yes
+manim: no
+summary: Well-structured and numerically correct (331, 248.69, 996.50, 147.80 all check); timing conventions are stated carefully.
+- [Graph] Plot the balance $B_k$ against $k=0,\ldots,10$ for $R=100$, $i=0.1$ as points, together with the deposits-only line $100k$, so the growing gap visualises accumulated interest.
+- [Simplify] In "Constant ordinary annuity", show the telescoping step $qS-S=(q+q^2+\cdots+q^n)-(1+q+\cdots+q^{n-1})=q^n-1$ explicitly instead of only stating that all intermediate powers cancel.
+- [Example] In "Beginning-of-period payments", add a one-line numerical check with the €100/10% example (annuity-due value $331\times1.1=364.10$) so the factor $1+i$ is seen in numbers.
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/01 Numbers and Arithmetic/Arithmetic - Catalogue Guide.md
+priority: low
+graph: no
+manim: no
+summary: Useful study guide and link hub, but its first half duplicates the content of [[02.01 Arithmetic rules]].
+- [Structure] The "Elementary rules of calculation" section and the worked example ($29/3$) repeat [[02.01 Arithmetic rules]] nearly verbatim; shorten to a two-sentence summary plus the link, keeping the guide focused on navigation.
+- [Links] All lesson links resolve, but many point into later chapters (Calculus, Linear Algebra, Banach spaces for [[Holder and Minkowski inequalities]]); mark those as "advanced/later" so a beginner does not follow [[Cauchy-Schwarz inequality]] into an inner-product chapter. The folder-local placeholders [[Integers]], [[Natural Numbers]], [[Rational Numbers]], [[Real Numbers]] are not listed.
+- [Structure] The frontmatter title "Arithmetic — learning guide" does not match the filename "Arithmetic - Catalogue Guide"; align them so search and links are consistent.
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/01 Numbers and Arithmetic/Arithmetic geometric harmonic and quadratic means.md
+priority: low
+graph: yes
+manim: no
+summary: Excellent motivation via "what must the replacement preserve"; all numbers ($0.9798$, $6.4$, $\sqrt{136}$, rate examples) are correct.
+- [Graph] Plot $H,G,A,Q$ of the pair $(1,x)$ for $x\in[0.1,10]$ (four curves meeting at $x=1$) to preview the order proved in [[Comparing means of two positive numbers]].
+- [Simplify] The "Unequal contributions" paragraph packs four weighted formulas into prose; set them as a displayed four-line block parallel to the unweighted table.
+- [Example] In "Harmonic mean", add the standard travel example (equal distances at 60 and 40 km/h give an average speed of 48 km/h), which is easier to picture than the abstract processor batches.
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/01 Numbers and Arithmetic/Chebyshev sum inequalities.md
+priority: low
+graph: no
+manim: no
+summary: Correct and well-motivated; the pairwise identity proof and all examples check.
+- [Simplify] In "Why order gives the bound", show where $n\sum a_ib_i-\sum a_i\sum b_i=\sum_{i<j}(a_i-a_j)(b_i-b_j)$ comes from (the sum over all ordered pairs $(i,j)$ equals twice the left side) rather than only asserting it.
+- [Links] The text cites "Handbook of Mathematics, §1.4.2.11" for the power-mean version, while the frontmatter catalogue_ids list only 1.4.2.9 and 1.4.2.10; check which section number is right and make them consistent.
+- [Intuition] Mention the rearrangement idea (sorted pairing maximises $\sum a_ib_i$, reversed pairing minimises it), which explains in one line why similarly ordered lists give the larger paired-product mean.
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/01 Numbers and Arithmetic/Commensurability.md
+priority: low
+graph: no
+manim: yes
+summary: Clear, rigorous treatment with both directions of the ratio test proved and a nice largest-common-measure argument.
+- [Structure] The file starts with a UTF-8 BOM before the frontmatter `---`; save it as UTF-8 without BOM as the vault rules require (the same applies to several notes in this folder).
+- [Manim] Animate Euclid's repeated subtraction on two segments (18 and 12, then side and diagonal of a square): the commensurable pair terminates at a common measure, while the square's pair keeps producing ever smaller remainders, visualising incommensurability.
+- [Example] In "Worked example", make the GCD link explicit: over the common denominator 4 the lengths are $15/4$ and $18/4$, and $\gcd(15,18)=3$ gives $d=3/4$.
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/01 Numbers and Arithmetic/Comparing means of two positive numbers.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct, elementary proofs of $H\le G\le A\le Q$, but the note largely duplicates [[Inequalities between means]].
+- [Structure] The GM-AM, HM-GM (via $HA=G^2$) and AM-QM proofs are repeated almost word for word in [[Inequalities between means]]; merge, or make one note the two-number special case that links to the other.
+- [Graph] Plot $H,G,A,Q$ for $a=1$, $b\in[0.1,10]$ on one axis; all four curves touch at $b=1$ and fan out, showing the order and the equality case.
+- [Intuition] Add the classic semicircle figure (diameter $a+b$: radius $A$, half-chord $G$, projection $H$) as a one-picture argument for $H\le G\le A$.
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/01 Numbers and Arithmetic/Compound interest.md
+priority: low
+graph: yes
+manim: no
+summary: Clear derivation and correct numbers (926.10, 12.6825%, 0.9489%, 1623.65, 2123.36).
+- [Simplify] In "Annual rates and shorter periods", the definition says "convertible monthly ... $i=j/12$" and then immediately uses a general $m$; define "nominal rate convertible $m$ times per year, $i=j/m$" once.
+- [Graph] Plot $B=800(1.05)^t$ (compound) and $B=800(1+0.05t)$ (simple) for $t\in[0,30]$ to show the gap growing from €6.10 at $t=3$.
+- [Structure] The file starts with a UTF-8 BOM; save as UTF-8 without BOM.
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/01 Numbers and Arithmetic/Depreciation.md
+priority: low
+graph: yes
+manim: no
+summary: Clear comparison of straight-line and reducing-balance models with correct tables and a careful residual-cap rule.
+- [Graph] Plot the two value sequences from the worked example ($1000-200n$ and $1000\cdot0.7^n$, $n=0,\ldots,6$) to show the crossover between years 3 and 4.
+- [Structure] The file starts with a UTF-8 BOM; save as UTF-8 without BOM.
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/01 Numbers and Arithmetic/Inequalities between means.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct and more general than the companion note (includes the $n$-input AM-GM and $|A|\le Q$), but overlaps heavily with [[Comparing means of two positive numbers]].
+- [Structure] Merge with, or clearly differentiate from, [[Comparing means of two positive numbers]]; both prove the same two-variable chain with identical steps.
+- [Simplify] The $n$-input AM-GM proof sketch (forward to powers of 2, backward by appending $A$) is compressed into one paragraph; split it into two numbered steps and show the $n=4$ case from two applications of the $n=2$ case.
+- [Graph] Plot $\min,H,G,A,Q,\max$ for the pair $(1,x)$, $x\in[0.1,10]$, to visualise the full chain $\min\le H\le G\le A\le Q\le\max$.
+- [Structure] The file starts with a UTF-8 BOM; save as UTF-8 without BOM.
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/01 Numbers and Arithmetic/Inequality definitions and rules.md
+priority: low
+graph: no
+manim: no
+summary: Clear, correct rules with careful sign conditions.
+- [Simplify] In the reciprocal rule, "It fails across zero: $-1<2$ but $-1<1/2$" is cryptic; write that the reciprocals $1/(-1)=-1$ and $1/2$ still satisfy $-1<1/2$, so the order is not reversed.
+- [Structure] The file starts with a UTF-8 BOM; save as UTF-8 without BOM.
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/01 Numbers and Arithmetic/Integers.md
+priority: medium
+graph: no
+manim: no
+summary: Empty placeholder containing only a frontmatter title.
+- [Structure] Either write a short note (definition of $\mathbb Z$, closure under subtraction, link to [[Number sets and the real line]]) or redirect/remove it; also quote the Unicode title ("ℤ Integers") as the skill requires.
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/01 Numbers and Arithmetic/Irrational and transcendental numbers.md
+priority: low
+graph: no
+manim: no
+summary: Clear and correct distinction between the two classifications, with a good worked example and table.
+- [Example] Add $e$ to the table (irrational, transcendental, Hermite 1873) and name Lindemann (1882) for $\pi$, so the cited theorem has an author and date.
+- [Intuition] In practice answer 2, mention that $\pi+1$ is in fact transcendental because sums of algebraic numbers are algebraic; otherwise the reader may think the question is open.
+- [Structure] The file starts with a UTF-8 BOM; save as UTF-8 without BOM.
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/01 Numbers and Arithmetic/Irrational numbers.md
+priority: medium
+graph: no
+manim: no
+summary: Empty placeholder containing only a frontmatter title.
+- [Structure] Redirect to [[Irrational and transcendental numbers]] (which covers the content) or delete; the unquoted title "ℝ\ℚ Irrational numbers" also contains a backslash and should be quoted.
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/01 Numbers and Arithmetic/Loan repayment.md
+priority: low
+graph: no
+manim: no
+summary: Clear, correct comparison of equal-principal and annuity schedules; all table values check (482.54, 247.61, 576.19).
+- [Intuition] Explain in one sentence why the annuity schedule pays more interest (€247.61 vs €240): its balance stays higher for longer, so the sum of opening balances is larger.
+- [Simplify] In "Equal annuity payments", show the one-line unrolling $B_n=P(1+i)^n-A\sum_{k=0}^{n-1}(1+i)^k$ of the recursion before quoting the closed form.
+- [Structure] The file starts with a UTF-8 BOM; save as UTF-8 without BOM.
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/01 Numbers and Arithmetic/Natural Numbers.md
+priority: medium
+graph: no
+manim: no
+summary: Empty placeholder containing only a frontmatter title.
+- [Structure] Write a short note (convention $\mathbb N=\{0,1,2,\ldots\}$ as in [[Number sets and the real line]], Peano successor idea, link to [[Mathematical induction]]) or redirect/remove it; quote the Unicode title ("ℕ Natural Numbers").
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/01 Numbers and Arithmetic/Number sets and the real line.md
+priority: low
+graph: no
+manim: no
+summary: Clear, correct introduction to $\mathbb N\subsetneq\mathbb Z\subsetneq\mathbb Q\subsetneq\mathbb R$ with repeating decimals and completeness.
+- [Structure] Content overlaps strongly with [[01.01 Numbers and sets]] (same convention, same nested chain, same classification exercise); make one the primary note and cross-link the other as a short pointer.
+- [Intuition] In "Real numbers", the completeness paragraph would benefit from the contrast that in $\mathbb Q$ the set $\{x\in\mathbb Q:x\ge0,\ x^2<2\}$ has upper bounds but no least rational one, which is exactly the "gap" the reals fill.
+- [Structure] Remove the UTF-8 BOM (vault requires UTF-8 without BOM).
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/01 Numbers and Arithmetic/Percentages.md
+priority: low
+graph: no
+manim: no
+summary: Clear and correct; the successive-change example (€220.80, $-8\%$) and percentage-point distinction are well explained.
+- [Structure] The first heading "Financial mathematics" introduces the whole finance sequence rather than percentages; rename it (e.g. "Where percentages are used") or move the sequence overview to the catalogue guide.
+- [Example] Add a reverse-calculation pitfall: a price including 20% VAT of €120 has net price $120/1.2=100$, not $120\times0.8=96$.
+- [Structure] Remove the UTF-8 BOM (vault requires UTF-8 without BOM).
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/01 Numbers and Arithmetic/Powers and exponent rules.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and careful about restrictions (zero, negative bases, $0^0$); examples check.
+- [Graph] Plot $y=2^x$, $y=(1/2)^x$ and $y=x^2$ on $x\in[-3,3]$ to contrast exponential growth/decay with a power function, and mark $2^{\sqrt2}\approx2.665$ between $2^{1.4}$ and $2^{1.5}$.
+- [Simplify] "Since multiplication acts after the power, $-3^2=-(3^2)$" is imprecise: the leading minus is negation, not multiplication; say "the power binds more tightly than the leading minus sign".
+- [Structure] Remove the UTF-8 BOM (vault requires UTF-8 without BOM).
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/01 Numbers and Arithmetic/Radical expressions.md
+priority: low
+graph: no
+manim: no
+summary: Correct, well-organised treatment of radical simplification, rationalisation and domains.
+- [Structure] The opening sections (principal root, product rule, $\sqrt{x^2}=|x|$, $\sqrt{72}=6\sqrt2$) repeat [[Roots and principal values]] almost verbatim; replace them with a short recap and link.
+- [Simplify] In the worked example, "At $x=3$, only the new formula alone has a value" is awkward; write "the simplified formula gives $1/4$ at $x=3$, but $F(3)$ itself remains undefined (a removable gap)".
+- [Structure] Remove the UTF-8 BOM (vault requires UTF-8 without BOM).
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/01 Numbers and Arithmetic/Rational Numbers.md
+priority: medium
+graph: no
+manim: no
+summary: Empty placeholder containing only a frontmatter title.
+- [Structure] Redirect to [[Number sets and the real line]] (which already defines $\mathbb Q$ and repeating decimals) or delete; quote the Unicode title ("ℚ Rational Numbers").
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/01 Numbers and Arithmetic/Ratios and transformations of proportions.md
+priority: low
+graph: no
+manim: no
+summary: Clear and correct, with good attention to denominator restrictions in each transformation.
+- [Simplify] The table's "Alternate" row lists only $c\ne0$; note that $c\ne0$ is equivalent to $a\ne0$ under the proportion, so the reader sees why one condition suffices.
+- [Example] Add a practical example of $(a+c)/(b+d)=k$ (combining two batches mixed in the same ratio keeps the ratio) to motivate the "add corresponding entries" rule.
+- [Structure] Remove the UTF-8 BOM (vault requires UTF-8 without BOM).
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/01 Numbers and Arithmetic/Real Numbers.md
+priority: medium
+graph: no
+manim: no
+summary: Empty placeholder containing only a frontmatter title.
+- [Structure] Redirect to [[Number sets and the real line]] (which covers $\mathbb R$ and completeness) or delete; quote the Unicode title ("ℝ Real Numbers").
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/01 Numbers and Arithmetic/Roots and principal values.md
+priority: low
+graph: yes
+manim: no
+summary: Clear, correct lesson on principal roots, $\sqrt{x^2}=|x|$, odd roots and domains.
+- [Graph] Plot $y=\sqrt{x^2}$ and $y=x$ on $[-4,4]$ (they differ for $x<0$), plus $y=\sqrt[3]{x}$ and $y=\sqrt x$ to show the odd root is defined for negative inputs while the even root is not.
+- [Structure] Coordinate with [[Radical expressions]], which repeats the product rule and $\sqrt{72}$ example; keep the principal-value theory here and the manipulations there.
+- [Structure] Remove the UTF-8 BOM (vault requires UTF-8 without BOM).
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/02 Sets, Logic, and Proof/01.01 Numbers and sets.md
+priority: low
+graph: no
+manim: no
+summary: Clear, correct introduction to sets, set operations and number sets with a checked worked example.
+- [Structure] The number-set section duplicates [[Number sets and the real line]]; keep only the chain including $\mathbb C$ and link there for decimals and completeness.
+- [Example] Add one example where $\varnothing$ and $\{\varnothing\}$ differ ($|\varnothing|=0$, $|\{\varnothing\}|=1$) to reinforce the element-versus-set distinction made in "Objects and membership".
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/02 Sets, Logic, and Proof/01.04 Logical statements.md
+priority: low
+graph: no
+manim: no
+summary: Clear, correct treatment of connectives, implication, converse/contrapositive, and De Morgan's laws.
+- [Example] Add truth tables for $\land$ and $\lor$ beside the implication table so all connectives are shown the same way.
+- [Intuition] The vacuous-truth rows would be easier with a promise example ("If it rains, I take an umbrella" is not broken on a dry day).
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/02 Sets, Logic, and Proof/01.05 Quantifiers.md
+priority: low
+graph: no
+manim: no
+summary: Clear, correct lesson on quantifier order, negation and the empty domain.
+- [Example] Add an analysis-flavoured example of order dependence (e.g. "for every $\varepsilon>0$ there is $N$" versus "there is $N$ for every $\varepsilon$") as a preview of limit definitions.
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/02 Sets, Logic, and Proof/01.06 Definitions and assumptions.md
+priority: low
+graph: no
+manim: no
+summary: Clear and correct explanation of definitions, hypotheses, theorems and conventions.
+- [Simplify] In "Identities, equations, and conventions", the matrix remark ($AB+BA$) uses objects not yet introduced; flag it as an aside or link to the matrix chapter.
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/02 Sets, Logic, and Proof/01.07 Indexed notation.md
+priority: low
+graph: no
+manim: no
+summary: Clear and correct introduction to indices, sums, products and reindexing; worked example checks ($S=50$, product $105$).
+- [Example] Add a telescoping-sum example ($\sum_{i=1}^n[(i+1)^2-i^2]=(n+1)^2-1$) to show reindexing doing real work.
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/02 Sets, Logic, and Proof/01.08 Proof methods.md
+priority: low
+graph: no
+manim: no
+summary: Correct, compact overview of direct proof, counterexample, contradiction and induction.
+- [Structure] This lesson's $\sqrt2$ proof and induction example are also developed in [[Proof by contradiction]] and [[Mathematical induction]]; link to those notes for the full treatments to avoid three parallel versions.
+- [Structure] Remove the UTF-8 BOM (vault requires UTF-8 without BOM).
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/02 Sets, Logic, and Proof/Direct and constructive proofs.md
+priority: low
+graph: no
+manim: no
+summary: Clear, correct lesson that distinguishes direct and constructive proof with well-chosen examples.
+- [Example] Add a contrasting non-constructive existence proof (e.g. "there exist irrational $a,b$ with $a^b$ rational" via $\sqrt2^{\sqrt2}$) so the word "constructive" has something to be contrasted with.
+- [Structure] The product-of-odd-integers worked example duplicates [[01.08 Proof methods]]; use a different example here (e.g. $3\mid n\Rightarrow 3\mid n^2$) to avoid repetition.
+- [Structure] Remove the UTF-8 BOM (vault requires UTF-8 without BOM).
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/02 Sets, Logic, and Proof/Mathematical induction.md
+priority: low
+graph: no
+manim: yes
+summary: Clear and correct, with a good justification via the least-element property and two complete examples.
+- [Manim] Animate the domino/chain figure: a base tile lights up, then each implication arrow $P(k)\Rightarrow P(k+1)$ fires in turn; a second run without the base case shows nothing lighting up.
+- [Example] Add one classic false "proof" (all horses the same colour) and ask where the step $k=1\to2$ fails, to make the "avoid common failures" section concrete.
+- [Structure] Remove the UTF-8 BOM (vault requires UTF-8 without BOM).
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/02 Sets, Logic, and Proof/Mathematical notation and reasoning - Overview.md
+priority: low
+graph: no
+manim: no
+summary: Concise topic hub with clear outcomes.
+- [Links] The hub lists only the numbered 01.0x lessons; add the folder's longer notes ([[Direct and constructive proofs]], [[Proof by contradiction]], [[Mathematical induction]], [[Sets relations and cardinality]], [[Statements quantifiers and proof]]) so they are reachable. Also remove the UTF-8 BOM.
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/02 Sets, Logic, and Proof/Proof by contradiction.md
+priority: low
+graph: no
+manim: no
+summary: Clear, correct presentation with a careful distinction between contradiction and contrapositive.
+- [Example] Add Euclid's infinitude-of-primes proof as a second classic example; it shows contradiction producing a new object ($p_1\cdots p_n+1$) rather than a parity clash.
+- [Structure] Remove the UTF-8 BOM (vault requires UTF-8 without BOM).
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/02 Sets, Logic, and Proof/Sets relations and cardinality.md
+priority: medium
+graph: no
+manim: yes
+summary: Correct but very dense survey covering sets, functions, equivalence relations, orders and cardinality in one note.
+- [Simplify] Five large topics are compressed into short paragraphs; split "Equivalence and order" and "Cardinality" into their own notes or expand each with one worked example (e.g. a Hasse diagram of divisors of 12 for partial orders).
+- [Manim] Animate the diagonal enumeration of positive rationals (zig-zag through the $p/q$ grid, skipping duplicates such as $2/2$) to make countability of $\mathbb Q$ tangible.
+- [Example] In the Cantor argument, add a small finite table of $S_0,S_1,S_2,\ldots$ with membership bits and show how $D$ flips the diagonal.
+- [Structure] "Worked answers" uses a plain `###` heading instead of the collapsible `> [!example]-` callout used in sibling notes; unify. Also remove the UTF-8 BOM.
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/02 Sets, Logic, and Proof/Statements quantifiers and proof.md
+priority: medium
+graph: no
+manim: no
+summary: Correct and readable, but it covers the same ground as [[01.04 Logical statements]] and [[01.05 Quantifiers]] almost entirely.
+- [Structure] Merge with or differentiate from [[01.04 Logical statements]] and [[01.05 Quantifiers]] (same truth table, same converse example with $4\mid n$ and 6, same quantifier-order example); one consolidated note would be clearer.
+- [Structure] "Worked answers" uses a plain `###` heading instead of the collapsible example callout; unify. Also remove the UTF-8 BOM.
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/03 Algebra and Equations/01.02 Variables and expressions.md
+priority: low
+graph: no
+manim: no
+summary: Clear and correct distinction between objects, names, expressions and equations, with a good rational-equation example.
+- [Example] In "Structure determines meaning", the removable point of $E(x)=(x^2-1)/(x-1)$ is a natural spot for a tiny plot reference or link to [[03.02 Graphs]] showing the line $y=x+1$ with a hole at $x=1$.
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/03 Algebra and Equations/02.02 Equivalent expressions.md
+priority: low
+graph: no
+manim: yes
+summary: Clear and correct lesson on expansion, collection and factorisation with a helpful area model.
+- [Manim] Animate the area model: a rectangle of sides $x+3$ and $x+2$ splits into $x^2$, $3x$, $2x$, $6$ and the pieces slide together to show $x^2+5x+6$; then reverse the motion to illustrate factorisation.
+- [Simplify] The text's main expansion example is $(x-3)(x+2)$ while Fig. 02.1 shows $(x+3)(x+2)$; either use the same product in both or say explicitly that the figure illustrates the positive-sign case.
+- [Structure] Remove the UTF-8 BOM (vault requires UTF-8 without BOM).
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/03 Algebra and Equations/02.03 Rational expressions.md
+priority: low
+graph: yes
+manim: no
+summary: Clear and correct, with consistent attention to restrictions through cancellation, addition and division.
+- [Graph] Plot $R(x)=(x^2-9)/(x^2-x-6)$ on $[-6,6]$ showing the vertical asymptote at $x=-2$ and the open circle (hole) at $(3,6/5)$, to make "cancelled factor still excluded" visible.
+- [Structure] Remove the UTF-8 BOM (vault requires UTF-8 without BOM).
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/03 Algebra and Equations/02.04 Equations and inequalities.md
+priority: low
+graph: yes
+manim: no
+summary: Clear and correct overview of linear/quadratic equations and inequalities with a sign table.
+- [Graph] Plot $y=x^2-x-6$ on $[-4,5]$ and shade where $y>0$, so the sign-table result $(-\infty,-2)\cup(3,\infty)$ can be read directly from the parabola.
+- [Example] The last paragraph mentions $(x-1)/(x+2)>0$ but does not solve it; complete it with a short sign table (answer $(-\infty,-2)\cup(1,\infty)$).
+- [Structure] Remove the UTF-8 BOM (vault requires UTF-8 without BOM).
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/03 Algebra and Equations/02.05 Simultaneous equations.md
+priority: low
+graph: yes
+manim: no
+summary: Clear and correct; substitution, elimination, Cramer-type formula and degenerate cases all check.
+- [Graph] Plot the two lines $2x+y=7$ and $x-y=2$ meeting at $(3,1)$, plus the parallel pair $x+y=2$, $2x+2y=5$ and the coincident pair, to give the three geometric cases from the introduction.
+- [Structure] Remove the UTF-8 BOM (vault requires UTF-8 without BOM).
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/03 Algebra and Equations/02.06 Rearranging formulas.md
+priority: low
+graph: no
+manim: no
+summary: Careful and correct treatment of rearrangement with parameter cases and branches; the rational example checks.
+- [Intuition] In "Worked rational rearrangement", explain that the excluded value $y=3$ is the horizontal asymptote of $y=(3x-2)/(x+4)$, i.e. the value the function never takes, which links the algebra to the graph.
+- [Structure] Remove the UTF-8 BOM (vault requires UTF-8 without BOM).
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/03 Algebra and Equations/02.07 Completing the square.md
+priority: low
+graph: no
+manim: yes
+summary: Clear, correct derivation of vertex form and the quadratic formula, including the careful $\sqrt{4a^2}=2|a|$ remark.
+- [Manim] Animate the geometric completion of the square: an $x\times x$ square plus a $p\times x$ strip, the strip cut in half and moved to two sides, and the missing $(p/2)^2$ corner filled in.
+- [Structure] Remove the UTF-8 BOM (vault requires UTF-8 without BOM).
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/03 Algebra and Equations/02.08 Checking solutions.md
+priority: low
+graph: yes
+manim: no
+summary: Clear and correct explanation of extraneous and lost solutions.
+- [Structure] The worked radical equation $\sqrt{x+2}=x$ is identical to practice 2 of [[01.02 Variables and expressions]]; use a different example here (e.g. $\sqrt{2x+3}=x$) or link to the earlier one.
+- [Graph] Plot $y=\sqrt{x+2}$ and $y=x$ together with $y=-x$ on $[-2,4]$: the intersection at $x=2$ is real, while $x=-1$ is the intersection with the "wrong sign" curve introduced by squaring.
+- [Structure] Remove the UTF-8 BOM (vault requires UTF-8 without BOM).
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/03 Algebra and Equations/Algebra - Overview.md
+priority: low
+graph: no
+manim: no
+summary: Concise topic hub with clear outcomes.
+- [Links] The hub lists only the numbered 02.0x lessons; add the folder's other notes ([[Algebraic expressions and their types]], [[Polynomials and identities]], [[Factoring polynomials]], [[Cubic equations]], [[Quartic equations]], [[Exponential and logarithmic equations]], [[Solving linear and quadratic inequalities]], etc.) so they are reachable. Also remove the UTF-8 BOM.
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/03 Algebra and Equations/Algebraic expressions and their types.md
+priority: low
+graph: no
+manim: no
+summary: Clear, correct classification of algebraic expressions with a useful summary table.
+- [Example] Add one row to the classification table for an expression that looks irrational but is not after simplification on a domain, e.g. $\sqrt{x^2}$ (equals $|x|$, not a polynomial) versus $(\sqrt x)^2$ (equals $x$ only for $x\ge0$), since the "Domains and equivalent forms" section raises this point in prose.
+- [Structure] Content overlaps with [[01.02 Variables and expressions]] and [[02.02 Equivalent expressions]] (definitions of terms, degree, removable restriction $(x^2-1)/(x-1)$); cross-link rather than repeat.
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/03 Algebra and Equations/Bernoulli and binomial inequalities.md
+priority: low
+graph: yes
+manim: no
+summary: Correct statements and proofs, including the careful strictness and $u=-1$ discussion.
+- [Graph] Plot $y=(1+u)^n$ and the tangent line $y=1+nu$ for $n=3$ and $n=5$, $u\in[-1,1]$, showing the line lies below the curve and touches it only at $u=0$ (Bernoulli as a tangent-line bound).
+- [Simplify] Practice 1 asks to bound $0.98^5$ and then "compare with $0.98^2$ calculated exactly", and the answer switches to the separate case $n=2$; compare with the exact $0.98^5\approx0.9039$ instead, or split into two clearly separate questions.
+- [Links] The note cites "Handbook of Mathematics, §1.4.2.8" for the binomial inequality while the frontmatter catalogue_ids are 1.4.2.6 and 1.4.2.7; check and align the section numbers.
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/03 Algebra and Equations/Cubic equations.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct and complete (depressed cubic, Cardano, trigonometric case, paired cube roots all check), but dense for a first encounter.
+- [Graph] Plot $y=x^3-6x-9$ (one real root at $x=3$) and $y=t^3-3t+1$ (three real roots) on $[-3,4]$ to connect the sign of $\Delta$ with the number of axis crossings.
+- [Simplify] In "Remove the square term", show the expansion of $(t-a/3)^3+a(t-a/3)^2+\ldots$ at least for the $t^2$ terms, so the reader sees why the shift $a/3$ cancels them.
+- [Intuition] In "Three real roots", state why $\Delta<0$ guarantees $|{-q/(2R^3)}|<1$: $\Delta<0\iff q^2/4<-p^3/27=R^6$.
+- [Structure] Remove the UTF-8 BOM (vault requires UTF-8 without BOM).
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/03 Algebra and Equations/Equation forms and safe transformations.md
+priority: low
+graph: yes
+manim: no
+summary: Clear and correct lesson on equation types, normal form and safe versus one-way transformations.
+- [Graph] For the worked example, plot $y=\sqrt{x+1}$ and $y=x-1$ on $[-1,5]$ with the single intersection at $x=3$, and optionally $y=-(x-1)$ to show where the extraneous $x=0$ comes from.
+- [Structure] The safe-transformation material repeats [[02.08 Checking solutions]]; link there and keep this note focused on the algebraic/transcendental classification and normal form. Also remove the UTF-8 BOM.
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/03 Algebra and Equations/Exponential and logarithmic equations.md
+priority: low
+graph: yes
+manim: no
+summary: Clear and correct, with good emphasis on range restrictions after substitution and on logarithm domains.
+- [Graph] Plot $y=4^x-5\cdot2^x+4$ on $[-1,3]$ to show the two zeros at $x=0$ and $x=2$, and $y=\log_2x+\log_2(x-2)$ against $y=3$ for $x>2$.
+- [Example] Add one mixed equation solved numerically (e.g. $2^x=x+3$ by bisection or a graph) since the text says such equations "need approximation" but shows none.
+- [Structure] Remove the UTF-8 BOM (vault requires UTF-8 without BOM).
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/03 Algebra and Equations/Factoring polynomials.md
+priority: low
+graph: no
+manim: no
+summary: Clear and correct factoring workflow with a sensible order of work.
+- [Example] The "practical order of work" mentions cube identities but none is shown; add $x^3-8=(x-2)(x^2+2x+4)$ as a worked line.
+- [Structure] Overlaps with the factorisation part of [[02.02 Equivalent expressions]] (same $2x^3-8x$ practice item); vary the exercise or link.
+- [Structure] Remove the UTF-8 BOM (vault requires UTF-8 without BOM).
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/03 Algebra and Equations/Greatest common divisors of polynomials.md
+priority: low
+graph: no
+manim: no
+summary: Clear and correct; the Euclidean example and its justification check.
+- [Intuition] Add one sentence connecting to the integer Euclidean algorithm (e.g. $\gcd(18,12)$ in [[Commensurability]]) so the reader sees the polynomial version as the same idea with degree replacing size.
+- [Example] Add a short Bezout-identity line for the worked example ($x-1=-\tfrac12[P-xQ]$) as a preview of why gcds matter for partial fractions.
+- [Structure] Remove the UTF-8 BOM (vault requires UTF-8 without BOM).
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/03 Algebra and Equations/Hyperbolic equations.md
+priority: low
+graph: yes
+manim: no
+summary: Clear and correct reduction of hyperbolic equations to quadratics in $e^x$; all checks are right.
+- [Graph] Plot $\cosh x$, $\sinh x$, $\tanh x$ on $[-3,3]$ with the horizontal lines $y=5/4$ (two intersections with $\cosh$), $y=3/4$ (one with $\sinh$) and $y=\pm1$ (asymptotes of $\tanh$), matching the solution counts in the text.
+- [Structure] The definitions, identities and ranges overlap with [[Hyperbolic functions]] and [[Inverse hyperbolic functions]]; shorten the first two sections to a recap with links.
+- [Structure] Remove the UTF-8 BOM (vault requires UTF-8 without BOM).
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/03 Algebra and Equations/Linear and quadratic equations.md
+priority: low
+graph: yes
+manim: no
+summary: Clear and correct; worked example and practice answers check.
+- [Graph] Plot three parabolas $y=x^2-2x-3$, $y=x^2-2x+1$, $y=x^2-2x+3$ to show $D>0$, $D=0$, $D<0$ as two, one and zero axis crossings.
+- [Structure] The quadratic-formula derivation duplicates [[02.07 Completing the square]] and [[02.04 Equations and inequalities]]; link to one canonical derivation.
+- [Structure] Remove the UTF-8 BOM (vault requires UTF-8 without BOM).
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/03 Algebra and Equations/Polynomial roots and higher degrees.md
+priority: low
+graph: yes
+manim: yes
+summary: Correct and well-motivated survey of factor theorem, multiplicity, conjugate pairs, Abel-Ruffini and bisection; the numbers check ($5.09375$, $0.8017578125$, root $\approx1.1673$).
+- [Graph] Plot $P(x)=x^5-x-1$ on $[0,2]$ with the bisection brackets $[1,2]$, $[1,1.5]$, $[1,1.25]$ marked, and separately $y=x^5-5x^3+4x$ on $[-2.5,2.5]$ with its five roots.
+- [Manim] Animate bisection on $x^5-x-1$: the bracket halves step by step, the midpoint sign is shown, and the interval shrinks onto the root near $1.1673$.
+- [Structure] Remove the UTF-8 BOM (vault requires UTF-8 without BOM).
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/03 Algebra and Equations/Polynomials and identities.md
+priority: low
+graph: no
+manim: no
+summary: Clear and correct introduction to polynomial form and the square/cube identities.
+- [Structure] The worked example $(2x-3)(x+4)-x(x-1)=x^2+6x-12$ is identical to the one in [[02.02 Equivalent expressions]]; use a different expression here or link.
+- [Example] Add a cube-identity application (e.g. $x^3+27=(x+3)(x^2-3x+9)$) in "Use an identity carefully", since only square identities are exercised in the body.
+- [Structure] Remove the UTF-8 BOM (vault requires UTF-8 without BOM).
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/03 Algebra and Equations/Quadratic Formula.md
+priority: high
+graph: no
+manim: no
+summary: Raw two-line stub without frontmatter, TLDR or explanation, and both displayed formulas contain errors.
+- [Correctness] The equation is written "$2\,a\,x^2+b^2\,x^1+c\,x^0 = 0$"; the quadratic whose roots are given by the formula is $ax^2+bx+c=0$ (no factor 2 on $a$, and $b$ not squared).
+- [Correctness] The alternative form "$\frac{2c}{-b \pm \sqrt{b^2-4ac}}$" pairs the signs wrongly: with the same choice of sign, $\frac{-b\pm\sqrt D}{2a}=\frac{2c}{-b\mp\sqrt D}$ (use $\mp$), and it requires $c\ne0$.
+- [Structure] Either add frontmatter (quoted title), TLDR and a short note on when the second form avoids cancellation (numerically stable choice of sign), or replace the file by a redirect to [[02.07 Completing the square]] / [[Linear and quadratic equations]].
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/03 Algebra and Equations/Quartic equations.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct and complete (depressed coefficients, Ferrari resolvent, examples all verified), but algebra-heavy.
+- [Simplify] Show the expansion that produces $p,q,r$ for the depressed quartic at least for the $y^3$ and $y^2$ coefficients, or move the full coefficient list into a collapsible callout so the main line stays readable.
+- [Graph] Plot $y=x^4-4x+3$ on $[-2,2]$ to show the double root at $x=1$ (touching the axis) and no other real roots, matching the factorisation $(x-1)^2((x+1)^2+2)$.
+- [Structure] Remove the UTF-8 BOM (vault requires UTF-8 without BOM).
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/03 Algebra and Equations/Rational expressions and polynomial division.md
+priority: low
+graph: no
+manim: yes
+summary: Clear and correct; the long-division example and practice answers check.
+- [Manim] Animate the long division of $2x^3+3x^2-x+5$ by $x+2$: each quotient term appears, the product slides under the dividend and is subtracted, ending with remainder 3.
+- [Structure] The reduction section (removable hole of $(x^2-1)/(x-1)$, two-exclusion example) repeats [[02.03 Rational expressions]]; keep polynomial division as this note's focus and link for cancellation rules.
+- [Structure] Remove the UTF-8 BOM (vault requires UTF-8 without BOM).
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/03 Algebra and Equations/Solving linear and quadratic inequalities.md
+priority: low
+graph: yes
+manim: no
+summary: Complete and correct case analysis with clear tables for all discriminant and leading-sign cases.
+- [Graph] Plot $f(x)=-2x^2+8x-6$ on $[-0.5,4.5]$ with the region $f\ge0$ shaded on the $x$-axis ($[1,3]$), and next to it $x^2-4x+3$ to show that dividing by $-2$ flips the parabola and the inequality.
+- [Simplify] The "Leading sign" table is compact but abstract; add one sentence of intuition ("an upward parabola is negative only between its roots") before it so the table can be reconstructed rather than memorised.
+- [Structure] Remove the UTF-8 BOM (vault requires UTF-8 without BOM).
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/03 Algebra and Equations/The binomial theorem.md
+priority: low
+graph: no
+manim: yes
+summary: Clear and correct, with a good counting motivation and Pascal recurrence; worked example and practice check.
+- [Manim] Animate Pascal's triangle being built row by row, with each interior entry formed by two arrows from the entries above, then highlight row 4 and map it onto the coefficients of $(2x-3)^4$.
+- [Example] Add a short combinatorial proof of $\sum_k\binom nk=2^n$ (each of $n$ brackets chooses $a$ or $b$) to back up the coefficient-sum check in "Limits and common mistakes".
+- [Structure] Remove the UTF-8 BOM (vault requires UTF-8 without BOM).
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/04 Functions and Graphs/01.03 Functions and relations.md
+priority: low
+graph: no
+manim: no
+summary: Clear and correct definitions of relations, functions, image, injectivity and surjectivity.
+- [Structure] Overlaps substantially with [[03.01 Function definitions]] and [[Sets relations and cardinality]] (same $x^2$ domain/codomain example, same injective/surjective definitions); consolidate or make each note's role explicit.
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/04 Functions and Graphs/03.01 Function definitions.md
+priority: low
+graph: yes
+manim: no
+summary: Clear and correct, with a careful piecewise example and range argument.
+- [Graph] Plot the piecewise function $p$ on $[-3,5]$ with closed dots at $(0,1)$ and $(2,3)$ and an open circle at $(0,0)$ to make the "zero is not attained" remark visible.
+- [Structure] "Worked answers" uses a plain heading instead of the collapsible example callout used elsewhere; unify. Also remove the UTF-8 BOM.
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/04 Functions and Graphs/03.02 Graphs.md
+priority: low
+graph: yes
+manim: no
+summary: Clear and correct introduction to graph features with algebraic (calculus-free) monotonicity proofs.
+- [Graph] The parabola is shown as an SVG; add a native plot of $y=x^3$ and $y=x^2-4$ side by side to illustrate odd versus even symmetry from the practice section.
+- [Structure] Remove the UTF-8 BOM (vault requires UTF-8 without BOM).
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/04 Functions and Graphs/03.03 Polynomial and rational functions.md
+priority: low
+graph: yes
+manim: no
+summary: Clear and correct treatment of multiplicity, holes and poles; the worked example checks.
+- [Graph] Plot $p(x)=(x+1)^2(x-3)$ on $[-3,4]$ to show touching at $-1$ and crossing at $3$, and $s(x)=(x^2-4)/(x-2)^2$ from the practice with its pole at 2 and asymptote $y=1$.
+- [Simplify] The sentence on pole order and sign ("A pole of even order has the same infinite sign on both sides...") would benefit from two tiny examples, $1/x$ and $1/x^2$.
+- [Structure] Remove the UTF-8 BOM (vault requires UTF-8 without BOM).
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/04 Functions and Graphs/03.04 Exponential and logarithmic functions.md
+priority: low
+graph: yes
+manim: no
+summary: Clear and correct overview of exponentials, logarithms and change of base, with a domain-checked worked example.
+- [Graph] Plot $y=2^x$, $y=(1/2)^x$, $y=\log_2x$ and $y=x$ on $[-3,4]$ to show the reflection in $y=x$ and the two monotonic directions described in the text.
+- [Structure] Content overlaps heavily with [[Exponential and logarithmic graphs]] and [[Logarithms and their bases]] (same product-law proof, same $\log_2(x-1)+\log_2(x+1)$-type example); consolidate or cross-link. Also remove the UTF-8 BOM.
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/04 Functions and Graphs/03.06 Function transformations.md
+priority: low
+graph: yes
+manim: yes
+summary: Clear and correct point-mapping derivation of transformations; worked example and practice check.
+- [Manim] Animate $f(u)=u^2$ morphing step by step into $g(x)=-\tfrac12(x-1)^2+3$ (horizontal stretch by 2, vertical scale by $-2$, then shifts), tracking the five labelled points of the worked example.
+- [Graph] Add a native plot of $y=x^2$ and $y=-\tfrac12(x-1)^2+3$ on $[-4,6]$ with the mapped points marked, complementing the SVG.
+- [Structure] Remove the UTF-8 BOM (vault requires UTF-8 without BOM).
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/04 Functions and Graphs/03.07 Composition and inverse functions.md
+priority: low
+graph: yes
+manim: no
+summary: Clear and correct treatment of composition domains and inverse functions with a good restricted-parabola example.
+- [Graph] Plot $q(x)=(x-2)^2+1$ for $x\ge2$, its inverse $2+\sqrt{y-1}$, and $y=x$ on $[0,8]$ to show the mirror symmetry.
+- [Structure] Overlaps with [[Function composition and inversion]] (same domain formula, same injectivity discussion); consolidate or cross-link. Also remove the UTF-8 BOM.
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/04 Functions and Graphs/03.08 Representations.md
+priority: low
+graph: yes
+manim: no
+summary: Clear and correct lesson on keeping verbal, formula, table and graph representations consistent.
+- [Graph] Replace the verbal drawing instructions for the piecewise example with a native plot of $f$ on $[-2,3]$ (line segment with open circle at $(0,0)$, parabola segment with filled endpoints) so the jump is visible.
+- [Structure] Overlaps with [[Function inputs outputs and representations]]; consolidate or cross-link. Also remove the UTF-8 BOM.
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/04 Functions and Graphs/Elementary function families.md
+priority: low
+graph: yes
+manim: no
+summary: Correct, broad survey of algebraic and transcendental families with careful domain remarks.
+- [Graph] Add one small multi-panel plot (or four plots) of representative members: $\sqrt{x}$, $e^x$ and $\ln x$, $\arctan x$, $\tanh x$ on suitable ranges, so the reader can match each family to its shape.
+- [Simplify] The definition "transcendental: do not satisfy a nonzero polynomial relation in input and output over the real constants on an interval" is precise but abstract; add the concrete contrast $y=\sqrt{x+1}$ (satisfies $y^2-x-1=0$) versus $y=e^x$ (no such polynomial) right there.
+- [Structure] Remove the UTF-8 BOM (vault requires UTF-8 without BOM).
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/04 Functions and Graphs/Exponential and logarithmic graphs.md
+priority: low
+graph: yes
+manim: no
+summary: Clear and correct, with good material on transformations and log-linear data.
+- [Graph] Plot $f(x)=3\cdot2^x$ and $g(x)=3+2x$ on $[0,5]$ to contrast equal factors with equal differences, and a second plot of $\ln f(x)$ versus $x$ (a straight line with slope $\ln2$).
+- [Structure] Overlaps with [[03.04 Exponential and logarithmic functions]] (same definitions, product-law proof and reflection remark); consolidate or cross-link. Also remove the UTF-8 BOM.
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/04 Functions and Graphs/Fractional linear graphs.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and thorough treatment of Möbius-type functions including the degenerate $\Delta=0$ case; the reduction and inverse formulas check.
+- [Graph] Plot $f(x)=(2x+3)/(x-1)=2+5/(x-1)$ on $[-6,8]$ with its asymptotes $x=1$, $y=2$ dashed and intercepts $(0,-3)$ and $(-3/2,0)$ marked.
+- [Simplify] Show the one-line algebra behind $f(x)=\frac\alpha\gamma-\frac{\Delta}{\gamma^2}\frac1{x+\delta/\gamma}$ (divide $\alpha x+\beta$ by $\gamma x+\delta$), since "Algebra gives" hides the key step.
+- [Structure] Remove the UTF-8 BOM (vault requires UTF-8 without BOM).
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/04 Functions and Graphs/Function composition and inversion.md
+priority: low
+graph: yes
+manim: no
+summary: Clear and correct, with a good explanation of reverse-order inversion of chains and branch selection.
+- [Graph] Plot $h(x)=\sqrt{x-2}+1$ on $[2,10]$, its inverse $(y-1)^2+2$ on $[1,4]$, and the line $y=x$, to show the reflection and why the inverse domain stops at $y=1$.
+- [Structure] Substantial overlap with [[03.07 Composition and inverse functions]] (same domain formula, same restricted-parabola idea); consolidate or cross-link. Also remove the UTF-8 BOM.
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/04 Functions and Graphs/Function inputs outputs and representations.md
+priority: low
+graph: no
+manim: no
+summary: Correct and broad; it covers real, complex, several-variable functions, operators and functionals in a short space.
+- [Simplify] The jump from real functions to operators and functionals in "Real, complex, and several-variable functions" is abrupt for a foundations note; move operators/functionals to a short "looking ahead" callout so the core definition stays in focus.
+- [Structure] Overlaps with [[03.01 Function definitions]] and [[03.08 Representations]] (same $x^2$ codomain/range example, same domain-before-evaluation example with a root over a linear denominator); consolidate or cross-link. Also remove the UTF-8 BOM.
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/04 Functions and Graphs/Function order bounds and symmetry.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and well organised treatment of monotonicity, bounds, extrema, parity and periodicity.
+- [Graph] Plot $g(x)=1/(1+x^2)$ on $[-5,5]$ (bounded, maximum 1 attained, infimum 0 not attained) and $x/(1+|x|)$ (bounded, not periodic) to illustrate the bounds section.
+- [Example] Add a plot or a short worked example of the even/odd decomposition of $e^x$ into $\cosh x$ and $\sinh x$, linking to [[Hyperbolic functions]].
+- [Structure] Remove the UTF-8 BOM (vault requires UTF-8 without BOM).
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/04 Functions and Graphs/Functions - Overview.md
+priority: low
+graph: no
+manim: no
+summary: Concise topic hub with clear outcomes.
+- [Links] The hub lists only the numbered 03.0x lessons; [[01.03 Functions and relations]] (in this folder) and the catalogue notes ([[Elementary function families]], [[Hyperbolic functions]], etc.) are reachable only through the catalogue guide; add a pointer to [[Functions and their representation - Catalogue Guide]]. Also remove the UTF-8 BOM.
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/04 Functions and Graphs/Functions and their representation - Catalogue Guide.md
+priority: low
+graph: no
+manim: no
+summary: Well-written study route and complete lesson index for the functions chapter.
+- [Correctness] The link [[Planned Topics#2. Functions and their representation|the detailed catalogue]] is broken: no "Planned Topics" note exists in the vault (only a backup under `.temp`); remove the sentence or point it to an existing catalogue note.
+- [Structure] The title "Functions and their representation" differs from the filename "... - Catalogue Guide"; align for consistent search and linking.
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/04 Functions and Graphs/Grid and alignment nomograms.md
+priority: low
+graph: yes
+manim: yes
+summary: Correct constructions with explicit equations; the concurrent, parallel and curved-scale derivations and the cubic example all check.
+- [Manim] Animate a straightedge pivoting on the curved-scale nomogram: fix $q=-6$, sweep $p$ along its scale, and show the intersection with the $z$ scale moving, landing on $z=2$ at $p=-1$.
+- [Graph] Add a native plot of the curved scale $R(z)=(z/(1+z),-z^3/(1+z))$ for $z\in[0,4]$ together with the line from $(0,-6)$ to $(1,-1)$, so the worked example can be checked visually.
+- [Structure] Remove the UTF-8 BOM (vault requires UTF-8 without BOM).
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/04 Functions and Graphs/Hyperbolic functions.md
+priority: low
+graph: yes
+manim: yes
+summary: Clear and correct introduction with good range and parity arguments; values at $\ln3$ and $\ln2$ check.
+- [Simplify] The text repeatedly shortens the hyperbolic names to "cosine", "sine", "tangent", "cotangent" (e.g. "Cosine's denominator never vanishes", "Sine, tangent, and cotangent change sign"); always write "hyperbolic cosine"/$\cosh$ etc. to avoid confusion with the circular functions the note contrasts them with.
+- [Manim] Animate the point $(\cosh t,\sinh t)$ moving along the right branch of $X^2-Y^2=1$ alongside $(\cos t,\sin t)$ on the unit circle, with the swept area $t/2$ shaded in both, to explain the name "hyperbolic".
+- [Graph] Add a native plot of $\sinh$, $\cosh$, $\tanh$, $\coth$ on $[-3,3]$ (with $\coth$ split at 0 and dashed asymptotes $y=\pm1$), complementing the static SVG.
+- [Structure] Remove the UTF-8 BOM (vault requires UTF-8 without BOM).
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/04 Functions and Graphs/Hyperbolic identities.md
+priority: low
+graph: no
+manim: no
+summary: Correct and complete collection of hyperbolic identities derived from exponential laws; worked example and practice check.
+- [Simplify] As in [[Hyperbolic functions]], the text says "the sine formula", "Cosine is positive" etc. when it means $\sinh$ and $\cosh$; use the hyperbolic names consistently, especially in a note that contrasts them with circular identities.
+- [Intuition] Add Osborn's rule (replace $\cos\to\cosh$, $\sin\to\sinh$ and flip the sign of every product of two sines) as a memory aid, justified by the complex-argument section already in the note.
+- [Structure] Remove the UTF-8 BOM (vault requires UTF-8 without BOM).
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/04 Functions and Graphs/Inverse hyperbolic functions.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and careful treatment of real inverse branches, logarithmic forms and addition rules; examples check.
+- [Graph] Plot $\operatorname{arsinh}$, $\operatorname{arcosh}$ (on $[1,\infty)$), $\operatorname{artanh}$ (on $(-1,1)$) and $\operatorname{arcoth}$ (two branches on $|x|>1$) together, with $y=x$ to show the reflection of the corresponding hyperbolic graphs.
+- [Simplify] The text again abbreviates the hyperbolic functions as "Sine", "Cosine", "Tangent", "Cotangent" (e.g. "Sine is strictly increasing on all of $\mathbb R$", "Cosine is even"); write $\sinh$, $\cosh$ etc. to avoid confusion with the circular functions.
+- [Structure] Remove the UTF-8 BOM (vault requires UTF-8 without BOM).
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/04 Functions and Graphs/Logarithms and their bases.md
+priority: low
+graph: yes
+manim: no
+summary: Clear and correct introduction to logarithms with good numerical checks ($e$ approximations, $\log_210$).
+- [Structure] The worked example $\log_2(x-1)+\log_2(x+1)=3$ is identical to the one in [[03.04 Exponential and logarithmic functions]]; use a different example (e.g. with a base-10 log) or link.
+- [Graph] Plot $\log_2x$, $\ln x$, $\log_{10}x$ and $\log_{1/2}x$ on $(0,10]$, all through $(1,0)$, to show that changing base only rescales vertically (and flips for base $<1$).
+- [Structure] Remove the UTF-8 BOM (vault requires UTF-8 without BOM).
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/04 Functions and Graphs/Polynomial graph shapes.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and well-argued calculus-free analysis of polynomial shapes; the local-extremum calculations for $x^3-3x$ check.
+- [Graph] Plot $x^3-3x$ on $[-2.5,2.5]$ with the local maximum $(-1,2)$ and minimum $(1,-2)$ marked, and the family $x^2,x^4,x^6$ on $[-1.5,1.5]$ to show flattening near 0 and steepening beyond $|x|=1$.
+- [Graph] Add a plot of the worked example $f(x)=-(x+2)^2(x-1)$ on $[-4,2]$ to show the touch at $-2$ and crossing at 1.
+- [Structure] Remove the UTF-8 BOM (vault requires UTF-8 without BOM).
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/04 Functions and Graphs/Radical and real-power graphs.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and thorough on root domains, branches and real-power conventions.
+- [Graph] Plot $\sqrt{9-x^2}$ (upper semicircle) and $\sqrt{x^2-9}$ (two upper branches) on $[-6,6]$, and $x^p$ for $p=-1,1/2,1,2$ on $(0,3]$ to illustrate the monotonicity cases.
+- [Structure] The section "Equality after squaring is a weaker test" uses $\sqrt{x+2}=x$, the same example as [[01.02 Variables and expressions]] and [[02.08 Checking solutions]]; replace with a radical-graph example (e.g. intersecting $\sqrt{9-x^2}$ with a line) or link.
+- [Structure] Remove the UTF-8 BOM (vault requires UTF-8 without BOM).
+
+=== 01 Mathematics/01 Foundations, Arithmetic, and Algebra/04 Functions and Graphs/Scales and transformed graph paper.md
+priority: low
+graph: yes
+manim: yes
+summary: Clear and correct explanation of logarithmic and reciprocal scales and linearisation; all numerical examples check.
+- [Graph] Plot $y=4\cdot10^x$ on ordinary axes and the same data with a logarithmic $y$-axis (or $\log_{10}y$ vs $x$) to show the straight line with slope 1; similarly $y=3x^2$ on log-log axes with slope 2.
+- [Manim] Animate an ordinary axis being continuously warped into a logarithmic axis while the curve $y=4\cdot10^x$ straightens, to make "a scale converts numbers into positions" tangible.
+- [Structure] Remove the UTF-8 BOM (vault requires UTF-8 without BOM).

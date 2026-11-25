@@ -1,0 +1,15 @@
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/08 Strong Interactions among Quarks/8.12 Assessment.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/08 Strong Interactions among Quarks/8.2 Charge Renormalization in Electrodynamics.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/08 Strong Interactions among Quarks/8.3 The Running Coupling Constant in QCD.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/08 Strong Interactions among Quarks/8.4 Perturbative QCD -  A First Example.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/08 Strong Interactions among Quarks/8.5 QCD Corrections to Deeply Inelastic Scattering.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/08 Strong Interactions among Quarks/8.6 Jets in Hadron-Hadron Collisions.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/08 Strong Interactions among Quarks/8.7 Two-Photon Processes and the Photon-Structure Function.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/08 Strong Interactions among Quarks/8.8 Color Confinement.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/08 Strong Interactions among Quarks/8.9 QCD-induced Electroweak Symmetry Breaking.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/08 Strong Interactions among Quarks/8.B References.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/08 Strong Interactions among Quarks/8.P Problems.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/08 Strong Interactions among Quarks/8.R For Further Reading.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/09 Unified Theories/9.0 Chapter introduction.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/09 Unified Theories/9.1 Why Unify -.md
+02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/09 Unified Theories/9.2 The SU(5) Model.md

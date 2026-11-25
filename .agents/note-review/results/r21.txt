@@ -1,0 +1,488 @@
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/08.02 Bose–Einstein Condensation.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub that motivates the reading order and states the uniform-gas, thermodynamic-limit scope.
+- [Structure] No change needed; optionally add one sentence with the saturation criterion $n\lambda^3=\zeta(3/2)$ so the hub states the central result it routes to.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/08.02.01 Derivation of the Critical Temperature.md
+priority: medium
+graph: yes
+manim: yes
+summary: Correct and compact derivation (coefficient 3.31 and the helium estimate check out), but the proof is a one-liner and the key idea of a finite excited-state capacity is only stated, not shown.
+- [Graph] Plot $g_{3/2}(z)$ for $0\le z\le1$ with a horizontal line at $\zeta(3/2)\approx2.612$ and a few horizontal lines for $n\lambda^3$ at decreasing $T$; the missing intersection once $n\lambda^3>2.612$ makes the saturation argument visual.
+- [Simplify] Expand the Proof of Theorem 8.1 into two displayed algebra steps ($\lambda_c^3=\zeta(3/2)/n$, then square and invert $h^2/(2\pi m k_BT_c)$) instead of "substitute and solve".
+- [Intuition] Add the picture behind the "Scale and endpoint checks" paragraph: condensation sets in when the thermal wavelength $\lambda$ becomes comparable to the mean spacing $n^{-1/3}$, i.e. $n^{1/3}\lambda_c=\zeta(3/2)^{1/3}\approx1.38$.
+- [Manim] Animate cooling at fixed $n$: atoms drawn as wave packets of width $\lambda(T)$ grow until neighbouring packets overlap at $T_c$, while a side gauge shows $n\lambda^3$ approaching 2.612.
+- [Example] Remark 8.3 gives $3.1\,\mathrm{K}$ for $n=2.2\times10^{28}\,\mathrm{m^{-3}}$, $m=4\,\mathrm{u}$ (direct evaluation gives $3.15\,\mathrm{K}$); link [[08.01 Critical Temperature of Helium-4]], which redoes this with full precision.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/08.02.02 Condensate - Ground-State Occupation.md
+priority: low
+graph: no
+manim: no
+summary: Clear and correct; the $T^{3/2}$ law, the 0.646 check at $T_c/2$, and Fig. 8.1 are consistent.
+- [Simplify] In the first display, insert the intermediate step $N_{\mathrm{ex}}/N=\lambda_c^3/\lambda^3=(T/T_c)^{3/2}$ explicitly before stating the fraction, since the text currently says it only in words.
+- [Graph] Optionally add the excited fraction $(T/T_c)^{3/2}$ as a second curve in Fig. 8.1 so the reader sees the two populations summing to one.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/08.02.03 Nature of the Phase Transition.md
+priority: medium
+graph: yes
+manim: no
+summary: Physically correct but abstract; the third-order Ehrenfest statement and the fixed-density path are asserted rather than shown.
+- [Simplify] Under "In the Ehrenfest classification", list explicitly along the fixed-density path: $F$ continuous, $S=-\partial F/\partial T$ continuous, $C_V=-T\partial^2F/\partial T^2$ continuous, $\partial C_V/\partial T$ (third derivative) jumps, so the reader sees why it is "third order".
+- [Intuition] Add one sentence noting that in the $P$–$v$ plane the ideal Bose gas behaves like a first-order transition (flat isotherms of 08.03.02, coexistence of condensate and normal gas), so the order depends on the path and variables chosen; this reconciles common textbook statements.
+- [Graph] Plot the condensate fraction for the uniform gas, $1-(T/T_c)^{3/2}$, and for the harmonic trap, $1-(T/T_c)^3$, on the same axes for $0\le T/T_c\le1.2$ to support the trap callout.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/08.03 Thermodynamic Properties of the Bose Gas.md
+priority: low
+graph: no
+manim: no
+summary: Useful hub with good warnings about which variables are held fixed.
+- [Structure] No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/08.03.01 Internal Energy.md
+priority: medium
+graph: yes
+manim: no
+summary: Results are correct, but "the same integral steps used for pressure" skips the derivation, and one symbol is used for two quantities.
+- [Correctness] Symbol clash: ${\mechanical{n}}$ is the mean occupation $\langle n(\varepsilon)\rangle$ in the first equation and the number density in $n\lambda^3=g_{3/2}(z)$ under "Normal phase"; rename the occupation (e.g. $\bar n(\varepsilon)$ or $f(\varepsilon)$), and fix the table row, which lists ${\mechanical{n}}_\alpha$, a symbol the note never uses.
+- [Simplify] Show the missing steps from $U=\int\varepsilon g(\varepsilon)\langle n\rangle d\varepsilon$ to Eq. (8.5): insert $g(\varepsilon)\propto V\varepsilon^{1/2}$, substitute $x=\beta\varepsilon$, and use $\int_0^\infty x^{3/2}/(z^{-1}e^x-1)dx=\Gamma(5/2)g_{5/2}(z)$.
+- [Simplify] The density of states ${\energy{g}}(\varepsilon)$ and the Bose functions $g_{5/2}$ share the letter $g$; add one sentence distinguishing them or write the density of states as $D(\varepsilon)$.
+- [Graph] Plot $U/(Nk_BT_c)$ versus $T/T_c$ from 0 to 3: the $T^{5/2}$ branch below $T_c$, the Bose-function branch above it, and the classical asymptote $\tfrac32T/T_c$.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/08.03.02 Pressure.md
+priority: low
+graph: yes
+manim: yes
+summary: Correct and well explained, including the physical meaning of the divergent compressibility.
+- [Graph] Plot ideal-Bose isotherms $P(v)$ with $v=V/N$: flat $P=k_BT\zeta(5/2)/\lambda^3$ for $v<v_c=\lambda^3/\zeta(3/2)$ and the normal branch from $v=\lambda^3/g_{3/2}(z)$, $P=k_BTg_{5/2}(z)/\lambda^3$ for $v>v_c$, for two or three temperatures, plus the classical $P=k_BT/v$ for comparison.
+- [Manim] Animate isothermal compression of a box: as volume shrinks, excited atoms drop into the condensate (counter of $N_0$ rising) while a pressure gauge stays fixed; on re-expansion past $v_c$ the condensate empties and the gauge starts to move.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/08.03.03 Specific Heat.md
+priority: low
+graph: no
+manim: no
+summary: Correct derivation (checked: the $dz/dT$ constraint, Eq. 8.7, and the value 1.926) with a good figure and limiting-case checks.
+- [Simplify] Between the number-constraint equation and Eq. (8.7), show the intermediate form $C_V/(Nk_B)=\tfrac32[g_{5/2}/g_{3/2}+T\,d(g_{5/2}/g_{3/2})/dT]$, so the origin of the $15/4$ and $9/4$ coefficients is visible.
+- [Intuition] State the slope jump explicitly: below $T_c$, $dC_V/dT=\tfrac32C_V/T>0$; above, $C_V$ decreases, which is the cusp seen in Fig. 8.2.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/08.03.04 Entropy and the Third Law.md
+priority: low
+graph: no
+manim: no
+summary: Correct and clear, with a careful treatment of the integration constant.
+- [Links] Add a link to [[08.02 Entropy of the Condensed Bose Gas]], which derives the same result via $TS=U+PV$ as an independent route.
+- [Intuition] Add the entropy per excited atom, $S/N_{\mathrm{ex}}=\tfrac52k_B\zeta(5/2)/\zeta(3/2)\approx1.28k_B$, constant below $T_c$, to make concrete that all entropy is carried by the excited cloud.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/08.04 Photon Gas and Blackbody Radiation.md
+priority: low
+graph: no
+manim: no
+summary: Good hub that flags the fixed-$\mu$ constraint and the spectral-variable trap.
+- [Structure] No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/08.04.01 Photons as Relativistic Bosons.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and concise; the zero-chemical-potential argument is stated but could use one line of thermodynamic justification.
+- [Intuition] Add the minimization argument: with photon number free, equilibrium at fixed $T,V$ requires $(\partial F/\partial N)_{T,V}=\mu=0$.
+- [Graph] Plot the Planck occupation $\langle n\rangle$ versus $x=\hbar\omega/k_BT$ on log axes together with its limits $1/x$ (small $x$) and $e^{-x}$ (large $x$), illustrating the last paragraph.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/08.04.02 Density of States and the Planck Spectrum.md
+priority: low
+graph: yes
+manim: yes
+summary: Correct (Fig. 8.3 normalizations check out) and carefully explained, but the mode-count derivation is only described in words.
+- [Simplify] Display the mode count $g(\omega)d\omega=2\cdot V\,4\pi k^2dk/(2\pi)^3$ with $k=\omega/c$ before the result $V\omega^2/(\pi^2c^3)$, instead of describing it only in the last section.
+- [Graph] Add an unnormalized companion plot of $u(\omega,T)$ for the same three temperatures, plus the Rayleigh–Jeans curve at $T_1$, so the $T^3$ peak-height growth hidden by Fig. 8.3 and the ultraviolet catastrophe are both visible.
+- [Manim] Animate the Planck curve as $T$ is swept continuously: the peak slides right linearly in $T$, the height grows as $T^3$, and the shaded area grows as $T^4$.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/08.04.03 Stefan–Boltzmann Law.md
+priority: low
+graph: no
+manim: no
+summary: Correct and well structured; the $c/4$ factor is explained only in words.
+- [Simplify] Display the hemisphere integral $\frac{1}{4\pi}\int_0^{2\pi}d\phi\int_0^{\pi/2}c\cos\theta\sin\theta\,d\theta=c/4$ in the "factor one quarter" section.
+- [Example] Add a quick number: $a_R\approx7.57\times10^{-16}\,\mathrm{J\,m^{-3}\,K^{-4}}$ and the radiant exitance of a $300\,\mathrm{K}$ blackbody, about $459\,\mathrm{W\,m^{-2}}$.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/08.04.04 Wien Displacement Law.md
+priority: low
+graph: yes
+manim: no
+summary: Correct (both roots, $b$, and the solar estimate check out) and the spectral-variable caveat is well made.
+- [Graph] Plot $u(\omega)$ and $u(\lambda_{\mathrm{rad}})$ for $T=5778\,\mathrm{K}$ on a common wavelength axis (convert with $\lambda=2\pi c/\omega$), marking the two maxima near $500\,\mathrm{nm}$ and about $880\,\mathrm{nm}$ to show the peak shift caused by the Jacobian.
+- [Simplify] Show the one-line derivative that gives $3(1-e^{-x})=x$ (i.e. $3x^2(e^x-1)-x^3e^x=0$) so the reader can reuse it for the $5(1-e^{-x})=x$ case.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/08.04.05 Radiation Pressure.md
+priority: low
+graph: no
+manim: no
+summary: Correct and clear, with a good momentum-flux interpretation.
+- [Simplify] In Remark 8.5, add the one-line kinetic derivation $P=\tfrac13 n\langle pv\rangle$ and note that $pv=\varepsilon$ for photons and $pv=2\varepsilon$ for nonrelativistic particles, which gives both $1/3$ and $2/3$ at once.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/08.05 Phonons and the Debye Model.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub with a useful atoms-versus-excitations distinction.
+- [Structure] The sentence "This section develops the Debye model, its temperature limits, and its comparison with the Einstein model:" ends with a colon but is followed by a paragraph rather than the list; move it directly above the link list or end it with a period.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/08.05.01 Lattice Vibrations as Bosons.md
+priority: low
+graph: yes
+manim: yes
+summary: Correct conceptual introduction with a good mode-versus-phonon distinction.
+- [Graph] Plot the 1D monatomic chain dispersion $\omega(k)=2\sqrt{K/M}|\sin(ka/2)|$ over the first Brillouin zone together with its linear small-$k$ approximation $v_sk$, to show where linear dispersion holds.
+- [Manim] Animate a 1D chain of masses and springs vibrating in one normal mode, then in a superposition of two, to show that a normal mode is a collective oscillator and that a phonon is a quantum of excitation of it.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/08.05.02 Debye Model.md
+priority: low
+graph: yes
+manim: no
+summary: Correct, with a clear cutoff and normalization argument.
+- [Intuition] State how the "single effective sound speed" is defined, $3/v_s^3=1/v_L^3+2/v_T^3$; otherwise the reader cannot compute $\Theta_D$ from elastic data.
+- [Graph] Plot the Debye density $g_D(\omega)\propto\omega^2$ cut off at $\omega_D$ together with the Einstein spectrum (a single spike at $\omega_E$), both normalized to $3N$, to preview 08.05.05.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/08.05.03 Debye Internal Energy and Specific Heat.md
+priority: low
+graph: yes
+manim: no
+summary: Correct (checked $U_0=\tfrac98Nk_B\Theta_D$ and the heat-capacity integrand), clear, with a useful total-versus-molar correction.
+- [Graph] Plot the single-mode heat-capacity factor $x^2e^x/(e^x-1)^2$ versus $x=\hbar\omega/k_BT$; it explains why modes with $x\gg1$ freeze out and underlies both limits in 08.05.04.
+- [Simplify] The note defines $D(y)$ but Eq. (8.11) does not use it; either write $C_V=3Nk_B[4D(y)-3y/(e^y-1)]$ or say that $C_V$ is usually tabulated directly.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/08.05.04 High- and Low-Temperature Limits.md
+priority: low
+graph: no
+manim: no
+summary: Correct and well reasoned (the $12\pi^4/5$ coefficient checks), with good explanations of why each approximation is valid.
+- [Simplify] In the high-temperature section, state that the next term $-x/2$ gives a constant $-\tfrac98Nk_B\Theta_D$ in $U-U_0$, which exactly cancels $U_0$ and does not change $C_V$; the first correction to $C_V$ is $-\tfrac{3}{20}Nk_B(\Theta_D/T)^2$.
+- [Links] Link [[08.04 Accuracy of the Debye T³ Law]] from the low-temperature section for the size of the cutoff error.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/08.05.05 Comparison with the Einstein Model.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and clear comparison with a good figure and a sound argument that low-temperature data test the spectrum.
+- [Graph] Add a log-scale second plot of $C_V/(3Nk_B)$ versus $T/\Theta_D$ for $0.01\le T/\Theta_D\le0.3$, where the $T^3$ versus exponential difference is invisible on the linear axis of Fig. 8.4.
+- [Intuition] Say where $\Theta_E=0.83\,\Theta_D$ comes from (a source fit or a matching criterion); common matching rules give different ratios (about 0.72 from high-temperature entropy, 0.775 from $\langle\omega^2\rangle$), so the choice should be explained rather than only called a parameter.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/08.05.06 Typical Debye Temperatures.md
+priority: low
+graph: no
+manim: no
+summary: Reference table with values consistent with standard tabulations and a sensible scope note.
+- [Example] Add a column with $\Theta_D/(300\,\mathrm{K})$ or the predicted room-temperature $C_V/(3R)$ to make the "same laboratory temperature" remark concrete (lead near the classical limit, diamond far below it).
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/08.06 Experimental Bose–Einstein Condensates.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub with good guidance on which observation supports which claim.
+- [Structure] No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/08.06.01 Historical Overview.md
+priority: low
+graph: no
+manim: no
+summary: Accurate short history (1995 JILA and MIT condensates, 2001 Nobel Prize), with provenance.
+- [Intuition] Add the phase-space density target $n\lambda^3\approx2.6$ and typical cloud parameters (peak density around $10^{13}$–$10^{14}\,\mathrm{cm^{-3}}$, a few hundred nK) to connect the history with 08.02.01, and say why the vapor does not solidify first (metastable dilute gas with rare three-body collisions).
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/08.06.02 Magneto-Optical Traps and Cooling Methods.md
+priority: medium
+graph: yes
+manim: yes
+summary: Correct (the $146\,\mu\mathrm{K}$ Doppler limit for Rb-87 checks), but the cooling mechanisms are only described in words.
+- [Graph] Plot the optical-molasses force $F(v)$ from two counter-propagating red-detuned beams (difference of two Lorentzians centred at $v=\pm|\delta|/k$) with its linear small-velocity part $-\alpha v$, for a detuning of about $-\Gamma/2$.
+- [Manim] Animate evaporative cooling: a Maxwell–Boltzmann histogram in a trap whose depth is lowered, the high-energy tail is cut off, and the remaining atoms rethermalize to a narrower distribution.
+- [Intuition] Add one sentence on why the Doppler limit has the form $\hbar\Gamma/(2k_B)$: damping balanced by momentum diffusion from random photon recoils, optimal at detuning $\delta=-\Gamma/2$.
+- [Structure] Mention sub-Doppler (polarization-gradient) cooling, which reaches well below $T_D$; real experiments start evaporation from tens of microkelvin, so the "hundreds of microkelvin" starting point is only the Doppler-limit picture.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/08.06.03 Condensate Properties.md
+priority: low
+graph: yes
+manim: yes
+summary: Accurate and carefully hedged, though the Gaussian and Thomas–Fermi profiles are named without formulas.
+- [Graph] Plot the ideal Gaussian profile $n(r)\propto e^{-r^2/a_{ho}^2}$ and the Thomas–Fermi profile $n(r)\propto\max(0,1-r^2/R_{TF}^2)$ normalized to the same atom number, with $R_{TF}$ several times $a_{ho}$.
+- [Manim] Animate two released condensates expanding and overlapping, producing interference fringes with spacing $ht/(md)$ that changes with the separation $d$ and expansion time $t$.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/08.07 Worked Examples.md
+priority: low
+graph: no
+manim: no
+summary: Correct worked examples (all numbers recomputed: 358 nK, $3.85\times10^{26}\,\mathrm{W}$, $0.0482$ and $8.5\times10^{-9}\,\mathrm{J\,mol^{-1}\,K^{-1}}$) with useful model checks.
+- [Simplify] In Example 8.4, "about seven orders of magnitude below" is generous: $0.047/8.5\times10^{-9}\approx5.5\times10^6$; say "more than six orders of magnitude".
+- [Intuition] In Example 8.2, compare with the uniform-gas formula evaluated at the peak trap density, to show why trapped clouds condense at hundreds of nK despite their low density.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/08.08 Summary.md
+priority: low
+graph: no
+manim: no
+summary: Accurate summary with a useful comparison table and a good "choose the constraint" section.
+- [Structure] In item 5, the mode density is written $g_D(\omega)$ without the ${\signal{}}$ macro used in 08.05.02; colour it consistently.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/08.99 Exercises.md
+priority: low
+graph: no
+manim: no
+summary: Clear exercise index with a sensible practice route.
+- [Structure] No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/99 Exercises/08.01 Critical Temperature of Helium-4.md
+priority: low
+graph: no
+manim: no
+summary: Correct worked solution (recomputed $T_c=3.1325\,\mathrm{K}$) with a sound discussion of interactions.
+- [Intuition] Add the degeneracy check $n^{1/3}\lambda_c\approx1.38$ and the mean spacing $n^{-1/3}\approx0.36\,\mathrm{nm}$, comparable to the helium atom size, which shows directly why interactions cannot be neglected in the liquid.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/99 Exercises/08.02 Entropy of the Condensed Bose Gas.md
+priority: low
+graph: no
+manim: no
+summary: Correct solution with two independent routes and a careful third-law discussion.
+- [Simplify] In "Check the temperature dependence independently", carry out the differentiation and integration ($C_V=\tfrac52U/T$, $S=\int_0^TC_V/T'\,dT'=\tfrac53U/T$) so the check is shown rather than described.
+- [Simplify] The grand potential is written ${\energy{\Phi}}$ here but ${\energy{\Omega}}$ in other notes of this chapter; use one symbol.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/99 Exercises/08.03 Limits and Maximum of the Planck Spectrum.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and complete (the root $4.96511$ and $b=2.89777\times10^{-3}\,\mathrm{m\,K}$ check out).
+- [Graph] Plot $x^3/(e^x-1)$ with the Rayleigh–Jeans approximation $x^2$ and the Wien approximation $x^3e^{-x}$ for $0\le x\le10$, marking the peak at $x\approx2.821$; this illustrates the ranges discussed in the last section.
+- [Simplify] Use ${\signal{\lambda}}_{\mathrm{rad}}$ consistently: the question and several formulas write plain $\lambda_{\mathrm{rad,max}}$ and $\lambda_{\mathrm{rad}}$ without the colour macro used elsewhere in the note.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/99 Exercises/08.04 Accuracy of the Debye T³ Law.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and careful (recomputed $y\approx9.1046$, $T\approx32.95\,\mathrm{K}$, and the $1.57\times10^{-5}$ error at $\Theta_D/20$), including a justified correction to the source hint.
+- [Graph] Plot the relative error $R(y)/(4\pi^4/15-R(y))$ on a log axis versus $T/\Theta_D$ from 0.03 to 0.2, with horizontal lines at 5% and 1% and a vertical line at $T/\Theta_D=0.05$.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/99 Exercises/08.05 Photon Gas in a One-Litre Cavity.md
+priority: low
+graph: no
+manim: no
+summary: Correct worked numbers (recomputed $U$, $P$, $\langle N_\gamma\rangle$, and $2.701k_BT$) with good scaling checks.
+- [Intuition] Compare $P_{\mathrm{rad}}\approx0.0204\,\mathrm{Pa}$ with an ideal gas of the same particle number at $3000\,\mathrm{K}$ ($Nk_BT/V\approx0.0227\,\mathrm{Pa}$), showing that the photon gas has $P\approx0.90\,nk_BT$.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/99 Exercises/08.06 Condensation in Two Dimensions.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and thorough solution with careful scope statements on the theorem and the trap limit.
+- [Graph] Plot $g_1(z)=-\ln(1-z)$, $g_{3/2}(z)$, and $g_2(z)$ for $0\le z<1$ on one axis, showing that only $g_1$ diverges; this condenses the main argument into one picture.
+- [Simplify] The last two sections repeat the endpoint and theorem-scope arguments; merge "Endpoint test and scope of the comparison" into "Physical interpretation and theorem scope" to shorten the note.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/08 Bose Gas and Condensation/Bose condensation, photon gases, and phonons.md
+priority: high
+graph: yes
+manim: no
+summary: Transcribed lecture notes whose derivations are correct, but with a badly wrong physical-quantities table, a few historical slips, unmotivated fragments, and no phonon content despite the title.
+- [Correctness] The physical-quantities table lists meanings and symbols the note does not use or uses differently: $g$ as "Landé factor" (here it is only the internal degeneracy), $j$ as "Internal partition function" (here $j$ is the summation index in $\zeta(s)$), $n$ as "Amount of substance" and "Number density" (here $n(\epsilon)$ is the occupation number, which is missing), $\Omega$ as "Multiplicity" (here ${\energy{\Omega}}$ is the grand potential), and $\energy{F}$, $\mechanical{P}_{\mathrm{int}}$, $\mechanical{P}_{\mathrm{ext}}$, $\signal{\nu}$ are never used; rebuild the table from the symbols actually present.
+- [Correctness] Under "Critical temperature of the Bose gas", London's proposal linking helium to Bose condensation dates from 1938, not 1928, and the lambda point is $2.17\,\mathrm{K}$; keep the transcribed "1928" and "2.19 K" only with a clarification callout (the same 2.19 K appears in the heat-capacity section).
+- [Correctness] Fig. 15 caption says the maximum of $x^3/(e^x-1)$ lies "near $x=2.822$"; the root of $3(1-e^{-x})=x$ is $2.8214$, so write $x\approx2.821$ as in 08.04.04.
+- [Simplify] The opening line about an ultrarelativistic Fermi gas, the sentence "The grand canonical factor associated with particle number is $e^{+\beta\mu N}$", and the finite-volume $|\mu|$ estimate at $T_c$ appear without derivation or connection; either derive them in one or two lines or remove them.
+- [Structure] The title promises phonons but the note contains only the heading "Photons and phonons" and no phonon material; either rename the note or add a short Debye section linking to [[08.05.02 Debye Model]] and the Einstein comparison.
+- [Graph] Replace or complement the scanned Fig. 12 with a native plot of $N_0/N=1-(T/T_c)^{3/2}$ and $N_{\mathrm{ex}}/N=(T/T_c)^{3/2}$ for $0\le T/T_c\le1.3$, and the chemical-potential sketch with $\beta\mu(T/T_c)$ computed from $g_{3/2}(z)=\zeta(3/2)(T_c/T)^{3/2}$ for $1\le T/T_c\le3$, showing the quadratic departure from zero.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.00 Real Gases and Interactions.md
+priority: low
+graph: no
+manim: no
+summary: Clear chapter hub with two well-motivated reading routes; all links resolve.
+- [Structure] No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.01 Limits of the Ideal Gas.md
+priority: low
+graph: no
+manim: no
+summary: Short and correct introduction that separates interaction effects from quantum exchange.
+- [Intuition] Add the compressibility factor $Z=PV/(Nk_BT)$ here as the single number that measures departure from Eq. (9.1); later notes use it heavily without introducing it.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.01.01 When the Model Fails.md
+priority: low
+graph: yes
+manim: no
+summary: Correct qualitative overview; the proposed diagnostic is described but not illustrated.
+- [Graph] Plot $Z$ versus number density (or pressure up to a few hundred atm) for the van der Waals nitrogen parameters at $T=150\,\mathrm{K}$, $300\,\mathrm{K}$, and $600\,\mathrm{K}$, showing the attraction-dominated dip at low $T$ and the repulsion-dominated rise at high $T$; this makes the diagnostic in the last paragraph concrete.
+- [Example] Convert the quoted interaction energies to temperatures ($1\,\mathrm{meV}\approx11.6\,\mathrm{K}$, $0.1\,\mathrm{eV}\approx1160\,\mathrm{K}$) so "low temperature" has a numerical meaning.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.01.02 Characteristic Scales.md
+priority: low
+graph: no
+manim: no
+summary: Correct scales (the density range and the argon and nitrogen well depths check out), with a sensible caveat about the $\Gamma$ measure.
+- [Example] Show the source estimate explicitly: for nitrogen at $1\,\mathrm{atm}$, $300\,\mathrm{K}$, $n\approx2.4\times10^{25}\,\mathrm{m^{-3}}$ and $\sigma\approx3.7\,\mathrm{\mathring A}$ give $n\sigma^3\approx1.2\times10^{-3}$ and $\Gamma\approx4\times10^{-4}$, i.e. order $10^{-3}$ as stated.
+- [Links] Link [[09.05.01 The 6–12 Potential]] at the last sentence, which mentions the Lennard–Jones zero crossing versus minimum.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.02 van der Waals Equation.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub that separates the two corrections and the stability question.
+- [Structure] No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.02.01 Excluded Volume.md
+priority: low
+graph: no
+manim: yes
+summary: Correct derivation of $b=4v_0=2\pi\sigma^3/3$ with a good explanation of the factor eight and the pair-counting half.
+- [Manim] Animate one sphere of diameter $\sigma$ fixed while a second sphere's centre traces the closest-approach surface, sweeping out the excluded sphere of radius $\sigma$ (eight times the molecular volume), then halve it by highlighting that each pair is counted once.
+- [Structure] Move the final displayed equation $P(V-Nb)=Nk_BT$ before the paragraph that discusses expanding its denominator, so the text refers to an equation the reader has already seen.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.02.02 Long-Range Attraction.md
+priority: low
+graph: no
+manim: no
+summary: Correct mean-field derivation with an honest statement of the free-energy assumption; slightly out of order.
+- [Structure] The paragraph on free energy and units sits between the energy result and the pressure formula it justifies; place it directly after the pressure formula or merge it with the introduction of $U_{\mathrm{attr}}$.
+- [Example] Evaluate $a$ for a pure $-C_6/r^6$ tail outside the core: $a=\tfrac{2\pi C_6}{3\sigma^3}$, which shows directly why $a$ grows with polarizability and shrinks with molecular size.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.02.03 van der Waals Equation.md
+priority: low
+graph: no
+manim: no
+summary: Correct equation with a useful molecular-versus-molar notation correction and a parameter table.
+- [Correctness] Table 9.1 lists the critical pressure of helium as $2.27\,\mathrm{atm}$; the measured value is $0.2275\,\mathrm{MPa}\approx2.24\,\mathrm{atm}$ (2.27 is the value in bar).
+- [Example] Add one line computing the vdW pressure of $1\,\mathrm{mol}$ of $\mathrm{CO_2}$ in $1\,\mathrm{L}$ at $300\,\mathrm{K}$ with the tabulated $a_m,b_m$ and compare with the ideal value, so the size of both corrections is visible.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.02.04 van der Waals Isotherms.md
+priority: low
+graph: yes
+manim: yes
+summary: Correct and well illustrated (the Maxwell values in Fig. 9.1 were recomputed and match).
+- [Graph] Add the binodal (coexistence endpoints for $0.6\le t\le1$) and the spinodal ($\partial p/\partial\upsilon=0$, i.e. $t=(3\upsilon-1)^2/(4\upsilon^3)$) to Fig. 9.1, so the metastable and unstable regions are labelled regions rather than parts of one curve.
+- [Manim] Animate the reduced isotherm as $t$ decreases from 1.3 to 0.7: the curve develops an inflection at $t=1$, then a loop, while the equal-area Maxwell line and the two shaded areas follow it.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.02.05 Critical Point.md
+priority: low
+graph: no
+manim: no
+summary: Correct and clear derivation of $v_c=3b$, $T_c$, $P_c$, and $Z_c=3/8$.
+- [Simplify] Add the final substitution for $P_c$ (insert $v_c=3b$ and $k_BT_c=8a/(27b)$ into the pressure equation: $P_c=\tfrac{8a}{27b}\cdot\tfrac1{2b}-\tfrac{a}{9b^2}$) which the note currently skips.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.02.06 Maxwell Construction.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct proof, but the equal-area rule and the chemical-potential argument would be much clearer with a picture.
+- [Graph] Plot the reduced isotherm $t=0.85$ with the two equal areas shaded between the curve and $p_0\approx0.5045$, marking $\upsilon_\ell\approx0.553$ and $\upsilon_g\approx3.128$.
+- [Graph] Plot the reduced chemical potential (or Gibbs energy per particle) along the same isotherm versus $p$; the swallowtail crossing at $p_0$ shows directly why equal areas select the coexistence pressure and which branches are metastable or unstable.
+- [Links] Link [[09.08 Worked Examples]] (Example 9.3), which solves the construction numerically.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.02.07 Reduced Variables and the Law of Corresponding States.md
+priority: low
+graph: yes
+manim: no
+summary: Correct reduced equation with a clear scope statement for the law of corresponding states.
+- [Graph] Plot the vdW coexistence curve in the $t$ versus $\rho/\rho_c$ plane together with Guggenheim's empirical fit for simple fluids, $\rho_{\ell,g}/\rho_c\approx1+\tfrac34(1-t)\pm\tfrac74(1-t)^{1/3}$, to show both the corresponding-states collapse and the mean-field exponent $1/2$ versus the real $\approx1/3$.
+- [Simplify] Show the substitution step that produces Eq. (9.8) (insert $P=pP_c$, $V=\upsilon V_c$, $T=tT_c$ and divide by $P_cV_c$), not only the check at the critical point.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.03 Virial Expansion.md
+priority: low
+graph: no
+manim: no
+summary: Correct definition and a useful hub that explains the role of the expansion.
+- [Example] Add the vdW virial coefficients $B_2=b-a/(k_BT)$, $B_k=b^{k-1}$ for $k\ge3$ as an explicit first example of Eq. (9.9).
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.03.01 Thermodynamic Derivation.md
+priority: low
+graph: yes
+manim: no
+summary: Correct setup of the configurational integral and Mayer function, but the conceptual paragraphs precede the definitions they discuss.
+- [Structure] Move the paragraphs on units and pair additivity after the displayed configurational integral and pair sum, so the reader meets $Q_N$ before reading about its units and factorization.
+- [Graph] Plot the Mayer function $f(r)$ for the Lennard–Jones potential at $T^*=1$, $3.4$, and $10$, showing $f\to-1$ inside the core, a positive bump in the well, and $f\to0$ at large $r$.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.03.02 Pressure and Coefficients.md
+priority: medium
+graph: no
+manim: no
+summary: The final formulas are correct, but the derivation of $B_2$ is reduced to "expand, take the logarithm, and differentiate", and the checks come before the formulas.
+- [Simplify] Show the short derivation for $B_2$: $Q_N\approx V^N[1+\tfrac{N(N-1)}{2V}\int f\,d^3r]$, so $\ln Q_N\approx N\ln V+\tfrac{N^2}{2V}\int f\,d^3r$, and $P=k_BT\,\partial\ln Q_N/\partial V$ gives $PV/(Nk_BT)=1-\tfrac{N}{2V}\int f\,d^3r$ (noting that exponentiation is justified by the cluster expansion).
+- [Structure] Move the "normalization check" paragraph after Eq. (9.10) and the $B_3$ formula; it currently checks expressions the reader has not yet seen.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.03.03 Physical Meaning of the Coefficients.md
+priority: low
+graph: no
+manim: no
+summary: Correct interpretation with careful statements on sign, three-body correlations, and truncation.
+- [Links] Link [[09.05.02 Calculation of B₂(T) for the Lennard–Jones Potential]] at the sign discussion, where Fig. 9.3 shows the sign change at the Boyle temperature.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.04 Second Virial Coefficient.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub with a good statement of what the Boyle cancellation does and does not mean.
+- [Links] The text mentions "the square-well exercise"; link [[09.02 Square-Well Virial Coefficient]] directly.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.04.01 General Formula.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and concise, with a good hard-sphere check.
+- [Graph] Plot the integrand $-2\pi[e^{-u/k_BT}-1]r^2$ for a square well or Lennard–Jones potential at a low and a high temperature, shading the positive core and negative well contributions so the sign competition is visible.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.04.02 Connection to van der Waals.md
+priority: low
+graph: yes
+manim: no
+summary: Correct expansion and identification of $B_2^{\mathrm{vdW}}=b-a/(k_BT)$ with good limit checks.
+- [Graph] Plot $B_{2,m}^{\mathrm{vdW}}(T)$ for nitrogen with the Table 9.1 parameters from $100\,\mathrm{K}$ to $1000\,\mathrm{K}$, together with measured nitrogen values (e.g. about $-160$, $-4$, $+22\,\mathrm{cm^3\,mol^{-1}}$ at $100$, $300$, $600\,\mathrm{K}$), to show where the model is quantitatively adequate.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.04.03 Boyle Temperature.md
+priority: low
+graph: no
+manim: no
+summary: Correct and careful, including the distinction between Boyle and inversion temperatures.
+- [Example] Add a numerical comparison: vdW gives $T_B=3.375\times126.2\,\mathrm{K}\approx426\,\mathrm{K}$ for nitrogen, while the measured Boyle temperature is about $327\,\mathrm{K}$; this quantifies the warning about model relations.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.05 Lennard–Jones Potential and Calculation of B₂.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub with a good motivation for testing the potential through $B_2$.
+- [Structure] No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.05.01 The 6–12 Potential.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and clearly illustrated; the energy-versus-force distinction is well made.
+- [Graph] Add the reduced force $F\sigma/\varepsilon=-du/dr$ to Fig. 9.2 (or as a second panel), marking the zero at $2^{1/6}\sigma$ and the maximum attraction at $(26/7)^{1/6}\sigma\approx1.245\sigma$, which supports the source-clarification callout.
+- [Simplify] Show the one-line derivative $du/dr=4\varepsilon(-12\sigma^{12}r^{-13}+6\sigma^6r^{-7})=0$ before stating $r_{\min}$, instead of the verbal description in the stationary-point paragraph.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.05.02 Calculation of B₂(T) for the Lennard–Jones Potential.md
+priority: low
+graph: yes
+manim: no
+summary: Correct (the Boyle point $T^*\approx3.418$ and both high-temperature coefficients check out) with a justified correction to the source approximation.
+- [Graph] Overlay on Fig. 9.3 the two-term high-temperature asymptote from the note and reduced argon data ($\sigma\approx3.4\,\mathrm{\mathring A}$, $\varepsilon/k_B\approx120\,\mathrm{K}$), so the reader sees both the range of the asymptote and the quality of the fit.
+- [Intuition] State the location of the maximum of $B_2^*$ (near $T^*\approx25$) explicitly, since the note says the coefficient approaches zero from above but the displayed range does not show the turnover.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.06 Cluster Expansion and Mayer Diagrams.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub that explains why graphs are bookkeeping and why connectedness is not enough.
+- [Structure] No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.06.01 Expansion of the Configurational Integral.md
+priority: low
+graph: no
+manim: no
+summary: Correct and well checked with the three-molecule example.
+- [Simplify] Write out the three-molecule expansion explicitly, $(1+f_{12})(1+f_{13})(1+f_{23})=1+f_{12}+f_{13}+f_{23}+f_{12}f_{13}+f_{12}f_{23}+f_{13}f_{23}+f_{12}f_{13}f_{23}$, since the text describes it in words only.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.06.02 Mayer Graphs.md
+priority: low
+graph: no
+manim: no
+summary: Clear figure and explanation of disconnected, chain, and triangle graphs.
+- [Structure] No change needed; optionally add the two four-node irreducible graphs (square and square with one diagonal, plus the complete graph) as a preview of $B_4$.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.06.03 Cluster Integrals.md
+priority: low
+graph: no
+manim: no
+summary: Correct definitions with a good unit check and a warning about the letter $b$.
+- [Example] Evaluate $b_2$ for hard spheres, $b_2=-2\pi\sigma^3/3$, to anchor the sign convention against $B_2=+2\pi\sigma^3/3$.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.06.04 Relation between Cluster Integrals and Virial Coefficients.md
+priority: low
+graph: no
+manim: no
+summary: Correct (the chain contribution $2b_2^2$ and $B_3=-\tfrac13\int\!\int f_{12}f_{13}f_{23}$ check out) with a good sign argument.
+- [Example] Quote the hard-sphere result $B_3=\tfrac58b^2=5\pi^2\sigma^6/18$ as a concrete value of the triangle integral and compare with the vdW prediction $B_3=b^2$.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.07 Joule–Thomson Effect and Gas Liquefaction.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub that orders the flow balance, coefficient, and application sensibly.
+- [Structure] No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.07.01 Joule–Thomson Expansion.md
+priority: low
+graph: no
+manim: yes
+summary: Correct and careful derivation of the isenthalpic condition, including the free-expansion contrast and the isobaric correction.
+- [Manim] Animate the classic two-piston picture: a gas parcel of volume $V_1$ pushed through a porous plug at $P_1$ while a second piston withdraws at $P_2$, with the work terms $P_1V_1$ and $-P_2V_2$ appearing as labelled bars that add to $U_1=U_2+P_2V_2-P_1V_1$.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.07.02 Joule–Thomson Coefficient.md
+priority: low
+graph: no
+manim: no
+summary: Correct derivation with a justified sign correction; one symbol is used without definition.
+- [Simplify] Define the thermal expansion coefficient $\alpha_P=V^{-1}(\partial V/\partial T)_P$ in the text before the last expression; it currently appears only in the table.
+- [Simplify] Show the intermediate step $dS=(C_P/T)dT+(\partial S/\partial P)_TdP$ before inserting the Maxwell relation.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.07.03 Coefficient for the van der Waals Gas.md
+priority: low
+graph: yes
+manim: no
+summary: Correct leading-order result, but the explanation of the factor two comes before the formula it explains.
+- [Structure] Move the paragraph beginning "This explains the factor two" after the final formula $\mu_{JT}\approx(2a/k_BT-b)/c_P$; it currently refers to a factor not yet shown.
+- [Simplify] Show the one-line origin of Eq. (9.14): at low pressure $V\approx Nk_BT/P+NB_2$, so $T(\partial V/\partial T)_P-V=N(TB_2'-B_2)$.
+- [Graph] Plot $c_P\mu_{JT}/b$ versus $T/T_B$ for the dilute vdW gas, $2T_B/T-1$, marking the sign change at $T/T_B=2$.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.07.04 Inversion Temperature.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct (the finite-pressure condition and Table 9.2 entries check out), but the inversion curve is only given as a formula.
+- [Graph] Plot the full vdW inversion curve in reduced variables, parametrized by $\upsilon$: $t_{\mathrm{inv}}=\tfrac{27}{4}(1-\tfrac1{3\upsilon})^2$ with $p=8t_{\mathrm{inv}}/(3\upsilon-1)-3/\upsilon^2$, together with the coexistence curve and the nitrogen inversion data scaled by $T_c,P_c$; mark the cooling region inside the curve.
+- [Intuition] Comment on Table 9.2: the vdW model overestimates the upper inversion temperature by roughly 30–40% for N₂, O₂, and CO₂ but not for H₂ and He, where quantum effects matter; this links the numbers to the model limits stated earlier.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.07.05 Application - Gas Liquefaction.md
+priority: low
+graph: no
+manim: yes
+summary: Correct and careful description of the Linde–Hampson cycle and precooling requirements.
+- [Manim] Animate the Linde–Hampson loop: compressor, aftercooler, counterflow heat exchanger, valve, and separator, with the gas temperature shown as a colour that drops a little more on each pass until liquid collects.
+- [Example] Add the liquid-fraction energy balance $y=(h_1-h_2)/(h_1-h_f)$ (warm low-pressure exit enthalpy $h_1$, high-pressure inlet $h_2$, saturated liquid $h_f$), which the last paragraph describes in words.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.08 Worked Examples.md
+priority: low
+graph: no
+manim: no
+summary: Correct worked examples (recomputed $T_c=126.16\,\mathrm{K}$, $P_c=33.4\,\mathrm{atm}$, the Maxwell values, $Z-1=-0.0191$, and $B_{2,m}^{\mathrm{vdW}}=-67.1\,\mathrm{cm^3\,mol^{-1}}$).
+- [Links] Link [[09.02.06 Maxwell Construction]] and Fig. 9.1 in [[09.02.04 van der Waals Isotherms]] from Example 9.3, since the same values are plotted there.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/09 Real Gases and Interactions/09.09 Notes on Empirical Equations of State.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct equations, but the Peng–Robinson temperature function and the parameter relations are named without formulas, so the equations cannot be used as written.
+- [Simplify] Give the critical-point parameter relations and the Peng–Robinson function: $a_{RK}=0.42748R^2T_c^{5/2}/P_c$, $b_m=0.08664RT_c/P_c$; $a_{PR}=0.45724R^2T_c^2/P_c$, $b_m=0.07780RT_c/P_c$, $\alpha(T)=[1+\kappa(1-\sqrt{T/T_c})]^2$ with $\kappa=0.37464+1.54226\omega-0.26992\omega^2$.
+- [Graph] Plot $Z$ versus $P$ (0 to 200 atm) for CO₂ at $320\,\mathrm{K}$ from the ideal, vdW, RK, and PR equations, to show how much the empirical forms improve on vdW near the critical region.
+- [Example] Quote each model's critical compressibility factor (vdW 0.375, RK 1/3, PR about 0.307) against the real range 0.23–0.29 as a compact accuracy comparison.

@@ -1,0 +1,258 @@
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/01 Historical Introduction to the Elementary Particles/1.9 The November Revolution and Its Aftermath (1974-1983).md
+priority: medium
+graph: no
+manim: no
+summary: Faithful, readable transcription of the 1974–1983 history, but the hand-built Fig. 1.13 supermultiplet graphs contain several wrong quark labels and the 1987 "future" statements are not annotated.
+- [Correctness] Fig. 1.13(b) vector-meson graph: "s̄d̄ (K̄*⁰)" is two antiquarks and not a meson (should be $s\bar d$, $\bar K^{*0}$); "s̄c" at the charm $-1$ vertex has charm $+1$ (should be $s\bar c$); "ud̄ (ρ*)" should be $u\bar d$ ($\rho^+$).
+- [Correctness] Fig. 1.13(d) spin-½ graph: the charm $+2$ vertex "scs" should be $ccs$, the charm $+1$ vertex at (−1.6, 1.1) labelled "ccd" should be $cdd$ ($\Sigma_c^0$), and "uss (Ξ*⁺)" should be $uss$ ($\Xi^0$); Fig. 1.13(e): the charm $+2$ vertex at (−0.75, 1.7) labelled "cdd" should be $ccd$.
+- [Correctness] Fig. 1.13(a) is a stray circle with three labels ($d\bar d$, $s\bar s$, $c\bar c$) instead of the pseudoscalar 16-plet; rebuild it as the pseudoscalar analogue of (b) ($D$, $D_s$, $K$, $\pi$, $\eta$, $\eta_c$) or remove it, and add the missing outer labels ($K^{*\pm}$, $n$, $p$, $\Delta^0$, $\Sigma^{*-}$, $\Sigma^{*0}$) so the reader can actually use the diagrams for Problems 1.14–1.15.
+- [Structure] Add an editorial callout after the last paragraph: the top quark was discovered at Fermilab in 1995 (mass about $173\,\mathrm{GeV}/c^2$), $\Lambda_b$ is firmly established, and the $F^+$ is now listed as $D_s^+$; the "summer 1984 CERN" top signal was spurious.
+- [Intuition] The $\psi$ lifetime comparison ($10^{-20}$ vs $10^{-23}$ s) would benefit from one sentence pointing forward to the OZI-rule explanation in [[2.5 Decays and Conservation Laws]], so the reader knows the puzzle is resolved later.
+- [Structure] The file starts with a UTF-8 BOM before the frontmatter `---` (true for every note in this batch); save as UTF-8 without BOM.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/01 Historical Introduction to the Elementary Particles/1.B References and Notes.md
+priority: low
+graph: no
+manim: no
+summary: Reference list transcribed cleanly; one citation has a page-number transcription error.
+- [Correctness] Note 10: "Phys. Rev. **92**, 8301 (1953)" should read "**92**, 830 (1953)" (Reines and Cowan); the extra digit looks like a merged footnote mark.
+- [Structure] Note 42 colours $\theta_W$ with `\mechanical{}`, which is not a mechanical quantity; leave the mixing angle uncoloured (as the other chapters do for couplings) and drop `\mechanical{c}` inside the unit expression.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/01 Historical Introduction to the Elementary Particles/1.P Problems.md
+priority: low
+graph: no
+manim: no
+summary: Problem set transcribed accurately; the only issue is a symbol clash created by the semantic table.
+- [Correctness] Symbol clash: $\mechanical{p}$ is used for electron momentum in Problem 1.3 and for the proton mass in the Coleman–Glashow relation (Problem 1.9), and the table lists both; write the masses in 1.9 as $m_p, m_n, m_{\Sigma^\pm}, m_{\Xi^{0,-}}$ or state explicitly that the particle names stand for masses only there.
+- [Links] Problem 1.9 citation "Phys. Rev. **B134**, 671 (1964)" is the conventional misprint for Phys. Rev. **134**, B671 (1964); fix the volume/page format.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/02 Elementary Particle Dynamics/2.1 The Four Forces.md
+priority: low
+graph: no
+manim: no
+summary: Short, clear overview of the four forces with a sensible caveat footnote on "strength".
+- [Intuition] The strength table ($10$, $10^{-2}$, $10^{-13}$, $10^{-42}$) gives no reference scale; add one line saying these are rough dimensionless couplings for two protons at about $10^{-15}\,\mathrm{m}$, and link Problem 2.1 in [[2.P Problems]] (gravity vs Coulomb for two electrons, ratio $\approx 2.4\times10^{-43}$) as a concrete check.
+- [Structure] Add a brief note that the electroweak theory and QCD in this table are now jointly called the Standard Model and that the Higgs boson (spin 0, discovered 2012) is an additional elementary boson not in the mediator column.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/02 Elementary Particle Dynamics/2.2 Quantum Electrodynamics (QED).md
+priority: low
+graph: no
+manim: no
+summary: Clear qualitative introduction to Feynman diagrams and virtual particles; one standard oversimplification about the vertex factor.
+- [Correctness] "each vertex within a diagram introduces a factor of $\alpha=e^2/\hbar c=1/137$": each vertex contributes $\sqrt{\alpha}$ (i.e. $e$) to the amplitude, so a diagram with $n$ vertices scales as $\alpha^{n/2}$ in the amplitude and $\alpha^{n}$ in the rate; also write $\alpha\approx1/137$ rather than "=".
+- [Example] In the paragraph on $e^-\to e^-+\gamma$, add the two-line four-vector proof ($p=p'+k$ gives $m^2c^2=m^2c^2+2p'\cdot k$, and $p'\cdot k>0$ for a real photon) to make the "purely kinematical" argument explicit.
+- [Manim] A short animation that rotates the Møller diagram by $90^\circ$ into the Bhabha annihilation diagram, flipping the arrow on the backward line to an antiparticle, would make crossing symmetry and the "backward in time" rule concrete.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/02 Elementary Particle Dynamics/2.3 Quantum Chromodynamics (QCD).md
+priority: medium
+graph: yes
+manim: no
+summary: Good qualitative account of colour, gluon self-coupling, screening and asymptotic freedom; the running-coupling discussion stays purely verbal.
+- [Graph] Add a plot of the one-loop running coupling $\alpha_s(Q)=\dfrac{12\pi}{(33-2f)\ln(Q^2/\Lambda^2)}$ with $f=5$, $\Lambda=0.2\,\mathrm{GeV}$, $Q\in[1,1000]\,\mathrm{GeV}$ (log axis), with the measured $\alpha_s(M_Z)\approx0.118$ marked, to show quantitatively what "asymptotic freedom" means and connect it to $a=2f-11n$ in (2.2).
+- [Intuition] Connect (2.2) to the standard form: the one-loop coefficient is proportional to $11n-2f$, so $a=-21$ for $f=6$, $n=3$ is the sign that makes $\alpha_s$ fall; note that asymptotic freedom survives as long as $f\le16$.
+- [Structure] Add a short update callout: confinement is still unproven analytically but is strongly supported by lattice QCD (linear static potential, string tension about $0.9\,\mathrm{GeV/fm}$), replacing the 1987 pointer to "ref. 25 in Chapter 1".
+- [Simplify] The table colours $\lambda_c$ with `\signal{}`; it is a length scale (Compton wavelength of the electron), so `\mechanical{}` or uncoloured fits the macro semantics better.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/02 Elementary Particle Dynamics/2.4 Weak Interactions.md
+priority: low
+graph: no
+manim: no
+summary: Short hub that introduces weak charge and lists the three subchapters; links resolve.
+- [Structure] The note body starts with an orphan "<sup>4</sup>" before the first paragraph; move the footnote marker to the end of the first sentence (where Griffiths' note 4 on the classic weak-interaction papers belongs).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/02 Elementary Particle Dynamics/2.4.1 Leptons.md
+priority: low
+graph: no
+manim: no
+summary: Clear description of charged and neutral leptonic weak vertices with well-chosen example processes.
+- [Intuition] After the muon-decay diagram, add one sentence explaining why weak processes are so slow at low energy: the $W$ propagator gives a factor $\approx g^2/M_W^2c^2$, which leads to the Fermi constant $G_F/(\hbar c)^3\approx1.17\times10^{-5}\,\mathrm{GeV}^{-2}$.
+- [Structure] Frontmatter lacks the `source_pdf`, `source_page`, `pdf_page` fields that the other notes in the chapter carry; add them for consistency.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/02 Elementary Particle Dynamics/2.4.2 Quarks.md
+priority: medium
+graph: no
+manim: no
+summary: Good step-by-step build-up from leptonic to quark weak vertices and Cabibbo/KM mixing, but the quoted KM matrix is the 1984 range table.
+- [Correctness] Eq. (2.6) is outdated: current PDG magnitudes are about $|V_{ud}|=0.974$, $|V_{us}|=0.225$, $|V_{ub}|=0.0037$, $|V_{cd}|=0.225$, $|V_{cs}|=0.973$, $|V_{cb}|=0.042$, $|V_{td}|=0.0086$, $|V_{ts}|=0.041$, $|V_{tb}|=0.999$; the ranges "0. to 0.014" and "0. to 0.024" also suggest $V_{ub}$, $V_{td}$ could vanish, which is now excluded. Add the current values in a callout.
+- [Correctness] "$d+\nu_e\to u+e$" should read $d+\nu_e\to u+e^-$ (charge bookkeeping is the point of the example).
+- [Intuition] Add the two-generation Cabibbo form $d'=d\cos\theta_C+s\sin\theta_C$ with $\theta_C\approx13^\circ$ before the $3\times3$ matrix, so the reader sees mixing as a rotation and why $\Lambda$ decay is suppressed by $\sin^2\theta_C\approx0.05$.
+- [Structure] Frontmatter lacks the source fields used elsewhere in the chapter.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/02 Elementary Particle Dynamics/2.4.3 Weak and Electromagnetic Couplings of W and Z.md
+priority: low
+graph: no
+manim: no
+summary: Very short note listing the gauge-boson self-couplings; correct.
+- [Structure] Add a one-line update: these triple and quartic couplings ($WW\gamma$, $WWZ$) were measured directly at LEP2 ($e^+e^-\to W^+W^-$, 1996–2000) and at the LHC, so "limited practical importance" is historical.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/02 Elementary Particle Dynamics/2.5 Decays and Conservation Laws.md
+priority: medium
+graph: yes
+manim: no
+summary: Well-organised list of conservation laws with good worked examples (strangeness, OZI rule); numbers check, but the massless-neutrino premise is outdated.
+- [Correctness] Opening paragraph: "The neutrinos and the photon are stable (having zero mass ...)" is outdated; neutrino oscillations show at least two neutrinos are massive. The lightest neutrino is still stable, and heavier ones could only decay at unobservably slow rates, so rephrase the reason.
+- [Graph] Add a log-scale chart of lifetimes ($10^{-24}$ to $10^{3}$ s) placing $\Delta$ ($5.6\times10^{-24}$ s), $\pi^0$ ($8.4\times10^{-17}$), $\Sigma^0$ ($7.4\times10^{-20}$), $\psi$ ($7\times10^{-21}$), $\tau$ ($2.9\times10^{-13}$), $\Lambda$ ($2.6\times10^{-10}$), $\pi^+$ ($2.6\times10^{-8}$), $\mu$ ($2.2\times10^{-6}$), $n$ ($879$ s), coloured by strong/EM/weak, to visualise the gaps discussed in the text.
+- [Example] Under "OZI rule", give the actual numbers: $\phi\to K\bar K$ about 83% vs $\phi\to3\pi$ about 15%, and $2m_D\approx3730\,\mathrm{MeV}/c^2>m_\psi=3097\,\mathrm{MeV}/c^2$, so the reader sees both halves of the $\psi$ argument quantitatively.
+- [Simplify] In point 3, add that baryon number is now usually written $B$ (the note uses Griffiths' older $A$) so readers recognise it in other sources.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/02 Elementary Particle Dynamics/2.6 Unification Schemes.md
+priority: medium
+graph: yes
+manim: no
+summary: Readable motivation for electroweak and grand unification, but the quantitative GUT claims are 1987 values that later data changed.
+- [Correctness] "the half-life is ... at least $10^{20}$ times the age of the universe" is outdated: Super-Kamiokande gives $\tau/B(p\to e^+\pi^0)>2.4\times10^{34}$ yr, i.e. more than $10^{24}$ times the age of the universe, which rules out minimal non-supersymmetric SU(5).
+- [Correctness] Fig. 2.5 and the text imply the three couplings meet at one point near $10^{15}$ GeV; LEP precision data show that with Standard Model running they do not meet at a single point (they nearly do with supersymmetric running near $2\times10^{16}$ GeV). Add this caveat; also $M_Z=91.19\,\mathrm{GeV}/c^2$, not 90.
+- [Graph] Replace the schematic Fig. 2.5 with the actual one-loop running of $\alpha_1^{-1},\alpha_2^{-1},\alpha_3^{-1}$ versus $\log_{10}(Q/\mathrm{GeV})\in[2,17]$ (straight lines starting at $M_Z$ from about 59, 29.6, 8.5 with slopes $-41/10$, $19/6$, $7$ over $2\pi$), which shows the near-miss clearly.
+- [Structure] The table lists $\energy{E}$ for "interaction energy", but the note never uses the symbol in text (only as an axis label); either use it in the paragraph ("at $E\approx10^{15}$ GeV") or drop it from the table.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/02 Elementary Particle Dynamics/2.B References and Notes.md
+priority: low
+graph: no
+manim: no
+summary: Short reference list; no issues found.
+- [Structure] No change needed beyond removing the UTF-8 BOM.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/02 Elementary Particle Dynamics/2.P Problems.md
+priority: low
+graph: no
+manim: no
+summary: Problem set transcribed accurately; a few historical statements could be annotated.
+- [Simplify] Problem 2.2 calls $\gamma+\gamma\to\gamma+\gamma$ "Delbruck scattering"; that name refers to photon scattering in the Coulomb field of a nucleus; the process here is light-by-light scattering (Delbrück scattering is a special case with virtual photons from the nucleus). Also spell "Delbrück".
+- [Structure] Problem 2.6 ("if a positron-electron collider is ever built with sufficient energy to make two $W$'s") deserves a footnote that LEP2 did exactly this from 1996, confirming the $\gamma WW$ and $ZWW$ couplings.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/03 Relativistic Kinematics/3.1 Lorentz Transformations.md
+priority: low
+graph: yes
+manim: yes
+summary: Clear, correct summary of the Lorentz transformations and their four classic consequences; the derivations are short and checkable.
+- [Graph] Add a Minkowski diagram ($ct$ vertical, $x$ horizontal, range $\pm3$) showing the $S'$ axes $ct'$ (slope $c/v$) and $x'$ (slope $v/c$) for $\beta=0.6$, with two simultaneous events at $t=0$, $x_A=0$, $x_B=2$ and the tilted line of constant $t'$ through $A$, illustrating (3.4).
+- [Manim] Animate the Minkowski diagram as $\beta$ goes from 0 to 0.9: the $x'$ and $ct'$ axes scissor toward the light cone while a fixed pair of events changes time order in $S'$; this conveys simultaneity and the invariant light cone better than a static plot.
+- [Example] In "Time dilation", add a one-line number (for example $v=0.998c$ gives $\gamma=15.8$, so a $2.2\,\mu\mathrm{s}$ muon lives $35\,\mu\mathrm{s}$ in the lab) linking to Problem 3.4 in [[3.P Problems]].
+- [Simplify] The text refers to "equation (i)" and "eq. (iv′)" while the displays are tagged (3.1) and (3.3); say "(3.1 i)" and "(3.3 iv)" so the reference is unambiguous.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/03 Relativistic Kinematics/3.2 Four-Vectors.md
+priority: low
+graph: no
+manim: no
+summary: Clean and correct introduction to four-vector index notation, metric, invariants and tensors.
+- [Example] After (3.20), add a short worked example: $a=(5,3,0,0)$, $b=(2,1,1,0)$ give $a\cdot b=10-3=7$, and boosting both with $\beta=0.6$ gives the same 7, so the invariance claim is seen in numbers.
+- [Simplify] The sentence "put an arrow over all three-vectors ... In this book, I use boldface" is self-contradictory as transcribed; keep only the boldface convention the note actually uses.
+- [Intuition] Add one sentence after (3.24) on the physical meaning: timelike separations can be causally connected, spacelike ones cannot, lightlike ones lie on the light cone.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/03 Relativistic Kinematics/3.3 Energy and Momentum.md
+priority: low
+graph: yes
+manim: no
+summary: Clear motivation of proper time, proper velocity and the energy-momentum four-vector; one outdated physics claim.
+- [Correctness] "at least two types of massless particles (the photon and the neutrinos) are known to exist" is outdated; neutrinos are massive (oscillations), so the examples of massless particles are the photon and the gluon.
+- [Graph] Plot $T/mc^2=\gamma-1$ and the classical $\tfrac12\beta^2$ for $\beta\in[0,0.99]$, plus $p/(mc)=\gamma\beta$ versus $\beta$, to show where the Taylor expansion (3.43) fails and why $v<c$ always.
+- [Example] In the photon paragraph, add the numbers: $\lambda=hc/E$ gives $620\,\mathrm{nm}$ for $2\,\mathrm{eV}$ and $413\,\mathrm{nm}$ for $3\,\mathrm{eV}$, which supports the "red" and "purple" remark.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/03 Relativistic Kinematics/3.4 Collisions.md
+priority: low
+graph: no
+manim: no
+summary: Clear classical-versus-relativistic comparison of collision types; correct.
+- [Example] Add a numerical illustration of the "hot potato" remark: heating $1\,\mathrm{kg}$ of water by $80\,\mathrm{K}$ adds $3.3\times10^{5}\,\mathrm{J}$, i.e. $\Delta m=Q/c^2\approx3.7\times10^{-12}\,\mathrm{kg}$ (a worked estimate for Problem 3.12 in [[3.P Problems]]).
+- [Simplify] In the callout, say "the sum of the rest masses is not conserved" rather than "mass is not conserved", since the invariant mass of the whole system is conserved; this avoids confusion with the invariant-mass method of [[3.5 Examples and Applications]].
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/03 Relativistic Kinematics/3.5 Examples and Applications.md
+priority: low
+graph: yes
+manim: no
+summary: Excellent worked examples with explicit strategy suggestions; all results check ($M=5m/2$, $v_\mu=0.271c$, $E=7mc^2$, $T'\approx3918\,\mathrm{GeV}$).
+- [Structure] Example 3.1 repeats its question ("Question: What is the mass, $M$ of the final composite lump?") as a duplicate line; delete the second copy.
+- [Graph] Plot $T'/T=4(1+T/2mc^2)$ from (3.53) for electrons and protons, $T\in[10^{-3},10^{3}]\,\mathrm{GeV}$ on log axes, to show the collider advantage growing linearly with $T$.
+- [Example] After Example 3.4, add the collider comparison in numbers: fixed target needs $T=6mc^2=5.63\,\mathrm{GeV}$, colliding beams need $T=mc^2=0.938\,\mathrm{GeV}$ per proton.
+- [Simplify] The table gives $m_\pi,m_\mu$ in kg but $m_d,m_p,m_n$ in $\mathrm{MeV}/c^2$; use $\mathrm{MeV}/c^2$ throughout, as the numerical evaluation does.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/03 Relativistic Kinematics/3.B References and Notes.md
+priority: low
+graph: no
+manim: no
+summary: Two-item reference list; no issues.
+- [Structure] No change needed beyond removing the UTF-8 BOM.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/03 Relativistic Kinematics/3.P Problems.md
+priority: low
+graph: no
+manim: no
+summary: Problem set transcribed accurately; all checked answers (3.13, 3.16, 3.18 = 186 m, 3.22, 3.23, 3.24) are correct.
+- [Simplify] The symbol $\mechanical{t}$ is used for time ($t'$ in Problem 3.1) and for the Mandelstam variable in Problems 3.22–3.23, and $\mechanical{\tau}$ for the muon lifetime; consider leaving Mandelstam $s,t,u$ uncoloured (they are invariants, not mechanical coordinates) to separate them visually.
+- [Structure] The note callout under Problem 3.2 refers to "her" while the problem says "an observer"; harmless, but the callout could state the physics point directly (observed after light-travel correction vs seen).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/04 Symmetries/4.1 Symmetries, Groups, and Conservation Laws.md
+priority: low
+graph: no
+manim: yes
+summary: Clear, engaging introduction to symmetry, groups and Noether's theorem; correct.
+- [Simplify] "conversely, every conservation law reveals an underlying symmetry" overstates Noether's theorem: it links continuous symmetries of an action to conserved currents; discrete symmetries such as parity give multiplicative conservation laws without Noether. Add one qualifying sentence.
+- [Manim] Animate the six operations of the triangle group on Fig. 4.2 (labelled vertices A, B, C), then show $R_aR_+\ne R_+R_a$ by applying them in both orders, which makes closure and non-commutativity visible.
+- [Example] Add the $3\times3$ multiplication table of the triangle group (or point to Problem 4.1) so the four group axioms can be checked on a concrete finite group.
+- [Structure] The note has no Physical quantities table although it uses symbols such as $f(x)$ and group elements; add a short table or a line stating that the note has no physical quantities.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/04 Symmetries/4.2 Spin and Orbital Angular Momentum.md
+priority: low
+graph: no
+manim: no
+summary: Clear summary of quantised orbital and spin angular momentum with a good vector-model figure; Table 4.3 predates the Higgs.
+- [Correctness] Table 4.3 shows "—" for elementary spin-0 bosons; the Higgs boson (spin 0, $125\,\mathrm{GeV}/c^2$, discovered 2012) belongs there. Mention also the hypothetical spin-2 graviton.
+- [Intuition] Under Fig. 4.3, add that the cone angle satisfies $\cos\theta=m_l/\sqrt{l(l+1)}$ (for $l=2$, $m_l=2$: $\theta\approx35^\circ$), which quantifies "cannot be oriented purely in the $z$ direction".
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/04 Symmetries/4.3 Addition of Angular Momenta.md
+priority: low
+graph: no
+manim: no
+summary: Clear and correct treatment of angular-momentum addition with good worked examples; the Example 4.3 coefficients check.
+- [Correctness] Eq. (4.17) sums over $j_1,j_2$, but $j_1,j_2$ are fixed; the sum must run over $m_1,m_2$ with $m_1+m_2=m$: $\lvert j\,m\rangle=\sum_{m_1+m_2=m}C^{j\,j_1\,j_2}_{m\,m_1\,m_2}\lvert j_1m_1\rangle\lvert j_2m_2\rangle$.
+- [Example] Add a quick dimension count to (4.12): $(2j_1+1)(2j_2+1)=\sum_j(2j+1)$, e.g. $2\times2=3+1$ and $5\times2=6+4$, which checks the decomposition and Example 4.2 ($2\times2\times2=4+2+2$).
+- [Simplify] "The Clebsch–Gordan coefficients give the probability" should say "their squares give the probability"; the next sentence corrects it, but the first sentence as written is wrong on its own.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/04 Symmetries/4.4 Spin 1-2.md
+priority: low
+graph: no
+manim: yes
+summary: Clear, correct development of spinors, Pauli matrices and the SU(2) rotation rule.
+- [Manim] Animate a spinor on the Bloch sphere under $U(\theta\hat z)=e^{-i\theta\sigma_z/2}$ as $\theta$ goes from 0 to $4\pi$, showing the overall phase factor reaching $-1$ at $2\pi$ and returning to $+1$ at $4\pi$; this illustrates the double-cover footnote.
+- [Example] After (4.24), add a concrete case: $\alpha=\sqrt{2/3}$, $\beta=1/\sqrt3$ gives $P(S_x=+\hbar/2)=\tfrac12(\alpha+\beta)^2\approx0.97$, so the general procedure is seen with numbers.
+- [Intuition] Add the closed form $e^{-i\boldsymbol\theta\cdot\boldsymbol\sigma/2}=\cos(\theta/2)-i(\hat{\mathbf n}\cdot\boldsymbol\sigma)\sin(\theta/2)$, which makes the $2\pi\to-1$ statement immediate rather than deferred to Problem 4.21.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/04 Symmetries/4.5 Flavor Symmetries.md
+priority: medium
+graph: yes
+manim: no
+summary: Strong exposition of isospin and its dynamical consequences (CG decompositions and cross-section ratios all check), but Table 4.4 quark masses and the "putative top" are badly outdated.
+- [Correctness] Table 4.4 is outdated: current PDG values are about $m_u=2.2$, $m_d=4.7$, $m_s=93$ MeV (MS-bar at 2 GeV), $m_c=1.27$ GeV, $m_b=4.18$ GeV, and $m_t=172.6$ GeV (directly measured since the 1995 discovery), not "$>23{,}000$"; replace or annotate the table and the "putative top quark" sentence.
+- [Graph] Recreate Fig. 4.6 natively: plot $\sigma_{\mathrm{tot}}(\pi^+p)$ and $\sigma_{\mathrm{tot}}(\pi^-p)$ versus pion lab momentum or CM energy $1.1$–$2.0$ GeV with Breit–Wigner peaks of about 200 mb and 70 mb at 1232 MeV, highlighting the 3:1 ratio of (4.51).
+- [Example] After (4.43), state the measured outcome: $\sigma(pp\to d\pi^+)/\sigma(np\to d\pi^0)\approx2$, so the reader sees the isospin prediction confirmed numerically rather than only by reference 6.
+- [Simplify] In the paragraph on effective masses, add that "bare" means the current-quark mass of the QCD Lagrangian and "effective" the constituent mass, and that the roughly $350\,\mathrm{MeV}/c^2$ offset is attributed to chiral-symmetry breaking in QCD (now well reproduced by lattice calculations).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/04 Symmetries/4.6 Parity.md
+priority: high
+graph: no
+manim: yes
+summary: Good conceptual treatment of parity, helicity and intrinsic parity, but the central Wu-experiment statement has the electron direction reversed and the meson table uses obsolete names.
+- [Correctness] Wu experiment: electrons from polarised $^{60}$Co are emitted preferentially opposite to the nuclear spin ("southerly"), not "in the direction of the nuclear spin"; fix the text, the Fig. 4.7 caption, and the mirror-image statements and Fig. 4.8 caption (the mirror image then has electrons preferentially along the spin). Griffiths corrected this in the 2nd edition.
+- [Correctness] "The neutrino is massless ... the helicity of a neutrino is Lorentz-invariant" is outdated; neutrinos have small masses, so strictly it is chirality (not helicity) that the weak interaction selects, and helicity equals chirality only up to corrections of order $m_\nu/E$. Add a callout (the footnote's "if neutrinos have a small but nonzero mass" is now confirmed).
+- [Correctness] Table 4.6 uses obsolete 1980s meson names; current PDG names are $b_1, K_{1B}, h_1/h_1'$ for $1^{+-}$; $a_0, K_0^*, f_0$ for $0^{++}$; $a_1, K_{1A}, f_1(1285)/f_1(1420)$ for $1^{++}$; $a_2, K_2^*, f_2/f_2'$ for $2^{++}$. Give modern names (old names in brackets).
+- [Manim] Animate the cobalt nucleus with spin arrow and emitted electrons, then reflect it in a mirror: the spin (axial vector) flips while the electron momenta (polar vectors) do not, showing why an asymmetric emission pattern violates parity.
+- [Simplify] In the pion-decay paragraph, add a small sketch or sentence with explicit arrows: $\pi^-$ at rest, $\mu^-$ to the left with spin left, $\bar\nu_\mu$ to the right with spin right, so "opposite spins + opposite momenta = equal helicity" is visible.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/04 Symmetries/4.7 Charge Conjugation.md
+priority: low
+graph: no
+manim: no
+summary: Concise, correct account of C eigenvalues and G-parity with useful decay selection rules.
+- [Example] Add a short table of $I^G(J^{PC})$ for $\pi$ ($1^-(0^{-+})$), $\eta$ ($0^+(0^{-+})$), $\rho$ ($1^+(1^{--})$), $\omega$ ($0^-(1^{--})$), $\phi$ ($0^-(1^{--})$) and the allowed pion multiplicities, so (4.60)–(4.61) are applied systematically.
+- [Simplify] Using $\lvert p\rangle$ for a generic particle in (4.54)–(4.56) clashes with $p$ as the proton elsewhere in the chapter; use $\lvert\psi\rangle$ or $\lvert a\rangle$.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/04 Symmetries/4.8 CP Violation.md
+priority: medium
+graph: yes
+manim: yes
+summary: Clear, well-motivated account of neutral-kaon mixing and CP violation with numbers that check ($\tau_S$, $\tau_L$, $\Delta m$, $\epsilon$, 45/22,700), but the "only in kaons" and "no natural way" statements are long outdated.
+- [Correctness] "has never been observed outside the neutral kaon system" is outdated: CP violation was observed in $B^0$ decays (BaBar/Belle 2001), in charm decays (LHCb 2019) and in baryon decays (LHCb 2025); the CKM phase is now the established Standard Model mechanism (Nobel Prize 2008). Add an update callout and soften "no one has yet found a natural way".
+- [Links] The parenthetical "among the 'stable' particles only $D^0\bar D^0$ and $B^0\bar B^0$ share the property" should also list $B_s^0\bar B_s^0$, which has the fastest oscillation ($\Delta m_s\approx17.8\,\mathrm{ps}^{-1}$).
+- [Graph] Plot the decay-rate fractions $e^{-t/\tau_S}$ and $e^{-t/\tau_L}$ (normalised, log scale) for a $K^0$ beam versus proper time $0$–$50\,\tau_S$, together with the $2\pi$ rate $|e^{-t/2\tau_S}+\epsilon\,e^{-t/2\tau_L}|^2$ with $|\epsilon|=2.2\times10^{-3}$, showing the long-time $2\pi$ tail that Cronin and Fitch saw.
+- [Manim] Animate strangeness oscillation of a $K^0$ beam: the $K^0$ and $\bar K^0$ probabilities $\tfrac14[e^{-t/\tau_S}+e^{-t/\tau_L}\pm2e^{-t/2\tau_S-t/2\tau_L}\cos(\Delta m\,t)]$ evolving along the beam while the $K_S$ component dies off.
+- [Simplify] In "$K_L$ semileptonic decays", spell out that the asymmetry $\delta_L=(\Gamma^+-\Gamma^-)/(\Gamma^++\Gamma^-)\approx2\,\mathrm{Re}\,\epsilon\approx3.3\times10^{-3}$, linking the two measured numbers.

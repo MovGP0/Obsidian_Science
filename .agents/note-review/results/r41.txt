@@ -1,0 +1,179 @@
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/04 Symmetries/4.9 Time Reversal and the TCP Theorem.md
+priority: medium
+graph: no
+manim: no
+summary: A faithful, readable transcription of Griffiths' 1987 discussion, but its experimental statements are badly dated and it gives no concrete transformation rules for P and T.
+- [Correctness] Eq. (4.76) and "As of 1985, no experiment has shown direct evidence of T violation" are outdated: the current neutron EDM limit is $\lvert d_n\rvert<1.8\times10^{-26}\,e\,\mathrm{cm}$ (PSI, 2020), and CPLEAR (1998, $K^0\leftrightarrow\bar K^0$) and BaBar (2012, entangled $B$ mesons) observed T violation directly; add a dated update callout.
+- [Simplify] Qualify "all particles are eigenstates of $P$": this holds for intrinsic parity of a particle at rest; also say plainly that $T$ is antiunitary, which is why no $T$ eigenvalue can be multiplied like $P$ or $C$ numbers.
+- [Intuition] Add a small table of how $\mathbf x,\mathbf p,\mathbf s,\mathbf E,\mathbf B,\mathbf d$ transform under $P$ and $T$ so that the EDM footnote argument ($\mathbf d\parallel\mathbf s$ violates both) becomes a one-line check.
+- [Links] Link the Fitch–Cronin sentence to [[4.8 CP Violation]] and the detailed-balance remark to a later cross-section note.
+- [Structure] Split the long paragraphs under headings: detailed balance tests, EDM tests, the TCP theorem and its tests (mass/lifetime equality).
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/04 Symmetries/4.B References and Notes.md
+priority: low
+graph: no
+manim: no
+summary: Reference list; correct and complete, and the bag-model estimate in note 9 checks out ($2.5\cdot197/1.5\approx330$ MeV).
+- [Structure] No change needed; optionally add a one-line callout that the references date from the 1980s and point to the current PDG review for updated values.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/04 Symmetries/4.P Problems.md
+priority: low
+graph: no
+manim: no
+summary: Clean problem list; only the quantity table has a symbol issue.
+- [Correctness] The physical-quantities table assigns $\mechanical{m}$ both to the electron mass (Problem 4.8) and to the projection quantum number in the ladder-operator formula (Problem 4.23); list them as separate rows or write the projection as $m_s$ in 4.23.
+- [Links] Link the cited equations and examples (Example 4.1/4.2, eq. 4.12, eq. 4.28, Figure 4.6) to their notes (4.3 Addition of Angular Momenta, 4.4 Spin 1-2, 4.5 Flavor Symmetries) so problems can be solved from the vault.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/05 Bound States/5.1 The Schrödinger Equation for a Central Potential.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct and well motivated review (all spherical harmonics in Table 5.1 check out), but long and without any visual of the centrifugal barrier or the angular functions.
+- [Correctness] "hadrons made out of heavy quarks ($c,b$, and $t$)" and the later "substantially less than $c,b$, and $t$": the top quark decays ($\tau\approx5\times10^{-25}$ s) before it can form hadrons, so drop $t$ or add a footnote.
+- [Graph] Plot the effective radial potential $V_{\mathrm{eff}}(r)=-1/r+\ell(\ell+1)/(2r^2)$ in atomic units for $\ell=0,1,2$, $r\in[0.2,20]$, $y\in[-1,0.5]$, to show the centrifugal barrier of eq. (5.24).
+- [Graph] Add polar plots of $\lvert Y_l^{m}(\theta)\rvert^2$ for $(l,m)=(0,0),(1,0),(1,1),(2,0),(2,1),(2,2)$ beside Table 5.1.
+- [Example] Show the one-line step from (5.16) to (5.24): with $u=rR$, $\frac{1}{r^2}\frac{d}{dr}(r^2R')=u''/r$.
+- [Simplify] Move the italic chapter preface to the chapter hub and state early that for two-body systems $m$ means the reduced mass (see 5.6).
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/05 Bound States/5.10 Baryon Masses and Magnetic Moments.md
+priority: high
+graph: yes
+manim: no
+summary: The derivations are clear, but the note contains a swapped table row, a wrong prefactor, a missing sign, and inconsistent quark masses.
+- [Correctness] Table 5.6, $\Lambda$ row is swapped: with $m_u=363$, $m_s=538$, $A'\hbar^2/m_u^2=200$ MeV, eq. (5.132) gives $1264-150=1114$ MeV (calculated), while the observed mass is 1116 MeV; the row should read Calculated 1114, Observed 1116.
+- [Correctness] Example 5.3: the contribution is written $(2/3\sqrt2)^2\,(\hbar/2)\sum\langle\cdots\rangle$; by eq. (5.117) the prefactor must be $2/\hbar$, otherwise the result $\tfrac29(2\mu_u-\mu_d)$ does not follow (dimensions are off by $\hbar^2$).
+- [Correctness] After eq. (5.118) the experimental value is quoted as $0.68497945$; the ratio $\mu_n/\mu_p$ is negative, $-0.68497945$.
+- [Correctness] The Table 5.5 predictions (2.79, −1.86, …) require $m_u=m_d\approx336$ and $m_s\approx540$ MeV; the Table 4.4 baryon masses the text cites ($363$, $538$) give $\mu_p\approx2.59$, $\mu_n\approx-1.72$; state the masses actually used.
+- [Correctness] Experimental moments are 1981 values: current PDG gives $\Sigma^+=2.458\pm0.010$, $\Sigma^-=-1.160\pm0.025$, $\Xi^0=-1.250\pm0.014$, $\Xi^-=-0.6507\pm0.0025$, $\Lambda=-0.613$; also footnote "No decuplet moments have been measured" is outdated ($\mu_{\Omega^-}=-2.02\pm0.05\,\mu_N$).
+- [Graph] Dot plot of predicted versus measured values per baryon (Table 5.5 moments in $\mu_N$, $y\in[-2,3]$; Table 5.6 masses, $y\in[900,1700]$ MeV) to show the quality of the fit.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/05 Bound States/5.2 The Hydrogen Atom.md
+priority: high
+graph: yes
+manim: no
+summary: Clear overview of the hydrogen spectrum, but the Rydberg constant formula is dimensionally wrong.
+- [Correctness] Eq. (5.34) $R=m e^4 c/(4\pi\hbar^3)$ has the wrong dimension; from (5.32) divided by $hc$ it must be $R=m e^4/(4\pi c\hbar^3)$ (Gaussian), which gives $1.097\times10^5\,\mathrm{cm^{-1}}$.
+- [Graph] Energy-level plot $E_n=-13.6/n^2$ eV for $n=1\ldots6$ with arrows for the Lyman ($n_f=1$), Balmer ($n_f=2$) and Paschen ($n_f=3$) series, as a native supplement to the raster Fig. 5.1.
+- [Graph] Plot radial probability densities $r^2\lvert R_{nl}\rvert^2$ for $1s,2s,2p,3s,3p,3d$ versus $r/a\in[0,25]$ to make (5.28) concrete.
+- [Example] Add a worked Balmer-alpha line: $1/\lambda=R(1/4-1/9)$ gives $\lambda=656$ nm.
+- [Simplify] Note that (5.28) uses the old Laguerre convention $L^p_{q-p}$ of (5.30), which differs from the modern one in normalization, so readers comparing with current texts are not confused.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/05 Bound States/5.3 Fine Structure.md
+priority: low
+graph: no
+manim: no
+summary: Short hub that introduces first-order perturbation theory clearly.
+- [Simplify] The state label $j$ in (5.35) clashes with the total angular momentum $j$ used in the subnotes; rename the generic label (for example $k$).
+- [Intuition] Add one sentence that the hydrogen levels are degenerate, so (5.35) is valid only in a basis that diagonalizes $\Delta H$ (the $n,l,j,m_j$ states used in 5.3.2).
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/05 Bound States/5.3.1 The Relativistic Correction.md
+priority: high
+graph: no
+manim: no
+summary: Short, clear derivation, but the final result has the wrong power of $n$.
+- [Correctness] Eq. (5.42) prefactor $1/(4n^2)$ is wrong; inserting (5.40), (5.41) and $E_n=-\alpha^2mc^2/2n^2$ into (5.39) gives $\Delta E_{\mathrm{rel}}=-\alpha^4mc^2\frac{1}{4n^4}\left[\frac{2n}{l+1/2}-\frac32\right]$.
+- [Example] Show the intermediate step $E_n^2-2E_n\langle V\rangle+\langle V^2\rangle=\alpha^4m^2c^4\left[\frac{1}{(l+1/2)n^3}-\frac{3}{4n^4}\right]$ so readers can verify (5.42).
+- [Structure] The note lacks the source_pdf/source_page frontmatter that sibling notes carry; add it for consistency.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/05 Bound States/5.3.2 Spin-Orbit Coupling.md
+priority: high
+graph: yes
+manim: no
+summary: Good physical explanation with a native level diagram, but the combined fine-structure formula has the wrong power of $n$ and one symbol clash.
+- [Correctness] Eq. (5.52) prefactor $1/(4n^2)$ must be $1/(4n^4)$: $\Delta E_{\mathrm{fs}}=-\alpha^4mc^2\frac{1}{4n^4}\left[\frac{2n}{j+1/2}-\frac32\right]$ (check: $n=2$, $j=1/2$ gives $-\tfrac{5}{128}\alpha^4mc^2$, the Dirac result).
+- [Correctness] The torque footnote uses $\magnetic{\mathbf m}$ for the magnetic moment while $\mechanical{m}$ is the electron mass in the same note; use $\boldsymbol\mu$ as in (5.45).
+- [Graph] Redraw Fig. 5.2 to scale for $n=2,3$ using (5.52) (shifts in units of $\alpha^4mc^2$), or add a small plot of $\Delta E_{\mathrm{fs}}$ versus $j$ for $n=1\ldots4$; the current diagram is admittedly not to scale (the n=4 shift is drawn larger than the n=2 shift).
+- [Example] Add the numerical $n=2$ splitting: $E(2P_{3/2})-E(2P_{1/2})=\alpha^4mc^2/32=4.5\times10^{-5}$ eV (10.9 GHz).
+- [Intuition] Explain in one sentence why the Thomas factor 1/2 appears (rotating rest frame of the accelerated electron) before quoting (5.47).
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/05 Bound States/5.4 The Lamb Shift.md
+priority: medium
+graph: yes
+manim: no
+summary: Clear qualitative account of radiative corrections, but no numbers show the size of the effect.
+- [Example] Evaluate the $2S_{1/2}-2P_{1/2}$ gap from (5.53)–(5.54): $\frac{\alpha^5mc^2}{32}\left[k(2,0)+\frac{1}{1.5\pi}-k(2,1)\right]\approx4.4\times10^{-6}$ eV, i.e. about 1.05 GHz versus the measured 1057.8 MHz.
+- [Graph] Native level diagram for $n=2$: Bohr level, fine-structure split into $j=1/2,3/2$, and the Lamb split of $2S_{1/2}$ above $2P_{1/2}$, with the energy gaps labeled.
+- [Intuition] Add Welton's picture: vacuum fluctuations smear the electron position, which matters most where $\psi(0)\neq0$, so $S$ states are raised most.
+- [Links] Link "Figure 5.2" and "fine structure formula (5.52)" to [[5.3.2 Spin-Orbit Coupling]].
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/05 Bound States/5.5 Hyperfine Structure.md
+priority: medium
+graph: no
+manim: no
+summary: Careful and correct derivation (5.64, 5.65, 5.68, 5.69 and the 21.1 cm result all check out), but long and with one symbol clash.
+- [Correctness] The delta-function footnote uses $\epsilon$ for the radius of the small sphere while $\epsilon$ is the hyperfine gap in (5.65)–(5.66); rename the radius (for example $\delta r$).
+- [Example] Give the numbers behind (5.66): $\alpha^4mc^2=1.45\times10^{-3}$ eV, multiplied by $(m/m_p)\cdot8\gamma_p/3$ gives $\epsilon=5.9\times10^{-6}$ eV, $\nu=1420$ MHz, $\lambda=21.1$ cm.
+- [Intuition] Explain the sign: the electron moment is antiparallel to its spin and the contact field is parallel to $\boldsymbol\mu_p$, so the singlet (spins antiparallel, moments parallel) lies lower.
+- [Simplify] Put a short roadmap before (5.56): two interactions (nuclear spin-orbit, spin-spin), then the $l=0$ case (contact term only), then $l\neq0$ (contact term vanishes).
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/05 Bound States/5.6 Positronium.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct and informative (formulas 5.75–5.84 check, including the $7/12$ ground-state splitting and the 125 ps lifetime), but dense and with a symbol clash.
+- [Correctness] In (5.80) $n$ denotes the number of photons while $\mechanical{n}$ is the principal quantum number in the same section; use $N_\gamma$ for the photon count.
+- [Simplify] The terminology footnote is garbled ("except the pair annihilation term (see below) including the spin-spin …"); rewrite as "all perturbations of order $\alpha^4mc^2$ (except the pair-annihilation term, see below), including the spin-spin and positron spin-orbit couplings".
+- [Example] Work out $n=1$ from (5.77)–(5.79): singlet $-\tfrac{21}{64}$, triplet $+\tfrac{1}{192}+\tfrac14$ in units of $\alpha^4mc^2$, so the gap is $\tfrac{7}{12}\alpha^4mc^2=8.45\times10^{-4}$ eV (about 204 GHz, measured 203.4 GHz).
+- [Graph] Native to-scale level diagram of the $n=1$ and $n=2$ positronium states from (5.77)–(5.79), as a complement to the raster Fig. 5.7.
+- [Intuition] Add one sentence on why $e^+e^-\to\gamma$ is forbidden (energy-momentum conservation for one massless photon), answering the question posed in the text.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/05 Bound States/5.7 Quarkonium.md
+priority: medium
+graph: yes
+manim: no
+summary: Engaging narrative with a native level-spacing figure, but several statements are outdated and one table entry does not reproduce.
+- [Correctness] Table 5.2, $F_0=1500$ MeV/fm, $E_2$: solving the radial equation with $\mu=750$ MeV and $\alpha_s=0.2$ gives $E_2\approx1464$ MeV, not 1480 (all other entries reproduce within about 5 MeV); check the source value.
+- [Correctness] Outdated claims: the $2^1P_1$ state ($h_c(3525)$) was observed in 2005; top quarks decay ($\Gamma_t\approx1.4$ GeV) before forming toponium or $c\bar t$, $b\bar t$ bound states, so the closing paragraphs on toponium need a dated note.
+- [Graph] Plot $V(r)=-\frac43\alpha_s\hbar c/r+F_0r$ for $\alpha_s=0.2$, $F_0=900$ MeV/fm, $r\in[0.05,2]$ fm, with the Coulomb and linear parts dashed.
+- [Simplify] Clarify the "16 tons": $900\,\mathrm{MeV/fm}\approx1.44\times10^5$ N, which is 16 short tons (14.7 metric tonnes-force).
+- [Intuition] Add the scaling argument for the level spacing ($\propto m$ for Coulomb, $m^{-1/3}$ for linear, $m^0$ for logarithmic) as a small table next to Fig. 5.10.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/05 Bound States/5.8 Light Quark Mesons.md
+priority: medium
+graph: yes
+manim: no
+summary: Clear construction of the meson flavor states and mass formula (Table 5.3 reproduces), but one wrong statement about SU(2) singlets.
+- [Correctness] "in exactly the same sense that the $\pi^0$ is a singlet under $SU(2)$" is wrong: $\pi^0$ is the $I_3=0$ member of the isotriplet; the $SU(2)$ singlet is $(u\bar u+d\bar d)/\sqrt2$ of eq. (5.90).
+- [Example] Show one row of Table 5.3 explicitly: $M_\pi=620-\tfrac34\cdot4\cdot160=140$ MeV, $M_K=793-480\cdot310/483\approx485$ MeV, $M_\eta=\tfrac13M_{u\bar u}+\tfrac23M_{s\bar s}=559$ MeV.
+- [Graph] Plot calculated versus observed masses of Table 5.3 (meson on x, mass 0–1100 MeV on y) to show the 1% agreement.
+- [Simplify] Replace the 1980s names "$D$ and $E$" mesons by current names ($f_1(1285)$, $f_1(1420)$/$\eta(1405)$) or remove the remark.
+- [Intuition] Mention the modern pseudoscalar mixing angle (about $-11^\circ$ to $-20^\circ$) versus ideal mixing ($\omega$, $\phi$) to explain why (5.92)–(5.93) are approximate.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/05 Bound States/5.9 Baryons.md
+priority: medium
+graph: no
+manim: no
+summary: Correct and thorough (Examples 5.1, 5.2 and eq. 5.105 check out), but very long and some experimental remarks are dated.
+- [Correctness] Outdated: "it is hard enough to make a baryon with one heavy quark" (doubly charmed $\Xi_{cc}^{++}$ observed by LHCb in 2017), and "$cbt$" baryons cannot form because the top quark decays before hadronizing.
+- [Correctness] Table 5.4 uses 1981 resonance names that differ from current PDG: $N(1688)\to N(1680)$, $N(1470)\to N(1440)$, $\Delta(1690)\to\Delta(1600)$, $\Delta(1890)\to\Delta(1905)$; add a note that the table is historical.
+- [Simplify] The quantity table lists $\psi_A$, but the prose never defines it; state in the text that $\psi_A$ is the totally antisymmetric flavor singlet shown in the diagrams.
+- [Structure] Add subheadings: spin combinations, Pauli principle, flavor multiplets, color, octet and decuplet wave functions.
+- [Example] After (5.105), write out the check $\lvert\rangle_{12}+\lvert\rangle_{23}=(\uparrow\downarrow\uparrow-\downarrow\uparrow\uparrow+\uparrow\uparrow\downarrow-\uparrow\downarrow\uparrow)/\sqrt2=\lvert\rangle_{13}$.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/05 Bound States/5.B References and Notes.md
+priority: low
+graph: no
+manim: no
+summary: Reference list; no issues found.
+- [Structure] No change needed.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/05 Bound States/5.P Problems.md
+priority: low
+graph: no
+manim: no
+summary: Clean problem list with one wrong hint and a few dated remarks.
+- [Correctness] Problem 5.22 hint: from eq. (5.92) the $\eta$ is $\tfrac16u\bar u$, $\tfrac16d\bar d$ and $\tfrac23s\bar s$ (probabilities sum to 1), not $\tfrac13s\bar s$.
+- [Correctness] Problem 5.23(b) "only $B(b\bar u)$ and $\Upsilon(b\bar b)$ have been detected" is outdated ($B^*$, $B_s$, $B_s^*$, $B_c$, $\eta_b$ are observed), and the $F$, $F^*$ mesons are now called $D_s$, $D_s^*$.
+- [Correctness] Symbol clashes: the quantity table gives $\mechanical{m}$ as both projection quantum number and mass, and Problem 5.12 uses $\alpha$ for a proportionality constant next to the fine-structure $\alpha$; rename (for example $m_l$ and $k$).
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/06 The Feynman Calculus/6.1 Lifetimes and Cross Sections.md
+priority: medium
+graph: yes
+manim: yes
+summary: Clear and correct introduction to decay rates and cross sections (Examples 6.1–6.4 check), which would profit from plots and a trajectory animation.
+- [Simplify] The text calls the incident flux (particles per area per time) "luminosity"; add a note that in accelerator usage luminosity is flux times the number of target particles, so "event rate = cross section × luminosity" holds in that sense.
+- [Simplify] $dN$ means a number of decays in (6.1) but a rate per unit time in the beam formula; use a distinct symbol (for example $d\dot N$) for the scattered rate.
+- [Graph] Plot $D(\theta)$ for hard-sphere ($R^2/4$, constant) and Rutherford ($\propto1/\sin^4(\theta/2)$, scaled to equal value at $\theta=90^\circ$) for $\theta\in[5^\circ,180^\circ]$ on a log $y$ axis.
+- [Graph] Plot $N(t)/N_0=e^{-t/\tau}$ for $t\in[0,5\tau]$ with $t=\tau$ ($1/e$) marked, next to eqs. (6.2)–(6.3).
+- [Manim] Animate a row of incident particles with evenly spaced impact parameters bouncing off a hard sphere and, separately, following Coulomb hyperbolae, so the $b\to\theta$ mapping and the area-to-solid-angle idea of Fig. 6.3 are seen directly.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/06 The Feynman Calculus/6.2 The Golden Rule.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct derivations of the two-body decay and scattering formulas (6.23, 6.30–6.32, 6.37, 6.42 check), with two transcription slips.
+- [Correctness] In (6.25) the second denominator root reads $\sqrt{m_3^2c^2+\mathbf p_2^2}$; after the substitution it must be $\sqrt{m_3^2c^2+\rho^2}$.
+- [Correctness] After (6.41): "the same as in equation (6.25), with $m_2\to m_4$ and $m_1\to(E_1+E_2)/c^2$" should read $m_2\to m_3$, $m_3\to m_4$, $m_1\to(E_1+E_2)/c^2$.
+- [Example] Apply (6.31)–(6.32) to $\pi^+\to\mu^++\nu_\mu$: $\lvert\mathbf p\rvert=(m_\pi^2-m_\mu^2)c/(2m_\pi)=29.8$ MeV/c.
+- [Graph] Plot $\lvert\mathbf p\rvert/(m_1c)$ from (6.31) versus $m_2/m_1\in[0,1]$ for $m_3=0$ and versus $m_2/m_1\in[0,0.5]$ for $m_3=m_2$, showing the closing of phase space at threshold.
+- [Intuition] Explain that $d^3\mathbf p/(2E)$ is the Lorentz-invariant phase-space element, which is why the factors are grouped as in (6.15).
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/06 The Feynman Calculus/6.3 The Feynman Rules for a Toy Theory.md
+priority: low
+graph: no
+manim: no
+summary: Clear statement of the six ABC-theory rules; correct, but abstract until the next note.
+- [Example] Apply the rules at once to the lowest-order $A\to B+C$ diagram: one vertex gives $-ig(2\pi)^4\delta^4(p_1-p_2-p_3)$, no internal lines, so $\mathcal M=g$.
+- [Intuition] Add one sentence on why the propagator $i/(q^2-m^2c^2)$ grows as $q^2\to m^2c^2$ (virtual particle near its mass shell, origin of resonances).
+- [Simplify] Connect the dimension of $g$ (momentum) to eq. (6.44): a three-line amplitude has dimension $(mc)^{1}$, which is consistent with $\mathcal M=g$.

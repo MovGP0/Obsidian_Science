@@ -1,0 +1,576 @@
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/09 Time Dilation and the Twin-Paradox/09.07 Experiments on Motional Time Dilation.md
+priority: low
+graph: no
+manim: no
+summary: Short, clear hub-style introduction that separates clock-comparison logic from interpretation; no technical content to correct.
+- [Structure] The "Physical question and model" paragraph lists three experiment classes (particle survival, spectroscopy, reunion clocks); add one-line links to [[09.07.01 Time Dilation of Unstable Particles]], [[09.07.02 Experiments on Atomic Systems]] and [[09.07.03 Experiments on the Comparison of Atomic Clocks]] so the hub actually routes the reader.
+- [Simplify] "A difference can arise from either clock changing rate or their rates being unequal" is circular; rephrase as "a measured difference only tells you the two accumulated times differ, not which clock's rate changed".
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/09 Time Dilation and the Twin-Paradox/09.07.01 Time Dilation of Unstable Particles.md
+priority: medium
+graph: yes
+manim: no
+summary: Readable historical account, but the displayed velocity-composition expansion and (9.12) are wrong at leading order and overstate the predicted asymmetry by roughly a factor of seven.
+- [Correctness] In the expansion $\mechanical{v}'\approx\mechanical{v}\pm\mechanical{u}^2/\mechanical{c}$: expanding $(\mechanical{v}\pm\mechanical{u})(1\mp\mechanical{u}/\mechanical{c})$ at $\mechanical{v}\approx\mechanical{c}$ gives $\mechanical{v}-\mechanical{u}^2/\mechanical{c}$ for BOTH signs; the exact composition gives $\mechanical{v}'-\mechanical{v}=\pm\mechanical{u}(1-\mechanical{v}^2/\mechanical{c}^2)/(1\pm\mechanical{u}\mechanical{v}/\mechanical{c}^2)$, i.e. a shift of order $\pm\mechanical{u}/\mechanical{\gamma}^2$, not $\pm\mechanical{u}^2/\mechanical{c}$.
+- [Correctness] Eq. (9.12) should follow from the exact identity $1-\mechanical{v}'^2/\mechanical{c}^2=(1-\mechanical{v}^2/\mechanical{c}^2)(1-\mechanical{u}^2/\mechanical{c}^2)/(1\pm\mechanical{u}\mechanical{v}/\mechanical{c}^2)^2$, giving $\mechanical{\Gamma}_{\mathrm{Ab}}\approx\mechanical{\Gamma}_{\mathrm{STR}}(1\mp\mechanical{u}\mechanical{v}/\mechanical{c}^2)$; for $\mechanical{u}=400\,\unit{km/s}$ the asymmetry is about $\pm0.13\%$ independent of $\mechanical{\gamma}$, not the $\approx\pm0.9\%$ implied by $\sqrt{1\mp2\mechanical{\gamma}^2\mechanical{u}^2/\mechanical{c}^2}$ at $\mechanical{\gamma}=70$. State this explicitly instead of only the generic caveat in "Interpretation and checks".
+- [Graph] Plot the fractional asymmetry $|\mechanical{\Gamma}_{\mathrm{Ab}}/\mechanical{\Gamma}_{\mathrm{STR}}-1|$ against $\mechanical{\gamma}\in[1,100]$ for $\mechanical{u}=370\,\unit{km/s}$, comparing the printed formula $\sqrt{1+2\mechanical{\gamma}^2\mechanical{u}^2/\mechanical{c}^2}-1$ with the exact $\mechanical{u}\mechanical{v}/\mechanical{c}^2$ result, to show visually why the printed expansion overstates the effect.
+- [Example] Add a worked muon number: $\mechanical{\tau}=2.2\,\unit{\mu s}$, $\mechanical{\gamma}=20$, so $\mechanical{\gamma}\mechanical{c}\mechanical{\tau}\approx13\,\unit{km}$ versus $660\,\unit{m}$ without dilation, so the reader sees why atmospheric muons reach the ground.
+- [Correctness] The table lists $t$ as "Creation time" and $\mechanical{\tau}'$ as a lifetime, but the text writes $\mechanical{\tau}'=\mechanical{\tau}\sqrt{1-\mechanical{v}^2/\mechanical{c}^2}$ while the interpretation says the lab lifetime is increased by $\mechanical{\gamma}$; say which of $\mechanical{\tau},\mechanical{\tau}'$ is the proper lifetime so the two statements do not appear to contradict each other.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/09 Time Dilation and the Twin-Paradox/09.07.02 Experiments on Atomic Systems.md
+priority: medium
+graph: yes
+manim: no
+summary: Clear motivation for Ives–Stilwell, but the "STR" forward/backward Doppler formula (9.15) has the wrong second-order sign, which undermines the asymmetry argument.
+- [Correctness] Eq. (9.15) $\signal{\nu}'=\signal{\nu}(1\pm\mechanical{v}/\mechanical{c})\sqrt{1-\mechanical{v}^2/\mechanical{c}^2}$ is not the special-relativistic result for a moving source; the correct lab-frame frequencies are $\signal{\nu}'=\signal{\nu}\sqrt{(1\pm\mechanical{v}/\mechanical{c})/(1\mp\mechanical{v}/\mechanical{c})}\approx\signal{\nu}(1\pm\mechanical{v}/\mechanical{c}+\mechanical{v}^2/(2\mechanical{c}^2))$, i.e. the second-order term is $+\mechanical{v}^2/(2\mechanical{c}^2)$ relative to the static line (equivalently, wavelengths $\lambda_0(1\mp\beta+\beta^2/2)$, the mean-wavelength redshift Ives and Stilwell measured). Flag this in a note or correct it.
+- [Correctness] Eq. (9.13)/(9.14): stating that $\signal{\nu}'=\mechanical{\gamma}\signal{\nu}$ at $\mechanical{\theta}=\pi/2$ "predicts an increased received frequency" is only true when $\mechanical{\theta}$ is measured in the source frame; say which frame defines $\mechanical{\theta}$ (in the lab frame the transverse result is $\signal{\nu}/\mechanical{\gamma}$, a decrease), otherwise the claimed "ambiguity" looks like a contradiction with experiment.
+- [Graph] Plot observed frequency ratio $\signal{\nu}'/\signal{\nu}$ against lab angle $\mechanical{\theta}\in[0,\pi]$ for $\beta=0.01$, comparing the classical moving-source curve $1/(1-\beta\cos\mechanical{\theta})$ with the relativistic $\sqrt{1-\beta^2}/(1-\beta\cos\mechanical{\theta})$, marking the forward, backward and transverse points; this makes the second-order offset visible.
+- [Example] Add the Ives–Stilwell numbers: for $\beta=0.005$ and $H_\beta$ at $486\,\unit{nm}$, the first-order shift is $\pm2.4\,\unit{nm}$ while the mean-wavelength shift is $\lambda_0\beta^2/2\approx0.006\,\unit{nm}$, so the reader sees how small the measured quantity is.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/09 Time Dilation and the Twin-Paradox/09.07.03 Experiments on the Comparison of Atomic Clocks.md
+priority: medium
+graph: no
+manim: yes
+summary: Good bridge to Hafele–Keating, but contains a wrong caesium frequency and a sign error in the left side of (9.18).
+- [Correctness] The caesium hyperfine frequency is $9\,192\,631\,770\,\unit{Hz}\approx9.19\,\unit{GHz}$ (the SI-second definition), not $9.18\,\unit{GHz}$; correct the text and the table row instead of attributing the wrong value to the source.
+- [Correctness] Eq. (9.18) left side "$-\mechanical{v}^2/(2\mechanical{c}^2)-\mechanical{v}_{\mathrm{ref}}^2/(2\mechanical{c}^2)$" must be the difference $-(\mechanical{v}'^2-\mechanical{v}_{\mathrm{ref}}^2)/(2\mechanical{c}^2)$ (transported minus reference); a sum of two dilations cannot produce the $\pm$ cross term on the right.
+- [Correctness] Symbol clash: the sentence after (9.18) says "Over $t$ seconds" but the formula uses $\mechanical{T}$, and $\mechanical{v}$ is used both for the lab-relative transport speed and (in the table) generically; use $\mechanical{T}$ consistently and write the transported clock's absolute velocity as $\mechanical{v}'$.
+- [Manim] Animate Earth seen from above the North Pole with a ground clock and two aircraft clocks circling east and west; show each clock's absolute speed $\mechanical{u}_r\pm\mechanical{v}$ as an arrow and the accumulated time offsets as bars, so the sign of the cross term is visible.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/09 Time Dilation and the Twin-Paradox/09.08 The Hafele-Keating Experiment.md
+priority: medium
+graph: yes
+manim: no
+summary: Detailed and numerically consistent (0.39 ns/(h km), ~48 ns, 386/399 m/s and -185/+104 ns all check), but one attribution is wrong and Table 9.2 hides that its "absolute-frame" row equals Hafele–Keating's own published kinematic prediction.
+- [Correctness] "J. C. Hafele and R. E. Keating of the US Naval Observatory": Hafele was a physicist at Washington University in St. Louis; only Keating was at USNO.
+- [Correctness] Table 9.2 row "Absolute-frame prediction $-185\pm10$, $+104\pm10$" should say these essentially coincide with Hafele and Keating's own published kinematic predictions ($-184\pm18$, $+96\pm10\,\unit{ns}$, computed in the Earth-centred nonrotating frame), and that their total predictions $-40\pm23$ and $+275\pm21\,\unit{ns}$ match the observations; otherwise the reader thinks the standard relativistic calculation predicts the "Einstein" row $-41$, $-49$.
+- [Simplify] The note box about the extra minus sign in (9.19) could be replaced by writing the intended relation $\Delta\mechanical{T}_v=-\int\mechanical{v}^2\,dt/(2\mechanical{c}^2)\approx-\mechanical{T}_f\bar{\mechanical{v}}^2/(2\mechanical{c}^2)$ and noting the source's typo once.
+- [Graph] Bar chart per direction (east, west) with grouped bars: observed O, gravitational G, kinematic O−G, Earth-frame "STR" estimate, and Earth-centred nonrotating-frame prediction, with error bars from Table 9.2.
+- [Correctness] Table "Physical quantities": the latitude row gives unit $\unit{rad}$ but the text and Table 9.1 use degrees; use degrees or convert.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/09 Time Dilation and the Twin-Paradox/09.09 Popular Resolutions of the Twin-Paradox.md
+priority: low
+graph: no
+manim: no
+summary: Brief section hub with a useful three-chart test in "Interpretation and checks"; no errors.
+- [Links] Add links to [[09.09.01 Langevin's Solution in the Acceleration]] and [[09.09.02 Resolution Sans Acceleration]] so the hub routes to its subsections.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/09 Time Dilation and the Twin-Paradox/09.09.01 Langevin's Solution in the Acceleration.md
+priority: medium
+graph: yes
+manim: yes
+summary: Clearly states the author's objection, but leaves the reader without the one-line standard calculation that resolves the asymmetry, so the critique cannot be evaluated.
+- [Example] Add the standard worked case: $\mechanical{v}=0.6\mechanical{c}$, home time $10\,\unit{yr}$, traveller proper time $8\,\unit{yr}$, independent of turnaround duration as it shrinks; this concretises the "limiting case" mentioned in "Interpretation and checks".
+- [Intuition] Explain why the two diagrams are not symmetric: the home worldline is a straight line between the meeting events, the traveller's is bent, and straight timelike lines maximise proper time (reverse triangle inequality); this is the geometric content the note calls "inadvertently arguing for an absolute frame".
+- [Graph] Minkowski diagram with the home worldline, the bent traveller worldline for $\mechanical{v}=0.6\mechanical{c}$, and the traveller's lines of simultaneity just before and after turnaround, showing the jump on the home worldline.
+- [Manim] Animate the traveller's simultaneity line sweeping across the home worldline during a short turnaround, with both clock readouts, to show where the "missing" home-twin time is assigned.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/09 Time Dilation and the Twin-Paradox/09.09.02 Resolution Sans Acceleration.md
+priority: medium
+graph: yes
+manim: yes
+summary: The simultaneity-jump bookkeeping is correct and well explained, but the graph labels per leg are wrong and the source's factor-2 inconsistencies are only flagged, not resolved.
+- [Correctness] Fig. 9.4 labels each leg "T(1 − v²/4c²)"; each leg lasts $\mechanical{T}/2$, so the aged time per leg is $(\mechanical{T}/2)(1-\mechanical{v}^2/(2\mechanical{c}^2))=\mechanical{T}/2-\mechanical{T}\mechanical{v}^2/(4\mechanical{c}^2)$. Fix the labels (the same labels are copied into Fig. 9.5 of [[09.10 Einstein's Gravitational Resolution of the Paradox]]).
+- [Simplify] Replace the note box about the inconsistent factor $1/2$ with the corrected statement: the reunion deficit is $\Delta\mechanical{T}=-\mechanical{T}\mechanical{v}^2/(2\mechanical{c}^2)=-\mechanical{L}\mechanical{v}/\mechanical{c}^2$ and the simultaneity jump is $2\mechanical{L}\mechanical{v}/\mechanical{c}^2$; then the "Doppler coincidence" paragraph can state the correct factor directly.
+- [Correctness] "inertial observer C moving oppositely at relative velocity $-2\mechanical{v}$" is wrong in relativity (relative speed of C to B is $2\mechanical{v}/(1+\mechanical{v}^2/\mechanical{c}^2)$); state C moves at $-\mechanical{v}$ relative to A, which is the intended set-up.
+- [Graph] Replace the schematic Fig. 9.4 by a quantitative Minkowski diagram for $\mechanical{v}=0.6\mechanical{c}$, $\mechanical{T}=10$: A's worldline, B/C legs, and B's simultaneity lines before/after the handover, labelling A's readings 3.2 and 6.8 yr at the jump.
+- [Manim] Animate the A–B–C relay: B and C pass, the reading is copied, and the line of simultaneity jumps on A's worldline, with the three clock readouts updating.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/09 Time Dilation and the Twin-Paradox/09.10 Einstein's Gravitational Resolution of the Paradox.md
+priority: medium
+graph: yes
+manim: no
+summary: Einstein's pseudo-gravitational bookkeeping is correctly reproduced ($\Delta t=2\mechanical{v}\mechanical{L}/\mechanical{c}^2$, net $+\mechanical{T}\mechanical{v}^2/(2\mechanical{c}^2)$), but the editorial callout states the author's reading as historical fact and the figure labels repeat the leg-duration error.
+- [Correctness] The callout "Einstein's twin-paradox resolution admitted that the STR alone was insufficient" is misleading: in the 1918 dialogue, the inertial-frame STR calculation already gives a unique answer; the GTR argument only describes the same result from the traveller's accelerated frame. Attribute the claim to the author or rephrase.
+- [Correctness] Fig. 9.5(a,c) leg labels "T(1 − v²/4c²)" should be $\mechanical{T}/2-\mechanical{T}\mechanical{v}^2/(4\mechanical{c}^2)$ (each leg lasts $\mechanical{T}/2$), as in Fig. 9.4.
+- [Simplify] Replace the middle-panel note about $\mechanical{g}\mechanical{L}/\mechanical{c}^2$ by simply writing the dimensionally correct label $|\mechanical{g}|t\mechanical{L}/\mechanical{c}^2=2\mechanical{v}\mechanical{L}/\mechanical{c}^2=\mechanical{T}\mechanical{v}^2/\mechanical{c}^2$.
+- [Graph] Plot the home clock reading as assigned by the traveller versus traveller proper time for a finite turnaround with $\mechanical{a}=$ constant: slow growth on the legs, steep rise during turnaround (rate $1+\mechanical{a}\mechanical{L}/\mechanical{c}^2$), showing the integrated $2\mechanical{v}\mechanical{L}/\mechanical{c}^2$.
+- [Example] Give numbers: $\mechanical{v}=0.1\mechanical{c}$, $\mechanical{L}=1\,\unit{ly}$: motional deficit $\mechanical{L}\mechanical{v}/\mechanical{c}^2=0.1\,\unit{yr}$ each way-pair, turnaround gain $0.2\,\unit{yr}$, net $+0.1\,\unit{yr}$ for A.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/09 Time Dilation and the Twin-Paradox/09.11 Summary.md
+priority: low
+graph: no
+manim: no
+summary: Faithful chapter summary that clearly marks the author's conclusions; no errors beyond those inherited from 09.08.
+- [Correctness] "Westward clocks returned older ... contrary to the STR as presented here" should add that the standard Earth-centred-inertial relativistic calculation by Hafele and Keating predicted this westward gain ($+275\pm21\,\unit{ns}$ total), so the summary does not imply the experiment contradicted standard relativity.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10 References.md
+priority: low
+graph: no
+manim: no
+summary: Clean reference list with a useful study route; one bibliographic entry is wrong.
+- [Correctness] Ref. 7 should read R. A. Lyttleton, H. Bondi, Proc. R. Soc. Lond. A 252, 313–333 (1959) (author is Lyttleton, journal is Proc. Roy. Soc. A, not Proc. Phys. Soc.).
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.00 Cosmic Relativity - The Theory and Its Primary Fundamental Results.md
+priority: low
+graph: no
+manim: no
+summary: Chapter abstract and introduction; readable, with an outdated curvature/density precision figure.
+- [Correctness] "density close to critical to about 3%" is outdated: Planck 2018 + BAO give $\Omega_k=0.001\pm0.002$, i.e. flatness to a few tenths of a per cent; update the value or mark it as the source's.
+- [Structure] There are two headings ("Lecture account" immediately followed by "Abstract"); drop the empty "Lecture account" heading or nest Abstract/Introduction under it, and add links to the 10.01–10.16 subsections.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.01 The Universe That Determines the Physics of Relativity.md
+priority: low
+graph: yes
+manim: no
+summary: Clear motivational section; the figure caption contradicts the text and current cosmology on the matter-dominated era.
+- [Correctness] The Fig. 10.1 caption says "roughly 13 billion years of slowly expanding, matter-dominated history" whereas the text says ten billion; in ΛCDM, matter dominated only until about 9.8 Gyr after the big bang and dark energy has dominated since; align the caption with the text.
+- [Graph] Replace or supplement the schematic with a plot of the ΛCDM scale factor $a(t)$ for $H_0=67.7$, $\Omega_m=0.31$, $\Omega_\Lambda=0.69$, $t\in[0,14]\,\unit{Gyr}$, with a log-scale inset marking the last $10^4\,\unit{yr}$ to make "civilisation is negligible" quantitative.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.02 A Hypothetical Scenario in Electrodynamics.md
+priority: medium
+graph: no
+manim: no
+summary: Instructive analogy, but the uniform-sphere potential formula is off by a factor of two and the vector potential mixes SI and Gaussian units.
+- [Correctness] The potential at the centre of a uniformly charged sphere is $\electric{\phi}_e=3\electric{Q}/(8\pi\electric{\epsilon}_0\mechanical{R})=\electric{q}\mechanical{R}^2/(2\electric{\epsilon}_0)$, not $3\electric{Q}/(4\pi\electric{\epsilon}_0\mechanical{R})$; with $\electric{q}=10^{-59}\,\unit{C/m^3}$ and $\mechanical{R}=10^{26}\,\unit{m}$ this gives about $6\,\unit{kV}$ (order $10^4\,\unit{V}$ still holds).
+- [Correctness] $\magnetic{\mathbf A}=\mechanical{\mathbf v}\electric{\phi}/\mechanical{c}$ is the Gaussian-unit form; in the SI units used elsewhere in the note (with $\electric{\epsilon}_0$) it is $\magnetic{\mathbf A}=\mechanical{\mathbf v}\electric{\phi}/\mechanical{c}^2$ in $\unit{V\,s/m}$; fix the formula and the table's "unit convention unspecified".
+- [Example] Show the charge-density estimate explicitly: $10^{-27}\,\unit{kg/m^3}/(1.67\times10^{-27}\,\unit{kg})\approx0.6$ protons per $\unit{m^3}$, times $10^{-40}\times1.6\times10^{-19}\,\unit{C}$, giving $\sim10^{-59}\,\unit{C/m^3}$.
+- [Intuition] Add the one-line reason why acceleration creates a force: $\electric{\mathbf E}=-\partial\magnetic{\mathbf A}/\partial t=-(\electric{\phi}/\mechanical{c}^2)\,d\mechanical{\mathbf v}/dt$, so the force $\electric{q}\electric{\mathbf E}$ opposes acceleration like an extra inertia $\electric{q}\electric{\phi}/\mechanical{c}^2$; this is the core of the analogy used in later sections.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.03 A Theory of Relativity and Dynamics Without Postulates.md
+priority: low
+graph: no
+manim: no
+summary: Short programmatic section, clearly written; the interpretation checklist is a good counterweight.
+- [Simplify] "Matter and gravity replace space, time, and matter as physical starting points" lists matter on both sides; rephrase as "Matter and its gravity replace empty space and time as starting points".
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.04 Physics in the Gravitationally Charged Universe.md
+priority: medium
+graph: no
+manim: no
+summary: Clear contrast of empty and matter-filled backgrounds, but presents a constant potential term as producing observable effects, which is false as written.
+- [Correctness] "$\energy{H}=\mechanical{p}^2/(2\mechanical{m})-\mechanical{m}\mechanical{\Phi}_u$ ... Such a Hamiltonian produces observable noninertial effects": a spatially and temporally constant $\mechanical{\Phi}_u$ only shifts $\energy{H}$ by a constant and leaves Hamilton's equations unchanged; say that effects arise only from the velocity-dependent (vector-potential) terms introduced later.
+- [Intuition] Add the electromagnetic analogue explicitly: a uniform charge density at rest gives only $\electric{\phi}$; seen by a moving observer it becomes a current density $-\electric{\rho}\mechanical{\mathbf v}$ with a vector potential, which is exactly the "anisotropy" the note describes.
+- [Correctness] "CMBR ... synchronised throughout the Universe better than one part in $10^5$" conflates temperature anisotropy ($\Delta T/T\sim10^{-5}$) with timing; converting to time needs $|dT/dt|$ (here $T\propto1/a$), so state it as a temperature uniformity, not a synchronisation accuracy.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.05 The Gravitational Foundation of Cosmic Relativity.md
+priority: high
+graph: no
+manim: no
+summary: The key metric derivation is short and easy to follow, but it transforms in the wrong direction, mislabels the result as the moving-frame metric, and contains a Poisson-equation error and a symbol clash.
+- [Correctness] (10.5)–(10.6) declare the primed (moving) interval Minkowskian and rewrite it in unprimed coordinates, so the result is the metric of the moving-frame chart expressed in rest-frame coordinates, not $\mechanical{g}'_{\mu\nu}$; substituting $\mechanical{x}=\mechanical{x}'+\mechanical{v}t'$ into the rest-frame interval (10.3) gives $\mechanical{g}'_{00}=-(1-\mechanical{v}^2/\mechanical{c}^2)$ and $\mechanical{g}'_{0x}=+\mechanical{v}/\mechanical{c}$ (cross term $+2\mechanical{v}\,d\mechanical{x}'dt'$).
+- [Correctness] "spatially homogeneous cosmic potential, $\nabla^2\mechanical{\phi}_u=0$" contradicts Poisson's equation $\nabla^2\mechanical{\phi}=4\pi\mechanical{G}\mechanical{\rho}\neq0$ for uniform density; the intended statement is $\nabla\mechanical{\phi}_u=0$ (no local force), which needs the cosmological boundary argument.
+- [Correctness] Symbol clash: $\mechanical{\phi}$ is the azimuthal coordinate in (10.1) and $\mechanical{\phi}_u$ the cosmic potential, while $\mechanical{\Phi}_u$ is also the cosmic potential later in the note; use $\mechanical{\Phi}_u$ throughout for the potential.
+- [Correctness] "potential scales as $\mechanical{\rho}\mechanical{R}_u^2\propto\mechanical{c}^2(1/t^2)t^2$" drops $\mechanical{G}$; write $\mechanical{\Phi}_u\sim\mechanical{G}\mechanical{\rho}\mechanical{R}_u^2$ with $\mechanical{\rho}\propto1/(\mechanical{G}t^2)$ and $\mechanical{R}_u\propto\mechanical{c}t$, giving $\mechanical{\Phi}_u\propto\mechanical{c}^2$.
+- [Simplify] In (10.6) combine $-\mechanical{v}\,d\mechanical{x}\,dt-\mechanical{v}\,dt\,d\mechanical{x}$ into $-2\mechanical{v}\,d\mechanical{x}\,dt$ and state how the off-diagonal component is read off ($2\mechanical{g}_{0x}\mechanical{c}\,dt\,d\mechanical{x}$), so the reader can verify $\mechanical{g}_{0x}=\mp\mechanical{v}/\mechanical{c}$.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.06 The Primary Results in Cosmic Relativity.md
+priority: low
+graph: no
+manim: no
+summary: Short section hub with a sensible "prediction ledger" check; no change needed beyond navigation.
+- [Links] Add links to the five subsections 10.06.01–10.06.05.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.06.01 The Modification of Duration and Distance.md
+priority: medium
+graph: no
+manim: no
+summary: Concise statement of the author's absolute dilation and contraction; the distance argument is compressed to the point of being hard to follow and inherits the metric-direction issue from 10.05.
+- [Simplify] Spell out the distance argument in three steps: (1) true round-trip time for a body at relative speed $\mechanical{u}$ is $\mechanical{T}'_0$; (2) the moving clock reads $\sqrt{-\mechanical{g}'_{00}}\,\mechanical{T}'_0$; (3) PoR requires the inferred distance $\mechanical{u}\times$reading$/2$ to equal the rest value, so the physical length must shrink by the same factor. As written the reader cannot see which quantity is held fixed.
+- [Correctness] The spatial metric is called $\mechanical{\gamma}_{ab}$, the same letter as the Lorentz factor used in neighbouring notes (10.06.02–10.06.04); rename it (e.g. $h_{ab}$) to avoid a clash in the chapter.
+- [Intuition] Note that (10.8) as written contracts every direction equally, whereas the observed (Lorentz) contraction is only along the motion; the transverse case (used in 10.06.05) should be addressed explicitly, since the interpretation section already hints at this.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.06.02 Interpretation in Terms of the Gravitational Potentials.md
+priority: medium
+graph: yes
+manim: no
+summary: The shell integral and the invariant (10.12) are correct, but the claimed numerical result $\mechanical{\Phi}_u\approx-\mechanical{c}^2$ hides a factor of order 0.75.
+- [Example] Show the number: with $\mechanical{\rho}_c=3\mechanical{H}_0^2/(8\pi\mechanical{G})$ and $\mechanical{R}_u=\mechanical{c}\mechanical{T}_u$, (10.9) gives $|\mechanical{\Phi}_u|=\tfrac34(\mechanical{H}_0\mechanical{T}_u)^2\mechanical{c}^2\approx0.73\,\mechanical{c}^2$ for $\mechanical{H}_0=70$ and $13.8\,\unit{Gyr}$; state that "$\approx$" means order unity.
+- [Simplify] Verify (10.12) in one line for the reader: $\mechanical{\gamma}^2\mechanical{\Phi}_u^2-\mechanical{\gamma}^2\mechanical{v}^2\mechanical{\Phi}_u^2/\mechanical{c}^2=\mechanical{\Phi}_u^2$, and point out it is the Lorentz-invariant norm of a four-vector $(\mechanical{\Phi},\mechanical{\mathbf A})$.
+- [Graph] Plot $|\mechanical{\Phi}_u|/\mechanical{c}^2=2\pi\mechanical{G}\mechanical{\rho}_c\mechanical{R}^2/\mechanical{c}^2$ versus cutoff radius $\mechanical{R}\in[1,20]\,\unit{Gly}$, with horizontal line at 1, to show the cutoff sensitivity stated in "Interpretation and checks".
+- [Correctness] The sentence "The source also writes $\mechanical{A}_i=\mechanical{g}_{0i}/\mechanical{g}_{00}$" gives, with 10.05's components, $(\mechanical{v}_i/\mechanical{c})\mechanical{\gamma}^2$, which is neither dimensionally nor in its $\mechanical{\gamma}$ power equal to (10.11); state this mismatch explicitly in the note box.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.06.03 The Time Dilation of Physical Clocks.md
+priority: low
+graph: no
+manim: no
+summary: Short and clear statement of the author's central identification; consistent with (10.12) and the zero-speed limit.
+- [Intuition] Compare explicitly with ordinary gravitational redshift, $\Delta\mechanical{T}/\mechanical{T}\approx1+\Delta\mechanical{\Phi}/\mechanical{c}^2$ (additive, weak field), versus the multiplicative ratio $\mechanical{\Phi}_0/\mechanical{\Phi}_v$ used here, so the reader sees that the rule is a new assumption, not the GR weak-field formula.
+- [Correctness] The symbol $\mechanical{\lambda}_r$ is introduced for $1/\mechanical{\gamma}$ and never used again; drop it or use it in (10.13).
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.06.04 Cosmic Relativity and the Principle of Relativity.md
+priority: low
+graph: no
+manim: no
+summary: Clear argument that uniform potentials are internally undetectable, with a good interpretation caveat.
+- [Example] Add the contrast case where a uniform vector potential is detectable: a rotating frame (Sagnac), where $\oint\mechanical{\mathbf A}\cdot d\mechanical{\mathbf l}\neq0$ because $\nabla\times\mechanical{\mathbf A}\neq0$; this links forward to [[11.10.02 The Experiments by G. Sagnac]].
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.06.05 The Propagation of Light.md
+priority: medium
+graph: no
+manim: yes
+summary: The perpendicular-light argument is muddled: the round-trip time is misstated and the note fails to show that $\mechanical{c}\sqrt{1-\mechanical{v}^2/\mechanical{c}^2}$ and $\mechanical{c}\pm\mechanical{v}$ are simply the Galilean vector rule.
+- [Correctness] "total duration $\mechanical{T}=\mechanical{L}/\mechanical{c}$" for a two-way trip over $\mechanical{L}_x$ should be $2\mechanical{L}/\mechanical{c}$ (and (10.14) correspondingly $2\mechanical{L}/\mechanical{c}'$); also unify $\mechanical{L}_x$ and $\mechanical{L}$.
+- [Simplify] Resolve the note box: in the cosmic frame the round trip takes $2\mechanical{L}/(\mechanical{c}\sqrt{1-\mechanical{v}^2/\mechanical{c}^2})$; the moving clock runs slow by $\sqrt{1-\mechanical{v}^2/\mechanical{c}^2}$, so it reads $2\mechanical{L}/\mechanical{c}$, unchanged, which is the PoR statement. The two printed factors are coordinate time versus clock reading, not a contradiction.
+- [Intuition] Point out that $\mechanical{c}'=\mechanical{c}\sqrt{1-\mechanical{v}^2/\mechanical{c}^2}$ transverse and $\mechanical{c}\mp\mechanical{v}$ longitudinal are both $|\mechanical{\mathbf c}-\mechanical{\mathbf v}|$ for Galilean vector subtraction; this replaces the claim in "Interpretation and checks" that they are unrelated constructions.
+- [Manim] Animate a light pulse bouncing transversely in an apparatus moving at $\mechanical{v}$ through the cosmic frame: diagonal path in the cosmic frame, vertical path in the apparatus frame with reduced relative speed, plus the slowed clock, ending with equal clock readings at $\mechanical{v}=0$ and $\mechanical{v}\neq0$.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.07 Cosmic Relativity and Dynamics.md
+priority: low
+graph: no
+manim: no
+summary: Short section introduction; the interpretation checklist is apt.
+- [Links] Add a link to [[10.07.01 Laws of Dynamics - Newton's Law of Motion]].
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.07.01 Laws of Dynamics - Newton's Law of Motion.md
+priority: high
+graph: yes
+manim: no
+summary: Central derivation of the chapter, but (10.16)–(10.18) contain sign errors and an extra $\mechanical{\gamma}$, so the reader cannot follow how $\mechanical{F}=\mechanical{\gamma}^3\mechanical{m}\mechanical{a}$ arises.
+- [Correctness] In (10.16), $\frac1{\mechanical{c}}\frac{d}{dt}(\mechanical{m}\mechanical{A}'_i)=+\frac{d}{dt}(\mechanical{\gamma}\mechanical{m}\mechanical{v}_i\mechanical{\Phi}_u/\mechanical{c}^2)$ with $\mechanical{A}'_i=\mechanical{\gamma}\mechanical{v}_i\mechanical{\Phi}_u/\mechanical{c}$, yet it is equated to $-\frac{d}{dt}(\ldots)$, which is then set equal to $+\frac{\mechanical{\Phi}_u}{\mechanical{c}^2}(\ldots)$; at least two signs are inconsistent. Write $\mechanical{F}_{\mathrm{react}}=-\frac{d}{dt}(\mechanical{\gamma}\mechanical{m}\mechanical{v}_i|\mechanical{\Phi}_u|/\mechanical{c}^2)$ and the applied force as its negative.
+- [Correctness] (10.17) "$\frac{\mechanical{\Phi}_u}{\mechanical{c}^2}\mechanical{\gamma}\mechanical{m}\frac{d\mechanical{v}}{dt}=\frac{\mechanical{\Phi}_u}{\mechanical{c}^2}\mechanical{\gamma}\frac{d\mechanical{p}}{dt}$" has an extra $\mechanical{\gamma}$: for transverse acceleration $d\mechanical{p}/dt=\mechanical{\gamma}\mechanical{m}\,d\mechanical{v}/dt$, so the right side should be $(\mechanical{\Phi}_u/\mechanical{c}^2)\,d\mechanical{p}/dt$.
+- [Simplify] Show the longitudinal step explicitly: $\mechanical{\gamma}\mechanical{m}\mechanical{a}+\mechanical{\gamma}^3\mechanical{m}\mechanical{v}^2\mechanical{a}/\mechanical{c}^2=\mechanical{\gamma}^3\mechanical{m}\mechanical{a}[(1-\mechanical{v}^2/\mechanical{c}^2)+\mechanical{v}^2/\mechanical{c}^2]=\mechanical{\gamma}^3\mechanical{m}\mechanical{a}$, and drop the unexplained sign flip at the end of (10.18) (the existing note box can then shrink to one line on $|\mechanical{\Phi}_u|$).
+- [Graph] Plot longitudinal and transverse effective masses $\mechanical{\gamma}^3\mechanical{m}$ and $\mechanical{\gamma}\mechanical{m}$ versus $\mechanical{v}/\mechanical{c}\in[0,0.95]$ to make the direction-dependent inertial response concrete.
+- [Correctness] "$\mechanical{g}_{0i}=-\mechanical{v}_i/\mechanical{c}=\mechanical{A}_i$" conflicts with (10.11) $\mechanical{A}_i=-\mechanical{\gamma}\mechanical{v}_i\mechanical{\Phi}_u/\mechanical{c}$ used earlier in the same note ($\mechanical{A}'_i$); state the normalisation $\mechanical{\Phi}_u/\mechanical{c}^2=1$, $\mechanical{\gamma}\approx1$ under which they agree, or use distinct symbols.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.08 Cosmic Relativity and the Origin of Inertia.md
+priority: low
+graph: no
+manim: no
+summary: Short, clear statement of the inertia hypothesis with a good dimension check.
+- [Example] Relate the approximation $\mechanical{m}_i=\mechanical{G}\mechanical{M}\mechanical{m}/(\mechanical{R}\mechanical{c}^2)$ to (10.9): with $\mechanical{M}=\tfrac43\pi\mechanical{\rho}\mechanical{R}^3$, $2\pi\mechanical{G}\mechanical{\rho}\mechanical{R}^2=\tfrac32\mechanical{G}\mechanical{M}/\mechanical{R}$, so the two estimates differ by a factor 3/2; state this so "approximately" is quantified.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.08.01 Cosmic Relativity and the Inertial Forces.md
+priority: low
+graph: no
+manim: no
+summary: Short section introduction; no change needed beyond navigation.
+- [Links] Add links to [[10.08.02 The Centrifugal Force]] and [[10.08.03 The Coriolis Force]].
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.08.02 The Centrifugal Force.md
+priority: medium
+graph: no
+manim: yes
+summary: The broken cross-product chain in (10.21) is correctly flagged, but the note never gives the correct short derivation, leaving the section without usable mathematics.
+- [Simplify] Replace (10.21) with the correct chain: $d\mechanical{\mathbf v}/dt=\mechanical{v}\,d\hat{\mathbf v}/dt=(\mechanical{v}^2/\mechanical{r})\hat{\mathbf n}$, so $\mechanical{F}_g=-(|\mechanical{\Phi}_u|/\mechanical{c}^2)\mechanical{\gamma}\mechanical{m}(\mechanical{v}^2/\mechanical{r})\hat{\mathbf n}$, i.e. magnitude $\mechanical{\gamma}\mechanical{m}\mechanical{v}^2/\mechanical{r}$ pointing outward; keep the source chain only in the note box.
+- [Correctness] (10.20) carries the sign $-\mechanical{\Phi}_u/\mechanical{c}^2$ while (10.10) gives $\mechanical{\Phi}_u\approx-\mechanical{c}^2$, which would make the reaction point inward (centripetal); use $|\mechanical{\Phi}_u|$ so the result is outward.
+- [Manim] Animate a mass on a circular path with the velocity arrow rotating, the inward rate of change $d\mechanical{\mathbf v}/dt$, and the opposing outward reaction, to show centrifugal force as reaction to the change of velocity direction.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.08.03 The Coriolis Force.md
+priority: high
+graph: no
+manim: yes
+summary: Engaging current–current narrative, but the Coriolis force is given with the wrong sign throughout, and (10.22) mixes $1/\mechanical{c}$ and $1/\mechanical{c}^2$.
+- [Correctness] The Coriolis force in a frame rotating at $\mechanical{\boldsymbol\Omega}$ is $\mechanical{\mathbf F}=-2\mechanical{m}\mechanical{\boldsymbol\Omega}\times\mechanical{\mathbf u}=+2\mechanical{m}\mechanical{\mathbf u}\times\mechanical{\boldsymbol\Omega}$; the note's $-2\mechanical{m}_i\mechanical{\mathbf u}\times\mechanical{\boldsymbol\Omega}$ (in (10.22), the text and Fig. 10.4 caption, and $\mechanical{\mathbf a}_k=-2\mechanical{\mathbf u}\times\mechanical{\boldsymbol\Omega}$) has the opposite sign and would deflect northern-hemisphere winds to the left. The note's own "Interpretation and checks" states the correct form.
+- [Correctness] In (10.22), $\mechanical{\mathbf A}_g=-\mechanical{\gamma}\mechanical{\Phi}_u\mechanical{\mathbf v}/\mechanical{c}$ gives $\nabla\times\mechanical{\mathbf A}_g=-(\mechanical{\gamma}\mechanical{\Phi}_u/\mechanical{c})\nabla\times\mechanical{\mathbf v}$, but the next step writes $\mechanical{\gamma}\mechanical{\Phi}_u/\mechanical{c}^2$; fix the power of $\mechanical{c}$ (and the coupling's units) and show $\nabla\times(\mechanical{\boldsymbol\Omega}\times\mechanical{\mathbf r})=2\mechanical{\boldsymbol\Omega}$ explicitly.
+- [Intuition] Add a one-line check that the corrected sign deflects motion to the right of the velocity for counterclockwise rotation (northern hemisphere), matching 10.09.
+- [Manim] Animate a puck moving straight in the inertial frame while the turntable rotates beneath it, then switch to the rotating view showing the curved path, with the Coriolis arrow $2\mechanical{m}\mechanical{\mathbf u}\times\mechanical{\boldsymbol\Omega}$ attached.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.09 The Twist in Tropical Cyclones.md
+priority: medium
+graph: yes
+manim: yes
+summary: Correct hemispheric chiralities and correct Eötvös-effect direction for equatorial winds, but the field component at latitude loses its factor 2 and an undefined $\mechanical{\Phi}_i$ appears.
+- [Correctness] "Its component at latitude $\mechanical{\lambda}$ is $\mechanical{\Omega}\sin\mechanical{\lambda}$" contradicts $\mechanical{\mathbf B}_g\approx-2\mechanical{\boldsymbol\Omega}$ and the caption; the vertical component is $2\mechanical{\Omega}\sin\mechanical{\lambda}$ (the Coriolis parameter $f$).
+- [Correctness] $\mechanical{\Phi}_i$ in the $\mechanical{\mathbf B}_g$ formula is undefined (presumably $\mechanical{\Phi}_u$), and the force $-2\mechanical{m}\mechanical{\mathbf v}\times\mechanical{\boldsymbol\Omega}\sin\mechanical{\lambda}$ inherits the sign error of 10.08.03; the standard horizontal Coriolis force is $-\mechanical{m}f\,\hat{\mathbf z}\times\mechanical{\mathbf v}$ with $f=2\mechanical{\Omega}\sin\mechanical{\lambda}$.
+- [Example] Give the magnitude: at $20^\circ$ N, $f=5\times10^{-5}\,\unit{s^{-1}}$; for $10\,\unit{m/s}$ wind the Coriolis acceleration is $5\times10^{-4}\,\unit{m/s^2}$, and the Rossby number $U/(fL)$ explains why cyclones (L ~ 500 km) feel it but sinks do not.
+- [Graph] Plot $f(\mechanical{\lambda})=2\mechanical{\Omega}\sin\mechanical{\lambda}$ for $\mechanical{\lambda}\in[-90^\circ,90^\circ]$, shading the $\pm5^\circ$ band where tropical cyclones rarely form.
+- [Manim] Animate air parcels converging radially on a low-pressure centre in each hemisphere, deflected right (north) or left (south), forming counterclockwise and clockwise spirals.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.10 Cosmic Relativity and the Principles of Equivalence.md
+priority: low
+graph: no
+manim: no
+summary: Short section introduction, clear and with a good caveat on conditional results.
+- [Links] Add links to the four subsections 10.10.01–10.10.04.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.10.01 Newton's Law and the WEP.md
+priority: low
+graph: no
+manim: no
+summary: Short and clear; the interpretation section correctly shows why Newton's law alone does not imply WEP.
+- [Example] Make the contrast concrete with a formula: in a field $\electric{\mathbf E}$ the acceleration is $(\electric{q}/\mechanical{m}_i)\electric{\mathbf E}$ while in gravity it is $(\mechanical{m}_g/\mechanical{m}_i)\mechanical{\mathbf g}$; the author's claim amounts to $\mechanical{m}_i\propto\mechanical{m}_g$ universally, which a test with $\electric{\mathbf E}$ measures only if $\mechanical{m}_g$ is known independently.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.10.02 Weightlessness in Free Fall and the EEP.md
+priority: medium
+graph: no
+manim: yes
+summary: Readable two-force account of free fall, but signs and symbols in (10.23)–(10.24) are inconsistent, which the note only flags.
+- [Correctness] (10.24) "$-\mechanical{m}\mechanical{\mathbf g}=-\mechanical{m}\nabla\mechanical{\phi}_l$" contradicts the note's own $\mechanical{\mathbf g}=-\nabla\mechanical{\phi}$; the gravitational force is $\mechanical{m}\mechanical{\mathbf g}=-\mechanical{m}\nabla\mechanical{\phi}_l=\mechanical{m}_i\mechanical{\mathbf a}$, so free fall gives $\mechanical{\mathbf a}=\mechanical{\mathbf g}$ (not $\mechanical{\mathbf g}=-\mechanical{\mathbf a}$), and the induced force (10.23) is $-\mechanical{m}_i\mechanical{\mathbf a}=-\mechanical{m}_i\mechanical{\mathbf g}$. Correct the chain instead of retaining it.
+- [Correctness] (10.23) uses $\mechanical{\Phi}$ without subscript and a partial derivative $\partial\mechanical{\mathbf v}/\partial t$ of a particle velocity, and the text uses $\mechanical{\phi}$ and $\mechanical{\phi}_l$ for the same local potential; use $\mechanical{\Phi}_u$, $d\mechanical{\mathbf v}/dt$ and one symbol $\mechanical{\phi}_l$.
+- [Correctness] The electromagnetic analogue "$\mechanical{F}=-\electric{e}\,d\magnetic{A}_i/(\mechanical{c}\,dt)$" with "$\magnetic{A}_i=\mechanical{v}_i\electric{\phi}/\mechanical{c}$" is Gaussian; in SI it is $\mechanical{F}=-\electric{e}\,d\magnetic{A}_i/dt$ with $\magnetic{A}_i=\mechanical{v}_i\electric{\phi}/\mechanical{c}^2$.
+- [Manim] Animate a falling box near Earth with two arrows on an inner test mass (local gravity down, induced cosmic force up) cancelling at the centre, then show two separated masses drifting due to the tidal gradient, matching Fig. 10.7 and the interpretation check.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.10.03 Two Kinds of Gravitational Forces and the Geodesic Principle.md
+priority: low
+graph: no
+manim: no
+summary: Clear distinction between gradient and induction-type gravity; the unit issue in $\mechanical{g}_a=-d\mechanical{g}_{0i}/dt$ is properly flagged.
+- [Correctness] Beyond units, the sign is off: with $\mechanical{g}_{0i}=-\mechanical{v}/\mechanical{c}$, $-\mechanical{c}\,d\mechanical{g}_{0i}/dt=+d\mechanical{v}/dt$, not $-d\mechanical{v}/dt$; replace the displayed relation and the note box by $\mechanical{g}_a=-\mechanical{c}\,d\mechanical{g}_{0i}/dt=d\mechanical{v}/dt$ (or define the induced field with the opposite sign explicitly).
+- [Simplify] "The geodesic equation follows from the postulate that force-free inertial motion obeys this relation" is circular; say that GR obtains it from $\ddot{\mechanical{x}}=0$ in a local inertial frame plus general covariance.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.10.04 The Equivalence Principle and Universality of Free Fall.md
+priority: low
+graph: no
+manim: no
+summary: Clear algebraic illustration; the mass-label inconsistency is flagged, and the cancellation is easy to follow.
+- [Simplify] Replace $\mechanical{m}_g$ in (10.28) with $\mechanical{m}_1$, $\mechanical{m}_2$ directly and drop the note box; then (10.29) reads cleanly.
+- [Simplify] Say what "$\mechanical{k}\mechanical{G}=1$" achieves: the common acceleration $\mechanical{M}/(\mechanical{R}^2\mechanical{k})$ equals $\mechanical{G}\mechanical{M}/\mechanical{R}^2$ for the reference coupling, independent of $\mechanical{G}_n$.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.11 The EEP and the Time Dilation of Clocks in an Accelerated Frame.md
+priority: medium
+graph: yes
+manim: no
+summary: Clearly states the author's falsifiable prediction, but the sign of the small-separation formula is ambiguous and $\mechanical{\gamma}$ uses the wrong semantic macro.
+- [Correctness] With $\mechanical{d}=\mechanical{x}_1-\mechanical{x}_2$ and uniform $\mechanical{\mathbf g}=-\nabla\mechanical{\phi}$ along $x$, $\mechanical{\phi}(\mechanical{x}_1)-\mechanical{\phi}(\mechanical{x}_2)=-\mechanical{g}\mechanical{d}$, so the small-separation form is $\Delta T=-T\mechanical{g}\mechanical{d}/\mechanical{c}^2$ unless $\mechanical{d}$ is defined as the height of C1 above C2 against the field; fix so the higher clock runs faster.
+- [Correctness] The Lorentz factor is written $\signal{\gamma}$; it is a kinematic quantity and should use $\mechanical{\gamma}$ as in the rest of the chapter.
+- [Graph] Plot the fractional rate difference $\mechanical{g}\mechanical{d}/\mechanical{c}^2$ versus separation $\mechanical{d}\in[0,10]\,\unit{m}$ for $\mechanical{g}=9.81$ and $100\,\unit{m/s^2}$, with the $10^{-18}$ level of current optical clocks marked, to show what the proposed accelerated-frame test would need.
+- [Intuition] Add the standard Rindler result (rate ratio $1+\mechanical{a}\mechanical{d}/\mechanical{c}^2$ between front and back clocks of an accelerating rocket, obtainable from the Doppler shift of light sent along the rocket) so the reader sees exactly what the author's "no relative dilation" contradicts.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.12 Clocks and Time Dilation in Cosmic Relativity.md
+priority: low
+graph: no
+manim: no
+summary: Philosophical section on time as comparison of material processes; clear, no technical content to correct.
+- [Links] Add links to the four subsections 10.12.01–10.12.04.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.12.01 Time Dilation in the STR.md
+priority: low
+graph: no
+manim: no
+summary: Clear summary of the author's critique with a balanced interpretation section.
+- [Example] Add a concrete standard case the "kinematic" description predicts: CERN muon storage ring ($\mechanical{\gamma}=29.3$, lab lifetime $64.4\,\unit{\mu s}$ versus $2.197\,\unit{\mu s}$ at rest), so the reader sees what any alternative must reproduce.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.12.02 Motional Time Dilation in Cosmic Relativity.md
+priority: medium
+graph: no
+manim: no
+summary: Clear restatement of the author's clock mechanism, with a dimension issue correctly flagged; a macro misuse and a sign/notation issue remain.
+- [Correctness] $\signal{\gamma}$ for the Lorentz factor should be $\mechanical{\gamma}$, consistent with the rest of the vault.
+- [Correctness] "$\energy{\delta E}_g=\mechanical{m}\,\delta\mechanical{\phi}$" wraps the variation operator in the macro and conflicts in sign with $\energy{E}_g=-\mechanical{m}\mechanical{\Phi}_u$; write $\delta\energy{E}_g=-\mechanical{m}\,\delta\mechanical{\phi}$ or state the magnitude convention.
+- [Simplify] Replace the note box by writing the GR result in its correct form $\delta t/t=\delta\mechanical{\phi}/\mechanical{c}^2$ directly.
+- [Intuition] In $\signal{\varphi}=T\energy{E}_s\mechanical{\Phi}_u/(\energy{\hbar}\mechanical{c}^2)$, note that with $|\mechanical{\Phi}_u|=\mechanical{c}^2$ it reduces to the usual $\energy{E}_sT/\energy{\hbar}$, which is what keeps the proposal consistent with ordinary atomic-clock operation.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.12.03 Synchronisation of Clocks in Cosmic Relativity.md
+priority: low
+graph: no
+manim: no
+summary: Clear account of the proposed cosmic clock, but the CMB uniformity figure is wrong by an order of magnitude.
+- [Correctness] "uniform to a few microkelvin, ... better than one part in a million" is incorrect: after removing the $3.36\,\unit{mK}$ dipole, intrinsic CMB anisotropies are tens of $\unit{\mu K}$ ($\Delta T/T\sim10^{-5}$, as [[10.04 Physics in the Gravitationally Charged Universe]] says); the current mean is $2.7255\,\unit{K}$.
+- [Example] Add the conversion the interpretation section asks for: $T\propto1/a$ gives $|\dot T/T|=H_0\approx7\times10^{-11}\,\unit{yr^{-1}}$, so a $10^{-5}$ temperature resolution corresponds to about $1.4\times10^5\,\unit{yr}$ of cosmic time, which shows how coarse this "clock" is.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.12.04 The Addition of Velocities in Cosmic Relativity.md
+priority: low
+graph: no
+manim: no
+summary: Algebra of (10.32)–(10.33) checks and recovers the relativistic addition law; clear and compact.
+- [Correctness] $\signal{\gamma}$ for the Lorentz factor should be $\mechanical{\gamma}$.
+- [Example] Add the light-speed check explicitly: $\mechanical{u}=\mechanical{c}$ gives $\mechanical{u}_a=\mechanical{c}-\mechanical{v}$ (the Galilean relative speed the author predicts) and $\mechanical{w}=\mechanical{c}$; this ties the note to [[10.06.05 The Propagation of Light]].
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.13 Cosmic Relativity and the Electrodynamics of Moving Media.md
+priority: low
+graph: no
+manim: no
+summary: Short section introduction with valid links to Chapters 3 and 4.
+- [Links] Add links to the subsections [[10.13.01 The Doppler Shift]] and [[10.13.02 The Optical Aberration and the Fresnel Drag]].
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.13.01 The Doppler Shift.md
+priority: low
+graph: yes
+manim: no
+summary: Formulas (10.34)–(10.36) are correct (the forward-direction CMB temperature equals the standard $\thermal{T}_0\sqrt{(1+\beta)/(1-\beta)}$), but the sign convention of $\pm$ is not stated.
+- [Simplify] State the sign convention under (10.34) and (10.35) (upper sign for source receding and observer approaching), and note that the two agree at first order and differ only at second order.
+- [Graph] Plot $\thermal{T}(\theta)=\thermal{T}_0\sqrt{1-\beta^2}/(1-\beta\cos\theta)$ for $\beta=1.23\times10^{-3}$ ($370\,\unit{km/s}$), $\theta\in[0,\pi]$, giving the $\pm3.36\,\unit{mK}$ dipole; this generalises (10.36) to all directions as the interpretation section suggests.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.13.02 The Optical Aberration and the Fresnel Drag.md
+priority: medium
+graph: no
+manim: no
+summary: Fresnel formula and drag-split algebra are correct, but the final aberration step misstates the effect of refraction and the relative-speed expressions are inconsistent.
+- [Correctness] "Refraction reduces the angle by $1/\signal{n}$, so the inferred additional aberration remains $\mechanical{v}/\mechanical{c}$": to go from $\mechanical{v}/(\mechanical{c}\signal{n})$ inside to $\mechanical{v}/\mechanical{c}$ outside, refraction must multiply the angle by $\signal{n}$ (small-angle Snell, $\theta_{\mathrm{out}}=\signal{n}\theta_{\mathrm{in}}$).
+- [Correctness] The text calls the relative speeds $\mechanical{c}'\mp\mechanical{v}$, but (10.39) uses $\mechanical{c}/\signal{n}\pm\mechanical{v}/\signal{n}^2$; with (10.38), $\mechanical{c}'-\mechanical{v}=\mechanical{c}/\signal{n}-\mechanical{v}/\signal{n}^2$, so define $\mechanical{c}'_\pm=\mechanical{c}/\signal{n}\pm\mechanical{v}/\signal{n}^2$ explicitly as the apparatus-frame speeds against and along the motion.
+- [Simplify] Use $\electric{\varepsilon}_r=\signal{n}^2$ throughout instead of the note box on absolute versus relative permittivity.
+- [Example] Add Fizeau numbers: water $\signal{n}=1.333$, drag coefficient $1-1/\signal{n}^2=0.437$, flow $7\,\unit{m/s}$ changes the light speed by about $3.1\,\unit{m/s}$.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.14 The Unipolar Induction.md
+priority: high
+graph: no
+manim: yes
+summary: Rich historical material with well-chosen quotations, but very long, with many dimensionally inconsistent source formulas retained only as note boxes and no standard-physics benchmark for comparison.
+- [Structure] Split into (a) history and experiments (Faraday, Barnett, Kennard) and (b) the author's two-mechanism model; the 23 kB note mixes both and the reader loses the experimental facts.
+- [Correctness] (10.40) equates a scalar integral of $\electric{i}_1\,d\mechanical{l}\cdot\electric{i}_2$ with the vector $-\electric{q}\mechanical{v}\times\magnetic{\mathbf B}$, while the following text gives the Lorentz force $+\electric{q}\mechanical{v}\times\magnetic{\mathbf B}$; the force on a charge moving near a long wire is $\electric{q}\mechanical{\mathbf v}\times\magnetic{\mathbf B}$ with $\magnetic{B}=\magnetic{\mu}_0\electric{i}/(2\pi\mechanical{r})$. Fix sign and vector form.
+- [Simplify] The contraction factors $(\mechanical{v}\pm\mechanical{v}_i)^2/(2\mechanical{c}^2)$ give the stated differential $\pm\electric{\lambda}\mechanical{v}\mechanical{v}_i/\mechanical{c}^2$ only after subtracting the common $(\mechanical{v}^2+\mechanical{v}_i^2)/(2\mechanical{c}^2)$; show this step.
+- [Intuition] Add the standard account for comparison: the rotating-disc EMF is $\tfrac12\magnetic{B}\signal{\omega}R^2$ from $\int(\mechanical{\mathbf v}\times\magnetic{\mathbf B})\cdot d\mechanical{\mathbf l}$ along the moving conductor in the lab frame, and rotating an axisymmetric magnet does not change its field; this lets the reader judge the author's alternative.
+- [Example] Give a number for Faraday's disc: $\magnetic{B}=0.1\,\unit{T}$, $R=0.1\,\unit{m}$, $3000\,\unit{rpm}$ gives about $0.16\,\unit{V}$.
+- [Manim] Animate the three Faraday configurations (disc rotates, magnet rotates, both rotate) with the galvanometer reading, highlighting that only conductor rotation matters.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.15 Cosmic Relativity and the Spin Angular Momentum.md
+priority: low
+graph: no
+manim: no
+summary: Clear overview of the spin analogy; units issues are flagged and the $\mechanical{B}_g=-2\boldsymbol{\Omega}$ step checks.
+- [Simplify] "The exact spin coupling is $\mechanical{\mathbf s}\cdot\mechanical{\mathbf B}_g/2$, with an additional factor of two" is confusing; state that with $\mechanical{\mathbf B}_g=-2\boldsymbol{\Omega}$ it gives $-\mechanical{\mathbf s}\cdot\boldsymbol{\Omega}$, the standard spin–rotation (Mashhoon) coupling.
+- [Example] Make the Beth experiment [25] concrete: each photon carries $\hbar$, so a circularly polarised beam of power $P$ and angular frequency $\omega$ delivers torque $P/\omega$.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/10 Cosmic Relativity - The Theory and Its Primary Fundamental Results/10.16 Summary.md
+priority: low
+graph: no
+manim: no
+summary: Faithful, clearly attributed chapter summary; two normalisation/notation inconsistencies with the body notes.
+- [Correctness] The summary gives $\mechanical{B}_g=-2\boldsymbol{\Omega}\mechanical{\Phi}_u/\mechanical{c}^2$ whereas [[10.15 Cosmic Relativity and the Spin Angular Momentum]] gives $-2\boldsymbol{\Omega}$; state the normalisation $|\mechanical{\Phi}_u|=\mechanical{c}^2$ or use one form.
+- [Correctness] $\signal{\gamma}$ in the scalar and vector potentials should be $\mechanical{\gamma}$.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/11 The Crucial Experimental Tests of Cosmic Relativity/11 References.md
+priority: low
+graph: no
+manim: no
+summary: Clean reference list with a useful study route; one citation is wrong.
+- [Correctness] Ref. 8 (Krisher et al.) is Phys. Rev. D 42, 731–734 (1990), not "Phys. Rev. 42 ... (1980)".
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/11 The Crucial Experimental Tests of Cosmic Relativity/11.00 The Crucial Experimental Tests of Cosmic Relativity.md
+priority: low
+graph: no
+manim: no
+summary: Clear chapter abstract and introduction; the dimensional typo in the travel time is correctly flagged.
+- [Simplify] Replace the note box by writing the intended comparison $T=\mechanical{L}/(\mechanical{c}\pm\mechanical{v})$ versus $\mechanical{L}/\mechanical{c}$ directly in the text, with the first-order difference $\mp\mechanical{L}\mechanical{v}/\mechanical{c}^2$.
+- [Structure] Remove the empty "Lecture account" heading directly above "Abstract" (or nest Abstract/Introduction under it) and add links to the 11.01–11.10 sections.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/11 The Crucial Experimental Tests of Cosmic Relativity/11.01 The Nature of Propagation of Light.md
+priority: low
+graph: no
+manim: no
+summary: Clear explanation of the one-way synchronisation problem; numbers (3.3 ns/m, a few fs at 300 m/s) check and (11.1) is consistent.
+- [Example] Make the transport-synchronisation gap concrete: for slow transport over $\mechanical{L}$ the cross term in (11.1) integrates to $-\mechanical{u}\mechanical{L}/\mechanical{c}^2$ independent of transport speed, e.g. $\mechanical{u}=370\,\unit{km/s}$, $\mechanical{L}=1\,\unit{m}$ gives $4\,\unit{fs}$, exactly the size of the Galilean one-way effect $\mechanical{L}\mechanical{u}/\mechanical{c}^2$; this shows why slow clock transport cannot decide the question.
+- [Intuition] Mention that this exact cancellation is the content of the conventionality of simultaneity (Reichenbach $\varepsilon$), so the reader can connect the note to the standard literature.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/11 The Crucial Experimental Tests of Cosmic Relativity/11.01.01 Past Experiments on the One-Way Propagation of Light.md
+priority: medium
+graph: no
+manim: yes
+summary: Good account of the Ruderfer erratum story, but the figure referenced for the Ruderfer disc shows the Krisher fibre experiment, and the Krisher limit is quoted in an ambiguous way.
+- [Correctness] The text describing Ruderfer's rotating disc points to "(Fig. 11.1)", but the Fig. 11.1 caption describes the Krisher et al. fibre experiment; either move the reference to the Krisher paragraph or add a separate schematic for the disc.
+- [Example] Quote the Krisher result in its standard form: a phase variation below $1.5^\circ$ at $100\,\unit{MHz}$ is about $42\,\unit{ps}$ on a delay of about $105\,\unit{\mu s}$, i.e. $|\delta\mechanical{c}/\mechanical{c}|<3.5\times10^{-7}$; say that "$0.02\%$" refers to the fraction of an expected $\mechanical{v}/\mechanical{c}$ signal, if that is what is meant.
+- [Simplify] Show the erratum cancellation in one line: propagation gives $+\signal{\omega}\mechanical{R}\mechanical{u}\sin\theta/\mechanical{c}^2$, absorber dilation in the absolute frame gives $-\mechanical{u}\mechanical{v}(t)/\mechanical{c}^2=-\mechanical{u}\signal{\omega}\mechanical{R}\sin\theta/\mechanical{c}^2$, sum zero; this replaces the note box on the missing $\mechanical{c}^{-2}$.
+- [Manim] Animate Ruderfer's disc: emitter at the centre, absorber on the rim, the fixed absolute velocity $\mechanical{u}$, and two oscillating curves (propagation shift and absorber dilation) that cancel.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/11 The Crucial Experimental Tests of Cosmic Relativity/11.02 True Relative Velocity of Light - The Prediction.md
+priority: low
+graph: no
+manim: no
+summary: Clear statement of the prediction and of the two experimental criteria; no errors.
+- [Intuition] Add the remark that criterion 2 (no separated clocks) together with criterion 1 (endpoints co-moving) is exactly the closed-path situation discussed in [[11.03 The True Relative Velocity of Light - A Prelude to a Test]], where uniform translation gives no first-order term, so the reader anticipates the key issue.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/11 The Crucial Experimental Tests of Cosmic Relativity/11.03 The True Relative Velocity of Light - A Prelude to a Test.md
+priority: medium
+graph: no
+manim: yes
+summary: Clear description of the looped-path idea, with an interpretation section that correctly identifies why it fails for a co-moving loop.
+- [Example] Add the explicit first-order loop calculation: time $=\sum_i\mechanical{L}_i/(\mechanical{c}-\mechanical{v}\cos\theta_i)\approx\mechanical{L}/\mechanical{c}+(\mechanical{v}/\mechanical{c}^2)\sum_i\mechanical{L}_i\cos\theta_i$, and the sum is the A-to-B displacement along $\mechanical{\mathbf v}$, which vanishes for co-located endpoints, even with Galilean propagation.
+- [Manim] Animate a rectangular loop translating at $\mechanical{v}$ with a light pulse going around: show the pulse "losing" time on the segments along $\mechanical{v}$ and "gaining" it on the return segments, ending with a net first-order difference of zero.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/11 The Crucial Experimental Tests of Cosmic Relativity/11.03.01 The Propagation of Light in a Moving Frame.md
+priority: high
+graph: no
+manim: yes
+summary: The straight-path GT/LT comparison (11.3)–(11.7) is correct, but the loop analysis applies the straight-path travel time to a closed loop, so (11.8)–(11.10) are wrong at first order and the claimed LT contradiction does not follow.
+- [Correctness] For the looped path the stationary-frame travel time is not $\mechanical{L}/[\mechanical{c}_w(1-\mechanical{v}/\mechanical{c}_w)]$: summing segments gives $\Delta t\approx\mechanical{L}/\mechanical{c}_w+(\mechanical{v}/\mechanical{c}_w^2)\times$(A-to-B displacement along $\mechanical{\mathbf v}$), which is $\mechanical{L}/\mechanical{c}_w$ to first order when B is next to A (for the tabulated loop: $+2\mechanical{l}$ along, $-2\mechanical{l}$ against). Hence (11.8) gives $\Delta t'\approx\mechanical{L}/\mechanical{c}$ for light, not $\mechanical{L}/(\mechanical{c}-\mechanical{v})$, and the GT and Galilean (11.10) loop results also lose their first-order term.
+- [Correctness] (11.9) divides the open-path displacement $\Delta\mechanical{x}'=\signal{\gamma}\mechanical{L}$ by the loop duration; for a loop the endpoint displacement is about zero and $\mechanical{L}$ is a path length, so the ratio is not a velocity.
+- [Correctness] The Lorentz factor is written $\signal{\gamma}$; use $\mechanical{\gamma}$.
+- [Structure] Instead of four note boxes on retained source errors (missing $\signal{\gamma}$, row a times, $2\mechanical{l}+2\mechanical{h}$, $\mechanical{c}$ vs $\mechanical{c}_w$), give the corrected table once and mention the source discrepancies in a single note.
+- [Manim] Animate the tabulated rectangular loop (points A, b, c, d, a, B) moving at $\mechanical{v}$ in frame O with the light front, labelling the O-frame times of each corner, to show segment-by-segment cancellation.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/11 The Crucial Experimental Tests of Cosmic Relativity/11.03.02 A Simple Demonstration of the Conflict Between the PoR and the Light Hypothesis.md
+priority: medium
+graph: no
+manim: no
+summary: Clearly told thought experiment, but its key circuit time uses the straight-path formula for a closed loop, and the moving-frame count mixes conventions.
+- [Correctness] (11.11) uses $\mechanical{L}/[\mechanical{c}(1-\mechanical{v}/\mechanical{c})]$ for a light circuit of a loop co-moving with the detector; for a closed loop the first-order terms cancel (see [[11.03 The True Relative Velocity of Light - A Prelude to a Test]]), so the light circuit time is $\mechanical{L}/\mechanical{c}$ in the apparatus frame and $N$ is not $(\mechanical{c}-\mechanical{v})/(\mechanical{c}_s-\mechanical{v})$.
+- [Intuition] State that $N$ is a count of coincidence events and therefore the same in every consistent description; the apparent $N\neq N'$ arises from treating sound with a medium at rest in O while treating light as invariant in O′, which is the point made in "Interpretation and checks" and should be moved into the main text.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/11 The Crucial Experimental Tests of Cosmic Relativity/11.04 The Experiment on the One-Way Relative Velocity of Light.md
+priority: high
+graph: no
+manim: yes
+summary: Detailed description of the sound and light loop experiments with well-recreated graphs, but the light set-up (lab-fixed mirrors, moving source/detector) produces the measured slope also in standard relativity, which the note does not say.
+- [Correctness] Fig. 11.5(a) states that the four mirrors are fixed and only source, optics and detector translate; then in the lab frame (mirrors and light at rest) standard relativity predicts a counter-propagating delay $2\mechanical{L}\mechanical{v}/\mechanical{c}^2$, i.e. $2\times(3.1\,\unit{m}/\mechanical{c})\times\mechanical{v}/\mechanical{c}\approx7\times10^{-17}\,\unit{s}$ per $\unit{m/s}$, which matches the plotted slope (350 mV per m/s at 10 mV per $2\times10^{-18}\,\unit{s}$). The result therefore does not discriminate; this must be stated, since criterion 1 (co-moving A, B and path) is not met.
+- [Correctness] The sound-test check is consistent ($\mechanical{T}\mechanical{v}/\mechanical{c}_s=26\,\unit{ms}/343\approx76\,\unit{\mu s}$ per m/s versus a plotted slope of $80\,\unit{\mu s}$ per m/s), which confirms that the "$5\,\unit{ms}$" precision must be $5\,\unit{\mu s}$; correct it rather than retaining it in a note box.
+- [Simplify] Replace the note box on $3.3\times10^{-7}\,\unit{ns}$ by the correct value $\delta T=3.3\times10^{-8}\,\unit{ns}=33\,\unit{as}$ at $1\,\unit{m/s}$.
+- [Manim] Animate the light loop with fixed mirrors and a moving detector/beam splitter: two counter-propagating pulses, the detector advancing during transit, and the resulting path-length difference, to show where the measured phase comes from.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/11 The Crucial Experimental Tests of Cosmic Relativity/11.05 Motional Time Dilation - The Predictions.md
+priority: low
+graph: no
+manim: no
+summary: Short summary of the absolute-frame rate law; the sign slip in (11.13) is correctly flagged.
+- [Simplify] Write (11.13) with the corrected sign ($+\mechanical{u}^2/(2\mechanical{c}^2)$ for the subtracted reference clock) and keep the source discrepancy in one sentence, rather than displaying an equation that does not equal its own right side.
+- [Intuition] Point out that in an inertial chart the standard proper-time difference between a moving and a lab clock, when the lab itself moves at $\mechanical{\mathbf u}$, contains the same $\mechanical{\mathbf u}\cdot\mechanical{\mathbf v}/\mechanical{c}^2$ term; it integrates to $\mechanical{\mathbf u}\cdot\Delta\mechanical{\mathbf x}/\mechanical{c}^2$ (a synchronisation term) for uniform $\mechanical{\mathbf u}$, so it is not by itself absent from STR.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/11 The Crucial Experimental Tests of Cosmic Relativity/11.06 Cosmic Relativity and Clock Synchronisation.md
+priority: low
+graph: no
+manim: no
+summary: Clear contrast of the two ranging formulas, with a good external reference in the interpretation section; expansion (11.15) checks.
+- [Intuition] Add that $\mechanical{c}(t_r-t_s)-\hat{\mathbf D}\cdot\mechanical{\mathbf v}(t_r-t_s)$ is just the distance from the emission event to where the receiver was at emission time, which standard relativity also uses in an inertial chart; this makes clear the correction is geometric, as the interpretation section says.
+- [Correctness] (11.14) defines $\mechanical{\mathbf v}_r$ as receiver velocity but then uses $\mechanical{\mathbf v}$; use one symbol.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/11 The Crucial Experimental Tests of Cosmic Relativity/11.07 Experimental Tests of Time Dilation - Atomic Clocks.md
+priority: medium
+graph: yes
+manim: no
+summary: Numbers check (55, 207, 42, 146, -188, +104 ns), but the note does not tell the reader that Hafele and Keating's own standard-relativity calculation gives the same east/west asymmetry.
+- [Intuition] State that the standard calculation in the Earth-centred nonrotating frame (ground clock moving at $\mechanical{R}_e\signal{\omega}_e\cos\lambda$) yields exactly the cross term $\mp\mechanical{R}_e\signal{\omega}_e\mechanical{L}\cos\lambda/\mechanical{c}^2$ and Hafele–Keating's published kinematic predictions $-184\pm18$ and $+96\pm10\,\unit{ns}$; the "STR comparison" in (11.16) uses the lab clock as if inertial.
+- [Simplify] Fix the signs in (11.16)–(11.17) directly (final term $-\mechanical{L}\mechanical{v}/(2\mechanical{c}^2)$; reference term $+T\mechanical{u}^2/(2\mechanical{c}^2)$) and shorten the note box to one line about the source.
+- [Correctness] $\mechanical{\mathbf l}_i$ in (11.17) is not defined; state that $\mechanical{\mathbf l}_i=\mechanical{\mathbf v}_it_i$ is the directed segment.
+- [Graph] Plot predicted kinematic $\Delta T$ for an equatorial circumnavigation versus aircraft ground speed $\mechanical{v}\in[0,300]\,\unit{m/s}$ for eastward and westward trips, $-\mechanical{L}\mechanical{v}/(2\mechanical{c}^2)\mp\mechanical{R}_e\signal{\omega}_e\mechanical{L}/\mechanical{c}^2$, showing the speed-independent 207 ns offset.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/11 The Crucial Experimental Tests of Cosmic Relativity/11.08 Experimental Tests of Time Dilation - GNSS and GPS.md
+priority: low
+graph: no
+manim: no
+summary: Readable overview of GNSS as a clock laboratory, but the orbital speed and two system names are wrong.
+- [Correctness] GPS satellites at $26\,560\,\unit{km}$ orbital radius move at $\sqrt{\mechanical{G}\mechanical{M}/r}\approx3.87\,\unit{km/s}$, not $3.6\,\unit{km/s}$.
+- [Correctness] "Bidou" should be BeiDou, and Japan's system is QZSS (Quasi-Zenith Satellite System), not "QNSS"; QZSS and NavIC use geosynchronous inclined as well as geostationary orbits.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/11 The Crucial Experimental Tests of Cosmic Relativity/11.08.01 Time Dilations in the GNSS Satellites.md
+priority: medium
+graph: yes
+manim: no
+summary: Clear structure, but the quoted GPS rate numbers are slightly off and the Cosmic Relativity formula is written awkwardly.
+- [Correctness] With $\mechanical{G}\mechanical{M}=3.986\times10^{14}\,\unit{m^3/s^2}$, $\mechanical{R}_0=6371\,\unit{km}$, $\mechanical{R}_s=26\,560\,\unit{km}$: $\mechanical{G}\mechanical{M}/(\mechanical{R}_0\mechanical{c}^2)=6.95\times10^{-10}$ (not $7.3\times10^{-10}$), the gravitational shift is $0.53\,\unit{ns/s}$ ($45.7\,\unit{\mu s/day}$), and the motional shift with $\mechanical{v}_s=3.87\,\unit{km/s}$ is $-0.083\,\unit{ns/s}$ ($-7.2\,\unit{\mu s/day}$), not $-0.07$; net $+38.5\,\unit{\mu s/day}$.
+- [Simplify] Write (11.22) as $-\mechanical{v}_s^2/(2\mechanical{c}^2)+\mechanical{v}_o^2/(2\mechanical{c}^2)$ instead of the double negative $-(-\mechanical{v}_o^2)/(2\mechanical{c}^2)$, and say that the velocities are Earth-centred-inertial ones (the ground receiver has $\mechanical{v}_o=465\cos\lambda\,\unit{m/s}$).
+- [Graph] Plot fractional rate offsets versus orbital radius $r\in[6.6,45]\times10^3\,\unit{km}$: gravitational $(\mechanical{G}\mechanical{M}/\mechanical{c}^2)(1/\mechanical{R}_0-1/r)$, motional $-\mechanical{G}\mechanical{M}/(2r\mechanical{c}^2)$ and their sum, marking the zero crossing near $r=1.5\mechanical{R}_0$ and the GPS radius.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/11 The Crucial Experimental Tests of Cosmic Relativity/11.08.02 The GNSS Mystery Created by the Galilean Propagation of Light.md
+priority: medium
+graph: no
+manim: yes
+summary: The Sagnac-term algebra in (11.25) checks, but the note leaves the reader with the author's claim that receiver-motion terms imply Galilean light, without the one-line standard explanation.
+- [Intuition] Add the standard derivation: in the Earth-centred inertial frame light travels at $\mechanical{c}$ from the emission event to the reception event, and the receiver moves by $\mechanical{\mathbf v}\Delta\tau$ during transit; expanding $|\mechanical{\mathbf x}_r(t_r)-\mechanical{\mathbf x}_s(t_e)|=\mechanical{c}(t_r-t_e)$ about $\mechanical{\mathbf x}_r(t_e)$ gives exactly (11.24), with no change of local light speed.
+- [Example] Give the size of the Sagnac term for a ground receiver: with $|\mechanical{\mathbf d}|\approx2\times10^7\,\unit{m}$ and $|\mechanical{\mathbf v}|\le465\,\unit{m/s}$, $\mechanical{\mathbf d}\cdot\mechanical{\mathbf v}/\mechanical{c}^2$ is up to about $100\,\unit{ns}$ (about $30\,\unit{m}$ of range).
+- [Simplify] Replace the note box on 40 m vs 20 m by the correct number $\mechanical{v}_o\Delta\tau\approx20\,\unit{m}$ and keep the source value in parentheses.
+- [Manim] Animate a satellite emitting a pulse toward a receiver on the rotating Earth: the receiver moves during the 67 ms transit, showing the extra path and the triangle area $\mechanical{\mathbf A}=\tfrac12\mechanical{\mathbf R}\times\mechanical{\mathbf d}$ swept.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/11 The Crucial Experimental Tests of Cosmic Relativity/11.09 The Absence of a Relative Time Dilation in Accelerated Frames.md
+priority: medium
+graph: no
+manim: yes
+summary: Clear experimental proposal whose order-of-magnitude slips are correctly flagged, but the note keeps the wrong numbers in the main text.
+- [Correctness] Replace the retained values in the text by the correct ones already identified in the note box: $10\,\unit{mm}$ of light path is $33\,\unit{ps}$, $10^{-13}\,\unit{s}$ corresponds to $30\,\unit{\mu m}$, and a $10\,\unit{m}$ vertical separation on Earth accumulates about $0.1\,\unit{ns}$ per day.
+- [Correctness] $\mechanical{f}_g=d\mechanical{A}_g/dt$ uses the macro letter $\mechanical{f}$ for a field per unit mass while the chapter otherwise writes induced acceleration as $-\mechanical{c}\,d\mechanical{g}_{0i}/dt$; state units and normalisation.
+- [Intuition] Contrast the author's Galilean signal-advance argument with the standard one: in the vehicle frame (after acceleration) light travels $\mechanical{L}$ at $\mechanical{c}$ in both directions with Einstein synchronisation, so the standard prediction for the readout is the Rindler clock difference $T\mechanical{a}\mechanical{L}/\mechanical{c}^2$ alone.
+- [Manim] Animate the train scenario: two clocks C1 and C2 separated by 100 m accelerating, a light signal sent from C2 to C1, and the clock readouts, showing which contribution each theory attributes to clock rate versus signal timing.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/11 The Crucial Experimental Tests of Cosmic Relativity/11.10 The One-Way Relative Velocity of Light in Rotating Frames.md
+priority: low
+graph: no
+manim: no
+summary: Short historical section introduction with a correct interpretation of why rotation differs from translation.
+- [Links] Add links to [[11.10.01 An Early History of the Relevant Ideas]] and [[11.10.02 The Experiments by G. Sagnac]].
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/11 The Crucial Experimental Tests of Cosmic Relativity/11.10.01 An Early History of the Relevant Ideas.md
+priority: low
+graph: no
+manim: no
+summary: Well-written history with apt Michelson quotations; Michelson's integral is correctly reproduced.
+- [Intuition] Connect Michelson's $T=(2/\mechanical{V}^2)\oint\mechanical{v}\cos\theta\,d\mechanical{s}$ to Stokes' theorem: for rigid rotation it equals $4\mechanical{\mathbf A}\cdot\boldsymbol{\Omega}/\mechanical{V}^2$, and for uniform translation it vanishes, which explains both the Michelson–Morley null and the Sagnac signal in one line.
+- [Correctness] The text dates Lodge's work to 1893 while citing ref. [15] from 1897; cite both papers (Phil. Trans. A 184, 727 (1893) and 189, 149 (1897)) or adjust the year.
+
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/11 The Crucial Experimental Tests of Cosmic Relativity/11.10.02 The Experiments by G. Sagnac.md
+priority: medium
+graph: yes
+manim: yes
+summary: Correct Sagnac derivation ((11.26) and the Stokes form check) and good history; it would benefit from a worked fringe estimate and a visual.
+- [Example] Add the fringe estimate for Sagnac's set-up: $\mechanical{A}=0.086\,\unit{m^2}$, $\signal{\omega}=2\pi\times2\,\unit{rad/s}$ gives $\delta T=4\mechanical{A}\signal{\omega}/\mechanical{c}^2\approx4.8\times10^{-17}\,\unit{s}$, i.e. about $0.03$ fringe at $436\,\unit{nm}$, doubled to about $0.07$ by reversing rotation; and for Michelson–Gale ($207\,800\,\unit{m^2}$, Earth rotation at $41.8^\circ$ N) about $0.23$ fringe.
+- [Correctness] The symbol $\mechanical{v}=\mechanical{R}\signal{\omega}$ in (11.26) uses $\signal{\omega}$ while the general formula uses $\boldsymbol{\omega}$ without macro, and 11.08.02 uses $\boldsymbol{\omega}$ for Earth rotation; use one convention for angular velocity in the chapter.
+- [Graph] Plot fringe shift $4\mechanical{A}\signal{\omega}/(\lambda\mechanical{c})$ versus rotation frequency $0$–$3\,\unit{Hz}$ for Sagnac's area, with the measured point at $2\,\unit{Hz}$.
+- [Manim] Animate a rotating ring interferometer with co- and counter-rotating pulses, showing the detector moving so that the co-rotating pulse needs a longer path, and the resulting arrival-time difference.

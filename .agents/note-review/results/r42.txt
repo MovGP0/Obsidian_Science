@@ -1,0 +1,293 @@
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/06 The Feynman Calculus/6.4 Lifetime of the A.md
+priority: low
+graph: yes
+manim: no
+summary: Short, correct worked example (eqs. 6.45-6.48 and the table units check out), but it leaves the promised unit check and any physical feel for the result to the reader.
+- [Example] Add the unit check the text asks for: with $[g]=[\mathcal M]=$ momentum (from eq. 6.44, $n=3$), $g^2|\mathbf p|/(\hbar m_A^2 c)$ has units $\mathrm{s^{-1}}$; show it in two lines.
+- [Intuition] State the limits of eq. 6.47: $|\mathbf p|\to0$ (and $\tau\to\infty$) at threshold $m_A=m_B+m_C$, and $|\mathbf p|=m_Ac/2$ when $m_B=m_C=0$, so the reader sees why phase space controls the lifetime.
+- [Graph] 2D plot of $\Gamma/\Gamma_{\max}=2|\mathbf p|/(m_Ac)$ against $m_B/m_A$ for $m_C/m_A\in\{0,0.2,0.4\}$, $m_B/m_A$ from 0 to $1-m_C/m_A$, showing the closing of phase space at threshold.
+- [Structure] The file starts with a UTF-8 BOM (bytes EF BB BF); save it as UTF-8 without BOM as the vault rules require.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/06 The Feynman Calculus/6.5 Scattering.md
+priority: medium
+graph: yes
+manim: no
+summary: Faithful transcription of the AA to BB example; the algebra of eqs. 6.50-6.54 checks out, but one equation drops a square and the CM kinematics behind eqs. 6.51-6.52 are skipped.
+- [Correctness] Eq. (6.49) reads $g^2/[(p_4-p_2)-m_C^2c^2]$; the propagator needs the square: $\mathcal M=g^2/[(p_4-p_2)^2-m_C^2c^2]$.
+- [Correctness] In eqs. (6.53)-(6.54) the unbold $p^2$ means $|\mathbf p|^2$, while elsewhere in the note unbold $p_i$ are four-momenta (for which $p^2=m^2c^2$); write $|\mathbf p|^2$ there to avoid the clash.
+- [Simplify] Before eq. (6.51) write the CM four-momenta explicitly, $p_{1,2}=(E/c,\pm\mathbf p)$, $p_{3,4}=(E/c,\pm\mathbf p')$ with $|\mathbf p'|=|\mathbf p|$ and $\mathbf p\cdot\mathbf p'=|\mathbf p|^2\cos\theta$, and show $p_2\cdot p_4=E^2/c^2-|\mathbf p|^2\cos\theta$; then 6.51-6.53 follow in one line each.
+- [Intuition] Explain the $1/\sin^4\theta$ result: the two diagrams are $t$- and $u$-channel exchanges of a massless C, giving forward and backward poles, which is why the total cross section diverges (as for Rutherford); mention the $S=1/2$ factor for identical B's.
+- [Graph] 2D plot of $d\sigma/d\Omega$ in units of $\tfrac12(\hbar c g^2/16\pi E|\mathbf p|^2)^2$, i.e. $1/\sin^4\theta$, for $\theta\in[10^\circ,170^\circ]$ on a log y axis, overlaid with the $t$-channel-only term $1/[4(1-\cos\theta)^2]$ to show each diagram's pole.
+- [Structure] The file starts with a UTF-8 BOM; save it as UTF-8 without BOM.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/06 The Feynman Calculus/6.6 Higher-Order Diagrams.md
+priority: medium
+graph: yes
+manim: no
+summary: Clear narrative on loops and renormalization with correct prefactors in eq. 6.57, but eq. 6.55 has a wrong propagator momentum and the power-counting step glosses over the Minkowski-versus-Euclidean measure.
+- [Correctness] Eq. (6.55): the third denominator factor is $(q_1^2-m_B^2c^2)$; it must be $(q_3^2-m_B^2c^2)$ (the B line in the loop carries $q_3$, as eq. 6.56 then correctly shows).
+- [Simplify] Add one line counting the factors in 6.55: $(-ig)^4=g^4$, $i^4=1$ from four propagators, and $(2\pi)^{16}$ from four delta functions cancels $(2\pi)^{-16}$ from four integrations; then explain that the leftover $\delta^4$ needs a $(2\pi)^4$ to be erased, which produces the $i(g/2\pi)^4$ in 6.57.
+- [Intuition] Note that $d^4q=q^3\,dq\,d\Omega'$ in eq. 6.58 is meant after a Wick rotation to Euclidean momentum (in Minkowski space $q^2$ is not positive-definite); the power-counting conclusion (four powers up, four down, log divergence) is unchanged.
+- [Intuition] After eq. 6.59 show why the factor tames the integral: it adds two more powers of $q$ in the denominator, so the integrand falls as $1/q^6$ and the regulated result grows only like $\ln M$.
+- [Graph] Log-x 2D plot of the cutoff integral $I(\Lambda)=\int_0^\Lambda q^3dq/(q^2+m^2)^2$ against $\Lambda/m$ from 1 to $10^6$, compared with $\ln(\Lambda/m)$, to make "logarithmically divergent" concrete.
+- [Structure] The file starts with a UTF-8 BOM; save it as UTF-8 without BOM.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/06 The Feynman Calculus/6.B References and Notes.md
+priority: low
+graph: no
+manim: no
+summary: Reference list for Chapter 6; no change needed beyond file encoding.
+- [Structure] The file starts with a UTF-8 BOM; save it as UTF-8 without BOM.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/06 The Feynman Calculus/6.P Problems.md
+priority: low
+graph: no
+manim: no
+summary: Problem list with correct equation references and supplied answers (6.8-6.10 rechecked, including the Compton limit of 6.10b); only small table and encoding issues.
+- [Links] Turn the in-text equation references (eq. 6.23, 6.31, 6.34, 6.36, 6.44) into wiki links to [[6.2 The Golden Rule]] (and [[6.1 Lifetimes and Cross Sections]] for eqs. 6.2 and 6.3) so readers can jump to the cited formula.
+- [Structure] Drop the table row with symbol "—" for "Given elapsed times" (it names no symbol), and remove the UTF-8 BOM at the start of the file.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/07 Quantum Electrodynamics/7.1 The Dirac Equation.md
+priority: medium
+graph: no
+manim: no
+summary: Correct and well-motivated derivation of the Dirac equation, though the step from the anticommutator conditions to explicit $4\times4$ matrices is asserted rather than shown.
+- [Structure] The text says the operator acts on "the wave function, $\psi$" but eq. (7.3) uses $\Psi$; use one symbol (and list only that one in the table).
+- [Example] After eq. (7.17) add a short check that $(\gamma^0)^2=1$, $(\gamma^i)^2=-1$ and $\{\gamma^0,\gamma^i\}=0$ using $\sigma_i^2=1$ and the block form, so the reader sees eq. (7.15) is satisfied.
+- [Intuition] Explain briefly why $2\times2$ matrices cannot work: at most three mutually anticommuting $2\times2$ matrices exist (the Pauli matrices), but four are needed, and the dimension must be even; this motivates the four-component spinor.
+- [Intuition] Next to the remark on the KG equation's statistical interpretation, give the reason in one line: the conserved KG density $\rho\propto i(\psi^*\partial_t\psi-\psi\partial_t\psi^*)$ is not positive-definite because the equation is second order in time.
+- [Structure] The file starts with a UTF-8 BOM; save it as UTF-8 without BOM.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/07 Quantum Electrodynamics/7.2 Solutions to the Dirac Equation.md
+priority: medium
+graph: yes
+manim: no
+summary: Careful step-by-step solution of the free Dirac equation (normalization 7.47 and the $v$ spinors 7.50 check out), but one case in eq. 7.43 has the wrong seed spinor and the physical meaning of the small components is left implicit.
+- [Correctness] Eq. (7.43), case (3): "Pick $u_B=(0,1)^T$" must be $u_B=(1,0)^T$; the right-hand side already uses $(\mathbf p\cdot\boldsymbol\sigma)(1,0)^T$, and $u^{(3)}$ in eq. (7.46) has lower components $(1,0)$.
+- [Intuition] After eq. (7.46) note that the lower components of $u^{(1)},u^{(2)}$ are of order $|\mathbf p|c/(E+mc^2)\approx v/2c$, so for slow electrons the Dirac spinor reduces to a Pauli two-spinor; this links back to the rest solutions (7.30).
+- [Example] Show the normalization check for $u^{(1)}$: $u^\dagger u=N^2[1+c^2\mathbf p^2/(E+mc^2)^2]=N^2\,2E/(E+mc^2)$, which equals $2E/c$ for $N^2=(E+mc^2)/c$; it takes two lines and removes the forward reference to Problem 7.3.
+- [Graph] 2D plot of the ratio of lower to upper component magnitudes, $|\mathbf p|c/(E+mc^2)=\sqrt{(\gamma-1)/(\gamma+1)}$, against $\beta=v/c$ from 0 to 1, showing it grows from 0 to 1 (nonrelativistic to ultrarelativistic).
+- [Structure] The file starts with a UTF-8 BOM; save it as UTF-8 without BOM.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/07 Quantum Electrodynamics/7.3 Bilinear Covariants.md
+priority: medium
+graph: no
+manim: no
+summary: Clear account of adjoint spinors and bilinear covariants (eqs. 7.53, 7.57, 7.64-7.67 and the unit of $a$ check out) with one typo in an explicit sum.
+- [Correctness] Eq. (7.55): the right-hand side reads $|\psi_3|^2+|\psi_2|^2+|\psi_3|^2+|\psi_4|^2$; the first term must be $|\psi_1|^2$.
+- [Example] Add the two-line derivation of eq. (7.57): $S$ is Hermitian and $(\gamma^0\gamma^1)^2=1$, so $S^2=(a_+^2+a_-^2)+2a_+a_-\gamma^0\gamma^1=\gamma-\gamma(v/c)\gamma^0\gamma^1$; likewise $\gamma^0$ anticommutes with $\gamma^0\gamma^1$, which gives $S^\dagger\gamma^0S=\gamma^0$.
+- [Intuition] Draw the analogy explicitly: $\gamma^0$ in $\bar\psi=\psi^\dagger\gamma^0$ plays the role of the metric that lowers an index, which is why $\bar\psi\psi$ is invariant while $\psi^\dagger\psi$ is the time component of the current $\bar\psi\gamma^\mu\psi$.
+- [Structure] Add a compact table of the five bilinears (7.68) with columns: matrix, number of components, Lorentz character, sign under parity; and remove the UTF-8 BOM at the start of the file.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/07 Quantum Electrodynamics/7.4 The Photon.md
+priority: medium
+graph: no
+manim: yes
+summary: Correct and readable route from Maxwell's equations to transverse photon polarization, with minor macro and notation inconsistencies and a gauge naming that deserves a clarifying remark.
+- [Correctness] The spin quantum numbers $s$ and $m_s$ are wrapped in `\mechanical{}` (so $m_s$ reads like a mass); they are dimensionless quantum numbers and should be left uncolored, also in the table.
+- [Structure] The polarization basis is written $\boldsymbol\epsilon_{(1)},\boldsymbol\epsilon_{(2)}$ in eq. (7.92) but $\boldsymbol\epsilon_1,\boldsymbol\epsilon_2$ in the footnote; use one form and list it once in the table.
+- [Intuition] After eq. (7.86) add that $A^0=0$ together with $\nabla\cdot\mathbf A=0$ is possible only in source-free space (often called radiation gauge); with charges present the Coulomb gauge keeps $\nabla\cdot\mathbf A=0$ but $A^0$ is the instantaneous Coulomb potential.
+- [Simplify] Show the substitution step behind eqs. (7.89) and (7.90): $\partial_\mu\to-(i/\hbar)p_\mu$ on the plane wave turns $\square A^\mu=0$ into $p^2=0$ and $\partial_\mu A^\mu=0$ into $p\cdot\epsilon=0$.
+- [Manim] Animate a plane wave along $z$ with the field vector traced for $\boldsymbol\epsilon_{(1)}$, $\boldsymbol\epsilon_{(2)}$ and the circular combinations $\boldsymbol\epsilon_\pm$, showing that the vector stays in the $xy$ plane (transverse) and rotates for helicity $\pm1$.
+- [Structure] The file starts with a UTF-8 BOM; save it as UTF-8 without BOM.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/07 Quantum Electrodynamics/7.5 The Feynman Rules for Quantum Electrodynamics.md
+priority: medium
+graph: no
+manim: no
+summary: A faithful, correct reference statement of the QED Feynman rules, but it is a dense list with no worked mini-example or intuition for why each factor appears.
+- [Structure] The file starts with a UTF-8 BOM before the frontmatter `---`; save it as UTF-8 without BOM (same for every note in this folder).
+- [Intuition] After rule 2, add one sentence explaining the pattern of the external-line table: the fermion line is read against the arrow, so the line ends give $\bar u$ or $\bar v$ (adjoint) and the line starts give $u$ or $v$, which is why an incoming positron gets $\bar v$.
+- [Example] After rule 8, add a three-line "recipe check" that applies rules 1–7 to the single electron–muon diagram and shows how $i\cdot i\cdot(-i)$ produces the overall minus in (7.104), linking forward to [[7.6 Examples#Example 7.1 Electron–Muon Scattering]].
+- [Simplify] Rule 5 and footnote `ep-7-5-arrows`: state the momentum convention once as a short rule ("momentum flows along the arrow except on external positron lines, where it flows against it") instead of the nested parenthetical.
+- [Links] Section references in the text ("Section 7.2", equations (7.46), (7.50), (7.92)) are plain text; link them to [[7.2 Solutions to the Dirac Equation]] and [[7.4 The Photon]], and link "the final section of this chapter" to [[7.9 Renormalization]].
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/07 Quantum Electrodynamics/7.6 Examples.md
+priority: medium
+graph: no
+manim: no
+summary: The four amplitudes and their relative signs are correct, but the step from the integral to $\mathcal M$ and the reasons for adding versus subtracting diagrams are compressed.
+- [Simplify] Example 7.1: show the one intermediate line of the "trivial" $q$ integration, i.e. that $\delta^4(p_1-p_3-q)$ sets $q=p_1-p_3$, leaving $(2\pi)^4\delta^4(p_1+p_2-p_3-p_4)$, and that $i\cdot i\cdot(-i)=i$ gives $-i\mathcal M=i g_e^2(\dots)/q^2$, hence the minus sign in (7.104).
+- [Intuition] Example 7.2: add one sentence that the relative minus sign is the Pauli principle (the amplitude must be antisymmetric under $p_3,s_3\leftrightarrow p_4,s_4$), and note the forward and backward peaks from the $1/(p_1-p_3)^2$ and $1/(p_1-p_4)^2$ poles.
+- [Intuition] Example 7.3: label the two Bhabha diagrams as $t$-channel (scattering) and $s$-channel (annihilation) and explain why the annihilation term is suppressed by $(v/c)^2$ at low energy, connecting to footnote `ep-7-6-classical-limit`.
+- [Simplify] Example 7.4: state explicitly that in Fig. 7.6 the electron first emits photon 3 and then absorbs photon 2 (so $q=p_1-p_3$), while in Fig. 7.7 it first absorbs photon 2 ($q=p_1+p_2$); this makes the different orders of $\not\epsilon(2)$ and $\not\epsilon(3)^*$ in (7.110) and (7.111) obvious.
+- [Links] Link "rule 8" and the Feynman rules to [[7.5 The Feynman Rules for Quantum Electrodynamics]], and "cross-section formula (6.34)" in the footnote to the Chapter 6 note where (6.34) is defined.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/07 Quantum Electrodynamics/7.7 Casimir's Trick and the Trace Theorems.md
+priority: medium
+graph: no
+manim: no
+summary: Casimir's trick, the trace theorems, and the electron–muon result (7.126) are correct, but the final contraction step is skipped and the book footnote number is a dead superscript.
+- [Links] `<sup>5</sup>` after "Casimir was apparently the first one to use it" is an unlinked book footnote number; replace it with an Obsidian footnote or a link to [[7.B References and Notes]] (reference 5).
+- [Example] Between (7.125) and (7.126), show the contraction explicitly: write the product of the two brackets term by term ($2(p_1\cdot p_2)(p_3\cdot p_4)+2(p_1\cdot p_4)(p_2\cdot p_3)$, the $g^{\mu\nu}$ cross terms, and $g^{\mu\nu}g_{\mu\nu}=4$) so the reader can check the coefficients $8$, $-1$, $-1$, $+2$ in (7.126).
+- [Intuition] Before (7.119), add one sentence of motivation: summing over unobserved spins turns a product of spinors into $\sum_s u\bar u=\not p+mc$, a $4\times4$ matrix, so only traces of $\gamma$ matrices remain and no explicit spinor is ever needed.
+- [Simplify] Contraction theorems 6–9: add a one-line proof of rule 7 from rule 5 ($\gamma_\mu\gamma^\nu\gamma^\mu=(2g^\nu_\mu-\gamma^\nu\gamma_\mu)\gamma^\mu=2\gamma^\nu-4\gamma^\nu$) as a template for the others.
+- [Structure] The footnote `[^ep-7-7-permutations]` sits alone on its own line after the $\epsilon$ definition; attach it to the sentence that introduces the $\epsilon^{\mu\nu\lambda\sigma}$ definition so the reference reads naturally.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/07 Quantum Electrodynamics/7.8 Cross Sections and Lifetimes.md
+priority: medium
+graph: yes
+manim: no
+summary: The Mott/Rutherford derivation and the long singlet-annihilation calculation check out (including (7.151)–(7.160), (7.165), and the para-positronium rate), but the note is long and lacks a roadmap, plots, and working footnote links.
+- [Graph] Example 7.7: plot the ratio of (7.128) to the Rutherford form $(\alpha\hbar mc/(2p^2\sin^2(\theta/2)))^2$, i.e. $1+(p/mc)^2\cos^2(\theta/2)$ in momentum form, versus $\theta\in[0.1,\pi]$ for $|\mathbf p|/(mc)=0.1,1,3$, together with the absolute $d\sigma/d\Omega$ on a log axis, to show the $\sin^{-4}(\theta/2)$ forward peak and the spin (magnetic) correction.
+- [Structure] Example 7.8 spans (7.130)–(7.160); add a short roadmap at its start (1. simplify with $p_1\cdot\epsilon=p_3\cdot\epsilon=0$ and the Dirac equation, 2. reduce to the $\boldsymbol\Sigma$ form (7.146), 3. insert singlet fermion spins, 4. insert photon helicities) so the reader knows where each block leads.
+- [Links] `<sup>6</sup>` after "the total cross section is $4\pi$ times this" is a dead book footnote number; link it to [[7.B References and Notes]] (reference 6). Also link "equation (6.42)", "Problem (6.8)", and "eq. (5.84)" to the Chapter 6 and Chapter 5 notes.
+- [Intuition] After (7.169), add the closing number: with $|\psi(0)|^2=1/(\pi(2a_0)^3)$ and $a_0=\hbar/(mc\alpha)$, $\Gamma=\alpha^5mc^2/(2\hbar)\approx8.0\times10^9\,\mathrm{s^{-1}}$, i.e. $\tau\approx1.25\times10^{-10}\,\mathrm{s}$, so the reader sees the payoff of the whole calculation.
+- [Simplify] Around (7.161): say explicitly why no $S=\tfrac12$ appears for the two identical photons when integrating over $4\pi$, since the reader just learned in 7.6 that identical final particles carry $S$; this is the subtle point the book defers to its reference 6.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/07 Quantum Electrodynamics/7.9 Renormalization.md
+priority: high
+graph: yes
+manim: no
+summary: The renormalization argument and the numbers ((7.181), (7.186), (7.188), the $6\times10^{-6}$ estimate) are correct, but one Dirac-equation line is mistranscribed and the key figure is a raster scan rather than a native plot.
+- [Correctness] Before (7.177): "$\not p_1 u(p_1)=mc,\ \bar u(p_3)\not p_3=u(p_3)mc$" is wrong (a spinor cannot equal a scalar, and the bar is lost); it must read $\not p_1u(p_1)=mc\,u(p_1)$ and $\bar u(p_3)\not p_3=mc\,\bar u(p_3)$, which then gives $\bar u(p_3)\not q\,u(p_1)=0$.
+- [Graph] Replace the PNG Fig. 7.11 (`elementary-particles-fig-7-11-source-plot.png`) with a native plot of $f(x)=6\int_0^1z(1-z)\ln(1+xz(1-z))\,dz$ for $x\in[10^{-2},10^{3}]$ on a log $x$ axis, together with $x/5$ and $\ln x$ (and optionally $\ln x-5/3$, the true large-$x$ asymptote).
+- [Graph] Add a plot of the running coupling (7.188), $1/\alpha(q^2)$ versus $\log_{10}(-q^2/m^2c^2)$ from $10^{-2}$ to $10^{10}$, marking the head-on $v=c/10$ point of Problem 7.41 (correction $\approx6\times10^{-6}$), and note that the measured $1/\alpha\approx128$ at the $Z$ mass also includes muon, tau, and quark loops.
+- [Simplify] (7.178)–(7.180): the letter $x$ is first a mass-squared integration variable in $\int_{m^2}^{\infty}dx/x$ and then the dimensionless argument of $f(x)$; rename the dummy variable (e.g. $\int_{m^2}^{\infty}d\kappa^2/\kappa^2$) and say that the $c^2$ factors are suppressed in those limits.
+- [Intuition] Point 2: add the physical picture: virtual pairs act as a polarizable dielectric, so at large distance (small $|q^2|$) the charge is screened and $\alpha(0)\approx1/137.036$, while probing closer (large $|q^2|$) sees more of the bare charge, hence $\alpha$ grows.
+- [Links] Dead superscripts `<sup>7</sup>` and `<sup>8</sup>` should link to [[7.B References and Notes]]; "Chapter 2" and "Chapter 6" should link to the corresponding notes; "Section 7.6" should link to [[7.6 Examples]].
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/07 Quantum Electrodynamics/7.B References and Notes.md
+priority: low
+graph: no
+manim: no
+summary: A short, accurate reference list; no change needed beyond making it reachable from the dead footnote superscripts in 7.7–7.9.
+- [Links] Add block IDs (e.g. `^ref-5` to `^ref-8`) to references 5–8 so the `<sup>5</sup>`–`<sup>8</sup>` markers in [[7.7 Casimir's Trick and the Trace Theorems]], [[7.8 Cross Sections and Lifetimes]], and [[7.9 Renormalization]] can link directly to them.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/07 Quantum Electrodynamics/7.P Problems.md
+priority: low
+graph: no
+manim: no
+summary: A clean problem list whose supplied answers check out (7.7 normalization, 7.33 identities, 7.34–7.36 cross sections), apart from one wrong denominator in a hint.
+- [Correctness] Problem 7.34 hint: the interference term must have denominator $4(p_1-p_3)^2(p_1-p_4)^2$, because $\mathcal M_2$ in (7.105) carries $1/(p_1-p_4)^2$; the written $(p_2-p_4)^2$ equals $(p_1-p_3)^2$ and would repeat the first propagator instead.
+- [Links] "Compare the answers to Problems 7.35 and 7.36. (See footnote page 234)" points to a printed page; link it to the classical-limit footnote in [[7.6 Examples]] instead, and link "Halzen and Martin, ref. 7" and "ref. 3" to [[7.B References and Notes]].
+- [Structure] Problem 7.44(a) has a stray closing parenthesis in "$e^++e^-\to\gamma+\gamma$)"; remove it.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/08 Electrodynamics of Quarks and Hadrons/8.1 Electron-Quark Interactions.md
+priority: low
+graph: no
+manim: no
+summary: Short, clear chapter introduction that names the two processes (e+e- to hadrons, deep inelastic scattering) with their basic diagrams.
+- [Links] Turn the plain-text references into wiki links: "Chapter 7" to [[7.5 The Feynman Rules for Quantum Electrodynamics]], and point the two diagrams to [[8.2 Hadron Production in e⁺e⁻ Scattering]] and [[8.4 Inelastic Electron-Proton Scattering]] / [[8.5 The Parton Model and Bjorken Scaling]] so the intro works as a chapter hub.
+- [Intuition] Add one sentence that the two diagrams are crossing-related versions of the same QED vertex pair (annihilation in the s-channel vs. photon exchange in the t-channel), which is why the same QED machinery covers both.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/08 Electrodynamics of Quarks and Hadrons/8.2 Hadron Production in e⁺e⁻ Scattering.md
+priority: medium
+graph: yes
+manim: no
+summary: Faithful and readable transcription of the R-ratio argument, but it carries an index error in eq. (8.2), a GeV/MeV slip, and 1987-era statements about the top quark and the SLC presented as current.
+- [Correctness] Eq. (8.2): the second trace is written $\operatorname{Tr}[\gamma^\mu(\not p_4-Mc)\gamma^\nu(\not p_3+Mc)]$ with upper indices, so the two traces are not contracted; it must be $\operatorname{Tr}[\gamma_\mu(\not p_4-Mc)\gamma_\nu(\not p_3+Mc)]$ (compare eq. 7.124).
+- [Correctness] In the paragraph after eq. (8.11): "an underestimate in the region above $1784\,\mathrm{GeV}$" must be $1784\,\mathrm{MeV}$ (the tau threshold, as stated correctly earlier in the note and in the footnote).
+- [Correctness] Outdated statements presented as current: "By 1987 the Linear Collider at SLAC should be operating" and "evidently its [top] mass exceeds $18\,\mathrm{GeV}/c^2$"; add a callout that SLC/LEP ran from 1989, the top was discovered in 1995 with $m_t\approx172.6\,\mathrm{GeV}/c^2$ (PDG), so the $R=5$ step lies above $2E\approx345\,\mathrm{GeV}$ and was never seen in $e^+e^-\to$ hadrons, and that near $2E\approx91\,\mathrm{GeV}$ $Z^0$ exchange dominates.
+- [Graph] Plot the predicted staircase $R(E)$ versus beam energy $E$ (0.5 to 20 GeV) using eq. (8.5) with the electron mass dropped, $R=3\sum_i Q_i^2\sqrt{1-(M_ic^2/E)^2}[1+\tfrac12(M_ic^2/E)^2]$, with $M_uc^2\approx M_dc^2\approx0$, $M_sc^2\approx0.5$, $M_cc^2\approx1.5$, $M_bc^2\approx4.7\,\mathrm{GeV}$, plus dashed horizontal lines at 2, 10/3, 11/3 and the no-color curve (divided by 3), to show the smoothed corners the text mentions.
+- [Simplify] State explicitly right before eq. (8.8) that the muon-pair cross section is eq. (8.6) with $Q=1$, so $R$ is the ratio of two copies of (8.6) and all kinematic factors cancel; the current "equation (8.6) gives" leaves this step implicit.
+- [Intuition] Add a one-line limiting case of eq. (8.4): for $E\gg Mc^2$ it becomes $Q^2g_e^4(1+\cos^2\theta)$, the angular distribution of spin-1/2 pair production, which is also the experimental signature that quarks carry spin 1/2 in two-jet events.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/08 Electrodynamics of Quarks and Hadrons/8.3 Elastic Electron-Proton Scattering.md
+priority: medium
+graph: yes
+manim: no
+summary: The tensor construction leading to the Rosenbluth formula is clear and the algebra checks out, but the current-conservation condition is misprinted and the form factors are never connected to the plotted $G_E$, $G_M$.
+- [Correctness] Eq. (8.16) reads $q_\mu K^{\mu\nu}=1$; it must be $q_\mu K^{\mu\nu}=0$ (current conservation; Problem 8.4's hint and eq. 8.30 use 0, and eq. 8.17 follows only from 0).
+- [Correctness] Footnote ep-8-3-regimes cites "The Mott formula (7.127)"; in the vault eq. (7.127) is the amplitude and the Mott formula is eq. (7.128) (as Problem 8.10 correctly cites).
+- [Correctness] Symbol clash: bare $K$ (proton anomalous magnetic moment, factor $1+K$ in the Fig. 8.4 caption and table) shares its letter with the form factors $K_1,K_2,K_4,K_5$ and the tensor $K^{\mu\nu}$; rename it $\kappa_p$ (value 1.7928) here and in 8.B.
+- [Structure] Add a short bridge after eq. (8.23) giving the conversion used in Fig. 8.4: $K_1=-q^2G_M^2$, $K_2=(2Mc)^2(G_E^2+\tau G_M^2)/(1+\tau)$ with $\tau=-q^2/(4M^2c^2)$, so the reader can relate the Rosenbluth formula to the plotted $G_E$, $G_M$ and the point-proton limit $G_E=G_M=1$.
+- [Graph] Plot the dipole form factor $G_d(Q^2)=(1+Q^2/0.71\,\mathrm{GeV}^2)^{-2}$ for $Q^2=0$ to $10\,(\mathrm{GeV}/c)^2$ on a log axis, together with $E'/E$ from eq. (8.21) versus $\theta$ (0 to 180 deg) for $E=0.5,2,10\,\mathrm{GeV}$, to show both the structure falloff and the recoil.
+- [Simplify] Before eq. (8.15), say in one sentence why each term is allowed (only $g^{\mu\nu}$ and products of $p,q$ are available) and that dividing by $(Mc)^2$ gives all $K_i$ units of momentum squared; also note that $q\cdot p=-q^2/2$ follows from $(p+q)^2=p^2$.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/08 Electrodynamics of Quarks and Hadrons/8.4 Inelastic Electron-Proton Scattering.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct and well-structured derivation of the inclusive cross section (8.33), dense but logically complete; it would benefit from a kinematic picture of the $(E',\theta)$ plane.
+- [Correctness] Symbol clash: $W$ is used for the missing mass in the Fig. 8.5 caption and table ($W=\sqrt{p_{\mathrm{tot}}^2}/c$) and also for the structure functions $W_1,W_2,W_4,W_5$ and the tensor $W^{\mu\nu}$; rename the missing mass (for example $M_X$) or add an explicit warning in the table.
+- [Intuition] After eq. (8.34), add $p_{\mathrm{tot}}^2=(p+q)^2=M^2c^2+2q\cdot p\,(1-x)$, which shows directly that $x=1$ is elastic, why $0\le x\le1$, and why larger missing mass means smaller $x$.
+- [Graph] Plot the scattered energy $E'$ versus $\theta$ for $E=10\,\mathrm{GeV}$ with curves of constant missing mass $W=0.938$ (elastic, eq. 8.21), 1.232, 1.5, 2, 3 GeV, and overlay contours of constant $x$ (0.1, 0.25, 0.5), to show that inelastic scattering fills a 2D region while elastic scattering is one line.
+- [Simplify] Between (8.32) and (8.33), quote the lab-frame intermediate results $q\cdot p=M(E-E')$, $-q^2=(4EE'/c^2)\sin^2(\theta/2)$ and $L^{\mu\nu}W_{\mu\nu}=(4EE'/c^2)[2W_1\sin^2(\theta/2)+W_2\cos^2(\theta/2)]$, so the reader sees how (8.28) turns into (8.33).
+- [Example] Sketch the check of eq. (8.35) in the note: insert it into (8.33), convert $\delta(x-1)$ into a delta in $E'$ at fixed $\theta$, and show that the $E'$ integral reproduces (8.23) including the factor $E'/E$; this makes the elastic-as-special-case claim concrete (full details remain Problem 8.12).
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/08 Electrodynamics of Quarks and Hadrons/8.5 The Parton Model and Bjorken Scaling.md
+priority: medium
+graph: yes
+manim: yes
+summary: Clear historical and derivational account of scaling and Callan–Gross, with one dimensional error in eq. (8.40) and an under-explained delta-function step.
+- [Correctness] Eq. (8.40): $W_2^i=-\frac{2m_ic\,Q_i^2}{q^2}\delta(x_i-1)$ is missing a factor $c$; from (8.35) and (8.36) with $M\to m_i$ it is $W_2^i=-\frac{2m_ic^2Q_i^2}{q^2}\delta(x_i-1)$ (needed for units $\mathrm{g^{-1}}$ and for eq. 8.45, which correctly has $c^2$).
+- [Simplify] Between (8.44) and (8.45), show the step $\delta(x/z_i-1)=z_i\,\delta(x-z_i)$ together with $m_i=z_iM$, which is where $1/(2m_i)$ becomes $1/(2M)$ and $m_i$ in $W_2$ becomes $x^2M$; currently "hence" hides the only nontrivial manipulation.
+- [Intuition] Explain why scaling signals pointlike constituents: scattering off a pointlike target introduces no length scale, so the structure functions can depend only on the dimensionless ratio $x$, whereas a target of size $a$ brings in a scale $\hbar/a$ and makes the response fall with $-q^2$ as in Fig. 8.4.
+- [Graph] Plot $F_2$ versus $-q^2$ at fixed $x=0.25$ for (a) a pointlike-parton model (flat line, as in Fig. 8.6) and (b) an extended constituent with dipole suppression $G_d^2(Q^2)$, $Q^2=0.5$ to $10\,(\mathrm{GeV}/c)^2$, to contrast scaling with the elastic falloff.
+- [Manim] Animate the infinite-momentum-frame picture: a boosted proton flattens into a disk of three partons each carrying a fraction $z_i$ of $p$, the virtual photon strikes one parton with $x=z_i$, and the struck parton recoils while the rest move on, illustrating why $x$ equals the struck momentum fraction.
+- [Structure] Call $f_i(z_i)$ a probability density (as in the table and in 8.6) rather than "the probability that the $i$th quark carries momentum fraction $z_i$", and state its normalization $\int_0^1f_i\,dz=1$ here where it is first used.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/08 Electrodynamics of Quarks and Hadrons/8.6 Quark Distribution Functions.md
+priority: medium
+graph: yes
+manim: yes
+summary: The momentum and sea-quark sum-rule arithmetic checks out and the gluon-momentum argument is clear, but the sea-quark assumptions are presented without the later data that contradict them.
+- [Structure] Add a callout after eq. (8.62) that the symmetric-sea assumption is a 1987 simplification: the NMC Gottfried-sum-rule measurement and Drell–Yan data (E866) show $\bar d(x)>\bar u(x)$, and the strange sea is suppressed relative to $\bar u,\bar d$, so eq. (8.64) is only a rough model.
+- [Graph] Plot representative distributions, for example $u_v(x)\propto x^{-0.5}(1-x)^3$ normalized so $\int u_v=2$, $d_v(x)\propto x^{-0.5}(1-x)^4$ with $\int d_v=1$, and a small sea $s(x)\propto x^{-1}(1-x)^7$, shown as $xq(x)$ for $0<x<1$, together with the resulting $F_2(x)$ from eqs. (8.56) and (8.63); this makes Fig. 8.8 reproducible and shows why the sea matters only at low $x$.
+- [Manim] Animate the smearing of the naive delta peaks at $x=1/3$ from eq. (8.55) into broad valence distributions, then add the rising low-$x$ sea component and shade the missing momentum fraction $1-0.54$ attributed to gluons.
+- [Example] Show the short derivations explicitly: $\int F_2=\tfrac49\int xu+\tfrac19\int xd=(\tfrac89+\tfrac19)\int xd$ for eq. (8.58), and $2\int F_1=1+\tfrac43\int s$ from (8.64) and (8.65) for eq. (8.66), since these are the note's key quantitative results.
+- [Intuition] Add the modern comparison: gluons carry about half of the proton momentum at $Q^2\sim10\,(\mathrm{GeV}/c)^2$, consistent with the 54% quark fraction of eq. (8.60), and the integral in (8.66) diverges because $s(x)\sim1/x$ as $x\to0$, which explains the "0.5 to infinity" remark.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/08 Electrodynamics of Quarks and Hadrons/8.B References and Notes.md
+priority: low
+graph: no
+manim: no
+summary: Reference list with a useful notation glossary; the quoted $K_1,K_2,G_E,G_M$ relations agree with the standard Rosenbluth form.
+- [Structure] Rename bare $K$ (anomalous moment, 1.7928) to $\kappa_p$ consistently with 8.3 so it is not confused with $K_1,K_2$; otherwise no change needed.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/08 Electrodynamics of Quarks and Hadrons/8.P Problems.md
+priority: low
+graph: no
+manim: no
+summary: Problem list transcribed cleanly; the supplied answers (8.6, 8.13, 8.14, 8.15) check out.
+- [Links] Link equation references to their notes, for example "equation (8.16)" to [[8.3 Elastic Electron-Proton Scattering]] and "Mott formula (7.128)" to [[7.8 Cross Sections and Lifetimes#Example 7.7 Mott and Rutherford Scattering]]; note that Problem 8.4 asks to prove (8.16), which is currently misprinted as $q_\mu K^{\mu\nu}=1$ in 8.3.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/09 Quantum Chromodynamics/9.1 Feynman Rules for Chromodynamics.md
+priority: medium
+graph: no
+manim: no
+summary: Faithful and correct transcription of the QCD Feynman rules (λ matrices, structure constants and vertices all check out), but it is a dense list with little guidance on how color factors arise in practice.
+- [Correctness] Symbol clash: $\signal{c}$ is the quark color vector (9.3, 9.12, 9.13) while $\mechanical{c}$ is the speed of light in the propagator (9.15) and the table; rename the color vector (for example $\signal{\xi}$) or add an explicit warning next to (9.15).
+- [Structure] The four-gluon vertex sentence "(summation over $\eta$ implied." is missing its closing parenthesis; the file also starts with a UTF-8 BOM, which the vault rules forbid.
+- [Intuition] Before (9.17), add one sentence on why the vertex carries $\lambda^\alpha/2$: the color part $c_{out}^\dagger\lambda^\alpha c_{in}$ projects the quark color change onto gluon state $|\alpha\rangle$; show it for the pictured $r\to b$ vertex (only $\lambda^1,\lambda^2$ contribute, i.e. gluons $|1\rangle,|2\rangle$ combine to $r\bar b$).
+- [Simplify] Add a short summary table comparing QED and QCD rules (coupling $g_e\to g_s/2$, extra color vectors $c$, $a$, matrix $\lambda^\alpha$, new three- and four-gluon vertices) so the reader sees that only the color bookkeeping and the self-interaction are new.
+- [Links] Replace the bare references "Section 5.8", "Sect. 7.4", "equation (7.81)" and the superscript reference "1" with wiki links to [[5.8 Light Quark Mesons]], [[7.4 The Photon]] and [[9.B References and Notes]].
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/09 Quantum Chromodynamics/9.2 The Quark-Quark Interaction.md
+priority: medium
+graph: yes
+manim: no
+summary: Clear worked color-factor examples with correct final values ($-1/6$, $4/3$, $1/3$, $-2/3$), but two transcription errors in the triplet formulas and stale book page references.
+- [Correctness] In the triplet list (9.34) the second state reads "bg-gb)/\sqrt2" with a missing opening parenthesis; it should be $(bg-gb)/\sqrt2$.
+- [Correctness] In Example 9.4 the first display has a minus sign before the fourth term $[(0\,1\,0)\lambda^\alpha(0\,1\,0)^T][(1\,0\,0)\lambda^\alpha(1\,0\,0)^T]$; expanding $(rb-br)\otimes(rb-br)$ gives $+\lambda^\alpha_{22}\lambda^\alpha_{11}$ (as the next line correctly has), so the sign must be $+$.
+- [Graph] Plot $V(r)/(\alpha_s\hbar c)$ versus $r$ (arbitrary units, $r\in[0.1,3]$) for the four channels: singlet $-\tfrac43/r$, triplet $-\tfrac23/r$, octet $+\tfrac16/r$, sextet $+\tfrac13/r$, to make the "maximally attractive channel" ordering visible at a glance.
+- [Example] Add a short cross-check using the identity of Problem 9.9, $\lambda^\alpha_{ij}\lambda^\alpha_{kl}=2\delta_{il}\delta_{jk}-\tfrac23\delta_{ij}\delta_{kl}$, or the Casimir shortcut $f=\pm\tfrac12[C(\text{pair})-C_1-C_2]$ (with $C_3=\tfrac43$, $C_{\bar 3}=\tfrac43$, $C_8=3$, $C_6=\tfrac{10}{3}$, $C_1=0$) that reproduces all four factors in one line.
+- [Intuition] The diquark footnote ("speculation about the possible existence of diquarks within nuclei") is dated; add a modern note that diquark correlations are used in hadron spectroscopy and that tetraquark and pentaquark states have been observed (e.g. LHCb pentaquarks 2015, $T_{cc}^+$ 2021).
+- [Links] Replace "footnote (*) on p. 284", "footnote, page 234", "(7.104)", "(7.106)" and "Section 5.9" with wiki links to [[9.1 Feynman Rules for Chromodynamics]], [[7.6 Examples]] and [[5.9 Baryons]]; the file also has a UTF-8 BOM to remove.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/09 Quantum Chromodynamics/9.3 Pair Annihilation in QCD.md
+priority: medium
+graph: no
+manim: no
+summary: The derivation is correct (three-gluon vertex momenta, kinematics (9.46)-(9.48), color factor $\sqrt{2/3}$ and rate (9.66) all re-derive), but it is a long algebra chain without a roadmap and with one garbled sentence.
+- [Correctness] Symbol clash: $\signal{c}$, $\signal{c_1}$, $\signal{c_2}$ are color vectors while $\mechanical{c}$ is the speed of light in the same equations (9.40)-(9.66); rename the color vectors or warn explicitly.
+- [Structure] Add a short roadmap before (9.40): three diagrams, then the at-rest limit, then the spin singlet, then the color singlet, then cross section and $\eta_c$ rate, so the reader knows where the algebra is heading.
+- [Simplify] The sentence "Just as the cross section for $e^++e^-\to\gamma+\gamma$ indicated, the positronium decay rate $\Gamma=\sigma v|\psi(0)|^2$" is incomplete; rewrite as "Just as the $e^+e^-\to\gamma\gamma$ cross section gave the positronium decay rate via $\Gamma=\sigma v|\psi(0)|^2$, ...".
+- [Intuition] Explain in one sentence why the three-gluon diagram drops out at rest in the spin singlet: it is proportional to $\epsilon_3\cdot\epsilon_4$, while the spin-0 amplitude needs $(\boldsymbol\epsilon_3\times\boldsymbol\epsilon_4)_z$; note that it is still needed for gauge invariance (Problem 9.11).
+- [Simplify] Write the meson as $J/\psi$ in "note that $\psi$ and $\Upsilon$ themselves carry spin 1" to avoid confusion with the wave function $\signal{\psi}(0)$ used two lines earlier; remove the UTF-8 BOM.
+- [Links] Link "Example 7.8", "(7.137)-(7.168)" and "Problems 9.10-9.13" to [[7.6 Examples]], [[7.8 Cross Sections and Lifetimes]], [[9.P Problems]] and [[5.7 Quarkonium]].
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/09 Quantum Chromodynamics/9.4 Asymptotic Freedom.md
+priority: medium
+graph: yes
+manim: no
+summary: Formulas (9.67)-(9.71) and the $10^{280}$ MeV Landau-pole estimate are correct, but the running is never shown graphically, the $\Lambda$ range is outdated, and the antiscreening mechanism is left without intuition.
+- [Correctness] Eq. (9.72) "100 MeV < $\Lambda c$ < 500 MeV" is outdated; add current values, e.g. $\alpha_s(M_Z)=0.1180\pm0.0009$ (PDG 2024), $\Lambda^{(5)}_{\overline{MS}}\approx 210$ MeV, $\Lambda^{(3)}\approx 340$ MeV, and note that $\Lambda$ depends on the scheme and the number of active flavors.
+- [Correctness] "$f$ is the number of flavors (6, in the Standard Model)" is misleading for (9.69): $f$ must be the number of active flavors with $m_q c\lesssim|q|$ (e.g. $f=5$ between $m_b$ and $m_t$), and $\Lambda$ changes at each threshold.
+- [Graph] Plot $\alpha_s(Q)$ from (9.71) with $n=3$, $f=5$, $\Lambda c=0.21$ GeV for $Q$ from 1 to 1000 GeV on a log axis, next to $\alpha(Q)$ from (9.68) (rising from 1/137 to roughly 1/128 at 91 GeV once all charged fermions are included) to contrast antiscreening and screening.
+- [Intuition] Replace "I do not know of a persuasive qualitative explanation" with the standard picture: the QCD vacuum acts as a color paramagnet; the gluon spin gives a paramagnetic (antiscreening) contribution that outweighs the diamagnetic (screening) one, producing the $-11n$ coefficient, while each quark flavor screens like an electron loop and contributes $+2$.
+- [Structure] Remove the physical-quantities row with symbol "—" ("Formal pole energy"), which lists no symbol; remove the UTF-8 BOM; link the superscripts 4-6 and "eq. (7.185)" to [[9.B References and Notes]] and [[7.9 Renormalization]].
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/09 Quantum Chromodynamics/9.5 Applications of QCD.md
+priority: medium
+graph: yes
+manim: no
+summary: A short, readable 1980s outlook whose claims about what QCD cannot calculate are now outdated.
+- [Correctness] "Why don't we now calculate the neutron-proton mass difference ... or the binding energy of the deuteron?" and "embarrassingly meager" are outdated: lattice QCD+QED has computed the neutron-proton mass difference (Borsanyi et al., Science 347, 1452 (2015)) and the light hadron spectrum to about 1%; add a dated callout with the current status.
+- [Intuition] Add a callout that a rigorous proof of confinement and the mass gap is still open (Clay Millennium problem), so the "rigorous proof would be preferable" remark stays accurate today.
+- [Graph] Plot $R(\sqrt s)=3\sum_q Q_q^2\,(1+\alpha_s/\pi)$ versus $\sqrt s$ from 1 to 50 GeV, with steps at the c and b thresholds ($2\to10/3\to11/3$ before the QCD correction) to illustrate the "QCD corrections to the $R$ formula".
+- [Links] Link "eq. (8.8)" to the corresponding note in the 08 Electrodynamics of Quarks and Hadrons folder and the superscripts 7-9 to [[9.B References and Notes]]; remove the UTF-8 BOM.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/09 Quantum Chromodynamics/9.B References and Notes.md
+priority: low
+graph: no
+manim: no
+summary: Reference list, accurate apart from one journal-name transcription error.
+- [Correctness] Ref. 6 lists Politzer's review as "*Phys. Rev.* **14C**, 130 (1974)"; the source PDF (and the actual publication) has *Phys. Rep.* **14C**, so it should read *Phys. Rep.*; also remove the UTF-8 BOM.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/09 Quantum Chromodynamics/9.P Problems.md
+priority: low
+graph: no
+manim: no
+summary: Problem set transcribed cleanly (the Problem 9.9 identity, the Problem 9.12 singlet derivation and the 9/8 answer of 9.13 check out), with a few arithmetic and normalization errors.
+- [Correctness] Problem 9.5(a) answer "$\frac{7\cdot6}{3\cdot2\cdot1}=56$" is wrong arithmetic (it equals 7); it should be $\binom83=\frac{8\cdot7\cdot6}{3\cdot2\cdot1}=56$.
+- [Correctness] Problem 9.2: with $\signal{c'}=U\signal{c}$ and the given $U$, red $(1,0,0)^T$ maps to $(0,0,1)^T$ (green), so this $U$ takes $r\to g$, $b\to r$, $g\to b$, not "$r\to b$, $b\to g$, $g\to r$"; either use $U=\begin{pmatrix}0&0&1\\1&0&0\\0&1&0\end{pmatrix}$ or correct the stated mapping.
+- [Correctness] Problems 9.6(b), 9.6(c) and 9.8 write the states as "$(r\bar r-b\bar b)\sqrt2$", "$(r\bar r+b\bar b-2g\bar g)\sqrt6$", "$(rb+br)\sqrt2$"; the normalized states are divided by $\sqrt2$, $\sqrt6$, $\sqrt2$ (cf. (9.4), (9.35)).
+- [Structure] Use $\signal{\epsilon_3}$ in Problem 9.11 to match the colored notation of 9.3, and remove the UTF-8 BOM.

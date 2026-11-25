@@ -1,0 +1,497 @@
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/05 Probability and Uncertainty/15 Expectation Value and Uncertainty/99 Exercises/04 Exercise 4.md
+priority: low
+graph: yes
+manim: yes
+summary: Clear, correct worked solution; state evolution, Pauli expectations, Ehrenfest check and precession direction all verified.
+- [Graph] Add a 2D plot of $\langle\sigma_x\rangle=\cos(\omega t)$, $\langle\sigma_y\rangle=\sin(\omega t)$, $\langle\sigma_z\rangle=0$ versus $\omega t\in[0,4\pi]$ next to part (b), so the quarter-period phase lag between the x and y components is visible.
+- [Manim] In part (d), animate the Bloch vector starting at $+x$ and precessing counterclockwise on the equator about $+z$, with the global spinor phase shown separately reaching $-1$ at $\omega t=2\pi$, to make the spinor-sign versus Bloch-vector periodicity concrete.
+- [Intuition] In part (b), add one sentence that the relative phase $\arg(\alpha^*\beta)=\omega t$ is exactly the azimuthal angle of the Bloch vector, which explains why only the energy difference matters.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/05 Probability and Uncertainty/15 Expectation Value and Uncertainty/99 Exercises/05 Exercise 5.md
+priority: low
+graph: yes
+manim: yes
+summary: Correct and carefully explained; the cross matrix element $-16L/(9\pi^2)$ and the amplitude $32L|c_1c_2|/(9\pi^2)$ check out.
+- [Graph] Plot $\langle\hat x\rangle(t)/L=1/2-(16/(9\pi^2))\cos(\Omega t-\varphi)$ for $|c_1|=|c_2|=1/\sqrt2$ and $\varphi=0,\pi/2$ over $\Omega t\in[0,4\pi]$, with dashed lines at $L/2\pm A_{\max}$ (about $0.32L$ and $0.68L$).
+- [Manim] Animate the probability density $|\psi(x,t)|^2$ of the equal superposition sloshing between the two halves of the box, with a dot marking $\langle\hat x\rangle(t)$, to show that interference rather than motion of either eigenstate creates the oscillation.
+- [Intuition] After the final formula, add the limiting-case remark that $A_{\max}\approx0.18L$, so even the maximal two-state oscillation keeps the mean well inside the box; more levels are needed for a localized bouncing packet.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/05 Probability and Uncertainty/15 Expectation Value and Uncertainty/99 Exercises/06 Exercise 6.md
+priority: low
+graph: yes
+manim: no
+summary: A complete, correct capstone solution; moments, uncertainty product, mean motion and the ground-state Gaussian are all verified.
+- [Graph] In part (e), plot $\psi_0(x)$ and $|\psi_0(x)|^2$ in units of $x_0=\sqrt{\hbar/(m\omega)}$ over $x/x_0\in[-3,3]$, together with the potential $V/(\hbar\omega)=(x/x_0)^2/2$ and the level $E_0/(\hbar\omega)=1/2$, marking the classical turning points $x/x_0=\pm1$.
+- [Example] In the paragraph after part (c) on equal kinetic and potential shares, write the equations $\langle\hat p^2\rangle_n/(2m)=\tfrac12m\omega^2\langle\hat x^2\rangle_n=E_n/2$ explicitly instead of describing them only in words.
+- [Simplify] In part (d), state the cross-term formula $\langle\hat x\rangle=2\operatorname{Re}[c_0^*c_1\langle0|\hat x|1\rangle e^{-i\omega t}]$ before substituting, matching the structure used in Exercise 5.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/06 Formula Collection/00 Formula Collection.md
+priority: low
+graph: no
+manim: no
+summary: A clear hub with a useful task-based guide; all topic links resolve.
+- [Structure] No change needed; optionally add one-line descriptions after each topic link so the hub doubles as an index.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/06 Formula Collection/01 Complex Numbers.md
+priority: low
+graph: yes
+manim: no
+summary: Concise and correct reference; the interference example is a good touch.
+- [Graph] Plot $|1+e^{i\theta}|^2=2+2\cos\theta$ for $\theta\in[0,2\pi]$ next to the relative-phase paragraph, with the constant individual squared moduli (value 1) shown as a dashed line.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/06 Formula Collection/02 Gaussian Integrals.md
+priority: low
+graph: yes
+manim: no
+summary: Correct formulas with useful checks, including the amplitude-versus-density variance trap.
+- [Graph] Plot the normalized densities $\sqrt{a/\pi}e^{-ax^2}$ for $a=0.5,1,2$ over $x\in[-4,4]$ to illustrate the stated variance $1/(2a)$ and the narrowing for larger $a$.
+- [Example] Add the general moment $\int x^{2n}e^{-ax^2}dx=\frac{(2n-1)!!}{(2a)^n}\sqrt{\pi/a}$, obtained by repeated differentiation in $a$, since the note already explains the differentiation trick and the fourth moment appears in uncertainty calculations.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/06 Formula Collection/03 Linear Algebra.md
+priority: low
+graph: no
+manim: no
+summary: Correct and compact; the counterexample $\operatorname{Tr}(ABC)=1\neq\operatorname{Tr}(ACB)=2$ is verified.
+- [Example] Add the companion identities $\operatorname{Tr}(A^\dagger)=\overline{\operatorname{Tr}A}$ and $(A^{-1})^\dagger=(A^\dagger)^{-1}$, which are used alongside the listed rules when checking Hermiticity of expectation values.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/06 Formula Collection/04 Dirac Notation and Quantum Mechanics.md
+priority: low
+graph: no
+manim: no
+summary: Correct reference with careful domain remarks; the commutator sign check is described only in words.
+- [Simplify] Replace the verbal description of the commutator check with the one-line calculation $[\hat x,\hat p]\psi=-i\hbar x\psi'+i\hbar(\psi+x\psi')=i\hbar\psi$; it is shorter and clearer than the prose.
+- [Example] Under the Leibniz rule, add the consequence $[\hat x,\hat p^2]=2i\hbar\hat p$ as a worked application, the identity most often needed with these formulas.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/06 Formula Collection/05 Fourier Transform.md
+priority: low
+graph: yes
+manim: no
+summary: Correct symmetric-convention reference with a verified Gaussian check ($\hat f=e^{-k^2/2}$, both squared norms $\sqrt\pi$).
+- [Graph] Plot $f(x)=e^{-x^2/(2\sigma^2)}$ and its transform $\sigma e^{-\sigma^2k^2/2}$ for $\sigma=0.5,1,2$ on shared axes to show the reciprocal width relation that motivates the uncertainty principle.
+- [Example] In the last paragraph, give the explicit momentum version $\tilde\psi(p)=(2\pi\hbar)^{-1/2}\int\psi(x)e^{-ipx/\hbar}dx=\hbar^{-1/2}\hat\psi(p/\hbar)$, so the measure change described in words appears as a formula.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/06 Formula Collection/06 Pauli Matrices and Spin Operators.md
+priority: low
+graph: no
+manim: no
+summary: Correct and well organized; exponentials, algebra and eigenstates check out.
+- [Example] Add the general formula $e^{i\theta\,\hat n\cdot\boldsymbol\sigma/2}=\cos(\theta/2)\hat I+i\sin(\theta/2)\,\hat n\cdot\boldsymbol\sigma$ for a unit vector $\hat n$, of which the two displayed exponentials are special cases.
+- [Example] Add the product identity $(\mathbf a\cdot\boldsymbol\sigma)(\mathbf b\cdot\boldsymbol\sigma)=(\mathbf a\cdot\mathbf b)\hat I+i(\mathbf a\times\mathbf b)\cdot\boldsymbol\sigma$, which compactly encodes both the commutator and the anticommutator in the Algebra section.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/06 Formula Collection/07 Harmonic Oscillator Operators.md
+priority: low
+graph: yes
+manim: no
+summary: Correct reference with a justified source-correction callout; the coefficient product $\hbar/2$ is verified.
+- [Graph] Plot $V(x)=\tfrac12m\omega^2x^2$ with the first four levels $E_n=\hbar\omega(n+1/2)$ as horizontal lines (dimensionless $x/x_0\in[-3,3]$, $E/\hbar\omega$) to visualize the equal spacing and the zero-point energy.
+- [Example] In "Commutator and Hamiltonian", show the two-line computation giving $\hat a^\dagger\hat a=\hat H/(\hbar\omega)-\hat I/2$ instead of only describing it.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/06 Formula Collection/08 Basic Trigonometric Identities.md
+priority: low
+graph: no
+manim: no
+summary: Correct and adequate reference; the orthonormality remark is helpful.
+- [Structure] No change needed; optionally add the double-angle forms $\sin^2\theta=(1-\cos2\theta)/2$ and $\cos^2\theta=(1+\cos2\theta)/2$, which the normalization derivation actually uses.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/06 Formula Collection/09 Fourier Series and Notable Values.md
+priority: low
+graph: yes
+manim: yes
+summary: Correct sums and series with good convergence remarks.
+- [Graph] Plot partial sums $S_N(x)$ of the sign-function series for $N=1,3,10,50$ terms over $x\in[-\pi,\pi]$ together with $\operatorname{sgn}(x)$, to show the Gibbs overshoot (about 9% of the jump) described in the convergence paragraph.
+- [Manim] Animate the sawtooth partial sums as $N$ increases from 1 to 30, highlighting that the overshoot near $x=\pm\pi$ narrows but does not shrink in height.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/06 Formula Collection/10 Basic Physical Constants.md
+priority: low
+graph: no
+manim: no
+summary: Correct rounded constants and consistent atomic-unit relations.
+- [Example] Add $h\approx6.626\times10^{-34}\,\mathrm{J\,s}$, $1\,\mathrm{eV}=1.602\times10^{-19}\,\mathrm{J}$ and $\hbar c\approx197.3\,\mathrm{eV\,nm}$, since the Hartree is quoted in eV while the rest is SI and the note itself warns about this mixing.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/07 Notation Comparison/00 Notation Comparison.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub with a useful translation route; links resolve.
+- [Structure] No change needed.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/07 Notation Comparison/01 The Inner Product.md
+priority: low
+graph: no
+manim: no
+summary: Correct comparison; the worked values ($i$ versus $-i$, coefficient $i/\sqrt2$ in both conventions) check out.
+- [Structure] Put the answer to "Try the translation" in a collapsed callout so readers can attempt it first; currently the answer is given in the same sentence as the question.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/07 Notation Comparison/02 The Adjoint of an Operator.md
+priority: low
+graph: no
+manim: no
+summary: Correct and careful; the explicit adjoint and Gram-matrix example $N=\begin{pmatrix}0&0\\1/2&0\end{pmatrix}$ are verified.
+- [Example] In the Gram-matrix check, show the numbers: with $u=e_1$, $v=e_2$, $u^\dagger GMv=1$ and $(Nu)^\dagger Gv=(1/2)\cdot2=1$, while using $M^\dagger$ would give 2; this completes the "check the basis dependence" exercise for the reader.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/07 Notation Comparison/03 The Fourier Transform.md
+priority: low
+graph: no
+manim: no
+summary: Correct convention table and conversion $\hat f_{\rm sym}(k)=\hat f_{\rm cyc}(k/2\pi)/\sqrt{2\pi}$; well checked.
+- [Example] Add the physics momentum convention as a fourth row, $\tilde\psi(p)=(2\pi\hbar)^{-1/2}\int\psi(x)e^{-ipx/\hbar}dx$, since it is the one quantum-mechanics readers most often need to translate to.
+- [Structure] The physical-quantities table lists only $t$ and $\nu$; add a sentence that $x$, $k$ and $\xi$ are generic variables without fixed units here, so the table does not look incomplete.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/07 Notation Comparison/04 Index Conventions.md
+priority: low
+graph: no
+manim: no
+summary: Correct and clear; the examples $Av=(2,3)^T$ and second column of $AB=(4,6)^T$ check out.
+- [Structure] No change needed.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/07 Notation Comparison/05 Dirac Notation versus Function Notation.md
+priority: low
+graph: no
+manim: no
+summary: Correct and careful dictionary with an appropriate distribution caveat.
+- [Example] Add the momentum rows $\langle x|p\rangle=(2\pi\hbar)^{-1/2}e^{ipx/\hbar}$ and $\langle x|\hat p|\psi\rangle=-i\hbar\,\partial_x\psi(x)$, the most common translations readers need after the position rows.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/07 Notation Comparison/06 Recurring Symbols.md
+priority: low
+graph: no
+manim: no
+summary: Correct symbol dictionary with helpful type and normalization checks.
+- [Structure] No change needed; optionally add $\hat H$, $\hat x$, $\hat p$ and $\langle\hat A\rangle$, which recur throughout the book but are missing from the table.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/08 Exercise Solutions.md
+priority: low
+graph: no
+manim: no
+summary: A clear hub; all 15 chapter links resolve and the stated exercise counts match the exercise folders.
+- [Structure] No change needed.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/09 Glossary of Terms.md
+priority: low
+graph: no
+manim: no
+summary: A correct, well-qualified glossary; all chapter links resolve uniquely, with one letter reused for unrelated quantities.
+- [Correctness] Symbol clash in the physical-quantities table and entries: $a$ is simultaneously the potential offset $\energy{a}$ (Ehrenfest entry, unit J), the translation distance $\mechanical{a}$ (Momentum entry, unit m), and an observable eigenvalue $a$ (Projector entry); rename the potential coefficients (e.g. $V_0+F_1x+\tfrac12\kappa x^2$) or the translation (e.g. $\mechanical{s}$) so each symbol has one meaning in the note.
+- [Correctness] In "Pure and mixed states", the displayed mixture $\rho=\sum_ip_i|\psi_i\rangle\langle\psi_i|$ is stated to satisfy $\operatorname{Tr}(\rho^2)<1$ unconditionally, but a mixture of identical states (or a single $p_i=1$) is pure; add "with at least two distinct states and nonzero weights" or reuse the Density matrix entry's "genuinely mixed" qualifier.
+- [Links] Expectation value and Uncertainty entries could also link the course note on expectation value and standard deviation (02 Postulates of Quantum Mechanics/02.06), connecting the math book glossary to the physics course.
+=== 02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/Functions of operators, continuous bases, and Gaussian packets.md
+priority: high
+graph: yes
+manim: no
+summary: Mathematically sound transcription of lecture notes (all checked derivations, eigenvectors and Gaussian moments are correct), but out of order, flat in structure, with a wrong physical-quantities table and an incomplete Gaussian example.
+- [Correctness] The physical-quantities table lists $R$, $T$ (reflection and transmission coefficients) and $a_0$ (Bohr radius), none of which appear in this note; $a_0$ here is the identity coefficient in the Pauli expansion $X=a_0I+\boldsymbol\sigma\cdot\mathbf a$. Replace the table with the quantities actually used ($x$, $k$, $a$, $\Delta$, $\psi$, $A$) or drop it for the purely mathematical parts.
+- [Correctness] Symbol clashes: $X$ denotes both the position operator and the arbitrary $2\times2$ matrix in "Sakurai 1.2"; $\Delta$ denotes both the averaging-interval length in the plane-wave limit and the Gaussian width parameter (while $\Delta X$ is the uncertainty); $L$ is both the interval length $[0,L]$ and the lower limit of the averaging integral. Rename the Sakurai matrix (e.g. $M$) and the averaging length (e.g. $\Lambda$).
+- [Structure] Sections run §1.9, §1.10, then §1.8 (eigenvalue problem), Sakurai 1.2 and Shankar 4.2.4, all as level-5 headings; reorder to §1.8 → §1.9 → §1.10 → Gaussian packet, use H2/H3 headings, and consider moving the Sakurai Pauli expansion to the Pauli formula notes.
+- [Example] The TLDR promises Gaussian wave-packet uncertainty and Fig. 64 shows the momentum amplitude, but the note stops at $\Delta X=\Delta/\sqrt2$; add $\psi(p)=(\Delta^2/(\pi\hbar^2))^{1/4}e^{-ipa/\hbar}e^{-p^2\Delta^2/(2\hbar^2)}$, $\langle P\rangle=0$, $\Delta P=\hbar/(\sqrt2\Delta)$ and the product $\Delta X\Delta P=\hbar/2$.
+- [Intuition] In "Eigenvalues and normalized eigenvectors", note that because $\Omega$ is non-Hermitian its eigenvectors $(1,0,0)$, $(-5,-2,1)/\sqrt{30}$, $(1,0,3)/\sqrt{10}$ are not orthogonal (e.g. $\langle V_1|V_3\rangle=1/\sqrt{10}$), contrasting directly with the preceding Hermitian diagonalization theorem; also replace "using Mathematica" with the one-line hand calculation.
+- [Graph] Plot $|\psi(x)|^2$ and $|\psi(p)|^2$ for the Gaussian packet with $a=2$ and $\Delta=0.5,1,2$ (units $\hbar=1$) side by side, marking $\pm\Delta X$ and $\pm\Delta P$, to replace or complement the scanned Fig. 64 and show the reciprocal widths.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/00.00 Quantum Mechanics.md
+priority: low
+graph: no
+manim: no
+summary: Clean course index; every chapter and section link resolves.
+- [Links] No change needed. Optionally link the four Kabasares worked-problem notes (chapters 1 and 2), which are currently reachable only from 01.02 and the reference collection.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/00.01 Introduction.md
+priority: low
+graph: no
+manim: no
+summary: Clear prose overview of the course with no formulas to check.
+- [Links] Link each Part bullet to its first chapter note (01.00, 04.00, 09.00, 13.00) so the overview works as a second entry point.
+- [Example] Make "one part in a billion" concrete by naming the comparison, for example the electron anomalous magnetic moment, so the reader knows what was tested.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/01 The Crisis of Classical Physics/01.00 The Crisis of Classical Physics.md
+priority: low
+graph: no
+manim: no
+summary: Short, correct chapter overview with an accurate summary list.
+- [Links] Link each summary bullet to its section note (01.01–01.08) so the summary is also the chapter's navigation.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/01 The Crisis of Classical Physics/01.01 Blackbody Radiation.md
+priority: low
+graph: yes
+manim: yes
+summary: Accurate and well structured; the numbers (Sun 3.4e14 Hz, 880 nm, 500 nm) check out and the existing graph is correct.
+- [Intuition] Under Planck's law, explain why quantization removes the catastrophe: the mean mode energy $h\nu/(e^{h\nu/k_BT}-1)$ falls far below $k_BT$ once $h\nu\gg k_BT$, so high-frequency modes "freeze out".
+- [Simplify] Add one or two lines sketching where $8\pi\nu^2/c^3$ comes from (number of standing-wave modes per volume per frequency, times two polarizations); the note currently asserts it.
+- [Graph] Add a second plot comparing $u(\nu)$ and $u(\lambda)$ for $T=5800$ K on a common wavelength axis (300–3000 nm), marking peaks at 880 nm and 500 nm, to make the "different peaks" paragraph visual.
+- [Manim] Animate the Planck curve as $T$ rises from 3000 K to 6000 K with a moving marker at $x\simeq2.82$, showing the peak shift and the $T^4$ growth of the area.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/01 The Crisis of Classical Physics/01.02 Photoelectric Effect.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct physics, but the last section repeats the opening list and the source links point to the wrong sections.
+- [Correctness] Both source links target the heading `#Blackbody radiation`, which is the wrong section for this note; point them to `Quantization, light, and early atomic models#Photoelectric apparatus` (or `#Quantization of charge, light, and energy`) and `Matter waves, diffraction, and early quantum problems#The photoelectric effect`.
+- [Structure] Merge "Distinguish a threshold from a change in intensity" into the main text. Define the stopping potential once ($eV_0=K_{\max}$), because that section uses it without defining it.
+- [Graph] Plot $K_{\max}=h\nu-W$ versus $\nu$ ($0$–$2\times10^{15}$ Hz) for two metals (for example $W=2.3$ eV and $4.5$ eV): parallel lines with slope $h$ and frequency-axis intercepts at $\nu_0=W/h$.
+- [Example] Add a short worked example, such as 200 nm light on $W=4.5$ eV giving $K_{\max}\simeq1.7$ eV (matches Exercise 2).
+- [Intuition] Quantify the "classical delay" with an order-of-magnitude estimate (an atom-sized absorber in weak light would need seconds to minutes to collect $W$), so the result is not just asserted.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/01 The Crisis of Classical Physics/01.03 Compton Effect.md
+priority: medium
+graph: yes
+manim: yes
+summary: Correct result and setup, but the derivation jumps from the four-momenta straight to the answer.
+- [Simplify] Show the three or four missing algebra steps: $p_e^2=p^2+p'^2-2pp'\cos\theta$ from momentum, then $(pc-p'c+m_ec^2)^2=p_e^2c^2+m_e^2c^4$ from energy, then cancel terms to get $1/p'-1/p=(1-\cos\theta)/(m_ec)$.
+- [Graph] Plot $\Delta\lambda/\lambda_C=1-\cos\theta$ for $\theta\in[0,\pi]$ and mark $\lambda_C$ at $90^\circ$ and $2\lambda_C$ at $180^\circ$.
+- [Example] Add a numeric comparison: for 0.0711 nm X-rays the backscatter shift is about 7 %, while for 500 nm visible light $\Delta\lambda/\lambda\sim10^{-5}$. This shows why the effect needed X-rays.
+- [Manim] Animate an incoming photon (wave train) hitting a resting electron, then the scattered photon with visibly longer wavelength and the recoiling electron, with $\theta$ swept so the reader sees $\Delta\lambda$ grow.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/01 The Crisis of Classical Physics/01.04 Atomic Spectra and Bohr's Atomic Model.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct and compact, but the radius and energy derivations are stated rather than shown.
+- [Example] Show the intermediate steps: $v=n\hbar/(m_er)$ substituted into $m_ev^2/r=e^2/(4\pi\varepsilon_0r^2)$ gives $r_n$, and $E=K+U=-e^2/(8\pi\varepsilon_0r)$ gives $E_n$.
+- [Intuition] Note that the fixed-nucleus energy gives $R_\infty=|E_1|/(hc)\simeq1.0974\times10^7\,\mathrm{m^{-1}}$. The quoted $R_H\simeq1.0968\times10^7\,\mathrm{m^{-1}}$ follows when $m_e$ is replaced by the reduced mass. This explains the small difference.
+- [Graph] Add an energy-level diagram with horizontal lines at $-13.6/n^2$ eV for $n=1$–$6$ (and the continuum at 0), plus downward arrows for the Lyman, Balmer, and Paschen series.
+- [Example] Close with a numeric check of Eq. (1.3) for Hα ($3\to2$, 656 nm) to connect the formula to an observed visible line.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/01 The Crisis of Classical Physics/01.05 Wave–Particle Duality and the de Broglie Hypothesis.md
+priority: low
+graph: yes
+manim: yes
+summary: Clear and correct; the 100 V electron (0.123 nm) and 1 g object (6.6e-31 m) numbers check out.
+- [Manim] Animate a matter wave wrapped around a circular orbit for $2\pi r=n\lambda$ with $n=3,4,5$ (closes on itself) versus a non-integer ratio (destructive mismatch), to illustrate the resonance reading of Bohr's rule.
+- [Graph] Plot de Broglie wavelength versus kinetic energy (log–log, 1 eV–100 keV) for an electron and a neutron, with a shaded band at typical lattice spacings 0.1–0.4 nm.
+- [Intuition] State when the nonrelativistic formula $h/\sqrt{2m_eeV}$ fails (accelerating voltages of tens of kV and above, where $eV$ approaches $m_ec^2$).
+- [Links] Link the Davisson–Germer sentence to `Matter waves, diffraction, and early quantum problems#Davisson–Germer experiment`, which has the geometry.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/01 The Crisis of Classical Physics/01.06 Double-Slit Experiment.md
+priority: medium
+graph: yes
+manim: yes
+summary: Correct conceptually but purely qualitative, with no fringe formula or interference term.
+- [Simplify] Write out $|\psi_1+\psi_2|^2=|\psi_1|^2+|\psi_2|^2+2\,\mathrm{Re}(\psi_1^*\psi_2)$ and identify the last term as the one that which-path information removes.
+- [Example] Add the fringe spacing $\Delta y\simeq\lambda L/d$ with a numeric case, for example 50 eV electrons ($\lambda\simeq0.17$ nm). This shows why electron fringes are so fine.
+- [Graph] Plot the detection density $I(y)\propto\cos^2(\pi dy/(\lambda L))\,\mathrm{sinc}^2(\pi ay/(\lambda L))$ against the incoherent sum (single-slit envelope only) for representative $d/a=5$.
+- [Manim] Animate single detection dots appearing one at a time and building the fringe pattern; then switch on a which-path detector and show the build-up converging to the fringe-free sum.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/01 The Crisis of Classical Physics/01.07 Stern–Gerlach Experiment.md
+priority: medium
+graph: no
+manim: yes
+summary: Correct but thin; it never explains why the field must be inhomogeneous or why silver's moment is pure spin.
+- [Intuition] Add the force $F_z=\mu_z\,\partial B_z/\partial z$. This shows why a uniform field only torques the moment while a gradient sorts atoms by $\mu_z$.
+- [Intuition] State that silver's 47th electron is in a 5s state with $l=0$, so the orbital moment vanishes and the two spots measure the electron spin moment $\mu_z\simeq\mp\mu_B$.
+- [Manim] Animate a beam of randomly oriented classical moments smearing into a continuous band, then the observed beam splitting into two discrete spots.
+- [Links] Link forward to [[10.05 Stern–Gerlach Revisited]] and [[02.04 Wave Function Collapse]], where sequential Stern–Gerlach filters are treated.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/01 The Crisis of Classical Physics/01.08 Order-of-Magnitude Estimates with ℏ.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct idea, but the key minimization step is left out.
+- [Example] Carry out the minimization: $dE/dr=0$ gives $r=4\pi\varepsilon_0\hbar^2/(m_ee^2)=a_0$ and $E=-e^2/(8\pi\varepsilon_0a_0)=-13.6$ eV. Note that the exact agreement depends on the chosen $\Delta p\sim\hbar/r$; for example, $\hbar/(2r)$ changes the numbers by factors of order one.
+- [Graph] Plot $E(\rho)=13.6\,(1/\rho^2-2/\rho)$ eV against $\rho=r/a_0\in[0.3,5]$, with the kinetic and Coulomb terms as dashed curves and the minimum at $(1,-13.6)$ marked.
+- [Intuition] Support the $10^{-11}$ s classical collapse time with the Larmor-formula result ($t\simeq a_0^3/(4r_e^2c)\approx1.6\times10^{-11}$ s) or link it to Exercise 7.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/01 The Crisis of Classical Physics/01.09 The Crisis of Classical Physics Exercises.md
+priority: low
+graph: no
+manim: no
+summary: All stated results recompute correctly (photon energies, threshold, de Broglie wavelengths, Hα, Compton 45.5/4.5 keV, divergence, slit width).
+- [Structure] Exercise 10 contains a stray period ("$V=67$ V. and $\theta_1=3^\circ$"). Exercises 5, 7, 9, and 11 lack a final-result line, for example Exercise 7: $t\approx1.6\times10^{-11}$ s.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/01 The Crisis of Classical Physics/Matter waves, diffraction, and early quantum problems.md
+priority: high
+graph: yes
+manim: yes
+summary: Faithful transcription with correct worked numbers, but cluttered with handwriting commentary and has a wrong quantity table, symbol clashes, and an incorrect neutron speed.
+- [Correctness] The Physical quantities table lists a decay constant $\lambda$ (clashing with wavelength $\lambda$), activity $R$, and mean lifetime $\tau$, none of which the note uses. It also describes $\rho$ as "nuclear mass per unit volume", although the note uses gold's bulk density 19.3 g/cm³. Remove or correct these rows and add the symbols actually used ($K$, $D$, $d$, $n$, $f$, $t$).
+- [Correctness] "Interference of neutrons": the Zeilinger–Gähler double-slit experiment used very cold neutrons with $\lambda\approx1.85$ nm, that is $v\approx200$ m/s, not about 2 km/s (2.2 km/s is the thermal-neutron speed).
+- [Correctness] Symbol clashes: $t$ is a time ($10^4$ s) and a foil thickness ($10^{-6}$ m); $T$ is temperature and wave period; $P$ is power and probability density; $\phi$ is a phase shift, the time factor $\phi(t)$, the Davisson–Germer angle, and the Compton recoil angle. The scattered wavelength is called both $\lambda'$ and $\lambda_{\mathrm f}$.
+- [Example] Finish the open interval probability: $\int_{0.50}^{0.95}3(1-x)^2\,dx=(0.5)^3-(0.05)^3\simeq0.125$ (with $L=1$ nm), and contrast it with the 0.027 strip near $x=0$.
+- [Manim] Animate the two-wave sum $2A\cos(\tfrac{\Delta k}{2}x-\tfrac{\Delta\omega}{2}t)\cos(k_{\mathrm{avg}}x-\omega_{\mathrm{avg}}t)$ with a carrier crest marker moving at $v_{\mathrm{ph}}$ and an envelope marker at $v_{\mathrm{gr}}$.
+- [Structure] Remove the transcription commentary (handwritten dates, crib sheet, midterm list, "handwritten unit appears..."). Rename "Blackbody radiation problems" (it is a radiation-momentum problem). State the temperatures for Tipler 3.12 parts (b) and (c).
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/01 The Crisis of Classical Physics/Quantization, light, and early atomic models.md
+priority: high
+graph: yes
+manim: no
+summary: Broad lecture transcription with mostly correct derivations, but it has a wrong constant, a wrong integrand, an incomplete example, symbol clashes, and much off-topic marginalia.
+- [Correctness] The Physical quantities table lists a decay constant $\lambda$, activity $R$, and "nuclear mass per unit volume" $\rho$, which are not used as described. $\sigma$ denotes both the Stefan–Boltzmann constant and the cross section $\pi b^2$. $R$ denotes both radiant exitance and the Rydberg constant in $1/\lambda=R(1/m^2-1/n^2)$. Rename the clashing symbols and fix the table.
+- [Correctness] "Quantization of charge, light, and energy" quotes $c=2.9989\times10^8$ m/s; the correct value is $2.9979\times10^8$ m/s.
+- [Correctness] Stefan–Boltzmann: $R=\int_0^\infty I(\lambda,T)\,d\lambda$ uses the symbol that the next equation defines as the Rayleigh–Jeans exitance $2\pi ck_BT/\lambda^4$, whose integral diverges. The integrand must be the Planck exitance $2\pi hc^2\lambda^{-5}/(e^{hc/\lambda k_BT}-1)=(c/4)u(\lambda)$. Also note that $\varepsilon=1$ for a blackbody.
+- [Correctness] "Rutherford scattering example 2" never states the angle. The boxed $N/N_i=3.2\times10^{-7}\,\mathrm{mm^{-2}}$ corresponds to $\theta=45^\circ$. With the $90^\circ$ of example 1, the inputs give $2.7\times10^{-8}\,\mathrm{mm^{-2}}$. State $\theta=45^\circ$.
+- [Structure] Remove the off-topic marginalia (Predator, Spinal Tap, Ohm's law slope, lab report filename, Igor/MATLAB policy, "date reads 2018") and place the Rutherford substitution directly after example 1 instead of after the Balmer section.
+- [Graph] Plot the Rutherford cumulative fraction $f(\theta)=f(90^\circ)\cot^2(\theta/2)$ and $N(\theta)\propto1/\sin^4(\theta/2)$ on a log scale for $\theta=10^\circ$–$180^\circ$ (7.7 MeV alphas on 1 µm gold), showing the strong forward peaking.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/02 Postulates of Quantum Mechanics/02.00 Postulates of Quantum Mechanics.md
+priority: low
+graph: no
+manim: no
+summary: Correct and concise chapter overview.
+- [Links] Link each summary bullet to its section note (02.01–02.06) for navigation.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/02 Postulates of Quantum Mechanics/02.01 The Quantum State.md
+priority: low
+graph: no
+manim: yes
+summary: Precise statement of the postulate, but abstract, with no concrete relative-phase example.
+- [Correctness] Symbol clash: $\alpha$ is the real global phase in $e^{i\alpha}$ and also a complex superposition coefficient in $\alpha\lvert\psi_1\rangle+\beta\lvert\psi_2\rangle$. Rename the coefficients, for example $c_1,c_2$.
+- [Example] Make the relative-phase claim concrete: $(\lvert+z\rangle\pm\lvert-z\rangle)/\sqrt2$ give identical $S_z$ statistics but $P(+x)=1$ versus $0$.
+- [Manim] Show a Bloch-sphere vector: multiplying by $e^{i\alpha}$ leaves it fixed, while a relative phase $\beta$ rotates it around the $z$ axis, with a readout of $P(+x)=\cos^2(\beta/2)$.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/02 Postulates of Quantum Mechanics/02.02 Observables as Hermitian Operators.md
+priority: low
+graph: no
+manim: no
+summary: Correct and clear; the operator definitions and commutator are right.
+- [Intuition] Motivate $\hat p=-i\hbar\partial_x$ by noting that the de Broglie plane wave $e^{ipx/\hbar}$ is its eigenfunction with eigenvalue $p$.
+- [Example] Verify Eq. (2.2) in one line on a test function: $[\hat x,\hat p]\psi=-i\hbar x\psi'+i\hbar(x\psi)'=i\hbar\psi$.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/02 Postulates of Quantum Mechanics/02.03 Measurement Postulate and the Born Rule.md
+priority: low
+graph: no
+manim: no
+summary: Correct and well organized for discrete, degenerate, and continuous cases.
+- [Example] Add a small numeric example, for example $\lvert\psi\rangle=\tfrac12\lvert a_1\rangle+\tfrac12\lvert a_2\rangle+\tfrac1{\sqrt2}\lvert a_3\rangle$ giving $1/4,1/4,1/2$, and then the degenerate case $a_1=a_2$ giving $1/2$.
+- [Intuition] In the continuous case, note that $|\langle x\mid\psi\rangle|^2$ has units of inverse length, so only $p\,da$ is a probability.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/02 Postulates of Quantum Mechanics/02.04 Wave Function Collapse.md
+priority: low
+graph: no
+manim: yes
+summary: Correct, with a good Stern–Gerlach example that stops just before its most instructive step.
+- [Example] Extend the example with a third $S_z$ measurement after the $S_x$ filter, which again gives $\pm\hbar/2$ with probability $1/2$ each. This shows that the earlier $z$ information was erased.
+- [Manim] Animate the sequential z–x–z Stern–Gerlach chain: a beam splits, one branch is blocked, the next magnet splits it 50/50, and the final z magnet splits again 50/50.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/02 Postulates of Quantum Mechanics/02.05 Time Evolution.md
+priority: low
+graph: no
+manim: no
+summary: Correct and compact statement of unitary evolution.
+- [Example] Contrast the stationary state with a two-level superposition $c_1\lvert E_1\rangle+c_2\lvert E_2\rangle$, whose observable probabilities oscillate at $(E_2-E_1)/\hbar$. This shows that only relative phases evolve measurably.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/02 Postulates of Quantum Mechanics/02.06 Expectation Value and Standard Deviation.md
+priority: low
+graph: yes
+manim: no
+summary: Correct worked example; the variance formula $(a_u-a_d)^2\sin^2(2\alpha)/4$ checks out.
+- [Graph] Plot $\langle A\rangle$ and $\Delta A$ (for $a_u=1$, $a_d=-1$) against $\alpha\in[0,\pi/2]$, showing the mean sliding from $a_u$ to $a_d$ and the spread peaking at $\pi/4$.
+- [Example] Replace the "Source wording" callout with an explicit example: $\hat B=\lvert u\rangle\langle d\rvert+\lvert d\rangle\langle u\rvert$ has $\langle\hat B\rangle=\sin(2\alpha)\cos\phi$, so a single observable can detect $\phi$.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/02 Postulates of Quantum Mechanics/02.07 Summary of the Postulates.md
+priority: low
+graph: no
+manim: no
+summary: Accurate summary table.
+- [Links] No change needed. Optionally link each table row to its definition note (02.01–02.05).
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/02 Postulates of Quantum Mechanics/02.08 First Complete Example – Spin ½.md
+priority: low
+graph: yes
+manim: yes
+summary: Correct worked example; the energies, phases, and Larmor sign convention are consistent.
+- [Structure] The closing paragraph says the example uses all five postulates, including the state update, but no post-measurement state is shown. Add one sentence: after outcome $+\hbar/2$ the state becomes $\lvert+z\rangle$ and stops precessing.
+- [Manim] Animate the Bloch vector starting on $+x$ and precessing in the $xy$ plane about $\vec B\parallel z$ at $\omega_L=-\gamma B$, with $\langle S_x\rangle$ and $\langle S_y\rangle$ traced alongside.
+- [Graph] Plot $\langle S_x(t)\rangle/(\hbar/2)=\cos\omega_Lt$ and $\langle S_y(t)\rangle/(\hbar/2)=\sin\omega_Lt$ over two periods.
+- [Intuition] Add the sign case: for the electron $\gamma<0$, so $\omega_L>0$ and the precession is counterclockwise seen from $+z$.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/02 Postulates of Quantum Mechanics/02.09 Postulates of Quantum Mechanics Exercises.md
+priority: low
+graph: no
+manim: no
+summary: All stated results recompute correctly (normalization, $\Delta A=\sqrt{2/3}$, $5/9$, Rabi-type $P_1(t)$).
+- [Example] Add result lines for Exercise 4 (minimum $\Delta A=0$ in any eigenstate; the maximum among equal two-state superpositions is $(\lvert1\rangle+\lvert3\rangle)/\sqrt2$ with $\Delta A=1$) and for the limits in Exercise 11.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/02 Postulates of Quantum Mechanics/Quantum measurement and change-of-basis exercises.md
+priority: medium
+graph: no
+manim: no
+summary: The calculations for Shankar 4.2.1 are correct ($\Delta L_x=1/\sqrt2$, probabilities 1/4, 1/2, 1/4 and 3/4, 1/3, 2/3), but the text is cluttered and has an unrelated quantity table.
+- [Correctness] The Physical quantities table lists reflection and transmission coefficients $R,T$, which never appear. Replace them with the symbols actually used ($L_x,L_y,L_z$ in units of $\hbar$, $\Omega$, $w$, $P_w$).
+- [Structure] Part (a) is garbled ("consider $L_z\lvert\psi\rangle=w\lvert\psi\rangle$ ... the notes list the +1 and −1 outcomes"). State the question and the answer: an $L_z$ measurement can give $1,0,-1$.
+- [Simplify] Part (d) does not need a linear system or Mathematica: $a=\langle x+\mid\psi\rangle$ is the third component of each $L_x$ eigenvector, giving $1/2,-1/\sqrt2,1/2$ directly.
+- [Simplify] Unify the notation $\lvert w,1\rangle,\lvert w,2\rangle,\lvert w_3\rangle$. For the general subspace state, allow complex $\alpha,\beta$ with normalization $\sqrt{|\alpha|^2+|\beta|^2}$.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/02 Postulates of Quantum Mechanics/Quantum states, eigenfunctions, and time evolution problems.md
+priority: medium
+graph: yes
+manim: yes
+summary: The worked results are correct (commutator, orthogonality proof, delta integrals, falling-rock density), but the note has broken headings, administrative clutter, and a wrong quantity table.
+- [Correctness] The Physical quantities table lists reflection and transmission coefficients $R,T$, which are unused. $T$ also means kinetic energy ($H=T+V$), the fall time, and the wave period, and $k$ means the box wave number, the spring constant, the delta shift, and the wave number. Rename the clashing symbols and list the ones used.
+- [Structure] Repair the transcription-artifact headings "##### ) — Operators and eigenfunctions", "##### ) — Representations", "##### ) — Orthogonality", "##### ) — Postulate 2", "##### )", and the stray "**)**".
+- [Simplify] In the measurement example, write $c_3=(3i/8)^{1/2}$ as $\sqrt{3/8}\,e^{i\pi/4}$ so that $|c_3|^2=3/8$ is obvious.
+- [Graph] Plot the falling-rock density $p(x)=1/(2\sqrt{hx})$ for $h=1$ on $(0,1]$, with a note that its integral is 1 despite the divergence at $x=0$.
+- [Manim] Animate $\Psi=\psi(x)e^{-iEt/\hbar}$ as a rotating complex amplitude with constant $|\Psi|^2$, then a two-state superposition whose $|\Psi|^2$ sloshes. This contrasts a stationary state with a non-stationary one.
+- [Structure] Drop the administrative remarks (videos due December 7, "three fundamental modes of water", homework topics) and keep the physics.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/03 Measurement, Observables, and Uncertainty/03.00 Measurement, Observables, and Uncertainty.md
+priority: low
+graph: no
+manim: no
+summary: Clear, correct chapter hub whose summary bullets match the section notes.
+- [Links] Link each chapter-summary bullet to its section note (03.01 Compatibility, 03.02 CSCO, 03.03 Robertson, 03.04 Energy–Time, 03.05 Zeno, 03.07 Ideal and Real Measurements) so the hub can be used for navigation.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/03 Measurement, Observables, and Uncertainty/03.01 Compatibility of Observables.md
+priority: low
+graph: no
+manim: no
+summary: Correct and compact, but the proof sketch of Theorem 3.1 skips the key one-line step and the incompatibility bullets stay abstract.
+- [Simplify] After Theorem 3.1, spell out the invariance step: if $\hat A\lvert\psi\rangle=a\lvert\psi\rangle$ then $\hat A(\hat B\lvert\psi\rangle)=\hat B\hat A\lvert\psi\rangle=a\,\hat B\lvert\psi\rangle$, so $\hat B$ maps $\mathcal H_a$ into itself.
+- [Example] Add a two-level example of incompatible observables (spin-½ $\hat S_z$ then $\hat S_x$ then $\hat S_z$, giving 50 % instead of 100 % for the repeated $S_z$ result) to make "the order of measurements can affect the results" concrete; link to 03.05.
+- [Intuition] In the two-position-components example, note explicitly that the 2D Gaussian $e^{-(x^2+y^2)/4\sigma^2}$ has arbitrarily small $\Delta x$ and $\Delta y$ simultaneously, contrasting with the $x$–$p$ case.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/03 Measurement, Observables, and Uncertainty/03.02 Complete Set of Commuting Observables (CSCO).md
+priority: low
+graph: no
+manim: no
+summary: Correct and readable; the examples would benefit from showing why a single observable is not complete.
+- [Example] Add the explicit degeneracy argument for hydrogen: $\energy{\hat H}$ alone leaves an $n^2$-fold (or $2n^2$ with spin) degeneracy, $\mechanical{\hat{\vec L}}^{\,2}$ splits it by $\ell$, $\mechanical{\hat L}_z$ by $m_\ell$, and $\mechanical{\hat S}_z$ by $m_s$, so the reader sees each observable removing a degeneracy.
+- [Simplify] In the coupled-basis bullet, give the concrete alternative set $\{\energy{\hat H},\mechanical{\hat{\vec L}}^{\,2},\mechanical{\hat{\vec S}}^{\,2},\mechanical{\hat{\vec J}}^{\,2},\mechanical{\hat J}_z\}$ instead of "where appropriate", and note that $\mechanical{\hat L}_z$ and $\mechanical{\hat{\vec J}}^{\,2}$ do not commute.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/03 Measurement, Observables, and Uncertainty/03.03 Robertson Inequality.md
+priority: low
+graph: no
+manim: yes
+summary: Clean proof, correct Gaussian example, and an accurate two-panel figure (densities and $2\Delta$ arrows verified); only intuition about saturation is missing.
+- [Intuition] After the proof, state when equality holds: $\hat b\lvert\psi\rangle=\lambda\hat a\lvert\psi\rangle$ with purely imaginary $\lambda$ (Cauchy–Schwarz equality plus vanishing anticommutator term), and show the Gaussian satisfies it, which explains why Gaussians are minimum-uncertainty states.
+- [Simplify] In the Gaussian example, show the one-line Fourier transform $\tilde\psi(p)\propto e^{-p^2\sigma^2/\hbar^2}$ so that $\Delta p=\hbar/(2\sigma)$ is derived rather than asserted.
+- [Manim] Animate $\sigma$ shrinking: the position Gaussian narrows while the momentum Gaussian widens, with the live product $\Delta x\,\Delta p=\hbar/2$ displayed constant; motion conveys the trade-off better than the static panel.
+- [Structure] Mention the Schrödinger strengthening (Exercise 10 in 03.08) at the point where the real anticommutator part is discarded, so the reader knows the bound can be sharpened.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/03 Measurement, Observables, and Uncertainty/03.04 Energy–Time Uncertainty.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct derivation and sound distinction between the heuristic and Mandelstam–Tamm relations, but the line-width paragraph is asserted without connection to the theorem and without a worked number.
+- [Intuition] Explain why $\energy{\Gamma}\simeq\hbar/\tau$ is a different statement from Mandelstam–Tamm (Fourier width of an exponentially decaying amplitude giving a Lorentzian of FWHM $\hbar/\tau$), rather than placing it under the theorem as if it followed from it.
+- [Example] Turn the hydrogen $2p\to1s$ numbers into a worked line: $\tau\approx\quantity{1.6}{ns}$ gives $\energy{\Gamma}=\hbar/\tau\approx\quantity{4\times10^{-7}}{eV}$, compared with the $\quantity{10.2}{eV}$ transition energy (relative width $\sim4\times10^{-8}$).
+- [Example] Add a two-level worked example: $(\lvert E_1\rangle+\lvert E_2\rangle)/\sqrt2$ has $\Delta E=(E_2-E_1)/2$ and becomes orthogonal to itself after $t=\pi\hbar/(E_2-E_1)=\pi\hbar/(2\Delta E)$, illustrating "fast change requires large energy spread".
+- [Graph] Plot the Lorentzian line shape $L(E)=(\Gamma/2\pi)/[(E-E_0)^2+(\Gamma/2)^2]$ for two lifetimes ($\tau$ and $\tau/3$) with $E-E_0$ in units of $\hbar/\tau$ on $[-5,5]$, marking the FWHM $\Gamma$.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/03 Measurement, Observables, and Uncertainty/03.05 Successive Measurements and the Quantum Zeno Effect.md
+priority: medium
+graph: yes
+manim: yes
+summary: Correct formulas, but the short-time expansion is quoted without derivation and the Zeno limit is not shown explicitly.
+- [Simplify] Derive the short-time survival: $\langle a\vert e^{-i\hat H\delta t/\hbar}\vert a\rangle=1-i\langle H\rangle\delta t/\hbar-\langle H^2\rangle\delta t^2/(2\hbar^2)+\dots$, whose squared modulus gives $1-(\Delta E\,\delta t/\hbar)^2$; this makes clear why the quadratic onset is essential.
+- [Simplify] Show the limit explicitly: with $\delta t=T/N$, $[1-(\Delta E\,T/\hbar N)^2]^N\approx\exp[-(\Delta E\,T/\hbar)^2/N]\to1$.
+- [Example] Add a concrete two-level case (Rabi oscillation $P=\cos^2(\Omega t/2)$, survival after $N$ checks $\cos^{2N}(\Omega T/2N)$), matching the Itano et al. setup.
+- [Graph] Plot survival probability $\cos^{2N}(\Omega T/2N)$ versus $\Omega T\in[0,\pi]$ for $N=1,2,5,20,100$ to show the curves approach 1.
+- [Manim] Animate a Bloch vector rotating under the Hamiltonian and repeatedly snapped back to the pole by measurements at interval $\delta t$, with a counter for the survival probability, comparing small and large $N$.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/03 Measurement, Observables, and Uncertainty/03.06 A Structural Example – the Angular Momentum Components.md
+priority: low
+graph: no
+manim: yes
+summary: Correct and concise; the claim that the product equals $\ell\hbar^2/2$ at $m=\pm\ell$ is true but its source is not shown.
+- [Simplify] Show why the bound is attained at $m=\pm\ell$: by symmetry $\langle L_x^2\rangle=\langle L_y^2\rangle=[\ell(\ell+1)-m^2]\hbar^2/2$, so $\Delta L_x\Delta L_y=[\ell(\ell+1)-m^2]\hbar^2/2$, which equals $\lvert m\rvert\hbar^2/2$ exactly when $\lvert m\rvert=\ell$.
+- [Intuition] Add the vector-model numbers: the length $\sqrt{\ell(\ell+1)}\hbar$ exceeds the maximal projection $\ell\hbar$, so the vector can never point exactly along $z$.
+- [Manim] Animate the semiclassical vector model: a vector of length $\sqrt{\ell(\ell+1)}\hbar$ on a cone with fixed $z$-projection $m\hbar$, precessing so that $L_x,L_y$ average to zero, for $\ell=2$ and $m=0,1,2$.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/03 Measurement, Observables, and Uncertainty/03.07 Ideal and Real Measurements.md
+priority: medium
+graph: no
+manim: no
+summary: Correct but very brief overview; the QND, weak-measurement, and POVM paragraphs lack any concrete example.
+- [Example] Give a minimal non-projective POVM, e.g. the unsharp qubit measurement $\hat E_\pm=\tfrac12(\hat I\pm\eta\sigma_z)$ with $0<\eta<1$, and show that $\eta=1$ recovers the projective case.
+- [Example] Name a concrete QND case (photon number in a cavity measured dispersively, as in the Haroche experiments) instead of the generic pointer statement.
+- [Simplify] Add the state-update rule with measurement operators, $\hat E_m=\hat M_m^\dagger\hat M_m$ and $\lvert\psi\rangle\to\hat M_m\lvert\psi\rangle/\sqrt{P(m)}$, since the note says weak measurements give a "partial" update without saying what it is.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/03 Measurement, Observables, and Uncertainty/03.08 Measurement, Observables, and Uncertainty Exercises.md
+priority: low
+graph: no
+manim: no
+summary: Exercise list with correct results (Ex. 1, 5, 6, 7, 8, 9, 11 rechecked numerically or algebraically).
+- [Simplify] Exercise 7: "Compare with the classical distribution" is undefined; specify which classical distribution is meant (e.g. a classical oscillator of the same energy) or remove the clause.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/03 Measurement, Observables, and Uncertainty/Dirac notation, representations, and quantum uncertainty.md
+priority: high
+graph: no
+manim: no
+summary: A transcription of lecture notes with correct matrix results (AB, BA, $[A,B]$, $\det B=3$, eigenvalues $i,0,1$ verified) but a disordered structure, many "handwritten line" remarks, and an inaccurate quantities table.
+- [Correctness] The Physical quantities table lists $R$, $T$ as reflection and transmission coefficients, which the note never uses; $T$ is instead a generic matrix in "Linear algebra". Remove the row and add the symbols actually used ($\Phi(\mechanical{p},t)$, $\mechanical{p}$, $\sigma_Q$, $c_n$).
+- [Correctness] The table gives $\Psi$ in $\unit{m^{-3/2}}$ "in three dimensions", but every integral in the note is one-dimensional ($dx$), so $\Psi(x,t)$ has unit $\unit{m^{-1/2}}$ and $\Phi(\mechanical{p},t)$ has unit $\unit{(kg\,m\,s^{-1})^{-1/2}}$.
+- [Structure] Reorder into a logical sequence (complex numbers, kets and bras, inner products, matrices/transpose/adjoint, Hermitian eigenproblems, expansion in eigenbases, expectation values, uncertainty proof); currently transpose and Hermitian conjugate precede the definitions of matrices and kets, and the uncertainty proof is split across three headings.
+- [Simplify] Remove the editorial remarks about the handwritten notes ("The handwritten line reverses the order…", "The handwritten boxed zero has been corrected", "conflates the coefficient…") and state the correct result directly.
+- [Simplify] Either finish the cofactor computation for $B^{-1}$ (give $B^{-1}$ and verify $BB^{-1}=I$ as the exercise asks) or drop the partial column; the sentence deriving $I\psi=\hat H^{-1}\energy{E}\psi$ adds nothing and can be removed.
+- [Structure] Apply semantic macros consistently: $\mechanical{p}$ is colored but $x$, $\hat x$, $\hat p_x$ are not; use $\mechanical{x}$, $\mechanical{\hat x}$, $\mechanical{\hat p}_x$ as in sibling notes 03.01–03.03.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/03 Measurement, Observables, and Uncertainty/Hermitian operators and uncertainty derivations.md
+priority: medium
+graph: no
+manim: no
+summary: Correct derivations (momentum Hermiticity, $i\,d/d\phi$ example, Theorems 1–2, Problem 3.12 orthogonal pair verified) but with a symbol clash, references to unstated problem parts, and an unfinished final step.
+- [Correctness] Symbol clash in the opening: $a(x)$, $b(x)$ denote functions while $a$, $b$ are also the integration limits in the Schwarz inequality, and later $a,b,c,d$ are real coefficients in Problem 3.12; rename the functions (e.g. $u(x),v(x)$) or the limits.
+- [Structure] The opening and "For part (b)" refer to a problem (square-integrable functions form a vector space; inner-product conjugate symmetry) that is never stated; state the problem before solving it.
+- [Simplify] Finish the uncertainty proof: take the square root of the last inequality to obtain $\sigma_A\sigma_B\ge\tfrac12\lvert\langle[\hat A,\hat B]\rangle\rvert$, apply it to $[\hat x,\hat p]=i\hbar$, and remove the "handwritten line ends in zero" remark.
+- [Correctness] The quantities table gives $\Psi$ in $\unit{m^{-3/2}}$ "in three dimensions", but the note is one-dimensional ($\Psi(x,t)$, $dx$), so the unit is $\unit{m^{-1/2}}$; also add the symbols used ($\mechanical{p}$, $q$, $\sigma_Q$, $c_n$).
+- [Structure] Macro use is inconsistent: $\mechanical{p}$ is colored in the statistical-interpretation section, but $x$ and $\hat p$ elsewhere are not.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/04 Schrödinger Equation/04.00 Schrödinger Equation.md
+priority: low
+graph: no
+manim: no
+summary: Correct chapter hub; summary formulas (current, Gaussian spreading, Ehrenfest, Heisenberg equation) check out.
+- [Structure] Macro use differs from the section notes: the hub writes $\mechanical{\hbar}$ and an uncolored $\hat x$ in the Ehrenfest bullet, while 04.01–04.03 use plain $\hbar$ and $\mechanical{x}$; align with the section notes.
+- [Links] Link each summary bullet to its section note (04.01–04.07).
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/04 Schrödinger Equation/04.01 From Unitary Time Evolution to the Equation.md
+priority: low
+graph: no
+manim: no
+summary: Correct and clear derivation; the Hermiticity step is compressed.
+- [Simplify] Write out the Hermiticity step: differentiating $\hat U\hat U^\dagger=\hat I$ with Eq. (4.1) and its adjoint gives $(\hat H-\hat H^\dagger)/(i\hbar)=0$ after using $\hat U\hat U^\dagger=\hat I$, hence $\hat H=\hat H^\dagger$.
+- [Example] Add a two-level worked example of Eq. (4.2), e.g. $\hat H=\hbar\omega\sigma_x/2$ acting on $\lvert\uparrow\rangle$, giving $\cos(\omega t/2)\lvert\uparrow\rangle-i\sin(\omega t/2)\lvert\downarrow\rangle$, to show how the spectral expansion produces dynamics.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/04 Schrödinger Equation/04.02 Time-Independent Schrödinger Equation.md
+priority: medium
+graph: yes
+manim: yes
+summary: Correct and clear; the superposition example would gain much from a concrete system and a visualization of the beating density.
+- [Example] Make the superposition example concrete with the infinite well of width $L$: $\psi_n=\sqrt{2/L}\sin(n\pi x/L)$, $E_n=n^2\pi^2\hbar^2/(2mL^2)$, so $\omega_{21}=3\pi^2\hbar/(2mL^2)$, and show that $\langle x\rangle(t)$ oscillates at $\omega_{21}$.
+- [Graph] Plot $\lvert\psi(x,t)\rvert^2$ for the infinite-well $n=1,2$ superposition at $\omega_{21}t=0,\pi/2,\pi$ on $x/L\in[0,1]$, showing the density sloshing from one side to the other.
+- [Manim] Animate the same density over one beat period $2\pi/\omega_{21}$ with a moving marker for $\langle x\rangle(t)$, contrasted with a stationary $n=1$ density.
+- [Intuition] In the bound/scattering bullets, add one sentence explaining why bound energies are discrete (the solution must decay on both sides, which only selected $E$ allow), linking to the one-dimensional-systems chapter.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/04 Schrödinger Equation/04.03 Probability Conservation and Current.md
+priority: medium
+graph: no
+manim: yes
+summary: Correct derivation and plane-wave example; the reflection/transmission paragraph is dense prose without formulas, and the source link points to a less relevant heading.
+- [Simplify] Show the intermediate identity $\psi^*\nabla^2\psi-\psi\nabla^2\psi^*=\nabla\cdot(\psi^*\nabla\psi-\psi\nabla\psi^*)$, which is the key step that turns the subtraction into a divergence.
+- [Example] Replace the reflection-probability prose with formulas for a step: $\psi=e^{ikx}+re^{-ikx}$ for $x<0$ and $te^{iqx}$ for $x>0$, giving $R=\lvert r\rvert^2$, $T=(q/k)\lvert t\rvert^2$, and $R+T=1$ from constant $J$.
+- [Links] The source link targets `#Free particle`, but the flux and reflection material in that note is under the headings "Flux density" and "Reflection and transmission"; link there instead.
+- [Structure] Use the same macros as the hub 04.00 ($\signal{\rho}$, $\signal{\mathbf J}$) or make the hub match this note; currently $\rho$ and $\vec J$ are uncolored here and colored in 04.00.
+- [Manim] Animate a Gaussian packet hitting a step, showing the density and the current $J(x,t)$ together with running totals of probability on each side converging to $R$ and $T$.

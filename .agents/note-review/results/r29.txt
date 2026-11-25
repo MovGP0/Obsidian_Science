@@ -1,0 +1,475 @@
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/04 Schrödinger Equation/04.04 Wave Packets.md
+priority: medium
+graph: yes
+manim: yes
+summary: Correct and compact (Gaussian width law, figure parameters, and electron and 1 kg spreading times all check out), but the spreading mechanism and the meaning of phase versus group velocity are stated rather than explained.
+- [Simplify] In "Spreading of a Gaussian packet", replace "Different Fourier components propagate with different group velocities" with the precise statement: the spectrum has width $\Delta k=1/(2\sigma)$, so the velocities $\hbar k/m$ spread by $\Delta v=\hbar/(2m\sigma)$, which gives $\sigma(t)\approx\Delta v\,t$ at large $t$. This also derives the asymptote quoted in the text.
+- [Intuition] State the trade-off explicitly: a narrower initial packet (small $\sigma$) spreads faster because $t_*=2m\sigma^2/\hbar$. Link this to the uncertainty relation $\Delta x\,\Delta p=\hbar/2$ at $t=0$.
+- [Graph] Add a 2D plot of $\sigma(t)/\sigma=\sqrt{1+(t/t_*)^2}$ against $t/t_*$ on $[0,5]$, with the asymptote $t/t_*$ dashed, to show the crossover from no spreading to linear spreading.
+- [Manim] Animate $\mathrm{Re}\,\psi(x,t)$ and $|\psi|$ for a Gaussian packet with $k_0\sigma\approx5$: the carrier crests move at $v_g/2$ and slip backward through the envelope, which moves at $v_g$ and broadens.
+- [Simplify] Mention briefly why $v_f=v_g/2$ is not a paradox: the phase velocity has no physical signal content and depends on the arbitrary zero of energy.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/04 Schrödinger Equation/04.05 Heisenberg Picture.md
+priority: medium
+graph: no
+manim: no
+summary: Correct and brief, but it omits the short derivation of the Heisenberg equation and of Eqs. (4.6) and (4.7), and the first sentence is garbled.
+- [Simplify] Fix the opening sentence "operators have only any explicit time dependence". Write it as "operators carry only their explicit time dependence, if any".
+- [Example] Show the one-line derivation $d\hat A_H/dt=(i/\hbar)\hat U^\dagger[\hat H,\hat A]\hat U+(\partial_t\hat A)_H$ from $i\hbar\,\partial_t\hat U=\hat H\hat U$. Also show the two commutators $[\hat x,\hat p^2]=2i\hbar\hat p$ and $[\hat p,V(\hat x)]=-i\hbar V'(\hat x)$ that give Eqs. (4.6) and (4.7).
+- [Example] Add the free-particle solution $\hat x_H(t)=\hat x+\hat p\,t/m$. It gives $\Delta x(t)^2$ directly and links back to the packet spreading in 04.04.
+- [Structure] Colour $\hat x_H$ consistently with $\hat p_H$, using \mechanical{} for both or for neither. At present the momentum is coloured and the position is not.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/04 Schrödinger Equation/04.06 Ehrenfest Theorem.md
+priority: low
+graph: yes
+manim: no
+summary: Clear and correct; the key subtlety $\langle V'(\hat x)\rangle\ne V'(\langle\hat x\rangle)$ is stated but has no worked illustration.
+- [Example] Make the nonlinear-force caveat concrete. For $V=\lambda x^4$, show that $\langle V'\rangle=4\lambda(\langle x\rangle^3+3\langle x\rangle\,\Delta x^2+\langle(x-\langle x\rangle)^3\rangle)$. The correction terms vanish only as $\Delta x\to0$.
+- [Graph] Plot a double-well $V(x)$ together with a Gaussian density centred on the barrier top, and mark $-V'(\langle x\rangle)=0$ against a nonzero $-\langle V'\rangle$ for an off-centre packet. This illustrates the "packet spread over a barrier" sentence.
+- [Simplify] In the derivation, note that $[\hat x,V(\hat x)]=0$ and $[\hat p,\hat p^2]=0$. These explain why only one term survives in each commutator.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/04 Schrödinger Equation/04.07 Symmetries and Conserved Quantities.md
+priority: low
+graph: no
+manim: no
+summary: Correct and concise, but it ends with an unrelated "Physical meaning" section about probability amplitudes.
+- [Structure] Move the "Physical meaning" paragraph about amplitudes and state reduction to the chapter hub (04.00) or delete it. It does not concern symmetries. If the note keeps a meaning section, use it to explain why commuting with $\hat H$ fixes the whole outcome distribution: the eigenbasis of $\hat A$ can be chosen to be stationary.
+- [Intuition] Add one sentence linking each example to its symmetry: translation invariance gives momentum, rotation invariance gives angular momentum, and reflection invariance gives parity. This prepares the Noether link.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/04 Schrödinger Equation/04.08 Schrödinger Equation Exercises.md
+priority: low
+graph: no
+manim: no
+summary: A well-formed exercise list; the given results (current, norm decay, propagator) are correct.
+- [Structure] Exercise 11: state that the squared norm decays as $e^{-\gamma t}$, matching the table entry for $\gamma$, so that a reader does not confuse $\gamma$ with the amplitude decay rate.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/05 Feynman Path Integrals/05.00 Feynman Path Integrals.md
+priority: low
+graph: no
+manim: no
+summary: A clean chapter hub with correct summary formulas and working links.
+- [Structure] No change needed. Optionally write the flux phase $e^{iq\Phi/\hbar}$ in the last bullet, because the table lists $\Phi$ but the text never uses the symbol.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/05 Feynman Path Integrals/05.01 Transition Amplitude and Propagator.md
+priority: low
+graph: no
+manim: no
+summary: Correct and readable; the Green-function remark is slightly loose and there is no concrete example.
+- [Simplify] Qualify "It is a Green function": the retarded Green function is $\theta(t_f-t_i)K$, which satisfies $(i\hbar\partial_{t_f}-\hat H)G=i\hbar\,\delta(x_f-x_i)\delta(t_f-t_i)$.
+- [Example] Add the spectral form $K=\sum_n\psi_n(x_f)\psi_n^*(x_i)e^{-iE_n(t_f-t_i)/\hbar}$. It makes the composition law and the initial condition $\delta(x_f-x_i)$ (from completeness) immediate.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/05 Feynman Path Integrals/05.02 Time Discretization and the Feynman Formula.md
+priority: medium
+graph: no
+manim: yes
+summary: The derivation is correct (Trotter ordering, $N/2$ power of the prefactor, and $V(x_k)$ placement all check out), but the momentum Gaussian integral that turns phase space into configuration space is only asserted.
+- [Example] Show one completed square: $\int\frac{dp}{2\pi\hbar}\exp\{\frac{i}{\hbar}[p\Delta x-\epsilon p^2/(2m)]\}=\sqrt{m/(2\pi i\hbar\epsilon)}\,e^{im\Delta x^2/(2\hbar\epsilon)}$, using the damped Gaussian prescription ($\epsilon\to\epsilon-i0$).
+- [Intuition] Explain why the error per Trotter step is $O(\epsilon^2)$ (from the commutator $[\hat T,\hat V]$), so that $N$ steps accumulate $O(T\epsilon)\to0$.
+- [Manim] Animate the time-slicing: a grid of $N$ time slices with free intermediate positions $x_k$, random zigzag paths redrawn as $N$ grows, and each path's phasor $e^{iS/\hbar}$ added to a running sum in the complex plane.
+- [Simplify] In the note on Wick rotation, add the Euclidean weight $e^{-S_E/\hbar}$. This explains why the imaginary-time integral converges while the real-time one is only oscillatory.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/05 Feynman Path Integrals/05.03 Free Particle.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and concise, but the induction step is stated without its key Gaussian convolution identity.
+- [Example] Write the induction step explicitly: $\int dx_1\,e^{ia(x_2-x_1)^2}e^{ib(x_1-x_0)^2}\propto e^{i\frac{ab}{a+b}(x_2-x_0)^2}$. With $a=m/(2\hbar n\epsilon)$ and $b=m/(2\hbar\epsilon)$, this gives the $(n+1)\epsilon$ law.
+- [Graph] Plot $\mathrm{Re}\,K_{\mathrm{free}}$ and $\mathrm{Im}\,K_{\mathrm{free}}$ against $x_f$ for fixed $T$, in units of $\ell=\sqrt{2\hbar T/m}$. The chirp, with faster oscillation farther out, shows that far endpoints correspond to large classical velocities.
+- [Intuition] Note that $|K_{\mathrm{free}}|$ is independent of $x_f$. A point source spreads uniformly in magnitude, and only the phase carries position information.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/05 Feynman Path Integrals/05.04 Harmonic Oscillator.md
+priority: medium
+graph: yes
+manim: yes
+summary: The formulas (5.5) and (5.6), the focal-point statement, and the trace remark are correct, but the classical action and the determinant prefactor are quoted without any derivation steps.
+- [Example] Derive Eq. (5.5) in two lines. Use $x_{\mathrm{cl}}(t)=[x_i\sin\omega(T-t)+x_f\sin\omega t]/\sin\omega T$ and the boundary-term form $S_{\mathrm{cl}}=\frac m2[x\dot x]_0^T$ that follows from the equation of motion.
+- [Simplify] In Remark 5.1, carry out the trace for the reader or point to exercise 9 in 05.08. Expanding $1/[2\sinh(\beta\hbar\omega/2)]=\sum_n e^{-\beta\hbar\omega(n+1/2)}$ shows the spectrum directly.
+- [Graph] Plot classical trajectories $x_{\mathrm{cl}}(t)$ from a fixed $x_i$ with several initial velocities over $\omega t\in[0,2\pi]$. All of them refocus at $\omega t=\pi$ (at $-x_i$) and $2\pi$ (at $x_i$), which illustrates the focal points and the delta-function kernel.
+- [Manim] Animate a fan of oscillator trajectories in the $(t,x)$ plane converging at the focal time, while the prefactor $1/\sqrt{\sin\omega T}$ diverges and its phase jumps by $-\pi/2$.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/05 Feynman Path Integrals/05.05 Classical Limit and Stationary Phase.md
+priority: medium
+graph: yes
+manim: no
+summary: The physics and the Van Vleck formula are correct once the phase note is applied, but the reader must patch Eq. (5.7) with a separate note, and the stationary-phase mechanism itself is not shown.
+- [Simplify] Put the $e^{-i\pi/4}$ directly into Eq. (5.7) by writing the prefactor as $\sqrt{\frac{1}{2\pi i\hbar}\left|-\partial^2S_{\mathrm{cl}}/\partial x_f\partial x_i\right|}$. Then delete the "Phase convention in the source" note and the references to "the source". In one dimension, the $\det$ is unnecessary.
+- [Example] Check Eq. (5.7) against the free particle in one line: $-\partial^2S_{\mathrm{cl}}/\partial x_f\partial x_i=m/T$ reproduces Eq. (5.4).
+- [Graph] Illustrate stationary phase with a one-parameter family of paths $x_a(t)=x_{\mathrm{cl}}(t)+a\sin(\pi t/T)$, for which $S(a)=S_{\mathrm{cl}}+ca^2$. Plot $\cos(S(a)/\hbar)$ against $a$ for two values of $\hbar$. The integrand oscillates rapidly except near $a=0$, and the oscillation becomes faster as $\hbar$ decreases.
+- [Intuition] Add the one-dimensional stationary-phase formula $\int e^{i f(a)/\hbar}da\approx\sqrt{2\pi i\hbar/f''(a_0)}\,e^{if(a_0)/\hbar}$. It explains the origin of both the prefactor and the $i$.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/05 Feynman Path Integrals/05.06 Equivalence to the Schrödinger Equation.md
+priority: low
+graph: no
+manim: no
+summary: A correct, well-paced derivation; the Gaussian moments and the final equation check out.
+- [Simplify] Replace "Here the source places the potential at the final position" with a neutral statement. The choice of $V(x)$ or $V(y)$ changes only $O(\epsilon\xi)$ terms, which contribute at $O(\epsilon^{3/2})$ and vanish in the limit.
+- [Intuition] Add a sentence explaining that $|\xi|\sim\sqrt{\hbar\epsilon/m}$ is a diffusion-like scaling, so $\xi^2\sim\epsilon$. This is why the second-order Taylor term survives at first order in $\epsilon$ while higher terms drop out.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/05 Feynman Path Integrals/05.07 Closed Paths and Geometric Phases.md
+priority: low
+graph: no
+manim: no
+summary: Short and correct, but the meta-commentary about "the source" makes it read like an editorial note.
+- [Simplify] Merge the "Homotopy and magnetic field" note into the main text as a plain statement: the relative phase depends only on the homotopy class when $\mathbf B=0$ along the accessible paths. Drop the wording "The source describes".
+- [Intuition] Add a static diagram or a short sentence describing two paths that pass on either side of a shielded solenoid. The particle never meets $\mathbf B$, yet the interference pattern shifts by $q\Phi/\hbar$.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/05 Feynman Path Integrals/05.08 Feynman Path Integrals Exercises.md
+priority: low
+graph: no
+manim: no
+summary: A good exercise set; all numerical results (1.23e9 m^-1, 4.74 rad, 1.52e-8 m, 432 rad, 5.00e-31 J s, the flux quantum h/2e) and the partition function were rechecked and are correct.
+- [Structure] Exercise 6: define the speed in $\Delta\varphi=mv\Delta L/\hbar$ as $v=(L_1+L_2)/(2T)$. Then the result follows exactly from $m(L_2^2-L_1^2)/(2\hbar T)$ rather than from an unstated limit.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/06 One-Dimensional Systems/06.00 One-Dimensional Systems.md
+priority: low
+graph: no
+manim: no
+summary: A clear chapter hub with correct summary formulas.
+- [Structure] No change needed. Optionally list [[06.07 Overview]] in the chapter summary so that the comparison table is reachable from the hub.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/06 One-Dimensional Systems/06.01 Free Particle.md
+priority: low
+graph: no
+manim: no
+summary: Correct but terse; the reason that $E<0$ is excluded is stated without justification.
+- [Simplify] Justify "the exponential solutions cannot satisfy the conditions": any combination $Ae^{\kappa x}+Be^{-\kappa x}$ diverges at $+\infty$ or $-\infty$ unless $A=B=0$, so it is not even polynomially bounded and is not a generalized eigenfunction.
+- [Intuition] Note the twofold degeneracy for each $E>0$ ($\pm k$), which contrasts with the nondegenerate bound states in 06.06.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/06 One-Dimensional Systems/06.02 Potential Step.md
+priority: medium
+graph: yes
+manim: yes
+summary: The derivations and coefficients are correct, but the note lacks a picture of how $R$ and $T$ depend on energy and an intuition for why $T\ne|C/A|^2$.
+- [Graph] Plot $R(E/V_0)$ and $T(E/V_0)$ on $E/V_0\in[0,5]$: $R=1$ below 1, then $R=((\sqrt{\epsilon}-\sqrt{\epsilon-1})/(\sqrt{\epsilon}+\sqrt{\epsilon-1}))^2$ with $\epsilon=E/V_0$. The plot shows full reflection at threshold and the slow decay of $R$ at high energy.
+- [Intuition] Explain the factor $k_2/k_1$ in $T$: the current is density times velocity, and the transmitted wave moves more slowly. Note also that $|C/A|$ can exceed 1 without violating conservation.
+- [Manim] Animate a Gaussian packet hitting the step for $E<V_0$ and for $E>V_0$. The first case shows the evanescent tail and total reflection; the second shows the packet splitting into reflected and transmitted parts.
+- [Example] Add a numerical example, such as an electron with $E=2V_0$, which gives $k_2/k_1=1/\sqrt2$, $R\approx0.029$, and $T\approx0.971$, to show how small the quantum reflection typically is.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/06 One-Dimensional Systems/06.03 Infinite Potential Well.md
+priority: low
+graph: no
+manim: yes
+summary: Clear and correct, with a good figure, a correct parity table, and a correct uncertainty estimate.
+- [Manim] Animate $|\psi(x,t)|^2$ for $(\psi_1+\psi_2)/\sqrt2$ sloshing between the walls with period $4mL^2/(3\pi\hbar)$, which connects to exercise 6 in 06.08.
+- [Intuition] Add a numeric anchor for the energy scale: for an electron in $L=1\,\mathrm{nm}$, $E_1\approx0.376\,\mathrm{eV}$. This shows why nanometre confinement gives electron-volt level spacings.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/06 One-Dimensional Systems/06.04 Finite Potential Well.md
+priority: medium
+graph: yes
+manim: no
+summary: The derivation, the bound-state count $\lceil2z_0/\pi\rceil$, and Fig. 6.2 (which uses $\kappa=\tan 1$ consistently with $k\tan ka=\kappa$) are correct, but the graphical solution is described without a plot.
+- [Graph] Add the standard graphical-solution plot. On $z\in[0,z_0]$ with $z_0=4$, plot $z\tan z$ and $-z\cot z$ (on their positive branches) together with the quarter circle $\sqrt{z_0^2-z^2}$, and mark the three intersections.
+- [Example] Work one case numerically, such as $z_0=\pi/4$ or the exercise value $z_0=\sqrt{10}$. Give the root $z_1$ and the resulting $E_1=-V_0(1-z_1^2/z_0^2)$, together with the conversion $E=\hbar^2z^2/(2ma^2)-V_0$, which the note never states.
+- [Intuition] Add the limit $z_0\to\infty$, in which the roots approach $z=n\pi/2$ and reproduce the infinite well of width $2a$.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/06 One-Dimensional Systems/06.05 Attractive Delta Potential.md
+priority: medium
+graph: yes
+manim: no
+summary: The physics (jump condition, $E_0$, $T(k)$, figure) is correct, but the last section is mistitled and wordy, and one source link points to an unrelated heading.
+- [Correctness] The source link [[Orbital angular momentum, rings, and spheres#Atkins problems 3.29 and 3.30|Physics 137]] targets a section about hydrogenic orbital and spin angular momentum, which has nothing to do with point interactions. The relevant heading in that note is "#Double delta well".
+- [Structure] Rename "Use the derivative jump as a normalization check". The jump fixes the decay rate, and normalization ($A=\sqrt\kappa$) is a separate step. Also condense the paragraph into two equations: $\kappa=m\alpha/\hbar^2$ and $A=\sqrt\kappa$.
+- [Graph] Plot $T(E)$ against $E/|E_0|$ on $[0,10]$, using $T=1/(1+|E_0|/E)$ since $(m\alpha/\hbar^2k)^2=|E_0|/E$. This compact form and the plot make the low-energy reflection obvious.
+- [Simplify] In the opening, write "finite integrated strength $2aV_0=\alpha$" rather than "finite $V_0a$" so that the limiting procedure is explicit.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/06 One-Dimensional Systems/06.06 General Theorems in One Dimension.md
+priority: low
+graph: no
+manim: no
+summary: Correct and compact; the node theorem is stated without any intuition.
+- [Intuition] Add a short Sturm-comparison heuristic for Theorem 6.2: raising $E$ increases the local curvature, so $\psi$ turns faster and fits one more half-oscillation before it must decay. Point to Fig. 6.1 in 06.03 as an illustration.
+- [Simplify] In the proof of Theorem 6.1, state why $W\to0$: both functions and their derivatives vanish at $\pm\infty$ or at hard walls, so the constant $W$ is zero.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/06 One-Dimensional Systems/06.07 Overview.md
+priority: low
+graph: no
+manim: no
+summary: A useful, correct comparison table.
+- [Structure] No change needed. Optionally add a column for degeneracy: twofold in the continuum for $E$ above both asymptotes, and nondegenerate for bound states.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/06 One-Dimensional Systems/06.08 One-Dimensional Systems Exercises.md
+priority: low
+graph: no
+manim: no
+summary: A solid exercise set; the numerical results (0.376, 1.50, 3.38 eV, 1.10 um, the $\langle x(t)\rangle$ amplitude $16L/(9\pi^2)$, and $0.568\hbar$) were rechecked and are correct.
+- [Correctness] Symbol clash: $T$ denotes both the transmission coefficient (exercises 2, 8, and 10) and the oscillation period (exercise 6), and the table lists both. Rename the period, for example to $\tau$.
+- [Structure] Exercise 5: add the result. Here $z_0=\sqrt{10}\approx3.16$, just above $\pi$, so there are three bound states, the third barely bound. This is worth stating because the graphical estimate is delicate.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/06 One-Dimensional Systems/Free particles, finite barriers, and point interactions.md
+priority: high
+graph: yes
+manim: yes
+summary: The physics checks out (penetration depth 0.20 nm, delta-well R and T, barrier $T^{-1}$, even-state condition all verified), but the note is a lightly edited lecture transcript with stray fragments, repeated derivations, and an unfinished ending.
+- [Correctness] $\alpha$ denotes three different things: the delta strength in $V=-\alpha\delta(x)$, the Gaussian parameter in $\phi(k)=\frac{2N}{\sqrt\alpha}\cos(kx_0)e^{-k^2/(2\alpha)}$, and the cosine coefficient in the centered infinite well $\psi_{\mathrm{II}}=\alpha\cos(kx)+\beta\sin(kx)$; rename the last two (e.g. $C,D$ and $a_G$); equation tags (1),(2) are also reused for both the Fourier pair and the even-state matching equations.
+- [Structure] Remove transcript artifacts: the heading "##### ) — One-dimensional potentials", "The margin notes quantized energy.", "OH means office hours.", the homework references "Problem 3/problem 2/2.22" without statements, and the notes about corrected handwriting; merge the twice-stated finite-barrier setup (General wavefunctions/Continuity and the numbered recipe) into one pass.
+- [Structure] The centered infinite well section stops after writing the two matching equations; finish it ($\cos(ka/2)=0$ or $\sin(ka/2)=0$, $k_n=n\pi/a$, $E_n=n^2\pi^2\hbar^2/(2ma^2)$) or link to [[06.03 Infinite Potential Well]].
+- [Structure] The physical-quantities table gives $\Psi$ in $\unit{m^{-3/2}}$ "in three dimensions" although the whole note is 1D; give $\unit{m^{-1/2}}$ and add $m$, $\alpha$, $L$, $a$, $z$, $z_0$.
+- [Graph] Under "Finite barrier" plot $T(E/V)$ from the given $T^{-1}$ formula for $z=\sqrt{2mV}L/\hbar=3$ over $0<E/V<1$ (log y-axis), and under "Even functions" plot $\tan z$ and $\sqrt{z_0^2/z^2-1}$ for $z_0=8$ on $0<z<8$ with intersections marked, replacing the hand-sketched Fig. 24.
+- [Manim] After Eq. (3), animate a Gaussian packet's $|\Psi(x,t)|^2$ spreading as the $k$ components dephase, to motivate the $\Psi(x,0)\to\phi(k)\to\Psi(x,t)$ recipe.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/06 One-Dimensional Systems/Square-well, oscillator, and tunneling problems.md
+priority: high
+graph: yes
+manim: no
+summary: The infinite-well derivation is correct and readable, but the note has a broken quantities table, inconsistent amplitude labels, duplicated sentences, and ends in a one-line stub.
+- [Correctness] The physical-quantities table lists $R$ as "Activity" in $\unit{Bq}$, but here $R$ is the dimensionless reflection coefficient; $E_n$ is described as "relative to ionization" in eV, which is wrong for the infinite well (measured from the well floor); add $T$, $k$, $\kappa$, $\eta$, $L$, $m$, $\psi$.
+- [Correctness] Symbol clashes: in "Barrier boundary conditions" region III is $De^{ik_3x}+Fe^{-ik_3x}$ with $F=0$, but two paragraphs later it is $Fe^{ik_3x}+Ge^{-ik_3x}$ with $F$ the transmitted amplitude; the finite-well decay uses $\eta=1/\alpha$ with $\alpha$ never defined (use $\kappa$ as later in the note).
+- [Structure] Delete the duplicated cat-norm sentence ("Each diagonal integral...") and the handwriting remarks ("The handwritten box omits...", "The red note says..."); the "Expectation values" section is a single question, so either complete it (e.g. $\langle x\rangle=L/2$, $\langle x^2\rangle$ for the infinite well) or remove it.
+- [Simplify] The paragraph linking $\Delta x\,\Delta p_y\ge0$ to $\hat{\mathbf x}\cdot\hat{\mathbf y}=0$ is misleading; replace by the statement that $[\hat x,\hat p_y]=0$, so there is no lower bound.
+- [Graph] Under "Infinite square well" plot $\psi_n(x)=\sqrt{2/L}\sin(n\pi x/L)$ and $|\psi_n|^2$ for $n=1,2,3$ offset at $E_n\propto n^2$ on $0\le x\le L$.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/07 Barriers and Quantum Tunneling/07.00 Barriers and Quantum Tunneling.md
+priority: low
+graph: no
+manim: no
+summary: A concise chapter hub with correct summary formulas, and all its heading links resolve.
+- [Structure] No change needed.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/07 Barriers and Quantum Tunneling/07.01 Rectangular Potential Barrier.md
+priority: medium
+graph: yes
+manim: yes
+summary: The algebra is correct (the closed form for $t$ was checked numerically against the four matching equations), but the step from the four equations to $t$ is skipped.
+- [Simplify] After (7.2), add the intermediate lines: from (7.2) $A=\tfrac12(1-ik/\kappa)te^{ika+\kappa a}$ and $B=\tfrac12(1+ik/\kappa)te^{ika-\kappa a}$, then insert into (7.1) and eliminate $r$; readers cannot reproduce "Solve the four equations" as written.
+- [Graph] Plot $T$ against $E/V_0$ on $0<E/V_0<4$ for a fixed opacity $\sqrt{2mV_0}a/\hbar=5$, using (7.3) below the barrier and the $\sin^2$ form above it; mark the resonances $k'a=n\pi$.
+- [Intuition] Add the $E\to V_0$ limiting case (both forms give $T=[1+mV_0a^2/(2\hbar^2)]^{-1}$) to show that the two formulas join continuously.
+- [Manim] Animate a Gaussian wave packet with mean energy below $V_0$ hitting the barrier and splitting into a reflected and a weak transmitted packet, with $|\psi|^2$ shown, to contrast with the stationary picture of Fig. 7.1.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/07 Barriers and Quantum Tunneling/07.02 Physical Interpretation.md
+priority: low
+graph: yes
+manim: no
+summary: Short and correct; the numbers (proton $\sim10^{-190}$, STM factor $e^{-2}\simeq0.13$) check out.
+- [Example] In "Role of mass" state the actual numbers: $\kappa=5.12\,\mathrm{nm^{-1}}$, $e^{-2\kappa a}\simeq3.6\times10^{-5}$, and with the prefactor $T\simeq1.4\times10^{-4}$ (as in exercise 2), so "of order $10^{-4}$" is not ambiguous; write $\ln$ instead of $\log$.
+- [Intuition] In "Penetration and current", show briefly why one real exponential alone carries no current ($J\propto\operatorname{Im}(\psi^*\psi')=0$) while the mixed term gives $J\propto\kappa\operatorname{Im}(A^*B)$.
+- [Graph] Plot $\ln T$ versus barrier width $a$ ($0$ to $1\,\mathrm{nm}$) for an electron and a proton with $V_0-E=1\,\mathrm{eV}$, to show the slope ratio $\sqrt{1836}$.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/07 Barriers and Quantum Tunneling/07.03 WKB Approximation for Tunneling.md
+priority: medium
+graph: yes
+manim: no
+summary: The WKB expansion and the triangular-barrier integral are correct, but the note does not say when WKB is valid or why the transmission is the square of the amplitude ratio.
+- [Simplify] State the validity condition, a slowly varying wavelength $|d\lambda/dx|\ll1$ (equivalently $|\hbar S''|\ll S'^2$), and note that it fails at the turning points, which is why Airy matching is needed.
+- [Intuition] Add one line explaining that $T\simeq|\psi(x_2)/\psi(x_1)|^2=e^{-2\int\kappa\,dx}$, and that the rectangular case gives back $e^{-2\kappa a}$ but loses the prefactor $16E(V_0-E)/V_0^2$.
+- [Graph] For the triangular example plot $V(x)=V_0-Fx$ with $E=0$ and shade the forbidden segment; optionally compare exact and WKB $\ln T$ for a rectangular barrier as a function of $\kappa a$ to show where the approximation is good.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/07 Barriers and Quantum Tunneling/07.04 Application to Alpha Decay.md
+priority: medium
+graph: yes
+manim: no
+summary: The integral and the Gamow leading term are correct, but "+ correction terms" hides a term that is numerically as large as the leading one.
+- [Simplify] Write the next term explicitly: $\ln T\simeq-\frac{2\pi C}{\hbar v_\alpha}+\frac{4\sqrt{2m_\alpha CR}}{\hbar}$; for U-238 ($Z'=180$, $E_\alpha=4.27$ MeV, $R=9.3$ fm) the terms are $-172.4$ and $+86.1$, giving $-86.3$ against the exact WKB value $-88.7$, so the leading term alone would be off by roughly 37 orders of magnitude.
+- [Example] Add the worked U-238 numbers: $r_2\simeq61\,\mathrm{fm}$, $V_C(R)\simeq28\,\mathrm{MeV}$, $T\simeq3\times10^{-39}$, $\nu\simeq8\times10^{20}\,\mathrm{Hz}$, $\tau\simeq4\times10^{17}\,\mathrm{s}\simeq1.4\times10^{10}$ yr (consistent with exercise 7).
+- [Graph] Add a Geiger–Nuttall plot: $\log_{10}t_{1/2}$ versus $Z'/\sqrt{E_\alpha}$ for a handful of even-even emitters (e.g. U-238, Th-232, Ra-226, Po-210, Po-212), with the straight-line trend.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/07 Barriers and Quantum Tunneling/07.05 Other Applications.md
+priority: low
+graph: yes
+manim: no
+summary: A brief, correct qualitative survey.
+- [Correctness] The quantities table lists $\electric I,\electric V$ (current and voltage), but the note never uses these symbols; drop the row or add the $I$–$V$ characteristic it refers to.
+- [Graph] In "Stellar fusion" plot $e^{-E/k_BT}$, $e^{-b/\sqrt E}$, and their product versus $E$ (0–30 keV) for $k_BT=1.3$ keV and the p–p value of $b$, to show the Gamow peak near 6 keV.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/07 Barriers and Quantum Tunneling/07.06 Tunneling and Lifetimes.md
+priority: low
+graph: no
+manim: no
+summary: A correct and compact derivation of $\tau=\hbar/\Gamma\simeq1/(\nu T)$.
+- [Intuition] Add one sentence on why the per-encounter picture gives an exponential law (a constant escape probability per attempt implies $dN/dt=-\nu TN$) and why it needs $T\ll1$.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/07 Barriers and Quantum Tunneling/07.07 Barriers and Quantum Tunneling Exercises.md
+priority: low
+graph: no
+manim: no
+summary: A good exercise list; recomputed results 1, 2, 4, 5, 6, and 7 are correct to the stated precision.
+- [Structure] No change needed; optionally add the exercise 7 WKB breakdown ($T\simeq3\times10^{-39}$, $\nu\simeq8\times10^{20}$ Hz) so the order-of-magnitude result can be checked.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/08 Harmonic Oscillator/08.00 Harmonic Oscillator.md
+priority: low
+graph: no
+manim: no
+summary: A clear hub with a correct chapter summary.
+- [Links] Link the summary bullets to their notes (08.01 ladder operators, 08.02 Hermite functions, 08.03 uncertainties, 08.05 coherent states, 08.06 3D degeneracy), as the 07.00 hub does.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/08 Harmonic Oscillator/08.01 Algebraic Form – Operators â and â†.md
+priority: low
+graph: no
+manim: no
+summary: The algebraic derivation is correct and well ordered, and the inverse relations check out.
+- [Simplify] Show the one-line commutator check $[\hat a,\hat a^\dagger]=\frac{m\omega}{2\hbar}\cdot\frac{-2i}{m\omega}[\hat x,\hat p]=\hat I$ and the step $\hat a^\dagger\hat a=\frac{\hat H}{\hbar\omega}-\frac12$; both are currently asserted.
+- [Intuition] Describe the energy ladder: rungs $\hbar\omega$ apart, $\hat a$ steps down and stops at $\lvert0\rangle$; a small static ladder diagram would help.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/08 Harmonic Oscillator/08.02 Position Representation – Hermite Functions.md
+priority: low
+graph: no
+manim: no
+summary: Correct and clear, with an accurate native graph of $\psi_0$ to $\psi_3$; the normalizations and plotted factors match.
+- [Simplify] Show one application of $\hat a^\dagger=\frac{1}{\sqrt2}(\xi-d/d\xi)$ on $\psi_0$ to get $\psi_1\propto2\xi e^{-\xi^2/2}$, so "repeated application" becomes concrete.
+- [Intuition] Mention that for large $n$, $|\psi_n|^2$ approaches the classical density $1/(\pi\sqrt{2n+1-\xi^2})$; a second panel plotting $|\psi_{20}|^2$ against it would illustrate correspondence.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/08 Harmonic Oscillator/08.03 Expectation Values and Fluctuations.md
+priority: low
+graph: no
+manim: no
+summary: Correct matrix elements and uncertainties, presented compactly.
+- [Simplify] Derive $\langle n|\hat x^2|n\rangle$ in one line from $(\hat a+\hat a^\dagger)^2$, where only $\hat a\hat a^\dagger+\hat a^\dagger\hat a=2\hat N+1$ survives; currently it is stated.
+- [Structure] The table lists $\energy{\hat H}$, which the text never writes; either use it in the mean-energy sentence or drop the row.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/08 Harmonic Oscillator/08.04 Dynamics and the Ehrenfest Theorem.md
+priority: low
+graph: yes
+manim: no
+summary: The example is correct and short, but the opening sentence about "confining potentials treated here" is awkward.
+- [Simplify] Replace "This exact correspondence among the confining potentials treated here follows from the linearity of $V'(x)$" with: since $\langle V'(\hat x)\rangle=V'(\langle\hat x\rangle)$ only when $V'$ is linear, the means obey Newton's law exactly for the oscillator (and for the free particle or a uniform field).
+- [Simplify] Note that $x_0'=x_0/\sqrt2$, with $x_0$ from 08.02, to avoid introducing a new length symbol.
+- [Graph] Plot $\langle x(t)\rangle/x_0'=\cos\omega t$ together with $|\psi(x,t)|^2$ snapshots at $\omega t=0,\pi/2,\pi$ for the $(\lvert0\rangle+\lvert1\rangle)/\sqrt2$ state.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/08 Harmonic Oscillator/08.05 Coherent States.md
+priority: low
+graph: yes
+manim: yes
+summary: Correct and clear; the mean values, uncertainties, and Fig. 8.2 densities check out.
+- [Graph] Add a bar chart of the Poisson distribution $P_n$ for $|\alpha|^2=4$ ($n=0$ to $12$) beside Fig. 8.2.
+- [Manim] Animate the coherent-state Gaussian $|\langle x|\alpha(t)\rangle|^2$ oscillating in the parabolic potential over one period with constant width, side by side with $\alpha e^{-i\omega t}$ rotating in the complex plane.
+- [Simplify] Show the one-line derivation of $\langle\hat x\rangle$ from $\hat x=(x_0/\sqrt2)(\hat a+\hat a^\dagger)$ and $\langle\alpha|\hat a^\dagger=\alpha^*\langle\alpha|$.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/08 Harmonic Oscillator/08.06 Oscillator in Two and Three Dimensions.md
+priority: low
+graph: no
+manim: no
+summary: Short, correct, and clear.
+- [Example] Add the explicit counting for $n=2$ (six triples, or $(n_r,\ell)=(1,0),(0,2)$ giving $1+5=6$ states) to show that the two bases agree.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/08 Harmonic Oscillator/08.07 Harmonic Oscillator Exercises.md
+priority: low
+graph: no
+manim: no
+summary: A good exercise list; the results for exercises 1, 2, 7, and 10 are correct.
+- [Structure] In exercise 1 the carbon-12 mass is irrelevant ($\omega=2E_0/\hbar$); either say so as the point of the exercise or also ask for the oscillator length $x_0$, which does need the mass.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/08 Harmonic Oscillator/Harmonic oscillator wavefunctions and ladder calculations.md
+priority: high
+graph: yes
+manim: no
+summary: The ladder-operator algebra, normalization, Hermite table, and delta-jump condition are correct, but the note is a raw lecture transcript with stray logistics, overloaded symbols, and a wrong quantities table.
+- [Correctness] The physical-quantities table defines $a_0$ as the Bohr radius in $\unit{m}$, but here $a_0$ is the first power-series coefficient; $\Psi$ is also given in $\unit{m^{-3/2}}$ in a purely 1D note.
+- [Correctness] Symbol clashes: $\alpha$ is the Hermite scale $\sqrt{m\omega/\hbar}$, then $n\pi/a$ in the $\langle x\rangle$ integral, then the delta strength in $V=+\alpha\delta(x)$; $y$ is both the dimensionless oscillator coordinate and the unknown function in $y''+y=0$; $E_0$ is the oscillator ground energy $\hbar\omega/2$ and also "the constant multiplying $n^2$" for the well (the comparison table correctly uses $E_1$); $k$ and $k'$ swap roles between "Strategy for wavefunctions" and the last paragraph.
+- [Structure] Remove the office-hours line, the "Midterm topics" list, "Homework problem 4" without its statement, and the handwriting remarks; move the infinite-well, power-series, and finite-well/delta material to the 06 notes (or link them), so this note covers only the oscillator.
+- [Simplify] Under "Harmonic-oscillator asymptotics" finish the argument: the series must terminate, so $\lambda=2n+1$, which gives $E_n=(n+\tfrac12)\hbar\omega$ and $f=H_n$; currently the recurrence is left hanging and the result appears only earlier, without derivation.
+- [Structure] The oscillator angular frequency is written $\signal{\omega}$ here but $\mechanical{\omega}$ in the 08.0x course notes; use one macro consistently.
+- [Graph] Plot $\psi_n(x)$ and $|\psi_n|^2$ for $n=0..3$ against $y=\alpha x$, with $V=\tfrac12y^2$ and the classical turning points $y=\pm\sqrt{2n+1}$, to support the comparison table (or embed the 08.02 figure).
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/09 Orbital Angular Momentum/09.00 Orbital Angular Momentum.md
+priority: low
+graph: no
+manim: no
+summary: Clear and correct chapter hub with an accurate summary of the commutators, spectrum, ladder action, parity, and rotation operator.
+- [Structure] No change needed; optionally link each summary bullet to its section note (09.01–09.07) so the hub doubles as a table of contents.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/09 Orbital Angular Momentum/09.01 Definition and Algebra.md
+priority: low
+graph: no
+manim: no
+summary: Concise and correct definition note, but the commutator result is stated without even a one-line derivation.
+- [Example] Under "Commutators", show the single nonzero step $[\hat y\hat p_z,\hat z\hat p_x]+[\hat z\hat p_y,\hat x\hat p_z]=i\hbar(\hat x\hat p_y-\hat y\hat p_x)$ so the reader sees where $[\hat L_x,\hat L_y]=i\hbar\hat L_z$ comes from.
+- [Intuition] After "cannot all have sharp values", add one sentence on why $\hat{\mathbf L}^2$ commutes with each component (it is rotation invariant, a scalar), which motivates choosing $\hat{\mathbf L}^2,\hat L_z$ as the commuting pair.
+- [Simplify] Justify $x\partial_y-y\partial_x=\partial_\phi$ in one line via the chain rule with $x=\rho\cos\phi$, $y=\rho\sin\phi$.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/09 Orbital Angular Momentum/09.02 Raising and Lowering Operators.md
+priority: low
+graph: no
+manim: no
+summary: Correct and compact; the key steps are stated but the identity for $\hat{\mathbf L}^2$ and the commutators are asserted without derivation.
+- [Example] Derive $[\hat L_z,\hat L_\pm]=\pm\hbar\hat L_\pm$ in two lines from $[\hat L_z,\hat L_x]=i\hbar\hat L_y$ and $[\hat L_z,\hat L_y]=-i\hbar\hat L_x$, and expand $\hat L_-\hat L_+=\hat L_x^2+\hat L_y^2+i[\hat L_x,\hat L_y]$ to show the $\hat{\mathbf L}^2$ identity.
+- [Intuition] Add an analogy to the harmonic oscillator ladder ($[\hat H,\hat a^\dagger]=\hbar\omega\hat a^\dagger$): $\hat L_\pm$ step the eigenvalue of $\hat L_z$ by $\pm\hbar$ in exactly the same way.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/09 Orbital Angular Momentum/09.03 Spectrum of L̂² and L̂ (z).md
+priority: low
+graph: no
+manim: yes
+summary: Correct proof and an accurate vector-model figure ($\sqrt6$, $\sqrt5$, $65.9^\circ$ check out), though a couple of proof steps are compressed.
+- [Simplify] In the proof, say explicitly that $m_{\min}(m_{\min}-1)=m_{\max}(m_{\max}+1)$ has the roots $m_{\min}=-m_{\max}$ and $m_{\min}=m_{\max}+1$, and that the second is excluded because $m_{\min}\le m_{\max}$.
+- [Simplify] Derive the normalization in "Explicit ladder action" in one line: $\lVert\hat L_\pm\lvert\ell,m\rangle\rVert^2=\langle\ell,m\rvert\hat L_\mp\hat L_\pm\lvert\ell,m\rangle=\hbar^2[\ell(\ell+1)-m(m\pm1)]$.
+- [Manim] Show all five cones for $\ell=2$ stacked at heights $m\hbar=-2\hbar,\ldots,2\hbar$ on a sphere of radius $\sqrt6\hbar$, with $\hat L_+$ animated as the vector jumping from one cone to the next and vanishing above $m=2$.
+- [Intuition] Note that the cone angle $\arccos(m/\sqrt{\ell(\ell+1)})$ tends to zero for $m=\ell\to\infty$, recovering the classical limit of a vector aligned with $z$.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/09 Orbital Angular Momentum/09.04 Spherical Harmonics.md
+priority: low
+graph: yes
+manim: no
+summary: Correct formulas (all listed $Y_{\ell m}$, phases and $p_x,p_y$ combinations verified) and an accurate polar-section figure; a 3D view would add the most.
+- [Graph] Add a graph3d parametric surface $r(\theta,\phi)=\lvert Y_{\ell m}\rvert^2$ (or $\lvert\mathrm{Re}\,Y\rvert$ for real orbitals) for $p_z$, $p_x$, and $d_{z^2}$ with $\theta\in[0,\pi]$, $\phi\in[0,2\pi)$, so the ring for $m=\pm1$ and the $d_{z^2}$ collar are seen in 3D.
+- [Intuition] Explain the node counting: $Y_{\ell m}$ has $\ell-\lvert m\rvert$ nodal cones in $\theta$ and $\lvert m\rvert$ nodal planes for the real combinations, totalling $\ell$ angular nodes; point at the nodal cone of $d_{z^2}$ at $\cos^2\theta=1/3$ ($54.7^\circ$) in Fig. 9.2.
+- [Structure] The callout "Orientation in the source" is source commentary; shorten it or move it to a footnote so it does not distract from the physics.
+- [Simplify] Replace the Unicode labels "p𝓏" and "d𝓏²" in Fig. 9.2 with plain "p_z" and "d_z²" so the labels render consistently with the text.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/09 Orbital Angular Momentum/09.05 L̂² as the Angular Laplace Operator.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and brief; the centrifugal term is named but not illustrated.
+- [Graph] Plot the effective radial potential $V_{\mathrm{eff}}(r)=-1/r+\ell(\ell+1)/(2r^2)$ in atomic units for $\ell=0,1,2$, $r\in[0.2,15]$, to show the centrifugal barrier that keeps $\ell>0$ states away from the origin.
+- [Simplify] Add the substitution $u(r)=rR(r)$ and the resulting 1D equation $-\frac{\hbar^2}{2m}u''+[V+\hbar^2\ell(\ell+1)/(2mr^2)]u=Eu$, which is what the hydrogen chapter actually uses.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/09 Orbital Angular Momentum/09.06 Particle on a Sphere.md
+priority: low
+graph: yes
+manim: no
+summary: Correct rotor spectrum and rotational constant $\tilde B=\hbar/(4\pi cI)$; the spectroscopy example would benefit from a number and a picture.
+- [Graph] Draw a level diagram of $E_\ell/E_1=\ell(\ell+1)/2$ for $\ell=0..5$ with degeneracies $2\ell+1$, next to a stick spectrum of absorption lines at $\tilde\nu=2\tilde B(\ell+1)$.
+- [Example] Add a worked number: for CO, $\tilde B\approx1.93\,\mathrm{cm^{-1}}$ gives line spacing $\approx3.86\,\mathrm{cm^{-1}}$ and a bond length of about $113\,\mathrm{pm}$ from $I=\mu r^2$.
+- [Intuition] Explain why the gap between adjacent levels grows linearly, $E_{\ell+1}-E_\ell=\hbar^2(\ell+1)/I$, so the absorption lines are equally spaced.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/09 Orbital Angular Momentum/09.07 Rotations as Unitary Operators.md
+priority: low
+graph: no
+manim: yes
+summary: Correct and compact; the sign convention $(\hat R f)(\mathbf r)=f(R^{-1}\mathbf r)$ behind $Y_{\ell m}(\theta,\phi-\alpha)$ is implicit.
+- [Simplify] State the active convention $(\hat R\psi)(\mathbf r)=\psi(R^{-1}\mathbf r)$ explicitly so the reader sees why the rotated harmonic is $Y_{\ell m}(\theta,\phi-\alpha)$ and not $\phi+\alpha$.
+- [Example] Give the smallest nontrivial Wigner matrix, $d^{1}_{mm'}(\beta)$ for a rotation about $y$, or at least $d^1_{00}(\beta)=\cos\beta$, to make $D^\ell$ concrete.
+- [Manim] Animate a $p_x$ lobe rotated about $z$ by $\alpha$ and show its components $Y_{1,\pm1}$ picking up phases $e^{\mp i\alpha}$, illustrating that $\hat R_z$ is diagonal in $m$.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/09 Orbital Angular Momentum/09.08 Orbital Angular Momentum Exercises.md
+priority: low
+graph: no
+manim: no
+summary: Well-chosen exercises with correct results (checked 3, 5, 7, 8, 10).
+- [Simplify] Exercise 9 ("classical rotating sphere") is vague; rephrase as comparing $\cos\theta_{\min}=\ell/\sqrt{\ell(\ell+1)}$ with 1 as $\ell\to\infty$, or give a macroscopic $L$ to estimate $\ell$.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/09 Orbital Angular Momentum/Orbital angular momentum, rings, and spheres.md
+priority: high
+graph: yes
+manim: no
+summary: The derivations checked are correct (eigenvectors, $\Lambda^2Y_{21}=-6Y_{21}$, hydrogen superposition with $A=1/\sqrt5$, commutators, $\hat L_\pm$ in spherical coordinates), but the note is a long transcription that starts mid-problem, mixes unrelated topics, and has an inconsistent quantity table.
+- [Correctness] The physical-quantities table lists $J_x$ as a probability flux with unit $\unit{s^{-1}}$, but the note uses $\hat J_x$ only as a generalized angular momentum component (section "General angular momentum"); also $R,T$ (reflection/transmission) never appear as symbols, while the mass $m$, $m_\ell$, $\hat J$, and $\Lambda^2$ are missing; rebuild the table from the symbols actually used.
+- [Correctness] In the "Physics 137 — Midterm 2 review" block, "Its inner product is $\int_a^b\lvert f\rvert^2dx<\infty$, $\langle f\mid g\rangle=\ldots$" labels the square-integrability condition as the inner product; separate the two statements.
+- [Structure] The note opens with "For $\lambda=0$, solve $M\mathbf v=0$" without defining $M$ (the rows imply $M=\begin{pmatrix}2&0&-2\\-2i&i&2i\\1&0&-1\end{pmatrix}$); state the matrix and the problem, or move this fragment to a linear-algebra note.
+- [Structure] Split off the off-topic sections (quantum dots, oscillator probability, double delta well, Hilbert-space review, bra-ket review) into the notes they belong to, and keep this note on ring, sphere, and angular momentum algebra.
+- [Example] The quantum-dot question ("about 20 eV or more") is left unanswered; add the estimate $\Delta E=3\pi^2\hbar^2/(2m_eL^2)=20\,\mathrm{eV}\Rightarrow L\approx0.24\,\mathrm{nm}$, which shows such a dot would be atom-sized.
+- [Graph] Replace the image Fig. 43 with a native polar plot $r(\phi)=1+0.4\cos(m\phi)$ (the real part of $\Phi_m$ on the ring) for $m=1,2,3$, adding $m=1.5$ dashed to show that only integer $m$ closes on itself.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/09 Orbital Angular Momentum/Spatial rotations and the angular momentum generators.md
+priority: high
+graph: no
+manim: yes
+summary: Mostly correct group-theory material (generator matrices, dipole selection-rule factorization, tensor decomposition $9=1+3+5$ verified), but it has a sign error in the key non-commutation example, a wrong quantity table, and unrelated course chatter.
+- [Correctness] In "The three-dimensional rotation group", $O_y(\epsilon)O_x(\epsilon)-O_x(\epsilon)O_y(\epsilon)=\epsilon^2[L_x,L_y]$ with the given passive matrices equals $-i\epsilon^2L_z=\begin{pmatrix}0&\epsilon^2&0\\-\epsilon^2&0&0\\0&0&0\end{pmatrix}=O_z(+\epsilon^2)-I_3$, not the displayed $\begin{pmatrix}0&-\epsilon^2&0\\\epsilon^2&0&0\\0&0&0\end{pmatrix}$ and not $O_z(-\epsilon^2)-I_3$.
+- [Correctness] The physical-quantities table lists $\mechanical{L}$ both as "Box side length" (m) and as orbital angular momentum, and includes symbols the note never uses ($\mathbf p,\mathbf p'$, $c$, emission coefficients $A,B$); remove them and add the dimensionless generators $L_i,T_a,J_i$, $O$, $D(R)$, $\boldsymbol\omega$, $\ell,m$.
+- [Structure] Remove the non-physics remarks ("the following week's discussion is canceled", the 23 versus 27 out of 30 exam-score advice, qualifying exam scope).
+- [Simplify] The passive/active switch is confusing; state once at the top which convention each matrix uses, and present the active generators $(J_k)_{ij}=-i\epsilon_{kij}$ with $[J_i,J_j]=i\epsilon_{ijk}J_k$ as the main result.
+- [Simplify] The SO(2)–U(1) paragraph uses generator $1$ but writes $e^{i\alpha}$ while the matrix case uses $e^{-i\alpha T}$; use the same sign convention ($e^{-i\alpha}$) for consistency.
+- [Manim] Animate a book rotated by $90^\circ$ about $x$ then $y$, and in the opposite order, ending in different orientations; then shrink the angles to show the difference becomes a small rotation about $z$.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/10 Spin/10.00 Spin.md
+priority: low
+graph: no
+manim: no
+summary: Clear and correct chapter hub with an accurate summary of the spin-1/2 results and conventions.
+- [Structure] No change needed; optionally link each summary bullet to its section note (10.01–10.06).
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/10 Spin/10.01 Algebraic Definition.md
+priority: low
+graph: no
+manim: no
+summary: Correct and concise; the reason spin can be half-integer while orbital momentum cannot is stated but not motivated.
+- [Intuition] Add one sentence that spin has no coordinate wave function $e^{im\phi}$, so the single-valuedness argument of 09.03 does not apply and the algebra alone allows $s=1/2,3/2,\ldots$; mention that the $2\pi$ sign flip in 10.03 is the observable consequence.
+- [Example] Add the spin-1/2 numbers directly: $\lvert\mathbf S\rvert=\hbar\sqrt3/2$ and $S_z=\pm\hbar/2$, so the spin is never aligned with $z$.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/10 Spin/10.02 Spin ½ and the Pauli Matrices.md
+priority: low
+graph: no
+manim: no
+summary: Correct and compact reference for the Pauli matrices and their eigenvectors.
+- [Example] Add one worked check, for example $\sigma_x\sigma_y=i\sigma_z$ by explicit multiplication, and the general eigenvector of $\boldsymbol\sigma\cdot\hat{\mathbf n}$ as a bridge to the Bloch sphere note.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/10 Spin/10.03 Bloch Sphere.md
+priority: low
+graph: no
+manim: yes
+summary: Correct and clear, with an accurate Bloch-sphere figure; the half-angle and the $2\pi$ sign flip could use more intuition.
+- [Intuition] Explain why the parametrization uses $\theta/2$: orthogonal states $\lvert+\rangle,\lvert-\rangle$ are antipodal on the sphere, so a Hilbert-space angle of $\pi/2$ maps to a sphere angle of $\pi$.
+- [Example] Show the short calculation $\langle\sigma_x\rangle=2\,\mathrm{Re}(\alpha^*\beta)=\sin\theta\cos\phi$ instead of only "direct calculation gives".
+- [Manim] Animate $\hat R_z(\alpha)$ for $\alpha$ from $0$ to $4\pi$: the Bloch vector returns after $2\pi$ while a side indicator of the spinor phase $e^{-i\alpha/2}$ shows $-1$ at $2\pi$ and $+1$ at $4\pi$.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/10 Spin/10.04 Larmor Precession.md
+priority: low
+graph: yes
+manim: yes
+summary: Correct with a consistent signed-frequency convention ($\dot\phi=-\omega_L$ matches the figure arrow and exercise 10.07.7); the resonance example is very terse.
+- [Manim] Animate the Bloch vector precessing about $\mathbf B$ on a cone for $\omega_L>0$ and $\omega_L<0$, tracing the transverse components as they oscillate; motion is the point of this note.
+- [Graph] Plot $\langle S_x\rangle=(\hbar/2)\cos\omega_Lt$ and $\langle S_y\rangle=-(\hbar/2)\sin\omega_Lt$ for $\omega_Lt\in[0,4\pi]$ next to Fig. 10.2.
+- [Example] Give numbers: for an electron $\lvert\gamma\rvert/2\pi\approx28\,\mathrm{GHz/T}$ and for a proton $\approx42.6\,\mathrm{MHz/T}$, so a $1.5\,\mathrm{T}$ MRI magnet resonates near $64\,\mathrm{MHz}$.
+- [Simplify] In the NMR example, "amplitude grows linearly" is only the short-time limit; mention that at resonance the populations undergo Rabi oscillations at $\Omega=\lvert\gamma\rvert B_1$.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/10 Spin/10.05 Stern–Gerlach Revisited.md
+priority: low
+graph: no
+manim: yes
+summary: Correct and clear description of sequential Stern–Gerlach analyzers.
+- [Manim] Animate a beam passing through $z$, $x$, then $z$ analyzers with the blocked beams fading, showing the reappearance of the $-z$ component after the $x$ selection.
+- [Example] Add the generalization: an analyzer tilted by angle $\theta$ from $z$ passes $\lvert+z\rangle$ with probability $\cos^2(\theta/2)$, which reduces to $1/2$ for $\theta=\pi/2$.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/10 Spin/10.06 Introduction to Combining Two Spin-½ Systems.md
+priority: low
+graph: no
+manim: no
+summary: Correct and concise introduction; the triplet and singlet states are stated without showing how they are obtained.
+- [Example] Show $\hat S_-\lvert++\rangle=\hbar(\lvert-+\rangle+\lvert+-\rangle)$, which gives $\lvert1,0\rangle$ after normalization, and obtain the singlet as the state orthogonal to it.
+- [Intuition] Note the exchange symmetry: the triplet is symmetric and the singlet antisymmetric under swapping the particles, which matters for identical fermions.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/10 Spin/10.07 Spin Exercises.md
+priority: low
+graph: no
+manim: no
+summary: Good exercises with correct results (checked 5, 7, 8, 9, 10, and the Berry-phase sign).
+- [Links] Link exercise 7 to [[10.04 Larmor Precession]] so the sign convention for $\omega_L$ is traceable.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/10 Spin/Spin in magnetic fields and atomic Zeeman splitting.md
+priority: high
+graph: yes
+manim: no
+summary: The physics checked is correct (two-spin Hamiltonian matrix, gauge transformation, spin precession equation, Landé factor, Boyle temperature), but the note mixes unrelated topics and its quantity table is badly inconsistent.
+- [Correctness] The physical-quantities table lists $\mechanical{v}$ twice (particle speed and molar volume) and $A,B$ twice (emission coefficients and virial coefficients), includes unused symbols ($\mechanical t_0$, $\Delta\mechanical t$, oscillator $\mechanical x$, $E$ in N, box length $\mechanical L$, $\Delta E,\delta E$), and omits the spin-coupling constant $A$, $a,\tilde a$, $b_i$, $g$, $g_J$, $\mu_B$, $m_j$, $\chi$, $R_{n\ell}$; rebuild it and rename the spin-coupling constant to avoid the clash with $\magnetic{\mathbf A}$ and the virial $A(T)$.
+- [Structure] Move "Final exam topics", "Hydrogen radial wavefunction", "Real gases and phase transitions", and "Boyle temperature and virial expansion" to separate notes; they are unrelated to the title.
+- [Simplify] State the unit system once (the spin part uses Gaussian units with $c$, the hydrogen part SI) and remove source references such as "on the preceding page", "the homework", and "the handwritten result".
+- [Graph] Plot the four eigenvalues of the $4\times4$ Hamiltonian versus $(b_1-b_2)/(A\hbar^2)$ with $b_1+b_2$ fixed, showing the level repulsion between $\lvert1,0\rangle$ and $\lvert0,0\rangle$.
+- [Example] Add a Landé example: $g_J=4/3$ for $^2P_{3/2}$ and $g_J=2/3$ for $^2P_{1/2}$, and plot the anomalous Zeeman splitting $\Delta E=g_Jm_j\mu_BB$ versus $B$ for both levels.

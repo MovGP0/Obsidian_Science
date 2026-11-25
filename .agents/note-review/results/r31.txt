@@ -1,0 +1,638 @@
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/16 Perturbation Theory/Light–matter coupling, absorption, and induced emission.md
+priority: high
+graph: no
+manim: no
+summary: The gauge-invariance and minimal-coupling algebra checks out, but the note is a loose lecture transcript: it switches between SI and Gaussian units, leans on "the preceding page", stops in the middle of the induced-emission argument, and has a physical-quantities table full of symbols from other pages.
+- [Correctness] The physical-quantities table lists symbols this note never uses or gives them the wrong meaning: $\signal{\omega}_j$ ("new oscillator modes"), $\mechanical{t}_0,\Delta\mechanical{t}$, $E$ in N, $\mathcal E$ in N (a duplicate of $\electric{\mathcal E}$ in V/m), $\mechanical{\mathbf p}'$, $N$ "number of states", $A,B$ "Einstein coefficients" (which clash with the mode amplitude $A(\signal{\mathbf k},s)$), and a second $\mechanical{v}$ meaning "molar volume in the gas equations"; $\energy{E}_0$ is described as "common energy of a degenerate subspace" but here it is the ground-state energy of the well. Prune the table to the symbols actually used and fix their meanings.
+- [Correctness] Symbol clash: $\mechanical{\ell}$ is the crossing length in the absorption-rate paragraph ("A region of size $\mechanical{\ell}$ has crossing time…"), while $\ell$ is the partial-wave quantum number a few lines earlier in $R_{k\ell}$ and $\delta_{\ell1}$; rename the length (e.g. $\mechanical{d}$).
+- [Structure] Mixed units: the Maxwell equations and the table units ($\electric{\varepsilon}_0$, $\magnetic{\mu}_0$, $\unit{T\,m}$ for $\magnetic{\mathbf A}$) are SI, while the Hamiltonian, the gauge transformation, $\energy{u}=\signal{\omega}^2|A|^2/(2\pi c^2)$ and the absorption rate are Gaussian; add a units callout at the top of "Interaction of matter with light", fix the table description of $\electric{\phi}$ (in Gaussian units it is $A^0$, not $cA^0$), and replace "The SI normalization of the preceding page" with a wiki link to the note it refers to (for example [[Heisenberg and interaction pictures in perturbation calculations]]).
+- [Structure] Fourier convention: the field expansion uses $\int d^3\signal{\mathbf k}$ with no $(2\pi)^{-3}$, but the absorption section says to integrate over $d^3\signal{\mathbf k}/(2\pi)^3$ "in the notes' Fourier convention"; pick one convention, and show the step from $|A(\signal{\mathbf k},s)|^2$ through $\energy{u}$ and $\energy{S}$ to $\energy{I}(\signal{\omega})$ that gives the stated $\Gamma^{\mathrm{abs}}_{i\to n}$, which is currently only asserted ("the notes give").
+- [Structure] The "Induced emission" section stops after the Bose–Einstein occupation and the Boltzmann ratio without drawing the conclusion; add the detailed-balance step that requires spontaneous emission (or link to [[Einstein coefficients and electric dipole transition rates]]), and remove administrative lines such as "For the midterm, review…".
+- [Simplify] Under "Absorption of light", add the dipole approximation $e^{-i\signal{\mathbf k}\cdot\mechanical{\mathbf r}}\approx1$ and $\langle n|\mechanical{\widehat{\mathbf p}}|i\rangle=i\mechanical{m}\signal{\omega}_{ni}\langle n|\mechanical{\mathbf r}|i\rangle$ to connect $\mathbf j(-\signal{\mathbf k})$ with the familiar $\electric{q}\,\boldsymbol\epsilon\cdot\mechanical{\mathbf r}$ matrix element used in the Baym 12.1 example.
+
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/16 Perturbation Theory/Time-dependent transition rates and the golden rule.md
+priority: high
+graph: yes
+manim: yes
+summary: All key formulas check out (sinc² kernel integral $2\pi t/\hbar$, box density of states, $d\Gamma/d\Omega$, the oscillator-pulse amplitude, the $i\eta$ prescription), but the order follows the lecture chronology, the golden-rule window appears twice, and the table is copied from other pages.
+- [Correctness] Symbol clash: $\Delta\energy{E}$ means $\energy{E}_n^{(0)}-\energy{E}_0^{(0)}$ in the constant-perturbation section but "the energy scale of the smooth factors" in the golden-rule window $2\pi\hbar/\Delta\energy{E}\ll\mechanical{t}\ll2\pi\hbar/\delta\energy{E}$; rename one of them (e.g. $W$ for the smoothness scale).
+- [Correctness] The physical-quantities table describes $\mechanical{F}$ as "equal to the negative of the applied force", but with $H\ni-\mechanical{F}\mechanical{x}\Theta(\mechanical{t})$ the force on the oscillator is $+\mechanical{F}$; the table also lists symbols this note never uses ($\signal{\omega}_j$, $\mechanical{F}_0$, $\mechanical{z},\mechanical{r}$, $E$ in N, $c$, $\energy{V}_0$, $A,B$, $d\energy{P}_{\mathrm{rad}}/d\Omega$, $\Delta\mechanical{t}$). Fix $\mechanical{F}$ and prune the rest.
+- [Structure] Reorder the material: the opening sine-drive and second-order fragments ("the integral on the previous page", "the quadratic drive", "$n=i\pm2$", "the February 9 discussion is canceled") refer to context that is not in the note; move them after the golden rule or link the source note, and merge the duplicated golden-rule window paragraphs (after the equation for $\Gamma$ and again before Fig. 6).
+- [Example] After $d\Gamma/d\Omega=\mechanical{m}\signal{k}|\widetilde V|^2/(4\pi^2\hbar^3\mechanical{L}^3)$, finish the stated step: dividing by $j_{\mathrm{in}}$ gives the Born cross section $d\sigma/d\Omega=\mechanical{m}^2|\widetilde V(\signal{\mathbf k}'-\signal{\mathbf k})|^2/(4\pi^2\hbar^4)$, independent of $\mechanical{L}$; this shows why the box size drops out.
+- [Graph] Replace or supplement Figs. 4–5 with a native plot of $P(\Delta\energy{E},\mechanical{t})=4|\energy{V}|^2\sin^2(\Delta\energy{E}\,\mechanical{t}/2\hbar)/\Delta\energy{E}^2$ against $\Delta\energy{E}$ (units $\hbar=|\energy{V}|=1$, range $-10\le\Delta\energy{E}\le10$) for $\mechanical{t}=1,2,4$, showing peak height $\propto\mechanical{t}^2$ and width $\propto1/\mechanical{t}$.
+- [Manim] Animate the kernel $P/\mechanical{t}$ as $\mechanical{t}$ grows, with the shaded area fixed at $2\pi/\hbar$ while the peak narrows towards $(2\pi/\hbar)\delta(\Delta\energy{E})$, over a row of discrete final levels of spacing $\delta\energy{E}$; this shows both ends of the golden-rule time window directly.
+
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/17 Symmetries and Conservation Laws/17.00 Symmetries and Conservation Laws.md
+priority: low
+graph: no
+manim: no
+summary: Clear and correct chapter hub with an accurate summary of the chapter's results.
+- [Links] Turn the summary bullets into links to the section notes ([[17.01 Symmetries as Unitary Operators]] … [[17.06 Symmetry and Degeneracy]]) so the hub works as a reading route.
+
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/17 Symmetries and Conservation Laws/17.01 Symmetries as Unitary Operators.md
+priority: low
+graph: no
+manim: no
+summary: Correct and compact, but the step from commuting generator to conserved quantity is stated rather than shown.
+- [Simplify] Below Theorem 17.1, add the one-line Heisenberg argument $\mathrm d\langle\hat G\rangle/\mathrm dt=(i/\hbar)\langle[\energy{\hat H},\hat G]\rangle+\langle\partial_t\hat G\rangle=0$, which is what "constant of motion" means here.
+- [Example] Give one concrete pair after the definition, e.g. $\lambda=a$ with $\hat G=\mechanical{\hat p}_x$ (translation) and $\lambda=\alpha$ with $\hat G=\mechanical{\hat J}_z$ (rotation), to make "their product has units of action" in the table concrete.
+
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/17 Symmetries and Conservation Laws/17.02 Spatial Translations and Conservation of Momentum.md
+priority: low
+graph: no
+manim: no
+summary: Correct and clear derivation of momentum as the translation generator.
+- [Intuition] State the result per component: a potential invariant only under translations along $x$ (e.g. $\energy V(y,z)$) conserves $\mechanical{\hat p}_x$ only; this matches the TLDR's "corresponding component" claim, which the body states only for full translation invariance.
+- [Links] Link "electronic band theory" to [[19.01 Discrete Translation Symmetry]].
+
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/17 Symmetries and Conservation Laws/17.03 Rotations and Conservation of Angular Momentum.md
+priority: low
+graph: no
+manim: no
+summary: Correct and concise; the Wigner–Eckart section is dense for a first encounter.
+- [Simplify] Note that without spin–orbit coupling a central potential conserves $\mechanical{\mathbf L}$ and $\mechanical{\mathbf S}$ separately, and only $\mechanical{\mathbf J}$ survives once spin–orbit terms are added; this explains why the labels $j,m_j$ are chosen.
+- [Example] Add one worked dipole example such as $\langle 1s|\hat z|2p,m\rangle\ne0$ only for $m=0$ (since $\hat z\propto\hat T^{(1)}_0$), so the rule $m'=m+q$ is seen in action; the table lists $m_j$ but the formula uses $m,m'$, so align the notation.
+
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/17 Symmetries and Conservation Laws/17.04 Parity.md
+priority: low
+graph: no
+manim: no
+summary: Correct and readable note with a good selection-rule argument and a useful polar/axial-vector caveat.
+- [Simplify] Add the one-line proof that a nondegenerate eigenstate has definite parity ($\hat\Pi\psi$ has the same energy, so $\hat\Pi\psi=c\psi$ with $c^2=1$).
+- [Structure] Rephrase the "Polar and axial vectors" callout without the transcription meta ("The source caption applies…") and state the result directly: $\hat\Pi\hat{\mathbf L}\hat\Pi=+\hat{\mathbf L}$.
+
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/17 Symmetries and Conservation Laws/17.05 Time Reversal.md
+priority: medium
+graph: no
+manim: no
+summary: Correct statements, but Kramers' theorem is asserted without its short proof and the antiunitary nature is not made concrete.
+- [Simplify] Add the two-line proof of Kramers' theorem: for antiunitary $\hat\Theta$, $\langle\psi|\hat\Theta\psi\rangle=\langle\hat\Theta^2\psi|\hat\Theta\psi\rangle=-\langle\psi|\hat\Theta\psi\rangle$, so $\langle\psi|\hat\Theta\psi\rangle=0$ and the partners are orthogonal.
+- [Example] Show $\hat\Theta=-i\sigma_y\hat K$ acting on $\lvert\uparrow\rangle,\lvert\downarrow\rangle$ ($\lvert\uparrow\rangle\mapsto\lvert\downarrow\rangle$, $\lvert\downarrow\rangle\mapsto-\lvert\uparrow\rangle$) and check $\hat\Theta^2=-\hat I$ explicitly.
+- [Intuition] Explain why $\hat\Theta$ must be antiunitary: a unitary $\hat\Theta$ that reverses the time evolution would need $\hat\Theta\energy{\hat H}=-\energy{\hat H}\hat\Theta$, which gives a spectrum unbounded below.
+
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/17 Symmetries and Conservation Laws/17.06 Symmetry and Degeneracy.md
+priority: low
+graph: no
+manim: no
+summary: Correct, compact overview of symmetry-protected degeneracies and their breaking.
+- [Example] Add a numerical Zeeman example (for example the hydrogen $2p$ level splitting into $m_\ell=-1,0,1$ with spacing $\mu_B B\approx\quantity{5.8\times10^{-5}}{eV}$ at $\quantity{1}{T}$, ignoring spin) to make "lifting the degeneracy" concrete.
+
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/17 Symmetries and Conservation Laws/17.07 Summary Table.md
+priority: low
+graph: no
+manim: no
+summary: A useful summary table; one cell is redundant.
+- [Simplify] In the Rotation row, the "Conserved quantity" cell $\mechanical{\mathbf L}+\mechanical{\mathbf S}$ just restates the generator; write "Total angular momentum $\mechanical{\mathbf J}$" for consistency with the other rows.
+
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/17 Symmetries and Conservation Laws/17.08 Symmetries and Conservation Laws Exercises.md
+priority: low
+graph: no
+manim: no
+summary: Well-posed exercises; the stated results (translation, $\hat R_z(\pi/2)$ matrix, $\hat R_z^\dagger\hat L_+\hat R_z$) check out.
+- [Example] Exercise 11 asks to "calculate" the ratio but gives no result; add the expected value (about $3.8$, from the known rates $6.27\times10^8$ and $1.67\times10^8\,\unit{s^{-1}}$) so the reader can check the $\omega^3|\electric{\mathbf d}|^2$ estimate.
+
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/18 Geometric Phases/18.00 Geometric Phases.md
+priority: low
+graph: no
+manim: no
+summary: Clear chapter hub with an accurate summary of the Berry and Aharonov–Bohm results.
+- [Links] Link the summary bullets to [[18.01 Adiabatic Theorem]], [[18.03 Berry Phase Along Closed Paths]], [[18.04 Spin ½ in a Rotating Magnetic Field]] and [[18.05 Aharonov–Bohm Effect]]; the table lists $\magnetic\Phi_0$, which the summary never names (it writes $h/\lvert\electric q\rvert$).
+
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/18 Geometric Phases/18.01 Adiabatic Theorem.md
+priority: medium
+graph: yes
+manim: yes
+summary: Correct and careful about scope, but abstract: the criterion (18.1) is never shown in a concrete system, and "the source gives" phrasing appears repeatedly.
+- [Example] Apply Eq. (18.1) to a two-level Landau–Zener sweep $\energy{\hat H}=\tfrac12(vt\,\sigma_z+\energy\Delta\,\sigma_x)$: the criterion becomes $\hbar v\ll\energy\Delta^2$, matching the exponent of the Landau–Zener probability $e^{-\pi\energy\Delta^2/(2\hbar v)}$.
+- [Graph] Plot the two instantaneous levels $\pm\tfrac12\sqrt{(vt)^2+\energy\Delta^2}$ against $t$ (avoided crossing, $\energy\Delta=1$, $-5\le vt\le5$) to show the gap that controls adiabaticity.
+- [Manim] Animate the Bloch vector of a spin following a field that rotates slowly versus quickly: in the slow case it stays locked to the field, in the fast case it precesses away, illustrating the adiabatic condition.
+- [Structure] Replace the repeated "The source gives…" wording in Theorem 18.1 and the scope callout with direct statements.
+
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/18 Geometric Phases/18.02 Dynamical and Geometric Phases.md
+priority: low
+graph: no
+manim: no
+summary: Correct derivation of the Berry connection and its gauge behavior, with a well-built 3D figure.
+- [Simplify] Show the projection step explicitly: inserting (18.2) and projecting on $\langle n\rvert$ gives $-\hbar\dot\gamma_n+i\hbar\langle n|\partial_t n\rangle=0$, so $\dot\gamma_n=i\langle n|\partial_t n\rangle$; mention that the neglected off-diagonal terms are the adiabatic approximation.
+- [Structure] Fold the "Scope of the solid-angle formula" callout into the figure caption and drop the "source caption" meta.
+
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/18 Geometric Phases/18.03 Berry Phase Along Closed Paths.md
+priority: low
+graph: no
+manim: no
+summary: Correct; Eq. (18.3) has the right sign and form, but the link between the vector $\mathbf F_n$ and the tensor $F_{n,\mu\nu}$ is left implicit.
+- [Simplify] State $F_{n,\mu\nu}=\partial_\mu A_{n,\nu}-\partial_\nu A_{n,\mu}$ and, in three dimensions, $(\mathbf F_n)_\lambda=\tfrac12\varepsilon_{\lambda\mu\nu}F_{n,\mu\nu}$ before Eq. (18.3), and add the two-line derivation using $\langle m|\partial_\mu n\rangle=\langle m|\partial_\mu\energy{\hat H}|n\rangle/(\energy{E}_n-\energy{E}_m)$.
+- [Links] Point to [[18.04 Spin ½ in a Rotating Magnetic Field]] as the worked example where (18.3) gives the monopole curvature.
+
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/18 Geometric Phases/18.04 Spin ½ in a Rotating Magnetic Field.md
+priority: low
+graph: no
+manim: yes
+summary: Correct and clear worked example ($A_\varphi=-\sin^2(\theta/2)$, $\gamma_+=-\Omega/2$, monopole curvature $-\magnetic{\mathbf B}/(2|\magnetic{\mathbf B}|^3)$ all check).
+- [Intuition] Note that the chosen gauge is singular at $\theta=\pi$ (the phase $e^{i\varphi}$ is undefined there), which is why the $\theta\to\pi$ limit gives $-2\pi$; the other gauge (multiply by $e^{-i\varphi}$) gives $A_\varphi=\cos^2(\theta/2)$ and the same phase modulo $2\pi$.
+- [Manim] Animate the field direction sweeping the cone at fixed $\theta$ while a phase arrow for $\lvert+,\hat{\mathbf n}\rangle$ rotates and the swept cap area fills in, ending at $\gamma_+=-\Omega/2$; vary $\theta$ to show the $\theta=\pi/2$ sign flip.
+
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/18 Geometric Phases/18.05 Aharonov–Bohm Effect.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and clear SI treatment of the magnetic Aharonov–Bohm effect.
+- [Example] Give the explicit exterior gauge $\magnetic{\mathbf A}=\magnetic\Phi_B\,\hat{\boldsymbol\varphi}/(2\pi r)$ and check $\nabla\times\magnetic{\mathbf A}=0$ outside the solenoid while $\oint\magnetic{\mathbf A}\cdot\mathrm d\boldsymbol\ell=\magnetic\Phi_B$.
+- [Graph] Plot the two-slit intensity $I(y)\propto\cos^2(\pi yd/(\lambda L)+\phi_{\mathrm{AB}}/2)$ with a slider for $\magnetic\Phi_B/\magnetic\Phi_0$ from 0 to 1 to show the fringe shift and its periodicity.
+- [Simplify] Remove the unclear sentence "The path coordinates here are the particle's positions."
+
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/18 Geometric Phases/18.06 Topological Significance and Flux Quantization.md
+priority: low
+graph: no
+manim: no
+summary: Correct numbers ($h/e\approx4.136\times10^{-15}$ Wb, $h/2e\approx2.068\times10^{-15}$ Wb) and a clear statement of the holonomy picture.
+- [Intuition] Add one sentence on why the superconducting flux quantum uses $2\electric e$: single-valuedness of the Cooper-pair condensate wave function around the ring forces $2\electric e\magnetic\Phi/\hbar=2\pi n$; this connects the ring result to the AB phase above.
+
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/18 Geometric Phases/18.07 Generalizations and Outlook.md
+priority: low
+graph: no
+manim: no
+summary: A short outlook whose forward link promises content that the target chapter does not contain.
+- [Correctness] The sentence "[[19.00 Bands in Periodic Potentials|Bands in Periodic Potentials]] applies Berry curvature to the Brillouin zone…" is wrong: no note in chapter 19 mentions Berry curvature, the anomalous velocity, or Chern numbers (grep finds no "Berry" in that folder); rephrase it as an outlook beyond the course or link to a note that actually covers it.
+
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/18 Geometric Phases/18.08 Geometric Phases Exercises.md
+priority: low
+graph: no
+manim: no
+summary: Well-posed exercises; all stated results check out (solid angles, $7.6\times10^7$ flux quanta, $6.6\times10^{-13}$ s, the $-(\pi\alpha^2/4)\cos\theta_0$ correction, ring levels).
+- [Structure] Exercise 11 is vague (a "tangential electric field" on a ring changes the flux, not just the energy); restate it with an explicit Hamiltonian and cycle, then remove the source-sign callout.
+
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/19 Bands in Periodic Potentials/19.00 Bands in Periodic Potentials.md
+priority: low
+graph: no
+manim: no
+summary: Clear, accurate chapter hub.
+- [Links] Link each summary bullet to its section note ([[19.02 Bloch Theorem]], [[19.05 Kronig–Penney Model]], [[19.06 Bragg Scattering and the Origin of Band Gaps]], [[19.07 Effective Mass]], [[19.08 Density of States in One Dimension]], [[19.09 Wannier Functions]], [[19.10 Metals, Insulators, and Semiconductors]]).
+
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/19 Bands in Periodic Potentials/19.01 Discrete Translation Symmetry.md
+priority: low
+graph: no
+manim: no
+summary: Correct and concise.
+- [Intuition] Explain why the translation eigenvalue is a pure phase: $\hat T_a$ is unitary, and for a ring of $N$ cells $\hat T_a^N=\hat I$ gives $k=2\pi j/(Na)$, which shows how the continuous $k$ of the infinite crystal arises.
+
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/19 Bands in Periodic Potentials/19.02 Bloch Theorem.md
+priority: low
+graph: yes
+manim: no
+summary: Correct proof and clear interpretation.
+- [Graph] Plot $\mathrm{Re}\,\psi_k(x)=\mathrm{Re}[e^{ikx}u(x)]$ for a sample periodic $u(x)=1+0.5\cos(2\pi x/a)$, $ka=\pi/4$, over $0\le x\le8a$, together with $u(x)$, to show the plane-wave envelope times the cell-periodic modulation.
+
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/19 Bands in Periodic Potentials/19.03 Brillouin Zones.md
+priority: medium
+graph: yes
+manim: yes
+summary: Correct but very terse; the three zone schemes are described only in words.
+- [Graph] Plot the free-particle parabola $\energy E=\hbar^2k^2/2m$ in the three schemes side by side ($-3\pi/a\le k\le3\pi/a$ extended; folded into $[-\pi/a,\pi/a)$ reduced; reduced repeated periodically), with small gaps at the zone boundaries to show the band structure.
+- [Manim] Animate folding the extended-zone parabola into the first zone by shifting segments by multiples of $2\pi/a$; the motion makes the equivalence $k\sim k+2\pi/a$ concrete.
+- [Links] Link back to [[19.01 Discrete Translation Symmetry]], where the first Brillouin zone is first defined.
+
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/19 Bands in Periodic Potentials/19.04 Effective Equation for uₙₖ.md
+priority: low
+graph: no
+manim: no
+summary: Correct derivation of the $k$-dependent cell equation.
+- [Simplify] Show the one-line identity $e^{-ikx}\mechanical{\hat p}\,e^{ikx}=\mechanical{\hat p}+\hbar k$, so that Eq. (19.4) is just $(\mechanical{\hat p}+\hbar k)^2/2\mechanical m+\energy V$; then mention the first-order $k\cdot p$ result $\partial_k\energy E_n=(\hbar/\mechanical m)\langle u_{nk}|\mechanical{\hat p}+\hbar k|u_{nk}\rangle$.
+
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/19 Bands in Periodic Potentials/19.05 Kronig–Penney Model.md
+priority: low
+graph: yes
+manim: no
+summary: Correct dispersion relation and an accurate figure (band edges at $qa\approx1.976,4.349,7.084,10.007$ check numerically).
+- [Simplify] Show the derivation of Eq. (19.5) in a few lines (transfer matrix, or the two matching conditions with $\psi(x+a)=e^{ika}\psi(x)$) instead of only stating it.
+- [Graph] Add the resulting dispersion $\energy E(k)$ in the reduced zone for $\mechanical m\alpha a/\hbar^2=3$ (from $ka=\arccos f(qa)$), next to the free parabola, so the band gaps appear on the energy axis as well as in $f(qa)$.
+
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/19 Bands in Periodic Potentials/19.06 Bragg Scattering and the Origin of Band Gaps.md
+priority: low
+graph: yes
+manim: no
+summary: Correct physical picture and gap formula with a clear schematic figure.
+- [Simplify] Show the $2\times2$ degenerate-perturbation step at $k=\pi/a$, with matrix entries $\energy E^0$ on the diagonal and $\energy V_G,\energy V_G^*$ off the diagonal and eigenvalues $\energy E^0\pm|\energy V_G|$, so that $\energy\Delta_1=2|\energy V_{2\pi/a}|$ is derived.
+- [Graph] Plot the probability densities $\cos^2(\pi x/a)$ and $\sin^2(\pi x/a)$ over the potential $-\energy V_0\cos(2\pi x/a)$ for $0\le x\le3a$, showing which standing wave sits on the ion cores.
+
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/19 Bands in Periodic Potentials/19.07 Effective Mass.md
+priority: low
+graph: no
+manim: yes
+summary: Correct definition and example; the figure accurately compares $2(1-\cos ka)$ with $(ka)^2$.
+- [Intuition] Add the semiclassical equations $\hbar\dot k=F$ and $v_g=\hbar^{-1}\partial_k\energy E$, from which $\dot v_g=F/\mechanical m^*$ follows; this justifies "responds like a free particle of mass $\mechanical m^*$".
+- [Manim] Animate a wave packet under a constant force in a tight-binding band: $k$ moves uniformly through the zone while $v_g\propto\sin(ka)$ oscillates, showing negative effective mass near $k=\pi/a$ and Bloch oscillations.
+
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/19 Bands in Periodic Potentials/19.08 Density of States in One Dimension.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and compact.
+- [Graph] Plot $g(\energy E)=1/(\pi a\sqrt{4\energy t^2-(\energy E-\energy E_0)^2})$ for the tight-binding band ($\energy t=1$, $\energy E_0=0$, $-2<\energy E<2$), showing the two van Hove divergences at the band edges.
+- [Example] Derive this tight-binding density of states as a worked example of the general formula.
+
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/19 Bands in Periodic Potentials/19.09 Wannier Functions.md
+priority: low
+graph: yes
+manim: no
+summary: Correct definitions and hopping formula (checks for $\energy E_0-2\energy t\cos ka$), but normalization and localization stay abstract.
+- [Simplify] State the inverse relation $\psi_{nk}=\sum_R e^{ikR}w_{n,R}$ and the normalization assumed ($\langle\psi_{nk}|\psi_{nk'}\rangle=(2\pi/a)\delta(k-k')$) so the orthonormality claim can be checked.
+- [Graph] Plot a Wannier function for a weak cosine potential (or the tight-binding limit), $|w_{0,0}(x)|^2$ over $-3a\le x\le3a$, next to a Bloch state $|\psi_{0k}|^2$, to contrast localized and extended bases.
+
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/19 Bands in Periodic Potentials/19.10 Metals, Insulators, and Semiconductors.md
+priority: low
+graph: no
+manim: no
+summary: Correct in the 1D independent-electron model.
+- [Intuition] Add that in two and three dimensions an even $\nu$ need not give an insulator because bands can overlap in energy (divalent metals such as Mg), and give typical gap scales (Si $\approx\quantity{1.1}{eV}$ versus diamond $\approx\quantity{5.5}{eV}$) to make the semiconductor/insulator boundary concrete.
+
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/19 Bands in Periodic Potentials/19.11 Bands in Periodic Potentials Exercises.md
+priority: low
+graph: no
+manim: no
+summary: Well-posed exercises; all results check (zone width $1.571$ Å$^{-1}$, $qa\approx1.5427$ and $\energy E\approx1.19\hbar^2/(ma^2)$, $\energy t=\hbar^4\pi^2/(2m^2a^3\alpha)$, the density of states).
+- [Structure] Exercise 6 says "The source gives $qa\approx1.542$"; the root is $1.5427$, which rounds to $1.543$, so remove the source remark.
+
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/20 Advanced Methods/20.00 Advanced Methods.md
+priority: low
+graph: no
+manim: no
+summary: Concise, correct chapter hub whose summary bullets match the section notes.
+- [Links] Turn the summary bullets into links to their sections ([[20.01 Variational Method]], [[20.02 WKB Approximation in More Detail]], [[20.04 Born Approximation]], [[20.05 Partial Waves]], [[20.06 Optical Theorem]]) and add [[21.20 Solutions for Variational Methods, WKB, and Scattering]] next to the exercise link.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/20 Advanced Methods/20.01 Variational Method.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct and compact, but the helium section only quotes a percentage and never shows the minimizing parameter or the resulting energy.
+- [Example] In "Helium with a hydrogen-like trial state", state the minimum explicitly: $Z_{\mathrm{eff}}^*=27/16\approx1.69$ and $\energy E_{\min}=-(27/16)^2\,\unit{Ha}\approx\quantity{-77.5}{eV}$ versus $\quantity{-79.0}{eV}$ (1.9 % above), and interpret $Z_{\mathrm{eff}}<2$ as screening of the nucleus by the other electron.
+- [Links] "derived in Exercise 7" should link to [[20.07 Advanced Methods Exercises]] and to the worked solution in [[21.20 Solutions for Variational Methods, WKB, and Scattering]].
+- [Graph] Plot $E(\alpha)/(\hbar\omega)=\alpha/(4\alpha^*)+\alpha^*/(4\alpha)$ for $\alpha/\alpha^*\in[0.2,4]$ with a horizontal line at the exact $1/2$, showing the kinetic and potential terms separately; optionally a second panel $E(Z_{\mathrm{eff}})=Z^2-27Z/8$ (Ha) for $Z\in[1,2.5]$ with the experimental $-2.904\,\mathrm{Ha}$ line.
+- [Simplify] The proof assumes a discrete spectrum; add one sentence that the same argument holds with a spectral integral when part of the spectrum is continuous, since $\energy E_0$ is then the bottom of the spectrum.
+- [Intuition] Add one sentence on why the energy error is second order in the wave-function error (the energy is stationary at eigenstates), which explains why crude trial states give good energies.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/20 Advanced Methods/20.02 WKB Approximation in More Detail.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct and well illustrated, but the origin of the $1/2$ and the validity condition of WKB are only asserted.
+- [Structure] The note names the turning points both $x_\pm$ (text, harmonic oscillator, table) and $x_1,x_2$ (figure, Bohr–Sommerfeld integral); use one notation throughout.
+- [Intuition] Explain the $1/2$: the Airy connection formula gives a phase loss of $\pi/4$ at each smooth turning point, so the two together add $\pi/2$ to $\int k\,\mathrm dx=n\pi$; at a hard wall the loss is $\pi/2$ each, which is why the infinite well has no $1/2$.
+- [Simplify] Add the validity condition $\lvert\mathrm d\lambda/\mathrm dx\rvert\ll 2\pi$ (equivalently $\lvert k'\rvert\ll k^2$) and say it fails near turning points, motivating the Airy matching.
+- [Graph] Add a second plot of the Airy function $\mathrm{Ai}(-\xi)$ for $\xi\in[-3,10]$ overlaid with its WKB asymptotes $\pi^{-1/2}\xi^{-1/4}\sin(\tfrac23\xi^{3/2}+\pi/4)$ and $\tfrac12\pi^{-1/2}\lvert\xi\rvert^{-1/4}e^{-\frac23\lvert\xi\rvert^{3/2}}$, showing where WKB diverges and Airy stays finite.
+- [Example] The existing Fig. 20.1 uses the $n=4$ oscillator state; say so in the caption, since its four nodes illustrate the quantization count $n$.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/20 Advanced Methods/20.03 Scattering Concepts.md
+priority: medium
+graph: no
+manim: yes
+summary: Correct but very terse; the step from flux to $\lvert f\rvert^2$ is only stated.
+- [Simplify] Show the two-line derivation: incident flux density $\hbar k_0/m$, scattered radial flux $(\hbar k_0/m)\lvert f\rvert^2/r^2$, flux through $r^2\,\mathrm d\Omega$ gives $\mathrm d\sigma/\mathrm d\Omega=\lvert f\rvert^2$.
+- [Intuition] Add the classical analogy (impact parameter $b$, $\mathrm d\sigma=b\,\mathrm db\,\mathrm d\phi$) and a hard-sphere example where $\sigma=\pi a^2$ classically, to motivate why $f$ has units of length.
+- [Structure] The note writes $\mathbf k_0,k_0$ while 20.04–20.06 use $k$ and $\mathbf k_i$; unify the symbol for the incident wave vector across the chapter (and use the same unit $\unit{m^{-1}}$ as the other tables).
+- [Manim] Animate a wave packet hitting a localized potential and splitting into an unscattered forward packet and an outgoing spherical shell whose angular brightness is $\lvert f(\theta)\rvert^2$.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/20 Advanced Methods/20.04 Born Approximation.md
+priority: medium
+graph: yes
+manim: no
+summary: Formulas are correct, but the note lacks the validity condition and does not show the explicit Rutherford result it mentions.
+- [Example] Make the Coulomb limit explicit: with $V_0=Z_1Z_2e^2/(4\pi\varepsilon_0)$ and $q=2k\sin(\theta/2)$, $\mathrm d\sigma/\mathrm d\Omega=\big(Z_1Z_2e^2/(16\pi\varepsilon_0\energy E)\big)^2/\sin^4(\theta/2)$.
+- [Simplify] State the validity condition, e.g. $\lvert V\rvert\ll\hbar^2/(ma^2)$ at low energy or $\lvert V\rvert a\ll\hbar v$ at high energy, i.e. the scattered wave is small compared with the incident wave inside the potential.
+- [Intuition] Add one sentence on the Fourier picture: a potential of range $1/\mu$ scatters appreciably only for $q\lesssim\mu$, so short-range potentials scatter more isotropically.
+- [Graph] Plot $\mathrm d\sigma/\mathrm d\Omega$ (normalized to its forward value) versus $\theta\in[0,\pi]$ for the Yukawa result with $\mu/k=0.1,0.5,2$, on a logarithmic vertical axis, to show the transition from Rutherford-like forward peaking to near isotropy.
+- [Simplify] Show the one-line angular integral $\int e^{-i\mathbf q\cdot\mathbf r}\,\mathrm d\Omega=4\pi\sin(qr)/(qr)$ that leads to the radial formula.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/20 Advanced Methods/20.05 Partial Waves.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct formulas presented without motivation; the meaning of the phase shift and the low-energy limit of the cross section are missing.
+- [Intuition] Explain the phase shift with the asymptotic form $u_\ell(r)\propto\sin(kr-\ell\pi/2+\delta_\ell)$: an attractive potential pulls the wave in ($\delta_\ell>0$), a repulsive one pushes it out ($\delta_\ell<0$).
+- [Example] Add the consequence $\sigma\to4\pi a^2$ as $k\to0$ and compare with the hard sphere (four times the geometric cross section), linking to Exercise 5 of [[20.07 Advanced Methods Exercises]].
+- [Intuition] Add the semiclassical argument that only $\ell\lesssim kR$ contributes (impact parameter $b\approx\ell/k$ must be within the range $R$), which explains $s$-wave dominance at low energy.
+- [Graph] Plot the partial cross sections $(4\pi/k^2)(2\ell+1)\sin^2\delta_\ell$ for a hard sphere ($\tan\delta_\ell=j_\ell(ka)/y_\ell(ka)$) for $\ell=0,1,2$ and their sum, versus $ka\in[0,5]$, in units of $\pi a^2$.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/20 Advanced Methods/20.06 Optical Theorem.md
+priority: medium
+graph: no
+manim: no
+summary: Correct statement with a qualitative explanation, but no check against the partial-wave formula and a misplaced chapter-level section.
+- [Example] Verify the theorem in two lines from [[20.05 Partial Waves]]: $\operatorname{Im}f(0)=(1/k)\sum_\ell(2\ell+1)\sin^2\delta_\ell$, so $(4\pi/k)\operatorname{Im}f(0)$ reproduces $\sigma_{\mathrm{tot}}$.
+- [Structure] The section "Physical meaning" compares variational, WKB, and scattering methods and has nothing to do with the optical theorem; move it to [[20.00 Advanced Methods]] and replace it with the physical meaning of the theorem (shadow formed by interference of $f(0)$ with the incident wave).
+- [Simplify] State explicitly that the theorem holds with the normalization $\psi\simeq e^{ikz}+f\,e^{ikr}/r$ of [[20.03 Scattering Concepts]] and that $\sigma_{\mathrm{tot}}$ includes inelastic channels when they are open.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/20 Advanced Methods/20.07 Advanced Methods Exercises.md
+priority: low
+graph: no
+manim: no
+summary: Exercise list with correct quoted results (checked Ex. 2, 4, 5, 9).
+- [Links] Add a link to the worked solutions in [[21.20 Solutions for Variational Methods, WKB, and Scattering]].
+- [Structure] Exercise 6 contains a remark about the source's one-dimensional formula; move it into a short note callout so that the task statement itself stays clean.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/21 Complete Solutions to the Exercises/21.00 Complete Solutions to the Exercises.md
+priority: low
+graph: no
+manim: no
+summary: Placeholder hub with two sentences and no navigation.
+- [Links] Add a list of links to the solution notes 21.01–21.20, each paired with its exercise note, so the hub is navigable.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/21 Complete Solutions to the Exercises/21.01 Solutions for the Crisis of Classical Physics.md
+priority: low
+graph: yes
+manim: no
+summary: Clear and numerically correct solutions (all values rechecked).
+- [Correctness] The physical-quantities table omits symbols used in the note and the letter $a$ has three meanings (acceleration in Ex. 7, slit width in Ex. 8 and 10, besides the Bohr radius $a_0$); rename the acceleration (e.g. $a_{\mathrm c}$) and add $a$, $r_e$, $\energy P$ and $v$ to the table.
+- [Simplify] In Exercise 7, the initial-power estimate $\lvert\energy E_1\rvert/\energy P=2.18\times10^{-18}/4.7\times10^{-8}\approx\quantity{4.7\times10^{-11}}{s}$ is closer to $5\times10^{-11}$ than to $4\times10^{-11}$; quote $\sim5\times10^{-11}$ s.
+- [Graph] For Exercise 9, plot $u(\lambda,T)$ for $T=3000,4500,6000$ K over $\lambda\in[100,3000]$ nm with markers at $\lambda_{\max}=b/T$.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/21 Complete Solutions to the Exercises/21.02 Solutions for the Postulates of Quantum Mechanics.md
+priority: low
+graph: yes
+manim: no
+summary: Correct, compact solutions; the two-level dynamics are derived cleanly.
+- [Graph] For Exercise 11, plot $P_1(t)$ versus $\energy E t/\hbar\in[0,2\pi]$ for $\Delta/\epsilon=0.25,1,4$ to show the peak $\Delta^2/(\epsilon^2+\Delta^2)$ and the frequency $2\energy E/\hbar$.
+- [Simplify] In Exercise 4, show the bound explicitly: $(\Delta A)^2=\langle(\hat A-2)^2\rangle-(\langle\hat A\rangle-2)^2\le1$ because $(a-2)^2\le1$ for all eigenvalues.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/21 Complete Solutions to the Exercises/21.03 Solutions for Measurement, Observables, and Uncertainty.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and well-explained solutions (numbers in Ex. 6, 7, 9 rechecked).
+- [Structure] $\sigma$ denotes both the Gaussian width (Ex. 3, 7, 9) and the Pauli matrices $\sigma_x,\sigma_y,\sigma_z$ (Ex. 8, 10); add the Pauli matrices to the table or note the two uses to avoid confusion.
+- [Intuition] In Exercise 11, note that $\Delta x/x_{\max}=1/\sqrt2$ holds exactly for every $n$, not only in the semiclassical limit; what becomes classical at large $n$ is the shape of the density, not this ratio.
+- [Graph] For Exercise 9, plot $\Delta x(t)/\sigma=\sqrt{1+(t/t_*)^2}$ for $t/t_*\in[0,4]$ with its asymptote $t/t_*$ and markers at $t_*$ and $\sqrt3\,t_*$.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/21 Complete Solutions to the Exercises/21.04 Solutions for the Schrödinger Equation.md
+priority: low
+graph: no
+manim: yes
+summary: Correct and complete solutions; the Gaussian-packet algebra was rechecked including the prefactor.
+- [Simplify] In Exercise 7, show the completed square explicitly (exponent $-\beta(t)k^2+(2\sigma^2k_0+ix)k-\sigma^2k_0^2$) so the reader can follow how $\beta(t)$ enters.
+- [Manim] For Exercise 7, animate $\lvert\psi(x,t)\rvert^2$ and $\operatorname{Re}\psi$ moving at $v_{\mathrm g}$ while crests move at $v_{\mathrm{ph}}=v_{\mathrm g}/2$ and the envelope spreads, linking Exercises 3 and 7.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/21 Complete Solutions to the Exercises/21.05 Solutions for Feynman Path Integrals.md
+priority: low
+graph: no
+manim: no
+summary: Correct solutions with verified numbers; a few symbols differ from the problem statements.
+- [Structure] Exercise 4 uses $L$ for the path length while the problem in [[05.08 Feynman Path Integrals Exercises]] calls it $\ell$ (and Ex. 3 here uses $\ell$ for the phase-length scale); align the symbols and give the inputs $v=10^6$ m/s, $L=10^{-7}$ m in the text.
+- [Simplify] Exercise 1 quotes the phase $4.74$ rad without the inputs; state $x_f-x_i=\quantity{1.00}{nm}$ so the number can be reproduced.
+- [Structure] Write $S_{\mathrm{cl}}$, $Z$, $\beta$ with the same macros as the table ($\mechanical S_{\mathrm{cl}}$, $\thermal Z$, $\thermal\beta$) or drop the color in the table.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/21 Complete Solutions to the Exercises/21.06 Solutions for One-Dimensional Systems.md
+priority: low
+graph: yes
+manim: no
+summary: Correct solutions; all numerical roots and matrix elements rechecked.
+- [Graph] For Exercise 5, plot $z\tan z$, $-z\cot z$ and $\sqrt{10-z^2}$ for $z\in[0,\sqrt{10}]$, marking the three intersections (lowest at $z\approx1.186$).
+- [Graph] For Exercises 8 and 10, plot $T=\energy E/(\energy E+\energy E_\alpha)$ and $R$ versus $\energy E/\energy E_\alpha\in[0,10]$, noting that attractive and repulsive deltas give the same $T$.
+- [Intuition] In Exercise 11, add that the left wall makes this equivalent to the odd states of a symmetric finite well of width $4a$, which explains the binding threshold.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/21 Complete Solutions to the Exercises/21.07 Solutions for Barriers and Quantum Tunneling.md
+priority: low
+graph: yes
+manim: no
+summary: Correct solutions; the U-238 Gamow estimate and all barrier numbers were recomputed and agree.
+- [Simplify] In Exercise 7, state the nuclear radius value used ($R\approx0.153\,r_2\approx\quantity{9.3}{fm}$) so the numbers can be reproduced.
+- [Graph] For Exercise 3, plot the exact $T(\energy E/\energy V_0)$ for $\energy E/\energy V_0\in[0,5]$ at a fixed $\sqrt{2m\energy V_0}\,a/\hbar=6$, showing tunneling below $1$ and the resonances $k'a=n\pi$ above.
+- [Graph] For Exercise 9, plot $e^{-\energy E/k_BT}$, $e^{-b/\sqrt{\energy E}}$, and their product (scaled) versus $\energy E$ to show the Gamow peak at $\energy E_G$.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/21 Complete Solutions to the Exercises/21.08 Solutions for the Harmonic Oscillator.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and clear ladder-operator solutions.
+- [Simplify] In Exercise 1, say explicitly that the carbon-12 mass does not enter $\omega$ (it would set the oscillator length $x_0$), since readers will expect it to be used.
+- [Graph] For Exercise 7, plot the Poisson distribution $P_n$ for $\lvert\alpha\rvert^2=1,5,20$ as point plots to show the relative width shrinking as $1/\sqrt{\langle N\rangle}$.
+- [Simplify] In Exercise 11, give the next term of the high-temperature expansion, $\langle N\rangle\simeq k_BT/(\hbar\omega)-1/2$, which connects to equipartition of $\langle\energy H\rangle$.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/21 Complete Solutions to the Exercises/21.09 Solutions for Orbital Angular Momentum.md
+priority: low
+graph: no
+manim: no
+summary: Correct solutions; commutators and ladder matrix elements rechecked.
+- [Correctness] $R$ denotes the sphere radius in Exercises 8 and 9 and the radial wave function $R(r)$ in Exercise 10, and $\mechanical M$, $\omega$, $R$ are missing from the table; rename the radial function (e.g. $\mathcal R(r)$) and complete the table.
+- [Simplify] In Exercise 10, write the separated form explicitly, $\langle\energy V\rangle=\lambda\langle r\rangle\int\lvert Y_{10}\rvert^2\cos\theta\,\mathrm d\Omega$, instead of saying the expectation "separates into" two factors.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/21 Complete Solutions to the Exercises/21.10 Solutions for Spin.md
+priority: low
+graph: no
+manim: yes
+summary: Correct and concise spin solutions; signs in the Larmor and Berry-phase results rechecked.
+- [Manim] For Exercise 7, animate the Bloch vector starting on $+x$ and precessing clockwise (seen from $+z$) for $\omega_L>0$, matching $\langle S_y\rangle=-(\hbar/2)\sin\omega_Lt$.
+- [Simplify] In Exercise 11, say that the spinor azimuth is $\phi=\omega t$, so that $\partial_\phi$ is the derivative along the loop, and that the sign of $\gamma_B$ flips for the anti-aligned state.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/21 Complete Solutions to the Exercises/21.11 Solutions for Addition of Angular Momentum.md
+priority: low
+graph: no
+manim: no
+summary: Correct solutions with careful convention notes; the Wigner–Eckart and Racah steps were rechecked.
+- [Example] In Exercise 7, show the check with $q=0$: $\langle jm;10\mid jm\rangle=m/\sqrt{j(j+1)}$ and $\langle jm\rvert J_z\lvert jm\rangle=\hbar m$ give the same reduced element, which makes the result easier to trust.
+- [Simplify] Exercise 9 repeats Exercise 10 of [[21.10 Solutions for Spin]]; add a cross-reference instead of a second derivation.
+
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/21 Complete Solutions to the Exercises/21.12 Solutions for the Hydrogen Atom.md
+priority: low
+graph: yes
+manim: no
+summary: Concise, correct solutions (all key numbers recomputed: Δr, inverse moments, 121.6 nm, 0.37 %, -9.05e-4 eV) with only minor gaps in intermediate steps.
+- [Graph] Exercise 9: plot the 2p radial density $P(u)=u^4e^{-u}/24$ for $u=r/a_0\in[0,15]$, shading $u<1$ (0.37 %) and marking the maximum at $u=4$, so the "most probability between $a_0$ and $6a_0$" claim (about 71 %) is visible.
+- [Simplify] Exercise 2: state the general integral $\int_0^\infty r^ke^{-\beta r}\,\mathrm dr=k!/\beta^{k+1}$ once (link [[22.10 Useful Identities and Integrals]]) and show the two substitutions $n=1,2$ explicitly instead of only quoting the results.
+- [Simplify] Exercise 8: add the one-line conversion $e^2/(4\pi\varepsilon_0 a_0)=2\,\mathrm{Ry}$ that turns $\langle1/r\rangle=1/a_0$ into $\langle V\rangle=-2\,\mathrm{Ry}$; Exercise 11 reuses it for $\langle V^2\rangle=8\,\mathrm{Ry}^2$.
+- [Intuition] Exercise 11: add one sentence comparing $-\tfrac54\alpha^2\,\mathrm{Ry}$ with the full fine-structure shift of 1s ($-\tfrac14\alpha^2\,\mathrm{Ry}$ after adding the Darwin and spin-orbit terms), so readers do not mistake the kinetic correction for the observed shift.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/21 Complete Solutions to the Exercises/21.13 Solutions for the Density Matrix and Decoherence.md
+priority: low
+graph: yes
+manim: yes
+summary: Correct and compact solutions (purity 5/8, entropy 1.011 nats, precession and dephasing signs verified), with one symbol clash between Exercises 10 and 11.
+- [Correctness] Symbol clash: $\gamma$ is the gyromagnetic ratio in Exercise 10 and the dephasing rate in Exercise 11 (only the color macro distinguishes them); rename the dephasing parameter, for example $\Gamma$ with $\hat L=\sqrt\Gamma\,\sigma_z$ and $T_\phi=1/(2\Gamma)$, and update the table.
+- [Graph] Exercise 9: plot $S(a)$ for $a\in[0,1]$ (in nats, with a dashed line at $\ln2$) together with the purity $(1+a^2)/2$ as a second curve, to show that both measure distance from the center of the Bloch ball.
+- [Manim] Exercises 10 and 11: animate a Bloch vector that precesses about $z$ (Exercise 10) and then, with dephasing switched on, spirals inward to the $z$ axis while $a_z$ stays fixed.
+- [Simplify] Exercise 2: write out $\tfrac12(\lvert+\rangle\langle+\rvert+\lvert-\rangle\langle-\rvert)$ in matrix form to show the cancellation of off-diagonal terms explicitly; the current prose is hard to follow.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/21 Complete Solutions to the Exercises/21.14 Solutions for Identical Particles.md
+priority: low
+graph: yes
+manim: no
+summary: Solutions are correct (exchange term $512L^2/(81\pi^4)$, $Z'=27/16$, $-77.5$ eV verified), but the note reuses $L$ and $n$ for different quantities.
+- [Correctness] Symbol clash: $L$ is the well width (Exercises 3, 4, 6, 7) and the orbital term label in Exercise 10, and both appear in the table; use $a$ for the width, or write the term label distinctly.
+- [Correctness] Symbol clash: $n$ is the orbital index ($n=1$ in Exercise 3) and the number density in Exercise 11; rename the density, for example $n_e$ or $\varrho$.
+- [Graph] Exercises 6 and 7: plot the two-particle densities $\lvert\Psi_S(x_1,x_2)\rvert^2$ and $\lvert\Psi_A(x_1,x_2)\rvert^2$ for orbitals 1 and 2 on $[0,L]^2$ (heat maps side by side), showing enhancement along and the node on $x_1=x_2$.
+- [Example] Exercise 6: give the numeric values ($\langle(x_1-x_2)^2\rangle_{\mathrm{dist}}\approx0.103L^2$, exchange term $\approx0.065L^2$) so the size of the exchange effect is concrete.
+- [Simplify] Exercise 10: say "ground level" rather than "ground term" for $^3P_0$ (the term is $^3P$), and add the one-line reason why $^3S$ and $^3D$ are Pauli forbidden.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/21 Complete Solutions to the Exercises/21.15 Solutions for Entanglement, EPR, and Quantum Information.md
+priority: low
+graph: yes
+manim: no
+summary: All solutions check out (CHSH value $-2\sqrt2$, teleportation branches, superdense coding signs) and are clearly written.
+- [Graph] Exercise 7: plot the quantum correlation $E(\phi)=-\cos\phi$ against the classical local-hidden-variable sawtooth $E(\phi)=-1+2\phi/\pi$ for $\phi\in[0,\pi]$, and mark the CHSH angles $\pi/4$ and $3\pi/4$ where the gap is largest.
+- [Simplify] Exercise 9: show the regrouping $\lvert00\rangle=(\Phi^++\Phi^-)/\sqrt2$, $\lvert01\rangle=(\Psi^++\Psi^-)/\sqrt2$, etc., once, so the four Bob states can be checked rather than only stated.
+- [Structure] Exercise 10 repeats the partial-trace argument of Exercise 6 in [[21.13 Solutions for the Density Matrix and Decoherence]]; link it instead of repeating it.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/21 Complete Solutions to the Exercises/21.16 Solutions for Perturbation Theory.md
+priority: medium
+graph: yes
+manim: yes
+summary: Derivations are correct (2p rate 6.26e8 s^-1, Stark block $-3ea_0\mathcal E$, Gaussian-pulse optimum $\tau=\sqrt2/\omega$ verified), but several solutions refer to "the source" instead of standing on their own.
+- [Structure] Exercise 11 and its callout discuss what "the source" did with $a_0^2$ and a divergent constant estimate; replace this with a self-contained statement (parity kills first order, all terms negative, exact result $\alpha_0=\tfrac92(4\pi\varepsilon_0)a_0^3$ with a citation such as Dalgarno–Lewis) and drop the source commentary.
+- [Graph] Exercise 7: plot $P_{0\to1}(\infty)$ normalized to its maximum against $x=\omega_{10}\tau\in[0,5]$, i.e. $x^2e^{-x^2/2}/(2e^{-1})$, marking the optimum at $x=\sqrt2$.
+- [Graph] Exercise 8: plot $P_{i\to f}(t)$ against $\omega_{fi}$ at several fixed $t$ (the $\sin^2(\omega t/2)/\omega^2$ peak narrowing as $1/t$ and growing as $t^2$) to motivate the golden-rule delta limit.
+- [Manim] Exercise 9: animate the Bloch vector of the driven two-level atom rotating about $x$ from the south pole to the north pole on resonance, with $P_e(t)=\sin^2(\Omega_Rt/2)$ traced alongside.
+- [Simplify] Exercise 5: show the radial integral $\int_0^\infty R_{20}R_{21}r^3\,\mathrm dr=-3\sqrt3\,a_0$ in one or two lines (or link the chapter note that does), since it is the only nontrivial step.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/21 Complete Solutions to the Exercises/21.17 Solutions for Symmetries and Conservation Laws.md
+priority: low
+graph: no
+manim: no
+summary: Solutions are correct (translation conjugation, magnetic-translation phase sign, decay-rate ratio 3.75 verified), with one table entry for a symbol the note never uses.
+- [Correctness] The physical-quantities table lists $\Gamma$ (transition rate), but no $\Gamma$ appears in the note; Exercise 11 writes the rates without a symbol. Either introduce $\Gamma_{2p}$, $\Gamma_{3p}$ in Exercise 11 or remove $\Gamma$ from the table.
+- [Structure] The Exercise 7 callout discusses the source's naming and sign; condense it to one sentence stating the convention used here (kinetic momentum $\boldsymbol\pi$, phase $e^{-iq\Phi_{ab}/\hbar}$) and that the magnetic-translation generators give the opposite sign.
+- [Simplify] Exercise 9 is vague ("bounded sector", "adiabatically followed state"); state the concrete bound $\lvert\Delta\langle J_z\rangle\rvert\le t\lVert[J_z,V]\rVert/\hbar$ and give one example (a weak transverse field on a spin) instead of the general adiabatic remark.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/21 Complete Solutions to the Exercises/21.18 Solutions for Geometric Phases.md
+priority: low
+graph: yes
+manim: yes
+summary: Correct and well-organized solutions (solid angles, Berry connection, second-order correction in Exercise 7, ring spectrum verified) with some source commentary left in.
+- [Graph] Exercise 9: plot $E_n(\Phi)/(\hbar^2/2mR^2)=(n-\Phi/\Phi_0)^2$ for $n=-2,\ldots,2$ and $\Phi/\Phi_0\in[-1.5,1.5]$, highlighting the ground branch with its kinks at half-integer flux.
+- [Manim] Exercises 1 and 6: animate the field direction tracing a cone of half-angle $\theta_0$ on the unit sphere while the swept cap area fills and a counter shows $\gamma_+=-\Omega/2$.
+- [Structure] Exercise 4 and the Exercise 10 callout refer to what "the source" suggests or says; state the results directly (adiabatic margin as a rule of thumb, Chern number from the closed-surface flux) and drop the source commentary.
+- [Simplify] Exercise 2: clarify that "geometric factor $-1$ after one circuit" means $e^{i\gamma_\pm}=e^{\mp i\pi}=-1$, and that the $4\pi$ spinor rotation is an analogy, not the same phase.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/21 Complete Solutions to the Exercises/21.19 Solutions for Bands in Periodic Potentials.md
+priority: low
+graph: yes
+manim: no
+summary: Correct solutions (Kronig–Penney root $qa=1.54272$, 1.29 eV zone-edge estimate, tight-binding limit with $t=\hbar^4\pi^2/(2m^2a^3\alpha)$ verified) with clear structure.
+- [Graph] Exercises 3 and 6: plot $f(qa)=\cos(qa)+P\sin(qa)/(qa)$ for $P=1.5$ and $qa\in[0,4\pi]$ with horizontal lines at $\pm1$ and shaded allowed bands; mark the edge at $qa=1.5427$.
+- [Graph] Exercises 5 and 7: plot the tight-binding band $E(k)=E_0-2t\cos(ka)$ over $ka\in[-\pi,\pi]$ with its parabolic approximation $E_0-2t+ta^2k^2$ overlaid to show where the effective-mass picture holds.
+- [Structure] Exercise 2: shorten the remark on the source's translation convention to one sentence pointing to [[19.01 Discrete Translation Symmetry]] for the $e^{-ika}$ convention.
+- [Simplify] Exercise 11: write the intermediate step $\delta=-(\pi/P)(1+\cos ka)$ with $P=m\alpha a/\hbar^2$ before expanding the energy, so the identification of $t$ and $\tilde E_0$ can be followed.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/21 Complete Solutions to the Exercises/21.20 Solutions for Variational Methods, WKB, and Scattering.md
+priority: low
+graph: yes
+manim: no
+summary: Careful, correct solutions (10/π² bound, quartic and sextic WKB constants, numerical sextic eigenvalues 1.1448 and 4.3386, Yukawa cross section verified) with minor symbol reuse.
+- [Correctness] $V_0$ is an energy in Exercise 6 ($V_0e^{-r^2/b^2}$, with the energy macro) but an energy times length in Exercise 9 ($V_0e^{-\mu r}/r$, uncolored); rename the Yukawa strength, for example $g$ in $\unit{J\,m}$, and add it to the table.
+- [Graph] Exercise 1: plot $E(\alpha)/(\hbar\omega)$ against $\alpha/\alpha^*\in[0.2,4]$, showing the kinetic and potential contributions and the minimum at 1/2.
+- [Graph] Exercise 10: plot the WKB and numerical $E_n/E_*$ for $n=0,\ldots,5$ (extend the table) to show the WKB error falling with $n$.
+- [Structure] Exercise 11 summarizes what "the source" connects to Regge theory without any calculation; trim it to the definition and the $s^{\alpha(t)}$ behavior or mark it explicitly as a qualitative remark.
+- [Structure] The table restricts $\alpha$ to Exercise 1, while $\alpha(E)$ is the Regge trajectory in Exercise 11; add a separate row so the two meanings are distinguished.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/22 Essential Formula Reference/22.00 Essential Formula Reference.md
+priority: low
+graph: no
+manim: no
+summary: A hub with a TLDR and one sentence but no links to the eleven reference notes.
+- [Links] Add a list of links to [[22.01 Postulates and Probabilities]] through [[22.11 Baker–Campbell–Hausdorff Formulas]], as the 23.00 hub does for its notes.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/22 Essential Formula Reference/22.01 Postulates and Probabilities.md
+priority: low
+graph: no
+manim: no
+summary: Correct, compact formula table with a working link to the postulates chapter.
+- [Simplify] Add the degenerate Born rule $P(a)=\langle\psi\rvert\hat P_a\lvert\psi\rangle$ next to the nondegenerate row, since the collapse row already uses $\hat P_a$.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/22 Essential Formula Reference/22.02 Canonical Operators.md
+priority: low
+graph: no
+manim: no
+summary: Correct and complete for its purpose; no change needed beyond an optional link.
+- [Links] Add a link to the chapter note that derives the position and momentum representations so readers can find the derivation.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/22 Essential Formula Reference/22.03 Uncertainty.md
+priority: low
+graph: no
+manim: no
+summary: Correct formula reference with the Mandelstam–Tamm time properly defined; no change needed.
+- [Links] Optionally link the chapter note that derives the Robertson and Mandelstam–Tamm relations.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/22 Essential Formula Reference/22.04 Time Evolution.md
+priority: low
+graph: no
+manim: no
+summary: Correct and concise formula table.
+- [Simplify] Add the Heisenberg equation $\mathrm d\hat A_H/\mathrm dt=(i/\hbar)[\hat H,\hat A_H]+(\partial_t\hat A)_H$, from which the listed Ehrenfest equations follow.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/22 Essential Formula Reference/22.05 One-Dimensional Systems.md
+priority: low
+graph: no
+manim: no
+summary: Correct formula table (well levels, thick-barrier and WKB transmission, delta bound state, Bohr–Sommerfeld).
+- [Simplify] Define $\kappa$ for the rectangular barrier explicitly ($\kappa=\sqrt{2m(V_0-E)}/\hbar$, the constant case of the line below the table) and state "thick" as $\kappa a\gg1$.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/22 Essential Formula Reference/22.06 Harmonic Oscillator.md
+priority: low
+graph: no
+manim: no
+summary: Correct oscillator formula table.
+- [Simplify] Give the normalization of $\psi_n(x)$, $(2^nn!)^{-1/2}(\pi x_0^2)^{-1/4}$, instead of $\propto$, and wrap $\psi_n$ in the signal macro as the other notes do.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/22 Essential Formula Reference/22.07 Angular Momentum and Spin.md
+priority: low
+graph: no
+manim: no
+summary: Correct formula table; the spin rotation is stated only for spin 1/2 without saying so.
+- [Simplify] Label the rotation row "Spin-1/2 rotation" and add the general form $e^{-i\alpha\hat{\mathbf n}\cdot\hat{\mathbf J}/\hbar}$, so the $\cos(\alpha/2)$ formula is not applied to other spins.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/22 Essential Formula Reference/22.08 Hydrogen Atom.md
+priority: low
+graph: no
+manim: no
+summary: Correct hydrogen formula table (radial averages and selection rules verified).
+- [Simplify] Note that $\mathrm{Ry}=13.606$ eV and $a_0$ with $m_e$ are infinite-nuclear-mass values, and that the reduced mass gives the 0.05 % correction used in spectroscopy.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/22 Essential Formula Reference/22.09 Perturbation Theory and Scattering.md
+priority: low
+graph: no
+manim: no
+summary: Correct formula table; the Rabi row and Born amplitude leave their conventions implicit.
+- [Simplify] State the Rabi row's initial condition (population in the lower level at $t=0$) and the Born row's convention $\widetilde V(\mathbf q)=\int e^{-i\mathbf q\cdot\mathbf r}V(\mathbf r)\,\mathrm d^3r$ with $\mathbf q=\mathbf k'-\mathbf k$.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/22 Essential Formula Reference/22.10 Useful Identities and Integrals.md
+priority: low
+graph: no
+manim: no
+summary: Correct list of standard identities.
+- [Simplify] Add the conditions $\operatorname{Re}a>0$ and integer $n\ge0$ to the exponential-moment row, as the Gaussian row already states its condition.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/22 Essential Formula Reference/22.11 Baker–Campbell–Hausdorff Formulas.md
+priority: low
+graph: no
+manim: no
+summary: Both formulas are correct and the note is complete for a reference card.
+- [Example] Add one application, for example $e^{\alpha\hat a^\dagger-\alpha^*\hat a}=e^{-\lvert\alpha\rvert^2/2}e^{\alpha\hat a^\dagger}e^{-\alpha^*\hat a}$ for the displacement operator.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/23 Physical Constants and Units/23.00 Physical Constants and Units.md
+priority: low
+graph: no
+manim: no
+summary: Simple hub with working links to all five subnotes.
+- [Structure] No change needed.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/23 Physical Constants and Units/23.01 Fundamental Constants.md
+priority: low
+graph: no
+manim: no
+summary: Values are correct to the stated rounding.
+- [Simplify] Mark which constants are exact by SI definition since 2019 ($c$, $h$, $e$, $k_B$, $N_A$), so readers know which values carry uncertainty.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/23 Physical Constants and Units/23.02 Derived Atomic Constants.md
+priority: low
+graph: no
+manim: no
+summary: Formulas and rounded values are correct.
+- [Simplify] Add the relations that tie the scales together ($\lambda_C/(2\pi)=\alpha a_0$, $\mathrm{Ha}=\alpha^2m_ec^2$), which make the table easier to remember.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/23 Physical Constants and Units/23.03 Conversions.md
+priority: low
+graph: no
+manim: no
+summary: Conversion factors are correct ($k_BT=25.7$ meV at 298 K, 8066 cm^-1, 2.418e14 Hz verified).
+- [Simplify] Write $hc\approx1240$ eV nm to match the unit used in [[21.12 Solutions for the Hydrogen Atom]] and in the $\hbar c$ row, instead of 1.240 µm eV.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/23 Physical Constants and Units/23.04 Atomic Units.md
+priority: low
+graph: no
+manim: no
+summary: Correct and clear summary of atomic units.
+- [Simplify] Add the momentum and electric-field units ($\hbar/a_0$ and $\mathrm{Ha}/(ea_0)\approx5.14\times10^{11}$ V/m), which are used in the Stark and polarizability solutions.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/23 Physical Constants and Units/23.05 Characteristic Orders of Magnitude.md
+priority: low
+graph: no
+manim: no
+summary: Reasonable order-of-magnitude table, though two energy rows are loosely stated.
+- [Simplify] Give the ranges behind the orders: atomic binding 1–10 eV (hydrogen 13.6 eV) and nuclear binding about 8 MeV per nucleon, so the "~1 eV" and "~1 MeV" rows are not misread.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/24.00 Glossary.md
+priority: low
+graph: no
+manim: no
+summary: Accurate definitions, but entries are not in alphabetical order (apparently the order of a translated source) and none link to the defining notes.
+- [Structure] Sort the entries alphabetically (Angular momentum, Blackbody, Bloch sphere, Born probability, Boson, Bra, ...); the current order starting with "Probability amplitude, Spherical harmonics, Eigenstate" makes lookup hard.
+- [Links] Link each term to its defining note, for example Collapse to [[02.04 Wave Function Collapse]] and the golden-rule and uncertainty entries to the reference notes in folder 22.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/Quantum rotations, unitarity, and course review calculations.md
+priority: high
+graph: yes
+manim: yes
+summary: The WKB connection and unitarity derivations are correct, but the title promises rotations that never appear, the text keeps referring to the handwriting, and the physical-quantities table belongs to a different note.
+- [Correctness] The physical-quantities table is copied from another note: it describes $x$, $p$ as "along the oscillator axis" and lists $t_0$, $\Delta t$, $E_0$, $F_0$, $x_0$ (shifted equilibrium), $E$ (field times charge, in N) and $A$, $B$ (Einstein coefficients), none of which match their use here ($A$, $B$ are states in Example 4.1, $x_0$ is a WKB integration limit, and $F=-U'(a)$ is the force itself, not its negative); rebuild it with $\psi$, $U$, $p(x)$, $C$, $F$, $a$, $b$, $U(t)$, $H$, $L$, $\lambda_i$, $\alpha_i$.
+- [Correctness] Semantic macros: the complex-plane helper variables $\rho$, $\varphi$, $y$ and the short time step $\epsilon$ are wrapped in the mechanical macro, while $\hbar$ is left uncolored throughout; use $\mechanical{\hbar}$ as in the rest of the course and keep contour coordinates uncolored.
+- [Structure] The title mentions quantum rotations, but the note covers WKB connection formulas, unitarity, and expectation values; rename it (for example "WKB connection formulas, unitarity, and expectation values") and fix the heading levels (H2 followed directly by H5).
+- [Simplify] Remove the transcription remarks ("as noted in the margin", "The final handwritten line suppresses the $\hbar$", "The box in the handwriting assigns both properties to $H$") and state the results directly.
+- [Graph] WKB section: plot the exact Airy solution $\mathrm{Ai}(-s)$ against its two WKB asymptotes $\pi^{-1/2}s^{-1/4}\cos(\tfrac23s^{3/2}-\pi/4)$ for $s>0$ and $\tfrac12\pi^{-1/2}\lvert s\rvert^{-1/4}e^{-\frac23\lvert s\rvert^{3/2}}$ for $s<0$, over $s\in[-4,10]$, to show where the connection formula holds and where it fails near the turning point.
+- [Manim] Continuation around the turning point: animate $z=a+\rho e^{i\varphi}$ moving along the upper semicircle while the phase of $(z-a)^{-1/4}$ rotates from 0 to $-\pi/4$, making the origin of the $\pi/4$ visible.
+=== 02 Physics/03 Quantum Mechanics/Hamiltonian of the Hydrogen Atom.md
+priority: high
+graph: no
+manim: no
+summary: An early-format stub without frontmatter, TLDR, macros, or quantity table, and three of its fine-structure formulas are dimensionally wrong.
+- [Correctness] Relativistic correction: $\hat H_{\mathrm{rel}}=-\frac{\hbar^2}{8\mu^2c^2}\nabla^4$ has the wrong dimension; the correct form is $\hat H_{\mathrm{rel}}=-\hat p^4/(8m^3c^2)=-\frac{\hbar^4}{8m^3c^2}\nabla^4$.
+- [Correctness] Spin–orbit term: $\frac{e\hbar}{2\mu c^2r}\mathbf L\cdot\mathbf S$ is not an energy; the SI form is $\hat H_{\mathrm{so}}=\frac{e^2}{8\pi\varepsilon_0m^2c^2r^3}\hat{\mathbf L}\cdot\hat{\mathbf S}$ (including the Thomas factor 1/2).
+- [Correctness] Darwin term: $\frac{e^2\hbar^2}{8\mu c^2\epsilon_0}\delta(\mathbf r)$ is missing a mass factor; the correct form is $\hat H_D=\frac{e^2\hbar^2}{8\varepsilon_0m^2c^2}\delta^3(\mathbf r)$. Also $e$ is the elementary charge (a magnitude), not "the charge of the electron".
+- [Structure] Add a quoted frontmatter title, a TLDR, semantic macros, and a physical-quantities table; the opening "is then given by" refers to missing context. Consider merging into or linking the course chapter on hydrogen fine structure.
+- [Intuition] Add the size of each correction ($\sim\alpha^2\,\mathrm{Ry}$ for fine structure, $\sim\alpha^2(m_e/m_p)\,\mathrm{Ry}$ for hyperfine, with the 21 cm line as example) and mention the Lamb shift, which this Hamiltonian omits.
+=== 02 Physics/03 Quantum Mechanics/Spin Angular Momentum.md
+priority: high
+graph: no
+manim: no
+summary: Placeholder file containing only "TODO".
+- [Structure] Either write the note (spin-1/2 operators, Pauli matrices, eigenstates, Stern–Gerlach motivation, link to [[22.07 Angular Momentum and Spin]]) or delete it and redirect links to the course chapter on spin.

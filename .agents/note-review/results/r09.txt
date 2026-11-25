@@ -1,0 +1,460 @@
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/01 Ordinary Differential Equations/01 Worked Differential Equations/01 Examples/Energy Conservation Example.md
+priority: medium
+graph: yes
+manim: no
+summary: Short and readable energy-method derivation, but the phase formulas are quadrant-ambiguous and the note lacks frontmatter, TLDR, and a quantity table.
+- [Correctness] Step 4: $\varphi_0=\arctan(x_0\omega/v_0)$ gives the wrong phase for $v_0<0$ and is undefined for $v_0=0$; for $x=A\sin(\omega t+\varphi_0)$ use $\varphi_0=\operatorname{atan2}(x_0\omega,\,v_0)$ (equivalently $\sin\varphi_0=x_0/A$, $\cos\varphi_0=v_0/(\omega A)$); likewise Step 3's $\varphi_0=\arcsin(x_0/A)$ only covers $v_0\ge0$.
+- [Simplify] Step 3: replace "$\pm\omega t$" and "choose the sign consistent with $v_0$" by the single statement that $\sin(-\omega t+\varphi_0)=\sin(\omega t+\pi-\varphi_0)$, so one sign plus a correct phase covers all data.
+- [Structure] Add the quoted frontmatter title, a TLDR callout, and a physical-quantity table ($m$, $k$, $\omega$, $A$, $\varphi_0$, $x_0$, $v_0$, $E$) as required by the vault skill.
+- [Graph] Plot the potential $U(x)=\tfrac12kx^2$ with a horizontal line at $E=\tfrac12kA^2$ ($k=1$, $A=1$, $x\in[-1.5,1.5]$) marking the turning points $\pm A$, so Step 1's argument is visible.
+
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/01 Ordinary Differential Equations/01 Worked Differential Equations/01 Examples/Hamiltonian Flow Example.md
+priority: medium
+graph: yes
+manim: yes
+summary: Correct and compact matrix-exponential solution, but it skips the series step and calls an elliptical flow a rotation.
+- [Correctness] Step 4: "The flow matrix above rotates the vector $\mathbf{u}$" is false unless $m\omega=1$; $\mathrm{e}^{At}$ is not orthogonal and moves $\mathbf{u}$ along an ellipse; it is a rotation only in the scaled coordinates $(x,\,p/(m\omega))$.
+- [Simplify] Step 2: show the one-line reason, $\mathrm{e}^{At}=\cos(\omega t)I+\omega^{-1}\sin(\omega t)A$, obtained by splitting the exponential series into even and odd powers using $A^2=-\omega^2I$.
+- [Example] Step 3: also read off $p(t)=-m\omega x_0\sin(\omega t)+p_0\cos(\omega t)$ so the reader sees both rows used.
+- [Graph] Plot phase-space ellipses $p^2/(2m)+kx^2/2=H$ for $m=1$, $k=4$, $H\in\{0.5,1,2\}$, with $x$ on the horizontal and $p$ on the vertical axis.
+- [Manim] Animate a cloud of initial points in the $(x,p)$ plane flowing under $\mathrm{e}^{At}$: each point travels its ellipse and the cloud keeps its area (Liouville), illustrating what "flow" means.
+- [Structure] Add frontmatter title, TLDR, and a quantity table ($x$, $p$, $m$, $k$, $\omega$, $H$).
+
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/01 Ordinary Differential Equations/01 Worked Differential Equations/01 Examples/Laplace Transform Example.md
+priority: low
+graph: no
+manim: no
+summary: Correct and clear three-step Laplace solution; only notation and context are missing.
+- [Simplify] Unify notation: the equation uses $x''$ while the data use $\dot{x}(0)$, and the hub writes the transform as $\hat{x}(s)$ while this note writes $X(s)$; pick one convention.
+- [Example] Step 3: quote the two pairs used, $\mathcal{L}\{\cos\omega t\}=s/(s^2+\omega^2)$ and $\mathcal{L}\{\sin\omega t\}=\omega/(s^2+\omega^2)$, so the factor $1/\omega$ in front of $v_0$ is explained.
+- [Structure] Add frontmatter title and TLDR; a short remark that the method pays off for forced or discontinuous inputs (step forcing) would motivate it.
+
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/01 Ordinary Differential Equations/01 Worked Differential Equations/01 Examples/Series Expansion Example.md
+priority: low
+graph: yes
+manim: no
+summary: Correct recurrence derivation and resummation, clearly laid out.
+- [Simplify] Step 4: state explicitly why $a_0=x_0$ and $a_1=v_0$ (evaluate $x$ and $\dot x$ at $t=0$) and show one induction step from the recurrence to the closed form $a_{2m}$.
+- [Graph] Plot $\cos t$ together with its partial sums $S_N(t)$ for $N=2,4,8$ on $t\in[0,3\pi]$ ($\omega=1$, $x_0=1$, $v_0=0$) to show how the truncated series departs at large $t$.
+- [Structure] Add frontmatter title and TLDR.
+
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/01 Ordinary Differential Equations/01 Worked Differential Equations/01 Examples/Substitution Example.md
+priority: medium
+graph: no
+manim: no
+summary: The first half is a clean worked solution, but the appended second half duplicates it with typos, a clashing symbol, and an inconsistent ansatz.
+- [Correctness] Second section: the first derivative is written $\frac{\mathrm{d}x}{\mathrm{d}t^2}$ (should be $\frac{\mathrm{d}x}{\mathrm{d}t}$) and the last equation writes $\frac{\mathrm{d}^2x^2}{\mathrm{d}t^2}$ (should be $\frac{\mathrm{d}^2x}{\mathrm{d}t^2}$).
+- [Correctness] Second section: the ansatz is stated as $x=A\cos(\Omega t)$ but then differentiated as $A\cos(\Omega t)+B\sin(\Omega t)$; the table omits $B$, calls $\Omega$ "Oscillation Frequency" (it is an angular frequency), and $\Omega$ duplicates the first section's $\omega$; the conclusion $\Omega^2=k/m$ is never stated.
+- [Structure] Delete or merge the second section into the first; keep a single symbol $\omega$ and a corrected quantity table (fix "Phyical"), and add frontmatter title and TLDR.
+- [Intuition] Step 1: explain why sine and cosine are natural guesses (functions whose second derivative is a negative multiple of themselves) instead of only asserting the trial.
+
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/01 Ordinary Differential Equations/01 Worked Differential Equations/Algebraic Rules for Ordinary Differential Equations (ODE).md
+priority: low
+graph: no
+manim: no
+summary: A plain formula reference for calculus rules; correct apart from one domain statement, with some generic commentary.
+- [Correctness] Logarithmic derivatives: "$\frac{d}{dt}\ln f=f'/f$ applies whenever $f(t)$ stays away from zero" is wrong for $f<0$, where $\ln f$ is undefined; require $f>0$ or write $\frac{d}{dt}\ln|f|=f'/f$ for $f\neq0$ (matching the integral section's $\ln|f|$).
+- [Simplify] Several one-line remarks are vague or misleading (for example $\sec^2t$ "often appears alongside linear forcing terms in Riccati equations", cosine integration "allowing energy terms to be written as perfect derivatives"); replace them with a one-line ODE example per rule or drop them.
+- [Structure] Add the quoted frontmatter title and a TLDR, and use upright $\mathrm{d}$ consistently with the sibling notes.
+
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/01 Ordinary Differential Equations/01 Worked Differential Equations/Solving Differential Equations.md
+priority: low
+graph: no
+manim: no
+summary: A clear hub listing five methods with links to the worked examples.
+- [Links] The Hamiltonian example is linked as a wiki link while the other four use Markdown links with encoded paths; use one link style for all five, and align the Laplace notation $\hat{x}(s)$ with $X(s)$ used in the example.
+
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/01 Ordinary Differential Equations/01 Worked Differential Equations/Types of Differentials.md
+priority: medium
+graph: no
+manim: no
+summary: A useful overview table of derivative operators, but it contains a wrong exterior-derivative formula, overstated claims, and lacks frontmatter; it also sits oddly in the ODE worked-examples folder.
+- [Correctness] Exterior derivative: "$d\omega=\partial_\nu\omega_\mu\wedge dx^\nu\wedge dx^\mu$" wedges a function component; the correct form is $d\omega=\partial_\nu\omega_\mu\,dx^\nu\wedge dx^\mu$ (equivalently $\tfrac12(\partial_\nu\omega_\mu-\partial_\mu\omega_\nu)\,dx^\nu\wedge dx^\mu$).
+- [Correctness] Covariant derivative key point: it is not "the unique derivative operator"; uniqueness holds only for the Levi-Civita connection (torsion-free and metric-compatible), so state that condition.
+- [Correctness] Laplacian: "measures how a scalar deviates from its average value" holds for the Riemannian Laplacian, not for the Lorentzian d'Alembertian $\Box$ that the same section names; separate $\nabla^2$ (elliptic) from $\Box$ (wave operator).
+- [Correctness] Table row for $u^\mu\nabla_\mu$ says a connection is required, but on scalars $u^\mu\nabla_\mu f=u^\mu\partial_\mu f=df/d\tau$ needs none; note that the connection enters only for tensors. The Lie derivative key point "captures changes due to coordinate motion" should read "changes relative to the flow of $v$".
+- [Structure] Add frontmatter title and TLDR, and consider moving the note to a differential-geometry or vector-calculus folder; most rows (covariant, Lie, exterior) are not ODE material.
+
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/01 Ordinary Differential Equations/14.01 Equation types.md
+priority: low
+graph: no
+manim: no
+summary: Clear, correct, and well-structured classification lesson with good worked examples.
+- [Example] Add a compact decision table (order, linear?, homogeneous?, autonomous?) for four sample equations, e.g. $y''+ty'=\sin t$, $y'=y^2$, $y'=(y/t)^2$, $y''+3y'=t$, so the classification is visible at a glance.
+
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/01 Ordinary Differential Equations/14.02 Solutions and data.md
+priority: low
+graph: yes
+manim: no
+summary: Clear and correct treatment of intervals, data, and existence and uniqueness with good counterexamples.
+- [Graph] Plot $y=1/(1-t)$ on $t\in[-2,3]$ with a vertical asymptote at $t=1$, highlighting the branch $(-\infty,1)$ that solves the IVP $y(0)=1$.
+- [Graph] Plot the branching solutions $y_a(t)$ of $y'=2\sqrt{|y|}$ for $a\in\{0,0.5,1,1.5\}$ and $y=0$ on $t\in[-1,3]$, all passing through $(0,0)$, to make non-uniqueness visible.
+
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/01 Ordinary Differential Equations/14.03 First-order methods.md
+priority: low
+graph: yes
+manim: no
+summary: Clear and correct lesson on separation and integrating factors with verified worked examples.
+- [Graph] Plot the slope field of $y'=y(1-y)$ on $t\in[-3,6]$, $y\in[-0.5,1.5]$ with the equilibria $y=0,1$ and the solution $y=1/(1+3e^{-t})$ through $(0,1/4)$.
+- [Intuition] After the integrating-factor formula, add one sentence that $\mu$ is chosen exactly so that $\mu y'+\mu py$ is a product-rule derivative, i.e. $\mu'=p\mu$ is the design requirement, not a coincidence.
+
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/01 Ordinary Differential Equations/14.04 Constant-coefficient equations.md
+priority: low
+graph: yes
+manim: no
+summary: Clear and correct lesson on characteristic roots, repeated roots, and real forms.
+- [Graph] Plot the three root cases on one figure for $t\in[0,4]$: $(1-2t)e^{2t}$ (repeated root, scaled or clipped), $e^{-t}(\cos2t+\tfrac12\sin2t)$ (complex pair), and $\cosh t$ (real roots), with the envelope $\pm\sqrt{5}/2\,e^{-t}$ for the complex case.
+- [Intuition] Add a small sketch or table relating root location in the complex plane (real part sign, imaginary part) to growth, decay, and oscillation.
+
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/01 Ordinary Differential Equations/14.05 Harmonic equations.md
+priority: low
+graph: yes
+manim: yes
+summary: Clear and correct lesson on damping cases, steady forcing, and resonance with an existing figure.
+- [Graph] Add an amplitude-response plot $R(\Omega)=F/\sqrt{(\omega_0^2-\Omega^2)^2+4\gamma^2\Omega^2}$ for $\omega_0=1$, $F=1$, $\gamma\in\{0.05,0.2,0.5\}$, $\Omega\in[0,2.5]$, which also shows the peak shifting below $\omega_0$ as stated in the text.
+- [Manim] Animate the forced damped solution $y_h+y_p$ from rest, showing the transient dying out and the curve locking onto the steady oscillation with phase lag.
+
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/01 Ordinary Differential Equations/14.08 Verification and approximation.md
+priority: low
+graph: yes
+manim: no
+summary: Clear and correct note on residuals, Euler's method, and step-size stability; numbers check out.
+- [Graph] Plot $e^t$ on $[0,1]$ with the Euler polygons for $h=1/2$ and $h=1/4$, so the endpoint errors $-0.468$ and $-0.277$ are visible.
+- [Graph] Plot Euler iterates for $y'=-ay$ with $a=1$ and $h\in\{0.5,1.5,2.5\}$ over 10 steps to show decay, oscillating decay, and growth.
+
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/01 Ordinary Differential Equations/Differential equations - Catalogue Guide.md
+priority: low
+graph: no
+manim: no
+summary: Clear learning-route hub with correct examples and valid links.
+- [Structure] The file starts with a UTF-8 BOM before the frontmatter; the vault convention is UTF-8 without BOM, so re-save it (same for the other catalogue lessons in this folder).
+
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/01 Ordinary Differential Equations/First-order initial value problems.md
+priority: low
+graph: yes
+manim: no
+summary: Clear, correct lesson on direction fields, existence, uniqueness, and Picard iteration.
+- [Graph] Plot the direction field of $y'=x-y$ on $x,y\in[-2,3]$ with the isocline $y=x$ and the solution $y=x-1+2e^{-x}$ through $(0,1)$.
+- [Graph] Plot the Picard iterates $1$, $1+x$, $1+x+x^2/2$, $1+x+x^2/2+x^3/6$ against $e^x$ on $[-1,2]$ to show convergence near $x_0$ and divergence of truncations far away.
+- [Structure] Remove the leading UTF-8 BOM.
+
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/01 Ordinary Differential Equations/First-order solution methods.md
+priority: low
+graph: yes
+manim: no
+summary: Clear and correct survey of separation, integrating factors, exact equations, and substitutions; all worked examples check out.
+- [Graph] For the exact equation $(2xy+1)\,dx+x^2\,dy=0$, plot level curves $x^2y+x=C$ for $C\in\{-2,-1,0,1,2\}$ on $x\in[-3,3]$ to show solutions as level sets and the excluded line $x=0$.
+- [Simplify] The note uses $\log$ while the sibling lessons use $\ln$; use one symbol across the folder.
+- [Structure] Remove the leading UTF-8 BOM.
+
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/01 Ordinary Differential Equations/Higher-order equations and initial-value data.md
+priority: high
+graph: no
+manim: no
+summary: Mathematically mostly correct, but it reads as a raw lecture transcription with course logistics, source-commentary, empty headings, and an unfinished example.
+- [Structure] Remove the course logistics (office hours, midterm dates) and all meta-commentary about the handwritten source ("The final boxed line in the source omits...", "The source uses 'independent' for that second condition...", "one handwritten heading", "The Math 24 review lists...").
+- [Example] Variation of parameters for $x^2y''-3xy'+3y=4x^7$ stops after the first equation; finish it: $W=2x^3$, $v_1'=-2x^5$, $v_2'=2x^3$, $y_p=x^7/6$, $y=x^7/6+C_1x+C_2x^3$ (or link to the completed version in Power-series solutions and forcing methods).
+- [Simplify] Boundary-value section: the two paragraphs on $y''+4y=0$ with endpoints $0$ and $2\pi$ contradict each other in their data ($y(0)=-2$ vs $2$, $y(2\pi)=-2$ vs $3$); keep one clean trio: unique ($y(\pi/4)=10$), infinitely many (equal endpoint values), none (unequal endpoint values).
+- [Structure] Empty heading "Intervals of validity" and the heading "Systems and the matrix exponential" with no matrix exponential; also substantial overlap with Linear equations and order reduction; merge or cross-link.
+- [Links] Add links to [[14.04 Constant-coefficient equations]] and [[Linear equations and order reduction]] where the characteristic-equation and Wronskian material repeats.
+
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/01 Ordinary Differential Equations/Implicit equations and singular solutions.md
+priority: low
+graph: yes
+manim: no
+summary: Clear and correct treatment of implicit ODEs, Clairaut envelopes, and singular points.
+- [Graph] Plot the Clairaut line family $y=Cx+C^2$ for $C\in\{-2,-1.5,\dots,2\}$ on $x\in[-4,4]$ together with the envelope $y=-x^2/4$; the tangency at $x=-2C$ is the key idea of the section.
+- [Graph] Plot $y=(x-a)^2/4$ for several $a$ and $y=0$ for $p^2=y$ to show solutions touching the singular locus.
+- [Structure] Remove the leading UTF-8 BOM.
+
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/01 Ordinary Differential Equations/Linear equations and order reduction.md
+priority: low
+graph: no
+manim: no
+summary: Clear and correct lesson; the reduction-of-order, variation-of-parameters, and missing-variable examples all verify.
+- [Simplify] Reduction of order: show the intermediate first-order solution $w=v'=C\,e^{-\int p}/y_1^2$ before stating the $y_2$ formula, so the formula is derived rather than asserted.
+- [Structure] Remove the leading UTF-8 BOM.
+
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/01 Ordinary Differential Equations/Ordinary differential equations - Overview.md
+priority: low
+graph: no
+manim: no
+summary: Concise topic overview with valid links; serves its purpose.
+- [Structure] Remove the leading UTF-8 BOM; otherwise no change needed.
+
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/01 Ordinary Differential Equations/Power-series solutions and forcing methods.md
+priority: high
+graph: yes
+manim: no
+summary: The worked calculations are correct (recurrences, undetermined coefficients, Airy series), but the note is a raw transcription with repeated sections and frequent commentary about the handwriting.
+- [Structure] Remove all handwriting meta-commentary (e.g. "The second derivative mark beside $a_1(t)$...", "The exponent at the top of the page appears positive", "The handwritten sine and cosine labels appear reversed", "The last handwritten line appears to say $c_{k+1}$") and merge the two duplicate $y'+y=0$ series sections and the two Airy sections.
+- [Simplify] Reorder as: power series and Taylor review, ordinary vs singular points, the radius theorem, examples ($y'+y=0$, $y''+y=0$, Airy), then undetermined coefficients and variation of parameters; the forcing methods and the system rewrite of $u''+11u'+24u=t^2$ do not belong between series sections.
+- [Intuition] State the radius guarantee explicitly: the series about an ordinary point converges at least up to the distance to the nearest (possibly complex) singular point, and use example 3 ($x=\pm i$, radius at least $1$ about $0$) to illustrate why complex singularities matter.
+- [Simplify] Undetermined coefficients is introduced for $y''+p(x)y'+q(x)y=g(x)$; say it is a constant-coefficient method with forcing of exponential, polynomial, or sinusoidal type.
+- [Graph] Plot the Airy-type solutions $y_1,y_2$ of $y''+xy=0$ on $x\in[-6,6]$ (oscillatory for $x>0$, monotone for $x<0$), computed from partial sums or numerically.
+
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/02 Linear Systems, Stability, and Phase Portraits/14.06 Linear systems.md
+priority: low
+graph: yes
+manim: yes
+summary: Clear and correct (worked example, defective case, and variation of constants all check out); it only lacks a phase-portrait picture of the modes.
+- [Graph] Add a phase portrait of the worked example $A=\begin{pmatrix}-2&1\\1&-2\end{pmatrix}$ on $[-2,2]^2$ with the eigenlines $y=x$ (rate $-1$) and $y=-x$ (rate $-3$) and the trajectory from $(2,0)$, which visibly bends onto the slow line $y=x$ as the difference mode dies out.
+- [Manim] Animate a cloud of initial points flowing under $e^{tA}$ for the worked example, decomposing one point into its two eigen-components that shrink at rates $e^{-t}$ and $e^{-3t}$, so the "difference mode decays faster" sentence becomes visible.
+- [Example] For the defective matrix $I+N$, add one sentence checking $e^{tA}=e^t(I+tN)$ against the direct solve ($y'=y$, then $x'=x+y$), and describe the resulting degenerate-node shape (trajectories tangent to the single eigenline).
+
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/02 Linear Systems, Stability, and Phase Portraits/14.07 Equilibria and stability.md
+priority: low
+graph: yes
+manim: no
+summary: Correct, well-motivated treatment of Lyapunov stability and linearization with a good figure and honest discussion of the non-hyperbolic case.
+- [Graph] Add a native phase portrait of the worked example $x'=x-x^2$, $y'=-2y$ on $[-0.5,1.5]\times[-1,1]$, marking the saddle $(0,0)$, the node $(1,0)$, and trajectories with $x_0<0$ that escape to $x\to-\infty$, which illustrates the "local only" warning.
+- [Intuition] In the zero-eigenvalue section add the sign picture for $x'=\pm x^3$ (arrows on the line) and note that $x'=-x^3$ is asymptotically stable but not exponentially so ($x\sim1/\sqrt{2t}$), which shows what the linearization misses.
+- [Example] Add the 2D trace-determinant summary (both real parts negative iff $\operatorname{tr}J<0$ and $\det J>0$; $\det J<0$ gives a saddle), which lets readers classify Practice 1 without computing roots.
+
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/02 Linear Systems, Stability, and Phase Portraits/Constant-coefficient equations and systems.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct throughout (resonance, defective system, and practice answers verified), but it switches the independent variable between $x$ and $t$ and reuses letters in a way that can confuse.
+- [Structure] The independent variable is $x$ in most sections but $t$ in the last one, and $m$ means both root multiplicity and system dimension while scalar unknowns $u,v$ sit next to the eigenvector $\mathbf v$; use $t$ throughout for systems and different letters (e.g. $n$, $\mathbf w$) to avoid the clashes.
+- [Graph] Plot the resonant particular solution $-x\cos x/2$ for $x\in[0,30]$ with the envelope lines $\pm x/2$ next to a non-resonant response (e.g. $y''+y=\sin(0.8x)$, $y_p=\sin(0.8x)/0.36$), to show what "resonance" means beyond the algebra.
+- [Intuition] In the resonance section, explain why multiplying by $x$ works using the operator factorization already introduced: $(D-1)(D-2)[xe^x]=(D-2)[e^x]=-e^x$.
+- [Example] Verify $-x\cos x/2$ in the text (two lines: $y''=\sin x+x\cos x/2$, so $y''+y=\sin x$) instead of only asking the reader to.
+
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/02 Linear Systems, Stability, and Phase Portraits/Dynamical systems and chaos - Catalogue Guide.md
+priority: low
+graph: no
+manim: no
+summary: Clear, well-paced chapter guide with a sensible reading order and correct small examples.
+- [Intuition] In the worked comparison, give the tent map formula explicitly ($T(x)=2x$ for $x\le1/2$, $2-2x$ otherwise) so the third rule is as concrete as the first two.
+
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/02 Linear Systems, Stability, and Phase Portraits/Flows and linear stability.md
+priority: low
+graph: yes
+manim: yes
+summary: Correct and carefully qualified (existence, uniqueness, blow-up, Lyapunov certificate), with a good exact saddle figure.
+- [Graph] Plot the two counterexamples: the blow-up solution $x=1/(1-t)$ on $t\in[0,0.95]$, and the non-unique family $x(t)=(t-a)^2/4$ for $t\ge a$ (zero before) with $a=0,0.5,1,1.5$ on $t\in[0,3]$, showing several futures leaving one initial state.
+- [Manim] Animate the flow map $\phi_t$ of the saddle $u'=-u$, $v'=2v$ acting on a small disc of initial states, which squeezes along $u$ and stretches along $v$ into a thin ellipse; this makes "flow" and "saddle" concrete.
+- [Intuition] In the Lyapunov example, add the idea in one sentence: $V$ is a squared distance that strictly decreases along every trajectory, like energy in a damped system, so no eigenvalue computation is needed.
+
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/02 Linear Systems, Stability, and Phase Portraits/Iteration and invariant sets.md
+priority: medium
+graph: yes
+manim: yes
+summary: Correct and precise, but entirely verbal; cobweb pictures would make orbits, fixed points, and cycles immediate.
+- [Graph] Add cobweb diagrams on $[0,1]$: $f(x)=(x+2)/3$ with the diagonal and the staircase from $x_0=0$ converging to $1$, and $g(x)=1-x$ from $x_0=1/4$ showing the closed square of the two-cycle.
+- [Manim] Animate the cobweb construction step by step (vertical to the graph, horizontal to the diagonal) for $f(x)=x^2$ from $x_0=0.9$ and from $x_0=1$, showing convergence to $0$ versus the fixed endpoint, matching Practice 1.
+- [Simplify] Rephrase the compactness sentence ("sequences cannot escape without a convergent subsequence") as the standard statement: every sequence in $X$ has a subsequence converging to a point of $X$ (for subsets of $\mathbb R^n$: closed and bounded).
+- [Example] In the basin paragraph, give a concrete periodic-attractor example (orbits that approach a two-cycle $\{p,q\}$ while alternating, without converging to either point) so "approach a set, not a point" is illustrated.
+
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/02 Linear Systems, Stability, and Phase Portraits/Linear systems and matrix exponential calculations.md
+priority: high
+graph: yes
+manim: no
+summary: Calculations are correct (Ex. 14, eigenpairs, diagonalization, adjugate, variation of constants all verified), but the transcription is fragmentary, repeats the same diagonalization example three times, and drifts into unrelated topics.
+- [Structure] "Example 3" names two different things (the third-order equation and later the variation-of-constants problem with $A=\operatorname{diag}(1,2)$), and "The lecture returns to Example 1" refers to an Example 1 that is never shown; renumber or state Example 1 explicitly.
+- [Structure] Merge the three passes over $A=\begin{pmatrix}4&-2\\1&1\end{pmatrix}$ ("A nondiagonal coefficient matrix", "Solving a system by diagonalization", "Review of diagonalization") into one derivation, and move the off-topic fragments (forced second-order equations, Laplace transform, power-series ratio test) to their own notes or remove them.
+- [Example] Complete Exercise 25 instead of leaving it: at $t=0$ the Wronskian is $\det\begin{pmatrix}6&-3&2\\-1&1&1\\-5&1&1\end{pmatrix}=20$, and since $\operatorname{tr}A=0$ Abel's formula gives $W(t)=20$ for all $t$, so the three solutions are independent.
+- [Simplify] Delete the remarks about the handwriting ("The opening matrix on this page appears to have $-1$", the margin adjugate with $-1$, "The initial-value list uses $y(0)$ twice") once the equations are settled; they distract from the mathematics.
+- [Graph] Plot the phase portrait of $x'=4x-2y$, $y'=x+y$ on $[-3,3]^2$ (unstable node, eigenlines $y=x$ for $\lambda=2$ and $y=x/2$ for $\lambda=3$) with the trajectory $(3e^{2t}-2e^{3t},3e^{2t}-e^{3t})$ from $(1,2)$.
+- [Intuition] In the repeated-eigenvalue example $\begin{pmatrix}4&1\\-1&2\end{pmatrix}$, show $e^{At}=e^{3t}(I+t(A-3I))$ since $(A-3I)^2=0$, so the reader sees the exponential still works without diagonalization.
+
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/02 Linear Systems, Stability, and Phase Portraits/Linearization, phase portraits, and nonlinear maps.md
+priority: high
+graph: yes
+manim: yes
+summary: The linearizations, Jacobians, nondimensionalization, and logistic-map algebra are correct, but the note is a loosely ordered transcription with many scanned sketches and a quantities table copied from unrelated notes.
+- [Correctness] The Physical quantities table lists $\beta$ twice with conflicting meanings ("Crowding coefficient, $\unit{s^{-1}}$" and "Predator effect coefficient, 1"), gives $\lambda$ as a Lyapunov exponent although here $\lambda$ is always a Jacobian eigenvalue or recurrence root, and contains rows for symbols that never occur in this note ($T$ sampling period, $x,y$ ingredient amounts in oz, $s$ protein surplus, $t$ iron surplus); rebuild it from the symbols actually used.
+- [Correctness] Symbol clashes: $\beta$ is the predator-effect coefficient in $R'=\alpha R(1-\beta W)$ but also the logistic-map parameter $\beta=1+\alpha\Delta t$, and $\alpha$ is the rabbit growth rate, the multiplier in $y_n=\alpha y_{n-1}$, and the logistic rate; rename the map parameter (e.g. $r$) and the recurrence multiplier.
+- [Example] Finish the example $x'=2x-y-x^2$, $y'=x-2y+y^2$: the Jacobian $\begin{pmatrix}2&-1\\1&-2\end{pmatrix}$ has $\lambda^2-3=0$, so $\lambda=\pm\sqrt3$ and the origin is a saddle.
+- [Graph] Replace the scanned case figures 63–70 with native phase portraits of canonical matrices (e.g. $\operatorname{diag}(-1,-2)$, $\operatorname{diag}(1,2)$, $\begin{pmatrix}-0.2&-1\\1&-0.2\end{pmatrix}$, $\begin{pmatrix}0&-1\\1&0\end{pmatrix}$), and plot the dimensionless predator–prey orbits as level curves of the conserved quantity $H=\epsilon(\bar R-\ln\bar R)+(\bar W-\ln\bar W)$ for $\epsilon=0.5$ on $(0,3]^2$.
+- [Manim] Animate a cobweb for the logistic map $x_n=\beta x_{n-1}(1-x_{n-1})$ at $\beta=1$ (slow decay to $0$, the note's example), then $\beta=2.5$ (fixed point $0.6$) and $\beta=3.2$ (two-cycle), to show why discrete Euler steps can behave unlike the continuous logistic curve.
+- [Structure] Remove the unfinished fragments (age-group population model, "$dp_1/dt=\alpha p_1+\beta p_2-r\ldots$", Fibonacci reminder) and the sentences describing handwriting errors, and order the material as Jacobian linearization, linear 2D classification, predator–prey analysis, difference equations.
+
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/03 Boundary-Value Problems and Eigenfunctions/15.05 Eigenvalue problems.md
+priority: low
+graph: yes
+manim: no
+summary: Clear, correct comparison of Dirichlet, Neumann, periodic, and mixed endpoint conditions with a good figure.
+- [Graph] Add a companion plot for the mixed problem $X(0)=0$, $X'(1)=0$: $\sin((n+\tfrac12)\pi x)$ for $n=0,1,2$ on $[0,1]$, showing the zero slope at the right end next to the Dirichlet modes of Fig. 15.2.
+- [Intuition] Give the physical picture for each condition (fixed string end = Dirichlet, free end or insulated rod end = Neumann, ring = periodic), which explains why the mixed case is a "quarter-wave" mode.
+
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/03 Boundary-Value Problems and Eigenfunctions/15.07 Orthogonality and coefficients.md
+priority: low
+graph: yes
+manim: yes
+summary: Correct and rigorous (coefficient calculation and projection argument verified), with a well-chosen worked example.
+- [Graph] Plot $f(x)=x(1-x)$ with the one-term and two-term sine approximations $b_1\sin(\pi x)$ and $b_1\sin(\pi x)+b_3\sin(3\pi x)$ ($b_1=8/\pi^3\approx0.258$, $b_3=8/(27\pi^3)\approx0.0096$) on $[0,1]$, showing how fast the odd coefficients converge.
+- [Manim] Animate the heat solution $u(x,t)=\sum b_ne^{-\kappa n^2\pi^2t}\sin(n\pi x)$ for $f=x(1-x)$, with the $n=3,5$ components shrinking much faster than $n=1$ so the profile relaxes to a pure sine.
+- [Simplify] Define $\kappa$ (diffusivity) where the heat solution appears; it is used without introduction in this note.
+
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/03 Boundary-Value Problems and Eigenfunctions/Boundary eigenvalue problems.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct and careful about regular versus singular problems; the weight-finding section is compact but dense.
+- [Graph] Plot the sine partial sums of $f(x)=x$ on $[0,1]$ for $N=1,5,20$ with $c_n=2(-1)^{n+1}/(n\pi)$, showing interior convergence, the forced zero at $x=1$, and the Gibbs overshoot near the right end.
+- [Example] Work the weight check $x^2y''+xy'+\lambda y=0$ on $[1,e]$ to the end: with $s=\ln x$ the eigenpairs are $\lambda_n=n^2\pi^2$, $y_n=\sin(n\pi\ln x)$, orthogonal with weight $1/x$.
+- [Simplify] In "Find the weight before projecting onto modes", show the one-line verification that multiplying by $\mu$ gives $\mu ay''+\mu by'=(\mu ay')'$, since the condition $(\mu a)'=\mu b$ is otherwise unmotivated.
+
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/03 Boundary-Value Problems and Eigenfunctions/Box central-field and oscillator eigenfunctions.md
+priority: medium
+graph: yes
+manim: no
+summary: Mathematically sound (hydrogen ground state, Hermite recursion, and ladder identities verified), but one terminology claim is wrong and the note has no picture of the modes.
+- [Correctness] "The adjective linear describes its dependence on the unknown function" is incorrect: "linear harmonic oscillator" refers to the one-dimensional oscillator with a restoring force linear in displacement (potential $\propto x^2$); every equation in this note is linear in $\phi$, so linearity in the unknown cannot be what the adjective distinguishes.
+- [Graph] Plot the potential $V=x^2$ on $[-4,4]$ with horizontal lines at $\varepsilon_n=2n+1$ for $n=0,1,2,3$ and each $\phi_n$ drawn offset on its level, showing $n$ nodes and the decay beyond the turning points $x=\pm\sqrt{2n+1}$.
+- [Intuition] For the unit-cube degeneracy, add that a box with unequal, incommensurate side lengths removes it, which shows concretely that the degeneracy comes from symmetry.
+- [Example] For the central field, add the next $\ell=0$ state for $V=-2/r$, $R=(1-r/2)e^{-r/2}$ with $\varepsilon=-1/4$ and one radial node, to show the pattern rather than a single exponential.
+
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/03 Boundary-Value Problems and Eigenfunctions/Endpoint eigenvalues and Fourier orthogonality.md
+priority: high
+graph: yes
+manim: no
+summary: The eigenvalue cases and Fourier coefficients are correct, but the transcription has unfinished fragments, an incomplete Neumann case, and a quantities table describing models that are not in the note.
+- [Correctness] The Physical quantities table lists $\mechanical{c}$ twice (viscous damping coefficient and wave speed) and describes "a slice of the conducting rod" and "distance along the wave and heat models", none of which appear in this note; drop the wave-speed row and the heat/wave wording.
+- [Example] Finish the opening comparison for $y''+25y=\cos t$: $y_p=\cos t/24$; the IVP gives $C_1=23/24$, $C_2=1$ uniquely, whereas the boundary data $y(\pi/2)=1$, $y'(0)=5$ give $C_2=1$ and leave $C_1$ arbitrary (infinitely many solutions), which is exactly the point of contrasting IVPs and BVPs.
+- [Structure] Complete "Zero derivative at both endpoints" with the positive case ($\lambda_n=(n\pi/L)^2$, $y_n=\cos(n\pi x/L)$), and either solve "Review of systems" (eigenvalues $\pm4$ of $\begin{pmatrix}3&1\\7&-3\end{pmatrix}$) or remove it.
+- [Graph] Plot $f(x)=x$ on $[-3,3]$ with its periodic extension and the Fourier partial sums for $N=2$ and $N=10$, showing convergence inside $(-1,1)$ and the midpoint value $0$ at $x=\pm1$; also replace the scanned Fig. 1 with a native plot of $\sin(\pi x/L)$.
+- [Simplify] Remove the sentences about the handwriting ("The handwritten denominators still show $n\pi$", "The distinction between $m$ and $n$ is implicit...") and the forced-vibration paragraph, which is unrelated to the eigenvalue topic.
+
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/03 Boundary-Value Problems and Eigenfunctions/Fourier convergence and Sturm–Liouville examples.md
+priority: high
+graph: yes
+manim: yes
+summary: All computed coefficients are correct (step, piecewise, $|x|$, Bessel and Cauchy–Euler forms verified), but several examples stop before the answer and the structure is fragmentary.
+- [Example] Finish the Cauchy–Euler problem: with $t=\ln x\in[0,\pi]$ and $Y(0)=Y(\pi)=0$ the eigenpairs are $\lambda_n=n^2$, $y_n=\sin(n\ln x)$, $n\ge1$, orthogonal with weight $1/x$.
+- [Example] Finish the even examples: for $f=5-|x|$ on $[-2,2]$, $a_0=8$ and $a_n=8/(n^2\pi^2)$ for odd $n$ (zero for even $n$); the $6-|x|$ case has the same $a_n$ and $a_0=10$.
+- [Graph] Plot the step function's partial sums $\tfrac12+\sum_{n\le N}b_n\sin(nx)$ for $N=1,5,25$ on $[-\pi,\pi]$ with the midpoint $1/2$ marked, showing the Gibbs overshoot of about $9\%$ of the jump that does not shrink with $N$.
+- [Manim] Animate the step-function series by adding odd harmonics one at a time, with the overshoot spike narrowing but keeping its height, to separate pointwise convergence from the Gibbs phenomenon.
+- [Intuition] Point out that Legendre ($p=1-x^2$ on $[-1,1]$) and Bessel ($p=x$ at $x=0$) are singular Sturm–Liouville problems because $p$ vanishes at an endpoint, which is why boundedness replaces boundary values there.
+- [Structure] Fix the heading "4 on Sturm–Liouville problems" (presumably "Section 11.4") and the property list that starts at "2."; merge the duplicated conversion formulas for $p,q,r$.
+
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/03 Boundary-Value Problems and Eigenfunctions/Weighted eigenfunctions and Rayleigh bounds.md
+priority: high
+graph: yes
+manim: no
+summary: The Rayleigh-quotient derivations, trial values ($12$, $10$, $\pi^2$), and density bounds are correct, but the note repeats the Sturm–Liouville setup several times, leaves its applications unfinished, and has a corrupted quantities table.
+- [Correctness] The Physical quantities table lists $\mechanical{u}$ as "Pressure, Pa" (the note's $\mechanical{u}$ is string displacement) and has rows for thermal diffusivity $\thermal{k}$, membrane dimensions $L,H$, and radius $r,a$ that never occur; the $\mechanical{Q}$ row links to the "Theorems for regular Sturm–Liouville problems" section, but $\mechanical{Q}$ appears in the Exercise 4.4.2 part.
+- [Correctness] Symbol clash for $\alpha$: in the opening string equation and the heat-rod equation $q=\alpha$, but in Exercise 4.4.2 $\alpha=\alpha_{\mathrm{line}}/\mechanical{\rho}_0$ and $q=\mechanical{\rho}_0\alpha$; also plain $T(t)$ is the time factor next to the tension $\mechanical{T}_0$. Use one meaning (e.g. $q=\alpha_{\mathrm{line}}$) and call the time factor $h(t)$ as later in the note.
+- [Example] Finish the $\mechanical{c}^2(x)=1+4x^2(x-\tfrac12)^2$ exercise: on $[0,1]$, $1\le\mechanical{c}^2\le2$, so $\mechanical{\rho}=1/\mechanical{c}^2\in[1/2,1]$ and $\pi\le\sqrt{\lambda_1}\le\sqrt2\,\pi$, i.e. $3.14\le\omega_1\le4.44$.
+- [Example] Note that the tent $u_{T1}=2u_{T2}$, so its quotient is also $12$ (the quotient is scale invariant), and finish the mixed example $\phi''+(\lambda-1)\phi=0$, $\phi(0)=\phi'(1)=0$: $\lambda_n=1+(n+\tfrac12)^2\pi^2$, so $\lambda_1=1+\pi^2/4\approx3.47$.
+- [Graph] Plot the trial functions normalized to unit $L^2$ norm (tent, $x(1-x)$, $\sin\pi x$) on $[0,1]$ with their quotients $12$, $10$, $9.87$ in the legend, showing that trials closer to the true mode give tighter upper bounds.
+- [Structure] Merge the three restatements of the regular Sturm–Liouville problem and Rayleigh quotient into one, fix the dangling "and 68" after the two wiki links, and make the property list start at 1.
+
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/04 Partial Differential Equations/15.01 Basic language.md
+priority: low
+graph: no
+manim: no
+summary: Clear, correct introduction to order, linearity, and homogeneity with a verified worked example and practice answers.
+- [Example] In "Order and linearity", add one quasilinear example (e.g. $u_t+uu_x=0$ is nonlinear but first order and linear in its highest derivative) and link to [[Characteristics for first-order PDEs]], so the linear/quasilinear/fully nonlinear spectrum is visible early.
+- [Structure] The file starts with a UTF-8 BOM; the vault rule is UTF-8 without BOM, so re-save it without the BOM (formatter).
+
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/04 Partial Differential Equations/15.02 Model equations.md
+priority: low
+graph: yes
+manim: yes
+summary: Correct and well paced comparison of Laplace, heat, and wave problems; all worked answers check out.
+- [Graph] In "What the comparison explains", plot the mode amplitudes $e^{-\kappa n^2t}$ for $n=1,2,3$ ($\kappa=1$, $t\in[0,1.5]$) next to $\cos(cnt)$ for $n=1,2$ ($c=1$, $t\in[0,2\pi]$) to show decay versus oscillation.
+- [Manim] Animate $u=e^{-\kappa t}\sin x$ and $u=(\cos ct+\tfrac2c\sin ct)\sin x$ side by side on $(0,\pi)$: the heat profile shrinks monotonically while the wave profile oscillates with constant amplitude.
+- [Structure] The file starts with a UTF-8 BOM; re-save it without the BOM.
+
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/04 Partial Differential Equations/15.03 Initial and boundary data.md
+priority: low
+graph: yes
+manim: no
+summary: Precise and correct treatment of Dirichlet, Neumann, and periodic data, corner compatibility, and the Neumann integral condition.
+- [Graph] Add a 2D plot for the compatibility check: $f(x)=x(1-x)$ and $\sin(\pi x)$ on $[0,1]$ with their second derivatives $-2$ and $-\pi^2\sin(\pi x)$, marking that only the latter vanishes at the endpoints.
+- [Intuition] In "A Neumann integral condition", add the physical reading (in a steady state the total source must equal the net outward flux, otherwise the quantity accumulates forever), which makes the solvability condition memorable.
+- [Structure] The file starts with a UTF-8 BOM; re-save it without the BOM.
+
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/04 Partial Differential Equations/15.04 Separation of variables.md
+priority: low
+graph: yes
+manim: yes
+summary: Correct, complete separation argument including all signs of $\lambda$, with a checked two-mode example.
+- [Graph] Plot the worked solution $u(x,t)=3e^{-2\pi^2t}\sin(\pi x)-2e^{-18\pi^2t}\sin(3\pi x)$ on $[0,1]$ at $t=0,0.005,0.02,0.05$ to show the $n=3$ mode vanishing first.
+- [Manim] Animate the same solution as the two mode components decay at different rates while their sum morphs into a pure $\sin(\pi x)$ shape.
+- [Structure] The file starts with a UTF-8 BOM; re-save it without the BOM.
+
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/04 Partial Differential Equations/15.06 Superposition.md
+priority: low
+graph: no
+manim: no
+summary: Clear and correct; the inhomogeneous and nonlinear counterexamples are well chosen and verified.
+- [Example] In "A prescribed source changes the solution set", finish the example by showing how to fix the boundary data: for $u_t-u_{xx}=1$ with zero endpoints on $(0,\pi)$, use the steady particular solution $u_p=x(\pi-x)/2$ instead of $u_p=t$, so $v=u-u_p$ has zero endpoint values.
+- [Structure] The file starts with a UTF-8 BOM; re-save it without the BOM.
+
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/04 Partial Differential Equations/15.08 Well-posedness.md
+priority: low
+graph: yes
+manim: no
+summary: Rigorous and correct energy estimate and backward-heat counterexample; dense but appropriately so.
+- [Graph] For "Failure of continuous dependence", plot $\|f_n\|_2=e^{-n^2T}\sqrt{\pi/2}$ and $\|u_n(T)\|_2=\sqrt{\pi/2}$ versus $n=1,\ldots,6$ (log scale, $T=0.1$) to make the amplification factor $e^{n^2T}$ visible.
+- [Intuition] Add one sentence on why the backward heat equation is ill-posed (un-blurring: tiny high-frequency noise is amplified by $e^{n^2T}$), contrasting with forward smoothing.
+- [Structure] The file starts with a UTF-8 BOM; re-save it without the BOM.
+
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/04 Partial Differential Equations/15.09 Checks.md
+priority: low
+graph: no
+manim: no
+summary: Clear checklist with a correct complete verification and good counterexamples.
+- [Structure] Turn the opening paragraphs of "What a full check contains" into a short numbered checklist (domain, residual, each boundary datum, initial data, initial velocity if any, corner regularity, uniqueness) that the worked example then follows step by step.
+- [Structure] The file starts with a UTF-8 BOM; re-save it without the BOM.
+
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/04 Partial Differential Equations/Characteristics for first-order PDEs.md
+priority: medium
+graph: yes
+manim: yes
+summary: Correct and compact, covering linear, quasilinear, and Hamilton–Jacobi characteristics, but the shock and inflow parts are terse and rely on one static figure.
+- [Graph] Plot the characteristics $x=\xi+tg(\xi)$ for Burgers with $g(\xi)=-\tanh\xi$ for $\xi\in[-2,2]$, $t\in[0,1.5]$, marking the first crossing time $t_*=-1/\min g'=1$.
+- [Manim] Animate the profile of $u_t+uu_x=0$ with smooth decreasing data steepening until the slope $g'/(1+tg')$ blows up at $t_*$, then show the shock moving with speed $(u_L+u_R)/2$.
+- [Example] In "Quasilinear equations and characteristic crossing", add a Riemann example with numbers ($u_L=2$, $u_R=0$: shock speed $1$; reversed data: rarefaction $u=x/t$ for $0<x<2t$) so the shock/rarefaction sentences become concrete.
+- [Graph] For "Pick the data where the characteristic starts", add a 2D $(x,t)$ diagram of the strip $0<x<1$ with the dividing line $x=ct$ separating the region fed by $g$ from the region fed by $h$.
+- [Links] The source line links "Math 150" to "Model error, random walks, and continuum limits#Discrete walker rule"; say explicitly that this is the related discrete-walker derivation of transport, otherwise the link reads like a mislabeled citation.
+
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/04 Partial Differential Equations/Classification and heat-equation examples.md
+priority: high
+graph: yes
+manim: no
+summary: A transcription that mixes Laplace-transform ODE material with PDE classification and the heat equation; the math is correct but several examples stop mid-calculation and the quantities table belongs to another note.
+- [Correctness] The Physical quantities table lists $\mechanical{c}$ as "Viscous damping coefficient" ($\unit{N\,s\,m^{-1}}$) and $\mechanical{m}$, $\mechanical{x}$ as oscillator mass and displacement, none of which occur here; $\mechanical{c}$ is only the wave speed, so the damping row also creates a duplicate-symbol clash. Remove these oscillator rows.
+- [Correctness] The $\thermal{y}$ row links to "#Changing the forcing at one point", but $\thermal{y}(\mechanical{x},\signal{t})$ is introduced in "Introduction to PDEs" (the $y$ in the forcing section is an ODE solution); also the same temperature is written $\thermal{y}$ there and $\thermal{u}$ from "Deriving the heat equation" on, so use one symbol.
+- [Structure] Move the Laplace-transform sections ("Changing the forcing at one point", "Uniqueness of the inverse Laplace transform", "Laplace-transform practice. Example 1", "Practice problem 4") to the Laplace-transform notes, and delete the unheaded course-objectives list after Fig. 14; the title promises classification and heat examples only.
+- [Example] Finish the stopped calculations: Example 1 gives $Y=1/(s-1)+3/(s-1)^3$, so $y=e^t(1+\tfrac32t^2)$; practice final problem 5 gives $A_n=(-1)^n\sin 4\cdot 2n\pi/(16-n^2\pi^2)$ ($A_1\approx0.776$, $A_2\approx0.405$, $A_3\approx-0.196$), hence $u=\sum A_ne^{-3(n\pi/4)^2t}\sin(n\pi x/4)$.
+- [Graph] Plot the partial sums $\sum_{n=1}^{N}A_n\sin(n\pi x/4)$ for $N=1,3,10,40$ against $\sin x$ on $[0,4]$, showing interior convergence and the Gibbs overshoot near $x=4$ where $\sin4\ne0$.
+- [Links] The PDE table here uses $B^2-4AC$ with mixed coefficient $B$, while [[Classification of second-order PDEs]] uses $2B$ and $B^2-AC$; add a one-line cross-reference noting the two conventions agree.
+
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/04 Partial Differential Equations/Classification of second-order PDEs.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and carefully caveated classification, with a clean rotation derivation of the discriminant test and a correct d'Alembert reduction.
+- [Graph] Plot the type map of $yu_{xx}+u_{yy}=0$: shade $y>0$ elliptic and $y<0$ hyperbolic, and draw the real characteristics $x\pm\tfrac23(-y)^{3/2}=\text{const}$ in the hyperbolic half-plane.
+- [Example] In "A coordinate change reveals the two directions", add a concrete case such as $b=2$, giving $3u_{\xi\xi}-u_{\eta\eta}=0$ (hyperbolic), and show its characteristic lines $\xi\pm\sqrt3\,\eta=\text{const}$.
+- [Structure] The file starts with a UTF-8 BOM; re-save it without the BOM.
+
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/04 Partial Differential Equations/Fourier extensions and forced heat modes.md
+priority: high
+graph: yes
+manim: yes
+summary: Mathematically sound transcription (coefficients and integrations verified), but it is long, repetitive, full of handwriting remarks and malformed headings, and it has a wrong internal link and a foreign quantities table.
+- [Correctness] Under "Term-by-term differentiation of Fourier series and the method of eigenfunction expansion", the sentence "The time-differentiation rule on [[#Eigenfunction expansion for the heat equation]]" points to the wrong heading; the rule is in "Time differentiation of a Fourier series".
+- [Correctness] The Physical quantities table lists $\mechanical{u}$ as pressure "in the divergence-form example" (no such example here, and it clashes with $\mechanical{u}$ = wave displacement in the same table), plus rows that do not occur in this note: $\mechanical{\rho}$ in $\unit{kg/m^3}$, "$\mechanical{Q}$ in Exercise 4.4.2" with its link, $L,H$ membrane dimensions, and $r,a$. Rebuild the table from the symbols used.
+- [Structure] Replace the malformed heading "##### )" and the two "**)**" lines with real section titles, delete the course-schedule table (March 7 to March 23), and merge the three repeated presentations of the Dirichlet sine-series heat solution and the two eigenfunction-expansion derivations into one each.
+- [Simplify] The source term is written $\thermal{Q}'(x)$, which reads as a derivative of $\thermal{Q}$; rename it (e.g. $\thermal{q}(x)$), and finish the periodic step example with $a_0=\tfrac14$, $a_n=-\sin(n\pi/2)/(n\pi)$, $b_n=(\cos(n\pi/2)-\cos n\pi)/(n\pi)$.
+- [Graph] Plot partial sums of the odd-extension series $\sum_{n\ \mathrm{odd}\le N}\frac{400}{n\pi}\sin(n\pi x/L)$ for $N=1,5,25$ on $[-L,2L]$ ($L=1$) with the square wave, showing the zero values at jumps and the Gibbs overshoot; beside it, the cosine series of $x$ (triangular wave) converging uniformly.
+- [Manim] Animate the heat solution with $\thermal{f}=100$ on $(0,1)$: the square profile with its Gibbs ripples smooths quickly as high modes decay, leaving the $\frac{400}{\pi}e^{-\thermal{k}\pi^2t}\sin(\pi x)$ mode.
+
+=== 01 Mathematics/09 Differential Equations and Dynamical Systems/04 Partial Differential Equations/Heat equation, boundary data, and separation.md
+priority: high
+graph: yes
+manim: yes
+summary: Correct derivations and numbers (variable-conductivity profile and mode ratio $e^{-4}$ verified), but it is a loosely ordered transcription with symbol clashes, misdirected internal links, and a table copied from other notes.
+- [Correctness] Symbol clash: $\thermal{\phi}$ is the heat flux ($\unit{W/m^2}$) in the derivation and the initial temperature in "Separation of variables" and "Separation of variables for the heat equation"; the table lists both. Rename the initial profile (e.g. $\thermal{f}$, already used later).
+- [Correctness] Symbol clash: $\thermal{k}$ is defined as diffusivity $\thermal{k}_0/(\thermal{c}\mechanical{\rho})$ in "The heat equation" but used for conductivity in Fourier's law $\thermal{\phi}=-\thermal{k}\,\partial\thermal{u}/\partial x$ in the next part; write $\thermal{k}_0$ there.
+- [Correctness] Two internal links point to unrelated sections: "Newton's law of cooling" refers to [[#The spatial eigenvalue problem]], and the steady-state remark cites the "source convention on [[#Newton's law of cooling and the initial condition]]", whereas the convention $-(\thermal{k}_0\thermal{u}')'=\thermal{Q}$ is in "Steady-state heat equation". Retarget or remove them.
+- [Correctness] The Physical quantities table has rows for symbols not in this note: wave speed $\mechanical{c},\mechanical{v}$; string density $\mechanical{\rho}(x),\mechanical{\rho}_{\min},\mechanical{\rho}_{\max}$ in $\unit{kg\,m^{-1}}$ (clashing with $\mechanical{\rho}$ in $\unit{kg/m^3}$); membrane $L,H$ (clashing with the heat-transfer coefficient $\thermal{H}$) and radius $a$. Remove them.
+- [Structure] Fix the headings "##### )", "##### B", "##### D" and the "**)**" fragments, drop course-admin lines ("Math 126" date, quantifier margin note), and rename "Steady-state temperatures", which actually redoes Dirichlet separation and never computes a steady state (it also says diffusivity is scaled to one but keeps $\thermal{k}$).
+- [Graph] Plot the two steady profiles of the 100 cm rod, $20+x/10$ and $20+10\ln(1+x/600)/\ln(7/6)$, on $x\in[0,100]$, and in a second panel the partial sums of the $\thermal{u}(x,0)=100$ series at $\thermal{k}(\pi/L)^2t=0,0.05,0.5$.
+- [Manim] Animate the uniform-initial-temperature solution decaying toward zero while a bar chart of the mode amplitudes $\frac{400}{n\pi}e^{-\thermal{k}(n\pi/L)^2t}$ ($n=1,3,5,7$) shrinks, showing why only the first mode matters once $\thermal{k}(\pi/L)^2t\gtrsim0.5$.

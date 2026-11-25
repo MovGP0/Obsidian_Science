@@ -1,0 +1,21 @@
+01 Mathematics/99 Reference/01 Formula and Transform Tables/Bessel and Legendre tables.md
+01 Mathematics/99 Reference/01 Formula and Transform Tables/Definite integral tables.md
+01 Mathematics/99 Reference/01 Formula and Transform Tables/Elliptic integral tables.md
+01 Mathematics/99 Reference/01 Formula and Transform Tables/Fourier transform tables.md
+01 Mathematics/99 Reference/01 Formula and Transform Tables/Gamma function tables.md
+01 Mathematics/99 Reference/01 Formula and Transform Tables/Laplace transform tables.md
+01 Mathematics/99 Reference/01 Formula and Transform Tables/Radical substitutions.md
+01 Mathematics/99 Reference/01 Formula and Transform Tables/Rational integral tables.md
+01 Mathematics/99 Reference/01 Formula and Transform Tables/Series and Fourier tables.md
+01 Mathematics/99 Reference/01 Formula and Transform Tables/Transcendental integral tables.md
+01 Mathematics/99 Reference/01 Formula and Transform Tables/Trigonometric integral tables.md
+01 Mathematics/99 Reference/01 Formula and Transform Tables/Z-transform tables.md
+01 Mathematics/99 Reference/02 Probability Tables/Chi-squared F and Student tables.md
+01 Mathematics/99 Reference/02 Probability Tables/Normal probability tables.md
+01 Mathematics/99 Reference/02 Probability Tables/Poisson probability tables.md
+01 Mathematics/99 Reference/02 Probability Tables/Random-number tables.md
+01 Mathematics/99 Reference/03 Constants and Units/Numerical constants and rounding.md
+01 Mathematics/99 Reference/03 Constants and Units/Physical constants and SI units.md
+01 Mathematics/99 Reference/Mathematics Catalogue Source Guide.md
+01 Mathematics/99 Reference/Tables - Catalogue Guide.md
+01 Mathematics/Mathematics Study Guide.md

@@ -1,0 +1,65 @@
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/05 Probability and Uncertainty/15 Expectation Value and Uncertainty/99 Exercises/04 Exercise 4.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/05 Probability and Uncertainty/15 Expectation Value and Uncertainty/99 Exercises/05 Exercise 5.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/05 Probability and Uncertainty/15 Expectation Value and Uncertainty/99 Exercises/06 Exercise 6.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/06 Formula Collection/00 Formula Collection.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/06 Formula Collection/01 Complex Numbers.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/06 Formula Collection/02 Gaussian Integrals.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/06 Formula Collection/03 Linear Algebra.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/06 Formula Collection/04 Dirac Notation and Quantum Mechanics.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/06 Formula Collection/05 Fourier Transform.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/06 Formula Collection/06 Pauli Matrices and Spin Operators.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/06 Formula Collection/07 Harmonic Oscillator Operators.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/06 Formula Collection/08 Basic Trigonometric Identities.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/06 Formula Collection/09 Fourier Series and Notable Values.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/06 Formula Collection/10 Basic Physical Constants.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/07 Notation Comparison/00 Notation Comparison.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/07 Notation Comparison/01 The Inner Product.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/07 Notation Comparison/02 The Adjoint of an Operator.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/07 Notation Comparison/03 The Fourier Transform.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/07 Notation Comparison/04 Index Conventions.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/07 Notation Comparison/05 Dirac Notation versus Function Notation.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/07 Notation Comparison/06 Recurring Symbols.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/08 Exercise Solutions.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/09 Glossary of Terms.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/Functions of operators, continuous bases, and Gaussian packets.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/00.00 Quantum Mechanics.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/00.01 Introduction.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/01 The Crisis of Classical Physics/01.00 The Crisis of Classical Physics.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/01 The Crisis of Classical Physics/01.01 Blackbody Radiation.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/01 The Crisis of Classical Physics/01.02 Photoelectric Effect.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/01 The Crisis of Classical Physics/01.03 Compton Effect.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/01 The Crisis of Classical Physics/01.04 Atomic Spectra and Bohr's Atomic Model.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/01 The Crisis of Classical Physics/01.05 Wave–Particle Duality and the de Broglie Hypothesis.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/01 The Crisis of Classical Physics/01.06 Double-Slit Experiment.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/01 The Crisis of Classical Physics/01.07 Stern–Gerlach Experiment.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/01 The Crisis of Classical Physics/01.08 Order-of-Magnitude Estimates with ℏ.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/01 The Crisis of Classical Physics/01.09 The Crisis of Classical Physics Exercises.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/01 The Crisis of Classical Physics/Matter waves, diffraction, and early quantum problems.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/01 The Crisis of Classical Physics/Quantization, light, and early atomic models.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/02 Postulates of Quantum Mechanics/02.00 Postulates of Quantum Mechanics.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/02 Postulates of Quantum Mechanics/02.01 The Quantum State.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/02 Postulates of Quantum Mechanics/02.02 Observables as Hermitian Operators.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/02 Postulates of Quantum Mechanics/02.03 Measurement Postulate and the Born Rule.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/02 Postulates of Quantum Mechanics/02.04 Wave Function Collapse.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/02 Postulates of Quantum Mechanics/02.05 Time Evolution.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/02 Postulates of Quantum Mechanics/02.06 Expectation Value and Standard Deviation.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/02 Postulates of Quantum Mechanics/02.07 Summary of the Postulates.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/02 Postulates of Quantum Mechanics/02.08 First Complete Example – Spin ½.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/02 Postulates of Quantum Mechanics/02.09 Postulates of Quantum Mechanics Exercises.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/02 Postulates of Quantum Mechanics/Quantum measurement and change-of-basis exercises.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/02 Postulates of Quantum Mechanics/Quantum states, eigenfunctions, and time evolution problems.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/03 Measurement, Observables, and Uncertainty/03.00 Measurement, Observables, and Uncertainty.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/03 Measurement, Observables, and Uncertainty/03.01 Compatibility of Observables.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/03 Measurement, Observables, and Uncertainty/03.02 Complete Set of Commuting Observables (CSCO).md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/03 Measurement, Observables, and Uncertainty/03.03 Robertson Inequality.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/03 Measurement, Observables, and Uncertainty/03.04 Energy–Time Uncertainty.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/03 Measurement, Observables, and Uncertainty/03.05 Successive Measurements and the Quantum Zeno Effect.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/03 Measurement, Observables, and Uncertainty/03.06 A Structural Example – the Angular Momentum Components.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/03 Measurement, Observables, and Uncertainty/03.07 Ideal and Real Measurements.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/03 Measurement, Observables, and Uncertainty/03.08 Measurement, Observables, and Uncertainty Exercises.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/03 Measurement, Observables, and Uncertainty/Dirac notation, representations, and quantum uncertainty.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/03 Measurement, Observables, and Uncertainty/Hermitian operators and uncertainty derivations.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/04 Schrödinger Equation/04.00 Schrödinger Equation.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/04 Schrödinger Equation/04.01 From Unitary Time Evolution to the Equation.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/04 Schrödinger Equation/04.02 Time-Independent Schrödinger Equation.md
+02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/04 Schrödinger Equation/04.03 Probability Conservation and Current.md

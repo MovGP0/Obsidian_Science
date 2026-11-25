@@ -1,0 +1,48 @@
+01 Mathematics/05 Multivariable and Vector Calculus/01 Partial Derivatives and Local Approximation/12.01 Functions of several variables.md
+01 Mathematics/05 Multivariable and Vector Calculus/01 Partial Derivatives and Local Approximation/12.02 Partial derivatives.md
+01 Mathematics/05 Multivariable and Vector Calculus/01 Partial Derivatives and Local Approximation/12.03 Total derivatives.md
+01 Mathematics/05 Multivariable and Vector Calculus/01 Partial Derivatives and Local Approximation/12.04 Multivariable chain rules.md
+01 Mathematics/05 Multivariable and Vector Calculus/01 Partial Derivatives and Local Approximation/12.05 Second derivatives.md
+01 Mathematics/05 Multivariable and Vector Calculus/01 Partial Derivatives and Local Approximation/12.09 Local inversion.md
+01 Mathematics/05 Multivariable and Vector Calculus/01 Partial Derivatives and Local Approximation/Composite functions and coordinate changes.md
+01 Mathematics/05 Multivariable and Vector Calculus/01 Partial Derivatives and Local Approximation/Continuous functions on regions.md
+01 Mathematics/05 Multivariable and Vector Calculus/01 Partial Derivatives and Local Approximation/Higher differentials and local approximation.md
+01 Mathematics/05 Multivariable and Vector Calculus/01 Partial Derivatives and Local Approximation/Limits and continuity in several variables.md
+01 Mathematics/05 Multivariable and Vector Calculus/01 Partial Derivatives and Local Approximation/Multivariable calculus - Overview.md
+01 Mathematics/05 Multivariable and Vector Calculus/01 Partial Derivatives and Local Approximation/Multivariable functions and domains.md
+01 Mathematics/05 Multivariable and Vector Calculus/01 Partial Derivatives and Local Approximation/Partial changes and total differentials.md
+01 Mathematics/05 Multivariable and Vector Calculus/02 Constrained Extrema and Multiple Integrals/12.06 Gradients and extrema.md
+01 Mathematics/05 Multivariable and Vector Calculus/02 Constrained Extrema and Multiple Integrals/12.07 Multiple integrals.md
+01 Mathematics/05 Multivariable and Vector Calculus/02 Constrained Extrema and Multiple Integrals/12.08 Coordinate substitution.md
+01 Mathematics/05 Multivariable and Vector Calculus/02 Constrained Extrema and Multiple Integrals/Double and triple integrals.md
+01 Mathematics/05 Multivariable and Vector Calculus/02 Constrained Extrema and Multiple Integrals/Extrema in several variables.md
+01 Mathematics/05 Multivariable and Vector Calculus/02 Constrained Extrema and Multiple Integrals/Multiple integrals and changes of variables.md
+01 Mathematics/05 Multivariable and Vector Calculus/02 Constrained Extrema and Multiple Integrals/Partial derivatives and constrained extrema.md
+01 Mathematics/05 Multivariable and Vector Calculus/03 Vector Fields, Gradients, Divergence, and Curl/13.01 Fields and domains.md
+01 Mathematics/05 Multivariable and Vector Calculus/03 Vector Fields, Gradients, Divergence, and Curl/13.02 Gradient.md
+01 Mathematics/05 Multivariable and Vector Calculus/03 Vector Fields, Gradients, Divergence, and Curl/13.03 Divergence.md
+01 Mathematics/05 Multivariable and Vector Calculus/03 Vector Fields, Gradients, Divergence, and Curl/13.04 Curl.md
+01 Mathematics/05 Multivariable and Vector Calculus/03 Vector Fields, Gradients, Divergence, and Curl/13.09 Coordinate expressions.md
+01 Mathematics/05 Multivariable and Vector Calculus/03 Vector Fields, Gradients, Divergence, and Curl/Curl and local circulation.md
+01 Mathematics/05 Multivariable and Vector Calculus/03 Vector Fields, Gradients, Divergence, and Curl/Curl.md
+01 Mathematics/05 Multivariable and Vector Calculus/03 Vector Fields, Gradients, Divergence, and Curl/Directional derivatives and gradients.md
+01 Mathematics/05 Multivariable and Vector Calculus/03 Vector Fields, Gradients, Divergence, and Curl/Divergence and local expansion.md
+01 Mathematics/05 Multivariable and Vector Calculus/03 Vector Fields, Gradients, Divergence, and Curl/Divergence.md
+01 Mathematics/05 Multivariable and Vector Calculus/03 Vector Fields, Gradients, Divergence, and Curl/Gradient.md
+01 Mathematics/05 Multivariable and Vector Calculus/03 Vector Fields, Gradients, Divergence, and Curl/Nabla identities and curvilinear coordinates.md
+01 Mathematics/05 Multivariable and Vector Calculus/03 Vector Fields, Gradients, Divergence, and Curl/Scalar and vector fields.md
+01 Mathematics/05 Multivariable and Vector Calculus/03 Vector Fields, Gradients, Divergence, and Curl/Vector analysis and field theory - Catalogue Guide.md
+01 Mathematics/05 Multivariable and Vector Calculus/03 Vector Fields, Gradients, Divergence, and Curl/Vector calculus - Overview.md
+01 Mathematics/05 Multivariable and Vector Calculus/03 Vector Fields, Gradients, Divergence, and Curl/Vector functions and curves.md
+01 Mathematics/05 Multivariable and Vector Calculus/04 Line Integrals, Surface Integrals, and Integral Theorems/13.05 Parameterized curves and surfaces.md
+01 Mathematics/05 Multivariable and Vector Calculus/04 Line Integrals, Surface Integrals, and Integral Theorems/13.06 Line and surface integrals.md
+01 Mathematics/05 Multivariable and Vector Calculus/04 Line Integrals, Surface Integrals, and Integral Theorems/13.07 Integral theorems.md
+01 Mathematics/05 Multivariable and Vector Calculus/04 Line Integrals, Surface Integrals, and Integral Theorems/13.08 Potentials and path independence.md
+01 Mathematics/05 Multivariable and Vector Calculus/04 Line Integrals, Surface Integrals, and Integral Theorems/Green’s theorem, surface integrals, and flux.md
+01 Mathematics/05 Multivariable and Vector Calculus/04 Line Integrals, Surface Integrals, and Integral Theorems/Integral theorems and boundary identities.md
+01 Mathematics/05 Multivariable and Vector Calculus/04 Line Integrals, Surface Integrals, and Integral Theorems/Line integrals and scalar potentials.md
+01 Mathematics/05 Multivariable and Vector Calculus/04 Line Integrals, Surface Integrals, and Integral Theorems/Line integrals, work, and conservative fields.md
+01 Mathematics/05 Multivariable and Vector Calculus/04 Line Integrals, Surface Integrals, and Integral Theorems/Potentials and path independence.md
+01 Mathematics/05 Multivariable and Vector Calculus/04 Line Integrals, Surface Integrals, and Integral Theorems/Scalar and directed line integrals.md
+01 Mathematics/05 Multivariable and Vector Calculus/04 Line Integrals, Surface Integrals, and Integral Theorems/Scalar and oriented surface integrals.md
+01 Mathematics/05 Multivariable and Vector Calculus/04 Line Integrals, Surface Integrals, and Integral Theorems/Surface integrals and oriented flux.md

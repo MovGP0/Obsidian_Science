@@ -1,0 +1,356 @@
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/13 Exercise Solutions/13.03 Chapter 5 - Grand Canonical Ensemble.md
+priority: medium
+graph: yes
+manim: no
+summary: All four derivations re-check correctly (entropy, $x^*\approx2.3994$, $\kappa_T^{-1}=n\,\partial P/\partial n$, BET $\langle n\rangle=cy/[(1-y)(1+(c-1)y)]$, $P_s/c=P_0$), but the TLDR misdescribes the content and the end of Exercise 5.3 is dense and vague.
+- [Correctness] The TLDR promises "subsystem energy shifts", which no exercise covers, and leaves out the two adsorption problems; reword it to: ideal-gas grand potential and entropy, Langmuir fixed-$\mu$ energy response, van der Waals number fluctuations, and the BET multilayer isotherm.
+- [Correctness] Physical-quantities table: $\mathcal Z$ is never used (the note writes $Z_N$), and symbols the note does use are missing: $\mechanical{\kappa}_T^{(0)}$, $\mechanical{P}_s$, $\mechanical{P}_0$, $z_s$, $x=\energy{\Delta}/(k_BT)$, $n_{\mathrm c}$, $\thermal{T}_{\mathrm c}$, and the unsubscripted level energy $\varepsilon$.
+- [Correctness] Exercise 5.2, the weight $e^{-\thermal{\beta}(\varepsilon-\mu N)}$ leaves $\varepsilon$ and $\mu$ without macros, while the same quantities are colored everywhere else; write $\energy{\varepsilon}$ and $\energy{\mu}$.
+- [Simplify] Exercise 5.3, last three paragraphs of "Critical behaviour" (correlation lengths, Proposition 5.3, critical opalescence, Theorem 4.2): say plainly that $(\Delta N)^2=k_BT\langle N\rangle^2\kappa_T/V$ stays exact in the grand ensemble, and that near $T_{\mathrm c}$ only the $\langle N\rangle^{-1/2}$ scaling breaks down, because the correlation length becomes comparable to the system size. Also cut the vague sentence "This also separates an occupation change ..." in the zero-splitting paragraph of 5.2.
+- [Graph] Exercise 5.2: plot $\thermal{C}_\mu/(Mk_B\,|\varepsilon_0|/\Delta)=x^2e^x/(e^x+1)^2$ against $k_BT/\Delta\in[0,3]$, with a vertical line at the peak $0.417$. Exercise 5.4: plot BET $\theta$ against $P/P_s\in[0,0.95]$ for $c=1,10,100$, with the Langmuir curve $cx/(1+cx)$ dashed for $c=100$.
+- [Graph] Exercise 5.3: plot the enhancement $\Delta N\sqrt{\langle N\rangle}/\langle N\rangle=1/\sqrt{1-2an/(k_BT)}$ against $2an/(k_BT)\in[0,0.98]$ to show the divergence at the reduced-model spinodal.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/13 Exercise Solutions/13.04 Chapter 6 - Ideal Quantum Gas.md
+priority: low
+graph: yes
+manim: no
+summary: Clear and correct: every derivation re-checks, including $A_{3D}$, $\frac23\Gamma(5/2)A_{3D}(k_BT)^{3/2}=g_sV/\lambda_T^3$, the Sommerfeld coefficients $\pi^2/12$, $5\pi^2/12$, $\pi^2/2$, Planck's $16\pi^2\hbar=8\pi h$, $\Gamma(4)\zeta(4)=\pi^4/15$, and the relativistic $U_0=\frac34N\varepsilon_F$. The remaining issues are symbol overloading and table gaps.
+- [Correctness] Symbol clash: $n$ means number density ($\varepsilon_F\propto n^{2/3}$; $n\signal{\lambda}_T^3\ll1$ in Exercise 6.6) and also occupation (the "factor $n+1$" in the same section and the note box, next to $n_{\mathrm{BE}}$). In 6.6, write the enhancement factor as $1+\bar n$. Likewise $g$ means density of states while $g_{5/2}(z)$ is the Bose function in 6.3; the note should say so or rename one of them.
+- [Correctness] Physical-quantities table: $g_{5/2},f_{5/2}$ (Bose/Fermi functions), $\Gamma$, $\zeta$, $\energy{U}_0$, $\mechanical{P}_0$, $\Xi_\alpha$, $\Theta$ (step function), and the Sommerfeld test function $\phi$ are missing. The row for $\mathcal N$ says "electromagnetic one-particle modes", but Exercise 6.7 also uses it for massive ultrarelativistic particles.
+- [Simplify] The Exercise 6.6 Task sentence "At the same energy greater than chemical potential, temperature, and chemical potential" is garbled; rewrite as "For the same $T$ and $\mu$ and any energy $\varepsilon>\mu$, show ...".
+- [Example] Exercise 6.4: add the two-line Sommerfeld derivation (substitute $\varepsilon=\mu+k_BTt$, use $\int t^2e^t/(e^t+1)^2dt=\pi^2/3$). To make the fixed-$\mu$ warning concrete, show that keeping $\mu=\varepsilon_F$ gives $U-U_0=\frac{3\pi^2}{8}N(k_BT)^2/\varepsilon_F$, not $\frac{\pi^2}{4}N(k_BT)^2/\varepsilon_F$, which would make $C_V$ 50% too large.
+- [Graph] Exercise 6.6: plot $n_{\mathrm{BE}},n_{\mathrm{MB}},n_{\mathrm{FD}}$ against $x=\beta(\varepsilon-\mu)\in[0.05,4]$ (y range 0 to 3) to show the ordering and how the curves merge at large $x$. Exercise 6.4: plot $\bar n_{\mathrm{FD}}(\varepsilon/\varepsilon_F)$ for $k_BT/\varepsilon_F=0,0.05,0.2$ over $[0,2]$, shading the width-$k_BT$ window around $\mu$.
+- [Graph] Exercise 6.5: plot the dimensionless Planck curve $x^3/(e^x-1)$ for $x=h\nu/k_BT\in[0,12]$, with the Rayleigh–Jeans $x^2$ and Wien $x^3e^{-x}$ curves dashed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/13 Exercise Solutions/13.05 Chapter 8 - Bose Gas and Condensation.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and well checked: all numbers reproduce ($T_c=3.13\,$K, $S(T_c)=1.284Nk_B$, $x=4.965$/$2.821$, $b=2.898\times10^{-3}\,$m K, the Debye table and crossings $y=9.0254/9.1046$, $U=6.13\times10^{-5}\,$J, $P=0.0204\,$Pa, $N_\gamma=5.5\times10^{14}$, $2.701k_BT$). The weak points are the Debye asymptotic formula and one wavelength-symbol overload.
+- [Correctness] Exercise 8.3(c), "The Wien approximation predates Planck's law (1896)" reads as if Planck's law dates from 1896. Write "Wien's approximation (1896) predates Planck's law (1900)".
+- [Simplify] Exercise 8.4, Eq. (13.23): the leading term $\frac{15}{4\pi^4}y^4e^{-y}$ gives only 3.1% at $y=9$, while the full value is 5.08%, so it cannot locate the 5% threshold. Replace it with the closed form of the $e^{-x}$ tail, $\delta(y)\approx\frac{15}{4\pi^4}e^{-y}(y^4+4y^3+12y^2+24y+24)$, which reproduces every table entry to 3 digits; then the table no longer has to be quoted from the source.
+- [Structure] $\signal{\lambda}$ means the thermal wavelength in 8.1–8.2 and the radiation wavelength in 8.3, while the 2D thermal length in 8.6 is $\Lambda$ (the table records all three). Writing $\signal{\lambda}_T$ in 8.2, as the Chapter 5 and 6 solution notes do, would remove the overload. Also add $g_1,g_2,\zeta$ and $\thermal{T}_\lambda$ to the table.
+- [Graph] Exercise 8.4: plot $\delta(y)$ on a log y-axis for $y=\Theta_D/T\in[4,20]$, with a horizontal line at 5% and markers at $y=9.03$ and $10$. Exercise 8.3: plot $u(\lambda,T)$ for $T=3000,4000,5000\,$K over $\lambda\in[0.1,3]\,\mu$m, with the Wien locus $\lambda_{\max}=b/T$.
+- [Graph] Exercise 8.6: plot $n\Lambda^2$ (or $n\lambda^3$) against $z\in[0,1)$ for $g_1(z)=-\ln(1-z)$ (unbounded, 2D uniform), $g_{3/2}(z)$ (3D, saturates at 2.612) and $g_2(z)$ (2D trap, saturates at $\pi^2/6$), so the saturation criterion is visible.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/13 Exercise Solutions/13.06 Chapter 9 - Real Gases and Interactions.md
+priority: medium
+graph: yes
+manim: no
+summary: Derivations re-check (vdW derivatives $-9$ and $-6$, $\phi_*=2\sqrt{-\tau}$, $T_B=2.846\,\varepsilon/k_B$, $L\approx6Nk_BT_c\sqrt{1-T/T_c}$, $T_{\rm inv}=27T_c/4$), but one atm conversion and the table entry for $\varepsilon$ are wrong, and Exercise 9.5 is cluttered by rounded source values.
+- [Correctness] Exercise 9.5(c): "$\mechanical{P}_{\mathrm{vir}}\approx4.129\times10^5\,\unit{Pa}\approx4.077\,\unit{atm}$" is inconsistent; $4.129\times10^5$ Pa is $4.075$ atm (unrounded $4.1292\times10^5$ Pa $=4.0752$ atm), the same as the vdW value.
+- [Correctness] Physical-quantities table: $\energy{\varepsilon}$ is described as "The level energy or level spacing used in the exercise"; in this note it is the square-well depth of Exercise 9.2 (argon scale $\varepsilon/k_B\approx120$ K). The table also omits $\gamma$, $\mechanical{P}_{\mathrm c}$, $\mechanical{V}_{\mathrm c}$ and $\mechanical{P}_0$.
+- [Simplify] Exercise 9.5: give the unrounded results in the main text (vdW $4.1294\times10^5$ Pa, virial $4.1292\times10^5$ Pa, ideal $4.1404\times10^5$ Pa) and drop the "Density convention and numerical precision" callout. Also, in 9.2, $2.846\times120\,\unit{K}=341.5$ K reads better as "about 341 K".
+- [Graph] Exercises 9.1 and 9.3: plot the reduced isotherms $p(v)=8t/(3v-1)-3/v^2$ for $t=0.85,0.9,0.95,1,1.05$ over $v\in[0.45,4]$, $p\in[0,1.6]$. Draw the Maxwell equal-area tie line at $t=0.9$ and the coexistence dome, so the horizontal inflection and the $2\sqrt{-\tau}$ opening are visible.
+- [Graph] Exercises 9.2 and 9.6: plot $B_2/b_0$ from (13.31) against $k_BT/\varepsilon\in[0.5,10]$ for $\lambda=1.5$, marking $T_B$. Add the vdW curve $(2a/k_BT-b)/b$ against $k_BT/(a/b)$ with its zero at $T_{\rm inv}=2T_B$.
+- [Intuition] Exercise 9.4: add one sentence comparing the two regimes. The near-critical $L\approx6Nk_BT_c\sqrt{1-T/T_c}$ vanishes at $T_c$, while the formal low-temperature limit $L/N\approx3.4\,k_BT_c$ is the vdW cohesive energy, so $L$ falls monotonically between them.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/13 Exercise Solutions/13.07 Chapter 11 - Ising Model.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and carefully checked throughout: the transfer-matrix derivatives, $m=e^K\sinh(\beta h)/B$, $m^2=3\tau-\frac{12}{5}\tau^2$, the star–triangle algebra giving $e^{4K_c}=3$ ($k_BT_c=3.641J$), honeycomb $1.519J$, and the mean-field amplitude ratio 2 all verify.
+- [Structure] $K$ means $\thermal{\beta}\energy{J}$ in Exercise 11.1 and $\thermal{T}_c/\thermal{T}$ in Exercise 11.2. The note and table explain the clash, but renaming the mean-field ratio (for example $r=T_c/T$) would remove it.
+- [Simplify] Exercise 11.1: start from $\energy{u}=-\energy{J}\langle\sigma_i\sigma_{i+1}\rangle-\energy{h}\magnetic{m}$ and the two compact closed forms, then show Eq. (13.44) as their sum. Move the raw $\partial B/\partial\beta$ algebra into a collapsed callout.
+- [Graph] Exercise 11.1: plot $u/J$ and $c/k_B$ (numerically from (13.45)) against $k_BT/J\in[0.05,4]$ for $h/J=0,0.5,1$. This shows a smooth Schottky-like peak with no singularity, and how the field shifts it.
+- [Graph] Exercises 11.2 and 11.4: plot the numerical root of $m=\tanh(m\,T_c/T)$ for $T/T_c\in[0,1.5]$, with $\sqrt{3(1-T/T_c)}$ dashed. In a second panel, plot $k_BT_c\,\chi$ from (13.55) on both sides of $T_c$ to show the amplitude ratio 2.
+- [Intuition] Exercise 11.3, Step 3: say explicitly that the composite of duality and star–triangle maps a high-temperature triangular lattice to a low-temperature one, so a unique transition must sit at the fixed point of this map. This is the same logic as square-lattice self-duality.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/13 Exercise Solutions/13.08 Chapter 12 - Landau Theory and the Renormalization Group.md
+priority: low
+graph: yes
+manim: yes
+summary: Mathematically correct: $t_c=|b|^2/(4ac)$, the decimation table ($2^n\xi=3.6719$), the Ornstein–Zernike residue, the scaling relations, $y_u=-\epsilon$, and the XY estimates (0.600, 1.200, second-order 0.655) all verify. Clarity suffers from overloaded symbols and stacked source-attribution callouts.
+- [Structure] $\xi$ (dimensionless, in lattice units, Exercise 12.2) and $\mechanical{\xi}$ (physical length, Exercise 12.3) differ only by color. Write $\xi_{\mathrm{lat}}$ for the first. Also, $R(K)$ in (13.62) is never defined; write $K'=R(K)$ at the transformation (12.7).
+- [Simplify] Exercise 12.1, "Dimensions and limiting cases": "recovers the tricritical exponent $\beta_{\mathrm{crit}}=1/4$, as in part 2" points to a part that does not exist. Show it directly: at $b=0$, $\phi_{\mathrm{eq}}=(-at/(3c))^{1/4}$.
+- [Simplify] Exercise 12.6(c) item 3 has three successive callouts (source attribution, verified correction, precision) about the 0.6717/1.3178 values. Merge them into one sentence attributing the values to Campostrini et al. 2006 (Monte Carlo plus high-temperature series), and note the $\alpha=-0.0151$ versus $-0.0127$ tension with the Lipa experiment.
+- [Graph] Exercise 12.1: plot $F(\phi)/(|b|^3/c^2)$ against $\phi/\sqrt{|b|/c}\in[-1.2,1.2]$ for $at\,c/|b|^2=0.20,0.25,0.30,0.333,0.40$. This shows the coexistence at $1/4$, the metastable minima, and their disappearance at $1/3$.
+- [Graph] Exercises 12.2 and 12.5: draw a cobweb plot of $K'=\frac12\ln\cosh2K$ against $K\in[0,3]$ with the diagonal, starting at $K_0=1$. In a second panel, plot $du/d\ell=\epsilon u-A_nu^2$ against $u$ for $\epsilon=1$, with arrows showing flow from the Gaussian to the Wilson–Fisher fixed point.
+- [Manim] Exercise 12.2: animate a spin chain in which every second spin fades out and the survivors re-space to the original spacing. Show a counter for $K$ (1.000 → 0.663 → 0.350 → 0.114) and $\xi$ in current lattice units halving while $2^n\xi$ stays at 3.672.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/91 A Gaussian Integrals and the Gamma Function/A.00 Gaussian Integrals and the Gamma Function.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub with useful route guidance; all nine links resolve.
+- [Structure] No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/91 A Gaussian Integrals and the Gamma Function/A.01 Fundamental Gaussian Integral.md
+priority: low
+graph: yes
+manim: no
+summary: Clear and correct proof with good convergence remarks; the complex-shift paragraph is the only dense part.
+- [Graph] Add a 3D surface plot of $e^{-(x^2+y^2)}$ over $[-2.5,2.5]^2$ with one thin ring of radius $r$ highlighted, to show why the measure $2\pi r\,dr$ makes the polar integral elementary.
+- [Graph] Plot $e^{-ax^2}$ for $a=0.5,1,4$ over $[-3,3]$, shading each area and labelling it $\sqrt{\pi/a}$, to support the "a larger $a$ narrows the Gaussian" sentence and the width check with $4a$.
+- [Simplify] In the complex-$b$ paragraph, display the ODE and its solution, $2aJ'(b)=bJ(b)\Rightarrow J(b)=\sqrt{\pi/a}\,e^{b^2/(4a)}$, instead of describing them in prose.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/91 A Gaussian Integrals and the Gamma Function/A.02 Moments of the Gaussian Integral.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and well motivated; the moment formula and equipartition example verify.
+- [Example] Before the general formula, show the $n=1$ step explicitly: $-\partial_a\sqrt{\pi/a}=\tfrac{\sqrt\pi}{2}a^{-3/2}$. In the transfer check, state the value $\langle x^4\rangle=3/(4a^2)$ rather than only the factor $1/4$.
+- [Graph] Plot $x^{2n}e^{-x^2}$ for $n=0,1,2,3$ over $[-4,4]$ to show that higher moments are dominated by the tails, with peaks at $|x|=\sqrt n$.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/91 A Gaussian Integrals and the Gamma Function/A.03 Multidimensional Gaussian Integrals.md
+priority: low
+graph: yes
+manim: yes
+summary: Correct and complete proof, with a good explanation of why $\mathbf A^{-1}$ is the covariance; it lacks a concrete matrix example.
+- [Example] Add a $2\times2$ example: $\mathbf A=\begin{pmatrix}2&1\\1&2\end{pmatrix}$ has eigenvalues 1 and 3, $\det\mathbf A=3$, integral $2\pi/\sqrt3$, and covariance $\tfrac13\begin{pmatrix}2&-1\\-1&2\end{pmatrix}$. A positive coupling gives negative correlation.
+- [Graph] Contour plot of $e^{-\mathbf x^{\mathsf T}\mathbf A\mathbf x/2}$ for that matrix on $[-3,3]^2$, with the eigenvector axes drawn and the two principal widths $1$ and $1/\sqrt3$ marked.
+- [Manim] Animate the rotation $\mathbf x=\mathbf O\mathbf y$ turning the tilted elliptical contours into axis-aligned ones while the enclosed area stays fixed, then split the integral into two 1D Gaussians.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/91 A Gaussian Integrals and the Gamma Function/A.04 Gamma Function.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and careful about domains; a plot would make the poles and the factorial interpolation concrete.
+- [Graph] Plot $\Gamma(x)$ for $x\in(-3.5,5]$ with $y\in[-6,6]$, showing the poles at $0,-1,-2,-3$ and marking the points $(n+1,n!)$ and $(1/2,\sqrt\pi)$.
+- [Example] Add $\Gamma(3/2)=\sqrt\pi/2$ and $\Gamma(5/2)=3\sqrt\pi/4$ from the recurrence, since A.07 and A.08.03 use them.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/91 A Gaussian Integrals and the Gamma Function/A.05 Stirling Formula.md
+priority: low
+graph: yes
+manim: no
+summary: Correct derivation with sensible caveats; the accuracy claims would be clearer with numbers.
+- [Example] Add a small table: $n=1,5,10$ gives ratio Stirling/$n!=0.9221,\ 0.9835,\ 0.9917$, close to $1-1/(12n)$. This makes the "$n=1$" warning and the $1/(12n)$ term concrete.
+- [Graph] Plot the scaled integrand $e^{n(\ln u-u+1)}$ for $n=5,20,100$ on $u\in[0,3]$, with the Gaussian $e^{-n(u-1)^2/2}$ dashed, to show the narrowing peak used in the derivation.
+- [Links] Stirling is derived three times (A.05, B.03, C.02); add a link to [[C.02 Stirling Formula - Forms and Approximations]] for the binomial forms.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/91 A Gaussian Integrals and the Gamma Function/A.06 Beta Function.md
+priority: low
+graph: yes
+manim: no
+summary: Correct proof and alternative forms; the stated statistical-mechanics motivation is never shown.
+- [Example] Show the motivating case: $\int_0^E E_1^{p-1}(E-E_1)^{q-1}dE_1=E^{p+q-1}B(p,q)$, which is the convolution of two power-law densities of states when a fixed total energy is shared between two subsystems.
+- [Graph] Plot the normalized densities $t^{p-1}(1-t)^{q-1}/B(p,q)$ on $(0,1)$ for $(p,q)=(1/2,1/2),(1,1),(2,5),(5,2),(3,3)$ to show how the endpoint powers shape the integrand.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/91 A Gaussian Integrals and the Gamma Function/A.07 Volume of a Ball in N Dimensions.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and clear (special cases and the large-$N$ formula verify), but the final reconstruction check is worded confusingly.
+- [Simplify] The last paragraph says that "the fraction inside that smaller ball tends to zero even while the fixed unit-ball volume tends to zero", which obscures the point. State that $1-c^N\to1$, so almost all of the volume lies in a thin shell near the surface. This is why shell and ball volumes give the same microcanonical entropy.
+- [Graph] Plot $V_N(1)$ and $S_{N-1}$ against $N=1,\dots,20$ (points). The maxima are at $N=5$ (5.264) and $N=7$ (33.07), followed by decay to zero.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/91 A Gaussian Integrals and the Gamma Function/A.08 Applications in Statistical Mechanics.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub that separates counting, averaging, and normalization; the links resolve.
+- [Structure] No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/91 A Gaussian Integrals and the Gamma Function/A.08.01 Density of States of the Ideal Gas.md
+priority: low
+graph: yes
+manim: no
+summary: Correct ($g=2\pi V(2m)^{3/2}\sqrt E/h^3=V(2m/\hbar^2)^{3/2}\sqrt E/(4\pi^2)$ verifies) and well caveated.
+- [Graph] Plot the exact staircase count of box states below $E$ (integer lattice points in the momentum ball) against the continuum $\Phi(E)$ for $E$ up to about 200 level spacings, to show when the continuum count becomes accurate.
+- [Intuition] Add one sentence explaining $g\propto\sqrt E$ in 3D: the shell area grows as $p^2$, while $dp/dE=m/p$, so $g\propto p\propto\sqrt E$.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/91 A Gaussian Integrals and the Gamma Function/A.08.02 Integrals over the Maxwell–Boltzmann Distribution.md
+priority: low
+graph: yes
+manim: no
+summary: Correct ($\langle v^2\rangle=3k_BT/m$, $\langle v\rangle$, $v_{\rm mp}$, and the units of $f$ verify), with one redundant sentence and no numbers.
+- [Simplify] Remove "The most probable speed is the location of the maximum of $f$.", which repeats the previous paragraph. Show the $\langle v\rangle$ step $\int_0^\infty v^3e^{-av^2}dv=1/(2a^2)$, with $a=m/(2k_BT)$.
+- [Example] Add N$_2$ at 300 K: $v_{\rm mp}\approx422$, $\langle v\rangle\approx476$, $v_{\rm rms}\approx517\,\unit{m\,s^{-1}}$ (ratios $1:1.128:1.225$).
+- [Graph] Plot $f(v)/n$ against $v/v_{\rm mp}\in[0,3.5]$, with vertical lines at the three speed scales, and a second curve at $4T$ against the same physical speed axis to show the $\sqrt T$ scaling.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/91 A Gaussian Integrals and the Gamma Function/A.08.03 Harmonic Partition Functions and Phase-Space Integrals.md
+priority: low
+graph: yes
+manim: no
+summary: Correct ($Z=k_BT/\hbar\omega$, the ball-method solution of Exercise A.1 verifies) and well scoped.
+- [Simplify] "For $N$ independent oscillators of the same frequency, (A.4) gives" points to the matrix formula. Simply say that the phase-space integral factorizes into $N$ copies of the one-oscillator result.
+- [Graph] Plot the quantum mean energy $\hbar\omega[\tfrac12+1/(e^{\hbar\omega/k_BT}-1)]$ and the classical $k_BT$ against $k_BT/\hbar\omega\in[0,3]$, showing the high-temperature agreement claimed in the note and the zero-point offset.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/91 A Gaussian Integrals and the Gamma Function/A.09 Summary of the Main Formulas.md
+priority: low
+graph: no
+manim: no
+summary: Correct compact reference; all listed formulas verify, including the half-line odd moment $n!/(2a^{n+1})$.
+- [Structure] No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/92 B Saddle-Point Method/B.00 Saddle-Point Method.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub with a good reading order and applicability checks; the links resolve.
+- [Structure] No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/92 B Saddle-Point Method/B.01 Laplace Approximation.md
+priority: low
+graph: yes
+manim: yes
+summary: Correct and rigorous; the only checks are trivial or failing cases, so a nontrivial numerical example would help.
+- [Example] Add $\int_0^\pi e^{N\sin x}dx$ against $e^N\sqrt{2\pi/N}$: the ratio is 1.026, 1.013 and 1.0025 at $N=5,10,50$, approaching one as $1+1/(8N)$ (this links to B.01.01).
+- [Graph] Plot $e^{N[f(x)-f(x_0)]}$ for $f=\sin x$ on $[0,\pi]$ with $N=2,10,50$, and the Gaussian $e^{-N(x-\pi/2)^2/2}$ dashed, showing the $N^{-1/2}$ width.
+- [Manim] Animate $N$ increasing from 1 to 100: the normalized peak narrows, the Gaussian overlay converges to it, and a counter shows the exact/Laplace ratio tending to one.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/92 B Saddle-Point Method/B.01.01 Corrections to the Laplace Approximation.md
+priority: low
+graph: yes
+manim: no
+summary: Correct; the coefficient $f^{(4)}/(8f''^2)-5f'''^2/(24f''^3)$ and the Stirling check $1/12$ verify.
+- [Example] Add a quartic-only check: for $f=\sin x$ at $\pi/2$, $f'''=0$ and $f^{(4)}=1$ give $1+1/(8N)$. Numerically $\int_0^\pi e^{N\sin x}dx/(e^N\sqrt{2\pi/N})=1.0133$ at $N=10$, against the predicted 1.0125.
+- [Graph] Plot the exact ratio $n!/[\sqrt{2\pi n}(n/e)^n]$ and $1+1/(12n)$ against $n=1,\dots,20$ to show the size of the correction.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/92 B Saddle-Point Method/B.02 Saddle-Point Method in the Complex Plane.md
+priority: low
+graph: yes
+manim: yes
+summary: Correct (the steepest-descent angle $(\pi-\phi)/2$ and the contour-phase check verify), but the only example is an exact Gaussian on a straight contour, so the deformation idea stays abstract.
+- [Example] Add an example where the saddle lies off the original contour, for example $\int_{-\infty}^{\infty}e^{-Nx^2/2+ikx}dx$ with saddle $x_0=ik/N$. Shifting the real line through it gives $\sqrt{2\pi/N}e^{-k^2/(2N)}$.
+- [Graph] Contour plot of $\operatorname{Re}h(z)$ with level lines of $\operatorname{Im}h$ for $h(z)=-z^2/2+iz$ on $[-3,3]\times[-2,3]$, marking the saddle at $z=i$ and the steepest-descent and steepest-ascent directions.
+- [Manim] Animate the real-axis contour sliding up onto the horizontal steepest-descent line through the saddle, while a side panel shows the integrand's oscillating real part along the path changing into a single positive Gaussian bump.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/92 B Saddle-Point Method/B.03 Application - Stirling Formula.md
+priority: low
+graph: yes
+manim: no
+summary: Correct ($\ln10!=15.1044$, Stirling 15.0961, relative errors 0.055% and 0.83% verify), with one broken sentence and some duplication of A.05.
+- [Structure] "$n!\sim\sqrt{2\pi n}(n/e)^n$," is followed by "Using the first correction derived below, the logarithmic form is", which forms a fragment and quotes the $O(1/n)$ form before the correction is derived. End the display with a period and move the logarithmic form after the correction.
+- [Links] Link [[A.05 Stirling Formula]], which carries the same derivation, and keep this note focused on the tail check and the $1/(12n)$ correction.
+- [Graph] Plot $\ln n!-(n\ln n-n+\tfrac12\ln2\pi n)$ and the same with $1/(12n)$ subtracted, against $n=1,\dots,20$ on a log y-axis, showing the $1/n$ and $1/n^3$ residuals.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/92 B Saddle-Point Method/B.04 Application - Ensemble Equivalence.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct ($\mu=-k_BT\,\partial\ln Z_N/\partial N$ and the variance formulas verify), but four caveat callouts break the argument and the ideal-gas check is only referenced.
+- [Simplify] Merge the "Source correction" and "Thermodynamic order of the equalities" callouts and the scope sentences into one short "Scope" paragraph after the main result, so that the saddle argument reads continuously.
+- [Example] In "Particle-number fluctuations", insert the ideal-gas case inline: $\ln Z_N=N\ln\xi-\ln N!$ gives $-\partial^2\ln Z_N/\partial N^2=1/N$, so $\langle(\Delta N)^2\rangle\simeq\bar N$.
+- [Graph] Plot the normalized weights $e^{\beta\mu N}Z_N/\mathcal Z$ against $N/\bar N\in[0,2]$ for the ideal gas with $\bar N=10,100,1000$, showing the relative width shrinking as $\bar N^{-1/2}$.
+- [Structure] Pressure is $\mechanical{p}$ here but $\mechanical{P}$ in B.05; use one symbol across the appendix.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/92 B Saddle-Point Method/B.05 Worked Example - Ideal-Gas Partition Function.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and instructive; the Stirling-prefactor cancellation and the Poisson check verify.
+- [Graph] Plot the exact Poisson $\Pr(N)$ for $\bar N=1,10,100$ (bars) with the Gaussian approximation overlaid, to show the failure at $\bar N=1$ described in "Fluctuations and the saddle".
+- [Example] Quantify the warning about dropping the Stirling prefactor: for $\bar N=100$ the false factor is $\sqrt{2\pi\cdot100}\approx25$.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/92 B Saddle-Point Method/B.06 Generalizations and Advanced Applications.md
+priority: low
+graph: yes
+manim: no
+summary: Correct (the multivariable formula and the convergent Hubbard–Stratonovich identity verify), but the mean-field section has no equations.
+- [Example] Add the Curie–Weiss example. Use $e^{+ax^2/2}=(2\pi a)^{-1/2}\int e^{-\phi^2/(2a)+x\phi}d\phi$, which is the ferromagnetic sign without an $i$, with $x=\sum_i\sigma_i$. This gives $\int dm\,e^{-N[\beta Jm^2/2-\ln2\cosh\beta Jm]}$, whose saddle is $m=\tanh\beta Jm$.
+- [Graph] Contour plot of $e^{-N(x^2/2+y^4)}$ for $N=10$ and $100$ on $[-1.5,1.5]^2$, showing the $N^{-1/2}$ width in $x$ against the $N^{-1/4}$ width in the soft quartic direction.
+- [Structure] The table lists only $N$ as "Particle count", while $N$ here is a generic large parameter and $n$, $\mathbf H$, $a_j$ and $\phi$ are not listed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/93 C Elements of Combinatorics and Probability/C.00 Elements of Combinatorics and Probability.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub that frames sample space, limits, and entropy uses well; the links resolve.
+- [Structure] No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/93 C Elements of Combinatorics and Probability/C.01 Permutations, Combinations, and Multinomial Coefficients.md
+priority: low
+graph: no
+manim: no
+summary: Short, clear hub with a good three-object example; the links resolve.
+- [Structure] No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/93 C Elements of Combinatorics and Probability/C.01.01 Permutations.md
+priority: low
+graph: no
+manim: no
+summary: Clear and correct, with a good labelling argument and the AAB example.
+- [Structure] No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/93 C Elements of Combinatorics and Probability/C.01.02 Combinations.md
+priority: low
+graph: yes
+manim: no
+summary: Clear and correct, with good combinatorial proofs of Pascal's relation and the binomial theorem.
+- [Graph] Plot $\binom nk/2^n$ against $k/n$ for $n=10,50,200$ (points), to show the growing concentration near $k=n/2$ that C.02 and C.03.03 use.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/93 C Elements of Combinatorics and Probability/C.01.03 Multinomial Coefficients in Statistical Mechanics.md
+priority: low
+graph: yes
+manim: no
+summary: Correct, with good small-$N$ checks of the Shannon limit.
+- [Graph] For two categories, plot the exact $N^{-1}\ln\binom N{Np}$ for $N=10,100,1000$ against $p\in[0,1]$, together with $-p\ln p-(1-p)\ln(1-p)$, to show the convergence and the $O(\ln N/N)$ gap.
+- [Simplify] Write out the Stirling step in one display, $\ln W\approx N\ln N-\sum_in_i\ln n_i=-N\sum_ip_i\ln p_i$, instead of describing the cancellations only in words.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/93 C Elements of Combinatorics and Probability/C.02 Stirling Formula - Forms and Approximations.md
+priority: low
+graph: yes
+manim: no
+summary: Correct (the entropy $Nk_B\ln2\approx0.957\,\unit{J\,K^{-1}}$ and the central-binomial asymptotics verify) and well caveated.
+- [Intuition] In Example C.1, give the number: for $N=10^{23}$, $\sqrt{2/(\pi N)}\approx2.5\times10^{-12}$. Exact balance is very unlikely, although typical relative imbalances are only of order $N^{-1/2}\approx3\times10^{-12}$.
+- [Graph] Plot $N^{-1}\ln\binom Nk$ against $k/N$ for $N=20$ and $200$, with the binary entropy $H(p)$, so that the form-4 approximation and its edge failure near $k=0,N$ are visible.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/93 C Elements of Combinatorics and Probability/C.03 Basic Probability Distributions.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub with a useful warning about Gaussian approximations near a count boundary.
+- [Structure] No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/93 C Elements of Combinatorics and Probability/C.03.01 Binomial Distribution.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and clear; the indicator argument and the constraint caveat for the paramagnet are good.
+- [Graph] Bar plot of $P_B(k;20,p)$ for $p=0.1,0.5,0.8$, showing how the mean $Np$ moves and the variance $Np(1-p)$ peaks at $p=1/2$.
+- [Example] Make the paramagnet concrete: $N$ spin-1/2 moments in field $B$ have $p=e^{x}/(e^{x}+e^{-x})$ with $x=\mu_BB/k_BT$, so $\langle k\rangle$ gives the mean magnetization $N\mu_B\tanh x$.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/93 C Elements of Combinatorics and Probability/C.03.02 Poisson Distribution.md
+priority: low
+graph: yes
+manim: no
+summary: Correct derivation and moments, with careful physical caveats.
+- [Graph] Bar plot comparing the binomial $P_B(k;N,3/N)$ for $N=6,30,300$ with the Poisson $P_P(k;3)$ for $k=0,\dots,10$, to show the rare-event limit converging.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/93 C Elements of Combinatorics and Probability/C.03.03 Gaussian Limit and the Central Limit Theorem.md
+priority: low
+graph: yes
+manim: yes
+summary: Correct and rigorous statement with a clear characteristic-function sketch; it lacks a visual of the convergence.
+- [Graph] Overlay the binomial $P_B(k;N,0.3)$ (bars) with the Gaussian approximation for $N=10$ and $100$, to show the skew at small $N$ and the agreement near the centre at large $N$.
+- [Manim] Animate the density of the normalized sum $Z_N$ of $N$ exponential (skewed) variables for $N=1,2,3,5,10,30$, morphing towards the standard normal curve while the skewness counter falls as $2/\sqrt N$.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/93 C Elements of Combinatorics and Probability/C.04 Information Entropy and Statistical Mechanics.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub that separates Shannon, Gibbs, and relative entropy; the links resolve.
+- [Structure] No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/93 C Elements of Combinatorics and Probability/C.04.01 Shannon Entropy.md
+priority: low
+graph: yes
+manim: no
+summary: Correct, but the proof section is out of order.
+- [Structure] In "Proof", the concavity and boundary paragraph comes before the sentence "Normalization gives $p_i=1/n$. Concavity ... makes this ... the maximum", and stray blank lines separate them. Put the normalization sentence directly after the Lagrange step, then the concavity and boundary argument.
+- [Graph] Plot the binary entropy $H(p)$ in nats on $[0,1]$ with its maximum $\ln2$ at $p=1/2$. Optionally add a 3D surface or contour of $H$ over the three-outcome simplex.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/93 C Elements of Combinatorics and Probability/C.04.02 Connection to Statistical Mechanics.md
+priority: low
+graph: no
+manim: no
+summary: Correct derivation of the canonical distribution, with clear interpretation of the multipliers.
+- [Example] Add a two-level system with energies $0$ and $\energy{\varepsilon}$: fixing $U$ gives $U=\varepsilon/(e^{\beta\varepsilon}+1)$. Then $U<\varepsilon/2$ needs $\beta>0$, while $U>\varepsilon/2$ needs $\beta<0$, which illustrates the finite-spectrum multiplier remark.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/93 C Elements of Combinatorics and Probability/C.04.03 Relative Entropy - Kullback–Leibler Divergence.md
+priority: low
+graph: yes
+manim: no
+summary: Correct (the Jensen-type proof and the identity $F[p]-F[q]=k_BT\,D_{\mathrm{KL}}$ verify) and concise.
+- [Graph] Plot $D_{\mathrm{KL}}(\mathrm{Bern}(p)\Vert\mathrm{Bern}(1/2))$ and the reverse $D_{\mathrm{KL}}(\mathrm{Bern}(1/2)\Vert\mathrm{Bern}(p))$ against $p\in(0,1)$, showing the asymmetry and the divergence of the reverse order as $p\to0,1$.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/93 C Elements of Combinatorics and Probability/C.05 Random Walk and Diffusion.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub that states the modelling assumptions; the links resolve.
+- [Structure] No change needed; the final sentence listing uses could move above the route paragraph as motivation.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/93 C Elements of Combinatorics and Probability/C.05.01 Random Walk in One Dimension.md
+priority: low
+graph: yes
+manim: yes
+summary: Correct (mean, variance $4Npq\ell^2$ and the lattice factor $2\ell$ verify), with good small-$N$ checks.
+- [Graph] For $N=10$ and $p=1/2$, plot the exact lattice probabilities at $x=-10\ell,\dots,10\ell$ as bars, overlaid with $2\ell$ times the Gaussian density, to show the parity structure and the $2\ell$ factor from the callout.
+- [Manim] Animate 200 independent walkers taking symmetric steps, with a histogram of positions building up beneath them and a $\pm\sqrt N\ell$ envelope widening. Then switch on a bias $p=0.6$ to show drift plus spreading.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/93 C Elements of Combinatorics and Probability/C.05.02 Diffusion Equation.md
+priority: low
+graph: yes
+manim: no
+summary: Correct ($D=\ell^2/2\tau$, the heat kernel, $2Dt$ and $6Dt$ verify), with one awkward sentence in the lattice update.
+- [Simplify] "The probability at a site after one more step is half the probability at each neighbouring site before that step" reads as a single factor; say "is the average of the probabilities at its two neighbours", which matches the displayed equation.
+- [Graph] Plot $P(x,t)$ against $x\in[-5,5]$ for $Dt=0.05,0.25,1,4$, with the $\pm\sqrt{2Dt}$ widths marked, to show the spreading and the constant area.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/93 C Elements of Combinatorics and Probability/C.05.03 Random Walk in d Dimensions and Polymers.md
+priority: low
+graph: yes
+manim: no
+summary: Correct (step conventions, $\kappa=3k_BT/(N\ell^2)$ and the restoring-force sign verify) and well caveated, with one symbol clash.
+- [Correctness] $\mechanical{\tau}$ means the random-walk step interval in "Step-length conventions" but imaginary time in Remark C.2, and $\mechanical{t}$ is used in both roles; the table concedes this. Rename the imaginary time (for example $\mechanical{t}_{\mathrm E}$).
+- [Graph] Plot the vector density $P(\mathbf r)$ and the radial density $4\pi r^2P(\mathbf r)$ against $r/(\sqrt N\ell)\in[0,3]$. The first peaks at zero and the second at $r=\sqrt{2/3}\sqrt N\ell$, which supports the volume-versus-radial paragraph.
+- [Example] Add a number for the spring constant: $N=1000$ links of $\ell=0.5\,\unit{nm}$ at 300 K give $\kappa\approx5\times10^{-5}\,\unit{N\,m^{-1}}$, so a 10 nm extension needs about 0.5 pN.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/93 C Elements of Combinatorics and Probability/C.05.04 Fluctuation–Dissipation Theorem.md
+priority: low
+graph: no
+manim: no
+summary: Correct and clear; the zero-current derivation and the unit check verify.
+- [Example] Add Stokes mobility $\mu_{\mathrm m}=1/(6\pi\eta a)$, which gives the Stokes–Einstein $D=k_BT/(6\pi\eta a)$. A sphere of radius 0.5 µm in water at 293 K has $D\approx0.43\,\mu\unit{m^2\,s^{-1}}$.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/93 C Elements of Combinatorics and Probability/C.06 Summary.md
+priority: low
+graph: no
+manim: no
+summary: Clear summary with a good two-object reconstruction check.
+- [Structure] No change needed.
+=== 02 Physics/02 Thermodynamics and Statistical Mechanics/Statistical populations and quantum counting problems.md
+priority: medium
+graph: yes
+manim: no
+summary: The physics checks out (hydrogen ratios $1.4\times10^{-175}$, $2.1\times10^{-10}$ and $3.55$; $E_F$; $n_{\mathrm{FD}}(E)$; $\langle p_x\rangle=0$), but a reused symbol, a wrong quantity table and transcription-style asides make it hard to follow.
+- [Correctness] Symbol clash: $\energy{E}_1,\energy{E}_2$ are hydrogen levels 10.2 eV apart in the Maxwell–Boltzmann example, but later $\energy{E}_1=h^2/(8\mechanical{m}L^2)$ is the infinite-well ground energy. Rename one of them (for example $\energy{E}_{\mathrm{box}}$).
+- [Correctness] Physical-quantities table: $\thermal{T}$ "Determines the blackbody spectrum" and $\energy{E}_n$ "relative to ionization" do not match this note (there is no blackbody, and here $E_n=E_1n^2$ are box levels). It omits $\mechanical{m}$, $N$, $g(E)$, $n(E)$ and $f$, and $k_B$ and $h$ appear without the semantic macros used elsewhere in the vault.
+- [Simplify] After the distribution table, "These correct the signs written in this table" is confusing because the table already shows the corrected forms. Say "The handwritten table had these signs reversed; the forms above are correct."
+- [Links] The link text "the section on Maxwell–Boltzmann example — Lecture 35, slide 10" is garbled; use [[Nuclear and quantum statistics review calculations#Maxwell–Boltzmann population example|Homework 13.1]].
+- [Graph] Plot $f_{\mathrm{MB}}$, $f_{\mathrm{BE}}$ and $f_{\mathrm{FD}}$ against $(E-\mu)/k_BT\in[-3,5]$. In "Quantum statistics", add $f_{\mathrm{FD}}(E/E_F)$ for $k_BT/E_F=0,0.02,0.1$ to show the step smoothing.

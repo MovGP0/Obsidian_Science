@@ -1,0 +1,154 @@
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/08 Strong Interactions among Quarks/8.12 Assessment.md
+priority: low
+graph: no
+manim: no
+summary: A readable qualitative essay; one notation slip and some time-stamped statements.
+- [Correctness] AdS/CFT paragraph: "$\mathrm{AdS}^5\otimes S_5$" should read $\mathrm{AdS}_5\times S^5$ (five-dimensional anti-de Sitter space times the five-sphere), as the bracketed gloss itself says.
+- [Structure] "tested and validated up to energies of $1\,\mathrm{TeV}$" and "early experimentation at the LHC" are dated to the 2013 source; add a short dated-content callout noting that LHC jet data now reach multi-TeV transverse momenta at $\sqrt{s}=13$–$13.6\,\mathrm{TeV}$.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/08 Strong Interactions among Quarks/8.2 Charge Renormalization in Electrodynamics.md
+priority: medium
+graph: yes
+manim: yes
+summary: A faithful but very dense loop calculation whose physics message (screening, running $\alpha$) is clear, with a few sign and typo errors in the intermediate steps.
+- [Correctness] (8.2.12): the $z_1$ exponent is printed as $iz_1(k^2-m^2-i\epsilon)$; it must be $+i\epsilon$, as in (8.2.11) and as used in (8.2.16), where $-(m^2-i\epsilon)(z_1+z_2)$ appears.
+- [Correctness] (8.2.27) still carries $i\sigma$ in the exponent although $\sigma=1$ was already set (it should be $\exp\{i[q^2z_1z_2/(z_1+z_2)-(M_i^2-i\epsilon)(z_1+z_2)]\}$), and (8.2.28) reads $\delta(\sigma-x_1-x_2)$ where it should be $\delta(\sigma-z_1-z_2)$.
+- [Correctness] Sign of (8.2.51)–(8.2.53): the $-e^2$ in (8.2.44) and $\int d^nl\,e^{il^2z}/(2\pi)^n=ie^{-i\pi n/4}/(4\pi z)^{n/2}$ give the prefactor $-ie^2e^{-i\pi n/4}/(4\pi)^{n/2}$, so the pole term is $+\frac{ie^2}{16\pi^2}(q^\mu q^\nu-q^2g^{\mu\nu})\frac{2}{4-n}\int(1-2z)^2$. As printed, the expansion $\Gamma(2-n/2)X^{n/2-2}=\frac{2}{4-n}-\ln X$ gives a log term with the opposite sign to (8.2.54). (8.2.54)–(8.2.56) themselves are correct.
+- [Correctness] Symbol clash: $\epsilon$ denotes both the dielectric constant $\electric{\epsilon}$ (8.2.1) and the Feynman $i\epsilon$ in every propagator. Rename one, for example $\varepsilon_{\mathrm r}$ for the dielectric constant, and fix "the effective electric charges increases" after (8.2.36).
+- [Graph] Plot the one-loop vacuum-polarization correction $\Delta\Pi(Q^2)=\frac{2\alpha}{\pi}\int_0^1z(1-z)\ln[1+Q^2z(1-z)/m^2]\,dz$ against $\log_{10}(Q/m)$ from $-2$ to $4$. Overlay the Uehling limit $\alpha Q^2/(15\pi m^2)$ and the asymptote $\frac{\alpha}{3\pi}\ln(Q^2/m^2)-\frac{5\alpha}{9\pi}$ so the crossover between the limits of (8.2.32) is visible.
+- [Manim] Animate the opening dielectric analogy for the vacuum: virtual $e^+e^-$ dipoles align around a test charge while a Gaussian sphere shrinks, and a counter shows the enclosed charge rising toward the bare value as the sphere passes inside the polarization cloud.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/08 Strong Interactions among Quarks/8.3 The Running Coupling Constant in QCD.md
+priority: medium
+graph: yes
+manim: yes
+summary: The derivation is correct and checks out numerically ((8.3.16) transversality, (8.3.27) → (8.3.28)), but the gauge-dependent bookkeeping is hard to follow, and quoted values date from 2012.
+- [Correctness] Symbol clash for $\alpha$: it is the gauge function $\alpha(x)$ in (3.5.14)/(8.3.6), quark color indices $\alpha,\beta,\gamma$ in (8.3.9) and (8.3.19)–(8.3.22), and part of $\alpha_s$. Also, the ghost is called a color octet, yet (8.3.14) gives it triplet-style indices $\alpha,\beta$; use adjoint indices $a,b$ there.
+- [Intuition] After (8.3.27), add a small table of the Landau-gauge ($\xi=0$) contributions to the coefficient of $\frac{g^2}{16\pi^2}\ln(-q^2/\mu^2)$: quark loops $+2n_f/3$, gluon plus ghost loops $-13N/6$, two vertices $-2\cdot3N/4$, sum $(2n_f-11N)/3$. This makes clear where the $33-2n_f$ comes from.
+- [Simplify] "Feynman (or Lorenz) gauge for $\xi=1$" is misleading: imposing the Lorenz condition (8.3.1) strictly corresponds to Landau gauge $\xi\to0$, and $\xi=1$ is usually called Feynman–'t Hooft gauge. Reword.
+- [Example] Add a worked number. Inserting $\Lambda^{(5)}_{\overline{\mathrm{MS}}}=213\,\mathrm{MeV}$ into the one-loop (8.3.30) at $Q=M_Z$ gives $\alpha_s\approx0.135$, not the quoted $0.118$, because $\Lambda_{\overline{\mathrm{MS}}}$ is defined through the higher-loop formula. Say so explicitly so readers do not think (8.3.30) and (8.3.31) contradict each other.
+- [Graph] Plot $1/\alpha_s(Q)$ and $\alpha_s(Q)$ against $\log_{10}(Q/\mathrm{GeV})$ from $0$ to $4$ using one-loop (8.3.29), anchored at $\alpha_s(M_Z)=0.118$, with $n_f$ switching at $m_c=1.27$, $m_b=4.18$, $m_t=173\,\mathrm{GeV}$ and $\alpha_s$ continuous at each threshold. This shows the slope changes the text mentions, including the one at top threshold.
+- [Manim] Animate figure 8.21: a blue quark repeatedly emits a virtual $B\bar G$ gluon and turns green, so its color charge spreads into a cloud. A probe of shrinking wavelength then sees less net color, which is antiscreening.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/08 Strong Interactions among Quarks/8.4 Perturbative QCD -  A First Example.md
+priority: medium
+graph: yes
+manim: no
+summary: A clear first example whose formulas check out ((8.4.10)–(8.4.12)), with one wrong physics phrase about the propagator and a few table and notation slips.
+- [Correctness] After (8.4.3): "which vanishes in the soft-gluon limit … also vanishes if $k\cdot q_i=0$" is backwards. The denominator $k^2+2q_i\cdot k$ vanishes, so the propagator diverges; that divergence is the soft and collinear singularity.
+- [Correctness] The physical-quantities table lists $p_1,p_2$, which the note never uses. $\theta$ is used both for the step function in (8.4.1) and for the angles $\theta_{1g},\theta_{2g}$ in (8.4.12). Also fix "three-jet cross differential cross section".
+- [Simplify] (8.4.2): explain that the schematic $|A\otimes C|$ means the interference term $2\,\mathrm{Re}(A^*C)$, which is $O(\alpha_s)$ even though $C$ is a one-loop amplitude. Otherwise the order counting under the braces is opaque.
+- [Graph] Draw the Dalitz triangle $0\le x_1,x_2\le1$, $x_1+x_2\ge1$, colored or contoured by $(x_1^2+x_2^2)/[(1-x_1)(1-x_2)]$ from (8.4.11). Add the jet-resolution cuts $1-x_1>y_{\mathrm{cut}}$, $1-x_2>y_{\mathrm{cut}}$, $1-x_g>y_{\mathrm{cut}}$ for $y_{\mathrm{cut}}=0.1$, so the collinear edges and the soft corner of (8.4.12) are visible.
+- [Graph] Plot $R(\sqrt s)$ from 2 to $40\,\mathrm{GeV}$ as the quark-parton-model steps $3\sum e_q^2=2,\ 10/3,\ 11/3$ (dashed) and multiplied by $1+\alpha_s(s)/\pi$ with one-loop $\alpha_s$ (solid), mirroring figure 8.25 without the $Z$ pole.
+- [Intuition] After the KLN sentence, add two lines explaining why summing over degenerate final states (a quark plus a collinear or soft gluon is indistinguishable from a quark) makes the real and virtual singularities cancel.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/08 Strong Interactions among Quarks/8.5 QCD Corrections to Deeply Inelastic Scattering.md
+priority: high
+graph: yes
+manim: yes
+summary: An excellent intuitive structure (the QED prototype, then splitting functions and moments), but it contains several verifiable formula errors, and the long moment algebra would benefit from plots.
+- [Correctness] (8.5.49): the third term must be $1/[(n+1)(n+2)]$, not $1/[n(n+1)(n+2)]$, since $\int_0^1z^{n-1}z(1-z)\,dz=1/[(n+1)(n+2)]$. Check: only the corrected form gives $A_2(g\leftarrow g)=-n_f/3$, as required by (8.5.27) and used in (8.5.70); the printed form gives $-1/4-n_f/3$.
+- [Correctness] (8.5.75): the momentum fraction per quark or antiquark species is $\Sigma_2^\infty/(2n_f)=\frac{9/17}{12}=\frac{3}{68}$, not $\tfrac12\Sigma_2^\infty$ (which would be $9/34$). The numerical value $3/68$ and the check (8.5.77) are correct.
+- [Correctness] (8.5.50)/(8.5.51): with (7.4.86)–(7.4.87), where $u(x)$ is a number density, the cross-section difference gives $x\mathcal F_3=x[u-\bar u+d-\bar d]$, so the first line is missing a factor $x$. The nonsinglet moment should then be $\Delta_n=\int_0^1dx\,x^{n-1}\mathcal F_3=\int_0^1dx\,x^{n-1}(q-\bar q)$, so that $\Delta_1$ counts valence quarks, consistent with $A_1=0$ expressing fermion-number conservation.
+- [Correctness] Several typos: (8.5.53) the denominator should be $\ln(\Delta_k(\tau)/\Delta_k(0))$, not $\Delta_n(0)$; in (8.5.67) $F_2(x,Q^2)$ inside $\int_x^1du/u^3$ must be $F_2(u,Q^2)$; (8.5.10)–(8.5.11) write $(x,t)$ for $(x,\tau)$; "the beam prepared in (8.27)" should say figure 8.27. Also $y$ is both the parent momentum fraction in (8.5.5) and the inelasticity in (8.5.62), and the table lists it twice; rename one.
+- [Graph] Plot the nonsinglet moment ratios $\Delta_n(Q^2)/\Delta_n(Q_0^2)$ from (8.5.59) for $n=2,\dots,6$ with $n_f=4$, $\Lambda=0.2\,\mathrm{GeV}$, $Q_0^2=4\,\mathrm{GeV}^2$, and $Q^2$ from 4 to $10^4\,\mathrm{GeV}^2$ (log axis). Add a second panel with the $n=2$ singlet and gluon momentum fractions approaching $9/17$ and $8/17$, which shows how slow the approach to the asymptotic limit is.
+- [Manim] Animate the Gedankenexperiment of figures 8.27–8.30: as the resolution $\tau$ grows, the electron's $\delta(z-1)$ spike leaks into a continuum through $e\to e\gamma$ and then $\gamma\to e^+e^-$, with the histograms $e(x,\tau)$ and $\gamma(x,\tau)$ updating live. Motion makes the "PDFs depend on resolution" idea concrete.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/08 Strong Interactions among Quarks/8.6 Jets in Hadron-Hadron Collisions.md
+priority: low
+graph: yes
+manim: no
+summary: A short qualitative section that is clear overall; the one central formula has a dimension mismatch in its table entry and the text and caption disagree about figure 8.37.
+- [Correctness] Physical-quantities table: with dimensionless number densities $f_i$ and the left side of (8.6.3) in $\mathrm{GeV}^{-3}$, the prefactor $2\pi p_\perp/s$ (in $\mathrm{GeV}^{-1}$) requires $\hat\sigma_{ij}$ in $\mathrm{GeV}^{-2}$, not $\mathrm{GeV}^{-4}$. Correct the unit, or state that $\hat\sigma_{ij}$ is the Owens–Reya–Glück scaled form $\hat s\,d\hat\sigma/(\pi\,d\hat t)$.
+- [Correctness] The text calls figure 8.37 "the doubly differential dijet cross section", but the caption (and the figure) show the inclusive jet cross section against $p_\perp$ in rapidity bins. Make them consistent.
+- [Simplify] Make (8.6.3) self-contained: give $x_{a,b}=\frac{p_\perp}{\sqrt s}(e^{\pm y_1}+e^{\pm y_2})$ and $\hat s=x_ax_bs$, define $y_{\mathrm{boost}}=\tfrac12(y_1+y_2)$ (currently used without definition), and explain that $1/(1+\delta_{ij})$ avoids double counting identical partons.
+- [Graph] Plot rapidity $y$ and pseudorapidity $\eta=-\ln\tan(\theta/2)$ against polar angle $\theta\in(0.05,\pi/2)$ for $m/p_\perp=0,\ 0.5,\ 1$, which shows when $\eta\approx y$ (problem 8.18).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/08 Strong Interactions among Quarks/8.7 Two-Photon Processes and the Photon-Structure Function.md
+priority: medium
+graph: yes
+manim: no
+summary: Good physics narrative, and the numbers check out ((8.7.5) prefactor 224/27, ratio ~1 at 1 GeV and ~$10^3$ at 20 GeV, 35/27). The singlet/nonsinglet evolution equations, however, contain an inconsistent charge average and several wrong integrand arguments.
+- [Correctness] (8.7.32): each $q_i$ and $\bar q_i$ receives a photon source $\propto e_i^2$, so $d\Sigma/d\tau\supset2\sum_ie_i^2$ and $\Delta^{(i)}$ gets $e_i^2-\frac{1}{n_f}\sum_je_j^2$. For (8.7.31) and (8.7.33) to agree, $\langle e^2\rangle$ must be $\frac{1}{n_f}\sum_ie_i^2$, not $\frac{1}{2n_f}\sum_ie_i^2$. The table's "printed flavor sum" wording hints at this.
+- [Correctness] Integrand arguments: in (8.7.31), $\Delta^{(i)}(x,\tau)$ inside $\int_x^1dy/y$ should be $\Delta^{(i)}(y,\tau)$; in (8.7.33), $\gamma(x,\tau)$ and $\Sigma(x,\tau)$ should be $\gamma(y,\tau)$ and $\Sigma(y,\tau)$. "Taking moments of (8.7.30)" should refer to (8.7.31).
+- [Correctness] Symbol clash: $y$ is the inelasticity in (8.7.18) and (8.7.20) and the convolution variable in (8.7.22)–(8.7.33); $x$ is also the argument of the flux factor $f(x)$ in (8.7.3). Rename the convolution variable, for example $\xi$.
+- [Example] Add the numbers behind (8.7.6). At $E=1\,\mathrm{GeV}$, (8.7.5) gives $\approx34\,\mathrm{nb}$ against $\sigma_{\mu\mu}=4\pi\alpha^2/3s\approx22\,\mathrm{nb}$. At $E=20\,\mathrm{GeV}$ it gives $\approx150\,\mathrm{nb}$ against $0.054\,\mathrm{nb}$, a ratio of a few $\times10^3$.
+- [Graph] Plot the parton-model photon structure function $F_2^\gamma/\alpha=\frac{3}{\pi}\sum_q e_q^4\,x[x^2+(1-x)^2]\ln(Q^2/\Lambda^2)$ ($u,d,s,c$, $\Lambda=0.2\,\mathrm{GeV}$) for $Q^2=10$ and $100\,\mathrm{GeV}^2$ over $0<x<1$. It rises toward large $x$ and grows with $\ln Q^2$, which contrasts with the proton. A second small plot could show the flux factor $f(x)$ of (8.7.3).
+- [Intuition] Before (8.7.38), explain in words why the photon's scaling violations are positive at all $x$: the pointlike $\gamma\to q\bar q$ source feeds large-$x$ quarks faster than gluon radiation degrades them. This is the inhomogeneous term in (8.7.36).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/08 Strong Interactions among Quarks/8.8 Color Confinement.md
+priority: medium
+graph: yes
+manim: yes
+summary: The dia-electric bubble argument is elegant, and its algebra checks out ((8.8.4), (8.8.11)–(8.8.21)); there is one units slip in Gaussian electrostatics and a wrong lattice-temperature formula.
+- [Correctness] (8.8.6): in the Gaussian units used throughout ($W=\frac1{8\pi}\int D\cdot E$, $\sigma=(1-\epsilon)D/4\pi\epsilon$), the relation is $\mathbf D=\mathbf E+4\pi\mathbf P$, not $\mathbf D=\mathbf E+\mathbf P$.
+- [Correctness] Figure 8.47 caption: the lattice temperature is $T=1/(aN_\tau)$, not $a/N_\tau$; the latter has units of length (the table gives $a$ in $\mathrm{GeV}^{-1}$).
+- [Structure] (8.8.23): add a dated-value note. Current lattice and PDG averages ($m_s\approx93.5\,\mathrm{MeV}$, $\tfrac12(m_u+m_d)\approx3.4$–$3.5\,\mathrm{MeV}$ at $2\,\mathrm{GeV}$) agree with the quoted values but have errors of a few percent instead of 10–20%.
+- [Graph] Plot $W(R)=\frac{Q^2}{2\epsilon R}+\frac{4\pi}{3}vR^3$ for $Q=v=1$ and $\epsilon=0.5,\ 0.1,\ 0.02$ over $R\in(0.2,3)$. Mark the minima from (8.8.18) so the reader sees the bubble radius and energy growing without bound as $\epsilon\to0$, as (8.8.22) states.
+- [Example] Add a plot or worked example of the Coulomb-plus-linear potential $V(r)=-\frac{4}{3}\frac{\alpha_s}{r}+\sigma r$ with $\alpha_s\approx0.3$ and $\sigma\approx0.18\,\mathrm{GeV}^2$ for $r$ from 0.05 to $1.5\,\mathrm{fm}$, connecting the dielectric picture to figure 8.45 and estimating where string breaking (~$1\,\mathrm{fm}$) sets in.
+- [Manim] Animate a dipole in a dia-electric medium: as the two charges separate, the bubble elongates into a flux tube of fixed cross-section and the energy readout grows linearly. Show alongside the ordinary dielectric case, where the field spreads out and the energy saturates.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/08 Strong Interactions among Quarks/8.9 QCD-induced Electroweak Symmetry Breaking.md
+priority: low
+graph: no
+manim: no
+summary: A clear conceptual section whose numbers check out ($\bar M_W\approx28$, $\bar M_Z\approx32\,\mathrm{MeV}$, ratio $\approx2800$); the mass matrix sign conflicts with the stated eigenvectors.
+- [Correctness] (8.9.4): with off-diagonal $+gg'$, the massless eigenvector in $(b_3,\mathcal A)$ is $\propto(g',-g)$, i.e. $A\propto g'b_3-g\mathcal A$, which contradicts the stated $A=(g\mathcal A+g'b_3)/\sqrt{g^2+g'^2}$ and $Z=(gb_3-g'\mathcal A)/\sqrt{g^2+g'^2}$. For those eigenvectors (and $Q=T_3+Y/2$), the off-diagonal entries must be $-gg'$.
+- [Example] Show the arithmetic for (8.9.6) inline: $\bar M_W=g\tilde f_\pi/2=0.65\times87/2\approx28\,\mathrm{MeV}$, $\bar M_Z=\sqrt{g^2+g'^2}\,\tilde f_\pi/2\approx32\,\mathrm{MeV}$, and $v/\tilde f_\pi\approx2830$.
+- [Intuition] Justify "weak isodoublet with $|Y|=1$" in one line: $\bar q_{\mathrm L}q_{\mathrm R}$ carries weak isospin $\tfrac12$ and $Y=Y_{\mathrm R}-Y_{\mathrm L}=\tfrac43-\tfrac13=1$ (or $-\tfrac23-\tfrac13=-1$), exactly the Higgs-doublet quantum numbers.
+- [Structure] Fix "interact more strongly through than the normal color triplets". Add a dated-value note for $M_W=80.399\pm0.023\,\mathrm{GeV}$ (current PDG average $\approx80.37\,\mathrm{GeV}$).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/08 Strong Interactions among Quarks/8.B References.md
+priority: low
+graph: no
+manim: no
+summary: A reference list; no change needed.
+- [Structure] No change needed. Optionally note next to refs. [24] and [25] (PDG 2010/2012, Bethke 2009) that current values are in the latest Review of Particle Physics.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/08 Strong Interactions among Quarks/8.P Problems.md
+priority: low
+graph: no
+manim: no
+summary: An exercise list, transcribed faithfully except for several factual and transcription errors in the stated results.
+- [Correctness] Problem 8.4: right after defining $V(r)=\frac{\alpha_s}{r}\langle\mathbf T^{(1)}\cdot\mathbf T^{(2)}\rangle$, the four potentials are printed as $-\frac43\alpha_s r$, $+\frac16\alpha_s r$, $-\frac23\alpha_s r$, $+\frac13\alpha_s r$. They must be $-\frac43\alpha_s/r$, $+\frac16\alpha_s/r$, $-\frac23\alpha_s/r$, $+\frac13\alpha_s/r$.
+- [Correctness] Problem 8.5 table: the single box is the $6$ of $\mathrm{SU}(6)$ with $(3,2)$ and $G^2=35/12$, not dimension "1". Also, the embedded pair images are swapped relative to their content: the $21$ [$(6,3)\oplus(3^*,1)$, $G^2=20/3$] is the symmetric (horizontal) pair, and the $15$ [$G^2=14/3$] is the antisymmetric (vertical) pair, as the filenames vertical-pair and horizontal-pair indicate the opposite.
+- [Correctness] Problem 8.22 table: at $90^\circ$, $\hat\sigma(gg\to q\bar q)/\hat\sigma(ud\to ud)=\frac{7/48}{20/9}=\frac{21}{320}\approx0.066$, not $\approx0.66$. All other ratios check (0.1, 22/15, 7/6, 7/15, 11/4, 2187/160).
+- [Correctness] Problem 8.10 cites "the Feynman rules for the Faddeev–Popov ghost given in figure 8.10". Figure 8.10 is the dielectric polarization; the ghost vertex is figure 8.17.
+- [Correctness] Problem 8.27(c): $\sum_{i=u,d,s}e_i^4=2/9$; the quoted $2/3$ includes the color factor and should read $3\sum_ie_i^4=2/3$. The Han–Nambu citation should be *Phys. Rev.* **139**, B1006 (1965), not "149B, 1006".
+- [Correctness] Problem 8.9: for the attractive Coulomb potential $-\alpha/r$, the factor $1+\alpha|\mathbf q|^2/(15\pi m^2)$ yields the contact term $-\frac{4\alpha_{\mathrm R}^2}{15m^2}\delta^3(\mathbf x)$. The printed $\frac{4}{15}\frac{\alpha_{\mathrm R}}{m^2}\delta^3(\mathbf x)$ is missing one power of $\alpha_{\mathrm R}$ and the sign.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/08 Strong Interactions among Quarks/8.R For Further Reading.md
+priority: low
+graph: no
+manim: no
+summary: An annotated reading list; fine apart from one citation slip.
+- [Correctness] HQET list: the second Eichten–Hill paper is *Phys. Lett.* **B243**, 427 (1990), not "*Phys. Rev.* **B243**".
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/09 Unified Theories/9.0 Chapter introduction.md
+priority: low
+graph: no
+manim: no
+summary: A clear motivational introduction; the left–right charge formulas check out with the $Q=T_3+Y/2$ convention.
+- [Structure] The block quote on "the human scale is not preferred" has no attribution; mark it as the author's (Quigg's) own statement so it does not read as an anonymous citation.
+- [Intuition] Next to $Y=2I_{3\mathrm R}+(B-L)$, add a one-line check, for example $u_{\mathrm R}$: $2\cdot\tfrac12+\tfrac13=\tfrac43$ and $e_{\mathrm R}$: $2(-\tfrac12)-1=-2$, so the reader sees how the "curious" hypercharges come out.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/09 Unified Theories/9.1 Why Unify -.md
+priority: low
+graph: no
+manim: no
+summary: A concise and correct motivational list (the 25-parameter count and (9.1.3) both check out).
+- [Example] Quantify "of the same size": the ratio of (9.1.3) to (9.1.4) is $1/(8x_W^2)\approx2.4$ for $x_W\approx0.23$.
+- [Structure] Present the 25-parameter tally as a small table (3 couplings + 6 quark masses + 3 angles + 1 phase + 10 lepton parameters + 2 Higgs-potential parameters) for readability.
+- [Links] "the evolution of the strong coupling constant given by (8.3.28)" is better pointed at the resummed form (8.3.29). Add a forward pointer to 9.3 Coupling-Constant Unification, where the $10^{15}\,\mathrm{GeV}$ meeting point is derived.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/09 Unified Theories/9.2 The SU(5) Model.md
+priority: medium
+graph: no
+manim: no
+summary: The core group theory is correct ($A(5^*)=-1$, $A(10)=1$, $\kappa^2=5/3$, $\sin^2\theta_W=3/8$, branching-rule dimensions), but one coupling factor in the Lagrangian is wrong and the experimental status is outdated.
+- [Correctness] (9.2.19), hypercharge term: the coefficient must be $-\frac{g_5}{2}\sqrt{\frac35}\,\mathcal A_\mu\sum\bar f\gamma^\mu Yf$ (i.e. $-\frac{g'}{2}$), not $-\frac{g_5}{2}\frac35$, to agree with (9.2.21) $g'=g_5\sqrt{3/5}$ and (9.2.26).
+- [Correctness] Outdated bounds and status: (9.2.28) should be updated to Super-Kamiokande (2020), $\tau/B(p\to e^+\pi^0)>2.4\times10^{34}\,\mathrm{yr}$ and $\tau/B(p\to\mu^+\pi^0)>1.6\times10^{34}\,\mathrm{yr}$. (9.2.29) has been superseded by SNO+ ($\sim10^{30}\,\mathrm{yr}$ for invisible proton decay). "the normal Higgs scalar $H^0$, still with unknown mass" should note $M_H\approx125\,\mathrm{GeV}$ (2012).
+- [Simplify] Before (9.2.9), walk through why the $5^*\oplus10$ works: the charge sum over the $5^*$ is $3(\tfrac13)+(-1)+0=0$ and over the $10$ ($u^c,u,d,e^c$) is $3(-\tfrac23)+3(\tfrac23)+3(-\tfrac13)+1=0$. Also explain in one sentence why the $15$ and $45$ fail (color sextets and octets).
+- [Example] Expand (9.2.23)–(9.2.27) into explicit steps ($\sum_{5^*}Q^2=3\cdot\frac19+1=\frac43$, $\sum T_3^2=\frac12$) and immediately compare $3/8$ with the measured $\sin^2\theta_W(M_Z)\approx0.231$, motivating the running in 9.3.
+- [Intuition] Near figure 9.2, note that each leptoquark vertex has $\Delta B=\Delta L$, so proton decay conserves $B-L$ ($p\to e^+\pi^0$ but not $p\to e^-\pi^+\pi^+$), which is a key SU(5) signature.
+- [Structure] After (9.2.40)–(9.2.42), give numbers showing the failure: $m_b(m_b)\approx4.2$ vs $m_\tau\approx1.78\,\mathrm{GeV}$, $m_s/m_\mu\approx0.9$, $m_d/m_e\approx9$ at $2\,\mathrm{GeV}$. This shows why running (section 9.6) helps $m_b/m_\tau$ but not the lighter generations.

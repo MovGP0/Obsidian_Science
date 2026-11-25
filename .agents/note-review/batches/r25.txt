@@ -1,0 +1,93 @@
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/00 Introduction.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/01 Analytical Foundations/01 Complex Numbers/00 Complex Numbers.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/01 Analytical Foundations/01 Complex Numbers/01 Definitions and elementary Operations.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/01 Analytical Foundations/01 Complex Numbers/02 Complex Conjugation and Absolute Value.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/01 Analytical Foundations/01 Complex Numbers/03 The Complex Plane.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/01 Analytical Foundations/01 Complex Numbers/04 Euler's Formula.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/01 Analytical Foundations/01 Complex Numbers/05 Powers and Roots.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/01 Analytical Foundations/01 Complex Numbers/06 Common Errors.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/01 Analytical Foundations/01 Complex Numbers/07 Applications to Oscillations and Signals.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/01 Analytical Foundations/01 Complex Numbers/08 Chapter Summary.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/01 Analytical Foundations/01 Complex Numbers/09 Exercises.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/01 Analytical Foundations/01 Complex Numbers/99 Exercises/01 Exercise 1.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/01 Analytical Foundations/01 Complex Numbers/99 Exercises/02 Exercise 2.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/01 Analytical Foundations/01 Complex Numbers/99 Exercises/03 Exercise 3.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/01 Analytical Foundations/01 Complex Numbers/99 Exercises/04 Exercise 4.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/01 Analytical Foundations/01 Complex Numbers/99 Exercises/05 Exercise 5.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/01 Analytical Foundations/01 Complex Numbers/99 Exercises/06 Exercise 6.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/01 Analytical Foundations/01 Complex Numbers/99 Exercises/07 Exercise 7.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/01 Analytical Foundations/01 Complex Numbers/99 Exercises/08 Exercise 8.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/01 Analytical Foundations/01 Complex Numbers/99 Exercises/09 Exercise 9.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/01 Analytical Foundations/01 Complex Numbers/99 Exercises/10 Exercise 10.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/01 Analytical Foundations/01 Complex Numbers/99 Exercises/11 Exercise 11.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/01 Analytical Foundations/02 Functions, Derivatives and Integrals/00 Functions, Derivatives and Integrals.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/01 Analytical Foundations/02 Functions, Derivatives and Integrals/01 Derivatives.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/01 Analytical Foundations/02 Functions, Derivatives and Integrals/02 Partial Derivatives.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/01 Analytical Foundations/02 Functions, Derivatives and Integrals/03 Definite Integrals.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/01 Analytical Foundations/02 Functions, Derivatives and Integrals/04 Integration by Parts.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/01 Analytical Foundations/02 Functions, Derivatives and Integrals/05 The Inner Product as an Integral.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/01 Analytical Foundations/02 Functions, Derivatives and Integrals/06 Common Errors.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/01 Analytical Foundations/02 Functions, Derivatives and Integrals/07 Chapter Summary.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/01 Analytical Foundations/02 Functions, Derivatives and Integrals/08 Exercises.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/01 Analytical Foundations/02 Functions, Derivatives and Integrals/99 Exercises/01 Exercise 1.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/01 Analytical Foundations/02 Functions, Derivatives and Integrals/99 Exercises/02 Exercise 2.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/01 Analytical Foundations/02 Functions, Derivatives and Integrals/99 Exercises/03 Exercise 3.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/01 Analytical Foundations/02 Functions, Derivatives and Integrals/99 Exercises/04 Exercise 4.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/01 Analytical Foundations/02 Functions, Derivatives and Integrals/99 Exercises/05 Exercise 5.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/01 Analytical Foundations/02 Functions, Derivatives and Integrals/99 Exercises/06 Exercise 6.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/01 Analytical Foundations/02 Functions, Derivatives and Integrals/99 Exercises/07 Exercise 7.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/01 Analytical Foundations/03 Ordinary Differential Equations/00 Ordinary Differential Equations.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/01 Analytical Foundations/03 Ordinary Differential Equations/01 First-Order Equations.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/01 Analytical Foundations/03 Ordinary Differential Equations/02 Second-Order Linear Equations.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/01 Analytical Foundations/03 Ordinary Differential Equations/03 Systems of Linear Differential Equations.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/01 Analytical Foundations/03 Ordinary Differential Equations/04 Eigenvalues of Differential Operators.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/01 Analytical Foundations/03 Ordinary Differential Equations/05 The Schrodinger Equation.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/01 Analytical Foundations/03 Ordinary Differential Equations/06 Common Errors.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/01 Analytical Foundations/03 Ordinary Differential Equations/07 Chapter Summary.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/01 Analytical Foundations/03 Ordinary Differential Equations/08 Exercises.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/01 Analytical Foundations/03 Ordinary Differential Equations/99 Exercises/01 Exercise 1.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/01 Analytical Foundations/03 Ordinary Differential Equations/99 Exercises/02 Exercise 2.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/01 Analytical Foundations/03 Ordinary Differential Equations/99 Exercises/03 Exercise 3.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/01 Analytical Foundations/03 Ordinary Differential Equations/99 Exercises/04 Exercise 4.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/01 Analytical Foundations/03 Ordinary Differential Equations/99 Exercises/05 Exercise 5.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/01 Analytical Foundations/03 Ordinary Differential Equations/99 Exercises/06 Exercise 6.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/01 Analytical Foundations/03 Ordinary Differential Equations/99 Exercises/07 Exercise 7.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/04 Vectors and Vector Spaces/00 Vectors and Vector Spaces.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/04 Vectors and Vector Spaces/01 Vector Spaces over C.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/04 Vectors and Vector Spaces/02 Subspaces.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/04 Vectors and Vector Spaces/03 Linear Independence and Spanning Sets.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/04 Vectors and Vector Spaces/04 Basis and Dimension.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/04 Vectors and Vector Spaces/05 Inner Product.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/04 Vectors and Vector Spaces/06 Orthogonality and Orthonormal Bases.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/04 Vectors and Vector Spaces/07 Common Errors.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/04 Vectors and Vector Spaces/08 Chapter Summary.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/04 Vectors and Vector Spaces/09 Exercises.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/04 Vectors and Vector Spaces/99 Exercises/01 Exercise 1.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/04 Vectors and Vector Spaces/99 Exercises/02 Exercise 2.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/04 Vectors and Vector Spaces/99 Exercises/03 Exercise 3.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/04 Vectors and Vector Spaces/99 Exercises/04 Exercise 4.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/04 Vectors and Vector Spaces/99 Exercises/05 Exercise 5.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/04 Vectors and Vector Spaces/99 Exercises/06 Exercise 6.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/04 Vectors and Vector Spaces/99 Exercises/07 Exercise 7.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/04 Vectors and Vector Spaces/99 Exercises/08 Exercise 8.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/04 Vectors and Vector Spaces/99 Exercises/09 Exercise 9.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/04 Vectors and Vector Spaces/99 Exercises/10 Exercise 10.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/05 Matrices and Linear Operators/00 Matrices and Linear Operators.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/05 Matrices and Linear Operators/01 Linear Operators and Matrices.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/05 Matrices and Linear Operators/02 Matrix Operations.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/05 Matrices and Linear Operators/03 Hermitian Matrices.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/05 Matrices and Linear Operators/04 Unitary Matrices.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/05 Matrices and Linear Operators/05 Change of Basis.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/05 Matrices and Linear Operators/06 Common Errors.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/05 Matrices and Linear Operators/07 Chapter Summary.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/05 Matrices and Linear Operators/08 Exercises.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/05 Matrices and Linear Operators/99 Exercises/01 Exercise 1.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/05 Matrices and Linear Operators/99 Exercises/02 Exercise 2.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/05 Matrices and Linear Operators/99 Exercises/03 Exercise 3.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/05 Matrices and Linear Operators/99 Exercises/04 Exercise 4.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/05 Matrices and Linear Operators/99 Exercises/05 Exercise 5.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/05 Matrices and Linear Operators/99 Exercises/06 Exercise 6.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/05 Matrices and Linear Operators/99 Exercises/07 Exercise 7.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/05 Matrices and Linear Operators/99 Exercises/08 Exercise 8.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/05 Matrices and Linear Operators/99 Exercises/09 Exercise 9.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/05 Matrices and Linear Operators/99 Exercises/10 Exercise 10.md

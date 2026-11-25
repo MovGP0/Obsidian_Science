@@ -1,0 +1,507 @@
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/06 The Equivalence Principles/06.05 What Are Inertial Frames.md
+priority: low
+graph: no
+manim: yes
+summary: Readable conceptual essay with one equation, but it blends the operational definition of inertial frames with the author's cosmic-potential explanation without marking which part is standard and which is proposal.
+- [Structure] Split the lecture account into an "operational definition" paragraph (accelerometer reads zero, gyroscopes do not precess relative to each other, free bodies stay unaccelerated) and a clearly labelled "Cosmic Relativity proposal" paragraph, so readers see where standard physics ends.
+- [Intuition] Add a short worked contrast: in a rotating laboratory, a released ball follows a curved path and an accelerometer at rest reads $\Omega^2 r$, while in a freely falling cabin neither effect appears; this makes "no inertial forces" concrete before the circularity argument.
+- [Simplify] Replace "So is the situation in the General Theory of Relativity because its basis is the STR" with an explicit sentence: in GR, local inertial frames are freely falling frames defined by the metric, which itself depends on all matter through the field equations.
+- [Manim] Animate two neighbouring free test bodies released in a falling cabin near Earth: in a small cabin they stay at fixed separation (local inertial frame), in a large cabin they slowly converge, showing why the interpretation section says tidal curvature limits the frame's extent.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/06 The Equivalence Principles/06.06 A Stronger Equivalence Principle.md
+priority: low
+graph: no
+manim: no
+summary: Short and clear statement of the SEP, but it lacks the one number that makes the principle tangible.
+- [Example] Add the binding-energy fractions that the interpretation section asks the reader to predict: $GM/(Rc^2)\approx10^{-27}$ for a 1 kg metal sphere, $\approx7\times10^{-10}$ for Earth, $\approx2\times10^{-6}$ for the Sun and $\approx0.1$–$0.2$ for a neutron star, linking forward to [[06.07.03 Tests of the SEP]].
+- [Simplify] State the SEP in one formula, e.g. $m_g/m_i=1+\eta_N\,E_g/(mc^2)$ with Nordtvedt parameter $\eta_N=0$ in GR, so the "self-energy" phrasing has a concrete target.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/06 The Equivalence Principles/06.07 A Brief Account of Experimental Tests.md
+priority: medium
+graph: yes
+manim: yes
+summary: Informative overview of free-fall, Eötvös and solar-field torsion tests with mostly correct numbers, but the Eötvös mechanism is described inaccurately and one institution is misnamed.
+- [Correctness] Eötvös paragraph: the horizontal torque comes from the centrifugal acceleration having a horizontal component relative to the true gravitational pull (the plumb line follows their sum), and the effect scales as $\Omega^2R_E\sin\varphi\cos\varphi$, maximal at $45^\circ$ latitude; Budapest ($47^\circ$) is a mid-latitude site, so "high-latitude location" and "Earth's gravity ... has a small horizontal component" should be corrected.
+- [Correctness] "Washington University in Seattle" should be "the University of Washington, Seattle" (Eöt-Wash group); Washington University is in St. Louis.
+- [Correctness] Sign convention of (6.4): with $a=(m_g/m_i)g$, one gets $\delta a/g=(m_g/m_i)_1-(m_g/m_i)_2\approx-\eta$ as $\eta$ is defined from $m_i/m_g$; either define $\eta$ with $m_g/m_i$ or write $|\eta|=|\delta a|/g$.
+- [Example] Add the worked estimate for the electrostatic example: with $\eta_{\mathrm{ex}}=10^{-12}$ and $\epsilon=10^{-7}$, $\eta_{\mathrm{ex}}/\epsilon=10^{-5}$; also give Earth-orbit solar field $GM_\odot/r^2=5.9\times10^{-3}\,\mathrm{m/s^2}$ to show where $0.6\,\mathrm{cm/s^2}$ comes from.
+- [Graph] Plot the expected torsion-balance signal $\theta(t)=\theta_0\cos(2\pi t/24\,\mathrm{h})$ for a WEP violation together with a thermal diurnal disturbance of similar period, over $t\in[0,72]\,\mathrm{h}$, to show why diurnal systematics are the main problem.
+- [Manim] Animate the Dicke-type solar-field balance rotating with Earth over one day, with an exaggerated differential pull towards the Sun on the Pb and Cu halves, so the 24 h modulation of the torque direction is visible.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/06 The Equivalence Principles/06.07.01 Space Tests of the UFF and the WEP.md
+priority: low
+graph: no
+manim: yes
+summary: Clear short note with a correct schematic signal graph; the lecture's MICROSCOPE number is the 2017 first result and is updated only in the interpretation section.
+- [Structure] Move the dated update into the lecture text as a callout: MICROSCOPE final result (2022) $\eta(\mathrm{Ti},\mathrm{Pt})=[-1.5\pm2.3(\mathrm{stat})\pm1.5(\mathrm{syst})]\times10^{-15}$, i.e. about $10^{-15}$, so the "better than $2\times10^{-14}$" statement is not read as current.
+- [Example] Add why orbit helps quantitatively: in low Earth orbit the driving field is still $\approx7.9\,\mathrm{m/s^2}$ while the free-fall time is unlimited, compared with $\approx5\,\mathrm{s}$ in a drop tower and $5.9\times10^{-3}\,\mathrm{m/s^2}$ for solar-field torsion balances.
+- [Manim] Animate the satellite orbiting Earth with the two concentric test cylinders and an exaggerated relative displacement $\Delta s$ that always points towards Earth, while a trace of $\Delta s$ along the satellite axis builds up the cosine curve of Fig. 6.5(c).
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/06 The Equivalence Principles/06.07.02 Laser Ranging to the Moon and the WEP.md
+priority: medium
+graph: no
+manim: yes
+summary: Accessible description of lunar laser ranging, but the quoted range precision is inconsistent with the stated millimetre accuracy and the interpretation section's correction is itself off by an order of magnitude.
+- [Correctness] "precision of a few parts in $10^{14}$": a few millimetres over $3.84\times10^8\,\mathrm{m}$ is $\approx10^{-11}$ ($3\,\mathrm{mm}/3.84\times10^8\,\mathrm{m}=7.8\times10^{-12}$); the interpretation section's "parts in $10^{12}$" should also read "about $10^{-11}$". The $10^{-13}$–$10^{-14}$ figure applies to the inferred differential acceleration $\delta a/g$, not the range.
+- [Correctness] "Lunakhod" should be "Lunokhod".
+- [Intuition] Explain how a millimetre range test becomes a $10^{-13}$ acceleration test: a violation $\delta a/g=\eta$ polarises the orbit towards the Sun with amplitude $\approx2.9\times10^{12}\,\eta$ cm (about 13 m per unit Nordtvedt parameter), so mm-level residuals bound $\eta$ near $10^{-13}$.
+- [Simplify] Separate the WEP (composition) and SEP (self-energy) content of LLR explicitly; the note currently says the same data verify "UFF and WEP" at $10^{-14}$ and only hints at the SEP.
+- [Manim] Animate the Earth–Moon system orbiting the Sun with an exaggerated Nordtvedt shift of the lunar orbit towards the Sun, showing the synodic-period oscillation of the Earth–Moon distance.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/06 The Equivalence Principles/06.07.03 Tests of the SEP.md
+priority: medium
+graph: yes
+manim: no
+summary: Good outline of LLR, triple-pulsar and GW-light SEP tests with mostly correct numbers, but notation for the self-energy is inconsistent and the different "precisions" quoted are not put on a common parameter.
+- [Correctness] Symbol clash: the same self-energy appears as $\epsilon_g$ (defined as $GM^2/R$) and $E_g$, and the same mass as $M$ and $m$; use one symbol each, and note that for a uniform sphere $E_g=\tfrac35GM^2/R$, so Earth's actual fraction $\approx4.6\times10^{-10}$ differs from $GM/(Rc^2)=7.0\times10^{-10}$.
+- [Simplify] Introduce the Nordtvedt parameter $\eta_N$ via $\delta a/g=\eta_N\,\Delta(E_g/mc^2)$; then LLR gives $|\eta_N|\lesssim4\times10^{-4}$ ("$<0.04\%$"), and PSR J0337+1715 gives $|\Delta|<2.6\times10^{-6}$, i.e. $|\eta_N|\lesssim2\times10^{-5}$ with a binding fraction $\approx0.1$; this explains "more than an order of magnitude tighter".
+- [Example] Show the 3000 kg estimate: for density $10^4\,\mathrm{kg/m^3}$, $R\approx0.41\,\mathrm{m}$ and $GM/(Rc^2)\approx5\times10^{-24}$, compared with laboratory $\eta\sim10^{-13}$–$10^{-15}$.
+- [Graph] Log-log plot of $GM/(Rc^2)$ against mass for laboratory bodies, Moon, Earth, Sun, white dwarf and neutron star (points with labels, $M$ from $1$ to $10^{31}\,\mathrm{kg}$), with horizontal lines for current $\delta a/g$ sensitivities, to show why only astrophysical bodies test the SEP.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/06 The Equivalence Principles/06.07.04 The Active and the Passive Gravitational Masses.md
+priority: low
+graph: no
+manim: no
+summary: Short, correct conceptual note distinguishing three masses; it would gain from the momentum-conservation argument that the interpretation section only hints at.
+- [Intuition] Add the two-body argument: with $F_{12}=Gm_{p1}m_{a2}/r^2$ and $F_{21}=Gm_{p2}m_{a1}/r^2$, momentum conservation (Newton's third law) requires $m_{a1}/m_{p1}=m_{a2}/m_{p2}$, which is exactly what Kreuzer (1968) and the lunar test of Bartlett and van Buren (1986) checked.
+- [Example] Answer the closing exercise: a pendulum comparison measures $m_p/m_i$ (passive over inertial), never $m_a$, because the Earth's active mass is common to both bobs.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/06 The Equivalence Principles/06.08 The First Applications of the EEP - Prelude to the GTR.md
+priority: medium
+graph: yes
+manim: yes
+summary: Good step-by-step equivalence-principle derivation of the redshift, but the clock-rate equation (6.9) has an ambiguous meaning of $T$ that changes its sign, and one sentence is garbled.
+- [Correctness] Eq. (6.9) with the table entry "clock periods": the lower clock ($S_1$, lower potential) runs slow, so its period seen from $S_2$ is longer and $(T_1-T_2)/\bar T=+gd/c^2$; the printed sign $-gd/c^2$ is correct only if $T_1,T_2$ are elapsed proper-time readings over a common interval. Define $T$ as accumulated readings (and update the table) or flip the sign.
+- [Correctness] "runs at a smaller rate $\phi/c^2$ relative to a stationary clock in gravity-free space" should read "runs slower by the fraction $|\phi|/c^2$", i.e. $d\tau/dt\approx1+\phi/c^2$ with $\phi<0$.
+- [Correctness] The Planck constant is wrapped in \energy{h}; it is an action ($\mathrm{J\,s}$), so use the macro group for action or leave it uncolored as a constant.
+- [Example] Add the Pound–Rebka number: $gd/c^2=9.81\times22.5/(3\times10^8)^2=2.5\times10^{-15}$, and the GPS value $\Delta\phi/c^2\approx5.3\times10^{-10}$ (about $+45.7\,\mu\mathrm{s/day}$), with a reminder that GPS needs the full $-GM/r$ potential difference, not $gd$.
+- [Graph] Plot the fractional rate offset $(\phi(r)-\phi(R_E))/c^2$ with $\phi=-GM_E/r$ against altitude $h=r-R_E$ from 0 to 40,000 km, together with the linear approximation $gh/c^2$, marking the GPS orbit at 20,200 km to show where the uniform-field formula fails.
+- [Manim] Animate Fig. 6.6: a light pulse travelling up an accelerating box while the box gains speed $\delta v=ad/c$, then switch to the gravitational picture with two clocks ticking at visibly different rates.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/06 The Equivalence Principles/06.09 On the Gravitational Origin of the UFF, WEP, and EEP.md
+priority: low
+graph: no
+manim: no
+summary: Short argumentative note that states the author's claim clearly; it contains no derivation to check.
+- [Structure] Add a forward link to the chapter where Cosmic Relativity is claimed to derive the UFF (Chapter 10 or 12) so "emerge transparently" points to an actual argument rather than an assertion.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/06 The Equivalence Principles/06.10 Diving Deeper - Equivalent or Identical.md
+priority: low
+graph: no
+manim: no
+summary: Clear philosophical note; the distinction between equal ratio and identity is well posed, but the closing claim is stated without a pointer to its derivation.
+- [Links] Replace "(Chapter 12)" with a wiki link to the actual Chapter 12 note that derives "inertial mass = gravitational mass times cosmic potential", so the reader can check the claim.
+- [Intuition] Give the formula that the author's claim implies, e.g. $m_i=m_g\,\Phi_U/c^2$ with $\Phi_U$ the cosmic potential magnitude, and state the consequence that would distinguish identity from equivalence (dependence of inertia on the local potential).
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/06 The Equivalence Principles/06.11 The Equivalence Principle and the Quantum Theory.md
+priority: medium
+graph: no
+manim: no
+summary: The propagator argument is clear in outline, but one sentence uses the wrong sign for the equivalent acceleration and the step from equal classical paths to equal actions skips the gauge phase.
+- [Correctness] "the classical path in a gravitational field $g$ is exactly the same as the classical path in an accelerated frame with acceleration $-a$" contradicts (6.11) and the earlier statement $a=-g$; it should read "with acceleration $a=-g$".
+- [Intuition] Show the two Lagrangians explicitly: $L_g=\tfrac12m\dot z^2-mgz$ and, in a frame with acceleration $a$ upward, $L_a=\tfrac12m\dot z^2-maz$; for $a=g$ (frame accelerating upward, i.e. the fictitious field $-a$ equals $g$) they coincide, so the actions are equal; if the frame is described from an inertial frame by $z=z'+at^2/2$ the Lagrangians differ by a total time derivative, which gives only a boundary phase.
+- [Example] Add the COW neutron-interferometer phase $\Delta\varphi=m^2g\lambda A/(2\pi\hbar^2)$ as the standard example of a mass-dependent quantum phase that is nevertheless consistent with the equivalence principle (it depends on $m_im_g$).
+- [Structure] Add the measured quantum WEP tests (atom-interferometer comparisons such as $^{85}$Rb/$^{87}$Rb at the $10^{-12}$ level) so the "categorical" statement has an experimental counterpart.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/06 The Equivalence Principles/06.12 Summary.md
+priority: low
+graph: no
+manim: no
+summary: Adequate chapter summary; no change needed beyond links.
+- [Links] Add wiki links to the summarised notes (06.01, 06.03, 06.07, 06.07.03, 06.11) and to [[07.00 Einstein's General Theory of Relativity]] for "the next chapter".
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/07 Einstein's General Theory of Relativity/07 References.md
+priority: low
+graph: no
+manim: no
+summary: Complete reference list with mostly correct bibliographic data, but two Collected Papers volume titles carry the wrong year ranges.
+- [Correctness] Refs 9 and 10: Collected Papers Vol. 6 is "The Berlin Years: Writings, 1914–1917", not "1912–1914"; ref 11: Vol. 8 is "The Berlin Years: Correspondence, 1914–1918", not "1912–1914"; also "Abrahams expression" should be "Abraham's expression".
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/07 Einstein's General Theory of Relativity/07.00 Einstein's General Theory of Relativity.md
+priority: low
+graph: no
+manim: no
+summary: Clear chapter introduction; the abstract contains one loose phrase about flat spacetime and the reason list could link to its sections.
+- [Simplify] "intrinsic measures of space and time (the metric) remain invariant from point to point" is loose; say that in flat spacetime there exist global coordinates in which the metric components are constant ($\eta_{\mu\nu}$), while in curved spacetime no such coordinates exist.
+- [Links] Turn the five bullet "reasons" into links to the sections that treat them (07.02–07.04, 07.07, 07.09, 07.12, 07.14, 07.15).
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/07 Einstein's General Theory of Relativity/07.01 The Genesis and Its Salient Points.md
+priority: low
+graph: no
+manim: yes
+summary: Mostly quotation with short commentary; readable, with no equations to check.
+- [Simplify] "It took another eight years" should be anchored: from the 1907 "happiest thought" to November 1915; give both dates so the reader does not have to infer them.
+- [Manim] Animate the falling observer from the roof: in the ground frame the observer and released objects accelerate together, then switch to the observer's frame where the objects float at rest, illustrating the quoted passage.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/07 Einstein's General Theory of Relativity/07.02 General Theory of Relativity as a Theory of Gravity.md
+priority: high
+graph: no
+manim: no
+summary: Valuable historical route to the field equations, but the weak-field part mixes metric signatures, drops factors of 2, and gives the Newtonian equation of motion with the wrong sign.
+- [Correctness] "$g_{00}\simeq-(1+\phi/c^2)$" is missing a factor 2 and uses the $(-,+,+,+)$ signature, while later "$g_{00}=1+h_{00}$" uses $(+,-,-,-)$; pick one signature and write $g_{00}\simeq-(1+2\phi/c^2)$ or $g_{00}\simeq1+2\phi/c^2$ consistently.
+- [Correctness] Eq. (7.10): with $(+,-,-,-)$, $g^{ij}=-\delta^{ij}$ and $h_{00}=2\phi/c^2$, (7.8) and (7.9) give $d^2x^i/dt^2=-c^2\Gamma^i_{00}=-(c^2/2)\partial_ih_{00}=-\partial_i\phi$; the printed $+(c^2/2)\nabla h_{00}$ has the wrong sign, and the following statement "$\Gamma^i_{00}=\nabla h_{00}$" drops the factor $1/2$.
+- [Correctness] The main text still states "full contraction gives $R=\kappa T$"; the callout correctly notes $R=-\kappa T$. Fix the sentence itself rather than keeping a wrong sign with a disclaimer, since (7.5) follows only from $R=-\kappa T$.
+- [Correctness] "time derivatives for the car are small" contains a stray word ("car"); it should read "time derivatives of the metric are small for a static field".
+- [Simplify] The 9 + 3 + 4 = 16 → 10 component count is heuristic and conflicts with the next paragraph's 20 Riemann components; label it explicitly as a counting of metric potentials, not of curvature components.
+- [Structure] Put the weak-field derivation (7.6)–(7.11) in its own subsection with a one-line statement of the sign convention, separate from the history of November 1915.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/07 Einstein's General Theory of Relativity/07.03 The GTR from an Action Principle.md
+priority: medium
+graph: no
+manim: no
+summary: Concise statement of the Hilbert–Einstein action, but the printed action has the wrong dimensions and the particle analogy is only patched by a callout.
+- [Correctness] Eq. (7.12) with $d^4x$ in $\mathrm{m}^4$ (time as $ct$) has units of $\mathrm{J\,m}$, not $\mathrm{J\,s}$; the standard form is $S=\frac{1}{c}\int\left(\frac{c^4}{16\pi G}R+\mathcal L_m\right)\sqrt{-g}\,d^4x$, equivalently $\frac{c^3}{16\pi G}\int R\sqrt{-g}\,dt\,d^3x$ for the gravitational part.
+- [Correctness] Write the particle action as $S=-mc^2\int d\tau$ (with $\tau$ in seconds) in the text instead of keeping $-c\int m\,d\tau$ with a disclaimer.
+- [Simplify] The analogy "$R/G$ times $d^3x\,dt$ is like $M\,d\tau$" is not dimensionally an analogy; replace it with the statement that both actions are "invariant scalar times invariant measure" ($d\tau$ for a worldline, $\sqrt{-g}\,d^4x$ for spacetime).
+- [Intuition] Add the one-line result of the variation, $\delta(\sqrt{-g}R)/\delta g^{ik}=\sqrt{-g}(R_{ik}-\tfrac12g_{ik}R)$ and $T_{ik}=-\frac{2}{\sqrt{-g}}\frac{\delta(\sqrt{-g}\mathcal L_m)}{\delta g^{ik}}$, so the reader sees how (7.2) emerges.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/07 Einstein's General Theory of Relativity/07.04 The GTR as the Geometric Theory of Gravity.md
+priority: high
+graph: no
+manim: yes
+summary: Rich and mostly sound geometric discussion, but the Baez–Bunn volume equation is missing a factor and is dimensionally inconsistent, the gravitomagnetic metric estimate is dimensionally wrong, and the Ricci-tensor reduction is misdescribed.
+- [Correctness] Eq. (7.16): Baez–Bunn give $\ddot V/V=-4\pi G(\rho+(P_x+P_y+P_z)/c^2)$, i.e. $\ddot V/V=-\tfrac12\kappa c^2(T_{00}+T_{11}+T_{22}+T_{33})$ with $T_{00}=\rho c^2$; the printed $-\kappa\sum T_{ii}$ lacks $c^2/2$ and has units $\mathrm{m^{-2}}$ instead of $\mathrm{s^{-2}}$.
+- [Correctness] "Its components are typically $v\phi/c$": $g_{0i}$ is dimensionless; its order of magnitude is $(v/c)(\phi/c^2)$, with a factor of about 4 in linearised GR.
+- [Correctness] "Space-time symmetries and physical constraints reduce the geometric object to the symmetric ten-component Ricci tensor" is misleading: the Ricci tensor is a contraction of the Riemann tensor; the remaining ten Weyl components are not removed and carry the vacuum tidal field, which is why $R_{ik}=0$ outside the Sun still has curvature. Say this explicitly, consistent with 07.02.
+- [Simplify] Eqs. (7.14)–(7.15) reuse $\alpha$ and $u$ with changed meanings (flagged in the callout); rewrite with the standard geodesic-deviation equation $D^2\xi^i/d\tau^2=-R^i{}_{jkl}u^j\xi^ku^l$ and its Newtonian limit $\ddot\xi^i=-(\partial_i\partial_j\phi)\xi^j$, which is shorter and dimensionally clean.
+- [Example] Add the Earth tidal example from Fig. 7.1: for separation $\xi$, radial stretching $2GM\xi/r^3$ and transverse squeezing $GM\xi/r^3$ in each of two directions; the trace is zero in vacuum, which is the content of $R_{00}=0$ and connects directly to (7.16).
+- [Manim] Animate a small spherical cloud of free particles falling towards Earth, deforming into a prolate ellipsoid with unchanged volume (vacuum, Weyl) and, in a second scene inside a uniform dust ball, shrinking in volume at rate $\ddot V/V=-4\pi G\rho$ (Ricci).
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/07 Einstein's General Theory of Relativity/07.05 Einstein's Hole Argument.md
+priority: medium
+graph: no
+manim: yes
+summary: Faithful quotation-based account of the hole argument and its history, with technical misstatements about the 1915 covariance restriction and the timing of the trace assumption.
+- [Correctness] "restricted to metric determinant 1": the 4 November 1915 restriction was to coordinate transformations with Jacobian (substitution) determinant 1, as the quoted sentence itself says, not to metrics with determinant 1.
+- [Correctness] The trace assumption $\sum T^\mu{}_\mu=0$ was introduced in the 11 November 1915 addendum, not in the first (4 November) paper; "At this stage" should say so.
+- [Intuition] Add the standard resolution in two sentences next to the author's verdict (active diffeomorphism: $\phi^*g$ and $g$ give the same coincidences of matter worldlines and clock readings), so readers see the alternative the interpretation section mentions.
+- [Manim] Animate a hole region with matter worldlines outside and a smooth deformation of the coordinate grid only inside, followed by a clock worldline carried along with the deformation so its reading is unchanged.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/07 Einstein's General Theory of Relativity/07.05.01 Revisiting the Hole Argument.md
+priority: medium
+graph: no
+manim: no
+summary: The author's argument is easy to follow, but its central example is not a hole transformation and the clock-rate comparison uses the wrong worldline.
+- [Correctness] The Galilean map $x'=x-vt$ does not reduce to the identity outside L, so it is not a hole-type transformation and cannot support the conclusion drawn for the hole; it also changes the description of the matter outside L.
+- [Correctness] Comparing $\sqrt{-\gamma_{00}}\,dt$ with $\sqrt{-\gamma'_{00}}\,dt$ at the same coordinate label compares two different physical clocks: a clock at rest in the old chart inside L is generally not at rest in the new chart, so its proper time is $\int\sqrt{-\gamma'_{\mu\nu}\dot x'^\mu\dot x'^\nu}\,dt'$, which equals the original value. Add this computation (as the interpretation section requests) or mark the claim as the author's contested view.
+- [Example] Work a one-dimensional example: $t'=t+f(t,x)$ with $f$ vanishing outside L; show that $\gamma'_{00}$ changes while $\int d\tau$ along the same worldline is unchanged.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/07 Einstein's General Theory of Relativity/07.06 The GTR and Its Galilean Metrics.md
+priority: high
+graph: no
+manim: yes
+summary: The Painlevé-to-Schwarzschild algebra is mostly right, but the Langevin cross-term signs are wrong, the "Galilean transformation" to the Painlevé metric is not a coordinate transformation, and the split expansion (7.25)–(7.27) is confusing.
+- [Correctness] Eq. (7.21): with $x'=x-vt$, $dx=dx'+v\,dt$ gives $ds^2=-c^2dt^2(1-v^2/c^2)+2v\,dx'\,dt+dx'^2$; the cross term is $+2v$, not $-2v$, and likewise (7.22) should read $+2R^2\Omega\,d\phi'\,dt$ for $\phi'=\phi-\Omega t$.
+- [Correctness] Painlevé derivation: $r'=r+vt$ with $v=\sqrt{2GM/r}$ does not produce (7.23) because $v$ depends on $r$; (7.23) follows from the non-integrable substitution $dr\to dr+v(r)\,dt$ in $-c^2dt^2+dr^2+\dots$. A genuine coordinate transformation of flat spacetime cannot generate Schwarzschild curvature (Kretschmann scalar $48G^2M^2/(c^4r^6)\neq0$), and the frame is not "uniformly accelerated".
+- [Correctness] "the Langevin metric ... is evidently not special or general relativity": it is the Minkowski metric written in rotating coordinates (zero Riemann tensor) and is therefore a special-relativistic result; keep the claim only as an explicitly labelled author's interpretation.
+- [Simplify] Replace (7.25)–(7.26), which mix $dt$ and $dT$, by completing the square: with $dt=dT+\beta\,dr$, $\beta=v/(c^2-v^2)$, the cross term vanishes and the $dr^2$ coefficient becomes $1+v^2/(c^2-v^2)=1/(1-2GM/c^2r)$, giving (7.27) in two lines.
+- [Correctness] Notation: the text uses $R,\Omega$ while the Fig. 7.4 caption uses $r,\omega$, and (7.22) contains $dR^2$ although $R$ is constant on the loop; use one set and drop $dR^2$ or explain it as the radial coordinate.
+- [Manim] Animate infalling "raindrop" observers in Painlevé coordinates: light cones tilting inward as $r$ decreases and crossing $r=2GM/c^2$ smoothly, contrasting with Schwarzschild coordinates where the cones close up at the horizon.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/07 Einstein's General Theory of Relativity/07.07 Gravitation and Electrodynamics - A Comparison.md
+priority: low
+graph: no
+manim: no
+summary: Clear qualitative comparison of gravity and electromagnetism; the formulas are quoted without context and the induction analogy is loosely named.
+- [Simplify] "$F\propto-dA/dt$" is Faraday's induced electric field $E=-\partial A/\partial t$ (Lenz's law gives only its sign); name it that way and give the gravitational analogue in one formula.
+- [Intuition] Add a table with columns "electromagnetism" and "linearised gravity": source (charge vs mass-energy), coupling sign (like charges repel vs attract), parallel currents (attract vs repel), field self-charge (no vs yes), radiation (dipole vs quadrupole), so the many prose comparisons can be seen at once.
+- [Example] Evaluate Einstein's 1912 induction coefficient $k=3GM a/(2Rc^2)$ for a shell with $GM/(Rc^2)=10^{-6}$ to show how small the effect is ($k/a\approx1.5\times10^{-6}$).
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/07 Einstein's General Theory of Relativity/07.08 The Achievements of the GTR.md
+priority: low
+graph: no
+manim: no
+summary: Short and readable list of achievements, but Fig. 7.5 is placed here although it belongs to the gravitomagnetism note, and the ephemeris-time paragraph links GR to a Newtonian time standard.
+- [Structure] Move Fig. 7.5 (mass currents) to [[07.09 The GTR and Gravitomagnetism]], where it is discussed, and leave a link here.
+- [Simplify] The ephemeris-time paragraph implies that GR made ephemerides practical "around 1950"; ephemeris time (IAU 1952, SI second 1960–1967) was based on Newtonian solar theory, and relativistic ephemerides came later. Separate the two statements.
+- [Example] Give the GPS numbers that the GNSS sentence alludes to: $+45.7\,\mu\mathrm{s/day}$ gravitational, $-7.2\,\mu\mathrm{s/day}$ velocity, net $+38.5\,\mu\mathrm{s/day}$, about 11 km/day of ranging error if ignored.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/07 Einstein's General Theory of Relativity/07.09 The GTR and Gravitomagnetism.md
+priority: medium
+graph: yes
+manim: yes
+summary: Good qualitative introduction to frame dragging, but the potential estimate is dimensionally wrong, a field value lacks units, and the quoted experimental accuracy is wrong for Gravity Probe B.
+- [Correctness] "The potentials are of order $v/c$" should be "of order $(v/c)(GM/Rc^2)$", consistent with $B_g\sim\Omega GM/(Rc^2)$ in the next sentence.
+- [Correctness] "measured to about 5% accuracy through LAGEOS ... and in Gravity Probe-B": the GP-B frame-dragging result $37.2\pm7.2\,\mathrm{mas/yr}$ is a 19% measurement; LAGEOS analyses claim about 10%. Quote each separately.
+- [Simplify] "Attainable laboratory values of $B_g$ are no larger than about $10^{-22}$" lacks a unit; state $\mathrm{rad/s}$ and the assumed rotor ($M\sim10^3\,\mathrm{kg}$, $R\sim0.5\,\mathrm{m}$, $\Omega\sim10^3\,\mathrm{rad/s}$ gives $\sim10^{-21}$).
+- [Links] "(see the source's Section 7.10)" should be a wiki link to [[07.10 The GTR and Gravitational Waves]], which contains the GP-B calculation.
+- [Graph] Plot the orbit-averaged Lense–Thirring precession for a polar orbit, $\Omega_{LT}=GJ/(2c^2r^3)$ in mas/yr, against altitude 200–20,000 km for Earth, marking GP-B (642 km, 39 mas/yr predicted) and LAGEOS.
+- [Manim] Animate a gyroscope in polar orbit around a rotating Earth, with its spin axis slowly precessing in the direction of Earth's rotation (exaggerated), separately from the larger geodetic precession in the orbital plane.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/07 Einstein's General Theory of Relativity/07.10 The GTR and Gravitational Waves.md
+priority: medium
+graph: no
+manim: yes
+summary: The GP-B numerical estimate of $\mu_G$ and $c_g$ recomputes correctly, but the interaction formula is schematic and the note omits the far stronger direct bound on the speed of gravitational waves.
+- [Simplify] Eq. (7.28) $E=\mu_G\,\mathbf s\cdot\mathbf J/R^3$ omits the dipole angular structure $3(\mathbf s\cdot\hat r)(\mathbf J\cdot\hat r)-\mathbf s\cdot\mathbf J$; say that (7.29) is its polar-orbit average, and note that GR gives $\mu_G=G/c^2=7.4\times10^{-28}\,\mathrm{m/kg}$ for comparison with (7.30).
+- [Structure] Add the GW170817/GRB 170817A bound $-3\times10^{-15}<(c_g-c)/c<7\times10^{-16}$ next to the 20% GP-B estimate, so readers see the current constraint on $c_g$.
+- [Example] Show the unit chain used in (7.29)–(7.30): $37.2\,\mathrm{mas/yr}=5.7\times10^{-15}\,\mathrm{rad/s}$, $J=0.33MR_\oplus^2\Omega=5.9\times10^{33}\,\mathrm{kg\,m^2/s}$, $R=7.01\times10^6\,\mathrm{m}$, giving $\mu_G=2R^3\omega/J=6.7\times10^{-28}\,\mathrm{m/kg}$.
+- [Manim] Animate a ring of free test masses under a passing gravitational wave, first with $+$ then with $\times$ polarisation, to show the quadrupolar (not dipolar) nature mentioned in the first paragraph.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/07 Einstein's General Theory of Relativity/07.11 The Experimental and Observational Tests of the GTR.md
+priority: low
+graph: no
+manim: no
+summary: Short overview that lists tests without numbers; clear but thin.
+- [Example] Add a compact table of the classic tests with prediction and current precision: perihelion of Mercury ($43''$/century), solar light bending ($1.75''$; VLBI $\gamma-1\sim10^{-4}$), Cassini Shapiro delay ($\gamma-1=(2.1\pm2.3)\times10^{-5}$), Hulse–Taylor orbital decay (agreement at 0.2%), GP-B geodetic (0.3%).
+- [Links] Link "The preceding chapter" to [[06.07 A Brief Account of Experimental Tests]] and the frame-dragging remark to [[07.09 The GTR and Gravitomagnetism]].
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/07 Einstein's General Theory of Relativity/07.12 The GTR and Mach's Principle.md
+priority: medium
+graph: no
+manim: no
+summary: Valuable collection of Einstein quotations on Mach's principle, but the field equations quoted use $G_{\mu\nu}$ for the Ricci tensor, which clashes with the chapter's use of $G_{ik}$ for the Einstein tensor.
+- [Correctness] In (7.32)–(7.33) the left side is Einstein's 1918 notation, where $G_{\mu\nu}$ denotes the Ricci tensor; with the chapter's convention ($G_{ik}$ = Einstein tensor, 07.02 and 07.04) the trace-reversed right side is wrong. Write $R_{\mu\nu}$ (or state the notation change) so that (7.32) matches (7.5).
+- [Correctness] "the energy–momentum trace would then represent abnormal matter, now called the cosmological constant" is garbled: the $\lambda g_{\mu\nu}$ term acts like a source with $\rho_\Lambda=-p_\Lambda/c^2$; rephrase. Also fix the typo "Machs principle".
+- [Structure] Add dates and context in one line per quotation (1913 article, 1916 obituary, 1918 review, 1917 letter to de Sitter, 1954 letter to Pirani) as a short timeline, which makes the change of view easier to follow.
+- [Intuition] Give one concrete Machian prediction of GR, such as frame dragging inside a rotating shell, $\omega_{\mathrm{drag}}=4GM\Omega/(3Rc^2)$, to show which part of Mach's idea GR does contain.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/07 Einstein's General Theory of Relativity/07.13 The GTR and Cosmology.md
+priority: medium
+graph: yes
+manim: no
+summary: Clear presentation of the FLRW metric and the author's proposed equation, but the sign of the $\Lambda$ term does not match the stated signature and the cosmic-potential estimate is given without the integral's value.
+- [Correctness] Eq. (7.35) is written with $-\Lambda g_{\mu\nu}$ while (7.34) uses the $(-,+,+,+)$ signature, in which the standard Einstein equation is $G_{\mu\nu}+\Lambda g_{\mu\nu}=\kappa T_{\mu\nu}$ (positive $\Lambda$ repulsive); either change the sign or state that a $(+,-,-,-)$ convention is meant.
+- [Example] Evaluate the cosmic potential: $\int_0^{R}4\pi G\rho r\,dr=2\pi G\rho R^2$; with $\rho=\rho_c=3H_0^2/(8\pi G)$ and $R=c/H_0$ this gives $\tfrac34c^2$, which makes "nearly equals $c^2$" checkable.
+- [Intuition] Explain that the FLRW cosmic time $t$ is the proper time of comoving observers (the preferred matter congruence), which is compatible with local Lorentz invariance; then present the author's claim of a conflict as an interpretation.
+- [Graph] Plot $a(t)/a_0$ against $t$ for flat matter-only ($a\propto t^{2/3}$), radiation-only ($a\propto t^{1/2}$) and $\Lambda$CDM ($\Omega_m=0.31$, $\Omega_\Lambda=0.69$), $t$ from 0 to 30 Gyr, marking today, to illustrate what $a(t)$ and $H=\dot a/a$ mean.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/07 Einstein's General Theory of Relativity/07.14 The Unsolved Riddle of Inertia - The Incompleteness of the GTR.md
+priority: low
+graph: no
+manim: no
+summary: Short argumentative note that states the author's position clearly; no equations to check.
+- [Links] Link "Mach's suggestion" to [[07.12 The GTR and Mach's Principle]] and "the Machian scheme" to the Cosmic Relativity chapter that implements it.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/07 Einstein's General Theory of Relativity/07.15 What Lies Beyond the GTR.md
+priority: low
+graph: no
+manim: no
+summary: Clear statement of the author's modified equation; the figure caption uses a metric factor without the standard factor 2.
+- [Correctness] Fig. 7.7 caption and the following line give the metric factor $1-GM/(rc^2)$; the weak-field component is $g_{00}=-(1-2GM/(rc^2))$, and $1-GM/(rc^2)$ is the clock-rate factor $\sqrt{-g_{00}}$. State which one is meant.
+- [Intuition] Add the check the interpretation section asks for in one line: taking $\nabla^\mu$ of (7.36) requires $\nabla^\mu T^U_{\mu\nu}=0$ separately, which is a nontrivial condition on the cosmic tensor.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/07 Einstein's General Theory of Relativity/07.16 Summary.md
+priority: low
+graph: no
+manim: no
+summary: Adequate chapter summary of the author's arguments; no change needed beyond links.
+- [Links] Add wiki links to the summarised notes (07.05.01, 07.06, 07.09, 07.10, 07.13, 07.15) and to [[08.00 Our Universe]] for "the next chapter".
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/08 Our Universe/08 References.md
+priority: low
+graph: no
+manim: no
+summary: Complete reference list, but three entries carry wrong years or volume numbers.
+- [Correctness] Ref 12 (Sandage, ApJ 127, 513) is from 1958, not 1948 (08.02.03 itself says 1958); ref 9 (Eddington, MNRAS 90, 668) is from 1930, not 1931; ref 8 (Lemaître translation) is MNRAS 91, 483–490 (1931), not volume 90.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/08 Our Universe/08.00 Our Universe.md
+priority: low
+graph: no
+manim: no
+summary: Short chapter abstract; no change needed.
+- [Links] Add a list of links to the chapter's sections (08.01–08.09) so the hub is navigable.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/08 Our Universe/08.01 Our Physical Universe Before 1930.md
+priority: high
+graph: yes
+manim: no
+summary: Engaging historical overview, but it contains several factual errors about telescopes, Einstein's modified Poisson equation and de Sitter's model, and keeps a field equation without its factor $1/2$.
+- [Correctness] Telescopes: the 100-inch Hooker telescope (1917) and the 60-inch (1908) were on Mt. Wilson, not Mt. Palomar (the 200-inch came to Palomar in 1948); Herschel's largest reflector (1789) had a 48-inch aperture. The disclaimer "The source states" does not fix the error; correct the facts.
+- [Correctness] "adding a constant potential to Poisson's equation" is wrong; Einstein added a term $-\lambda\phi$, $\nabla^2\phi-\lambda\phi=4\pi G\rho$, as 08.03 states, which then admits a constant-potential solution.
+- [Correctness] "de Sitter soon showed that the Einstein Universe expands even without matter": de Sitter's 1917 solution is a different, empty model with $\Lambda$; it was originally presented in static coordinates and its expanding interpretation came later (Lemaître 1925, Robertson 1928). Also write (8.1) and the 1915 form with $\tfrac12g_{ik}R$ in the text instead of keeping the omission with a callout.
+- [Correctness] "$\Lambda=\kappa\rho/2=1/R^2$" with $\kappa=8\pi G/c^4$ and mass density needs $\kappa\rho c^2/2$ for units of $\mathrm{m^{-2}}$.
+- [Simplify] Update "present theoretical age 14 billion" to $13.8\times10^9$ yr (Planck 2018) and give the size ratio concretely (about $1\,\mathrm{Mpc}$ against a comoving horizon radius of about $14\,\mathrm{Gpc}$).
+- [Graph] Plot $a(t)$ for the three Friedmann cases $k=+1,0,-1$ with matter only (parametric cycloid for $k=+1$, $t^{2/3}$ for $k=0$, open solution for $k=-1$), on common axes normalised to the same present $H_0$, to illustrate the finite and infinite Universes mentioned.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/08 Our Universe/08.02 The Universe as Observed.md
+priority: low
+graph: no
+manim: no
+summary: Short and clear motivation, but the quoted fractional change over 5000 years is off by a factor of about three.
+- [Correctness] Over $5000\,\mathrm{yr}$ the scale factor changes by $H_0\Delta t\approx5000/(1.4\times10^{10})\approx3.6\times10^{-7}$, about one part in three million, not one part in ten million.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/08 Our Universe/08.02.01 The Large Scale Distribution of Matter.md
+priority: low
+graph: yes
+manim: no
+summary: Clear qualitative summary of the matter content, but the baryon density statement contradicts itself.
+- [Correctness] "below $10^{-27}\,\mathrm{kg/m^3}$, about one hydrogen atom per cubic metre": one H atom per $\mathrm{m^3}$ is $1.7\times10^{-27}\,\mathrm{kg/m^3}$, above the quoted bound; the Planck baryon density $\Omega_b\rho_c\approx4.2\times10^{-28}\,\mathrm{kg/m^3}$ corresponds to about 0.25 H atoms per $\mathrm{m^3}$.
+- [Example] Derive the numbers from $\rho_c=3H_0^2/(8\pi G)\approx8.5\times10^{-27}\,\mathrm{kg/m^3}$ ($H_0=67.4$) with $\Omega_b=0.049$, $\Omega_c=0.26$, giving $\rho_m\approx2.6\times10^{-27}\,\mathrm{kg/m^3}$, which supports the quoted "about $3\times10^{-27}$".
+- [Graph] Add a simple bar or pie chart of the energy budget today (dark energy 69%, dark matter 26%, baryons 4.9%, neutrinos <0.3%, photons 0.005%), so the reader sees why photons and neutrinos are negligible.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/08 Our Universe/08.02.02 The Expansion of the Universe.md
+priority: medium
+graph: no
+manim: yes
+summary: Good history of the discovery of expansion, but the Cepheid mechanism is stated backwards and Lemaître's redshift relation is given as an exact velocity relation.
+- [Correctness] "the period was inversely related to the 'breathing' star's size": larger, more luminous Cepheids have longer periods (pulsation period $\propto(G\bar\rho)^{-1/2}$, lower mean density for larger stars), which is why period indicates luminosity. Also Leavitt's Cepheids were in the Small Magellanic Cloud, a fact that made them all lie at a common distance.
+- [Correctness] Lemaître's result is $a_o/a_e=1+z$ with $z$ the redshift; $1+v/c$ holds only for $v\ll c$. Write $1+z$ and give the low-velocity Doppler limit separately, together with the fractional form $\delta\nu/\nu=-v/c$ in the text instead of the callout.
+- [Simplify] "apparent luminosity $L=L_0/(4\pi d^2)$" is a flux (W/m²) and should not share the symbol and name of a luminosity (W); use $F$ for flux.
+- [Manim] Animate a uniformly expanding grid of galaxies seen from two different galaxies, showing that each observer sees recession speed proportional to distance (Hubble's law with no centre).
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/08 Our Universe/08.02.03 The Velocity-Distance Relation from Observations.md
+priority: medium
+graph: yes
+manim: no
+summary: Clear historical account with useful reconstructed plots and a correct Hubble-time computation, but the Palomar location and the modern $H_0$ values are wrong or outdated.
+- [Correctness] "a new 200-inch telescope, described in the source as at Mt. Wilson of the Palomar observatory": the 200-inch Hale telescope is on Mt. Palomar (Palomar Observatory); correct the text.
+- [Correctness] Modern values are outdated: SH0ES gives $73.0\pm1.0\,\mathrm{km/(s\,Mpc)}$ and Planck 2018 $67.4\pm0.5\,\mathrm{km/(s\,Mpc)}$; the quoted $\pm4$ and $\pm3$ hide the 5σ "Hubble tension" that this paragraph should mention.
+- [Simplify] "'standard flux' gravitational waves" should be "standard sirens", the established term; give the GW170817 value $H_0=70^{+12}_{-8}\,\mathrm{km/(s\,Mpc)}$.
+- [Graph] Add a third panel: modern Hubble diagram schematic, $v=H_0d$ for $H_0=67.4$ and $73.0$ over $d=0$–$500\,\mathrm{Mpc}$, with Hubble's 1929 slope 530 for comparison, to show the factor of about 7 revision.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/08 Our Universe/08.03 Einstein's Cosmological Constant.md
+priority: medium
+graph: yes
+manim: no
+summary: Clear derivation of the static Einstein Universe from the modified Poisson equation; the formulas are right in Einstein's units but the SI factors and the stability argument are missing.
+- [Correctness] Eq. (8.6) mixes $\kappa=8\pi G/c^4$ with mass density $\rho$; in SI it should read $\lambda=\kappa\rho c^2/2=4\pi G\rho/c^2=1/R^2$, which also lets the reader evaluate $R$ for a given density.
+- [Example] Evaluate the Einstein radius for $\rho=3\times10^{-27}\,\mathrm{kg/m^3}$: $R=c/\sqrt{4\pi G\rho}\approx1.9\times10^{26}\,\mathrm{m}\approx6\,\mathrm{Gpc}$, showing that the static model needs a Universe of roughly observable size.
+- [Intuition] Explain the instability Eddington found: with $\ddot a/a=-\tfrac{4\pi G}{3}\rho+\tfrac{\Lambda c^2}{3}$ and $\rho\propto a^{-3}$, a small increase of $a$ lowers $\rho$ and makes $\ddot a>0$, so the expansion runs away.
+- [Graph] Plot the effective potential or the acceleration $\ddot a$ against $a/a_E$ for the Einstein static model ($a/a_E\in[0.5,2]$), showing the unstable equilibrium at $a=a_E$.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/08 Our Universe/08.03.01 The Cosmological Principle and the Expansion.md
+priority: high
+graph: yes
+manim: yes
+summary: The derivation (8.12)–(8.14) of the Friedmann equation is correct and nicely compact, but several printed equations are left wrong with callouts, the $\Lambda$ term disappears between (8.14) and (8.15), and the Milne-model statement is outdated.
+- [Correctness] Eq. (8.8) prints $f^2(t)\,d\Sigma^2$; it must be $f^2(r)\,d\Sigma^2$ as the following sentence defines. Fix it in the text rather than with a callout, and use one metric signature for (8.7) and (8.2).
+- [Correctness] Eq. (8.9): $\ddot V/V=3\ddot a/a+6(\dot a/a)^2$ for $V\propto a^3$, so the identification $\ddot V/V=3\ddot a/a$ is false as written; state that the Baez–Bunn relation applies to a small ball of test particles initially at rest relative to each other, for which the result is $3\ddot a/a$. Also write $E=\rho Vc^2$ consistently with (8.10).
+- [Correctness] Eqs. (8.15)–(8.16) drop the $\Lambda c^2/3$ terms that (8.12) and (8.14) contain; add them, otherwise the later dark-energy discussion (8.03.03) has no equation to refer to.
+- [Correctness] "this model is not entirely excluded by observations": the empty Milne model ($\Omega_k=1$) is excluded by CMB and BAO data, which give $|\Omega_k|\lesssim0.002$; update the statement.
+- [Graph] Plot $H(t)$ or $a(t)$ for the Milne model ($a\propto t$), Einstein–de Sitter ($a\propto t^{2/3}$) and $\Lambda$CDM, all normalised to the same $H_0$, over $t=0$–$30\,\mathrm{Gyr}$, to show how the age $T_0=1/H_0$ of the Milne model compares with $\tfrac23H_0^{-1}$ and $0.95H_0^{-1}$.
+- [Manim] Animate Fig. 8.3: a uniform grid of galaxies scaling by $a(t)$, with velocity arrows proportional to distance drawn from two different chosen galaxies, showing that $v=Hd$ holds from every point.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/08 Our Universe/08.03.02 The Concept of a Critical Density.md
+priority: medium
+graph: no
+manim: no
+summary: Short and clear in concept, but the critical-density formula is printed without its factor 3 although the quoted number already uses it.
+- [Correctness] Replace $\rho_c=H^2/(8\pi G)$ by $\rho_c=3H^2/(8\pi G)$ in both places; the quoted $9\times10^{-27}\,\mathrm{kg/m^3}$ is the value of the correct formula ($H_0=70$ gives $9.2\times10^{-27}$; the printed formula would give $3\times10^{-27}$), so the callout's "numerical estimate retained" should go.
+- [Correctness] "For $\rho>\rho_c$ the model ... eventually ... collapses" holds only for $\Lambda=0$; with the observed $\Lambda>0$ a closed model can expand forever. Add the condition in the text.
+- [Example] Convert $\rho_c$ to particles: $9\times10^{-27}\,\mathrm{kg/m^3}\approx5$ hydrogen atoms per $\mathrm{m^3}$, a memorable scale.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/08 Our Universe/08.03.03 The Measurements of the Deceleration Parameter.md
+priority: medium
+graph: yes
+manim: no
+summary: Useful overview of $q_0$ and its measurement; the numerical example is right, but the matter-only relations are printed wrong and patched only by a callout.
+- [Correctness] Replace "$2\ddot a/a=8\pi G\rho/3=kc^2/a^2-H_0^2$" and "$q_0=1+kc^2/(H_0^2a^2)$" by the correct matter-only results $\ddot a/a=-4\pi G\rho/3$ and $q_0=\Omega_m/2=\tfrac12[1+kc^2/(H_0^2a^2)]$ in the text itself.
+- [Correctness] "Adding matter at half the critical density can give $q=0$, mimicking a flat matter-free Universe" is unclear: $q_0=\Omega_m/2-\Omega_\Lambda=0$ needs $\Omega_\Lambda=\Omega_m/2$ (e.g. $\Omega_m=0.5$, $\Omega_\Lambda=0.25$, not flat), and the "flat matter-free" model with $q=0$ does not exist ($k=0$ with $\rho=0$ and $\Lambda=0$ is static Minkowski); rephrase as "mimicking the empty Milne model".
+- [Simplify] Give the general formula $q_0=\tfrac12\sum_i\Omega_i(1+3w_i)$ once; the $70/30$ example ($q_0=-0.55$) and the $\Lambda$-only case ($q_0=-1$) then follow in one line each.
+- [Graph] Plot $q(z)=\tfrac{\Omega_m(1+z)^3/2-\Omega_\Lambda}{\Omega_m(1+z)^3+\Omega_\Lambda}$ for $\Omega_m=0.31$, $\Omega_\Lambda=0.69$ over $z\in[0,3]$, marking the transition from deceleration to acceleration at $z\approx0.65$.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/08 Our Universe/08.04 The Reason Behind the Expansion of the Universe.md
+priority: high
+graph: no
+manim: no
+summary: The author's scalar-potential model of expansion is presented clearly, but the de Sitter limit has the wrong sign and factor, the scale factor is identified with the potential without justification, and printed formulas are left wrong with callouts.
+- [Correctness] Eq. (8.23) with $\Lambda>0$ (the sign Einstein and de Sitter used, and the sign in (8.3) and (8.21)) gives oscillating $\phi$, not exponential growth; the exponent $\sqrt{-\Lambda c^2}$ is real only for $\Lambda<0$. De Sitter's result is $H=\sqrt{\Lambda c^2/3}$ with $\Lambda>0$, so "$H=\sqrt{-\Lambda c^2}$" has both the wrong sign and a missing factor 3.
+- [Correctness] Eq. (8.24) uses $\ddot a/a=\ddot\phi/\phi$, which is not derived anywhere (no relation between $a$ and $\phi$ is given), and writes $-\Lambda/(\sqrt\Lambda)^2$ although (8.23) gives $\ddot\phi/\phi=-\Lambda c^2$ and $H^2=-\Lambda c^2$; state the assumed relation $a\propto\phi$ or drop the equation.
+- [Correctness] Fix the printed expressions in the text instead of retaining them with callouts: the caption relations need $G$ ($F/m=-(4\pi G/3)\rho a$, $\ddot a/a=-4\pi G\rho/3$) and the static potential is $\phi=-4\pi G\rho/\Lambda$.
+- [Intuition] Present the standard Newtonian explanation next to the author's view: for any comoving sphere of radius $r$, Birkhoff's theorem makes exterior matter irrelevant and gives $\ddot r=-GM(r)/r^2=-(4\pi G/3)\rho r$, which reproduces (8.16) for $p=0$; then state where the author disagrees, so readers can judge the claim "this is incorrect".
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/08 Our Universe/08.05 The Cosmic Microwave Background Radiation.md
+priority: medium
+graph: yes
+manim: no
+summary: Clear and short, with a useful dipole graph, but the CMB mass density is off by a factor of ten, the dipole speed is printed in the wrong unit, and the residual-fluctuation scale is understated.
+- [Correctness] CMB energy density is $aT^4=7.566\times10^{-16}\times2.7255^4\approx4.2\times10^{-14}\,\mathrm{J/m^3}$, i.e. $4.6\times10^{-31}\,\mathrm{kg/m^3}$, not $5\times10^{-30}\,\mathrm{kg/m^3}$; it is comparable to the starlight value quoted in the first sentence, not larger.
+- [Correctness] Write the dipole speed as $v=1.234\times10^{-3}c\approx370\,\mathrm{km/s}$ in the text itself instead of keeping "$370\,\mathrm{m/s}$" with a callout.
+- [Correctness] Fig. 8.6(b): CMB temperature anisotropies after dipole removal are not "below $50\,\mu\mathrm{K}$"; Planck maps span roughly $\pm300\,\mu\mathrm{K}$ with an rms near $100\,\mu\mathrm{K}$ ($\Delta T/T\sim10^{-5}$ on large scales); correct the band or label it as a typical large-scale amplitude.
+- [Example] Show the Wien computation $\lambda_{\max}=2.898\,\mathrm{mm\,K}/2.7255\,\mathrm{K}=1.06\,\mathrm{mm}$ (per-wavelength peak), and note that the per-frequency peak is at $160\,\mathrm{GHz}$ ($1.9\,\mathrm{mm}$), as the interpretation section hints.
+- [Graph] Add a plot of the black-body spectrum $B_\nu(T)$ for $T=2.7255\,\mathrm{K}$ over $\nu=0$–$800\,\mathrm{GHz}$, marking the peak at $160\,\mathrm{GHz}$, to support the "black-body spectrum" statement.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/08 Our Universe/08.06 The Large Scale Distribution of Matter.md
+priority: low
+graph: no
+manim: no
+summary: Short section with a good replacement figure, but the homogeneity scale is stated the wrong way round.
+- [Correctness] "nearly isotropic and homogeneous on scales below ten per cent of the Universe's size" should be "on scales above about $100\,\mathrm{Mpc}$" (a few per cent of the Hubble radius); below that scale the distribution is filamentary, as 08.02.01 says.
+- [Structure] This note shares its title with 08.02.01; rename one (e.g. "Gravitating Components of the Universe") to avoid ambiguous links.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/08 Our Universe/08.06.01 The Dark Matter.md
+priority: medium
+graph: yes
+manim: no
+summary: Good accessible account of rotation-curve and lensing evidence with a helpful M33 graph, but a few astrophysical statements are wrong.
+- [Correctness] The 21 cm line comes from cold neutral atomic hydrogen, not "hot-gas radiation"; correct the sentence.
+- [Correctness] "A galaxy typically has a central bulge containing most of its mass": in spirals the visible mass is often dominated by the disc, the total mass by the dark halo, and the example M33 is almost bulgeless; rephrase.
+- [Simplify] "The gravitational potential ... increases through the matter-filled region, then falls as $GM/r$" should speak of the magnitude of the potential or, better, of enclosed mass: $v^2=GM(r)/r$ rises while $M(r)$ grows faster than $r$ and falls as $r^{-1/2}$ once $M$ is constant.
+- [Example] Add the inference the interpretation section mentions: a flat curve $v=120\,\mathrm{km/s}$ out to $r=15\,\mathrm{kpc}$ requires $M(r)=v^2r/G\approx5\times10^{10}M_\odot$, several times the visible mass of M33.
+- [Graph] Add a plot of $M(r)=v^2r/G$ for the flat curve versus the Keplerian enclosed visible mass (constant beyond the disc), $r=0$–$50$ thousand light years, matching the axes of Fig. 8.8.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/08 Our Universe/08.06.02 The Curvature of the Universe.md
+priority: low
+graph: yes
+manim: no
+summary: Clear qualitative explanation of the standard-ruler curvature test; the flat-space $1/d$ picture should be qualified as the interpretation section says.
+- [Simplify] Introduce the angular-diameter distance $d_A$ in one sentence ($\theta=l/d_A$, with $d_A=d_C/(1+z)$ for $k=0$) so that the cartoon $\theta=l/d$ is not read as exact at cosmological distances.
+- [Graph] Plot $\theta(z)$ for a fixed ruler $l=150\,\mathrm{Mpc}$ (comoving sound horizon) in flat $\Lambda$CDM, an open model ($\Omega_k=0.3$) and a closed model ($\Omega_k=-0.3$), $z\in[0.1,1100]$ on a log axis, showing both the curvature effect and the turnover of $d_A$.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/08 Our Universe/08.06.03 The Dark Energy.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct key physics ($w=-1$, constant density, exponential expansion, acceleration from $\rho+3p/c^2<0$), but printed formulas are kept wrong with callouts and one metric statement is garbled.
+- [Correctness] Fix $p=\epsilon/(3c)$ to $p=\epsilon/3$ in the text, and write the dark-matter bound as $p_{\mathrm{dm}}<10^{-3}\rho_{\mathrm{dm}}c^2$, instead of retaining the printed forms with callouts.
+- [Correctness] "The source gives the diagonal metric entries as $(-1,-1,-1,-1)$" is not a valid Lorentzian metric; the relevant signature is $(+1,-1,-1,-1)$ (or $(-1,1,1,1)$), and with $T_{\mu\nu}=\rho_\Lambda c^2\,\mathrm{diag}(1,-1,-1,-1)$ in the first convention one reads off $p=-\rho_\Lambda c^2$.
+- [Simplify] Introduce the equation-of-state parameter $w=p/(\rho c^2)$ and the scaling $\rho\propto a^{-3(1+w)}$ from (8.11) once; matter ($w=0$), radiation ($w=1/3$) and dark energy ($w=-1$) then follow in one table.
+- [Graph] Plot $\rho_i(a)/\rho_{c,0}$ for radiation ($\propto a^{-4}$), matter ($\propto a^{-3}$) and $\Lambda$ (constant) on log-log axes for $a\in[10^{-5},10]$, marking matter–radiation equality ($a\approx3\times10^{-4}$) and matter–$\Lambda$ equality ($a\approx0.77$).
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/08 Our Universe/08.06.04 The Dark Energy and the Quantum Vacuum.md
+priority: medium
+graph: no
+manim: no
+summary: Readable argument against vacuum energy as dark energy; one definition is wrong and the size of the discrepancy is never quantified.
+- [Correctness] "Zero-point energy is quantum energy present even at zero kinetic energy" is wrong: the ground state of an oscillator has nonzero kinetic energy ($\langle T\rangle=\hbar\omega/4$); say "present even at zero temperature, in the lowest-energy state". Also write $p\approx-\rho c^2$ in the text instead of keeping the callout.
+- [Example] Quantify "too large": a Planck-scale cutoff gives $\rho_{\mathrm{vac}}\sim10^{113}\,\mathrm{J/m^3}$ against the observed $\rho_\Lambda c^2\approx6\times10^{-10}\,\mathrm{J/m^3}$, the famous $\sim10^{120}$ mismatch (about $10^{55}$ even for an electroweak cutoff).
+- [Example] Give the Casimir result $P=\pi^2\hbar c/(240d^4)$ and its size, $\approx1.3\times10^{-3}\,\mathrm{Pa}$ at $d=1\,\mu\mathrm{m}$, before discussing its interpretation.
+- [Intuition] Mention that the equivalence of the vacuum-mode and atomic van der Waals (Lifshitz) calculations is standard (e.g. Jaffe 2005), so the "double counting" argument shows the two are alternative descriptions; the stronger conclusion that electromagnetic ZPE is absent should be marked as the author's position.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/08 Our Universe/08.06.05 An Interpretation of the Critical Density.md
+priority: medium
+graph: no
+manim: no
+summary: Clear Newtonian derivation of $\rho_c$, but a mass factor is dropped and the step to $\Phi_u=-c^2$ is asserted rather than computed.
+- [Correctness] Write the energy balance as $\tfrac12m\dot r^2=\tfrac{4\pi}{3}Gm\rho r^2$ in the text instead of keeping the missing $m$ with a callout.
+- [Correctness] The Newtonian estimate does not give exactly $\Phi_u=-c^2$: for a uniform sphere of critical density and radius $c/H_0$ the potential is $-\tfrac12c^2$ at the surface and $-\tfrac34c^2$ at the centre ($2\pi G\rho_cR^2$); state that $-c^2$ is an order-of-magnitude identification, or show the calculation that gives it exactly.
+- [Intuition] Explain the shell argument with a short picture: a test galaxy at radius $r$ is like a stone thrown from a planet of mass $\tfrac43\pi r^3\rho$, and critical density corresponds to exactly the escape speed for every $r$.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/08 Our Universe/08.07 The Interpretation of the Expansion of the Universe.md
+priority: medium
+graph: no
+manim: yes
+summary: Thought-provoking discussion of "expanding space", with correct numbers for $c/H_0$ and the 0.7% stretch, but two printed inequalities and formulas are kept wrong and the collapse time is only an order of magnitude.
+- [Correctness] Write $\delta\ll d$ (not $d\ll\delta$) and $\delta E=p\,\delta p/m=(1-a_e/a_r)p^2/m$ in the text instead of retaining the printed forms with callouts.
+- [Correctness] The dust-cloud collapse time is $t_{\mathrm{ff}}=\sqrt{3\pi/(32G\rho_0)}\approx0.54/\sqrt{G\rho_0}$ (Oppenheimer–Snyder), not $1/\sqrt{G\rho_0}$; call the latter an order-of-magnitude estimate or give the exact value.
+- [Intuition] "atoms ... do not expand, for reasons inadequately explained": add the standard explanation that bound systems are held at equilibrium sizes by their internal forces, with the cosmological correction of order $(Hr/v)^2$ or $\ddot a/a\cdot r$, negligible (e.g. $\sim10^{-30}$ of the Coulomb force in an atom).
+- [Intuition] For the energy question, add that in GR there is no global energy conservation in a time-dependent spacetime without a timelike Killing vector; this is the standard answer to "Where did it go?", which the author may then dispute.
+- [Manim] Animate the Milne-type explosion: particles with random velocities from a small region, showing the distance–velocity scatter tightening into $v=d/t$ as $t$ grows, viewed from two different particles.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/08 Our Universe/08.08 The Absolute Features of Our Universe.md
+priority: low
+graph: no
+manim: no
+summary: Useful list-style summary of cosmological facts, but the neutrino share is understated and two formulas carry sign issues.
+- [Correctness] Item 3: neutrinos alone contribute at least about 0.1% of critical density ($\Omega_\nu\ge0.0013$ for the minimal mass sum $0.06\,\mathrm{eV}$, and up to about 0.5% allowed), so "Light and neutrinos contribute less than $0.1\%$" is wrong; photons contribute about 0.005%.
+- [Correctness] Item 4: write $q=-\ddot a/(aH_0^2)$ in the text instead of keeping the sign error with a callout; item 2: the Hubble law in frequency is $\delta\nu/\nu=-H d/c$ (or $z=Hd/c$).
+- [Structure] Update item 5 to the current values with the Hubble tension ($H_0=67.4\pm0.5$ from Planck, $73.0\pm1.0$ from SH0ES).
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/08 Our Universe/08.09 Summary.md
+priority: low
+graph: no
+manim: no
+summary: Adequate chapter summary; no change needed beyond links.
+- [Links] Add wiki links to the summarised notes (08.01, 08.03.01, 08.04, 08.06.05, 08.07) and to [[09.00 Time Dilation and the Twin-Paradox]] for "the next chapter".
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/09 Time Dilation and the Twin-Paradox/09 References.md
+priority: low
+graph: no
+manim: no
+summary: Complete reference list with correct data for most entries; two entries are incomplete or garbled.
+- [Correctness] Ref 3: "$25$(9–15), 47–51" is not a valid issue/page citation; give it as *Phys. Today* 25(1), 9–15 and 47–51 (1972) or whatever the actual letter pages are. Ref 4 lacks its year (Naturwissenschaften 6, 697–702, 1918).
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/09 Time Dilation and the Twin-Paradox/09.00 Time Dilation and the Twin-Paradox.md
+priority: low
+graph: no
+manim: no
+summary: Short chapter abstract with a helpful numerical check in the interpretation section.
+- [Links] Add a list of links to the chapter's sections (09.01–09.09) so the hub is navigable, and mark the abstract's last sentence as the author's thesis.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/09 Time Dilation and the Twin-Paradox/09.01 Cautionary Introduction.md
+priority: low
+graph: no
+manim: no
+summary: Clear introduction to the author's position; no equations to check, but it states contested conclusions of earlier chapters as established.
+- [Structure] "This showed that invariant relative light speed and the STR must be abandoned" and "Some results directly conflict with STR motional time dilation" should be phrased as the author's claims with links to the chapters where they are argued (Chapter 5 notes, 09.08), since mainstream analyses of the same data agree with relativity.
+- [Links] Link "Einstein's own resolution ... 1918" to the note in this chapter that discusses it (09.09) and to [[09 References]] entry 4.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/09 Time Dilation and the Twin-Paradox/09.02 Time Dilation in Lorentz-Poincare Relativity.md
+priority: low
+graph: no
+manim: no
+summary: Short and clear statement of Lorentz's absolute-frame time dilation.
+- [Simplify] Spell "FitzGerald" correctly and add the one-line derivation from the quoted transformation: for a clock at rest in the moving frame, $x=vt$ gives $t'=\gamma t(1-v^2/c^2)=t/\gamma$, so $\Delta T'=\Delta T\sqrt{1-v^2/c^2}$.
+- [Links] Replace "Section 3.6, equation (3.28)" by a wiki link to the Chapter 3 note that contains it.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/09 Time Dilation and the Twin-Paradox/09.03 Time Dilation in Einstein's STR.md
+priority: medium
+graph: yes
+manim: no
+summary: Clear account of accumulated time dilation and Einstein's 1905 statement, but it ends by suggesting that special relativity has no answer for the reunion, without showing the standard computation.
+- [Intuition] Add the standard worked example right after the Einstein quote: Earth clock inertial, traveller at $v=0.6c$ for 4 years out and 4 years back in Earth's frame; $\int d\tau=8\times0.8=6.4$ years for the traveller, and the same result in the traveller's outbound frame once the return leg's speed ($v=15c/17$) is used. This shows that (9.1) along given worldlines has a unique answer.
+- [Simplify] "Any relative spatial motion with respect to an inertial frame lowers its time rate" should add "as computed in that inertial frame"; the reunion comparison is decided by which worldline is not inertial.
+- [Graph] Plot the accumulated lag $\Delta T/T=1-\sqrt{1-v^2/c^2}$ and its approximation $v^2/(2c^2)$ against $v/c\in[0,0.9]$, showing where Einstein's second-order formula breaks down.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/09 Time Dilation and the Twin-Paradox/09.04 Langevin's Twin-Paradox.md
+priority: medium
+graph: no
+manim: yes
+summary: Well-sourced history of Langevin's examples with correct numbers (1/20000 gives $\gamma=100$, muon range 660 m), but the argument that the two descriptions are kinematically symmetric omits the change of inertial frame.
+- [Correctness] "Kinematics is symmetric except for the brief inertial, gravity-like force in B's rest frame": B has no single inertial rest frame; its worldline consists of two inertial segments, and in B's outbound and inbound frames Earth's simultaneous time jumps at the turnaround. The asymmetry is in the worldlines, not only in the force, so the "real paradox" claim does not follow from STR as stated; label it as the author's view.
+- [Example] Show Langevin's numbers: $1-v/c=1/20000$ gives $\gamma=1/\sqrt{1-v^2/c^2}\approx100$, so 2 years of traveller time correspond to 200 Earth years.
+- [Simplify] Fig. 9.1(b) caption: state explicitly that the right-hand diagram (A at rest) is not the same physical scenario as the left-hand one unless B's worldline in A's frame has the same kinks; this is the point the interpretation section makes.
+- [Manim] Animate a Minkowski diagram of the 0.6c journey with the traveller's lines of simultaneity sweeping across Earth's worldline; at the turnaround they jump, showing where Earth's "missing" ageing occurs in the traveller's description.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/09 Time Dilation and the Twin-Paradox/09.05 The Real Twin-Paradox in the STR.md
+priority: medium
+graph: no
+manim: yes
+summary: Clear statement of the author's "symmetric" twin scenario, but the conclusion that STR cannot decide the reunion readings is incorrect once the burn sequences are specified, and the subscripts are inconsistent.
+- [Correctness] "The STR cannot choose $t_A>t_B$ or $t_B>t_A$": once each frame's burn sequence is specified, both worldlines are known in any inertial frame and $\int d\tau$ gives unique reunion readings (equal if the reversals are symmetric, otherwise the clock that changed velocity more ages less). Freezing the clocks during burns does not change this, since the difference accumulates on the coasting legs.
+- [Correctness] Subscript inconsistency: "relative dilation is $\Delta T_a-\Delta T_b$" uses lowercase $a,b$ while the rest of the note uses $A,B$.
+- [Example] Give the size of the effect for the stated numbers: at $v=3000\,\mathrm{km/s}$, $v^2/(2c^2)=5\times10^{-5}$, i.e. about 43 s over 10 days, so the scenario is easily measurable.
+- [Links] Replace "(Section 5.4)" with a wiki link to the Chapter 5 note on the train and platform simultaneity argument.
+- [Manim] Animate the two worldlines in A's initial rest frame for an asymmetric burn sequence, with tick marks of proper time along each, and then the same events in B's initial frame, showing the reunion readings are identical in both descriptions.
+=== 02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/09 Time Dilation and the Twin-Paradox/09.06 The Predictions for Motional Time Dilation.md
+priority: high
+graph: yes
+manim: no
+summary: The numerical examples recompute correctly (0.43 ps/s, 10.8 ns, 3.2 ns, 1.8 ns/s, 200 ns, 62 ns), but the "STR prediction" treats the rotating Earth-surface laboratory as an inertial frame, which makes the claimed contrast with an absolute-frame theory invalid.
+- [Correctness] The STR prediction for the Mumbai–Paris trip uses only the ground-relative speed $v$ in $-v^2/(2c^2)$, treating the rotating Earth surface as inertial. Standard relativity evaluates both clocks in the non-rotating Earth-centred inertial frame, giving the transported clock's rate offset $-(v^2+2\mathbf u_r\cdot\mathbf v)/(2c^2)$ relative to the laboratory clock, the same $u_rv/c^2$ term the note attributes only to an absolute frame (this is the Hafele–Keating east–west asymmetry and the Sagnac correction). The statements "The STR says the transported clock is slower throughout" and "a westward-circling clock can run faster ... only in an absolute-frame theory" are therefore incorrect.
+- [Correctness] The interpretation section's claim that (9.3) "repeats a factor where its reciprocal is needed" is wrong for inertial relative motion: reciprocal dilation $dt=\sqrt{1-v^2/c^2}\,d\tau$ in the other clock's rest frame is the correct symmetric statement; the asymmetry appears only for non-inertial worldlines. Correct or remove that sentence.
+- [Correctness] Fix in the text the items kept with callouts: $0.78\,\mathrm{s}$ should be $0.0785\,\mathrm{s}$ ($720\,\mathrm{ns/s}\times30.3\,\mathrm{h}$), $\cos\omega t+\theta$ should be $\cos(\omega t+\theta)$ in (9.9), and (9.11) needs $\cos\phi$ in its last term. State the $\cos\phi$ used for the "19 ns" outward gain (with $\cos\phi=1$, $u_rvT/c^2-v^2T/(2c^2)=35-10.8\approx24\,\mathrm{ns}$).
+- [Correctness] "Mumbai's laboratory moves through the Universe at about $u=390\,\mathrm{km/s}$" conflicts with the CMB dipole speed of $370\,\mathrm{km/s}$ quoted in 08.05 for the solar system; use 370 km/s and give the annual modulation $\pm30\,\mathrm{km/s}$ around it.
+- [Graph] Plot the accumulated time offset of an equatorial circumnavigating clock against ground speed $v\in[0,300]\,\mathrm{m/s}$ for eastward and westward trips, $\Delta T=-L(v\pm2u_r)/(2c^2)$ with $u_r=465\,\mathrm{m/s}$ and $L=40{,}000\,\mathrm{km}$, showing that the westward clock gains in standard relativity (gravitational term omitted).

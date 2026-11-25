@@ -1,0 +1,85 @@
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/00.00 Quantum Field Theory.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/00.01 Introduction.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/01 From Quantum Mechanics to Field Theory/01.01 Physical Motivations.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/01 From Quantum Mechanics to Field Theory/01.02 Natural Units.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/01 From Quantum Mechanics to Field Theory/01.02.01 Metric Convention.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/01 From Quantum Mechanics to Field Theory/01.03 Limits of Nonrelativistic Quantum Mechanics.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/01 From Quantum Mechanics to Field Theory/01.03.01 Covariance of the Schrödinger Equation.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/01 From Quantum Mechanics to Field Theory/01.04 The Klein–Gordon Equation.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/01 From Quantum Mechanics to Field Theory/01.04.01 Derivation.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/01 From Quantum Mechanics to Field Theory/01.04.02 Plane-Wave Solutions.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/01 From Quantum Mechanics to Field Theory/01.04.03 Negative Probabilities in the Klein–Gordon Equation.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/01 From Quantum Mechanics to Field Theory/01.05 The Dirac Equation.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/01 From Quantum Mechanics to Field Theory/01.05.01 Dirac's Strategy.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/01 From Quantum Mechanics to Field Theory/01.05.02 Gamma Matrices and Clifford Algebra.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/01 From Quantum Mechanics to Field Theory/01.05.03 Dirac–Pauli Representation.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/01 From Quantum Mechanics to Field Theory/01.05.04 Plane-Wave Solutions and Spinors.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/01 From Quantum Mechanics to Field Theory/01.05.05 Probability Current of the Dirac Equation.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/01 From Quantum Mechanics to Field Theory/01.05.06 Negative Energies and the Dirac Sea.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/01 From Quantum Mechanics to Field Theory/01.06 The Klein Paradox.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/01 From Quantum Mechanics to Field Theory/01.06.01 Formulation.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/01 From Quantum Mechanics to Field Theory/01.06.02 Explicit Calculation.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/01 From Quantum Mechanics to Field Theory/01.06.03 The Klein Regime.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/01 From Quantum Mechanics to Field Theory/01.07 Limits of Relativistic Single-Particle Theory.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/01 From Quantum Mechanics to Field Theory/01.07.01 Nonlocality of Position.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/01 From Quantum Mechanics to Field Theory/01.07.02 Causality and the Propagator.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/01 From Quantum Mechanics to Field Theory/01.07.03 Nonconservation of Particle Number.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/01 From Quantum Mechanics to Field Theory/01.08 Quantization of Fields.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/01 From Quantum Mechanics to Field Theory/01.08.01 From Particles to Fields.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/01 From Quantum Mechanics to Field Theory/01.08.02 Fock Space.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/01 From Quantum Mechanics to Field Theory/01.08.03 Antiparticles.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/01 From Quantum Mechanics to Field Theory/01.08.04 The Quantized Dirac Field.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/01 From Quantum Mechanics to Field Theory/01.09 A Brief History of Quantum Field Theory.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/01 From Quantum Mechanics to Field Theory/01.09.01 The Beginnings (1925–1932).md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/01 From Quantum Mechanics to Field Theory/01.09.02 Infinities and Renormalization (1930–1950).md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/01 From Quantum Mechanics to Field Theory/01.09.03 Symmetries and Gauge Theories (1954–1973).md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/01 From Quantum Mechanics to Field Theory/01.09.04 The Standard Model and Beyond.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/01 From Quantum Mechanics to Field Theory/01.10 The Lagrangian Formalism in Field Theory.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/01 From Quantum Mechanics to Field Theory/01.10.01 Lagrangian Density and Action.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/01 From Quantum Mechanics to Field Theory/01.10.02 Noether's Theorem.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/01 From Quantum Mechanics to Field Theory/01.10.03 The Hamiltonian and Canonical Quantization.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/01 From Quantum Mechanics to Field Theory/01.11 Conclusions.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/01 From Quantum Mechanics to Field Theory/01.12 Exercises/01.12 Exercises.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/01 From Quantum Mechanics to Field Theory/01.12 Exercises/01.12.01 Natural units and conversions.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/01 From Quantum Mechanics to Field Theory/01.12 Exercises/01.12.02 Gamma-matrix properties.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/01 From Quantum Mechanics to Field Theory/01.12 Exercises/01.12.03 Negative mass squared and vacuum instability.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/01 From Quantum Mechanics to Field Theory/01.12 Exercises/01.12.04 Dirac Noether current.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/01 From Quantum Mechanics to Field Theory/01.12 Exercises/01.12.05 Klein paradox.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/01 From Quantum Mechanics to Field Theory/01.12 Exercises/01.12.06 Scalar energy–momentum tensor.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/01 From Quantum Mechanics to Field Theory/01.12 Exercises/01.12.07 Weyl spinors and chirality.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/01 From Quantum Mechanics to Field Theory/01.12 Exercises/01.12.08 Proca equation and the massless limit.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/02 Classical Field Theory/02.00 Classical Field Theory.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/02 Classical Field Theory/02.01 From Discrete Systems to the Continuum.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/02 Classical Field Theory/02.01.01 Review of Lagrangian Mechanics.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/02 Classical Field Theory/02.01.02 Oscillator Chain and Continuum Limit.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/02 Classical Field Theory/02.02 Lagrangian Density and Action Functional.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/02 Classical Field Theory/02.02.01 Basic Definitions.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/02 Classical Field Theory/02.02.02 Lorentz Covariance.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/02 Classical Field Theory/02.03 Euler–Lagrange Equations for Fields.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/02 Classical Field Theory/02.03.01 Systematic Derivation.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/02 Classical Field Theory/02.03.02 Equations of Motion for the Maxwell Field.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/02 Classical Field Theory/02.04 Hamiltonian Formalism for Fields.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/02 Classical Field Theory/02.04.01 Conjugate Momentum Density and the Hamiltonian.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/02 Classical Field Theory/02.04.02 Poisson Brackets and Symplectic Structure.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/02 Classical Field Theory/02.05 Noether's Theorem.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/02 Classical Field Theory/02.05.01 Continuous Symmetries and Conservation Laws.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/02 Classical Field Theory/02.05.02 U(1) Symmetry and Charge Conservation.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/02 Classical Field Theory/02.05.03 Translations and the Energy–Momentum Tensor.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/02 Classical Field Theory/02.05.04 Rotations and Angular Momentum.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/02 Classical Field Theory/02.06 Energy–Momentum Tensor.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/02 Classical Field Theory/02.06.01 Limits of the Canonical Tensor.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/02 Classical Field Theory/02.06.02 The Belinfante–Rosenfeld Tensor.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/02 Classical Field Theory/02.07 Examples of Classical Field Theories.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/02 Classical Field Theory/02.07.01 The Real Scalar Klein–Gordon Field.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/02 Classical Field Theory/02.07.02 The Complex Scalar Field.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/02 Classical Field Theory/02.07.03 The Electromagnetic Field.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/02 Classical Field Theory/02.08 The Lorentz Group and Its Representations.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/02 Classical Field Theory/02.08.01 Algebraic Structure of the Lorentz Group.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/02 Classical Field Theory/02.08.02 Decomposition and Representations.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/02 Classical Field Theory/02.08.03 Fundamental Representations.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/02 Classical Field Theory/02.08.04 Transformation of Fields.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/02 Classical Field Theory/02.09 Discrete CPT Symmetry.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/02 Classical Field Theory/02.10 Summary.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/02 Classical Field Theory/02.11 Exercises/02.11 Exercises.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/02 Classical Field Theory/02.11 Exercises/02.11.01 Proca field equations.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/02 Classical Field Theory/02.11 Exercises/02.11.02 O(N) Noether currents.md

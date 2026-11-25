@@ -1,0 +1,29 @@
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.0 Chapter introduction.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.1 Schwarzschild black hole.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.1.1 Birkhoff's theorem.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.1.10 Bifurcation two-sphere.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.1.2 Kruskal coordinates.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.1.3 Eddington-Finkelstein coordinates.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.1.4 Painlevé-Gullstrand coordinates.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.1.5 Penrose-Carter diagram.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.1.6 Event horizon.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.1.7 Apparent horizon.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.1.8 Distinction between event and apparent horizons -  Vaidya spacetime.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.1.9 Killing horizon.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.2 Reissner-Nordström black hole.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.2.1 Derivation of the Reissner-Nordström solution.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.2.2 Kruskal coordinates.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.2.3 Radial observers in Reissner-Nordström spacetime.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.2.4 Surface gravity.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.3 Kerr black hole.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.3.1 The Kerr metric.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.3.10 Surface gravity.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.3.11 Bifurcation two-sphere.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.3.12 Smarr's formula.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.3.13 Variation law.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.3.2 Dragging of inertial frames -  ZAMOs.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.3.3 Static limit -  static observers.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.3.4 Event horizon -  stationary observers.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.3.5 The Penrose process.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.3.6 Principal null congruences.md
+02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.3.7 Kerr-Schild coordinates.md

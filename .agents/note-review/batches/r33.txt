@@ -1,0 +1,115 @@
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/02 Classical Field Theory/02.11 Exercises/02.11.03 Maxwell equations and energy–momentum tensor.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/02 Classical Field Theory/02.11 Exercises/02.11.04 Derrick scaling argument.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/02 Classical Field Theory/02.11 Exercises/02.11.05 Chern–Simons gauge variation.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/02 Classical Field Theory/02.11 Exercises/02.11.06 Electromagnetic duality and Bianchi identity.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/02 Classical Field Theory/02.11 Exercises/02.11.07 Lorentz algebra.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/02 Classical Field Theory/02.11 Exercises/02.11.08 Two-dimensional Thirring model.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/03 Quantization of the Scalar Field/03.00 Quantization of the Scalar Field.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/03 Quantization of the Scalar Field/03.01 Canonical Quantization.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/03 Quantization of the Scalar Field/03.01.01 From Poisson Brackets to Commutators.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/03 Quantization of the Scalar Field/03.01.02 The Real Scalar Field and the Klein–Gordon Equation.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/03 Quantization of the Scalar Field/03.02 Quantization of the Real Scalar Field.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/03 Quantization of the Scalar Field/03.02.01 Plane-Wave Expansion.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/03 Quantization of the Scalar Field/03.02.02 Creation and Annihilation Operators.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/03 Quantization of the Scalar Field/03.02.03 Canonical Commutation Relations.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/03 Quantization of the Scalar Field/03.02.04 Verification of the Canonical Relations.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/03 Quantization of the Scalar Field/03.03 Fock Space and Bose–Einstein Statistics.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/03 Quantization of the Scalar Field/03.03.01 The Vacuum and Single-Particle States.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/03 Quantization of the Scalar Field/03.03.02 The Number Operator and n-Particle States.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/03 Quantization of the Scalar Field/03.03.03 Bose–Einstein Statistics.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/03 Quantization of the Scalar Field/03.03.04 Fock Space.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/03 Quantization of the Scalar Field/03.04 Hamiltonian Operator and Normal Ordering.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/03 Quantization of the Scalar Field/03.04.01 Hamiltonian Operator in the Variables a and a†.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/03 Quantization of the Scalar Field/03.04.02 Zero-Point Energy.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/03 Quantization of the Scalar Field/03.04.03 Normal Ordering.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/03 Quantization of the Scalar Field/03.04.04 The Casimir Effect.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/03 Quantization of the Scalar Field/03.05 The Complex Scalar Field.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/03 Quantization of the Scalar Field/03.05.01 Lagrangian Density and U(1) Symmetry.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/03 Quantization of the Scalar Field/03.05.02 Mode Expansion and Operators.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/03 Quantization of the Scalar Field/03.05.03 The Charge Operator.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/03 Quantization of the Scalar Field/03.06 Microcausality.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/03 Quantization of the Scalar Field/03.06.01 Causality in Quantum Field Theory.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/03 Quantization of the Scalar Field/03.06.02 The Pauli–Jordan Function.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/03 Quantization of the Scalar Field/03.06.03 Microcausality of the Scalar Field.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/03 Quantization of the Scalar Field/03.07 Propagators of the Scalar Field.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/03 Quantization of the Scalar Field/03.07.01 Definitions.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/03 Quantization of the Scalar Field/03.07.02 Retarded and Advanced Propagators.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/03 Quantization of the Scalar Field/03.07.03 Time Ordering.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/03 Quantization of the Scalar Field/03.07.04 The Feynman Propagator.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/03 Quantization of the Scalar Field/03.07.05 Fourier Representation.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/03 Quantization of the Scalar Field/03.07.06 The iε Prescription.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/03 Quantization of the Scalar Field/03.07.07 Integration Contour in the Complex Plane.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/03 Quantization of the Scalar Field/03.07.08 Δ_F as a Green's Function.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/03 Quantization of the Scalar Field/03.07.09 Physical Interpretation.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/03 Quantization of the Scalar Field/03.08 Covariant Form of the Propagators.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/03 Quantization of the Scalar Field/03.08.01 Covariant Commutator.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/03 Quantization of the Scalar Field/03.08.02 Relations between the Propagators.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/03 Quantization of the Scalar Field/03.09 Worked Examples.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/03 Quantization of the Scalar Field/03.10 Källén–Lehmann Representation.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/03 Quantization of the Scalar Field/03.11 Exercises/03.11 Exercises.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/03 Quantization of the Scalar Field/03.11 Exercises/03.11.01 Mode-operator commutators.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/03 Quantization of the Scalar Field/03.11 Exercises/03.11.02 Hamiltonian in mode operators.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/03 Quantization of the Scalar Field/03.11 Exercises/03.11.03 Momentum operator.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/03 Quantization of the Scalar Field/03.11 Exercises/03.11.04 Spatial translations.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/03 Quantization of the Scalar Field/03.11 Exercises/03.11.05 Complex-scalar U(1) charge.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/03 Quantization of the Scalar Field/03.11 Exercises/03.11.06 Explicit microcausality.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/03 Quantization of the Scalar Field/03.11 Exercises/03.11.07 Massless Feynman propagator.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/03 Quantization of the Scalar Field/03.11 Exercises/03.11.08 Retarded scalar propagator.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/03 Quantization of the Scalar Field/03.11 Exercises/03.11.09 Lorentz Noether current.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/03 Quantization of the Scalar Field/03.11 Exercises/03.11.10 Coherent-state particle number.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/03 Quantization of the Scalar Field/03.12 Summary.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.00 The Dirac Field.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.01 The Dirac Equation and Its Solutions.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.01.01 Derivation and Algebraic Structure.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.01.02 Dirac–Pauli Representation.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.01.03 Plane-Wave Solutions.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.01.04 Normalization Products and Orthogonality Relations.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.01.05 Completeness Relations (Spin Sum).md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.02 Lagrangian and Conjugate Momenta.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.02.01 Lagrangian Density.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.02.02 Conjugate Momenta.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.02.03 Hamiltonian Density.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.03 Canonical Quantization and Anticommutation Relations.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.03.01 The Attempt with Commutators.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.03.02 The Spin–Statistics Theorem.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.03.03 Canonical Anticommutation Relations.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.04 Mode Expansion and Creation and Annihilation Operators.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.04.01 Field Expansion.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.04.02 Anticommutation Relations of the Operators.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.05 Fock Space and the Pauli Exclusion Principle.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.05.01 Structure of Fock Space.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.05.02 The Pauli Exclusion Principle as an Algebraic Consequence.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.05.03 Number Operators.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.06 Hamiltonian Operator and Charge Operator.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.06.01 Hamiltonian Operator in Mode Variables.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.06.02 The Noether Current and Charge.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.06.03 The Four-Momentum Vector.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.07 The Dirac Propagator.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.07.01 Definition and Structure.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.07.02 Calculation of the Propagator.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.07.03 Momentum Representation.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.07.04 Equation Satisfied by the Propagator.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.08 Discrete Symmetries - C, P, T.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.08.01 Parity (P).md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.08.02 Charge Conjugation (C).md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.08.03 Time Reversal (T).md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.08.04 The CPT Theorem.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.09 Covariant Bilinear Forms.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.09.01 Classification by the Lorentz Group.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.09.02 Fierz Identities.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.09.03 Current Density and Global Symmetries.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.10 Chirality, Helicity, and Weyl Spinors.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.10.01 Chiral Projectors.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.10.02 The Dirac Equation in Chiral Form.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.10.03 Helicity and Chirality.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.10.04 The Majorana Field.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.11 Traces of Gamma Matrices.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.11.01 General Properties of the Trace.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.11.02 Fundamental Identities for Contractions.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.11.03 Traces of Products of Gamma Matrices.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.12 Examples of Trace Calculations.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.13 Normal Ordering and Wick's Theorem for Fermions.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.13.01 Fermionic Normal Ordering.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.13.02 Wick Contractions.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.13.03 Wick's Theorem for Fermions.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.14 Connection to Quantum Electrodynamics.md

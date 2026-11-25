@@ -1,0 +1,46 @@
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/02 Space and time of our fundamental theories/02.06 Space and Time in the Factual Universe.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/02 Space and time of our fundamental theories/02.07 Philosopher's Space and Time.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/02 Space and time of our fundamental theories/02.08 Space, Time, and the Principle of Relativity.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/02 Space and time of our fundamental theories/02.09 Summary.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/03 Electrodynamics, light and relativity/03 References.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/03 Electrodynamics, light and relativity/03.00 Electrodynamics, Light and Relativity.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/03 Electrodynamics, light and relativity/03.01 Experiments to Determine the Speed of Light.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/03 Electrodynamics, light and relativity/03.01.01 Roemer's Method.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/03 Electrodynamics, light and relativity/03.01.02 Michelson's Measurements.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/03 Electrodynamics, light and relativity/03.02 The Ether - The Medium for the Propagation of the EM Waves.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/03 Electrodynamics, light and relativity/03.03 Stellar Aberration.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/03 Electrodynamics, light and relativity/03.04 The Speed of Light in Moving Media - Fresnel Drag.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/03 Electrodynamics, light and relativity/03.05 The Doppler Effect.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/03 Electrodynamics, light and relativity/03.06 Experiments Designed to Detect the Stationary Ether.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/03 Electrodynamics, light and relativity/03.07 The Trouton-Noble Experiment.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/03 Electrodynamics, light and relativity/03.08 The Birth of a New Theory of Relativity.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/03 Electrodynamics, light and relativity/03.09 Experiments on the Unipolar Induction.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/03 Electrodynamics, light and relativity/03.10 The Principle of Relativity and the Theories of Relativity.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/03 Electrodynamics, light and relativity/03.11 Summary.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/04 The special theory of relativity and its empirical foundations/04 References.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/04 The special theory of relativity and its empirical foundations/04.00 The Special Theory of Relativity and Its Empirical Foundations.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/04 The special theory of relativity and its empirical foundations/04.01 Einstein's Motivations for a Theory of Relativity.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/04 The special theory of relativity and its empirical foundations/04.02 The Lorentz Transformations.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/04 The special theory of relativity and its empirical foundations/04.03 The Physical Results of the Special Theory of Relativity.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/04 The special theory of relativity and its empirical foundations/04.03.01 The Doppler Effect in the STR.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/04 The special theory of relativity and its empirical foundations/04.03.02 The Unipolar Phenomena and the STR.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/04 The special theory of relativity and its empirical foundations/04.03.03 Einstein's STR and Thermodynamics.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/04 The special theory of relativity and its empirical foundations/04.03.04 The Empirical Status of the Light Hypothesis.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/04 The special theory of relativity and its empirical foundations/04.04 The General Nature of Experimenters' Interpretations.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/04 The special theory of relativity and its empirical foundations/04.05 The Special Theory of Relativity and Accelerated Frames.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/04 The special theory of relativity and its empirical foundations/04.06 Summary.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/05 Simultaneity and the synchronisation of time/05 References.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/05 Simultaneity and the synchronisation of time/05.00 Simultaneity and the Synchronisation of Time.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/05 Simultaneity and the synchronisation of time/05.01 Introduction.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/05 Simultaneity and the synchronisation of time/05.02 Galilean Simultaneity.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/05 Simultaneity and the synchronisation of time/05.03 Einstein's Discussion of Simultaneity in the STR.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/05 Simultaneity and the synchronisation of time/05.04 Einstein's Fallacy on the Relativity of Simultaneity.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/05 Simultaneity and the synchronisation of time/05.05 H. Bergson's Critique of Einstein's Relativity of Simultaneity.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/05 Simultaneity and the synchronisation of time/05.06 The Synchronisation of Time.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/05 Simultaneity and the synchronisation of time/05.07 Summary.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/06 The Equivalence Principles/06 References.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/06 The Equivalence Principles/06.00 The Equivalence Principles.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/06 The Equivalence Principles/06.01 The Universality of Free Fall.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/06 The Equivalence Principles/06.02 The Equivalence of Inertia and Mass - The Weak Equivalence Principle.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/06 The Equivalence Principles/06.03 Galileo's Thought Experiment Proof of the UFF.md
+02 Physics/05 Relativity and Gravitation/05 Cosmic Relativity/06 The Equivalence Principles/06.04 Einstein's Equivalence Principle.md

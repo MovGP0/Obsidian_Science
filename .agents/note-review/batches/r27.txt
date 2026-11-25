@@ -1,0 +1,82 @@
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/10 Commutators and Operator Algebra/99 Exercises/06 Exercise 6.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/10 Commutators and Operator Algebra/99 Exercises/07 Exercise 7.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/10 Commutators and Operator Algebra/99 Exercises/08 Exercise 8.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/11 Unitary Operators/00 Unitary Operators.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/11 Unitary Operators/01 Unitary Operators.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/11 Unitary Operators/02 Hermitian and Unitary Operators.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/11 Unitary Operators/03 Spatial Translations and Momentum.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/11 Unitary Operators/04 Time Evolution.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/11 Unitary Operators/05 Symmetries and Conservation Laws.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/11 Unitary Operators/06 Common Errors.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/11 Unitary Operators/07 Chapter Summary.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/11 Unitary Operators/08 Exercises.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/11 Unitary Operators/99 Exercises/01 Exercise 1.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/11 Unitary Operators/99 Exercises/02 Exercise 2.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/11 Unitary Operators/99 Exercises/03 Exercise 3.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/11 Unitary Operators/99 Exercises/04 Exercise 4.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/11 Unitary Operators/99 Exercises/05 Exercise 5.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/11 Unitary Operators/99 Exercises/06 Exercise 6.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/11 Unitary Operators/99 Exercises/07 Exercise 7.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/11 Unitary Operators/99 Exercises/08 Exercise 8.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/04 Frequencies and Transformations/12 Fourier Series/00 Fourier Series.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/04 Frequencies and Transformations/12 Fourier Series/01 The Complex Form.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/04 Frequencies and Transformations/12 Fourier Series/02 The Real Form.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/04 Frequencies and Transformations/12 Fourier Series/03 Examples of Fourier Series.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/04 Frequencies and Transformations/12 Fourier Series/04 Convergence and the Gibbs Phenomenon.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/04 Frequencies and Transformations/12 Fourier Series/05 Parseval's Relation.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/04 Frequencies and Transformations/12 Fourier Series/06 Common Errors.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/04 Frequencies and Transformations/12 Fourier Series/07 Chapter Summary.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/04 Frequencies and Transformations/12 Fourier Series/08 Exercises.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/04 Frequencies and Transformations/12 Fourier Series/99 Exercises/01 Exercise 1.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/04 Frequencies and Transformations/12 Fourier Series/99 Exercises/02 Exercise 2.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/04 Frequencies and Transformations/12 Fourier Series/99 Exercises/03 Exercise 3.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/04 Frequencies and Transformations/12 Fourier Series/99 Exercises/04 Exercise 4.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/04 Frequencies and Transformations/12 Fourier Series/99 Exercises/05 Exercise 5.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/04 Frequencies and Transformations/12 Fourier Series/99 Exercises/06 Exercise 6.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/04 Frequencies and Transformations/12 Fourier Series/99 Exercises/07 Exercise 7.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/04 Frequencies and Transformations/12 Fourier Series/99 Exercises/08 Exercise 8.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/04 Frequencies and Transformations/13 Fourier Transform/00 Fourier Transform.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/04 Frequencies and Transformations/13 Fourier Transform/01 From Discrete to Continuous.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/04 Frequencies and Transformations/13 Fourier Transform/02 Basic Properties.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/04 Frequencies and Transformations/13 Fourier Transform/03 The Dirac Delta Distribution.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/04 Frequencies and Transformations/13 Fourier Transform/04 Important Transform Pairs.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/04 Frequencies and Transformations/13 Fourier Transform/05 Position-Momentum Duality.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/04 Frequencies and Transformations/13 Fourier Transform/06 Common Errors.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/04 Frequencies and Transformations/13 Fourier Transform/07 Chapter Summary.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/04 Frequencies and Transformations/13 Fourier Transform/08 Exercises.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/04 Frequencies and Transformations/13 Fourier Transform/99 Exercises/01 Exercise 1.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/04 Frequencies and Transformations/13 Fourier Transform/99 Exercises/02 Exercise 2.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/04 Frequencies and Transformations/13 Fourier Transform/99 Exercises/03 Exercise 3.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/04 Frequencies and Transformations/13 Fourier Transform/99 Exercises/04 Exercise 4.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/04 Frequencies and Transformations/13 Fourier Transform/99 Exercises/05 Exercise 5.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/04 Frequencies and Transformations/13 Fourier Transform/99 Exercises/06 Exercise 6.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/04 Frequencies and Transformations/13 Fourier Transform/99 Exercises/07 Exercise 7.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/04 Frequencies and Transformations/13 Fourier Transform/99 Exercises/08 Exercise 8.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/05 Probability and Uncertainty/14 Probability and Distributions/00 Probability and Distributions.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/05 Probability and Uncertainty/14 Probability and Distributions/01 Discrete Probability.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/05 Probability and Uncertainty/14 Probability and Distributions/02 Continuous Probability.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/05 Probability and Uncertainty/14 Probability and Distributions/03 The Normal Distribution.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/05 Probability and Uncertainty/14 Probability and Distributions/04 Chebyshev's Inequality.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/05 Probability and Uncertainty/14 Probability and Distributions/05 Conditional Probability.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/05 Probability and Uncertainty/14 Probability and Distributions/06 Common Errors.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/05 Probability and Uncertainty/14 Probability and Distributions/07 Chapter Summary.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/05 Probability and Uncertainty/14 Probability and Distributions/08 Exercises.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/05 Probability and Uncertainty/14 Probability and Distributions/99 Exercises/01 Exercise 1.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/05 Probability and Uncertainty/14 Probability and Distributions/99 Exercises/02 Exercise 2.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/05 Probability and Uncertainty/14 Probability and Distributions/99 Exercises/03 Exercise 3.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/05 Probability and Uncertainty/14 Probability and Distributions/99 Exercises/04 Exercise 4.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/05 Probability and Uncertainty/14 Probability and Distributions/99 Exercises/05 Exercise 5.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/05 Probability and Uncertainty/14 Probability and Distributions/99 Exercises/06 Exercise 6.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/05 Probability and Uncertainty/14 Probability and Distributions/99 Exercises/07 Exercise 7.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/05 Probability and Uncertainty/15 Expectation Value and Uncertainty/00 Expectation Value and Uncertainty.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/05 Probability and Uncertainty/15 Expectation Value and Uncertainty/01 Expectation Value of an Observable.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/05 Probability and Uncertainty/15 Expectation Value and Uncertainty/02 Variance and Quantum Uncertainty.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/05 Probability and Uncertainty/15 Expectation Value and Uncertainty/03 Ehrenfest's Theorem.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/05 Probability and Uncertainty/15 Expectation Value and Uncertainty/04 The Uncertainty Principle.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/05 Probability and Uncertainty/15 Expectation Value and Uncertainty/05 Spectral Distribution and Projection onto Eigenstates.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/05 Probability and Uncertainty/15 Expectation Value and Uncertainty/06 Common Errors.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/05 Probability and Uncertainty/15 Expectation Value and Uncertainty/07 Chapter Summary.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/05 Probability and Uncertainty/15 Expectation Value and Uncertainty/08 Exercises.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/05 Probability and Uncertainty/15 Expectation Value and Uncertainty/99 Exercises/01 Exercise 1.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/05 Probability and Uncertainty/15 Expectation Value and Uncertainty/99 Exercises/02 Exercise 2.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/05 Probability and Uncertainty/15 Expectation Value and Uncertainty/99 Exercises/03 Exercise 3.md

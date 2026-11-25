@@ -1,0 +1,205 @@
+=== 03 Engineering/01 Robotics/Configuration Space.md
+priority: high
+graph: yes
+manim: no
+summary: A terse list and topology table whose definition and set notation contain several errors that a reader would learn as fact.
+- [Correctness] The opening bullet "Defines the number of possible configurations" is wrong: the C-space is the set (manifold) of all configurations, and its dimension equals the [[Degrees of Freedom]]; rewrite both bullets to say this.
+- [Correctness] Torus row "$(φ₁, φ₂) ∈ S²$" and 3-torus row "$(φ₁, φ₂, φ₃) ∈ S³$" clash with the sphere row, where $S^2$ means the 2-sphere; write $S^1\times S^1 = T^2$ and $S^1\times S^1\times S^1=T^3$, and rename $S$ to $S^1$ throughout.
+- [Correctness] The callout "$S = [0,2π)$" gives an interval, which is not topologically a circle; state that $S^1$ is $[0,2\pi]$ with $0$ and $2\pi$ identified. The sphere row "$(θ, φ) ∈ [0,π)×S$" leaves out the pole at $θ=\pi$ and is only a chart, not the sphere itself; say $S^2$ is parametrized by $θ\in[0,\pi]$, $φ\in S^1$ with singular poles.
+- [Correctness] "Sphere Surface – Constant-radius orientation manifold" and "Helical Space $(x,y,z,φ)$ – Screw motion" are misleading: orientations of a rigid body form $SO(3)$, not $S^2$, and a screw (helical) joint has a 1-D C-space because translation is tied to rotation, while $(x,y,z,φ)$ is $\mathbb{R}^3\times S^1$; fix or remove these rows.
+- [Intuition] In the explicit/implicit example, the pole singularity of $(θ,φ)$ is a coordinate singularity of the sphere chart; gimbal lock is the analogous effect for Euler angles on $SO(3)$, so say "analogous to gimbal lock" and add one sentence on why the poles are bad (longitude is undefined there).
+- [Graph] Add a 3D plot of a torus parametrized by $(φ_1,φ_2)\in[0,2\pi)^2$ (radii $R=2$, $r=0.7$) with a sample 2R-arm path drawn on it next to the same path on the flat square with opposite edges identified.
+=== 03 Engineering/01 Robotics/Degrees of Freedom.md
+priority: high
+graph: no
+manim: yes
+summary: The joint table and Grübler formula are right, but the definition and the dependent-constraint discussion state the opposite of the truth and the examples do not show what the heading claims.
+- [Correctness] "If geometric or kinematic dependencies exist ... Grübler’s result overestimates mobility" is backwards: dependent constraints are counted as if independent, so Grübler subtracts too many and gives a lower bound; actual DoF $\ge$ Grübler.
+- [Correctness] The second image under "Examples for dependence of constraints" has 5 bodies (ground, 3 parallel links, coupler) and 6 revolute joints, not "6 linkages"; Grübler gives $3(5-1-6)+6=0$, but it moves with 1 DoF because the third parallel link adds a redundant constraint. State this calculation explicitly, since it is the real dependence example.
+- [Correctness] The four-bar is not an example of dependent constraints: $3(4-1-4)+4=1$ agrees with the actual mobility. Move it to a separate "worked Grübler example" subsection, and show the Stewart platform count $6(14-1-18)+(6\cdot2+6\cdot1+6\cdot3)=6$ for the third example.
+- [Correctness] The definition "required to describe the stationary state of a system" is wrong: DoF is the minimum number of real coordinates needed to specify the configuration (velocities not included); "stationary" should go. Also fix the "Wikpedia" typo in See also.
+- [Manim] Animate the parallelogram linkage of the second image: show it moving with 1 DoF while a counter displays the Grübler prediction 0, then remove the middle link and show that the count becomes 1.
+=== 03 Engineering/01 Robotics/Holonomic and Pfaffian constraints.md
+priority: high
+graph: no
+manim: no
+summary: The intuitive car example is good, but the matrix form contradicts its own claim of non-integrability and the classification of Pfaffian vs nonholonomic is muddled.
+- [Correctness] The displayed matrix uses entries $\partial g_i/\partial\theta_j$, which is the Jacobian of position constraints $g(\theta)=0$, i.e. exactly an integrable (holonomic) constraint; the text then calls this "the defining feature of Pfaffian (non-integrable) constraints". Write the general form with arbitrary rows $A_{ij}(\theta)$ and present the Jacobian case as the holonomic special case.
+- [Correctness] "Pfaffian (non-integrable)" and the closing bullet equate Pfaffian with nonholonomic; Pfaffian only means linear in velocities, $A(\theta)\dot\theta=0$, and it is holonomic iff integrable (Frobenius). Rewrite the note callout to say this.
+- [Example] Give one integrable and one non-integrable Pfaffian example side by side: a wheel rolling on a line, $\dot x - r\dot\theta=0$ (integrates to $x-r\theta=c$), versus the [[Unicycle Model]] constraint $\dot x\sin\phi-\dot y\cos\phi=0$.
+- [Structure] The note starts at H3 with no definition of configuration $\theta$ or TLDR; add a short intro that defines $\theta\in\mathbb{R}^n$ and $k$ constraints, and fix the misaligned callout markers (" >-" lines 24–28) so the example renders as one callout.
+=== 03 Engineering/01 Robotics/Reference Frame.md
+priority: low
+graph: no
+manim: no
+summary: A short stub that mixes up coordinates and frames.
+- [Simplify] Define a frame as an origin plus a set of orthonormal axes in which coordinates are measured (the coordinates do not "create" the frame), give the usual notation $\{s\}$ (space/fixed) and $\{b\}$ (body), and fix "it's" to "its" twice.
+=== 03 Engineering/01 Robotics/Task Space.md
+priority: low
+graph: no
+manim: no
+summary: A two-line placeholder.
+- [Example] Add one concrete example contrasting it with [[Work Space]]: for a planar 2R arm drawing on paper the task space is $\mathbb{R}^2$ (pen position), while the workspace is the reachable annulus $|L_1-L_2|\le r\le L_1+L_2$.
+=== 03 Engineering/01 Robotics/Unicycle Model.md
+priority: high
+graph: yes
+manim: yes
+summary: A clear verbal explanation, but the key matrix equations are broken, the model is confused with a steered car, and it references a slide figure that is not in the note.
+- [Correctness] The expansion under "Pfaffian Form" reads "$A(q)\dot{q} 0\cdot\dot\phi - \sin\phi , \dot x - \cos\phi , \dot y = 0$": it is missing "=", has the wrong sign on $\sin\phi\,\dot x$, and uses "," instead of "\,"; it should be $A(q)\dot q = 0\cdot\dot\phi + \sin\phi\,\dot x - \cos\phi\,\dot y = 0$.
+- [Correctness] The column vector $\dot q$ uses "\ " instead of "\\" as row separators, so it renders as a single row; also line 91 "aligned with (\phi)" is not in math delimiters.
+- [Correctness] The unicycle has no steering angle: its inputs are $v$ and $\omega=\dot\phi$. Add the missing equation $\dot\phi=\omega$, and either restate "Relation to the Steering Angle" in terms of curvature $\kappa=\omega/v$ or link to the kinematic bicycle (car) model, where $\dot\phi=(v/L)\tan\delta$. Remove the references to "the paths on the right" and "the slide", which point to a figure that is not in the note.
+- [Simplify] In "Eliminating the Speed" the division by $\cos\phi$ and $\sin\phi$ fails at $\phi=0,\pi/2$; derive the constraint directly as $\dot x\sin\phi-\dot y\cos\phi = v\cos\phi\sin\phi - v\sin\phi\cos\phi = 0$.
+- [Intuition] "You can reach the same position with different orientations" is also true for a holonomic planar body; the real point is that only 2 velocity directions are allowed at each instant, yet every configuration in the 3-D space $(x,y,\phi)$ can be reached (Lie bracket of drive and turn gives sideways motion).
+- [Manim] Animate a parallel-parking sequence (forward-left arc, backward-right arc, repeat) showing the heading arrow and forbidden lateral direction $\mathbf n$, ending with a net sideways displacement; add a static graph of trajectories for $v=1$ and $\omega\in\{0,\pm0.5,\pm1\}$ over $t\in[0,6]$.
+=== 03 Engineering/01 Robotics/Unified Robot Description Format.md
+priority: low
+graph: no
+manim: no
+summary: A link-only placeholder.
+- [Structure] Add a TLDR and a minimal URDF snippet (one `<link>`, one revolute `<joint>` with `<origin>`, `<axis>`, `<limit>`) and link it to [[Reference Frame]] and [[Degrees of Freedom]].
+=== 03 Engineering/01 Robotics/Work Space.md
+priority: low
+graph: yes
+manim: no
+summary: A one-line placeholder.
+- [Graph] Define the workspace as the set of end-effector positions reachable over the joint limits and add a 2D plot of a 2R arm’s workspace (annulus $|L_1-L_2|\le r\le L_1+L_2$ for $L_1=1$, $L_2=0.6$), linking it to [[Task Space]] and [[Configuration Space]].
+=== 03 Engineering/02 Signal Processing/01 Fourier Transformation/Fourier Transformation.md
+priority: high
+graph: yes
+manim: yes
+summary: Two formula tables with no prose, intuition, or worked example, and with some row and notation problems.
+- [Correctness] In the formula table the QDWT note uses "\( x[n] \)", which Obsidian does not render; use $x[n]$. The DWT row comes after QDWT and has empty formula cells; give $c_{j,k}=\langle x,\varphi_{j,k}\rangle$, $d_{j,k}=\langle x,\psi_{j,k}\rangle$ or link to [[Wavelet Transformation]].
+- [Correctness] The STFT inverse uses $C_w$ and the CWT inverse uses $C_\psi$ without defining them; add $C_w=\int|w(t)|^2dt$ and $C_\psi=\int|\hat\psi(\omega)|^2/|\omega|\,d\omega$ (the latter in the $\omega$ convention, matching integration over both signs of $a$).
+- [Structure] Add a TLDR and a short prose section explaining the transform as "correlate the signal with $e^{i2\pi ft}$ for each $f$", and explain that "Quantized DFT/DWT" are not standard transform names but DFT/DWT applied to quantized samples.
+- [Graph] Plot a rectangular pulse of width $T=1$ and its spectrum $|X(f)|=|T\,\mathrm{sinc}(fT)|$ for $f\in[-5,5]$, and a second panel with a Gaussian ↔ Gaussian pair, to show the time–bandwidth trade-off.
+- [Manim] Animate the "winding" picture: $x(t)e^{-i2\pi ft}$ traced in the complex plane while $f$ sweeps, with the center of mass jumping when $f$ matches a signal frequency.
+=== 03 Engineering/02 Signal Processing/02 Wavelet Transformation/01 Wavelets/Biorthogonal Wavelets.md
+priority: medium
+graph: no
+manim: no
+summary: A compact formula stub with inconsistent dual notation and no statement of what biorthogonality actually is.
+- [Correctness] The dual filters are written $\tilde h,\tilde g$ in the text and "(ĥ, ĝ)" in the callout; use one notation (tilde), since a hat elsewhere means a Fourier transform.
+- [Structure] State the defining biorthogonality relations $\langle\varphi(\cdot-k),\tilde\varphi(\cdot-l)\rangle=\delta_{kl}$, $\langle\psi_{j,k},\tilde\psi_{j',k'}\rangle=\delta_{jj'}\delta_{kk'}$ and the reconstruction $x=\sum\langle x,\tilde\psi_{j,k}\rangle\psi_{j,k}$; "dual moment-vanishing constraints" is not explained.
+- [Intuition] Explain why the method exists: orthogonal compactly supported wavelets cannot be symmetric (except Haar), and giving up orthogonality allows symmetric linear-phase FIR filters.
+- [Example] Name the pictured bior4.4 as the CDF 9/7 pair used in lossy JPEG 2000 (analysis 9 taps, synthesis 7 taps, 4 vanishing moments each), and mention LeGall 5/3 for lossless JPEG 2000.
+=== 03 Engineering/02 Signal Processing/02 Wavelet Transformation/01 Wavelets/Coiflet (Coif N).md
+priority: medium
+graph: no
+manim: no
+summary: A short stub whose index convention and normalization are vague and which contains invisible characters inside math.
+- [Structure] Zero-width spaces (U+200B) follow "$\frac{1}{\sqrt{2}}$" and sit inside "$C_k$"; remove them so the math renders cleanly.
+- [Simplify] "Normalization factor $\frac{1}{\sqrt2}$ applies" is unclear; state the convention explicitly (for example $\sum_k C_k=\sqrt2$ with $h_k=C_k$, or $\sum_k C_k=2$ with $h_k=C_k/\sqrt2$) so it matches the refinement equation with the $\sqrt2$ prefactor.
+- [Correctness] "Coif N" is ambiguous: "Coif6, Coif12" use the filter length $6L$, whereas PyWavelets `coifN` (and the pictured coiflet5) use $L$ with $6N$ taps; state which convention the note uses and give the vanishing moments precisely ($2L$ for $\psi$, $2L-1$ for $\varphi$ beyond $\int\varphi=1$) instead of "equal".
+- [Intuition] Explain why the scaling-function moments matter: they make $\langle f,\varphi_{j,k}\rangle\approx 2^{-j/2}f(2^{-j}k)$, so the coefficients are close to samples of the signal.
+=== 03 Engineering/02 Signal Processing/02 Wavelet Transformation/01 Wavelets/Daubechies‑20 (Db20).md
+priority: medium
+graph: no
+manim: no
+summary: The construction is sketched with a convention that is not linked to the refinement equations, and content is duplicated.
+- [Correctness] The naming convention (20 taps = 10 vanishing moments, i.e. D20) clashes with the [[Haar Wavelet (Db1)]] note title (vanishing-moment convention, where Haar = db1) and with MATLAB/PyWavelets `db20` (40 taps, 20 vanishing moments); state the convention explicitly and use it consistently across the wavelet notes.
+- [Correctness] The polynomial $a(Z)$ uses the normalization $a(1)=2$ (so $\sum a_k=2$), but the refinement equations use $h_n$ with $\sqrt2$, which needs $\sum h_n=\sqrt2$; state $h_n=a_n/\sqrt2$ and define $a(Z)=\sum_n a_nZ^n$, $p(Z)$, and its degree $A-1$.
+- [Structure] Lines 9 and 13 both say "spectral factorization yields filter taps"; merge them into one paragraph and give $g_n=(-1)^n h_{19-n}$ explicitly.
+=== 03 Engineering/02 Signal Processing/02 Wavelet Transformation/01 Wavelets/Daubechies‑4 (Db4).md
+priority: medium
+graph: yes
+manim: yes
+summary: Correct coefficients and refinement equations but no intuition, and a name that conflicts with the common library convention.
+- [Correctness] This 4-tap filter with 2 vanishing moments is `db2` in MATLAB/PyWavelets (where `db4` has 8 taps), and the Haar note calls Haar "Db1" in that vanishing-moment convention; either rename to "D4 (db2)" or add a callout explaining the two naming conventions.
+- [Example] Add a check that the coefficients satisfy $\sum h_n=\sqrt2$, $\sum h_n^2=1$, $h_0h_2+h_1h_3=0$, and that $\sum(-1)^n n\,h_n=0$ gives the second vanishing moment; this shows where the numbers come from.
+- [Graph] Plot $\varphi$ and $\psi$ obtained by the cascade algorithm on $[0,3]$ (support length 3) to replace or supplement the pasted image.
+- [Manim] Animate the cascade algorithm: start from a box function and repeatedly apply $\varphi\leftarrow\sqrt2\sum h_n\varphi(2t-n)$, showing convergence to the jagged Db4 scaling function.
+=== 03 Engineering/02 Signal Processing/02 Wavelet Transformation/01 Wavelets/Gaussian wavelets (p‑th derivative of Gaussian).md
+priority: low
+graph: yes
+manim: no
+summary: Correct and compact, but with duplicated bullets, mixed $i/j$ notation, and no normalization.
+- [Simplify] The callout repeats the frequency-domain formula with $j$ instead of $i$ and states "p vanishing moments" twice; keep one bullet each and use $i$ consistently.
+- [Intuition] Add that $p\ge1$ is needed (the Gaussian itself is not admissible), that $p=2$ is the negative of the [[Mexican Hat (Ricker - Marr)]] wavelet up to normalization, and that the spectrum peaks at $|\omega|=\sqrt p$.
+- [Graph] Plot $\psi_p(t)$ for $p=1,2,3,4$ on $t\in[-5,5]$, each normalized to unit $L^2$ norm, with a second panel of $|\hat\psi_p(\omega)|$ on $\omega\in[0,6]$ showing the peak moving to $\sqrt p$.
+=== 03 Engineering/02 Signal Processing/02 Wavelet Transformation/01 Wavelets/Haar Wavelet (Db1).md
+priority: low
+graph: yes
+manim: no
+summary: Correct definitions but no explanation of how $\varphi$ and $\psi$ are related or how the transform works.
+- [Intuition] Add the two-scale relations $\varphi(t)=\varphi(2t)+\varphi(2t-1)$ and $\psi(t)=\varphi(2t)-\varphi(2t-1)$, i.e. $h=[1,1]/\sqrt2$, $g=[1,-1]/\sqrt2$, linking to [[Father and Mother Wavelets]].
+- [Example] Work one step of the Haar DWT on $x=[4,6,10,12]$: averages $[10,22]/\sqrt2$ and details $[-2,-2]/\sqrt2$.
+- [Graph] Plot $\psi_{n,k}$ for $(n,k)=(0,0),(1,0),(1,1),(2,1)$ on $t\in[0,1]$ to show how scale and shift tile the interval.
+=== 03 Engineering/02 Signal Processing/02 Wavelet Transformation/01 Wavelets/Mexican Hat (Ricker - Marr).md
+priority: medium
+graph: yes
+manim: no
+summary: The most complete wavelet note, with correct Fourier transform and moments, but a wrong first equality, a wrong admissibility constant, wrong FWHM values, and garbled text.
+- [Correctness] "$-\frac{d^2}{dt^2}[e^{-t^2/2}] = \frac{2}{\sqrt3\pi^{1/4}}(1-t^2)e^{-t^2/2}$" is false; the left side is $(1-t^2)e^{-t^2/2}$, so write $\psi(t)=\frac{2}{\sqrt3\pi^{1/4}}\bigl(-\frac{d^2}{dt^2}e^{-t^2/2}\bigr)$.
+- [Correctness] With the stated convention $\hat f(\omega)=\int f e^{-i\omega t}dt$ and the given $\hat\psi$, $C_\psi=\int_0^\infty|\hat\psi|^2/\omega\,d\omega=\frac{8\sqrt\pi}{3}\cdot\frac12=\frac{4\sqrt\pi}{3}\approx2.363$, and this is the constant the stated inversion formula needs; $0.3761$ is $2.363/(2\pi)$, which belongs to a different convention.
+- [Correctness] The table's "Main lobe FWHM ≈2.3548 in time; ≈1.177 in frequency" uses Gaussian values ($2\sqrt{2\ln2}$, $\sqrt{2\ln2}$); for $(1-t^2)e^{-t^2/2}$ the central-lobe FWHM is ≈1.252, and the FWHM of the $|\hat\psi(\omega)|$ peak is ≈1.633.
+- [Correctness] Pasted text is garbled: "zero at ω=0\omega=0", "large ∣ω∣|\omega|" and "Derivative-of-Gaussian (DoG n_n)"; also `scipy.signal.ricker` was deprecated in SciPy 1.12 and removed in 1.15, so point to PyWavelets `mexh` instead.
+- [Graph] Plot $\psi(t)$ on $t\in[-5,5]$ and $|\hat\psi(\omega)|$ on $\omega\in[0,6]$ with the peak at $\omega=\sqrt2$ marked, plus $\psi_{a,0}$ for $a=0.5,1,2$ to show dilation.
+=== 03 Engineering/02 Signal Processing/02 Wavelet Transformation/01 Wavelets/Shannon (Sinc‑based) Wavelet.md
+priority: high
+graph: yes
+manim: no
+summary: The note gives the frequency-domain wavelet twice under two symbols, calls it time-domain, and its stated time-domain result does not match the phase factor.
+- [Correctness] The section "Mother wavelet $\psi(\omega)$" gives a frequency-domain expression and then calls it "this time-domain form"; the same expression is repeated as $\Psi(\omega)$ later, so $\psi$ means two different things in one note. Keep one frequency-domain block, labelled $\hat\psi(\omega)$ or $\Psi(\omega)$.
+- [Correctness] With the phase factor $e^{-i\omega}$, the inverse transform is the shifted function $\psi(t)=2\,\mathrm{sinc}(2(t-1))-\mathrm{sinc}(t-1)$, not $2\,\mathrm{sinc}(2t)-\mathrm{sinc}(t)$; either drop $e^{-i\omega}$ (then the unshifted form holds and is still orthonormal) or shift the time-domain formula. Also state the Fourier convention that makes the $\frac{1}{2\pi}$ prefactor consistent.
+- [Intuition] Explain the bands directly: $\hat\varphi$ is the indicator of $|\omega|\le\pi$, $\hat\psi$ the indicator of $\pi\le|\omega|\le2\pi$, so $\psi$ = (low-pass with cutoff $2\pi$) − (low-pass with cutoff $\pi$), which is exactly $2\,\mathrm{sinc}(2t)-\mathrm{sinc}(t)$.
+- [Graph] Plot $\psi(t)=2\,\mathrm{sinc}(2t)-\mathrm{sinc}(t)$ on $t\in[-8,8]$ beside $|\hat\psi(\omega)|$ (two boxes on $\pi\le|\omega|\le2\pi$) to show the ideal frequency localization versus slow $1/t$ decay in time.
+=== 03 Engineering/02 Signal Processing/02 Wavelet Transformation/Father and Mother Wavelets.md
+priority: high
+graph: yes
+manim: no
+summary: A useful intuition callout, but the transfer-function relations contain sign and conjugation errors and a mislabelled heading.
+- [Correctness] From $g_k=(-1)^kh_{N-1-k}$ it follows that $G(z)=(-1)^{N-1}z^{-(N-1)}H(-z^{-1})=-z^{-(N-1)}H(-z^{-1})$ for even $N$; check with Haar: $z^{-1}H(-z^{-1})=(z^{-1}-1)/\sqrt2=-G(z)$. On the unit circle it is $G(\omega)=-e^{-i\omega(N-1)}\overline{H(\omega+\pi)}$ (conjugate missing, sign missing).
+- [Correctness] The inverse relation "$h_k=(-1)^kg_{N-1-k}$" has the wrong sign for even $N$: inverting gives $h_k=-(-1)^kg_{N-1-k}$; with the Haar $g=[1,-1]/\sqrt2$ the note's formula gives $h_0=-1/\sqrt2$.
+- [Correctness] The heading "High-pass filter coefficients $g_k$ ↔ low-pass filter transfer function $G(z)$" should say high-pass; "Derivation" uses $g_k=(-1)^kh_{1-k}$ while the later section uses $g_k=(-1)^kh_{N-1-k}$ without saying that these are two index conventions (shift by $N-2$); also remove the zero-width spaces (U+200B) after "$h_{k}$" and inside the display "$$g_k=(−1)^k h_{1−k}$$".
+- [Correctness] The alternating-flip relation $g_k=(-1)^kh_{N-1-k}$ is the conjugate quadrature filter (CQF, Smith–Barnwell) condition; the classic QMF is $g_k=(-1)^kh_k$, which does not give orthogonal wavelets for $N>2$; rename accordingly.
+- [Graph] Plot $|H(\omega)|$ and $|G(\omega)|$ for Haar and Db4 on $\omega\in[0,\pi]$ to show the mirror symmetry about $\pi/2$ and $|H|^2+|G|^2=2$.
+=== 03 Engineering/02 Signal Processing/02 Wavelet Transformation/Wavelet Functions.md
+priority: medium
+graph: no
+manim: no
+summary: A helpful overview table, but several cells are wrong or inconsistent with the individual wavelet notes, and the source link is broken.
+- [Correctness] Shannon has a closed form $\psi(t)=2\,\mathrm{sinc}(2t)-\mathrm{sinc}(t)$, so its "Closed-form ψ(t)?" cell should be ✅, not blank.
+- [Correctness] Biorthogonal "Adjustable (e.g. 3/5, 9/7 designs)" gives filter lengths, not vanishing moments (CDF 5/3 has 2/2, CDF 9/7 has 4/4); Gaussian "Nth derivative structure (e.g. cgau family)" should be "$p$" (cgau is the separate complex Gaussian family), and "Approximate; non-orthogonal" should just be "non-orthogonal".
+- [Correctness] The Daubechies naming is mixed: Haar is "Db1" (vanishing-moment convention), while "Db4" = 4 taps and "Db20" = 20 taps (tap convention); in PyWavelets these would be db2 and db10. Add a note and make the names consistent.
+- [Links] The YouTube source ID "jnxqHcObNK" has 10 characters (IDs have 11), so the link is broken; fix or remove it.
+- [Structure] The empty H2 "Father and Mother Wavelets" should instead be a link to [[Father and Mother Wavelets]] with a one-line description.
+=== 03 Engineering/02 Signal Processing/02 Wavelet Transformation/Wavelet Transformation.md
+priority: medium
+graph: yes
+manim: yes
+summary: A clear STFT-vs-wavelet motivation that stops before the inverse, admissibility, or discrete transform.
+- [Correctness] The CWT formula lacks the complex conjugate: it should be $\psi^*\!\left(\frac{t-b}{a}\right)$ (as in [[Fourier Transformation]]), which matters for complex wavelets such as Morlet.
+- [Intuition] Quantify the trade-off with the Heisenberg box: $\Delta t\,\Delta\omega\ge\frac12$ for any window, with STFT boxes of fixed shape and wavelet boxes scaling as $a\Delta t\times\Delta\omega/a$, and relate scale to frequency ($\omega\approx\omega_0/a$).
+- [Structure] Add short sections on admissibility/inverse and on the dyadic DWT ($a=2^{-j}$, $b=k2^{-j}$) with links to [[Father and Mother Wavelets]] and [[Wavelet Functions]].
+- [Graph] Draw the time–frequency tiling: equal rectangles for the STFT next to dyadic rectangles (wide in time at low frequency, narrow at high frequency) for the wavelet transform.
+- [Manim] Animate a Mexican-hat wavelet sliding over a chirp $x(t)=\sin(2\pi(1+2t)t)$ at three scales while the scalogram $|W(a,b)|$ fills in row by row.
+=== 03 Engineering/02 Signal Processing/Signal Processing.md
+priority: medium
+graph: no
+manim: no
+summary: A broad topic hub with heavily duplicated sections, one wrong claim about FIR filters, and no links to the existing signal processing notes.
+- [Correctness] "FIR (Finite Impulse Response) – always stable, linear phase" and "FIR Filters – linear phase, stable": FIR filters are always stable, but have linear phase only when the coefficients are symmetric or antisymmetric; write "can have exactly linear phase".
+- [Structure] Merge the duplicated sections: "Basic Filters", "Filtering & Signal Shaping" and "Advanced Filters & Estimation" repeat Kalman, Wiener, matched, adaptive and notch filters; "Spectral Analysis" and "Spectral Analysis & Estimation" repeat each other; "Synchronization" repeats the carrier and timing recovery items; "Special DSP Tools" and "Other Useful DSP Techniques" overlap; "Oversampling" appears twice under Sampling with mixed tab and space indentation.
+- [Links] Link the existing notes [[Fourier Transformation]], [[Wavelet Transformation]] and [[Wavelet Functions]] from the "Transforms" list.
+- [Simplify] Small fixes: "Hanning" → Hann; "Band-stop / Notch filter – rejects a narrow band" (band-stop rejects a band, notch a narrow one); "Fractional resampling – rational factor" (rational vs arbitrary/fractional are different cases).
+=== 04 Reference/01 Lecture Collections/Kyle Kabasares Course Notes.md
+priority: low
+graph: no
+manim: no
+summary: A link index whose wiki links and heading anchors all resolve.
+- [Structure] No change needed; optionally drop repeated entries that appear under several courses (for example "From row reduction to least squares", "Least-squares algorithms#A rectangular QR factorization by hand") or mark them as shared.
+=== 04 Reference/01 Lecture Collections/Lectures by Leonard Susskind.md
+priority: low
+graph: no
+manim: no
+summary: A plain list of external playlists with no TLDR or frontmatter title.
+- [Structure] Add a quoted frontmatter title and TLDR as the skill requires, and date-check the external playlist IDs and the unsourced claim "(Part 2 was never posted as a full playlist)", since they cannot be verified from the vault.
+=== 04 Reference/02 Units and Constants/SI Base Units.md
+priority: high
+graph: no
+manim: no
+summary: A short table in which almost every "Derivation" entry and one constant are wrong by a large numerical factor or in dimension.
+- [Correctness] The unit relations leave out the defining numerical values: "$1\,\mathrm m=c\cdot1\,\mathrm s$" gives 299 792 458 m; it should be $1\,\mathrm m=\frac{c}{299\,792\,458}\cdot1\,\mathrm s$. Similarly $1\,\mathrm{kg}=\frac{h}{6.626\,070\,15\times10^{-34}}\,\mathrm{m^{-2}\,s}$, $1\,\mathrm A=\frac{e}{1.602\,176\,634\times10^{-19}}\,\mathrm{s^{-1}}$, $1\,\mathrm K=\frac{1.380\,649\times10^{-23}}{k}\,\mathrm J$; the note's "$\frac{h}{c^2}\cdot1\,\mathrm{Hz}$", "$e\cdot1\,\mathrm{Hz}$" and "$\frac hk\cdot1\,\mathrm{Hz}$" are off by those factors.
+- [Correctness] "$1\mathrm{mol}=N_A\cdot1\,\mathrm{Hz}$" is dimensionally wrong (mol vs Hz/mol); it should be $1\,\mathrm{mol}=\frac{6.022\,140\,76\times10^{23}}{N_A}$.
+- [Correctness] "$ℏ=\frac{2\pi}{h}$" is inverted; it is $\hbar=\frac{h}{2\pi}$.
+- [Correctness] The table omits the candela (7th base unit) and the defining constants $\Delta\nu_{\mathrm{Cs}}=9\,192\,631\,770\,\mathrm{Hz}$ (needed for the empty "s" row), $e=1.602\,176\,634\times10^{-19}\,\mathrm C$ (used for the ampere but not listed) and $K_{\mathrm{cd}}=683\,\mathrm{lm/W}$; also fix "Avogrado" → Avogadro.

@@ -1,0 +1,340 @@
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.3.8 The nature of the singularity.md
+priority: low
+graph: yes
+manim: yes
+summary: Short and correct transcription of the ring-singularity argument, but the oblate-spheroidal geometry behind "the point r = 0 is a disk" is left for the reader to picture.
+- [Graph] Add a 2D plot in the $x$–$z$ half-plane ($\phi=0$) of the Kerr–Schild coordinate lines: ellipses $r=\text{const}$ ($x=\sqrt{r^2+a^2}\sin\theta$, $z=r\cos\theta$) for $r/a\in\{0,0.25,0.5,1,2\}$ and hyperbolae $\theta=\text{const}$, with the disk $r=0$, $|x|\le a$ as a thick segment and the ring at $x=\pm a$ marked; this shows directly why $r=0$ is a disk and why only its rim is singular.
+- [Intuition] After "corresponds to the entire disk", add one sentence explaining that $r$ is not a radius here: surfaces of constant $r$ are confocal oblate spheroids that degenerate to the disk as $r\to0$, and $\rho^2=r^2+a^2\cos^2\theta$ vanishes only where both $r=0$ and $\cos\theta=0$.
+- [Manim] Animate an observer moving down the symmetry axis ($\theta=0$) through the disk centre: show $\rho^2=r^2+a^2$ staying positive, the observer passing through the ring, and the coordinate $r$ continuing to negative values (link forward to [[5.3.9 Maximal extension of the Kerr spacetime]]).
+- [Structure] File starts with a UTF-8 BOM; save as UTF-8 without BOM per the vault rules.
+
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.3.9 Maximal extension of the Kerr spacetime.md
+priority: medium
+graph: no
+manim: no
+summary: Faithful but terse transcription with two good native figures; one coordinate typo and unexplained figure labels make the inner-horizon patch harder to follow.
+- [Correctness] Eq. (5.75) reads "$U_-=\mp e^{\kappa_-u},\ V_+=-e^{-\kappa_-v}$"; the second coordinate must be $V_-=-e^{-\kappa_-v}$ (the metric is then written in terms of $\mathrm dU_-\,\mathrm dV_-$).
+- [Structure] Fig. 5.13 labels the dashed curves "r = r₁" without explanation; state in the caption or text what $r_1$ is (presumably the curve where one Kruskal patch is matched to the next) or relabel it if it is a transcription artefact.
+- [Simplify] Show the one-line check that $-f\,\mathrm du\,\mathrm dv=-2\kappa_+^{-2}\mathrm dU_+\mathrm dV_+$: $\mathrm dU_+\mathrm dV_+=\pm\kappa_+^2e^{\kappa_+(v-u)}\mathrm du\,\mathrm dv$ and $f\simeq\pm2e^{\kappa_+(v-u)}$, so the signs cancel; the reader currently has to reconstruct this.
+- [Intuition] Explain in one sentence why the $\theta=0$ section loses generality (the axis misses the ring singularity, so it sees $r=0$ as regular) and that this is exactly why the extension to $r<0$ is possible there.
+- [Links] Turn the plain references "Section 5.2.2", "Section 5.2.3", "Section 5.3.6" and "Section 5.7, Problem 3" into wiki links ([[5.2.2 Kruskal coordinates]], [[5.2.3 Radial observers in Reissner-Nordström spacetime]], [[5.3.6 Principal null congruences]], [[5.7 Problems#Problem 3]]).
+- [Structure] File starts with a UTF-8 BOM; save as UTF-8 without BOM.
+
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.4 General properties of black holes.md
+priority: low
+graph: no
+manim: no
+summary: Clear section hub with a short motivation and correct subchapter links.
+- [Structure] No content change needed; save without the UTF-8 BOM.
+
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.4.1 General black holes.md
+priority: medium
+graph: no
+manim: yes
+summary: Correct, compact definitions of black-hole region, event horizon, trapped surfaces and apparent horizon, but abstract and without a worked picture tying the definitions together.
+- [Intuition] Before Eq. (5.86), add a two-sentence plain-language version: "an event is inside the black hole if no signal sent from it can ever reach distant observers"; then state the formal set definition.
+- [Example] Add a short worked example using Schwarzschild in Eddington–Finkelstein coordinates: outgoing null rays $\mathrm dr/\mathrm dv=\tfrac12(1-2M/r)$ never reach $\mathscr I^+$ for $r<2M$, so $B=\{r<2M\}$ and $H=\{r=2M\}$; and point to [[5.1.8 Distinction between event and apparent horizons -  Vaidya spacetime]] for the dynamical case.
+- [Manim] Animate Vaidya-type collapse in a $(v,r)$ diagram: a null shell falling in, the event horizon (traced backwards from late times) starting to grow before the shell arrives, and the apparent horizon jumping out only when the shell crosses it; this makes the teleological nature of $H$ and the statement "the apparent horizon lies within the black-hole region" visible.
+- [Simplify] The four Penrose properties (i)–(iv) would read better as a bulleted list with one-line physical meaning each (e.g. (ii) "nothing that falls in can climb back out along the horizon").
+- [Structure] File starts with a UTF-8 BOM; save as UTF-8 without BOM.
+
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.4.2 Stationary black holes.md
+priority: medium
+graph: no
+manim: no
+summary: Correct summary of rigidity, Killing horizon, surface gravity and the Raychaudhuri consequences, but it states results without the short reasoning that would make them convincing.
+- [Simplify] Show the one-line derivation behind Eq. (5.90): with $\lambda=V/\kappa$ and $V=e^{\kappa v}$, $\mathrm d\lambda/\mathrm dv=V$, so $k^\alpha=\mathrm dx^\alpha/\mathrm d\lambda=V^{-1}\xi^\alpha$ and the nonaffine term $\kappa\xi^\alpha$ is removed.
+- [Intuition] After Eq. (5.92) add the argument explicitly: with $\theta=0$ and $\mathrm d\theta/\mathrm d\lambda=0$, Eq. (5.91) gives $\sigma^{\alpha\beta}\sigma_{\alpha\beta}+8\pi T_{\alpha\beta}k^\alpha k^\beta=0$; both terms are nonnegative (spatial shear, null energy condition), so each must vanish, giving (5.92) and (5.93) at once.
+- [Example] Give the Kerr values as a concrete check: $\Omega_H=a/(r_+^2+a^2)$ and $\kappa=(r_+-M)/(r_+^2+a^2)$, linking [[5.3.10 Surface gravity]].
+- [Links] Make "Section 5.3.10", "Section 5.5.2" and "Section 2.4.4" wiki links ([[5.3.10 Surface gravity]], [[5.5.2 Zeroth law]], [[2.4.4 Raychaudhuri's equation]]).
+- [Structure] File starts with a UTF-8 BOM; save as UTF-8 without BOM.
+
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.4.3 Stationary black holes in vacuum.md
+priority: low
+graph: no
+manim: no
+summary: Clear historical summary of the uniqueness theorems; the long 1987 quotation contains an observational statement that is now outdated.
+- [Structure] Add a short editorial callout after the Chandrasekhar quote noting that observed black-hole masses now range from about 5 to over $10^{10}$ solar masses (stellar-mass LIGO/Virgo sources up to supermassive quasar hosts), and that LIGO–Virgo ringdowns and EHT images of M87* and Sgr A* are consistent with Kerr.
+- [Simplify] Shorten the quotation (copyright and focus) to its key sentence and paraphrase the rest; the note's point is "three parameters $M$, $J$, $Q$ determine an isolated stationary hole".
+- [Intuition] Add one sentence on the main assumptions of the theorems (asymptotic flatness, regular horizon, electrovacuum exterior, and originally analyticity) so the "no hair" statement is not read as unconditional.
+- [Structure] File starts with a UTF-8 BOM; save as UTF-8 without BOM.
+
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.5 The laws of black-hole mechanics.md
+priority: low
+graph: no
+manim: no
+summary: Good motivating hub for the four laws with correct links.
+- [Structure] Add a four-row table pairing each law with its thermodynamic analogue ($\kappa\leftrightarrow T$, $A/4\leftrightarrow S$, $M\leftrightarrow E$, zeroth to third law) linking to the subchapters; also save without the UTF-8 BOM.
+
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.5.1 Preliminaries.md
+priority: medium
+graph: no
+manim: no
+summary: Correct collection of horizon basis, surface elements and the nonaffine Raychaudhuri equation, but dense and with one undefined object and one symbol clash.
+- [Correctness] "$\xi_\alpha e^\alpha_A=0=\xi^\alpha e^A_\alpha$": the object $e^A_\alpha$ is never defined; the conditions needed for the completeness relation are $\xi_\alpha e^\alpha_A=0$, $N_\alpha e^\alpha_A=0$, $N_\alpha N^\alpha=0$ and $N_\alpha\xi^\alpha=-1$ (and $\xi_\alpha\xi^\alpha=0$); state these explicitly after introducing $N^\alpha$.
+- [Correctness] Symbol clash: $\theta^A$ labels the generators while $\theta$ (mechanical colour) is the expansion in Eq. (5.97); rename the generator labels (e.g. $\vartheta^A$ or $y^A$) or add an explicit warning.
+- [Intuition] Explain the extra $\kappa\theta$ term in Eq. (5.97): $v$ is not affine, and rescaling $\theta_v=V\theta_\lambda$ with $V=e^{\kappa v}$ turns the affine Raychaudhuri equation into this form; one line makes the term less mysterious.
+- [Links] Link "Section 3.1", "Section 3.2" and "Section 2.6, Problem 8" to [[3.1 Description of hypersurfaces]], [[3.2 Integration over hypersurfaces]] and [[2.6 Problems]].
+- [Structure] File starts with a UTF-8 BOM; save as UTF-8 without BOM.
+
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.5.2 Zeroth law.md
+priority: medium
+graph: no
+manim: no
+summary: Correct and well-structured proof sketch; a few steps are compressed and the dependence on $\kappa\neq0$ is implicit.
+- [Simplify] Between (5.100) and (5.101) state the step: contracting with $\xi^\alpha$ gives $R_{\mu\nu\alpha\beta}\xi^\alpha\xi^\beta=0$ by antisymmetry in $\alpha\beta$, hence $\kappa\,\kappa_{,\alpha}\xi^\alpha=0$, so (5.101) follows only where $\kappa\ne0$; say that this assumption is being made.
+- [Simplify] Show the differentiation of Eq. (5.98) explicitly: $2\kappa\kappa_{,\gamma}=-\xi^{\alpha;\beta}\xi_{\alpha;\beta\gamma}$, then insert (5.99).
+- [Intuition] Add the physical meaning up front: the zeroth law says the black hole has a single "temperature" over its whole surface, just as a body in equilibrium does; mention that for Kerr $\kappa=(r_+-M)/(r_+^2+a^2)$ is visibly independent of $\theta$.
+- [Links] Link "Section 5.3.10", "Section 5.2.4", "Section 1.13, Problem 9" and "Section 5.7, Problems 6 and 7" to the corresponding notes and [[5.7 Problems#Problem 6]] / [[5.7 Problems#Problem 7]].
+- [Structure] File starts with a UTF-8 BOM; save as UTF-8 without BOM.
+
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.5.3 Generalized Smarr formula.md
+priority: medium
+graph: no
+manim: no
+summary: Correct derivation (I re-derived each line of the Smarr chain), but the key antisymmetry step is skipped and there is no concrete check.
+- [Simplify] In the third line of the Smarr chain, insert the step $\nabla^\alpha\xi^\beta\,\mathrm dS_{\alpha\beta}=\nabla^\alpha\xi^\beta(\xi_\alpha N_\beta-\xi_\beta N_\alpha)\mathrm dS=2\xi^{\beta;\alpha}\xi_\alpha N_\beta\,\mathrm dS$, which uses antisymmetry of $\nabla^\alpha\xi^\beta$ (Killing equation).
+- [Example] Add a Kerr check: with $\Omega_H=a/(r_+^2+a^2)$, $\kappa=(r_+-M)/(r_+^2+a^2)$, $A=4\pi(r_+^2+a^2)$, $J=aM$, show $2\Omega_HJ+\kappa A/4\pi=M$; for $a=0$ this reduces to $M=\kappa A/4\pi$ with $\kappa=1/4M$, $A=16\pi M^2$.
+- [Intuition] Explain the signs in (5.102)–(5.103): for dust at rest $(T_{\alpha\beta}-\tfrac12Tg_{\alpha\beta})n^\alpha t^\beta=\tfrac12\rho$ (Tolman mass density), and $J$ carries a minus sign because $T_{\alpha\beta}n^\alpha\phi^\beta$ is minus the angular-momentum density.
+- [Structure] Fig. 5.17 labels null infinity as "ℐ₊" and "ℐ₋" (subscripts) while the text uses $\mathscr I^\pm$ (superscripts); make them consistent.
+- [Structure] File starts with a UTF-8 BOM; save as UTF-8 without BOM.
+
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.5.4 First law.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct and complete derivation (checked term by term), but it hides the surprising teleological behaviour of the horizon expansion that the integration relies on.
+- [Graph] Plot an example solution of the linearised equation $\mathrm d\theta/\mathrm dv=\kappa\theta-8\pi\mathcal F(v)$ with a Gaussian flux $\mathcal F(v)=\mathcal F_0e^{-v^2/2w^2}$ and the boundary condition $\theta(+\infty)=0$, i.e. $\theta(v)=8\pi\int_v^\infty e^{-\kappa(v'-v)}\mathcal F(v')\,\mathrm dv'$, for $\kappa w=0.5$ and $2$ on $v/w\in[-6,6]$, together with $\mathcal F$; it shows the horizon expanding before matter arrives.
+- [Intuition] Add a sentence explaining why $\theta(v=+\infty)=0$ (and not $\theta(-\infty)=0$ alone) is the physical boundary condition: the event horizon is defined by the future, so the solution growing like $e^{\kappa v}$ must be excluded.
+- [Simplify] Note that the first-order treatment of $\mathrm d(\mathrm dS)/\mathrm dv$ inside $\oint\theta\,\mathrm dS$ uses the unperturbed area element, consistent with keeping $\mathrm d\Sigma_\alpha$ unperturbed.
+- [Example] Close with a numeric illustration: dropping mass $\delta M$ with zero angular momentum into a Schwarzschild hole gives $\delta A=32\pi M\,\delta M$, matching $A=16\pi M^2$.
+- [Structure] File starts with a UTF-8 BOM; save as UTF-8 without BOM.
+
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.5.5 Second law.md
+priority: low
+graph: no
+manim: no
+summary: Clear heuristic proof of the area theorem; brief but adequate.
+- [Simplify] Quote the focusing statement explicitly: if $\theta(\lambda_0)=\theta_0<0$ then $\theta\to-\infty$ within affine parameter $\lambda-\lambda_0\le2/|\theta_0|$ (from $\mathrm d\theta/\mathrm d\lambda\le-\tfrac12\theta^2$); this makes the contradiction concrete.
+- [Example] Add the classic application: two Schwarzschild holes of mass $M$ merging can radiate at most $2M-\sqrt2M\approx0.29\,(2M)$ of their mass, since $A_f\ge2\cdot16\pi M^2$.
+- [Links] Link "Section 2.4.5" to [[2.4.5 Focusing theorem]] and add a forward link to [[5.5.7 Black-hole thermodynamics]] where Hawking radiation violates the null energy condition.
+- [Structure] File starts with a UTF-8 BOM; save as UTF-8 without BOM.
+
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.5.6 Third law.md
+priority: medium
+graph: no
+manim: no
+summary: Good illustrative argument with correct algebra in Eq. (5.115), but the energy-condition statement is slightly misstated and the logic of the contradiction is compressed.
+- [Correctness] The weak energy condition is $T_{\alpha\beta}u^\alpha u^\beta\ge0$, not "$>0$"; correspondingly it requires $\rho\ge0$, so Eq. (5.115) should read $\ge0$ and the conclusion becomes $m(v_0)\dot\Delta(v_0)\ge0$; note that the argument is heuristic (Israel's theorem needs more than this).
+- [Simplify] Show the substitution leading to (5.115): $\rho(r_+)=\frac{1}{4\pi r_+^2}(\dot m-q\dot q/r_+)$ and $r_+=m+\sqrt{m^2-q^2}$, so $4\pi r_+^3\rho=r_+\dot m-q\dot q$; and at $v_0$ ($m=q>0$) it reduces to $m(\dot m-\dot q)$.
+- [Intuition] Explain why $\rho$ at the apparent horizon is the relevant quantity: adding charge to a nearly extremal hole requires so much electrostatic energy that the mass grows faster than the charge, the physical content of the third law.
+- [Structure] Note that the argument assumes $q>0$; for $q<0$ replace $q$ by $|q|$ in $\Delta=m-|q|$.
+- [Structure] File starts with a UTF-8 BOM; save as UTF-8 without BOM.
+
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.5.7 Black-hole thermodynamics.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct and readable, but purely qualitative; SI numbers would make the tiny Hawking temperature and huge entropy concrete.
+- [Example] Restore constants, $T_H=\hbar c^3/(8\pi GMk_B)$ and $S=k_Bc^3A/(4G\hbar)$, and give solar-mass values: $T_H\approx6.2\times10^{-8}\,\mathrm K$ (far below the 2.7 K CMB) and $S/k_B\approx1.0\times10^{77}$.
+- [Graph] Log–log plot of $T_H$ (K) versus $M/M_\odot$ on $[10^{-19},10^{10}]$ with a horizontal line at the CMB temperature 2.725 K, marking where holes currently absorb more than they emit (crossing near $M\approx4.5\times10^{22}\,\mathrm{kg}\approx2\times10^{-8}M_\odot$).
+- [Intuition] Explain the negative heat capacity: $T\propto1/M$, so a radiating hole heats up as it loses mass, which is why evaporation runs away and why the generalized second law is needed.
+- [Links] Link the zeroth, first and second laws in the text to [[5.5.2 Zeroth law]], [[5.5.4 First law]] and [[5.5.5 Second law]].
+- [Structure] File starts with a UTF-8 BOM; save as UTF-8 without BOM.
+
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.6 Bibliographical notes.md
+priority: low
+graph: no
+manim: no
+summary: Accurate transcription of the bibliographic notes; the "recent" developments it cites date from 2001–2002.
+- [Structure] Add an editorial note that the isolated/dynamical-horizon programme is reviewed in Ashtekar and Krishnan, Living Rev. Relativ. 7 (2004) 10, and turn the section references (5.1.7, 5.2.4, 5.3.10, 5.4.1–5.4.3, 5.5) into wiki links; save without the UTF-8 BOM.
+
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/05 Black holes/5.7 Problems.md
+priority: low
+graph: yes
+manim: no
+summary: Accurate problem set (I verified the Problem 2 ray solution, the Problem 8 basis vectors, the Kerr–Newman $M_H$, $J_H$ Smarr checks and the Hawking–Hartle formula numerically), with a few transcription typos.
+- [Correctness] Problem 7(a) enumerates the properties as "(i) … (ii) … (iii) … and (vi)"; the last item should be (iv).
+- [Correctness] Problem 3(b) calls $l_\alpha=-\partial_\alpha v$ "the four-velocity"; it is a null tangent vector, not a (timelike, normalized) four-velocity.
+- [Structure] Fix the typos "This relations holds" (7d) and "Find an expression for $A_\alpha$ is this coordinate system" (8c).
+- [Graph] Optional solution aid for Problem 2(a): plot the outgoing rays $r=c\lambda e^{-\lambda}$, $v=4c(1+\lambda)e^{-\lambda}$ for $c\in\{\pm0.5,\pm1,\pm2\}$, the special ray $v=4r$, and the apparent horizon $r=2m(v)=v/8$ in the $(r,v)$ plane for $0<v<v_0$; place it in a collapsed callout so it does not spoil the exercise.
+- [Structure] File starts with a UTF-8 BOM; save as UTF-8 without BOM.
+
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/99 Back matter/Index.md
+priority: low
+graph: no
+manim: no
+summary: Faithful index transcription with printed page numbers only.
+- [Links] Optional: link the main entries (e.g. "Black-hole mechanics, first law" to [[5.5.4 First law]]) so the index is navigable in the vault; also save without the UTF-8 BOM.
+
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/99 Back matter/References.md
+priority: low
+graph: no
+manim: no
+summary: Faithful bibliography transcription with section back-references.
+- [Links] Turn the bracketed section references into wiki links and note that the Living Reviews URL (livingreviews.org/lrr-2000-5) now resolves via link.springer.com; save without the UTF-8 BOM.
+
+=== 02 Physics/05 Relativity and Gravitation/03 Relativists Toolkit/Relativists Toolkit - Contents.md
+priority: low
+graph: no
+manim: no
+summary: Complete contents hub; all wiki links resolve.
+- [Structure] No change needed.
+
+=== 02 Physics/05 Relativity and Gravitation/04 Kaluza–Klein/Electromagnetism as a Fifth Dimension - Kaluza-Klein.md
+priority: low
+graph: yes
+manim: yes
+summary: Clear, correct overview (I rechecked the gauge law, the action normalization $\kappa^2=16\pi G_4$, the charge $q_n=n\kappa/r$, and the numbers $r\approx23.4\ell_P\approx3.8\times10^{-34}$ m, $m_1\approx5.2\times10^{17}$ GeV).
+- [Structure] The overview uses signature $(-,+,+,+,+)$ and $A'_\mu=A_\mu-\partial_\mu\lambda$, whereas the first half of every KK chapter uses a mostly-minus angular convention with $A'_\mu=A_\mu+\partial_\mu\varepsilon$; add one sentence here naming both conventions and the translation ($y=r\theta$, $g\to-g$, $A\to-A$, $\kappa=r\xi$).
+- [Graph] Add a log–log plot of the first KK mass $m_1=\hbar c/r$ (GeV) versus radius $r$ from $10^{-35}$ to $10^{-15}$ m, marking the electron mass, the LHC scale (~10 TeV) and the radius $r\approx3.8\times10^{-34}$ m forced by Eq. (15); this makes the mass–charge problem visible.
+- [Manim] Animate a field mode $e^{iny/r}$ on a circle for $n=0,1,2$ and then a local shift $y\to y+\kappa\lambda(x)$ along a tube, showing the phase change $e^{-iq_n\lambda}$ and the zero-angle seam bending while the geometry is unchanged.
+- [Intuition] In Section 5 add one sentence on why $m_n^2=m_5^2+n^2/r^2$: the five-dimensional dispersion relation $E^2=\mathbf p^2+p_5^2+m_5^2$ with $p_5=n/r$ looks to a 4D observer like extra rest mass.
+
+=== 02 Physics/05 Relativity and Gravitation/04 Kaluza–Klein/KK 01 Motivation and extra dimensions.md
+priority: medium
+graph: yes
+manim: no
+summary: Rich and mostly correct motivation chapter, but it mixes two coordinate conventions, reuses $y$ for two different coordinates, and its quantity table lists items the note never uses.
+- [Correctness] Symbol clash: $y$ is the compact coordinate in "$y\sim y+2\pi r$" but an ordinary spatial coordinate in $(t,x,y,z,\theta)$ and $(t,x,y,z)$ in the same note; use $y$ for only one of them (e.g. keep $\theta$ or $y_5$ for the circle).
+- [Correctness] The physical-quantities table describes symbols and uses not present in the note ("spherical-coordinate inset" for $\theta$, "wave energy, or first-mode rest energy" for $E_{\mathrm{KK}}$, "unnormalized expansion" for $\psi_n$, "embedding" coordinates); trim descriptions to what this note uses.
+- [Structure] The opening gauge law $\theta'=\theta+\xi\varepsilon$, $A'_\mu=A_\mu+\partial_\mu\varepsilon$ is stated without the metric form it relies on; add $-\Phi_{\mathrm{ang}}(\mathrm d\theta-\xi A_\mu\mathrm dx^\mu)^2$ or a pointer to [[KK 06 Algebraic decomposition of the metric]], and note that the overview uses the opposite sign convention.
+- [Graph] Plot $E_{\mathrm{KK}}=\hbar c/r$ (GeV) versus $r$ (m) on log axes for $r\in[10^{-35},10^{-15}]$, with the worked point $r=10^{-18}$ m, $E\approx197$ GeV, marked.
+- [Simplify] The Standard Model group discussion (Higgs components, quotients $SU(3)/U(2)$, M-theory) is long for a motivation chapter; move the eleven-dimensional count into a collapsible callout so the main thread (small circle hidden at low energy) stays short.
+
+=== 02 Physics/05 Relativity and Gravitation/04 Kaluza–Klein/KK 02 Study route and source books.md
+priority: low
+graph: no
+manim: no
+summary: Clear roadmap with correct preview formulas (the angular metric, gauge law and $q_n=n\xi$ are mutually consistent), but the table and some headings are boilerplate.
+- [Correctness] The physical-quantities table lists meanings not used in this note: $r$ as "radial coordinate in the explicitly identified spherical inset", $\theta$ "spherical-coordinate inset", $q$ as "Test charge acted on by the Lorentz force", and $g_{ab}$; remove or correct these rows.
+- [Structure] The heading "Exact angular titles" for the book list is unclear; rename it (e.g. "Optional books"), and align the frontmatter title "Study route and prerequisites" with the file name "Study route and source books".
+- [Simplify] The convention paragraph repeated at the top of every chapter mentions the "scalar with subscript ang" and xi before they are defined; replace it with a link to one conventions callout in [[Kaluza-Klein - Study Guide]].
+- [Structure] File starts with a UTF-8 BOM; save as UTF-8 without BOM.
+
+=== 02 Physics/05 Relativity and Gravitation/04 Kaluza–Klein/KK 03 From distance to the metric tensor.md
+priority: medium
+graph: no
+manim: yes
+summary: Correct and patient introduction to the metric, but it switches signature and the meaning of $y$, $r$ and $\theta$ within one note, and its table has duplicate and unused rows.
+- [Correctness] Symbol clash: $y$ is an ordinary Cartesian coordinate in $\mathrm dx^\mu=(\mathrm dt,\mathrm dx,\mathrm dy,\mathrm dz)$ and the compact length coordinate $y=r\theta$ in "Add a flat circle"; likewise $r,\theta$ are spherical/Schwarzschild coordinates and the circle radius/angle; rename one set (e.g. $\rho_{\mathrm{sph}},\vartheta$ for the spherical inset).
+- [Correctness] The physical-quantities table lists $g_{\mu\nu}$ twice with conflicting units ($1$ and —) and includes a "Rest mass in the angular Klein–Gordon equation" $m$ that this note never uses; merge and remove.
+- [Structure] The note uses mostly-minus in the first half and $(-,+,+,+)$ in the second; put the two worked computations under clearly labelled headings or convert one so that a reader does not meet both signatures for the same interval.
+- [Manim] Animate unrolling the cylinder of radius $r$ into a flat strip of width $2\pi r$, carrying a drawn right triangle with legs $\Delta h$, $r\Delta\theta$, to show that $\mathrm d\ell^2=\mathrm dh^2+r^2\mathrm d\theta^2$ is flat.
+- [Structure] File starts with a UTF-8 BOM; save as UTF-8 without BOM.
+
+=== 02 Physics/05 Relativity and Gravitation/04 Kaluza–Klein/KK 04 Comparing four- and five-dimensional metrics.md
+priority: low
+graph: no
+manim: no
+summary: Clear, correct chapter on component counting and the role of the radius factor.
+- [Correctness] The physical-quantities table lists $\widetilde g_{AB}$ with unit $1$ and again with unit —, and $g_{\mu\nu}$ twice; merge into one consistent row each.
+- [Intuition] In "Components are not propagating polarizations", add the 4D check $D(D-3)/2=2$ for $D=4$, so the reader sees the formula reproduce the familiar two graviton polarizations before applying it to $D=5$.
+- [Structure] File starts with a UTF-8 BOM; save as UTF-8 without BOM.
+
+=== 02 Physics/05 Relativity and Gravitation/04 Kaluza–Klein/KK 05 Cylinder condition and radion assumptions.md
+priority: low
+graph: yes
+manim: no
+summary: Clear separation of the cylinder condition from radion freezing, with a symbol clash in $y$ and duplicate table rows.
+- [Correctness] Symbol clash: $\widetilde g_{AB}(t,x,y,z,\theta)$ uses $y$ as an ordinary spatial coordinate, while Eq. (5.1) $\partial_y\widetilde g_{AB}=0$ uses $y$ as the circular coordinate; rename one of them.
+- [Correctness] The table lists $\widetilde g_{AB}$ twice with conflicting units ($1$ and —); merge.
+- [Graph] Add a 3D surface plot of a tube with base coordinate $x\in[0,10]$ and circle radius $r\Phi(x)$, $\Phi(x)=1+0.3\sin(x/2)$, to illustrate a radion that satisfies the cylinder condition but violates Eq. (5.2) (the "Worked distinction").
+- [Structure] File starts with a UTF-8 BOM; save as UTF-8 without BOM.
+
+=== 02 Physics/05 Relativity and Gravitation/04 Kaluza–Klein/KK 06 Algebraic decomposition of the metric.md
+priority: medium
+graph: no
+manim: no
+summary: Correct square-completion (checked, including the numerical block example), but the same symbol $B_\mu$ carries two different definitions and units in the two halves.
+- [Correctness] $B_\mu$ is defined as $\widetilde g_{\mu4}/\Phi_{\mathrm{ang}}$ (units GeV, angular convention) in the first half and as $C_\mu/D$ (dimensionless, length convention) in Eq. (6.2); the table lists only the dimensionless one; use different symbols or state the relation $B^{\mathrm{len}}_\mu=-r\,B^{\mathrm{ang}}_\mu$ at fixed radius.
+- [Correctness] Symbol clash: $B_\mu(t,x,y,z)$ uses $y$ as an ordinary coordinate, while Eq. (6.1) uses $y$ for the circle.
+- [Simplify] The angular and length-coordinate halves perform the same completion of the square twice with opposite signs; keep one as the main derivation and reduce the other to a short translation box.
+- [Structure] File starts with a UTF-8 BOM; save as UTF-8 without BOM.
+
+=== 02 Physics/05 Relativity and Gravitation/04 Kaluza–Klein/KK 07 Interpreting and rebuilding the metric.md
+priority: low
+graph: no
+manim: yes
+summary: Correct reconstruction, inverse metric and determinant (checked), but the angular half is padded with fourteen component-by-component equations.
+- [Simplify] Replace the explicit list of all $\widetilde g_{00},\dots,\widetilde g_{34}$ equations by the block matrix plus one example entry; the index form already states them all.
+- [Example] In "Derive and check the inverse", write out the upper-left product explicitly: $(g_{\mu\nu}+\kappa^2\Phi^2A_\mu A_\nu)g^{\nu\rho}+\kappa\Phi^2A_\mu(-\kappa A^\rho)=\delta_\mu^\rho$.
+- [Manim] Animate horizontal versus fixed-$y$ displacements on a tube: a base step $\mathrm dx$ with $\mathrm dy=0$ versus the horizontal lift $\mathrm dy=-\kappa A\,\mathrm dx$, showing that only the latter measures $g_{\mu\nu}$ alone.
+- [Structure] File starts with a UTF-8 BOM; save as UTF-8 without BOM.
+
+=== 02 Physics/05 Relativity and Gravitation/04 Kaluza–Klein/KK 08 Identifying the U(1) gauge potential.md
+priority: low
+graph: no
+manim: no
+summary: Clear and correct derivation of the gauge law and field-strength invariance.
+- [Structure] The angular half gives $A'_\mu=A_\mu+\partial_\mu\varepsilon$ and the length half $A'_\mu=A_\mu-\partial_\mu\lambda$; add one sentence right after Eq. (8.1) explaining that with $y=r\theta$ the shift parameters coincide ($\lambda=\varepsilon$, $\kappa=r\xi$) and the opposite gradient sign comes only from $A^{\mathrm{len}}_\mu=-A^{\mathrm{ang}}_\mu$, so the two halves do not conflict.
+- [Intuition] In "Why the group is U(1)" add a concrete example: a shift by the full circumference $2\pi r$ is the identity, so the shift parameter lives on a circle, $e^{i y/r}\in U(1)$.
+- [Structure] File starts with a UTF-8 BOM; save as UTF-8 without BOM.
+
+=== 02 Physics/05 Relativity and Gravitation/04 Kaluza–Klein/KK 09 Worked example with oblique coordinates.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and very clear worked example (metric, inverse, determinant and the 60-degree example all check).
+- [Simplify] Connect the two halves: the tilted-basis example is the case $a=\sin\gamma$, $b=\cos\gamma$ of Eq. (9.1), giving $g_{ij}$ with $g_{uv}=\sin\gamma$ and $\det g=\cos^2\gamma$.
+- [Graph] Add an interactive 2D plot of the oblique grid lines $u=\text{const}$, $v=\text{const}$ for Eq. (9.1) with sliders $a\in[-1,1]$, $b\in[0.2,1.5]$, plus the two coordinate basis vectors $(1,0)$ and $(a,b)$.
+- [Structure] File starts with a UTF-8 BOM; save as UTF-8 without BOM.
+
+=== 02 Physics/05 Relativity and Gravitation/04 Kaluza–Klein/KK 10 Gauge freedom on a tube.md
+priority: low
+graph: yes
+manim: yes
+summary: Correct and intuitive tube example (Eq. (10.1), its determinant and the explicit $\lambda=x^2/2L^2$ case check), ideal for a visual.
+- [Graph] Plot the unrolled tube ($x\in[-2L,2L]$, $y\in[0,2\pi r)$) with the new zero-angle curves $y=-\kappa\lambda(x)+2\pi r k$ for $\lambda=x^2/2L^2$ and $\kappa/L=0.5$, wrapped modulo $2\pi r$, next to the straight old seam.
+- [Manim] Animate the zero-angle seam on a 3D tube bending from straight to the curve $y'=0$ while the tube itself stays fixed, then display $A'_x=-x/L^2$ and $F=0$.
+- [Simplify] State explicitly that the angular half (with $\theta'=\theta+\varepsilon$) and the length half (with $y'=y+\kappa\lambda$) describe the same relabelling ($r\varepsilon=\kappa\lambda$) and that the opposite gradient signs come from $A^{\mathrm{len}}=-A^{\mathrm{ang}}$, so readers can compare $\widetilde g'_{x\theta}=\Phi_{\mathrm{ang}}\partial_x\varepsilon$ with the $-2\kappa\lambda'$ cross term.
+- [Structure] File starts with a UTF-8 BOM; save as UTF-8 without BOM.
+
+=== 02 Physics/05 Relativity and Gravitation/04 Kaluza–Klein/KK 11 Full coordinate transformation calculation.md
+priority: medium
+graph: no
+manim: no
+summary: Correct full Jacobian calculation in both conventions (checked), but a broken inline formula garbles the main conclusion of the angular half.
+- [Correctness] The sentence "Thus the adjusted base metric is unchanged: $g\prime_{\mu …u}=g_{\mu …u}$" contains a literal line break inside `\nu` (the `\n` was turned into a newline), so it renders incorrectly; replace with $g'_{\mu\nu}=g_{\mu\nu}$.
+- [Simplify] In the angular half, the case-form Jacobian column $\partial x'^B/\partial x^4$ is shown after it was already used; move it to the "Write all four Jacobian blocks" list.
+- [Intuition] Add a one-line matrix picture: $\widetilde g=J^{\mathsf T}\widetilde g'J$ with $J=\begin{pmatrix}\mathbb 1&0\\ \xi\partial\varepsilon&1\end{pmatrix}$ is a shear, which is why $\widetilde g_{44}$ and the Schur complement are unchanged.
+- [Structure] File starts with a UTF-8 BOM; save as UTF-8 without BOM.
+
+=== 02 Physics/05 Relativity and Gravitation/04 Kaluza–Klein/KK 12 What the metric construction proves.md
+priority: low
+graph: no
+manim: no
+summary: Clear summary chapter separating assumptions from results; no errors found.
+- [Simplify] In "Why a gauge law does not fix all dynamics", replace "its square is gauge invariant too" by the explicit example $(F_{\mu\nu}F^{\mu\nu})^2$ and mention $F_{\mu\nu}\tilde F^{\mu\nu}$ as a parity-odd invariant, so the statement is concrete.
+- [Structure] File starts with a UTF-8 BOM; save as UTF-8 without BOM.
+
+=== 02 Physics/05 Relativity and Gravitation/04 Kaluza–Klein/KK 13 Why an action is needed.md
+priority: low
+graph: no
+manim: no
+summary: Clear argument for why dynamics require an action, with a correct Euler–Lagrange derivation and dimensional check; one sentence refers to a visual that is not in the note.
+- [Structure] "Three colored brackets identify the five-dimensional Einstein–Hilbert action…" describes the video slide, not the note; rephrase as "The three integrals are…".
+- [Structure] The table omits the four-dimensional $G$ used in the angular action while listing $\widetilde G$; add it (or note $G\equiv G_4$).
+- [Intuition] Explain the overall minus sign difference between the angular action $-\frac{1}{16\pi\widetilde G}\int\widetilde R$ and Eq. (13.1) $+\frac{1}{16\pi G_5}\int R_5$: it comes from the signature flip $g\to-g$, under which $R\to-R$.
+- [Structure] File starts with a UTF-8 BOM; save as UTF-8 without BOM.
+
+=== 02 Physics/05 Relativity and Gravitation/04 Kaluza–Klein/KK 14 Reducing the Einstein-Hilbert action.md
+priority: medium
+graph: no
+manim: no
+summary: Correct reduction in both conventions (determinant, $G=\widetilde G/2\pi r$, $\xi^2=16\pi G/r^2$, Maxwell and Einstein variations all checked), with one misstated scaling in the worked normalization check.
+- [Correctness] "Worked normalization check": if the coefficient multiplying the squared potential in the metric ($\kappa^2\Phi^2$) is doubled, the Maxwell coefficient doubles, not quadruples; the factor four applies if $\kappa$ itself is doubled; reword accordingly.
+- [Structure] The angular half calls the reduced action $S$ while the table lists $\widetilde S$, $S_4$, $S_5$, $S_{\mathrm M}$; label it consistently (e.g. $S_4$).
+- [Simplify] State once, near Eq. (14.1), that the angular identity $\widetilde R=R+\tfrac14\xi^2\Phi_{\mathrm{ang}}F^2$ and $R_5=R_4-\tfrac14\kappa^2F^2$ are the same equation after $g\to-g$ ($R\to-R$, $F^2$ unchanged) and $\kappa^2=\xi^2\Phi_{\mathrm{ang}}$.
+- [Structure] File starts with a UTF-8 BOM; save as UTF-8 without BOM.
+
+=== 02 Physics/05 Relativity and Gravitation/04 Kaluza–Klein/KK 15 Deriving the curvature split.md
+priority: medium
+graph: no
+manim: no
+summary: Correct and complete curvature derivation (Cartan connection, Riemann coefficients and the $-3+1$ contraction all check), but a broken display block and long angular preamble obscure it.
+- [Correctness] The text "Ricci curvature is symmetric in this setting…" is placed on the same line as the closing `$$` of the preceding aligned block; move it to its own paragraph so the display math renders.
+- [Correctness] A stray period ends the $F_{\mu\nu}F^{\mu\nu}=2(|\mathbf B|^2-|\mathbf E|^2)$ display before "in a local inertial frame", splitting one sentence; remove it.
+- [Simplify] The angular "derivative-counting" argument and the local-point calculation are superseded by the explicit Cartan derivation below; shorten them to a short motivation and point to the frame calculation.
+- [Intuition] Add a sentence linking Eq. (15.5) to the Aharonov–Bohm effect: the circular shift around a loop is the flux of $F$, the geometric version of the gauge phase $\oint A$ (link [[3.4 Significance of Potentials in Quantum Theory]]).
+- [Structure] File starts with a UTF-8 BOM; save as UTF-8 without BOM.

@@ -1,0 +1,653 @@
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/01 Elementary Topology/27.01 Topological language.md
+priority: low
+graph: yes
+manim: no
+summary: Clear, correct introduction to open sets, subspace topology, continuity, and connectedness; the worked examples ($x^3$, interval connectedness, practice answers) all check out.
+- [Intuition] In "Open sets and neighbourhoods", add one sentence that an open set is one where every point has some "wiggle room" inside the set before the axioms, so the intersection $\bigcap(-1/n,1/n)=\{0\}$ example reads as a failure of wiggle room.
+- [Graph] In "Continuity and homeomorphisms", plot $y=x^3$ and $y=\sqrt[3]{x}$ on $x\in[-2,2]$ in one 2D graph to show that the inverse is continuous although it has a vertical tangent at $0$.
+- [Simplify] The interval-connectedness proof in "Connectedness" packs the supremum argument into one paragraph; split the cases $c\in V$ and $c\in U$ into two numbered steps.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/01 Elementary Topology/27.02 Compactness.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and well-structured treatment of open covers, Heine–Borel, and the compactness/connectedness/boundary distinctions; the $(0,1)$ cover example and practice answers are right.
+- [Graph] In "A worked noncompact example", draw the nested intervals $U_n=(1/n,1)$ for $n=2,\ldots,8$ as horizontal bars above the axis $[0,1]$ so the reader sees that every finite union misses a strip near $0$.
+- [Simplify] In worked answer 1, "Its only possible accumulation point outside its isolated points is $0$" is awkward; state that every point of $K$ except $0$ is isolated and $0$ is the only limit point of $K$, which belongs to $K$.
+- [Intuition] Add one sentence to the bisection proof of compactness of $[0,1]$ explaining why it fails for $(0,1)$: the nested intervals can shrink to the missing endpoint $0$.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/01 Elementary Topology/27.03 Identifications.md
+priority: low
+graph: yes
+manim: yes
+summary: Correct and careful construction of the circle as a quotient, with a good seam discussion and a correct derivative check $h'(0)=2\pi$, $h'(2\pi)=-2\pi$.
+- [Graph] In "Worked example: functions that descend", plot $\cos t$, $t$, and $t(2\pi-t)$ on $[0,2\pi]$ in one 2D graph so the endpoint-value and endpoint-slope conditions are visible.
+- [Manim] Animate the interval $[0,L]$ bending into a circle with the two endpoints meeting, highlighting a small neighbourhood of the joined point as two half-intervals that merge into one arc; this shows the quotient topology better than the static Fig. 27.1.
+- [Simplify] In "From an interval to a quotient space", the compact-to-Hausdorff homeomorphism argument is dense; give the three facts (closed in compact is compact, image of compact is compact, compact in Hausdorff is closed) as a short numbered list.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/01 Elementary Topology/27.04 Loops and homotopies.md
+priority: low
+graph: no
+manim: yes
+summary: Correct and readable note on path homotopy and the fundamental group; the semicircle/diameter counterexample and both worked answers are verified.
+- [Manim] Animate the linear homotopy $H(t,s)=(1-s)\gamma_0(t)+s\gamma_1(t)$ from the upper semicircle to the diameter in the disk, then show the same formula leaving the circle at $(0,1/2)$; motion makes the "permitted target space" point immediate.
+- [Intuition] In "The fundamental-group idea", add a small picture or sentence for concatenation as "run $\gamma$ at double speed, then $\eta$ at double speed" before the piecewise formula.
+- [Example] Add a one-line contrast for practice 1 in the punctured plane: the loop $2+\tfrac12e^{2\pi it}$ (not enclosing $0$) is null-homotopic there, so the obstruction is enclosing the hole, not being in the punctured plane.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/01 Elementary Topology/27.05 Winding numbers.md
+priority: medium
+graph: yes
+manim: yes
+summary: Correct and complete, with a verified worked loop (winding $2$) and integral check, but the homotopy-invariance proof in "Why deformation cannot change the integer" is compressed.
+- [Simplify] In "Why deformation cannot change the integer", spell out why $\delta(1)=\delta(0)$ and why $\theta_s+\delta$ lifts $u(\cdot,s')$, as two short displayed steps rather than one paragraph.
+- [Graph] Plot the worked loop $\gamma(t)=(2+\cos2\pi t)e^{i(4\pi t+\frac12\sin2\pi t)}$ as a parametric 2D curve together with the lifted angle $\theta(t)=4\pi t+\tfrac12\sin2\pi t$ against $t\in[0,1]$, marking $\theta(1)-\theta(0)=4\pi$.
+- [Manim] Animate a ray from $0$ to a point tracing the worked loop while an angle counter accumulates to $4\pi$, then continuously deform the loop away from $0$ to show the count cannot jump.
+- [Intuition] Before the lift construction, add the "dog on a leash walking around a lamp post" picture or similar plain-language image for net turns.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/01 Elementary Topology/Box counting and random-walk distributions.md
+priority: high
+graph: yes
+manim: yes
+summary: A transcription of lecture pages on box counting, random walks, and maximum likelihood that is mathematically sound in the derivations but misfiled under Topology, interrupted by handwriting commentary, and carrying a wrong physical-quantities table.
+- [Correctness] The "Physical quantities" table lists symbols from other notes that are never used here and clash with this note: $M$ as carrying capacity (here $M$ is the square side length), $\delta$ as wolf decline rate (here $\delta$ is the Dirac delta), $x,y$ as ingredient amounts in oz (here positions), $s$ as protein surplus (here the signed step), $t$ as iron surplus and $1/\alpha$ (here time, $\alpha$ unused); keep only $\Delta x$, $\Delta t$, $D$, $U$ and add $L$ (box size) and $p$, $C$ if desired.
+- [Structure] The note is a Mathematical Modeling lecture transcription (fractal dimension, random walks, Lévy flights, MLE) and does not belong in "01 Elementary Topology"; move it near "Model error, random walks, and continuum limits" or a modeling/probability folder and link it from there.
+- [Simplify] Remove or move to a collapsed callout the handwriting remarks ("The handwritten integral limits appear to use...", "A separate line records a theoretical dimension near $1.65$...", "The page marks a time step... The right-hand side is blank"); they interrupt the explanation and the unlabelled $1.65$ value and blank traffic update carry no content.
+- [Graph] Plot $\log N$ against $\log(1/L)$ for the Sierpiński table ($m=0,\ldots,6$) with the fitted line of slope $\log3/\log2\approx1.585$, plus reference lines of slope $1$ and $2$.
+- [Graph] Plot the standard normal density $p(x)$ and its CDF on $x\in[-4,4]$ with the shaded area $P(X\le x)$ at $x=1$, and on a second graph the Cauchy density $1/(\pi(1+x^2))$ against the normal density to show the heavy tails behind the infinite $E[X^2]$.
+- [Manim] Animate the convolution update starting from $C(x,0)=\delta(x)$: bars at $\pm\Delta x$ after one step, $\tfrac14,\tfrac12,\tfrac14$ after two, and the binomial histogram approaching a Gaussian after many steps, to connect the delta calculation with the heat-equation limit.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/18.01 Dual spaces.md
+priority: low
+graph: no
+manim: no
+summary: Clear and correct introduction to covectors and the dual basis; the slanted-basis example ($\alpha=2\varepsilon^1$, $\alpha(3,4)=2$) and the practice answers check out, and Fig. 18.1 already gives the needed level-line picture.
+- [Intuition] In "Worked example: coordinates in a slanted basis", add one sentence noting that $\varepsilon^1(x,y)=x-y/2$ is not the "x coordinate" even though $e_1=(1,0)$: changing $e_2$ changes $\varepsilon^1$, which is the key surprise about dual bases.
+- [Simplify] In "Natural identification with the double dual", state explicitly that injectivity uses the dual basis: if $\varepsilon^i(v)=0$ for all $i$ then all coordinates of $v$ vanish.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/18.02 Tensor products.md
+priority: low
+graph: no
+manim: no
+summary: Correct and well-motivated, with a clear outer-product example and a valid non-simplicity proof for $e_1\otimes e_1+e_2\otimes e_2$.
+- [Intuition] Before the quotient construction in "Why introduce a new product?", give the concrete model first: for $\mathbb R^n\otimes\mathbb R^m$ the tensor product is the space of $n\times m$ arrays with $v\otimes w=vw^{\mathsf T}$, then present the abstract construction as the basis-free version.
+- [Example] In "Basis and dimension", add a one-line contrast $\dim(V\otimes W)=nm$ versus $\dim(V\times W)=n+m$ (for $n=2$, $m=3$: $6$ versus $5$) to show why the tensor product is not the Cartesian product.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/18.03 Tensor type.md
+priority: low
+graph: no
+manim: no
+summary: Correct and clear account of type $(r,s)$, slot roles, and component counts; the $T(\alpha,\beta,v)=56$ evaluation and the symmetric/alternating counts are verified.
+- [Simplify] In "Slots reverse the factor roles", the sentence "evaluate each covector argument on its corresponding vector factor and each covector factor on its vector argument" is hard to parse; show it once for $v\otimes\alpha$ as $(v\otimes\alpha)(\beta,w)=\beta(v)\alpha(w)$.
+- [Example] In "Component counts and symmetry", add a small table of $n^2$, $n(n+1)/2$, $n(n-1)/2$ for $n=2,3,4$ to make the counting concrete.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/18.04 Components.md
+priority: low
+graph: no
+manim: no
+summary: Correct and clear; the bilinear-form example ($B(v,w)=13$ by both expansion and matrix product) and both practice answers check out.
+- [Intuition] In "General extraction and reconstruction", add one sentence that components are just "the tensor's answers on basis inputs", mirroring the vector case $v^i=\varepsilon^i(v)$, before the general index formula.
+- [Example] In "What components do not tell you alone", show the same matrix $\begin{pmatrix}2&-1\\3&4\end{pmatrix}$ transformed under $M=\operatorname{diag}(2,1)$ as a bilinear form ($M^{\mathsf T}BM$) and as an endomorphism ($M^{-1}BM$) to make the warning concrete.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/18.05 Transformation laws.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and clearly conventioned; the shear-basis example (coordinates $(1,2)$, covector $(2,1)$, pairing $4$, $B'$ and length $13$) and the practice answers are verified.
+- [Graph] Draw the old basis $e_1,e_2$, the shear basis $e'_1=e_1$, $e'_2=e_1+e_2$, and the vector $v=(3,2)=1e'_1+2e'_2$ as arrows in a 2D plot, showing the parallelogram decomposition along the new basis.
+- [Intuition] After $v'^a=(M^{-1})^a{}_iv^i$, add the plain-language reason "if the basis vectors get longer, the coordinates must get smaller", using practice 1 with $M=\operatorname{diag}(2,3)$.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/18.06 Index notation.md
+priority: low
+graph: no
+manim: no
+summary: Clear and correct; the matrix product, trace $13$, and the cyclic-trace index argument are verified.
+- [Example] In "Common notation traps", add one concrete invalid equation such as $w_i=A^i{}_jv^j$ (mismatched free-index position) and its corrected form, since the section lists rules without a worked failure.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/18.07 Tensor operations.md
+priority: low
+graph: no
+manim: no
+summary: Correct and compact; the symmetric/alternating splits and both contractions in the examples and practice check out.
+- [Structure] The file starts with a UTF-8 BOM and uses CRLF line endings; save it as UTF-8 without BOM with LF line endings.
+- [Example] In "Slot permutation and projections", give a three-index example of $T_{[123]}$ for $T=\varepsilon^1\otimes\varepsilon^2\otimes\varepsilon^3$ (six signed terms, factor $1/6$) so the general formulas are not left abstract.
+- [Intuition] In "Contraction", add a sentence that contracting different slot pairs gives different results (already shown in practice 2) earlier in the main text, so readers learn to always name which slots are contracted.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/18.08 Forms and metrics.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and clear treatment of nondegenerate forms and index raising/lowering; the $G=\begin{pmatrix}2&1\\1&3\end{pmatrix}$ example, inverse, and practice answers are verified.
+- [Structure] The file starts with a UTF-8 BOM and uses CRLF line endings; save it as UTF-8 without BOM with LF line endings.
+- [Graph] For the Minkowski-type example $g=\operatorname{diag}(1,-1)$ in "Bilinear forms as tensors", plot the level sets $x^2-y^2=\pm1$ and the null lines $y=\pm x$ to show nondegenerate but indefinite behaviour, complementing the positive-definite ellipse of Fig. 18.2.
+- [Intuition] In "Worked example", add one sentence interpreting $v^\flat=(1,-2)$ geometrically: its level line $w^1-2w^2=0$ is the $g$-orthogonal complement of $v$, not the Euclidean one.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/18.09 Coordinate checks.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and well-chosen counterexample; the $y=x^2$ derivative $1/x$, the connection coefficient $\Gamma^y{}_{yy}=-1/(2y)$, and the Hessian extra term are all verified.
+- [Structure] The file starts with a UTF-8 BOM and uses CRLF line endings; save it as UTF-8 without BOM with LF line endings.
+- [Graph] In "Worked example", plot $v^x=1$ against $x$ and $v^y=2\sqrt y$ against $y$ on $(0,4]$ side by side, so the reader sees one constant vector field with a nonconstant component in the second coordinate.
+- [Simplify] In "Scalars and connections", say that $\Gamma^y{}_{yy}=(\partial y/\partial x)(\partial^2x/\partial y^2)$ comes from the inhomogeneous transformation law, and show the one-line computation, since the value currently appears without derivation.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/19.01 Local models.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and accessible introduction to topological manifolds, with a verified semicircle chart and good boundary and crossing counterexamples.
+- [Structure] The file starts with a UTF-8 BOM and uses CRLF line endings; save it as UTF-8 without BOM with LF line endings.
+- [Graph] In "Worked example: the circle near its top point", plot the unit circle with the upper semicircle highlighted and its projection onto the interval $(-1,1)$ on the $x$-axis, plus the right semicircle projected onto the $y$-axis.
+- [Example] In "What a local model means", add a one-line example of why Hausdorff is needed (the line with two origins), since the note says the conditions exclude "poor separation" without showing one.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/19.02 Charts and atlases.md
+priority: low
+graph: no
+manim: yes
+summary: Correct and clear; the stereographic formulas, the Fig. 19.1 value $u=0.5$, and the practice values $u=3$, $v=1/3$ are verified.
+- [Structure] The file starts with a UTF-8 BOM and uses CRLF line endings; save it as UTF-8 without BOM with LF line endings.
+- [Manim] Animate a point $P$ moving around the circle while the line from $N$ through $P$ sweeps and its intersection $u$ slides along the axis, running off to $\pm\infty$ as $P\to N$; this shows why $N$ must be excluded.
+- [Simplify] In "Worked example: two charts for a circle", show the algebra from $x=u(1-y)$ to $y=(u^2-1)/(1+u^2)$ (the quadratic in $y$ with the root $y=1$ discarded), since the inverse is currently stated without the step.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/19.03 Transition maps.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and well-organized; the $v=1/u$ transition, the velocity $-1/2$, and the $x^3$ incompatibility warning are verified.
+- [Structure] The file starts with a UTF-8 BOM and uses CRLF line endings; save it as UTF-8 without BOM with LF line endings.
+- [Graph] Plot $v=1/u$ on $u\in[-4,-0.25]\cup[0.25,4]$ to show the two overlap components and the decreasing (orientation-reversing) transition, and separately $x=u^{1/3}$ near $0$ to show the vertical tangent that breaks compatibility.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/19.04 Examples.md
+priority: low
+graph: yes
+manim: no
+summary: Correct survey of standard manifolds with verified charts and a sound regular-level-set example and nonexample ($x^3=0$).
+- [Graph] Add a native 3D plot of the paraboloid $z=x^2+y^2$ over $x,y\in[-1.5,1.5]$ with the grid lines $u=\text{const}$, $v=\text{const}$ of the global parametrization drawn on it.
+- [Graph] Optionally a 3D plot of the torus $((2+\cos\phi)\cos\theta,(2+\cos\phi)\sin\theta,\sin\phi)$ with one small coordinate patch shaded, illustrating that $(\theta,\phi)$ is only local.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/19.05 Tangent vectors.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct, with verified examples, but the derivation-equals-velocity proof (Hadamard lemma) in "The derivation description" is compressed for a first encounter.
+- [Simplify] In "The derivation description", write out $h_i(x)=\int_0^1\partial_if(x_0+t(x-x_0))\,dt$ explicitly and apply the Leibniz rule step by step ($D[(x^i-x_0^i)h_i]=D[x^i]h_i(x_0)+0$), or move the proof into a collapsed callout.
+- [Graph] In "Worked example on a circle", plot the unit circle, the point $(1,0)$, the tangent arrow $(0,1)$, and a few level curves of $f=x^2+3y$ to show that $v[f]=3$ is the rate of crossing level curves.
+- [Intuition] Add one sentence motivating why a definition without an ambient space is needed (for example an abstract manifold like a configuration space), since the embedding check makes the intrinsic definition look unnecessary.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/19.06 Tangent and cotangent spaces.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and clear; the polar basis and dual-form formulas and the check $\alpha(v)=13$ at $(0,2)$ are verified.
+- [Structure] The file starts with a UTF-8 BOM and uses CRLF line endings; save it as UTF-8 without BOM with LF line endings.
+- [Graph] Plot the polar coordinate grid with arrows $\partial_r$ and $\partial_\theta$ at several points (for example $r=1,2$ and $\theta=0,\pi/2,\pi$) to show that $|\partial_\theta|=r$ grows with radius.
+- [Simplify] Use $\delta^i{}_j$ with spaced indices as in the 18.xx notes instead of $\delta^i_j$, for consistency across the tensor chapter.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/19.07 Smooth maps.md
+priority: low
+graph: no
+manim: yes
+summary: Correct and clear; the $F=(x^2-y^2,2xy)$ Jacobian, pushforward $(10,10)$, pullback $-10\,dy$, and practice answers are verified.
+- [Structure] The file starts with a UTF-8 BOM and uses CRLF line endings; save it as UTF-8 without BOM with LF line endings.
+- [Manim] Animate the map $F(z)=z^2$ acting on a small grid around $p=(1,2)$ and around the origin: near $p$ the grid is rotated and scaled (invertible $J_p$), near $0$ it collapses and wraps twice, showing why $J_0=0$ and $F(x,y)=F(-x,-y)$.
+- [Intuition] In "Worked example with a noninvertible derivative", mention that $F$ is $z\mapsto z^2$ in complex notation, which explains the rotation-scaling form of $J_p$ and $\det J=4|z|^2$.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/19.08 Vector and tensor fields.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and clear; $X=\partial_\theta$, the polar metric $dr^2+r^2d\theta^2$, and both practice answers are verified.
+- [Structure] The file starts with a UTF-8 BOM and uses CRLF line endings; save it as UTF-8 without BOM with LF line endings.
+- [Graph] Add a 2D vector-field (quiver) plot of $X=-y\partial_x+x\partial_y$ on $[-2,2]^2$ with the circles $x^2+y^2=1,4$ overlaid, illustrating practice 1 ($X[f]=0$) and the vanishing at the origin.
+- [Simplify] In "Worked example: one field, two descriptions", show the two-line expansion of $dx\otimes dx+dy\otimes dy$ in polar form that cancels the mixed terms, since it is currently only described.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/19.09 Local and global statements.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and useful distinction between coordinate singularities and genuine local obstructions, with sound crossing, $y^3=0$, and $y=|x|$ examples.
+- [Structure] The file starts with a UTF-8 BOM and uses CRLF line endings; save it as UTF-8 without BOM with LF line endings.
+- [Simplify] In "A true local obstruction", make the count explicit: $U\setminus\{0\}\subset X\setminus\{0\}$ meets all four open half-axes, which are separated, so $U\setminus\{0\}$ has at least four components while a punctured interval has two.
+- [Graph] Plot $y=|x|$ and the horizontal line $y=0$ (the set $y^3=0$) side by side, labelling the first "topologically a line, not smoothly embedded" and the second "smooth despite $DF=0$".
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Curvilinear tensor calculations.md
+priority: low
+graph: no
+manim: no
+summary: Correct and clear catalogue lesson; the polar example at $(2,0)$ (components $(3,2)$, $(3,8)$, length $25$, lowered array) and practice answers are verified, and Fig. C.ch04.2 covers the visual need.
+- [Structure] The file starts with a UTF-8 BOM and uses CRLF line endings; save it as UTF-8 without BOM with LF line endings.
+- [Example] The worked example uses $\theta=0$ where $g_r$, $g_\theta$ align with the Cartesian axes; add a second point such as $(r,\theta)=(2,\pi/4)$ so the reader sees the expansion with genuinely rotated basis vectors.
+- [Structure] The figure label "Fig. C.ch04.2" follows a catalogue numbering unlike the "Fig. 18.x/19.x" labels of the neighbouring notes; align it with the folder convention.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Manifolds and coordinate charts - Overview.md
+priority: low
+graph: no
+manim: no
+summary: Clean hub; all topic links resolve and the outcomes match the lessons.
+- [Structure] The file starts with a UTF-8 BOM and uses CRLF line endings; save it as UTF-8 without BOM with LF line endings.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Pseudotensors and reflections.md
+priority: low
+graph: no
+manim: yes
+summary: Correct and careful treatment of axial vectors and pseudotensors; the reflection examples and the rule $(Qu)\times(Qv)=\det(Q)Q(u\times v)$ check out.
+- [Structure] The file starts with a UTF-8 BOM and uses CRLF line endings; save it as UTF-8 without BOM with LF line endings.
+- [Manim] Animate $u=e_1$, $v=e_2$ and $u\times v=e_3$ under the mirror $Q=\operatorname{diag}(-1,1,1)$: the inputs reflect, the naively reflected arrow $Qw=e_3$ is shown in grey, and the actual cross product $-e_3$ appears, making the extra $\det Q$ visible.
+- [Example] Add a physical example of an axial vector (angular momentum $L=r\times p$ or the magnetic field) with one sentence on its behaviour under point reflection, since the note stays purely geometric.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Tensor algebra - Overview.md
+priority: low
+graph: no
+manim: no
+summary: Clean hub; all topic links resolve and the outcomes match the 18.xx lessons.
+- [Structure] The file starts with a UTF-8 BOM and uses CRLF line endings; save it as UTF-8 without BOM with LF line endings.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Tensor coordinates and invariants.md
+priority: low
+graph: no
+manim: no
+summary: Correct and clear summary of tensor components and basis changes; the slanted-basis example, rotation check $\operatorname{diag}(2,1)$, and symmetric/skew split are verified.
+- [Structure] The file starts with a UTF-8 BOM and uses CRLF line endings; save it as UTF-8 without BOM with LF line endings.
+- [Structure] The worked example (shear $M$, $v=(3,2)$, $\alpha=(2,-1)$, $G'$, length $13$) and practice 1 ($M=\operatorname{diag}(2,3)$) duplicate [[18.05 Transformation laws]] exactly; either link to 18.05 for them or choose different numbers so the two notes complement each other.
+- [Example] Add a short isotropic-tensor check in "Second-order tensors with special properties", for example $M^{\mathsf T}(3I)M=3I$ for the rotation in practice 2, contrasting with $\operatorname{diag}(1,2)\mapsto\operatorname{diag}(2,1)$.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/1 Vectors/1 Vectors.md
+priority: low
+graph: no
+manim: no
+summary: Clean chapter hub with a TLDR and correct links to all seven section notes.
+- [Structure] No change needed; all links resolve.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/1 Vectors/1.1 Definitions (basic).md
+priority: low
+graph: no
+manim: no
+summary: Clear and correct introductory definitions of scalar, vector, and tensor, with a somewhat padded physical-quantities table.
+- [Intuition] In the free/bound/sliding vector paragraph, add one concrete contrast (the same force applied at the hinge vs. at the handle of a door gives different torque) so the reader sees why the point of application matters for bound and sliding vectors.
+- [Simplify] The definition "a tensor ... can have magnitude and multiple directions" is vague; add one sentence after the inertia-tensor example saying that a rank-2 tensor maps one vector ($\vec\omega$) to another vector ($\vec L$) that need not be parallel.
+- [Structure] The physical-quantities table lists ten quantities with no symbol (speed, mass, charge, energy, angular momentum, ...) that are only mentioned in passing; keep only the quantities that the note writes as symbols ($\mechanical{\mathbf F}$) or merge the rest into one row, to keep the table useful.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/1 Vectors/1.2 Cartesian unit vectors.md
+priority: low
+graph: no
+manim: no
+summary: Short, correct note on $\hat i,\hat j,\hat k$; adequate for its scope.
+- [Example] Add a one-line example that combines the three given terms, $5\hat i-3\hat j+\hat k$, and states its magnitude $\sqrt{35}\approx5.92$, as a bridge to 1.3.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/1 Vectors/1.3 Vector components.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and clear; the numerical example (7 m at 210°, components −6.1 m and −3.5 m) and the quadrant rule check out.
+- [Graph] Add a native 2D graph of the Eq. (1.3) example: arrow from the origin to $(-6.06,-3.5)$, dashed projections onto both axes, the angle arc of $210^\circ$, axes from $-8$ to $2$ (x) and $-5$ to $2$ (y); it makes the "both components negative" statement visible.
+- [Simplify] The paragraph on light and shadows (Fig. 1.6) and the following non-orthogonal remark can be shortened to one sentence each; the distinction "parallel projection vs. perpendicular projection" is only meaningful in Chapter 4 and can be a forward link.
+- [Intuition] After Eq. (1.5), state explicitly why $\arctan(A_y/A_x)$ alone fails: $(3,4)$ and $(-3,-4)$ give the same ratio, so the principal value cannot distinguish opposite vectors.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/1 Vectors/1.4 Vector addition and multiplication by a scalar.md
+priority: low
+graph: yes
+manim: yes
+summary: Correct and readable; the worked example $\vec C=4\hat i+9\hat j$, $|\vec C|\approx9.85$, $\theta\approx66.0^\circ$ is verified.
+- [Graph] Add a native 2D graph for the worked example: arrows $\vec A=(6,1)$ from the origin, $\vec B=(-2,8)$ from $(6,1)$, and resultant $\vec C=(4,9)$, plus a faint parallelogram using $\vec B$ from the origin; range x in $[-3,7]$, y in $[0,10]$.
+- [Manim] Animate the head-to-tail rule: translate $\vec B$ so its tail meets the head of $\vec A$, draw $\vec C$, then repeat in the order $\vec B+\vec A$ to show commutativity via the parallelogram.
+- [Intuition] Add one sentence that subtraction is addition of $-\vec B$, since 3.2 later relies on $\Delta\vec v=\vec v_{\mathrm{final}}+(-\vec v_{\mathrm{initial}})$.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/1 Vectors/1.5 Non-Cartesian unit vectors.md
+priority: medium
+graph: yes
+manim: yes
+summary: Formulas for polar, cylindrical, and spherical coordinates and unit vectors are all correct, but the note reuses $r$ and $\theta$ with different meanings across sections and gives no intuition for why the unit vectors rotate.
+- [Simplify] The note uses $\theta$ for the polar angle from the $x$-axis and later for the zenith angle from the $z$-axis, and $r$ for the cylindrical distance from the $z$-axis and the spherical distance from the origin; add a short warning at the start of each subsection (or write $\rho$ for the cylindrical radius, as already mentioned) so readers do not mix them.
+- [Manim] Animate a point moving around a circle at fixed $r$ with $\hat r$ and $\hat\theta$ attached to it, alongside fixed $\hat i,\hat j$ at the same point; this shows directly why polar unit vectors are position-dependent and why their time derivatives are nonzero.
+- [Graph] Add a 3D graph of the spherical unit vectors at one point (for example $r=1$, $\theta=50^\circ$, $\phi=35^\circ$), drawing $\hat r,\hat\theta,\hat\phi$ from Eq. (1.17) together with the meridian and the parallel through that point.
+- [Simplify] The sentence "they do not constitute a fixed set of free vectors" is confusing because each unit vector can be moved as a free vector; say instead that the triad changes from point to point, so there is no single global polar basis.
+- [Intuition] Add the derivative relations $\mathrm d\hat r/\mathrm d\theta=\hat\theta$ and $\mathrm d\hat\theta/\mathrm d\theta=-\hat r$ (directly from Eq. 1.11) right after the remark "account for changes in its unit vectors", as a concrete payoff.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/1 Vectors/1.6 Basis vectors.md
+priority: medium
+graph: yes
+manim: yes
+summary: Correct (the spherical coordinate basis vectors and Eq. 1.20 check out), but the step from "basis" to "coordinate basis from partial derivatives" is abrupt for a beginner.
+- [Intuition] Before the spherical example, explain in one sentence that $\vec e_\theta=\partial\vec R/\partial\theta$ is the velocity of the point when only $\theta$ changes, which is why its length is $r$ (arc length $r\,\mathrm d\theta$); then state $|\vec e_\phi|=r\sin\theta$ explicitly.
+- [Example] Add a numerical non-orthogonal example: with $\vec e_1=\hat i$ and $\vec e_2=\hat i+\hat j$, the vector $3\hat i+2\hat j$ has components $(1,2)$; this makes "components depend on the basis" concrete.
+- [Graph] Add a 2D graph with an oblique grid generated by $\vec e_1=(1,0)$ and $\vec e_2=(1,1)$ over $[-1,4]\times[-1,3]$ and the vector $(3,2)$ decomposed along the grid lines.
+- [Manim] Animate the transformation of the square Cartesian grid into the oblique grid while a fixed arrow stays in place and its component labels update; this shows that the vector is unchanged while its components change.
+- [Simplify] State that the general formula Eq. (1.20) is the same chain rule as Eq. (2.25) and write it compactly as $\vec e_i=\sum_j(\partial x'_j/\partial x_i)\,\vec e'_j$ before the expanded form.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/1 Vectors/1.7 Chapter 1 problems.md
+priority: low
+graph: no
+manim: no
+summary: Clear problem list; the problems are well-posed (the basis in 1.10 is linearly independent, determinant 9).
+- [Structure] No change needed; optionally add short numerical answers (for example 1.1(b): $|\vec C|\approx5.83\,\mathrm{m\,s^{-1}}$ at $121^\circ$) so readers can self-check, since footnote 7 in 1.4 says full solutions are external.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/2 Vector operations/2 Vector operations.md
+priority: low
+graph: no
+manim: no
+summary: Clean chapter hub with correct links to all twelve section notes.
+- [Structure] No change needed; all links resolve.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/2 Vector operations/2.1 Scalar product.md
+priority: low
+graph: yes
+manim: yes
+summary: Correct and clear; the angle example $\arccos(41/\sqrt{45\cdot59})\approx37.3^\circ$ is verified.
+- [Manim] Animate $\vec B$ rotating around a fixed $\vec A$ while the projection of $\vec B$ onto $\vec A$ and the value $\vec A\cdot\vec B$ update; this shows the sign change at $90^\circ$ and the maximum at $0^\circ$.
+- [Graph] Add a 2D graph of $\vec A\cdot\vec B/(|\vec A||\vec B|)=\cos\theta$ for $\theta\in[0,180^\circ]$ with the zero crossing at $90^\circ$ marked, next to the projection picture.
+- [Example] Add a short physical example with numbers for the work statement in the first paragraph (for example $\vec F=(3,4)\,\mathrm N$, $\vec d=(5,0)\,\mathrm m$, $W=15\,\mathrm J$).
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/2 Vector operations/2.10 Curl.md
+priority: medium
+graph: yes
+manim: yes
+summary: Formulas (Cartesian, cylindrical, spherical curl and the $k/r\,\hat\phi$ example) are correct, but the paddlewheel argument for Fig. 2.16 depends on a flow direction that the text never states.
+- [Simplify] In the Fig. 2.16 paragraph, state the sense of the flow (clockwise or counterclockwise) and where the paddlewheel sits; as written, "curvature turns the wheel clockwise" is only true for clockwise flow, while the field $(k/r)\hat\phi$ with $k>0$ circulates counterclockwise.
+- [Example] Add the rigid-rotation counterexample $\vec A=\omega r\,\hat\phi$, whose curl is $2\omega\hat z$, beside the $k/r$ example; the pair shows that circulating field lines alone do not determine the curl.
+- [Graph] Add a native 2D vector-field plot (quiver) of the shear field $\vec A=y\,\hat i$ and the vortex field $\vec A=(-y\hat i+x\hat j)/(x^2+y^2)$ over $[-2,2]^2$, to match Figs. 2.14 and 2.16 with formulas.
+- [Manim] Animate a small paddlewheel carried by (a) rigid rotation, (b) shear flow, and (c) the $1/r$ vortex; it spins in (a) and (b) but only translates in (c), which is the key insight of the section.
+- [Simplify] The constant $k$ in $(k/r)\hat\phi$ is visually close to the unit vector $\hat k$ in the same note; rename it (for example $c$ or $\Gamma/2\pi$).
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/2 Vector operations/2.11 Laplacian.md
+priority: medium
+graph: yes
+manim: no
+summary: The finite-difference derivation and the $k/r$ example are correct and well motivated, but the scalar field changes name from $\phi$ to $\psi$ halfway because $\phi$ is also the azimuth, and the 1/r figure discussion is confusing.
+- [Correctness] Symbol clash: $\phi$ denotes the scalar field in Eqs. (2.43)–(2.50) and the $k/r$ example, but the azimuth angle in Eqs. (2.51)–(2.52) (where the field is renamed $\psi$); use $\psi$ for the scalar field throughout the note.
+- [Simplify] The Fig. 2.19 paragraph introduces $1/r$ as "a steep peak" right after explaining that peaks have negative Laplacian; for the planar profile $1/\rho$ shown, the 2D Laplacian is $+1/\rho^3>0$, so the figure is not an example of that sign rule. Use a Gaussian peak $e^{-\rho^2}$ (2D Laplacian $(4\rho^2-4)e^{-\rho^2}$, negative near the top) as the illustration instead.
+- [Graph] Add a 1D graph of $f(x)=e^{-x^2}$ and $f''(x)=(4x^2-2)e^{-x^2}$ on $[-3,3]$, marking that $f''<0$ near the peak and $f''>0$ in the tails; this supports the "center vs. neighbor average" interpretation of Eq. (2.50).
+- [Example] Add a numerical check of Eq. (2.49) with $\phi=x^2+y^2+z^2$ (exact Laplacian 6) at $h=0.1$, which returns exactly 6 and shows the formula works.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/2 Vector operations/2.12 Chapter 2 problems.md
+priority: low
+graph: no
+manim: no
+summary: Clear, well-posed problem list.
+- [Structure] No change needed; optionally add short answers (for example 2.11: $W=mgd\sin20^\circ\approx2.0\times10^5\,\mathrm J$; 2.12: force perpendicular to the wrench, $3.0\,\mathrm{N\,m}$) for self-checking.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/2 Vector operations/2.2 Cross product.md
+priority: low
+graph: yes
+manim: yes
+summary: Correct and clear; component formula, determinant, magnitude, and unit-vector table are all right.
+- [Graph] Add a native 3D graph with $\vec A=(2,0,0)$, $\vec B=(1,2,0)$, the parallelogram they span, and $\vec A\times\vec B=(0,0,4)$, so area and direction are visible together.
+- [Manim] Animate $\vec B$ rotating in the $xy$-plane from parallel to antiparallel with $\vec A$ while the parallelogram area and the length of $\vec A\times\vec B$ along $\hat k$ grow, peak at $90^\circ$, and shrink; then continue past $180^\circ$ to show the product flips to $-\hat k$.
+- [Example] Add a short numerical example (for example $\vec A=\hat i+2\hat j$, $\vec B=3\hat i-\hat j+\hat k$) with an explicit check that the result is perpendicular to both inputs via dot products.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/2 Vector operations/2.3 Triple scalar product.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and concise derivation with geometric meaning and coplanarity test.
+- [Graph] Add a native 3D graph of a parallelepiped spanned by $\vec A=(1,0.3,1.2)$, $\vec B=(2,0,0)$, $\vec C=(0.5,1.5,0)$, showing the base normal $\vec B\times\vec C$ and the height $|\vec A|\cos\phi$.
+- [Example] Add a numerical example with a determinant evaluation and a coplanar case (for example $\vec C=\vec A+\vec B$ gives zero) to illustrate Eq. (2.13).
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/2 Vector operations/2.4 Triple vector product.md
+priority: medium
+graph: no
+manim: no
+summary: The component derivation of BAC−CAB is correct (Eqs. 2.18 and 2.19 verified) but long and mechanical, with little insight.
+- [Simplify] Replace or supplement the full component expansion with the short argument: the result lies in the plane of $\vec B$ and $\vec C$, so it is $\beta\vec B+\gamma\vec C$; perpendicularity to $\vec A$ gives $\beta(\vec A\cdot\vec B)+\gamma(\vec A\cdot\vec C)=0$, and one simple case fixes the scale. Alternatively verify only the $\hat i$ component and say the rest follow by cyclic permutation.
+- [Example] Add the physical example promised in the first sentence: centripetal acceleration $\vec\omega\times(\vec\omega\times\vec r)=\vec\omega(\vec\omega\cdot\vec r)-\omega^2\vec r$, which for $\vec r\perp\vec\omega$ is $-\omega^2\vec r$.
+- [Example] Add a numerical demonstration of non-associativity, for example $\hat i\times(\hat i\times\hat j)=-\hat j$ while $(\hat i\times\hat i)\times\hat j=\vec 0$.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/2 Vector operations/2.5 Partial derivatives.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and clear; the example derivatives, slope values at $(-3,2)$, and the native 3D graph scaling all check out.
+- [Simplify] In the paragraph before the graph, "zero near $x=0$" should say "zero at $x=-1/3$", matching the value computed later in "Slopes of the surface".
+- [Graph] In Fig. 2.9, add the two tangent lines at $(x,y)=(-3,2)$ with slopes $-59$ (along $x$) and $39$ (along $y$), scaled by the same factor $1/65$, so the reader sees that the partial derivatives are slopes of two different curves on the surface.
+- [Structure] The power-rule subsection interrupts the partial-derivative thread; move it before the two-variable discussion or into a footnote.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/2 Vector operations/2.6 Vectors as derivatives.md
+priority: medium
+graph: yes
+manim: yes
+summary: Correct but abstract; the jump from the chain rule to "partial derivatives are basis vectors" needs a concrete example.
+- [Example] Add a worked example: $T(x,y)=x^2+y$ along the path $x=t$, $y=t^2$; compute $\mathrm dT/\mathrm dt=2t\cdot1+1\cdot2t=4t$ by Eq. (2.27) and confirm by substitution $T=2t^2$.
+- [Graph] Add a 2D graph with contour lines of the example temperature field and the parametrized path, with tangent velocity arrows at $t=0.5,1,1.5$, to make the abstract Fig. 2.10 explanation concrete.
+- [Manim] Animate a dot moving along the path over the temperature contours while a side panel plots $T(t)$; it shows how the same spatial field gives different rates for different speeds and directions.
+- [Intuition] Explain in one sentence why one may identify the vector with the operator: the map $f\mapsto\mathrm df/\mathrm dt$ determines the components $(v_x,v_y)$ uniquely (apply it to $f=x$ and $f=y$).
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/2 Vector operations/2.7 Nabla - the del operator.md
+priority: low
+graph: no
+manim: no
+summary: Short, correct definition note for the del operator.
+- [Simplify] Add one sentence warning that $\nabla$ is an operator, not an ordinary vector, so $\nabla\cdot\vec A\neq\vec A\cdot\nabla$ and its non-Cartesian forms are not obtained by simply swapping unit vectors (compare Eqs. 2.31 and 2.36).
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/2 Vector operations/2.8 Gradient.md
+priority: low
+graph: no
+manim: no
+summary: Correct and clear, with two good native graphs (3D plane and 2D contours with gradient arrows) whose slopes and labels check out.
+- [Example] Add a non-uniform example such as $\psi=x^2+y^2$ (gradient $2x\hat i+2y\hat j$, pointing radially outward and perpendicular to circular contours), since the plane example has a constant gradient and hides the position dependence.
+- [Intuition] State and briefly justify the directional-derivative relation $\mathrm d\psi/\mathrm ds=\nabla\psi\cdot\hat u$, which is the reason the gradient gives the steepest slope and is perpendicular to contours.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/2 Vector operations/2.9 Divergence.md
+priority: medium
+graph: yes
+manim: yes
+summary: Correct calculations ($\nabla\cdot(r^2\hat r)=4r$, $\nabla\cdot(\hat r/r^2)=0$), but the intuition relies on raster figures and the flux interpretation is introduced only at the end.
+- [Graph] Add native 2D vector-field plots for $\vec A=\sin(\pi x)\hat i$ on $[0,2]\times[0,1]$, and for $\vec A=r^2\hat r$ and $\vec A=\hat r/r^2$ in the $xy$-plane on $[-2,2]^2$, so the formulas and pictures sit side by side.
+- [Intuition] Move the flux definition ("compare outward and inward flows across a small volume", i.e. $\nabla\cdot\vec A=\lim_{V\to0}\frac1V\oint\vec A\cdot\mathrm d\vec S$) to the top of the note, before the sawdust analogy; it makes the later examples interpretable.
+- [Example] Verify $\nabla\cdot(\hat r/r^2)=0$ once with Eq. (2.37), $\frac1{r^2}\partial_r(r^2\cdot r^{-2})=0$, to show why spherical coordinates were recommended.
+- [Manim] Animate a small cube moving through the $\sin(\pi x)\hat i$ field with inflow and outflow arrows on its faces scaled by the local field, showing net outflow where $\cos(\pi x)>0$ and net inflow where it is negative.
+- [Simplify] Footnote 7 ("analogy with an incompressible fluid") should add that, for an incompressible fluid, nonzero divergence means a source or sink is present; otherwise readers may conclude the divergence must be zero.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/3 Vector applications/3 Vector applications.md
+priority: low
+graph: no
+manim: no
+summary: Clean chapter hub with correct links.
+- [Structure] No change needed; all links resolve.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/3 Vector applications/3.1 Mass on an inclined plane.md
+priority: low
+graph: yes
+manim: yes
+summary: Correct, careful, and complete; numbers verified (4.43 m/s, 0.90 s, 2.45 m/s with friction).
+- [Intuition] After Eq. (3.14), note that $d\sin\theta=h$ is the height of the ramp, so $v=\sqrt{2gh}$ is independent of the angle; this answers the opening question "which quantities affect it" and links to energy conservation.
+- [Graph] Add a 2D graph of final speed $v(\theta)=\sqrt{2gd(\sin\theta-\mu_k\cos\theta)}$ for $d=2\,\mathrm m$, $\theta\in[0,90^\circ]$, with curves for $\mu_k=0$ and $\mu_k=0.4$; the friction curve starts at $\theta=\arctan0.4\approx21.8^\circ$.
+- [Manim] Animate the free-body diagram: rotate the ramp from $0^\circ$ to $90^\circ$ while the gravity components $mg\sin\theta$ and $mg\cos\theta$ and the normal force resize, illustrating the two limiting cases discussed in the text.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/3 Vector applications/3.2 Curvilinear motion.md
+priority: medium
+graph: yes
+manim: yes
+summary: Correct physics and numbers (333 m/s², 1333 N ≈ 300 lbf), but the core $v^2/r$ derivation depends on raster figures and the centrifugal discussion is a bit diffuse.
+- [Manim] Animate a point moving on a circle at constant speed, copying $\vec v_{\mathrm{initial}}$ and $\vec v_{\mathrm{final}}$ to a common tail, drawing $\Delta\vec v$, and shrinking $\Delta t$ so that $\Delta\vec v$ turns toward the center and $|\Delta\vec v|/\Delta t\to v^2/r$.
+- [Graph] Add a 2D graph of a circle of radius $1.2$ with velocity arrows at two positions $\Delta\theta=30^\circ$ apart and the velocity triangle beside it, to supplement Figs. 3.13–3.14.
+- [Intuition] Add a vector derivation in two lines using 1.5: $\vec r=r\hat r$, $\vec v=r\dot\theta\hat\theta$, $\vec a=r\ddot\theta\hat\theta-r\dot\theta^2\hat r$ (constant $r$), which gives both tangential and centripetal parts at once and connects to the polar unit vectors.
+- [Simplify] In the hammer example, state that the cable length is used as the radius (ignoring the thrower's arms), since the radius of the hammer's circle is larger in practice.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/3 Vector applications/3.3 The electric field.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct and well structured (proton field $1.44\times10^{-9}$ N/C, divergence and curl checks), but the superposition example depends on charge positions that appear only in a raster figure.
+- [Structure] Fig. 3.18 gives the positions of $q_1,q_2,q_3$ only in the image; write the coordinates in the text so the superposition section and Problem 3.6 are usable without the figure.
+- [Graph] Add a native 2D field plot (arrows or field lines) of the three charges $+5$, $-6$, $-8\,\mathrm{nC}$ at the Fig. 3.18 positions, with the three contributions and their sum at the origin.
+- [Simplify] The covector paragraph ($-\mathrm dV$, one-forms, metric) is far ahead of the reader's level in Chapter 3; move it to a footnote or the end with a forward link to 5.9.
+- [Intuition] At "the point charge contributes to the divergence there", give the explicit result $\nabla\cdot\vec E=q\,\delta^3(\vec r)/\varepsilon_0$ and note that $k_e=1/(4\pi\varepsilon_0)$, which links Eq. (3.28) to Gauss's law (3.30).
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/3 Vector applications/3.4 The magnetic field.md
+priority: low
+graph: yes
+manim: yes
+summary: Correct and clear; the force directions in Figs. 3.21 and 3.23 and the divergence/curl checks of the wire field are verified.
+- [Simplify] "carrying current $I$ along the positive axis" should name the axis: "along the positive $z$-axis".
+- [Manim] Animate a positive charge in a uniform field out of the page tracing the clockwise circle with velocity and force arrows, then add a parallel velocity component to show the helix in 3D.
+- [Graph] Add a native 2D plot of $|\vec B|=\mu_0I/(2\pi r)$ versus $r$ (for $I=10\,\mathrm A$, $r\in[0.01,0.2]\,\mathrm m$), or a 3D graph of the helix $x=R\cos\omega t$, $y=-R\sin\omega t$, $z=v_\parallel t$.
+- [Example] Add the cyclotron radius $r=mv/(|q|B)$ from the $v^2/r$ result of 3.2, with a numerical example (electron at $10^6\,\mathrm{m/s}$ in $1\,\mathrm{mT}$ gives $r\approx5.7\,\mathrm{mm}$).
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/3 Vector applications/3.5 Chapter 3 problems.md
+priority: low
+graph: no
+manim: no
+summary: Clear problem list, but Problem 3.3 is underdetermined and Problem 3.5 uses an unrealistic radius.
+- [Correctness] Problem 3.3 gives a push of 10 N on a box of unspecified mass $m$; the speed at the top depends on $m$ ($a=F/m-g(\sin25^\circ+0.33\cos25^\circ)$, and the box only accelerates up the ramp if $m<1.41\,\mathrm{kg}$), so state a numerical mass.
+- [Example] Problem 3.5: a curve of radius 10 m at 150 mi/h gives $a_c\approx450\,\mathrm{m\,s^{-2}}\approx46g$, which is physically impossible for a car; use a realistic radius (for example 100 m) or note that the numbers are illustrative.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/4 Covariant and contravariant vector components/4 Covariant and contravariant vector components.md
+priority: low
+graph: no
+manim: no
+summary: Clear chapter hub with a short motivating paragraph and complete links to all ten sections.
+- [Structure] File on disk uses CRLF line endings (no BOM); convert to LF as required by the Obsidian skill.
+- [Structure] No content change needed; optionally add one line saying that the running examples are the $150^\circ$ rotation (4.1–4.3) and the basis $\vec e_1=(1,3)$, $\vec e_2=(4,0)$ (4.6).
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/4 Covariant and contravariant vector components/4.1 Coordinate-system transformations.md
+priority: low
+graph: yes
+manim: no
+summary: Correct, well-paced derivation of the passive rotation matrix with a verified numeric example ($A'_x\approx-2.83$, $A'_y\approx-5.10$), though it relies heavily on figures for the direction-cosine angles.
+- [Structure] File on disk uses CRLF line endings (no BOM); convert to LF as required by the Obsidian skill.
+- [Graph] Add a native 2D plot of $A'_x(\theta)=5\cos\theta+3\sin\theta$ and $A'_y(\theta)=-5\sin\theta+3\cos\theta$ for $\theta\in[0^\circ,360^\circ]$, with markers at $\theta=150^\circ$ $(-2.83,-5.10)$ and at $\theta=\arctan(3/5)\approx31^\circ$ where $A'_y=0$ and $A'_x=|\vec A|\approx5.83$; this makes the "rotate until $\vec A$ lies along $x'$" remark concrete.
+- [Intuition] After Eq. (4.11), add the invariance check $A_x'^2+A_y'^2\approx(-2.83)^2+(-5.10)^2\approx34=5^2+3^2$ to show numerically that the vector itself is unchanged.
+- [Simplify] In the $150^\circ$ example, state explicitly that $\alpha_{21}=240^\circ$ is equivalent to the unsigned angle $120^\circ$ (equal cosines), since readers measuring the angle between $y'$ and $x$ directly get $120^\circ$.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/4 Covariant and contravariant vector components/4.10 Chapter 4 problems.md
+priority: low
+graph: no
+manim: no
+summary: Clear problem list consistent with the chapter; the link in Problem 4.9 points to a numbered equation rather than to the unnumbered simultaneous equations it means.
+- [Structure] File on disk uses CRLF line endings (no BOM); convert to LF as required by the Obsidian skill.
+- [Links] Problem 4.9 cites "Equation (4.26)", but the simultaneous equations follow it unnumbered (their numeric form is Eq. (4.27)/(4.28)); cite Eq. (4.27) or give the system explicitly.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/4 Covariant and contravariant vector components/4.2 Basis-vector transformations.md
+priority: low
+graph: no
+manim: no
+summary: Correct and readable derivation of the active rotation matrix with a verified numeric example ($\approx(-5.83,-0.10)$).
+- [Structure] File on disk uses CRLF line endings (no BOM); convert to LF as required by the Obsidian skill.
+- [Simplify] Paragraph 2 states the covariant/contravariant transformation rule before any non-orthonormal basis has been introduced; move it after the active/passive comparison or add "in general bases (Sec. 4.4)" so the claim is not read as applying to the Cartesian example where both coincide.
+- [Intuition] After Eq. (4.16), note that $|\vec A'|=\sqrt{5.83^2+0.10^2}\approx5.83=\sqrt{34}$, confirming length preservation numerically.
+- [Simplify] Collapse the two near-identical intermediate equation blocks (angle-addition form and parenthesized form) into one step to shorten the derivation.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/4 Covariant and contravariant vector components/4.3 Basis-vector vs. component transformations.md
+priority: low
+graph: no
+manim: yes
+summary: Short, correct note showing $M_\mathrm{passive}=R^{-1}=R^\mathsf T$; it would benefit from one concrete check and a visual of the compensation.
+- [Structure] File on disk uses CRLF line endings (no BOM); convert to LF as required by the Obsidian skill.
+- [Manim] Animate side by side: (left) axes rotating by $\theta$ with fixed $\vec A=5\hat i+3\hat j$ and its components updating, (right) the vector rotating by $-\theta$ in fixed axes; both component readouts stay identical, illustrating $M_\mathrm{passive}(\theta)=R(-\theta)$.
+- [Example] State the identity $M_\mathrm{passive}(\theta)=R(-\theta)$ explicitly and verify it with the $150^\circ$ numbers from 4.1 and 4.2 (Problem 4.4 asks for this, so a one-line pointer suffices).
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/4 Covariant and contravariant vector components/4.4 Non-orthogonal coordinate systems.md
+priority: medium
+graph: no
+manim: yes
+summary: Conceptually correct but entirely figure-dependent with no formulas, so the two kinds of projection remain abstract.
+- [Structure] File on disk uses CRLF line endings (no BOM); convert to LF as required by the Obsidian skill.
+- [Manim] Animate the angle between the two axes shrinking from $90^\circ$ to $60^\circ$ while showing both the parallel-projection shadow and the perpendicular-projection shadow on the $x$-axis; the two lengths start equal and visibly separate.
+- [Example] Add a minimal formula: for unit axes at angle $\varphi$ with $\vec A=A^1\hat e_1+A^2\hat e_2$, the perpendicular projections are $A_1=\vec A\cdot\hat e_1=A^1+A^2\cos\varphi$ and $A_2=A^1\cos\varphi+A^2$; this shows directly why they coincide only for $\varphi=90^\circ$.
+- [Intuition] State explicitly why perpendicular components fail to reconstruct $\vec A$ (Fig. 4.12(b)): $A_1\hat e_1+A_2\hat e_2$ double-counts the overlap terms proportional to $\cos\varphi$; this motivates the dual basis in 4.5.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/4 Covariant and contravariant vector components/4.5 Dual basis vectors.md
+priority: medium
+graph: no
+manim: no
+summary: Correct definitions of the reciprocal basis including Eq. (4.24), but the component labels $A^x,A_x$ paired with $\vec e_1,\vec e_2$ clash with the Cartesian meaning of $A_x$ used in 4.1 and 4.6.
+- [Structure] File on disk uses CRLF line endings (no BOM); convert to LF as required by the Obsidian skill.
+- [Simplify] Replace $A^x,A^y,A_x,A_y$ in Eqs. (4.20), (4.23), (4.25) by $A^1,A^2,A_1,A_2$; in 4.6 $A_x$ again denotes the Cartesian component ($=7$), so the current labels invite confusion between covariant and Cartesian components.
+- [Simplify] State the defining relation compactly as $\vec e^{\,i}\cdot\vec e_j=\delta^i{}_j$ before the angle-based Eqs. (4.21)–(4.22); the length formulas then follow in one line.
+- [Example] Add a short 2D check using the 4.6 basis: $\vec e_1=(1,3)$, $\vec e_2=(4,0)$ give $\vec e^{\,1}=(0,1/3)$, $\vec e^{\,2}=(1/4,-1/12)$, and verify $\vec e^{\,i}\cdot\vec e_j=\delta^i{}_j$; optionally verify Eq. (4.24) by embedding in 3D with $\vec e_3=\hat k$.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/4 Covariant and contravariant vector components/4.6 Finding covariant and contravariant components.md
+priority: medium
+graph: yes
+manim: no
+summary: All numbers check out ($A^1=2/3$, $A^2=19/12$, $A_1=13$, $A_2=28$, $|\vec e^{\,2}|\approx0.264$), but the geometric route via Eqs. (4.33)–(4.36) is long and obscures the simple dot-product result given only at the end.
+- [Structure] File on disk uses CRLF line endings (no BOM); convert to LF as required by the Obsidian skill.
+- [Structure] Move the dot-product shortcut (Eqs. (4.41)–(4.42) and the four-line example) up front, then present the geometric and Cramer's-rule calculations as checks; readers currently wade through three methods before seeing the one-line answer.
+- [Graph] Add a native 2D plot of $\vec A=(7,2)$, $\vec e_1=(1,3)$, $\vec e_2=(4,0)$, the reciprocal vectors $\vec e^{\,1}=(0,1/3)$ and $\vec e^{\,2}=(1/4,-1/12)$, and the parallelogram $A^1\vec e_1+A^2\vec e_2$ with $A^1=2/3$, $A^2=19/12$; axes $x\in[-1,8]$, $y\in[-1,4]$.
+- [Intuition] Add the closing check $A^iA_i=\tfrac23\cdot13+\tfrac{19}{12}\cdot28=53=|\vec A|^2$ to connect the two component sets to the invariant length (anticipates 5.5).
+- [Simplify] In Eq. (4.31), give the exact values $|\vec e^{\,1}|=1/3$ and $|\vec e^{\,2}|=\sqrt{10}/12$ instead of only decimals, which removes the rounding in $A_1\approx13.0$, $A_2\approx28.0$.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/4 Covariant and contravariant vector components/4.7 Index notation.md
+priority: low
+graph: no
+manim: no
+summary: Clear build-up from matrix rows to the summation convention; Eq. (4.48) mixes index positions before the corrected form is mentioned.
+- [Structure] File on disk uses CRLF line endings (no BOM); convert to LF as required by the Obsidian skill.
+- [Simplify] Eq. (4.48) $A'^i=a_{ij}A^j$ has the free index $i$ up on the left and down on the right, contradicting the convention stated just before it; write $A'^i=a^i{}_jA^j$ directly and keep the remark that Cartesian texts often ignore index position.
+- [Example] Add one 2D worked line: with the entries of Eq. (4.9), $A'^1=a^1{}_1A^1+a^1{}_2A^2=5\cos150^\circ+3\cos60^\circ\approx-2.83$, linking the abstract notation back to 4.1.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/4 Covariant and contravariant vector components/4.8 Quantities that transform contravariantly.md
+priority: low
+graph: no
+manim: no
+summary: Correct and well-structured derivation of the contravariant rule with a good polar example confirming that the Jacobian columns are coordinate basis vectors.
+- [Structure] File on disk uses CRLF line endings (no BOM); convert to LF as required by the Obsidian skill.
+- [Intuition] Note after Eq. (4.58) that $|\vec e_2|=r$, i.e. the coordinate basis vector $\vec e_\theta$ is not a unit vector; this prepares the scale factors in 5.5 and the Christoffel example in 5.7.
+- [Simplify] Eq. (4.49) introduces $a_{11},a_{12},a_{13}$ without values; add $a_{11}=\partial x/\partial r=\sin\theta\cos\phi$, $a_{12}=r\cos\theta\cos\phi$, $a_{13}=-r\sin\theta\sin\phi$ so the "coefficients are partial derivatives" claim is shown, not just asserted.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/4 Covariant and contravariant vector components/4.9 Quantities that transform covariantly.md
+priority: medium
+graph: no
+manim: no
+summary: Correct derivation of the covariant rule, but the paragraph after Eq. (4.61) packs inverse Jacobian, transpose, reciprocal basis, and gradient normals into a few dense sentences without an example.
+- [Structure] File on disk uses CRLF line endings (no BOM); convert to LF as required by the Obsidian skill.
+- [Example] Add the polar counterpart to the 4.8 example: for $f(x,y)$, $\partial f/\partial r=\cos\theta\,\partial_xf+\sin\theta\,\partial_yf$ and $\partial f/\partial\theta=-r\sin\theta\,\partial_xf+r\cos\theta\,\partial_yf$, showing that the same Jacobian entries now act from the other side (transposed).
+- [Simplify] Split the paragraph after Eq. (4.61) into two: (1) inverse Jacobian versus Jacobian and the transpose, (2) geometric meaning (reciprocal basis normal to coordinate surfaces, gradient expansion).
+- [Intuition] Add the one-line invariance check $\mathrm df=\partial_if\,\mathrm dx^i=\partial'_if\,\mathrm dx'^i$, which shows why the two transformation rules must be inverse to each other.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/5 Higher-rank tensors/5 Higher-rank tensors.md
+priority: low
+graph: no
+manim: no
+summary: Clean chapter hub with complete links; no content change needed.
+- [Structure] File on disk uses CRLF line endings (no BOM); convert to LF as required by the Obsidian skill.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/5 Higher-rank tensors/5.1 Definitions (advanced).md
+priority: low
+graph: no
+manim: no
+summary: Concise and correct transformation-based definitions; footnote 2 is out of context.
+- [Structure] File on disk uses CRLF line endings (no BOM); convert to LF as required by the Obsidian skill.
+- [Structure] Footnote 2 ("Specifying one direction in three dimensions takes two angles") is attached to a sentence about Chapter 1 and has no visible connection to the text; move it next to the vector definition or remove it.
+- [Example] Add a concrete rank-two example (e.g. $A^iB^j$ or the inertia tensor of 6.1) to illustrate the $3^n$ entries and the basis factors $T^{ij}\vec e_i\otimes\vec e_j$.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/5 Higher-rank tensors/5.10 Chapter 5 problems.md
+priority: low
+graph: no
+manim: no
+summary: Clear, consistent problem list; links and referenced equations (5.16), (5.17) exist.
+- [Structure] File on disk uses CRLF line endings (no BOM); convert to LF as required by the Obsidian skill.
+- [Links] Problem 5.8 uses $R$ for the sphere radius while 6.3 uses $\mechanical{a}$ for the same sphere and $R$ for the Ricci scalar; add a pointer to [[6.3 The Riemann curvature tensor]] and align the radius symbol.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/5 Higher-rank tensors/5.2 Covariant, contravariant, and mixed tensors.md
+priority: low
+graph: no
+manim: no
+summary: Correct and compact statement of the transformation rules for rank-two tensors.
+- [Structure] File on disk uses CRLF line endings (no BOM); convert to LF as required by the Obsidian skill.
+- [Example] Add one concrete check, e.g. that $\delta^i{}_j$ transforms into itself under Eq. (5.5), or obtain the polar metric $g_{ij}$ from the Cartesian $\delta_{ab}$ with Eq. (5.4); this gives readers a worked rank-two transformation.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/5 Higher-rank tensors/5.3 Tensor addition and subtraction.md
+priority: low
+graph: no
+manim: no
+summary: Correct and clear; no substantive change needed.
+- [Structure] File on disk uses CRLF line endings (no BOM); convert to LF as required by the Obsidian skill.
+- [Intuition] Add one sentence on why tensors of different type cannot be added ($A^{ij}+B_{ij}$ does not transform with a single law), which explains the "same type" requirement.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/5 Higher-rank tensors/5.4 Tensor multiplication.md
+priority: low
+graph: no
+manim: no
+summary: Correct treatment of outer product and contraction with a clear Kronecker-delta argument; the Cartesian outer-product example uses lower indices and then switches to upper.
+- [Structure] File on disk uses CRLF line endings (no BOM); convert to LF as required by the Obsidian skill.
+- [Simplify] The outer-product matrix uses $A_1,B_1,\dots$ but the next sentence writes $C^{ij}=A^iB^j$; use upper indices in the matrix as well (or say that index position is immaterial for Cartesian components).
+- [Example] Add a numeric contraction: for $\vec A=(1,2,0)$ and $\vec B=(3,-1,4)$ in Cartesian components, the trace of the outer-product matrix is $1=\vec A\cdot\vec B$, linking contraction to the dot product.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/5 Higher-rank tensors/5.5 Metric tensor.md
+priority: medium
+graph: no
+manim: no
+summary: Correct metric derivation and orthogonal-coordinate formulas (curl prefactors $h_1/H$ etc. verified), but symbols are reused and the primed/unprimed roles are reversed relative to 4.8.
+- [Structure] File on disk uses CRLF line endings (no BOM); convert to LF as required by the Obsidian skill.
+- [Correctness] Symbol clash: $\phi$ is the spherical azimuth in Eqs. (5.16)–(5.18) and the scalar field in the gradient and Laplacian formulas; $\theta$ is both the angle between $\vec A$ and $\vec B$ and the polar angle. Rename the scalar field (e.g. $f$, as in 4.9) and the inter-vector angle (e.g. $\vartheta$).
+- [Simplify] In "Transformation of metric components" the primed coordinates are Cartesian and the unprimed ones curvilinear, the reverse of 4.8 where primes mark the new system; state the role reversal explicitly at the start of the subsection.
+- [Example] Add the 2D metric of the 4.6 basis, $g_{ij}=\begin{pmatrix}10&4\\4&16\end{pmatrix}$, and show $g_{ij}A^iA^j=53=|\vec A|^2$ for $A^i=(2/3,19/12)$, tying the abstract metric to the earlier example.
+- [Intuition] After the mixed form $\mathrm ds^2=\mathrm dx^i\,\mathrm dx_i$, add $\mathrm dx_i=g_{ij}\mathrm dx^j$ so the equality with $g_{ij}\mathrm dx^i\mathrm dx^j$ is immediate rather than asserted.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/5 Higher-rank tensors/5.6 Index raising and lowering.md
+priority: medium
+graph: no
+manim: no
+summary: Correct but very terse; formulas only, with no example or intuition for what raising and lowering mean.
+- [Structure] File on disk uses CRLF line endings (no BOM); convert to LF as required by the Obsidian skill.
+- [Example] Use the 4.6 example: with $g_{ij}=\begin{pmatrix}10&4\\4&16\end{pmatrix}$ and $A^i=(2/3,19/12)$, $g_{ij}A^j=(13,28)=A_i$, reproducing the covariant components found geometrically; then invert with $g^{ij}$.
+- [Intuition] Add one sentence that $g^{ij}g_{jk}=\delta^i{}_k$ (so raising undoes lowering) and that in an orthonormal Cartesian basis raising and lowering change nothing, which is why the distinction was invisible in 4.1–4.3.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/5 Higher-rank tensors/5.7 Tensor derivatives and Christoffel symbols.md
+priority: medium
+graph: yes
+manim: yes
+summary: Correct derivation of Eq. (5.23) and correct cylindrical example ($\Gamma^1{}_{22}=-r$), but the "add two zero expressions" step is opaque and the polar example appears before the symbols are derived.
+- [Structure] File on disk uses CRLF line endings (no BOM); convert to LF as required by the Obsidian skill.
+- [Simplify] Before adding the two zero expressions, state the goal: rewrite each $\vec e\cdot\partial\vec e$ term via $\partial_k(\vec e_i\cdot\vec e_j)=\vec e_i\cdot\partial_k\vec e_j+\vec e_j\cdot\partial_k\vec e_i$ as derivatives of $g_{ij}$; then the six-term regrouping becomes transparent.
+- [Example] Verify the polar value $\Gamma^\theta{}_{r\theta}=1/r$ directly from $\vec e_r=(\cos\theta,\sin\theta)$ and $\vec e_\theta=(-r\sin\theta,r\cos\theta)$: $\partial_\theta\vec e_r=(-\sin\theta,\cos\theta)=\vec e_\theta/r$; this is quicker than citing values.
+- [Graph] Add a 2D vector-field plot of the polar coordinate basis $\vec e_r$ and $\vec e_\theta$ at grid points $r\in\{1,2,3\}$, $\theta$ every $30^\circ$, showing that $\vec e_\theta$ grows with $r$ and both rotate with $\theta$.
+- [Manim] Animate a point moving along a circle of fixed $r$ with $\vec e_r$ attached, drawing the accumulated change $\Delta\vec e_r$ and showing it align with $\vec e_\theta/r$.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/5 Higher-rank tensors/5.8 Covariant differentiation.md
+priority: medium
+graph: no
+manim: no
+summary: Correct formulas (5.24)–(5.25) and cylindrical example, but the parallel-transport paragraphs are abstract and the covariant rule (5.25) is stated without derivation.
+- [Structure] File on disk uses CRLF line endings (no BOM); convert to LF as required by the Obsidian skill.
+- [Simplify] Add a two-line justification of the minus sign in Eq. (5.25): require $(A_iB^i)_{;j}=\partial_j(A_iB^i)$ for the scalar $A_iB^i$ and use Eq. (5.24).
+- [Example] Check the cylindrical result with the constant Cartesian field $\vec A=\hat i$: $A^r=\cos\phi$, $A^\phi=-\sin\phi/r$ give $A^r{}_{;\phi}=-\sin\phi+\sin\phi=0$ and $A^\phi{}_{;\phi}=-\cos\phi/r+\cos\phi/r=0$, showing that the covariant derivative of a constant field vanishes.
+- [Links] The sphere paragraph points to 6.3, but [[5.10 Chapter 5 problems]] Problems 5.8–5.9 contain the sphere metric and connection; link those too.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/5 Higher-rank tensors/5.9 Vectors and one-forms.md
+priority: medium
+graph: no
+manim: no
+summary: Correct modern viewpoint, but compressed into four dense paragraphs with no worked pairing.
+- [Structure] File on disk uses CRLF line endings (no BOM); convert to LF as required by the Obsidian skill.
+- [Example] Add a numeric pairing: $\omega=\mathrm df$ for $f=x^2+y$ at $(1,0)$ has components $(2,1)$; with $\vec v=(3,-1)$, $\omega(\vec v)=5$ is the directional rate of change, i.e. the number of unit-spaced level surfaces crossed per unit parameter.
+- [Intuition] Connect to 4.5: the dual basis one-forms satisfy $\mathrm dx^i(\vec e_j)=\delta^i{}_j$, the same relation that defined the reciprocal vectors; the metric is needed only to turn a one-form into an arrow.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/6 Tensor applications/6 Tensor applications.md
+priority: low
+graph: no
+manim: no
+summary: Clean chapter hub; no content change needed.
+- [Structure] File on disk uses CRLF line endings (no BOM); convert to LF as required by the Obsidian skill.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/6 Tensor applications/6.1 The inertia tensor.md
+priority: low
+graph: no
+manim: yes
+summary: Correct and well-motivated; all pyramid tensors (8; 20/20/8; 12/12/8; the 30° results and the two-rotation result 17.75, -2.6, -3.9, 17, -4.5, 13.25) recompute exactly.
+- [Structure] File on disk uses CRLF line endings (no BOM); convert to LF as required by the Obsidian skill.
+- [Correctness] Symbol clash: $\mechanical{a}$ denotes acceleration (intro and table) and the pyramid half-side, and $a,b$ are also used as component indices in $\mechanical{I}_{ab}$; rename the half-side (e.g. $\mechanical{d}$) or the indices ($j,k$) and keep only one meaning per symbol in the table.
+- [Manim] Animate Fig. 6.1: a single mass circling the $z$-axis above the origin with $\vec\omega$ fixed and $\vec L=m\vec r\times\vec v$ sweeping a cone; then add the opposite mass and show the transverse parts cancel so that $\vec L\parallel\vec\omega$.
+- [Simplify] List the coordinates of the five masses before computing $I_{xx}$ (e.g. $m_1=(a,a,0)$, $m_2=(-a,a,0)$, $m_3=(-a,-a,0)$, $m_4=(a,-a,0)$, $m_5=(0,0,2a)$); currently they must be inferred from the figure and the sums.
+- [Intuition] After the spherical-top result, note that the origin is the centre of the base, not the centre of mass, and that principal moments depend on the chosen origin.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/6 Tensor applications/6.2 The electromagnetic field tensor.md
+priority: low
+graph: yes
+manim: no
+summary: Correct (Jackson-style $F^{\alpha\beta}$ and dual, recovery of all four Maxwell equations, and the boost $F'=AFA^\mathsf T$ all verified) and clearly worked, but with a few reused symbols.
+- [Structure] File on disk uses CRLF line endings (no BOM); convert to LF as required by the Obsidian skill.
+- [Correctness] Symbol clash: $\mechanical{v}$ is the generic wave speed in Eq. (6.12) and the frame speed in the boost, and $\vec A$ is a generic vector field in Eq. (6.12) while $A$ is the Lorentz matrix in Eq. (6.18); rename the wave-equation field (e.g. $\vec\Psi$) and speed ($u$), and update the table.
+- [Graph] Add a 2D plot of $E'_y/(cB_z)=-\gamma\beta$ and $B'_z/B_z=\gamma$ for a pure $B_z$ field versus $\beta\in[0,0.95]$, showing the induced electric field growing without bound as $\beta\to1$ (connects to Problem 6.7).
+- [Intuition] Mention the invariants $\vec E\cdot\vec B$ and $B^2-E^2/c^2$ (from $F_{\alpha\beta}F^{\alpha\beta}$) as a quick check on Eqs. (6.19)–(6.20).
+- [Simplify] The field tensor is colored with \magnetic{} although half its entries are $E/c$; consider leaving $F$ uncolored and coloring only the entries.
+=== 01 Mathematics/13 Topology, Differential Geometry, and Symmetry/02 Tensor Algebra and Manifolds/Vectors and Tensors/6 Tensor applications/6.3 The Riemann curvature tensor.md
+priority: medium
+graph: no
+manim: yes
+summary: Derivation and sphere results are correct ($R^\theta{}_{\phi\theta\phi}=\sin^2\theta$, $R^\phi{}_{\theta\phi\theta}=1$ in the MTW/Carroll convention), but the sixteen fully written expansions dominate the note and hide the short result.
+- [Structure] File on disk uses CRLF line endings (no BOM); convert to LF as required by the Obsidian skill.
+- [Simplify] Replace the two long expansion blocks with the statement that in 2D only one component (e.g. $R^\theta{}_{\phi\theta\phi}$) is independent by the Riemann symmetries, compute it in three lines, and move the full sixteen-term listing into a collapsed callout.
+- [Manim] Animate the Quito example on a 3D sphere: transport a tangent arrow along the meridian over the pole and along the equator to the antipode, ending with opposite orientations; optionally close a small loop to show the rotation angle equals enclosed area over $a^2$.
+- [Intuition] State the end result $R_{\theta\theta}=1$, $R_{\phi\phi}=\sin^2\theta$, $R=2/\mechanical{a}^2$ (or point to Problem 6.10) so readers see the curvature scale with the radius; the computed $R^\sigma{}_{\alpha\beta\gamma}$ alone hides the $a$-dependence.
+- [Simplify] Index conventions shift from 6.2 (coordinates $0$–$3$) and 5.7 ($\Gamma^k{}_{ij}$ spacing) to "numbered from 1 to 4" and $\Gamma^\sigma_{\alpha\beta}$ here; align them, and note that $\mechanical{G}$ (Newton) and $G_{\mu\nu}$ (Einstein tensor) share a letter.
+- [Links] Link the sphere metric to [[5.10 Chapter 5 problems]] (Problems 5.8–5.9), which ask for the same metric and Christoffel symbols.

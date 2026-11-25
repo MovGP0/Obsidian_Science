@@ -115,8 +115,10 @@ if corr:
     out.append("## Correctness findings\n")
     st = Counter(v[0] for _, _, v in corr if v)
     summary = ", ".join(f"{n} {s.lower()}" for s, n in st.most_common())
+    nver = sum(1 for _, _, v in corr if v)
     out.append(f"The review found {len(corr)} possible errors or notation conflicts. "
-               + (f"Verification result: {summary}. " if st else "These are not verified yet. ")
+               + (f"{nver} of them are verified ({summary}); the other {len(corr) - nver} are not verified yet. "
+                  if st else "These are not verified yet. ")
                + "Each item links to the full suggestion entry.\n")
     for f, s, v in corr:
         line = f"- [[#{ids[f]}|{ids[f]}]] {os.path.basename(f)[:-3]}: {s[len('[Correctness]'):].strip()}"

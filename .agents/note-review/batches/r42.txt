@@ -1,0 +1,31 @@
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/06 The Feynman Calculus/6.4 Lifetime of the A.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/06 The Feynman Calculus/6.5 Scattering.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/06 The Feynman Calculus/6.6 Higher-Order Diagrams.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/06 The Feynman Calculus/6.B References and Notes.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/06 The Feynman Calculus/6.P Problems.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/07 Quantum Electrodynamics/7.1 The Dirac Equation.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/07 Quantum Electrodynamics/7.2 Solutions to the Dirac Equation.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/07 Quantum Electrodynamics/7.3 Bilinear Covariants.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/07 Quantum Electrodynamics/7.4 The Photon.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/07 Quantum Electrodynamics/7.5 The Feynman Rules for Quantum Electrodynamics.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/07 Quantum Electrodynamics/7.6 Examples.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/07 Quantum Electrodynamics/7.7 Casimir's Trick and the Trace Theorems.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/07 Quantum Electrodynamics/7.8 Cross Sections and Lifetimes.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/07 Quantum Electrodynamics/7.9 Renormalization.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/07 Quantum Electrodynamics/7.B References and Notes.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/07 Quantum Electrodynamics/7.P Problems.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/08 Electrodynamics of Quarks and Hadrons/8.1 Electron-Quark Interactions.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/08 Electrodynamics of Quarks and Hadrons/8.2 Hadron Production in e⁺e⁻ Scattering.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/08 Electrodynamics of Quarks and Hadrons/8.3 Elastic Electron-Proton Scattering.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/08 Electrodynamics of Quarks and Hadrons/8.4 Inelastic Electron-Proton Scattering.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/08 Electrodynamics of Quarks and Hadrons/8.5 The Parton Model and Bjorken Scaling.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/08 Electrodynamics of Quarks and Hadrons/8.6 Quark Distribution Functions.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/08 Electrodynamics of Quarks and Hadrons/8.B References and Notes.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/08 Electrodynamics of Quarks and Hadrons/8.P Problems.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/09 Quantum Chromodynamics/9.1 Feynman Rules for Chromodynamics.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/09 Quantum Chromodynamics/9.2 The Quark-Quark Interaction.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/09 Quantum Chromodynamics/9.3 Pair Annihilation in QCD.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/09 Quantum Chromodynamics/9.4 Asymptotic Freedom.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/09 Quantum Chromodynamics/9.5 Applications of QCD.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/09 Quantum Chromodynamics/9.B References and Notes.md
+02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/09 Quantum Chromodynamics/9.P Problems.md

@@ -1,0 +1,105 @@
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/07 Electroweak Interactions of Quarks/7.5 Hadron-Hadron Interactions.md
+priority: medium
+graph: yes
+manim: yes
+summary: A faithful but dense transcription of the parton-model formulas for Drell–Yan, W and Z production, with one wrong Jacobian, two factual slips, and many 2012-era numbers.
+- [Correctness] Eq. (7.5.9) has the wrong Jacobian: $\partial(x,\tau)/\partial(x_a,x_b)=x_a+x_b=(x^2+4\tau)^{1/2}$, so it should read $F(\tau,x)=x_ax_b\,g(x_a,x_b)/(x^2+4\tau)^{1/2}$. Only with the square root does integrating over $x$ give (7.5.11) and the standard $d^2\sigma/dM^2dx_F=(4\pi\alpha^2/9M^4)\,x_ax_b/(x_a+x_b)\sum e_i^2[\dots]$.
+- [Correctness] In the paragraph after (7.5.15), "studying $1.96$-GeV proton–antiproton collisions" should say $1.96\,\mathrm{TeV}$. In the Fig. 7.17 caption, CMS stands for "Compact Muon Solenoid", not "Compact Muon Spectrometer".
+- [Correctness] Several values are out of date and should be marked as 2012 values or updated: the LHC has run at $13$ and $13.6\,\mathrm{TeV}$; the PDG 2024 average is $M_W=80.369\pm0.013\,\mathrm{GeV}$ (CDF 2022 reported $80.434\pm0.009$); the sequential $W'$ is now excluded below about $6\,\mathrm{TeV}$ and the sequential $Z'$ below about $5\,\mathrm{TeV}$ (ATLAS/CMS full Run 2), not "$>2\,\mathrm{TeV}$".
+- [Simplify] After (7.5.8), say that the prefactor is $\sigma(e^+e^-\to\mu^+\mu^-)$ at $s=\mathcal{M}^2$ divided by $\mathcal{M}^2$; as written it is called a cross section but has units $\mathrm{GeV}^{-4}$. In (7.5.11), (7.5.14) and (7.5.17) the integration variable $x$ actually runs over $x_a$ (from $\tau$ to 1, with $x_b=\tau/x$). This clashes with the Feynman-$x$ of (7.5.4); rename the dummy variable to $x_a$ or $\xi$.
+- [Example] Add a short worked check of the rates quoted in the text, e.g. $12.5\,\mathrm{nb}\times5\times10^{33}\,\mathrm{cm^{-2}s^{-1}}\approx60\,W/\mathrm{s}$ and $1.1\,\mathrm{nb}\to5.5\,Z/\mathrm{s}$, so readers see how cross section times luminosity gives an event rate. Also fix the inconsistency between $540$ GeV in the text and $546$ GeV in the Fig. 7.18 caption, or explain both.
+- [Graph] Plot $x_a$ and $x_b$ from (7.5.5) against $x\in[-1,1]$ for $\tau=(M_W/\sqrt s)^2$ at $\sqrt s=0.63,1.96,13\,\mathrm{TeV}$; and plot the decay distribution $(1+\cos\theta^*)^2$ for $\theta^*\in[0,\pi]$ next to the flat background. [Manim] Animate $u\bar d\to W^+$ with spin arrows: the left-handed $u$ and right-handed $\bar d$ give total spin along the $\bar p$ direction, then the $\ell^+$ is emitted along the $W$ spin. This shows where the charge asymmetry comes from.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/07 Electroweak Interactions of Quarks/7.6 Further Tests of the Electroweak Theory.md
+priority: medium
+graph: yes
+manim: no
+summary: A short survey of rare decays and CKM unitarity, readable but with a garbled $B_s$ sentence, a typo, and almost every experimental number superseded.
+- [Correctness] Paragraph 3: "$B(B_s\to\mu^+\mu^-)<(3.5\pm0.2)\times10^{-9}$" is the standard-model expectation, not a bound, so the "$<$" with an uncertainty is wrong. Write the SM value with "$=$" and give the 2012 bound separately. Also note that $B_s\to\mu^+\mu^-$ has since been observed (world average about $3.3\times10^{-9}$, consistent with the SM value $\approx3.66\times10^{-9}$).
+- [Correctness] "departures from the CMK paradigm" should read "CKM".
+- [Correctness] Several statements are outdated: the first-row sum is now $\mathcal S_u\approx0.9985\pm0.0007$ (PDG 2024, the "Cabibbo-angle anomaly"), not $0.9999\pm0.0006$; CP violation in charm was established by LHCb in 2019 ($\Delta A_{CP}\approx-1.5\times10^{-3}$); top FCNC limits are now about $10^{-5}$–$10^{-4}$; a sequential fourth generation is excluded by the measured Higgs production rate. Add a dated "status update" callout.
+- [Simplify] At (7.6.2), state that the apex is $\bar\rho+i\bar\eta=-V_{ud}V_{ub}^*/(V_{cd}V_{cb}^*)$. Dividing by $V_{cd}V_{cb}^*$ alone gives vertices $(0,0)$, $(-1,0)$ and $-(\bar\rho,\bar\eta)$, so the sign flip that puts the triangle on $(0,0)$, $(1,0)$, $(\bar\rho,\bar\eta)$ should be shown. Also give the Jarlskog relation explicitly: area $=J/2$ for every unnormalized triangle.
+- [Graph] Plot the normalized unitarity triangle with vertices $(0,0)$, $(1,0)$, $(\bar\rho,\bar\eta)\approx(0.16,0.35)$. Label the angles $\alpha,\beta,\gamma$ and the sides $R_u,R_t$, so readers can see the geometry before they see the CKMfitter figure.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/07 Electroweak Interactions of Quarks/7.7 A Brief Look at Quantum Corrections.md
+priority: medium
+graph: yes
+manim: no
+summary: The formulas check out, including (7.7.2)–(7.7.4), (7.7.7) and (7.7.9), but the note is narrative-heavy, gives no numerical $\Delta\rho$ example, and quotes pre-discovery numbers.
+- [Correctness] The values have been superseded: the 2023 Northwestern measurement gives electron $g/2=1.001\,159\,652\,180\,59(13)$, and QED is now known through $(\alpha/\pi)^5$; $m_t=172.57\pm0.29\,\mathrm{GeV}$ (PDG 2024) rather than $173.2\pm0.9$; the Higgs boson has been found at $M_H=125.20\pm0.11\,\mathrm{GeV}$, so the fit discussion around Fig. 7.22 should say that the fitted $92^{+34}_{-26}$ GeV is consistent with it at about $1\sigma$.
+- [Example] After (7.7.8), insert the number: $\Delta\rho=3G_Fm_t^2/(8\sqrt2\pi^2)\approx0.0094$ for $m_t=173\,\mathrm{GeV}$. Compare it with the CHARM-II error on $\rho$ in (7.7.6) to show why LEP-level precision was needed.
+- [Intuition] Explain in one sentence why $\Delta\rho\propto m_t^2$ (it is non-decoupling, because the Yukawa coupling grows with the mass) while the Higgs dependence is only $\ln M_H$ (Veltman screening). Right now the text states both without a reason.
+- [Graph] Plot $\Delta\rho$ from (7.7.7) against $m_t\in[0,250]\,\mathrm{GeV}$ with $m_b=4.8\,\mathrm{GeV}$, together with the asymptote (7.7.8). Also plot $\sigma(\nu_\mu e)/\sigma(\bar\nu_\mu e)$ from (7.7.2)/(7.7.3) against $x_W\in[0,0.5]$, marking $x_W=0.237$, to show how the ratio determines $x_W$.
+- [Structure] Change the Fig. 7.23 embed from Markdown `![..](file.png)` to the `![[...|caption]]` wiki-embed style used for the other figures (the caption contains nested brackets). Remove the UTF-8 BOM at the start of the file. Add subheadings (lepton $g-2$; top-mass prediction; the $\rho$ parameter; Higgs-mass fits; running $\sin^2\theta_W$).
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/07 Electroweak Interactions of Quarks/7.8 The Scale of Fermion Masses.md
+priority: low
+graph: yes
+manim: no
+summary: A concise and correct argument (I checked (7.8.1): $\sqrt{s_e}\approx1.7\times10^9$ GeV, $\sqrt{s_t}\approx3$ TeV, $\zeta_e\approx2.9\times10^{-6}$, $\zeta_t\approx1$), but its closing paragraph predates the Higgs discovery.
+- [Correctness] The last paragraph ("Until the Higgs boson is discovered and shown to couple to fermion pairs…") is outdated. Since 2012–2020, Higgs couplings to $t$, $b$, $\tau$ and $\mu$ have been observed and found proportional to mass, while the $He\bar e$ coupling is still unestablished. Add a dated update note.
+- [Simplify] The phrase "saturate partial-wave unitarity for the standard model with a Higgs mechanism" is confusing, because the scenario has explicit fermion masses and no Higgs–fermion coupling. Reword it as "in a theory where the gauge bosons get mass but the fermion mass is put in by hand".
+- [Graph] Make a log-log plot of the critical energy $\sqrt{s_i}=8\pi v^2/(\sqrt{3\eta_i}\,m_i)$ against $m_i$ from $10^{-4}$ to $10^3$ GeV, with separate lines for $\eta=1$ and $\eta=3$ and markers at $e,\mu,\tau,u,d,s,c,b,t$. Add a horizontal line at the LHC energy, so readers see that only the top mass is tested at accessible energies.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/07 Electroweak Interactions of Quarks/7.9 Search for the Higgs Boson.md
+priority: low
+graph: no
+manim: no
+summary: A clear historical narrative of the Higgs search up to July 2012; the physics is correct for its time but the status is now obsolete.
+- [Correctness] Add a dated update callout: $M_H=125.20\pm0.11\,\mathrm{GeV}$ (PDG 2024); spin-parity $0^+$ is established (not just "even-integer spin"); $H\to b\bar b$, $\tau\tau$, $\mu\mu$ and $t\bar tH$ have been observed; a fourth generation, which the text says "would raise the $gg\to H$ rate", is excluded by exactly that rate.
+- [Intuition] Explain briefly why the gluon-fusion shoulder sits near $M_H\approx2m_t\approx350\,\mathrm{GeV}$: the top loop becomes real at the $t\bar t$ threshold. The text says "near 400 GeV" without a reason.
+- [Structure] Split the note into "pre-LHC constraints", "LHC discovery", "production and decay channels" and "alternatives (SUSY, composite, extra generation)", and remove the UTF-8 BOM.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/07 Electroweak Interactions of Quarks/7.B References.md
+priority: low
+graph: no
+manim: no
+summary: A complete numbered reference list (115 entries, matching the TLDR) that needs no content change.
+- [Structure] No content change needed; only remove the UTF-8 BOM at the start of the file. The "Physical quantities" table covers symbols that appear only in reference titles and could be trimmed.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/07 Electroweak Interactions of Quarks/7.P Problems.md
+priority: low
+graph: no
+manim: no
+summary: A well-structured problem list (28 problems; I checked (7.22), (7.21) and the heavy-mass limits of (7.27), and they are correct), with a few transcription errors.
+- [Correctness] Problem 7.3(a): "Express $V_{ub}=A\lambda^2$" should be "$V_{cb}=A\lambda^2$". The next sentence then correctly sets $V_{ub}=0$, and part (b) assigns $s_{23}=A\lambda^2$, i.e. $V_{cb}$.
+- [Correctness] Problem 7.4: "(for $j\ne k$ and $i\ne j$, respectively)" should be "$i\ne k$", since the second condition is $\sum_jV_{ij}V_{kj}^*=\delta_{ik}$.
+- [Correctness] Problem 7.19 has two parts labelled "(b)"; the second, on $\delta p/p$, should be "(c)". Also add the missing comma in "$e^+e^-$ $\mu^+\mu^-$".
+- [Structure] Problem 7.23 ends with escaped double brackets `\[\[cf. … \]\]` that render as literal "[[…]]"; use single brackets. In the table, $\zeta_\pm$ from 7.27 (which clashes with the Yukawa $\zeta_i$ of 7.1) is missing, and $M_Z$ appears twice; also remove the UTF-8 BOM.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/07 Electroweak Interactions of Quarks/7.R For Further Reading.md
+priority: low
+graph: no
+manim: no
+summary: An annotated reading list that is clean and needs no content change.
+- [Structure] No change needed apart from removing the UTF-8 BOM. Optionally add a dated note that several resources (PDG 2010, the j.mp short links) have newer editions or dead links.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/08 Strong Interactions among Quarks/8.0 Chapter introduction.md
+priority: low
+graph: no
+manim: no
+summary: A clear chapter overview with no errors.
+- [Links] Turn the forward references (section 8.5.3 Altarelli–Parisi, section 8.8 lattice, section 8.9) into wiki links to the corresponding notes in this folder, and remove the UTF-8 BOM.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/08 Strong Interactions among Quarks/8.1 A Color Gauge Theory.md
+priority: medium
+graph: yes
+manim: yes
+summary: A good, mostly correct introduction (I checked (8.1.6) and (8.1.12), Tables 8.1–8.3 and the string integrals (8.1.25)–(8.1.29)), held back by one index typo and a lack of worked steps and visuals.
+- [Correctness] Eq. (8.1.20): the left side reads $\sum_{i<j}\langle\mathbf T^{(i)}\cdot\mathbf T^{(i)}\rangle$ and should be $\sum_{i<j}\langle\mathbf T^{(i)}\cdot\mathbf T^{(j)}\rangle$.
+- [Example] Work out one entry of Table 8.2 and one of Table 8.3 explicitly: for the triplet, $I_3\in\{\tfrac12,-\tfrac12,0\}$ gives $\langle T^2\rangle=8\cdot\tfrac12/3=4/3$; for the singlet $(q\bar q)$, $(0-\tfrac43-\tfrac43)/2=-\tfrac43$; for the octet, $(3-\tfrac83)/2=+\tfrac16$. This lets readers reproduce the rest of the table.
+- [Simplify] In §8.1.2, show the substitution $u=2r/r_0$ that turns (8.1.25) and (8.1.26) into $\int_0^1du/\sqrt{1-u^2}=\pi/2$ and $\int_0^1u^2du/\sqrt{1-u^2}=\pi/4$. Note also that $1\,\mathrm{GeV/fm}=0.197\,\mathrm{GeV^2}$ uses $\hbar c=0.197\,\mathrm{GeV\,fm}$.
+- [Graph] Plot the Chew–Frautschi line $J=\alpha_0+\alpha'M^2$ with $\alpha'=0.88\,\mathrm{GeV^{-2}}$ and $\alpha_0\approx0.5$, with points for $\rho(770)$, $a_2(1320)$/$f_2(1270)$, $\rho_3(1690)$ and $f_4(2050)$ on axes $M^2\in[0,5]\,\mathrm{GeV^2}$. Optionally add a second plot of the string speed profile $\beta(r)=2r/r_0$ and the energy density $k/\sqrt{1-\beta^2}$.
+- [Manim] Animate the rotating string of Fig. 8.4: a segment spinning with its tips at speed $c$, colored by local $\gamma=1/\sqrt{1-\beta^2}$. A second short scene could show string breaking (Fig. 8.3): the stretched flux tube snaps into two $q\bar q$ mesons once its energy exceeds about one hadron mass.
+- [Structure] Remove the UTF-8 BOM. The table lists $\mechanical{k}$ twice with different units, and $x_{21},x_{22},u(x,Q^2)$ appear only inside figures; say so in the descriptions.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/08 Strong Interactions among Quarks/8.10 The 1 - N Expansion.md
+priority: low
+graph: no
+manim: yes
+summary: A clear and correct exposition of large-$N$ counting (I checked the powers in (8.10.1)–(8.10.11) and the $\phi$ decay ratio $\approx5.4$), which would gain most from an explicit counting rule and a visual.
+- [Simplify] State the general counting rule once: a connected vacuum diagram scales as $N^{\chi}$ with $\chi=2-2h-b$ (genus $h$, $b$ quark-loop boundaries), using the 't Hooft coupling $\lambda=g^2N$ held fixed. Writing "$g/\sqrt N$ with $g$ fixed" reuses $g$ for two different couplings.
+- [Intuition] In item 7, add why glueball widths go as $1/N^2$ while meson widths go as $1/N$: glueball–glueball couplings scale as $1/N$, whereas meson–meson couplings scale as $1/\sqrt N$.
+- [Manim] Animate one gluon line splitting into a double index line, then trace closed index loops in the planar diagram of Fig. 8.51 and the nonplanar diagram of Fig. 8.52 (3 loops vs 1). This shows directly where the $1/N^2$ suppression comes from.
+- [Structure] Write "sections 8.4–8.7" with an en dash, and remove the UTF-8 BOM.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/08 Strong Interactions among Quarks/8.11 Strong-Interaction Symmetries.md
+priority: medium
+graph: no
+manim: no
+summary: A readable qualitative survey of flavor, chiral and CP symmetries, with a meson-name error, inconsistent $\theta$-term normalizations, and an outdated description of the axion and the nEDM limit.
+- [Correctness] Discussion of the U(1) problem: "the obvious candidate, $\eta(958)$" should be $\eta'(958)$. The $\eta$ is at 548 MeV.
+- [Correctness] Eqs. (8.11.10) and (8.11.11) are inconsistent. For the $e^{in\theta}$ weighting of (8.11.9) to be reproduced, the action $\int d^4x\,\mathcal L_\theta$ must equal $n\theta$, so the coefficients must match: $1/8\pi^2$ in $n$ requires $\theta/8\pi^2$ in $\mathcal L_\theta$, not $\theta/16\pi^2$. With the unrescaled fields of (8.1.4)–(8.1.6), both also need a factor $g^2$. The standard forms are $n=\frac{g^2}{16\pi^2}\int d^4x\,\mathrm{tr}\,G\tilde G$ and $\mathcal L_\theta=\frac{\theta g^2}{16\pi^2}\mathrm{tr}\,G\tilde G$ with $\tilde G^{\mu\nu}=\tfrac12\epsilon^{\mu\nu\alpha\beta}G_{\alpha\beta}$.
+- [Correctness] The last paragraph says the new U(1) "is spontaneously broken in the course of electroweak symmetry breaking". That is the original Peccei–Quinn–Weinberg–Wilczek axion, which was excluded long ago. Viable "invisible" axions (KSVZ, DFSZ) break the PQ symmetry at $f_a\gg v$, and $\bar\theta$ relaxes to zero through the axion potential. Also introduce $\bar\theta=\theta+\arg\det M_q$ explicitly, since the text mentions that the two phases combine.
+- [Correctness] The nEDM limit in (8.11.12) is outdated: the current bound is $|d_n|<1.8\times10^{-26}\,e\,\mathrm{cm}$ (90% CL, PSI 2020). It still gives $|\bar\theta|\lesssim10^{-10}$.
+- [Intuition] Add one line to estimate the bound: $d_n\sim\bar\theta\,e\,m_q/m_n^2\sim10^{-16}\bar\theta\,e\,\mathrm{cm}$, so the nEDM limit gives $|\bar\theta|\lesssim10^{-10}$. Also replace the redundant "spontaneously broken chiral symmetry breaking" with "spontaneously broken chiral symmetry".
+- [Structure] Remove the UTF-8 BOM, and add subheadings (heavy-quark symmetries; isospin and quark masses; chiral symmetry and the U(1) problem; electroweak corrections; strong CP and axions).

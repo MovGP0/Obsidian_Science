@@ -1,0 +1,38 @@
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/07 Electroweak Interactions of Quarks/7.12 The Vacuum Energy Problem.md
+priority: medium
+graph: yes
+manim: no
+summary: Short and essentially correct (7.12.1, 7.12.2 and the $1.2\times10^8\,\mathrm{GeV}^4$ estimate recompute exactly), but the intro has a wrong order of magnitude, the numbers are dated, and the sign convention for $\varrho_H$ is left implicit.
+- [Correctness] Intro: the gravitational to electrostatic attraction ratio for an electron and a proton is $Gm_em_p/(e^2/4\pi\varepsilon_0)\approx4.4\times10^{-40}$, so it is about 39 to 40 orders of magnitude smaller, not 41. Correct the number or give the explicit ratio.
+- [Intuition] After 7.12.2, say explicitly that the potential at the minimum is $V_{\min}=-\mechanical{M_H}^2v^2/8$ and that $\varrho_H$ is defined as its magnitude. The puzzle is the size, $|\varrho_H|/\varrho_{\mathrm{vac}}\sim10^{54}$, and the sign is fixed only up to an arbitrary additive constant in $V$, which is the real content of the fine-tuning problem.
+- [Simplify] Give the $\Lambda=(8\pi G_{\mathrm N}/c^4)\varrho_H$ relation together with the conversion from natural units ($1\,\mathrm{GeV}^4=2.09\times10^{37}\,\mathrm{J\,m^{-3}}$, using $(\hbar c)^3$). With that conversion the reader can check the $\mathrm{m^{-2}}$ unit in the table.
+- [Structure] Add a short updated-values note: $\mechanical{M_H}\approx125.2\,\mathrm{GeV}$, and Planck gives $\varrho_\Lambda\approx(2.2\,\mathrm{meV})^4\approx2.5\times10^{-47}\,\mathrm{GeV}^4$ as a measured value, not only an upper bound. The mismatch remains about 54 to 55 orders of magnitude.
+- [Graph] Plot the Mexican-hat slice $V(\varphi)=\mu^2\varphi^2/2+|\lambda|\varphi^4/4$ against $\varphi$ in units of $v$ ($\varphi\in[-1.6v,1.6v]$), using $\mu^2=-M_H^2/2$ and $|\lambda|=M_H^2/(2v^2)$. Mark the minima at $\varphi=\pm v$ with depth $-M_H^2v^2/8$, and show the level $V=0$ next to an (invisibly small) observed $\varrho_{\mathrm{vac}}$ line to make the scale point.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/07 Electroweak Interactions of Quarks/7.13 Reflections.md
+priority: low
+graph: no
+manim: no
+summary: Clear qualitative essay with no math to check, but one sentence is garbled and several statements are frozen at the 2012 state of knowledge.
+- [Simplify] Fix the garbled question "if the Higgs boson is responsible for fermion mass, is what determines the masses and mixings of the fermions?" so that it reads "what determines the masses and mixings of the fermions?".
+- [Structure] Add a brief dated callout at the end: the 125 GeV boson is now established as a spin-0, CP-even scalar with measured couplings to $W$, $Z$, $t$, $b$, $\tau$ and $\mu$ that agree with the standard model. This answers several of the open questions in the note ("does the H couple to fermions?") without rewriting the source text.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/07 Electroweak Interactions of Quarks/7.2 Electroweak Gauge Bosons.md
+priority: low
+graph: yes
+manim: no
+summary: Clean, well-ordered derivation whose numbers all recompute (227 MeV, 166 MeV, 2.474 GeV, 1.722 GeV, 84.8 MeV, 3.43%, 69.6%, 20.1%), with one notational slip in 7.2.11.
+- [Correctness] Eq. 7.2.11, first line: "$3[2\cdot\Gamma(Z^0\to u\bar u)+3\cdot\Gamma(Z^0\to d\bar d)]$" mixes widths into a dimensionless ratio, and it double-counts color because $\Gamma(Z^0\to q\bar q)$ in 7.2.10 already contains the factor 3. Write $3[2(L_u^2+R_u^2)+3(L_d^2+R_d^2)]$, or equivalently $[2\Gamma(u\bar u)+3\Gamma(d\bar d)]/\Gamma(\nu\bar\nu)$.
+- [Intuition] Before 7.2.11, state the couplings it uses ($L_u=1-4x_W/3$, $R_u=-4x_W/3$, $L_d=-1+2x_W/3$, $R_d=2x_W/3$, normalized so that $L_\nu=1$). The reader can then check $L_u^2+R_u^2=1-8x_W/3+32x_W^2/9$ in one line.
+- [Simplify] After 7.2.8, add a counting sentence: each of 3 lepton channels plus 2 quark doublets times 3 colors gives 9 equal channels, so $1/9$ and $6/9=2/3$ follow directly. For the $Z$, the analogous count of 21 neutrino-width units at $x_W=0$ in 7.2.13 is a useful limiting case to mention.
+- [Graph] Plot $\Gamma(Z^0\to\mathrm{all})/\Gamma(\nu\bar\nu)=21-40x+160x^2/3$, $\Gamma(\mathrm{had})/\Gamma(\nu\bar\nu)$ and $\Gamma(e^+e^-)/\Gamma(\nu\bar\nu)$ for $x_W\in[0.15,0.30]$, with vertical markers at $x_W=0.2122$ and $0.232$. This shows how weakly the total width depends on the mixing parameter.
+- [Structure] Add a short note giving current PDG values ($M_W\approx80.37\,\mathrm{GeV}$, $\Gamma_W=2.085\,\mathrm{GeV}$, $\Gamma_Z=2.4955\,\mathrm{GeV}$) and saying that the quoted Ref. [3] numbers are from about 2010.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/03 Gauge Theories/07 Electroweak Interactions of Quarks/7.3 Electron-Positron Annihilations.md
+priority: medium
+graph: yes
+manim: no
+summary: Dense but correct overall, with Table 7.1, 7.3.12, 7.3.16, the peak asymmetries and the polarizations all recomputing exactly; it has two equation errors and no step-by-step guidance from 7.3.3 to the peak formulas.
+- [Correctness] Eq. 7.3.10: "$1-\frac{8x_W}{3}+\frac{32x_W^2}{3}$" should be $1-\frac{8x_W}{3}+\frac{32x_W^2}{9}$, as in 7.2.11 and 7.3.19b. With $/3$, $R_{\mathrm{peak}}^{(u\bar u)}$ becomes 1066 instead of the tabulated 693.
+- [Correctness] Text before 7.3.14: "$(R_i-L_i)=\tau_3^{(i)}$" has the wrong sign. With $L_e=-1+2x_W$ and $R_e=2x_W$, one gets $R_e-L_e=+1$ while $\tau_3^{(e)}=-1$, so it must read $(R_i-L_i)=-\tau_3^{(i)}$, which is consistent with 7.3.14 as written.
+- [Structure] Fig. 7.3 caption: the graph has four panels (a) to (d), but the caption labels only (a) to (c) and runs "$u\bar u$ ... final state; $d\bar d$ ..." together. Insert "(d)" before the $d\bar d$ item.
+- [Simplify] Between 7.3.3 and 7.3.5, add the two steps: at $s=M_Z^2$ only the $G_F^2$ term survives, and $\int_{-1}^1(1+z^2)\,dz=8/3$ (the $z$ term integrates to zero). Also state $\sigma_{\mathrm{QED}}=4\pi\alpha^2/3s$ before 7.3.7, because the reader needs it to get 7.3.7 and the 10.45 pb reference value.
+- [Intuition] After 7.3.19, explain in one sentence that every peak asymmetry carries the factor $A_e\propto v_ea_e\propto(1-4x_W)$. That is why the measured $A^{(\ell\ell)}=0.0171$ pins $x_W$ so sharply: $x_W=0.232$ gives 0.0154 and $x_W=0.2122$ gives 0.066. A one-line numeric example would help here.
+- [Graph] Add a native line-shape graph for $\sigma_{\mathrm{had}}(\sqrt s)$ on $\sqrt s\in[88,95]\,\mathrm{GeV}$, using the resonant term of 7.3.3 with $\Gamma_Z=\Gamma_{\mathrm{vis}}+N_\nu\cdot166\,\mathrm{MeV}$ for $N_\nu=2,3,4$. This makes Fig. 7.5's neutrino-counting argument computable alongside the PNG. Also give the solid, dashed and dot-dashed curves of Figs. 7.6 and 7.7 a legend inside the graph.

@@ -1,0 +1,536 @@
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/10 Spin/Unitary rotations of spinors and Pauli matrices.md
+priority: high
+graph: no
+manim: yes
+summary: The algebra checks out (CG states for $1\otimes1$, the passive rotation $g^\dagger(\mathbf r\cdot\boldsymbol\sigma)g$, $S_+$), but the note is a loose transcription that jumps between spinor rotations, $1\otimes1$ coupling, occupation numbers, photons and hydrogen without a storyline.
+- [Correctness] The Physical quantities table lists symbols the note never uses ($\mechanical{L}$ as "Box side length", $c$, and $A$, $B$ as mode emission/absorption coefficients); $\mechanical{L}$ as a length also clashes with the orbital angular momentum $\mechanical{\mathbf L}$ in the same table. Remove these rows.
+- [Correctness] In "Spinor rotation" the Cartesian rotation is written $O=e^{-i\phi\widehat{\mathbf n}\cdot\mathbf L}$ with dimensionless generators, while the same letter $\mechanical{\mathbf L}$ is the dimensionful orbital operator elsewhere in the note; rename the $3\times3$ generators (e.g. $\mathcal J_i$) or write $e^{-i\phi\widehat{\mathbf n}\cdot\mechanical{\mathbf L}/\hbar}$.
+- [Structure] Move the $\ell_1=\ell_2=1$ coupled states (quintet, triplet, singlet) and the occupation-number / photon paragraph out of the spinor section (they belong in the chapter 11 or 14 notes) and drop the meta remarks about the "handwritten" $\sigma_y$ sign, "the preceding page", and the upper-right entry "reduced to one too early".
+- [Intuition] After $e^{-i\phi\sigma_z/2}=\cos(\phi/2)I-i\sin(\phi/2)\sigma_z$, state explicitly that $\phi=2\pi$ gives $-I$ and $\phi=4\pi$ gives $+I$, and that this sign is observable only in interference (neutron interferometry), to make the $SU(2)\to SO(3)$ double cover concrete.
+- [Manim] Animate a spin-up Bloch vector rotating about $\hat z$ by $\phi$ from $0$ to $4\pi$ while a side panel shows the spinor phase $e^{-i\phi/2}$ on a unit circle, so the viewer sees the vector return at $2\pi$ while the spinor phase only returns at $4\pi$.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/11 Addition of Angular Momentum/11.00 Addition of Angular Momentum.md
+priority: low
+graph: no
+manim: no
+summary: Clear and correct chapter hub with an accurate summary of the addition rules, CG coefficients, tensors and selection rules.
+- [Structure] No change needed; optionally link the section notes 11.01–11.09 next to the summary bullets so the hub navigates the chapter.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/11 Addition of Angular Momentum/11.01 Statement of the Problem.md
+priority: low
+graph: no
+manim: no
+summary: Short, correct statement of the problem; the key step from Eqs. (11.1)–(11.2) to (11.3) is asserted rather than shown.
+- [Simplify] Show the one-line expansion $[\hat J_i,\hat J_j]=[\hat J_{1i},\hat J_{1j}]+[\hat J_{2i},\hat J_{2j}]$ (cross terms vanish by Eq. 11.2) before Eq. (11.3), since it is the whole content of the note.
+- [Example] In Remark 11.1 show why $\hat J_{1z}$ fails to commute with $\hat{\mathbf J}^2$: $[\hat{\mathbf J}^2,\hat J_{1z}]=2[\hat{\mathbf J}_1\cdot\hat{\mathbf J}_2,\hat J_{1z}]=2i\hbar(\hat{\mathbf J}_1\times\hat{\mathbf J}_2)_z\ne0$.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/11 Addition of Angular Momentum/11.02 Uncoupled and Coupled Bases.md
+priority: low
+graph: no
+manim: no
+summary: Correct and compact definition of the two bases; a concrete small example would make the abstract labels tangible.
+- [Example] Add the $j_1=1$, $j_2=1/2$ case as a 6-state table: the uncoupled kets $\lvert m_1;m_2\rangle$ grouped by $M=m_1+m_2$ next to the coupled kets $\lvert J,M\rangle$, showing that both bases span the same $M$-subspaces.
+- [Intuition] Add one sentence that the unitary change of basis is block diagonal in $M$ because both bases are eigenbases of $\hat J_z$; this prepares the rule $m_1+m_2=M$ in 11.04.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/11 Addition of Angular Momentum/11.03 Addition Rule.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct statement of the triangle rule with a helpful vector-model figure, but the counting argument is compressed into two sentences.
+- [Graph] Add a native 2D lattice plot of the allowed $(m_1,m_2)$ points for $j_1=2$, $j_2=1$ (axes $m_1\in[-2,2]$, $m_2\in[-1,1]$) with the anti-diagonals $m_1+m_2=M$ drawn and labelled with their point counts $1,2,3,3,3,2,1$; this makes the difference-of-counts argument visible.
+- [Simplify] Spell out the counting step: $n(M)$ = number of pairs with $m_1+m_2=M$, and the number of multiplets with highest weight $J$ is $n(J)-n(J+1)$, which equals $1$ for $\lvert j_1-j_2\rvert\le J\le j_1+j_2$ and $0$ otherwise.
+- [Example] Add the worked check $j_1=j_2=1$: $J=0,1,2$ with $1+3+5=9=3\times3$.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/11 Addition of Angular Momentum/11.04 Clebsch–Gordan Coefficients.md
+priority: low
+graph: no
+manim: no
+summary: Correct definitions, conventions and examples (Eqs. 11.8 and 11.9 verified, including the Condon–Shortley sign).
+- [Example] Turn the callout "Constructing the coefficients" into an explicit derivation of Eq. (11.9): apply $\hat J_-$ to $\lvert\tfrac32,\tfrac32\rangle$ to get $\lvert\tfrac32,\tfrac12\rangle$, then orthogonality plus the sign convention gives $\lvert\tfrac12,\tfrac12\rangle$.
+- [Structure] Complete Eq. (11.9) with the remaining three states ($\lvert\tfrac32,-\tfrac12\rangle$, $\lvert\tfrac32,-\tfrac32\rangle$, $\lvert\tfrac12,-\tfrac12\rangle$) so the reader sees the full $6\times6$ orthogonal matrix.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/11 Addition of Angular Momentum/11.05 Combining Two Spin-½ Systems.md
+priority: low
+graph: no
+manim: no
+summary: Clear and correct, with a nice measurement example; one source link points to an unrelated section.
+- [Links] The link [[Pauli matrices and two-spin calculations#Other potentials|Physics 137]] targets a section of potential-well sketches; point it to "#Two spins" (or "#Coupled and uncoupled spin bases"), and consider "#Total angular momentum" instead of "#Hydrogen and orbital angular momentum" for the Physics 10 link.
+- [Example] In "A product state contains two possible total spins" write the decomposition explicitly: $\lvert\uparrow\downarrow\rangle=(\lvert1,0\rangle+\lvert0,0\rangle)/\sqrt2$.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/11 Addition of Angular Momentum/11.06 Spin–Orbit Coupling.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and well illustrated; Eq. (11.10) and the $(2\ell+1)\hbar^2\langle\xi\rangle/2$ splitting are verified.
+- [Example] Give the explicit shifts $+\tfrac{\ell}{2}\hbar^2\langle\xi\rangle$ for $j=\ell+\tfrac12$ and $-\tfrac{\ell+1}{2}\hbar^2\langle\xi\rangle$ for $j=\ell-\tfrac12$, and note that the degeneracy-weighted mean shift $(2\ell+2)\ell-2\ell(\ell+1)=0$ vanishes (centre-of-gravity rule).
+- [Intuition] Add one sentence on the origin of $\xi(r)=\frac{1}{2m^2c^2}\frac{1}{r}\frac{dV}{dr}$ (rest-frame magnetic field plus Thomas factor), linking to the derivation in the Clebsch–Gordan calculations note.
+- [Graph] Optionally add a 2D plot of the two $j$-level shifts for $\ell=1,2,3$ (in units of $\hbar^2\langle\xi\rangle$) to show the splitting growing as $2\ell+1$.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/11 Addition of Angular Momentum/11.07 Spherical Tensor Operators.md
+priority: low
+graph: no
+manim: no
+summary: Correct definition and examples; the link between Cartesian vectors and spherical components could be motivated more.
+- [Intuition] Explain the minus sign of the $q=+1$ component: $\hat r^1_q=\sqrt{4\pi/3}\,r\,Y_{1q}$ in the Condon–Shortley convention, and $Y_{11}\propto-(x+iy)/r$.
+- [Example] Verify one commutator explicitly, e.g. $[\hat L_+,\hat z]=-\hbar(\hat x+i\hat y)=\sqrt2\hbar\,\hat r^1_{+1}$, matching Eq. (11.11) with $k=1,q=0$.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/11 Addition of Angular Momentum/11.08 Wigner–Eckart Theorem.md
+priority: medium
+graph: no
+manim: no
+summary: Correct statement in the Racah/Edmonds normalization, but without a worked example the theorem stays abstract.
+- [Structure] State that the $1/\sqrt{2j'+1}$ normalization is one of several conventions (Sakurai uses $1/\sqrt{2j+1}$), so readers comparing reduced matrix elements across textbooks are not confused.
+- [Example] Add the example $\hat T=\hat{\mathbf J}$: from $\langle jm\lvert\hat J_0\rvert jm\rangle=\hbar m$ and $\langle jm;10\mid jm\rangle=m/\sqrt{j(j+1)}$ get $\langle j\lVert\hat J\rVert j\rangle=\hbar\sqrt{j(j+1)(2j+1)}$, then predict $\langle j,m+1\lvert\hat J_{+1}\rvert jm\rangle$.
+- [Intuition] Add one sentence on the payoff: ratios of transition strengths between Zeeman sublevels are pure CG ratios, independent of the radial physics.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/11 Addition of Angular Momentum/11.09 Electric Dipole Selection Rules.md
+priority: low
+graph: no
+manim: no
+summary: Correct and concise selection rules; the link between $q$ and photon polarization is missing.
+- [Intuition] Relate $\Delta m=0$ to $\pi$ (linear, along $z$) and $\Delta m=\pm1$ to $\sigma^\pm$ (circular) polarization via the spherical components $\hat r^1_q$.
+- [Example] Add a hydrogen example: $2p\to1s$ is allowed (Lyman-$\alpha$), while $2s\to1s$ is E1-forbidden and decays by two-photon emission with a lifetime of about $0.12\,\mathrm{s}$.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/11 Addition of Angular Momentum/11.10 Addition of Angular Momentum Exercises.md
+priority: low
+graph: no
+manim: no
+summary: Good exercise list; the quoted results check out (Ex. 7 reduced element, Ex. 8 eigenvalues, Ex. 10 recursion, Ex. 11 sum rule).
+- [Correctness] Exercise 10 calls the ladder relation the "Racah recurrence"; the Racah formula is the closed-form expression for CG coefficients, while this is the standard ladder recursion relation. Rename it.
+- [Structure] Exercise 7 asks for $\hat J_+$ via Wigner–Eckart, but $\hat J_+$ is not a spherical component; state that $\hat J_{+1}=-\hat J_+/\sqrt2$ must be used.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/11 Addition of Angular Momentum/Coupled angular momentum and Clebsch–Gordan calculations.md
+priority: high
+graph: yes
+manim: no
+summary: The derivations are correct (ladder CG coefficients, spinor $\varepsilon$ tensor, $\mathbf p\cdot\mathbf A+\mathbf A\cdot\mathbf p=\mathbf B\cdot\mathbf L$, Zeeman levels, spin–orbit term), but the note is a raw lecture transcript mixing many topics, exam logistics, and an unfinished practice problem.
+- [Correctness] The Physical quantities table is largely copied from other notes: it lists $\mechanical{x}$ "along the oscillator axis", $E$ in newtons as a "linear perturbation coefficient", $\Delta\energy{E},\delta\energy{E}$ continuum scales, $\mechanical{L}$ "Box side length", $\mechanical{\mathbf p}'$ scattering momenta, $\eta$ switching rate, and $A,B$ as "mode emission and absorption coefficients", none of which occur here; in the note $A$ is the spin–spin coupling constant, $\magnetic{\mathbf A}$ the vector potential and $B$ the magnetic field. Rebuild the table from the symbols actually used.
+- [Correctness] "measured to about ten significant figures" is outdated: the 2023 Northwestern measurement gives $g/2=1.00115965218059(13)$ (0.13 ppt), about 14 significant figures; also drop the quoted wrong handwritten estimate $(\alpha/4\pi)^2$ and keep only $g-2=\alpha/\pi+O(\alpha^2)$.
+- [Correctness] The electron mass switches between $\mechanical{m}$ (in $H$, $\magnetic{\boldsymbol\mu}$, $\Delta H$) and $\mechanical{m}_e$ (in $H'$, $\magnetic{\mu}_B$) within the same derivation; use one symbol throughout.
+- [Structure] Remove the exam schedule, the topic list of the final, and meta comments ("The factors of two ... correct the earlier spin-raising calculation", "duplicate label in the sketch", "margin note"); split the note into clearly headed sections (two spins, $\ell\otimes\tfrac12$, spinor indices, Zeeman effect, spin–orbit from the boost, practice problem).
+- [Example] Finish the "Practice problem on coupled spins" for a uniform field $\mathbf B=B\hat z$: the triplet $m=\pm1$ levels are $A\hbar^2/4\mp\hbar\omega$ with $\omega=qB/(mc)$, and because both spins have the same factor the $m=0$ block stays diagonal with $A\hbar^2/4$ (triplet) and $-3A\hbar^2/4$ (singlet); mention that unequal fields $\mathbf B(\mathbf r_1)\ne\mathbf B(\mathbf r_2)$ mix $\lvert1,0\rangle$ and $\lvert0,0\rangle$.
+- [Graph] Replace the PNG "Zeeman shifts for the 2p level" with a native 2D plot of $\Delta E/\mu_B$ versus $B$ for the six $(m,m_s)$ lines with slopes $m+2m_s\in\{2,1,0,0,-1,-2\}$, showing five levels and the doubly degenerate zero line.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/11 Addition of Angular Momentum/Pauli matrices and two-spin calculations.md
+priority: medium
+graph: no
+manim: no
+summary: Correct elementary calculations ($S_x$ eigenvectors, the commutator, triplet/singlet construction, the $1\otimes\tfrac32$ CG row) but loosely organized, with an unrelated first section and a wrong quantity table.
+- [Correctness] The Physical quantities table defines $J_x$ as a "Probability flux" in $\unit{s^{-1}}$ and lists $R,T$ reflection/transmission coefficients; in this note $\hat J_x$ is an angular momentum component and $R,T$ never appear. Replace with $\hat{\mathbf S},\hat{\mathbf L},\hat{\mathbf J}$ in $\unit{J\,s}$.
+- [Structure] Remove or move the "Other potentials" section (a figure of five potential sketches) to the 1D potentials notes; it is unrelated to Pauli matrices and is the target of a misdirected link from 11.05.
+- [Example] The notes pose $\chi_1=\chi_2=(1,1)^{\mathsf T}/\sqrt2$ and never answer: expand $\lvert{+x},{+x}\rangle=\tfrac12\lvert1,1\rangle+\tfrac1{\sqrt2}\lvert1,0\rangle+\tfrac12\lvert1,-1\rangle$, so the total spin is $1$ with certainty while $S_z$ gives $\hbar,0,-\hbar$ with probabilities $1/4,1/2,1/4$.
+- [Simplify] Drop the odd computation $\hat S^2\hat S_z\lvert\chi_+\rangle=(3\hbar^3/8)\lvert\chi_+\rangle$ and the meta sentence about the "last handwritten line"; they add nothing to the eigenvalue discussion.
+- [Structure] Use the vault's semantic macros ($\mechanical{\hat S}$, $\mechanical{\hat J}$) as in the neighbouring chapter-11 notes; all angular momenta are currently uncolored.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/12 Hydrogen Atom/12.00 Hydrogen Atom.md
+priority: low
+graph: no
+manim: no
+summary: Clear and correct chapter hub; the summary formulas ($E_{\mathrm{Ry}}$, $\langle r\rangle=3a_0/2$, $\langle V\rangle=2E_1$) check out.
+- [Links] Turn the chapter-summary bullets into links to the sections that derive them (12.01 for reduced mass, 12.03 for $E_n$, 12.04 for degeneracy, 12.05 for the ground state, 12.06 for selection rules, 12.07 for corrections) so the hub works for navigation.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/12 Hydrogen Atom/12.01 Hamiltonian and Separation of Center-of-Mass Motion.md
+priority: low
+graph: no
+manim: no
+summary: Correct and compact, but it jumps from the two-body Hamiltonian to the separated form without showing the momentum transformation.
+- [Simplify] Between the two Hamiltonians, state $\hat{\mathbf P}=\hat{\mathbf p}_e+\hat{\mathbf p}_p$ and $\hat{\mathbf p}=(m_p\hat{\mathbf p}_e-m_e\hat{\mathbf p}_p)/M$, and note that $\hat{\mathbf p}_e^2/2m_e+\hat{\mathbf p}_p^2/2m_p=\hat{\mathbf P}^2/2M+\hat{\mathbf p}^2/2\mu$ is a one-line check.
+- [Example] Make the "fractional error of about $1/1836$" concrete: the level energies scale as $\mu/m_e$, which moves H$\alpha$ by about $0.36\,\mathrm{nm}$ relative to the infinite-mass value, and the H–D isotope shift (about $0.18\,\mathrm{nm}$ at 656 nm) is how deuterium was discovered.
+- [Intuition] Add one sentence on why the center of mass decouples (the potential depends only on $\mathbf r_e-\mathbf r_p$), with the classical Kepler two-body problem as the analogy.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/12 Hydrogen Atom/12.02 Separation of Radial and Angular Variables.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and readable derivation of the reduced radial equation; it would benefit from a plot of the effective potential.
+- [Graph] Plot $V_{\mathrm{eff}}(r)/E_{\mathrm h}=-1/x+\ell(\ell+1)/(2x^2)$ against $x=r/a_0$ on $0.2<x<15$, $-1.2<V/E_{\mathrm h}<0.6$, for $\ell=0,1,2$, with horizontal lines at the Bohr energies $E_n/E_{\mathrm h}=-1/(2n^2)$ for $n=1,2,3$ to show the classically allowed regions.
+- [Simplify] Show the one-line identity $\frac1{r^2}(r^2R')'=\frac1r u''$ for $u=rR$, which is the step that produces the 1D form.
+- [Intuition] Justify $u(0)=0$ for $\ell=0$ more carefully: $R\sim1/r$ would be square-integrable, but $\nabla^2(1/r)=-4\pi\delta^{(3)}(\mathbf r)$, so it does not solve the equation at the origin.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/12 Hydrogen Atom/12.03 Solution of the Radial Equation.md
+priority: medium
+graph: no
+manim: yes
+summary: The math is correct ($\rho_0=2/(a_0\kappa)$, the Laguerre-type equation, and $\rho_0=2n$ all check), but the quantization step is stated rather than shown, so the key result feels unmotivated.
+- [Simplify] Write $L(\rho)=\sum_j c_j\rho^j$ and give the recursion $c_{j+1}=\frac{2(j+\ell+1)-\rho_0}{(j+1)(j+2\ell+2)}c_j$; then show that $c_{j+1}/c_j\to2/j$ (which gives $e^{2\rho}$) unless the numerator vanishes at $j=n_r$, giving $\rho_0=2(n_r+\ell+1)$.
+- [Simplify] Add the intermediate line from $\rho_0=2n$ to $\kappa=1/(na_0)$ and $E_n=-\hbar^2\kappa^2/2m_e$, and note that $\hbar^2/(2m_ea_0^2)=E_{\mathrm{Ry}}$ ties the result back to the Rydberg energy defined above.
+- [Example] Work out $n=2$: list $(n_r,\ell)=(1,0),(0,1)$ and the resulting $L(\rho)$ for each, which leads directly to $R_{20}$ and $R_{21}$ in 12.04.
+- [Manim] Animate a shooting-method solution $u(\rho)$ integrated outward while $E$ sweeps through $E_1$ and $E_2$: away from an eigenvalue the tail diverges up or down, and it flips sign exactly when $E$ crosses $E_n$, which shows why only discrete energies are normalizable.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/12 Hydrogen Atom/12.04 Wave Functions and Degeneracy.md
+priority: low
+graph: yes
+manim: no
+summary: Good note; the radial functions, the Fig. 12.1 formulas, and the Runge–Lenz operator are correct, and only the $n=3$ family and the degeneracy intuition are thin.
+- [Graph] Extend Fig. 12.1 or add a second panel with $a_0r^2R_{n\ell}^2$ for $3s$, $3p$, $3d$ on $0<r/a_0<25$ so the node count $n-\ell-1$ (2, 1, 0) is visible, since $R_{30}$ is already given in the text.
+- [Example] Normalize $R_{30}$ explicitly, $R_{30}=\frac{2}{81\sqrt3}a_0^{-3/2}(27-18r/a_0+2r^2/a_0^2)e^{-r/3a_0}$, instead of leaving it as a proportionality.
+- [Intuition] In the degeneracy section, add the classical picture: in a pure $1/r$ potential Kepler ellipses close and do not precess, and the conserved Runge–Lenz vector points along the major axis; this is why different $\ell$ at the same energy are equivalent.
+- [Graph] Optionally add a 2D density plot of $\lvert\psi_{200}\rvert^2$ and $\lvert\psi_{210}\rvert^2$ in the $xz$-plane (range $\pm12a_0$) to connect radial nodes and angular lobes with orbital pictures.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/12 Hydrogen Atom/12.05 Ground State and Typical Scales.md
+priority: low
+graph: no
+manim: no
+summary: Clear and correct; the integrals, the virial check, and Fig. 12.2 are consistent.
+- [Simplify] Show one integral with $\int_0^\infty x^ne^{-x}dx=n!$, for example $\langle r\rangle=\frac{4}{a_0^3}\int_0^\infty r^3e^{-2r/a_0}dr=\frac{4}{a_0^3}\cdot\frac{3!\,a_0^4}{16}=\frac32a_0$, so readers can reproduce the results.
+- [Intuition] Add the uncertainty-principle estimate $E(a)\approx\hbar^2/(2m_ea^2)-e^2/(4\pi\varepsilon_0a)$, minimized at $a=a_0$ with $E=-13.6\,\mathrm{eV}$, to explain why the atom has size $a_0$ and does not collapse.
+- [Example] Give the probability of finding the electron inside the Bohr radius, $P(r<a_0)=1-5e^{-2}\simeq0.32$, to make the radial distribution concrete.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/12 Hydrogen Atom/12.06 Spectrum and Emission.md
+priority: low
+graph: no
+manim: no
+summary: Correct and well illustrated; the series values (121.6 nm, 656 nm) and the Fig. 12.3 arrows are right, but the Rydberg formula itself is missing.
+- [Simplify] State the Rydberg formula $1/\lambda=R_\infty(1/n'^2-1/n^2)$ with $R_\infty\simeq1.097\times10^7\,\mathrm{m^{-1}}$ (and the reduced-mass factor $\mu/m_e$ for $R_{\mathrm H}$), and add the series limits (91.2 nm, 364.6 nm, 820 nm).
+- [Example] Work out H$\alpha$: $\Delta E=13.6\,\mathrm{eV}\,(1/4-1/9)=1.89\,\mathrm{eV}$, $\lambda=hc/\Delta E\simeq656\,\mathrm{nm}$.
+- [Intuition] Explain why $2s\to1s$ is absent despite $\Delta n\neq0$: it violates $\Delta\ell=\pm1$, so $2s$ is metastable and decays by two-photon emission with a lifetime of about $0.12\,\mathrm s$.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/12 Hydrogen Atom/12.07 Fine-Structure and Zeeman Corrections.md
+priority: medium
+graph: yes
+manim: no
+summary: The fine-structure formula and Zeeman Hamiltonian are correct, but the note is a list of results without the Landé factor, a worked $n=2$ example, or the Lamb shift.
+- [Example] Evaluate the fine-structure formula for $n=2$: $2S_{1/2}$ and $2P_{1/2}$ shift by $-\frac{5}{64}\alpha^2E_{\mathrm{Ry}}$ and $2P_{3/2}$ by $-\frac{1}{64}\alpha^2E_{\mathrm{Ry}}$, giving a splitting $\alpha^2E_{\mathrm{Ry}}/16\simeq4.5\times10^{-5}\,\mathrm{eV}$ (about 10.9 GHz).
+- [Graph] Add a level diagram for $n=2$: the Bohr level, the fine-structure split into $j=1/2$ and $j=3/2$, and the Lamb shift raising $2S_{1/2}$ above $2P_{1/2}$ by about 1.06 GHz (not to scale, with the scales annotated).
+- [Structure] Give the Landé factor $g_J=1+\frac{j(j+1)+s(s+1)-\ell(\ell+1)}{2j(j+1)}$ (with $g_s\simeq2$) and evaluate it for $2S_{1/2}$ (2), $2P_{1/2}$ (2/3), and $2P_{3/2}$ (4/3), since $\Delta E=g_Jm_j\mu_BB$ cannot be used without it.
+- [Intuition] In the orbital-quantum-number callout, add that the QED Lamb shift lifts the $2S_{1/2}$–$2P_{1/2}$ degeneracy, which explains the "radiative corrections" mentioned in 12.00.
+- [Simplify] Add a sentence on the strong-field (Paschen–Back) limit, where $m_\ell,m_s$ are good labels and $\Delta E=\mu_BB(m_\ell+2m_s)$, so readers see what "weak compared with the fine-structure splitting" is contrasted with.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/12 Hydrogen Atom/12.08 Hydrogen Atom Exercises.md
+priority: low
+graph: no
+manim: no
+summary: Clear exercise list; all given results ($3a_0^2$, $2/a_0^2$, $P=(24-65/e)/24$, 122.4 eV) are correct.
+- [Example] Give the result of exercise 11, $E^{(1)}=-\frac{5}{8}\alpha^4m_ec^2\simeq-9.1\times10^{-4}\,\mathrm{eV}$, so readers can check their work as in the other exercises.
+- [Links] Link each exercise to the section it practices (for example exercise 9 to 12.04 and exercise 11 to 12.07) and to the worked solutions in chapter 21 if they exist.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/12 Hydrogen Atom/Atomic spectra and wave mechanics review problems.md
+priority: high
+graph: yes
+manim: no
+summary: A loosely ordered lecture-notebook transcription with useful worked problems, but it has numerical slips, an unnamed transition, frequent "handwritten" commentary, and a physical-quantities table copied from a nuclear-physics note.
+- [Correctness] Electron in an infinite well: $h^2/(8m_eL^2)$ with $L=0.100\,\mathrm{nm}$ gives $6.02\times10^{-18}\,\mathrm J=37.6\,\mathrm{eV}$, not $37.7\,\mathrm{eV}$; the derived levels should be $E_2=150.4$, $E_3=338.4$, and $E_4=601.6\,\mathrm{eV}$.
+- [Correctness] Problem 6-16: $L=\sqrt{3\pi^2\hbar^2\lambda/(2m_ehc)}=\sqrt{3h\lambda/(8m_ec)}$ with $\lambda=694.3\,\mathrm{nm}$ gives $0.795\,\mathrm{nm}$, not $0.791\,\mathrm{nm}$.
+- [Correctness] 11.4(a) item 4: the transition is not stated, and $\Delta E=E_f-E_i=-(13.6\,\mathrm{eV})(1/n_f^2-1/n_i^2)$ is negative for emission (for $4\to2$ it is $-2.55\,\mathrm{eV}$); name the transition and either write $\lvert\Delta E\rvert=2.55\,\mathrm{eV}$ or fix the sign.
+- [Correctness] Physical quantities table: the rows for decay constant $\lambda$, activity $R$, and mean lifetime $\tau$ are never used, $\lambda$ clashes with the de Broglie wavelength row, and $R$ is used in the note as the radial function; remove them and add the symbols the note uses ($k$, $\kappa$, $\eta$, $\vec L$, $L_z$, $m_\ell$, $j$, $m_j$, $\psi$).
+- [Structure] Remove the "handwritten"/"crossed-out" commentary (11.4(a) item 2, LS coupling review, 6-4(c), 6-6(a)) and group the content into wave-function sketching, hydrogen and angular momentum, Stern–Gerlach, and LS terms; also define $\alpha$ before writing $\eta=1/\alpha$ in the penetration-depth section, and state the sphere radius used in 10.6(a) (the quoted speed implies $r\approx5\times10^{-16}\,\mathrm m$).
+- [Graph] For "Angle of orbital angular momentum", plot the vector model for $\ell=2$: vectors of length $\sqrt6$ with $L_z/\hbar=-2,\ldots,2$ in the $(L_\perp,L_z)$ plane, with the angle $\theta_{\min}=35.3^\circ$ marked.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/12 Hydrogen Atom/Hydrogen, spin, and the structure of the periodic table.md
+priority: medium
+graph: no
+manim: no
+summary: A mostly correct transcription on hydrogen, the Zeeman effect, spin, and LS terms, but its headings do not match the content, the LS-coupling example appears three times, one helium statement is wrong, and the quantities table is copied from unrelated notes.
+- [Correctness] Helium excited states: the helium $1s\,2p$ $^3P$ multiplet is inverted, so $^3P_2$ is the lowest and $^3P_0$ the highest level ($2^3P_0$ lies about 30 GHz above $2^3P_1$); Hund's rules apply to the ground term of equivalent electrons and do not predict "$^3P_0$ lowest" here, so keep only "triplet below singlet".
+- [Correctness] Physical quantities table: emissivity $\varepsilon$, decay constant $\lambda$, activity $R$, and mean lifetime $\tau$ are never used, while in this note $R$ is the radial function and $\tau$ the torque; replace those rows with the symbols the note uses ($R(r)$, $\vec\tau$, $\vec L$, $L_z$, $g_s$, $\vec B$, $\varepsilon_0$).
+- [Structure] Retitle the misleading headings ("Hydrogen and an expectation-value example" is about the oscillator, and the bold "The hydrogen atom" paragraph is about parity) and merge "LS coupling example", "LS coupling example revisited", and "LS coupling example 2" into one section, keeping the "LS coupling example" heading because another note links to it.
+- [Structure] Hund's rules: complete rule 3 with the more-than-half-full case (largest $J$) and add a worked ground-term example, for example carbon $2p^2\to{}^3P_0$, which connects to the carbon table at the end.
+- [Simplify] Remove the "handwritten" asides (spin coefficient, $J=1\to J=1$) and state only the correct rule, which is already present.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/12 Hydrogen Atom/Three-dimensional wells and hydrogen wavefunctions.md
+priority: medium
+graph: yes
+manim: no
+summary: The derivations (separation, $P_2^1$, spherical Bessel functions, hydrogen normalization) are correct, but letters are reused for different quantities and the quantities table is wrong.
+- [Correctness] Physical quantities table: $R,T$ are listed as reflection and transmission coefficients, but here $R$ is the radial (or spatial) function and $T(t)$ the time factor, and $Z$ is listed as atomic number but only appears as the Cartesian factor $Z(z)$; fix those rows and add $m$, $\ell$, $Y_\ell^m$, $P_\ell^m$, $j_\ell$, $n_\ell$, $\beta_{n\ell}$, $a$, and $u$.
+- [Correctness] Symbol clash: $m$ is both the particle mass ($2mr^2/\hbar^2$) and the magnetic quantum number ($m^2$, $e^{im\phi}$), and $Y$ is both the Cartesian factor $Y(y)$ and the angular function $Y(\theta,\phi)$; use $\mu$ or $m_e$ for the mass and different letters for the Cartesian factors.
+- [Graph] For the infinite spherical well, plot $j_0(x)$, $j_1(x)$, $j_2(x)$ on $0<x<12$ and mark the zeros $\beta_{10}=\pi$, $\beta_{11}=4.493$, $\beta_{12}=5.763$, $\beta_{20}=2\pi$ so the ordering $E_{10}<E_{11}<E_{12}<E_{20}$ is visible.
+- [Simplify] In "Separation in Cartesian coordinates", say that separation works whenever $V=V_1(x)+V_2(y)+V_3(z)$, not only for constant potential, and give the 3D box energies as the example.
+- [Structure] Move Problems 7 and 15(a) (Fourier transform, ladder operators) out of this note or under a separate "Other problems" heading, since they are unrelated to 3D wells and hydrogen.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/13 Density Matrix and Decoherence/13.00 Density Matrix and Decoherence.md
+priority: low
+graph: no
+manim: no
+summary: Clear, correct chapter hub; the summary bullets (purity range, Bloch ball, $T_2\le2T_1$, Lindblad generator) are accurate.
+- [Structure] No change needed; optionally link each summary bullet to its section note (13.01–13.08).
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/13 Density Matrix and Decoherence/13.01 Limitations of Pure States.md
+priority: low
+graph: no
+manim: no
+summary: Clear and correct motivating example contrasting a coherent superposition with a $z$-basis mixture.
+- [Example] Write the two density matrices side by side, $\tfrac12\begin{pmatrix}1&1\\1&1\end{pmatrix}$ versus $\tfrac12 I$, and note that the off-diagonal entry is exactly what $\langle\hat S_x\rangle=\hbar\operatorname{Re}\rho_{01}$ detects; this bridges to 13.02.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/13 Density Matrix and Decoherence/13.02 Definition and Properties of the Density Matrix.md
+priority: low
+graph: no
+manim: no
+summary: Correct and well structured definition with a proof of the characterization theorem.
+- [Example] Illustrate Remark 13.1 with the standard example: equal mixtures of $\{\lvert0\rangle,\lvert1\rangle\}$, of $\{\lvert+\rangle,\lvert-\rangle\}$, and of three states at $120^\circ$ on a great circle of the Bloch sphere all give $\hat I/2$.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/13 Density Matrix and Decoherence/13.03 Expectation Values and Purity.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and clear, with a good interactive Bloch-ball figure.
+- [Simplify] Prove the qubit purity formula in one line: $\operatorname{Tr}\hat\rho^2=\tfrac14\operatorname{Tr}(I+2\mathbf a\cdot\boldsymbol\sigma+(\mathbf a\cdot\boldsymbol\sigma)^2)=\tfrac12(1+\lvert\mathbf a\rvert^2)$, using $(\mathbf a\cdot\boldsymbol\sigma)^2=\lvert\mathbf a\rvert^2I$.
+- [Graph] Optionally add a small 2D plot of $\mathcal P=(1+r^2)/2$ for $r=\lvert\mathbf a\rvert\in[0,1]$, marking $1/2$ at the centre and $1$ on the surface.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/13 Density Matrix and Decoherence/13.04 Composite Systems and Partial Trace.md
+priority: low
+graph: no
+manim: no
+summary: Correct and concise; the Bell-state partial trace is stated rather than computed.
+- [Example] Show the partial-trace step for $\lvert\Phi^+\rangle$ explicitly: expand $\lvert\Phi^+\rangle\langle\Phi^+\rvert$ into four terms and show that $\langle n\rvert_B$ kills the cross terms $\lvert0\rangle\langle1\rvert\otimes\lvert0\rangle\langle1\rvert$.
+- [Example] Contrast with a product state such as $\lvert+\rangle\lvert0\rangle$, whose reduced state stays pure, to make Remark 13.2 concrete.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/13 Density Matrix and Decoherence/13.05 Von Neumann Entropy.md
+priority: low
+graph: yes
+manim: no
+summary: Correct list of entropy properties; it would benefit from one plot and one worked example.
+- [Graph] Add a 2D plot of the qubit entropy $S(p)=-p\ln p-(1-p)\ln(1-p)$ for $p\in[0,1]$, with the maximum $\ln2$ at $p=1/2$; optionally overlay the linear entropy $1-\mathcal P=2p(1-p)$ for comparison.
+- [Intuition] Add one sentence on why $S(\hat\rho_A)=S(\hat\rho_B)$ for a pure joint state (Schmidt decomposition gives both reduced states the same nonzero spectrum $\lvert c_k\rvert^2$).
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/13 Density Matrix and Decoherence/13.06 Liouville–von Neumann Equation.md
+priority: low
+graph: no
+manim: no
+summary: Correct derivation and a good classical analogy (sign of $\partial_t f=\{H,f\}$ checked).
+- [Intuition] Point out the sign difference from the Heisenberg equation, $d\hat A_H/dt=+\tfrac{i}{\hbar}[\hat H,\hat A_H]$ versus $d\hat\rho/dt=-\tfrac{i}{\hbar}[\hat H,\hat\rho]$, since students often confuse the two.
+- [Example] Add the qubit example in the energy basis: $\rho_{01}(t)=\rho_{01}(0)e^{-i\omega_{01}t}$ with populations constant, showing that unitary evolution rotates coherences but does not damp them (contrast with 13.07).
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/13 Density Matrix and Decoherence/13.07 Decoherence.md
+priority: medium
+graph: yes
+manim: yes
+summary: Correct and well-motivated treatment (the reduced-state formula with $\langle E_1\mid E_0\rangle$ is right), but the decoherence-time model is quoted without derivation or scale.
+- [Structure] State that the exponential law $\rho_{01}\propto e^{-t/\tau_d}$ is a Markovian approximation; in the spin–boson pure-dephasing model the decay is generally Gaussian at short times and depends on the bath spectral density, so the quoted $\coth$ formula is a high-level summary, not a general result.
+- [Example] Add a numerical scale example (e.g. a dust grain in air or a $\mu$m superposition at room temperature) so the reader sees why $\tau_d$ is extraordinarily short for macroscopic objects.
+- [Graph] Add a 2D plot of $\lvert\rho_{01}(t)\rvert/\lvert\rho_{01}(0)\rvert=e^{-t/\tau_d}$ together with constant populations $\lvert c_0\rvert^2=0.7$, $\lvert c_1\rvert^2=0.3$ for $t/\tau_d\in[0,5]$.
+- [Manim] Animate the Bloch vector of the system qubit shrinking from the surface onto the $z$-axis as $\langle E_0\mid E_1\rangle$ decays, showing coherence loss without population change.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/13 Density Matrix and Decoherence/13.08 Lindblad Equation.md
+priority: medium
+graph: yes
+manim: yes
+summary: Correct (the rates for $\hat L=\sigma_-/\sqrt{T_1}$ and $\hat L=\sigma_z/\sqrt{2T_\phi}$ and $1/T_2=1/(2T_1)+1/T_\phi$ check out), but the population and coherence equations are not written out.
+- [Example] Write the component equations for amplitude damping: $\dot\rho_{11}=-\rho_{11}/T_1$, $\dot\rho_{00}=+\rho_{11}/T_1$, $\dot\rho_{01}=-\rho_{01}/(2T_1)$, so the reader can see where the factor $1/(2T_1)$ in $1/T_2$ comes from.
+- [Graph] Add a 2D plot of $\rho_{11}(t)=e^{-t/T_1}$ and $\lvert\rho_{01}(t)\rvert=\tfrac12e^{-t/T_2}$ for $T_1=1$, $T_\phi=2$ (so $T_2=1$) over $t\in[0,5]$, starting from $\lvert+\rangle$.
+- [Manim] Animate the Bloch vector under combined relaxation and dephasing (with a small Hamiltonian precession), spiralling from $\lvert+\rangle$ to the ground-state pole.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/13 Density Matrix and Decoherence/13.09 Density Matrix and Decoherence Exercises.md
+priority: low
+graph: no
+manim: no
+summary: Good exercise list; all results verified (Ex. 3 purity, Ex. 8 entropy $\simeq1.011$ nats, Ex. 10 precession signs, Ex. 11 $T_\phi=1/(2\gamma)$).
+- [Structure] No change needed; optionally add a result line to Exercises 2, 5 and 7 consistent with the others, and the Bloch vector $\mathbf a=(\sin\theta,0,\cos\theta)$ to Exercise 1.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/14 Many-Particle Systems and Identical Particles/14.00 Many-Particle Systems and Identical Particles.md
+priority: low
+graph: no
+manim: no
+summary: Clear and correct chapter hub.
+- [Structure] No change needed; optionally link the summary bullets to the section notes 14.01–14.07.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/14 Many-Particle Systems and Identical Particles/14.01 Tensor Product.md
+priority: low
+graph: no
+manim: no
+summary: Correct but terse; the claim that $c_1\lvert a_1b_1\rangle+c_2\lvert a_2b_2\rangle$ cannot factor is stated without the one-line argument.
+- [Simplify] Add the proof: a product $(\sum\alpha_i\lvert a_i\rangle)(\sum\beta_j\lvert b_j\rangle)$ has coefficient matrix $\alpha_i\beta_j$ of rank one, while $\operatorname{diag}(c_1,c_2)$ has rank two.
+- [Example] Give the explicit Kronecker-product matrix of $\sigma_z\otimes I$ and $I\otimes\sigma_x$ on two qubits to show the commuting factors concretely.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/14 Many-Particle Systems and Identical Particles/14.02 Entanglement and Bell States.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and readable; it overlaps strongly with 15.01–15.04.
+- [Graph] Add a 2D plot of the singlet correlation $E(\theta)=-\cos\theta$ versus the angle between the two analyzers, $\theta\in[0,\pi]$, with the classical linear local model $-1+2\theta/\pi$ overlaid, to preview the Bell violation.
+- [Structure] Since chapter 15 repeats the Bell-state definitions and Bell inequalities, keep this note to the definition and singlet anticorrelation and link to 15.02 and 15.04 for details.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/14 Many-Particle Systems and Identical Particles/14.03 Identical Particles.md
+priority: low
+graph: no
+manim: no
+summary: Correct and concise presentation of the symmetrization postulate.
+- [Intuition] Add one sentence that the restriction to eigenvalues $\pm1$ relies on three dimensions; in two dimensions exchange phases $e^{i\theta}$ (anyons) are possible.
+- [Example] Add the observable consequence: in a two-particle interference experiment (Hong–Ou–Mandel) bosons bunch, illustrating that exchange symmetry is not just a label convention.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/14 Many-Particle Systems and Identical Particles/14.04 Pauli Exclusion Principle.md
+priority: low
+graph: yes
+manim: no
+summary: Correct with good figures; the occupation-statistics plot is placed in this note without any text deriving or discussing the formulas.
+- [Structure] Fig. 14.2 is introduced only by a closing sentence; add the formulas $\langle n\rangle=1/(e^{(\varepsilon-\mu)/k_BT}\pm1)$ and $e^{-(\varepsilon-\mu)/k_BT}$ with one sentence each, or move the figure to a statistics note.
+- [Example] Show the two-fermion Slater determinant written out, $\tfrac1{\sqrt2}[\phi_1(1)\phi_2(2)-\phi_1(2)\phi_2(1)]$, before the general $N$ case.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/14 Many-Particle Systems and Identical Particles/14.05 Statistics of Two Bosons and Two Fermions in a Potential Well.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and clear energy comparison ($5E_1$ vs $2E_1$, $\sum n^2$ formula verified).
+- [Graph] Add a 2D density plot of $\lvert\Psi(x_1,x_2)\rvert^2$ on $[0,L]^2$ for the symmetric and antisymmetric $\phi_1\phi_2$ states (two panels or a toggle), showing the nodal line $x_1=x_2$ for fermions and enhancement on the diagonal for bosons.
+- [Example] Add the spin-$1/2$ case for $N=2$: the singlet with both particles in $\phi_1$ gives $2E_1$, the same as bosons, which clarifies the role of spin.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/14 Many-Particle Systems and Identical Particles/14.06 Helium Atom.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct numbers ($-108.8$, $-78.98$, $-77.5\,\mathrm{eV}$, $Z_{\mathrm{eff}}=27/16$) and clear exchange discussion, but the first-order perturbative estimate is skipped.
+- [Example] Add the first-order perturbation estimate $\langle V_{ee}\rangle=\tfrac54Z\cdot13.6\,\mathrm{eV}=34\,\mathrm{eV}$, giving $E\approx-74.8\,\mathrm{eV}$, so the sequence $-108.8\to-74.8\to-77.5\to-79.0\,\mathrm{eV}$ shows how each improvement works.
+- [Simplify] Write the variational energy $E(Z_{\mathrm{eff}})=[Z_{\mathrm{eff}}^2-2ZZ_{\mathrm{eff}}+\tfrac58Z_{\mathrm{eff}}]\,(2\times13.6\,\mathrm{eV})$ so the minimum $Z_{\mathrm{eff}}=Z-5/16$ follows in one line.
+- [Graph] Plot $E(Z_{\mathrm{eff}})$ for $Z_{\mathrm{eff}}\in[1.2,2.2]$ with the minimum at $27/16$ and a horizontal line at the measured $-78.98\,\mathrm{eV}$.
+- [Intuition] Explain the exchange splitting sign with the exchange integral: $E_{\pm}=J\pm K$ with $K>0$, the triplet (antisymmetric spatial) taking $J-K$.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/14 Many-Particle Systems and Identical Particles/14.07 Notes on the Periodic Structure of the Elements.md
+priority: low
+graph: yes
+manim: no
+summary: Correct summary of screening, filling order, period lengths and Hund's rules, with a good carbon example.
+- [Links] The source link [[Hydrogen, spin, and the structure of the periodic table#Hydrogen and atomic physics|Physics 10]] points to a general section; the matching material is under "#Hund's rules" and "#Carbon term symbols" in that note.
+- [Graph] Add a 2D plot of the first ionization energy versus $Z$ for $Z=1$–$36$ to show the shell closures (He, Ne, Ar, Kr) that the filling order explains.
+- [Example] Add oxygen ($2p^4$, more than half filled) as a second worked case giving $^3P_2$, to illustrate Hund's third rule in the other direction.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/14 Many-Particle Systems and Identical Particles/14.08 Many-Particle Systems and Identical Particles Exercises.md
+priority: low
+graph: no
+manim: no
+summary: Good exercise list with correct results, but one symbol is reused for two different kinds of state.
+- [Correctness] $\Psi_\pm$ denotes the symmetric/antisymmetric well states in Exercises 4, 6, 7 and 8, while $\lvert\Psi^\pm\rangle$ denotes Bell states in Exercises 1 and 8; Exercise 8 uses both in one line. Rename the well states (e.g. $\Phi_S,\Phi_A$).
+- [Example] Add the closed-form results for Exercises 6–7: $\langle(x_1-x_2)^2\rangle=\langle x^2\rangle_1+\langle x^2\rangle_2-2\langle x\rangle_1\langle x\rangle_2\mp2\lvert\langle x\rangle_{12}\rvert^2$ with $\langle x\rangle_{12}=-16L/(9\pi^2)$.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/15 Entanglement, EPR, and Quantum Information/15.00 Entanglement, EPR, and Quantum Information.md
+priority: low
+graph: no
+manim: no
+summary: Clear chapter hub with an accurate summary of the chapter's results.
+- [Structure] No change needed beyond optionally linking each summary bullet to its section note (15.01–15.09) so the hub doubles as a navigation index.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/15 Entanglement, EPR, and Quantum Information/15.01 Separable and Entangled States.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and compact, but the mixed-state paragraph refers to a partial-transpose test that is never introduced.
+- [Simplify] The sentence "some entangled states have a positive partial transpose and escape that test" refers to "that test" without ever stating the Peres–Horodecki (PPT) criterion; either state it in one line (separable implies $\rho^{T_B}\ge0$, which is also sufficient for $2\times2$ and $2\times3$) or drop the remark.
+- [Intuition] Add the general product test for two qubits: $a_{00}\lvert00\rangle+a_{01}\lvert01\rangle+a_{10}\lvert10\rangle+a_{11}\lvert11\rangle$ is a product iff $a_{00}a_{11}-a_{01}a_{10}=0$; this turns the ad hoc $\lvert\Phi^+\rangle$ argument (and exercises 1–2 of 15.10) into a one-line check.
+- [Example] Compute the Schmidt coefficients and $E$ for the partially entangled state $\cos\theta\lvert00\rangle+\sin\theta\lvert11\rangle$, giving $E=-\cos^2\theta\log_2\cos^2\theta-\sin^2\theta\log_2\sin^2\theta$, to show the interpolation between 0 and 1 bit.
+- [Graph] Plot that $E(\theta)$ for $\theta\in[0,\pi/2]$ (binary entropy curve, maximum 1 bit at $\theta=\pi/4$).
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/15 Entanglement, EPR, and Quantum Information/15.02 Bell States.md
+priority: low
+graph: no
+manim: no
+summary: Correct and concise; Proposition 15.1 would be clearer with the actual eigenvalue table.
+- [Simplify] After Proposition 15.1, list the eigenvalues of $(\sigma_x\sigma_x,\sigma_y\sigma_y,\sigma_z\sigma_z)$: $\Phi^+:(+,-,+)$, $\Phi^-:(-,+,+)$, $\Psi^+:(+,+,-)$, $\Psi^-:(-,-,-)$, and note that their product is always $-1$ because $(\sigma_x\otimes\sigma_x)(\sigma_y\otimes\sigma_y)=-\sigma_z\otimes\sigma_z$.
+- [Intuition] Mention that the four Bell states are obtained from $\lvert\Phi^+\rangle$ by applying $\hat I,Z,X,XZ$ to one qubit, which links directly to superdense coding (15.09) and teleportation (15.08).
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/15 Entanglement, EPR, and Quantum Information/15.03 EPR Paradox.md
+priority: low
+graph: no
+manim: no
+summary: Clear, correct statement of the EPR premises and Bohm's spin version.
+- [Intuition] Close with one sentence stating what quantum mechanics says instead (no pre-existing values for both $\mathbf a$ and $\mathbf a'$) and that Bell (15.04) showed the dispute is experimentally decidable, so the reader sees why the next note matters.
+- [Example] Add the probabilities for axes at relative angle $\theta$: $P(+,-)=P(-,+)=\tfrac12\cos^2(\theta/2)$, $P(+,+)=P(-,-)=\tfrac12\sin^2(\theta/2)$, which generalizes the $(0,1/2,1/2,0)$ list and prepares $E=-\cos\theta$ in 15.04.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/15 Entanglement, EPR, and Quantum Information/15.04 Bell and CHSH Inequalities.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct derivation of the CHSH bound and the Tsirelson value, but the singlet correlation $-\mathbf a\cdot\mathbf b$ is asserted rather than derived.
+- [Simplify] Show the two-line derivation of $E(\mathbf a,\mathbf b)=-\mathbf a\cdot\mathbf b$: use $(\boldsymbol\sigma\otimes\hat I+\hat I\otimes\boldsymbol\sigma)\lvert\Psi^-\rangle=0$ to replace $\hat I\otimes(\mathbf b\cdot\boldsymbol\sigma)$ by $-(\mathbf b\cdot\boldsymbol\sigma)\otimes\hat I$, then apply the Pauli identity and $\langle\boldsymbol\sigma\otimes\hat I\rangle=0$; "rotational invariance" alone does not give the sign or the cosine.
+- [Graph] Plot the singlet correlation $E(\theta)=-\cos\theta$ against the best local-realist straight-line model $E_{\mathrm{LHV}}(\theta)=-1+2\theta/\pi$ for $\theta\in[0,\pi]$; the gap at $\theta=\pi/4$ and $3\pi/4$ is exactly what the chosen axes exploit.
+- [Intuition] Explain why the angles $0,\pi/4,\pi/2,3\pi/4$ are optimal: with $E=-\cos$, three pairs differ by $\pi/4$ and one by $3\pi/4$, so all four terms of $S$ add with the same sign.
+- [Structure] State the assumptions behind $\lvert S\rvert\le2$ explicitly (locality, setting-independent $\rho(\lambda)$, outcomes $\pm1$), since 15.05 discusses loopholes in terms of exactly these assumptions.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/15 Entanglement, EPR, and Quantum Information/15.05 Experimental Tests.md
+priority: medium
+graph: no
+manim: no
+summary: Correct but very thin; the loophole-free experiments are described vaguely without names, dates, or numbers.
+- [Structure] Name the 2015 loophole-free tests (Delft NV centres separated by 1.3 km, Vienna and NIST photon tests with high-efficiency superconducting detectors) and the 2022 Nobel Prize (Aspect, Clauser, Zeilinger); "photons over long distances" is misleading, since the 2015 photon tests closed the detection loophole with efficient detectors at separations of tens to a few hundred metres.
+- [Links] Link each loophole to the CHSH assumption it attacks (fair sampling, locality, measurement independence) and to the derivation in [[15.04 Bell and CHSH Inequalities]].
+- [Simplify] In the efficiency note, give the formulas behind the numbers: $\eta>2/(1+\sqrt2)\approx82.8\%$ for the maximally entangled state and Eberhard's $\eta>2/3$ for weakly entangled states.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/15 Entanglement, EPR, and Quantum Information/15.06 No-Cloning Theorem.md
+priority: low
+graph: no
+manim: no
+summary: Correct standard proof; the global-phase remark is muddled.
+- [Simplify] Rewrite the sentence "The same physical state can also be represented by a vector that differs by a global phase": the proof gives $z\in\{0,1\}$, and allowing an output phase does not rescue cloning of nonorthogonal states (the modulus version $\lvert z\rvert=\lvert z\rvert^2$ gives the same conclusion); say this explicitly.
+- [Intuition] Add the linearity argument as an alternative: cloning $\lvert0\rangle$ and $\lvert1\rangle$ forces $(\lvert0\rangle+\lvert1\rangle)/\sqrt2\mapsto(\lvert00\rangle+\lvert11\rangle)/\sqrt2$, an entangled state, not the product $\lvert{+}\rangle\lvert{+}\rangle$; this also links to CNOT in 15.07.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/15 Entanglement, EPR, and Quantum Information/15.07 Qubits and Quantum Gates.md
+priority: medium
+graph: no
+manim: yes
+summary: Correct and well organized, but the gates are listed without showing their Bloch-sphere action, and the no-signalling section belongs elsewhere.
+- [Manim] Animate a Bloch vector under $X$, $Z$, $H$, $S$, and $T$ as rotations (by $\pi$ about $x$, $z$, $(x+z)/\sqrt2$, and by $\pi/2$, $\pi/4$ about $z$), ending with $H\lvert0\rangle=\lvert+\rangle$.
+- [Simplify] State the rotation angles of $S$ and $T$ (about $z$ by $\pi/2$ and $\pi/4$) alongside the Pauli and Hadamard statements, and note $H=(X+Z)/\sqrt2$, which makes its rotation axis obvious.
+- [Example] Write out $\operatorname{CNOT}(H\otimes\hat I)\lvert00\rangle$ step by step: $(\lvert00\rangle+\lvert10\rangle)/\sqrt2\to(\lvert00\rangle+\lvert11\rangle)/\sqrt2$.
+- [Structure] Move the "Nonlocality and no-signalling" section to 15.04 or 15.05 (or its own note); it is unrelated to gates, and here the letter $S$ (phase gate) also collides with the CHSH combination $S$ used in the neighbouring notes.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/15 Entanglement, EPR, and Quantum Information/15.08 Quantum Teleportation.md
+priority: low
+graph: no
+manim: no
+summary: The Bell-basis decomposition, bit table, and corrections are correct; a transcription callout about "the source" distracts.
+- [Structure] Remove or rewrite the "Bit order in the source" callout; readers cannot see "the source prose", and the table plus $Z^aX^b$ is already self-consistent (verified: $\Phi^+\to00$, $\Phi^-\to10$, $\Psi^+\to01$, $\Psi^-\to11$ for CNOT then $H$ on $C$).
+- [Simplify] Add one line showing how Eq. (15.3) is obtained: substitute $\lvert00\rangle=(\Phi^++\Phi^-)/\sqrt2$, $\lvert11\rangle=(\Phi^+-\Phi^-)/\sqrt2$, $\lvert01\rangle=(\Psi^++\Psi^-)/\sqrt2$, $\lvert10\rangle=(\Psi^+-\Psi^-)/\sqrt2$ for qubits $CA$.
+- [Intuition] Note that the bit convention here ($10\to Z$, $01\to X$) differs from the message labels in 15.09 ($01\to Z$, $10\to X$); align them or flag the difference.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/15 Entanglement, EPR, and Quantum Information/15.09 Superdense Coding.md
+priority: low
+graph: no
+manim: no
+summary: Short, correct description of the protocol.
+- [Simplify] Note that $XZ$ produces $-\lvert\Psi^-\rangle$ (as exercise 11 of 15.10 states) and describe the Bell measurement concretely as CNOT then $H$ followed by computational-basis readout, as in Fig. 15.3.
+- [Structure] Use the same bit-to-gate convention as 15.08 or state the mapping difference explicitly.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/15 Entanglement, EPR, and Quantum Information/15.10 Entanglement, EPR, and Quantum Information Exercises.md
+priority: low
+graph: no
+manim: no
+summary: Exercise list with correct results (all eleven checked).
+- [Structure] No change needed; optionally add a hint to exercise 2 using the determinant test $a_{00}a_{11}-a_{01}a_{10}=1/3\ne0$.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/16 Perturbation Theory/16.00 Perturbation Theory.md
+priority: low
+graph: no
+manim: no
+summary: Accurate chapter hub; contains a transcription callout about "the source summary".
+- [Structure] Remove the "Second-order energy in the source summary" callout; the corrected formula stands on its own and readers cannot see the source.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/16 Perturbation Theory/16.01 Time-Independent Perturbation Theory – Nondegenerate Case.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct derivation, but the second-order step is skipped and no worked example or validity criterion is given.
+- [Simplify] Show the $\lambda^2$ equation $(\hat H_0-E_n^{(0)})\lvert n^{(2)}\rangle+(\hat V-E_n^{(1)})\lvert n^{(1)}\rangle-E_n^{(2)}\lvert n^{(0)}\rangle=0$ before projecting, so that $E_n^{(2)}=\langle n^{(0)}\rvert\hat V\lvert n^{(1)}\rangle$ is visible.
+- [Intuition] State the validity condition $\lvert V_{mn}\rvert\ll\lvert E_n^{(0)}-E_m^{(0)}\rvert$ and the level-repulsion interpretation of the second-order term (coupled levels push each other apart).
+- [Example] Add the exactly solvable two-level case $\begin{pmatrix}E_1&v\\v&E_2\end{pmatrix}$ with eigenvalues $\tfrac{E_1+E_2}2\pm\sqrt{(\tfrac{E_1-E_2}2)^2+v^2}$, whose expansion reproduces $E^{(2)}=v^2/(E_1-E_2)$.
+- [Graph] Plot the exact two-level energies and the second-order approximation versus $v/\Delta\in[0,2]$ (with $\Delta=E_2-E_1$), showing where perturbation theory fails.
+- [Structure] Replace the "Sign of the ground-state correction" callout about the source with a plain statement; the main text already handles the zero-coupling case.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/16 Perturbation Theory/16.02 Harmonic Oscillator with a Cubic Perturbation.md
+priority: medium
+graph: yes
+manim: no
+summary: The quoted result $-(\lambda^2/\hbar\omega)(\hbar/2m\omega)^3(30n^2+30n+11)$ is correct, but the matrix elements behind it are not shown and $\lambda$ changes meaning from 16.01.
+- [Simplify] List the four matrix elements $\langle n\pm3\rvert\hat x^3\lvert n\rangle$ and $\langle n\pm1\rvert\hat x^3\lvert n\rangle$ in units of $(\hbar/2m\omega)^{3/2}$ (e.g. $\sqrt{(n+1)(n+2)(n+3)}$ and $3(n+1)^{3/2}$) and the energy denominators $\mp3\hbar\omega,\mp\hbar\omega$, so the reader can reproduce $30n^2+30n+11$.
+- [Structure] In 16.01 $\lambda$ is dimensionless, here it carries units $\mathrm{J\,m^{-3}}$; rename the cubic coefficient (e.g. $\kappa$) or state the change, and delete the "Expansion convention" source callout.
+- [Intuition] Explain why the shift is negative for every $n$: the potential $\tfrac12m\omega^2x^2+\lambda x^3$ softens on one side; also note that the series is only asymptotic because this potential has no global minimum.
+- [Graph] Plot $V(x)=\tfrac12m\omega^2x^2+\lambda x^3$ in units of $\hbar\omega$ and $\sqrt{\hbar/m\omega}$ for $\lambda=0$ and a small $\lambda$, with the shifted levels $E_0,E_1,E_2$ drawn as horizontal lines.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/16 Perturbation Theory/16.03 Degenerate Case.md
+priority: low
+graph: no
+manim: no
+summary: Correct and well illustrated; Stark matrix element, eigenvalues, eigenvectors, and Fig. 16.1 are consistent.
+- [Intuition] Add one sentence interpreting the shifted states: $(\lvert2s\rangle\pm\lvert2p_0\rangle)/\sqrt2$ carry permanent dipole moments along $\pm z$ of magnitude $3ea_0$, which is why the shift is linear in the field, unlike the quadratic shift of $1s$.
+- [Simplify] The first-order shifts are written $\lambda E_{n,k}^{(1)}$, but the Stark section uses $\hat V=eE\hat z$ without $\lambda$; say that $\lambda=1$ there.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/16 Perturbation Theory/16.04 Time-Dependent Perturbation Theory.md
+priority: medium
+graph: no
+manim: no
+summary: Correct but terse; the derivation of the coefficient equation and the validity condition are skipped.
+- [Simplify] Show the intermediate step: substituting the expansion into $i\hbar\partial_t\lvert\psi\rangle=(\hat H_0+\hat V)\lvert\psi\rangle$ cancels the $\hat H_0$ terms against the time derivative of the phases, then projecting onto $\langle m\rvert$ gives the coefficient equation.
+- [Intuition] State when first order is valid ($\lvert c_f^{(1)}\rvert\ll1$, i.e. $c_i\approx1$) and that the phase $e^{i\omega_{fi}t'}$ makes the integral pick out the Fourier component of $V_{fi}(t)$ at $\omega_{fi}$.
+- [Example] Add the constant perturbation switched on at $t=0$ (exercise 8 of 16.08) as a short worked example, $P=4\lvert V_{fi}\rvert^2\sin^2(\omega_{fi}t/2)/(\hbar\omega_{fi})^2$, as a bridge to 16.05.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/16 Perturbation Theory/16.05 Harmonic Perturbation and Fermi's Golden Rule.md
+priority: medium
+graph: yes
+manim: yes
+summary: Correct derivation of the golden rule (prefactors $\pi t/2$ and $2\pi/\hbar$ checked), but the key sinc-squared limit is only asserted.
+- [Graph] Plot $F_t(\Delta)=\sin^2(\Delta t/2)/(\Delta/2)^2$ versus $\Delta=\omega_{fi}-\omega$ for $t=1,2,4$ (arbitrary units), showing peak height $t^2$, width $\sim2\pi/t$, and area $2\pi t$.
+- [Manim] Animate $F_t(\Delta)$ as $t$ grows: the central peak rises as $t^2$ and narrows as $1/t$ while the area grows linearly, which shows why the rate becomes constant.
+- [Simplify] Justify $\sin^2(xt/2)/x^2\to(\pi t/2)\delta(x)$ in one line with $\int_{-\infty}^\infty\sin^2(xt/2)/x^2\,dx=\pi t/2$.
+- [Intuition] State the time window of validity: $t$ long enough that the peak is narrow compared with the energy range over which $\rho$ and $V_{fi}$ vary, yet $\Gamma t\ll1$ so first order holds.
+- [Structure] Remove the "Time dependence in the source" callout; the main text is already correct.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/16 Perturbation Theory/16.06 Radiation Absorption by an Atom.md
+priority: medium
+graph: no
+manim: no
+summary: The rate formulas and the $2p\to1s$ numbers ($A\approx6.3\times10^8\,\mathrm{s^{-1}}$, $\tau\approx1.6\,\mathrm{ns}$) are correct, but both rates appear without derivation or link to the golden rule.
+- [Simplify] Show how the absorption rate follows from 16.05: average $\lvert\hat{\boldsymbol\epsilon}\cdot\mathbf d_{fi}\rvert^2$ over directions and polarizations to get $\lvert\mathbf d_{fi}\rvert^2/3$, and integrate the delta function against the spectral energy density $I(\omega)/c$.
+- [Links] Link the spontaneous-emission formula to [[Einstein coefficients and electric dipole transition rates]] and state the Einstein relation that connects the two displayed rates.
+- [Example] Show the $2p\to1s$ number: $\lvert\langle100\rvert z\lvert210\rangle\rvert^2=(2^{15}/3^{10})a_0^2$ and $\hbar\omega=10.2\,\mathrm{eV}$ give $A\approx6.3\times10^8\,\mathrm{s^{-1}}$.
+- [Structure] Replace the "Dipole sign in the source" callout with the definition $\mathbf d=-e\mathbf r$ in the main text.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/16 Perturbation Theory/16.07 Two-Level Dynamics and Rabi Oscillations.md
+priority: low
+graph: no
+manim: yes
+summary: Correct Rabi formula and a correct figure (the detuned curve with $\delta=\sqrt3\,\Omega_R$ has amplitude $1/4$ and doubled frequency).
+- [Simplify] Sketch the rotating-wave step: keep only the resonant term, go to the rotating frame to get the time-independent Hamiltonian $\tfrac\hbar2\begin{pmatrix}-\delta&\Omega_R\\\Omega_R&\delta\end{pmatrix}$, whose eigenfrequency splitting $\sqrt{\Omega_R^2+\delta^2}$ is the generalized Rabi frequency.
+- [Manim] Animate the Bloch vector precessing about the tilted axis $(\Omega_R,0,\delta)$, on resonance (passing through the south pole) and detuned (a smaller cone), next to the growing $P(t)$ curve.
+- [Structure] Fig. 16.2 labels the curve $P_{0\to1}$ while the text uses $P_{i\to f}$; use one label.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/16 Perturbation Theory/16.08 Perturbation Theory Exercises.md
+priority: low
+graph: no
+manim: no
+summary: Exercise list; the stated results check out (exercises 1, 2, 6, 7, 8, 10 verified).
+- [Structure] Exercise 3 uses the label "Source condition" and refers to "the source"; restate it as a normal exercise with a result line.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/16 Perturbation Theory/Degenerate perturbation theory and oscillator transitions.md
+priority: high
+graph: yes
+manim: no
+summary: A lecture transcript with course logistics, page references, and a physical-quantity table full of symbols the note never uses; the physics shown is mostly correct but disorganized, and the title promises oscillator transitions that never appear.
+- [Correctness] The physical-quantity table lists symbols absent from the note with unrelated meanings: $E$ in $\mathrm N$ (linear perturbation coefficient), $\Delta E,\delta E$ (continuum widths), $c$ (speed of light), $V_0,V$ (well depth), and $A,B$ (emission coefficients); remove them and add the used but missing $C_{ii'}$, $\alpha$, $\epsilon$, $U$, $H$, $\Theta$, $a_x,a_y$.
+- [Correctness] Symbol clash: $C_{ii'}$ denotes the state expansion coefficients in the review section and $C_{ij}$ the quadratic-form matrix of the 2D oscillator perturbation; rename one (e.g. $K_{ij}$), and likewise $\lambda$ is used for the quartic coupling, the mode-frequency shifts $\lambda_j$, and the power-law coupling $\lambda_n$.
+- [Structure] Delete the course-logistics paragraphs (grading, midterm week, instructor absences, office room) and the page references ("on the previous page", "At the bottom of the page"), which are meaningless in the vault.
+- [Structure] The title mentions oscillator transitions, but the note ends with the time-ordered propagator and never computes a transition; retitle (e.g. "Degenerate perturbation theory and the time-evolution operator") or link to [[Heisenberg and interaction pictures in perturbation calculations]], where driven-oscillator transitions are computed.
+- [Simplify] In the degenerate section, give the closed-form mixing angle $\tan2\alpha=2V_{12}/(V_{11}-V_{22})$ and eigenvalues $\tfrac{V_{11}+V_{22}}2\pm\sqrt{(\tfrac{V_{11}-V_{22}}2)^2+V_{12}^2}$ instead of stopping at the condition $V_{\tilde1\tilde2}=0$.
+- [Graph] Plot the two eigenvalues of $\begin{pmatrix}\Delta/2&v\\v&-\Delta/2\end{pmatrix}$ versus $\Delta\in[-4v,4v]$ (avoided crossing), with the nondegenerate second-order result $\pm(\Delta/2+v^2/\Delta)$ overlaid, to show why the formula diverges as $\Delta\to0$ and how diagonalization fixes it.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/16 Perturbation Theory/Einstein coefficients and electric dipole transition rates.md
+priority: high
+graph: yes
+manim: no
+summary: Correct core results (detailed balance $A=B$ per mode, $\langle0\vert\mathbf j_0\vert n\rangle=-i\omega\mathbf d_{0n}$, the $\Delta m$ selection rules), but presented as lecture notes with exam remarks, an unexplained nonstandard normalization, and a wrong physical-quantity table.
+- [Correctness] The physical-quantity table contradicts the note: $\mechanical{L}$ is listed as "Box side length" (here $L$ is orbital angular momentum, also listed), $\mechanical{R}$ as "Well radius" (here the sum of position vectors, also listed), $N$ as "Number of states" (here photon number), $E_0$ as a degenerate-subspace energy (here the ground-state energy), plus unused $E$ in $\mathrm N$, $\Gamma$, $\mathbf p,\mathbf p'$, $\omega_j$, $t_0$, $\Delta t$; rebuild it from the symbols actually used.
+- [Structure] Remove the exam and lecture remarks ("For the midterm...", "The February 12 lecture...", "Yuri chooses exam problems...", "The notes repeat the derivation...") and merge the duplicated detailed-balance derivation (done twice, with $P_i/P_n$ and with $P_0/P_n$) into one.
+- [Intuition] Explain that $A=B$ holds only for rates per single mode, and relate it to the standard Einstein relation $A_{21}/B_{21}=\hbar\omega^3/(\pi^2c^3)$ (with $B$ defined per spectral energy density per angular frequency) by counting the $\omega^2/(\pi^2c^3)$ modes per unit volume and frequency, so it does not appear to contradict 16.06.
+- [Simplify] The text says "the notes set $k_B=1$" while every formula keeps $k_B$; delete the remark. Also state once that this note uses Gaussian units (16.06 uses SI) and give the SI form of $dP/d\Omega$.
+- [Graph] Plot the dipole radiation patterns in polar form: $\sin^2\theta$ for $\Delta m=0$ and $(1+\cos^2\theta)/2$ for $\Delta m=\pm1$, $\theta\in[0,2\pi]$.
+=== 02 Physics/03 Quantum Mechanics/02 Quantum Mechanics Course/16 Perturbation Theory/Heisenberg and interaction pictures in perturbation calculations.md
+priority: high
+graph: yes
+manim: yes
+summary: A long, mostly correct lecture transcript (the driven-oscillator result $\langle x\rangle=-F_0[\cos\omega t-\cos\omega_0t]/[m(\omega_0^2-\omega^2)]$, the Dyson series, and the quadratic-drive matrix elements check out), but it mixes three topics, includes homework and transcription remarks, and has a table with foreign symbols.
+- [Correctness] The physical-quantity table lists symbols the note never uses, including gas pressure and volume $P,V$ "of the van der Waals equation", $V_0$ as a well depth, $A,B$ emission coefficients, $c$, $\omega_j$ "of the new oscillator modes", and $E_0$ as a degenerate-subspace energy; remove them and add the used ones ($U$, $U_0$, $U_I$, $V_I$, $O_S,O_H,O_I$, $c_n$, $\omega_0$, $\mathcal T$).
+- [Structure] Split into (1) Schrödinger, Heisenberg, and interaction pictures, (2) the Dyson series and time ordering, and (3) worked driven-oscillator and hydrogen examples; move "homework problem 5.28", "chapter 5 of Sakurai", "The handwritten result retains an extra factor of 1/2", and "The notes refer to Landau and Lifshitz" out of the main text.
+- [Intuition] For the sinusoidal drive, add the classical check: the quantum $\langle x(t)\rangle$ equals the classical driven-oscillator solution with $x(0)=\dot x(0)=0$ (Ehrenfest, exact for a linear force), and note that first order fails near $\omega\to\omega_0$, where $\lvert c_1\rvert$ grows linearly in $t$.
+- [Graph] Plot $\langle x(t)\rangle$ in units of $F_0/(m\omega_0^2)$ versus $\omega_0t\in[0,60]$ for $\omega/\omega_0=0.5$ and $0.95$, showing the beat pattern near resonance.
+- [Manim] Animate the sudden force step: the original Gaussian ground state sits off-centre in the shifted parabola $\tfrac12m\omega^2(x-x_0)^2$ and oscillates rigidly as a coherent state, with the overlap $\lvert c_0\rvert^2=e^{-m\omega x_0^2/(2\hbar)}$ displayed.
+- [Simplify] In the force-step section, give the closed forms instead of only defining the integrals: $\lvert c_n\rvert^2=e^{-\lvert\alpha\rvert^2}\lvert\alpha\rvert^{2n}/n!$ with $\lvert\alpha\rvert=\lvert x_0\rvert\sqrt{m\omega/2\hbar}$, so the return amplitude $\tilde c_0=\sum_n\lvert c_n\rvert^2e^{-i\omega_nt_0}$ sums to a closed expression.

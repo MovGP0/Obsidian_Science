@@ -1,0 +1,85 @@
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.04.03 Additional Rules.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.05 QCD as an SU(3) Gauge Theory.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.05.01 Color Charge and Representations.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.05.02 Color Factors.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.06 Asymptotic Freedom and the QCD Beta Function.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.06.01 Structure of the One-Loop Calculation.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.06.02 Overall Result.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.06.03 Running Coupling and the Landau Scale.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.07 Confinement.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.07.01 Evidence for Confinement.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.07.02 Theoretical Criteria for Confinement.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.08 Ward–Slavnov–Taylor Identities.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.08.01 The WST Identity for the Propagator.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.08.02 Relations between Renormalizations.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.09 Advanced Topics and Outlook.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.09.01 The Topological Sector - Instantons.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.09.02 Large-N_c Expansion.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.09.03 Wilson Operators and ’t Hooft Loops.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.10 Exercises/12.10 Exercises.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.10 Exercises/12.10.01 Structure constants of SU(2).md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.10 Exercises/12.10.02 Covariance of the covariant derivative.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.10 Exercises/12.10.03 Jacobi identity for the structure constants.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.10 Exercises/12.10.04 Adjoint quadratic Casimir of SU(N).md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.10 Exercises/12.10.05 Yang–Mills equations of motion.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.10 Exercises/12.10.06 Non-Abelian Bianchi identity.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.10 Exercises/12.10.07 Three-gluon vertex with two equal color indices.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.10 Exercises/12.10.08 Annihilation color factor for quark–antiquark scattering.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.10 Exercises/12.10.09 Fermion screening and gluon antiscreening.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.10 Exercises/12.10.10 Formal infrared scale in QCD.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.10 Exercises/12.10.11 Gluon propagator in covariant gauges.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/12 Non-Abelian Gauge Theories/12.10 Exercises/12.10.12 Symmetry of the four-gluon vertex.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.01 Spontaneous Symmetry Breaking.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.01.01 Breaking a Discrete Symmetry - The Double-Well Potential.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.01.02 Breaking a Continuous Symmetry - Goldstone's Theorem.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.02 The Higgs Mechanism.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.02.01 The Abelian Higgs Model.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.02.02 The Rξ Gauge.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.03 The Glashow–Weinberg–Salam Electroweak Theory.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.03.01 The Gauge Group and Vector Bosons.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.03.02 Fermion Representations.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.03.03 The Higgs Doublet and Electroweak SSB.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.03.04 Gauge Boson Masses - The Explicit Calculation.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.03.05 Fermion Masses and Yukawa Couplings.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.03.06 The CKM Matrix.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.03.07 Neutral Currents and Charged Currents.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.04 The QCD Sector.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.05 The Complete Standard Model Lagrangian.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.06 Anomaly Cancellation.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.07 Experimental Successes of the Standard Model.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.07.01 Predictions and Discoveries.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.07.02 Precision Tests.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.08 Beyond the Standard Model.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.08.01 Neutrino Masses.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.08.02 The Hierarchy Problem.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.08.03 Dark Matter.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.08.04 The Grand Unification Problem.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.08.05 Quantum Gravity.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.09 Worked Example - The Decay Width Z → ff̄.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.10 Exercises/13.10 Exercises.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.10 Exercises/13.10.01 Goldstone modes in the O(3) model.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.10 Exercises/13.10.02 Degrees of freedom in the Abelian Higgs model.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.10 Exercises/13.10.03 Leptonic decay of the W⁺ boson.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.10 Exercises/13.10.04 Weak mixing angle.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.10 Exercises/13.10.05 Cubic hypercharge anomaly.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.10 Exercises/13.10.06 Rho parameter and scalar multiplets.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.10 Exercises/13.10.07 Higgs couplings to gauge bosons.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.10 Exercises/13.10.08 One-generation seesaw mechanism.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.10 Exercises/13.10.09 Photon and Z exchange in electron–positron annihilation.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/13 The Standard Model - An Overview/13.10 Exercises/13.10.10 Accidental Standard Model symmetries.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.01 Natural Units.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.01.01 Fundamental Conversion Factors.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.01.02 Dimensions in Natural Units.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.02 Metric and Relativistic Conventions.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.02.01 Metric Tensor.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.02.02 Covariant and Contravariant Indices.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.03 Four-Vectors.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.03.01 Spacetime Coordinate.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.03.02 Four-Momentum.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.03.03 Derivative Operator.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.03.04 Electromagnetic Current and Potential.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.04 Gamma Matrices and Clifford Algebra.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.04.01 Clifford Algebra.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.04.02 Dirac–Pauli Representation.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.04.03 Weyl Representation (Chiral).md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.04.04 The Matrix γ⁵.md

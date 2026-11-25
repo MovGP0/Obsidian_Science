@@ -1,0 +1,16 @@
+02 Physics/07 Astrophysics and Cosmology/Spectral lines and Einstein transition coefficients.md
+02 Physics/07 Astrophysics and Cosmology/Star formation and main-sequence lifetimes.md
+02 Physics/07 Astrophysics and Cosmology/Stellar evolution and variable-star observations.md
+02 Physics/07 Astrophysics and Cosmology/Stellar hydrostatic equilibrium and the virial theorem.md
+02 Physics/07 Astrophysics and Cosmology/Stellar luminosity functions, star counts, and selection bias.md
+02 Physics/07 Astrophysics and Cosmology/Stellar pressure balance and degenerate matter.md
+02 Physics/07 Astrophysics and Cosmology/Stellar remnants and neutron-capture nucleosynthesis.md
+02 Physics/07 Astrophysics and Cosmology/Stellar spectroscopy and exoplanet detection.md
+02 Physics/07 Astrophysics and Cosmology/Stellar structure equations, homology, and energy transport.md
+02 Physics/07 Astrophysics and Cosmology/Synchrotron populations, self-absorption, and equipartition.md
+02 Physics/07 Astrophysics and Cosmology/The collisionless Boltzmann equation and Jeans moments.md
+02 Physics/07 Astrophysics and Cosmology/The fundamental plane of elliptical galaxies.md
+02 Physics/07 Astrophysics and Cosmology/Thermal bremsstrahlung and cluster hydrostatic equilibrium.md
+02 Physics/07 Astrophysics and Cosmology/Thermal source functions and optically thick spectra.md
+02 Physics/07 Astrophysics and Cosmology/Thermonuclear rates and hydrogen-burning chains.md
+02 Physics/07 Astrophysics and Cosmology/Variable stars and stellar pulsation.md

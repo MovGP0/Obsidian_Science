@@ -1,0 +1,43 @@
+01 Mathematics/09 Differential Equations and Dynamical Systems/04 Partial Differential Equations/Insulated, periodic, and forced heat problems.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/04 Partial Differential Equations/Laplace and Poisson boundary problems.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/04 Partial Differential Equations/Model error, random walks, and continuum limits.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/04 Partial Differential Equations/Partial differential equations - Overview.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/04 Partial Differential Equations/Point sources and superposition.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/04 Partial Differential Equations/Rectangular and circular membrane eigenmodes.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/04 Partial Differential Equations/Schrödinger evolution and probability.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/04 Partial Differential Equations/Separation of variables on a circular membrane.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/04 Partial Differential Equations/Source and vortex reconstruction.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/04 Partial Differential Equations/The wave equation on a line and a finite string.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/04 Partial Differential Equations/Travelling solitary waves.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/04 Partial Differential Equations/Wave diffusion and potential equations.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/05 Calculus of Variations/17.01 Functions and functionals.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/05 Calculus of Variations/17.02 Admissible variations.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/05 Calculus of Variations/17.03 First variation.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/05 Calculus of Variations/17.04 Euler–Lagrange equations.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/05 Calculus of Variations/17.05 Boundary terms.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/05 Calculus of Variations/17.06 Several variables and fields.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/05 Calculus of Variations/17.07 Constraints.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/05 Calculus of Variations/17.08 Second variation.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/05 Calculus of Variations/17.09 Changing the problem.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/05 Calculus of Variations/Calculus of variations - Catalogue Guide.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/05 Calculus of Variations/Calculus of variations - Overview.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/05 Calculus of Variations/Classical curve problems.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/05 Calculus of Variations/Constraints and free endpoints.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/05 Calculus of Variations/Fields of several variables.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/05 Calculus of Variations/Functionals and stationary curves.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/05 Calculus of Variations/Higher derivatives and coupled curves.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/05 Calculus of Variations/Physical action and equations of motion.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/05 Calculus of Variations/Tests with first and second variations.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/05 Calculus of Variations/Variational modeling of paths and surfaces.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/06 Bifurcations and Chaos/Chaos in interval maps.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/06 Bifurcations and Chaos/Conjugacy and structural stability.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/06 Bifurcations and Chaos/Dimensions of attractors.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/06 Bifurcations and Chaos/Entropy and Lyapunov exponents.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/06 Bifurcations and Chaos/Invariant measures and ergodic averages.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/06 Bifurcations and Chaos/Local and global bifurcations.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/06 Bifurcations and Chaos/Logistic-map bifurcations and numerical dynamics.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/06 Bifurcations and Chaos/Manifolds and return maps.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/06 Bifurcations and Chaos/Markov chains and the logistic map.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/06 Bifurcations and Chaos/Nonlinear evolution patterns and chaos.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/06 Bifurcations and Chaos/Reconstructing dynamics from observations.md
+01 Mathematics/09 Differential Equations and Dynamical Systems/06 Bifurcations and Chaos/Routes to chaos.md

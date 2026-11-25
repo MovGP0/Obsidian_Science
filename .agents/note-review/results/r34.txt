@@ -1,0 +1,821 @@
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.15 The Dirac Field as a Dirac–Bergmann System.md
+priority: low
+graph: no
+manim: no
+summary: Short hub that frames the constrained-system treatment clearly but stays abstract.
+- [Intuition] Add one sentence naming the two primary constraints explicitly ($\pi_\psi-i\psi^\dagger\approx0$ and $\bar\pi\approx0$) so the reader knows what "redundant momenta" means before opening the subnotes.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.15.01 Constrained Structure of the Hamiltonian Operator.md
+priority: high
+graph: no
+manim: no
+summary: The note repeatedly refers to a "missing companion momentum relation" and a second-class classification without ever writing the complete constraint set or computing anything, so it is hard to follow.
+- [Simplify] Write the full primary set explicitly: $\phi_\alpha=\pi_{\psi,\alpha}-i(\bar\psi\gamma^0)_\alpha\approx0$ and $\chi_\alpha=\bar\pi_\alpha\approx0$ (for $\mathcal L=\bar\psi(i\not\partial-m)\psi$), instead of the two paragraphs that describe this relation only in words.
+- [Example] Compute the mixed constraint bracket $\{\phi_\alpha(\mathbf x),\chi_\beta(\mathbf y)\}_{\mathrm{PB}}\propto i(\gamma^0)_{\beta\alpha}\delta^{(3)}(\mathbf x-\mathbf y)$ (graded bracket, sign per convention) and show the constraint matrix is invertible; this is the actual reason the constraints are second class.
+- [Structure] Remove the paragraph beginning "The missing companion momentum relation in the note above matters operationally" once the constraint is written out; it duplicates the callout.
+- [Simplify] Note that the symmetric Lagrangian $\frac i2(\bar\psi\gamma^\mu\partial_\mu\psi-\partial_\mu\bar\psi\gamma^\mu\psi)$ gives $\bar\pi\neq0$; state which form of $\mathcal L$ is used, since the statement $\bar\pi=0$ depends on it.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.15.02 Dirac Brackets and Quantization.md
+priority: medium
+graph: no
+manim: no
+summary: Correct general definition of the Dirac bracket, but the Dirac-field result is asserted rather than derived.
+- [Example] Evaluate (4.104) for the Dirac field with the constraint matrix from 04.15.01 and show $\{\psi_\alpha(\mathbf x),\psi^\dagger_\beta(\mathbf y)\}_D=-i\delta_{\alpha\beta}\delta^{(3)}(\mathbf x-\mathbf y)$, which then maps by (4.105) to (4.25); currently "the result agrees" is only stated.
+- [Simplify] Replace the last two paragraphs (reconstruction test, graded-parity remarks) with one sentence plus the explicit check $\{\phi_a,F\}_D=0$ derived in one line from $C\,C^{-1}=1$.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.16 Gordon Identity.md
+priority: low
+graph: no
+manim: no
+summary: Correct and compact proof of the Gordon identity; the closing paragraphs are somewhat abstract.
+- [Intuition] Add a nonrelativistic reading: in the Breit frame the $\sigma^{0i}q_i$ term vanishes and $\sigma^{ij}q_j$ gives $\boldsymbol\sigma\times\mathbf q$, i.e. a spin magnetic moment $\frac{e}{2m}\boldsymbol\sigma$ with $g=2$; this makes "magnetic contribution" concrete.
+- [Simplify] Merge the three closing paragraphs (on-shell condition, $p'=p$ limit, loop calculation) into a short bullet list of validity conditions.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.17 Summary of Rules and Fundamental Relations.md
+priority: low
+graph: no
+manim: no
+summary: Useful formula sheet; the measure-label mismatch is flagged in a callout instead of being fixed.
+- [Simplify] In (4.112)–(4.114) write $\int\frac{d^3\mathbf p}{(2\pi)^3}E_{\mathbf p}\sum_s(b^{s\dagger}_{\mathbf p}b^s_{\mathbf p}+\dots)$ with one consistent label and drop the callout explaining the $k$/$p$ mismatch.
+- [Structure] Add the Dirac equation, $\bar u u=2m$, and $\operatorname{tr}\gamma^5$-type traces (or link [[04.18.09 Traces with the Levi-Civita tensor]]) so the sheet is complete for later QED chapters.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.18 Exercises/04.18 Exercises.md
+priority: low
+graph: no
+manim: no
+summary: Exercise index; fine as is.
+- [Structure] No change needed apart from noting that 4.10 also contains the largest source correction, so readers should consult it before reusing chirality statements.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.18 Exercises/04.18.01 Clifford algebra in arbitrary dimension.md
+priority: low
+graph: no
+manim: no
+summary: Correct solution with a clear distinction between spinor and spacetime dimension, but the same point is repeated three times.
+- [Simplify] The prompt callout, the "Correction to the exercise statement" callout and the $d=3$ counterexample paragraph all make the same point; keep one callout and the $d=3$ example.
+- [Example] Give an explicit $d=3$ representation ($\gamma^0=\sigma^3,\gamma^1=i\sigma^1,\gamma^2=i\sigma^2$) to show $\operatorname{tr}(\gamma^\mu\gamma^\nu)=2g^{\mu\nu}$ while $\gamma^\mu\gamma_\mu=3$.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.18 Exercises/04.18.02 Canonical anticommutators and inversion.md
+priority: low
+graph: no
+manim: no
+summary: Clear, correct step-by-step derivation of the equal-time anticommutator.
+- [Simplify] Time is written $\mechanical{t}$ here but $\signal{t}$ in 04.17 and 05.03; use one macro for time across the chapter.
+- [Structure] The two closing paragraphs restate the reflection step already explained; shorten to two sentences.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.18 Exercises/04.18.03 Fermion Fock number.md
+priority: low
+graph: no
+manim: no
+summary: Clear and correct one-mode construction.
+- [Correctness] The physical-quantities table lists $\signal{n}$, but the note only uses the operator $\hat{\signal{n}}$; list $\hat{\signal{n}}$ (eigenvalues $0,1$).
+- [Example] Add the two-mode Jordan–Wigner construction ($b_1=\sigma^-\otimes1$, $b_2=\sigma^3\otimes\sigma^-$) that the last paragraph mentions, so the "relative signs" claim is shown concretely.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.18 Exercises/04.18.04 Massless position-space propagator.md
+priority: low
+graph: no
+manim: no
+summary: Correct derivation with a good distributional check.
+- [Simplify] Show the one-line differentiation $\partial_\mu(x^2)^{-1}=-2x_\mu(x^2)^{-2}$ that leads from $\Delta_F$ to $i\not x/(2\pi^2(x^2-i\epsilon)^2)$; it is currently skipped.
+- [Links] Link [[05.14.06 Photon propagator in position space]] where the massless $\Delta_F$ is derived by contour integration.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.18 Exercises/04.18.05 Noether current and charge.md
+priority: low
+graph: no
+manim: no
+summary: Correct, if long; the mixed terms are shown after the diagonal result, which reverses the logical order.
+- [Structure] Move the mixed-term display before the diagonal result ("Before the orthogonality relations are applied...") so the derivation reads top to bottom.
+- [Simplify] Use $\signal{t}$ consistently with the rest of the chapter instead of $\mechanical{t}$ in the oscillating exponentials.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.18 Exercises/04.18.06 Charge-conjugation symmetry of the propagator.md
+priority: low
+graph: no
+manim: no
+summary: Correct with both a position-space and an explicit momentum-space check.
+- [Simplify] State the convention for $C$ used (e.g. $C=i\gamma^2\gamma^0$, $C^{-1}=C^\dagger=-C$) at the start so the sign of $\mathscr C\bar\psi\mathscr C^{-1}$ can be verified.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.18 Exercises/04.18.07 Gordon identity.md
+priority: low
+graph: no
+manim: no
+summary: Correct alternative proof; largely duplicates 04.16.
+- [Structure] Point out that this proof differs from 04.16 (it uses $\gamma\gamma=g\mp i\sigma$ rather than the symmetric/antisymmetric split) so the duplication has a purpose, or link [[04.16 Gordon Identity]] directly.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.18 Exercises/04.18.08 Anomalous magnetic moment.md
+priority: low
+graph: no
+manim: no
+summary: Correct and clear; could cite the current experimental value as context.
+- [Example] Compare $\alpha/2\pi\approx1.1614\times10^{-3}$ with the measured $a_e\approx1.15965218\times10^{-3}$ to show the size of higher-order terms.
+- [Simplify] $\electric{F}_1$ and $\magnetic{F}_2$ use different macro groups although both are vertex form factors; consider one group or state why.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.18 Exercises/04.18.09 Traces with the Levi-Civita tensor.md
+priority: low
+graph: no
+manim: no
+summary: Correct trace results with an explicit coefficient check.
+- [Simplify] Show the reordering count explicitly ($3+2+1=6$ transpositions) in the $\mu\nu\rho\sigma=0123$ check, since the displayed line jumps from $(-1)^6$ to $(-1)^3$.
+- [Intuition] Warn that textbooks differ in the sign of $\epsilon^{0123}$ and of $\gamma^5$, so the overall sign of (a) must be rechecked with the component test before comparing with another source.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.18 Exercises/04.18.10 Weyl spinors and chirality.md
+priority: medium
+graph: yes
+manim: no
+summary: The physics is corrected properly, but the note is dominated by layered source corrections that make the actual answers hard to find.
+- [Structure] Lead each part with the correct result and move the source errors into one collapsed callout at the end.
+- [Graph] Plot $\langle\gamma^5\rangle=2h|\mathbf p|/E$ against $|\mathbf p|/m\in[0,10]$ for $h=\pm\frac12$, showing the approach to $\pm1$ in the ultrarelativistic limit.
+- [Example] Give the explicit Weyl-basis spinor $u=(\sqrt{E-2h|\mathbf p|}\,\xi,\sqrt{E+2h|\mathbf p|}\,\xi)/\sqrt{\cdot}$ from which $\langle\gamma^5\rangle$ follows in one line.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.18 Exercises/04.18.11 The Majorana field.md
+priority: low
+graph: no
+manim: no
+summary: Correct and careful; the closing paragraphs repeat the main arguments.
+- [Simplify] Shorten the two closing paragraphs; the symmetric-matrix plus Grassmann argument is already stated in part (c).
+- [Intuition] Mention that, quantized, $J^\mu$ vanishes up to a c-number ordering constant, which normal ordering removes.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.18 Exercises/04.18.12 Causality of the propagator.md
+priority: medium
+graph: yes
+manim: no
+summary: Correct derivation of fermionic microcausality, but long and partly repetitive.
+- [Graph] Plot the massive Pauli–Jordan function $\Delta(t,r)$ (e.g. $m=1$, $r=2$, $t\in[-5,5]$) to show it is zero for $|t|<r$ and nonzero inside the light cone, next to $\mathrm{Re}\,\Delta_F$ which is not.
+- [Simplify] Merge the two closing paragraphs on open spacelike regions and Feynman versus causal functions into one.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.00 Summary.md
+priority: low
+graph: no
+manim: no
+summary: Clear chapter summary.
+- [Links] Link each numbered point to its section note (e.g. point 5 to [[05.10 Propagator in the Rξ Gauge]]).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.01 Review of Covariant Classical Electrodynamics.md
+priority: low
+graph: no
+manim: no
+summary: Clear chapter introduction and hub.
+- [Structure] No change needed.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.01.01 The Four-Potential and the Field Tensor.md
+priority: low
+graph: no
+manim: no
+summary: Correct sign conventions for $F^{\mu\nu}$ and its dual, with a useful sign check.
+- [Example] Add the one-line computation $F^{0i}=\partial^0A^i-\partial^iA^0=\partial_tA^i+\partial_i\phi=-E^i$ to make the sign check explicit.
+- [Simplify] State the two Lorentz invariants here or link [[05.02.01 Structure of the Lagrangian]], since they are the main use of the dual.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.01.02 Maxwell's Equations in Covariant Form.md
+priority: low
+graph: no
+manim: no
+summary: Correct and clear.
+- [Example] Also write the $\nu=i$ component of (5.4) to recover the Ampère–Maxwell law, matching the $\nu=0$ Gauss check.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.01.03 Gauge Invariance.md
+priority: low
+graph: no
+manim: no
+summary: Correct and clear introduction to gauge redundancy.
+- [Example] Give a concrete residual-gauge example, e.g. $\alpha=\varepsilon\,e^{-ik\cdot x}$ with $k^2=0$, which shifts $\epsilon^\mu\to\epsilon^\mu+\varepsilon' k^\mu$; this prepares 05.08.01.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.02 The Maxwell Lagrangian.md
+priority: low
+graph: no
+manim: no
+summary: Correct derivation of Maxwell's equations from the action.
+- [Simplify] Show the factor 4 in $\partial(F^2)/\partial(\partial_\mu A_\nu)=4F^{\mu\nu}$ in one line (two terms in $F$, two factors of $F$).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.02.01 Structure of the Lagrangian.md
+priority: low
+graph: no
+manim: no
+summary: Correct and well motivated.
+- [Example] Give the explicit current $K^\mu=\epsilon^{\mu\nu\rho\sigma}A_\nu\partial_\rho A_\sigma$ with $F\tilde F=2\partial_\mu K^\mu$ (in this convention) instead of "a suitable current".
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.02.02 Conjugate Momentum and Hamiltonian Structure.md
+priority: low
+graph: no
+manim: no
+summary: Correct Hamiltonian derivation with good discussion of the Gauss constraint.
+- [Simplify] Show the intermediate step $\dot A_i=E^i+\partial_iA_0$ used in $\pi^i\dot A_i-\mathcal L$; the jump to (5.8) is otherwise hard to reproduce.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.03 Constraints and Degrees of Freedom in Quantization.md
+priority: low
+graph: no
+manim: no
+summary: Clear motivation of the two obstacles.
+- [Simplify] Add the count "4 components − 1 constraint − 1 gauge = 2" as a one-line formula at the end of the second obstacle.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.04 Quantization in the Coulomb Gauge.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub.
+- [Structure] No change needed.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.04.01 Gauge Fixing and Transverse Polarization Vectors.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and clear construction of transverse polarizations.
+- [Graph] 3D plot of $\hat{\mathbf k}$, $\boldsymbol\epsilon^{(1)}$, $\boldsymbol\epsilon^{(2)}$ for a tilted $\mathbf k$ (e.g. $\theta=40^\circ$), with the transverse plane shaded.
+- [Simplify] Show the one-line check $\boldsymbol\epsilon^{(+)*}\cdot\boldsymbol\epsilon^{(-)}=0$ explicitly, since the $\mp$ phase convention is a common source of sign errors.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.04.02 Normal-Mode Expansion.md
+priority: low
+graph: no
+manim: no
+summary: Correct and clear.
+- [Simplify] Give the electric and magnetic field operators $\mathbf E=-\dot{\mathbf A}$, $\mathbf B=\nabla\times\mathbf A$ in modes; they are used in 05.04.03 and 05.04.04.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.04.03 Canonical Commutation Relations.md
+priority: medium
+graph: no
+manim: no
+summary: The displayed canonical relation (5.11) is kept even though the note itself shows it has the wrong sign in the stated convention, which is confusing.
+- [Correctness] With $\pi^i=-\dot A^i$ and (5.12), the relation is $[A^i(\mathbf x),\pi^j(\mathbf y)]=-i\delta_T^{ij}(\mathbf x-\mathbf y)$ (equivalently $[A_i,\pi^j]=+i\delta_T^{ij}$); display the consistent form as the main equation and move the printed source form into the callout.
+- [Example] Show the short derivation from the mode expansion to $\delta_T^{ij}$ using (5.10), which is the actual "sign check" the last paragraph describes in words.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.04.04 Hamiltonian Operator and Structure of Fock Space.md
+priority: low
+graph: no
+manim: no
+summary: Clear statement of the transverse Fock space.
+- [Correctness] "$\mechanical{p}^{\,2}=\mechanical{k}^\mu\mechanical{k}_\mu=0$" mixes $p$ and $k$ for the same photon momentum; write $\mechanical{k}^{\,2}=0$.
+- [Simplify] The frequency is $\energy{\omega}_{\mathbf k}$ here but $\signal{\omega}_{\mathbf k}$ in 05.04.01–05.04.03; use one macro.
+- [Example] Show the step from $\frac12\int(\mathbf E^2+\mathbf B^2)$ to the mode sum, at least schematically, with the vacuum constant that normal ordering removes.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.05 Covariant Gupta–Bleuler Quantization.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub.
+- [Structure] No change needed.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.05.01 The Gauge-Fixing Term.md
+priority: low
+graph: no
+manim: no
+summary: Correct equations of motion and gauge-limit discussion.
+- [Simplify] Show the Euler–Lagrange step $\partial_\mu F^{\mu\nu}+\xi^{-1}\partial^\nu(\partial\cdot A)=0$ before rewriting it as (5.14).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.05.02 The Modified Conjugate Momentum.md
+priority: low
+graph: no
+manim: no
+summary: Correct and clear.
+- [Intuition] Note that in Feynman gauge $\pi^0=-\partial_\mu A^\mu$, so the Lorenz condition is literally the vanishing of the new momentum; this motivates the physical-state condition later.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.05.03 Expansion in Four Polarizations.md
+priority: low
+graph: no
+manim: no
+summary: Correct basis and completeness relation.
+- [Example] Write the contractions explicitly: $k\cdot\epsilon^{(0)}=\omega$, $k\cdot\epsilon^{(3)}=-\omega$, instead of only describing them in words.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.05.04 Negative-Norm States.md
+priority: low
+graph: no
+manim: no
+summary: Correct and clear.
+- [Simplify] Show briefly how (5.17) follows from (5.16) and the completeness relation (one line using $\sum g_{\lambda\lambda}\epsilon\epsilon=g$).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.05.05 The Physical-State Condition.md
+priority: medium
+graph: no
+manim: no
+summary: Correct, but the decomposition into transverse plus null part is asserted rather than shown.
+- [Example] Show explicitly that $|\chi\rangle=(a^{(0)\dagger}_{\mathbf k}-a^{(3)\dagger}_{\mathbf k})|0\rangle$ (wave-packet smeared) satisfies (5.20) and has zero norm, $(-1)+(+1)=0$.
+- [Simplify] Show the one-line derivation of (5.20) from $k^\mu\epsilon^{(\lambda)}_\mu$ for the $z$-axis basis.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.06 The Photon Propagator.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub.
+- [Structure] No change needed.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.06.01 Derivation in the Feynman Gauge.md
+priority: low
+graph: no
+manim: no
+summary: Correct projector inversion; overlaps heavily with 05.10.01.
+- [Structure] The same projector derivation appears in [[05.10.01 Inversion of the Kinetic Operator]]; keep the full derivation in one note and link from the other.
+- [Example] Verify $O\,D=i\,\mathbb 1$ explicitly once: $(-k^2T-\frac{k^2}{\xi}L)\cdot\frac{-i}{k^2}(T+\xi L)=i(T+L)$.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.06.02 Propagator in the Coulomb Gauge.md
+priority: low
+graph: no
+manim: no
+summary: Correct components with sound discussion of the instantaneous term.
+- [Links] Example 5.5 refers to "Fig. 5.3", which is embedded in [[05.07.02 Replacement of the Polarization Sum]]; link that note or embed the figure here.
+- [Example] Contract with two static charges to show $D^{00}$ gives the Coulomb potential $e^2/(4\pi r)$ after the spatial Fourier transform.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.07 Polarization Sums and the Ward Identity.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub.
+- [Structure] No change needed.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.07.01 The Physical Polarization Sum.md
+priority: low
+graph: no
+manim: no
+summary: Correct formula with a useful component check.
+- [Example] Show the $00$, $03$ and $33$ components explicitly for $k=\omega(1,0,0,1)$, $n=(1,\mathbf 0)$ (each gives zero), since the check is only described.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.07.02 Replacement of the Polarization Sum.md
+priority: low
+graph: no
+manim: no
+summary: Correct and clear about the conditions for the replacement.
+- [Example] Write the $z$-axis check as a formula: $-g_{\mu\nu}\mathcal M^\mu\mathcal M^{\nu*}=|\mathcal M^1|^2+|\mathcal M^2|^2+|\mathcal M^3|^2-|\mathcal M^0|^2$ with $\mathcal M^0=\mathcal M^3$ from (5.24).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.07.03 Discussion of the Ward Identity.md
+priority: medium
+graph: no
+manim: no
+summary: Abstract; the connection from (5.25) to $k_\mu\mathcal M^\mu=0$ is never shown.
+- [Example] Sketch how (5.25) in momentum space with on-shell charged legs gives $k_\mu\mathcal M^\mu=0$ (contact terms have no external poles and drop out under LSZ).
+- [Simplify] Fix the factor convention by giving $\delta\phi_i$ for the $U(1)$ case explicitly, e.g. $\delta\psi=-iq\psi$, rather than leaving "factors of $i$ depend on the convention".
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.08 Degrees of Freedom - Photon and Massive Field.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub.
+- [Structure] No change needed.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.08.01 Massless Vector Field (Photon).md
+priority: low
+graph: no
+manim: no
+summary: Correct classical and little-group counts.
+- [Example] Make the residual-gauge step explicit: $\epsilon^\mu=(a,\epsilon_x,\epsilon_y,a)$ after Lorenz, and $\alpha\propto e^{-ik\cdot x}$ shifts $a$ to zero.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.08.02 Massive Vector Field (Proca Field).md
+priority: low
+graph: yes
+manim: no
+summary: Correct and balanced discussion of the massless limit.
+- [Graph] Plot the components of $\epsilon_L^\mu=(|\mathbf k|,0,0,E)/m$ and of $\epsilon_L^\mu-k^\mu/m$ against $|\mathbf k|/m\in[0,10]$, showing the growth and the $m/(2|\mathbf k|)$ decay of the difference.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.09 The Proca Field.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub.
+- [Structure] No change needed.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.09.01 The Proca Lagrangian.md
+priority: low
+graph: no
+manim: no
+summary: Correct and clear.
+- [Simplify] The Proca field uses $\signal{A}$ while the photon uses $\electric{A}$; add one sentence explaining the macro choice or align it.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.09.02 Quantization of the Proca Field.md
+priority: low
+graph: no
+manim: no
+summary: Correct polarization vectors and completeness relation, but the mode expansion and commutators are missing despite the title.
+- [Structure] Add the actual mode expansion with $\sum_{\lambda=1,2,L}$ and $[a^{(\lambda)}_{\mathbf k},a^{(\lambda')\dagger}_{\mathbf k'}]=\delta^{\lambda\lambda'}(2\pi)^3\delta^{(3)}$ (all positive norm), which is the point of contrast with Gupta–Bleuler.
+- [Links] Link [[05.14.07 Massive polarization completeness]] for the explicit verification of (5.29).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.09.03 The Proca Propagator.md
+priority: low
+graph: yes
+manim: no
+summary: Correct propagator and good caution about the massless limit and renormalizability.
+- [Example] Show the inversion check $O\,D=i\mathbb 1$ (the $k^\mu k^\nu$ terms cancel using $k^2/m^2-1-k^2/m^2+1=0$).
+- [Graph] Plot $|D^{00}|$ for the photon and Proca propagators against Euclidean $|k|/m\in[0.1,100]$ on log axes, showing $1/k^2$ versus constant large-$k$ behaviour of the longitudinal part.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.10 Propagator in the Rξ Gauge.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub.
+- [Structure] No change needed.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.10.01 Inversion of the Kinetic Operator.md
+priority: low
+graph: no
+manim: no
+summary: Correct and complete; duplicates 05.06.01.
+- [Structure] Consolidate with [[05.06.01 Derivation in the Feynman Gauge]] (keep the derivation here, the gauge special cases there).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.10.02 Check of ξ Dependence.md
+priority: low
+graph: no
+manim: no
+summary: Correct and clear demonstration.
+- [Simplify] Show that the prefactor $(-ie)^2(-i)=ie^2$ gives the displayed overall $ie^2/q^2$; the step is skipped.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.11 Feynman Rules for QED.md
+priority: low
+graph: no
+manim: no
+summary: Useful partial rule table.
+- [Structure] Add rows for external fermions ($u,\bar u,v,\bar v$) and loop-momentum integration $\int d^4\ell/(2\pi)^4$, so the table matches the text's list.
+- [Simplify] State the sign convention $e<0$ or $e>0$ for the electron at the vertex row, since $-ie\gamma^\mu$ depends on it.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.12 Path Integral - Preview.md
+priority: low
+graph: no
+manim: no
+summary: Correct schematic preview.
+- [Simplify] Rename the gauge-slice function $\omega(x)$ (e.g. to $f(x)$) to avoid the clash with photon frequencies used throughout the chapter.
+- [Example] Show the Gaussian average $\int\mathcal D\omega\,e^{-i\int\omega^2/2\xi}\delta(\partial A-\omega)$ giving $-\frac1{2\xi}(\partial A)^2$ in one line.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.13 Further Properties of the Photon.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub.
+- [Structure] No change needed.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.13.01 Photon Statistics.md
+priority: low
+graph: no
+manim: no
+summary: Correct and short.
+- [Example] Show the Bose factor: $(a^\dagger)^2|0\rangle$ has norm 2, versus zero for fermions (link [[04.18.03 Fermion Fock number]]).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.13.02 Helicity and Circular Polarization.md
+priority: low
+graph: no
+manim: yes
+summary: Correct and clear.
+- [Manim] Animate the electric-field vector $\mathrm{Re}[\boldsymbol\epsilon^{(\pm)}e^{-i\omega t}]$ rotating in the $xy$ plane for both helicities, and a linear polarization as their sum.
+- [Example] Write the linear vector as $\hat{\mathbf x}=(\boldsymbol\epsilon^{(-)}-\boldsymbol\epsilon^{(+)})/\sqrt2$ with the stated phase convention.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.13.03 Vacuum Energy (Cosmological Constant).md
+priority: high
+graph: no
+manim: no
+summary: The note presents a source argument and then refutes it in two callouts, so the reader must reconstruct the correct statement from corrections.
+- [Structure] Lead with the correct statement (two physical modes, $\rho_0=2\cdot\frac12\int\frac{d^3k}{(2\pi)^3}\omega_k\sim\Lambda^4/(8\pi^2)$, removed by normal ordering) and reduce the source's signed $3+1$ count to one short historical callout.
+- [Simplify] Rename $\energy{E}_0$ to an energy-density symbol (e.g. $\rho_0$) since the integral has units $\mathrm{MeV}^4$; the callout explaining the unit mismatch then becomes unnecessary.
+- [Example] Give the cutoff estimate $\rho_0=\Lambda^4/(8\pi^2)$ and compare with the observed dark-energy density $\sim(2.3\,\mathrm{meV})^4$ to show the size of the problem.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.14 Exercises/05.14 Exercises.md
+priority: low
+graph: no
+manim: no
+summary: Exercise index; fine.
+- [Structure] No change needed.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.14 Exercises/05.14.01 Bianchi identity and homogeneous Maxwell equations.md
+priority: low
+graph: no
+manim: no
+summary: Correct and complete.
+- [Simplify] Show the identity $\epsilon^{ijk}\epsilon_{jkl}=2\delta^i_l$ used to get $-3!\,\nabla\cdot\mathbf B$; the factor is otherwise unexplained.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.14 Exercises/05.14.02 Electromagnetic energy–momentum tensor.md
+priority: low
+graph: no
+manim: no
+summary: Correct Belinfante construction with the source signs fixed.
+- [Example] Show the $T^{0i}$ step: $-F^{0j}F^{i}{}_{j}=F^{0j}F^{ij}=\epsilon^{ijk}E^jB^k$.
+- [Example] Add the trace check $T^\mu{}_\mu=0$, which distinguishes the improved tensor and reflects conformal invariance of Maxwell theory.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.14 Exercises/05.14.03 Polarization vectors and completeness.md
+priority: low
+graph: yes
+manim: yes
+summary: Correct and clear, including the fixed rotation phase.
+- [Graph] 3D plot of $\hat{\mathbf k}$, $\boldsymbol\epsilon^{(1)}$, $\boldsymbol\epsilon^{(2)}$ with a slider for $\theta\in[0,\pi]$.
+- [Manim] Animate the active rotation by $\phi$ about $\hat{\mathbf k}$ acting on $\boldsymbol\epsilon^{(1)},\boldsymbol\epsilon^{(2)}$ and show the phase $e^{\mp i\phi}$ picked up by $\boldsymbol\epsilon^{(\pm)}$.
+- [Simplify] Verify the right-handedness $\boldsymbol\epsilon^{(1)}\times\boldsymbol\epsilon^{(2)}=\hat{\mathbf k}$ explicitly, since the helicity sign depends on it.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.14 Exercises/05.14.04 Transverse Dirac delta.md
+priority: low
+graph: yes
+manim: no
+summary: Correct; the contact term at the origin is left implicit.
+- [Simplify] State the explicit contact term: $\partial_i\partial_j\frac1{4\pi r}=\mathrm{PV}\frac{3\hat x_i\hat x_j-\delta_{ij}}{4\pi r^3}-\frac13\delta_{ij}\delta^{(3)}(\mathbf x)$, so $\delta_T^{ij}=\frac23\delta_{ij}\delta^{(3)}+\mathrm{PV}\frac{3\hat x_i\hat x_j-\delta_{ij}}{4\pi r^3}$.
+- [Graph] Density plot of $\delta_T^{zz}$ for $\mathbf x\neq0$ in the $xz$ plane, showing the dipole-like $(3\cos^2\theta-1)/r^3$ pattern.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.14 Exercises/05.14.05 Gupta–Bleuler condition and physical states.md
+priority: low
+graph: no
+manim: no
+summary: Correct solution with a well-argued correction of the source.
+- [Example] Add the positive example the correction mentions: $(a^{(0)\dagger}_{\mathbf k}-a^{(3)\dagger}_{\mathbf k})a^{(1)\dagger}_{\mathbf k'}|0\rangle$ satisfies the condition and has zero norm.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.14 Exercises/05.14.06 Photon propagator in position space.md
+priority: low
+graph: yes
+manim: yes
+summary: Correct; the spherical integration to the final closed form is skipped.
+- [Simplify] Show the angular and radial integration for spacelike $x$ at $x^0=0$: $\int\frac{d^3k}{(2\pi)^3}\frac{e^{i\mathbf k\cdot\mathbf x}}{2|\mathbf k|}=\frac1{4\pi^2r^2}$.
+- [Graph] Plot the two poles $k^0=\pm(|\mathbf k|-i\epsilon)$ in the complex $k^0$ plane with the two closing contours for $x^0>0$ and $x^0<0$.
+- [Manim] Animate the contour being closed in the lower or upper half-plane as the sign of $x^0$ changes, highlighting which pole is enclosed.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.14 Exercises/05.14.07 Massive polarization completeness.md
+priority: low
+graph: no
+manim: no
+summary: Correct and explicit.
+- [Structure] No change needed beyond linking [[05.09.02 Quantization of the Proca Field]].
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.14 Exercises/05.14.08 Explicit Ward identity for Compton scattering.md
+priority: low
+graph: no
+manim: no
+summary: Correct for both incoming and outgoing contractions.
+- [Structure] The index-convention callout says $\mechanical{m}_e$ distinguishes "the Proca mass used elsewhere in this article", but no Proca mass appears in this note; remove that clause.
+- [Structure] Since the exercise asks for the outgoing contraction, present that version as the main solution and the incoming one as the variant.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.14 Exercises/05.14.09 Proca Lagrangian and degrees of freedom.md
+priority: low
+graph: no
+manim: no
+summary: Correct, with a good positivity check on the reduced Hamiltonian.
+- [Simplify] Show the elimination step $A^0=-\nabla\cdot\mathbf E/m^2$ inserted into $-\frac{m^2}2(A^0)^2-A^0\nabla\cdot\mathbf E$ giving $+(\nabla\cdot\mathbf E)^2/(2m^2)$.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.14 Exercises/05.14.10 Vacuum energy in covariant quantization.md
+priority: medium
+graph: no
+manim: no
+summary: Correctly identifies the flaw in the source argument, but the exercise as posed asks to prove something the note shows is false, which leaves the reader without a clear answer.
+- [Structure] State the actual conclusion first: canonically all four modes contribute $+\frac12\omega$; the two-mode result requires a physical-state prescription (or ghost-like cancellation in BRST), and normal ordering sets both to zero.
+- [Simplify] Merge the long callout and the two closing paragraphs; they repeat the same two-sign argument three times.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.00 Historical and Bibliographical Notes.md
+priority: low
+graph: no
+manim: no
+summary: Clear historical overview.
+- [Simplify] The sentence "It became standard notation, but its introduction greatly simplified calculations" has a contradictory "but"; rephrase.
+- [Links] Add the LSZ 1955 paper reference (Nuovo Cimento 1, 205) alongside the Dyson and Wick DOIs.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.01 Interaction Terms and Coupling Powers.md
+priority: low
+graph: no
+manim: no
+summary: Clear introduction with correct power counting.
+- [Example] Add the general formula for the coupling dimension with fermions and derivatives, $[g]=4-n_B-\frac32n_F-n_\partial$, which covers all three listed examples in one line.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.02 Interaction Picture.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub.
+- [Structure] No change needed.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.02.01 Schrödinger, Heisenberg, and Dirac Pictures.md
+priority: low
+graph: no
+manim: no
+summary: Correct and clear.
+- [Simplify] Derive (6.1) in two lines from the Schrödinger equation and the definition $|\psi\rangle_I=e^{iH_0t}|\psi\rangle_S$.
+- [Structure] Add a three-row table (picture, state evolution, operator evolution) as a summary.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.02.02 Time-Evolution Operator and Dyson Series.md
+priority: low
+graph: yes
+manim: no
+summary: Correct Dyson series with a good warning about time ordering.
+- [Graph] Plot the square $[t_0,t]^2$ in the $(t_1,t_2)$ plane split by the diagonal into the two triangles $t_2<t_1$ and $t_1<t_2$, illustrating the factor $1/2!$.
+- [Structure] The "Time ordering" section is used before it is defined (in the second-order symmetrization); move it above that display.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.03 S-Matrix.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub.
+- [Structure] No change needed.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.03.01 Definition.md
+priority: medium
+graph: no
+manim: no
+summary: Correct definition, but one symbol denotes two different operators.
+- [Correctness] $\mathcal T$ is used both for time ordering ($\mathcal S=\mathcal T\exp(\dots)$) and for the transition operator ($\mathcal S=1+i\mathcal T$) in the same note; rename the transition operator (e.g. $\hat T$ or $\mathbb T$) here and in [[06.03.02 General Properties]].
+- [Example] Show that $\langle f|i\rangle$ for two-particle momentum states is a sum of products of $\delta^{(3)}$ factors, to make clear why it is separated from the connected $(2\pi)^4\delta^{(4)}\mathcal M$ term.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.03.02 General Properties.md
+priority: low
+graph: no
+manim: no
+summary: Correct and compact.
+- [Simplify] Use a symbol for the transition operator that differs from the time-ordering $\mathcal T$ (see 06.03.01).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.04 Dyson Formula.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub.
+- [Structure] No change needed.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.04.01 Hamiltonian Density and Covariant Form.md
+priority: low
+graph: no
+manim: no
+summary: Correct and clear, including the locality caveat.
+- [Example] Name a derivative interaction where $\mathcal H_{\mathrm{int}}\neq-\mathcal L_{\mathrm{int}}$ (e.g. scalar QED with $A_\mu\phi^*\overleftrightarrow{\partial^\mu}\phi$, which generates an extra $A_0^2|\phi|^2$ term).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.04.02 Perturbative Expansion.md
+priority: low
+graph: no
+manim: no
+summary: Correct and clear.
+- [Example] Give one nontrivial symmetry factor at second order, e.g. the $s$-channel one-loop $2\to2$ diagram with factor $\frac12$, to illustrate "the actual contraction count".
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.05 Wick's Theorem.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub.
+- [Structure] No change needed.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.05.01 Normal Ordering.md
+priority: low
+graph: no
+manim: no
+summary: Correct and clear.
+- [Simplify] The convention that $\phi^+$ is the annihilation part is the opposite of some textbooks; put this warning directly after the definition rather than at the end.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.05.02 Contractions and the Feynman Propagator.md
+priority: low
+graph: no
+manim: no
+summary: Correct derivation of the contraction and propagators.
+- [Simplify] Show the step from the commutator $[\phi^+(x),\phi^-(y)]=\int\frac{d^3k}{(2\pi)^32\omega_k}e^{-ik(x-y)}$ to the four-dimensional Fourier form via the $k^0$ contour (link [[05.14.06 Photon propagator in position space]] for the contour).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.05.03 Statement and Proof.md
+priority: low
+graph: no
+manim: yes
+summary: Correct theorem and induction proof.
+- [Manim] Animate the induction step: $\phi_1^+$ moving right through a normal-ordered string, splitting off a contraction line each time it passes a $\phi_j^-$.
+- [Example] Write out $n=3$ explicitly ($\mathcal N\{\phi_1\phi_2\phi_3\}+\Delta_{12}\phi_3+\Delta_{13}\phi_2+\Delta_{23}\phi_1$) before the general induction.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.05.04 Applications.md
+priority: low
+graph: no
+manim: no
+summary: Correct examples, clearly connected to the $-i\lambda$ amplitude.
+- [Example] Show how the $4!$ attachments arise: $\langle p_3p_4|\mathcal N\{\phi^4\}|p_1p_2\rangle=4!\,e^{i(p_3+p_4-p_1-p_2)\cdot x}$, then the $x$ integral gives $(2\pi)^4\delta^{(4)}$.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.06 LSZ Reduction Formula.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub.
+- [Structure] No change needed.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.06.01 Asymptotic States.md
+priority: low
+graph: no
+manim: no
+summary: Correct and careful about asymptotic limits.
+- [Simplify] Write the weak asymptotic condition explicitly, $\phi(x)\to\sqrt Z\,\phi_{\mathrm{in/out}}(x)$ as $t\to\mp\infty$ in matrix elements, since it is the key formula and is only described.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.06.02 Renormalization Constant Z.md
+priority: low
+graph: yes
+manim: no
+summary: Correct; the measure-label mismatch is flagged instead of fixed.
+- [Simplify] Use one Fourier variable ($d^4p$ with $e^{-ip\cdot(x-y)}$) in the first display and drop the callout about $d^4k$ versus $p$.
+- [Graph] Sketch the spectral density $\rho(\mu^2)$: a delta peak of weight $Z$ at $m_{\mathrm{ph}}^2$ and a continuum starting at the multiparticle threshold (e.g. $(3m)^2$ in $\phi^4$ with $\phi\to-\phi$ symmetry), illustrating $0\le Z\le1$.
+- [Intuition] Add the Källén–Lehmann sum rule consequence $0\le Z\le1$ for canonically normalized fields.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.06.03 Formula for Scalar Fields.md
+priority: high
+graph: no
+manim: no
+summary: The main coordinate-space formula is displayed with phases that the note itself says are wrong for its convention, and several callouts correct the source, which makes the theorem hard to use.
+- [Correctness] Display the LSZ formula in the chapter convention as the main equation: incoming weight $\int d^4x_j\,e^{-ip_j\cdot x_j}(\Box+m_{\mathrm{ph}}^2)$ and outgoing weight $\int d^4y_k\,e^{+ip'_k\cdot y_k}(\Box+m_{\mathrm{ph}}^2)$; keep the source phases only in a callout.
+- [Correctness] In the momentum-space form, replace the full $\tilde G^{(n+m)}$ by the connected Green function when writing $i\mathcal M$, as the callout already states, rather than displaying the uncorrected source expression.
+- [Example] Apply the practical formula once to tree-level $\phi^4$ ($Z=1$, $\tilde G_{\mathrm{amp}}=-i\lambda$) to recover $i\mathcal M=-i\lambda$ from 06.05.04.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.06.04 Dirac and Vector Fields.md
+priority: low
+graph: no
+manim: no
+summary: Correct with the antifermion spinor assignment fixed.
+- [Structure] Put the corrected external-leg assignments ($u$, $\bar u$, $\bar v$ incoming antifermion, $v$ outgoing antifermion, $\epsilon$, $\epsilon^*$) in a small table as the main content and move the source error into a short note.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.06.05 Physical Interpretation.md
+priority: low
+graph: no
+manim: no
+summary: Clear summary.
+- [Example] Make the rescaling check a formula: $\phi\to c\phi$ gives $G^{(n)}\to c^nG^{(n)}$ and $Z\to c^2Z$, so $(\sqrt Z)^{-n}G^{(n)}$ is invariant.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.07 Connected Diagrams and Vacuum Bubbles.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub.
+- [Structure] No change needed.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.07.01 Structure of the Diagrams.md
+priority: low
+graph: no
+manim: no
+summary: Clear classification; the "Disconnected" bullet is broken by an inserted paragraph.
+- [Structure] Move the four-point example paragraph after the list so the three categories appear as one list.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.07.02 Cancellation of Vacuum Bubbles.md
+priority: low
+graph: no
+manim: no
+summary: Correct, though the order-by-order check is described only in words.
+- [Example] Show the first-order check explicitly in $\phi^4$: numerator $\Delta_F(x-y)[1+V_1]+\dots$, denominator $1+V_1$ with $V_1=-\frac{i\lambda}{8}\int d^4z\,\Delta_F(0)^2$, ratio $\Delta_F(x-y)+$ connected terms.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.07.03 Connected Decomposition.md
+priority: low
+graph: no
+manim: no
+summary: Correct decomposition and a sound correction of the source's pole-counting argument.
+- [Structure] Shorten the presentation of the incorrect source argument to one sentence and lead with the correct statement that LSZ of the full $G$ retains disconnected S-matrix pieces.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.08 Cross Sections and Decay Widths.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub.
+- [Structure] No change needed.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.08.01 Invariant Phase Space.md
+priority: medium
+graph: no
+manim: no
+summary: Correct formulas, but the label-versus-count indexing of $d\Phi_n$ forces two dimension statements and is confusing.
+- [Simplify] Index the measure by the number of final particles, $d\Phi_N$ with $N=n-2$, so only one dimension statement ($2N-4$) is needed; delete the final sentence about $2n-8$.
+- [Example] Show the $p^0$ integration step $\delta(p^2-m^2)\theta(p^0)=\delta(p^0-E)/(2E)$ explicitly.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.08.02 Differential Cross Section.md
+priority: low
+graph: no
+manim: no
+summary: Correct and careful about flux and normalization.
+- [Example] Show that in the CM frame the invariant flux equals $4|\mathbf p_{\mathrm{CM}}|\sqrt s$, which is used in 06.08.04 and 06.08.06.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.08.03 Decay Width.md
+priority: low
+graph: yes
+manim: no
+summary: Correct formulas, with one reused letter.
+- [Correctness] $n$ labels the last final particle in $1\to2+\dots+n$ and also the size of a set of identical particles in "a factor $1/n!$ for each set of $n$ identical final particles"; use a different letter (e.g. $1/k!$) for the identical set.
+- [Example] Add the two-body width $\Gamma=\frac{|\mathbf p|}{8\pi M^2}\overline{|\mathcal M|^2}$ as the most-used special case.
+- [Graph] Plot the two-body phase-space factor $|\mathbf p|/(8\pi M^2)$ against $M/(m_2+m_3)\in[1,5]$, showing the square-root threshold behaviour.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.08.04 2 → 2 Kinematics in the Center-of-Mass Frame.md
+priority: low
+graph: no
+manim: no
+summary: Correct results; the derivation of $d\Phi_2$ is only described in words.
+- [Example] Show the radial integral: $\int\frac{p^2dp}{16\pi^2E_3E_4}\delta(E_3+E_4-\sqrt s)=\frac{p_f}{16\pi^2\sqrt s}$ using $d(E_3+E_4)/dp=p\sqrt s/(E_3E_4)$.
+- [Example] Apply (6.9) to $\phi^4$: $d\sigma/d\Omega=\lambda^2/(64\pi^2s)$ and $\sigma=\lambda^2/(32\pi s)$ with the identical-particle factor $\frac12$.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.08.05 Mandelstam Variables.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and well checked; the Compton formula is quoted without derivation.
+- [Graph] Plot $t$ and $u$ (in units of $s-4m^2$) against $\cos\theta\in[-1,1]$ for equal-mass elastic scattering, showing the $t\leftrightarrow u$ mirror symmetry.
+- [Graph] Plot $\omega'/\omega$ against $\theta\in[0,\pi]$ for $\omega/m_e=0.1,1,10$ from the Compton formula.
+- [Example] Derive the Compton shift in two lines from $(p+k-k')^2=m_e^2$, i.e. $p\cdot(k-k')=k\cdot k'$.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.08.06 Total Cross Section and the Optical Theorem.md
+priority: low
+graph: no
+manim: no
+summary: Correct with a good perturbative consistency check.
+- [Example] Make the $\phi^4$ check quantitative: the one-loop $s$-channel bubble has $\mathrm{Im}\,\mathcal M=\frac{\lambda^2}{32\pi}\sqrt{1-4m^2/s}$, which reproduces $\sigma_{\mathrm{tot}}=\lambda^2/(32\pi s)$ in the massless limit via (6.10).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.09 From the Lagrangian to Observables.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub.
+- [Structure] No change needed.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.09.01 Synthesis of the Perturbative Program.md
+priority: low
+graph: no
+manim: no
+summary: Clear synthesis.
+- [Structure] Add the relevant note link to each of the six steps (e.g. step 4 to [[06.05.03 Statement and Proof]], step 5 to [[06.06.03 Formula for Scalar Fields]]).
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.09.02 Physical Meaning of Propagators.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and careful interpretation.
+- [Graph] Plot $|i/(k^2-m^2+i\epsilon)|$ against $k^2/m^2$ for a small finite $\epsilon$ (e.g. $\epsilon=0.05m^2$), showing the peak at the mass shell and the off-shell tails.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.10 Examples.md
+priority: medium
+graph: no
+manim: no
+summary: Correct amplitudes, but the Yukawa Lagrangian is displayed with a wrong mass sign and one mass symbol has two meanings.
+- [Correctness] The displayed Yukawa density has $+\frac{\mu^2}2\phi^2$; display the correct $-\frac{\mu^2}2\phi^2$ (consistent with the propagator used in the amplitude) and keep the source sign only in a callout.
+- [Correctness] $\mechanical{m}$ is the scalar mass in Example 6.8 and the fermion mass in Example 6.9; the table entry "mass parameters" lumps them. Use e.g. $M$ for the fermion mass or split the table rows by example.
+- [Simplify] The superscript in $G^{(2)}$ means two-point function, while $|_{\lambda^2}$ marks second order; state this explicitly to avoid reading $(2)$ as the order.
+- [Example] Draw or link the setting-sun and tadpole diagrams (Chapter 7) so the three topologies can be identified visually.

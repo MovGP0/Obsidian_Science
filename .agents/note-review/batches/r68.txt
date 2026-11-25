@@ -1,0 +1,16 @@
+02 Physics/07 Astrophysics and Cosmology/Galactic chemical evolution and the closed-box model.md
+02 Physics/07 Astrophysics and Cosmology/Galactic potential models, virial balance, and relaxation.md
+02 Physics/07 Astrophysics and Cosmology/Galactic virial balance, rotational support, and anisotropy.md
+02 Physics/07 Astrophysics and Cosmology/Galaxy morphology, surface brightness, and halo models.md
+02 Physics/07 Astrophysics and Cosmology/Galaxy scaling laws, Sérsic profiles, and luminosity functions.md
+02 Physics/07 Astrophysics and Cosmology/General relativity and the expanding-universe metric.md
+02 Physics/07 Astrophysics and Cosmology/Gravitational encounters and collisionless galactic dynamics.md
+02 Physics/07 Astrophysics and Cosmology/Interstellar gas and X-ray scaling in elliptical galaxies.md
+02 Physics/07 Astrophysics and Cosmology/Inverse Compton scattering and photon energy exchange.md
+02 Physics/07 Astrophysics and Cosmology/Metric Tensor of the Universe.md
+02 Physics/07 Astrophysics and Cosmology/Milky Way populations, clusters, and rotation.md
+02 Physics/07 Astrophysics and Cosmology/Natural and Doppler broadening and the Voigt profile.md
+02 Physics/07 Astrophysics and Cosmology/Perturbed metrics and the cosmological Boltzmann equation.md
+02 Physics/07 Astrophysics and Cosmology/Post-main-sequence evolution, mass loss, and shell burning.md
+02 Physics/07 Astrophysics and Cosmology/Radiative absorption, recombination, and Thomson scattering.md
+02 Physics/07 Astrophysics and Cosmology/Specific intensity and the radiative-transfer equation.md

@@ -1,0 +1,87 @@
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/06 Special Matrices/00 Special Matrices.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/06 Special Matrices/01 Orthogonal Projectors.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/06 Special Matrices/02 Singular Value Decomposition.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/06 Special Matrices/03 Polar Decomposition.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/06 Special Matrices/04 Rank, Kernel and Image.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/06 Special Matrices/05 Determinant, Trace and Invariants.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/06 Special Matrices/06 Condition Number.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/06 Special Matrices/07 Gell-Mann Matrices.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/06 Special Matrices/08 Density Matrices.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/06 Special Matrices/09 Common Errors.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/06 Special Matrices/10 Chapter Summary.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/06 Special Matrices/11 Exercises.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/06 Special Matrices/99 Exercises/01 Exercise 1.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/06 Special Matrices/99 Exercises/02 Exercise 2.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/06 Special Matrices/99 Exercises/03 Exercise 3.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/06 Special Matrices/99 Exercises/04 Exercise 4.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/06 Special Matrices/99 Exercises/05 Exercise 5.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/06 Special Matrices/99 Exercises/06 Exercise 6.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/06 Special Matrices/99 Exercises/07 Exercise 7.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/06 Special Matrices/99 Exercises/08 Exercise 8.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/06 Special Matrices/99 Exercises/09 Exercise 9.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/07 Eigenvalues and Eigenvectors/00 Eigenvalues and Eigenvectors.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/07 Eigenvalues and Eigenvectors/01 Definition and Calculation.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/07 Eigenvalues and Eigenvectors/02 Properties of Hermitian Operators.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/07 Eigenvalues and Eigenvectors/03 The Spectral Theorem.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/07 Eigenvalues and Eigenvectors/04 Diagonalization Methods.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/07 Eigenvalues and Eigenvectors/05 Common Errors.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/07 Eigenvalues and Eigenvectors/06 Chapter Summary.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/07 Eigenvalues and Eigenvectors/07 Exercises.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/07 Eigenvalues and Eigenvectors/99 Exercises/01 Exercise 1.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/07 Eigenvalues and Eigenvectors/99 Exercises/02 Exercise 2.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/07 Eigenvalues and Eigenvectors/99 Exercises/03 Exercise 3.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/07 Eigenvalues and Eigenvectors/99 Exercises/04 Exercise 4.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/07 Eigenvalues and Eigenvectors/99 Exercises/05 Exercise 5.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/07 Eigenvalues and Eigenvectors/99 Exercises/06 Exercise 6.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/07 Eigenvalues and Eigenvectors/99 Exercises/07 Exercise 7.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/08 Hilbert Space/00 Hilbert Space.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/08 Hilbert Space/01 The Space L2(R).md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/08 Hilbert Space/02 Completeness and Hilbert Space.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/08 Hilbert Space/03 Orthonormal Bases.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/08 Hilbert Space/04 The Completeness Relation.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/08 Hilbert Space/05 Continuous Bases.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/08 Hilbert Space/06 Finite-Dimensional Systems.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/08 Hilbert Space/07 Common Errors.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/08 Hilbert Space/08 Chapter Summary.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/08 Hilbert Space/09 Exercises.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/08 Hilbert Space/99 Exercises/01 Exercise 1.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/08 Hilbert Space/99 Exercises/02 Exercise 2.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/08 Hilbert Space/99 Exercises/03 Exercise 3.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/08 Hilbert Space/99 Exercises/04 Exercise 4.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/08 Hilbert Space/99 Exercises/05 Exercise 5.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/08 Hilbert Space/99 Exercises/06 Exercise 6.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/08 Hilbert Space/99 Exercises/07 Exercise 7.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/02 Linear Algebra/08 Hilbert Space/99 Exercises/08 Exercise 8.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/09 Dirac Notation/00 Dirac Notation.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/09 Dirac Notation/01 Ket and Bra.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/09 Dirac Notation/02 The Inner Product in Dirac Notation.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/09 Dirac Notation/03 Operators in Dirac Notation.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/09 Dirac Notation/04 Projectors.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/09 Dirac Notation/05 The Completeness Relation.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/09 Dirac Notation/06 From Notation to Representation.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/09 Dirac Notation/07 The Postulates of Quantum Mechanics.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/09 Dirac Notation/08 Common Errors.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/09 Dirac Notation/09 Chapter Summary.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/09 Dirac Notation/10 Exercises.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/09 Dirac Notation/99 Exercises/01 Exercise 1.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/09 Dirac Notation/99 Exercises/02 Exercise 2.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/09 Dirac Notation/99 Exercises/03 Exercise 3.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/09 Dirac Notation/99 Exercises/04 Exercise 4.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/09 Dirac Notation/99 Exercises/05 Exercise 5.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/09 Dirac Notation/99 Exercises/06 Exercise 6.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/09 Dirac Notation/99 Exercises/07 Exercise 7.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/09 Dirac Notation/99 Exercises/08 Exercise 8.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/10 Commutators and Operator Algebra/00 Commutators and Operator Algebra.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/10 Commutators and Operator Algebra/01 Definition and Algebraic Properties.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/10 Commutators and Operator Algebra/02 The Canonical Commutation Relation.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/10 Commutators and Operator Algebra/03 Compatible Operators.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/10 Commutators and Operator Algebra/04 The Uncertainty Principle.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/10 Commutators and Operator Algebra/05 Creation and Annihilation Operators.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/10 Commutators and Operator Algebra/06 Common Errors.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/10 Commutators and Operator Algebra/07 Chapter Summary.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/10 Commutators and Operator Algebra/08 Exercises.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/10 Commutators and Operator Algebra/99 Exercises/01 Exercise 1.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/10 Commutators and Operator Algebra/99 Exercises/02 Exercise 2.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/10 Commutators and Operator Algebra/99 Exercises/03 Exercise 3.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/10 Commutators and Operator Algebra/99 Exercises/04 Exercise 4.md
+02 Physics/03 Quantum Mechanics/01 Mathematical Foundations/03 The Language of Operators/10 Commutators and Operator Algebra/99 Exercises/05 Exercise 5.md

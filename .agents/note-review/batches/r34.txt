@@ -1,0 +1,109 @@
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.15 The Dirac Field as a Dirac–Bergmann System.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.15.01 Constrained Structure of the Hamiltonian Operator.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.15.02 Dirac Brackets and Quantization.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.16 Gordon Identity.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.17 Summary of Rules and Fundamental Relations.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.18 Exercises/04.18 Exercises.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.18 Exercises/04.18.01 Clifford algebra in arbitrary dimension.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.18 Exercises/04.18.02 Canonical anticommutators and inversion.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.18 Exercises/04.18.03 Fermion Fock number.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.18 Exercises/04.18.04 Massless position-space propagator.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.18 Exercises/04.18.05 Noether current and charge.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.18 Exercises/04.18.06 Charge-conjugation symmetry of the propagator.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.18 Exercises/04.18.07 Gordon identity.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.18 Exercises/04.18.08 Anomalous magnetic moment.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.18 Exercises/04.18.09 Traces with the Levi-Civita tensor.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.18 Exercises/04.18.10 Weyl spinors and chirality.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.18 Exercises/04.18.11 The Majorana field.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/04 The Dirac Field/04.18 Exercises/04.18.12 Causality of the propagator.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.00 Summary.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.01 Review of Covariant Classical Electrodynamics.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.01.01 The Four-Potential and the Field Tensor.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.01.02 Maxwell's Equations in Covariant Form.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.01.03 Gauge Invariance.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.02 The Maxwell Lagrangian.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.02.01 Structure of the Lagrangian.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.02.02 Conjugate Momentum and Hamiltonian Structure.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.03 Constraints and Degrees of Freedom in Quantization.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.04 Quantization in the Coulomb Gauge.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.04.01 Gauge Fixing and Transverse Polarization Vectors.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.04.02 Normal-Mode Expansion.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.04.03 Canonical Commutation Relations.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.04.04 Hamiltonian Operator and Structure of Fock Space.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.05 Covariant Gupta–Bleuler Quantization.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.05.01 The Gauge-Fixing Term.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.05.02 The Modified Conjugate Momentum.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.05.03 Expansion in Four Polarizations.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.05.04 Negative-Norm States.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.05.05 The Physical-State Condition.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.06 The Photon Propagator.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.06.01 Derivation in the Feynman Gauge.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.06.02 Propagator in the Coulomb Gauge.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.07 Polarization Sums and the Ward Identity.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.07.01 The Physical Polarization Sum.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.07.02 Replacement of the Polarization Sum.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.07.03 Discussion of the Ward Identity.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.08 Degrees of Freedom - Photon and Massive Field.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.08.01 Massless Vector Field (Photon).md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.08.02 Massive Vector Field (Proca Field).md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.09 The Proca Field.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.09.01 The Proca Lagrangian.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.09.02 Quantization of the Proca Field.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.09.03 The Proca Propagator.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.10 Propagator in the Rξ Gauge.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.10.01 Inversion of the Kinetic Operator.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.10.02 Check of ξ Dependence.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.11 Feynman Rules for QED.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.12 Path Integral - Preview.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.13 Further Properties of the Photon.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.13.01 Photon Statistics.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.13.02 Helicity and Circular Polarization.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.13.03 Vacuum Energy (Cosmological Constant).md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.14 Exercises/05.14 Exercises.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.14 Exercises/05.14.01 Bianchi identity and homogeneous Maxwell equations.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.14 Exercises/05.14.02 Electromagnetic energy–momentum tensor.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.14 Exercises/05.14.03 Polarization vectors and completeness.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.14 Exercises/05.14.04 Transverse Dirac delta.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.14 Exercises/05.14.05 Gupta–Bleuler condition and physical states.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.14 Exercises/05.14.06 Photon propagator in position space.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.14 Exercises/05.14.07 Massive polarization completeness.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.14 Exercises/05.14.08 Explicit Ward identity for Compton scattering.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.14 Exercises/05.14.09 Proca Lagrangian and degrees of freedom.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/05 The Electromagnetic Field/05.14 Exercises/05.14.10 Vacuum energy in covariant quantization.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.00 Historical and Bibliographical Notes.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.01 Interaction Terms and Coupling Powers.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.02 Interaction Picture.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.02.01 Schrödinger, Heisenberg, and Dirac Pictures.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.02.02 Time-Evolution Operator and Dyson Series.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.03 S-Matrix.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.03.01 Definition.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.03.02 General Properties.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.04 Dyson Formula.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.04.01 Hamiltonian Density and Covariant Form.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.04.02 Perturbative Expansion.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.05 Wick's Theorem.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.05.01 Normal Ordering.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.05.02 Contractions and the Feynman Propagator.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.05.03 Statement and Proof.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.05.04 Applications.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.06 LSZ Reduction Formula.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.06.01 Asymptotic States.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.06.02 Renormalization Constant Z.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.06.03 Formula for Scalar Fields.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.06.04 Dirac and Vector Fields.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.06.05 Physical Interpretation.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.07 Connected Diagrams and Vacuum Bubbles.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.07.01 Structure of the Diagrams.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.07.02 Cancellation of Vacuum Bubbles.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.07.03 Connected Decomposition.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.08 Cross Sections and Decay Widths.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.08.01 Invariant Phase Space.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.08.02 Differential Cross Section.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.08.03 Decay Width.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.08.04 2 → 2 Kinematics in the Center-of-Mass Frame.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.08.05 Mandelstam Variables.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.08.06 Total Cross Section and the Optical Theorem.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.09 From the Lagrangian to Observables.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.09.01 Synthesis of the Perturbative Program.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.09.02 Physical Meaning of Propagators.md
+02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/06 Interacting Fields and Perturbation Theory/06.10 Examples.md

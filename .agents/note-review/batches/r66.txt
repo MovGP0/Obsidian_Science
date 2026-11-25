@@ -1,0 +1,31 @@
+02 Physics/06 Electromagnetism and Waves/AC impedance, Maxwell waves, and energy flux.md
+02 Physics/06 Electromagnetism and Waves/Acoustic Doppler shift and wave optics practice.md
+02 Physics/06 Electromagnetism and Waves/Conducting boundaries, image charges, and Green functions.md
+02 Physics/06 Electromagnetism and Waves/Electric potential on the axis of a charged disk.md
+02 Physics/06 Electromagnetism and Waves/Electric potential, capacitors, and Kirchhoff calculations.md
+02 Physics/06 Electromagnetism and Waves/Electromagnetic plane waves and planar interfaces.md
+02 Physics/06 Electromagnetism and Waves/Electrostatic multipoles and matching at charge sources.md
+02 Physics/06 Electromagnetism and Waves/Electrostatic sources, potentials, and field energy.md
+02 Physics/06 Electromagnetism and Waves/Field superposition and Gauss-law review.md
+02 Physics/06 Electromagnetism and Waves/Fixed-string normal modes and Fourier coefficients.md
+02 Physics/06 Electromagnetism and Waves/Induction, circuit transients, and filter measurements.md
+02 Physics/06 Electromagnetism and Waves/Laplace equation in Cartesian and spherical geometries.md
+02 Physics/06 Electromagnetism and Waves/Magnetic forces and fields of wires and loops.md
+02 Physics/06 Electromagnetism and Waves/Magnetic materials, bound currents, and interface problems.md
+02 Physics/06 Electromagnetism and Waves/Maxwell equations, retarded potentials, and conservation.md
+02 Physics/06 Electromagnetism and Waves/Mechanical oscillation and traveling-wave problems.md
+02 Physics/06 Electromagnetism and Waves/Moving sources and electrodynamics review problems.md
+02 Physics/06 Electromagnetism and Waves/Oscillator and wave-mode review calculations.md
+02 Physics/06 Electromagnetism and Waves/Polarization and dielectric boundary-value problems.md
+02 Physics/06 Electromagnetism and Waves/Polarization, interference, refraction, and lenses.md
+02 Physics/06 Electromagnetism and Waves/Pulse reflection, wavefronts, and refraction problems.md
+02 Physics/06 Electromagnetism and Waves/RC and RL response in time and frequency.md
+02 Physics/06 Electromagnetism and Waves/Radiation from antennas and electromagnetic multipoles.md
+02 Physics/06 Electromagnetism and Waves/Resonance, coupled modes, and Fourier practice.md
+02 Physics/06 Electromagnetism and Waves/Spherical harmonics and magnetic dipole boundary problems.md
+02 Physics/06 Electromagnetism and Waves/Steady currents, vector potentials, and magnetic multipoles.md
+02 Physics/06 Electromagnetism and Waves/String modes, reflection, and dispersion.md
+02 Physics/06 Electromagnetism and Waves/Superposition, electric flux, and Gauss’s law problems.md
+02 Physics/06 Electromagnetism and Waves/Vacuum electromagnetic waves and optical boundaries.md
+02 Physics/06 Electromagnetism and Waves/Wave pulses, interfaces, and dispersive propagation.md
+02 Physics/Physics Study Guide.md

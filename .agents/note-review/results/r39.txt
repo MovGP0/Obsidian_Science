@@ -1,0 +1,728 @@
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.04.05 Antisymmetric Spin Tensor.md
+priority: low
+graph: no
+manim: no
+summary: Short, correct reference note; the decomposition $\gamma^\mu\gamma^\nu=g^{\mu\nu}-i\sigma^{\mu\nu}$ and the distinct-index check are useful.
+- [Intuition] Add one line stating that $S^{\mu\nu}=\tfrac12\sigma^{\mu\nu}$ are the Lorentz generators in the spinor representation, with $\sigma^{ij}=\epsilon^{ijk}\Sigma^k$ giving the spin matrices, and link to [[B.08.04 Generators in the Spinor Representation]] so "enter the spinor representation" becomes concrete.
+- [Example] Give the explicit Dirac-Pauli forms $\sigma^{0i}=i\begin{pmatrix}0&\sigma^i\\\sigma^i&0\end{pmatrix}$ and $\sigma^{ij}=\epsilon^{ijk}\begin{pmatrix}\sigma^k&0\\0&\sigma^k\end{pmatrix}$ as a quick sign check (anti-Hermitian boost part versus Hermitian rotation part).
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.04.06 Properties of Gamma Matrices.md
+priority: low
+graph: no
+manim: no
+summary: Correct and compact formula sheet; the 4D and d-dimensional contraction identities (A.27)–(A.34) all check out.
+- [Simplify] The reconstruction paragraph for (A.32) is in words only; write the one-line derivation $\gamma^\mu\not a\gamma_\mu=\gamma^\mu(2a_\mu-\gamma_\mu\not a)=(2-d)\not a$ instead of describing it verbally.
+- [Structure] Place the 4D identities (A.27)–(A.30) and their $d$-dimensional versions (A.31)–(A.34) side by side in a two-column table for quick lookup.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.04.07 Trace Identities.md
+priority: low
+graph: no
+manim: no
+summary: Correct trace sheet with good built-in checks; (A.40) with $\epsilon^{0123}=+1$ and $\gamma^5=i\gamma^0\gamma^1\gamma^2\gamma^3$ indeed gives $-4i$.
+- [Example] Add one worked application, e.g. $\operatorname{Tr}[(\not p'+m)\gamma^\mu(\not p+m)\gamma^\nu]=4(p'^\mu p^\nu+p'^\nu p^\mu-g^{\mu\nu}(p\cdot p'-m^2))$, to show how (A.35)–(A.37) are used with [[A.05.05 Completeness Relations]].
+- [Simplify] Write out the six-gamma case of (A.41) in full or state the closed rule "sum over all pairings, signed by the permutation parity", since the current "+⋯" leaves the sign pattern ambiguous to a beginner.
+- [Structure] Add the commonly needed $\operatorname{Tr}[\gamma^5\gamma^\mu\gamma^\nu\gamma^\rho]=0$ and the reversal identity $\operatorname{Tr}[\gamma^{\mu_1}\cdots\gamma^{\mu_n}]=\operatorname{Tr}[\gamma^{\mu_n}\cdots\gamma^{\mu_1}]$.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.04.08 Charge Conjugation Matrix.md
+priority: low
+graph: no
+manim: no
+summary: Correct; the explicit matrix (A.44), $C^2=-\mathbf1$, $C^T=-C$ and the involution $(\psi^c)^c=\psi$ all verify.
+- [Example] Show the practical use of (A.45): it maps particle spinors to antiparticle spinors, $v^{(s)}(\mathbf p)=C\bar u^{(s)T}(\mathbf p)$ up to a spin relabeling and phase.
+- [Simplify] Replace the verbal sentence about reversing the electromagnetic coupling with the equation: if $(i\not\partial-e\not A-m)\psi=0$ then $(i\not\partial+e\not A-m)\psi^c=0$.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.05 Spinor Conventions.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub note that orders its subnotes sensibly; no change needed.
+- [Structure] No change needed beyond optionally listing the six subnotes as bullets with their equation numbers (A.46)–(A.56).
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.05.01 Dirac Adjoint.md
+priority: low
+graph: no
+manim: no
+summary: Correct and well motivated; the explanation of why $\gamma^0$ is needed is good but stays verbal.
+- [Simplify] Replace the verbal argument with the two-line equation $S^\dagger\gamma^0=\gamma^0S^{-1}$, hence $\bar\psi\to\psi^\dagger S^\dagger\gamma^0=\bar\psi S^{-1}$, so $\bar\psi\psi$ is invariant.
+- [Example] Make the indefiniteness explicit: $\bar\psi\psi=|\psi_1|^2+|\psi_2|^2-|\psi_3|^2-|\psi_4|^2$ versus $\psi^\dagger\psi=\sum_a|\psi_a|^2$ in the Dirac–Pauli basis.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.05.02 The Dirac Equation and Solution Spinors.md
+priority: low
+graph: no
+manim: no
+summary: Correct mode expansion with the covariant measure; the explanatory text is accurate but somewhat abstract.
+- [Simplify] State the anticommutator $\{a^{(r)}_{\mathbf p},a^{(s)\dagger}_{\mathbf q}\}=(2\pi)^3\,2E_{\mathbf p}\,\delta^{rs}\delta^3(\mathbf p-\mathbf q)$ explicitly, since the text says the measure "requires corresponding changes" but never shows the normalization it is tied to.
+- [Simplify] Replace the verbal "differential check" with $i\not\partial\,(u\,e^{-ip\cdot x})=\not p\,u\,e^{-ip\cdot x}$ and $i\not\partial\,(v\,e^{+ip\cdot x})=-\not p\,v\,e^{+ip\cdot x}$, which directly yield (A.49)/(A.50).
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.05.03 Equations of Motion for the Spinors u and v.md
+priority: low
+graph: no
+manim: no
+summary: Correct and concise, with a good rest-frame sign check.
+- [Simplify] Write the mass-shell step as $(\not p+m)(\not p-m)=p^2-m^2$ and name (A.6) explicitly as $p^2=m^2$ so the reader need not look it up.
+- [Example] Add the explicit Dirac–Pauli solution $u^{(s)}(\mathbf p)=\bigl(\sqrt{E+m}\,\xi^s,\ \tfrac{\boldsymbol\sigma\cdot\mathbf p}{\sqrt{E+m}}\xi^s\bigr)^T$ and the analogous $v$, so the equations and the normalization of A.05.04 can be checked concretely.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.05.04 Spinor Normalization.md
+priority: low
+graph: no
+manim: no
+summary: Correct normalization conventions with a sensible discussion of the massless limit.
+- [Structure] Add the antiparticle energy normalization $v^{(r)\dagger}v^{(s)}=2E_{\mathbf p}\delta^{rs}$ and the opposite-momentum orthogonality $u^{(r)\dagger}(\mathbf p)v^{(s)}(-\mathbf p)=0$, which are used when quantizing the Dirac Hamiltonian.
+- [Intuition] Add $\bar u^{(r)}\gamma^\mu u^{(s)}=2p^\mu\delta^{rs}$ to connect the mass normalization (A.51) and the energy normalization in one formula ($\mu=0$ gives $2E$).
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.05.05 Completeness Relations.md
+priority: low
+graph: no
+manim: no
+summary: Correct spin sums and a careful remark about the projector signs.
+- [Simplify] Write the projectors explicitly as $\Lambda_\pm=(\pm\not p+m)/(2m)$ and show $\Lambda_+^2=\Lambda_+$ in one line using $\not p^2=m^2$, instead of describing them in words.
+- [Example] Add the rest-frame check $\sum_s u\bar u=m(\gamma^0+1)=2m\,\mathrm{diag}(1,1,0,0)$ in the Dirac–Pauli basis.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.05.06 Chiral Projectors.md
+priority: low
+graph: no
+manim: no
+summary: Correct and compact; the projector-through-gamma rule and the chirality-versus-helicity caveat are well placed.
+- [Example] Add $\bar\psi\psi=\bar\psi_L\psi_R+\bar\psi_R\psi_L$ and $\bar\psi\gamma^\mu\psi=\bar\psi_L\gamma^\mu\psi_L+\bar\psi_R\gamma^\mu\psi_R$, which state precisely why the mass term couples the chiral components while vector currents do not.
+- [Intuition] State the massless case explicitly: for $m=0$ the chirality eigenvalue equals twice the helicity for particles (opposite for antiparticle spinors $v$), so the reader sees exactly when chirality and helicity coincide.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.06 Levi-Civita Tensor.md
+priority: low
+graph: no
+manim: no
+summary: Correct; the contraction identities (A.58)–(A.61) have consistent Lorentzian signs and the double-dual result follows from (A.60).
+- [Example] Add the electromagnetic example: with (A.62) the dual field tensor swaps $\mathbf E\to\mathbf B$ and $\mathbf B\to-\mathbf E$ (with the signs of this convention), which is the main use of the dual.
+- [Simplify] Show the double-dual computation as one equation, $\tilde{\tilde F}^{\mu\nu}=\tfrac14\epsilon^{\mu\nu\rho\sigma}\epsilon_{\rho\sigma\alpha\beta}F^{\alpha\beta}=-F^{\mu\nu}$, rather than only asserting it.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.07 Fourier Transform.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub note; the distinction between on-shell measures and off-shell propagator integrals is a helpful warning.
+- [Structure] No change needed; optionally show the two exponent conventions (A.63)/(A.64) in the hub itself so the sign can be read without opening a subnote.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.07.01 Conventions in d Dimensions.md
+priority: low
+graph: no
+manim: no
+summary: Correct conventions; the spatial-versus-spacetime caveat is useful but stated in a roundabout way.
+- [Simplify] State the spacetime version explicitly, $\tilde f(k)=\int d^4x\,e^{+ik\cdot x}f(x)$ with $k\cdot x=k^0t-\mathbf k\cdot\mathbf x$, so the reader sees that the spatial exponent sign is opposite to (A.63) read with a Euclidean product.
+- [Intuition] Add one sentence on why the sign matters: with $e^{-ik\cdot x}$ in the inverse transform, $i\partial_\mu\to k_\mu$, so a positive-energy mode $e^{-iEt}$ corresponds to $k^0=+E$.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.07.02 Dirac Delta Function.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and adequately explained; the scaling law and dimension remark are good additions.
+- [Graph] Plot nascent deltas $\delta_\sigma(x)=e^{-x^2/2\sigma^2}/(\sqrt{2\pi}\sigma)$ for $\sigma=1,0.5,0.2,0.1$ on $x\in[-3,3]$ (unit area, growing height) to make "not a spike with finite height" concrete.
+- [Example] Add the composite rule $\delta(g(x))=\sum_i\delta(x-x_i)/|g'(x_i)|$, which A.07.03 uses implicitly for $\delta(p^2-m^2)$.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.07.03 Invariant Single-Particle Measure.md
+priority: low
+graph: yes
+manim: no
+summary: Correct and well argued; the reduction of $\delta(p^2-m^2)\theta(p^0)$ is described only in words.
+- [Simplify] Write the reduction as one equation: $\delta(p^2-m^2)\theta(p^0)=\delta(p^0-E_{\mathbf p})/(2E_{\mathbf p})$, then integrate over $p^0$.
+- [Graph] Plot the mass hyperboloid $p^0=\pm\sqrt{|\mathbf p|^2+m^2}$ (negative branch greyed) in the $(p^1,p^0)$ plane for $m=1$, $p^1\in[-3,3]$, with the light cone $p^0=\pm|p^1|$, to show what the step function selects.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.08 Dimensional Regularization.md
+priority: low
+graph: no
+manim: no
+summary: Correct overview with an accurate coupling-dimension argument ($[g]=\varepsilon$ for gauge and Yukawa, $[\lambda]=2\varepsilon$ for quartic).
+- [Example] Add a minimal example: $\int d^dk_E/(k_E^2+\Delta)^2\propto\Gamma(2-d/2)=\Gamma(\varepsilon)\approx1/\varepsilon$, showing how the logarithmic divergence becomes a pole.
+- [Simplify] Replace the verbal coupling-dimension check with formulas: from $[\psi]=(d-1)/2$ and $[A]=(d-2)/2$, the term $g\bar\psi\not A\psi$ needs $[g]=(4-d)/2=\varepsilon$, while $\lambda\phi^4$ with $[\phi]=(d-2)/2$ needs $[\lambda]=4-d=2\varepsilon$.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.08.01 Gaussian Integrals in d Euclidean Dimensions.md
+priority: low
+graph: no
+manim: no
+summary: Correct master-integral sheet; (A.68)–(A.74) agree with standard results and the $1/4$ correction in (A.71) is right.
+- [Simplify] Show the Schwinger-parameter derivation of (A.68) in three displayed lines ($A^{-n}=\Gamma(n)^{-1}\int_0^\infty dt\,t^{n-1}e^{-tA}$, the Gaussian gives $(4\pi t)^{-d/2}$, the remaining integral gives $\Gamma(n-d/2)\Delta^{d/2-n}$) instead of describing it verbally.
+- [Example] Add a numeric sanity check, e.g. $d=3$, $n=2$: $\int d^3k/(2\pi)^3\,(k^2+\Delta)^{-2}=1/(8\pi\sqrt\Delta)$, which a reader can verify by elementary integration.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.08.02 Feynman Parametrization.md
+priority: low
+graph: no
+manim: no
+summary: Correct formulas with good equal-denominator checks; a derivation of (A.75) is missing.
+- [Simplify] Add the one-line proof of (A.75): $\int_0^1dx\,[xA+(1-x)B]^{-2}=\bigl[-1/((A-B)(xA+(1-x)B))\bigr]_0^1=1/(AB)$.
+- [Example] Add the standard one-loop application: combine $1/[(k^2-m^2)((k+p)^2-m^2)]$ with (A.75), shift $\ell=k+xp$, and obtain $\Delta=m^2-x(1-x)p^2$, linking directly to A.08.01.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.08.03 Euler's Gamma Function.md
+priority: low
+graph: yes
+manim: no
+summary: Correct; (A.84) and the $\Gamma(-1+\varepsilon)$ check verify.
+- [Graph] Plot $\Gamma(x)$ for $x\in[-4,5]$, $y\in[-10,10]$, with vertical asymptotes at $0,-1,-2,-3$, overlaying $1/x$ near $0$ and $-1/(x+1)$ near $-1$ to show the residues $(-1)^n/n!$ of (A.84).
+- [Simplify] Derive (A.85) in one line from $\Gamma(\varepsilon)=\Gamma(1+\varepsilon)/\varepsilon$ and $\Gamma'(1)=-\gamma_E$, which makes the origin of $\gamma_E$ explicit.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.08.04 Expansion around d = 4.md
+priority: low
+graph: no
+manim: no
+summary: Correct; all five entries of Table A.3 recompute from (A.72)–(A.74), and the consistency checks are well chosen.
+- [Simplify] Show the expansion step behind (A.88) explicitly: $\Gamma(\varepsilon)(4\pi)^{\varepsilon}(\Delta/\mu^2)^{-\varepsilon}=1/\varepsilon-\gamma_E+\ln4\pi-\ln(\Delta/\mu^2)+\mathcal O(\varepsilon)$.
+- [Structure] The Table A.3 caption says "written with the modified minimal-subtraction pole convention" while the text stresses the expressions are unsubtracted; reword the caption to "regulated results written with $1/\hat\varepsilon$" for consistency.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.08.05 Euler's Beta Function.md
+priority: low
+graph: no
+manim: no
+summary: Correct and adequate for a reference note.
+- [Simplify] Add the short proof of $B=\Gamma(x)\Gamma(y)/\Gamma(x+y)$ (write $\Gamma(x)\Gamma(y)$ as a double integral and substitute $s=u+v$, $t=u/(u+v)$), since it is the only nontrivial content of the note.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.08.06 Angular Integrals in d Dimensions.md
+priority: low
+graph: yes
+manim: no
+summary: Correct, with a good Gaussian reconstruction of (A.92).
+- [Graph] Plot $\Omega_d=2\pi^{d/2}/\Gamma(d/2)$ for continuous $d\in[0.5,15]$, marking integer points; it peaks near $d\approx7.26$ and then decays, illustrating that the formula is a smooth analytic function of $d$.
+- [Simplify] Display the Gaussian argument as two equations, $\int d^dx\,e^{-x^2}=\pi^{d/2}$ and $=\Omega_d\int_0^\infty r^{d-1}e^{-r^2}dr=\Omega_d\Gamma(d/2)/2$, instead of prose.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/91 A Conventions and Notation/A.09 Overview of User-Defined Commands.md
+priority: low
+graph: no
+manim: no
+summary: Adequate lookup table; no change needed.
+- [Structure] No change needed; optionally drop the physical-quantities table, which describes LaTeX commands rather than quantities in an equation.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/92 B Clifford Algebras and Lie Groups/B.01 Clifford Algebras in d Dimensions.md
+priority: low
+graph: no
+manim: no
+summary: Clear appendix hub that distinguishes spacetime dimension, algebra dimension and spinor size; no change needed.
+- [Structure] No change needed; optionally add a one-line roadmap list of B.01–B.08 so the hub also links the Lie-group half (B.04–B.07) explicitly rather than only B.08.03.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/92 B Clifford Algebras and Lie Groups/B.01.01 Definition.md
+priority: low
+graph: no
+manim: no
+summary: Correct definition with good null-vector and factor-of-$i$ checks; one sentence is garbled.
+- [Simplify] The sentence "The bilinear form and its quadratic function are related by $Q(v,v)$" says nothing; replace with the polarization relation, e.g. "the quadratic function is $q(v)=Q(v,v)$, and $Q(u,v)=\tfrac12[q(u+v)-q(u)-q(v)]$".
+- [Simplify] State explicitly that (B.1) is written in a basis $\gamma^\mu=e^\mu$ of $V$ and that it is equivalent to $v^2=Q(v,v)\mathbf1$ for all $v$, so the abstract and component forms are visibly the same condition.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/92 B Clifford Algebras and Lie Groups/B.01.02 Dimension and Structure.md
+priority: low
+graph: no
+manim: no
+summary: Correct and unusually rigorous for a QFT appendix; the independence proof via the exterior algebra is sound but dense.
+- [Example] Show the $d=2$ multiplication table of $\mathbf1,\gamma^1,\gamma^2,\gamma^{12}$ (e.g. $(\gamma^{12})^2=-\mathbf1$ in Euclidean signature, so $\operatorname{Cl}(2,0)\supset\mathbb C$) to make the abstract basis concrete.
+- [Simplify] Mark the exterior-algebra independence argument as an optional proof (a collapsible callout), since most QFT readers only need the counting $\sum_k\binom dk=2^d$.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/92 B Clifford Algebras and Lie Groups/B.01.03 Chiral Volume Element.md
+priority: low
+graph: no
+manim: no
+summary: Correct; the general phase $i^{d/2+q}$ and the formula $\omega^2=(-1)^{d(d-1)/2+q}$ check out, and the (B.4) sign correction matches (A.16).
+- [Example] Add the $d=2$ Euclidean case as a second check: $\Gamma=i\sigma_1\sigma_2=-\sigma_3$, which squares to $\mathbf1$ and anticommutes with $\sigma_1,\sigma_2$.
+- [Links] Link [[A.04.04 The Matrix γ⁵]] where (A.16) is cited, so the reader can compare the two definitions directly.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/92 B Clifford Algebras and Lie Groups/B.02 Gamma Matrices in Different Dimensions.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub with a helpful contraction-versus-trace distinction; no change needed.
+- [Structure] No change needed.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/92 B Clifford Algebras and Lie Groups/B.02.01 General Properties.md
+priority: low
+graph: no
+manim: no
+summary: Correct; (B.9)–(B.12) agree with (A.31)–(A.34), and the scope note on odd-dimensional traces with the $\operatorname{tr}(\sigma_1\sigma_2\sigma_3)=2i$ counterexample is accurate.
+- [Links] Point out that (B.9)–(B.12) are the slash-free forms of (A.31)–(A.34) and link [[A.04.06 Properties of Gamma Matrices]] to avoid two seemingly independent tables.
+- [Simplify] Write the chirality-conjugation proof of (B.17) as one equation, $\operatorname{tr}(\gamma^{\mu_1}\cdots\gamma^{\mu_{2k+1}})=\operatorname{tr}(\Gamma^2\gamma^{\mu_1}\cdots)=(-1)^{2k+1}\operatorname{tr}(\Gamma\gamma^{\mu_1}\cdots\Gamma)=-\operatorname{tr}(\cdots)$.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/92 B Clifford Algebras and Lie Groups/B.02.02 Identities in Four Dimensions.md
+priority: low
+graph: no
+manim: no
+summary: Correct and well checked; it duplicates content of A.04.06 and A.04.07.
+- [Links] Link [[A.04.06 Properties of Gamma Matrices]] and [[A.04.07 Trace Identities]], which contain the same identities with equation numbers (A.27)–(A.30) and (A.38)–(A.40).
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/92 B Clifford Algebras and Lie Groups/B.02.03 Representations in Low Dimensions.md
+priority: medium
+graph: no
+manim: no
+summary: Matrices and both corrections are correct, but the retained source Table B.1 is admittedly inconsistent and the note spends much text disclaiming it.
+- [Structure] Replace or supplement Table B.1 with a self-consistent table that separates the Dirac (full Clifford module) complex dimension $2^{\lfloor d/2\rfloor}$, the Weyl dimension (even $d$), and whether Majorana or Majorana–Weyl conditions exist for the stated signature (e.g. from Van Proeyen Table 3), so the reader does not need the caveat paragraphs.
+- [Simplify] With a consistent table, the "Scope of the source table" callout and the last paragraph can shrink to one sentence noting where the source differed.
+- [Example] Add the explicit check that the Weyl basis (B.28) gives $\gamma^5=i\gamma^0\gamma^1\gamma^2\gamma^3=\operatorname{diag}(-\mathbf1,\mathbf1)$, consistent with the left/right assignment in B.03.02.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/92 B Clifford Algebras and Lie Groups/B.03 Spinor Representations.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub that distinguishes linear (chirality) and antilinear (Majorana) restrictions; no change needed.
+- [Structure] No change needed; the subnotes B.03.02 and B.03.03 could be linked by name here as well.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/92 B Clifford Algebras and Lie Groups/B.03.01 Dirac Spinors.md
+priority: low
+graph: no
+manim: no
+summary: Correct; essentially duplicates A.05.01 with a slightly fuller invariance argument.
+- [Links] Link [[A.05.01 Dirac Adjoint]], which defines the same adjoint as (A.46), to avoid parallel explanations drifting apart.
+- [Simplify] Show the key identity $S^\dagger\gamma^0=\gamma^0S^{-1}$ for $S=\exp(-\tfrac i4\omega_{\mu\nu}\sigma^{\mu\nu})$ from $\gamma^0(\sigma^{\mu\nu})^\dagger\gamma^0=\sigma^{\mu\nu}$, which is the actual reason the cancellation works.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/92 B Clifford Algebras and Lie Groups/B.03.02 Chiral Projectors.md
+priority: low
+graph: no
+manim: no
+summary: Correct and adds the useful argument that $\gamma^5$ commutes with Lorentz generators; overlaps A.05.06.
+- [Links] Link [[A.05.06 Chiral Projectors]] (same projectors, (A.56)) to avoid duplicated content.
+- [Simplify] Show the commutation step explicitly: $[\gamma^5,\gamma^\mu\gamma^\nu]=\{\gamma^5,\gamma^\mu\}\gamma^\nu-\gamma^\mu\{\gamma^5,\gamma^\nu\}=0$, hence $[\gamma^5,\sigma^{\mu\nu}]=0$.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/92 B Clifford Algebras and Lie Groups/B.03.03 Majorana Spinors.md
+priority: low
+graph: no
+manim: no
+summary: Correct; the Dirac-basis check $B=i\gamma^2$, real with $BB^*=\mathbf1$, verifies, and (B.33) is equivalent to (A.42) because $C^{-1}=-C$.
+- [Example] Give the explicit Majorana basis in which all $\gamma^\mu$ are purely imaginary (so the Dirac operator $i\not\partial-m$ is real and $\psi^*=\psi$ is a consistent condition); it makes "four real components" concrete.
+- [Simplify] Note in one line that (B.33) and (A.42) are written differently ($C\gamma^\mu C^{-1}$ versus $C(\gamma^\mu)^TC^{-1}$) and are equivalent only because $C^{-1}=-C$ here, so readers comparing the two notes are not confused.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/92 B Clifford Algebras and Lie Groups/B.03.04 Weyl–Majorana Spinors.md
+priority: low
+graph: no
+manim: no
+summary: Correct statement ($d\equiv2\bmod8$, $2^{d/2-1}$ real components) with a clear two-step logic and counting check.
+- [Intuition] Add one sentence on why $d=10$ matters physically (the Majorana–Weyl gravitino and gaugino of type I and heterotic superstrings) to motivate the otherwise abstract condition.
+- [Example] Make the $d=2$ case concrete: with $\gamma^0=\sigma_2$, $\gamma^1=i\sigma_1$ (purely imaginary Majorana basis), $\gamma^5\propto\sigma_3$ is real, so a real one-component left-mover exists.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/92 B Clifford Algebras and Lie Groups/B.03.05 Fierz Identities.md
+priority: medium
+graph: no
+manim: no
+summary: The corrected scalar Fierz identity (B.36) and the chiral identity (B.35) are right, but (B.34) stays schematic and the derivation is described rather than shown.
+- [Example] Work out one coefficient explicitly with the completeness relation, e.g. derive the $\tfrac14(\bar ux)(\bar wv)$ term of (B.36) by inserting $\delta_{\alpha\beta}\delta_{\gamma\delta}=\tfrac14\sum_A(E_A)_{\alpha\delta}(E^A)_{\gamma\beta}$, so the reader sees the method once in full.
+- [Structure] Present the standard $5\times5$ Fierz matrix for the basis $(S,V,T,A,P)$ as a table, since (B.36) is only its first row and readers usually need the others (e.g. $V\pm A$ rows).
+- [Intuition] Add the physical application that motivates (B.35): rewriting the charged-current muon-decay operator $(\bar\nu_\mu\gamma^\mu P_L\mu)(\bar e\gamma_\mu P_L\nu_e)$ into charge-retention order.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/92 B Clifford Algebras and Lie Groups/B.04 Lie Groups - Definition and Examples.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub with a useful dimension-versus-rank-versus-matrix-size distinction; no change needed.
+- [Structure] No change needed.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/92 B Clifford Algebras and Lie Groups/B.04.01 Definition.md
+priority: low
+graph: no
+manim: no
+summary: Correct and carefully scoped definition; the proof of the equivalence is stated only in words.
+- [Simplify] Write the equivalence proof as formulas: $h\mapsto h^{-1}$ is $h\mapsto\mu(e,h)$ and $(g,h)\mapsto gh=\mu(g,h^{-1})$ with $\mu(g,h)=gh^{-1}$.
+- [Example] Add $SU(2)\cong S^3$ (via $a\mathbf1+i\mathbf b\cdot\boldsymbol\sigma$ with $a^2+|\mathbf b|^2=1$) as a concrete compact example where dimension three and rank one are both visible.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/92 B Clifford Algebras and Lie Groups/B.04.02 Basic Examples.md
+priority: low
+graph: no
+manim: no
+summary: Correct; dimensions in Table B.2 and the near-identity counting are right, and the real/complex dimension correction is appropriate.
+- [Example] Add the physically relevant checks $\dim SO(1,3)=6$ (three rotations, three boosts) and $\dim SU(3)=8$ (gluons) right after the counting paragraph.
+- [Simplify] State the defining conditions as formulas in each section ($O^TO=\mathbf1$, $U^\dagger U=\mathbf1$, $\Lambda^Tg\Lambda=g$, $M^T\Omega M=\Omega$ with $M$ unitary for $USp(2n)$), which the note currently gives only for the infinitesimal versions.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/92 B Clifford Algebras and Lie Groups/B.05 Lie Algebras.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub with a correct $SU(2)$ checkpoint ($f^{abc}=\epsilon^{abc}$, $C_2(F)=3/4$); no change needed.
+- [Structure] No change needed.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/92 B Clifford Algebras and Lie Groups/B.05.01 The Lie Algebra Associated with a Lie Group.md
+priority: low
+graph: no
+manim: yes
+summary: Correct; the group-commutator expansion is a good intuition for the bracket.
+- [Manim] Animate two small rotations of a sphere about $x$ and $y$ applied in the sequence $e^{tX}e^{sY}e^{-tX}e^{-sY}$, showing that a marked point does not return but is displaced by a small rotation about $z$ of angle $\approx ts$, which is exactly $[X,Y]\propto Z$.
+- [Example] Add the explicit $\mathfrak{so}(3)$ example: $(L_i)_{jk}=-\epsilon_{ijk}$ and $[L_1,L_2]=L_3$, so the abstract bracket is seen in a familiar case.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/92 B Clifford Algebras and Lie Groups/B.05.02 Generators and Structure Constants.md
+priority: low
+graph: no
+manim: no
+summary: Correct; the rescaling behaviour $f\to cf$ and the $SU(2)$ check are right.
+- [Simplify] Show the derivation of (B.41) explicitly for the first term: $[T^a,[T^b,T^c]]=if^{bce}[T^a,T^e]=-f^{bce}f^{aed}T^d$, then relabel, rather than describing the steps in words.
+- [Example] Give the $\mathfrak{su}(3)$ structure constants $f^{123}=1$, $f^{147}=\tfrac12$, $f^{458}=\tfrac{\sqrt3}2$ as a second example, linking [[B.06.02 SU(3) - Gell-Mann Matrices and Casimir Operators]].
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/92 B Clifford Algebras and Lie Groups/B.05.03 Adjoint Representation.md
+priority: low
+graph: no
+manim: no
+summary: Correct; the derivation of the index order in (B.42) and the Abelian boundary case are good.
+- [Example] Write out the $SU(2)$ adjoint matrices, $(T^a_{\mathrm{adj}})_{bc}=-i\epsilon^{abc}$, e.g. $T^3_{\mathrm{adj}}$ as an explicit $3\times3$ matrix, and note its eigenvalues $-1,0,1$ (spin one).
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/92 B Clifford Algebras and Lie Groups/B.05.04 Killing Form.md
+priority: low
+graph: no
+manim: no
+summary: Correct, with a careful sign discussion; the $\mathfrak{su}(2)$ check $f^{acd}f^{bcd}=2\delta^{ab}$ verifies.
+- [Simplify] Show directly that $K_{ab}=\operatorname{Tr}(T^a_{\mathrm{adj}}T^b_{\mathrm{adj}})=f^{acd}f^{bcd}$ from (B.42), which makes the statement $T(A)=C_2(A)$ and the link between (B.43) and (B.44) one line instead of "up to normalization".
+- [Structure] The Dynkin index material is unrelated to the Killing-form title; either retitle the note or move (B.44) and $T(F)$, $T(A)$ to [[B.05.05 Casimir Operators]], where (B.47) uses them.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/92 B Clifford Algebras and Lie Groups/B.05.05 Casimir Operators.md
+priority: low
+graph: no
+manim: no
+summary: Correct and well checked; (B.47) and the $SU(2)$ fundamental and adjoint tests verify.
+- [Intuition] Add the angular-momentum link: for $SU(2)$, $C_2(j)=j(j+1)$, so the fundamental ($j=1/2$) gives $3/4$ and the adjoint ($j=1$) gives $2$, connecting the abstract Casimir to the familiar $\mathbf J^2$.
+- [Simplify] The closing "Identify why..." exercise could be answered in one sentence, since the note is a reference rather than a problem sheet.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/92 B Clifford Algebras and Lie Groups/B.06 SU(N) - Generators in the Fundamental Representation.md
+priority: low
+graph: no
+manim: no
+summary: Correct; (B.49)–(B.51) and the completeness-based derivation of $C_2(F)$ all verify.
+- [Example] Add the QCD values $C_F=4/3$, $C_A=3$, $T_F=1/2$ as a displayed line (the text mentions $4/3$ only in passing), since these are the numbers readers look up.
+- [Intuition] Illustrate (B.49) with the standard double-line (color-flow) picture: a gluon behaves like a quark–antiquark color pair, with the $-1/N$ term removing the color singlet.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/92 B Clifford Algebras and Lie Groups/B.06.01 SU(2) - Pauli Matrices and Representation Theory.md
+priority: low
+graph: no
+manim: no
+summary: Correct and complete reference; the ladder-endpoint argument and the $\tfrac12\otimes\tfrac12$ check are good.
+- [Simplify] Show the ladder-coefficient derivation as one line, $\|J^+|j,m\rangle\|^2=\langle j,m|J^-J^+|j,m\rangle=j(j+1)-m(m+1)$, instead of describing it in prose.
+- [Example] Write out the $\tfrac12\otimes\tfrac12$ states explicitly ($|1,1\rangle=|{\uparrow\uparrow}\rangle$, $|1,0\rangle=(|{\uparrow\downarrow}\rangle+|{\downarrow\uparrow}\rangle)/\sqrt2$, $|0,0\rangle=(|{\uparrow\downarrow}\rangle-|{\downarrow\uparrow}\rangle)/\sqrt2$) so the Clebsch–Gordan definition (B.62) has a concrete instance.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/92 B Clifford Algebras and Lie Groups/B.06.02 SU(3) - Gell-Mann Matrices and Casimir Operators.md
+priority: low
+graph: yes
+manim: no
+summary: Correct; the $f^{abc}$ and $d^{abc}$ tables, the completeness relation (B.67) and Table B.4 ($C_2$ and $T$ for $\mathbf6$ and $\mathbf{10}$) all verify.
+- [Graph] Add a 2D weight diagram in the $(T^3,\sqrt3\,T^8)$ plane (isospin versus hypercharge-like axis) for $\mathbf3$, $\bar{\mathbf3}$ and $\mathbf8$, plotted as points with the eigenvalues of $T^3$ and $T^8$, to make rank two and the representation labels visual.
+- [Simplify] Give the general Casimir formula $C_2(p,q)=\tfrac13(p^2+q^2+pq)+p+q$ and dimension $\tfrac12(p+1)(q+1)(p+q+2)$ so Table B.4 entries can be reproduced rather than only checked via (B.47).
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/92 B Clifford Algebras and Lie Groups/B.07 Useful Identities for SU(N) - Fierz Identities and Color Factors.md
+priority: low
+graph: no
+manim: no
+summary: Clear hub with a correct worked trace example; no change needed.
+- [Structure] No change needed.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/92 B Clifford Algebras and Lie Groups/B.07.01 Basic Algebraic Identities.md
+priority: low
+graph: no
+manim: no
+summary: Correct; (B.68)–(B.73) verify and the sandwich derivation from completeness is clear.
+- [Intuition] Mention where (B.72) appears physically: the color factor $-1/(2N)=C_F-C_A/2$ of the non-Abelian vertex correction, which explains why the combination $C_F-C_A/2$ is worth tabulating.
+- [Example] Add the companion identity $f^{abc}T^bT^c=\tfrac i2C_A T^a$, which is used together with (B.72) in one-loop vertex color algebra.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/92 B Clifford Algebras and Lie Groups/B.07.02 Fierz Identities for SU(N).md
+priority: low
+graph: no
+manim: no
+summary: Correct color Fierz identity (B.74)/(B.75) with a good trace check; the vertex list (B.76)–(B.78) is schematic and properly flagged.
+- [Intuition] Add the color-flow (double-line) diagram for (B.74): a gluon exchange equals a crossed pair of quark color lines minus $1/N$ times the uncrossed pair, which is the standard picture for this identity.
+- [Links] Link the full vertex rules in [[C.05.01 Quark–Gluon Vertex]], [[C.05.02 Three-Gluon Vertex]] and [[C.05.03 Four-Gluon Vertex]] next to the schematic (B.76)–(B.78).
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/92 B Clifford Algebras and Lie Groups/B.07.03 Sums over Internal Color States.md
+priority: low
+graph: no
+manim: no
+summary: Correct; the $SU(3)$ values $4$ and $24$ and the averaging rules are right.
+- [Example] Add one complete color factor for a real process, e.g. $q\bar q\to q'\bar q'$ via one gluon: $\frac1{N^2}\sum|T^a_{ji}T^a_{kl}|^2=\frac{N^2-1}{4N^2}=\frac29$ for $N=3$, to show sum and average combined.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/92 B Clifford Algebras and Lie Groups/B.08 The Lorentz Group SO(1, 3) and Its Universal Cover SL(2, ℂ).md
+priority: low
+graph: no
+manim: no
+summary: Clear hub with an accurate scope note on the identity component; no change needed.
+- [Structure] No change needed.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/92 B Clifford Algebras and Lie Groups/B.08.01 Lorentz Algebra.md
+priority: low
+graph: no
+manim: yes
+summary: Correct; the corrected (B.85) reproduces (B.82)–(B.84) (e.g. $[M^{01},M^{02}]=-iM^{12}$), and the matrix check of the boost sign works.
+- [Manim] Animate two successive non-collinear boosts applied to a frame in the $(x,y)$ plane (velocity addition), showing that the composition equals a boost plus a Wigner (Thomas) rotation, which is the finite-group counterpart of (B.84).
+- [Example] Give the explicit $4\times4$ matrices of $K^1$ and $J^3$ in the vector representation, $(M^{\mu\nu})^\alpha{}_\beta=i(g^{\mu\alpha}\delta^\nu_\beta-g^{\nu\alpha}\delta^\mu_\beta)$, so the reader can relate the $E_{ab}$ check to the covariant formula.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/92 B Clifford Algebras and Lie Groups/B.08.02 Decomposition into su(2) ⊕ su(2).md
+priority: low
+graph: no
+manim: no
+summary: Correct and carefully qualified (complexification, spin content of the Rarita–Schwinger sector); the derivation of (B.87)–(B.89) is described rather than shown.
+- [Simplify] Display the one-line computation $[A^i,A^j]=\tfrac14(2i\epsilon^{ijk}J^k-2\epsilon^{ijk}K^k)=i\epsilon^{ijk}A^k$ instead of describing which signs cancel.
+- [Intuition] State which chirality corresponds to which algebra explicitly, e.g. in the left-Weyl block of B.08.04 $K=-iJ$ so $B^i=0$ and $A^i=\sigma^i/2$, confirming the $(\tfrac12,0)$ label.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/92 B Clifford Algebras and Lie Groups/B.08.03 The Universal Cover SL(2, ℂ).md
+priority: low
+graph: no
+manim: yes
+summary: Correct; the index conventions in (B.92) are consistent ($\epsilon^{\alpha\beta}\epsilon_{\beta\gamma}=\delta^\alpha_\gamma$) and the covering-map construction is clear.
+- [Manim] Animate the spinor sign under rotation: a rotation angle $\theta$ running from $0$ to $4\pi$ with the vector image $SHS^\dagger$ returning at $2\pi$ while the matrix $S=e^{-i\theta\sigma_3/2}$ reaches $-\mathbf1$ at $2\pi$ and $+\mathbf1$ only at $4\pi$ (optionally with the Dirac belt picture).
+- [Simplify] Write the standard index positions first ($A_{\alpha\dot\alpha}=A_\mu(\sigma^\mu)_{\alpha\dot\alpha}$, $A^{\dot\alpha\alpha}=A_\mu(\bar\sigma^\mu)^{\dot\alpha\alpha}$) before (B.93); its current form with both indices raised on $\sigma^\mu$ is correct but needs the extra paragraph to be understood.
+- [Example] Give the explicit rotation $S=e^{-i\theta\sigma_3/2}$ acting on $H=a^\mu\sigma_\mu$ and show it rotates $(a^1,a^2)$ by $\theta$, making the covering map tangible.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/92 B Clifford Algebras and Lie Groups/B.08.04 Generators in the Spinor Representation.md
+priority: low
+graph: no
+manim: no
+summary: Correct; the explicit blocks $\sigma^{ij}=\tfrac12\epsilon^{ijk}\sigma^k$, $\sigma^{0i}=-\tfrac i2\sigma^i$, $\bar\sigma^{0i}=+\tfrac i2\sigma^i$ verify from (B.94)/(B.95).
+- [Example] Add the finite transformations $\psi_L\to e^{(-i\boldsymbol\theta-\boldsymbol\eta)\cdot\boldsymbol\sigma/2}\psi_L$ and $\psi_R\to e^{(-i\boldsymbol\theta+\boldsymbol\eta)\cdot\boldsymbol\sigma/2}\psi_R$ for rotation angle $\boldsymbol\theta$ and rapidity $\boldsymbol\eta$, which is the form most readers will use.
+- [Links] Link [[A.04.05 Antisymmetric Spin Tensor]] and [[B.08.05 Lorentz Algebra in the Dirac Representation]] to show these are the Weyl blocks of $\tfrac12\sigma^{\mu\nu}$.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/92 B Clifford Algebras and Lie Groups/B.08.05 Lorentz Algebra in the Dirac Representation.md
+priority: low
+graph: no
+manim: no
+summary: Correct; the $2\pi$/$4\pi$ check and the explanation of the inverse field argument are good.
+- [Simplify] Show the block-diagonal form of (B.96) in the Weyl basis explicitly, $S^{\mu\nu}=\operatorname{diag}(\sigma^{\mu\nu},\bar\sigma^{\mu\nu})$, rather than asserting it, and state the key identity $[S^{\mu\nu},\gamma^\rho]=(\mathcal J^{\mu\nu})^\rho{}_\sigma\gamma^\sigma$ that makes $\bar\psi\gamma^\mu\psi$ a vector.
+- [Links] Note that $S^{\mu\nu}=\tfrac12\sigma^{\mu\nu}$ with $\sigma^{\mu\nu}$ from [[A.04.05 Antisymmetric Spin Tensor]], to connect the two appendices.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/93 C Feynman Rules of the Standard Model/C.01 General Conventions.md
+priority: low
+graph: no
+manim: no
+summary: A clear and correct convention page; the momentum, symmetry-factor, loop-sign and factor-of-i rules are right, but the sign convention that fixes all vertex signs is never written down explicitly.
+- [Structure] State the covariant-derivative convention that all later vertices assume, e.g. $D_\mu=\partial_\mu-i\electric{e}\electric{Q}A_\mu-i\signal{g}T^aW^a_\mu-i\signal{g}'YB_\mu-i\signal{g}_sT^aG^a_\mu$ (equivalently Romão–Silva $\eta=-1$). This matches (C.13), (C.14)–(C.16), (C.33), (C.34) and the corrected TGC signs, and matches $D_\mu=\partial_\mu+i\electric{e}A_\mu$ with $-i\electric{e}\gamma^\mu$ for the electron in 08.01.02/08.02. One line here would make the C.04.04 convention note self-explanatory.
+- [Links] The sentence that the source values agree with PDG 2024 should point to C.06 and warn that several C.06 entries are PDG 2022 values (see the C.06 block). Otherwise the reader gets a misleading provenance statement.
+- [Example] Add a short worked use of the rules, e.g. tree-level $e^+e^-\to\mu^+\mu^-$ via photon: all-incoming momenta, two vertices (C.13), one propagator (C.2) at $\xi=1$, the outgoing-momentum sign flip, and $S=1$. This illustrates the "How to use" paragraph.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/93 C Feynman Rules of the Standard Model/C.02 Propagators.md
+priority: low
+graph: no
+manim: no
+summary: A short, correct hub that explains the role of propagators and points to the four subnotes.
+- [Structure] No change needed beyond optionally adding a one-line summary table (line type, numerator, pole position at general $\xi$) so the reader can see at a glance that the vector, Goldstone and ghost poles at $\xi\mechanical{m}^2$ belong together.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/93 C Feynman Rules of the Standard Model/C.02.01 Bosonic Propagators.md
+priority: low
+graph: no
+manim: no
+summary: Correct Rξ propagators (C.1)–(C.5) with useful gauge and dimension checks; the prose is dense but accurate.
+- [Intuition] In "Gauge and dimension checks", add the unitary limit explicitly: $\xi\to\infty$ in (C.3) gives $-i[g^{\mu\nu}-\mechanical{p}^\mu\mechanical{p}^\nu/\mechanical{m}_W^2]/(\mechanical{p}^2-\mechanical{m}_W^2)$. This shows the bad high-energy behavior of the longitudinal term that motivates the Rξ gauge and is listed in C.01 but never shown.
+- [Simplify] Split the vector propagator into transverse and longitudinal projectors: $-i\left[\frac{g^{\mu\nu}-p^\mu p^\nu/p^2}{p^2-m^2}+\frac{\xi\,p^\mu p^\nu/p^2}{p^2-\xi m^2}\right]$. This makes the two poles (physical $m^2$ and gauge-dependent $\xi m^2$) and the link to the Goldstone/ghost poles visible in one line.
+- [Links] Link the gauge-dependent pole at $\xi\mechanical{m}_{W,Z}^2$ to [[C.02.03 Goldstone Boson Propagators]] and [[C.02.02 Faddeev–Popov Ghost Propagators]], where the same poles appear.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/93 C Feynman Rules of the Standard Model/C.02.02 Faddeev–Popov Ghost Propagators.md
+priority: low
+graph: no
+manim: no
+summary: Correct ghost propagators (C.6)–(C.9) with an accurate correction of the source's photon-ghost color indices.
+- [Intuition] Add one sentence on why the ghost and Goldstone masses equal $\sqrt{\xi}\mechanical{m}_{W,Z}$: both come from the same 't Hooft gauge-fixing function $\partial^\mu W_\mu-\xi\mechanical{m}_W\phi$, whose BRST variation gives the ghost mass term. This turns the stated coincidence into a reason.
+- [Links] Link the ghost–gluon interaction in [[C.05.04 Ghost–Gluon Vertex]] next to (C.7), and state that the electroweak ghost vertices are not listed in this appendix (C.01 already warns about this).
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/93 C Feynman Rules of the Standard Model/C.02.03 Goldstone Boson Propagators.md
+priority: low
+graph: no
+manim: no
+summary: Correct and carefully caveated; the gauge dependence of the Goldstone poles is well explained.
+- [Intuition] Mention the Goldstone-boson equivalence theorem in one sentence: at energies $E\gg\mechanical{m}_W$ the amplitude for a longitudinal W or Z equals, up to a phase, the amplitude with the corresponding Goldstone. This is the main practical reason to keep these fields.
+- [Structure] The note says that Goldstone vertices are needed but none are listed in this appendix. Add a pointer to where they can be found (e.g. Romão–Silva section 5) so that the propagators are usable.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/93 C Feynman Rules of the Standard Model/C.02.04 Fermionic Propagators.md
+priority: low
+graph: no
+manim: no
+summary: Correct Dirac propagator (C.12) with sound remarks on momentum routing and the Majorana case.
+- [Simplify] (C.12) mixes $+i\varepsilon$ and $+i0$ for the same prescription. Use one notation, consistent with C.02.
+- [Example] Show the explicit check $(\not{\mechanical{p}}-\mechanical{m}_f)(\not{\mechanical{p}}+\mechanical{m}_f)=\mechanical{p}^2-\mechanical{m}_f^2$ as a one-line equation instead of only describing it in prose.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/93 C Feynman Rules of the Standard Model/C.03 Electromagnetic Interaction Vertices.md
+priority: low
+graph: no
+manim: no
+summary: The vertex (C.13) and charge table are correct and consistent with Chapter 8 ($-i\electric{e}\gamma^\mu$ for the electron).
+- [Structure] State the Lagrangian term behind the rule, $\mathcal{L}\supset+\electric{e}\electric{Q}_f\bar f\gamma^\mu fA_\mu$ (from $D_\mu=\partial_\mu-i\electric{e}\electric{Q}_fA_\mu$). This anchors the sign convention that the TGC correction in C.04.04 depends on.
+- [Simplify] Show the Ward check as an equation: $\bar u(\mechanical{p}')\,\mechanical{q}_\mu\gamma^\mu u(\mechanical{p})=0$ for $\mechanical{q}=\mechanical{p}'-\mechanical{p}$, instead of only describing it.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/93 C Feynman Rules of the Standard Model/C.04 Electroweak Interaction Vertices.md
+priority: low
+graph: no
+manim: no
+summary: A correct hub with the right tree-level relations $\signal{g}=\electric{e}/\sin\signal{\theta}_W$, $\signal{g}'=\electric{e}/\cos\signal{\theta}_W$, $\signal{v}=2\mechanical{m}_W/\signal{g}$.
+- [Links] The reading list omits [[C.04.03 Higgs–Fermion–Fermion Vertex]], [[C.04.06 Higgs–Gauge-Boson Vertices]] and [[C.04.07 Higgs Field Self-Interactions]]; add them instead of the generic "The Higgs vertices in this section" sentence.
+- [Intuition] Add the field rotation $Z=\cos\signal{\theta}_W W^3-\sin\signal{\theta}_W B$, $A=\sin\signal{\theta}_W W^3+\cos\signal{\theta}_W B$ and $W^\pm=(W^1\mp iW^2)/\sqrt2$. Every coefficient in C.04.01–C.04.05 follows from these three lines, and the sign of the TGC correction depends on them.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/93 C Feynman Rules of the Standard Model/C.04.01 Charged Currents (W–Fermion–Fermion Vertex).md
+priority: low
+graph: no
+manim: no
+summary: The vertices (C.14) and (C.15) are correct and consistent with (C.13); the PMNS statement is too vague to use.
+- [Simplify] Replace "include the PMNS matrix with the conjugation required" by the explicit rule: with $\nu_\ell=\sum_i\signal{U}_{\ell i}\nu_i$, the vertex $W^+_\mu\bar\nu_i\ell$ carries $\signal{U}_{\ell i}^*$ and $W^-_\mu\bar\ell\nu_i$ carries $\signal{U}_{\ell i}$. This parallels the CKM statement for quarks.
+- [Intuition] Add the low-energy check $\signal{G}_F/\sqrt2=\signal{g}^2/(8\mechanical{m}_W^2)$: two vertices (C.14) and the W propagator at $\mechanical{p}^2\ll\mechanical{m}_W^2$ give the Fermi interaction. This connects the vertex to the $\signal{G}_F$ entry in C.06.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/93 C Feynman Rules of the Standard Model/C.04.02 Neutral Current (Z–Fermion–Fermion Vertex).md
+priority: low
+graph: yes
+manim: no
+summary: The Z vertex (C.16)–(C.17) and its chiral decomposition are correct; a small coupling table and a graph would make the numbers tangible.
+- [Example] Add a table of $\signal{g}_V^f$ and $\signal{g}_A^f$ for $\nu,e,u,d$ at $\sin^2\signal{\theta}_W=0.2312$: $\signal{g}_V^\nu=0.5$, $\signal{g}_V^e\approx-0.038$, $\signal{g}_V^u\approx0.192$, $\signal{g}_V^d\approx-0.346$. The small electron vector coupling explains why the Z-pole forward–backward asymmetries are small.
+- [Graph] Plot $\signal{g}_V^f(\sin^2\signal{\theta}_W)=T_3^f-2\electric{Q}_f\sin^2\signal{\theta}_W$ for $\nu,e,u,d$ (four straight lines), with $\sin^2\signal{\theta}_W\in[0,0.5]$ on the x-axis and a vertical marker at 0.2312.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/93 C Feynman Rules of the Standard Model/C.04.03 Higgs–Fermion–Fermion Vertex.md
+priority: low
+graph: yes
+manim: no
+summary: The Yukawa vertex (C.18) is correct, and so is its equivalent form $\signal{g}\mechanical{m}_f/(2\mechanical{m}_W)$; numbers would show the hierarchy.
+- [Example] Add numerical values of $\mechanical{m}_f/\signal{v}$ from C.06: top $\approx0.70$, bottom $\approx0.017$, tau $\approx0.0072$, muon $\approx4.3\times10^{-4}$, electron $\approx2.1\times10^{-6}$. They show why Higgs production goes through top loops and why $h\to b\bar b$ dominates.
+- [Graph] Show a log-scale plot of $\mechanical{m}_f/\signal{v}$ (y-axis, $10^{-6}$ to 1) against fermion mass $\mechanical{m}_f$ (x-axis, log), with the straight line of slope 1 and the SM fermions marked as points.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/93 C Feynman Rules of the Standard Model/C.04.04 Triple Gauge Vertices (TGC).md
+priority: medium
+graph: no
+manim: no
+summary: The convention correction is right (I re-derived $-i\electric{e}\Gamma$ and $-i\signal{g}\cos\signal{\theta}_W\Gamma$ from the SU(2) cubic term with $D=\partial-i\signal{g}T^aW^a$), but the sign-incompatible source equations remain the numbered rules, which invites misuse.
+- [Structure] Make the corrected coefficients $-i\electric{e}\Gamma^{\mu\nu\rho}$ and $-i\signal{g}\cos\signal{\theta}_W\Gamma^{\mu\nu\rho}$ the numbered equations (C.19) and (C.20). Move the source's plus-sign forms into the note as "source form, opposite convention". At present, a reader who copies the numbered equation gets the wrong relative sign with (C.13)–(C.16).
+- [Intuition] Explain the sign in one line: with leg coefficients $C^1_\pm=1/\sqrt2$, $C^2_\pm=\pm i/\sqrt2$, $C^3=1$, one has $\sum\epsilon^{abc}C^a_+C^b_-C^c_3=-i$. The SU(2) analogue of the three-gluon rule (C.34), $\signal{g}\epsilon^{abc}\Gamma$, therefore becomes $-i\signal{g}\Gamma$ for $W^+W^-W^3$, and $W^3=\cos\signal{\theta}_WZ+\sin\signal{\theta}_WA$. This is clearer than the component check with $\Gamma^{001}$.
+- [Links] Link [[C.05.02 Three-Gluon Vertex]] as the same Yang–Mills tensor with $f^{abc}$, so that the reader sees the two rules are one structure.
+- [Simplify] The last paragraph's numerical component check ($\Gamma^{001}=1\,\unit{GeV}$) is hard to follow without the expanded Lagrangian. Either show the cubic Lagrangian term $-\signal{g}\epsilon^{abc}(\partial_\mu W^a_\nu)W^{b\mu}W^{c\nu}$ it is checked against or drop the paragraph in favor of the derivation above.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/93 C Feynman Rules of the Standard Model/C.04.05 Quartic Gauge Vertices (QGC).md
+priority: low
+graph: no
+manim: no
+summary: The quartic rules (C.23)–(C.26), including the corrected $+i\signal{g}^2$ for $W^+W^-W^+W^-$, are correct; I verified (C.26) from $\mathcal{L}_{4W}=\tfrac{\signal{g}^2}{2}[(W^+\cdot W^+)(W^-\cdot W^-)-(W^+\cdot W^-)^2]$.
+- [Simplify] Display the charged quartic Lagrangian $\tfrac{\signal{g}^2}{2}[(W^+\cdot W^+)(W^-\cdot W^-)-(W^+\cdot W^-)^2]$ in the correction note. Differentiating it in two lines gives (C.26) and makes the sign correction verifiable instead of asserted.
+- [Intuition] Note that the quartic signs depend only on $\signal{g}^2$ and are therefore independent of the covariant-derivative sign convention that changes the TGC signs in C.04.04. Readers comparing tables need this point.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/93 C Feynman Rules of the Standard Model/C.04.06 Higgs–Gauge-Boson Vertices.md
+priority: low
+graph: no
+manim: no
+summary: The vertices (C.27)–(C.30) and the explanation of the identical-field factors are correct.
+- [Simplify] Show the source term $\left(\mechanical{m}_W^2W^+_\mu W^{-\mu}+\tfrac12\mechanical{m}_Z^2Z_\mu Z^\mu\right)(1+\signal{h}/\signal{v})^2$ explicitly. All four rules then follow from it in one line each, which replaces the prose paragraph on factors of two.
+- [Example] Give the numbers $\signal{g}\mechanical{m}_W\approx52.5\,\unit{GeV}$ and $\signal{g}\mechanical{m}_Z/\cos\signal{\theta}_W\approx67.5\,\unit{GeV}$ (tree level, C.06 inputs), and the thresholds $2\mechanical{m}_W\approx160.7\,\unit{GeV}$ and $2\mechanical{m}_Z\approx182.4\,\unit{GeV}$ against $\mechanical{m}_h=125.2\,\unit{GeV}$, to make the off-shell statement concrete.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/93 C Feynman Rules of the Standard Model/C.04.07 Higgs Field Self-Interactions.md
+priority: low
+graph: yes
+manim: no
+summary: The rules (C.31)–(C.32) and the reconstruction of the cubic and quartic coefficients are correct.
+- [Example] Add the numbers: $\signal{\lambda}=\mechanical{m}_h^2/(2\signal{v}^2)\approx0.129$, $|hhh|=3\mechanical{m}_h^2/\signal{v}\approx191\,\unit{GeV}$, $|hhhh|=3\mechanical{m}_h^2/\signal{v}^2\approx0.78$. Mention that the trilinear coupling is probed via $hh$ production.
+- [Simplify] Write the expanded potential explicitly, $\energy{V}=\tfrac12\mechanical{m}_h^2\signal{h}^2+\frac{\mechanical{m}_h^2}{2\signal{v}}\signal{h}^3+\frac{\mechanical{m}_h^2}{8\signal{v}^2}\signal{h}^4+\text{const}$, instead of describing the coefficients in prose.
+- [Graph] Plot $\energy{V}(\signal{h})-\energy{V}(0)$ along the vacuum direction for $\signal{h}/\signal{v}\in[-2.2,1]$ together with its quadratic approximation $\tfrac12\mechanical{m}_h^2\signal{h}^2$. The asymmetry shows the cubic term and the second minimum at $\signal{h}=-2\signal{v}$, which is the symmetric image of the vacuum.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/93 C Feynman Rules of the Standard Model/C.05 QCD Vertices.md
+priority: low
+graph: no
+manim: no
+summary: A correct hub for the SU(3) conventions; one sentence points to the wrong place.
+- [Structure] "The trace normalization below fixes how the strong coupling is defined" refers to a normalization that is displayed above that sentence. Change it to "above", and state the implied covariant derivative $D_\mu=\partial_\mu-i\signal{g}_sT^aG^a_\mu$. That is the convention for which (C.33), (C.34) and (C.36) have the signs shown (Peskin–Schroeder convention).
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/93 C Feynman Rules of the Standard Model/C.05.01 Quark–Gluon Vertex.md
+priority: low
+graph: no
+manim: no
+summary: The vertex (C.33) is correct and consistent in sign with (C.13) and (C.34).
+- [Example] Add the color-factor check $\sum_a(T^aT^a)_{ij}=C_F\delta_{ij}$ with $C_F=4/3$. It is the first thing one computes with two of these vertices on one line, and it can link to [[B.06.02 SU(3) - Gell-Mann Matrices and Casimir Operators]].
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/93 C Feynman Rules of the Standard Model/C.05.02 Three-Gluon Vertex.md
+priority: low
+graph: no
+manim: no
+summary: The rule (C.34) is correct (it matches the direct derivation from $-\signal{g}_sf^{abc}(\partial_\mu G^a_\nu)G^{b\mu}G^{c\nu}$ with $D=\partial-i\signal{g}_sT^aG^a$), and the Bose-symmetry check is well explained.
+- [Intuition] Explain why the rule has no explicit factor $i$: the factor $i$ from the vertex and the factor $-i$ from each derivative acting on an incoming plane wave cancel. Readers otherwise suspect a missing $i$ next to the other rules.
+- [Links] Point to [[C.04.04 Triple Gauge Vertices (TGC)]] as the electroweak analogue with the same tensor (C.21).
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/93 C Feynman Rules of the Standard Model/C.05.03 Four-Gluon Vertex.md
+priority: low
+graph: no
+manim: no
+summary: The rule (C.35) is correct (Peskin–Schroeder form) and clearly explained.
+- [Simplify] No change needed; optionally show the source term $-\tfrac14\signal{g}_s^2f^{abe}f^{cde}G^a_\mu G^b_\nu G^{c\mu}G^{d\nu}$ so that the three color pairings can be traced back to it.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/93 C Feynman Rules of the Standard Model/C.05.04 Ghost–Gluon Vertex.md
+priority: low
+graph: no
+manim: no
+summary: The rule (C.36) is correct; with outgoing ghost $b$, gluon $c$ and incoming ghost $a$, $f^{abc}=f^{bca}$ reproduces Peskin's $-\signal{g}f^{abc}p^\mu$ ordering (out, gluon, in).
+- [Simplify] Show the ghost Lagrangian $\bar c^a(-\partial^\mu D_\mu^{ac})c^c$ with $D_\mu^{ac}=\partial_\mu\delta^{ac}+\signal{g}_sf^{abc}G^b_\mu$. One line explains why only the antighost (outgoing) momentum appears, which the second paragraph now explains only in words.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/01 Quantum Field Theory/93 C Feynman Rules of the Standard Model/C.06 Coupling Constants and Numerical Values.md
+priority: medium
+graph: yes
+manim: no
+summary: The scheme caveats and the relations (C.37)–(C.38) are good, but several table entries labelled "Review of Particle Physics 2024" are actually PDG 2022 values.
+- [Correctness] The table claims PDG 2024, but $\signal{\alpha}_s(\mechanical{m}_Z)=0.1179$, $\sin^2\hat{\signal{\theta}}_W(\mechanical{m}_Z)=0.2312$ and $\mechanical{m}_\tau=1.77686\,\unit{GeV}$ are PDG 2022 numbers. PDG 2024 gives $0.1180(9)$, $0.23129(4)$ (rounds to $0.2313$) and $1.77693\,\unit{GeV}$. Either update them (and the "$0.2232$ vs $0.2312$" sentence) or relabel the table as the source's 2022-era inputs. Also check against the PDG 2026 edition, which should be out by now.
+- [Correctness] The row $\electric{\alpha}^{-1}(\mechanical{m}_Z)=127.95$ is the PDG 2022 $\overline{\text{MS}}$ value $127.951$. The PDG 2024 electroweak review (Sec. 10.2) gives $\hat\alpha^{(5)}(\mechanical{m}_Z)^{-1}=127.930\pm0.008$. The comment column should also name the $\overline{\text{MS}}$ scheme, because the on-shell $\alpha(\mechanical{m}_Z)^{-1}\approx128.9$ differs by about one unit.
+- [Graph] Plot the one-loop running $\signal{\alpha}_s(Q)=\signal{\alpha}_s(\mechanical{m}_Z)/[1+\tfrac{\beta_0}{4\pi}\signal{\alpha}_s(\mechanical{m}_Z)\ln(Q^2/\mechanical{m}_Z^2)]$ with $\beta_0=23/3$ ($n_f=5$), for $Q\in[5,1000]\,\unit{GeV}$ on a log axis, and optionally $\electric{\alpha}^{-1}(Q)$ on a second axis. This makes the "use couplings at their stated scale" warning concrete.
+- [Example] Add the derived tree-level couplings as a worked check: $\signal{g}=2\mechanical{m}_W/\signal{v}\approx0.653$, $\electric{e}=\sqrt{4\pi\electric{\alpha}(\mechanical{m}_Z)}\approx0.313$, $\signal{g}_s=\sqrt{4\pi\signal{\alpha}_s}\approx1.22$, $\signal{\lambda}\approx0.129$. Show that $\electric{e}/\sqrt{\sin^2\hat{\signal{\theta}}_W}\approx0.652$ agrees with $\signal{g}$ only to scheme accuracy.
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/00 Front matter/Preface.md
+priority: low
+graph: no
+manim: no
+summary: Faithful transcription of the 1987 preface; clear and needs no rewrite.
+- [Structure] The file starts with a UTF-8 BOM and uses CRLF line endings (committed as i/crlf); the vault rule is UTF-8 without BOM and LF, so re-save it (the same applies to every note in this batch).
+- [Intuition] Add a one-line callout that "ten years ago" and "the last decade" refer to roughly 1977 to 1987 (first edition), so readers do not read the dated claims as current.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/00 Front matter/Title and Publication Details.md
+priority: low
+graph: no
+manim: no
+summary: Bibliographic front matter; no content changes needed.
+- [Structure] Remove the UTF-8 BOM and convert CRLF to LF; otherwise no change needed.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/00 Introduction/0.1 Elementary Particle Physics.md
+priority: low
+graph: no
+manim: no
+summary: Clear, readable overview of why particle physics needs quantum field theory, but some 1987 statements are now outdated.
+- [Correctness] "photons, neutrinos, and gluons are all (apparently) massless" is outdated: neutrino oscillations (Super-Kamiokande 1998, SNO 2001) prove that at least two neutrinos have mass (KATRIN direct bound $m_\nu<0.45\,\unit{eV}/c^2$); add a modern-status callout rather than changing the source text.
+- [Correctness] "Since 1978 ... it has met every experimental test" needs a note that neutrino masses require at least a minimal extension of the original Standard Model; the Higgs boson was found in 2012 ($125.2\,\unit{GeV}/c^2$).
+- [Example] In the paragraph on $\Delta\to p+\pi$, add the numbers: $m_\Delta\approx1232\,\unit{MeV}/c^2$ versus $m_p+m_\pi\approx1078\,\unit{MeV}/c^2$, so about $154\,\unit{MeV}$ of rest energy becomes kinetic energy.
+- [Structure] Remove the UTF-8 BOM and convert CRLF to LF.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/00 Introduction/0.2 How Do You Produce Elementary Particles -.md
+priority: medium
+graph: yes
+manim: no
+summary: Readable but contains dated facility and record claims and a vague statement about collider energy that a worked example would fix.
+- [Correctness] "At present, the heaviest known particle is the $Z^0$" is outdated: the top quark ($172.6\,\unit{GeV}/c^2$, PDG) and the Higgs boson ($125.2\,\unit{GeV}/c^2$) are heavier; add a modern-status callout.
+- [Correctness] "the particle gains enormously in energy if you collide two high-speed particles head-on" is misleading: what grows is the centre-of-mass (available) energy $\sqrt{s}$, not the particle's energy; reword the note's gloss or add a clarifying footnote.
+- [Example] Add the comparison for the SPS: a $450\,\unit{GeV}$ proton on a fixed proton target gives $\sqrt{s}\approx\sqrt{2m_pc^2E}\approx29\,\unit{GeV}$, while $450+450\,\unit{GeV}$ head-on gives $\sqrt{s}=900\,\unit{GeV}$.
+- [Graph] Log-log plot of $\sqrt{s}$ (GeV) against beam energy $E$ from 1 to $10^4\,\unit{GeV}$ for proton fixed target, $\sqrt{2m_pc^2E+2m_p^2c^4}$, and a symmetric collider, $2E$.
+- [Correctness] Fig. I.2 caption "LEP ... now under construction" is dated (LEP ran 1989 to 2000 up to about $104.5\,\unit{GeV}$ per beam; the LHC now runs in the same tunnel); flag it in a callout.
+- [Structure] Remove the UTF-8 BOM and convert CRLF to LF.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/00 Introduction/0.3 How Do You Detect Elementary Particles -.md
+priority: low
+graph: no
+manim: no
+summary: Short, clear description of track detectors; one figure cross-reference points to the wrong figure.
+- [Correctness] "the bubble chamber photograph in Fig. 1.11 ... five neutral particles" refers to the $\Omega^-$ discovery photograph, which is Fig. 1.10 in this vault (note 1.7); Fig. 1.11 there is the meson-nonet diagram. Change it to Fig. 1.10 and link it as [[1.7 The Eightfold Way (1961-1964)]].
+- [Example] After $R=pc/qB$ (Gaussian), add the practical form $p\,[\unit{GeV}/c]=0.3\,B\,[\unit{T}]\,R\,[\unit{m}]$ with a worked case (a $1\,\unit{GeV}/c$ track in $1.5\,\unit{T}$ has $R\approx2.2\,\unit{m}$).
+- [Structure] Remove the UTF-8 BOM and convert CRLF to LF.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/00 Introduction/0.4 Units.md
+priority: low
+graph: no
+manim: no
+summary: Clear and correct unit discussion; the charge-unit relation and natural-unit description check out.
+- [Example] Add a short conversion box for natural units: $\hbar c=197.327\,\unit{MeV\,fm}$, $\hbar=6.582\times10^{-22}\,\unit{MeV\,s}$, $1\,\unit{eV}=1.602176634\times10^{-19}\,\unit{J}$ (exact), with one worked conversion (for example $1/m_\pi\approx1.41\,\unit{fm}$).
+- [Simplify] Write $\alpha\approx1/137.036$ (CODATA) instead of the bare equality "$=1/137$", or mark it as approximate.
+- [Structure] Remove the UTF-8 BOM and convert CRLF to LF.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/00 Introduction/0.B References and Notes.md
+priority: low
+graph: no
+manim: no
+summary: Reference list from 1987; fine as a transcription.
+- [Links] Optionally add a modern-sources callout (PDG Review of Particle Physics, Griffiths 2nd ed. 2008) so readers can update the dated values found in Chapter 1; also remove the BOM and convert CRLF to LF.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/01 Historical Introduction to the Elementary Particles/1.1 The Classical Era (1897-1932).md
+priority: medium
+graph: yes
+manim: yes
+summary: Engaging folk history that is easy to read but gives no numbers or formulas for the two key experiments.
+- [Correctness] "In 1914 Niels Bohr proposed a model for hydrogen" — the Bohr model was published in 1913; add a footnote (the source text may keep 1914).
+- [Example] Add the Thomson crossed-field result: balance $qE=qvB/c$ gives $v=cE/B$, then deflection by $E$ alone gives $q/m$; quote the modern $e/m_e=5.273\times10^{17}\,\unit{esu/g}$.
+- [Graph] Plot the Rutherford angular distribution $\propto1/\sin^4(\theta/2)$ (log scale, $\theta$ from $5^\circ$ to $180^\circ$) next to the Gaussian small-angle falloff expected from a diffuse Thomson atom, to show why rare large-angle events point to a nucleus.
+- [Manim] Animate a fan of $\alpha$-particle trajectories with varying impact parameter past a point nucleus (hyperbolic orbits) versus nearly straight paths through a diffuse plum-pudding sphere.
+- [Structure] Remove the UTF-8 BOM and convert CRLF to LF.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/01 Historical Introduction to the Elementary Particles/1.10 Intermediate Vector Bosons (1983).md
+priority: medium
+graph: no
+manim: no
+summary: Clear narrative, but the quoted masses are 1983 values with no current comparison, and $c$ is coloured inconsistently with the introduction notes.
+- [Correctness] Add the current PDG values next to (1.30) and the 1983 measurements: $M_W=80.369\pm0.013\,\unit{GeV}/c^2$ and $M_Z=91.1880\pm0.0020\,\unit{GeV}/c^2$; the 1983 values $81\pm5$ and $95\pm3$ are historical only.
+- [Intuition] Give the weak range explicitly: $\hbar/(M_Wc)\approx197.3\,\unit{MeV\,fm}/80.4\,\unit{GeV}\approx2.5\times10^{-3}\,\unit{fm}$, which shows why Fermi's contact interaction works at low energy (compare with the Yukawa estimate in 1.3).
+- [Structure] Here and in 1.2–1.8, $c$ and $h$ are wrapped in `\mechanical{}`, while notes 0.1–0.4 leave them uncoloured; pick one convention for constants across the book.
+- [Links] The UA2 collaboration also reported the $W$ in January 1983; a short footnote would keep the history balanced. Remove the BOM and convert CRLF to LF.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/01 Historical Introduction to the Elementary Particles/1.11 The Standard Model (1978- - ).md
+priority: medium
+graph: yes
+manim: no
+summary: Tables are correct for Griffiths's sign conventions, but the state of knowledge is 1987, and one figure reference has no figure behind it.
+- [Correctness] Several statements are outdated and need a status callout: top quark discovered 1995 ($172.6\,\unit{GeV}/c^2$), $\nu_\tau$ observed directly 2000 (DONUT), a single Higgs boson found in 2012 ($125.2\,\unit{GeV}/c^2$), gluon evidence now compelling (PETRA three-jet events 1979, LEP), glueballs still not established.
+- [Correctness] The separate conservation of $L_e$, $L_\mu$, $L_\tau$ implied by the lepton table is violated by neutrino oscillations; only the total $L$ is conserved in the Standard Model with massive neutrinos (as far as is known).
+- [Correctness] The text cites "(Fig. 1.16)" for the generations mimicking each other, but only Fig. 1.15 is embedded and no fig-1-16 asset exists in `Attachements`; add the missing figure or fix the reference.
+- [Correctness] The physical-quantities table lists $\mechanical{m}$ (particle mass), which the note text never uses (it appears only in the figure); remove it or use it in the text.
+- [Graph] Log-scale strip plot of the 12 fermion masses by generation (PDG: $e$ 0.511 MeV, $\mu$ 105.7 MeV, $\tau$ 1776.9 MeV, $u\approx2.2$, $d\approx4.7$, $s\approx93$ MeV, $c\approx1.27$, $b\approx4.18$, $t\approx172.6$ GeV) to show the generation pattern behind Fig. 1.15. Also remove the BOM and convert CRLF to LF.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/01 Historical Introduction to the Elementary Particles/1.2 The Photon (1900-1924).md
+priority: medium
+graph: yes
+manim: no
+summary: Correct and readable; the Compton and photoelectric formulas would benefit from plots and one symbol is reused.
+- [Correctness] $\energy{E}$ means both the photon energy in (1.1) and the emitted electron's kinetic energy in (1.3), and the table lists $\energy{E}$ twice; write (1.3) as $\energy{K_{\max}}=\mechanical{h}\signal{\nu}-\energy{w}$ (or $\energy{E_e}$) to remove the clash.
+- [Graph] Plot the Compton shift $\Delta\lambda=\lambda_c(1-\cos\theta)$ for an electron ($\lambda_c=2.426\times10^{-10}\,\unit{cm}$) for $\theta$ from 0 to $\pi$, marking the maximum $2\lambda_c$ at backscatter.
+- [Graph] Plot $K_{\max}=h\nu-w$ against $\nu$ for two metals (for example $w=2.3\,\unit{eV}$ and $4.5\,\unit{eV}$): parallel lines with slope $h$ and different threshold frequencies, showing that intensity does not appear.
+- [Example] Evaluate (1.5) numerically for the electron and note that the shift matters only when $\lambda$ is comparable (X-rays), which explains why Compton needed X-rays. Remove the BOM and convert CRLF to LF.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/01 Historical Introduction to the Elementary Particles/1.3 Mesons (1934-1947).md
+priority: medium
+graph: yes
+manim: no
+summary: Clear story of the pion-muon confusion, but it skips the Yukawa mass estimate, and the footnote's force law is only approximate.
+- [Example] Show Yukawa's estimate: $mc^2\approx\hbar c/a$; with $a\approx1.4\,\unit{fm}$ this gives $\approx140\,\unit{MeV}$, matching $m_{\pi^\pm}=139.57\,\unit{MeV}/c^2$ (PDG).
+- [Simplify] The footnote's "$e^{-r/a}/r^2$" is the force only for $r\ll a$; the Yukawa potential is $V\propto e^{-r/a}/r$ and the force is $\propto e^{-r/a}(1/r^2+1/(ar))$. Add this so the claim is precise.
+- [Graph] Plot $e^{-r/a}/r$ and $1/r$ (normalized at $r=0.5\,\unit{fm}$) for $r$ from 0.2 to 5 fm with $a=1.4\,\unit{fm}$, to show what "range" means.
+- [Intuition] Add a small table with current PDG values: $m_\mu=105.658\,\unit{MeV}/c^2$, $\tau_\mu=2.197\times10^{-6}\,\unit{s}$, $\tau_{\pi^\pm}=2.603\times10^{-8}\,\unit{s}$, which makes "the pion decays long before reaching the ground" quantitative ($c\tau_\pi\approx7.8\,\unit{m}$). Remove the BOM and convert CRLF to LF.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/01 Historical Introduction to the Elementary Particles/1.4 Antiparticles (1930-1956).md
+priority: medium
+graph: yes
+manim: yes
+summary: Good conceptual account of antiparticles and crossing, with a date inconsistency and one outdated structure statement.
+- [Correctness] The text says Anderson discovered the positron "in late 1931", but the Fig. 1.5 caption says 1932; the discovery was in August 1932. Add a footnote so the note is self-consistent.
+- [Correctness] Dirac's equation was published in early 1928 (Proc. R. Soc. A 117), not 1927; footnote the date.
+- [Correctness] The neutron charge structure "positive at the center and at the edges, negative in between" is outdated; modern form factors give a positive core and a negative outer region (mean-square charge radius $\langle r^2\rangle_n=-0.1155\,\unit{fm^2}$, PDG).
+- [Graph] Plot the two branches $E=\pm\sqrt{p^2c^2+m^2c^4}$ against $p$ with the gap $2mc^2$ shaded, to show the negative-energy problem and the pair-creation threshold.
+- [Manim] Animate the Dirac sea: a photon lifts an electron across the $2mc^2$ gap, leaving a hole that moves like a positive charge, then show the Feynman–Stückelberg reinterpretation; also spell "Stückelberg" with the umlaut as in 1.6. Remove the BOM and convert CRLF to LF.
+- [Example] Add the threshold for $p+p\to p+p+p+\bar p$ on a fixed target: $T_{\min}=6m_pc^2\approx5.6\,\unit{GeV}$, which is why the Bevatron was built for about $6\,\unit{GeV}$.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/01 Historical Introduction to the Elementary Particles/1.5 Neutrinos (1930-1962).md
+priority: high
+graph: yes
+manim: no
+summary: Long and well narrated, but several physics claims are now wrong or outdated and need visible modern-status callouts.
+- [Correctness] "as far as we know, its mass is in fact zero" is outdated: oscillations prove nonzero neutrino masses ($\Delta m^2_{21}\approx7.5\times10^{-5}\,\unit{eV^2}$, $|\Delta m^2_{32}|\approx2.5\times10^{-3}\,\unit{eV^2}$; KATRIN $m_\nu<0.45\,\unit{eV}$), and the separate conservation of $L_e$ and $L_\mu$ is violated in oscillations.
+- [Correctness] "established that the neutrino and antineutrino are distinct particles" overstates the Davis result: the null result is also explained by helicity (V−A), and whether neutrinos are Dirac or Majorana is still open (neutrinoless double-beta-decay searches).
+- [Correctness] The 1962 Brookhaven description does not match the experiment (Danby et al.): the beam was mainly $\nu_\mu$ from $\pi^+\to\mu^+\nu_\mu$, the observed reaction was $\nu_\mu+n\to\mu^-+p$ (29 muon events), and the few shower events were consistent with background; footnote the correction.
+- [Correctness] "The upper number is the atomic weight (the number of neutrons plus protons)" names the mass number $A$, not the atomic weight; footnote the modern term. Also update (1.16): the current limit is $\mathrm{BR}(\mu\to e\gamma)<1.5\times10^{-13}$ (MEG II).
+- [Example] Evaluate (1.7) for free neutron decay: $E=(m_n^2-m_p^2+m_e^2)c^2/2m_n=1.293\,\unit{MeV}$, so $T_{\max}=0.782\,\unit{MeV}$; for tritium the endpoint is $18.6\,\unit{keV}$.
+- [Graph] Plot the allowed beta spectrum $N(T)\propto pE(T_0-T)^2$ for tritium ($T_0=18.6\,\unit{keV}$, ignoring the Fermi function) against the single spike that a two-body decay would give at $T_0$. Remove the BOM and convert CRLF to LF.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/01 Historical Introduction to the Elementary Particles/1.6 Strange Particles (1947-1960).md
+priority: medium
+graph: no
+manim: no
+summary: Clear introduction to baryon number and strangeness; the reaction lists (1.27)–(1.29) check out, but the proton-decay status and one symbol need updating.
+- [Correctness] The proton-stability footnote cites 1981–85 articles only; add the current bound $\tau/B(p\to e^+\pi^0)>2.4\times10^{34}\,\unit{yr}$ (Super-Kamiokande), which excludes minimal SU(5) GUTs.
+- [Correctness] $A$ denotes baryon number in the text, while the Fig. 1.9 caption uses $A$ and $B$ as vertex labels ("decays at $A$"); rename the vertices or note the clash (most texts use $B$ for baryon number, but $B$ is beauty in 1.11).
+- [Example] Add a worked strangeness bookkeeping table for one allowed and one forbidden reaction from (1.27)/(1.28) (columns $Q$, $A$, $S$ before and after), so readers can check the other lines themselves.
+- [Intuition] Add PDG masses and lifetimes for the particles named ($K^\pm$ 493.7 MeV, $\tau=1.24\times10^{-8}\,\unit{s}$; $K^0$ 497.6 MeV; $\Lambda$ 1115.7 MeV, $\tau=2.6\times10^{-10}\,\unit{s}$) to make the $10^{-23}$ s versus $10^{-10}$ s contrast concrete. Remove the BOM and convert CRLF to LF.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/01 Historical Introduction to the Elementary Particles/1.7 The Eightfold Way (1961-1964).md
+priority: high
+graph: yes
+manim: no
+summary: The native octet and decuplet diagrams are a strong addition, but the decuplet has a wrong label, and the key Gell-Mann–Okubo prediction is only mentioned, never shown.
+- [Correctness] In the baryon-decuplet graph the $S=-2$, $Q=0$ point at (1, -0.464) is labelled "Ξ*⁺"; it must be "Ξ*⁰" (the $\Xi^*$ doublet is $\Xi^{*-}$, $\Xi^{*0}$; see the $uss$ row in 1.8).
+- [Correctness] In the Fig. 1.11 nonet graph, the $^3P_0$ isoscalar label "S*⁰′" looks garbled (the source has $S^*$ and $\epsilon$); check against PDF page 44. Also add a footnote that the old names ($\kappa$, $\delta$, $\epsilon$, $Q$, $A_1$, $D$, $E$, $g$) correspond to modern $K_0^*$, $a_0(980)$, $f_0$, $K_1$, $a_1(1260)$, $f_1(1285)$, $f_1(1420)$, $\rho_3(1690)$.
+- [Example] Show the equal-spacing prediction: with PDG masses $\Delta(1232)$, $\Sigma^*(1384.6)$, $\Xi^*(1533.4)$ the spacings are about 153 and 149 MeV, giving $m_\Omega\approx1682$ to $1684\,\unit{MeV}/c^2$ versus the measured $1672.45\pm0.29\,\unit{MeV}/c^2$ (lifetime $0.821\times10^{-10}\,\unit{s}$).
+- [Graph] Plot decuplet mass (MeV) against strangeness $S=0,-1,-2,-3$ with the PDG points and a straight-line fit through the first three, extrapolated to $S=-3$ to show the $\Omega^-$ prediction.
+- [Structure] The Fig. 1.11 caption is a bold paragraph below the graph block; mark it as the graph's caption in the skill's caption format. Make the physical-quantities $c$ unit consistent with the other chapter notes (cm/s versus m/s). Remove the BOM and convert CRLF to LF.
+
+=== 02 Physics/04 Quantum Field Theory and Particle Physics/02 Elementary Particles/01 Historical Introduction to the Elementary Particles/1.8 The Quark Model (1964).md
+priority: high
+graph: no
+manim: yes
+summary: Quark diagrams and the decuplet and nonet tables are correct, but the claims about exotic hadrons and colour singlets are now false, and the nonet table assignment is misleading.
+- [Correctness] "none has ever been found" for exotic hadrons is outdated: tetraquark candidates ($X(3872)$ 2003, $Z_c(3900)$ 2013), the doubly charged $T_{c\bar s0}(2900)^{++}$ (LHCb 2022, a meson-like state with $Q=+2$, against "nor can there be a meson with a charge of +2") and pentaquarks $P_c$ (LHCb 2015) have been observed.
+- [Correctness] "The only colorless combinations you can make are $q\bar q$, $qqq$, and $\bar q\bar q\bar q$" is wrong: $qq\bar q\bar q$ and $qqqq\bar q$ (and glueballs) are also colour singlets; restate the rule as "colour-singlet combinations, the simplest being $q\bar q$ and $qqq$".
+- [Correctness] The nonet table pairs $u\bar u\to\pi^0$ and $d\bar d\to\eta$, which is wrong even with the later caveat; give the physical states $\pi^0=(u\bar u-d\bar d)/\sqrt2$, $\eta\approx(u\bar u+d\bar d-2s\bar s)/\sqrt6$, $\eta'\approx(u\bar u+d\bar d+s\bar s)/\sqrt3$, or write "mixtures" in the meson column.
+- [Correctness] The confinement paragraph ("crucial theoretical problem for the eighties ... solution may be at hand") and the DIS "not conclusive" remark are dated; add a callout that QCD is established, that lattice QCD shows a linearly rising quark potential, and that free-quark searches set tight limits.
+- [Manim] Animate a meson as a $q\bar q$ pair joined by a colour flux tube: pulling the quarks apart stretches the tube until it breaks into two $q\bar q$ pairs instead of freeing a quark, making confinement intuitive. Remove the BOM and convert CRLF to LF.
