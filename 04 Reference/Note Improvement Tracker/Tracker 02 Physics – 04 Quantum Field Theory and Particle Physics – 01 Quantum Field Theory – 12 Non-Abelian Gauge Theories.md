@@ -84,7 +84,7 @@ Priority: low · Graph: no · Manim: no
 
 Clear chapter introduction with appropriate caveats about asymptotic freedom and confinement.
 
-- [Links] Add links to [[12.01.03 The Group SU(2)]] and [[12.01.04 The Group SU(3)]] where "the two concrete groups" are mentioned, so the hub links all four section notes.
+- [Links] Add links to \[\[12.01.03 The Group SU(2)\]\] and \[\[12.01.04 The Group SU(3)\]\] where "the two concrete groups" are mentioned, so the hub links all four section notes.
 
 ### N2811
 
@@ -104,7 +104,7 @@ Priority: low · Graph: no · Manim: no
 Correct normalizations and Casimirs; the trace check is described in words before the Casimir is introduced.
 
 - [Structure] Move the "useful normalization check" paragraph below the Quadratic Casimir section and write it as an equation: $(N^2-1)T_F=N\,C_F\Rightarrow C_F=(N^2-1)/(2N)$.
-- [Example] Add the adjoint check $f^{acd}f^{bcd}=C_A\delta^{ab}=N\delta^{ab}$ (linking it to $K^{ab}$ in [[12.01.01 General Structure]]), and move Example 12.1 (SU(2) Casimir, currently in the SU(3) note) here.
+- [Example] Add the adjoint check $f^{acd}f^{bcd}=C_A\delta^{ab}=N\delta^{ab}$ (linking it to $K^{ab}$ in \[\[12.01.01 General Structure\]\]), and move Example 12.1 (SU(2) Casimir, currently in the SU(3) note) here.
 
 ### N2813
 
@@ -123,7 +123,7 @@ Priority: low · Graph: no · Manim: no
 
 Correct matrices, structure constants, $d$-symbol definition and completeness relation, but the worked example concerns SU(2) rather than SU(3).
 
-- [Structure] Example 12.1 checks the SU(2) Casimir; move it to [[12.01.03 The Group SU(2)]] or [[12.01.02 Representations]] and replace it here with the SU(3) check $\sum_a(\lambda^a/2)^2=\frac43\mathbf1$, obtained from the completeness relation by contracting $j=k$.
+- [Structure] Example 12.1 checks the SU(2) Casimir; move it to \[\[12.01.03 The Group SU(2)\]\] or \[\[12.01.02 Representations\]\] and replace it here with the SU(3) check $\sum_a(\lambda^a/2)^2=\frac43\mathbf1$, obtained from the completeness relation by contracting $j=k$.
 - [Example] Add one worked structure-constant evaluation, e.g. $f^{458}=-2i\operatorname{Tr}([T^4,T^5]T^8)=\sqrt3/2$, to show how the table is obtained.
 
 ### N2815
@@ -133,7 +133,7 @@ Priority: low · Graph: no · Manim: no
 
 Clear section hub with a good three-step reading guide.
 
-- [Links] The first sentence links 12.02.01 and the next paragraph links it again; drop the first sentence, and add [[12.02.05 Self-Interactions of Gauge Bosons]] to the reading list.
+- [Links] The first sentence links 12.02.01 and the next paragraph links it again; drop the first sentence, and add \[\[12.02.05 Self-Interactions of Gauge Bosons\]\] to the reading list.
 
 ### N2816
 
@@ -193,7 +193,7 @@ Priority: low · Graph: no · Manim: no
 
 Clear section hub explaining why gauge fixing is needed.
 
-- [Links] Add [[12.03.04 The Fully Quantized Lagrangian]], the only section note not linked from the hub.
+- [Links] Add \[\[12.03.04 The Fully Quantized Lagrangian\]\], the only section note not linked from the hub.
 
 ### N2822
 
@@ -224,7 +224,7 @@ Priority: low · Graph: no · Manim: no
 Correct ghost Lagrangian and integration by parts (consistent with $D^{ab}c^b=\partial c^a+gf^{abc}A^bc^c$); the link between $M$ and the ghost operator is implicit.
 
 - [Simplify] State explicitly that $M^{ab}=\frac1g\partial^\mu D^{ab}_\mu$ from 12.03.02 is replaced by $-\partial^\mu D^{ab}_\mu$ (the constant factor $-1/g$ goes into the normalization), so the reader connects the determinant identity to (12.10).
-- [Links] Link [[12.03.02 The Faddeev–Popov Prescription]] at the first mention of the FP determinant, and [[12.04.02 Vertices]] where the ghost–gluon vertex is named.
+- [Links] Link \[\[12.03.02 The Faddeev–Popov Prescription\]\] at the first mention of the FP determinant, and \[\[12.04.02 Vertices\]\] where the ghost–gluon vertex is named.
 
 ### N2825
 
@@ -524,7 +524,7 @@ Priority: low · Graph: no · Manim: no
 
 Correct operator proof, though the step from the Jacobi identity to the cyclic curvature identity is skipped.
 
-- [Simplify] Insert the intermediate line $[D_\mu,[D_\nu,D_\rho]]=-i\signal{g}[D_\mu,\signal{F}_{\nu\rho}]=-i\signal{g}(D_\mu\signal{F}_{\nu\rho})$ so the cyclic identity follows visibly, and give the component form $(D_\mu F_{\nu\rho})^a=\partial_\mu F^a_{\nu\rho}+gf^{abc}A^b_\mu F^c_{\nu\rho}$.
+- [Simplify] Insert the intermediate line $[D_\mu,[D_\nu,D_\rho\]\]=-i\signal{g}[D_\mu,\signal{F}_{\nu\rho}]=-i\signal{g}(D_\mu\signal{F}_{\nu\rho})$ so the cyclic identity follows visibly, and give the component form $(D_\mu F_{\nu\rho})^a=\partial_\mu F^a_{\nu\rho}+gf^{abc}A^b_\mu F^c_{\nu\rho}$.
 
 ### N2855
 

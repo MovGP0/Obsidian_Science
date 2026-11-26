@@ -97,12 +97,12 @@ Dressler et al. used a threshold corresponding to $\quantity{20.75}{mag\,arcsec^
 Neglecting the weak dependence on mean effective intensity gives the **$D_n$–$\sigma$ relation** $\mechanical{D}_n\propto\mechanical{\sigma}_0^a$, with $a$ typically about $1.2$–$1.5$. For $a=1.33$ the lecture gives
 
 $$
-\frac{\mechanical{D}_n}{\unit{kpc}}
+\frac{\mechanical{D}_n}{h^{-1}\,\unit{kpc}}
 =2.05
 \left(\frac{\mechanical{\sigma}_0}{\quantity{100}{km\,s^{-1}}}\right)^{1.33}.
 $$
 
-See Schneider, equation 3.35. The notes quote about $15\%$ rms scatter, comparable to that of the fundamental plane itself. The relation is a nearly edge-on projection of the plane and serves as a distance indicator.
+See Schneider, equation 3.35. Schneider prints the unit as $\unit{kpc}$ without the factor $h^{-1}$. The physical diameter is the measured angular diameter times a Hubble-flow distance $cz/H_0$, so the zero point scales as $h^{-1}$, with $h=H_0/(\quantity{100}{km\,s^{-1}\,Mpc^{-1}})$. The value $2.05$ applies for $h=1$. The notes quote about $15\%$ rms scatter, comparable to that of the fundamental plane itself. The relation is a nearly edge-on projection of the plane and serves as a distance indicator.
 
 ##### Virial derivation of the fundamental-plane scaling
 
@@ -185,6 +185,7 @@ Kyle Kabasares, *Extragalactic Astrophysics (Physics 241C, UC Irvine 2018)*.
 | $\overline{\mechanical{\sigma}}$ | $\unit{m\,s^{-1}}$ | Mean central velocity dispersion | Dispersion averaged within half the effective radius in the lecture's convention. |
 | $a$, $b$ | $1$ | Fundamental-plane coefficients | Logarithmic slopes with respect to velocity dispersion and effective intensity. |
 | $\mechanical{D}_n$ | $\unit{m}$ | Diameter at a fixed mean surface brightness | Diameter of the aperture with the prescribed mean intensity. |
+| $h$ | $1$ | Dimensionless Hubble parameter | Hubble constant $H_0$ divided by $\quantity{100}{km\,s^{-1}\,Mpc^{-1}}$. Physical lengths from Hubble-flow distances scale as $h^{-1}$. |
 | $\energy{L}_n$ | $\unit{W}$ | Aperture luminosity | Luminosity enclosed by the aperture of diameter $\mechanical{D}_n$. |
 | $\gamma$ | $1$ | Effective surface-brightness slope | Positive exponent in the power-law approximation $f(x)=x^{-\gamma}$. |
 | $K_R$, $K_v$ | $1$ | Virial structure coefficients | Ratios connecting the effective radius and observed dispersion to the gravitational radius and global root-mean-square speed. |

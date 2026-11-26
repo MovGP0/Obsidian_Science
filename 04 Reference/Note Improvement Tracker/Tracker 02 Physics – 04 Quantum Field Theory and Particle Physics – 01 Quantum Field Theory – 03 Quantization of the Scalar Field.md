@@ -89,7 +89,7 @@ Priority: low · Graph: no · Manim: no
 
 A clear chapter hub with a reading path, but it links only some of the chapter's sections.
 
-- [Links] The reading path mentions "The complex field" without linking [[03.05 The Complex Scalar Field]], and omits [[03.08 Covariant Form of the Propagators]], [[03.09 Worked Examples]], [[03.10 Källén–Lehmann Representation]], the exercises and [[03.12 Summary]]; add them so the hub covers the whole chapter.
+- [Links] The reading path mentions "The complex field" without linking \[\[03.05 The Complex Scalar Field\]\], and omits \[\[03.08 Covariant Form of the Propagators\]\], \[\[03.09 Worked Examples\]\], \[\[03.10 Källén–Lehmann Representation\]\], the exercises and \[\[03.12 Summary\]\]; add them so the hub covers the whole chapter.
 
 ### N2346
 
@@ -207,7 +207,7 @@ Priority: low · Graph: yes · Manim: no
 Correct and short; the distinction between exchange symmetry and thermal statistics is well made.
 
 - [Graph] Plot mean occupation $\bar n(x)=1/(e^x-1)$ (Bose–Einstein), $1/(e^x+1)$ (Fermi–Dirac) and $e^{-x}$ (Boltzmann) for $x=(\omega-\mu)/T\in[0.05,5]$, to illustrate the thermal consequence the note explicitly separates from exchange symmetry.
-- [Links] Link the spin–statistics sentence to [[04.03.02 The Spin–Statistics Theorem]].
+- [Links] Link the spin–statistics sentence to \[\[04.03.02 The Spin–Statistics Theorem\]\].
 
 ### N2358
 
@@ -256,7 +256,7 @@ Priority: low · Graph: no · Manim: no
 Correct definition and consequences of normal ordering.
 
 - [Example] Add the explicit difference $\phi(x)\phi(y)-\mathcal N\{\phi(x)\phi(y)\}=[\phi^+(x),\phi^-(y)]=\Delta^+(x-y)$, which the text describes in words and which the propagator section later needs.
-- [Simplify] Show that normal ordering (3.37) simply drops the $\tfrac12(2\pi)^3\delta^{(3)}(0)$ term, linking back to [[03.04.01 Hamiltonian Operator in the Variables a and a†]].
+- [Simplify] Show that normal ordering (3.37) simply drops the $\tfrac12(2\pi)^3\delta^{(3)}(0)$ term, linking back to \[\[03.04.01 Hamiltonian Operator in the Variables a and a†\]\].
 
 ### N2363
 
@@ -288,7 +288,7 @@ Priority: low · Graph: no · Manim: no
 The Lagrangian, field equations and current are correct and consistent with (3.55) ($a$-quanta have $Q=+1$), but the sign-convention discussion is written as prose with a forward reference.
 
 - [Simplify] Replace the prose sentence about the generator with formulas: $[Q,\phi]=-\phi$ and $e^{-i\alpha Q}\phi\,e^{i\alpha Q}=e^{i\alpha}\phi$; and note that the Noether recipe $j^\mu=\frac{\partial\mathcal L}{\partial(\partial_\mu\phi)}\delta\phi+\ldots$ gives the opposite overall sign, which is the convention choice being referred to.
-- [Links] The forward reference "(3.55)" should be a link to [[03.05.03 The Charge Operator]].
+- [Links] The forward reference "(3.55)" should be a link to \[\[03.05.03 The Charge Operator\]\].
 - [Simplify] Show the decomposition $\mathcal L=\sum_{i=1,2}[\tfrac12(\partial\phi_i)^2-\tfrac12m^2\phi_i^2]$ explicitly.
 
 ### N2366
@@ -394,7 +394,7 @@ Priority: low · Graph: no · Manim: no
 
 Correct definition with useful checks.
 
-- [Simplify] Write the checks as formulas: $\Delta_F(x-y)=\Delta_F(y-x)$ and $\Delta_F=i\Delta_R+\Delta^-$ (linking [[03.07.02 Retarded and Advanced Propagators]]), instead of describing them in words.
+- [Simplify] Write the checks as formulas: $\Delta_F(x-y)=\Delta_F(y-x)$ and $\Delta_F=i\Delta_R+\Delta^-$ (linking \[\[03.07.02 Retarded and Advanced Propagators\]\]), instead of describing them in words.
 
 ### N2377
 
@@ -406,7 +406,7 @@ The residue calculation is correct and complete, but the opening paragraphs refe
 - [Structure] Move the sentence "Equation (3.72) supplies that encoding: its single pole is below the real frequency axis..." to after (3.72) is displayed, and add the one-line check: for $t>0$ close below to get $(i/2\pi)(-2\pi i)=1$; for $t<0$ close above to get $0$.
 - [Simplify] The text before (3.71) says "Spatial momentum reversal leaves the mode energy unchanged", but (3.71) only collects both terms under one integral. The reversal $\mathbf k\to-\mathbf k$ is actually used in the third line of (3.79), so state it there.
 - [Simplify] Split the final paragraph ("At a nonzero fixed positive time difference ...") into a short bulleted check list: decay direction per half-plane, equal residue phases, dimension count ($4-2=2$), off-shell vs on-shell.
-- [Links] Fig. 3.1 is named in the text but lives in another note; link it as [[03.07.07 Integration Contour in the Complex Plane]] where "Fig. 3.1 illustrates their positions" appears.
+- [Links] Fig. 3.1 is named in the text but lives in another note; link it as \[\[03.07.07 Integration Contour in the Complex Plane\]\] where "Fig. 3.1 illustrates their positions" appears.
 
 ### N2378
 
@@ -438,7 +438,7 @@ The derivation (3.84) and the $-i$ source convention are correct, but the source
 
 - [Simplify] Replace the callout ("The source instead prints minus i in that alternative rescaling...") and the sentence "As a sign check on the retained correction callout..." with one plain statement: $G\equiv i\Delta_F$ obeys $(\square+m^2)G=\delta^{(4)}$.
 - [Intuition] Make the non-uniqueness claim concrete: $(\square+m^2)\Delta_F=-i\delta^{(4)}$ and $(\square+m^2)\Delta_R=-\delta^{(4)}$, so $\Delta_F-i\Delta_R$ solves the homogeneous Klein–Gordon equation. The two inverses differ only by their boundary conditions.
-- [Links] Link "Retarded and advanced inverses" to [[03.07.02 Retarded and Advanced Propagators]] and to [[03.08.02 Relations between the Propagators]], so the reader can compare the $-1$ and $-i$ sources.
+- [Links] Link "Retarded and advanced inverses" to \[\[03.07.02 Retarded and Advanced Propagators\]\] and to \[\[03.08.02 Relations between the Propagators\]\], so the reader can compare the $-1$ and $-i$ sources.
 
 ### N2381
 
@@ -448,7 +448,7 @@ Priority: low · Graph: no · Manim: no
 The interpretation and the causality remark are correct, with good caveats, but the time-order wording in the second and third paragraphs repeats itself.
 
 - [Simplify] Merge the sentence "For the reverse time order, the earlier event is x and the later event is y..." into the first statement of the reversed ordering, so that the antiparticle reading ($y^0>x^0$: created at $x$, absorbed at $y$) is stated once.
-- [Example] Back the causality remark with the explicit spacelike Wightman function $\Delta^+=mK_1(mr)/(4\pi^2r)$ from [[03.11.06 Explicit microcausality]]. It is nonzero and decays like $e^{-mr}$, while the commutator vanishes.
+- [Example] Back the causality remark with the explicit spacelike Wightman function $\Delta^+=mK_1(mr)/(4\pi^2r)$ from \[\[03.11.06 Explicit microcausality\]\]. It is nonzero and decays like $e^{-mr}$, while the commutator vanishes.
 
 ### N2382
 
@@ -519,7 +519,7 @@ Priority: low · Graph: no · Manim: no
 
 The derivation is correct (both mixed terms give $+\tfrac12\sqrt{\omega/\omega'}$ and $+\tfrac12\sqrt{\omega'/\omega}$), but it uses Fourier phases opposite to the chapter and needs a callout to explain this.
 
-- [Simplify] Rewrite the inverse-mode formulas with the chapter's phase $e^{-i\mathbf k\cdot\mathbf x}$ for $a(\mathbf k)$ (as in [[03.02.02 Creation and Annihilation Operators]]) and drop the phase-mismatch callout. The calculation is unchanged except for the delta's support.
+- [Simplify] Rewrite the inverse-mode formulas with the chapter's phase $e^{-i\mathbf k\cdot\mathbf x}$ for $a(\mathbf k)$ (as in \[\[03.02.02 Creation and Annihilation Operators\]\]) and drop the phase-mismatch callout. The calculation is unchanged except for the delta's support.
 - [Example] Write out the $[a,a]$ case as a short display: the coefficient $\tfrac12(\sqrt{\omega_{\mathbf k'}/\omega_{\mathbf k}}-\sqrt{\omega_{\mathbf k}/\omega_{\mathbf k'}})$ is multiplied by $(2\pi)^3\delta^{(3)}(\mathbf k+\mathbf k')$, so the reader does not have to redo the signs.
 - [Structure] Add $a,a^\dagger$ with unit $\mathrm{MeV}^{-3/2}$ to the physical-quantities table.
 
@@ -531,7 +531,7 @@ Priority: low · Graph: no · Manim: no
 The calculation is correct (the coefficient of the $aa$ terms vanishes on shell, and the nonoscillating coefficient is $\omega/2$) and well structured.
 
 - [Example] Show the gradient and mass contributions as explicit displays, parallel to the $\pi^2$ display, with coefficients $\pm|\mathbf k|^2/(4\omega)$ and $m^2/(4\omega)$, instead of "Treat the gradient and mass terms in the same way".
-- [Simplify] State the vacuum constant explicitly, $\tfrac12\int d^3k\,\omega_{\mathbf k}\,\delta^{(3)}(0)$, before normal ordering removes it, and link to the Casimir remark in [[03.12 Summary]].
+- [Simplify] State the vacuum constant explicitly, $\tfrac12\int d^3k\,\omega_{\mathbf k}\,\delta^{(3)}(0)$, before normal ordering removes it, and link to the Casimir remark in \[\[03.12 Summary\]\].
 
 ### N2390
 
@@ -628,4 +628,4 @@ Priority: low · Graph: no · Manim: no
 
 This is a correct and well-organized chapter summary.
 
-- [Links] Add links from each section heading to its chapter note (for example Causality to [[03.08.01 Covariant Commutator]], and Propagators to [[03.07.05 Fourier Representation]]). Write the Hamiltonian with explicit $a^\dagger(\mathbf k)a(\mathbf k)$.
+- [Links] Add links from each section heading to its chapter note (for example Causality to \[\[03.08.01 Covariant Commutator\]\], and Propagators to \[\[03.07.05 Fourier Representation\]\]). Write the Hamiltonian with explicit $a^\dagger(\mathbf k)a(\mathbf k)$.

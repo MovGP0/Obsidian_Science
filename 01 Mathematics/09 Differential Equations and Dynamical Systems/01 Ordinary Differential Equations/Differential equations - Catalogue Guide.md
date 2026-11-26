@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Differential equations: a learning route"
 catalogue_ids:
   - "9"
@@ -56,7 +56,7 @@ For each problem, write the domain and all data before selecting a method. Ident
 <!-- catalogue-complete-lesson-index:start -->
 ## Complete lesson index
 
-Read the prerequisite route above before the advanced lessons. The source topic links are in [[Planned Topics#9. Differential equations|the detailed catalogue]].
+Read the prerequisite route above before the advanced lessons.
 
 - [[First-order initial value problems|First-order initial value problems]] — 9.1.1, 9.1.1.1.
 - [[First-order solution methods|First-order solution methods]] — 9.1.1.2.

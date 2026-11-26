@@ -60,7 +60,7 @@ Priority: low · Graph: no · Manim: no
 
 Clear chapter hub with a useful reading route; links resolve and the single-row quantity table is accurate.
 
-- [Structure] No change needed; optionally add a one-line pointer from the "Reading route" Born-rule paragraph to [[07 The Postulates of Quantum Mechanics#P4 — Probability]] so the postulate is reachable from the hub.
+- [Structure] No change needed; optionally add a one-line pointer from the "Reading route" Born-rule paragraph to \[\[07 The Postulates of Quantum Mechanics#P4 — Probability\]\] so the postulate is reachable from the hub.
 
 ### N1949
 
@@ -125,7 +125,7 @@ Useful error list and Born-rule section with a correct quantity table, but with 
 
 - [Correctness] Error 1 says "The mean-square term vanishes only when $\langle X\rangle=0$"; the mean square is $\langle X^2\rangle$, so the vanishing term should be called the squared mean $\langle X\rangle^2$.
 - [Structure] Move the paragraph "For Error 1, shift the variable by its mean..." under Error 1 and keep the phase test directly under Error 4; currently the Error 1 tip appears after Error 4.
-- [Links] Turn "It corresponds to P4 in Chapter 9" into a wiki link to [[07 The Postulates of Quantum Mechanics#P4 — Probability|P4 in Chapter 9]] (heading exists).
+- [Links] Turn "It corresponds to P4 in Chapter 9" into a wiki link to \[\[07 The Postulates of Quantum Mechanics#P4 — Probability|P4 in Chapter 9\]\] (heading exists).
 - [Example] In the Born-rule section, add a two-line worked example (e.g. $\psi=e^{-|x|/a}/\sqrt a$ with $\int\rho\,dx=1$ and $\langle x\rangle=0$, linking Exercise 4) so the expectation formulas are seen in use.
 
 ### N1955
@@ -136,7 +136,7 @@ Priority: low · Graph: no · Manim: no
 Accurate summary with good reconstruction advice, but its closing note refers to a "source’s final bullet" the reader cannot see.
 
 - [Structure] Rewrite the note "The source’s final bullet equates positive variance with a superposition..." as a self-contained caveat (pure state, different eigenvalues, mixtures can also have positive variance) without referring to the source.
-- [Links] Add wiki links from each bullet to its section note (e.g. "Chebyshev bound" to [[04 Chebyshev's Inequality]]) so the summary doubles as a navigation page.
+- [Links] Add wiki links from each bullet to its section note (e.g. "Chebyshev bound" to \[\[04 Chebyshev's Inequality\]\]) so the summary doubles as a navigation page.
 
 ### N1956
 
@@ -235,7 +235,7 @@ Priority: low · Graph: yes · Manim: no
 Correct and compact; the example and the operator cross-check are clear, but the paragraph on scope and the phase remark are dense for a first encounter.
 
 - [Graph] Add a small 2D stem/bar plot of the outcome distribution: bars of height $1/5$ at $E=\hbar\omega$ and $4/5$ at $E=2\hbar\omega$ (horizontal axis $E/\hbar\omega$ from 0 to 3), with a vertical line at the mean $9/5$, to show that the mean lies between levels and is not itself an outcome.
-- [Example] Back the sentence "Changing the relative phase ... can change another observable" with a one-line example, e.g. a second observable with $\langle1|\hat B|2\rangle\neq0$ (such as $\hat x$ in a box, linking to [[03 Ehrenfest's Theorem]]) whose mean depends on the relative phase.
+- [Example] Back the sentence "Changing the relative phase ... can change another observable" with a one-line example, e.g. a second observable with $\langle1|\hat B|2\rangle\neq0$ (such as $\hat x$ in a box, linking to \[\[03 Ehrenfest's Theorem\]\]) whose mean depends on the relative phase.
 - [Simplify] Split the dense scope paragraph (degeneracy, continuous spectra, existence of expectations) into a short callout after the example so the main line (definition, spectral form, example) reads uninterrupted.
 - [Intuition] Add the classical analogue: $\sum_n a_n|c_n|^2$ is exactly a weighted average like the mean of a loaded die, with $|c_n|^2$ as the loading.
 
@@ -270,8 +270,8 @@ Priority: medium · Graph: no · Manim: no
 
 Correct and concise proof sketch, but the note lacks the canonical $x$-$p$ application and any concrete numerical check of the energy-time relation.
 
-- [Example] Add the canonical case $\hat A=\hat x$, $\hat B=\hat p$ with $[\hat x,\hat p]=i\hbar$ giving $\Delta x\,\Delta p\ge\hbar/2$, and link to [[15 Expectation Value and Uncertainty/99 Exercises/03 Exercise 3|Exercise 3]] where the box states give $\approx0.568\hbar$.
-- [Example] Check the energy-time relation on the box superposition of [[03 Ehrenfest's Theorem]]: there $\Delta H=(E_2-E_1)/2$ and $\Delta t_x=\Delta x/|d\langle x\rangle/dt|$, so the reader sees the bound evaluated rather than only stated.
+- [Example] Add the canonical case $\hat A=\hat x$, $\hat B=\hat p$ with $[\hat x,\hat p]=i\hbar$ giving $\Delta x\,\Delta p\ge\hbar/2$, and link to \[\[15 Expectation Value and Uncertainty/99 Exercises/03 Exercise 3|Exercise 3\]\] where the box states give $\approx0.568\hbar$.
+- [Example] Check the energy-time relation on the box superposition of \[\[03 Ehrenfest's Theorem\]\]: there $\Delta H=(E_2-E_1)/2$ and $\Delta t_x=\Delta x/|d\langle x\rangle/dt|$, so the reader sees the bound evaluated rather than only stated.
 - [Simplify] Expand the proof by one line: write $\langle u|v\rangle=\langle\hat A\hat B\rangle-\langle\hat A\rangle\langle\hat B\rangle$ and $\langle v|u\rangle=\langle\hat B\hat A\rangle-\langle\hat A\rangle\langle\hat B\rangle$ before subtracting, so the commutator appearance is visible.
 - [Example] Illustrate the "zero right-hand side" paragraph with spin: for $\sigma_x,\sigma_y$ in the state $|+x\rangle$, $\langle[\sigma_x,\sigma_y]\rangle=2i\langle\sigma_z\rangle=0$, yet $\Delta\sigma_y=1$.
 

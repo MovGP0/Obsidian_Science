@@ -55,7 +55,7 @@ The review found 55 possible errors or notation conflicts. 55 of them are verifi
 - [[#N3406|N3406]] 4.3.5 Distinction between ADM and Bondi-Sachs masses -  Vaidya spacetime: Symbol clash for $t$: in $u=t-r-2M\ln(r/2M-1)$ it is the Schwarzschild time, but later $t\equiv u+r$ defines the slicing time, which differs from it by $2M\ln(r/2M-1)$; rename one (e.g. $t_s$ for Schwarzschild time) and note the difference. **Fixed:** Renamed the Schwarzschild time in the definition of u to t_S, said what it is, and noted in the table that t = u + r differs from t_S
 - [[#N3406|N3406]] 4.3.5 Distinction between ADM and Bondi-Sachs masses -  Vaidya spacetime: Symbol clash for $M$: it denotes the constant Schwarzschild mass in the definition of $u$ and also the surface functional $M(S)$, while the table lists only "original mass"; rename $M(S)$ (e.g. $\mathcal M(S)$) or add it to the table. **Fixed:** Renamed M(S) to \mathcal M(S) and added a table row
 - [[#N3407|N3407]] 4.3.6 Transfer of mass and angular momentum: In $\varepsilon^\alpha{}_{;\alpha}=-T^{\alpha\beta}{}_{;\alpha}\xi_{(t)\beta}+T^{\alpha\beta}\xi_{(t)\beta;\alpha}$ the second term must carry a minus sign, $-T^{\alpha\beta}\xi_{(t)\beta;\alpha}$ (both terms vanish, so the conclusion is unchanged). **Fixed:** With epsilon^alpha = -T^alpha_beta xi^beta, changed +T xi_{;alpha} to -T xi_{;alpha}
-- [[#N3416|N3416]] 5.1.4 Painlevé-Gullstrand coordinates: "an alternative coordinate system is produced that covers regions **VI** and **I**" — there is no region VI; it should be regions **IV** and **I** (the white-hole and exterior regions), as in [[5.1.3 Eddington-Finkelstein coordinates]]. **Fixed:** Changed regions VI and I to IV and I
+- [[#N3416|N3416]] 5.1.4 Painlevé-Gullstrand coordinates: "an alternative coordinate system is produced that covers regions **VI** and **I**" — there is no region VI; it should be regions **IV** and **I** (the white-hole and exterior regions), as in \[\[5.1.3 Eddington-Finkelstein coordinates\]\]. **Fixed:** Changed regions VI and I to IV and I
 - [[#N3419|N3419]] 5.1.7 Apparent horizon: Symbol clash: $\theta$ is both the expansion ($\theta=k^\alpha{}_{;\alpha}$) and the polar angle in $|g|^{1/2}=|g_{UV}|r^2\sin\theta$; the table lists both. Rename the angle locally (for example $\vartheta$) or write the expansion as $\Theta$. **Fixed:** Renamed the polar angle to \vartheta in the determinant and in the table
 - [[#N3421|N3421]] 5.1.9 Killing horizon: "$g_{\alpha\beta}t^\alpha t^\beta=1-\frac{2M}{r}$" has the wrong sign: $g_{\alpha\beta}t^\alpha t^\beta=g_{tt}=-(1-2M/r)$, negative (timelike) outside and positive (spacelike) inside, as the preceding sentence says. **Fixed:** Changed to g_{\alpha\beta}t^\alpha t^\beta = -(1-2M/r), timelike outside and spacelike inside
 - [[#N3424|N3424]] 5.2.2 Kruskal coordinates: With Eq. (5.26) as written ($U_-=\mp e^{\kappa_-u}$, $V_-=e^{-\kappa_-v}$), $U_-V_-=-\kappa_-(r-r_-)$, so $f\simeq+2U_-V_-$ and $\mathrm ds^2\simeq+\frac{2}{\kappa_-^2}\mathrm dU_-\mathrm dV_-$, not "$f\simeq-2U_-V_-$" and "$-\frac{2}{\kappa_-^2}$". Fix the sign convention, for example $V_-=-e^{-\kappa_-v}$, after checking the source. **Fixed:** Verified U_-V_- = -kappa(r-r_-) as written; changed Eq. (5.26) to V_- = -e^{-kappa_- v}, which makes f = -2U_-V_- and the -2/kappa^2 metric correct (matches the Kerr Eq. 5.75)
@@ -280,7 +280,7 @@ Priority: low · Graph: no · Manim: no
 
 Faithful transcription of the author's preface; no technical content to correct.
 
-- [Links] Turn the chapter references (Chapter 2 congruences, Chapter 3 hypersurfaces, Chapter 5 black holes) into wiki links to [[2.0 Chapter introduction]], [[3.0 Chapter introduction]], and [[5.0 Chapter introduction]]; note that the GRTensorII URL is historical.
+- [Links] Turn the chapter references (Chapter 2 congruences, Chapter 3 hypersurfaces, Chapter 5 black holes) into wiki links to \[\[2.0 Chapter introduction\]\], \[\[3.0 Chapter introduction\]\], and \[\[5.0 Chapter introduction\]\]; note that the GRTensorII URL is historical.
 
 ### N3273
 
@@ -356,7 +356,7 @@ Priority: low · Graph: no · Manim: no
 
 Short, correct definition of the four deviation vectors.
 
-- [Links] Link "Section 1.10" and "Eq. (1.46)" to [[1.10 Geodesic deviation]].
+- [Links] Link "Section 1.10" and "Eq. (1.46)" to \[\[1.10 Geodesic deviation\]\].
 
 ### N3281
 
@@ -365,7 +365,7 @@ Priority: low · Graph: no · Manim: no
 
 Short, correct one-step result; no change needed.
 
-- [Links] Link Eqs. (1.49), (1.54) and (1.55) to [[1.11.1 Geometric construction]] and [[1.11.2 Coordinate transformation]].
+- [Links] Link Eqs. (1.49), (1.54) and (1.55) to \[\[1.11.1 Geometric construction\]\] and \[\[1.11.2 Coordinate transformation\]\].
 
 ### N3282
 
@@ -411,7 +411,7 @@ Priority: low · Graph: no · Manim: no
 
 Correct exercise list (Problems 3, 6, 9 and 12 checked); it works as a problem set.
 
-- [Links] Link the cross-references (Section 1.5 in Problem 5, the Weyl tensor of Problem 8, Section 1.11 in Problem 10) to [[1.5 Killing vectors]], [[1.9 Curvature]], and [[1.11 Fermi normal coordinates]].
+- [Links] Link the cross-references (Section 1.5 in Problem 5, the Weyl tensor of Problem 8, Section 1.11 in Problem 10) to \[\[1.5 Killing vectors\]\], \[\[1.9 Curvature\]\], and \[\[1.11 Fermi normal coordinates\]\].
 
 ### N3287
 
@@ -442,7 +442,7 @@ Correct derivation of the Lie derivative, but the geometric difference from the 
 
 - [Manim] Animate the rotation flow $u=\partial_\phi$ in the plane dragging a vector along it, next to a parallel-transported copy of the same vector; the Lie-dragged vector turns with the flow and the parallel-transported one does not.
 - [Example] Compute $\mathcal L_uA$ for $u=-y\partial_x+x\partial_y$ and $A=\partial_x$ with Eq. (1.16), giving $\mathcal L_uA=[u,A]=-\partial_y$, to make the definition concrete.
-- [Links] The text cites Fig. 1.2, which is embedded only in [[1.2 Covariant differentiation]]; link or re-embed it.
+- [Links] The text cites Fig. 1.2, which is embedded only in \[\[1.2 Covariant differentiation\]\]; link or re-embed it.
 
 ### N3290
 
@@ -451,7 +451,7 @@ Priority: low · Graph: no · Manim: no
 
 Correct and concise introduction; the two extra rotation Killing vectors are correct (overall sign is a convention).
 
-- [Links] Link to the expanded [[Killing Vector]] note in 02 General Relativity, which already has the sphere figure and the Killing-tensor extension.
+- [Links] Link to the expanded \[\[Killing Vector\]\] note in 02 General Relativity, which already has the sphere figure and the Killing-tensor extension.
 - [Example] Add the Schwarzschild case $A=1/B=1-2M/r$, where $\widetilde E=(1-2M/r)\,\mathrm dt/\mathrm d\tau$ and $\widetilde L=r^2\sin^2\theta\,\mathrm d\phi/\mathrm d\tau$, so the conserved quantities become familiar.
 
 ### N3291
@@ -470,7 +470,7 @@ Priority: low · Graph: no · Manim: no
 
 Correct derivations of the invariant volume element and divergence formula.
 
-- [Example] Add the divergence formula in spherical coordinates, $A^\alpha{}_{;\alpha}=r^{-2}\partial_r(r^2A^r)+\dots$, which is used directly in [[2.3.7 Another example]] and [[2.4.7 Another example]].
+- [Example] Add the divergence formula in spherical coordinates, $A^\alpha{}_{;\alpha}=r^{-2}\partial_r(r^2A^r)+\dots$, which is used directly in \[\[2.3.7 Another example\]\] and \[\[2.4.7 Another example\]\].
 
 ### N3293
 
@@ -489,7 +489,7 @@ Priority: low · Graph: no · Manim: no
 Correct summary of the Riemann, Ricci and Einstein tensors and the field equations, with MTW signs that match Eq. (1.31).
 
 - [Example] Add the 2-sphere of radius $a$ as a quick check: $R_{\theta\phi\theta\phi}=a^2\sin^2\theta$ and Ricci scalar $2/a^2$, so the reader can verify Eq. (1.32) and the sign conventions.
-- [Links] Link the geometric interpretation of the Riemann tensor to [[1.10 Geodesic deviation]].
+- [Links] Link the geometric interpretation of the Riemann tensor to \[\[1.10 Geodesic deviation\]\].
 
 ### N3295
 
@@ -527,7 +527,7 @@ Priority: medium · Graph: no · Manim: no
 The argument is clear but ends with a wrong strict inequality caused by an invalid step.
 
 - [Correctness] "$0\le\rho+a^2p_1<\rho+p_1$" holds only for $p_1>0$; the correct argument lets $a^2\to1$ and gives $\rho+p_1\ge0$, so Eq. (2.7) should read $\rho\ge0$, $\rho+p_i\ge0$ (not $>0$).
-- [Example] Add a quick check: dust ($p=0$) and radiation ($p=\rho/3$) satisfy the WEC, while the negative-energy Casimir region of [[2.1.6 Violations of the energy conditions]] does not.
+- [Example] Add a quick check: dust ($p=0$) and radiation ($p=\rho/3$) satisfy the WEC, while the negative-energy Casimir region of \[\[2.1.6 Violations of the energy conditions\]\] does not.
 
 ### N3299
 
@@ -536,7 +536,7 @@ Priority: low · Graph: no · Manim: no
 
 Correct and short.
 
-- [Intuition] Add that the NEC is the condition used in the null focusing theorem ([[2.4.5 Focusing theorem]]) and in the horizon area theorem, which explains why the weakest condition is also the most important one.
+- [Intuition] Add that the NEC is the condition used in the null focusing theorem (\[\[2.4.5 Focusing theorem\]\]) and in the horizon area theorem, which explains why the weakest condition is also the most important one.
 
 ### N3300
 
@@ -643,7 +643,7 @@ Priority: low · Graph: no · Manim: no
 
 Clear setup note.
 
-- [Links] Link "Section 1.10" to [[1.10 Geodesic deviation]] and add links to the subsection notes 2.3.1–2.3.8 so the note also works as a hub.
+- [Links] Link "Section 1.10" to \[\[1.10 Geodesic deviation\]\] and add links to the subsection notes 2.3.1–2.3.8 so the note also works as a hub.
 
 ### N3311
 
@@ -661,7 +661,7 @@ Priority: low · Graph: no · Manim: no
 
 Correct; clearly links back to the Newtonian decomposition.
 
-- [Links] Link "the first equation of Section 2.2" to [[2.2.1 Two-dimensional medium]].
+- [Links] Link "the first equation of Section 2.2" to \[\[2.2.1 Two-dimensional medium\]\].
 
 ### N3313
 
@@ -723,7 +723,7 @@ Priority: low · Graph: no · Manim: no
 Correct and careful proof, with the wrong derivative variable in the headline equation.
 
 - [Correctness] Eq. (2.21) is written with $\mathrm d/\mathrm d\mechanical{t}$, but the note (and Eq. 2.27) uses proper time; write $\theta=\delta V^{-1}\,\mathrm d\delta V/\mathrm d\tau$ and drop $\mechanical{t}$ from the table.
-- [Links] Link Eqs. (2.16) and (2.17) to [[2.3.2 Kinematics]] and the determinant-variation step to [[1.7 Metric determinant]].
+- [Links] Link Eqs. (2.16) and (2.17) to \[\[2.3.2 Kinematics\]\] and the determinant-variation step to \[\[1.7 Metric determinant\]\].
 
 ### N3319
 
@@ -751,7 +751,7 @@ Priority: low · Graph: no · Manim: no
 
 Correct derivation of $\tilde B_{\alpha\beta}$ and $\theta=k^\alpha{}_{;\alpha}$; long but complete.
 
-- [Simplify] Add a short summary at the top: only the transverse projection $\tilde B$ matters, $\theta$ is independent of $N^\alpha$, and $\sigma$, $\omega$ change only by terms along $k^\alpha$ (Problem 6 of [[2.6 Problems]]).
+- [Simplify] Add a short summary at the top: only the transverse projection $\tilde B$ matters, $\theta$ is independent of $N^\alpha$, and $\sigma$, $\omega$ change only by terms along $k^\alpha$ (Problem 6 of \[\[2.6 Problems\]\]).
 
 ### N3322
 
@@ -761,7 +761,7 @@ Priority: low · Graph: no · Manim: no
 Correct algebra, but the opening sentence announces the converse of what is proved.
 
 - [Simplify] The note opens with "if $\omega_{\alpha\beta}=0$, then the congruence is hypersurface orthogonal", but Eq. (2.38) proves the opposite direction; add the one-line converse (if $\tilde B_{[\alpha\beta]}=0$, then $B_{[\alpha\beta]}$ has only terms along $k_\alpha$ or $k_\beta$, so $k_{[\alpha;\beta}k_{\gamma]}=0$) or reword the opening.
-- [Links] Link "Section 2.3.3" to [[2.3.3 Frobenius' theorem]] and "Problem 6" to [[2.6 Problems]].
+- [Links] Link "Section 2.3.3" to \[\[2.3.3 Frobenius' theorem\]\] and "Problem 6" to \[\[2.6 Problems\]\].
 
 ### N3323
 
@@ -828,7 +828,7 @@ Priority: low · Graph: no · Manim: no
 
 Correct problem list; the stated result of Problem 3(c) was verified symbolically.
 
-- [Links] Link the references "Section 1.13, Problem 8" in Problems 4 and 7 to [[1.13 Problems]] and the auxiliary-vector discussion in Problem 6 to [[2.4.1 Transverse metric]].
+- [Links] Link the references "Section 1.13, Problem 8" in Problems 4 and 7 to \[\[1.13 Problems\]\] and the auxiliary-vector discussion in Problem 6 to \[\[2.4.1 Transverse metric\]\].
 
 ### N3330
 
@@ -874,7 +874,7 @@ Priority: low · Graph: no · Manim: no
 
 Correct and clear description of the induced metric and the completeness relations.
 
-- [Example] Add the induced metric of the timelike cylinder $r=R$ in flat spacetime, $\mathrm ds^2_\Sigma=-\mathrm dt^2+R^2\mathrm d\Omega^2$, as a non-null counterpart to [[3.1.4 Light cone in flat spacetime]].
+- [Example] Add the induced metric of the timelike cylinder $r=R$ in flat spacetime, $\mathrm ds^2_\Sigma=-\mathrm dt^2+R^2\mathrm d\Omega^2$, as a non-null counterpart to \[\[3.1.4 Light cone in flat spacetime\]\].
 
 ### N3335
 
@@ -953,7 +953,7 @@ Priority: low · Graph: no · Manim: no
 Compact, correct summary of the null-shell formalism.
 
 - [Correctness] Missing semantic macro: $e^\alpha_Ak^\beta$ in the $\energy{S^{\alpha\beta}}$ formula should use $\mechanical{k}^\beta$.
-- [Links] Link the summarized equations to [[3.11.2 Surface stress-energy tensor]] and [[3.11.3 Intrinsic formulation]], and note that $-\mechanical{k}_\mu\mechanical{u}^\mu=1$ for the observers used in [[3.11.6 Imploding spherical shell]] and [[3.11.8 Cosmological phase transition]].
+- [Links] Link the summarized equations to \[\[3.11.2 Surface stress-energy tensor\]\] and \[\[3.11.3 Intrinsic formulation\]\], and note that $-\mechanical{k}_\mu\mechanical{u}^\mu=1$ for the observers used in \[\[3.11.6 Imploding spherical shell\]\] and \[\[3.11.8 Cosmological phase transition\]\].
 
 ### N3342
 
@@ -965,7 +965,7 @@ Mostly correct and the work-energy interpretation of (3.104) is valuable, but th
 - [Correctness] The observer factor is mis-transformed: "$(-\bar{\mechanical{k}}_\mu\mechanical{u}^\mu)^{-1}=e^\beta(-\mechanical{k}_\mu\mechanical{u}^\mu)$" should be $e^\beta(-\mechanical{k}_\mu\mechanical{u}^\mu)^{-1}$, since $\bar{\mechanical{k}}^\alpha=e^{-\beta}\mechanical{k}^\alpha$; only then is $(-\mechanical{k}_\mu\mechanical{u}^\mu)^{-1}\energy{S^{\alpha\beta}}$ invariant.
 - [Correctness] Symbol clashes: $e^\beta$ (exponential of the reparameterization function $\beta$) sits next to basis vectors $e^\alpha_A$ and the index $\beta$; $\mechanical{\sigma}_{\alpha\beta}$ (shear) and $\sqrt\sigma$ (determinant) clash with the two-metric $\sigma_{AB}$; $\mechanical{\theta}$ (expansion) clashes with $\theta^A$; use an upright $\mathrm e^{\beta}$ (or a named factor) and a distinct shear symbol.
 - [Simplify] Add the one-line derivation of (3.104): $-8\pi\mechanical{p}\mechanical{\theta}=8\pi[\energy{T_{\alpha\beta}}\mechanical{k}^\alpha\mechanical{k}^\beta]$ together with $\mechanical{\theta}\,\mathrm d\mechanical{S}=\mathrm d(\mathrm d\mechanical{S})/\mathrm d\mechanical{\lambda}$, so the sign of $-\mechanical{p}\mechanical{\theta}=[\energy{T_{\alpha\beta}}\mechanical{k}^\alpha\mechanical{k}^\beta]$ is explicit.
-- [Example] Point to [[3.11.8 Cosmological phase transition]] as the worked case with $[\mechanical{\kappa}]\ne0$ and to [[3.11.6 Imploding spherical shell]] where both sides are affine.
+- [Example] Point to \[\[3.11.8 Cosmological phase transition\]\] as the worked case with $[\mechanical{\kappa}]\ne0$ and to \[\[3.11.6 Imploding spherical shell\]\] where both sides are affine.
 
 ### N3343
 
@@ -1023,7 +1023,7 @@ Clean problem list with correct setups (Painlevé-Gullstrand form, de Sitter emb
 
 - [Correctness] Problem 9 quotes "the general relation $\mechanical{p}\mechanical{\theta}=[\energy{T_{\alpha\beta}}\mechanical{k^\alpha}\mechanical{k^\beta}]$", but Eqs. (3.102)-(3.104) give $-\mechanical{p}\mechanical{\theta}=[\energy{T_{\alpha\beta}}\mechanical{k}^\alpha\mechanical{k}^\beta]$ (as also used in 3.11.8); fix the sign.
 - [Correctness] Problem 8 says "Derive the relations (3.109)", but 3.11.5 assigns Problem 8 the derivation of the surface-quantity transformations (3.110); check against the source and make the two notes agree.
-- [Links] Link the referenced sections (3.6.5, 3.6.6, 3.7.5, 3.11.5, 2.3.7) to their notes, for example [[3.11.5 Parameterization of the null generators]].
+- [Links] Link the referenced sections (3.6.5, 3.6.6, 3.7.5, 3.11.5, 2.3.7) to their notes, for example \[\[3.11.5 Parameterization of the null generators\]\].
 - [Simplify] In Problem 2(c), "constant Ricci curvature" undersells the result; the given $R_{\alpha\beta\gamma\delta}$ means a maximally symmetric spacetime of constant curvature (de Sitter).
 
 ### N3348
@@ -1115,7 +1115,7 @@ Priority: low · Graph: no · Manim: no
 
 Hub note with the non-null assumption stated and correct links.
 
-- [Links] Consider linking "Section 3.11" to [[3.11 Null shells]].
+- [Links] Consider linking "Section 3.11" to \[\[3.11 Null shells\]\].
 
 ### N3357
 
@@ -1259,7 +1259,7 @@ The algebra is correct ($2K_2(2K_1+K_2)=0$, the momentum constraint gives $2rK'+
 
 - [Simplify] Rename the radial unit vector $n_a=\partial_ar$ (for example $r_a$, as in 3.2.3), because $n$ denotes the hypersurface normal that defines $K_{ab}$ throughout the chapter.
 - [Simplify] Show the intermediate steps: $K^2-K^{ab}K_{ab}=(K_1+2K_2)^2-K_1^2-2K_2^2=2K_2(2K_1+K_2)$, and in the momentum constraint $(\tfrac13+1)K'+2K/r=0$.
-- [Links] Link "Section 3.13, Problem 1" to [[3.13 Problems]] and hint at the answer: a flat slice with $K\propto r^{-3/2}$ is the Painlevé–Gullstrand slicing of Schwarzschild, with $K_0r_0^{3/2}$ fixed by $M$.
+- [Links] Link "Section 3.13, Problem 1" to \[\[3.13 Problems\]\] and hint at the answer: a flat slice with $K\propto r^{-3/2}$ is the Painlevé–Gullstrand slicing of Schwarzschild, with $K_0r_0^{3/2}$ fixed by $M$.
 
 ### N3371
 
@@ -1278,7 +1278,7 @@ Priority: low · Graph: no · Manim: no
 
 Clear hub with a good motivating paragraph and correct links.
 
-- [Links] The text cites Fig. 3.5, which is embedded in 3.7.1; add "see [[3.7.1 Notation and assumptions]]" or move the embed here, and link "Section 3.11" to [[3.11 Null shells]].
+- [Links] The text cites Fig. 3.5, which is embedded in 3.7.1; add "see \[\[3.7.1 Notation and assumptions\]\]" or move the embed here, and link "Section 3.11" to \[\[3.11 Null shells\]\].
 
 ### N3373
 
@@ -1326,9 +1326,9 @@ Priority: medium · Graph: no · Manim: no
 
 Correct derivation of the Lanczos–Israel relation (3.56), with all algebra checking out, but there is no example of the formula in use.
 
-- [Example] Add a one-paragraph example: a static shell of radius $R$ between a flat interior and a Schwarzschild exterior has $[K^\theta{}_\theta]=(\sqrt{1-2M/R}-1)/R$, giving $\sigma=(1-\sqrt{1-2M/R})/(4\pi R)\approx M/(4\pi R^2)$ for $R\gg M$. Alternatively, point forward to [[3.9 Thin-shell collapse]].
+- [Example] Add a one-paragraph example: a static shell of radius $R$ between a flat interior and a Schwarzschild exterior has $[K^\theta{}_\theta]=(\sqrt{1-2M/R}-1)/R$, giving $\sigma=(1-\sqrt{1-2M/R})/(4\pi R)\approx M/(4\pi R^2)$ for $R\gg M$. Alternatively, point forward to \[\[3.9 Thin-shell collapse\]\].
 - [Simplify] Mention that the first line, $[n_{\alpha;\beta}]=-[\Gamma^\gamma_{\alpha\beta}]n_\gamma$, uses $[n_{\alpha,\beta}]=0$, which follows from $n_\alpha=\varepsilon\partial_\alpha\ell$ with $\ell$ smooth.
-- [Links] Link "Section 3.13, Problem 4" to [[3.13 Problems]].
+- [Links] Link "Section 3.13, Problem 4" to \[\[3.13 Problems\]\].
 
 ### N3378
 
@@ -1337,7 +1337,7 @@ Priority: low · Graph: no · Manim: no
 
 Accurate summary of the Darmois–Israel conditions and the Lanczos equation.
 
-- [Links] Link "Eq. (3.57)" to [[3.7.5 Second junction condition]] and "Section 3.11" to [[3.11 Null shells]].
+- [Links] Link "Eq. (3.57)" to \[\[3.7.5 Second junction condition\]\] and "Section 3.11" to \[\[3.11 Null shells\]\].
 
 ### N3379
 
@@ -1369,7 +1369,7 @@ Priority: low · Graph: no · Manim: no
 
 Clear, faithful chapter overview; it only lacks navigation links to the sections it describes.
 
-- [Links] The prose names "Section 4.1", "Section 4.2" and "Section 4.3" as plain text; link them as [[4.1 Lagrangian formulation]], [[4.2 Hamiltonian formulation]] and [[4.3 Mass and angular momentum]] so the overview works as a roadmap.
+- [Links] The prose names "Section 4.1", "Section 4.2" and "Section 4.3" as plain text; link them as \[\[4.1 Lagrangian formulation\]\], \[\[4.2 Hamiltonian formulation\]\] and \[\[4.3 Mass and angular momentum\]\] so the overview works as a roadmap.
 - [Intuition] Add one sentence explaining why a boundary term is needed (the Hilbert Lagrangian $R$ contains second derivatives of $g_{\alpha\beta}$), so the reader knows what to look for in 4.1.4 and 4.1.5.
 - [Structure] The file starts with a UTF-8 BOM (EF BB BF); save it as UTF-8 without BOM as the Obsidian skill requires.
 
@@ -1401,7 +1401,7 @@ Priority: low · Graph: no · Manim: no
 
 Correct field-theory generalization with a correct Klein–Gordon example; mainly needs a link and one intermediate step.
 
-- [Links] "Gauss’ theorem (Section 3.3)" is plain text; link it to [[3.3 Gauss-Stokes theorem]] (the target exists in 03 Hypersurfaces).
+- [Links] "Gauss’ theorem (Section 3.3)" is plain text; link it to \[\[3.3 Gauss-Stokes theorem\]\] (the target exists in 03 Hypersurfaces).
 - [Simplify] In the second line of the $\delta S$ derivation, state explicitly that $\mathcal L^\alpha\delta q_{,\alpha}=(\mathcal L^\alpha\delta q)_{;\alpha}-\mathcal L^\alpha{}_{;\alpha}\delta q$ is the covariant product rule (valid because $\delta q_{,\alpha}=\delta q_{;\alpha}$ for a scalar), the field analogue of the integration by parts in 4.1.1.
 - [Example] Add the flat-spacetime limit of the final Klein–Gordon equation, $-\partial_t^2\psi+\nabla^2\psi-m^2\psi=0$, so the reader recognizes the curved-spacetime result.
 - [Structure] The file starts with a UTF-8 BOM; save as UTF-8 without BOM.
@@ -1425,7 +1425,7 @@ Priority: medium · Graph: no · Manim: no
 
 The derivation checks out step by step, but it is dense and one cross-reference points to the wrong section.
 
-- [Links] "completeness relations $g^{\alpha\beta}=\varepsilon n^\alpha n^\beta+h^{\alpha\beta}$ ... (see Section 3.1.1)" points to the wrong note: in this vault 3.1.1 is "Defining equations", and the completeness relations are in [[3.1.3 Induced metric]]; also link "Section 1.7" to [[1.7 Metric determinant]] and "Section 1.2" to [[1.2 Covariant differentiation]].
+- [Links] "completeness relations $g^{\alpha\beta}=\varepsilon n^\alpha n^\beta+h^{\alpha\beta}$ ... (see Section 3.1.1)" points to the wrong note: in this vault 3.1.1 is "Defining equations", and the completeness relations are in \[\[3.1.3 Induced metric\]\]; also link "Section 1.7" to \[\[1.7 Metric determinant\]\] and "Section 1.2" to \[\[1.2 Covariant differentiation\]\].
 - [Simplify] Before Eq. (4.16), show the one-line contraction $g^{\alpha\beta}[(\delta\Gamma^\mu_{\alpha\beta})_{;\mu}-(\delta\Gamma^\mu_{\alpha\mu})_{;\beta}]=(g^{\alpha\beta}\delta\Gamma^\mu_{\alpha\beta}-g^{\alpha\mu}\delta\Gamma^\beta_{\alpha\beta})_{;\mu}$ (metric compatibility), and the intermediate steps leading to $\not\!\delta v_\mu=g^{\alpha\beta}(\delta g_{\mu\beta,\alpha}-\delta g_{\alpha\beta,\mu})$, which the text currently only asserts.
 - [Intuition] Add a mechanics analogue for why second derivatives force a boundary term: $L=-\tfrac12q\ddot q$ differs from $\tfrac12\dot q^2$ by the total derivative $-\tfrac12\mathrm d(q\dot q)/\mathrm dt$, so its variation leaves a $\delta\dot q$ endpoint term that fixing $q$ alone cannot remove; this is exactly the role of the $\delta g_{\alpha\beta,\mu}n^\mu$ term in Eq. (4.18).
 - [Simplify] The phrase "covariant differentiation is defined with respect to the reference metric $g_{\alpha\beta}$" can be confused with the flat reference behind $K_0$; say "the unvaried (background) metric".
@@ -1440,7 +1440,7 @@ Correct and short; one step in the variation of $K$ is skipped without justifica
 
 - [Simplify] In $\delta K=-h^{\alpha\beta}\delta\Gamma^\gamma_{\alpha\beta}n_\gamma$, explain why $h^{\alpha\beta}\delta n_{\alpha,\beta}$ drops: $\delta n_\alpha\propto n_\alpha n^\mu n^\nu\delta g_{\mu\nu}$ vanishes on $\partial\mathcal V$, so its tangential derivatives vanish too; also note that $\delta h^{\alpha\beta}=0$ there.
 - [Simplify] State in one sentence that the first two terms in the second line of $\delta K$ vanish because they are tangential derivatives ($h^{\alpha\beta}\delta g_{\mu\alpha,\beta}$ contains only $e^\beta_b\partial_\beta$), mirroring the argument already given in 4.1.4.
-- [Links] Link "Section 3.4" to [[3.4.3 Extrinsic curvature]] and "Eq. (4.18)" to [[4.1.4 Variation of the Hilbert term]].
+- [Links] Link "Section 3.4" to \[\[3.4.3 Extrinsic curvature\]\] and "Eq. (4.18)" to \[\[4.1.4 Variation of the Hilbert term\]\].
 - [Structure] The file starts with a UTF-8 BOM; save as UTF-8 without BOM.
 
 ### N3388
@@ -1524,7 +1524,7 @@ The field Hamilton equations and the Klein–Gordon example check out, but the e
 - [Simplify] In the Klein–Gordon example use $g^{tt}=-1/N^2$ and $\sqrt{-g}=N\sqrt h$ to write $p=\sqrt h\,\dot\psi/N$ and $\mathcal H=N\left[\frac{p^2}{2\sqrt h}+\frac{\sqrt h}{2}(h^{ab}\psi_{,a}\psi_{,b}+m^2\psi^2)\right]$, which makes positivity and the role of the lapse obvious.
 - [Example] Add the flat-space check ($N=1$, $h_{ab}=\delta_{ab}$): $\dot\psi=p$, $\dot p=\nabla^2\psi-m^2\psi$, hence $\ddot\psi=\nabla^2\psi-m^2\psi$, replacing "It is easy to check".
 - [Intuition] Explain why $\mathcal H$ is kept as a density: it integrates with plain $\mathrm d^3y$ in Eq. (4.42), and it carries the factor $N$, so the Hamiltonian depends on the chosen time flow.
-- [Links] Link "Gauss’ theorem" to [[3.3 Gauss-Stokes theorem]] and the foliated region of Fig. 4.4 forward to [[4.2.4 Foliation of the boundary]], where $S_t$ and $\mathcal B$ are described in detail.
+- [Links] Link "Gauss’ theorem" to \[\[3.3 Gauss-Stokes theorem\]\] and the foliated region of Fig. 4.4 forward to \[\[4.2.4 Foliation of the boundary\]\], where $S_t$ and $\mathcal B$ are described in detail.
 - [Structure] The file starts with a UTF-8 BOM; save as UTF-8 without BOM.
 
 ### N3395
@@ -1534,7 +1534,7 @@ Priority: low · Graph: no · Manim: no
 
 Correct geometric bookkeeping with a helpful Table 4.1; it would benefit from a concrete example and a corrected cross-reference.
 
-- [Links] "The three-dimensional completeness relations ... (see Section 3.1.1)": in this vault the completeness relations are in [[3.1.3 Induced metric]], not 3.1.1 "Defining equations"; fix the reference and link it.
+- [Links] "The three-dimensional completeness relations ... (see Section 3.1.1)": in this vault the completeness relations are in \[\[3.1.3 Induced metric\]\], not 3.1.1 "Defining equations"; fix the reference and link it.
 - [Structure] Move Table 4.1 to the start of the note (or repeat it there) so the reader has the $\Sigma_t/S_t/\mathcal B$ dictionary before the derivations.
 - [Example] Add the flat-space example: $\Sigma_t$ the $t=$ const slices, $S_t$ the sphere $r=R$, $\theta^A=(\theta,\phi)$, $\sigma_{AB}=R^2\mathrm{diag}(1,\sin^2\theta)$, $r_a=\partial_ar$, $k=2/R$, $N=1$, $\sqrt{-\gamma}=R^2\sin\theta$.
 - [Simplify] State explicitly the assumption $n_\alpha r^\alpha=0$ on $\mathcal B$ (the slices meet the boundary orthogonally), which is what allows the curves $\beta$ to have tangent $n^\alpha$ and gives Eq. (4.53).
@@ -1551,7 +1551,7 @@ Signs and cancellations in the 3+1 split of the action are correct, but the reus
 - [Simplify] Explain the sign bookkeeping on $\Sigma_{t_1}$ and $\Sigma_{t_2}$ explicitly: $\varepsilon=-1$ on both, and the outward normal is $+n$ on $\Sigma_{t_2}$ but $-n$ on $\Sigma_{t_1}$, giving $-2\int_{\Sigma_{t_2}}K\sqrt h$ and $+2\int_{\Sigma_{t_1}}K\sqrt h$.
 - [Intuition] Point out the meaning of $r_{\alpha;\beta}n^\alpha n^\beta=-r_\alpha a^\alpha$ with $a^\alpha=n^\beta\nabla_\beta n^\alpha$ the acceleration of the normal observers, so $\mathcal K+r_{\alpha;\beta}n^\alpha n^\beta=k$ reads "boundary curvature minus the acceleration term equals the two-surface curvature".
 - [Example] Add the flat-space check of Eq. (4.55): with $t=$ const slices and $S_t$ a sphere of radius $R$, ${}^3R=K_{ab}=0$, $N=1$ and $k=k_0=2/R$, so $S_G=0$ exactly, as claimed.
-- [Links] Link "Section 3.5.3" to [[3.5.3 Ricci scalar]] and "Eq. (4.12)" to [[4.1.3 General relativity]].
+- [Links] Link "Section 3.5.3" to \[\[3.5.3 Ricci scalar\]\] and "Eq. (4.12)" to \[\[4.1.3 General relativity\]\].
 - [Structure] The file starts with a UTF-8 BOM; save as UTF-8 without BOM.
 
 ### N3397
@@ -1564,7 +1564,7 @@ Eqs. (4.57), (4.59), (4.61) and (4.62) check out, but the table mislabels the Ha
 - [Correctness] The table describes $\mathcal H_G$ as "The gravitational energy density"; this is misleading because the volume part $N(K^{ab}K_{ab}-K^2-{}^3R)-2N_a(K^{ab}-Kh^{ab})_{|b}$ is a combination of the constraints and vanishes for vacuum solutions (4.2.8–4.2.9); describe it as the volume (constraint) part of the Hamiltonian density.
 - [Simplify] Show the inversion leading to Eq. (4.62): the trace of (4.59) gives $16\pi p=-2\sqrt h\,K$, hence $\sqrt h\,K^{ab}=16\pi(p^{ab}-\tfrac12ph^{ab})$.
 - [Intuition] After Eq. (4.61), note that the bulk integrand is $-N\hat{\mathcal C}-2N^a\hat{\mathcal C}_a$ with the constraints defined in 4.2.7, so the lapse and shift act as Lagrange multipliers and on solutions only the boundary term survives.
-- [Example] Preview the payoff: for Schwarzschild with static slicing ($N=\sqrt f$, $f=1-2M/R$, $N^a=0$, $k=2\sqrt f/R$, $k_0=2/R$, $\sqrt\sigma=R^2\sin\theta$) the boundary term gives $H_G=-R(f-\sqrt f)\to M$ as $R\to\infty$, linking forward to [[4.2.9 Value of the Hamiltonian for solutions]].
+- [Example] Preview the payoff: for Schwarzschild with static slicing ($N=\sqrt f$, $f=1-2M/R$, $N^a=0$, $k=2\sqrt f/R$, $k_0=2/R$, $\sqrt\sigma=R^2\sin\theta$) the boundary term gives $H_G=-R(f-\sqrt f)\to M$ as $R\to\infty$, linking forward to \[\[4.2.9 Value of the Hamiltonian for solutions\]\].
 - [Structure] The file starts with a UTF-8 BOM; save as UTF-8 without BOM.
 
 ### N3398
@@ -1590,7 +1590,7 @@ Faithful and correct transcription (Eqs. 4.74-4.79 check out for Poisson's sign 
 
 - [Structure] Add a short numbered "3+1 recipe" box after Eq. (4.76): (1) choose $N$, $N^a$; (2) solve the constraints (4.77) for initial $h_{ab}$, $K_{ab}$; (3) evolve with (4.78)-(4.79); and state that the evolution preserves the constraints (Bianchi identities), which explains why only the initial data are constrained.
 - [Intuition] After Eq. (4.75), explain why $N$ and $N^a$ have no evolution equations: they appear without time derivatives, so they act as Lagrange multipliers whose variation yields the constraints $\mathcal C=0$, $\mathcal C_a=0$ (the gauge freedom of choosing the foliation).
-- [Links] Link the cited material: Eq. (4.73) to [[4.2.7 Variation of the Hamiltonian]], Eqs. (4.57)/(4.62) to [[4.2.5 Gravitational action]]/[[4.2.6 Gravitational Hamiltonian]], Eq. (4.37) to [[4.2.2 3 + 1 decomposition]], and "Section 4.5, Problem 4" to [[4.5 Problems#Problem 4]].
+- [Links] Link the cited material: Eq. (4.73) to \[\[4.2.7 Variation of the Hamiltonian\]\], Eqs. (4.57)/(4.62) to \[\[4.2.5 Gravitational action\]\]/\[\[4.2.6 Gravitational Hamiltonian\]\], Eq. (4.37) to \[\[4.2.2 3 + 1 decomposition\]\], and "Section 4.5, Problem 4" to \[\[4.5 Problems#Problem 4\]\].
 - [Simplify] Note in one sentence that Eq. (4.78) is the definition of $K_{ab}$ rearranged ($K_{ab}=\frac{1}{2N}(\dot h_{ab}-N_{a|b}-N_{b|a})$), and that this $K_{ab}$ has the opposite sign to the MTW/numerical-relativity convention, so readers comparing with ADM codes are not confused by the signs in (4.79).
 - [Structure] The physical-quantities table omits $\mathcal C$, $\mathcal C_a$, $\mathcal H_{ab}$, $\mathcal P^{ab}$ and $\mathcal L_N$, which carry the main equations; add them (and fix the typo "constraints equations" to "constraint equations").
 
@@ -1602,8 +1602,8 @@ Priority: low · Graph: no · Manim: no
 Short, correct note; Eq. (4.80) is consistent with the later ADM and angular-momentum definitions, but it does not show why the volume term drops out.
 
 - [Simplify] Add one line showing the mechanism: the volume part of $H_G$ is lapse and shift multiplied by the constraint densities $\mathcal C$, $\mathcal C_a$, so it vanishes on solutions of (4.77), leaving only the $S_t$ term.
-- [Intuition] Add a sentence that this is the general-relativity analogue of Gauss's law: the energy of a solution is read off from the fields on the boundary, which is exactly what [[4.3.1 Hamiltonian definitions]] exploits.
-- [Structure] The table lists $\theta^A$ but not $\sigma$ (determinant of $\sigma_{AB}$) or the surface $S_t$; add them, and link Eq. (4.61) to [[4.2.6 Gravitational Hamiltonian]].
+- [Intuition] Add a sentence that this is the general-relativity analogue of Gauss's law: the energy of a solution is read off from the fields on the boundary, which is exactly what \[\[4.3.1 Hamiltonian definitions\]\] exploits.
+- [Structure] The table lists $\theta^A$ but not $\sigma$ (determinant of $\sigma_{AB}$) or the surface $S_t$; add them, and link Eq. (4.61) to \[\[4.2.6 Gravitational Hamiltonian\]\].
 
 ### N3401
 
@@ -1623,7 +1623,7 @@ Correct and well structured, but the key idea (mass = Hamiltonian for asymptotic
 
 - [Structure] Put the two definitions side by side in a small table or callout: generator, $(N,N^a)$ choice, resulting formula (4.81) vs (4.82), and the sign convention, so the parallel with Noether charges (energy for $\partial_t$, angular momentum for $\partial_\phi$) is visible.
 - [Intuition] Explain why the subtraction $k_0$ is needed: in flat space $k=2/R$ and $\oint k\sqrt\sigma\,\mathrm d^2\theta=8\pi R$ diverges as $R\to\infty$, so subtracting the flat embedding makes $M=0$ for Minkowski and finite otherwise.
-- [Example] Point forward to [[4.3.2 Mass and angular momentum for stationary, axially symmetric spacetimes]] with the one-line Schwarzschild check ($k-k_0\approx-2m/R^2$ times $4\pi R^2$ gives $M=m$).
+- [Example] Point forward to \[\[4.3.2 Mass and angular momentum for stationary, axially symmetric spacetimes\]\] with the one-line Schwarzschild check ($k-k_0\approx-2m/R^2$ times $4\pi R^2$ gives $M=m$).
 - [Structure] The table gives $\energy{H_G^{\mathrm{solution}}}$ unit "—" while 4.2.9 gives $\unit{\mathrm m}$; state that its dimension depends on the generator (m for translations, m$^2$ for rotations), and add $\phi^a$ and $\sqrt{\sigma}$, which the formulas use.
 
 ### N3403
@@ -1645,7 +1645,7 @@ Priority: medium · Graph: no · Manim: no
 
 Derivations verified (including $\Gamma^t_{rt}=m(1+2m/r)/r^2$ and the factors in Eqs. 4.89-4.90), but the chain from surface to volume integral is dense and lacks a physical example.
 
-- [Example] Add a worked check of Eq. (4.89) for static dust ($T=-\rho$, $n\cdot\xi_{(t)}\approx-1$): $(T_{\alpha\beta}-\frac12Tg_{\alpha\beta})n^\alpha\xi^\beta_{(t)}=\rho/2$, so $M=\int\rho\sqrt h\,\mathrm d^3y$; then mention [[4.5 Problems#Problem 6]] ($\rho+3p$: pressure gravitates).
+- [Example] Add a worked check of Eq. (4.89) for static dust ($T=-\rho$, $n\cdot\xi_{(t)}\approx-1$): $(T_{\alpha\beta}-\frac12Tg_{\alpha\beta})n^\alpha\xi^\beta_{(t)}=\rho/2$, so $M=\int\rho\sqrt h\,\mathrm d^3y$; then mention \[\[4.5 Problems#Problem 6\]\] ($\rho+3p$: pressure gravitates).
 - [Intuition] Explain why $J$ carries $1/16\pi$ while $M$ carries $-1/8\pi$ (the well-known Komar factor-of-2 mismatch), and that the normalizations are fixed here by matching to $k-k_0$ and $K_{ab}\phi^ar^b$.
 - [Intuition] Sharpen the closing claim that only stationary, axially symmetric spacetimes allow hypersurface integrals: the Komar mass needs only the timelike Killing vector (stationarity), and $J$ only the axial Killing vector.
 - [Simplify] In the first derivation state why $\xi^\alpha_{(t);\beta}=\Gamma^\alpha_{\beta t}$ (the components of $\xi_{(t)}=\partial_t$ are constant) and that the $g^{t\phi}$ contribution to $\Gamma^t_{rt}$ is $O(j^2)$ and dropped.
@@ -1660,7 +1660,7 @@ Correct but very short; the difference between the "spatial infinity" and "null 
 
 - [Manim] Animate on a $(r,t)$ diagram the spheres $S(t,r)$ moving to large $r$ along a horizontal line $t=$ const (spatial infinity, $u\to-\infty$) and along a $45^\circ$ line $u=$ const (null infinity), with an outgoing radiation shell, to show which limit crosses the radiation.
 - [Intuition] Add that $M_{\mathrm{ADM}}(t)$ is in fact independent of $t$ (shown in the Vaidya note), whereas $M_{\mathrm{BS}}(u)$ genuinely depends on $u$; the notation of Eqs. (4.91)-(4.92) otherwise suggests both evolve.
-- [Simplify] State that $u=t-r$ is the flat-space form and that in curved spacetime one uses $t-r^*$ (as in [[4.3.5 Distinction between ADM and Bondi-Sachs masses -  Vaidya spacetime]]).
+- [Simplify] State that $u=t-r$ is the flat-space form and that in curved spacetime one uses $t-r^*$ (as in \[\[4.3.5 Distinction between ADM and Bondi-Sachs masses -  Vaidya spacetime\]\]).
 - [Example] Give a concrete scale for Eq. (4.93): GW150914 radiated about $3\,M_\odot$ of Bondi mass within a fraction of a second, while the ADM mass stayed at the initial total of about $65\,M_\odot$.
 
 ### N3406
@@ -1694,7 +1694,7 @@ Priority: low · Graph: no · Manim: no
 
 Reference list, transcribed faithfully.
 
-- [Links] Link the in-text references "Section 4.2.4", "Section 4.2.8", "Sections 4.3.3 and 4.3.5", "Section 4.3.4" and "Problem 7" to [[4.2.4 Foliation of the boundary]], [[4.2.8 Hamilton's equations]], [[4.3.3 Komar formulae]], [[4.3.5 Distinction between ADM and Bondi-Sachs masses -  Vaidya spacetime]], [[4.3.4 Bondi-Sachs mass]] and [[4.5 Problems#Problem 7]].
+- [Links] Link the in-text references "Section 4.2.4", "Section 4.2.8", "Sections 4.3.3 and 4.3.5", "Section 4.3.4" and "Problem 7" to \[\[4.2.4 Foliation of the boundary\]\], \[\[4.2.8 Hamilton's equations\]\], \[\[4.3.3 Komar formulae\]\], \[\[4.3.5 Distinction between ADM and Bondi-Sachs masses -  Vaidya spacetime\]\], \[\[4.3.4 Bondi-Sachs mass\]\] and \[\[4.5 Problems#Problem 7\]\].
 
 ### N3409
 
@@ -1712,7 +1712,7 @@ Priority: low · Graph: no · Manim: no
 
 Clear chapter overview that maps the sections and links them to earlier chapters.
 
-- [Links] Turn the plain-text references (Sections 5.1–5.5, Chapters 2–4) into wiki links to [[5.1 Schwarzschild black hole]], [[5.2 Reissner-Nordström black hole]], [[5.3 Kerr black hole]], [[5.4 General properties of black holes]], [[5.5 The laws of black-hole mechanics]] and the relevant chapter hubs.
+- [Links] Turn the plain-text references (Sections 5.1–5.5, Chapters 2–4) into wiki links to \[\[5.1 Schwarzschild black hole\]\], \[\[5.2 Reissner-Nordström black hole\]\], \[\[5.3 Kerr black hole\]\], \[\[5.4 General properties of black holes\]\], \[\[5.5 The laws of black-hole mechanics\]\] and the relevant chapter hubs.
 - [Structure] The file starts with a UTF-8 BOM, as do almost all notes in this folder (all of this batch except 5.1.1 and 5.1.3); strip the BOMs to meet the vault's UTF-8 without BOM rule.
 
 ### N3411
@@ -1733,7 +1733,7 @@ Correct but compressed proof sketch that states Eq. (5.4) without saying where i
 
 - [Simplify] After "The third gives $\psi'=0$", explain that $\psi$ can still depend on $t$, and that the rescaling $\mathrm d\bar t=e^{\psi(t)}\mathrm dt$ absorbs it. That step is what makes the exterior static.
 - [Intuition] Add a short physical paragraph: in vacuum, $\partial_t m=0$ means no energy flux, so a pulsating spherical star cannot radiate gravitational waves; its exterior field is as unaware of the pulsation as the Newtonian field outside a spherical shell.
-- [Links] Link the "time-dependent mass distribution" statement to the Vaidya example ([[5.1.8 Distinction between event and apparent horizons -  Vaidya spacetime]]) as a non-vacuum counterexample in which $m$ does change.
+- [Links] Link the "time-dependent mass distribution" statement to the Vaidya example (\[\[5.1.8 Distinction between event and apparent horizons -  Vaidya spacetime\]\]) as a non-vacuum counterexample in which $m$ does change.
 
 ### N3413
 
@@ -1744,7 +1744,7 @@ Short and correct; Eq. (5.19) checks out, but the claim that $t_\alpha\propto-\p
 
 - [Simplify] Show the lowering explicitly: $t_U=g_{UV}t^V=-\frac{16M^3}{r}e^{-r/2M}\frac{V}{4M}$ on $U=0$, so $t_\alpha=-\frac{4M^2V}{r}e^{-r/2M}\partial_\alpha U$ (with $V>0$ on the future horizon).
 - [Graph] Kruskal $U$–$V$ diagram with the Killing flow: draw arrows of $(t^U,t^V)=(-U,V)/4M$ on a grid in $[-2,2]^2$ to show hyperbolic "boost" flow lines that vanish at the origin (the bifurcation sphere) and run along the horizons.
-- [Links] Link "Eqs. (5.5)–(5.8)" to [[5.1.2 Kruskal coordinates]] and point to the Kerr analogue [[5.3.11 Bifurcation two-sphere]].
+- [Links] Link "Eqs. (5.5)–(5.8)" to \[\[5.1.2 Kruskal coordinates\]\] and point to the Kerr analogue \[\[5.3.11 Bifurcation two-sphere\]\].
 
 ### N3414
 
@@ -1768,7 +1768,7 @@ Correct and brief (Eqs. 5.10–5.11 and the outgoing slope $2/f$ check out), but
 - [Intuition] Spell out the outgoing slope: $\mathrm dv/\mathrm dr=2/f$ is positive outside, infinite at $r=2M$ (the outgoing ray stays at $r=2M$) and negative inside (outgoing rays move to smaller $r$). This is why nothing escapes.
 - [Simplify] Introduce $\tilde t=v-r$ and say that Fig. 5.3 plots $\tilde t$ against $r$, so ingoing rays sit at 45°. Readers otherwise cannot see why the ingoing lines are straight.
 - [Manim] Move a light cone along $r$ from $4M$ to $0.5M$ in the $(r,\tilde t)$ plane, with the outgoing edge rotating from 45° to vertical at $r=2M$ and then tipping inward.
-- [Links] Link "regions I and II / IV and I" to the region figure in [[5.1.2 Kruskal coordinates]].
+- [Links] Link "regions I and II / IV and I" to the region figure in \[\[5.1.2 Kruskal coordinates\]\].
 
 ### N3416
 
@@ -1777,7 +1777,7 @@ Priority: medium · Graph: yes · Manim: no
 
 Clear and correct metric derivation (Eq. 5.12 checks out), with one region-label typo.
 
-- [Correctness] "an alternative coordinate system is produced that covers regions **VI** and **I**" — there is no region VI; it should be regions **IV** and **I** (the white-hole and exterior regions), as in [[5.1.3 Eddington-Finkelstein coordinates]].
+- [Correctness] "an alternative coordinate system is produced that covers regions **VI** and **I**" — there is no region VI; it should be regions **IV** and **I** (the white-hole and exterior regions), as in \[\[5.1.3 Eddington-Finkelstein coordinates\]\].
 - [Simplify] Write out the substitution $\mathrm dt=\mathrm dT-f^{-1}\sqrt{2M/r}\,\mathrm dr$ and the two-line expansion that gives Eq. (5.12). Also note that $\mathrm dT=\mathrm d\tau$ holds only along the infalling worldlines, not as a general identity.
 - [Intuition] Add the "river model" reading: space flows inward at the Newtonian escape speed $\sqrt{2M/r}$, which reaches the speed of light exactly at $r=2M$.
 - [Graph] Plot the inflow speed $\sqrt{2M/r}$ against $r/M\in[0.5,6]$ with a horizontal line at 1, marking $r=2M$.
@@ -1801,7 +1801,7 @@ Priority: low · Graph: no · Manim: no
 Short qualitative note that is correct and readable.
 
 - [Simplify] Add a sentence saying why the observer cannot avoid $r=0$: in region II, $r$ is a timelike coordinate and every future-directed worldline has $\mathrm dr<0$.
-- [Links] Link "Fig. 5.2" to [[5.1.2 Kruskal coordinates]] and the region labels to the Penrose diagram in [[5.1.5 Penrose-Carter diagram]].
+- [Links] Link "Fig. 5.2" to \[\[5.1.2 Kruskal coordinates\]\] and the region labels to the Penrose diagram in \[\[5.1.5 Penrose-Carter diagram\]\].
 
 ### N3419
 
@@ -1822,7 +1822,7 @@ Priority: medium · Graph: yes · Manim: yes
 Correct and well argued (I re-derived $\kappa=2m/r^2$, $k^\alpha{}_{;\alpha}=2(r-m)/r^2$ and $g^{\alpha\beta}\Phi_{,\alpha}\Phi_{,\beta}=-4\,\mathrm dm/\mathrm dv$), but the teleological point would land better with an explicit example.
 
 - [Simplify] Give $k^\alpha=(k^v,k^r)=(2,f)$ explicitly and show that $k_\alpha k^\alpha=0$; readers can then check $\kappa=f_{,r}=2m/r^2$ and the divergence themselves.
-- [Example] Work a concrete linear accretion $m(v)=m_1+(m_2-m_1)(v-v_1)/(v_2-v_1)$, integrate the outgoing null equation $\mathrm dr/\mathrm dv=f/2$ backward from $r=2m_2$ at $v_2$, and show that the event horizon starts growing before $v_1$ (see Problem 2 in [[5.7 Problems]]).
+- [Example] Work a concrete linear accretion $m(v)=m_1+(m_2-m_1)(v-v_1)/(v_2-v_1)$, integrate the outgoing null equation $\mathrm dr/\mathrm dv=f/2$ backward from $r=2m_2$ at $v_2$, and show that the event horizon starts growing before $v_1$ (see Problem 2 in \[\[5.7 Problems\]\]).
 - [Graph] For $m_1=1$, $m_2=1.5$, $v_1=0$, $v_2=5$: plot the apparent horizon $r=2m(v)$ and the numerically integrated event horizon $r(v)$ on axes $v\in[-10,15]$, $r\in[1.5,3.5]$.
 - [Manim] Animate the shell of null dust falling in while the event horizon (already growing in anticipation) and the apparent horizon (jumping only when the dust arrives) evolve over $v$, to show the teleological behaviour.
 
@@ -1834,7 +1834,7 @@ Priority: medium · Graph: no · Manim: no
 Very short note whose only equation has the wrong sign.
 
 - [Correctness] "$g_{\alpha\beta}t^\alpha t^\beta=1-\frac{2M}{r}$" has the wrong sign: $g_{\alpha\beta}t^\alpha t^\beta=g_{tt}=-(1-2M/r)$, negative (timelike) outside and positive (spacelike) inside, as the preceding sentence says.
-- [Intuition] Add that a Killing vector generates a symmetry flow, and that on a Killing horizon this flow moves points along the null generators. Link to [[5.1.10 Bifurcation two-sphere]], where it is shown that $t^\alpha$ is tangent to the generators.
+- [Intuition] Add that a Killing vector generates a symmetry flow, and that on a Killing horizon this flow moves points along the null generators. Link to \[\[5.1.10 Bifurcation two-sphere\]\], where it is shown that $t^\alpha$ is tangent to the generators.
 
 ### N3422
 
@@ -1853,7 +1853,7 @@ Priority: low · Graph: yes · Manim: no
 Correct and compact derivation ($m'=Q^2/2r^2$ follows from Eq. 5.20 and Eq. 5.4), with the stress-tensor algebra left to the reader.
 
 - [Simplify] Show the "few steps of algebra" for Eq. (5.20): with $F^{tr}=Q/r^2$, $F^{\mu\nu}F_{\mu\nu}=-2Q^2/r^4$, so $T^t{}_t=T^r{}_r=\frac{1}{4\pi}(-\frac{Q^2}{r^4}+\frac{Q^2}{2r^4})=-\frac{Q^2}{8\pi r^4}$.
-- [Links] Link "Eq. (5.2)" and "Eqs. (5.4)" to [[5.1.1 Birkhoff's theorem]], and "Stokes’ theorem (Section 3.5.3)" and "Section 4.3" to the corresponding notes.
+- [Links] Link "Eq. (5.2)" and "Eqs. (5.4)" to \[\[5.1.1 Birkhoff's theorem\]\], and "Stokes’ theorem (Section 3.5.3)" and "Section 4.3" to the corresponding notes.
 - [Graph] Plot $m(r)/M=1-Q^2/(2Mr)$ and $f(r)$ against $r/M\in[0.2,5]$ for $Q/M=0.8$, marking $r_\pm$ and the radius $Q^2/2M$ where $m$ turns negative.
 
 ### N3424
@@ -1889,7 +1889,7 @@ Correct and well motivated (Eqs. 5.34, 5.37–5.43 re-derived, including the Fro
 
 - [Simplify] In the Frobenius step, show that $t^{\alpha;\beta}t_\alpha=-\kappa t^\beta$ (Killing antisymmetry). This is the only non-obvious sign in the chain to $-2\kappa^2t_\gamma$.
 - [Graph] For $Q/M=0,0.6,0.9$, plot the local acceleration $a(r)=\frac12f^{-1/2}f'$ and the redshifted $a_\infty(r)=\frac12f'$ against $r/M$ from $r_+$ to $6$, showing $a$ diverging while $a_\infty\to\kappa$.
-- [Links] Link "Section 5.1.9" to [[5.1.9 Killing horizon]] and "Section 5.2.2" to [[5.2.2 Kruskal coordinates]].
+- [Links] Link "Section 5.1.9" to \[\[5.1.9 Killing horizon\]\] and "Section 5.2.2" to \[\[5.2.2 Kruskal coordinates\]\].
 
 ### N3427
 
@@ -1908,7 +1908,7 @@ Priority: low · Graph: yes · Manim: no
 Correct reference note (metric, inverse, and the Kretschmann scalar 5.47 verified) that would benefit from limiting cases.
 
 - [Intuition] Add the limits: $a=0$ recovers Schwarzschild, and $M=0$ gives flat space in oblate spheroidal coordinates. Note that for $r\gg M$, the $g_{t\phi}$ term reduces to the Lense–Thirring term $-4J\sin^2\theta/r\,\mathrm dt\,\mathrm d\phi$.
-- [Simplify] Say explicitly where $\rho^2=0$ is: $r=0$ and $\theta=\pi/2$, which is a ring rather than a point. Link to [[5.3.8 The nature of the singularity]].
+- [Simplify] Say explicitly where $\rho^2=0$ is: $r=0$ and $\theta=\pi/2$, which is a ring rather than a point. Link to \[\[5.3.8 The nature of the singularity\]\].
 - [Graph] Plot $M^4R_{\alpha\beta\gamma\delta}R^{\alpha\beta\gamma\delta}$ from Eq. (5.47) for $a/M=0.9$ against $r/M\in[0.05,3]$ at $\theta=\pi/2$ and $\theta=0$, showing the divergence only in the equatorial plane at $r\to0$.
 
 ### N3429
@@ -1918,7 +1918,7 @@ Priority: low · Graph: yes · Manim: no
 
 Correct result (Eq. 5.80 verified using $1-a\Omega_H\sin^2\theta=\rho^2/(r_+^2+a^2)$), but it does not say which coordinates the covector $\xi_\alpha\propto\partial_\alpha r$ is written in, and one cross-reference points to the wrong note.
 
-- [Links] "We shall return to this remarkable property in Section 5.5.1": in this vault the uniformity of $\kappa$ is proved in [[5.5.2 Zeroth law]], not [[5.5.1 Preliminaries]].
+- [Links] "We shall return to this remarkable property in Section 5.5.1": in this vault the uniformity of $\kappa$ is proved in \[\[5.5.2 Zeroth law\]\], not \[\[5.5.1 Preliminaries\]\].
 - [Simplify] State that $\xi_\alpha=(1-a\Omega_H\sin^2\theta)\partial_\alpha r$ holds in the ingoing coordinates $(v,r,\theta,\psi)$ of Eq. (5.65); in Boyer–Lindquist coordinates $\xi_\alpha$ vanishes at $\Delta=0$. Also add the identity $1-a\Omega_H\sin^2\theta=\rho^2/(r_+^2+a^2)$, which makes the $\theta$-independence visible.
 - [Graph] Plot $M\kappa$ against $a/M\in[0,1]$, falling from $1/4$ to 0, alongside $M\Omega_H$ rising to $1/2$.
 
@@ -1930,7 +1930,7 @@ Priority: low · Graph: no · Manim: no
 Correct and concise; the relation to the old $k^\alpha$ is stated without explaining why it is finite on the horizon.
 
 - [Simplify] In the bracketed remark, note that $k^\alpha_{\mathrm{old}}$ from Eq. (5.60) has components proportional to $1/\Delta$, so $\Delta k^\alpha_{\mathrm{old}}$ stays finite at $r_+$; otherwise "evaluated on the horizon" reads as zero.
-- [Links] Link "Eq. (5.78)" to [[5.3.10 Surface gravity]], "Section 5.3.6" to [[5.3.6 Principal null congruences]], and add a pointer to the Schwarzschild case [[5.1.10 Bifurcation two-sphere]].
+- [Links] Link "Eq. (5.78)" to \[\[5.3.10 Surface gravity\]\], "Section 5.3.6" to \[\[5.3.6 Principal null congruences\]\], and add a pointer to the Schwarzschild case \[\[5.1.10 Bifurcation two-sphere\]\].
 
 ### N3431
 
@@ -1939,7 +1939,7 @@ Priority: low · Graph: no · Manim: no
 
 Correct (Smarr's formula verified symbolically via $r_+^2+a^2=2Mr_+$), but it skips the algebra and has one wrong cross-reference.
 
-- [Links] "We will generalize Smarr’s formula ... in Section 5.5.2": in this vault the generalization is [[5.5.3 Generalized Smarr formula]]; [[5.5.2 Zeroth law]] is the wrong target.
+- [Links] "We will generalize Smarr’s formula ... in Section 5.5.2": in this vault the generalization is \[\[5.5.3 Generalized Smarr formula\]\]; \[\[5.5.2 Zeroth law\]\] is the wrong target.
 - [Simplify] Show the three-line check: $2\Omega_HJ=2Ma^2/(r_+^2+a^2)=a^2/r_+$ and $\kappa A/4\pi=r_+-M$, so the sum is $(a^2+r_+^2)/r_+-M=2M-M=M$.
 - [Intuition] Add a scaling remark: $M$ has degree 1 and $A$, $J$ have degree 2, so Euler's theorem for homogeneous functions gives $M=2\Omega_HJ+2\frac{\kappa}{8\pi}A$ directly from the variation law.
 
@@ -1950,9 +1950,9 @@ Priority: low · Graph: no · Manim: no
 
 Correct derivation outline, but the final substitution is left to the reader, the sign claim is slightly overstated, and one cross-reference is wrong.
 
-- [Links] "to which we shall return in Section 5.5.4": the second law is [[5.5.5 Second law]] in this vault; [[5.5.4 First law]] is the wrong target.
+- [Links] "to which we shall return in Section 5.5.4": the second law is \[\[5.5.5 Second law\]\] in this vault; \[\[5.5.4 First law\]\] is the wrong target.
 - [Simplify] Write out the collection step: $\frac{\delta A}{8\pi}=\frac{r_+(r_+\delta M-a\delta a)}{r_+-M}+a\delta a=\frac{r_+^2\delta M-Ma\delta a}{r_+-M}$, then use $M\delta a=\delta J-a\delta M$ and $r_+^2+a^2=2Mr_+$ to reach Eq. (5.85).
-- [Simplify] [[5.3.5 The Penrose process]] gives $\delta M-\Omega_H\delta J>0$ only for particles that cross the horizon along timelike worldlines; for null particles it is $\ge0$. "Always increases" should therefore read "never decreases".
+- [Simplify] \[\[5.3.5 The Penrose process\]\] gives $\delta M-\Omega_H\delta J>0$ only for particles that cross the horizon along timelike worldlines; for null particles it is $\ge0$. "Always increases" should therefore read "never decreases".
 
 ### N3433
 
@@ -1996,7 +1996,7 @@ Clear qualitative explanation that is correct; the scenario would benefit from n
 
 - [Example] Add the maximal extractable energy: $M-M_{\mathrm{irr}}$, with $M_{\mathrm{irr}}=\sqrt{A/16\pi}$, which is about 29% of $M$ for $a=M$. This makes "self-limiting" quantitative.
 - [Manim] Animate a particle entering the ergosphere (top view with $r_+$ and $r_{\mathrm{sl}}$ circles), splitting into a negative-energy fragment that falls through $r_+$ and a positive-energy fragment that escapes. Show the hole's $J$ and $M$ counters decreasing.
-- [Links] Link "static limit" and "ergosphere" to [[5.3.3 Static limit -  static observers]] and the final inequality to [[5.3.13 Variation law]].
+- [Links] Link "static limit" and "ergosphere" to \[\[5.3.3 Static limit -  static observers\]\] and the final inequality to \[\[5.3.13 Variation law\]\].
 
 ### N3437
 
@@ -2007,7 +2007,7 @@ Correct (the choices making $\Theta=0$, $P=\tilde E\rho^2$, Eqs. 5.62–5.63 and
 
 - [Intuition] Explain the choice $\tilde L=a\tilde E\sin^2\theta$: it is the unique choice that keeps $\theta$ constant and makes $R$ a perfect square. These rays are the Kerr analogue of purely radial light rays.
 - [Simplify] Add $r^\sharp$, $P$, $R$ and $\Theta$ to the physical-quantity table, and wrap $r^\sharp$ in the same macro as $r^*$.
-- [Links] Link "Section 5.7, Problem 4" to [[5.7 Problems]] and "Section 5.3.9" to [[5.3.9 Maximal extension of the Kerr spacetime]].
+- [Links] Link "Section 5.7, Problem 4" to \[\[5.7 Problems\]\] and "Section 5.3.9" to \[\[5.3.9 Maximal extension of the Kerr spacetime\]\].
 
 ### N3438
 
@@ -2018,7 +2018,7 @@ Correct (I verified the split of Eq. 5.65, $-l_\alpha$ in Eq. 5.70 and the quart
 
 - [Simplify] Show how Eq. (5.70) follows: $\sin\theta\,e^{i\psi}=(x+iy)(r-ia)/(r^2+a^2)$, so the real and imaginary parts give the $\mathrm dx$ and $\mathrm dy$ coefficients.
 - [Graph] Plot surfaces of constant $r$ in the $x$–$z$ plane ($y=0$) for $a=1$: the ellipses $x^2/(r^2+a^2)+z^2/r^2=1$ for $r=0.25,0.5,1,2$, which degenerate to the disk $r=0$ bounded by the ring $x^2+y^2=a^2$.
-- [Links] Link "Section 5.7, Problem 5" to [[5.7 Problems]] and "Eq. (5.65)" to [[5.3.6 Principal null congruences]].
+- [Links] Link "Section 5.7, Problem 5" to \[\[5.7 Problems\]\] and "Eq. (5.65)" to \[\[5.3.6 Principal null congruences\]\].
 
 ### N3439
 
@@ -2029,7 +2029,7 @@ Short and correct transcription of the ring-singularity argument, but the oblate
 
 - [Graph] Add a 2D plot in the $x$–$z$ half-plane ($\phi=0$) of the Kerr–Schild coordinate lines: ellipses $r=\text{const}$ ($x=\sqrt{r^2+a^2}\sin\theta$, $z=r\cos\theta$) for $r/a\in\{0,0.25,0.5,1,2\}$ and hyperbolae $\theta=\text{const}$, with the disk $r=0$, $|x|\le a$ as a thick segment and the ring at $x=\pm a$ marked; this shows directly why $r=0$ is a disk and why only its rim is singular.
 - [Intuition] After "corresponds to the entire disk", add one sentence explaining that $r$ is not a radius here: surfaces of constant $r$ are confocal oblate spheroids that degenerate to the disk as $r\to0$, and $\rho^2=r^2+a^2\cos^2\theta$ vanishes only where both $r=0$ and $\cos\theta=0$.
-- [Manim] Animate an observer moving down the symmetry axis ($\theta=0$) through the disk centre: show $\rho^2=r^2+a^2$ staying positive, the observer passing through the ring, and the coordinate $r$ continuing to negative values (link forward to [[5.3.9 Maximal extension of the Kerr spacetime]]).
+- [Manim] Animate an observer moving down the symmetry axis ($\theta=0$) through the disk centre: show $\rho^2=r^2+a^2$ staying positive, the observer passing through the ring, and the coordinate $r$ continuing to negative values (link forward to \[\[5.3.9 Maximal extension of the Kerr spacetime\]\]).
 - [Structure] File starts with a UTF-8 BOM; save as UTF-8 without BOM per the vault rules.
 
 ### N3440
@@ -2043,7 +2043,7 @@ Faithful but terse transcription with two good native figures; one coordinate ty
 - [Structure] Fig. 5.13 labels the dashed curves "r = r₁" without explanation; state in the caption or text what $r_1$ is (presumably the curve where one Kruskal patch is matched to the next) or relabel it if it is a transcription artefact.
 - [Simplify] Show the one-line check that $-f\,\mathrm du\,\mathrm dv=-2\kappa_+^{-2}\mathrm dU_+\mathrm dV_+$: $\mathrm dU_+\mathrm dV_+=\pm\kappa_+^2e^{\kappa_+(v-u)}\mathrm du\,\mathrm dv$ and $f\simeq\pm2e^{\kappa_+(v-u)}$, so the signs cancel; the reader currently has to reconstruct this.
 - [Intuition] Explain in one sentence why the $\theta=0$ section loses generality (the axis misses the ring singularity, so it sees $r=0$ as regular) and that this is exactly why the extension to $r<0$ is possible there.
-- [Links] Turn the plain references "Section 5.2.2", "Section 5.2.3", "Section 5.3.6" and "Section 5.7, Problem 3" into wiki links ([[5.2.2 Kruskal coordinates]], [[5.2.3 Radial observers in Reissner-Nordström spacetime]], [[5.3.6 Principal null congruences]], [[5.7 Problems#Problem 3]]).
+- [Links] Turn the plain references "Section 5.2.2", "Section 5.2.3", "Section 5.3.6" and "Section 5.7, Problem 3" into wiki links (\[\[5.2.2 Kruskal coordinates\]\], \[\[5.2.3 Radial observers in Reissner-Nordström spacetime\]\], \[\[5.3.6 Principal null congruences\]\], \[\[5.7 Problems#Problem 3\]\]).
 - [Structure] File starts with a UTF-8 BOM; save as UTF-8 without BOM.
 
 ### N3441
@@ -2063,7 +2063,7 @@ Priority: medium · Graph: no · Manim: yes
 Correct, compact definitions of black-hole region, event horizon, trapped surfaces and apparent horizon, but abstract and without a worked picture tying the definitions together.
 
 - [Intuition] Before Eq. (5.86), add a two-sentence plain-language version: "an event is inside the black hole if no signal sent from it can ever reach distant observers"; then state the formal set definition.
-- [Example] Add a short worked example using Schwarzschild in Eddington–Finkelstein coordinates: outgoing null rays $\mathrm dr/\mathrm dv=\tfrac12(1-2M/r)$ never reach $\mathscr I^+$ for $r<2M$, so $B=\{r<2M\}$ and $H=\{r=2M\}$; and point to [[5.1.8 Distinction between event and apparent horizons -  Vaidya spacetime]] for the dynamical case.
+- [Example] Add a short worked example using Schwarzschild in Eddington–Finkelstein coordinates: outgoing null rays $\mathrm dr/\mathrm dv=\tfrac12(1-2M/r)$ never reach $\mathscr I^+$ for $r<2M$, so $B=\{r<2M\}$ and $H=\{r=2M\}$; and point to \[\[5.1.8 Distinction between event and apparent horizons -  Vaidya spacetime\]\] for the dynamical case.
 - [Manim] Animate Vaidya-type collapse in a $(v,r)$ diagram: a null shell falling in, the event horizon (traced backwards from late times) starting to grow before the shell arrives, and the apparent horizon jumping out only when the shell crosses it; this makes the teleological nature of $H$ and the statement "the apparent horizon lies within the black-hole region" visible.
 - [Simplify] The four Penrose properties (i)–(iv) would read better as a bulleted list with one-line physical meaning each (e.g. (ii) "nothing that falls in can climb back out along the horizon").
 - [Structure] File starts with a UTF-8 BOM; save as UTF-8 without BOM.
@@ -2077,8 +2077,8 @@ Correct summary of rigidity, Killing horizon, surface gravity and the Raychaudhu
 
 - [Simplify] Show the one-line derivation behind Eq. (5.90): with $\lambda=V/\kappa$ and $V=e^{\kappa v}$, $\mathrm d\lambda/\mathrm dv=V$, so $k^\alpha=\mathrm dx^\alpha/\mathrm d\lambda=V^{-1}\xi^\alpha$ and the nonaffine term $\kappa\xi^\alpha$ is removed.
 - [Intuition] After Eq. (5.92) add the argument explicitly: with $\theta=0$ and $\mathrm d\theta/\mathrm d\lambda=0$, Eq. (5.91) gives $\sigma^{\alpha\beta}\sigma_{\alpha\beta}+8\pi T_{\alpha\beta}k^\alpha k^\beta=0$; both terms are nonnegative (spatial shear, null energy condition), so each must vanish, giving (5.92) and (5.93) at once.
-- [Example] Give the Kerr values as a concrete check: $\Omega_H=a/(r_+^2+a^2)$ and $\kappa=(r_+-M)/(r_+^2+a^2)$, linking [[5.3.10 Surface gravity]].
-- [Links] Make "Section 5.3.10", "Section 5.5.2" and "Section 2.4.4" wiki links ([[5.3.10 Surface gravity]], [[5.5.2 Zeroth law]], [[2.4.4 Raychaudhuri's equation]]).
+- [Example] Give the Kerr values as a concrete check: $\Omega_H=a/(r_+^2+a^2)$ and $\kappa=(r_+-M)/(r_+^2+a^2)$, linking \[\[5.3.10 Surface gravity\]\].
+- [Links] Make "Section 5.3.10", "Section 5.5.2" and "Section 2.4.4" wiki links (\[\[5.3.10 Surface gravity\]\], \[\[5.5.2 Zeroth law\]\], \[\[2.4.4 Raychaudhuri's equation\]\]).
 - [Structure] File starts with a UTF-8 BOM; save as UTF-8 without BOM.
 
 ### N3444
@@ -2112,7 +2112,7 @@ Correct collection of horizon basis, surface elements and the nonaffine Raychaud
 - [Correctness] "$\xi_\alpha e^\alpha_A=0=\xi^\alpha e^A_\alpha$": the object $e^A_\alpha$ is never defined; the conditions needed for the completeness relation are $\xi_\alpha e^\alpha_A=0$, $N_\alpha e^\alpha_A=0$, $N_\alpha N^\alpha=0$ and $N_\alpha\xi^\alpha=-1$ (and $\xi_\alpha\xi^\alpha=0$); state these explicitly after introducing $N^\alpha$.
 - [Correctness] Symbol clash: $\theta^A$ labels the generators while $\theta$ (mechanical colour) is the expansion in Eq. (5.97); rename the generator labels (e.g. $\vartheta^A$ or $y^A$) or add an explicit warning.
 - [Intuition] Explain the extra $\kappa\theta$ term in Eq. (5.97): $v$ is not affine, and rescaling $\theta_v=V\theta_\lambda$ with $V=e^{\kappa v}$ turns the affine Raychaudhuri equation into this form; one line makes the term less mysterious.
-- [Links] Link "Section 3.1", "Section 3.2" and "Section 2.6, Problem 8" to [[3.1 Description of hypersurfaces]], [[3.2 Integration over hypersurfaces]] and [[2.6 Problems]].
+- [Links] Link "Section 3.1", "Section 3.2" and "Section 2.6, Problem 8" to \[\[3.1 Description of hypersurfaces\]\], \[\[3.2 Integration over hypersurfaces\]\] and \[\[2.6 Problems\]\].
 - [Structure] File starts with a UTF-8 BOM; save as UTF-8 without BOM.
 
 ### N3447
@@ -2125,7 +2125,7 @@ Correct and well-structured proof sketch; a few steps are compressed and the dep
 - [Simplify] Between (5.100) and (5.101) state the step: contracting with $\xi^\alpha$ gives $R_{\mu\nu\alpha\beta}\xi^\alpha\xi^\beta=0$ by antisymmetry in $\alpha\beta$, hence $\kappa\,\kappa_{,\alpha}\xi^\alpha=0$, so (5.101) follows only where $\kappa\ne0$; say that this assumption is being made.
 - [Simplify] Show the differentiation of Eq. (5.98) explicitly: $2\kappa\kappa_{,\gamma}=-\xi^{\alpha;\beta}\xi_{\alpha;\beta\gamma}$, then insert (5.99).
 - [Intuition] Add the physical meaning up front: the zeroth law says the black hole has a single "temperature" over its whole surface, just as a body in equilibrium does; mention that for Kerr $\kappa=(r_+-M)/(r_+^2+a^2)$ is visibly independent of $\theta$.
-- [Links] Link "Section 5.3.10", "Section 5.2.4", "Section 1.13, Problem 9" and "Section 5.7, Problems 6 and 7" to the corresponding notes and [[5.7 Problems#Problem 6]] / [[5.7 Problems#Problem 7]].
+- [Links] Link "Section 5.3.10", "Section 5.2.4", "Section 1.13, Problem 9" and "Section 5.7, Problems 6 and 7" to the corresponding notes and \[\[5.7 Problems#Problem 6\]\] / \[\[5.7 Problems#Problem 7\]\].
 - [Structure] File starts with a UTF-8 BOM; save as UTF-8 without BOM.
 
 ### N3448
@@ -2163,7 +2163,7 @@ Clear heuristic proof of the area theorem; brief but adequate.
 
 - [Simplify] Quote the focusing statement explicitly: if $\theta(\lambda_0)=\theta_0<0$ then $\theta\to-\infty$ within affine parameter $\lambda-\lambda_0\le2/|\theta_0|$ (from $\mathrm d\theta/\mathrm d\lambda\le-\tfrac12\theta^2$); this makes the contradiction concrete.
 - [Example] Add the classic application: two Schwarzschild holes of mass $M$ merging can radiate at most $2M-\sqrt2M\approx0.29\,(2M)$ of their mass, since $A_f\ge2\cdot16\pi M^2$.
-- [Links] Link "Section 2.4.5" to [[2.4.5 Focusing theorem]] and add a forward link to [[5.5.7 Black-hole thermodynamics]] where Hawking radiation violates the null energy condition.
+- [Links] Link "Section 2.4.5" to \[\[2.4.5 Focusing theorem\]\] and add a forward link to \[\[5.5.7 Black-hole thermodynamics\]\] where Hawking radiation violates the null energy condition.
 - [Structure] File starts with a UTF-8 BOM; save as UTF-8 without BOM.
 
 ### N3451
@@ -2189,7 +2189,7 @@ Correct and readable, but purely qualitative; SI numbers would make the tiny Haw
 - [Example] Restore constants, $T_H=\hbar c^3/(8\pi GMk_B)$ and $S=k_Bc^3A/(4G\hbar)$, and give solar-mass values: $T_H\approx6.2\times10^{-8}\,\mathrm K$ (far below the 2.7 K CMB) and $S/k_B\approx1.0\times10^{77}$.
 - [Graph] Log–log plot of $T_H$ (K) versus $M/M_\odot$ on $[10^{-19},10^{10}]$ with a horizontal line at the CMB temperature 2.725 K, marking where holes currently absorb more than they emit (crossing near $M\approx4.5\times10^{22}\,\mathrm{kg}\approx2\times10^{-8}M_\odot$).
 - [Intuition] Explain the negative heat capacity: $T\propto1/M$, so a radiating hole heats up as it loses mass, which is why evaporation runs away and why the generalized second law is needed.
-- [Links] Link the zeroth, first and second laws in the text to [[5.5.2 Zeroth law]], [[5.5.4 First law]] and [[5.5.5 Second law]].
+- [Links] Link the zeroth, first and second laws in the text to \[\[5.5.2 Zeroth law\]\], \[\[5.5.4 First law\]\] and \[\[5.5.5 Second law\]\].
 - [Structure] File starts with a UTF-8 BOM; save as UTF-8 without BOM.
 
 ### N3453
@@ -2221,7 +2221,7 @@ Priority: low · Graph: no · Manim: no
 
 Faithful index transcription with printed page numbers only.
 
-- [Links] Optional: link the main entries (e.g. "Black-hole mechanics, first law" to [[5.5.4 First law]]) so the index is navigable in the vault; also save without the UTF-8 BOM.
+- [Links] Optional: link the main entries (e.g. "Black-hole mechanics, first law" to \[\[5.5.4 First law\]\]) so the index is navigable in the vault; also save without the UTF-8 BOM.
 
 ### N3456
 

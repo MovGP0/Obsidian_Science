@@ -37,7 +37,7 @@ The review found 58 possible errors or notation conflicts. 58 of them are verifi
 - [[#N0758|N0758]] Rotation using Matrices: Product rule: if $R_{AB}$ maps column components from frame A to frame B, then $R_{AC}=R_{BC}R_{AB}$, not $R_{AB}R_{BC}$; either reverse the order or define $R_{AB}$ as the orientation of B relative to A (Modern Robotics convention). Also the set definitions "$O(n)={R∈ℝ^{n×n}∣R^TR=I}$" lose their braces when rendered; use escaped braces. **Fixed:** Changed to R_BC R_AB = R_AC matching the stated A-to-B convention; escaped braces in the O(n) and SO(n) set definitions; converted CRLF to LF
 - [[#N0760|N0760]] Jones Vectors: "we can assume it to be complex, with a complex value of zero" is wrong: the added imaginary part is $iA\sin(ωt-kz+φ)$, not zero; the physical field is $\mathrm{Re}\,E$. **Fixed:** Replaced with: the field is extended to a complex field, the imaginary part has no physical meaning, the physical field is Re E.
 - [[#N0760|N0760]] Jones Vectors: The "Conventions" section attributes the sign of $L=(1,\pm i)$ to the metric signature $(+,-,-,-)$ vs $(-,+,+,+)$; it actually depends on the phase convention $e^{i(ωt-kz)}$ vs $e^{i(kz-ωt)}$ and on whether handedness is defined from the source or the receiver view. **Fixed:** Conventions now name the phase convention e^{i(ωt-kz)} vs e^{i(kz-ωt)} and the source/receiver viewpoint for handedness.
-- [[#N0760|N0760]] Jones Vectors: Under "Jones Matrices", waveplates do not "filter circular polarization" (they are lossless retarders), and $\frac1{\sqrt2}\begin{pmatrix}1&i\\i&i\end{pmatrix}$ is not unitary; the 45° quarter-wave plate is $\frac1{\sqrt2}\begin{pmatrix}1&i\\i&1\end{pmatrix}$ up to a global phase. **Fixed:** Waveplates described as lossless retarders; matrix corrected to (1/√2)[[1,i],[i,1]].
+- [[#N0760|N0760]] Jones Vectors: Under "Jones Matrices", waveplates do not "filter circular polarization" (they are lossless retarders), and $\frac1{\sqrt2}\begin{pmatrix}1&i\\i&i\end{pmatrix}$ is not unitary; the 45° quarter-wave plate is $\frac1{\sqrt2}\begin{pmatrix}1&i\\i&1\end{pmatrix}$ up to a global phase. **Fixed:** Waveplates described as lossless retarders; matrix corrected to (1/√2)\[\[1,i],[i,1\]\].
 - [[#N0760|N0760]] Jones Vectors: In "Phase Shift", adding $φ=\pi/2$ gives $\cos(θ+\pi/2)=-\sinθ$, not $\sinθ$; the quoted identity $\sinθ=\cos(θ-\pi/2)$ corresponds to $φ=-\pi/2$. **Fixed:** Changed the phase to φ = -π/2 to match sinθ = cos(θ-π/2).
 - [[#N0760|N0760]] Jones Vectors: Symbol inconsistency: amplitudes appear as $A_x$, $Aʸ$ (Unicode superscript) and $A^x,A^y$, components as bold $\mathbf E^x$ and plain $E^x$; also fix the typos "$eit$", "$\mathbf{_x}$", "_x-direction", "non-traverse", and replace "density in time/space" by frequency $ω/2\pi$ and inverse wavelength $k/2\pi$. **Fixed:** Unified amplitudes to A_x, A_y and components to plain E^x, E^y; fixed e^{it}, \mathbf{x}, x-direction, non-transverse; density in time/space replaced by frequency ω/2π and inverse wavelength k/2π.
 - [[#N0761|N0761]] Pointcaré Sphere: "$Q''=\frac12\begin{pmatrix}1&1\\-1&1\end{pmatrix}$" is not unitary; the factor must be $\frac1{\sqrt2}$, as the note's own later callout uses. **Fixed:** Changed the prefactor to 1/√2.
@@ -55,12 +55,12 @@ The review found 58 possible errors or notation conflicts. 58 of them are verifi
 - [[#N0767|N0767]] Stern-Gerlach-Experiment: "Born Rule: If two states are mutually exclusive, they must be orthogonal" is not the Born rule; the Born rule is $P=|\braket{\beta|\alpha}|^2$, and orthogonality of perfectly distinguishable outcomes follows from it. **Fixed:** ² as the Born rule and kept orthogonality of mutually exclusive states as its consequence. Converted CRLF to LF.
 - [[#N0768|N0768]] Vector Representation of Spinors in Physics: "$\bra{\phi} = \alpha \ket{\uparrow} + \beta \ket{\uparrow}$" should be the ket $\ket{\phi}=\alpha\ket{\uparrow}+\beta\ket{\downarrow}$ (bra on the left side and a repeated $\ket{\uparrow}$). **Fixed:** ↓⟩. Converted CRLF to LF.
 - [[#N0768|N0768]] Vector Representation of Spinors in Physics: The table calls $\alpha,\beta$ probabilities; they are complex probability amplitudes, the probabilities are $|\alpha|^2$ and $|\beta|^2$, with $|\alpha|^2+|\beta|^2=1$. **Fixed:** ²=1.
-- [[#N0782|N0782]] Quaternions: The Pauli list repeats $\sigma_2$ twice and omits $\sigma_3=\begin{pmatrix}1&0\\0&-1\end{pmatrix}$. **Fixed:** Replaced the duplicate σ2 with σ3 = [[1,0],[0,-1]].
+- [[#N0782|N0782]] Quaternions: The Pauli list repeats $\sigma_2$ twice and omits $\sigma_3=\begin{pmatrix}1&0\\0&-1\end{pmatrix}$. **Fixed:** Replaced the duplicate σ2 with σ3 = \[\[1,0],[0,-1\]\].
 - [[#N0782|N0782]] Quaternions: "They can be used to replace i, j, k in Quaternions" is wrong as stated: $\sigma_a^2=+I$, not $-I$. The correct substitution is $i\mapsto-i\sigma_1$, $j\mapsto-i\sigma_2$, $k\mapsto-i\sigma_3$, which satisfies $i^2=j^2=k^2=ijk=-1$. **Fixed:** Stated σ_a² = σ_0 and the substitution i→-iσ1, j→-iσ2, k→-iσ3 giving i²=j²=k²=ijk=-1.
 - [[#N0782|N0782]] Quaternions: "Properties of i, j, k" mixes cross products of basis vectors ($i\times i=0$) with quaternion products ($i^2=-1$) for the same letters; as quaternions $ii=-1$, $ij=k$, $ik=-j$. Use quaternion products throughout, or label the cross-product lines as the vector part of $uv$. **Fixed:** Rewrote the list as quaternion products (ii=jj=kk=-1, ij=k, ik=-j, ...) with a short label. Converted CRLF to LF.
 - [[#N0796|N0796]] 27.07 Transition functions: Symbol clash: $B$ is the base space ($\pi:E\to B$) and also a matrix in Practice 2 ($g_{23}=B$), and $A$ names an overlap component in the worked example and a matrix in Practice 2; rename the practice matrices (for example $M,N$). **Fixed:** Renamed the Practice 2 matrices and answer to M, N (MN, NM checked). Removed BOM and converted CRLF to LF.
 - [[#N0798|N0798]] 27.09 Connections and holonomy: Symbol clash: $a$ is the rectangle width in "$[0,a]\times[0,b]$" and $\oint A=cab$, and later the real coefficient in $A=a\alpha$ with holonomy $e^{-2\pi ian}$; rename one (for example rectangle sides $w,h$ or coefficient $\kappa$). **Fixed:** Renamed the S^1 coefficient to κ (A=κα, 2πκn, e^{-2πiκn}, κ=1/2). Removed BOM and converted CRLF to LF.
-- [[#N0803|N0803]] Category of Categories: "The Category set of all possible [[Category]]" is incorrect and runs into a size paradox; $\mathbf{Cat}$ is the category whose objects are small categories and whose morphisms are functors, with functor composition and identity functors. Also add a quoted title, a TLDR, and a trailing newline. **Fixed:** Defined Cat as small categories with functors, functor composition and identity functors; added quoted title, TLDR, size note and trailing newline.
+- [[#N0803|N0803]] Category of Categories: "The Category set of all possible \[\[Category\]\]" is incorrect and runs into a size paradox; $\mathbf{Cat}$ is the category whose objects are small categories and whose morphisms are functors, with functor composition and identity functors. Also add a quoted title, a TLDR, and a trailing newline. **Fixed:** Defined Cat as small categories with functors, functor composition and identity functors; added quoted title, TLDR, size note and trailing newline.
 - [[#N0804|N0804]] Category: Under "Compositions", for $f:A\to B$ and $g:B\to C$ the composite is $g\circ f:A\to C$, not $h=f\circ g$; the note's own associativity law $(h\circ g)\circ f$ uses the right-to-left convention, so the composition line contradicts it. **Fixed:** Changed h = f∘g to h = g∘f, consistent with the associativity law
 - [[#N0804|N0804]] Category: The identity law "$I_e(e)=e$" applies a morphism to an element, which a general category does not provide; the law is $f\circ\mathrm{id}_A=f=\mathrm{id}_B\circ f$ for every $f:A\to B$. **Fixed:** Replaced with f∘id_A = f = id_B∘f for f:A→B and reworded the sentence
 - [[#N0804|N0804]] Category: "Objects are Elements in a Set" with the set-order and repetition examples is wrong and irrelevant: objects need not form a set (e.g. in $\mathbf{Set}$ itself) and need not have elements, and morphisms need not be functions between sets ("transformation functions"). Remove the set examples and give $\mathbf{Set}$, $\mathbf{Grp}$, $\mathbf{Vect}$ and a poset as examples. **Fixed:** Replaced the set-order and repetition examples with an abstract description and Set, Grp, Vect, poset examples; reworded the morphism definition
@@ -579,7 +579,7 @@ Priority: low · Graph: no · Manim: no
 Correct and clear summary of tensor components and basis changes; the slanted-basis example, rotation check $\operatorname{diag}(2,1)$, and symmetric/skew split are verified.
 
 - [Structure] The file starts with a UTF-8 BOM and uses CRLF line endings; save it as UTF-8 without BOM with LF line endings.
-- [Structure] The worked example (shear $M$, $v=(3,2)$, $\alpha=(2,-1)$, $G'$, length $13$) and practice 1 ($M=\operatorname{diag}(2,3)$) duplicate [[18.05 Transformation laws]] exactly; either link to 18.05 for them or choose different numbers so the two notes complement each other.
+- [Structure] The worked example (shear $M$, $v=(3,2)$, $\alpha=(2,-1)$, $G'$, length $13$) and practice 1 ($M=\operatorname{diag}(2,3)$) duplicate \[\[18.05 Transformation laws\]\] exactly; either link to 18.05 for them or choose different numbers so the two notes complement each other.
 - [Example] Add a short isotropic-tensor check in "Second-order tensors with special properties", for example $M^{\mathsf T}(3I)M=3I$ for the rotation in practice 2, contrasting with $\operatorname{diag}(1,2)\mapsto\operatorname{diag}(2,1)$.
 
 ### N0644
@@ -1029,7 +1029,7 @@ Priority: low · Graph: no · Manim: no
 Clear, consistent problem list; links and referenced equations (5.16), (5.17) exist.
 
 - [Structure] File on disk uses CRLF line endings (no BOM); convert to LF as required by the Obsidian skill.
-- [Links] Problem 5.8 uses $R$ for the sphere radius while 6.3 uses $\mechanical{a}$ for the same sphere and $R$ for the Ricci scalar; add a pointer to [[6.3 The Riemann curvature tensor]] and align the radius symbol.
+- [Links] Problem 5.8 uses $R$ for the sphere radius while 6.3 uses $\mechanical{a}$ for the same sphere and $R$ for the Ricci scalar; add a pointer to \[\[6.3 The Riemann curvature tensor\]\] and align the radius symbol.
 
 ### N0685
 
@@ -1109,7 +1109,7 @@ Correct formulas (5.24)–(5.25) and cylindrical example, but the parallel-trans
 - [Structure] File on disk uses CRLF line endings (no BOM); convert to LF as required by the Obsidian skill.
 - [Simplify] Add a two-line justification of the minus sign in Eq. (5.25): require $(A_iB^i)_{;j}=\partial_j(A_iB^i)$ for the scalar $A_iB^i$ and use Eq. (5.24).
 - [Example] Check the cylindrical result with the constant Cartesian field $\vec A=\hat i$: $A^r=\cos\phi$, $A^\phi=-\sin\phi/r$ give $A^r{}_{;\phi}=-\sin\phi+\sin\phi=0$ and $A^\phi{}_{;\phi}=-\cos\phi/r+\cos\phi/r=0$, showing that the covariant derivative of a constant field vanishes.
-- [Links] The sphere paragraph points to 6.3, but [[5.10 Chapter 5 problems]] Problems 5.8–5.9 contain the sphere metric and connection; link those too.
+- [Links] The sphere paragraph points to 6.3, but \[\[5.10 Chapter 5 problems\]\] Problems 5.8–5.9 contain the sphere metric and connection; link those too.
 
 ### N0692
 
@@ -1169,7 +1169,7 @@ Derivation and sphere results are correct ($R^\theta{}_{\phi\theta\phi}=\sin^2\t
 - [Manim] Animate the Quito example on a 3D sphere: transport a tangent arrow along the meridian over the pole and along the equator to the antipode, ending with opposite orientations; optionally close a small loop to show the rotation angle equals enclosed area over $a^2$.
 - [Intuition] State the end result $R_{\theta\theta}=1$, $R_{\phi\phi}=\sin^2\theta$, $R=2/\mechanical{a}^2$ (or point to Problem 6.10) so readers see the curvature scale with the radius; the computed $R^\sigma{}_{\alpha\beta\gamma}$ alone hides the $a$-dependence.
 - [Simplify] Index conventions shift from 6.2 (coordinates $0$–$3$) and 5.7 ($\Gamma^k{}_{ij}$ spacing) to "numbered from 1 to 4" and $\Gamma^\sigma_{\alpha\beta}$ here; align them, and note that $\mechanical{G}$ (Newton) and $G_{\mu\nu}$ (Einstein tensor) share a letter.
-- [Links] Link the sphere metric to [[5.10 Chapter 5 problems]] (Problems 5.8–5.9), which ask for the same metric and Christoffel symbols.
+- [Links] Link the sphere metric to \[\[5.10 Chapter 5 problems\]\] (Problems 5.8–5.9), which ask for the same metric and Christoffel symbols.
 
 ### N0697
 
@@ -1216,7 +1216,7 @@ Priority: low · Graph: yes · Manim: no
 Clear and correct; the worked example (determinant 1, $(a+xb)^2+b^2$, pairing $-3$) and both practice answers check out.
 
 - [Graph] Plot the unit circles $g(v,v)=1$ of the worked-example metric $G(x,y)$ at $x=-2,0,2$ as ellipses in the $(a,b)$ component plane ($a$, $b\in[-3,3]$), showing how the metric tilts and stretches from point to point while staying positive definite.
-- [Intuition] In "Limits and common errors" add one sentence on why nondegeneracy (not positivity) is the condition needed for index raising, with a forward link to [[20.04 Inverse metrics]].
+- [Intuition] In "Limits and common errors" add one sentence on why nondegeneracy (not positivity) is the condition needed for index raising, with a forward link to \[\[20.04 Inverse metrics\]\].
 
 ### N0702
 
@@ -1226,7 +1226,7 @@ Priority: low · Graph: yes · Manim: no
 Clear and correct; all numbers in the worked example and practice (36, 7, 59, determinant 11, and the two answers) verify.
 
 - [Graph] Plot the level curve $4a^2+6ab+5b^2=1$ together with the circle $a^2+b^2=1$ on $[-1.2,1.2]^2$, with the eigenvector axes of $G$ drawn, to show that the cross term $6\,dx\,dy$ only rotates the unit ellipse.
-- [Intuition] In "What the line element means" add one sentence that $ds^2$ is the squared length of an infinitesimal displacement $(dx,dy)$, so the line element is used by integrating its square root along a curve (link [[20.07 Curves]]).
+- [Intuition] In "What the line element means" add one sentence that $ds^2$ is the squared length of an infinitesimal displacement $(dx,dy)$, so the line element is used by integrating its square root along a curve (link \[\[20.07 Curves\]\]).
 
 ### N0703
 
@@ -1286,7 +1286,7 @@ Priority: low · Graph: no · Manim: no
 Clear and correct with a helpful polar-cell figure; the determinant argument, the area $\pi/2$, and both practice answers verify.
 
 - [Example] Add the unit-sphere area $\int_0^{2\pi}\int_0^\pi\sin\theta\,d\theta\,d\phi=4\pi$ from $G=\operatorname{diag}(1,\sin^2\theta)$ as a short second example where the density is not a Jacobian of a planar change of variables.
-- [Intuition] In "A determinant measures a local cell" add one sentence relating $\sqrt{\det G}$ to the worked example in [[20.06 Lengths and angles]]: $\lVert e_1\rVert\lVert e_2\rVert\sin\theta=2\cdot1\cdot\sin(\pi/3)=\sqrt3$, matching practice 1.
+- [Intuition] In "A determinant measures a local cell" add one sentence relating $\sqrt{\det G}$ to the worked example in \[\[20.06 Lengths and angles\]\]: $\lVert e_1\rVert\lVert e_2\rVert\sin\theta=2\cdot1\cdot\sin(\pi/3)=\sqrt3$, matching practice 1.
 
 ### N0709
 
@@ -1315,7 +1315,7 @@ Priority: low · Graph: no · Manim: no
 
 Clear and correct; the line-connection example ($20\partial_x$ at $x=2$), the difference-tensor argument, and the practice answers verify.
 
-- [Intuition] Add one sentence in "Definition and domain" that the connection is the extra structure that says which vectors at nearby points count as "the same", foreshadowing [[21.07 Parallel transport]].
+- [Intuition] Add one sentence in "Definition and domain" that the connection is the extra structure that says which vectors at nearby points count as "the same", foreshadowing \[\[21.07 Parallel transport\]\].
 - [Example] In "Worked example: a different connection on a line" add the parallel fields of this connection ($g'+xg=0\Rightarrow g=Ce^{-x^2/2}$) to show concretely what the nonstandard connection does.
 
 ### N0712
@@ -1325,7 +1325,7 @@ Priority: low · Graph: no · Manim: no
 
 Clear and correct; the derivation of $\nabla_iY^k$, the polar example $-2\partial_r+2\partial_\theta$ at $(2,1)$, and the practice answers verify.
 
-- [Example] Add a curve example for $DV^k/dt$: on the unit circle $\theta=t$ with $V=\partial_r$, show $DV^\theta/dt=\Gamma^\theta{}_{\theta r}=1$, matching $de_r/dt=e_\theta$ from [[21.01 The differentiation problem]].
+- [Example] Add a curve example for $DV^k/dt$: on the unit circle $\theta=t$ with $V=\partial_r$, show $DV^\theta/dt=\Gamma^\theta{}_{\theta r}=1$, matching $de_r/dt=e_\theta$ from \[\[21.01 The differentiation problem\]\].
 
 ### N0713
 
@@ -1344,7 +1344,7 @@ Priority: low · Graph: no · Manim: no
 Clear and correct; the inhomogeneous transformation law, the $y=\log x$ example ($\widetilde\Gamma^y{}_{yy}=1$), and both practice answers verify.
 
 - [Simplify] In "Why the covariant derivative transforms as a tensor" the cancellation is only described in words; add the two-line computation $\partial_b\widetilde V^a=A^i{}_b\partial_i(B^a{}_kV^k)$ and $\partial_bB^a{}_k\,A^k{}_c=-B^a{}_k\,\partial^2x^k/\partial y^b\partial y^c$ so readers can see the terms cancel.
-- [Intuition] Add one sentence after the boxed law: the second-derivative term is exactly what makes "zero coefficients" a chart-dependent statement, preparing the normal-coordinate idea in [[22.09 Local flatness and information loss]].
+- [Intuition] Add one sentence after the boxed law: the second-derivative term is exactly what makes "zero coefficients" a chart-dependent statement, preparing the normal-coordinate idea in \[\[22.09 Local flatness and information loss\]\].
 
 ### N0715
 
@@ -1354,7 +1354,7 @@ Priority: low · Graph: no · Manim: no
 Clear and correct; the three-permutation derivation, the Koszul formula, the polar coefficients, and the practice answers verify.
 
 - [Simplify] In "Derive the Christoffel formula" write out the three compatibility equations explicitly (one line each) before stating the cancellation; the sentence "cancels all terms except the two equal copies" is hard to check mentally.
-- [Example] Add the 2-sphere $g=a^2(d\theta^2+\sin^2\theta\,d\phi^2)$ as a short second example ($\Gamma^\theta{}_{\phi\phi}=-\sin\theta\cos\theta$, $\Gamma^\phi{}_{\theta\phi}=\cot\theta$), since it is reused in [[22.02 Coordinate expressions]] without derivation.
+- [Example] Add the 2-sphere $g=a^2(d\theta^2+\sin^2\theta\,d\phi^2)$ as a short second example ($\Gamma^\theta{}_{\phi\phi}=-\sin\theta\cos\theta$, $\Gamma^\phi{}_{\theta\phi}=\cot\theta$), since it is reused in \[\[22.02 Coordinate expressions\]\] without derivation.
 
 ### N0716
 
@@ -1384,7 +1384,7 @@ Priority: low · Graph: no · Manim: no
 
 Clear and correct; the polar Christoffel symbols, both explicit curvature components, and the practice answers verify, though it largely repeats 20.09 and 21.06.
 
-- [Structure] The polar metric derivation, the Christoffel symbols and $R^r{}_{\theta r\theta}=0$ are already computed in [[20.09 Examples and limits]] and [[21.06 Levi-Civita connection]]; shorten those parts to a link and use the space for a genuinely new coordinate example (e.g. spherical coordinates in $\mathbb R^3$ or the sphere).
+- [Structure] The polar metric derivation, the Christoffel symbols and $R^r{}_{\theta r\theta}=0$ are already computed in \[\[20.09 Examples and limits\]\] and \[\[21.06 Levi-Civita connection\]\]; shorten those parts to a link and use the space for a genuinely new coordinate example (e.g. spherical coordinates in $\mathbb R^3$ or the sphere).
 
 ### N0719
 
@@ -1432,7 +1432,7 @@ Priority: low · Graph: no · Manim: no
 Clear and correct; the normal-coordinate proofs, the contracted identity, and the Schur calculation $(n-1)(n-2)\partial_jk=0$ verify.
 
 - [Simplify] In "Why the algebraic identity holds" write out all six terms of the cyclic sum in one display and pair them, instead of "the remaining terms cancel in the same way"; it is short and removes the only skipped step.
-- [Intuition] Add one sentence on the meaning of the differential identity: it is the curvature analogue of $d(dA)=0$ (or $\nabla\cdot(\nabla\times A)=0$), a consistency condition that any curvature coming from a connection must satisfy; link [[26.06 Curvature or field strength]] for the gauge-field version.
+- [Intuition] Add one sentence on the meaning of the differential identity: it is the curvature analogue of $d(dA)=0$ (or $\nabla\cdot(\nabla\times A)=0$), a consistency condition that any curvature coming from a connection must satisfy; link \[\[26.06 Curvature or field strength\]\] for the gauge-field version.
 
 ### N0724
 
@@ -1459,7 +1459,7 @@ Priority: low · Graph: yes · Manim: no
 
 Clear and correct with a good figure; the plane and sphere curvature components, $K=1/a^2$, $K=-f''/f$, and the practice answers verify, though much repeats 20.09 and 22.02.
 
-- [Structure] The polar-plane and sphere computations duplicate [[20.09 Examples and limits]] and [[22.02 Coordinate expressions]] almost verbatim; keep one short version here and link, or replace one with a new case such as the torus $g=(R+r\cos u)^2dv^2+r^2du^2$ whose curvature changes sign.
+- [Structure] The polar-plane and sphere computations duplicate \[\[20.09 Examples and limits\]\] and \[\[22.02 Coordinate expressions\]\] almost verbatim; keep one short version here and link, or replace one with a new case such as the torus $g=(R+r\cos u)^2dv^2+r^2du^2$ whose curvature changes sign.
 - [Graph] A 3D plot of a torus coloured by $K=\cos u/(r(R+r\cos u))$ ($R=2$, $r=1$) would show positive, zero and negative curvature on one surface; alternatively plot $K(u)$ for $u\in[0,2\pi]$.
 
 ### N0727
@@ -1530,7 +1530,7 @@ Priority: low · Graph: no · Manim: no
 
 Correct and well paced; the normalization, graded commutativity, and the $\gamma\wedge\gamma\ne0$ counterexample are all verified.
 
-- [Intuition] In "Definition and normalization", add one sentence that $(a\wedge b)(u,v)$ is the signed area of the parallelogram spanned by $(a(u),b(u))$ and $(a(v),b(v))$, linking to Fig. 23.1 in [[23.01 Alternating tensors]].
+- [Intuition] In "Definition and normalization", add one sentence that $(a\wedge b)(u,v)$ is the signed area of the parallelogram spanned by $(a(u),b(u))$ and $(a(v),b(v))$, linking to Fig. 23.1 in \[\[23.01 Alternating tensors\]\].
 - [Example] For the $\gamma\wedge\gamma$ display, write out the four expansion terms explicitly (two vanishing, two equal to $dx^1\wedge dx^2\wedge dx^3\wedge dx^4$), because the sign of $dx^3\wedge dx^4\wedge dx^1\wedge dx^2$ is exactly the graded-commutativity point being made.
 - [Simplify] Name the other common normalization (alternation with $1/(p+q)!$, as in Kobayashi–Nomizu) next to "Some texts define an alternation operator with a different normalization", so readers can recognize factor differences in other texts.
 
@@ -1541,7 +1541,7 @@ Priority: low · Graph: no · Manim: no
 
 Correct and clear; the worked example and both practice answers check out, including the signed product rule.
 
-- [Intuition] Add a short geometric reading of $d$ for a one-form in the plane: $d\alpha$ evaluated on a small parallelogram equals the circulation of $\alpha$ around its boundary to leading order, foreshadowing [[23.07 Stokes’ theorem]].
+- [Intuition] Add a short geometric reading of $d$ for a one-form in the plane: $d\alpha$ evaluated on a small parallelogram equals the circulation of $\alpha$ around its boundary to leading order, foreshadowing \[\[23.07 Stokes’ theorem\]\].
 - [Example] In "Why the derivative squared is zero", add a tiny explicit case such as $f=x^2y$ showing the $dx\wedge dy$ and $dy\wedge dx$ terms cancelling, before the general index argument.
 - [Simplify] The definition of $d\omega$ puts $dx^j$ in front; state once that the new factor must then be moved into increasing order with a sign, since the worked example relies on that reordering ($dy\wedge dx=-dx\wedge dy$).
 
@@ -1554,7 +1554,7 @@ Correct and careful about the $1/k!$ convention; the evaluation ($7$) and $(d\om
 
 - [Structure] In the last paragraph of the worked-example section the coordinate change is written $x=x(y)$, which reuses $y$ (already the second Cartesian coordinate in the example); use new coordinates such as $x=x(u)$ with $dx^i=\sum_a(\partial x^i/\partial u^a)du^a$.
 - [Example] Add a two-line explicit check that the full-index sum $\tfrac12\sum_{i,j}\omega_{ij}dx^i\wedge dx^j$ for the example matrix reproduces $x\,dy\wedge dz+z\,dx\wedge dy$, so the $1/2$ is seen working rather than just asserted.
-- [Simplify] State that the component formula for $(d\omega)_{i_0\cdots i_k}$ relies on the determinant wedge normalization of [[23.02 Wedge products]]; with the other normalization an extra factor $(k+1)$ appears.
+- [Simplify] State that the component formula for $(d\omega)_{i_0\cdots i_k}$ relies on the determinant wedge normalization of \[\[23.02 Wedge products\]\]; with the other normalization an extra factor $(k+1)$ appears.
 
 ### N0736
 
@@ -1658,7 +1658,7 @@ Priority: low · Graph: no · Manim: no
 
 Correct and well organized; the solution $\omega^1{}_2=-f'\,d\phi$ and the practice answers are verified and consistent with 24.04.
 
-- [Simplify] In the derivation of $T^a$, show the intermediate expansion $\nabla_XY=[X(y^a)+\omega^a{}_b(X)y^b]e_a$ explicitly with a link to [[24.04 Connection one-forms]], since "Expanding the covariant derivatives yields" hides it.
+- [Simplify] In the derivation of $T^a$, show the intermediate expansion $\nabla_XY=[X(y^a)+\omega^a{}_b(X)y^b]e_a$ explicitly with a link to \[\[24.04 Connection one-forms\]\], since "Expanding the covariant derivatives yields" hides it.
 - [Example] Add the $f=\sinh r$ case after the worked example ($\omega^1{}_2=-\cosh r\,d\phi$), so all three geometries from 24.02 appear before curvature is computed in 24.06.
 
 ### N0746
@@ -1721,7 +1721,7 @@ A short legacy stub with incorrect index formulas, no TLDR, and an unquoted titl
 - [Correctness] "$(a\wedge b)_i = ε_{ijk}\ a_j e_j\ b_k e_k$" mixes components with basis vectors and gives a vector, not a bivector; the bivector components are $(a\wedge b)_{jk}=a_jb_k-a_kb_j$, and in 3D its Hodge dual is the cross product $(a\times b)_i=\varepsilon_{ijk}a_jb_k$.
 - [Correctness] "$c_i = ε_{ijkl} \, a_j \, b_k \, e_l$" uses a four-index Levi-Civita symbol in three dimensions with a free basis vector; delete it or replace it by $a\wedge b=\tfrac12(a_jb_k-a_kb_j)\,e_j\wedge e_k$.
 - [Correctness] "2D exterior product: Special case of the cross product" writes $a\times b=a_xb_y-a_yb_x$; in 2D the wedge is $a\wedge b=(a_xb_y-a_yb_x)\,e_x\wedge e_y$ (a multiple of the unit bivector), and the wedge exists in every dimension while only in 3D is it dual to the cross product, so "higher order version of the cross product" inverts the relation.
-- [Structure] Add a quoted frontmatter title, a TLDR, and write the example with explicit basis bivectors $e_y\wedge e_z$ etc. instead of "$yz$"; link [[23.02 Wedge products]] and consider merging, since the alias "wedge product" duplicates that note.
+- [Structure] Add a quoted frontmatter title, a TLDR, and write the example with explicit basis bivectors $e_y\wedge e_z$ etc. instead of "$yz$"; link \[\[23.02 Wedge products\]\] and consider merging, since the alias "wedge product" duplicates that note.
 - [Graph] Add a 2D graph of two vectors $a,b$ with the shaded oriented parallelogram whose signed area is $a_xb_y-a_yb_x$, with an arrow showing the circulation sense.
 
 ### N0752
@@ -1740,7 +1740,7 @@ Priority: medium · Graph: no · Manim: no
 
 A bare link list with a misleading heading and one broken heading link.
 
-- [Links] "[[Rotation#Axis-Angle Vector|Axis-Angle Vector]]" points to a heading that does not exist; Rotation.md's heading is "Rotation using Axis-Angle Vector", so link [[Rotation using Axis-Angle Vector]] directly.
+- [Links] "\[\[Rotation#Axis-Angle Vector|Axis-Angle Vector\]\]" points to a heading that does not exist; Rotation.md's heading is "Rotation using Axis-Angle Vector", so link \[\[Rotation using Axis-Angle Vector\]\] directly.
 - [Correctness] The heading "Algebraic Spaces of Rotation $SO(n)$" lists complex numbers, quaternions and spinors, which represent $U(1)\cong SO(2)$ and $SU(2)=\mathrm{Spin}(3)$ (a double cover), not $SO(n)$ itself; retitle e.g. "Representations of rotations" and state which group each item realizes.
 - [Structure] Add frontmatter with a quoted title, a TLDR, and one line per item saying what it parametrizes (3 parameters for $SO(3)$, unit quaternion on $S^3$, etc.).
 
@@ -1754,7 +1754,7 @@ Captures the right idea (two loop classes in $SO(3)$) but the description of the
 - [Correctness] "Those loops may have a winding number greater than 0" suggests an integer invariant; the fundamental group of $SO(3)$ is $\mathbb Z_2$, so there are exactly two classes and no integer winding number. Say this explicitly.
 - [Correctness] The space is described only as "a loop around a spherical space ... represented as a circle"; state precisely that the axis-angle space is the solid ball of radius $\pi$ with antipodal boundary points identified ($\mathbb{RP}^3$), and that a "teleport" is passing through the boundary to the antipodal point.
 - [Structure] Label the trivial (even, contractible) class first and the odd class second, and rename the note "Homotopy classes ..." since "Homotopology" is not a standard term.
-- [Links] "[[Vector|Vectors]]" has no target note or alias in the vault; link an existing vector note (e.g. in "03 Linear Algebra/01 Vectors and Bases").
+- [Links] "\[\[Vector|Vectors\]\]" has no target note or alias in the vault; link an existing vector note (e.g. in "03 Linear Algebra/01 Vectors and Bases").
 - [Graph] Add a 2D graph of a disk of radius $\pi$ (a slice of the ball) showing a loop with one antipodal jump and a loop with two jumps, and the two-jump loop being deformed so its jump points meet and cancel.
 - [Manim] Animate the two antipodal jump points of a class-two loop sliding along the boundary until they coincide and the loop contracts to a point, while a class-one loop cannot do so; this is the core argument and is inherently a continuous deformation.
 
@@ -1781,7 +1781,7 @@ Short informal note with a misleading claim about representing 3D rotations, inc
 - [Correctness] "can be represented by some (one or more) axis" contradicts Euler's rotation theorem cited right below: every rotation of $\mathbb R^3$ is a rotation about exactly one axis (unique unless the rotation is the identity).
 - [Correctness] The callout "Rotations in 3 dimensions can't be properly represented by an 3d vector ... requires 4 dimensions" is misleading: every rotation is represented by the 3-parameter axis-angle vector ($SO(3)$ is 3-dimensional); what fails is that axis-angle vectors do not compose by addition and do not record the path class, which the unit quaternion on $S^3\subset\mathbb R^4$ captures.
 - [Correctness] Symbol clash: the angle is $Θ$ in the first section and $θ$ in "Angular velocity"; also state that $\dot{\hat x}_b=ω_s\times\hat x_b$ requires all vectors expressed in frame $s$.
-- [Example] Add the explicit relation to the rotation matrix via [[Rotation using Matrices]] (Rodrigues) and a numeric case, e.g. $\vec Θ=(\pi/2)\hat z$ maps $\hat x\to\hat y$.
+- [Example] Add the explicit relation to the rotation matrix via \[\[Rotation using Matrices\]\] (Rodrigues) and a numeric case, e.g. $\vec Θ=(\pi/2)\hat z$ maps $\hat x\to\hat y$.
 - [Graph] Add a 3D graph of a unit axis $\hat e$, a vector $v$, and its rotated image $Rv$ with the cone traced by the rotation.
 - [Manim] Animate $90°$ about $\hat x$ then $90°$ about $\hat y$ versus the reverse order applied to a box, to show non-commutativity and why axis-angle vectors cannot simply be added.
 
@@ -1818,7 +1818,7 @@ Priority: high · Graph: no · Manim: yes
 A stub that gives the $SU(2)$–quaternion correspondence but never shows how a quaternion rotates a vector.
 
 - [Example] Add the rotation formula $v'=q\,v\,q^{*}$ with $q=\cos(θ/2)+\sin(θ/2)(n_xi+n_yj+n_zk)$ and a worked case ($90°$ about $z$ mapping $i\to j$), which also shows the half-angle behind the double cover.
-- [Links] "[[Quaternion]]" has no target note or alias; the vault note is [[Quaternions]].
+- [Links] "\[\[Quaternion\]\]" has no target note or alias; the vault note is \[\[Quaternions\]\].
 - [Simplify] State that the displayed correspondence $q\mapsto U$ is a group isomorphism from unit quaternions to $SU(2)$, and that $q$ and $-q$ give the same rotation.
 - [Manim] Animate an object rotating about a fixed axis while $q(θ)$ travels a great circle on a stereographically projected $S^3$, reaching $-1$ at $θ=2\pi$ and $+1$ at $4\pi$.
 - [Structure] Add frontmatter with a quoted title and a TLDR.
@@ -1896,7 +1896,7 @@ Priority: high · Graph: no · Manim: no
 A one-sentence stub that states Fermi–Dirac antisymmetry rather than the spin-statistics theorem itself.
 
 - [Correctness] The sentence describes the exchange property of fermions, not the theorem; the theorem states that in relativistic quantum field theory integer-spin particles obey Bose statistics (symmetric) and half-integer-spin particles obey Fermi statistics (antisymmetric), and the sign applies to exchange of identical particles only.
-- [Structure] Add frontmatter, a TLDR, the exchange rule $\psi(\ldots,x_j,\ldots,x_i,\ldots)=\pm\psi(\ldots,x_i,\ldots,x_j,\ldots)$, and a link to the $2\pi$ sign of spinors in [[Spinors]].
+- [Structure] Add frontmatter, a TLDR, the exchange rule $\psi(\ldots,x_j,\ldots,x_i,\ldots)=\pm\psi(\ldots,x_i,\ldots,x_j,\ldots)$, and a link to the $2\pi$ sign of spinors in \[\[Spinors\]\].
 
 ### N0766
 
@@ -1941,7 +1941,7 @@ Priority: low · Graph: no · Manim: no
 
 A hub of embeds that works but omits the quaternion note and inherits the "Homotopology" misnomer.
 
-- [Structure] Add an embed or link for [[Rotation using Quaternions]], which is missing here, and rename the "Homotopology classes" heading to "Homotopy classes" if that note is renamed.
+- [Structure] Add an embed or link for \[\[Rotation using Quaternions\]\], which is missing here, and rename the "Homotopology classes" heading to "Homotopy classes" if that note is renamed.
 
 ### N0770
 
@@ -1950,7 +1950,7 @@ Priority: medium · Graph: no · Manim: yes
 
 A minimal hub with one correct key fact (sign flip under $2\pi$) and an incomplete learning list.
 
-- [Links] The "Learning" list omits existing notes in this folder: [[Rotation]], [[Dirac Equation]], [[Pauli Exclusion Principle]], [[Spin-Statistics-Theorem]], [[Jones Vectors]], [[Waveplates]]; link them and mark the unlinked items as planned.
+- [Links] The "Learning" list omits existing notes in this folder: \[\[Rotation\]\], \[\[Dirac Equation\]\], \[\[Pauli Exclusion Principle\]\], \[\[Spin-Statistics-Theorem\]\], \[\[Jones Vectors\]\], \[\[Waveplates\]\]; link them and mark the unlinked items as planned.
 - [Intuition] In "Transformation", add the formula behind the sign flip: $U(θ)=\exp(-iθ\,\hat n\cdot\vec\sigma/2)$ gives $U(2\pi)=-I$ and $U(4\pi)=I$.
 - [Manim] Animate the Dirac belt (plate) trick: after a $2\pi$ rotation the attached belt stays twisted, after $4\pi$ the twist can be undone, illustrating the two loop classes of $SO(3)$.
 
@@ -1964,7 +1964,7 @@ Clear and correct (products $RS$, $SR$ and $\det U=e^{i5\pi/6}$ check out); it l
 - [Graph] In "Worked example: rotation and reflection", add a 2D plot of the unit square and its images under $R$, $S$, $RS$ and $SR$ (axes $-1.5\le x,y\le1.5$), so orientation reversal by $S$ and $RS\ne SR$ are visible.
 - [Manim] Animate a coordinate grid with a marked asymmetric letter under $R(\theta)$ for $\theta:0\to\pi/2$ and then under $S$, showing that rotation keeps handedness while reflection flips it, and that the order of $R$ and $S$ changes the final picture.
 - [Example] After "The case $SO(3)$ is different", give one explicit pair, e.g. quarter-turns $R_x(\pi/2)$ and $R_z(\pi/2)$ applied to $e_1$ in both orders, instead of only asserting noncommutativity.
-- [Intuition] Add a one-line parameter count ($\dim GL_n=n^2$, $\dim O(n)=n(n-1)/2$, $\dim U(n)=n^2$, $\dim SU(n)=n^2-1$) with a forward link to [[25.06 Generators and Lie algebras]], where the counts are justified.
+- [Intuition] Add a one-line parameter count ($\dim GL_n=n^2$, $\dim O(n)=n(n-1)/2$, $\dim U(n)=n^2$, $\dim SU(n)=n^2-1$) with a forward link to \[\[25.06 Generators and Lie algebras\]\], where the counts are justified.
 
 ### N0772
 
@@ -2034,7 +2034,7 @@ Priority: low · Graph: no · Manim: no
 
 A clear topic hub whose links all resolve, although four linked lessons (25.01–25.03, 25.09) live in the abstract-algebra folder and the quaternion lessons in this folder are not listed.
 
-- [Links] List the notes that sit in this folder but are missing here ([[Quaternion algebra]], [[Rotation conventions and quaternions]], [[Quaternion interpolation and applications]], [[Dual quaternions and rigid transformations]], [[Lie groups and infinitesimal transformations]]), and note that 25.01–25.03 and 25.09 are in "11 Discrete Mathematics and Abstract Algebra/03 Groups, Rings, Fields, and Representations".
+- [Links] List the notes that sit in this folder but are missing here (\[\[Quaternion algebra\]\], \[\[Rotation conventions and quaternions\]\], \[\[Quaternion interpolation and applications\]\], \[\[Dual quaternions and rigid transformations\]\], \[\[Lie groups and infinitesimal transformations\]\]), and note that 25.01–25.03 and 25.09 are in "11 Discrete Mathematics and Abstract Algebra/03 Groups, Rings, Fields, and Representations".
 
 ### N0778
 
@@ -2043,7 +2043,7 @@ Priority: medium · Graph: no · Manim: yes
 
 Correct (the $SE(2)$ compositions $(1,2)^T$ vs $(3,0)^T$ and the $SO(4)$ count check out), but it largely duplicates 25.04–25.07 and has a few confusing asides.
 
-- [Structure] Most of "Matrix Lie groups", "Tangent directions and the Lie algebra" and "Brackets" repeats [[25.04 Matrix groups]], [[25.06 Generators and Lie algebras]] and [[25.07 Exponential maps]]; shorten these to a summary with links and keep the distinctive $SE(2)$/$SE(3)$ robotics material as the core.
+- [Structure] Most of "Matrix Lie groups", "Tangent directions and the Lie algebra" and "Brackets" repeats \[\[25.04 Matrix groups\]\], \[\[25.06 Generators and Lie algebras\]\] and \[\[25.07 Exponential maps\]\]; shorten these to a summary with links and keep the distinctive $SE(2)$/$SE(3)$ robotics material as the core.
 - [Simplify] In "Matrix Lie groups", delete "These group names do not count spacetime coordinates", which brings in an unrelated idea; the following sentences on $SO(3)$ and $SU(2)$ already make the dimension point.
 - [Example] In the robotics example, write the $\mathfrak{se}(2)$ element explicitly, $\begin{pmatrix}\omega J&v\\0&0\end{pmatrix}$, and compute its exponential for $\omega\ne0$, showing that it is a rotation about a point other than the origin, so the exponential gives a circular arc rather than a straight translation.
 - [Manim] Animate a planar link under $T_1T_2$ and $T_2T_1$ (rotate by $\pi/2$ and shift by $(1,0)$, combined with a shift by $(2,0)$ in both orders), ending at translations $(1,2)$ and $(3,0)$, to make the order dependence visible.
@@ -2056,7 +2056,7 @@ Priority: low · Graph: no · Manim: no
 
 Frontmatter-only placeholder.
 
-- [Structure] Quote the title (`title: "𝕆 Octonions"`) per the frontmatter rule; when content is added, cover the Fano-plane multiplication table, non-associativity, alternativity and $|xy|=|x||y|$, and link from [[Quaternion algebra]] through the Cayley–Dickson construction.
+- [Structure] Quote the title (`title: "𝕆 Octonions"`) per the frontmatter rule; when content is added, cover the Fano-plane multiplication table, non-associativity, alternativity and $|xy|=|x||y|$, and link from \[\[Quaternion algebra\]\] through the Cayley–Dickson construction.
 
 ### N0780
 
@@ -2079,7 +2079,7 @@ Correct (slerp midpoint, stereographic coordinate $p=(0,0,1+\sqrt2)$, the Wahba 
 - [Graph] In "Spherical linear interpolation", plot the rotation angle of slerp and of normalized lerp vs. $t\in[0,1]$ for relative rotations of $90^\circ$ and $170^\circ$, showing that slerp is a straight line and nlerp bends.
 - [Manim] Animate a cube interpolated from identity to a $180^\circ$ turn about $z$ by entrywise matrix averaging (it flattens at $t=1/2$) versus slerp (it rotates rigidly), matching "Worked midpoint".
 - [Simplify] In the slerp derivation, give $u=(q_1-q_0\cos\Omega)/\sin\Omega$ explicitly and show the substitution in one line, so the claim that the formula reduces to $q_0\cos(t\Omega)+u\sin(t\Omega)$ is verifiable.
-- [Structure] "Stereographic projection of unit quaternions" and "Vector analysis through quaternion multiplication" are not interpolation topics; move them to [[Quaternion algebra]] or a separate note, or retitle this note to match its catalogue scope.
+- [Structure] "Stereographic projection of unit quaternions" and "Vector analysis through quaternion multiplication" are not interpolation topics; move them to \[\[Quaternion algebra\]\] or a separate note, or retitle this note to match its catalogue scope.
 - [Structure] The file starts with a UTF-8 BOM; save it without BOM.
 
 ### N0782
@@ -2087,12 +2087,12 @@ Correct (slerp midpoint, stereographic coordinate $p=(0,0,1+\sqrt2)$, the Wahba 
 Note: [[Quaternions|Quaternions]]  
 Priority: high · Graph: no · Manim: no
 
-An early sketch with errors, no TLDR or prose, and content that conflicts with the careful [[Quaternion algebra]] note.
+An early sketch with errors, no TLDR or prose, and content that conflicts with the careful \[\[Quaternion algebra\]\] note.
 
 - [Correctness] The Pauli list repeats $\sigma_2$ twice and omits $\sigma_3=\begin{pmatrix}1&0\\0&-1\end{pmatrix}$.
 - [Correctness] "They can be used to replace i, j, k in Quaternions" is wrong as stated: $\sigma_a^2=+I$, not $-I$. The correct substitution is $i\mapsto-i\sigma_1$, $j\mapsto-i\sigma_2$, $k\mapsto-i\sigma_3$, which satisfies $i^2=j^2=k^2=ijk=-1$.
 - [Correctness] "Properties of i, j, k" mixes cross products of basis vectors ($i\times i=0$) with quaternion products ($i^2=-1$) for the same letters; as quaternions $ii=-1$, $ij=k$, $ik=-j$. Use quaternion products throughout, or label the cross-product lines as the vector part of $uv$.
-- [Structure] Quote the title, add a TLDR, and turn this note into a short hub linking [[Quaternion algebra]], [[Rotation conventions and quaternions]], [[Quaternion interpolation and applications]] and [[Dual quaternions and rigid transformations]] instead of duplicating the multiplication table.
+- [Structure] Quote the title, add a TLDR, and turn this note into a short hub linking \[\[Quaternion algebra\]\], \[\[Rotation conventions and quaternions\]\], \[\[Quaternion interpolation and applications\]\] and \[\[Dual quaternions and rigid transformations\]\] instead of duplicating the multiplication table.
 
 ### N0783
 
@@ -2122,7 +2122,7 @@ Priority: low · Graph: no · Manim: no
 
 A one-sentence stub without TLDR; the statement is correct but minimal.
 
-- [Structure] Quote the title (`title: "𝕋 Trigintaduonions"`), add a TLDR, and state the Cayley–Dickson origin (doubling the sedenions), the presence of zero divisors, and links to [[Sedenions]] and [[Octonions]].
+- [Structure] Quote the title (`title: "𝕋 Trigintaduonions"`), add a TLDR, and state the Cayley–Dickson origin (doubling the sedenions), the presence of zero divisors, and links to \[\[Sedenions\]\] and \[\[Octonions\]\].
 
 ### N0786
 
@@ -2132,7 +2132,7 @@ Priority: low · Graph: no · Manim: yes
 Clear and correct (the rotated components $(\sqrt3,1)^T$, the Fig. 26.1 labels, and both practice answers check out).
 
 - [Manim] Animate Fig. 26.1: keep $s(p)$ fixed while the frame rotates continuously from $0^\circ$ to $30^\circ$, with live component readouts moving from $(1,\sqrt3)$ to $(\sqrt3,1)$, so "the vector stays, the column changes" becomes visible.
-- [Intuition] In "Fibres, sections, and components", add a concrete nontrivial bundle (tangent vectors on $S^2$ or the Möbius line) to motivate why one global frame may not exist, with a link to [[27.08 Bundle types]].
+- [Intuition] In "Fibres, sections, and components", add a concrete nontrivial bundle (tangent vectors on $S^2$ or the Möbius line) to motivate why one global frame may not exist, with a link to \[\[27.08 Bundle types\]\].
 - [Structure] The file starts with a UTF-8 BOM; save it without BOM.
 
 ### N0787
@@ -2144,7 +2144,7 @@ Correct and carefully distinguishes frame changes from base-coordinate changes; 
 
 - [Graph] In "Worked example: a moving rotation", plot $\psi'^1(x)=\cos x$ and $\psi'^2(x)=-\sin x$ for $x\in[0,2\pi]$ together with the constant original components $(1,0)$, showing that varying components can describe a constant section.
 - [Manim] Animate the base line $x\in[0,2\pi]$ with the same fixed arrow above each sample point while the frames $R(x)$ rotate point by point; this shows a local (position-dependent) gauge change in contrast with a global one.
-- [Simplify] In "A coordinate change on the base", the one-form Jacobian paragraph introduces matrix-valued $A$ before connections are defined; move it to [[26.04 Covariant derivatives]] or mark it as a preview.
+- [Simplify] In "A coordinate change on the base", the one-form Jacobian paragraph introduces matrix-valued $A$ before connections are defined; move it to \[\[26.04 Covariant derivatives\]\] or mark it as a preview.
 - [Structure] The file starts with a UTF-8 BOM; save it without BOM.
 
 ### N0788
@@ -2165,7 +2165,7 @@ Priority: low · Graph: no · Manim: no
 
 Correct and well derived (the transformation law, the diagonal-scaling example, and both practice answers check out).
 
-- [Example] Add the orthonormal counterpart from [[26.03 The derivative problem]]: $g=R(x)$ gives $A'=J\,dx$, which is skew-symmetric as metric compatibility requires, in contrast with the non-skew $A'=\operatorname{diag}(1,-1)dx$ of the scaling example.
+- [Example] Add the orthonormal counterpart from \[\[26.03 The derivative problem\]\]: $g=R(x)$ gives $A'=J\,dx$, which is skew-symmetric as metric compatibility requires, in contrast with the non-skew $A'=\operatorname{diag}(1,-1)dx$ of the scaling example.
 - [Intuition] After the boxed law, state in words that $g^{-1}Ag$ re-expresses the old connection in the new basis and $g^{-1}dg$ measures how fast the new basis itself turns, which is why $A$ is not a tensor.
 - [Structure] The file starts with a UTF-8 BOM; save it without BOM.
 
@@ -2187,7 +2187,7 @@ Priority: low · Graph: no · Manim: yes
 
 Correct ($D^2=dA+A\wedge A$, the constant-coefficient example with $F=\operatorname{diag}(1,-1)dx\wedge dy$, and $[D_x,D_y](1,2)^T=(1,-2)^T$ check out), but curvature is presented algebraically without the loop picture.
 
-- [Manim] Animate parallel transport of a vector around a small square of side $\epsilon$ for $A=P\,dx+Q\,dy$, showing that the returning vector differs from the start by approximately $-\epsilon^2F_{xy}v$, which links $[D_x,D_y]$ to the loop picture in [[26.08 Parallel transport]].
+- [Manim] Animate parallel transport of a vector around a small square of side $\epsilon$ for $A=P\,dx+Q\,dy$, showing that the returning vector differs from the start by approximately $-\epsilon^2F_{xy}v$, which links $[D_x,D_y]$ to the loop picture in \[\[26.08 Parallel transport\]\].
 - [Intuition] In "Define the product before using it", add one sentence that $D^2$ measures "go around an infinitesimal loop and compare", so the reader knows why $F$ is called curvature before the algebra starts.
 - [Structure] The file starts with a UTF-8 BOM; save it without BOM.
 
@@ -2218,12 +2218,12 @@ Correct (the two-path example $T_1=e^{-i}$, $T_2=1$, the Stokes check, and the p
 Note: [[26.09 Pure gauge and global limits|26.09 Pure gauge and global limits]]  
 Priority: low · Graph: yes · Manim: yes
 
-Correct (holonomy $e^{-2\pi i\alpha}$, the integer-$\alpha$ removal, and the cut-domain practice answer check out), but it repeats the punctured-plane example of [[27.09 Connections and holonomy]] and [[27.10 Local and global potentials]] in different notation.
+Correct (holonomy $e^{-2\pi i\alpha}$, the integer-$\alpha$ removal, and the cut-domain practice answer check out), but it repeats the punctured-plane example of \[\[27.09 Connections and holonomy\]\] and \[\[27.10 Local and global potentials\]\] in different notation.
 
 - [Manim] Animate a phase arrow transported around a small loop away from the origin (returns unchanged) and around the unit circle for $\alpha=1/2$ (returns reversed), matching Fig. 26.2.
 - [Graph] Plot the phase $-\alpha\theta$ of the parallel frame along the lifted angle $\theta\in[0,2\pi]$ for $\alpha=1/3,1/2,1$, marking the mismatch at $2\pi$ that obstructs global removal unless $\alpha\in\mathbb Z$.
 - [Intuition] In "Worked example: a flat connection around a missing point", name the Aharonov–Bohm setting: $a$ is the vector potential outside a thin solenoid with flux proportional to $\alpha$, a physical flat connection with nontrivial holonomy.
-- [Structure] Harmonize notation with [[27.09 Connections and holonomy]]: here $D=d+ia$ with real $a$ and $A=ia$, there $\nabla=d+iA$ with real $A$; state the correspondence in both notes or adopt one convention.
+- [Structure] Harmonize notation with \[\[27.09 Connections and holonomy\]\]: here $D=d+ia$ with real $a$ and $A=ia$, there $\nabla=d+iA$ with real $A$; state the correspondence in both notes or adopt one convention.
 - [Structure] The file starts with a UTF-8 BOM; save it without BOM.
 
 ### N0795
@@ -2268,7 +2268,7 @@ Priority: medium · Graph: yes · Manim: yes
 The mathematics is correct (rectangle holonomy $e^{-icab}$, flat circle holonomy $e^{-2\pi ian}$, Fig. 27.3 values), but one letter has two meanings and the notation differs from the 26.xx notes.
 
 - [Correctness] Symbol clash: $a$ is the rectangle width in "$[0,a]\times[0,b]$" and $\oint A=cab$, and later the real coefficient in $A=a\alpha$ with holonomy $e^{-2\pi ian}$; rename one (for example rectangle sides $w,h$ or coefficient $\kappa$).
-- [Structure] Here $A$ is a real one-form with $\nabla=d+iA$, while [[26.04 Covariant derivatives]] to [[26.09 Pure gauge and global limits]] use $A=ia$ as the anti-Hermitian connection form; add one sentence stating that $A$ here corresponds to $a$ there.
+- [Structure] Here $A$ is a real one-form with $\nabla=d+iA$, while \[\[26.04 Covariant derivatives\]\] to \[\[26.09 Pure gauge and global limits\]\] use $A=ia$ as the anti-Hermitian connection form; add one sentence stating that $A$ here corresponds to $a$ there.
 - [Graph] Plot the holonomy values $e^{-2\pi i\kappa n}$ on the unit circle for $n=0,1,2,3$ and $\kappa=1/3$, showing the homomorphism $\pi_1(S^1)\to U(1)$ and why winding 3 returns to $1$ (Practice 2).
 - [Manim] Animate the rectangle loop shrinking for $A=cx\,dy$: the holonomy phase $-c\cdot\text{area}$ shrinks to zero, contrasted with the flat circle connection, where the phase stays $-2\pi\kappa$ for every loop around the hole.
 - [Structure] The file starts with a UTF-8 BOM; save it without BOM.
@@ -2282,7 +2282,7 @@ Correct (the Poincaré-lemma derivation, $\partial_xQ=\partial_yP$, the period $
 
 - [Graph] Add a 3D plot of the helicoid $z=\theta$ over the annulus $0.1<r<2$ for $\theta\in[0,4\pi]$, showing that the local potential of $\alpha$ is multivalued and gains $2\pi$ per turn.
 - [Simplify] In "Closed and exact one-forms", spell out the middle step of the $\partial_kf$ computation ("by closedness, $\sum_jx^j\partial_ka_j(tx)=\sum_jx^j\partial_ja_k(tx)$, and $t$ times this is $t\frac{d}{dt}a_k(tx)$"), since that substitution is the whole proof.
-- [Structure] The punctured-plane example duplicates [[26.09 Pure gauge and global limits]]; cross-link the two notes and keep one full computation.
+- [Structure] The punctured-plane example duplicates \[\[26.09 Pure gauge and global limits\]\]; cross-link the two notes and keep one full computation.
 - [Structure] The file starts with a UTF-8 BOM; save it without BOM.
 
 ### N0800
@@ -2292,7 +2292,7 @@ Priority: low · Graph: no · Manim: no
 
 A clear hub; all links resolve (27.01–27.05 live in "01 Elementary Topology").
 
-- [Links] Mention that 27.01–27.05 are in the "01 Elementary Topology" folder, point to [[Gauge connections - Overview]] as the parallel 26.xx sequence that treats the same holonomy examples in matrix language, and remove the UTF-8 BOM.
+- [Links] Mention that 27.01–27.05 are in the "01 Elementary Topology" folder, point to \[\[Gauge connections - Overview\]\] as the parallel 26.xx sequence that treats the same holonomy examples in matrix language, and remove the UTF-8 BOM.
 
 ### N0801
 
@@ -2301,7 +2301,7 @@ Priority: low · Graph: no · Manim: no
 
 A clear hub; all links resolve.
 
-- [Links] Point to [[Elementary topology and bundles - Overview]] (27.09–27.10 overlap with 26.08–26.09), state the convention used ($e'=eg$, $\psi'=g^{-1}\psi$, $D=d+A$) once here, and remove the UTF-8 BOM.
+- [Links] Point to \[\[Elementary topology and bundles - Overview\]\] (27.09–27.10 overlap with 26.08–26.09), state the convention used ($e'=eg$, $\psi'=g^{-1}\psi$, $D=d+A$) once here, and remove the UTF-8 BOM.
 
 ### N0802
 
@@ -2310,7 +2310,7 @@ Priority: high · Graph: no · Manim: no
 
 A three-line stub without frontmatter or TLDR that describes category theory only vaguely and does not link the other notes in its folder.
 
-- [Structure] Add a quoted title and TLDR, and turn the note into a hub linking [[Category]], [[Functor]], [[Isomorphism]], [[Equivalence]] and [[Category of Categories]].
+- [Structure] Add a quoted title and TLDR, and turn the note into a hub linking \[\[Category\]\], \[\[Functor\]\], \[\[Isomorphism\]\], \[\[Equivalence\]\] and \[\[Category of Categories\]\].
 - [Simplify] Replace "used to transform a mathematical problem expressed in one way into another representation" with a precise description: category theory studies objects through the structure-preserving maps between them, and functors transport problems between areas.
 - [Example] Give one concrete translation: the fundamental-group functor $\pi_1$ turns "is there a retraction $D^2\to S^1$?" into "is there a factorization $\mathbb Z\to0\to\mathbb Z$ of the identity?", which is clearly impossible.
 
@@ -2321,7 +2321,7 @@ Priority: medium · Graph: no · Manim: no
 
 A one-sentence stub without frontmatter whose definition is wrong.
 
-- [Correctness] "The Category set of all possible [[Category]]" is incorrect and runs into a size paradox; $\mathbf{Cat}$ is the category whose objects are small categories and whose morphisms are functors, with functor composition and identity functors. Also add a quoted title, a TLDR, and a trailing newline.
+- [Correctness] "The Category set of all possible \[\[Category\]\]" is incorrect and runs into a size paradox; $\mathbf{Cat}$ is the category whose objects are small categories and whose morphisms are functors, with functor composition and identity functors. Also add a quoted title, a TLDR, and a trailing newline.
 
 ### N0804
 

@@ -11,7 +11,7 @@ Back to the index: [[Note Improvement Tracker]]
 
 The review found 1 possible errors or notation conflicts. 1 of them are verified (1 fixed); the other 0 are not verified yet. Each item links to the full suggestion entry.
 
-- [[#N2189|N2189]] 18.07 Generalizations and Outlook: The sentence "[[19.00 Bands in Periodic Potentials|Bands in Periodic Potentials]] applies Berry curvature to the Brillouin zone…" is wrong: no note in chapter 19 mentions Berry curvature, the anomalous velocity, or Chern numbers (grep finds no "Berry" in that folder); rephrase it as an outlook beyond the course or link to a note that actually covers it. **Fixed:** Rephrased as an outlook beyond the course and kept the link only as the place where crystal bands are introduced
+- [[#N2189|N2189]] 18.07 Generalizations and Outlook: The sentence "\[\[19.00 Bands in Periodic Potentials|Bands in Periodic Potentials\]\] applies Berry curvature to the Brillouin zone…" is wrong: no note in chapter 19 mentions Berry curvature, the anomalous velocity, or Chern numbers (grep finds no "Berry" in that folder); rephrase it as an outlook beyond the course or link to a note that actually covers it. **Fixed:** Rephrased as an outlook beyond the course and kept the link only as the place where crystal bands are introduced
 
 ## Tracking table
 
@@ -38,7 +38,7 @@ Priority: low · Graph: no · Manim: no
 
 Clear chapter hub with an accurate summary of the Berry and Aharonov–Bohm results.
 
-- [Links] Link the summary bullets to [[18.01 Adiabatic Theorem]], [[18.03 Berry Phase Along Closed Paths]], [[18.04 Spin ½ in a Rotating Magnetic Field]] and [[18.05 Aharonov–Bohm Effect]]; the table lists $\magnetic\Phi_0$, which the summary never names (it writes $h/\lvert\electric q\rvert$).
+- [Links] Link the summary bullets to \[\[18.01 Adiabatic Theorem\]\], \[\[18.03 Berry Phase Along Closed Paths\]\], \[\[18.04 Spin ½ in a Rotating Magnetic Field\]\] and \[\[18.05 Aharonov–Bohm Effect\]\]; the table lists $\magnetic\Phi_0$, which the summary never names (it writes $h/\lvert\electric q\rvert$).
 
 ### N2183
 
@@ -70,7 +70,7 @@ Priority: low · Graph: no · Manim: no
 Correct; Eq. (18.3) has the right sign and form, but the link between the vector $\mathbf F_n$ and the tensor $F_{n,\mu\nu}$ is left implicit.
 
 - [Simplify] State $F_{n,\mu\nu}=\partial_\mu A_{n,\nu}-\partial_\nu A_{n,\mu}$ and, in three dimensions, $(\mathbf F_n)_\lambda=\tfrac12\varepsilon_{\lambda\mu\nu}F_{n,\mu\nu}$ before Eq. (18.3), and add the two-line derivation using $\langle m|\partial_\mu n\rangle=\langle m|\partial_\mu\energy{\hat H}|n\rangle/(\energy{E}_n-\energy{E}_m)$.
-- [Links] Point to [[18.04 Spin ½ in a Rotating Magnetic Field]] as the worked example where (18.3) gives the monopole curvature.
+- [Links] Point to \[\[18.04 Spin ½ in a Rotating Magnetic Field\]\] as the worked example where (18.3) gives the monopole curvature.
 
 ### N2186
 
@@ -109,7 +109,7 @@ Priority: low · Graph: no · Manim: no
 
 A short outlook whose forward link promises content that the target chapter does not contain.
 
-- [Correctness] The sentence "[[19.00 Bands in Periodic Potentials|Bands in Periodic Potentials]] applies Berry curvature to the Brillouin zone…" is wrong: no note in chapter 19 mentions Berry curvature, the anomalous velocity, or Chern numbers (grep finds no "Berry" in that folder); rephrase it as an outlook beyond the course or link to a note that actually covers it.
+- [Correctness] The sentence "\[\[19.00 Bands in Periodic Potentials|Bands in Periodic Potentials\]\] applies Berry curvature to the Brillouin zone…" is wrong: no note in chapter 19 mentions Berry curvature, the anomalous velocity, or Chern numbers (grep finds no "Berry" in that folder); rephrase it as an outlook beyond the course or link to a note that actually covers it.
 
 ### N2190
 

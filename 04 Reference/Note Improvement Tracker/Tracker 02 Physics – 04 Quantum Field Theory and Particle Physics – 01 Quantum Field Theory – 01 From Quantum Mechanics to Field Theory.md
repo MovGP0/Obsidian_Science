@@ -392,7 +392,7 @@ Priority: medium · Graph: no · Manim: no
 Readable chronology, but the attribution of ladder operators to Born and Jordan in 1925 is historically inaccurate and the first field quantization and fermion quantization are missing.
 
 - [Correctness] "In 1925, Born and Jordan showed that the quantized harmonic oscillator ... could be described with creation and annihilation operators" is misattributed: Born–Jordan (1925) established the matrix-mechanics commutator; the first field quantization (a vibrating string as a set of oscillators) is the Born–Heisenberg–Jordan paper (1926), and creation/annihilation operators for the radiation field were introduced by Dirac (1927).
-- [Structure] Add Jordan–Wigner (1928) anticommutator quantization of fermion fields; it is the historical origin of the anticommutation relations used in [[01.08.04 The Quantized Dirac Field]].
+- [Structure] Add Jordan–Wigner (1928) anticommutator quantization of fermion fields; it is the historical origin of the anticommutation relations used in \[\[01.08.04 The Quantized Dirac Field\]\].
 - [Simplify] After "implicitly, antiparticles" add the actual steps: Dirac's hole theory (1930) and the explicit anti-electron proposal (1931), so the reader sees that the 1928 equation alone did not announce the positron.
 - [Simplify] The final paragraph ("A useful reading check...") is meta-commentary; replace it with one sentence on how Anderson identified the positron (curvature sign in a known field plus energy loss in a lead plate fixing the direction of motion).
 
@@ -461,7 +461,7 @@ The current (1.79) and tensor (1.80) are correct, but the note is cluttered by r
 - [Simplify] Remove the two retained source formulas with $\int d^3k/(2\pi)^3$ and the $\mathbf k$ table row; keep only the correct $d^3x$ integrals and a one-line footnote that the source misprints the measure.
 - [Structure] Display the two-line derivation: $\delta\mathcal L=\partial_\mu[\partial\mathcal L/\partial(\partial_\mu\phi)\,\delta\phi]$ on shell, compare with $\partial_\mu K^\mu$, hence $\partial_\mu j^\mu=0$; then $dQ/dt=-\oint\mathbf j\cdot d\mathbf S=0$.
 - [Example] Work the complex-scalar example explicitly: $\delta\phi=i\phi$, $j^\mu=i(\phi^*\partial^\mu\phi-\phi\,\partial^\mu\phi^*)$ (up to sign convention), so the "charge" bullet has a formula.
-- [Example] For (1.80) give $T^{00}=\tfrac12\dot\phi^2+\tfrac12(\nabla\phi)^2+\tfrac12m^2\phi^2$ and link to [[01.12.06 Scalar energy–momentum tensor]], so the energy interpretation is visible here.
+- [Example] For (1.80) give $T^{00}=\tfrac12\dot\phi^2+\tfrac12(\nabla\phi)^2+\tfrac12m^2\phi^2$ and link to \[\[01.12.06 Scalar energy–momentum tensor\]\], so the energy interpretation is visible here.
 
 ### N2293
 
@@ -482,7 +482,7 @@ Priority: medium · Graph: no · Manim: no
 The physics is correct but several sentences are cryptic one-liners whose referents (Klein step, flux choice) are not named, and the chapter pointers lack links.
 
 - [Simplify] Rewrite the first paragraph as a three-item list naming each problem and its note: Klein–Gordon density not positive, Dirac negative-energy branch, Klein paradox (signed flux ratios); "A strong step also requires a correct incoming/outgoing flux choice" is unintelligible without that context.
-- [Links] Link the chapter pointers: Chapter 3 to the scalar-quantization folder hub, Chapter 4 to the Dirac-field hub, Chapters 8 and 12 to the QED and Non-Abelian Gauge Theories hubs, and "Appendix D" to the exercise index [[01.12 Exercises]].
+- [Links] Link the chapter pointers: Chapter 3 to the scalar-quantization folder hub, Chapter 4 to the Dirac-field hub, Chapters 8 and 12 to the QED and Non-Abelian Gauge Theories hubs, and "Appendix D" to the exercise index \[\[01.12 Exercises\]\].
 - [Simplify] Replace the "reconstruct three checks" paragraph with short answers or drop it; as written it is an unanswered quiz in a conclusions note.
 
 ### N2295
@@ -544,7 +544,7 @@ Priority: medium · Graph: yes · Manim: no
 The numbers are correct ($q_1\approx0.447$, $R\to6.85$, $T\to-5.85$ and the threshold limit $R\to1$ verified), but part (a) asks for a sketch that the note never shows and part (d) is hard to follow.
 
 - [Graph] Plot $R$ and $T$ against $V_0/m\in[0,20]$ at $E=1.5m$ using $R=((q_1-q_2)/(q_1+q_2))^2$, $T=4q_1q_2/(q_1+q_2)^2$, $q_2=k_2/(E-V_0+m)$, with $R=1$, $T=0$ on $0.5<V_0/m<2.5$, shaded regions, and dashed asymptotes $6.85$ and $-5.85$ (check values: $V_0=3m$ gives $R=2.25$, $T=-1.25$; $V_0=5m$ gives $R=4$, $T=-3$).
-- [Structure] Display the general formulas for $R$ and $T$ in terms of $q_1,q_2$ at the start of the solution (or link [[01.06.02 Explicit Calculation]]); part (b) uses them without stating them.
+- [Structure] Display the general formulas for $R$ and $T$ in terms of $q_1,q_2$ at the start of the solution (or link \[\[01.06.02 Explicit Calculation\]\]); part (b) uses them without stating them.
 - [Simplify] Shorten (d): in the Klein regime the transmitted wave lies in the shifted negative-energy continuum, so with the right-moving-momentum choice its group velocity points left; in field theory the step emits pairs, with antiparticles moving away from the step in Region II; drop the repeated caveats.
 
 ### N2301

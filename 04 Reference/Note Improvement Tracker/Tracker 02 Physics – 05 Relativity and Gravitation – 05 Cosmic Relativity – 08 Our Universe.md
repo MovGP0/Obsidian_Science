@@ -330,4 +330,4 @@ Priority: low · Graph: no · Manim: no
 
 Adequate chapter summary; no change needed beyond links.
 
-- [Links] Add wiki links to the summarised notes (08.01, 08.03.01, 08.04, 08.06.05, 08.07) and to [[09.00 Time Dilation and the Twin-Paradox]] for "the next chapter".
+- [Links] Add wiki links to the summarised notes (08.01, 08.03.01, 08.04, 08.06.05, 08.07) and to \[\[09.00 Time Dilation and the Twin-Paradox\]\] for "the next chapter".

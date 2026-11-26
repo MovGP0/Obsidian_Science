@@ -93,7 +93,7 @@ Correct derivation with sensible caveats; the accuracy claims would be clearer w
 
 - [Example] Add a small table: $n=1,5,10$ gives ratio Stirling/$n!=0.9221,\ 0.9835,\ 0.9917$, close to $1-1/(12n)$. This makes the "$n=1$" warning and the $1/(12n)$ term concrete.
 - [Graph] Plot the scaled integrand $e^{n(\ln u-u+1)}$ for $n=5,20,100$ on $u\in[0,3]$, with the Gaussian $e^{-n(u-1)^2/2}$ dashed, to show the narrowing peak used in the derivation.
-- [Links] Stirling is derived three times (A.05, B.03, C.02); add a link to [[C.02 Stirling Formula - Forms and Approximations]] for the binomial forms.
+- [Links] Stirling is derived three times (A.05, B.03, C.02); add a link to \[\[C.02 Stirling Formula - Forms and Approximations\]\] for the binomial forms.
 
 ### N1678
 

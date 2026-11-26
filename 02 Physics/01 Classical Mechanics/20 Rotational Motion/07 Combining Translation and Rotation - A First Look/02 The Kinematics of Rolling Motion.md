@@ -125,7 +125,7 @@ $$
 
 A uniform disk of mass $\mechanical M$ and radius $\mechanical R$ models a spool. A massless, inelastic rope wraps around a groove of radius $\mechanical r$. A force $\mechanical{\vec F}$ pulls its free end $A$ at angle $\mechanical\phi$ to the horizontal. Tension transmits the pull along the rope to the point of tangency $A'$. The rope does not slip along the groove, and the spool rolls without slipping on the ground. Here the spool moves right and rotates clockwise. Section 7.3.2 discusses how the direction of motion depends on the angle of the pull.
 
-![[rotational-motion-fig-7-6.svg|**Fig. 7.6** A rope leaves the bottom of the groove of a spool. The translation of the center of mass contributes a velocity component along the rope, and rotation supplies a tangential contribution at $A'$.|409]]
+![[rotational-motion-fig-7-6-spool-rope-velocity.svg|**Fig. 7.6** A rope leaves the bottom of the groove of a spool. The translation of the center of mass contributes the component $\mechanical v_{\mathrm{cm}}\cos\mechanical\phi$ forward along the rope. The clockwise rotation contributes the tangential velocity $\mechanical\omega\mechanical r$ at $A'$, which points backward along the rope.|409]]
 
 Take the $x$ axis along the rope. The axial velocity at $A$ equals the component at $A'$ along the rope. The translational contribution is $\mechanical v_{\mathrm{cm}}\cos\mechanical\phi$. The rope leaves the groove below and to the right of $O$, where the clockwise rotation moves $A'$ backward along the rope, so the rotational contribution is $-\mechanical\omega\mechanical r$. Since $\mechanical\omega=\mechanical v_{\mathrm{cm}}/\mechanical R$,
 

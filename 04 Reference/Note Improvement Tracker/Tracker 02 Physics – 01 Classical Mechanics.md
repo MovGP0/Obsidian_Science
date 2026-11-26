@@ -46,7 +46,7 @@ Priority: low · Graph: no · Manim: no
 Clear, well-organised preface describing scope, prerequisites, and the seven parts.
 
 - [Intuition] Add one or two sentences on why a single subject has three formulations (vector, Lagrangian, Hamiltonian), e.g. "same physics, different bookkeeping: forces vs energies vs phase-space flow", so a first-year reader understands the book's arc before reading the part list.
-- [Links] Link each Part heading to its chapter hub (e.g. Part I to [[01.00 Point Particle Kinematics]]) so the overview doubles as navigation.
+- [Links] Link each Part heading to its chapter hub (e.g. Part I to \[\[01.00 Point Particle Kinematics\]\]) so the overview doubles as navigation.
 
 ### N1105
 

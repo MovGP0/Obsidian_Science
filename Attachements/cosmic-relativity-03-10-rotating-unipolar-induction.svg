@@ -14,19 +14,19 @@
   <g font-family="Arial, sans-serif" fill="#172033">
     <g>
       <use href="#disc"/>
-      <text x="190" y="45" text-anchor="middle" font-size="24">v_C ≠ 0, E ≠ 0</text>
+      <text x="190" y="45" text-anchor="middle" font-size="24">v_C ≠ 0, ℰ ≠ 0</text>
       <path d="M 255 98 Q 300 95 320 125" fill="none" stroke="#34465e" stroke-width="3" marker-end="url(#arrow)"/>
       <text x="190" y="340" text-anchor="middle" font-size="21">a — Conductor rotates</text>
     </g>
     <g transform="translate(380 0)">
       <use href="#disc"/>
-      <text x="190" y="45" text-anchor="middle" font-size="24">v_M ≠ 0, v_C = 0, E = 0</text>
+      <text x="190" y="45" text-anchor="middle" font-size="24">v_M ≠ 0, v_C = 0, ℰ = 0</text>
       <path d="M 220 295 Q 180 310 145 290" fill="none" stroke="#34465e" stroke-width="3" marker-end="url(#arrow)"/>
       <text x="190" y="340" text-anchor="middle" font-size="21">b — Magnet rotates</text>
     </g>
     <g transform="translate(760 0)">
       <use href="#disc"/>
-      <text x="190" y="45" text-anchor="middle" font-size="24">v_C = v_M ≠ 0, E ≠ 0</text>
+      <text x="190" y="45" text-anchor="middle" font-size="24">v_C = v_M ≠ 0, ℰ ≠ 0</text>
       <path d="M 255 98 Q 300 95 320 125 M 220 295 Q 180 310 145 290" fill="none" stroke="#34465e" stroke-width="3" marker-end="url(#arrow)"/>
       <text x="190" y="340" text-anchor="middle" font-size="21">c — Both rotate together</text>
     </g>

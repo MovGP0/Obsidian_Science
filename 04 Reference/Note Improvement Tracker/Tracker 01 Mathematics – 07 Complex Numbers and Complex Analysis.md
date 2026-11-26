@@ -15,10 +15,10 @@ The review found 8 possible errors or notation conflicts. 8 of them are verified
 - [[#N0361|N0361]] Complex arithmetic and polar form problems: Symbol clash: $u$ is the temperature/harmonic function ($\thermal{u}$, listed in the table) but also the real part of $z^{-1}=u+iv$ in both inverse derivations; rename the inverse components (for example $p+iq$). **Fixed:** Renamed inverse components u+iv to s+it in all three inverse derivations (p,q were already used for rationals).
 - [[#N0364|N0364]] Euler's Formula: The callout "The +/- depends on the chosen coordinate system" is wrong: $e^{i\pi/2}=i$, $e^{i3\pi/2}=-i$ etc. follow from Euler's formula and do not depend on any convention; only the drawing orientation (counterclockwise = positive angle) is conventional. **Fixed:** Callout now says the values follow from Euler's formula and only the drawing orientation (counterclockwise positive) is a convention.
 - [[#N0364|N0364]] Euler's Formula: The image line "[![obsidian|300](https://upload.wikimedia.org/...)]" is malformed (extra outer brackets, alt text used as size) and does not render as intended; use a valid embed, preferably a local file in `Attachements`. **Partly:** 300 width works in Obsidian); removed brackets and set alt text; no local copy made because downloading the image needs user approval.
-- [[#N0371|N0371]] Complex analysis - Catalogue Guide: "[[Planned Topics#14. Complex analysis|the detailed catalogue]]" is a broken link: no note "Planned Topics" exists in the vault (only a backup copy under `.temp`); remove it or point it to the current catalogue note. **Fixed:** Removed the sentence with the broken link, as already done in other catalogue guides; converted file to LF without BOM.
+- [[#N0371|N0371]] Complex analysis - Catalogue Guide: "\[\[Planned Topics#14. Complex analysis|the detailed catalogue\]\]" is a broken link: no note "Planned Topics" exists in the vault (only a backup copy under `.temp`); remove it or point it to the current catalogue note. **Fixed:** Removed the sentence with the broken link, as already done in other catalogue guides; converted file to LF without BOM.
 - [[#N0375|N0375]] Complex line integrals and primitives: "Components of a curve": defining a smooth curve only as "one with continuous derivative" is incomplete. A smooth arc also needs $z'(t)\ne0$, and without that condition a $C^1$ parametrization can trace the cusp shown in Fig. 92, which the note presents as non-smooth. **Fixed:** Added that a smooth arc also needs gamma'(t)!=0 and that a C1 parametrization without it can trace a cusp.
 - [[#N0383|N0383]] Residues and real integrals by contour deformation: Symbol clash: $b_n$ are the principal-part Laurent coefficients throughout, but in "Removable singularities" the Taylor coefficients of $g=(z-z_0)^2f$ are also called $b_0,b_1,b_2,\ldots$ (so "$f(z_0)=b_2$" collides with the pole-order coefficient $b_2$); likewise $c_n$ is the two-sided Laurent coefficient in (4) but the Taylor coefficient of $H$ in "Computing residues", where "$\operatorname{Res}=c_{m-1}$" then conflicts with (4) ($c_{-1}$ is the residue). Rename the Taylor coefficients, for example $h_k$, and keep one residue notation ($\operatorname{Res}_{z=z_0}f$) instead of mixing in $\operatorname{Res}[f,r_k]$ and $\operatorname{Res}(f;z_k)$. **Fixed:** Renamed Taylor coefficients of g to g_k and of H to h_k; replaced Res[f,a] and Res(f;a) with Res_{z=a} f(z) (or Res_{z=a}(P/Q), (F/G)).
-- [[#N0384|N0384]] Taylor expansions and Laurent annuli: In "Region $D_2$" the sentence "combine it with the inverse-power expansion from [[#Region $D_1$|the section on Region $D_1$]]" points to the wrong place: Region $D_1$ contains only nonnegative-power expansions; the inverse-power expansion of $1/(z-1)$ is the display immediately above in Region $D_2$, so drop the link or say "with the expansion of $1/(z-1)$ above". **Fixed:** Replaced the link with "the inverse-power expansion of 1/(z-1) above".
+- [[#N0384|N0384]] Taylor expansions and Laurent annuli: In "Region $D_2$" the sentence "combine it with the inverse-power expansion from \[\[#Region $D_1$|the section on Region $D_1$\]\]" points to the wrong place: Region $D_1$ contains only nonnegative-power expansions; the inverse-power expansion of $1/(z-1)$ is the display immediately above in Region $D_2$, so drop the link or say "with the expansion of $1/(z-1)$ above". **Fixed:** Replaced the link with "the inverse-power expansion of 1/(z-1) above".
 
 ## Tracking table
 
@@ -72,8 +72,8 @@ Priority: low · Graph: no · Manim: no
 
 Clear, correct entry note (rechecked the quotient $(3+2i)/(1-i)=\tfrac12+\tfrac52i$ and both practice answers); it largely duplicates "Complex arithmetic and conjugates".
 
-- [Structure] The division derivation, the $\sqrt{xy}$ pitfall and the inverse statement are repeated almost verbatim in [[Complex arithmetic and conjugates]]; decide which note is the primary lesson and let the other link to it instead of restating.
-- [Intuition] In "Addition and multiplication" add one forward sentence that multiplication also has a geometric meaning (scale and rotate), linking [[06.06 Rotations and products]], so the rule $(ac-bd)+(ad+bc)i$ does not look arbitrary.
+- [Structure] The division derivation, the $\sqrt{xy}$ pitfall and the inverse statement are repeated almost verbatim in \[\[Complex arithmetic and conjugates\]\]; decide which note is the primary lesson and let the other link to it instead of restating.
+- [Intuition] In "Addition and multiplication" add one forward sentence that multiplication also has a geometric meaning (scale and rotate), linking \[\[06.06 Rotations and products\]\], so the rule $(ac-bd)+(ad+bc)i$ does not look arbitrary.
 
 ### N0351
 
@@ -102,7 +102,7 @@ Priority: low · Graph: yes · Manim: yes
 
 Clear and correct conversion lesson with a good quadrant warning; the continuity section would benefit from a visual.
 
-- [Structure] The worked example ($-\sqrt3+i$, $5\pi/6$, the wrong $-\pi/6$) is identical to the one in [[Polar form of complex numbers]]; use a different point here (for example $-3-3i$ or $1-\sqrt3 i$) so the two notes complement each other.
+- [Structure] The worked example ($-\sqrt3+i$, $5\pi/6$, the wrong $-\pi/6$) is identical to the one in \[\[Polar form of complex numbers\]\]; use a different point here (for example $-3-3i$ or $1-\sqrt3 i$) so the two notes complement each other.
 - [Graph] 2D plot of the principal argument $\operatorname{Arg}(e^{it})$ (sawtooth with jumps at $t=\pi,3\pi$) together with the continuous phase $\phi(t)=t$ for $t\in[0,4\pi]$, illustrating "Phase changes and continuity".
 - [Manim] Move a point once around the unit circle while a readout shows $\operatorname{Arg}z$ jumping from $\pi$ to $-\pi$ at the negative real axis and a continuous angle counter rising to $2\pi$.
 
@@ -124,7 +124,7 @@ Priority: low · Graph: no · Manim: yes
 
 Correct and clear (matrix form, De Moivre, $(1+i)^6=-8i$ and practice answers check out).
 
-- [Structure] The worked example $(1+i)^6$ and practice $(\sqrt3+i)^3$ are the same as in [[Integer powers of complex numbers]]; replace one, e.g. use $(1-\sqrt3 i)^5$ here.
+- [Structure] The worked example $(1+i)^6$ and practice $(\sqrt3+i)^3$ are the same as in \[\[Integer powers of complex numbers\]\]; replace one, e.g. use $(1-\sqrt3 i)^5$ here.
 - [Manim] Show a small triangle or grid multiplied by $w=1.5e^{i\pi/6}$ repeatedly: each step rotates by $30^\circ$ and scales by $1.5$, contrasted with $w=e^{i\pi/6}$ (pure rotation) and with conjugation (reflection, not a multiplication).
 
 ### N0356
@@ -134,7 +134,7 @@ Priority: low · Graph: no · Manim: no
 
 Correct, compact derivation of all $n$th roots with a good completeness argument; nearly identical to "All roots of complex numbers".
 
-- [Structure] The cube roots of $-8$ and both practice problems (fourth roots of $16$, square roots of $3+4i$) are repeated verbatim in [[All roots of complex numbers]]; keep one primary note or give this one different examples (for example the fifth roots of $1+i$).
+- [Structure] The cube roots of $-8$ and both practice problems (fourth roots of $16$, square roots of $3+4i$) are repeated verbatim in \[\[All roots of complex numbers\]\]; keep one primary note or give this one different examples (for example the fifth roots of $1+i$).
 - [Intuition] Add one sentence that the roots of $z$ form the regular $n$-gon obtained by rotating one root $w_0$ by $2\pi/n$, which is exactly the statement $w_k=w_0\omega_k$ in geometric form.
 
 ### N0357
@@ -154,7 +154,7 @@ Priority: low · Graph: no · Manim: no
 
 Clear and correct (the explicit cube of $1+i\sqrt3$ and the $3+4i$ roots check out), but it duplicates 06.07 almost line for line.
 
-- [Structure] Same worked example and same two practice problems as [[06.07 Roots]]; merge the two or differentiate them (this one as the entry-level lesson, 06.07 with the roots-of-unity generator and new examples).
+- [Structure] Same worked example and same two practice problems as \[\[06.07 Roots\]\]; merge the two or differentiate them (this one as the entry-level lesson, 06.07 with the roots-of-unity generator and new examples).
 - [Intuition] In "Zero, principal values, and a useful distinction", show the real cube root $-2$ and the principal complex value $1+i\sqrt3$ on a small plot of the three cube roots of $-8$, so the convention clash is visible.
 
 ### N0359
@@ -164,8 +164,8 @@ Priority: medium · Graph: no · Manim: no
 
 Legacy stub without TLDR whose only formula, $e=(1,i)$, is unexplained, and which duplicates the role of "Complex numbers - Overview".
 
-- [Structure] The frontmatter title "ℂ Complex Numbers" contains a non-ASCII character but is not quoted, and the note has no TLDR; follow the skill format or turn the note into a redirect to [[Complex numbers - Overview]].
-- [Simplify] Explain or remove the displayed "$e=(1,i)$": presumably the basis $(1,i)$ of $\mathbb C$ as a real vector space, but the letter $e$ clashes with Euler's number used in the linked [[Euler's Formula]] note.
+- [Structure] The frontmatter title "ℂ Complex Numbers" contains a non-ASCII character but is not quoted, and the note has no TLDR; follow the skill format or turn the note into a redirect to \[\[Complex numbers - Overview\]\].
+- [Simplify] Explain or remove the displayed "$e=(1,i)$": presumably the basis $(1,i)$ of $\mathbb C$ as a real vector space, but the letter $e$ clashes with Euler's number used in the linked \[\[Euler's Formula\]\] note.
 
 ### N0360
 
@@ -174,7 +174,7 @@ Priority: low · Graph: no · Manim: no
 
 Clear, correct entry lesson (rechecked $(2+3i)(1-4i)=14-5i$, $A=\tfrac72+\tfrac12i$ and both practice answers); overlaps strongly with 06.01 and 06.03.
 
-- [Structure] Division, the inverse $\overline z/|z|^2$ and the $\sqrt{xy}$ warning are restated from [[06.01 Complex arithmetic]]; keep this as the elementary lesson and trim 06.01, or vice versa, to avoid two parallel versions drifting apart.
+- [Structure] Division, the inverse $\overline z/|z|^2$ and the $\sqrt{xy}$ warning are restated from \[\[06.01 Complex arithmetic\]\]; keep this as the elementary lesson and trim 06.01, or vice versa, to avoid two parallel versions drifting apart.
 
 ### N0361
 
@@ -196,7 +196,7 @@ Priority: low · Graph: no · Manim: no
 
 Concise hub; all eight topic links and the three prerequisite overviews resolve.
 
-- [Links] Also list the parallel entry lessons in this folder ([[Complex numbers and the plane]], [[Complex arithmetic and conjugates]], [[Polar form of complex numbers]], [[Exponential form of complex numbers]], [[Integer powers of complex numbers]], [[All roots of complex numbers]]) and the transcript [[Complex arithmetic and polar form problems]], so the hub covers the whole folder.
+- [Links] Also list the parallel entry lessons in this folder (\[\[Complex numbers and the plane\]\], \[\[Complex arithmetic and conjugates\]\], \[\[Polar form of complex numbers\]\], \[\[Exponential form of complex numbers\]\], \[\[Integer powers of complex numbers\]\], \[\[All roots of complex numbers\]\]) and the transcript \[\[Complex arithmetic and polar form problems\]\], so the hub covers the whole folder.
 
 ### N0363
 
@@ -205,7 +205,7 @@ Priority: low · Graph: no · Manim: no
 
 Clear, correct beginner lesson with a worked example and checked practice answers.
 
-- [Example] "What the picture does not imply" only shows that $2+i$ and $1+2i$ have equal moduli; add the one-line $i^2=-1$ argument from [[06.01 Complex arithmetic]] (or link it), since equal moduli alone does not prove that no compatible ordering exists.
+- [Example] "What the picture does not imply" only shows that $2+i$ and $1+2i$ have equal moduli; add the one-line $i^2=-1$ argument from \[\[06.01 Complex arithmetic\]\] (or link it), since equal moduli alone does not prove that no compatible ordering exists.
 
 ### N0364
 
@@ -216,7 +216,7 @@ Legacy stub without frontmatter or TLDR, with a broken image embed and a mislead
 
 - [Correctness] The callout "The +/- depends on the chosen coordinate system" is wrong: $e^{i\pi/2}=i$, $e^{i3\pi/2}=-i$ etc. follow from Euler's formula and do not depend on any convention; only the drawing orientation (counterclockwise = positive angle) is conventional.
 - [Correctness] The image line "[![obsidian|300](https://upload.wikimedia.org/...)]" is malformed (extra outer brackets, alt text used as size) and does not render as intended; use a valid embed, preferably a local file in `Attachements`.
-- [Structure] Add quoted-title frontmatter and a TLDR, write $\theta$, $\varphi$ as LaTeX macros instead of Unicode θ, φ inside math, and give the "Rotation by 45°" headings in radians to match the formulas; or replace the note by a link to [[06.05 Euler’s formula]].
+- [Structure] Add quoted-title frontmatter and a TLDR, write $\theta$, $\varphi$ as LaTeX macros instead of Unicode θ, φ inside math, and give the "Rotation by 45°" headings in radians to match the formulas; or replace the note by a link to \[\[06.05 Euler’s formula\]\].
 - [Graph] Replace the external Wikimedia image with a native 2D plot: unit circle, the point $e^{i\theta}$ for $\theta=1$ rad with $\cos\theta$ and $\sin\theta$ drawn as projections, and the six listed special values marked.
 
 ### N0365
@@ -236,7 +236,7 @@ Priority: low · Graph: yes · Manim: no
 Clear and correct (De Moivre, $(1+i)^{-2}=-i/2$, $i^{2026}=-1$, $(1-i)^{-4}=-1/4$ check out); the modulus discussion at the end would benefit from a picture.
 
 - [Graph] 2D plot of the powers $z^n$, $n=0,\dots,12$, for $z=1.1e^{i\pi/6}$, $z=e^{i\pi/6}$ and $z=0.9e^{i\pi/6}$ as connected points: an outward spiral, a regular 12-gon and an inward spiral, illustrating the last paragraph.
-- [Structure] The $(1+i)^6$ example and the $(\sqrt3+i)^3$ practice are duplicated in [[06.06 Rotations and products]]; vary one of them.
+- [Structure] The $(1+i)^6$ example and the $(\sqrt3+i)^3$ practice are duplicated in \[\[06.06 Rotations and products\]\]; vary one of them.
 
 ### N0367
 
@@ -245,7 +245,7 @@ Priority: low · Graph: no · Manim: no
 
 Clear and correct; the quadrant table is a good, safe conversion method.
 
-- [Structure] The worked example $-\sqrt3+i$ is identical to the one in [[06.04 Polar representation]]; keep it here (with the table) and give 06.04 a different point.
+- [Structure] The worked example $-\sqrt3+i$ is identical to the one in \[\[06.04 Polar representation\]\]; keep it here (with the table) and give 06.04 a different point.
 
 ### N0368
 
@@ -270,7 +270,7 @@ Correct and careful about hypotheses and orientation (rechecked $\pi i e$, the e
 
 - [Structure] Move "Cancel the two traversals of each cut" directly after "Cauchy's theorem for multiply connected domains", since it is the proof of that statement, and drop the repeated sentence about orientations.
 - [Example] Add a two-pole example for the multiply connected formula, e.g. $\oint_{|z|=3}dz/(z^2-1)=\oint_{|z-1|=1/2}+\oint_{|z+1|=1/2}=\pi i-\pi i=0$, which shows how the deformation formula is used in practice.
-- [Links] The source link "[[Complex line integrals and primitives|Math 122]]" points to the line-integral transcript; the Cauchy-theorem material from the same course is in [[Cauchy’s theorem and integral formula problems]], which is the better target.
+- [Links] The source link "\[\[Complex line integrals and primitives|Math 122\]\]" points to the line-integral transcript; the Cauchy-theorem material from the same course is in \[\[Cauchy’s theorem and integral formula problems\]\], which is the better target.
 - [Manim] Animate the annulus with two connecting cuts: the region splits into two simply connected pieces, each boundary is traversed, and the cut segments traversed in opposite directions fade out, leaving the CCW outer and CW inner circles.
 
 ### N0370
@@ -293,8 +293,8 @@ Priority: low · Graph: no · Manim: no
 
 Clear learning guide whose prerequisite links resolve, but the catalogue link is broken and the lesson index omits the transcript notes.
 
-- [Correctness] "[[Planned Topics#14. Complex analysis|the detailed catalogue]]" is a broken link: no note "Planned Topics" exists in the vault (only a backup copy under `.temp`); remove it or point it to the current catalogue note.
-- [Links] The "Complete lesson index" omits the Kabasares transcript notes in these folders ([[Complex limits, derivatives, and analyticity]], [[Complex line integrals and primitives]], [[Cauchy’s theorem and integral formula problems]], [[Branches of complex elementary functions]], [[Taylor expansions and Laurent annuli]], [[Residues and real integrals by contour deformation]]); add them as worked-problem companions.
+- [Correctness] "\[\[Planned Topics#14. Complex analysis|the detailed catalogue\]\]" is a broken link: no note "Planned Topics" exists in the vault (only a backup copy under `.temp`); remove it or point it to the current catalogue note.
+- [Links] The "Complete lesson index" omits the Kabasares transcript notes in these folders (\[\[Complex limits, derivatives, and analyticity\]\], \[\[Complex line integrals and primitives\]\], \[\[Cauchy’s theorem and integral formula problems\]\], \[\[Branches of complex elementary functions\]\], \[\[Taylor expansions and Laurent annuli\]\], \[\[Residues and real integrals by contour deformation\]\]); add them as worked-problem companions.
 
 ### N0372
 
@@ -303,7 +303,7 @@ Priority: medium · Graph: yes · Manim: yes
 
 Correct and precise (rechecked the $\operatorname{Log}(zw)$ counterexample, all values of $i^i$, $(1+it)^2$ and the semicircle image), but dense; the curve-parametrization section is off-topic and the branch idea has no visual.
 
-- [Structure] "What a branch cut does to the logarithm" repeats the principal-log content of "Elementary transcendental functions"; merge it there, and move "Description of curves in complex form" to [[Contour integrals and primitives]], where parametrized curves are used.
+- [Structure] "What a branch cut does to the logarithm" repeats the principal-log content of "Elementary transcendental functions"; merge it there, and move "Description of curves in complex form" to \[\[Contour integrals and primitives\]\], where parametrized curves are used.
 - [Intuition] Before the implicit-function-theorem paragraph, give the concrete loop calculation: along $z=e^{it}$, the continuous root $e^{it/2}$ goes from $1$ to $-1$ as $t$ runs from $0$ to $2\pi$, which is the sign change that forbids a global branch.
 - [Graph] 3D surface of $\operatorname{Im}\operatorname{Log}z=\operatorname{Arg}z$ over $-2\le x,y\le2$, showing the $2\pi$ jump across the negative real axis, optionally with $\operatorname{Re}\sqrt z$ as a second surface showing its sign jump across the same cut.
 - [Manim] Move $z$ once around the unit circle while the continuous square root $w=e^{it/2}$ traces only a half circle in the $w$-plane, ending at $-1$; a second loop returns it to $1$.
@@ -437,7 +437,7 @@ Priority: high · Graph: yes · Manim: no
 
 The mathematics is correct (rechecked Examples 1-3, the Taylor remainder bound, the $z_0=3$ expansion and all three regions of $-1/((z-1)(z-2))$), but the note mixes sequence limits, Liouville, a worksheet, and two copies of Laurent's theorem, and the D1/D2/D3 example is interrupted by unrelated material.
 
-- [Correctness] In "Region $D_2$" the sentence "combine it with the inverse-power expansion from [[#Region $D_1$|the section on Region $D_1$]]" points to the wrong place: Region $D_1$ contains only nonnegative-power expansions; the inverse-power expansion of $1/(z-1)$ is the display immediately above in Region $D_2$, so drop the link or say "with the expansion of $1/(z-1)$ above".
+- [Correctness] In "Region $D_2$" the sentence "combine it with the inverse-power expansion from \[\[#Region $D_1$|the section on Region $D_1$\]\]" points to the wrong place: Region $D_1$ contains only nonnegative-power expansions; the inverse-power expansion of $1/(z-1)$ is the display immediately above in Region $D_2$, so drop the link or say "with the expansion of $1/(z-1)$ above".
 - [Structure] Merge the two Laurent-theorem statements ("Laurent's theorem" and "Laurent series"/"Laurent coefficients"), and move "Expansion about $z_0=3$" and the repeated $1/(1-z)$ coefficient paragraph out from between Region $D_2$ and Region $D_3$ so the three regions form one continuous worked example; the Liouville/FTA/mean-value bullets, the worksheet, and the sequences section do not match the title and fit better in a sequences-and-series or Cauchy-formula note.
 - [Structure] Remove the placeholder "**2.** The line for $z^k-z_0^k$ ends after the equals sign." and the many handwriting-correction remarks (boxed $n\to0$, unclear denominator, reversed kernel, dropped minus) or collect them in one collapsed callout.
 - [Example] Worksheet 3 stops after expanding the product; finish it in one line: $\cos(\cos\theta)\cosh(\sin\theta)=\operatorname{Re}\cos(e^{i\theta})$, so the mean value theorem gives $\int_0^{2\pi}\ldots\,d\theta=2\pi\cos0=2\pi$; also state the contour for 1(b) (for example $|z|=2$, inside which $\tan(z/2)$ is analytic since its poles are at $\pm\pi,\pm3\pi,\ldots$).

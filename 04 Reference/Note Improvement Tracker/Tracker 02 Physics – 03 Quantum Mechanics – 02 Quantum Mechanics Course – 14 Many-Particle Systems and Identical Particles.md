@@ -109,7 +109,7 @@ Priority: low · Graph: yes · Manim: no
 
 Correct summary of screening, filling order, period lengths and Hund's rules, with a good carbon example.
 
-- [Links] The source link [[Hydrogen, spin, and the structure of the periodic table#Hydrogen and atomic physics|Physics 10]] points to a general section; the matching material is under "#Hund's rules" and "#Carbon term symbols" in that note.
+- [Links] The source link \[\[Hydrogen, spin, and the structure of the periodic table#Hydrogen and atomic physics|Physics 10\]\] points to a general section; the matching material is under "#Hund's rules" and "#Carbon term symbols" in that note.
 - [Graph] Add a 2D plot of the first ionization energy versus $Z$ for $Z=1$–$36$ to show the shell closures (He, Ne, Ar, Kr) that the filling order explains.
 - [Example] Add oxygen ($2p^4$, more than half filled) as a second worked case giving $^3P_2$, to illustrate Hund's third rule in the other direction.
 

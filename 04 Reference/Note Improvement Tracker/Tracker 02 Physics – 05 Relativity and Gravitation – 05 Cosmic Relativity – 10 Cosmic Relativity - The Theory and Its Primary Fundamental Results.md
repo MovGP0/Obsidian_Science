@@ -42,12 +42,12 @@ The review found 38 possible errors or notation conflicts. 38 of them are verifi
 - [[#N3649|N3649]] 10.11 The EEP and the Time Dilation of Clocks in an Accelerated Frame: The Lorentz factor is written $\signal{\gamma}$; it is a kinematic quantity and should use $\mechanical{\gamma}$ as in the rest of the chapter. **Fixed:** Replaced in text and table
 - [[#N3652|N3652]] 10.12.02 Motional Time Dilation in Cosmic Relativity: $\signal{\gamma}$ for the Lorentz factor should be $\mechanical{\gamma}$, consistent with the rest of the vault. **Fixed:** Replaced in equation and table
 - [[#N3652|N3652]] 10.12.02 Motional Time Dilation in Cosmic Relativity: "$\energy{\delta E}_g=\mechanical{m}\,\delta\mechanical{\phi}$" wraps the variation operator in the macro and conflicts in sign with $\energy{E}_g=-\mechanical{m}\mechanical{\Phi}_u$; write $\delta\energy{E}_g=-\mechanical{m}\,\delta\mechanical{\phi}$ or state the magnitude convention. **Fixed:** Now delta E_g=-m delta phi with delta outside the macro (text and table)
-- [[#N3653|N3653]] 10.12.03 Synchronisation of Clocks in Cosmic Relativity: "uniform to a few microkelvin, ... better than one part in a million" is incorrect: after removing the $3.36\,\unit{mK}$ dipole, intrinsic CMB anisotropies are tens of $\unit{\mu K}$ ($\Delta T/T\sim10^{-5}$, as [[10.04 Physics in the Gravitationally Charged Universe]] says); the current mean is $2.7255\,\unit{K}$. **Fixed:** Kept the source statement and added a correction: after 3.36 mK dipole removal anisotropies are tens of microkelvin, Delta T/T ~ 1e-5 (link to 10.04), mean 2.7255 K; Delta T row added
+- [[#N3653|N3653]] 10.12.03 Synchronisation of Clocks in Cosmic Relativity: "uniform to a few microkelvin, ... better than one part in a million" is incorrect: after removing the $3.36\,\unit{mK}$ dipole, intrinsic CMB anisotropies are tens of $\unit{\mu K}$ ($\Delta T/T\sim10^{-5}$, as \[\[10.04 Physics in the Gravitationally Charged Universe\]\] says); the current mean is $2.7255\,\unit{K}$. **Fixed:** Kept the source statement and added a correction: after 3.36 mK dipole removal anisotropies are tens of microkelvin, Delta T/T ~ 1e-5 (link to 10.04), mean 2.7255 K; Delta T row added
 - [[#N3654|N3654]] 10.12.04 The Addition of Velocities in Cosmic Relativity: $\signal{\gamma}$ for the Lorentz factor should be $\mechanical{\gamma}$. **Fixed:** Replaced all four occurrences
 - [[#N3657|N3657]] 10.13.02 The Optical Aberration and the Fresnel Drag: "Refraction reduces the angle by $1/\signal{n}$, so the inferred additional aberration remains $\mechanical{v}/\mechanical{c}$": to go from $\mechanical{v}/(\mechanical{c}\signal{n})$ inside to $\mechanical{v}/\mechanical{c}$ outside, refraction must multiply the angle by $\signal{n}$ (small-angle Snell, $\theta_{\mathrm{out}}=\signal{n}\theta_{\mathrm{in}}$). **Fixed:** Text now says exit refraction multiplies the small angle by n (Snell)
 - [[#N3657|N3657]] 10.13.02 The Optical Aberration and the Fresnel Drag: The text calls the relative speeds $\mechanical{c}'\mp\mechanical{v}$, but (10.39) uses $\mechanical{c}/\signal{n}\pm\mechanical{v}/\signal{n}^2$; with (10.38), $\mechanical{c}'-\mechanical{v}=\mechanical{c}/\signal{n}-\mechanical{v}/\signal{n}^2$, so define $\mechanical{c}'_\pm=\mechanical{c}/\signal{n}\pm\mechanical{v}/\signal{n}^2$ explicitly as the apparatus-frame speeds against and along the motion. **Fixed:** Defined c'_+/- = c/n +/- v/n^2 from (10.38) as telescope-frame speeds against and along the motion, with c'-v=c'_- as example
 - [[#N3658|N3658]] 10.14 The Unipolar Induction: (10.40) equates a scalar integral of $\electric{i}_1\,d\mechanical{l}\cdot\electric{i}_2$ with the vector $-\electric{q}\mechanical{v}\times\magnetic{\mathbf B}$, while the following text gives the Lorentz force $+\electric{q}\mechanical{v}\times\magnetic{\mathbf B}$; the force on a charge moving near a long wire is $\electric{q}\mechanical{\mathbf v}\times\magnetic{\mathbf B}$ with $\magnetic{B}=\magnetic{\mu}_0\electric{i}/(2\pi\mechanical{r})$. Fix sign and vector form. **Fixed:** (10.40) now F=q v x B with magnitude mu0 i1 q v/(2 pi r) for v parallel to the wire; added a sentence on the source form; table rows include vector F and v
-- [[#N3660|N3660]] 10.16 Summary: The summary gives $\mechanical{B}_g=-2\boldsymbol{\Omega}\mechanical{\Phi}_u/\mechanical{c}^2$ whereas [[10.15 Cosmic Relativity and the Spin Angular Momentum]] gives $-2\boldsymbol{\Omega}$; state the normalisation $|\mechanical{\Phi}_u|=\mechanical{c}^2$ or use one form. **Fixed:** Replaced by the 10.15 form B_g=c curl g_0i=-2 Omega and stated that it is the normalised form with g_0i=-v_i/c
+- [[#N3660|N3660]] 10.16 Summary: The summary gives $\mechanical{B}_g=-2\boldsymbol{\Omega}\mechanical{\Phi}_u/\mechanical{c}^2$ whereas \[\[10.15 Cosmic Relativity and the Spin Angular Momentum\]\] gives $-2\boldsymbol{\Omega}$; state the normalisation $|\mechanical{\Phi}_u|=\mechanical{c}^2$ or use one form. **Fixed:** Replaced by the 10.15 form B_g=c curl g_0i=-2 Omega and stated that it is the normalised form with g_0i=-v_i/c
 - [[#N3660|N3660]] 10.16 Summary: $\signal{\gamma}$ in the scalar and vector potentials should be $\mechanical{\gamma}$. **Fixed:** Replaced in potentials and table
 
 ## Tracking table
@@ -219,7 +219,7 @@ Priority: low · Graph: no · Manim: no
 
 Clear argument that uniform potentials are internally undetectable, with a good interpretation caveat.
 
-- [Example] Add the contrast case where a uniform vector potential is detectable: a rotating frame (Sagnac), where $\oint\mechanical{\mathbf A}\cdot d\mechanical{\mathbf l}\neq0$ because $\nabla\times\mechanical{\mathbf A}\neq0$; this links forward to [[11.10.02 The Experiments by G. Sagnac]].
+- [Example] Add the contrast case where a uniform vector potential is detectable: a rotating frame (Sagnac), where $\oint\mechanical{\mathbf A}\cdot d\mechanical{\mathbf l}\neq0$ because $\nabla\times\mechanical{\mathbf A}\neq0$; this links forward to \[\[11.10.02 The Experiments by G. Sagnac\]\].
 
 ### N3636
 
@@ -240,7 +240,7 @@ Priority: low · Graph: no · Manim: no
 
 Short section introduction; the interpretation checklist is apt.
 
-- [Links] Add a link to [[10.07.01 Laws of Dynamics - Newton's Law of Motion]].
+- [Links] Add a link to \[\[10.07.01 Laws of Dynamics - Newton's Law of Motion\]\].
 
 ### N3638
 
@@ -271,7 +271,7 @@ Priority: low · Graph: no · Manim: no
 
 Short section introduction; no change needed beyond navigation.
 
-- [Links] Add links to [[10.08.02 The Centrifugal Force]] and [[10.08.03 The Coriolis Force]].
+- [Links] Add links to \[\[10.08.02 The Centrifugal Force\]\] and \[\[10.08.03 The Coriolis Force\]\].
 
 ### N3641
 
@@ -408,7 +408,7 @@ Priority: low · Graph: no · Manim: no
 
 Clear account of the proposed cosmic clock, but the CMB uniformity figure is wrong by an order of magnitude.
 
-- [Correctness] "uniform to a few microkelvin, ... better than one part in a million" is incorrect: after removing the $3.36\,\unit{mK}$ dipole, intrinsic CMB anisotropies are tens of $\unit{\mu K}$ ($\Delta T/T\sim10^{-5}$, as [[10.04 Physics in the Gravitationally Charged Universe]] says); the current mean is $2.7255\,\unit{K}$.
+- [Correctness] "uniform to a few microkelvin, ... better than one part in a million" is incorrect: after removing the $3.36\,\unit{mK}$ dipole, intrinsic CMB anisotropies are tens of $\unit{\mu K}$ ($\Delta T/T\sim10^{-5}$, as \[\[10.04 Physics in the Gravitationally Charged Universe\]\] says); the current mean is $2.7255\,\unit{K}$.
 - [Example] Add the conversion the interpretation section asks for: $T\propto1/a$ gives $|\dot T/T|=H_0\approx7\times10^{-11}\,\unit{yr^{-1}}$, so a $10^{-5}$ temperature resolution corresponds to about $1.4\times10^5\,\unit{yr}$ of cosmic time, which shows how coarse this "clock" is.
 
 ### N3654
@@ -419,7 +419,7 @@ Priority: low · Graph: no · Manim: no
 Algebra of (10.32)–(10.33) checks and recovers the relativistic addition law; clear and compact.
 
 - [Correctness] $\signal{\gamma}$ for the Lorentz factor should be $\mechanical{\gamma}$.
-- [Example] Add the light-speed check explicitly: $\mechanical{u}=\mechanical{c}$ gives $\mechanical{u}_a=\mechanical{c}-\mechanical{v}$ (the Galilean relative speed the author predicts) and $\mechanical{w}=\mechanical{c}$; this ties the note to [[10.06.05 The Propagation of Light]].
+- [Example] Add the light-speed check explicitly: $\mechanical{u}=\mechanical{c}$ gives $\mechanical{u}_a=\mechanical{c}-\mechanical{v}$ (the Galilean relative speed the author predicts) and $\mechanical{w}=\mechanical{c}$; this ties the note to \[\[10.06.05 The Propagation of Light\]\].
 
 ### N3655
 
@@ -428,7 +428,7 @@ Priority: low · Graph: no · Manim: no
 
 Short section introduction with valid links to Chapters 3 and 4.
 
-- [Links] Add links to the subsections [[10.13.01 The Doppler Shift]] and [[10.13.02 The Optical Aberration and the Fresnel Drag]].
+- [Links] Add links to the subsections \[\[10.13.01 The Doppler Shift\]\] and \[\[10.13.02 The Optical Aberration and the Fresnel Drag\]\].
 
 ### N3656
 
@@ -483,5 +483,5 @@ Priority: low · Graph: no · Manim: no
 
 Faithful, clearly attributed chapter summary; two normalisation/notation inconsistencies with the body notes.
 
-- [Correctness] The summary gives $\mechanical{B}_g=-2\boldsymbol{\Omega}\mechanical{\Phi}_u/\mechanical{c}^2$ whereas [[10.15 Cosmic Relativity and the Spin Angular Momentum]] gives $-2\boldsymbol{\Omega}$; state the normalisation $|\mechanical{\Phi}_u|=\mechanical{c}^2$ or use one form.
+- [Correctness] The summary gives $\mechanical{B}_g=-2\boldsymbol{\Omega}\mechanical{\Phi}_u/\mechanical{c}^2$ whereas \[\[10.15 Cosmic Relativity and the Spin Angular Momentum\]\] gives $-2\boldsymbol{\Omega}$; state the normalisation $|\mechanical{\Phi}_u|=\mechanical{c}^2$ or use one form.
 - [Correctness] $\signal{\gamma}$ in the scalar and vector potentials should be $\mechanical{\gamma}$.

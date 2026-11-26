@@ -47,7 +47,7 @@ Priority: low · Graph: no · Manim: no
 
 Complete lookup table (1825 entries, matching the RAL Design System+ count) with internally consistent hex/RGB/swatch, but no frontmatter, TLDR, or explanation of the code structure.
 
-- [Structure] Add the quoted frontmatter title and a TLDR that explains the `RAL HHH LL CC` code as hue angle, lightness L*, and chroma, and link to [[RAL Design System Plus|RAL Design System+]] for the code explanation and the conversion script.
+- [Structure] Add the quoted frontmatter title and a TLDR that explains the `RAL HHH LL CC` code as hue angle, lightness L*, and chroma, and link to \[\[RAL Design System Plus|RAL Design System+\]\] for the code explanation and the conversion script.
 - [Correctness] `RAL 270 90 05` (Bleached white) and `RAL 280 90 05` (Mauve white) both list `#E0E3E8`; the two hue angles must give different colours (the note's own conversion script gives about `#DEE3EC` and `#E0E2EC`), so one of the two rows is probably a copy error and should be checked against the source.
 
 ### N3853
@@ -60,7 +60,7 @@ Clear and short explanation with a working conversion script (I reproduced the s
 - [Structure] Add a TLDR callout after the frontmatter, and quote the title (`title: "RAL Design System+"`) as the skill requires.
 - [Intuition] State explicitly that hue and chroma are the polar coordinates of (a*, b*) in CIELAB (a* = C cos h, b* = C sin h, D65 white). Also say that `gamma_encode` silently clips out-of-gamut colours to [0, 1], so high-chroma codes give only an approximate, clipped sRGB.
 - [Graph] Optionally add a 2D plot of the a*–b* plane with a few example codes at L* = 60 (points at angle h and radius C) to show how the hue and chroma digits map to colour coordinates.
-- [Links] Link to [[RAL Design Colors]] for the full table of named codes, and mention that the regex `spaced_match` branch is never reached because the compact form already matches spaced codes (harmless but dead code).
+- [Links] Link to \[\[RAL Design Colors\]\] for the full table of named codes, and mention that the regex `spaced_match` branch is never reached because the compact form already matches spaced codes (harmless but dead code).
 
 ### N3854
 
@@ -78,7 +78,7 @@ Priority: low · Graph: no · Manim: no
 
 Consistent table of the RAL Classic-based plastics shades (`-P` suffix) with matching hex/RGB/swatch, but no frontmatter, TLDR, or context.
 
-- [Structure] Add the quoted frontmatter title and a TLDR saying that P1 contains plastic shades derived from RAL Classic (same codes with `-P`) and that values differ slightly from the paint versions; link to [[RAL Classic Colors]] and add a source.
+- [Structure] Add the quoted frontmatter title and a TLDR saying that P1 contains plastic shades derived from RAL Classic (same codes with `-P`) and that values differ slightly from the paint versions; link to \[\[RAL Classic Colors\]\] and add a source.
 
 ### N3856
 
@@ -88,7 +88,7 @@ Priority: low · Graph: no · Manim: no
 Consistent table of RAL Design-based plastics shades, but the `-P-T` rows are unexplained duplicates and the formatting is inconsistent.
 
 - [Structure] Add the quoted frontmatter title and a TLDR, and explain the `-P-T` suffix: 40 `-P-T` rows repeat the hex of their `-P` row, for example `RAL 000 55 00-P` and `RAL 000 55 00-P-T`.
-- [Structure] The file starts with a blank line before the first heading, and only the "300 - 360" table is column-padded; normalize this to the formatter output used in the other tables, and link to [[RAL Design Colors]].
+- [Structure] The file starts with a blank line before the first heading, and only the "300 - 360" table is column-padded; normalize this to the formatter output used in the other tables, and link to \[\[RAL Design Colors\]\].
 
 ### N3857
 

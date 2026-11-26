@@ -28,11 +28,11 @@ The review found 33 possible errors or notation conflicts. 33 of them are verifi
 - [[#N0449|N0449]] Weighted eigenfunctions and Rayleigh bounds: Symbol clash for $\alpha$: in the opening string equation and the heat-rod equation $q=\alpha$, but in Exercise 4.4.2 $\alpha=\alpha_{\mathrm{line}}/\mechanical{\rho}_0$ and $q=\mechanical{\rho}_0\alpha$; also plain $T(t)$ is the time factor next to the tension $\mechanical{T}_0$. Use one meaning (e.g. $q=\alpha_{\mathrm{line}}$) and call the time factor $h(t)$ as later in the note. **Fixed:** Exercise 4.4.2 now uses alpha for the load coefficient (q=alpha as in the opening) and writes the ratio alpha/rho0 explicitly; time factor T(t) renamed h(t) in the nonuniform-string section and the exercise
 - [[#N0458|N0458]] Classification and heat-equation examples: The Physical quantities table lists $\mechanical{c}$ as "Viscous damping coefficient" ($\unit{N\,s\,m^{-1}}$) and $\mechanical{m}$, $\mechanical{x}$ as oscillator mass and displacement, none of which occur here; $\mechanical{c}$ is only the wave speed, so the damping row also creates a duplicate-symbol clash. Remove these oscillator rows. **Partly:** Damping-c row removed; m (rod slice mass) and x (spatial coordinate) do occur, so their rows were kept with descriptions corrected
 - [[#N0458|N0458]] Classification and heat-equation examples: The $\thermal{y}$ row links to "#Changing the forcing at one point", but $\thermal{y}(\mechanical{x},\signal{t})$ is introduced in "Introduction to PDEs" (the $y$ in the forcing section is an ODE solution); also the same temperature is written $\thermal{y}$ there and $\thermal{u}$ from "Deriving the heat equation" on, so use one symbol. **Fixed:** Changed the Introduction to PDEs heat equation to use u and removed the y row with its wrong link
-- [[#N0460|N0460]] Fourier extensions and forced heat modes: Under "Term-by-term differentiation of Fourier series and the method of eigenfunction expansion", the sentence "The time-differentiation rule on [[#Eigenfunction expansion for the heat equation]]" points to the wrong heading; the rule is in "Time differentiation of a Fourier series". **Fixed:** Link now targets #Time differentiation of a Fourier series
+- [[#N0460|N0460]] Fourier extensions and forced heat modes: Under "Term-by-term differentiation of Fourier series and the method of eigenfunction expansion", the sentence "The time-differentiation rule on \[\[#Eigenfunction expansion for the heat equation\]\]" points to the wrong heading; the rule is in "Time differentiation of a Fourier series". **Fixed:** Link now targets #Time differentiation of a Fourier series
 - [[#N0460|N0460]] Fourier extensions and forced heat modes: The Physical quantities table lists $\mechanical{u}$ as pressure "in the divergence-form example" (no such example here, and it clashes with $\mechanical{u}$ = wave displacement in the same table), plus rows that do not occur in this note: $\mechanical{\rho}$ in $\unit{kg/m^3}$, "$\mechanical{Q}$ in Exercise 4.4.2" with its link, $L,H$ membrane dimensions, and $r,a$. Rebuild the table from the symbols used. **Fixed:** Rebuilt table from used symbols; added L, F/m/a for Newton's law; kept c,v since v occurs in the vector wave equation
 - [[#N0461|N0461]] Heat equation, boundary data, and separation: Symbol clash: $\thermal{\phi}$ is the heat flux ($\unit{W/m^2}$) in the derivation and the initial temperature in "Separation of variables" and "Separation of variables for the heat equation"; the table lists both. Rename the initial profile (e.g. $\thermal{f}$, already used later). **Fixed:** Renamed initial profile to psi (already the initial temperature symbol; f is taken by the source f(x,t) there); merged table rows
 - [[#N0461|N0461]] Heat equation, boundary data, and separation: Symbol clash: $\thermal{k}$ is defined as diffusivity $\thermal{k}_0/(\thermal{c}\mechanical{\rho})$ in "The heat equation" but used for conductivity in Fourier's law $\thermal{\phi}=-\thermal{k}\,\partial\thermal{u}/\partial x$ in the next part; write $\thermal{k}_0$ there. **Fixed:** Fourier's law now uses k_0; replaced the explaining sentence
-- [[#N0461|N0461]] Heat equation, boundary data, and separation: Two internal links point to unrelated sections: "Newton's law of cooling" refers to [[#The spatial eigenvalue problem]], and the steady-state remark cites the "source convention on [[#Newton's law of cooling and the initial condition]]", whereas the convention $-(\thermal{k}_0\thermal{u}')'=\thermal{Q}$ is in "Steady-state heat equation". Retarget or remove them. **Fixed:** Removed the Newton's-law link (no section holds it); retargeted the source-convention link to #Steady-state heat equation
+- [[#N0461|N0461]] Heat equation, boundary data, and separation: Two internal links point to unrelated sections: "Newton's law of cooling" refers to \[\[#The spatial eigenvalue problem\]\], and the steady-state remark cites the "source convention on \[\[#Newton's law of cooling and the initial condition\]\]", whereas the convention $-(\thermal{k}_0\thermal{u}')'=\thermal{Q}$ is in "Steady-state heat equation". Retarget or remove them. **Fixed:** Removed the Newton's-law link (no section holds it); retargeted the source-convention link to #Steady-state heat equation
 - [[#N0461|N0461]] Heat equation, boundary data, and separation: The Physical quantities table has rows for symbols not in this note: wave speed $\mechanical{c},\mechanical{v}$; string density $\mechanical{\rho}(x),\mechanical{\rho}_{\min},\mechanical{\rho}_{\max}$ in $\unit{kg\,m^{-1}}$ (clashing with $\mechanical{\rho}$ in $\unit{kg/m^3}$); membrane $L,H$ (clashing with the heat-transfer coefficient $\thermal{H}$) and radius $a$. Remove them. **Fixed:** Removed them; added L rod length and r radial distance (used in Exercise 2.3.1 D)
 - [[#N0462|N0462]] Insulated, periodic, and forced heat problems: The Physical quantities table lists $L$, $H$ (rectangular membrane dimensions) and $r$, $a$ (membrane radius), which this note never uses, and omits $g(x)$ and the rod-length meaning of $L$ (and $2L$ for the ring); replace with the symbols actually used. **Fixed:** Replaced with L (rod length and half ring length), g(x) and the endpoint temperatures A, B
 - [[#N0464|N0464]] Model error, random walks, and continuum limits: The Physical quantities table lists many symbols this note never uses ($R$, $\alpha$, $M$, $\beta$ twice with different meanings, $t_0$, $K$, $\delta$, $y_i$, ingredient amounts $x,y$, surpluses $s,t$, $a_i$, $d\theta_i/dt$) and defines $\tau$ as "Total population" although here $\tau=t$ is the moving-frame time; rebuild it from $\Delta x,\Delta t,c,D,U,C,f,g,h,z$. **Fixed:** Rebuilt table from x,t, Delta x, Delta t, c, D, U, f, g, h, C, z, y, tau, mu, sigma, L, N
@@ -340,7 +340,7 @@ Mathematically mostly correct, but it reads as a raw lecture transcription with 
 - [Example] Variation of parameters for $x^2y''-3xy'+3y=4x^7$ stops after the first equation; finish it: $W=2x^3$, $v_1'=-2x^5$, $v_2'=2x^3$, $y_p=x^7/6$, $y=x^7/6+C_1x+C_2x^3$ (or link to the completed version in Power-series solutions and forcing methods).
 - [Simplify] Boundary-value section: the two paragraphs on $y''+4y=0$ with endpoints $0$ and $2\pi$ contradict each other in their data ($y(0)=-2$ vs $2$, $y(2\pi)=-2$ vs $3$); keep one clean trio: unique ($y(\pi/4)=10$), infinitely many (equal endpoint values), none (unequal endpoint values).
 - [Structure] Empty heading "Intervals of validity" and the heading "Systems and the matrix exponential" with no matrix exponential; also substantial overlap with Linear equations and order reduction; merge or cross-link.
-- [Links] Add links to [[14.04 Constant-coefficient equations]] and [[Linear equations and order reduction]] where the characteristic-equation and Wronskian material repeats.
+- [Links] Add links to \[\[14.04 Constant-coefficient equations\]\] and \[\[Linear equations and order reduction\]\] where the characteristic-equation and Wronskian material repeats.
 
 ### N0431
 
@@ -571,7 +571,7 @@ Priority: low · Graph: no · Manim: no
 
 Clear, correct introduction to order, linearity, and homogeneity with a verified worked example and practice answers.
 
-- [Example] In "Order and linearity", add one quasilinear example (e.g. $u_t+uu_x=0$ is nonlinear but first order and linear in its highest derivative) and link to [[Characteristics for first-order PDEs]], so the linear/quasilinear/fully nonlinear spectrum is visible early.
+- [Example] In "Order and linearity", add one quasilinear example (e.g. $u_t+uu_x=0$ is nonlinear but first order and linear in its highest derivative) and link to \[\[Characteristics for first-order PDEs\]\], so the linear/quasilinear/fully nonlinear spectrum is visible early.
 - [Structure] The file starts with a UTF-8 BOM; the vault rule is UTF-8 without BOM, so re-save it without the BOM (formatter).
 
 ### N0451
@@ -663,7 +663,7 @@ A transcription that mixes Laplace-transform ODE material with PDE classificatio
 - [Structure] Move the Laplace-transform sections ("Changing the forcing at one point", "Uniqueness of the inverse Laplace transform", "Laplace-transform practice. Example 1", "Practice problem 4") to the Laplace-transform notes, and delete the unheaded course-objectives list after Fig. 14; the title promises classification and heat examples only.
 - [Example] Finish the stopped calculations: Example 1 gives $Y=1/(s-1)+3/(s-1)^3$, so $y=e^t(1+\tfrac32t^2)$; practice final problem 5 gives $A_n=(-1)^n\sin 4\cdot 2n\pi/(16-n^2\pi^2)$ ($A_1\approx0.776$, $A_2\approx0.405$, $A_3\approx-0.196$), hence $u=\sum A_ne^{-3(n\pi/4)^2t}\sin(n\pi x/4)$.
 - [Graph] Plot the partial sums $\sum_{n=1}^{N}A_n\sin(n\pi x/4)$ for $N=1,3,10,40$ against $\sin x$ on $[0,4]$, showing interior convergence and the Gibbs overshoot near $x=4$ where $\sin4\ne0$.
-- [Links] The PDE table here uses $B^2-4AC$ with mixed coefficient $B$, while [[Classification of second-order PDEs]] uses $2B$ and $B^2-AC$; add a one-line cross-reference noting the two conventions agree.
+- [Links] The PDE table here uses $B^2-4AC$ with mixed coefficient $B$, while \[\[Classification of second-order PDEs\]\] uses $2B$ and $B^2-AC$; add a one-line cross-reference noting the two conventions agree.
 
 ### N0459
 
@@ -683,7 +683,7 @@ Priority: high · Graph: yes · Manim: yes
 
 Mathematically sound transcription (coefficients and integrations verified), but it is long, repetitive, full of handwriting remarks and malformed headings, and it has a wrong internal link and a foreign quantities table.
 
-- [Correctness] Under "Term-by-term differentiation of Fourier series and the method of eigenfunction expansion", the sentence "The time-differentiation rule on [[#Eigenfunction expansion for the heat equation]]" points to the wrong heading; the rule is in "Time differentiation of a Fourier series".
+- [Correctness] Under "Term-by-term differentiation of Fourier series and the method of eigenfunction expansion", the sentence "The time-differentiation rule on \[\[#Eigenfunction expansion for the heat equation\]\]" points to the wrong heading; the rule is in "Time differentiation of a Fourier series".
 - [Correctness] The Physical quantities table lists $\mechanical{u}$ as pressure "in the divergence-form example" (no such example here, and it clashes with $\mechanical{u}$ = wave displacement in the same table), plus rows that do not occur in this note: $\mechanical{\rho}$ in $\unit{kg/m^3}$, "$\mechanical{Q}$ in Exercise 4.4.2" with its link, $L,H$ membrane dimensions, and $r,a$. Rebuild the table from the symbols used.
 - [Structure] Replace the malformed heading "##### )" and the two "**)**" lines with real section titles, delete the course-schedule table (March 7 to March 23), and merge the three repeated presentations of the Dirichlet sine-series heat solution and the two eigenfunction-expansion derivations into one each.
 - [Simplify] The source term is written $\thermal{Q}'(x)$, which reads as a derivative of $\thermal{Q}$; rename it (e.g. $\thermal{q}(x)$), and finish the periodic step example with $a_0=\tfrac14$, $a_n=-\sin(n\pi/2)/(n\pi)$, $b_n=(\cos(n\pi/2)-\cos n\pi)/(n\pi)$.
@@ -699,7 +699,7 @@ Correct derivations and numbers (variable-conductivity profile and mode ratio $e
 
 - [Correctness] Symbol clash: $\thermal{\phi}$ is the heat flux ($\unit{W/m^2}$) in the derivation and the initial temperature in "Separation of variables" and "Separation of variables for the heat equation"; the table lists both. Rename the initial profile (e.g. $\thermal{f}$, already used later).
 - [Correctness] Symbol clash: $\thermal{k}$ is defined as diffusivity $\thermal{k}_0/(\thermal{c}\mechanical{\rho})$ in "The heat equation" but used for conductivity in Fourier's law $\thermal{\phi}=-\thermal{k}\,\partial\thermal{u}/\partial x$ in the next part; write $\thermal{k}_0$ there.
-- [Correctness] Two internal links point to unrelated sections: "Newton's law of cooling" refers to [[#The spatial eigenvalue problem]], and the steady-state remark cites the "source convention on [[#Newton's law of cooling and the initial condition]]", whereas the convention $-(\thermal{k}_0\thermal{u}')'=\thermal{Q}$ is in "Steady-state heat equation". Retarget or remove them.
+- [Correctness] Two internal links point to unrelated sections: "Newton's law of cooling" refers to \[\[#The spatial eigenvalue problem\]\], and the steady-state remark cites the "source convention on \[\[#Newton's law of cooling and the initial condition\]\]", whereas the convention $-(\thermal{k}_0\thermal{u}')'=\thermal{Q}$ is in "Steady-state heat equation". Retarget or remove them.
 - [Correctness] The Physical quantities table has rows for symbols not in this note: wave speed $\mechanical{c},\mechanical{v}$; string density $\mechanical{\rho}(x),\mechanical{\rho}_{\min},\mechanical{\rho}_{\max}$ in $\unit{kg\,m^{-1}}$ (clashing with $\mechanical{\rho}$ in $\unit{kg/m^3}$); membrane $L,H$ (clashing with the heat-transfer coefficient $\thermal{H}$) and radius $a$. Remove them.
 - [Structure] Fix the headings "##### )", "##### B", "##### D" and the "**)**" fragments, drop course-admin lines ("Math 126" date, quantifier margin note), and rename "Steady-state temperatures", which actually redoes Dirichlet separation and never computes a steady state (it also says diffusivity is scaled to one but keeps $\thermal{k}$).
 - [Graph] Plot the two steady profiles of the 100 cm rod, $20+x/10$ and $20+10\ln(1+x/600)/\ln(7/6)$, on $x\in[0,100]$, and in a second panel the partial sums of the $\thermal{u}(x,0)=100$ series at $\thermal{k}(\pi/L)^2t=0,0.05,0.5$.
@@ -751,7 +751,7 @@ Priority: low · Graph: no · Manim: no
 
 A clear hub whose links all resolve, but it lists only the short 15.xx lessons and omits the longer worked notes in the same folder.
 
-- [Links] Add a "Worked material" list linking the folder's long notes ([[Insulated, periodic, and forced heat problems]], [[The wave equation on a line and a finite string]], [[Rectangular and circular membrane eigenmodes]], [[Laplace and Poisson boundary problems]], [[Wave diffusion and potential equations]], [[Travelling solitary waves]], [[Schrödinger evolution and probability]], [[Model error, random walks, and continuum limits]]).
+- [Links] Add a "Worked material" list linking the folder's long notes (\[\[Insulated, periodic, and forced heat problems\]\], \[\[The wave equation on a line and a finite string\]\], \[\[Rectangular and circular membrane eigenmodes\]\], \[\[Laplace and Poisson boundary problems\]\], \[\[Wave diffusion and potential equations\]\], \[\[Travelling solitary waves\]\], \[\[Schrödinger evolution and probability\]\], \[\[Model error, random walks, and continuum limits\]\]).
 
 ### N0466
 
@@ -797,7 +797,7 @@ Priority: low · Graph: yes · Manim: no
 A compact, correct summary of the disk eigenproblem; a few numbers and a picture of the first zeros would make it concrete.
 
 - [Example] Give $j_{0,1}\approx2.405$, $j_{1,1}\approx3.832$, $j_{2,1}\approx5.136$, $j_{0,2}\approx5.520$ and their ratios to $j_{0,1}$, so "frequencies set by zeros" becomes concrete.
-- [Graph] Plot $J_0,J_1,J_2$ on $0\le z\le12$ with first zeros marked (shareable with [[Rectangular and circular membrane eigenmodes]]).
+- [Graph] Plot $J_0,J_1,J_2$ on $0\le z\le12$ with first zeros marked (shareable with \[\[Rectangular and circular membrane eigenmodes\]\]).
 - [Links] Both source links use the alias "Math 126"; give them distinct descriptive aliases (e.g. "Sturm–Liouville problems", "Rectangular membrane").
 
 ### N0470
@@ -809,7 +809,7 @@ Correct and clearly argued (Biot–Savart cross-product order, Coulomb gauge, an
 
 - [Graph] Plot in the $z=0$ plane on $[-2,2]^2$ the field $(x-y,x+y)$ beside its source part $(x,y)$ and vortex part $(-y,x)$.
 - [Example] Add a localized example where the integral formulas apply, e.g. a uniform vortex tube $\boldsymbol\omega=\omega_0\hat z$ for $r<a$, giving $\mathbf F_v=\tfrac{\omega_0}{2}(-y,x)$ inside and $\tfrac{\omega_0a^2}{2r^2}(-y,x)$ outside.
-- [Intuition] In "Helmholtz decomposition and its limits", name the physical analogues (Coulomb's law for $-\nabla\phi$, Biot–Savart for $\nabla\times\mathbf A$) and link [[Point sources and superposition]].
+- [Intuition] In "Helmholtz decomposition and its limits", name the physical analogues (Coulomb's law for $-\nabla\phi$, Biot–Savart for $\nabla\times\mathbf A$) and link \[\[Point sources and superposition\]\].
 
 ### N0471
 
@@ -819,9 +819,9 @@ Priority: high · Graph: yes · Manim: yes
 Correct core results (modal coefficients, amplitude–phase form, d'Alembert) are buried in a transcription that repeats the fixed-end solution four times, includes an unrelated forced-heat section, an inconsistent damping passage, and a stray link.
 
 - [Correctness] The Physical quantities table lists $\mechanical{u}$ as "Pressure" in Pa alongside $\mechanical{u}$ as wave displacement, gives $\mechanical{\rho}$ twice with units kg/m³ and kg/m, and includes unused $\mechanical{A}$, $\mechanical{v}$, $\mechanical{\rho}_{\min}$, $\mechanical{\rho}_{\max}$, $L,H$ (membrane) and $r,a$; keep only symbols used here with one meaning each.
-- [Links] "The notes mark Section 3.3.5 on [[Rectangular and circular membrane eigenmodes#Eigenvalue problem with Bessel functions|...]] as the start of the material for Midterm 2" links a Fourier-series section to an unrelated Bessel heading; remove the link and the midterm remark.
+- [Links] "The notes mark Section 3.3.5 on \[\[Rectangular and circular membrane eigenmodes#Eigenvalue problem with Bessel functions|...\]\] as the start of the material for Midterm 2" links a Fourier-series section to an unrelated Bessel heading; remove the link and the midterm remark.
 - [Correctness] In "Fundamental mode and higher modes", the displayed factor $\sin(n\pi x/L)\sin(n\pi ct/L)e^{-\beta(n\pi/L)^2t}$ does not solve $u_{tt}=c^2u_{xx}-\beta u_t$; show the actual underdamped mode $\sin(n\pi x/L)e^{-\beta t/2}\sin(\omega_n't+\theta_n)$ with $\omega_n'=\sqrt{(n\pi c/L)^2-\beta^2/4}$ and drop the conflicting $e^{-n^2t}$ remark.
-- [Structure] Move "Modal equation for the forced heat problem" to [[Insulated, periodic, and forced heat problems]], and merge the repeated fixed-end derivations (first derivation, boxed restatement, two "Midterm study" sections) into one.
+- [Structure] Move "Modal equation for the forced heat problem" to \[\[Insulated, periodic, and forced heat problems\]\], and merge the repeated fixed-end derivations (first derivation, boxed restatement, two "Midterm study" sections) into one.
 - [Graph] Plot the plucked string ($f$ a triangle peaked at $x=1/2$ with height 1, $g=0$, $L=c=1$, 30 terms) at $t=0,0.125,0.25,0.5$, plus the first three mode shapes $\sin(n\pi x)$.
 - [Manim] Animate d'Alembert's solution: a Gaussian bump splitting into two half-height pulses, then the plucked string as two traveling halves reflecting (inverted) at the fixed ends.
 
@@ -883,7 +883,7 @@ Priority: low · Graph: yes · Manim: no
 Correct and well argued (fundamental lemma, total derivative warning, and the worked minimizer with $J=-1/24$ all check).
 
 - [Graph] Plot $y_*=\tfrac12x(x-1)$ together with competitors $y_*+\varepsilon\sin(\pi x)$ for $\varepsilon=\pm0.1$ on $[0,1]$, annotated with their $J$ values, to show the stationary curve as the lowest member of a family.
-- [Links] Add a pointer to the Beltrami identity in [[Functionals and stationary curves]] for $x$-independent integrands, since this note is the main Euler–Lagrange entry point of the 17.xx sequence.
+- [Links] Add a pointer to the Beltrami identity in \[\[Functionals and stationary curves\]\] for $x$-independent integrands, since this note is the main Euler–Lagrange entry point of the 17.xx sequence.
 
 ### N0478
 
@@ -893,17 +893,17 @@ Priority: low · Graph: yes · Manim: no
 Correct and clear, with a good separation of interior equation, natural condition, endpoint cost, and moving endpoints.
 
 - [Graph] Plot the free-end minimizer $y=\tfrac12x^2-x$ beside the fixed-end minimizer $y=\tfrac12x(x-1)$ on $[0,1]$, showing the zero slope at $x=1$ that the natural condition produces.
-- [Example] After the moving-endpoint formula, add the shortest-distance example (segment from a point to a line meets it at a right angle), as in [[Constraints and free endpoints]], so the transversality formula gets one concrete use here too.
+- [Example] After the moving-endpoint formula, add the shortest-distance example (segment from a point to a line meets it at a right angle), as in \[\[Constraints and free endpoints\]\], so the transversality formula gets one concrete use here too.
 
 ### N0479
 
 Note: [[17.06 Several variables and fields|17.06 Several variables and fields]]  
 Priority: low · Graph: yes · Manim: no
 
-Correct and clear (coupled pair, divergence-theorem step, and disk example all verify); it largely overlaps [[Fields of several variables]].
+Correct and clear (coupled pair, divergence-theorem step, and disk example all verify); it largely overlaps \[\[Fields of several variables\]\].
 
 - [Graph] Plot the disk minimizer $u_*=1-x_1^2-x_2^2$ as a 3D surface over the unit disk (a paraboloid "membrane under uniform load").
-- [Links] Cross-link [[Fields of several variables]] and [[Higher derivatives and coupled curves]], which cover the same material with different examples (minimal surfaces, weak form).
+- [Links] Cross-link \[\[Fields of several variables\]\] and \[\[Higher derivatives and coupled curves\]\], which cover the same material with different examples (minimal surfaces, weak form).
 
 ### N0480
 
@@ -912,8 +912,8 @@ Priority: low · Graph: no · Manim: no
 
 Correct and clear; the fixed-integral example ($\lambda=-12$, $y_*=6x(1-x)$, $J=6$) and the circle multiplier $\lambda=-(u'^2+v'^2)$ check out.
 
-- [Intuition] In "Pointwise constraints require local multipliers", add that $-\lambda=u'^2+v'^2$ is the squared speed, i.e. the multiplier is the centripetal "constraint force" needed to stay on the circle, which links to [[Physical action and equations of motion]].
-- [Links] Cross-link [[Constraints and free endpoints]], which treats the same fixed-average example with the unhalved functional ($J=12M^2$), and say why the two values differ by a factor 2.
+- [Intuition] In "Pointwise constraints require local multipliers", add that $-\lambda=u'^2+v'^2$ is the squared speed, i.e. the multiplier is the centripetal "constraint force" needed to stay on the circle, which links to \[\[Physical action and equations of motion\]\].
+- [Links] Cross-link \[\[Constraints and free endpoints\]\], which treats the same fixed-average example with the unhalved functional ($J=12M^2$), and say why the two values differ by a factor 2.
 
 ### N0481
 
@@ -922,7 +922,7 @@ Priority: low · Graph: no · Manim: no
 
 Correct and clear, with a good saddle example, figure, and honest discussion of the non-sharp estimate.
 
-- [Intuition] In "A sufficient estimate and its limits", state the sharp result: $\int_0^1\eta^2\le\pi^{-2}\int_0^1\eta'^2$ (Wirtinger), so zero is a strict minimum exactly for $c<\pi^2$ and the saddle example with $c=2\pi^2$ lies beyond this threshold; link [[Tests with first and second variations]] for the Jacobi-equation view.
+- [Intuition] In "A sufficient estimate and its limits", state the sharp result: $\int_0^1\eta^2\le\pi^{-2}\int_0^1\eta'^2$ (Wirtinger), so zero is a strict minimum exactly for $c<\pi^2$ and the saddle example with $c=2\pi^2$ lies beyond this threshold; link \[\[Tests with first and second variations\]\] for the Jacobi-equation view.
 
 ### N0482
 
@@ -931,7 +931,7 @@ Priority: low · Graph: no · Manim: no
 
 Clear and correct; the restricted-minimum example ($-\varepsilon/6+\varepsilon^2/6$) and the finite-dimensional analogue with figure make the point well.
 
-- [Links] In "Valid reductions and approximation", link [[Numerical variational methods]] for the finite trial-family (Ritz/Galerkin) remark.
+- [Links] In "Valid reductions and approximation", link \[\[Numerical variational methods\]\] for the finite trial-family (Ritz/Galerkin) remark.
 
 ### N0483
 
@@ -940,8 +940,8 @@ Priority: low · Graph: no · Manim: no
 
 A clear, correct entry guide with a good worked proof and nonexistence example; one link is broken.
 
-- [Links] The index line links [[Planned Topics#10. Calculus of variations|the detailed catalogue]], but no note named "Planned Topics" exists in the vault (only a backup under `.temp`); remove or retarget the link.
-- [Links] Mention that the 17.xx lessons and the catalogue lessons overlap pairwise (e.g. [[17.07 Constraints]] / [[Constraints and free endpoints]], [[17.08 Second variation]] / [[Tests with first and second variations]]) so readers do not work through both routes unknowingly.
+- [Links] The index line links \[\[Planned Topics#10. Calculus of variations|the detailed catalogue\]\], but no note named "Planned Topics" exists in the vault (only a backup under `.temp`); remove or retarget the link.
+- [Links] Mention that the 17.xx lessons and the catalogue lessons overlap pairwise (e.g. \[\[17.07 Constraints\]\] / \[\[Constraints and free endpoints\]\], \[\[17.08 Second variation\]\] / \[\[Tests with first and second variations\]\]) so readers do not work through both routes unknowingly.
 
 ### N0484
 
@@ -950,7 +950,7 @@ Priority: low · Graph: no · Manim: no
 
 A concise hub; all links resolve.
 
-- [Links] Add a short "Applications and further lessons" list linking [[Classical curve problems]], [[Physical action and equations of motion]], [[Variational modeling of paths and surfaces]], and [[Calculus of variations - Catalogue Guide]].
+- [Links] Add a short "Applications and further lessons" list linking \[\[Classical curve problems\]\], \[\[Physical action and equations of motion\]\], \[\[Variational modeling of paths and surfaces\]\], and \[\[Calculus of variations - Catalogue Guide\]\].
 
 ### N0485
 
@@ -971,7 +971,7 @@ Priority: low · Graph: no · Manim: no
 
 Correct and clear (fixed-average example, natural condition, transversality, and the perpendicular-segment example all check), with a useful figure.
 
-- [Links] Cross-link [[17.07 Constraints]] and [[17.05 Boundary terms]], which cover the same example and moving-endpoint formula with a halved functional, and note the resulting factor-2 difference in $J[y_*]$.
+- [Links] Cross-link \[\[17.07 Constraints\]\] and \[\[17.05 Boundary terms\]\], which cover the same example and moving-endpoint formula with a halved functional, and note the resulting factor-2 difference in $J[y_*]$.
 
 ### N0487
 
@@ -981,7 +981,7 @@ Priority: low · Graph: yes · Manim: no
 Correct and clear (square example with cost $4/3$, minimal-surface equation, weak form); a surface picture would help.
 
 - [Graph] Plot the 3D saddle $u_*=x_1^2-x_2^2$ over the unit square as the Dirichlet-energy minimizer, and optionally a minimal surface such as Scherk's $u=\ln(\cos x_2/\cos x_1)$ on $|x_1|,|x_2|<1.2$ to contrast with the linear Laplace case.
-- [Example] After the minimal-surface equation, add the catenoid as a non-graph minimal surface and link [[Variational modeling of paths and surfaces]], where it is derived as a surface of revolution.
+- [Example] After the minimal-surface equation, add the catenoid as a non-graph minimal surface and link \[\[Variational modeling of paths and surfaces\]\], where it is derived as a surface of revolution.
 
 ### N0488
 
@@ -990,7 +990,7 @@ Priority: low · Graph: no · Manim: no
 
 Clear and correct (worked minimizer with $J=-1/6$, Beltrami derivation, practice answers all check).
 
-- [Example] After the Beltrami identity, add a one-line application (e.g. the shortest-path integrand $\sqrt{1+y'^2}$ gives $1/\sqrt{1+y'^2}=C$, hence straight lines) so the shortcut is used before it reappears in [[Classical curve problems]].
+- [Example] After the Beltrami identity, add a one-line application (e.g. the shortest-path integrand $\sqrt{1+y'^2}$ gives $1/\sqrt{1+y'^2}=C$, hence straight lines) so the shortcut is used before it reappears in \[\[Classical curve problems\]\].
 
 ### N0489
 
@@ -1017,11 +1017,11 @@ Correct and clear (oscillator, energy $0.04\,\mathrm J$, and the saddle threshol
 Note: [[Tests with first and second variations|Tests with first and second variations]]  
 Priority: low · Graph: yes · Manim: no
 
-Correct and clear, but its saddle example, Cauchy–Schwarz estimate, and fourth-order practice duplicate [[17.08 Second variation]] almost verbatim.
+Correct and clear, but its saddle example, Cauchy–Schwarz estimate, and fourth-order practice duplicate \[\[17.08 Second variation\]\] almost verbatim.
 
 - [Graph] Plot the Jacobi solution $v=\sin(\sqrt c\,x)$ for $c=2\pi^2$ on $[0,1]$, marking its conjugate point $x=1/\sqrt2<1$, next to $c=\pi^2/2$ whose first zero $\sqrt2$ lies beyond the interval.
 - [Intuition] Tie the two halves together: the Jacobi analysis shows zero is a strict minimum exactly when $\pi/\sqrt c>1$, i.e. $c<\pi^2$, which is the sharp version of the non-sharp estimate $c<2$.
-- [Structure] Replace the duplicated material with a link to [[17.08 Second variation]] and keep this note's distinctive Legendre and Jacobi sections.
+- [Structure] Replace the duplicated material with a link to \[\[17.08 Second variation\]\] and keep this note's distinctive Legendre and Jacobi sections.
 
 ### N0492
 
@@ -1031,7 +1031,7 @@ Priority: high · Graph: yes · Manim: no
 The Euler–Lagrange, straight-line, and catenary derivations are correct, but the note interleaves an unrelated Lyapunov-exponent project discussion, handwriting remarks, and a quantity table copied from population and diet models.
 
 - [Correctness] The Physical quantities table lists symbols from other notes ($R$ population, $\epsilon$ as a "rate ratio" although here $\epsilon$ is the variation parameter, $x,y$ ingredient amounts, $s$ protein surplus, $t$ iron surplus although $t$ is the integration variable, $T$ sampling period); rebuild it for $f$, $\eta$, $\epsilon$, $g$, $C$, $C_2$, $\lambda$, $\theta_i$.
-- [Structure] Move "Project meeting notes" (rover arm, finite-time Lyapunov estimate, MATLAB averaging) to the chaos material, e.g. [[Entropy and Lyapunov exponents]]; it does not belong under paths and surfaces, and remove grading and presentation remarks.
+- [Structure] Move "Project meeting notes" (rover arm, finite-time Lyapunov estimate, MATLAB averaging) to the chaos material, e.g. \[\[Entropy and Lyapunov exponents\]\]; it does not belong under paths and surfaces, and remove grading and presentation remarks.
 - [Example] Finish the symmetric catenoid: $2=C\cosh(1/C)$ has two roots, $C\approx1.697$ and $C\approx0.470$; the areas $2\pi C(1+\tfrac C2\sinh(2/C))$ are $\approx23.97$ and $\approx27.38$, versus $8\pi\approx25.13$ for two flat discs, so the shallow catenoid is the minimizer and the deep one is only stationary.
 - [Intuition] Explain the $(0,0)$–$(1,1)$ failure and the existence threshold: $C\cosh(1/C)$ has minimum $\approx1.509$ (at $C\approx0.834$), so for half-separation 1 no catenoid exists if the end radius is below about $1.51$; the film then breaks into the Goldschmidt solution (two discs joined by an axis segment).
 - [Graph] Plot the two catenary profiles $C\cosh(t/C)$ for $C=1.697$ and $C=0.470$ on $-1\le t\le1$ with end radius 2, and the function $C\cosh(1/C)$ against $C$ on $0.3\le C\le3$ with the horizontal line at 2 showing the two intersections.
@@ -1075,7 +1075,7 @@ Priority: low · Graph: yes · Manim: no
 Correct and clearly separated (topological vs metric entropy, Lyapunov exponent definition and limits); an explicit nonuniform example would help.
 
 - [Example] Add the logistic map at $r=4$: averaging $\log|4(1-2x)|$ against $\rho(x)=1/(\pi\sqrt{x(1-x)})$ gives $\lambda=\log2$, the same as the conjugate tent map, illustrating that the exponent survives a smooth-enough conjugacy.
-- [Graph] Plot the Lyapunov exponent of the logistic map $x\mapsto rx(1-x)$ against $r$ on $2.8\le r\le4$ (1000 parameters, $10^4$ iterates after transients), with $\lambda=0$ marked, showing negative values in periodic windows and $\log2$ at $r=4$; link [[Routes to chaos]].
+- [Graph] Plot the Lyapunov exponent of the logistic map $x\mapsto rx(1-x)$ against $r$ on $2.8\le r\le4$ (1000 parameters, $10^4$ iterates after transients), with $\lambda=0$ marked, showing negative values in periodic windows and $\log2$ at $r=4$; link \[\[Routes to chaos\]\].
 
 ### N0497
 
@@ -1085,7 +1085,7 @@ Priority: low · Graph: yes · Manim: no
 Clear and correct, with good finite examples contrasting ergodic and non-ergodic measures.
 
 - [Graph] Plot the running time average $\overline a_N(x_0)$ of $a(x)=x$ for the doubling map (computed in exact rational or high precision, or via the logistic map at $r=4$ with $\int x\rho=1/2$) for $N=1..10^4$ and several $x_0$, converging to $1/2$, next to the two constant averages of the non-ergodic identity example.
-- [Example] Add the logistic density $\rho(x)=1/(\pi\sqrt{x(1-x)})$ for $r=4$ as a continuous invariant measure that is not length, linking [[Chaos in interval maps]].
+- [Example] Add the logistic density $\rho(x)=1/(\pi\sqrt{x(1-x)})$ for $r=4$ as a continuous invariant measure that is not length, linking \[\[Chaos in interval maps\]\].
 
 ### N0498
 
@@ -1109,7 +1109,7 @@ The logistic fixed-point and stability analysis is correct, but the note mixes i
 - [Correctness] The Physical quantities table gives $\beta$ two unrelated meanings (crowding coefficient in $\mathrm{s^{-1}}$, predator coefficient) although here $\beta$ is the dimensionless logistic parameter and also the Lorenz parameter; it lists $\epsilon$ as a "rate ratio" (here it is the perturbation size), and unused ingredient amounts $x,y$, protein surplus $s$, and $t$ as iron surplus; rebuild it and rename the Lorenz parameter (e.g. $b$) to remove the $\beta$ clash.
 - [Correctness] In "Introduction to chaos", the predator–prey near-axis example is presented as an illustration of chaos, but a two-dimensional autonomous flow cannot be chaotic (Poincaré–Bendixson); state that this shows only local sensitivity near a separatrix, and that chaos needs at least three dimensions for flows (e.g. Lorenz) or one dimension for noninvertible maps.
 - [Structure] Remove the schedule, birthday, and handwriting remarks, and move the age-structured model, Newton's method, Fibonacci, and gradient ascent to their own notes; keep logistic fixed points, cobwebs, the two-cycle, and the Lyapunov sampling idea.
-- [Example] Under "Example with $\beta=3.2$", give the explicit two-cycle $x_\pm=(\beta+1\pm\sqrt{(\beta-3)(\beta+1)})/(2\beta)\approx0.5130,0.7995$, its multiplier $-\beta^2+2\beta+4=0.16$, and the next doubling at $1+\sqrt6\approx3.449$, linking [[Routes to chaos]] where these are derived; quote the accumulation point as $3.5699$.
+- [Example] Under "Example with $\beta=3.2$", give the explicit two-cycle $x_\pm=(\beta+1\pm\sqrt{(\beta-3)(\beta+1)})/(2\beta)\approx0.5130,0.7995$, its multiplier $-\beta^2+2\beta+4=0.16$, and the next doubling at $1+\sqrt6\approx3.449$, linking \[\[Routes to chaos\]\] where these are derived; quote the accumulation point as $3.5699$.
 - [Graph] Plot the logistic bifurcation diagram ($2.5\le\beta\le4$, 1000 parameter values, last 200 of 1000 iterates) and cobwebs for $\beta=0.5,2,3.2,3.9$ from $x_0=0.1$.
 - [Manim] Animate the cobweb for $\beta$ sweeping from 2.8 to 3.6, showing the fixed point losing stability, the 2-cycle and then the 4-cycle appearing, synchronized with a marker moving along the bifurcation diagram.
 
@@ -1142,7 +1142,7 @@ Correct and well structured (Swift–Hohenberg and Kuramoto–Sivashinsky disper
 
 - [Graph] Plot the growth rates $\sigma(k)=r-(1-k^2)^2$ for $r=-0.1,0,0.1$ and $\sigma(k)=k^2-k^4$ on $0\le k\le1.5$, with the allowed wavenumbers $k=2\pi n/L$ for $L=2\pi$ and $L=4\pi$ marked as dots.
 - [Manim] Animate a numerical Kuramoto–Sivashinsky solution on $L=32\pi$ as a space–time plot building up row by row, from small random data to cellular structure and then irregular dynamics, to show what "chaotic evolution" of a PDE looks like.
-- [Example] In "What changes when the equation is nonlinear?", add the explicit Burgers shock time: for $u_t+uu_x=0$ with $u(x,0)=-\tanh x$ the gradient blows up at $t=1$ (characteristics $x=x_0-t\tanh x_0$ cross), linking [[Characteristics for first-order PDEs]].
+- [Example] In "What changes when the equation is nonlinear?", add the explicit Burgers shock time: for $u_t+uu_x=0$ with $u(x,0)=-\tanh x$ the gradient blows up at $t=1$ (characteristics $x=x_0-t\tanh x_0$ cross), linking \[\[Characteristics for first-order PDEs\]\].
 
 ### N0503
 

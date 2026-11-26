@@ -117,7 +117,7 @@ The historical quotations are presented clearly, but the force-law statement con
 - [Correctness] "requires only the local magnetic field $\magnetic{\mathbf B}$ and the instantaneous relative velocity $\mechanical{\mathbf v}$": in the co-rotating case the relative velocity of conductor and magnet is zero, yet an emf appears. The velocity in $\electric{\mathbf E}=\mechanical{\mathbf v}\times\magnetic{\mathbf B}$ must be the conductor's velocity in the frame where the field is static (the lab), not the velocity relative to the magnet.
 - [Correctness] "hidden under a several rug" is a typo. Use "swept under the rug" or similar.
 - [Intuition] Add the standard textbook resolution in one paragraph: emf is the loop integral of the force per charge in a single frame, and the stationary brushes and return wire complete the loop. This reproduces all three rotating cases without a preferred frame. Then mark the author's absolute-frame view as an alternative interpretation.
-- [Links] Link to [[03.09 Experiments on the Unipolar Induction]] for the disc-emf formula once it is added there.
+- [Links] Link to \[\[03.09 Experiments on the Unipolar Induction\]\] for the disc-emf formula once it is added there.
 
 ### N3533
 
@@ -161,7 +161,7 @@ Priority: low · Graph: no · Manim: no
 A short, correct note on using special relativity with accelerated motion; it lacks a worked example.
 
 - [Example] Add the proper-time integral $\tau=\int\sqrt{1-v(t)^2/c^2}\,dt$ and one case: a clock on a circular orbit, or a muon in the CERN storage ring (γ ≈ 29.3, lifetime extended from 2.2 μs to 64 μs despite an acceleration of about $10^{18}\,g$). This supports the statement that acceleration itself does not affect clock rate.
-- [Links] The links to [[07.01 The Genesis and Its Salient Points]] and [[09.10 Einstein's Gravitational Resolution of the Paradox]] are valid. Also link "Wigner rotation" (two non-collinear boosts) to a relativity note if one exists.
+- [Links] The links to \[\[07.01 The Genesis and Its Salient Points\]\] and \[\[09.10 Einstein's Gravitational Resolution of the Paradox\]\] are valid. Also link "Wigner rotation" (two non-collinear boosts) to a relativity note if one exists.
 
 ### N3537
 

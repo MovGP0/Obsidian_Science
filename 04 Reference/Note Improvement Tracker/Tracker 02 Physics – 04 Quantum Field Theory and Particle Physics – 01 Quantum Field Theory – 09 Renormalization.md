@@ -73,7 +73,7 @@ Priority: low · Graph: no · Manim: no
 Clear chapter introduction with good conceptual distinctions between regulator, cutoff and scheme.
 
 - [Correctness] "agreement of the electron anomalous-moment prediction with experiment to about twelve significant figures" overstates the precision for $a_e$: the agreement is at the $10^{-12}$ level in absolute terms, i.e. roughly 9–10 significant figures of $a_e$ (about 12–13 for $g$ itself); state which quantity is meant.
-- [Structure] The paragraphs on regulator vs physical cutoff and scheme dependence duplicate [[09.02 Regularization Methods]]; shorten here and link.
+- [Structure] The paragraphs on regulator vs physical cutoff and scheme dependence duplicate \[\[09.02 Regularization Methods\]\]; shorten here and link.
 
 ### N2690
 
@@ -206,7 +206,7 @@ Priority: low · Graph: no · Manim: no
 
 Concise hub that states the procedure clearly; the last paragraph repeats the link to 09.04.01.
 
-- [Structure] Delete the final paragraph, which repeats the link to [[09.04.01 Bare and Renormalized Quantities]] already given in the reading order.
+- [Structure] Delete the final paragraph, which repeats the link to \[\[09.04.01 Bare and Renormalized Quantities\]\] already given in the reading order.
 
 ### N2702
 
@@ -216,7 +216,7 @@ Priority: medium · Graph: no · Manim: no
 The counterterm algebra (9.80)–(9.81) and the one-loop poles $\delta_2,\delta_m,\delta_3$ are correct, but the note reproduces a source statement on $\delta_m$ that contradicts its own definitions and keeps "finite terms" in a list labelled $\overline{\rm MS}$.
 
 - [Structure] Remove the paragraph reporting the source claim $\delta_m\ne\delta m/m$ and the positive on-shell $\delta m$, keep only the correct $\delta_m=\delta m/m$ from $m_0=m+\delta m=Z_mm$, and drop "+ finite terms" from (9.82)–(9.83).
-- [Links] Here $\delta m=m_0-m$, while [[09.03.01 Electron Self-Energy Σ(p)]] (9.36) uses $\delta m=m_{\rm phys}-m=\Sigma(m)$; add one sentence relating the two (opposite sign at one loop in the on-shell scheme) so readers do not mix them.
+- [Links] Here $\delta m=m_0-m$, while \[\[09.03.01 Electron Self-Energy Σ(p)\]\] (9.36) uses $\delta m=m_{\rm phys}-m=\Sigma(m)$; add one sentence relating the two (opposite sign at one loop in the on-shell scheme) so readers do not mix them.
 - [Example] Show how $\delta_m=-3\alpha/(4\pi\bar\epsilon)$ follows: require $-\Sigma_{\rm div}+\delta_2\not p-(\delta_2+\delta_m)m$ to be finite with $\Sigma_{\rm div}=\frac{\alpha}{4\pi\bar\epsilon}(-\not p+4m)$, which gives $\delta_2=-\alpha/(4\pi\bar\epsilon)$ and $\delta_2+\delta_m=-4\alpha/(4\pi\bar\epsilon)$.
 - [Simplify] Rename $\mathcal L_{\rm rin}$ to the standard $\mathcal L_{\rm R}$ and drop the note explaining the source label.
 
@@ -227,7 +227,7 @@ Priority: medium · Graph: no · Manim: no
 
 The conditions and (9.84) are correct, but the note juggles several sign conventions for $\delta m$ in source-correction callouts, which obscures the simple pole and residue conditions.
 
-- [Structure] State the conditions once in a single convention, $\Sigma_R(m_e)=0$ and $\partial\Sigma_R/\partial\not p|_{m_e}=0$ with the counterterm insertion of [[09.08.07 Counterterm Feynman rules]], derive $\delta m_{\rm OS}=-\Sigma_{\rm loop}(m)$ and $\delta_2$ from the slope, and drop the two notes that reconcile the source formulas.
+- [Structure] State the conditions once in a single convention, $\Sigma_R(m_e)=0$ and $\partial\Sigma_R/\partial\not p|_{m_e}=0$ with the counterterm insertion of \[\[09.08.07 Counterterm Feynman rules\]\], derive $\delta m_{\rm OS}=-\Sigma_{\rm loop}(m)$ and $\delta_2$ from the slope, and drop the two notes that reconcile the source formulas.
 - [Example] Make the subtraction example concrete: $\Pi_R(q^2)=\Pi(q^2)-\Pi(0)=-\frac{2\alpha}{\pi}\int_0^1x(1-x)\ln\frac{m^2}{m^2-x(1-x)q^2}dx$, which is finite and vanishes at $q^2=0$.
 - [Simplify] Remove "$\alpha(m_e)=1/137.036$ at $\mu=m_e$" (the source's identification of the Thomson charge with an $\overline{\rm MS}$ coupling) instead of keeping it and qualifying it in a note.
 
@@ -289,7 +289,7 @@ Priority: low · Graph: no · Manim: no
 
 Clear hub; the last paragraph repeats the first link.
 
-- [Structure] Remove the final paragraph, which repeats the link to [[09.06.01 Historical and Experimental Context]].
+- [Structure] Remove the final paragraph, which repeats the link to \[\[09.06.01 Historical and Experimental Context\]\].
 
 ### N2710
 

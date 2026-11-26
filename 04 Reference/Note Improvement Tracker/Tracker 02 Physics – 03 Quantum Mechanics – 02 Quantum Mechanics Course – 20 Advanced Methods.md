@@ -35,7 +35,7 @@ Priority: low · Graph: no · Manim: no
 
 Concise, correct chapter hub whose summary bullets match the section notes.
 
-- [Links] Turn the summary bullets into links to their sections ([[20.01 Variational Method]], [[20.02 WKB Approximation in More Detail]], [[20.04 Born Approximation]], [[20.05 Partial Waves]], [[20.06 Optical Theorem]]) and add [[21.20 Solutions for Variational Methods, WKB, and Scattering]] next to the exercise link.
+- [Links] Turn the summary bullets into links to their sections (\[\[20.01 Variational Method\]\], \[\[20.02 WKB Approximation in More Detail\]\], \[\[20.04 Born Approximation\]\], \[\[20.05 Partial Waves\]\], \[\[20.06 Optical Theorem\]\]) and add \[\[21.20 Solutions for Variational Methods, WKB, and Scattering\]\] next to the exercise link.
 
 ### N2204
 
@@ -45,7 +45,7 @@ Priority: medium · Graph: yes · Manim: no
 Correct and compact, but the helium section only quotes a percentage and never shows the minimizing parameter or the resulting energy.
 
 - [Example] In "Helium with a hydrogen-like trial state", state the minimum explicitly: $Z_{\mathrm{eff}}^*=27/16\approx1.69$ and $\energy E_{\min}=-(27/16)^2\,\unit{Ha}\approx\quantity{-77.5}{eV}$ versus $\quantity{-79.0}{eV}$ (1.9 % above), and interpret $Z_{\mathrm{eff}}<2$ as screening of the nucleus by the other electron.
-- [Links] "derived in Exercise 7" should link to [[20.07 Advanced Methods Exercises]] and to the worked solution in [[21.20 Solutions for Variational Methods, WKB, and Scattering]].
+- [Links] "derived in Exercise 7" should link to \[\[20.07 Advanced Methods Exercises\]\] and to the worked solution in \[\[21.20 Solutions for Variational Methods, WKB, and Scattering\]\].
 - [Graph] Plot $E(\alpha)/(\hbar\omega)=\alpha/(4\alpha^*)+\alpha^*/(4\alpha)$ for $\alpha/\alpha^*\in[0.2,4]$ with a horizontal line at the exact $1/2$, showing the kinetic and potential terms separately; optionally a second panel $E(Z_{\mathrm{eff}})=Z^2-27Z/8$ (Ha) for $Z\in[1,2.5]$ with the experimental $-2.904\,\mathrm{Ha}$ line.
 - [Simplify] The proof assumes a discrete spectrum; add one sentence that the same argument holds with a spectral integral when part of the spectrum is continuous, since $\energy E_0$ is then the bottom of the spectrum.
 - [Intuition] Add one sentence on why the energy error is second order in the wave-function error (the energy is stationary at eigenstates), which explains why crude trial states give good energies.
@@ -96,7 +96,7 @@ Priority: medium · Graph: yes · Manim: no
 Correct formulas presented without motivation; the meaning of the phase shift and the low-energy limit of the cross section are missing.
 
 - [Intuition] Explain the phase shift with the asymptotic form $u_\ell(r)\propto\sin(kr-\ell\pi/2+\delta_\ell)$: an attractive potential pulls the wave in ($\delta_\ell>0$), a repulsive one pushes it out ($\delta_\ell<0$).
-- [Example] Add the consequence $\sigma\to4\pi a^2$ as $k\to0$ and compare with the hard sphere (four times the geometric cross section), linking to Exercise 5 of [[20.07 Advanced Methods Exercises]].
+- [Example] Add the consequence $\sigma\to4\pi a^2$ as $k\to0$ and compare with the hard sphere (four times the geometric cross section), linking to Exercise 5 of \[\[20.07 Advanced Methods Exercises\]\].
 - [Intuition] Add the semiclassical argument that only $\ell\lesssim kR$ contributes (impact parameter $b\approx\ell/k$ must be within the range $R$), which explains $s$-wave dominance at low energy.
 - [Graph] Plot the partial cross sections $(4\pi/k^2)(2\ell+1)\sin^2\delta_\ell$ for a hard sphere ($\tan\delta_\ell=j_\ell(ka)/y_\ell(ka)$) for $\ell=0,1,2$ and their sum, versus $ka\in[0,5]$, in units of $\pi a^2$.
 
@@ -107,9 +107,9 @@ Priority: medium · Graph: no · Manim: no
 
 Correct statement with a qualitative explanation, but no check against the partial-wave formula and a misplaced chapter-level section.
 
-- [Example] Verify the theorem in two lines from [[20.05 Partial Waves]]: $\operatorname{Im}f(0)=(1/k)\sum_\ell(2\ell+1)\sin^2\delta_\ell$, so $(4\pi/k)\operatorname{Im}f(0)$ reproduces $\sigma_{\mathrm{tot}}$.
-- [Structure] The section "Physical meaning" compares variational, WKB, and scattering methods and has nothing to do with the optical theorem; move it to [[20.00 Advanced Methods]] and replace it with the physical meaning of the theorem (shadow formed by interference of $f(0)$ with the incident wave).
-- [Simplify] State explicitly that the theorem holds with the normalization $\psi\simeq e^{ikz}+f\,e^{ikr}/r$ of [[20.03 Scattering Concepts]] and that $\sigma_{\mathrm{tot}}$ includes inelastic channels when they are open.
+- [Example] Verify the theorem in two lines from \[\[20.05 Partial Waves\]\]: $\operatorname{Im}f(0)=(1/k)\sum_\ell(2\ell+1)\sin^2\delta_\ell$, so $(4\pi/k)\operatorname{Im}f(0)$ reproduces $\sigma_{\mathrm{tot}}$.
+- [Structure] The section "Physical meaning" compares variational, WKB, and scattering methods and has nothing to do with the optical theorem; move it to \[\[20.00 Advanced Methods\]\] and replace it with the physical meaning of the theorem (shadow formed by interference of $f(0)$ with the incident wave).
+- [Simplify] State explicitly that the theorem holds with the normalization $\psi\simeq e^{ikz}+f\,e^{ikr}/r$ of \[\[20.03 Scattering Concepts\]\] and that $\sigma_{\mathrm{tot}}$ includes inelastic channels when they are open.
 
 ### N2210
 
@@ -118,5 +118,5 @@ Priority: low · Graph: no · Manim: no
 
 Exercise list with correct quoted results (checked Ex. 2, 4, 5, 9).
 
-- [Links] Add a link to the worked solutions in [[21.20 Solutions for Variational Methods, WKB, and Scattering]].
+- [Links] Add a link to the worked solutions in \[\[21.20 Solutions for Variational Methods, WKB, and Scattering\]\].
 - [Structure] Exercise 6 contains a remark about the source's one-dimensional formula; move it into a short note callout so that the task statement itself stays clean.

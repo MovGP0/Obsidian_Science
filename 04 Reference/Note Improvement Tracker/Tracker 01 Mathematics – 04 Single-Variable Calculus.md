@@ -11,9 +11,9 @@ Back to the index: [[Note Improvement Tracker]]
 
 The review found 13 possible errors or notation conflicts. 13 of them are verified (12 fixed, 1 partly); the other 0 are not verified yet. Each item links to the full suggestion entry.
 
-- [[#N0215|N0215]] Differential calculus - Catalogue Guide: The link `[[Planned Topics#6. Differential calculus|the detailed catalogue]]` is broken: no `Planned Topics.md` exists in the vault (only a backup under the hidden `.temp/` folder, which Obsidian does not index); point it to an existing catalogue note or remove it. **Fixed:** Planned Topics.md exists only in a .temp backup; removed the sentence with the broken link (same approach as other batches); also removed BOM and converted CRLF to LF
+- [[#N0215|N0215]] Differential calculus - Catalogue Guide: The link `\[\[Planned Topics#6. Differential calculus|the detailed catalogue\]\]` is broken: no `Planned Topics.md` exists in the vault (only a backup under the hidden `.temp/` folder, which Obsidian does not index); point it to an existing catalogue note or remove it. **Fixed:** Planned Topics.md exists only in a .temp backup; removed the sentence with the broken link (same approach as other batches); also removed BOM and converted CRLF to LF
 - [[#N0229|N0229]] 08.08 Checks and approximations: Symbol clash: $M$ is the upper bound in $m\le f\le M$ and also names the midpoint sum $M_n$ in the same note; rename the bounds (e.g. $f_{\min}\le f\le f_{\max}$) or the midpoint sum. **Fixed:** Renamed the bounds m,M to f_min,f_max in the bound statement and inequality; also removed BOM and converted CRLF to LF
-- [[#N0236|N0236]] Integral calculus - Catalogue Guide: In "Complete lesson index", `[[Planned Topics#8. Integral calculus|the detailed catalogue]]` is broken: no `Planned Topics.md` exists outside `.temp/` backups; retarget it to [[Mathematics Catalogue Source Guide]] (heading "Complete chapter index") or remove it. **Fixed:** Removed the sentence with the broken link; also removed BOM and converted CRLF to LF
+- [[#N0236|N0236]] Integral calculus - Catalogue Guide: In "Complete lesson index", `\[\[Planned Topics#8. Integral calculus|the detailed catalogue\]\]` is broken: no `Planned Topics.md` exists outside `.temp/` backups; retarget it to \[\[Mathematics Catalogue Source Guide\]\] (heading "Complete chapter index") or remove it. **Fixed:** Removed the sentence with the broken link; also removed BOM and converted CRLF to LF
 - [[#N0238|N0238]] Integral of a Derivative: The first integrand $\int_{t=0}^{n}\frac{F(t)}{dt}\,dt$ lacks the differential in the numerator; it must be $\int_0^n\frac{dF}{dt}\,dt$ (or $\int_0^n\dot F(t)\,dt$). **Fixed:** Changed \frac{F(t)}{dt} to \frac{dF}{dt}
 - [[#N0238|N0238]] Integral of a Derivative: The final equation $\int_0^n\dot f g\,dt=-\int_0^n f\dot g\,dt$ drops the boundary term; the correct statement is $\int_0^n\dot f g\,dt=\bigl[fg\bigr]_0^n-\int_0^n f\dot g\,dt$ (the pure sign swap holds only when $fg$ takes equal values at both endpoints). **Fixed:** _0^n to the right side and changed the text to say the sign changes and the boundary term is added
 - [[#N0238|N0238]] Integral of a Derivative: The "expansion" $(F(1)-F(0))+\dots+(F(n)-F(n-1))$ is a unit-step telescoping sum, not an expansion of the integral; present it as $\sum F'(\xi_i)\Delta t=\sum[F(t_i)-F(t_{i-1})]$ (mean value theorem) with $\Delta t\to0$, replace "the forces cancel" by "the intermediate terms cancel", and close the missing parenthesis in $(F(n)-F(n-1))$. **Partly:** Replaced "expand" by a unit-step split where each step integral is the change of F; changed "forces" to "intermediate terms"; closed the parenthesis; did not add a mean-value-theorem derivation (unit-step split is exact by itself)
@@ -236,7 +236,7 @@ Priority: low · Graph: no · Manim: no
 
 Clear learning-route hub with a correct worked example; one link points to a note that does not exist in the vault.
 
-- [Correctness] The link `[[Planned Topics#6. Differential calculus|the detailed catalogue]]` is broken: no `Planned Topics.md` exists in the vault (only a backup under the hidden `.temp/` folder, which Obsidian does not index); point it to an existing catalogue note or remove it.
+- [Correctness] The link `\[\[Planned Topics#6. Differential calculus|the detailed catalogue\]\]` is broken: no `Planned Topics.md` exists in the vault (only a backup under the hidden `.temp/` folder, which Obsidian does not index); point it to an existing catalogue note or remove it.
 - [Structure] The file is stored with a UTF-8 BOM and CRLF line endings; normalise to UTF-8 without BOM and LF.
 
 ### N0216
@@ -475,7 +475,7 @@ Priority: low · Graph: no · Manim: no
 
 A clear learning-route hub with correct worked answers; one index link points to a note that no longer exists in the vault.
 
-- [Correctness] In "Complete lesson index", `[[Planned Topics#8. Integral calculus|the detailed catalogue]]` is broken: no `Planned Topics.md` exists outside `.temp/` backups; retarget it to [[Mathematics Catalogue Source Guide]] (heading "Complete chapter index") or remove it.
+- [Correctness] In "Complete lesson index", `\[\[Planned Topics#8. Integral calculus|the detailed catalogue\]\]` is broken: no `Planned Topics.md` exists outside `.temp/` backups; retarget it to \[\[Mathematics Catalogue Source Guide\]\] (heading "Complete chapter index") or remove it.
 
 ### N0237
 
@@ -484,7 +484,7 @@ Priority: low · Graph: no · Manim: no
 
 Short, accurate topic overview with valid links to the 08.xx foundation notes; no change needed.
 
-- [Links] Optionally add a link to [[Integral calculus - Catalogue Guide]] so readers of the 08.xx route can find the deeper method notes in the same folder.
+- [Links] Optionally add a link to \[\[Integral calculus - Catalogue Guide\]\] so readers of the 08.xx route can find the deeper method notes in the same folder.
 
 ### N0238
 
@@ -497,7 +497,7 @@ An informal fragment without frontmatter or TLDR that contains several mathemati
 - [Correctness] The final equation $\int_0^n\dot f g\,dt=-\int_0^n f\dot g\,dt$ drops the boundary term; the correct statement is $\int_0^n\dot f g\,dt=\bigl[fg\bigr]_0^n-\int_0^n f\dot g\,dt$ (the pure sign swap holds only when $fg$ takes equal values at both endpoints).
 - [Correctness] The "expansion" $(F(1)-F(0))+\dots+(F(n)-F(n-1))$ is a unit-step telescoping sum, not an expansion of the integral; present it as $\sum F'(\xi_i)\Delta t=\sum[F(t_i)-F(t_{i-1})]$ (mean value theorem) with $\Delta t\to0$, replace "the forces cancel" by "the intermediate terms cancel", and close the missing parenthesis in $(F(n)-F(n-1))$.
 - [Correctness] In "Notation in Textbooks" the delimiters are swapped: use `\Bigl[ F(t) \Bigr]`, not "`\Bigr[` and `\Bigl]`"; also the product rule is a consequence, not the definition, of the derivative of $fg$.
-- [Structure] Add a quoted frontmatter title and TLDR, replace the ad hoc `\color{brown}`/`\color{blue}` with uncolored math, and merge this note into [[08.03 The fundamental theorem]] and [[08.05 Integration by parts]] or at least link them.
+- [Structure] Add a quoted frontmatter title and TLDR, replace the ad hoc `\color{brown}`/`\color{blue}` with uncolored math, and merge this note into \[\[08.03 The fundamental theorem\]\] and \[\[08.05 Integration by parts\]\] or at least link them.
 - [Manim] Animate the telescoping idea: on a graph of $F$ over $[0,n]$, the rises $F(t_i)-F(t_{i-1})$ stack vertically into $F(n)-F(0)$ while $\Delta t$ shrinks.
 
 ### N0239
@@ -547,7 +547,7 @@ Clear and correct algebraic introduction to partial fractions with verified deco
 
 - [Graph] In "Distinct linear factors", plot $(3x+5)/[(x+1)(x+2)]$ with $2/(x+1)$ and $1/(x+2)$ on $x\in[-4,2]$ to show that near each pole the matching simple fraction dominates.
 - [Intuition] Name the cover-up shortcut explicitly: $A=\left.\frac{3x+5}{x+2}\right|_{x=-1}=2$, which is exactly the substitution step the note performs.
-- [Structure] The note carries algebra catalogue id 1.1.7.3 but lives in the Integral Calculus folder and overlaps [[Rational integrands and partial fractions]]; consider moving it next to [[Rational expressions and polynomial division]] or adding a forward link to the integration note.
+- [Structure] The note carries algebra catalogue id 1.1.7.3 but lives in the Integral Calculus folder and overlaps \[\[Rational integrands and partial fractions\]\]; consider moving it next to \[\[Rational expressions and polynomial division\]\] or adding a forward link to the integration note.
 
 ### N0243
 
@@ -580,7 +580,7 @@ Correct worked transcriptions (650000 ft lbf, 3292.8 J, 277.78 N/m, 1.04 J all v
 - [Structure] Remove or recast the source-commentary sentences ("The handwritten evaluation substitutes the integrand at the endpoints and gives $12$…", "The handwritten calculation keeps the $x$ limits… and obtains $1/2$") as "common mistake" callouts instead of remarks about the notes.
 - [Structure] Substitution examples are numbered 1, 2, 3, 1, 2, 3; renumber consecutively or give the second group its own heading.
 - [Graph] For the coal example, plot $\mechanical{F}(\mechanical{y})=1800-2\mechanical{y}$ (lbf) on $\mechanical{y}\in[0,500]$ ft with the trapezoid shaded and labelled $650000$ ft lbf, mirroring Fig. 1 with real data.
-- [Links] Link [[08.03 The fundamental theorem]] and [[08.04 Substitution]] from the FTC and substitution sections and [[Integral applications]] from the work section, so this worked-example note connects to the explanatory lessons.
+- [Links] Link \[\[08.03 The fundamental theorem\]\] and \[\[08.04 Substitution\]\] from the FTC and substitution sections and \[\[Integral applications\]\] from the work section, so this worked-example note connects to the explanatory lessons.
 
 ### N0246
 
@@ -671,7 +671,7 @@ Priority: low · Graph: no · Manim: no
 Clear and rigorous remainder note with correct worked numbers ($P_4(0.2)=1.2214$, $1/46080$, $1/(2^7 7!)$), one small rounding slip and a misplaced source line.
 
 - [Correctness] Worked answer 1: $(0.1)^5/5!=1/12000000\approx8.33\times10^{-8}$, not "about $8.34\times10^{-8}$".
-- [Structure] The line "Source material from Kyle Kabasares’s UC Merced notes. [[Taylor and Maclaurin series problems#Taylor and Maclaurin series|Math 22]]" sits between the $\sin(1/2)$ section and Practice; move it to the end or into a "Source" section.
+- [Structure] The line "Source material from Kyle Kabasares’s UC Merced notes. \[\[Taylor and Maclaurin series problems#Taylor and Maclaurin series|Math 22\]\]" sits between the $\sin(1/2)$ section and Practice; move it to the end or into a "Source" section.
 - [Simplify] In "Taylor remainder bounds", add one line deriving the integral form for $m=1$ by integrating by parts once, so the "repeated integration" claim is concrete.
 - [Intuition] In the $\sin(1/2)$ section, state the general lesson: when the next coefficient vanishes ($P_{2k+1}=P_{2k+2}$ for sine), use the higher order to get a sharper Lagrange bound for free.
 
@@ -693,7 +693,7 @@ Priority: low · Graph: yes · Manim: no
 
 Correct and well-structured; the rearrangement to $3A/2$ and both worked answers verify, but it largely duplicates 09.04 without cross-linking it.
 
-- [Links] Link to [[09.04 Absolute and conditional convergence]], which proves the same rearrangement and alternating results, and state which note is primary to avoid parallel drift.
+- [Links] Link to \[\[09.04 Absolute and conditional convergence\]\], which proves the same rearrangement and alternating results, and state which note is primary to avoid parallel drift.
 - [Graph] Add a native plot of the partial sums of $1-\tfrac12+\tfrac13-\cdots$ and of the rearranged series $1+\tfrac13-\tfrac12+\tfrac15+\tfrac17-\tfrac14+\cdots$ for up to 60 terms, with horizontal lines at $\log2$ and $\tfrac32\log2$.
 - [Simplify] In "Properties of absolutely convergent series", show the first three coefficients of the geometric Cauchy product ($1$, $2r$, $3r^2$) before stating $(n+1)r^n$.
 - [Structure] File is committed with a UTF-8 BOM and CRLF line endings; resave as UTF-8 without BOM with LF per the vault rules.
@@ -728,10 +728,10 @@ Priority: high · Graph: yes · Manim: no
 
 Correct worked calculations transcribed from lecture notes, but it reads as a loose transcript with stray fragments and repeated editorial "the transcription..." remarks rather than an explanation.
 
-- [Structure] Under "11.1 Sequences", the line "Monotonic sequence theorem." is a bare fragment followed by unrelated Maclaurin series of $\cos$, $\sin$, $e^x$; state the theorem (or link [[09.01 Sequences]]) and move the Taylor series to a Taylor note.
+- [Structure] Under "11.1 Sequences", the line "Monotonic sequence theorem." is a bare fragment followed by unrelated Maclaurin series of $\cos$, $\sin$, $e^x$; state the theorem (or link \[\[09.01 Sequences\]\]) and move the Taylor series to a Taylor note.
 - [Simplify] Remove editor-facing sentences ("The transcription gives the partial sum a finite upper index...", "The denominator in this example is written with a plus sign", "The handwritten example continues on the next page", "Both bounds can be attained, so the transcription uses non-strict inequalities", "The transcription takes the limit of the magnitude...") and keep only the mathematical reason where needed.
 - [Example] The limit-comparison example with $n^3/(n^4+1)$ never states the tested series or $b_n=1/n$ before the computation; open it with "Test $\sum n^3/(n^4+1)$ against $\sum1/n$".
-- [Links] For $\sum ne^{-n^2}$ ("leave the remaining steps blank"), link to the completed solution in [[Power-series intervals and convergence practice#Integral test for series]].
+- [Links] For $\sum ne^{-n^2}$ ("leave the remaining steps blank"), link to the completed solution in \[\[Power-series intervals and convergence practice#Integral test for series\]\].
 - [Graph] Supplement the scanned Fig. 47 with a native plot of $f(x)=6/x^2$ on $n\le x\le n+6$ with right-endpoint rectangles, matching the $\pi^2$ error-estimate example.
 - [Structure] Turn the "11.7 Testing series" checklist into a decision table (term test; $p$/geometric comparison; alternating; factorials or exponentials to ratio; $(b_n)^n$ to root; easy integral to integral test).
 
@@ -754,7 +754,7 @@ Priority: low · Graph: no · Manim: no
 
 Clear, correct beginner note on sigma and pi notation; all worked values verify.
 
-- [Links] Overlaps with [[Finite sums and series]] (same linearity rules and the same example $\sum_{k=2}^5(2k-1)=24$); cross-link the two and use a different example in one of them.
+- [Links] Overlaps with \[\[Finite sums and series\]\] (same linearity rules and the same example $\sum_{k=2}^5(2k-1)=24$); cross-link the two and use a different example in one of them.
 - [Structure] File is committed with a UTF-8 BOM and CRLF line endings; resave as UTF-8 without BOM with LF per the vault rules.
 
 ### N0261
@@ -764,7 +764,7 @@ Priority: low · Graph: no · Manim: no
 
 Clear, correct beginner note on finite series and sigma notation; worked values verify.
 
-- [Links] Cross-link [[Finite sums and products]], which repeats the worked example $\sum_{k=2}^5(2k-1)=24$ and the same linearity rules.
+- [Links] Cross-link \[\[Finite sums and products\]\], which repeats the worked example $\sum_{k=2}^5(2k-1)=24$ and the same linearity rules.
 - [Structure] File is committed with a UTF-8 BOM and CRLF line endings; resave as UTF-8 without BOM with LF per the vault rules.
 
 ### N0262
@@ -793,7 +793,7 @@ Priority: low · Graph: no · Manim: no
 
 Correct and concise; it largely parallels 09.02 (same harmonic and telescoping examples) without linking it.
 
-- [Links] Link to [[09.02 Infinite series]], which covers the same partial-sum definition, harmonic blocks and telescoping example, and decide which note is primary.
+- [Links] Link to \[\[09.02 Infinite series\]\], which covers the same partial-sum definition, harmonic blocks and telescoping example, and decide which note is primary.
 - [Simplify] In "General convergence theorems", add one line showing that the term test is the special case $p=q$ of the Cauchy criterion.
 - [Structure] File is committed with a UTF-8 BOM and CRLF line endings; resave as UTF-8 without BOM with LF per the vault rules.
 
@@ -806,7 +806,7 @@ Correct and compact synthesis of radius, operations and Taylor remainders; the e
 
 - [Graph] In "Approximation formulas with stated errors", plot $|e^h-(1+h+h^2/2)|$ against the bound $e^{1/2}|h|^3/6$ on $-0.5\le h\le0.5$.
 - [Example] In "Definition and radius of convergence", give one coefficient sequence where the ratio limit fails but the root formula works (e.g. $a_n=2^{-n}$ for even $n$, $3^{-n}$ for odd $n$, giving $R=2$).
-- [Links] Link to [[09.05 Power series]] and [[09.06 Taylor and Maclaurin expansions]], which repeat the same $(x-2)^n/(n3^n)$ example and expansions.
+- [Links] Link to \[\[09.05 Power series\]\] and \[\[09.06 Taylor and Maclaurin expansions\]\], which repeat the same $(x-2)^n/(n3^n)$ example and expansions.
 - [Structure] File is committed with a UTF-8 BOM and CRLF line endings; resave as UTF-8 without BOM with LF per the vault rules.
 
 ### N0266
@@ -820,7 +820,7 @@ Correct worked interval-of-convergence and series-representation problems, but p
 - [Structure] Two different problems are both labelled "Example 1" (the $(4x+1)^n/n^2$ and $2^n(4x-8)^n/n$ series); renumber, and state the centre $2$ and radius $1/8$ for the second.
 - [Simplify] Remove editor-facing remarks ("The transcription keeps $x^n$ in the denominator", "The transcription includes the $0.1$ term", "The transcription uses the sign convention", "The transcription retains the factor $|x-5|$").
 - [Simplify] At $x=-1$ for $\sum(x+2)^n/(n+3)$, drop the inconclusive comparison $1/(n+3)<1/n$ (an upper bound by a divergent series proves nothing) and keep only the harmonic-tail reindexing.
-- [Links] The opening "Example 1" ($\cos(2n)/(2+3^n)$) duplicates the last example of [[Convergence tests in worked series problems]]; remove it here or link to it.
+- [Links] The opening "Example 1" ($\cos(2n)/(2+3^n)$) duplicates the last example of \[\[Convergence tests in worked series problems\]\]; remove it here or link to it.
 
 ### N0267
 
@@ -840,7 +840,7 @@ Priority: low · Graph: no · Manim: no
 
 Short, correct hub that lists the 09.xx foundation lessons, but it does not point to the parallel catalogue lessons and problem collections in the same folder.
 
-- [Links] All links resolve, but the hub does not mention [[Infinite series - Catalogue Guide]] or the worked-problem notes in this folder (for example [[Sequences, series tests, and power-series review]] and [[Taylor and Maclaurin series problems]]). Add one line that points readers to them as the extended and practice route.
+- [Links] All links resolve, but the hub does not mention \[\[Infinite series - Catalogue Guide\]\] or the worked-problem notes in this folder (for example \[\[Sequences, series tests, and power-series review\]\] and \[\[Taylor and Maclaurin series problems\]\]). Add one line that points readers to them as the extended and practice route.
 - [Structure] The file starts with a UTF-8 BOM, which breaks the vault's "UTF-8 without BOM" rule. Run the formatter to remove it.
 
 ### N0269
@@ -903,7 +903,7 @@ Priority: high · Graph: yes · Manim: yes
 The mathematics that is present is correct, but the note has a wrong physical-quantities table, unfinished exercises, many transcription meta-comments, and a title that does not match its mixed content of convergence tests and Taylor series.
 
 - [Correctness] The "Physical quantities" table lists cable weight per length ($\unit{lbf/ft}$), coal weight ($\unit{lbf}$), and water loss per lift ($\unit{kg/m}$). None of these appear in this note, which is pure mathematics; it seems to be copied from a work-integral note. Delete the table.
-- [Structure] More than half the note covers comparison, limit comparison, alternating, absolute-convergence, and root tests ("Example 2", "Example 3", the $(-10)^n/n!$ and $n^n/3^{1+3n}$ examples) and has nothing to do with Taylor series. Either move these examples to [[Sequences, series tests, and power-series review]] or retitle the note. Also number the examples consistently (currently "Example", "Example 2", "Example 3", "Example").
+- [Structure] More than half the note covers comparison, limit comparison, alternating, absolute-convergence, and root tests ("Example 2", "Example 3", the $(-10)^n/n!$ and $n^n/3^{1+3n}$ examples) and has nothing to do with Taylor series. Either move these examples to \[\[Sequences, series tests, and power-series review\]\] or retitle the note. Also number the examples consistently (currently "Example", "Example 2", "Example 3", "Example").
 - [Example] Several items are posed but never finished: the exercise $\sum_{n\ge2}9^n/[(-2)^{n+1}n]$ (diverges because $|a_n|=(9/2)^n/(2n)\to\infty$), the "Challenge problem" $\ln3=-\ln(1/3)$ (give the series $\ln3=\sum_{n\ge1}(2/3)^n/n$ and note that it converges slowly), the $\cos^2x$ series (finish $\cos^2x=1+\sum_{n\ge1}(-1)^n2^{2n-1}x^{2n}/(2n)!$), and the bullet tasks for $\cos x$ and $\ln(1-x)$. Add brief worked answers.
 - [Simplify] Remove the meta-comments about the transcription versus the handwritten source ("The transcription retains the factorials…", "The handwritten calculation uses $12000$…", "The transcription uses the plus sign…", "The transcription retains the fifth power…", "The notes first consider $\sin(0.5)$…"). They distract from the mathematics.
 - [Graph] For "How good is the partial sum?", add a native plot of $\sin x$ with $T_1$, $T_3$, $T_5$ on $[-2\pi,2\pi]$ (y clipped to $[-3,3]$), and a second plot of $|e^x-T_4(x)|$ on $[-0.5,0.5]$ against the Taylor-inequality bound $e^{0.5}|x|^5/120$.

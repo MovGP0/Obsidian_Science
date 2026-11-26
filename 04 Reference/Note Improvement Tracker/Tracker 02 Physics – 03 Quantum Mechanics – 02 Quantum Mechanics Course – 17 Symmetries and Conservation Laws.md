@@ -36,7 +36,7 @@ Priority: low · Graph: no · Manim: no
 
 Clear and correct chapter hub with an accurate summary of the chapter's results.
 
-- [Links] Turn the summary bullets into links to the section notes ([[17.01 Symmetries as Unitary Operators]] … [[17.06 Symmetry and Degeneracy]]) so the hub works as a reading route.
+- [Links] Turn the summary bullets into links to the section notes (\[\[17.01 Symmetries as Unitary Operators\]\] … \[\[17.06 Symmetry and Degeneracy\]\]) so the hub works as a reading route.
 
 ### N2174
 
@@ -56,7 +56,7 @@ Priority: low · Graph: no · Manim: no
 Correct and clear derivation of momentum as the translation generator.
 
 - [Intuition] State the result per component: a potential invariant only under translations along $x$ (e.g. $\energy V(y,z)$) conserves $\mechanical{\hat p}_x$ only; this matches the TLDR's "corresponding component" claim, which the body states only for full translation invariance.
-- [Links] Link "electronic band theory" to [[19.01 Discrete Translation Symmetry]].
+- [Links] Link "electronic band theory" to \[\[19.01 Discrete Translation Symmetry\]\].
 
 ### N2176
 

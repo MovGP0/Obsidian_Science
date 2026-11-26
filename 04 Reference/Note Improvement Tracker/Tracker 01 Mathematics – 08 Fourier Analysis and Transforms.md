@@ -12,7 +12,7 @@ Back to the index: [[Note Improvement Tracker]]
 The review found 3 possible errors or notation conflicts. 3 of them are verified (3 fixed); the other 0 are not verified yet. Each item links to the full suggestion entry.
 
 - [[#N0399|N0399]] Fourier integrals and transform rules: In the "Calculation rules" table, the row for $f(at)$ shows $\widehat f(k/a)/|a|$ split by the pipe characters inside the math, producing stray columns "a" and "$"; write $\widehat f(k/a)/\lvert a\rvert$ and delete the two empty header columns. **Fixed:** Wrote \lvert a\rvert and removed the two empty columns
-- [[#N0402|N0402]] Integral transforms - Catalogue Guide: The link [[Planned Topics#15. Integral transforms|the detailed catalogue]] is broken: "Planned Topics.md" exists only in the hidden `.temp` backup folder, which Obsidian does not index; retarget it or remove the sentence. **Fixed:** Removed the sentence with the link to the deleted note
+- [[#N0402|N0402]] Integral transforms - Catalogue Guide: The link \[\[Planned Topics#15. Integral transforms|the detailed catalogue\]\] is broken: "Planned Topics.md" exists only in the hidden `.temp` backup folder, which Obsidian does not index; retarget it or remove the sentence. **Fixed:** Removed the sentence with the link to the deleted note
 - [[#N0405|N0405]] Periodic forcing and Laplace-transform problems: The "Physical quantities" table describes content absent from this note: $\mechanical{m}$ "slice of the conducting rod", $\mechanical{x}$ "distance along the wave and heat models", $\signal{t}$ "vibration and heat models"; restrict the descriptions to the forced oscillator. **Fixed:** Restricted m, x, and t descriptions to the forced oscillator
 
 ## Tracking table
@@ -158,7 +158,7 @@ Priority: low · Graph: no · Manim: no
 
 Clear hub listing the 16.xx lessons; all links resolve.
 
-- [Links] The overview omits the parallel catalogue lessons in the same folder ([[Fourier coefficients and convergence]], [[Symmetry and numerical Fourier coefficients]]) and the transform chapter guide; add a short "Related lessons" line so readers find both tracks.
+- [Links] The overview omits the parallel catalogue lessons in the same folder (\[\[Fourier coefficients and convergence\]\], \[\[Symmetry and numerical Fourier coefficients\]\]) and the transform chapter guide; add a short "Related lessons" line so readers find both tracks.
 - [Structure] File starts with a UTF-8 BOM; save it without BOM.
 
 ### N0396
@@ -193,7 +193,7 @@ Correct and careful, but nearly identical to "From Fourier series to Fourier int
 
 - [Manim] Animate the series-to-integral limit: for $f(x)=e^{-|x|}$ restricted to $[-T/2,T/2]$, plot the scaled coefficients $Tc_n$ at $k_n=2\pi n/T$ as $T$ grows from $4$ to $40$, with the points filling in the curve $2/(1+k^2)$.
 - [Graph] Plot $f(x)=e^{-|x|}$ and $\widehat f(k)=2/(1+k^2)$ side by side, and the rectangle transform $2\sin(ak)/k$ for $a=1,2$ to show the width trade-off.
-- [Structure] Merge with or clearly differentiate from [[From Fourier series to Fourier integrals]]; both currently carry the same content and can drift apart.
+- [Structure] Merge with or clearly differentiate from \[\[From Fourier series to Fourier integrals\]\]; both currently carry the same content and can drift apart.
 - [Structure] File starts with a UTF-8 BOM; save it without BOM.
 
 ### N0399
@@ -214,7 +214,7 @@ Priority: medium · Graph: yes · Manim: yes
 
 Correct and clearly argued, but it duplicates 16.10 almost entirely.
 
-- [Structure] This note and [[16.10 The nonperiodic extension]] share the same Riemann-sum derivation, $e^{-|x|}$ example, rectangle limitation, and translation practice; keep one as the main lesson and reduce the other to a short pointer, or give this one a distinct focus.
+- [Structure] This note and \[\[16.10 The nonperiodic extension\]\] share the same Riemann-sum derivation, $e^{-|x|}$ example, rectangle limitation, and translation practice; keep one as the main lesson and reduce the other to a short pointer, or give this one a distinct focus.
 - [Manim] Same animation as recommended for 16.10 (scaled coefficients $Tc_n$ at $k_n=2\pi n/T$ filling in $2/(1+k^2)$ as $T$ grows); embed it in whichever note keeps the derivation.
 - [Graph] Plot $\widehat f(k)=2/(1+k^2)$ with the discrete samples $Tc_n$ for $T=10$ overlaid, as a static version of the Riemann-sum picture.
 - [Structure] File starts with a UTF-8 BOM; save it without BOM.
@@ -236,7 +236,7 @@ Priority: low · Graph: no · Manim: no
 
 Useful learning-route hub with a correct two-entry Haar example; one link target does not exist in the vault.
 
-- [Correctness] The link [[Planned Topics#15. Integral transforms|the detailed catalogue]] is broken: "Planned Topics.md" exists only in the hidden `.temp` backup folder, which Obsidian does not index; retarget it or remove the sentence.
+- [Correctness] The link \[\[Planned Topics#15. Integral transforms|the detailed catalogue\]\] is broken: "Planned Topics.md" exists only in the hidden `.temp` backup folder, which Obsidian does not index; retarget it or remove the sentence.
 
 ### N0403
 

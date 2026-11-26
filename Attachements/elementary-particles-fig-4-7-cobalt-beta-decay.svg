@@ -7,7 +7,7 @@
 <circle cx="260" cy="355" r="5" fill="#444444"/>
 <text x="236" y="146" font-family="Georgia, Times New Roman, serif" font-size="24" font-style="normal" text-anchor="middle" fill="#444444">N</text>
 <text x="238" y="385" font-family="Georgia, Times New Roman, serif" font-size="24" font-style="normal" text-anchor="middle" fill="#444444">S</text>
-<path d="M281 142 L313 61" fill="none" stroke="#444444" stroke-width="2.2" marker-end="url(#arrow)"/>
-<text x="326" y="118" font-family="Georgia, Times New Roman, serif" font-size="24" font-style="italic" text-anchor="middle" fill="#444444">e</text>
+<path d="M279 366 L305 430" fill="none" stroke="#444444" stroke-width="2.2" marker-end="url(#arrow)"/>
+<text x="320" y="402" font-family="Georgia, Times New Roman, serif" font-size="24" font-style="italic" text-anchor="middle" fill="#444444">e</text>
 <path d="M221 237 C191 248 199 270 238 278 C285 293 340 265 312 241 L285 232" fill="none" stroke="#444444" stroke-width="2.2" marker-end="url(#arrow)"/>
 </svg>

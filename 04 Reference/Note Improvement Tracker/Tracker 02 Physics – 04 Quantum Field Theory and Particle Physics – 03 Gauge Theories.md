@@ -118,7 +118,7 @@ The review found 135 possible errors or notation conflicts. 135 of them are veri
 - [[#N3215|N3215]] 8.7 Two-Photon Processes and the Photon-Structure Function: Symbol clash: $y$ is the inelasticity in (8.7.18) and (8.7.20) and the convolution variable in (8.7.22)–(8.7.33); $x$ is also the argument of the flux factor $f(x)$ in (8.7.3). Rename the convolution variable, for example $\xi$. **Partly:** Renamed the convolution variable to xi in (8.7.22)-(8.7.33) and the table; left x in f(x) because it is only the dummy argument of a defined function.
 - [[#N3216|N3216]] 8.8 Color Confinement: (8.8.6): in the Gaussian units used throughout ($W=\frac1{8\pi}\int D\cdot E$, $\sigma=(1-\epsilon)D/4\pi\epsilon$), the relation is $\mathbf D=\mathbf E+4\pi\mathbf P$, not $\mathbf D=\mathbf E+\mathbf P$. **Fixed:** Confirmed Gaussian units from W = (1/8 pi) int D.E and (8.8.11); added 4 pi.
 - [[#N3216|N3216]] 8.8 Color Confinement: Figure 8.47 caption: the lattice temperature is $T=1/(aN_\tau)$, not $a/N_\tau$; the latter has units of length (the table gives $a$ in $\mathrm{GeV}^{-1}$). **Fixed:** Changed to T = 1/(a N_tau).
-- [[#N3217|N3217]] 8.9 QCD-induced Electroweak Symmetry Breaking: (8.9.4): with off-diagonal $+gg'$, the massless eigenvector in $(b_3,\mathcal A)$ is $\propto(g',-g)$, i.e. $A\propto g'b_3-g\mathcal A$, which contradicts the stated $A=(g\mathcal A+g'b_3)/\sqrt{g^2+g'^2}$ and $Z=(gb_3-g'\mathcal A)/\sqrt{g^2+g'^2}$. For those eigenvectors (and $Q=T_3+Y/2$), the off-diagonal entries must be $-gg'$. **Fixed:** Verified the null vector of [[g^2,-gg'],[-gg',g'^2]] is (g',g), matching A and Z; changed both off-diagonal entries to -gg'.
+- [[#N3217|N3217]] 8.9 QCD-induced Electroweak Symmetry Breaking: (8.9.4): with off-diagonal $+gg'$, the massless eigenvector in $(b_3,\mathcal A)$ is $\propto(g',-g)$, i.e. $A\propto g'b_3-g\mathcal A$, which contradicts the stated $A=(g\mathcal A+g'b_3)/\sqrt{g^2+g'^2}$ and $Z=(gb_3-g'\mathcal A)/\sqrt{g^2+g'^2}$. For those eigenvectors (and $Q=T_3+Y/2$), the off-diagonal entries must be $-gg'$. **Fixed:** Verified the null vector of \[\[g^2,-gg'],[-gg',g'^2\]\] is (g',g), matching A and Z; changed both off-diagonal entries to -gg'.
 - [[#N3219|N3219]] 8.P Problems: Problem 8.4: right after defining $V(r)=\frac{\alpha_s}{r}\langle\mathbf T^{(1)}\cdot\mathbf T^{(2)}\rangle$, the four potentials are printed as $-\frac43\alpha_s r$, $+\frac16\alpha_s r$, $-\frac23\alpha_s r$, $+\frac13\alpha_s r$. They must be $-\frac43\alpha_s/r$, $+\frac16\alpha_s/r$, $-\frac23\alpha_s/r$, $+\frac13\alpha_s/r$. **Fixed:** Replaced alpha_s r by alpha_s/r in all four potentials.
 - [[#N3219|N3219]] 8.P Problems: Problem 8.5 table: the single box is the $6$ of $\mathrm{SU}(6)$ with $(3,2)$ and $G^2=35/12$, not dimension "1". Also, the embedded pair images are swapped relative to their content: the $21$ [$(6,3)\oplus(3^*,1)$, $G^2=20/3$] is the symmetric (horizontal) pair, and the $15$ [$G^2=14/3$] is the antisymmetric (vertical) pair, as the filenames vertical-pair and horizontal-pair indicate the opposite. **Fixed:** Set dimension of single box to 6 (Casimir 35/12 checks); swapped embeds so the 21 uses horizontal-pair.svg and the 15 uses vertical-pair.svg (SVG content checked; Casimirs 20/3 and 14/3 check).
 - [[#N3219|N3219]] 8.P Problems: Problem 8.22 table: at $90^\circ$, $\hat\sigma(gg\to q\bar q)/\hat\sigma(ud\to ud)=\frac{7/48}{20/9}=\frac{21}{320}\approx0.066$, not $\approx0.66$. All other ratios check (0.1, 22/15, 7/6, 7/15, 11/4, 2187/160). **Fixed:** Changed 0.66 to 0.066 (7/48 divided by 20/9 = 21/320 checked).
@@ -326,7 +326,7 @@ Short and correct in substance, but tau is overloaded and the V−A structure is
 - [Correctness] Symbol clash: $\tau$ denotes the tau lepton, the tau lifetime ($c\tau=87\,\mu\mathrm m$) and the isospin matrices $\tau_\pm$. The table lists only the lifetime. Rename the lifetime to $\tau_\tau$ and add $\tau_\pm,\tau_{1,2}$ to the table.
 - [Intuition] Explain that $\tfrac12(1-\gamma_5)$ is the left-handed projector $P_L$, so (1.2.2) couples only the L components in (1.2.1).
 - [Correctness] Outdated: tau-family universality "verified within 1.5%" is now tested at the few-per-mille level (PDG). Add a dated note.
-- [Links] Link "problem 1.6" and "problem 1.9" to [[1.P Problems]].
+- [Links] Link "problem 1.6" and "problem 1.9" to \[\[1.P Problems\]\].
 
 ### N3137
 
@@ -369,7 +369,7 @@ Priority: low · Graph: no · Manim: no
 Correct problem statements; the formulas in 1.1, 1.2 and 1.8 check out.
 
 - [Structure] $\sigma$ is both the charged scalar and the cross section (1.4, 1.5). Consider calling the scalar $S^\pm$ to remove the clash that the table only acknowledges.
-- [Links] "appendix B.5" refers to Quigg's appendix, which is not transcribed. Add a link when it exists, or point to [[D.3 Vertex Factors]] (Griffiths conventions) with a warning about sign conventions.
+- [Links] "appendix B.5" refers to Quigg's appendix, which is not transcribed. Add a link when it exists, or point to \[\[D.3 Vertex Factors\]\] (Griffiths conventions) with a warning about sign conventions.
 
 ### N3141
 
@@ -387,7 +387,7 @@ Priority: low · Graph: no · Manim: no
 
 Short, clear chapter overview.
 
-- [Links] Link the three announced topics to [[2.1 Hamilton's Principle]], [[2.2 Free Field Theory Examples]] and [[2.3 Symmetries and Conservation Laws]].
+- [Links] Link the three announced topics to \[\[2.1 Hamilton's Principle\]\], \[\[2.2 Free Field Theory Examples\]\] and \[\[2.3 Symmetries and Conservation Laws\]\].
 
 ### N3143
 
@@ -522,7 +522,7 @@ Correct vertex factors and propagators (3.6.8 and 3.6.11 check out), but the key
 
 - [Example] Before (3.6.7), show that $\phi^*\partial^\mu\phi\to-ip_1^\mu S_2S_1$ and $(\partial^\mu\phi^*)\phi\to+ip_2^\mu S_2S_1$. Their difference gives $-i(p_1+p_2)^\mu$.
 - [Intuition] Explain that the factor 2 in (3.6.11) comes from the two ways of assigning the two external photons to $A_\mu A_\nu$.
-- [Structure] "The general form of the wave functions is typified by..." should read "wave equations". The re-quoted equation keeps the tag (3.2.22); mark it as a repeat or link to [[3.2 Gauge Invariance in Classical Electrodynamics]].
+- [Structure] "The general form of the wave functions is typified by..." should read "wave equations". The re-quoted equation keeps the tag (3.2.22); mark it as a repeat or link to \[\[3.2 Gauge Invariance in Classical Electrodynamics\]\].
 
 ### N3155
 
@@ -558,7 +558,7 @@ Priority: low · Graph: no · Manim: no
 
 Clear motivation for local isospin symmetry.
 
-- [Links] The re-quoted (2.3.14) and (2.3.13) should link to [[2.3 Symmetries and Conservation Laws]].
+- [Links] The re-quoted (2.3.14) and (2.3.13) should link to \[\[2.3 Symmetries and Conservation Laws\]\].
 - [Intuition] Add one sentence that a local SU(2) rotation lets "proton" at one point be a superposition of $p$ and $n$ at another. Compensating for this needs three gauge fields, one per generator.
 
 ### N3159
@@ -570,7 +570,7 @@ Careful Yang–Mills construction (4.2.10–4.2.22 and 4.2.37 check out), but th
 
 - [Correctness] The last term of (4.2.31) should be $-\frac1{ig}G[G^{-1}\partial_\nu G,G^{-1}\partial_\mu G]G^{-1}$ $(=+\frac{i}{g}\ldots)$, and the last term of (4.2.35) should be $+\frac1{ig}G[\ldots]G^{-1}$. Both signs are flipped (checked numerically). The cancellation and the conclusion (4.2.26) are unaffected.
 - [Example] Show the shortcut with (4.2.16): $\tau\cdot\alpha\,\tau\cdot b-\tau\cdot b\,\tau\cdot\alpha=2i\,\tau\cdot(\alpha\times b)$, which gives (4.2.20) in one line.
-- [Intuition] After (4.2.37), explain that the $g\epsilon_{jkl}b^jb^k$ term makes $-\frac14\mathbf F^2$ contain cubic and quartic terms in $b$, so the gauge bosons carry isospin and interact with each other. Link to the three- and four-gluon vertices in [[D.3 Vertex Factors]].
+- [Intuition] After (4.2.37), explain that the $g\epsilon_{jkl}b^jb^k$ term makes $-\frac14\mathbf F^2$ contain cubic and quartic terms in $b$, so the gauge bosons carry isospin and interact with each other. Link to the three- and four-gluon vertices in \[\[D.3 Vertex Factors\]\].
 - [Manim] In 3D isospace, show the infinitesimal transformation $\mathbf b'_\mu=\mathbf b_\mu-\boldsymbol\alpha\times\mathbf b_\mu-\frac1g\partial_\mu\boldsymbol\alpha$ as a rotation of the arrow $\mathbf b$ about $\boldsymbol\alpha$ plus a shift. This contrasts with the shift-only Abelian case (4.2.12).
 - [Structure] In (4.2.21), $b^k$ lacks its Lorentz index; write $b_\mu^k$.
 
@@ -595,7 +595,7 @@ Priority: low · Graph: no · Manim: no
 
 Short, clear summary section that needs no substantive change.
 
-- [Links] Link the "massless vector bosons" argument back to [[4.3 Some Physical Consequences]] and "the following chapter" to [[5.0 Chapter introduction]].
+- [Links] Link the "massless vector bosons" argument back to \[\[4.3 Some Physical Consequences\]\] and "the following chapter" to \[\[5.0 Chapter introduction\]\].
 - [Structure] The file starts with a UTF-8 BOM; save as UTF-8 without BOM.
 
 ### N3162
@@ -679,7 +679,7 @@ A faithful, compact derivation of the Abelian Higgs model whose small-oscillatio
 - [Simplify] Show the two-line expansion behind (5.3.11): with $\phi\approx(v+\eta+i\zeta)/\sqrt2$, $D_\mu\phi$ gives the cross term $\electric{q}v\magnetic{A_\mu}\partial^\mu\zeta$ and mass term $\frac12\electric{q}^2v^2A^2$, and $V$ expanded to second order gives $-\mechanical{\mu}^2\eta^2$ using $v^2=-\mechanical{\mu}^2/|\lambda|$; also fix the typo "from out study".
 - [Graph] 3D surface of $V(\phi_1,\phi_2)=\frac{\mechanical{\mu}^2}{2}(\phi_1^2+\phi_2^2)+\frac{|\lambda|}{4}(\phi_1^2+\phi_2^2)^2$ with $\mechanical{\mu}^2=-1$, $|\lambda|=1$, $\phi_{1,2}\in[-1.6,1.6]$, marking the radial $\eta$ and angular $\zeta$ directions at $\phi_1=v$.
 - [Manim] Animate the degree-of-freedom bookkeeping: the Goldstone phase $\zeta$ on the vacuum circle being rotated away by the unitary-gauge transformation (5.3.14) while a massless photon's two transverse helicities gain a third longitudinal arrow.
-- [Links] Link "the Goldstone model discussed in the previous section" to [[5.2 Spontaneous Breaking of Continuous Symmetries]] and "Higgs mechanism" forward to the electroweak note 6.3.
+- [Links] Link "the Goldstone model discussed in the previous section" to \[\[5.2 Spontaneous Breaking of Continuous Symmetries\]\] and "Higgs mechanism" forward to the electroweak note 6.3.
 
 ### N3169
 
@@ -704,7 +704,7 @@ Short and correct (the $g^2v^2$ mass term and $T_3$ invariance check out), but i
 - [Simplify] State the potential explicitly, $\energy{V}=\frac12\mechanical{\mu}^2\boldsymbol\phi\cdot\boldsymbol\phi+\frac14|\lambda|(\boldsymbol\phi\cdot\boldsymbol\phi)^2$ with $v^2=-\mechanical{\mu}^2/|\lambda|$; otherwise "mass $\mechanical{\mu}$" and $(\text{mass})^2=-2\mechanical{\mu}^2$ in (5.5.11) are unsupported.
 - [Example] Show the one-line mass computation: $(D_\mu\langle\boldsymbol\phi\rangle)_k=g\epsilon_{jk3}b_\mu^jv$ gives components $(-gvb^2,\,gvb^1,\,0)$, hence $\frac12g^2v^2[(b^1)^2+(b^2)^2]$ and no $b^3$ term.
 - [Simplify] Harmonize generator notation ($T_i$, $T^j$, $T_3$ are used interchangeably) and tabulate the degree-of-freedom count before/after (9 = 3·1 + 3·2 = 1·1 + 2·3 + 1·2).
-- [Links] Link "section 5.3" to [[5.3 Spontaneous Breaking of a Gauge Symmetry]] and "problem 5.5" to [[5.P Problems#5.5]].
+- [Links] Link "section 5.3" to \[\[5.3 Spontaneous Breaking of a Gauge Symmetry\]\] and "problem 5.5" to \[\[5.P Problems#5.5\]\].
 
 ### N3171
 
@@ -734,7 +734,7 @@ Problem list transcribed faithfully, including a few source slips worth correcti
 - [Correctness] Problem 5.2 cites "transformation laws (5.4.6) and (5.4.8)", but in the sigma-model note (5.4.6) is the mass term; the nucleon transformation law is (5.4.5).
 - [Correctness] Problem 5.7(b): since $\electric{e^*}=-2\electric{e}<0$, the formula $\magnetic{\lambda}^{-1}=\electric{e^*}|\langle\psi\rangle_0|/\sqrt{\mechanical{m^*}c^2}$ gives a negative inverse length; use $|\electric{e^*}|$ (and state the unit system, since the free energy is written in natural units while $c$ appears here).
 - [Correctness] Problem 5.4: $\cos\theta_C\approx0.9746$ is dated; the current value is $|V_{ud}|\approx0.9737$ (PDG 2024).
-- [Links] Link the referenced equations (5.4.5), (5.4.8), (5.4.11) to [[5.4 The Sigma Model]] and problem 5.8's "Abelian Higgs model" to [[5.3 Spontaneous Breaking of a Gauge Symmetry]].
+- [Links] Link the referenced equations (5.4.5), (5.4.8), (5.4.11) to \[\[5.4 The Sigma Model\]\] and problem 5.8's "Abelian Higgs model" to \[\[5.3 Spontaneous Breaking of a Gauge Symmetry\]\].
 
 ### N3174
 
@@ -793,7 +793,7 @@ The core electroweak construction is clear and the couplings and numerical predi
 - [Correctness] (6.3.63) as written, $|\mathcal M(Z\to\nu\bar\nu)|^2=\frac12\frac{\mechanical{M_Z}^2}{\mechanical{M_W}^2}|\mathcal M(W\to e\bar\nu)|^2$, accounts only for the coupling ratio; since $|\mathcal M|^2\propto G_FM^4$ (6.2.18), the ratio at the respective masses is $\frac12(\mechanical{M_Z}/\mechanical{M_W})^4$, which is what yields $\Gamma=G_F\mechanical{M_Z}^3/(12\pi\sqrt2)$.
 - [Correctness] Outdated values: the electron-neutrino mass bound "$\lesssim2\,\unit{eV}$" is now $m_\nu<0.45\,\unit{eV}$ (KATRIN 2025), and "ATLAS and CMS ... will probe ... at $\sqrt s=7\,\unit{TeV}$" should be updated to the completed 13 and 13.6 TeV WW and triple-gauge-coupling measurements.
 - [Structure] The vertex-factor lists for Fig. 6.14 and Fig. 6.15 interrupt sentences ("(6.3.67) ... which shows very promising agreement" and "(6.3.69) ... and the other kinematical quantities"); move each list after the paragraph it splits.
-- [Links] Link "procedure of section 5.5" to [[5.5 Spontaneous Breaking of a Non-Abelian Symmetry]], "§5.4" to [[5.4 The Sigma Model]], and the reused equations (6.2.20), (6.2.25), (6.2.37) to [[6.2 Intermediate Vector Bosons -  A First Look]].
+- [Links] Link "procedure of section 5.5" to \[\[5.5 Spontaneous Breaking of a Non-Abelian Symmetry\]\], "§5.4" to \[\[5.4 The Sigma Model\]\], and the reused equations (6.2.20), (6.2.25), (6.2.37) to \[\[6.2 Intermediate Vector Bosons -  A First Look\]\].
 
 ### N3179
 
@@ -1018,7 +1018,7 @@ Faithful and mostly correct transcription (kinematics, tensor algebra, sum rules
 - [Correctness] (7.4.97) $A/Q^2\simeq-7.2\times10^{-5}$ is missing its unit: it should read $-7.2\times10^{-5}\,\unit{GeV}^{-2}$ (recomputed: $G_F\cdot\frac45/(4\pi\alpha\sqrt2)=7.19\times10^{-5}\,\unit{GeV}^{-2}$).
 - [Correctness] Symbol slips: the table defines $N$ only as "parton count", but the note also uses $N$ for the target nucleon in (7.4.1), (7.4.69), (7.4.85)-(7.4.89); in (7.4.28) one form factor is written $\Gamma_2^2(\mechanical{q}^2)$ while all the others take $\mechanical{Q}^2$; the rule (7.4.47) needs an absolute value, $1/|\partial h/\partial x|$.
 - [Correctness] The world average $M_W=80.399\pm0.023\,\unit{GeV}$ (PDG 2010) near the end is outdated; add an editorial note giving the current PDG value ($80.369\pm0.013\,\unit{GeV}$, PDG 2024) and mark "most precise to date" and "recent" (BoNuS, HERA) as statements made at the source's date.
-- [Structure] Add section headings (kinematics and invariants; hadron tensor and structure functions; virtual-photon cross sections; parton model and scaling; sum rules; charged-current neutrino DIS; neutral currents and $R_\nu$; $\gamma$-$Z$ interference and the SLAC asymmetry; HERA). Also remove the UTF-8 BOM at the start of the file, and change the Fig. 7.12 embed from Markdown `![..](file.png)` to the `![[...|caption]]` wiki-embed style used for the other figures.
+- [Structure] Add section headings (kinematics and invariants; hadron tensor and structure functions; virtual-photon cross sections; parton model and scaling; sum rules; charged-current neutrino DIS; neutral currents and $R_\nu$; $\gamma$-$Z$ interference and the SLAC asymmetry; HERA). Also remove the UTF-8 BOM at the start of the file, and change the Fig. 7.12 embed from Markdown `![..](file.png)` to the `!\[\[...|caption\]\]` wiki-embed style used for the other figures.
 - [Graph] Add two native plots. (a) The $y$-distributions $1$ and $(1-y)^2$ for $y\in[0,1]$, which shows why $\sigma(\bar\nu N)/\sigma(\nu N)\approx1/3$ next to (7.4.74). (b) $R_\nu=\tfrac12-x_W+\tfrac{20}{27}x_W^2$ and $R_{\bar\nu}=\tfrac12-x_W+\tfrac{20}{9}x_W^2$ for $x_W\in[0,0.5]$, with a marker at $x_W=0.2122$ (0.32, 0.39). One could also plot the propagator factors $1/Q^4$ and $1/(Q^2+M_W^2)^2$ on log axes for $Q^2\in[10^2,10^5]\,\unit{GeV}^2$ to explain Fig. 7.14.
 
 ### N3197
@@ -1059,7 +1059,7 @@ The formulas check out, including (7.7.2)–(7.7.4), (7.7.7) and (7.7.9), but th
 - [Example] After (7.7.8), insert the number: $\Delta\rho=3G_Fm_t^2/(8\sqrt2\pi^2)\approx0.0094$ for $m_t=173\,\mathrm{GeV}$. Compare it with the CHARM-II error on $\rho$ in (7.7.6) to show why LEP-level precision was needed.
 - [Intuition] Explain in one sentence why $\Delta\rho\propto m_t^2$ (it is non-decoupling, because the Yukawa coupling grows with the mass) while the Higgs dependence is only $\ln M_H$ (Veltman screening). Right now the text states both without a reason.
 - [Graph] Plot $\Delta\rho$ from (7.7.7) against $m_t\in[0,250]\,\mathrm{GeV}$ with $m_b=4.8\,\mathrm{GeV}$, together with the asymptote (7.7.8). Also plot $\sigma(\nu_\mu e)/\sigma(\bar\nu_\mu e)$ from (7.7.2)/(7.7.3) against $x_W\in[0,0.5]$, marking $x_W=0.237$, to show how the ratio determines $x_W$.
-- [Structure] Change the Fig. 7.23 embed from Markdown `![..](file.png)` to the `![[...|caption]]` wiki-embed style used for the other figures (the caption contains nested brackets). Remove the UTF-8 BOM at the start of the file. Add subheadings (lepton $g-2$; top-mass prediction; the $\rho$ parameter; Higgs-mass fits; running $\sin^2\theta_W$).
+- [Structure] Change the Fig. 7.23 embed from Markdown `![..](file.png)` to the `!\[\[...|caption\]\]` wiki-embed style used for the other figures (the caption contains nested brackets). Remove the UTF-8 BOM at the start of the file. Add subheadings (lepton $g-2$; top-mass prediction; the $\rho$ parameter; Higgs-mass fits; running $\sin^2\theta_W$).
 
 ### N3200
 
@@ -1102,7 +1102,7 @@ A well-structured problem list (28 problems; I checked (7.22), (7.21) and the he
 - [Correctness] Problem 7.3(a): "Express $V_{ub}=A\lambda^2$" should be "$V_{cb}=A\lambda^2$". The next sentence then correctly sets $V_{ub}=0$, and part (b) assigns $s_{23}=A\lambda^2$, i.e. $V_{cb}$.
 - [Correctness] Problem 7.4: "(for $j\ne k$ and $i\ne j$, respectively)" should be "$i\ne k$", since the second condition is $\sum_jV_{ij}V_{kj}^*=\delta_{ik}$.
 - [Correctness] Problem 7.19 has two parts labelled "(b)"; the second, on $\delta p/p$, should be "(c)". Also add the missing comma in "$e^+e^-$ $\mu^+\mu^-$".
-- [Structure] Problem 7.23 ends with escaped double brackets `\[\[cf. … \]\]` that render as literal "[[…]]"; use single brackets. In the table, $\zeta_\pm$ from 7.27 (which clashes with the Yukawa $\zeta_i$ of 7.1) is missing, and $M_Z$ appears twice; also remove the UTF-8 BOM.
+- [Structure] Problem 7.23 ends with escaped double brackets `\[\[cf. … \]\]` that render as literal "\[\[…\]\]"; use single brackets. In the table, $\zeta_\pm$ from 7.27 (which clashes with the Yukawa $\zeta_i$ of 7.1) is missing, and $M_Z$ appears twice; also remove the UTF-8 BOM.
 
 ### N3204
 

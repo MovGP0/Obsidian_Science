@@ -133,7 +133,7 @@ Correct but thin; it never explains why the field must be inhomogeneous or why s
 - [Intuition] Add the force $F_z=\mu_z\,\partial B_z/\partial z$. This shows why a uniform field only torques the moment while a gradient sorts atoms by $\mu_z$.
 - [Intuition] State that silver's 47th electron is in a 5s state with $l=0$, so the orbital moment vanishes and the two spots measure the electron spin moment $\mu_z\simeq\mp\mu_B$.
 - [Manim] Animate a beam of randomly oriented classical moments smearing into a continuous band, then the observed beam splitting into two discrete spots.
-- [Links] Link forward to [[10.05 Stern–Gerlach Revisited]] and [[02.04 Wave Function Collapse]], where sequential Stern–Gerlach filters are treated.
+- [Links] Link forward to \[\[10.05 Stern–Gerlach Revisited\]\] and \[\[02.04 Wave Function Collapse\]\], where sequential Stern–Gerlach filters are treated.
 
 ### N2010
 

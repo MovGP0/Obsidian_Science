@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Tables: a learning and reference guide"
 catalogue_ids:
   - "21"
@@ -63,7 +63,7 @@ This is an approximation, not an identity. It can be poor near a singularity or 
 <!-- catalogue-complete-lesson-index:start -->
 ## Complete lesson index
 
-Read the prerequisite route above before the advanced lessons. The source topic links are in [[Planned Topics#21. Tables|the detailed catalogue]].
+Read the prerequisite route above before the advanced lessons.
 
 - [[Numerical constants and rounding|Numerical constants and rounding]] — 21.1.
 - [[Physical constants and SI units|Physical constants, decimal prefixes, and SI units]] — 21.2, 21.3, 21.4.

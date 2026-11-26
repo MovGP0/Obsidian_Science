@@ -85,7 +85,7 @@ Priority: low · Graph: no · Manim: no
 
 Clear chapter hub with a useful reading guide.
 
-- [Links] The links are correct; [[10.12 Summary]] also matches a QFT note with the same name, so consider a path-qualified link for robustness.
+- [Links] The links are correct; \[\[10.12 Summary\]\] also matches a QFT note with the same name, so consider a path-qualified link for robustness.
 
 ### N1541
 
@@ -114,7 +114,7 @@ Priority: low · Graph: no · Manim: no
 Correct and balanced, with an appropriate caveat note.
 
 - [Example] For "Universality", give one concrete example: the liquid–gas critical point of CO₂ and a uniaxial magnet share $\beta\approx0.33$ despite completely different microscopic physics.
-- [Links] Link "Universality" to [[10.07.03 Universality and Universality Classes]] and "correlation length" to [[10.06.03 Correlation Function]].
+- [Links] Link "Universality" to \[\[10.07.03 Universality and Universality Classes\]\] and "correlation length" to \[\[10.06.03 Correlation Function\]\].
 
 ### N1544
 
@@ -244,7 +244,7 @@ Priority: low · Graph: no · Manim: no
 Good schematic figure and correct topology; the text is clear.
 
 - [Graph] Optionally add a dashed alternative melting line with negative slope (or a second panel) to show the water case beside the generic one, as the text discusses both.
-- [Simplify] The "Critical-point condition" callout repeats the correction in [[10.04.01 Triple Point and Critical Point]]; replace it with a link.
+- [Simplify] The "Critical-point condition" callout repeats the correction in \[\[10.04.01 Triple Point and Critical Point\]\]; replace it with a link.
 
 ### N1557
 
@@ -273,7 +273,7 @@ Priority: low · Graph: no · Manim: no
 
 Correct and careful definition with a good list of order-parameter types.
 
-- [Structure] Replace the bullet list with a small table (system, order parameter, number of components, symmetry group); it connects directly to the universality classes in [[10.07.03 Universality and Universality Classes]].
+- [Structure] Replace the bullet list with a small table (system, order parameter, number of components, symmetry group); it connects directly to the universality classes in \[\[10.07.03 Universality and Universality Classes\]\].
 - [Simplify] Shorten the final paragraph on the liquid–gas case: one sentence that the density difference has no exact microscopic $\mathbb Z_2$ (only an emergent one near $T_c$) is enough.
 
 ### N1560
@@ -285,7 +285,7 @@ Correct, with appropriate caveats on the schematic BCS formula and gauge symmetr
 
 - [Structure] The liquid–gas order parameter $\phi$ is written without the `\mechanical{}` macro used for $\phi$ in the neighbouring notes; make it consistent.
 - [Simplify] Move the paragraph "For ferromagnetic positive exchange energy..." up into the Ising section, where it belongs, and delete the duplicated unit remarks in the final paragraph.
-- [Links] Link the Ising Hamiltonian to [[11.01.01 Hamiltonian and Spin Variables]] and note that chapter 11 writes the spins as $\sigma_i$ rather than $s_i$.
+- [Links] Link the Ising Hamiltonian to \[\[11.01.01 Hamiltonian and Spin Variables\]\] and note that chapter 11 writes the spins as $\sigma_i$ rather than $s_i$.
 
 ### N1561
 
@@ -345,7 +345,7 @@ Priority: medium · Graph: yes · Manim: no
 Correct definitions and scaling forms; a plot would make the crossover from power-law to exponential decay much clearer.
 
 - [Graph] Plot $G(r)=e^{-r/\xi}/r^{d-2+\eta}$ ($d=3$, $\eta=0.036$) on log-log axes for $\xi=5,20,\infty$ over $1\le r\le200$, showing the common power-law part and the cutoff at $r\approx\xi$.
-- [Simplify] The last paragraph on units and finite samples repeats [[10.07.01 Definition of Critical Exponents]]; shorten it.
+- [Simplify] The last paragraph on units and finite samples repeats \[\[10.07.01 Definition of Critical Exponents\]\]; shorten it.
 
 ### N1567
 
@@ -525,7 +525,7 @@ Priority: medium · Graph: no · Manim: yes
 Correct but abstract; a concrete coarse-graining example would make the idea much easier to grasp.
 
 - [Manim] Animate majority-rule block-spin coarse graining ($3\times3$ blocks) on Ising configurations at $T<T_c$, $T=T_c$, and $T>T_c$. After repeated steps the first flows to all aligned, the last to random noise, and the critical one keeps looking statistically the same.
-- [Example] Add the exact 1D decimation result $\tanh K'=\tanh^2K$ as a worked example of one RG step. It shows the flow to $K=0$ and hence no transition at $T>0$, linking to [[11.02 Ising Model in One Dimension]].
+- [Example] Add the exact 1D decimation result $\tanh K'=\tanh^2K$ as a worked example of one RG step. It shows the flow to $K=0$ and hence no transition at $T>0$, linking to \[\[11.02 Ising Model in One Dimension\]\].
 
 ### N1585
 
@@ -555,7 +555,7 @@ Priority: low · Graph: no · Manim: no
 
 Accurate and well organized summary.
 
-- [Links] Add links from each bullet to its section note (for example [[10.03.01 Derivation]], [[10.07.02 Scaling Relations]], [[10.08.02 Second-Order Transition]]).
+- [Links] Add links from each bullet to its section note (for example \[\[10.03.01 Derivation\]\], \[\[10.07.02 Scaling Relations\]\], \[\[10.08.02 Second-Order Transition\]\]).
 
 ### N1588
 
@@ -565,8 +565,8 @@ Priority: low · Graph: yes · Manim: no
 Correct calculation; it uses the same outdated triple-point pressure as the main note.
 
 - [Correctness] $P_t=611.73\,\text{Pa}$ is outdated; the current IAPWS value is $611.657\,\text{Pa}$ (the rounded $\approx6.12$ mbar is unchanged).
-- [Graph] Add a schematic water P–T diagram (log pressure axis) with a negative-slope ice-I melting line, the triple point, the critical point, and labels for the high-pressure ice phases, which the generic figure in [[10.04.03 Phase Diagram in the P–T Plane]] cannot show.
-- [Simplify] The final two paragraphs before "Solution" repeat the dimensional check from [[10.03.03 Application - Melting Curve]]; replace them with a link.
+- [Graph] Add a schematic water P–T diagram (log pressure axis) with a negative-slope ice-I melting line, the triple point, the critical point, and labels for the high-pressure ice phases, which the generic figure in \[\[10.04.03 Phase Diagram in the P–T Plane\]\] cannot show.
+- [Simplify] The final two paragraphs before "Solution" repeat the dimensional check from \[\[10.03.03 Application - Melting Curve\]\]; replace them with a link.
 
 ### N1589
 

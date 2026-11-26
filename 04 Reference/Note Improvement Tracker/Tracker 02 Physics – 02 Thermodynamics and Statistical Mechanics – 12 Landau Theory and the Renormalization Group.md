@@ -194,7 +194,7 @@ Priority: low · Graph: no · Manim: yes
 Correct and clear; the block-spin graph's majority assignments all check out.
 
 - [Manim] Animate one or two majority-rule blocking steps on a larger lattice near criticality, including rescaling back to the original spacing, to show that the coarse-grained picture looks statistically similar at $\thermal{T}_{\mathrm c}$ but becomes ordered or random away from it.
-- [Intuition] State the scaling consequence explicitly: $\mechanical{\xi}'=\mechanical{\xi}/b$ in new lattice units, so only $\mechanical{\xi}=0$ or $\infty$ can be fixed points; link to [[12.04.03 Calculation of the Correlation Length]].
+- [Intuition] State the scaling consequence explicitly: $\mechanical{\xi}'=\mechanical{\xi}/b$ in new lattice units, so only $\mechanical{\xi}=0$ or $\infty$ can be fixed points; link to \[\[12.04.03 Calculation of the Correlation Length\]\].
 
 ### N1643
 
@@ -235,7 +235,7 @@ Correct; the exact identity $\tanh K'=\tanh^2K$ gives a clean check, but the not
 
 - [Structure] Lead with the exact result $\tanh K'=(\tanh K)^2\Rightarrow\xi(K')=\xi(K)/2$, then present $K^{(n)}\approx K^{2^n}$ as the small-coupling special case.
 - [Graph] Plot $\xi(K)=1/|\ln\tanh K|$ for $K\in[0.05,3]$ on a log $y$ axis with the low-temperature asymptote $\tfrac12e^{2K}$ and the high-temperature form $-1/\ln K$.
-- [Intuition] Add the low-temperature limit $\xi\approx\tfrac12e^{2K}$, which together with $e^{-2K'}\approx2e^{-2K}$ from [[12.04.02 Fixed-Point Analysis]] shows the halving near the zero-temperature endpoint as well.
+- [Intuition] Add the low-temperature limit $\xi\approx\tfrac12e^{2K}$, which together with $e^{-2K'}\approx2e^{-2K}$ from \[\[12.04.02 Fixed-Point Analysis\]\] shows the halving near the zero-temperature endpoint as well.
 
 ### N1647
 
@@ -281,7 +281,7 @@ Formulas (12.8)-(12.10) and Example 12.2 are correct, but the exponent derivatio
 - [Simplify] Replace the paragraph "To reconstruct the powers..." with the three explicit lines $m=-\partial f_s/\partial h\sim|t|^{(d-y_h)/y_t}$, $\chi\sim|t|^{(d-2y_h)/y_t}$, $c\sim\partial^2 f_s/\partial t^2\sim|t|^{d/y_t-2}$, from which $\beta,\gamma,\alpha$ are read off immediately.
 - [Example] Derive $\delta$ explicitly: set $b^{y_h}h=1$ at $t=0$ to get $f_s\sim h^{d/y_h}$, so $m\sim h^{(d-y_h)/y_h}$ and $\delta=y_h/(d-y_h)$; Example 12.2 also omits $\delta=15$ and $\eta=1/4$, which would complete the check.
 - [Intuition] Justify $\nu=1/y_t$ with the one-line relation $\xi(t)=b\,\xi(b^{y_t}t)$; choosing $b^{y_t}|t|=1$ gives $\xi\propto|t|^{-1/y_t}$, which is clearer than "the correlation length rescales as $b^{-1}$".
-- [Links] Link the forward reference "Section 12.7" in the hyperscaling callout to [[12.07.01 Upper Critical Dimension - Four Dimensions]].
+- [Links] Link the forward reference "Section 12.7" in the hyperscaling callout to \[\[12.07.01 Upper Critical Dimension - Four Dimensions\]\].
 
 ### N1651
 
@@ -312,7 +312,7 @@ Correct statement of the Widom form and its link to the RG, with appropriate cav
 
 - [Intuition] Show the one-line consequence that makes the hypothesis plausible: rescaling $t\to\lambda t$, $h\to\lambda^\Delta h$ multiplies $f_s$ by $\lambda^{2-\alpha}$, i.e. the free energy looks the same at every distance from $T_c$ once axes are rescaled.
 - [Graph] Plot an explicit scaling function, e.g. mean-field $m/|t|^{\beta}$ versus $h/|t|^{\beta\delta}$ with $\beta=1/2$, $\delta=3$ from $h=2atm+4bm^3$, both branches $t>0$ and $t<0$, scaled field from $-5$ to $5$, to make "data collapse" concrete.
-- [Links] Link "Section 12.1.1" to [[12.01.01 Basic Idea - The Order Parameter]] and "RG form (12.8)" to [[12.05.03 Critical Exponents from the RG]].
+- [Links] Link "Section 12.1.1" to \[\[12.01.01 Basic Idea - The Order Parameter\]\] and "RG form (12.8)" to \[\[12.05.03 Critical Exponents from the RG\]\].
 
 ### N1654
 
@@ -356,7 +356,7 @@ The power counting is correct, but the derivation of $[\phi]$ is stated before i
 - [Structure] Move the paragraph "The field dimension follows by requiring the integrated quadratic gradient term to remain invariant..." before the displayed result $[\phi]=(d-2)/2$, and write it as an equation: $\int d^dx\,(\nabla\phi)^2$ dimensionless gives $-d+2+2[\phi]=0$.
 - [Example] Add the analogous count for $u_6\phi^6$: $[u_6]=d-3(d-2)=6-2d$, irrelevant for $d>3$, to show why only the quartic term matters near four dimensions.
 - [Intuition] Make the dangerous irrelevance concrete: below $T_c$ the mean-field minimum is $m_0=\sqrt{-r/(4u)}$ and $f\sim-r^2/(16u)$, which diverge as $u\to0$, so $u$ cannot be set to zero even though it flows to zero; this is why hyperscaling fails for $d>4$.
-- [Links] Link "Equation (12.4)" to [[12.02.01 Inclusion of Spatial Fluctuations]] and "The Ginzburg criterion" to [[12.02.03 Ginzburg Criterion]].
+- [Links] Link "Equation (12.4)" to \[\[12.02.01 Inclusion of Spatial Fluctuations\]\] and "The Ginzburg criterion" to \[\[12.02.03 Ginzburg Criterion\]\].
 
 ### N1658
 
@@ -401,7 +401,7 @@ Priority: low · Graph: no · Manim: no
 Accurate summary with correct exponent and scaling-relation tables.
 
 - [Structure] Use the chapter's notation $d_{\mathrm c}^{\mathrm{sup}}$ (as in 12.07.01 and Table 12.2) instead of $d_{\mathrm c}$ in the Ginzburg section for consistency.
-- [Links] Add [[12.04 RG Transformation - Decimation of the 1D Ising Chain]], [[12.07.02 Expansion in ε = 4 − d - Wilson–Fisher Program]] and [[12.07.03 Lower Critical Dimension]] to the Connections list, since the summary discusses all three.
+- [Links] Add \[\[12.04 RG Transformation - Decimation of the 1D Ising Chain\]\], \[\[12.07.02 Expansion in ε = 4 − d - Wilson–Fisher Program\]\] and \[\[12.07.03 Lower Critical Dimension\]\] to the Connections list, since the summary discusses all three.
 
 ### N1662
 
@@ -411,4 +411,4 @@ Priority: low · Graph: no · Manim: no
 Well-posed exercise list; the checks section gives correct answers ($t=b^2/(4ac)$, $\phi^2=-b/(2c)$, $y_u=-\varepsilon$, $\nu=0.60$, $\gamma=1.20$).
 
 - [Simplify] In Exercise 12.5, state the field normalization that goes with $A_n=(n+8)K_d$ (which multiple of $(\phi^2)^2$ the coupling multiplies), since common conventions give $(n+8)K_d/6$ or $4(n+8)K_d$; otherwise "standard convention" is ambiguous.
-- [Links] Link the solutions note [[13.08 Chapter 12 - Landau Theory and the Renormalization Group]] at the end of the checks section.
+- [Links] Link the solutions note \[\[13.08 Chapter 12 - Landau Theory and the Renormalization Group\]\] at the end of the checks section.

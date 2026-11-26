@@ -16,7 +16,7 @@ The review found 129 possible errors or notation conflicts. 129 of them are veri
 - [[#N2999|N2999]] 0.2 How Do You Produce Elementary Particles -: "At present, the heaviest known particle is the $Z^0$" is outdated: the top quark ($172.6\,\unit{GeV}/c^2$, PDG) and the Higgs boson ($125.2\,\unit{GeV}/c^2$) are heavier; add a modern-status callout. **Fixed:** Added "Modern status" callout after the paragraph: top quark (about 172.6 GeV/c^2, 1995) and Higgs (about 125.2 GeV/c^2, 2012) are heavier
 - [[#N2999|N2999]] 0.2 How Do You Produce Elementary Particles -: "the particle gains enormously in energy if you collide two high-speed particles head-on" is misleading: what grows is the centre-of-mass (available) energy $\sqrt{s}$, not the particle's energy; reword the note's gloss or add a clarifying footnote. **Fixed:** Same callout explains that the center-of-mass energy sqrt(s) grows (2E for colliding beams versus about sqrt(2Emc^2) for a fixed target); added E, m, sqrt(s) to the quantities table
 - [[#N2999|N2999]] 0.2 How Do You Produce Elementary Particles -: Fig. I.2 caption "LEP ... now under construction" is dated (LEP ran 1989 to 2000 up to about $104.5\,\unit{GeV}$ per beam; the LHC now runs in the same tunnel); flag it in a callout. **Fixed:** Same callout states LEP ran 1989 to 2000 up to about 104.5 GeV per beam and the LHC now uses the tunnel (placed after the paragraph so the page-split sentence stays intact)
-- [[#N3000|N3000]] 0.3 How Do You Detect Elementary Particles -: "the bubble chamber photograph in Fig. 1.11 ... five neutral particles" refers to the $\Omega^-$ discovery photograph, which is Fig. 1.10 in this vault (note 1.7); Fig. 1.11 there is the meson-nonet diagram. Change it to Fig. 1.10 and link it as [[1.7 The Eightfold Way (1961-1964)]]. **Fixed:** Changed to Fig. 1.10 with link [[1.7 The Eightfold Way (1961-1964)]] and an editorial footnote that the source itself says Fig. 1.11 (verified in the source PDF text, where Fig. 1.10 is the Omega photograph)
+- [[#N3000|N3000]] 0.3 How Do You Detect Elementary Particles -: "the bubble chamber photograph in Fig. 1.11 ... five neutral particles" refers to the $\Omega^-$ discovery photograph, which is Fig. 1.10 in this vault (note 1.7); Fig. 1.11 there is the meson-nonet diagram. Change it to Fig. 1.10 and link it as \[\[1.7 The Eightfold Way (1961-1964)\]\]. **Fixed:** Changed to Fig. 1.10 with link \[\[1.7 The Eightfold Way (1961-1964)\]\] and an editorial footnote that the source itself says Fig. 1.11 (verified in the source PDF text, where Fig. 1.10 is the Omega photograph)
 - [[#N3003|N3003]] 1.1 The Classical Era (1897-1932): "In 1914 Niels Bohr proposed a model for hydrogen" — the Bohr model was published in 1913; add a footnote (the source text may keep 1914). **Fixed:** Kept source text and added an editorial footnote that Bohr published the model in 1913
 - [[#N3004|N3004]] 1.10 Intermediate Vector Bosons (1983): Add the current PDG values next to (1.30) and the 1983 measurements: $M_W=80.369\pm0.013\,\unit{GeV}/c^2$ and $M_Z=91.1880\pm0.0020\,\unit{GeV}/c^2$; the 1983 values $81\pm5$ and $95\pm3$ are historical only. **Fixed:** Added a "Modern values" callout with M_W=80.369(13) and M_Z=91.1880(20) GeV/c^2 and marked 1983 values as historical
 - [[#N3005|N3005]] 1.11 The Standard Model (1978- - ): Several statements are outdated and need a status callout: top quark discovered 1995 ($172.6\,\unit{GeV}/c^2$), $\nu_\tau$ observed directly 2000 (DONUT), a single Higgs boson found in 2012 ($125.2\,\unit{GeV}/c^2$), gluon evidence now compelling (PETRA three-jet events 1979, LEP), glueballs still not established. **Fixed:** Added a "Modern status" callout at the end of the section (top 1995, DONUT 2000, Higgs 2012, PETRA three-jet 1979 and LEP, glueballs not established)
@@ -130,14 +130,14 @@ The review found 129 possible errors or notation conflicts. 129 of them are veri
 - [[#N3108|N3108]] 11.4 Yang-Mills Theory: Footnote ep-11-4-u2 writes $U(2)=U(1)\otimes SU(2)$. This holds only locally; globally $U(2)\cong[U(1)\times SU(2)]/\mathbb Z_2$, because $-1$ lies in both factors. **Fixed:** Added to footnote ep-11-4-u2 that globally U(2) is [U(1)xSU(2)]/Z_2.
 - [[#N3109|N3109]] 11.5 Chromodynamics: Footnote ep-11-5-u3 writes $U(3)=U(1)\otimes SU(3)$; globally this should be $[U(1)\times SU(3)]/\mathbb Z_3$ (the same caveat as in 11.4). **Fixed:** Added to footnote ep-11-5-u3 that globally U(3) is [U(1)xSU(3)]/Z_3.
 - [[#N3111|N3111]] 11.7 The Mass Term: In (11.105) the term $e^{-(\alpha\phi)^2}$ is dimensionless, while $\mathcal L$ is an energy density, and identifying $\alpha^2=\frac12(mc/\hbar)^2$ makes $\alpha$ an inverse length, so $\alpha\phi$ is not dimensionless. Insert a constant energy density, $\mathcal L=\ldots+\varepsilon_0e^{-(\alpha\phi)^2}$, which gives $(mc/\hbar)^2=2\varepsilon_0\alpha^2$. The table's "—" unit for $\alpha$ hides the problem. **Fixed:** Confirmed; kept the source equations and added a note callout after (11.107) giving the consistent form with a constant energy density epsilon_0 and (mc/hbar)^2=2 epsilon_0 alpha^2; added epsilon_0 to the table and clarified the alpha row.
-- [[#N3112|N3112]] 11.8 Spontaneous Symmetry-Breaking: Eq. (11.120): with $\eta\equiv\phi_1-\mu/\lambda$ from (11.119), the cubic term is $-\mu\lambda(\eta^3+\eta\xi^2)$, not $+\mu\lambda(\ldots)$. Compare (11.131) in [[11.9 The Higgs Mechanism]], which correctly has $-\lambda\mu(\eta^3+\eta\xi^2)$ for the same definition. The $+$ sign belongs to the opposite shift $\eta=\phi+\mu/\lambda$ used in (11.113). **Fixed:** Expanded U with phi_1=eta+mu/lambda: L contains -mu lambda(eta^3+eta xi^2); changed the sign.
+- [[#N3112|N3112]] 11.8 Spontaneous Symmetry-Breaking: Eq. (11.120): with $\eta\equiv\phi_1-\mu/\lambda$ from (11.119), the cubic term is $-\mu\lambda(\eta^3+\eta\xi^2)$, not $+\mu\lambda(\ldots)$. Compare (11.131) in \[\[11.9 The Higgs Mechanism\]\], which correctly has $-\lambda\mu(\eta^3+\eta\xi^2)$ for the same definition. The $+$ sign belongs to the opposite shift $\eta=\phi+\mu/\lambda$ used in (11.113). **Fixed:** Expanded U with phi_1=eta+mu/lambda: L contains -mu lambda(eta^3+eta xi^2); changed the sign.
 - [[#N3113|N3113]] 11.9 The Higgs Mechanism: Eqs. (11.131) and (11.133): the mixing term $-2i(\mu/\lambda)(q/\hbar c)(\partial_\mu\xi)A^\mu$ cannot appear in a real Lagrangian. Expanding $\frac12|(\partial_\mu+iqA_\mu/\hbar c)(\eta+\mu/\lambda+i\xi)|^2$ gives $+(\mu/\lambda)(q/\hbar c)(\partial_\mu\xi)A^\mu$. **Fixed:** ^2 (other terms in (11.131) agree); changed the term to +(mu/lambda)(q/hbar c)(d_mu xi)A^mu in both (11.131) and (11.133).
 - [[#N3113|N3113]] 11.9 The Higgs Mechanism: Outdated statements: "the Higgs particle has never been seen" (discovered at the LHC in 2012, $m_H\approx125$ GeV); the SSC footnote (the project was cancelled in 1993); and the Yukawa footnote "only when the Higgs is found" (its couplings to $t$, $b$, $\tau$, and $\mu$ are now measured). Add a modern note. **Fixed:** Added a modern note callout (2012 LHC discovery, m_H about 125 GeV, SSC cancelled 1993, measured couplings to t, b, tau, mu) after the paragraph; added m_H to the table.
 - [[#N3115|N3115]] 11.P Problems: The Problem 11.12 answers use $g$ for the gauge coupling, while the text uses $q$ throughout (11.61, 11.65), and $g$ in the same note is the gravitational acceleration (Problem 11.1). Replace $g$ with $q$ in both answers and in the table row "g, α". **Fixed:** Replaced g with q in both answers (consistent with (11.61) and (11.66)) and changed the table row to q, alpha.
 - [[#N3115|N3115]] 11.P Problems: The Problem 11.12(a) answer opens a bracket "[" that is never closed. Close it after $-\mathbf A^\nu\times\partial^\mu\boldsymbol\lambda$. **Fixed:** Added the closing ] after -A^nu x d^mu lambda.
 - [[#N3115|N3115]] 11.P Problems: Other symbol clashes in the same note: $\phi$ is the cone azimuth in Problem 11.1 and the scalar field elsewhere, and $L$ (angular momentum, 11.1c) collides with the Lagrangian $L$. Consider $\varphi$ and $\ell_z$ for Problem 11.1. **Rejected:** The note writes the Lagrangian density as script L, never plain L; phi is used in separate problems with distinct macros and separate table rows.
 - [[#N3119|N3119]] B.2 Cross Sections: Symbol clash: $\mathbf p_i$ means "momentum of particle $i$" in (B.5) but "incoming momentum magnitude" in (B.7), next to $\mathbf p_f$. Rename to $\mathbf p_{\mathrm{in}},\mathbf p_{\mathrm{out}}$ in (B.7), and add $\mathbf p_3$ (used in B.10–B.13) to the table. **Partly:** The clash is real: renamed to p_in and p_out in (B.7) and its text and added a table row. p_3 is already covered by the generic p_i row, which now names p_1 and p_3 as examples.
-- [[#N3122|N3122]] C.2 Dirac Matrices: (C.9) writes $\gamma^0=\begin{pmatrix}1&0\\0&1\end{pmatrix}$, which is the identity. The Dirac representation has $\gamma^0=\begin{pmatrix}1&0\\0&-1\end{pmatrix}$, as in [[Reference Formulas]]. With the identity, (C.15) $\{\gamma^0,\gamma^i\}=0$ and the claim "traceless" both fail. **Fixed:** Changed (C.9) to diag(1,-1), consistent with Reference Formulas.
+- [[#N3122|N3122]] C.2 Dirac Matrices: (C.9) writes $\gamma^0=\begin{pmatrix}1&0\\0&1\end{pmatrix}$, which is the identity. The Dirac representation has $\gamma^0=\begin{pmatrix}1&0\\0&-1\end{pmatrix}$, as in \[\[Reference Formulas\]\]. With the identity, (C.15) $\{\gamma^0,\gamma^i\}=0$ and the claim "traceless" both fail. **Fixed:** Changed (C.9) to diag(1,-1), consistent with Reference Formulas.
 - [[#N3128|N3128]] Particle Data: Outdated values: $t$ ">23,000" (now about $172{,}600\,\mathrm{MeV}$), $W$ $81{,}800$ (now $80{,}370$), $Z$ $92{,}600$ (now $91{,}188$), $W/Z$ lifetimes "unknown" (now about $3.2\times10^{-25}$ and $2.6\times10^{-25}\,\mathrm s$ from the widths), $\tau$ mass 1784 and lifetime $3.3\times10^{-13}$ (now 1776.9 and $2.90\times10^{-13}$), neutron lifetime 900 s (now about 878 s), and neutrino masses 0 (now known to be nonzero). Keep the historical table and add a callout that gives current PDG values. **Fixed:** Kept the historical tables and added a note callout with current PDG values (t 172600, W 80370 and 3.2e-25 s, Z 91188 and 2.6e-25 s, tau 1776.9 and 2.90e-13 s, neutron 878 s, nonzero neutrino masses).
 - [[#N3129|N3129]] Physical Constants and Conversion Factors: $\alpha=e^2/\hbar c$, $r_e=e^2/m_ec^2$, $a=\hbar^2/e^2m_e$ and $E_n=-m_ee^4/2\hbar^2n^2$ are Gaussian formulas, but the table gives $e$ in C and the lengths in m. Either state "Gaussian units, $e$ in esu" or replace $e^2$ by $e^2/4\pi\varepsilon_0$. **Fixed:** Added a note callout that the alpha, r_e, a, E_n formulas use Gaussian units with e in esu and that SI needs e^2/4 pi epsilon_0; added epsilon_0 to the table.
 
@@ -338,7 +338,7 @@ Priority: low · Graph: no · Manim: no
 
 Short, clear description of track detectors; one figure cross-reference points to the wrong figure.
 
-- [Correctness] "the bubble chamber photograph in Fig. 1.11 ... five neutral particles" refers to the $\Omega^-$ discovery photograph, which is Fig. 1.10 in this vault (note 1.7); Fig. 1.11 there is the meson-nonet diagram. Change it to Fig. 1.10 and link it as [[1.7 The Eightfold Way (1961-1964)]].
+- [Correctness] "the bubble chamber photograph in Fig. 1.11 ... five neutral particles" refers to the $\Omega^-$ discovery photograph, which is Fig. 1.10 in this vault (note 1.7); Fig. 1.11 there is the meson-nonet diagram. Change it to Fig. 1.10 and link it as \[\[1.7 The Eightfold Way (1961-1964)\]\].
 - [Example] After $R=pc/qB$ (Gaussian), add the practical form $p\,[\unit{GeV}/c]=0.3\,B\,[\unit{T}]\,R\,[\unit{m}]$ with a worked case (a $1\,\unit{GeV}/c$ track in $1.5\,\unit{T}$ has $R\approx2.2\,\unit{m}$).
 - [Structure] Remove the UTF-8 BOM and convert CRLF to LF.
 
@@ -501,7 +501,7 @@ Faithful, readable transcription of the 1974–1983 history, but the hand-built 
 - [Correctness] Fig. 1.13(d) spin-½ graph: the charm $+2$ vertex "scs" should be $ccs$, the charm $+1$ vertex at (−1.6, 1.1) labelled "ccd" should be $cdd$ ($\Sigma_c^0$), and "uss (Ξ*⁺)" should be $uss$ ($\Xi^0$); Fig. 1.13(e): the charm $+2$ vertex at (−0.75, 1.7) labelled "cdd" should be $ccd$.
 - [Correctness] Fig. 1.13(a) is a stray circle with three labels ($d\bar d$, $s\bar s$, $c\bar c$) instead of the pseudoscalar 16-plet; rebuild it as the pseudoscalar analogue of (b) ($D$, $D_s$, $K$, $\pi$, $\eta$, $\eta_c$) or remove it, and add the missing outer labels ($K^{*\pm}$, $n$, $p$, $\Delta^0$, $\Sigma^{*-}$, $\Sigma^{*0}$) so the reader can actually use the diagrams for Problems 1.14–1.15.
 - [Structure] Add an editorial callout after the last paragraph: the top quark was discovered at Fermilab in 1995 (mass about $173\,\mathrm{GeV}/c^2$), $\Lambda_b$ is firmly established, and the $F^+$ is now listed as $D_s^+$; the "summer 1984 CERN" top signal was spurious.
-- [Intuition] The $\psi$ lifetime comparison ($10^{-20}$ vs $10^{-23}$ s) would benefit from one sentence pointing forward to the OZI-rule explanation in [[2.5 Decays and Conservation Laws]], so the reader knows the puzzle is resolved later.
+- [Intuition] The $\psi$ lifetime comparison ($10^{-20}$ vs $10^{-23}$ s) would benefit from one sentence pointing forward to the OZI-rule explanation in \[\[2.5 Decays and Conservation Laws\]\], so the reader knows the puzzle is resolved later.
 - [Structure] The file starts with a UTF-8 BOM before the frontmatter `---` (true for every note in this batch); save as UTF-8 without BOM.
 
 ### N3014
@@ -531,7 +531,7 @@ Priority: low · Graph: no · Manim: no
 
 Short, clear overview of the four forces with a sensible caveat footnote on "strength".
 
-- [Intuition] The strength table ($10$, $10^{-2}$, $10^{-13}$, $10^{-42}$) gives no reference scale; add one line saying these are rough dimensionless couplings for two protons at about $10^{-15}\,\mathrm{m}$, and link Problem 2.1 in [[2.P Problems]] (gravity vs Coulomb for two electrons, ratio $\approx 2.4\times10^{-43}$) as a concrete check.
+- [Intuition] The strength table ($10$, $10^{-2}$, $10^{-13}$, $10^{-42}$) gives no reference scale; add one line saying these are rough dimensionless couplings for two protons at about $10^{-15}\,\mathrm{m}$, and link Problem 2.1 in \[\[2.P Problems\]\] (gravity vs Coulomb for two electrons, ratio $\approx 2.4\times10^{-43}$) as a concrete check.
 - [Structure] Add a brief note that the electroweak theory and QCD in this table are now jointly called the Standard Model and that the Higgs boson (spin 0, discovered 2012) is an additional elementary boson not in the mediator column.
 
 ### N3017
@@ -649,7 +649,7 @@ Clear, correct summary of the Lorentz transformations and their four classic con
 
 - [Graph] Add a Minkowski diagram ($ct$ vertical, $x$ horizontal, range $\pm3$) showing the $S'$ axes $ct'$ (slope $c/v$) and $x'$ (slope $v/c$) for $\beta=0.6$, with two simultaneous events at $t=0$, $x_A=0$, $x_B=2$ and the tilted line of constant $t'$ through $A$, illustrating (3.4).
 - [Manim] Animate the Minkowski diagram as $\beta$ goes from 0 to 0.9: the $x'$ and $ct'$ axes scissor toward the light cone while a fixed pair of events changes time order in $S'$; this conveys simultaneity and the invariant light cone better than a static plot.
-- [Example] In "Time dilation", add a one-line number (for example $v=0.998c$ gives $\gamma=15.8$, so a $2.2\,\mu\mathrm{s}$ muon lives $35\,\mu\mathrm{s}$ in the lab) linking to Problem 3.4 in [[3.P Problems]].
+- [Example] In "Time dilation", add a one-line number (for example $v=0.998c$ gives $\gamma=15.8$, so a $2.2\,\mu\mathrm{s}$ muon lives $35\,\mu\mathrm{s}$ in the lab) linking to Problem 3.4 in \[\[3.P Problems\]\].
 - [Simplify] The text refers to "equation (i)" and "eq. (iv′)" while the displays are tagged (3.1) and (3.3); say "(3.1 i)" and "(3.3 iv)" so the reference is unambiguous.
 
 ### N3028
@@ -681,8 +681,8 @@ Priority: low · Graph: no · Manim: no
 
 Clear classical-versus-relativistic comparison of collision types; correct.
 
-- [Example] Add a numerical illustration of the "hot potato" remark: heating $1\,\mathrm{kg}$ of water by $80\,\mathrm{K}$ adds $3.3\times10^{5}\,\mathrm{J}$, i.e. $\Delta m=Q/c^2\approx3.7\times10^{-12}\,\mathrm{kg}$ (a worked estimate for Problem 3.12 in [[3.P Problems]]).
-- [Simplify] In the callout, say "the sum of the rest masses is not conserved" rather than "mass is not conserved", since the invariant mass of the whole system is conserved; this avoids confusion with the invariant-mass method of [[3.5 Examples and Applications]].
+- [Example] Add a numerical illustration of the "hot potato" remark: heating $1\,\mathrm{kg}$ of water by $80\,\mathrm{K}$ adds $3.3\times10^{5}\,\mathrm{J}$, i.e. $\Delta m=Q/c^2\approx3.7\times10^{-12}\,\mathrm{kg}$ (a worked estimate for Problem 3.12 in \[\[3.P Problems\]\]).
+- [Simplify] In the callout, say "the sum of the rest masses is not conserved" rather than "mass is not conserved", since the invariant mass of the whole system is conserved; this avoids confusion with the invariant-mass method of \[\[3.5 Examples and Applications\]\].
 
 ### N3031
 
@@ -817,7 +817,7 @@ A faithful, readable transcription of Griffiths' 1987 discussion, but its experi
 - [Correctness] Eq. (4.76) and "As of 1985, no experiment has shown direct evidence of T violation" are outdated: the current neutron EDM limit is $\lvert d_n\rvert<1.8\times10^{-26}\,e\,\mathrm{cm}$ (PSI, 2020), and CPLEAR (1998, $K^0\leftrightarrow\bar K^0$) and BaBar (2012, entangled $B$ mesons) observed T violation directly; add a dated update callout.
 - [Simplify] Qualify "all particles are eigenstates of $P$": this holds for intrinsic parity of a particle at rest; also say plainly that $T$ is antiunitary, which is why no $T$ eigenvalue can be multiplied like $P$ or $C$ numbers.
 - [Intuition] Add a small table of how $\mathbf x,\mathbf p,\mathbf s,\mathbf E,\mathbf B,\mathbf d$ transform under $P$ and $T$ so that the EDM footnote argument ($\mathbf d\parallel\mathbf s$ violates both) becomes a one-line check.
-- [Links] Link the Fitch–Cronin sentence to [[4.8 CP Violation]] and the detailed-balance remark to a later cross-section note.
+- [Links] Link the Fitch–Cronin sentence to \[\[4.8 CP Violation\]\] and the detailed-balance remark to a later cross-section note.
 - [Structure] Split the long paragraphs under headings: detailed balance tests, EDM tests, the TCP theorem and its tests (mass/lifetime equality).
 
 ### N3043
@@ -923,7 +923,7 @@ Clear qualitative account of radiative corrections, but no numbers show the size
 - [Example] Evaluate the $2S_{1/2}-2P_{1/2}$ gap from (5.53)–(5.54): $\frac{\alpha^5mc^2}{32}\left[k(2,0)+\frac{1}{1.5\pi}-k(2,1)\right]\approx4.4\times10^{-6}$ eV, i.e. about 1.05 GHz versus the measured 1057.8 MHz.
 - [Graph] Native level diagram for $n=2$: Bohr level, fine-structure split into $j=1/2,3/2$, and the Lamb split of $2S_{1/2}$ above $2P_{1/2}$, with the energy gaps labeled.
 - [Intuition] Add Welton's picture: vacuum fluctuations smear the electron position, which matters most where $\psi(0)\neq0$, so $S$ states are raised most.
-- [Links] Link "Figure 5.2" and "fine structure formula (5.52)" to [[5.3.2 Spin-Orbit Coupling]].
+- [Links] Link "Figure 5.2" and "fine structure formula (5.52)" to \[\[5.3.2 Spin-Orbit Coupling\]\].
 
 ### N3052
 
@@ -1102,7 +1102,7 @@ Priority: low · Graph: no · Manim: no
 
 Problem list with correct equation references and supplied answers (6.8-6.10 rechecked, including the Compton limit of 6.10b); only small table and encoding issues.
 
-- [Links] Turn the in-text equation references (eq. 6.23, 6.31, 6.34, 6.36, 6.44) into wiki links to [[6.2 The Golden Rule]] (and [[6.1 Lifetimes and Cross Sections]] for eqs. 6.2 and 6.3) so readers can jump to the cited formula.
+- [Links] Turn the in-text equation references (eq. 6.23, 6.31, 6.34, 6.36, 6.44) into wiki links to \[\[6.2 The Golden Rule\]\] (and \[\[6.1 Lifetimes and Cross Sections\]\] for eqs. 6.2 and 6.3) so readers can jump to the cited formula.
 - [Structure] Drop the table row with symbol "—" for "Given elapsed times" (it names no symbol), and remove the UTF-8 BOM at the start of the file.
 
 ### N3067
@@ -1166,9 +1166,9 @@ A faithful, correct reference statement of the QED Feynman rules, but it is a de
 
 - [Structure] The file starts with a UTF-8 BOM before the frontmatter `---`; save it as UTF-8 without BOM (same for every note in this folder).
 - [Intuition] After rule 2, add one sentence explaining the pattern of the external-line table: the fermion line is read against the arrow, so the line ends give $\bar u$ or $\bar v$ (adjoint) and the line starts give $u$ or $v$, which is why an incoming positron gets $\bar v$.
-- [Example] After rule 8, add a three-line "recipe check" that applies rules 1–7 to the single electron–muon diagram and shows how $i\cdot i\cdot(-i)$ produces the overall minus in (7.104), linking forward to [[7.6 Examples#Example 7.1 Electron–Muon Scattering]].
+- [Example] After rule 8, add a three-line "recipe check" that applies rules 1–7 to the single electron–muon diagram and shows how $i\cdot i\cdot(-i)$ produces the overall minus in (7.104), linking forward to \[\[7.6 Examples#Example 7.1 Electron–Muon Scattering\]\].
 - [Simplify] Rule 5 and footnote `ep-7-5-arrows`: state the momentum convention once as a short rule ("momentum flows along the arrow except on external positron lines, where it flows against it") instead of the nested parenthetical.
-- [Links] Section references in the text ("Section 7.2", equations (7.46), (7.50), (7.92)) are plain text; link them to [[7.2 Solutions to the Dirac Equation]] and [[7.4 The Photon]], and link "the final section of this chapter" to [[7.9 Renormalization]].
+- [Links] Section references in the text ("Section 7.2", equations (7.46), (7.50), (7.92)) are plain text; link them to \[\[7.2 Solutions to the Dirac Equation\]\] and \[\[7.4 The Photon\]\], and link "the final section of this chapter" to \[\[7.9 Renormalization\]\].
 
 ### N3072
 
@@ -1181,7 +1181,7 @@ The four amplitudes and their relative signs are correct, but the step from the 
 - [Intuition] Example 7.2: add one sentence that the relative minus sign is the Pauli principle (the amplitude must be antisymmetric under $p_3,s_3\leftrightarrow p_4,s_4$), and note the forward and backward peaks from the $1/(p_1-p_3)^2$ and $1/(p_1-p_4)^2$ poles.
 - [Intuition] Example 7.3: label the two Bhabha diagrams as $t$-channel (scattering) and $s$-channel (annihilation) and explain why the annihilation term is suppressed by $(v/c)^2$ at low energy, connecting to footnote `ep-7-6-classical-limit`.
 - [Simplify] Example 7.4: state explicitly that in Fig. 7.6 the electron first emits photon 3 and then absorbs photon 2 (so $q=p_1-p_3$), while in Fig. 7.7 it first absorbs photon 2 ($q=p_1+p_2$); this makes the different orders of $\not\epsilon(2)$ and $\not\epsilon(3)^*$ in (7.110) and (7.111) obvious.
-- [Links] Link "rule 8" and the Feynman rules to [[7.5 The Feynman Rules for Quantum Electrodynamics]], and "cross-section formula (6.34)" in the footnote to the Chapter 6 note where (6.34) is defined.
+- [Links] Link "rule 8" and the Feynman rules to \[\[7.5 The Feynman Rules for Quantum Electrodynamics\]\], and "cross-section formula (6.34)" in the footnote to the Chapter 6 note where (6.34) is defined.
 
 ### N3073
 
@@ -1190,7 +1190,7 @@ Priority: medium · Graph: no · Manim: no
 
 Casimir's trick, the trace theorems, and the electron–muon result (7.126) are correct, but the final contraction step is skipped and the book footnote number is a dead superscript.
 
-- [Links] `<sup>5</sup>` after "Casimir was apparently the first one to use it" is an unlinked book footnote number; replace it with an Obsidian footnote or a link to [[7.B References and Notes]] (reference 5).
+- [Links] `<sup>5</sup>` after "Casimir was apparently the first one to use it" is an unlinked book footnote number; replace it with an Obsidian footnote or a link to \[\[7.B References and Notes\]\] (reference 5).
 - [Example] Between (7.125) and (7.126), show the contraction explicitly: write the product of the two brackets term by term ($2(p_1\cdot p_2)(p_3\cdot p_4)+2(p_1\cdot p_4)(p_2\cdot p_3)$, the $g^{\mu\nu}$ cross terms, and $g^{\mu\nu}g_{\mu\nu}=4$) so the reader can check the coefficients $8$, $-1$, $-1$, $+2$ in (7.126).
 - [Intuition] Before (7.119), add one sentence of motivation: summing over unobserved spins turns a product of spinors into $\sum_s u\bar u=\not p+mc$, a $4\times4$ matrix, so only traces of $\gamma$ matrices remain and no explicit spinor is ever needed.
 - [Simplify] Contraction theorems 6–9: add a one-line proof of rule 7 from rule 5 ($\gamma_\mu\gamma^\nu\gamma^\mu=(2g^\nu_\mu-\gamma^\nu\gamma_\mu)\gamma^\mu=2\gamma^\nu-4\gamma^\nu$) as a template for the others.
@@ -1205,7 +1205,7 @@ The Mott/Rutherford derivation and the long singlet-annihilation calculation che
 
 - [Graph] Example 7.7: plot the ratio of (7.128) to the Rutherford form $(\alpha\hbar mc/(2p^2\sin^2(\theta/2)))^2$, i.e. $1+(p/mc)^2\cos^2(\theta/2)$ in momentum form, versus $\theta\in[0.1,\pi]$ for $|\mathbf p|/(mc)=0.1,1,3$, together with the absolute $d\sigma/d\Omega$ on a log axis, to show the $\sin^{-4}(\theta/2)$ forward peak and the spin (magnetic) correction.
 - [Structure] Example 7.8 spans (7.130)–(7.160); add a short roadmap at its start (1. simplify with $p_1\cdot\epsilon=p_3\cdot\epsilon=0$ and the Dirac equation, 2. reduce to the $\boldsymbol\Sigma$ form (7.146), 3. insert singlet fermion spins, 4. insert photon helicities) so the reader knows where each block leads.
-- [Links] `<sup>6</sup>` after "the total cross section is $4\pi$ times this" is a dead book footnote number; link it to [[7.B References and Notes]] (reference 6). Also link "equation (6.42)", "Problem (6.8)", and "eq. (5.84)" to the Chapter 6 and Chapter 5 notes.
+- [Links] `<sup>6</sup>` after "the total cross section is $4\pi$ times this" is a dead book footnote number; link it to \[\[7.B References and Notes\]\] (reference 6). Also link "equation (6.42)", "Problem (6.8)", and "eq. (5.84)" to the Chapter 6 and Chapter 5 notes.
 - [Intuition] After (7.169), add the closing number: with $|\psi(0)|^2=1/(\pi(2a_0)^3)$ and $a_0=\hbar/(mc\alpha)$, $\Gamma=\alpha^5mc^2/(2\hbar)\approx8.0\times10^9\,\mathrm{s^{-1}}$, i.e. $\tau\approx1.25\times10^{-10}\,\mathrm{s}$, so the reader sees the payoff of the whole calculation.
 - [Simplify] Around (7.161): say explicitly why no $S=\tfrac12$ appears for the two identical photons when integrating over $4\pi$, since the reader just learned in 7.6 that identical final particles carry $S$; this is the subtle point the book defers to its reference 6.
 
@@ -1221,7 +1221,7 @@ The renormalization argument and the numbers ((7.181), (7.186), (7.188), the $6\
 - [Graph] Add a plot of the running coupling (7.188), $1/\alpha(q^2)$ versus $\log_{10}(-q^2/m^2c^2)$ from $10^{-2}$ to $10^{10}$, marking the head-on $v=c/10$ point of Problem 7.41 (correction $\approx6\times10^{-6}$), and note that the measured $1/\alpha\approx128$ at the $Z$ mass also includes muon, tau, and quark loops.
 - [Simplify] (7.178)–(7.180): the letter $x$ is first a mass-squared integration variable in $\int_{m^2}^{\infty}dx/x$ and then the dimensionless argument of $f(x)$; rename the dummy variable (e.g. $\int_{m^2}^{\infty}d\kappa^2/\kappa^2$) and say that the $c^2$ factors are suppressed in those limits.
 - [Intuition] Point 2: add the physical picture: virtual pairs act as a polarizable dielectric, so at large distance (small $|q^2|$) the charge is screened and $\alpha(0)\approx1/137.036$, while probing closer (large $|q^2|$) sees more of the bare charge, hence $\alpha$ grows.
-- [Links] Dead superscripts `<sup>7</sup>` and `<sup>8</sup>` should link to [[7.B References and Notes]]; "Chapter 2" and "Chapter 6" should link to the corresponding notes; "Section 7.6" should link to [[7.6 Examples]].
+- [Links] Dead superscripts `<sup>7</sup>` and `<sup>8</sup>` should link to \[\[7.B References and Notes\]\]; "Chapter 2" and "Chapter 6" should link to the corresponding notes; "Section 7.6" should link to \[\[7.6 Examples\]\].
 
 ### N3076
 
@@ -1230,7 +1230,7 @@ Priority: low · Graph: no · Manim: no
 
 A short, accurate reference list; no change needed beyond making it reachable from the dead footnote superscripts in 7.7–7.9.
 
-- [Links] Add block IDs (e.g. `^ref-5` to `^ref-8`) to references 5–8 so the `<sup>5</sup>`–`<sup>8</sup>` markers in [[7.7 Casimir's Trick and the Trace Theorems]], [[7.8 Cross Sections and Lifetimes]], and [[7.9 Renormalization]] can link directly to them.
+- [Links] Add block IDs (e.g. `^ref-5` to `^ref-8`) to references 5–8 so the `<sup>5</sup>`–`<sup>8</sup>` markers in \[\[7.7 Casimir's Trick and the Trace Theorems\]\], \[\[7.8 Cross Sections and Lifetimes\]\], and \[\[7.9 Renormalization\]\] can link directly to them.
 
 ### N3077
 
@@ -1240,7 +1240,7 @@ Priority: low · Graph: no · Manim: no
 A clean problem list whose supplied answers check out (7.7 normalization, 7.33 identities, 7.34–7.36 cross sections), apart from one wrong denominator in a hint.
 
 - [Correctness] Problem 7.34 hint: the interference term must have denominator $4(p_1-p_3)^2(p_1-p_4)^2$, because $\mathcal M_2$ in (7.105) carries $1/(p_1-p_4)^2$; the written $(p_2-p_4)^2$ equals $(p_1-p_3)^2$ and would repeat the first propagator instead.
-- [Links] "Compare the answers to Problems 7.35 and 7.36. (See footnote page 234)" points to a printed page; link it to the classical-limit footnote in [[7.6 Examples]] instead, and link "Halzen and Martin, ref. 7" and "ref. 3" to [[7.B References and Notes]].
+- [Links] "Compare the answers to Problems 7.35 and 7.36. (See footnote page 234)" points to a printed page; link it to the classical-limit footnote in \[\[7.6 Examples\]\] instead, and link "Halzen and Martin, ref. 7" and "ref. 3" to \[\[7.B References and Notes\]\].
 - [Structure] Problem 7.44(a) has a stray closing parenthesis in "$e^++e^-\to\gamma+\gamma$)"; remove it.
 
 ### N3078
@@ -1250,7 +1250,7 @@ Priority: low · Graph: no · Manim: no
 
 Short, clear chapter introduction that names the two processes (e+e- to hadrons, deep inelastic scattering) with their basic diagrams.
 
-- [Links] Turn the plain-text references into wiki links: "Chapter 7" to [[7.5 The Feynman Rules for Quantum Electrodynamics]], and point the two diagrams to [[8.2 Hadron Production in e⁺e⁻ Scattering]] and [[8.4 Inelastic Electron-Proton Scattering]] / [[8.5 The Parton Model and Bjorken Scaling]] so the intro works as a chapter hub.
+- [Links] Turn the plain-text references into wiki links: "Chapter 7" to \[\[7.5 The Feynman Rules for Quantum Electrodynamics\]\], and point the two diagrams to \[\[8.2 Hadron Production in e⁺e⁻ Scattering\]\] and \[\[8.4 Inelastic Electron-Proton Scattering\]\] / \[\[8.5 The Parton Model and Bjorken Scaling\]\] so the intro works as a chapter hub.
 - [Intuition] Add one sentence that the two diagrams are crossing-related versions of the same QED vertex pair (annihilation in the s-channel vs. photon exchange in the t-channel), which is why the same QED machinery covers both.
 
 ### N3079
@@ -1337,7 +1337,7 @@ Priority: low · Graph: no · Manim: no
 
 Problem list transcribed cleanly; the supplied answers (8.6, 8.13, 8.14, 8.15) check out.
 
-- [Links] Link equation references to their notes, for example "equation (8.16)" to [[8.3 Elastic Electron-Proton Scattering]] and "Mott formula (7.128)" to [[7.8 Cross Sections and Lifetimes#Example 7.7 Mott and Rutherford Scattering]]; note that Problem 8.4 asks to prove (8.16), which is currently misprinted as $q_\mu K^{\mu\nu}=1$ in 8.3.
+- [Links] Link equation references to their notes, for example "equation (8.16)" to \[\[8.3 Elastic Electron-Proton Scattering\]\] and "Mott formula (7.128)" to \[\[7.8 Cross Sections and Lifetimes#Example 7.7 Mott and Rutherford Scattering\]\]; note that Problem 8.4 asks to prove (8.16), which is currently misprinted as $q_\mu K^{\mu\nu}=1$ in 8.3.
 
 ### N3086
 
@@ -1350,7 +1350,7 @@ Faithful and correct transcription of the QCD Feynman rules (λ matrices, struct
 - [Structure] The four-gluon vertex sentence "(summation over $\eta$ implied." is missing its closing parenthesis; the file also starts with a UTF-8 BOM, which the vault rules forbid.
 - [Intuition] Before (9.17), add one sentence on why the vertex carries $\lambda^\alpha/2$: the color part $c_{out}^\dagger\lambda^\alpha c_{in}$ projects the quark color change onto gluon state $|\alpha\rangle$; show it for the pictured $r\to b$ vertex (only $\lambda^1,\lambda^2$ contribute, i.e. gluons $|1\rangle,|2\rangle$ combine to $r\bar b$).
 - [Simplify] Add a short summary table comparing QED and QCD rules (coupling $g_e\to g_s/2$, extra color vectors $c$, $a$, matrix $\lambda^\alpha$, new three- and four-gluon vertices) so the reader sees that only the color bookkeeping and the self-interaction are new.
-- [Links] Replace the bare references "Section 5.8", "Sect. 7.4", "equation (7.81)" and the superscript reference "1" with wiki links to [[5.8 Light Quark Mesons]], [[7.4 The Photon]] and [[9.B References and Notes]].
+- [Links] Replace the bare references "Section 5.8", "Sect. 7.4", "equation (7.81)" and the superscript reference "1" with wiki links to \[\[5.8 Light Quark Mesons\]\], \[\[7.4 The Photon\]\] and \[\[9.B References and Notes\]\].
 
 ### N3087
 
@@ -1364,7 +1364,7 @@ Clear worked color-factor examples with correct final values ($-1/6$, $4/3$, $1/
 - [Graph] Plot $V(r)/(\alpha_s\hbar c)$ versus $r$ (arbitrary units, $r\in[0.1,3]$) for the four channels: singlet $-\tfrac43/r$, triplet $-\tfrac23/r$, octet $+\tfrac16/r$, sextet $+\tfrac13/r$, to make the "maximally attractive channel" ordering visible at a glance.
 - [Example] Add a short cross-check using the identity of Problem 9.9, $\lambda^\alpha_{ij}\lambda^\alpha_{kl}=2\delta_{il}\delta_{jk}-\tfrac23\delta_{ij}\delta_{kl}$, or the Casimir shortcut $f=\pm\tfrac12[C(\text{pair})-C_1-C_2]$ (with $C_3=\tfrac43$, $C_{\bar 3}=\tfrac43$, $C_8=3$, $C_6=\tfrac{10}{3}$, $C_1=0$) that reproduces all four factors in one line.
 - [Intuition] The diquark footnote ("speculation about the possible existence of diquarks within nuclei") is dated; add a modern note that diquark correlations are used in hadron spectroscopy and that tetraquark and pentaquark states have been observed (e.g. LHCb pentaquarks 2015, $T_{cc}^+$ 2021).
-- [Links] Replace "footnote (*) on p. 284", "footnote, page 234", "(7.104)", "(7.106)" and "Section 5.9" with wiki links to [[9.1 Feynman Rules for Chromodynamics]], [[7.6 Examples]] and [[5.9 Baryons]]; the file also has a UTF-8 BOM to remove.
+- [Links] Replace "footnote (*) on p. 284", "footnote, page 234", "(7.104)", "(7.106)" and "Section 5.9" with wiki links to \[\[9.1 Feynman Rules for Chromodynamics\]\], \[\[7.6 Examples\]\] and \[\[5.9 Baryons\]\]; the file also has a UTF-8 BOM to remove.
 
 ### N3088
 
@@ -1378,7 +1378,7 @@ The derivation is correct (three-gluon vertex momenta, kinematics (9.46)-(9.48),
 - [Simplify] The sentence "Just as the cross section for $e^++e^-\to\gamma+\gamma$ indicated, the positronium decay rate $\Gamma=\sigma v|\psi(0)|^2$" is incomplete; rewrite as "Just as the $e^+e^-\to\gamma\gamma$ cross section gave the positronium decay rate via $\Gamma=\sigma v|\psi(0)|^2$, ...".
 - [Intuition] Explain in one sentence why the three-gluon diagram drops out at rest in the spin singlet: it is proportional to $\epsilon_3\cdot\epsilon_4$, while the spin-0 amplitude needs $(\boldsymbol\epsilon_3\times\boldsymbol\epsilon_4)_z$; note that it is still needed for gauge invariance (Problem 9.11).
 - [Simplify] Write the meson as $J/\psi$ in "note that $\psi$ and $\Upsilon$ themselves carry spin 1" to avoid confusion with the wave function $\signal{\psi}(0)$ used two lines earlier; remove the UTF-8 BOM.
-- [Links] Link "Example 7.8", "(7.137)-(7.168)" and "Problems 9.10-9.13" to [[7.6 Examples]], [[7.8 Cross Sections and Lifetimes]], [[9.P Problems]] and [[5.7 Quarkonium]].
+- [Links] Link "Example 7.8", "(7.137)-(7.168)" and "Problems 9.10-9.13" to \[\[7.6 Examples\]\], \[\[7.8 Cross Sections and Lifetimes\]\], \[\[9.P Problems\]\] and \[\[5.7 Quarkonium\]\].
 
 ### N3089
 
@@ -1391,7 +1391,7 @@ Formulas (9.67)-(9.71) and the $10^{280}$ MeV Landau-pole estimate are correct, 
 - [Correctness] "$f$ is the number of flavors (6, in the Standard Model)" is misleading for (9.69): $f$ must be the number of active flavors with $m_q c\lesssim|q|$ (e.g. $f=5$ between $m_b$ and $m_t$), and $\Lambda$ changes at each threshold.
 - [Graph] Plot $\alpha_s(Q)$ from (9.71) with $n=3$, $f=5$, $\Lambda c=0.21$ GeV for $Q$ from 1 to 1000 GeV on a log axis, next to $\alpha(Q)$ from (9.68) (rising from 1/137 to roughly 1/128 at 91 GeV once all charged fermions are included) to contrast antiscreening and screening.
 - [Intuition] Replace "I do not know of a persuasive qualitative explanation" with the standard picture: the QCD vacuum acts as a color paramagnet; the gluon spin gives a paramagnetic (antiscreening) contribution that outweighs the diamagnetic (screening) one, producing the $-11n$ coefficient, while each quark flavor screens like an electron loop and contributes $+2$.
-- [Structure] Remove the physical-quantities row with symbol "—" ("Formal pole energy"), which lists no symbol; remove the UTF-8 BOM; link the superscripts 4-6 and "eq. (7.185)" to [[9.B References and Notes]] and [[7.9 Renormalization]].
+- [Structure] Remove the physical-quantities row with symbol "—" ("Formal pole energy"), which lists no symbol; remove the UTF-8 BOM; link the superscripts 4-6 and "eq. (7.185)" to \[\[9.B References and Notes\]\] and \[\[7.9 Renormalization\]\].
 
 ### N3090
 
@@ -1403,7 +1403,7 @@ A short, readable 1980s outlook whose claims about what QCD cannot calculate are
 - [Correctness] "Why don't we now calculate the neutron-proton mass difference ... or the binding energy of the deuteron?" and "embarrassingly meager" are outdated: lattice QCD+QED has computed the neutron-proton mass difference (Borsanyi et al., Science 347, 1452 (2015)) and the light hadron spectrum to about 1%; add a dated callout with the current status.
 - [Intuition] Add a callout that a rigorous proof of confinement and the mass gap is still open (Clay Millennium problem), so the "rigorous proof would be preferable" remark stays accurate today.
 - [Graph] Plot $R(\sqrt s)=3\sum_q Q_q^2\,(1+\alpha_s/\pi)$ versus $\sqrt s$ from 1 to 50 GeV, with steps at the c and b thresholds ($2\to10/3\to11/3$ before the QCD correction) to illustrate the "QCD corrections to the $R$ formula".
-- [Links] Link "eq. (8.8)" to the corresponding note in the 08 Electrodynamics of Quarks and Hadrons folder and the superscripts 7-9 to [[9.B References and Notes]]; remove the UTF-8 BOM.
+- [Links] Link "eq. (8.8)" to the corresponding note in the 08 Electrodynamics of Quarks and Hadrons folder and the superscripts 7-9 to \[\[9.B References and Notes\]\]; remove the UTF-8 BOM.
 
 ### N3091
 
@@ -1447,7 +1447,7 @@ Priority: medium · Graph: yes · Manim: no
 The derivation is clear and was verified step by step (10.17–10.39 all consistent), but one symbol is inconsistent and some book-specific and outdated remarks remain.
 
 - [Correctness] Eq. (10.39) writes $G$ while the note defines $G_F$ in (10.38) and uses $G_F$ elsewhere; write $G_F^2$ in (10.39) and drop the table's remark that the equation "prints the symbol G".
-- [Links] Footnote ep-10-2-fermi refers to "the footnote (*) on p. 303", a page reference to the printed book; replace it with a wiki link to the V–A footnote in [[10.1 Charged Leptonic Weak Interactions]].
+- [Links] Footnote ep-10-2-fermi refers to "the footnote (*) on p. 303", a page reference to the printed book; replace it with a wiki link to the V–A footnote in \[\[10.1 Charged Leptonic Weak Interactions\]\].
 - [Correctness] "New machines are presently under construction that will run at energies close to $M_Wc^2$" is outdated (LEP2, Tevatron, and LHC have run there). Update it or mark it as historical. $g_w=0.66$ is consistent with the current $M_W$ ($g_w\approx0.653$).
 - [Graph] Plot the normalized electron spectrum from (10.35): with $x=2E/m_\mu c^2\in[0,1]$, $d\Gamma/dx\propto x^2(3-2x)$. This shows the peak at the endpoint $E_{\max}=m_\mu c^2/2$.
 - [Simplify] Before the integration, say which particle is which (2 = $\bar\nu_e$, 3 = $\nu_\mu$, 4 = $e$). The reader must otherwise infer this from the spinor $v(2)$ in (10.15).
@@ -1522,8 +1522,8 @@ The chirality-versus-helicity explanation is correct (10.120 verified in the Dir
 
 - [Correctness] The footnote ending "as far as we know right-handed neutrinos do not exist at all" should mention that neutrinos have mass. Their chirality is therefore not exactly helicity, and right-handed (sterile) neutrinos are allowed but unobserved.
 - [Graph] Plot the helicity content of a left-chiral state against speed: the probabilities of helicity $-1$ and $+1$ are $(1+\beta)/2$ and $(1-\beta)/2$, for $\beta=|\mathbf p|c/E$ from 0 to 1. This makes "approximately so if $E\gg mc^2$" concrete.
-- [Example] Add a numerical example: for a 1 MeV electron, compute $\beta$ and the right-handed-helicity admixture of $u_L$, and link it to the suppression in [[10.4 Decay of the Pion]].
-- [Links] Link "Appendix D" in footnote ep-10-7-1-bosons to [[Appendix D.0 Feynman Rules]], and link eq. (7.48) to its note.
+- [Example] Add a numerical example: for a 1 MeV electron, compute $\beta$ and the right-handed-helicity admixture of $u_L$, and link it to the suppression in \[\[10.4 Decay of the Pion\]\].
+- [Links] Link "Appendix D" in footnote ep-10-7-1-bosons to \[\[Appendix D.0 Feynman Rules\]\], and link eq. (7.48) to its note.
 - [Simplify] Table 10.2 would read faster with a column for helicity in the massless limit ($-1$, $+1$, and the reversed assignment for antiparticles), so that the $v_L=\frac12(1+\gamma^5)v$ sign reversal is explained in the table.
 
 ### N3101
@@ -1556,7 +1556,7 @@ Priority: low · Graph: no · Manim: no
 
 A reference list; no change needed.
 
-- [Links] Optionally link "Figure (10.4)" in note 7 to the Fig. 10.4 embed in [[10.5 Charged Weak Interactions of Quarks]].
+- [Links] Optionally link "Figure (10.4)" in note 7 to the Fig. 10.4 embed in \[\[10.5 Charged Weak Interactions of Quarks\]\].
 
 ### N3104
 
@@ -1588,7 +1588,7 @@ Priority: low · Graph: no · Manim: no
 Correct and clear; the Proca, Dirac, and Maxwell Euler–Lagrange steps and the Gaussian units in the table were all verified.
 
 - [Simplify] For (11.17), show the one-line derivation (or the factor-of-2 origin from the two identical $F$ factors), because Problem 11.2 is the only pointer.
-- [Intuition] After (11.25), add a sentence linking the continuity equation to the gauge invariance discussed in [[11.3 Local Gauge Invariance]] (a non-conserved $J$ would make $-J\cdot A/c$ change under $A\to A+\partial\lambda$ by more than a divergence).
+- [Intuition] After (11.25), add a sentence linking the continuity equation to the gauge invariance discussed in \[\[11.3 Local Gauge Invariance\]\] (a non-conserved $J$ would make $-J\cdot A/c$ change under $A\to A+\partial\lambda$ by more than a divergence).
 
 ### N3107
 
@@ -1612,7 +1612,7 @@ A good transcription of the non-Abelian construction (11.58–11.61 verified), w
 - [Correctness] Eq. (11.62), second line: the interaction term must contain the isospin matrices, $-(q\bar\psi\gamma^\mu\boldsymbol\tau\psi)\cdot\mathbf A_\mu$, which follows from $\mathcal D_\mu$ in (11.56) and agrees with (11.67). As written, $(q\bar\psi\gamma^\mu\psi)\cdot\mathbf A_\mu$ is not a valid dot product.
 - [Correctness] Footnote ep-11-4-u2 writes $U(2)=U(1)\otimes SU(2)$. This holds only locally; globally $U(2)\cong[U(1)\times SU(2)]/\mathbb Z_2$, because $-1$ lies in both factors.
 - [Simplify] Show the commutator step from (11.60) to (11.61) explicitly with $[\boldsymbol\tau\cdot\mathbf a,\boldsymbol\tau\cdot\mathbf b]=2i\boldsymbol\tau\cdot(\mathbf a\times\mathbf b)$, instead of only citing Problem 4.20.
-- [Intuition] Explain physically why $\mathbf F^{\mu\nu}$ needs the $\mathbf A\times\mathbf A$ term: the gauge bosons themselves carry the "charge", so they self-interact. This differs from photons and links to the three- and four-gluon vertices in [[11.6 Feynman Rules]].
+- [Intuition] Explain physically why $\mathbf F^{\mu\nu}$ needs the $\mathbf A\times\mathbf A$ term: the gauge bosons themselves carry the "charge", so they self-interact. This differs from photons and links to the three- and four-gluon vertices in \[\[11.6 Feynman Rules\]\].
 
 ### N3109
 
@@ -1653,7 +1653,7 @@ Priority: medium · Graph: no · Manim: yes
 
 A good conceptual note with an interactive 3D Mexican-hat figure, but the cubic coupling in (11.120) has the wrong sign.
 
-- [Correctness] Eq. (11.120): with $\eta\equiv\phi_1-\mu/\lambda$ from (11.119), the cubic term is $-\mu\lambda(\eta^3+\eta\xi^2)$, not $+\mu\lambda(\ldots)$. Compare (11.131) in [[11.9 The Higgs Mechanism]], which correctly has $-\lambda\mu(\eta^3+\eta\xi^2)$ for the same definition. The $+$ sign belongs to the opposite shift $\eta=\phi+\mu/\lambda$ used in (11.113).
+- [Correctness] Eq. (11.120): with $\eta\equiv\phi_1-\mu/\lambda$ from (11.119), the cubic term is $-\mu\lambda(\eta^3+\eta\xi^2)$, not $+\mu\lambda(\ldots)$. Compare (11.131) in \[\[11.9 The Higgs Mechanism\]\], which correctly has $-\lambda\mu(\eta^3+\eta\xi^2)$ for the same definition. The $+$ sign belongs to the opposite shift $\eta=\phi+\mu/\lambda$ used in (11.113).
 - [Manim] On the Mexican-hat surface, animate a ball in the valley doing (a) radial oscillation (the massive $\eta$) and (b) free rolling around the rim (the massless Goldstone $\xi$). This shows the footnote intuition directly.
 - [Simplify] Show the short trick for (11.120): with $s=\eta^2+\xi^2+2v\eta$ and $v=\mu/\lambda$ the potential is $\frac14\lambda^2s^2+\text{const}$, which makes the cancellation of the linear term transparent.
 - [Structure] The Fig. 11.3 graph3d block is about 40 kB of sampled coordinates. If the plugin allows, define the surface parametrically or as a function so that the note stays editable.
@@ -1677,7 +1677,7 @@ Priority: low · Graph: no · Manim: no
 
 A reference list; no change needed.
 
-- [Links] Optionally link reference 11 (Halzen and Martin, GWS Higgs sector) to [[10.7.3 Electro-Weak Mixing]] for the in-vault continuation.
+- [Links] Optionally link reference 11 (Halzen and Martin, GWS Higgs sector) to \[\[10.7.3 Electro-Weak Mixing\]\] for the in-vault continuation.
 
 ### N3115
 
@@ -1709,7 +1709,7 @@ Priority: low · Graph: no · Manim: no
 
 Short appendix hub whose two links resolve correctly.
 
-- [Structure] No change needed; the hub lists [[B.1 Decays]] and [[B.2 Cross Sections]] correctly.
+- [Structure] No change needed; the hub lists \[\[B.1 Decays\]\] and \[\[B.2 Cross Sections\]\] correctly.
 
 ### N3118
 
@@ -1760,10 +1760,10 @@ Priority: medium · Graph: no · Manim: no
 
 Useful trace sheet with one transcription error in the definition of gamma^0.
 
-- [Correctness] (C.9) writes $\gamma^0=\begin{pmatrix}1&0\\0&1\end{pmatrix}$, which is the identity. The Dirac representation has $\gamma^0=\begin{pmatrix}1&0\\0&-1\end{pmatrix}$, as in [[Reference Formulas]]. With the identity, (C.15) $\{\gamma^0,\gamma^i\}=0$ and the claim "traceless" both fail.
+- [Correctness] (C.9) writes $\gamma^0=\begin{pmatrix}1&0\\0&1\end{pmatrix}$, which is the identity. The Dirac representation has $\gamma^0=\begin{pmatrix}1&0\\0&-1\end{pmatrix}$, as in \[\[Reference Formulas\]\]. With the identity, (C.15) $\{\gamma^0,\gamma^i\}=0$ and the claim "traceless" both fail.
 - [Simplify] The sentence "Since $\gamma^5$ is the product of an even number..., it follows that $\operatorname{Tr}(\gamma^5\gamma^\mu)=0$" reads as a contradiction. Rephrase: $\gamma^5$ times an odd number of $\gamma$'s is an odd product, so its trace is zero.
 - [Example] Give the explicit $\gamma^5=\begin{pmatrix}0&1\\1&0\end{pmatrix}$ and verify $\operatorname{Tr}(\gamma^5\gamma^0\gamma^1\gamma^2\gamma^3)=-4i$, which is consistent with (C.25) and $\epsilon^{0123}=-1$.
-- [Links] Link the trace theorems to [[7.7 Casimir's Trick and the Trace Theorems]], where they are used.
+- [Links] Link the trace theorems to \[\[7.7 Casimir's Trick and the Trace Theorems\]\], where they are used.
 
 ### N3123
 
@@ -1782,7 +1782,7 @@ Priority: low · Graph: no · Manim: no
 Correct minimal rule list.
 
 - [Intuition] Add one line on the order of factors: write the spinors by following each fermion line backward against the arrow, so $\bar u\ldots u$ or $\bar v\ldots v$ brackets the vertex matrices.
-- [Links] Link to [[7.5 The Feynman Rules for Quantum Electrodynamics]] for context.
+- [Links] Link to \[\[7.5 The Feynman Rules for Quantum Electrodynamics\]\] for context.
 
 ### N3125
 
@@ -1841,7 +1841,7 @@ Priority: low · Graph: no · Manim: no
 
 Correct summary sheet (gamma^0 is right here), with plain-text cross-references instead of links.
 
-- [Links] Replace "see Appendix C" and "see Appendix D" with [[C.2 Dirac Matrices]] and [[D.3 Vertex Factors]], and consider embedding [[D.1 External Lines]] and [[D.2 Propagators]] instead of duplicating them.
+- [Links] Replace "see Appendix C" and "see Appendix D" with \[\[C.2 Dirac Matrices\]\] and \[\[D.3 Vertex Factors\]\], and consider embedding \[\[D.1 External Lines\]\] and \[\[D.2 Propagators\]\] instead of duplicating them.
 
 ### N3131
 

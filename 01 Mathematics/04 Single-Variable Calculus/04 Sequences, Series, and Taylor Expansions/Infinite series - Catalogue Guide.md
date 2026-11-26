@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Infinite series: learning guide"
 catalogue_ids:
   - "7"
@@ -59,7 +59,7 @@ For $S_N=\sum_{n=1}^N2^{-n}=1-2^{-N}$, require an error less than $0.001$. This 
 <!-- catalogue-complete-lesson-index:start -->
 ## Complete lesson index
 
-Read the prerequisite route above before the advanced lessons. The source topic links are in [[Planned Topics#7. Infinite series|the detailed catalogue]].
+Read the prerequisite route above before the advanced lessons.
 
 - [[Sequences and their limits|Sequences and their limits]] — 7.1, 7.1.1, 7.1.1.1, 7.1.1.2, 7.1.1.3, 7.1.2.
 - [[Infinite sums and convergence|Infinite sums and convergence]] — 7.2, 7.2.1, 7.2.1.1, 7.2.1.2.

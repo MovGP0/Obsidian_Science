@@ -45,7 +45,7 @@ title: "Mathematics study guide"
 
 ## Source catalogue
 
-Use [[Mathematics Catalogue Source Guide|the catalogue source guide]] for the original chapter guides and [[Planned Topics]] to look up a specific source ID.
+Use [[Mathematics Catalogue Source Guide|the catalogue source guide]] for the original chapter guides.
 
 ## Worked applications
 

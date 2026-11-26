@@ -135,7 +135,7 @@ Correct and compact derivation (coefficient 3.31 and the helium estimate check o
 - [Simplify] Expand the Proof of Theorem 8.1 into two displayed algebra steps ($\lambda_c^3=\zeta(3/2)/n$, then square and invert $h^2/(2\pi m k_BT_c)$) instead of "substitute and solve".
 - [Intuition] Add the picture behind the "Scale and endpoint checks" paragraph: condensation sets in when the thermal wavelength $\lambda$ becomes comparable to the mean spacing $n^{-1/3}$, i.e. $n^{1/3}\lambda_c=\zeta(3/2)^{1/3}\approx1.38$.
 - [Manim] Animate cooling at fixed $n$: atoms drawn as wave packets of width $\lambda(T)$ grow until neighbouring packets overlap at $T_c$, while a side gauge shows $n\lambda^3$ approaching 2.612.
-- [Example] Remark 8.3 gives $3.1\,\mathrm{K}$ for $n=2.2\times10^{28}\,\mathrm{m^{-3}}$, $m=4\,\mathrm{u}$ (direct evaluation gives $3.15\,\mathrm{K}$); link [[08.01 Critical Temperature of Helium-4]], which redoes this with full precision.
+- [Example] Remark 8.3 gives $3.1\,\mathrm{K}$ for $n=2.2\times10^{28}\,\mathrm{m^{-3}}$, $m=4\,\mathrm{u}$ (direct evaluation gives $3.15\,\mathrm{K}$); link \[\[08.01 Critical Temperature of Helium-4\]\], which redoes this with full precision.
 
 ### N1462
 
@@ -206,7 +206,7 @@ Priority: low · Graph: no · Manim: no
 
 Correct and clear, with a careful treatment of the integration constant.
 
-- [Links] Add a link to [[08.02 Entropy of the Condensed Bose Gas]], which derives the same result via $TS=U+PV$ as an independent route.
+- [Links] Add a link to \[\[08.02 Entropy of the Condensed Bose Gas\]\], which derives the same result via $TS=U+PV$ as an independent route.
 - [Intuition] Add the entropy per excited atom, $S/N_{\mathrm{ex}}=\tfrac52k_B\zeta(5/2)/\zeta(3/2)\approx1.28k_B$, constant below $T_c$, to make concrete that all entropy is carried by the excited cloud.
 
 ### N1469
@@ -315,7 +315,7 @@ Priority: low · Graph: no · Manim: no
 Correct and well reasoned (the $12\pi^4/5$ coefficient checks), with good explanations of why each approximation is valid.
 
 - [Simplify] In the high-temperature section, state that the next term $-x/2$ gives a constant $-\tfrac98Nk_B\Theta_D$ in $U-U_0$, which exactly cancels $U_0$ and does not change $C_V$; the first correction to $C_V$ is $-\tfrac{3}{20}Nk_B(\Theta_D/T)^2$.
-- [Links] Link [[08.04 Accuracy of the Debye T³ Law]] from the low-temperature section for the size of the cutoff error.
+- [Links] Link \[\[08.04 Accuracy of the Debye T³ Law\]\] from the low-temperature section for the size of the cutoff error.
 
 ### N1480
 
@@ -472,5 +472,5 @@ Transcribed lecture notes whose derivations are correct, but with a badly wrong 
 - [Correctness] Under "Critical temperature of the Bose gas", London's proposal linking helium to Bose condensation dates from 1938, not 1928, and the lambda point is $2.17\,\mathrm{K}$; keep the transcribed "1928" and "2.19 K" only with a clarification callout (the same 2.19 K appears in the heat-capacity section).
 - [Correctness] Fig. 15 caption says the maximum of $x^3/(e^x-1)$ lies "near $x=2.822$"; the root of $3(1-e^{-x})=x$ is $2.8214$, so write $x\approx2.821$ as in 08.04.04.
 - [Simplify] The opening line about an ultrarelativistic Fermi gas, the sentence "The grand canonical factor associated with particle number is $e^{+\beta\mu N}$", and the finite-volume $|\mu|$ estimate at $T_c$ appear without derivation or connection; either derive them in one or two lines or remove them.
-- [Structure] The title promises phonons but the note contains only the heading "Photons and phonons" and no phonon material; either rename the note or add a short Debye section linking to [[08.05.02 Debye Model]] and the Einstein comparison.
+- [Structure] The title promises phonons but the note contains only the heading "Photons and phonons" and no phonon material; either rename the note or add a short Debye section linking to \[\[08.05.02 Debye Model\]\] and the Einstein comparison.
 - [Graph] Replace or complement the scanned Fig. 12 with a native plot of $N_0/N=1-(T/T_c)^{3/2}$ and $N_{\mathrm{ex}}/N=(T/T_c)^{3/2}$ for $0\le T/T_c\le1.3$, and the chemical-potential sketch with $\beta\mu(T/T_c)$ computed from $g_{3/2}(z)=\zeta(3/2)(T_c/T)^{3/2}$ for $1\le T/T_c\le3$, showing the quadratic departure from zero.

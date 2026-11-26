@@ -77,6 +77,11 @@ def target(path):
     return base if base_count[base] == 1 else stem
 
 
+def nolink(s):
+    """Escape wiki links in agent-written text so the tracker creates no broken links."""
+    return s.replace("[[", "\\[\\[").replace("]]", "\\]\\]")
+
+
 def cell(s):
     return s.replace("|", "\\|")
 
@@ -138,9 +143,9 @@ for key, fl in groups.items():
         out.append(f"The review found {len(corr)} possible errors or notation conflicts. {state}"
                    "Each item links to the full suggestion entry.\n")
         for f, c, v in corr:
-            line = f"- [[#{ids[f]}|{ids[f]}]] {os.path.basename(f)[:-3]}: {c}"
+            line = f"- [[#{ids[f]}|{ids[f]}]] {os.path.basename(f)[:-3]}: {nolink(c)}"
             if v:
-                line += f" **{v[0].capitalize()}:** {v[1]}"
+                line += f" **{v[0].capitalize()}:** {nolink(v[1])}"
             out.append(line)
     else:
         out.append("The review found no possible errors in this folder.")
@@ -164,9 +169,9 @@ for key, fl in groups.items():
         out.append(f"Note: [[{target(f)}|{os.path.basename(f)[:-3]}]]  ")
         out.append(f"Priority: {r['priority']} · Graph: {r['graph']} · Manim: {r['manim']}\n")
         if r["summary"]:
-            out.append(r["summary"] + "\n")
+            out.append(nolink(r["summary"]) + "\n")
         for s in r["sugg"]:
-            out.append(f"- {s}")
+            out.append(f"- {nolink(s)}")
         out.append("")
     with open(os.path.join(SUBDIR, name + ".md"), "w", encoding="utf-8", newline="\n") as fh:
         fh.write("\n".join(out).rstrip("\n") + "\n")

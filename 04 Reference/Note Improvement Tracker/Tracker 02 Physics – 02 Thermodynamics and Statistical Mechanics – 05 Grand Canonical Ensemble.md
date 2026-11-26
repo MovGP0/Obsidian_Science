@@ -99,7 +99,7 @@ Priority: low · Graph: no · Manim: no
 
 Correct, short derivation; the final paragraph describes the ideal-gas integration in words instead of showing it.
 
-- [Example] Replace the verbal ideal-gas check in the last paragraph with the two-line calculation $d\mu=(k_BT/P)\,dP\Rightarrow\mu(T,P)-\mu(T,P_0)=k_BT\ln(P/P_0)$, linking to Eq. (5.3) in [[05.01.04 Chemical Potential of the Classical Ideal Gas]].
+- [Example] Replace the verbal ideal-gas check in the last paragraph with the two-line calculation $d\mu=(k_BT/P)\,dP\Rightarrow\mu(T,P)-\mu(T,P_0)=k_BT\ln(P/P_0)$, linking to Eq. (5.3) in \[\[05.01.04 Chemical Potential of the Classical Ideal Gas\]\].
 - [Intuition] Add one sentence on why $T,P,\mu$ cannot all be independent: all three are intensive, and the intensive state of a one-component phase is fixed by two numbers; there is no size variable to absorb a third change.
 
 ### N1338
@@ -368,7 +368,7 @@ Priority: low · Graph: no · Manim: no
 Correct and compact chapter summary with a good "reconstruct the argument" section.
 
 - [Correctness] The quantity table lists entropy ${\thermal{S}}$, which the summary never uses; remove the row or add the entropy result $S=-(\partial\Phi/\partial T)_{V,\mu}$ to item 3.
-- [Links] Add a link from each numbered result to its chapter note (e.g. item 4 to [[05.04.02 Relation to Isothermal Compressibility]], item 7 to [[05.06.02 Surface Adsorption - Langmuir Isotherm]]) so the summary works as a navigation hub.
+- [Links] Add a link from each numbered result to its chapter note (e.g. item 4 to \[\[05.04.02 Relation to Isothermal Compressibility\]\], item 7 to \[\[05.06.02 Surface Adsorption - Langmuir Isotherm\]\]) so the summary works as a navigation hub.
 
 ### N1364
 
@@ -421,6 +421,6 @@ Lecture transcription with correct grand-canonical derivations and a correct dil
 - [Correctness] Dates: Fermi's statistics paper is from 1926 (not 1925), and Pauli's spin–statistics theorem was published in 1940 (Phys. Rev. 58, 716), not 1941 or 1944; state the correct dates instead of only reporting the notebook values.
 - [Correctness] Symbol clashes: $\Omega$ (state count) and $\energy{\Omega}$ (grand potential) appear in the same note, $\energy{H}$ (Hamiltonian) and $\magnetic{H}$ (field) appear in the spin section, and $\alpha$ is the exchange phase while the table calls it the fine-structure constant; use $\Phi_G$ or $\Phi$ for the grand potential (as in 05.09) and $B$ for the field.
 - [Correctness] Quantity table lists symbols the note never uses or with wrong meanings: $\alpha$ "fine-structure constant", $\mechanical{M}$ twice including "stellar mass", $j$ "internal partition function", $g$ twice, $P_{\mathrm{int}},P_{\mathrm{ext}}$ "piston", $n$ twice (moles, density), $q_i,p_i$, and $\mechanical{c}$ described through a "photon spectrum formula"; trim it to the symbols used.
-- [Structure] Split or reorder: the rotor exercise and the repeated spin-½ material belong with [[Classical canonical gases and spin magnetization]]; keep this note focused on grand potential, ideal gas, Bose/Fermi occupations, and exchange symmetry.
-- [Links] Link the Bose and Fermi derivations to [[06.06.01 Derivation]] and [[06.07.01 Derivation]], and the exchange-symmetry section to [[06.01.02 Consequences for the Wavefunction]].
+- [Structure] Split or reorder: the rotor exercise and the repeated spin-½ material belong with \[\[Classical canonical gases and spin magnetization\]\]; keep this note focused on grand potential, ideal gas, Bose/Fermi occupations, and exchange symmetry.
+- [Links] Link the Bose and Fermi derivations to \[\[06.06.01 Derivation\]\] and \[\[06.07.01 Derivation\]\], and the exchange-symmetry section to \[\[06.01.02 Consequences for the Wavefunction\]\].
 - [Graph] Replace or supplement the two occupation images with a native plot of $[e^{x}+1]^{-1}$, $[e^{x}-1]^{-1}$ and $e^{-x}$ against $x=\beta(E-\mu)\in[-3,5]$ (BE only for $x>0$).

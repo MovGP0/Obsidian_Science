@@ -280,7 +280,7 @@ Priority: low · Graph: no · Manim: no
 
 Correct identities and a fully worked Pauli example; the Jacobi identity display is awkwardly split.
 
-- [Structure] The Jacobi identity is split over two displays tagged (10.5) and (10.6) to mirror the source; write it as one equation $[\hat A,[\hat B,\hat C]]+[\hat B,[\hat C,\hat A]]+[\hat C,[\hat A,\hat B]]=0$ with a single tag and drop the sentence about the source.
+- [Structure] The Jacobi identity is split over two displays tagged (10.5) and (10.6) to mirror the source; write it as one equation $[\hat A,[\hat B,\hat C\]\]+[\hat B,[\hat C,\hat A\]\]+[\hat C,[\hat A,\hat B\]\]=0$ with a single tag and drop the sentence about the source.
 - [Example] Add a one-line application of (10.4), e.g. $[\hat x^2,\hat p]=2i\hbar\hat x$ with a forward link to the canonical-relation note, so both product rules have an example.
 
 ### N1882

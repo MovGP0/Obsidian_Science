@@ -68,7 +68,7 @@ The note is correct, but it quotes the hydrostatic equation without the slab for
 
 - [Simplify] Show the force balance on a thin horizontal slab, $\mechanical{p}(\mechanical{z})\mechanical{A}-\mechanical{p}(\mechanical{z}+d\mechanical{z})\mechanical{A}-\mechanical{\rho}\mechanical{g}\mechanical{A}\,d\mechanical{z}=0$, which gives $d\mechanical{p}/d\mechanical{z}=-\mechanical{\rho}\mechanical{g}$.
 - [Example] Add numbers: each $\quantity{10}{m}$ of water adds about $\quantity{1}{atm}$, and the given molecular mass yields a scale height of about $\quantity{8.4}{km}$ at $\quantity{288}{K}$.
-- [Structure] Move "Why the water level falls when a dense load sinks" to [[08.04 Archimedes' Principle]], where it belongs logically.
+- [Structure] Move "Why the water level falls when a dense load sinks" to \[\[08.04 Archimedes' Principle\]\], where it belongs logically.
 - [Graph] Two-panel plot of $\mechanical{p}(\mechanical{z})$ in atm: linear increase with depth in water (0 to 30 m) and exponential decrease $\mechanical{p}_0e^{-\mechanical{z}/\mechanical{H}}$ in the atmosphere (0 to 30 km).
 - [Structure] $k_B$ in the scale height is uncoloured; apply the macro group used for Boltzmann's constant elsewhere in the vault.
 
@@ -103,7 +103,7 @@ Priority: low · Graph: no · Manim: yes
 The note is correct and concise; one derivation sentence and a visual would help beginners.
 
 - [Simplify] Derive the equation in one sentence: in time $dt$, mass $\mechanical{\rho}_1\mechanical{A}_1\mechanical{v}_1\,dt$ enters and $\mechanical{\rho}_2\mechanical{A}_2\mechanical{v}_2\,dt$ leaves, and steady flow allows no accumulation in between.
-- [Links] Point to the local form $\partial_t\mechanical{\rho}+\nabla\cdot(\mechanical{\rho}\mechanical{\vec v})=0$ in [[08.08 Euler Equation for Fluid Flow]].
+- [Links] Point to the local form $\partial_t\mechanical{\rho}+\nabla\cdot(\mechanical{\rho}\mechanical{\vec v})=0$ in \[\[08.08 Euler Equation for Fluid Flow\]\].
 - [Manim] Animate equal-volume fluid slices moving through a pipe constriction, each slice becoming longer and faster in the narrow section, with the product $\mechanical{A}\mechanical{v}$ displayed as constant.
 
 ### N0955
@@ -114,7 +114,7 @@ Priority: medium · Graph: yes · Manim: yes
 The note is correct, but it does not explain the pressure-work term in the derivation and the Venturi example has no numbers.
 
 - [Simplify] Explain the pressure-work term: the upstream fluid pushes the element forward and does work $\mechanical{p}_1\mechanical{A}_1\mechanical{v}_1\,dt=\mechanical{p}_1\delta\mechanical{V}$, the downstream fluid does $-\mechanical{p}_2\delta\mechanical{V}$, and continuity makes the two volumes equal.
-- [Example] Make the Venturi example quantitative and give the flowmeter formula $\mechanical{v}_1=\sqrt{2\Delta\mechanical{p}/(\mechanical{\rho}[(\mechanical{A}_1/\mechanical{A}_2)^2-1])}$; link exercise 3 in [[08.14 Fluid Mechanics Exercises]].
+- [Example] Make the Venturi example quantitative and give the flowmeter formula $\mechanical{v}_1=\sqrt{2\Delta\mechanical{p}/(\mechanical{\rho}[(\mechanical{A}_1/\mechanical{A}_2)^2-1])}$; link exercise 3 in \[\[08.14 Fluid Mechanics Exercises\]\].
 - [Intuition] Address the common misconception: the pressure gradient from the wide section to the throat is what accelerates the fluid into the constriction; low pressure is not caused by fast fluid "pushing less".
 - [Graph] Plot $\mechanical{v}(x)$ and $\mechanical{p}(x)$ along a horizontal Venturi tube with area $\mechanical{A}(x)=\mechanical{A}_1[1-0.75e^{-x^2}]$ for $x\in[-3,3]$, showing the speed peak and the pressure dip.
 - [Manim] Animate flow through a Venturi tube with manometer columns above the wide and narrow sections, the narrow-section column falling as the flow speed increases.
@@ -141,7 +141,7 @@ The note is correct but very compressed: it only names the material derivative, 
 
 - [Simplify] Introduce the material derivative $D/Dt=\partial_t+\mechanical{\vec v}\cdot\nabla$ with a concrete picture: in steady flow through a nozzle, $\partial_t\mechanical{\vec v}=0$, yet each parcel accelerates.
 - [Simplify] Derive the right-hand side from the pressure force on a small cube, $-(\partial\mechanical{p}/\partial x)\,dx\,dy\,dz$ per component, which gives the force density $-\nabla\mechanical{p}$.
-- [Example] Show the steady-flow route to Bernoulli: use $(\mechanical{\vec v}\cdot\nabla)\mechanical{\vec v}=\nabla(\tfrac12\mechanical{v}^2)-\mechanical{\vec v}\times(\nabla\times\mechanical{\vec v})$, take the component along $\mechanical{\vec v}$, and recover [[08.06 Bernoulli's Equation]].
+- [Example] Show the steady-flow route to Bernoulli: use $(\mechanical{\vec v}\cdot\nabla)\mechanical{\vec v}=\nabla(\tfrac12\mechanical{v}^2)-\mechanical{\vec v}\times(\nabla\times\mechanical{\vec v})$, take the component along $\mechanical{\vec v}$, and recover \[\[08.06 Bernoulli's Equation\]\].
 - [Structure] Write the generalized Bernoulli equation explicitly, $\mechanical{\rho}\,\partial_t\mechanical{\Phi}+\mechanical{p}+\tfrac12\mechanical{\rho}\mechanical{v}^2+\mechanical{\rho}\mechanical{g}\mechanical{z}=f(t)$, instead of only naming it, and derive the continuity equation from a control volume in one line.
 
 ### N0958
@@ -177,7 +177,7 @@ The limits are correct, but the note omits the full dispersion relation that lin
 
 - [Simplify] Give the full relation $\signal{\omega}^2=\mechanical{g}\signal{k}\tanh(\signal{k}\mechanical{h})$ and obtain both limits from $\tanh x\approx1$ and $\tanh x\approx x$; note that the deep-water form already holds for $\mechanical{h}\gtrsim\signal{\lambda}/2$.
 - [Example] Verify the sound speed in air, $\sqrt{1.4\cdot1.013\times10^5/1.204}\,\unit{m\,s^{-1}}\approx\quantity{343}{m\,s^{-1}}$, and mention Newton's isothermal value (about 290 m/s) to motivate the adiabatic subscript $s$.
-- [Structure] The tsunami speed is written $\signal{v}$ here but $\mechanical{v}$ in exercise 12 of [[08.14 Fluid Mechanics Exercises]]; pick one macro group for wave speed and use it in both notes.
+- [Structure] The tsunami speed is written $\signal{v}$ here but $\mechanical{v}$ in exercise 12 of \[\[08.14 Fluid Mechanics Exercises\]\]; pick one macro group for wave speed and use it in both notes.
 - [Graph] Plot the phase speed $\sqrt{(\mechanical{g}/\signal{k})\tanh(\signal{k}\mechanical{h})}$ against $\signal{k}\mechanical{h}\in[0.01,10]$ on a logarithmic horizontal axis, with the asymptotes $\sqrt{\mechanical{g}\mechanical{h}}$ and $\sqrt{\mechanical{g}/\signal{k}}$.
 - [Manim] Animate a deep-water surface wave with marker particles moving on circles whose radius shrinks with depth while the profile travels, showing that the water circulates in place rather than travelling with the wave.
 

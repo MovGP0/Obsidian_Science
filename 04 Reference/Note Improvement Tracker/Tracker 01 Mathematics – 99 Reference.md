@@ -166,7 +166,7 @@ Priority: low · Graph: no · Manim: no
 Correct and clearly structured; reduction formulas and worked answers verify.
 
 - [Structure] In "Cosine powers", rename the family $C_n=\int\cos^nx\,dx$ to a letter such as $K_n$ instead of warning about the clash with the integration constant $C$.
-- [Example] Add a short definite check of the sine recurrence, for example $\int_0^{\pi}\sin^4x\,dx=3\pi/8$, linking to [[Definite integral tables]] where the same recurrence appears.
+- [Example] Add a short definite check of the sine recurrence, for example $\int_0^{\pi}\sin^4x\,dx=3\pi/8$, linking to \[\[Definite integral tables\]\] where the same recurrence appears.
 - [Structure] File is saved with a UTF-8 BOM and CRLF line endings; re-save as UTF-8 without BOM with LF endings per AGENTS.md.
 
 ### N0819

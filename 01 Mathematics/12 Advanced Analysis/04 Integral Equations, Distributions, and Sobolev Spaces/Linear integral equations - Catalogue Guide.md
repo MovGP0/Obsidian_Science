@@ -58,7 +58,7 @@ Always state the interval, the permitted functions, the integration convention, 
 <!-- catalogue-complete-lesson-index:start -->
 ## Complete lesson index
 
-Read the prerequisite route above before the advanced lessons. The source topic links are in [[Planned Topics#11. Linear integral equations|the detailed catalogue]].
+Read the prerequisite route above before the advanced lessons.
 
 - [[Kernels and classification|Kernels and classification]] — 11.1.
 - [[Finite-rank kernels and successive approximation|Finite-rank kernels and successive approximation]] — 11.2, 11.2.1, 11.2.2.

@@ -105,7 +105,7 @@ Priority: low · Graph: no · Manim: no
 Correct and well-verified note; the division example and the global-phase remark are clear.
 
 - [Example] After the property list, add a one-line check of $(z_1z_2)^*=z_1^*z_2^*$ with $z_1=1+\mathrm{i}$, $z_2=2-\mathrm{i}$, since this rule is used later for inner products and is only stated.
-- [Intuition] Link the geometric reading forward: $z^*$ is the reflection in the real axis and $zz^*=|z|^2$ is the squared distance, referring to [[03 The Complex Plane]].
+- [Intuition] Link the geometric reading forward: $z^*$ is the reflection in the real axis and $zz^*=|z|^2$ is the squared distance, referring to \[\[03 The Complex Plane\]\].
 
 ### N1718
 
@@ -137,7 +137,7 @@ Priority: low · Graph: yes · Manim: no
 Correct and compact, with a complete proof that the root list is exhaustive; the cube-root triangle is described but not drawn.
 
 - [Graph] Under "Example — The cube roots of −8", plot the circle $|z|=2$ with the three roots $1\pm\mathrm{i}\sqrt3$ and $-2$ as points joined into the equilateral triangle, plus $-8$ direction marked by angle $\pi$.
-- [Simplify] The branch counterexample $\sqrt{(-1)(-1)}=1\ne\sqrt{-1}\sqrt{-1}=-1$ is buried in a dense paragraph; give it its own short warning callout and link to [[01 Complex Numbers/06 Common Errors#Error 3 — Treat the complex square root as unique|Error 3]].
+- [Simplify] The branch counterexample $\sqrt{(-1)(-1)}=1\ne\sqrt{-1}\sqrt{-1}=-1$ is buried in a dense paragraph; give it its own short warning callout and link to \[\[01 Complex Numbers/06 Common Errors#Error 3 — Treat the complex square root as unique|Error 3\]\].
 
 ### N1721
 
@@ -168,7 +168,7 @@ Priority: low · Graph: no · Manim: no
 
 Concise, correct summary with a good one-number reconstruction check.
 
-- [Structure] No change needed; optionally add a one-line pointer to [[07 Applications to Oscillations and Signals]] for the phasor rule ($\mathrm{d}/\mathrm{d}t\to\mathrm{i}\omega$), which the bullets omit.
+- [Structure] No change needed; optionally add a one-line pointer to \[\[07 Applications to Oscillations and Signals\]\] for the phasor rule ($\mathrm{d}/\mathrm{d}t\to\mathrm{i}\omega$), which the bullets omit.
 
 ### N1724
 
@@ -177,7 +177,7 @@ Priority: low · Graph: no · Manim: no
 
 Clear exercise index with a sensible practice route; links resolve.
 
-- [Links] Exercise 11 uses the bare link [[11 Exercise 11|...]] while all others use the folder-qualified form [[01 Complex Numbers/99 Exercises/...]]; make it consistent (it resolves today only because the filename is currently unique).
+- [Links] Exercise 11 uses the bare link \[\[11 Exercise 11|...\]\] while all others use the folder-qualified form \[\[01 Complex Numbers/99 Exercises/...\]\]; make it consistent (it resolves today only because the filename is currently unique).
 
 ### N1725
 
@@ -249,7 +249,7 @@ Priority: low · Graph: no · Manim: no
 
 Correct proof that locates the only inequality step and explains the equality case.
 
-- [Structure] No change needed; optionally link the cross-term identity to [[01 Complex Numbers/06 Common Errors#Diagnose an error with a small test|the interference remark in Common Errors]].
+- [Structure] No change needed; optionally link the cross-term identity to \[\[01 Complex Numbers/06 Common Errors#Diagnose an error with a small test|the interference remark in Common Errors\]\].
 
 ### N1733
 
@@ -269,7 +269,7 @@ Correct normalization and mean-momentum derivation with good dimensional and int
 
 - [Structure] Delete the note "The original exercise image uses the envelope ... repairs the earlier Markdown transcription"; it describes editing history, not physics.
 - [Graph] Plot $\operatorname{Re}\psi$, $\operatorname{Im}\psi$ and $|\psi|^2$ for $a=1$, $p_0/\hbar=6$ on $x\in[-4,4]$ to show that the phase oscillates inside the fixed envelope while the density ignores $p_0$.
-- [Simplify] The macro for $\hbar$ is $\mechanical{\hbar}$ here but $\energy{\hbar}$ in [[07 Applications to Oscillations and Signals]]; use one group consistently across the chapter.
+- [Simplify] The macro for $\hbar$ is $\mechanical{\hbar}$ here but $\energy{\hbar}$ in \[\[07 Applications to Oscillations and Signals\]\]; use one group consistently across the chapter.
 
 ### N1735
 
@@ -390,7 +390,7 @@ Priority: low · Graph: no · Manim: no
 Correct results with clear method choices.
 
 - [Structure] Shorten or remove the "Transcription repair" note; a reader does not need the source-image history.
-- [Simplify] Part (b) repeats the full Poisson-trick derivation from Definite Integrals; link to [[03 Definite Integrals#Proof — Poisson's trick]] and keep only the scaling step.
+- [Simplify] Part (b) repeats the full Poisson-trick derivation from Definite Integrals; link to \[\[03 Definite Integrals#Proof — Poisson's trick\]\] and keep only the scaling step.
 
 ### N1747
 

@@ -54,7 +54,7 @@ Priority: low · Graph: no · Manim: no
 Accurate definitions, but entries are not in alphabetical order (apparently the order of a translated source) and none link to the defining notes.
 
 - [Structure] Sort the entries alphabetically (Angular momentum, Blackbody, Bloch sphere, Born probability, Boson, Bra, ...); the current order starting with "Probability amplitude, Spherical harmonics, Eigenstate" makes lookup hard.
-- [Links] Link each term to its defining note, for example Collapse to [[02.04 Wave Function Collapse]] and the golden-rule and uncertainty entries to the reference notes in folder 22.
+- [Links] Link each term to its defining note, for example Collapse to \[\[02.04 Wave Function Collapse\]\] and the golden-rule and uncertainty entries to the reference notes in folder 22.
 
 ### N2251
 

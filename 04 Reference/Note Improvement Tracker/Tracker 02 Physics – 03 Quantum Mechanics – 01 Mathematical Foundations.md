@@ -39,7 +39,7 @@ Clear motivation and a useful reading route, but the part-to-chapter mapping in 
 
 - [Correctness] The part list says Part II = Chapters 4–7, Part III = 8–10, Part IV = 11–12, Part V = 13–14, but the vault folders are 04–08 (Linear Algebra incl. "06 Special Matrices" and "08 Hilbert Space"), 09–11, 12–13, 14–15; update the ranges (and add special matrices to the Part II description) to match the folders.
 - [Structure] Delete the closing "[!note] The chapter ranges above follow the supplied introduction..." callout once the ranges are fixed; it is transcription meta-commentary, not content.
-- [Links] The route omits [[00 Special Matrices]] between [[00 Matrices and Linear Operators]] and [[00 Eigenvalues and Eigenvectors]]; add it so every Part II chapter is reachable from the introduction.
+- [Links] The route omits \[\[00 Special Matrices\]\] between \[\[00 Matrices and Linear Operators\]\] and \[\[00 Eigenvalues and Eigenvectors\]\]; add it so every Part II chapter is reachable from the introduction.
 - [Simplify] The first paragraph repeats "collection of rules/methods" and "consistent framework" three times; cut it to the gap (missing Hilbert-space/operator structure) and the aim in about half the length.
 
 ### N1997

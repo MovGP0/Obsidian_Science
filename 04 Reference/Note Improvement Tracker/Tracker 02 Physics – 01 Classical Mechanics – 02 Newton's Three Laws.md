@@ -103,7 +103,7 @@ Priority: low · Graph: no · Manim: no
 Accurate overview; brief by design.
 
 - [Intuition] Add one quantitative comparison showing why electromagnetism dominates contact forces (electric/gravitational force ratio between two protons $\approx10^{36}$) and why gravity still dominates at astronomical scales (neutrality of matter).
-- [Links] Link "Drag" to [[02.10 Viscous Drag and Terminal Velocity]], "friction" and "tension" to [[02.06 Tension, Friction, and Constraints]], and the spring force to [[02.09 Elastic Forces and Elastic Cords]].
+- [Links] Link "Drag" to \[\[02.10 Viscous Drag and Terminal Velocity\]\], "friction" and "tension" to \[\[02.06 Tension, Friction, and Constraints\]\], and the spring force to \[\[02.09 Elastic Forces and Elastic Cords\]\].
 
 ### N0851
 

@@ -76,7 +76,7 @@ Priority: low · Graph: no · Manim: no
 
 Clear chapter hub with good motivation and a correct reading order through the four particle notes.
 
-- [Links] Optionally replace "full to connected and proper functions" with explicit links to [[11.03 Connected Green's Functions and W[J]]] and [[11.04 The Effective Action Γ[φ_cl]]]; otherwise no change needed.
+- [Links] Optionally replace "full to connected and proper functions" with explicit links to \[\[11.03 Connected Green's Functions and W[J\]\]] and \[\[11.04 The Effective Action Γ[φ_cl\]\]]; otherwise no change needed.
 
 ### N2769
 
@@ -97,7 +97,7 @@ Priority: medium · Graph: no · Manim: yes
 
 The time-slicing derivation is correct and complete, including the normalization count, but forward references without links and dense prose make the flow harder to follow than necessary.
 
-- [Links] "use the small-time approximation from the previous page" and "must reduce to (11.4)" point to other notes without links; link [[11.01.01 Sum over Histories]] and [[11.01.03 The Free Particle]].
+- [Links] "use the small-time approximation from the previous page" and "must reduce to (11.4)" point to other notes without links; link \[\[11.01.01 Sum over Histories\]\] and \[\[11.01.03 The Free Particle\]\].
 - [Simplify] Move the paragraph on operator ordering (left-endpoint potential) next to Remark 11.1 and shorten it; it currently sits between the remark and the reconstruction check.
 - [Example] Add the explicit $N=2$ case: one intermediate integral of two free slice kernels, done by completing the square, gives (11.4) with $2\epsilon$; this makes the "reconstruction check" concrete.
 - [Manim] Animate the time slicing: a jagged polygon path through $N$ slices whose vertices are integrated over, with $N$ doubling from 2 to 32 and the polygons densifying toward continuous paths.
@@ -109,7 +109,7 @@ Priority: low · Graph: yes · Manim: no
 
 Correct, well-checked exact Gaussian example; the fluctuation factor is fixed by comparison rather than computed, which is acceptable but could be motivated.
 
-- [Simplify] State in one line why comparison can fix the fluctuation factor: it is independent of $q_i,q_f$, so the delta-function limit fixes it (or point to the $N$-slice product in [[11.01.02 Derivation from Quantum Mechanics]]).
+- [Simplify] State in one line why comparison can fix the fluctuation factor: it is independent of $q_i,q_f$, so the delta-function limit fixes it (or point to the $N$-slice product in \[\[11.01.02 Derivation from Quantum Mechanics\]\]).
 - [Graph] Plot $\mathrm{Re}\,K_0(q_f,T;0,0)$ against $q_f\in[-5,5]$ for $m=1$ and $T=0.2,1,3$, to show the chirped oscillations and the $T^{-1/2}$ decrease of the prefactor.
 - [Intuition] Add one sentence that the classical action $m(q_f-q_i)^2/(2T)$ is kinetic energy times time for the straight path, so the phase grows with distance squared and causes the chirp.
 
@@ -124,7 +124,7 @@ The classical path, action, product identity, and kernel are correct, but the de
 - [Structure] In Example 11.2 the measure is written $\mathcal{D}q_E$ while the action uses $S_E[q]$ and $\dot q$; use one symbol. Also replace "The source calls this result exact" by a direct statement.
 - [Graph] Plot $|\sin\omega T|^{-1/2}$ against $\omega T\in[0,4\pi]$, with the free curve $(\omega T)^{-1/2}$ for comparison, and mark the caustics at $\omega T=n\pi$ where the phase jumps by $-\pi/2$.
 - [Graph] Plot the partial products $\prod_{n=1}^{N}(1-x^2/n^2\pi^2)$ for $N=1,3,10$ against $\sin x/x$ for $x\in[0,10]$ to make the infinite-product identity tangible.
-- [Links] The zero-frequency check refers to (11.4); link [[11.01.03 The Free Particle]] there.
+- [Links] The zero-frequency check refers to (11.4); link \[\[11.01.03 The Free Particle\]\] there.
 
 ### N2773
 
@@ -133,7 +133,7 @@ Priority: low · Graph: no · Manim: no
 
 Concise hub that correctly sets the lattice-regularized view and the Feynman-prescription convention.
 
-- [Links] "The source functional in the next article" should link [[11.02.01 Generating Functional Z[J]]] explicitly.
+- [Links] "The source functional in the next article" should link \[\[11.02.01 Generating Functional Z[J\]\]] explicitly.
 
 ### N2774
 
@@ -166,7 +166,7 @@ Priority: medium · Graph: no · Manim: no
 
 Correct definitions with good caveats, but the note has no worked example and its physical-quantity table omits most symbols used.
 
-- [Example] Add the 1D example that links to the oscillator: on a circle of circumference $\beta$, zeta regularization gives $\det(-\partial_\tau^2+\omega^2)=4\sinh^2(\beta\omega/2)$, which reproduces $Z=1/(2\sinh(\beta\omega/2))$ and checks against [[11.01.04 Harmonic Oscillator]].
+- [Example] Add the 1D example that links to the oscillator: on a circle of circumference $\beta$, zeta regularization gives $\det(-\partial_\tau^2+\omega^2)=4\sinh^2(\beta\omega/2)$, which reproduces $Z=1/(2\sinh(\beta\omega/2))$ and checks against \[\[11.01.04 Harmonic Oscillator\]\].
 - [Simplify] Use the Euclidean operator $-\partial_E^2+m^2$ in the main text instead of the Minkowski "$-\square-m^2$ on a four-dimensional torus", so the note does not first state and then retract that the spectrum is suitable.
 - [Structure] The table lists only $m$; add $\mathcal{O}$, $\lambda_n$, $\zeta_{\mathcal{O}}$, $s$, and the heat-kernel parameter $t$ (with unit $\mathrm{MeV^{-2}}$, not a time).
 
@@ -188,7 +188,7 @@ Priority: low · Graph: no · Manim: no
 
 Good hub that states the purpose of the Legendre transform and links all subnotes except the first.
 
-- [Links] Add an explicit link to [[11.04.01 Legendre Transform of W[J]]] at the start, as the other hubs do.
+- [Links] Add an explicit link to \[\[11.04.01 Legendre Transform of W[J\]\]] at the start, as the other hubs do.
 
 ### N2779
 
@@ -209,7 +209,7 @@ Priority: low · Graph: no · Manim: no
 
 Correct signs and factors of $i$ in (11.14), (11.15), and the inverse relation, with a useful explicit tree-level check.
 
-- [Example] Add the geometric-series view $G_c=G_0+G_0(-i\Sigma)G_0+\dots=i/(p^2-m^2-\Sigma)$ and link the diagrammatic form in [[11.07.01 Derivation for the Scalar Field]].
+- [Example] Add the geometric-series view $G_c=G_0+G_0(-i\Sigma)G_0+\dots=i/(p^2-m^2-\Sigma)$ and link the diagrammatic form in \[\[11.07.01 Derivation for the Scalar Field\]\].
 - [Intuition] Give a one-line picture of 1PI: a diagram that falls into two pieces when one internal line is cut is reducible; a chain of self-energy bubbles is the standard example.
 
 ### N2781
@@ -289,7 +289,7 @@ Priority: low · Graph: no · Manim: no
 
 Good hub that states the gauge-redundancy problem and the physical-amplitude test clearly.
 
-- [Links] "Exercise 11.9" is unlinked; link [[11.10.09 Unphysical photon modes in electron–positron annihilation]].
+- [Links] "Exercise 11.9" is unlinked; link \[\[11.10.09 Unphysical photon modes in electron–positron annihilation\]\].
 
 ### N2789
 
@@ -393,7 +393,7 @@ Priority: low · Graph: no · Manim: no
 
 Accurate summary of the chapter's tools and checks.
 
-- [Links] Link each bullet to its section note (for example [[11.03 Connected Green's Functions and W[J]]] and [[11.06.02 The Faddeev–Popov Procedure]]) so the summary also works as a navigation page.
+- [Links] Link each bullet to its section note (for example \[\[11.03 Connected Green's Functions and W[J\]\]] and \[\[11.06.02 The Faddeev–Popov Procedure\]\]) so the summary also works as a navigation page.
 
 ### N2799
 
@@ -459,7 +459,7 @@ The regulated result $-\frac{M^4}{64\pi^2}[1/\varepsilon-\gamma+\ln4\pi-\ln(M^2/
 - [Simplify] Show the master formula $\frac12\int\frac{d^dk_E}{(2\pi)^d}\ln(k_E^2+M^2)=-\frac{\Gamma(-d/2)}{2(4\pi)^{d/2}}M^d$ and the expansion $\Gamma(-2+\varepsilon)=\frac12(1/\varepsilon-\gamma+3/2)+\mathcal O(\varepsilon)$; the jump to the regulated result is currently unexplained.
 - [Structure] The same symbol $V^{(1)}_{\mathrm{eff}}$ denotes the unrenormalized integral, the regulated expansion and the renormalized boxed result; label the first two (e.g. "bare") to distinguish them from the $\overline{\mathrm{MS}}$ result.
 - [Graph] Plot $V_{\mathrm{tree}}+V^{(1)}_{\mathrm{eff}}$ versus $\phi_{\mathrm{cl}}\in[-3,3]\,m$ for $\lambda=0.5,1,2$ with $\mu=m$, alongside the tree potential, to show the size of the one-loop correction and where the logarithm becomes large.
-- [Links] Turn the bare equation reference "(11.16)" into a link to [[11.04.03 Effective Potential]].
+- [Links] Turn the bare equation reference "(11.16)" into a link to \[\[11.04.03 Effective Potential\]\].
 
 ### N2805
 
@@ -481,7 +481,7 @@ The kernel, the sign correction to $-i\delta^\mu_\alpha$ and the dressed propaga
 
 - [Simplify] "Absorbing the matter-current insertion into the proper polarization" hides the main step; show the intermediate exact equation containing $\langle T J^\mu_{\mathrm{mat}}A_\alpha\rangle$ in momentum space and then define $\Pi^{\mu\nu}$ through its 1PI part.
 - [Example] Add the one-loop result for $\Pi(k^2)$ (for example $\Pi_2(k^2)\propto-\frac{e^2}{2\pi^2}\int_0^1dx\,x(1-x)\ln\frac{m^2-x(1-x)k^2}{\mu^2}$ in $\overline{\mathrm{MS}}$, with the sign matched to the note's convention) as a concrete transverse example.
-- [Links] Turn "(11.27)" into a link to [[11.06.02 The Faddeev–Popov Procedure]].
+- [Links] Turn "(11.27)" into a link to \[\[11.06.02 The Faddeev–Popov Procedure\]\].
 
 ### N2807
 
@@ -492,7 +492,7 @@ Correct chain-rule proof with carefully separated factors of $i$ ($W''=i\langle\
 
 - [Structure] The two exercise callouts and the "Factors of i" callout repeat the same bookkeeping; replace them with one small table of the three objects ($W''$, $\Gamma''$, proper vertex $i\Gamma''$) and their tree-level values.
 - [Intuition] Add one sentence explaining why the chain rule works: $\delta\phi_{\mathrm{cl}}/\delta J=W''$ and $\delta J/\delta\phi_{\mathrm{cl}}=-\Gamma''$ are inverse Jacobians of the same map.
-- [Links] Link "relation (11.15)" to [[11.04.02 Proper Vertex Functions]].
+- [Links] Link "relation (11.15)" to \[\[11.04.02 Proper Vertex Functions\]\].
 
 ### N2808
 

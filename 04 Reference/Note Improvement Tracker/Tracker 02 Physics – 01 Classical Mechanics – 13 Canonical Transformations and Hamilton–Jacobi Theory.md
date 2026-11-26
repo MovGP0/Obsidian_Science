@@ -60,7 +60,7 @@ Priority: medium · Graph: no · Manim: no
 
 The motivation is right but abstract; one concrete "aha" example of a simplifying transformation would make it land.
 
-- [Example] Show the payoff in miniature: for the oscillator, moving to $(Q,P)$ with $\energy{K}=\signal{\omega}P$ makes the equations $\dot P=0$, $\dot Q=\signal{\omega}$ trivial. Link this to [[13.03 Generating Functions]].
+- [Example] Show the payoff in miniature: for the oscillator, moving to $(Q,P)$ with $\energy{K}=\signal{\omega}P$ makes the equations $\dot P=0$, $\dot Q=\signal{\omega}$ trivial. Link this to \[\[13.03 Generating Functions\]\].
 - [Intuition] Contrast with Lagrangian point transformations: in Hamiltonian mechanics, $q$ and $p$ can be mixed, as in $(q,p)\to(p,-q)$. This extra freedom is the reason the method is so powerful.
 - [Simplify] Define "symplectic structure" in a few words here, or defer it: "preserves the fundamental Poisson brackets (see 13.02)". The term is currently used before it is explained.
 
@@ -154,7 +154,7 @@ The separation equations and energy formula are correct, but the symbol $\alpha$
 
 - [Correctness] Notation clash: $\alpha$ is used both as the potential strength ($-\alpha/\mechanical{r}$) and for the separation constants $\alpha_\theta,\alpha_\phi$ (angular momenta). Rename the separation constants, for example to $\mechanical{L}$ and $\mechanical{L}_z$, which is what they are.
 - [Simplify] Identify the constants physically ($\alpha_\phi=\mechanical{L}_z$, $\alpha_\theta=\mechanical{L}$), and show $J_\phi=\lvert\mechanical{L}_z\rvert$ and $J_\theta=\mechanical{L}-\lvert\mechanical{L}_z\rvert$ before summing. State the radial integral result $J_r=-\mechanical{L}+\alpha\sqrt{\mechanical{\mu}/(2\lvert\energy{E}\rvert)}$ explicitly.
-- [Structure] Move the WKB info box to [[13.12 WKB Approximation]] or shorten it to a link; it is unrelated to the Kepler content.
+- [Structure] Move the WKB info box to \[\[13.12 WKB Approximation\]\] or shorten it to a link; it is unrelated to the Kepler content.
 - [Graph] Plot several bound Kepler orbits with the same $\energy{E}$ but different $\mechanical{L}$ (equal semi-major axes, so equal periods), showing that the energy depends only on the sum of the actions.
 
 ### N1041
@@ -201,7 +201,7 @@ Correct and well qualified, but the resonance discussion is abstract and the Lis
 - [Graph] Plot Lissajous curves $x=\cos(\signal{\omega}_1t)$, $y=\cos(\signal{\omega}_2t+\pi/4)$ for $\signal{\omega}_2/\signal{\omega}_1=1,\,3/2,\,\sqrt2$ with $t\in[0,100]$, so that the closed and dense cases are visible side by side.
 - [Manim] Animate the trajectory on the flat torus $[0,2\pi)^2$ (straight lines wrapping around) next to the corresponding Lissajous figure in configuration space. A rational ratio closes, while for an irrational ratio the line gradually fills the square.
 - [Simplify] Give a concrete resonance example: $\signal{\omega}_1=2$, $\signal{\omega}_2=3$ means $3\signal{\omega}_1-2\signal{\omega}_2=0$ with $(m_1,m_2)=(3,-2)$, so the trajectory is a closed curve on $\mathbb T^2$.
-- [Links] Link to [[12.09 Integrable Systems and the Liouville–Arnold Theorem]] and to the KAM discussion in [[13.14 Hamilton–Jacobi Theory for Nonseparable Systems]].
+- [Links] Link to \[\[12.09 Integrable Systems and the Liouville–Arnold Theorem\]\] and to the KAM discussion in \[\[13.14 Hamilton–Jacobi Theory for Nonseparable Systems\]\].
 
 ### N1045
 

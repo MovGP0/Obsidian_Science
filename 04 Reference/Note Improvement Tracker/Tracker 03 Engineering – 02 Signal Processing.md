@@ -11,11 +11,11 @@ Back to the index: [[Note Improvement Tracker]]
 
 The review found 22 possible errors or notation conflicts. 22 of them are verified (22 fixed); the other 0 are not verified yet. Each item links to the full suggestion entry.
 
-- [[#N3835|N3835]] Fourier Transformation: In the formula table the QDWT note uses "\( x[n] \)", which Obsidian does not render; use $x[n]$. The DWT row comes after QDWT and has empty formula cells; give $c_{j,k}=\langle x,\varphi_{j,k}\rangle$, $d_{j,k}=\langle x,\psi_{j,k}\rangle$ or link to [[Wavelet Transformation]]. **Fixed:** Changed to $x[n]$; moved DWT row before QDWT and filled it with $c_{j,k}=\langle x,\varphi_{j,k}\rangle$, $d_{j,k}=\langle x,\psi_{j,k}\rangle$, the orthogonal inverse, and a link to [[Wavelet Transformation]]
+- [[#N3835|N3835]] Fourier Transformation: In the formula table the QDWT note uses "\( x[n] \)", which Obsidian does not render; use $x[n]$. The DWT row comes after QDWT and has empty formula cells; give $c_{j,k}=\langle x,\varphi_{j,k}\rangle$, $d_{j,k}=\langle x,\psi_{j,k}\rangle$ or link to \[\[Wavelet Transformation\]\]. **Fixed:** Changed to $x[n]$; moved DWT row before QDWT and filled it with $c_{j,k}=\langle x,\varphi_{j,k}\rangle$, $d_{j,k}=\langle x,\psi_{j,k}\rangle$, the orthogonal inverse, and a link to \[\[Wavelet Transformation\]\]
 - [[#N3835|N3835]] Fourier Transformation: The STFT inverse uses $C_w$ and the CWT inverse uses $C_\psi$ without defining them; add $C_w=\int|w(t)|^2dt$ and $C_\psi=\int|\hat\psi(\omega)|^2/|\omega|\,d\omega$ (the latter in the $\omega$ convention, matching integration over both signs of $a$). **Fixed:** Added $C_w=\int w(t)^2dt$ (real window, matches the note's synthesis with $w$) and $C_\psi$ = integral of the squared spectrum magnitude over abs(omega) with the omega FT convention; also added the missing 1/sqrt(abs(a)) factor in the CWT inverse (required for the inversion to hold)
 - [[#N3836|N3836]] Biorthogonal Wavelets: The dual filters are written $\tilde h,\tilde g$ in the text and "(ĥ, ĝ)" in the callout; use one notation (tilde), since a hat elsewhere means a Fourier transform. **Fixed:** Callout now uses $(\tilde h, \tilde g)$; text uses $(\tilde h, \tilde g)$ with parentheses
 - [[#N3837|N3837]] Coiflet (Coif N): "Coif N" is ambiguous: "Coif6, Coif12" use the filter length $6L$, whereas PyWavelets `coifN` (and the pictured coiflet5) use $L$ with $6N$ taps; state which convention the note uses and give the vanishing moments precisely ($2L$ for $\psi$, $2L-1$ for $\varphi$ beyond $\int\varphi=1$) instead of "equal". **Fixed:** Stated PyWavelets/MATLAB convention coifL with N=6L taps (N kept as filter length used in g_k), psi 2L and phi 2L-1 vanishing moments plus int phi=1; callout now names coif1/coif2 (6/12 taps) and mentions length naming; removed zero-width spaces
-- [[#N3838|N3838]] Daubechies‑20 (Db20): The naming convention (20 taps = 10 vanishing moments, i.e. D20) clashes with the [[Haar Wavelet (Db1)]] note title (vanishing-moment convention, where Haar = db1) and with MATLAB/PyWavelets `db20` (40 taps, 20 vanishing moments); state the convention explicitly and use it consistently across the wavelet notes. **Fixed:** Added a naming-convention callout (Db20 = 20 taps = D20 = PyWavelets db10; db20 has 40 taps; Haar note uses db1 convention); file names not changed
+- [[#N3838|N3838]] Daubechies‑20 (Db20): The naming convention (20 taps = 10 vanishing moments, i.e. D20) clashes with the \[\[Haar Wavelet (Db1)\]\] note title (vanishing-moment convention, where Haar = db1) and with MATLAB/PyWavelets `db20` (40 taps, 20 vanishing moments); state the convention explicitly and use it consistently across the wavelet notes. **Fixed:** Added a naming-convention callout (Db20 = 20 taps = D20 = PyWavelets db10; db20 has 40 taps; Haar note uses db1 convention); file names not changed
 - [[#N3838|N3838]] Daubechies‑20 (Db20): The polynomial $a(Z)$ uses the normalization $a(1)=2$ (so $\sum a_k=2$), but the refinement equations use $h_n$ with $\sqrt2$, which needs $\sum h_n=\sqrt2$; state $h_n=a_n/\sqrt2$ and define $a(Z)=\sum_n a_nZ^n$, $p(Z)$, and its degree $A-1$. **Fixed:** Defined $a(Z)=\sum_n a_nZ^n$ with $a(1)=2$, $p(Z)$ of degree $A-1$ with $p(1)=1$, and $h_n=a_n/\sqrt2$ ($\sum h_n=\sqrt2$)
 - [[#N3839|N3839]] Daubechies‑4 (Db4): This 4-tap filter with 2 vanishing moments is `db2` in MATLAB/PyWavelets (where `db4` has 8 taps), and the Haar note calls Haar "Db1" in that vanishing-moment convention; either rename to "D4 (db2)" or add a callout explaining the two naming conventions. **Fixed:** Added a naming-convention callout (Db4 = 4 taps = D4 = PyWavelets db2; db4 has 8 taps); converted CRLF to LF; file name not changed
 - [[#N3842|N3842]] Mexican Hat (Ricker - Marr): "$-\frac{d^2}{dt^2}[e^{-t^2/2}] = \frac{2}{\sqrt3\pi^{1/4}}(1-t^2)e^{-t^2/2}$" is false; the left side is $(1-t^2)e^{-t^2/2}$, so write $\psi(t)=\frac{2}{\sqrt3\pi^{1/4}}\bigl(-\frac{d^2}{dt^2}e^{-t^2/2}\bigr)$. **Fixed:** Moved the normalization factor in front of the negative second derivative
@@ -31,7 +31,7 @@ The review found 22 possible errors or notation conflicts. 22 of them are verifi
 - [[#N3845|N3845]] Wavelet Functions: Shannon has a closed form $\psi(t)=2\,\mathrm{sinc}(2t)-\mathrm{sinc}(t)$, so its "Closed-form ψ(t)?" cell should be ✅, not blank. **Fixed:** Set to ✅ with $\psi(t)=2\,\mathrm{sinc}(2t)-\mathrm{sinc}(t)$
 - [[#N3845|N3845]] Wavelet Functions: Biorthogonal "Adjustable (e.g. 3/5, 9/7 designs)" gives filter lengths, not vanishing moments (CDF 5/3 has 2/2, CDF 9/7 has 4/4); Gaussian "Nth derivative structure (e.g. cgau family)" should be "$p$" (cgau is the separate complex Gaussian family), and "Approximate; non-orthogonal" should just be "non-orthogonal". **Fixed:** Biorthogonal now "CDF 5/3: 2/2, CDF 9/7: 4/4"; Gaussian vanishing moments now "$p$ (p-th derivative)"; orthogonality now "Non-orthogonal"
 - [[#N3845|N3845]] Wavelet Functions: The Daubechies naming is mixed: Haar is "Db1" (vanishing-moment convention), while "Db4" = 4 taps and "Db20" = 20 taps (tap convention); in PyWavelets these would be db2 and db10. Add a note and make the names consistent. **Fixed:** Added alternative names D4/db2 and D20/db10 in the table and a "Daubechies naming" callout explaining both conventions
-- [[#N3846|N3846]] Wavelet Transformation: The CWT formula lacks the complex conjugate: it should be $\psi^*\!\left(\frac{t-b}{a}\right)$ (as in [[Fourier Transformation]]), which matters for complex wavelets such as Morlet. **Fixed:** Changed to $\psi^*((t-b)/a)$ and explained $\psi^*$ in the symbol list
+- [[#N3846|N3846]] Wavelet Transformation: The CWT formula lacks the complex conjugate: it should be $\psi^*\!\left(\frac{t-b}{a}\right)$ (as in \[\[Fourier Transformation\]\]), which matters for complex wavelets such as Morlet. **Fixed:** Changed to $\psi^*((t-b)/a)$ and explained $\psi^*$ in the symbol list
 - [[#N3847|N3847]] Signal Processing: "FIR (Finite Impulse Response) – always stable, linear phase" and "FIR Filters – linear phase, stable": FIR filters are always stable, but have linear phase only when the coefficients are symmetric or antisymmetric; write "can have exactly linear phase". **Fixed:** Both places now say FIR filters are always stable and can have exactly linear phase (symmetric or antisymmetric coefficients)
 
 ## Tracking table
@@ -63,7 +63,7 @@ Priority: high · Graph: yes · Manim: yes
 
 Two formula tables with no prose, intuition, or worked example, and with some row and notation problems.
 
-- [Correctness] In the formula table the QDWT note uses "\( x[n] \)", which Obsidian does not render; use $x[n]$. The DWT row comes after QDWT and has empty formula cells; give $c_{j,k}=\langle x,\varphi_{j,k}\rangle$, $d_{j,k}=\langle x,\psi_{j,k}\rangle$ or link to [[Wavelet Transformation]].
+- [Correctness] In the formula table the QDWT note uses "\( x[n] \)", which Obsidian does not render; use $x[n]$. The DWT row comes after QDWT and has empty formula cells; give $c_{j,k}=\langle x,\varphi_{j,k}\rangle$, $d_{j,k}=\langle x,\psi_{j,k}\rangle$ or link to \[\[Wavelet Transformation\]\].
 - [Correctness] The STFT inverse uses $C_w$ and the CWT inverse uses $C_\psi$ without defining them; add $C_w=\int|w(t)|^2dt$ and $C_\psi=\int|\hat\psi(\omega)|^2/|\omega|\,d\omega$ (the latter in the $\omega$ convention, matching integration over both signs of $a$).
 - [Structure] Add a TLDR and a short prose section explaining the transform as "correlate the signal with $e^{i2\pi ft}$ for each $f$", and explain that "Quantized DFT/DWT" are not standard transform names but DFT/DWT applied to quantized samples.
 - [Graph] Plot a rectangular pulse of width $T=1$ and its spectrum $|X(f)|=|T\,\mathrm{sinc}(fT)|$ for $f\in[-5,5]$, and a second panel with a Gaussian ↔ Gaussian pair, to show the time–bandwidth trade-off.
@@ -100,7 +100,7 @@ Priority: medium · Graph: no · Manim: no
 
 The construction is sketched with a convention that is not linked to the refinement equations, and content is duplicated.
 
-- [Correctness] The naming convention (20 taps = 10 vanishing moments, i.e. D20) clashes with the [[Haar Wavelet (Db1)]] note title (vanishing-moment convention, where Haar = db1) and with MATLAB/PyWavelets `db20` (40 taps, 20 vanishing moments); state the convention explicitly and use it consistently across the wavelet notes.
+- [Correctness] The naming convention (20 taps = 10 vanishing moments, i.e. D20) clashes with the \[\[Haar Wavelet (Db1)\]\] note title (vanishing-moment convention, where Haar = db1) and with MATLAB/PyWavelets `db20` (40 taps, 20 vanishing moments); state the convention explicitly and use it consistently across the wavelet notes.
 - [Correctness] The polynomial $a(Z)$ uses the normalization $a(1)=2$ (so $\sum a_k=2$), but the refinement equations use $h_n$ with $\sqrt2$, which needs $\sum h_n=\sqrt2$; state $h_n=a_n/\sqrt2$ and define $a(Z)=\sum_n a_nZ^n$, $p(Z)$, and its degree $A-1$.
 - [Structure] Lines 9 and 13 both say "spectral factorization yields filter taps"; merge them into one paragraph and give $g_n=(-1)^n h_{19-n}$ explicitly.
 
@@ -124,7 +124,7 @@ Priority: low · Graph: yes · Manim: no
 Correct and compact, but with duplicated bullets, mixed $i/j$ notation, and no normalization.
 
 - [Simplify] The callout repeats the frequency-domain formula with $j$ instead of $i$ and states "p vanishing moments" twice; keep one bullet each and use $i$ consistently.
-- [Intuition] Add that $p\ge1$ is needed (the Gaussian itself is not admissible), that $p=2$ is the negative of the [[Mexican Hat (Ricker - Marr)]] wavelet up to normalization, and that the spectrum peaks at $|\omega|=\sqrt p$.
+- [Intuition] Add that $p\ge1$ is needed (the Gaussian itself is not admissible), that $p=2$ is the negative of the \[\[Mexican Hat (Ricker - Marr)\]\] wavelet up to normalization, and that the spectrum peaks at $|\omega|=\sqrt p$.
 - [Graph] Plot $\psi_p(t)$ for $p=1,2,3,4$ on $t\in[-5,5]$, each normalized to unit $L^2$ norm, with a second panel of $|\hat\psi_p(\omega)|$ on $\omega\in[0,6]$ showing the peak moving to $\sqrt p$.
 
 ### N3841
@@ -134,7 +134,7 @@ Priority: low · Graph: yes · Manim: no
 
 Correct definitions but no explanation of how $\varphi$ and $\psi$ are related or how the transform works.
 
-- [Intuition] Add the two-scale relations $\varphi(t)=\varphi(2t)+\varphi(2t-1)$ and $\psi(t)=\varphi(2t)-\varphi(2t-1)$, i.e. $h=[1,1]/\sqrt2$, $g=[1,-1]/\sqrt2$, linking to [[Father and Mother Wavelets]].
+- [Intuition] Add the two-scale relations $\varphi(t)=\varphi(2t)+\varphi(2t-1)$ and $\psi(t)=\varphi(2t)-\varphi(2t-1)$, i.e. $h=[1,1]/\sqrt2$, $g=[1,-1]/\sqrt2$, linking to \[\[Father and Mother Wavelets\]\].
 - [Example] Work one step of the Haar DWT on $x=[4,6,10,12]$: averages $[10,22]/\sqrt2$ and details $[-2,-2]/\sqrt2$.
 - [Graph] Plot $\psi_{n,k}$ for $(n,k)=(0,0),(1,0),(1,1),(2,1)$ on $t\in[0,1]$ to show how scale and shift tile the interval.
 
@@ -187,7 +187,7 @@ A helpful overview table, but several cells are wrong or inconsistent with the i
 - [Correctness] Biorthogonal "Adjustable (e.g. 3/5, 9/7 designs)" gives filter lengths, not vanishing moments (CDF 5/3 has 2/2, CDF 9/7 has 4/4); Gaussian "Nth derivative structure (e.g. cgau family)" should be "$p$" (cgau is the separate complex Gaussian family), and "Approximate; non-orthogonal" should just be "non-orthogonal".
 - [Correctness] The Daubechies naming is mixed: Haar is "Db1" (vanishing-moment convention), while "Db4" = 4 taps and "Db20" = 20 taps (tap convention); in PyWavelets these would be db2 and db10. Add a note and make the names consistent.
 - [Links] The YouTube source ID "jnxqHcObNK" has 10 characters (IDs have 11), so the link is broken; fix or remove it.
-- [Structure] The empty H2 "Father and Mother Wavelets" should instead be a link to [[Father and Mother Wavelets]] with a one-line description.
+- [Structure] The empty H2 "Father and Mother Wavelets" should instead be a link to \[\[Father and Mother Wavelets\]\] with a one-line description.
 
 ### N3846
 
@@ -196,9 +196,9 @@ Priority: medium · Graph: yes · Manim: yes
 
 A clear STFT-vs-wavelet motivation that stops before the inverse, admissibility, or discrete transform.
 
-- [Correctness] The CWT formula lacks the complex conjugate: it should be $\psi^*\!\left(\frac{t-b}{a}\right)$ (as in [[Fourier Transformation]]), which matters for complex wavelets such as Morlet.
+- [Correctness] The CWT formula lacks the complex conjugate: it should be $\psi^*\!\left(\frac{t-b}{a}\right)$ (as in \[\[Fourier Transformation\]\]), which matters for complex wavelets such as Morlet.
 - [Intuition] Quantify the trade-off with the Heisenberg box: $\Delta t\,\Delta\omega\ge\frac12$ for any window, with STFT boxes of fixed shape and wavelet boxes scaling as $a\Delta t\times\Delta\omega/a$, and relate scale to frequency ($\omega\approx\omega_0/a$).
-- [Structure] Add short sections on admissibility/inverse and on the dyadic DWT ($a=2^{-j}$, $b=k2^{-j}$) with links to [[Father and Mother Wavelets]] and [[Wavelet Functions]].
+- [Structure] Add short sections on admissibility/inverse and on the dyadic DWT ($a=2^{-j}$, $b=k2^{-j}$) with links to \[\[Father and Mother Wavelets\]\] and \[\[Wavelet Functions\]\].
 - [Graph] Draw the time–frequency tiling: equal rectangles for the STFT next to dyadic rectangles (wide in time at low frequency, narrow at high frequency) for the wavelet transform.
 - [Manim] Animate a Mexican-hat wavelet sliding over a chirp $x(t)=\sin(2\pi(1+2t)t)$ at three scales while the scalogram $|W(a,b)|$ fills in row by row.
 
@@ -211,5 +211,5 @@ A broad topic hub with heavily duplicated sections, one wrong claim about FIR fi
 
 - [Correctness] "FIR (Finite Impulse Response) – always stable, linear phase" and "FIR Filters – linear phase, stable": FIR filters are always stable, but have linear phase only when the coefficients are symmetric or antisymmetric; write "can have exactly linear phase".
 - [Structure] Merge the duplicated sections: "Basic Filters", "Filtering & Signal Shaping" and "Advanced Filters & Estimation" repeat Kalman, Wiener, matched, adaptive and notch filters; "Spectral Analysis" and "Spectral Analysis & Estimation" repeat each other; "Synchronization" repeats the carrier and timing recovery items; "Special DSP Tools" and "Other Useful DSP Techniques" overlap; "Oversampling" appears twice under Sampling with mixed tab and space indentation.
-- [Links] Link the existing notes [[Fourier Transformation]], [[Wavelet Transformation]] and [[Wavelet Functions]] from the "Transforms" list.
+- [Links] Link the existing notes \[\[Fourier Transformation\]\], \[\[Wavelet Transformation\]\] and \[\[Wavelet Functions\]\] from the "Transforms" list.
 - [Simplify] Small fixes: "Hanning" → Hann; "Band-stop / Notch filter – rejects a narrow band" (band-stop rejects a band, notch a narrow one); "Fractional resampling – rational factor" (rational vs arbitrary/fractional are different cases).

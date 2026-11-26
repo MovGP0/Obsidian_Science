@@ -63,7 +63,7 @@ A short, correct note on the threshold invariant; the threshold formula $E_{\gam
 
 - [Example] After the threshold formula, add the number: with $m_pc^2=938.3$ MeV and $m_{\pi^0}c^2=135.0$ MeV, $E_{\gamma,\mathrm{thr}}\approx144.7$ MeV. Compare it with the naive $135$ MeV to show the size of the recoil correction.
 - [Simplify] Write the lab expansion of $s$ in one explicit line, $s=(E_\gamma+m_pc^2)^2-E_\gamma^2=m_p^2c^4+2m_pc^2E_\gamma$, so the reader sees how the $E_\gamma^2$ terms cancel.
-- [Structure] Give the general fixed-target threshold $E_{1,\mathrm{th}}=[(\sum m_f)^2-m_1^2-m_2^2]c^2/(2m_2)$ and link to the worked $pp\to pp\pi^0$ example in [[Relativistic collisions, decays, and threshold exercises#2. Threshold for neutral pion production]].
+- [Structure] Give the general fixed-target threshold $E_{1,\mathrm{th}}=[(\sum m_f)^2-m_1^2-m_2^2]c^2/(2m_2)$ and link to the worked $pp\to pp\pi^0$ example in \[\[Relativistic collisions, decays, and threshold exercises#2. Threshold for neutral pion production\]\].
 - [Graph] Plot the threshold $E_{\mathrm{thr}}/(m_\pi c^2)=1+m_\pi/(2M)$ against the target mass $M/m_\pi$ from 0.5 to 50, showing that it falls toward 1 as the target gets heavy (the heavy-target limit mentioned in the text).
 
 ### N3257
@@ -168,7 +168,7 @@ A fragmentary stub with wrong formulas and an outdated imaginary-time framing; i
 - [Correctness] "$dl^2=dx^2+dt^2$" is wrong: the spatial line element is $dl^2=dx^2+dy^2+dz^2$, and time does not enter.
 - [Correctness] "$ds^2=\eta_xdx^2+\eta_tdt^2$ with $\eta_t=-1$" drops $c^2$, which makes it dimensionally inconsistent. Write $ds^2=\eta_{\mu\nu}dx^\mu dx^\nu$ with $x^0=ct$ and $\eta=\mathrm{diag}(-1,1,1,1)$.
 - [Correctness] $ds=\sqrt{dx^2+dy^2+dz^2-c^2dt^2}$ is imaginary for timelike separations. Define $ds^2$ as the invariant, and $d\tau=\sqrt{-ds^2}/c$ for timelike pairs.
-- [Structure] Mark the $ict$ (imaginary time) remark as a historical convention no longer used. Add frontmatter, a TLDR, macros and a physical-quantities table. Consider merging this stub into [[Spacetime Interval]] or into "Lorentz transformations and spacetime diagram problems".
+- [Structure] Mark the $ict$ (imaginary time) remark as a historical convention no longer used. Add frontmatter, a TLDR, macros and a physical-quantities table. Consider merging this stub into \[\[Spacetime Interval\]\] or into "Lorentz transformations and spacetime diagram problems".
 
 ### N3265
 

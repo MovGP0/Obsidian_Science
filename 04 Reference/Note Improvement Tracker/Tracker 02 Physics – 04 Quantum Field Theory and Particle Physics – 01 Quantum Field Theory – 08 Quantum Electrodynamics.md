@@ -93,7 +93,7 @@ Priority: low · Graph: no · Manim: no
 
 Readable chapter introduction and hub, with vague precision claims and one missing child link.
 
-- [Links] The closing sentence links 08.01.01 and 08.01.02 but not [[08.01.03 Physical Content of the Lagrangian]]; add it.
+- [Links] The closing sentence links 08.01.01 and 08.01.02 but not \[\[08.01.03 Physical Content of the Lagrangian\]\]; add it.
 - [Example] Replace "more than ten decimal places" with the actual comparison (measured $\magnetic{a}_e=0.001\,159\,652\,180\,59(13)$, 2023) and flag the Feynman quote as unverified attribution.
 
 ### N2631
@@ -136,7 +136,7 @@ Priority: low · Graph: no · Manim: no
 Correct compact rule list; the incoming electron is pulled out of the table for no reason.
 
 - [Structure] Put the incoming electron $u^s(\mechanical{p})$ into the external-state table with the other five rows.
-- [Links] Link "Chapter 7" to [[07.05 Feynman Rules for QED]] and [[07.05.06 Summary Table of Feynman Rules for QED]].
+- [Links] Link "Chapter 7" to \[\[07.05 Feynman Rules for QED\]\] and \[\[07.05.06 Summary Table of Feynman Rules for QED\]\].
 
 ### N2635
 
@@ -520,7 +520,7 @@ Priority: medium · Graph: no · Manim: no
 
 Correct statement of the Ward identity, but Example 8.7 describes the Compton cancellation only in words and never shows the algebra.
 
-- [Example] In Example 8.7 write the two key lines explicitly: $(\not p+\not k+m)\not k\,u(p)=2p\cdot k\,u(p)$ and $\bar u(p')\not k(\not p-\not k'+m)=2p\cdot k'\,\bar u(p')$, so the reader sees each diagram reduce to $\mp e^2\bar u(p')\gamma_\nu u(p)$; or link [[08.16.08 Tree-level Compton Ward identity]] where this is done.
+- [Example] In Example 8.7 write the two key lines explicitly: $(\not p+\not k+m)\not k\,u(p)=2p\cdot k\,u(p)$ and $\bar u(p')\not k(\not p-\not k'+m)=2p\cdot k'\,\bar u(p')$, so the reader sees each diagram reduce to $\mp e^2\bar u(p')\gamma_\nu u(p)$; or link \[\[08.16.08 Tree-level Compton Ward identity\]\] where this is done.
 - [Simplify] The paragraph "The physical consequence is invariance under adding a multiple of the photon momentum to its polarization" should show the one-line reason: $\epsilon_\mu\to\epsilon_\mu+c\,q_\mu$ changes $\epsilon_\mu\mathcal M^\mu$ by $c\,q_\mu\mathcal M^\mu=0$.
 - [Intuition] Explain briefly why only the sum of diagrams satisfies (8.20): gauge invariance is a property of the full amplitude, and a single diagram changes under the replacement.
 - [Structure] The table entry "q_i and q_j label individual photons" uses plain text instead of $q_i,q_j$; use inline math for consistency.
@@ -532,7 +532,7 @@ Priority: low · Graph: no · Manim: no
 
 Short and clear hub that separates the fixed-angle massless limit from the Regge limit.
 
-- [Example] Name one concrete case for the closing sentence on mass logarithms, for example the Compton total cross section $\propto\ln(s/m_e^2)$ in [[08.15 Summary of Fundamental Processes]], to make "mass logarithms" tangible.
+- [Example] Name one concrete case for the closing sentence on mass logarithms, for example the Compton total cross section $\propto\ln(s/m_e^2)$ in \[\[08.15 Summary of Fundamental Processes\]\], to make "mass logarithms" tangible.
 
 ### N2673
 
@@ -543,7 +543,7 @@ Correct helicity amplitudes with a careful anomaly caveat; the angular-momentum 
 
 - [Intuition] Add the angular-momentum picture: the initial $e_L^-e_R^+$ pair has $J_z=-1$ along the beam, the final pair has $J=1$ with projection $\mp1$ along the muon direction, and the amplitudes are proportional to $d^1_{-1,\mp1}(\theta)=(1\pm\cos\theta)/2$ (up to phase conventions); this explains both factors at once.
 - [Graph] Plot $(1+\cos\theta)^2$, $(1-\cos\theta)^2$ and their sum $2(1+\cos^2\theta)$ for $\theta\in[0,\pi]$, showing how the two helicity channels add to the unpolarized $1+\cos^2\theta$ distribution.
-- [Links] Link to [[08.16.04 Muon-pair angular distribution]] so the reader sees that summing the four nonzero squared helicity amplitudes reproduces $1+\cos^2\theta$.
+- [Links] Link to \[\[08.16.04 Muon-pair angular distribution\]\] so the reader sees that summing the four nonzero squared helicity amplitudes reproduces $1+\cos^2\theta$.
 
 ### N2674
 

@@ -60,7 +60,7 @@ All derivations and numbers (Sackur-Tetrode derivatives, 1D gas entropy, Schottk
 - [Graph] Plot $C/(Nk_B)=y^2\operatorname{sech}^2y$ versus $k_BT/(\mu B)=1/y$ on $[0,4]$ with the peak at $(0.834, 0.439)$ marked (Ex. 3.4b).
 - [Graph] For Ex. 3.5, plot $S/(Nk_B)$ from (13.8) and $\mu B/(k_BT)=\tfrac12\ln[(1-\varepsilon)/(1+\varepsilon)]$ versus $\varepsilon\in(-1,1)$ on shared axes, showing the entropy maximum and the sign change of $1/T$ at $\varepsilon=0$.
 - [Simplify] In Ex. 3.1 the asymptotic section presents both an exact $O(1)$ result and the source's looser $O(\ln N)$ bound plus two callouts; keep the exact difference $-\ln(k_BT/E_{\mathrm{ref}})$ and one sentence on why it is negligible.
-- [Links] Turn plain equation references such as "(3.5)", "(3.13)", "(3.17)" into links to their notes (e.g. [[03.04.02 Explicit Calculation of Φ(E)]], [[03.06.01 Complete Derivation]], [[03.08 Worked Examples]]).
+- [Links] Turn plain equation references such as "(3.5)", "(3.13)", "(3.17)" into links to their notes (e.g. \[\[03.04.02 Explicit Calculation of Φ(E)\]\], \[\[03.06.01 Complete Derivation\]\], \[\[03.08 Worked Examples\]\]).
 
 ### N1665
 
@@ -73,7 +73,7 @@ Derivations are correct (three-level derivative, peak $x^*\approx1.881$, $C^*\ap
 - [Graph] Plot $C/k_B$ versus $k_BT/\varepsilon$ on $[0,3]$ for the three-level system (13.10) together with the two-level Schottky curve, marking the peaks at $k_BT/\varepsilon=1/1.881$ ($0.637$) and $1/2.40$ ($0.439$).
 - [Graph] Plot the rotational heat capacity per molecule $c_V^{\mathrm{rot}}/k_B$ versus $T/\Theta_{\mathrm{rot}}$ on $[0,3]$ from a numerical sum of (13.11), showing the freeze-out and the overshoot above 1 predicted by $1+\Theta^2/(45T^2)$.
 - [Simplify] In Ex. 4.5 the final two paragraphs on the zero-field endpoint and the callout on sweep-rate sign could be cut to one sentence each; the core result (13.14) is clear without them.
-- [Links] Link "Equation (4.13)", "(4.15)", "(4.17)", "(4.18)" and "Theorem 4.1" to their notes (e.g. [[04.07.02 Quantum Oscillator]], [[04.09.01 Hamiltonian Function and Partition Function]], [[04.11 Solved Examples]]).
+- [Links] Link "Equation (4.13)", "(4.15)", "(4.17)", "(4.18)" and "Theorem 4.1" to their notes (e.g. \[\[04.07.02 Quantum Oscillator\]\], \[\[04.09.01 Hamiltonian Function and Partition Function\]\], \[\[04.11 Solved Examples\]\]).
 
 ### N1666
 

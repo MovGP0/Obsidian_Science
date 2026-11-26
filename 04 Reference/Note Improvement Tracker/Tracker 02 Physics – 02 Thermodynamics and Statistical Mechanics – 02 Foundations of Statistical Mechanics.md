@@ -136,7 +136,7 @@ Short, correct note with a good native oscillator phase portrait and a careful r
 - [Simplify] The sentence "Confusing the ellipse with its enclosed area changes a shell count into a cumulative count" mixes three objects; rewrite as: the curve has zero area, the full enclosed area $\Sigma(E)$ is the cumulative count of states below $E$, and only the annulus $\Delta\Gamma$ counts states in $[E,E+\Delta E]$; also move "Fig. 2.1 shows trajectories of one particle in one dimension" before the first mention of Fig. 2.1.
 - [Structure] The figure labels the ellipses $E_1,E_2,E_3$ and shades the annulus between $E_2$ and $E_3$, while the caption speaks of $[E,E+\Delta E]$; either relabel the inner and outer shaded boundaries as $E$ and $E+\Delta E$ or say in the caption that the shaded band is $[E_2,E_3]$.
 - [Example] Add the one-line calculation: the ellipse area is $\pi\sqrt{2mE}\sqrt{2E/k}=2\pi E/\omega$ with $\omega=\sqrt{k/m}$, so $\Sigma(E)/h=E/(\hbar\omega)$ and the annulus holds $\Delta E/(\hbar\omega)$ states, which shows concretely why one cell of area $h$ corresponds to one oscillator level.
-- [Manim] Animate a small patch of phase points flowing around the oscillator ellipses (rigid rotation in scaled coordinates) to show that the patch area, and the annulus, is preserved in time, linking to [[02.03 Liouville's Theorem]].
+- [Manim] Animate a small patch of phase points flowing around the oscillator ellipses (rigid rotation in scaled coordinates) to show that the patch area, and the annulus, is preserved in time, linking to \[\[02.03 Liouville's Theorem\]\].
 
 ### N1223
 
@@ -346,7 +346,7 @@ Priority: low · Graph: no · Manim: no
 
 Clear and balanced assessment of the four justifications with a correct uniqueness clarification.
 
-- No change needed; optionally link point 1 to [[02.04.02 Ergodic Hypothesis]] and point 3 to [[02.03.04 Consequences of Liouville's Theorem]].
+- No change needed; optionally link point 1 to \[\[02.04.02 Ergodic Hypothesis\]\] and point 3 to \[\[02.03.04 Consequences of Liouville's Theorem\]\].
 
 ### N1244
 
@@ -412,4 +412,4 @@ Priority: low · Graph: no · Manim: no
 
 A correct and compact chapter summary.
 
-- [Links] Add a wiki link to the corresponding section note in each numbered item (for example [[02.03 Liouville's Theorem]], [[02.04 Ergodic Hypothesis]], [[02.05 Boltzmann Entropy]], [[02.06 Gibbs Entropy]], [[02.07 Fundamental Postulate of Statistical Mechanics]]) and link the next chapter as [[03.00 Microcanonical Ensemble]].
+- [Links] Add a wiki link to the corresponding section note in each numbered item (for example \[\[02.03 Liouville's Theorem\]\], \[\[02.04 Ergodic Hypothesis\]\], \[\[02.05 Boltzmann Entropy\]\], \[\[02.06 Gibbs Entropy\]\], \[\[02.07 Fundamental Postulate of Statistical Mechanics\]\]) and link the next chapter as \[\[03.00 Microcanonical Ensemble\]\].

@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Calculus of variations — learning guide"
 catalogue_ids:
   - "10"
@@ -78,7 +78,7 @@ Start with [[Functionals and stationary curves]] for the first-variation derivat
 <!-- catalogue-complete-lesson-index:start -->
 ## Complete lesson index
 
-Read the prerequisite route above before the advanced lessons. The source topic links are in [[Planned Topics#10. Calculus of variations|the detailed catalogue]].
+Read the prerequisite route above before the advanced lessons.
 
 - [[Classical curve problems|Classical curve problems]] — 10.2, 10.2.1, 10.2.2.
 - [[Functionals and stationary curves|Functionals and stationary curves]] — 10.3, 10.3.1, 10.3.2.

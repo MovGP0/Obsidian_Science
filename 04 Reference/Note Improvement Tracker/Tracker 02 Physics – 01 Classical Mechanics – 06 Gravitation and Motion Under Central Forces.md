@@ -91,7 +91,7 @@ The note is correct and compact, but it states the areal-velocity result without
 - [Intuition] Add one sentence explaining planarity physically: the force always lies in the plane spanned by $\mechanical{\vec r}$ and $\mechanical{\vec v}$, so it can never push the particle out of that plane; mention the degenerate case $\mechanical{\vec L}=\vec 0$ (motion along a radial line).
 - [Example] Add a contrast case: a non-central force (for example a constant force whose line of action misses $O$) produces torque and changes $\mechanical{\vec L}$, so the reader sees what the theorem excludes.
 - [Manim] Animate Newton's geometric construction: a particle moves in straight segments for equal time steps, receives impulses directed toward $O$, and the shaded triangles $O P_n P_{n+1}$ are shown to have equal area at each step.
-- [Links] Link "Kepler's second law" to [[06.08 Kepler's Three Laws]] and the later use of $\mechanical{L}$ in the effective potential to [[06.05 Two-Body Problem]].
+- [Links] Link "Kepler's second law" to \[\[06.08 Kepler's Three Laws\]\] and the later use of $\mechanical{L}$ in the effective potential to \[\[06.05 Two-Body Problem\]\].
 
 ### N0920
 
@@ -139,7 +139,7 @@ Priority: medium · Graph: yes · Manim: yes
 
 The summary of the laws is correct, but the note only asserts that they follow from Newtonian gravity, without pointing to each derivation or showing the laws visually.
 
-- [Structure] After each law, add a one-line pointer to its derivation: law 1 from the orbit equation in [[06.06 Keplerian Orbits]], law 2 from conservation of $\mechanical{L}$ in [[06.04 Central Forces and Conservation of Angular Momentum]], and law 3 from the ellipse area divided by the areal velocity.
+- [Structure] After each law, add a one-line pointer to its derivation: law 1 from the orbit equation in \[\[06.06 Keplerian Orbits\]\], law 2 from conservation of $\mechanical{L}$ in \[\[06.04 Central Forces and Conservation of Angular Momentum\]\], and law 3 from the ellipse area divided by the areal velocity.
 - [Intuition] Explain what law 2 implies physically: the planet moves fastest at perihelion and slowest at aphelion, with $\mechanical{v}_p/\mechanical{v}_a=\mechanical{r}_a/\mechanical{r}_p$ (for Earth, about a 3.4% difference).
 - [Graph] Log–log plot of $\signal{T}$ in years versus $\mechanical{a}$ in AU for the eight planets using standard tabulated values, together with the line $\signal{T}=\mechanical{a}^{3/2}$; the slope of 3/2 makes law 3 visible at a glance.
 - [Manim] Animate a planet on an ellipse with $e\approx0.6$ and the Sun at a focus, shading the area swept in three equal time intervals (near perihelion, midway, near aphelion) to show equal wedge areas while the planet's speed changes.
@@ -168,7 +168,7 @@ The statements are correct, but the note gives the theorem without derivation or
 - [Simplify] Add the short derivation: define $G_v=\mechanical{\vec p}\cdot\mechanical{\vec r}$, note $dG_v/dt=2\energy{K}+\mechanical{\vec F}\cdot\mechanical{\vec r}$, time-average over bounded motion so the left side vanishes, and use $\mechanical{\vec F}\cdot\mechanical{\vec r}=-n\energy{U}$ for $\energy{U}\propto\mechanical{r}^n$.
 - [Intuition] State the assumptions explicitly (bounded positions and momenta, long-time average, power-law potential) and explain why averages are needed: on an ellipse $2\energy{K}\ne-\energy{U}$ at most instants.
 - [Graph] Plot $\energy{K}(t)$, $\energy{U}(t)$ and $\energy{E}$ over one period of an $e=0.5$ Kepler orbit in normalized units, with horizontal lines at $\langle\energy{K}\rangle$ and $\langle\energy{U}\rangle$ showing $\langle\energy{U}\rangle=-2\langle\energy{K}\rangle$.
-- [Example] Add a worked estimate: the circular-orbit check linked to [[06.09 Escape Velocity and Binding Energy]], or an order-of-magnitude galaxy-cluster mass $\mechanical{M}\sim\langle\mechanical{v}^2\rangle\mechanical{R}/\mechanical{G}$ with its caveats.
+- [Example] Add a worked estimate: the circular-orbit check linked to \[\[06.09 Escape Velocity and Binding Energy\]\], or an order-of-magnitude galaxy-cluster mass $\mechanical{M}\sim\langle\mechanical{v}^2\rangle\mechanical{R}/\mechanical{G}$ with its caveats.
 - [Structure] Rename the callout "Analytical Mechanics" to something that matches its content (e.g. "Applications"), since it lists applications rather than an analytical-mechanics viewpoint.
 
 ### N0926
@@ -228,7 +228,7 @@ Priority: medium · Graph: yes · Manim: yes
 
 The values are correct, but the note does not derive the first two velocities or explain how Earth's orbital speed enters the third.
 
-- [Simplify] Derive $\mechanical{v}_1$ from $\mechanical{m}\mechanical{v}^2/\mechanical{R}_E=\mechanical{m}\mechanical{g}$ and $\mechanical{v}_2$ from $\energy{E}=0$, using $\mechanical{g}=\mechanical{G}\mechanical{M}_E/\mechanical{R}_E^2$; link to [[06.09 Escape Velocity and Binding Energy]].
+- [Simplify] Derive $\mechanical{v}_1$ from $\mechanical{m}\mechanical{v}^2/\mechanical{R}_E=\mechanical{m}\mechanical{g}$ and $\mechanical{v}_2$ from $\energy{E}=0$, using $\mechanical{g}=\mechanical{G}\mechanical{M}_E/\mechanical{R}_E^2$; link to \[\[06.09 Escape Velocity and Binding Energy\]\].
 - [Example] Sketch the $\mechanical{v}_3$ calculation: solar escape speed at 1 AU is about $\quantity{42.1}{km\,s^{-1}}$; subtracting Earth's orbital speed of $\quantity{29.8}{km\,s^{-1}}$ leaves a hyperbolic excess of $\quantity{12.3}{km\,s^{-1}}$, and $\mechanical{v}_3=\sqrt{\mechanical{v}_2^2+12.3^2}\approx\quantity{16.6}{km\,s^{-1}}$.
 - [Graph] Plot launch trajectories (Newton's cannon) from a point on Earth's surface for horizontal speeds $0.6\mechanical{v}_1$, $0.9\mechanical{v}_1$, $\mechanical{v}_1$, $1.2\mechanical{v}_1$ and $\mechanical{v}_2$ as conics with Earth's centre at the focus.
 - [Manim] Animate Newton's cannon: projectiles launched horizontally with increasing speed fall back to the ground, then circle Earth at $\mechanical{v}_1$, then follow ellipses, and finally escape on a parabola at $\mechanical{v}_2$.

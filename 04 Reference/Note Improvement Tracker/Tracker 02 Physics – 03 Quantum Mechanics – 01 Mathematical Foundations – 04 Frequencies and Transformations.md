@@ -75,11 +75,11 @@ Priority: medium · Graph: yes · Manim: yes
 
 Correct and compact, but the projection derivation is described in words only and the note jumps quickly to $L^2$ subtleties without a concrete picture.
 
-- [Simplify] Write out the orthogonality step as an equation, $\int_{-L}^{L}e^{i(n-m)\pi x/L}dx=2L\delta_{nm}$, and link [[03 Exercise 3]] where it is proved, instead of describing "the surviving integral is $2L$" only in prose.
+- [Simplify] Write out the orthogonality step as an equation, $\int_{-L}^{L}e^{i(n-m)\pi x/L}dx=2L\delta_{nm}$, and link \[\[03 Exercise 3\]\] where it is proved, instead of describing "the surviving integral is $2L$" only in prose.
 - [Example] Add a two-line worked example, e.g. $f(x)=\cos(\pi x/L)$ giving $c_{\pm1}=1/2$ and all others zero, to show that a real cosine needs a pair of opposite harmonics.
 - [Graph] Plot the real and imaginary parts of $e^{in\pi x/L}$ for $n=1,2,3$ on $[-L,L]$ (take $L=1$) to show that each mode completes exactly $n$ cycles per period, which is the origin of orthogonality.
 - [Manim] Animate a rotating phasor $e^{in\pi x/L}$ as $x$ sweeps one period for $n=1,2,3$ next to its real-part trace, showing integer winding numbers.
-- [Links] The sentence about orthogonal projection could link the Hilbert-space note [[03 Orthonormal Bases]] (Chapter 8), where projection and norm convergence are developed.
+- [Links] The sentence about orthogonal projection could link the Hilbert-space note \[\[03 Orthonormal Bases\]\] (Chapter 8), where projection and norm convergence are developed.
 
 ### N1916
 
@@ -101,7 +101,7 @@ All three derivations and the Basel and alternating checks are correct, but the 
 - [Graph] Plot $x$ and its partial sums $2\sum_{n=1}^{N}(-1)^{n+1}\sin(nx)/n$ for $N=3,10$ on $[-3\pi,3\pi]$ to show the sawtooth periodic extension and the jumps at odd multiples of $\pi$.
 - [Graph] Plot $x^2$ and the partial sums $\pi^2/3+4\sum_{n=1}^{N}(-1)^n\cos(nx)/n^2$ for $N=1,3$ on $[-3\pi,3\pi]$; the close fit at $N=3$ illustrates the faster $1/n^2$ convergence claimed in the introduction.
 - [Graph] A log-log plot of $|b_n|$ for $x$ and $|a_n|$ for $x^2$ versus $n=1..50$ would show the slopes $-1$ and $-2$ predicted by the endpoint test.
-- [Structure] The $x$ example applies the real-form Parseval relation before it is introduced in [[05 Parseval's Relation]] (and its real form only appears in Common Errors); state $\tfrac1\pi\int|f|^2=a_0^2/2+\sum(a_n^2+b_n^2)$ here and link it.
+- [Structure] The $x$ example applies the real-form Parseval relation before it is introduced in \[\[05 Parseval's Relation\]\] (and its real form only appears in Common Errors); state $\tfrac1\pi\int|f|^2=a_0^2/2+\sum(a_n^2+b_n^2)$ here and link it.
 - [Simplify] Replace "dated 1734 in the source" with a plain historical statement (Euler, solved 1734, published 1735) and drop the source meta-commentary.
 
 ### N1918
@@ -113,9 +113,9 @@ Mathematically correct with a good existing Gibbs figure, but the norm-versus-po
 
 - [Structure] Rewrite the "[!note]" about the source legend and caption as plain content (N is the highest harmonic, $N=5$ has three terms, $N=25$ thirteen, and the overshoot is $\approx0.179$ above 1, i.e. $\approx8.95\%$ of the jump 2) without referring to "the source".
 - [Simplify] The sentence "Convergence to $f$ at a specified point depends on its assigned value; the Fourier coefficients and their series limit do not" is hard to parse; let the concrete $f(0)=7$ example that follows carry the point.
-- [Intuition] State the limiting value explicitly: the first peak of the partial sums tends to $\tfrac2\pi\operatorname{Si}(\pi)\approx1.179$ and sits at $x=\pi/(N+1)$ for highest harmonic $N$; link [[08 Exercise 8]] where this is derived.
+- [Intuition] State the limiting value explicitly: the first peak of the partial sums tends to $\tfrac2\pi\operatorname{Si}(\pi)\approx1.179$ and sits at $x=\pi/(N+1)$ for highest harmonic $N$; link \[\[08 Exercise 8\]\] where this is derived.
 - [Manim] Animate the sign-function partial sums as odd harmonics are added one at a time (up to $N\approx49$), keeping a fixed overshoot marker while the peak slides toward $x=0$; the motion shows persistent height and shrinking width better than two static curves.
-- [Links] The final paragraph on finite kinetic energy could link the box-state section of [[12 Fourier Series/06 Common Errors|Common errors]], where the condition $\sum n^2|c_n|^2<\infty$ is stated.
+- [Links] The final paragraph on finite kinetic energy could link the box-state section of \[\[12 Fourier Series/06 Common Errors|Common errors\]\], where the condition $\sum n^2|c_n|^2<\infty$ is stated.
 
 ### N1919
 
@@ -124,7 +124,7 @@ Priority: low · Graph: yes · Manim: no
 
 Correct and well normalized, with a useful best-approximation remark; it lacks a worked numerical example.
 
-- [Links] Turn "the Parseval identity from Chapter 8" into a wiki link to [[03 Orthonormal Bases]] in the Hilbert Space chapter, where the identity and its finite-sum proof appear.
+- [Links] Turn "the Parseval identity from Chapter 8" into a wiki link to \[\[03 Orthonormal Bases\]\] in the Hilbert Space chapter, where the identity and its finite-sum proof appear.
 - [Example] Add the sign-function example: $\tfrac1{2\pi}\int_{-\pi}^{\pi}|\operatorname{sgn}|^2dx=1=\sum|c_n|^2$ with $|c_{\pm n}|=2/(n\pi)$ for odd $n$ gives $\sum_{\text{odd}}1/n^2=\pi^2/8$.
 - [Graph] Plot the relative mean-square error $1-\tfrac{8}{\pi^2}\sum_{k=0}^{K}(2k+1)^{-2}$ of the sign-function series versus $K=0..30$ (log y-axis) to visualize the finite identity and the slow $1/K$ decay.
 
@@ -177,7 +177,7 @@ Priority: low · Graph: no · Manim: no
 
 Correct and clear; it duplicates the sign-function example of the main text, which the note acknowledges.
 
-- [Links] Link "the sign-function example" to [[03 Examples of Fourier Series#Example — The sign function]] and the Gibbs figure in [[04 Convergence and the Gibbs Phenomenon]] instead of only naming them.
+- [Links] Link "the sign-function example" to \[\[03 Examples of Fourier Series#Example — The sign function\]\] and the Gibbs figure in \[\[04 Convergence and the Gibbs Phenomenon\]\] instead of only naming them.
 
 ### N1925
 
@@ -195,7 +195,7 @@ Priority: low · Graph: no · Manim: no
 
 Correct derivation (integral $8\pi^4/45$ and $\pi^4/90$ verified) with good sanity checks.
 
-- [Links] Note that the nonconstant coefficients equal those of $x^2$ in [[03 Examples of Fourier Series#Example — The function f(x) = x²]] and link there, so the integration by parts need not be repeated.
+- [Links] Note that the nonconstant coefficients equal those of $x^2$ in \[\[03 Examples of Fourier Series#Example — The function f(x) = x²\]\] and link there, so the integration by parts need not be repeated.
 
 ### N1927
 
@@ -205,7 +205,7 @@ Priority: low · Graph: yes · Manim: no
 Correct throughout (normalization, $c_n$, $S_5\approx0.999999048$, $P(E_1)\approx0.998555$, $P(E_3)\approx0.00136976$ all verified) and clearly motivated.
 
 - [Graph] Plot the scaled state $\sqrt{30}\,y(1-y)$ and the single-mode approximation $c_1\sqrt2\sin(\pi y)$ on $y\in[0,1]$ to show why $P(E_1)\approx0.9986$; the curves are almost indistinguishable.
-- [Intuition] Add one sentence noting that the $n^{-3}$ coefficient decay (and $n^{-6}$ probabilities) reflects that the odd periodic extension of the parabola is continuous with continuous first derivative, linking the smoothness-decay rule from [[03 Examples of Fourier Series]].
+- [Intuition] Add one sentence noting that the $n^{-3}$ coefficient decay (and $n^{-6}$ probabilities) reflects that the odd periodic extension of the parabola is continuous with continuous first derivative, linking the smoothness-decay rule from \[\[03 Examples of Fourier Series\]\].
 
 ### N1928
 
@@ -258,7 +258,7 @@ The formal limit (including $2Lc_n\to\sqrt{2\pi}\hat f(k_n)$ and $d_n\approx\sqr
 - [Graph] Plot stems of $2Lc_n/\sqrt{2\pi}$ at $k_n=n\pi/L$ for $L=3$ and $L=10$ over $k\in[-6,6]$ together with the continuous $\hat f(k)=\sqrt{2/\pi}/(1+k^2)$ for $f=e^{-|x|}$, to show the spacing $\Delta k=\pi/L$ shrinking onto the transform.
 - [Manim] Animate $L$ growing from 2 to 30: the periodic extension of $f$ on $[-L,L]$ spreads its copies apart while the discrete spectral stems (scaled by $2L$) densify onto the continuous $\hat f(k)$.
 - [Structure] Remove the meta references to "the source" in the closing note (e.g. "The source states the integral formulas for $f\in L^2$") and state the $L^2$ extension directly; the reader has no access to the source.
-- [Intuition] Before the definition box, add one sentence explaining why the symmetric $1/\sqrt{2\pi}$ split is chosen here (it makes $\mathcal F$ unitary, so Parseval has no extra factor), linking to the Parseval row in [[02 Basic Properties]].
+- [Intuition] Before the definition box, add one sentence explaining why the symmetric $1/\sqrt{2\pi}$ split is chosen here (it makes $\mathcal F$ unitary, so Parseval has no extra factor), linking to the Parseval row in \[\[02 Basic Properties\]\].
 
 ### N1933
 
@@ -318,7 +318,7 @@ Priority: medium · Graph: no · Manim: no
 Formulas are correct (including $\mathcal F[fg]=\hat f*\hat g/\sqrt{2\pi}$), but the note mixes an error list with a substantial quantum-application section and contains editorial commentary on "the source".
 
 - [Structure] Rewrite Error 4 so it does not say "The source heading says ... That statement is incorrect"; title it directly, e.g. "Every $L^2$ function has a transform, but not every function is in $L^2$", and keep the plane-wave example.
-- [Structure] Consider moving the "Quantum mechanics — Position–momentum duality" section and the one after it into [[05 Position-Momentum Duality]], or rename the note to match the hub label "Common errors and quantum applications"; the heading "A stationary equation is not an ordinary probability distribution" is confusing and could read "No normalizable free-particle energy eigenstate".
+- [Structure] Consider moving the "Quantum mechanics — Position–momentum duality" section and the one after it into \[\[05 Position-Momentum Duality\]\], or rename the note to match the hub label "Common errors and quantum applications"; the heading "A stationary equation is not an ordinary probability distribution" is confusing and could read "No normalizable free-particle energy eigenstate".
 - [Example] Give Error 2 a concrete counterexample: for $f=g=e^{-x^2/2}$, $\mathcal F[fg]=e^{-k^2/4}/\sqrt2$ while $\hat f\hat g=e^{-k^2}$.
 - [Intuition] Under Error 3, add the nascent-Gaussian check $\int\delta_\sigma^2dx=1/(2\sigma\sqrt\pi)\to\infty$, which shows concretely why the delta cannot be normalized.
 

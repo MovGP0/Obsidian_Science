@@ -63,7 +63,7 @@ Priority: low · Graph: no · Manim: no
 
 A faithful abstract with a short critical frame; the strongest claim needs explicit context.
 
-- [Intuition] Interpretation: say that the claimed confirmation of $c\pm v$ is the author's own; the one-way light speed depends on the clock-synchronization convention, and standard experiments agree with special relativity. Link [[05.06 The Synchronisation of Time]] and [[11.04 The Experiment on the One-Way Relative Velocity of Light]].
+- [Intuition] Interpretation: say that the claimed confirmation of $c\pm v$ is the author's own; the one-way light speed depends on the clock-synchronization convention, and standard experiments agree with special relativity. Link \[\[05.06 The Synchronisation of Time\]\] and \[\[11.04 The Experiment on the One-Way Relative Velocity of Light\]\].
 
 ### N3489
 
@@ -82,7 +82,7 @@ Priority: low · Graph: no · Manim: no
 A faithful lecture account; the interpretation section does not yet address its central testable claim.
 
 - [Intuition] Interpretation: add that a synchronization convention with anisotropy parameter $\varepsilon\neq1/2$ reproduces every special-relativistic prediction, so $c'=c-v$ for one-way light is not observable without a synchronization-independent measurement; this is what the M–M two-way argument in the lecture leaves open.
-- [Links] Link the Michelson–Morley discussion to [[03.06 Experiments Designed to Detect the Stationary Ether]] and the "novel experiment" to [[11.04 The Experiment on the One-Way Relative Velocity of Light]].
+- [Links] Link the Michelson–Morley discussion to \[\[03.06 Experiments Designed to Detect the Stationary Ether\]\] and the "novel experiment" to \[\[11.04 The Experiment on the One-Way Relative Velocity of Light\]\].
 
 ### N3491
 
@@ -162,7 +162,7 @@ Priority: low · Graph: no · Manim: no
 A brief claims note; the interpretation correctly points to Ashby but gives no worked example.
 
 - [Example] Add the standard GPS Sagnac correction $\Delta t=2\,\boldsymbol\omega_E\cdot\mathbf A/c^2$ (up to about 100 ns for a receiver's signal path) computed in the Earth-centred inertial frame within special relativity. This shows why receiver-velocity terms appear without Galilean velocity addition.
-- [Links] Link the GNSS claim to [[11.08 Experimental Tests of Time Dilation - GNSS and GPS]].
+- [Links] Link the GNSS claim to \[\[11.08 Experimental Tests of Time Dilation - GNSS and GPS\]\].
 
 ### N3498
 

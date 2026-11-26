@@ -102,7 +102,7 @@ Priority: low · Graph: no · Manim: no
 Correct scales (the density range and the argon and nitrogen well depths check out), with a sensible caveat about the $\Gamma$ measure.
 
 - [Example] Show the source estimate explicitly: for nitrogen at $1\,\mathrm{atm}$, $300\,\mathrm{K}$, $n\approx2.4\times10^{25}\,\mathrm{m^{-3}}$ and $\sigma\approx3.7\,\mathrm{\mathring A}$ give $n\sigma^3\approx1.2\times10^{-3}$ and $\Gamma\approx4\times10^{-4}$, i.e. order $10^{-3}$ as stated.
-- [Links] Link [[09.05.01 The 6–12 Potential]] at the last sentence, which mentions the Lennard–Jones zero crossing versus minimum.
+- [Links] Link \[\[09.05.01 The 6–12 Potential\]\] at the last sentence, which mentions the Lennard–Jones zero crossing versus minimum.
 
 ### N1500
 
@@ -171,7 +171,7 @@ Correct proof, but the equal-area rule and the chemical-potential argument would
 
 - [Graph] Plot the reduced isotherm $t=0.85$ with the two equal areas shaded between the curve and $p_0\approx0.5045$, marking $\upsilon_\ell\approx0.553$ and $\upsilon_g\approx3.128$.
 - [Graph] Plot the reduced chemical potential (or Gibbs energy per particle) along the same isotherm versus $p$; the swallowtail crossing at $p_0$ shows directly why equal areas select the coexistence pressure and which branches are metastable or unstable.
-- [Links] Link [[09.08 Worked Examples]] (Example 9.3), which solves the construction numerically.
+- [Links] Link \[\[09.08 Worked Examples\]\] (Example 9.3), which solves the construction numerically.
 
 ### N1507
 
@@ -219,7 +219,7 @@ Priority: low · Graph: no · Manim: no
 
 Correct interpretation with careful statements on sign, three-body correlations, and truncation.
 
-- [Links] Link [[09.05.02 Calculation of B₂(T) for the Lennard–Jones Potential]] at the sign discussion, where Fig. 9.3 shows the sign change at the Boyle temperature.
+- [Links] Link \[\[09.05.02 Calculation of B₂(T) for the Lennard–Jones Potential\]\] at the sign discussion, where Fig. 9.3 shows the sign change at the Boyle temperature.
 
 ### N1512
 
@@ -228,7 +228,7 @@ Priority: low · Graph: no · Manim: no
 
 Clear hub with a good statement of what the Boyle cancellation does and does not mean.
 
-- [Links] The text mentions "the square-well exercise"; link [[09.02 Square-Well Virial Coefficient]] directly.
+- [Links] The text mentions "the square-well exercise"; link \[\[09.02 Square-Well Virial Coefficient\]\] directly.
 
 ### N1513
 
@@ -397,7 +397,7 @@ Priority: low · Graph: no · Manim: no
 
 Correct worked examples (recomputed $T_c=126.16\,\mathrm{K}$, $P_c=33.4\,\mathrm{atm}$, the Maxwell values, $Z-1=-0.0191$, and $B_{2,m}^{\mathrm{vdW}}=-67.1\,\mathrm{cm^3\,mol^{-1}}$).
 
-- [Links] Link [[09.02.06 Maxwell Construction]] and Fig. 9.1 in [[09.02.04 van der Waals Isotherms]] from Example 9.3, since the same values are plotted there.
+- [Links] Link \[\[09.02.06 Maxwell Construction\]\] and Fig. 9.1 in \[\[09.02.04 van der Waals Isotherms\]\] from Example 9.3, since the same values are plotted there.
 
 ### N1531
 
@@ -417,7 +417,7 @@ Priority: low · Graph: no · Manim: no
 
 Accurate chapter summary; the Lennard-Jones reduced Boyle temperature (about 3.42) and the inversion temperature of twice the Boyle temperature check out.
 
-- [Links] Under each numbered item, link the matching section note (for example [[09.02.06 Maxwell Construction]], [[09.04.03 Boyle Temperature]], [[09.07.04 Inversion Temperature]]) so the summary can also be used to navigate.
+- [Links] Under each numbered item, link the matching section note (for example \[\[09.02.06 Maxwell Construction\]\], \[\[09.04.03 Boyle Temperature\]\], \[\[09.07.04 Inversion Temperature\]\]) so the summary can also be used to navigate.
 - [Simplify] In the "Test the distinctions at the Boyle temperature" paragraph, add the one-line van der Waals result $\mu_{JT}(T_B)=b/c_P>0$ so that the claim "the throttling coefficient need not vanish" has a concrete example.
 
 ### N1533
@@ -490,6 +490,6 @@ Priority: low · Graph: yes · Manim: no
 
 Correct derivation; $T_{inv}=2a/(k_Bb)=2T_B=27T_c/4$ verifies, but it cites source equation numbers that the reader cannot follow.
 
-- [Links] "This is Eq. (9.15)" and "Eq. (9.13)" refer to source numbering; replace them with links to [[09.07.04 Inversion Temperature]] and [[09.04.02 Connection to van der Waals]] (or the note that holds $B_2=b-a/k_BT$).
+- [Links] "This is Eq. (9.15)" and "Eq. (9.13)" refer to source numbering; replace them with links to \[\[09.07.04 Inversion Temperature\]\] and \[\[09.04.02 Connection to van der Waals\]\] (or the note that holds $B_2=b-a/k_BT$).
 - [Graph] Plot $c_P\mu_{JT}/b=2T_B/T-1$ against $T/T_B$ on $[0.3,4]$. Mark the Boyle temperature (value $+1$) and the inversion temperature at $T/T_B=2$, so the cooling and heating regions are visible.
 - [Simplify] The paragraphs "Use the Boyle temperature as a transfer test" and "The finite zero-pressure limit" partly repeat "Interpret the sign"; shorten them into one paragraph.

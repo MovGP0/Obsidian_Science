@@ -107,7 +107,7 @@ Priority: low · Graph: no · Manim: no
 
 Correct solutions with verified numbers; a few symbols differ from the problem statements.
 
-- [Structure] Exercise 4 uses $L$ for the path length while the problem in [[05.08 Feynman Path Integrals Exercises]] calls it $\ell$ (and Ex. 3 here uses $\ell$ for the phase-length scale); align the symbols and give the inputs $v=10^6$ m/s, $L=10^{-7}$ m in the text.
+- [Structure] Exercise 4 uses $L$ for the path length while the problem in \[\[05.08 Feynman Path Integrals Exercises\]\] calls it $\ell$ (and Ex. 3 here uses $\ell$ for the phase-length scale); align the symbols and give the inputs $v=10^6$ m/s, $L=10^{-7}$ m in the text.
 - [Simplify] Exercise 1 quotes the phase $4.74$ rad without the inputs; state $x_f-x_i=\quantity{1.00}{nm}$ so the number can be reproduced.
 - [Structure] Write $S_{\mathrm{cl}}$, $Z$, $\beta$ with the same macros as the table ($\mechanical S_{\mathrm{cl}}$, $\thermal Z$, $\thermal\beta$) or drop the color in the table.
 
@@ -172,7 +172,7 @@ Priority: low · Graph: no · Manim: no
 Correct solutions with careful convention notes; the Wigner–Eckart and Racah steps were rechecked.
 
 - [Example] In Exercise 7, show the check with $q=0$: $\langle jm;10\mid jm\rangle=m/\sqrt{j(j+1)}$ and $\langle jm\rvert J_z\lvert jm\rangle=\hbar m$ give the same reduced element, which makes the result easier to trust.
-- [Simplify] Exercise 9 repeats Exercise 10 of [[21.10 Solutions for Spin]]; add a cross-reference instead of a second derivation.
+- [Simplify] Exercise 9 repeats Exercise 10 of \[\[21.10 Solutions for Spin\]\]; add a cross-reference instead of a second derivation.
 
 ### N2223
 
@@ -182,7 +182,7 @@ Priority: low · Graph: yes · Manim: no
 Concise, correct solutions (all key numbers recomputed: Δr, inverse moments, 121.6 nm, 0.37 %, -9.05e-4 eV) with only minor gaps in intermediate steps.
 
 - [Graph] Exercise 9: plot the 2p radial density $P(u)=u^4e^{-u}/24$ for $u=r/a_0\in[0,15]$, shading $u<1$ (0.37 %) and marking the maximum at $u=4$, so the "most probability between $a_0$ and $6a_0$" claim (about 71 %) is visible.
-- [Simplify] Exercise 2: state the general integral $\int_0^\infty r^ke^{-\beta r}\,\mathrm dr=k!/\beta^{k+1}$ once (link [[22.10 Useful Identities and Integrals]]) and show the two substitutions $n=1,2$ explicitly instead of only quoting the results.
+- [Simplify] Exercise 2: state the general integral $\int_0^\infty r^ke^{-\beta r}\,\mathrm dr=k!/\beta^{k+1}$ once (link \[\[22.10 Useful Identities and Integrals\]\]) and show the two substitutions $n=1,2$ explicitly instead of only quoting the results.
 - [Simplify] Exercise 8: add the one-line conversion $e^2/(4\pi\varepsilon_0 a_0)=2\,\mathrm{Ry}$ that turns $\langle1/r\rangle=1/a_0$ into $\langle V\rangle=-2\,\mathrm{Ry}$; Exercise 11 reuses it for $\langle V^2\rangle=8\,\mathrm{Ry}^2$.
 - [Intuition] Exercise 11: add one sentence comparing $-\tfrac54\alpha^2\,\mathrm{Ry}$ with the full fine-structure shift of 1s ($-\tfrac14\alpha^2\,\mathrm{Ry}$ after adding the Darwin and spin-orbit terms), so readers do not mistake the kinetic correction for the observed shift.
 
@@ -220,7 +220,7 @@ All solutions check out (CHSH value $-2\sqrt2$, teleportation branches, superden
 
 - [Graph] Exercise 7: plot the quantum correlation $E(\phi)=-\cos\phi$ against the classical local-hidden-variable sawtooth $E(\phi)=-1+2\phi/\pi$ for $\phi\in[0,\pi]$, and mark the CHSH angles $\pi/4$ and $3\pi/4$ where the gap is largest.
 - [Simplify] Exercise 9: show the regrouping $\lvert00\rangle=(\Phi^++\Phi^-)/\sqrt2$, $\lvert01\rangle=(\Psi^++\Psi^-)/\sqrt2$, etc., once, so the four Bob states can be checked rather than only stated.
-- [Structure] Exercise 10 repeats the partial-trace argument of Exercise 6 in [[21.13 Solutions for the Density Matrix and Decoherence]]; link it instead of repeating it.
+- [Structure] Exercise 10 repeats the partial-trace argument of Exercise 6 in \[\[21.13 Solutions for the Density Matrix and Decoherence\]\]; link it instead of repeating it.
 
 ### N2227
 
@@ -267,7 +267,7 @@ Correct solutions (Kronig–Penney root $qa=1.54272$, 1.29 eV zone-edge estimate
 
 - [Graph] Exercises 3 and 6: plot $f(qa)=\cos(qa)+P\sin(qa)/(qa)$ for $P=1.5$ and $qa\in[0,4\pi]$ with horizontal lines at $\pm1$ and shaded allowed bands; mark the edge at $qa=1.5427$.
 - [Graph] Exercises 5 and 7: plot the tight-binding band $E(k)=E_0-2t\cos(ka)$ over $ka\in[-\pi,\pi]$ with its parabolic approximation $E_0-2t+ta^2k^2$ overlaid to show where the effective-mass picture holds.
-- [Structure] Exercise 2: shorten the remark on the source's translation convention to one sentence pointing to [[19.01 Discrete Translation Symmetry]] for the $e^{-ika}$ convention.
+- [Structure] Exercise 2: shorten the remark on the source's translation convention to one sentence pointing to \[\[19.01 Discrete Translation Symmetry\]\] for the $e^{-ika}$ convention.
 - [Simplify] Exercise 11: write the intermediate step $\delta=-(\pi/P)(1+\cos ka)$ with $P=m\alpha a/\hbar^2$ before expanding the energy, so the identification of $t$ and $\tilde E_0$ can be followed.
 
 ### N2231

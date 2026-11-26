@@ -76,7 +76,7 @@ Priority: medium · Graph: no · Manim: no
 
 The chapter hub explains its goals clearly but contains no links to its sections or exercises, and its last paragraph repeats the first.
 
-- [Links] Add a list of wiki links to the section hubs [[02.01 From Discrete Systems to the Continuum]] through [[02.10 Summary]] and [[02.11 Exercises]]; currently the reader cannot navigate from this hub.
+- [Links] Add a list of wiki links to the section hubs \[\[02.01 From Discrete Systems to the Continuum\]\] through \[\[02.10 Summary\]\] and \[\[02.11 Exercises\]\]; currently the reader cannot navigate from this hub.
 - [Simplify] Merge the final paragraph ("Quantum field theory has its roots...") into the opening paragraph; it repeats the chapter scope.
 
 ### N2305
@@ -127,7 +127,7 @@ Priority: low · Graph: no · Manim: no
 
 Correct and compact definition; it would benefit from one explicit example of a density and of a total-divergence ambiguity.
 
-- [Example] After Definition 2.1, give the real scalar density $\mathcal L=\tfrac12\partial_\mu\phi\,\partial^\mu\phi-\tfrac12m^2\phi^2$ with $[\phi]=1$ as the reference example, and link [[02.07.01 The Real Scalar Klein–Gordon Field]].
+- [Example] After Definition 2.1, give the real scalar density $\mathcal L=\tfrac12\partial_\mu\phi\,\partial^\mu\phi-\tfrac12m^2\phi^2$ with $[\phi]=1$ as the reference example, and link \[\[02.07.01 The Real Scalar Klein–Gordon Field\]\].
 - [Example] Illustrate the total-divergence freedom with $\mathcal L'=\mathcal L+\partial_\mu(\phi\,\partial^\mu\phi)$, which contains second derivatives yet gives the same Klein–Gordon equation for fixed boundary data.
 
 ### N2310
@@ -393,7 +393,7 @@ Priority: low · Graph: no · Manim: no
 Correct summary with three worked examples (signs in Example 2.11 and the O(N) vacuum $\signal{v}=\sqrt{|\mechanical{m}^2|/\lambda}$ check out).
 
 - [Simplify] In Example 2.13, note that the QCD two-flavour pion model is $O(4)/O(3)\cong S^3$ with three pions; $O(3)/O(2)$ has only two fields, so "in QCD it is the pion decay constant" should be marked as an analogy.
-- [Example] In Example 2.12, state the $\mathfrak{so}(N)$ bracket fully instead of "$\propto(\delta_{ac}Q_{bd}-\cdots)$", and link to the explicit result in [[02.11.02 O(N) Noether currents]].
+- [Example] In Example 2.12, state the $\mathfrak{so}(N)$ bracket fully instead of "$\propto(\delta_{ac}Q_{bd}-\cdots)$", and link to the explicit result in \[\[02.11.02 O(N) Noether currents\]\].
 
 ### N2336
 

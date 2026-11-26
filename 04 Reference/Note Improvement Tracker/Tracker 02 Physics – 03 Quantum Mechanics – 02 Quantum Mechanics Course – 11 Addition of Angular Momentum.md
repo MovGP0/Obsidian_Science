@@ -96,7 +96,7 @@ Priority: low · Graph: no · Manim: no
 
 Clear and correct, with a nice measurement example; one source link points to an unrelated section.
 
-- [Links] The link [[Pauli matrices and two-spin calculations#Other potentials|Physics 137]] targets a section of potential-well sketches; point it to "#Two spins" (or "#Coupled and uncoupled spin bases"), and consider "#Total angular momentum" instead of "#Hydrogen and orbital angular momentum" for the Physics 10 link.
+- [Links] The link \[\[Pauli matrices and two-spin calculations#Other potentials|Physics 137\]\] targets a section of potential-well sketches; point it to "#Two spins" (or "#Coupled and uncoupled spin bases"), and consider "#Total angular momentum" instead of "#Hydrogen and orbital angular momentum" for the Physics 10 link.
 - [Example] In "A product state contains two possible total spins" write the decomposition explicitly: $\lvert\uparrow\downarrow\rangle=(\lvert1,0\rangle+\lvert0,0\rangle)/\sqrt2$.
 
 ### N2110

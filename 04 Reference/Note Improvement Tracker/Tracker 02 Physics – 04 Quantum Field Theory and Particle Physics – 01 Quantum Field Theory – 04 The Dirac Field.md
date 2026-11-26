@@ -117,7 +117,7 @@ Priority: low · Graph: no · Manim: no
 
 This is a clear chapter hub; all linked notes exist.
 
-- [Structure] No change needed; optionally add [[04.02 Lagrangian and Conjugate Momenta]] to the stage list, since the reading guide skips from 04.01 to 04.03.
+- [Structure] No change needed; optionally add \[\[04.02 Lagrangian and Conjugate Momenta\]\] to the stage list, since the reading guide skips from 04.01 to 04.03.
 
 ### N2400
 
@@ -205,7 +205,7 @@ Priority: low · Graph: no · Manim: no
 
 The momenta are correct and the constraint discussion is clear.
 
-- [Simplify] Number the two momentum equations so that later notes ([[04.15.02 Dirac Brackets and Quantization]]) can cite them, and write the constraints explicitly as $\pi-i\psi^\dagger\approx0$ and $\bar\pi\approx0$.
+- [Simplify] Number the two momentum equations so that later notes (\[\[04.15.02 Dirac Brackets and Quantization\]\]) can cite them, and write the constraints explicitly as $\pi-i\psi^\dagger\approx0$ and $\bar\pi\approx0$.
 
 ### N2409
 
@@ -272,7 +272,7 @@ Priority: medium · Graph: no · Manim: no
 The expansion (4.27)–(4.28) is standard and correctly normalized, but the note keeps a known transcription error (measure in $k$, integrand in $p$) and spends two paragraphs apologizing for it.
 
 - [Correctness] (4.27) and (4.28) integrate over $d^3\mechanical{k}$ while every factor of the integrand depends on $\mechanical{p}$; write $\int\frac{d^3\mechanical{p}}{(2\pi)^3\sqrt{2E_{\mathbf p}}}$ and delete the callout and the "retained k/p mismatch" paragraph.
-- [Intuition] Add the comparison with the complex scalar (3.52): $a\to b^s u$, $b^\dagger\to d^{s\dagger}v$, linking [[03.05.02 Mode Expansion and Operators]], so the reader sees the Dirac expansion as the scalar one with spinor polarization vectors.
+- [Intuition] Add the comparison with the complex scalar (3.52): $a\to b^s u$, $b^\dagger\to d^{s\dagger}v$, linking \[\[03.05.02 Mode Expansion and Operators\]\], so the reader sees the Dirac expansion as the scalar one with spinor polarization vectors.
 - [Example] Add the one-particle matrix element $\langle0|\psi(x)|\mathbf p,s\rangle=u(p,s)e^{-ip\cdot x}$ (with the covariant state normalization) as a formula instead of the sentence "A vacuum-to-one-particle matrix element extracts a numerical spinor amplitude".
 
 ### N2416
@@ -340,7 +340,7 @@ The unordered form (4.38), the sign of the vacuum constant and the normal-ordere
 
 - [Correctness] (4.37) and (4.38) integrate over $d^3\mechanical{k}$ with a $\mathbf p$-labelled integrand; use $d^3\mechanical{p}$ and delete the "printed k/p integration labels" sentence.
 - [Simplify] Show the short route to (4.38): $H=\int d^3x\,\psi^\dagger i\partial_t\psi$ with the expansion gives $E_{\mathbf p}(b^\dagger b-dd^\dagger)$ directly because $i\partial_t$ brings $+E$ for the $b$ branch and $-E$ for the $d^\dagger$ branch.
-- [Intuition] Contrast explicitly with what commutators would give: with $[d,d^\dagger]$ the term becomes $-d^\dagger d$ and energy is unbounded below; link [[04.03.01 The Attempt with Commutators]].
+- [Intuition] Contrast explicitly with what commutators would give: with $[d,d^\dagger]$ the term becomes $-d^\dagger d$ and energy is unbounded below; link \[\[04.03.01 The Attempt with Commutators\]\].
 
 ### N2423
 
@@ -378,7 +378,7 @@ Priority: low · Graph: no · Manim: no
 
 Correct definition with the fermionic minus sign explained.
 
-- [Intuition] Add the relation $S_F(x-y)=(i\not\partial_x+m)\Delta_F(x-y)$ to the scalar Feynman function of [[03.07.04 The Feynman Propagator]] here, since the section hub promises this first-order-operator connection but no note states it.
+- [Intuition] Add the relation $S_F(x-y)=(i\not\partial_x+m)\Delta_F(x-y)$ to the scalar Feynman function of \[\[03.07.04 The Feynman Propagator\]\] here, since the section hub promises this first-order-operator connection but no note states it.
 
 ### N2427
 
@@ -698,7 +698,7 @@ Priority: low · Graph: no · Manim: no
 Useful formula sheet; the measure-label mismatch is flagged in a callout instead of being fixed.
 
 - [Simplify] In (4.112)–(4.114) write $\int\frac{d^3\mathbf p}{(2\pi)^3}E_{\mathbf p}\sum_s(b^{s\dagger}_{\mathbf p}b^s_{\mathbf p}+\dots)$ with one consistent label and drop the callout explaining the $k$/$p$ mismatch.
-- [Structure] Add the Dirac equation, $\bar u u=2m$, and $\operatorname{tr}\gamma^5$-type traces (or link [[04.18.09 Traces with the Levi-Civita tensor]]) so the sheet is complete for later QED chapters.
+- [Structure] Add the Dirac equation, $\bar u u=2m$, and $\operatorname{tr}\gamma^5$-type traces (or link \[\[04.18.09 Traces with the Levi-Civita tensor\]\]) so the sheet is complete for later QED chapters.
 
 ### N2459
 
@@ -747,7 +747,7 @@ Priority: low · Graph: no · Manim: no
 Correct derivation with a good distributional check.
 
 - [Simplify] Show the one-line differentiation $\partial_\mu(x^2)^{-1}=-2x_\mu(x^2)^{-2}$ that leads from $\Delta_F$ to $i\not x/(2\pi^2(x^2-i\epsilon)^2)$; it is currently skipped.
-- [Links] Link [[05.14.06 Photon propagator in position space]] where the massless $\Delta_F$ is derived by contour integration.
+- [Links] Link \[\[05.14.06 Photon propagator in position space\]\] where the massless $\Delta_F$ is derived by contour integration.
 
 ### N2464
 
@@ -775,7 +775,7 @@ Priority: low · Graph: no · Manim: no
 
 Correct alternative proof; largely duplicates 04.16.
 
-- [Structure] Point out that this proof differs from 04.16 (it uses $\gamma\gamma=g\mp i\sigma$ rather than the symmetric/antisymmetric split) so the duplication has a purpose, or link [[04.16 Gordon Identity]] directly.
+- [Structure] Point out that this proof differs from 04.16 (it uses $\gamma\gamma=g\mp i\sigma$ rather than the symmetric/antisymmetric split) so the duplication has a purpose, or link \[\[04.16 Gordon Identity\]\] directly.
 
 ### N2467
 

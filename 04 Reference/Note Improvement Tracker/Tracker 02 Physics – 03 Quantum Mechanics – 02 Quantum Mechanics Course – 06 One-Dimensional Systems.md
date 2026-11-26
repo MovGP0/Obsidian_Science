@@ -11,7 +11,7 @@ Back to the index: [[Note Improvement Tracker]]
 
 The review found 5 possible errors or notation conflicts. 5 of them are verified (5 fixed); the other 0 are not verified yet. Each item links to the full suggestion entry.
 
-- [[#N2060|N2060]] 06.05 Attractive Delta Potential: The source link [[Orbital angular momentum, rings, and spheres#Atkins problems 3.29 and 3.30|Physics 137]] targets a section about hydrogenic orbital and spin angular momentum, which has nothing to do with point interactions. The relevant heading in that note is "#Double delta well". **Fixed:** Link heading changed to #Double delta well (heading exists in the target note)
+- [[#N2060|N2060]] 06.05 Attractive Delta Potential: The source link \[\[Orbital angular momentum, rings, and spheres#Atkins problems 3.29 and 3.30|Physics 137\]\] targets a section about hydrogenic orbital and spin angular momentum, which has nothing to do with point interactions. The relevant heading in that note is "#Double delta well". **Fixed:** Link heading changed to #Double delta well (heading exists in the target note)
 - [[#N2063|N2063]] 06.08 One-Dimensional Systems Exercises: Symbol clash: $T$ denotes both the transmission coefficient (exercises 2, 8, and 10) and the oscillation period (exercise 6), and the table lists both. Rename the period, for example to $\tau$. **Fixed:** Renamed the period in exercise 6 and the table to tau (value 4mL^2/(3 pi hbar) verified)
 - [[#N2064|N2064]] Free particles, finite barriers, and point interactions: $\alpha$ denotes three different things: the delta strength in $V=-\alpha\delta(x)$, the Gaussian parameter in $\phi(k)=\frac{2N}{\sqrt\alpha}\cos(kx_0)e^{-k^2/(2\alpha)}$, and the cosine coefficient in the centered infinite well $\psi_{\mathrm{II}}=\alpha\cos(kx)+\beta\sin(kx)$; rename the last two (e.g. $C,D$ and $a_G$); equation tags (1),(2) are also reused for both the Fourier pair and the even-state matching equations. **Fixed:** Gaussian parameter renamed gamma (with a definition sentence); centered-well coefficients alpha,beta renamed P,Q; even-state matching tags renumbered (4),(5) and the reference updated; added alpha and gamma table rows
 - [[#N2065|N2065]] Square-well, oscillator, and tunneling problems: The physical-quantities table lists $R$ as "Activity" in $\unit{Bq}$, but here $R$ is the dimensionless reflection coefficient; $E_n$ is described as "relative to ionization" in eV, which is wrong for the infinite well (measured from the well floor); add $T$, $k$, $\kappa$, $\eta$, $L$, $m$, $\psi$. **Fixed:** R row now reflection coefficient (1); E_n row now J, measured from the well floor; added E, V_0, m, L, psi, k, kappa, eta, T rows
@@ -44,7 +44,7 @@ Priority: low · Graph: no · Manim: no
 
 A clear chapter hub with correct summary formulas.
 
-- [Structure] No change needed. Optionally list [[06.07 Overview]] in the chapter summary so that the comparison table is reachable from the hub.
+- [Structure] No change needed. Optionally list \[\[06.07 Overview\]\] in the chapter summary so that the comparison table is reachable from the hub.
 
 ### N2056
 
@@ -96,7 +96,7 @@ Priority: medium · Graph: yes · Manim: no
 
 The physics (jump condition, $E_0$, $T(k)$, figure) is correct, but the last section is mistitled and wordy, and one source link points to an unrelated heading.
 
-- [Correctness] The source link [[Orbital angular momentum, rings, and spheres#Atkins problems 3.29 and 3.30|Physics 137]] targets a section about hydrogenic orbital and spin angular momentum, which has nothing to do with point interactions. The relevant heading in that note is "#Double delta well".
+- [Correctness] The source link \[\[Orbital angular momentum, rings, and spheres#Atkins problems 3.29 and 3.30|Physics 137\]\] targets a section about hydrogenic orbital and spin angular momentum, which has nothing to do with point interactions. The relevant heading in that note is "#Double delta well".
 - [Structure] Rename "Use the derivative jump as a normalization check". The jump fixes the decay rate, and normalization ($A=\sqrt\kappa$) is a separate step. Also condense the paragraph into two equations: $\kappa=m\alpha/\hbar^2$ and $A=\sqrt\kappa$.
 - [Graph] Plot $T(E)$ against $E/|E_0|$ on $[0,10]$, using $T=1/(1+|E_0|/E)$ since $(m\alpha/\hbar^2k)^2=|E_0|/E$. This compact form and the plot make the low-energy reflection obvious.
 - [Simplify] In the opening, write "finite integrated strength $2aV_0=\alpha$" rather than "finite $V_0a$" so that the limiting procedure is explicit.
@@ -139,7 +139,7 @@ The physics checks out (penetration depth 0.20 nm, delta-well R and T, barrier $
 
 - [Correctness] $\alpha$ denotes three different things: the delta strength in $V=-\alpha\delta(x)$, the Gaussian parameter in $\phi(k)=\frac{2N}{\sqrt\alpha}\cos(kx_0)e^{-k^2/(2\alpha)}$, and the cosine coefficient in the centered infinite well $\psi_{\mathrm{II}}=\alpha\cos(kx)+\beta\sin(kx)$; rename the last two (e.g. $C,D$ and $a_G$); equation tags (1),(2) are also reused for both the Fourier pair and the even-state matching equations.
 - [Structure] Remove transcript artifacts: the heading "##### ) — One-dimensional potentials", "The margin notes quantized energy.", "OH means office hours.", the homework references "Problem 3/problem 2/2.22" without statements, and the notes about corrected handwriting; merge the twice-stated finite-barrier setup (General wavefunctions/Continuity and the numbered recipe) into one pass.
-- [Structure] The centered infinite well section stops after writing the two matching equations; finish it ($\cos(ka/2)=0$ or $\sin(ka/2)=0$, $k_n=n\pi/a$, $E_n=n^2\pi^2\hbar^2/(2ma^2)$) or link to [[06.03 Infinite Potential Well]].
+- [Structure] The centered infinite well section stops after writing the two matching equations; finish it ($\cos(ka/2)=0$ or $\sin(ka/2)=0$, $k_n=n\pi/a$, $E_n=n^2\pi^2\hbar^2/(2ma^2)$) or link to \[\[06.03 Infinite Potential Well\]\].
 - [Structure] The physical-quantities table gives $\Psi$ in $\unit{m^{-3/2}}$ "in three dimensions" although the whole note is 1D; give $\unit{m^{-1/2}}$ and add $m$, $\alpha$, $L$, $a$, $z$, $z_0$.
 - [Graph] Under "Finite barrier" plot $T(E/V)$ from the given $T^{-1}$ formula for $z=\sqrt{2mV}L/\hbar=3$ over $0<E/V<1$ (log y-axis), and under "Even functions" plot $\tan z$ and $\sqrt{z_0^2/z^2-1}$ for $z_0=8$ on $0<z<8$ with intersections marked, replacing the hand-sketched Fig. 24.
 - [Manim] After Eq. (3), animate a Gaussian packet's $|\Psi(x,t)|^2$ spreading as the $k$ components dephase, to motivate the $\Psi(x,0)\to\phi(k)\to\Psi(x,t)$ recipe.

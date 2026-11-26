@@ -11,9 +11,9 @@ Back to the index: [[Note Improvement Tracker]]
 
 The review found 6 possible errors or notation conflicts. 6 of them are verified (6 fixed); the other 0 are not verified yet. Each item links to the full suggestion entry.
 
-- [[#N1607|N1607]] 11.03.04 Critical Mean-Field Exponents: Symbol clash: the exponent table writes $\beta=1/2$ (uncoloured) while the same note uses $\thermal{\beta}$ for inverse temperature in (11.7); use $\beta_{\mathrm c}$ as in [[11.03.02 Analysis of the Self-Consistency Equation]] or add the disambiguation sentence used in [[11.04.03 Exact Critical Exponents in Two Dimensions]]. **Fixed:** Added the disambiguation sentence after the exponent table, as in 11.04.03
+- [[#N1607|N1607]] 11.03.04 Critical Mean-Field Exponents: Symbol clash: the exponent table writes $\beta=1/2$ (uncoloured) while the same note uses $\thermal{\beta}$ for inverse temperature in (11.7); use $\beta_{\mathrm c}$ as in \[\[11.03.02 Analysis of the Self-Consistency Equation\]\] or add the disambiguation sentence used in \[\[11.04.03 Exact Critical Exponents in Two Dimensions\]\]. **Fixed:** Added the disambiguation sentence after the exponent table, as in 11.04.03
 - [[#N1613|N1613]] 11.04.04 Spontaneous Magnetization - Yang's Result: Fig. 11.5 caption says "Spontaneous magnetization versus reduced temperature", but the horizontal axis is $T/T_c$, not the reduced temperature $t=(T-T_c)/T_c$ defined in the chapter; change the caption to "versus $T/T_c$". **Fixed:** Caption now says versus T/T_c
-- [[#N1622|N1622]] 11.07 Worked Examples: Symbol clash: Example 11.3 uses $\magnetic{m}_0=0.5$ for the starting iterate, while Example 11.4 (and [[11.04.04 Spontaneous Magnetization - Yang's Result]]) uses $\magnetic{m}_0$ for the spontaneous magnetization; rename the iterates to $m^{(0)},m^{(1)},\dots$. **Fixed:** Renamed iterates to m^(0), m^(1), m^(2), m^(3), m^(infinity); updated the table description
+- [[#N1622|N1622]] 11.07 Worked Examples: Symbol clash: Example 11.3 uses $\magnetic{m}_0=0.5$ for the starting iterate, while Example 11.4 (and \[\[11.04.04 Spontaneous Magnetization - Yang's Result\]\]) uses $\magnetic{m}_0$ for the spontaneous magnetization; rename the iterates to $m^{(0)},m^{(1)},\dots$. **Fixed:** Renamed iterates to m^(0), m^(1), m^(2), m^(3), m^(infinity); updated the table description
 - [[#N1627|N1627]] 11.04 Mean-Field Susceptibility above and below the Critical Temperature: The physical-quantities table lists $\magnetic{m}_0$ and $\magnetic{m}_{\mathrm s}$, which the note never uses; reduce the row to $\magnetic{m}$. **Fixed:** Reduced the row to m
 - [[#N1628|N1628]] Ising mean field and transfer-matrix calculations: "Mean-field approximation": with $\energy{H}=-\energy{J}\sum_{\langle ij\rangle}\sigma_i\sigma_j$ (each pair once) the mean-field equation is $\bar\sigma=\tanh[\thermal{\beta}(q\energy{J}\bar\sigma+\energy{h})]$, so $\thermal{k}_{\mathrm B}\thermal{T}_{\mathrm c}=q\energy{J}$, not $q\energy{J}/2$; the factor $1/2$ belongs only in $\energy{U}=-Nq\energy{J}\bar\sigma^2/2$. Consequently the heat-capacity jump is $\tfrac32N\thermal{k}_{\mathrm B}$ (not $3N\thermal{k}_{\mathrm B}$) and the susceptibility prefactor is $N\magnetic{\mu}^2/(\energy{J}q)$ (not $2N\magnetic{\mu}^2/(\energy{J}q)$); fix these or state explicitly that the notebook's convention double-counts pairs. **Fixed:** Re-derived: k_BT_c=qJ, jump (3/2)Nk_B, prefactor N mu^2/(Jq); stated the correct mean-field equation and kept the notebook convention as a remark
 - [[#N1628|N1628]] Ising mean field and transfer-matrix calculations: Physical-quantities table lists symbols the note never uses or uses differently: Planck's constant as $\energy{h}$ (clashes with the Ising field parameter; only $\energy{\hbar}$ appears), Landé $g$, internal partition function $j$, internal degeneracy $g$ (clashes with density of states $g(\energy{E})$), $\energy{F}$; and $\thermal{T}_{\mathrm c}$ is described as "onset of macroscopic ground-state occupation". Remove unused rows and fix the description. **Fixed:** Removed Planck h, Lande g, j, internal degeneracy g, F; T_c description now Ising ordering; removed the Planck note from the h row
@@ -129,7 +129,7 @@ Priority: low · Graph: no · Manim: yes
 Short, correct derivation of the reduced-sum recursion with good checks ($Z_n(s)=2^{n-1}$ at $J=h=0$ verifies).
 
 - [Example] Add a two-step worked case at $h=0$: $Z_2(\pm1)=e^{\beta J}+e^{-\beta J}=2\cosh\beta J$, and $Z_3(s)=(2\cosh\beta J)^2$, so the reader sees the recursion produce a closed form before the matrix language appears.
-- [Intuition] State explicitly that the recursion is the vector equation $\mathbf Z_{n+1}=\mathbf T^{\mathsf T}\mathbf Z_n$ with $\mathbf Z_n=(Z_n(+),Z_n(-))$, which makes the bridge to [[11.02.02 Transfer-Matrix Method]] immediate.
+- [Intuition] State explicitly that the recursion is the vector equation $\mathbf Z_{n+1}=\mathbf T^{\mathsf T}\mathbf Z_n$ with $\mathbf Z_n=(Z_n(+),Z_n(-))$, which makes the bridge to \[\[11.02.02 Transfer-Matrix Method\]\] immediate.
 - [Manim] Animate a chain growing one site at a time, with the two-component vector $(Z_n(+),Z_n(-))$ updated at each attachment, to show that only the end spin carries information forward.
 - [Structure] The physical-quantity table lists $\thermal{T}$ with "a c subscript marks a critical value", but no critical temperature appears in this note; trim the description.
 
@@ -165,7 +165,7 @@ Correct results ($m(h)$ and $\chi=\beta e^{2\beta J}$ verify) with a slightly aw
 - [Structure] The sentence "follows from the field derivative of the free energy:" ends with a colon but is followed by a prose paragraph before the equation; move the explanatory paragraph after the displayed $m=-\partial f/\partial h$.
 - [Graph] Plot $m(h)$ for $h/J\in[-2,2]$ at $k_BT/J=2,1,0.5,0.25$, showing ever steeper but always smooth curves through the origin, the visual form of "no spontaneous magnetization but diverging susceptibility".
 - [Graph] Add a semilog plot of $k_BT\,\chi=e^{2J/k_BT}$ versus $J/k_BT$ to show the exponential (not power-law) growth.
-- [Intuition] Connect $\chi=\beta e^{2\beta J}$ to $\chi=\beta\sum_r G(r)=\beta(1+t)/(1-t)$ with $t=\tanh\beta J$ (fluctuation–response relation), linking this note to [[11.02.05 Correlation Function and Correlation Length]].
+- [Intuition] Connect $\chi=\beta e^{2\beta J}$ to $\chi=\beta\sum_r G(r)=\beta(1+t)/(1-t)$ with $t=\tanh\beta J$ (fluctuation–response relation), linking this note to \[\[11.02.05 Correlation Function and Correlation Length\]\].
 
 ### N1602
 
@@ -178,7 +178,7 @@ Thorough and correct; $\xi\sim\frac12e^{2\beta J}$, $c(T)$ and the maximum at $k
 - [Graph] Plot $\xi$ versus $k_BT/J$ on a log scale with the asymptote $\frac12e^{2J/k_BT}$ overlaid, illustrating Remark 11.3.
 - [Intuition] Sketch the transfer-matrix derivation of $G(r)=(\lambda_-/\lambda_+)^r$ in two lines (insert $\sigma^z$ at sites $0$ and $r$ in $\operatorname{Tr}\mathbf T^N$; $\sigma^z$ swaps the two eigenvectors at $h=0$), since it is stated without derivation.
 - [Manim] Animate Monte Carlo snapshots of a 1D chain at decreasing temperature, showing domains growing in length while walls never disappear, which illustrates a diverging but finite $\xi$.
-- [Structure] Example 11.1 (free energy, internal energy, heat capacity) is unrelated to the correlation-function title; consider moving it to [[11.02.03 Helmholtz Free Energy]] or renaming the section.
+- [Structure] Example 11.1 (free energy, internal energy, heat capacity) is unrelated to the correlation-function title; consider moving it to \[\[11.02.03 Helmholtz Free Energy\]\] or renaming the section.
 
 ### N1603
 
@@ -210,7 +210,7 @@ Correct and clear analysis (the expansion to $m^2\approx3(1-T/T_c)$ verifies) bu
 - [Graph] Add the standard plot of $y=m$ and $y=\tanh(Km)$ for $m\in[-1.5,1.5]$ at $K=0.5,1,2$, marking the intersections $\pm m_0$ for $K=2$; the text refers to these intersections but has no figure.
 - [Graph] Add a plot of the full numerical solution $m_0(T/T_c)$ of $m=\tanh(m\,T_c/T)$ for $T/T_c\in[0,1.2]$ together with $\sqrt{3(1-T/T_c)}$, illustrating the closing paragraph about extrapolation beyond saturation.
 - [Manim] Animate $y=\tanh(Km)$ as $K$ increases from 0.5 to 2 while $y=m$ stays fixed, with the two nonzero intersections splitting off from the origin at $K=1$ (pitchfork bifurcation).
-- [Intuition] Support "the solution $m=0$ is unstable" by pointing to the Landau coefficient $a<0$ in [[11.03.03 Landau Free Energy and the Phase Transition]] rather than only to the slope argument.
+- [Intuition] Support "the solution $m=0$ is unstable" by pointing to the Landau coefficient $a<0$ in \[\[11.03.03 Landau Free Energy and the Phase Transition\]\] rather than only to the slope argument.
 
 ### N1606
 
@@ -230,10 +230,10 @@ Priority: medium · Graph: yes · Manim: no
 
 Correct results (Curie–Weiss law and $\Delta C=3k_B/2$ verify), but the exponent $\beta$ collides with the inverse temperature and $\delta$ and $\Delta C$ are stated without derivation.
 
-- [Correctness] Symbol clash: the exponent table writes $\beta=1/2$ (uncoloured) while the same note uses $\thermal{\beta}$ for inverse temperature in (11.7); use $\beta_{\mathrm c}$ as in [[11.03.02 Analysis of the Self-Consistency Equation]] or add the disambiguation sentence used in [[11.04.03 Exact Critical Exponents in Two Dimensions]].
+- [Correctness] Symbol clash: the exponent table writes $\beta=1/2$ (uncoloured) while the same note uses $\thermal{\beta}$ for inverse temperature in (11.7); use $\beta_{\mathrm c}$ as in \[\[11.03.02 Analysis of the Self-Consistency Equation\]\] or add the disambiguation sentence used in \[\[11.04.03 Exact Critical Exponents in Two Dimensions\]\].
 - [Example] Derive $\delta=3$ in two lines: at $T=T_c$, $m=\tanh(m+\beta_c h)$ gives $m^3/3\approx\beta_c h$, so $m\propto h^{1/3}$; the table currently gives it without support.
 - [Example] Derive the heat-capacity jump: $u=-zJm^2/2$ with $m^2=3(1-T/T_c)$ gives $c=3k_B/2$ just below $T_c$ and $0$ above.
-- [Graph] Plot the mean-field $\chi^{-1}$ versus $T/T_c\in[0.5,1.5]$, showing slope 1 above $T_c$ and slope 2 below (the factor-2 amplitude ratio), which connects to exercise [[11.04 Mean-Field Susceptibility above and below the Critical Temperature]].
+- [Graph] Plot the mean-field $\chi^{-1}$ versus $T/T_c\in[0.5,1.5]$, showing slope 1 above $T_c$ and slope 2 below (the factor-2 amplitude ratio), which connects to exercise \[\[11.04 Mean-Field Susceptibility above and below the Critical Temperature\]\].
 
 ### N1608
 
@@ -244,7 +244,7 @@ Correct and well scoped; the Ginzburg scaling $|t|^{(d-4)/2}$, the 3D exponents 
 
 - [Graph] Plot $|t|^{(d-4)/2}$ on log axes for $d=3,4,5$ over $|t|\in[10^{-4},1]$, showing growth for $d<4$, constancy at $d=4$ and decay for $d>4$.
 - [Intuition] Add a one-line heuristic: fluctuations of $m$ averaged over a correlation volume scale as $\xi^{2-d}$, while $m^2\propto|t|$; with $\xi\propto|t|^{-1/2}$ the ratio is $|t|^{(d-4)/2}$.
-- [Links] Link "Theorem 11.1 (Ginzburg criterion)" to the fuller treatment in [[12.02.03 Ginzburg Criterion]].
+- [Links] Link "Theorem 11.1 (Ginzburg criterion)" to the fuller treatment in \[\[12.02.03 Ginzburg Criterion\]\].
 
 ### N1609
 
@@ -286,7 +286,7 @@ Correct exponent table with valid scaling-relation checks and good scope notes.
 
 - [Graph] Plot $C$ versus $t\in[-0.2,0.2]$ comparing a logarithmic divergence $-\ln|t|$ with a mean-field finite jump, to make the two meanings of $\alpha=0$ visible.
 - [Example] Add the remaining checks $\alpha+\beta(1+\delta)=2$ ($0+\tfrac18\cdot16=2$) and hyperscaling $d\nu=2-\alpha$ ($2\cdot1=2$), which complete the consistency test.
-- [Links] Link the scaling-relation remark to [[12.06.02 Derivation of Scaling Relations]] in addition to the external Tong reference.
+- [Links] Link the scaling-relation remark to \[\[12.06.02 Derivation of Scaling Relations\]\] in addition to the external Tong reference.
 
 ### N1613
 
@@ -329,7 +329,7 @@ Correct and well qualified (barrier scaling, $2J$ per broken bond, Mermin–Wagn
 
 - [Example] Add the 2D domain-wall estimate: a straight wall across an $L\times L$ lattice costs $2JL$, so the reversal barrier scales as $L^{d-1}$, not $N=L^d$, which quantifies the "Barrier scaling" note.
 - [Manim] Animate a 2D lattice below $T_c$ with mixed boundary conditions, showing two domains separated by a fluctuating wall, to illustrate ergodicity breaking and interface energy.
-- [Links] Link the Mermin–Wagner remark to [[11.06.02 XY Model]] and [[11.06.03 Heisenberg Model]], where the theorem is applied.
+- [Links] Link the Mermin–Wagner remark to \[\[11.06.02 XY Model\]\] and \[\[11.06.03 Heisenberg Model\]\], where the theorem is applied.
 
 ### N1617
 
@@ -383,7 +383,7 @@ Correct and carefully qualified, though the universality discussion repeats itse
 
 - [Simplify] Merge Remark 11.6, the following paragraph and the "Scope of the universality statement" note into one paragraph stating that the class is fixed by $d$, the order-parameter symmetry ($n$) and the interaction range.
 - [Example] Quote the 3D Heisenberg exponents ($\beta\approx0.37$, $\gamma\approx1.40$, $\nu\approx0.71$) next to the 3D Ising values ($0.326$, $1.237$, $0.630$), so "its exponents differ" is shown, not only stated.
-- [Links] Link "Mermin–Wagner theorem" to the remark in [[11.05.02 Physical Interpretation - Equilibrium States and Domains]].
+- [Links] Link "Mermin–Wagner theorem" to the remark in \[\[11.05.02 Physical Interpretation - Equilibrium States and Domains\]\].
 
 ### N1622
 
@@ -392,7 +392,7 @@ Priority: low · Graph: yes · Manim: no
 
 Correct worked examples; $\mathbf T^3$, the enumeration, the iterates (0.50467, 0.50853, 0.51170, limit 0.52543), Yang's 0.95441 and the full mean-field 0.71041 all verify.
 
-- [Correctness] Symbol clash: Example 11.3 uses $\magnetic{m}_0=0.5$ for the starting iterate, while Example 11.4 (and [[11.04.04 Spontaneous Magnetization - Yang's Result]]) uses $\magnetic{m}_0$ for the spontaneous magnetization; rename the iterates to $m^{(0)},m^{(1)},\dots$.
+- [Correctness] Symbol clash: Example 11.3 uses $\magnetic{m}_0=0.5$ for the starting iterate, while Example 11.4 (and \[\[11.04.04 Spontaneous Magnetization - Yang's Result\]\]) uses $\magnetic{m}_0$ for the spontaneous magnetization; rename the iterates to $m^{(0)},m^{(1)},\dots$.
 - [Simplify] In Example 11.5 the expression $h_{\mathrm{eff}}=k_BT\operatorname{arctanh}(\tanh K)=J$ is a roundabout identity; state directly that the bond spins $\mu_i$ act as independent spins in field $J$, giving $\mathcal Z=2(2\cosh K)^{N-1}$ for the open chain.
 - [Graph] For Example 11.3, plot the cobweb diagram of $m\mapsto\tanh(m/0.9)$ from $m=0.5$, showing the slow convergence to 0.525 that explains why three iterates are not yet close.
 - [Structure] The source/correction notes in Examples 11.3 and 11.4 nearly repeat the main text; give the unrounded values directly in the main text and keep one short note.
@@ -404,7 +404,7 @@ Priority: low · Graph: no · Manim: no
 
 Accurate summary table and useful exercise guide.
 
-- [Links] In "Connections", link item 2 to [[12.01 Landau Theory of Phase Transitions]] and item 4 to [[12.00 Landau Theory and the Renormalization Group]], since the next chapter exists in the vault.
+- [Links] In "Connections", link item 2 to \[\[12.01 Landau Theory of Phase Transitions\]\] and item 4 to \[\[12.00 Landau Theory and the Renormalization Group\]\], since the next chapter exists in the vault.
 
 ### N1624
 
@@ -446,7 +446,7 @@ Correct derivation of the factor-two amplitude ratio (verified); clear, with one
 
 - [Correctness] The physical-quantities table lists $\magnetic{m}_0$ and $\magnetic{m}_{\mathrm s}$, which the note never uses; reduce the row to $\magnetic{m}$.
 - [Graph] Plot $\thermal{k}_{\mathrm B}\thermal{T}_{\mathrm c}\magnetic{\chi}$ from the full selected-branch formula for $\thermal{T}/\thermal{T}_{\mathrm c}\in[0.3,2]$, together with the asymptotes $1/(\thermal{T}/\thermal{T}_{\mathrm c}-1)$ and $1/[2(1-\thermal{T}/\thermal{T}_{\mathrm c})]$; this shows the amplitude ratio and the return to zero at low temperature.
-- [Intuition] Add a sentence that the ordered side is stiffer because the quartic term adds curvature at the nonzero minimum, linking to the Landau result $\chi^+/\chi^-=2$ in [[12.01.04 Landau Critical Exponents]].
+- [Intuition] Add a sentence that the ordered side is stiffer because the quartic term adds curvature at the nonzero minimum, linking to the Landau result $\chi^+/\chi^-=2$ in \[\[12.01.04 Landau Critical Exponents\]\].
 
 ### N1628
 

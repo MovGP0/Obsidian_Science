@@ -217,7 +217,7 @@ The examples are only asserted; there is no explicit current, no charge formula,
 - [Example] For the complex scalar field, write the explicit Noether current $j^\mu\propto i(\psi^*\partial^\mu\psi-\psi\,\partial^\mu\psi^*)$ and the charge $Q=\int j^0\,d^3x$. Without them, "the associated charge is the total electric charge" cannot be checked.
 - [Simplify] Start with a mechanical analogue the reader already knows: invariance under a rotation by angle $\alpha$ in the $(x,y)$ plane gives $\mechanical{L}_z$. Then show the $U(1)$ phase as a rotation in the $(\mathrm{Re}\,\psi,\mathrm{Im}\,\psi)$ plane.
 - [Correctness] The table gives "—" as the unit of $T^{0i}$, and the body says "in the units used in this example". State the convention, for example $T^{0i}=c\times$ momentum density in $\unit{J\,m^{-3}}$, so the unit is defined.
-- [Links] Link back to the general Noether theorem note and to [[11.11 Noether Charges for Discrete Symmetries]] for the contrast with discrete symmetries.
+- [Links] Link back to the general Noether theorem note and to \[\[11.11 Noether Charges for Discrete Symmetries\]\] for the contrast with discrete symmetries.
 
 ### N1014
 
@@ -227,7 +227,7 @@ Priority: low · Graph: no · Manim: no
 A clear, correct exercise list with sensible results; only small ordering and numbering issues.
 
 - [Structure] Reorder by difficulty or topic: exercises 11–13 (Intermediate) come after the Challenge exercises 9–10. Move them into the Intermediate block, or group them under topic headings (translations/rotations, energy, boosts, Kepler).
-- [Links] Add links from exercises 3 and 11 to [[11.10 Energy Function and Jacobi Function]], and from exercise 8 to the Kepler/LRL note, so a stuck reader can find the theory.
+- [Links] Add links from exercises 3 and 11 to \[\[11.10 Energy Function and Jacobi Function\]\], and from exercise 8 to the Kepler/LRL note, so a stuck reader can find the theory.
 
 ### N1015
 

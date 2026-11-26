@@ -11,7 +11,7 @@ Back to the index: [[Note Improvement Tracker]]
 
 The review found 3 possible errors or notation conflicts. 3 of them are verified (3 fixed); the other 0 are not verified yet. Each item links to the full suggestion entry.
 
-- [[#N0569|N0569]] Algebra and discrete mathematics - Catalogue Guide: The index link [[Planned Topics#5. Algebra and discrete mathematics|the detailed catalogue]] has no target in the vault: the only "Planned Topics.md" is a backup inside the hidden `.temp/catalogue-authoring/...` folder, so the link is broken in Obsidian; restore the note or remove the link. **Fixed:** Removed the sentence with the link to the deleted note; also removed BOM and converted CRLF to LF
+- [[#N0569|N0569]] Algebra and discrete mathematics - Catalogue Guide: The index link \[\[Planned Topics#5. Algebra and discrete mathematics|the detailed catalogue\]\] has no target in the vault: the only "Planned Topics.md" is a backup inside the hidden `.temp/catalogue-authoring/...` folder, so the link is broken in Obsidian; restore the note or remove the link. **Fixed:** Removed the sentence with the link to the deleted note; also removed BOM and converted CRLF to LF
 - [[#N0572|N0572]] Group: "Group homomorphisms ... given a morphism $f$ on the group $(G,·)$ we can define $f(a\cdot b)=f(a)\cdot f(b)$" is wrong as stated: a homomorphism is a map between two groups, $f:(G,\cdot)\to(H,\ast)$ with $f(a\cdot b)=f(a)\ast f(b)$, and it is not a rule "derived from the rules of groups" as the section's first sentence claims. **Fixed:** Rewrote as map f:(G,.)->(H,*) with f(a.b)=f(a)*f(b) for all a,b in G and removed the derivation claim
 - [[#N0572|N0572]] Group: The axiom list omits closure and never says that $\cdot$ is a binary operation $G\times G\to G$, so "a special set with additional rules" does not define a group; add closure or define the operation as a map into $G$. **Fixed:** Added that . is a binary operation G x G -> G with closure a.b in G; converted CRLF to LF
 
@@ -157,7 +157,7 @@ Clear, correct introduction to the group axioms with good worked examples for $\
 
 - [Manim] Animate an equilateral triangle with labelled vertices undergoing $p=(12)$ then $q=(23)$ versus $q$ then $p$, ending in different positions; this makes $pq\ne qp$ and the rightmost-first convention concrete.
 - [Example] Add the Cayley table of $\mathbb Z/4\mathbb Z$ to the worked example; the identity row and the inverse pairs ($1\oplus3=0$) can then be read off directly.
-- [Links] This note overlaps with [[Group]] and [[Operations semigroups and groups]]; add a "See also" link to the latter so the two group introductions are connected.
+- [Links] This note overlaps with \[\[Group\]\] and \[\[Operations semigroups and groups\]\]; add a "See also" link to the latter so the two group introductions are connected.
 - [Structure] The file uses CRLF line endings; save with LF as the Obsidian skill requires.
 
 ### N0566
@@ -202,7 +202,7 @@ Priority: low · Graph: no · Manim: no
 
 Useful chapter route and lesson index; the worked example is correct.
 
-- [Correctness] The index link [[Planned Topics#5. Algebra and discrete mathematics|the detailed catalogue]] has no target in the vault: the only "Planned Topics.md" is a backup inside the hidden `.temp/catalogue-authoring/...` folder, so the link is broken in Obsidian; restore the note or remove the link.
+- [Correctness] The index link \[\[Planned Topics#5. Algebra and discrete mathematics|the detailed catalogue\]\] has no target in the vault: the only "Planned Topics.md" is a backup inside the hidden `.temp/catalogue-authoring/...` folder, so the link is broken in Obsidian; restore the note or remove the link.
 - [Structure] This chapter-level hub sits inside the "03 Groups, Rings, Fields, and Representations" subfolder although it indexes all four subfolders; move it to the chapter root "11 Discrete Mathematics and Abstract Algebra" and add the numbered 25.01–25.09 notes to the index.
 - [Structure] The file is saved with a UTF-8 BOM and CRLF line endings; save as UTF-8 without BOM with LF.
 
@@ -239,7 +239,7 @@ Unformatted stub without frontmatter or TLDR that duplicates 25.01 and misstates
 
 - [Correctness] "Group homomorphisms ... given a morphism $f$ on the group $(G,·)$ we can define $f(a\cdot b)=f(a)\cdot f(b)$" is wrong as stated: a homomorphism is a map between two groups, $f:(G,\cdot)\to(H,\ast)$ with $f(a\cdot b)=f(a)\ast f(b)$, and it is not a rule "derived from the rules of groups" as the section's first sentence claims.
 - [Correctness] The axiom list omits closure and never says that $\cdot$ is a binary operation $G\times G\to G$, so "a special set with additional rules" does not define a group; add closure or define the operation as a map into $G$.
-- [Structure] Add a quoted `title` frontmatter and a TLDR callout, or better replace the stub with a short redirect to [[25.01 Group axioms]] and [[25.02 Subgroups and homomorphisms]]; keep the file name because [[Group]] is linked from the Category Theory note "Functor".
+- [Structure] Add a quoted `title` frontmatter and a TLDR callout, or better replace the stub with a short redirect to \[\[25.01 Group axioms\]\] and \[\[25.02 Subgroups and homomorphisms\]\]; keep the file name because \[\[Group\]\] is linked from the Category Theory note "Functor".
 - [Structure] The file uses CRLF line endings; save with LF.
 
 ### N0573

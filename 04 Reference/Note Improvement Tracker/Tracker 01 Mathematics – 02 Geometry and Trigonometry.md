@@ -11,8 +11,8 @@ Back to the index: [[Note Improvement Tracker]]
 
 The review found 5 possible errors or notation conflicts. 5 of them are verified (5 fixed); the other 0 are not verified yet. Each item links to the full suggestion entry.
 
-- [[#N0088|N0088]] Geometry - Catalogue Guide: The link [[Planned Topics#3. Geometry|the detailed catalogue]] points to a note that exists only under `.temp/catalogue-authoring/.../backups/`, not in the vault proper, so it is broken; restore the note or remove the sentence (the same link appears in the other chapter catalogue guides). **Fixed:** Planned Topics.md was deleted in commit faabc61 and exists only in .temp backup; removed the sentence with the link (restoring the note is outside batch scope; Mathematics Study Guide and Catalogue Source Guide also still link to it)
-- [[#N0108|N0108]] Solve spherical triangles: In "Spherical curves and distances from coordinates", "apply the spherical cosine rule to their polar triangle" misuses the term defined in [[Geometry on a sphere]]; it should say "to the triangle formed by the north pole and the two points", whose sides are the colatitudes $\pi/2-\varphi_1$, $\pi/2-\varphi_2$ with included angle $\Delta\lambda$. **Fixed:** Replaced with the triangle of the north pole and the two points, sides at the pole are colatitudes pi/2-phi1, pi/2-phi2, included angle Delta lambda
+- [[#N0088|N0088]] Geometry - Catalogue Guide: The link \[\[Planned Topics#3. Geometry|the detailed catalogue\]\] points to a note that exists only under `.temp/catalogue-authoring/.../backups/`, not in the vault proper, so it is broken; restore the note or remove the sentence (the same link appears in the other chapter catalogue guides). **Fixed:** Planned Topics.md was deleted in commit faabc61 and exists only in .temp backup; removed the sentence with the link (restoring the note is outside batch scope; Mathematics Study Guide and Catalogue Source Guide also still link to it)
+- [[#N0108|N0108]] Solve spherical triangles: In "Spherical curves and distances from coordinates", "apply the spherical cosine rule to their polar triangle" misuses the term defined in \[\[Geometry on a sphere\]\]; it should say "to the triangle formed by the north pole and the two points", whose sides are the colatitudes $\pi/2-\varphi_1$, $\pi/2-\varphi_2$ with included angle $\Delta\lambda$. **Fixed:** Replaced with the triangle of the north pole and the two points, sides at the pole are colatitudes pi/2-phi1, pi/2-phi2, included angle Delta lambda
 - [[#N0138|N0138]] Quadrics and motion along space curves: The physical-quantities table describes $\mechanical{\theta}$ also as "horizontal direction of the initial velocity measured from the positive $x$-axis", a meaning never used in the note; the cylindrical/spherical azimuth $\theta$ is written uncolored, so the row should describe only the rolling-circle rotation angle. **Fixed:** Row now describes only the rolling-circle rotation angle
 - [[#N0138|N0138]] Quadrics and motion along space curves: Symbol clash: in "Arc length and kinematics" $s$ is the integration variable in $\int_0^{t}\mechanical{\mathbf v}(s)\,ds$, while the next section and the cycloid use $s$ as arc length; rename the dummy variable to $\tau$ as the arc-length section already does. **Fixed:** Renamed integration variable to tau in both kinematic integrals
 - [[#N0138|N0138]] Quadrics and motion along space curves: Macro misuse: the helix example writes $\mechanical{\mathbf r}(t)=\langle\cos t,t,\sin t\rangle$ "in numerical coordinates" with an uncolored dimensionless $t$; either drop the mechanical macros there or give the example units and a colored time. **Fixed:** Removed mechanical macros from r, v, a in the numerical helix example
@@ -98,8 +98,8 @@ Priority: low · Graph: no · Manim: no
 
 Useful learning-route hub with a good worked problem-solving example; one link target is missing from the vault.
 
-- [Correctness] The link [[Planned Topics#3. Geometry|the detailed catalogue]] points to a note that exists only under `.temp/catalogue-authoring/.../backups/`, not in the vault proper, so it is broken; restore the note or remove the sentence (the same link appears in the other chapter catalogue guides).
-- [Links] The route skips several notes that sit in this geometry folder tree (for example [[Principal inverse trigonometric values]], [[Trigonometric equations]], [[Cycloids and trochoids]], [[Spirals and involutes]]); add a one-line pointer to the trigonometry and curves sub-folders or to [[Geometry and trigonometry - Overview]].
+- [Correctness] The link \[\[Planned Topics#3. Geometry|the detailed catalogue\]\] points to a note that exists only under `.temp/catalogue-authoring/.../backups/`, not in the vault proper, so it is broken; restore the note or remove the sentence (the same link appears in the other chapter catalogue guides).
+- [Links] The route skips several notes that sit in this geometry folder tree (for example \[\[Principal inverse trigonometric values\]\], \[\[Trigonometric equations\]\], \[\[Cycloids and trochoids\]\], \[\[Spirals and involutes\]\]); add a one-line pointer to the trigonometry and curves sub-folders or to \[\[Geometry and trigonometry - Overview\]\].
 
 ### N0089
 
@@ -121,7 +121,7 @@ Priority: low · Graph: no · Manim: no
 Clear, well-paced introduction; definitions, the vertical-angle proof, and the worked answers are correct.
 
 - [Structure] "Parallel lines and a transversal" names corresponding, alternate and same-side angles only in words; add a labelled figure (two parallels, one transversal, eight angles numbered) because these pairs are almost impossible to learn from prose alone.
-- [Intuition] State explicitly why the corresponding-angle property needs the parallel postulate (it fails on a sphere) and link forward to [[Geometry on a sphere]], matching the theme of the catalogue guide.
+- [Intuition] State explicitly why the corresponding-angle property needs the parallel postulate (it fails on a sphere) and link forward to \[\[Geometry on a sphere\]\], matching the theme of the catalogue guide.
 
 ### N0091
 
@@ -130,7 +130,7 @@ Priority: low · Graph: yes · Manim: no
 
 Correct and well-motivated; the apothem-versus-circumradius derivation and golden-ratio argument are explained well.
 
-- [Graph] Plot $K_n/(\pi R^2)=\dfrac{n\sin(2\pi/n)}{2\pi}$ against $n=3,\dots,24$ (points) to show regular polygons approaching the circle; this connects the area formula to [[Circles sectors and annuli]].
+- [Graph] Plot $K_n/(\pi R^2)=\dfrac{n\sin(2\pi/n)}{2\pi}$ against $n=3,\dots,24$ (points) to show regular polygons approaching the circle; this connects the area formula to \[\[Circles sectors and annuli\]\].
 - [Simplify] The pentagon diagonal derivation ("Equal angles give similar triangles whose corresponding lengths imply $d/s=s/(d-s)$") skips which triangles are similar; name them (e.g. the triangle formed by two diagonals and a side versus the small triangle at the crossing) or add a figure.
 - [Intuition] In "Regular convex polygons", the remark that equal angles alone need not give equal sides should say it is for $n\ge4$ (a rectangle is the counterexample); for triangles equiangular does imply equilateral.
 
@@ -152,7 +152,7 @@ Priority: low · Graph: no · Manim: no
 
 Clear and correct; the centroid vector argument and Heron cross-check are good teaching devices.
 
-- [Example] Heron's formula is stated without proof or pointer; add a link to where it is derived (e.g. from the cosine rule in [[Solve plane triangles]] or [[04.03 Triangles]]).
+- [Example] Heron's formula is stated without proof or pointer; add a link to where it is derived (e.g. from the cosine rule in \[\[Solve plane triangles\]\] or \[\[04.03 Triangles\]\]).
 - [Simplify] The centroid sentence "the point $\tfrac13A+\tfrac23(B+C)/2$" is easy to misread; write it as $A+\tfrac23\bigl(\tfrac{B+C}2-A\bigr)=\tfrac{A+B+C}3$.
 - [Structure] Add a figure showing the four centers (centroid, circumcenter, incenter, orthocenter) for one obtuse triangle, since the text claims the circumcenter and orthocenter can lie outside.
 
@@ -161,9 +161,9 @@ Clear and correct; the centroid vector argument and Heron cross-check are good t
 Note: [[03.05 Trigonometric functions|03.05 Trigonometric functions]]  
 Priority: low · Graph: yes · Manim: yes
 
-Correct, compact treatment of amplitude, period and phase with a good worked table; it heavily overlaps [[Unit-circle function graphs]].
+Correct, compact treatment of amplitude, period and phase with a good worked table; it heavily overlaps \[\[Unit-circle function graphs\]\].
 
-- [Structure] This note and [[Unit-circle function graphs]] cover the same family $A\sin(B(x-h))+D$ with nearly identical worked examples; decide which is the main note and make the other link to it rather than repeat.
+- [Structure] This note and \[\[Unit-circle function graphs\]\] cover the same family $A\sin(B(x-h))+D$ with nearly identical worked examples; decide which is the main note and make the other link to it rather than repeat.
 - [Graph] Replace or supplement the static SVG with a native 2D plot of $g(x)=2\sin(3(x-\pi/6))-1$ over $x\in[0,4\pi/3]$ together with $\sin x$ dashed, so the reader sees the stretch, shift and midline relative to the parent.
 - [Manim] Animate a point moving round the unit circle while its height is traced against the angle on an adjacent axis, to show how the sine graph is generated from circular motion.
 - [Graph] Add a plot of $\tan x$ on $(-3\pi/2,3\pi/2)$ with vertical asymptotes, since tangent's period and unboundedness are only stated in words.
@@ -175,7 +175,7 @@ Priority: low · Graph: no · Manim: no
 
 Clear, correct derivations of Pythagoras, cosine rule and sine rule with a well-chosen worked example.
 
-- [Structure] The cosine-rule and sine-rule derivations are repeated almost verbatim in [[Solve plane triangles]]; keep the derivation here and let that note link back.
+- [Structure] The cosine-rule and sine-rule derivations are repeated almost verbatim in \[\[Solve plane triangles\]\]; keep the derivation here and let that note link back.
 - [Structure] Add a figure for the four-triangle Pythagoras proof; the prose description of the arrangement is hard to visualise.
 - [Intuition] Add the circumradius interpretation $a/\sin A=2R$ in one sentence; it explains why the common ratio in the sine rule has geometric meaning.
 
@@ -187,7 +187,7 @@ Priority: low · Graph: yes · Manim: no
 Clear and correct; the arc-versus-chord distinction is well made and the numbers check.
 
 - [Graph] Plot arc length $r\alpha$ and chord $2r\sin(\alpha/2)$ for $r=1$, $\alpha\in[0,2\pi]$ on one 2D graph, showing they agree for small $\alpha$ and diverge (chord peaks at $2$ at $\alpha=\pi$).
-- [Intuition] Add the small-angle remark that chord $\approx$ arc when $\alpha$ is small, linking to the $\sin x/x\to1$ argument in [[Unit-circle function graphs]].
+- [Intuition] Add the small-angle remark that chord $\approx$ arc when $\alpha$ is small, linking to the $\sin x/x\to1$ argument in \[\[Unit-circle function graphs\]\].
 
 ### N0097
 
@@ -207,7 +207,7 @@ Priority: low · Graph: no · Manim: yes
 Clean rotation-based derivation of the addition formulas; correct and well-checked.
 
 - [Manim] Animate rotating the vector $(\cos\beta,\sin\beta)$ by $\alpha$, showing the rotated basis vectors $R_\alpha\mathbf e_x$, $R_\alpha\mathbf e_y$ and the decomposition, so the linearity step is visible.
-- [Structure] This derivation duplicates the one in [[Trigonometric addition and multiple angles]]; keep one canonical derivation and link from the other.
+- [Structure] This derivation duplicates the one in \[\[Trigonometric addition and multiple angles\]\]; keep one canonical derivation and link from the other.
 
 ### N0099
 
@@ -227,7 +227,7 @@ Priority: low · Graph: no · Manim: no
 
 Short topic overview that lists only the numbered 04.xx notes.
 
-- [Links] The overview omits [[03.05 Trigonometric functions]] and all catalogue notes in this folder tree (spherical trigonometry, inverse functions, conics, curves); add a line linking [[Geometry - Catalogue Guide]] so the full chapter is reachable.
+- [Links] The overview omits \[\[03.05 Trigonometric functions\]\] and all catalogue notes in this folder tree (spherical trigonometry, inverse functions, conics, curves); add a line linking \[\[Geometry - Catalogue Guide\]\] so the full chapter is reachable.
 
 ### N0101
 
@@ -238,7 +238,7 @@ Careful, correct introduction to spherical geometry with explicit Eulerian conve
 
 - [Graph] Add a native 3D plot of a unit sphere with two great circles bounding a lune of angle $\alpha=\pi/3$ (and optionally the octant triangle) to support the area argument.
 - [Simplify] The polar-triangle paragraph is abstract; add a concrete check using the octant (its polar triangle is itself, since $\pi-\pi/2=\pi/2$).
-- [Intuition] Explain in one sentence why the triangle area must exceed zero only through the angle excess, foreshadowing Girard's theorem in [[Spherical triangle identities]].
+- [Intuition] Explain in one sentence why the triangle area must exceed zero only through the angle excess, foreshadowing Girard's theorem in \[\[Spherical triangle identities\]\].
 
 ### N0102
 
@@ -259,7 +259,7 @@ Priority: medium · Graph: no · Manim: no
 
 A one-line German-titled stub containing only the formula, with no frontmatter, TLDR, context, or backlinks.
 
-- [Structure] Either delete this stub or turn it into a redirect to [[04.03 Triangles#The cosine rule]] / [[Solve plane triangles]]; it duplicates them, has no quoted title, TLDR or explanation, and uses $\gamma$ where the vault uses $C$ for the angle.
+- [Structure] Either delete this stub or turn it into a redirect to \[\[04.03 Triangles#The cosine rule\]\] / \[\[Solve plane triangles\]\]; it duplicates them, has no quoted title, TLDR or explanation, and uses $\gamma$ where the vault uses $C$ for the angle.
 
 ### N0104
 
@@ -290,7 +290,7 @@ Priority: medium · Graph: no · Manim: no
 
 A one-line German-titled stub containing only the sine-rule formula, with no frontmatter, TLDR, context, or backlinks.
 
-- [Structure] Either delete this stub or turn it into a redirect to [[04.03 Triangles#The sine rule]] / [[Solve plane triangles]]; it duplicates them and uses $\alpha,\beta,\gamma$ where the vault uses $A,B,C$.
+- [Structure] Either delete this stub or turn it into a redirect to \[\[04.03 Triangles#The sine rule\]\] / \[\[Solve plane triangles\]\]; it duplicates them and uses $\alpha,\beta,\gamma$ where the vault uses $A,B,C$.
 
 ### N0107
 
@@ -300,7 +300,7 @@ Priority: low · Graph: yes · Manim: no
 Correct and practical; the SSA two-solution example is fully verified and paired with the side lengths.
 
 - [Graph] Add a 2D construction plot for the SSA example: ray from $A$ at $30^\circ$, point $C$ with $b=10$, and the circle of radius $a=7$ about $C$ meeting the base line at the two positions of $B$ ($c\approx3.761$ and $13.559$); this shows the ambiguity geometrically.
-- [Structure] The sine- and cosine-rule derivations repeat [[04.03 Triangles]]; link there and keep only the solution-route decision table here.
+- [Structure] The sine- and cosine-rule derivations repeat \[\[04.03 Triangles\]\]; link there and keep only the solution-route decision table here.
 - [Simplify] Summarise the SSA cases (no, one, two triangles) as a short table in terms of $a$ versus $b\sin A$ and $b$.
 
 ### N0108
@@ -310,7 +310,7 @@ Priority: low · Graph: yes · Manim: no
 
 Correct and well-checked worked examples; one terminology slip in the distance formula.
 
-- [Correctness] In "Spherical curves and distances from coordinates", "apply the spherical cosine rule to their polar triangle" misuses the term defined in [[Geometry on a sphere]]; it should say "to the triangle formed by the north pole and the two points", whose sides are the colatitudes $\pi/2-\varphi_1$, $\pi/2-\varphi_2$ with included angle $\Delta\lambda$.
+- [Correctness] In "Spherical curves and distances from coordinates", "apply the spherical cosine rule to their polar triangle" misuses the term defined in \[\[Geometry on a sphere\]\]; it should say "to the triangle formed by the north pole and the two points", whose sides are the colatitudes $\pi/2-\varphi_1$, $\pi/2-\varphi_2$ with included angle $\Delta\lambda$.
 - [Graph] Add a 3D plot of a unit sphere with two points at latitude $60^\circ$ separated by $90^\circ$ longitude, drawing both the great-circle arc and the parallel arc, to support the $0.7227R$ versus $0.7854R$ comparison.
 - [Simplify] Add a short decision table (data pattern, formula to use, number of solutions) at the start of "Inputs, outputs, and branches".
 
@@ -342,7 +342,7 @@ Priority: low · Graph: yes · Manim: no
 
 Correct, well-explained derivations including the tangent half-angle substitution and its excluded point.
 
-- [Structure] The rotation derivation duplicates [[04.06 Trigonometric identities]]; keep one and link.
+- [Structure] The rotation derivation duplicates \[\[04.06 Trigonometric identities\]\]; keep one and link.
 - [Graph] Plot the rational parametrization $\bigl(\tfrac{1-t^2}{1+t^2},\tfrac{2t}{1+t^2}\bigr)$ for $t\in[-10,10]$, marking $t=0,\pm1,\pm3$, to show the circle traced except $(-1,0)$.
 - [Example] Add a numerical check of the Chebyshev recurrence, e.g. $\cos3x=2\cos x\cos2x-\cos x$ reproducing $4\cos^3x-3\cos x$.
 
@@ -371,11 +371,11 @@ Correct derivations with good sign checks; well organised.
 Note: [[Unit-circle function graphs|Unit-circle function graphs]]  
 Priority: low · Graph: yes · Manim: no
 
-Correct and complete for the six circular functions; overlaps strongly with [[03.05 Trigonometric functions]].
+Correct and complete for the six circular functions; overlaps strongly with \[\[03.05 Trigonometric functions\]\].
 
 - [Graph] Add native plots of $\sec x$ and $\csc x$ on $(-2\pi,2\pi)$ with $\cos x$, $\sin x$ dashed, showing how reciprocal gaps and poles arise.
 - [Graph] Plot $\sin x/x$ near zero together with the squeeze bounds $\cos x$ and $1$ on $(-\pi/2,\pi/2)$ for the small-angle section.
-- [Structure] The amplitude-period-shift section and worked example repeat [[03.05 Trigonometric functions]]; merge or cross-reference.
+- [Structure] The amplitude-period-shift section and worked example repeat \[\[03.05 Trigonometric functions\]\]; merge or cross-reference.
 
 ### N0115
 
@@ -394,7 +394,7 @@ Priority: low · Graph: yes · Manim: no
 Correct and well-organised; the spatial worked intersections are checked.
 
 - [Graph] Add a 3D plot of the planes $x+y+z=6$ and $x-y+z=2$ with their intersection line $(4,2,0)+t(-1,0,1)$, for $x,y,z\in[-2,6]$.
-- [Links] Link to [[Lines planes and intersections in space]] for distances and skew-line computations, which extend this note.
+- [Links] Link to \[\[Lines planes and intersections in space\]\] for distances and skew-line computations, which extend this note.
 
 ### N0117
 
@@ -403,7 +403,7 @@ Priority: low · Graph: no · Manim: no
 
 Clear and correct; the nearest-point argument and the reference-angle warning are good.
 
-- [Links] Link [[Lines planes and intersections in space]], whose point-to-plane foot formula is the same projection with a normal vector.
+- [Links] Link \[\[Lines planes and intersections in space\]\], whose point-to-plane foot formula is the same projection with a normal vector.
 
 ### N0118
 
@@ -486,7 +486,7 @@ Correct, well-structured classification with a verified rotated-ellipsoid exampl
 
 - [Graph] Add native 3D surface plots for $a=b=c=1$: ellipsoid, one-sheet and two-sheet hyperboloids, cone, elliptic and hyperbolic paraboloids, ideally in one grid of panels.
 - [Structure] Add a summary table (signs of eigenvalues, constant, linear term present?) mapping to the surface type.
-- [Links] Link [[Quadrics and motion along space curves]], which treats the same surfaces by traces with worked sketches.
+- [Links] Link \[\[Quadrics and motion along space curves\]\], which treats the same surfaces by traces with worked sketches.
 
 ### N0126
 
@@ -517,7 +517,7 @@ Priority: low · Graph: yes · Manim: no
 Correct and clear; the line element and finite arc-versus-chord check are well explained.
 
 - [Graph] Add a 2D polar grid plot showing the small curvilinear rectangle with sides $dr$ and $r\,d\theta$ at two radii, to make the scale factor $r$ visible.
-- [Links] Link [[Space coordinates and rotation conventions]] for the spherical counterpart and [[Plane coordinates and point constructions]] for atan2 conversion.
+- [Links] Link \[\[Space coordinates and rotation conventions\]\] for the spherical counterpart and \[\[Plane coordinates and point constructions\]\] for atan2 conversion.
 
 ### N0129
 
@@ -529,7 +529,7 @@ A correct but raw lecture transcription with handwritten sketches, editorial not
 - [Structure] Replace the "##### Point Q/R/P", empty "##### Parametric trajectory" and other h5 headings with a proper h2/h3 hierarchy, and move transcription remarks ("The handwritten statement has a plus sign", "The sketch labels its horizontal coordinate 4") into a single source-note callout.
 - [Graph] Replace the handwritten parametric sketches (Figs. 13, 14, 25) with native 2D plots: $x=1+\sqrt t$, $y=t^2-4t$ on $[0,4]$; $x=\sqrt t$, $y=1-t$ on $[0,9]$; $x=t^2$, $y=t^3-3t$ on $[-2,2]$ with the two tangents $y=\pm\sqrt3(x-3)$.
 - [Simplify] Simplify the boxed second derivative for $x=t^3+t$, $y=t^5+1$ to $\dfrac{10t^3(3t^2+2)}{(3t^2+1)^3}$.
-- [Links] The internal link [[#Tangents at $(3,0)$|...]] targets a heading containing inline LaTeX; check it resolves in reading mode or rename the heading to plain text.
+- [Links] The internal link \[\[#Tangents at $(3,0)$|...\]\] targets a heading containing inline LaTeX; check it resolves in reading mode or rename the heading to plain text.
 - [Manim] Animate a circle rolling along the axis tracing the cycloid arch while the area under it fills, ending with the $3\pi r^2$ result (three times the rolling disk).
 - [Intuition] Before the arc-length formula, add the one-line derivation $\Delta s\approx\sqrt{\Delta x^2+\Delta y^2}=\sqrt{1+(\Delta y/\Delta x)^2}\,\Delta x$, which the figure suggests but the text omits.
 
@@ -553,7 +553,7 @@ Correct and well-motivated; the tractrix tangent property is proved and checked 
 
 - [Graph] Plot $y=\cosh x$ against the parabola $y=1+x^2/2$ for $x\in[-3,3]$ to illustrate the vertex-only agreement claimed in the text.
 - [Manim] Animate the tractrix as a dragged object: the end of a rod of length $a$ moves along the $x$-axis while the other end follows, showing the constant tangent segment.
-- [Intuition] Mention in one sentence the classical link that the tractrix is an involute of the catenary, connecting the two halves of the note and [[Evolutes involutes and envelopes]].
+- [Intuition] Mention in one sentence the classical link that the tractrix is an involute of the catenary, connecting the two halves of the note and \[\[Evolutes involutes and envelopes\]\].
 
 ### N0132
 
@@ -596,7 +596,7 @@ Correct and concise; evolute, involute and envelope are each derived and checked
 
 - [Graph] Plot the parabola $y=x^2$ and its evolute $C(x)=(-4x^3,1/2+3x^2)$ for $x\in[-1,1]$, marking the cusp at $(0,1/2)$ and one normal line.
 - [Manim] Animate a taut string unwinding from a circle of radius $1$, its free end tracing the involute $I(t)=(\cos t+t\sin t,\sin t-t\cos t)$.
-- [Links] The circle involute is also derived in [[Spirals and involutes]]; cross-link the two.
+- [Links] The circle involute is also derived in \[\[Spirals and involutes\]\]; cross-link the two.
 
 ### N0136
 
@@ -618,7 +618,7 @@ Correct worked lecture material (all areas and the tangent line verify), but it 
 - [Graph] Replace the handwritten rose and limacon sketches (Figs. 32–37, 39–46) with native polar plots: $r=3\cos2\theta$, $r=7\sin2\theta$, $r=6+4\sin\theta$, $r=2\cos4\theta$, and $r=\cos\theta$ with $r=\sin2\theta$ with the common region shaded.
 - [Intuition] Under "Polar areas", explain the step from the sector area to the integral: a thin wedge of angle $d\theta$ has area $\tfrac12r^2d\theta$, and summing wedges gives $\int\tfrac12r^2d\theta$.
 - [Simplify] In the $r=2\sin\theta$ example, note that the circle is traced twice on $[0,2\pi]$, so the five horizontal-tangent angles give only two distinct points, $(0,0)$ and $(0,2)$, and the four vertical-tangent angles give $(\pm1,1)$.
-- [Structure] Replace the "##### " headings under "## Worked lecture material" with an h2/h3 hierarchy and add a TLDR-consistent introduction; link [[Conchoids and limacons]] for the limacon classification and [[04.08 Circular and cylindrical coordinates]] for coordinate conventions.
+- [Structure] Replace the "##### " headings under "## Worked lecture material" with an h2/h3 hierarchy and add a TLDR-consistent introduction; link \[\[Conchoids and limacons\]\] for the limacon classification and \[\[04.08 Circular and cylindrical coordinates\]\] for coordinate conventions.
 
 ### N0138
 
@@ -630,7 +630,7 @@ A long, loosely structured lecture transcription mixing quadric traces, vector c
 - [Correctness] The physical-quantities table describes $\mechanical{\theta}$ also as "horizontal direction of the initial velocity measured from the positive $x$-axis", a meaning never used in the note; the cylindrical/spherical azimuth $\theta$ is written uncolored, so the row should describe only the rolling-circle rotation angle.
 - [Correctness] Symbol clash: in "Arc length and kinematics" $s$ is the integration variable in $\int_0^{t}\mechanical{\mathbf v}(s)\,ds$, while the next section and the cycloid use $s$ as arc length; rename the dummy variable to $\tau$ as the arc-length section already does.
 - [Correctness] Macro misuse: the helix example writes $\mechanical{\mathbf r}(t)=\langle\cos t,t,\sin t\rangle$ "in numerical coordinates" with an uncolored dimensionless $t$; either drop the mechanical macros there or give the example units and a colored time.
-- [Structure] Split the note: the quadric-traces half duplicates [[Quadric surfaces and their classification]] and the space-curve/coordinates half duplicates [[Space curves and moving frames]] and [[04.08 Circular and cylindrical coordinates]]; move each part next to its counterpart, use an h2/h3 hierarchy instead of "##### ", and gather all handwriting remarks into one source callout.
+- [Structure] Split the note: the quadric-traces half duplicates \[\[Quadric surfaces and their classification\]\] and the space-curve/coordinates half duplicates \[\[Space curves and moving frames\]\] and \[\[04.08 Circular and cylindrical coordinates\]\]; move each part next to its counterpart, use an h2/h3 hierarchy instead of "##### ", and gather all handwriting remarks into one source callout.
 - [Graph] Replace the handwritten quadric sketches (Figs. 33–56) with native 3D plots: $z=x^2$, $x^2+z^2/4=1$, $x^2/4+y^2/9+z^2=1$, $z^2-x^2-y^2=\pm1$, $z^2=x^2+y^2$, $z=x^2+4y^2$, $z=x^2-4y^2$, each on $[-3,3]^2$; and plot the cone-plane intersection ellipse with the plane $z=(x-6)/3$.
 - [Manim] Animate the left-rolling circle with the marked point $P$, drawing its velocity vector (length $R\omega\sqrt{2(1+\sin\theta)}$) so the reader sees it vanish at the bottom contact and reach $2R\omega$ at the top.
 
@@ -654,4 +654,4 @@ Correct and well-explained spirals, involute and clothoid, with a useful worked 
 
 - [Graph] Add native polar plots of $r=\theta/\pi$ (Archimedean), $r=1/\theta$ for $\theta\in[0.3,6\pi]$ with asymptote $y=1$, and $r=e^{0.15\theta}$, plus a parametric plot of the clothoid from Fresnel integrals for $s\in[-6,6]$ with $k=1/4$.
 - [Manim] Animate a point travelling along the clothoid with its osculating circle shrinking linearly in $1/s$, to show curvature growing in proportion to arc length.
-- [Links] The circle involute derivation duplicates [[Evolutes involutes and envelopes]]; cross-link the two.
+- [Links] The circle involute derivation duplicates \[\[Evolutes involutes and envelopes\]\]; cross-link the two.

@@ -46,4 +46,4 @@ Priority: high · Graph: no · Manim: no
 
 Placeholder file containing only "TODO".
 
-- [Structure] Either write the note (spin-1/2 operators, Pauli matrices, eigenstates, Stern–Gerlach motivation, link to [[22.07 Angular Momentum and Spin]]) or delete it and redirect links to the course chapter on spin.
+- [Structure] Either write the note (spin-1/2 operators, Pauli matrices, eigenstates, Stern–Gerlach motivation, link to \[\[22.07 Angular Momentum and Spin\]\]) or delete it and redirect links to the course chapter on spin.

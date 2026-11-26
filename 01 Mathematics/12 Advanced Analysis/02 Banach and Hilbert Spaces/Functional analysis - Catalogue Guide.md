@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Functional analysis: a route from vectors to functions"
 catalogue_ids:
   - "12"
@@ -63,7 +63,7 @@ Thus $p$ is the unique closest point. This argument uses more structure than the
 <!-- catalogue-complete-lesson-index:start -->
 ## Complete lesson index
 
-Read the prerequisite route above before the advanced lessons. The source topic links are in [[Planned Topics#12. Functional analysis|the detailed catalogue]].
+Read the prerequisite route above before the advanced lessons.
 
 - [[Vector spaces affine sets and convexity|Vector spaces, affine sets, and convexity]] — 12.1, 12.1.1, 12.1.2, 12.1.3, 12.1.4, 12.1.4.1, 12.1.4.2.
 - [[Linear maps functionals and complexification|Linear maps, functionals, and complexification]] — 12.1.5, 12.1.5.1, 12.1.5.2, 12.1.5.3, 12.1.6.

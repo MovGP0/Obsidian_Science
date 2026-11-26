@@ -88,7 +88,7 @@ Clear, correct introduction with good counterexamples (squared distance, discret
 
 - [Graph] In "Worked example and practice", plot $y=x^2$ near $x=2$ with the horizontal band $|y-4|<\varepsilon$ and the vertical band $|x-2|<\delta=\min(1,\varepsilon/5)$ for $\varepsilon=1$, showing the graph staying inside the box.
 - [Simplify] Worked answer 1 is hard to parse ("only finitely many terms occur in any fixed bounded interval separated from zero ..."); rewrite as: for $y\ne0$ not of the form $1/n$, the ball $B(y,|y|/2)$ contains only finitely many $1/n$, so a smaller radius misses them all; points $y<0$ are trivially excluded.
-- [Example] In "Balls, neighborhoods, and open sets", add a 2D contrast: the open ball of $(\mathbb R^2,d_\infty)$ is a square, linking forward to the norm-ball figure in [[Norms Banach spaces and series]].
+- [Example] In "Balls, neighborhoods, and open sets", add a 2D contrast: the open ball of $(\mathbb R^2,d_\infty)$ is a square, linking forward to the norm-ball figure in \[\[Norms Banach spaces and series\]\].
 
 ### N0587
 
@@ -151,7 +151,7 @@ Priority: low · Graph: no · Manim: no
 
 Clear and correct; the conjugation convention is checked with a genuinely complex example.
 
-- [Links] In "Hilbert spaces and examples", the almost-everywhere identification for $L^2(0,1)$ is attributed to [[Sobolev spaces and weak derivatives]]; [[Lp spaces and integral norms]] is the dedicated note and the better target.
+- [Links] In "Hilbert spaces and examples", the almost-everywhere identification for $L^2(0,1)$ is attributed to \[\[Sobolev spaces and weak derivatives\]\]; \[\[Lp spaces and integral norms\]\] is the dedicated note and the better target.
 - [Intuition] In "Cauchy–Schwarz and the induced norm", add one sentence saying that $cy$ is the projection of $x$ onto $y$, so the proof reads "the residual has nonnegative squared length"; this ties in with the worked projection example later in the note.
 
 ### N0593
@@ -222,8 +222,8 @@ Priority: low · Graph: no · Manim: no
 
 Clear and correct; the truncation estimates ($N=99$, $N\ge5$) recompute correctly.
 
-- [Simplify] In "Compact operators in Hilbert space", say that the image of the unit ball has compact closure and is therefore totally bounded before covering it with $\varepsilon$-balls; total boundedness is defined only in [[Compactness weak convergence and Fredholm equations]].
-- [Example] Add a finite symmetric matrix example (e.g. $\begin{pmatrix}2&1\\1&2\end{pmatrix}$ with eigenvectors $(1,\pm1)/\sqrt2$, eigenvalues $3,1$) written as $Kx=\sum_j\lambda_je_j\langle e_j,x\rangle$ before the infinite statement, tying it to [[10.08 Diagonalization]].
+- [Simplify] In "Compact operators in Hilbert space", say that the image of the unit ball has compact closure and is therefore totally bounded before covering it with $\varepsilon$-balls; total boundedness is defined only in \[\[Compactness weak convergence and Fredholm equations\]\].
+- [Example] Add a finite symmetric matrix example (e.g. $\begin{pmatrix}2&1\\1&2\end{pmatrix}$ with eigenvectors $(1,\pm1)/\sqrt2$, eigenvalues $3,1$) written as $Kx=\sum_j\lambda_je_j\langle e_j,x\rangle$ before the infinite statement, tying it to \[\[10.08 Diagonalization\]\].
 
 ### N0600
 
@@ -243,7 +243,7 @@ Priority: low · Graph: yes · Manim: no
 Clear and correct; the symmetric-but-not-self-adjoint example is concrete and well argued.
 
 - [Graph] In "Projectors in Hilbert space", draw a 2D vector plot of $v=(1,1)$, $Pv=(1,0)$, and $Qv=(2,0)$ with the projection directions (vertical for $P$, along $(1,-1)$ for $Q$), making the oblique projector and its norm $\sqrt2$ visible.
-- [Simplify] In "Adjoint operators in normed spaces", the claim $\|T'\|=\|T\|$ is stated without the step; add the one-line Hahn–Banach argument or link the norming-functional construction in [[Extension separation and reflexivity]].
+- [Simplify] In "Adjoint operators in normed spaces", the claim $\|T'\|=\|T\|$ is stated without the step; add the one-line Hahn–Banach argument or link the norming-functional construction in \[\[Extension separation and reflexivity\]\].
 
 ### N0602
 
@@ -315,7 +315,7 @@ Priority: low · Graph: no · Manim: no
 
 Clear and correct; the rank-one determinant examples verify.
 
-- [Structure] This note's inner product $\langle f,v\rangle=\int f\overline v$ is linear in the first argument, opposite to the convention (conjugate-linear first) of [[Inner products and Hilbert spaces]] and the other chapter-12 notes; switch to that convention or state the difference explicitly.
+- [Structure] This note's inner product $\langle f,v\rangle=\int f\overline v$ is linear in the first argument, opposite to the convention (conjugate-linear first) of \[\[Inner products and Hilbert spaces\]\] and the other chapter-12 notes; switch to that convention or state the difference explicitly.
 - [Example] Add a rank-two example where the $n=2$ term survives, e.g. $K(x,t)=1+xt$ on $[0,1]$, giving $D(\lambda)=1-\tfrac43\lambda+\tfrac1{12}\lambda^2$ (equal to $\det(I-\lambda A)$ with $A=\begin{pmatrix}1&1/2\\1/2&1/3\end{pmatrix}$), so the series structure is visible beyond rank one.
 
 ### N0609
@@ -368,7 +368,7 @@ Correct calculations, but the opening motivation does not illustrate the point i
 - [Intuition] In "Measure both values and slopes", the lists $(0,1,0)$ and $(0,-1,0)$ have equal value norms and also equal difference norms, so they do not show that a values-only norm misses slopes; use $u_n(x)=\sin(nx)/n$ instead (value norm tending to zero, slope norm of order $1$).
 - [Graph] Plot $u_n(x)=\sin(nx)/n$ and $u_n'(x)=\cos(nx)$ on $[0,\pi]$ for $n=1,4,16$ to show values shrinking while slopes do not.
 - [Graph] For practice 2, plot $x^\alpha$ and its derivative for $\alpha=0.3,0.5,0.75$ on $(0,1]$, noting that the derivative is square-integrable only for $\alpha>1/2$.
-- [Links] The section "Equal almost everywhere" repeats material from [[Lp spaces and integral norms]]; shorten it to two sentences with that link.
+- [Links] The section "Equal almost everywhere" repeats material from \[\[Lp spaces and integral norms\]\]; shorten it to two sentences with that link.
 
 ### N0614
 

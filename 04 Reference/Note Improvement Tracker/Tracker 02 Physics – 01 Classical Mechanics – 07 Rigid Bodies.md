@@ -115,7 +115,7 @@ Priority: high · Graph: yes · Manim: yes
 The note is correct but dense: the tensor appears without the vector-identity step, and it never states the key consequence that $\mechanical{\vec L}$ need not be parallel to $\mechanical{\vec\omega}$.
 
 - [Simplify] Show the BAC–CAB step $\mechanical{\vec r}\times(\mechanical{\vec\omega}\times\mechanical{\vec r})=\mechanical{r}^2\mechanical{\vec\omega}-(\mechanical{\vec r}\cdot\mechanical{\vec\omega})\mechanical{\vec r}$, then read off $\mechanical{I}_{ij}$ component by component.
-- [Intuition] State explicitly that $\mechanical{\vec L}\parallel\mechanical{\vec\omega}$ only when $\mechanical{\vec\omega}$ lies along a principal axis; otherwise the bearings must supply a torque (unbalanced wheels), with a link to [[07.14 Examples of Inertia Tensors]].
+- [Intuition] State explicitly that $\mechanical{\vec L}\parallel\mechanical{\vec\omega}$ only when $\mechanical{\vec\omega}$ lies along a principal axis; otherwise the bearings must supply a torque (unbalanced wheels), with a link to \[\[07.14 Examples of Inertia Tensors\]\].
 - [Example] Work one small example: two equal point masses at $(a,0,a)$ and $(-a,0,-a)$ (a dumbbell tilted at $45^\circ$); compute $\mechanical{\mathbf I}$ and find its principal axes by diagonalization.
 - [Graph] graph3d of the inertia ellipsoid $\mechanical{I}_1x^2+\mechanical{I}_2y^2+\mechanical{I}_3z^2=1$ for $\mechanical{I}_1:\mechanical{I}_2:\mechanical{I}_3=1:2:3$ with the principal axes drawn.
 - [Manim] Animate the tilted dumbbell rotating about a fixed vertical axis, with $\mechanical{\vec\omega}$ fixed and $\mechanical{\vec L}$ (perpendicular to the dumbbell) sweeping a cone, to show why a torque is needed.
@@ -129,7 +129,7 @@ The examples are numerically correct, but the precession example states a period
 
 - [Intuition] In the skater example, explain the energy source: the arms are pulled inward against the outward tendency in the rotating frame, so the muscles do positive work $\Delta\energy{K}=\tfrac12\mechanical{L}_z^2(1/\mechanical{I}_2-1/\mechanical{I}_1)$.
 - [Example] For the stellar collapse, add the check $\mechanical{v}_{\mathrm{eq}}=\mechanical{\omega}'\mechanical{R}'\approx2.4\times10^8\,\unit{m\,s^{-1}}$, close to $c$ and far above breakup speed, which shows that the uniform-rotation model fails before the end state.
-- [Structure] The precession section claims that $\signal{\Omega}_{\mathrm{prec}}$ "can be calculated from rigid-body theory" but shows nothing; either sketch the torque on the equatorial bulge or move the section to [[07.10 Symmetric Top and Precession]] with a pointer.
+- [Structure] The precession section claims that $\signal{\Omega}_{\mathrm{prec}}$ "can be calculated from rigid-body theory" but shows nothing; either sketch the torque on the equatorial bulge or move the section to \[\[07.10 Symmetric Top and Precession\]\] with a pointer.
 - [Manim] Animate Earth's tilted spin axis tracing a cone around the ecliptic normal while an arrow shows the tidal torque on the equatorial bulge.
 
 ### N0940
@@ -141,7 +141,7 @@ The equations are correct, but the note does not derive them from $d\mechanical{
 
 - [Simplify] Derive the equations from $(d\mechanical{\vec L}/dt)_{\mathrm{space}}=(d\mechanical{\vec L}/dt)_{\mathrm{body}}+\mechanical{\vec\omega}\times\mechanical{\vec L}$ with $\mechanical{\vec L}=(\mechanical{I}_1\mechanical{\omega}_1,\mechanical{I}_2\mechanical{\omega}_2,\mechanical{I}_3\mechanical{\omega}_3)$, showing one component explicitly.
 - [Simplify] Add the linear stability argument: perturb rotation about axis 2 to get $\ddot{\mechanical{\omega}}_1=[(\mechanical{I}_2-\mechanical{I}_3)(\mechanical{I}_1-\mechanical{I}_2)/(\mechanical{I}_1\mechanical{I}_3)]\mechanical{\omega}_2^2\mechanical{\omega}_1$, and note that the coefficient is positive (exponential growth) only for the intermediate axis.
-- [Structure] Clarify the terminology: "free precession" usually refers to the symmetric case $\mechanical{I}_1=\mechanical{I}_2$ (exercise 15 of [[07.15 Rigid-Body Exercises]]); with three distinct moments the motion is a general tumbling in which the $\mechanical{\omega}_i(t)$ are periodic.
+- [Structure] Clarify the terminology: "free precession" usually refers to the symmetric case $\mechanical{I}_1=\mechanical{I}_2$ (exercise 15 of \[\[07.15 Rigid-Body Exercises\]\]); with three distinct moments the motion is a general tumbling in which the $\mechanical{\omega}_i(t)$ are periodic.
 - [Graph] Plot numerically integrated $\mechanical{\omega}_1,\mechanical{\omega}_2,\mechanical{\omega}_3$ against $t$ for $\mechanical{I}=(1,2,3)$, starting near the intermediate axis at $\mechanical{\vec\omega}=(0.01,1,0.01)$, to show the periodic sign flips of $\mechanical{\omega}_2$.
 - [Manim] Animate the tennis-racket (Dzhanibekov) effect: a box spinning about its intermediate axis flips by $180^\circ$ periodically, while spins about the largest and smallest axes stay steady.
 
@@ -155,7 +155,7 @@ The results are correct, but the cone integral skips its only nontrivial step, a
 - [Simplify] Complete the cone step: $\int_0^{\mechanical{H}}\mechanical{R}^4(1-\mechanical{z}/\mechanical{H})^4\,dz=\mechanical{R}^4\mechanical{H}/5$, then substitute $\mechanical{\rho}$ to get $\tfrac3{10}\mechanical{M}\mechanical{R}^2$.
 - [Simplify] Show the disk-with-hole subtraction: $\mechanical{I}=\tfrac12\mechanical{\sigma}\pi(\mechanical{R}^4-\mechanical{r}^4)$ with $\mechanical{M}=\mechanical{\sigma}\pi(\mechanical{R}^2-\mechanical{r}^2)$, which factors to $\tfrac12\mechanical{M}(\mechanical{R}^2+\mechanical{r}^2)$; note the limits $\mechanical{r}\to0$ (disk) and $\mechanical{r}\to\mechanical{R}$ (ring).
 - [Intuition] For the torus, give the integral setup or a slicing argument, and explain the $\tfrac34\mechanical{r}^2$ term as the contribution from the spread of the cross-section about its centre.
-- [Structure] Add a short strategy paragraph at the top (choose slices such as disks, shells or rings whose own moment is known, then integrate) and link the table in [[07.13 Moments of Inertia of Common Solids]].
+- [Structure] Add a short strategy paragraph at the top (choose slices such as disks, shells or rings whose own moment is known, then integrate) and link the table in \[\[07.13 Moments of Inertia of Common Solids\]\].
 
 ### N0942
 
@@ -176,7 +176,7 @@ Priority: medium · Graph: yes · Manim: yes
 
 The note is correct and well organised, but it explains the rolling constraint and the role of friction only verbally, and the example has no force-based treatment.
 
-- [Simplify] Justify $\mechanical{v}=\mechanical{\omega}\mechanical{R}$ from the kinematics formula: the contact-point velocity is $\mechanical{v}-\mechanical{\omega}\mechanical{R}=0$; link to [[07.02 Rigid-Body Kinematics]].
+- [Simplify] Justify $\mechanical{v}=\mechanical{\omega}\mechanical{R}$ from the kinematics formula: the contact-point velocity is $\mechanical{v}-\mechanical{\omega}\mechanical{R}=0$; link to \[\[07.02 Rigid-Body Kinematics\]\].
 - [Example] Add the force approach for the incline: $\mechanical{a}=\mechanical{g}\sin\mechanical{\theta}/(1+\beta)$ and static friction $\beta\mechanical{M}\mechanical{g}\sin\mechanical{\theta}/(1+\beta)$, which gives the no-slip condition $\mu_s\ge\beta\tan\mechanical{\theta}/(1+\beta)$.
 - [Structure] Merge the "Source wording" callout and the final "Friction" paragraph, which repeat the same point.
 - [Graph] Plot the cycloid traced by a rim point, $(\mechanical{R}(\phi-\sin\phi),\mechanical{R}(1-\cos\phi))$ for $\phi\in[0,4\pi]$, showing the cusps where the point is momentarily at rest.

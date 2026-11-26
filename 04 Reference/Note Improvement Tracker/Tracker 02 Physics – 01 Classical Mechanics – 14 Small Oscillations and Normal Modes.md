@@ -216,7 +216,7 @@ Priority: medium · Graph: no · Manim: yes
 The torsion-oscillator and three-pendulum results are correct, but the note mixes a Cavendish digression with an example that is not a rigid-body system, and derivation steps are missing.
 
 - [Structure] The three-pendulum example uses point bobs, not rigid bodies; replace or supplement it with a genuine rigid-body case (e.g. a rod supported by two springs with translation and rocking modes), or retitle the section.
-- [Simplify] Show how $V$ follows from $\energy{U}=\sum_i\mechanical{m}\mechanical{g}\mechanical{\ell}(1-\cos\theta_i)+\tfrac12\mechanical{k}\mechanical{\ell}^2[(\theta_1-\theta_2)^2+(\theta_2-\theta_3)^2]$ and note that the spring part is the matrix of 14.12, so the eigenvectors are the same and each $\signal{\omega}^2$ shifts by $\mechanical{g}/\mechanical{\ell}$; link [[14.12 Normal Modes in Constrained Systems]].
+- [Simplify] Show how $V$ follows from $\energy{U}=\sum_i\mechanical{m}\mechanical{g}\mechanical{\ell}(1-\cos\theta_i)+\tfrac12\mechanical{k}\mechanical{\ell}^2[(\theta_1-\theta_2)^2+(\theta_2-\theta_3)^2]$ and note that the spring part is the matrix of 14.12, so the eigenvectors are the same and each $\signal{\omega}^2$ shifts by $\mechanical{g}/\mechanical{\ell}$; link \[\[14.12 Normal Modes in Constrained Systems\]\].
 - [Intuition] Tie the Cavendish paragraph to the normal-mode theme: the measured torsion period gives $\mechanical{\kappa}=\mechanical{I}\signal{\omega}^2$, which calibrates the tiny gravitational torque from the deflection angle.
 - [Manim] Animate the three coupled pendulums in each mode, then a superposition starting with one displaced pendulum.
 

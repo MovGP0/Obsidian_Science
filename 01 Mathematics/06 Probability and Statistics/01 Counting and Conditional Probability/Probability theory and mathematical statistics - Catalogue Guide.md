@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Probability theory and mathematical statistics"
 catalogue_ids:
   - "16"
@@ -57,7 +57,7 @@ An uncertainty statement must say what its interval means. A hard bound, a stand
 <!-- catalogue-complete-lesson-index:start -->
 ## Complete lesson index
 
-Read the prerequisite route above before the advanced lessons. The source topic links are in [[Planned Topics#16. Probability theory and mathematical statistics|the detailed catalogue]].
+Read the prerequisite route above before the advanced lessons.
 
 - [[Counting arrangements and selections|Counting arrangements and selections]] — 16.1, 16.1.1, 16.1.2, 16.1.3, 16.1.4.
 - [[Events and conditional probability|Events and conditional probability]] — 16.2, 16.2.1, 16.2.1.1, 16.2.1.2, 16.2.1.3.

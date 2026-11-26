@@ -114,7 +114,7 @@ Priority: low · Graph: no · Manim: no
 A short, clear historical note about the ether; no errors of substance.
 
 - [Simplify] In "meant a different density of the ether in such media", state that this was one historical model (Fresnel's), in which the ether density in matter is proportional to $\signal{n}^2$. This prepares the drag coefficient $1-1/\signal{n}^2$ in 03.03–03.04.
-- [Links] Link "stellar aberration" in the last paragraph to [[03.03 Stellar Aberration]], and "Fizeau measured the velocity of light in water" to [[03.04 The Speed of Light in Moving Media - Fresnel Drag]]. Note that Foucault (1850) first showed that light is slower in water.
+- [Links] Link "stellar aberration" in the last paragraph to \[\[03.03 Stellar Aberration\]\], and "Fizeau measured the velocity of light in water" to \[\[03.04 The Speed of Light in Moving Media - Fresnel Drag\]\]. Note that Foucault (1850) first showed that light is slower in water.
 
 ### N3517
 
@@ -192,7 +192,7 @@ Priority: low · Graph: no · Manim: no
 A clear interpretive comparison of Lorentz–Poincaré and Einstein relativity; it has almost no mathematics and needs little change.
 
 - [Structure] Add a two-column table that compares LPTR and STR: preferred frame, one-way light speed, meaning of contraction and dilation, and predicted M-M result. This replaces several long paragraphs that repeat the same contrast.
-- [Links] Link "a later chapter" (the crucial demarcating experiments) to [[11.04 The Experiment on the One-Way Relative Velocity of Light]].
+- [Links] Link "a later chapter" (the crucial demarcating experiments) to \[\[11.04 The Experiment on the One-Way Relative Velocity of Light\]\].
 
 ### N3523
 
@@ -213,7 +213,7 @@ Priority: low · Graph: no · Manim: no
 
 A clear conceptual note; no change of substance needed.
 
-- [Structure] The callout and the paragraph before it repeat the same statement. Keep the callout and shorten the paragraph to the logic "PoR is necessary, not sufficient", with a reference to Eq. (3.22) in [[03.06 Experiments Designed to Detect the Stationary Ether]].
+- [Structure] The callout and the paragraph before it repeat the same statement. Keep the callout and shorten the paragraph to the logic "PoR is necessary, not sufficient", with a reference to Eq. (3.22) in \[\[03.06 Experiments Designed to Detect the Stationary Ether\]\].
 
 ### N3525
 

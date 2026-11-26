@@ -249,7 +249,7 @@ Priority: low · Graph: no · Manim: no
 
 Clear hub that orders the three subnotes and flags the two separate steps (mode elimination and rescaling) and the flow-direction convention.
 
-- [Structure] The closing sentence repeats the first link of the opening paragraph verbatim; drop it or replace it with a one-line pointer to the exercises ([[10.13.03 Wilson–Fisher fixed point]], [[10.13.08 Relevant, marginal, and irrelevant operators]]).
+- [Structure] The closing sentence repeats the first link of the opening paragraph verbatim; drop it or replace it with a one-line pointer to the exercises (\[\[10.13.03 Wilson–Fisher fixed point\]\], \[\[10.13.08 Relevant, marginal, and irrelevant operators\]\]).
 
 ### N2743
 
@@ -260,7 +260,7 @@ The mode-splitting and effective-action definitions are clear, but the displayed
 
 - [Correctness] The displayed rescaling $\mechanical{x}'=b^{-1}\mechanical{x}$, $\signal{\phi}'=b^{(d-2)/2}\signal{\phi}^{<}$ maps the cutoff $b\energy{\Lambda}$ to $b^2\energy{\Lambda}$ (as the note itself admits); replace the display by the correct $\mechanical{k}'=\mechanical{k}/b$, $\mechanical{x}'=b\mechanical{x}$, $\signal{\phi}'(\mechanical{x}')=b^{-(d-2)/2}\signal{\phi}^{<}(\mechanical{x})$ and shorten the note to a one-line remark about the source's misprint.
 - [Simplify] Remove the "the source gives / it states" phrasing in the rescaling paragraph and state the three RG steps as a numbered list: (1) integrate out the shell $b\energy{\Lambda}<\lvert\mechanical{k}\rvert<\energy{\Lambda}$, (2) rescale momenta, (3) rescale the field so the kinetic term keeps coefficient $1/2$.
-- [Intuition] Show in one line why the field exponent is $(d-2)/2$: substituting $\mechanical{x}=\mechanical{x}'/b$ in $\int d^d\mechanical{x}\,(\partial\signal{\phi})^2$ gives a factor $b^{2-d}$ that the field rescaling must absorb; then show the tree-level consequence $\signal{g}_n'=b^{\,n-d}\signal{g}_n$ that feeds [[10.06.02 Relevant, Marginal, and Irrelevant Operators]].
+- [Intuition] Show in one line why the field exponent is $(d-2)/2$: substituting $\mechanical{x}=\mechanical{x}'/b$ in $\int d^d\mechanical{x}\,(\partial\signal{\phi})^2$ gives a factor $b^{2-d}$ that the field rescaling must absorb; then show the tree-level consequence $\signal{g}_n'=b^{\,n-d}\signal{g}_n$ that feeds \[\[10.06.02 Relevant, Marginal, and Irrelevant Operators\]\].
 - [Manim] Animate a momentum disk of radius $\energy{\Lambda}$: the outer shell is shaded and removed (integrated out), the remaining disk of radius $b\energy{\Lambda}$ is blown back up to radius $\energy{\Lambda}$, and a coupling readout $\signal{g}\to\signal{g}'$ updates each iteration.
 
 ### N2744
@@ -285,7 +285,7 @@ Conceptually correct but entirely verbal; the critical-surface and basin ideas w
 - [Example] Add the two-coupling $\signal{\phi}^4$ flow in $d=4-\epsilon$ as a concrete theory space, e.g. $\mathrm{d}r/\mathrm{d}l=2r+u/(1+r)$, $\mathrm{d}u/\mathrm{d}l=\epsilon u-3u^2/(1+r)^2$ (schematic normalization), with Gaussian and Wilson–Fisher fixed points, one relevant direction ($r$) and one irrelevant direction at the Wilson–Fisher point.
 - [Graph] Plot that flow as a 2D vector field (streamlines) for $\epsilon=1$ with $r\in[-1,1]$, $u\in[0,1.5]$, marking both fixed points and the critical surface (the separatrix flowing into the Wilson–Fisher point).
 - [Manim] Animate several starting theories (dots) flowing along the field toward the infrared: dots on the critical line converge to the Wilson–Fisher point, while dots off it run away toward large positive $r$ (disordered) or negative $r$ (ordered), illustrating basin and tuning.
-- [Intuition] Explain "stationary point of the vector field" as "a theory that looks the same at every length scale", and link the linearized eigenvalues to the relevant/irrelevant classification of [[10.06.02 Relevant, Marginal, and Irrelevant Operators]].
+- [Intuition] Explain "stationary point of the vector field" as "a theory that looks the same at every length scale", and link the linearized eigenvalues to the relevant/irrelevant classification of \[\[10.06.02 Relevant, Marginal, and Irrelevant Operators\]\].
 
 ### N2746
 
@@ -294,7 +294,7 @@ Priority: low · Graph: no · Manim: no
 
 Short, clear hub that correctly separates the generated scale from predictions of specific hadron masses.
 
-- [Structure] The final sentence duplicates the first link; drop it or replace it with a pointer to the numeric estimate in [[10.13.04 Asymptotic freedom]].
+- [Structure] The final sentence duplicates the first link; drop it or replace it with a pointer to the numeric estimate in \[\[10.13.04 Asymptotic freedom\]\].
 
 ### N2747
 
@@ -303,7 +303,7 @@ Priority: medium · Graph: yes · Manim: no
 
 Correct and carefully hedged, but it never displays the formula it relies on, so the key idea of dimensional transmutation stays abstract.
 
-- [Links] "given by (10.6)" points to an equation in another note without a link; write it as [[10.05.03 Scale Evolution of αₛ in QCD|(10.6)]] or, better, display it here.
+- [Links] "given by (10.6)" points to an equation in another note without a link; write it as \[\[10.05.03 Scale Evolution of αₛ in QCD|(10.6)\]\] or, better, display it here.
 - [Simplify] Display the transmutation formula explicitly: $\energy{\Lambda_{\mathrm{QCD}}}=\energy{\mu_0}\exp[-2\pi/(b_0\signal{\alpha_s}(\energy{\mu_0}))]$, and show in one line that $\mathrm{d}\energy{\Lambda_{\mathrm{QCD}}}/\mathrm{d}\energy{\mu_0}=0$ along the one-loop trajectory, which is the "no new parameter" statement now given only in words.
 - [Example] Insert the numbers: with $\signal{\alpha_s}(\mechanical{M_Z})=0.118$ and $n_f=5$ ($b_0=23/3$) the one-loop value is $\energy{\Lambda}\approx88\,\unit{MeV}$, with $b_0=7$ it is $\approx45\,\unit{MeV}$, versus the $\approx210\,\unit{MeV}$ higher-order $\overline{\mathrm{MS}}$ value, illustrating the scheme, flavor-number, and loop dependence mentioned in the last paragraph.
 - [Graph] Plot one-loop $\signal{\alpha_s}(\energy{\mu})=2\pi/(b_0\ln(\energy{\mu}/\energy{\Lambda}))$ for $\energy{\mu}\in[0.3,1000]\,\unit{GeV}$ (log axis) for two or three reference values of $\signal{\alpha_s}(\mechanical{M_Z})$, marking the corresponding $\energy{\Lambda}$ where each curve diverges.
@@ -326,7 +326,7 @@ Priority: medium · Graph: yes · Manim: yes
 
 Physically careful about not overclaiming confinement from the Landau pole, but the source's flawed argument is still presented in the body before being corrected.
 
-- [Links] "the one-loop evolution (10.6)" is an unlinked reference to another note; link [[10.05.03 Scale Evolution of αₛ in QCD|(10.6)]].
+- [Links] "the one-loop evolution (10.6)" is an unlinked reference to another note; link \[\[10.05.03 Scale Evolution of αₛ in QCD|(10.6)\]\].
 - [Structure] Move the source's "force becomes arbitrarily large" paragraph and its correction into one short remark; lead instead with the static potential as the proper confinement diagnostic.
 - [Graph] Plot the Cornell potential $V(r)=-\frac{4}{3}\frac{\alpha_s\hbar c}{r}+\sigma r$ with $\alpha_s\approx0.3$, $\sigma\approx0.18\,\unit{GeV^2}$, for $r\in[0.05,1.5]\,\unit{fm}$, showing the Coulomb-like short-distance part and the linear long-distance part (constant force about $0.9\,\unit{GeV/fm}$).
 - [Manim] Animate a quark–antiquark pair being pulled apart: the field lines collapse into a flux tube of constant width, the stored energy grows linearly, and at a critical length the tube breaks into two mesons via pair creation.
@@ -372,7 +372,7 @@ The one-loop formula and the plotted SM lines are correct, but the MSSM claim th
 
 - [Graph] Add the MSSM lines with $b_i=(33/5,1,-3)$ (for simplicity starting at $\mechanical{M_Z}$, or with a kink at about 1 TeV) to Fig. 10.5 in a second panel or lighter style; with the note's inputs they cross pairwise at about $10^{15.9}$–$10^{16.6}\,\unit{GeV}$, visibly tighter than the SM crossings at $10^{13.2}$, $10^{14.4}$, and $10^{16.6}\,\unit{GeV}$.
 - [Graph] The functiongraph offset uses $\log_{10}\mechanical{M_Z}=1.95904$ (that is 91.0 GeV); use $\log_{10}91.19\approx1.95995$ for consistency with the stated reference mass (visual change negligible).
-- [Example] Quote the three SM pairwise crossing scales from [[10.13.07 Gauge-coupling unification]] in the text so "approach one another near $10^{15}$ GeV" is quantified.
+- [Example] Quote the three SM pairwise crossing scales from \[\[10.13.07 Gauge-coupling unification\]\] in the text so "approach one another near $10^{15}$ GeV" is quantified.
 - [Simplify] Replace "Figure 10.5 illustrates this behavior" and the "source states" phrasing with direct statements; the paragraph beginning "The displayed Standard Model curves therefore..." can be cut to one sentence.
 
 ### N2754
@@ -401,8 +401,8 @@ Priority: low · Graph: no · Manim: no
 
 Accurate and appropriately hedged, though the definition of the scale anomaly is not connected to the explicit trace formula elsewhere in the chapter.
 
-- [Links] Link the trace-anomaly formula (10.7) in [[10.07.02 The Scale Anomaly and the Energy–Momentum Tensor]] where the scale anomaly is defined, so "expressed through a nonzero beta function" has a concrete equation behind it.
-- [Example] Add a concrete 4D interacting conformal example besides $\mathcal{N}=4$ SYM, e.g. the Banks–Zaks fixed point of QCD with $N_f$ just below 16.5 (see [[10.09 The Beta Function at Two Loops]]), to show that conformal fixed points need not be supersymmetric.
+- [Links] Link the trace-anomaly formula (10.7) in \[\[10.07.02 The Scale Anomaly and the Energy–Momentum Tensor\]\] where the scale anomaly is defined, so "expressed through a nonzero beta function" has a concrete equation behind it.
+- [Example] Add a concrete 4D interacting conformal example besides $\mathcal{N}=4$ SYM, e.g. the Banks–Zaks fixed point of QCD with $N_f$ just below 16.5 (see \[\[10.09 The Beta Function at Two Loops\]\]), to show that conformal fixed points need not be supersymmetric.
 
 ### N2757
 
@@ -451,7 +451,7 @@ Priority: low · Graph: yes · Manim: no
 The electron-only result 134.47 and the active charge sum 20/3 at $M_Z$ are correct, and the limitations of the estimate are clearly stated.
 
 - [Correctness] The physical-quantities table lists $\electric{Q_i}$, $\electric{Q}$, $\electric{Q_1}$, $\electric{Q_{N_f}}$, which this note never uses (only $\electric{Q}_f$ appears); remove them.
-- [Links] Link "(10.5)" to [[10.03.02 Scale Evolution of α(μ) and Charge Screening]].
+- [Links] Link "(10.5)" to \[\[10.03.02 Scale Evolution of α(μ) and Charge Screening\]\].
 - [Example] Add a crude threshold-stepped estimate: run with electrons only from $m_e$ to $m_\mu$, add the muon up to $m_\tau$, then the tau up to $M_Z$; the leptons alone bring $\alpha^{-1}$ to about 132.2 at the Z, which shows quantitatively that the remaining gap to 128.9 is hadronic.
 - [Graph] Plot $\electric{\alpha}^{-1}(\energy{\mu})$ for $\energy{\mu}\in[m_e,M_Z]$ on a log axis: the electron-only straight line versus the threshold-stepped line with increasing slopes at each fermion mass, with the benchmark 128.9 marked.
 

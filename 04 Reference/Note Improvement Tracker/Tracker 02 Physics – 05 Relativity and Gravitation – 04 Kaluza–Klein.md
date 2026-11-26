@@ -92,7 +92,7 @@ Rich and mostly correct motivation chapter, but it mixes two coordinate conventi
 
 - [Correctness] Symbol clash: $y$ is the compact coordinate in "$y\sim y+2\pi r$" but an ordinary spatial coordinate in $(t,x,y,z,\theta)$ and $(t,x,y,z)$ in the same note; use $y$ for only one of them (e.g. keep $\theta$ or $y_5$ for the circle).
 - [Correctness] The physical-quantities table describes symbols and uses not present in the note ("spherical-coordinate inset" for $\theta$, "wave energy, or first-mode rest energy" for $E_{\mathrm{KK}}$, "unnormalized expansion" for $\psi_n$, "embedding" coordinates); trim descriptions to what this note uses.
-- [Structure] The opening gauge law $\theta'=\theta+\xi\varepsilon$, $A'_\mu=A_\mu+\partial_\mu\varepsilon$ is stated without the metric form it relies on; add $-\Phi_{\mathrm{ang}}(\mathrm d\theta-\xi A_\mu\mathrm dx^\mu)^2$ or a pointer to [[KK 06 Algebraic decomposition of the metric]], and note that the overview uses the opposite sign convention.
+- [Structure] The opening gauge law $\theta'=\theta+\xi\varepsilon$, $A'_\mu=A_\mu+\partial_\mu\varepsilon$ is stated without the metric form it relies on; add $-\Phi_{\mathrm{ang}}(\mathrm d\theta-\xi A_\mu\mathrm dx^\mu)^2$ or a pointer to \[\[KK 06 Algebraic decomposition of the metric\]\], and note that the overview uses the opposite sign convention.
 - [Graph] Plot $E_{\mathrm{KK}}=\hbar c/r$ (GeV) versus $r$ (m) on log axes for $r\in[10^{-35},10^{-15}]$, with the worked point $r=10^{-18}$ m, $E\approx197$ GeV, marked.
 - [Simplify] The Standard Model group discussion (Higgs components, quotients $SU(3)/U(2)$, M-theory) is long for a motivation chapter; move the eleven-dimensional count into a collapsible callout so the main thread (small circle hidden at low energy) stays short.
 
@@ -105,7 +105,7 @@ Clear roadmap with correct preview formulas (the angular metric, gauge law and $
 
 - [Correctness] The physical-quantities table lists meanings not used in this note: $r$ as "radial coordinate in the explicitly identified spherical inset", $\theta$ "spherical-coordinate inset", $q$ as "Test charge acted on by the Lorentz force", and $g_{ab}$; remove or correct these rows.
 - [Structure] The heading "Exact angular titles" for the book list is unclear; rename it (e.g. "Optional books"), and align the frontmatter title "Study route and prerequisites" with the file name "Study route and source books".
-- [Simplify] The convention paragraph repeated at the top of every chapter mentions the "scalar with subscript ang" and xi before they are defined; replace it with a link to one conventions callout in [[Kaluza-Klein - Study Guide]].
+- [Simplify] The convention paragraph repeated at the top of every chapter mentions the "scalar with subscript ang" and xi before they are defined; replace it with a link to one conventions callout in \[\[Kaluza-Klein - Study Guide\]\].
 - [Structure] File starts with a UTF-8 BOM; save as UTF-8 without BOM.
 
 ### N3461
@@ -258,7 +258,7 @@ Correct and complete curvature derivation (Cartan connection, Riemann coefficien
 - [Correctness] The text "Ricci curvature is symmetric in this setting…" is placed on the same line as the closing `$$` of the preceding aligned block; move it to its own paragraph so the display math renders.
 - [Correctness] A stray period ends the $F_{\mu\nu}F^{\mu\nu}=2(|\mathbf B|^2-|\mathbf E|^2)$ display before "in a local inertial frame", splitting one sentence; remove it.
 - [Simplify] The angular "derivative-counting" argument and the local-point calculation are superseded by the explicit Cartan derivation below; shorten them to a short motivation and point to the frame calculation.
-- [Intuition] Add a sentence linking Eq. (15.5) to the Aharonov–Bohm effect: the circular shift around a loop is the flux of $F$, the geometric version of the gauge phase $\oint A$ (link [[3.4 Significance of Potentials in Quantum Theory]]).
+- [Intuition] Add a sentence linking Eq. (15.5) to the Aharonov–Bohm effect: the circular shift around a loop is the flux of $F$, the geometric version of the gauge phase $\oint A$ (link \[\[3.4 Significance of Potentials in Quantum Theory\]\]).
 - [Structure] File starts with a UTF-8 BOM; save as UTF-8 without BOM.
 
 ### N3474
@@ -270,7 +270,7 @@ The periodicity argument and normalization are correct and well checked, but gen
 
 - [Correctness] Physical quantities: the $\mechanical{\theta}$ row refers to a "spherical-coordinate inset" that does not exist in this note, and $\signal{k}_5$ is described generically as "Angular frequency and wave vector" although only the compact wave number is used; make the rows describe this note's quantities.
 - [Simplify] The shared "Geometric and field equations" and "Length-coordinate convention" paragraphs introduce the radion, $\xi$, $\varepsilon$, $\kappa$, $\Phi$ and the field strength, none of which appear here; trim them to the angle/length conversion actually used ($y=r\theta$).
-- [Structure] Self-check question 1 asks about "the cylinder condition", which is never defined in this note; define it in one sentence or link [[KK 05 Cylinder condition and radion assumptions]].
+- [Structure] Self-check question 1 asks about "the cylinder condition", which is never defined in this note; define it in one sentence or link \[\[KK 05 Cylinder condition and radion assumptions\]\].
 - [Example] In "Worked mode example", finish the calculation with equation (16.2): for $\Psi\propto1+2\cos(y/r)$ state $\psi_0$ and $\psi_{\pm1}$ explicitly (equal amplitudes, $p_5=0,\pm1/r$) so the reader sees the normalization prefactor at work.
 - [Graph] Plot $\mathrm{Re}\,e^{in\theta}$ for $n=0,1,2$ and the antiperiodic $n=1/2$ over $\theta\in[0,4\pi]$, marking $\theta=2\pi$, to show why only integers return to the start value (self-check 2).
 - [Structure] The file starts with a UTF-8 BOM (committed in HEAD); remove it per the vault rule.
@@ -375,7 +375,7 @@ Priority: low · Graph: no · Manim: no
 A concise recap with correct cumulative problems and solutions.
 
 - [Example] Problem 3: also give $\sqrt{52}=2\sqrt{13}\approx7.21$ GeV, so the uneven spacing (4, 5, 7.21) is visible at a glance.
-- [Links] Problem 4: link where the coefficient $-\kappa^2/(64\pi G_4)$ comes from ([[KK 14 Reducing the Einstein-Hilbert action]]).
+- [Links] Problem 4: link where the coefficient $-\kappa^2/(64\pi G_4)$ comes from (\[\[KK 14 Reducing the Einstein-Hilbert action\]\]).
 - [Structure] Remove the committed UTF-8 BOM.
 
 ### N3483

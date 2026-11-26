@@ -77,7 +77,7 @@ Priority: low · Graph: no · Manim: no
 A quotation-heavy historical note with an adequate interpretation.
 
 - [Intuition] Mach's "walls several leagues thick" question has a quantitative general-relativistic answer: Lense–Thirring frame dragging inside a rotating shell, measured by Gravity Probe B and LAGEOS. Add one paragraph with the order of magnitude.
-- [Links] Link to [[07.12 The GTR and Mach's Principle]] where Einstein's adoption of Mach's principle is mentioned.
+- [Links] Link to \[\[07.12 The GTR and Mach's Principle\]\] where Einstein's adoption of Mach's principle is mentioned.
 
 ### N3504
 
@@ -111,7 +111,7 @@ A short, correct overview of extra dimensions; the experimental bound is vague a
 
 - [Example] Replace "a few microns" with the current bound: torsion-balance tests (Eöt-Wash, Lee et al. 2020) confirm the inverse-square law for gravitational-strength Yukawa terms down to about 50 µm, which bounds the largest extra dimension to tens of micrometres.
 - [Graph] Log-log plot of $F r^2$ (normalized) against $r$ for one and two compact dimensions of size $R=50$ µm, showing the crossover from $1/r^2$ ($r\gg R$) to $1/r^{2+n}$ ($r\ll R$).
-- [Links] Link the Kaluza–Klein paragraph to [[Kaluza-Klein - Study Guide]] and the charge-quantization remark to [[KK 19 Deriving charge from phase winding]].
+- [Links] Link the Kaluza–Klein paragraph to \[\[Kaluza-Klein - Study Guide\]\] and the charge-quantization remark to \[\[KK 19 Deriving charge from phase winding\]\].
 
 ### N3507
 
@@ -133,7 +133,7 @@ Priority: low · Graph: no · Manim: no
 A philosophical and historical note that is clear enough; it has no equations and needs little change.
 
 - [Structure] Separate the author's claims (for example "a local clock synchronised to the CMBR temperature will read the same time as any other clock anywhere") from established results, with a short callout: CMB temperature defines cosmic time only for comoving observers, after correction for the local dipole and gravitational redshift.
-- [Links] Link "CMBR" and "universal time" to [[08.05 The Cosmic Microwave Background Radiation]] and to [[02.06 Space and Time in the Factual Universe]], where the FLRW cosmic time is defined.
+- [Links] Link "CMBR" and "universal time" to \[\[08.05 The Cosmic Microwave Background Radiation\]\] and to \[\[02.06 Space and Time in the Factual Universe\]\], where the FLRW cosmic time is defined.
 
 ### N3509
 

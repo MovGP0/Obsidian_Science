@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Dynamical systems and chaos"
 catalogue_ids:
   - "17"
@@ -60,7 +60,7 @@ The word **chaos** has several precise definitions. The interval-map lesson spec
 <!-- catalogue-complete-lesson-index:start -->
 ## Complete lesson index
 
-Read the prerequisite route above before the advanced lessons. The source topic links are in [[Planned Topics#17. Dynamical systems and chaos|the detailed catalogue]].
+Read the prerequisite route above before the advanced lessons.
 
 - [[Iteration and invariant sets|Iteration and invariant sets]] — 17.1, 17.1.1, 17.1.1.1, 17.1.1.2, 17.1.3, 17.1.3.1.
 - [[Flows and linear stability|Flows and linear stability]] — 17.1.2, 17.1.2.1, 17.1.2.2, 17.1.2.3.

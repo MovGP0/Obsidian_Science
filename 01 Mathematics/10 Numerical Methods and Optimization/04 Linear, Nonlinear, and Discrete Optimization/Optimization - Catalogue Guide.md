@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Overview"
 catalogue_ids:
   - "18"
@@ -48,7 +48,7 @@ Units are not needed in these mathematical examples. Costs and values are abstra
 <!-- catalogue-complete-lesson-index:start -->
 ## Complete lesson index
 
-Read the prerequisite route above before the advanced lessons. The source topic links are in [[Planned Topics#18. Optimization|the detailed catalogue]].
+Read the prerequisite route above before the advanced lessons.
 
 - [[Linear models and graphical solutions|Linear models and graphical solutions]] — 18.1, 18.1.1, 18.1.1.1, 18.1.1.2.
 - [[Bases and simplex tableaux|Bases and simplex tableaux]] — 18.1.2, 18.1.2.1, 18.1.2.2, 18.1.3, 18.1.3.1, 18.1.3.2, 18.1.3.3.

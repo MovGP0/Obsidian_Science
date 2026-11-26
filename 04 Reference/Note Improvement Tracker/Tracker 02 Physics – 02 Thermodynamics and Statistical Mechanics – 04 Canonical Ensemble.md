@@ -14,8 +14,8 @@ The review found 10 possible errors or notation conflicts. 10 of them are verifi
 - [[#N1297|N1297]] 04.01.02 Derivation of the Canonical Distribution: The Physical quantities table describes ${\energy{\varepsilon}}$ as "The level spacing or characteristic energy per particle", but in this note it is the bath-energy argument of $\Omega_{\mathcal B}(\varepsilon)$; correct the description. **Fixed:** Row now Bath energy, the energy argument of Omega_B
 - [[#N1309|N1309]] 04.05.01 Formal Proof: "$U({\thermal{T}})$" in the sentence after the saddle condition is written without the energy macro; use ${\energy{U}}({\thermal{T}})$ as in the table. **Fixed:** Wrapped as {\energy{U}}({\thermal{T}})
 - [[#N1315|N1315]] 04.07.02 Quantum Oscillator: Symbol clash: "Limiting cases" sets $x=\beta\hbar\omega$, while the Fig. 4.4 axis uses $x=k_{\mathrm B}T/(\hbar\omega)$, its reciprocal; rename one (for example $\tau=k_{\mathrm B}T/(\hbar\omega)$ on the axis). **Fixed:** Fig. 4.4 axis label text changed to tau = kT/(hbar omega); plotted curves unchanged; not checked in Obsidian reading mode
-- [[#N1332|N1332]] Canonical density matrices and imaginary-time kernels: The sentence "The free-particle equation and its Gaussian solution are on [[#Entropy from the canonical density matrix|...]]" (twice in the section "Canonical ensemble kernels") points to the wrong heading; the free-particle kernel is in "Free particle kernel", and the imaginary-time equation is in "Position representation and imaginary time". **Fixed:** Links now point to Position representation and imaginary time (equation) and Free particle kernel (solution and trace)
-- [[#N1332|N1332]] Canonical density matrices and imaginary-time kernels: In "Harmonic oscillator partition function", "The kernel from [[#Canonical ensemble kernels|the section on · Canonical ensemble kernels]]" points to the wrong heading (the oscillator kernel is in "One-dimensional quantum harmonic oscillator") and the display text contains a stray "·". **Fixed:** Link now to One-dimensional quantum harmonic oscillator, stray dot removed
+- [[#N1332|N1332]] Canonical density matrices and imaginary-time kernels: The sentence "The free-particle equation and its Gaussian solution are on \[\[#Entropy from the canonical density matrix|...\]\]" (twice in the section "Canonical ensemble kernels") points to the wrong heading; the free-particle kernel is in "Free particle kernel", and the imaginary-time equation is in "Position representation and imaginary time". **Fixed:** Links now point to Position representation and imaginary time (equation) and Free particle kernel (solution and trace)
+- [[#N1332|N1332]] Canonical density matrices and imaginary-time kernels: In "Harmonic oscillator partition function", "The kernel from \[\[#Canonical ensemble kernels|the section on · Canonical ensemble kernels\]\]" points to the wrong heading (the oscillator kernel is in "One-dimensional quantum harmonic oscillator") and the display text contains a stray "·". **Fixed:** Link now to One-dimensional quantum harmonic oscillator, stray dot removed
 - [[#N1332|N1332]] Canonical density matrices and imaginary-time kernels: Symbol clash: $A$ denotes the observable in $\langle A\rangle=\operatorname{Tr}(\hat\rho A)$, $\energy{A}$ the Helmholtz free energy, and $A$ the Gaussian prefactor in $Ae^{-Bx^2}$; rename the prefactor (e.g. $\mathcal N$) and the observable (e.g. $\hat O$). **Fixed:** Observable renamed \hat O in the thermal-average equation; Gaussian prefactor renamed \mathcal N; Helmholtz A kept
 - [[#N1332|N1332]] Canonical density matrices and imaginary-time kernels: The physical-quantity table lists symbols the note never uses or with wrong meanings: $\mechanical{x},\mechanical{h}$ "lifting example", $P_{\mathrm{int}},P_{\mathrm{ext}}$ "piston", $n$ twice (moles and density), $\theta,\phi$ orientation angles, $g$ Landé factor and internal degeneracy, $q$ coordination number, and $\energy{H}$ as enthalpy; trim it to the symbols used. **Fixed:** Removed h, P_int/P_ext, both n rows, theta/phi, both g rows, q; x row now kernel positions; H row now Hamiltonian only; Omega row description corrected
 - [[#N1333|N1333]] Classical canonical gases and spin magnetization: Symbol clash: $\energy{H}$ is the Hamiltonian and $\magnetic{H}$ the applied field in the same equations ($\energy{H}=-\sum\vec\mu_i\cdot\magnetic{\vec H}$); rename the field to $\magnetic{B}$ as in 04.09, keeping a note about the notebook's $H$. **Fixed:** Field renamed \magnetic{B} throughout (including chi derivative at B=0) with a sentence that the notebook writes H; table row updated
@@ -78,7 +78,7 @@ Priority: low · Graph: no · Manim: no
 
 A clear chapter hub that motivates the canonical ensemble from the boundary conditions.
 
-- [Links] The reading route names the ideal gas, oscillator and spin examples only in words; link them as [[04.06 Classical Ideal Gas in the Canonical Ensemble]], [[04.07 Classical and Quantum Harmonic Oscillators]], [[04.08 Two-Level System]] and [[04.09 Paramagnetism - Spin-½ Model]], and add [[04.99 Exercises]].
+- [Links] The reading route names the ideal gas, oscillator and spin examples only in words; link them as \[\[04.06 Classical Ideal Gas in the Canonical Ensemble\]\], \[\[04.07 Classical and Quantum Harmonic Oscillators\]\], \[\[04.08 Two-Level System\]\] and \[\[04.09 Paramagnetism - Spin-½ Model\]\], and add \[\[04.99 Exercises\]\].
 
 ### N1295
 
@@ -137,7 +137,7 @@ Priority: low · Graph: no · Manim: no
 
 Correct definitions and proof; the derivative identities would be easier to absorb with one worked case.
 
-- [Example] Apply Eq. (4.5) to the two-level system $\mathcal Z=1+e^{-\beta\varepsilon}$ to get $\langle E\rangle=\varepsilon/(e^{\beta\varepsilon}+1)$ and the variance $\varepsilon^2e^{\beta\varepsilon}/(e^{\beta\varepsilon}+1)^2$, and link [[04.08 Two-Level System]].
+- [Example] Apply Eq. (4.5) to the two-level system $\mathcal Z=1+e^{-\beta\varepsilon}$ to get $\langle E\rangle=\varepsilon/(e^{\beta\varepsilon}+1)$ and the variance $\varepsilon^2e^{\beta\varepsilon}/(e^{\beta\varepsilon}+1)^2$, and link \[\[04.08 Two-Level System\]\].
 - [Simplify] Move the paragraph beginning "In the derivatives below..." to directly after Proposition 4.1, where its remarks about the second derivative and the single-energy check apply.
 
 ### N1301
@@ -176,7 +176,7 @@ Priority: low · Graph: no · Manim: no
 Correct derivative relations (including $C_V=k_{\mathrm B}\beta^2\partial_\beta^2\ln\mathcal Z$) and a clear map figure.
 
 - [Simplify] Show the chain-rule step for Eq. (4.9): $\mathrm d\beta/\mathrm dT=-k_{\mathrm B}\beta^2$ and $\partial U/\partial\beta=-\partial^2_\beta\ln\mathcal Z$.
-- [Links] Point to [[04.06.02 Helmholtz Free Energy and Equation of State]] as the worked application of Eqs. (4.7) and (4.8).
+- [Links] Point to \[\[04.06.02 Helmholtz Free Energy and Equation of State\]\] as the worked application of Eqs. (4.7) and (4.8).
 
 ### N1305
 
@@ -205,7 +205,7 @@ Priority: low · Graph: no · Manim: no
 Correct scaling, a correctly normalized figure, and an accurate ideal-gas value $\sigma_u=\sqrt{2/(3N)}$; the caveat paragraphs precede the result and slow the reader down.
 
 - [Structure] Put the scaling result ($U\sim N\varepsilon_0$, $C_V\sim Nk_{\mathrm B}$, $\sigma_E/\langle E\rangle\sim N^{-1/2}$) first and move the two paragraphs on energy reference and Gaussian validity after it.
-- [Links] The density of states is called $g(E)$ here and $\omega(E)$ in [[03.02.01 Basic Definitions]]; state that they are the same object (or unify the symbol) so readers can connect the two chapters.
+- [Links] The density of states is called $g(E)$ here and $\omega(E)$ in \[\[03.02.01 Basic Definitions\]\]; state that they are the same object (or unify the symbol) so readers can connect the two chapters.
 
 ### N1308
 
@@ -255,7 +255,7 @@ Priority: low · Graph: no · Manim: no
 
 Correct ($P$, $U$ and the entropy derivative with the extra $3/2$ from $\lambda_{\mathrm{th}}^{-3}\propto T^{3/2}$ all check out) and well connected to the microcanonical result.
 
-- [Links] Link "Sackur–Tetrode formula" to [[03.06 Sackur–Tetrode Formula]] and note that the canonical and microcanonical results agree once $E=\tfrac32Nk_{\mathrm B}T$ is inserted.
+- [Links] Link "Sackur–Tetrode formula" to \[\[03.06 Sackur–Tetrode Formula\]\] and note that the canonical and microcanonical results agree once $E=\tfrac32Nk_{\mathrm B}T$ is inserted.
 - [Example] Evaluate Eq. (4.12) for argon at $298\,\mathrm K$ and $1\,\mathrm{bar}$ and compare with the tabulated $S^\circ\approx154.8\,\mathrm{J\,mol^{-1}K^{-1}}$, a classic success of the formula.
 
 ### N1313
@@ -275,7 +275,7 @@ Priority: low · Graph: no · Manim: no
 Correct and compact; the commentary before the calculation is denser than the calculation itself.
 
 - [Simplify] Move the paragraph "Both thermal energy and the oscillator level scale..." after the result $\langle E\rangle=k_{\mathrm B}T$, where the independence of $m$ and $\omega$ is visible.
-- [Intuition] Interpret $\mathcal Z_1^{\mathrm{cl}}=k_{\mathrm B}T/(\hbar\omega)$ as "the number of quantum levels below $k_{\mathrm B}T$", which links directly to the high-temperature limit in [[04.07.02 Quantum Oscillator]].
+- [Intuition] Interpret $\mathcal Z_1^{\mathrm{cl}}=k_{\mathrm B}T/(\hbar\omega)$ as "the number of quantum levels below $k_{\mathrm B}T$", which links directly to the high-temperature limit in \[\[04.07.02 Quantum Oscillator\]\].
 
 ### N1315
 
@@ -385,7 +385,7 @@ Priority: low · Graph: no · Manim: no
 Correct and concise, but the middle paragraph lists many properties without an example.
 
 - [Example] Add a two-level example: write $\hat\rho$ as a $2\times2$ diagonal matrix in the energy basis and evaluate $\langle\sigma_x\rangle=0$ and $\langle\sigma_z\rangle=\tanh(\beta\Delta/2)$ to show an observable that does and one that does not commute with $\hat H$.
-- [Links] Link the imaginary-time sentence to [[Canonical density matrices and imaginary-time kernels]], which works out the free-particle and oscillator kernels.
+- [Links] Link the imaginary-time sentence to \[\[Canonical density matrices and imaginary-time kernels\]\], which works out the free-particle and oscillator kernels.
 
 ### N1325
 
@@ -467,8 +467,8 @@ Priority: high · Graph: yes · Manim: no
 
 Lecture transcription with correct kernels and partition functions, but with wrong internal section links, a triple use of the letter A, a padded quantity table, and an off-topic Liouville opening.
 
-- [Correctness] The sentence "The free-particle equation and its Gaussian solution are on [[#Entropy from the canonical density matrix|...]]" (twice in the section "Canonical ensemble kernels") points to the wrong heading; the free-particle kernel is in "Free particle kernel", and the imaginary-time equation is in "Position representation and imaginary time".
-- [Correctness] In "Harmonic oscillator partition function", "The kernel from [[#Canonical ensemble kernels|the section on · Canonical ensemble kernels]]" points to the wrong heading (the oscillator kernel is in "One-dimensional quantum harmonic oscillator") and the display text contains a stray "·".
+- [Correctness] The sentence "The free-particle equation and its Gaussian solution are on \[\[#Entropy from the canonical density matrix|...\]\]" (twice in the section "Canonical ensemble kernels") points to the wrong heading; the free-particle kernel is in "Free particle kernel", and the imaginary-time equation is in "Position representation and imaginary time".
+- [Correctness] In "Harmonic oscillator partition function", "The kernel from \[\[#Canonical ensemble kernels|the section on · Canonical ensemble kernels\]\]" points to the wrong heading (the oscillator kernel is in "One-dimensional quantum harmonic oscillator") and the display text contains a stray "·".
 - [Correctness] Symbol clash: $A$ denotes the observable in $\langle A\rangle=\operatorname{Tr}(\hat\rho A)$, $\energy{A}$ the Helmholtz free energy, and $A$ the Gaussian prefactor in $Ae^{-Bx^2}$; rename the prefactor (e.g. $\mathcal N$) and the observable (e.g. $\hat O$).
 - [Correctness] The physical-quantity table lists symbols the note never uses or with wrong meanings: $\mechanical{x},\mechanical{h}$ "lifting example", $P_{\mathrm{int}},P_{\mathrm{ext}}$ "piston", $n$ twice (moles and density), $\theta,\phi$ orientation angles, $g$ Landé factor and internal degeneracy, $q$ coordination number, and $\energy{H}$ as enthalpy; trim it to the symbols used.
 - [Structure] Move the Liouville/continuity paragraph (Poisson bracket and von Neumann equation) to the microcanonical or ensemble-foundations note, or add one sentence explaining why stationarity $[\hat\rho,\hat H]=0$ motivates $\hat\rho=f(\hat H)$.
@@ -485,5 +485,5 @@ Correct derivations of the classical gas, Langevin and spin-½ results with care
 - [Correctness] Quantity table errors: $\mechanical{v}$ is listed as "volume per unit amount" but the note uses it as particle speed in $T\propto\langle v^2\rangle$; $j$ is listed as "internal partition function" but is the angular-momentum quantum number; $z$ (fugacity), $n$ (twice), $P_{\mathrm{int}},P_{\mathrm{ext}}$, $q_i,p_i$ and "internal degeneracy" $g$ are unused, and $\mechanical{c}$ is described via a "photon spectrum formula" that does not appear.
 - [Correctness] Historical paragraph: Amontons' own extrapolation of the pressure–temperature line gave roughly $-240\,{}^\circ\mathrm C$, not $-273\,{}^\circ\mathrm C$; state that the $-273$ value comes from later, more precise gas data.
 - [Structure] Move the "Temperature and heat" history and the margin joke out of the derivation sequence (e.g. into a short callout at the end) so the classical-gas and spin sections connect directly.
-- [Links] Link the Langevin and spin-½ sections to [[04.10 Generalization - Arbitrary Spin J and the Brillouin Function]] and [[04.09.02 Magnetization and Susceptibility]], and note the factor $1/3$ difference between the classical Curie constant $N\mu^2/(3k_{\mathrm B})$ and the spin-½ value $N\mu^2/k_{\mathrm B}$.
+- [Links] Link the Langevin and spin-½ sections to \[\[04.10 Generalization - Arbitrary Spin J and the Brillouin Function\]\] and \[\[04.09.02 Magnetization and Susceptibility\]\], and note the factor $1/3$ difference between the classical Curie constant $N\mu^2/(3k_{\mathrm B})$ and the spin-½ value $N\mu^2/k_{\mathrm B}$.
 - [Graph] Replace or supplement the Langevin image with a native plot of $L(x)=\coth x-1/x$, $\tanh x$, and the line $x/3$ for $x\in[0,6]$, so the classical and spin-½ saturation curves can be compared.

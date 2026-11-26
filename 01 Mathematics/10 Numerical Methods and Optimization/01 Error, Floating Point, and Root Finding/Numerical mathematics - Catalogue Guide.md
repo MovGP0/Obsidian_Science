@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Numerical mathematics learning guide"
 catalogue_ids:
   - "19"
@@ -48,7 +48,7 @@ This suggests a practical sequence: choose a sensible mathematical model, calcul
 <!-- catalogue-complete-lesson-index:start -->
 ## Complete lesson index
 
-Read the prerequisite route above before the advanced lessons. The source topic links are in [[Planned Topics#19. Numerical mathematics|the detailed catalogue]].
+Read the prerequisite route above before the advanced lessons.
 
 - [[Scalar root finding|Scalar root finding]] — 19.1, 19.1.1, 19.1.1.1, 19.1.1.2, 19.1.1.3.
 - [[Polynomial root algorithms|Polynomial root algorithms]] — 19.1.2, 19.1.2.1, 19.1.2.2, 19.1.2.3.

@@ -84,7 +84,7 @@ Priority: low · Graph: no · Manim: no
 
 Clear chapter summary.
 
-- [Links] Link each numbered point to its section note (e.g. point 5 to [[05.10 Propagator in the Rξ Gauge]]).
+- [Links] Link each numbered point to its section note (e.g. point 5 to \[\[05.10 Propagator in the Rξ Gauge\]\]).
 
 ### N2473
 
@@ -103,7 +103,7 @@ Priority: low · Graph: no · Manim: no
 Correct sign conventions for $F^{\mu\nu}$ and its dual, with a useful sign check.
 
 - [Example] Add the one-line computation $F^{0i}=\partial^0A^i-\partial^iA^0=\partial_tA^i+\partial_i\phi=-E^i$ to make the sign check explicit.
-- [Simplify] State the two Lorentz invariants here or link [[05.02.01 Structure of the Lagrangian]], since they are the main use of the dual.
+- [Simplify] State the two Lorentz invariants here or link \[\[05.02.01 Structure of the Lagrangian\]\], since they are the main use of the dual.
 
 ### N2475
 
@@ -279,7 +279,7 @@ Priority: low · Graph: no · Manim: no
 
 Correct projector inversion; overlaps heavily with 05.10.01.
 
-- [Structure] The same projector derivation appears in [[05.10.01 Inversion of the Kinetic Operator]]; keep the full derivation in one note and link from the other.
+- [Structure] The same projector derivation appears in \[\[05.10.01 Inversion of the Kinetic Operator\]\]; keep the full derivation in one note and link from the other.
 - [Example] Verify $O\,D=i\,\mathbb 1$ explicitly once: $(-k^2T-\frac{k^2}{\xi}L)\cdot\frac{-i}{k^2}(T+\xi L)=i(T+L)$.
 
 ### N2494
@@ -289,7 +289,7 @@ Priority: low · Graph: no · Manim: no
 
 Correct components with sound discussion of the instantaneous term.
 
-- [Links] Example 5.5 refers to "Fig. 5.3", which is embedded in [[05.07.02 Replacement of the Polarization Sum]]; link that note or embed the figure here.
+- [Links] Example 5.5 refers to "Fig. 5.3", which is embedded in \[\[05.07.02 Replacement of the Polarization Sum\]\]; link that note or embed the figure here.
 - [Example] Contract with two static charges to show $D^{00}$ gives the Coulomb potential $e^2/(4\pi r)$ after the spatial Fourier transform.
 
 ### N2495
@@ -382,7 +382,7 @@ Priority: low · Graph: no · Manim: no
 Correct polarization vectors and completeness relation, but the mode expansion and commutators are missing despite the title.
 
 - [Structure] Add the actual mode expansion with $\sum_{\lambda=1,2,L}$ and $[a^{(\lambda)}_{\mathbf k},a^{(\lambda')\dagger}_{\mathbf k'}]=\delta^{\lambda\lambda'}(2\pi)^3\delta^{(3)}$ (all positive norm), which is the point of contrast with Gupta–Bleuler.
-- [Links] Link [[05.14.07 Massive polarization completeness]] for the explicit verification of (5.29).
+- [Links] Link \[\[05.14.07 Massive polarization completeness\]\] for the explicit verification of (5.29).
 
 ### N2505
 
@@ -410,7 +410,7 @@ Priority: low · Graph: no · Manim: no
 
 Correct and complete; duplicates 05.06.01.
 
-- [Structure] Consolidate with [[05.06.01 Derivation in the Feynman Gauge]] (keep the derivation here, the gauge special cases there).
+- [Structure] Consolidate with \[\[05.06.01 Derivation in the Feynman Gauge\]\] (keep the derivation here, the gauge special cases there).
 
 ### N2508
 
@@ -457,7 +457,7 @@ Priority: low · Graph: no · Manim: no
 
 Correct and short.
 
-- [Example] Show the Bose factor: $(a^\dagger)^2|0\rangle$ has norm 2, versus zero for fermions (link [[04.18.03 Fermion Fock number]]).
+- [Example] Show the Bose factor: $(a^\dagger)^2|0\rangle$ has norm 2, versus zero for fermions (link \[\[04.18.03 Fermion Fock number\]\]).
 
 ### N2513
 
@@ -556,7 +556,7 @@ Priority: low · Graph: no · Manim: no
 
 Correct and explicit.
 
-- [Structure] No change needed beyond linking [[05.09.02 Quantization of the Proca Field]].
+- [Structure] No change needed beyond linking \[\[05.09.02 Quantization of the Proca Field\]\].
 
 ### N2523
 

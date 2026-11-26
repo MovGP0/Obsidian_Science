@@ -29,7 +29,7 @@ In Fig. 7.7(b), the disk rotates counterclockwise and slows down on the way up. 
 
 ## 7.3.2 Dynamics of a Spool of Thread
 
-Use the spool of Fig. 7.6. It is modeled as a uniform disk of mass $\mechanical M$, outer radius $\mechanical R$, groove radius $\mechanical r$, and moment of inertia $\mechanical I$ about its axis through $O$. A force $\mechanical{\vec F}$ pulls the free end $A$ at angle $\mechanical\phi$ above the horizontal. Its line of action passes through $A'$, the point of tangency with the groove. The rope unwinds without slipping and the spool rolls without slipping.
+Use the spool of Fig. 7.6. It is modeled as a uniform disk of mass $\mechanical M$, outer radius $\mechanical R$, groove radius $\mechanical r$, and moment of inertia $\mechanical I$ about its axis through $O$. A force $\mechanical{\vec F}$ pulls the free end $A$ at angle $\mechanical\phi$ above the horizontal. Its line of action passes through $A'$, the point of tangency with the groove. The rope does not slip on the groove, and the spool rolls without slipping. While the spool rolls to the right, the rope winds up onto the groove, as Equation (7.15) shows.
 
 ![[rotational-motion-fig-7-8-spool-forces.svg|**Fig. 7.8** A pull at the free end $A$ is transmitted along the rope to $A'$. The normal force and static friction act at the ground contact $B$, and weight acts at $O$. The illustrated pull accelerates the spool to the right.|480]]
 

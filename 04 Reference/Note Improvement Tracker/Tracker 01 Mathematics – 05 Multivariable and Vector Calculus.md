@@ -11,15 +11,15 @@ Back to the index: [[Note Improvement Tracker]]
 
 The review found 9 possible errors or notation conflicts. 9 of them are verified (9 fixed); the other 0 are not verified yet. Each item links to the full suggestion entry.
 
-- [[#N0291|N0291]] 12.07 Multiple integrals: The source link after "Set the spherical bounds before integrating" points to [[Multiple integrals and changes of variables#Fubini's theorem]]. The matching material (the cone $z=\sqrt3\,r$, $\phi\le\pi/6$) is under "#Mass inside a cone and a sphere" or "#15.9 Triple integrals in spherical coordinates", so retarget it. **Fixed:** Retargeted it to #Mass inside a cone and a sphere.
+- [[#N0291|N0291]] 12.07 Multiple integrals: The source link after "Set the spherical bounds before integrating" points to \[\[Multiple integrals and changes of variables#Fubini's theorem\]\]. The matching material (the cone $z=\sqrt3\,r$, $\phi\le\pi/6$) is under "#Mass inside a cone and a sphere" or "#15.9 Triple integrals in spherical coordinates", so retarget it. **Fixed:** Retargeted it to #Mass inside a cone and a sphere.
 - [[#N0295|N0295]] Multiple integrals and changes of variables: Symbol clash: $\rho$ is the spherical radial coordinate from "15.9" onward and also the mass density $\mechanical{\rho}(x,y,z)$ (and the table row). In "Mass inside a cone and a sphere" the density is written $3-\rho^2/5$ with $\rho$ as the radius. Rename the density (e.g. $\mechanical{\mu}$ or $\delta$) and update the table. **Fixed:** Renamed the density to \mechanical{\delta} in the mass formula, the cone example (delta=3-rho^2/5), and the table.
 - [[#N0296|N0296]] Partial derivatives and constrained extrema: The physical-quantities table describes $\mechanical{\theta}$ as the "Angle swept by the rolling circle", but this note has no rolling circle. It also lists symbols the note never uses ($\mechanical{a}$ scalar, $\mechanical{v}$, $\mechanical{v}_0$, $\mechanical{x}$, $\mechanical{y}$ as "marked point" coordinates). Trim the table to $\mathbf r,\mathbf v,\mathbf a,\theta,\phi,\mathbf v_0$ components and $x_0,y_0,z_0$. **Fixed:** Removed unused scalar a, v, v0, x, y rows; theta row now describes only the azimuth.
 - [[#N0296|N0296]] Partial derivatives and constrained extrema: Symbol clash: in "Tangent planes and linear approximation" the tangent-plane function is named $\pi(x,y)$, but the note also uses the constant $\pi$ (angles $3\pi/4$, $\pi/4$). Rename it, e.g. $L(x,y)$. **Fixed:** Renamed it L(x,y) in both uses.
 - [[#N0307|N0307]] Gradient: The opening line "Measures the change of density of a vector field" and the title "Gradient ∇F" are wrong. The gradient acts on a scalar field $f$ and gives a vector field, as the table itself states. Change them to "Direction and rate of steepest increase of a scalar field" and "Gradient ∇f". **Fixed:** Title now "Gradient ∇f" (quoted); opening line says it gives the direction and rate of steepest increase of a scalar field; converted file to LF.
 - [[#N0307|N0307]] Gradient: "Electric field as the gradient of voltage" is missing the sign. In electrostatics $\mathbf E=-\nabla V$. **Fixed:** Example now says negative gradient of the potential, E=-grad V, with \electric macros.
-- [[#N0310|N0310]] Vector analysis and field theory - Catalogue Guide: The link [[Planned Topics#13. Vector analysis and field theory|the detailed catalogue]] is broken. "Planned Topics.md" exists only under `.temp/` backups, not in the vault. Remove the link or point it at an existing catalogue note. **Fixed:** Removed the sentence with the broken link, as already done in other catalogue guides; converted file to LF without BOM.
-- [[#N0315|N0315]] 13.07 Integral theorems: The source link [[Line integrals, work, and conservative fields#Line integrals|Math 23]] under "Turn circulation into an area integral" points to the line-integral section. The Green's-theorem example with $(-y,x)$ is in [[Green’s theorem, surface integrals, and flux#16.4 Green's theorem]], so retarget it. **Fixed:** Retargeted it to [[Green’s theorem, surface integrals, and flux#16.4 Green's theorem]].
-- [[#N0320|N0320]] Line integrals, work, and conservative fields: Work is an energy quantity, but it is written $\mechanical{W}$ here, while the companion note [[Line integrals and scalar potentials]] uses $\energy{W}$. Use $\energy{W}$ in the text and the table. **Fixed:** Replaced all four uses (three equations and the table row) with \energy{W}.
+- [[#N0310|N0310]] Vector analysis and field theory - Catalogue Guide: The link \[\[Planned Topics#13. Vector analysis and field theory|the detailed catalogue\]\] is broken. "Planned Topics.md" exists only under `.temp/` backups, not in the vault. Remove the link or point it at an existing catalogue note. **Fixed:** Removed the sentence with the broken link, as already done in other catalogue guides; converted file to LF without BOM.
+- [[#N0315|N0315]] 13.07 Integral theorems: The source link \[\[Line integrals, work, and conservative fields#Line integrals|Math 23\]\] under "Turn circulation into an area integral" points to the line-integral section. The Green's-theorem example with $(-y,x)$ is in \[\[Green’s theorem, surface integrals, and flux#16.4 Green's theorem\]\], so retarget it. **Fixed:** Retargeted it to \[\[Green’s theorem, surface integrals, and flux#16.4 Green's theorem\]\].
+- [[#N0320|N0320]] Line integrals, work, and conservative fields: Work is an energy quantity, but it is written $\mechanical{W}$ here, while the companion note \[\[Line integrals and scalar potentials\]\] uses $\energy{W}$. Use $\energy{W}$ in the text and the table. **Fixed:** Replaced all four uses (three equations and the table row) with \energy{W}.
 
 ## Tracking table
 
@@ -188,7 +188,7 @@ Priority: low · Graph: no · Manim: no
 
 Concise hub that lists the 12.xx lessons correctly.
 
-- [Links] The folder also contains parallel lessons ([[Partial changes and total differentials]], [[Higher differentials and local approximation]], [[Limits and continuity in several variables]], [[Extrema in several variables]] and others) that the overview never mentions. Add a short "Further lessons" list so they are reachable from the hub.
+- [Links] The folder also contains parallel lessons (\[\[Partial changes and total differentials\]\], \[\[Higher differentials and local approximation\]\], \[\[Limits and continuity in several variables\]\], \[\[Extrema in several variables\]\] and others) that the overview never mentions. Add a short "Further lessons" list so they are reachable from the hub.
 
 ### N0288
 
@@ -228,7 +228,7 @@ Priority: low · Graph: yes · Manim: no
 
 Correct worked integrals (3/20 both ways, simplex 1/6, cone volume, Jacobian example), but the two Kabasares source links point to mismatched headings.
 
-- [Correctness] The source link after "Set the spherical bounds before integrating" points to [[Multiple integrals and changes of variables#Fubini's theorem]]. The matching material (the cone $z=\sqrt3\,r$, $\phi\le\pi/6$) is under "#Mass inside a cone and a sphere" or "#15.9 Triple integrals in spherical coordinates", so retarget it.
+- [Correctness] The source link after "Set the spherical bounds before integrating" points to \[\[Multiple integrals and changes of variables#Fubini's theorem\]\]. The matching material (the cone $z=\sqrt3\,r$, $\phi\le\pi/6$) is under "#Mass inside a cone and a sphere" or "#15.9 Triple integrals in spherical coordinates", so retarget it.
 - [Links] The source link after "A Jacobian measures the local change of area" points to "#Mass inside a cone and a sphere". It only lands near the change-of-variables material because that material has no heading of its own in the source note. Give that material a heading (e.g. "Change of variables") and link to it.
 - [Graph] Add a graph3d of the "ice-cream cone" solid: the sphere $\rho=2$ cut by the cone $\phi=\pi/6$. This helps readers check the spherical bounds visually.
 
@@ -270,7 +270,7 @@ Priority: high · Graph: yes · Manim: yes
 Transcribed lecture notes with correct computations but a fragmentary structure, administrative noise, unfinished examples, and a symbol clash between density and the spherical radius.
 
 - [Correctness] Symbol clash: $\rho$ is the spherical radial coordinate from "15.9" onward and also the mass density $\mechanical{\rho}(x,y,z)$ (and the table row). In "Mass inside a cone and a sphere" the density is written $3-\rho^2/5$ with $\rho$ as the radius. Rename the density (e.g. $\mechanical{\mu}$ or $\delta$) and update the table.
-- [Structure] The note opens with "Checking the boundary of the study-time region", which continues the problem from [[Partial derivatives and constrained extrema]] without defining $f$ or the triangle $0\le x\le y\le24$. Move it to the end of that note, together with the interior candidate $f(1,2)=101.8\overline3$.
+- [Structure] The note opens with "Checking the boundary of the study-time region", which continues the problem from \[\[Partial derivatives and constrained extrema\]\] without defining $f$ or the triangle $0\le x\le y\le24$. Move it to the end of that note, together with the interior candidate $f(1,2)=101.8\overline3$.
 - [Structure] Remove the administrative lines ("Midterm 2 review material includes...", "Review problems 5 and 6...", "Using the four pieces from the previous page"). Also replace the skipped heading levels (`#####` directly under `##`) with `###`.
 - [Example] Finish the open computations: the parallelogram integral $\frac23\int_{-1}^2\int_3^4\frac{4v-u}3\,dv\,du=9$; the Jacobian of $x=\sqrt{uv}$, $y=\sqrt{v/u}$, which is $J=1/(2u)$, giving area $\tfrac12\ln(8/3)$; the incomplete 1D example $\int x^2e^{x^2}dx$, which should be completed or deleted.
 - [Graph] Add a polar plot of the petal $r=\cos2\theta$ for $-\pi/4\le\theta\le\pi/4$ with area $\pi/8$, and a graph3d of the cone $z=2r$ capped at $z=H$.
@@ -286,7 +286,7 @@ Transcribed lecture notes whose math checks out, but the order is jumbled, the p
 - [Correctness] The physical-quantities table describes $\mechanical{\theta}$ as the "Angle swept by the rolling circle", but this note has no rolling circle. It also lists symbols the note never uses ($\mechanical{a}$ scalar, $\mechanical{v}$, $\mechanical{v}_0$, $\mechanical{x}$, $\mechanical{y}$ as "marked point" coordinates). Trim the table to $\mathbf r,\mathbf v,\mathbf a,\theta,\phi,\mathbf v_0$ components and $x_0,y_0,z_0$.
 - [Correctness] Symbol clash: in "Tangent planes and linear approximation" the tangent-plane function is named $\pi(x,y)$, but the note also uses the constant $\pi$ (angles $3\pi/4$, $\pi/4$). Rename it, e.g. $L(x,y)$.
 - [Structure] The two projectile examples are scattered: one opens the note, and the second interrupts "Path tests and polar coordinates". Group them in one section (or move them to a kinematics note), and remove the administrative lines ("The midterm covers Chapters 12–14", "Math 122").
-- [Structure] Many sentences comment on the handwritten source ("The handwritten expression repeats a term...", "appears to use $x-b$"). Keep only the corrected statement, and append the boundary check that currently opens [[Multiple integrals and changes of variables]] so the study-time problem is complete in one place.
+- [Structure] Many sentences comment on the handwritten source ("The handwritten expression repeats a term...", "appears to use $x-b$"). Keep only the corrected statement, and append the boundary check that currently opens \[\[Multiple integrals and changes of variables\]\] so the study-time problem is complete in one place.
 - [Graph] Add a contour plot of the study-time function $f=x^3/3-5x^2/2+4x+100+(y-2)^2$ on the triangle $0\le x\le y\le24$ (or a zoom to $0\le x\le5$), marking the saddle $(1,2)$, the minimum $(3,3)$ and the corners.
 - [Manim] Animate a unit vector $\mathbf u$ rotating around $(2,\pi/4)$ for $f=x\cos y$, with $D_{\mathbf u}f=\|\nabla f\|\cos\theta$ displayed. The value peaks along $\nabla f$ and is zero along the level curve.
 
@@ -337,7 +337,7 @@ Priority: low · Graph: no · Manim: no
 
 Correct and careful about orthonormal versus coordinate-basis components; all examples check.
 
-- [Structure] This note uses spherical $(r,\theta,\phi)$ with $\theta$ the polar angle, while [[12.07 Multiple integrals]] and [[Double and triple integrals]] use $\phi$ as the polar angle. Add a one-line warning with links so readers do not mix the conventions.
+- [Structure] This note uses spherical $(r,\theta,\phi)$ with $\theta$ the polar angle, while \[\[12.07 Multiple integrals\]\] and \[\[Double and triple integrals\]\] use $\phi$ as the polar angle. Add a one-line warning with links so readers do not mix the conventions.
 - [Simplify] In "Gradient, divergence, and curl", sketch the face-flux step for the $q_1$ pair. It gives $[h_2h_3F_1]_{q_1}^{q_1+dq_1}dq_2dq_3\approx\partial_{q_1}(h_2h_3F_1)\,dq_1dq_2dq_3$, which shows why the scale factors sit inside the derivative.
 
 ### N0302
@@ -355,9 +355,9 @@ Correct formulas (vector identities and curvilinear curl all verified) with a go
 Note: [[Curl|Curl]]  
 Priority: medium · Graph: no · Manim: no
 
-Legacy property-table stub that duplicates [[13.04 Curl]] and [[Curl and local circulation]], gives no orientation conventions, and is not in the vault's note format.
+Legacy property-table stub that duplicates \[\[13.04 Curl\]\] and \[\[Curl and local circulation\]\], gives no orientation conventions, and is not in the vault's note format.
 
-- [Structure] Replace the table with a short definition note (title, TLDR) that links to [[13.04 Curl]] and [[Curl and local circulation]], or merge it there. In Stokes' theorem, state that $C$ must carry the orientation induced by the normal of $S$.
+- [Structure] Replace the table with a short definition note (title, TLDR) that links to \[\[13.04 Curl\]\] and \[\[Curl and local circulation\]\], or merge it there. In Stokes' theorem, state that $C$ must carry the orientation induced by the normal of $S$.
 - [Simplify] "Magnitude of the curl is invariant under coordinate transformations" is too broad. Say "under rotations of the Cartesian axes; under a reflection the curl changes sign relative to the field (pseudovector)".
 
 ### N0304
@@ -385,9 +385,9 @@ Correct and clear, with good warnings on central fields and on dimension depende
 Note: [[Divergence|Divergence]]  
 Priority: medium · Graph: no · Manim: no
 
-Legacy property-table stub that duplicates [[13.03 Divergence]] and [[Divergence and local expansion]]; its "density exits" wording is vague.
+Legacy property-table stub that duplicates \[\[13.03 Divergence\]\] and \[\[Divergence and local expansion\]\]; its "density exits" wording is vague.
 
-- [Structure] Replace it with a short definition note in vault format that links to [[13.03 Divergence]] and [[Divergence and local expansion]], or merge it there. State the outward normal and the $C^1$ hypothesis for the divergence theorem.
+- [Structure] Replace it with a short definition note in vault format that links to \[\[13.03 Divergence\]\] and \[\[Divergence and local expansion\]\], or merge it there. State the outward normal and the $C^1$ hypothesis for the divergence theorem.
 - [Simplify] Replace "Measures the rate at which 'density' exits a given region" with "net outward flux per unit volume in the limit of a shrinking region". The Gauss's-law example should name $\nabla\cdot\mathbf E=\rho/\varepsilon_0$ explicitly.
 
 ### N0307
@@ -395,11 +395,11 @@ Legacy property-table stub that duplicates [[13.03 Divergence]] and [[Divergence
 Note: [[Gradient|Gradient]]  
 Priority: medium · Graph: no · Manim: no
 
-Legacy property-table stub with two factual errors and a misleading title; it duplicates [[13.02 Gradient]].
+Legacy property-table stub with two factual errors and a misleading title; it duplicates \[\[13.02 Gradient\]\].
 
 - [Correctness] The opening line "Measures the change of density of a vector field" and the title "Gradient ∇F" are wrong. The gradient acts on a scalar field $f$ and gives a vector field, as the table itself states. Change them to "Direction and rate of steepest increase of a scalar field" and "Gradient ∇f".
 - [Correctness] "Electric field as the gradient of voltage" is missing the sign. In electrostatics $\mathbf E=-\nabla V$.
-- [Structure] Convert to vault format or merge into [[13.02 Gradient]] and [[Directional derivatives and gradients]].
+- [Structure] Convert to vault format or merge into \[\[13.02 Gradient\]\] and \[\[Directional derivatives and gradients\]\].
 
 ### N0308
 
@@ -409,7 +409,7 @@ Priority: low · Graph: no · Manim: no
 Correct identities and scale-factor formulas, with good cross-checks of the Laplacian in three coordinate systems.
 
 - [Example] Make the warning about the vector Laplacian in a rotating basis concrete. For $\mathbf F=\mathbf e_\phi=(-y,x,0)/\rho$, the naive component Laplacian of $F_\phi=1$ gives zero, but $\Delta\mathbf F=-\mathbf e_\phi/\rho^2$.
-- [Intuition] Under "Repeated application", add one sentence on why $\nabla\times\nabla f=0$ and $\nabla\cdot\nabla\times\mathbf F=0$ are the same "boundary of a boundary" fact. Point to [[Differential forms - Overview]].
+- [Intuition] Under "Repeated application", add one sentence on why $\nabla\times\nabla f=0$ and $\nabla\cdot\nabla\times\mathbf F=0$ are the same "boundary of a boundary" fact. Point to \[\[Differential forms - Overview\]\].
 
 ### N0309
 
@@ -428,7 +428,7 @@ Priority: low · Graph: no · Manim: no
 
 Useful learning guide with a correct worked orientation example; one link is broken.
 
-- [Correctness] The link [[Planned Topics#13. Vector analysis and field theory|the detailed catalogue]] is broken. "Planned Topics.md" exists only under `.temp/` backups, not in the vault. Remove the link or point it at an existing catalogue note.
+- [Correctness] The link \[\[Planned Topics#13. Vector analysis and field theory|the detailed catalogue\]\] is broken. "Planned Topics.md" exists only under `.temp/` backups, not in the vault. Remove the link or point it at an existing catalogue note.
 
 ### N0311
 
@@ -437,7 +437,7 @@ Priority: low · Graph: no · Manim: no
 
 Concise hub listing the 13.xx lessons; no change needed beyond optional cross-linking.
 
-- [Links] Add a link to [[Vector analysis and field theory - Catalogue Guide]], which lists the parallel, more detailed lessons in this folder.
+- [Links] Add a link to \[\[Vector analysis and field theory - Catalogue Guide\]\], which lists the parallel, more detailed lessons in this folder.
 
 ### N0312
 
@@ -476,7 +476,7 @@ Priority: low · Graph: yes · Manim: yes
 
 Correct statements with hypotheses and good verification examples; the Kabasares source link points to the wrong note.
 
-- [Correctness] The source link [[Line integrals, work, and conservative fields#Line integrals|Math 23]] under "Turn circulation into an area integral" points to the line-integral section. The Green's-theorem example with $(-y,x)$ is in [[Green’s theorem, surface integrals, and flux#16.4 Green's theorem]], so retarget it.
+- [Correctness] The source link \[\[Line integrals, work, and conservative fields#Line integrals|Math 23\]\] under "Turn circulation into an area integral" points to the line-integral section. The Green's-theorem example with $(-y,x)$ is in \[\[Green’s theorem, surface integrals, and flux#16.4 Green's theorem\]\], so retarget it.
 - [Manim] Animate the subdivision of a disk into small squares, with each square's counterclockwise circulation drawn and interior edges cancelling in pairs, leaving only the outer boundary.
 - [Graph] Add a graph3d of the paraboloid $z=1-x^2-y^2$ and the flat unit disk sharing the oriented boundary circle, for the Stokes example.
 
@@ -488,7 +488,7 @@ Priority: low · Graph: yes · Manim: no
 Correct and well argued; the hole counterexample and the slit domain are clearly presented with a figure.
 
 - [Graph] Add a graph3d of the angle "potential" $\theta(x,y)$ over the annulus $0.3\le r\le1$ as a helicoid-like surface that does not close after one turn. This makes the $2\pi$ jump visible.
-- [Links] This note duplicates the catalogue note [[Potentials and path independence]] (in the same folder, with the same title and a near-identical example). Cross-link the two or merge them.
+- [Links] This note duplicates the catalogue note \[\[Potentials and path independence\]\] (in the same folder, with the same title and a near-identical example). Cross-link the two or merge them.
 
 ### N0317
 
@@ -520,7 +520,7 @@ Priority: low · Graph: yes · Manim: no
 
 Correct and clear, including the potential construction and the physics sign convention; all numbers check.
 
-- [Links] "The punctured-plane example in [[Curl and local circulation]]" is inaccurate. That note uses space with the $z$-axis removed. The punctured-plane example is in [[13.08 Potentials and path independence]], so link there or reword.
+- [Links] "The punctured-plane example in \[\[Curl and local circulation\]\]" is inaccurate. That note uses space with the $z$-axis removed. The punctured-plane example is in \[\[13.08 Potentials and path independence\]\], so link there or reword.
 - [Graph] For practice 1, plot the field $(y,0)$ on $[0,1]^2$ with the diagonal path and the L-shaped path. The diagonal picks up the horizontal arrows, while the axis path does not.
 
 ### N0320
@@ -530,10 +530,10 @@ Priority: medium · Graph: yes · Manim: no
 
 Transcribed lecture notes whose math is correct, but several results are left unevaluated, the work macro is inconsistent, and the field statements in the conservative-test passage contradict each other.
 
-- [Correctness] Work is an energy quantity, but it is written $\mechanical{W}$ here, while the companion note [[Line integrals and scalar potentials]] uses $\energy{W}$. Use $\energy{W}$ in the text and the table.
+- [Correctness] Work is an energy quantity, but it is written $\mechanical{W}$ here, while the companion note \[\[Line integrals and scalar potentials\]\] uses $\energy{W}$. Use $\energy{W}$ in the text and the table.
 - [Example] Evaluate the open results. $\int_{-2}^2t\sqrt{1+4t^2}\,dt=0$ by odd symmetry; the fuel integral is $3(30\pi+9\pi)=117\pi\approx368$ gallons. The segment work is $-1/2$: the normalized field is $\nabla(1/r)$, so $W=1/2-1$ (checked numerically). This also explains the zero work on the semicircle.
 - [Structure] The passage near the end gives two different fields for the same test ($\langle xy,z+z^2/2,z^2+xy\rangle$ and then $\langle xy,z+x^2/2,xy\rangle$), plus remarks about the handwriting. Keep one corrected field and delete the transcription commentary.
-- [Links] The link [[#Line integrals of vector fields|the section on Line integrals of vector fields]] points to the section the reader is already in, and the worked field follows directly below. Replace it with "below".
+- [Links] The link \[\[#Line integrals of vector fields|the section on Line integrals of vector fields\]\] points to the section the reader is already in, and the worked field follows directly below. Replace it with "below".
 - [Graph] Add 2D vector-field plots of $\langle x,y\rangle$ and $\langle-y,x\rangle$ side by side, with a closed loop drawn. They contrast a conservative field (zero circulation) with a rotational one.
 
 ### N0321
@@ -543,7 +543,7 @@ Priority: low · Graph: no · Manim: no
 
 Correct and concise (potentials, 9 and 15, practice answers verified); it overlaps heavily with 13.08.
 
-- [Links] This note shares its title and nearly its whole content with [[13.08 Potentials and path independence]] (same hole example, almost the same planar field). Cross-link them, or merge and keep one canonical lesson.
+- [Links] This note shares its title and nearly its whole content with \[\[13.08 Potentials and path independence\]\] (same hole example, almost the same planar field). Cross-link them, or merge and keep one canonical lesson.
 - [Intuition] In "Two-dimensional derivative test", add one sentence on why a convex domain suffices. The potential can be defined by integrating along the straight segment from a fixed point, so no choice of path arises.
 
 ### N0322

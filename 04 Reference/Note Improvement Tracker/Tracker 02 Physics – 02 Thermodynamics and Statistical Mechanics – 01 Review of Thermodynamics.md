@@ -169,7 +169,7 @@ Priority: low · Graph: no · Manim: yes
 Correct, with an accurate native $P$–$V$ graph (adiabat and isotherm intersections check out for $\gamma=5/3$); the proof of (1.4) is only sketched in words.
 
 - [Simplify] Write the two-line derivation explicitly: $\Delta S_{\text{cycle}}=0 \Rightarrow Q_H/T_H=Q_C/T_C$, hence $\eta=1-Q_C/Q_H=1-T_C/T_H$; the current paragraph describes it without equations.
-- [Example] Add a numeric example, for instance $T_H=500\,\mathrm{K}$, $T_C=300\,\mathrm{K}$ gives $\eta_{\text{rev}}=0.40$, and link to [[01.08 Worked Examples|Example 1.1]] for the full ideal-gas calculation.
+- [Example] Add a numeric example, for instance $T_H=500\,\mathrm{K}$, $T_C=300\,\mathrm{K}$ gives $\eta_{\text{rev}}=0.40$, and link to \[\[01.08 Worked Examples|Example 1.1\]\] for the full ideal-gas calculation.
 - [Manim] Animate one Carnot cycle: a piston-cylinder alternately in contact with hot and cold reservoirs and insulated, with a dot tracing A→B→C→D on the $P$–$V$ diagram and the enclosed area (net work) filling in at the end.
 - [Graph] Optionally add a companion $T$–$S$ diagram (a rectangle between $T_C$ and $T_H$) next to Fig. 1.1, which makes $Q_H$, $Q_C$ and $W$ visible as areas.
 
@@ -263,7 +263,7 @@ Priority: low · Graph: no · Manim: no
 Correct and thorough; Euler relation, Gibbs–Duhem and the phase-rule count are right.
 
 - [Simplify] Show the one-line Euler derivation: differentiate $U(\lambda S,\lambda V,\lambda N_i)=\lambda U$ with respect to $\lambda$ at $\lambda=1$, instead of only citing Euler's theorem.
-- [Example] Add the ideal-gas chemical potential $\mu=k_BT\ln(n\lambda_T^3)$ as a preview, linking to [[05.01.04 Chemical Potential of the Classical Ideal Gas]], to give $\mu$ a concrete form and sign.
+- [Example] Add the ideal-gas chemical potential $\mu=k_BT\ln(n\lambda_T^3)$ as a preview, linking to \[\[05.01.04 Chemical Potential of the Classical Ideal Gas\]\], to give $\mu$ a concrete form and sign.
 
 ### N1206
 
@@ -323,7 +323,7 @@ Priority: medium · Graph: no · Manim: no
 Statements are correct, but neither $C_P\ge C_V$ from stability nor $\kappa_T/\kappa_S=C_P/C_V$ is derived, so the note reads as a list of results.
 
 - [Simplify] Derive $\kappa_T/\kappa_S=C_P/C_V$ in a few lines (Jacobians, or $(\partial V/\partial P)_S=(\partial V/\partial P)_T+(\partial V/\partial T)_P(\partial T/\partial P)_S$), and state the companion $\kappa_T-\kappa_S=TV\alpha_P^2/C_P$.
-- [Links] Link the $C_P\ge C_V$ statement to its proof in [[01.06.02 Applications of the Maxwell Relations]] and to (1.3) in [[01.02.03 Heat Capacities]].
+- [Links] Link the $C_P\ge C_V$ statement to its proof in \[\[01.06.02 Applications of the Maxwell Relations\]\] and to (1.3) in \[\[01.02.03 Heat Capacities\]\].
 - [Example] Add the physical consequence: the speed of sound uses $\kappa_S$ ($c^2=1/(\rho\kappa_S)$); Newton's isothermal estimate for air was about 15% low because it used $\kappa_T$.
 
 ### N1212
@@ -338,7 +338,7 @@ Derivations are correct (Carnot work/heat, Joule coefficient, van der Waals cool
 - [Simplify] Work and efficiency paragraph: "If the isothermal volume ratio approaches one, the entire cycle shrinks ... their ratio has the Carnot value only as a nonzero-cycle limit" is confusing; state that $\energy{\eta}=1-\thermal{T}_C/\thermal{T}_H$ is independent of $\mechanical{V}_B/\mechanical{V}_A$ for every finite cycle, and that the cycle collapses onto the two adiabats (not to a point) as the ratio tends to one.
 - [Graph] Fig. 1.3: the $\thermal{T}_r=0.70$ isotherm is clipped at $\mechanical{P}_r=-0.3$ although its minimum is $\mechanical{P}_r\approx-1.35$ at $\mechanical{V}_r\approx0.58$; either extend the lower bound or note the negative-pressure dip, and add the Maxwell equal-area tie line and spinodal points for $\thermal{T}_r=0.85$ so the caption's "spinodal points" and the coexistence remark in the text are visible.
 - [Manim] Example 1.2: animate particles initially confined to the left half spreading into the vacuum after the partition is removed, with a counter showing $\energy{U}$ constant and $\Delta\thermal{S}=\mechanical{n}\thermal{R}\ln2$; motion conveys the irreversible transient better than the static before/after Fig. 1.2.
-- [Links] "equation (1.4)" and "Maxwell relation (1.8)" are cited as bare numbers; link them to [[01.03.02 Carnot Cycle and Carnot's Theorem]] and [[01.06.01 Systematic Derivation]], and move the first mention of "Equation (1.10)" (before its definition) to after the displayed equation.
+- [Links] "equation (1.4)" and "Maxwell relation (1.8)" are cited as bare numbers; link them to \[\[01.03.02 Carnot Cycle and Carnot's Theorem\]\] and \[\[01.06.01 Systematic Derivation\]\], and move the first mention of "Equation (1.10)" (before its definition) to after the displayed equation.
 
 ### N1213
 
@@ -347,7 +347,7 @@ Priority: low · Graph: no · Manim: no
 
 Correct and useful dictionary between thermodynamics and statistical mechanics, with appropriate scope caveats.
 
-- [Links] Link each Table 1.2 row to the note where it is derived (for example [[02.05.02 Boltzmann Formula]], [[02.06 Gibbs Entropy]], and the canonical and grand canonical chapters), so the summary works as a navigation hub.
+- [Links] Link each Table 1.2 row to the note where it is derived (for example \[\[02.05.02 Boltzmann Formula\]\], \[\[02.06 Gibbs Entropy\]\], and the canonical and grand canonical chapters), so the summary works as a navigation hub.
 - [Simplify] The temperature row ("Controls the energy distribution") is vague next to the others; give the explicit relation $1/T=(\partial S/\partial E)_{V,N}$ or the Boltzmann factor $e^{-E/k_BT}$.
 
 ### N1214
@@ -360,6 +360,6 @@ The isothermal and adiabatic derivations are correct and well checked, but the n
 - [Correctness] Postulate II margin: "$\Delta G=H-T\Delta S$" should be $\Delta G=\Delta H-T\Delta S$ (constant $T$), and "$\Delta G_{\mathrm{univ}}>0$" is wrong as a spontaneity criterion; state instead that at fixed $T,P$ a spontaneous process has $\Delta G_{\mathrm{sys}}<0$, equivalent to $\Delta S_{\mathrm{univ}}=-\Delta G/T>0$, or drop the margin line.
 - [Correctness] Physical-quantities table lists symbols the note never uses and that clash with used ones: $\thermal{T}_c$ as "Curie temperature" (the note uses $T_c$ for the cold reservoir), $n$ as "number density" (the note uses $n$ in mol), $\energy{E}$ Boltzmann-weight energy, Landé $g$, degeneracy $g$, fugacity $z$, fine-structure $\alpha$ (the note's $\alpha$ is a power-rule exponent), and $\mechanical{\vec x}$; remove these and add the used $\thermal{T}_h$, $\thermal{T}_0$, $\thermal{T}_{\mathrm f}$, $\mechanical{P}_0$, $\mechanical{V}_0$, $\mechanical{F}_{\mathrm{int}}$, $\mechanical{F}_{\mathrm{ext}}$.
 - [Correctness] Symbol clashes: $W$ is work and multiplicity ($S=k_B\ln W$ in "Isothermal and adiabatic compression"), and $x$ is the piston coordinate in metres and the dimensionless $x=V/V_0$; use $\Omega$ for multiplicity and e.g. $\xi=V/V_0$ for the substitution.
-- [Links] The Postulate II link "[[#Statistical thermodynamics with C. Martens|the section on · Statistical thermodynamics ...]]" has a stray "·" and should point to [[#Second law of thermodynamics]]; the link at the end of "Isothermal and adiabatic compression" points to its own section and can be replaced by "above".
+- [Links] The Postulate II link "\[\[#Statistical thermodynamics with C. Martens|the section on · Statistical thermodynamics ...\]\]" has a stray "·" and should point to \[\[#Second law of thermodynamics\]\]; the link at the end of "Isothermal and adiabatic compression" points to its own section and can be replaced by "above".
 - [Structure] Cut transcription narration and trivia ("The sketch shows ...", room NS2-2208, GitHub reference, the missed January 12 lecture, the Cuba Libre sketch, $\exists/\forall$ reminder) and merge the duplicate isothermal compression (worked twice) and repeated steady-state Earth paragraphs; in "Enthalpy and a Maxwell relation" actually state the resulting relation $(\partial T/\partial V)_S=-(\partial P/\partial S)_V$ instead of only the equal mixed derivatives, and say explicitly in "State functions" that there is no $\Delta Q$ or $\Delta W$.
 - [Graph] Add a $P/P_0$ versus $V/V_0$ plot on $[0.5,1]$ with the isotherm $1/x$ and the adiabat $x^{-5/3}$, shading the areas under each so the reader sees $W_{\mathrm{iso}}=\ln 2\,P_0V_0\approx0.693\,P_0V_0$ versus $W_{\mathrm{ad}}=\tfrac32(2^{2/3}-1)P_0V_0\approx0.881\,P_0V_0$; optional Manim of a piston compressing slowly while a state point traces the isotherm and then the adiabat on the same $PV$ diagram.

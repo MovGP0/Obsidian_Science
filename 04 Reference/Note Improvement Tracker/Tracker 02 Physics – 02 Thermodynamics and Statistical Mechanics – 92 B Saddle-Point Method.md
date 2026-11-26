@@ -77,7 +77,7 @@ Priority: low · Graph: yes · Manim: no
 Correct ($\ln10!=15.1044$, Stirling 15.0961, relative errors 0.055% and 0.83% verify), with one broken sentence and some duplication of A.05.
 
 - [Structure] "$n!\sim\sqrt{2\pi n}(n/e)^n$," is followed by "Using the first correction derived below, the logarithmic form is", which forms a fragment and quotes the $O(1/n)$ form before the correction is derived. End the display with a period and move the logarithmic form after the correction.
-- [Links] Link [[A.05 Stirling Formula]], which carries the same derivation, and keep this note focused on the tail check and the $1/(12n)$ correction.
+- [Links] Link \[\[A.05 Stirling Formula\]\], which carries the same derivation, and keep this note focused on the tail check and the $1/(12n)$ correction.
 - [Graph] Plot $\ln n!-(n\ln n-n+\tfrac12\ln2\pi n)$ and the same with $1/(12n)$ subtracted, against $n=1,\dots,20$ on a log y-axis, showing the $1/n$ and $1/n^3$ residuals.
 
 ### N1690

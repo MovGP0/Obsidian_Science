@@ -173,7 +173,7 @@ Priority: low · Graph: no · Manim: no
 
 Correct definition and worked example with a clear reason for conjugation.
 
-- [Intuition] State explicitly that this note uses the physics convention (antilinear in the first slot) and that many mathematics texts use the opposite slot, linking to [[07 Notation Comparison/01 The Inner Product|the notation comparison]].
+- [Intuition] State explicitly that this note uses the physics convention (antilinear in the first slot) and that many mathematics texts use the opposite slot, linking to \[\[07 Notation Comparison/01 The Inner Product|the notation comparison\]\].
 - [Example] Add the norms $\|u\|=\sqrt6$, $\|v\|=\sqrt{10}$ to the $\mathbb{C}^2$ example and check $|3-\mathrm{i}|^2=10\le60$ as a first Cauchy–Schwarz preview.
 
 ### N1774
@@ -481,7 +481,7 @@ Priority: low · Graph: no · Manim: no
 Correct matrix block and a valuable truncation warning; the mass/index clash is fixed only midway through.
 
 - [Simplify] Rename the mass to $\mechanical{M}$ (or the indices to $j,k$) already in the question, instead of introducing $\mechanical{m}$ for mass and switching to $\mechanical{M}$ in the solution with an explanatory note.
-- [Simplify] $\hbar$ is written $\mechanical{\hbar}$ here but $\energy{\hbar}$ in [[03 Hermitian Matrices]] and [[05 Matrices and Linear Operators/06 Common Errors]]; use one semantic group consistently.
+- [Simplify] $\hbar$ is written $\mechanical{\hbar}$ here but $\energy{\hbar}$ in \[\[03 Hermitian Matrices\]\] and \[\[05 Matrices and Linear Operators/06 Common Errors\]\]; use one semantic group consistently.
 
 ### N1807
 
@@ -555,7 +555,7 @@ Priority: low · Graph: no · Manim: no
 
 Correct derivation of the worst-case bound with a clear diagonal example.
 
-- [Intuition] Add the geometric picture: $A$ maps the unit sphere to an ellipsoid whose longest and shortest semi-axes are $\sigma_{\max}$ and $\sigma_{\min}$, so $\kappa$ is the eccentricity ratio; link to Fig. 6.1 in [[02 Singular Value Decomposition]].
+- [Intuition] Add the geometric picture: $A$ maps the unit sphere to an ellipsoid whose longest and shortest semi-axes are $\sigma_{\max}$ and $\sigma_{\min}$, so $\kappa$ is the eccentricity ratio; link to Fig. 6.1 in \[\[02 Singular Value Decomposition\]\].
 - [Example] Add a rule of thumb: with double precision ($\approx10^{-16}$ relative error) and $\kappa\approx10^{k}$, about $k$ significant digits can be lost; illustrate with $\varepsilon=10^{-8}$ in the existing example.
 
 ### N1814
@@ -578,7 +578,7 @@ The definition, properties, and mixture-versus-superposition contrast are correc
 
 - [Correctness] Remove the stray text3d label '50' at $(0.34,0.16,0.82)$ in Fig. 6.2 together with the note that apologises for it; it has no meaning and suggests an angle that is not defined.
 - [Structure] The physical-quantity table row "— | 1 | Spin quantum number" lists no symbol used in the note; delete it or replace it with the Bloch vector $\mathbf r$ if the formula below is added.
-- [Intuition] State the Bloch parametrisation $\rho=\tfrac12(I+\mathbf r\cdot\boldsymbol\sigma)$ with $\operatorname{Tr}\rho^2=\tfrac12(1+|\mathbf r|^2)$ next to Fig. 6.2 and link [[06 Special Matrices/99 Exercises/07 Exercise 7|Exercise 7]], so the axis labels and the surface/interior claim are derived rather than asserted; label the red marker with its purity ($\mathbf r=(0.22,0.08,0.12)$ gives $\operatorname{Tr}\rho^2\approx0.53$).
+- [Intuition] State the Bloch parametrisation $\rho=\tfrac12(I+\mathbf r\cdot\boldsymbol\sigma)$ with $\operatorname{Tr}\rho^2=\tfrac12(1+|\mathbf r|^2)$ next to Fig. 6.2 and link \[\[06 Special Matrices/99 Exercises/07 Exercise 7|Exercise 7\]\], so the axis labels and the surface/interior claim are derived rather than asserted; label the red marker with its purity ($\mathbf r=(0.22,0.08,0.12)$ gives $\operatorname{Tr}\rho^2\approx0.53$).
 - [Intuition] Add that the decomposition into $p_i,|\psi_i\rangle$ is not unique: $I/2$ is both the up/down mixture and the $\pm x$ mixture, so only $\rho$ (not the ensemble) is physically meaningful.
 - [Manim] Animate pure dephasing of $|+x\rangle$: the Bloch vector shrinks along the $x$ axis toward the centre while the matrix display shows the off-diagonal entries decaying as $\mathrm{e}^{-t/T_2}$ and the purity dropping from 1 to 1/2.
 
@@ -618,7 +618,7 @@ Priority: low · Graph: no · Manim: no
 
 Correct, fully worked, with good orthogonal-complement and normalisation checks.
 
-- [Intuition] Mention that $v=(1,\mathrm{i})/\sqrt2$ is the $\sigma_y$ eigenstate $|+y\rangle$ and that $P=\tfrac12(I+\sigma_y)$, connecting the result to the Bloch picture in [[08 Density Matrices]].
+- [Intuition] Mention that $v=(1,\mathrm{i})/\sqrt2$ is the $\sigma_y$ eigenstate $|+y\rangle$ and that $P=\tfrac12(I+\sigma_y)$, connecting the result to the Bloch picture in \[\[08 Density Matrices\]\].
 
 ### N1820
 
@@ -673,7 +673,7 @@ Priority: low · Graph: no · Manim: no
 Correct derivation (eigenvalues, purity, boundary tests check out), but the question text and a note dwell on the source's ambiguous "when does equality hold".
 
 - [Structure] Reword part (b) of the question to "When is $\operatorname{Tr}(\rho^2)=1$, and when is it $1/2$?" and delete the note about the unspecified equality and the sentence "resolves the source's unspecified equality question"; the solution then reads directly.
-- [Intuition] Add one sentence that the eigenvalues $\tfrac12(1\pm|\mathbf r|)$ mean the Bloch length directly measures how far the state is from maximally mixed, linking to Fig. 6.2 in [[08 Density Matrices]].
+- [Intuition] Add one sentence that the eigenvalues $\tfrac12(1\pm|\mathbf r|)$ mean the Bloch length directly measures how far the state is from maximally mixed, linking to Fig. 6.2 in \[\[08 Density Matrices\]\].
 
 ### N1826
 
@@ -701,7 +701,7 @@ Priority: low · Graph: no · Manim: no
 
 Clear chapter hub with a good motivating question and a useful defective-matrix warning; the closing paragraph is slightly dense.
 
-- [Simplify] Split the paragraph that starts "For example, $\begin{pmatrix}0&1\\0&0\end{pmatrix}$" into two: one sentence on the defective matrix (state that $(1,0)^T$ is its only eigendirection) and a separate sentence on continuous spectra with a forward link to the Hilbert Space note [[05 Continuous Bases]].
+- [Simplify] Split the paragraph that starts "For example, $\begin{pmatrix}0&1\\0&0\end{pmatrix}$" into two: one sentence on the defective matrix (state that $(1,0)^T$ is its only eigendirection) and a separate sentence on continuous spectra with a forward link to the Hilbert Space note \[\[05 Continuous Bases\]\].
 
 ### N1829
 
@@ -735,7 +735,7 @@ Correct statement and good projector discussion, but the proof roadmap and the d
 
 - [Structure] Reorder: theorem, then the boxed spectral decomposition and degenerate projector $\hat P_a$, then the $\operatorname{diag}(2,2,5)$ check (which uses $P_2$, $P_5$ before they are defined), then the proof roadmap.
 - [Simplify] In the proof roadmap, say why "A complex finite matrix has an eigenvector": the characteristic polynomial has a root in $\mathbb C$ by the fundamental theorem of algebra.
-- [Example] Add a short worked decomposition, e.g. $\sigma_y=|+y\rangle\langle+y|-|-y\rangle\langle-y|$ using the vectors from [[01 Definition and Calculation]], with the explicit outer-product matrices.
+- [Example] Add a short worked decomposition, e.g. $\sigma_y=|+y\rangle\langle+y|-|-y\rangle\langle-y|$ using the vectors from \[\[01 Definition and Calculation\]\], with the explicit outer-product matrices.
 
 ### N1832
 
@@ -766,7 +766,7 @@ Priority: low · Graph: no · Manim: no
 
 Accurate summary with a useful reconstruction exercise.
 
-- [Links] The equal-superposition question ("Explain why the mean can lie between the allowed outcomes") is answered in Exercise 5; add a link to [[07 Eigenvalues and Eigenvectors/99 Exercises/05 Exercise 5|Exercise 5]].
+- [Links] The equal-superposition question ("Explain why the mean can lie between the allowed outcomes") is answered in Exercise 5; add a link to \[\[07 Eigenvalues and Eigenvectors/99 Exercises/05 Exercise 5|Exercise 5\]\].
 
 ### N1835
 
@@ -854,7 +854,7 @@ Priority: low · Graph: no · Manim: no
 
 Good motivating hub with a clear comparison table; the last two paragraphs are dense for an overview.
 
-- [Simplify] Shorten the paragraphs "Use the chapter in two stages..." and "For a quick convergence test..." to two sentences each, or move the $1/n$ versus constant-coefficient test into [[02 Completeness and Hilbert Space]] where completeness is defined.
+- [Simplify] Shorten the paragraphs "Use the chapter in two stages..." and "For a quick convergence test..." to two sentences each, or move the $1/n$ versus constant-coefficient test into \[\[02 Completeness and Hilbert Space\]\] where completeness is defined.
 
 ### N1844
 
@@ -864,7 +864,7 @@ Priority: medium · Graph: yes · Manim: no
 Correct examples with checked integrals and a good membership-versus-normalization section; visual intuition for finite versus infinite area is missing.
 
 - [Graph] Plot $|f(x)|^2$ for $e^{-|x|}$, the normalized Gaussian with $\sigma=1$, and the plane wave ($|e^{ikx}|^2=1$) on $x\in[-5,5]$, shading the area under each; the plane-wave area clearly grows without bound as the range widens.
-- [Example] Add one example showing that an unbounded function can still be in $L^2$ (e.g. $x^{-1/3}$ on $[0,1]$), with a link to [[08 Hilbert Space/99 Exercises/01 Exercise 1|Exercise 1]], to correct the intuition that membership requires boundedness.
+- [Example] Add one example showing that an unbounded function can still be in $L^2$ (e.g. $x^{-1/3}$ on $[0,1]$), with a link to \[\[08 Hilbert Space/99 Exercises/01 Exercise 1|Exercise 1\]\], to correct the intuition that membership requires boundedness.
 - [Intuition] In the equivalence-class note, give a concrete case: the function equal to $e^{-|x|}$ except $f(0)=5$ is the same $L^2$ element as $e^{-|x|}$.
 
 ### N1845
@@ -876,7 +876,7 @@ Correct definition with a good sequence-space counterexample, but the incomplete
 
 - [Example] Add the standard function-space counterexample: continuous functions on $[0,1]$ with the $L^2$ norm are incomplete, since $f_n(x)=\tfrac12+\tfrac12\tanh(n(x-\tfrac12))$ is Cauchy and converges in norm to a step function that is not continuous.
 - [Graph] Plot that sequence $f_n$ for $n=2,5,20,100$ on $[0,1]$ together with the limiting step, to show a Cauchy sequence whose limit leaves the space.
-- [Simplify] The paragraph "In state expansions, the same tail argument..." is abstract; replace it with one concrete sentence pointing to [[08 Hilbert Space/99 Exercises/08 Exercise 8|Exercise 8]], where this proof is carried out.
+- [Simplify] The paragraph "In state expansions, the same tail argument..." is abstract; replace it with one concrete sentence pointing to \[\[08 Hilbert Space/99 Exercises/08 Exercise 8|Exercise 8\]\], where this proof is carried out.
 
 ### N1846
 
@@ -887,7 +887,7 @@ Correct definition, Parseval proof, and Fourier orthonormality check; convergenc
 
 - [Graph] Plot the partial sine sums of $f(x)=1$ on $[0,1]$, $\tfrac4\pi\sum_{k=0}^{K}\sin((2k+1)\pi x)/(2k+1)$ for $K=0,2,10$, to show norm convergence with a persistent overshoot near the endpoints (Gibbs).
 - [Structure] Definition 8.3 indexes the basis by $n=0,1,\ldots$, while the Fourier example uses $n\in\mathbb Z$ and the box example uses $n\ge1$; add one sentence that any countable index set is allowed.
-- [Links] Link "studied in detail in Chapter 12" to the Fourier Series chapter hub and "verified in Chapter 2" to [[05 The Inner Product as an Integral]], where the box sine orthogonality is shown.
+- [Links] Link "studied in detail in Chapter 12" to the Fourier Series chapter hub and "verified in Chapter 2" to \[\[05 The Inner Product as an Integral\]\], where the box sine orthogonality is shown.
 - [Simplify] Replace "probability of finding the system in its $n$th stationary state" with "probability that an energy measurement gives $E_n$", which is the operational statement.
 
 ### N1847
@@ -910,7 +910,7 @@ Correct and appropriately cautious about generalized states, but the discrete-to
 
 - [Intuition] Add a small table of correspondences: $\delta_{mn}\leftrightarrow\delta(x-x')$, $\sum_n\leftrightarrow\int dx$, $c_n\leftrightarrow\psi(x)$, $|c_n|^2\leftrightarrow|\psi(x)|^2dx$.
 - [Graph] Plot unit-area Gaussians $\delta_\varepsilon(x)=e^{-x^2/(2\varepsilon^2)}/(\varepsilon\sqrt{2\pi})$ for $\varepsilon=1,0.3,0.1$ on $[-3,3]$: the area stays 1 while the peak grows, which shows why $\langle x_0|x_0\rangle$ is not a finite norm.
-- [Example] Add the momentum basis $\langle x|p\rangle=e^{ipx/\hbar}/\sqrt{2\pi\hbar}$ as a second continuous basis, linking to the plane-wave example in [[01 The Space L2(R)]].
+- [Example] Add the momentum basis $\langle x|p\rangle=e^{ipx/\hbar}/\sqrt{2\pi\hbar}$ as a second continuous basis, linking to the plane-wave example in \[\[01 The Space L2(R)\]\].
 
 ### N1849
 
@@ -919,7 +919,7 @@ Priority: low · Graph: no · Manim: no
 
 Correct and concise; the truncation caveat is valuable.
 
-- [Links] Illustrate the truncation paragraph with a link to the two-level Hamiltonian in [[07 Eigenvalues and Eigenvectors/99 Exercises/04 Exercise 4|Chapter 7 Exercise 4]], which is exactly such an effective model.
+- [Links] Illustrate the truncation paragraph with a link to the two-level Hamiltonian in \[\[07 Eigenvalues and Eigenvectors/99 Exercises/04 Exercise 4|Chapter 7 Exercise 4\]\], which is exactly such an effective model.
 
 ### N1850
 
@@ -929,7 +929,7 @@ Priority: medium · Graph: no · Manim: no
 Correct content, but the note opens with an example of "Error 4" before any error is listed, and Error 1 has no concrete example.
 
 - [Structure] Move the two opening paragraphs (the $(1+x^2)^{-1/2}$ domain example and the three checks) into the Error 4 section, which they illustrate.
-- [Example] Give a concrete case for Error 1: the sine series of $f=1$ on $[0,L]$ converges in $L^2$ but equals zero at both endpoints (see [[08 Hilbert Space/99 Exercises/04 Exercise 4|Exercise 4]]), or the shrinking moving-indicator ("typewriter") sequence, which tends to zero in norm but converges at no point.
+- [Example] Give a concrete case for Error 1: the sine series of $f=1$ on $[0,L]$ converges in $L^2$ but equals zero at both endpoints (see \[\[08 Hilbert Space/99 Exercises/04 Exercise 4|Exercise 4\]\]), or the shrinking moving-indicator ("typewriter") sequence, which tends to zero in norm but converges at no point.
 - [Simplify] In Error 4, give the domain of $\hat x$ explicitly, $\{\psi\in L^2:\int x^2|\psi|^2dx<\infty\}$, so the opening example has a definition to refer to.
 
 ### N1851
@@ -1004,7 +1004,7 @@ Priority: low · Graph: yes · Manim: no
 Correct normalization, coefficients, and numerical sum (0.999999048 and the norm error 9.76e-4 confirmed), with a good distinction between probability error and norm error.
 
 - [Graph] Plot $\psi(x)=\sqrt{30}\,x(1-x)$ and its one-term approximation $c_1\phi_1(x)=\tfrac{8\sqrt{30}}{\pi^3}\sin(\pi x)$ on $[0,1]$ (with $L=1$), plus their difference scaled up, to show why the first mode carries 99.86 % of the probability.
-- [Simplify] The note and its physical-quantity table write the box functions as $\signal{\phi_n}$, while [[03 Orthonormal Bases]] writes the same functions uncolored; use one convention across the chapter.
+- [Simplify] The note and its physical-quantity table write the box functions as $\signal{\phi_n}$, while \[\[03 Orthonormal Bases\]\] writes the same functions uncolored; use one convention across the chapter.
 
 ### N1859
 

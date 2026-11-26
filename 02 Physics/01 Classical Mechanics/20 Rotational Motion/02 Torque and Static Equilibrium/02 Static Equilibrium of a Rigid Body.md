@@ -153,13 +153,19 @@ elements: [
   {"type":"line","def":[[1.94,0],[1.89,-0.12]],"att":{"fixed":true,"highlight":false,"strokeColor":"#687f93","strokeWidth":1,"dash":0,"lastArrow":false,"firstArrow":false,"straightFirst":false,"straightLast":false}},
   {"type":"line","def":[[2.08,0],[2.03,-0.12]],"att":{"fixed":true,"highlight":false,"strokeColor":"#687f93","strokeWidth":1,"dash":0,"lastArrow":false,"firstArrow":false,"straightFirst":false,"straightLast":false}},
   {"type":"line","def":[[2.22,0],[2.17,-0.12]],"att":{"fixed":true,"highlight":false,"strokeColor":"#687f93","strokeWidth":1,"dash":0,"lastArrow":false,"firstArrow":false,"straightFirst":false,"straightLast":false}},
-  {"type":"line","def":[[1.05,0],[1.05,0.77]],"att":{"fixed":true,"highlight":false,"strokeColor":"#186b99","strokeWidth":2.6,"dash":0,"lastArrow":true,"firstArrow":false,"straightFirst":false,"straightLast":false}},
+  {"type":"line","def":[[1.82,0],[1.82,0.77]],"att":{"fixed":true,"highlight":false,"strokeColor":"#186b99","strokeWidth":2.6,"dash":0,"lastArrow":true,"firstArrow":false,"straightFirst":false,"straightLast":false}},
   {"type":"line","def":[[1.95,0.85],[2.63,0.85]],"att":{"fixed":true,"highlight":false,"strokeColor":"#994521","strokeWidth":2.6,"dash":0,"lastArrow":true,"firstArrow":false,"straightFirst":false,"straightLast":false}},
-  {"type":"line","def":[[1.05,0],[0.24,0]],"att":{"fixed":true,"highlight":false,"strokeColor":"#2b7354","strokeWidth":2.6,"dash":0,"lastArrow":true,"firstArrow":false,"straightFirst":false,"straightLast":false}},
-  {"type":"text","def":[1.12,0.79,"𝑛"],"att":{"fixed":true,"highlight":false,"fontSize":16,"strokeColor":"#186b99","anchorX":"left"}},
+  {"type":"line","def":[[1.82,0],[1.14,0]],"att":{"fixed":true,"highlight":false,"strokeColor":"#2b7354","strokeWidth":2.6,"dash":0,"lastArrow":true,"firstArrow":false,"straightFirst":false,"straightLast":false}},
+  {"type":"text","def":[1.75,0.79,"𝑛"],"att":{"fixed":true,"highlight":false,"fontSize":16,"strokeColor":"#186b99","anchorX":"right"}},
   {"type":"text","def":[2.5,1.02,"𝐹"],"att":{"fixed":true,"highlight":false,"fontSize":16,"strokeColor":"#994521","anchorX":"left"}},
-  {"type":"text","def":[0.08,0.23,"fₛ"],"att":{"fixed":true,"highlight":false,"fontSize":16,"strokeColor":"#2b7354","anchorX":"left"}},
+  {"type":"text","def":[1.12,0.18,"fₛ"],"att":{"fixed":true,"highlight":false,"fontSize":16,"strokeColor":"#2b7354","anchorX":"left"}},
   {"type":"text","def":[1.5,-0.23,"Rough"],"att":{"fixed":true,"highlight":false,"fontSize":16,"strokeColor":"#344b61","anchorX":"left"}},
+  {"type":"point","def":[1.065,0.875],"att":{"size":2,"fixed":true,"highlight":false,"withLabel":false,"fillColor":"#344b61","strokeColor":"#344b61"}},
+  {"type":"line","def":[[1.065,0.875],[1.065,0]],"att":{"fixed":true,"highlight":false,"strokeColor":"#687f93","strokeWidth":1,"dash":2,"lastArrow":false,"firstArrow":false,"straightFirst":false,"straightLast":false}},
+  {"type":"line","def":[[1.065,0.42],[1.82,0.42]],"att":{"fixed":true,"highlight":false,"strokeColor":"#344b61","strokeWidth":1,"dash":0,"lastArrow":true,"firstArrow":true,"straightFirst":false,"straightLast":false}},
+  {"type":"text","def":[1.44,0.55,"ℎ𝐹/𝑛"],"att":{"fixed":true,"highlight":false,"fontSize":14,"strokeColor":"#344b61","anchorX":"middle"}},
+  {"type":"line","def":[[2.1,0],[2.1,0.85]],"att":{"fixed":true,"highlight":false,"strokeColor":"#344b61","strokeWidth":1,"dash":0,"lastArrow":true,"firstArrow":true,"straightFirst":false,"straightLast":false}},
+  {"type":"text","def":[2.16,0.42,"ℎ"],"att":{"fixed":true,"highlight":false,"fontSize":14,"strokeColor":"#344b61","anchorX":"left"}},
   {"type":"text","def":[-0.18,2.15,"(a)"],"att":{"fixed":true,"highlight":false,"fontSize":16,"strokeColor":"#344b61","anchorX":"left"}},
   {"type":"text","def":[1.38,2.07,"v = 0"],"att":{"fixed":true,"highlight":false,"fontSize":16,"strokeColor":"#186b99","anchorX":"left"}},
   {"type":"curve","def":[[3.66,5.43,5.43,3.66,3.66],[0,0,1.75,1.75,0]],"att":{"fixed":true,"highlight":false,"strokeColor":"#344b61","strokeWidth":1.65,"fillColor":"#c9dfeb","fillOpacity":0.48}},
@@ -195,7 +201,7 @@ elements: [
 ]
 ```
 
-**Fig. 2.10** (a) The box is stationary. Static friction $\mechanical{\vec f}_s$ opposes the motion that the applied force would cause. (b) The box moves to the right. Kinetic friction $\mechanical{\vec f}_k$ acts to the left. The reaction from the surface is the vector sum of its normal force and friction force.
+**Fig. 2.10** (a) The box is stationary. Static friction $\mechanical{\vec f}_s$ opposes the motion that the applied force would cause. Because $\mechanical{\vec F}$ acts at height $\mechanical{h}$, the normal force $\mechanical{\vec n}$ acts a distance $\mechanical{h}\mechanical{F}/\mechanical{n}$ ahead of the point below the CM (dot). (b) The box moves to the right. Kinetic friction $\mechanical{\vec f}_k$ acts to the left. The reaction from the surface is the vector sum of its normal force and friction force.
 
 - **The kinetic friction force $\mechanical{\vec{f}}_k$**: We know from translational motion that when an object is moving against a rough surface, there is kinetic friction $\mechanical{\vec{f}}_k$, which opposes the object’s motion. Its point of application is the same as that of the reaction force $\mechanical{\vec{n}}$. $\mechanical{\vec{f}}_k$ is therefore now taking the place of $\mechanical{\vec{f}}_s$ of the previous case, as shown in Figure 2.10b, and the net reaction force will be the vector sum of the reaction force and the kinetic friction force.
 

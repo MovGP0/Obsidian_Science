@@ -99,7 +99,7 @@ Priority: low · Graph: no · Manim: no
 
 Correct, compact dictionary with a good plane-wave sign check.
 
-- [Example] Add a minimal check: one contact vertex with two incoming and two outgoing plane waves integrates to $(2\pi)^4\delta^{(4)}(p_1+p_2-p_1'-p_2')$, linking to [[07.02.03 φφ → φφ Scattering at First Order]].
+- [Example] Add a minimal check: one contact vertex with two incoming and two outgoing plane waves integrates to $(2\pi)^4\delta^{(4)}(p_1+p_2-p_1'-p_2')$, linking to \[\[07.02.03 φφ → φφ Scattering at First Order\]\].
 
 ### N2577
 
@@ -276,7 +276,7 @@ Priority: low · Graph: no · Manim: no
 Correct amplitudes with a clear explanation of the relative sign.
 
 - [Example] Quote the massless unpolarized result $\overline{|\mathcal M|^2}=2e^4[\frac{s^2+u^2}{t^2}+\frac{s^2+t^2}{u^2}+\frac{2s^2}{tu}]$ so the reader sees the interference term in the final answer.
-- [Links] Link to [[08.07 Møller Scattering - e⁻e⁻ → e⁻e⁻]] for the squared amplitude.
+- [Links] Link to \[\[08.07 Møller Scattering - e⁻e⁻ → e⁻e⁻\]\] for the squared amplitude.
 
 ### N2596
 
@@ -299,7 +299,7 @@ Correct amplitudes, Klein–Nishina formula and Thomson limit; the cross-section
 
 - [Graph] Add a polar plot of the Klein–Nishina $d\sigma/d\Omega$ in units of $\alpha^2/m_e^2$ for $\omega/m_e=0.01,0.5,2,10$, using $\omega'/\omega=1/[1+(\omega/m_e)(1-\cos\theta)]$, to show the Thomson shape and the forward peaking at high energy.
 - [Simplify] Add the $+i\epsilon$ to the crossed-diagram denominator for consistency with the direct one.
-- [Links] Link the Klein–Nishina result to [[08.06.02 Klein–Nishina Formula]] for the full derivation.
+- [Links] Link the Klein–Nishina result to \[\[08.06.02 Klein–Nishina Formula\]\] for the full derivation.
 
 ### N2598
 
@@ -330,7 +330,7 @@ Priority: medium · Graph: no · Manim: yes
 Momentum map and the s↔t identification are correct, but most of the note corrects the source figure and the "both fermionic lines" wording rather than showing a clean crossed diagram.
 
 - [Structure] Replace (or supplement) the incorrect source sketch Fig. 7.13 with a correct pair of annihilation diagrams (t and u channel, one photon per vertex); keep the source figure only as a short side note.
-- [Structure] Harmonize photon labels with Exercise 7.5: here $\mechanical{k}\to-\mechanical{k}_1$, but [[07.15.05 Crossing from Compton scattering to two-photon annihilation]] uses $\mechanical{k}\to-\mechanical{k}_2$ and $\mechanical{k}'\to\mechanical{k}_1$; pick one convention for the chapter.
+- [Structure] Harmonize photon labels with Exercise 7.5: here $\mechanical{k}\to-\mechanical{k}_1$, but \[\[07.15.05 Crossing from Compton scattering to two-photon annihilation\]\] uses $\mechanical{k}\to-\mechanical{k}_2$ and $\mechanical{k}'\to\mechanical{k}_1$; pick one convention for the chapter.
 - [Example] Write out the explicit map for $\gamma\gamma\to\mathrm e^+\mathrm e^-$ (incoming $\mathrm e^-(\mechanical{p})$ becomes an outgoing positron with $\mechanical{p}\to-\bar{\mechanical{p}}$, outgoing $\gamma(\mechanical{k}')$ becomes incoming with $\mechanical{k}'\to-\mechanical{k}_2$) instead of only saying the source wording is insufficient.
 - [Manim] Animate the Compton s-channel diagram with legs rotating: the outgoing electron leg swings to the initial side and becomes a positron (arrow kept, momentum label flips sign), the incoming photon swings to the final side, ending in the annihilation diagram.
 
@@ -353,7 +353,7 @@ Priority: low · Graph: no · Manim: no
 Clear and correct short note; the equal-mass condition for the spacelike transfer is slightly over-restricted.
 
 - [Simplify] In the paragraph on the spacelike transfer, a vanishing CM energy component of $\mechanical{p}_1-\mechanical{p}_3$ only needs $\mechanical{m}_1=\mechanical{m}_3$ and $\mechanical{m}_2=\mechanical{m}_4$ (elastic), not all masses equal; state it that way.
-- [Example] Give one concrete process per channel: $\mathrm e^+\mathrm e^-\to\mu^+\mu^-$ (pure s), $\mathrm e^-\mu^-\to\mathrm e^-\mu^-$ (pure t), Møller (t and u), Bhabha (s and t), linking [[07.14 Bhabha Scattering - e⁺e⁻ → e⁺e⁻]].
+- [Example] Give one concrete process per channel: $\mathrm e^+\mathrm e^-\to\mu^+\mu^-$ (pure s), $\mathrm e^-\mu^-\to\mathrm e^-\mu^-$ (pure t), Møller (t and u), Bhabha (s and t), linking \[\[07.14 Bhabha Scattering - e⁺e⁻ → e⁺e⁻\]\].
 
 ### N2603
 
@@ -385,7 +385,7 @@ Loop expression, sign, dimension count and transverse decomposition are correct,
 
 - [Intuition] Add the physical consequence: after renormalization the effective coupling is $\electric{\alpha}_{\mathrm{eff}}(\mechanical{q}^{\,2})=\electric{\alpha}/[1-\hat{\electric{\Pi}}(\mechanical{q}^{\,2})]$, i.e. charge screening and the running of $\electric{\alpha}$ (about $1/128$ at the Z mass).
 - [Graph] Plot the renormalized one-loop $\hat{\electric{\Pi}}_2(\mechanical{q}^{\,2})=-(2\electric{\alpha}/\pi)\int_0^1dx\,x(1-x)\ln[\mechanical{m}^2/(\mechanical{m}^2-x(1-x)\mechanical{q}^{\,2})]$ for spacelike $-\mechanical{q}^{\,2}/\mechanical{m}^2\in[10^{-2},10^{6}]$ on a log axis, showing the crossover to $(\electric{\alpha}/3\pi)\ln(-\mechanical{q}^{\,2}/\mechanical{m}^2)$.
-- [Structure] The routing $\mechanical{k}-\mechanical{q}$ here differs from $\mechanical{k}+\mechanical{q}$ in [[07.15.06 Transversality of the vacuum-polarization tensor]]; harmonize or state that the routing is a free choice.
+- [Structure] The routing $\mechanical{k}-\mechanical{q}$ here differs from $\mechanical{k}+\mechanical{q}$ in \[\[07.15.06 Transversality of the vacuum-polarization tensor\]\]; harmonize or state that the routing is a free choice.
 - [Intuition] Explain the Lorentz decomposition step: the only available rank-2 tensors are $g^{\mu\nu}$ and $\mechanical{q}^\mu\mechanical{q}^\nu$, and (7.10) fixes their relative coefficient.
 
 ### N2606
@@ -407,7 +407,7 @@ Priority: low · Graph: no · Manim: no
 
 Correct expression and a useful dimension check; the reason the linear divergence becomes logarithmic appears only in the caption.
 
-- [Intuition] Explain in the text why $D=1$ reduces to a logarithm: the linearly divergent piece would be $\propto\energy{\Lambda}\mathbf 1$, which chiral symmetry forbids at $\mechanical{m}=0$, so $\delta\mechanical{m}\propto\mechanical{m}\ln\energy{\Lambda}$; link [[07.09.02 Counting Divergences]].
+- [Intuition] Explain in the text why $D=1$ reduces to a logarithm: the linearly divergent piece would be $\propto\energy{\Lambda}\mathbf 1$, which chiral symmetry forbids at $\mechanical{m}=0$, so $\delta\mechanical{m}\propto\mechanical{m}\ln\energy{\Lambda}$; link \[\[07.09.02 Counting Divergences\]\].
 - [Example] Quote the standard cutoff result $\delta\mechanical{m}\approx(3\electric{\alpha}/4\pi)\mechanical{m}\ln(\energy{\Lambda}^2/\mechanical{m}^2)$ and contrast it with the linearly divergent classical electrostatic self-energy of a point charge.
 
 ### N2608
@@ -418,7 +418,7 @@ Priority: medium · Graph: no · Manim: no
 The power count is correct, but the figure caption attributes the vertex divergence to charge renormalization, contradicting the Ward-identity statement in the text.
 
 - [Correctness] The caption "The logarithmic divergence contributes to charge renormalization" is misleading for QED: by $Z_1=Z_2$ the vertex divergence cancels against the electron field renormalization, and the charge is renormalized only through $Z_3$ (vacuum polarization); rephrase the caption.
-- [Intuition] Add the payoff sentence: the finite magnetic part of this diagram gives $\magnetic{F}_2(0)=\electric{\alpha}/2\pi$, linking [[07.11 Form Factors and the Anomalous Magnetic Moment]].
+- [Intuition] Add the payoff sentence: the finite magnetic part of this diagram gives $\magnetic{F}_2(0)=\electric{\alpha}/2\pi$, linking \[\[07.11 Form Factors and the Anomalous Magnetic Moment\]\].
 - [Structure] Write the loop integral explicitly (with $\gamma^\nu S(\mechanical{p}'-\mechanical{k})\gamma^\mu S(\mechanical{p}-\mechanical{k})\gamma_\nu$ times the photon propagator), as the two sibling notes do, so the power count can be read off.
 
 ### N2609
@@ -441,7 +441,7 @@ Decomposition and $\electric{\alpha}/2\pi$ are correct, but the zero-transfer pa
 
 - [Simplify] Replace the two paragraphs on "the coefficient extracted before the external-field response" with one sentence: $\magnetic{F}_2(0)$ is the coefficient of the $\sigma^{\mu\nu}\mechanical{q}_\nu$ term, which becomes the coupling to $\magnetic{\mathbf B}$ in a static field, so it is read off before $\mechanical{q}\to0$.
 - [Example] Replace the vague "twelve significant figures" with current values: $\magnetic{a}_e^{\exp}=0.001\,159\,652\,180\,59(13)$ (Fan et al. 2023), noting that the theory comparison is limited by the Cs and Rb determinations of $\electric{\alpha}$; compare with $\electric{\alpha}/2\pi=0.0011614$.
-- [Links] Link the Gordon-decomposition argument in [[07.15.07 Schwinger magnetic moment]] to explain why $\magnetic{g}=2[\electric{F}_1(0)+\magnetic{F}_2(0)]$.
+- [Links] Link the Gordon-decomposition argument in \[\[07.15.07 Schwinger magnetic moment\]\] to explain why $\magnetic{g}=2[\electric{F}_1(0)+\magnetic{F}_2(0)]$.
 
 ### N2611
 
@@ -489,7 +489,7 @@ Priority: low · Graph: no · Manim: no
 Correct identities with a good check of the second; the dimensional-regularization warning stays abstract.
 
 - [Example] Give the $d$-dimensional forms $\gamma^\mu\gamma_\mu=d$, $\gamma^\mu\not a\gamma_\mu=-(d-2)\not a$, $\gamma^\mu\not a\not b\gamma_\mu=4a\cdot b-(4-d)\not a\not b$ to make the warning concrete.
-- [Links] Point to [[07.15.03 Gamma-matrix traces]] for the derivation of the third identity.
+- [Links] Point to \[\[07.15.03 Gamma-matrix traces\]\] for the derivation of the third identity.
 
 ### N2616
 
@@ -499,7 +499,7 @@ Priority: low · Graph: no · Manim: no
 Trace list, the $\gamma^5$ sign convention ($\epsilon^{0123}=+1$ gives $\operatorname{Tr}[\gamma^5\gamma^0\gamma^1\gamma^2\gamma^3]=-4i$, consistent) and the leptonic contraction are correct.
 
 - [Simplify] Write the example in slash notation $\operatorname{Tr}[\not{\mechanical{q}}_1\gamma^\mu\not{\mechanical{q}}_2\gamma^\nu]$ and state the contraction rule $(a^\mu b^\nu+a^\nu b^\mu-g^{\mu\nu}a\cdot b)(c_\mu d_\nu+c_\nu d_\mu-g_{\mu\nu}c\cdot d)=2(a\cdot c)(b\cdot d)+2(a\cdot d)(b\cdot c)$ used in the last step.
-- [Example] Finish the example in the CM frame (e.g. $\mechanical{q}_1\cdot\mechanical{p}_1=\energy{s}(1\pm\cos\theta)/4$ depending on labels) to obtain the $1+\cos^2\theta$ distribution, and link [[07.06.02 Annihilation - e⁺e⁻ → μ⁺μ⁻]].
+- [Example] Finish the example in the CM frame (e.g. $\mechanical{q}_1\cdot\mechanical{p}_1=\energy{s}(1\pm\cos\theta)/4$ depending on labels) to obtain the $1+\cos^2\theta$ distribution, and link \[\[07.06.02 Annihilation - e⁺e⁻ → μ⁺μ⁻\]\].
 
 ### N2617
 
@@ -568,7 +568,7 @@ Priority: low · Graph: yes · Manim: no
 
 Momentum map, channel table, the extra crossing sign and the final $2\electric{e}^4(\mechanical{u}/\mechanical{t}+\mechanical{t}/\mechanical{u})$ are correct; the requested diagrams are not drawn.
 
-- [Example] Add the two annihilation diagrams the exercise asks for (t and u channel, one photon per vertex), which also replaces the faulty source sketch discussed in [[07.07.02 Crossing Examples]].
+- [Example] Add the two annihilation diagrams the exercise asks for (t and u channel, one photon per vertex), which also replaces the faulty source sketch discussed in \[\[07.07.02 Crossing Examples\]\].
 - [Structure] Photon labels differ from 07.07.02 ($\mechanical{k}\to-\mechanical{k}_2$ here versus $\mechanical{k}\to-\mechanical{k}_1$ there); harmonize.
 - [Graph] Plot $\overline{|\signal{\mathcal M}|^2}/(2\electric{e}^4)=2(1+\cos^2\theta)/(1-\cos^2\theta)$ versus $\cos\theta\in[-0.95,0.95]$ (massless CM), showing the forward and backward peaks.
 
@@ -579,7 +579,7 @@ Priority: low · Graph: no · Manim: no
 
 Correct and careful proof with good regulator and photon-mass caveats; slightly repetitive.
 
-- [Simplify] Merge the paragraph "The key step is the difference of inverse kernels" into the derivation and replace the repeated Ward–Takahashi statement by a link to [[07.10 The Ward Identity and Its Consequences]].
+- [Simplify] Merge the paragraph "The key step is the difference of inverse kernels" into the derivation and replace the repeated Ward–Takahashi statement by a link to \[\[07.10 The Ward Identity and Its Consequences\]\].
 - [Intuition] Give the concrete counterexample behind the regulator caveat: a hard four-momentum cutoff produces a non-transverse term $\propto g^{\mu\nu}\energy{\Lambda}^2$, i.e. a spurious photon mass.
 
 ### N2625
@@ -602,7 +602,7 @@ Priority: medium · Graph: yes · Manim: no
 Amplitude, trace result $2\electric{e}^4(\energy{s}^2+\mechanical{u}^2)/\mechanical{t}^2$ and the Møller comparison are correct, but the muon label $\mu$ collides with the Lorentz index $\mu$.
 
 - [Correctness] Symbol clash: $\bar u_\mu(\mechanical{q}')\gamma_\mu u_\mu(\mechanical{q})$ and $\signal{L}_{\mu,\mu\nu}$ use $\mu$ both as the muon species label and as a contracted Lorentz index; use e.g. $u_{(\mu)}$ and $\signal{L}^{(\mu)}_{\alpha\beta}$, or Lorentz indices $\alpha,\beta$.
-- [Simplify] Show the contraction from $\signal{L}_e^{\mu\nu}\signal{L}^{(\mu)}_{\mu\nu}$ to $8[(\mechanical{p}\cdot\mechanical{q})(\mechanical{p}'\cdot\mechanical{q}')+(\mechanical{p}\cdot\mechanical{q}')(\mechanical{p}'\cdot\mechanical{q})]$ by reusing Example 7.8 in [[07.13.02 Traces of γ Matrices]].
+- [Simplify] Show the contraction from $\signal{L}_e^{\mu\nu}\signal{L}^{(\mu)}_{\mu\nu}$ to $8[(\mechanical{p}\cdot\mechanical{q})(\mechanical{p}'\cdot\mechanical{q}')+(\mechanical{p}\cdot\mechanical{q}')(\mechanical{p}'\cdot\mechanical{q})]$ by reusing Example 7.8 in \[\[07.13.02 Traces of γ Matrices\]\].
 - [Graph] Plot $\overline{|\signal{\mathcal M}|^2}/(2\electric{e}^4)$ versus $\cos\theta\in[-1,0.95]$ for e–μ, $[4+(1+\cos\theta)^2]/(1-\cos\theta)^2$, and for Møller on a log axis, showing the missing backward peak for distinct particles.
 - [Structure] Add one sentence that Z exchange is neglected (tree-level QED only).
 
@@ -633,4 +633,4 @@ Priority: low · Graph: no · Manim: no
 
 Accurate chapter summary with useful reconstruction checks.
 
-- [Links] Turn plain references into wiki links, e.g. Table 7.1 to [[07.05.06 Summary Table of Feynman Rules for QED]] and the Ward identity to [[07.10 The Ward Identity and Its Consequences]].
+- [Links] Turn plain references into wiki links, e.g. Table 7.1 to \[\[07.05.06 Summary Table of Feynman Rules for QED\]\] and the Ward identity to \[\[07.10 The Ward Identity and Its Consequences\]\].

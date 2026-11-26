@@ -29,7 +29,7 @@ Priority: low · Graph: no · Manim: no
 
 Well-organized chapter index with a useful reading route; all 755 wiki-link targets exist.
 
-- [Links] Line 417 `[[07.16 Summary|7.16 Summary]]` is a bare basename that also exists in `05 Relativity and Gravitation/.../07 Einstein's General Theory of Relativity/07.16 Summary.md`; qualify it as `[[07 Feynman Diagrams/07.16 Summary|7.16 Summary]]`, as is already done for 02.10 and 10.12.
+- [Links] Line 417 `\[\[07.16 Summary|7.16 Summary\]\]` is a bare basename that also exists in `05 Relativity and Gravitation/.../07 Einstein's General Theory of Relativity/07.16 Summary.md`; qualify it as `\[\[07 Feynman Diagrams/07.16 Summary|7.16 Summary\]\]`, as is already done for 02.10 and 10.12.
 
 ### N2255
 

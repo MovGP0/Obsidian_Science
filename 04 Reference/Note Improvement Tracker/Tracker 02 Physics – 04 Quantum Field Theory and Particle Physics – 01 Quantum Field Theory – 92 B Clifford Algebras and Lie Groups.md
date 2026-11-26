@@ -93,7 +93,7 @@ Priority: low · Graph: no · Manim: no
 Correct; the general phase $i^{d/2+q}$ and the formula $\omega^2=(-1)^{d(d-1)/2+q}$ check out, and the (B.4) sign correction matches (A.16).
 
 - [Example] Add the $d=2$ Euclidean case as a second check: $\Gamma=i\sigma_1\sigma_2=-\sigma_3$, which squares to $\mathbf1$ and anticommutes with $\sigma_1,\sigma_2$.
-- [Links] Link [[A.04.04 The Matrix γ⁵]] where (A.16) is cited, so the reader can compare the two definitions directly.
+- [Links] Link \[\[A.04.04 The Matrix γ⁵\]\] where (A.16) is cited, so the reader can compare the two definitions directly.
 
 ### N2943
 
@@ -111,7 +111,7 @@ Priority: low · Graph: no · Manim: no
 
 Correct; (B.9)–(B.12) agree with (A.31)–(A.34), and the scope note on odd-dimensional traces with the $\operatorname{tr}(\sigma_1\sigma_2\sigma_3)=2i$ counterexample is accurate.
 
-- [Links] Point out that (B.9)–(B.12) are the slash-free forms of (A.31)–(A.34) and link [[A.04.06 Properties of Gamma Matrices]] to avoid two seemingly independent tables.
+- [Links] Point out that (B.9)–(B.12) are the slash-free forms of (A.31)–(A.34) and link \[\[A.04.06 Properties of Gamma Matrices\]\] to avoid two seemingly independent tables.
 - [Simplify] Write the chirality-conjugation proof of (B.17) as one equation, $\operatorname{tr}(\gamma^{\mu_1}\cdots\gamma^{\mu_{2k+1}})=\operatorname{tr}(\Gamma^2\gamma^{\mu_1}\cdots)=(-1)^{2k+1}\operatorname{tr}(\Gamma\gamma^{\mu_1}\cdots\Gamma)=-\operatorname{tr}(\cdots)$.
 
 ### N2945
@@ -121,7 +121,7 @@ Priority: low · Graph: no · Manim: no
 
 Correct and well checked; it duplicates content of A.04.06 and A.04.07.
 
-- [Links] Link [[A.04.06 Properties of Gamma Matrices]] and [[A.04.07 Trace Identities]], which contain the same identities with equation numbers (A.27)–(A.30) and (A.38)–(A.40).
+- [Links] Link \[\[A.04.06 Properties of Gamma Matrices\]\] and \[\[A.04.07 Trace Identities\]\], which contain the same identities with equation numbers (A.27)–(A.30) and (A.38)–(A.40).
 
 ### N2946
 
@@ -150,7 +150,7 @@ Priority: low · Graph: no · Manim: no
 
 Correct; essentially duplicates A.05.01 with a slightly fuller invariance argument.
 
-- [Links] Link [[A.05.01 Dirac Adjoint]], which defines the same adjoint as (A.46), to avoid parallel explanations drifting apart.
+- [Links] Link \[\[A.05.01 Dirac Adjoint\]\], which defines the same adjoint as (A.46), to avoid parallel explanations drifting apart.
 - [Simplify] Show the key identity $S^\dagger\gamma^0=\gamma^0S^{-1}$ for $S=\exp(-\tfrac i4\omega_{\mu\nu}\sigma^{\mu\nu})$ from $\gamma^0(\sigma^{\mu\nu})^\dagger\gamma^0=\sigma^{\mu\nu}$, which is the actual reason the cancellation works.
 
 ### N2949
@@ -160,7 +160,7 @@ Priority: low · Graph: no · Manim: no
 
 Correct and adds the useful argument that $\gamma^5$ commutes with Lorentz generators; overlaps A.05.06.
 
-- [Links] Link [[A.05.06 Chiral Projectors]] (same projectors, (A.56)) to avoid duplicated content.
+- [Links] Link \[\[A.05.06 Chiral Projectors\]\] (same projectors, (A.56)) to avoid duplicated content.
 - [Simplify] Show the commutation step explicitly: $[\gamma^5,\gamma^\mu\gamma^\nu]=\{\gamma^5,\gamma^\mu\}\gamma^\nu-\gamma^\mu\{\gamma^5,\gamma^\nu\}=0$, hence $[\gamma^5,\sigma^{\mu\nu}]=0$.
 
 ### N2950
@@ -249,8 +249,8 @@ Priority: low · Graph: no · Manim: no
 
 Correct; the rescaling behaviour $f\to cf$ and the $SU(2)$ check are right.
 
-- [Simplify] Show the derivation of (B.41) explicitly for the first term: $[T^a,[T^b,T^c]]=if^{bce}[T^a,T^e]=-f^{bce}f^{aed}T^d$, then relabel, rather than describing the steps in words.
-- [Example] Give the $\mathfrak{su}(3)$ structure constants $f^{123}=1$, $f^{147}=\tfrac12$, $f^{458}=\tfrac{\sqrt3}2$ as a second example, linking [[B.06.02 SU(3) - Gell-Mann Matrices and Casimir Operators]].
+- [Simplify] Show the derivation of (B.41) explicitly for the first term: $[T^a,[T^b,T^c\]\]=if^{bce}[T^a,T^e]=-f^{bce}f^{aed}T^d$, then relabel, rather than describing the steps in words.
+- [Example] Give the $\mathfrak{su}(3)$ structure constants $f^{123}=1$, $f^{147}=\tfrac12$, $f^{458}=\tfrac{\sqrt3}2$ as a second example, linking \[\[B.06.02 SU(3) - Gell-Mann Matrices and Casimir Operators\]\].
 
 ### N2959
 
@@ -269,7 +269,7 @@ Priority: low · Graph: no · Manim: no
 Correct, with a careful sign discussion; the $\mathfrak{su}(2)$ check $f^{acd}f^{bcd}=2\delta^{ab}$ verifies.
 
 - [Simplify] Show directly that $K_{ab}=\operatorname{Tr}(T^a_{\mathrm{adj}}T^b_{\mathrm{adj}})=f^{acd}f^{bcd}$ from (B.42), which makes the statement $T(A)=C_2(A)$ and the link between (B.43) and (B.44) one line instead of "up to normalization".
-- [Structure] The Dynkin index material is unrelated to the Killing-form title; either retitle the note or move (B.44) and $T(F)$, $T(A)$ to [[B.05.05 Casimir Operators]], where (B.47) uses them.
+- [Structure] The Dynkin index material is unrelated to the Killing-form title; either retitle the note or move (B.44) and $T(F)$, $T(A)$ to \[\[B.05.05 Casimir Operators\]\], where (B.47) uses them.
 
 ### N2961
 
@@ -338,7 +338,7 @@ Priority: low · Graph: no · Manim: no
 Correct color Fierz identity (B.74)/(B.75) with a good trace check; the vertex list (B.76)–(B.78) is schematic and properly flagged.
 
 - [Intuition] Add the color-flow (double-line) diagram for (B.74): a gluon exchange equals a crossed pair of quark color lines minus $1/N$ times the uncrossed pair, which is the standard picture for this identity.
-- [Links] Link the full vertex rules in [[C.05.01 Quark–Gluon Vertex]], [[C.05.02 Three-Gluon Vertex]] and [[C.05.03 Four-Gluon Vertex]] next to the schematic (B.76)–(B.78).
+- [Links] Link the full vertex rules in \[\[C.05.01 Quark–Gluon Vertex\]\], \[\[C.05.02 Three-Gluon Vertex\]\] and \[\[C.05.03 Four-Gluon Vertex\]\] next to the schematic (B.76)–(B.78).
 
 ### N2968
 
@@ -397,7 +397,7 @@ Priority: low · Graph: no · Manim: no
 Correct; the explicit blocks $\sigma^{ij}=\tfrac12\epsilon^{ijk}\sigma^k$, $\sigma^{0i}=-\tfrac i2\sigma^i$, $\bar\sigma^{0i}=+\tfrac i2\sigma^i$ verify from (B.94)/(B.95).
 
 - [Example] Add the finite transformations $\psi_L\to e^{(-i\boldsymbol\theta-\boldsymbol\eta)\cdot\boldsymbol\sigma/2}\psi_L$ and $\psi_R\to e^{(-i\boldsymbol\theta+\boldsymbol\eta)\cdot\boldsymbol\sigma/2}\psi_R$ for rotation angle $\boldsymbol\theta$ and rapidity $\boldsymbol\eta$, which is the form most readers will use.
-- [Links] Link [[A.04.05 Antisymmetric Spin Tensor]] and [[B.08.05 Lorentz Algebra in the Dirac Representation]] to show these are the Weyl blocks of $\tfrac12\sigma^{\mu\nu}$.
+- [Links] Link \[\[A.04.05 Antisymmetric Spin Tensor\]\] and \[\[B.08.05 Lorentz Algebra in the Dirac Representation\]\] to show these are the Weyl blocks of $\tfrac12\sigma^{\mu\nu}$.
 
 ### N2974
 
@@ -407,4 +407,4 @@ Priority: low · Graph: no · Manim: no
 Correct; the $2\pi$/$4\pi$ check and the explanation of the inverse field argument are good.
 
 - [Simplify] Show the block-diagonal form of (B.96) in the Weyl basis explicitly, $S^{\mu\nu}=\operatorname{diag}(\sigma^{\mu\nu},\bar\sigma^{\mu\nu})$, rather than asserting it, and state the key identity $[S^{\mu\nu},\gamma^\rho]=(\mathcal J^{\mu\nu})^\rho{}_\sigma\gamma^\sigma$ that makes $\bar\psi\gamma^\mu\psi$ a vector.
-- [Links] Note that $S^{\mu\nu}=\tfrac12\sigma^{\mu\nu}$ with $\sigma^{\mu\nu}$ from [[A.04.05 Antisymmetric Spin Tensor]], to connect the two appendices.
+- [Links] Note that $S^{\mu\nu}=\tfrac12\sigma^{\mu\nu}$ with $\sigma^{\mu\nu}$ from \[\[A.04.05 Antisymmetric Spin Tensor\]\], to connect the two appendices.

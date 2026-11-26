@@ -12,7 +12,7 @@ Use the [[Mathematics Study Guide]] for prerequisite-based reading routes.
 
 This route starts at secondary-school arithmetic and algebra. Each chapter guide explains its purpose and prerequisites. The lesson index in each guide lists all articles in that chapter, and the detailed source catalogue links each topic to the section that teaches it.
 
-Start with [[Arithmetic - Catalogue Guide|the Arithmetic learning guide]]. Use [[Planned Topics|Planned mathematics topics]] to find an exact source ID or topic title.
+Start with [[Arithmetic - Catalogue Guide|the Arithmetic learning guide]].
 
 Read definitions before formulas. Work through an example, attempt the practice questions, and compare your reasoning with the worked answers. A stated theorem can require a proof beyond a first lesson; its assumptions still apply.
 

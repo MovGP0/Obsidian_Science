@@ -211,7 +211,7 @@ Priority: low · Graph: no · Manim: no
 
 Short, correct reference note; the decomposition $\gamma^\mu\gamma^\nu=g^{\mu\nu}-i\sigma^{\mu\nu}$ and the distinct-index check are useful.
 
-- [Intuition] Add one line stating that $S^{\mu\nu}=\tfrac12\sigma^{\mu\nu}$ are the Lorentz generators in the spinor representation, with $\sigma^{ij}=\epsilon^{ijk}\Sigma^k$ giving the spin matrices, and link to [[B.08.04 Generators in the Spinor Representation]] so "enter the spinor representation" becomes concrete.
+- [Intuition] Add one line stating that $S^{\mu\nu}=\tfrac12\sigma^{\mu\nu}$ are the Lorentz generators in the spinor representation, with $\sigma^{ij}=\epsilon^{ijk}\Sigma^k$ giving the spin matrices, and link to \[\[B.08.04 Generators in the Spinor Representation\]\] so "enter the spinor representation" becomes concrete.
 - [Example] Give the explicit Dirac-Pauli forms $\sigma^{0i}=i\begin{pmatrix}0&\sigma^i\\\sigma^i&0\end{pmatrix}$ and $\sigma^{ij}=\epsilon^{ijk}\begin{pmatrix}\sigma^k&0\\0&\sigma^k\end{pmatrix}$ as a quick sign check (anti-Hermitian boost part versus Hermitian rotation part).
 
 ### N2916
@@ -231,7 +231,7 @@ Priority: low · Graph: no · Manim: no
 
 Correct trace sheet with good built-in checks; (A.40) with $\epsilon^{0123}=+1$ and $\gamma^5=i\gamma^0\gamma^1\gamma^2\gamma^3$ indeed gives $-4i$.
 
-- [Example] Add one worked application, e.g. $\operatorname{Tr}[(\not p'+m)\gamma^\mu(\not p+m)\gamma^\nu]=4(p'^\mu p^\nu+p'^\nu p^\mu-g^{\mu\nu}(p\cdot p'-m^2))$, to show how (A.35)–(A.37) are used with [[A.05.05 Completeness Relations]].
+- [Example] Add one worked application, e.g. $\operatorname{Tr}[(\not p'+m)\gamma^\mu(\not p+m)\gamma^\nu]=4(p'^\mu p^\nu+p'^\nu p^\mu-g^{\mu\nu}(p\cdot p'-m^2))$, to show how (A.35)–(A.37) are used with \[\[A.05.05 Completeness Relations\]\].
 - [Simplify] Write out the six-gamma case of (A.41) in full or state the closed rule "sum over all pairings, signed by the permutation parity", since the current "+⋯" leaves the sign pattern ambiguous to a beginner.
 - [Structure] Add the commonly needed $\operatorname{Tr}[\gamma^5\gamma^\mu\gamma^\nu\gamma^\rho]=0$ and the reversal identity $\operatorname{Tr}[\gamma^{\mu_1}\cdots\gamma^{\mu_n}]=\operatorname{Tr}[\gamma^{\mu_n}\cdots\gamma^{\mu_1}]$.
 

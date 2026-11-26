@@ -60,7 +60,7 @@ Priority: low · Graph: no · Manim: no
 
 Conversion factors are correct ($k_BT=25.7$ meV at 298 K, 8066 cm^-1, 2.418e14 Hz verified).
 
-- [Simplify] Write $hc\approx1240$ eV nm to match the unit used in [[21.12 Solutions for the Hydrogen Atom]] and in the $\hbar c$ row, instead of 1.240 µm eV.
+- [Simplify] Write $hc\approx1240$ eV nm to match the unit used in \[\[21.12 Solutions for the Hydrogen Atom\]\] and in the $\hbar c$ row, instead of 1.240 µm eV.
 
 ### N2248
 

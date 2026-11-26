@@ -1,0 +1,61 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Graph check</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.10.1/jsxgraph.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.10.1/jsxgraphcore.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+<script src="blocks.js"></script>
+<style>
+body{font-family:sans-serif;background:#fff;margin:16px}
+.fig{border:1px solid #ccc;margin:0 0 28px;padding:8px;max-width:760px}
+.fig h3{font-size:13px;margin:0 0 6px;word-break:break-all}
+.cap{font-size:13px;margin-top:6px}
+.err{color:#b00;font-family:monospace;white-space:pre-wrap}
+.jxgbox{border:none;background:#f7f7f7}
+</style></head><body>
+<div id="out"></div>
+<script>
+// Mimics the Obsidian Graphs plugin: YAML block -> JXG board; "f:expr" strings -> functions with Math names in scope; "eN" -> element N.
+const MATH = Object.getOwnPropertyNames(Math), MATHF = MATH.map(k => Math[k]);
+function conv(v, created){
+  if (typeof v === 'string'){
+    const m = /f:|f\(([^,]*)?(?:,([^,]*)?(?:,([^,]*))?)?\):/.exec(v);
+    if (m){
+      let body = v.replace(m[0], '');
+      body = body.replace(/e([0-9]+)/g, (s, n) => ['slider','riemannsum','integral'].includes(created[n].name) ? `createdElements[${n}].element.Value()` : `createdElements[${n}].element`);
+      let args = ['x','y','z']; if (m[1] != null) args = m.slice(1).filter(a => a != null);
+      return new Function(...MATH, 'createdElements', ...args, 'return ' + body + ';').bind({}, ...MATHF, created);
+    }
+    if (/^e[0-9]+$/.test(v)) return created[+v.slice(1)].element;
+    return v;
+  }
+  if (Array.isArray(v)) return v.map(x => conv(x, created));
+  if (v && typeof v === 'object'){ const o = {}; for (const k in v) o[k] = (k === 'anchor' && typeof v[k] === 'string') ? created[+v[k].slice(1)].element : conv(v[k], created); return o; }
+  return v;
+}
+const out = document.getElementById('out');
+BLOCKS.forEach((b, i) => {
+  const d = document.createElement('div'); d.className = 'fig';
+  d.innerHTML = `<h3>${b.note} — block ${b.idx}</h3>`;
+  const box = document.createElement('div'); box.id = 'b' + i; box.className = 'jxgbox'; d.appendChild(box);
+  const cap = document.createElement('div'); cap.className = 'cap'; cap.textContent = b.caption || ''; d.appendChild(cap);
+  out.appendChild(d);
+  try {
+    const s = jsyaml.load(b.yaml);
+    box.style.height = (s.height || 300) + 'px'; box.style.width = (s.width || 600) + 'px';
+    const board = JXG.JSXGraph.initBoard(box.id, {boundingbox: s.bounds || [-10,10,10,-10], axis: s.axis == null ? true : s.axis,
+      showNavigation: false, showCopyright: false, keepAspectRatio: !!s.keepAspectRatio, drag: {enabled: false}});
+    const created = [];
+    let view3d = null;
+    if (s.bounds3d){
+      const bd = s.bounds3d, B = s.bounds, n = Math.abs(B[2]-B[0]), a = Math.abs(B[1]-B[3]);
+      view3d = board.create('view3d', [[B[0]+n*.15, B[3]+a*.15], [n-n*.3, a-a*.3], bd], s.att3d || {});
+    }
+    (s.elements || []).forEach((el, k) => {
+      const target = el.type.includes('3d') ? view3d : board;
+      const def = conv(el.def, created), att = el.att ? conv(el.att, created) : undefined;
+      const e = att ? target.create(el.type, def, att) : target.create(el.type, def);
+      created.push({name: el.type, element: e});
+    });
+  } catch (e) { const p = document.createElement('div'); p.className = 'err'; p.textContent = 'ERROR: ' + e.message; d.appendChild(p); }
+});
+</script></body></html>

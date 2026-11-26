@@ -112,7 +112,7 @@ Priority: low · Graph: no · Manim: no
 
 Good exercises with correct results (checked 5, 7, 8, 9, 10, and the Berry-phase sign).
 
-- [Links] Link exercise 7 to [[10.04 Larmor Precession]] so the sign convention for $\omega_L$ is traceable.
+- [Links] Link exercise 7 to \[\[10.04 Larmor Precession\]\] so the sign convention for $\omega_L$ is traceable.
 
 ### N2102
 

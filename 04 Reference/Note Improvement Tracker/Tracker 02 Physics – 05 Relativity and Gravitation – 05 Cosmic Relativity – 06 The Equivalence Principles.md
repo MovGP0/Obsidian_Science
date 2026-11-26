@@ -12,7 +12,7 @@ Back to the index: [[Note Improvement Tracker]]
 The review found 16 possible errors or notation conflicts. 16 of them are verified (14 fixed, 1 partly, 1 rejected); the other 0 are not verified yet. Each item links to the full suggestion entry.
 
 - [[#N3549|N3549]] 06.01 The Universality of Free Fall: "the UFF is verified ... to the level of 1 part in $10^{13}$–$10^{14}$" is outdated. MICROSCOPE (2022) gives the Eötvös parameter $\eta(\mathrm{Ti,Pt})=(-1.5\pm2.7)\times10^{-15}$. Update the number. **Fixed:** Updated to about 10⁻¹⁵ with MICROSCOPE 2022 η(Ti,Pt)=(-1.5±2.7)×10⁻¹⁵; updated table row and added η
-- [[#N3549|N3549]] 06.01 The Universality of Free Fall: "The gravitational mass is the source of a gravitational field; it is the 'charge' of gravity" describes the active gravitational mass, while the WEP and the UFF concern the passive gravitational mass (the coupling to an external field). Distinguish $\mechanical{m}_p$ from $\mechanical{m}_a$, and link to [[06.07.04 The Active and the Passive Gravitational Masses]]. **Fixed:** Distinguished m_a and m_p, stated that WEP and UFF concern m_p, linked 06.07.04, and made the WEP sentence say passive mass; added table row
+- [[#N3549|N3549]] 06.01 The Universality of Free Fall: "The gravitational mass is the source of a gravitational field; it is the 'charge' of gravity" describes the active gravitational mass, while the WEP and the UFF concern the passive gravitational mass (the coupling to an external field). Distinguish $\mechanical{m}_p$ from $\mechanical{m}_a$, and link to \[\[06.07.04 The Active and the Passive Gravitational Masses\]\]. **Fixed:** Distinguished m_a and m_p, stated that WEP and UFF concern m_p, linked 06.07.04, and made the WEP sentence say passive mass; added table row
 - [[#N3550|N3550]] 06.02 The Equivalence of Inertia and Mass - The Weak Equivalence Principle: "the WEP implies that any form of energy is also a source of gravity, with mass $\mechanical{m}_g=\mechanical{m}_i$" is wrong. The WEP equates inertial and passive gravitational mass. That energy also sources gravity is the equality of active and passive mass, which is a separate statement tested by Kreuzer (ref. [21]) and lunar laser ranging. Correct the parenthesis. **Fixed:** Rewrote the parenthesis: WEP equates m_i with passive mass; energy as a source needs active = passive equality, tested by Kreuzer [21] and lunar laser ranging
 - [[#N3551|N3551]] 06.03 Galileo's Thought Experiment Proof of the UFF: "Nobody seems to have found any defect in Galileo's proof till now" is incorrect. The argument and its hidden assumptions (for example that speed depends only on weight and that weight is additive) have been analysed at length, for example by J. R. Brown (1991), J. D. Norton (1996) and T. Gendler (1998). Cite this literature or soften the claim. **Fixed:** Replaced with a sentence citing analyses by J. R. Brown (1991), J. D. Norton (1996) and T. Gendler (1998)
 - [[#N3552|N3552]] 06.04 Einstein's Equivalence Principle: "the additional apparent force $\mechanical{\mathbf F}=-\mechanical{m}\mechanical{\mathbf a}$, acting opposite to the direction of motion": the inertial force is opposite to the frame's acceleration, not to its velocity. A decelerating rocket gives apparent weight towards its nose. **Fixed:** Changed "direction of motion" to "direction of the frame's acceleration"
@@ -81,7 +81,7 @@ Priority: medium · Graph: yes · Manim: no
 A clear statement of the UFF and its role in GR, with an outdated experimental bound and a mixing of active and passive gravitational mass.
 
 - [Correctness] "the UFF is verified ... to the level of 1 part in $10^{13}$–$10^{14}$" is outdated. MICROSCOPE (2022) gives the Eötvös parameter $\eta(\mathrm{Ti,Pt})=(-1.5\pm2.7)\times10^{-15}$. Update the number.
-- [Correctness] "The gravitational mass is the source of a gravitational field; it is the 'charge' of gravity" describes the active gravitational mass, while the WEP and the UFF concern the passive gravitational mass (the coupling to an external field). Distinguish $\mechanical{m}_p$ from $\mechanical{m}_a$, and link to [[06.07.04 The Active and the Passive Gravitational Masses]].
+- [Correctness] "The gravitational mass is the source of a gravitational field; it is the 'charge' of gravity" describes the active gravitational mass, while the WEP and the UFF concern the passive gravitational mass (the coupling to an external field). Distinguish $\mechanical{m}_p$ from $\mechanical{m}_a$, and link to \[\[06.07.04 The Active and the Passive Gravitational Masses\]\].
 - [Example] Define the Eötvös parameter $\eta=2|a_1-a_2|/(a_1+a_2)$ and show that $\eta=10^{-15}$ near Earth means $\Delta a\approx10^{-14}\,\unit{m/s^2}$.
 - [Graph] Plot the best bound on η (log scale) against year: Newton ~1e-3, Bessel ~2e-5, Eötvös 1922 ~5e-9, Roll–Krotkov–Dicke 1964 ~1e-11, Braginsky 1972 ~1e-12, Eöt-Wash 2008/2012 ~2e-13, MICROSCOPE 2022 ~1e-15.
 
@@ -138,7 +138,7 @@ Priority: low · Graph: no · Manim: no
 
 Short and clear statement of the SEP, but it lacks the one number that makes the principle tangible.
 
-- [Example] Add the binding-energy fractions that the interpretation section asks the reader to predict: $GM/(Rc^2)\approx10^{-27}$ for a 1 kg metal sphere, $\approx7\times10^{-10}$ for Earth, $\approx2\times10^{-6}$ for the Sun and $\approx0.1$–$0.2$ for a neutron star, linking forward to [[06.07.03 Tests of the SEP]].
+- [Example] Add the binding-energy fractions that the interpretation section asks the reader to predict: $GM/(Rc^2)\approx10^{-27}$ for a 1 kg metal sphere, $\approx7\times10^{-10}$ for Earth, $\approx2\times10^{-6}$ for the Sun and $\approx0.1$–$0.2$ for a neutron star, linking forward to \[\[06.07.03 Tests of the SEP\]\].
 - [Simplify] State the SEP in one formula, e.g. $m_g/m_i=1+\eta_N\,E_g/(mc^2)$ with Nordtvedt parameter $\eta_N=0$ in GR, so the "self-energy" phrasing has a concrete target.
 
 ### N3555
@@ -253,4 +253,4 @@ Priority: low · Graph: no · Manim: no
 
 Adequate chapter summary; no change needed beyond links.
 
-- [Links] Add wiki links to the summarised notes (06.01, 06.03, 06.07, 06.07.03, 06.11) and to [[07.00 Einstein's General Theory of Relativity]] for "the next chapter".
+- [Links] Add wiki links to the summarised notes (06.01, 06.03, 06.07, 06.07.03, 06.11) and to \[\[07.00 Einstein's General Theory of Relativity\]\] for "the next chapter".

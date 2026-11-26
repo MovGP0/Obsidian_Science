@@ -30,7 +30,7 @@ The review found 24 possible errors or notation conflicts. 24 of them are verifi
 - [[#N3618|N3618]] 09.08 The Hafele-Keating Experiment: "J. C. Hafele and R. E. Keating of the US Naval Observatory": Hafele was a physicist at Washington University in St. Louis; only Keating was at USNO. **Fixed:** Corrected the affiliation sentence.
 - [[#N3618|N3618]] 09.08 The Hafele-Keating Experiment: Table 9.2 row "Absolute-frame prediction $-185\pm10$, $+104\pm10$" should say these essentially coincide with Hafele and Keating's own published kinematic predictions ($-184\pm18$, $+96\pm10\,\unit{ns}$, computed in the Earth-centred nonrotating frame), and that their total predictions $-40\pm23$ and $+275\pm21\,\unit{ns}$ match the observations; otherwise the reader thinks the standard relativistic calculation predicts the "Einstein" row $-41$, $-49$. **Fixed:** Added a paragraph after Table 9.2 with −184±18, +96±10 ns and totals −40±23, +275±21 ns, and that the "Einstein" row is the author's Earth-fixed calculation.
 - [[#N3618|N3618]] 09.08 The Hafele-Keating Experiment: Table "Physical quantities": the latitude row gives unit $\unit{rad}$ but the text and Table 9.1 use degrees; use degrees or convert. **Fixed:** Changed both latitude table rows to degrees.
-- [[#N3621|N3621]] 09.09.02 Resolution Sans Acceleration: Fig. 9.4 labels each leg "T(1 − v²/4c²)"; each leg lasts $\mechanical{T}/2$, so the aged time per leg is $(\mechanical{T}/2)(1-\mechanical{v}^2/(2\mechanical{c}^2))=\mechanical{T}/2-\mechanical{T}\mechanical{v}^2/(4\mechanical{c}^2)$. Fix the labels (the same labels are copied into Fig. 9.5 of [[09.10 Einstein's Gravitational Resolution of the Paradox]]). **Fixed:** Changed the four graph text labels and updated the caption (not checked in Obsidian reading mode).
+- [[#N3621|N3621]] 09.09.02 Resolution Sans Acceleration: Fig. 9.4 labels each leg "T(1 − v²/4c²)"; each leg lasts $\mechanical{T}/2$, so the aged time per leg is $(\mechanical{T}/2)(1-\mechanical{v}^2/(2\mechanical{c}^2))=\mechanical{T}/2-\mechanical{T}\mechanical{v}^2/(4\mechanical{c}^2)$. Fix the labels (the same labels are copied into Fig. 9.5 of \[\[09.10 Einstein's Gravitational Resolution of the Paradox\]\]). **Fixed:** Changed the four graph text labels and updated the caption (not checked in Obsidian reading mode).
 - [[#N3621|N3621]] 09.09.02 Resolution Sans Acceleration: "inertial observer C moving oppositely at relative velocity $-2\mechanical{v}$" is wrong in relativity (relative speed of C to B is $2\mechanical{v}/(1+\mechanical{v}^2/\mechanical{c}^2)$); state C moves at $-\mechanical{v}$ relative to A, which is the intended set-up. **Fixed:** Changed to C moving at −v relative to A.
 - [[#N3622|N3622]] 09.10 Einstein's Gravitational Resolution of the Paradox: The callout "Einstein's twin-paradox resolution admitted that the STR alone was insufficient" is misleading: in the 1918 dialogue, the inertial-frame STR calculation already gives a unique answer; the GTR argument only describes the same result from the traveller's accelerated frame. Attribute the claim to the author or rephrase. **Fixed:** Attributed the reading to the author and stated that the 1918 inertial-frame STR calculation already gives a unique answer.
 - [[#N3622|N3622]] 09.10 Einstein's Gravitational Resolution of the Paradox: Fig. 9.5(a,c) leg labels "T(1 − v²/4c²)" should be $\mechanical{T}/2-\mechanical{T}\mechanical{v}^2/(4\mechanical{c}^2)$ (each leg lasts $\mechanical{T}/2$), as in Fig. 9.4. **Fixed:** Changed the four graph text labels (not checked in Obsidian reading mode).
@@ -89,7 +89,7 @@ Priority: low · Graph: no · Manim: no
 Clear introduction to the author's position; no equations to check, but it states contested conclusions of earlier chapters as established.
 
 - [Structure] "This showed that invariant relative light speed and the STR must be abandoned" and "Some results directly conflict with STR motional time dilation" should be phrased as the author's claims with links to the chapters where they are argued (Chapter 5 notes, 09.08), since mainstream analyses of the same data agree with relativity.
-- [Links] Link "Einstein's own resolution ... 1918" to the note in this chapter that discusses it (09.09) and to [[09 References]] entry 4.
+- [Links] Link "Einstein's own resolution ... 1918" to the note in this chapter that discusses it (09.09) and to \[\[09 References\]\] entry 4.
 
 ### N3609
 
@@ -157,7 +157,7 @@ Priority: low · Graph: no · Manim: no
 
 Short, clear hub-style introduction that separates clock-comparison logic from interpretation; no technical content to correct.
 
-- [Structure] The "Physical question and model" paragraph lists three experiment classes (particle survival, spectroscopy, reunion clocks); add one-line links to [[09.07.01 Time Dilation of Unstable Particles]], [[09.07.02 Experiments on Atomic Systems]] and [[09.07.03 Experiments on the Comparison of Atomic Clocks]] so the hub actually routes the reader.
+- [Structure] The "Physical question and model" paragraph lists three experiment classes (particle survival, spectroscopy, reunion clocks); add one-line links to \[\[09.07.01 Time Dilation of Unstable Particles\]\], \[\[09.07.02 Experiments on Atomic Systems\]\] and \[\[09.07.03 Experiments on the Comparison of Atomic Clocks\]\] so the hub actually routes the reader.
 - [Simplify] "A difference can arise from either clock changing rate or their rates being unequal" is circular; rephrase as "a measured difference only tells you the two accumulated times differ, not which clock's rate changed".
 
 ### N3615
@@ -217,7 +217,7 @@ Priority: low · Graph: no · Manim: no
 
 Brief section hub with a useful three-chart test in "Interpretation and checks"; no errors.
 
-- [Links] Add links to [[09.09.01 Langevin's Solution in the Acceleration]] and [[09.09.02 Resolution Sans Acceleration]] so the hub routes to its subsections.
+- [Links] Add links to \[\[09.09.01 Langevin's Solution in the Acceleration\]\] and \[\[09.09.02 Resolution Sans Acceleration\]\] so the hub routes to its subsections.
 
 ### N3620
 
@@ -238,7 +238,7 @@ Priority: medium · Graph: yes · Manim: yes
 
 The simultaneity-jump bookkeeping is correct and well explained, but the graph labels per leg are wrong and the source's factor-2 inconsistencies are only flagged, not resolved.
 
-- [Correctness] Fig. 9.4 labels each leg "T(1 − v²/4c²)"; each leg lasts $\mechanical{T}/2$, so the aged time per leg is $(\mechanical{T}/2)(1-\mechanical{v}^2/(2\mechanical{c}^2))=\mechanical{T}/2-\mechanical{T}\mechanical{v}^2/(4\mechanical{c}^2)$. Fix the labels (the same labels are copied into Fig. 9.5 of [[09.10 Einstein's Gravitational Resolution of the Paradox]]).
+- [Correctness] Fig. 9.4 labels each leg "T(1 − v²/4c²)"; each leg lasts $\mechanical{T}/2$, so the aged time per leg is $(\mechanical{T}/2)(1-\mechanical{v}^2/(2\mechanical{c}^2))=\mechanical{T}/2-\mechanical{T}\mechanical{v}^2/(4\mechanical{c}^2)$. Fix the labels (the same labels are copied into Fig. 9.5 of \[\[09.10 Einstein's Gravitational Resolution of the Paradox\]\]).
 - [Simplify] Replace the note box about the inconsistent factor $1/2$ with the corrected statement: the reunion deficit is $\Delta\mechanical{T}=-\mechanical{T}\mechanical{v}^2/(2\mechanical{c}^2)=-\mechanical{L}\mechanical{v}/\mechanical{c}^2$ and the simultaneity jump is $2\mechanical{L}\mechanical{v}/\mechanical{c}^2$; then the "Doppler coincidence" paragraph can state the correct factor directly.
 - [Correctness] "inertial observer C moving oppositely at relative velocity $-2\mechanical{v}$" is wrong in relativity (relative speed of C to B is $2\mechanical{v}/(1+\mechanical{v}^2/\mechanical{c}^2)$); state C moves at $-\mechanical{v}$ relative to A, which is the intended set-up.
 - [Graph] Replace the schematic Fig. 9.4 by a quantitative Minkowski diagram for $\mechanical{v}=0.6\mechanical{c}$, $\mechanical{T}=10$: A's worldline, B/C legs, and B's simultaneity lines before/after the handover, labelling A's readings 3.2 and 6.8 yr at the jump.

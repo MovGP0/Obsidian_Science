@@ -39,7 +39,7 @@ Priority: low · Graph: no · Manim: no
 
 Clear, accurate chapter hub.
 
-- [Links] Link each summary bullet to its section note ([[19.02 Bloch Theorem]], [[19.05 Kronig–Penney Model]], [[19.06 Bragg Scattering and the Origin of Band Gaps]], [[19.07 Effective Mass]], [[19.08 Density of States in One Dimension]], [[19.09 Wannier Functions]], [[19.10 Metals, Insulators, and Semiconductors]]).
+- [Links] Link each summary bullet to its section note (\[\[19.02 Bloch Theorem\]\], \[\[19.05 Kronig–Penney Model\]\], \[\[19.06 Bragg Scattering and the Origin of Band Gaps\]\], \[\[19.07 Effective Mass\]\], \[\[19.08 Density of States in One Dimension\]\], \[\[19.09 Wannier Functions\]\], \[\[19.10 Metals, Insulators, and Semiconductors\]\]).
 
 ### N2192
 
@@ -68,7 +68,7 @@ Correct but very terse; the three zone schemes are described only in words.
 
 - [Graph] Plot the free-particle parabola $\energy E=\hbar^2k^2/2m$ in the three schemes side by side ($-3\pi/a\le k\le3\pi/a$ extended; folded into $[-\pi/a,\pi/a)$ reduced; reduced repeated periodically), with small gaps at the zone boundaries to show the band structure.
 - [Manim] Animate folding the extended-zone parabola into the first zone by shifting segments by multiples of $2\pi/a$; the motion makes the equivalence $k\sim k+2\pi/a$ concrete.
-- [Links] Link back to [[19.01 Discrete Translation Symmetry]], where the first Brillouin zone is first defined.
+- [Links] Link back to \[\[19.01 Discrete Translation Symmetry\]\], where the first Brillouin zone is first defined.
 
 ### N2195
 

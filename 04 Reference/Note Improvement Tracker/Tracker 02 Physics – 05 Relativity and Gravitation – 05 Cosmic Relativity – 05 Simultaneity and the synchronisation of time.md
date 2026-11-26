@@ -109,7 +109,7 @@ Priority: medium · Graph: no · Manim: no
 A clear historical account, but it presents Bergson's argument as unrefuted, which is historically incorrect.
 
 - [Correctness] "there is not a single written account from anybody that counters and disproves Bergson's ... demonstration" is false. Jean Becquerel and André Metz published rebuttals in 1922–24, and Bergson answered Becquerel in the appendices added to the second edition of Durée et simultanéité (1923). Mention this exchange.
-- [Structure] Mark the boxed note ("logically and physically impeccable") as the author's view, and link to the interpretation in [[05.04 Einstein's Fallacy on the Relativity of Simultaneity]], which explains where standard SR differs.
+- [Structure] Mark the boxed note ("logically and physically impeccable") as the author's view, and link to the interpretation in \[\[05.04 Einstein's Fallacy on the Relativity of Simultaneity\]\], which explains where standard SR differs.
 - [Intuition] Distinguish Bergson's philosophical concern (lived duration and the reality of multiple times) from the physical claim about signal arrivals, as the "Physical question" section starts to do. One sentence in the lecture section would prevent the two from being conflated.
 
 ### N3545
@@ -132,5 +132,5 @@ Priority: low · Graph: no · Manim: no
 
 The chapter summary restates the contested "fatal inconsistency" as established fact; otherwise it is clear.
 
-- [Structure] Add one sentence or a callout saying that the claimed inconsistency is the author's thesis, and that standard SR attributes the different arrival order to non-simultaneous emissions in the moving frame. Link to the interpretation sections of [[05.03 Einstein's Discussion of Simultaneity in the STR]] and [[05.04 Einstein's Fallacy on the Relativity of Simultaneity]].
+- [Structure] Add one sentence or a callout saying that the claimed inconsistency is the author's thesis, and that standard SR attributes the different arrival order to non-simultaneous emissions in the moving frame. Link to the interpretation sections of \[\[05.03 Einstein's Discussion of Simultaneity in the STR\]\] and \[\[05.04 Einstein's Fallacy on the Relativity of Simultaneity\]\].
 - [Links] Link each summarised step to notes 05.02–05.06.

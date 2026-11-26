@@ -34,7 +34,7 @@ Priority: low · Graph: no · Manim: no
 
 A clean acronym list; it is sufficient as a reference.
 
-- [Structure] Add the abbreviations M-M (Michelson–Morley) and CMB, which the chapter-1 notes use, and consider linking CMBR to [[08.05 The Cosmic Microwave Background Radiation]] inside this collection.
+- [Structure] Add the abbreviations M-M (Michelson–Morley) and CMB, which the chapter-1 notes use, and consider linking CMBR to \[\[08.05 The Cosmic Microwave Background Radiation\]\] inside this collection.
 
 ### N3486
 
@@ -56,6 +56,6 @@ Loose bullet-list explanation of the FLRW metric that lacks the vault's frontmat
 - [Correctness] The main metric prints "$r^2a\theta^2$"; it must be $r^2d\theta^2$.
 - [Correctness] "$-ds^2$ is the Spacetime Interval" and the unrendered "\((-+++)\)" are wrong or broken: $ds^2$ is the interval, with signature $(-,+,+,+)$ written in math delimiters.
 - [Correctness] "Static Universe ($a(t)=1$)" is misleading: $a=1$ at one instant is only a normalisation; a static universe needs $\dot a=0$ at all times, which for nonzero matter requires $\Lambda$ (the Einstein static universe) and is not a general special case of FLRW.
-- [Structure] Add the quoted frontmatter title and a TLDR as the Obsidian skill requires, turn the bullet glossary into prose plus a physical-quantities table, and add a section linking FLRW cosmic time to the Cosmic Relativity claims in [[15.00 Relativity and Quantum Entanglement]] and [[16.03 Physical Absolute Space and Absolute Time]].
+- [Structure] Add the quoted frontmatter title and a TLDR as the Obsidian skill requires, turn the bullet glossary into prose plus a physical-quantities table, and add a section linking FLRW cosmic time to the Cosmic Relativity claims in \[\[15.00 Relativity and Quantum Entanglement\]\] and \[\[16.03 Physical Absolute Space and Absolute Time\]\].
 - [Graph] Plot $a(t)/a_0$ against $t/t_0$ for radiation ($t^{1/2}$), matter ($t^{2/3}$), and de Sitter ($e^{H(t-t_0)}$) expansion, all normalised at $t_0$.
 - [Manim] Animate a comoving grid of galaxies whose coordinate labels stay fixed while proper separations grow with $a(t)$, with identical comoving clocks ticking in step to show the meaning of cosmic time.

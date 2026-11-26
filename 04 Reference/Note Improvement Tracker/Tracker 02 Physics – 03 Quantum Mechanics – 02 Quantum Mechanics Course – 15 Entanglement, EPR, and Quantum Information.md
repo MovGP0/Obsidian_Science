@@ -92,7 +92,7 @@ Priority: medium · Graph: no · Manim: no
 Correct but very thin; the loophole-free experiments are described vaguely without names, dates, or numbers.
 
 - [Structure] Name the 2015 loophole-free tests (Delft NV centres separated by 1.3 km, Vienna and NIST photon tests with high-efficiency superconducting detectors) and the 2022 Nobel Prize (Aspect, Clauser, Zeilinger); "photons over long distances" is misleading, since the 2015 photon tests closed the detection loophole with efficient detectors at separations of tens to a few hundred metres.
-- [Links] Link each loophole to the CHSH assumption it attacks (fair sampling, locality, measurement independence) and to the derivation in [[15.04 Bell and CHSH Inequalities]].
+- [Links] Link each loophole to the CHSH assumption it attacks (fair sampling, locality, measurement independence) and to the derivation in \[\[15.04 Bell and CHSH Inequalities\]\].
 - [Simplify] In the efficiency note, give the formulas behind the numbers: $\eta>2/(1+\sqrt2)\approx82.8\%$ for the maximally entangled state and Eberhard's $\eta>2/3$ for weakly entangled states.
 
 ### N2154

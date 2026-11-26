@@ -188,7 +188,7 @@ Priority: low · Graph: no · Manim: no
 
 Short and readable list of achievements, but Fig. 7.5 is placed here although it belongs to the gravitomagnetism note, and the ephemeris-time paragraph links GR to a Newtonian time standard.
 
-- [Structure] Move Fig. 7.5 (mass currents) to [[07.09 The GTR and Gravitomagnetism]], where it is discussed, and leave a link here.
+- [Structure] Move Fig. 7.5 (mass currents) to \[\[07.09 The GTR and Gravitomagnetism\]\], where it is discussed, and leave a link here.
 - [Simplify] The ephemeris-time paragraph implies that GR made ephemerides practical "around 1950"; ephemeris time (IAU 1952, SI second 1960–1967) was based on Newtonian solar theory, and relativistic ephemerides came later. Separate the two statements.
 - [Example] Give the GPS numbers that the GNSS sentence alludes to: $+45.7\,\mu\mathrm{s/day}$ gravitational, $-7.2\,\mu\mathrm{s/day}$ velocity, net $+38.5\,\mu\mathrm{s/day}$, about 11 km/day of ranging error if ignored.
 
@@ -202,7 +202,7 @@ Good qualitative introduction to frame dragging, but the potential estimate is d
 - [Correctness] "The potentials are of order $v/c$" should be "of order $(v/c)(GM/Rc^2)$", consistent with $B_g\sim\Omega GM/(Rc^2)$ in the next sentence.
 - [Correctness] "measured to about 5% accuracy through LAGEOS ... and in Gravity Probe-B": the GP-B frame-dragging result $37.2\pm7.2\,\mathrm{mas/yr}$ is a 19% measurement; LAGEOS analyses claim about 10%. Quote each separately.
 - [Simplify] "Attainable laboratory values of $B_g$ are no larger than about $10^{-22}$" lacks a unit; state $\mathrm{rad/s}$ and the assumed rotor ($M\sim10^3\,\mathrm{kg}$, $R\sim0.5\,\mathrm{m}$, $\Omega\sim10^3\,\mathrm{rad/s}$ gives $\sim10^{-21}$).
-- [Links] "(see the source's Section 7.10)" should be a wiki link to [[07.10 The GTR and Gravitational Waves]], which contains the GP-B calculation.
+- [Links] "(see the source's Section 7.10)" should be a wiki link to \[\[07.10 The GTR and Gravitational Waves\]\], which contains the GP-B calculation.
 - [Graph] Plot the orbit-averaged Lense–Thirring precession for a polar orbit, $\Omega_{LT}=GJ/(2c^2r^3)$ in mas/yr, against altitude 200–20,000 km for Earth, marking GP-B (642 km, 39 mas/yr predicted) and LAGEOS.
 - [Manim] Animate a gyroscope in polar orbit around a rotating Earth, with its spin axis slowly precessing in the direction of Earth's rotation (exaggerated), separately from the larger geodetic precession in the orbital plane.
 
@@ -226,7 +226,7 @@ Priority: low · Graph: no · Manim: no
 Short overview that lists tests without numbers; clear but thin.
 
 - [Example] Add a compact table of the classic tests with prediction and current precision: perihelion of Mercury ($43''$/century), solar light bending ($1.75''$; VLBI $\gamma-1\sim10^{-4}$), Cassini Shapiro delay ($\gamma-1=(2.1\pm2.3)\times10^{-5}$), Hulse–Taylor orbital decay (agreement at 0.2%), GP-B geodetic (0.3%).
-- [Links] Link "The preceding chapter" to [[06.07 A Brief Account of Experimental Tests]] and the frame-dragging remark to [[07.09 The GTR and Gravitomagnetism]].
+- [Links] Link "The preceding chapter" to \[\[06.07 A Brief Account of Experimental Tests\]\] and the frame-dragging remark to \[\[07.09 The GTR and Gravitomagnetism\]\].
 
 ### N3579
 
@@ -259,7 +259,7 @@ Priority: low · Graph: no · Manim: no
 
 Short argumentative note that states the author's position clearly; no equations to check.
 
-- [Links] Link "Mach's suggestion" to [[07.12 The GTR and Mach's Principle]] and "the Machian scheme" to the Cosmic Relativity chapter that implements it.
+- [Links] Link "Mach's suggestion" to \[\[07.12 The GTR and Mach's Principle\]\] and "the Machian scheme" to the Cosmic Relativity chapter that implements it.
 
 ### N3582
 
@@ -278,4 +278,4 @@ Priority: low · Graph: no · Manim: no
 
 Adequate chapter summary of the author's arguments; no change needed beyond links.
 
-- [Links] Add wiki links to the summarised notes (07.05.01, 07.06, 07.09, 07.10, 07.13, 07.15) and to [[08.00 Our Universe]] for "the next chapter".
+- [Links] Add wiki links to the summarised notes (07.05.01, 07.06, 07.09, 07.10, 07.13, 07.15) and to \[\[08.00 Our Universe\]\] for "the next chapter".

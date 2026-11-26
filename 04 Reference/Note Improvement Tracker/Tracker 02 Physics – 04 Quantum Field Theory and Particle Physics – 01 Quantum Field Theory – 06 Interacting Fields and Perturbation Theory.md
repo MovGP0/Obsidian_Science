@@ -11,7 +11,7 @@ Back to the index: [[Note Improvement Tracker]]
 
 The review found 7 possible errors or notation conflicts. 7 of them are verified (6 fixed, 1 partly); the other 0 are not verified yet. Each item links to the full suggestion entry.
 
-- [[#N2532|N2532]] 06.03.01 Definition: $\mathcal T$ is used both for time ordering ($\mathcal S=\mathcal T\exp(\dots)$) and for the transition operator ($\mathcal S=1+i\mathcal T$) in the same note; rename the transition operator (e.g. $\hat T$ or $\mathbb T$) here and in [[06.03.02 General Properties]]. **Partly:** Clash confirmed; renamed the transition operator to T-hat in this note and added a sentence on time ordering; 06.03.02 General Properties is not in this batch and still uses calligraphic T for the transition operator, so it needs the same rename.
+- [[#N2532|N2532]] 06.03.01 Definition: $\mathcal T$ is used both for time ordering ($\mathcal S=\mathcal T\exp(\dots)$) and for the transition operator ($\mathcal S=1+i\mathcal T$) in the same note; rename the transition operator (e.g. $\hat T$ or $\mathbb T$) here and in \[\[06.03.02 General Properties\]\]. **Partly:** Clash confirmed; renamed the transition operator to T-hat in this note and added a sentence on time ordering; 06.03.02 General Properties is not in this batch and still uses calligraphic T for the transition operator, so it needs the same rename.
 - [[#N2545|N2545]] 06.06.03 Formula for Scalar Fields: Display the LSZ formula in the chapter convention as the main equation: incoming weight $\int d^4x_j\,e^{-ip_j\cdot x_j}(\Box+m_{\mathrm{ph}}^2)$ and outgoing weight $\int d^4y_k\,e^{+ip'_k\cdot y_k}(\Box+m_{\mathrm{ph}}^2)$; keep the source phases only in a callout. **Fixed:** Main formula now uses e^{-ip_j x_j} for incoming and e^{+ip'_k y_k} for outgoing; the callout records the source phases.
 - [[#N2545|N2545]] 06.06.03 Formula for Scalar Fields: In the momentum-space form, replace the full $\tilde G^{(n+m)}$ by the connected Green function when writing $i\mathcal M$, as the callout already states, rather than displaying the uncorrected source expression. **Fixed:** Displayed formula now uses the connected G~_c^{(n+m)}; the callout records the source form; the table row includes G~_c.
 - [[#N2555|N2555]] 06.08.03 Decay Width: $n$ labels the last final particle in $1\to2+\dots+n$ and also the size of a set of identical particles in "a factor $1/n!$ for each set of $n$ identical final particles"; use a different letter (e.g. $1/k!$) for the identical set. **Fixed:** Changed the identical-particle factor to 1/k! for each set of k identical final particles.
@@ -141,7 +141,7 @@ Priority: medium · Graph: no · Manim: no
 
 Correct definition, but one symbol denotes two different operators.
 
-- [Correctness] $\mathcal T$ is used both for time ordering ($\mathcal S=\mathcal T\exp(\dots)$) and for the transition operator ($\mathcal S=1+i\mathcal T$) in the same note; rename the transition operator (e.g. $\hat T$ or $\mathbb T$) here and in [[06.03.02 General Properties]].
+- [Correctness] $\mathcal T$ is used both for time ordering ($\mathcal S=\mathcal T\exp(\dots)$) and for the transition operator ($\mathcal S=1+i\mathcal T$) in the same note; rename the transition operator (e.g. $\hat T$ or $\mathbb T$) here and in \[\[06.03.02 General Properties\]\].
 - [Example] Show that $\langle f|i\rangle$ for two-particle momentum states is a sum of products of $\delta^{(3)}$ factors, to make clear why it is separated from the connected $(2\pi)^4\delta^{(4)}\mathcal M$ term.
 
 ### N2533
@@ -205,7 +205,7 @@ Priority: low · Graph: no · Manim: no
 
 Correct derivation of the contraction and propagators.
 
-- [Simplify] Show the step from the commutator $[\phi^+(x),\phi^-(y)]=\int\frac{d^3k}{(2\pi)^32\omega_k}e^{-ik(x-y)}$ to the four-dimensional Fourier form via the $k^0$ contour (link [[05.14.06 Photon propagator in position space]] for the contour).
+- [Simplify] Show the step from the commutator $[\phi^+(x),\phi^-(y)]=\int\frac{d^3k}{(2\pi)^32\omega_k}e^{-ik(x-y)}$ to the four-dimensional Fourier form via the $k^0$ contour (link \[\[05.14.06 Photon propagator in position space\]\] for the contour).
 
 ### N2540
 
@@ -405,7 +405,7 @@ Priority: low · Graph: no · Manim: no
 
 Clear synthesis.
 
-- [Structure] Add the relevant note link to each of the six steps (e.g. step 4 to [[06.05.03 Statement and Proof]], step 5 to [[06.06.03 Formula for Scalar Fields]]).
+- [Structure] Add the relevant note link to each of the six steps (e.g. step 4 to \[\[06.05.03 Statement and Proof\]\], step 5 to \[\[06.06.03 Formula for Scalar Fields\]\]).
 
 ### N2561
 
@@ -437,7 +437,7 @@ Short, correct bridge note that states the line/vertex dictionary clearly but ne
 
 - [Example] Add one worked translation: the first-order term $\langle p_1'p_2'|\mathcal N\{\phi^4(x)\}|p_1p_2\rangle$ and its four external attachments drawn as the contact vertex, with the $4!$ attachments cancelling the $1/4!$ to give $-i\lambda$.
 - [Manim] Animate the six-field pairing $\langle\phi_1\cdots\phi_6\rangle$: arcs joining field labels morph into propagator lines between points, showing that one complete pairing is one diagram.
-- [Links] Link "Chapter 7" to [[07.01 From Wick's Theorem to Diagrams]] and mention that Chapter 7 renames the quartic coupling from $\lambda$ to $g$.
+- [Links] Link "Chapter 7" to \[\[07.01 From Wick's Theorem to Diagrams\]\] and mention that Chapter 7 renames the quartic coupling from $\lambda$ to $g$.
 
 ### N2564
 

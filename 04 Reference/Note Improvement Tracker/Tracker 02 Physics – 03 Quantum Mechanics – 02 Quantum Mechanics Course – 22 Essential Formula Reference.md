@@ -39,7 +39,7 @@ Priority: low · Graph: no · Manim: no
 
 A hub with a TLDR and one sentence but no links to the eleven reference notes.
 
-- [Links] Add a list of links to [[22.01 Postulates and Probabilities]] through [[22.11 Baker–Campbell–Hausdorff Formulas]], as the 23.00 hub does for its notes.
+- [Links] Add a list of links to \[\[22.01 Postulates and Probabilities\]\] through \[\[22.11 Baker–Campbell–Hausdorff Formulas\]\], as the 23.00 hub does for its notes.
 
 ### N2233
 

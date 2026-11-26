@@ -11,21 +11,21 @@ Back to the index: [[Note Improvement Tracker]]
 
 The review found 27 possible errors or notation conflicts. 27 of them are verified (26 fixed, 1 partly); the other 0 are not verified yet. Each item links to the full suggestion entry.
 
-- [[#N0148|N0148]] 05.08 Lines and planes: "See [[05.07 Linear combinations]] for the difference between a span through the origin and its translated copy" points to a note that never discusses translated copies; link [[10.01 Vector spaces]] (which mentions translated lines and affine sets) or drop the claim. **Fixed:** Retargeted the link to [[10.01 Vector spaces]], which discusses translated lines and affine sets
+- [[#N0148|N0148]] 05.08 Lines and planes: "See \[\[05.07 Linear combinations\]\] for the difference between a span through the origin and its translated copy" points to a note that never discusses translated copies; link \[\[10.01 Vector spaces\]\] (which mentions translated lines and affine sets) or drop the claim. **Fixed:** Retargeted the link to \[\[10.01 Vector spaces\]\], which discusses translated lines and affine sets
 - [[#N0150|N0150]] Basis change: In "Basis change on Covector", ${e'}_j = B^i_j\ a_i$ uses an undefined $a_i$; it should read ${e'}_j = B^i_j\ e_i$. **Fixed:** Changed ${e'}_j = B^i_j\ a_i$ to ${e'}_j = B^i_j\ e_i$
 - [[#N0151|N0151]] Cross product: The index form $c_i = ε_{ijk} \, a_i \, b_j$ is wrong (free index $i$ repeated, $k$ dangling); it must be $c_i=\varepsilon_{ijk}\,a_j\,b_k$. **Fixed:** Changed to $c_i = ε_{ijk}\,a_j\,b_k$
 - [[#N0151|N0151]] Cross product: "Determinant of two 3D vectors" is not a valid definition (a determinant needs three rows); say that $\mathbf a\times\mathbf b$ is the formal determinant with rows $(\mathbf e_x,\mathbf e_y,\mathbf e_z)$, $\mathbf a$, $\mathbf b$, i.e. its components are $2\times2$ minors. **Fixed:** Reworded as formal determinant with rows (e_x, e_y, e_z), a, b whose components are 2x2 minors
-- [[#N0155|N0155]] Scalar Product: $c_i = a_i\,b_i$ defines a vector (the component-wise product), not the scalar product; the dot product is $c=a_ib_i=\sum_i a_ib_i$ with no free index, and writing $c=a\,b$ without a dot clashes with the geometric product $ab$ in [[Vector product]]. **Fixed:** Changed to $c = a\cdot b$ and $c = a_i b_i = \sum_i a_i b_i$; used a\cdot b in the angle formulas
+- [[#N0155|N0155]] Scalar Product: $c_i = a_i\,b_i$ defines a vector (the component-wise product), not the scalar product; the dot product is $c=a_ib_i=\sum_i a_ib_i$ with no free index, and writing $c=a\,b$ without a dot clashes with the geometric product $ab$ in \[\[Vector product\]\]. **Fixed:** Changed to $c = a\cdot b$ and $c = a_i b_i = \sum_i a_i b_i$; used a\cdot b in the angle formulas
 - [[#N0155|N0155]] Scalar Product: The angle formula is restricted to "$\forall a,b\in\mathbb{R}^2$" although it holds in any $\mathbb R^n$ with an orthonormal basis; generalize it and require $a,b\neq0$ for the $\cos\gamma$ formula. **Fixed:** Generalized to R^n (orthonormal basis) and added a,b nonzero to the cos formula
 - [[#N0159|N0159]] Vector product: "with $xy = -xy$ and $xx = 1$" is wrong as written; it should be $e_xe_y=-e_ye_x$ (distinct basis vectors) and $e_xe_x=1$. **Fixed:** Changed to $e_xe_y = -e_ye_x$ (distinct basis vectors) and $e_xe_x = 1$
 - [[#N0159|N0159]] Vector product: The bivector basis lines $e_z e_x = -(e_z e_x) = j$ and $e_y e_z = -(e_y e_z) = k$ assert $X=-X$; they should read $e_ze_x=-e_xe_z=j$ and $e_ye_z=-e_ze_y=k$. **Fixed:** Changed to $e_ze_x = -e_xe_z = j$ and $e_ye_z = -e_ze_y = k$
 - [[#N0159|N0159]] Vector product: The overbrace labels the bivector part "cross product"; it is the wedge product $a\wedge b$, whose components equal those of $a\times b$ only through the Hodge dual ($a\wedge b=I\,(a\times b)$ with $I=e_xe_ye_z$). **Fixed:** Relabeled it "wedge product a wedge b" and added one line on the Hodge dual a wedge b = I (a x b) with I = e_xe_ye_z (verified I e_x = e_ye_z)
-- [[#N0169|N0169]] LU factorization and matrix practice: "On [[Linear maps, inverses, and determinants#Determinants by elimination|the section on Determinants by elimination]] the same symbol denotes the determinant of that submatrix" points to the wrong heading; $M_{ij}$ is defined under [[Linear maps, inverses, and determinants#Cofactors]]. **Fixed:** Retargeted to [[Linear maps, inverses, and determinants#Cofactors]], where the minor M_ij is defined
-- [[#N0170|N0170]] Linear algebra - Catalogue Guide: [[Planned Topics#4. Linear algebra|the detailed catalogue]] is broken: no note named "Planned Topics" exists in the vault; retarget it or remove it. **Fixed:** No Planned Topics note exists in the vault (only a backup in .temp); removed the sentence with the broken link (same broken link exists in other Catalogue Guides outside this batch)
-- [[#N0175|N0175]] Row reduction and the four fundamental subspaces: Wrong internal anchors: "The portfolio vectors on [[#Reduced row echelon form]]" (they are introduced under "Span and dependence"), "For the matrix on the section on Homework 2" (the matrix is in "Homogeneous systems"), and three references to [[#Forward elimination and back substitution]] for the matrix $B$, which is defined under "Rectangular matrix". **Fixed:** Retargeted to #Span and dependence, #Homogeneous systems (now a link), and #Rectangular matrix (three places)
+- [[#N0169|N0169]] LU factorization and matrix practice: "On \[\[Linear maps, inverses, and determinants#Determinants by elimination|the section on Determinants by elimination\]\] the same symbol denotes the determinant of that submatrix" points to the wrong heading; $M_{ij}$ is defined under \[\[Linear maps, inverses, and determinants#Cofactors\]\]. **Fixed:** Retargeted to \[\[Linear maps, inverses, and determinants#Cofactors\]\], where the minor M_ij is defined
+- [[#N0170|N0170]] Linear algebra - Catalogue Guide: \[\[Planned Topics#4. Linear algebra|the detailed catalogue\]\] is broken: no note named "Planned Topics" exists in the vault; retarget it or remove it. **Fixed:** No Planned Topics note exists in the vault (only a backup in .temp); removed the sentence with the broken link (same broken link exists in other Catalogue Guides outside this batch)
+- [[#N0175|N0175]] Row reduction and the four fundamental subspaces: Wrong internal anchors: "The portfolio vectors on \[\[#Reduced row echelon form\]\]" (they are introduced under "Span and dependence"), "For the matrix on the section on Homework 2" (the matrix is in "Homogeneous systems"), and three references to \[\[#Forward elimination and back substitution\]\] for the matrix $B$, which is defined under "Rectangular matrix". **Fixed:** Retargeted to #Span and dependence, #Homogeneous systems (now a link), and #Rectangular matrix (three places)
 - [[#N0176|N0176]] Scaling Matrices: "A matrix $M$ is scaling a vector field, if it's Determinant is not equal to 1" is wrong: $\operatorname{diag}(2,1/2)$ scales both axes yet has determinant 1, and a rotation combined with a scaling has determinant $\ne1$ without being a scaling matrix; define a scaling matrix as $\operatorname{diag}(s_x,s_y,\ldots)$ and say $|\det|$ is the volume factor. **Fixed:** Defined a scaling matrix as diag(s_x, s_y, ...), stated abs(det) as volume factor with the diag(2,1/2) counterexample
 - [[#N0176|N0176]] Scaling Matrices: "Scaling Matrix in $ℝ^2$" shows a $3\times3$ matrix; the linear scaling on $\mathbb R^2$ is $\begin{pmatrix}s_x&0\\0&s_y\end{pmatrix}$, and the $3\times3$ form acts on homogeneous coordinates (same issue for the $\mathbb R^3$ and $\mathbb R^4$ sections). **Partly:** Note already mentioned homogeneous coordinates; added the 2x2 linear matrix in R^2 and diag forms for R^3 and R^4, and labeled the existing matrices as homogeneous-coordinate forms
-- [[#N0178|N0178]] Subspaces, eigenvectors, and orthogonal projections: Wrong anchors: "The conditions on [[#Vector spaces and subspaces]] for injectivity" (they are listed under "The four fundamental subspaces"); "as on [[Coordinate matrices and diagonalization#Stretching along a basis direction]]" for the transpose matrix (it is under "Coordinate representation of a matrix"); "[[#Orthogonal projections|the section on Final review. Orthogonal projections]]" for inner-product preservation (the proof is under "Orthonormal sets", and "Final review" is not a heading). **Fixed:** Retargeted to #The four fundamental subspaces, Coordinate matrices and diagonalization#Coordinate representation of a matrix, and #Orthonormal sets
+- [[#N0178|N0178]] Subspaces, eigenvectors, and orthogonal projections: Wrong anchors: "The conditions on \[\[#Vector spaces and subspaces\]\] for injectivity" (they are listed under "The four fundamental subspaces"); "as on \[\[Coordinate matrices and diagonalization#Stretching along a basis direction\]\]" for the transpose matrix (it is under "Coordinate representation of a matrix"); "\[\[#Orthogonal projections|the section on Final review. Orthogonal projections\]\]" for inner-product preservation (the proof is under "Orthonormal sets", and "Final review" is not a heading). **Fixed:** Retargeted to #The four fundamental subspaces, Coordinate matrices and diagonalization#Coordinate representation of a matrix, and #Orthonormal sets
 - [[#N0179|N0179]] Symmetrization and Antisymmetrization: "Any real square matrix $A_{ii}$" and "$A_{ii}= A_{(ij)} + A_{[ij]}$" use a diagonal index; both should be $A_{ij}$. **Fixed:** Changed both occurrences to A_ij
 - [[#N0179|N0179]] Symmetrization and Antisymmetrization: The general symmetrization formula is written with square brackets $A_{[i_1 i_2 \dots i_n]}$; it must use round brackets $A_{(i_1 i_2 \dots i_n)}$, since square brackets denote antisymmetrization in this note. **Fixed:** Changed to round brackets A_(i_1 ... i_n)
 - [[#N0179|N0179]] Symmetrization and Antisymmetrization: "$\omega_{ij} = \epsilon_{ijk},\omega^k$" has a stray comma and is not an antisymmetrization formula; write $\omega_{ij}=\epsilon_{ijk}\omega^k$ with inverse $\omega^k=\tfrac12\epsilon^{kij}\omega_{ij}$ and say it identifies 3D antisymmetric matrices with axial vectors. **Fixed:** Wrote omega_ij = eps_ijk omega^k with inverse omega^k = 1/2 eps^kij omega_ij and stated it identifies 3D antisymmetric matrices with axial vectors
@@ -177,7 +177,7 @@ Priority: low · Graph: no · Manim: no
 Correct and well-motivated derivation of the Gram matrix with a numerically verified oblique-basis example.
 
 - [Intuition] In "Components do not specify basis geometry", the example "components in $\mathcal B$ start with $(1,0,\ldots)$" is abstract; use a concrete 2D basis such as $\mathbf b_1=(2,0)$, $\mathbf b_2=(0,1)$ so the reader sees $[\mathbf b_1]_{\mathcal B}=(1,0)$ but $\|\mathbf b_1\|^2=4$.
-- [Links] Add forward links to [[11.06 Basis changes]] (the Gram matrix transforms as $P^{\mathsf T}GP$) and [[11.04 Inner products]], where the Gram matrix reappears.
+- [Links] Add forward links to \[\[11.06 Basis changes\]\] (the Gram matrix transforms as $P^{\mathsf T}GP$) and \[\[11.04 Inner products\]\], where the Gram matrix reappears.
 - [Structure] The file starts with a UTF-8 BOM; save it as UTF-8 without BOM.
 
 ### N0147
@@ -199,7 +199,7 @@ Priority: low · Graph: yes · Manim: no
 Correct and clear; the normal vector $(1,-1,1)$, the intersection point $(3,1,3)$, and both worked answers check out.
 
 - [Graph] 3D plot of the worked example: the plane $x+y+z=7$ over $x,y\in[-1,5]$ and the line $(1,2,0)+t(2,-1,3)$ for $t\in[-0.5,2]$, marking the intersection $(3,1,3)$.
-- [Correctness] "See [[05.07 Linear combinations]] for the difference between a span through the origin and its translated copy" points to a note that never discusses translated copies; link [[10.01 Vector spaces]] (which mentions translated lines and affine sets) or drop the claim.
+- [Correctness] "See \[\[05.07 Linear combinations\]\] for the difference between a span through the origin and its translated copy" points to a note that never discusses translated copies; link \[\[10.01 Vector spaces\]\] (which mentions translated lines and affine sets) or drop the claim.
 - [Example] In "Other intersection types", add a short skew-lines example (for example $(0,0,0)+s(1,0,0)$ and $(0,1,1)+t(0,1,0)$) showing that the component equations have no solution.
 - [Structure] The file starts with a UTF-8 BOM; save it as UTF-8 without BOM.
 
@@ -225,7 +225,7 @@ A terse formula stub without frontmatter title, TLDR, or explanation, with a typ
 - [Simplify] State explicitly that upper-index $e^j$ denotes the dual (covector) basis and lower-index $e_j$ the basis vectors; as written, the headings "Basis change on Vector/Covector" suggest that basis vectors and vector components transform with the same matrix, which would contradict invariance of $v=v^je_j$.
 - [Structure] Add frontmatter with a quoted title and a TLDR, define $B$ (which basis is expressed in which), and remove the leading blank line.
 - [Example] Add a 2D example (for example $e'_1=2e_1$, $e'_2=e_1+e_2$) showing basis vectors transforming with $B$, components with $B^{-1}$, and $v^je_j$ unchanged.
-- [Links] Link [[05.03 Components and bases]], [[11.06 Basis changes]] and [[18.01 Dual spaces]].
+- [Links] Link \[\[05.03 Components and bases\]\], \[\[11.06 Basis changes\]\] and \[\[18.01 Dual spaces\]\].
 
 ### N0151
 
@@ -238,7 +238,7 @@ Short formula note with a wrong index formula and a misleading one-line definiti
 - [Correctness] "Determinant of two 3D vectors" is not a valid definition (a determinant needs three rows); say that $\mathbf a\times\mathbf b$ is the formal determinant with rows $(\mathbf e_x,\mathbf e_y,\mathbf e_z)$, $\mathbf a$, $\mathbf b$, i.e. its components are $2\times2$ minors.
 - [Simplify] The skew matrix $[a]$ uses $a_1,a_2,a_3$ while the component form uses $a_x,a_y,a_z$; use one convention, and state magnitude $|a||b|\sin\theta$, orthogonality to both inputs, anticommutativity, and the right-hand rule.
 - [Graph] 3D plot of $\mathbf a=(2,0,0)$, $\mathbf b=(1,2,0)$ and $\mathbf a\times\mathbf b=(0,0,4)$ with the shaded parallelogram of area 4.
-- [Structure] Add a TLDR and quote the Unicode title; link [[Vector calculations and geometric products]] for the full treatment.
+- [Structure] Add a TLDR and quote the Unicode title; link \[\[Vector calculations and geometric products\]\] for the full treatment.
 
 ### N0152
 
@@ -256,7 +256,7 @@ Priority: low · Graph: no · Manim: no
 
 Minimal correct stub that duplicates 05.04.
 
-- [Links] State that $a_ia_i$ assumes an orthonormal basis, link [[05.04 Magnitude and unit vectors]] and [[05.06 General bases]] (Gram-matrix form), fix "Euclidian" to "Euclidean", and add a TLDR.
+- [Links] State that $a_ia_i$ assumes an orthonormal basis, link \[\[05.04 Magnitude and unit vectors\]\] and \[\[05.06 General bases\]\] (Gram-matrix form), fix "Euclidian" to "Euclidean", and add a TLDR.
 
 ### N0154
 
@@ -276,9 +276,9 @@ Priority: high · Graph: no · Manim: no
 
 Formula stub whose index formula describes the Hadamard product, not the scalar product.
 
-- [Correctness] $c_i = a_i\,b_i$ defines a vector (the component-wise product), not the scalar product; the dot product is $c=a_ib_i=\sum_i a_ib_i$ with no free index, and writing $c=a\,b$ without a dot clashes with the geometric product $ab$ in [[Vector product]].
+- [Correctness] $c_i = a_i\,b_i$ defines a vector (the component-wise product), not the scalar product; the dot product is $c=a_ib_i=\sum_i a_ib_i$ with no free index, and writing $c=a\,b$ without a dot clashes with the geometric product $ab$ in \[\[Vector product\]\].
 - [Correctness] The angle formula is restricted to "$\forall a,b\in\mathbb{R}^2$" although it holds in any $\mathbb R^n$ with an orthonormal basis; generalize it and require $a,b\neq0$ for the $\cos\gamma$ formula.
-- [Links] Add a TLDR and link [[05.05 Dot products]] for the derivation and projections.
+- [Links] Add a TLDR and link \[\[05.05 Dot products\]\] for the derivation and projections.
 
 ### N0156
 
@@ -287,7 +287,7 @@ Priority: low · Graph: no · Manim: no
 
 One-line correct formula stub.
 
-- [Links] Add the condition $a\neq0$, a TLDR, and a link to [[05.04 Magnitude and unit vectors]], which covers the topic fully.
+- [Links] Add the condition $a\neq0$, a TLDR, and a link to \[\[05.04 Magnitude and unit vectors\]\], which covers the topic fully.
 
 ### N0157
 
@@ -296,7 +296,7 @@ Priority: low · Graph: no · Manim: no
 
 Correct minimal stub.
 
-- [Links] Add a TLDR, write the component identity with $a+b$ on the left, and link [[05.02 Vector operations]] for the geometric head-to-tail rule.
+- [Links] Add a TLDR, write the component identity with $a+b$ on the left, and link \[\[05.02 Vector operations\]\] for the geometric head-to-tail rule.
 
 ### N0158
 
@@ -305,7 +305,7 @@ Priority: low · Graph: yes · Manim: no
 
 Clear and correct survey of dot, cross, and triple products; all worked numbers (area 2, volume 12, tetrahedron 2) check out.
 
-- [Links] Next to the existing [[Oblique bases and vector equations]] link, also point to [[05.06 General bases]], which derives the Gram-matrix correction for dot products in non-orthonormal bases.
+- [Links] Next to the existing \[\[Oblique bases and vector equations\]\] link, also point to \[\[05.06 General bases\]\], which derives the Gram-matrix correction for dot products in non-orthonormal bases.
 - [Graph] 3D plot of the worked example: triangle $A=(1,0,0)$, $B=(3,1,0)$, $C=(1,2,0)$, the edge vectors, the normal $(0,0,4)$, and the parallelepiped spanned with $\mathbf w=(0,0,3)$.
 - [Example] In "Multiple products", add one numeric check comparing $\mathbf u\times(\mathbf v\times\mathbf w)$ with $(\mathbf u\times\mathbf v)\times\mathbf w$ to show non-associativity concretely.
 - [Structure] The file starts with a UTF-8 BOM; save it as UTF-8 without BOM.
@@ -320,7 +320,7 @@ Informal geometric-algebra note with several sign/notation errors and a title th
 - [Correctness] "with $xy = -xy$ and $xx = 1$" is wrong as written; it should be $e_xe_y=-e_ye_x$ (distinct basis vectors) and $e_xe_x=1$.
 - [Correctness] The bivector basis lines $e_z e_x = -(e_z e_x) = j$ and $e_y e_z = -(e_y e_z) = k$ assert $X=-X$; they should read $e_ze_x=-e_xe_z=j$ and $e_ye_z=-e_ze_y=k$.
 - [Correctness] The overbrace labels the bivector part "cross product"; it is the wedge product $a\wedge b$, whose components equal those of $a\times b$ only through the Hodge dual ($a\wedge b=I\,(a\times b)$ with $I=e_xe_ye_z$).
-- [Structure] Rename to "Geometric product ab" (the vault's [[Cross product]] and [[Vector calculations and geometric products]] use "vector product" for $\times$), add a quoted title and TLDR, and fix "orthorgonal", "Qaternion", "an quaternion".
+- [Structure] Rename to "Geometric product ab" (the vault's \[\[Cross product\]\] and \[\[Vector calculations and geometric products\]\] use "vector product" for $\times$), add a quoted title and TLDR, and fix "orthorgonal", "Qaternion", "an quaternion".
 - [Manim] Animate multiplying a 2D vector by the rotor $\cos\theta+\sin\theta\,e_xe_y$ to show the bivector acting like $i$ and rotating the vector, which explains the "2D product returns a complex number" claim.
 
 ### N0160
@@ -340,7 +340,7 @@ Priority: low · Graph: no · Manim: yes
 Clear and correct; kernel, image, rank-nullity proof, and the worked example (kernel $t(-1,1,-1)$, preimage line) all check out.
 
 - [Manim] Animate $T(x,y,z)=(x+y,y+z)$ flattening $\mathbb R^3$ onto $\mathbb R^2$: the kernel line $t(-1,1,-1)$ collapses to the origin while parallel lines (preimages such as $(2,0,3)+t(-1,1,-1)$) each collapse to one output point.
-- [Example] In the worked example, also write the matrix $\begin{pmatrix}1&1&0\\0&1&1\end{pmatrix}$ and note that the kernel is its null space, linking forward to [[10.03 Matrices]] and [[10.04 Linear systems]].
+- [Example] In the worked example, also write the matrix $\begin{pmatrix}1&1&0\\0&1&1\end{pmatrix}$ and note that the kernel is its null space, linking forward to \[\[10.03 Matrices\]\] and \[\[10.04 Linear systems\]\].
 - [Intuition] After the rank-nullity proof, add one sentence of geometric meaning: every input dimension either survives into the image or is lost into the kernel, never both.
 
 ### N0162
@@ -430,7 +430,7 @@ Priority: medium · Graph: no · Manim: yes
 
 Arithmetic is correct throughout, but the note is a grab bag (kernels, LU, currency, change of basis, determinants, eigenvalues) with a misdirected cross-note anchor and an unfinished section.
 
-- [Correctness] "On [[Linear maps, inverses, and determinants#Determinants by elimination|the section on Determinants by elimination]] the same symbol denotes the determinant of that submatrix" points to the wrong heading; $M_{ij}$ is defined under [[Linear maps, inverses, and determinants#Cofactors]].
+- [Correctness] "On \[\[Linear maps, inverses, and determinants#Determinants by elimination|the section on Determinants by elimination\]\] the same symbol denotes the determinant of that submatrix" points to the wrong heading; $M_{ij}$ is defined under \[\[Linear maps, inverses, and determinants#Cofactors\]\].
 - [Simplify] The first LU example uses $R_2\gets-3R_1+4R_2$, which scales a row and yields the non-unit $L=\begin{pmatrix}1&0\\3/4&1/4\end{pmatrix}$; also show the standard unit-lower-triangular result $L=\begin{pmatrix}1&0\\3/4&1\end{pmatrix}$, $U=\begin{pmatrix}4&-16\\0&4\end{pmatrix}$ so it matches the later "Shortcut" rule.
 - [Example] "Changing the matrix of a transformation" is an empty stub; complete it with $A_{\rm J}=P^{-1}AP$ for Jennifer's basis $P=\begin{pmatrix}2&-1\\1&1\end{pmatrix}$ and a concrete $A$ (for example a $90^\circ$ rotation).
 - [Manim] Animate the standard grid morphing into Jennifer's grid ($b_1=(2,1)$, $b_2=(-1,1)$) while the fixed vector $(3,2)$ acquires coordinates $(5/3,1/3)$.
@@ -443,8 +443,8 @@ Priority: low · Graph: no · Manim: no
 
 Useful reading-route hub with a correct worked orientation example; one broken link and a misleading title.
 
-- [Correctness] [[Planned Topics#4. Linear algebra|the detailed catalogue]] is broken: no note named "Planned Topics" exists in the vault; retarget it or remove it.
-- [Structure] The frontmatter title is "Overview", which neither matches the file name nor distinguishes it from [[Linear algebra - Overview]]; use "Linear algebra — catalogue guide" and remove the UTF-8 BOM.
+- [Correctness] \[\[Planned Topics#4. Linear algebra|the detailed catalogue\]\] is broken: no note named "Planned Topics" exists in the vault; retarget it or remove it.
+- [Structure] The frontmatter title is "Overview", which neither matches the file name nor distinguishes it from \[\[Linear algebra - Overview\]\]; use "Linear algebra — catalogue guide" and remove the UTF-8 BOM.
 
 ### N0171
 
@@ -497,12 +497,12 @@ Priority: medium · Graph: yes · Manim: yes
 
 Calculations are correct, but several internal section links point to the wrong sections and some exercises are left unfinished.
 
-- [Correctness] Wrong internal anchors: "The portfolio vectors on [[#Reduced row echelon form]]" (they are introduced under "Span and dependence"), "For the matrix on the section on Homework 2" (the matrix is in "Homogeneous systems"), and three references to [[#Forward elimination and back substitution]] for the matrix $B$, which is defined under "Rectangular matrix".
+- [Correctness] Wrong internal anchors: "The portfolio vectors on \[\[#Reduced row echelon form\]\]" (they are introduced under "Span and dependence"), "For the matrix on the section on Homework 2" (the matrix is in "Homogeneous systems"), and three references to \[\[#Forward elimination and back substitution\]\] for the matrix $B$, which is defined under "Rectangular matrix".
 - [Example] Finish the contraposition span test: the three generators are dependent ($\det=0$) and span the plane $x+y=z$; $(3,2,5)=\tfrac52(1,1,2)+\tfrac12(1,-1,0)$ lies in it.
 - [Example] The Gauss-Jordan reduction of the augmented matrix with rows $(3,1\mid107)$ and $(1,2\mid64)$ is started but not carried out; complete it to $(30,17)$.
 - [Graph] Plot the row picture (lines $3a+b=107$ and $a+2b=64$ meeting at $(30,17)$) beside the column picture ($30(3,1)+17(1,2)=(107,64)$).
 - [Manim] Animate the "magic carpet and hoverboard" column picture: scale $(3,1)$ by 30, then add $17(1,2)$ head to tail to reach $(107,64)$.
-- [Structure] "The four fundamental subspaces" gives only the column and null space dimensions; add row space ($r$), left null space ($m-r$), and the orthogonality pairs, or link [[Subspaces, eigenvectors, and orthogonal projections#The four fundamental subspaces]].
+- [Structure] "The four fundamental subspaces" gives only the column and null space dimensions; add row space ($r$), left null space ($m-r$), and the orthogonality pairs, or link \[\[Subspaces, eigenvectors, and orthogonal projections#The four fundamental subspaces\]\].
 
 ### N0176
 
@@ -515,7 +515,7 @@ Unstructured note with a wrong definition of a scaling matrix and homogeneous ma
 - [Correctness] "Scaling Matrix in $ℝ^2$" shows a $3\times3$ matrix; the linear scaling on $\mathbb R^2$ is $\begin{pmatrix}s_x&0\\0&s_y\end{pmatrix}$, and the $3\times3$ form acts on homogeneous coordinates (same issue for the $\mathbb R^3$ and $\mathbb R^4$ sections).
 - [Simplify] Drop the claim that 4D scaling is "useful in physics (relativity)" (Lorentz transformations are not scalings), and note that a negative $s_i$ gives the reflection mentioned in the definition section.
 - [Graph] Plot the unit square and its image under $\operatorname{diag}(2,0.5)$ and $\operatorname{diag}(-1,1)$ on $[-2,2.5]^2$ to show non-uniform scaling and reflection.
-- [Structure] Add frontmatter with a quoted title and a TLDR, fix "it's" to "its", and link [[Skewing Matrices]].
+- [Structure] Add frontmatter with a quoted title and a TLDR, fix "it's" to "its", and link \[\[Skewing Matrices\]\].
 
 ### N0177
 
@@ -525,7 +525,7 @@ Priority: medium · Graph: yes · Manim: yes
 Two bare homogeneous shear matrices with no explanation, frontmatter, or TLDR.
 
 - [Structure] Add frontmatter and a TLDR, state that these $3\times3$ matrices act on homogeneous 2D coordinates, give the plain linear form $\begin{pmatrix}1&\tan\alpha\\0&1\end{pmatrix}$, and define $\alpha$ as the angle by which vertical lines tilt.
-- [Intuition] State that $\det S_\alpha=1$, so shears preserve area, which contrasts with the determinant-based definition in [[Scaling Matrices]].
+- [Intuition] State that $\det S_\alpha=1$, so shears preserve area, which contrasts with the determinant-based definition in \[\[Scaling Matrices\]\].
 - [Graph] Plot the unit square and its image under $S_\alpha$ with $\alpha=30^\circ$ on $[-0.5,2]\times[-0.5,1.5]$.
 - [Manim] Animate $\alpha$ increasing from $0^\circ$ to $45^\circ$ while the square shears into a parallelogram of constant area.
 
@@ -536,7 +536,7 @@ Priority: medium · Graph: yes · Manim: no
 
 Correct content but with three misdirected section links, unfinished exercises, and no subspace-projection formula despite the title.
 
-- [Correctness] Wrong anchors: "The conditions on [[#Vector spaces and subspaces]] for injectivity" (they are listed under "The four fundamental subspaces"); "as on [[Coordinate matrices and diagonalization#Stretching along a basis direction]]" for the transpose matrix (it is under "Coordinate representation of a matrix"); "[[#Orthogonal projections|the section on Final review. Orthogonal projections]]" for inner-product preservation (the proof is under "Orthonormal sets", and "Final review" is not a heading).
+- [Correctness] Wrong anchors: "The conditions on \[\[#Vector spaces and subspaces\]\] for injectivity" (they are listed under "The four fundamental subspaces"); "as on \[\[Coordinate matrices and diagonalization#Stretching along a basis direction\]\]" for the transpose matrix (it is under "Coordinate representation of a matrix"); "\[\[#Orthogonal projections|the section on Final review. Orthogonal projections\]\]" for inner-product preservation (the proof is under "Orthonormal sets", and "Final review" is not a heading).
 - [Structure] The TLDR and title promise projection onto a subspace, but no formula appears; add $P=A(A^{\mathsf T}A)^{-1}A^{\mathsf T}$, or $P=QQ^{\mathsf T}$ for orthonormal columns, with a small example.
 - [Example] Complete the left-open exercises: the standard matrix from the three images of $(1,2,3)$, $(2,3,4)$, $(0,2,3)$ (the input matrix has determinant 1), and the matrix of $T$ in the basis $\mathcal B$.
 - [Graph] 3D plot of a plane $C(A)$ in $\mathbb R^3$ with its orthogonal complement line $N(A^{\mathsf T})$, and a vector $b$ split into its projection and residual.
@@ -553,7 +553,7 @@ Useful decomposition note with a correct worked example and code, but several in
 - [Correctness] The general symmetrization formula is written with square brackets $A_{[i_1 i_2 \dots i_n]}$; it must use round brackets $A_{(i_1 i_2 \dots i_n)}$, since square brackets denote antisymmetrization in this note.
 - [Correctness] "$\omega_{ij} = \epsilon_{ijk},\omega^k$" has a stray comma and is not an antisymmetrization formula; write $\omega_{ij}=\epsilon_{ijk}\omega^k$ with inverse $\omega^k=\tfrac12\epsilon^{kij}\omega_{ij}$ and say it identifies 3D antisymmetric matrices with axial vectors.
 - [Structure] Remove the raw `{\color{brown} \operatorname{sgn}(\sigma)}` (operators stay uncolored per the vault rules), add frontmatter with a quoted title and TLDR, and drop the emoji markers.
-- [Links] Link [[11.03 Symmetry]], which treats the same decomposition for bilinear forms.
+- [Links] Link \[\[11.03 Symmetry\]\], which treats the same decomposition for bilinear forms.
 
 ### N0180
 
@@ -613,7 +613,7 @@ Short note with several wrong formulas and misleading geometric claims; it shoul
 - [Correctness] "$\det A=1$ ... representing rotations" and "$\det A\notin\{0,1,-1\}$ indicates scaling or skewing" are wrong: shears have determinant 1, and $\operatorname{diag}(2,1/2)$ scales with determinant 1; determinant only fixes the signed volume factor. Likewise in the second callout, $\det R=\pm1$ does not make a matrix orthogonal, so say "for orthogonal matrices".
 - [Correctness] "Volume of a Vector Space" puts a formal row $(\mathbf i,\mathbf j,\mathbf k,\ldots)$ into the matrix; the volume spanned by $n$ vectors in $\mathbb R^n$ is $|\det[a\;b\;c\;\cdots]|$ of the $n\times n$ matrix of their components, and "a positive determinant indicates that vectors form a volume" should say "nonzero".
 - [Correctness] "Orientation of a Vector Space" uses the determinant of an $n\times(n+1)$ matrix, which is undefined; orientation is the sign of the $n\times n$ determinant of the basis relative to a reference basis.
-- [Structure] Add frontmatter with a quoted title and TLDR, remove the leading blank line, and link [[10.06 Determinants and trace]] and [[Determinants and oriented area]], which treat the topic correctly.
+- [Structure] Add frontmatter with a quoted title and TLDR, remove the leading blank line, and link \[\[10.06 Determinants and trace\]\] and \[\[Determinants and oriented area\]\], which treat the topic correctly.
 
 ### N0185
 
@@ -645,7 +645,7 @@ Priority: medium · Graph: no · Manim: no
 Three-sentence stub with imprecise statements and no frontmatter.
 
 - [Correctness] "When eigenvectors and eigenvalues are imaginary, then every non-zero vector will change" is imprecise: the relevant case is non-real complex eigenvalues (for example $(1\pm i)/\sqrt2$ for a $45^\circ$ rotation, not purely imaginary), and the correct conclusion is that no nonzero real vector stays on its own line.
-- [Simplify] Replace "the vectors who are not rotated" with the definition $Av=\lambda v$, $v\neq0$, noting that a negative $\lambda$ reverses the vector, and add frontmatter, a TLDR, and links to [[10.07 Eigenvalues and eigenvectors]] and [[Eigenvalues and principal axes]].
+- [Simplify] Replace "the vectors who are not rotated" with the definition $Av=\lambda v$, $v\neq0$, noting that a negative $\lambda$ reverses the vector, and add frontmatter, a TLDR, and links to \[\[10.07 Eigenvalues and eigenvectors\]\] and \[\[Eigenvalues and principal axes\]\].
 
 ### N0188
 
@@ -675,7 +675,7 @@ Priority: low · Graph: no · Manim: no
 
 Clear and correct; the decomposition, uniqueness proof, and worked example ($27-14=13$) check out.
 
-- [Links] Link [[Symmetrization and Antisymmetrization]], which covers the same matrix decomposition in index notation, so the two notes reference each other.
+- [Links] Link \[\[Symmetrization and Antisymmetrization\]\], which covers the same matrix decomposition in index notation, so the two notes reference each other.
 - [Structure] The file starts with a UTF-8 BOM; save it as UTF-8 without BOM.
 
 ### N0191
@@ -697,7 +697,7 @@ Priority: low · Graph: no · Manim: yes
 Clear and correct; the 3D Gram-Schmidt example and the weighted-product practice are verified.
 
 - [Manim] Animate Gram-Schmidt on $v_1=(1,1,0)$, $v_2=(1,0,1)$, $v_3=(0,1,1)$: show each projection being subtracted and the residual normalized to $e_1,e_2,e_3$.
-- [Links] Mention that collecting the coefficients gives $A=QR$ and link [[Gram–Schmidt and QR factorization problems]] and [[Least squares and numerical stability]].
+- [Links] Mention that collecting the coefficients gives $A=QR$ and link \[\[Gram–Schmidt and QR factorization problems\]\] and \[\[Least squares and numerical stability\]\].
 - [Structure] The file starts with a UTF-8 BOM; save it as UTF-8 without BOM.
 
 ### N0193
@@ -707,7 +707,7 @@ Priority: low · Graph: no · Manim: no
 
 Clear and correct distinction between congruence and similarity, with a verified worked example (value 42 in both bases).
 
-- [Links] Link [[05.06 General bases]] (Gram matrix as a congruence of the identity) and [[Basis change]] so the transformation conventions are cross-referenced.
+- [Links] Link \[\[05.06 General bases\]\] (Gram matrix as a congruence of the identity) and \[\[Basis change\]\] so the transformation conventions are cross-referenced.
 - [Structure] The file starts with a UTF-8 BOM; save it as UTF-8 without BOM.
 
 ### N0194
@@ -739,7 +739,7 @@ Priority: low · Graph: no · Manim: no
 
 Clear and correct; the convention, polarization identity, and projection examples are verified, including the sign check.
 
-- [Links] Link [[10.09 Real and complex matrices]], which uses the same conjugate-linear-first convention, and [[Hermitian Conjungate]], whose notation should be aligned with this note.
+- [Links] Link \[\[10.09 Real and complex matrices\]\], which uses the same conjugate-linear-first convention, and \[\[Hermitian Conjungate\]\], whose notation should be aligned with this note.
 - [Structure] The file starts with a UTF-8 BOM; save it as UTF-8 without BOM.
 
 ### N0197
@@ -759,7 +759,7 @@ Priority: low · Graph: yes · Manim: no
 Clear and correct elementary proof via the Lagrange identity, with verified examples and equality conditions.
 
 - [Graph] Plot the circle $x^2+y^2=5$ with the lines $2x-3y=\pm\sqrt{65}$ tangent to it at $\pm\sqrt{5/13}(2,-3)$ on $[-3,3]^2$, showing the bound of practice 1 as tangency.
-- [Intuition] Add the geometric reading $|\cos\theta|\le1$ for the angle between the two lists viewed as vectors, linking [[05.05 Dot products]] and [[11.04 Inner products]].
+- [Intuition] Add the geometric reading $|\cos\theta|\le1$ for the angle between the two lists viewed as vectors, linking \[\[05.05 Dot products\]\] and \[\[11.04 Inner products\]\].
 - [Simplify] Reword "A stronger-looking but equally valid useful version" to "A stronger version".
 - [Structure] The file starts with a UTF-8 BOM; save it as UTF-8 without BOM.
 
@@ -783,7 +783,7 @@ Short note with a wrong identity, a misnamed concept, a misspelled title, and no
 - [Correctness] "$\|J\|^2 = J^{\dagger} J = J J^{\dagger}$" is wrong: $J^\dagger J$ is the scalar $\|J\|^2$, but $JJ^\dagger$ is an $n\times n$ matrix (the projector onto $J$ when $\|J\|=1$).
 - [Correctness] "we can't simply get the inverse of the vector using the transpose method" describes the wrong concept; the issue is the squared norm, since $J^TJ$ can be zero or complex for nonzero $J$ (for example $J=(1,i)$).
 - [Structure] Fix the spelling "Conjungate" to "Conjugate" in the file name, title, and text (incoming links update automatically), add frontmatter with a quoted title and TLDR, and rewrite the garbled final note "When the rotation vector is normalized, that the rotation does not change...".
-- [Links] Link [[10.09 Real and complex matrices]] and [[11.09 Complex inner products]] for the general adjoint and inner product.
+- [Links] Link \[\[10.09 Real and complex matrices\]\] and \[\[11.09 Complex inner products\]\] for the general adjoint and inner product.
 
 ### N0201
 
@@ -825,5 +825,5 @@ Priority: low · Graph: no · Manim: no
 
 Correct compact survey; examples (dimension formula, invertible $T$, weighted inner product) check out.
 
-- [Links] Link [[10.01 Vector spaces]], [[10.02 Linear maps]], and [[11.04 Inner products]], which develop these sections in detail, so the survey points to the full treatments.
+- [Links] Link \[\[10.01 Vector spaces\]\], \[\[10.02 Linear maps\]\], and \[\[11.04 Inner products\]\], which develop these sections in detail, so the survey points to the full treatments.
 - [Structure] "### Worked answers" sits one level below "## Practice" unlike the sibling notes; use "## Worked answers", and remove the UTF-8 BOM.

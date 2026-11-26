@@ -78,7 +78,7 @@ Priority: low · Graph: no · Manim: no
 
 A clear chapter hub with a sensible reading route.
 
-- [Links] The reading route stops at [[03.06 Sackur–Tetrode Formula]]; add [[03.07 Equipartition Theorem]], [[03.08 Worked Examples]], [[03.09 Thermodynamics as a Limit of the Microcanonical Ensemble]], [[03.10 Summary]] and [[03.99 Exercises]] so every chapter section is reachable from the hub.
+- [Links] The reading route stops at \[\[03.06 Sackur–Tetrode Formula\]\]; add \[\[03.07 Equipartition Theorem\]\], \[\[03.08 Worked Examples\]\], \[\[03.09 Thermodynamics as a Limit of the Microcanonical Ensemble\]\], \[\[03.10 Summary\]\] and \[\[03.99 Exercises\]\] so every chapter section is reachable from the hub.
 
 ### N1251
 
@@ -194,7 +194,7 @@ The relations and signs are correct ($\mu/T=-\partial S/\partial N$ follows from
 
 - [Intuition] Derive Remark 3.3 in three lines: maximize $S_A(E_A)+S_B(E-E_A)$, get $1/T_A=1/T_B$, and show $\mathrm dS=(1/T_A-1/T_B)\,\mathrm dE_A>0$, so before equilibrium energy flows from the hotter to the colder system.
 - [Graph] Plot $\ln\Omega_A(E_A)+\ln\Omega_B(E-E_A)$ for two ideal gases with $\Omega\propto E^{3N/2}$ ($N_A=20$, $N_B=40$) against $E_A/E\in(0,1)$, shifted to zero at its maximum, and mark the maximum at $E_A/E=1/3$ where the temperatures are equal; optionally add $N_A=200$, $N_B=400$ to show the sharpening.
-- [Links] Point forward to [[03.04.05 Equation of State and Temperature]] as the first application of Eqs. (3.2) and (3.3).
+- [Links] Point forward to \[\[03.04.05 Equation of State and Temperature\]\] as the first application of Eqs. (3.2) and (3.3).
 
 ### N1262
 
@@ -232,7 +232,7 @@ Priority: low · Graph: no · Manim: no
 Correct (Eq. 3.6 and $\omega=\tfrac{3N}{2E}\Phi$ check out), but the finite-size slope paragraph is dense.
 
 - [Simplify] Make the slope comparison concrete: the volume entropy gives $k_{\mathrm B}T=2E/(3N)$, the shell entropy $k_{\mathrm B}T=E/(3N/2-1)$; for $N=2$ these differ by a factor $3/2$, for $N=10^{23}$ by a relative amount of order $10^{-23}$.
-- [Structure] The last paragraph repeats the small-window caveat already linked to [[03.02.01 Basic Definitions]]; merge it into the sentence with that link.
+- [Structure] The last paragraph repeats the small-window caveat already linked to \[\[03.02.01 Basic Definitions\]\]; merge it into the sentence with that link.
 
 ### N1266
 
@@ -243,7 +243,7 @@ Correct derivation of Eq. (3.7) and of the extensivity excess $2Nk_{\mathrm B}\l
 
 - [Simplify] State that the Stirling form drops the subextensive term $\tfrac12\ln(3\pi N)$, so the reader sees what "≈" discards.
 - [Example] Add a number for Remark 3.4: for $N=N_{\mathrm A}$ the spurious excess is $2R\ln2\approx11.5\,\mathrm{J\,K^{-1}}$.
-- [Links] Link "Section 3.5" in Remark 3.4 as [[03.05 Gibbs Paradox]] and the closing mention of the missing factorial to [[03.05.03 Resolution - Gibbs Correction Factor]].
+- [Links] Link "Section 3.5" in Remark 3.4 as \[\[03.05 Gibbs Paradox\]\] and the closing mention of the missing factorial to \[\[03.05.03 Resolution - Gibbs Correction Factor\]\].
 
 ### N1267
 
@@ -252,7 +252,7 @@ Priority: low · Graph: no · Manim: no
 
 Correct and well reasoned, including the point that the volume-entropy derivatives need no Stirling approximation.
 
-- [Links] Link "Section 3.7" as [[03.07 Equipartition Theorem]].
+- [Links] Link "Section 3.7" as \[\[03.07 Equipartition Theorem\]\].
 - [Example] Add numbers for one mole at $300\,\mathrm K$: $E=\tfrac32RT\approx3.74\,\mathrm{kJ}$ and $P\approx1.11\times10^5\,\mathrm{Pa}$ in $22.4\,\mathrm L$, to anchor both results.
 
 ### N1268
@@ -441,7 +441,7 @@ Priority: low · Graph: no · Manim: no
 
 Accurate summary of the chapter.
 
-- [Links] Link each numbered result to its note, for example item 4 to [[03.05.03 Resolution - Gibbs Correction Factor]], item 5 to [[03.06.01 Complete Derivation]] and item 6 to [[03.07.01 Statement and Proof]], so the summary also works as a navigation page.
+- [Links] Link each numbered result to its note, for example item 4 to \[\[03.05.03 Resolution - Gibbs Correction Factor\]\], item 5 to \[\[03.06.01 Complete Derivation\]\] and item 6 to \[\[03.07.01 Statement and Proof\]\], so the summary also works as a navigation page.
 
 ### N1286
 
@@ -521,5 +521,5 @@ The derivations I checked are correct (virial $PV=\tfrac23E_{\mathrm{kin}}$, bal
 - [Correctness] Symbol clashes and macros: $n$ stands for number density, amount in moles, number of blocks, the quantum numbers $n_x$ and the Stirling variable. The sentence "it denotes the amount in moles in the earlier ideal gas calculation" is wrong, because the moles usage ($PV=nRT$) comes later. The oscillator section uses \mechanical{\omega} while the table and the rest of the chapter use \signal{\omega}, and $N$ is uncoloured although the chapter uses \mechanical{N}.
 - [Correctness] In the Gibbs bullet, the "potential $\Omega(\thermal{T},\mechanical{V},N)$" should be the grand potential $\Omega(T,V,\mu)$. It also clashes with the multiplicity $\Omega$ used throughout; rename one of them (for example $\Omega_G$).
 - [Correctness] Historical and reference details: the Boltzmann transport equation and H-theorem date from 1872, not 1876, and Pauli's spin–statistics proof is from 1940. The reading-list name read as "Carder" is almost certainly Kardar (*Statistical Physics of Particles*), the usual companion to Pathria.
-- [Structure] The Liouville section stops mid-derivation. Finish it by showing $\nabla_\Gamma\cdot\vec v_\Gamma=\sum_i(\partial^2H/\partial q_i\partial p_i-\partial^2H/\partial p_i\partial q_i)=0$, so $dP/dt=\partial_tP+\{P,H\}=0$. Also split this 36 KB note into topical notes (history and thermodynamics review, ideal-gas counting, fluctuations, ergodicity and Liouville), each linked to its chapter counterpart, for example [[03.06.01 Complete Derivation]] and [[03.09.02 Fluctuations in the Microcanonical Ensemble]].
+- [Structure] The Liouville section stops mid-derivation. Finish it by showing $\nabla_\Gamma\cdot\vec v_\Gamma=\sum_i(\partial^2H/\partial q_i\partial p_i-\partial^2H/\partial p_i\partial q_i)=0$, so $dP/dt=\partial_tP+\{P,H\}=0$. Also split this 36 KB note into topical notes (history and thermodynamics review, ideal-gas counting, fluctuations, ergodicity and Liouville), each linked to its chapter counterpart, for example \[\[03.06.01 Complete Derivation\]\] and \[\[03.09.02 Fluctuations in the Microcanonical Ensemble\]\].
 - [Manim] Animate Liouville's theorem: a small rectangular patch of pendulum initial conditions flows in $(q,p)$ under Hamilton's equations, stretching and shearing while a numerical readout shows its area staying constant. Contrast it with a damped pendulum, whose patch shrinks.

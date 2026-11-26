@@ -78,7 +78,7 @@ Priority: low · Graph: no · Manim: no
 
 Clear chapter introduction with working links and a sensible reading route.
 
-- [Intuition] Add the quantitative degeneracy criterion $n\lambda_{\mathrm{th}}^3\gtrsim1$ in the first paragraph, so "lower temperature or higher density" has a concrete meaning, and link it to [[06.08.03 Quantum Degeneracy Parameter]].
+- [Intuition] Add the quantitative degeneracy criterion $n\lambda_{\mathrm{th}}^3\gtrsim1$ in the first paragraph, so "lower temperature or higher density" has a concrete meaning, and link it to \[\[06.08.03 Quantum Degeneracy Parameter\]\].
 
 ### N1370
 
@@ -298,7 +298,7 @@ Short and correct derivation with a good numerical error estimate; the error num
 
 - [Simplify] Introduce the helper $r$ as a displayed equation $r=e^{-{\thermal{\beta}}({\energy{\varepsilon}}-{\energy{\mu}})}$ and give the expansion $r/(1\pm r)=r\mp r^2+\dots$ explicitly, so the "opposite signs, order $r^2$" claim is visible.
 - [Graph] Plot the ratios $n_{\mathrm{FD}}/n_{\mathrm{MB}}=1/(1+r)$ and $n_{\mathrm{BE}}/n_{\mathrm{MB}}=1/(1-r)$ against $x=\beta(\varepsilon-\mu)$ for $x\in[0.2,6]$, with a 1 % band, to show where the Maxwell–Boltzmann law is accurate.
-- [Links] Link the "populated low-energy states" remark to [[06.08.03 Quantum Degeneracy Parameter]], where the criterion is turned into $n\lambda_T^3\ll1$.
+- [Links] Link the "populated low-energy states" remark to \[\[06.08.03 Quantum Degeneracy Parameter\]\], where the criterion is turned into $n\lambda_T^3\ll1$.
 
 ### N1393
 
@@ -371,7 +371,7 @@ Correct (the prefactor and the Bose integrability argument $\varepsilon^{d/2-2}$
 
 - [Graph] Next to Remark 6.4, plot $g(\varepsilon)\propto\varepsilon^{-1/2}$, $\varepsilon^0$ and $\varepsilon^{1/2}$ on common normalized axes for $\varepsilon\in(0,4]$, so the three dimensions can be compared at a glance.
 - [Structure] The quantity table lists ${\mechanical{n}}_\alpha$, but the note uses ${\mechanical{n}}_{\mathrm{BE}}$ only; rename the table entry.
-- [Links] Link the "special role of three dimensions" sentence to [[08.02 Bose–Einstein Condensation]].
+- [Links] Link the "special role of three dimensions" sentence to \[\[08.02 Bose–Einstein Condensation\]\].
 
 ### N1400
 
@@ -452,7 +452,7 @@ Priority: low · Graph: no · Manim: no
 
 Accurate and well-structured summary; the two-state self-check (four bosonic configurations) is correct.
 
-- [Links] "the Fermi-gas chapter" is not linked; use [[07.00 Fermi Gas]]. Consider linking the Bose–Einstein condensation, blackbody, and Debye mentions to [[08.02 Bose–Einstein Condensation]], [[08.04 Photon Gas and Blackbody Radiation]] and [[08.05 Phonons and the Debye Model]].
+- [Links] "the Fermi-gas chapter" is not linked; use \[\[07.00 Fermi Gas\]\]. Consider linking the Bose–Einstein condensation, blackbody, and Debye mentions to \[\[08.02 Bose–Einstein Condensation\]\], \[\[08.04 Photon Gas and Blackbody Radiation\]\] and \[\[08.05 Phonons and the Debye Model\]\].
 
 ### N1408
 
@@ -500,7 +500,7 @@ Priority: low · Graph: yes · Manim: no
 Correct Sommerfeld derivation (the $\mu$ shift, the $\pi^2/6$ energy coefficient and $C_V=\tfrac{\pi^2}{2}Nk_BT/T_F$ all check); the numerical check ($3.29\%$) is right.
 
 - [Graph] Plot $C_V/(Nk_B)$ against $T/T_F$ for $0$–$2$, using the exact numerical FD result, with the Sommerfeld line $\tfrac{\pi^2}2T/T_F$ and the classical plateau $3/2$. This shows where the linear law fails.
-- [Links] Link the Sommerfeld expansion in step 1 to [[07.03.03 Sommerfeld Expansion]] for its derivation.
+- [Links] Link the Sommerfeld expansion in step 1 to \[\[07.03.03 Sommerfeld Expansion\]\] for its derivation.
 
 ### N1413
 
@@ -510,7 +510,7 @@ Priority: low · Graph: yes · Manim: no
 Correct and clear derivation with useful limiting cases.
 
 - [Graph] Plot the dimensionless spectrum $x^3/(e^x-1)$ for $x=h\nu/k_BT\in[0,12]$ with the Rayleigh–Jeans curve $x^2$ and the Wien curve $x^3e^{-x}$. Mark the peak at $x\approx2.821$.
-- [Links] Link to [[08.04.02 Density of States and the Planck Spectrum]] and [[08.04.04 Wien Displacement Law]] for the continuation.
+- [Links] Link to \[\[08.04.02 Density of States and the Planck Spectrum\]\] and \[\[08.04.04 Wien Displacement Law\]\] for the continuation.
 
 ### N1414
 
@@ -519,7 +519,7 @@ Priority: low · Graph: no · Manim: no
 
 Correct and complete elementary proof with a good domain caveat.
 
-- [Links] No change needed; optionally link to [[06.10.02 Graphs of the Three Distributions]], whose figure shows the same ordering.
+- [Links] No change needed; optionally link to \[\[06.10.02 Graphs of the Three Distributions\]\], whose figure shows the same ordering.
 
 ### N1415
 
@@ -529,7 +529,7 @@ Priority: low · Graph: no · Manim: no
 Correct derivation of $g\propto\varepsilon^2$ and $PV=U/3$, including the classical check $\langle\varepsilon\rangle=3k_BT$.
 
 - [Structure] $g_{\mathrm{rel}}$ is written without the ${\energy{}}$ macro, although the quantity table lists ${\energy{g}}(\varepsilon)$; use ${\energy{g}}_{\mathrm{rel}}$ in the text and the table.
-- [Links] Link the photon remark to [[06.05 Planck Blackbody Spectrum]] (same $\varepsilon^2$ density with $g_s=2$).
+- [Links] Link the photon remark to \[\[06.05 Planck Blackbody Spectrum\]\] (same $\varepsilon^2$ density with $g_s=2$).
 
 ### N1416
 
@@ -543,4 +543,4 @@ The derivations are correct (the rotational limits, the small-fugacity virial co
 - [Simplify] Move the transcription remarks ("The margin cites Pathria page 142", "The handwritten derivative drops a superscript", "The handwritten prefactor is incomplete", "written $z$ in the notebook") into one source-notes callout so that the physics reads continuously.
 - [Simplify] The "Internal modes of diatomic molecules" section repeats the rotational partition function and limits from "Diatomic molecule". Merge the two, and say clearly that the heat-capacity sketch marked "vibr." with $T_0\approx85\,\mathrm K$ refers to the rotational scale of H₂ ($\theta_{\mathrm{rot}}\approx85\,\mathrm K$, while $\theta_{\mathrm{vib}}\approx6300\,\mathrm K$). Also note that Dulong–Petit is a solid-state law and is only an analogy here.
 - [Graph] Add a native plot of $C/(Nk_B)$ against $T/\theta$ for the rotor (exact sum, showing the overshoot near $T\approx0.8\,\theta_{\mathrm{rot}}$) and for the oscillator, $(x/2)^2/\sinh^2(x/2)$ with $x=\theta_{\mathrm{vib}}/T$. This would complement the hand-drawn Figs. 10–11 quantitatively.
-- [Links] Link the relativistic exercise prompts to [[06.07 Ultrarelativistic Density of States]] and the $PV=\tfrac23E$ result to [[06.01 Pressure and Energy of a Quantum Gas]]. Also use ${\signal{c}}$ for the speed of light as the chapter does, instead of ${\mechanical{c}}$.
+- [Links] Link the relativistic exercise prompts to \[\[06.07 Ultrarelativistic Density of States\]\] and the $PV=\tfrac23E$ result to \[\[06.01 Pressure and Energy of a Quantum Gas\]\]. Also use ${\signal{c}}$ for the speed of light as the chapter does, instead of ${\mechanical{c}}$.

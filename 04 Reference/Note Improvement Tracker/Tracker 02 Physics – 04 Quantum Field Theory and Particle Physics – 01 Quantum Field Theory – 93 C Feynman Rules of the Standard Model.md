@@ -73,7 +73,7 @@ Correct Rξ propagators (C.1)–(C.5) with useful gauge and dimension checks; th
 
 - [Intuition] In "Gauge and dimension checks", add the unitary limit explicitly: $\xi\to\infty$ in (C.3) gives $-i[g^{\mu\nu}-\mechanical{p}^\mu\mechanical{p}^\nu/\mechanical{m}_W^2]/(\mechanical{p}^2-\mechanical{m}_W^2)$. This shows the bad high-energy behavior of the longitudinal term that motivates the Rξ gauge and is listed in C.01 but never shown.
 - [Simplify] Split the vector propagator into transverse and longitudinal projectors: $-i\left[\frac{g^{\mu\nu}-p^\mu p^\nu/p^2}{p^2-m^2}+\frac{\xi\,p^\mu p^\nu/p^2}{p^2-\xi m^2}\right]$. This makes the two poles (physical $m^2$ and gauge-dependent $\xi m^2$) and the link to the Goldstone/ghost poles visible in one line.
-- [Links] Link the gauge-dependent pole at $\xi\mechanical{m}_{W,Z}^2$ to [[C.02.03 Goldstone Boson Propagators]] and [[C.02.02 Faddeev–Popov Ghost Propagators]], where the same poles appear.
+- [Links] Link the gauge-dependent pole at $\xi\mechanical{m}_{W,Z}^2$ to \[\[C.02.03 Goldstone Boson Propagators\]\] and \[\[C.02.02 Faddeev–Popov Ghost Propagators\]\], where the same poles appear.
 
 ### N2978
 
@@ -83,7 +83,7 @@ Priority: low · Graph: no · Manim: no
 Correct ghost propagators (C.6)–(C.9) with an accurate correction of the source's photon-ghost color indices.
 
 - [Intuition] Add one sentence on why the ghost and Goldstone masses equal $\sqrt{\xi}\mechanical{m}_{W,Z}$: both come from the same 't Hooft gauge-fixing function $\partial^\mu W_\mu-\xi\mechanical{m}_W\phi$, whose BRST variation gives the ghost mass term. This turns the stated coincidence into a reason.
-- [Links] Link the ghost–gluon interaction in [[C.05.04 Ghost–Gluon Vertex]] next to (C.7), and state that the electroweak ghost vertices are not listed in this appendix (C.01 already warns about this).
+- [Links] Link the ghost–gluon interaction in \[\[C.05.04 Ghost–Gluon Vertex\]\] next to (C.7), and state that the electroweak ghost vertices are not listed in this appendix (C.01 already warns about this).
 
 ### N2979
 
@@ -122,7 +122,7 @@ Priority: low · Graph: no · Manim: no
 
 A correct hub with the right tree-level relations $\signal{g}=\electric{e}/\sin\signal{\theta}_W$, $\signal{g}'=\electric{e}/\cos\signal{\theta}_W$, $\signal{v}=2\mechanical{m}_W/\signal{g}$.
 
-- [Links] The reading list omits [[C.04.03 Higgs–Fermion–Fermion Vertex]], [[C.04.06 Higgs–Gauge-Boson Vertices]] and [[C.04.07 Higgs Field Self-Interactions]]; add them instead of the generic "The Higgs vertices in this section" sentence.
+- [Links] The reading list omits \[\[C.04.03 Higgs–Fermion–Fermion Vertex\]\], \[\[C.04.06 Higgs–Gauge-Boson Vertices\]\] and \[\[C.04.07 Higgs Field Self-Interactions\]\]; add them instead of the generic "The Higgs vertices in this section" sentence.
 - [Intuition] Add the field rotation $Z=\cos\signal{\theta}_W W^3-\sin\signal{\theta}_W B$, $A=\sin\signal{\theta}_W W^3+\cos\signal{\theta}_W B$ and $W^\pm=(W^1\mp iW^2)/\sqrt2$. Every coefficient in C.04.01–C.04.05 follows from these three lines, and the sign of the TGC correction depends on them.
 
 ### N2983
@@ -164,7 +164,7 @@ The convention correction is right (I re-derived $-i\electric{e}\Gamma$ and $-i\
 
 - [Structure] Make the corrected coefficients $-i\electric{e}\Gamma^{\mu\nu\rho}$ and $-i\signal{g}\cos\signal{\theta}_W\Gamma^{\mu\nu\rho}$ the numbered equations (C.19) and (C.20). Move the source's plus-sign forms into the note as "source form, opposite convention". At present, a reader who copies the numbered equation gets the wrong relative sign with (C.13)–(C.16).
 - [Intuition] Explain the sign in one line: with leg coefficients $C^1_\pm=1/\sqrt2$, $C^2_\pm=\pm i/\sqrt2$, $C^3=1$, one has $\sum\epsilon^{abc}C^a_+C^b_-C^c_3=-i$. The SU(2) analogue of the three-gluon rule (C.34), $\signal{g}\epsilon^{abc}\Gamma$, therefore becomes $-i\signal{g}\Gamma$ for $W^+W^-W^3$, and $W^3=\cos\signal{\theta}_WZ+\sin\signal{\theta}_WA$. This is clearer than the component check with $\Gamma^{001}$.
-- [Links] Link [[C.05.02 Three-Gluon Vertex]] as the same Yang–Mills tensor with $f^{abc}$, so that the reader sees the two rules are one structure.
+- [Links] Link \[\[C.05.02 Three-Gluon Vertex\]\] as the same Yang–Mills tensor with $f^{abc}$, so that the reader sees the two rules are one structure.
 - [Simplify] The last paragraph's numerical component check ($\Gamma^{001}=1\,\unit{GeV}$) is hard to follow without the expanded Lagrangian. Either show the cubic Lagrangian term $-\signal{g}\epsilon^{abc}(\partial_\mu W^a_\nu)W^{b\mu}W^{c\nu}$ it is checked against or drop the paragraph in favor of the derivation above.
 
 ### N2987
@@ -214,7 +214,7 @@ Priority: low · Graph: no · Manim: no
 
 The vertex (C.33) is correct and consistent in sign with (C.13) and (C.34).
 
-- [Example] Add the color-factor check $\sum_a(T^aT^a)_{ij}=C_F\delta_{ij}$ with $C_F=4/3$. It is the first thing one computes with two of these vertices on one line, and it can link to [[B.06.02 SU(3) - Gell-Mann Matrices and Casimir Operators]].
+- [Example] Add the color-factor check $\sum_a(T^aT^a)_{ij}=C_F\delta_{ij}$ with $C_F=4/3$. It is the first thing one computes with two of these vertices on one line, and it can link to \[\[B.06.02 SU(3) - Gell-Mann Matrices and Casimir Operators\]\].
 
 ### N2992
 
@@ -224,7 +224,7 @@ Priority: low · Graph: no · Manim: no
 The rule (C.34) is correct (it matches the direct derivation from $-\signal{g}_sf^{abc}(\partial_\mu G^a_\nu)G^{b\mu}G^{c\nu}$ with $D=\partial-i\signal{g}_sT^aG^a$), and the Bose-symmetry check is well explained.
 
 - [Intuition] Explain why the rule has no explicit factor $i$: the factor $i$ from the vertex and the factor $-i$ from each derivative acting on an incoming plane wave cancel. Readers otherwise suspect a missing $i$ next to the other rules.
-- [Links] Point to [[C.04.04 Triple Gauge Vertices (TGC)]] as the electroweak analogue with the same tensor (C.21).
+- [Links] Point to \[\[C.04.04 Triple Gauge Vertices (TGC)\]\] as the electroweak analogue with the same tensor (C.21).
 
 ### N2993
 

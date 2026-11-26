@@ -11,7 +11,7 @@ Back to the index: [[Note Improvement Tracker]]
 
 The review found 5 possible errors or notation conflicts. 5 of them are verified (5 fixed); the other 0 are not verified yet. Each item links to the full suggestion entry.
 
-- [[#N1442|N1442]] 07.06.03 Thermal Conductivity and the Lorenz Number: The heat-capacity label is written ${\thermal{c}}_V^{({\electric{e}})}$, which colours the label "electronic" as the elementary charge. Use the plain label $(e)$, as in [[07.04.01 Derivation of the Linear Contribution]]. **Fixed:** Changed c_V^{(\electric{e})} to plain c_V^{(e)}
+- [[#N1442|N1442]] 07.06.03 Thermal Conductivity and the Lorenz Number: The heat-capacity label is written ${\thermal{c}}_V^{({\electric{e}})}$, which colours the label "electronic" as the elementary charge. Use the plain label $(e)$, as in \[\[07.04.01 Derivation of the Linear Contribution\]\]. **Fixed:** Changed c_V^{(\electric{e})} to plain c_V^{(e)}
 - [[#N1447|N1447]] 07.07.03 Ultrarelativistic Regime and the Chandrasekhar Mass: Symbol clash: ${\mechanical{A}}'$ (the energy coefficient) uses the same coloured letter as the mass number ${\mechanical{A}}$ in $\mu_e=A/Z$ in the same note. In 07.07.02 the coefficient is the uncoloured helper $A$. Use an uncoloured helper such as $a'$ (and $b$), or rename the mass number. **Fixed:** Renamed the energy coefficient to the uncoloured helper a' in all six places; B unchanged
 - [[#N1454|N1454]] Degenerate Fermi gases and the Sommerfeld expansion: $x$ is used for two quantities: the integration variable $x=\beta(\epsilon-\mu)$ in "Fermi gas at nonzero temperature" and $x=k_BT/E_F$ from the chemical-potential result onward. Rename the second, for example $t=k_BT/E_F$. **Fixed:** Renamed the second use to t=k_BT/E_F from the chemical-potential result through the entropy result (expansions re-checked)
 - [[#N1454|N1454]] Degenerate Fermi gases and the Sommerfeld expansion: The quantity table lists rows that are wrong or unused here: $n$ in $\unit{mol}$ (here $n$ is only number density), $g$ "Landé factor" (here spin degeneracy), $\Omega$ "Multiplicity", $z$ fugacity, and $P_{\mathrm{int}},P_{\mathrm{ext}}$. Remove or correct them. **Fixed:** Removed n in mol, Omega Multiplicity, Lande g, fugacity z rows; pressure row reduced to P; g row now spin degeneracy g=2s+1
@@ -90,7 +90,7 @@ Priority: low · Graph: no · Manim: yes
 Correct and well illustrated (the occupied points in Fig. 7.1 correctly lie inside radius 1.45), with careful remarks on the bulk limit.
 
 - [Manim] Animate the ground-state filling: add particles two at a time (spin up and down) to the $k$-grid points in order of increasing $|\mathbf k|$, so that the occupied region grows into the Fermi disk while the boundary radius $k_F\propto N^{1/3}$ (2D section) is tracked.
-- [Structure] The integer labels are written $n_x,n_y,n_z$, while ${\mechanical{n}}$ is number density in the next note. Use $\ell_x,\ell_y,\ell_z$ as in [[06.09.01 Motivation and Problem Formulation]].
+- [Structure] The integer labels are written $n_x,n_y,n_z$, while ${\mechanical{n}}$ is number density in the next note. Use $\ell_x,\ell_y,\ell_z$ as in \[\[06.09.01 Motivation and Problem Formulation\]\].
 
 ### N1420
 
@@ -99,7 +99,7 @@ Priority: low · Graph: no · Manim: no
 
 Correct and compact derivation of $k_F$, $\varepsilon_F$ and $p_F$ with good unit checks.
 
-- [Example] Add one concrete line, or a link to [[07.08 Worked Examples]]: copper with $n=8.49\times10^{28}\,\mathrm{m^{-3}}$ gives $k_F=1.36\times10^{10}\,\mathrm{m^{-1}}$, $\varepsilon_F=7.0\,\mathrm{eV}$ and $T_F=8.2\times10^4\,\mathrm K$, which makes "typical metallic Fermi temperatures" concrete.
+- [Example] Add one concrete line, or a link to \[\[07.08 Worked Examples\]\]: copper with $n=8.49\times10^{28}\,\mathrm{m^{-3}}$ gives $k_F=1.36\times10^{10}\,\mathrm{m^{-1}}$, $\varepsilon_F=7.0\,\mathrm{eV}$ and $T_F=8.2\times10^4\,\mathrm K$, which makes "typical metallic Fermi temperatures" concrete.
 
 ### N1421
 
@@ -137,7 +137,7 @@ Priority: low · Graph: no · Manim: no
 Correct ($P_0=\tfrac{\hbar^2}{5m}(6\pi^2/g_s)^{2/3}n^{5/3}$ checks), with a good second derivation route described in words.
 
 - [Simplify] Write the energy-derivative route as two displayed lines, $E_0\propto V^{-2/3}$ and $P_0=-(\partial E_0/\partial V)_N=\tfrac23E_0/V$, instead of only describing it in prose.
-- [Links] Link to [[06.12 Equation of State and Degeneracy Pressure]], which already contains the copper estimate $P_0\approx3.8\times10^{10}\,\mathrm{Pa}$.
+- [Links] Link to \[\[06.12 Equation of State and Degeneracy Pressure\]\], which already contains the copper estimate $P_0\approx3.8\times10^{10}\,\mathrm{Pa}$.
 
 ### N1425
 
@@ -166,7 +166,7 @@ Correct definitions and a careful normalization warning, but no formula connects
 
 - [Simplify] Add the two explicit uses, $n=C(k_BT)^{3/2}F_{1/2}(\eta)$ and $E/V=C(k_BT)^{5/2}F_{3/2}(\eta)$. The "order $1/2$ versus $3/2$" paragraph then has formulas to refer to.
 - [Graph] Plot $F_{1/2}(\eta)$ for $\eta\in[-4,10]$ on a log scale, with the classical asymptote $\Gamma(3/2)e^\eta$ and the degenerate asymptote $\tfrac23\eta^{3/2}$. This shows the crossover between the two regimes.
-- [Structure] $\eta$ here is the reduced chemical potential, while [[06.08.03 Quantum Degeneracy Parameter]] uses ${\mechanical{\eta}}$ for $n\lambda_T^3$; add a one-line warning about the different meaning.
+- [Structure] $\eta$ here is the reduced chemical potential, while \[\[06.08.03 Quantum Degeneracy Parameter\]\] uses ${\mechanical{\eta}}$ for $n\lambda_T^3$; add a one-line warning about the different meaning.
 
 ### N1428
 
@@ -216,7 +216,7 @@ Priority: low · Graph: no · Manim: no
 
 Correct; all three expressions for $\gamma$ agree, given the per-volume $g(\varepsilon_F)=3n/(2\varepsilon_F)$.
 
-- [Example] Add the copper number: $\gamma_{\mathrm{free}}=\pi^2R/(2T_F)\approx0.50\,\mathrm{mJ\,mol^{-1}\,K^{-2}}$ against the measured $0.695$. Link to [[07.08 Worked Examples]].
+- [Example] Add the copper number: $\gamma_{\mathrm{free}}=\pi^2R/(2T_F)\approx0.50\,\mathrm{mJ\,mol^{-1}\,K^{-2}}$ against the measured $0.695$. Link to \[\[07.08 Worked Examples\]\].
 - [Simplify] Show the one-line identity $g(\varepsilon_F)=3n/(2\varepsilon_F)$ that turns the middle expression for $\gamma$ into the density-of-states form.
 
 ### N1433
@@ -313,7 +313,7 @@ Priority: low · Graph: no · Manim: no
 
 Correct derivation ($L_0=\pi^2k_B^2/3e^2=2.44\times10^{-8}\,\mathrm{W\,\Omega\,K^{-2}}$), and the table ratios recompute.
 
-- [Correctness] The heat-capacity label is written ${\thermal{c}}_V^{({\electric{e}})}$, which colours the label "electronic" as the elementary charge. Use the plain label $(e)$, as in [[07.04.01 Derivation of the Linear Contribution]].
+- [Correctness] The heat-capacity label is written ${\thermal{c}}_V^{({\electric{e}})}$, which colours the label "electronic" as the elementary charge. Use the plain label $(e)$, as in \[\[07.04.01 Derivation of the Linear Contribution\]\].
 - [Simplify] Show the substitution $\varepsilon_F=\tfrac12m_ev_F^2$ that turns $\tfrac13c_Vv_F^2\tau$ into $\pi^2nk_B^2T\tau/(3m_e)$.
 
 ### N1443
@@ -323,7 +323,7 @@ Priority: low · Graph: no · Manim: no
 
 Correct linearized dispersion, with a justified source correction and good caveats on multiband metals.
 
-- [Links] Link the enhancement factor to the copper (1.39) and iron (7.9) estimates in [[07.08 Worked Examples]].
+- [Links] Link the enhancement factor to the copper (1.39) and iron (7.9) estimates in \[\[07.08 Worked Examples\]\].
 
 ### N1444
 
@@ -401,7 +401,7 @@ Priority: low · Graph: no · Manim: no
 
 Accurate summary table and good reconstruction checks.
 
-- [Links] Link each table row to its source note, for example Pauli susceptibility to [[07.05.02 Pauli Susceptibility]] and Lorenz number to [[07.06.03 Thermal Conductivity and the Lorenz Number]], so that the table works as a navigation hub.
+- [Links] Link each table row to its source note, for example Pauli susceptibility to \[\[07.05.02 Pauli Susceptibility\]\] and Lorenz number to \[\[07.06.03 Thermal Conductivity and the Lorenz Number\]\], so that the table works as a navigation hub.
 
 ### N1452
 
@@ -419,7 +419,7 @@ Priority: low · Graph: no · Manim: no
 
 Excellent worked exercise; every number recomputes ($\rho=2.82\times10^9$, $n_e=8.49\times10^{35}$, $x_F=1.13$, $\varepsilon_F=0.260\,\mathrm{MeV}$, $T_F=3.0\times10^9\,\mathrm K$, $P^{\mathrm{NR}}=1.8\times10^{22}$, $P=1.3\times10^{22}\,\mathrm{Pa}$).
 
-- [Links] Link the relativistic pressure formula to [[07.09 Further Study - Relativistic Fermi Gas]], where it is introduced.
+- [Links] Link the relativistic pressure formula to \[\[07.09 Further Study - Relativistic Fermi Gas\]\], where it is introduced.
 
 ### N1454
 
@@ -432,4 +432,4 @@ The derivations are correct (the Sommerfeld cancellation of even terms, the $\pi
 - [Correctness] The quantity table lists rows that are wrong or unused here: $n$ in $\unit{mol}$ (here $n$ is only number density), $g$ "Landé factor" (here spin degeneracy), $\Omega$ "Multiplicity", $z$ fugacity, and $P_{\mathrm{int}},P_{\mathrm{ext}}$. Remove or correct them.
 - [Correctness] Room-temperature thermal energy is given as $0.024\,\mathrm{eV}$ in "Sommerfeld expansion" and as $0.026\,\mathrm{eV}$ in "Metals". At 300 K, $k_BT=0.0259\,\mathrm{eV}$; mark the first as the notebook's rounding or correct it.
 - [Simplify] Collect the transcription remarks ("handwritten volume has an apparent square", "short handwritten box omits", "gold symbol is overwritten", "handwritten power ... differs", "written $z$ in the notebook") in one source-notes callout so that the physics reads continuously.
-- [Links] Link the material to the chapter notes that treat it fully: [[07.03.03 Sommerfeld Expansion]], [[07.03.04 Chemical Potential at Low Temperature]], [[07.09 Further Study - Relativistic Fermi Gas]], and [[07.01 Sirius B - Degenerate Electrons]] for the white-dwarf estimate. Also use ${\signal{c}}$ for the speed of light instead of ${\mechanical{c}}$.
+- [Links] Link the material to the chapter notes that treat it fully: \[\[07.03.03 Sommerfeld Expansion\]\], \[\[07.03.04 Chemical Potential at Low Temperature\]\], \[\[07.09 Further Study - Relativistic Fermi Gas\]\], and \[\[07.01 Sirius B - Degenerate Electrons\]\] for the white-dwarf estimate. Also use ${\signal{c}}$ for the speed of light instead of ${\mechanical{c}}$.
